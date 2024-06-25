@@ -59,7 +59,7 @@ This section describes all the configuration settings for a [!INCLUDE[server](..
 
 ## General settings
   
-The following table describes fields on the **General** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
+The following table describes general settings for the server.  
 
 |Key Name|Description|
 |--------|-------------------------------------------------------------------|
@@ -114,7 +114,7 @@ The following table describes fields on the **General** tab in the [!INCLUDE[adm
 
 ##  <a name="Database"></a> Database settings
   
-The following table describes fields on the **Database** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
+The following table describes settings related to the database.  
 
 > [!NOTE]  
 > If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant server instance, then except for the **Database Name**, **DatabaseInstance**, and **DatabaseServer** settings, the settings apply to both the application database and the tenant database.  
@@ -147,7 +147,7 @@ The following table describes fields on the **Database** tab in the [!INCLUDE[ad
 
 ## <a name="ClientServices"></a> Client services settings
   
-The following table describes fields on the **Client Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
+The following table describes settings related to clients.  
 
 |Key Name|Description|  
 |--------|-------------------------------------------------------------------|  
@@ -168,13 +168,13 @@ The following table describes fields on the **Client Services** tab in the [!INC
 |ClientServicesProtectionLevel|Specifies the security services for protecting the data stream between clients and [!INCLUDE[server](../developer/includes/server.md)].<br /><br /> All [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] clients connecting to the [!INCLUDE[server](../developer/includes/server.md)] instance must have the same ProtectionLevel value in their ClientUserSettings.config files. For more information, see [Configuring the Windows Client](/dynamics-nav/configuring-the-windows-client) in the Dev and IT Pro Help for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].<br /><br /> For background information about transport security, see [Understanding Protection Level](/dotnet/framework/wcf/understanding-protection-level) \(links to MSDN Library\).<br /><br /> Values: EncryptAndSign, Sign, None<br />Default: EncryptAndSign<br />Dynamically Updatable: No|  
 |ClientServicesReconnectPeriod|The time during which a client can reconnect to a running instance of [!INCLUDE[server](../developer/includes/server.md)].<br /><br /> Time span format: \[dd.\]hh:mm:ss\[.ff\]<br /><br /> Where:<br />dd: days<br /> hh: hours<br /> mm: minutes<br /> ss: seconds<br /> ff: hundredths of a second<br /><br /> You can also use **MaxValue** as a value to indicate no time limit.<br /><br /> Default: 00:10:00<br />Dynamically Updatable: No<br /><br />[!INCLUDE[2022rw1_and-earlier_only](../developer/includes/2022rw1_and-earlier_only.md)]|  
 |ClientServicesSSLEnabled|Specifies whether SSL is enabled between [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[server](../developer/includes/server.md)].<br /><br />If **true**, SSL is enabled, and you must also set the `ServerHttps` parameter in the to web server configuration file (navsettings.json) to **true**. For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md). <br /><br /> Default: false<br />Dynamically Updatable: No<br /><br />**INTRODUCED IN:** Version 21
-|ClientServicesTokenSigningKey|Specifies the signing information that you obtain from the Microsoft Azure portal. The parameter value is a 256-bit symmetric token signing key for use with Azure Access Control service \(ACS\). This parameter is relevant only when **Credential Type**, on the **General** tab, is set to **AccessControlService**.<br /><br />Default: EncryptAndSign<br />Dynamically Updatable: No|  
+|ClientServicesTokenSigningKey|Specifies the signing information that you obtain from the Microsoft Azure portal. The parameter value is a 256-bit symmetric token signing key for use with Azure Access Control service \(ACS\). This parameter is relevant only when **ClientServicesCredentialType** is set to **AccessControlService**.<br /><br />Default: EncryptAndSign<br />Dynamically Updatable: No|  
 |UseSimplifiedFilters|Specifies how the search on list pages behaves for plain text search filters. Pain text search filters don't use search symbols like @ or \*.<br /><br />If you enable this setting, the search uses a case sensitive and accent sensitive search to find fields that start with the provided filter text. For example, the search on **man** returns all records that include a field that starts with *man* (lowercase m), and the search on **Man** returns all records that include a field that starts with *Man* (uppercase M). Notice that you can get the same results by entering **man**\* and **Man**\* respectively.<br /><br />If the setting is disabled (which is default), the search on **man** and **Man** return the same results, which are all records that include fields that contain the text *man*, regardless of the case.<br /><br /> For more information about the search, see [Sorting, Searching, and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters).<br /><br />Default: Not enabled<br />Dynamically Updatable: No|  
 |PublicWebBaseUrl|Specifies the root of the URLs that are used to open hyperlinks to pages and reports in the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br />`http[s]://[hostname]:[port]/[webserverinstance]`<br /><br />This field maps to the `PublicWebBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The URL of the Web client<br />Dynamically Updatable: No|  
 
 ##  <a name="SOAPServices"></a> SOAP services settings
   
-The following table describes fields on the **SOAP Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
+The following table describes settings related to SOAP services.  
 
 |Key Name|Description|  
 |--------|-------------------------------------------------------------------|  
@@ -192,7 +192,7 @@ The following table describes fields on the **SOAP Services** tab in the [!INCLU
 
 ##  <a name="ODataServices"></a> OData services settings
   
-The following table describes fields on the **OData Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
+The following table describes settings related OData services.  
 
 |Key Name|Description|  
 |--------|-------------------------------------------------------------------|
@@ -228,7 +228,7 @@ The following table describes fields on the **OData Services** tab in the [!INCL
 
 ##  <a name="NASServices"></a> NAS services settings
   
-The following table describes fields on the **NAS Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+The following table describes settings related to NAS services.
 
 > [!NOTE]  
 >  Instead of using NAS services, we recommend that you use the Task Scheduler (see [Task Scheduler](../developer/devenv-task-scheduler.md). If you decide to use NAS, and want to read more about its configuration, see [Configuring NAS Services](/dynamics-nav/configuring-nas-services) in the Dev and IT Pro Help for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
@@ -244,7 +244,7 @@ The following table describes fields on the **NAS Services** tab in the [!INCLUD
 
 ##  <a name="ManagementServices"></a> Management services settings
   
-The following table describes fields on the **Management Services** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
+The following table describes settings related to management services.  
 
 |Key Name|Description|  
 |--------|-------------------------------------------------------------------|  
@@ -256,32 +256,21 @@ The following table describes fields on the **Management Services** tab in the [
 |ManagementApiServicesSSLEnabled|Specifies whether SSL (HTTPS) is enabled for the management API services port. <br /><br />Default: Not enabled<br />Dynamically Updatable: No|
 
 
-## Azure key vault client identity settings
+## <a name="keyvault"></a>Azure key vault client identity and extension settings
 
-The following table describes fields on the **Azure Key Vault Client Identity** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
-
-These settings are used when you want to use Azure Key Vaults to store extension secrets and data encryption keys. For more information, see [Setting up App Key Vaults ](setup-app-key-vault-onprem.md) and [Data Encryption](../developer/devenv-encrypting-data.md).
+The following table describes settings related to Azure key vault settings. These settings are used when you want to use Azure Key Vaults to store extension secrets and data encryption keys. For more information, see [Setting up App Key Vaults ](setup-app-key-vault-onprem.md) and [Data Encryption](../developer/devenv-encrypting-data.md).
 
 |Key Name|  Description  |
 |--------|---------------| 
 |AzureKeyVaultClientCertificateStoreLocation| Specifies the location of the certificate store where the key vault reader certificate is stored.<br /><br />**LocalMachine** specifies that the certificate is stored in a certificate store for the computer that the [!INCLUDE[server](../developer/includes/server.md)] is running on.<br /><br />**CurrentUser** specifies that the certificate is stored in a certificate store for your account on the computer that the [!INCLUDE[server](../developer/includes/server.md)] is running on.<br /><br />Default: LocalMachine <br />Dynamically Updatable: No|
 |AzureKeyVaultClientCertificateStoreName|  Specifies the certificate store where the key vault reader certificate is stored.<br /><br />Default: My <br />Dynamically Updatable: No|
 |AzureKeyVaultClientCertificateThumbprint|  Specifies the thumbprint of the certificate used by the key vault reader application in Azure.<br /><br />Default: My<br />Dynamically Updatable: No|
-|AzureKeyVaultClientId|  Specifies the application (client) ID of the key vault reader application in Azure. The value is a GUID.<br /><br />Default: 00000000-0000-0000-0000-000000000000 <br />Dynamically Updatable: No |
-
-## <a name="keyvault"></a>Azure key vault extension secrets settings
-
-The following table describes fields on the **Azure Key Vault Extension Secrets** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
-
-|Key Name|  Description  |
-|--------|---------------| 
+|AzureKeyVaultClientId|  Specifies the application (client) ID of the key vault reader application in Azure. The value is a GUID.<br /><br />Default: 00000000-0000-0000-0000-000000000000 <br />Dynamically Updatable: No | 
 |AzureKeyVaultAppSecretsPublisherValidationEnabled| Specifies whether extensions can only use key vaults that belong to their publishers. <ul><li> **true** turns on validation. Extensions can only use key vaults that belong to their publishers. This setting blocks attempts in AL to read secrets from another publisher's key vault. </li><li>**false** turns off validation. **Important** For security reasons, we recommend that you don't turn this setting off, unless you trust all etxtensions that might get installed on the tenant. </li></ul>An extension publisher's identity is specified when the extension is published. However, the validation is done at runtime. This setting doesn't affect extensions that don't use app key vault secrets. For more information, see [App Key Vaults - Security Considerations](../developer/devenv-app-key-vault.md#validation).<br /><br />Default: true <br />Dynamically Updatable: No|
 
-## <a name="AzureAd"></a>Microsoft Entra ID Settings
+## <a name="AzureAd"></a>Microsoft Entra ID settings
 
-The following table describes fields on the **Microsoft Entra ID ** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
-
-The settings in this tab configure the [!INCLUDE[server](../developer/includes/server.md)] instance to use Microsoft Entra authentication. The settings are only relevant when the server instance is configured Access Control Service, that is, when the **Credential Type** is set to **AccessControlService**. For more information about authenticating using Microsoft Entra ID, see [Authenticating Users with Microsoft Entra ID](Authenticating-Users-with-Azure-Active-Directory.md).
+The following table describes settings related to configuring the [!INCLUDE[server](../developer/includes/server.md)] instance to use Microsoft Entra authentication. The settings are only relevant when the server instance is configured Access Control Service, that is, when the **ClientServicesCredentialType** is set to **AccessControlService**. For more information about authenticating using Microsoft Entra ID, see [Authenticating Users with Microsoft Entra ID](Authenticating-Users-with-Azure-Active-Directory.md).
 
 |Key Name|  Description  |
 |--------|---------------|
@@ -289,30 +278,26 @@ The settings in this tab configure the [!INCLUDE[server](../developer/includes/s
 |AzureActiveDirectoryClientCertificateThumbprint| Specifies the thumbprint of the x509 certificate that is used with the Microsoft Entra application client for authentication.<br /><br />A public certificate file (.cer) must be installed on the application client and associated with a Microsoft Entra service principal.<br /><br />A private certificate file (.pfx) must be installed on the computer on which the [!INCLUDE[server](../developer/includes/server.md)] instance is installed. The server instance service account must have access to the private key of that certificate.<br /><br />Default:  <br />Dynamically Updatable: No |
 |AzureActiveDirectoryClientId|  Specifies the ID of the application tenant. The ID is used when accessing data in Microsoft Entra ID.<br /><br />The authentication token for communicating with Microsoft Entra ID should be retrieved by specifying the **AzureActiveDirectoryClientCertificateThumbprint**, with a fallback to use the **AzureActiveDirectoryClientSecret**. <br /><br />Default: 00000000-0000-0000-0000-000000000000 <br />Dynamically Updatable: No|
 |AzureActiveDirectoryClientSecret| Specifies the secret to use with **Application Client ID** for Microsoft Entra authentication. <br /><br />Default:  <br />Dynamically Updatable: No|
-|AppIdUri|Specifies the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Microsoft Microsoft Entra ID. You use this setting to configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services for OAuth authentication, specifically when the *Credential Type* setting is **AccessControlService**.  it's used to validate the security tokens that the server instance receives in SOAP and OData calls. <br /><br /> The App ID URI is a logical identifier and doesn't have to represent a valid location, although it's common practice to use the physical URL of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service.<br /><br /> The App ID URI is typically the same as the value of *wtrealm* parameter of the **ACSUri** setting that is included in the ClientUserSettings.config file for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)].<br /><br /> An example of an App ID URI is *https://localhost:7047/*.<br /><br /> For more information about how to use the Microsoft Entra app ID URI with OAuth authentication, see [Using OAuth to Authenticate Web Services \(Odata and SOAP\)](../webservices/authenticate-web-services-using-oauth.md).<br /><br />Default:  <br />Dynamically Updatable: No|
+|AppIdUri|Specifies the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Microsoft Microsoft Entra ID. You use this setting to configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services for OAuth authentication, specifically when the *ClientServicesCredentialType* setting is **AccessControlService**.  it's used to validate the security tokens that the server instance receives in SOAP and OData calls. <br /><br /> The App ID URI is a logical identifier and doesn't have to represent a valid location, although it's common practice to use the physical URL of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service.<br /><br /> The App ID URI is typically the same as the value of *wtrealm* parameter of the **ACSUri** setting that is included in the ClientUserSettings.config file for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)].<br /><br /> An example of an App ID URI is *https://localhost:7047/*.<br /><br /> For more information about how to use the Microsoft Entra app ID URI with OAuth authentication, see [Using OAuth to Authenticate Web Services \(Odata and SOAP\)](../webservices/authenticate-web-services-using-oauth.md).<br /><br />Default:  <br />Dynamically Updatable: No|
 |EnableMembershipEntitlement| Configures the server instance to use membership entitlement for controlling access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)].<br /><br />This setting is typically only used for software as a service (SaaS) solutions.<br /><br />Default:  <br />Dynamically Updatable: No|
 |ExcelAddInAzureActiveDirectoryClientId| This setting is used to set up the Excel Add-in that enables users to use Excel to modify and update [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data.<br /><br />The setting specifies the client ID of the Microsoft Entra tenant that is used for the Excel add-in. The Excel add-in requires a separate Microsoft Entra tenant. For more information, see [Configuring the Excel Add-In](configuring-excel-addin.md).<br /><br />Default:  <br />Dynamically Updatable: No|
 |ExtendedSecurityTokenLifetime| Specifies the number of hours that are added to the lifetime of Microsoft Entra ID security tokens, which are used to authenticate client users. When the lifetime expires, the client is disconnected from the server instance. An event with a message such as "The SAML2 token is invalid because its validity period ended." is recorded in the event log for the server instance. In general, the lifetime of security tokens is 1 hour.<br /><br />Valid range: 0 to 24 hours <br />Default: 0 <br />Dynamically Updatable: No|
 |ValidAudiences| Specifies the allowed audiences for Microsoft Entra authentication. This setting is used to authenticate other Microsoft Entra applications that will communicate with the server instance.<br /><br />With a multitenant deployment, this setting can also be used to specify host names used by the tenants, which is required by the Business Central add-in for Outlook. For more information, see [Set Up the Business Central Add-In for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md).<br /><br />The value is a semicolon-separated list of audiences. You specify an audience by using the App URI ID or App ID that is assigned to the application in Microsoft Entra ID.<br /><br />Default: <br />Dynamically Updatable: No|
 |WSFederationLoginEndpoint| Specifies the URL for the federation sign-on page that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] redirects to when configured for single sign-on.<br /><br />You must specify a URL in the following format:<br /><br /> `https://login.microsoftonline.com/[AADTENANTID]/wsfed?wa=wsignin1.0%26wtrealm=...%26wreply=....`<br /><br /> The placeholder [AADTENANTID] represents the GUID of your Microsoft Entra tenant. If the server instance has to support multiple Microsoft Entra tenants, then the **Microsoft Entra tenant ID** parameter that is specified when mounting a tenant replaces the placeholder.<br /><br />Default: <br />Dynamically Updatable: No|
-|ClientServicesFederationMetadataLocation| Specifies the URL for the federation metadata document that describes the configuration information for your Microsoft Entra tenant. The federation metadata document is used to validate the security tokens that the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] receive, and to establish a trust relationship with between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and an application that you've added to Microsoft Entra ID.<br /><br /> You must specify a URL in the following format:<br /><br />`https://login.microsoftonline.com/[AADTENANTID]/FederationMetadata/2007-06/FederationMetadata.xml`<br /><br />The placeholder [AADTENANTID] represents the GUID of your Microsoft Entra tenant. If the server instance has to support multiple Microsoft Entra tenants, then the Microsoft Entra tenant ID parameter that is specified when mounting a tenant replaces the placeholder. <br /><br /> This parameter is relevant only when **Credential Type**, on the **General** tab, is set to **AccessControlService**. For more information, see [Authenticating Users with Microsoft Entra ID](Authenticating-Users-with-Azure-Active-Directory.md).<br /><br />Default: <br />Dynamically Updatable: No<br><br>**APPLIES TO:** Version 21 and earlier. Deleted and replaced by the `ADOpenIdMetadataLocation` setting in version 22.0. |  
+|ClientServicesFederationMetadataLocation| Specifies the URL for the federation metadata document that describes the configuration information for your Microsoft Entra tenant. The federation metadata document is used to validate the security tokens that the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] receive, and to establish a trust relationship with between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and an application that you've added to Microsoft Entra ID.<br /><br /> You must specify a URL in the following format:<br /><br />`https://login.microsoftonline.com/[AADTENANTID]/FederationMetadata/2007-06/FederationMetadata.xml`<br /><br />The placeholder [AADTENANTID] represents the GUID of your Microsoft Entra tenant. If the server instance has to support multiple Microsoft Entra tenants, then the Microsoft Entra tenant ID parameter that is specified when mounting a tenant replaces the placeholder. <br /><br /> This parameter is relevant only when **ClientServicesCredentialType** is set to **AccessControlService**. For more information, see [Authenticating Users with Microsoft Entra ID](Authenticating-Users-with-Azure-Active-Directory.md).<br /><br />Default: <br />Dynamically Updatable: No<br><br>**APPLIES TO:** Version 21 and earlier. Deleted and replaced by the `ADOpenIdMetadataLocation` setting in version 22.0. |  
 
 ## <a name="encryption"></a>Data encryption settings
 
-The following table describes fields on the **Data Encryption** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
-
-For more information about data encyrption, see [Data Encryption](../developer/devenv-encrypting-data.md).
+The following table describes settings related to data encryption. For more information about data encyrption, see [Data Encryption](../developer/devenv-encrypting-data.md).
 
 |Key Name|  Description  |
 |--------|---------------|
-|EncryptionProvider| Specifies where the encryption key used to encrypt data in the database is stored, either **LocalKeyFile** or **AzureKeyVault** values. If you use **AzureKeyVault**, see the **Azure Key Vault Encryption Provider** tab settings. <br /><br />Default: LocalKeyFile<br />Dynamically Updatable: No|
+|EncryptionProvider| Specifies where the encryption key used to encrypt data in the database is stored, either **LocalKeyFile** or **AzureKeyVault** values. If you use **AzureKeyVault**, see the [Azure keyvault](#azure-key-vault-client-identity-and-extension-settings) settings. <br /><br />Default: LocalKeyFile<br />Dynamically Updatable: No|
 |AzureKeyVaultKeyUri| Specifies the URI of the key in the Key Vault encryption provider setup. <br /><br />Default:  <br />Dynamically Updatable: No |
 
 ## <a name="Task"></a>Task scheduler settings
 
-The following table describes fields on the **Task Scheduler** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
-
-The task scheduler processes jobs and other processes on a scheduled basis. For more information about task scheduler, see [Task Scheduler](../developer/devenv-task-scheduler.md).
+The following table describes settings related to tasks scheduler. The task scheduler processes jobs and other processes on a scheduled basis. For more information about task scheduler, see [Task Scheduler](../developer/devenv-task-scheduler.md).
 
 |Key Name|  Description  |
 |--------|---------------|
@@ -329,7 +314,7 @@ The task scheduler processes jobs and other processes on a scheduled basis. For 
 
 ## <a name="PBT"></a>Asynchronous processing settings
 
-The following table describes fields on the **Asynchronous Processing** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+The following table describes settings related to asynchronous processing by the server.
 
 |Key Name|  Description  |
 |--------|---------------|
@@ -347,7 +332,7 @@ For more information about page background tasks, see [Page Background Tasks](..
 
 ## <a name="Reports"></a>Reports settings
 
-The following table describes fields on the **Reports** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+The following table describes settings related to reports.
 
 |Key Name|  Description  |
 |--------|---------------|
@@ -368,7 +353,7 @@ The following table describes fields on the **Reports** tab in the [!INCLUDE[adm
 
 ## Query settings
 
-The following table describes fields on the **Query** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+The following table describes settings related to query objects.
 
 |Key Name|  Description  |
 |--------|---------------|
@@ -377,7 +362,7 @@ The following table describes fields on the **Query** tab in the [!INCLUDE[admin
 
 ## Extensions settings
 
-The following table describes fields on the **Extensions** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+The following table describes settings related to working with extensions.
 
 |Key Name|  Description  |
 |--------|---------------|
@@ -388,7 +373,7 @@ The following table describes fields on the **Extensions** tab in the [!INCLUDE[
 
 ## <a name="Development"></a>Development settings
 
-The following table describes fields on the **Development** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+The following table describes settings related to development in AL.
 
 |Key Name|  Description  |
 |--------|---------------|
@@ -428,9 +413,7 @@ The following table describes settings that you can adjust for compatibility wit
 
 ## <a name="Upgrade"></a>Upgrade settings
 
-[!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
-
-The following table describes fields on the **Upgrade** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+The following table describes settings related to upgrade.
 
 |Key Name|  Description  |
 |--------|---------------|
