@@ -11,7 +11,7 @@ ms.custom: bap-template
 ---
 # Configure Business Central Server
 
-**APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 (version 21) and later. For later versions, see [onfiguring Business Central Server for outdated versions](configure-server-instance-archived.md).
+**APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 (version 21) and later. For later versions, see [Configuring Business Central Server in outdated versions](configure-server-instance-archived.md).
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 

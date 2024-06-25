@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
   - evergreen
 ---
-# Configuring Business Central Server for outdated versions
+# Configuring Business Central Server in outdated versions
 
 > **Applies to:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version 20) and earlier, whihc are no longer supported. For later versions, see [Configure Business Central Server](configure-server-instance.md).
 
