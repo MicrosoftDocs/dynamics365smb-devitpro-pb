@@ -287,7 +287,7 @@ The following table describes settings related to data encryption. For more info
 
 |Key Name|  Description  |
 |--------|---------------|
-|EncryptionProvider| Specifies where the encryption key used to encrypt data in the database is stored, either **LocalKeyFile** or **AzureKeyVault** values. If you use **AzureKeyVault**, see the [Azure keyvault](#azure-key-vault-client-identity-and-extension-settings) settings. <br /><br />Default: LocalKeyFile<br />Dynamically Updatable: No|
+|EncryptionProvider| Specifies where the encryption key used to encrypt data in the database is stored, either **LocalKeyFile** or **AzureKeyVault** values. If you use **AzureKeyVault**, see the [Azure key vault](#azure-key-vault-client-identity-and-extension-settings) settings. <br /><br />Default: LocalKeyFile<br />Dynamically Updatable: No|
 |AzureKeyVaultKeyUri| Specifies the URI of the key in the Key Vault encryption provider setup. <br /><br />Default:  <br />Dynamically Updatable: No |
 
 ## <a name="Task"></a>Task scheduler settings
