@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Business Central Server Configuration
+title: Configure Business Central Server
 description: Configure and modify settings in the Setup or Installed Business Central Server using PowerShell Cmdlets.
 author: jswymer
 ms.topic: conceptual
@@ -185,7 +185,6 @@ The following table describes settings related to SOAP services.
 |PublicSOAPBaseUrl|Specifies the root of the URLs that are used to access SOAP web services. For example, you can change the value if you want to change the externally facing endpoint.<br /><br /> The base URL must have the following syntax:<br /><br /> http\[s\]://*hostname*:*port*/*instance*/WS/<br /><br /> This field maps to the `PublicSOAPBaseUrl` setting in the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)] instance.<br /><br />Default: The SOAP URL for the server instance<br />Dynamically Updatable: No|  
 |SOAPServicesOperationTimeout|Specifies the maximum amount of time that the server can allocate to a single SOAP request. When the limit is exceeded, a timeout error occurs.<br /><br />Time span format: hh:mm:ss<br /><br />If you do not want a timeout, set the value to **MaxValue**.<br /><br />Default: 00:10:00<br />Dynamically Updatable: Yes|  
 
-
 ##  <a name="ODataServices"></a> OData services settings
   
 The following table describes settings related OData services.  
@@ -236,7 +235,6 @@ The following table describes settings related to NAS services.
 |NASServicesStartupCodeunit|Specifies the codeunit that contains the method that will be called by the **NASStartupMethod** setting.<br /><br /> Example values:<br /><br /> **0**<br /> When **NASStartupCodeunit** is set to 0, NAS Services don't start. This value is the default value.<br /><br />**55**<br /> When NAS services start, they run the trigger specified by the NAS Startup Method in codeunit 55.<br /><br /> **Note:** When the codeunit specified by **NASStartupCodeunit** is a single instance codeunit, the NAS service session will remain alive even after you run all code in the specified **NASStartupMethod**.<br /><br /> Default: <br />Dynamically Updatable: No|  
 |NASServicesStartupMethod|Specifies the method that will be called in the **NASStartupCodeunit**.<br /><br /> Example values:<br /><br /> **""**<br /> If no start method is specified \(null string\), the OnRun trigger is called.<br /><br />**StartNAS**<br /> NAS services run the StartNAS method in the NAS Startup Codeunit.<br /><br /> Default: <br />Dynamically Updatable: No|  
 
-
 ##  <a name="ManagementServices"></a> Management services settings
   
 The following table describes settings related to management services.  
@@ -249,7 +247,6 @@ The following table describes settings related to management services.
 |ManagementApiServicesEnabled|Specifies whether the management API services used by the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] is enabled for this server instance.<br /><br /> Default: <br>Enabled (`true`) for instances created by Business Central installation program (setup.exe). Disabled (`false`) for instances created by the [New-NavServerInstance cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navserverinstance).<br />Dynamically Updatable: No<br /><br />**Important:** In version 21 and later, enabling management API services is only required for the [Invoke-NAVSanitizeField](/powershell/module/microsoft.dynamics.nav.management/invoke-navsanitizefield) cmldet. In version 22 and later, it's also required for the [Get-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/get-navtenant) cmldet. In future releases, management API services will be used for more cmdlets.<br /><br /> |  
 |ManagementApiServicesPort|Specifies the listening TCP port for the management API services used by the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]<br /><br /> Default: 7086<br />Dynamically Updatable: No|  
 |ManagementApiServicesSSLEnabled|Specifies whether SSL (HTTPS) is enabled for the management API services port. <br /><br />Default: Not enabled<br />Dynamically Updatable: No|
-
 
 ## <a name="keyvault"></a>Azure key vault client identity and extension settings
 
@@ -304,8 +301,6 @@ The following table describes settings related to tasks scheduler. The task sche
 |TaskSchedulerSystemTaskEndTime| Specifies the time of day after which system tasks can't start. The time is based on the time zone of the computer that is running the server instance. <br /><br />The value has the format hh:mm:ss.<br /><br />Default: 23:59:59 <br />Dynamically Updatable: Yes|
 |MaxTaskSchedulerSessionTimeout|Specifies the maximum amount of time that scheduled tasks can run before thay are canceled. If a scheduled task is created with a timeout that is greater than the `MaxTaskSchedulerSessionTimeout` setting, an error similar to the following error will be returned and the task won't be created: **The scheduled task could not be created because the timeout N exceeds the max timeout value.**<br /><br />The value has the format hh:mm:ss. <br /><br />Default:  48:00:00 <br />Dynamically Updatable: Yes<br /><br />**INTRODUCED IN:** Version 22|
 |XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
-
-
 
 ## <a name="PBT"></a>Asynchronous processing settings
 
