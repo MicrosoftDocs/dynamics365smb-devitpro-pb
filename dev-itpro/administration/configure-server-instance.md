@@ -53,7 +53,7 @@ The [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.na
 
 These settings are indicated by the text **Dynamically Updatable: Yes** in the tables that follow,
 
-##  <a name="NavAdminSettings"></a>[!INCLUDE[server](../developer/includes/server.md)] instance settings
+## <a name="NavAdminSettings"></a>[!INCLUDE[server](../developer/includes/server.md)] instance settings
   
 This section describes all the configuration settings for a [!INCLUDE[server](../developer/includes/server.md)] instance. The settings are grouped according to the tabs under which they appear in the [!INCLUDE[admintool](../developer/includes/admintool.md)]. The **Key Name** column displays the name of the setting as it appears in the CustomSettings.config file. It's also the name for the setting when you run the Set-NAVServerConfiguration cmdlet.
 
@@ -248,7 +248,7 @@ The following table describes settings related to management services.
 |ManagementApiServicesPort|Specifies the listening TCP port for the management API services used by the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]<br /><br /> Default: 7086<br />Dynamically Updatable: No|  
 |ManagementApiServicesSSLEnabled|Specifies whether SSL (HTTPS) is enabled for the management API services port. <br /><br />Default: Not enabled<br />Dynamically Updatable: No|
 
-## <a name="keyvault"></a>Azure key vault client identity and extension settings
+## Azure key vault client identity and extension settings
 
 The following table describes settings related to Azure key vault settings. These settings are used when you want to use Azure Key Vaults to store extension secrets and data encryption keys. For more information, see [Setting up App Key Vaults ](setup-app-key-vault-onprem.md) and [Data Encryption](../developer/devenv-encrypting-data.md).
 
