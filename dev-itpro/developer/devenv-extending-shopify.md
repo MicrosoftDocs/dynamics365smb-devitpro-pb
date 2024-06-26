@@ -517,6 +517,33 @@ codeunit 50108 "Shpfy Product Import Mapping"
 }
 ```
 
+#### Modify created Item or Item Variant description
+
+The following example shows how to modify the description of an item or item variant that you created based on information received from Shopify. For example, you can build a name based on item and variant information.
+
+```al
+codeunit 50100 "Shpfy Custom Item Desc."
+{
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnAfterCreateItemVariant, '', false, false)]
+    local procedure ModifyItemVariantDescription(Shop: Record "Shpfy Shop"; ShopifyProduct: Record "Shpfy Product"; var ShopifyVariant: Record "Shpfy Variant"; Item: Record Item; var ItemVariant: Record "Item Variant");
+    begin
+        // Build name based on Item and Variant info
+        ItemVariant.Description := CopyStr(Item.Description + ' - ' + ShopifyVariant."Display Name", 1, MaxStrLen(ItemVariant.Description));
+        ItemVariant.Modify(true);
+    end;
+
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnAfterCreateItem, '', false, false)]
+    local procedure ModifyItemDescription(Shop: Record "Shpfy Shop"; var ShopifyProduct: Record "Shpfy Product"; ShopifyVariant: Record "Shpfy Variant"; var Item: Record Item);
+    begin
+        Item.Description := CopyStr(ShopifyVariant."Display Name", 1, MaxStrLen(Item.Description));
+        Item."Description 2" := CopyStr(ShopifyVariant."Display Name", MaxStrLen(Item.Description) + 1, MaxStrLen(Item."Description 2"));
+        Item.Modify(true);
+    end;
+}
+```
+
 
 
 ## See also
