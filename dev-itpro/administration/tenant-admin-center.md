@@ -25,9 +25,8 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 
 ## Supported Microsoft Entra roles for access
 
-Users with the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference) are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments:
+Users with at least the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference) are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments:
 
-- [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator)
 - [Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator)
 - [Dynamics 365 Business Central Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-business-central-administrator)
 
