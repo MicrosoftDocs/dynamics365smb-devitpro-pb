@@ -62,7 +62,7 @@ The steps you'll need to go through to prepare for deploying the add-in will dep
 1. Prepare Microsoft 365
 
     - Assign users a Microsoft 365 license.
-    - Make sure your Microsoft 365 account has the Global Administrator or Exchange Administrator role.
+    - Make sure your Microsoft 365 account has <!--the Global Administrator or--> at least the **Exchange Administrator** role.
 
 2. Prepare Business Central
 
