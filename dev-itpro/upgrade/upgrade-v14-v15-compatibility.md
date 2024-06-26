@@ -40,7 +40,7 @@ To view a list of all available updates for Business Central 2023 Release Wave 2
 The following table lists the Business Central 22 versions and the minimum version of later releases that are compatible for upgrade.
 
 |Version 22|Version 23|Version 24|
-----------|----------|-|
+|----------|----------|-|
 |22.0 to 22.5|[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)  |[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|
 |[22.6](https://support.microsoft.com/help/5031951) |[23.1](https://support.microsoft.com/help/5032755)|24.0|
 |[22.7](https://support.microsoft.com/help/5032754)|[23.2](https://support.microsoft.com/help/5033775)|24.0|
@@ -216,7 +216,7 @@ The following table lists the Business Central 15 versions and the minimum versi
 |[15.5](https://support.microsoft.com/help/4549678)|[16.1](https://support.microsoft.com/help/4549686)|17.0|18.0|
 |[15.6](https://support.microsoft.com/help/4549685)|[16.2](https://support.microsoft.com/help/4564072)|17.0|18.0|
 |[15.7](https://support.microsoft.com/help/4564071)|[16.3](https://support.microsoft.com/help/4563407)|17.0|18.0|
-|[15.8](https://support.microsoft.com/help/4563406)|[16.4](https://support.microsoft.com/help/4563415)|17.0|18.0|
+|[15.8](https://support.microsoft.com/help/4563406)|[16.4](https://support.microsoft.com/en-us/help/4549687)|17.0|18.0|
 |[15.9](https://support.microsoft.com/help/4563414)|[16.5](https://support.microsoft.com/help/4576664) |17.0|18.0|
 |[15.10](https://support.microsoft.com/help/4576663)|[16.6](https://support.microsoft.com/help/4583501)|17.0|18.0|
 |[15.11](https://support.microsoft.com/help/4583500)|[16.7](https://support.microsoft.com/help/4583513)|[17.1](https://support.microsoft.com/help/4583515)|18.0|
@@ -252,7 +252,7 @@ The following table lists the Business Central 14 versions and the minimum versi
 |[14.12 (cumulative update 11)](https://support.microsoft.com/help/4549677)|[15.6](https://support.microsoft.com/help/4549685)|[16.1](https://support.microsoft.com/help/4549686)|17.0|18.0|21.0|22.0|23.0|
 |[14.13 (cumulative update 12)](https://support.microsoft.com/help/4549684)|[15.7](https://support.microsoft.com/help/4564071)|[16.2](https://support.microsoft.com/help/4564072)|17.0|18.0|21.0|22.0|23.0|
 |[14.14 (cumulative update 13)](https://support.microsoft.com/help/4564070)|[15.8](https://support.microsoft.com/help/4563406)|[16.3](https://support.microsoft.com/help/4563407)|17.0|18.0|21.0|22.0|23.0|
-|[14.15 (cumulative update 14)](https://support.microsoft.com/help/4563405)|[15.9](https://support.microsoft.com/help/4563414)|[16.4](https://support.microsoft.com/help/4563415)|17.0|18.0|21.0|22.0|23.0|
+|[14.15 (cumulative update 14)](https://support.microsoft.com/help/4563405)|[15.9](https://support.microsoft.com/help/4563414)|[16.4](https://support.microsoft.com/en-us/help/4549687)|17.0|18.0|21.0|22.0|23.0|
 |[14.16 (cumulative update 15)](https://support.microsoft.com/help/4563410)|[15.10](https://support.microsoft.com/help/4576663)|[16.5](https://support.microsoft.com/help/4576664)|17.0|18.0|21.0|22.0|23.0|
 |[14.17 (cumulative update 16)](https://support.microsoft.com/help/4576662)|[15.11](https://support.microsoft.com/help/4583500) |[16.6](https://support.microsoft.com/help/4583501) |17.0|18.0|21.0|22.0|23.0|
 |[14.18 (cumulative update 17)](https://support.microsoft.com/help/4583496)|[15.12](https://support.microsoft.com/help/4583512)|[16.7](https://support.microsoft.com/help/4583513)|[17.1](https://support.microsoft.com/help/4583515)|18.0|21.0|22.0|23.0|
