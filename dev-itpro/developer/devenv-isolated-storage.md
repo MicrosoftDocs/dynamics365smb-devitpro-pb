@@ -14,7 +14,7 @@ The methods supported for IsolatedStorage are:
 
 |Method|Description|For more information, see|  
 |--------------|-----------------|-------------------------------|  
-|Set(String, String, [DataScope])|Sets the value associated with the specified key within the extension.|[Set(String, String, [DataScope]) Method](methods-auto/isolatedstorage/isolatedstorage-set-method.md)|  
+|Set(String, String, [DataScope])|Sets the value associated with the specified key within the extension.|[Set(String, String, [DataScope]) Method](methods-auto/isolatedstorage/isolatedstorage-set-string-string-datascope-method.md)|  
 |Get(String, [DataScope], var Text)|Gets the value associated with the specified key within the extension.|[Get(String, [DataScope], var Text) Method](methods-auto/isolatedstorage/isolatedstorage-get-string-datascope-text-method.md)|  
 |Contains(String, [DataScope])|Determines whether the storage contains a value with the specified key within the extension.|[Contains(String, [DataScope]) Method](methods-auto/isolatedstorage/isolatedstorage-contains-string-datascope-boolean-method.md)|  
 |Delete(String, [DataScope])|Deletes the value with the specified key from the isolated storage within the extension.|[IsolatedStorage.Delete Method](methods-auto/isolatedstorage/isolatedstorage-delete-method.md)|
