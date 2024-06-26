@@ -544,6 +544,27 @@ codeunit 50100 "Shpfy Custom Item Desc."
 }
 ```
 
+### Customer properties
+
+Customer information is essential for businesses to understand their customers, provide better service, and build long-term relationships. You can subscribe to various events from the **Shpfy Customer Events** codeunit.
+
+#### Adjust created customer based on information received from Shopify
+
+The following example shows how to adjust a created customer based on information received from Shopify. For example, you can remove all non-numeric characters from the phone number.
+
+```al
+codeunit 50101 "Shpfy Custom Customer Info"
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Customer Events", OnAfterCreateCustomer, '', false, false)]
+    local procedure ModifyCustomerPhoneNo(Shop: Record "Shpfy Shop"; var ShopifyCustomerAddress: Record "Shpfy Customer Address"; var Customer: Record Customer);
+    begin
+        // Remove all non-numeric characters from the phone number
+        Customer."Phone No." := DelChr(Customer."Phone No.", '=', DelChr(Customer."Phone No.", '=', '1234567890/+.()'));  
+        Customer.Modify(true);
+    end;
+}
+```
+
 
 
 ## See also
