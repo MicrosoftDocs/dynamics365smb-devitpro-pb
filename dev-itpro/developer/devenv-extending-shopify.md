@@ -482,7 +482,7 @@ codeunit 50109 "Shpfy Product Export Tag"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnAfterCreateTempShopifyProduct', '', false, false)]
     procedure AfterCreateTempShopifyProduct(Item: Record Item; var ShopifyProduct: Record "Shpfy Product"; var ShopifyVariant: Record "Shpfy Variant"; var ShopifyTag: Record "Shpfy Tag")
     begin
-        ShopifyTag."Parent Table No." := 30127;
+        ShopifyTag."Parent Table No." := Database::"Shpfy Product";
         ShopifyTag."Parent Id" := ShopifyProduct.Id;
         ShopifyTag.Tag := Format(Item."Replenishment System");
         if not ShopifyTag.Insert() then
