@@ -17,6 +17,36 @@ The Shopify Connector offers a few points of extensibility. We're keeping the nu
 
 ## Extensibility examples
 
+### Application manifest
+
+To extend the Shopify Connector, create a new extension and add Shopify Connector as a dependency.
+
+```json
+{
+  "id": "a74041b2-f9d2-4899-b4bd-58388a10f169",
+  "name": "ExtendShopify",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "dependencies": [
+    {
+      "id":  "ec255f57-31d0-4ca2-b751-f2fa7c745abb",
+      "name":  "Shopify Connector",
+      "publisher":  "Microsoft",
+      "version": "25.0.0.0"
+    }
+  ],
+  "platform": "1.0.0.0",
+  "application": "25.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "runtime": "14.0"
+}
+```
+
 ### Order processing
 
 How businesses process sales orders can vary greatly, depending on various factors. For example, depending on the type of products or services offered, the sales channels used, and policies and procedures for shipping and handling. You can subscribe to various events from the Shpfy Order Events codeunit.
