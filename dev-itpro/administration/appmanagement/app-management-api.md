@@ -1,5 +1,5 @@
 ---
-title: "App Management API"
+title: App Management API
 description: Learn about managing Embed apps by using the App Management API.
 author: jswymer
 ms.date: 04/01/2021

@@ -1,6 +1,6 @@
 ---
-title: Get accountingPeriods
-description: Gets an accounting period object in Dynamics 365 Business Central.
+title: Get accountingPeriods (Beta)
+description: Gets an accounting period object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al

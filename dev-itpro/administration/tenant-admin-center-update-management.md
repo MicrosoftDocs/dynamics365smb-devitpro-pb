@@ -2,16 +2,15 @@
 title: Managing Updates in the Admin Center
 description: Use the Business Central administration center to manage environment updates, including setting update windows and update dates.  
 author: jswymer
-
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 05/31/2022
+ms.date: 06/03/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
-# Managing Updates in the Business Central Admin Center
+# Managing updates in the Business Central admin center
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are updated according to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/) with two major updates in April and October each year, and monthly, minor updates. For more information, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md) and the [Dynamics 365 Release Plans](/dynamics365/release-plans/).
 

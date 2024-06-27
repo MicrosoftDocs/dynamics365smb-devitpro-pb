@@ -2,16 +2,17 @@
 title: "Migrating to modern list views"
 description: "Explains how to move from legacy views to modern list views in Business Central."
 author: jswymer
-ms.date: 08/09/2022
+ms.date: 06/20/2024
 ms.topic: conceptual
 ms.author: jswymer
 ms.reviewer: jswymer
+ms.custom: evergreen
 ---
 
 # Migrating from legacy views to modern views
 
 > [!IMPORTANT]
-> Legacy views have been [deprecated](../upgrade/deprecated-features-platform.md#views) and will be removed in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1 (version 24). You can experience this change already in 2022 release wave 2 (version 21) by enabling **Legacy list views are hidden** on the **Feature Management** page. Learn more at [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).  
+> Legacy views were [deprecated](../upgrade/deprecated-features-platform.md#views) and removed in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1 (version 24). You can experience this change in 2022 release wave 2 (version 21) by enabling **Legacy list views are hidden** on the **Feature Management** page. Learn more at [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).  
  
 [Modern views](devenv-views.md) were introduced with [!INCLUDE[prod_short](includes/prod_short.md)] April 2019 release wave and are the recommended design going forward. Legacy views are list views that were created by developers in previous versions of [!INCLUDE[prod_short](includes/prod_short.md)] by placing them on the Role Center page object. [!INCLUDE[prod_short](includes/prod_short.md)] displays legacy views side by side with modern views directly on the list page. But legacy views offer a degraded experience and fewer options compared to modern views.  
 
@@ -21,7 +22,7 @@ If your solution or customizations use legacy views, it's recommended you migrat
 
 1. Role center actions 
 
-   These actions are defined in the `area(sections)`, `area(embedding)`, and `area(processing)` sections of the code. The actions run a list page and specify filters or sorting by using the [RunPageView](/properties/devenv-runpageview-property.md). Developers must remove legacy views from role center page code, and reimplement them as modern views on the target list page instead.
+   These actions are defined in the `area(sections)`, `area(embedding)`, and `area(processing)` sections of the code. The actions run a list page and specify filters or sorting by using the [RunPageView](properties/devenv-runpageview-property.md). Developers must remove legacy views from role center page code, and reimplement them as modern views on the target list page instead.
 
    The following code illustrates the AL code pattern on role center pages to look for and replace:
 
@@ -149,24 +150,23 @@ Once you've identified the source of a legacy view, the next step is to recreate
 
 Users can overcome limitations of legacy views simply by using the **Save as...** option to save a copy of the legacy view as a modern, personal view. Similarly, administrators can customize a user role and save the legacy view as a new role-specific view. While this method is quick and practical, it duplicates views on the list page, and doesn't convert the legacy view. 
 
-## Why switch to modern views? 
+## Why switch to modern views?
 
-Benefits for developers: 
+Benefits for developers:
 
 * Benefit from a more declarative model where the view is implemented directly on the list page that it filters. 
 * Add the view only once, instead of having to add it to all Role Center pages that happen to navigate to the list page, while still being able to define role-specific views. 
 * Opportunity to define a unique column layout per view. 
 * Developers benefit from future enhancements to views. 
 
-Benefits for end-users: 
+Benefits for end-users:
 
 * Users will be able to personalize their workspace by hiding, showing, and reordering these views in the **Filter** pane. Similarly, this task can be done once for all users of a particular role.  
 * The user experience is simple and consistent when the list page doesn't contain a mix of legacy and modern views, and performance is improved slightly. 
 * Users receive a consistent choice of views no matter how they navigate to the list page: from the Role Center navigation menu, by searching for the page, through a browser favorite or shared link, or on other form factors.
 * Customers benefit from future enhancements to working with views.
 
-
-## See Also
+## See also
 
 [List Views FAQ](/dynamics365/business-central/ui-views-faq)  
 [Business Central April '19 release plans - List Views](/business-applications-release-notes/April19/dynamics365-business-central/list-views)  

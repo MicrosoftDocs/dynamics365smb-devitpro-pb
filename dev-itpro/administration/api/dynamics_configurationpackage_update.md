@@ -1,5 +1,5 @@
 ---
-title: Update configurationPackage
+title: (automation API) Update configurationPackage
 description: Updates a  configuration package object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Update configurationPackage
+# (automation API) Update configurationPackage
 
 Updates the properties of a configuration package object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
