@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 # Extending interfaces in AL
 
-<!-- [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)] -->
+[!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
 An interface in AL is a syntactical contract that can be implemented by a nonabstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface. 
 
