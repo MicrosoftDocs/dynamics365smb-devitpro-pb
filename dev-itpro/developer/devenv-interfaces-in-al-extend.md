@@ -23,7 +23,7 @@ The extensibile interfaces also work with the testing and casting operators `is`
 
 ## Syntax
 
-In the example, the `TheImplementor` can be used as both `IFoo`, `IBar`, and `IFooBar`. The syntax for extending an interface is as follows:
+In the example, `TheImplementor` can be used as both `IFoo`, `IBar`, and `IFooBar`. The syntax for extending an interface is as follows:
 
 ```AL
 interface IFoo
