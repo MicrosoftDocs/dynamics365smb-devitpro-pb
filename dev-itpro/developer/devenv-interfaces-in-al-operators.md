@@ -13,7 +13,7 @@ ms.reviewer: solsen
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-In the AL language, you can define interfaces and extend them. With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, the `is` and `as` operators, are added to facilitate type testing and casting interfaces. 
+In the AL language, you can define interfaces, which is a syntactical contract that can be implemented by a nonabstract method. With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, you can also extend an interface, which allows for a more flexible and adaptable design. In connection with the extensibility of interfaces, it's useful to be able to do type testing and casting of interfaces. For this purpose, 2 operators `is` and `as` are availble in AL.
 
 Type testing is useful, for example, in connection with extensions of interfaces, which allows you to test if a specific interface is supported.
 
@@ -64,4 +64,4 @@ end;
 ## See also
 
 [Interfaces in AL](devenv-interfaces-in-al.md)  
-<!--[Extending interfaces in AL](devenv-interfaces-in-al-extend.md) -->
+[Extending interfaces in AL](devenv-interfaces-in-al-extend.md)  

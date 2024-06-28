@@ -19,7 +19,7 @@ With Business Central 2024 release wave 2, extensible interfaces in AL are suppo
 
 When you declare an interface, you can extend one or more existing interfaces. When you implement an interface that extends other interfaces, the implementor must also implement all methods from all extended interfaces.
 
-The extensibile interfaces also work with the testing and casting operators `is` and `as`, which are new additions to the AL language with Business Central 2024 release wave 2. For more information, see []().
+The extensibile interfaces also work with the testing and casting operators `is` and `as`, which are new additions to the AL language with Business Central 2024 release wave 2. For more information, see [Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md).
 
 ## Syntax
 
@@ -50,3 +50,4 @@ codeunit 10 TheImplementor implements IFooBar
 ## See also
 
 [Interfaces in AL](devenv-interfaces-in-al.md)  
+[Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md)  
