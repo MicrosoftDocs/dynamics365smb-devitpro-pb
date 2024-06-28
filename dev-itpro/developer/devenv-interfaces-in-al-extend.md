@@ -31,7 +31,7 @@ interface IFoo
     procedure Foo();    
 }
 
-interface IBar()
+interface IBar
 {
     procedure Bar();
 }
