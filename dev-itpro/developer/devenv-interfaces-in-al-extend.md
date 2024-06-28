@@ -13,7 +13,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
-An interface in AL is a syntactical contract that can be implemented by a nonabstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface. 
+An interface in AL is a syntactical contract that can be implemented by a nonabstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface. For more information, see [Interfaces in AL](devenv-interfaces-in-al.md).
 
 With Business Central 2024 release wave 2, extensible interfaces in AL are supported. Extending interfaces enables you to create a flexible and adaptable extension. You can add new functionality without altering the core system, which can save time and resources and you reduce the risk of introducing errors into the existing codebase.
 
@@ -41,7 +41,7 @@ interface IFooBar extends IFoo, IBar
     procedure FooBar();
 }
 
-codeunit 10 TheImplementor extends IFooBar
+codeunit 10 TheImplementor implements IFooBar
 {
     // Must implement IFoo, IBar, IFooBar 
 }
@@ -49,4 +49,4 @@ codeunit 10 TheImplementor extends IFooBar
 
 ## See also
 
-[Interfaces in AL](devenv-interfaces-in-al.md)
+[Interfaces in AL](devenv-interfaces-in-al.md)  
