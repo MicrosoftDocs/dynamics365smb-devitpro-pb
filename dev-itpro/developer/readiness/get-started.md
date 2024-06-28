@@ -87,7 +87,7 @@ In Microsoft Collaborate, you get access to a set of [!INCLUDE [prod_short](../i
 
 ### Prerequisites
 
-Tto register on Microsoft Collaborate, you must have have a Microsoft Entra ID account with the required roles. For more information, see [Microsoft Collaborate Registration](/collaborate/registration).
+To register on Microsoft Collaborate, you must have have a Microsoft Entra ID account with the required roles. For more information, see [Microsoft Collaborate Registration](/collaborate/registration).
 
 > [!NOTE]
 > If you have Microsoft 365, then your company most likely has Microsoft Entra ID. To find out if your company has a Microsoft Entra account, check with your system administrator.
