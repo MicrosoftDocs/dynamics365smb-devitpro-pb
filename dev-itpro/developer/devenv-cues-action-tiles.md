@@ -67,7 +67,7 @@ The first thing that you must do is to create a table that contains fields that 
 
     For each Cue that you want to display on the page, you must add a **Field** control in the table object. When you add the **Field** control, specify the following properties:  
   
-    - Set the [Data Type property](./properties/devenv-properties.md) to **Decimal**, **Integer**, or **Text**, depending on the type of data the Cue will display. 
+    - Set the [Data Type property](./properties/devenv-properties.md) to **Decimal** or **Integer**, depending on the type of data the Cue will display. 
 
     - Set the [FieldClass property](properties/devenv-fieldclass-property.md) to **FlowField** or **Normal**.  
   

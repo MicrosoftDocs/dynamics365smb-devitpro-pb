@@ -74,7 +74,7 @@ Represents a salesQuote resource type in [!INCLUDE[prod_short](../../../includes
 |shipToContact   |string, maximum size 100   |Ship to contact|
 |sellingPostalAddress|Microsoft.NAV.postalAddressType| Selling postal address|
 |billingPostalAddress|Microsoft.NAV.postalAddressType| Billing postal address|
-|shippingPostalAddress|Microsoft.NAV.postalAddressType| Shipping postal adress|
+|shippingPostalAddress|Microsoft.NAV.postalAddressType| Shipping postal address|
 |lastModifiedDateTime|datetime|The last datetime the sales quote was modified. Read-Only.|
 
 

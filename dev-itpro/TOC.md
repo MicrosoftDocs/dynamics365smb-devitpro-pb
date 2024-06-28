@@ -585,7 +585,7 @@
 
 ##### JSON and XML types
 ###### [JsonArray data type](developer/methods-auto/jsonarray/jsonarray-data-type.md)
-###### [Jsonobject data type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
+###### [JsonObject data type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
 ###### [JsonToken data type](developer/methods-auto/jsontoken/jsontoken-data-type.md)
 ###### [JsonValue data type](developer/methods-auto/jsonvalue/jsonvalue-data-type.md)
 ###### [XmlAttribute data type](developer/methods-auto/xmlattribute/xmlattribute-data-type.md)
@@ -1518,7 +1518,7 @@
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
-### [Transparency note: Machine Learnining APIs](developer/ml-transparency-note.md)
+### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
@@ -1993,7 +1993,7 @@
 ##### [Upgrade overview](upgrade/upgrade-overview-v16.md)
 ##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
 ##### Application and data
-<!--##### [Overiew](upgrade/upgrade-application-code-upgrade-v16.md)-->
+<!--##### [Overview](upgrade/upgrade-application-code-upgrade-v16.md)-->
 <!--##### [Unmodified Application](upgrade/upgrade-unmodified-application.md)-->
 ###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v16.md)
 ###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app.md)
@@ -2036,6 +2036,6 @@
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 # Responsible AI
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
-## [Transparency note: Machine Learnining APIs](developer/ml-transparency-note.md)
+## [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 <!-- end upgrade -->
 <!--on-prem ends-->
