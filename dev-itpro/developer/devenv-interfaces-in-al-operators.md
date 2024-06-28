@@ -1,6 +1,6 @@
 ---
 title: Type testing and casting operators for interfaces
-description: With the `is` and `as` operators you can do type testing and casting of interfaces in AL for Business Central.
+description: With the `is` and `as` operators, you can do type testing and casting of interfaces in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 06/28/2024
 ms.topic: conceptual
@@ -13,7 +13,9 @@ ms.reviewer: solsen
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-In the AL language, you can define interfaces and extend them. With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, 2 operators, `is` and `as`, are added to facilitate type testing and casting interfaces.
+In the AL language, you can define interfaces and extend them. With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, the `is` and `as` operators, are added to facilitate type testing and casting interfaces. 
+
+Type testing is useful, for example, in connection with extensions of interfaces, which allows you to test if a specific interface is supported.
 
 
 ## Type testing with the `is` operator

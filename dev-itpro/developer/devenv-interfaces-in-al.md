@@ -24,7 +24,13 @@ The AL compiler checks to ensure that implementations adhere to assigned interfa
 You can declare variables as a given interface to allow passing objects that implement the interface, and then call interface implementations on the passed object in a polymorphic manner.
 
 > [!NOTE]  
-> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, you can use the **Go to Implementations** option in the Visual Studio Code context menu (or press <kbd>Ctrl+F12</kbd>) on an interface to view all the implementations within scope for that interface. This is supported on interfaces, and on codeunits and enums, which implement an interface, as well as on their procedures if they map to a procedure on an interface. It's also supported on codeunit variables of type interface to jump to other implementations of that specific interface.
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, you can use the **Go to Implementations** option in the Visual Studio Code context menu (or press <kbd>Ctrl</kbd>+<kbd>F12</kbd>) on an interface to view all the implementations within scope for that interface. This is supported on interfaces, and on codeunits and enums, which implement an interface, as well as on their procedures if they map to a procedure on an interface. It's also supported on codeunit variables of type interface to jump to other implementations of that specific interface.
+
+## Extending interfaces
+
+[!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
+
+Interfaces in AL can be extended to allow additional changes to interfaces without changing the core functionality. For more information, see [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
 
 ## Snippet support
 
@@ -151,3 +157,5 @@ page 50200 MyAddressPage
 
 [Codeunit object](devenv-codeunit-object.md)  
 [Extensible enums](devenv-extensible-enums.md)  
+[Extending interfaces in AL](devenv-interfaces-in-al-extend.md)  
+[Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md)
