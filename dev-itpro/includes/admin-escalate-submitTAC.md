@@ -23,6 +23,6 @@ You can find most of the necessary information in the [!INCLUDE [prodadmincenter
 > [!IMPORTANT]
 > [!INCLUDE [admin-supportplan](admin-supportplan.md)]
 
-The support person can be a member of the **Helpdesk agent** group in the customer's Microsoft Entra tenant or have at least delegated admin access. For more information, see [Delegated Admin Access to Business Central Online](../administration/delegated-admin.md).  
+The support person can be a member of the **Helpdesk agent** group in the customer's Microsoft Entra tenant or have at least have the [Helpdesk Administrator](/entra/identity/role-based-access-control/permissions-reference#helpdesk-administrator) role. For more information, see [Delegated Admin Access to Business Central Online](../administration/delegated-admin.md).  
 
 Microsoft Support will keep you updated on the status of your support request. You can also see the status in the Power Platform Admin Center. For more information, see [Power Platform Admin Center](/power-platform/admin/admin-documentation).  
