@@ -15,7 +15,7 @@ ms.reviewer: solsen
 
 An interface in AL is a syntactical contract that can be implemented by a nonabstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface. For more information, see [Interfaces in AL](devenv-interfaces-in-al.md).
 
-With Business Central 2024 release wave 2, extensible interfaces in AL are supported. Extending interfaces enables you to create a flexible and adaptable extension. You can add new functionality without altering the core system, which can save time and resources and you reduce the risk of introducing errors into the existing codebase.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, extensible interfaces in AL are supported. Extending interfaces enables you to create a flexible and adaptable extension. You can add new functionality without altering the core system, which can save time and resources and you reduce the risk of introducing errors into the existing codebase.
 
 When you declare an interface, you can extend one or more existing interfaces. When you implement an interface that extends other interfaces, the implementor must also implement all methods from all extended interfaces.
 
