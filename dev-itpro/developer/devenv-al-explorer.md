@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 03/01/2024
+ms.date: 07/01/2024
 ms.custom: bap-template
 ms.collection: get-started
 ---
@@ -25,6 +25,25 @@ The **AL Explorer** has four tabs: **OBJECTS**, **EVENTS**, **APIS**, and **EXTE
 ## Settings
 
 You can choose when to show the **AL Explorer** as you start up Visual Studio Code, the default is that **AL Explorer** is shown once at startup. To change the default, go to user or workspace settings, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration**, change the **Show Explorer at startup** to a different value. For more information, see [AL Language extension configuration](devenv-al-extension-configuration.md).
+
+## Search
+
+[!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
+
+When you search in the AL Explorer, 2 wildcards are supported:
+
+- `*` means zero or more characters
+- `?` means any single character
+
+### Examples
+
+|Pattern | Description | Examples|
+|-|-|-|
+|Customer* | Starts with **Customer** | 'Customer Card', 'Customer'|
+|*Card | Ends with **Card** | 'Customer Card', 'Item Card', 'SomeCard'|
+|Customer*Card | Starts with **Customer** and ends with **Card** | 'Customer Card', 'Customer Accounts Card'|
+|\*Customer\* | Customer anywhere | 'Customer', 'Apply Customer Entries'|
+
 
 ## Go to source code
 
