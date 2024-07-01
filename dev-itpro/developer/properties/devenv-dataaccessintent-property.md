@@ -2,7 +2,7 @@
 title: "DataAccessIntent Property"
 description: "Sets the data access intent of the page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 07/01/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -37,13 +37,19 @@ DataAccessIntent = ReadOnly|ReadWrite;
 
 ## Remarks  
 
-For reports, API pages, and API queries, the Business Central server can use read-only database replicas on Azure SQL Database and SQL Server. If replicas are enabled, use this property to reduce the load on the primary database. Using **ReadOnly** might also improve performance when viewing objects. **ReadOnly** works as a hint for the server to route the connection to a secondary (read-only) replica, if one is available. When a workload is executed against the replica, insert/delete/modify operations aren't possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
+For reports, API pages, and API queries, the [!INCLUDE [prod_short](../includes/prod_short.md)] server can use read-only database replicas on Azure SQL Database and SQL Server. If replicas are enabled, use this property to reduce the load on the primary database. Using **ReadOnly** might also improve performance when viewing objects. **ReadOnly** works as a hint for the server to route the connection to a secondary (read-only) replica, if one is available. When a workload is executed against the replica, insert/delete/modify operations aren't possible. If any of these operations are executed against the replica, an exception is thrown at runtime. The following sections explain how this property is handled on different object types.
 
-**Page:** The property only applies to pages of type API. The [Editable property](devenv-editable-property.md) must be set to **false**. When an OData call fetches data from the page, then it is only the call to fetch the data, that will use the read-only replica. Database calls needed in setting up the API page will be performed against the primary database (e.g. database calls in the `OpenCompany` triggers). 
+### Page
 
-**Query:** The property only has an effect on queries exposed through OData (API queries). It has no effect in normal code paths. When an OData call fetches data from the query, then it is only the call to actually fetch the data, that will use the read-only replica. Database calls needed in setting up the session before retrieving data will be performed against the primary database (e.g. database calls in the `OpenCompany` triggers).
+The property only applies to pages of type API. The [Editable property](devenv-editable-property.md) must be set to **false**. When an OData call fetches data from the page, then it's only the call to fetch the data that uses the read-only replica. Database calls needed in setting up the API page are performed against the primary database, for example, database calls in the `OpenCompany` triggers.
 
-**Report:** The property also affects reports generated in UI sessions. The database calls needed while iterating through data items will use the read-only replica if set. Records read before and after generation of the data set will be read from the primary database.
+### Query
+
+The property only has an effect on queries exposed through OData (API queries). It has no effect in normal code paths. When an OData call fetches data from the query, then it's only the call to actually fetch the data that uses the read-only replica. Database calls needed in setting up the session before retrieving data are performed against the primary database, for example, database calls in the `OpenCompany` triggers.
+
+### Report
+
+The property also affects reports generated in UI sessions. The database calls needed while iterating through data items use the read-only replica if it's set. Records read before and after generation of the data set are read from the primary database.
 
 From the client, the property value can be overwritten by using page **9880 Database Access Intent List** page.
 
