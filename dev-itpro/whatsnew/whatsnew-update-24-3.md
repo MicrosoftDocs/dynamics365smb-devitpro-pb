@@ -2,7 +2,7 @@
 title: Update 24.3 for Microsoft Dynamics 365 Business Central 2024 Release Wave 1
 description: Get an overview of new and changed capabilities in the 24.3 update of Business Central online, which is part of 2024 release wave 1.
 ms.author: jswymer
-ms.date: 05/27/2024
+ms.date: 07/01/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -16,23 +16,15 @@ Would you like to know what's changed in update 24.3? Below you find an overview
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5040044) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5041133) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 
-- [Automate country/region of origin listed for item tracking code in Intrastat reporting (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
-- [Enable Sustainability features for integrations with APIs (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/achieving-sustainable-compliance-business-central)
-- [Use linked environment in Dataverse integration](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/use-linked-environment-dataverse-integration)
-- Copilot in Business Central is now available in more languages for the following features:
-
-  - [Analysis assist](/dynamics365/business-central/analysis-assist)
-  - [Bank reconciliation assist](/dynamics365/business-central/bank-reconciliation-with-copilot)
-  - [Marketing text suggestions](/dynamics365/business-central/item-marketing-text)
-  - [Sales lines suggestions](/dynamics365/business-central/sales-suggest-sales-lines-with-copilot) 
-  - [E-documents matching](/dynamics365/business-central/map-edocuments-with-copilot)
-  
-  > [!NOTE]
-  > Some languages aren't yet fully supported by Copilot. You can use them, but the quality of the results might vary. To find out which langauges are supported for a feature, refer to the documentation.
+- [Enable additional countries and regions (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/enable-additional-countries-regions)
+- [Simplify collections with Copilot for Finance and Business Central (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/empower-collections-team-copilot-finance-business-central)
+- [Enable sustainability features for integrations with APIs](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/enable-sustainability-features-integrations-apis)
+- [Automate country of origin listed for item tracking code in Intrastat reporting](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
+- [Install Field Service Integration with Business Central from AppSource](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/install-field-service-integration-business-central-appsource)
 
 ## Localization updates
 
@@ -56,19 +48,13 @@ Watch the latest [video showcasing Copilot in Business Central](https://www.micr
 
 ### Recent service features
 
-The following Business Central online service features were rolled out during May 2024:
-
-- [Audit Business Central operations in Microsoft Purview (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/audit-business-central-operations-purview)
-- [Allow customers to consent to Microsoft Support accessing their data](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/allow-customers-consent-support-accessing-their-data)
-- [Link Business Central environments to Power Platform environments](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/link-business-central-environments-power-platform-environments)
+The following Business Central online service features were rolled out during June 2024:
 
 ### Business Central channel on YouTube
 
 Check out the new [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube at [aka.ms/BCYouTube](https://aka.ms/BCYouTube), where you can find the latest videos from the 2024 release wave 1 Launch Event.
 
 ### Upcoming Business Central Office Hours Calls
-
-Join the Office Hour Call Thursday June 13 to about Business Central integration with Power Platform and Dataverse.
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). 
 Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).
