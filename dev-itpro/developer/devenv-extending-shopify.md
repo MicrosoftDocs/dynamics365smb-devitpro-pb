@@ -104,6 +104,38 @@ codeunit 50112 "Shpfy Order External Doc. No"
 }
 ```
 
+#### Change the VAT Business Posting Group based on the country of the order
+
+The following example shows how to change the VAT Business Posting Group based on the country of the order. For example, if the order is from an EU country, you can set the VAT Business Posting Group to 'EU'. This can be useful if you need to apply different VAT group compared the default one set on the Customer.
+
+```al
+codeunit 50103 "Shpfy Change VAT Group"
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", OnAfterCreateSalesHeader, '', false, false)]
+    local procedure ChangeVATPostingGroup(OrderHeader: Record "Shpfy Order Header"; var SalesHeader: Record "Sales Header")
+    var
+        CountryRegion: Record "Country/Region";
+        CompanyInfo: Record "Company Information";
+    begin
+        if OrderHeader."Bill-to Country/Region Code" = '' then
+            exit;
+
+        CompanyInfo.Get();
+        if OrderHeader."Bill-to Country/Region Code" = CompanyInfo."Country/Region Code" then
+            SalesHeader."VAT Bus. Posting Group" := 'DOMESTIC'
+        else begin
+            CountryRegion.Get(OrderHeader."Bill-to Country/Region Code");
+            if CountryRegion."EU Country/Region Code" <> '' then
+                SalesHeader."VAT Bus. Posting Group" := 'EU'
+            else
+                SalesHeader."VAT Bus. Posting Group" := 'EXPORT';
+        end;
+
+        SalesHeader.Modify(true);
+    end;
+}
+```
+
 #### Add information to a sales document line that's based on a Shopify order
 
 The following example shows how to add dimensions to a sales document line that's based on a Shopify order.
