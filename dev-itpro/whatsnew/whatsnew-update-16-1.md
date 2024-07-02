@@ -34,7 +34,7 @@ Learn more about [the Business Central Administration Center](../administration/
 When you navigate from the Business Central Sandbox tile in the Dynamics 365 Home portal or in the App Launcher, a dialog is displayed for you to choose exactly, which sandbox environment from your organization you would like to navigate to.   
 Read more about [sandbox environments](../administration/environment-types.md)
 
-- **Message to full admins about the capabilities**   
+- **Message to admins with global access about the capabilities**   
 On sign in, you get a message about the capabilities in Business Central according to their license or suggesting one if they don't have any assigned. 
 
 - **Coming up: Virtual partner readiness event - register now!**   
