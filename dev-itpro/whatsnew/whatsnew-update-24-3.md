@@ -28,9 +28,15 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Localization updates
 
-| Country/region| Feature  |Description|
-|-------------|--------------|--------------|
-|Mexico|CFDI Comercio exterior complemento 2.0|Business Central is now compliant with new foreign trade rules in Mexico&mdash;Comercio Exterior 2.0&mdash;which are now integrated with the CFDI 4.0. Changes are related with the foreign trade section, issuer section, and new validation rules.|
+|Country/region|Feature|Description|
+|-|-|-|
+|BE|New SEPA format CT pain.001.001.09|Added new reports **File SEPA 001.001.09 Pmts** and **File FCY SEPA 001.001.09 Pmts** that can be chosen as **Export Protocols** for the new format.|
+|CH|New SEPA format DD pain.008.001.02|Added new XMLport **SEPA DD pain.008.001.02.ch03** that can be chosen as bank export/import format.|
+|DK|Missing SchemeID in PEPPOL|Added **SchemeID** in the **CompanyID** section of the **PEPPOL** file and changed **VAT Scheme** in **Country/Region** for DK to 0184. It is also added a prefix DK to **VAT Registration No.** when applicable|
+|FI|New SEPA format CT pain.001.001.09|	Added new Codeunit **Exp. SEPA CT pain.001.001.09** and report **Exp. SEPA CT pain.001.001.09** that can be used to export files in new format.|
+|IT|Vendor exemption export|Added amounts for each VAT exemptions in the **Amount to declare** field on the **Declaration of Intent Export** card.|
+|NL|New SEPA formats CT pain.001.001.09 and DD pain.008.001.08|Added new reports **SEPA ISO20022 Pain 008.001.08** and **SEPA ISO20022 Pain 001.001.09** that can be chosen as **Export Protocols** to export files in the corresponding format.|
+|W1|New SEPA formats CT pain.001.001.09 and DD pain.008.001.08|New SEPA formats **CT pain.001.001.09** and **DD pain.008.001.08** have been added as options on the **Bank Account** card.|
 
 ## Release Plan
 
