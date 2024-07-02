@@ -1828,7 +1828,6 @@
 #### [OutStream.Write(Option [, Integer]) Method](methods-auto/outstream/outstream-write-option-integer-method.md)
 #### [OutStream.Write(Record [, Integer]) Method](methods-auto/outstream/outstream-write-table-integer-method.md)
 #### [OutStream.Write(RecordId [, Integer]) Method](methods-auto/outstream/outstream-write-recordid-integer-method.md)
-#### [OutStream.Write(Text [, Integer]) Method](methods-auto/outstream/outstream-write-string-integer-method.md)
 #### [OutStream.Write(Any [, Integer]) Method](methods-auto/outstream/outstream-write-joker-integer-method.md)
 #### [OutStream.WriteText([Text] [, Integer]) Method](methods-auto/outstream/outstream-writetext-method.md)
 ### [Page Data Type](methods-auto/page/page-data-type.md)
