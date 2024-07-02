@@ -1981,8 +1981,6 @@
 #### [Record.TestField(Any, TextConst, ErrorInfo) Method](methods-auto/record/record-testfield-joker-textconst-errorinfo-method.md)
 #### [Record.TestField(Any, Code) Method](methods-auto/record/record-testfield-joker-code-method.md)
 #### [Record.TestField(Any, Code, ErrorInfo) Method](methods-auto/record/record-testfield-joker-code-errorinfo-method.md)
-#### [Record.TestField(Any, Text) Method](methods-auto/record/record-testfield-joker-string-method.md)
-#### [Record.TestField(Any, Text, ErrorInfo) Method](methods-auto/record/record-testfield-joker-string-errorinfo-method.md)
 #### [Record.TestField(Any, Enum) Method](methods-auto/record/record-testfield-joker-anyenum-method.md)
 #### [Record.TestField(Any, Enum, ErrorInfo) Method](methods-auto/record/record-testfield-joker-anyenum-errorinfo-method.md)
 #### [Record.TestField(Any, Any) Method](methods-auto/record/record-testfield-joker-joker-method.md)
