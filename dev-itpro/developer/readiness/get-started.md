@@ -94,7 +94,7 @@ To register on Microsoft Collaborate, you must have have a Microsoft Entra ID ac
 
 ### Step 4 A: Register for Collaborate
 
-Register at [https://aka.ms/Collaborate](https://aka.ms/Collaborate). Sign in with you Microsoft Entra account, choose the **Get Started** action, and then complete the registration form.  
+Register at [https://aka.ms/Collaborate](https://aka.ms/Collaborate). Sign in with your Microsoft Entra account, choose the **Get Started** action, and then complete the registration form.  
 
 As an administrator, you can now add the relevant colleagues.  
 
