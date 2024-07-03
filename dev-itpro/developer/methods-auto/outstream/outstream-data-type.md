@@ -43,7 +43,7 @@ The following methods are available on instances of the OutStream data type.
 |[Write(Option [, Integer])](outstream-write-option-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Record [, Integer])](outstream-write-table-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(RecordId [, Integer])](outstream-write-recordid-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
-|[Write(Text [, Integer])](outstream-write-string-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
+|[Write(Text [, Integer])](outstream-write-text-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Any [, Integer])](outstream-write-joker-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[WriteText([Text] [, Integer])](outstream-writetext-method.md)|Writes text to an OutStream object.|
 
