@@ -154,7 +154,7 @@ It's possible to include a certificate when calling an external service using Ht
 
 For more information about certificates, see
 
-- [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md) 
+- [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-string-string-method.md)  
 - [Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md).
 
 ### Which IP addresses or ranges does my environment use?

@@ -29,7 +29,7 @@ By using the **Notification** and **NotificationScope** data types and methods i
 |[Message](methods-auto/notification/notification-message-method.md)  |Specifies the content of the notification that appears in the UI.|
 |[Scope](methods-auto/notification/notification-scope-method.md)     |Specifies the scope in which the notification appears.|
 |[Send](methods-auto/notification/notification-send-method.md)  |Sends the notification to be displayed by the client.|
-|[AddAction](methods-auto/notification/notification-addaction-method.md)  |Adds an action on the notification.|
+|[AddAction](methods-auto/notification/notification-addaction-string-integer-string-method.md)  |Adds an action on the notification.|
 |[SetData](methods-auto/notification/notification-setdata-method.md)  |Sets a data property value for the notification|
 |[GetData](methods-auto/notification/notification-getdata-method.md)  |Gets a data property value from the notification.|
 |[Recall](methods-auto/notification/notification-recall-method.md)|Recalls a sent notification.|

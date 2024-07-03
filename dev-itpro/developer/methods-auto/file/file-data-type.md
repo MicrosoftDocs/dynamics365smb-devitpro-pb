@@ -72,7 +72,6 @@ The following methods are available on instances of the File data type.
 |[Write(Option)](file-write-option-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(Record)](file-write-table-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(RecordId)](file-write-recordid-method.md)|Writes to an MS-DOS encoded file or binary file.|
-|[Write(Text)](file-write-string-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(Any)](file-write-joker-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[WriteMode([Boolean])](file-writemode-method.md)|Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls.|
 
