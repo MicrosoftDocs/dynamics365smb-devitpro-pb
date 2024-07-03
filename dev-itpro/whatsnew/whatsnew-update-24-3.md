@@ -32,8 +32,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 |-|-|-|
 |BE|New SEPA format CT pain.001.001.09|Added new reports **File SEPA 001.001.09 Pmts** and **File FCY SEPA 001.001.09 Pmts** that can be chosen as **Export Protocols** for the new format.|
 |CH|New SEPA format DD pain.008.001.02|Added new XMLport **SEPA DD pain.008.001.02.ch03** that can be chosen as bank export/import format.|
-|DK|Missing SchemeID in PEPPOL|Added **SchemeID** in the **CompanyID** section of the **PEPPOL** file and changed **VAT Scheme** in **Country/Region** for DK to 0184. It is also added a prefix DK to **VAT Registration No.** when applicable|
-|FI|New SEPA format CT pain.001.001.09|	Added new Codeunit **Exp. SEPA CT pain.001.001.09** and report **Exp. SEPA CT pain.001.001.09** that can be used to export files in new format.|
+|DK|Missing SchemeID in PEPPOL|Added **SchemeID** in the **CompanyID** section of the **PEPPOL** file and changed **VAT Scheme** in **Country/Region** for DK to 0184. It's also added a prefix DK to **VAT Registration No.** when applicable|
+|FI|New SEPA format CT pain.001.001.09|Added new Codeunit **Exp. SEPA CT pain.001.001.09** and report **Exp. SEPA CT pain.001.001.09** that can be used to export files in new format.|
 |IT|Vendor exemption export|Added amounts for each VAT exemptions in the **Amount to declare** field on the **Declaration of Intent Export** card.|
 |NL|New SEPA formats CT pain.001.001.09 and DD pain.008.001.08|Added new reports **SEPA ISO20022 Pain 008.001.08** and **SEPA ISO20022 Pain 001.001.09** that can be chosen as **Export Protocols** to export files in the corresponding format.|
 |W1|New SEPA formats CT pain.001.001.09 and DD pain.008.001.08|New SEPA formats **CT pain.001.001.09** and **DD pain.008.001.08** have been added as options on the **Bank Account** card.|
@@ -48,22 +48,8 @@ New customers automatically get the latest builds of Business Central (24.3). If
 
 ## Good to know
 
-### New Copilot video and blog
-
-Watch the latest [video showcasing Copilot in Business Central](https://www.microsoft.com/videoplayer/embed/RW1l5SJ), and read the [blog post](https://aka.ms/bc-ai) by Mike Morton covering AI innovation.
-
-### Recent service features
-
-The following Business Central online service features were rolled out during June 2024:
-
-### Business Central channel on YouTube
-
-Check out the new [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube at [aka.ms/BCYouTube](https://aka.ms/BCYouTube), where you can find the latest videos from the 2024 release wave 1 Launch Event.
-
-### Upcoming Business Central Office Hours Calls
-
-Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). 
-Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).
+- All Microsoft partners are invited to the SMB Partner Hour on July 24, at 8:30AM PT. Microsoft will walk through FY25 SMB plans, incentives, resources to accelerate your growth. Register now at: [aka.ms/SMBPartnerHour](https://aka.ms/SMBPartnerHour).
+- Watch the newest edition of the Under the Hood podcast where we discuss “How many users can Business Central handle in the cloud?”. [Watch it on YouTube](https://youtu.be/snVsG69X-kw?si=D19Eg9fo1qdVMtW8)
 
 ### Features becoming mandatory soon
 
