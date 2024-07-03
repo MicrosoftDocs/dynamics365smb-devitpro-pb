@@ -39,6 +39,23 @@ The following methods are available on instances of the Dictionary data type.
 
 Each addition to the dictionary consists of a value, and its associated key. Every key in a Dictionary must be unique. A key cannot be null, but a value can be, only when the value type is a reference type.
 
+A Dictionary is a reference type, so assigning an instance of a dictionary to another variable or passing as a method parameter by value (for example without var), creates a second variable that reads/writes the same dictionary. *It does not create a new dictionary*.
+
+To create a new dictionary that contains the same values as the original dictionary, you can do the following to perform a *shallow copy*:
+
+```al
+trigger OnRun()
+    var
+        dict1: Dictionary of [Integer, Integer];
+        dict2: Dictionary of [Integer, Integer];
+        dictionaryKey: Integer;
+    begin
+        // ...
+        foreach dictionaryKey in dict1.Keys() do
+            dict2.Add(dictionaryKey, dict1.Get(dictionaryKey));
+    end;
+```
+
 The Dictionary data type does not support holding instantiated records. For this purpose, use temporary tables.
 
 > [!WARNING]  
@@ -54,19 +71,16 @@ The Dictionary data type does not support holding instantiated records. For this
 In the following example, the variable `counter` represents the Dictionary data type to store a value representing the number of occurrences for each character in the `customerName`. Using the `Get` method, you get the number of occurrences for the character at position `i`. If `i` returns **false**, it means there is no value associated with that character, so you add the value 1. If `i` returns **true**, it means the value already exists, so you add `c + 1` to the value. The `Add` method adds the {key:value} pair to the Dictionary.
 
 ```al
-procedure CountCharactersInCustomerName(customerName: Text; var counter: Dictionary of [Char, Integer])
+procedure CountCharactersInCustomerName(customerName: Text; counter: Dictionary of [Char, Integer])
 var
     i : Integer;
     c : Integer;
 begin
-
-    for i := 1 to StrLen(customerName) do 
-    begin
+    for i := 1 to StrLen(customerName) do
         if counter.Get(customerName[i], c) then
-            counter.Set(customerName[i], c + 1) 
-        else 
+            counter.Set(customerName[i], c + 1)
+        else
             counter.Add(customerName[i], 1);
-    end;
 end;
 
 ```

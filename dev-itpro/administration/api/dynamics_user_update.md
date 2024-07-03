@@ -1,5 +1,5 @@
 ---
-title: Update user
+title: (automation API) Update user
 description: Updates an  user object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Update user
+# (automation API) Update user
 
 Updates the properties of an user object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 

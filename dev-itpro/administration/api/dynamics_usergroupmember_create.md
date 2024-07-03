@@ -1,5 +1,5 @@
 ---
-title: Create userGroupMember
+title: (automation API) Create userGroupMember
 description: Creates an user group member object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Create userGroupMember
+# (automation API) Create userGroupMember
 
 Creates an user group member in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 

@@ -1,5 +1,5 @@
 ---
-title: Create tableMappings
+title: (cloudMigration API) Create tableMappings
 description: Creates a table mapping object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Create tableMappings
+# (cloudMigration API) Create tableMappings
 
 Creates a table mapping in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

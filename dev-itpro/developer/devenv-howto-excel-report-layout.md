@@ -3,8 +3,8 @@ title: Creating an Excel layout report
 description: Describes the steps involved in creating a report that uses an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 05/16/2024
-ms.reviewer: solsen
+ms.date: 06/10/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
 ---
@@ -159,13 +159,14 @@ There are two ways to translate strings:
 
 If strings are available in field captions or labels in the report object, you can use Excel cell lookups to the data in the **CaptionData** table. This table is populated by the [!INCLUDE[prod_short](../includes/prod_short.md)] server when the report is generated and contains the caption strings for fields and report labels from the report object. Use the same technique with the **TranslationData** table that holds per-layout translation texts. For these texts, use the *Format Region* field from the **ReportRequestValues** table in your Excel lookups.
 
-It's also possible to use '\$tag\$' substitution for Excel elements in your worksheets. At report generation time, the [!INCLUDE[prod_short](../includes/prod_short.md)] server replaces '\$tag\$' with the corresponding value defined in the **TranslationData** or **CaptionData** tables. If a tag exists in both tables, data from the **TranslationData** table takes precedence. The tag name is case-sensitive and unmatched elements will be left unmodified.
+It's also possible to use '\$tag\$' substitution for Excel elements in your worksheets. At report generation time, the [!INCLUDE[prod_short](../includes/prod_short.md)] server replaces '\$tag\$' with the corresponding value defined in the **TranslationData** or **CaptionData** tables. If a tag exists in both tables, data from the **TranslationData** table takes precedence. The tag name is case-sensitive and unmatched elements are left unmodified.
 
 The following Excel elements can be translated:
 
 - Worksheet name
 - Text data in a cell
 - Chart title
+- Chart axis titles (available from version 24.1)
 - Pivot table name (right-click on the pivot table, choose **PivotTable Options**, then add your tag in the **PivotTable Name** field)
 - Pivot field name (right-click on the field in the pivot table, choose **Field Settings**, then add your tag in the **Custom Name** field)
 - Slicer name (right-click on the slicer, choose **Slicer Settings**, then add your tag in the **Caption** field)
@@ -233,7 +234,7 @@ For more information, see [Web URL syntax](devenv-web-client-urls.md).
 
 When doing lookups inside the Excel workbook, use the `XLOOKUP` function instead of `VLOOKUP`. For more information, see [XLOOKUP function](https://support.microsoft.com/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929).
 
-Power Query is a powerful tool for cleaning and transforming data (for example, setting correct data types). If you want to use Power Query in your layouts, take a look at [Power Query in Excel](https://powerquery.microsoft.com/excel).
+Consider using Power Query as a powerful tool to clean and transform data (for example, use it to set the correct data types). Power Query is available in all Excel versions since Excel 2016. The connectors offered by Excel versions differs as stated in this support article: [Power Query data sources in Excel versions](https://support.microsoft.com/office/power-query-data-sources-in-excel-versions-e9332067-8e49-46fc-97ff-f2e1bfa0cb16). For more information, see [Power Query in Excel](https://powerquery.microsoft.com/excel). 
 
 Table formulas in Excel are a powerful way to work on table data. For more information, see [Use calculated columns in an Excel table](https://support.microsoft.com/office/use-calculated-columns-in-an-excel-table-873fbac6-7110-4300-8f6f-aafa2ea11ce8#:~:text=As%20a%20result%2C%20Excel%20built%20the%20formula%3A%20%3DSUM,to%20use%20the%20same%20formula%20for%20each%20row).
 

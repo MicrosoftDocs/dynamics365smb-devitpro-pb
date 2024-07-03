@@ -1,6 +1,6 @@
 ---
-title: Get vendors
-description: Gets a vendor object in Dynamics 365 Business Central.
+title: Get vendors (Beta)
+description: Gets a vendor object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al

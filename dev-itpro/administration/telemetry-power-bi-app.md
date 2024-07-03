@@ -244,7 +244,7 @@ In the following table, you'll find examples of scenarios for each persona where
 | Supporter | Customer experiences many locking issues. | Use the _Database Deadlocks_ page in the Error report to examine deadlocks. Use the _Database Lock Timeouts_ page in the Performance report to examine lock time-outs. Use the _Long running SQL queries_ page (filter SQL Statement to "UPDLOCK") to investigate SQL queries that take locks. | 
 
 > [!TIP]
-> Get started with [understanding busines processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
+> Get started with [understanding business processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
 
 ## No-code alerting with Power BI Metrics
 [!INCLUDE[pbimetrics](../includes/include-telemetry-alerting-powerbi-metrics.md)]

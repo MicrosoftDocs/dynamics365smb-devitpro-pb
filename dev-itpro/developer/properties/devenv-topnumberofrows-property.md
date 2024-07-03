@@ -23,7 +23,7 @@ Specifies the maximum number of rows to include in the resulting data set of a q
 
 ## Property Value  
 
-An integer that specifies the maximum number of rows to include in the resulting dataset.  
+An integer that specifies the maximum number of rows to include in the resulting dataset. The default value for this property is **0**.
   
 > [!NOTE]  
 > A value of **0** is the same as leaving the property blank. If you set the value to **0**, then there is no limit and all rows of the dataset are returned.  
