@@ -15,7 +15,7 @@ Administrators that can manage [!INCLUDE [prod_short](../developer/includes/prod
 
 ## Administration as an internal administrator
 
-Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global administrator**, **Dynamics 365 Administrator**, or **Dynamics 365 Business Central Administrator** role in the Microsoft 365 admin center. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
+Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned at least the **Dynamics 365 Administrator** or **Dynamics 365 Business Central Administrator** role in the Microsoft 365 admin center. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
 
 ### Administration in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
@@ -36,11 +36,11 @@ If your organization signed up for a [!INCLUDE [prod_short](../developer/include
 
 ### Administration in the Microsoft 365 admin center
 
-The **Global administrator** and **License administrator** roles let you manage the subscription and assign or remove licenses in the Microsoft 365 admin center. The **Global administrator** and **User administrator** roles let you add or remove users from your organization's tenant. For more information, see [Microsoft 365 Admin help center](/office365/admin/admin-home).  
+To manage the subscription and assign or remove licenses in the Microsoft 365 admin center, you must have at least the **License administrator** role. To add or remove add or remove users from your organization's tenant, you must have at least the **User administrator** role.
 
 ### Collaboration with reselling partners
 
-When your organization subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you have a relationship with [an authorized partner of Microsoft](/microsoft-365/admin/misc/add-partner). The partner company assists with licensing, configuration, and other tasks. They can also help you get [telemetry](telemetry-overview.md) about your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. Authorized partners can gain access to your tenant and its [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments by setting up a granular delegated administrative privileges (GDAP) relationship. It's recommended the **Dynamics 365 Business Central Administrator** role in GDAP relationships as this role limits access for partner users to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] only. The **Global administrator** and **Dynamics 365 administrator** roles are also supported for partners to administer and access [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments in the customer tenant, but also provide access to services other than [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
+When your organization subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you have a relationship with [an authorized partner of Microsoft](/microsoft-365/admin/misc/add-partner). The partner company assists with licensing, configuration, and other tasks. They can also help you get [telemetry](telemetry-overview.md) about your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. Authorized partners can gain access to your tenant and its [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments by setting up a granular delegated administrative privileges (GDAP) relationship. It's recommended the **Dynamics 365 Business Central Administrator** role in GDAP relationships as this role limits access for partner users to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] only. The **Dynamics 365 administrator** role is also supported for partners to administer and access [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments in the customer tenant, but also provide access to services other than [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
 
 If your organization decides to switch to another partner, you must take the following steps:
 
