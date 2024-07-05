@@ -235,7 +235,6 @@ You'll create two versions of this extension. The first version contains the tab
       "dependencies": [],
       "screenshots": [],
       "platform": "1.0.0.0",
-      "application": "24.0.0.0",
       "idRanges": [],
       "resourceExposurePolicy": {
         "allowDebugging": true,
@@ -244,7 +243,7 @@ You'll create two versions of this extension. The first version contains the tab
       },
       "runtime": "13.0",
       "features": [
-        "NoImplicitWith",
+        "NoImplicitWith"
       ],
       "target": "OnPrem"
     }
