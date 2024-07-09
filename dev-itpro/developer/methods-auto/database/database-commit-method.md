@@ -2,7 +2,7 @@
 title: "Database.Commit() Method"
 description: "Ends the current write transaction."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 07/08/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -28,9 +28,9 @@ Ends the current write transaction.
 
 ## Remarks
 
-When a codeunit begins, it automatically enables write transactions to be performed. When an AL code module completes, it automatically ends the write transaction by committing the updates made by the AL code.  
+During AL code execution, if a transaction is needed, the AL runtime automatically initializes it. At the completion of AL code execution, any transactions that are created are also automatically ended, committing any updates made by the AL code.
 
-This means that if you want the codeunit to perform a single write transaction, it is automatically handled for you. However, if you want the codeunit to perform multiple write transactions, you must use the Commit method to end one write transaction before you can start the next. The Commit method separates write transactions in an AL code module.  
+This means that if you want code execution to perform a single write transaction, it's automatically handled for you. However, if you want the code execution to perform multiple write transactions, you must use the `Commit` method to end one write transaction before you can start the next. The `Commit` method separates write transactions in an AL code module.
 
 ## Example
 
