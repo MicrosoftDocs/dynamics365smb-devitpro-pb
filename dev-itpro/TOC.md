@@ -831,14 +831,14 @@
 ##### [Actions in the user interface](developer/devenv-actions-user-interface.md)
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md)
-##### Promoted actions
-###### [Promoted actions](developer/devenv-promoted-actions.md)
-###### [Organizing promoted actions](developer/devenv-organizing-promoted-actions.md)
-###### [Common promoted action groups](developer/devenv-common-promoted-action-groups.md)
 ##### Modern action bar
 ###### [Action bar improvements](developer/devenv-action-bar-improvements.md)
 ###### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
 ###### [Pages with action bar improvements](developer/devenv-pages-action-bar-improvements.md)
+##### Promoted actions
+###### [Promoted actions](developer/devenv-promoted-actions.md)
+###### [Organizing promoted actions](developer/devenv-organizing-promoted-actions.md)
+###### [Common promoted action groups](developer/devenv-common-promoted-action-groups.md)
 
 #### Views
 ##### [Designing views](developer/devenv-views.md)
