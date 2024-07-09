@@ -38,6 +38,12 @@ This optional parameter identifies a record. This parameter is a record data typ
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Transaction semantics
+
+When the return value of the Codeunit.Run method is used (eg. using the *if Codeunit.Run() then* pattern), any changes done to the database will be committed at the end of the codeunit, unless an error occurs.
+
+As for using the **CommitBehavior** attribute together with *if Codeunit.Run()*, if you are already in a transaction you must commit first before calling Codeunit.Run. For more information, see [CommitBehavior Attribute](../../attributes/devenv-commitbehavior-attribute.md).
+
 ## Example
 
 This example runs two codeunits. The first uses a record parameter. The second is defined without a source table.
@@ -57,6 +63,8 @@ end;
 ```  
 
 ## See Also
+
 [Codeunit Data Type](codeunit-data-type.md)  
+[CommitBehavior Attribute](../../attributes/devenv-commitbehavior-attribute.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

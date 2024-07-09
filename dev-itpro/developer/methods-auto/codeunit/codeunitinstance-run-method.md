@@ -37,7 +37,13 @@ A record from the table that is associated with the codeunit.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Transaction semantics
+
+For information about transaction and commit semantics for **Codeunit.Run**, see [Codeunit.Run(Integer [, var Record]) Method](codeunit-run-method.md).
+
 ## See Also
 [Codeunit Data Type](codeunit-data-type.md)  
+[CommitBehavior Attribute](../../attributes/devenv-commitbehavior-attribute.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
