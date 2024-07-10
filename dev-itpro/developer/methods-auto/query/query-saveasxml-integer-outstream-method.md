@@ -1,6 +1,6 @@
 ---
 title: "Query.SaveAsXml(Integer, OutStream) Method"
-description: "Saves the resulting data set of a query as an .xml file."
+description: "Saves the resulting data set of a query xml into a stream."
 ms.author: solsen
 ms.date: 05/14/2024
 ms.topic: reference
