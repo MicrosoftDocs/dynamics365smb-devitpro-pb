@@ -40,9 +40,9 @@ This optional parameter identifies a record. This parameter is a record data typ
 
 ## Transaction semantics
 
-When the return value of the Codeunit.Run method is used (eg. using the *if Codeunit.Run() then* pattern), any changes done to the database will be committed at the end of the codeunit, unless an error occurs.
+When the return value of the Codeunit.Run method is used (eg. using the *if Codeunit.Run() then* pattern), any changes done to the database will be committed at the end of the codeunit, unless an error occurs. If you are already in a transaction you must commit first before calling Codeunit.Run.
 
-As for using the **CommitBehavior** attribute together with *if Codeunit.Run()*, if you are already in a transaction you must commit first before calling Codeunit.Run. For more information, see [CommitBehavior Attribute](../../attributes/devenv-commitbehavior-attribute.md).
+As for using the **CommitBehavior** attribute together with Codeunit.Run, the implicit commit by Codeunit.Run is not affected by CommitBehavior. For more information, see [CommitBehavior Attribute](../../attributes/devenv-commitbehavior-attribute.md).
 
 ## Example
 
