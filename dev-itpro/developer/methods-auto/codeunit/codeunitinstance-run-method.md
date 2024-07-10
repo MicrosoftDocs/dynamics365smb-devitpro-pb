@@ -2,7 +2,7 @@
 title: "Codeunit.Run(var Record) Method"
 description: "Loads and executes the unit of AL code that you specify."
 ms.author: solsen
-ms.date: 07/10/2024
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -40,10 +40,9 @@ A record from the table that is associated with the codeunit.
 
 ## Transaction semantics
 
-For information about transaction and commit semantics for `Codeunit.Run`, see [Codeunit.Run(Integer [, var Record]) Method](codeunit-run-method.md). 
+For information about transaction and commit semantics for `Codeunit.Run`, see [Codeunit.Run(Integer [, var Record]) Method](codeunit-run-method.md).  
 
 ## See Also
 [Codeunit Data Type](codeunit-data-type.md)  
-[CommitBehavior Attribute](../../attributes/devenv-commitbehavior-attribute.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
