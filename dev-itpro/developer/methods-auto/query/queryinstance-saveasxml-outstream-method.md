@@ -42,7 +42,7 @@ The stream that you want to save the query as XML to.
 
 When the **SaveAsXML** method is called, the dataset is generated and streamed to the OutStream object designated by the *OutStream* parameter.  
 
-## **Open**, **Read**, or **Close** semantics
+## Open, Read, or Close semantics
 
 The **SaveAsXML** method can be called at any place in the code and does not require that the **Open**, **Read**, or **Close** methods are called before it. For more information, see [**Open**, **Read**, or **Close** semantics with the **SaveAsXML** method](./query-saveasxml-integer-outstream-method.md#open-read-or-close-semantics-with-the-saveasxml-method). 
 

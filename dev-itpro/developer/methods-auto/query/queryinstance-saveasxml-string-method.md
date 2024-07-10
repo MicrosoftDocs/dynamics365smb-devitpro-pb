@@ -45,7 +45,7 @@ The path and name of the file that you want to save the query to.
 When the **SaveAsXML** method is called, the dataset is generated and then saved in XML format in the file and location that is designated by the *FileName* parameter.  
 
 
-## **Open**, **Read**, or **Close** semantics
+## Open, Read, or Close semantics
 
 The **SaveAsXML** method can be called at any place in the code and does not require that the **Open**, **Read**, or **Close** methods are called before it. For more information, see [**Open**, **Read**, or **Close** semantics with the **SaveAsXML** method](./query-saveasxml-integer-outstream-method.md#open-read-or-close-semantics-with-the-saveasxml-method). 
 
