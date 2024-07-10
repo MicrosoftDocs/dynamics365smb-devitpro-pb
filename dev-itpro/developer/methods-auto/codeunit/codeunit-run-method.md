@@ -2,7 +2,7 @@
 title: "Codeunit.Run(Integer [, var Record]) Method"
 description: "Loads and runs the unit of AL code you specify."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 07/10/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,10 +41,9 @@ This optional parameter identifies a record. This parameter is a record data typ
 
 ## Transaction semantics
 
-When the return value of the Codeunit.Run method is used (eg. using the *if Codeunit.Run() then* pattern), any changes done to the database will be committed at the end of the codeunit, unless an error occurs. If you are already in a transaction you must commit first before calling Codeunit.Run.
+When the return value of the Codeunit.Run method is used, for example using the `if Codeunit.Run() then` pattern, any changes done to the database will be committed at the end of the codeunit, unless an error occurs. If you're already in a transaction you must commit first before calling `Codeunit.Run`.
 
-As for using the **CommitBehavior** attribute together with Codeunit.Run, the implicit commit by Codeunit.Run is not affected by CommitBehavior. For more information, see [CommitBehavior Attribute](../../attributes/devenv-commitbehavior-attribute.md).
-
+Using the `CommitBehavior` attribute together with `Codeunit.Run`, the implicit commit by `Codeunit.Run` isn't affected by `CommitBehavior`. For more information, see [CommitBehavior Attribute](../../attributes/devenv-commitbehavior-attribute.md).
 
 ## Example
 
