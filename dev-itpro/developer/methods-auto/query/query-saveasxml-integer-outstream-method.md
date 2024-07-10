@@ -40,7 +40,7 @@ The stream that you want to save the query as XML to.
 
 ## Remarks  
 
-When the **SaveAsXML** method is called, the dataset is generated and streamed to the OutStream object designated by the *OutStream* parameter.  
+When the **SaveAsXML** method is called, the dataset is generated as XML and streamed to the OutStream object designated by the *OutStream* parameter.  
 
 ## **Open**, **Read**, or **Close** semantics with the **SaveAsXML** method
 
