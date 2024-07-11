@@ -26,7 +26,7 @@ These operators are used to perform various operations such as arithmetic, compa
 |`:=`|Assigns a value to a variable. Assigns the value on the right side of the operator to the variable on the left side.|
 |`()`|Parentheses|
 |`[ ]`|Indexing|
-|`::`|Scope|
+|`::`|Scope. Returns the id of an object. Examples: Report::myReport or Query::"My Query".|
 |`..`|Range|
 |`@`|Case-insensitive|
 
