@@ -798,7 +798,7 @@ Returns quotas object.
 Gets the following operations that occurred on an environment.
 
 ```
-GET /admin/v2.21/applications/{applicationType}/environments/{environmentName}/operations 
+GET /admin/v2.21/environments/{environmentName}/operations 
 ```
 
 ### Operation types
