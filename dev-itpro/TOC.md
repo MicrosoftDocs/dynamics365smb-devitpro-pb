@@ -1458,7 +1458,7 @@
 #### [Using OData on queries set with top number of rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
 #### [Using OData to modify data](webservices/use-odata-to-modify-data.md)
 #### [Using OData transactional $batch requests](webservices/use-odata-batch.md)
-#### [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)  
+#### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)  
 #### [Return or obtain service metadata EDMX document for OData](webservices/return-obtain-service-metadata-edmx-document.md)
 #### [Return or obtain a JSON document with OData](webservices/return-obtain-json-document.md)
 #### [Known OData limitations](webservices/odata-known-limitations.md)
