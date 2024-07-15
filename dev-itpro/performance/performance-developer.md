@@ -297,7 +297,7 @@ Using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint o
 
 Some tips for avoiding locking:
 
-- Enable [tri-state locking](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-tri-state-locking) to avoid reads-after-writes taking locks.
+- Enable [tri-state locking](../developer/devenv-tri-state-locking) to avoid reads-after-writes taking locks.
 -	Read setup information before starting write transactions
 -	If possible, limit the time you hold locks
 -	If possible, limit transaction size (divide into smaller operations that can be committed)
