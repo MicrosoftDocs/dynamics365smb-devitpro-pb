@@ -157,8 +157,8 @@ To help you design shortcuts, keep the following information in mind:
 - You can also set up shortcuts on actions of pages contained in parts of the main page. In this case, the shortcuts only work when the user has focus on the part that contains the page. Consider the following behavior when a user presses a shortcut while a page part's in focus:
 
   - If a shortcut's not defined on the page in the focused part but *is* defined on the main page, the main page's action will be triggered.
-  - If a shortcut's defined on the page in the focused part and the main page, the focused part's action is triggered. Shortcut's defined in the part take precedence.  
-
+  - If a shortcut's defined on the page in the focused part and the main page, the focused part's action is triggered. Shortcut's defined in the part take precedence. 
+- Be careful when defining shortcut keys that may be already defined in the context of the page being developed. If a duplicated shortcut is found, only the first defined one will be respected, even if the action the shortcut is defined on is disabled. If the action is not visible, the visible action with the same shortcut key will be triggered. This consideration is only relevant when defining duplicated shortcuts within the same main page or the same part, as when there is a shortcut defined in the main page and also defined in a part, the above behavior applies with focused parts.
 
 ## See also  
 
