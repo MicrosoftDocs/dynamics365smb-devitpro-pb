@@ -11,13 +11,13 @@ ms.collection: get-started
 
 # Enable text search on table fields
 
-Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define which table fields that should be included in optimized text search. 
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 2, you can specify which table fields that should be included in optimized text search. 
 
-The optimized text search is used in a number of search functionality in [!INCLUDE[prod_short](includes/prod_short.md)], such as in the company-wide search, but you can also use optimized text search in your own AL code.
+Optimized text search is used in a number of search functionality in [!INCLUDE[prod_short](includes/prod_short.md)], such as in the company-wide search, but you can also use optimized text search in your own AL code.
 
 ## Example syntax (table fields)
 
-The following example shows how text search is enabled on the field level:
+To enable text search on field, set the property `OptimizeForTextSearch` to `true`. The following example shows how text search is enabled on the field level:
 
 ```AL
 table 50104 Address
@@ -99,6 +99,6 @@ Der maa ikke vaere ord imellem.
 
 ## See also
 
-TODO: add link to methods-auto article
+TODO: add link to methods-auto article  
 [Table object](devenv-table-object.md)
 [Tables overview](devenv-tables-overview.md)
