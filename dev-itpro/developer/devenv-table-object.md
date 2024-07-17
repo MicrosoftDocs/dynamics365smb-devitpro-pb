@@ -13,12 +13,34 @@ ms.reviewer: solsen
 
 Tables are the core objects used to store data in [!INCLUDE [prod_short](includes/prod_short.md)]. No matter how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
 
+## Table syntax
+
 The structure of a table has four sections:
 
 - The first block contains metadata for the overall table, such as the table type.
-- The fields section describes the data elements that make up the table, such as their name and the type of data they can store.
+- The fields section describes the data elements that make up the table, such as their name or the type of data they can store.
 - The keys section contains the definitions of the keys that the table needs to support.
 - The final section details the triggers and code that can run on the table.
+
+
+The order in which the sections appear matters. The following example illustrates the ordering:
+
+```AL
+table ObjectId TableName
+{
+    // table properties such as 
+    Caption = 'Sample table';
+    DataPerCompany = true;
+
+    // define the table schema here
+    fields {}
+   
+    // keys section is optional
+    keys {} 
+    
+    // optionally, add AL code here
+}
+```
 
 
 ## Table object limits
@@ -70,6 +92,13 @@ Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, 
 
 For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
+
+## Enable text search on table fields
+
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 2, you can define if table fields should be optimized for text search. You do this by setting the property `OptimizeForTextSearch` to `true`.
+
+For more information, see [Enable text search on table fields](devenv-table-field-text-search.md).
+
 ## Table example
 
 This table stores address information and it has five fields; `Address`, `Locality`, `Town/City`, `County`, and `IsValidated`.
@@ -85,22 +114,26 @@ table 50104 Address
         field(1; Address; Text[50])
         {
             Caption = 'Address retrieved by Service';
+            // in 2024 release wave 2, you can define that table fields are included in optimized text search
+            OptimizeForTextSearch = true;
         }
         field(2; Locality; Text[30])
         {
             Caption = 'Locality retrieved by Service';
             Description = 'Locality feature likely to change in vNext'; // Internal note (not shown in the client)
+            OptimizeForTextSearch = true;
         }
         field(3; "Town/City"; Text[30])
         {
             Caption = 'Town/City retrieved by Service';
-            // in 2024 release wave 1, you can define tooltips on the table field level
-            // uncomment the Tooltip line below to try it out
-            // ToolTip = 'Town/City retrieved by Service';
+            // in 2024 release wave 1, you can define tooltips on the table field level            
+            ToolTip = 'Town/City retrieved by Service';
+            OptimizeForTextSearch = true;            
         }
         field(4; County; Text[30])
         {
             Caption = 'County retrieved by Service';
+            OptimizeForTextSearch = true;
 
             // this is how you define field validation on the table level
             trigger OnValidate()
@@ -115,6 +148,7 @@ table 50104 Address
             InitValue = false; // this is how you define default values 
         }        
     }
+
     keys
     {
         key(PrimaryKey; Address)
@@ -133,6 +167,7 @@ table 50104 Address
 [Adding tooltips to table and page fields](devenv-adding-tooltips.md)  
 [InitValue Property (defining default values for fields)](properties/devenv-initvalue-property.md)   
 [OnValidate (Field) Trigger](triggers-auto/field/devenv-onvalidate-field-trigger.md)   
+[Enable text search on table fields](devenv-table-field-text-search.md)  
 [Table keys](devenv-table-keys.md)  
 [Table, table fields, and table extension properties](properties/devenv-table-properties.md)  
 [Object specifications and limitations](devenv-object-specifications-limitations.md)   
