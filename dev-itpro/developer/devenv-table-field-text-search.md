@@ -97,6 +97,12 @@ Item.FindSet()...
 Matcher ingen.
 Der maa ikke vaere ord imellem.
 
+
+## Enable text search on the database (on-premises only)
+
+TODO
+
+
 ## See also
 
 TODO: add link to methods-auto article  
