@@ -22,6 +22,7 @@ In this article, we introduce some of these features.
 
 - View or edit [!INCLUDE [prod_short](../includes/prod_short.md)] data in Excel.
 - Support analytical reporting.
+- Manage G/L budgets (export to/import from Excel).
 - Write AL code and use the System app module to create or read Excel files as a developer.
 
 :::image type="content" source="media/connect-to-excel.svg" alt-text="Shows how Business Central integrates to Excel" lightbox="media/connect-to-excel.svg":::
@@ -34,10 +35,10 @@ For more information, see [Viewing and Editing in Excel From Business Central](/
 
 Power users can use Excel as the design tool for the layout of analytical reports and then upload the Excel layout workbook to [!INCLUDE [prod_short](../includes/prod_short.md)]. Any user who has access to these reports can run them. When the [!INCLUDE [prod_short](../includes/prod_short.md)] server generates the Excel report, it merges the Excel layout workbook with data and sends the resulting Excel workbook to the user as a downloaded file. For more information, see [Working with Microsoft Excel Layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report).
 
-
 > [!TIP]
 > If you also enable integration to [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)], Excel workbooks from [!INCLUDE [prod_short](../includes/prod_short.md)] are opened in your browser by using Excel for the web. 
 
+If your organization use G/L budgets, you can export a budget to Excel for further processing or analysis and then import budget data back in [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [Exporting and importing G/L budgets with Excel](/dynamics365/business-central/finance-how-create-budgets#exporting-and-importing-gl-budgets-with-excel).
 
 ## Integrating to [!INCLUDE[m365_graph](includes/m365-graph-name.md)] (from AL code)
 
