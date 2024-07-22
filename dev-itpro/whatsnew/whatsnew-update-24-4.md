@@ -39,8 +39,16 @@ New customers automatically get the latest builds of Business Central (24.4). If
 
 ## Good to know
 
-- All Microsoft partners are invited to the SMB Partner Hour on July 24, at 8:30AM PT. Microsoft will walk through FY25 SMB plans, incentives, resources to accelerate your growth. Register now at: [aka.ms/SMBPartnerHour](https://aka.ms/SMBPartnerHour).
-- Watch the newest edition of the Under the Hood podcast where we discuss “How many users can Business Central handle in the cloud?”. [Watch it on YouTube](https://youtu.be/snVsG69X-kw?si=D19Eg9fo1qdVMtW8)
+<!-- ### Recent service features
+
+The following Business Central online service features were rolled out during July 2024:-->
+
+<!--### Upcoming Business Central Office Hours Calls
+
+Join the Office Hour Call Thursday June 13 to about Business Central integration with Power Platform and Dataverse. 
+
+Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). 
+Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).-->
 
 ### Features becoming mandatory soon
 
