@@ -337,7 +337,7 @@ traces
 
 [Error handling](../developer/devenv-al-error-handling.md)   
 [Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
-[System Application Overview](../developer/devenv-system-application-overview.md)  
+[Application Overview](../developer/devenv-application-overview.md)  
 [Feature Telemetry System Application Documentation](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)  
 [Feature Telemetry Codeunit Reference Documentation](/dynamics365/business-central/application/system-application/codeunit/system.telemetry.feature-telemetry)  
 [Feature Management Telemetry](telemetry-feature-management-trace.md)  

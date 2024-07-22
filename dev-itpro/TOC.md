@@ -1103,8 +1103,8 @@
 <!-- end AL programming -->
 
 ## [System and application reference documentation](/dynamics365/business-central/application/)
-### [Overview of the system application](developer/devenv-system-application-overview.md)
-### Creating new modules in the system application
+### [Overview of the application layers and modules](developer/devenv-application-overview.md)
+### Creating new modules
 #### [Module architecture](developer/devenv-blueprint.md)
 #### [Get started with modules](developer/devenv-getting-started.md)
 #### [Set up your development environment](developer/devenv-set-up-an-environment.md)
