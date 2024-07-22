@@ -2,7 +2,7 @@
 title: Update 24.4 for Microsoft Dynamics 365 Business Central 2024 Release Wave 1
 description: Get an overview of new and changed capabilities in the 24.4 update of Business Central online, which is part of 2024 release wave 1.
 ms.author: jswymer
-ms.date: 07/09/2024
+ms.date: 07/22/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 author: jswymer
