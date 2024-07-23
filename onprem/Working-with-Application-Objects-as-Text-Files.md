@@ -1,11 +1,7 @@
 ---
 title: Application Objects in Text Files
 description: Export application objects to text files and modify them in external tools such as comparing and merging objects using Windows PowerShell cmdlets.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 17677da3-f68a-4899-a2d3-fa2964edd6fe
 caps.latest.revision: 5

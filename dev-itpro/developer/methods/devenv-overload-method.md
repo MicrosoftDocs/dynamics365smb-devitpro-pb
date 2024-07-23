@@ -1,12 +1,12 @@
 ---
-title: "Procedure overload"
-description: "Using the procedure overload to create multiple procedures with the same name, but with different signatures, on the same application object."
+title: Procedure overload
+description: Using the procedure overload to create multiple procedures with the same name, but with different signatures, on the same application object.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 04/26/2024
 ms.topic: reference
 ms.author: solsen
+ms.custom: evergreen
+ms.reviewer: solsen
 ---
 
 # Procedure overload
@@ -29,22 +29,22 @@ In the first code snippet, a **ToString** procedure is implemented. This takes a
 ```AL
 codeunit 10 Stringifier 
 { 
-    local procedure TextToString(value : Text) : Text; 
+    local procedure TextToString(value : Text) : Text
     begin 
         Exit(value); 
     end; 
  
-    local procedure DateToString(value : Date) : Text; 
+    local procedure DateToString(value : Date) : Text
     begin 
         Exit(Format(value)); 
     end; 
  
-    local procedure IntegerToString(value : Integer) : Text; 
+    local procedure IntegerToString(value : Integer) : Text
     begin 
         Exit(Format(value)); 
     end; 
  
-    procedure ToString(value: Variant) : Text; 
+    procedure ToString(value: Variant) : Text
     begin 
         if value.IsInteger then 
             Exit(IntegerToString(value)) 
@@ -63,24 +63,24 @@ In the second code snippet, we overload the ToString procedure for Text, Date an
 ```AL
 codeunit 10 StringifierWithOverloads 
 { 
-    procedure ToString(value : Text) : Text; 
+    procedure ToString(value : Text) : Text
     begin 
         Exit(value); 
     end; 
  
-    procedure ToString(value : Date) : Text; 
+    procedure ToString(value : Date) : Text
     begin 
         Exit(Format(value)); 
     end; 
  
-    procedure ToString(value : Integer) : Text; 
+    procedure ToString(value : Integer) : Text
     begin 
         Exit(Format(value)); 
     end; 
 } 
 ```
 
-## See Also
+## See also
 
-[AL Method Reference](../methods-auto/library.md)  
-[AL Development Environment](../devenv-reference-overview.md)  
+[AL method reference](../methods-auto/library.md)  
+[AL development environment](../devenv-reference-overview.md)  

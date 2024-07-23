@@ -2,11 +2,10 @@
 title: .NET control add-ins
 description: Description of the process of declaring the usage of a .NET or Javascript add-ins in AL.
 author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # .NET control add-ins

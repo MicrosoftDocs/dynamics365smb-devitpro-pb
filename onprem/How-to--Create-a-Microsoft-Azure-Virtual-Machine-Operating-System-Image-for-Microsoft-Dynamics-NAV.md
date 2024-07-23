@@ -2,11 +2,7 @@
 title: Azure Virtual Machine OS Image Creation
 description: This topic describes how to create custom images in Microsoft Azure Gallery that you can use to create virtual machines for deploying Dynamics NAV.
 author: jswymer
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 807d5b34-e487-45f7-953e-5e7079e0e3ba
 mms.author: jswymer

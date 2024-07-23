@@ -3,8 +3,9 @@ title: The SMB opportunity for app publishers
 description: Learn about the business opportunity we see for software companies in the SMB space if you build your solution on Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: conceptual
-ms.date: 05/30/2022
+ms.date: 06/21/2024
 ms.author: kurtju
+ms.reviewer: jswymer
 ---
 
 # The SMB opportunity for app publishers
@@ -38,7 +39,7 @@ Connect your existing online service with the [!INCLUDE[prod_short](../includes/
 
 - [Scaptify](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview), which connects your Shopify store with Business Central  
 
-Learn more about the API to build connect apps: [Get started developing Connect apps](../devenv-develop-connect-apps.md)  
+Learn more about the API to build connect apps: [Get started developing Connect apps](../devenv-develop-connect-apps.md).  
 
 ### Add-on
 
@@ -62,13 +63,14 @@ Learn more on how to build your app: [Get Started with AL](../devenv-get-started
 
 A large number of business users find it easy to buy consultancy services to research, deploy and manage apps. Therefore, next to providing Apps, a publisher can also market consultancy services on Microsoft AppSource to connect with buyers. The offered services could be assessments, briefings, workshops, proof of concepts, and implementations. In general, the services are typically fixed in scope and duration. They're offered at a fixed price or free, and have a defined outcome.  
 
+<!-- links no longer valid
 Here are a few examples of consultancy services provided by publishers:  
 
 - [Unified Commerce Readiness Intro: 1-Hr Assessment](https://appsource.microsoft.com/marketplace/consulting-services/ls_retail.lsconsulting5?country=US&page=1&product=dynamics-365%3Bdynamics-365-business-central&search=LS%20Retail)
     In this 1 hour assessment, LS Retail assesses how a 4-day engagement helps them with implementing their Unified Commerce Cloud solution based on Microsoft Dynamics 365.
 
 - [NAV-X Commission Mgt Gold 4-Hr Implementation](https://appsource.microsoft.com/marketplace/consulting-services/navx.82b7da21-0097-4745-b999-24111d5f4432?country=US&page=1&product=dynamics-365%3Bdynamics-365-business-central)
-    In this 4 hour implementation workshop, NAV-X supports the customers in implementing their commission management app.
+    In this 4 hour implementation workshop, NAV-X supports the customers in implementing their commission management app.-->
 
 Learn more about [Consultancy Services](https://appsource.microsoft.com/partners).
 

@@ -4,7 +4,7 @@ description: Understand how our AI technology works, the choices system owners c
 author: mikebc 
 ms.author: jswymer 
 ms.reviewer: jswymer
-ms.topic: FAQ
+ms.topic: faq
 ms.collection:
   - bap-ai-copilot 
 ms.date: 12/07/2023
@@ -65,7 +65,7 @@ The toolkit allows developers to build generative AI features integrated into Bu
 
    End-users can choose to provide feedback on generative output that is then visible to partners and to Microsoft through the standard telemetry-based PowerBI report, along with statistics around usage and adoption. The feedback mechanism is a like and dislike button at the top of the page, which leads to the option to provide a reason before submitting.  
   
-   ![Shows the feedback dialog for copilot](../developer/media/ai-copilot-feedback.svg)
+   ![Shows the feedback dialog for Copilot](../developer/media/ai-copilot-feedback.svg)
 
 - **Feature governance**  
 

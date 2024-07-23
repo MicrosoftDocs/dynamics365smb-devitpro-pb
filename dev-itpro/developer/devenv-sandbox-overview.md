@@ -2,12 +2,11 @@
 title: Sandbox environments for Dynamics 365 Business Central development
 description: Overview of the differences between the offered sandbox environments for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/01/2024
-ms.reviewer: na
 ms.topic: overview
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Sandbox environments for Business Central development

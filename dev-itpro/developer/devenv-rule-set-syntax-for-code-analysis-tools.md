@@ -2,11 +2,10 @@
 title: Ruleset for the code analysis tool
 description: Description of how to create custom rulesets for the code analysis tool in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/24/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Ruleset for the code analysis tool 

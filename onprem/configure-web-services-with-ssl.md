@@ -1,10 +1,6 @@
 ---
 title: "Configuring Dynamics 365 Business Central Web Services to Use SSL (SOAP and OData)"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ---
 # Configuring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Services to Use SSL 

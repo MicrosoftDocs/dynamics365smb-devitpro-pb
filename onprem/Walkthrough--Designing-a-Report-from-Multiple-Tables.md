@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Designing a Report from Multiple Tables"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 60f0c302-d4b9-410b-b44c-0a6ca0a9e123
 caps.latest.revision: 21

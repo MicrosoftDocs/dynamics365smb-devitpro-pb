@@ -1,13 +1,13 @@
 ---
 title: (v1.0) Upload attachment| Microsoft Docs
 description: (v1.0) Uploads the attachment in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Update attachments (v1.0)

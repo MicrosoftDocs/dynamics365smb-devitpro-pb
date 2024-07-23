@@ -39,10 +39,10 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/dynamics365smb-devitpro-pb",
+      "feedback_system": "Standard",
       "feedback_product_url": "https://experience.dynamics.com/ideas/categories/?forum=e288ef32-82ed-e611-8101-5065f38b21f1&forumName=Dynamics%20365%20Business%20Central",
       "ms.author": "solsen",
+      "ms.reviewer": "jswymer",
       "searchScope": [
         "dynamics365-bc-devitpro",
         "Dynamics 365",
@@ -67,7 +67,7 @@
         "deployment/*.md": "jswymer",
         "developer/**/*.md": "SusanneWindfeldPedersen",
         "developer/*.md": "SusanneWindfeldPedersen",
-        "help/*.md": "edupont04",
+        "help/*.md": "jswymer",
         "performance/*.md": "jswymer",
         "powerplatform/*.md": "SusanneWindfeldPedersen",
         "security/*.md": "jswymer",

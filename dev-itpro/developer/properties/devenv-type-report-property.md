@@ -2,11 +2,10 @@
 title: "Type (Report) Property"
 description: "Sets the format type of the report layout."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/04/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 <!-- this topic is manually created, parent node is devenv-type-property.md -->

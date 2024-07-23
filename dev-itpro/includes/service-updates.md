@@ -1,8 +1,9 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
 ms.date: 04/21/2021
-ms.author: edupont
+ms.author: jswymer
+ms.reviewer: jswymer
 ---
 [!INCLUDE [prod_short](prod_short.md)] online is a service that consists of a Microsoft-maintained platform and business functionality. Many Microsoft partners provide extra business functionality, such as to address specific industry or localization needs. Both business functionality and service components are monitored continuously and updated as appropriate.  
 

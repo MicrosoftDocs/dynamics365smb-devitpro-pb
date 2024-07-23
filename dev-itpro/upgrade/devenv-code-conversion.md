@@ -1,11 +1,11 @@
 ---
 title: "Code Conversion from C/AL to AL"
 description: "Description of the conversion process from C/AL to AL."
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Code Conversion from C/AL to AL
 

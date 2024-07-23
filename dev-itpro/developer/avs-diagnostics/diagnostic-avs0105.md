@@ -1,10 +1,9 @@
 ---
-title: "AVS Error AVS0105"
+title: AVS Error AVS0105
 description: "The submission must target at least one existing release of Business Central. Verify the dependencies specified in the app.json of all the apps submitted."
 ms.author: thpeder
-ms.custom: na
-ms.date: 02/05/2022
-ms.reviewer: solsen
+ms.date: 04/26/2024
+ms.reviewer: jswymer
 ms.topic: reference
 author: thpeder
 ---
@@ -19,8 +18,8 @@ The submission must target at least one existing release of [!INCLUDE [prod_shor
 
 The app.json files has a dependency either from the `application` property or the `dependencies` section that sets the requirement higher than the available releases of [!INCLUDE [prod_short](../includes/prod_short.md)]. To learn more see [Technical Validation FAQ](../devenv-checklist-submission-faq.md).
 
-## See Also
+## See also
 
 [Choosing Runtime Version in AL](../devenv-choosing-runtime.md)
-[Get Started with AL](../devenv-get-started.md)
+[Get started with AL](../devenv-get-started.md)
 [Developing Extensions](../devenv-dev-overview.md)

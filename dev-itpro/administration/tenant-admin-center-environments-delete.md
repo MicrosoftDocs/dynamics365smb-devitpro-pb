@@ -37,7 +37,8 @@ Here's some important information about deleted environments and their recovery:
 
    When you recover an environment, any updates scheduled for the environment while it was in retention will be applied as part of recovery. If you don't want to apply an update during recovery, you can reschedule it to a later date before starting the recovery.
 
-- Soft-deleted environments, or any environments listed on **Recently deleted environments** page, aren't counted towards the environment quota on your tenant. 
+- Soft-deleted environments, or any environments listed on **Recently deleted environments** page, aren't counted towards the environment quota on your tenant.
+- Environments that are [linked](tenant-admin-center-environments.md#linked-power-platform-environment) to a Power Platform environment cannot be deleted. Unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment before deleting the environment.
 
 > [!IMPORTANT]
 > You can recover a soft-deleted product environment even if doing so results in exceeding your environment quota. However, you can only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription.

@@ -1,11 +1,7 @@
 ---
 title: Create XMLports 
 description: You can design XMLports to import or export XML documents, variable text files, or fixed-width text files. 
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: db7e208e-9780-40e2-a2f6-aeee8b7c1923
 caps.latest.revision: 11

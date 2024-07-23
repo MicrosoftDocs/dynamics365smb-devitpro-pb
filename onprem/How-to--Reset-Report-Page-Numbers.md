@@ -1,10 +1,6 @@
 ---
 title: "How to: Reset Report Page Numbers"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2b216c40-4293-4dd9-b076-0bfb6ee701a6
 caps.latest.revision: 17

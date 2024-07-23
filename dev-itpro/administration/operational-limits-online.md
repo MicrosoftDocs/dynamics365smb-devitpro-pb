@@ -3,7 +3,7 @@ title: Operation Limits in Dynamics 365 Business Central
 description: Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments.
 author: swinarko
 ms.custom: bap-template
-ms.date: 02/26/2024
+ms.date: 06/10/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: sawinark
@@ -40,7 +40,6 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Max items in object graph|The maximum number of objects to serialize or deserialize.|  10,000|
 |Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|350 MB|
 |Maximum stream read size|The maximum number of bytes that can be read from a stream (InStream object) in a single AL read operation. Examples include READ or InStream.READTEXT method calls. This setting pertains to UTF-8 and UTF-16 text encoding; not MS-DOS encoding. |1,000,000 bytes|
 
@@ -59,7 +58,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |SQL command timeout|The contextual time-out for a SQL command.|30 minutes|
 |SQL connection idle timeout|The time that a SQL connection can remain idle before being closed.|5 minutes|
 |SQL connection timeout|The time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to the beginning, rollback, and commit of transactions.|1.5 minutes|
-|Long-running SQL query threshold|The amount of time that an SQL query can run before a warning telemetry event occurs. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|1000 ms|
+|Long-running SQL query threshold|The amount of time that an SQL query can run before a warning telemetry event occurs. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|750 ms|
 
 <!--
 |SQL bulk import batch size|Specifies how many SQL memory chunks a data import must be distributed across.| 448|
@@ -121,12 +120,12 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
 |-------|--------------------------------------------------------------------------------|-----|
 |Max body size|The maximum request body size in MB.|350|
-|Max concurrent requests|The maximum number of OData V4 requests that can be processed at the same time. Requests that come in when this limit is exceeded will wait in a queue until a time slot becomes available. They wait in the queue until they time out after 8 minutes, where an HTTP response code `503 - Service Temporarily Unavailable` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|5, see the future [per-user limit](#ODataServicesUser).|
-|Max connections|The maximum number of simultaneous OData V4 requests, including processed and queued requests. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|100, see the future [per-user limit](#ODataServicesUser).|
+|Max concurrent requests|The maximum number of OData V4 requests that can be processed at the same time. Requests that come in when this limit is exceeded will wait in a queue until a time slot becomes available. They wait in the queue until they time out after 8 minutes, where an HTTP response code `503 - Service Temporarily Unavailable` is returned. To increase throughput, this per-environment limit has been changed to a per-user limit.|5, see the current [per-user limit](#ODataServicesUser).|
+|Max connections|The maximum number of simultaneous OData V4 requests, including processed and queued requests. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit has been changed to a per-user limit.|100, see the current [per-user limit](#ODataServicesUser).|
 |Max page size|The maximum number of entities that can be returned for an OData V4 request. When this limit is exceeded, an HTTP response code `413 - Request Entity Too Large` is returned.|20,000|
 |Max batch size|The maximum number of operations in an OData V4 $batch request.|100|
-|Max request queue size|The maximum number of queued OData V4 requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|95, see the future [per-user limit](#ODataServicesUser).|
-|Speed (rate)|The maximum number of OData V4 requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600, see the future [per-user limit](#ODataServicesUser).| 
+|Max request queue size|The maximum number of queued OData V4 requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit has been changed to a per-user limit.|95, see the current [per-user limit](#ODataServicesUser).|
+|Speed (rate)|The maximum number of OData V4 requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit has been changed to a per-user limit.|Sandbox: 300, Production: 600, see the current [per-user limit](#ODataServicesUser).| 
 |Operation timeout|The maximum amount of time in minutes allocated to an OData V4 request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned and the relevant session is canceled.|8|
 |Max number of webhook subscriptions|The maximum number of webhook subscriptions.|200|
 
@@ -142,7 +141,7 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 |Max connections|The maximum number of simultaneous SOAP requests, including processed and queued requests. When the limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|100|
 |Max message size|The maximum size in KB of a SOAP request. When this limit is exceeded, an HTTP response code `413 - Request Entity Too Large` is returned.|65,536|
 |Max request queue size|The maximum number of queued SOAP requests, waiting to be processed. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned.|95|
-|Speed (rate)|The maximum number of SOAP requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit will be changed to a per-user limit in the future.|Sandbox: 300, Production: 600, see the future [per-user limit](#SOAPServicesUser).| 
+|Speed (rate)|The maximum number of SOAP requests that can be submitted in a minute. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. To increase throughput, this per-environment limit has been changed to a per-user limit.|Sandbox: 300, Production: 600, see the current [per-user limit](#SOAPServicesUser).| 
 |Operation timeout|The maximum amount of time in minutes allocated to a SOAP request. When this limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.|8|
 
 > [!NOTE]

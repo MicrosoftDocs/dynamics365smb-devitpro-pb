@@ -3,11 +3,11 @@ title: Get started as a reseller of Business Central Online
 description: Learn about how to get started as a reselling partner of Dynamics 365 Business Central online, how to become a partner, and how to onboard customers.  
 author: jswymer
 ms.topic: conceptual
-ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 06/03/2022
 ms.author: jswymer
 ms.collection: get-started
+ms.reviewer: jswymer
 ---
 
 # Get started as a reseller of Business Central online

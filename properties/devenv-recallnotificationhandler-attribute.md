@@ -1,11 +1,7 @@
 ---
 title: "RecallNotificationHandler Attribute"
 description: "The RecallNotificationHandler attribute in AL for Business Central"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: jswymer
 ---
@@ -22,7 +18,7 @@ AL methods on test codeunits. A test codeunit is a codeunit that has the [SubTyp
   
 ```AL
 [RecallNotificationHandler]
-procedure RecallNotificationHandler(var Notification: Notification): Boolean;
+procedure RecallNotificationHandler(var Notification: Notification): Boolean
 ```    
 
 ## Remarks

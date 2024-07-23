@@ -1,12 +1,11 @@
 ---
 title: Designing Role Centers
-description: "Provides and overview of Role Center design"
+description: Provides and overview of Role Center design.
 author: jswymer
-ms.custom: na
-ms.date: 08/11/2021
-ms.reviewer: na
+ms.date: 06/17/2024
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Designing Role Centers
@@ -83,8 +82,9 @@ The following table describes some of the most common parts for Role Centers, as
 - To achieve the best readability and discoverability, place Headlines first, followed by cues, and then the remaining parts.
 - You can't add custom logic directly to a Role Center page code. Code is limited to defining navigation, actions, and parts. All other code is ignored.
 - Role Centers can be highly specialized, in the fact that the navigation, actions, and content are optional. For example, you could have a single part that fills the entire workspace.
- 
-## Designing a checklist to onboard new users 
+
+## Designing a checklist to onboard new users
+
 Since the Role Center is a user's entry point and home page to [!INCLUDE[prod_short](includes/prod_short.md)], it's also the ideal space to guide new users towards learning activities and finalizing setup of their company. The onboarding framework includes the ability to display a welcome banner and checklist on a Role Center home page. Unlike all other content described in this article, the welcome banner and checklist require a separate process and aren't implemented directly on the Role Center page object or page parts. [Learn how to get users started with the checklist](../administration/onboarding-checklist.md).
  
 ## Design for all display targets
@@ -125,8 +125,7 @@ Users who work across multiple roles can easily switch Role Centers to shift the
 
 As a developer or administrator, you can use Designer to customize a Role Center the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the Role Center. For more information, see [Use Designer](devenv-inclient-designer.md).
 
-
-## See Also
+## See also
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  
@@ -134,4 +133,4 @@ As a developer or administrator, you can use Designer to customize a Role Center
 [Actions Overview](devenv-actions-overview.md)  
 [Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Use Designer](devenv-inclient-designer.md)
+[Use Designer](devenv-inclient-designer.md)  

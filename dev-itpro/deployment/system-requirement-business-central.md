@@ -1,10 +1,12 @@
 ---
 title: System Requirements for Business Central
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central on-premises.
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ms.service: dynamics-365-op
 ms.topic: overview
-ms.date: 01/10/2022
+ms.date: 04/14/2024
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -84,7 +86,7 @@ For more information, see [Get Started with AL](../developer/devenv-get-started.
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.2 or 4.8</li></ul>|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it isn't already present in the target computer:<ul><li>Microsoft .NET Framework 4.7.2.</li><li>SQL Server Native Client 11.0*</li><li>Report Builder for SQL Server 2016 (cumulative update 23 and earlier). Report Builder 15.0 for SQL Server 2019 (cumulative update 24 and later)<br><br> With a cumulative update 24 and later installation, if Report Builder for SQL Server 2016 is already installed, it will be updated to Report Builder 15.0. **Note** If you install update 24 or later on a computer which also runs an earlier Business Central of Dynamics NAV version, you will no longer be able to use Report Builder in the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] of the older version.</li></ul></li><li>If the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] and [!INCLUDE[server](../developer/includes/server.md)] are on the same computer, then only a 64-bit operating system is supported.</li></ul>|
 
-\* Starting with cumulative update 24 (version 14.25), SQL Server Native Client is no longer installed by Setup or included on the installation media (DVD). This change doesn't affect the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] installation if you upgrading from an earlier version, because the prerequisite should already have been installed. However, for a clean installation of the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], you'll have to manually install the SQL Server Native Client; otherwise, you may experience problems connecting the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] to the database. For more information about how to install this prerequisite, see [Install prerequisites for Dynamics NAV Development Environment](install-using-setup.md#sqlclient).
+\* Starting with cumulative update 24 (version 14.25), SQL Server Native Client is no longer installed by Setup or included on the installation media (DVD). This change doesn't affect the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] installation if you upgrading from an earlier version, because the prerequisite should already have been installed. However, for a clean installation of the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], you'll have to manually install the SQL Server Native Client; otherwise, you may experience problems connecting the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] to the database. For more information about how to install this prerequisite, see [Install prerequisites for Dynamics NAV Development Environment](install-using-setup.md).
 
 ## Server Components (on-premises)
 ###  <a name="NavServerReqs"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server Requirements  

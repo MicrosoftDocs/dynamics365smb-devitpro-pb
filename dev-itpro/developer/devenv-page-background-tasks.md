@@ -3,10 +3,9 @@ title: "Page Background Tasks"
 description: Explains how to create page background tasks in Business Central.
 author: jswymer
 ms.author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
+ms.reviewer: jswymer
 ---
 
 # Page Background Tasks

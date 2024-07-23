@@ -40,7 +40,7 @@ The following example illustrates ways to prepare the request.
 
         // This shows how you can set or change HTTP content headers in your request
         Content.GetHeaders(ContentHeaders);
-        if ContentHeaders.Contains('Content-Type') then headers.Remove('Content-Type');
+        if ContentHeaders.Contains('Content-Type') then ContentHeaders.Remove('Content-Type');
         ContentHeaders.Add('Content-Type', 'multipart/form-data;boundary=boundary');
 
         // This shows how you can set HTTP request headers in your request
@@ -154,7 +154,7 @@ It's possible to include a certificate when calling an external service using Ht
 
 For more information about certificates, see
 
-- [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md) 
+- [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-string-string-method.md)  
 - [Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md).
 
 ### Which IP addresses or ranges does my environment use?

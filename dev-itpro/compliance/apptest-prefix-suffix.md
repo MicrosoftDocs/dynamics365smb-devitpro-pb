@@ -1,12 +1,11 @@
 ---
-title: "Prefix and suffix for naming in extensions"
-description: "Use a prefix or suffix for names in your extension."
+title: Prefix and suffix for naming in extensions
+description: Use a prefix or suffix for names in your extension. This rule applies to all objects, including tables, pages, and codeunits. This topic explains the benefits and guidelines for using a prefix or suffix."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/11/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: freddyk
+ms.reviewer: jswymer
 ---
 
 # Benefits and guidelines for using a prefix or suffix

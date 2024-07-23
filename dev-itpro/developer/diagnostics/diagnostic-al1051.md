@@ -2,11 +2,10 @@
 title: "Compiler Error AL1051"
 description: "Fast publishing requires that there are no manifest changes for the application '{0}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

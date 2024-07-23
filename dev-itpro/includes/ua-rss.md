@@ -1,8 +1,9 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
 ms.date: 08/16/2022
-ms.author: edupont
+ms.author: jswymer
+ms.reviewer: jswymer
 ---
 To subscribe to a Really Simple Syndication (RSS) feed of all updates that are to the content on learn.microsoft.com across the developer and administration content for [!INCLUDE [prod_short](prod_short.md)], use the following link:
 

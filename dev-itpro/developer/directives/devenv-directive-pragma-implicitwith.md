@@ -2,10 +2,10 @@
 title: Pragma ImplicitWith directive in AL
 description: The pragma implicitwith instruction on the pragma directive in AL.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/19/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Pragma ImplicitWith directive in AL

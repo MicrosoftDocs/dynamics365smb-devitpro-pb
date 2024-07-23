@@ -1,16 +1,17 @@
 ---
-title: Delete securityGroups
+title: (automation API) Delete securityGroups
 description: Deletes a security group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: article
 ms.devlang: al
-ms.date: 12/04/2023
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Delete securityGroups
+# (automation API) Delete securityGroups
 
 Deletes a security group from [!INCLUDE[prod_short](../../includes/prod_short.md)].
 

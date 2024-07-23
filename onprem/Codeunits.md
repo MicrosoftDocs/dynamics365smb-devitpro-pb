@@ -1,11 +1,7 @@
 ---
 title: Understanding and Developing Codeunits 
 description: A codeunit is a container for C/AL code. Know how to create one and use the functions in a codeunit from other application objects.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7a3d091f-4352-4c29-9ee8-80b9c3398c54
 caps.latest.revision: 8

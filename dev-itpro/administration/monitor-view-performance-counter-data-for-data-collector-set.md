@@ -1,6 +1,9 @@
 ---
 title: "How to: View performance counter data for a Data Collector Set"
-ms.custom: bap-template
+decription: Explains how to view performance counter data for a Data Collector Set.
+ms.custom:
+  - bap-template
+  - evergreen
 ms.date: 01/08/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op

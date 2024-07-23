@@ -1,10 +1,6 @@
 ---
 title: "How to: Promote Actions on Pages"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dbea328b-8093-4ce6-ba89-71e79b647370
 caps.latest.revision: 23

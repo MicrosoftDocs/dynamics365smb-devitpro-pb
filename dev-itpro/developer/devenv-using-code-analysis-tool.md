@@ -2,10 +2,10 @@
 title: "Using the code analysis tool"
 description: "Using static code analysis tool on an AL project."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/23/2022
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # The code analysis tool
@@ -66,7 +66,7 @@ The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Co
 
 ## <a  name="largeprojects"></a>Enable code analysis on large projects
 
-To improve performance while running code analysis on large projects, you can follow the performance tips in [Code Analysis Performance Configuration](devenv-code-analysis-performance-configuration).
+To improve performance while running code analysis on large projects, you can follow the performance tips in [Code Analysis Performance Configuration](devenv-code-analysis-performance-configuration.md).
   
 ## See Also
 

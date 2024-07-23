@@ -2,11 +2,10 @@
 title: "Creating a deployable package for Business Central online"
 description: You can move your on-premises deployment of Dynamics NAV or Business Central to the cloud.
 author: jswymer
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 12/27/2023
+ms.reviewer: jswymer
 ---
 # Moving from Dynamics NAV On-premises to Business Central Online
 This article describes you can move your on-premise [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution, including the application and its tenants, to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.

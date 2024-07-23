@@ -2,11 +2,10 @@
 title: "Compiler Error AL0784"
 description: "The version number '{0}' for the argument '{1}' does not match the expected format: X.Y where X and Y represent positive integers."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

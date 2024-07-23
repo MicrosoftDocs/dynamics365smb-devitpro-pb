@@ -1,15 +1,14 @@
 ---
 title: Working with AL methods
 description: Methods also known as procedures are a fundamental programming element in AL for Business Central.
-ms.custom: na
-ms.date: 11/16/2021
-ms.reviewer: na
+ms.custom: evergreen
+ms.date: 04/17/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.collection: get-started
 ---
 
-# AL methods
+# Working with AL methods
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
@@ -17,7 +16,7 @@ Like other languages, AL methods are a fundamental programming element. A method
 
 There are two types of methods: system methods (built-in) and user-defined (custom) methods.
 
-- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md). For information about method scope, see [Scope Attribute](attributes/devenv-scope-attribute.md).
+- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md). For information about method scope, see [Scope attribute](attributes/devenv-scope-attribute.md).
 
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and code units, together to form a unified whole. You can create special methods for use anywhere in the database.
 
@@ -50,13 +49,13 @@ A method can be a *local* method or *global* method. A local method can only be 
 To declare a local method, start the declaration with `local`: 
 
 ```AL
-local procedure Mymethod();
+local procedure Mymethod()
 ```
 
 To declare a global method, *omit* `local`:
 
 ```AL
- procedure Mymethod();
+ procedure Mymethod()
 ```
 
 ### Parameters (optional)
@@ -75,7 +74,7 @@ This example also illustrates how parameters can be *passed by value* or *passed
 
 A method can return data that can be then coded against. A return value is defined by a name (optional), data type, and optional length depending on the data type. 
 
-For example, if the return value is a Text DataType, the text might have a length of 50.
+For example, if the return value is a `Text` data type, the text might have a length of 50.
 
 ```AL
     procedure MyMethod() ReturnValue: Text[50]
@@ -176,7 +175,7 @@ ReturnVal := MyMethod(Param1);
   
 ## Example 5  
 
-In this example, `MyMethod` returns a Boolean value. You can use the return value in a conditional statement.  
+In this example, `MyMethod` returns a `Boolean` value. You can use the return value in a conditional statement.  
   
 ```AL
 if (MyMethod(Param1)) then  

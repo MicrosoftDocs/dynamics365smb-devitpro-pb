@@ -1,13 +1,13 @@
 ---
 title: (v1.0) Get companyInformation
 description: (v1.0) Gets a company information object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get companyInformation (v1.0)

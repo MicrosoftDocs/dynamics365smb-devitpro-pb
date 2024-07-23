@@ -1,9 +1,7 @@
 ---
 title: "Multitenant Deployment Architecture"
 description: Get an overview of a multitenant deployment
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

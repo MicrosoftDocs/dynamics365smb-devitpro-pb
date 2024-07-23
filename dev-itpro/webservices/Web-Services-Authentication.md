@@ -1,14 +1,12 @@
 ---
-title: "Web Services Authentication"
-description: Learn about authenticating web services in business Central
-ms.custom: na
-ms.date: 04/26/2023
-ms.reviewer: na
+title: Web services authentication"
+description: Learn about authenticating web services in Business Central.
+ms.date: 06/24/2024
 ms.topic: conceptual
 author: jswymer
 ---
 
-# Web Services Authentication
+# Web services authentication
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -17,7 +15,7 @@ When users send a request for a web service, they're authenticated according to 
 [!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
 
 
-## Difference between Basic Authentication and OAuth
+## Difference between basic authentication and OAuth
 
 The following table shows the main difference between basic authentication with web service keys and OAuth.
 
@@ -29,7 +27,7 @@ The following table shows the main difference between basic authentication with 
 | Multi-factor authentication | No multi-factor authentication support | Fully supports multi-factor authentication |
 | Secret validity | Password exposed in HTTP request (no expiration date) | HTTP requests contain a short-lived access token |
 
-## How to use an Oauth for SOAP and OData Web Service Authentication
+## How to use an Oauth for SOAP and OData web service authentication
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the OAuth authorization protocol for SOAP and OData web services. OAuth is the recommended authentication method for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service endpoints. 
 
@@ -59,7 +57,7 @@ If your solution is configured for NavUserPassword or AccessControlService authe
 
 [!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
 
-### Generate a Web Service Access Key
+### Generate a web service access key
   
 Follow these instructions to generate a web service access key for a user. You perform these steps from the user setup in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 
@@ -73,7 +71,7 @@ Follow these instructions to generate a web service access key for a user. You p
   
     The access key is automatically generated. If you're signed in as the user that you modified, the key appears in the **Web Service Access Key** field. Otherwise, the key is masked so only asterisks (*) are shown.
   
-### Implement the Web Service Access Key
+### Implement the web service access key
 
 Typically, you would create a user account strictly for web services. Then use the account's credentials, which include the user name and access key, in a web service application. For example, if you develop your own web service application, then you can design your application to programmatically pass the credentials to the web service. Some applications let you provide the connection credentials through a user interface. The steps for implementing the web service access key are done in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.  
 
@@ -89,7 +87,7 @@ Typically, you would create a user account strictly for web services. Then use t
     |--------|---------|  
     |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](/previous-versions/msp-n-p/ff649362(v=pandp.10))|
   
-## See Also
+## See also
 
  [Web Services Overview](web-services.md)  
  [SOAP Web Services](SOAP-Web-Services.md)  

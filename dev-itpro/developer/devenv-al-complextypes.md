@@ -1,7 +1,6 @@
 ---
 title: AL complex types
 description: With AL complex types, you can return most types from procedures in AL for Business Central
-ms.custom: na
 ms.date: 03/01/2024
 ms.reviewer: solsen
 ms.topic: conceptual

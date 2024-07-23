@@ -4,8 +4,9 @@ description: A purchase receipt object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # purchaseReceipt resource type
@@ -40,7 +41,7 @@ Represents a purchase receipt in [!INCLUDE[prod_short](../../../includes/prod_sh
 |id|GUID|The unique ID of the purchase receipt. Non-editable.|
 |number|string|Specifies the number of the purchase receipt.|
 |invoiceDate|date|The invoice date .|
-|postingDate|date|The date that the purchase receipt   is posted.|
+|postingDate|date|The date that the purchase receipt is posted.|
 |dueDate|date|The date the purchase receipt is due.|
 |vendorNumber|string|Specifies vendor's number.|
 |vendorName|string|Specifies vendor's name.|

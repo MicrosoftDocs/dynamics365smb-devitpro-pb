@@ -1,7 +1,7 @@
 ---
-title: "Using Containments and Associations"
+title: Using Containments and Associations
 description: Learn how to use containments and associations with OData for creating relationships between pages. 
-ms.custom: jswymer
+ms.custom: bap-template
 ms.date: 01/28/2024
 ms.reviewer: jswymer
 ms.topic: conceptual

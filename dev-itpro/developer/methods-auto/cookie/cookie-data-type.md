@@ -2,11 +2,10 @@
 title: "Cookie Data Type"
 description: "Provides a data structure to work with Http cookies."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -40,12 +39,12 @@ The `Cookie` data type allows you to efficiently work with HTTP cookies. You can
 The following data types have methods that return or use the `Cookie` data type:
 
 - [HttpClient.UseResponseCookies method](../httpclient/httpclient-useresponsecookies-method.md)  
-- [HttpResponseMessage.GetCookie method](../httpresponsemessage-getcookie-method.md)  
+- [HttpResponseMessage.GetCookie method](../httpresponsemessage/httpresponsemessage-getcookie-method.md)  
 - [HttpResponseMessage.GetCookieNames method](../httpresponsemessage/httpresponsemessage-getcookienames-method.md)  
 - [HttpRequestMessage.GetCookie method](../httprequestmessage/httprequestmessage-getcookie-method.md)  
 - [HttpRequestMessage.GetCookieNames method](../httprequestmessage/httprequestmessage-getcookienames-method.md)  
 
 ## See also
 
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

@@ -1,12 +1,11 @@
 ---
 title: Walkthrough - Designing a report from multiple tables
 description: This walkthrough shows you how to design a report from multiple tables.
-ms.custom: na
 ms.author: solsen
 ms.date: 12/05/2023
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Walkthrough: Designing an RDL report from multiple tables

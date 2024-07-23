@@ -4,10 +4,10 @@ description: As the reselling partner, help customers manage their Business Cent
 author: jswymer
 
 ms.topic: conceptual
-ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 10/18/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Delegated Administrator Access to Business Central Online
@@ -77,7 +77,7 @@ The following tasks aren't available to the delegated administrator:
 As a Microsoft customer organization, you can have multiple partners registered as your resellers. It isn't unusual for a single organization to use one partner as the delegated admin for their Microsoft 365 subscription and another for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], for example. However, as soon as the delegated administration right is granted in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center), you can't restrict partner access to a specific service only. The delegated admin access applies to all Microsoft services that your organization subscribes to.  
 
 > [!TIP]
-> If the partner has requested access to your tenant using *granular delegated admin privileges*, then you can see the relevant users in the **Users** list in [!INCLUDE [prod_short](../includes/prod_short.md)], and you can see them in the **Sign in** log in your Microsoft 365 admin center. With granular delegated admin privileges, the partner typically does not have global admin access to your tenant but only access to Dynamics 365. You will not be able to see the name of the partner user, but you can see an ID and the name of their company.
+> If the partner has requested access to your tenant using *granular delegated admin privileges*, then you can see the relevant users in the **Users** list in [!INCLUDE [prod_short](../includes/prod_short.md)], and you can see them in the **Sign in** log in your Microsoft 365 admin center. With granular delegated admin privileges, the partner typically doesn't have global access to your tenant but only access to Dynamics 365. You will not be able to see the name of the partner user, but you can see an ID and the name of their company.
 
 [!INCLUDE [admin-gdap-user](../includes/admin-gdap-user.md)]
 

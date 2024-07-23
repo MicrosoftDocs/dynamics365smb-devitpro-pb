@@ -1,11 +1,12 @@
 ---
-title: subscriptions resource type
-description: A subscriptions object in Dynamics 365 Business Central.
+title: subscriptions resource type (Beta)
+description: A subscriptions object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/11/2022
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # subscriptions resource type (Beta)

@@ -1,10 +1,6 @@
 ---
 title: "How to: Set Up Filter Rows in Query Designer"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ec853cd5-b6cd-493d-b7b2-9ad5e3bd6ac4
 caps.latest.revision: 10

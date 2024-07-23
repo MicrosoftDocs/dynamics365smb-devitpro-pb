@@ -2,11 +2,11 @@
 title: AL Profiler overview
 description: Description of how to use the AL profiler and the Performance Profiler to analyze performance in code written for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/01/2024
 ms.topic: overview
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # AL Profiler overview

@@ -1,11 +1,10 @@
 ---
-title: "Control add-in performance best practices"
-ms.custom: na
-ms.date: 04/11/2023
-ms.reviewer: na
+title: Control add-in performance best practices
+ms.date: 05/01/2024
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Control add-in performance best practices
@@ -64,6 +63,6 @@ function invokeALTriggerTheRightWay() {
 
 ## See also
 
-[Control Add-In Resiliency](/dynamics365/business-central/across-controladdin-resiliency) <!-- link to app doc -->  
-[InvokeExtensibilityMethod Method](methods/devenv-invokeextensibility-method.md)  
-[GetEnvironment Method](methods/devenv-getenvironment-method.md)
+[Control add-in resiliency](/dynamics365/business-central/across-controladdin-resiliency) <!-- link to app doc -->  
+[InvokeExtensibilityMethod method](methods/devenv-invokeextensibility-method.md)  
+[GetEnvironment method](methods/devenv-getenvironment-method.md)

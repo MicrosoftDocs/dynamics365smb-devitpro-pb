@@ -3,7 +3,7 @@ title: Failure modeling and robust coding practices
 description: Describes how to reason over errors and handle them in code.
 author: KennieNP
 ms.author: kepontop
-ms.reviewer: solsen
+ms.reviewer: jswymer
 
 ms.topic: conceptual
 ms.date: 01/11/2024

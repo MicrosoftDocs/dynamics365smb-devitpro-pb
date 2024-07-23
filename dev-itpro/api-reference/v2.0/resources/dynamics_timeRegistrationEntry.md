@@ -4,8 +4,9 @@ description: A time registration entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # timeRegistrationEntry resource type
@@ -34,8 +35,6 @@ Represents a time registration entry in [!INCLUDE[prod_short](../../../includes/
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[employee](dynamics_employee.md)|employee |Gets the employee of the timeRegistrationEntry.|
-|[project](dynamics_project.md)|project |Gets the project of the timeRegistrationEntry.|
-|[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the timeRegistrationEntry.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the timeRegistrationEntry.|
 
 ## Properties

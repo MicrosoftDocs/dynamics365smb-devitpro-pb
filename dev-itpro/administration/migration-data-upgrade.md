@@ -3,7 +3,7 @@ title: Run data upgrade
 description: This article explains the process for running the data upgrade as part of cloud migration. 
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: conceptual 
 ms.date: 02/22/2023
 ms.custom: bap-template 

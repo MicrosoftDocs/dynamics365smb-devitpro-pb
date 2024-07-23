@@ -4,8 +4,9 @@ description: A dimension set line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # dimensionSetLine resource type
@@ -35,7 +36,6 @@ Represents a dimension set line in [!INCLUDE[prod_short](../../../includes/prod_
 |:----------|:----------|:-----------------|
 |[salesInvoice](dynamics_salesinvoice.md)|salesInvoice |Gets the salesinvoice of the dimensionSetLine.|
 |[salesInvoiceLine](dynamics_salesinvoiceline.md)|salesInvoiceLine |Gets the salesinvoiceline of the dimensionSetLine.|
-|[dimension](dynamics_dimension.md)|dimension |Gets the dimension of the dimensionSetLine.|
 |[customerPayment](dynamics_customerpayment.md)|customerPayment |Gets the customerpayment of the dimensionSetLine.|
 |[journalLine](dynamics_journalline.md)|journalLine |Gets the journalline of the dimensionSetLine.|
 |[timeRegistrationEntry](dynamics_timeregistrationentry.md)|timeRegistrationEntry |Gets the timeregistrationentry of the dimensionSetLine.|
@@ -55,6 +55,8 @@ Represents a dimension set line in [!INCLUDE[prod_short](../../../includes/prod_
 |[purchaseReceiptLine](dynamics_purchasereceiptline.md)|purchaseReceiptLine |Gets the purchasereceiptline of the dimensionSetLine.|
 |[purchaseOrder](dynamics_purchaseorder.md)|purchaseOrder |Gets the purchaseorder of the dimensionSetLine.|
 |[purchaseOrderLine](dynamics_purchaseorderline.md)|purchaseOrderLine |Gets the purchaseorderline of the dimensionSetLine.|
+|[purchaseCreditMemo](dynamics_purchasecreditmemo.md)|purchaseCreditMemo |Gets the purchasecreditmemo of the dimensionSetLine.|
+|[purchaseCreditMemoLine](dynamics_purchasecreditmemoline.md)|purchaseCreditMemoLine |Gets the purchasecreditmemoline of the dimensionSetLine.|
 
 ## Properties
 
@@ -62,11 +64,13 @@ Represents a dimension set line in [!INCLUDE[prod_short](../../../includes/prod_
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the dimension set line. Non-editable.|
 |code|string|The code of the dimension set line.|
+|consolidationCode|string||
 |parentId|GUID|The ID of the parent entity. |
 |parentType|NAV.dimensionSetEntryBufferParentType|The type of the parent document of the dimension set line. It can be " ", "Journal Line", "Sales Order", "Sales Order Line", "Sales Quote", "Sales Quote Line", "Sales Credit Memo", "Sales Credit Memo Line", "Sales Invoice", "Sales Invoice Line", "Purchase Invoice", "Purchase Invoice Line", "General Ledger Entry" or "Time Registration Entry".|
 |displayName|string|Specifies the dimension set line's name. This name will appear on all sales documents for the dimension set line.|
 |valueId|GUID|The unique ID of the value of the dimension.  |
 |valueCode|string|The code of the value of the dimension.  |
+|valueConsolidationCode|string||
 |valueDisplayName|string|The display name of the value of the dimension. Read-Only.|
 
 ## JSON representation
@@ -78,11 +82,13 @@ Here is a JSON representation of the dimensionSetLine resource.
 {
     "id": "GUID",
     "code": "string",
+    "consolidationCode": "string",
     "parentId": "GUID",
     "parentType": "NAV.dimensionSetEntryBufferParentType",
     "displayName": "string",
     "valueId": "GUID",
     "valueCode": "string",
+    "valueConsolidationCode": "string",
     "valueDisplayName": "string"
 }
 ```

@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Exporting Data from Tables to CSV Files"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8f4088b4-2834-45be-ad55-ce31d0e52db7
 caps.latest.revision: 10

@@ -2,11 +2,10 @@
 title: "Extending Item Charges Distribution Methods"
 description: "How you extend item charges in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: grobyns
+ms.reviewer: jswymer
 ---
 
 # Extending Item Charge Distribution Methods 

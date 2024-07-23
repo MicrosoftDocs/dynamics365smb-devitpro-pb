@@ -3,6 +3,7 @@ author: solsen
 ms.topic: include
 ms.date: 05/31/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 > [!NOTE]
 >  If a [!INCLUDE [prod_short](prod_short.md)] viral trial is left unused for 45 days, Microsoft considers the trial as expired, and the [!INCLUDE [prod_short](prod_short.md)] is deleted.

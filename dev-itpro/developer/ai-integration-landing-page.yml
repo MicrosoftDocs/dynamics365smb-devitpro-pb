@@ -16,9 +16,9 @@ metadata:
   description: Build AL extensions that include copilot and generative AI experiences.
   author: jswymer
   ms.author: jswymer
-  ms.date: 11/04/2023
+  ms.date: 03/27/2024
   ms.topic: landing-page # DON'T CHANGE
-  ms.service:  dynamics365-business-central
+  ms.service: dynamics-365-business-central
   ms.custom: bap-template #Required; don't change.
 
 # linkListType: concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
@@ -30,9 +30,9 @@ landingContent:
     linkLists:
     - linkListType: overview
       links:
-      - text: What are the developer tools for copilot
+      - text: What are the developer tools for Copilot
         url: developer-tools-for-copilot-overview.md
-      - text: What is considered a copilot offering?
+      - text: What is considered a Copilot offering?
         url: ai-extend-copilot-overview.md
       - text: Responsible AI transparency note for developer tools
         url: ../ai/transparency-note-dev-tools-for-copilot.md
@@ -40,9 +40,12 @@ landingContent:
       links:
       - text: Get set up with Azure OpenAI Service
         url: ai-dev-tools-get-started.md
-
+    - linkListType: reference
+      links:
+      - text: About Copilot in Business Central
+        url: /dynamics365/business-central/copilot-overview
 # Card
-  - title: Build a copilot experience
+  - title: Extend Copilot in Business Central
     linkLists:
     - linkListType: overview
       links: 
@@ -50,9 +53,9 @@ landingContent:
         url: ai-build-experience-overview.md
     - linkListType: how-to-guide
       links:
-      - text: Build copilot capability in AL
+      - text: Build Copilot capability in AL
         url: ai-build-capability-in-al.md
-      - text: Build copilot user experience
+      - text: Build Copilot user experience
         url: ai-build-experience.md
     - linkListType: reference
       links:
@@ -64,6 +67,10 @@ landingContent:
         url: devenv-page-prompting-floating-actionbar.md
       - text: PromptMode property
         url: properties/devenv-promptmode-property.md      
+      - text: Token counting in AI
+        url: ai-system-app-token-counting.md  
+      - text: Function calling in AI
+        url: ai-system-app-function-calling.md
       - text: AI module (System.AI)
         url: /dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-completion-params
 # Card

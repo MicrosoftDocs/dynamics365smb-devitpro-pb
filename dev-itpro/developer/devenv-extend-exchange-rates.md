@@ -3,7 +3,7 @@ title: Extending currency exchange rate adjustments
 description: Explore opportunities to add capabilities to exchange rate adjustments. 
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: ivkoleti
+ms.reviewer: bholtorf
 ms.date: 12/28/2023
 ms.topic: conceptual
 ms.custom: bap-template

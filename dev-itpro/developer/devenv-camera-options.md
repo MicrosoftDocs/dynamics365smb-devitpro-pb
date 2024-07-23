@@ -1,7 +1,6 @@
 ---
 title: CameraOptions overview
 description: Article about implementing camera access from AL for Business Central.
-ms.custom: na
 ms.date: 03/08/2024
 ms.reviewer: solsen
 ms.topic: overview

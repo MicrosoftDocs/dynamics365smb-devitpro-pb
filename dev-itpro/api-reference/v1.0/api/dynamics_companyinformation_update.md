@@ -1,13 +1,13 @@
 ---
 title: (v1.0) Update companyInformation
 description: (v1.0) Updates a company information object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Update companyInformation (v1.0)

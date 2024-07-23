@@ -2,11 +2,10 @@
 title: "Visible Property"
 description: "Sets whether to display the page or control."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -51,7 +50,7 @@ Because this property also applies to containers, such as pages and subpages, if
 ### Dynamic visibility of controls
 
 > [!NOTE]  
-> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Visible** property, it must be set as a global page variable and the [InDataSet attribute](../attributes/devenv-indataset-attribute.md) must be defined on the variable.   
+> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Visible** property, it must be set as a global page variable.
 
 On pages, you use the **Visible** property to show or hide group, part, field, and action controls. You can show or hide the control either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as "Credit Limit > Sales YTD".  
 
@@ -77,5 +76,4 @@ Even if a field on page is hidden by setting the **Visible** property, the data 
 ## See also
 
 [Properties](devenv-properties.md)  
-[InDataSet Property](devenv-indataset-property.md)  
 [Performance Developer](../../performance/performance-developer.md)  

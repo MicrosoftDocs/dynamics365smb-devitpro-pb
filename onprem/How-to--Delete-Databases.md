@@ -1,10 +1,6 @@
 ---
 title: "How to: Delete Databases"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a3e15f0b-0de8-4f48-bd38-f39b5437a85b
 caps.latest.revision: 7
