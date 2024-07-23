@@ -41,7 +41,7 @@ See an overview at [Telemetry overview](telemetry-overview.md).
 
 ## Can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?
 
-Yes. See how to do that here: [How can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?](telemetry-analyze-with-kql.md#how-can-i-query-telemetry-from-loganalytics)
+Yes. Learn more at [How can I query telemetry from Azure Log Analytics?](telemetry-analyze-with-kql.md#how-can-i-query-telemetry-from-log-analytics).
 
 ## Why do I see _1, _2 in custom dimensions?
 
