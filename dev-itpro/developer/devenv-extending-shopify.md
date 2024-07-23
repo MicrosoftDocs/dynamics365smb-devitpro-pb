@@ -15,6 +15,104 @@ The Shopify Connector offers a few points of extensibility. We're keeping the nu
 > [!NOTE]
 > We're making extensibility available based on feedback from our partners and customers. If there's a scenario you'd like to cover, you can contribute yourself. To learn more, go to [Is the Shopify connector open for contribution](/dynamics365/business-central/shopify/shopify-faq#is-the-shopify-connector-open-for-contribution).
 
+## Extensibility approaches
+
+### Per-tenant extension.
+Classic extensibility, when created extension subscribes exposed events and other artifacts and adjust existings flows. The benefit of this approach is that development can be done against cloud sandbox. The restriction is that you can not modify API calls, for example add new nodes or call against different Shopify API.
+
+### Hybrid approach
+In additon to classic extensibility desribed above, you can also create separate branch of code that interacts with Shopify API directly. This approach gives you more flexibility, but it has higher requirements as you will need to register your own unlisted Shopify app, implement your own communication logic. You can also use cloud sandbox for development.
+
+### Co-development
+If needed functionality is missing, somethimes instead of building per-tenant extension or onboard to hybrid approach, you can contribute the code to Shopify Connector instead via co-development process. That approaches ensures that you don't need to maintain proprietary code and use out of the box functionality instead. That approach requires acceptance from engineering team both from use case and architecture perspective. Also worth mentioning that the shipping of new features, including one build by community is usually tight to major releases.
+
+## Useful hints
+
+### Dependency in app.json
+
+If you are building per-tenant extension or plan to utilize hybrid approach, you shall list the Shopify Connector as dependency in the *app.json* file, remember to use right version number:
+```json
+    "dependencies": [
+        {
+            "id": "ec255f57-31d0-4ca2-b751-f2fa7c745abb",
+            "name": "Shopify Connector",
+            "publisher": "Microsoft",
+            "version": "25.0.0.0"
+        }
+    ],
+```
+
+For more information see [JSON files](devenv-json-files.md).
+
+### Registering Shopify app
+Begin by joining the [Shopify Partner Program](https://help.shopify.com/partners/about). Afterwards, use the **Partner Dashboard** to create the development store and app. 
+
+The steps below lists main points, for specific details refer to Shopify documentation.
+
+1. In the **Shopify Partner Dashboar**, navigate to **Apps**>**All apps** and choose the **Create app** button
+2. Choose the **Create app manually** button.
+3. Enter the **App name** and choose **Create**.
+4. Navigate to the **Overview** section of created app and make note of **Client credentials**: **Client ID** and **Client secret**. You will use this information to access Shopify API.
+5. Navigate to the **Configuration** section and add **App URL**, some valid url.
+6. Populate **Allowed redirection URL(s)** in following format:`<Server>[:port]/<ServerInstance>/OauthLanding.htm` (e.g. `https://bc-shopify.westeurope.cloudapp.azure.com/BC/OauthLanding.htm` or `https://localhost:48900/BC/OAuthLanding.htm`). Exact value depends on configuration of your development environment. You can see what your development environment returns by calling [GetDefaultRedirectUrl()](/dynamics365/business-central/application/system-application/codeunit/system.security.authentication.oauth2#getdefaultredirecturl) method of the **OAuth2** system module. Also make sure that this URL is reachable. If you use container sandbox development environment, consider using the deployment template from [aka.ms/getbc](https://aka.ms/getbc), where you can enable the Let's Encrypt SSL certificate, to ensure that [!INCLUDE [prod_short](../includes/prod_short.md)] in the container is accessible.
+7. For co-development, as Shopify Connector reads all orders, not only last 60 days, you also need to request access for your app. Navigate to the **API access**, choose the **Request access** button in the **Read all order scopes**. The process requires review, which may take some time, so plan in advance. For more information, see [Orders permissions](https://shopify.dev/docs/api/usage/access-scopes#orders-permissions). You will receive email from Shopify when access is granted. You can also check the **API access** section of the  **Shopify Partner dashboard**, you will see message "Your app can access the full order history for a store".
+
+While in the **Shopify partner admin** consider creating a development store for testing. For more infomration, see [Developent Store](/dynamics365/business-central/shopify/shopify-account#development-store).
+
+### Adjusting Shopify Connector for Co-development 
+
+**codeunit 30199 "Shpfy Authentication Mgt."**, path: Apps/W1/Shopify/app/src/Integration/Codeunits/ShpfyAuthenticationMgt.Codeunit.al
+
+Modify GetClientId and GetClientSecret to return Shopify clent credentials as your app doesn't have access to Azure Key Vault. Use Client ID and Client secret from [registered Shoify app](#registering-shopify-app).
+
+```al
+    [Scope('OnPrem')]
+    local procedure GetClientId(): SecretText
+    var
+        ...
+    begin
+        exit(SecretText.SecretStrSubstNo(‘add Client ID here’));  //ADD THIS LINE
+        ...
+    end;
+
+    [Scope('OnPrem')]
+    local procedure GetClientSecret(): SecretText
+    var
+        ...
+    begin
+        exit(SecretText.SecretStrSubstNo(‘Add Client secret here’)); //ADD THIS LINE
+
+        ...
+    end;
+```
+
+if access to read all orders is not available yet, temprorary replace `read_all_orders` in `ScopeTxt` with `read_orders` instead. Once access is granted, reintroduce read_all_orders.
+
+```al
+codeunit 30199 "Shpfy Authentication Mgt."
+{
+    Access = Internal;
+    var
+        // https://shopify.dev/api/usage/access-scopes
+        // ScopeTxt: Label 'write_orders,read_all_orders,...  //replace this line with line below
+        ScopeTxt: Label 'write_orders,read_orders,...        
+
+```
+
+Now you can publish updated connector and connect [!INCLUDE [prod_short](../includes/prod_short.md)] to the Shopify online store. For more information, see [Connect Business Central to the Shopify online store](/dynamics365/business-central/shopify/get-started#connect-business-central-to-the-shopify-online-store). 
+
+>[!IMPORTANT]
+>Do not commit these changes in public repo. If you did, rotate Shopify client secrets of your app.
+
+### Known issues with authentication
+
+#### Error: Oauth error invalid_request: The redirect_uri is not whitelisted.
+Make sure that you populated corrctly the **Allowed redirection URL(s)** in the **Configuration** section.
+
+#### Error: cannot install app
+Navigate to the **Overview** section of created app and choose the **Select Store** action. First install app from there, then try to connect [!INCLUDE [prod_short](../includes/prod_short.md)] to Shopify store again.
+
+
 ## Extensibility examples
 
 ### Order processing
@@ -429,14 +527,15 @@ The following example shows how to use a manufacturer instead of a vendor when y
 ```al
 codeunit 50106 "Shpfy Product Export Manuf"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnAfterCreateTempShopifyProduct', '', false, false)]
-    procedure AfterCreateTempShopifyProduct1(Item: Record Item; var ShopifyProduct: Record "Shpfy Product"; var ShopifyVariant: Record "Shpfy Variant"; var ShopifyTag: Record "Shpfy Tag")
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnAfterFillInShopifyProductFields', '', false, false)]
+    procedure OnAfterFillInShopifyProductFields(Item: Record Item; var ShopifyProduct: Record "Shpfy Product")
     var
         Manufacturer: Record Manufacturer;
     begin
         if Manufacturer.Get(Item."Manufacturer Code") then begin
             ShopifyProduct.Vendor := Manufacturer.Name;
-            ShopifyProduct.Modify();
+            if not ShopifyProduct.IsTemporary() then
+                ShopifyProduct.Modify();
         end;
     end;
 }
@@ -491,7 +590,7 @@ codeunit 50108 "Shpfy Product Import Mapping"
 
 ## See also
 
-[Extending Application Areas](devenv-extending-application-areas.md)  
+[Extensibility overview](devenv-extensibility-overview.md)  
 [Shopify](/dynamics365/business-central/shopify/get-started)  
-[FAQ](https://aka.ms/bcshopifyfaq)  
-[walkthroughs](/dynamics365/business-central/shopify/walkthrough-setting-up-and-using-shopify)  
+[Shopify FAQ](https://aka.ms/bcshopifyfaq)  
+[Shopify walkthroughs](/dynamics365/business-central/shopify/walkthrough-setting-up-and-using-shopify)  
