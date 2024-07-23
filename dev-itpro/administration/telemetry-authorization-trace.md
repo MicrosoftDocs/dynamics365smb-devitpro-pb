@@ -167,7 +167,8 @@ Occurs when the company has opened successfully. This data is emitted both for o
 |authorizationStatus|**Success**|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that opened the session, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the session was created.|
+|companyId|Specifies the ID of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the session was created. This dimension is available from version 25 (and was backported to versions 22, 23, and 24, where it is available in the latest CU.) |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
@@ -210,6 +211,7 @@ Occurs when a company has failed to open. This data is emitted both for online a
 |---------|-----|
 |authorizationStatus|**Failed**|
 |companyName|Specifies the name of the company that the user tried to open.|
+|companyId|Specifies the ID of the company that the user tried to open. This dimension is available from version 25 (and was backported to versions 22, 23, and 24, where it is available in the latest CU.) |
 |failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#opencompanyfailures) section for details.|
 |eventId|**RT0002**|
 
