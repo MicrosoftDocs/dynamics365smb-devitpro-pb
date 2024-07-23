@@ -1527,6 +1527,7 @@
 ### Integrating with Microsoft Excel
 #### [Using Excel for viewing and editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
 #### [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
+#### [Using Excel to import data from other systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### [Controlling Edit in Excel on list pages](developer/devenv-edit-in-excel-lists.md)
 ### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 ### Integrating with Microsoft Onedrive
