@@ -4,7 +4,7 @@ description: Learn how you can get richer telemetry by connecting your Business 
 ms.author: kepontop
 ms.topic: conceptual
 author: jswymer
-ms.date: 07/33/2024
+ms.date: 07/23/2024
 ms.custom: bap-template
 ms.reviewer: jswymer
 ---
