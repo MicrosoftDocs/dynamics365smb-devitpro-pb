@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 07/23/2024
 ---
 
 # Business Central Admin Center API - Environments
