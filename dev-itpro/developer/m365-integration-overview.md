@@ -5,7 +5,7 @@ author: kennienp
 ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
-ms.date: 04/08/2024
+ms.date: 07/23/2024
 ---
 
 # Integrating with Office apps and Microsoft 365
@@ -23,11 +23,13 @@ In this article, we introduce some of these features.
 - View or edit [!INCLUDE [prod_short](../includes/prod_short.md)] data in Excel.
 - Support analytical reporting.
 - Manage G/L budgets (export to/import from Excel).
+- Import data from other systems.
 - Write AL code and use the System app module to create or read Excel files as a developer.
 
 :::image type="content" source="media/connect-to-excel.svg" alt-text="Shows how Business Central integrates to Excel" lightbox="media/connect-to-excel.svg":::
 
-With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, users can export the list to [!INCLUDE[m365_excel](includes/m365-excel-name.md)] and view it there. Depending on the page, two options exists: 
+With pages that display a list of records in rows and columns, like a list of customers, sale orders, or invoices, users can export the list to [!INCLUDE[m365_excel](includes/m365-excel-name.md)] and view it there. Depending on the page, two options exists:
+
 - *Open in Excel*, where the [!INCLUDE [prod_short](../includes/prod_short.md)] platform produces an Excel workbook with the data as read-only.
 - *Edit in Excel*, which uses the [!INCLUDE [prod_short](../includes/prod_short.md)] add-in for Excel. The Excel add-in reads data from [!INCLUDE [prod_short](../includes/prod_short.md)] using the page exposed as an OData web service endpoint. Any writes back to [!INCLUDE [prod_short](../includes/prod_short.md)] are also done through this web service endpoint.
 
@@ -38,7 +40,10 @@ Power users can use Excel as the design tool for the layout of analytical report
 > [!TIP]
 > If you also enable integration to [!INCLUDE[m365_onedrive_for_business](includes/m365-onedrive-for-business-name.md)], Excel workbooks from [!INCLUDE [prod_short](../includes/prod_short.md)] are opened in your browser by using Excel for the web. 
 
-If your organization use G/L budgets, you can export a budget to Excel for further processing or analysis and then import budget data back in [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [Exporting and importing G/L budgets with Excel](/dynamics365/business-central/finance-how-create-budgets#exporting-and-importing-gl-budgets-with-excel).
+If your organization uses G/L budgets, you can export a budget to Excel for further processing or analysis and then import budget data back in [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [Exporting and importing G/L budgets with Excel](/dynamics365/business-central/finance-how-create-budgets#exporting-and-importing-gl-budgets-with-excel).
+
+You can import master data and some transactional data from other systems using configuration packages in [!INCLUDE [prod_short](../includes/prod_short.md)]. For example, you can export the configuration package to Excel and set up your data there. Then, you can import the data from Excel again. For more information, see [Using Excel to import data from other systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json).
+
 
 ## Integrating to [!INCLUDE[m365_graph](includes/m365-graph-name.md)] (from AL code)
 
@@ -47,6 +52,7 @@ You can connect to and work with [!INCLUDE[m365_graph](includes/m365-graph-name.
 :::image type="content" source="media/connect-to-m365-services.svg" alt-text="Shows how Business Central integrates to Microsoft graph" lightbox="media/connect-to-m365-services.svg":::
 
 As an AL developer, you can use the module to do the following tasks:
+
 - Create a [!INCLUDE[m365_graph](includes/m365-graph-name.md)] authorization.
 - Initialize the [!INCLUDE[m365_graph](includes/m365-graph-name.md)] Client.
 - Process GET, PATCH, POST, DELETE requests with [!INCLUDE[m365_graph](includes/m365-graph-name.md)].
@@ -73,7 +79,6 @@ Developers can also write AL code to integrate with OneDrive and add actions suc
 
 For more information, see [Business Central and OneDrive Integration](/dynamics365/business-central/across-onedrive-overview).
 
-
 ## Using [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)] with [!INCLUDE [prod_short](../includes/prod_short.md)]
 
 With [!INCLUDE [prod_short](../includes/prod_short.md)], you can manage business interactions with your customers and vendors directly in [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)]. By installing the [!INCLUDE [prod_short](../includes/prod_short.md)] add-in for [!INCLUDE[m365_outlook](includes/m365-outlook-name.md)], you get the following capabilities:
@@ -83,10 +88,7 @@ With [!INCLUDE [prod_short](../includes/prod_short.md)], you can manage business
 
 :::image type="content" source="media/connect-to-outlook.svg" alt-text="Shows how Business Central integrates to Outlook" lightbox="media/connect-to-outlook.svg":::
 
-
 For more information, see [Get the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook).
-
-
 
 ## Integrating to [!INCLUDE[m365_sharepoint](includes/m365-sharepoint-name.md)] (from AL code)
 
@@ -95,11 +97,11 @@ Connect to and work with storage accounts, containers, and blobs from SharePoint
 :::image type="content" source="media/connect-to-m365-services.svg" alt-text="Shows how Business Central integrates to Microsoft SharePoint" lightbox="media/connect-to-m365-services.svg":::
 
 As an AL developer, you can use the module to do the following tasks:
+
 - Connect to and authenticate a session in SharePoint.
 - Perform basic operations with SharePoint files, folders, lists, list items, and list attachments.
 
 For more information, see [SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint).  
-
 
 ## Integrating to [!INCLUDE[m365_teams](includes/m365-teams-name.md)]
 
@@ -108,7 +110,6 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and ext
 [![Teams integration with Business Central](media/teams-intro-v3.png)](media/teams-intro-v3.png#lightbox)
 
 For more information, see [Developing for Microsoft Teams Integration](../developer/devenv-develop-for-teams.md).
-
 
 ## Using [!INCLUDE[m365_word](includes/m365-word-name.md)] with [!INCLUDE [prod_short](../includes/prod_short.md)]
 
