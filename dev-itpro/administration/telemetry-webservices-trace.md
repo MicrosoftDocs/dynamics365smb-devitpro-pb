@@ -3,7 +3,7 @@ title: Web Service Request Trace
 description: Learn about the web service request telemetry in Business Central  
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 02/19/2024
+ms.date: 07/23/2024
 ms.author: kepontop
 ms.reviewer: jswymer
 ms.custom: bap-template
@@ -25,7 +25,7 @@ The following table explains the general dimensions included in an incoming **We
 |---------|-----|
 |message|<ul><li>**Web service called (API): {endpoint}**</li><li>**Web service called (ODataV4): {endpoint}**</li><li>**Web service called (ODataV3): {endpoint}**</li><li>**Web service called (SOAP): {endpoint}**</li></ul>|
 |severityLevel|**1**|
-
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)]. This dimension was introduced in Business Central 2024 release wave 1, version 24.2. |
 
 ### General dimensions (version 16.0 and earlier)
 
