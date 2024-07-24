@@ -8,12 +8,11 @@ ms.topic: conceptual
 ms.author: kepontop
 ms.collection: get-started
 ---
-
 # Enable text search on table fields
 
-Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 2, you can specify which table fields that should be included in optimized text search. 
+[!INCLUDE[2024rw2_and_later](includes/2024rw2_and_later.md)]
 
-Optimized text search is used in a number of search functionality in [!INCLUDE[prod_short](includes/prod_short.md)], such as in the company-wide search, but you can also use optimized text search in your own AL code.
+This article explains how you can specify which table fields to include in optimized text search. *Optimized text search* is used in various search functionalities in [!INCLUDE[prod_short](includes/prod_short.md)], such as in the company-wide search, but you can also use optimized text search in your own AL code.
 
 ## Example syntax (table fields)
 
@@ -101,7 +100,6 @@ Der maa ikke vaere ord imellem.
 ## Enable text search on the database (on-premises only)
 
 TODO
-
 
 ## See also
 
