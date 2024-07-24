@@ -18,7 +18,7 @@ The Shopify Connector offers a few points of extensibility. We're keeping the nu
 ## Extensibility approaches
 
 ### Per-tenant extension.
-Classic extensibility, when created extension subscribes exposed events and other artifacts and adjust existings flows. The benefit of this approach is that development can be done against cloud sandbox. The restriction is that you can not modify API calls, for example add new nodes or call against different Shopify API.
+Classic extensibility, when created extension subscribes exposed events and other artifacts and adjust existings flows. The benefit of this approach is that development can be done against cloud sandbox. The restriction is that you can not modify API calls, for example add new nodes or call against different Shopify API. As connector depends on Shopify API and its release cycle the number of exposed events in connector is noticeably less than in other Microsoft code. There were cases when redesign was needed to uptake the new ways to complete things on Shopify and that would cause multiple breaking changes for per-tenant extensions.
 
 ### Hybrid approach
 In additon to classic extensibility desribed above, you can also create separate branch of code that interacts with Shopify API directly. This approach gives you more flexibility, but it has higher requirements as you will need to register your own unlisted Shopify app, implement your own communication logic. You can also use cloud sandbox for development.
