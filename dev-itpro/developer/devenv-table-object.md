@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 # Table object
 
-Tables are the core objects used to store data in [!INCLUDE [prod_short](includes/prod_short.md)]. No matter how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
+Tables are the core objects used to store data in [!INCLUDE [prod_short](includes/prod_short.md)]. No matter how data is registered in the product&mdash;from a web service to the phone app&mdash;the results of that transaction are recorded in a table.
 
 ## Table syntax
 
@@ -56,7 +56,7 @@ For more information about current limitations on the table object, see [Object 
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!IMPORTANT]  
-> System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object ranges](devenv-object-ranges.md).
+> System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and higher. For more information about object ranges, see [Object ranges](devenv-object-ranges.md).
 
 ## System fields
 
@@ -64,7 +64,7 @@ The [!INCLUDE [prod_short](includes/prod_short.md)] platform automatically adds 
 
 ## Defining default values for fields
 
-It's commonly used to have field value set to a default value. To do this, you set the `InitValue` property on the field.
+It's common to have field value set to a default value. To set a default, you set the `InitValue` property on the field.
 
 For more information, see [InitValue property](properties/devenv-initvalue-property.md).
 
@@ -76,7 +76,7 @@ For more information, see [OnValidate (Field) trigger](triggers-auto/field/deven
 
 ## Snippet support
 
-Typing the shortcut `ttable` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `ttable` creates the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
@@ -90,7 +90,7 @@ For more information, see [Add tooltips to table and page fields](devenv-adding-
 
 [!INCLUDE[2024rw2_and_later](includes/2024rw2_and_later.md)]
 
-You can specify whether table fields are optimized for text search by setting the property `OptimizeForTextSearch` to `true`.
+You can specify whether table fields are optimized for text search by setting the `OptimizeForTextSearch` property to `true`.
 
 For more information, see [Enable text search on table fields](devenv-table-field-text-search.md).
 
