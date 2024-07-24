@@ -3,7 +3,7 @@ title: Table object
 description: This article describes the structure, object limits, and extensibility of the table object in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
-ms.date: 04/17/2024
+ms.date: 07/24/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -21,7 +21,6 @@ The structure of a table has four sections:
 - The fields section describes the data elements that make up the table, such as their name or the type of data they can store.
 - The keys section contains the definitions of the keys that the table needs to support.
 - The final section details the triggers and code that can run on the table.
-
 
 The order in which the sections appear matters. The following example illustrates the ordering:
 
@@ -42,13 +41,11 @@ table ObjectId TableName
 }
 ```
 
-
 ## Table object limits
 
 The table object has limitations that are mostly dictated by SQL Server, such as the maximum record size, number of fields, and the number of keys.
 
 For more information about current limitations on the table object, see [Object specifications and limitations](devenv-object-specifications-limitations.md).
-
 
 ## Table extensibility limitations
 
@@ -61,18 +58,15 @@ For more information about current limitations on the table object, see [Object 
 > [!IMPORTANT]  
 > System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object ranges](devenv-object-ranges.md).
 
-
 ## System fields
 
 The [!INCLUDE [prod_short](includes/prod_short.md)] platform automatically adds several system fields to tables. For more information, see [System fields](devenv-table-system-fields.md).
 
-
 ## Defining default values for fields
 
-It's commonly used to have field value set to a default value. To do this, you set the `InitValue` property on the field. 
+It's commonly used to have field value set to a default value. To do this, you set the `InitValue` property on the field.
 
 For more information, see [InitValue property](properties/devenv-initvalue-property.md).
-
 
 ## Defining validation rules for fields
 
@@ -92,10 +86,11 @@ Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, 
 
 For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
-
 ## Enable text search on table fields
 
-Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 2, you can specify if table fields should be optimized for text search. You do this by setting the property `OptimizeForTextSearch` to `true`.
+[!INCLUDE[2024rw2_and_later](includes/2024rw2_and_later.md)]
+
+You can specify whether table fields are optimized for text search by setting the property `OptimizeForTextSearch` to `true`.
 
 For more information, see [Enable text search on table fields](devenv-table-field-text-search.md).
 
@@ -159,17 +154,15 @@ table 50104 Address
 }
 ```
 
-
 ## See also
 
 [Table overview](devenv-tables-overview.md)  
 [Table extension object](devenv-table-ext-object.md)  
 [Adding tooltips to table and page fields](devenv-adding-tooltips.md)  
-[InitValue Property (defining default values for fields)](properties/devenv-initvalue-property.md)   
-[OnValidate (Field) Trigger](triggers-auto/field/devenv-onvalidate-field-trigger.md)   
+[InitValue Property (defining default values for fields)](properties/devenv-initvalue-property.md)  
+[OnValidate (Field) Trigger](triggers-auto/field/devenv-onvalidate-field-trigger.md)  
 [Enable text search on table fields](devenv-table-field-text-search.md)  
 [Table keys](devenv-table-keys.md)  
 [Table, table fields, and table extension properties](properties/devenv-table-properties.md)  
-[Object specifications and limitations](devenv-object-specifications-limitations.md)   
-[AL development environment](devenv-reference-overview.md)   
- 
+[Object specifications and limitations](devenv-object-specifications-limitations.md)  
+[AL development environment](devenv-reference-overview.md)  
