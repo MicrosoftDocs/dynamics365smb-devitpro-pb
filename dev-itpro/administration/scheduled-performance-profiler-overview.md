@@ -11,7 +11,7 @@ author: sodragon
 
 # Scheduled Performance Profiler overview
 
-In some cases, many different business processes can interfere with each which can cause some of them to take longer than expected. Diagnosing these issues becomes even more challenging due to the fact that they can be transient because they depend on specific users' workflows
+In some cases, many different business processes can interfere with each other which can cause some of them to take longer than expected. Diagnosing these issues becomes even more challenging due to the fact that they can be transient because they depend on specific users' workflows
 or even happen outside of business hours, for example when scheduled jobs are run at the same time. Your administrator can use the **Profiler Schedules** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to setup schedules for when snapshots of the processes should be recorded.
 A schedule defines the time slots and filters for which activity should be recorded for a particular user. While recording, the profiler monitors all the activities that match the filters and produces individual profiles for each of them separately. They allow for retroactive investigation on individual user interactions or system processes by providing a view of what processes were running on the system during the defined time slots. Identifying where the holdup is can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself.
 
@@ -32,12 +32,16 @@ To get started working with the Profiler Schedules, follow these steps:
 5. Close the card page.
    [!INCLUDE [prod_short](../includes/prod_short.md)] will now automatically record any activity which matches your configuration and happens in the time frame that you configured.
 
-### Types of activity which can be recorded
+## Types of activity which can be recorded
 
 Profiler schedules are supported for the following types of activities:
 1. **Activity in the browser** - A user logs into [!INCLUDE [prod_short](../includes/prod_short.md)] and uses the product,
 2. **Background Tasks** - Scheduled jobs or sessions created from AL code for background processing
 3. **Web Service Calls** - Incoming OData or SOAP API calls
+
+## Permissions for creating a schedule
+
+Administrator users can create schedules for themselves and other users. Other users can create schedules for themselves to record their workflow. 
 
 ### How to disable a schedule
 
@@ -59,6 +63,18 @@ Each activity is associated with a performance profile which contains a snapshot
 This overview is the same as the one created for the in-client performance profiler. For information on how to analyze this data, see [Analyzing high-level results](performance-profiler-overview.md#analyzing-high-level-results) and [Viewing advanced results](performance-profiler-overview.md#viewing-advanced-results).
 
 The profiles can also be analyzed via the AL profiler in VSCode after downloading them. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).
+
+An overview of the fields of the **Performance Profiles** page can be found below:
+| Name                  | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| Start Time            | When the profile started                                                    |
+| User Name             | The name of the user associated with the activity                           |
+| Activity Type         | The type of activity for which the schedule is created                      |
+| Activity Description  | A system generated description of the activity                              |
+| Activity Duration     | The duration of the recorded activity, not including waiting for user input |
+| AL Execution Duration | The duration of the executed AL code in the recorded activity               |
+| Correlation ID        | An ID used to correlate the activity with internal telemetry                |
+| Schedule ID           | The ID of the associated schedule                                           |
 
 ## Downloading performance profiles
 
