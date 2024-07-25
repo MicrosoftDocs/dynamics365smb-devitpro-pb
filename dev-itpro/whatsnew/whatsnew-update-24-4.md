@@ -16,7 +16,7 @@ Would you like to know what's changed in update 24.4? Below you find an overview
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5041133) and download the files for on-premises [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5042530) and download the files for on-premises [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 
