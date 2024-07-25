@@ -4,10 +4,9 @@ description: See frequently asked questions we get on telemetry in Business Cent
 author: kennie
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/16/2023
+ms.date: 07/23/2024
 ms.author: kepontop
 ms.reviewer: jswymer
-
 ms.custom: bap-template
 ---
 # Telemetry FAQ (Frequently Asked Questions)
@@ -40,13 +39,16 @@ See an overview at [Telemetry overview](telemetry-overview.md).
 
 [!INCLUDE[telemetryEventDistribution](../includes/include-telemetry-event-distribution.md)]
 
+## Can I query telemetry from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]?
+
+Yes. Learn more at [How can I query telemetry from Azure Log Analytics?](telemetry-analyze-with-kql.md#how-can-i-query-telemetry-from-log-analytics).
+
 ## Why do I see _1, _2 in custom dimensions?
 
-Each event has a `customDimensions` column that includes a set of dimensions containing metrics specific to the event. Each of these custom dimensions has a limit of 8000 characters. When logging an event with a dimension exceeding 8000 characters, the  [!INCLUDE[server](../developer/includes/server.md)] adds more overflow dimension keys to the event to contain the excess characters. There can be up to two extra overflow dimension keys, each with a maximum 8000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. So if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
+Each event has a `customDimensions` column that includes a set of dimensions containing metrics specific to the event. Each of these custom dimensions has a limit of 8,000 characters. When logging an event with a dimension exceeding 8,000 characters, the  [!INCLUDE[server](../developer/includes/server.md)] adds more overflow dimension keys to the event to contain the excess characters. There can be up to two extra overflow dimension keys, each with a maximum 8,000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. So if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
 
 > [!NOTE]
 > The 8000 character limit is governed by the [Application Insights API](/azure/azure-monitor/app/api-custom-events-metrics#limits).
-
 
 ## Should each customer/app have their own Application Insights resource, rather than one insight for multiple customers/apps?
 
@@ -74,7 +76,7 @@ You might also need to add the role assignment "Reader" to the person on the Res
 
 ## What about privacy laws and regulations?
 
-The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service doesn't emit any personal or customer data to Application Insights. So the telemetry is born privacy compliant. The service only emits data generated while running the service or program and data that identifies a tenant, generally config or usage data. This data isn't linkable to a user and doesn't contain customer data. <!--The meanings of these classifications are described here: [DataClassification Option Type](../developer/methods-auto/dataclassification/dataclassification-option)-->
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service doesn't emit any personal or customer data to Application Insights. So the telemetry is born privacy compliant. The service only emits data generated while running the service or program and data that identifies a tenant, general configuration data, or usage data. This data isn't linkable to a user and doesn't contain customer data. <!--The meanings of these classifications are described here: [DataClassification Option Type](../developer/methods-auto/dataclassification/dataclassification-option)-->
 
 ## Can I get telemetry in Azure Application Insights for on-premises installations?
 
@@ -82,15 +84,15 @@ Yes, telemetry also works for on-premises installations (private or public cloud
 
 For information about how to enable telemetry on-premises, see [Enable environment telemetry](telemetry-enable-application-insights.md#for-on-premises-environments-single-tenant-mode).
 
-## Will you backport the Application Insights instrumentation to versions prior to 15.0?
+## Will you backport the Application Insights instrumentation to versions earlier than 15.0?
 
-It took much refactoring in the server and client to make this capability happen. So it's unlikely that we'll backport the Application Insights instrumentation to versions prior to version 15.0.
+It took much refactoring in the server and client to make this capability happen. So it's unlikely that we'll backport the Application Insights instrumentation to versions before version 15.0.
 
 For each new signal type we add, we try to backport to the current major release, if possible.
 
 ## How can I get the Power BI reports on telemetry?
 
-To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we've developed two Power BI apps available from Microsoft AppSource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we developed two Power BI apps available from Microsoft AppSource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
 
 Read more here: [Analyze telemetry with Power BI](telemetry-power-bi-app.md)
 
@@ -99,13 +101,22 @@ Read more here: [Analyze telemetry with Power BI](telemetry-power-bi-app.md)
 [!INCLUDE[LearnKQL](../includes/include-telemetry-learn-kql.md)]
 
 ## I know SQL. How do I do that in KQL?
-If you're familiar with SQL and want to learn KQL, you can use Azure Data Explorer to translate SQL queries into KQL. To translate an SQL query, preface the SQL query with a comment line, --, and the keyword explain. The output will show the KQL version of the query, which can help you understand the KQL syntax and concepts. You can also use the SQL to Kusto cheat sheet from the Azure Data Explorer documentation.
+
+If you're familiar with SQL and want to learn KQL, you can use Azure Data Explorer to translate SQL queries into KQL. To translate an SQL query, preface the SQL query with a comment line, `--`, and the keyword explain. The output will show the KQL version of the query, which can help you understand the KQL syntax and concepts. You can also use the SQL to Kusto cheat sheet from the Azure Data Explorer documentation.
 
 Read more in the article [I know SQL. How do I do that in KQL?](/azure/data-explorer/kusto/query/sqlcheatsheet).
 
 ## Which tools can I use (KQL editors and clients)?
 
 [!INCLUDE[KQLTools](../includes/include-telemetry-kql-tool.md)]
+
+## Can I follow a session in telemetry?
+
+Yes. Learn more at [KQL example - following telemetry events for a session](./telemetry-analyze-with-kql.md#kql-example---following-telemetry-events-for-a-session).
+
+## Can I follow telemetry events for a user in telemetry?
+
+Yes, if a telemetry ID is assigned to the user. Learn more at [KQL example - following telemetry events for a user](./telemetry-analyze-with-kql.md#kql-example---following-telemetry-events-for-a-user).
 
 ## Where can I find telemetry sample code?
 
