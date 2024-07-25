@@ -12,7 +12,7 @@ author: sodragon
 # Scheduled Performance Profiler overview
 
 In some cases, many different business processes can interfere with each other which can cause some of them to take longer than expected. Diagnosing these issues becomes even more challenging due to the fact that they can be transient because they depend on specific users' workflows
-or even happen outside of business hours, for example when scheduled jobs are run at the same time. Your administrator can use the **Profiler Schedules** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to setup schedules for when snapshots of the processes should be recorded.
+or even happen outside of business hours, for example when scheduled jobs are run at the same time. Your administrator can use the **Profiler Schedules** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to set up schedules for when snapshots of the processes should be recorded.
 A schedule defines the time slots and filters for which activity should be recorded for a particular user. While recording, the profiler monitors all the activities that match the filters and produces individual profiles for each of them separately. They allow for retroactive investigation on individual user interactions or system processes by providing a view of what processes were running on the system during the defined time slots. Identifying where the holdup is can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself.
 
 ## Setting up a profiler schedule
@@ -105,7 +105,7 @@ The **Active Schedule ID** field in the **Profiler Schedules** page will contain
 
 ### What is the performance impact of running with a profiler schedule? Will the users be affected?
 
-A user whose session which is being profiled may experience some performance degardation due to the recording. This is because activities need to be recorded and stored for further investigation. The rule of thumb
+A user whose session which is being profiled may experience some performance degradation due to the recording. This is because activities need to be recorded and stored for further investigation. The rule of thumb
 should be to limit the duration of the schedules to the minimum required for the investigation and to apply schedules to as few users as possible.
 
 ### How many profiles will be generated from a schedule?
