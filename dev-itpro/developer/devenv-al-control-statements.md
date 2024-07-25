@@ -193,8 +193,8 @@ case <Expression> of
 
     <Value set n>:  
         <Statement n>;  
-[else  
-    <Statement n+1>]  
+    [else  
+        <Statement n+1>]  
 end;  
 ```  
 
