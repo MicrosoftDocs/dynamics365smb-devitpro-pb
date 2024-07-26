@@ -293,7 +293,7 @@ Read more here:
 ### How to reduce database locking
 Sometimes, performance issues aren't due to resource starvation, but due to processes waiting for other processes to release locks on shared objects. When AL code needs to update data, it's customary to take a database lock on it to ensure that other processes don't change the data at the same time. 
 
-Using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent read calls to the database against the table of the record called on, until the transaction is committed. E.g. If `Record.LockTable` is called on a `Item` record, all reads against that table will be done with the `UPDLOCK` hint, not just the variable it was called on. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
+Using the `Record.LockTable` method applies the `WITH (updlock)` hint on all subsequent read calls to the database against the table of the record called on, until the transaction is committed. For example, if `Record.LockTable` is called on an `Item` record, all reads against that table will be done with the `UPDLOCK` hint, not just the variable it was called on. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
 
 Some tips for avoiding locking:
 
