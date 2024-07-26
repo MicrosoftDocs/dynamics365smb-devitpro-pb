@@ -27,7 +27,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 |Country/region|Feature|Description|
 |-|-|-|
-|Denmark|Missing SchemeID in PEPPOL|Added **SchemeID** in the **CompanyID** section of the **PEPPOL** file and changed **VAT Scheme** in **Country/Region** for DK to 0184. It's also added a prefix DK to **VAT Registration No.** when applicable|
 |Italy|Fiscal Deny-list|Added **Denied Vendors List** report and **On Deny List** boolean field in **Country/Region** table and page in support of regulations requiring companies to provide information on business with companies from specific (deny-listed) countries.|
 |Mexico|Carta Porte 3.1 update|Transitioned Carta Porte implementation from version 3.0 to 3.1 version 3.1 to comply with latest regulations, for example, including changes related to custom regimes and hazardous materials.|
 
