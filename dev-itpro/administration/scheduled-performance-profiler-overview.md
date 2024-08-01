@@ -65,16 +65,16 @@ This overview is the same as the one created for the in-client performance profi
 The profiles can also be analyzed via the AL profiler in VSCode after downloading them. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).
 
 An overview of the fields of the **Performance Profiles** page can be found below:
-| Name                  | Description                                                                 |
-|-----------------------|-----------------------------------------------------------------------------|
-| Start Time            | When the profile started                                                    |
-| User Name             | The name of the user associated with the activity                           |
-| Activity Type         | The type of activity for which the schedule is created                      |
-| Activity Description  | A system generated description of the activity                              |
-| Activity Duration     | The duration of the recorded activity, not including waiting for user input |
-| AL Execution Duration | The duration of the executed AL code in the recorded activity               |
-| Correlation ID        | An ID used to correlate the activity with internal telemetry                |
-| Schedule ID           | The ID of the associated schedule                                           |
+| Name                  | Description                                                    |
+|-----------------------|----------------------------------------------------------------|
+| Start Time            | When the profile started                                       |
+| User Name             | The name of the user associated with the activity              |
+| Activity Type         | The type of activity for which the schedule is created         |
+| Activity Description  | A system generated description of the activity                 |
+| Activity Duration     | The duration of the recorded activity, not including idle time |
+| AL Execution Duration | The duration of the executed AL code in the recorded activity,  not including idle time  |
+| Correlation ID        | An ID used to correlate the activity with internal telemetry   |
+| Schedule ID           | The ID of the associated schedule                              |
 
 ## Downloading performance profiles
 
