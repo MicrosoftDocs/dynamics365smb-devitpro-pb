@@ -97,6 +97,10 @@ Sampling profiling is used when recording activities via the scheduled performan
 
 The **Activity Duration Threshold** is a threshold that allows for filtering out short-lived activities which would not be helpful when doing an analysis of the profiling results. The threshold refers to the duration of executed AL code.
 
+## Scheduled Profiling and Debugging
+
+While scheduled profiling is enabled for a session, it is not possible to attach the debugger to it. This includes launching with debugging, attaching to a session and snapshot debugging via Visual Studio Code.
+
 ## FAQ
 
 ### Is scheduled profiling enabled?
