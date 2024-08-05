@@ -1,13 +1,8 @@
 ---
 title: "ExportObjects"
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 3aa7629a-ced2-461d-8322-59347ec5d4f4
 caps.latest.revision: 19
 ---

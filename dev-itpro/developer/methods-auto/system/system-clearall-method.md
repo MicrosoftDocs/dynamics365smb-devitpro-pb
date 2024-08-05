@@ -2,13 +2,10 @@
 title: "System.ClearAll() Method"
 description: "Clears all internal variables (except REC variables), keys, and filters in the object and in any associated objects, such as reports, pages, codeunits, and so on that contain AL code."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -25,7 +22,6 @@ Clears all internal variables (except REC variables), keys, and filters in the o
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
-
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

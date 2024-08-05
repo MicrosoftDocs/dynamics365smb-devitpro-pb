@@ -1,12 +1,7 @@
 ---
 title: "Encryption Key Management"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: f4b8f77c-a3b2-405e-8bc4-fb2168830ed3
 caps.latest.revision: 3
 ---

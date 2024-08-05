@@ -1,12 +1,7 @@
 ---
 title: "Debugger Keyboard Shortcuts"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 17928084-4d9a-4865-a4cc-3fe35c5b5809
 caps.latest.revision: 5
 ---

@@ -1,13 +1,13 @@
 ---
 title: "How to: View performance counter data for a Data Collector Set"
-ms.custom: na
+decription: Explains how to view performance counter data for a Data Collector Set.
+ms.custom:
+  - bap-template
+  - evergreen
 ms.date: 01/08/2024
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.assetid: 002ace19-dc33-432b-b74f-ac280a51fcd5
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 # How to: View performance counter data for a Data Collector Set

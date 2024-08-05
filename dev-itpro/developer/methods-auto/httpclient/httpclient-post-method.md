@@ -2,13 +2,10 @@
 title: "HttpClient.Post(Text, HttpContent, var HttpResponseMessage) Method"
 description: "Sends a POST request to the specified URI as an asynchronous operation."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -185,7 +182,7 @@ The main reason for the code example being different when dealing with binary da
         Headers: HttpHeaders;
         Response: HttpResponseMessage;
         MultiPartBody: TextBuilder;
-        MultiPartBodyOutStream: : OutStream;
+        MultiPartBodyOutStream: OutStream;
         MultiPartBodyInStream: InStream;
         TempBlob: Record TempBlob temporary;
         Boundary: Text;
@@ -207,6 +204,7 @@ The main reason for the code example being different when dealing with binary da
         CopyStream(MultiPartBodyOutStream, ContentToBeUploaded);
 
         MultiPartBody.Clear();
+        MultiPartBody.AppendLine();
         MultiPartBody.AppendLine('--' + Format(Boundary) + '--');
         MultiPartBodyOutStream.WriteText(MultiPartBody.ToText());
 

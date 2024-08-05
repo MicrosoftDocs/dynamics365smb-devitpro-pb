@@ -1,12 +1,7 @@
 ---
 title: "Table Relations Virtual Table"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: b149e9d9-6f76-4034-b666-b8b81671ce48
 caps.latest.revision: 2
 ---

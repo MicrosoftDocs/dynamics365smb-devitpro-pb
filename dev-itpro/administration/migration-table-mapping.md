@@ -3,8 +3,8 @@ title: Define migration table mappings
 description: Learn how to use migration table mapping to rename the table during the cloud migration or to move a subset of fields to a different table or table extension.
 author: jswymer 
 ms.author: jswymer 
-ms.reviewer: jswymer 
-ms.service: dynamics365-business-central
+ms.reviewer: jswymer
+
 ms.topic: how-to
 ms.date: 03/22/2023
 ms.custom: bap-template

@@ -1,16 +1,13 @@
 ---
-title: "Using OAuth to Authenticate Business Central Web Services (OData and SOAP)"
-description: Learn how to use OAuth to authenticate Business Central web services (OData and SOAP)
-ms.custom: na
-ms.date: 04/29/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Using OAuth to authenticate Business Central web services (OData and SOAP)
+description: Learn how to use OAuth to authenticate Business Central web services (OData and SOAP).
+ms.date: 06/07/2024
 ms.topic: conceptual
+ms.reviewer: solsen
 author: jswymer
 ---
 
-# Using OAuth to Authorize Business Central Web Services (OData and SOAP)
+# Using OAuth to authorize Business Central web services (OData and SOAP)
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -33,11 +30,11 @@ For more information, see [OAuth 2.0 Roles](/azure/active-directory/develop/acti
 
 ### Authorization server
 
-The Microsoft identity platform itself is the authorization server. Also called an identity provider or IdP, it securely handles the end-user's information, their access, and the trust relationships between the parties in the auth flow. The authorization server issues the security tokens your apps and APIs use for granting, denying, or revoking access to resources (authorization) after the user has signed in (authenticated).
+The Microsoft identity platform itself is the authorization server. Also called an identity provider or IdP, it securely handles the end-user's information, their access, and the trust relationships between the parties in the auth flow. The authorization server issues the security tokens your apps and APIs use for granting, denying, or revoking access to resources (authorization) after the user signs in (authenticated).
 
 ### Client
 
-The client in an OAuth exchange is the application requesting access to a protected resource. The client could be a web app running on a server, a single-page web app running in a user's web browser, or a web API that calls another web API. You'll often see the client referred to as client application, application, or app.
+The client in an OAuth exchange is the application requesting access to a protected resource. The client could be a web app running on a server, a single-page web app running in a user's web browser, or a web API that calls another web API. You often see the client referred to as client application, application, or app.
 
 ### Resource owner
 
@@ -60,7 +57,7 @@ For more information, see [Security tokens](/azure/active-directory/develop/secu
 
 ## App registration
 
-Your client app needs a way to trust the security tokens issued to it by the Microsoft identity platform. The first step in establishing that trust is by registering your app with the identity platform in Microsoft Entra ID .
+Your client app needs a way to trust the security tokens issued to it by the Microsoft identity platform. The first step in establishing that trust is by registering your app with the identity platform in Microsoft Entra ID.
 
 For more information, see [App registration](/azure/active-directory/develop/active-directory-v2-protocols#app-registration) in the Azure documentation.
 
@@ -89,19 +86,19 @@ For more information, please visit [Service-to-Service Authentication](../admini
 
 ## Credentials lifetime
 
-With authentication methods other tha Microsoft Entra ID, like Windows or NavUserPassword, the credentials that users provide are persisted by application and used for as long as they're valid in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, this is different for OAuth, because the security tokens that are used for authentication have a limited lifetime.
+With authentication methods other than Microsoft Entra ID, like Windows or NavUserPassword, the credentials that users provide are persisted by application and used for as long as they're valid in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, this is different for OAuth, because the security tokens that are used for authentication have a limited lifetime.
 
 An authentication result from Microsoft Entra ID, contains two tokens: an access token and an ID token.
 
-The `access token` is the one that's used when the client application calls the web service. The access token is relatively short-lived (for example, one hour by default, and one day maximum). When it expires, the client application needs a new access token.
+The `access token` is used when the client application calls the web service. The access token is relatively short-lived (for example, one hour by default, and one day maximum). When it expires, the client application needs a new access token.
 
-To obtain new access token when the current access token expires, one can leverage token cache. For more information, see [Acquire & cache tokens with Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-acquire-cache-tokens).
+To obtain new access token when the current access token expires, one can use token cache. For more information, see [Acquire & cache tokens with Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-acquire-cache-tokens).
 
 The lifetime of both these tokens is configurable. For more information about how to configure and manage these tokens for your installation, see [Configurable token lifetimes in Microsoft Entra ID](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
-## See Also
+## See also
   
-[Web Services Authentication](web-services-authentication.md)  
-[OData Web Services](OData-Web-Services.md)  
-[Configuring Business Central Server](../administration/configure-server-instance.md)  
-[Authentication and Credential Types](../administration/Users-Credential-Types.md)
+[Web services authentication](web-services-authentication.md)  
+[OData web services](OData-Web-Services.md)  
+[Configuring Business Central server](../administration/configure-server-instance.md)  
+[Authentication and credential types](../administration/Users-Credential-Types.md)

@@ -4,7 +4,6 @@ description: This article outlines how to estimate the data size in your Busines
 author: kennienp 
 ms.author: kepontop
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.date: 11/06/2023
 ms.custom: bap-template
@@ -109,7 +108,6 @@ SELECT t.name AS table_name,
  INNER JOIN sys.tables t ON ind.object_id = t.object_id 
  WHERE col.name LIKE '%&%'
 ```
-
 
 ## Next steps
 

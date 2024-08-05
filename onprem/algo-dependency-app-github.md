@@ -2,11 +2,10 @@
 title: "Introducing a dependency to an app on GitHub"
 description: "Create a dependency in the app.json file in your AL-Go project for Business Central."
 author: freddyk
-ms.custom: na
 ms.date: 01/27/2022
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.service: dynamics-365-business-central
 ms.author: solsen
 ---
 

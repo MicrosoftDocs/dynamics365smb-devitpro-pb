@@ -2,13 +2,10 @@
 title: Inspecting pages
 description: "Learn about the structure of a page and its' underlying data."
 author: jswymer
-ms.custom: na
 ms.date: 09/15/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Inspecting and troubleshooting pages

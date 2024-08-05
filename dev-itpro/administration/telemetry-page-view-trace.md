@@ -3,12 +3,11 @@ title:  Page View Telemetry | Microsoft Docs
 description: Learn about the page views telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/22/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Analyzing Page View Telemetry
 
@@ -38,6 +37,7 @@ The pageViews table is a built-in table in Application Insights. Here are some o
 |url|URL of the page view.|
 |name|Name of the page opened in the client |
 |session_id|An identifier for the session. Can be used to create a timeline of page views happening in the session|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] <br><br>Data in user_Id from the **User** card was introduced in version 24 for page view telemetry.  |
 
 All fields are documented here: [Application Insights PageViews Schema](/azure/azure-monitor/reference/tables/pageviews)
 

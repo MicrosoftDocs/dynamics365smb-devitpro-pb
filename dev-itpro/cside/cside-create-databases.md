@@ -1,11 +1,7 @@
 ---
 title: Creating and altering Business Central databases in CSIDE
 description: Create a new database in the development environment and by using the New-NAVDatabase cmdlet in the Administration Shell. 
-ms.custom: na
 ms.date: 12/29/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---

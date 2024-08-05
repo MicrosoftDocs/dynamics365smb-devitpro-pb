@@ -2,13 +2,10 @@
 title: "Cloud Migration API Overview"
 description: 
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/31/2024
 ms.topic: overview
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Cloud Migration APIs Overview (v1.0)

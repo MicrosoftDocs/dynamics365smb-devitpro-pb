@@ -4,13 +4,11 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: bholtorf
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms. search.keywords: deprecated, United States, local functionality
+ms.devlang: al
+ms.search.keywords: deprecated, United States, local functionality
 ms.date: 04/01/2021
 ms.author: bholtorf
-
+ms.reviewer: bholtorf
 ---
 
 # Deprecated Features in the United States Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]

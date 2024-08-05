@@ -2,13 +2,10 @@
 title: "ObsoleteState Property"
 description: "Marks whether the object will be deprecated."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,6 +18,7 @@ Marks whether the object will be deprecated.
 ## Applies to
 -   Page Action Ref
 -   Page Custom Action
+-   Page File Upload Action
 -   Table
 -   Table Field
 -   Table Key
@@ -58,8 +56,8 @@ Marks whether the object will be deprecated.
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**No**|runtime version 1.0|Not obsolete. This is the normal/default setting.|
-|**Pending**|runtime version 1.0|Will become obsolete in a future version.|
+|**No**|runtime version 10.0|Not obsolete. This is the normal/default setting.|
+|**Pending**|runtime version 10.0|Will become obsolete in a future version.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

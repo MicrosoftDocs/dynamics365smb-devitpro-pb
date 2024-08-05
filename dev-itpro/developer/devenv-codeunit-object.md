@@ -1,26 +1,25 @@
 ---
-title: "Codeunit Object"
-description: "Description of the codeunit object."
+title: Codeunit object
+description: Describes the codeunit object, which is a container for business logic in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-caps.latest.revision: 18
+ms.reviewer: solsen
 ---
 
-# Codeunit Object
-A codeunit is a container for AL code that you can use in many application objects. You typically implement business logic in codeunits and call the codeunit from the object that needs to perform that specific logic.
+# Codeunit object
+
+A codeunit is a container for AL code that you can use in many application objects. You typically implement business logic in codeunits and call the codeunit from the object that needs to perform that specific logic. 
 
 ## Snippet support
-Typing the shortcut `tcodeunit` will create the basic layout for a codeunit object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+Typing the shortcut `tcodeunit` will create the basic layout for a codeunit object when using the [!INCLUDE [prod_short](includes/prod_short.md)] in Visual Studio Code.
 
 ## Codeunit example
-This codeunit example checks whether a given customer has registered a shoe size. If not, the customer is assigned a shoe size of 42.
+
+This codeunit example checks whether a given customer has registered a shoe size. If not, the customer is assigned a shoe size of 42. The example is for illustrational purposes only, the customer table doesn't have a `ShoeSize` field by default.
 
 The codeunit can be used both as a direct call to `codeunit.run(customer)` or as a call to the procedure inside the codeunit `createcustomer.CheckSize(customer)`.
 
@@ -28,10 +27,12 @@ The codeunit can be used both as a direct call to `codeunit.run(customer)` or as
 codeunit 50113 CreateCustomer
 {
     TableNo = Customer;
+
     trigger OnRun();
     begin
         CheckSize(Rec);
     end;
+
     procedure CheckSize(var Cust : Record Customer)
     begin
         if not Cust.HasShoeSize() then
@@ -40,10 +41,10 @@ codeunit 50113 CreateCustomer
 }
 ```
 
-## See Also
+## See also
 
-[Developing Extensions](devenv-dev-overview.md)  
-[Table Extension Object](devenv-table-ext-object.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[XML Comments in Code](devenv-xml-comments.md)
+[Developing extensions](devenv-dev-overview.md)  
+[Table extension object](devenv-table-ext-object.md)  
+[Page extension object](devenv-page-ext-object.md)  
+[AL development environment](devenv-reference-overview.md)  
+[XML comments in code](devenv-xml-comments.md)

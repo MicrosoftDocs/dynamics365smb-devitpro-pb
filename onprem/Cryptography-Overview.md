@@ -1,12 +1,7 @@
 ---
 title: "Cryptography Overview"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 7e0817eb-59cd-411c-ab81-bf3d8e17844d
 caps.latest.revision: 4
 ---

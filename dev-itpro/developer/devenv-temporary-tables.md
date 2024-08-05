@@ -1,10 +1,9 @@
 ---
-title: "Temporary tables"
-description: Learn about temporary tables in Business Central 
+title: Temporary tables
+description: Learn about temporary tables in AL for Business Central.
 ms.custom: bap-template
-ms.date: 02/24/2023
+ms.date: 04/17/2024
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -17,7 +16,6 @@ A temporary table is a temporary variable that holds a table. A temporary table 
 You can use a temporary table just like you use a database table. The differences between a temporary table and a database table are as follows:  
 
 - A temporary table data isn't stored in the database. It's only held in memory until the table is closed.  
-
 - The write transaction principle that applies to a database table doesn't apply to a temporary table.  
 
 > [!TIP]  

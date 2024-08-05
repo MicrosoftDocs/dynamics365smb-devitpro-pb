@@ -1,12 +1,7 @@
 ---
 title: "C/AL Reserved Words"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: b7533238-04ef-4408-93fc-dd5c5c154346
 caps.latest.revision: 23
 ---

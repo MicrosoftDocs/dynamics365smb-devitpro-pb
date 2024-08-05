@@ -1,11 +1,7 @@
 ---
 title: Provisioning the Dynamics 365 Business Central Server Service Account
 description: The service account is used by Business Central clients to log on to the server instance. 
-ms.custom: na
 ms.date: 10/19/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---

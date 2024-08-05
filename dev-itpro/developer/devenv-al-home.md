@@ -4,9 +4,8 @@ description: Get an overview of the AL Home view for Business Central which shar
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 03/29/2023
+ms.date: 03/01/2024
 ms.custom: bap-template
 ms.collection: get-started
 ---
@@ -29,4 +28,4 @@ You can choose when to show the **AL Home** view as you start up Visual Studio C
 ## See also
 
 [AL Explorer](devenv-al-explorer.md)  
-[Developing Extensions in AL](devenv-dev-overview.md)
+[Developing extensions in AL](devenv-dev-overview.md)

@@ -2,13 +2,10 @@
 title: Simple card page example
 description: Provides AL code for a simple card type page.
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Simple card page code example

@@ -1,13 +1,12 @@
 ---
-title: company resource type (automation) | Microsoft Docs
+title: company resource type (automation)
 description: A company object (automation) in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # company resource type (automation)

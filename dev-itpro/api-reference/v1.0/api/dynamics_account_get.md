@@ -2,13 +2,12 @@
 title: (v1.0) Get accounts
 description: (v1.0) Gets an account object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 06/14/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get accounts (v1.0)

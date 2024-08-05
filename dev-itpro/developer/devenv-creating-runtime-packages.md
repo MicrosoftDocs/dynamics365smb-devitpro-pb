@@ -2,13 +2,10 @@
 title: Create runtime packages for Business Central on-premises
 description: Describes how you can create runtime packages used for distribution of extensions for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/03/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create runtime packages for Business Central on-premises

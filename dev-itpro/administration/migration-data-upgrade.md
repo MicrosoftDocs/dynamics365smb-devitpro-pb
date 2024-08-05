@@ -3,7 +3,7 @@ title: Run data upgrade
 description: This article explains the process for running the data upgrade as part of cloud migration. 
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: conceptual 
 ms.date: 02/22/2023
 ms.custom: bap-template 
@@ -18,6 +18,8 @@ This article explains the process for running the data upgrade as part of cloud 
 
 Data replication has been run on the company or companies that you're migrating to the online environment. For more information, go to [Run data replication](migrate-data-replication-run.md).
 
+[!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
+
 ## Prepare
 
 Once you start the data upgrade on an environment, all client connections are terminated. You can't reconnect until the upgrade process has completed. Also, hotfixes can't be applied and scheduled tasks can't be run. This behavior means data upgrade is the only process running on the environment, which helps prevent potentials database locks and errors.
@@ -25,6 +27,8 @@ Once you start the data upgrade on an environment, all client connections are te
 Inform any active Business Central online users to finish what they're doing and sign out.
 
 ### Avoid long running data upgrades
+
+> **APPLIES TO:** Business Central on-premises only
 
 When running the data upgrade during cloud migration, you can experience that it takes a long time to complete. You can speed up the data upgrade by temporarily skipping API upgrade. To learn more, go to [Skip API data upgrade](migration-skip-api-data-upgrade.md).
 

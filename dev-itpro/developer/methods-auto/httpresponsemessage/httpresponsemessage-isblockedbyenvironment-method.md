@@ -2,13 +2,10 @@
 title: "HttpResponseMessage.IsBlockedByEnvironment() Method"
 description: "Gets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -25,7 +22,6 @@ IsBlockedByEnvironment :=   HttpResponseMessage.IsBlockedByEnvironment()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *HttpResponseMessage*  
 &emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  

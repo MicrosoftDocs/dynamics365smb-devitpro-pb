@@ -1,11 +1,7 @@
 ---
 title: "Security Tips for Business Users"
 description: Tips for administrators and business users to secure their devices that access Business Central.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: mikebc
 ---
@@ -14,7 +10,7 @@ author: mikebc
 
 This article describes how you can work with users and configure their devices to improve security.
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > Use this article together with industry standard security practices for securing users and their access to company data.
 
 ## Kiosks and shared devices

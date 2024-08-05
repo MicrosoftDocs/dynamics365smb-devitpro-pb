@@ -2,13 +2,10 @@
 title: "NavApp.RestoreArchiveData(Integer [, Boolean]) Method"
 description: "Restores archived data for a specified table of an extension during installation."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -27,6 +24,7 @@ Restores archived data for a specified table of an extension during installation
 *TableNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the table for which to restore achived data.  
+
 *[Optional] RunTrigger*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the table triggers should run, otherwise **false**.  

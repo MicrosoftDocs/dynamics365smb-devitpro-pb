@@ -2,13 +2,10 @@
 title: Introduction to automation APIs
 description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
 author: henrikwh
-ms.custom: na
 ms.date: 12/03/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Introduction to automation APIs
@@ -168,7 +165,7 @@ There are three bound actions available on the **extensions** endpoint: `Microso
 Issue a POST extension using the bound actions. See the example below.
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.install
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.install
 
 Authorization: Bearer {token}
 ```

@@ -2,11 +2,10 @@
 title: "Snapshot debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 09/13/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Snapshot debugging
@@ -46,7 +45,7 @@ You can start a snapshot by creating a snapshot configuration file in Visual Stu
 - AL: Initialize a snapshot debugging session locally
 - AL: Initialize a snapshot debugging session on cloud
 
-Choose whether to run the session on a cloud service or locally. The configuration file contains the following information. For a full overview of configuration settings, see [Launch JSON file](devenv-json-launch-file.md#initialize-snapshot-debugging-settings).
+Choose whether to run the session on a cloud service or locally. The configuration file contains the following information. For a full overview of configuration settings, see [Launch JSON file](devenv-json-launch-file.md#initialize-a-snapshot-debugging-session-on-a-cloud-production-environment-launchjson).
 
 |Setting | Description |
 |--------|-------------|
@@ -70,7 +69,7 @@ To record the AL execution, the server will now wait for a connection to happen 
 > If you're having difficulty getting the snapshot debugger to attach to a new session using `WebClient` for the `breakOnNext` configuration parameter, then close the browser window and try again.
 
 > [!TIP]  
-> To do snapshot debugging of Service to Service (S2S) web service calls set the `breakOnNext` configuration parameter to `WebServiceClient` in the `launch.json` file and use table explorer to find the `userId` of the user record mapped to the S2S Microsoft Entra authentication Application. When the snapshot session is initialized, trigger the session either from the integration (service or device) or manually by invoking a web service call using tools like Postman or Fiddler. For information about creating S2S refer to [Using Service to Service Authentication](../administration/automation-apis-using-s2s-authentication.md), [Client Credentials Grant Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), [App-only Authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps), and [Postman HowTo](https://blog.postman.com/pkce-oauth-how-to/).
+> To do snapshot debugging of Service to Service (S2S) web service calls set the `breakOnNext` configuration parameter to `WebServiceClient` in the `launch.json` file and use table explorer to find the `userId` of the user record mapped to the S2S Microsoft Entra authentication Application. When the snapshot session is initialized, trigger the session either from the integration (service or device) or manually by invoking a web service call using tools like Insomnia, Bruno, or Insomnium. For information about creating S2S refer to [Using Service to Service Authentication](../administration/automation-apis-using-s2s-authentication.md), [Client Credentials Grant Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), [App-only Authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps&preserve-view=true).
 
 Once a snapshot debugging session is initialized, the snapshot debugging session counter on the status bar will be updated and look like this:
 

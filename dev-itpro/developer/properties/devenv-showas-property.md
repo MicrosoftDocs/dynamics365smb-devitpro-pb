@@ -2,13 +2,10 @@
 title: "ShowAs Property"
 description: "Specifies how an action group should be rendered"
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -25,8 +22,8 @@ Specifies how an action group should be rendered
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Standard**|runtime version 1.0|Specifies that an action group should be rendered as a standard group.|
-|**SplitButton**|runtime version 1.0|Specifies that an action group should be rendered as a split button.|
+|**Standard**|runtime version 10.0|Specifies that an action group should be rendered as a standard group.|
+|**SplitButton**|runtime version 10.0|Specifies that an action group should be rendered as a split button.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

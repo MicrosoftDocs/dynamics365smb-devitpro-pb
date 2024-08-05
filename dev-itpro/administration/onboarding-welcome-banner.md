@@ -3,7 +3,7 @@ title: Onboard new users with the Welcome banner
 description: Learn about the banner that displays when a user signs into a new company for the first time.
 ms.date: 06/19/2023
 ms.topic: conceptual
-ms.reviewer: solsen
+ms.reviewer: jswymer
 author: sorenfriisalexandersen
 ms.author: soalex
 ---

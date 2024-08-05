@@ -1,16 +1,12 @@
 ---
-title: "Web Client URL"
-description: Learn about the URL for opening the Web client. 
-ms.custom: na
-ms.date: 08/30/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Web client URL
+description: Learn about the URL for opening the Business Central web client. 
+ms.date: 06/24/2024
 ms.topic: conceptual
 author: jswymer
 ---
 
-# Web Client URL
+# Web client URL
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -32,7 +28,7 @@ This article describes how you can construct URLs. A well-constructed URL can be
 > Certain data in the URL, such as filters, could be considered sensitive information. Use discretion if you distribute URLs that contain filters, or if it's possible, exclude this information from the address.  
 
 
-##  <a name="Syntax"></a> URL Syntax
+##  <a name="Syntax"></a> URL syntax
 
 The [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL has the following syntax:
 
@@ -48,7 +44,7 @@ https://<hostname>[/<aad>][/sandbox]/?[company=<companyname>]&[page|report|table
 
 The URL consists of two parts; the hostname part and the query string. The hostname part includes the protocol (https) and the hostname. The query string part includes everything after `<hostname>`. The query string determines what content to target.
 
-### Syntax Key
+### Syntax key
 
 The following table describes the notation that is used to indicate the syntax.
 
@@ -80,7 +76,7 @@ Use the following guidelines to write URL syntax and create a URL:
 
 -   Enclose values in single quotation marks (`''`) if they're unescaped.
 
-##  <a name="Paramters"></a> URL Parameters
+##  <a name="Paramters"></a> URL parameters
 
 The following table describes the parameters of the URL for displaying a page.
 
@@ -117,7 +113,7 @@ The following table describes the parameters of the URL for displaying a page.
 
 <!-- For more information about framing the Web client, see [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md).-->
 
-## <a name="Filtering"></a> Filtering Data on the Page
+## <a name="Filtering"></a> Filtering data on the page
 
 You can filter the data that is displayed in the page by using the filter parameter. The filter parameter let you display specific records from the underlying table of the page.
 
@@ -129,7 +125,7 @@ You can filter the data that is displayed in the page by using the filter parame
 https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to Customer No.' IS '10000' AND 'Location Code' IS 'BLUE'  
 ```
 
-### Filter Syntax
+### Filter syntax
 
 The filter has the following syntax.
 
@@ -144,7 +140,7 @@ Include a space or `%20` before and after the `IS`and `AND` operators. You can a
 >  The filter syntax for a page in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] is the same as a page in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], which you can see by choosing the **Copy Link to Page** action on the **Application** menu in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].
 -->
 
-### Filter Parameters
+### Filter parameters
 
 The following table describes the filter parameters.
 
@@ -155,5 +151,6 @@ The following table describes the filter parameters.
 |`value`|The value of the table field on which to filter.|
 |` AND `|Use this parameter to specify more than one filter. It specifies an "and" operator for adding additional filters. Place ` AND ` between each additional filter.<br /><br /> To be included in the page data, the table record must match values for all fields in the filter.|
 
-## See Also
+## See also
+
 [Viewing Table Data](devenv-view-table-data.md)  

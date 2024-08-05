@@ -2,13 +2,12 @@
 title: "Business Central Administration Shell"
 description: Read about the PowerShell cmdlets managing Business Central Server instances and extensions for on-premises deployments.
 author: jswymer
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 08/31/2022
+ms.date: 04/16/2024
+ms.service: dynamics-365-op
 ---
 
 # Business Central Administration Shell
@@ -28,10 +27,10 @@ To run the shell, you have to be a member of the local administrator group on th
 - Another way is from Windows PowerShell. Start Windows PowerShell as an administrator. At the prompt, run the following command:
 
     ```powershell
-    Import-Module -Name C:\Program Files\Microsoft Dynamics 365 Business Central\210\Service\navadmintool.ps1
+    Import-Module -Name C:\Program Files\Microsoft Dynamics 365 Business Central\nnn\Service\navadmintool.ps1
     ```
 
-    Replace `C:\Program Files\Microsoft Dynamics 365 Business Central\210` with the path to your server installation.
+    Replace `C:\Program Files\Microsoft Dynamics 365 Business Central\nnn` with the path to your server installation.
 
 ## Get help on the cmdlets
 
@@ -55,7 +54,7 @@ Get-Help Get-NAVServerInstance -full
 
 To go the online version of the help on Microsoft Docs, type the following command:  
 
-```powershell   
+```powershell
 Get-Help <cmd name> -online  
 ```  
 

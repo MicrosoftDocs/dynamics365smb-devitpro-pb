@@ -1,18 +1,18 @@
 ---
-title: Analyze and Monitor Telemetry with KQL
+title: Analyze and monitor telemetry with KQL
 description: Learn how to query Business Central telemetry with KQL.  
 author: kennienp
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/13/2022
+ms.date: 07/23/2024
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
-ms.custom: bac-template
+ms.custom: bap-template
 ---
-# Analyze and Monitor Telemetry with KQL
+# Analyze and monitor telemetry with KQL
 
 Telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is stored in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] in the tables *traces* and *pageViews*. The language used to query data in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] is _Kusto Query Language_ (KQL). This article has information and links to resources to get started learning about the KQL language.
+
 As a simple example, follow these steps:
   
 1. In the Azure portal, open your Application Insights resource.
@@ -45,44 +45,105 @@ You can use Kusto queries as the data source in many places. For example:
 
 [!INCLUDE[KQLTools](../includes/include-telemetry-kql-tool.md)]
 
+## How can I query telemetry from Log Analytics?
+
+With workspace-based resources, [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] sends telemetry to a common [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] workspace, providing full access to all the features of [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] while keeping your application, infrastructure, and platform logs in a single consolidated location. This integration allows for common Azure role-based access control across your resources and eliminates the need for cross-app/workspace queries.
+
+This table shows table names for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry when queried from [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] and from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]:
+
+| Table name in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] | Table name in [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] | 
+| --------- | ------------| 
+| traces    | AppTraces |
+| pageViews | AppPageViews |
+
+## KQL example - following telemetry events for a session
+
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24 and later, the server and the browser components align on the globally unique identifiers (GUIDs) logged to the `session_Id` column in the **traces** and **pageViews** tables. This behavior allows you to do advanced troubleshooting such as following what happens within a session.
+
+Use this KQL code to query what happens in a single session:
+
+```kql
+let _session_Id = 'fea0995e-525d-499a-bc2e-0fd27bfe412b' // change to the guid for the session you want to follow
+;
+let pv = 
+pageViews
+| where session_Id == _session_Id
+| extend message = strcat('Page opened: ', name)
+| project timestamp, session_Id, user_Id, message, clientType='WebClient'
+;
+let tra = 
+traces
+| where session_Id == _session_Id
+| project timestamp, session_Id, user_Id, message, clientType= tostring(customDimensions.clientType)
+;
+union pv, tra
+| order by timestamp asc
+```
+
+## KQL example - following telemetry events for a user
+
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24 and later, the server and the browser components align on the GUIDs logged to the `user_Id` column in the `traces` and `pageViews` tables. This behavior allows you to do advanced troubleshooting such as following what a user does. To see which user corresponds to the guid logged in the `user_Id` column, see [Assign a telemetry ID to users](./telemetry-enable-application-insights.md#assign-a-telemetry-id-to-users).
+
+Use this KQL code to query what a user does across sessions:
+
+```kql
+let _user_Id = 'b99ed22a-4681-41e8-b5fc-91c004e1979a' // change to the guid for the user you want to follow
+;
+let pv = 
+pageViews
+| where user_Id == _user_Id
+| extend message = strcat('Page opened: ', name)
+| project timestamp, session_Id, user_Id, message, clientType='WebClient'
+;
+let tra = 
+traces
+| where user_Id == _user_Id
+| project timestamp, session_Id, user_Id, message, clientType= tostring(customDimensions.clientType)
+;
+union pv, tra
+| order by timestamp asc
+```
+
 ## KQL walkthrough example - understand report usage
 
-This walkthrough will guide you step by step to create a kusto (KQL) query to analyze how users use reports in a Business Central environment. You will start with a sample query from the documentation article for report telemetry. Then you will step by step change and refine the query, learning about important KQL operators along the way. The final result will show you data for the most frequently used reports, grouped by the app/extension they are from, what users did with the report (download/preview/print/...), as well as, which layout (Excel/Word/RDLC) that was used.
+This walkthrough guides you to create a Kusto (KQL) query to analyze how users use reports in a Business Central environment. You start with a sample query from the documentation article for report telemetry. Then, you change and refine the query step by step, learning about important KQL operators along the way. The final result shows you data for the most frequently used reports. The reports are grouped by the app/extension they're from, what users did with the report (download/preview/print/...), and  the layout (Excel/Word/RDLC) that was used.
 
 ### About this walkthrough
+
 This walkthrough covers the following tasks:
   
-1. Choose a query tool for KQL, either the **Logs** part of the **Monitoring** menu in Application Insights in the Azure portal, or in Kusto.Explorer (see [Kusto.Explorer installation and user interface](/azure/data-explorer/kusto/tools/kusto-explorer)).
-2. Get a sample query (in this example, we use the sample query for report renderings)
-3. Limit the result rows by adding a **take** operator
-4. Limit the result columns by removing lines from the **project** operator 
-5. Add a **summarize** operator and learn gotchas about the dynamic datatype customDimensions
-6. Add group by parts to the **summarize** operator
-7. Rename columns in the result
-8. Add an **order by** to see the most frequent reports first
-9. Add a **take** operator to get the top 10 most frequent reports.
+1. Choose a query tool for KQL, either the **Logs** part of the **Monitoring** menu in Application Insights in the Azure portal, or in Kusto. Explorer (see [Kusto.Explorer installation and user interface](/azure/data-explorer/kusto/tools/kusto-explorer)).
+2. Get a sample query (in this example, we use the sample query for report renderings).
+3. Limit the result rows by adding a `take` operator.
+4. Limit the result columns by removing lines from the `project` operator.
+5. Add a `summarize` operator and learn gotchas about the dynamic datatype customDimensions.
+6. Add group by parts to the `summarize` operator.
+7. Rename columns in the result.
+8. Add an `order by` to see the most frequent reports first.
+9. Add a `take` operator to get the top 10 most frequent reports.
 
 ### Prerequisites
-To complete this walkthrough, you'll need:
 
-An [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
+To complete this walkthrough, you need:
 
-Report telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that has been emitted to Application Insights.
-
-A query tool for KQL, either the **Logs** part of the **Monitoring** menu in Application Insights in the Azure portal, or the Kusto.Explorer (see [Kusto.Explorer installation and user interface](/azure/data-explorer/kusto/tools/kusto-explorer)).
+- An [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
+- Report telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] emitted to Application Insights.
+- A query tool for KQL, either the **Logs** part of the **Monitoring** menu in Application Insights in the Azure portal, or the Kusto. Explorer (see [Kusto.Explorer installation and user interface](/azure/data-explorer/kusto/tools/kusto-explorer)).
 
 ### Understand report usage with telemetry and KQL
 
 First, go to the article on report telemetry [Analyzing Report Telemetry](telemetry-reports-trace.md#sample-kql-code-successful-report-generation---all-dimensions)
 
 Now, copy the KQL query for successful report generation:
+
 [!INCLUDE[report-success-kql](../includes/include-telemetry-report-success-kql.md)]
 
-The query above has four parts: a table and three KQL operators separated by a pipe (**|**):
-1. which kusto table that stores the data
-2. where operators to filter the data
-3. a project operator limits the number of columns
-4. an extend operator to add new columns (calculations)
+The query in the previous paragraph has four parts: a table and three KQL operators separated by a pipe (`|`):
+
+1. Which Kusto table that stores the data
+2. `where` operators to filter the data
+3. a `project` operator limits the number of columns
+4. an `extend` operator to add new columns (calculations)
 
 ```kql
 traces // which kusto table that stores the data
@@ -101,9 +162,9 @@ traces // which kusto table that stores the data
 | extend renderTimeInMS = totalTimeInMS - serverExecutionTimeInMS
 ```
 
-When writing KQL queries, it's good practice to limit the number of rows while developing it. This allows for quick explorations and experimentation without having to wait for the result in each modification of the query.
+When writing KQL queries, it's good practice to limit the number of rows while developing it. This practice allows for quick explorations and experimentation without having to wait for the result in each modification of the query.
 
-So, before running the query, add a **take** operator on a new line after the **where** operator and the **project** operator:
+So, before running the query, add a `take` operator on a new line after the `where` operator and the `project` operator:
 
 Your query should now look like this:
 
@@ -153,9 +214,9 @@ traces
 | extend renderTimeInMS = totalTimeInMS - serverExecutionTimeInMS
 ```
 
-Try running the query. You should now see 5 rows with a lot of columns. 
+Try running the query. You should now see five rows with numerous columns. 
 
-As you can see on the result, the original query includes a lot of columns. In this example, we aren't interested in performance data and other details. So, we simply remove the lines that we don't need from the **project** part of the query:
+As you can see on the result, the original query includes many columns. In this example, we aren't interested in performance data and other details. So, we remove the lines that we don't need from the `project` part of the query:
 
 ```kql
 traces
@@ -181,9 +242,9 @@ traces
 , reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
 ```
 
-Try running the query again. You should now see 5 rows with a lot fewer columns. 
+Try running the query again. You should now see five rows with a lot fewer columns. 
 
-Next, we want to summarize how many reports have been run. For this, we add a new line with a **summarize** operator to the query:
+Next, we want to summarize how many reports ran. So, we add a new line with a `summarize` operator to the query:
 
 ```kql
 traces
@@ -210,7 +271,7 @@ traces
 | summarize count()
 ```
 
-This will show you a total count of all reports that were run. Because you have a **take 5** in there, the count will also be 5. Now, change that limit to 100 as we are ready to group by some columns:
+This query shows you a total count of all reports that were run. Because you have a `take 5` in there, the count is also five. Now, change that limit to 100 as we're ready to group by some columns:
 
 ```kql
 // Note that this query will fail with the error
@@ -241,11 +302,11 @@ traces
 | summarize count() by alObjectName
 ```
 
-All of the context of the report rendering (which object id/name, extension/app details etc.) are stored in a datastructure called **customDimensions**. For such columns to work in the **by** part of the  **summarize** operator, they must be converted to strings or numbers, else you will get this error when running the query: 
+All of the context for the report rendering (which object ID/name, extension/app details etc.) is stored in a data structure called `customDimensions`. For such columns to work in the `by` part of the  `summarize` operator, they must be converted to strings or numbers, otherwise you get this error when running the query:
 
 _Summarize group key 'alObjectId' is of a 'dynamic' type. Please use an explicit cast (for example, 'summarize ... by tostring(alObjectId)') as grouping by a 'dynamic' type is not supported._
 
-Let's quickly fix that and add a tostring command to the **by** part of the **summarize** line:
+Let's quickly fix that and add a `tostring` command to the `by` part of the `summarize` line:
 
 ```kql
 traces
@@ -274,7 +335,7 @@ traces
 
 The _Summarize group key 'alObjectId' is of a 'dynamic' type_ error is common to get when you write KQL. Now you know how to fix it.
 
-Let's add add a few more columns to the **by** part of the **summarize** line and tidy up the query (remove comments and unused columns from the **project** part):
+Let's add a few more columns to the `by` part of the `summarize` line and tidy up the query (remove comments and unused columns from the `project` part):
 
 ```kql
 traces
@@ -293,7 +354,7 @@ traces
    , tostring(extensionPublisher)   
 ```
 
-If we want the columns in the result to have some nice names, we can rename them directly in the **summarize** operator: 
+If we want the columns in the result to have some nice names, we can rename them directly in the `summarize` operator:
 
 ```kql
 traces
@@ -312,7 +373,7 @@ traces
    , publisher     = tostring(extensionPublisher)   
 ```
 
-We want to see the most frequent reports in the top of the list, so we add a new line with an **order by** operator (remember to add _desc_ or _asc_):
+We want to see the most frequent reports in the top of the list, so we add a new line with an **order by** operator (remember to add `_desc_` or `_asc_`):
 
 ```kql
 traces
@@ -332,7 +393,7 @@ traces
 | order by report_count desc
 ```
 
-We just want to see the top 10 results. So we add one more **take** operator to the end of the query:
+We just want to see the top 10 results. So we add one more `operator` to the end of the query:
 
 ```kql
 traces
@@ -353,7 +414,7 @@ traces
 | take 10
 ```
 
-Our query now delivers a result that looks like what we want. Final step is to deal with the the initial **take 100** line as the query is now ready and we are no longer experimenting. For future experiments, we just comment it out, to make it easy to add again, should we need it:
+Our query now delivers a result that looks like what we want. Final step is to deal with the initial `take 100` line as the query is now ready and we're no longer experimenting. For future experiments, we just comment it out, to make it easy to add again, should we need it:
 
 ```kql
 // Final version
@@ -375,11 +436,10 @@ traces
 | take 10
 ```
 
-
 ## See also
 
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  
-[Analyze Telemetry with Power BI](telemetry-power-bi-app.md)
-[Telemetry FAQ](telemetry-faq.md)
+[Analyze Telemetry with Power BI](telemetry-power-bi-app.md)  
+[Telemetry FAQ](telemetry-faq.md)  

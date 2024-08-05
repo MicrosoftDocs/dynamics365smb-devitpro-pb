@@ -1,14 +1,10 @@
 ---
-title: "AVS Error AVS0003"
+title: AVS Error AVS0003
 description: "The file '{0}' could not be added to the file system because a file with the same name already exists."
 ms.author: thpeder
-ms.custom: na
-ms.date: 02/05/2022
-ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 04/26/2024
+ms.reviewer: jswymer
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: thpeder
 ---
 
@@ -22,7 +18,7 @@ The file '{0}' could not be added to the file system because a file with the sam
 
 Something went wrong when compiling the app. Retry the operation and contact Partner Center support if it fails again.
 
-## See Also
+## See also
 
-[Get Started with AL](../devenv-get-started.md)  
+[Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

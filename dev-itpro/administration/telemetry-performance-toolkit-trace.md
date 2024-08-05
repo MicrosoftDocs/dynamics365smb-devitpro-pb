@@ -7,6 +7,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 03/22/2023
 ms.author: jswymer
 ms.reviewe: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing Performance Toolkit Telemetry

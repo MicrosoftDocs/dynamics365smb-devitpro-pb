@@ -2,14 +2,11 @@
 title: "Moving Custom Fields From Base Application to Extensions"
 description: "DMoving Custom Fields From Base Application to Extensions"
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ROBOTS: NOINDEX
+ms.reviewer: jswymer
 ---
 
 # Moving Custom Fields From the Base Application to an Extension
@@ -130,7 +127,7 @@ In this example, you will use the [VALIDATE method](methods-auto/record/record-v
 3. Add a local method to the codeunit that iterates through the records of the **Customer** table and replicates data to the new field (**ABC - ShoeSize**). 
 
     ```AL
-    local procedure HandleFreshInstall();
+    local procedure HandleFreshInstall()
     begin
         if CustomerRec.FINDSET() then
             repeat

@@ -1,10 +1,10 @@
 ---
 title: Debugging in AL
-description: Overview of debugging in AL.
+description: Debugging in AL with Visual Studio Code and the AL Language extension.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/10/2024
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -24,7 +24,7 @@ An alternative to classic debugging is snapshot debugging, which allows you to r
 > To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This step requires a server restart.
 
 > [!IMPORTANT]  
-> To use the development environment and debugger, you must make sure that port `7049` is available.
+> To use the development environment and debugger for on-premises environments, you must make sure that port `7049` is available.
 
 There are some limitations to be aware of:
 
@@ -51,6 +51,10 @@ The following video illustrates that `Customer.dal` is an external file. A break
 ![Debugger.](media/DebuggingAL.gif)
 
 For more information about **Go to Definition**, see [AL Code Navigation](devenv-al-code-navigation.md). 
+
+### Conditional breakpoints
+
+You can also set a condition on a breakpoint and if the condition evaluates as true, then code execution breaks at the breakpoint. For more information, see [Setting conditional breakpoints](devenv-debugging-conditional-breakpoints.md).
 
 ## Break on errors
 
@@ -138,10 +142,9 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 > [!NOTE]  
 > For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics. These statistics are gathered and then displayed in the debugger, like whether long running SQL statements or SQL statements are shown. Check the server configuration if you don't see the insights that you expect in the debugger. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
+## Debugging web services
 
-## <a name="DebugWS"></a>Debugging web services
-
-It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from Postman or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
+It's possible to debug code executed from web service endpoints, both pages and codeunits exposed as OData/SOAP, and API pages/queries. To do so, simply set the `breakOnNext` setting to `WebServiceClient` and trigger the web service endpoint from an API explorer tool or your web service client code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
 
 ## NonDebuggable attribute
 
@@ -151,10 +154,31 @@ The ability to debug certain methods and/or variables can be restricted. For mor
 
 You can use Microsoft Entra ID as the authentication mechanism for [!INCLUDE[prod_short](includes/prod_short.md)] on-premises or containers. For more information, see [Microsoft Entra authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
 
-## See Also
+## Troubleshooting your debugging setup
 
-[Attach and Debug Next](devenv-attach-debug-next.md)  
+This section provides some tips and tricks for working with and troubleshooting your debugging setup.
+
+### Debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019
+
+To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This step requires a server restart.
+
+### Firewall settings for on-premises environments (port 7049)
+
+To use the development environment and debugger for on-premises environments, you must make sure that port `7049` (the default port for the debugger) is open. The port can be changed with the server setting ``DeveloperServicesPort``.
+
+### Debug an online environment with an Embed app published in it
+
+To be able to debug an online environment with an Embed app published in it, make sure to specify the `applicationFamily` parameter in your launch.json file. You must define the application family for your Embed app during onboarding. 
+
+### Launching debug sessions to on-premises environments
+
+To be able to debug sessions in an on-premises environment, make sure to specify the `usePublicURLFromServer` parameter in your launch.json file. For more information, see [Publish to local server settings (launch.json)](devenv-json-launch-file.md#publish-to-local-server-settings-launchjson)
+
+
+## See also
+
+[Attach and debug next](devenv-attach-debug-next.md)  
 [Snapshot debugging](devenv-snapshot-debugging.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[JSON Files](devenv-json-files.md)  
-[AL Code Navigation](devenv-al-code-navigation.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[JSON files](devenv-json-files.md)  
+[AL code navigation](devenv-al-code-navigation.md)  

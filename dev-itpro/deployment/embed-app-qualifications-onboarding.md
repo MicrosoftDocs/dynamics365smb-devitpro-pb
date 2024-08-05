@@ -2,13 +2,10 @@
 title: "Embed App Qualification and Onboarding of partners"
 author: jswymer
 
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Qualification and Onboarding of Partners to the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] Program

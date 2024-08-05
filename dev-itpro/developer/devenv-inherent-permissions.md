@@ -2,13 +2,10 @@
 title: "Inherent Permissions"
 description: "Description of how inherent permissions work and the InherentPermissions attribute in AL for Business Central."
 author: jswymer
-ms.custom: na
 ms.date: 02/27/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Inherent Permissions

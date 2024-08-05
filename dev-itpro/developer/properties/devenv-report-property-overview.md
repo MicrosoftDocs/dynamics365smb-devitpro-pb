@@ -1,40 +1,37 @@
 ---
-title: "Report, report data item, and report extension properties"
+title: "Report, Report Fields, and Report Extension Properties"
 description: "This topic lists properties that apply to the [report object](../devenv-report-object.md), report fields, and [report extension object](../devenv-report-ext-object.md)."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# Report, Report Dataitem, and Report Extension Properties
+# Report, Report Fields, and Report Extension Properties
 
-This topic lists properties that apply to the [report object](../devenv-report-object.md), [report dataitem](../devenv-report-dataset.md) , and [report extension object](../devenv-report-ext-object.md).
+This topic lists properties that apply to the [report object](../devenv-report-object.md), report fields, and [report extension object](../devenv-report-ext-object.md).
 
-## Report Object Properties
+## Object Properties
 
 The following properties all apply to the Report object, only some of these properties can be set for a Report extension object as specified below. This list is sorted alphabetically by property name. For Report properties sorted by method on a Report, see [Properties](devenv-properties.md).
 
 |**Property Name**|**Extensible**|**Applies to**|
 |-----------|------------|----------|
-|[AccessByPermission Property](devenv-accessbypermission-property.md)| | -Table Field <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Custom Action <br />  -Page <br />  -Report <br /> |
+|[AccessByPermission Property](devenv-accessbypermission-property.md)| | -Table Field <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Custom Action <br />  -Page File Upload Action <br />  -Page <br />  -Report <br /> |
 |[AdditionalSearchTerms Property](devenv-additionalsearchterms-property.md)| True| -Page <br />  -Report <br /> |
 |[AdditionalSearchTermsML Property](devenv-additionalsearchtermsml-property.md)| True| -Page <br />  -Report <br /> |
 |[AllowScheduling Property](devenv-allowscheduling-property.md)| | -Report <br /> |
-|[ApplicationArea Property](devenv-applicationarea-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Custom Action <br />  -Page User Control <br />  -Page <br />  -Report <br /> |
+|[ApplicationArea Property](devenv-applicationarea-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action <br />  -Page Custom Action <br />  -Page File Upload Action <br />  -Page User Control <br />  -Page <br />  -Report <br /> |
 |[AutoCalcField Property](devenv-autocalcfield-property.md)| | -Xml Port Field Attribute <br />  -Xml Port Field Element <br />  -Report Column <br /> |
 |[AutoFormatExpression Property](devenv-autoformatexpression-property.md)| | -Table Field <br />  -Page Field <br />  -Report Column <br /> |
 |[AutoFormatType Property](devenv-autoformattype-property.md)| | -Table Field <br />  -Page Field <br />  -Report Column <br /> |
 |[CalcFields Property](devenv-calcfields-property.md)| | -Xml Port Table Element <br />  -Report Data Item <br /> |
-|[Caption Property](devenv-caption-property.md)| True| -Table <br />  -Table Field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report Column <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page View <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
-|[CaptionML Property](devenv-captionml-property.md)| True| -Table <br />  -Table Field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report Column <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page View <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
+|[Caption Property](devenv-caption-property.md)| True| -Table <br />  -Table Field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report Column <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page View <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
+|[CaptionML Property](devenv-captionml-property.md)| True| -Table <br />  -Table Field <br />  -Page Field <br />  -Field Group <br />  -Page <br />  -Request Page <br />  -Page Label <br />  -Page Group <br />  -Page Part <br />  -Page System Part <br />  -Page Action <br />  -Page Action Separator <br />  -Page Action Group <br />  -Xml Port <br />  -Report <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report Column <br />  -Enum Value <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Page View <br />  -Report Layout <br />  -Profile <br />  -Enum Type <br />  -Permission Set <br /> |
 |[DataAccessIntent Property](devenv-dataaccessintent-property.md)| | -Page <br />  -Report <br />  -Query <br /> |
 |[DataItemLinkReference Property](devenv-dataitemlinkreference-property.md)| | -Report Data Item <br /> |
 |[DataItemTableView Property](devenv-dataitemtableview-property.md)| | -Report Data Item <br /> |
@@ -58,9 +55,9 @@ The following properties all apply to the Report object, only some of these prop
 |[MaximumDocumentCount Property](devenv-maximumdocumentcount-property.md)| | -Report <br /> |
 |[MaxIteration Property](devenv-maxiteration-property.md)| | -Report Data Item <br /> |
 |[MimeType Property](devenv-mimetype-property.md)| | -Report Layout <br /> |
-|[ObsoleteReason Property](devenv-obsoletereason-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Table <br />  -Table Field <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page Field <br />  -Page Action Area <br />  -Page Area <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
-|[ObsoleteState Property](devenv-obsoletestate-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Table <br />  -Table Field <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page Field <br />  -Page Action Area <br />  -Page Area <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
-|[ObsoleteTag Property](devenv-obsoletetag-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Table <br />  -Table Field <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page Field <br />  -Page Action Area <br />  -Page Area <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
+|[ObsoleteReason Property](devenv-obsoletereason-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Page File Upload Action <br />  -Table <br />  -Table Field <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page Field <br />  -Page Action Area <br />  -Page Area <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
+|[ObsoleteState Property](devenv-obsoletestate-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Page File Upload Action <br />  -Table <br />  -Table Field <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page Field <br />  -Page Action Area <br />  -Page Area <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
+|[ObsoleteTag Property](devenv-obsoletetag-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Page File Upload Action <br />  -Table <br />  -Table Field <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page Field <br />  -Page Action Area <br />  -Page Area <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
 |[OptionCaption Property](devenv-optioncaption-property.md)| True| -Table Field <br />  -Page Field <br />  -Report Column <br /> |
 |[OptionCaptionML Property](devenv-optioncaptionml-property.md)| True| -Table Field <br />  -Page Field <br />  -Report Column <br /> |
 |[PaperSourceDefaultPage Property](devenv-papersourcedefaultpage-property.md)| | -Report <br /> |
@@ -87,10 +84,6 @@ The following properties all apply to the Report object, only some of these prop
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
 ## See Also  
-[Report datatype (AL language reference)](../methods-auto/report/report-data-type.md)   
-[Report object properties (AL language reference)](devenv-report-properties.md)   
-[Report overview](../devenv-reports.md)   
-[Getting started with AL](../devenv-get-started.md)  
-[Developing extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

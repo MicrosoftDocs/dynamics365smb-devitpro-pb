@@ -4,10 +4,10 @@ description: Describes the partial records capability in Business Central.
 ms.author: jswymer
 ms.custom: bap-template
 ms.date: 09/27/2023
-ms.reviewer: na
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Using partial records
 
@@ -43,7 +43,7 @@ A record instance that has been previously loaded with fields can be reset to a 
 The following code shows a way to load only a single field from the **Item** table for computing the arithmetic mean.
 
 ```AL
-procedure ComputeArithmeticMean(): Decimal;
+procedure ComputeArithmeticMean(): Decimal
 var
     Item: Record Item;
     SumTotal: Decimal;

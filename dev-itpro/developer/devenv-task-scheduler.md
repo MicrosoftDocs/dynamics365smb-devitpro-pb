@@ -1,10 +1,9 @@
 ---
 title: Task scheduler
 description: Learn about scheduled tasks and how the task scheduler works.
-ms.custom: na
 ms.date: 12/18/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
@@ -166,7 +165,7 @@ The session runs by using the same user/credentials that are used when calling A
 
 ## Operational limits for the task scheduler
 
-The [!INCLUDE[prod_short](includes/prod_short.md)] service has limits on how long time a background session can run and how many tasks your can run in parallel with the task scheduler. 
+The [!INCLUDE[prod_short](includes/prod_short.md)] service has limits on how long time a background session can run and how many tasks you can run in parallel with the task scheduler. The background sessions that are started to process scheduled tasks don't have the same concurrency limit as those started by other methods.
 
 For more information, see [Asynchronous task limits](../administration/operational-limits-online.md#Task).
 

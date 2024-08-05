@@ -2,11 +2,10 @@
 title: Upgrading Customized C/AL Application to Microsoft Base Application for version 21
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 21.
 ms.topic: article
-ms.service: dynamics365-business-central
 author: jswymer
 ms.author: jswymer
 ms.date: 03/05/2022
-
+ms.reviewer: jswymer
 ---
 
 # Upgrading Customized C/AL Application to Microsoft Base Application version 21

@@ -1,11 +1,7 @@
 ---
 title: Test pages
 description: This article explains the Test pages, their purpose and use.
-ms.custom: na
 ms.date: 08/12/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 7f7961ce-7256-43e9-9dc5-7fd93e65ee3a
 caps.latest.revision: 32

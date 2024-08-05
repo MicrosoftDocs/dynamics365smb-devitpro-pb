@@ -2,12 +2,9 @@
 title: "Performance Profiler overview"
 description: Describes how to use the Performance Profiler page in Business Central to troubleshoot slow processes.
 ms.author: bholtorf
-ms.custom: na
 ms.date: 05/25/2023
-ms.reviewer: solsen
+ms.reviewer: bholtorf
 ms.search.forms: 24
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ---

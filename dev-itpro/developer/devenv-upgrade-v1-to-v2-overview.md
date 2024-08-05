@@ -2,13 +2,10 @@
 title: "Converting Extensions V1 to V2 Overview"
 description: "Overview of the converting of extensions."
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Converting Extensions V1 to Extensions V2

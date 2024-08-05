@@ -3,11 +3,10 @@ title: customerPaymentJournal resource type
 description: A customer payment journal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # customerPaymentJournal resource type
@@ -35,7 +34,6 @@ Represents a customer payment journal in [!INCLUDE[prod_short](../../../includes
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[account](dynamics_account.md)|account |Gets the account of the customerPaymentJournal.|
 |[customerPayments](dynamics_customerpayment.md)|customerPayments |Gets the customerpayments of the customerPaymentJournal.|
 
 ## Properties

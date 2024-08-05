@@ -1,11 +1,10 @@
 ---
 title: "Monitoring SQL Database Deadlocks"
 description: Read about how you can configure Business Central on-premises to log deadlocks that occur in the SQL database.
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -128,7 +127,7 @@ Deadlock event log entries have the event ID 705 and task category 33 (Telemetry
 |AL ObjectType|Specifies the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] object in AL that ran the transaction, such as a page or report.|
 |AL ObjectNumber|Specifies the ID of the object that was run.|
 |AL ScopeName|Specifies the AL function that ran the transaction that caused the event.|
-|SQL Server deadlock XML report|Includes the deadlock report that was recieved from SQL Server. For more information, see [Analyze Deadlocks](/sql/tools/sql-server-profiler/analyze-deadlocks-with-sql-server-profiler).|
+|SQL Server deadlock XML report|Includes the deadlock report that was received from SQL Server. For more information, see [Analyze Deadlocks](/sql/tools/sql-server-profiler/analyze-deadlocks-with-sql-server-profiler).|
 
 **Note:**  The system cannot record information about AL code that was executed on a different  [!INCLUDE[server](../developer/includes/server.md)]. Therefore, the three attributes *AL ObjectType*, *AL ObjectNumber* and *AL ScopeName* might be empty in a given event log entry.
 

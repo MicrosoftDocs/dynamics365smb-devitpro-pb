@@ -2,13 +2,10 @@
 title: "InherentPermissions Attribute"
 description: "Specifies the permissions assigned to the scope of the method."
 ms.author: solsen
-ms.custom: na
 ms.date: 10/18/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -51,6 +48,10 @@ Specifies the scope of the permissions that are assigned (Entitlements, Permissi
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+For information about the `<permission value>` syntax, refer to [permissions values](../properties/devenv-permissions-property.md#values) or [permissions on objects](../devenv-permissions-on-database-objects.md#permissions-on-objects).
+
 ## Example 
 
 ```AL
@@ -59,6 +60,9 @@ Specifies the scope of the permissions that are assigned (Entitlements, Permissi
 
 > [!NOTE]  
 > Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
+
+> [!NOTE]
+> You can use inherent permissions only for objects within the same extension.
 
 ## See Also  
 [Get Started with AL](../devenv-get-started.md)  

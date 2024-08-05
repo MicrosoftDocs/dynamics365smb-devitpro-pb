@@ -1,18 +1,15 @@
 ---
-title: "Subscribing to events"
-description: Designing event subscribers in Dynamics 365 Business Central. 
-ms.custom: na
-ms.date: 02/27/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Subscribing to events
+description: Designing event subscribers in AL for Business Central. 
+ms.custom: bap-template
+ms.date: 04/18/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
  
 # Subscribing to events
 
-To handle events, you design event subscribers. Event subscribers determine what actions to take in response to an event that has been raised. An event subscriber is a method that listens for a specific event that is raised by an event publisher. The event subscriber includes code that defines the business logic to handle the event. When the published event is raised, the event subscriber is called and its code is run.  
+To handle events, you design event subscribers. Event subscribers determine what actions to take in response to an event that is raised. An event subscriber is a method that listens for a specific event that is raised by an event publisher. The event subscriber includes code that defines the business logic to handle the event. When the published event is raised, the event subscriber is called and its code is run.  
 
 Subscribing to an event tells the runtime that the subscriber method must be called whenever the publisher method is run, either by code (as with business and integration events) or by the system (as with trigger events). The runtime establishes the link between an event raised by the publisher and its subscribers, by looking for event subscriber methods.  
 
@@ -23,7 +20,7 @@ There can be multiple subscribers to the same event from various locations in th
 
 ## Creating an event subscriber method  
 
-You create an event subscriber method just like other methods except that you specify properties that set up the subscription to an event publisher. The procedure is slightly different for database and page trigger events than business and integration events. Business and integration events are raised by event publisher methods in application code. Trigger events are predefined system events that are raised automatically on tables and pages.  
+You create an event subscriber method just like other methods except that you specify properties that set up the subscription to an event publisher. The procedure is slightly different for database and page trigger events than for business and integration events. Business and integration events are raised by event publisher methods in application code. Trigger events are predefined system events that are raised automatically on tables and pages.  
 
 For an explanation about the different types, see [Event Types](devenv-event-types.md).  
 
@@ -39,7 +36,7 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
 
 3. Add code to the method for handling the event. 
 
-4. Decorate the event subscriber method with the [EventSubscriber attribute](attributes/devenv-eventsubscriber-attribute.md).
+4. Decorate the event subscriber method with the [EventSubscriber attribute](attributes/devenv-eventsubscriber-attribute.md). See the following example code for the syntax.  
 
     ```AL
     [EventSubscriber(ObjectType::<Event Publisher Object Type>, <Event Publisher Object>, '<Published Event Name>', '<Published Event Element Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
@@ -57,18 +54,18 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
     |`<SkipOnMissingPermission>`|Set to `true` to skip the event subscriber method call if the user doesn't have the correct permissions the event subscriber codeunit. If `false`, an error is thrown and the code execution stops. `false` is the default.  |yes|
    
     > [!TIP]  
-    > There are a couple of things that can make defining an event subscriber method easier. You can use the `teventsub` snippet to get started. Then, typing the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Space</kbd> displays IntelliSense to help you fill the attribute arguments and discover which events are available. Or, use the <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>E</kbd> keyboard shortcut to look up the event you want to subscribe to and insert the code.
+    > There are a couple of things that can make defining an event subscriber method easier. You can use the `teventsub` snippet to get started. Then, typing the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Space</kbd> displays IntelliSense to help you fill the attribute arguments and discover, which events are available. Or, use the <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>E</kbd> keyboard shortcut to look up the event you want to subscribe to and insert the code.
 
 5. Optionally, set the codeunit's **EventSubscriberInstance** property to specify how the event subscriber method will be bound to the instance of this codeunit.
 
-    For more information, see [EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md).
+    For more information, see the [EventSubscriberInstance property](properties/devenv-eventsubscriberinstance-property.md).
 
 ## Example 1
 
 This example creates the codeunit **50101 MySubscribers** to subscribe to an event that has been published by the event publisher method called `OnAddressLineChanged` in the codeunit **50100 MyPublishers**. The event is raised by a change to the **Address** field on page **21 Customer Card**. This example assumes:
 
-- The codeunit **50100 MyPublishers** with the event publisher method `OnAddressLineChanged` already exists. For an example, see [Publishing Event Example](devenv-publishing-events.md#example).
-- The code for raising the `OnAddressLineChanged` event has been added to the **Customer Card** page.  For an example, see [Raising Event Example](devenv-raising-events.md#example).
+- The codeunit **50100 MyPublishers** with the event publisher method `OnAddressLineChanged` already exists. For an example, see [Publishing event example](devenv-publishing-events.md#example).
+- The code for raising the `OnAddressLineChanged` event has been added to the **Customer Card** page. For an example, see [Raising event example](devenv-raising-events.md#example).
 
 The following code creates a codeunit called **50101 MySubscribers** that includes an event subscriber method, called `CheckAddressLineOnAddressLineChanged`. The method includes code for handling the published event.
 
@@ -78,7 +75,7 @@ codeunit 50101 MySubscribers
     EventSubscriberInstance = StaticAutomatic;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
-    procedure CheckAddressLineOnAddressLineChanged(line : Text[100]);
+    procedure CheckAddressLineOnAddressLineChanged(line : Text[100])
     begin
         if (StrPos(line, '+') > 0) then begin
             Message('Can''t use a plus sign (+) in the address [' + line + ']');
@@ -88,7 +85,7 @@ codeunit 50101 MySubscribers
 ```
 
 > [!NOTE]  
-> This example is part of a larger, simple scenario where when users change the address of a customer on the page **21 Customer Card**, you want to check that the address does not include a plus sign (+). If it does, you want to return a message to the user. For a description of this scenario and all the code involved, see [Event Example](devenv-events-example.md).
+> This example is part of a larger, simple scenario where when users change the address of a customer on the page **21 Customer Card**, you want to check that the address doesn't include a plus sign (+). If it does, you want to return a message to the user. For a description of this scenario and all the code involved, see [Event example](devenv-events-example.md).
 
 ## Example 2
 
@@ -109,11 +106,11 @@ codeunit 50101 MySubscribers
 }
 ```
 
-## See Also
+## See also
 
-[Publishing Events](devenv-publishing-events.md)   
-[Raising Events](devenv-raising-events.md)   
-[Event Types](devenv-event-types.md)   
+[Publishing events](devenv-publishing-events.md)   
+[Raising events](devenv-raising-events.md)   
+[Event types](devenv-event-types.md)   
 [Events in AL](devenv-events-in-al.md)  
-[EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md)  
-[EventSubscriber Attribute](attributes/devenv-eventsubscriber-attribute.md)  
+[EventSubscriberInstance property](properties/devenv-eventsubscriberinstance-property.md)  
+[EventSubscriber attribute](attributes/devenv-eventsubscriber-attribute.md)  

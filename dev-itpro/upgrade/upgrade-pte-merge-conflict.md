@@ -1,14 +1,11 @@
 ---
 title: Upgrading Per-Tenant Extensions that conflicts with other extensions
 description: This article describes how to upgrade a Per-Tenant Extension that contains table or a table field that conflicts with another extension in Dynamics 365 Business Central.
-ms.custom: na
 ms.date: 10/25/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Upgrading Per-Tenant Extensions that Conflicts with Other Extensions

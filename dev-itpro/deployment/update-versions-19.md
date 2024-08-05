@@ -4,10 +4,12 @@ description: "Learn about the updates for Dynamics 365 Business Central 2021 Rel
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 04/05/2023
-ms.custom: bap-template
+ms.date: 04/16/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Dynamics 365 Business Central On-Premises 2021 Release Wave 2 Updates
@@ -32,7 +34,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 |[5024401](https://support.microsoft.com/help/5024401)|Update 19.17 |March 2023 |Application Build 19.17.53613</br>Platform Build 19.0.53551|
 |[5023399](https://support.microsoft.com/help/5023399)|Update 19.16 |February 2023 |Application Build 19.16.52583</br>Platform Build 19.0.52477|
 |[5022712](https://support.microsoft.com/help/5022712)|Update 19.15 |January 2023 |Application Build 19.15.51441</br>Platform Build 19.0.51354|
-|[5021670](https://support.microsoft.com/help/5021670)|Update 19.14 |December 2022 |Application Build 19.14.49970</br>Platform Build 19.0.49925|
+|[5021670](https://support.microsoft.com/en-us/topic/update-19-14-for-microsoft-dynamics-365-business-central-on-premises-2021-release-wave-2-application-build-19-14-49970-platform-build-19-0-49925-cf433106-f01b-4a06-930b-cffff1cf89bf)|Update 19.14 |December 2022 |Application Build 19.14.49970</br>Platform Build 19.0.49925|
 |[5021003](https://support.microsoft.com/help/5021003)|Update 19.13 |November 2022 |Application Build 19.13.48486</br>Platform Build 19.0.48446|
 |[5019240](https://support.microsoft.com/help/5019240)|Update 19.12 |October 2022 |Application Build 19.12.46992</br>Platform Build 19.0.46978|
 |[5017794](https://support.microsoft.com/help/5017794) |Update 19.11 |September 2022 |Application Build 19.11.45555</br>Platform Build 19.0.45529|
@@ -57,5 +59,5 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Countries/Regions and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
-[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
+[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)

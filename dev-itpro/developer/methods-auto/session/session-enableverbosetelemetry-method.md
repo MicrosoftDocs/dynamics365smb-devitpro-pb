@@ -2,13 +2,10 @@
 title: "Session.EnableVerboseTelemetry(Boolean, Duration) Method"
 description: "Temporarily enable verbose telemetry on the current session."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/05/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -31,6 +28,7 @@ Temporarily enable verbose telemetry on the current session.
 *EnableFullALFunctionTracing*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether to enable method tracing.  
+
 *Duration*  
 &emsp;Type: [Duration](../duration/duration-data-type.md)  
 Specifies the amount of time, in milliseconds, that verbose telemetry is enabled on the session. When the time is exceeded, system specified telemetry level is used again. The maximum value is 3600000, one hour.  

@@ -1,13 +1,8 @@
 ---
 title: "Integration Concepts and Terminology"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2018"
 ---
 # Integration Concepts and Terminology
 The integration of [!INCLUDE[crm_md](includes/crm_md.md)] and [!INCLUDE[navnow_md](includes/navnow_md.md)] involves the integration between entities in [!INCLUDE[crm_md](includes/crm_md.md)], such as accounts, and equivalent record types \(tables\) in [!INCLUDE[navnow_md](includes/navnow_md.md)], such as customers. Integrating [!INCLUDE[crm_md](includes/crm_md.md)] involves several components and objects, along with business logic, working together. This article describes some of the main participants in integration.

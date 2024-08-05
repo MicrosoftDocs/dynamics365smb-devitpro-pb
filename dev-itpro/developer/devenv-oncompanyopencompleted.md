@@ -2,14 +2,11 @@
 title: Moving from OnCompanyOpen
 description: Explains why you should use OnAfterLogin instead of OnCompanyOpen.
 author: jswymer
-ms.custom: na
 ms.date: 05/23/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: dynamics365-business-central
+
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Moving from OnCompanyOpen
 

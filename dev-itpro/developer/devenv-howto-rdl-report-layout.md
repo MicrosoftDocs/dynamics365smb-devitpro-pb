@@ -1,17 +1,14 @@
 ---
-title: "Creating an RDL Layout Report"
-description: "Describes the steps involved in creating a report that uses an RDL layout."
+title: Creating an RDL layout report
+description: Describes the steps involved in creating a report that uses an RDL layout.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 12/01/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
  
-# Creating an RDL Layout Report
+# Creating an RDL layout report
 
 When you create a new report for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two things you have to consider; defining the report dataset of data items and columns, and then designing the report layout. These steps show you how to create a simple report based on an RDL layout. For more information about the report object, see [Report Object](devenv-report-object.md). And to learn how to extend an existing report, see [Report Extension Object](devenv-report-ext-object.md). 
 
@@ -84,12 +81,12 @@ You'll now see the generated report in preview mode.
 
 ## Report labels in RDL layouts
 
-[!INCLUDE [report_labels](includes/include-report-labels.md)]
+Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
 
-> [!NOTE]  
-> Report labels defined in the report object are available as parameters in RDL. 
+Report labels defined in the *Labels* section of the report object and captions included on dataitem columns using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available as parameters in RDL. 
 
-For more information about labels, see [Working with labels](devenv-using-labels.md).
+For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
+
 
 ## Formatting data in RDL layouts
 

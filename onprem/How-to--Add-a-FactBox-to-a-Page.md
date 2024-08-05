@@ -1,13 +1,8 @@
 ---
 title: Add a FactBox to a Page
 description: A Factbox displays additions pages, charts, or system parts, which can be added in the Factbox area for a page in Microsoft Dynamics NAV.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 276615ab-ab79-4f65-99e0-bf05cb3a86b0
 caps.latest.revision: 14
 ---

@@ -1,8 +1,9 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
 ms.date: 06/30/2022
-ms.author: edupont
+ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]

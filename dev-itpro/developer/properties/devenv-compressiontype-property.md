@@ -2,13 +2,10 @@
 title: "CompressionType Property"
 description: "Specifies the compression type used."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -25,10 +22,10 @@ Specifies the compression type used.
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Unspecified**|runtime version 1.0|Use the compression type that is specified externally on the table, for example, in SQL Server.|
-|**None**|runtime version 1.0|Do not use compression on the table.|
-|**Row**|runtime version 1.0|Compress the table on a row-level.|
-|**Page**|runtime version 1.0|Compress the table on a page-level. This includes row, prefix, and dictionary compression.|
+|**Unspecified**|runtime version 3.0|Use the compression type that is specified externally on the table, for example, in SQL Server.|
+|**None**|runtime version 3.0|Do not use compression on the table.|
+|**Row**|runtime version 3.0|Compress the table on a row-level.|
+|**Page**|runtime version 3.0|Compress the table on a page-level. This includes row, prefix, and dictionary compression.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

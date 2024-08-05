@@ -1,12 +1,7 @@
 ---
 title: "Test Pages"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 171287a7-a5e4-46f1-93a6-e0383fbc770e
 caps.latest.revision: 3
 ---

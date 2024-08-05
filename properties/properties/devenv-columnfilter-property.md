@@ -1,10 +1,7 @@
 ---
 title: "ColumnFilter Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d8dc69ca-ba8f-4f9b-82fd-4976e26817f2
 caps.latest.revision: 14

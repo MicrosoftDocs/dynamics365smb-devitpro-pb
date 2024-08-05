@@ -3,15 +3,13 @@ title: Business Central Admin Center API - Environment Database Export
 description: Learn about the Business Central administration center API for exporting an environment database.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 01/03/2023
 ---
 
-# Environment Database Export
+# Business Central Admin Center API - Environment Database Export
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -26,7 +24,7 @@ To use the `exports` endpoint, you must have the **D365 BACKUP/RESTORE** permiss
 Gets information about the number of exports allowed per month and the amount remaining.
 
 ```
-GET /admin/v2.19/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
+GET /admin/v2.21/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
 
 ### Route Parameters
@@ -58,7 +56,7 @@ Starts the export of an environment's database to a provided Azure storage accou
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/exports/applications/{applicationFamily}/environments/{environmentName}
+POST /admin/v2.21/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -92,7 +90,7 @@ POST /admin/v2.19/exports/applications/{applicationFamily}/environments/{environ
 Gets information about the exports that have been done within a provided time frame, for which environment, and by which user.
 
 ```
-POST /admin/v2.19/exports/history?start={startTime}&end={endTime}
+POST /admin/v2.21/exports/history?start={startTime}&end={endTime}
 ```
 
 ### Query parameters

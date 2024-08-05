@@ -2,13 +2,10 @@
 title: "PerTenantExtensionCop Analyzer"
 description: "PerTenantExtensionCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,6 +38,8 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |[PTE0019](pertenantextensioncop-pte0019.md)|Permission set extensions should not include wildcard permissions.|Extensibility|Warning|
 |[PTE0020](pertenantextensioncop-pte0020.md)|Use the 'application' property instead of specifying an explicit dependency on Base Application.|Extensibility|Warning|
 |[PTE0021](pertenantextensioncop-pte0021.md)|Defining reserved namespaces is not allowed.|Configuration|Error|
+|[PTE0022](pertenantextensioncop-pte0022.md)|The member ID should be within the allowed range|Extensibility|Warning|
+|[PTE0023](pertenantextensioncop-pte0023.md)|The enum ordinal value should be within the allowed range|Extensibility|Info|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

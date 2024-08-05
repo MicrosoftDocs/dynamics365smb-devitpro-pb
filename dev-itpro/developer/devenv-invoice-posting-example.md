@@ -1,13 +1,8 @@
 ---
 title: "Extending G/L entry aggregations when posting invoices"
 description: Explore an example of how to extend the posting process for sales, purchase, and service documents.
-ms.custom: na
 ms.date: 01/03/2024
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: bholtorf
 ---
 

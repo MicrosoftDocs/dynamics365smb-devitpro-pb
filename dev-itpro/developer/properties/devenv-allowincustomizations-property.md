@@ -2,13 +2,10 @@
 title: "AllowInCustomizations Property"
 description: "Specifies whether this table field can be used as source expression for new page fields in page customizations."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/25/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -25,8 +22,8 @@ Specifies whether this table field can be used as source expression for new page
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Always**|runtime version 1.0|The field can be used as source expression for new page fields in page customizations.|
-|**Never**|runtime version 1.0|The field cannot be used as source expression for new page fields in page customizations.|
+|**Always**|runtime version 12.0|The field can be used as source expression for new page fields in page customizations.|
+|**Never**|runtime version 12.0|The field cannot be used as source expression for new page fields in page customizations.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

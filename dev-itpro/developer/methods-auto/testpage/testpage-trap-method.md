@@ -2,13 +2,10 @@
 title: "TestPage.Trap() Method"
 description: "Traps the next test page that is invoked and assigns it to the test page variable."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +20,6 @@ Traps the next test page that is invoked and assigns it to the test page variabl
 ```AL
  TestPage.Trap()
 ```
-
 ## Parameters
 *TestPage*  
 &emsp;Type: [TestPage](testpage-data-type.md)  

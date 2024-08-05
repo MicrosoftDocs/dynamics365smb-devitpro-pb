@@ -4,17 +4,17 @@ description: Namespaces in AL provide a way to organize your code into logical u
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
-ms.collection: 
-ms.date: 08/28/2023
+ms.date: 03/06/2024
 ms.custom: bap-template
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Namespaces in AL
 
 [!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
-Namespaces are used to organize code into logical groups and hierarchies, which can prevent naming conflicts that can occur when libraries are combined. Namespaces ensure uniqueness in code names and allow reuse of names in different contexts, and provide structure for the code base, making it easier to navigate and understand. Namespaces are used in many programming languages and with [!INCLUDE [prod_short](includes/prod_short.md)] they're available with AL.
+Namespaces are used to organize code into logical groups and hierarchies, which can prevent naming conflicts that can occur when libraries are combined. Namespaces ensure uniqueness in code names and allow reuse of names in different contexts, and provide structure for the code base, making it easier to navigate and understand. Namespaces are used in many programming languages and with [!INCLUDE [prod_short](includes/prod_short.md)] they're available with AL. 
 
 An AL file declares a namespace at the beginning of the file, and all objects in the code file belong to that namespace. A given object can only belong to one namespace, but the same namespace can be used for multiple AL files, which means for multiple objects and for multiple modules. There are two compiler rules that apply to namespaces and object naming specifically:
 
@@ -31,11 +31,11 @@ An AL file declares a namespace at the beginning of the file, and all objects in
 To declare a namespace in AL, you must use the `namespace` keyword followed by the name of the namespace. Some best practices for namespace keywords are:
 
 - A namespace should be globally unique. 
-- The first part of a namespace is tied to the developing organization or an individual, followed by a product name, and logical grouping within the product, such as for example, `namespace BigCompany.SmartProduct.SomeProductArea`. This supports the two purposes of namespaces - object name unique and logical grouping of related functionality.
-- Use a stable and non-version specific name for the namespace. Changing the name of a namespace is a breaking change.
+- The first part of a namespace is tied to the developing organization or an individual, followed by a product name, and logical grouping within the product, such as, for example, `namespace BigCompany.SmartProduct.SomeProductArea`. This supports the two purposes of namespaces - object name unique and logical grouping of related functionality.
+- Use a stable and nonversion specific name for the namespace. Changing the name of a namespace is a breaking change.
 - The namespace name can be any valid AL identifier, and it can contain dots to indicate a hierarchy of namespaces. 
  
-The following example shows the syntax of a namespace declaration. All of the objects declared in the code file belong to the namespace `MyNamespace`. The syntax shown below is for illustrational purposes, as it's still a best practice to separate objects into different files, and to use the same name for the file as the object. For more information, see [Best Practices for AL code](../compliance/apptest-bestpracticesforalcode.md).
+The following example shows the syntax of a namespace declaration. All of the objects declared in the code file belong to the namespace `MyNamespace`. The syntax shown in the following example is for illustrational purposes, as it's still a best practice to separate objects into different files, and to use the same name for the file as the object. For more information, see [Best Practices for AL code](../compliance/apptest-bestpracticesforalcode.md).
 
 ```al
 namespace MyNamespace;
@@ -61,8 +61,11 @@ codeunit 10 MyCode
 {
     ...
 }
-
 ```
+
+> [!TIP]
+> With runtime 13, you can use the `editor.foldingImportsByDefault` setting to collapse `using` statements. When set to `true` it collapses all of the `using` statements when a file is opened. Use the **User Settings** or **Workspace Settings** to set the value to `true`.
+
 
 ## Scope
 
@@ -77,7 +80,7 @@ namespace MyNamespace.MyNestedNamespace;
 
 ```
 
-In the example, the fully qualified name of the namespace is `MyNamespace.MyNestedNamespace`. To refer to objects in the `MyNestedNamespace` namespace, you must then use the fully qualified name, or the `using` directive. So, to be able to access objects that are declared in the MyNestedNamespace, include the following statement in your code
+In the example, the fully qualified name of the namespace is `MyNamespace.MyNestedNamespace`. To refer to objects in the `MyNestedNamespace` namespace, you must then use the fully qualified name, or the `using` directive. So, to be able to access objects that are declared in the MyNestedNamespace, include the following statement in your code.
 
 ```al
 using MyNamespace.MyNestedNamespace

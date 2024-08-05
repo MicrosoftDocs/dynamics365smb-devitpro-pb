@@ -2,13 +2,10 @@
 title: "AppSourceCop Warning AS0098"
 description: "An affix is needed."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/21/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -34,6 +31,7 @@ The following object members are validated by AS0098:
 - Data Items defined in Report Extension objects
 - Columns defined in Report Extension objects
 - Labels defined in Report Extension objects
+- Keys defined in Table Extension objects on table extension fields
 
 Other AL objects and object members are validated by [AS0011](appsourcecop-as0011.md).
 

@@ -2,13 +2,10 @@
 title: Report extension object
 description: The report extension object in AL for Business Central allows you to create an extension of an existing report.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 12/01/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Report extension object

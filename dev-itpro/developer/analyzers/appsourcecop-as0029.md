@@ -2,13 +2,10 @@
 title: "AppSourceCop Error AS0029"
 description: "Pages and PageExtensions that have been published must not be deleted."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -30,7 +27,7 @@ It is not allowed to remove pages which have been published. This will break dep
 
 ## How to fix this diagnostic?
 
-Revert the change by adding the page back and marking it as [Obsolete](../properties/devenv-obsoletestate-property.md). Marking a *page extension* as obsolete is not currently supported, which means that undoing the deletion at this point is the only available fix.
+Revert the change by adding the page back and marking it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 
 ## Examples of errors for dependent extensions
 

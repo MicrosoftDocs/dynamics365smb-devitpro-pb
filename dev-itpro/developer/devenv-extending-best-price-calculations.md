@@ -1,11 +1,7 @@
 ---
 title: "Extending Price Calculations"
 description: "How you extend the price calculations in Dynamics 365 Business Central."
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ---
@@ -288,7 +284,7 @@ table 7005 "Price Source"
     var
         PriceSourceInterface: Interface "Price Source";
 
-    procedure LookupNo() Result: Boolean;
+    procedure LookupNo() Result: Boolean
     begin
         PriceSourceInterface := "Source Type";
         Result := PriceSourceInterface.IsLookupOK(Rec);
@@ -526,7 +522,7 @@ codeunit 50002 "Price Asset - Fixed Asset" implements "Price Asset"
         exit(false)
     end;
 
-    procedure IsAssetNoRequired(): Boolean;
+    procedure IsAssetNoRequired(): Boolean
     begin
         exit(true)
     end;
@@ -535,7 +531,7 @@ codeunit 50002 "Price Asset - Fixed Asset" implements "Price Asset"
     begin
     end;
 
-    procedure FilterPriceLines(PriceAsset: Record "Price Asset"; var PriceListLine: Record "Price List Line") Result: Boolean;
+    procedure FilterPriceLines(PriceAsset: Record "Price Asset"; var PriceListLine: Record "Price List Line") Result: Boolean
     begin
         PriceListLine.SetRange("Asset Type", PriceAsset."Asset Type");
         PriceListLine.SetRange("Asset No.", PriceAsset."Asset No.");
@@ -672,7 +668,7 @@ codeunit 50003 "Price Source - Location" implements "Price Source"
         exit(true);
     end;
 
-    procedure IsSourceNoAllowed() Result: Boolean;
+    procedure IsSourceNoAllowed() Result: Boolean
     begin
         Result := true;
     end;
@@ -696,7 +692,7 @@ codeunit 50003 "Price Source - Location" implements "Price Source"
             Error(ParentErr);
     end;
 
-    procedure GetGroupNo(PriceSource: Record "Price Source"): Code[20];
+    procedure GetGroupNo(PriceSource: Record "Price Source"): Code[20]
     begin
         exit(PriceSource."Source No.");
     end;

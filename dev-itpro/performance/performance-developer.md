@@ -1,10 +1,9 @@
 ---
 title: Performance article for developers
 description: Provides information for developers to help improve performance in Business Central
-ms.custom: bap-tremplate
+ms.custom: bap-template
 ms.date: 10/11/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 author: KennieNP
 ms.author: kepontop
@@ -294,10 +293,11 @@ Read more here:
 ### How to reduce database locking
 Sometimes, performance issues aren't due to resource starvation, but due to processes waiting for other processes to release locks on shared objects. When AL code needs to update data, it's customary to take a database lock on it to ensure that other processes don't change the data at the same time. 
 
-Using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent calls to the database until the transaction is committed, not only on the table that the record variable is defined on, but on all calls to the database. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
+Using the `Record.LockTable` method applies the `WITH (updlock)` hint on all subsequent read calls to the database against the table of the record called on, until the transaction is committed. For example, if `Record.LockTable` is called on an `Item` record, all reads against that table will be done with the `UPDLOCK` hint, not just the variable it was called on. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
 
 Some tips for avoiding locking:
 
+- Enable [tri-state locking](../developer/devenv-tri-state-locking.md) to avoid reads-after-writes taking locks.
 -	Read setup information before starting write transactions
 -	If possible, limit the time you hold locks
 -	If possible, limit transaction size (divide into smaller operations that can be committed)

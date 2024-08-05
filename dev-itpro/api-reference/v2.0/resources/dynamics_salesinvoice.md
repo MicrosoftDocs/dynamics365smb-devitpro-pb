@@ -3,11 +3,10 @@ title: salesInvoice resource type
 description: A sales invoice object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesInvoice resource type
@@ -32,7 +31,7 @@ Represents a sales invoice in [!INCLUDE[prod_short](../../../includes/prod_short
 
 ## Bound Actions
 
-The salesInvoice resource type offers a bound action called `cancelAndSend` which cancels and sends the corresponding salesInvoice batch.
+The salesInvoice resource type offers a bound action called `cancelAndSend` which cancel and sends the corresponding salesInvoice batch.
 This is illustrated in the following example:
 `CANCELANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.cancelAndSend`
 
@@ -73,7 +72,6 @@ The response has no content; the response code is 204.
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[customer](dynamics_customer.md)|customer |Gets the customer of the salesInvoice.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the salesInvoice.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the salesInvoice.|
 |[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the salesInvoice.|
 |[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the salesInvoice.|
@@ -82,7 +80,7 @@ The response has no content; the response code is 204.
 |[salesInvoiceLines](dynamics_salesinvoiceline.md)|salesInvoiceLines |Gets the salesinvoicelines of the salesInvoice.|
 |[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the salesInvoice.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the salesInvoice.|
-|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesInvoice.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the salesInvoice.|
 
 ## Properties
 
@@ -93,7 +91,8 @@ The response has no content; the response code is 204.
 |externalDocumentNumber|string|Specifies an external document number for the sales invoice.|
 |invoiceDate|date|The invoice date .|
 |postingDate|date|The date that the sales invoice   is posted.|
-|dueDate|date|The date the sales invoice is due.|
+|dueDate|date|T he date the sales invoice is due.|
+|promisedPayDate|date||
 |customerPurchaseOrderReference|string|The customer purchase order reference for the invoice.|
 |customerId|GUID|The unique ID of customer.  |
 |customerNumber|string|The customer's number.|
@@ -130,6 +129,8 @@ The response has no content; the response code is 204.
 |paymentTermsId|GUID|Specifies which payment term the sales invoice uses.|
 |shipmentMethodId|GUID|Specifies which shipment method the sales invoice uses.|
 |salesperson|string|The salesperson code for the sales invoice.|
+|disputeStatusId|GUID||
+|disputeStatus|string||
 |pricesIncludeTax|boolean|Specifies whether the prices include Tax or not. Read-Only.|
 |remainingAmount|decimal|The amount including VAT.|
 |discountAmount|decimal|The sales invoice discount amount.|
@@ -155,6 +156,7 @@ Here is a JSON representation of the salesInvoice resource.
     "invoiceDate": "date",
     "postingDate": "date",
     "dueDate": "date",
+    "promisedPayDate": "date",
     "customerPurchaseOrderReference": "string",
     "customerId": "GUID",
     "customerNumber": "string",
@@ -191,6 +193,8 @@ Here is a JSON representation of the salesInvoice resource.
     "paymentTermsId": "GUID",
     "shipmentMethodId": "GUID",
     "salesperson": "string",
+    "disputeStatusId": "GUID",
+    "disputeStatus": "string",
     "pricesIncludeTax": "boolean",
     "remainingAmount": "decimal",
     "discountAmount": "decimal",

@@ -2,13 +2,10 @@
 title: "TestPage Data Type"
 description: "Represents a variable type that can be used to test Page Application Objects."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -50,7 +47,7 @@ The following methods are available on instances of the TestPage data type.
 |[OpenView()](testpage-openview-method.md)|Opens a test page in view mode.|
 |[Prev()](testpage-prev-method.md)|Sets the current row of the test page as the previous row in the data set.|
 |[Previous()](testpage-previous-method.md)|Sets the current row of the test page as the previous row in the data set.|
-|[RunPageBackgroundTask(Integer [, var Dictionary of [Text, Text]] [, Boolean])](testpage-runpagebackgroundtask-method.md)|Runs the page background task codeunit in the current session. Note that by default, no triggers are invoked at this point.|
+|[RunPageBackgroundTask(Integer [, var Dictionary of [Text, Text]] [, Boolean])](testpage-runpagebackgroundtask-method.md)|Runs the page background task codeunit in a child session and waits for its completion. Note that page background task completion triggers are not invoked by default; see parameter "RunCompletionTriggers".|
 |[Trap()](testpage-trap-method.md)|Traps the next test page that is invoked and assigns it to the test page variable.|
 |[ValidationErrorCount()](testpage-validationerrorcount-method.md)|Gets the number of validation errors that occurred on the test page.|
 |[View()](testpage-view-method.md)|Gets the View system action.|

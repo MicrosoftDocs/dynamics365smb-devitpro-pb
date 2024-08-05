@@ -1,12 +1,11 @@
 ---
 title: Resources for partners
-description: "Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central."
-author: a-emniel
-ms.custom: na
-ms.date: 04/04/2023
-ms.reviewer: na
+description: Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
+author: jswymer
+ms.date: 06/20/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
-ms.author: solsen
+ms.author: jswymer
 ---
 
 # Welcome to Business Central | Resources for Partners
@@ -41,8 +40,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://community.dynamics.com/forums/thread/)
-- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://cloudblogs.microsoft.com/dynamics365/it/)
-- Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
+- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://www.microsoft.com/dynamics-365/blog/it-professional/)
+- Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://www.microsoft.com/dynamics-365/blog/business-leader/)
 - Join the [!INCLUDE [prod_short](../includes/prod_short.md)] development group on Viva Engage (Yammer): [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))
 
 ## Partner readiness and programs
@@ -52,7 +51,6 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Browse all [!INCLUDE [prod_short](../includes/prod_short.md)] learning courses: [aka.ms/BCLearn](https://aka.ms/BCLearn)
 - Supported countries/regions, regions, and languages: [aka.ms/BCCountries](https://aka.ms/BCCountries)
 - Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))
-
 - Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [aka.ms/ISVDevCenter](https://aka.ms/ISVDevCenter)
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
 - Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
@@ -77,6 +75,24 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
 - Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
 - Download the keyboard shortcut PDF: [aka.ms/BCKeyboardShortcutsPDF](https://aka.ms/BCKeyboardShortcutsPDF)
+
+## AI innovation and Copilot
+
+### Copilot in Business Central 101
+
+- Copilot in Business Central playlist on YouTube: [aka.ms/BC-Copilot-Videos​](https://aka.ms/BC-Copilot-Videos)
+- Copilot in Business Central - showcase video: [aka.ms/BC-AI-Sizzle](https://aka.ms/BC-AI-Sizzle)
+- Business Central pitch deck: [aka.ms/BC-GTM](https://aka.ms/BC-GTM)
+- Copilot in Business Central blog: [aka.ms/bc-ai​](https://aka.ms/bc-ai)
+- Copilot in Business Central Q&A : [About Copilot](/dynamics365/business-central/copilot-overview)
+- Dynamics Communities interview with Mike Morton: [dynamicscommunities.com](https://dynamicscommunities.com/ug/copilot-ug/microsofts-mike-morton-explains-new-copilot-capabilities-inside-business-central/)
+- Learn about Copilot for Dynamics 365: [Copilot for Dynamics 365](/microsoft-cloud/dev/copilot/copilot-for-dynamics365)
+
+### Copilot in Business Central for developers
+
+- How-to guide for developing AI/Copilot solutions for Business Central: [Developing generative AI experiences​](../ai-build-experience-overview.md)
+- Developer resources for Copilot in Business Central: [aka.ms/BCStartCodingWithAILearn](https://aka.ms/BCStartCodingWithAILearn)
+- Business Central under the hood episode 1 - Developing AI: [Business Central under the hood series (on YouTube)​](https://www.youtube.com/watch?v=jdevJbGgB-k&t=792s)
 
 ## Reporting and business intelligence  
 

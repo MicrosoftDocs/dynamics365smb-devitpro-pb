@@ -1,12 +1,7 @@
 ---
 title: "Import Worksheet"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 823b5ae0-a87d-4b5b-9ea7-f57be064c598
 caps.latest.revision: 12
 ---

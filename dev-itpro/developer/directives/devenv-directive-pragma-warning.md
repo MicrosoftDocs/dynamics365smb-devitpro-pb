@@ -1,16 +1,14 @@
 ---
-title: "Pragma Warning Directive in AL"
-description: "The pragma warning instruction on the pragma directive in AL"
+title: Pragma Warning directive in AL
+description: The pragma warning instruction on the pragma directive in AL.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/19/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Pragma Warning Directive
+# Pragma Warning directive in AL
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
@@ -55,10 +53,10 @@ table 50110 MyTable
 }
 ```
 
-## See Also
+## See also
 
 [Development in AL](../devenv-dev-overview.md)  
-[AL Development Environment](../devenv-reference-overview.md)  
-[Pragma Directive in AL](devenv-directive-pragma.md)  
+[AL development environment](../devenv-reference-overview.md)  
+[Pragma directive in AL](devenv-directive-pragma.md)  
 [Conditional directives](devenv-directives-in-al.md#conditional-directives)  
-[Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md)
+[Deprecating explicit and implicit with statements](../devenv-deprecating-with-statements-overview.md)

@@ -1,12 +1,7 @@
 ---
 title: "Database"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: d264a2df-c391-4ddc-9014-b601493ba1a1
 caps.latest.revision: 8
 ---

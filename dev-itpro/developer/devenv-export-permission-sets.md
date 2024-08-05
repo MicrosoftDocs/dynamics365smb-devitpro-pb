@@ -2,13 +2,10 @@
 title: "Exporting Permission Sets to XML"
 description: Export permission sets to XML for Dynamics 365 for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Exporting Permission Sets to XML

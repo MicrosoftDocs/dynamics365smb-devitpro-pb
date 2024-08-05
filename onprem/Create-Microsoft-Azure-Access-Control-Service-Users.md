@@ -1,12 +1,7 @@
 ---
 title: "Create Microsoft Azure Access Control Service Users"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 6a36517e-3f9d-44aa-875d-39a77ab24bc7
 caps.latest.revision: 8
 ---

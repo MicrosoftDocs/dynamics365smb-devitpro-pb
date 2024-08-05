@@ -3,12 +3,11 @@ title: Analyzing configuration package lifecycle trace telemetry
 description: Learn about the telemetry for configuration package telemetry for Azure Application Insights.  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 12/20/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing configuration package telemetry

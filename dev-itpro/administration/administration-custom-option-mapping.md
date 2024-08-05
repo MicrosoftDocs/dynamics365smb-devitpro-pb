@@ -2,8 +2,7 @@
 title: Customizing option mappings with Microsoft Dataverse
 description: Learn how to customize option mappings in an integration with Microsoft Dataverse.
 author: bholtorf
-ms.custom: na
-ms.reviewer: solsen
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.author: bholtorf
 ms.date: 04/01/2021
@@ -621,7 +620,11 @@ Users can now manually synchronize industry group records in [!INCLUDE[prod_shor
 > [!TIP]  
 > To learn how to schedule the synchronization by using a job queue entry, explore the code on the **RecreateJobQueueEntryFromIntTableMapping** method in codeunit **CDS Setup Defaults** (ID 7204). The code shows how it's called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
 
-[Overview](/dynamics365/business-central/admin-common-data-service)  
+
+## See Also
+
+[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
+[Overview - Integrate with Microsoft Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)  
 [Setting Up User Accounts for Integrating with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-setting-up-integration-with-dynamics-sales)  
 [Set Up a Connection to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection)  
 [Synchronizing Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-synchronizing-business-central-and-sales)  

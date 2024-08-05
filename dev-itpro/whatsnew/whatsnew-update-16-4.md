@@ -1,13 +1,12 @@
 ---
 title: "Update 16.4 for Microsoft Dynamics 365 Business Central 2020 Release Wave 1"
 ms.author: solsen
-ms.custom: na
-ms.date: 12/21/2023
+description: Find out what's changed with update 16.4.
+ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-author: ManuelaHochstrasser
+author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 16.4 for Microsoft Dynamics 365 Business Central online 2020 release wave 1
@@ -16,7 +15,7 @@ Would you like to know what has changed in update 16.4? Below you find an overvi
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/4563415).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4549687).
 
 ## Release plan
 

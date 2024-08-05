@@ -3,11 +3,11 @@ title: Set Up Instant Flows
 description: Learn how users can run instant flows from inside Business Central online due to the integration with Power Automate.
 author: jswymer
 ms.author: jswymer
-ms.reviewer: na
-ms.service: dynamics365-business-central
+
 ms.topic: how-to 
 ms.date: 05/23/2023
-ms.custom: bap-template 
+ms.custom: bap-template
+ms.reviewer: jswymer
 ---
 # Create instant flows
 

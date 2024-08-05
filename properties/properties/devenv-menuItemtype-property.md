@@ -1,10 +1,7 @@
 ---
 title: "MenuItemType Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ead172ab-f80a-4a5e-94dd-5539653d2cc6
 caps.latest.revision: 5

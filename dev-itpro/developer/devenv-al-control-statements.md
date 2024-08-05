@@ -1,11 +1,7 @@
 ---
 title: AL control statements
 description: Compound, conditional, and repetitive control statements in AL for Business Central.
-ms.custom: na
-ms.date: 03/15/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/01/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.collection: get-started
@@ -197,8 +193,8 @@ case <Expression> of
 
     <Value set n>:  
         <Statement n>;  
-[else  
-    <Statement n+1>]  
+    [else  
+        <Statement n+1>]  
 end;  
 ```  
 
@@ -259,8 +255,8 @@ case Number of
         message('1, 2, or 9.');  
     10..100:  
         message('In the range from 10 to 100.');  
-else  
-    message('Neither 1, 2, 9, nor in the range from 10 to 100.');  
+    else  
+        message('Neither 1, 2, 9, nor in the range from 10 to 100.');  
 end;  
 ```
 
@@ -275,8 +271,8 @@ case MyCode of
         message('This message is not displayed.');   
     'def':  
         message('This message is not displayed.');  
-else  
-    message('The value set does not match the expression.');
+    else  
+        message('The value set does not match the expression.');
 end;
 ```
 
@@ -566,9 +562,9 @@ var
     I : integer
 ```
 
-## See Also
+## See also
 
 [Programming in AL](devenv-programming-in-al.md)  
-[AL Simple Statements](devenv-al-simple-statements.md)  
+[AL simple statements](devenv-al-simple-statements.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
-[AL Essential Methods](devenv-essential-al-methods.md)
+[AL essential methods](devenv-essential-al-methods.md)

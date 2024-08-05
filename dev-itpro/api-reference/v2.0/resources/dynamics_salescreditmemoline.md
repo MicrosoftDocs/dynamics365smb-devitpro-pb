@@ -3,11 +3,10 @@ title: salesCreditMemoLine resource type
 description: A sales credit memo line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesCreditMemoLine resource type
@@ -55,6 +54,7 @@ Represents a sales credit memo line in [!INCLUDE[prod_short](../../../includes/p
 |lineType|NAV.invoiceLineAggLineType|The type of the sales credit memo line. It can be "Comment", "Account", "Item", "Resource" Value", "Fixed Asset" or "Charge".|
 |lineObjectNumber|string|The number of the object (account or item) of the sales credit memo line.|
 |description|string|Specifies the description of the sales credit memo line.|
+|description2|string||
 |unitOfMeasureId|GUID|The ID of unit of measure for the sales credit memo line.|
 |unitOfMeasureCode|string|The code of unit of measure for the sales credit memo line.|
 |unitPrice|decimal|Specifies the price for one unit of the item in the specified sales credit memo line.|
@@ -90,6 +90,7 @@ Here is a JSON representation of the salesCreditMemoLine resource.
     "lineType": "NAV.invoiceLineAggLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureId": "GUID",
     "unitOfMeasureCode": "string",
     "unitPrice": "decimal",

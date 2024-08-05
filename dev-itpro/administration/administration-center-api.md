@@ -3,12 +3,10 @@ title: Business Central Administration Center API
 description: Get introduced to the Business Central administration center API.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 04/24/2023
+ms.date: 06/21/2024
 ---
 
 # The Business Central Admin Center API
@@ -37,7 +35,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API supports authentication using Microsoft Entra apps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Register an application for [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] in your Microsoft Entra tenant.
+1. Register an application for [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] in your Microsoft Entra tenant.
 
     Follow the general guidelines at [Register your application with your Microsoft Entra tenant](/azure/active-directory/active-directory-app-registration).
 
@@ -50,7 +48,11 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
     |Redirect URI|Optional. You can grant consent from the Azure portal if left empty.|
 
     When completed, an **Overview** displays in the portal for the new application.
-3. Create a client secret for the registered application as follows:
+
+  > [!NOTE]
+  > Copy the **Application (client) ID** of the registered app. You'll need this later. You can get this value from the **Overview** page.
+
+1. Create a client secret for the registered application as follows:
 
     1. Select **Certificates & secrets** > **New client secret**.
     2. Add a description, select a duration, and select **Add**.
@@ -60,44 +62,48 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
 
     For the latest guidelines about adding client secrets in Microsoft Entra ID, see [Add credentials](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
 
-  > [!NOTE]
-  > Copy the **Application (client) ID** of the registered app. You'll need this later. You can get this value from the **Overview** page.
+   > [!IMPORTANT]  
+   > The sample code below uses a client secret to demonstrate how to obtain an access token. For production scenarios it is not recommended to authenticate using a client secret. Refer to the [identity platform security checklist](/entra/identity-platform/identity-platform-integration-checklist#security) for the latest recommendations on secure authentication using Entra apps.
 
-4. Grant the registered application **AdminCenter.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]** API as follows:
+1. Grant the registered application **AdminCenter.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]** API as follows:
 
     1. Select **API permissions** > **Add a permission** > **Microsoft APIs**.
-    2. Select **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]**.
-    3. Select **Application permissions**, select **AdminCenter.ReadWrite.All**, then select **Add permissions**.
+    1. Select **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]**.
+    1. Select **Application permissions**, select **AdminCenter.ReadWrite.All**, then select **Add permissions**.
   
     > [!NOTE]
     > If you intent to use the same Microsoft Entra app with the Automation API and Business Central Web Services you can also grant **API.ReadWrite.All** and **Automation.ReadWrite.All** permissions. Learn more [here](automation-apis-using-s2s-authentication.md).
 
-5. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**. This step isn't required if you'll be granting consent from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. It is possible to grant consent from this page only for your own current tenant. This works for single-tenant apps, but for multi-tenant apps you have to grant consent for each tenant from that tenant's [Microsoft Entra admin center](https://entra.microsoft.com/), [Azure portal](https://portal.azure.com/) or the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
-6. Go to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and navigate to the 'Authorized Microsoft Entra apps' page. Paste the **Application (client) ID** of your app in the form to authorize an app.
-7. If not already completed in step 5 you can grant consent for your app from the 'Authorized Microsoft Entra apps' page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+1. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**. This step isn't required if you'll be granting consent from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. It is possible to grant consent from this page only for your own current tenant. This works for single-tenant apps, but for multi-tenant apps you have to grant consent for each tenant from that tenant's [Microsoft Entra admin center](https://entra.microsoft.com/), [Azure portal](https://portal.azure.com/) or the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
+1. Go to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and navigate to the 'Authorized Microsoft Entra apps' page. Paste the **Application (client) ID** of your app in the form to authorize an app.
+1. If not already completed in step 5 you can grant consent for your app from the 'Authorized Microsoft Entra apps' page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
   
-    > [!NOTE]
-    > There might be a short delay until the `Granted` status is visible in the Business Central admin center after refreshing. To grant consent, you must have a Microsoft Entra role assigned that allows for management of application registrations in the tenant, such as the [Cloud Application Administrator](https://learn.microsoft.com/azure/active-directory/roles/permissions-reference#cloud-application-administrator) role. The Dynamics 365 Administrator role that grants access to the [!INCLUDE[prodadmincenter] does not allow users to grant consent to applications in the tenant.
-8. (optional) Some operations in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API require that the app has a permissions assigned in the environment in addition to the authorization in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Follow the instructions in Task 2 [here](automation-apis-using-s2s-authentication.md) to assign permissions.
+   > [!NOTE]
+   > There might be a short delay until the `Granted` status is visible in the Business Central admin center after refreshing. To grant consent, you must have a Microsoft Entra role assigned that allows for management of application registrations in the tenant, such as the [Cloud Application Administrator](/azure/active-directory/roles/permissions-reference#cloud-application-administrator) role. The Dynamics 365 Administrator role that grants access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] does not allow users to grant consent to applications in the tenant.
+1. (optional) Some operations in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API require that the app has a permissions assigned in the environment in addition to the authorization in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Follow the instructions in Task 2 [here](automation-apis-using-s2s-authentication.md) to assign permissions.
 
-    > [!NOTE]
-    > Learn more about permissions required for App Management operations [here](administration-center-api_app_management.md) and learn more about permissions required for Database Exports [here](administration-center-api_environment_database_export.md).
+   > [!NOTE]
+   > Learn more about permissions required for App Management operations [here](administration-center-api_app_management.md) and learn more about permissions required for Database Exports [here](administration-center-api_environment_database_export.md).
 
 ### Getting an Access Token with Client Credentials Flow
+
 HTTP requests sent to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API must include the Authorization HTTP header, and the value must be an access token.
 
 The following examples show how to obtain such a token using PowerShell. Using C# is straightforward.
 
 PowerShell example without prompt:
- ```powershell
-   $cred = [Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential]::new($AppId, $AppSecret)
-   $ctx = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.windows.net/$TenantName")
-   $token = $ctx.AcquireTokenAsync("996def3d-b36c-4153-8607-a6fd3c01b89f", $cred).GetAwaiter().GetResult().AccessToken
+
+```powershell
+$cred = [Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential]::new($AppId, $AppSecret)
+$ctx = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.windows.net/$TenantName")
+$token = $ctx.AcquireTokenAsync("996def3d-b36c-4153-8607-a6fd3c01b89f", $cred).GetAwaiter().GetResult().AccessToken
  ```
-  > [!NOTE]
-  > In the PowerShell example above, the guid specified to acquire the token (996def3d-b36c-4153-8607-a6fd3c01b89f) is the resource ID of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The example gets the client credential using the app secret, but the recommended way would be to rely on X.509 certificates.
+
+> [!NOTE]
+> In the PowerShell example above, the guid specified to acquire the token (996def3d-b36c-4153-8607-a6fd3c01b89f) is the resource ID of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The example gets the client credential using the app secret, but the recommended way would be to rely on X.509 certificates.
 
 ### Calling [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API OAuth2Flows
+
 After the Microsoft Entra application has been set up, authorized in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and granted admin consent, you're ready to make API calls.
 
 The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code. Using the Rest Client makes it easy to see which HTTP calls are made both against [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Microsoft Entra ID. Any HTTP client can be used to create the requests below. Or you can choose any library, like MSAL.
@@ -135,13 +141,13 @@ Authorization: {{accessHeader}}
 Sign in to the [Azure portal](https://portal.azure.com) to register your client application as an app and enable it to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
 1. Follow the instructions in the [Integrating applications with Microsoft Entra ID](/azure/active-directory/develop/active-directory-integrating-applications) article. The next steps elaborate on some of the specific settings you must enable.
-2. Give the application a **Name**, such as **Business Central Web Service Client**.
-3. For **Application type**, choose either **Native** or **Web app/API** depending on your scenario. The code examples below assume **Native**.
-4. Choose a **Redirect URI**. If it's a **Native** app, you can choose for example: **BusinessCentralWebServiceClient://auth**. If it's a **Web app/API** app, set the value to the actual URL of the web application.
-5. During the registration of the app, make sure to go to **Settings**, and then under **API ACCESS**, choose **Required permissions**. Choose **Add**, and then under **Add API Access**, choose **Select an API** and search for the **Dynamics 365 Business Central** option. Choose **Dynamics 365 Business Central**, select **Delegated permissions**, and then choose the **Done** button.  
-    > [!NOTE]  
-    > If **Dynamics 365 Business Central** doesn't show up in search, it's because the tenant doesn't have any knowledge of Dynamics 365 Business Central. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for Dynamics 365 Business Central with a user from the directory.
-6. Make a note of both the **Application ID** and the **Redirect URI**. They'll be needed later.
+1. Give the application a **Name**, such as **Business Central Web Service Client**.
+1. For **Application type**, choose either **Native** or **Web app/API** depending on your scenario. The code examples below assume **Native**.
+1. Choose a **Redirect URI**. If it's a **Native** app, you can choose for example: **BusinessCentralWebServiceClient://auth**. If it's a **Web app/API** app, set the value to the actual URL of the web application.
+1. During the registration of the app, make sure to go to **Settings**, and then under **API ACCESS**, choose **Required permissions**. Choose **Add**, and then under **Add API Access**, choose **Select an API** and search for the **Dynamics 365 Business Central** option. Choose **Dynamics 365 Business Central**, select **Delegated permissions**, and then choose the **Done** button.  
+   > [!NOTE]  
+   > If **Dynamics 365 Business Central** doesn't show up in search, it's because the tenant doesn't have any knowledge of Dynamics 365 Business Central. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for Dynamics 365 Business Central with a user from the directory.
+1. Make a note of both the **Application ID** and the **Redirect URI**. They'll be needed later.
 
 ### Getting an access token with Authorization Code Flow
 
@@ -158,7 +164,7 @@ $scopes = [String[]]@("https://api.businesscentral.dynamics.com/.default")
 $client = [Microsoft.Identity.Client.PublicClientApplicationBuilder]::Create($applicationId).WithAuthority($authority).Build()
 $accessToken = $client.AcquireTokenByUsernamePassword($Scopes, $cred.UserName, $cred.Password).ExecuteAsync().GetAwaiter().GetResult().AccessToken
 ```
- 
+
 PowerShell example with prompt:
 
 ```powershell
@@ -172,7 +178,7 @@ $accessToken = $client.AcquireTokenInteractive($scopes).ExecuteAsync().GetAwaite
 
 If an error occurs during the execution of an API method, it will respond back with an error object. While the specifics of any error will vary from endpoint to endpoint and by the error, the error object returned should adhere to the following structure. When an error occurs that doesn't fit this structure, it typically indicates that an error occurred in sending the request or during authentication of the request. For example, it could be that the API hasn't yet received the request. 
 
-**Error Response Object:** 
+**Error Response Object:**
 
 ```
 {
@@ -194,9 +200,9 @@ If an error occurs during the execution of an API method, it will respond back w
 
 **General unhandled errors**
 
-All unknown and unhandled errors that aren't covered by the lists above will use the error code: **Unknown** 
+All unknown and unhandled errors that aren't covered by the lists above will use the error code: **Unknown**
 
-## See Also
+## See also
 
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

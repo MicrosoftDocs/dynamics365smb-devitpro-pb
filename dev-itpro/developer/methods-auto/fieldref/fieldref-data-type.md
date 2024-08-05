@@ -2,13 +2,10 @@
 title: "FieldRef Data Type"
 description: "Identifies a field in a table and gives you access to this field."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -70,8 +67,6 @@ The following methods are available on instances of the FieldRef data type.
 |[TestField(Decimal, ErrorInfo)](fieldref-testfield-decimal-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Guid)](fieldref-testfield-guid-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Guid, ErrorInfo)](fieldref-testfield-guid-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
-|[TestField(Text)](fieldref-testfield-string-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
-|[TestField(Text, ErrorInfo)](fieldref-testfield-string-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Label)](fieldref-testfield-label-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Label, ErrorInfo)](fieldref-testfield-label-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Text)](fieldref-testfield-text-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|

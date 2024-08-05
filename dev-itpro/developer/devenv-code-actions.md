@@ -1,17 +1,17 @@
 ---
-title: "AL code actions"
+title: AL code actions
 description: Code actions can help you fix code issues either for your project alone or for the entire workspace.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 08/28/2023
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # AL code actions
 
-[!INCLUDE [2022_releasewave2_changed](../includes/2022_releasewave2_changed.md)]
+[!INCLUDE [2024_releasewave1_changed](../includes/2024_releasewave1_changed.md)]
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
@@ -25,13 +25,14 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the following code a
 - Make method local
 - Use parenthesis for method call fix for instance, document, project, or workspace.
 - Fix explicit `with` statements
-- Fix implicit with statements
+- Fix implicit `with` statements
 - Fix old report layout and replace with `rendering` layout section
 - Fix for [AW0013](analyzers\uicop-aw0013.md)
 - Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar. Fix for instance, document, project, or workspace. For more information, see [Code action for actions](devenv-code-actions.md#code-actions-for-promoted-actions).
 - Set the default value for `ApplicationArea` on a page or a report level and remove all duplicates on field level. This code action can be applied to an object, a document, a project, or a workspace.
 - Convert existing event parameter in event subscribers from string literal to new identifier format. Fix event subscriber on the specific EventSubscriber instance, the active file, the active project, or the whole workspace. This makes it easy and controllable to opt in to the new syntax.
 - Insert `using` statement for a missing namespace. Fix for instance, document, project, or workspace.
+- Move the tooltip from page controls to table fields or clean them up from the page in case of duplicates. For more information, see [Tooltip property](properties/devenv-tooltip-property.md).
 
 ## Examples
 
@@ -61,14 +62,14 @@ Use the code action to convert *legacy* syntax for promoted actions to the `acti
 
 Alternatively:
 
-1. Open the Settings Page, <kbd>Ctrl</kbd>+<kbd>,</kbd> and choose either **User Settings** or **Workspace Settings** depending on which scope you want the code actions to apply to.
+1. Open the settings page, <kbd>Ctrl</kbd>+<kbd>,</kbd> and choose either **User Settings** or **Workspace Settings** depending on which scope you want the code actions to apply to.
 2. Navigate to **Extensions > AL Language extension configuration**.
 3. Choose the **Enable Code Actions** checkbox. You've now enabled code actions on your project.
 
 ## See Also
 
-[AL Development Environment](devenv-reference-overview.md)  
-[AL Outline View](devenv-al-outline-view.md)  
+[AL development environment](devenv-reference-overview.md)  
+[AL outline view](devenv-al-outline-view.md)  
 [AL Formatter](devenv-al-formatter.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
 

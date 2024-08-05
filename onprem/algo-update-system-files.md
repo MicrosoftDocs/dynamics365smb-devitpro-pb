@@ -2,11 +2,10 @@
 title: "Update AL-Go system files"
 description: "Updating the AL-Go system files for your project for Business Central."
 author: freddyk
-ms.custom: na
 ms.date: 04/28/2023
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.service: dynamics-365-business-central
 ms.author: solsen
 ---
 

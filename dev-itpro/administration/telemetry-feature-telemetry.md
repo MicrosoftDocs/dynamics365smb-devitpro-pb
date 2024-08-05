@@ -3,12 +3,11 @@ title: Feature telemetry
 description: Learn about the telemetry that you can emit from features in Business Central.
 author: bholtorf
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 07/13/2023
 ms.author: bholtorf
+ms.reviewer: bholtorf
 ---
 
 # Feature telemetry
@@ -24,6 +23,7 @@ The Telemetry AL module simplifies the way you monitor the health of your app an
 If you want to get feature telemetry to the app/extension telemetry pipeline, you must add a codeunit that implements the "Telemetry Logger" interface. Below is a simple example on such a codeunit.
 
 ```AL
+/// <summary>
 /// Adds support for the extension to use the "Telemetry" and "Feature Telemetry" codeunits.
 /// </summary>
 codeunit 50101 "Sample Telemetry Logger" implements "Telemetry Logger"

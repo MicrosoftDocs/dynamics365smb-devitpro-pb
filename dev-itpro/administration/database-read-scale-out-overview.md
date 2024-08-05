@@ -1,11 +1,9 @@
 ---
 title: Using Read Scale-Out for Better Performance 
 description: Learn how to use read scale-out in Business Central to improve performance
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
 ms.topic: overview
 author: jswymer
 ---

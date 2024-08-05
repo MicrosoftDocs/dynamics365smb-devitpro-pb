@@ -2,11 +2,10 @@
 title: "Create an online development environment from Visual Studio Code"
 description: "Create an online development environment from Visual Studio Code for AL-Go for Business Central."
 author: freddyk
-ms.custom: na
 ms.date: 01/21/2022
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.service: dynamics-365-business-central
 ms.author: solsen
 ---
 

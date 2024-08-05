@@ -1,11 +1,8 @@
 ---
 title: "AutoIncrement Property"
 ms.author: solsen
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7d9e7a7a-238f-4f7f-8934-aecef8a44c24
 caps.latest.revision: 8

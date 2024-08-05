@@ -4,13 +4,12 @@ description: (v1.0) List of error codes.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 06/19/2019
+ms.devlang: al
+ms.date: 05/01/2024
+ms.custom: evergreen
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Error Codes  (v1.0)

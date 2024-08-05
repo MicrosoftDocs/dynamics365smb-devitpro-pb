@@ -2,13 +2,10 @@
 title: "AppSourceCop Error AS0107"
 description: "The access modifier of a variable that belongs to the public API cannot be changed to a value that provides less access, because it will break dependent extensions."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

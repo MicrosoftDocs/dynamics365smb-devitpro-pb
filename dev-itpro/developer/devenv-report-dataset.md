@@ -2,11 +2,9 @@
 title: Report dataset
 description: The dataset determines the data extracted to print or display the information from the database.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 01/18/2024
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -36,6 +34,13 @@ You can also extend a dataset from an existing report, to add more columns for e
 It's often useful to format data in the report dataset to reduce the complexity of the report layout. For example, if a decimal field in a table has precision of five digits, the same level of precision might not be needed in the report. Or maybe you want to format dates or currencies in a different way in the report as they appear on the page in [!INCLUDE[prod_short](./includes/prod_short.md)].
 
 For more information, see [Formatting field values in report datasets](devenv-format-report-field-data.md).
+
+
+## How to include field captions in report datasets
+
+For texts that are present as captions on table fields in dataset columns, use the [IncludeCaption](properties/devenv-includecaption-property.md) property to include them in the dataset. For more information, see [IncludeCaption property](properties/devenv-includecaption-property.md). 
+
+For more information about the use of labels in reports, see [Report labels](./devenv-report-object.md#report-labels). 
 
 
 ## Using a query in a dataset definition
@@ -212,9 +217,16 @@ var
 
 ```
 
+## Report limit - maximum number of rows
+
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. For example, there's a limit on the maximum number of rows that can be processed in a report.
+
+For more information on report limits, see [Report limits](devenv-report-object.md#report-limits).
+
 
 ## See Also
 
+[IncludeCaption property](properties/devenv-includecaption-property.md)  
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  
 [Reports Overview](devenv-reports.md)  

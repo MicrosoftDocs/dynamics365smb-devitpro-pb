@@ -1,14 +1,12 @@
 ---
 title: "Technical upgrade from version 15 to version 16" 
-ms.custom: na
-ms.date: 12/27/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 description: Upgrade from Business Central 2019 (v15) to 2020 (v16) with our comprehensive guide. Learn about prerequisites, database preparation, and post-upgrade tasks.
+ms.reviewer: jswymer
 ---
 # Technical upgrade from version 15 to version 16
 

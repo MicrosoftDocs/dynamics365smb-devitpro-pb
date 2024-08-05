@@ -1,13 +1,8 @@
 ---
 title: Assign Permission to Use About This Page
 description: Add permissions to run About This Report and view information for About This Page by adding the Zoom permission to permission set and assign users to it.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: b86e1854-7c08-42c3-b73e-f318478779a0
 caps.latest.revision: 13
 ---

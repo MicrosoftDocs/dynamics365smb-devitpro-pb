@@ -1,12 +1,7 @@
 ---
 title: "Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware, parameter count mismatch error"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ms.search.keywords: Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware, Parameter count mismatch between X-Forwarded-For and X-Forwarded-Proto
 ---

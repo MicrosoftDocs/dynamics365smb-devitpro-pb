@@ -4,11 +4,10 @@ description: As the reselling partner, help customers manage their Business Cent
 author: jswymer
 
 ms.topic: conceptual
-ms.workload: na
-ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 10/18/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Delegated Administrator Access to Business Central Online
@@ -54,7 +53,7 @@ The following tasks aren't available to the delegated administrator:
 
 - Run scheduled tasks in the job queue.  
 
-    However, <!--starting with 2021 release wave 1 (version 18),--> delegated administrators can test that the job queue can run without issues, before asking their customer to start it, by using the **Run once (foreground)** action on the **Job Queue Entry** card. This action creates a temporary non-recurrent copy of this job and runs it once in the foreground. You can then call it as many times as you need before you hand it over to your customer so that they can start it as a recurrent job. After the job queue completes, it will be put in the on-hold status and can't be rescheduled.  
+   However, delegated administrators can create job queue entries and set them as ready to run. Then, a licensed user from the customer can start the job queue entry. Delegated administrators can also test that the job queue can run without issues, before asking their customer to start it, by using the **Run once (foreground)** action on the **Job Queue Entry** card. This action creates a temporary non-recurrent copy of this job and runs it once in the foreground. You can then call it as many times as you need before you hand it over to your customer so that they can start it as a recurrent job. After the job queue completes, it will be put in the on-hold status and can't be rescheduled.  
 
 - Trigger a web hook or any other application action that relies on the job queue functionality, except by using the **Run once (foreground)** action.
 
@@ -78,7 +77,7 @@ The following tasks aren't available to the delegated administrator:
 As a Microsoft customer organization, you can have multiple partners registered as your resellers. It isn't unusual for a single organization to use one partner as the delegated admin for their Microsoft 365 subscription and another for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], for example. However, as soon as the delegated administration right is granted in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center), you can't restrict partner access to a specific service only. The delegated admin access applies to all Microsoft services that your organization subscribes to.  
 
 > [!TIP]
-> If the partner has requested access to your tenant using *granular delegated admin privileges*, then you can see the relevant users in the **Users** list in [!INCLUDE [prod_short](../includes/prod_short.md)], and you can see them in the **Sign in** log in your Microsoft 365 admin center. With granular delegated admin privileges, the partner typically does not have global admin access to your tenant but only access to Dynamics 365. You will not be able to see the name of the partner user, but you can see an ID and the name of their company.
+> If the partner has requested access to your tenant using *granular delegated admin privileges*, then you can see the relevant users in the **Users** list in [!INCLUDE [prod_short](../includes/prod_short.md)], and you can see them in the **Sign in** log in your Microsoft 365 admin center. With granular delegated admin privileges, the partner typically doesn't have global access to your tenant but only access to Dynamics 365. You will not be able to see the name of the partner user, but you can see an ID and the name of their company.
 
 [!INCLUDE [admin-gdap-user](../includes/admin-gdap-user.md)]
 

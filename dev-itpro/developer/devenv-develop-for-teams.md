@@ -4,8 +4,7 @@ description: Provides an introduction to developing pages for Microsoft Teams in
 ms.custom: bap-template
 ms.date: 11/23/2022
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
-ms.topic: Overview
+ms.topic: overview
 author: jswymer
 ms.author: jswymer
 ---

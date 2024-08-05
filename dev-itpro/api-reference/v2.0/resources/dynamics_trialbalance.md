@@ -3,11 +3,10 @@ title: trialBalance resource type
 description: A trial balance object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # trialBalance resource type
@@ -40,7 +39,7 @@ Represents a trial balance in [!INCLUDE[prod_short](../../../includes/prod_short
 |:-------------------|:-------|:---------------|
 |accountId|GUID|The id of the account that the trial balance is related to. |
 |number|string|Specifies the number of the trial balance.|
-|accountType|NAV.glAccountType|The type of the account that the trial balance is related to. It can be "Posting", "Heading", "Total", "Begin Total" or "End Total". |
+|accountType|NAV.glAccountType|The type of the account that the trial balance is related to. It can be "Posting", "Heading", "Total", "Begin Total" or "End Total".|
 |display|string|The trial balance item display name.|
 |totalDebit|string|Represents total debit amount in G/L Account.|
 |totalCredit|string|Represents total credit amount in G/L Account.|

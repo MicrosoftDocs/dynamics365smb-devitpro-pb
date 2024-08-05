@@ -5,9 +5,8 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
-ms.date: 07/23/2023
+ms.date: 05/27/2024
 ms.custom: bap-template 
-ms-service: dynamics365-business-central
 ---
 
 # Run and manage data replication
@@ -16,13 +15,15 @@ This article explains how to run data replication to move data from on-premises 
 
 [!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process.md)]
 
+[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-gp.md)]
+
 ## Prerequisites
 
-You've set up cloud migration. For more information, go to [Set up data migration](migration-setup.md).
+- You set up cloud migration. For more information, go to [Set up cloud migration](migration-setup.md).
 
 ## Preparation
 
-Before you run the actual data replication, we recommend you do a test, or *diagnostics*, run. With a diagnostics run, no data from the on-premises database is migrated to the online tenant. But it allows you to identify issues and fix them before you run the actual replication to help decrease the risk of a failed migration.
+Before you run the actual data replication, we recommend you do a test, or *diagnostics*, run. With a diagnostic run, no data from the on-premises database is migrated to the online tenant. But it allows you to identify issues and fix them before you run the actual replication to help decrease the risk of a failed migration.
 
 To do a diagnostics run, complete the following steps:
 
@@ -39,8 +40,10 @@ Follow these steps replicate data to the online tenant.
 <!--This task runs the cloud migration that you set up previously, copying data from your on-premises database to your online environment.-->
 
 1. Search for and open the **Cloud Migration Management** page.
+2. On the **Cloud Migration Management** page, select one of the following actions:
 
-2. On the **Cloud Migration Management** page, select the **Run data replication** > **Yes**.
+   - **Run data replication** > **Yes** of you're migrating from Business Central on-premises.
+   - **Run Migration Now** > **Yes** of you're migrating from Dynamics GP.
 
    This step starts replicating data to the online tenant.
 3. If the data replication starts, you get a message that the cloud migration was successfully started. Select **OK** to continue.
@@ -56,12 +59,11 @@ The **Cloud Migration Management** page gives you access to details about the da
    > [!TIP]
    > [!INCLUDE [cloud-migration-telemetry](../developer/includes/cloud-migration-telemetry.md)]
 
-## Fix errors
+## Troubleshoot and fix problems
 
-If errors occur, fix them then rerun the data replication. For information about some of the most common issues, go to [Data replication troubleshooting](migration-data-replication-troubleshooting.md).
+If errors occur during data replication, fix them then rerun the data replication. For more information about some common errors, refer to the [Cloud migration troubleshooting documentation for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) in Microsoft troubleshooting documentation.
 
-When you're ready to run the data replication again, select **Run date replication**. In general, only data that has changed since the last replication is replicated. To learn more, go to [Rerunning data replication](migration-data-replication.md#rerunning-data-replication).
-
+When you're ready to run the data replication again, select **Run date replication**. In general, only data changed since the last replication is replicated. To learn more, go to [Rerunning data replication](migration-data-replication.md#rerunning-data-replication).
 
 ## Stop data replication
 
@@ -71,5 +73,17 @@ To stop the currently running data replication, select the **Abandon migration**
 
 ## Next steps
 
-- [Run data upgrade](migration-data-upgrade.md)
-- [Complete cloud migration](migration-finish.md)  
+For Business Central on-premises migration:
+
+- [Run data upgrade for Business Central on-premises](migration-data-upgrade.md)
+- [Complete  Business Central on-premises cloud migration](migration-finish.md)  
+
+For Dynamics GP migration:
+
+- [Run data upgrade for Dynamics GP](migration-data-upgrade-gp.md)
+- [Complete Dynamics GPcloud migration](migration-finish-gp.md)
+
+## See also
+
+[Dynamics GP migration to Business Central online: End-to-end overview](migrate-gp-overview.md)  
+[FAQ about migrating to Business Central online from on-premises solutions](faq-migrate-data.md)  

@@ -3,14 +3,12 @@ title: Business Central Admin Center API - Environment Settings
 description: Learn about the Business Central administration center API for setting up environments.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
-# Environment Settings
+# Business Central Admin Center API - Environment Settings
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -21,7 +19,7 @@ Allows you to manage environment-specific settings such as the AppInsights key o
 Returns the update settings for the environment.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -60,7 +58,7 @@ Returns the environment's update settings, or "null" if none exist
 Returns a list of time zones and basic information associated with them, such as daylight saving time and the current offset from Coordinated Universal Time (UTC). Time zone identifiers are the only allowed values for the `timeZoneId` parameter of the update settings.
 
 ```
-GET /admin/v2.19/applications/settings/timezones
+GET /admin/v2.21/applications/settings/timezones
 ```
  
 ### Response
@@ -88,7 +86,7 @@ Sets the update window start and end times.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -167,7 +165,7 @@ Sets the connection string or instrumentation key an environment uses for Azure 
 
 ```
 Content-Type: application/json
-PUT /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+PUT /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 ### Route Parameters
@@ -201,7 +199,7 @@ PUT /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
 Gets the Microsoft Entra group currently assigned to an environment.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
@@ -240,7 +238,7 @@ Assigns a Microsoft Entra group to an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
@@ -268,7 +266,7 @@ Returns 200 if successful, or 404 if the group doesn't exist in Microsoft Entra 
 Clears a Microsoft Entra group that is currently assigned to an environment.
 
 ```
-DELETE /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+DELETE /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
@@ -284,7 +282,7 @@ DELETE /admin/v2.19/applications/{applicationFamily}/environments/{environmentNa
 Returns a boolean value that indicates whether the environment allows access with Microsoft 365 licenses. Supported on environments of version 21.1 or later. Learn more at [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license).
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
 ```
 
 ### Route Parameters
@@ -309,7 +307,7 @@ Specifies whether users can access the environment with Microsoft 365 licenses. 
 
 ```
 Content-Type: application/json
-POST https://api.businesscentral.dynamics.com/admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
 ```
 
 ### Route Parameters
@@ -334,11 +332,11 @@ Returns 200 if successful.
 
 **INTRODUCED IN:** API version 2.19
 
-Specifies whether AppSource apps installed on the environment should be updated with every major environment update or every major and minor update. Learn more at [Manage Apps](../dev-itpro/administration/tenant-admin-center-manage-apps).
+Specifies whether AppSource apps installed on the environment should be updated with every major environment update or every major and minor update. Learn more at [Manage Apps](tenant-admin-center-manage-apps.md).
 
 ```
 Content-Type: application/json
-POST https://api.businesscentral.dynamics.com/admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/settings/appSourceAppsUpdateCadence
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/settings/appSourceAppsUpdateCadence
 ```
 
 ### Route Parameters

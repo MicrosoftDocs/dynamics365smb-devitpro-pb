@@ -1,13 +1,8 @@
 ---
 title: Configure Web Client Users Authentication
 description: Configure the installation to authenticate users who connect by using the Web Client on Windows, UserName, NavUserPassword and AccessControlService credential types.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: c9e0dd2b-1f7f-417d-a9ca-a08ef2f22d26
 caps.latest.revision: 37
 ---

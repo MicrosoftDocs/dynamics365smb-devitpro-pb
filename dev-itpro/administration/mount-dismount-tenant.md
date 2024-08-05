@@ -1,11 +1,12 @@
 ---
 title: "Mount or Dismount a Tenant on a Business Central Server Instance"
 description: Learn how to mount and dismount tenant databases on Business Central Server instances
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ---
 # Mount or Dismount a Tenant on a Business Central Server Instance

@@ -2,13 +2,10 @@
 title: "CodeCop Analyzer"
 description: "CodeCop is an analyzer that enforces the official AL Coding Guidelines."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -87,6 +84,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0231](codecop-aa0231.md)|StrSubstNo or string concatenation must not be used as a parameter in the Error method.|Design|Warning|
 |[AA0232](codecop-aa0232.md)|The FlowField of a table should be indexed.|Design|Info|
 |[AA0233](codecop-aa0233.md)|Use Get(), FindFirst() and FindLast() without Next() method.|Design|Warning|
+|[AA0234](codecop-aa0234.md)|You must write a tooltip in the Tooltip property for all fields on table objects.|Localizability|Warning|
 |[AA0235](codecop-aa0235.md)|When using 'OnInstallAppPerCompany' you should also add 'Company-Initialize'::'OnCompanyInitialize' event subscriber.|Design|Info|
 |[AA0237](codecop-aa0237.md)|The name of non-temporary variables must not be prefixed with Temp.|Readability|Warning|
 |[AA0240](codecop-aa0240.md)|Email and Phone No must not be present in any part of the source code.|Design|Warning|
@@ -97,6 +95,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0245](codecop-aa0245.md)|To avoid confusion, do not give parameters the same name as fields, methods, or actions in the same scope.|Design|Warning|
 |[AA0246](codecop-aa0246.md)|Suppressing all diagnostics is not allowed.|Design|Warning|
 |[AA0247](codecop-aa0247.md)|Use namespaces.|Design|Info|
+|[AA0248](codecop-aa0248.md)|Add 'this' qualification to improve readability.|Readability|Hidden|
 |[AA0448](codecop-aa0448.md)|You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method.|Localizability|Warning|
 |[AA0462](codecop-aa0462.md)|The CalcDate should only be used with DataFormula variables. Alternatively the string should be enclosed using the <> symbols.|Localizability|Warning|
 |[AA0470](codecop-aa0470.md)|Placeholders should have a comment explaining their content.|Localizability|Warning|

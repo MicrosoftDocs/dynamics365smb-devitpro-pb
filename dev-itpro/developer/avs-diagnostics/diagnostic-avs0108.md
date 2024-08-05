@@ -1,14 +1,10 @@
 ---
-title: "AVS Error AVS0108"
+title: AVS Error AVS0108
 description: "The following extension(s) could not be found. Upload the missing extensions and try again. {0}."
 ms.author: thpeder
-ms.custom: na
-ms.date: 02/05/2022
-ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 04/26/2024
+ms.reviewer: jswymer
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: thpeder
 ---
 
@@ -22,7 +18,7 @@ The following extension(s) could not be found. Upload the missing extensions and
 
 The app has a dependency on one or more apps that are missing. Make sure all the dependencies of the app is installed and retry the operation again.
 
-## See Also
+## See also
 
-[Get Started with AL](../devenv-get-started.md)  
+[Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

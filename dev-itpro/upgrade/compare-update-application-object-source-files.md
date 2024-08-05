@@ -1,11 +1,8 @@
 ---
 title: Compare and update application object source files
 description: Compare the different set of Dynamics NAV application objects using Windows PowerShell cmdlets and apply all or some differences to the target solution.
-ms.custom: na
-ms.date: 12/21/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 author: jswymer
 ---

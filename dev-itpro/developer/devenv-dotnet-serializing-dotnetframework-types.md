@@ -1,19 +1,14 @@
 ---
-title: "Serializing .NET Framework Types"
-description: "How to serialize .NET Framework Types"
+title: Serializing .NET framework types
+description: How to serialize .NET framework types
 author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.assetid: 60509047-8419-4b08-a391-83117489fdee
-caps.latest.revision: 17
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Serializing .NET Framework Types
+# Serializing .NET framework types
 
 In Microsoft .NET Framework, serialization is the process of converting an object into a format that can be transmitted across a network connection. Microsoft .NET Framework interoperability uses serialization for communication between client-side .NET Framework objects and server-side .NET Framework objects. When you configure DotNet variables in a [!INCLUDE[prod_long](includes/prod_long.md)] object, you can specify .NET Framework objects to target either the Business Central Windows client or [!INCLUDE[server](includes/server.md)]. In some cases, a client-side object and a server-side object must communicate and share data, such as return values and parameters. The serialization occurs when the following conditions are true:  
 
@@ -23,43 +18,48 @@ In Microsoft .NET Framework, serialization is the process of converting an objec
 
 Serialization requires that the .NET Framework types that are used by the DotNet variables are serializable. Many types in the Microsoft .NET Framework class library are already serializable. If you are using a .NET Framework type that cannot be serialized, then you must modify the type to make it serializable.  
 
-
 > [!IMPORTANT]  
->  For the [!INCLUDE[webclient](includes/webclient.md)], you cannot implement Microsoft .NET Framework interoperability objects that target the client.  
+> For the [!INCLUDE[webclient](includes/webclient.md)], you cannot implement Microsoft .NET Framework interoperability objects that target the client.  
 
-## Making a Type Serializable  
+## Making a type serializable
+
 There are two ways that you can make a .NET Framework type serializable. You can implement basic serialization by applying the [System.SerializableAttribute](/dotnet/api/system.serializableattribute) attribute to the type or you can implement custom serialization by using [System.Runtime.Serialization.ISerializable](/dotnet/api/system.runtime.serialization.iserializable) interface.  
 
-### Basic Serialization Using SerializableAttribute  
+### Basic serialization using SerializableAttribute
+
 Basic serialization uses the .NET Framework to automatically serialize an object. To implement basic serialization on a type, you decorate the type with the [SerializableAttribute](/dotnet/api/system.serializableattribute) class as shown in the following example.  
 
 
-```  
+```al
 [Serializable]  
 public class MyObject  
 {  
     code   
 }  
-```  
+```
 
 This method requires that you have access to the source code of the .NET Framework assembly.  
 
-#### Basic Serialization of Date Fields  
+#### Basic serialization of date fields
+
 You can use basic serialization only if all data fields in the type are serializable. Fields that are calculated at runtime cannot be serialized. If a field cannot be serialized, then at runtime, the serialization process will throw an exception and the AL code execution will fail. 
 
 You can exclude fields from the serialization process by decorating the field with the [System.NonSerializedAttribute](/dotnet/api/system.nonserializedattribute) class.  
 
-### Custom Serialization Using ISerializable Interface  
+### Custom serialization using ISerializable interface
+
 With custom serialization, you can create an object that controls the serialization of types in another object. This method is useful when you do not have access to the source code of the assembly that contains the .NET Framework types that you are implementing with .NET Framework interoperability. The custom object specifies which types will be serialized and how serialization will be done.  
 
 To implement custom serialization, you create a class that implements the [ISerializable](/dotnet/api/system.runtime.serialization.iserializable) interface, and decorate the class with [SerializableAttribute](/dotnet/api/system.serializableattribute). In most cases, you must also implement the [System.Runtime.Serialization.ISerializable.GetObjectData](/dotnet/api/system.runtime.serialization.iserializable.getobjectdata) method and a special constructor that is used when the source object is deserialized. You use the **GetObjectData** method to populate the [SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo) the data that is required to serialize the source object at runtime.  
 
 The common language runtime calls the constructor during deserialization to construct a replica of the source object. The constructor takes two parameters, a **SerializationInfo** type and a [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext) type. The **StreamingContext** parameter describes the source and destination of a given serialized stream.  
 
-### Custom Serialization Example  
+### Custom serialization example
+
 The following code example demonstrates a custom serialization object that implements the basic functionality that is required for compliance with the **ISerializable** interface. In the first procedure of this example, you create a .NET Framework assembly that includes a serializable type. In the second procedure, in the [!INCLUDE[prod_short](includes/prod_short.md)] development environment, you create a codeunit that includes two DotNet variables for the serializable type. You set one variable to target the Business Central Windows client and the other to target the [!INCLUDE[server](includes/server.md)]. In AL code, you add code that transfers the value for the DotNet variable on the [!INCLUDE[server](includes/server.md)] to the Business Central Windows client. You will also add code that verifies that the data transfer is successful.  
 
-##### To create the custom serialization object  
+##### To create the custom serialization object
+
 1.  In Microsoft Visual Studio, create a C\# Class Library project called *SerializationSample*.  
 
 2.  Add the following code.  
@@ -119,19 +119,20 @@ The following code example demonstrates a custom serialization object that imple
  }
 ```  
 
-3.  Build the project.  
+3. Build the project.  
 
-4.  Copy the SerializationSample.dll to the **Add-ins** folder of the Business Central Windows client and [!INCLUDE[server](includes/server.md)] installation folders.  
+4. Copy the SerializationSample.dll to the **Add-ins** folder of the Business Central Windows client and [!INCLUDE[server](includes/server.md)] installation folders.  
 
 By default, the path of the Business Central Windows client installation folder is [!INCLUDE[navnow_x86install](includes/navnow_x86install_md.md)]\\RoleTailored Client\\Add-ins.    
 
 By default, the path of the [!INCLUDE[server](includes/server.md)] installation folder is [!INCLUDE[navnow_install](includes/navnow_install_md.md)]\\Service\\Add-ins.  
 
 
-##### To test the serialization object  
+##### To test the serialization object
+
 1.  In the AL Development Environment, add the following code.
 
-```
+```al
 dotnet
 {
      assembly(SerializationSample)
@@ -167,12 +168,12 @@ codeunit 50101 SerializationSample
 
 The line that contains assignment of the **ServerObject** to the **ClientObject** causes the serialization process to run. When completed, the message **Server data has been serialized to the client object** appears, which verifies that the server object has been transferred to the client object.  
 
+## See also
 
-## See Also  
-[Get Started with AL](devenv-get-started.md)    
-[Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)
-[Migrating from .NET Framework to .NET Standard](devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)    
-[.NET Control Add-Ins](devenv-dotnet-controladdins.md)    
-[Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)  
+[Get started with AL](devenv-get-started.md)    
+[Getting started with Microsoft .NET interoperability from AL](devenv-get-started-call-dotnet-from-al.md)
+[Migrating from .NET framework to .NET standard](devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)    
+[.NET control add-ins](devenv-dotnet-controladdins.md)    
+[Subscribing to events in a .NET framework type](devenv-dotnet-subscribe-to-events.md)  
 [Use Designer](devenv-inclient-designer.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)
+[AL Language extension configuration](devenv-al-extension-configuration.md)

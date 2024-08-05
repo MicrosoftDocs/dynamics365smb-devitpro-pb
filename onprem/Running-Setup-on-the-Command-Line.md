@@ -1,12 +1,7 @@
 ---
 title: "Running Setup on the Command Line"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: f436d80f-57e7-4399-a93d-52ee4d751ec7
 caps.latest.revision: 16
 ---

@@ -2,12 +2,11 @@
 title: Overview of AL-Go
 description: Overview of how to use AL-Go for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
+ms.custom: bap-template
 ms.date: 10/11/2023
-ms.reviewer: 
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Overview of AL-Go

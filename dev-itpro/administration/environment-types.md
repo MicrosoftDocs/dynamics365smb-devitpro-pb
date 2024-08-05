@@ -1,17 +1,16 @@
 ---
-title: Production and Sandbox Environments
+title: Production and sandbox environments
 description: Learn about the differences between production and sandbox environments for Dynamics 365 Business Central. 
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 03/03/2022
+ms.date: 07/05/2024
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
-# Production and Sandbox Environments
+# Production and sandbox environments
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -53,12 +52,12 @@ Instead, use the [Administration Center API](administration-center-api.md).
 
 ### <a name="partnersandbox"></a>Partner sandboxes
 
-As a partner, you can buy the *Dynamics 365 Business Central Partner Sandbox* license. You'll need a valid Microsoft Partner Network (MPN) ID. You must also have at least five employees who will use the partner sandboxes that you create using this license. This offer was made available in February 2022 to support partners that need non-production environments to learn, test, and deliver end-to-end customer demos with their solutions. The *Partner Sandbox* license gives access to Business Central Premium functionality.  
+As a partner, you can buy the *Dynamics 365 Business Central Partner Sandbox* license. You'll need a valid Microsoft Partner Network (MPN) ID. You must also have at least five employees who will use the partner sandboxes that you create using this license. This offer was made available in February 2022 to support partners that need non-production environments to learn, test, and deliver end-to-end customer demos with their solutions. The *Partner Sandbox* license gives access to Business Central Premium functionality and acts as a normal *Premium* license that your customers might acquire.  
 
 > [!IMPORTANT]
 > The environments that you acquire through the *Dynamics 365 Business Central Partner Sandbox* license are strictly meant for use only on the partner’s tenant. You are not allowed to use this license in a customer tenant, nor in a production environment.  
 
-Use the *Partner Sandbox* license for a Microsoft 365 account that does not currently have a [!INCLUDE [prod_short](../includes/prod_short.md)] license. This gets you 1 production environment + 3 sandboxes. Alternatively, use the *Partner Sandbox* license to replace existing [!INCLUDE [prod_short](../includes/prod_short.md)] licenses in an existing environment; however, the license will not give you any additional environments on top of the environments you already had.  
+Use the *Partner Sandbox* license for a Microsoft 365 account that does not currently have a [!INCLUDE [prod_short](../includes/prod_short.md)] license. The *Partner Sandbox* license gives you 1 production environment + 3 sandboxes, provided that it's a Microsoft 365 account that never had a [!INCLUDE [prod_short](../includes/prod_short.md)] license. Alternatively, use the *Partner Sandbox* license to replace existing [!INCLUDE [prod_short](../includes/prod_short.md)] licenses in an existing environment; however, the license will not give you any additional environments on top of the environments you already had.  
 
 Partners can purchase the unique, partner-only license via Web Direct to create flexible, cost-effective solutions that do not expire. Accessing the SKUs and pricing is simple: [Go to experience.dynamics.com](https://experience.dynamics.com/requestlicense/) and submit a request for the *Dynamics 365 Business Central Partner Sandbox* license. Use a valid MPN ID. Once your request is approved, you receive a token to purchase the SKUs directly. Pay by credit card. If the total billing is over $500/month for your company, then you can pay by invoice.
 

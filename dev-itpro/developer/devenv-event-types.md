@@ -1,32 +1,28 @@
 ---
-title: "Event types"
-description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global and trigger events.
-ms.custom: na
-ms.date: 12/07/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Event types
+description: Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global, and trigger events.
+ms.date: 04/18/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
 # Event types
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports different types of events for different purposes.
+Events are a way to provide a way for one piece of code to communicate with another. In [!INCLUDE [prod_short](includes/prod_short.md)], events are used to notify other objects that something has occurred. This can be useful when you want to notify other objects that something has happened, or when you want to allow other objects to influence the behavior of your code. [!INCLUDE [prod_short](includes/prod_short.md)] supports different types of events including BusinessEvents, IntegrationEvents, Global events, and trigger events.
 
-##  <a name="BusinessEvents"></a> Business events
+## Business events
 
-A business event is a custom event that is raised by AL code. It defines a formal contract that carries an implicit promise not to change in future releases. It is the expectation that business events are published by solution ISVs, including Microsoft.
+A business event is a custom event that is raised by AL code. It defines a formal contract that carries an implicit promise not to change in future releases. It's the expectation that business events are published by solution ISVs, including Microsoft.
 
-Business events can be compared with publicly released APIs on which 3rd party solution providers develop integrations and additions. Therefore, the downstream cost of making changes to a business event implementation can be considerable for those who use the event in their applications. There may be some cases where changes are required; however, you should keep these to an absolute minimum.
+Business events can be compared with publicly released APIs on which third party solution providers develop integrations and additions. Therefore, the downstream cost of making changes to a business event implementation can be considerable for those who use the event in their applications. There may be some cases where changes are required; however, you should keep these to an absolute minimum.
 
 ### Development considerations
 
-A typical business event reflects changes in “state” with regards to a process. This makes them very well suited for workflow. An example of a business event could be when a sales order has been posted. It is important to note that business events should not be tied to the implementation-details, such as the tables or fields in which the data is stored. Preferably, the event publisher developer should be free to change the implementation, while still keeping the business event intact. To learn about the syntax and example on how to use the BusinessEvent type, see [BusinessEvent Attribute](attributes/devenv-businessevent-attribute.md).
+A typical business event reflects changes in “state” with regard to a process. This makes them well suited for workflow. An example of a business event could be when a sales order has been posted. It's important to note that business events shouldn't be tied to the implementation-details, such as the tables or fields in which the data is stored. Preferably, the event publisher developer should be free to change the implementation, while still keeping the business event intact. To learn about the syntax and example on how to use the BusinessEvent type, see [BusinessEvent Attribute](attributes/devenv-businessevent-attribute.md).
 
 Business events should be documented with the solution, including the before-state and after-state of the events.
 
-##  <a name="IntegrationEvents"></a> Integration events
+## Integration events
 
 An integration event is also a custom event that is raised by AL code, like a business event, except that it does not carry the same promise of not changing, nor does it have the restriction not to expose implementation details.
 
@@ -34,7 +30,7 @@ The main purpose of integration events is to enable the integration of other sol
 
 ### Development considerations
 
-An integration event can be changed to a business event later. At which time, it must adhere to the same implied contract and commitment as any business event. It can also simply be designed-in hook points for external add-ons. To learn about the syntax and example on how to use the IntegrationEvent type, see [IntegrationEvent Attribute](attributes/devenv-integrationevent-attribute.md).
+An integration event can be changed to a business event later. At which time, it must adhere to the same implied contract and commitment as any business event. It can also simply be designed-in hook points for external add-ons. To learn about the syntax and example on how to use the IntegrationEvent type, see [IntegrationEvent attribute](attributes/devenv-integrationevent-attribute.md).
 
 <!--
 
@@ -44,7 +40,7 @@ An internal event is an it can only be raised and subscribed to from within the 
 
 ### Development considerations
 
-To learn about the syntax and example on how to use the InternalEvent type, see [InternalEvent Attribute](attributes/devenv-internalevent-attribute.md).
+To learn about the syntax and example on how to use the InternalEvent type, see [InternalEvent attribute](attributes/devenv-internalevent-attribute.md).
 
 ## Global events
 
@@ -100,13 +96,13 @@ Global events are predefined system events that are automatically raised by vari
 Unlike business and integration events which must be programmed, trigger events are predefined events. Trigger events are published by the runtime and they cannot be raised programmatically. There are two types of trigger events: database trigger events and page trigger events.
 
 > [!NOTE]  
-> Trigger events do not appear as methods in AL for a table or page object.
+> Trigger events don't appear as methods in AL for a table or page object.
 
-###  <a name="DatabaseEvents"></a> Database trigger events
+### Database trigger events
 
 Trigger events are automatically raised by the system when it performs database operations on a table object, such as deleting, inserting, modifying, and renaming a record, as defined in a table. Trigger events are closely associated with the table triggers for database operations: OnDelete, OnInsert, OnModify, OnRename, and OnValidate \(for fields\). For each database operation, there is a "before" and "after" trigger event with a fixed signature.
 
-**Available Database Trigger Events**
+#### Available database trigger events
 
 The following table describes the available database trigger events:
 
@@ -144,9 +140,9 @@ The relative order of execution of database trigger events, table triggers, and 
 |4|Database operations|Delete the record|
 |5|Trigger event \(after\)|OnAfterDeleteEvent|
 
-###  <a name="PageEvents"></a> Page trigger events
+### Page trigger events
 
-Page Trigger events are raised automatically by the system when it performs certain operations in a page object. Page trigger events are closely associated with the standard page triggers, such as OnOpenPage, OnClosePage, and OnAction.
+Page trigger events are raised automatically by the system when it performs certain operations in a page object. Page trigger events are closely associated with the standard page triggers, such as OnOpenPage, OnClosePage, and OnAction.
 
 #### Available page trigger events
 
@@ -179,10 +175,10 @@ The following table describes the parameters of the trigger events:
 |*BelowxRec*|Boolean|Specifies whether the new record was inserted after the last record in the table \(xRec\).|
 |*AllowClose*|Boolean|Specifies whether to the page can close. If this parameter is true, the code will be executed. If this parameter is false, then the code is not executed.|
 
-## See Also
+## See also
 
 [Events in AL](devenv-events-in-al.md)  
-[Publishing Events](devenv-publishing-events.md)  
-[Raising Events](devenv-raising-events.md)  
-[Subscribing to Events](devenv-subscribing-to-events.md)  
-[Isolated Events](devenv-events-isolated.md)  
+[Publishing events](devenv-publishing-events.md)  
+[Raising events](devenv-raising-events.md)  
+[Subscribing to events](devenv-subscribing-to-events.md)  
+[Isolated events](devenv-events-isolated.md)  

@@ -2,13 +2,10 @@
 title: "DefaultImplementation Property"
 description: "Specifies the default implementer for the enum value if there is no explicit implementer set for the value."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -59,7 +56,7 @@ pageextension 50130 CustListExt extends "Customer List"
 
 interface IFoo
 {
-    procedure Foo();
+    procedure Foo()
 }
 
 codeunit 50145 ErrorFooImpl implements IFoo

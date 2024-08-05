@@ -1,13 +1,13 @@
 ---
-title: (v1.0) "API (v1.0) for Dynamics 365 Business Central"
-description: (v1.0) "Reference content for the API (v1.0) endpoint for integration with Dynamics 365 Business Central."
+title: (v1.0) API (v1.0) for Dynamics 365 Business Central
+description: (v1.0) Reference content for the API (v1.0) endpoint for integration with Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: get-started
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/30/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.custom: evergreen
+ms.reviewer: solsen
 ---
 
 # Welcome to the API (v1.0) for [!INCLUDE[prod_short](../../includes/prod_short.md)]
@@ -16,7 +16,6 @@ With [!INCLUDE[prod_short](../../includes/prod_short.md)] you can create Connect
 
 > [!TIP]  
 > Looking for version 2.0 of the [!INCLUDE[prod_short](../../includes/prod_short.md)] API? See [Welcome to the API(v2.0) for Business Central](../v2.0/index.md).
-
 
 ## Microsoft APIs Terms of Use
 

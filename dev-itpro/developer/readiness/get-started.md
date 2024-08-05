@@ -1,11 +1,11 @@
 ---
 title: Get started building apps
 description: Learn how you can get started building apps for Dynamics 365 Business Central in six easy steps.
-author: a-emniel
+author: SusanneWindfeldPedersen
 ms.topic: conceptual
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.author: kurtju
-ms.date: 11/30/2023
+ms.date: 02/06/2024
 ms.collection: get-started
 ---
 
@@ -15,7 +15,7 @@ ms.collection: get-started
 
 [!INCLUDE [prod_long](../includes/prod_long.md)] is a business management solution that helps companies connect their services and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you have the convenience to quickly tailor, extend, and build applications so that they fit your specific needs with little to no code development.
 
-Build a business app for a specific industry, process, or department such as HR, finance, marketing or operations. Then, publish your app to [the Microsoft commercial marketplace](https://appsource.microsoft.com/partners), where customers can find your app, try it and get in touch with you. For more information, see [What is the Microsoft commercial marketplace?](/azure/marketplace/overview).  
+Build a business app for a specific industry, process, or department such as HR, finance, marketing, or operations. Then, publish your app to [the Microsoft commercial marketplace](https://appsource.microsoft.com/partners), where customers can find your app, try it and get in touch with you. For more information, see [What is the Microsoft commercial marketplace?](/azure/marketplace/overview).  
 
 Learn how you can become a [!INCLUDE [prod_short](../includes/prod_short.md)] app publisher in six steps in this article.  
 
@@ -41,23 +41,21 @@ To develop apps for [!INCLUDE [prod_short](../includes/prod_short.md)], you're r
 
 To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must have access to PartnerSource Business Center (PSBC). Either of the following agreements gives you access to PSBC, which is a first step towards getting a development license:
 
-- [An active Partner Registration Agreement](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
+- [Partner Registration Agreement (PRA)](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
+- Solution Provider Agreement (SPA)<!--(https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram)-->
 
-- [A Registered Solution Program Addendum](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram) (RSPA)
+> [!NOTE]  
+> We're no longer accepting new partner enrollments for the Solution Provider Agreement.
 
 The relevant contract can be requested through your local Regional Operations Center (ROC) Contracts and Agreements Team below:
 
-- [mbscon@microsoft.com](mailto:mbscon@microsoft.com) if you're based in Europe, the Middle East, or Africa.
-
-- [aka.ms/PLOIntake](https://aka.ms/PLOIntake) if you're based in the Americas – to request access [REQUEST ACCESS](https://idwebelements.microsoft.com/GroupManagement.aspx?Group=PLOPortalAccess&Operation=join).
-
-- [mbslques@microsoft.com](mailto:mbslques@microsoft.com) if you're based in the Asia Pacific region.
+- [partnerlifecycle@microsoft.com](mailto:partnerlifecycle@microsoft.com) (for all regions).
 
 ## Step 3: Your unique app specifications
 
 ### Requesting an object range
 
-When you develop an app for [!INCLUDE [prod_short](../includes/prod_short.md)], you must request access to an object range that holds some objects for your solution. To avoid overlap between objects used in different solutions, each partner is assigned many objects in a unique object range. For example, a partner is assigned the object range 70,001,000 – 70,001,999. The object range gives them 1000 numbered objects that they can use to develop [!INCLUDE [prod_short](../includes/prod_short.md)] solutions.
+When you develop an app for [!INCLUDE [prod_short](../includes/prod_short.md)], you must request access to an object range that holds some objects for your solution. To avoid overlap between objects used in different solutions, each partner is assigned many objects in a unique object range. For example, a partner is assigned the object range 70,001,000 – 70,001,999. The object range gives them 1,000 numbered objects that they can use to develop [!INCLUDE [prod_short](../includes/prod_short.md)] solutions.
 
 Depending on where you deploy your [!INCLUDE [prod_short](../includes/prod_short.md)] solution, online or on-premises, you can use different licensing methods and object ranges.  
 
@@ -65,10 +63,8 @@ Depending on where you deploy your [!INCLUDE [prod_short](../includes/prod_short
 
 You can request an object range by downloading the object range request form [here](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram). After completion, send them to your Regional Operational Center (ROC) for processing:
 
-- [mbscon@microsoft.com](mailto:mbscon@microsoft.com) if you're based in Europe, the Middle East, or Africa.
-
-- [mbsagree@microsoft.com](mailto:mbsagree@microsoft.com) if you're based in the Americas.
-
+- [mbsquery@microsoft.com](mailto:mbsquery@microsoft.com) if you're based in Europe, the Middle East, or Africa.
+- [mbsorder@microsoft.com](mailto:mbsorder@microsoft.com) if you're based in the Americas.
 - [mbslques@microsoft.com](mailto:mbslques@microsoft.com) if you're based in the Asia Pacific region.
 
 ### Downloading your development license file
@@ -78,7 +74,7 @@ After your Regional Operational Center process your Agreements and Object Range 
 ### Register your unique prefix or suffix
 
 In your extension, the name of each object must contain [a prefix or suffix](../../compliance/apptest-prefix-suffix.md) that is registered for your publisher name. For more information about the use of affixes and the registration process, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
- 
+
 ## Step 4: Getting access to preview bits
 
 Get access to preview builds by joining Microsoft Collaborate.
@@ -89,39 +85,34 @@ In Microsoft Collaborate, you get access to a set of [!INCLUDE [prod_short](../i
 - An upcoming major version
 - Daily builds
 
-You must have the following prerequisites to register on Microsoft Collaborate:
+### Prerequisites
 
-- Microsoft Entra ID.
+To register on Microsoft Collaborate, you must have have a Microsoft Entra ID account with the required roles. For more information, see [Microsoft Collaborate Registration](/collaborate/registration).
 
-  > [!NOTE]
-  > If you have Microsoft 365, then your company most likely has Microsoft Entra ID.
+> [!NOTE]
+> If you have Microsoft 365, then your company most likely has Microsoft Entra ID. To find out if your company has a Microsoft Entra account, check with your system administrator.
 
-- Microsoft Entra Global Administrator permission
+### Step 4 A: Register for Collaborate
 
-  > [!NOTE]
-  > To find out if your company has a Microsoft Entra account, check with your system administrator.
+Register at [https://aka.ms/Collaborate](https://aka.ms/Collaborate). Sign in with your Microsoft Entra account, choose the **Get Started** action, and then complete the registration form.  
 
-### Step 4 A: How your Global Administrator must register for Collaborate
-
-Only your company's Global Administrator can start the onboarding to Collaborate. They must register at [https://aka.ms/Collaborate](https://aka.ms/Collaborate), choose the **Get Started** action, and then complete the registration form.  
-
-The administrator can then add the relevant colleagues.  
+As an administrator, you can now add the relevant colleagues.  
 
 #### Optional Step: Add your coworkers to Microsoft Collaborate
 
 To add coworkers:
 
-1. Sign in to Microsoft Collaborate with your Global Administrator account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
+1. Sign in to Microsoft Collaborate with your Microsoft Entra account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
 
 2. Choose the settings :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon."::: icon in the top-right corner of the page,  got to on account settings, and choose **user management**.
 
-3. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now, you can search for the user(s) that you want to add to Collaborate. To add them, you need to choose them from the menu, and then choose the grey **ADD SELECTED** button. Make sure to add them as a 'Manager (Collaborate)' for them to have the right permissions. 
+3. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now, you can search for one or more users that you want to add to Collaborate. To add them, you need to choose them from the menu, and then choose the grey **ADD SELECTED** button. Make sure to add them as a 'Manager (Collaborate)' for them to have the right permissions. 
 
 4. Once you successfully add your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 ### Step 4 B: Getting access to the available builds and engagements
 
-Once you successfully register on Microsoft Collaborate, Microsoft must assign you to the right programs, and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. the following table illustrates the type of information that you must submit:
+Once you successfully register on Microsoft Collaborate, Microsoft must assign you to the right programs, and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. The following table illustrates the type of information that you must submit:
 
 | **Publisher Display Name** | **MPN ID** | **First Name** | **Last Name** | **Work account Email** |
 |--|--|--|--|--|
@@ -132,27 +123,27 @@ After sending the email, expect a response from Microsoft within 1-2 business da
 
 ## Step 5: Resources while you develop your solution
 
-Find below some guiding resources on how to develop your apps for [!INCLUDE [prod_short](../includes/prod_short.md)].
+In the following section, you find some guiding resources on how to develop your apps for [!INCLUDE [prod_short](../includes/prod_short.md)].
 
-- Microsoft Learn
+### Microsoft training
 
-    Learn new skills and discover the power of Microsoft products with step-by-step guidance. Start your journey today by exploring our [learning paths and modules](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs).
+Learn new skills and discover the power of Microsoft products with step-by-step guidance. Start your journey today by exploring our [learning paths and modules](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs).
 
-- Microsoft Docs
+### Microsoft documentation
 
-    Find [The developer and administration content on Microsoft Docs](../../index.md)
+Find [Developer and administration content](../../index.md).
 
-- Join the conversation
+### Join the conversation
 
-    In the dedicated Yammer network, [join the conversation on developing apps](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=41498640384&view=all)
+In the dedicated Viva Engage network, [join the conversation on developing apps](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=41498640384&view=all).
 
-- Join the monthly Office hour calls
+### Join the monthly Office hour calls
 
-    Join the monthly [Office hour calls](https://aka.ms/ReadyToGoOfficeHours) to learn more about a hot article.
+Join the monthly [Office hour calls](https://aka.ms/ReadyToGoOfficeHours) to learn more about a hot article.
 
-- Get coaching from experts
+### Get coaching from experts
 
-    Need help with developing your apps? There's a community of [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) specialized in [!INCLUDE [prod_short](../includes/prod_short.md)] ready to engage with you.
+Need help with developing your apps? There's a community of [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) specialized in [!INCLUDE [prod_short](../includes/prod_short.md)] ready to engage with you.
 
 ### Set up DevOps processes for your project
 
@@ -164,14 +155,14 @@ You can find resources for how to set up full plug-and-play DevOps processes usi
 
 Once your app is ready for submission, you can list your app in the Microsoft commercial marketplace by submitting it in [Partner Center](https://partner.microsoft.com/dashboard/commercial-marketplace/overview). For more information, see [Create a Dynamics 365 Business Central offer](/azure/marketplace/partner-center-portal/create-new-business-central-offer).
 
-Before you submit, we recommend that you review the [technical validation checklist](../devenv-checklist-submission.md) and [marketing validation checklist](./readiness-checklist-marketing.md). The two articles list all requirements that you **must meet before you submit** an app for validation. If you don't meet these mandatory requirements, your extension fails validation
+Before you submit, we recommend that you review the [technical validation checklist](../devenv-checklist-submission.md) and [marketing validation checklist](./readiness-checklist-marketing.md). The two articles list all requirements that you **must meet before you submit** an app for validation. If you don't meet these mandatory requirements, your extension fails validation.
 
 ## See also
 
-[The SMB Opportunity for App Publishers](opportunity-app-publisher.md)  
-[The Lifecycle of Apps and Extensions for [!INCLUDE [prod_short](../includes/prod_short.md)]](../devenv-app-life-cycle.md)  
-[Update Lifecycle for AppSource Apps FAQ](../devenv-update-app-life-cycle-faq.md)  
-[Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
-[Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)  
+[The SMB opportunity for app publishers](opportunity-app-publisher.md)  
+[The lifecycle of apps and extensions for [!INCLUDE [prod_short](../includes/prod_short.md)]](../devenv-app-life-cycle.md)  
+[Update lifecycle for AppSource apps FAQ](../devenv-update-app-life-cycle-faq.md)  
+[Maintain AppSource apps and per-tenant extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
+[Microsoft responsibilities for apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)  
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]

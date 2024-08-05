@@ -2,13 +2,10 @@
 title: "Customizing Tenants"
 description: "Read about how to to build fully custom functionality or adapt what is already available out-of-the box."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Customize Business Central

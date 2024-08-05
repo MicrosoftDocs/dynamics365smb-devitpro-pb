@@ -3,11 +3,10 @@ title: dimension resource type
 description: A dimension object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # dimension resource type
@@ -41,6 +40,7 @@ Represents a dimension in [!INCLUDE[prod_short](../../../includes/prod_short.md)
 |id|GUID|The unique ID of the dimension. Non-editable.|
 |code|string|The code of the dimension.|
 |displayName|string|Specifies the dimension's name. This name will appear on all sales documents for the dimension.|
+|consolidationCode|string||
 |lastModifiedDateTime|datetime|The last datetime the dimension was modified. Read-Only.|
 
 ## JSON representation
@@ -53,6 +53,7 @@ Here is a JSON representation of the dimension resource.
     "id": "GUID",
     "code": "string",
     "displayName": "string",
+    "consolidationCode": "string",
     "lastModifiedDateTime": "datetime"
 }
 ```

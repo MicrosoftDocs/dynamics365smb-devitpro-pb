@@ -2,13 +2,10 @@
 title: "WordMergeDataItem Property"
 description: "Specifies the root-level DataItem that is used to generate separate reports for multiple records."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -26,7 +23,7 @@ Specifies the root-level DataItem that is used to generate separate reports for 
 ## Syntax
 
 ```AL
-WordMergeDataItem = MyDataItem; // MyDataItem must be present as a dataitem in the report dataset
+WordMergeDataItem = MyDataItem; // MyDataItem must be present as a top-level dataitem in the report dataset
 ```
 
 ## Remarks
@@ -35,7 +32,8 @@ The `WordMergeDataItem` property is only applied when rendering a report using a
 
 When you specify a dataitem in the `WordMergeDataItem` property, the [!INCLUDE[prod_short](../includes/prod_short.md)] server will do a "Mail merge" between that data item (and the ones below it) and the Word layout when rendering the report using the Word layout.
 
- ## Example
+
+## Example
 
 The following example is showing how the `WordMergeDataItem` property is used on the "Standard Sales - Invoice" report when rendered with a Word layout.
 
@@ -77,5 +75,7 @@ report 1306 "Standard Sales - Invoice"
 
 ## See Also
 
-[Report](../devenv-reports.md)  
-[RDL Layout Reports](../devenv-howto-rdl-report-layout.md) 
+[Creating a Word layout report](../devenv-howto-report-layout.md)   
+[Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)   
+[Report object](../devenv-report-object.md)   
+[Report overview](../devenv-reports.md)  

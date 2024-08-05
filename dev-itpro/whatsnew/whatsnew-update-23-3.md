@@ -1,12 +1,14 @@
 ---
 title: Update 23.3 for Microsoft Dynamics 365 Business Central 2023 Release Wave 2
 description: Get an overview of new and changed capabilities in the 23.3 update of Business Central online, which is part of 2023 release wave 2.
-ms.author: a-enielsson
-ms.custom: bap-template
-ms.date: 01/12/2024
+ms.author: jswymer
+ms.date: 04/01/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
-author: EmmaNielsson
+author: jswymer
+ms.custom: 
+    - evergreen
+    - bap-template
 ---
 
 # Update 23.3 for Microsoft Dynamics 365 Business Central online 2023 release wave 2
@@ -22,9 +24,9 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Detect invalid cloud migration configurations with proactive warnings](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/detect-invalid-cloud-migration-configurations-proactive-warnings)
 - [Translatable Excel layouts](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/translatable-excel-layouts)
 - [Make use of static and runtime metadata available in Excel layouts](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/make-use-static-runtime-metadata-excel-layouts)
-- AppSource app hotfixes are now validated against the latest available app version
-- Generic Microsoft Graph API Wrapper
-- Add Azure File Services API module
+- [AppSource app hotfixes are now validated against the latest available app version](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/appsource-app-hotfixes-are-now-validated-against-latest-app-version)
+- [Generic Microsoft Graph API Wrapper](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/call-graph-al-graph-module)
+- [Add Azure File Services API module](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/use-azure-files-azure-file-service-api-module)
 
 
 ## Localization updates
@@ -43,11 +45,18 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 
 ## Upgrade to 23.3
 
-Please note that new customers will automatically get the latest builds of Business Central (23.2). If you're an existing partner/customer, you'll receive an email notification as soon as your environment has been upgraded.
+Please note that new customers will automatically get the latest builds of Business Central (23.3). If you're an existing partner/customer, you'll receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
-### Business Central Launch Event videos on YouTube  
+### Schedule more tasks by using more users or Microsoft Entra Apps
+
+With this release, we've completed the global rollout of all required changes to all regions of the Business Central service to support increased throughput for operations using scheduled tasks. In the past, the number of scheduled tasks our service could perform in parallel was limited to 3 per environment. This limitation was starting to become a bottleneck for larger customers and larger operational volumes, especially when using automation, running with many companies, or using traffic intensive web portals. We have optimized our service to provide additional scale for these workloads by allowing you to create more scheduled tasks per user (or Microsoft Entra App), rather than having a per-environment limit. To take advantage of this new capability, reconfigure your workloads and integrations to use more users and/or Microsoft Entra Apps, which will create scheduled tasks.
+
+We are proceeding with applying similar changes for web service requests, so please look for further announcements in the next releases of Business Central.
+
+### Business Central Launch Event videos on YouTube
+
 Follow along as we're posting Business Central Launch Event sessions to the new YouTube channel. All 35 videos will be added to the channel by December 31, 2023. Subscribe now and watch the videos: [aka.ms/BCYouTube](https://aka.ms/BCYouTube). Find the rest of the launch event videos on: [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### Upcoming Business Central Office Hours Calls

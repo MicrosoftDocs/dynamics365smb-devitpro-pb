@@ -2,13 +2,10 @@
 title: Designing List Pages for Business Central
 description: "Provides and overview of List page design"
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Designing List Pages
@@ -36,7 +33,7 @@ In the client, users can personalize list pages by rearranging or hiding records
 
 As a developer or administrator, you can use Designer to customize the list page the same way that individual users personalize their own work spaces. The difference is that changes you make are applied to all users. For more information, see [Use Designer](devenv-inclient-designer.md). 
 
-## [Structure](#tab/structure)
+## [Structure](#tab/structure) 
 
 ### General definition
 A list page is defined by a page that has the [PageType property](properties/devenv-pagetype-property.md) set to `List` and [SourceTable property](properties/devenv-sourcetable-property.md) set to the table object that contains the records that you want to display.
@@ -69,8 +66,11 @@ The following table describes the elements of a typical list page.
 
 ## [Behavior points](#tab/behavior)
 
+- The [Editable](properties/devenv-editable-property.md) property on a list page controls if all rows on the list can be edited. If a list page has **Editable** set to **true**, the *Edit list* icon is available in the action bar and by clicking the icon, the user can edit values across rows.   
 - List pages that are accessed from the Role Center page open embedded within the Role Center framework. The pages are always opened in the read-only mode, regardless of the [Editable](properties/devenv-editable-property.md) property.
 - There are a few system actions that are automatically added to the actions bar, such as **Search**, **See Attached** and **Open in Excel**.
+- Analysis mode is enabled by default on list pages. If you want to turn off this ability, set the [AnalysisModeEnabled](properties/devenv-analysismodeenabled-property.md) property to **false**. 
+- The Edit in Excel action is enabled by default on list pages (for users with the right permissions). If you want to turn off this ability, see  [Controlling Edit in Excel on list pages](devenv-edit-in-excel-lists.md).
 - Media and image fields only display in tile view.
 
 ## [Developer tips](#tab/tips)
@@ -86,6 +86,7 @@ From the user's perspective, the following are qualities of a well-designed list
 
 > [!IMPORTANT]
 > List pages are designed for using a single `repeater()` control within the content area only. If you include more than one repeater or another control like a `group` or `grid`, the page might not behave as expected. If you want to design a page that includes controls in the content area other than a repeater, then try using a `Worksheet` page type instead.
+
 
 ## [Designing for devices](#tab/targets)
 

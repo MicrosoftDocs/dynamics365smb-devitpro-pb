@@ -1,14 +1,11 @@
 ---
-title: "Using Service to Service Authentication"
+title: Using Service to Service Authentication
 description: Service-to-service authentication enables external services to connect as an application, without impersonating normal users.
-author: henrikwh
-ms.custom: na
-ms.date: 08/23/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+author: jswymer
+ms.date: 06/03/2024
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
  
 # Using Service-to-Service (S2S) Authentication 
@@ -87,7 +84,7 @@ Complete these steps to register an application in your Microsoft Entra tenant f
     |-------|-----------|
     |Name|Specify a unique name for your application. |
     |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)</strong>.|
-    |Redirect URI|(optional) This setting is only required if you want to use the Business Central web client to grant consent to the API (see task 2). Otherwise, you can grant consent using the Azure portal.<br><br>To specify the redirect URL, set the first box to **Web** to specify a web application. Then, enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC210/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC210/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC210/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
+    |Redirect URI|(optional) This setting is only required if you want to use the Business Central web client to grant consent to the API (see task 2). Otherwise, you can grant consent using the Azure portal.<br><br>To specify the redirect URL, set the first box to **Web** to specify a web application. Then, enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC240/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC240/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC240/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
     When completed, an **Overview** displays in the portal for the new application.
 
@@ -147,9 +144,9 @@ Complete these steps to set up the Microsoft Entra application for service-to-se
    > Applications can't be assigned the **SUPER** permission set. Make sure that applications follows least-privilege principle and only assign permissions required for the integration to work.
 
    > [!NOTE]
-   > The system permission sets and user groups called **D365 AUTOMATION** and **EXTEND. MGT. - ADMIN** provide access to most typical objects used with automation.
+   > The system permission sets and user groups called **D365 AUTOMATION** and **EXTEN. MGT. - ADMIN** provide access to most typical objects used with automation.
    >
-   > The **EXTEND. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
+   > The **EXTEN. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
 
 7. (optional) Select **Grant Consent** and follow the wizard. 
 

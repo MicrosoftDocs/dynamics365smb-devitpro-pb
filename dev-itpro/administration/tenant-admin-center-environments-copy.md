@@ -3,21 +3,16 @@ title: Copy an environment
 description: Learn how to create an environment that is a copy of a production or sandbox environment.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, copy
-ms.date: 11/29/2021
+ms.date: 01/19/2024
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Copy a Production or Sandbox Environment in the Admin Center
 
-[!INCLUDE [2021_releasewave2](../includes/2021_releasewave2.md)]
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
-You can create an environment that is a copy of an existing environment, such as a sandbox that is based on production for troubleshooting, or a production environment that is based on a sandbox, for example. When you create an environment as a copy of another environment, the new environment is created on the same application version as the environment that you are copying. The new environment will contain all per-tenant extensions and AppSource extensions that are installed and published in the original environment that is being copied.
+You can create an environment that is a copy of an existing environment, such as a sandbox that is based on production for troubleshooting, or a production environment that is based on a sandbox, for example. When you create an environment as a copy of another environment, the new environment is created on the same application version as the environment that you are copying. The new environment will contain all per-tenant extensions and AppSource extensions that are installed and published in the original environment that is being copied. If the environment is [linked](tenant-admin-center-environments.md#linked-power-platform-environment) to a Power Platform environment, the linked Power Platform environment will not be copied and the newly created [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment will not be linked to any Power Platform environment.
 
 ## To copy an environment
 
@@ -28,6 +23,9 @@ You can create an environment that is a copy of an existing environment, such as
 5. Choose the **Create** action.
 
 When the process starts, you can go to the list of your environments and see the status of the new environment. At first, you'll see the new environment with the state **Preparing**, and then **Active** once the new environment is fully up and running. Further status details of the copy operation can be found on the **Operations** page. The original environment that the new environment is based on remains active.
+
+> [!NOTE]
+> Sandbox environments that have Preview versions of AppSource apps installed can't be copied to a Production environment. Update installed Preview apps to Public versions or uninstall Preview apps before copying a Sandbox environment to a Production environment.
 
 ## Environment copies
 

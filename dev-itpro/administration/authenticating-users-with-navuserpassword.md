@@ -1,13 +1,12 @@
 ---
 title: User Authentication with NavUserPassword
 description: Learn how to set up NAVUserPassword for authenticating users.
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 06/24/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
+ms.service: dynamics-365-op
 ---
 # Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with NavUserPassword
 
@@ -39,22 +38,10 @@ You're now done with setting up your account.
 
 You can configure the [!INCLUDE[server](../developer/includes/server.md)] by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
-# [Administration Tool](#tab/admintool)
-
-[!INCLUDE[admin_tool_deprecated](../developer/includes/admin_tool_deprecated.md)]
-
-1. Open the [!INCLUDE[admintool](../developer/includes/admintool.md)].
-
-2. In the **General** tab, set the **Credential Type** to **NavUserPassword**.
-
-3. Restart the server instance.
-
-For more information about the tool, see [Business Central Server Administration Tool](administration-tool.md).
-
 # [Administration Shell](#tab/adminshell)
 
 1. Run [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
- 
+
     To configure the server instance in the next steps, you'll use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
 
 2. Set the `ClientServicesCredentialType` to `NavUserPassword`.
@@ -68,6 +55,18 @@ For more information about the tool, see [Business Central Server Administration
    ```powershell
    Restart-NAVServerInstance -ServerInstance <BC server instance name>
    ```
+
+# [Administration Tool](#tab/admintool)
+
+[!INCLUDE[admin_tool_deprecated](../developer/includes/admin_tool_deprecated.md)]
+
+1. Open the [!INCLUDE[admintool](../developer/includes/admintool.md)].
+
+2. In the **General** tab, set the **Credential Type** to **NavUserPassword**.
+
+3. Restart the server instance.
+
+For more information about the tool, see [Business Central Server Administration Tool](administration-tool.md).
 
 ---
 

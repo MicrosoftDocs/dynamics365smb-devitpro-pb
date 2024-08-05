@@ -3,11 +3,11 @@ title:  Analyzing environment validation telemetry
 description: Learn about the environment validation telemetry in Business Central.
 author: KennieNP
 ms.author: kepontop
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.date: 10/27/2023
 ms.custom: bap-template
-ms.service: dynamics365-business-central
+
 ---
 
 # Analyzing environment validation telemetry

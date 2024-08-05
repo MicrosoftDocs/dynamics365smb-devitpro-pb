@@ -1,12 +1,10 @@
 ---
-title: "Report Object"
-description: "The report object in AL for Business Central allows to create a new report."
+title: Report Object
+description: The report object in AL for Business Central allows to create a new report.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 09/04/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 01/18/2024
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -81,10 +79,28 @@ In the following, you can read about properties of the different layout types.
 
 ## Report labels
 
-[!INCLUDE [report_labels](includes/include-report-labels.md)]
+Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
+
+For texts that are present as captions on table fields in dataset columns, use the [IncludeCaption](properties/devenv-includecaption-property.md) property to include them in the dataset. For more information, see [IncludeCaption property](properties/devenv-includecaption-property.md). 
+
+You define report labels for static texts that are not present as captions in dataset columns inside the `labels` control of a report object, as shown in the following code sample.
+
+```AL
+labels
+{
+  LabelName1 = 'Label Text1', Comment='Foo', MaxLength=999, Locked=true;
+  LabelName2 = 'Label Text2', Comment='Foo', Locked=false;
+} 
+```
+
+All of the different layout types (Excel, Word, or RDL) support using label data. For more information, see:
+- [Report labels in Excel layouts](./devenv-howto-excel-report-layout.md#report-labels-in-excel-layouts).
+- [Report labels in Word layouts](./devenv-howto-report-layout.md#report-labels-in-word-layouts).
+- [Report labels in RDL layouts](./devenv-howto-rdl-report-layout.md#report-labels-in-rdl-layouts).
+
+For a code example on how to use report labels for an RDL layout, see [Walkthrough: Designing a Report from Multiple Tables](devenv-walktrough-designing-reports-multiple-tables.md).
 
 For more information about labels, see [Working with labels](devenv-using-labels.md).
-
 
 ## Report example
 
@@ -313,14 +329,29 @@ report 50103 "Customer List"
 
 It's possible to schedule a report to run at your desired date and time by using **AllowScheduling** property. By setting the property to *true*, you'll get the **Schedule** action button to set the date and time for your report. To learn more about scheduling a report, see [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md) and [Schedule a report](/dynamics365/business-central/ui-work-report#ScheduleReport).
 
+## Report limits 
+
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. Examples of limits are: 
+- The maximum number of rows that can be processed in a report.
+- The maximum number of documents that can be merged in a report using a Word layout.
+- The maximum execution time that it can take to generate a report.
+
+If any of these limits are reached, then the report is cancelled. If a report gets cancelled, you get an event in telemetry. For more information, see [Telemetry for report generation cancelled](../administration/telemetry-reports-trace.md#cancellation-report-generation).
+
+For more information on report limits in [!INCLUDE[prod_short](includes/prod_short.md)] and how they are configured in the online service, see [Report limits in Business Central](../administration/operational-limits-online.md#Reports).
+
+For more information on how to configure report limits in [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, see [Server settings for reports](../administration/configure-server-instance.md#Reports).
+
+
 ## See also
 
 [Report Extension Object](devenv-report-ext-object.md)  
 [Using request pages with reports](devenv-request-pages-for-reports.md)  
-[Report datatype](methods-auto/report/report-data-type.md)  
+[Report datatype (AL reference)](methods-auto/report/report-data-type.md)  
 [Report Properties](properties/devenv-report-properties.md)  
 [How users can schedule a report](/dynamics365/business-central/ui-work-report#ScheduleReport.md)  
 [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md)   
+[IncludeCaption property](properties/devenv-includecaption-property.md)   
 [Defining a Report Dataset](devenv-report-dataset.md)  
 [Request Pages](devenv-request-pages.md)  
 [Adding Help Links from Reports](devenv-adding-help-links-from-pages-tables-xmlports.md)  

@@ -1,13 +1,12 @@
 ---
-title: profile resource type | Microsoft Docs
+title: profile resource type
 description: A profile object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/05/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # profile resource type

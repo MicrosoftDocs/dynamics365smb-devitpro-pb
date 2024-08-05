@@ -1,16 +1,14 @@
 ---
-title: "Method Attributes"
-description: "The attributes that you can apply to methods in AL for Business Central"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Method attributes
+description: The attributes that you can apply to methods in AL for Business Central.
+ms.date: 04/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Method Attributes
+# Method attributes
 
 An attribute is a modifier on a method declaration that specifies information that controls the method's use and behavior. Adding an attribute on a method declaration is also known as *decorating* a method. For example, decorating a method with the `Integration` attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
 
@@ -29,6 +27,6 @@ For example, the `Integration` attribute has two arguments, and the syntax is:
 > [!TIP]  
 > If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
 
-## See Also
+## See also
 
-[AL Method Reference](../methods-auto/library.md)  
+[AL method reference](../methods-auto/library.md)  

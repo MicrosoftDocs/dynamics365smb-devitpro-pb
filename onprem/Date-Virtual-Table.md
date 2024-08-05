@@ -1,12 +1,7 @@
 ---
 title: "Date Virtual Table"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 4ec5426f-481c-43b9-a2ee-ab566c29b87f
 caps.latest.revision: 11
 ---

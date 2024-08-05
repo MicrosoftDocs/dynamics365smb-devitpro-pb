@@ -2,7 +2,6 @@
 title: "How to make compelling videos"
 description: How to make compelling videos to market your app
 author: a-emniel
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual

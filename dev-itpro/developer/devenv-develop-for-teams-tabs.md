@@ -4,7 +4,7 @@ description: Learn how to use the Graph API to programmatically add a Business C
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.date: 12/28/2023
 ms.custom: bap-template
@@ -76,7 +76,7 @@ The request body also called the payload, follows the request URL and specifies 
 
 ## Example
 
-This example illustrates how you can add a team, channel, and Business Central tab. You add a tab in Teams that displays page 9305 **Sale Orders**. There are several tools that you can use, like AL code, PowerShell, Postman, and more. In this example, you use the Graph Explorer. For details about using Graph Explorer, see [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features).
+This example illustrates how you can add a team, channel, and Business Central tab. You add a tab in Teams that displays page 9305 **Sale Orders**. There are several tools that you can use, like AL code, PowerShell, API explorer tools, and more. In this example, you use the Graph Explorer. For details about using Graph Explorer, see [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features).
 
 ### Create team
 

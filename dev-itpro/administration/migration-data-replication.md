@@ -3,8 +3,8 @@ title: Data replication overview
 description: The next phase of data migration process is replicating the on-premises data to online, also known as data migration.
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer.
-ms.service: dynamics365-business-central
+ms.reviewer: jswymer
+
 ms.topic: conceptual
 ms.date: 01/15/2023
 ms.custom: bap-template
@@ -63,6 +63,8 @@ When a company is created in [!INCLUDE [prod_short](../developer/includes/prod_s
 > When you schedule an initialization in the **Hybrid Companies** list, we recommend not using the company until its initialized. The setup data could be missing, which might cause problems. <!--then you cannot make any modifications to the company until the initialization task completes.-->
 
 ## Rerunning data replication
+
+> **APPLIES TO: Migration from Business Central on-premises only
 
 The first time you run the data replication, all on-premises tables are replicated to the online tenant database. This run is referred to as a full replication. On subsequent runs, the process uses SQL change tracking versions to replicate only data that has changed since the last replication, making the process faster.
 

@@ -3,11 +3,10 @@ title: Complete cloud migration
 description: This article describes the task you do to complete the data migration from on-premises to online. 
 author: jswymer
 ms.author: jswymer 
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: how-to 
 ms.date: 12/15/2023
 ms.custom: bap-template 
-ms-service: dynamics365-business-central
 ---
 
 # Complete cloud migration to Business Central online
@@ -16,7 +15,6 @@ This article explains tasks you do in the final phase of cloud migration&mdash;t
 
 > [!TIP]
 > To keep track of which of task you've done, use the [Post Migration Checklist](https://businesscentral.dynamics.com/?page=4020) page to check off tasks as you go along. To open the checklist, go to **Cloud Migration Setup** page then select **Actions** > **Setup checklist**.
-
 
 ## Step 1 Disable the cloud migration
 
@@ -35,6 +33,8 @@ To disable cloud migration, complete the following steps:
 > The integration runtime remains installed on your on-premise machine. However, if it's not used for cloud migration within a couple of weeks, its cloud registration is automatically cleaned up. If you want to migrate data again, you must go through the cloud migration setup again and may also need to re-install the Self-hosted Integration Runtime.
 
 ## <a name="API"></a> Step 2 Run API data upgrade
+
+> **APPLIES TO:** Migration from Business Central on-premises only
 
 This step is only required if you skipped the API data upgrade during the cloud migration. [Learn more about skipping API data upgrade](migration-skip-api-data-upgrade.md). 
 
@@ -77,6 +77,8 @@ User accounts and permissions in Business Central on-premises aren't migrated to
 
 ## Step 4 Define user mappings
 
+> **APPLIES TO:** Migration from Business Central on-premises only
+
 If any data or transactions are dependent on a specific on-premises user account, then you must map the on-premises user account to an online user account. 
 
 > [!IMPORTANT]
@@ -95,7 +97,6 @@ If any data or transactions are dependent on a specific on-premises user account
 
 ## Step 5 Reconfigure the Dynamics 365 Sales connection
 
+> **APPLIES TO:** Migration from Business Central on-premises only
+
 If you're integrating with Dynamics 365 Sales, you have to set up the connection again. For more information, see [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).
-
-
-

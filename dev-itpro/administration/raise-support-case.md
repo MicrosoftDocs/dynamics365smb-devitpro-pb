@@ -4,12 +4,10 @@ description: Learn about how to escalate technical support cases on behalf of yo
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 12/29/2021
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 
 # Escalate Support Issues to Microsoft

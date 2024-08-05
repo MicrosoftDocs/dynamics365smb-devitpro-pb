@@ -4,13 +4,11 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: sorenfriisalexandersen
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms. search.keywords: deprecated, Belgium, local functionality
+ms.devlang: al
+ms.search.keywords: deprecated, Belgium, local functionality
 ms.date: 04/01/2021
 ms.author: soalex
-
+ms.reviewer: jswymer
 ---
 
 # Deprecated Features in the Belgian Version of Microsoft Dynamics 365 Business Central

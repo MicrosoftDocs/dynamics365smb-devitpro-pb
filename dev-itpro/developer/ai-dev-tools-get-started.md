@@ -1,17 +1,19 @@
 ---
 title: Get set up with Azure OpenAI Service
-description: Learn about the tasks that must be completed so that you can start integrating Azure OpenAI Service in your extensions to create copilot experiences in Business Central
+description: Learn about the tasks that must be completed so that you can start integrating Azure OpenAI Service in your extensions to create Copilot experiences in Business Central
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.collection: get-started
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ms.date: 11/06/2023
 ms.custom: bap-template
 ---
 # Get set up with Azure OpenAI Service
 
-This article explains the tasks that must be completed so that you can start integrating Azure OpenAI Service in your extensions to create copilot experiences in Business Central.
+This article explains the tasks that must be completed so that you can start integrating Azure OpenAI Service in your extensions to create Copilot experiences in Business Central.
 
 1. Get an Azure subscription. You can sign up for paid plan or start for free.
 
@@ -26,7 +28,7 @@ This article explains the tasks that must be completed so that you can start int
 
    This task is done using [Azure portal](https://portal.azure.com) and [Azure AI Studio](https://oai.azure.com/). [Learn more](/azure/ai-services/openai/how-to/create-resource).
 
-   After you complete this step, you can start to develop your copilot experience, which requires the following information about the resource and deployed model:
+   After you complete this step, you can start to develop your Copilot experience, which requires the following information about the resource and deployed model:
 
    |What|Where to find it|
    |-|-|
@@ -36,4 +38,4 @@ This article explains the tasks that must be completed so that you can start int
 ## Next steps
 
 - [Build AI capability in AL](ai-build-capability-in-al.md)  
-- [Build the copilot user experience](ai-build-experience.md)  
+- [Build the Copilot user experience](ai-build-experience.md)  

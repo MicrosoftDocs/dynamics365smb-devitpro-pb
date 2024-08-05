@@ -3,11 +3,11 @@ title: "Setting up the Excel Add-In for Editing Data"
 description: Learn about how to configure the Excel add-in so users can edit data in Excel and push back to Business Central.
 author: jswymer
 ms.author: jswymer
-ms.custom: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 05/25/2022
+ms.date: 06/13/2024
+ms.reviewer: jswymer
 ---
 # Setting up the Business Central Add-in for Excel in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises
 
@@ -227,7 +227,7 @@ You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.m
 
 2. In the **Client Services** section, set the **Web Client Base URL** field to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
-    This value is the root portion of all URLs that are used to access pages in the web client. The value must have the format `https://[hostname:port]/[instance]`, such as `https://MyBCWebServer/BC` or `https://cronusinternationltd.onmicrosoft.com/BC210`.
+    This value is the root portion of all URLs that are used to access pages in the web client. The value must have the format `https://[hostname:port]/[instance]`, such as `https://MyBCWebServer/BC` or `https://cronusinternationltd.onmicrosoft.com/BC240`.
 
     If you're using the Set-NAVServerConfiguration cmdlet, set the `PublicWebBaseUrl` key.
 
@@ -239,7 +239,7 @@ You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.m
 
    1. Set the **OData Base URL** field to the public URL for accessing OData services.
 
-       The URL must have the following format `https://<hostname>:<port>/<instance>/ODataV4/`, such as `https://localhost:7048/BC210/ODataV4/`.
+       The URL must have the following format `https://<hostname>:<port>/<instance>/ODataV4/`, such as `https://localhost:7048/BC240/ODataV4/`.
 
        With the Set-NAVServerConfiguration cmdlet, set the `PublicODataBaseUrl` key.
 

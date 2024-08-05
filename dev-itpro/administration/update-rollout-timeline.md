@@ -3,12 +3,11 @@ title: Major updates and minor updates for Business Central online
 description: Learn about the timeline for how updates of Business Central online rollout. You can prepare for both major updates and minor updates with minimal disruption of your users' productivity.  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
 ms.date: 01/09/2024
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Major updates and minor updates for Business Central online
@@ -41,7 +40,7 @@ The following table describes the milestones with example dates for the two rele
 |Last scheduled update date|June 1 |December 1|The last date you can choose to extend your upgrade date to. <!--</br>Starting with 2023 release wave 2, the update window is again 30 days after an update is available, which makes these two dates May 1 and November 1, respectively.-->|
 
 > [!IMPORTANT]
-> For 2023 release wave 2, the update window remains 60 days. Based on feedback, we're currently evaluating longer-term processes for major updates and update windows. New policies might be updated at a later stage, which can include a return to a update window that again is 30 days after an update is available.
+> For 2024 release wave 1, the update window remains 60 days. Based on feedback, we're currently evaluating longer-term processes for major updates and update windows. New policies might be updated at a later stage, which can include a return to a update window that again is 30 days after an update is available.
 >
 >We recommend that you keep any apps and per-tenant extensions ready for upgrade at any given time, and that you actively test compatibility. We encourage everyone to use the time needed to get apps, per-tenant extensions, and processes ready for a shorter update window.
   
@@ -93,7 +92,7 @@ Starting this day, you can use the [!INCLUDE[prodadmincenter](../developer/inclu
 When the scheduled update date arrives, the update runs automatically within the update window that you've specified for this environment. All users will be disconnected from this environment, and all attempts to sign in during the update will be blocked with the message `Service is under maintenance`.  
 
 > [!IMPORTANT]
-> We strongly encourage that you set an update window for all production environments so that updates don't start during business hours.
+> The update duration differs depending on the environment. We strongly recommend scheduling the update for a date when it would be acceptable for the environment to be inaccessible until the end of its update window.
 
 For more information, see [Set the update window for each environment](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).  
 
@@ -123,7 +122,7 @@ In some cases, even after the update is available in your area, you're still not
     While most AppSource apps are kept up to date by the app providers, a particular app might need more time to prepare for the next major update and isn't yet available for it. In this situation, contact the app owner to understand their availability plans.  
 
 > [!TIP]
-> Make sure each environment has the right contacts set up to get email notification. For more information, see [Managing Tenant-Specific Notifications](tenant-admin-center-notifications.md).
+> Make sure every tenant has the right contacts set up to get email notification. For more information, see [Managing Tenant-Specific Notifications](tenant-admin-center-notifications.md).
 
 ## Failed updates and rescheduling
 

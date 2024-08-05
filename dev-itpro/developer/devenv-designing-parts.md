@@ -2,11 +2,8 @@
 title: Page Parts Overview
 description: "Provides and overview of the parts concept."
 author: mikebcMSFT
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: jswymer
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: mikebc
 ---

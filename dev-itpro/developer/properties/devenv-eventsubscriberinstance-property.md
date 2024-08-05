@@ -2,13 +2,10 @@
 title: "EventSubscriberInstance Property"
 description: "Specifies how event subscriber functions in a codeunit are bound to the codeunit instance and the events that they subscribe to."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/24/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -75,7 +72,7 @@ The following code creates codeunit that publishes the `OnAddressLineChanged` ev
 codeunit 50100 MyPublishers
 {
     [IntegrationEvent(false, false)]
-    procedure OnAddressLineChanged(line: Text[100]);
+    procedure OnAddressLineChanged(line: Text[100])
     begin
     end;
 }
@@ -90,7 +87,7 @@ codeunit 50101 MySubscribers
     EventSubscriberInstance = Manual;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
-    procedure CheckAddressLine(line: Text[100]);
+    procedure CheckAddressLine(line: Text[100])
     begin
         if (STRPOS(line, '+') > 0) then begin
             MESSAGE('Can''t use a plus sign (+) in the address [' + line + ']');

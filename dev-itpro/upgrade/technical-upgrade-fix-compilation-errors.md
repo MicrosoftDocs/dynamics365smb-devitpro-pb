@@ -3,11 +3,11 @@ title: Fixing compilation errors for technical upgrade
 description: Describes how to fix compilation errors that occur when compiling extensions during a technical upgrade.
 ms.custom: bap-template
 ms.date: 03/24/2023
-ms.reviewer: na
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Fixing compilation errors for technical upgrade
 

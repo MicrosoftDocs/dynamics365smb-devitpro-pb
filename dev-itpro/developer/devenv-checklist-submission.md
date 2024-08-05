@@ -2,10 +2,8 @@
 title: Technical validation checklist
 description: Describes the steps you must go through to successfully submit your app to AppSource using AppSourceCop for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 02/28/2023
-ms.reviewer: solsen
-ms.suite: na
+ms.date: 03/04/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: freddyk
 ---
@@ -107,7 +105,7 @@ Include app and all library apps in both previousApps and apps and also include 
 > [!NOTE]  
 > The Run-AlValidation can't see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
 
-> [!Important]  
+> [!IMPORTANT]
 > The computer on which you run this command must have Docker and the latest `BcContainerHelper` PowerShell module installed and be able to run [!INCLUDE [prod_short](includes/prod_short.md)] on Docker.
 >
 > If you're having issues with [!INCLUDE [prod_short](includes/prod_short.md)] on Docker, you might be able to find help here: [https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker](https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker).
@@ -115,7 +113,7 @@ Include app and all library apps in both previousApps and apps and also include 
 > You can use [https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest](https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest) to create an Azure VM, which has all prerequisites installed to run [!INCLUDE [prod_short](includes/prod_short.md)] on Docker.
 
 > [!NOTE]  
-> It is recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
+> It's recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
 >
 > You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for Github: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
 

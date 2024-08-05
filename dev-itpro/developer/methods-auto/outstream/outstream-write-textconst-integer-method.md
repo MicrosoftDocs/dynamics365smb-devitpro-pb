@@ -2,13 +2,10 @@
 title: "OutStream.Write(TextConst [, Integer]) Method"
 description: "Writes a specified number of bytes to the stream."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -31,6 +28,7 @@ An instance of the [OutStream](outstream-data-type.md) data type.
 *Value*  
 &emsp;Type: [TextConst](../textconst/textconst-data-type.md)  
 Contains the data to be written.  
+
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of bytes to be written. In the case of data types other than string, code, and binary, if you specify a length that differs from the size of the variable, an error message is displayed.  

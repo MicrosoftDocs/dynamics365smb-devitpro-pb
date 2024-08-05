@@ -1,12 +1,7 @@
 ---
 title: "EXPORTENCRYPTIONKEY"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 82e799d6-dbe0-4e9e-8507-bc43862ac201
 caps.latest.revision: 10
 ---

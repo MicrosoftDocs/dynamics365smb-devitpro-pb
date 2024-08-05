@@ -1,14 +1,11 @@
 ---
 title: "Upgrade to Business Central 2023 Wave 1"
 description: Provides an overview of Business Central 2023 Release Wave 1 upgrade
-ms.custom: na
 ms.date: 08/31/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2023 Release Wave 1
 
