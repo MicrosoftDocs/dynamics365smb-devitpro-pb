@@ -107,7 +107,7 @@ While scheduled profiling is enabled for a session, it's not possible to attach 
 
 The **Active Schedule ID** field in the **Profiler Schedules** page contains the active schedule for the current session. It's empty if profiling isn't enabled.
 
-### What is the performance impact of running with a profiler schedule? Will the users be affected?
+### What's the performance impact of running with a profiler schedule? Will the users be affected?
 
 A user whose session, which is being profiled might experience some performance degradation due to the recording. This is because activities need to be recorded and stored for further investigation. The rule of thumb is to limit the duration of the schedules to the minimum required for the investigation and to apply schedules to as few users as possible.
 
@@ -115,21 +115,20 @@ A user whose session, which is being profiled might experience some performance 
 
 For background jobs and web service calls, one profile is generated for every activity. For users on the web browser the amount depends on their workflow. To ensure that the collected data is useful for investigations and doesn't take up unnecessary storage space, use a high enough value for the **Activity Duration Threshold** setting and limit the duration of schedules to the shortest timespan possible to record the activities of a user.
 
-### Why are profiles appearing with a delay in the Performance Profiles page?
+### Why are profiles appearing with a delay in the **Performance Profiles** page?
 
 The recorded profiles are processed in the background and might take some time to appear. You can use the **Refresh** action to see the latest results.
 
 ### I set up a profile and verified that profiling is enabled for a user, but profiles aren't appearing for an interaction. What went wrong?
 
-First, ensure that the **Activity Duration Threshold** and **Sampling Frequency** are set to a low enough value to capture the activities you're trying to record. If the activities are still not being captured,
-it could be that little time is spent executing AL code but something else is making the execution last longer, such as system functionalities.
+First, ensure that the **Activity Duration Threshold** and **Sampling Frequency** are set to a low enough value to capture the activities you're trying to record. If the activities are still not being captured, it could be that little time is spent executing AL code but something else is making the execution last longer, such as system functionalities.
 
-### I see some profiles in the **Performance Profiles** page but I deleted the schedule
+### I see some profiles in the **Performance Profiles** page, but I deleted the schedule?
 
-Due to the background processing of profiles, it's possible that some profiles will be processed after their associated schedule is deleted. The system will automatically delete these profiles in a regular interval.
+Due to the background processing of profiles, it's possible that some profiles will be processed after their associated schedule is deleted. The system automatically deletes these profiles in a regular interval.
 
 
-## See Also
+## See also
 
-[Managing Technical Support](/dynamics365/business-central/dev-itpro/administration/manage-technical-support)  
-[Escalate support issues to Microsoft](/dynamics365/business-central/dev-itpro/administration/raise-support-case)
+[Managing Technical Support](manage-technical-support.md)  
+[Escalate support issues to Microsoft](raise-support-case.md)
