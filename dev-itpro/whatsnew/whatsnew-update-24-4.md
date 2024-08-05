@@ -2,7 +2,7 @@
 title: Update 24.4 for Microsoft Dynamics 365 Business Central 2024 Release Wave 1
 description: Get an overview of new and changed capabilities in the 24.4 update of Business Central online, which is part of 2024 release wave 1.
 ms.author: jswymer
-ms.date: 07/26/2024
+ms.date: 08/05/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 author: jswymer
@@ -16,7 +16,7 @@ Would you like to know what's changed in update 24.4? Below you find an overview
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5042530) and download the files for on-premises [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5042530) and expect the download files for the 24.4 on-premises release by **August 7** [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 
