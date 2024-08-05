@@ -2,11 +2,11 @@
 title: Enabling APIs for Microsoft Dynamics 365 Business Central
 description: Describing the steps you must go through to enable access to the APIs.
 author: SusanneWindfeldPedersen
-ms.custom: na
+ms.custom: how-to
 ms.date: 02/07/2024
-ms.reviewer: na
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Enabling the APIs for Business Central
@@ -48,6 +48,6 @@ Depending on where you want to access the APIs from, you must specify the correc
 
 ## See also
 
-[Developing Connect apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
+[Developing connect apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
 [Microsoft web services overview](../../webservices/web-services.md)  
 [OpenAPI specification](dynamics-open-api.md)  

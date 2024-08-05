@@ -4,8 +4,9 @@ description: A journal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # journal resource type
@@ -49,6 +50,7 @@ The response has no content; the response code is 204.
 |id|GUID|The unique ID of the journal. Non-editable.|
 |code|string|The code of the journal.|
 |displayName|string|Specifies the journal's name. This name will appear on all sales documents for the journal.|
+|templateDisplayName|string||
 |lastModifiedDateTime|datetime|The last datetime the journal was modified. Read-Only.|
 |balancingAccountId|GUID|The balancing G/L Account ID.|
 |balancingAccountNumber|string|The balancing G/L Account number.|
@@ -63,6 +65,7 @@ Here is a JSON representation of the journal resource.
     "id": "GUID",
     "code": "string",
     "displayName": "string",
+    "templateDisplayName": "string",
     "lastModifiedDateTime": "datetime",
     "balancingAccountId": "GUID",
     "balancingAccountNumber": "string"

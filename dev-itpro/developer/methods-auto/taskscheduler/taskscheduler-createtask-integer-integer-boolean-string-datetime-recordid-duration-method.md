@@ -1,12 +1,11 @@
 ---
 title: "TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration) Method"
-description: "Adds a task to ensure that a codeunit is not run before the specified time. (duration version)"
+description: "Adds a task to be run by the task scheduler."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/15/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -14,7 +13,7 @@ author: SusanneWindfeldPedersen
 # TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration) Method
 > **Version**: _Available or changed with runtime version 7.0._
 
-Adds a task to ensure that a codeunit is not run before the specified time.
+Adds a task to be run by the task scheduler. The task is ensured to not run before the specified time. This method also allows you to set a timeout for the task.
 
 
 ## Syntax

@@ -2,11 +2,10 @@
 title: "List.LastIndexOf(T) Method"
 description: "Searches for the specified value and returns the one-based index of the last occurrence within the entire List."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/10/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

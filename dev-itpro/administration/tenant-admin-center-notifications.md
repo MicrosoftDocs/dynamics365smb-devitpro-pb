@@ -8,6 +8,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, notifications
 ms.date: 04/12/2023
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Manage Tenant-Specific Notifications

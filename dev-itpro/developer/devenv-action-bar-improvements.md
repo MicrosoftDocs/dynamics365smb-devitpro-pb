@@ -3,7 +3,7 @@ title: Action bar improvements
 description: Introducing the modern action bar in Dynamics 365 Business Central
 author: jacobwj
 ms.author: solsen
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.date: 03/08/2024
 ms.custom: bap-template
@@ -11,11 +11,13 @@ ms.custom: bap-template
 
 # Action bar improvements
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1, we are making the modern action bar available and turned on for all users. Since its introduction in release wave 2, 2022, the modern action bar has been the default for *new* customers and is now becoming the default for *all* customers upgrading to release wave 1, 2024.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1, we're making the modern action bar available and turned on for all users. Since its introduction in release wave 2, 2022, the modern action bar has been the default for *new* customers and is now becoming the default for *all* customers upgrading to release wave 1, 2024.
 
-Users who have already been using the modern action bar will notice a few additional optimizations in its newest version, such as a more compact representation of Search and Analysis Mode, and the introduction of Microsoft Copilot!
+Users who have already been using the modern action bar notice a few extra optimizations in its newest version, such as a more compact representation of Search and Analysis Mode, and the introduction of Microsoft Copilot!
 
-Users who have *not* been using the modern action bar with earlier releases of [!INCLUDE [prod_short](includes/prod_short.md)] will experience that the action bar looks different to what they were used to, and that some of their routines can need adjustment. The reason is that the modern action bar places some actions differently compared to the earlier action bar (now known as the **legacy action bar**) to give more prominence to important actions and reduce the numbers of clicks to access them.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1jUai]
+
+Users who *haven't* been using the modern action bar with earlier releases of [!INCLUDE [prod_short](includes/prod_short.md)] experience that the action bar looks different to what they were used to, and that some of their routines can need adjustment. The reason is that the modern action bar places some actions differently compared to the earlier action bar (now known as the **legacy action bar**) to give more prominence to important actions and reduce the numbers of clicks to access them.
 
 ## Split buttons enhance productivity
 
@@ -31,17 +33,17 @@ With document, card, worksheet, and listplus pages that have actions in the Home
 
 ## Legacy action bar
 
-While the majority of users are confident with split buttons, and likely know the concept from other software packages, in the rare cases where split buttons or some of the other modern action bar improvements are causing problems for a user, we provide a new personalization option to use the legacy action bar instead.
+While most users are confident with split buttons, and likely know the concept from other software packages, in the rare cases where split buttons or some of the other modern action bar improvements are causing problems for a user, we provide a new personalization option to use the legacy action bar instead.
 
-The Legacy Action Bar toggle is available in users' **My settings** page and reverts the action bar for individual users to the earlier appearance before the modern action bar. Note that we recommend using the modern action bar for the best productivity and that future releases of [!INCLUDE [prod_short](includes/prod_short.md)] may not provide the legacy action bar option.
+The Legacy Action Bar toggle is available in users' **My settings** page and reverts the action bar for individual users to the earlier appearance before the modern action bar. We recommend using the modern action bar for the best productivity and that future releases of [!INCLUDE [prod_short](includes/prod_short.md)] might not provide the legacy action bar option.
 
 ## See also
 
 [Actions in AL](devenv-actions-overview.md)  
-[Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  
-[Actions in the User Interface](devenv-actions-user-interface.md)  
-[How to Promote Actions](devenv-promoted-actions.md)  
-[Organizing Promoted Actions](devenv-organizing-promoted-actions.md)  
-[Common Promoted Action Groups](devenv-common-promoted-action-groups.md)  
-[Action Bar Improvements](devenv-action-bar-improvements.md)  
-[Behavioral Changes for Promoted Actions](devenv-promoted-actions-behavioral-changes.md)  
+[Adding actions to a page](devenv-adding-actions-to-a-page.md)  
+[Actions in the user interface](devenv-actions-user-interface.md)  
+[How to promote actions](devenv-promoted-actions.md)  
+[Organizing promoted actions](devenv-organizing-promoted-actions.md)  
+[Common promoted action groups](devenv-common-promoted-action-groups.md)  
+[Action bar improvements](devenv-action-bar-improvements.md)  
+[Behavioral changes for promoted actions](devenv-promoted-actions-behavioral-changes.md)  

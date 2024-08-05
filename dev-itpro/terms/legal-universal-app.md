@@ -1,11 +1,9 @@
 ---
 title: Legal Resources for Universal Apps for Dynamics NAV
 description: Get a list of links to legal information for the Business Central universal apps on the Windows, Apple, and Android platforms. 
-author: tsiggaar
-ms.custom: na
+author: jswymer
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: article
+ms.topic: overview
 ---
 # Legal Resources for Microsoft Dynamics NAV Universal Apps
 

@@ -1,13 +1,8 @@
 ---
 title: Create a Table Relationship
 description: Table relationships are defined using the TableRelation Property. Define both simple and advanced table relationship and set conditions and filters.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 265af3c3-7160-413d-8620-00c194bb1a4b
 caps.latest.revision: 8
 ---

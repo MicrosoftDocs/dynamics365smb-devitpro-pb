@@ -1,12 +1,7 @@
 ---
 title: "Developing and Installing a Microsoft Dynamics NAV Apps for SharePoint"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Developing and Installing a Microsoft Dynamics NAV Apps for SharePoint
@@ -32,7 +27,7 @@ For example, with the deployment scenario that is discussed in this guide, you w
 
 #### To register an app using the appregnew.aspx  
 
-1.  Go to the appregnew.aspx page for your subscription, such as `https://MyTenant.sharhepoint.com/_layouts/15/appregnew.aspx`, where `https://MyTenant.sharhepoint.com` is the URL of your SharePoint site.  
+1.  Go to the appregnew.aspx page for your subscription, such as `https://MyTenant.sharepoint.com/_layouts/15/appregnew.aspx`, where `https://MyTenant.sharhepoint.com` is the URL of your SharePoint site.  
 
 2.  Fill out the fields as described in the following table.  
 

@@ -7488,6 +7488,121 @@
     "source_path": "dev-itpro/developer/devenv-platform-overview.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-reference-overview",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-extending-drop-zones.md",
+    "redirect_url": "/dynamics365/business-central/application/",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/properties/devenv-table-properties.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-table-property-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/resources/dynamics_externalbusinesseventdefinitions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externalbusinesseventdefinitions_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/resources/dynamics_apicategoryroutes.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_apicategoryroutes_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/resources/dynamics_externaleventsubscriptions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_update.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_delete.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_create.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/api/dynamics_apicategoryroutes_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/migration-data-replication-troubleshooting.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/migration-setup-troubleshooting.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-user-personalization.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-user-personalization",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-profile-configuration.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-profile-configuration",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-icon-font-not-loaded.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-icon-font-not-loaded",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-client-returns-wrong-clienttype.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-returns-wrong-clienttype",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/methods-auto/notification/notification-addaction-method.md",
+    "redirect_url": "/dev-itpro/developer/methods-auto/notification/notification-addaction-string-integer-string-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/outstream/outstream-write-string-integer-method.md",
+    "redirect_url": "/dev-itpro/developer/methods-auto/outstream/outstream-write-text-integer-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/record/record-testfield-joker-string-errorinfo-method.md",
+    "redirect_url": "/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-errorinfo-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/record/record-testfield-joker-string-method.md",
+    "redirect_url": "/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/recordref/recordref-settable-method.md",
+    "redirect_url": "/dev-itpro/developer/methods-auto/recordref/recordref-settable-table-method",
+    "redirect_document_id": false
    }
   ] 
 }

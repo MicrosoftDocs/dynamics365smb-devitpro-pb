@@ -2,11 +2,10 @@
 title: "HttpContent Data Type"
 description: "Represents an HTTP entity body and content headers."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -49,7 +48,7 @@ The following example illustrates how to use the HttpContent type to send a simp
 ```al
 codeunit 50110 MyCodeunit
 {
-    procedure MakeRequest(uri: Text; payload: Text) responseText: Text;
+    procedure MakeRequest(uri: Text; payload: Text) responseText: Text
     var
         client: HttpClient;
         request: HttpRequestMessage;

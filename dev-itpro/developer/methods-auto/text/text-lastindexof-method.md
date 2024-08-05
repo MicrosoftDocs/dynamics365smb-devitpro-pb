@@ -2,11 +2,10 @@
 title: "Text.LastIndexOf(Text [, Integer]) Method"
 description: "Reports the one-based index position of the last occurrence of a specified string in this instance."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

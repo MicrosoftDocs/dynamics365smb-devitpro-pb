@@ -1,13 +1,8 @@
 ---
 title: Create a Table
 description: When you create a table, you must choose what type of information you want to store in it, which is held in fields i.e. declared in data types.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 33ba7a28-9f72-4950-9c6e-2ab687161c17
 caps.latest.revision: 7
 ---

@@ -2,11 +2,10 @@
 title: "RecordRef.IsDirty() Method"
 description: "Gets a boolean value that indicates whether the current in-memory instance of a record or filtered set of records has changed since being retrieved from the database."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +22,6 @@ Dirty :=   RecordRef.IsDirty()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  

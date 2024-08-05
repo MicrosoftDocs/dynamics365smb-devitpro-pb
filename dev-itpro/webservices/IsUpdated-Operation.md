@@ -1,8 +1,6 @@
 ---
 title: "IsUpdated operation"
-ms.custom: na
 ms.date: 12/22/2023
-ms.reviewer: na
 ms.topic: conceptual
 description: Discover Dynamics 365 Business Central's IsUpdated Operation - check object updates, manage concurrency, and prevent record change failures.
 ---

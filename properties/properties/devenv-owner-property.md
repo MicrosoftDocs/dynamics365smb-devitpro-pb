@@ -1,10 +1,7 @@
 ---
 title: "Owner Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f3c8331c-02c6-4ffe-97de-f280b4bf5ecf
 caps.latest.revision: 3

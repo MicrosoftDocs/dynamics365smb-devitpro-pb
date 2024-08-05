@@ -2,13 +2,8 @@
 title: "C/AL Variables"
 description: "Description of C/AL user-defined and system-defined variables."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: ccfdc996-006b-464b-a5e2-db14dd9dad5c
 caps.latest.revision: 22
 ---

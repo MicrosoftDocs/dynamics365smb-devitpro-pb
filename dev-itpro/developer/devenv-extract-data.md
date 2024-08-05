@@ -2,13 +2,12 @@
 title: "Extract data from Business Central"
 description: Explains how to extract data from Business Central with different tools
 ms.custom: bap-template
-ms.date: 06/12/2023
-ms.reviewer: na
+ms.date: 06/17/2024
 ms.topic: how-to
 ms.search.keywords: Power BI, reports, data, data warehouse, etl
 author: kennieNP
 ms.author: kepontop
-
+ms.reviewer: jswymer
 ---
 
 # Extract data from Business Central
@@ -37,7 +36,7 @@ The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_sh
 Also consider this pattern: For each company, start by determining which tables that you load data from have new data. You can do this in an AL codeunit that you expose as a web service endpoint. Based on the result of this initial call, only call the APIs that you know will return data. This practice reduces the number of API calls you need to issue for your incremental loads. The impact of this optimization depends on the distribution of new data since last load.
 
 > [!NOTE]
-> Starting in Business Central 2023 release wave 2 (v23), delta links are deprecated and will be removed from the product in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
+> Delta links were deprecated in Business Central 2023 release wave 2 (v23)and in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
 
 ## Tools for reading data
 

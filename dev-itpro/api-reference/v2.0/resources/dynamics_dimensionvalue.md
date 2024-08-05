@@ -4,8 +4,9 @@ description: A dimension value object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # dimensionValue resource type
@@ -40,6 +41,7 @@ Represents a dimension value in [!INCLUDE[prod_short](../../../includes/prod_sho
 |code|string|The code of the dimension value.|
 |dimensionId|GUID|The unique ID of dimension.|
 |displayName|string|Specifies the dimension value's name. This name will appear on all sales documents for the dimension value.|
+|consolidationCode|string||
 |lastModifiedDateTime|datetime|The last datetime the dimension value was modified. Read-Only.|
 
 ## JSON representation
@@ -53,6 +55,7 @@ Here is a JSON representation of the dimensionValue resource.
     "code": "string",
     "dimensionId": "GUID",
     "displayName": "string",
+    "consolidationCode": "string",
     "lastModifiedDateTime": "datetime"
 }
 ```

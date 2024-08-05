@@ -2,11 +2,10 @@
 title: "AboutTitle Property"
 description: "Sets the large-font title that appears in a teaching tip in the UI."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -18,6 +17,7 @@ Sets the large-font title that appears in a teaching tip in the UI.
 
 ## Applies to
 -   Page Custom Action
+-   Page File Upload Action
 -   Query
 -   Page
 -   Page Action

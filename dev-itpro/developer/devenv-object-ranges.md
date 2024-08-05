@@ -2,11 +2,11 @@
 title: Object ranges
 description: Description of the object ranges used for licensing in Business Central.
 author: SusanneWindfeldPedersen
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
-ms.date: 03/01/2024
+ms.date: 07/08/2024
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Object ranges in [!INCLUDE[prod_short](includes/prod_short.md)]
@@ -43,7 +43,7 @@ Partners can obtain IDs in this range for extensions for [!INCLUDE[prod_short](i
 
 For more information, see [Get Started with Building Apps](readiness/get-started.md).
 
-Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [here](https://go.microsoft.com/fwlink/?LinkId=871590&clcid=0x409).
+Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [here](https://www.microsoft.com/licensing/docs/view/Licensing-Guides).
 
 ## See also
 

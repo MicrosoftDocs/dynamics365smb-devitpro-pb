@@ -1,13 +1,8 @@
 ---
 title: "Codeunit 700 Page Management Error When Converting to Dynamics NAV 2018"
 description: "Explains how to resolve the compilation error that you get for Codeunit 700 Page Management when converting a database from Dynamics NAV 2017 to 2018."
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 ## Resolving Codeunit 700 Page Management Compilation Error 

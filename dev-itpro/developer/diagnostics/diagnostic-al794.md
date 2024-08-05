@@ -1,12 +1,11 @@
 ---
 title: "Compiler Error AL0794"
-description: "The property value '{0}' is not valid for the cue action '{1}'."
+description: "The value '{0}' for property '{1}' is not valid for action '{2}' defined in control '{3}' of type '{4}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -15,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The property value '{0}' is not valid for the cue action '{1}'.
+The value '{0}' for property '{1}' is not valid for action '{2}' defined in control '{3}' of type '{4}'.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

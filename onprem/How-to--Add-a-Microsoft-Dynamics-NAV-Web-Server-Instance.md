@@ -1,13 +1,8 @@
 ---
 title: Add Web Server Instance
 description: This topic describes how to use the Dynamics NAV Administration Shell to add a Dynamics NAV web server instance on a computer or a virtual machine.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: dc7646f1-c449-4281-af5d-8bb95ff33b08
 caps.latest.revision: 10
 ---

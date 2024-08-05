@@ -2,11 +2,10 @@
 title: "ModuleInfo.Id() Method"
 description: "Gets the ID of the specified application."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +22,6 @@ Id :=   ModuleInfo.Id()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *ModuleInfo*  
 &emsp;Type: [ModuleInfo](moduleinfo-data-type.md)  

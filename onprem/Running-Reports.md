@@ -1,13 +1,8 @@
 ---
 title: Run Reports
 description: Add a report to the Report tab of a page and preview the report from a client computer using the Report Viewer.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: c12c52a8-d4a8-4749-beb2-00229f98adfb
 caps.latest.revision: 4
 author: jswymer

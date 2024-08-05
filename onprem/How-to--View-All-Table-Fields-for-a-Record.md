@@ -1,12 +1,7 @@
 ---
 title: "How to: View All Table Fields for a Record"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 97d79fa5-bb51-4bf5-b473-345a22532ca9
 caps.latest.revision: 17
 ---

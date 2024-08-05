@@ -1,12 +1,7 @@
 ---
 title: "Getting Started"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 538ab316-6fd9-4412-97b8-b979bfebc882
 caps.latest.revision: 37
 ms.author: solsen

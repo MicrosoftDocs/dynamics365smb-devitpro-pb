@@ -1,12 +1,7 @@
 ---
 title: "General C/AL Programming Format"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: cf121aea-8230-4496-b57c-fd3f85230cc9
 caps.latest.revision: 10
 ---

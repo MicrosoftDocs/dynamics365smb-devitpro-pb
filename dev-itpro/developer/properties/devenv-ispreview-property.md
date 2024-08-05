@@ -2,11 +2,10 @@
 title: "IsPreview Property"
 description: "Specifies if the page is available as part of a preview release."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +22,7 @@ Specifies if the page is available as part of a preview release.
 
 ## Remarks
 
-The `IsPreview` property displays a note in the UI that the page or feature is currently in preview and is subject to change. The default value is `false`. This property is used when the `PageType` property is set to `PromptDialog`. For more information, see [The PromptDialog object](../devenv-page-type-promptdialog.md). 
+The `IsPreview` property displays a note in the UI that the page or feature is currently in preview and is subject to change. The default value is `false`. This property is used when the `PageType` property is set to `PromptDialog`. For more information, see [The PromptDialog page type](../devenv-page-type-promptdialog.md). 
 
 Setting `IsPreview` to `true` has no further impact across Business Central. It has no relation to the private or public preview programs for any Microsoft products, nor is it exclusive to sandbox environments.
 
@@ -31,6 +30,6 @@ Setting `IsPreview` to `true` has no further impact across Business Central. It 
 
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[The PromptDialog object](../devenv-page-type-promptdialog.md)  
+[The PromptDialog page type](../devenv-page-type-promptdialog.md)  
 [PromptMode property](devenv-promptmode-property.md)  
 [PageType property](devenv-pagetype-property.md)

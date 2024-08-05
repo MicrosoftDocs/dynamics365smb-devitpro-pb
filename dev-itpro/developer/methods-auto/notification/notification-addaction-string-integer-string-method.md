@@ -2,11 +2,10 @@
 title: "Notification.AddAction(Text, Integer, Text) Method"
 description: "Specifies an action for the notification."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,6 +40,39 @@ The name of the method in the Codeunit, which is specified by the CodeunitID par
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+An action provides a way for you to add an interactive notification that enables users to respond to or take action on the notification. The method that is called by the action contains logic that you want to run for the action.
+
+For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
+
+##  Example
+
+The following code creates two actions for a notification. The actions call the **RunAction1** and **RunAction2** methods in the codeunit **Action Handler**.
+
+```al
+MyNotification.Message := 'This is a notification';
+MyNotification.Scope := NotificationScope::LocalScope;
+MyNotification.AddAction('Action 1',CodeUnit::"Action Handler",'RunAction1');
+MyNotification.AddAction('Action 2',CodeUnit::"Action Handler",'RunAction2');
+MyNotification.Send;
+```
+
+To handle the actions, the **Action Handler** codeunit has two global methods that have a **Notification** data type parameter:
+
+```al
+procedure RunAction1@1(MyNotification@1000 : Notification);
+begin
+    Message('This is RunAction1');
+end;
+
+procedure RunAction2@2(MyNotification@1000 : Notification);
+begin
+ Message('This is RunAction2');
+end;
+```
+
 ## See Also
 [Notification Data Type](notification-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

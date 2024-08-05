@@ -1,12 +1,11 @@
 ---
 title: "Report.SaveAsXml(Integer, Text [, var Record]) Method"
-description: "Saves the resulting data set of a query as an .xml file."
+description: "Saves the resulting data set of a report as an .xml file."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -14,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Report.SaveAsXml(Integer, Text [, var Record]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Saves the resulting data set of a query as an .xml file. The following code shows the syntax of the SAVEASXML function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
+Saves the resulting data set of a query as an .xml file. The following code shows the syntax of the SaveAsXml method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.

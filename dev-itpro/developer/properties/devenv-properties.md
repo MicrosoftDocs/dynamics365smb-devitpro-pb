@@ -1,16 +1,16 @@
 ---
-title: "Properties Overview"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+title: Properties overview
+description: Explore Dynamics 365 Business Central Developer Properties for objects like tables, pages, and reports. Maximize efficiency with our guide.
+ms.date: 04/26/2024
 ms.topic: overview
 author: SusanneWindfeldPedersen
-description: Explore Dynamics 365 Business Central Developer Properties for objects like tables, pages, and reports. Maximize efficiency with our guide.
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Properties Overview
+# Properties overview
 
-This section describes the properties that are available to developers in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] for controlling the behavior of objects, like tables, pages, and reports.
+This section describes the properties that are available to developers in [!INCLUDE [prod_short](../includes/prod_short.md)] for controlling the behavior of objects, like tables, pages, and reports.
 
 > [!TIP]  
 > If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
@@ -43,29 +43,9 @@ page 50100 MyPage
 ```
 
 > [!TIP]
-> Use Ctrl+Space to trigger IntelliSense and get assistance on selecting a property and help on its syntax.
+> Use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to trigger IntelliSense and get assistance on selecting a property and help on its syntax.
 
-<!--
-`Promoted = true;`<br>
-`PromotedCategory = Process;`<br>
-`ApplicationArea = All;`
-
-
-In the sections below, properties are sorted according to the object(s) they apply to.
-
-- [Table and Table Extension Properties](devenv-table-properties.md)  
-- [Page and Page Extension Properties](devenv-page-property-overview.md)
-- [Codeunit Properties](devenv-codeunit-properties.md)  
-- [Query Properties](devenv-query-properties.md)  
-- [Report Properties](devenv-report-properties.md)  
-- [XMLPort Properties](devenv-xmlport-properties.md)  
-- [Control Add-In Properties](devenv-control-addin-properties.md)
-- [Enum Properties](devenv-enum-properties.md)
-- [View Properties](devenv-view-properties.md)
-- [Profile Properties](devenv-profile-properties.md)
-- [Integrating with Dynamics 365 for Sales](../devenv-integrating-dynamics-365-for-sales-extension-development.md)
--->
-## See Also
+## See also
 
 [Methods](../methods-auto/library.md)  
 [Triggers](../triggers-auto/devenv-triggers.md)  

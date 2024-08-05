@@ -1,15 +1,13 @@
 ---
-title: "Table Keys"
-description: Learn about table keys in Business Central
-ms.custom: na
-ms.date: 07/07/2022
-ms.reviewer: na
+title: Table keys
+description: Learn about table keys in AL, including primary and secondary keys, and how to define keys in table objects and table extension objects.
+ms.date: 04/26/2024
+ms.reviewer: solsen
 ms.topic: conceptual
-ms.assetid: 973de351-209a-44b7-b8f6-7218a1fa69e6
 author: jswymer
 ---
 
-# Table Keys
+# Table keys
 
 The database management system, which is SQL Server, uses keys to identify rows in a table. Keys identify the rows by combining one or more columns of a table. SQL also uses indexes to speed up data retrieval from rows in a table. This article explains how to create  keys and indexes for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables from AL code.
 
@@ -24,7 +22,7 @@ In AL, a key definition is a sequence of one or more field IDs from a table. You
 
     Secondary keys create indexes in SQL. They're defined in both table objects and table extension objects. You can define multiple secondary keys for a single table object and table extension object.
 
-    A key in table extension object can include fields from the base table object or the table extension object. There are some limitations, however. For more information, see [Limitations and Restrictions](#limits).
+    A key in table extension object can include fields from the base table object or the table extension object. There are some limitations, however. For more information, see [Limitations and restrictions](#limits).
 
 ## Primary keys
 
@@ -49,8 +47,8 @@ A secondary key can be disabled so that it doesn't occupy database space or use 
 
 The fields that make up the secondary keys don't always contain unique data. SQL Server doesn't reject records with duplicate data in secondary key fields. So if two or more records contain identical information in the secondary key, SQL Server uses the table's primary key to resolve this conflict.
 
->[!TIP]
->You can see a list of potential columns that can be indexed and other useful information about them in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on **Database Missing Indexes**. For more information on missing indexes, see [Missing Indexes in Dynamics 365 Business Central](../administration/database-missing-indexes.md)
+> [!TIP]
+> You can see a list of potential columns that can be indexed and other useful information about them in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on **Database Missing Indexes**. For more information on missing indexes, see [Missing indexes in Dynamics 365 Business Central](../administration/database-missing-indexes.md)
 
 ### Unique secondary keys
 
@@ -97,7 +95,8 @@ With a non-clustered columnstore index, you could just have one index defined as
 - ColumnStoreIndex = WareHouseId,Color,ItemId,Size,OnStock
 
 For more information, see:
-- [ColumnStoreIndex Property](properties/devenv-columnstoreindex-property.md)
+
+- [ColumnStoreIndex property](properties/devenv-columnstoreindex-property.md)
 - [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview)
 
 ## Clustered and non-clustered keys
@@ -155,13 +154,9 @@ The decision whether to use a few or many keys isn't easy. The appropriate keys 
 The overall speed depends on the following factors:  
 
 - Size of the database.  
-
 - Number of active keys.  
-
 - Complexity of the keys.  
-
 - Number of records in your tables.  
-
 - Speed of your computer and its hard disk.  
 
 ## Defining new keys
@@ -187,7 +182,7 @@ Replace `Name` with descriptive text that you want to use to identify the key. R
 In a table object, the first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
 
 > [!TIP]
-> Starting in Business Central version 18, it is possible to create a table extension that only holds key definitions. You can utilize this to add keys to tables in the base application or in AppSource extensions, where you don't have ownership of the table definitions. 
+> Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 18, it's possible to create a table extension that only holds key definitions. You can utilize this to add keys to tables in the base application or in AppSource extensions, where you don't have ownership of the table definitions. 
 
 The following code illustrates simple examples of a table object and table extension object.
 
@@ -328,9 +323,10 @@ Don't add keys that are fields of the base table. // still true
 
 When you invoke IntelliSense for table fields, the primary key members are marked with a `(PKx)` in the IntelliSense list, where `x` is a sequential number, which indicates the order of the field in the key. This allows you to identify the table fields that make up the primary key and the sequency of these fields in the key.
 
-## See Also
-[Key Properties](properties/devenv-key-properties.md)
-[Tables Overview](devenv-tables-overview.md)  
-[Table Object](devenv-table-object.md)  
-[Table Extension Object](devenv-table-ext-object.md)  
-[SystemId Field](devenv-table-system-fields.md#systemid)  
+## See also
+
+[Key properties](properties/devenv-key-properties.md)
+[Tables overview](devenv-tables-overview.md)  
+[Table object](devenv-table-object.md)  
+[Table extension object](devenv-table-ext-object.md)  
+[SystemId field](devenv-table-system-fields.md#systemid)  

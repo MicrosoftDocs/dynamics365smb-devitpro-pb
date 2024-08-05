@@ -2,13 +2,8 @@
 title: Web Services Overview
 description: Web services are a lightweight, industry-standard way to make application functionality available to a variety of external systems and users.
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ---
 # Microsoft Dynamics NAV Web Services Overview
 Web services are a lightweight, industry-standard way to make application functionality available to a variety of external systems and users. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports creation and publishing of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] functionality as web services. You can expose pages, codeunits, or queries as web services, and even enhance a page web service by using an extension codeunit. When you publish [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects as web services, they are immediately available on the network.  

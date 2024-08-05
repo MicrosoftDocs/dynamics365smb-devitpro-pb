@@ -1,12 +1,11 @@
 ---
 title: Install a version 21 update
 description: This article describes the tasks required for getting the monthly version 21 update applied to your Dynamics 365 Business Central on-premises.
-ms.custom: na
 ms.date: 01/04/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2022 Release Wave 2 Update
 
@@ -367,8 +366,9 @@ Follow the next tasks to update the application code to the new features and hot
 
 You publish the System Application extension only if it was used in old solution. Add-on extensions include Microsoft and third- party extensions that were used in the old solution.
 
+<!-- link outdated
 > [!NOTE]
-> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
+> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).-->
 
 ## Upgrade System Application
 

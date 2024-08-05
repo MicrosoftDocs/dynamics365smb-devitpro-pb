@@ -1,17 +1,17 @@
 ---
-title: "Joker Data Type"
-description: "Joker is an internal type, a wildcard, not exposed to AL developers."
+title: Joker Data Type
+description: The Joker data type is an internal type, a wildcard, not exposed to AL developers.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 04/26/2024
 ms.topic: reference
+ms.custom: evergreen
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Joker Data Type
+# Joker data type
  
-`Joker` is an *internal* data type that is not exposed to AL developers. Joker can replace any other type and represents a wildcard. In certain cases, `Joker` plays the role of a generic T which is inferred from the type of the left-hand side of the invocation expression, in other cases, it is inferred from another parameter.
+The `Joker` data type is an *internal* data type that isn't exposed to AL developers. `Joker` can replace any other type and represents a wildcard. In certain cases, `Joker` plays the role of a generic T which is inferred from the type of the left-hand side of the invocation expression, in other cases, it is inferred from another parameter.
 
 The following illustrates examples of how `Joker` is used in AL.
 
@@ -27,7 +27,7 @@ procedure SetFilter(Field: Joker, String: Text, [Value: Joker, ...])
 procedure SetAscending(Field: Joker, Ascending: Boolean)
 ```
 
-## See Also
+## See also
 
-[AL Method Reference](../methods-auto/library.md)  
-[AL Development Environment](../devenv-reference-overview.md)  
+[AL method reference](../methods-auto/library.md)  
+[AL development environment](../devenv-reference-overview.md)  

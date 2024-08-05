@@ -2,11 +2,10 @@
 title: "Xmlport.Export() Method"
 description: "Creates an XML data stream (XML document) and sends it to a chosen destination."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +20,6 @@ Creates an XML data stream (XML document) and sends it to a chosen destination.
 ```AL
 [Ok := ]  Xmlport.Export()
 ```
-
 ## Parameters
 *Xmlport*  
 &emsp;Type: [Xmlport](xmlport-data-type.md)  

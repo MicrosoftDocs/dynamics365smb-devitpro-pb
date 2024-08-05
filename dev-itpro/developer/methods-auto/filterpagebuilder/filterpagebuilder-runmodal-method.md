@@ -2,11 +2,10 @@
 title: "FilterPageBuilder.RunModal() Method"
 description: "Builds and runs the filter page that includes the filter controls that are stored in FilterPageBuilder object instance."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +20,6 @@ Builds and runs the filter page that includes the filter controls that are store
 ```AL
 [Ok := ]  FilterPageBuilder.RunModal()
 ```
-
 ## Parameters
 *FilterPageBuilder*  
 &emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  

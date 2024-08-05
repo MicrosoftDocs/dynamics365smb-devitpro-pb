@@ -3,11 +3,12 @@ title: (v1.0) taxAreas resource type
 description: (v1.0) A tax area.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # taxAreas resource type (v1.0)

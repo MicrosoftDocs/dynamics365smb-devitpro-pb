@@ -1,13 +1,8 @@
 ---
 title: "How to: Sign Up for a Microsoft Azure Subscription"
 author: jswymer
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 5533f7c8-364a-441c-8cbe-75864460ee39
 ms.author: jswymer
 ---

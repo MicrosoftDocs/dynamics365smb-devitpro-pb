@@ -2,11 +2,10 @@
 title: "Query.SaveAsXml(Integer, Text) Method"
 description: "Saves the resulting data set of a query as an .xml file."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -42,29 +41,14 @@ The path and name of the file that you want to save the query to.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- When the **SaveAsXML** method is called, the dataset is generated and then saved in XML format in the file and location that is designated by the *FileName* parameter.  
+When the **SaveAsXML** method is called, the dataset is generated and then saved in XML format in the file and location that is designated by the *FileName* parameter.
 
- The **SaveAsXML** method can be called at any place in the code and does not require that the **Close**, **Open**, or **Read** methods are called before it. When the **SaveAsXML** method is called, a new instance of the query is created. The query is implicitly opened, read, and closed. If there is currently a dataset in the opened state when the **SaveAsXML** method is called, then that instance is closed. This means that the following code is unauthorized because the query is not open on the second **Read** call.  
+## Open, Read, or Close semantics
 
-```al
-Query.Open;  
-Query.Read;  
-Query.SaveAsXML('c:\test.xml');  
-Query.Read;   
-```  
-
- The correct code for this example is as follows.  
-
-```al
-Query.Open;  
-Query.Read;  
-Query.SaveAsXML('c:\test.xml');  
-Query.Open;  
-Query.Read;   
-```  
+The **SaveAsXML** method can be called at any place in the code and does not require that the **Open**, **Read**, or **Close** methods are called before it. For more information, see [**Open**, **Read**, or **Close** semantics with the **SaveAsXML** method](./query-saveasxml-integer-outstream-method.md#open-read-or-close-semantics-with-the-saveasxml-method). 
 
 ## Example  
- The following example shows how to save a query with the name **My Customer Query** as an .xml file. The file is given the name **myquery.xml** and is saved on the c: drive of the computer running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
+The following example shows how to save a query with the name **My Customer Query** as an .xml file. The file is given the name **myquery.xml** and is saved on the c: drive of the computer running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
 
 ```al
 var
@@ -72,17 +56,18 @@ var
     OK: Boolean;
     Text000: Label 'Query was not saved.';
 begin
-    OK := MyCustomerQuery.SaveAsXML('c:\myquery.xml');  
+    OK := MyCustomerQuery.SaveAsXML(Query::MyCustomerQuery, 'c:\myquery.xml');  
     if not OK then  
       Error(Text000);  
 end;
 ```  
 
- If the file cannot be saved, then the follow message appears:  
+If the file cannot be saved, then the follow message appears:  
 
  **Query not saved.**
 
 ## See Also
+
 [Query Data Type](query-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

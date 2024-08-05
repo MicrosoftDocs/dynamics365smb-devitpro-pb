@@ -2,11 +2,10 @@
 title: "Compiler Error AL0750"
 description: "Enum values can't be nested."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/05/2022
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 Enum values can't be nested. Use '{0}' instead.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

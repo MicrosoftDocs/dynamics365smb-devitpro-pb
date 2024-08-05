@@ -6,9 +6,9 @@ author: SusanneWindfeldPedersen
 
 ms.topic: get-started
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
-
+ms.reviewer: solsen
 ---
 # Microsoft graph reference (v1.0)
 

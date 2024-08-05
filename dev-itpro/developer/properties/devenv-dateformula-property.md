@@ -2,11 +2,10 @@
 title: "DateFormula Property"
 description: "Sets a date formula used to verify that the date the user enters is correct."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/09/2022
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

@@ -1,16 +1,16 @@
 ---
-title: Trials and Subscriptions
+title: Trials and subscriptions
 description: Learn how it works with trials and subscriptions for Business Central online, and how the admin can cancel subscriptions.
 author: jswymer
-
 ms.topic: conceptual
 ms.search.keywords: preview, trial, sandbox, subscription
 ms.search.form: 1803, 1801
-ms.date: 05/25/2022
+ms.date: 06/26/2024
 ms.author: jswymer
-
+ms.reviewer: solsen
 ---
-# Business Central Trials and Subscriptions
+
+# Business Central trials and subscriptions
 
 Organizations across the world sign up for a free [!INCLUDE[prod_short](../includes/prod_short.md)] trial to explore the experience.  Then, when they're ready, they talk to a reselling partner about getting a subscription. In this article, we describe how the different types of trials work, and how the admin can remove licenses from users or cancel a subscription.  
 
@@ -48,11 +48,11 @@ The [quick start](/dynamics365/business-central/quick-start-business-central) ar
 If the data in a [!INCLUDE[prod_short](../includes/prod_short.md)] free trial, you can still start over with a fresh experience. Just create a new evaluation company, and then delete the original company. Open the **Companies** page and choose the **New** action to start the **Create New Company** assisted setup guide. The guide can help you set up a fresh evaluation company with sample data. You can also create a copy of your current company, sign out, and then sign into your new company.  
 
 > [!IMPORTANT]
-> When you share [!INCLUDE[prod_short](../includes/prod_short.md)] with other people from your organization, you must make sure other people are not logged in when you delete a company.  
+> When you share [!INCLUDE[prod_short](../includes/prod_short.md)] with other people from your organization, you must make sure other people aren't logged in when you delete a company.  
 
 ### When a free trial expires
 
-Most trials are based on people signing up at [https://dynamics.microsoft.com/business-central/](https://dynamics.microsoft.com/business-central/). These viral trials do not expire, unless the prospect switches to the 30-day trial, and provided that users access [!INCLUDE [prod_short](../includes/prod_short.md)] frequently.  
+Most trials are based on people signing up at [https://dynamics.microsoft.com/business-central/](https://dynamics.microsoft.com/business-central/). These viral trials don't expire, unless the prospect switches to the 30-day trial, and provided that users access [!INCLUDE [prod_short](../includes/prod_short.md)] frequently.  
 
 [!INCLUDE [admin-viral-trial-expiry](../developer/includes/admin-viral-trial-expiry.md)]
 ## Get started with a subscription
@@ -65,16 +65,16 @@ For more information about what you can do with [!INCLUDE [prod_short](../includ
 
 ### Removing a subscription
 
-If an organization decides to stop using [!INCLUDE [prod_short](../includes/prod_short.md)], an administrator must remove the subscription in the Microsoft 365 admin center. An email notification is sent to all administrators of the account. Deleting the subscription blocks all users from accessing their [!INCLUDE [prod_short](../includes/prod_short.md)], and deletes all data.  
+If an organization decides to stop using [!INCLUDE [prod_short](../includes/prod_short.md)], an administrator must remove the subscription in the Microsoft 365 admin center. An email notification is sent to all administrators of the account. Deleting the subscription blocks all users from accessing their [!INCLUDE [prod_short](../includes/prod_short.md)], and deletes all data. If the administrator doesn't remove the subscription, it'll eventually expire, see [Data and access when a trial and subscription ends](#expire).
 
 > [!WARNING]
-> The subscription is deleted immediately and can not be reactivated.
+> The subscription is deleted immediately and can't be reactivated.
 
 For partners cancelling a subscription on their customer's behalf, see [Suspend or cancel a subscription](/partner-center/create-a-new-subscription#suspend-or-cancel-a-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center content.
 
 ## <a name="expire"></a>Data and access when a trial or subscription ends
 
-Trials can expire, and so can a paid subscription, such as if the organization does not renew the subscription, stops payments, or if they cancel the subscription.  
+Trials can expire, and so can a paid subscription, such as if the organization doesn't renew the subscription, stops payments, or if they cancel the subscription.  
 
 [!INCLUDE [admin-extendtrials-periods](../developer/includes/admin-extendtrials-periods.md)]
 
@@ -93,7 +93,7 @@ The administrator of your [!INCLUDE[prod_short](../includes/prod_short.md)] and 
 
 ## <a name="infrastructure"></a>Understanding Business Central online infrastructure
 
-If you are migrating from an on-premises solution, understanding the infrastructure of [!INCLUDE [prod_short](../includes/prod_short.md)] online can help you make good choices for how to set up environments and companies. For more information and an example, see [Understanding the infrastructure of Business Central online](tenant-environment-topology.md).  
+If you're migrating from an on-premises solution, understanding the infrastructure of [!INCLUDE [prod_short](../includes/prod_short.md)] online can help you make good choices for how to set up environments and companies. For more information and an example, see [Understanding the infrastructure of Business Central online](tenant-environment-topology.md).  
 
 ## See also
 

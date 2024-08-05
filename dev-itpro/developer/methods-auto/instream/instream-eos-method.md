@@ -2,11 +2,10 @@
 title: "InStream.EOS() Method"
 description: "Indicates whether an input stream has reached End of Stream (EOS)."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +22,6 @@ IsEOS :=   InStream.EOS()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *InStream*  
 &emsp;Type: [InStream](instream-data-type.md)  

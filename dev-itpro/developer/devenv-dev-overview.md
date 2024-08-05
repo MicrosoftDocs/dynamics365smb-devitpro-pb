@@ -2,12 +2,11 @@
 title: Developing extensions in AL
 description: Overview of the development experience for building extensions using the AL language.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/01/2024
-ms.reviewer: na
 ms.topic: overview
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Development in AL
@@ -22,9 +21,12 @@ If you're new to building extensions, we recommend that you read this document t
 
 All functionality in [!INCLUDE[prod_short](includes/prod_short.md)] is coded in objects. The extension model is object-based; you create new objects, and extend existing objects depending on what you want your extension to do.
 
-* Table objects define the table schema that holds data.
-* Page objects represent the pages seen in the user interface.
-* Codeunits contain code for logical calculations and for the application behavior.
+- Table objects define the table schema that holds data.
+- Page objects represent the pages seen in the user interface.
+- Codeunits contain code for logical calculations and for the application behavior.
+- Report objects define the layout and data for reports.
+
+For more information about the objects that you can create for your extension, see [Extension objects overview](devenv-extension-object-overview.md).
 
 These objects are stored as code, known as AL code, and are saved in files with the `.al` file extension. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality, which allows you to work with multiple AL folders within one workspace. For more information on how to group a set of disparate project folders into one workspace, see [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md).
 

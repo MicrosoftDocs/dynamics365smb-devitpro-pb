@@ -1,12 +1,7 @@
 ---
 title: "Using Collections"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 302553e5-08c3-46d0-9c43-65f9e76f9c3c
 caps.latest.revision: 3
 ---

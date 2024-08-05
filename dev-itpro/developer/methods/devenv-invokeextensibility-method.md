@@ -1,19 +1,18 @@
 ---
-title: "InvokeExtensibilityMethod Method"
-description: "The InvokeExtensibilityMethod in control add-in for Business Central"
+title: InvokeExtensibilityMethod method
+description: Learn about the InvokeExtensibilityMethod in control add-ins for Business Central.
 ms.author: solsen
-ms.custom: na
-ms.date: 04/01/2022
-ms.reviewer: na
+ms.date: 04/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
-# InvokeExtensibilityMethod Method
+# InvokeExtensibilityMethod method
 
-Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] on the page that contains the control add-in. For more information, see [Control Add-in Object](../devenv-control-addin-object.md).
+Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] on the page that contains the control add-in. For more information, see [Control add-in object](../devenv-control-addin-object.md).
 
-For information about best practices on making control add-ins performant, see [Control Add-in Best Practices](../devenv-control-addin-bestpractices.md).
+For information about best practices on making control add-ins performant, see [Control add-in best practices](../devenv-control-addin-bestpractices.md).
   
 ## Method signature
 
@@ -32,7 +31,7 @@ For information about best practices on making control add-ins performant, see [
 > [!IMPORTANT]  
 > The callback functions are useful for synchronizing multiple calls to the server. This is used, for example, when transferring multiple data blocks to the server to prevent overflowing the communication channel between the client and the server.  
  
-## skipIfBusy Options
+## `skipIfBusy` options
 
 The following table illustrates the different settings of `skipIfBusy` combined with the client’s status.  
   
@@ -55,10 +54,11 @@ map.onLoadMap = function () {
 };  
 map.LoadMap(...);  
 ```
-## See Also
 
-[AL Method Reference](../methods-auto/library.md)  
-[GetEnvironment Method](devenv-getenvironment-method.md)   
-[GetImageResource Method](devenv-getimageresource-method.md)  
-[OpenWindow Method](devenv-openwindow-method.md)  
-[Asynchronous Considerations](../devenv-control-addin-asynchronous-considerations.md)
+## See also
+
+[AL method reference](../methods-auto/library.md)  
+[GetEnvironment method](devenv-getenvironment-method.md)   
+[GetImageResource method](devenv-getimageresource-method.md)  
+[OpenWindow method](devenv-openwindow-method.md)  
+[Asynchronous considerations](../devenv-control-addin-asynchronous-considerations.md)

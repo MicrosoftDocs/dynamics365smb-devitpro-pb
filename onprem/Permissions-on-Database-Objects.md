@@ -1,12 +1,7 @@
 ---
 title: "Permissions on Database Objects"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: ab8c997f-b5f8-40b1-913d-0b8906418b41
 caps.latest.revision: 11
 ---

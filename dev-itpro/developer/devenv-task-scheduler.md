@@ -1,7 +1,6 @@
 ---
 title: Task scheduler
 description: Learn about scheduled tasks and how the task scheduler works.
-ms.custom: na
 ms.date: 12/18/2023
 ms.reviewer: jswymer
 

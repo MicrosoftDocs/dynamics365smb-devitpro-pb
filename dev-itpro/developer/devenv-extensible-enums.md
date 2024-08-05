@@ -2,12 +2,11 @@
 title: Extensible Enums
 description: Overview of the enumeration type and the concept of extending them.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/01/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Extensible Enums

@@ -6,8 +6,10 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 03/04/2024
-ms.custom: bap-template
+ms.date: 04/30/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Dynamics 365 Business Central On-Premises 2022 Release Wave 2 Updates
@@ -28,6 +30,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5037539](https://support.microsoft.com/help/5037539)|Update 21.18| April 2024|Application Build 21.18.64166</br>Platform Build 21.0.64137|
 |[5036472](https://support.microsoft.com/help/5036472)|Update 21.17| March 2024|Application Build 21.17.63680</br>Platform Build 21.0.63661|
 |[5035205](https://support.microsoft.com/help/5035205)|Update 21.16| February 2024|Application Build 21.16.63199</br>Platform Build 21.0.63175|
 |[5034718](https://support.microsoft.com/help/5034718)|Update 21.15| January 2024|Application Build 21.15.62827</br>Platform Build 21.0.62811|
@@ -58,7 +61,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
-[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
+[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

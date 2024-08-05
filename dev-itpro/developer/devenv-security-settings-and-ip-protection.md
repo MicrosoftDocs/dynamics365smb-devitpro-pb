@@ -2,11 +2,10 @@
 title: "Resource exposure policy setting"
 description: Explains how to set the resource exposure policy for allowing download or debugging into extension to see the source code.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 01/03/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Resource exposure policy setting

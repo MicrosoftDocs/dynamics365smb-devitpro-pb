@@ -3,11 +3,10 @@ title: "View Properties"
 description: "This topic lists properties that apply to views."
 
 author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # View Properties

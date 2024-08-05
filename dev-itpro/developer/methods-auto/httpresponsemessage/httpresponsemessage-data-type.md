@@ -2,11 +2,10 @@
 title: "HttpResponseMessage Data Type"
 description: "Represents an HTTP response message including the status code and data."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -24,6 +23,8 @@ The following methods are available on instances of the HttpResponseMessage data
 |Method name|Description|
 |-----------|-----------|
 |[Content()](httpresponsemessage-content-method.md)|Gets the contents of the HTTP response.|
+|[GetCookie(Text, var Cookie)](httpresponsemessage-getcookie-method.md)|Gets the specified cookie given a name.|
+|[GetCookieNames()](httpresponsemessage-getcookienames-method.md)|Gets the list of cookie names.|
 |[Headers()](httpresponsemessage-headers-method.md)|Gets the HTTP response's HTTP headers.|
 |[HttpStatusCode()](httpresponsemessage-httpstatuscode-method.md)|Gets the status code of the HTTP response.|
 |[IsBlockedByEnvironment()](httpresponsemessage-isblockedbyenvironment-method.md)|Gets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request.|

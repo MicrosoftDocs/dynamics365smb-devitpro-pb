@@ -1,12 +1,14 @@
 ---
 title: Update 23.4 for Microsoft Dynamics 365 Business Central 2023 Release Wave 2
 description: Get an overview of new and changed capabilities in the 23.4 update of Business Central online, which is part of 2023 release wave 2.
-ms.author: a-enielsson
-ms.custom: bap-template
-ms.date: 01/29/2024
+ms.author: jswymer
+ms.date: 04/01/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
-author: EmmaNielsson
+author: jswymer
+ms.custom: 
+    - evergreen
+    - bap-template
 ---
 
 # Update 23.4 for Microsoft Dynamics 365 Business Central online 2023 release wave 2
@@ -42,7 +44,7 @@ Note that new customers will automatically get the latest builds of Business Cen
 
 Environments and the Admin Center can now be accessed and administered with the new Microsoft Entra role named Dynamics 365 Business Central Administrator. This role improves upon the roles currently supported in that it doesn't grant access to resources beyond Business Central, giving customers an option to grant internal and delegated administrators access to Business Central without giving access to other resources and services in the tenant.
 
-There are no changes to the access granted to administrators with a Global Administrator or Dynamics 365 Administrator role assigned. Delegated Helpdesk Administrators will soon lose access to the Admin Center; we recommend you replace any use of this role with the Dynamics 365 Business Central Administrator role. If you have accessed your customer environments using this role recently, you'll soon receive deprecation notifications sent to notification recipients set up in the Admin Center. Read more [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights).
+There are no changes to the access granted to administrators with at least the Dynamics 365 Administrator role assigned. Delegated Helpdesk Administrators will soon lose access to the Admin Center; we recommend you replace any use of this role with the Dynamics 365 Business Central Administrator role. If you have accessed your customer environments using this role recently, you'll soon receive deprecation notifications sent to notification recipients set up in the Admin Center. Read more [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights).
 
 ### Transfer environments between Entra tenants
 

@@ -2,11 +2,10 @@
 title: "RecordRef.FindFirst() Method"
 description: "Finds the first record in a table based on the current key and filter."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +20,6 @@ Finds the first record in a table based on the current key and filter.
 ```AL
 [Ok := ]  RecordRef.FindFirst()
 ```
-
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  

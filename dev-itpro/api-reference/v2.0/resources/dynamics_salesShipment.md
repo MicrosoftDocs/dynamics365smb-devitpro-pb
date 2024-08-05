@@ -4,8 +4,9 @@ description: A sales shipment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesShipment resource type
@@ -31,9 +32,6 @@ Represents a sales shipment in [!INCLUDE[prod_short](../../../includes/prod_shor
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[customer](dynamics_customer.md)|customer |Gets the customer of the salesShipment.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the salesShipment.|
-|[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the salesShipment.|
-|[shipmentMethod](dynamics_shipmentmethod.md)|shipmentMethod |Gets the shipmentmethod of the salesShipment.|
 |[salesShipmentLines](dynamics_salesshipmentline.md)|salesShipmentLines |Gets the salesshipmentlines of the salesShipment.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesShipment.|
 
@@ -45,11 +43,13 @@ Represents a sales shipment in [!INCLUDE[prod_short](../../../includes/prod_shor
 |number|string|Specifies the number of the sales shipment.|
 |externalDocumentNumber|string|Specifies an external document number for the sales shipment.|
 |invoiceDate|date|The invoice date .|
-|postingDate|date|The date that the sales shipment   is posted.|
+|postingDate|date|The date that the sales shipment is posted.|
 |dueDate|date|The date the sales shipment is due.|
 |customerPurchaseOrderReference|string|The customer purchase order reference for the invoice.|
+|customerId|GUID|The unique ID of customer.  |
 |customerNumber|string|The customer's number.|
 |customerName|string|The customer's name.|
+|billToCustomerId|GUID|Bill to customer id.|
 |billToName|string|Bill to name.|
 |billToCustomerNumber|string|Bill to customer number.|
 |shipToName|string|Ship to name.|
@@ -96,8 +96,10 @@ Here is a JSON representation of the salesShipment resource.
     "postingDate": "date",
     "dueDate": "date",
     "customerPurchaseOrderReference": "string",
+    "customerId": "GUID",
     "customerNumber": "string",
     "customerName": "string",
+    "billToCustomerId": "GUID",
     "billToName": "string",
     "billToCustomerNumber": "string",
     "shipToName": "string",

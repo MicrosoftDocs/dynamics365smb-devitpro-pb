@@ -2,11 +2,10 @@
 title: "Report.DefaultLayout(Integer) Method"
 description: "Gets the default built-in layout type that is used on a specified report."
 ms.author: solsen
-ms.custom: na
-ms.date: 04/11/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -31,7 +30,6 @@ The ID of the report that you want to save. If the report that you specify does 
 *DefaultLayout*  
 &emsp;Type: [DefaultLayout](../defaultlayout/defaultlayout-option.md)  
 The default built-in layout type that is used on a specified report.
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

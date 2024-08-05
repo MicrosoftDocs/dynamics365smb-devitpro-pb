@@ -1,11 +1,7 @@
 ---
 title: Data Item Links
 description: Using queries, retrieve records from one or more tables and combine the records into rows in a single dataset.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---

@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, telemetry
 ms.date: 08/16/2022
 ms.author: kepontop
+ms.reviewer: jswymer
 ---
 # Analyzing Azure Function Integration Telemetry
 

@@ -5,9 +5,9 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.collection: 
-ms.date: 10/11/2023
-ms.custom: bap-template
+ms.date: 07/23/2024
+ms.custom: evergreen
+ms.collection: get-started
 ---
 
 # AL operators
@@ -26,10 +26,11 @@ These operators are used to perform various operations such as arithmetic, compa
 |`:=`|Assigns a value to a variable. Assigns the value on the right side of the operator to the variable on the left side.|
 |`()`|Parentheses|
 |`[ ]`|Indexing|
-|`::`|Scope|
+|`::`|Scope. Returns the IF of an object. Examples: `Report::myReport` or `Query::"My Query"`.|
 |`..`|Range|
 |`@`|Case-insensitive|
 
+<br>
 Arithmetic operators are used to perform arithmetic operations on numeric operands. The result of an arithmetic operation is a numeric value.
 
 |AL arithmetic operator | Meaning |
@@ -41,6 +42,7 @@ Arithmetic operators are used to perform arithmetic operations on numeric operan
 |`div`|Integer division|
 |`mod`|Modulus|
 
+<br>
 Comparison operators are used to compare two values. The result of a comparison is a Boolean value, that is, `true` or `false`.
 
 |AL comparison operator | Meaning |
@@ -52,6 +54,7 @@ Comparison operators are used to compare two values. The result of a comparison 
 |`=`|Equal to|
 |`<>`|Not equal to|
 
+<br>
 The logical operators are used on Boolean expressions
 
 |AL logical operator | Meaning |
@@ -61,6 +64,7 @@ The logical operators are used on Boolean expressions
 |`not`|Logical negation|
 |`xor`|Exclusive logical disjunction|
 
+<br>
 Compound assignment operators perform an arithmetic operation and assign the result to the same variable.
 
 |AL compound assignment operator| Meaning|
@@ -70,14 +74,13 @@ Compound assignment operators perform an arithmetic operation and assign the res
 |`*=`|Multiplication|
 |`/=`|Division|
 
-
 The `+` and the `-` operators can be used both as unary and binary operators. The `not` operator can only be used as a unary operator. All the other operators are binary.
 
 Most of the operators can be used on different data types. The action of these operators may depend on the data type of the expression that they are used on.
 
 ### Example 1
 
-In this example, the "+" operator is used as a binary operator.
+In this example, the `+` operator is used as a binary operator.
 
 ```
 number + number
@@ -87,7 +90,7 @@ This returns the sum of the numbers, that is, a result of type number.
 
 ### Example 2
 
-In this example, the "+" operator is used as a binary operator.
+In this example, the `+` operator is used as a binary operator.
 
 ```
 string + string
@@ -97,7 +100,7 @@ This returns the concatenation of the strings, that is, a result of the type str
 
 ### Example 3
 
-In this example, the "+" operator is used as a unary operator to indicate sign.
+In this example, the `+` operator is used as a unary operator to indicate sign.
 
 ```
 +34545  
@@ -134,3 +137,8 @@ This expression evaluates to 14.
 This expression evaluates to 20.
 
 ## See also
+
+[Arithmetic operators](devenv-al-arithmetic-operators.md)  
+[Boolean operators](devenv-al-boolean-operators.md)  
+[Relational operators](devenv-al-relational-operators.md)  
+[Get started with AL](devenv-get-started.md)  

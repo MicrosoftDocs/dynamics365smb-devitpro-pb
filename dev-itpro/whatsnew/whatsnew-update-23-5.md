@@ -1,12 +1,14 @@
 ---
 title: Update 23.5 for Microsoft Dynamics 365 Business Central 2023 Release Wave 2
 description: Get an overview of new and changed capabilities in the 23.5 update of Business Central online, which is part of 2023 release wave 2.
-ms.author: a-enielsson
-ms.custom: bap-template
-ms.date: 02/28/2024
+ms.author: jswymer
+ms.date: 04/01/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
-author: EmmaNielsson
+author: jswymer
+ms.custom: 
+    - evergreen
+    - bap-template
 ---
 
 # Update 23.5 for Microsoft Dynamics 365 Business Central online 2023 release wave 2
@@ -27,8 +29,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 |-------------|--------------|--------------|
 | Norway | Migrate Electronic VAT submission solution to the new ID-porten system | IChanges in the new Noweigian ID-porten for Electronic VAT Submissions are updated. Authentication URL and Login URL have been changed and existing users need to update the Electronic VAT setup with the new endpoints. |
 | Mexico | Carta Porte Complement 3.0 update | Carta Porte functionality and schemas in Mexico are updated to the version 3.0 and some new fields, catalogues, and features have been added or changed as new version requires more detailed information for some processes. |
-	
-
 
 ## Release Plan
 
@@ -44,7 +44,7 @@ Note that new customers will automatically get the latest builds of Business Cen
 
 Environments and the Admin Center can now be accessed and administered with the new Microsoft Entra role named Dynamics 365 Business Central Administrator. This role improves upon the roles currently supported in that it doesn't grant access to resources beyond Business Central, giving customers an option to grant internal and delegated administrators access to Business Central without giving access to other resources and services in the tenant.
 
-There are no changes to the access granted to administrators with a Global Administrator or Dynamics 365 Administrator role assigned. Delegated Helpdesk Administrators will soon lose access to the Admin Center; we recommend you replace any use of this role with the Dynamics 365 Business Central Administrator role. If you have accessed your customer environments using this role recently, you'll soon receive deprecation notifications sent to notification recipients set up in the Admin Center. Read more [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights).
+There are no changes to the access granted to administrators with at least the Dynamics 365 Administrator role assigned. Delegated Helpdesk Administrators will soon lose access to the Admin Center; we recommend you replace any use of this role with the Dynamics 365 Business Central Administrator role. If you have accessed your customer environments using this role recently, you'll soon receive deprecation notifications sent to notification recipients set up in the Admin Center. Read more [here](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/assign-more-granular-administration-rights).
 
 
 ### Upcoming Business Central Office Hours Calls

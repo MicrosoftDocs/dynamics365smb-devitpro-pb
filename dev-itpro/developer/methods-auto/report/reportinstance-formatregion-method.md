@@ -2,11 +2,10 @@
 title: "Report.FormatRegion([Text]) Method"
 description: "Gets or sets the current format region setting for the report."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/23/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -45,7 +44,7 @@ The current format region setting for the report.
 
 If you have reports that you want to print using a format that is aligned with the recepient rather than in your own working region, you can add a few lines of code in the report to handle this. In this example we will take the assumption that the format region will be aligned with the language in the current report run and that the report does not have native support for format region. The document is printed in the language that is specified in the **Language Code** field on the **Customer Card** page.
 
-In reports that need the multiple document format functionality, you can insert the following AL code as the first lines in the `OnAfterGetRecord()` trigger on the data item referencing the **Customer** table (notice that that feature is not limited to the **Customer** table, other data sources provides similiar functionality.):
+In reports that need the multiple document format functionality, you can insert the following AL code as the first lines in the `OnAfterGetRecord()` trigger on the data item referencing the **Customer** table (notice that that feature is not limited to the **Customer** table, other data sources provides similar functionality.):
 
 ```AL
 trigger OnAfterGetRecord()

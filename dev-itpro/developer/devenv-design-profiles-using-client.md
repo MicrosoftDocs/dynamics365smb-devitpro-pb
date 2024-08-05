@@ -2,11 +2,10 @@
 title: "Using the Client to Create Profiles"
 description: "Gives an overview of how to create profiles by using the client together with Visual Studio Code."
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Using the Client to Create Profiles and Page Customizations

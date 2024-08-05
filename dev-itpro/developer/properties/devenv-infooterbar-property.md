@@ -2,11 +2,10 @@
 title: "InFooterBar Property"
 description: "Sets whether an action should be viewed as an exit action in the lower part of the page."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -18,6 +17,7 @@ Sets whether an action should be viewed as an exit action in the lower part of t
 
 ## Applies to
 -   Page Action
+-   Page File Upload Action
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

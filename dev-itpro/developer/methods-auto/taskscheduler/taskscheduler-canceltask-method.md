@@ -2,11 +2,10 @@
 title: "TaskScheduler.CancelTask(Guid) Method"
 description: "Cancels and deletes a scheduled task that runs a specific codeunit."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/15/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -24,7 +23,7 @@ Cancels and deletes a scheduled task that runs a specific codeunit.
 ## Parameters
 *Task*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-Specifies the unique identifier of the task. The unique identifier is returned by the CREATETASK method.  
+Specifies the unique identifier of the task. The unique identifier is returned by the CreateTask method when creating the task.  
 
 
 ## Return Value

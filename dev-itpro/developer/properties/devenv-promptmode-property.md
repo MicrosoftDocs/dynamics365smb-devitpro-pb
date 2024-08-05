@@ -1,14 +1,11 @@
 ---
 title: "PromptMode Property"
-description: "Specifies the current mode of a PromptDialog page type."
+description: "Specifies the current mode of a PromptDialog page."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/17/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.collection:
-  - bap-ai-copilot
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -25,9 +22,9 @@ Specifies the current mode of a PromptDialog page.
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Content**|runtime version 1.0|Showing the output of the copilot interaction.|
-|**Generate**|runtime version 1.0|Generating the output of the copilot interaction.|
-|**Prompt**|runtime version 1.0|Prompting the user for input for the copilot interaction.|
+|**Content**|runtime version 12.1|Showing the output of the copilot interaction.|
+|**Generate**|runtime version 12.1|Generating the output of the copilot interaction.|
+|**Prompt**|runtime version 12.1|Prompting the user for input for the copilot interaction.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

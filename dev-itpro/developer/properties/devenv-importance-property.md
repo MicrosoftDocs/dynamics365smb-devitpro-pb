@@ -2,11 +2,10 @@
 title: "Importance Property"
 description: "Sets the amount of information that is visible in a window or dialog box."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -24,9 +23,9 @@ Sets the amount of information that is visible in a window or dialog box.
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Standard**|runtime version 1.0|Displays the field on the page by default.|
-|**Promoted**|runtime version 1.0|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
-|**Additional**|runtime version 1.0|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
+|**Standard**|runtime version 3.2|Displays the field on the page by default.|
+|**Promoted**|runtime version 3.2|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
+|**Additional**|runtime version 3.2|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

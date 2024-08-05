@@ -2,11 +2,10 @@
 title: "XmlAttributeCollection.Count() Method"
 description: "Gets the number of attributes in the XmlAttributeCollection."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +22,6 @@ Count :=   XmlAttributeCollection.Count()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *XmlAttributeCollection*  
 &emsp;Type: [XmlAttributeCollection](xmlattributecollection-data-type.md)  

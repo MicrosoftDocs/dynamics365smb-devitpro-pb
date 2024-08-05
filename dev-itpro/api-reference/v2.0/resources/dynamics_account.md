@@ -4,8 +4,9 @@ description: An account object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # account resource type
@@ -44,7 +45,11 @@ Represents an account in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |blocked|boolean|Specifies that entries cannot be posted to the account. **True** indicates account is blocked and posting is not allowed.|
 |accountType|NAV.glAccountType|The type of the account that the account is related to. It can be "Posting", "Heading", "Total", "Begin Total" or "End Total".|
 |directPosting|boolean|Specifies whether direct posting is enabled.|
-|netChange|Decimal|Specifies the net change in the account balance during the time period in the Date Filter field.|
+|netChange|decimal|The account net change. |
+|consolidationTranslationMethod|string||
+|consolidationDebitAccount|string||
+|consolidationCreditAccount|string||
+|excludeFromConsolidation|boolean||
 |lastModifiedDateTime|datetime|The last datetime the account was modified. Read-Only.|
 
 ## JSON representation
@@ -63,6 +68,10 @@ Here is a JSON representation of the account resource.
     "accountType": "NAV.glAccountType",
     "directPosting": "boolean",
     "netChange": "decimal",
+    "consolidationTranslationMethod": "string",
+    "consolidationDebitAccount": "string",
+    "consolidationCreditAccount": "string",
+    "excludeFromConsolidation": "boolean",
     "lastModifiedDateTime": "datetime"
 }
 ```

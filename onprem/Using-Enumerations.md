@@ -1,12 +1,7 @@
 ---
 title: "Using Enumerations"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: c959e566-734a-4966-a668-a1f813ff3488
 caps.latest.revision: 12
 ---

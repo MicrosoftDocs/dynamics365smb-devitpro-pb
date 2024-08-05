@@ -1,12 +1,12 @@
 ---
 title: Upgrade an unmodified application
 description: The article explains how to upgrade an application that has no custom code to Business Central 2019 release wave 2.
-ms.custom: na
-ms.date: 01/02/2024
-ms.reviewer: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading an unmodified application to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2
 

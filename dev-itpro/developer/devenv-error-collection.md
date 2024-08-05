@@ -3,10 +3,10 @@ title: Collecting Errors
 description: Learn how to write AL code that returns more than one error and presents users with more detailed error information.
 ms.custom: bap-template
 ms.date: 01/04/2024
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Collecting Errors

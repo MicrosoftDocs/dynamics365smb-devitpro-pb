@@ -5,7 +5,7 @@ ms.topic: article
 author: jswymer
 ms.author: jswymer
 ms.date: 04/11/2023
-
+ms.reviewer: jswymer
 ---
 
 # Upgrading Customized C/AL Application to Microsoft Base Application version 22

@@ -3,7 +3,7 @@ title: Run cloud migration setup for Dynamics GP migration
 description: This article explains how to run the Cloud Migration Setup assisted setup guide to configure the components and connection for migrating data from a Dynamics GP on-premises database to Business Central online environment.
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: how-to 
 ms.date: 02/29/2024
 ms.custom: bap-template
@@ -78,7 +78,9 @@ In this scenario, you're making updates to an existing runtime service. When you
 
 Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline is created for that tenant. Regenerating an Azure Data Factory (ADF) key might be done using the **Cloud Migration Management** page in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, see [Run the assisted setup guide](migration-setup.md#rerunning-cloud-migration-setup-guide).  
 
-If you run into problems with the setup, go to [Cloud migration setup troubleshooting](migration-setup-troubleshooting.md).
+## Troubleshoot and fix problems
+
+If you run into problems with the setup, go to [Cloud migration troubleshooting for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central).
 
 ## Next steps
 

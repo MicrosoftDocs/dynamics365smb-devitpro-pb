@@ -2,11 +2,10 @@
 title: "ExcelLayoutMultipleDataSheets Property"
 description: "Sets whether an Excel layout will render to multiple data sheets or in a single sheet named Data."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

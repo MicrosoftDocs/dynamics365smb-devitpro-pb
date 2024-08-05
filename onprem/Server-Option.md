@@ -1,12 +1,7 @@
 ---
 title: "Server Option"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 1caf49ca-db53-457a-a3ad-431612d22f8a
 caps.latest.revision: 36
 ---

@@ -1,9 +1,7 @@
 ---
 title: Using Key Vault Secrets in Business Central Extensions 
 description: Describes how to use an Azure Key vault with Business Central extensions.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -126,7 +124,7 @@ Publisher validation is done by comparing the key vault's Microsoft Entra tenant
 
 Publisher validation is turned on by default, which is the recommended setting. If it's turned off, the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. So, don't turn off publisher validation unless you trust the extensions that can be potentially installed.
 
-For information about how to turn publisher validation on or off, see [Configuring Business Central Server](../administration/configure-server-instance.md#keyvault).
+For information about how to turn publisher validation on or off, see [Configuring Business Central Server](../administration/configure-server-instance.md#azure-key-vault-client-identity-and-extension-settings).
 
 ## <a name="troubleshooting"></a>Monitoring and troubleshooting
 
@@ -161,9 +159,10 @@ You can set up extensions to emit telemetry to an Application Insights resource 
 
 2. In the app.json file of the extension, add the `"applicationInsightsKey"`:
 
- ``` 
- "applicationInsightsKey": ["<instrumenation key>"] 
- ```
+  ``` 
+  "applicationInsightsKey": ["<instrumenation key>"] 
+  ```
+
 3. Now, you can run your extensions and view data in Application Insights.
 
    For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).

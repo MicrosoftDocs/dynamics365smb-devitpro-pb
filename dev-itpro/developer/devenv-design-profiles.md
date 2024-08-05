@@ -2,11 +2,10 @@
 title: "Designing Profiles"
 description: "Gives an overview of profiles and page customizations."
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Designing Profiles

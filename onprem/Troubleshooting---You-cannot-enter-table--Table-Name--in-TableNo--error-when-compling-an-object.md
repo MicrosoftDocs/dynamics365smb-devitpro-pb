@@ -1,12 +1,7 @@
 ---
 title: "Troubleshooting: &quot;You cannot enter table &#39;Table Name&#39; in TableNo&quot; error when compling an object"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 286df8aa-d122-4e80-bd2f-3efdb84c7781
 caps.latest.revision: 6
 ---

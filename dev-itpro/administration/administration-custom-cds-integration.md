@@ -2,8 +2,7 @@
 title: Customizing an Integration with Microsoft Dataverse
 description: Learn how to integrate your extension with Microsoft Dataverse. This walkthrough takes you through each step.
 author: bholtorf
-ms.custom: na
-ms.reviewer: solsen
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.author: bholtorf
 ms.date: 04/01/2021
@@ -71,6 +70,8 @@ In this walkthrough we'll create a table object in the [!INCLUDE[prod_short](../
     -project:<Your AL project folder>
     -packagecachepath:<Your AL project cache folder>
     -serviceuri:<Microsoft Dataverse server URL>
+    -clientid:<Microsoft Entra application client ID>
+    -redirecturi:<Microsoft Entra application redirect URI>
     -entities:cdm_worker
     -baseid:50000
     ```
@@ -218,7 +219,7 @@ Now use the table to create a page for coupling [!INCLUDE[prod_short](../include
 
     ```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnAddEntityTableMapping', '', false, false)]
-        local procedure HandleOnAddEntityTableMapping(var TempNameValueBuffer: Record "Name/Value Buffer" temporary);
+        local procedure HandleOnAddEntityTableMapping(var TempNameValueBuffer: Record "Name/Value Buffer" temporary)
         var
             CRMSetupDefaults: Codeunit "CRM Setup Defaults";
         begin

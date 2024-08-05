@@ -2,11 +2,10 @@
 title: "XmlNode.IsXmlProcessingInstruction() Method"
 description: "Gets a value indicating whether this node is an XmlProcessingInstruction."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +22,6 @@ Value :=   XmlNode.IsXmlProcessingInstruction()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *XmlNode*  
 &emsp;Type: [XmlNode](xmlnode-data-type.md)  

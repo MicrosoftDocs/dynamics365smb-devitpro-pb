@@ -1,8 +1,9 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
 ms.date: 01/25/2022
-ms.author: edupont
+ms.author: jswymer
+ms.reviewer: jswymer
 ---
 Both as an internal admin and as a delegated admin, you can help users determine the cause of their problems in different ways before you have to escalate the issue to Microsoft Support. The starting point is the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] where you can access telemetry for the tenant and check the status of already reported outages. For more information, see [Managing Production and Sandbox Environments in the Admin Center](../administration/tenant-admin-center-environments.md).  
 

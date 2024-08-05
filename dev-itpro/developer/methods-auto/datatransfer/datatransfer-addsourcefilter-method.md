@@ -2,11 +2,10 @@
 title: "DataTransfer.AddSourceFilter(Integer, Text [, Any,...]) Method"
 description: "Adds a filter for the source table for the data transfer."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -32,7 +31,7 @@ The field in the source table to filter on.
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \<=, \>, \>=, \<\>, &, .., *, &#124; and @. You can use replacement fields (%1, %2, and so on) to insert values at runtime.  
+The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, \\, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at runtime.  
 
 *[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  

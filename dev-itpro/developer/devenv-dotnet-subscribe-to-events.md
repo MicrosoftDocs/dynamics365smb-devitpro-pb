@@ -2,11 +2,10 @@
 title: "Subscribing to Events in a .NET Framework Type"
 description: "How to subscribe to event in a .NET Framework Type"
 author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Subscribing to Events in a .NET Framework Type

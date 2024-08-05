@@ -2,11 +2,10 @@
 title: "XmlDocument.GetChildElements() Method"
 description: "Gets a list containing the child elements for this document, in document order."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +20,6 @@ Gets a list containing the child elements for this document, in document order.
 ```AL
 ChildElements :=   XmlDocument.GetChildElements()
 ```
-
 ## Parameters
 *XmlDocument*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  

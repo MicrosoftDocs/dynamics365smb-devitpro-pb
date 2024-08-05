@@ -1,21 +1,21 @@
 ---
-title: "Working with translation files"
-description: "How to work with translations, multilanguage, and XLIFF files in Business Central"
-ms.custom: na
-ms.date: 09/05/2023
+title: Working with translation files
+description: How to work with translations, multilanguage, and XLIFF files in Business Central.
+ms.date: 06/20/2024
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Working with translation files
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multi-language enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], this is done using XLIFF files, which is a standardized format used for computer-based translations.  
+[!INCLUDE [prod_short](includes/prod_short.md)] is multi-language enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE [prod_short](includes/prod_short.md)], this is done using XLIFF files, which is a standardized format used for computer-based translations.  
 
 > [!TIP]
 > Optionally, use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) to get translations for your target languages. For more information, see [Translate user interface files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service).
 
-For an overview of how translations are applied, see [Translations Overview](devenv-translations-overview.md).
+For an overview of how translations are applied, see [Translations overview](devenv-translations-overview.md).
 
 ## Generating the XLIFF file
 
@@ -49,7 +49,7 @@ Now, when you run the build command (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kb
 > - [RequestFilterHeadingML](properties/devenv-requestfilterheadingml-property.md)
 > - [ToolTipML](properties/devenv-tooltipml-property.md)
 > 
-> The [TextConst Data Type](methods-auto/textconst/textconst-data-type.md) is not included in the .xlf file either.
+> The [TextConst data type](methods-auto/textconst/textconst-data-type.md) is not included in the .xlf file either.
 
 > [!IMPORTANT]  
 > Make sure to rename the translation file before building the extension next time, as it'll be overwritten.
@@ -79,7 +79,7 @@ Caption = 'Developer translation for %1',  Comment = '%1 is extension name', loc
 ```
 
 > [!NOTE]  
-> The `comment`, `locked`, and `maxLength` attributes are optional and the order is not enforced. For more information, see [Label Data Type](methods-auto/label/label-data-type.md).
+> The `comment`, `locked`, and `maxLength` attributes are optional and the order isn't enforced. For more information, see [Label Data Type](methods-auto/label/label-data-type.md).
 
 Use the same syntax for report labels:  
 
@@ -173,7 +173,7 @@ We recommend that you use only one .txt file per language. There is no enforced 
 For more information about importing and exporting .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
 -->
 
-## See Also
+## See also
 
 [Working with labels](devenv-using-labels.md)  
 [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md)  

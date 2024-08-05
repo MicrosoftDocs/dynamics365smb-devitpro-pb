@@ -1,15 +1,14 @@
 ---
-title: "Application Validation Service Diagnostics Overview"
-description: "The application validation service diagnostics"
+title: Application Validation Service diagnostics overview
+description: The application validation service diagnostics.
 ms.author: thpeder
-ms.custom: na
-ms.date: 05/18/2022
-ms.reviewer: solsen
+ms.date: 04/26/2024
+ms.reviewer: jswymer
 ms.topic: reference
 author: thpeder
 ---
 
-# Application Validation Service Diagnostics Overview
+# Application Validation Service diagnostics overview
 
 When an app is submitted for AppSource, a per-tenant extension is submitted, or when a tenant is about to be upgraded, the Application Validation Service is run. This article gives an overview of the diagnostics that running the AVS tool gives, sorted by ID and severity. For more information about a specific diagnostic, choose the ID.
 

@@ -2,11 +2,10 @@
 title: "Compiler Error AL0539"
 description: "The field '{0}' cannot be used multiple times when defining the order of the page view."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,6 +15,7 @@ author: SusanneWindfeldPedersen
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The field '{0}' cannot be used multiple times when defining the order of the page view.
+
 
 ## Description
 The same field cannot be reference multiple times when defining the order of the page view.  

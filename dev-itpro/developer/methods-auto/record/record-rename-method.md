@@ -2,11 +2,10 @@
 title: "Record.Rename(Any [, Any,...]) Method"
 description: "Changes the value of a primary key in a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/29/2021
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -29,6 +28,7 @@ An instance of the [Record](record-data-type.md) data type.
 *Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   
+
 *[Optional] Value2*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   

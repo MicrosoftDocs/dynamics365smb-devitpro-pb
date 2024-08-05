@@ -2,11 +2,10 @@
 title: "Compiler Error AL1022"
 description: "A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found in the package cache folders: {3}."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/23/2023
-ms.reviewer: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

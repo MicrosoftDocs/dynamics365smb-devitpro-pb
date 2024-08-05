@@ -3,8 +3,8 @@ title: Page types and layouts
 description: Understanding page types to be able to create good user experience in Business Central.
 author: jacobwj
 ms.custom: bap-template
-ms.date: 11/24/2022
-ms.reviewer: solsen
+ms.date: 04/26/2024
+ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: conceptual
 ---
@@ -233,11 +233,11 @@ Given the size of the screen where the dialog appears, more or less of the page 
 > [!NOTE]  
 > The dialogs created from the ConfirmationDialog and StandardDialog page types are not currently providing a maximize button.
  
-## See Also
+## See also
 
-[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
-[PageType Property](properties/devenv-pagetype-property.md)  
-[Actions Overview](devenv-actions-overview.md)  
+[Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  
+[PageType property](properties/devenv-pagetype-property.md)  
+[Actions overview](devenv-actions-overview.md)  
 [Use Designer](devenv-inclient-designer.md)  
-[Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  
+[Adding a FactBox to a page](devenv-adding-a-factbox-to-page.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  

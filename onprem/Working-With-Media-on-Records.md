@@ -1,13 +1,8 @@
 
 ---
 title: "Working With Media on Records"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 47fb1195-eaa1-4995-9013-5edc28b13132
 caps.latest.revision: 7
 author: edupont

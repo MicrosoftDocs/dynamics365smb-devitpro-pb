@@ -1,12 +1,7 @@
 ---
 title: "Accessing Objects in Other Databases or on Linked Servers"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 3f9989fc-78ed-4f39-8251-caf6c672f01b
 caps.latest.revision: 10
 ---
