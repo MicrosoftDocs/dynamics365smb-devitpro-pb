@@ -7,7 +7,7 @@ ms.search.keywords: telemetry, onboarding
 ms.date: 12/21/2023
 ms.author: kepontop
 
-ms.reviewer: brentholtorf
+ms.reviewer: jswymer
 ms.custom: bap-template
 ---
 

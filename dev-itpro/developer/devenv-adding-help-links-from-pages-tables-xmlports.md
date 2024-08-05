@@ -2,7 +2,6 @@
 title: Adding help links from pages, reports, and XMLports
 description: This article shows how to specify the Help link on pages, reports and XMLports in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 05/23/2022
 ms.reviewer: solsen
 ms.topic: conceptual

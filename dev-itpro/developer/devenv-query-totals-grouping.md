@@ -1,14 +1,12 @@
 ---
-title: Query Totals and Grouping
+title: Aggregating data in query objects
 description: Do calculations on the fields of a column and return the calculated value in the dataset. Know the Dynamics NAV Total methods for running queries.
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 05/03/2024
 ms.topic: conceptual
 author: jswymer
 ---
 
-# Aggregating Data in Query Objects
+# Aggregating data in query objects
 
 In a query object, you can use the [Method property](properties/devenv-method-property.md) to do a calculation on the fields of a column and return the calculated value in the dataset. For example, you can sum all the fields in a column or find the average value. The `Method` property is set on `column` controls and can be set to any of the following aggregate methods.  
   
@@ -19,7 +17,8 @@ In a query object, you can use the [Method property](properties/devenv-method-pr
 |[Min](devenv-query-totals-grouping.md#Minimum)|Retrieves the lowest value of the field in the designated column for all records that are selected as part of the grouped set.|  
 |[Max](devenv-query-totals-grouping.md#Maximum)|Retrieves the highest value of the field in the designated column for all records that are selected as part of the grouped set.|  
 |[Count](devenv-query-totals-grouping.md#Count)|Returns the number of records that are selected as part of the grouped set.|  
-  
+|[Distinct](#using-a-query-to-get-distinct-values)| Returns a set of distinct values from a table.|  
+
 ## Setting up an aggregate method for a query column
 
 Except for the `Count` method, you can only use an aggregate method \(`Sum`, `Average`, `Min`, and `Max`\) on a field that has a numeric data type of [Decimal](methods-auto/decimal/decimal-data-type.md), [Integer](methods-auto/integer/integer-data-type.md), [BigInteger](methods-auto/biginteger/biginteger-data-type.md), or [Duration](methods-auto/duration/duration-data-type.md). To set up an aggregate on a column, you set the column's [Method Property](properties/devenv-method-property.md).
@@ -31,7 +30,7 @@ column(Name; Field)
 }
 ```
 
-Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. Records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. It's similar to the GROUP BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL)).
+Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. Records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. It's similar to the GROUP BY clause in SQL SELECT statements.
 
 The aggregate methods and grouping are further explained in the following sections.  
   
@@ -196,8 +195,58 @@ Looking at the sample query, you can use `Count` method the number of sales orde
 |40000|Deerfield Graphics|1|  
   
 In SQL SELECT statements, the Count method corresponds to a COUNT\(\*\) or COUNT\(field\) clause.  
-  
-##  <a name="SQL"></a> Creating queries with aggregates in SQL  
+
+## Using a query to get distinct values
+
+When working with table data, you might need to get a list of distinct values from the table (in SQL, this would correspond to a SELECT DISTINCT statement). This operation isn't supported out-of-the-box in AL, but you can do it with a query using an aggregation. 
+
+This AL example code shows how you can encode distinct into a query using an aggregation.
+
+```AL
+query 50150 DistinctValuesQuery
+{
+    Caption = 'My Query';
+    QueryType = Normal;
+ 
+    elements
+    {
+        dataitem(CustLedgerEntry; "Cust. Ledger Entry")
+        {
+            column(CustomerNo; "Customer No.")
+            {
+            }
+            column(DocumentType; "Document Type")
+            {
+            }
+            column(Count)
+            {
+                Method = Count;
+            }
+        }
+    }
+}
+```
+
+This AL example code shows how you can then query for the distinct values (note that the `Count` column isn't used here).
+
+```AL
+trigger OnAction()
+var
+    MyQuery: Query DistinctValuesQuery;
+    CombinationText: Text;
+begin
+    if MyQuery.Open() then begin
+        while MyQuery.Read() do
+            CombinationText += MyQuery.CustomerNo + '-' + Format(MyQuery.DocumentType) + '; ';
+        MyQuery.Close();
+    end;
+
+    Message(CombinationText);
+end;
+```
+
+
+<!-- ##  <a name="SQL"></a> Creating queries with aggregates in SQL  
 
 If you're familiar with SQL, then it's helpful to know how the aggregate methods in [!INCLUDE[prod_short](includes/prod_short.md)] relate to SQL statements. To specify an aggregate method in an SQL statement, you add the method to the SELECT statement and then add a GROUP BY clause.
   
@@ -208,7 +257,14 @@ SELECT Customer."No.", Customer.Name, SUM("Sales Line".Quantity)
 FROM Customer INNER JOIN "Sales Line"  
   ON Customer."No." = "Sales Line"."Sell-to Customer No."  
 GROUP BY Customer."No.", Customer.Name  
-```  
+```   -->
+
+## Contributors
+
+*This article is maintained by Microsoft. Parts of the examples were originally written by the following contributor.*
+
+* [Teddy Herryanto](https://www.linkedin.com/in/teddyherryanto/) | [!INCLUDE[prod_short](includes/prod_short.md)] Techno Functional Consultant
+
 
 ## See Also
 

@@ -1,7 +1,6 @@
 ---
 title: "Developing a Custom Report Render"
 description: Describe the custom report render logic.
-ms.custom: na
 ms.date: 04/01/2022
 ms.reviewer: solsen
 ms.topic: conceptual

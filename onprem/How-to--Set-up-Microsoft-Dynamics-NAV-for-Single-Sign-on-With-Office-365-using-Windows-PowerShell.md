@@ -1,15 +1,12 @@
 ---
 title: "How to: Set up Microsoft Dynamics NAV for Single Sign-on With Office 365 using Windows PowerShell"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 817bdbef-697e-4cbc-8342-77ec9fcba027
 caps.latest.revision: 15
 ---
 # How to: Set up Microsoft Dynamics NAV for Single Sign-on With Office 365 using Windows PowerShell
+
 [!INCLUDE[navnow](includes/navnow_md.md)] supports federated user authentication with Microsoft Azure Active Directory \(Azure AD\). This is the Identity Provider service that is used by Office 365. Every time a new Office 365 subscription is provisioned, the Azure AD tenant for this subscription is also created. Thus, when [!INCLUDE[navnow](includes/navnow_md.md)] is configured for federated authentication with an Azure AD tenant, a Single Sign-on \(SSO\) user experience is achieved between [!INCLUDE[navnow](includes/navnow_md.md)] and the Office 365 Web Applications or/and any other applications which use the Single Sign-on capability provided by the Azure AD tenant.  
   
  The `Set-NavSingleSignOnWithOffice365` cmdlet also supports enabling Office 365 account authentication both for [!INCLUDE[nav_web](includes/nav_web_md.md)] and for [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. Office 365 authentication is described in this topic for both clients.  
@@ -77,7 +74,7 @@ caps.latest.revision: 15
     |ServerInstanceName|Specifies the name of your [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. To find the names for the [!INCLUDE[nav_server](includes/nav_server_md.md)] instances, run the `Get-NAVServerInstance` cmdlet|  
     |WebServerInstanceName|Specifies the name of your [!INCLUDE[nav_server](includes/nav_server_md.md)] instance. To find the names for the [!INCLUDE[nav_web](includes/nav_web_md.md)] instances running in your IIS, run the `Get-NAVWebServerInstance` cmdlet.|  
     |YourNavUser|Specifies the name of your [!INCLUDE[navnow](includes/navnow_md.md)] user account. `YourNavUser` links the [!INCLUDE[navnow](includes/navnow_md.md)] user account to your Office 365 account by providing your Office 365 email address as the `AuthenticationEmail` for the provided [!INCLUDE[navnow](includes/navnow_md.md)] user account. This parameter is optional.|  
-    |YourOffice365Email|Specifies the email address of your Office 365 user account. The syntax is *username@o365tenant.onmicrosoft.com*. This parameter is optional. **Important:**  This user must have administrative permissions, such as the Global Administrator role. If you create a custom administrator role for this account, the account must have permission to create service principals in Azure. For more information, see [Assigning admin roles](https://support.office.com/article/Assigning-admin-roles-d58b8089-cbfd-41ec-b64c-9cfcbef495ac).|  
+    |YourOffice365Email|Specifies the email address of your Office 365 user account. The syntax is *username@o365tenant.onmicrosoft.com*. This parameter is optional. **Important:**  This user must have administrative permissions. If you create a custom administrator role for this account, the account must have permission to create service principals in Azure. For more information, see [Assigning admin roles](https://support.office.com/article/Assigning-admin-roles-d58b8089-cbfd-41ec-b64c-9cfcbef495ac).|  
     |SecurityCertificateThumbprint|Specifies the thumbprint for the security certificate that was used for securing the client–server communication channel. Get the list of thumbprints for your certificates by issuing this Windows PowerShell command: `Get-ChildItem -Path "Cert:\LocalMachine\My"` **Note:**  You can avoid providing this parameter if you already have your [!INCLUDE[nav_server](includes/nav_server_md.md)] configured to use a security certificate. This applies to [!INCLUDE[navnow](includes/navnow_md.md)] installations in the Azure environment, and other environments where any credential type other than Windows is active and functional.|  
   
 2.  When the `Set-NavSingleSignOnWithOffice365` cmdlet is run, a dialog box will open, requesting your Office 365 account user name and password.  

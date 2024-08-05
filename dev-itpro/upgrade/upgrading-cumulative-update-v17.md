@@ -1,12 +1,12 @@
 ---
 title: Install a version 17 update
 description: This article describes the tasks required for getting the monthly version 17 update applied to your Dynamics 365 Business Central on-premises.
-ms.custom: na
-ms.date: 12/27/2023
-ms.reviewer: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2020 Release Wave 2 Update
 

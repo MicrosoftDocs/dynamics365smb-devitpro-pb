@@ -1,12 +1,12 @@
 ---
 title: Technical Upgrade 
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Technical Upgrade to [!INCLUDE[prolong](../developer/includes/prod_long.md)] 2019 Wave 2
 

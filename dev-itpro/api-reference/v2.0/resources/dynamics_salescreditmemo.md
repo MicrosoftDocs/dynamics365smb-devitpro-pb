@@ -4,8 +4,9 @@ description: A sales credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesCreditMemo resource type
@@ -65,7 +66,6 @@ The response has no content; the response code is 204.
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[customer](dynamics_customer.md)|customer |Gets the customer of the salesCreditMemo.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the salesCreditMemo.|
 |[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the salesCreditMemo.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the salesCreditMemo.|
 |[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the salesCreditMemo.|
@@ -75,6 +75,7 @@ The response has no content; the response code is 204.
 |[salesCreditMemoLines](dynamics_salescreditmemoline.md)|salesCreditMemoLines |Gets the salescreditmemolines of the salesCreditMemo.|
 |[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the salesCreditMemo.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the salesCreditMemo.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the salesCreditMemo.|
 
 ## Properties
 
@@ -85,7 +86,7 @@ The response has no content; the response code is 204.
 |externalDocumentNumber|string|Specifies an external document number for the sales credit memo.|
 |creditMemoDate|date|The credit memo date.|
 |postingDate|date|The date that the sales credit memo   is posted.|
-|dueDate|date|The date the sales credit memo is due.|
+|dueDate|date|T he date the sales credit memo is due.|
 |customerId|GUID|The unique ID of customer.  |
 |customerNumber|string|The customer's number.|
 |customerName|string|The customer's name.|
@@ -117,7 +118,7 @@ The response has no content; the response code is 204.
 |totalAmountExcludingTax|decimal|The total amount excluding tax. Read-Only.  |
 |totalTaxAmount|decimal|The total tax amount for the sales credit memo. Read-Only.|
 |totalAmountIncludingTax|decimal|The total amount including tax. Read-Only.  |
-|status|NAV.salesCrMemoEntityBufferStatus|Specifies the status of the sales credit memo. It can be "Draft" , "In Review", "Open", "Canceled", "Corrective", or "Paid". Read-Only.|
+|status|NAV.salesCrMemoEntityBufferStatus|Specifies the status of the sales credit memo. It can be "Draft" , "In Review", "Open", "Canceled", "Corrective", or "Paid".|
 |lastModifiedDateTime|datetime|The last datetime the sales credit memo was modified. Read-Only.|
 |invoiceId|GUID|The unique ID of invoice.|
 |invoiceNumber|string|The sales invoice number that the sales credit memo  is linked to.|

@@ -1,9 +1,7 @@
 ---
 title: "Developing for Microsoft Teams Using Metadata"
 description: Explains how to use metadata to add custom fields to a Business Central card in Teams
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

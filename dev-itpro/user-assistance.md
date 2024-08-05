@@ -1,15 +1,15 @@
 ---
 title: User assistance model
 description: Learn about the user assistance model for Dynamics 365 Business Central and how your solution can comply with it.
-author: edupont04
-ms.custom: na
-ms.reviewer: na
+author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ms.topic: article
-ms.date: 04/20/2023
-ms.author: edupont
+ms.date: 04/26/2024
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# [!INCLUDE[prod_long](developer/includes/prod_long.md)] User Assistance Model
+# [!INCLUDE[prod_long](developer/includes/prod_long.md)] User assistance model
 
 The [!INCLUDE[prod_short](developer/includes/prod_short.md)] user assistance model is based on the following principles:
 
@@ -34,8 +34,6 @@ The user assistance concept of *Get Started* is not just about getting started w
 The default version of [!INCLUDE [prod_short](includes/prod_short.md)] online includes in-product tours to introduce the first users of a new tenant to the general user interface and the most used pages. The in-product search makes it easy to find pages or reports - provided that you remember what they're called.  
 
 We strive to make [!INCLUDE [prod_short](includes/prod_short.md)] easy to get started with in the browser and in the apps for desktop and mobile devices. Assistance in the shape of wizards is helpful for setup or filling in data for a complicated report, for example. Home pages that are designed for a particular role or job help users get started with their daily work – they can easily get to their most important tasks, and that means that [!INCLUDE[prod_short](developer/includes/prod_short.md)] helps them get their work done more efficiently. Similarly, in-product links to videos give new users a quick introduction to how the product works.  
-
-
 
 ### Onboarding checklist
 
@@ -157,18 +155,18 @@ At Microsoft, we are in process of simplifying and unifying our style guides. To
 
 [!INCLUDE [ua-rss](includes/ua-rss.md)]
 
-## See Also
+## See also
 
-[Configure the Help Experience](deployment/configure-help.md)  
-[Adding Help Links from Pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
-[ToolTip Property](developer/properties/devenv-tooltip-property.md)  
-[InstructionalText Property](developer/properties/devenv-instructionaltext-property.md)  
-[Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)  
+[Configure the help experience](deployment/configure-help.md)  
+[Adding help links from pages, reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[ToolTip property](developer/properties/devenv-tooltip-property.md)  
+[InstructionalText property](developer/properties/devenv-instructionaltext-property.md)  
+[Development of a localization solution](developer/readiness/readiness-develop-localization.md)  
 [Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua)  
-[Resources for Help and Support](help-and-support.md)  
+[Resources for help and support](help-and-support.md)  
 [Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
 [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
-[Docs Contributor Guide](/contribute/)  
+[Docs contributor guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Microsoft Cloud Style Guide (requires login)](https://styleguides.azurewebsites.net/StyleGuide/Read?id=2696)  
 [Microsoft Writing Style Guide](/style-guide/welcome/)  

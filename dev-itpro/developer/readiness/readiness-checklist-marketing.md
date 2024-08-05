@@ -2,7 +2,6 @@
 title: "Marketing Validation Checklist"
 description: "The marketing checklist for validation of Business Central apps"
 author: a-emniel
-ms.custom: na
 ms.date: 09/26/2023
 ms.reviewer: solsen
 ms.topic: reference

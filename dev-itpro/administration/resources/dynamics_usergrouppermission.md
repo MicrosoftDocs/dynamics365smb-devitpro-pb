@@ -1,11 +1,12 @@
 ---
-title: userGroupPermission resource type | Microsoft Docs
+title: userGroupPermission resource type
 description: A user group permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/05/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # userGroupPermission resource type

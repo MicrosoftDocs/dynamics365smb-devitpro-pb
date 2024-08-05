@@ -1,13 +1,13 @@
 ---
 title: (v1.0) Create customerPaymentsJournals
 description: (v1.0) Creates a customer payments journal object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
 ms.date: 11/04/2019
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create customerPaymentsJournals (v1.0)

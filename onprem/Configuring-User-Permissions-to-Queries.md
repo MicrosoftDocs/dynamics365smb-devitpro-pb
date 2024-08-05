@@ -1,10 +1,6 @@
 ---
 title: "Configuring User Permissions to Queries"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ce7ff692-560d-4c0b-9461-fdd935af3ecf
 caps.latest.revision: 12

@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Creating a Customer Card Page in Page Designer"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 945d1af3-e644-48b4-a0cf-73bbbf577152
 caps.latest.revision: 41

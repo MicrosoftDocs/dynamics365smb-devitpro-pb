@@ -1,7 +1,6 @@
 ---
 title: Recommend Apps
 description: Curate a collection of Dynamics 365 apps that your customers can choose from with the Recommended Apps extension. 
-ms.reviewer: na
 ms.topic: conceptual
 ms.search.form: 4750, 4751, 
 author: bholtorf

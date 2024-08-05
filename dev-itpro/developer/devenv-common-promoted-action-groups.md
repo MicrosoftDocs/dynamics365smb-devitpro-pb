@@ -3,10 +3,9 @@ title: "Common Promoted Action Groups"
 description: "Guidelines for organizing actions in the action bar for Dynamics 365 Business Central"
 author: jacobwj
 ms.author: solsen
-ms.reviewer: 
 ms.topic: conceptual
 ms.date: 11/03/2022
-ms.custom: na
+ms.reviewer: solsen
 ---
 
 # Common Promoted Action Groups

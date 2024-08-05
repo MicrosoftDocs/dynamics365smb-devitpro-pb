@@ -1,12 +1,12 @@
 ---
 title: Selling Business Central apps through AppSource
-description: Learn how to enable tranactability in AppSource for Business Central apps.
+description: Learn how to enable transactability in AppSource and through CSP for Business Central apps.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
-ms.date: 02/06/2024
-ms.reviewer: na
+ms.date: 04/15/2024
 ms.topic: conceptual
+ms.reviewer: solsen
 ---
 
 # Selling Business Central apps through AppSource
@@ -55,7 +55,7 @@ The pricing model is a per-user model, where you can choose to define the price 
 
 ## Mapping plans to functionality in your app
 
-Having defined the plans in Partner Center, you must map these to entitlements in your app. Entitlements are defined as AL objects and they map to the plans in Partner Center by using the *Service ID* of the plan. On the plan you find the *Service ID*, which is a combination of the publisher tenant identity, the offer identity, and the plan identity. The *Service ID* is used to map the plan to functionality in the app by using entitlements objects in their [!INCLUDE [prod_short](includes/prod_short.md)] app. Entitlements also allow mapping access to delegated admins, and publisher developers, so that these can run the app without any purchased license, for example, to demo, configure, test, or troubleshoot. For more information, see [Entitlement object](devenv-entitlement-object.md).
+Having defined the plans in Partner Center, you must map these to entitlements in your app. Entitlements are defined as AL objects and they map to the plans in Partner Center by using the *Service ID* of the plan. On the plan, you find the *Service ID*, which is a combination of the publisher tenant identity, the offer identity, and the plan identity. The *Service ID* is used to map the plan to functionality in the app by using entitlements objects in their [!INCLUDE [prod_short](includes/prod_short.md)] app. Entitlements also allow mapping access to delegated admins, and publisher developers, so that these can run the app without any purchased license, for example, to demo, configure, test, or troubleshoot. For more information, see [Entitlement object](devenv-entitlement-object.md).
 
 ## Purchasing your app
 
@@ -66,7 +66,7 @@ When the app has been updated with entitlements, it must be published to AppSour
 
 ## Preview of your app
 
-The publisher of an AppSource app may run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. For more information, see [Preview versions of AppSource apps](../administration/tenant-admin-center-manage-apps.md#preview-versions-of-appsource-apps).
+The publisher of an AppSource app might run a preview for a future version of an already public app, or new app. Preview versions can be installed using a URL including a `PreviewKey` parameter provided by the app publisher, but only in sandbox environments. For more information, see [Preview versions of AppSource apps](../administration/tenant-admin-center-manage-apps.md#preview-versions-of-appsource-apps).
 
 ## Get insights into your app
 
@@ -75,6 +75,14 @@ Once your app is published, you can get insights into how your app is doing. The
 ## Side-by-side support
 
 The side-by-side support is the ability to fall back to custom licensing for existing customers in a transition period. It's crucial that you implement side-by-side support for your app before opting into transactability on AppSource. To enable side-by-side support, you must create an entitlement, which maps the user to the required permission sets to run their custom licensing. On the entitlement object, you must set the `Type` property to `Unlicensed`. For more information, see [Entitlement object](devenv-entitlement-object.md). 
+
+## Sell your transactable apps through the CSP reseller network
+
+As an ISV you can seamlessly license and resell your transactable apps through the managed CSP reseller network, complete with a margin-sharing option for enhanced profitability. For more information, see:
+
+- ISV to CSP private offers FAQs: [Independent Software Vendor (ISV) to Partner private offers FAQ](/partner-center/marketplace/isv-csp-faq).  
+- ISV resells through CSP: [Cloud Solution Provider - Microsoft commercial marketplace](/partner-center/marketplace/cloud-solution-providers).
+
 
 ## See also
 

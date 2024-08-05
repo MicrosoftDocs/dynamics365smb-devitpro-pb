@@ -2,11 +2,10 @@
 title: "Work with Rapid Application Development"
 description: "Describes what Rapid Application Development is and how you publish using RAD."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 08/08/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Work with Rapid Application Development

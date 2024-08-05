@@ -1,7 +1,9 @@
 ---
-title: "Synchronize the Tenant Database with the Application Database"
+title: Synchronize the Tenant Database with the Application Database
 description: This article describes how to synchronize the business data (tenant) database schema with the application database in a single tenant or multitenant deployment environment
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.service: dynamics-365-op

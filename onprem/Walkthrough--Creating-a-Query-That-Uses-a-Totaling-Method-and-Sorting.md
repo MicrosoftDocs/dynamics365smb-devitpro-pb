@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Creating a Query That Uses a Totaling Method and Sorting"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 692b5780-53c7-4747-9c2d-9b97afefeb81
 caps.latest.revision: 21

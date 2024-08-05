@@ -1,12 +1,12 @@
 ---
 title: "Technical Upgrade From Version 14 to Version 18"
 description: Describes how to do a technical upgrade from Business Central 14 to 18
-ms.custom: na
-ms.date: 10/01/2020
-ms.reviewer: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Technical Upgrade From Version 14 to Version 18
 

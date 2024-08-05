@@ -1,12 +1,11 @@
 ---
 title: Cookie samesite policy
 description: Deploy and administer the Web server to support the latest in browser cookie-handling policies.
-ms.custom: na
 ms.date: 12/29/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Preparing Dynamics NAV or Dynamics 365 Business Central for upcoming changes to browser cookie policy

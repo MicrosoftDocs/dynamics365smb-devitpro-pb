@@ -2,11 +2,10 @@
 title: "Compiler Warning (Future Error) AL0615"
 description: "Field '{0}' is not specified as a source expression on page '{1}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

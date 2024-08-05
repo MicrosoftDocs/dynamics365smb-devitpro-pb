@@ -1,10 +1,6 @@
 ---
 title: "Setting Up Colored Indicators on Cues by Using Codeunit 1"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dc009e79-2dcf-41c6-8d83-85e225879a91
 caps.latest.revision: 8

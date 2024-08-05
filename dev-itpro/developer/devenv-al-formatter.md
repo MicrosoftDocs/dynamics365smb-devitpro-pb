@@ -2,12 +2,11 @@
 title: "AL Formatter"
 description: "The AL formatter can help you insert and remove space from AL code."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # AL formatter

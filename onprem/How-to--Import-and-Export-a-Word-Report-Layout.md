@@ -1,10 +1,6 @@
 ---
 title: "How to: Import and Export a Word Report Layout"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 030da0c5-dc31-4002-8f2f-b47de752c201
 caps.latest.revision: 4

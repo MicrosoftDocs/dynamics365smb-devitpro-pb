@@ -3,11 +3,10 @@ title: Use Azure security service tags
 description: "List of Azure service tags for Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
 
 ms.topic: conceptual
 ms.date: 01/12/2024
-ms.custom: na
+ms.reviewer: solsen
 ---
 
 # Use Azure security service tags to restrict network access from/to Business Central

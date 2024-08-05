@@ -1,10 +1,6 @@
 ---
 title: "How to: Rename Companies"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c1426b14-5599-410a-8af4-180d951aeb03
 caps.latest.revision: 7

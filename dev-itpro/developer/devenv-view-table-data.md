@@ -2,11 +2,10 @@
 title: Viewing table data
 description: View tables in browser for troubleshooting
 author: jswymer
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 06/17/2024
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Viewing table data
@@ -67,12 +66,21 @@ In the `launch.json` file for the project, set the `"startupObjectType"` paramet
     "version": "1.0.0",
     "configurations": [
         {
-            "type": "al",
+            "name": "Your own server",
             "request": "launch",
-            "name": "Publish to Microsoft cloud sandbox",
-            "serverInstance": "dynamics",
-            "startupObjectType": "Table"
-            "startupObjectId": 18
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://localhost",
+            "serverInstance": "BC",
+            "authentication": "Windows",
+            "startupObjectId": 18,
+            "startupObjectType": "Table",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "numberOfSqlStatements": 10,
+            "tenant": "default",
+            "usePublicURLFromServer": true
         }
     ]
 }

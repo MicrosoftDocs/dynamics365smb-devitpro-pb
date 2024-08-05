@@ -3,7 +3,7 @@ title: Run Cloud Migration Setup
 description: This article explains how to run the Cloud Migration Setup assisted setup guide to configure the components and connection for migrating data from a Business Central on-premises database to Business Central online environment.
 author: jswymer
 ms.author: jswymer #Required; your Microsoft alias; optional team alias.
-ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
+ms.reviewer: jswymer
 ms.topic: how-to 
 ms.date: 03/14/2024
 ms.custom: bap-template
@@ -106,7 +106,9 @@ Complete the steps in the wizard to update the runtime service. If the change wa
 > [!CAUTION]
 > If you have mapped users in the first run of the cloud migration setup guide, then do not choose the **Define User Mappings** action again in subsequent runs.
 
-If you run into problems with the setup, go to [Cloud migration setup troubleshooting](migration-setup-troubleshooting.md).
+## Troubleshoot and fix problems
+
+If you have any problems during setup, refer to the [Cloud migration troubleshooting documentation for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) in Microsoft troubleshooting documentation.
 
 ## Next steps
 

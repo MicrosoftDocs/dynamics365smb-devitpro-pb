@@ -1,7 +1,10 @@
 ---
-title: "Microsoft Dynamics 365 Business Central Performance Counters"
-ms.custom: bap-template
-ms.date: 04/01/2021
+title: Microsoft Dynamics 365 Business Central Performance Counters
+description: Describes the performance counters that are available for monitoring instances.
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual

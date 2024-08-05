@@ -3,10 +3,9 @@ title: Using filters with API/OData calls
 description: Learn how to use filters with API calls to get targeted information in return.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.custom: na
 ms.date: 03/14/2024
-ms.reviewer: na
 ms.topic: conceptual
+ms.reviewer: solsen
 ---
 
 # Using filters with OData/API calls

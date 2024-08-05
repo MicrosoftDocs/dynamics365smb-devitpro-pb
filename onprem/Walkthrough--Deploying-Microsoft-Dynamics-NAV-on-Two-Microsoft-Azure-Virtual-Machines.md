@@ -1,10 +1,6 @@
 ---
 title: "Walkthrough: Deploying Microsoft Dynamics NAV on Two Microsoft Azure Virtual Machines"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f9e96066-e260-4f41-a42e-0e9e8ce2994a
 caps.latest.revision: 17

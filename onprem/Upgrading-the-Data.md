@@ -1,11 +1,7 @@
 ---
 title: Upgrading the Database
 description: This article describes the tasks required for upgrading from the earlier versions of database to the Microsoft Dynamics NAV 2018.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 ---

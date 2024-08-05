@@ -8,7 +8,7 @@ ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 12/27/2023
 ---
-# Support settings
+# Business Central Admin Center API - Support settings
 
 Allows for the management of support settings, such as changing the contact, for a specific environment
 
@@ -17,7 +17,7 @@ Allows for the management of support settings, such as changing the contact, for
 Get information about the support contact for a specified environment.
 
 ```
-GET /admin/v2.19/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+GET /admin/v2.21/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route parameters
@@ -56,7 +56,7 @@ Sets the support contact information for a specified environment
 
 ```
 Content-Type: application/json
-PUT /admin/v2.19/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+PUT /admin/v2.21/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route parameters

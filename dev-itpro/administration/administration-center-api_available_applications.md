@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# Available Applications
+# Business Central Admin Center API - Available Applications
 
 Get information about the currently available application families, countries/regions, rings, and versions that environments can be created on.
 The API endpoints here should be utilized to determine what values can be used for environment creation or copying 
@@ -18,7 +18,7 @@ The API endpoints here should be utilized to determine what values can be used f
 Get a list of the currently available application families, the available countries/regions within those families, and the available rings within the countries/regions.
 
 ```
-GET /admin/v2.19/applications/
+GET /admin/v2.21/applications/
 ```
 
 ### Response
@@ -45,7 +45,7 @@ GET /admin/v2.19/applications/
 Gets a list of the currently available Versions that an environment can be created on within a logical ring group.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
+GET /admin/v2.21/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
 ```
 
 ### Route Parameters

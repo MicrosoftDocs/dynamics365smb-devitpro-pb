@@ -2,11 +2,10 @@
 title: "EventSubscriber Attribute"
 description: "Specifies the event to which the method subscribes."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/15/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -81,7 +80,7 @@ This example publishes an integration type event by using the **OnAddressLineCha
 codeunit 50105 MyEventPublisher
 {
     [IntegrationEvent(false, false)]
-    procedure OnAddressLineChanged(line : Text[100]);
+    procedure OnAddressLineChanged(line : Text[100])
     begin
     end;
 }

@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, sessions
 ms.date: 12/14/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Managing Sessions in the Admin Center

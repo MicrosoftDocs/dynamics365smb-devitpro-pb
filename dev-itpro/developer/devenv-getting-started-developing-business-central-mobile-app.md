@@ -2,7 +2,6 @@
 title: Get started developing for the Dynamics 365 Business Central mobile app
 description: Learn how to develop for the Dynamics 365 Business Central Mobile App with this comprehensive guide. Includes design tips, best practices, and deployment steps.
 ms.date: 03/01/2024
-ms.reviewer: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.collection: get-started

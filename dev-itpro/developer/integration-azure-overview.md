@@ -2,7 +2,7 @@
 title: Integrating with Azure services
 description: Learn how to integrate Business Central with Azure services.
 author: kennienp
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
 ms.date: 02/23/2024

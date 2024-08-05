@@ -3,6 +3,7 @@ author: solsen
 ms.topic: include
 ms.date: 08/23/2023
 ms.author: solsen
+ms.reviewer: solsen
 ---
 When an environment is created as a copy of another environment, a number of precautions are taken for that copy:
 

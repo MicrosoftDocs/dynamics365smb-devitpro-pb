@@ -2,12 +2,11 @@
 title: Interfaces in AL
 description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/01/2024
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Interfaces in AL
@@ -47,7 +46,7 @@ interface "IAddressProvider"
 codeunit 50200 CompanyAddressProvider implements IAddressProvider
 {
 
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
     var
         ExampleAddressLbl: Label 'Company address \ Denmark 2800';
         
@@ -59,7 +58,7 @@ codeunit 50200 CompanyAddressProvider implements IAddressProvider
 codeunit 50201 PrivateAddressProvider implements IAddressProvider
 {
 
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
     var
         ExampleAddressLbl: Label 'My Home address \ Denmark 2800';
 

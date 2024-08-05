@@ -3,7 +3,7 @@ title: Get started building apps
 description: Learn how you can get started building apps for Dynamics 365 Business Central in six easy steps.
 author: SusanneWindfeldPedersen
 ms.topic: conceptual
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.author: kurtju
 ms.date: 02/06/2024
 ms.collection: get-started
@@ -74,7 +74,7 @@ After your Regional Operational Center process your Agreements and Object Range 
 ### Register your unique prefix or suffix
 
 In your extension, the name of each object must contain [a prefix or suffix](../../compliance/apptest-prefix-suffix.md) that is registered for your publisher name. For more information about the use of affixes and the registration process, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
- 
+
 ## Step 4: Getting access to preview bits
 
 Get access to preview builds by joining Microsoft Collaborate.
@@ -85,29 +85,24 @@ In Microsoft Collaborate, you get access to a set of [!INCLUDE [prod_short](../i
 - An upcoming major version
 - Daily builds
 
-You must have the following prerequisites to register on Microsoft Collaborate:
+### Prerequisites
 
-- Microsoft Entra ID.
+To register on Microsoft Collaborate, you must have have a Microsoft Entra ID account with the required roles. For more information, see [Microsoft Collaborate Registration](/collaborate/registration).
 
-  > [!NOTE]
-  > If you have Microsoft 365, then your company most likely has Microsoft Entra ID.
+> [!NOTE]
+> If you have Microsoft 365, then your company most likely has Microsoft Entra ID. To find out if your company has a Microsoft Entra account, check with your system administrator.
 
-- Microsoft Entra Global Administrator permission
+### Step 4 A: Register for Collaborate
 
-  > [!NOTE]
-  > To find out if your company has a Microsoft Entra account, check with your system administrator.
+Register at [https://aka.ms/Collaborate](https://aka.ms/Collaborate). Sign in with your Microsoft Entra account, choose the **Get Started** action, and then complete the registration form.  
 
-### Step 4 A: How your Global Administrator must register for Collaborate
-
-Only your company's Global Administrator can start the onboarding to Collaborate. They must register at [https://aka.ms/Collaborate](https://aka.ms/Collaborate), choose the **Get Started** action, and then complete the registration form.  
-
-The administrator can then add the relevant colleagues.  
+As an administrator, you can now add the relevant colleagues.  
 
 #### Optional Step: Add your coworkers to Microsoft Collaborate
 
 To add coworkers:
 
-1. Sign in to Microsoft Collaborate with your Global Administrator account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
+1. Sign in to Microsoft Collaborate with your Microsoft Entra account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
 
 2. Choose the settings :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon."::: icon in the top-right corner of the page,  got to on account settings, and choose **user management**.
 

@@ -3,10 +3,9 @@ title: Developing a custom API
 description: Learn how to develop a custom API page by using an AL extension and accessing it to retrieve responses and make updates through the API.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.custom: na
 ms.date: 03/14/2024
-ms.reviewer: na
 ms.topic: conceptual
+ms.reviewer: solsen
 ---
 
 # Developing a custom API

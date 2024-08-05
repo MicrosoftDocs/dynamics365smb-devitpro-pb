@@ -2,9 +2,9 @@
 title: Build your first sample extension that uses new objects and extension objects
 description: Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code.
 author: jswymer
-ms.custom: na
-ms.date: 05/19/2022
-ms.reviewer: na
+ms.author: jswymer
+ms.reviewer: solsen
+ms.date: 06/10/2024
 ms.topic: conceptual
 ms.collection: get-started
 ---
@@ -19,7 +19,7 @@ This walkthrough covers the following tasks:
 
 - Developing a sample extension with a table, a card page, and a list page.
 - Deploying the sample extension to your development sandbox environment.  
-- Using the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer to modify visual aspects of the extension. 
+- Using the [!INCLUDE [prod_short](includes/prod_short.md)] Designer to modify visual aspects of the extension. 
 - Creating extension objects that can be used to modify page and table objects.
 - Initializing the database during the installation of the extension.
 - Upgrading and preserving data during the upgrade of the extension.
@@ -28,15 +28,15 @@ This walkthrough covers the following tasks:
 
 To complete this walkthrough, you need:
 
-- The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant.
+- The [!INCLUDE [prod_short](includes/prod_short.md)] tenant.
 - Visual Studio Code.
 - The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code.
 
-For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting started](devenv-get-started.md).
+For more information on how to get started with your first extension for [!INCLUDE [prod_short](includes/prod_short.md)], see [Getting started](devenv-get-started.md).
 
 ## Rewards extension overview
 
-This extension enables the ability to assign one of the three reward levels to customers: GOLD, SILVER, and BRONZE. Each reward level can be assigned a discount percentage. Different types of objects available within the AL development environment builds the foundation of the user interface, allowing the user to edit the information. If you look for another option to update the layout of a page, you can use the Designer drag-and-drop interface. Additionally, this exercise contains the install code that creates the base for the reward levels. The upgrade code is run to upgrade the extension to a newer version and it changes the BRONZE level to ALUMINUM. By following all the steps of this walkthrough, you can publish the extension on your tenant and create a possible new feature for your customers.  
+This extension enables the ability to assign one of the three reward levels to customers: GOLD, SILVER, and BRONZE. Each reward level can be assigned a discount percentage. Different types of objects available within the AL development environment build the foundation of the user interface, allowing the user to edit the information. If you look for another option to update the layout of a page, you can use the Designer drag-and-drop interface. Additionally, this exercise contains the install code that creates the base for the reward levels. The upgrade code is run to upgrade the extension to a newer version and it changes the BRONZE level to ALUMINUM. By following all the steps of this walkthrough, you can publish the extension on your tenant and create a possible new feature for your customers.  
 
 ## Reward table object
 
@@ -99,7 +99,7 @@ table 50100 Reward
 }
 ```
 
-For more information about table properties, see [Table Properties](properties/devenv-table-properties.md).
+For more information about table properties, see [Table properties](properties/devenv-table-properties.md).
 
 ## Reward card page object
 
@@ -151,7 +151,7 @@ page 50101 "Reward Card"
 }
 ```
 
-For more information about the types of pages in AL, see [Pages Overview](devenv-pages-overview.md).
+For more information about the types of pages in AL, see [Pages overview](devenv-pages-overview.md).
 
 ## Reward list page object
 
@@ -202,14 +202,14 @@ page 50102 "Reward List"
 }
 ```
 
-After you've created the objects, update the `startupObjectId` in the `launch.json` file to `50102`, which is the ID of the **Reward List** page and select the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut to see the new page in your sandbox environment. You are asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you haven't already done so.  
+After you've created the objects, update the `startupObjectId` in the `launch.json` file to `50102`, which is the ID of the **Reward List** page and select the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut to see the new page in your sandbox environment. You're asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you haven't already done so.  
 
 > [!TIP]  
-> Information about your sandbox environment and other environments is stored as configurations in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).  
+> Information about your sandbox environment and other environments is stored as configurations in the `launch.json` file. For more information, see [JSON files](devenv-json-files.md).  
 
 ## Designer
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer works in the browser and allows modifying the current page. It enables users to add existing table fields, move fields around, or remove fields from the page. Users can make changes to display the information they need, where they need it by using drag-and-drop components. 
+[!INCLUDE[prod_short](includes/prod_short.md)] Designer works in the browser and allows modifying the current page. It enables users to add existing table fields, move fields around, or remove fields from the page. Users can make changes to display the information they need, where they need it by using drag-and-drop components. 
  
 To show how Designer changes the design of a page, you begin by adding one field to the **Reward** table. This field is used later to exemplify the Designer's properties. 
 
@@ -221,7 +221,7 @@ field(4;"Minimum Purchase";Decimal)
 }
 ```
 
-From this point, changes to the **Reward Card** page can be done either manually by adding the following code in Visual Studio Code or by Use Designer's functions to add the same field. Both ways lead to the same results, but Use Designer speeds up the process. 
+From this point, changes to the **Reward Card** page can be done either manually by adding the following code in Visual Studio Code or by **Use Designer**'s functions to add the same field. Both ways lead to the same results, but **Use Designer** speeds up the process. 
 
 ```AL
 field("Minimum Purchase";"Minimum Purchase")
@@ -249,7 +249,7 @@ For more information about Designer, see [Designer](devenv-inclient-designer.md)
 
 ## Customer table extension object
 
-The **Customer** table, like many other tables, is part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]'s core service and it can't be modified directly by developers. To add new fields or to change properties on this table, developers must create a new type of object by using a table extension.
+The **Customer** table, like many other tables, is part of the [!INCLUDE[prod_short](includes/prod_short.md)]'s core service and it can't be modified directly by developers. To add new fields or to change properties on this table, developers must create a new type of object by using a table extension.
 
 The following code creates a table extension for the **Customer** table and adds the `Reward ID` field.
 
@@ -290,7 +290,7 @@ tableextension 50103 "Customer Ext" extends Customer
 
 ## Customer card page extension object
 
-A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[prod_long](includes/prod_long.md)]'s core service. The following page extension object extends the **Customer Card** page object by adding a field control, **Reward ID**, to the **General group** on the page. The field is added in the layout section, while in the related section, find **Related** by extending the three dots icon, the code adds an action **Rewards** to open the **Reward List** page.  
+A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[prod_short](includes/prod_short.md)]'s core service. The following page extension object extends the **Customer Card** page object by adding a field control, **Reward ID**, to the **General group** on the page. The field is added in the layout section, while in the related section, find **Related** by extending the three dots icon, the code adds an action **Rewards** to open the **Reward List** page.  
 
 > [!TIP]  
 > Use the shortcuts `tpageext` to create the basic structure for the page extension object.
@@ -339,11 +339,11 @@ At this point, reward levels can be created and assigned to customers. To view r
 
 ## Configure context-sensitive links to Help
 
-This sample app is relatively straightforward, but we want users of your app to be able to get help instantly and learn more in the process of using it. Just like [!INCLUDE [prod_short](includes/prod_short.md)] has Help readily available for users, you configure your app to get context-sensitive links to Help.
+This sample app is relatively straightforward, but we want users of your app to be able to get help instantly and learn more in the process of using it. Just like [!INCLUDE [prod_short](includes/prod_short.md)] has help readily available for users, you configure your app to get context-sensitive links to Help.
 
-At an app level, you can specify where the Help for your functionality is published in the app.json file. Then, for each page in your app, you specify a relevant Help file on your targeted website for that particular page. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
+At an app level, you can specify where the help for your functionality is published in the app.json file. Then, for each page in your app, you specify a relevant Help file on your targeted website for that particular page. For more information, see [Configure context-sensitive help](../help/context-sensitive-help.md).  
 
-Open the app.json file, and then change the value of the `contextSensitiveHelpUrl` property to point at the right location on your website. In this example, you publish Help for your app at *`https://mysite.com/documentation`*.  
+Open the app.json file, and then change the value of the `contextSensitiveHelpUrl` property to point at the right location on your website. In this example, you publish help for your app at *`https://mysite.com/documentation`*.  
 
 ```json
 "contextSensitiveHelpUrl": "https://mysite.com/documentation/",
@@ -356,7 +356,7 @@ Next, you set the [ContextSensitiveHelpPage property](properties/devenv-contexts
     ContextSensitiveHelpPage = 'sales-rewards';
 ```
 
-The following example shows the properties for the **Reward List** page after you've specified the context-sensitive Help page.
+The following example shows the properties for the **Reward List** page after you've specified the context-sensitive help page.
 
 ```AL
 page 50102 "Reward List"
@@ -376,8 +376,9 @@ page 50102 "Reward List"
     // The "CardPageId" is set to the Reward Card previously created.
     // This will allow users to open records from the list in the "Reward Card" page.
     CardPageId = "Reward Card";
-
 ...
+
+}
 ```
 
 Now, if you run your app, you can see the link to help article for **Reward List** page by pointing over *Reward ID* and choosing **Learn More**. The URL of your targeted website is present in the Help section.
@@ -385,7 +386,7 @@ You can specify the same relative link for **Reward Card**, **Reward List**, and
 
 ## Add tooltips
 
-To help users navigate the app interface without any confusion and to add more clarity on the app features, you can use tooltips. Just like the base application of [!INCLUDE[prod_long](includes/prod_long.md)] includes tooltips for all controls and actions. For more information, see [Help users get unblocked](../user-assistance.md#help-users-get-unblocked).  
+To help users navigate the app interface without any confusion and to add more clarity on the app features, you can use tooltips. Just like the base application of [!INCLUDE [prod_short](includes/prod_short.md)] includes tooltips for all controls and actions. For more information, see [Help users get unblocked](../user-assistance.md#help-users-get-unblocked).  
 
 For this walkthrough, you want the following tooltip to appear on all three pages, *Reward Card*, *Reward List*, and *Customer Card ext*.
 
@@ -408,8 +409,6 @@ field(1;"Reward ID";Code[30])
     ToolTip = 'Specifies the level of reward that the customer has at this point.';
 }
 ```
-
-
 **Adding tooltips prior to [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)]**
 
 Prior to [!INCLUDE[prod_short](includes/prod_short.md)] [!INCLUDE[prod_short](../includes/2024-releasewave1-short.md)], you need to add the tooltip to the properties of the **Reward ID** field on all three pages, *Reward Card*, *Reward List*, and *Customer Card ext*. 
@@ -424,7 +423,7 @@ field("Reward ID";"Reward ID")
 }
 ```
 
-Now, if you deploy the app, you are able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or select <kbd>Ctrl</kbd>+<kbd>F1</kbd>, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
+Now, if you deploy the app, you're able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or select <kbd>Ctrl</kbd>+<kbd>F1</kbd>, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
 
 ![Customer card extension tool tip example.](media/help/CustomerCardExt_TooltipHelp.png)
 
@@ -478,7 +477,7 @@ codeunit 50105 RewardsInstallCode
 }
 ```
 
-For more information about install code, see [Writing Extension Install Code](devenv-extension-install-code.md).
+For more information about install code, see [Writing extension install code](devenv-extension-install-code.md).
 
 ## Upgrade code
 
@@ -518,7 +517,7 @@ codeunit 50106 RewardsUpgradeCode
     end;
 }
 ```
-For more information about writing and running upgrade code, see [Upgrading Extension](devenv-upgrading-extensions.md).  
+For more information about writing and running upgrade code, see [Upgrading extensions](devenv-upgrading-extensions.md).  
 
 ## Instrument your app with telemetry
 
@@ -530,14 +529,14 @@ For more information about writing and running upgrade code, see [Upgrading Exte
 
 Replace `<connection string>` with your connection string.
 
-You can configure your extension to send this data to a specific Application Insights resource on Microsoft Azure. For more information, see [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
+You can configure your extension to send this data to a specific Application Insights resource on Microsoft Azure. For more information, see [Sending extension telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
 
 ## Conclusion
 
-This walkthrough showed how an extension can be developed. The main AL objects and extension objects were used to make a structure for reward levels, to store, view, and edit them. The Designer was introduced as an alternative to modify visual components of page objects and to customize them directly from the web interface instead of using code. Up to this point, the table, and the page objects were empty, so, we added install codeunit which initialized the **Reward** table with a standard number of reward levels when the extension was installed. We also added an upgrade code section in this exercise to create a complete picture of all processes involved when an extension is built. As a result, a user is enabled to assign one of the three reward levels to a customer and to change this scenario by upgrading the version of the extension.
+This walkthrough showed how an extension can be developed. The main AL objects and extension objects were used to make a structure for reward levels, to store, view, and edit them. The Designer was introduced as an alternative to modify visual components of page objects and to customize them directly from the web interface instead of using code. Up to this point, the table, and the page objects were empty, so, we added install codeunit, which initialized the **Reward** table with a standard number of reward levels when the extension was installed. We also added an upgrade code section in this exercise to create a complete picture of all processes involved when an extension is built. As a result, a user is enabled to assign one of the three reward levels to a customer and to change this scenario by upgrading the version of the extension.
 
 > [!TIP]  
-> To try building a more advanced Customer Rewards sample extension, see [Building an Advanced Sample Extension](devenv-extension-advanced-example.md).
+> To try building a more advanced Customer Rewards sample extension, see [Building an advanced sample extension](devenv-extension-advanced-example.md).
 
 ## See also
 

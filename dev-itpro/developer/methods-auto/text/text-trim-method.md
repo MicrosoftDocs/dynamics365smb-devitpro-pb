@@ -2,11 +2,10 @@
 title: "Text.Trim() Method"
 description: "Returns a new Text in which all leading and trailing white-space characters from the current Text object are removed."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

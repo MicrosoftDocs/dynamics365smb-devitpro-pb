@@ -2,11 +2,7 @@
 title: "C/AL Compound Statements"
 description: "Describing the C/AL compound statements."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dd09d7e4-8664-4fee-874a-1791944659cc
 caps.latest.revision: 8

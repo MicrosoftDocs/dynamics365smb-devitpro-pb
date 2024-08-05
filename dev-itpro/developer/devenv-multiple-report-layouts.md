@@ -2,11 +2,10 @@
 title: "Defining Multiple Report Layouts"
 description: "Describes how to define multiple layouts for one report in Business Central using AL."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 02/10/2022
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Defining Multiple Report Layouts

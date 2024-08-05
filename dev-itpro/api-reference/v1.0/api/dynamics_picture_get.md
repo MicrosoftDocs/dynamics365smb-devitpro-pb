@@ -4,8 +4,9 @@ description: (v1.0) A picture object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get picture (v1.0)

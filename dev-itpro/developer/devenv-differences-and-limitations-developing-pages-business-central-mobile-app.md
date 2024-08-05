@@ -1,9 +1,8 @@
 ---
 title: Differences and limitations when developing pages for the mobile app
 description: Describes differences and limitations when developing pages for the Dynamics 365 Business Central Mobile App for tablets and phones.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: blrobl
 ms.author: brobledodiaz

@@ -3,7 +3,7 @@ title: Analyzing profile configuration lifecycle telemetry
 description: Learn about the telemetry for configuration profiles using the in-client designer.  
 author: jswymer
 ms.author: jswymer
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.date: 12/18/2023
 ms.custom: bap-template

@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 05/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing Field Monitoring Telemetry

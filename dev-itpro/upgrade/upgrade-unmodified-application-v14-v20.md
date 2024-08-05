@@ -1,12 +1,12 @@
 ---
 title: "Upgrading unmodified C/AL application to version 20"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 20
-ms.custom: na
-ms.date: 12/27/2023
-ms.reviewer: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading unmodified C/AL application to version 20
 

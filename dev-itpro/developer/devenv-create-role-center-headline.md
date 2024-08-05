@@ -1,9 +1,7 @@
 ---
 title: "Create a Role Center Headline"
 description: You can provide information and insights as headlines on Role Centers.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

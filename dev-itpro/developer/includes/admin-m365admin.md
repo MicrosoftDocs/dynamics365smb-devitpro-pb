@@ -1,11 +1,11 @@
 ---
 author: solsen
 ms.topic: include
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.date: 09/22/2022
 ms.author: mikebc
 ---
-Because you are logged in as the global administrator of the demonstration tenant, you can access the Microsoft 365 administration center. The following list illustrates the types of work that your demo account can do:
+Because you are logged in as the administrator of the demonstration tenant, you can access the Microsoft 365 administration center. The following list illustrates the types of work that your demo account can do:
 
 * Subscribe to additional apps and services that may be relevant to your demos  
 

@@ -3,10 +3,10 @@ title: Extension objects overview
 description: Get an overview of the extension objects you can create in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
 ms.topic: overview
 ms.collection: get-started
 ms.date: 03/11/2024
+ms.reviewer: solsen
 ---
 
 # Extension objects overview

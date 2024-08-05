@@ -1,10 +1,6 @@
 ---
 title: "How to: Style Field Text on a Page"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6221826a-8c26-42c0-b1cb-affdf81dbfaa
 caps.latest.revision: 20

@@ -1,6 +1,5 @@
 ---
 title: "Defining Action Scope for Business Central Pages"
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual

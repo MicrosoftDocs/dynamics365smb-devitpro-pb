@@ -2,9 +2,8 @@
 title: "Set Up an Environment for Developing a Module"
 description: Learn how to set up the tools you need to build a module in the System Applicaton.
 ms.author: bholtorf
-ms.custom: na
 ms.date: 07/29/2021
-ms.reviewer: solsen
+ms.reviewer: bholtorf
 ms.topic: conceptual
 author: bholtorf
 ---

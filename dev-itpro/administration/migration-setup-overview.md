@@ -3,7 +3,7 @@ title: Cloud migration setup overview
 description: Gives an overview of what happens you set up cloud migration. 
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer 
+ms.reviewer: jswymer
 ms.topic: conceptual 
 ms.date: 02/29/2024
 ms.custom: bap-template
@@ -49,4 +49,4 @@ After completing one or more replication runs, you run data upgrade, then comple
 ## Next steps
 
 1. [Define migration table mappings](migration-table-mapping.md) (Business Central on-premises migration only)
-2. [Run data migration setup](migration-setup.md)
+2. [Run data migration setup for Business Central on-premises migration](migration-setup.md) or [Run data migration setup for Dynamics GP](migration-setup-gp.md)

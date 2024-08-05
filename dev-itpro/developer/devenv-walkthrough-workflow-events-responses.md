@@ -2,10 +2,10 @@
 title: "Walkthrough: Implementing New Workflow Events and Responses"
 description: Learn how you can extend the native workflows by adding workflow events and responses in code to support additional business scenarios.
 author: solsen
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 02/11/2022
+ms.reviewer: solsen
 ---
 
 # Walkthrough: Implementing New Workflow Events and Responses
@@ -82,7 +82,7 @@ Your MyWorkflowEvents.codeunit.al file now looks like this:
 ```AL
 codeunit 50101 MyWorkflowEvents
 {
-    procedure MyWorkflowEventCode(): code[128];
+    procedure MyWorkflowEventCode(): code[128]
     begin
     end;
 }
@@ -221,7 +221,7 @@ The codeunit now looks something like this:
 ```AL
 codeunit 50103 MyWorkflowResponses
 {
-    procedure MyWorkflowResponseCode(): code[128];
+    procedure MyWorkflowResponseCode(): code[128]
     begin
     end;
 

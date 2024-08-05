@@ -1,9 +1,7 @@
 ---
 title: "Deploying Business Central in a Three-Computer Topology"
 description: Learn how deploy Business Central components on three separate computers.
-ms.custom: na
 ms.date: 09/27/2022
-ms.reviewer: na
 ms.topic: conceptual
 author: jswymer
 ---

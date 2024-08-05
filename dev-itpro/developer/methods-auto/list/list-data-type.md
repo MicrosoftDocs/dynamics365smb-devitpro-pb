@@ -2,11 +2,10 @@
 title: "List Data Type"
 description: "Represents a strongly typed list of ordered objects that can be accessed by index."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -95,7 +94,7 @@ trigger OnRun()
 In the following example, the variable `CustomerNames` is a list of Text values which represent customer names. The procedure `WorkWithListOfCustomers` displays how one would work with the List data type. The `Add` method is used to add the string `'John'` to the `CustomerNames` list. The `Contains` method is used to check whether the list contains the specified value, in this case, the string `'John'`. We continue by using the Message procedure to display a relevant message. 
 
 ```al
-procedure WorkWithListOfCustomers();
+procedure WorkWithListOfCustomers()
 var
     customerNames : List of [Text];
 begin

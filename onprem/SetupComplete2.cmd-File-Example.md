@@ -1,11 +1,7 @@
 ---
 title: "SetupComplete2.cmd File Example"
 author: jswymer
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a6484034-a4cc-4d11-9222-7ea6727c8770
 ms.author: jswymer

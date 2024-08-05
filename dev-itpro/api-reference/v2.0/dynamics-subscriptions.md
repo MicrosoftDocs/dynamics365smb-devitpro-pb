@@ -6,6 +6,7 @@ ms.topic: article
 ms.devlang: al
 ms.date: 01/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Working with Webhooks in Dynamics 365 Business Central

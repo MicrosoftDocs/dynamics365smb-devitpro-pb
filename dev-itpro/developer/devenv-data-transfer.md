@@ -2,11 +2,10 @@
 title: Transferring data between tables using DataTransfer
 description: Learn about the DataTransfer object type and how to use it to move data between tables.
 author: jswymer
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 03/07/2023
+ms.reviewer: jswymer
 ---
 
 # Transferring data between tables using DataTransfer
@@ -167,7 +166,7 @@ begin
     dt.SetTables(Database::Destination, Database::Destination);
     dt.AddSourceFilter(dest.FieldNo("Field 1"), '=%1', 'A');
     dt.AddSourceFilter(dest.FieldNo("Field 2"), '%1..%2', 'B', 'C');
-    dt.AddConstValue(dest."Enum Field"::SomeValue, dest.FieldNo("Enum Field"));
+    dt.AddConstantValue(dest."Enum Field"::SomeValue, dest.FieldNo("Enum Field"));
     dt.CopyFields();
 end;
 ```

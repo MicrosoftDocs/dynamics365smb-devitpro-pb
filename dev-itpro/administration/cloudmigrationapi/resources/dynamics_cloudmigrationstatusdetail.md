@@ -1,14 +1,15 @@
 ---
-title: cloudMigrationStatusDetail resource type
+title: (cloudMigration API) cloudMigrationStatusDetail resource type
 description: A cloud migration status detail object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 03/25/2022
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# cloudMigrationStatusDetail resource type
+# (cloudMigration API) cloudMigrationStatusDetail resource type
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->

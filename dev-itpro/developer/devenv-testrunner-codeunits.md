@@ -1,7 +1,6 @@
 ---
 title: Test Runner Codeunits
 description: This article describes how to create test codeunits and how to create test runner codeunits. 
-ms.custom: na
 ms.date: 08/12/2022
 ms.reviewer: solsen
 ms.topic: conceptual

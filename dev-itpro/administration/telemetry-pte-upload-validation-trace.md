@@ -3,7 +3,7 @@ title:  Analyzing Extension Upload Validation Telemetry
 description: Learn about the extension upload validation telemetry in Business Central.
 author: KennieNP
 ms.author: kepontop
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.date: 11/03/2023
 ms.custom: bap-template
