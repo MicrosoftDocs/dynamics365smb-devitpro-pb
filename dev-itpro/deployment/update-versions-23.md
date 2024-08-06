@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 07/22/2024
+ms.date: 08/05/2024
 ms.custom: bap-template
 ---
 
@@ -27,7 +27,7 @@ The following table lists the updates that have been released for 2023 release w
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|[5042529](https://support.microsoft.com/help/5042529)|Update 23.10 |August 2024|Application Build 23.10</br>Platform Build 23.0.|
+|[5042529](https://support.microsoft.com/help/5042529)|Update 23.10 |August 2024|Application Build 23.10.22604</br>Platform Build 23.0.22561|
 |[5041132](https://support.microsoft.com/help/5041132)|Update 23.9 |July 2024|Application Build 23.9.21328</br>Platform Build 23.0.21274|
 |[5040043](https://support.microsoft.com/help/5040043)|Update 23.8 |June 2024|Application Build 23.8.20231</br>Platform Build 23.0.20134|
 |[5038530](https://support.microsoft.com/help/5038530)|Update 23.7 |May 2024|Application Build 23.7.18957</br>Platform Build 23.0.18933|
