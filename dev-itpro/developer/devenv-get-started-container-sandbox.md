@@ -2,18 +2,16 @@
 title: Get started with the container sandbox development environment
 description: Overview of the getting started with the container-based development.
 author: SusanneWindfeldPedersen
-ms.date: 10/04/2023
+ms.date: 05/08/2024
 ms.topic: conceptual
 ms.author: jswymer
 ms.collection: get-started
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ---
 
 # Get started with the container sandbox development environment
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to the AL development environment. 
-
-You set up a container sandbox by running the **Container Sandbox Environment** page from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You have to decide whether you want an Azure-hosted or locally hosted container sandbox. See the next section for details.
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] offers a container-based image environment that enables access to the AL development environment. In the following sections, you can read about how to set up an Azure-hosted and a local-hosted container sandbox.
 
 > [!TIP]
 > [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] also offers an online sandbox. For more information, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
@@ -26,6 +24,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 - Local hosting requires that your computer is running Windows Desktop, Windows Server 2016, or Windows Server 2019, and you install and configure Docker before setting up the container sandbox.
 
 ## Set up an Azure-hosted container sandbox
+
 1. If you don't already have one, sign up for an Azure subscription.
 
     To get a free subscription and read more information, see [https://azure.microsoft.com](https://azure.microsoft.com).
@@ -153,7 +152,7 @@ Creating Desktop Shortcuts for MyBCapp2
 
 ## See also
 
-[Running a Container-Based Development Environment](devenv-running-container-development.md)  
-[Working with Sandboxes and Entitlements](devenv-work-sandbox-entitlements.md)  
-[Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
+[Running a container-based development environment](devenv-running-container-development.md)  
+[Working with sandboxes and entitlements](devenv-work-sandbox-entitlements.md)  
+[Sandbox environments for Dynamics 365 Business Central development](devenv-sandbox-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
