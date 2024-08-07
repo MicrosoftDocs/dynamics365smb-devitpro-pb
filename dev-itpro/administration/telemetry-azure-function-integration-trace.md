@@ -140,4 +140,4 @@ traces
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Alert on Telemetry](telemetry-alert.md)  
 [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)  
-[Overview of the System Application](../developer/devenv-system-application-overview.md)  
+[Overview of the Application](../developer/devenv-application-overview.md)  

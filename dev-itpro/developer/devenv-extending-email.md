@@ -377,7 +377,7 @@ pageextension 50110 "Importance On Sent" extends "Sent Emails"
 
 ## See Also
 
-[Overview of the System Application](devenv-system-application-overview.md)    
+[Overview of the Application](devenv-application-overview.md)    
 [Set Up Email](/dynamics365/business-central/admin-how-setup-email)    
 [Module System Application](/dynamics365/business-central/application/system-application/module/system-application)    
 [Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)  

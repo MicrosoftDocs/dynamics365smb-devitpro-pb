@@ -14,7 +14,7 @@ This section introduces the different parts of the AL platform that are availabl
 
 ## Platform capabilities
 
-[!INCLUDE[prod_short](includes/prod_short.md)] comes with a rich platform of system modules and capabilities that you can leverage in your extensions. Getting familiar with the modules in the [!INCLUDE[prod_short](includes/prod_short.md)] system application might save you a lot of time as it contains implementations of many generic tasks you might need. For more information, see [Overview of the System Application](devenv-system-application-overview.md).
+[!INCLUDE[prod_short](includes/prod_short.md)] comes with a rich platform of system modules and capabilities that you can leverage in your extensions. Getting familiar with the modules in the [!INCLUDE[prod_short](includes/prod_short.md)] system application might save you a lot of time as it contains implementations of many generic tasks you might need. For more information, see [Overview of the Application](devenv-application-overview.md).
 
 You can start background sessions using the task scheduler and job queues can help you offload work from UI sessions. For more information, see [Task Scheduler](devenv-task-scheduler.md).
 
@@ -33,7 +33,7 @@ Instrumenting your extension using feature telemetry and custom telemetry can he
 
 ## See Also
 
-[Overview of the System Application](devenv-system-application-overview.md)  
+[Overview of the Application](devenv-application-overview.md)  
 [Task Scheduler](devenv-task-scheduler.md)  
 [Job Queue](devenv-job-queue.md)  
 [HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md)  

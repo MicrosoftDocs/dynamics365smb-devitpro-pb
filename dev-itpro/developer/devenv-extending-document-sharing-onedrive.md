@@ -228,7 +228,7 @@ Yes, when you set record on the Document Sharing temporary table. But we'll prov
 ## See Also
 
 [Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview)    
-[Overview of the System Application](devenv-system-application-overview.md)    
+[Overview of the Application](devenv-application-overview.md)    
 [Module System Application](/dynamics365/business-central/application/system-application/module/system-application)    
 [Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)    
 [Extending Application Areas](devenv-extending-application-areas.md)  
