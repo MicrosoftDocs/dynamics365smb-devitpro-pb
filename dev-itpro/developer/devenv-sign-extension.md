@@ -86,7 +86,7 @@ sign code azure-key-vault --help
 
 The signing of an app package file must be performed on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed. If you're running [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker for your development environment, that environment meets this requirement. You must also have the certificate that is used for signing on the computer. The certificate must include code signing as the intended purpose. It's recommended that you use a certificate purchased from a third-party certificate authority.
 
-To start the Windows Certificate Manager tool, press <kbd>Win</kbd>+<kbd>R</kbd> to open up the **Run** dialog box. At the prompt, type `Certmgr.msc` and then press <kbd>Enter</kbd>. This opens the Certificate Manager.
+To start the Windows Certificate Manager tool, press <kbd>Win</kbd>+<kbd>R</kbd> to open up the **Run** dialog box. At the prompt, type `Certmgr.msc` and then press <kbd>Enter</kbd>. This opens the Certificate Manager. Inspect the **Trusted Root Certification Authorities** folder. 
 
 
 ### Steps for signing your .app file with a PFX file
