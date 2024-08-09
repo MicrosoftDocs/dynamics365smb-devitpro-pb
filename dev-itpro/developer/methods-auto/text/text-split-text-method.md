@@ -39,6 +39,9 @@ The collection of substrings from the original string based on the collection of
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Remarks
+If no separators are specified, the text is split at white-space characters.
+
 ## See Also
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
