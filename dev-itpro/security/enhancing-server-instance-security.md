@@ -25,7 +25,9 @@ The default configuration is for the service to log on using the NT Authority\\N
   
 <!-- The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Setup program opens a port in the firewall on the computer where you install [!INCLUDE[server](../developer/includes/server.md)].-->
 
-The client services port is used for communication between the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)]. By default, this port  is 7085 (7046 in version 20 and earlier). When the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)] are on differencr machines, an inbound rule in Windows Firewall is required to allow communication on the port. To improve security, limit access to this port to a specific subnet. One way is to use `netsh`, which is a command-line tool for configuring and monitoring Windows-based computers at a command prompt. The specific version of this command that you would use is `netsh firewall set portopening`. For example, the following command limits access to port 7085 to the specified addresses and subnets:  
+The client services port is used for communication between the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)]. By default, this port  is 7085 (7046 in version 20 and earlier).Don't expose this port to external networks and limit communication to only between the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)].
+
+When the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)] are on differencr machines, an inbound rule in Windows Firewall is required to allow communication on the port. To improve security, limit access to this port to a specific subnet. One way is to use `netsh`, which is a command-line tool for configuring and monitoring Windows-based computers at a command prompt. The specific version of this command that you would use is `netsh firewall set portopening`. For example, the following command limits access to port 7085 to the specified addresses and subnets:  
   
 ```  
 netsh firewall set portopening protocol=TCP port=7085 scope=subnet addresses=LocalSubnet  
@@ -33,11 +35,10 @@ netsh firewall set portopening protocol=TCP port=7085 scope=subnet addresses=Loc
 
 ## <a name="data-encryption"></a>Data Encryption Between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server  
 
-When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Enable Encrypted Connections to the Database Engine](/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-2017). 
+When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Enable Encrypted Connections to the Database Engine](/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-2017).
 
+## See also
 
-
-## See Also  
- [Configuring Business Central Server](../administration/configure-server-instance.md)   
+ [Configuring Business Central Server](../administration/configure-server-instance.md)  
  [Security and Protection](security-and-protection.md)   
  [How to Use the Netsh.exe Tool and Command-Line Switches](/previous-versions/tn-archive/bb490939(v=technet.10))
