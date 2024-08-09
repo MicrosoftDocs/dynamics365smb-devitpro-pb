@@ -29,15 +29,11 @@ table 50102 MyTable
     fields
     {
         field(1; MyField; Integer)
-        {
-            DataClassification = CustomerContent;
+        {           
             ToolTip = 'Field number one is always the best!';
         }
 
-        field(2; MySecondField; Integer)
-        {
-            DataClassification = CustomerContent;
-        }
+        field(2; MySecondField; Integer) {  }
     }
 }
 ```
@@ -66,14 +62,12 @@ page 50103 MyPage
             group(GroupName)
             {
                 field(First; Rec.MyField)
-                {
-                    ApplicationArea = All;
+                {                   
                     ToolTip = 'This tooltip overwrites the tooltip defined on the table field.'
                 }
 
                 field(Second; Rec.MySecondField)
-                {
-                    ApplicationArea = All;
+                {    
                     ToolTip = 'Tooltip on page field (it was never defined on the table)'
                 }
             }
