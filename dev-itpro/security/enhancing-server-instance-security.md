@@ -16,7 +16,7 @@ ms.reviewer: solsen
 
 The [!INCLUDE[server](../developer/includes/server.md)] is configured with a login account, which is referred to as the *service account*. The service account is used by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] clients to log on to the [!INCLUDE[server](../developer/includes/server.md)] instance. The [!INCLUDE[server](../developer/includes/server.md)] then uses the service account to log on to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.
   
-The default configuration is for the service to log on using the NT Authority\\Network Service account. If [!INCLUDE[server](../developer/includes/server.md)] and SQL Server are on different computers, then we recommend that you configure [!INCLUDE[server](../developer/includes/server.md)] to log on using a dedicated Windows domain user account instead. This account should not be an administrator either in the domain or on any local computer. A dedicated domain user account is considered more secure because no other services and therefore no other users have permissions for this account. For more information about using a domain account and configuring the recommended permissions, see [Provisioning the Business Central Server Service Account](../deployment/provision-server-account.md).  
+The default configuration is for the service to log on using the NT Authority\\Network Service account. If [!INCLUDE[server](../developer/includes/server.md)] and SQL Server are on different computers, then we recommend that you configure [!INCLUDE[server](../developer/includes/server.md)] to log on using a dedicated Windows domain user account instead. This account shouldn't be an administrator either in the domain or on any local computer. A dedicated domain user account is considered more secure because no other services and therefore no other users have permissions for this account. For more information about using a domain account and configuring the recommended permissions, see [Provisioning the Business Central Server Service Account](../deployment/provision-server-account.md).  
   
 ## Disk quotas
 
@@ -26,9 +26,8 @@ The default configuration is for the service to log on using the NT Authority\\N
 
 The client services port is used for communication between the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)]. By default, this port  is 7085.
 
-- Don't expose this port to external networks and limit communication to only between the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)].
-
-- When the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)] are on differencr machines, an inbound rule in Windows Firewall is required to allow communication on the port. To improve security, limit access to this port to a specific subnet. One way is to use `netsh`, which is a command-line tool for configuring and monitoring Windows-based computers at a command prompt. The specific version of this command that you would use is `netsh firewall set portopening`. For example, the following command limits access to port 7085 to the specified addresses and subnets:  
+- Ensure that this port is blocked from external networks, allowing communication only between the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)].
+- When the [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[webserver](../developer/includes/webserver.md)] are on different machines, an inbound rule in Windows Firewall is required to allow communication on the port. To improve security, limit access to this port to a specific subnet. One way is to use `netsh`, which is a command-line tool for configuring and monitoring Windows-based computers at a command prompt. The specific version of this command that you would use is `netsh firewall set portopening`. For example, the following command limits access to port 7085 to the specified addresses and subnets:  
   
   ```  
   netsh firewall set portopening protocol=TCP port=7085 scope=subnet addresses=LocalSubnet  
@@ -36,7 +35,7 @@ The client services port is used for communication between the [!INCLUDE[server]
 
 ## <a name="data-encryption"></a>Data Encryption Between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server  
 
-When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Enable Encrypted Connections to the Database Engine](/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-2017).
+When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options aren't supported.\) For information on how to do this, see [Enable Encrypted Connections to the Database Engine](/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-2017).
 
 ## See also
 
