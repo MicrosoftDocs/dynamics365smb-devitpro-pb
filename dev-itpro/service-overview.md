@@ -5,7 +5,7 @@ author: jswymer
 ms.reviewer: jswymer
 ms.topic: overview
 ms.author: jswymer
-ms.date: 06/06/2024
+ms.date: 08/12/2024
 ---
 <!-- comment: when viewing the live version of this article, there's a lot of redundancy in the Service Updates section (line 93). The "includes" text (line 91) contains much of the same info as the text in line 93. -->
 <!-- question: In the paragraph in line 21, what does 30-K mean? It looks like shortcut for 30,000, but that seems small. -->
@@ -72,11 +72,11 @@ Azure SQL Database, Microsoft's cloud-based relational database service, is used
 - Dynamic scalability features to accommodate fluctuating workloads 
 - Robust security protocols to safeguard sensitive data 
 
-To learn more about how Azure SQL Database keeps workloads running smoothly, go to [High availability for Azure SQL Database](/azure/azure-sql/database/high-availability-sla).
+Learn more about how Azure SQL Database keeps workloads running smoothly in [High availability for Azure SQL Database](/azure/azure-sql/database/high-availability-sla).
 
-Azure SQL Database protects [!INCLUDE [prod_short](includes/prod_short.md)] production and sandbox environments by taking automatic backups that it keeps for 28 days. Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to restore the environment to any specific point in time in the past 28 days. Learn more about restoring an environment in [Restoring an Environment in the Admin Center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-backup-restore).
+Azure SQL Database protects [!INCLUDE [prod_short](includes/prod_short.md)] production and sandbox environments by taking automatic backups that it keeps for 28 days. Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to restore the environment to any specific point in time in the past 28 days. Learn more in [Restoring an Environment in the Admin Center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-backup-restore).
 
-Administrators can also use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to recover deleted production or sandbox environments within 14 days of their deletion. Learn more about recovering deleted environments in [Recover an environment](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments-delete#recover-an-environment).
+Administrators can also use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to recover deleted production or sandbox environments within 14 days of their deletion. Learn more in [Recover an environment](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments-delete#recover-an-environment).
 
 ### High availability through geographical redundancy
 
@@ -104,21 +104,21 @@ An exception to this type of schedule is the continuous updates to the underlyin
 
 ## Lifecycle policy
 
-[!INCLUDE [prod_short](includes/prod_short.md)] online is governed by the Microsoft [Modern Lifecycle Policy](https://support.microsoft.com/help/30881), which means continuous [service updates](#service-updates) and a major update every six months. Learn more in  [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
+[!INCLUDE [prod_short](includes/prod_short.md)] online is governed by the Microsoft [Modern Lifecycle Policy](https://support.microsoft.com/help/30881), which means continuous [service updates](#service-updates) and a major update every six months. Learn more in [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
 
 Learn more about new and upcoming changes in [Dynamics 365 release plans](/dynamics365/release-plans/).  
 
 ## See also
 
-- [Scalability](service-scalability.md)  
-- [Service operations](service-operations.md)  
-- [FAQ for Dynamics 365 Business Central](faq.yml)  
-- [Administration of Business Central online](administration/tenant-administration.md)  
-- [Technical Support for Business Central](technical-support.md)  
-- [Escalating support issues to Microsoft](administration/manage-technical-support.md#escalating-support-issues-to-microsoft)  
-- [Data and access when a trial or subscription ends](administration/tenant-administration.md#expire)  
-- [Azure global infrastructure](https://azure.microsoft.com/global-infrastructure)  
-- [Azure reliability](https://azure.microsoft.com/features/reliability/)  
-- [Microsoft Service Trust](https://servicetrust.microsoft.com/)  
+[Scalability](service-scalability.md)  
+[Service operations](service-operations.md)  
+[FAQ for Dynamics 365 Business Central](faq.yml)  
+[Administration of Business Central online](administration/tenant-administration.md)  
+[Technical Support for Business Central](technical-support.md)  
+[Escalating support issues to Microsoft](administration/manage-technical-support.md#escalating-support-issues-to-microsoft)  
+[Data and access when a trial or subscription ends](administration/tenant-administration.md#expire)  
+[Azure global infrastructure](https://azure.microsoft.com/global-infrastructure)  
+[Azure reliability](https://azure.microsoft.com/features/reliability/)  
+[Microsoft Service Trust](https://servicetrust.microsoft.com/)  
 
 [!INCLUDE [footer-banner](includes/footer-banner.md)]
