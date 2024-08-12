@@ -3,7 +3,7 @@ title: Operation Limits in Dynamics 365 Business Central
 description: Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments.
 author: swinarko
 ms.custom: bap-template
-ms.date: 06/10/2024
+ms.date: 08/05/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: sawinark
@@ -42,6 +42,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |---------|--------------------------------------------------------------------------------|------|
 |Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|350 MB|
 |Maximum stream read size|The maximum number of bytes that can be read from a stream (InStream object) in a single AL read operation. Examples include READ or InStream.READTEXT method calls. This setting pertains to UTF-8 and UTF-16 text encoding; not MS-DOS encoding. |1,000,000 bytes|
+|Upload timeout|The maximum time it can take for a file to upload to the service. When the limit is reached, the following message displays in the client: **Upload did not complete within the 65 seconds limit.**|65 seconds|
 
 <!--
 |Max data rows allowed to send to Excel|The maximum number of rows that can be included in an Excel document generated from a list type page <br /><br /> **Note:** This setting only pertains to list type pages in the client. For other page types, the limit on rows is configured in the client.| |    
@@ -111,7 +112,7 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 | Max companies | The maximum number of companies that can be contained in one environment.|300|
 
 > [!TIP]  
-> This company limit will take effect in 2023 wave 1 release. When in effect, exceeding the limit will prevent you from doing some environment operations. For information about the consequences of exceeding the limit, go to [Operational challenges with many companies per environment](environment-company-limit.md).
+> This company limit will take effect in 2023 wave 1 release. When in effect, exceeding the limit will prevent you from doing some environment operations. Learn more about the consequences of exceeding the limit, in [Operational challenges with many companies per environment](environment-company-limit.md).
 >
 > If you already have more than 300 companies in one environment, distribute them across more environments to avoid problems later.
 
@@ -163,7 +164,7 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 |Speed (rate)|The maximum number of SOAP requests that can be submitted within a 5-minute sliding window. When this limit is exceeded, an HTTP response code `429 - Too Many Requests` is returned. The more users you have in your environment, the more requests you can submit to the environment around the same time, as long as we can continuously scale our resources. If many requests are being submitted around the same time and we can't sufficiently scale our resources, you might experience throttling in submitting your requests.|6000, see [frequently asked questions on per-user limits](#FAQsUser).|
 
 > [!TIP]  
-> Throttling could occur when many requests are submitted and handled (processed/queued) around the same time and they're taking a long time to complete. To optimize throughput, use API or OData instead of SOAP, as they execute faster.  We'll also reduce the throughput for SOAP and [deprecate it](../upgrade/deprecated-features-platform.md#soap-endpoints-warning) in the future.
+> Throttling could occur when many requests are submitted and handled (processed/queued) around the same time and they're taking a long time to complete. To optimize throughput, use API or OData instead of SOAP, as they execute faster.  We'll also reduce the throughput for SOAP and deprecate it in the future. Learn more in [Deprecated features in the platform - Clients, Server, and Database](../upgrade/deprecated-features-platform.md#soap-endpoints-warning).
 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
