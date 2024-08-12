@@ -207,7 +207,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 > [!NOTE]  
 > Microsoft will announce new planned countries for [!INCLUDE [prod_short](../includes/prod_short.md)] 2024 release wave 2 at October.
 
-For a list of the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available, go to [Geographical availability for Dynamics 365](https://aka.ms/bapcopilot-intl-report-external/) report and select [!INCLUDE [prod_long](../developer/includes/prod_long.md)] in the **Product** list.
+Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available in [Copilot international availability](https://aka.ms/bapcopilot-intl-report-external/).
 
 Administrators can use the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] admin center to find the Azure region that their environments are in.
 
