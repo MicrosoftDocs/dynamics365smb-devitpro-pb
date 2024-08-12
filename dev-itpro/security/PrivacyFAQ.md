@@ -2,7 +2,7 @@
 title: "Privacy FAQ"
 description: "Find useful links and other answers to frequently asked questions about Dynamics 365 Business Central."
 author: jswymer
-ms.date: 09/12/2023
+ms.date: 08/12/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
