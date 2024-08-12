@@ -1,10 +1,9 @@
 ---
-title: "Performance Profiler overview"
+title: Performance Profiler overview
 description: Describes how to use the Performance Profiler page in Business Central to troubleshoot slow processes.
 ms.author: bholtorf
-ms.date: 05/25/2023
-ms.reviewer: bholtorf
-ms.search.forms: 24
+ms.date: 08/12/2024
+ms.reviewer: solsen
 ms.topic: conceptual
 author: bholtorf
 ---
@@ -34,9 +33,9 @@ To get started working with the Performance Profiler, follow these steps:
   
 ## Analyzing high-level results
 
-After you record a snapshot you'll get the following insights:
+After you record a snapshot, you get the following insights:
 
-* The **Active Apps** chart shows the apps that where active during the recording of the profile. They were either running or called other apps. The duration represents the time you might save by removing an app.
+* The **Active Apps** chart shows the apps that were active during the recording of the profile. They were either running or called other apps. The duration represents the time you might save by removing an app.
 
 You can use the **App Name** and **App Publisher** actions to filter the charts to view the aggregated time spent per publisher, and across multiple apps from a publisher.
 
@@ -57,7 +56,7 @@ If you want to dig into the technical specifics, you can turn on the **Show tech
 
 If you want to share a recording, for example, if you're in contact with the company that provided an app that you think is slowing down a process, you can share the recording with them. Choose the **Share** button on the **Performance Profiler** page, and send the link to the app provider.
 
-You can also download the recording and for example copy the file to OneDrive to share it with your colleagues. Choose the **Download** button on the **Performance Profiler** page, and then choose **Yes** in the confirmation dialog. The file is downloaded to your default download location.
+You can also download the recording and, for example,  copy the file to OneDrive to share it with your colleagues. Choose the **Download** button on the **Performance Profiler** page, and then choose **Yes** in the confirmation dialog. The file is downloaded to your default download location.
 
 ## Clear performance profiles
 
