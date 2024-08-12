@@ -28,13 +28,13 @@ The service is built from the ground up as a multitenant service, comprised of m
 
 ## Global availability
 
-[!INCLUDE[prod_short](includes/prod_short.md)] online is running globally in more than 170 countries/regions, out of 21 Microsoft Azure regions, and new countries/regions go live on a quarterly basis. For more information, see [Countries/regions and Translations Supported](compliance/apptest-countries-and-translations.md).  
+[!INCLUDE[prod_short](includes/prod_short.md)] online is running globally in more than 170 countries/regions, out of 21 Microsoft Azure regions, and new countries/regions go live on a quarterly basis. Learn more in [Countries/regions and Translations Supported](compliance/apptest-countries-and-translations.md).  
 
 For a visual overview of where [!INCLUDE [prod_short](includes/prod_short.md)] online is deployed, visit [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) and then in the **Product** pane, under **Operations Apps**, select **Dynamics 365 Business Central**.  
 
 ### Availability of Copilot in Business Central
 
-Microsoft Copilot in Business Central includes a variety of features that can each be in preview or generally available in different languages and regions. For information about availability of Copilot in Business Central and other business applications, see the [Copilot international availability report](https://aka.ms/bapcopilot-intl-report-external).
+Microsoft Copilot in Business Central includes a variety of features that can each be in preview or generally available in different languages and regions. Learn more about availability of Copilot in Business Central and other business applications in [Copilot international availability report](https://aka.ms/bapcopilot-intl-report-external).
 
 ## Built upon a foundation of trust, security, and compliance
 
@@ -52,7 +52,7 @@ For example, you can find audit reports and certifications for ISO 27001, ISO 27
 
 [!INCLUDE [prod_short](includes/prod_short.md)] online financially guarantees 99.9% up-time for its paid production environments, where customers are entitled to financial compensation if the service doesn't deliver on this promise. <!-- Built-in redundancy implemented on many levels of the service, automated failover and rollback mechanisms, rigid and granular backup policy, as well as-->Historical data shows that the [!INCLUDE [prod_short](includes/prod_short.md)] online service has been able to consistently maintain this level of availability.
 
-[!INCLUDE [prod_short](includes/prod_short.md)] uses the Azure cloud computing platform for its robust business continuity options that protect your critical workloads against disruptions. The Azure global network of regions keeps your data close to your geographic location, and provides options for recovering data in another region. Your data is available despite regional outages or disruptions. To learn more about Azure regions, go to [Azure Geographies](https://azure.microsoft.com/explore/global-infrastructure/geographies/#overview).
+[!INCLUDE [prod_short](includes/prod_short.md)] uses the Azure cloud computing platform for its robust business continuity options that protect your critical workloads against disruptions. The Azure global network of regions keeps your data close to your geographic location, and provides options for recovering data in another region. Your data is available despite regional outages or disruptions. Learn more about Azure regions in [Azure Geographies](https://azure.microsoft.com/explore/global-infrastructure/geographies/#overview).
 
 Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to find the Azure region that their environments are in.
 
@@ -74,15 +74,15 @@ Azure SQL Database, Microsoft's cloud-based relational database service, is used
 
 To learn more about how Azure SQL Database keeps workloads running smoothly, go to [High availability for Azure SQL Database](/azure/azure-sql/database/high-availability-sla).
 
-Azure SQL Database protects [!INCLUDE [prod_short](includes/prod_short.md)] production and sandbox environments by taking automatic backups that it keeps for 28 days. Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to restore the environment to any specific point in time in the past 28 days. To learn more about restoring an environment, go to [Restoring an Environment in the Admin Center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-backup-restore).
+Azure SQL Database protects [!INCLUDE [prod_short](includes/prod_short.md)] production and sandbox environments by taking automatic backups that it keeps for 28 days. Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to restore the environment to any specific point in time in the past 28 days. Learn more about restoring an environment in [Restoring an Environment in the Admin Center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-backup-restore).
 
-Administrators can also use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to recover deleted production or sandbox environments within 14 days of their deletion. To learn more about recovering deleted environments, go to [Recover an environment](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments-delete#recover-an-environment).
+Administrators can also use the [!INCLUDE [prod_short](includes/prod_short.md)] admin center to recover deleted production or sandbox environments within 14 days of their deletion. Learn more about recovering deleted environments in [Recover an environment](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments-delete#recover-an-environment).
 
 ### High availability through geographical redundancy
 
-Each [!INCLUDE [prod_short](includes/prod_short.md)] environment is also protected by automatic geo-redundant backups. If a region experiences a full outage, Azure restores your data from the backup in another Azure region within the same Azure geography. Although it's rare, recovering data into another Azure region is a fully automated internal procedure that we practice regularly. It's a standard part of our internal audits and disaster recovery drills. To learn more about backups, go to [Automated backups in Azure SQL Database](/azure/azure-sql/database/automated-backups-overview).
+Each [!INCLUDE [prod_short](includes/prod_short.md)] environment is also protected by automatic geo-redundant backups. If a region experiences a full outage, Azure restores your data from the backup in another Azure region within the same Azure geography. Although it's rare, recovering data into another Azure region is a fully automated internal procedure that we practice regularly. It's a standard part of our internal audits and disaster recovery drills. Learn more about backups in [Automated backups in Azure SQL Database](/azure/azure-sql/database/automated-backups-overview).
 
-[Azure availability zones](/azure/reliability/availability-zones-overview) provide extra resilience by offering physically separate data centers within an Azure region. Distributing resources across multiple availability zones achieves high availability for the compute and storage resources for [!INCLUDE [prod_short](includes/prod_short.md)]. During local failures or planned maintenance in one or more zones, tenants in the available zones aren't affected. Other tenants are automatically redirected to resources in the available zones in the same region. This option is enabled for all [!INCLUDE [prod_short](includes/prod_short.md)] production environments with paid [!INCLUDE [prod_short](includes/prod_short.md)] subscriptions.  
+Azure availability zones provide extra resilience by offering physically separate data centers within an Azure region. Learn more in [Azure availability zones](/azure/reliability/availability-zones-overview). Distributing resources across multiple availability zones achieves high availability for the compute and storage resources for [!INCLUDE [prod_short](includes/prod_short.md)]. During local failures or planned maintenance in one or more zones, tenants in the available zones aren't affected. Other tenants are automatically redirected to resources in the available zones in the same region. This option is enabled for all [!INCLUDE [prod_short](includes/prod_short.md)] production environments with paid [!INCLUDE [prod_short](includes/prod_short.md)] subscriptions.  
 
 [!INCLUDE [prod_short](includes/prod_short.md)] is also designed with built-in redundancy, autoscaling, and automatic load-balancing capabilities for its compute resources. To remain available if one or more of its compute instances fail, [!INCLUDE [prod_short](includes/prod_short.md)] runs on other instances. [!INCLUDE [prod_short](includes/prod_short.md)] supports rolling upgrades and automated OS image updates to apply patches, security updates, or new platform versions without downtime. Compute instances are always up to date and secure, which reduces vulnerability to threats and service interruptions.
 
@@ -96,17 +96,17 @@ Each [!INCLUDE [prod_short](includes/prod_short.md)] environment is also protect
 
 New capabilities roll out in release waves that consist of a major update and subsequent minor updates. Most capabilities are made available in major updates, but some, especially regulatory requirements, become available in minor updates as well.
 
-The major updates are typically made available twice a year, in April and in October. Minor updates roll out every month. Get an overview of the release plans at [What's new and planned for Dynamics 365 Business Central](https://aka.ms/BCReleasePlan). 
+The major updates are typically made available twice a year, in April and in October. Minor updates roll out every month. Learn more in [What's new and planned for Dynamics 365 Business Central](https://aka.ms/BCReleasePlan). 
 
-Administrators can set a maintenance window in which Microsoft can update each environment and schedule a specific date for their updates. For more information, see [Managing Updates in the Business Central Admin Center](administration/tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows and dates.
+Administrators can set a maintenance window in which Microsoft can update each environment and schedule a specific date for their updates. Learn more in [Managing Updates in the Business Central Admin Center](administration/tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows and dates.
 
 An exception to this type of schedule is the continuous updates to the underlying service. The service components apply to multiple environments, such as all tenants in a region. So Microsoft schedules those updates to a time when traffic is lower in each region, typically during the evening or night. Typically, users don't notice service updates. [!INCLUDE [prod_short](includes/prod_short.md)] manages traffic so that people working in [!INCLUDE [prod_short](includes/prod_short.md)] aren't affected.  
 
 ## Lifecycle policy
 
-[!INCLUDE [prod_short](includes/prod_short.md)] online is governed by the Microsoft [Modern Lifecycle Policy](https://support.microsoft.com/help/30881), which means continuous [service updates](#service-updates) and a major update every six months. For more information, see [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
+[!INCLUDE [prod_short](includes/prod_short.md)] online is governed by the Microsoft [Modern Lifecycle Policy](https://support.microsoft.com/help/30881), which means continuous [service updates](#service-updates) and a major update every six months. Learn more in  [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
 
-Get an overview of new and upcoming changes in the [Dynamics 365 release plans](/dynamics365/release-plans/).  
+Learn more about new and upcoming changes in [Dynamics 365 release plans](/dynamics365/release-plans/).  
 
 ## See also
 
