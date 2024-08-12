@@ -112,7 +112,7 @@ For more information on report limits, see [Report limits](../developer/devenv-r
 | Max companies | The maximum number of companies that can be contained in one environment.|300|
 
 > [!TIP]  
-> This company limit will take effect in 2023 wave 1 release. When in effect, exceeding the limit will prevent you from doing some environment operations. For information about the consequences of exceeding the limit, go to [Operational challenges with many companies per environment](environment-company-limit.md).
+> This company limit will take effect in 2023 wave 1 release. When in effect, exceeding the limit will prevent you from doing some environment operations. Learn more about the consequences of exceeding the limit, in [Operational challenges with many companies per environment](environment-company-limit.md).
 >
 > If you already have more than 300 companies in one environment, distribute them across more environments to avoid problems later.
 
