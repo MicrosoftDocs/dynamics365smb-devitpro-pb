@@ -430,7 +430,7 @@ Follow these steps if your existing solution uses the Microsoft Business Foundat
 1. Synchronize the tenant with the Business Foundation extension.
 
     ```powershell
-    Sync-NAVApp -ServerInstance $BcServerInstance-Tenant $TenantId -Name "Business Foundation" -Version $NewBCVersion
+    Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBCVersion
     ```
 
    Replace `$NewBcVersion` with the exact version of the published Business Foundation extension.
