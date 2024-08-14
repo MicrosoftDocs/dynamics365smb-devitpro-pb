@@ -1,10 +1,9 @@
 ---
-title: "Performance Profiler overview"
+title: Performance Profiler overview
 description: Describes how to use the Performance Profiler page in Business Central to troubleshoot slow processes.
 ms.author: bholtorf
-ms.date: 05/25/2023
-ms.reviewer: bholtorf
-ms.search.forms: 24
+ms.date: 08/12/2024
+ms.reviewer: solsen
 ms.topic: conceptual
 author: bholtorf
 ---
@@ -25,7 +24,7 @@ To get started working with the Performance Profiler, follow these steps:
     > You can also access the Performance Profiler page from under Help & Support, under **Analyze Performance**, which will open the Performance Profiler page a separate window.
 3. Now, still in [!INCLUDE [prod_short](../includes/prod_short.md)], navigate to the page or process that you want to record profiling data for.  
     > [!TIP]  
-    > To get the most accurate results, you should start and stop the recording of the slow process as close to you experience the performance issues.
+    > To get the most accurate results, you should start and stop the recording of the slow process as close to where you experience the performance issues as possible.
 4. When ready, press the **Start** button in the **Performance Profiler** page, and then perform the process that you want to record. When you're done, press the **Stop** button.  
   
   The profiler has now recorded the process and displays the results under **Active Apps**, where you can aggregate by **App Name** or **App Publisher**. For more information, see [Analyzing high-level results](performance-profiler-overview.md#analyzing-high-level-results).  
@@ -34,9 +33,9 @@ To get started working with the Performance Profiler, follow these steps:
   
 ## Analyzing high-level results
 
-After you record a snapshot you'll get the following insights:
+After you record a snapshot, you get the following insights:
 
-* The **Active Apps** chart shows the apps that where active during the recording of the profile. They were either running or called other apps. The duration represents the time you might save by removing an app.
+* The **Active Apps** chart shows the apps that were active during the recording of the profile. They were either running or called other apps. The duration represents the time you might save by removing an app.
 
 You can use the **App Name** and **App Publisher** actions to filter the charts to view the aggregated time spent per publisher, and across multiple apps from a publisher.
 
@@ -57,7 +56,7 @@ If you want to dig into the technical specifics, you can turn on the **Show tech
 
 If you want to share a recording, for example, if you're in contact with the company that provided an app that you think is slowing down a process, you can share the recording with them. Choose the **Share** button on the **Performance Profiler** page, and send the link to the app provider.
 
-You can also download the recording and for example copy the file to OneDrive to share it with your colleagues. Choose the **Download** button on the **Performance Profiler** page, and then choose **Yes** in the confirmation dialog. The file is downloaded to your default download location.
+You can also download the recording and, for example,  copy the file to OneDrive to share it with your colleagues. Choose the **Download** button on the **Performance Profiler** page, and then choose **Yes** in the confirmation dialog. The file is downloaded to your default download location.
 
 ## Clear performance profiles
 
@@ -69,11 +68,11 @@ To upload an existing performance profile, choose the **Upload** button on the *
 
 ## The in-client Performance Profiler and the AL Profiler
 
-The in-client Performance Profiler described in this article, is a simplified version of the AL Profiler for AL in Visual Studio Code. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views and drill-down further into advanced data for the specific snapshot, as well as navigate to source code. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
+The in-client Performance Profiler described in this article, is a simplified version of the AL Profiler for AL in Visual Studio Code. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views and drill-down further into advanced data for the specific snapshot, as well as navigate to source code. For more information, see [AL Profiler overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
 
-## See Also
+## See also
 
-[Managing Technical Support](/dynamics365/business-central/dev-itpro/administration/manage-technical-support)  
+[Managing technical support](/dynamics365/business-central/dev-itpro/administration/manage-technical-support)  
 [Escalate support issues to Microsoft](/dynamics365/business-central/dev-itpro/administration/raise-support-case)  
 [Debugging](/dynamics365/business-central/dev-itpro/developer/devenv-debugging)  
-[Snapshot Debugging](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)  
+[Snapshot debugging](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)  

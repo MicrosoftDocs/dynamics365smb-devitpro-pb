@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
 ### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
 ### [Update 24.2](whatsnew/whatsnew-update-24-2.md)
 ### [Update 24.1](whatsnew/whatsnew-update-24-1.md)
