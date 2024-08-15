@@ -36,15 +36,13 @@ Additionally, the model requires a set of parameters for modules:
 - **Seasonality (Numeric)** – The model accepts any type of time-period, but if you want it to recognize seasonality you need to define what a normal season is for the historical data. For example, if the season is a year and the values are grouped monthly, then seasonality should be 12. If the season contains quarterly values, then seasonality should be 4. However, if seasonality in your business is weekly, use 7 and aggregate values daily.
 - **Forecast_start_datekey (Numeric)** – Specifies a delay before forecasting starts. Here’s an example. Today is January 1, and your data is for the past year, which is 12 periods. You can enter 2 as the **Horizon**, and 15 for **Forecast_start_datekey**. In this case, you skip two months, and get predictions for March and April. You can achieve the same result by specifying 4 as the **Horizon**, and skipping the first 2 periods when processing the response. In this case, specify **Forecast_start_datekey** as the last value of DateKey field, and increment it by 1. For example, if you provide 12 months of historical data, and the last DateKey is 12, the Forecast_start_datekey is 13 (12+1).
 - **Time_series_model (String)** - Specifies the time series model to use. The model supports the following algorithms, and combinations of them:
-  - ARIMA
-  - ETS
-  - STL
+  - ARIMA (autoregressive integrated moving average)
+  - ETS (Error, Trend, Seasonal)
+  - STL (Seasonal-Trend decomposition using LOESS)
   - ETS+ARIMA (returns average as result)
   - ETS+STL (returns average as result)
-  - ALL
-  - TBATS
-
-If you choose ALL the model compares the results and returns the one that has the lowest mean absolute percentage error (MAPE).
+  - TBATS (Exponential smoothing state space model with Box-Cox transformation, ARMA errors, Trend and Seasonal components)
+  - ALL (If you choose ALL the model compares the results of all models listed above and returns the one that has the lowest mean absolute percentage error [MAPE]).
 
 - **Confidence_level (Numeric)** - In the model output, notice that in addition to the forecasted value, the model also returns the sigma, or variance. This is the range that future values are predicted to fall within, with the probability defined by the confidence level. So, if the confidence level is 95%, the forecasted value might be 100, for example, and the sigma 20. This means that with a probability of 95%, the actual value is somewhere in between 80 and 120 (100+/-20). If you set the **confidence_level** to 85, the sigma is lower. In the previous example, it can be that the forecasted value is 100 and the sigma 14. Together, this means that, with a probability of 85%, the actual value is somewhere between 86 and 114.
 
