@@ -36,6 +36,19 @@ The stream that you want to save the query as Json to.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+```al
+procedure Test();
+var
+    result : Boolean;
+    os: OutStream;
+begin
+    result := Query.SaveAsJson(10, os);
+end;
+```
+
 ## See Also
 [Query Data Type](query-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
