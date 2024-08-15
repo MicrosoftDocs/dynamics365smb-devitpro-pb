@@ -2,10 +2,9 @@
 title: "SessionInformation Data Type"
 description: "Is a complex data type for exposing Session information into AL."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -22,6 +21,7 @@ The following methods are available on the SessionInformation data type.
 
 |Method name|Description|
 |-----------|-----------|
+|[AITokensUsed()](sessioninformation-aitokensused-method.md)|Gets the total amount of AI tokens consumed on the session, since the session started.|
 |[SqlRowsRead()](sessioninformation-sqlrowsread-method.md)|Gets the amount of SQL rows read on the session, since the session started.|
 |[SqlStatementsExecuted()](sessioninformation-sqlstatementsexecuted-method.md)|Gets the amount of SQL statements executed on the session, since the session started.|
 

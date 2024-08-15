@@ -2,10 +2,9 @@
 title: "System Data Type"
 description: "Is a complex data type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -30,7 +29,6 @@ The following methods are available on the System data type.
 |[CanLoadType(DotNet)](system-canloadtype-method.md)|Tests if the specified .NET Framework type can be loaded.|
 |[CaptionClassTranslate(Text)](system-captionclasstranslate-method.md)|Returns a translated version of the caption string. The string is translated to the current local language.|
 |[Clear(var Array of [Any])](system-clear-joker-method.md)|Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.|
-|[Clear(var Any)](system-clear-joker-method.md)|Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.|
 |[Clear(var SecretText)](system-clear-secrettext-method.md)|Clears the value of a single variable.|
 |[ClearAll()](system-clearall-method.md)|Clears all internal variables (except REC variables), keys, and filters in the object and in any associated objects, such as reports, pages, codeunits, and so on that contain AL code.|
 |[ClearCollectedErrors()](system-clearcollectederrors-method.md)|Clears all collected errors from the current collection scope.|

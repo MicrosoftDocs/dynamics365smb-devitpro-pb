@@ -2,10 +2,9 @@
 title: "Report.WordLayout(Integer, InStream) Method"
 description: "Gets the Word report layout that is used on a report and returns it as a data stream."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

@@ -2,10 +2,9 @@
 title: "Time Data Type"
 description: "Denotes a time ranging from 00:00:00.000 to 23:59:59.999."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,6 +16,15 @@ Denotes a time ranging from 00:00:00.000 to 23:59:59.999. An undefined or blank 
 
 
 
+## Instance methods
+The following methods are available on instances of the Time data type.
+
+|Method name|Description|
+|-----------|-----------|
+|[Hour()](time-hour-method.md)|Gets the hour component of the time represented by this instance.|
+|[Millisecond()](time-millisecond-method.md)|Gets the milliseconds component of the time represented by this instance.|
+|[Minute()](time-minute-method.md)|Gets the minute component of the time represented by this instance.|
+|[Second()](time-second-method.md)|Gets the seconds component of the time represented by this instance.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -2,10 +2,9 @@
 title: "NavApp Data Type"
 description: "Provides information about a NavApp."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -25,8 +24,8 @@ The following methods are available on the NavApp data type.
 |[DeleteArchiveData(Integer)](navapp-deletearchivedata-method.md)|Deletes the archived data for a specified table of an extension during installation.|
 |[GetArchiveRecordRef(Integer, var RecordRef)](navapp-getarchiverecordref-method.md)|Returns a RecordRef for the specified table.|
 |[GetArchiveVersion()](navapp-getarchiveversion-method.md)|Returns the version of the extension that the specified table is part of.|
+|[GetCallerCallstackModuleInfos()](navapp-getcallercallstackmoduleinfos-method.md)|Gets information about extensions on the callstack that contain the method, which called the currently running method. For example, if method 1 (in extension A) calls method 2 (in extension B) calls method 3 (in extension C), which calls GetCallerModuleInfo, then GetCallerModuleInfo will return information about extension A and B.|
 |[GetCallerModuleInfo(var ModuleInfo)](navapp-getcallermoduleinfo-method.md)|Gets information about the extension that contains the method that called the currently running method. For example, if method 1 (in extension A) calls method 2 (in extension B), which calls GetCallerModuleInfo, then GetCallerModuleInfo will return information about extension A.|
-|[GetCallstackModuleInfos()](navapp-getcallstackmoduleinfos-method.md)|Gets application information about each method in the current callstack.|
 |[GetCurrentModuleInfo(var ModuleInfo)](navapp-getcurrentmoduleinfo-method.md)|Gets information about the application that contains the AL object that is currently running.|
 |[GetModuleInfo(Guid, var ModuleInfo)](navapp-getmoduleinfo-method.md)|Gets information about the specified AL application.|
 |[IsEntitled(Text [, Guid])](navapp-isentitled-method.md)|Determines if the current user is entitled to a specific entitlement id for the application.|

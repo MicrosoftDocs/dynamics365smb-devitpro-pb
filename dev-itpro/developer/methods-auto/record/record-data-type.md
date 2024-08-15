@@ -2,10 +2,9 @@
 title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -122,8 +121,6 @@ The following methods are available on instances of the Record data type.
 |[TestField(Any, TextConst, ErrorInfo)](record-testfield-joker-textconst-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code)](record-testfield-joker-code-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code, ErrorInfo)](record-testfield-joker-code-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
-|[TestField(Any, Text)](record-testfield-joker-text-method.md)|Tests whether the contents of a field match a given value.|
-|[TestField(Any, Text, ErrorInfo)](record-testfield-joker-text-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum)](record-testfield-joker-anyenum-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum, ErrorInfo)](record-testfield-joker-anyenum-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Any)](record-testfield-joker-joker-method.md)|Tests whether the contents of a field match a given value.|

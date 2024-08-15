@@ -2,10 +2,9 @@
 title: "Record.SetLoadFields([Any,...]) Method"
 description: "Sets the fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

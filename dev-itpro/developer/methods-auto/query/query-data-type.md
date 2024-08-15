@@ -2,10 +2,9 @@
 title: "Query Data Type"
 description: "Enables you to retrieve data from multiple tables and combine the data in single dataset."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -24,6 +23,7 @@ The following methods are available on the Query data type.
 |-----------|-----------|
 |[SaveAsCsv(Integer, Text [, Integer] [, Text])](query-saveascsv-integer-string-integer-string-method.md)|Saves the resulting data set of a query as a comma-separated values (CSV) file.|
 |[SaveAsCsv(Integer, OutStream [, Integer] [, Text])](query-saveascsv-integer-outstream-integer-string-method.md)|Saves the resulting data set of a query as a comma separated values (CSV) file.|
+|[SaveAsJson(Integer, OutStream)](query-saveasjson-method.md)|Saves the resulting data set of a query as an .json file.|
 |[SaveAsXml(Integer, Text)](query-saveasxml-integer-string-method.md)|Saves the resulting data set of a query as an .xml file.|
 |[SaveAsXml(Integer, OutStream)](query-saveasxml-integer-outstream-method.md)|Saves the resulting data set of a query as an .xml file.|
 
@@ -42,6 +42,7 @@ The following methods are available on instances of the Query data type.
 |[Read()](queryinstance-read-method.md)|Reads data from a row in the resulting data set of a query.|
 |[SaveAsCsv(Text [, Integer] [, Text])](queryinstance-saveascsv-string-integer-string-method.md)|Saves the resulting data set of a query as comma separated values (CSV)|
 |[SaveAsCsv(OutStream [, Integer] [, Text])](queryinstance-saveascsv-outstream-integer-string-method.md)|Saves the resulting data set of a query as comma separated values (CSV)|
+|[SaveAsJson(OutStream)](queryinstance-saveasjson-method.md)|Saves the resulting data set of a query as Json|
 |[SaveAsXml(Text)](queryinstance-saveasxml-string-method.md)|Saves the resulting data set of a query as XML|
 |[SaveAsXml(OutStream)](queryinstance-saveasxml-outstream-method.md)|Saves the resulting data set of a query as XML|
 |[SecurityFiltering([SecurityFilter])](queryinstance-securityfiltering-method.md)|Gets or sets how security filters are applied to the query.|

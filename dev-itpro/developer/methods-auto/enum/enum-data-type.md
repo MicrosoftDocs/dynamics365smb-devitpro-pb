@@ -2,10 +2,9 @@
 title: "Enum Data Type"
 description: "Represents the text content of an element or attribute."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,8 +22,6 @@ The following methods are available on the Enum data type.
 |Method name|Description|
 |-----------|-----------|
 |[FromInteger(Integer)](enum-frominteger-method.md)|Returns an enum with the integer value|
-|[Names()](enum-names--method.md)|Gets the value names|
-|[Ordinals()](enum-ordinals--method.md)|Gets the ordinal numbers/ID's for the values|
 
 ## Instance methods
 The following methods are available on instances of the Enum data type.

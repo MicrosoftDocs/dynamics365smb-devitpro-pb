@@ -1,16 +1,15 @@
 ---
-title: "System.Clear(var Any) Method"
+title: "System.Clear(var Array of [Any]) Method"
 description: "Clears the value of a single variable."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Clear(var Any) Method
+# System.Clear(var Array of [Any]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.
@@ -18,7 +17,7 @@ Clears the value of a single variable. Also, it clears all the filters that were
 
 ## Syntax
 ```AL
- System.Clear(var Variable: Any)
+ System.Clear(var Variable: Array of [Any])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.

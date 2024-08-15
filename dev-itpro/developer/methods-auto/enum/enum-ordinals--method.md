@@ -2,10 +2,9 @@
 title: "Enum.Ordinals() Method"
 description: "Gets the ordinal numbers/ID's for the values"
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,6 +19,12 @@ Gets the ordinal numbers/ID's for the values
 ```AL
 List of ordinals :=   Enum.Ordinals()
 ```
+> [!NOTE]
+> This method can be invoked using property access syntax.
+## Parameters
+*Enum*  
+&emsp;Type: [Enum](enum-data-type.md)  
+An instance of the [Enum](enum-data-type.md) data type.  
 
 ## Return Value
 *List of ordinals*  

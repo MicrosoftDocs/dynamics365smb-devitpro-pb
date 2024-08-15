@@ -2,10 +2,9 @@
 title: "DateTime Data Type"
 description: "Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,6 +16,13 @@ Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 3
 
 
 
+## Instance methods
+The following methods are available on instances of the DateTime data type.
+
+|Method name|Description|
+|-----------|-----------|
+|[Date()](datetime-date-method.md)|Gets the date part.|
+|[Time()](datetime-time-method.md)|Gets the time part.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
