@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.custom: bap-template
-ms.date: 08/21/2023
+ms.date: 08/15/2024
 ms.topic: conceptual
 ---
 # Extend the Shopify Connector
@@ -17,20 +17,24 @@ The Shopify Connector offers a few points of extensibility. We're keeping the nu
 
 ## Extensibility approaches
 
-### Per-tenant extension.
-Classic extensibility, when created extension subscribes exposed events and other artifacts and adjust existings flows. The benefit of this approach is that development can be done against cloud sandbox. The restriction is that you can not modify API calls, for example add new nodes or call against different Shopify API. As connector depends on Shopify API and its release cycle the number of exposed events in connector is noticeably less than in other Microsoft code. There were cases when redesign was needed to uptake the new ways to complete things on Shopify and that would cause multiple breaking changes for per-tenant extensions.
+### Per-tenant extension
+
+Per-tenant extensions use classic extensibility. Extensions subscribe to exposed events and other artifacts and adjust existing flows. The benefit of this approach is that development can be done against a cloud sandbox. The restriction is that you can't modify API calls, for example, to add new nodes or call against different Shopify APIs. Because the connector depends on the Shopify API and its release cycle, the number of exposed events in the connector is noticeably less than in other Microsoft code. There have been cases where a redesign was needed to uptake the new ways to complete things on Shopify that would cause multiple breaking changes for per-tenant extensions.
 
 ### Hybrid approach
-In additon to classic extensibility desribed above, you can also create separate branch of code that interacts with Shopify API directly. This approach gives you more flexibility, but it has higher requirements as you will need to register your own unlisted Shopify app, implement your own communication logic. You can also use cloud sandbox for development.
+
+In addition to classic extensibility, you can also create a separate branch of code that interacts directly with the Shopify API. This approach offers more flexibility, but it has higher requirements because you must register your own unlisted Shopify app and implement your own communication logic. You can also use cloud sandbox for development.
 
 ### Co-development
-If needed functionality is missing, somethimes instead of building per-tenant extension or onboard to hybrid approach, you can contribute the code to Shopify Connector instead via co-development process. That approaches ensures that you don't need to maintain proprietary code and use out of the box functionality instead. That approach requires acceptance from engineering team both from use case and architecture perspective. Also worth mentioning that the shipping of new features, including one build by community is usually tight to major releases.
+
+If needed functionality is missing, sometimes instead of building per-tenant extension or onboard to hybrid approach, you can contribute code to the Shopify Connector instead through a co-development process. That approach ensures that you don't need to maintain proprietary code and can use out of the box functionality instead. Co-development requires acceptance from the engineering team from both the use case and architecture perspective. Also worth mentioning is that shipping new features, including those built by our community, is usually tied to major releases.
 
 ## Useful hints
 
 ### Dependency in app.json
 
-If you are building per-tenant extension or plan to utilize hybrid approach, you shall list the Shopify Connector as dependency in the *app.json* file, remember to use right version number:
+If you're building a per-tenant extension or plan to utilize hybrid approach, you must list the Shopify Connector as a dependency in the *app.json* file. Remember to use the correct version number.
+
 ```json
     "dependencies": [
         {
@@ -42,28 +46,29 @@ If you are building per-tenant extension or plan to utilize hybrid approach, you
     ],
 ```
 
-For more information see [JSON files](devenv-json-files.md).
+For more information, see [JSON files](devenv-json-files.md).
 
-### Registering Shopify app
-Begin by joining the [Shopify Partner Program](https://help.shopify.com/partners/about). Afterwards, use the **Partner Dashboard** to create the development store and app. 
+### Registering the Shopify app
 
-The steps below lists main points, for specific details refer to Shopify documentation.
+Begin by joining the [Shopify Partner Program](https://help.shopify.com/partners/about). Afterward, use the **Partner Dashboard** to create the development store and app.
 
-1. In the **Shopify Partner Dashboar**, navigate to **Apps**>**All apps** and choose the **Create app** button
+The following are the main steps. For specific details, refer to the Shopify documentation.
+
+1. In the **Shopify Partner Dashboar**, go to **Apps** > **All apps**, and choose the **Create app** button.
 2. Choose the **Create app manually** button.
-3. Enter the **App name** and choose **Create**.
-4. Navigate to the **Overview** section of created app and make note of **Client credentials**: **Client ID** and **Client secret**. You will use this information to access Shopify API.
-5. Navigate to the **Configuration** section and add **App URL**, some valid url.
-6. Populate **Allowed redirection URL(s)** in following format:`<Server>[:port]/<ServerInstance>/OauthLanding.htm` (e.g. `https://bc-shopify.westeurope.cloudapp.azure.com/BC/OauthLanding.htm` or `https://localhost:48900/BC/OAuthLanding.htm`). Exact value depends on configuration of your development environment. You can see what your development environment returns by calling [GetDefaultRedirectUrl()](/dynamics365/business-central/application/system-application/codeunit/system.security.authentication.oauth2#getdefaultredirecturl) method of the **OAuth2** system module. Also make sure that this URL is reachable. If you use container sandbox development environment, consider using the deployment template from [aka.ms/getbc](https://aka.ms/getbc), where you can enable the Let's Encrypt SSL certificate, to ensure that [!INCLUDE [prod_short](../includes/prod_short.md)] in the container is accessible.
-7. For co-development, as Shopify Connector reads all orders, not only last 60 days, you also need to request access for your app. Navigate to the **API access**, choose the **Request access** button in the **Read all order scopes**. The process requires review, which may take some time, so plan in advance. For more information, see [Orders permissions](https://shopify.dev/docs/api/usage/access-scopes#orders-permissions). You will receive email from Shopify when access is granted. You can also check the **API access** section of the  **Shopify Partner dashboard**, you will see message "Your app can access the full order history for a store".
+3. Enter the **App name**, and choose **Create**.
+4. In the **Overview** section of the app, note the **Client credentials**: **Client ID**, and **Client secret**. You'll use this information to access the Shopify API.
+5. In the **Configuration** section, enter a valid URL in the **App URL** field.
+6. Fill in the **Allowed redirection URL(s)** field using the following format:`<Server>[:port]/<ServerInstance>/OauthLanding.htm` (e.g. `https://bc-shopify.westeurope.cloudapp.azure.com/BC/OauthLanding.htm` or `https://localhost:48900/BC/OAuthLanding.htm`). The exact value depends on the configuration of your development environment. You can see what your development environment returns by calling the [GetDefaultRedirectUrl()](/dynamics365/business-central/application/system-application/codeunit/system.security.authentication.oauth2#getdefaultredirecturl) method of the **OAuth2** system module. Also, make sure that this URL is reachable. If you use a container sandbox development environment, consider using the deployment template from [aka.ms/getbc](https://aka.ms/getbc), where you can enable the Let's Encrypt SSL certificate to ensure that [!INCLUDE [prod_short](../includes/prod_short.md)] is accessible in the container.
+7. For co-development, because the Shopify Connector reads all orders, and not only orders from the last 60 days, you must request access for your app. Go to **API access**, and choose the **Request access** button in **Read all order scopes**. The process requires review, which may take some time, so plan in advance. For more information, see [Orders permissions](https://shopify.dev/docs/api/usage/access-scopes#orders-permissions). You'll receive an email from Shopify when access is granted. You can also check the **API access** section of the  **Shopify Partner dashboard**. You'll see a message, "Your app can access the full order history for a store".
 
-While in the **Shopify partner admin** consider creating a development store for testing. For more infomration, see [Developent Store](/dynamics365/business-central/shopify/shopify-account#development-store).
+While in the **Shopify partner admin**, consider creating a development store for testing. For more information, see [Developent Store](/dynamics365/business-central/shopify/shopify-account#development-store).
 
-### Adjusting Shopify Connector for Co-development 
+### Adjusting the Shopify Connector for co-development
 
 **codeunit 30199 "Shpfy Authentication Mgt."**, path: Apps/W1/Shopify/app/src/Integration/Codeunits/ShpfyAuthenticationMgt.Codeunit.al
 
-Modify GetClientId and GetClientSecret to return Shopify clent credentials as your app doesn't have access to Azure Key Vault. Use Client ID and Client secret from [registered Shoify app](#registering-shopify-app).
+Modify GetClientId and GetClientSecret to return Shopify client credentials because your app doesn't have access to Azure Key Vault. Use the Client ID and Client secret from your [registered Shoify app](#registering-shopify-app).
 
 ```al
     [Scope('OnPrem')]
@@ -86,7 +91,7 @@ Modify GetClientId and GetClientSecret to return Shopify clent credentials as yo
     end;
 ```
 
-if access to read all orders is not available yet, temprorary replace `read_all_orders` in `ScopeTxt` with `read_orders` instead. Once access is granted, reintroduce read_all_orders.
+If access to read all orders isn't available yet, temporarily replace `read_all_orders` in `ScopeTxt` with `read_orders`. Once access is granted, reintroduce read_all_orders.
 
 ```al
 codeunit 30199 "Shpfy Authentication Mgt."
@@ -99,19 +104,20 @@ codeunit 30199 "Shpfy Authentication Mgt."
 
 ```
 
-Now you can publish updated connector and connect [!INCLUDE [prod_short](../includes/prod_short.md)] to the Shopify online store. For more information, see [Connect Business Central to the Shopify online store](/dynamics365/business-central/shopify/get-started#connect-business-central-to-the-shopify-online-store). 
+Now you can publish the updated connector and connect [!INCLUDE [prod_short](../includes/prod_short.md)] to the Shopify online store. For more information, see [Connect Business Central to the Shopify online store](/dynamics365/business-central/shopify/get-started#connect-business-central-to-the-shopify-online-store). 
 
->[!IMPORTANT]
->Do not commit these changes in public repo. If you did, rotate Shopify client secrets of your app.
+> [!IMPORTANT]
+> Don't commit these changes in the public repo. If you did, rotate the Shopify client secrets of your app.
 
 ### Known issues with authentication
 
 #### Error: Oauth error invalid_request: The redirect_uri is not whitelisted.
-Make sure that you populated corrctly the **Allowed redirection URL(s)** in the **Configuration** section.
+
+Make sure that you correctly filled in the **Allowed redirection URL(s)** field in the **Configuration** section.
 
 #### Error: cannot install app
-Navigate to the **Overview** section of created app and choose the **Select Store** action. First install app from there, then try to connect [!INCLUDE [prod_short](../includes/prod_short.md)] to Shopify store again.
 
+In the **Overview** section of the app, choose the **Select Store** action. First install the app from there, then try to connect [!INCLUDE [prod_short](../includes/prod_short.md)] to the Shopify store again.
 
 ## Extensibility examples
 
