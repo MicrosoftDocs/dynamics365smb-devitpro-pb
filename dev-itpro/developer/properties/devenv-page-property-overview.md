@@ -2,10 +2,9 @@
 title: "Page, Page Fields, and Page Extension Properties"
 description: "This topic lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md)."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,6 +43,9 @@ The following properties all apply to the Page object, only some of these proper
 |[CardPageId Property](devenv-cardpageid-property.md)| | -Page <br />  -Request Page <br /> |
 |[ChangeTrackingAllowed Property](devenv-changetrackingallowed-property.md)| | -Page <br /> |
 |[CharAllowed Property](devenv-charallowed-property.md)| | -Table Field <br />  -Page Field <br /> |
+|[ClearActions Property](devenv-clearactions-property.md)| | -Page Customization <br /> |
+|[ClearLayout Property](devenv-clearlayout-property.md)| | -Page Customization <br /> |
+|[ClearViews Property](devenv-clearviews-property.md)| | -Page Customization <br /> |
 |[ClosingDates Property](devenv-closingdates-property.md)| True| -Table Field <br />  -Page Field <br /> |
 |[ColumnSpan Property](devenv-columnspan-property.md)| | -Page Label <br />  -Page Field <br /> |
 |[ContextSensitiveHelpPage Property](devenv-contextsensitivehelppage-property.md)| True| -Page <br />  -Request Page <br />  -Query <br /> |
@@ -55,7 +57,7 @@ The following properties all apply to the Page object, only some of these proper
 |[DateFormula Property](devenv-dateformula-property.md)| | -Table Field <br />  -Page Field <br /> |
 |[DecimalPlaces Property](devenv-decimalplaces-property.md)| | -Table Field <br />  -Page Field <br />  -Report Column <br /> |
 |[DelayedInsert Property](devenv-delayedinsert-property.md)| | -Page <br /> |
-|[DeleteAllowed Property](devenv-deleteallowed-property.md)| | -Page <br />  -Request Page <br /> |
+|[DeleteAllowed Property](devenv-deleteallowed-property.md)| True| -Page <br />  -Request Page <br /> |
 |[Description Property](devenv-description-property.md)| True| -Codeunit <br />  -Table Field <br />  -Table Key <br />  -Page <br />  -Page Action <br />  -Page Action Area <br />  -Page Action Group <br />  -Page Area <br />  -Page Field <br />  -Page Group <br />  -Page Label <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Query <br />  -Query Column <br />  -Query Data Item <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Table <br />  -Xml Port <br />  -Xml Port Text Element <br />  -Xml Port Field Element <br />  -Xml Port Table Element <br />  -Xml Port Field Attribute <br />  -Xml Port Text Attribute <br />  -Profile <br /> |
 |[DrillDown Property](devenv-drilldown-property.md)| | -Page Field <br /> |
 |[DrillDownPageId Property](devenv-drilldownpageid-property.md)| True| -Table <br />  -Page Field <br /> |
@@ -90,7 +92,7 @@ The following properties all apply to the Page object, only some of these proper
 |[InFooterBar Property](devenv-infooterbar-property.md)| True| -Page Action <br />  -Page File Upload Action <br /> |
 |[InherentEntitlements Property](devenv-inherententitlements-property.md)| | -Query <br />  -Report <br />  -Xml Port <br />  -Table <br />  -Codeunit <br />  -Page <br /> |
 |[InherentPermissions Property](devenv-inherentpermissions-property.md)| | -Query <br />  -Report <br />  -Xml Port <br />  -Table <br />  -Codeunit <br />  -Page <br /> |
-|[InsertAllowed Property](devenv-insertallowed-property.md)| | -Page <br />  -Request Page <br /> |
+|[InsertAllowed Property](devenv-insertallowed-property.md)| True| -Page <br />  -Request Page <br /> |
 |[InstructionalText Property](devenv-instructionaltext-property.md)| True| -Page <br />  -Request Page <br />  -Page Field <br />  -Page Group <br /> |
 |[InstructionalTextML Property](devenv-instructionaltextml-property.md)| True| -Page <br />  -Request Page <br />  -Page Field <br />  -Page Group <br /> |
 |[IsHeader Property](devenv-isheader-property.md)| | -Page Action Separator <br /> |
@@ -100,7 +102,7 @@ The following properties all apply to the Page object, only some of these proper
 |[LookupPageId Property](devenv-lookuppageid-property.md)| True| -Table <br />  -Page Field <br /> |
 |[MaxValue Property](devenv-maxvalue-property.md)| | -Table Field <br />  -Page Field <br /> |
 |[MinValue Property](devenv-minvalue-property.md)| | -Table Field <br />  -Page Field <br /> |
-|[ModifyAllowed Property](devenv-modifyallowed-property.md)| | -Page <br />  -Request Page <br /> |
+|[ModifyAllowed Property](devenv-modifyallowed-property.md)| True| -Page <br />  -Request Page <br /> |
 |[MultiLine Property](devenv-multiline-property.md)| | -Page Label <br />  -Page Field <br /> |
 |[MultipleNewLines Property](devenv-multiplenewlines-property.md)| | -Page <br />  -Request Page <br /> |
 |[Multiplicity Property](devenv-multiplicity-property.md)| | -Page Part <br /> |
@@ -151,8 +153,8 @@ The following properties all apply to the Page object, only some of these proper
 |[SubPageView Property](devenv-subpageview-property.md)| | -Page Part <br />  -Page System Part <br />  -Page Chart Part <br /> |
 |[TableRelation Property](devenv-tablerelation-property.md)| True| -Table Field <br />  -Page Field <br /> |
 |[Title Property](devenv-title-property.md)| | -Page Field <br /> |
-|[ToolTip Property](devenv-tooltip-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Table Field <br /> |
-|[ToolTipML Property](devenv-tooltipml-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Table Field <br /> |
+|[ToolTip Property](devenv-tooltip-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Query Column <br />  -Table Field <br /> |
+|[ToolTipML Property](devenv-tooltipml-property.md)| True| -Page Label <br />  -Page Field <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Action Area <br />  -Page Action <br />  -Page Action Group <br />  -Page Custom Action <br />  -Page System Action <br />  -Page File Upload Action <br />  -Query Column <br />  -Table Field <br /> |
 |[TreeInitialState Property](devenv-treeinitialstate-property.md)| True| -Page Group <br /> |
 |[UpdatePropagation Property](devenv-updatepropagation-property.md)| | -Page Part <br />  -Page System Part <br />  -Page Chart Part <br /> |
 |[UsageCategory Property](devenv-usagecategory-property.md)| | -Query <br />  -Page <br />  -Report <br /> |

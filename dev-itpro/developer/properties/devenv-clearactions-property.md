@@ -1,6 +1,6 @@
 ---
-title: "LayoutFile Property"
-description: "The filename of the report layout file that should be imported with this layout."
+title: "ClearActions Property"
+description: "Clears all actions from the page's action bar."
 ms.author: solsen
 ms.date: 08/15/2024
 ms.topic: reference
@@ -9,15 +9,15 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# LayoutFile Property
-> **Version**: _Available or changed with runtime version 9.0._
+# ClearActions Property
+> **Version**: _Available or changed with runtime version 14.0._
 
-The filename of the report layout file that should be imported with this layout.
+Clears all actions from the page's action bar.
 
 ## Applies to
--   Report Layout
+-   Page Customization
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Get Started with AL](../devenv-get-started.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
