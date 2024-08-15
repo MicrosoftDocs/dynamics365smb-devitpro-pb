@@ -1,6 +1,6 @@
 ---
-title: "AppSourceCop Warning AS0117"
-description: "When an application object is moved we should first set the ObsoleteState to PendingMove in a previous version of the extension."
+title: "AppSourceCop Error AS0129"
+description: "An interface must not be added to the list of extended interfaces on an interface that has been published, because dependent extensions may break"
 ms.author: solsen
 ms.date: 08/15/2024
 ms.topic: reference
@@ -9,11 +9,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Warning AS0117
-Application object is moved without the use of PendingMove.
+# AppSourceCop Error AS0129
+An interface must not be added to the the list of extended interfaces on an interface that has been published.
 
 ## Description
-When an application object is moved we should first set the ObsoleteState to PendingMove in a previous version of the extension.
+An interface must not be added to the list of extended interfaces on an interface that has been published, because dependent extensions may break
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

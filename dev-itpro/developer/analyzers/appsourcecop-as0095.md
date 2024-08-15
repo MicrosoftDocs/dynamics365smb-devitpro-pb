@@ -2,10 +2,9 @@
 title: "AppSourceCop Error AS0095"
 description: "The access modifier of a table field cannot be changed to a value that provides less access because it will break dependent extensions."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

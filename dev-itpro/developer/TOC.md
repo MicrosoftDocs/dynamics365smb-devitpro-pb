@@ -1074,6 +1074,9 @@
 #### [AS0124](analyzers/appsourcecop-as0124.md)
 #### [AS0125](analyzers/appsourcecop-as0125.md)
 #### [AS0126](analyzers/appsourcecop-as0126.md)
+#### [AS0127](analyzers/appsourcecop-as0127.md)
+#### [AS0128](analyzers/appsourcecop-as0128.md)
+#### [AS0129](analyzers/appsourcecop-as0129.md)
 ### PerTenantExtensionCop Analyzer Rules
 #### [PTE0001](analyzers/pertenantextensioncop-pte0001.md)
 #### [PTE0002](analyzers/pertenantextensioncop-pte0002.md)

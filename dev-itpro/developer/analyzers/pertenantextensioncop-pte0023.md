@@ -2,10 +2,9 @@
 title: "PerTenantExtensionCop Info PTE0023"
 description: "The enum ordinal value shoul be within the allowed range and outside the range allocated to AppSource extensions."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

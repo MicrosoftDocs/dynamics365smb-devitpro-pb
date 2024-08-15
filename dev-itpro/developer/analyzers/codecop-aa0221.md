@@ -2,10 +2,9 @@
 title: "CodeCop Warning AA0221"
 description: "You must specify a OptionCaption property for all fields which source expressions is not a table field."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

@@ -2,10 +2,9 @@
 title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -137,6 +136,9 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0124](appsourcecop-as0124.md)|Changing an extension object's target is not allowed.|Upgrade|Error|
 |[AS0125](appsourcecop-as0125.md)|Changes the XLIFF translation ID are not allowed.|Upgrade|Info|
 |[AS0126](appsourcecop-as0126.md)|InternalsVisibleTo should not specifying a different publisher name than the one of this extension.|Extensibility|Warning|
+|[AS0127](appsourcecop-as0127.md)|Objects should be placed in a namespace with at least two levels.|Extensibility|Warning|
+|[AS0128](appsourcecop-as0128.md)|An interface must not be removed from the the list of extended interfaces on an interface that has been published.|Upgrade|Error|
+|[AS0129](appsourcecop-as0129.md)|An interface must not be added to the the list of extended interfaces on an interface that has been published.|Upgrade|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
