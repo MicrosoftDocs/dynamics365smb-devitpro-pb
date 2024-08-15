@@ -25,6 +25,7 @@ You should always install the latest update.
 The following table lists the updates that have been released for 2023 release wave 2 of Business Central (version 23). The updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
+
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
 |[5042529](https://support.microsoft.com/help/5042529)|Update 23.10 |August 2024|Application Build 23.10.22604</br>Platform Build 23.0.22561|
