@@ -2,7 +2,7 @@
 title: Integrating with infrastructure services
 description: Learn how Business Central integrates with infrastructure services.
 author: kennienp
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
 ms.date: 02/23/2024

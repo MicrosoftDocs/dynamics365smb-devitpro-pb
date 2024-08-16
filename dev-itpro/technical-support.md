@@ -4,7 +4,8 @@ description: Learn about how to support your Business Central customers, online 
 author: SusanneWindfeldPedersen
 ms.topic: overview
 ms.author: solsen
-ms.date: 04/26/2024
+ms.date: 06/20/2024
+ms.reviewer: solsen
 ---
 
 # Technical support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]

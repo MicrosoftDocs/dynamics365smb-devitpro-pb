@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/26/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Best practices for AL  

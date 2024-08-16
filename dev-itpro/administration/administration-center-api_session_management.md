@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# Session Management
+# Business Central Admin Center API - Session Management
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
@@ -20,7 +20,7 @@ Manage the active sessions on an environment.
 Gets active sessions for an environment.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/sessions
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/sessions
 ```
 
 ### Response
@@ -53,7 +53,7 @@ GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
 Gets session information for a specific session id.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ### Response
@@ -82,7 +82,7 @@ GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
 Terminates and deletes an active session.
 
 ```
-DELETE /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+DELETE /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ## See Also

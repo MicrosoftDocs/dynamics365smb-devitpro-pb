@@ -8,6 +8,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesOrders resource type (v1.0)
@@ -62,7 +63,7 @@ Represents a sales order in [!INCLUDE[prod_short](../../../includes/prod_short.m
 |shipToContact   |string, maximum size 100   |Ship to contact|
 |sellingPostalAddress|Microsoft.NAV.postalAddressType| Selling postal address|
 |billingPostalAddress|Microsoft.NAV.postalAddressType| Billing postal address|
-|shippingPostalAddress|Microsoft.NAV.postalAddressType| Shipping postal adress|
+|shippingPostalAddress|Microsoft.NAV.postalAddressType| Shipping postal address|
 |lastModifiedDateTime|datetime|The last datetime the sales order was modified. Read-Only.|
 
 

@@ -6,6 +6,7 @@ robots: NOINDEX
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Configure Localization App Location of Translated Base App Help

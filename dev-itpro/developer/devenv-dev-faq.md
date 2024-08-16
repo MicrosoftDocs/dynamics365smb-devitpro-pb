@@ -6,6 +6,7 @@ ms.date: 03/01/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # FAQ for developing in AL
@@ -60,6 +61,10 @@ For things that are not possible to achieve in AL code, the recommendation is to
 Extensions that have been published to a sandbox environment from Visual Studio Code or created Use Designer are removed when the sandbox environment is updated or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available.
 
 If you have per-tenant extensions (PTEs) installed that depend on extensions published from Visual Studio Code, the per-tenant extensions will be removed too.
+
+If you have partner telemetry enabled, search for event id `LC0105`, which includes a short description of the reason for your environment update or relocation.
+
+In order to enable partner telemetry in your extension, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about this property, see [JSON files](devenv-json-files.md).
 
 For more information, see [Sandbox Environments](../administration/environment-types.md).
 

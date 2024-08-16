@@ -5,6 +5,7 @@ ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Configuring Delegation for Business Central Web Server
 

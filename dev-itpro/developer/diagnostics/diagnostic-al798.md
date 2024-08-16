@@ -1,11 +1,11 @@
 ---
 title: "Compiler Error AL0798"
-description: "Currently, the Moved(To/From) property is exclusively accessible to Microsoft."
+description: "Currently, the Moved(To/From) property is exclusively accessible to Microsoft and select publishers."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Currently, the Moved(To/From) property is exclusively accessible to Microsoft.
+Currently, the Moved(To/From) property is exclusively accessible to Microsoft and select publishers.
 
 
 ## Description

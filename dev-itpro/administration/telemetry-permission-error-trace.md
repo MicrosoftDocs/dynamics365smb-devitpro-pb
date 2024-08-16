@@ -8,6 +8,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 07/27/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Analyzing Permission Error Trace Telemetry
 

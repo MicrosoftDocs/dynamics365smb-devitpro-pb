@@ -1,8 +1,8 @@
 ---
 title: Resources for partners
-description: "Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central."
+description: Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 04/08/2024
+ms.date: 06/20/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -40,8 +40,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://community.dynamics.com/forums/thread/)
-- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://cloudblogs.microsoft.com/dynamics365/it/)
-- Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
+- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://www.microsoft.com/dynamics-365/blog/it-professional/)
+- Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://www.microsoft.com/dynamics-365/blog/business-leader/)
 - Join the [!INCLUDE [prod_short](../includes/prod_short.md)] development group on Viva Engage (Yammer): [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))
 
 ## Partner readiness and programs
@@ -80,7 +80,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ### Copilot in Business Central 101
 
-- Copilot in Business Central playlist on YouTube: [aka.ms/BCYouTube​](https://aka.ms/BCYouTube)
+- Copilot in Business Central playlist on YouTube: [aka.ms/BC-Copilot-Videos​](https://aka.ms/BC-Copilot-Videos)
+- Copilot in Business Central - showcase video: [aka.ms/BC-AI-Sizzle](https://aka.ms/BC-AI-Sizzle)
 - Business Central pitch deck: [aka.ms/BC-GTM](https://aka.ms/BC-GTM)
 - Copilot in Business Central blog: [aka.ms/bc-ai​](https://aka.ms/bc-ai)
 - Copilot in Business Central Q&A : [About Copilot](/dynamics365/business-central/copilot-overview)

@@ -4,6 +4,7 @@ author: jswymer
 ms.date: 04/01/2021
 ms.topic: article
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Using the Development Environment from the Command Prompt
 >[!NOTE]

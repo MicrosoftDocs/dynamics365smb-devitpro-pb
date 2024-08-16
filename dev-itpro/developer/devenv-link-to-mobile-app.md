@@ -5,6 +5,7 @@ ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Linking to the Dynamics 365 Business Central App
 

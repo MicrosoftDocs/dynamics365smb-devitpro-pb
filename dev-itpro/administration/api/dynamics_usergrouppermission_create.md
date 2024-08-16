@@ -1,16 +1,17 @@
 ---
-title: Create userGroupPermission
+title: (automation API) Create userGroupPermission
 description: Creates a user group permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/05/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Create userGroupPermission
+# (automation API) Create userGroupPermission
 
 Creates a user group permission in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 

@@ -6,6 +6,7 @@ ms.date: 01/10/2023
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Embed Business Central Web Client in Other Websites
 

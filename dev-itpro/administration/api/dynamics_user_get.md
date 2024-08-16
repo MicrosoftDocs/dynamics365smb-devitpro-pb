@@ -1,16 +1,17 @@
 ---
-title: Get user
+title: (automation API) Get user
 description: Gets an user object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get user
+# (automation API) Get user
 
 Retrieves the properties and relationships of an user object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 

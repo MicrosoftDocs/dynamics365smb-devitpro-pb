@@ -5,6 +5,7 @@ ms.date: 10/01/2020
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading Permissions Sets and Permissions
 

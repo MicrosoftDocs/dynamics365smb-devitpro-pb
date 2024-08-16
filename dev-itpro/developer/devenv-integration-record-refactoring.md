@@ -3,7 +3,7 @@ title: Integration Management Refactoring Guidance
 description: This article offers guidance for refactoring the code in your AppSource app or per-tenant extension to use system fields rather than integration records.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: jswymer
+ms.reviewer: bholtorf
 
 ms.topic: conceptual
 ms.date: 12/08/2022

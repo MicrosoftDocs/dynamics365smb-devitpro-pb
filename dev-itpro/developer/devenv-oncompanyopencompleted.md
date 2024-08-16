@@ -6,6 +6,7 @@ ms.date: 05/23/2022
 ms.topic: conceptual
 
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Moving from OnCompanyOpen
 

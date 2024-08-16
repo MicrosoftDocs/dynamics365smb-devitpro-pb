@@ -6,6 +6,7 @@ ms.topic: reference
 ms.devlang: al
 ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # company resource type
@@ -41,7 +42,7 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[customers](dynamics_customer.md)|customers |Gets the customers of the company.|
 |[customerFinancialDetails](dynamics_customerfinancialdetail.md)|customerFinancialDetails |Gets the customerfinancialdetails of the company.|
 |[agedAccountsReceivables](dynamics_agedaccountsreceivable.md)|agedAccountsReceivables |Gets the agedaccountsreceivables of the company.|
-|[contactsInformation](dynamics_contactsinformation.md)|contactsInformation |Gets the contactsinformation of the company.|
+|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactinformation of the company.|
 |[contacts](dynamics_contact.md)|contacts |Gets the contacts of the company.|
 |[vendors](dynamics_vendor.md)|vendors |Gets the vendors of the company.|
 |[agedAccountsPayables](dynamics_agedaccountspayable.md)|agedAccountsPayables |Gets the agedaccountspayables of the company.|
@@ -102,7 +103,7 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[currencyExchangeRates](dynamics_currencyexchangerate.md)|currencyExchangeRates |Gets the currencyexchangerates of the company.|
 |[accountingPeriods](dynamics_accountingperiod.md)|accountingPeriods |Gets the accountingperiods of the company.|
 |[generalLedgerSetup](dynamics_generalledgersetup.md)|generalLedgerSetup |Gets the generalledgersetup of the company.|
-|[disputeStatus](dynamics_disputestatu.md)|disputeStatus |Gets the disputestatus of the company.|
+|[disputeStatus](dynamics_disputestatus.md)|disputeStatus |Gets the disputestatus of the company.|
 |[fixedAssetLocations](dynamics_fixedassetlocation.md)|fixedAssetLocations |Gets the fixedassetlocations of the company.|
 |[fixedAssets](dynamics_fixedasset.md)|fixedAssets |Gets the fixedassets of the company.|
 |[customerSales](dynamics_customersale.md)|customerSales |Gets the customersales of the company.|

@@ -1,16 +1,17 @@
 ---
-title: Delete tableMappings
+title: (cloudMigration API) Delete tableMappings
 description: Deletes a table mapping object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: al
-ms.date: 03/25/2022
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Delete tableMappings
+# (cloudMigration API) Delete tableMappings
 
 Deletes a table mapping from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

@@ -5,6 +5,7 @@ ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: brobledodiaz
 author: blrobl
+ms.reviewer: jswymer
 ---
 
 # Working with List Parts

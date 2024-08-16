@@ -5,7 +5,8 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 04/26/2024
+ms.date: 07/23/2024
+ms.custom: evergreen
 ms.collection: get-started
 ---
 
@@ -25,7 +26,7 @@ These operators are used to perform various operations such as arithmetic, compa
 |`:=`|Assigns a value to a variable. Assigns the value on the right side of the operator to the variable on the left side.|
 |`()`|Parentheses|
 |`[ ]`|Indexing|
-|`::`|Scope|
+|`::`|Scope. Returns the IF of an object. Examples: `Report::myReport` or `Query::"My Query"`.|
 |`..`|Range|
 |`@`|Case-insensitive|
 

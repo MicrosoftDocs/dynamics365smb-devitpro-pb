@@ -2,10 +2,10 @@
 title: "TestFilter.GetFilter(TestFilterField) Method"
 description: "Gets the filter that is applied to the specified field in a data set that is displayed on a test page."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

@@ -3,7 +3,7 @@ title: "FAQ about managing and submitting your Business Central offer"
 description: "Get answers to some of your questions about managing an offer in Partner Center when you build an app for Dynamics 365 Business Central"
 author: freddyk
 ms.date: 12/27/2023
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: freddyk
 ---

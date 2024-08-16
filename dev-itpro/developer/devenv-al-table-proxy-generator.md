@@ -1,10 +1,11 @@
 ---
-title: "AL Table Proxy Generator"
-description: "Tool for creating integration or proxy tables for integration with Microsoft Dataverse from Business Central"
-ms.date: 01/04/2024
+title: AL Table Proxy Generator
+description: Tool for creating integration or proxy tables for integration with Microsoft Dataverse from Business Central
+ms.date: 05/28/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # AL Table Proxy Generator
@@ -71,13 +72,9 @@ The following example starts the process for creating a new integration table in
 
 ## Authentication
 
-Users are required to register a Microsoft Entra application and provide its client ID and redirect URI as arguments when running the tool.
-
-Application must have **user_impersonation** permission for Dynamics CRM API. 
-
-Redirect URI type must be **Public client/native (mobile & desktop).
+Users are required to register a Microsoft Entra application and provide its client ID and redirect URI as arguments when running the tool. To register an application, sign in to the Microsoft Entra admin center as a Cloud Application Administrator. The application must have the **user_impersonation** permission for Dynamics CRM API. The Redirect URI type must be **Public client/native (mobile & desktop).
 
 ## See also
 
-[Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
-[Custom Integration with Microsoft Dataverse](../administration/administration-custom-cds-integration.md)  
+[Overview - integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
+[Custom integration with Microsoft Dataverse](../administration/administration-custom-cds-integration.md)  

@@ -70,6 +70,9 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
+### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
+### [Update 24.2](whatsnew/whatsnew-update-24-2.md)
 ### [Update 24.1](whatsnew/whatsnew-update-24-1.md)
 ### Updates for earlier major versions
 #### [Update 23.5](whatsnew/whatsnew-update-23-5.md)
@@ -118,7 +121,6 @@
 #### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 ## Help and support
 ### [Resources for help and support](help-and-support.md)
-### [Legal resources](terms/legal.md)
 ### [Technical support](technical-support.md)
 ### Help system
 #### [User assistance model](user-assistance.md)
@@ -392,11 +394,9 @@
 ##### [Retain permissions (optional)](administration/migration-retain-permissions.md)
 ##### [Run cloud migration setup](administration/migration-setup.md)
 ##### [Change how data is replicated](administration/cloud-migration-change-replication.md)
-##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
-##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade.md)
 ##### [Skip API data upgrade](administration/migration-skip-api-data-upgrade.md)
@@ -419,11 +419,9 @@
 ##### [Retain permissions (optional)](administration/migration-retain-permissions.md)
 ##### [Run cloud migration setup](administration/migration-setup-gp.md)
 ##### [Configure Dynamics GP company migration](administration/migrate-gp-configure-companies.md)
-##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
 ##### [Run data replication](administration/migrate-data-replication-run.md)
-##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
 #### Finish cloud migration
@@ -588,7 +586,7 @@
 
 ##### JSON and XML types
 ###### [JsonArray data type](developer/methods-auto/jsonarray/jsonarray-data-type.md)
-###### [Jsonobject data type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
+###### [JsonObject data type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
 ###### [JsonToken data type](developer/methods-auto/jsontoken/jsontoken-data-type.md)
 ###### [JsonValue data type](developer/methods-auto/jsonvalue/jsonvalue-data-type.md)
 ###### [XmlAttribute data type](developer/methods-auto/xmlattribute/xmlattribute-data-type.md)
@@ -833,14 +831,14 @@
 ##### [Actions in the user interface](developer/devenv-actions-user-interface.md)
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md)
-##### Promoted actions
-###### [Promoted actions](developer/devenv-promoted-actions.md)
-###### [Organizing promoted actions](developer/devenv-organizing-promoted-actions.md)
-###### [Common promoted action groups](developer/devenv-common-promoted-action-groups.md)
 ##### Modern action bar
 ###### [Action bar improvements](developer/devenv-action-bar-improvements.md)
 ###### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
 ###### [Pages with action bar improvements](developer/devenv-pages-action-bar-improvements.md)
+##### Promoted actions
+###### [Promoted actions](developer/devenv-promoted-actions.md)
+###### [Organizing promoted actions](developer/devenv-organizing-promoted-actions.md)
+###### [Common promoted action groups](developer/devenv-common-promoted-action-groups.md)
 
 #### Views
 ##### [Designing views](developer/devenv-views.md)
@@ -1290,9 +1288,7 @@
 #### [Using the Performance Profiler](administration/performance-profiler-overview.md)
 #### [Verifying report datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking personalization issues](/dynamics365/business-central/ui-personalization-user)
-#### [Troubleshooting user personalization can't be started](developer/devenv-troubleshooting-user-personalization.md)
 #### [Checking customization issues](/dynamics365/business-central/ui-personalization-manage)
-#### [Troubleshooting profile configuration can't be started](developer/devenv-troubleshooting-profile-configuration.md)
 #### [Verifying user permissions](/dynamics365/business-central/ui-define-granular-permissions)
 #### [Investigating mobile app (on-premises)](developer/devenv-troubleshooting-the-mobile-app.md)
 ### Troubleshooting in AL
@@ -1314,8 +1310,7 @@
 ### Troubleshooting guides (TSGs)
 #### Troubleshoot cloud migration
 ##### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
-##### [Troubleshooting cloud migration setup](administration/migration-setup-troubleshooting.md)
-##### [Troubleshooting data replication](administration/migration-data-replication-troubleshooting.md)
+##### [Troubleshooting cloud migration setup and data replication](/troubleshoot/dynamics-365/business-central/welcome-business-central)
 #### [Troubleshoot report errors](developer/devenv-reports-troubleshooting.md)
 #### Troubleshoot web services
 ##### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
@@ -1356,6 +1351,9 @@
 ### [Service overview](service-overview.md)
 ### [Service scalability](service-scalability.md)
 ### [Service operations](service-operations.md)
+## Auditing
+### [Auditing overview](auditing/auditing-overview.md)
+### [Auditing in Purview](auditing/audit-events-in-purview.md)
 <!-- begin performance -->
 # Performance
 ## [Performance overview](performance/performance-overview.md)
@@ -1441,27 +1439,30 @@
 ###### [Get vendor ledger entry](administration/financereportsapi/api/dynamics_vendorledgerentry_get.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+#### [Sustainability API](api-sustainability/sustainability-api.md)
+
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
 #### [Admin Center API](administration/administration-center-api.md)
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 #### [API developer overview](developer/devenv-api.md)
 
 ### OData
-#### [Overview](webservices/odata-web-services.md)
+#### [OData overview](webservices/odata-web-services.md)
 #### [OData client performance](webservices/odata-client-performance.md)
-#### [Using filters with OData/REST API calls](developer/devenv-connect-apps-filtering.md)
 #### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
-#### [Return or obtain an AtomPub document](webservices/return-obtain-an-atompub-document.md)
-#### [Return or obtain service metadata EDMX document](webservices/return-obtain-service-metadata-edmx-document.md)
-#### [Return or obtain a JSON document](webservices/return-obtain-json-document.md)
+#### [Using filters with OData/REST API calls](developer/devenv-connect-apps-filtering.md)
 #### [Using filter expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
 #### [Using FlowFilters in OData URIs](webservices/use-flowfilters-in-odata-uris.md)
-#### [Server-driven paging](webservices/server-driven-paging-in-odata-web-services.md)
-#### [Containments and associations](webservices/use-containments-associations.md)
+#### [Server-driven paging in OData](webservices/server-driven-paging-in-odata-web-services.md)
+#### [Containments and associations in OData](webservices/use-containments-associations.md)
 #### [Using OData on queries set with top number of rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
 #### [Using OData to modify data](webservices/use-odata-to-modify-data.md)
 #### [Using OData transactional $batch requests](webservices/use-odata-batch.md)
+#### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)  
+#### [Return or obtain service metadata EDMX document for OData](webservices/return-obtain-service-metadata-edmx-document.md)
+#### [Return or obtain a JSON document with OData](webservices/return-obtain-json-document.md)
 #### [Known OData limitations](webservices/odata-known-limitations.md)
+#### [Return or obtain an AtomPub document in ODatav3](webservices/return-obtain-an-atompub-document.md)
 
 ### Publishing pages and codeunits as OData/SOAP web service endpoints
 #### [Publishing a web service](webservices/publish-web-service.md)
@@ -1500,27 +1501,33 @@
 ### [Using webhooks to track data change (CUD) events](api-reference/v2.0/dynamics-subscriptions.md)
 ### [Business events (preview)](developer/business-events-overview.md)
 
-## Integrating AI using developer tools for copilot
+## Integrating AI using developer tools for Copilot
 ### [Overview](developer/ai-integration-landing-page.yml)
-### [What are developer tools for copilot](developer/developer-tools-for-copilot-overview.md)
-### [What is considered a copilot offering](developer/ai-extend-copilot-overview.md)
-### [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
+### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
+### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
+### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
-### Build a copilot experience
+### Extend Copilot in Business Central 
 #### [Introduction](developer/ai-build-experience-overview.md)
-#### [Build the copilot capability in AL](developer/ai-build-capability-in-al.md)
+#### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
 #### Build Copilot user experience
 ##### [Overview](developer/ai-build-experience.md)
 ##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
 ##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
-##### [Launch copilot](developer/copilot-launch-experience.md)
+##### [Launch Copilot](developer/copilot-launch-experience.md)
+## Developing AI with machine learning APIs
+### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
+### [Prediction API overview](developer/ml-prediction-api-overview.md)
+### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
+
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
 ### Integrating with Microsoft Excel
 #### [Using Excel for viewing and editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
 #### [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
+#### [Using Excel to import data from other systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### [Controlling Edit in Excel on list pages](developer/devenv-edit-in-excel-lists.md)
 ### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 ### Integrating with Microsoft Onedrive
@@ -1884,30 +1891,30 @@
 ##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v22.md)
 ##### [From version 20 or 21](upgrade/upgrade-technical-upgrade-v22.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v22.md)
-### Business Central 2022 release wave 2
-#### [Overview](upgrade/upgrade-overview-v21.md)
-#### [Before you upgrade](upgrade/upgrade-considerations-v21.md)
-#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrading reports](upgrade/upgrade-reports.md)
-#### Application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v21.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v21.md)
-##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v21.md)
-##### Related articles
-###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating tables and fields between extensions
-####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-###### Data Migration Toolkit - India
-####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### Technical upgrade
-##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v21.md)
-##### [From version 18 or 19](upgrade/upgrade-technical-upgrade-v19-to-v21.md)
-##### [From version 20](upgrade/upgrade-technical-upgrade-v21.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v21.md)
 ### Earlier versions
+#### Business Central 2022 release wave 2
+##### [Overview](upgrade/upgrade-overview-v21.md)
+##### [Before you upgrade](upgrade/upgrade-considerations-v21.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+##### [Upgrading reports](upgrade/upgrade-reports.md)
+##### Application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v21.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v21.md)
+###### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v21.md)
+###### Related articles
+####### [Convert to AL](upgrade/devenv-code-conversion.md)
+####### Migrating tables and fields between extensions
+######## [Overview](developer/devenv-migrate-table-fields.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+####### Data Migration Toolkit - India
+######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
+##### Technical upgrade
+###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v21.md)
+###### [From version 18 or 19](upgrade/upgrade-technical-upgrade-v19-to-v21.md)
+###### [From version 20](upgrade/upgrade-technical-upgrade-v21.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v21.md)
 #### Business Central 2022 release wave 1
 ##### [Overview](upgrade/upgrade-overview-v20.md)
 ##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
@@ -1989,7 +1996,7 @@
 ##### [Upgrade overview](upgrade/upgrade-overview-v16.md)
 ##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
 ##### Application and data
-<!--##### [Overiew](upgrade/upgrade-application-code-upgrade-v16.md)-->
+<!--##### [Overview](upgrade/upgrade-application-code-upgrade-v16.md)-->
 <!--##### [Unmodified Application](upgrade/upgrade-unmodified-application.md)-->
 ###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v16.md)
 ###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app.md)
@@ -2032,5 +2039,6 @@
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 # Responsible AI
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
+## [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 <!-- end upgrade -->
 <!--on-prem ends-->

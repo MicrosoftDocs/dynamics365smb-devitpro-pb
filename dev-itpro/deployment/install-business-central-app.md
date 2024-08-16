@@ -6,6 +6,7 @@ ms.topic: conceptual
 caps.latest.revision: 24
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Preparing for and installing the Microsoft Dynamics 365 Business Central app

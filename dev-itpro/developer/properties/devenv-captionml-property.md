@@ -2,10 +2,10 @@
 title: "CaptionML Property"
 description: "Sets the string string that displays with the object, control, or other element in user interface for the current language."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -79,7 +79,7 @@ In this example, values are set for Danish (DAN), German Standard (DEU), Spanish
 
 When the CaptionML property does not include an entry for the language used in the client at runtime, then a default value for the caption string will be used according to the following: 
 
-1. If there is an `ENU` entry, then it's caption string is used. 
+1. If there is an `ENU` entry, then its caption string is used. 
 2. If there are no language entries in CaptionML property, then the caption string is determined according to the following table:
 
     |Object, control, or other element|Default caption|  

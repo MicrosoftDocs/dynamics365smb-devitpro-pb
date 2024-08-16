@@ -1,11 +1,12 @@
 ---
-title: configurationPackage resource type | Microsoft Docs
+title: configurationPackage resource type
 description: A configuration package object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # configurationPackage resource type

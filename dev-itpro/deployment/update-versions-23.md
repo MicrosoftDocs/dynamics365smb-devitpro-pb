@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 04/30/2024
+ms.date: 08/05/2024
 ms.custom: bap-template
 ---
 
@@ -28,13 +28,16 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|[5038530](https://support.microsoft.com/help/5038530)|Update 23.7 |May 2024|Application Build 23.7.18957</br>Platform Build 23.0.18933| 
-|[5037541](https://support.microsoft.com/help/5037541)|Update 23.6 |April 2024|Application Build 23.6.18013</br>Platform Build 23.0.17940| 
-|[5036474](https://support.microsoft.com/help/5036474)|Update 23.5 |March 2024|Application Build 23.5.16757</br>Platform Build 23.0.16502| 
-|[5035207](https://support.microsoft.com/help/5035207)|Update 23.4 |February 2024|Application Build 23.4.15715</br>Platform Build 23.0.15712| 
-|[5034720](https://support.microsoft.com/help/5034720)|Update 23.3 |January 2024|Application Build 23.3.15024</br>Platform Build 23.0.1496623| 
-|[5033775](https://support.microsoft.com/help/5033775)|Update 23.2 |December 2023|Application Build 23.2.14562 </br>Platform Build 23.0.14532| 
-|[5032755](https://support.microsoft.com/help/5032755)|Update 23.1 |November 2023|Application Build 23.1.13812 </br>Platform Build 23.0.13804| 
+|[5042529](https://support.microsoft.com/help/5042529)|Update 23.10 |August 2024|Application Build 23.10.22604</br>Platform Build 23.0.22561|
+|[5041132](https://support.microsoft.com/help/5041132)|Update 23.9 |July 2024|Application Build 23.9.21328</br>Platform Build 23.0.21274|
+|[5040043](https://support.microsoft.com/help/5040043)|Update 23.8 |June 2024|Application Build 23.8.20231</br>Platform Build 23.0.20134|
+|[5038530](https://support.microsoft.com/help/5038530)|Update 23.7 |May 2024|Application Build 23.7.18957</br>Platform Build 23.0.18933|
+|[5037541](https://support.microsoft.com/help/5037541)|Update 23.6 |April 2024|Application Build 23.6.18013</br>Platform Build 23.0.17940|
+|[5036474](https://support.microsoft.com/help/5036474)|Update 23.5 |March 2024|Application Build 23.5.16757</br>Platform Build 23.0.16502|
+|[5035207](https://support.microsoft.com/help/5035207)|Update 23.4 |February 2024|Application Build 23.4.15715</br>Platform Build 23.0.15712|
+|[5034720](https://support.microsoft.com/help/5034720)|Update 23.3 |January 2024|Application Build 23.3.15024</br>Platform Build 23.0.1496623|
+|[5033775](https://support.microsoft.com/help/5033775)|Update 23.2 |December 2023|Application Build 23.2.14562 </br>Platform Build 23.0.14532|
+|[5032755](https://support.microsoft.com/help/5032755)|Update 23.1 |November 2023|Application Build 23.1.13812 </br>Platform Build 23.0.13804|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
@@ -50,7 +53,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
-[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
+[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

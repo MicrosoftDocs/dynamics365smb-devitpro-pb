@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.date: 04/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Important Information and Considerations When Upgrading to Business Central 2023 Release Wave 1
 

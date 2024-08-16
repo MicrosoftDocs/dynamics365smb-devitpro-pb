@@ -2,10 +2,10 @@
 title: "Page.RunModal() Method"
 description: "Creates, opens, and closes a page that you specify."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -52,11 +52,11 @@ In some cases, the actions for the return values are different when the page dis
 
 ## Remarks
 
-If you know the specific page that you want to run when you are designing your application, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [Run Method \(Page\)](page-run--method.md).  
+If you know the specific page that you want to run when you are designing your application, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [Run method \(Page\)](page-run--method.md).  
 
-If you do not know the specific page that you want to run, then use the [Run Method \(Page\)](page-run--method.md) or the **RunModal Method \(Page\)** and specify the page in the *Number* parameter.  
+If you don't know the specific page that you want to run, then use the [Run method \(Page\)](page-run--method.md) or the **RunModal Method \(Page\)** and specify the page in the *Number* parameter.  
 
-After you define the page variable, you can use it before and after you run the page. If you use the [Run Method \(Page\)](page-run--method.md), then you can only use the variable before you run the page.  
+After you define the page variable, you can use it before and after you run the page. If you use the [Run method \(Page\)](page-run--method.md), then you can only use the variable before you run the page.  
 
 ## Example
 
@@ -72,7 +72,7 @@ if SomePage.RunModal = Action::LookupOK then
 ```  
 
 > [!NOTE]  
-> This code example includes the [Clear Method](../system/system-clear-joker-method.md) to make sure that the variable has been cleared.  
+> This code example includes the [Clear method](../system/system-clear-joker-method.md) to make sure that the variable has been cleared.  
 
 ## See Also
 [Page Data Type](page-data-type.md)  

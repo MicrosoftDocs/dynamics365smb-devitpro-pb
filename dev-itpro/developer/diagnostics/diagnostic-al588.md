@@ -2,10 +2,10 @@
 title: "Compiler Warning AL0588"
 description: "The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

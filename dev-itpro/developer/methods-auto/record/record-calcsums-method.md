@@ -2,10 +2,10 @@
 title: "Record.CalcSums(Any [, Any,...]) Method"
 description: "Calculates the total of a column in a table."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,7 +43,8 @@ An instance of the [Record](record-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-If one of the fields specified is not a SumIndexField, the operation will be unsuccessful and a runtime error will occur.
+
+For more information, see [CalcSum method (FieldRef)](../fieldref/fieldref-calcsum-method.md).
 
 ## See Also
 [Record Data Type](record-data-type.md)  

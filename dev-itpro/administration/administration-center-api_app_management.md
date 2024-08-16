@@ -9,7 +9,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# App Management
+# Business Central Admin Center API - App Management
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
@@ -54,7 +54,7 @@ Installs an app on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
 ```
 
 ### Route Parameters
@@ -83,7 +83,7 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 > [!IMPORTANT]
 > By setting the `acceptIsvEula` property to `true`, you not only agree with ISV's end-user license terms (EULA) but also with these terms:
 >
-> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of AppSource is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://privacy.microsoft.com/privacystatement).** 
+> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of AppSource is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://go.microsoft.com/fwlink/?LinkId=521839) <!--(https://privacy.microsoft.com/privacystatement)-->.**
 
 <sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on AppSource. Links to these documents are typically under **Details + Support** > **Legal**. Or, if you can't find this information, contact the provider.
 
@@ -131,7 +131,7 @@ Uninstalls an app from an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
 ```
 
 ### Route Parameters
@@ -193,7 +193,7 @@ Example `400 Bad Request` response when dependent apps need to be uninstalled fi
 Get information about apps that are installed on the environment.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps
 ```
 
 ### Route Parameters
@@ -227,7 +227,7 @@ Returns information about the apps installed on the environment.
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
 ### Route Parameters
@@ -268,7 +268,7 @@ Updates an app using an existing endpoint, but when new parameters in the reques
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
 ### Route Parameters
@@ -334,7 +334,7 @@ Cancels an app update in scheduled state.
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update/cancel
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update/cancel
 ```
 
 ### Route Parameters
@@ -376,7 +376,7 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 Gets information about app install, uninstall, and update operations for the specified app.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
 ```
 
 ### Route Parameters

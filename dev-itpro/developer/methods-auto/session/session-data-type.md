@@ -2,10 +2,10 @@
 title: "Session Data Type"
 description: "Represents a Microsoft Dynamics Business Central session."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -33,6 +33,7 @@ The following methods are available on the Session data type.
 |[GetExecutionContext()](session-getexecutioncontext-method.md)|Gets the current session's execution context.|
 |[GetModuleExecutionContext([Guid])](session-getmoduleexecutioncontext-method.md)|Gets the current session's execution context scoped to a specific module.|
 |[IsSessionActive(Integer)](session-issessionactive-method.md)|Tests if the specified SessionID is active on the server instance where it was started.|
+|[LogAuditMessage(Text, SecurityOperationResult, AuditCategory, Integer, Integer [, Dictionary of [Text, Text]])](session-logauditmessage-method.md)|Logs a message to an audit account. Note, these logs are accessible to customers and will also be logged to a security audit account.|
 |[LogMessage(Text, Text, Verbosity, DataClassification, TelemetryScope, Text, Text [, Text] [, Text])](session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)|Logs a trace message to a telemetry account.|
 |[LogMessage(Text, Text, Verbosity, DataClassification, TelemetryScope, Dictionary of [Text, Text])](session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md)|Logs a trace message to a telemetry account.|
 |[LogSecurityAudit(Text, SecurityOperationResult, Text, AuditCategory [, Array of [Text]] [, Array of [Text]])](session-logsecurityaudit-method.md)|Logs an IfX audit message to a telemetry account.|
