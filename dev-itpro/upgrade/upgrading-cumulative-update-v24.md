@@ -417,7 +417,7 @@ Follow these steps if your existing solution uses the Microsoft System Applicati
 
 ## Upgrade Business Foundation Application
 
-Follow these steps if your existing solution uses the Microsoft Business Foundation Application. Otherwise, you can skip this procedure.
+Follow these steps if your existing solution uses the Microsoft Business Foundation Application. Otherwise, you can skip this procedure. The **Business Foundation** extension contains an expansive set of open source modules that make it easier to build, maintain, and easily upgrade on-premises and online apps.
 
 1. Publish the  **Business Foundation** extension (Microsoft_Business Foundation.app).
 
@@ -427,7 +427,7 @@ Follow these steps if your existing solution uses the Microsoft Business Foundat
     Publish-NAVApp -ServerInstance $BcServerInstance -Path $BusFoundAppPath
     ```
 
-1. Synchronize the tenant with the Business Foundation extension.
+1. Synchronize the tenant with the Business Foundation extension (Microsoft_Business Foundation):
 
     ```powershell
     Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBCVersion
@@ -442,6 +442,8 @@ Follow these steps if your existing solution uses the Microsoft Business Foundat
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBcVersion
     ```
+
+    Upgrading data updates the data in the tables of the tenant database to the schema changes made to tables of the Business Foundation.
 
 ## Upgrade Base Application
 
