@@ -30,6 +30,31 @@ Represents the different kinds of styles that can be applied to page controls.
 |Subordinate|Grey|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+The `PageStyle` option type can be used to get the valid values for [StyleExpr](../../properties/devenv-styleexpr-property.md), which is set on page controls.
+
+```AL
+layout
+{
+    area(Content)
+    {
+        field(Name; rec.Name)
+        {
+            StyleExpr = nameStyle;
+        }
+    }
+}
+
+var nameStyle : Text;
+
+local procedure ChangeNameStyle(newPageStyle : PageStyle)
+begin
+    nameStyle := format(newPageStyle);
+end;
+```
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
