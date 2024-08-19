@@ -16,7 +16,7 @@ ms.reviewer: bholtorf
 
 The business central application code is being refactored from a single monolythic application into smaller applications (layers) which in turn are built from small modules which handle a single functionality or feature.
 
-The System Application layer contains modules that provide ERP agnostic functionality. These are mostly tecnical features which any application needs.
+The System Application layer contains modules that provide ERP agnostic functionality. These are mostly technical features which any application needs.
 The Business Foundation layer contains modules that provide ERP related functionality that applies to all or none of the application domains.
 
 As we continue to modernize the application code more modules and layers will be added. For an overview of system and application reference documentation, see [System and Base Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application).
