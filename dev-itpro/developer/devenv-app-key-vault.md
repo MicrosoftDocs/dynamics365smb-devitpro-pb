@@ -92,7 +92,7 @@ When your code works with secrets, whether from a key vault or from Isolated Sto
 
 ### Use SecretText
 
-When your code works with secrets, whether from a key vault or from Isolated Storage, you should use the [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) to denote a secret text string, which is non-debuggable.
+The `SecretText` data type is designed to protect sensitive values from being exposed through the AL debugger when doing regular or snapshot debugging. Its use is recommended for applications that need to handle any kind of credentials like API keys, custom licensing tokens, or similar. To learn more about how to denote a secret text string, which is non-debuggable in [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) and [Protecting sensitive values with the SecretText data type](devenv-secret-text.md).
 
 ### Don't pass the App Key Vault Secret Provider to untrusted code 
 
@@ -165,16 +165,18 @@ You can set up extensions to emit telemetry to an Application Insights resource 
 
 2. In the app.json file of the extension, add the `"applicationInsightsKey"`:
 
-  ``` 
+  ```al
   "applicationInsightsKey": ["<instrumenation key>"] 
   ```
 
-3. Now, you can run your extensions and view data in Application Insights.
+3. Now, you can run your extensions and view data in Application Insights.  
 
-   For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
+For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
-## See Also  
+## See also
+
 [Get Started with AL](devenv-get-started.md)  
 [Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
 [Configuring Business Central Server](../administration/configure-server-instance.md)  
 [App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md)  
+[Protecting sensitive values with the SecretText data type](devenv-secret-text.md)  
