@@ -92,7 +92,7 @@ When your code works with secrets, whether from a key vault or from Isolated Sto
 
 ### Use SecretText
 
-The `SecretText` data type is designed to protect sensitive values from being exposed through the AL debugger when doing regular or snapshot debugging. Its use is recommended for applications that need to handle any kind of credentials like API keys, custom licensing tokens, or similar. To learn more about how to denote a secret text string, which is non-debuggable in [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) and [Protecting sensitive values with the SecretText data type](devenv-secret-text.md).
+The `SecretText` data type is designed to protect sensitive values from being exposed through the AL debugger when doing regular or snapshot debugging. Its use is recommended for applications that need to handle any kind of credentials like API keys, custom licensing tokens, or similar. Learn more about how to denote a secret text string, which is non-debuggable in [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) and [Protecting sensitive values with the SecretText data type](devenv-secret-text.md).
 
 ### Don't pass the App Key Vault Secret Provider to untrusted code 
 
