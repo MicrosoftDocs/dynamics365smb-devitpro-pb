@@ -1,9 +1,10 @@
 ---
 title: Using Key Vault Secrets in Business Central Extensions 
 description: Describes how to use an Azure Key vault with Business Central extensions.
-ms.date: 04/01/2021
+ms.date: 08/20/2024
 ms.topic: conceptual
 author: jswymer
+ms.reviewer: solsen
 ---
 # Using Key Vault Secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions
 
@@ -57,7 +58,7 @@ Next, you add code to the extension for reading secrets from the key vault at ru
 
 Look at the following example for a simple page object. The code retrieves the value of the secret named **MySecret** in app key vault:
 
-```
+```al
 page 50100 HelloWorldPage
 {
     var
@@ -84,9 +85,14 @@ The call to the `TryInitializeFromCurrentApp` method determines the extension th
 
 Keep the following information in mind when you use the App Key Vault feature with your extensions.
 
+<!--
 ### Mark methods as NonDebuggable
 
-When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
+When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets. -->
+
+### Use SecretText
+
+When your code works with secrets, whether from a key vault or from Isolated Storage, you should use the [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) to denote a secret text string, which is non-debuggable.
 
 ### Don't pass the App Key Vault Secret Provider to untrusted code 
 
