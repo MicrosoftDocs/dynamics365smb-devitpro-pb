@@ -1,9 +1,10 @@
 ---
 title: Using Key Vault Secrets in Business Central Extensions 
 description: Describes how to use an Azure Key vault with Business Central extensions.
-ms.date: 04/01/2021
+ms.date: 08/20/2024
 ms.topic: conceptual
 author: jswymer
+ms.reviewer: solsen
 ---
 # Using Key Vault Secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions
 
@@ -57,7 +58,7 @@ Next, you add code to the extension for reading secrets from the key vault at ru
 
 Look at the following example for a simple page object. The code retrieves the value of the secret named **MySecret** in app key vault:
 
-```
+```al
 page 50100 HelloWorldPage
 {
     var
@@ -84,9 +85,14 @@ The call to the `TryInitializeFromCurrentApp` method determines the extension th
 
 Keep the following information in mind when you use the App Key Vault feature with your extensions.
 
+<!--
 ### Mark methods as NonDebuggable
 
-When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
+When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets. -->
+
+### Use SecretText
+
+The `SecretText` data type is designed to protect sensitive values from being exposed through the AL debugger when doing regular or snapshot debugging. Its use is recommended for applications that need to handle any kind of credentials like API keys, custom licensing tokens, or similar. Learn more about how to denote a secret text string, which is non-debuggable in [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) and [Protecting sensitive values with the SecretText data type](devenv-secret-text.md).
 
 ### Don't pass the App Key Vault Secret Provider to untrusted code 
 
@@ -159,16 +165,18 @@ You can set up extensions to emit telemetry to an Application Insights resource 
 
 2. In the app.json file of the extension, add the `"applicationInsightsKey"`:
 
-  ``` 
+  ```al
   "applicationInsightsKey": ["<instrumenation key>"] 
   ```
 
-3. Now, you can run your extensions and view data in Application Insights.
+3. Now, you can run your extensions and view data in Application Insights.  
 
-   For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
+For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
-## See Also  
+## See also
+
 [Get Started with AL](devenv-get-started.md)  
 [Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
 [Configuring Business Central Server](../administration/configure-server-instance.md)  
 [App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md)  
+[Protecting sensitive values with the SecretText data type](devenv-secret-text.md)  
