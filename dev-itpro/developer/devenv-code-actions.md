@@ -33,6 +33,7 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the following code a
 - Convert existing event parameter in event subscribers from string literal to new identifier format. Fix event subscriber on the specific EventSubscriber instance, the active file, the active project, or the whole workspace. This makes it easy and controllable to opt in to the new syntax.
 - Insert `using` statement for a missing namespace. Fix for instance, document, project, or workspace.
 - Move the tooltip from page controls to table fields or clean them up from the page in case of duplicates. For more information, see [Tooltip property](properties/devenv-tooltip-property.md).
+- Fix code to use the `this` keyword for self-reference and code readability. Learn more in [Use the this keyword for codeunit self-reference](devenv-al-this-keyword.md).
 
 ## Examples
 
