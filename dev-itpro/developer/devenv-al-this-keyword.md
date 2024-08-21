@@ -13,7 +13,7 @@ ms.collection: get-started
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-The `this` keyword allows passing the current object as an argument to methods, which previously required less optimal workarounds. Additionally, using the `this` keyword enhances readability in larger methods by clearly indicating whether a variable is in the global or local scope.
+The `this` keyword is known from many programming languages such as C#, JavaScript, and Python. The `this` keyword can be used in codeunits in AL as a self-reference, and it allows passing the current object as an argument to methods. Additionally, using the `this` keyword enhances readability in larger methods by clearly indicating whether a variable is in the global or local scope.
 
 ## Scenarios for using `this`
 
