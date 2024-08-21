@@ -1,12 +1,16 @@
 ---
 title: Use the this keyword for codeunit self-reference
-description: Learn how you can use the this keyword in codeunits to pass a reference to itself and improve readability of code.
+description: Enhance readability and pass current objects as arguments in AL codeunits using the self-reference keyword.
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.date: 08/21/2024
-ms.custom: bap-template
 author: SusanneWindfeldPedersen
 ms.collection: get-started
+ms.custom:
+  - bap-template
+  - ai-gen-docs-bap
+  - ai-gen-desc
+  - ai-seo-date:08/21/2024
 ---
 
 # Use the `this` keyword for codeunit self-reference
