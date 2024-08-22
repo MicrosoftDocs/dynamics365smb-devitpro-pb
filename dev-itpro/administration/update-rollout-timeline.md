@@ -16,11 +16,32 @@ This article provides an overview of what you need to know about how a major or 
 
 [!INCLUDE [service-updates](../includes/service-updates.md)]
 
-Microsoft is committed to delivering predictable updates to the service. Updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. Administrators can set a maintenance window for each environment that determines when Microsoft is allowed to update that environment. For more information, see [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows.  
+Microsoft is committed to delivering predictable updates to the service. Updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. Administrators can set a maintenance window for each environment that determines when Microsoft is allowed to update that environment. For more information, see [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md). Scheduled minor and major updates as well as unscheduled critical fixes respect the maintenance window set on each environment.
 
-You are in control and manage how your organization receives these updates. Microsoft applies updates to each environment based on your configuration. The only exception is how Microsoft maintains the underlying platform with invisible updates during low traffic hours, for example. For more information, see the [Service updates](#service-updates) section.  
+You are in control and manage how your organization receives these updates. Microsoft applies updates to each environment based on your configuration. The only exception is how Microsoft maintains the underlying platform with invisible updates during low traffic hours, for example. For more information, see the [service updates](#service-updates) section.  
 
 Each new update is designed and developed by the Dynamics 365 team. Any new update is first validated by the feature team, then validated in combination with the full product. During this time, extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility.  
+
+## Major update cycle
+There are two major update cycles per year, with major releases every April and October. Major updates introduce new features, enhancements, and platform improvements. For each major update cycle the following periods apply.
+
+### Preview period
+The preview period allows for testing of the new functionality before the version is made available as update to your environment. Administrators can create a Sandbox environment from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] on the new version, for example to try out new functionality or test compatibility of extensions in a Cloud environment. This period typically starts a month before the release of the new major version, every March and September. It is not possible to update existing environments to the preview version, and any Sandbox environments created on the preview version will automatically be deleted a month after general availability of the major version, every May and November. Learn more about [preparing for major updates with preview environments](preview-environments.md).
+
+### Update period
+The update period starts when a new major version is generally available, typically the first workday of every April and October. From general availability new environments are created on the new major version. The new major version is made available as update to existing environments around a week after general availability; the exact timing may differ depending on environment localization and type. When a new major version is made available as update on your environment Microsoft schedules the update to take place 7 days or more later, depending on environment localization and type.
+
+The update period lasts for five calendar months, ending every September for update periods that start in April and ending every March for update periods that start in October. Administrators can reschedule the update to any date within the update period from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. Learn more about [rescheduling updates](tenant-admin-center-update-management.md).
+
+Scheduled update attempts that do not succeed are automatically rescheduled for seven days later, and can be rescheduled by administrators to any other date within the update period. For more information, see the [failed updates and rescheduling](#failed-updates-and-rescheduling) section.
+
+[Notification recipients](tenant-admin-center-notifications.md) receive an email notification and environments that have [enabled telemetry](telemetry-enable-application-insights.md) receive a signal with the [LC0100 tag](telemetry-environment-lifecycle-trace.md#environment-update-available-for-scheduling) when a new version has been made available as update on the environment.
+
+### Grace period
+The grace period starts when the update period ends and lasts for one month, every September for the update period that starts in April and every March for the update period that starts in October. During the grace period it is not possible to reschedule an update to a later date; scheduled environment updates that do not succeed are automatically rescheduled by Microsoft for a new attempt seven days later. Administrators can only reschedule this new attempt to an earlier date. To ensure action is taken during the grace period to ensure the environment update succeeds, Microsoft alerts administrators in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and may send in-product notifications to end-users about the upcoming out of support period. For more information, see [when apps or PTEs can't be updated by Microsoft](../developer/app-maintain.md#when-apps-or-ptes-cant-be-updated-by-microsoft).
+
+### Out of support period
+The out of support period starts when the grace period ends. During this period any extensions that are causing the update to the next major version to fail, for example because of compatibility issues, may be uninstalled from the environment automatically in order for the update to succeed. Data belonging to extensions that are uninstalled automatically during this period is not deleted from the environment and can be recovered by installing a version of the extension that is compatible after the update succeeds. For more information, see [when apps or PTEs can't be updated by Microsoft](../developer/app-maintain.md#when-apps-or-ptes-cant-be-updated-by-microsoft).
 
 ## Timelines for major updates
 
