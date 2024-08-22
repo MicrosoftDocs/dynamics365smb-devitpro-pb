@@ -22,85 +22,55 @@ You are in control and manage how your organization receives these updates. Micr
 
 Each new update is designed and developed by the Dynamics 365 team. Any new update is first validated by the feature team, then validated in combination with the full product. During this time, extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility.  
 
-## Major update cycle
+## Major updates
 There are two major update cycles per year, with major releases every April and October. Major updates introduce new features, enhancements, and platform improvements. For each major update cycle the following periods apply.
 
 ### Preview period
-The preview period allows for testing of the new functionality before the version is made available as update to your environment. Administrators can create a Sandbox environment from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] on the new version, for example to try out new functionality or test compatibility of extensions in a Cloud environment. This period typically starts a month before the release of the new major version, every March and September. It is not possible to update existing environments to the preview version, and any Sandbox environments created on the preview version will automatically be deleted a month after general availability of the major version, every May and November. Learn more about [preparing for major updates with preview environments](preview-environments.md).
+The preview period allows for testing of the new functionality before the version is made available as update to your environment. Administrators can create a Sandbox environment from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] on the new version, for example to try out new functionality or test compatibility of extensions in a Cloud environment. This period typically starts a month before the release of the new major version, i.e. every March and September. It is not possible to update existing environments to the preview version, and any Sandbox environments created on the preview version will automatically be deleted a month after general availability of the major version, every May and November. Learn more about [preparing for major updates with preview environments](preview-environments.md).
 
 ### Update period
-The update period starts when a new major version is generally available, typically the first workday of every April and October. From general availability new environments are created on the new major version. The new major version is made available as update to existing environments around a week after general availability; the exact timing may differ depending on environment localization and type. When a new major version is made available as update on your environment Microsoft schedules the update to take place 7 days or more later, depending on environment localization and type.
+The update period starts when a new major version is generally available, typically the first workday of every April and October. From general availability new environments are created on the new major version. The new major version is made available as update to existing environments around a week after general availability; the exact timing may differ per environment. When a new major version is made available as update on your environment Microsoft schedules the update to take place around a week later; the exact timing may differ per environment.
 
 The update period lasts for five calendar months, ending every September for update periods that start in April and ending every March for update periods that start in October. Administrators can reschedule the update to any date within the update period from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. Learn more about [rescheduling updates](tenant-admin-center-update-management.md).
 
 Scheduled update attempts that do not succeed are automatically rescheduled for seven days later, and can be rescheduled by administrators to any other date within the update period. For more information, see the [failed updates and rescheduling](#failed-updates-and-rescheduling) section.
+
+> [!IMPORTANT]
+> For 2024 release wave 2, the 5-month update period is in [public preview](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md) and only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.ms).
+>
+> Partner-localized environments have a 60-day update period for the 25.0 update which is expected to end in the first half of December 2024.
 
 [Notification recipients](tenant-admin-center-notifications.md) receive an email notification and environments that have [enabled telemetry](telemetry-enable-application-insights.md) receive a signal with the [LC0100 tag](telemetry-environment-lifecycle-trace.md#environment-update-available-for-scheduling) when a new version has been made available as update on the environment.
 
 ### Grace period
 The grace period starts when the update period ends and lasts for one month, every September for the update period that starts in April and every March for the update period that starts in October. During the grace period it is not possible to reschedule an update to a later date; scheduled environment updates that do not succeed are automatically rescheduled by Microsoft for a new attempt seven days later. Administrators can only reschedule this new attempt to an earlier date. To ensure action is taken during the grace period to ensure the environment update succeeds, Microsoft alerts administrators in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and may send in-product notifications to end-users about the upcoming out of support period. For more information, see [when apps or PTEs can't be updated by Microsoft](../developer/app-maintain.md#when-apps-or-ptes-cant-be-updated-by-microsoft).
 
+> [!IMPORTANT]
+> For 2024 release wave 2, the 1-month grace period is in [public preview](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md) and only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.ms).
+>
+> Partner-localized environments have a 3-month grace period that is expected to end in the first half of March 2025.
+
+> [!TIP]
+> We recommend that you keep any apps and per-tenant extensions ready to update at any given time, and that you actively test compatibility. Developers can get tips and guidance in the developer docs here: [Maintain AppSource Apps and Per-Tenant Extensions](../developer/app-maintain.md). Admins can install, update, and uninstall apps in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] as described here: [Managing Apps](tenant-admin-center-manage-apps.md).
+
 ### Out of support period
 The out of support period starts when the grace period ends. During this period any extensions that are causing the update to the next major version to fail, for example because of compatibility issues, may be uninstalled from the environment automatically in order for the update to succeed. Data belonging to extensions that are uninstalled automatically during this period is not deleted from the environment and can be recovered by installing a version of the extension that is compatible after the update succeeds. For more information, see [when apps or PTEs can't be updated by Microsoft](../developer/app-maintain.md#when-apps-or-ptes-cant-be-updated-by-microsoft).
 
-## Timelines for major updates
+## Minor updates
+Minor updates are released every month in which there is no major update release, i.e. every month except April and October. These updates contain application changes that are critical improvements to the service, including regulatory updates. Similar to major updates, minor updates are made generally available in the beginning of each calendar month. From general availability new environments are created on the new minor version. The new minor version is made available as update to environments on the previous version around a week after general availability; the exact timing may differ per environment. When a new minor version is made available as update on your environment Microsoft schedules the update to take place around a week later; the exact timing may differ per environment.
 
-The following figure illustrates the key milestones and dates for rolling out a major update. The dates are loosely based on [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/) and [2021 release wave 2](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/). The same timeline applies to all other major updates, though dates will differ.
-
-![Generic timeline for how updates roll out with sample dates for the two release waves each year.](../media/update-rollout-timeline.png)
-
-> [!TIP]
-> Dates differ across countries and regions. Make sure that you have set up [notifications](tenant-admin-center-notifications.md) in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] so that you're notified when the next major update is available.  
-
-The following table describes the milestones with example dates for the two release waves in any given calendar year.
-
-|Milestone|Example date wave 1| Example date wave 2|Description|
-|---------|-------------------|--------------------|-----------|
-|Update is available|April 1 |October 1|The date when the new major version of Business Central becomes generally available.|
-|Update starts rolling out|April 8 |October 8|The default date when Microsoft starts upgrading your environments. Once the update is scheduled, you can change that date, within the allowed date range, to a date that suits you better.|
-|Last scheduled update date|June 1 |December 1|The last date you can choose to extend your upgrade date to. <!--</br>Starting with 2023 release wave 2, the update window is again 30 days after an update is available, which makes these two dates May 1 and November 1, respectively.-->|
+It is not possible to skip versions; environments that are not on the latest version when a new minor version becomes available will have to update to every intermediate version before they can update to the latest version. It may take up to an hour for the next version to become as available as update on your environment upon completing an update to a version that is not the latest generally available.
 
 > [!IMPORTANT]
-> For 2024 release wave 1, the update window remains 60 days. Based on feedback, we're currently evaluating longer-term processes for major updates and update windows. New policies might be updated at a later stage, which can include a return to a update window that again is 30 days after an update is available.
+> For 2024 release wave 2, minor updates are optional but not skippable as part of the public preview for [flexible update management](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md). This only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.ms).
 >
->We recommend that you keep any apps and per-tenant extensions ready for upgrade at any given time, and that you actively test compatibility. We encourage everyone to use the time needed to get apps, per-tenant extensions, and processes ready for a shorter update window.
-  
-
-> [!TIP]
-> There are many benefits to keeping code current and staying on top of updates. Microsoft and members of the community continue to provide more and more tools and best practices to help.
+> [Partner-localized environments](../compliance/apptest-countries-and-translations.ms) are not part of the public preview; for these environments minor updates are not optional and not skippable. As in previous release waves and similar to how major updates roll out, minor updates have a 28-day update period followed by a 3-month grace period for these environments.
 >
-> Developers can get tips and guidance in the developer docs here: [Maintain AppSource Apps and Per-Tenant Extensions](../developer/app-maintain.md).
->
-> Admins can install, update, and uninstall apps in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] as described here: [Managing Apps](tenant-admin-center-manage-apps.md).
+> Once the changes that are part of [flexible update management](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md) are generally available minor updates will be optional on all environments, and administrators will be able to skip versions by changing the target version for a scheduled update from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-## Timelines for minor updates
+## Release plans
 
-The monthly minor updates contain both application and platform changes that are critical improvements to the service, including regulatory updates.  
-
-A minor update will rollout across Azure regions over several days and weeks. When the update is available for a specific environment, admins can apply it manually from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. If the update hasn't been applied to an environment by the specified last update date, Microsoft will auto-apply the update. Microsoft takes into account the update window for the environment.  
-
-### Example release schedule
-
-The following figure illustrates the key milestones and dates for rolling out a minor update in any month.
-
-![Generic timeline for how minor updates roll out with sample dates for May.](../media/update-rollout-timeline-minor.png)
-
-The following table describes the milestones with example dates for a minor update in any given calendar year.
-
-| Milestone | Example date | Description |
-|--|--|--|
-| Update is available | May 07 | The date when the new minor version of Business Central is first available and admins can schedule the update. |
-| Update rolls out automatically | May 14 | The default date when Microsoft starts upgrading your environments, seven days after the first availability date. Once the update is scheduled, you can change that date, within the allowed date range, to a date that suits you better. |
-| Last scheduled update date | May 28 | The last date you can choose to extend your upgrade date to, 21 days after the update is available. |
-
-> [!TIP]
-> The minor updates tend to become available on the first Friday of any given month, except the months when a major update becomes available. Microsoft aims to update the last environments 2-3 weeks later.
-
-## Update availability
-
-The major updates are typically made available twice a year, in April and in October. Minor updates roll out every month. Get an overview of the release plans at [Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/). For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans, select a release wave under **Dynamics 365**, then look under **SMB** in the table of contents.
-
-On the release day for any update, all new sign-ups and all newly created environments (sandbox and production), are directed to the new version. For existing environments that run on the previous version, updates are made available gradually across the supported regions over the coming days and weeks as indicated earlier in this article. It's not possible to speed up this process for your environment through Microsoft Support.  
+Get an overview of the release plans at [Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/). For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans, select a release wave under **Dynamics 365**, then look under **SMB** in the table of contents.
 
 ## Schedule updates
 
@@ -200,21 +170,6 @@ Any environments that fail to update due to per-tenant extension compatibility i
 
 > [!IMPORTANT]
 > Changing date to an earlier date might be blocked up to 24 hours after the last failed attempt to update.
-
-### Overview of the timeline for preparing for the next major update
-
-The following figure illustrates the suggested steps for getting a preview of a major update with example dates for the two release waves in any given calendar year.  
-
-![Generic timeline for steps to get a preview of a major update with sample dates for the two release waves each year.](../media/update-rollout-timeline-preview.png)
-
-The following table provides more information for the suggested steps with example dates for the two release waves in any given calendar year.
-
-|Milestone|Example date wave 1|Example date wave 2|Description|
-|---------|-------------------|-------------------|-----------|
-|Previews are available|March 1 |September 1|You create a new sandbox environment based on the new preview for test purposes. For more information, see [Prepare for major updates with preview environments](preview-environments.md).|
-|A few days before you know that the update is announced|March 31 |September 30|You create a new sandbox environment based on your existing production environment (copy your production environment into a sandbox) and wait for it to be updated to the new version.|
-|Update available in your region|April 6 |October 5|The major update is made available. You're notified about it via e-mail. Go to the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and set the update date for your sandbox environment to the current date. The sandbox will be updated within the closest available update time window that you set for it. Now, you can test your existing extensions and your production data against the new version.</br></br>We recommend that you set the update date for your production environment a few days or weeks in the future, to help make sure that it doesn't get updated automatically before you had a chance to test the new version and your extensions in your sandbox environment.|
-|Preview sandboxes are deleted|May 1 |November 1|30 days after the new major update is announced, the preview sandboxes are deleted. There will be no option to keep these sandboxes or export data from them.|
 
 ## Service updates
 
