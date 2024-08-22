@@ -84,8 +84,8 @@ For AppSource apps, if no appropriate action or follow-up was taken by the publi
 
 If the publisher wants to have their app available again, they must mitigate all existing incompatibility issues and go through the full validation process again. Once a compatible version of the app has been published, the update to the app will automatically be installed once environments are updated.
 
-### Out of support period
-The out of support period starts when the grace period ends. During this period any extensions that are causing the update to the next major version to fail, for example because of compatibility issues, may be uninstalled from the environment automatically in order for the update to succeed. Data belonging to extensions that are uninstalled automatically during this period is not deleted from the environment and can be recovered by installing a version of the extension that is compatible after the update succeeds.
+### Sunset period
+The sunset period starts when the grace period ends. During this period any extensions that are causing the update to the next major version to fail, for example because of compatibility issues, may be uninstalled from the environment automatically in order for the update to succeed. Data belonging to extensions that are uninstalled automatically during this period is not deleted from the environment and can be recovered by installing a version of the extension that is compatible after the update succeeds.
 
 During this period, the customer and their reselling partner are fully responsible for finding a solution on how to proceed in this situation. Microsoft may also choose to remove all existing apps by this publisher from AppSource and block the publisher from publishing new apps for [!INCLUDE [prod_short](includes/prod_short.md)].  
 
