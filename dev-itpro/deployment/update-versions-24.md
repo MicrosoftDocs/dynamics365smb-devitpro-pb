@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 07/01/2024
+ms.date: 08/05/2024
 ms.custom: bap-template
 ---
 
@@ -20,7 +20,7 @@ The latest update listed in this article includes hotfixes and regulatory featur
 
 You should always install the latest update.
 
-## Available updates for Business Central 2023 release wave 2
+## Available updates for Business Central 2024 release wave 1
 
 The following table lists the updates that have been released for 2024 release wave 1 of Business Central (version 24). The updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
@@ -28,6 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5042530](https://support.microsoft.com/help/5042530)|Update 24.4 |August 2024|Application Build 24.4.22576</br>Platform Build 24.0.22562|
 |[5041133](https://support.microsoft.com/help/5041133)|Update 24.3 |July 2024|Application Build 24.3.21374</br>Platform Build 24.0.21458|
 |[5040044](https://support.microsoft.com/help/5040044)|Update 24.2 |June 2024|Application Build 24.2.20424</br>Platform Build 24.0.20409|
 |[5038531](https://support.microsoft.com/help/5038531)|Update 24.1 |May 2024|Application Build 24.1.19498</br>Platform Build 24.0.19487|

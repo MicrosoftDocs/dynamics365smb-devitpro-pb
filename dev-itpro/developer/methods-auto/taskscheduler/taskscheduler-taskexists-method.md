@@ -39,7 +39,7 @@ The unique identifier of the task. The unique identifier is returned by the Crea
 Scheduled tasks are shown in the **Scheduled Tasks** page in the client. The `TaskScheduler.TaskExists` method looks up if the task exists on the page (the implementation is different for the on-premises version compared to the online version of [!INCLUDE[prod_short](../../includes/prod_short.md)]).  
 
 > [!NOTE]  
-> It's also possible to use `ScheduledTask.Get` on a record instance of type `ScheduledTask` to query for existance of a task. This method requires the user to have Read access to the `ScheduledTask` table, whereas the `TaskScheduler.TaskExists` method doesn't require the user to have access to the `ScheduledTask` table.
+> It's also possible to use `ScheduledTask.Get` on a record instance of type `ScheduledTask` to query for existence of a task. This method requires the user to have Read access to the `ScheduledTask` table, whereas the `TaskScheduler.TaskExists` method doesn't require the user to have access to the `ScheduledTask` table.
 
 For more information about the task scheduler, see [Using the Task Scheduler](../../devenv-task-scheduler.md). 
 
