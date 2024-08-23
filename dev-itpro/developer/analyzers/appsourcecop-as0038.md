@@ -17,6 +17,18 @@ Unsupported table key property change
 Modifying table key properties can lead to destructive changes that will break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This error occurs when a table key property is modified in a way that isn't supported. Modifying table key properties can lead to destructive changes, which can break the upgrade process for existing installations and dependent extensions.
+
+## How to fix this diagnostic?
+
+To resolve this error, you need to avoid making unsupported changes to table key properties. Here are the steps:
+
+1. Locate the table key property in your code that is causing the error.
+2. Change the property back to its original value or to a supported value.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

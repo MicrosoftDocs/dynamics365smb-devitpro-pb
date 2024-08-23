@@ -20,7 +20,7 @@ Modifying table properties can lead to destructive changes that will break the u
 
 ## Remarks
 
-This error occurs when a table property is modified in a way that is not supported. Modifying certain table properties can lead to destructive changes, which can break the upgrade process for existing installations and dependent extensions.
+This error occurs when a table property is modified in a way that is not supported. Modifying table properties can lead to destructive changes, which can break the upgrade process for existing installations and dependent extensions.
 
 ## How to fix this diagnostic?
 
