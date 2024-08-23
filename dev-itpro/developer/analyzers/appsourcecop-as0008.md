@@ -17,6 +17,13 @@ Defining reserved namespaces is not allowed.
 The namespace must be different from System and Microsoft.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+Using reserved namespaces like `System` or `Microsoft` can lead to conflicts and unexpected behavior, as these namespaces are intended for the platform's internal libraries and functionality. By enforcing this rule, AppSourceCop ensures that your code remains isolated and doesn't interfere with the core system libraries, promoting better maintainability and compatibility.
+
+To resolve ths error, identify the namespace and change it to a unique name that doesn't conflict with reserved namespaces.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
