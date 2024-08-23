@@ -20,7 +20,7 @@ Actions that have been published must not be deleted, because it will break depe
 
 ## Remarks
 
-Removing an action which has been published is not allowed because it will break dependent extensions which are referencing or modifying it.
+Removing an action, which has been published isn't allowed because it will break dependent extensions which are referencing or modifying it.
 
 > [!NOTE]  
 > Renaming an action will also trigger this error. AppSourceCop will consider the renamed action as a new action, unrelated to the one defined in the previous version.

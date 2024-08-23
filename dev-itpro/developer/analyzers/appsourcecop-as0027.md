@@ -22,6 +22,8 @@ Modifying the array size of a parameter in events and external procedures is not
 
 This error occurs when the array size of a parameter in events or external procedures is modified. In AL, the array size of parameters in events and external procedures must remain constant to ensure compatibility and stability.
 
+## How to fix this diagnostic?
+
 To resolve this error, you must ensure that the array size of parameters in events and external procedures isn't modified. Here are the steps:
 
 1. Locate the event or external procedure in your code where the array size of a parameter is being modified.

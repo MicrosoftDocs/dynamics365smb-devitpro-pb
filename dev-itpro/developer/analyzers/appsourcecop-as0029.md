@@ -20,7 +20,8 @@ Pages and PageExtensions that have been published must not be deleted.
 
 ## Remarks
 
-It is not allowed to remove pages which have been published. This will break dependent extensions which:
+It's not allowed to remove pages which have been published. This will break dependent extensions which:
+
 - are referencing this page from code,
 - are extending the page using a page extension,
 - are customizing the page using page customizations.

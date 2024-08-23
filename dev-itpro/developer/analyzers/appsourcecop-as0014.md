@@ -22,6 +22,8 @@ The project manifest must contain the allocated identifier range.
 
 This error occurs when the project manifest (app.json) doesn't include the allocated identifier range for your extension. The identifier range is a set of unique IDs assigned to your extension to avoid conflicts with other extensions.
 
+## How to fix this diagnostic?
+
 To resolve this error, you must add the allocated identifier range to your project manifest (app.json). Here are the steps:
 
 1. Obtain the identifier range from Microsoft, if you don't already have one.
