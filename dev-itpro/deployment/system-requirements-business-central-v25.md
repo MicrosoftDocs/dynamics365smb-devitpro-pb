@@ -43,7 +43,7 @@ For the latest information, see the app in the App Store or Google Play.
 
 ## <a name="desktop"></a> Business Central desktop app
 
-The following table shows the minimum system requirements for the [Business Central Desktop App](/dynamics365/business-central/install-desktop-app).
+The following table shows the minimum system requirements for the Business Central desktop app. Learn more about the desktop app in [Get the Business Central desktop app](/dynamics365/business-central/install-desktop-app).
 
 |Specification|Requirement|
 |------|-----|  
@@ -58,7 +58,7 @@ The following table shows the minimum system requirements for the [Business Cent
 |------|-----|  
 |Excel|<ul><li>Sending data to Excel requires Excel 2021, Excel on the web, or Excel mobile app for iOS or Android&trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2021 or Excel on the web.</li></ul>|  
 |Word|<ul><li>Microsoft Office 2021, Word for the web, or Word mobile app for iOS or Android&trade;.</li></ul>|
-|Outlook|Please see [Business Inbox in Microsoft Outlook](system-requirements-business-central-v18.md#BusInboxOutlook).|  
+|Outlook|Learn more in [Business Inbox in Microsoft Outlook](#business-inbox-in-microsoft-outlook).|  
 |Additional software|<ul><li>A third-party telephony or VoIP app such as Microsoft Teams is required for placing calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
 
 ## AL development
@@ -67,7 +67,7 @@ The following table shows the minimum system requirements for customizing or ext
 
 |Specification|Requirement|
 |-----|-----|
-|Supported operating systems|<ul><li>Windows Server 2022</li><li>Windows Server 2019</li><li>Windows 11</li><li>Windows 10</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
+|Supported operating systems|<ul><li>Windows Server 2022</li><li>Windows Server 2019</li><li>Windows 11</li><li>Windows 10</li></ul>Learn more about the supported versions and their lifecycles at [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL Language extension for Microsoft Dynamics 365 Business Central](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU: four cores minimum</li><li>Memory:<br />16 GB for development only. <br />16 GB for developing and locally deploying small extensions (<1000 objects).<br />32-64 GB for developing and locally deploying large extensions (>1000 objects).</li></ul>|
 |Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2021 or later</li></ul></li></ul>|  
@@ -84,7 +84,7 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 |-----|-----|  
 |Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education \(64-bit edition, version 22H2 and later.\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition, versions 22H2 and 21H2\)</li><li>Windows Server 2022 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).<!-- Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2. In version 25, Windows 10 will only support Version 22H2 -->|
 |Hardware resources|<ul><li>Hard disk space: 2 GB</li><li>Memory:<br /> 8 GB for running application only<br />16 GB for publishing small extensions (<1000 objects) to server<br />32-64 GB for publishing large extensions (>1000 objects) to server</li>**Note** The memory for publishing extensions is recommended to ensure extensions publish in a reasonable amount of time. Publishing extensions with less memory is possible but it takes longer.</ul>|  
-|[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Foundation.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](#microsoft-dataverse-and-dynamics-365-for-sales-integration).|  
+|[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Foundation.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, refer to [Microsoft Dynamics 365 for Sales Integration Requirements](#microsoft-dataverse-and-dynamics-365-for-sales-integration).|  
 |Additional software|<ul><li>Microsoft .NET 8.0</li><li>Microsoft .NET Framework 4.8 (required for report rendering and [!INCLUDE[adminshell](../developer/includes/adminshell.md)])</li></ul>.|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>Microsoft .NET Windows Server Hosting 6.0.15</li><li>Microsoft .NET 8.0</li><li>Microsoft .NET Framework 4.8</li><li>Windows Identity Foundation*.</li><li>Report Builder for SQL Server 2019.<br><br> If Report Builder for SQL Server 2016 is already installed, it will be updated to Report Builder for SQL Server 2019.</li></ul></li></ul>|  
 
@@ -94,8 +94,8 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 
 |Specification|Requirement|  
 |----|----|  
-|Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education  \(64-bit edition, version 22H2 and later.\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition, versions 22H2 and 21H2\)</li><li>Windows Server 2022 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).<!--Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2. In version 25, Windows 10 will only support Version 22H2 -->|    
-|Web server|<ul><li>Internet Information Services 10.|   
+|Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education  \(64-bit edition, version 22H2 and later.\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition, versions 22H2 and 21H2\)</li><li>Windows Server 2022 (Datacenter, Standard)</li></ul>Learn more about the supported versions and their lifecycles at [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).<!--Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2. In version 25, Windows 10 will only support Version 22H2 -->|
+|Web server|<ul><li>Internet Information Services 10.|
 |Additional software|<ul><li>Microsoft .NET 8.0</li></ul>|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Windows Server Hosting 6.0.15.</li><li>Microsoft .NET 8.0</li><li>Internet Information Services 10 is installed with the required features enabled.</li></ul></li><li>Learn more about configuring IIS in [Configuring IIS](configure-iis.md)</li></ul>|  
 
