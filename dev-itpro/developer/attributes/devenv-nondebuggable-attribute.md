@@ -1,22 +1,23 @@
 ---
-title: "NonDebuggable Attribute"
+title: "NonDebuggable attribute"
 description: "Specifies that the annotated symbol will not be available to the debugger."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# NonDebuggable Attribute
+# NonDebuggable attribute
 > **Version**: _Available or changed with runtime version 2.0._
 
 Specifies that the annotated symbol will not be available to the debugger. E.g. methods can't be stepped through and variables can't be inspected.
 
 
-## Applies To
+## Applies to
 
 - Variable
 - Method
