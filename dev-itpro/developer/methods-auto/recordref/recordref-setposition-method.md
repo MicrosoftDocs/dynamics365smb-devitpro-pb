@@ -2,9 +2,10 @@
 title: "RecordRef.SetPosition(Text) Method"
 description: "Sets the fields in a primary key on a record to the values specified in the String parameter."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

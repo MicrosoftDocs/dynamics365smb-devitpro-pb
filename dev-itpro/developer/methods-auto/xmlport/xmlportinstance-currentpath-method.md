@@ -2,9 +2,10 @@
 title: "Xmlport.CurrentPath() Method"
 description: "Returns the CurrentPath for a given node, used when exporting an XmlPort."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

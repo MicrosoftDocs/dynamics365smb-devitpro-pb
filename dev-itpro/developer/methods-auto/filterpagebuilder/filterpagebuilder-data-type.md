@@ -1,15 +1,16 @@
 ---
-title: "FilterPageBuilder Data Type"
+title: "FilterPageBuilder data type"
 description: "Stores filter configurations for a filter page."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder Data Type
+# FilterPageBuilder Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Stores filter configurations for a filter page. A filter page is a dynamic page type that contains one or more filter controls that enables users to set filters on fields of the underlying tables.

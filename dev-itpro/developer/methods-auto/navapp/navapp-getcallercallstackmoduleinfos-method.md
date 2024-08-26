@@ -2,9 +2,10 @@
 title: "NavApp.GetCallerCallstackModuleInfos() Method"
 description: "Gets information about extensions on the callstack that contain the method, which called the currently running method."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

@@ -1,15 +1,16 @@
 ---
-title: "Decimal Data Type"
+title: "Decimal data type"
 description: "Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Decimal Data Type
+# Decimal Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99.

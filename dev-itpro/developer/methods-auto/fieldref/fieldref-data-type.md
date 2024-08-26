@@ -1,15 +1,16 @@
 ---
-title: "FieldRef Data Type"
+title: "FieldRef data type"
 description: "Identifies a field in a table and gives you access to this field."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldRef Data Type
+# FieldRef Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Identifies a field in a table and gives you access to this field.

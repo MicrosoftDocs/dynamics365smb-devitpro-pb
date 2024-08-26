@@ -2,9 +2,10 @@
 title: "Text.TrimEnd([Text]) Method"
 description: "Removes all trailing occurrences of a set of characters specified in an array from the current Text object."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

@@ -1,15 +1,16 @@
 ---
-title: "Page Data Type"
+title: "Page data type"
 description: "Contains a number of simpler elements called controls."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page Data Type
+# Page Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Contains a number of simpler elements called controls. Controls are used to display information to the user or receive information from the user.

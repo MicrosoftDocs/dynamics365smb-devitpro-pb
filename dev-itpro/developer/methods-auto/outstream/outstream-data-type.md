@@ -1,15 +1,16 @@
 ---
-title: "OutStream Data Type"
+title: "OutStream data type"
 description: "Is a generic stream object that you can use to write to files and BLOBs."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# OutStream Data Type
+# OutStream Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is a generic stream object that you can use to write to files and BLOBs.

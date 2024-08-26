@@ -1,15 +1,16 @@
 ---
-title: "TestPage Data Type"
+title: "TestPage data type"
 description: "Represents a variable type that can be used to test Page Application Objects."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestPage Data Type
+# TestPage Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents a variable type that can be used to test Page Application Objects.

@@ -1,15 +1,16 @@
 ---
-title: "TestRequestPage Data Type"
+title: "TestRequestPage data type"
 description: "Stores test request pages."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestRequestPage Data Type
+# TestRequestPage Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Stores test request pages. A test request page part is a logical representation of a request page on a report. A test request page does not display a user interface (UI). The subtype of a test request page is the report whose request page you want to test.

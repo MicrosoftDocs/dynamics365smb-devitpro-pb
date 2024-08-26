@@ -2,9 +2,10 @@
 title: "JsonArray.Insert(Integer, Byte) Method"
 description: "Inserts the value at the given index in the array while shifting all the values to the right by one position."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

@@ -2,9 +2,10 @@
 title: "DataTransfer.AddFieldValue(Integer, Integer) Method"
 description: "Specifies a source and destination field, where the values from the source field are to be copied to the destination field."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

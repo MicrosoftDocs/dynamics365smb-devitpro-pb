@@ -2,9 +2,10 @@
 title: "SessionSettings.RequestSessionUpdate(Boolean) Method"
 description: "Passes a SessionSettings object to the client to request a new session that uses the user personalization properties that are set in the object."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

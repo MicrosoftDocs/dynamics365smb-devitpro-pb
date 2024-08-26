@@ -1,15 +1,16 @@
 ---
-title: "Duration Data Type"
+title: "Duration data type"
 description: "Represents the difference between two DateTimes."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Duration Data Type
+# Duration Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents the difference between two DateTimes. This value can be negative. It is stored as a 64-bit integer. The integer value is the number of milliseconds during the duration.

@@ -1,15 +1,16 @@
 ---
-title: "List Data Type"
+title: "List data type"
 description: "Represents a strongly typed list of ordered objects that can be accessed by index."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# List Data Type
+# List Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents a strongly typed list of ordered objects that can be accessed by index. Contrary to the Array data type, a List is unbounded, such that its dimension does not need to be specified upon declaration.

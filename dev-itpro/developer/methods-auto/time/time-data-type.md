@@ -1,15 +1,16 @@
 ---
-title: "Time Data Type"
+title: "Time data type"
 description: "Denotes a time ranging from 00:00:00.000 to 23:59:59.999."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Time Data Type
+# Time Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes a time ranging from 00:00:00.000 to 23:59:59.999. An undefined or blank time is specified by 0T.
