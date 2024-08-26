@@ -1,10 +1,11 @@
 ---
-title: "UICop Analyzer"
+title: "UICop analyzer"
 description: "UICop is an analyzer that enforces rules that must be respected by extensions meant to customize the Web Client."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -14,7 +15,7 @@ UICop is an analyzer that enforces rules that must be respected by extensions me
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[AW0001](uicop-aw0001.md)|The Web client does not support displaying the Request page of XMLPorts.|WebClient|Warning|
 |[AW0002](uicop-aw0002.md)|The Web client does not support displaying both Actions and Fields in Cue Groups. Only Fields will be displayed.|WebClient|Warning|

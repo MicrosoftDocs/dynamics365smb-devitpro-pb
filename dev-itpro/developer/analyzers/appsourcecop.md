@@ -1,10 +1,11 @@
 ---
-title: "AppSourceCop Analyzer"
+title: "AppSourceCop analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -14,7 +15,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[AS0001](appsourcecop-as0001.md)|Tables and table extensions that have been published must not be deleted.|Upgrade|Error|
 |[AS0002](appsourcecop-as0002.md)|Fields must not be deleted.|Upgrade|Error|

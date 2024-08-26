@@ -1,10 +1,11 @@
 ---
-title: "PerTenantExtensionCop Analyzer"
+title: "PerTenantExtensionCop analyzer"
 description: "PerTenantExtensionCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -14,7 +15,7 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[PTE0001](pertenantextensioncop-pte0001.md)|Object ID must be in free range.|Extensibility|Error|
 |[PTE0002](pertenantextensioncop-pte0002.md)|Field ID must be in free range.|Extensibility|Error|

@@ -1,10 +1,11 @@
 ---
-title: "CodeCop Analyzer"
+title: "CodeCop analyzer"
 description: "CodeCop is an analyzer that enforces the official AL Coding Guidelines."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -14,7 +15,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[AA0001](codecop-aa0001.md)|There must be exactly one space character on each side of a binary operator such as := + - AND OR =.|Readability|Warning|
 |[AA0002](codecop-aa0002.md)|There must be no space character.|Readability|Warning|

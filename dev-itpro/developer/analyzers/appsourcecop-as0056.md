@@ -2,9 +2,10 @@
 title: "AppSourceCop Warning AS0056"
 description: "The country/region codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
