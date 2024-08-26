@@ -1,16 +1,17 @@
 ---
-title: "OnAssistEdit (Page Field Extension) Trigger"
+title: "OnAssistEdit (Page Field Extension) trigger"
 description: "Runs in place of the AssistEdit property features that are provided in the application."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAssistEdit (Page Field Extension) Trigger
+# OnAssistEdit (Page Field Extension) trigger
 > **Version**: _Available or changed with runtime version 3.0._
 
 Runs in place of the AssistEdit property features that are provided in the application.

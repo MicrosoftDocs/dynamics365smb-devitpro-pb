@@ -1,16 +1,17 @@
 ---
-title: "OnInsertRecord (Request Page Extension) Trigger"
+title: "OnInsertRecord (Request Page Extension) trigger"
 description: "Runs before a new record is inserted into the table."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnInsertRecord (Request Page Extension) Trigger
+# OnInsertRecord (Request Page Extension) trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
 Runs before a new record is inserted into the table.

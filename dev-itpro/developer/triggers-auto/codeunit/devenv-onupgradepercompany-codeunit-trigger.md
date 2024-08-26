@@ -1,16 +1,17 @@
 ---
-title: "OnUpgradePerCompany (Codeunit) Trigger"
+title: "OnUpgradePerCompany (Codeunit) trigger"
 description: "Runs during the upgrade of an extension."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnUpgradePerCompany (Codeunit) Trigger
+# OnUpgradePerCompany (Codeunit) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs during the upgrade of an extension.

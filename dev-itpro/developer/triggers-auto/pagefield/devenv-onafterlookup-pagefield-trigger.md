@@ -1,16 +1,17 @@
 ---
-title: "OnAfterLookup (Page Field) Trigger"
+title: "OnAfterLookup (Page Field) trigger"
 description: "Runs after a lookup is activated passing the selected record as a RecordRef."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterLookup (Page Field) Trigger
+# OnAfterLookup (Page Field) trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
 Runs after a lookup is activated passing the selected record as a RecordRef.

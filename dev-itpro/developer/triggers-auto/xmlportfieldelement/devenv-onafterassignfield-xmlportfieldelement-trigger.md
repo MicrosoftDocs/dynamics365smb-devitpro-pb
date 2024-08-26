@@ -1,16 +1,17 @@
 ---
-title: "OnAfterAssignField (Xml Port Field Element) Trigger"
+title: "OnAfterAssignField (Xml Port Field Element) trigger"
 description: "Runs after a field has been assigned a value and before it is validated and imported."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterAssignField (Xml Port Field Element) Trigger
+# OnAfterAssignField (Xml Port Field Element) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs after a field has been assigned a value and before it is validated and imported.

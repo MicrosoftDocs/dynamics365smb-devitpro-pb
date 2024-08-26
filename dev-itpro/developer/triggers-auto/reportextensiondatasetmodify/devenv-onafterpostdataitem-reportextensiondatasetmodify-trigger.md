@@ -1,16 +1,17 @@
 ---
-title: "OnAfterPostDataItem (Report Extension Data Set Modify) Trigger"
+title: "OnAfterPostDataItem (Report Extension Data Set Modify) trigger"
 description: "Runs after the OnPostDataItem trigger of the base data item."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterPostDataItem (Report Extension Data Set Modify) Trigger
+# OnAfterPostDataItem (Report Extension Data Set Modify) trigger
 > **Version**: _Available or changed with runtime version 7.1._
 
 Runs after the OnPostDataItem trigger of the base data item.

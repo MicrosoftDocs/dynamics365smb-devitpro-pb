@@ -1,16 +1,17 @@
 ---
-title: "OnModifyRecordEvent (Page) Trigger Event"
+title: "OnModifyRecordEvent (Page) trigger event"
 description: "Executed after the OnModifyRecord trigger, which is called before a record is modified in a table."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnModifyRecordEvent (Page) Trigger Event
+# OnModifyRecordEvent (Page) trigger event
 > **Version**: _Available or changed with runtime version 1.0._
 
 Executed after the OnModifyRecord trigger, which is called before a record is modified in a table.

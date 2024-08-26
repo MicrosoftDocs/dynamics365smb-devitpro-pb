@@ -1,16 +1,17 @@
 ---
-title: "OnBeforePassVariable (Xml Port Text Element) Trigger"
+title: "OnBeforePassVariable (Xml Port Text Element) trigger"
 description: "Runs after the source expression has been formatted into a text variable and before the text variable is passed to the XML document."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnBeforePassVariable (Xml Port Text Element) Trigger
+# OnBeforePassVariable (Xml Port Text Element) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs after the source expression has been formatted into a text variable and before the text variable is passed to the XML document.

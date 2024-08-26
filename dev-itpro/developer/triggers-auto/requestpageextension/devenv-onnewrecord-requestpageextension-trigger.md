@@ -1,16 +1,17 @@
 ---
-title: "OnNewRecord (Request Page Extension) Trigger"
+title: "OnNewRecord (Request Page Extension) trigger"
 description: "Runs after a new record is initialized, but before it is inserted as a record in the table."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnNewRecord (Request Page Extension) Trigger
+# OnNewRecord (Request Page Extension) trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
 Runs after a new record is initialized, but before it is inserted as a record in the table.
