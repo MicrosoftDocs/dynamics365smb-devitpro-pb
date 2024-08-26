@@ -70,7 +70,7 @@ While in the **Shopify partner admin**, consider creating a development store fo
 
 **codeunit 30199 "Shpfy Authentication Mgt."**, path: Apps/W1/Shopify/app/src/Integration/Codeunits/ShpfyAuthenticationMgt.Codeunit.al
 
-Modify GetClientId and GetClientSecret to return Shopify client credentials because your app doesn't have access to Azure Key Vault. Use the Client ID and Client secret from your [registered Shoify app](#registering-shopify-app).
+Modify GetClientId and GetClientSecret to return Shopify client credentials because your app doesn't have access to Azure Key Vault. Use the Client ID and Client secret from your [registered Shopify app](#registering-the-shopify-app).
 
 ```al
     [Scope('OnPrem')]
