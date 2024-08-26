@@ -42,7 +42,7 @@ The destination table field.
 
 Use this method to create a join condition between tables when copying fields from one table to the other. For more information, see [Transferring Data Bewteen Tables](../../../developer/devenv-data-transfer.md).
 
-This method isn't needed when copying withing the same table.
+This method isn't needed when copying within the same table.
 
 ## Example
 
