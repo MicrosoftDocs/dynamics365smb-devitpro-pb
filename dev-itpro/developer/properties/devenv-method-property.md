@@ -1,10 +1,11 @@
 ---
-title: "Method Property"
+title: "Method property"
 description: "Sets either a date method for retrieving the year, month, or day from a date field or a totals method for performing calculations on field values."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +18,7 @@ Sets either a date method for retrieving the year, month, or day from a date fie
 ## Applies to
 -   Query Column
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|

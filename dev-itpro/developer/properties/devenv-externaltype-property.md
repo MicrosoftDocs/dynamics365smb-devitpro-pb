@@ -1,10 +1,11 @@
 ---
-title: "ExternalType Property"
+title: "ExternalType property"
 description: "Specifies the type of the original table field in the external database."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +18,7 @@ Specifies the type of the original table field in the external database.
 Specify this property if the original type is different from the type that you specify in the Type property. This means that you can use a different type for the table.
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

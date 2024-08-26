@@ -1,10 +1,11 @@
 ---
-title: "ObsoleteState Property"
+title: "ObsoleteState property"
 description: "Marks whether the object will be deprecated."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,8 +20,8 @@ Marks whether the object will be deprecated.
 -   Page Custom Action
 -   Page File Upload Action
 -   Table
--   Table Field
--   Table Key
+-   Table field
+-   Table key
 -   Codeunit
 -   Enum Type
 -   Enum Value
@@ -51,7 +52,7 @@ Marks whether the object will be deprecated.
 -   Permission Set
 -   Field Group
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|

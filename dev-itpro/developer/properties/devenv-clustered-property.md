@@ -1,10 +1,11 @@
 ---
-title: "Clustered Property"
+title: "Clustered property"
 description: "Sets a value that indicates whether the key also defines the clustered index in the database."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +18,7 @@ Sets a value that indicates whether the key also defines the clustered index in 
 By default the primary key is configured as the clustered key.
 
 ## Applies to
--   Table Key
+-   Table key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

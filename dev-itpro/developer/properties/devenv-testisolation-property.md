@@ -1,10 +1,11 @@
 ---
-title: "TestIsolation Property"
+title: "TestIsolation property"
 description: "Specifies which changes to the database to roll back after the tests in the test runner codeunit execute."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +18,7 @@ Specifies which changes to the database to roll back after the tests in the test
 ## Applies to
 -   Codeunit
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|

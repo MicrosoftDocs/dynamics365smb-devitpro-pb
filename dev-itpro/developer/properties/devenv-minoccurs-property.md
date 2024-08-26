@@ -1,10 +1,11 @@
 ---
-title: "MinOccurs Property"
+title: "MinOccurs property"
 description: "Sets the minimum number of times that an element can occur."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,7 +20,7 @@ Sets the minimum number of times that an element can occur.
 -   Xml Port Field Element
 -   Xml Port Table Element
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|

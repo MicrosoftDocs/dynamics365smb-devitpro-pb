@@ -1,10 +1,11 @@
 ---
-title: "OptionOrdinalValues Property"
+title: "OptionOrdinalValues property"
 description: "Specifies the list of option values."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -15,7 +16,7 @@ author: SusanneWindfeldPedersen
 Specifies the list of option values. Can be set if the property ExternalType is set to Picklist.
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

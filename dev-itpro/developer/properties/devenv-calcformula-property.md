@@ -1,10 +1,11 @@
 ---
-title: "CalcFormula Property"
+title: "CalcFormula property"
 description: "Sets the Calculation formula for a FlowField."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -32,7 +33,7 @@ FIELD(FILTER(<SourceFieldName>)) | FIELD(UPPERLIMIT(FILTER(<SourceFieldName>)))
 
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

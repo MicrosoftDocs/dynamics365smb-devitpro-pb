@@ -1,10 +1,11 @@
 ---
-title: "CustomActionType Property"
+title: "CustomActionType property"
 description: "Sets the type of the custom action."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +18,7 @@ Sets the type of the custom action.
 ## Applies to
 -   Page Custom Action
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|

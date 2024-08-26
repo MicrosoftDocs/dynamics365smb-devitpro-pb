@@ -1,10 +1,11 @@
 ---
-title: "ShowFilter Property"
+title: "ShowFilter property"
 description: "Sets whether the filter pane is shown on a page by default."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

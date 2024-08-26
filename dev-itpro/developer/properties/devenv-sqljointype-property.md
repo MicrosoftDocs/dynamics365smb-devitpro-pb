@@ -1,10 +1,11 @@
 ---
-title: "SqlJoinType Property"
+title: "SqlJoinType property"
 description: "Sets the data item link type between data items in a query to determine the records that are included in the resulting data set."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +18,7 @@ Sets the data item link type between data items in a query to determine the reco
 ## Applies to
 -   Query Data Item
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|

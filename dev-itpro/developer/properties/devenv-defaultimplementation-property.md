@@ -1,10 +1,11 @@
 ---
-title: "DefaultImplementation Property"
+title: "DefaultImplementation property"
 description: "Specifies the default implementer for the enum value if there is no explicit implementer set for the value."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

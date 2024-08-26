@@ -1,10 +1,11 @@
 ---
-title: "SignDisplacement Property"
+title: "SignDisplacement property"
 description: "Sets a value to shift negative values to the right for display purposes only."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -15,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets a value to shift negative values to the right for display purposes only. You can shift negative values in increments of 1/100 of a millimeter.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

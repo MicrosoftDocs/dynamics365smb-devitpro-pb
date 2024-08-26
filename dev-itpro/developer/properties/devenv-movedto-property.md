@@ -1,10 +1,11 @@
 ---
-title: "MovedTo Property"
+title: "MovedTo property"
 description: "Specifies the destination extension Id when a table is moved to another extension."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,7 +17,7 @@ Specifies the destination extension Id when a table is moved to another extensio
 
 ## Applies to
 -   Table
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

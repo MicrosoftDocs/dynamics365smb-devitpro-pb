@@ -1,10 +1,11 @@
 ---
-title: "FieldValidate Property"
+title: "FieldValidate property"
 description: "Sets a value that specifies whether the values in the source field are validated by the OnValidate (Fields) trigger for the field."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -18,7 +19,7 @@ Sets a value that specifies whether the values in the source field are validated
 -   Xml Port Field Attribute
 -   Xml Port Field Element
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|

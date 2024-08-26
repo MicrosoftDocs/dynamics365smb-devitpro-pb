@@ -1,10 +1,11 @@
 ---
-title: "TextEncoding Property"
+title: "TextEncoding property"
 description: "Specifies the text encoding format to use when you use an XmlPort to export or import data as text."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +18,7 @@ Specifies the text encoding format to use when you use an XmlPort to export or i
 ## Applies to
 -   Xml Port
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|

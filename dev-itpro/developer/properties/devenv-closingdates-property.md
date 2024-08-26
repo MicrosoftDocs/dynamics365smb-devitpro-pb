@@ -1,10 +1,11 @@
 ---
-title: "ClosingDates Property"
+title: "ClosingDates property"
 description: "Sets a value that determines whether users can enter a closing date in this field."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -15,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets a value that determines whether users can enter a closing date in this field. The default value is False.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
