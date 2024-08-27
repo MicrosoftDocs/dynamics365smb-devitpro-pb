@@ -64,7 +64,7 @@ It is not possible to skip versions; environments that are not on the latest ver
 > [!IMPORTANT]
 > For 2024 release wave 2, minor updates are optional but not skippable as part of the public preview for [flexible update management](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md). This only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.ms).
 >
-> [Partner-localized environments](../compliance/apptest-countries-and-translations.ms) are not part of the public preview; for these environments minor updates are not optional and not skippable. As in previous release waves and similar to how major updates roll out, minor updates have a 28-day update period followed by a 3-month grace period for these environments.
+> [Partner-localized environments](../compliance/apptest-countries-and-translations.ms) are not part of the public preview; for these environments minor updates are required and not skippable. As in previous release waves and similar to how major updates roll out, minor updates have a 28-day update period followed by a 3-month grace period for these environments.
 >
 > Once the changes that are part of [flexible update management](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md) are generally available minor updates will be optional on all environments, and administrators will be able to skip versions by changing the target version for a scheduled update from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
