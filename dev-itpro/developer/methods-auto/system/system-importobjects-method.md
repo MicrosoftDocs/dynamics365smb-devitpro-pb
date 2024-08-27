@@ -36,7 +36,7 @@ The format in which the objects are represented in the file.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

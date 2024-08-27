@@ -25,6 +25,6 @@ The following methods are available on instances of the XmlWriteOptions data typ
 |[PreserveWhitespace([Boolean])](xmlwriteoptions-preservewhitespace-method.md)|Gets or sets a value that indicates whether insignificant white space should be preserved during serialization.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

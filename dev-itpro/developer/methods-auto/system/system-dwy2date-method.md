@@ -130,7 +130,7 @@ end;
   
  On January 1, 2016, the current week is the week that starts on December 28, 2015 and ends on January 3, 2016. This week has four days in 2015 so the year of the current week is 2015. The first day of the first week of 2015 is 12/29/14.  
 
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

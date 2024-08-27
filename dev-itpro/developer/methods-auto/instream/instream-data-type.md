@@ -38,6 +38,6 @@ The following methods are available on instances of the InStream data type.
 |[ResetPosition()](instream-resetposition-method.md)|Resets the stream position on an InStream object.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

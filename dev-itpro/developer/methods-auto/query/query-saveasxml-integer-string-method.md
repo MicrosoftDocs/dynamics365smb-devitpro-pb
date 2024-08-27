@@ -66,7 +66,7 @@ If the file cannot be saved, then the follow message appears:
 
  **Query not saved.**
 
-## See Also
+## Related information
 
 [Query Data Type](query-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

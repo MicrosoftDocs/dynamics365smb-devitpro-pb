@@ -34,7 +34,7 @@ The following methods are available on instances of the Notification data type.
 |[SetData(Text, Text)](notification-setdata-method.md)|Specifies a data property value for the notification. The data is specified as text in a key-value pair.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Notifications](../../devenv-notifications-developing.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

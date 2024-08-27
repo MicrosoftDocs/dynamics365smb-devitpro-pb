@@ -105,7 +105,7 @@ The message window displays the following:
 
 **Today is April 15.**  
 
-## See Also
+## Related information
 
 [Formatting Values, Dates, and Time](../../devenv-format-property.md)  
 [System Data Type](system-data-type.md)  

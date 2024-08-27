@@ -61,7 +61,7 @@ The message window displays the following:
 
 **x = -10.235, y = 10.235**  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -210,7 +210,7 @@ The message window displays the following:
 **> Windy West Solutions < is transformed to >WindyWestSolutions<**
 
 
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

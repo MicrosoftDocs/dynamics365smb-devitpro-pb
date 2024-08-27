@@ -121,7 +121,7 @@ The message window displays the following text:
  **The expression: CM+30D returns 06/30/96**  
 
  
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

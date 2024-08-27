@@ -34,7 +34,7 @@ The new destination OutStream of the XmlPort.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Xmlport Data Type](xmlport-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

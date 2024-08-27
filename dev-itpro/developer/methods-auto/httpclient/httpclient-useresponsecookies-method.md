@@ -54,7 +54,7 @@ end;
 ```
 
 
-## See Also
+## Related information
 [HttpClient Data Type](httpclient-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

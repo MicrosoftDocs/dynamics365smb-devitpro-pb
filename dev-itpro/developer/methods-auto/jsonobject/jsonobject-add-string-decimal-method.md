@@ -45,7 +45,7 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 ## Remarks
 The operation will fail if the object already contains a property with the given key.
 
-## See Also
+## Related information
 [JsonObject Data Type](jsonobject-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

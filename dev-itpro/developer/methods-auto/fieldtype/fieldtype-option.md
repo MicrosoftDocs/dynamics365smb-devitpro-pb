@@ -38,6 +38,6 @@ Represents the type of a table field.
 |MediaSet|A complex type that encapsulates media, such as images, in application database tables. The MediaSet data type can be used as a table field data type, but cannot be used as variable or parameter.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

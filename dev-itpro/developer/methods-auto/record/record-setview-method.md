@@ -43,7 +43,7 @@ If no table is selected, the SetView method fails.
 This method works the same as the [SetView Method \(RecordRef\)](../recordref/recordref-setview-method.md).           
 
 
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -37,7 +37,7 @@ The value or list of values to use to find the row. If this parameter is omitted
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [TestPart Data Type](testpart-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

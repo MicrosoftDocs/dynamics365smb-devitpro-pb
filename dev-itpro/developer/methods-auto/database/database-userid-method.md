@@ -43,7 +43,7 @@ The following is an example of the output of the previous code:
 
 **The system was started by cronus\simon.**
 
-## See Also
+## Related information
 
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

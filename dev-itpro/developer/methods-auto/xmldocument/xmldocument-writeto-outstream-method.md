@@ -87,7 +87,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 ```
 
 
-## See Also
+## Related information
 [XmlDocument Data Type](xmldocument-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

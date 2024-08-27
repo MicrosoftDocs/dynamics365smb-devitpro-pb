@@ -41,7 +41,7 @@ The unique identifier (GUID) of the media object.
 ## Example  
 For an example of using the Item method, see this [example](../../methods-auto/mediaset/mediaset-insert-method.md).
 
-## See Also
+## Related information
 [MediaSet Data Type](mediaset-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

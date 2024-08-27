@@ -123,7 +123,7 @@ The preceding code:
 
 
 
-## See Also
+## Related information
 [Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

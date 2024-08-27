@@ -50,6 +50,6 @@ The following methods are available on instances of the XmlProcessingInstruction
 |[WriteTo(XmlWriteOptions, var Text)](xmlprocessinginstruction-writeto-xmlwriteoptions-text-method.md)|Serializes and saves the current node to the given variable.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

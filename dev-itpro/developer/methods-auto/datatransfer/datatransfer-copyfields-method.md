@@ -39,7 +39,7 @@ Use this method to copy data in fields from one table to another table. For more
 
 [!INCLUDE[data-transfer-example-copy-fields](../../../developer/includes/data-transfer-example-copy-fields.md)]
 
-## See Also
+## Related information
 
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Transferring Data Between Tables](../../../developer/devenv-data-transfer.md)  

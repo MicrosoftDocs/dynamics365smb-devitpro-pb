@@ -37,7 +37,7 @@ Set this parameter to true if you want to save the current record. Set this para
 
 The `SaveRecord` default depends on whether SourceTable is specified or not. If SourceTable is not defined (== null), then the default value is `false`. If SourceTable is specified then the default value is `true`.
 
-## See Also
+## Related information
 
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -40,6 +40,6 @@ The following methods are available on instances of the HttpRequestMessage data 
 > [!NOTE]  
 > For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data. 
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

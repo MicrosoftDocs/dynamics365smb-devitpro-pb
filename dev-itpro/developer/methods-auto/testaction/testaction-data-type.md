@@ -27,6 +27,6 @@ The following methods are available on instances of the TestAction data type.
 |[Visible()](testaction-visible-method.md)|Sets whether to display the action on a test page.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

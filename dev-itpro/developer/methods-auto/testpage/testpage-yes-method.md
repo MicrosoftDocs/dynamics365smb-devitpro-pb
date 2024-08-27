@@ -51,7 +51,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [TestPage Data Type](testpage-data-type.md)  
 [Invoke Method](../testaction/testaction-invoke-method.md)  
 [Get Started with AL](../../devenv-get-started.md)  

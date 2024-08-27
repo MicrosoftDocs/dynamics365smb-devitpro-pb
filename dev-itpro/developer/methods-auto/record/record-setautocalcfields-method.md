@@ -42,7 +42,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 See [AL Database Methods and Performance on SQL Server - SetAutoCalcFields](../../../administration/optimize-sql-al-database-methods-and-performance-on-server.md#setautocalcfields).
 
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

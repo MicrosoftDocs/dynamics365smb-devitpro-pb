@@ -41,7 +41,7 @@ The record to find.
 ## Remarks
 The GoToRecord method loops over all records until it finds the identifies record.  For each record, the [OnAfterGetCurrRecord Trigger](../../triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) is executed. 
 
-## See Also
+## Related information
 [TestPage Data Type](testpage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -142,7 +142,7 @@ The second message window displays the following:
   
 **The amount after 20 years = $14889.04.**  
  
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

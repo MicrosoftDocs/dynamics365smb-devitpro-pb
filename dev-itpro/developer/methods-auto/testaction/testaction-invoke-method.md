@@ -47,7 +47,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [TestAction Data Type](testaction-data-type.md)  
 [No Method](../testpage/testpage-no-method.md)
 [Get Started with AL](../../devenv-get-started.md)  

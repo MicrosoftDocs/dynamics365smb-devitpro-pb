@@ -37,7 +37,7 @@ A string where each line represents a validation error that occured on the test 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [TestPart Data Type](testpart-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

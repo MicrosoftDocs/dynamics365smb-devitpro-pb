@@ -79,7 +79,7 @@ Upload('Upload file','C:\','Text file (*.txt)|*.txt','Test.txt',varTest);
 ```  
 
 
-## See Also
+## Related information
 
 [File Data Type](file-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

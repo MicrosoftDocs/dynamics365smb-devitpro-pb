@@ -72,7 +72,7 @@ The message window displays the following:
   
 **06/12/2018**
   
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

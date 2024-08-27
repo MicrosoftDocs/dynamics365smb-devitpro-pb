@@ -43,7 +43,7 @@ The string cannot contain more than 255 characters.
   
 If this method is called from an application that is running on a [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] Application Server, it returns the path of the directory where the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] Application Server is installed. 
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

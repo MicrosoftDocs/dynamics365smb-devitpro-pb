@@ -108,7 +108,7 @@ If a record with No. 0112121 is found, and if the renames are successful, then t
 **After rename 2 - Customer name: Spotsmeyer’s Furnishings; Customer number: 8888888**  
   
 
-## See Also
+## Related information
 
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -106,7 +106,7 @@ The following methods are available on instances of the JsonArray data type.
 > [!NOTE]  
 > The JsonArray is 0-based by design.
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

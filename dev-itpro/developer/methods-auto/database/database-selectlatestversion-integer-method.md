@@ -30,7 +30,7 @@ The number of the table.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Database data type](database-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)

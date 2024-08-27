@@ -25,6 +25,6 @@ Specifies the format of the report.
 |Xml|Saves the report in XML format.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

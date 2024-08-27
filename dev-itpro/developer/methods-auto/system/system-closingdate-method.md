@@ -101,7 +101,7 @@ The following message is displayed:
   
 **The closing date for C04/04/14 is C04/04/14.**  
   
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

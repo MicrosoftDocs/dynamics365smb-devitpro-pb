@@ -90,7 +90,7 @@ The message window reads:
 **The text: ABCDE**  
 
  
-## See Also
+## Related information
 [Dialog Data Type](dialog-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

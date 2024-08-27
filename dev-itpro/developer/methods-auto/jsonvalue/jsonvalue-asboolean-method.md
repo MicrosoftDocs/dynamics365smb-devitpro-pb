@@ -35,7 +35,7 @@ The operation will succeed if the value was created from a Boolean using SetValu
 
 
 
-## See Also
+## Related information
 [JsonValue Data Type](jsonvalue-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -37,7 +37,7 @@ The new atomized string or the existing one if it already exists
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [XmlNameTable Data Type](xmlnametable-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

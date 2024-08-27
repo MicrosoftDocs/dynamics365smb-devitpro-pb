@@ -41,7 +41,7 @@ An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [JsonValue Data Type](jsonvalue-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

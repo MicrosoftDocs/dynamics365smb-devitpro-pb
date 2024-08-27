@@ -59,7 +59,7 @@ end;
 
  When you run the previous code, the loop will end when MyVar is 5 and the execution of the current trigger ends. Statements after the loop are not executed. 
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

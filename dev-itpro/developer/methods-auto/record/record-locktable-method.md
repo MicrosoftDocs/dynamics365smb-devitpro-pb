@@ -54,7 +54,7 @@ The table lock is released (unlocked) when the transaction is committed.
 
 This method works the same as the RecordRef [LockTable Method](../recordref/recordref-locktable-method.md).
 
-## See Also
+## Related information
 
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

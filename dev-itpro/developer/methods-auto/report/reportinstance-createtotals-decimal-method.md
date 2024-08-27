@@ -49,7 +49,7 @@ This method is not supported on client report definition \(RDLC\) report layouts
 CurrReport.CreateTOTALS(Amount, Quantity);  
 ```  
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

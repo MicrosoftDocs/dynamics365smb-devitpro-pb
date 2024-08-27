@@ -43,7 +43,7 @@ Set this parameter to true if you want to modify any records in the set; otherwi
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

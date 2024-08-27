@@ -97,7 +97,7 @@ When you round down \('\<'\) a negative number, such as -1234.56789, it is round
 When you round up \('>'\) a negative number, such as -1234.56789, it is rounded up to -1234.568. However, -1234.568 is a mathematically smaller value than -1234.56789.  
 
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

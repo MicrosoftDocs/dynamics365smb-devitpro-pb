@@ -126,7 +126,7 @@ Report 2
 CurrentTransactionType := TransactionType::Update;  
 ```  
 
-## See Also
+## Related information
 
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

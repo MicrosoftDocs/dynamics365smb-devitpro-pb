@@ -48,6 +48,6 @@ To optimize performance, when you access a record that has a BLOB field, the dat
 
 -->
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

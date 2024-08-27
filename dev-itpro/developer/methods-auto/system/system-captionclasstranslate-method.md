@@ -41,7 +41,7 @@ A literal string that defines the caption.
 You can use the [SelectLatestVersion Method \(Database\)](../../methods-auto/database/database-selectlatestversion-method.md) to clear the current session's cache for the CaptionClassTranslate strings. The strings will then be reevaluated by the **CaptionClassTranslate** method trigger in codeunit 42.  
 
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

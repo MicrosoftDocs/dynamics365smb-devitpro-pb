@@ -39,7 +39,7 @@ When you use the Sleep method, control is guaranteed to return to the operating 
 > The period may be longer than *Duration* milliseconds, depending on what the operating system is doing at the time that control is to return to the caller.  
   
   
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

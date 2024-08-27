@@ -83,7 +83,7 @@ page 50100 MyCustomerList
 
 If you publish the page as a web service, and read the OData feed, you'll see the records sorted in ascending alphabetical order by city and descending alphabetical order by name. However, if you open the page in the client the city and name are both sorted in ascending order.
 
-## See Also
+## Related information
 
 [SetCurrentKey Method](record-setcurrentkey-method.md)
 [Record Data Type](record-data-type.md)  

@@ -85,7 +85,7 @@ Pos3 := StrPos("abc","bc"); // Returns 2.
 Pos4 := StrPos("abc","x"); // Returns 0.  
 ```  
 
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

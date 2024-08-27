@@ -33,7 +33,7 @@ This method makes sure that the data displayed is the most current data in the d
 > Clearing the cache and reading data directly from the database adversely affects performance.  
   
 
-## See Also
+## Related information
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

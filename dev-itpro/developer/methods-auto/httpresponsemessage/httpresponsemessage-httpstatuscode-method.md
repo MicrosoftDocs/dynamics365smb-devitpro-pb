@@ -40,7 +40,7 @@ The status code of the HTTP response.
 [!INCLUDE[httpStatusCodes](../../../includes/include-http-status-codes.md)]
 
 
-## See Also
+## Related information
 [HttpResponseMessage Data Type](httpresponsemessage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

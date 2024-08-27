@@ -44,7 +44,7 @@ This method has been designed specifically for use in long-running processes tha
 
 When the AL code has finished running, the default setting is used again. This method does not change the duration of a lock time-out.  
 
-## See Also
+## Related information
 
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

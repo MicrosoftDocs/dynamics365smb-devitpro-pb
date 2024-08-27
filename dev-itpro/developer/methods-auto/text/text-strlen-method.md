@@ -69,7 +69,7 @@ end;
  This shows that the MaxLength method returns the maximum possible length according to the definition of the string variable, whereas StrLen returns the actual length of the text.  
   
 
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

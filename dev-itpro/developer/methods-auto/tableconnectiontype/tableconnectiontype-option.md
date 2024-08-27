@@ -24,6 +24,6 @@ Use variables of this data type to specify the type of connection to an external
 |MicrosoftGraph|This is for internal use only.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

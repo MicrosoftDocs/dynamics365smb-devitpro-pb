@@ -38,7 +38,7 @@ An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 - The JsonValue will be disconnected from its current JSON tree and the data contained by the JsonValue will be replaced with the new value.
 
 
-## See Also
+## Related information
 [JsonValue Data Type](jsonvalue-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

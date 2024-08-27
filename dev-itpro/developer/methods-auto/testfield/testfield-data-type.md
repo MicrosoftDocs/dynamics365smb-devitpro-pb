@@ -49,6 +49,6 @@ The following methods are available on instances of the TestField data type.
 |[Visible()](testfield-visible-method.md)|Gets the visible state for the field.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -52,7 +52,7 @@ The type `T` is a dynamic type. When `List` is of type `Text` then `T` will chan
 
 For examples on *shallow copy* versus *deep copy*, see [List Data Type](list-data-type.md).
 
-## See Also
+## Related information
 
 [List Data Type](list-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

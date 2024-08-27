@@ -34,7 +34,7 @@ An instance of the [SecretText](secrettext-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [SecretText Data Type](secrettext-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -45,7 +45,7 @@ The scope of the stored data. If a value is not passed in, the default value Dat
 ## Remarks
 The **Set** method initiates a write transaction, which means that it cannot be succeeded by code that opens a modal page. If you want to open a modal page, it must be done before the **Set** method is called.
 
-## See Also
+## Related information
 [IsolatedStorage Data Type](isolatedstorage-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

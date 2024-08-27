@@ -34,7 +34,7 @@ An instance of the [TestPart](testpart-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [TestPart Data Type](testpart-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

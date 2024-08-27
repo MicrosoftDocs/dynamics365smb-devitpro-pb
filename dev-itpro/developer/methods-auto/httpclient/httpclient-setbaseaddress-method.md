@@ -37,7 +37,7 @@ The base address of the Uniform Resource Identifier (URI) of the Internet resour
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

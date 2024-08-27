@@ -41,7 +41,7 @@ If this parameter is true, the SystemId field of the record is given a value tha
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

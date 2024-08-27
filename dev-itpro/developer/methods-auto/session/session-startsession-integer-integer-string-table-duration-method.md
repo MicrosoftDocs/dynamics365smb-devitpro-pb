@@ -59,7 +59,7 @@ The session is started on the same [!INCLUDE[prod_short](../../includes/prod_sho
 For information about how dialog boxes are handled in a background session, see [Dialog box behavior](session-startsession-integer-integer-string-table-method.md#dialog-box-behavior).  
 
 
-## See Also
+## Related information
 [Session Data Type](session-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -35,7 +35,7 @@ The following methods are available on the NumberSequence data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## See Also  
+## Related information  
 [Using number sequences](../../devenv-number-sequences.md)  
 [Get atarted with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)  

@@ -32,7 +32,7 @@ The object ID.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [WebServiceActionContext Data Type](webserviceactioncontext-data-type.md)  
 [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md)  
 [Get Started with AL](../../devenv-get-started.md)  

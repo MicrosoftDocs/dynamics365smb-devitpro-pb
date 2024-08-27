@@ -52,6 +52,6 @@ The following methods are available on instances of the Query data type.
 |[TopNumberOfRows([Integer])](queryinstance-topnumberofrows-method.md)|Specifies the maximum number of rows to include in the resulting data set of a query.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -63,7 +63,7 @@ end;
 [!INCLUDE[example-2](../../includes/include-wordxmlpart-example-2.md)]
 
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

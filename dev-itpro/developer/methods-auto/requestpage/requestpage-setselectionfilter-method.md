@@ -54,7 +54,7 @@ If more than one record is selected on the page, then SetSelectionFilter does th
   
 - Marks the selected records and sets the "marked only" filter  
   
-## See Also
+## Related information
 [RequestPage Data Type](requestpage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

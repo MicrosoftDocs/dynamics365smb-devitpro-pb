@@ -56,7 +56,7 @@ The message window could display the following:
 **The current date is: 05/27/08**  
   
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

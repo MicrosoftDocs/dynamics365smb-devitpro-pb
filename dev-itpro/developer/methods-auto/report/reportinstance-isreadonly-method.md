@@ -34,7 +34,7 @@ A value specifying the readonly data access intent.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)
 [Get Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../../devenv-dev-overview.md)  

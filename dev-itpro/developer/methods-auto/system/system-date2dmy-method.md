@@ -68,7 +68,7 @@ The message window displays the following:
   
 **Today is day 16 of month 2 of the year 2014.**  
  
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

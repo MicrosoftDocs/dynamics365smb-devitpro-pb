@@ -78,7 +78,7 @@ The second message window displays the following:
 
 **After CalcSum, Sales \(LCY\) is 55,162.67.**  
 
-## See Also
+## Related information
 
 [FieldRef Data Type](fieldref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

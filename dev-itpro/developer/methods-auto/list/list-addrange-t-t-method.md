@@ -41,7 +41,7 @@ The collection whose elements should be added to the end of the List.
 
 The type `T` is a dynamic type. When `List` is of type `Text` then `T` will change to `Text`. When `List` is of type `Integer`, then `T` will change to `Integer`.
 
-## See Also
+## Related information
 [List Data Type](list-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

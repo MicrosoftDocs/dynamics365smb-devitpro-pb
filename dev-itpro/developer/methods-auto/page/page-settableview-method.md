@@ -60,7 +60,7 @@ end;
   
 The page that is reference by the SomePage variable can be any page object that has Sales Header as the value of the [SourceTable Property](../../properties/devenv-sourcetable-property.md).  
 
-## See Also
+## Related information
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

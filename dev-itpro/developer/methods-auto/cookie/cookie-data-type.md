@@ -44,7 +44,7 @@ The following data types have methods that return or use the `Cookie` data type:
 - [HttpRequestMessage.GetCookie method](../httprequestmessage/httprequestmessage-getcookie-method.md)  
 - [HttpRequestMessage.GetCookieNames method](../httprequestmessage/httprequestmessage-getcookienames-method.md)  
 
-## See also
+## Related information
 
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

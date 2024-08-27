@@ -52,7 +52,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 [SystemId Field](../../devenv-table-system-fields.md#systemid)  
 [RecordRef Data Type](recordref-data-type.md)  

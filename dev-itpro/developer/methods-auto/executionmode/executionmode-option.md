@@ -22,6 +22,6 @@ The execution mode of the current session.
 |Debug|The session is executing in debug mode.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

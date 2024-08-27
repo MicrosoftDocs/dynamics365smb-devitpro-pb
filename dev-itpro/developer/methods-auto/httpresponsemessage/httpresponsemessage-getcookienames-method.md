@@ -50,7 +50,7 @@ begin
 end;
 ```
 
-## See also
+## Related information
 
 [HttpResponseMessage Data Type](httpresponsemessage-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

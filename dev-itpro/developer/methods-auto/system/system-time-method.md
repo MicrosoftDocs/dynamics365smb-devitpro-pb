@@ -54,7 +54,7 @@ On a computer that has the regional format set to English \(United States\), the
 **The current system time is 11:15:46 AM.**  
 
  
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

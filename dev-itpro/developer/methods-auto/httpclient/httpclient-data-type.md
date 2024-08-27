@@ -76,7 +76,7 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 [!INCLUDE[httpclientPerformance](../../../includes/performance-outgoing-http.md)]
 
 
-## See also
+## Related information
 [Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

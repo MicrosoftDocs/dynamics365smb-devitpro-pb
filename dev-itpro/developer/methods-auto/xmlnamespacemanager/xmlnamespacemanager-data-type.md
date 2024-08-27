@@ -32,6 +32,6 @@ The following methods are available on instances of the XmlNamespaceManager data
 |[RemoveNamespace(Text, Text)](xmlnamespacemanager-removenamespace-method.md)|Removes the given namespace for the given prefix.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

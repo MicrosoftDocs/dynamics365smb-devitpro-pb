@@ -71,7 +71,7 @@ end;
 ```  
 
 
-## See Also
+## Related information
 [RecordRef Data Type](recordref-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

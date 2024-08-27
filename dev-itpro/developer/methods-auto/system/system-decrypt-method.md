@@ -53,7 +53,7 @@ if not EncryptionEnabled then
 
 ```  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

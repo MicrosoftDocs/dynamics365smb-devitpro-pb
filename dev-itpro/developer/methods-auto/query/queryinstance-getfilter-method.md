@@ -96,7 +96,7 @@ end;
   
  **The filter is: Quantity > 10**
 
-## See Also
+## Related information
 [Query Data Type](query-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

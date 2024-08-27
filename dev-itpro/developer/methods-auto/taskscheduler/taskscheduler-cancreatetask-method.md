@@ -54,7 +54,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Using the Task Scheduler](../../devenv-task-scheduler.md)   

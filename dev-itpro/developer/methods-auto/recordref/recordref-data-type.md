@@ -112,6 +112,6 @@ Use the [Open method](recordref-open-method.md) to use the table number to selec
   
 If one `RecordRef` variable is assigned to another `RecordRef` variable, then they both refer to the same table instance. 
 
-## See also  
+## Related information  
 [Get started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)  

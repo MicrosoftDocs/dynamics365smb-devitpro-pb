@@ -41,7 +41,7 @@ Gets if audit fields should be updated. If the value is set to false, the audit 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

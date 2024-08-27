@@ -37,7 +37,7 @@ If set to **true**, the data on the page will be refreshed.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [RequestPage Data Type](requestpage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

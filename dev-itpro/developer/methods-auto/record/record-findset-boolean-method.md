@@ -93,7 +93,7 @@ This example shows how to use the `FindSet` method to loop through a set and upd
     end;
 ```
 
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

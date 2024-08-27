@@ -32,7 +32,7 @@ An XmlNode value that references the current XmlElement.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [XmlElement Data Type](xmlelement-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

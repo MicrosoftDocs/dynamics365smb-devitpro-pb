@@ -150,6 +150,6 @@ The following data types are available as part of the AL language. Each data typ
 |[WebServiceActionResultCode](webserviceactionresultcode/webserviceactionresultcode-option.md)|Represents a web service action status code.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -44,7 +44,7 @@ The position of the value in the JsonArray. -1 will be returned if Value cannot 
 > The JsonArray is 0-based by design.
 
 
-## See Also
+## Related information
 [JsonArray Data Type](jsonarray-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

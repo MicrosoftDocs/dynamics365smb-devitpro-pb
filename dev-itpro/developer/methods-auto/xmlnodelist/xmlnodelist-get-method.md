@@ -41,7 +41,7 @@ The XmlNode with the specified index in the list.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [XmlNodeList Data Type](xmlnodelist-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

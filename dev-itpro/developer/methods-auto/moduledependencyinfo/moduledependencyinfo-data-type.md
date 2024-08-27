@@ -27,6 +27,6 @@ The following methods are available on instances of the ModuleDependencyInfo dat
 |[Publisher()](moduledependencyinfo-publisher-method.md)|Gets the publisher of the specified application.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

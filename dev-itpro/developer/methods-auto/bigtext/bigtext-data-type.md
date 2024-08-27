@@ -37,7 +37,7 @@ The following methods are available on instances of the BigText data type.
 
 This data type cannot be shown in a message window or be seen in the Debugger. The maximum length of a BigText variable is 2,147,483,647 characters and this corresponds to 2 GB. You can use the BigText methods to manipulate a BigText variable, for example to extract part of a BigText variable or to add a text string to a BigText variable. The normal string methods cannot be used with a BigText variable.  
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

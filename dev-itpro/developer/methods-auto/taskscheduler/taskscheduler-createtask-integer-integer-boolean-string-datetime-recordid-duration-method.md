@@ -62,7 +62,7 @@ Specifies the timeout of the created session. If not specified a default timeout
 
 This version of the `TaskScheduler.CreateTask` method has the same semantics as the version without a timeout parameter. For more information and usage examples, see [CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md).
 
-## See also
+## Related information
 
 [CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId])](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md)   
 [TaskScheduler Data Type](taskscheduler-data-type.md)  

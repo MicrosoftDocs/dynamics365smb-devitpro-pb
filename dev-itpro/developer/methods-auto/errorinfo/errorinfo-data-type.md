@@ -75,7 +75,7 @@ The different properties in the `ErrorInfo` data type are used in different ways
 |[Title([Text])](errorinfo-title-method.md)| Add a title to the error message. Not recommended for validation errors. |
 
 
-## See Also
+## Related information
 
 [Error(ErrorInfo) method](../dialog/dialog-error-errorinfo-method.md)   
 [Actionable errors](../../devenv-actionable-errors.md)  

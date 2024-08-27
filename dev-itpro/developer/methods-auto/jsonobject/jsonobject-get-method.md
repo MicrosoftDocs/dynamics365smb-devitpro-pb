@@ -45,7 +45,7 @@ A variable of type JsonToken that will contain the result if the operation is su
 ## Remarks 
 The operation will fail if the object does not contain a property with the given Key.
 
-## See Also
+## Related information
 [JsonObject Data Type](jsonobject-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

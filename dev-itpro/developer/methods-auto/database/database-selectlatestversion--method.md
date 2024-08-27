@@ -25,7 +25,7 @@ Forces the latest version of the database to be used.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Database data type](database-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)

@@ -48,7 +48,7 @@ This method is like the SetFilter Method (FieldRef) method. For more information
   
 The filter set by the [SetFilter Method (Record)](record-setfilter-method.md) or the [SetRange Method (Record)](record-setrange-method.md) apply to the currently selected filter group. For more information see [FilterGroup Method (Record)](record-filtergroup-method.md).
 
-## See Also
+## Related information
 
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -34,7 +34,7 @@ The path of the object relative to its containing JSON tree. If the object is th
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [JsonObject Data Type](jsonobject-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

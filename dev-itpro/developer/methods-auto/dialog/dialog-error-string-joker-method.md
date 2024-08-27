@@ -71,7 +71,7 @@ The error window displays the following:
 
 The `Error` method causes execution of AL code to stop. [Message Method](../../methods-auto/dialog/dialog-message-method.md) is never executed.  
 
-## See Also
+## Related information
 [Dialog.Error(ErrorInfo) method](dialog-error-errorinfo-method.md)   
 [Error handling overview](../../devenv-al-error-handling.md)  
 [Analyzing Error method telemetry](../../../administration/telemetry-error-method-trace.md)   

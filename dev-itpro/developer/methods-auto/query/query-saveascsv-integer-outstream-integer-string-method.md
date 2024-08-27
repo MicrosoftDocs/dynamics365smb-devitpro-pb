@@ -115,7 +115,7 @@ No       Name                          City
 If for some reason the file cannot be saved, then the message **Query was not saved.** appears.
 
 
-## See Also
+## Related information
 [Query Data Type](query-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

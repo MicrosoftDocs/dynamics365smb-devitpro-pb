@@ -45,7 +45,7 @@ The following example gets the next value in the number sequence `MyNumberSequen
 number := NumberSequence.Next('MyNumberSequence', false);
 ```
 
-## See Also
+## Related information
 [NumberSequence Data Type](numbersequence-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -86,7 +86,7 @@ SendTraceTag('Cronus-0005', 'Action', Verbosity::Verbose, 'This is a verbose mes
 The events emitted by this code will have the events IDs (listed in the order that the are called): 707, 708, 705, 702, and 704.
 
 
-## See Also
+## Related information
 [Session Data Type](session-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

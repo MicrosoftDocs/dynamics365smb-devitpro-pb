@@ -45,7 +45,7 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [HttpClient data type](httpclient-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)

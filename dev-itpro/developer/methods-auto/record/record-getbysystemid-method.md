@@ -54,7 +54,7 @@ begin
     Message(Text000);
 end;
 ```
-## See Also
+## Related information
 
 [SystemId Field](../../devenv-table-system-fields.md#systemid)  
 [Record Data Type](record-data-type.md)  

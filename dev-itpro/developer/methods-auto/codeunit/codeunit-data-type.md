@@ -32,6 +32,6 @@ The following methods are available on instances of the Codeunit data type.
 |[Run(var Record)](codeunitinstance-run-method.md)|Loads and executes the unit of AL code that you specify.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

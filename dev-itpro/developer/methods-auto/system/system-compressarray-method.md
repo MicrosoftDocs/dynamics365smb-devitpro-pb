@@ -96,7 +96,7 @@ end;
 > [!NOTE]  
 > Empty lines are not printed if they occur on the first or last line in a message window.  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

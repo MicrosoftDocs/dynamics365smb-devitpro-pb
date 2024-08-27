@@ -50,7 +50,7 @@ Use this method when copying data in rows or fields of table to rows or fields o
 
 [!INCLUDE[data-transfer-example](../../../developer/includes/data-transfer-example.md)]
 
-## See Also
+## Related information
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

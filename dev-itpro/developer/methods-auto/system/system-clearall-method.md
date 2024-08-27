@@ -37,7 +37,7 @@ When a method is called repeatedly in the same transaction, the system retains a
 For information about the initial values of cleared variables, see the [Clear Method](../../methods-auto/system/system-clear-joker-method.md). Take into consideration that fields in a record will be initialized with the [InitValue Property](../../properties/devenv-initvalue-property.md) of the field.  
 
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

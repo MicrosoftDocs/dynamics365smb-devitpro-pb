@@ -74,7 +74,7 @@ The GUID value can also be represented as text. You can use the standard AL meth
   
 **Invalid Format of GUID string. The correct format of the GUID string is {CDEF7890-ABCD-1234-ABCD-1234567890AB} where 0-9, A-F symbolizes hexadecimal digits.**  
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

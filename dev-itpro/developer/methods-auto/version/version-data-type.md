@@ -36,6 +36,6 @@ The following methods are available on instances of the Version data type.
 |[Revision()](version-revision-method.md)|Gets the revision number from the version.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

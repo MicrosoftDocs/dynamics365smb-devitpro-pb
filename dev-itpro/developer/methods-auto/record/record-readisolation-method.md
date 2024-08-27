@@ -67,7 +67,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [Record instance isolation level](../../devenv-read-isolation.md)  
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

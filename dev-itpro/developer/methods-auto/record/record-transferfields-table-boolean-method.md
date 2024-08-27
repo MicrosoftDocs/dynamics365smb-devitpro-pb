@@ -52,7 +52,7 @@ The fields must have the *same data type* for the copying to succeed (text and c
 > [!NOTE]  
 > Fields are assigned, such as `DestinationRecord.Field := SourceRecord.Field`, which won't call the OnValidate trigger on the destination field. To assist with validation when using the `TransferFields` method, the `TypeHelper` codeunit contains a `TransferFieldsWithValidate` method.
 
-## See also
+## Related information
 
 [Record data type](record-data-type.md)  
 [Get started with AL](../../devenv-get-started.md)  

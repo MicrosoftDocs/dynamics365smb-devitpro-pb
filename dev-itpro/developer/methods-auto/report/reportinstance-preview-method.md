@@ -39,7 +39,7 @@ An instance of the [Report](report-data-type.md) data type.
 
 Application triggers are not invoked when the web client PDF viewer runs client actions. They are only invoked during the print action so that you can use the trigger code, for example, to increment the No.Printed value.
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

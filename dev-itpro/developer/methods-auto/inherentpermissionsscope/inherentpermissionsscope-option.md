@@ -41,7 +41,7 @@ The different types of scope that the InherentPermissions attribute can apply to
 [InherentPermissions(PermissionObjectType:Table, Database:MyTable, 'x', InherentPermissionScope:Both)]
 ```
 
-## See Also  
+## Related information  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Inherent Permissions](../../devenv-inherent-permissions.md)  

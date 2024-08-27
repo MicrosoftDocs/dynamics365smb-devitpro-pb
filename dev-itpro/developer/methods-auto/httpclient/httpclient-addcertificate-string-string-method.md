@@ -45,7 +45,7 @@ The certificate password.
 
 [!INCLUDE[httpclient_cert_note](../../includes/include-http-cert-note.md)]
 
-## See Also
+## Related information
 
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -60,7 +60,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 [Report Localization](../../devenv-report-localization.md)  
 [Report.Language](./reportinstance-language-method.md)  

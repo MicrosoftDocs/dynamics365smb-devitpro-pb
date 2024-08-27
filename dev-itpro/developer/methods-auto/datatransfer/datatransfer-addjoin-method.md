@@ -49,7 +49,7 @@ This method isn't needed when copying within the same table.
 
 [!INCLUDE[data-transfer-example-copy-fields](../../../developer/includes/data-transfer-example-copy-fields.md)]
 
-## See Also
+## Related information
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

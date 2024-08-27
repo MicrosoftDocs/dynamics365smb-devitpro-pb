@@ -28,7 +28,7 @@ Activates the debugger and attaches the debugger to the next session that is sta
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Debugger Data Type](debugger-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

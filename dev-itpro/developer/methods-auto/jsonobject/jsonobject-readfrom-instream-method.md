@@ -56,7 +56,7 @@ begin
     result.ReadFrom(source);    
 end;
 ```
-## See Also
+## Related information
 [JsonObject Data Type](jsonobject-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

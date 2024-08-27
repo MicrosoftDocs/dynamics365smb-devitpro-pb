@@ -51,7 +51,7 @@ The following example deletes the file that is named C:\\TestFolder\\NewTestFile
 Erase('C:\TestFolder\NewTestFile.txt');  
 ```  
 
-## See Also
+## Related information
 
 [File Data Type](file-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

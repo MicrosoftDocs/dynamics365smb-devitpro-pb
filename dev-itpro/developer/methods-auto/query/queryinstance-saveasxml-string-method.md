@@ -55,7 +55,7 @@ The **SaveAsXML** method can be called at any place in the code and does not req
 For example code on how to use Query.SaveAsXml to save XML directly to a file, see [Query.SaveAsXml(Integer, Text) Method) Method](./query-saveasxml-integer-string-method.md).
 
 
-## See Also
+## Related information
 
 [Query.SaveAsXml(Integer, Text) Method) Method](./query-saveasxml-integer-string-method.md)  
 [Query Data Type](query-data-type.md)  

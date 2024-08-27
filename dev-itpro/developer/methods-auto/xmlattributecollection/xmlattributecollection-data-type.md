@@ -34,6 +34,6 @@ The following methods are available on instances of the XmlAttributeCollection d
 |[Set(Text, Text, Text)](xmlattributecollection-set-string-string-string-method.md)|Sets the value of the specified attribute or creates it if is not part of the collection.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

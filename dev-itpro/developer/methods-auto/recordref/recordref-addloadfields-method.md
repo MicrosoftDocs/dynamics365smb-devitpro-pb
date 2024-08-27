@@ -59,7 +59,7 @@ MyRecordRef.AddLoadFields(Currency.FieldNo(Currency."Currency Factor"));
 end;
 ```
 
-## See Also
+## Related information
 [Using Partial Records](../../devenv-partial-records.md)  
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

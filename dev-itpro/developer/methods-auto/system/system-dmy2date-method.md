@@ -66,7 +66,7 @@ On a computer that has the regional format set to English \(United States\), the
   
 **Day number 17, month number 2, and year number 2014 corresponds to the date 02/17/14.**
  
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

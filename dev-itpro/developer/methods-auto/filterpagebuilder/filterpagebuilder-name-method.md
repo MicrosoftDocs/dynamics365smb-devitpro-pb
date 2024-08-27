@@ -63,7 +63,7 @@ The name of the filter control.
 ```  
   
 
-## See Also
+## Related information
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
 [Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Get Started with AL](../../devenv-get-started.md)  

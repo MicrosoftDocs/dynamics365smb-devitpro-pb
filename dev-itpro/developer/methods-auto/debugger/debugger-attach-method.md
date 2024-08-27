@@ -45,7 +45,7 @@ The ID of the session that you want to attach the debugger to.The session can be
 The **Attach** method behaves like the **Debug** action on the **Sessions** page.
 You can call the **Attach** method to activate the debugger.
 
-## See Also
+## Related information
 
 [Debugger Data Type](debugger-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

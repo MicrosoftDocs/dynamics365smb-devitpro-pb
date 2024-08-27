@@ -44,7 +44,7 @@ You use Microsoft SQL Server Profiler to view traces. For more information, see 
   
 You can also enable and disable SQL tracing by using the **Start Full SQL Tracing** and **Stop Full SQL Tracing** buttons on the **Session List** page.  
 
-## See Also
+## Related information
 [Debugger Data Type](debugger-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

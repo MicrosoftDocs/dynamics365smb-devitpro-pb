@@ -26,6 +26,6 @@ The following methods are available on instances of the XmlNodeList data type.
 |[Get(Integer, var XmlNode)](xmlnodelist-get-method.md)|Gets a node at the given index.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

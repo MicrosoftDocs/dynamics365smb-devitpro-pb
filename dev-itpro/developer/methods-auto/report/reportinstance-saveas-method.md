@@ -64,7 +64,7 @@ For a simple example that illustrates how to use the `SaveAs` method, see the ex
 The method can fail in the following ways:
 - If the string of request page parameters as XML specified in "*Parameters*" can't be parsed as valid request page data.
 
-## See also
+## Related information
 
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

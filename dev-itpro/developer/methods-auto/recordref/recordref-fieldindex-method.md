@@ -73,7 +73,7 @@ end;
  The following illustration shows the first fields in table 112, Sales Invoice Header, and shows the keys for table 112. The order of the fields in the index differs from the order of the fields in the table. The index lists the field in the primary key first.  
 
 
-## See Also
+## Related information
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

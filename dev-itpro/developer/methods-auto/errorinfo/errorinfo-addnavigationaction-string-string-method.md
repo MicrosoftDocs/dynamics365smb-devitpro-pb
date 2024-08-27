@@ -41,7 +41,7 @@ The text that appears as the tooltip of the action in the error UI.
 
 The semantics of this method is the same as the version without a Description parameter. For more information, see [ErrorInfo.AddNavigationAction([Text])](./errorinfo-addnavigationaction-string-method.md).
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Actionable errors](../../devenv-actionable-errors.md)  

@@ -39,6 +39,6 @@ The following methods are available on instances of the Enum data type.
 
 For more information, see [Extensible Enums](../../devenv-extensible-enums.md).
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

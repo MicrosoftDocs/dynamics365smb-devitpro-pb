@@ -37,6 +37,6 @@ The following methods are available on instances of the HttpHeaders data type.
 |[TryAddWithoutValidation(Text, SecretText)](httpheaders-tryaddwithoutvalidation-string-secrettext-method.md)|Adds the specified secret header and its value into the HttpHeaders collection. Doesn't validate the provided value.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

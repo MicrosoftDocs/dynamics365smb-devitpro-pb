@@ -83,7 +83,7 @@ VarPosition := MyBigText.TextPos('XYZ'); // Returns 0.
 Message(Text000, VarPosition);  
 ``` 
 
-## See Also
+## Related information
 
 [BigText Data Type](bigtext-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

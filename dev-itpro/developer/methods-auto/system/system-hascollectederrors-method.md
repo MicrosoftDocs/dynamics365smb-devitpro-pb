@@ -32,7 +32,7 @@ Ok :=   System.HasCollectedErrors()
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 
 [Collecting Errors](../../devenv-error-collection.md)  
 [System Data Type](system-data-type.md)

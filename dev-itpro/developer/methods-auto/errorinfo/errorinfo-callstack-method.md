@@ -54,7 +54,7 @@ end
 
 For an elaborate example, see the ErrorMessageManagement codeunit in the system application.
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Collecting Errors](../../devenv-error-collection.md)  

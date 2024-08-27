@@ -32,7 +32,7 @@ An instance of the [TestAction](testaction-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [TestAction Data Type](testaction-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

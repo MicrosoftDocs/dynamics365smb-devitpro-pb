@@ -24,6 +24,6 @@ Represents the context in which a session is running. In certain scenarios, for 
 |Upgrade|An application is being upgraded.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

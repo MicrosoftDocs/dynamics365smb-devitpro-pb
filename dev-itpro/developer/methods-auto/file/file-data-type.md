@@ -76,6 +76,6 @@ The following methods are available on instances of the File data type.
 |[WriteMode([Boolean])](file-writemode-method.md)|Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -39,7 +39,7 @@ The TextEncoding used when running, importing or exporting the XmlPort.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Xmlport Data Type](xmlport-data-type.md)  
 [TextEncoding Property \(XMLports\)](../../properties/devenv-textencoding-property.md)  
 [Get Started with AL](../../devenv-get-started.md)  

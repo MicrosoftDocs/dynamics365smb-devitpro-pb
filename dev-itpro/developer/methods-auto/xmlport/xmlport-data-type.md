@@ -51,7 +51,7 @@ The following methods are available on instances of the Xmlport data type.
 |[TextEncoding([TextEncoding])](xmlportinstance-textencoding-method.md)|Gets and sets the TextEncoding used when running, importing or exporting the XmlPort.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [XMLport Overview](../../devenv-xmlport-overview.md)

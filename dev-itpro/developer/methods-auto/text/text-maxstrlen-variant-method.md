@@ -64,7 +64,7 @@ end;
   
  **whereas the StrLen method returns 7.**
   
-## See Also
+## Related information
 
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

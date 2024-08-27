@@ -79,7 +79,7 @@ Option 3, **Exit**, is highlighted. The option that the user selects is stored i
   
 **You selected option 3.**  
 
-## See Also
+## Related information
 
 [Dialog Data Type](dialog-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

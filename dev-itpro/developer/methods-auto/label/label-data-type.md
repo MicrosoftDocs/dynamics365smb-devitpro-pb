@@ -43,7 +43,7 @@ The `Label` data type is used in .xlf files for translations. For more informati
 
 For information about naming, see [CodeCop Rule AA0074](../../analyzers/codecop-aa0074.md).
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

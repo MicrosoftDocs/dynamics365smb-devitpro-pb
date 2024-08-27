@@ -36,7 +36,7 @@ The default built-in layout type that is used on a specified report.
 ## Remarks  
  The default layout for a report is specified by the report's [DefaultLayout Property](../../properties/devenv-defaultlayout-property.md).
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

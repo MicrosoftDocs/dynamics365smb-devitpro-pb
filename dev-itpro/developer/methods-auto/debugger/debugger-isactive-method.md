@@ -36,7 +36,7 @@ When the debugger is activated, it is in one of the following states:
 - Attached to a session.
 - Waiting to attach to a session.  
 
-## See Also
+## Related information
 
 [Debugger Data Type](debugger-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

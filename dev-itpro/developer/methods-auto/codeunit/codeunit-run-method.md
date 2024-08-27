@@ -63,7 +63,7 @@ begin
 end;
 ```  
 
-## See Also
+## Related information
 [Codeunit Data Type](codeunit-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

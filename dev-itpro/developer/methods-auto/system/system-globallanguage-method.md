@@ -44,7 +44,7 @@ The LanguageID is a standard Windows language ID. The Windows Language virtual t
   
 For more information, see [Multilanguage Development](../../devenv-work-with-translation-files.md). 
  
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

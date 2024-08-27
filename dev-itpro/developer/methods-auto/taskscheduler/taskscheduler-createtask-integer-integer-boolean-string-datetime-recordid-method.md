@@ -93,7 +93,7 @@ begin
 end;
 ```  
 
-## See also
+## Related information
 
 [CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration)](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-duration-method.md)   
 [TaskScheduler Data Type](taskscheduler-data-type.md)     

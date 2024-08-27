@@ -43,7 +43,7 @@ This method will trigger a [JIT load](../../devenv-partial-records.md#jit) of th
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
-## See Also
+## Related information
 
 [Using Partial Records](../../devenv-partial-records.md)  
 [Record Data Type](record-data-type.md)  

@@ -58,7 +58,7 @@ end;
 
 CurrPage is a system-defined variable. For more information, see [System-Defined Variables](../../devenv-system-defined-variables.md). 
 
-## See Also
+## Related information
 
 [Page Background Tasks](../../devenv-page-background-tasks.md)  
 [Page Data Type](page-data-type.md)  

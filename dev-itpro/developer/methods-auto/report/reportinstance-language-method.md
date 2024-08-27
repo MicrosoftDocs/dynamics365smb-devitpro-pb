@@ -87,7 +87,7 @@ var
 
 ```
 
-## See also
+## Related information
 [Windows Language Code Identifier (LCID) Reference](https://learn.microsoft.com/openspecs/windows_protocols/ms-lcid/70feba9f-294e-491e-b6eb-56532684c37f)   
 [Report.FormatRegion](./reportinstance-formatregion-method.md)   
 [Report Localization](../../devenv-report-localization.md)  

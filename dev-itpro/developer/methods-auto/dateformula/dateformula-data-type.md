@@ -51,7 +51,7 @@ if Format(DateFormulaVariable) = '' then
 
 You must use the [Format Method](../system/system-format-joker-integer-string-method.md) to make a comparison with a text string. If you do not use this method, then the `if` statement will fail because you cannot compare a DateFormula data type with a Text data type.  
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

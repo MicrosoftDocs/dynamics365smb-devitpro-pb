@@ -37,7 +37,7 @@ The OutStream to which you want to save the serialized representation of the nod
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [XmlText Data Type](xmltext-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

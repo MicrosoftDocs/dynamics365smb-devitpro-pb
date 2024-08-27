@@ -80,6 +80,6 @@ An unitialized variable of JsonObject type represents an empty JSON object. Give
 jsonObject.Keys.Count =  0
 ```
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

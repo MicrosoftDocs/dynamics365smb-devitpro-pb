@@ -41,7 +41,7 @@ The field from which the filter will be copied.
 The filter is copied and remains in the assigned group number. For example: `Rec.CopyFilter(FromRec);`
 disregards the current filter group on both `Rec` and `FromRec`, and copies the filter in `FromRec` (regardless of group number) into the same filter group assignment on `Rec`.
 
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

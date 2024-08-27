@@ -114,7 +114,7 @@ codeunit 50100 MyQueryTop10
 }
 ```
 
-## See Also
+## Related information
 [Query Data Type](query-data-type.md)  
 [Query Object](../../devenv-query-object.md)  
 [Linking and Joining Data Items](../../devenv-query-links-joins.md)  

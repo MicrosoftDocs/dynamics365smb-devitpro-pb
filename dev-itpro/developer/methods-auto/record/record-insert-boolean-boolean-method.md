@@ -68,7 +68,7 @@ end;
 
 No run-time error occurs if customer 1120 already exists.
 
-## See Also
+## Related information
 
 [SystemId Field](../../devenv-table-system-fields.md#systemid)  
 [Record Data Type](record-data-type.md)  

@@ -49,7 +49,7 @@ Message(CurrPage.ObjectId(true));
 
 CurrPage is a system-defined variable. For more information, see [System-Defined Variables](../../devenv-system-defined-variables.md). 
 
-## See Also
+## Related information
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

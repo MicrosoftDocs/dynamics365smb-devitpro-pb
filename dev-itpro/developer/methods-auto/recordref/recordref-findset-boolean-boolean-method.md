@@ -41,7 +41,7 @@ The `UpdateKey` parameter has been deprecated and will be removed in the future.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [RecordRef Data Type](recordref-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

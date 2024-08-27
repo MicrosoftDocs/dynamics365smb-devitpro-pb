@@ -61,7 +61,7 @@ When you run codeunit 50002, the message window displays the following:
 
 **The last error was: Some error message.**  
  
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

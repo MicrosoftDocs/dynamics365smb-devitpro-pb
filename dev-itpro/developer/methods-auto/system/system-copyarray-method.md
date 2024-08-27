@@ -83,7 +83,7 @@ CopyArray(Array2,Array1,3);
 
 The error occurs because the code attempts to copy eight elements from Array1 to Array2, and Array2 has room for only five elements.  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

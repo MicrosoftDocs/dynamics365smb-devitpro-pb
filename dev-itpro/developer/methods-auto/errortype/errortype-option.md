@@ -22,6 +22,6 @@ Represents the type of error.
 |Internal|Identifies an internal, the message specified will be sent to telemetry and a generic error will be displayed to the user.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -42,7 +42,7 @@ The current page number of a report.
 > [!IMPORTANT]  
 > This method will be deprecated in a future update and we recommend that you do not use it.
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

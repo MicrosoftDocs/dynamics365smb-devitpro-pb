@@ -130,7 +130,7 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
     end;
 ```
 
-## See Also
+## Related information
 
 [Page Background Tasks](../../devenv-page-background-tasks.md)  
 [Page Data Type](page-data-type.md)  

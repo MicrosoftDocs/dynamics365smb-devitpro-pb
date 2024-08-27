@@ -34,7 +34,7 @@ An instance of the [TestFilter](testfilter-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [TestFilter Data Type](testfilter-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

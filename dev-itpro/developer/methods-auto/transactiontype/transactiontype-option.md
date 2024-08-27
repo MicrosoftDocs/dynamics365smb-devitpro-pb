@@ -25,6 +25,6 @@ Represents a transaction type.
 |Report|Report option maps to one of the basic options. This enables a report to use the most concurrent read-only form of data access for the connected server. When you use Dynamics 365 Business Central database server, it maps to Snapshot and when you use SQL Server, it maps to Browse.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

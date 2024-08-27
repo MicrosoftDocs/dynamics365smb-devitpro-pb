@@ -23,6 +23,6 @@ Specifies how an error in the page background task appears in the client.
 |Ignore|Error occuring in a page background task is not displayed in the client. **Note:** Any error thrown in completion trigger will ignore this value and will be displayed in the client as a normal error.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

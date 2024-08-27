@@ -57,7 +57,7 @@ The *FormatNumber* parameter specifies the format that you want to use. The basi
 
 For more information, see [Formatting Values, Dates, and Time](../../devenv-format-property.md)).
 
-## See also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get started with AL](../../devenv-get-started.md)  

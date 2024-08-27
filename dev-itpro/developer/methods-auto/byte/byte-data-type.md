@@ -38,7 +38,7 @@ You cannot assign a character to a position greater than the position of the nul
 MyText[5] := 'e';  
 ```  
   
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -65,7 +65,7 @@ When you run codeunit 50002, the message window displays the following:
   
 **TestErrors2\(CodeUnit 50002\).OnRun\(Trigger\) line 2**  
   
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

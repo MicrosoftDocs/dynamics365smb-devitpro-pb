@@ -42,6 +42,6 @@ The following methods are available on instances of the TestPart data type.
 |[ValidationErrorCount()](testpart-validationerrorcount-method.md)|Gets the number of validation errors that occurred on the test page.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

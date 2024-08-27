@@ -36,7 +36,7 @@ The encoding that will be used by the stream. The default encoding is MSDos.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [FileUpload Data Type](fileupload-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

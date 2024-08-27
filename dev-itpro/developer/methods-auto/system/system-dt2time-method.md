@@ -39,7 +39,7 @@ The DateTime of which to return the time part.
 ## Remarks  
  If *Datetime* is undefined, then this method returns an undefined time.
 
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

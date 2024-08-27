@@ -35,7 +35,7 @@ If you omit this optional return value and if archived data cannot be deleted fo
 ## Remarks
 You use this method as part of the upgrade code for an extension, where it is called from the `OnNavAppUpgradePerDatabase()` or `OnNavAppUpgradePerCompany()` system methods. When an extension is uninstalled, the data in application tables of the extension is automatically stored into a set of special tables so that the data is still preserved. With the DeleteARCHIVEDATA method, you can delete the archived data from the application table of the new version of an extension when it is installed.
 
-## See Also
+## Related information
 [NavApp Data Type](navapp-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

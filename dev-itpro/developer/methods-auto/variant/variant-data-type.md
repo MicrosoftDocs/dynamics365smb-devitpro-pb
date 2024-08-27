@@ -91,6 +91,6 @@ The following methods are available on instances of the Variant data type.
 |[IsXmlWriteOptions()](variant-isxmlwriteoptions-method.md)|Indicates whether an AL variant contains an XmlWriteOptions variable.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -39,7 +39,7 @@ Returns a new SecretText with the provided values inserted into the specified st
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [SecretText Data Type](secrettext-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

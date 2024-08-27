@@ -41,7 +41,7 @@ You cannot assign a Char to a position greater than the position of the null ter
 MyText[5] := 'e';  
 ```  
   
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

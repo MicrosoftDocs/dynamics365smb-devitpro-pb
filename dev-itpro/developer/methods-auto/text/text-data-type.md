@@ -76,7 +76,7 @@ The **Text** data type is a value type, such that every time you use a method on
 
 The [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md) is a reference type, which holds a pointer elsewhere in memory. For performance reasons, we recommend you to use it when you want to modify a string without creating a new object. For example, using [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md)  can boost performance when concatenating many strings together in a loop.
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

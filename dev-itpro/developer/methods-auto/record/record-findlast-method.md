@@ -53,7 +53,7 @@ This example requires that you create a Record variable named GLEntryRec for the
 if GLEntryRec.FindLast then  
   ...  
 ```  
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

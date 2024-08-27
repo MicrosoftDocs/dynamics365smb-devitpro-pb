@@ -23,6 +23,6 @@ Specifies the current mode of a PromptDialog page.
 |Content|Showing the output of the copilot interaction.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -26,6 +26,6 @@ The following methods are available on instances of the XmlNameTable data type.
 |[Get(Text, var Text)](xmlnametable-get-method.md)|Gets the atomized string with the specified value.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

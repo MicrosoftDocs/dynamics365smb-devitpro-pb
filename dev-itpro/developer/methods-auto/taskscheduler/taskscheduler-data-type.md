@@ -32,7 +32,7 @@ The following methods are available on the TaskScheduler data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## See also
+## Related information
 
 [Task Scheduler Overview](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  

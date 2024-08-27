@@ -91,6 +91,6 @@ The following methods are available on instances of the FieldRef data type.
 |[Value([Any])](fieldref-value-method.md)|Sets or gets the value of the field that is currently selected. This method returns an error if no field is selected.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

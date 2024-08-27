@@ -76,7 +76,7 @@ On a computer that has the regional format set to English \(United States\), the
   
 **The normal date for C04/04/14 is 04/04/14.**  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

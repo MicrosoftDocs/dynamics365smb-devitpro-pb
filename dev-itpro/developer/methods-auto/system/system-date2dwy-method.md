@@ -86,7 +86,7 @@ The message window displays the following information:
 This example shows that the date 01/01/14 is regarded as day number 4 \(Thursday\) in week number 1 in the year 2014.  
   
 
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

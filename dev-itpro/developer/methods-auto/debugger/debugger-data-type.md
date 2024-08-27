@@ -50,6 +50,6 @@ The following methods are available on the Debugger data type.
 > [!NOTE]  
 > The Dynamics 365 Business Central Debugger is an example of a debugger application that is built using tables, pages, codeunits, and the AL debugger methods.
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

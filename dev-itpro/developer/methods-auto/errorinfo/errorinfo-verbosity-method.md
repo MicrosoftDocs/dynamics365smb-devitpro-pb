@@ -68,7 +68,7 @@ begin
 end
 ```
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [AL error handling](../../devenv-al-error-handling.md)  

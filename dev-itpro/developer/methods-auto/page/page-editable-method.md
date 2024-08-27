@@ -44,7 +44,7 @@ Indicates the editability of the page.
 
 The `CurrPage.Editable` property represents both whether a page is editable at all and whether the page is currently in edit mode. Dynamic changes to the page Editable property are not supported, except through `CurrPage.Editable(false)` in the `OnOpenPage` trigger.
 
-## See Also
+## Related information
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

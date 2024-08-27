@@ -74,7 +74,7 @@ if SomePage.RunModal = Action::LookupOK then
 > [!NOTE]  
 > This code example includes the [Clear method](../system/system-clear-joker-method.md) to make sure that the variable has been cleared.  
 
-## See Also
+## Related information
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -100,7 +100,7 @@ This example also shows that when you evaluate a string as a duration data type,
   
 You can include decimal values in the string that you evaluate as a duration, except for milliseconds, which must be a whole number.  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

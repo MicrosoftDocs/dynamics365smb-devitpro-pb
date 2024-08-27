@@ -24,7 +24,7 @@ This data type can be substituted by any other data type.
 > The Any Data type cannot be used for declaring constructs in AL. Any is a type that is used for the parameters or return type of methods in the platform.
 
 
-## See Also  
+## Related information  
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -91,7 +91,7 @@ var
     Text001: Label 'The item was not found.';
 ```  
 
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

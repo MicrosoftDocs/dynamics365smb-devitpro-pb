@@ -47,7 +47,7 @@ The following example creates the number sequence `MyNumberSequence` that starts
 ```al
 NumberSequence.Insert('MyNumberSequence', 0, 10, false);
 ```
-## See Also
+## Related information
 [NumberSequence Data Type](numbersequence-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

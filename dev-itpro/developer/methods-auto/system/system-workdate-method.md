@@ -63,7 +63,7 @@ The code sets the work date to January 1, 2018, and returns the new date in a me
  **The work date is: 01/01/18**
 
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

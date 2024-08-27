@@ -36,7 +36,7 @@ The following methods are available on instances of the FilterPageBuilder data t
 |[SetView(Text, Text)](filterpagebuilder-setview-method.md)|Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page. The view contains all fields that have default filters, but does not contain fields without filters.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

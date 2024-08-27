@@ -47,7 +47,7 @@ Use this method to set a constant value for a field when copying data in rows or
 
 [!INCLUDE[data-transfer-example](../../../developer/includes/data-transfer-example.md)]
 
-## See Also
+## Related information
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

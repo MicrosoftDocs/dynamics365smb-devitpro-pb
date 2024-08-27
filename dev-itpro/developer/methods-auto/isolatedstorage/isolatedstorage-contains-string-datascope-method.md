@@ -37,7 +37,7 @@ The scope in which to check for the existence of a value with the given key. If 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [IsolatedStorage Data Type](isolatedstorage-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

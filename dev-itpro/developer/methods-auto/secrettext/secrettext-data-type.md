@@ -33,6 +33,6 @@ The following methods are available on instances of the SecretText data type.
 |[Unwrap()](secrettext-unwrap-method.md)|Returns the text contained text inside the secret text as a plain text value. This method exists for compatibility reasons and its use is discouraged as it can lead to secret exposure.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

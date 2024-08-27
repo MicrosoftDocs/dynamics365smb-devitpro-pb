@@ -50,7 +50,7 @@ The **SaveAsXML** method can be called at any place in the code and does not req
 
 For example code on how to use Query.SaveAsXml with an OutStream object, see [Query.SaveAsXml(Integer, OutStream) Method](query-saveasxml-integer-outstream-method.md).
 
-## See Also
+## Related information
 
 [Query.SaveAsXml(Integer, OutStream) Method](query-saveasxml-integer-outstream-method.md)  
 [Query Data Type](query-data-type.md)  

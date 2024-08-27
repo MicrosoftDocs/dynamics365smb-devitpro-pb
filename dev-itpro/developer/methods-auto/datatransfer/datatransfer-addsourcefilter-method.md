@@ -51,7 +51,7 @@ Use this method when copy data in rows or fields from one table to another table
 
 [!INCLUDE[data-transfer-example](../../../developer/includes/data-transfer-example.md)]
 
-## See Also
+## Related information
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

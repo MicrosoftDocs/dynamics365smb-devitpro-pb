@@ -65,7 +65,7 @@ end;
   
 Use the [CalcFields Method \(Record\)](../../methods-auto/record/record-calcfields-method.md) to calculate the BlobField. A BlobField is a binary large object \(maximum size 2 GB\) and must be calculated if you want to use it in AL or display it in the application.  
 
-## See Also
+## Related information
 
 [BigText Data Type](bigtext-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

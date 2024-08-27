@@ -26,6 +26,6 @@ The following methods are available on instances of the RecordId data type.
 |[TableNo()](recordid-tableno-method.md)|Gets the table number of the table that is identified by RecordID. This function returns an error if the record is blank.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

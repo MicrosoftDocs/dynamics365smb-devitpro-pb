@@ -54,7 +54,7 @@ The output of this example is as follows:
 > [!NOTE]  
 > The serial number depends on your licensed version of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. The serial number shown here is an example.
 
-## See Also
+## Related information
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

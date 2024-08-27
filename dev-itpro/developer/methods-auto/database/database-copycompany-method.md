@@ -54,7 +54,7 @@ The following example is based on the **Copy Company** batch job, which is part 
 CopyCompany(Name, NewCompanyName);  
 ```  
 
-## See Also
+## Related information
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

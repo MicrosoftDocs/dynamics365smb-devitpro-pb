@@ -65,7 +65,7 @@ codeunit 50100 PBTWaitCodeunit
 
 ```
 
-## See Also
+## Related information
 
 [Page Background Tasks](../../devenv-page-background-tasks.md)  
 [Page Data Type](page-data-type.md)  

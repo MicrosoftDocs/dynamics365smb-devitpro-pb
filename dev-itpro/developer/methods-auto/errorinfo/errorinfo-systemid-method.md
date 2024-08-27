@@ -83,7 +83,7 @@ begin
 end
 ```
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Actionable errors](../../devenv-actionable-errors.md)  

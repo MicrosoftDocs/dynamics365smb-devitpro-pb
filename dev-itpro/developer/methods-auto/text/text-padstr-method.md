@@ -93,7 +93,7 @@ end;
   
  **>Fourwwwwwwwwwww\< has the length 15**  
 
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

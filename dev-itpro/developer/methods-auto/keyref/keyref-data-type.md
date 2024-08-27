@@ -28,6 +28,6 @@ The following methods are available on instances of the KeyRef data type.
 |[Record()](keyref-record-method.md)|Returns a RecordRef for the current record referred to by the key.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

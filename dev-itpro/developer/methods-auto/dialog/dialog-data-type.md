@@ -41,6 +41,6 @@ The following methods are available on instances of the Dialog data type.
 |[Update([Integer] [, Any])](dialog-update-method.md)|Updates the value of a '#'-or '@' field in the active window.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

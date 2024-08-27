@@ -63,7 +63,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 [Using Partial Records](../../devenv-partial-records.md)  
 [RecordRef Data Type](recordref-data-type.md)  

@@ -43,7 +43,7 @@ Use this method to test if a session has completed or is still active, for examp
 >The method looks for sessions on the local machine.
 
 
-## See Also
+## Related information
 [Session Data Type](session-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

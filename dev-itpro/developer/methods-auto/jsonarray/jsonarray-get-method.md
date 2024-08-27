@@ -49,7 +49,7 @@ A variable of type JsonToken that will contain the result if the operation is su
 
 The operation will fail if the Index is smaller than 0 or greater or equal than JsonArray.Count.
 
-## See Also
+## Related information
 [JsonArray Data Type](jsonarray-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

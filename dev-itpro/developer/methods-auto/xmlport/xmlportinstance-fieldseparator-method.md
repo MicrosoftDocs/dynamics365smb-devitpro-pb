@@ -39,7 +39,7 @@ The FieldSeparator used when running, importing or exporting the XmlPort.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [FieldSeparator Property](../../properties/devenv-fieldseparator-property.md)  
 [Xmlport Data Type](xmlport-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

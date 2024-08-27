@@ -36,7 +36,7 @@ Whether to enable or disable a key. Keys that are created as disabled cannot be 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Database Data Type](database-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

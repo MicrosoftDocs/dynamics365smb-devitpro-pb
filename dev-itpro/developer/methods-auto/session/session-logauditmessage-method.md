@@ -63,7 +63,7 @@ Set of additional dimensions, specified as a dictionary, that will be emitted to
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Session Data Type](session-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
