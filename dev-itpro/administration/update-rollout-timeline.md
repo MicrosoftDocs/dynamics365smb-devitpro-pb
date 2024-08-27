@@ -29,34 +29,44 @@ There are two major update cycles per year, with major releases every April and 
 The preview period allows for testing of the new functionality before the version is made available as update to your environment. Administrators can create a Sandbox environment from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] on the new version, for example to try out new functionality or test compatibility of extensions in a Cloud environment. This period typically starts a month before the release of the new major version, i.e. every March and September. Learn more about [preparing for major updates with preview environments](preview-environments.md).
 
 ### Update period
+
+[This section is prerelease documentation and is subject to change.]
+
+> [!IMPORTANT]
+>
+> - The 5-month update period is a production-ready preview feature and only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.md).
+> - Partner-localized environments have a 60-day update period that is expected to end in the first half of December 2024.
+> - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
+
 The update period starts when a new major version is generally available, typically the first workday of every April and every October. From general availability any new environments are created on the new major version. The new major version is made available as update to existing environments around a week after general availability; the exact timing may differ per environment. When a new major version is made available as update on your environment Microsoft schedules the update to take place around a week later; the exact timing may differ per environment.
 
 The update period lasts for five calendar months, ending every September for update periods that start in April and ending every March for update periods that start in October. Administrators can reschedule the update to any date within the update period from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. Learn more about [rescheduling updates](tenant-admin-center-update-management.md).
 
 Scheduled update attempts that do not succeed are automatically rescheduled for seven days later, and can be rescheduled by administrators to any other date within the update period. For more information, see the [failed updates and rescheduling](#failed-updates-and-rescheduling) section.
 
-> [!IMPORTANT]
-> For 2024 release wave 2, the 5-month update period is in [public preview](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md) and only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.ms).
->
-> Partner-localized environments have a 60-day update period for the 25.0 update which is expected to end in the first half of December 2024.
-
 [Notification recipients](tenant-admin-center-notifications.md) receive an email notification and environments that have [enabled telemetry](telemetry-enable-application-insights.md) receive a signal with the [LC0100 tag](telemetry-environment-lifecycle-trace.md#environment-update-available-for-scheduling) when a new version has been made available as update on the environment.
 
 ### Grace period
-The grace period starts when the update period ends and lasts for one month; it takes place every September for the update period that starts in April and every March for the update period that starts in October. During the grace period it is not possible to reschedule an update to a later date; scheduled environment updates that do not succeed are automatically rescheduled by Microsoft for a new attempt seven days later. Administrators can only reschedule this new attempt to an earlier date. To ensure action is taken during the grace period to ensure the environment update succeeds, Microsoft alerts administrators in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and may send in-product notifications to end-users about the upcoming enforced update period. For more information, see [when apps or PTEs can't be updated by Microsoft](../developer/app-maintain.md#when-apps-or-ptes-cant-be-updated-by-microsoft).
+
+[This section is prerelease documentation and is subject to change.]
 
 > [!IMPORTANT]
-> For 2024 release wave 2, the 1-month grace period is in [public preview](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md) and only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.ms).
 >
-> Partner-localized environments have a 3-month grace period that is expected to end in the first half of March 2025.
+> - The 5-month update period is a production-ready preview feature and only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.md).
+> - Partner-localized environments have a 3-month update period that is expected to end in the first half of March 2025.
+> - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
+
+The grace period starts when the update period ends and lasts for one month; it takes place every September for the update period that starts in April and every March for the update period that starts in October. During the grace period it is not possible to reschedule an update to a later date; scheduled environment updates that do not succeed are automatically rescheduled by Microsoft for a new attempt seven days later. Administrators can only reschedule this new attempt to an earlier date. To ensure action is taken during the grace period to ensure the environment update succeeds, Microsoft alerts administrators in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and may send in-product notifications to end-users about the upcoming enforced update period. For more information, see [when apps or PTEs can't be updated by Microsoft](../developer/app-maintain.md#when-apps-or-ptes-cant-be-updated-by-microsoft).
 
 > [!TIP]
 > We recommend that you keep any apps and per-tenant extensions ready to update at any given time, and that you actively test compatibility. Developers can get tips and guidance in the developer docs here: [Maintain AppSource Apps and Per-Tenant Extensions](../developer/app-maintain.md). Admins can install, update, and uninstall apps in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] as described here: [Managing Apps](tenant-admin-center-manage-apps.md).
 
 ### Enforced update period
+
 The enforced period starts when the grace period ends. During this period any extensions that are causing the update to the next major version to fail, for example because of compatibility issues, may be uninstalled from the environment automatically in order for the update to succeed. Data belonging to extensions that are uninstalled automatically during this period is not deleted from the environment and can be recovered by installing a version of the extension that is compatible after the update succeeds. For more information, see [when apps or PTEs can't be updated by Microsoft](../developer/app-maintain.md#when-apps-or-ptes-cant-be-updated-by-microsoft).
 
 ## Minor updates
+
 Minor updates are released every month in which there is no major update release, i.e. every month except April and October. These updates contain application changes that are critical improvements to the service, including regulatory updates. Similar to major updates, minor updates are made generally available in the beginning of each calendar month. From general availability new environments are created on the new minor version. The new minor version is made available as update to environments on the previous version around a week after general availability; the exact timing may differ per environment. When a new minor version is made available as update on your environment Microsoft schedules the update to take place around a week later; the exact timing may differ per environment.
 
 It is not possible to skip versions; environments that are not on the latest version when a new minor version becomes available will have to update to every intermediate version before they can update to the latest version. It may take up to an hour for the next version to become as available as update on your environment upon completing an update to a version that is not the latest generally available.
