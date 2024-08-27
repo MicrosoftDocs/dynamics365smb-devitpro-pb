@@ -117,7 +117,7 @@ codeunit 50113 CreateCustomer
 > 
 > Do not use the **Permissions** property to give extra permissions to an object that you would like your users to be able to modify. These users might not have direct permission to perform these operations. This is why you should be careful when you use the **Permissions** property for tables and pages.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)  

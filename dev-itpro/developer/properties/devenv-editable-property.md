@@ -63,7 +63,7 @@ Editable = "Balance Due (LCY)" > "Credit Limit (LCY)"
 > [!NOTE]  
 > You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Editable** property, it must be set as a global page variable.  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Page Properties](./devenv-properties.md)  

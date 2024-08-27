@@ -42,6 +42,6 @@ This property is mostly used in the case where the key definition is for a SIFT 
 > [!NOTE]  
 > You cannot disable this property on the primary key of a table. This key is always created in SQL Server.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

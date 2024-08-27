@@ -54,7 +54,7 @@ UsageCategory = ReportsAndAnalysis;
 
 The [AccessByPermission property](devenv-accessbypermission-property.md) and [ApplicationArea Property](devenv-applicationarea-property.md) are optional properties, which can be applied to set restrictions on an object accessibility, when you add the **UsageCategory** property. 
 
-## See Also
+## Related information
 
 [Add pages and reports to Tell me](../devenv-al-menusuite-functionality.md)  
 [Properties](devenv-properties.md)  

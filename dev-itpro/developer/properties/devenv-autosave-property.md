@@ -36,6 +36,6 @@ If AutoSave is set to **false**, then an imported record is not automatically wr
   
 If a record already exists and AutoSave is set to **true**, then the values of the [AutoReplace Property](devenv-autoreplace-property.md) and the [AutoUpdate Property](devenv-autoupdate-property.md) determine whether the imported record overwrites or updates the existing record. If the record already exists and the values of the AutoReplace property and the AutoUpdate property are both **false**, then an error occurs.  
   
-## See Also  
+## Related information  
 [AutoReplace Property](devenv-autoreplace-property.md)   
 [AutoUpdate Property](devenv-autoupdate-property.md)

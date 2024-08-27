@@ -57,7 +57,7 @@ When calling an API page or API query, the property value can be overwritten by 
 
 [!INCLUDE[database_access_intent_note](../../includes/include-database-access-intent-note.md)]
 
-## See Also  
+## Related information  
 
 [Using Read Scale-Out for Better Performance](../../administration/database-read-scale-out-overview.md)  
 [Optimizing SQL Server Performance](../../administration/optimize-sql-server-performance.md)  

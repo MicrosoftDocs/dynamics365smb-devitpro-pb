@@ -41,7 +41,7 @@ For more information, see the [AboutTitle Property](devenv-abouttitle-property.m
 
 [!INCLUDE[aboutTeachingTips](../includes/include-about-teaching-tips.md)]
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

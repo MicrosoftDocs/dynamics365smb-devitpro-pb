@@ -35,7 +35,7 @@ Sets the mode in which the page is run. Choose between View, Edit, or Create.
 RunPageMode = Edit;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [RunObject Property](devenv-runobject-property.md)

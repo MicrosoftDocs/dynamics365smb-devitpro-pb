@@ -39,7 +39,7 @@ This property is optional. If left blank, the script defined by [StartupScript](
 RecreateScript = 'js/chartCached.js';
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

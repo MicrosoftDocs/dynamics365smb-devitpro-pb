@@ -36,6 +36,6 @@ This property sets the default value of the [FieldValidate Property](devenv-fiel
   
 If you change the value of the **FieldValidate** property, the change does not affect the value of the **DefaultFieldsValidation** property. This means that **FieldValidate** can override **DefaultFieldsValidation**, but that it can also inherit the default value of **DefaultFieldsValidation**.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

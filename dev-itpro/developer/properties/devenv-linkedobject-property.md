@@ -34,6 +34,6 @@ LinkedObject = true;
 
 When you set the LinkedObject property to **true**, the [LinkedInTransaction Property](devenv-linkedintransaction-property.md) becomes available.  
   
-## See Also
+## Related information
 
 [Table Properties](devenv-table-properties.md)

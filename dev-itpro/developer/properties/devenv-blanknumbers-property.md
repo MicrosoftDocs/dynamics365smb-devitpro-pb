@@ -37,5 +37,5 @@ Indicates whether the system will clear a range of numbers as it formats them.
 BlankNumbers = BlankNegAndZero;
 ```
 
-## See Also  
+## Related information  
  [BlankZero Property](devenv-blankzero-property.md)

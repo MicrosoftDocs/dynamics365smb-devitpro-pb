@@ -121,6 +121,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 }
 ```
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

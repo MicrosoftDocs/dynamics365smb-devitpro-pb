@@ -63,7 +63,7 @@ You can change an existing table from **Normal** to **Temporary**. But the table
 
 For more information, see [Temporary Tables](../devenv-temporary-tables.md).
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md)  

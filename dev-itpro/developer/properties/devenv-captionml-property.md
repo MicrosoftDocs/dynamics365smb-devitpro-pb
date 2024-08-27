@@ -94,6 +94,6 @@ When the CaptionML property does not include an entry for the language used in t
     |Query objects|Name property|  
     |Query columns|CaptionML property of the underlying table field for the column|  
 
-## See Also  
+## Related information  
  [Caption Property](devenv-caption-property.md)   
  [Name Property](./devenv-properties.md)

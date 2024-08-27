@@ -36,7 +36,7 @@ At runtime, this property will override the hard limit that is set by the **Defa
 
 For more information on report limits, see [Report limits](../devenv-report-object.md#report-limits).
 
-## See Also  
+## Related information  
 
 [Report Properties](devenv-report-properties.md)  
 [Report Object](../devenv-report-object.md)  

@@ -38,6 +38,6 @@ Use the following properties to set parameters for the object you want to run:
 - [RunPageView Property](devenv-runpageview-property.md)  
 - [RunPageLink Property](devenv-runpagelink-property.md)  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  

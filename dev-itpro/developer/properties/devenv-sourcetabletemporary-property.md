@@ -32,6 +32,6 @@ Sets whether the source table is a temporary table.
 SourceTableTemporary = true;
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   

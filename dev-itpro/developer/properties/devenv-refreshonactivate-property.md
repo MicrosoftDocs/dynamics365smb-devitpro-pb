@@ -31,7 +31,7 @@ RefreshOnActivate = true;
 
 On RoleCenters, modifying data in one part will automatically refresh data in any other parts which have the RefreshOnActivate property set to **true**.
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Page Properties](./devenv-properties.md)

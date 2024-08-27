@@ -73,7 +73,7 @@ report 1306 "Standard Sales - Invoice"
 ```
 
 
-## See Also
+## Related information
 
 [Creating a Word layout report](../devenv-howto-report-layout.md)   
 [Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)   

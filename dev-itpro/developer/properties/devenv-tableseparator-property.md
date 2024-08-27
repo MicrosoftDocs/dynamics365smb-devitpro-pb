@@ -41,6 +41,6 @@ LF refers to the character with ASCII value 10.
   
 You can set the table separator in AL code so that the XMLport can import and export tables with different separators. For example, if your XMLport must import from a file or stream where one table uses a single **NewLine** elements and another uses two **NewLine** elements, you can change the table separator at run time.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

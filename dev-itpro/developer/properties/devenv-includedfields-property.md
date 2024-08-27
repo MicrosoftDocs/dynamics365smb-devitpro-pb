@@ -38,7 +38,7 @@ Fields that are part of a **IncludedFields** definition are not used when search
 
 Using this property can improve query performance. For more information, see [Table Keys](../devenv-table-keys.md).
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

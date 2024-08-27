@@ -42,7 +42,7 @@ We recommend that you design tests to be independent of each other. Tests might 
 > [!NOTE]  
 > If you specify that you want to roll back database changes, then all database changes are rolled back, including changes that were explicitly committed to the database during the test by using the [Commit Method](../methods-auto/database/database-commit-method.md).  
 
-## See Also
+## Related information
 
 [TestPermissions Property](devenv-testpermissions-property.md)  
 [Properties](devenv-properties.md)

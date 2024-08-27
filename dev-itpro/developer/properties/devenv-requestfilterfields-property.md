@@ -45,6 +45,6 @@ If you do not want users to add filters on fields, then use one of the following
 > [!NOTE]  
 > On the Windows client, users can specify filters, even if **RequestFilterFields** is not specified.
 
-## See Also
+## Related information
 
 [Request Pages](../devenv-request-pages.md)  

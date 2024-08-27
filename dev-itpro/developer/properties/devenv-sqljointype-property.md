@@ -45,7 +45,7 @@ Except for `CrossJoin`, the **SQLJoinType** property works together with the **D
   
 For more information, see [Linking and Joining Data Items to Define the Query Dataset](../devenv-query-links-joins.md).
 
-## See Also
+## Related information
 
 [Query Object](../devenv-query-object.md)  
 [Properties](devenv-properties.md)

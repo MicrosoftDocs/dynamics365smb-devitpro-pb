@@ -52,7 +52,7 @@ The link is updated when the current record changes.
   
 For an example of how to use `SubPageLink` to update the content of a FactBox in the client as different items are selected in a list page. <!-- See [Walkthrough: Adding a FactBox to the Customer List Page](../devenv-Walkthrough-Adding-a-FactBox-to-the-Customer-List-Page.md).  -->
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [SubPageView Property](devenv-subpageview-property.md)

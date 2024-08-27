@@ -75,7 +75,7 @@ The fields must be of a numeric datatype \(Decimal, Integer, BigInteger, or Dura
   
 Changing existing keys may affect the behavior of the application since other parts of your application may depend on the existence of certain keys.  
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [MaintainSIFTIndex Property](devenv-maintainsiftindex-property.md)   

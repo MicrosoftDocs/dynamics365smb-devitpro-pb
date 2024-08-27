@@ -43,7 +43,7 @@ This property is only applicable when the [Promoted Property](devenv-promoted-pr
   
 This property in not relevant on the tablet and phone because only promoted actions are displayed on these clients.  
   
-## See Also  
+## Related information  
 
 [Actions Overview](../devenv-actions-overview.md)  
 [PromotedOnly Property](devenv-promotedonly-property.md)  

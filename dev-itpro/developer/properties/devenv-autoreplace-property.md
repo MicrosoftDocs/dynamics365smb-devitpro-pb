@@ -34,6 +34,6 @@ AutoReplace = true;
 > [!WARNING]  
 >  If this property is set to **true**, then the [AutoUpdate Property](devenv-autoupdate-property.md) has no effect.  
   
-## See Also  
+## Related information  
  [AutoUpdate Property](devenv-autoupdate-property.md)   
  [AutoSave Property](devenv-autoSave-property.md)

@@ -27,7 +27,7 @@ Specifies the version of the .NET assembly.
 Version = '4.0.0.0';
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Control Add-In Object](../devenv-control-addin-object.md)  

@@ -65,7 +65,7 @@ ObsoleteReason = 'Not Needed';
 
 Use this property to inform developers about an object or element that will become obsolete in time or is already obsolete. Use the [ObsoleteTag Property](devenv-obsoletetag-property.md) to specify additional information which can be valuable to other developers.
 
-## See Also
+## Related information
 
 [ObsoleteState](devenv-obsoletestate-property.md)  
 [ObsoleteTag](devenv-obsoletetag-property.md)  

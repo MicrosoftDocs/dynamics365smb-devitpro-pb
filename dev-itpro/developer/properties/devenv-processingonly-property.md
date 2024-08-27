@@ -38,6 +38,6 @@ When **ProcessingOnly** is set to **true**, then the **Advanced** tab on the req
 > [!NOTE]  
 > In versions before Business Central 2022 release wave 2, if **ProcessingOnly** is **true**, then the **Print** and **Preview** options on the request page are replaced by an **OK** button.
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

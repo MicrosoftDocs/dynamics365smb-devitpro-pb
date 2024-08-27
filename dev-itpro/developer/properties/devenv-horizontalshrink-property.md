@@ -37,7 +37,7 @@ HorizontalShrink = true;
 MinimumWidth = 100;
 ```  
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

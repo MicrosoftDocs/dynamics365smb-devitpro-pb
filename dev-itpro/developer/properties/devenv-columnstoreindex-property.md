@@ -36,7 +36,7 @@ Using a nonclustered columnstore index can improve the performance for analytica
 
 For more information, see [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview).
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [Table Keys](../devenv-table-keys.md)  

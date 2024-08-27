@@ -27,7 +27,7 @@ Specifies the public key token of the .NET assembly.
 PublicKeyToken = 'b77e3c561734a029';
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

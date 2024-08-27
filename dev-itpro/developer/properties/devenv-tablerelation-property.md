@@ -114,7 +114,7 @@ tableextension 50135 TableWithRelationExt extends TableWithRelation
 ```
 
   
-## See Also
+## Related information
 
 [ValidateTableRelation Property](devenv-validatetablerelation-property.md)  
 [TestTableRelation Property](devenv-testtablerelation-property.md)

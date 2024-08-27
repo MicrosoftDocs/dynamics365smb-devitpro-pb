@@ -29,7 +29,7 @@ Sets the provider for a FactBox. This property enables you to create a link from
 Provider = PartName;
 ```
 
-## See Also
+## Related information
 
 [Page Object](../devenv-page-object.md)
 [Properties](devenv-properties.md)

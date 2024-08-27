@@ -46,6 +46,6 @@ If you design an XMLport that is used to import or export data in different form
   
 For example, your XMLport can export data in two different file formats. One format contains 5 columns, and the other contains 10 columns. Instead of duplicating the maximum number of columns and writing code that skips any redundant columns, you can set up a single column, make it unbound, and then specify in code when to break to the next element.  
   
-## See Also  
+## Related information  
 
 [BreakUnbound Method \(XMLport\)](../methods-auto/xmlport/xmlportinstance-BREAKUNBOUND-method.md)

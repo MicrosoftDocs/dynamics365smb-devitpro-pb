@@ -51,7 +51,7 @@ dataset
 
 The corresponding label in the dataset will then be called *No_ItemCaption*.
 
-## See Also  
+## Related information  
 
 [Defining a report dataset](../devenv-report-dataset.md)   
 [Report labels](../devenv-report-object.md#report-labels)  

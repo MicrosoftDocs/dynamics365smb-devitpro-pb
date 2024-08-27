@@ -40,7 +40,7 @@ You use the **TopNumberOfRows** property to limit the resulting dataset to the f
   
 You can also specify the number of rows to include in the dataset by calling the [TopNumberOfRows Method](../methods-auto/query/queryinstance-TopNumberOfRows-method.md) from AL. The TopNumberOfRows method will overwrite the **TopNumberOfRows** property setting.  
   
-## See Also
+## Related information
 
 [Query Object](../devenv-query-object.md)  
 [Linking and Joining Data Items](../devenv-query-links-joins.md)  

@@ -50,7 +50,7 @@ report 50124 MyWordReport
 }
 ```
 
-## See also
+## Related information
 
 [Creating a Word Layout Report](../devenv-howto-report-layout.md)  
 [RDLCLayout Property](devenv-rdlclayout-property.md)  

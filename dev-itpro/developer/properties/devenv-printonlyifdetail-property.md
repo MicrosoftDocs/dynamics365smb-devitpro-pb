@@ -82,6 +82,6 @@ If you set **PrintOnlyIfDetail** to **false**, then the report outputs the follo
 |Order|46897889|101015||…|  
 |Order|10000|101016||…|  
   
-## See Also  
+## Related information  
 
 [PrintOnlyIfDetail Method (Report)](../methods-auto/report/reportinstance-printonlyifdetail-method.md)

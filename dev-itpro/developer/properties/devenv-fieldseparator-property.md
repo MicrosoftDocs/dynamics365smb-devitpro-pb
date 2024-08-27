@@ -53,7 +53,7 @@ LF refers to the character with ASCII value 10.
   
 You can set the field separator in AL code so that the XMLport can import and export records with different separators. For example, if your XMLport must import from a file or stream where one record uses commas and another uses **TAB**, you can change the field separator property at run time.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [Format Property (XMLports)](devenv-format-property.md)

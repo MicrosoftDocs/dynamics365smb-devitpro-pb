@@ -44,6 +44,6 @@ VerticalStretch = true;
 MaximumHeight = 500;
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)   

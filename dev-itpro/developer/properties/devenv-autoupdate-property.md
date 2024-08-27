@@ -37,6 +37,6 @@ Set **AutoUpdate** to **true** when you import a file with partial information. 
 > [!WARNING]  
 > If this property is set to **true**, then the [AutoReplace Property](devenv-autoreplace-property.md) has no effect.  
 
-## See Also  
+## Related information  
 [AutoReplace Property](devenv-autoReplace-property.md)   
 [AutoSave Property](devenv-autosave-property.md)

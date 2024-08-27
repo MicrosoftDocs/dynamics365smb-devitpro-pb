@@ -31,5 +31,5 @@ Sets a value that specifies whether users can delete records while using the pag
 DeleteAllowed = false;
 ```
   
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)

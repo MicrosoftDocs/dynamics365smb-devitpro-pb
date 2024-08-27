@@ -51,7 +51,7 @@ The same result can be obtained by placing this AL statement in the [OnPreXMLIte
 SetRange("Sell-to Customer No.",Customer."No.");  
 ```  
   
-## See Also
+## Related information
 
 [LinkTable Property](devenv-linktable-property.md)   
 [LinkTableForceInsert Property](devenv-linktableforceinsert-property.md)

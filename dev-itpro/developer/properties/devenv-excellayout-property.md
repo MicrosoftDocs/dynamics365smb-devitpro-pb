@@ -46,7 +46,7 @@ report 50124 MyExcelReport
 }
 ```
 
-## See also
+## Related information
 
 [Creating an Excel layout report](../devenv-howto-excel-report-layout.md)  
 [WordLayout Property](devenv-wordlayout-property.md)  

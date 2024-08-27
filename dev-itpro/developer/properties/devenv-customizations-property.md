@@ -36,7 +36,7 @@ Page customizations allow you to add changes to a page's layout and actions. You
 
 Page customizations only apply to the RoleCenter they are specified for. In order to see them, in [!INCLUDE[prod_long](../includes/prod_long.md)] under **My Settings**, **Role Center** change to the specific RoleCenter for which a page customization is defined.
 
-## See Also  
+## Related information  
 
 [Profile Object](../devenv-profile-object.md)  
 [Page Customization Object](../devenv-page-customization-object.md)

@@ -31,6 +31,6 @@ Sets the value to determine whether users can modify records while using this pa
 ModifyAllowed = false;
 ``` 
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

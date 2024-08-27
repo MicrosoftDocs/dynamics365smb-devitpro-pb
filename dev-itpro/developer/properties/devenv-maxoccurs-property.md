@@ -56,6 +56,6 @@ The minimum number can be either 1 or 0.
   
 The maximum number can be either 1 or infinite.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

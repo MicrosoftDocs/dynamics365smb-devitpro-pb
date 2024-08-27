@@ -79,7 +79,7 @@ view(UniqueView)
 > [!NOTE]  
 > `SharedLayout = false` must be specified in order to use a custom layout on the view (the layout section). A compiler error is reported otherwise.
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Views](../devenv-views.md)

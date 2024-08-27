@@ -30,6 +30,6 @@ Sets a value that specifies whether a user must leave a record before it is inse
 DelayedInsert = false;
 ```
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

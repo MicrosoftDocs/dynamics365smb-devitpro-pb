@@ -33,6 +33,6 @@ EntityName = 'Customer';
 > [!NOTE]
 > The value `EntityMetadata` is reserved and using it for the **EntityName Property** will result in a compiler error.
   
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

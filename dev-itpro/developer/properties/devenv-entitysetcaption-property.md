@@ -22,7 +22,7 @@ Sets the caption of a set of entities.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## See Also
+## Related information
 
 [EntitySetName Property](devenv-entitysetname-property.md)  
 [Properties](devenv-properties.md)  

@@ -33,7 +33,7 @@ Sets whether the text that is specified by the Caption Property is displayed for
 ShowCaption = false;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [Caption Property](devenv-caption-property.md)  

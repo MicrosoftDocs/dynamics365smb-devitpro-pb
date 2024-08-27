@@ -52,6 +52,6 @@ You can configure the text file's default settings by using the properties [Text
 [FieldSeparator Property](devenv-fieldseparator-property.md) and
 [FieldDelimiter Property](devenv-fielddelimiter-property.md).
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

@@ -35,6 +35,6 @@ UseLax = true;
 
 Extra elements and attributes are often added to XML documents when they're processed in software systems. If this property is set to **Yes**, the XML document will validate as long as the document meets the minimum schema definition. When extra elements and attributes are included in a namespace, the XML document will successfully validate against the schema. A validation error will occur, if not. For more information about namespaces, see [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

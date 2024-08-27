@@ -33,7 +33,7 @@ Notes from meeting:
 The list of FlowFields, what you describe here is just a list of fields that are CalcFields that you want to have calculated if you have [AutoCalcField property](devenv-autocalcfield-property.md) enabled. 
 --> 
   
-## See Also  
+## Related information  
 [AutoCalcField Property](devenv-autocalcfield-property.md)   
 [FlowFields](../devenv-flowfields.md)   
 [Properties](devenv-properties.md)  

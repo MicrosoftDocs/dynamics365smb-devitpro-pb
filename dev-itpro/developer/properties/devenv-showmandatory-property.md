@@ -46,7 +46,7 @@ The **ShowMandatory** property controls marking the page field with a red asteri
   
 The **NotBlank** property can be used to mark the UI on primary key fields with a red asterisk and to enforce a validation error. For more information, see [NotBlank Property](devenv-notblank-property.md).  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [NotBlank Property](devenv-notblank-property.md)

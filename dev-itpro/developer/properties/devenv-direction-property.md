@@ -38,6 +38,6 @@ Sets the XmlPort to import, export, or import and export data in XML format.
 Direction = Import;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

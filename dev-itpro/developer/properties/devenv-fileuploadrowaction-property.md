@@ -19,6 +19,6 @@ Specifies the File Upload Action to be invoked when a file is uploaded to the ro
 -   Page Group
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

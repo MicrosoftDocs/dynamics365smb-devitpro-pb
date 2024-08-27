@@ -36,5 +36,5 @@ ChangeTrackingAllowed = true;
 > From Wave 1 2024 setting this property has no effect, as delta links are no longer supported.
 
  
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)  

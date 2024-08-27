@@ -33,7 +33,7 @@ EntitySetName = 'Customers';
 > [!NOTE]
 > The value `EntityDefinitions` is reserved and using it for the **EntitySetName Property** will result in a compiler error.
 
-## See Also
+## Related information
 
 [EntityName Property](devenv-entityname-property.md)  
 [Properties](devenv-properties.md)  

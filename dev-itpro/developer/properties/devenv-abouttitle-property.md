@@ -53,7 +53,7 @@ Sets the large-font title that appears in a teaching tip in the UI.
 AboutTitle = 'About sales invoices'; 
 ```
 
-## See Also  
+## Related information  
 [Teaching tips and in-app tours for onboarding users](../../administration/onboarding-teaching-tips-tours.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

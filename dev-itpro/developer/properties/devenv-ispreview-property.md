@@ -26,7 +26,7 @@ The `IsPreview` property displays a note in the UI that the page or feature is c
 
 Setting `IsPreview` to `true` has no further impact across Business Central. It has no relation to the private or public preview programs for any Microsoft products, nor is it exclusive to sandbox environments.
 
-## See Also
+## Related information
 
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

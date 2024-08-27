@@ -58,7 +58,7 @@ The exception is the value *API*. Pages of this type are used to generate web se
 
 When the **PageType** property is set to **PromptDialog**, you must also set the **PromptMode** property to specify the current mode of the page. For more information, see [PromptMode Property](devenv-promptmode-property.md). For more information about the **PromptDialog** page type, see [PromptDialog page type](../devenv-page-type-promptdialog.md).
 
-## See Also  
+## Related information  
 
 [Page Properties](./devenv-properties.md)  
 [Properties](devenv-properties.md)  

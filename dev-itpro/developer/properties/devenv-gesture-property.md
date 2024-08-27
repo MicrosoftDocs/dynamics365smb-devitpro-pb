@@ -41,7 +41,7 @@ Gesture = None;
 
 You typically use the Gesture property on list type pages for executing an action on items in a repeater control.
 
-## See Also
+## Related information
 
 [Implementation Tips for Gestures](../devenv-implementation-tips-gestures-property.md)  
 [Introducing the Dynamics 365 Business Central Mobile App](../devenv-introducing-business-central-mobile-app.md)   

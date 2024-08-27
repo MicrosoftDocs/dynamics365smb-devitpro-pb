@@ -38,6 +38,6 @@ If `UseRequestPage` is **false**, then a request page is not shown. The user can
   
 You can override the setting of the `UseRequestPage` property at runtime by setting the *ReqWindow* parameter of the [Run (Report) Method](../methods-auto/report/report-run-method.md), [RunModal (Report) Method](../methods-auto/report/report-runmodal-method.md), or [Run (XMLport) Method](../methods-auto/xmlport/xmlport-run-method.md).
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  

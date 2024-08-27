@@ -40,7 +40,7 @@ MaxValue = 100;
 
 The field setting is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **MaxValue** is not validated.  
   
-## See Also  
+## Related information  
 
 [MinValue Property](devenv-minvalue-property.md)   
 [NotBlank Property](devenv-notblank-property.md)   

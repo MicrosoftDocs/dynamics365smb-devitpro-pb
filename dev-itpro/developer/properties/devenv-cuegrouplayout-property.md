@@ -50,7 +50,7 @@ cuegroup(SalesCueContainer)
 } 
 ```
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)
 [Rowspan Property](devenv-rowspan-property.md)  

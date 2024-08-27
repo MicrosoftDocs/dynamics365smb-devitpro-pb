@@ -37,7 +37,7 @@ If records are usually inserted in the table through an external code unit funct
   
 The [OnInsert Trigger](../triggers-auto/table/devenv-oninsert-table-trigger.md) of the table is executed when a record is inserted by pasting.  
   
-## See Also  
+## Related information  
 
 [OnInsert Trigger](../triggers-auto/table/devenv-oninsert-table-trigger.md)
 [Properties](devenv-properties.md)

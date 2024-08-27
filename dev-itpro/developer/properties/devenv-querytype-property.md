@@ -34,7 +34,7 @@ Sets the type of query to create.
 QueryType = API;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Query Object](../devenv-query-object.md)

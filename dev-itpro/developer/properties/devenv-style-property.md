@@ -70,6 +70,6 @@ field("Code"; Code)
     }
 ```
 
-## See Also  
+## Related information  
 <!-- [How to: Style Field Text on a Page](../devenv-How-to-Style-Field-Text-on-a-Page.md)   -->
 [Properties](devenv-properties.md)

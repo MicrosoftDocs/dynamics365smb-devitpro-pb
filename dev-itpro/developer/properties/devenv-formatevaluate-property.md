@@ -65,7 +65,7 @@ This is an XMLport property and therefore applies to all the data that is being 
   
 For more information about formatting AL data types, see [Formatting Values, Dates, and Time](../devenv-format-property.md). For more information about evaluating variables, see [EVALUATE Method](../methods-auto/system/system-evaluate-method.md). For more information about using temporary tables, see [UseTemporary Property (XMLport)](devenv-usetemporary-xmlport-property.md).  
   
-## See Also  
+## Related information  
 
 [Format Property (XMLports)](devenv-format-property.md)  
 [Evaluate Method](../methods-auto/system/system-EVALUATE-method.md)  

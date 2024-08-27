@@ -19,6 +19,6 @@ Sets the ID of the Power Automate template triggered by this action.
 -   Page Custom Action
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -31,6 +31,6 @@ Sets whether an action should be viewed as an exit action in the lower part of t
 InFooterBar = false;
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

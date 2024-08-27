@@ -42,6 +42,6 @@ For example, if you enter 600 (6 millimeters) you would see a result similar to:
   
 (+)987654321  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

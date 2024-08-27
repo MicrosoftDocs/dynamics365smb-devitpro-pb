@@ -84,6 +84,6 @@ AutoFormatType = 0;
 DecimalPlaces = 1 : 3;
 ```
     
-## See Also
+## Related information
 
 [AutoFormatExpression Property](devenv-autoformatexpression-property.md)

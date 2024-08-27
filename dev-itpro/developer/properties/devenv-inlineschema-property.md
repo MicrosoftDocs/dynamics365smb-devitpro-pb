@@ -42,7 +42,7 @@ Inline schemas can be useful in many situations. You can use inline schemas in t
   
 - When there is so much diversity in the XML document and the schema. The document is easier to process if the schema is inside the XML document.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [XMLport Data Type](../methods-auto/library.md)

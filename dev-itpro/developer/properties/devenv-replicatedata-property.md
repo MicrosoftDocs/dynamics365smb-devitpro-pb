@@ -31,7 +31,7 @@ Specifies if the table should be replicated.
 ReplicateData = false;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Table Properties](devenv-table-properties.md)  

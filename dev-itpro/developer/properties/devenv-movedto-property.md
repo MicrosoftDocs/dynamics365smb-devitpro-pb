@@ -26,6 +26,6 @@ Specifies the destination extension Id when a table is moved to another extensio
 > [!IMPORTANT]
 > This feature is currently not available to partners, but will be with a future update.
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

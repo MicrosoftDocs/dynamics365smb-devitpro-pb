@@ -59,7 +59,7 @@ On pages, you use the **Enabled** property for group, part, field, and action co
 > [!NOTE]  
 > You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Enabled** property, it must be set as a global page variable.
 
-## See Also
+## Related information
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  

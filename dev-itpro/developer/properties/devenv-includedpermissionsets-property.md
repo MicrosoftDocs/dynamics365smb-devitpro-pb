@@ -31,7 +31,7 @@ IncludedPermissionSets = BASIC;
 
 You can also exclude permission sets by using the [ExcludedPermissionSets](devenv-excludedpermissionsets-property.md). For more information, see [Composing Permission Sets](../devenv-permissionset-composing.md).
 
-## See Also
+## Related information
 
 [ExcludedPermissionSets Property](devenv-excludedpermissionsets-property.md)  
 [PermissionSet Object](../devenv-permissionset-object.md)  

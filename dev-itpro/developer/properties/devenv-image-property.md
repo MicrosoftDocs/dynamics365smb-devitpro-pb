@@ -38,7 +38,7 @@ On **RoleCenter** type pages, the image property doesn't apply to actions that a
 
 [!INCLUDE[available_icons](../includes/include-available-icons.md)]
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Available icons](https://aka.ms/bcicons)   

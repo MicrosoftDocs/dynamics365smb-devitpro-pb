@@ -26,6 +26,6 @@ Specifies the culture of the .NET assembly.
 Culture = 'neutral';
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)   

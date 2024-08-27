@@ -34,6 +34,6 @@ You can specify multiple ranges of characters by entering the parameters in pair
   
 The setting for the field is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **CharAllowed** property is not validated.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

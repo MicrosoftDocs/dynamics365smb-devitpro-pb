@@ -28,7 +28,7 @@ Sets a date formula used to verify that the date the user enters is correct.
 
 For fields, this property only applies to text fields. In earlier versions of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], the property also applied to code fields, but this has been deprecated.
 
-## See Also
+## Related information
 
 [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md)  
 [Properties](devenv-properties.md)

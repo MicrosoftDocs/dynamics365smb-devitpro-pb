@@ -50,7 +50,7 @@ repeater(Control1)
 }
 ```
 
-## See Also
+## Related information
 
 [IndentationControl Property](devenv-indentationcontrols-property.md)  
 [ShowAsTree Property](devenv-showastree-property.md)  

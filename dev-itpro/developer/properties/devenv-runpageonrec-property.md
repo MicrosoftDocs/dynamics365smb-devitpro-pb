@@ -35,7 +35,7 @@ RunPageOnRec = true;
 
 For example, suppose the current page is the sales order and you are providing a way to see the sales statistics for the current customer. You would select RunObject in the PushAction property and use the [RunObject Property](devenv-runobject-property.md) to run the sales statistics page. In this property you could select Yes to display the same record on both pages.  
   
-## See Also  
+## Related information  
 
 [RunPageView Property](devenv-runpageview-property.md)   
 [RunPageLink Property](devenv-runpagelink-property.md)

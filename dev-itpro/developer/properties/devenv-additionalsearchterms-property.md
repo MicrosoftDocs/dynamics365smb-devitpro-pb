@@ -76,7 +76,7 @@ page 50100 MyItems
 }
 ```
 
-## See Also
+## Related information
 
 [Add pages and reports to Tell me](../devenv-al-menusuite-functionality.md)  
 [Properties](devenv-properties.md)   

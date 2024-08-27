@@ -37,7 +37,7 @@ You can later use the saved settings to consistently generate the same reports, 
 > [!NOTE]
 > Together with the [AllowScheduling Property](devenv-allowscheduling-property.md), this property also determines whether the report supports multiple previews. When both the **AllowScheduling** and **SaveValues** properties are set to **true**, users can preview the report from the request page as many times as the like, without having the request page close. This capability lets users change filters, see what the generated report will look like, and then try again. If either property is set to **false**, the report won't support multiple previews and the request page closes once the user previews the report. In this case, the request page includes a **Preview and Close** button instead of **Preview**.
 
-## See Also
+## Related information
 
 [Request Pages](../devenv-request-pages.md)  
 [Properties](devenv-properties.md)  

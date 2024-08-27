@@ -44,6 +44,6 @@ For more information about referencing assemblies, see [Adding Custom Code to a 
 
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] cannot verify assemblies and protect against malicious sources that may be harmful to your computer. You should set the EnableExternalAssemblies property to **true** only if you can ensure that assemblies on the report come from a trusted source.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

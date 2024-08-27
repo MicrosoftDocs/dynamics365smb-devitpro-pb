@@ -60,7 +60,7 @@ page 50101 SearchTestML
 }
 ```
 
-## See Also
+## Related information
 
 [Add pages and reports to Tell me](../devenv-al-menusuite-functionality.md)  
 [Properties](devenv-properties.md)  

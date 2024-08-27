@@ -36,7 +36,7 @@ HorizontalStretch = true;
 MaximumWidth = 800;
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

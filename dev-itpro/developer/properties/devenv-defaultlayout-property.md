@@ -48,7 +48,7 @@ A report object can include a built-in layout of either an Excel type, Word type
 
 [!INCLUDE[single_layouts](../includes/include-single-layout-obsolete.md)]
 
-## See also
+## Related information
 
 [Developing reports](../devenv-reports.md)  
 [Defining multiple report layouts](../devenv-multiple-report-layouts.md)  

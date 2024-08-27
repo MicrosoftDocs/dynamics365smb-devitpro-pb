@@ -34,7 +34,7 @@ This attribute is only important if you create the record in a window or by usin
 > [!NOTE]  
 > For a new field added in the table, values are initialized by default according to the data type or they are initialized by the value given in the `InitValue` property for all new records. If you want to change the `InitValue` for existing records, you have to specify it in the code and run an upgrade because the value you've set in the `InitValue` property for the new record doesn't set the values for already existing records.
   
-## See Also
+## Related information
 
 [Clear Method](../methods-auto/system/system-clear-joker-method.md)  
 [ClearAll Method](../methods-auto/system/system-clearall-method.md)

@@ -39,7 +39,7 @@ This test is available from the **Database** option on the **File** menu. You ca
   
 If you set the ValidateTableRelation property to **false**, then you should also set the TestTableRelation property to **false**. Otherwise, a database test on the field relations in a database may fail.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [TestTableRelation](devenv-testtablerelation-property.md)   

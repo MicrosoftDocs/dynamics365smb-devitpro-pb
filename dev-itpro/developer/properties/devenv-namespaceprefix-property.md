@@ -39,7 +39,7 @@ This property only applies to element node types and will be ignored if it is se
 
 For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
 
-## See Also  
+## Related information  
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -89,7 +89,7 @@ field("Reward ID";"Reward ID")
 }
 ```
 
-## See also
+## Related information
 
 [User assistance model](../../user-assistance.md)  
 [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  

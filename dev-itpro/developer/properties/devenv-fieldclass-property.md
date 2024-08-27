@@ -38,7 +38,7 @@ FieldClass = FlowFilter;
 
 There are three classes of fields: Normal, FlowFields, and FlowFilters. For more information, see [FlowFields](../devenv-flowfields.md) and [FlowFilter Overview](../devenv-flowfilter-overview.md).  
   
-## See Also
+## Related information
   
 [Properties](devenv-properties.md)   
  

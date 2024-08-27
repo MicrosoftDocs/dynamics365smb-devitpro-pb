@@ -33,6 +33,6 @@ AssistEdit = true;
 ## Remarks  
  You can add AL code in the [OnAssistEdit Trigger](../triggers-auto/pagefield/devenv-onassistedit-pagefield-trigger.md) to change the default assist-edit behavior.  
 
-## See Also  
+## Related information  
  [Lookup Property](devenv-lookup-property.md)   
  [DrillDown Property](devenv-drilldown-property.md)

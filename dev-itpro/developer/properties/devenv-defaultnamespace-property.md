@@ -35,7 +35,7 @@ This property specifies the default namespace for both import and export. A defa
   
 For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Namespaces Property](devenv-namespaces-property.md)   

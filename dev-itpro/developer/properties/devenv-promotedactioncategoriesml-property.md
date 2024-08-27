@@ -42,7 +42,7 @@ By default, the category names are used as the captions in the ribbon. You use t
 > [!NOTE]  
 > Any empty spaces in the string of promoted action categories are removed. This means that `PromotedActionCategories = 'New caption,,,Category4 caption';` is interpreted as `PromotedActionCategories = 'New caption,Category4 caption';`. To maintain the sequence, you must fill in any empty spaces by, for example, using `Category4`, `Category5` etc.
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Promoted Property](devenv-promoted-property.md)  

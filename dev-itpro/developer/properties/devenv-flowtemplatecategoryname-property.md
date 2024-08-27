@@ -20,6 +20,6 @@ Sets the category used to filter the list of Power Automate templates shown in t
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

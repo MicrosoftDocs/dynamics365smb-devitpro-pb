@@ -51,7 +51,7 @@ report 50123 MyRdlReport
 }
 ```
 
-## See also
+## Related information
 
 [Creating an RDL Layout Report](../devenv-howto-rdl-report-layout.md)   
 [ExcelLayout Property](devenv-excellayout-property.md)  

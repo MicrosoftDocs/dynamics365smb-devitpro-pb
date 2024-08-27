@@ -35,7 +35,7 @@ ColumnSpan = 2;
 
 When you set a field to span several columns, the field occupies the cells to its right, and existing fields in the occupied cells are moved to the right. 
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [RowSpan Property](devenv-rowspan-property.md)  

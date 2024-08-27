@@ -59,7 +59,7 @@ table 50100 MyTable
        ...
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Page object](../devenv-page-object.md)  

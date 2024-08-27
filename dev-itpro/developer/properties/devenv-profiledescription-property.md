@@ -27,7 +27,7 @@ Sets the description of the profile that users will see.
 ProfileDescription = 'This profile can be used for processing sales order on a daily basis.';
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [ProfileDescriptionML Property](devenv-profiledescriptionml-property.md)

@@ -94,7 +94,7 @@ codeunit 50000 "MyCaptionClassMgmt"
 }
 ```
 
-## See Also
+## Related information
 
 [CaptionML Property](devenv-captionml-property.md)  
 [Caption Property](devenv-caption-property.md)  

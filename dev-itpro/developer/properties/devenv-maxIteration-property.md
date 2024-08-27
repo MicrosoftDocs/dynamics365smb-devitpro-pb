@@ -30,6 +30,6 @@ MaxIteration = 1;
 
 Valid settings of this property are integers between 0 and the maximum value of an integer (2,147,483,647).  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

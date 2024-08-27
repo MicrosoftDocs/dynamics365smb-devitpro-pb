@@ -35,7 +35,7 @@ OptionOrdinalValues = 1,2,3,4,5;
 
 This property is used when you specify **CDS** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.  
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Table Properties](devenv-table-properties.md)  

@@ -35,6 +35,6 @@ Sets the type of text this element or attribute contains.
 TextType = BigText;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

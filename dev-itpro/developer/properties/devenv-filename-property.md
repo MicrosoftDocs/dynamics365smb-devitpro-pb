@@ -37,7 +37,7 @@ If **FileName** is blank, then a default request options page tab will be create
 > [!NOTE]
 > In the [!INCLUDE[webclient](../includes/webclient.md)], because web browser restrictions, the file name cannot be set. Users will have to manually select the file when the XMLport is run.
   
-## See Also  
+## Related information  
 
 [IMPORT Method (XMLport)](../methods-auto/xmlport/xmlportinstance-import-method.md)   
 [FILENAME Method (XMLport)](../methods-auto/xmlport/xmlportinstance-filename-method.md)   

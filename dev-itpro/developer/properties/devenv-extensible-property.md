@@ -42,7 +42,7 @@ table 50111 MyTable
 
 If the value is **true**, the object can be extended using a `tableextension`, `pageextension`, `reportextension`, or `enumextension` respectively.
 
-## See Also
+## Related information
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  

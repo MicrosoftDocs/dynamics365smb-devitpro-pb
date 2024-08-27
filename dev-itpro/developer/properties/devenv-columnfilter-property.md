@@ -51,7 +51,7 @@ Quantity=Filter(>20&<50);
 
 For a more detailed example, see [Filtering on columns and filter rows in query object](../../developer/devenv-query-filters.md#columns).
 
-## See Also
+## Related information
 
 [Queries in Business Central](../devenv-query-overview.md)  
 [Filtering in Query Objects](../devenv-query-filters.md)  

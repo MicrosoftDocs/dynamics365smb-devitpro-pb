@@ -96,6 +96,6 @@ The resources are relative to the control add-in source:
 app.json
 ```
 
-## See also  
+## Related information  
 
 [Control add-in object](../devenv-control-addin-object.md)   

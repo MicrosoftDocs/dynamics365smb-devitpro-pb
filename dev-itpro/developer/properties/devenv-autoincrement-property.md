@@ -48,5 +48,5 @@ The AutoIncrement property is designed to always assign numbers automatically. I
   
 The AutoIncrement property does not work with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] temporary tables.  
   
-## See Also  
+## Related information  
  [Properties](devenv-properties.md)

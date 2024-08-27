@@ -37,6 +37,6 @@ The user will be able to select another printer at runtime if the [UseRequestPag
   
 If the UseSystemPrinter property is set to **false**, but there is no specific printer defined for the User/Report combination, the system default printer will be suggested.  
   
-## See Also  
+## Related information  
 
 [UseRequestPage Property](devenv-userequestpage-property.md)

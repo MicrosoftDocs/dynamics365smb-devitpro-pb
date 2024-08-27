@@ -60,7 +60,7 @@ table 50145 NewItem
 }
 ```
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [Inherent Permissions](../devenv-inherent-permissions.md)  

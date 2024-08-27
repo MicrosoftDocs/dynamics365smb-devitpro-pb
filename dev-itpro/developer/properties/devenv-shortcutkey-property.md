@@ -43,6 +43,6 @@ Some shortcut keys have default assignments. Don't reuse shortcut keys that are 
 
 For more information, see [Adding Actions to a Page](../devenv-adding-actions-to-a-page.md).
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

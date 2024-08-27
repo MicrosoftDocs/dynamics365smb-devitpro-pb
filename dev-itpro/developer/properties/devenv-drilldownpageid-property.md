@@ -31,6 +31,6 @@ DrillDownPageID = 50100;
 
 Drill-downs are a system-wide feature of fields (normal fields and [FlowFields](../devenv-flowfields.md)) that let you see the underlying transactions that make up the information shown in the field. For example, the DrillDownID property is typically used to create a link from a Cue to an underlying page.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

@@ -40,6 +40,6 @@ HideValue = true;
 
 - Accessing the same table from other pages, from OData APIs or other integrating apps may reveal the value. These must each implement their own mechanisms to hide the value under the same conditions. For example, the Excel AddIn, Power Apps, Power BI, and cards displayed by the Teams app do not respect this property.
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

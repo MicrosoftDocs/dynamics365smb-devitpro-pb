@@ -40,6 +40,6 @@ In the **Report – Properties** window, in the **PreviewMode** field, specify h
 
 Regardless of your choice, users can change the display mode in the **Print Preview** window. For example, if you choose the default mode, users can choose the **Print Layout** button. However, if the AL code for the report uses the PREVIEW function to disable printing from the preview, then users cannot change the display mode to print layout.  
 
-## See Also  
+## Related information  
 
 [Preview Method (Report)](../methods-auto/report/reportinstance-preview-method.md)

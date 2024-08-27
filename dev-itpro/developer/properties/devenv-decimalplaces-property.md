@@ -54,6 +54,6 @@ When you create a new field of [Decimal Data Type](../methods-auto/library.md), 
 
 For more information about formatting decimal values, see [Formatting Decimal Values in Fields](../devenv-format-field-data.md).
   
-## See Also
+## Related information
 
 [Decimal Data Type](../methods-auto/library.md)

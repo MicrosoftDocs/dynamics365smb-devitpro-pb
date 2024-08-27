@@ -27,7 +27,7 @@ Specifies the Role Center Page for this profile.
 RoleCenter = MyRoleCenter;
 ```
 
-## See Also
+## Related information
 
 [Profile Object](../devenv-profile-object.md)  
 [Designing Role Centers](../devenv-designing-role-centers.md)

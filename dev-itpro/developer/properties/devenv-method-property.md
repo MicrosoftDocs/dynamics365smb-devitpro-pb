@@ -62,7 +62,7 @@ Method = Max;
 ```
 
  
-## See Also
+## Related information
 
 [MethodType Property](./devenv-properties.md)   
 [Properties](devenv-properties.md)

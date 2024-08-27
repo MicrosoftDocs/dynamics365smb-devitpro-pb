@@ -31,6 +31,6 @@ Sets a value that determines whether users can add multiple new lines between re
 MultipleNewLines = true;
 ```
   
-## See Also
+## Related information
 
 [AutoSplitKey Property](devenv-autosplitkey-property.md)

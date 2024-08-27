@@ -45,7 +45,7 @@ This property is only supported on grids.
 > [!IMPORTANT]
 > Arranging in rows only works in the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. In the [!INCLUDE[webclient](../includes/webclient.md)], fields can only be arranged in columns.
 
-## See Also
+## Related information
 
 [Field Arrangement on FastTabs](../devenv-arranging-fields-on-fasttab.md)  
 [Properties](devenv-properties.md)

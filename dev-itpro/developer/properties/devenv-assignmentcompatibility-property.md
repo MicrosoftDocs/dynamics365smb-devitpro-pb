@@ -34,5 +34,5 @@ AssignmentCompatibility = true;
 ```
 
 
-## See Also
+## Related information
 [Extensible Enums](../devenv-extensible-enums.md)  

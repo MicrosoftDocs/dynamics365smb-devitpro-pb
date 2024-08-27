@@ -96,6 +96,6 @@ app.json
 ```
 
 
-## See also
+## Related information
 
 [Control add-in object](../devenv-control-addin-object.md)  

@@ -52,7 +52,7 @@ Or, with parameters:
 RequestFilterHeading = 'Entry', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 20;
 ```
    
-## See Also
+## Related information
 
 [Request Pages](../devenv-request-pages.md)  
 [Working with Translation Files](../devenv-work-with-translation-files.md)

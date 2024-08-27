@@ -45,7 +45,7 @@ Stylesheets = 'https://www.microsoft.com/stylesheets/colors.css',
               'styles/*.css;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Control Add-In Object](../devenv-control-addin-object.md)  

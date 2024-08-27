@@ -33,7 +33,7 @@ permissionset 50100 MyPermissionSet
 
 Assignable permission sets are permissions that an admin can assign to users in [!INCLUDE[prod_short](../../includes/prod_short.md)], using the **Permission Sets** page.
 
-## See Also  
+## Related information  
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

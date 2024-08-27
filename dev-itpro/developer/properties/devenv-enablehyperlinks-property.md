@@ -44,6 +44,6 @@ When you use the Visual Studio Report Designer for creating reports for the Role
 
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] cannot verify URLs and protect against malicious sites that may be harmful to your computer. You should set the EnableHyperlinks property to **true** only if you can ensure that hyperlinks on the report target trusted sites.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

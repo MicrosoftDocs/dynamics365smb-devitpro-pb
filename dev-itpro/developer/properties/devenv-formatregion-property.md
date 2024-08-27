@@ -23,6 +23,6 @@ In cases where a two-letter language code is not available, a three-letter code 
 -   Report
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

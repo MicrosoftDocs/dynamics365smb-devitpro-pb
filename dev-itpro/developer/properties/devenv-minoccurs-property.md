@@ -43,6 +43,6 @@ If you use Lazy API for XML (LAX), then the minimum number is 1. If you do not u
   
 The maximum number can be either 1 or infinite.  
   
-## See Also  
+## Related information  
 
 [MaxOccurs Property](devenv-maxoccurs-Property.md)

@@ -74,7 +74,7 @@ The following code example illustrates how you can set the encoding during run t
   
 The code example is based on XMLport 1220 in the [!INCLUDE[demolong](../includes/demolong_md.md)]. The table, **MyDefinitionTable**, has a field, **File Encoding**, that specifies the encoding for this part of an import.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [Format Property \(XMLports\)](devenv-format-property.md)   

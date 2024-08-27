@@ -34,6 +34,6 @@ The default value is “”, an empty string.
   
 You can set the field delimiter in AL code so that the XMLport can import and export records with different delimiters. For example, if your XMLport must import from a file or stream where one record uses commas and another uses an empty string, you can change the field delimiter property at run time.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

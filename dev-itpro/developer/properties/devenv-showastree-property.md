@@ -54,7 +54,7 @@ repeater(Control1)
 
 ```
 
-## See Also
+## Related information
 
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  
 [TreeInitialState Property](devenv-treeinitialstate-property.md)  

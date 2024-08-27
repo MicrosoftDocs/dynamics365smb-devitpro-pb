@@ -31,6 +31,6 @@ Sets a value to specify whether users can add records while using a page.
 InsertAllowed = false;
 ```
  
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

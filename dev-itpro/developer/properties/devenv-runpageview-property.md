@@ -39,7 +39,7 @@ The table view is the view of the table that you present to the user. You determ
   
 You can use this property to indicate how information should be sorted.  
   
-## See Also  
+## Related information  
 
 [RunObject Property](devenv-runobject-property.md)   
 [RunPageLink Property](devenv-runpagelink-property.md)

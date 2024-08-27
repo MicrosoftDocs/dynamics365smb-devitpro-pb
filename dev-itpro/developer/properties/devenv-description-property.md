@@ -55,6 +55,6 @@ Sets the description. This description is for internal use and does not appear t
 Description = 'Name of the organization.';
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  

@@ -123,7 +123,7 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
 
 On the event publisher side, the bindings are always considered static. For example, if you bind instance *A* of a given subscriber codeunit, all instances of publisher application objects will start calling the event subscribers. You can't design it so that a specific instance of publisher table *X* calls only a specific instance of subscriber codeunit *A*. However, you can achieve the same by using/storing some global state on the subscriber.  
 
-## See also
+## Related information
 
 [BindSubscription Method](../methods-auto/session/session-bindsubscription-method.md)  
 [UnBindSubscription Method](../methods-auto/session/session-unbindsubscription-method.md)  

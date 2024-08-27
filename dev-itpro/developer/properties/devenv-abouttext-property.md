@@ -69,7 +69,7 @@ AboutText = '**Sales Orders** can be sorted *Ascending* or *Descending*. Use the
 - To change the `AboutText` for a page or control that already has a teaching tip defined in the source object, set the `AboutText` property. 
 - To hide a teaching tip for a page or control in the source object, set the About properties to an empty string. 
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -43,7 +43,7 @@ You can enter values for the **RequestFilterHeadingML** property in the followin
   
 - If you enter a **RequestFilterHeadingML**, this value will be inserted in **RequestFilterHeadingML** as the value for the language that is currently selected. If the language is set to Danish when a value is entered in **RequestFilterHeadingML**, **RequestFilterHeadingML** will be updated with a DAN=<*value*> string. You have to use the abbreviated name (DAN for Danish, for example) of the languages.  
   
-## See Also
+## Related information
 
 [Request Pages](../devenv-request-pages.md)  
 [Working with Translation Files](../devenv-work-with-translation-files.md)

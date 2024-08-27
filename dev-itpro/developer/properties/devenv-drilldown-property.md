@@ -34,7 +34,7 @@ DrillDown = true;
 
 Drill-downs are a system-wide feature of [FlowFields](../devenv-flowfields.md) that let you see the underlying transactions that make up the information shown in the FlowField. For example, if the FlowField shows an account balance, then providing a drill-down for this text box lets the user quickly see the various transactions that make up the balance shown in the field.  
   
-## See Also  
+## Related information  
 
 [Pages Overview](../devenv-pages-overview.md)  
 [Page Properties](./devenv-properties.md)

@@ -40,7 +40,7 @@ ExternalType = 'String';
 
 This property is used when you specify **CDS**, **MicrosoftGraph** or **ExternalSQL** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
 
-## See Also
+## Related information
 
 [TableType Property](devenv-tabletype-property.md)  
 [ExternalSchema Property](devenv-externalschema-property.md)  

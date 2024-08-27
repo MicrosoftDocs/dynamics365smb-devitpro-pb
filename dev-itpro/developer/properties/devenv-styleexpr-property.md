@@ -44,6 +44,6 @@ if (MyField = 'abc')
 > [!NOTE]  
 > To use a variable for the **StyleExpr** property, it must be set as a global page variable.  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  

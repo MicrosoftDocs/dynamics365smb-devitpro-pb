@@ -37,7 +37,7 @@ The script is embedded within the extension and must be added to the extension p
 StartupScript = 'js/chart.js';
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Control Add-In Object](../devenv-control-addin-object.md)   

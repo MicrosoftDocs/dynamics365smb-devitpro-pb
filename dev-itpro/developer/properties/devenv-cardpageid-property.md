@@ -31,7 +31,7 @@ CardPageID = "Customer Card";
  Use this property on a list page or listpart page to specify the card page that should be displayed when an end user double-clicks an item on the list page or listpart page.  
  
  
-## See Also  
+## Related information  
 [PagePartID Property](./devenv-properties.md)   
 [ChartPartID Property](./devenv-properties.md)   
 [SystemPartID Property](./devenv-properties.md)

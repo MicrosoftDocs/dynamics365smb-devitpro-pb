@@ -37,5 +37,5 @@ To set this property to a value of **true**, the following conditions must be me
   
 - The last field in the primary key must be an [Integer Data Type](../methods-auto/library.md), [BigInteger Data Type](../methods-auto/library.md), [GUID Data Type](../methods-auto/library.md), or [Decimal Data Type](../methods-auto/library.md) field.  
   
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)

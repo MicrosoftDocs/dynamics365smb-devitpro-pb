@@ -23,7 +23,7 @@ Sets whether the first letter in each word the user types is capitalized.
 > [!IMPORTANT]  
 > This property has been deprecated. Setting the property has no effect on the client. 
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

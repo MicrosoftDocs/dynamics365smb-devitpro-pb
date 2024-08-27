@@ -47,7 +47,7 @@ For more information, see the open source test library [Permissions Mock](https:
 > [!NOTE]  
 > To specify the permission sets that are used by the tests run by a specific test method, use the [TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute).
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute)  

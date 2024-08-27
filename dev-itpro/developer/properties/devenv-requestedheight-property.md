@@ -42,6 +42,6 @@ VerticalShrink = true;
 MinimumHeight = 150;
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)  

@@ -27,6 +27,6 @@ Specifies the Entity Data Model Type to be used for this node in the OData metad
 ODataEDMType = 'POSTALADDRESS';
 ```  
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

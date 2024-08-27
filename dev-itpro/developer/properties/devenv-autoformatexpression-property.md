@@ -77,7 +77,7 @@ AutoFormatType = 1;
 AutoFormatExpression = '$<precision, 2:2><standard format, 0>':
 ```
 
-## See Also
+## Related information
 
 [AutoFormatType Property](devenv-autoformattype-property.md)  
 [DecimalPlaces Property](devenv-decimalplaces-property.md)

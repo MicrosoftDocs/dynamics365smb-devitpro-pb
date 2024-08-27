@@ -19,6 +19,6 @@ Include the field in the optimized text search index to allow faster search in t
 -   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

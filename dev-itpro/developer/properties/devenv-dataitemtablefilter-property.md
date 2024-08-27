@@ -68,7 +68,7 @@ query 50001 "Low on stock inventory items"
 }
 ```
 
-## See Also
+## Related information
 
 [ColumnFilter Property](devenv-columnfilter-property.md)  
 [SetFilter Method (Query)](../methods-auto/library.md)  

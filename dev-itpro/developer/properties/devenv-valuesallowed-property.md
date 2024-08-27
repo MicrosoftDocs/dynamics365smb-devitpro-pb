@@ -34,6 +34,6 @@ Separate the values with a comma. For example, if you only want the user to ente
   
 The property setting is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table. If a field is updated through application code, then the **ValuesAllowed** property is not validated.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

@@ -61,7 +61,7 @@ Specifies the default paper source to use when printing the report.
 PaperSourceDefaultPage = AutomaticFeed;
 ```
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

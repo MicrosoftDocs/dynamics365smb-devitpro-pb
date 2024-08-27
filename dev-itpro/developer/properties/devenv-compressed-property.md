@@ -33,6 +33,6 @@ Compressed = true;
 ## Remarks
 It must be applied on a field of the [BLOB Data Type](../methods-auto/library.md).
 
-## See Also  
+## Related information  
 
 [BLOB Data Type](../methods-auto/library.md)

@@ -34,7 +34,7 @@ AutoCalcField = false;
 ## Remarks
 FlowFields have an effect if the associated data source is a calculated value of the FlowFields.
 
-## See Also  
+## Related information  
 [FlowFields](../devenv-flowfields.md)   
 [Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   
 [CalcFormula Property](devenv-calcformula-property.md)  

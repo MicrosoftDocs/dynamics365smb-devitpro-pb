@@ -84,7 +84,7 @@ The following is the Order By clause in SQL that corresponds to the OrderBy prop
 OrderBy = ascending (Name,Quantity);  
 ```
 
-## See Also  
+## Related information  
 
 [Query Properties](devenv-query-properties.md)  
 [View Properties](devenv-view-properties.md)

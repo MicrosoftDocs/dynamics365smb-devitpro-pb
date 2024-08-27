@@ -29,5 +29,5 @@ Indicates whether the system displays zeros (0) and No.
 BlankZero = true;
 ```
 
-## See Also  
+## Related information  
  [BlankNumbers Property](devenv-blanknumbers-property.md)

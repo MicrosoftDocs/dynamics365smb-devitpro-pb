@@ -39,6 +39,6 @@ XmlName = 'CreditNote';
 
 If the **XmlName** property is not defined, it will use the string specified in the [NodeName Property](./devenv-properties.md) as the default variable name.
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

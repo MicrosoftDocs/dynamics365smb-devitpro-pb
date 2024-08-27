@@ -42,6 +42,6 @@ The signature of the `OnRun` trigger is `OnRun(var Rec : Record Item)`.
 
 You can then use the `Rec` variable in the codeunit, and use the  [Run Method \(Codeunit\)](../methods-auto/codeunit/codeunit-RUN-method.md) to execute the codeunit.  
   
-## See Also
+## Related information
 
 [Run Method \(Codeunit\)](../methods-auto/codeunit/codeunit-run-method.md)

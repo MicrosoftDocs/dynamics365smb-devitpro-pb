@@ -55,6 +55,6 @@ keys
 
 ```
 
-## See Also
+## Related information
 
 [Table Keys](../devenv-table-keys.md)  

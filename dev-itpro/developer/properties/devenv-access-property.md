@@ -99,7 +99,7 @@ codeunit 50113 MyCodeunit
 > [!NOTE]
 > The accessibility of tables and table fields is taken into account when using [Designer](../devenv-inclient-designer.md). As a consequence, only table fields which have their accessibility set to `Public` can be added to the page. 
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)   
 [Extensible Property](devenv-extensible-property.md)   
 [Protected Variables](../devenv-protected-variables.md)

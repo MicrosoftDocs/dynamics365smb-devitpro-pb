@@ -52,7 +52,7 @@ The following table shows transaction behavior with SQL Server.
   
 Report and XMLport objects have a **TransactionType** property, which you can view and modify in the **Properties** window. The **TransactionType** property that is specified on a report or XMLport object is used only when you run the report or XMLport from Object Designer.  
   
-## See Also
+## Related information
 
 [Isolation Levels in the Database Engine](/previous-versions/sql/sql-server-2008-r2/ms189122(v=sql.105))  
 [CurrentTransactionType Method \(Database\)](../methods-auto/database/database-currenttransactiontype-method.md)

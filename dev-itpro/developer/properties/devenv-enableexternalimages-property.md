@@ -50,6 +50,6 @@ For information about how to add images using Visual Studio Report Designer, see
 
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] cannot verify image sources and protect against malicious images or sources that may be harmful to your computer. You should set the **EnableExternalImages** property to **true** only if you can ensure that images on the report come from a trusted source.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

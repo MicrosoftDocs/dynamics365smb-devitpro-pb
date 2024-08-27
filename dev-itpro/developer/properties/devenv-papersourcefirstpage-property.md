@@ -61,6 +61,6 @@ Specifies which paper source to use when printing page one of the report.
 PaperSourceFirstPage = AutomaticFeed;
 ```
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

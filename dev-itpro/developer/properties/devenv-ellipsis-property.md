@@ -31,6 +31,6 @@ Sets a value that specifies whether an ellipsis (...) is appended to the caption
 Ellipsis = true;
 ```
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

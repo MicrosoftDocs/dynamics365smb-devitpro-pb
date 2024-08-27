@@ -58,7 +58,7 @@ InstructionalText = 'Add an entity from your list of contacts. The entity can be
 
 The InstructionalText property on a page field should provide an example value or a short summary of the field's purpose to guide the user towards entering the expected value.
 
-## See also
+## Related information
 
 [Configuring the Help Experience](../../deployment/configure-help.md)  
 [Page object](../devenv-page-object.md)  

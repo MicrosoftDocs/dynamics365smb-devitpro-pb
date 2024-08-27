@@ -67,7 +67,7 @@ Use this property to add valuable information to developers about an object or e
 
 For an elaborate example of deprecating, see [Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md).
 
-## See Also  
+## Related information  
 
 [ObsoleteReason](devenv-obsoletereason-property.md)  
 [ObsoleteState](devenv-obsoletestate-property.md)  

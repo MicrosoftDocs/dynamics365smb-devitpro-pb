@@ -72,7 +72,7 @@ actions
     }
 ```
 
-## See Also  
+## Related information  
 
 [Promoted Property](devenv-promoted-property.md)   
 [Promoted Actions](../devenv-promoted-actions.md)  

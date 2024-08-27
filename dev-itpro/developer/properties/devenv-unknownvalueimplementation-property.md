@@ -108,7 +108,7 @@ The `UnknownValueImplementation` property applies to enums. Uninstalling enum ex
 Related to `UnknownValueImplementation` is the `DefaultImplementation` property, used for fallback to a default value when no enum value is provided. For more information, see [DefaultImplementation Property](devenv-defaultimplementation-property.md).
 
 
-## See Also
+## Related information
 
 [DefaultImplementation Property](devenv-defaultimplementation-property.md)  
 [Get Started with AL](../devenv-get-started.md)  

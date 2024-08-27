@@ -40,7 +40,7 @@ If the **NotBlank** property is used on other fields than primary fields, the be
   
 - If the field has been entered, and the user tries to enter a blank value, a validation error occurs.  
   
-## See Also
+## Related information
 
 [MinValue Property](devenv-minvalue-property.md)  
 [MaxValue Property](devenv-maxvalue-property.md)  

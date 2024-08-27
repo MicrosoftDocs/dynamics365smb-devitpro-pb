@@ -51,7 +51,7 @@ report 50124 MyExcelReport
     // dataset definition goes here
 ```
 
-## See also
+## Related information
 
 [Developing reports](../devenv-reports.md)  
 [Defining multiple report layouts](../devenv-multiple-report-layouts.md)  

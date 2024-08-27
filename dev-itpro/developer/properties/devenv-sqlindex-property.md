@@ -56,7 +56,7 @@ keys
 }
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Table Keys](../devenv-table-keys.md)   

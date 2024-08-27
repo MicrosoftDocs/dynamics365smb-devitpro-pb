@@ -37,7 +37,7 @@ Apart from showing the progress of the report, the window also contains a **Canc
   
 If the [ProcessingOnly Property](devenv-processingonly-property.md) is **true**, there will be no status dialog box, even if ShowPrintStatus is **true**. If you need a status dialog box, you must create one yourself.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [ProcessingOnly Property](devenv-processingonly-property.md)

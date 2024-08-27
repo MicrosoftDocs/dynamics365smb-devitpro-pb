@@ -68,6 +68,6 @@ The following examples demonstrate the relationship between the [OptionMembers P
   
      **Result** Same result as for example 3. As long as any OptionCaptionML property is set on the text box or the field, the [OptionMembers Property](devenv-optionmembers-field-property.md) is not used to display choices to the user.  
   
-## See Also
+## Related information
 
 [Working with Translation Files](../devenv-work-with-translation-files.md)

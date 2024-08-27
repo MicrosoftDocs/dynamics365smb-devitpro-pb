@@ -38,6 +38,6 @@ XMLVersionNo = V10;
 
 The XML version number is inserted into the XML document as the XML declaration.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

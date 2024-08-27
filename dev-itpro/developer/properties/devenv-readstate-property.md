@@ -37,6 +37,6 @@ The ReadState property will overrule the current transaction type of the data as
   
 Each query will use the specified ReadState regardless of other queries that have already been executed. This means that you can read uncommitted data and committed data from the same tables in the same transaction. However, the strictest lock placed on a row will remain until the transaction is committed.
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  

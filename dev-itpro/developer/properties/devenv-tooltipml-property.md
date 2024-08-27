@@ -65,7 +65,7 @@ In the following example, values are set for Danish (DAN) and English (ENG).
 DAN=Dette felt indeholder kundens navn;ENG=This field contains the customer name  
 ```  
 
-## See Also
+## Related information
 
 [ToolTip Property](devenv-tooltip-property.md)  
 [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  

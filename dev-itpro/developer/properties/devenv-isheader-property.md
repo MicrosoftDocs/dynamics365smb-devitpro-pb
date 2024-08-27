@@ -32,6 +32,6 @@ IsHeader = true;
 ```
  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

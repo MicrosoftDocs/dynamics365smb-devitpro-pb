@@ -74,6 +74,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 Now, when a user enables **Allow Invoice Disc.** on the customer card, the **Credit Limit (LCY)** field gets focus when the user presses Enter. Without this modification, focus skips over the field when the user presses Enter.
 
 
-## See Also
+## Related information
   
 [Properties](devenv-properties.md)

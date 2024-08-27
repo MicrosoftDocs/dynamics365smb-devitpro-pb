@@ -54,6 +54,6 @@ If you view the Customer Ledger Entry page with a filter applied, the customer n
   
 The important point is that the DataCaptionFields property on a page does not directly put any caption on the page, but only works when used with appropriate settings of DataCaptionFields at the table level.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

@@ -35,6 +35,6 @@ When this property is set to Yes, no normalizations are performed.
 PreserveWhiteSpace = true;
 ```
  
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

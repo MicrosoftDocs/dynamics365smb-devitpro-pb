@@ -66,7 +66,7 @@ repeater(Control1)
 
 ```
 
-## See Also
+## Related information
 
 [ShowAsTree Property](devenv-showastree-property.md)  
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  
