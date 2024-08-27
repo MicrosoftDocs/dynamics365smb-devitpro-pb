@@ -72,7 +72,7 @@ Regardless of the resource exposure policy setting, methods and variables marked
 
 For more information, see [Resource Exposure Policy Setting](../devenv-security-settings-and-ip-protection.md).
   
-## See also  
+## Related information  
 
 [AL method reference](../methods-auto/library.md)  
 [Debugging](../devenv-debugging.md)

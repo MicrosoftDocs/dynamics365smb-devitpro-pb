@@ -73,7 +73,7 @@ codeunit 50132 MySubscriber
 
 ```
  
-## See Also
+## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  

@@ -68,7 +68,7 @@ procedure MyProcedureForOnPrem()
 
 ```
   
-## See Also
+## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)  

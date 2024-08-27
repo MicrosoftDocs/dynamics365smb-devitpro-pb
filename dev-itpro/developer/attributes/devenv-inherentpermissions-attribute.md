@@ -64,6 +64,6 @@ For information about the `<permission value>` syntax, refer to [permissions val
 > [!NOTE]
 > You can use inherent permissions only for objects within the same extension.
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

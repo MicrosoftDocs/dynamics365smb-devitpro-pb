@@ -55,6 +55,6 @@ Specifies a version for the external business event.
 
 The `ExternalBusinessEvent` attribute can be set on methods that are published as external business events.
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

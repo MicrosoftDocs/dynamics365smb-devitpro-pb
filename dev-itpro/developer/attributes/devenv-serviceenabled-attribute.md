@@ -45,6 +45,6 @@ Exposes a method to the service.
     end;
 ```
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

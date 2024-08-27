@@ -49,7 +49,7 @@ You must define this attribute on a variable if it's used as the value of the [E
 > [!NOTE]
 > This attribute is obsolete. It no longer works and isn't required to include the AL variable's value in the dataset.
 
-## See Also
+## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
 [StyleExpr Property](../properties/devenv-styleexpr-property.md)  

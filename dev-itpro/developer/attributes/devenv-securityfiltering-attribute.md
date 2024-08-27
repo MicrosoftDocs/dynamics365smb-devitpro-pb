@@ -42,6 +42,6 @@ You can use the [SecurityFiltering (Record) Method](../methods-auto/record/recor
 For more information, see [Using Security Filters in Business Central](../../security/security-filters.md).
 
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -91,7 +91,7 @@ codeunit 50103 MySubscribingCodeunit
 }
 ```
 
-## See Also  
+## Related information  
 [AL Method Reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  
 [Publishing Events](../devenv-publishing-events.md)   

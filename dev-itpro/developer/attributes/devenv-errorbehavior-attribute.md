@@ -34,6 +34,6 @@ Specifies the behavior of collectable errors inside the method scope.
 Specifies if a collectable error must be collected or throw an error.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

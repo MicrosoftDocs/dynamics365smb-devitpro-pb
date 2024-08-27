@@ -38,6 +38,6 @@ The **SuppressDispose** attribute applies to local variables of the **DotNet** d
 
 When a local .NET Framework object is disposed, it can't be assigned outside the scope of its local function. If you want to assign the local **DotNet** variable to a global AL or .NET.
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

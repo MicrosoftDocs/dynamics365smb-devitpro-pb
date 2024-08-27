@@ -111,7 +111,7 @@ codeunit 50107 MyEventSubscriber
 }
 ```
 
-## See also  
+## Related information  
 [AL method reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  
 [Publishing events](../devenv-publishing-events.md)   

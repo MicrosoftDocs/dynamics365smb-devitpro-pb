@@ -71,7 +71,7 @@ begin
 end;
 ```
 
-## See Also  
+## Related information  
 
 [AL Method Reference](../methods-auto/library.md)  
 [Essential AL Methods](../devenv-essential-al-methods.md)  

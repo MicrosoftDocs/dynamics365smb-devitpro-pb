@@ -63,7 +63,7 @@ codeunit 50143 SoonObsolete
     
 ```
      
-## See Also
+## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-obsolete-attribute.md)  

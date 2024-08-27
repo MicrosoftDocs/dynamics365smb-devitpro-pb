@@ -79,7 +79,7 @@ When you create test methods that exercise pages that interact with the database
 
 With **AutoCommit** and **AutoRollback**, the test method starts a write transaction. Triggers that are invoked by the test code inherit this open transaction instead of running in their own separate transactions. By using the **AutoCommit** and **AutoRollback** settings, if several page interactions are invoked from test code, then they share the same transaction. By using the **None** setting, each page interaction runs in a separate transaction.  
 
-## See Also  
+## Related information  
 
 [Properties](../properties/devenv-properties.md)   
 [TestIsolation Property](../properties/devenv-testisolation-property.md)   
