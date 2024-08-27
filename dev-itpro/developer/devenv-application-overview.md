@@ -16,14 +16,13 @@ ms.reviewer: bholtorf
 
 The business central application code is being refactored from a single monolythic application into smaller applications (layers) which in turn are built from small modules which handle a single functionality or feature.
 
-The System Application layer contains modules that provide ERP agnostic functionality. These are mostly technical features which any application needs.
-The Business Foundation layer contains modules that provide ERP related functionality that applies to all or none of the application domains.
+The [System Application](https://github.com/microsoft/BCApps/tree/main/src/System%20Application) layer contains modules that provide ERP agnostic functionality. These are mostly technical features which any application needs.
+The [Business Foundation](https://github.com/microsoft/BCApps/tree/main/src/Business%20Foundation) layer contains modules that provide ERP related functionality that applies to all or none of the application domains.
 
 As we continue to modernize the application code more modules and layers will be added. For an overview of system and application reference documentation, see [System and Base Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application).
 
-> [!Note]
-> The modules in the System Application and Business Foundation represent a significant change in what's happening under the hood in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. We are aware that the changes we have made will introduce breaking changes, so we have made a list of those that we know about, which includes suggestions for solutions. To view the breaking changes list, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md).<br><br>We will continue to enhance the System Application in future releases. If you find something you think we should add, visit our [Dynamics 365 Application Ideas](https://aka.ms/bcideas) page. If you want us to improve something, go to the [BCApps](https://github.com/microsoft/BCApps) repository and submit a pull request for it.
-
+>[!Note]
+> If you find something you think we should add, visit our [Dynamics 365 Application Ideas](https://aka.ms/bcideas) page. If you would like to contribute directly, you can do so in to the [BCApps](https://github.com/microsoft/BCApps) repository. Please review the contribution guidelines here: [Contribution Guidelines](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md)
 
 
 <!--## Example - Enhancing a Module
