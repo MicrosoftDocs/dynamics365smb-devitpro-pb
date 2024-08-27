@@ -52,11 +52,12 @@ Since resellers are the first line contact point for customers, they carry respo
 
 We advise these terms include articles like intellectual property rights, upgrade responsibilities, associated costs to keep code updatable, support options, data privacy, and so on.  
 
-## When apps or PTEs can't be updated by Microsoft
+## When Microsoft can't update apps or PTEs
 
 This section describes the processes that are initiated during [major update cycles](../administration/update-rollout-timeline.md) of [!INCLUDE [prod_short](includes/prod_short.md)] with extensions installed provided by publishers of apps or PTEs. For information about handling a PTE that has conflicts with another extension, see [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](../upgrade/upgrade-pte-merge-conflict.md).
 
 ### Preview period
+
 A preview release is made available approximately one month before the announced release date for a major release. During this period, administrators can create sandbox environments on the preview version to test new functionality and app compatibility, and [!INCLUDE [prod_short](includes/prod_short.md)] will automatically test PTEs running in production on technical incompatibility with the upcoming release and notify [notification recipients](../administration/tenant-admin-center-notifications.md) in case any incompatibilities are detected. For more information, see [prepare for major updates with preview environments](../administration/preview-environments.md).
 
 > [!IMPORTANT]
@@ -66,6 +67,7 @@ A preview release is made available approximately one month before the announced
 > If an app has been published through AppSource, it should not be tested, installed, or in other ways treated as a PTE since this will create conflicts.
 
 ### Update period
+
 The update period starts when a new major version is generally available, typically the first workday of every April and October, and lasts for five months. Administrators can schedule the update to run on any day during this period. Should a scheduled update fail due to technical incompatibilities with installed apps, [notification recipients](../administration/tenant-admin-center-notifications.md) will receive a notification with failure details and recommended actions.
 
 Technical incompatibilities with AppSource apps installed on the environment might not be visible in the customer's [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)]. The reseller will in most cases have worked with the ISV to test compatibility, but after two weeks (Day **T+15**) of failed upgrade attempts, the Microsoft AppSource team will also send the app provider a warning message that action within the next few days is required. Incompatible extensions can be uninstalled within **14 days** if they prevent deployment of security updates.  
@@ -91,7 +93,7 @@ During this period, the customer and their reselling partner are fully responsib
 
 ## Get notified about incompatibilities by Microsoft
 
-It's crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we'll use in the process that is described in the [When apps or PTEs can't be updated by Microsoft](#when-apps-or-ptes-cant-be-updated-by-microsoft) section:  
+It's crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we'll use in the process that is described in the [When Microsoft can't update apps or PTEs](#when-microsoft-cant-update-apps-or-ptes) section:  
 
 - PTE publishers
 
