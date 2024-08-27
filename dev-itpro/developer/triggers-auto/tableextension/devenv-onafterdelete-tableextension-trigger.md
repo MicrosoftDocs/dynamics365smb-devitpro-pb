@@ -32,6 +32,6 @@ end;
 ## Remarks  
  This trigger runs after the default delete behavior is executed on a record to be deleted. It runs automatically after the user chooses to delete a record in a page from the Web Client. The record is not deleted if an error occurs in the trigger code. 
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

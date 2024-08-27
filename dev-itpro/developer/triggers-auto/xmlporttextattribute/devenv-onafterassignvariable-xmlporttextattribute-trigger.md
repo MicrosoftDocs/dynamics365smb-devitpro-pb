@@ -32,7 +32,7 @@ end;
 ## Remarks  
  This trigger is only used to import data and gives you access to the imported value in text format.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAfterAssignVariable (Xml Port Text Element) Trigger](../xmlporttextelement/devenv-onafterassignvariable-xmlporttextelement-trigger.md)

@@ -33,6 +33,6 @@ end;
 ## Remarks  
  This trigger is only used to export data. It is typically used to set filters on the data and to initialize variables before finding the first record.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

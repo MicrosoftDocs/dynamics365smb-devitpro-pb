@@ -32,6 +32,6 @@ end;
 ## Remarks  
  This trigger is only used to import data. It is typically used to set up the preconditions for the record before it is inserted into the database table.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

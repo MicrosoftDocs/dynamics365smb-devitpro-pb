@@ -39,6 +39,6 @@ It is used to check that certain requirements are met in order to run the upgrad
 
 This trigger is run once for each company in the database, and it is executed within its own system session for the company.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

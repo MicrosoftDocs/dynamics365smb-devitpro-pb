@@ -32,6 +32,6 @@ end;
 ## Remarks  
  This trigger is run after all data items are processed.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

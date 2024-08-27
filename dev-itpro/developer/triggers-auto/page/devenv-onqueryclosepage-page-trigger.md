@@ -53,7 +53,7 @@ When the OnQueryClosePage trigger is called on a subpage, the *CloseAction* para
 
 You can use this trigger to write to the database.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnQueryClosePage (Request Page) Trigger](../requestpage/devenv-onqueryclosepage-requestpage-trigger.md)   

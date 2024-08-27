@@ -39,7 +39,7 @@ Within the trigger, the `Rec` variable will refer to the record just read.
   
 If there is an error in the trigger code, then the page is closed.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAfterGetRecord (Request Page) Trigger](../requestpage/devenv-onaftergetrecord-requestpage-trigger.md)  

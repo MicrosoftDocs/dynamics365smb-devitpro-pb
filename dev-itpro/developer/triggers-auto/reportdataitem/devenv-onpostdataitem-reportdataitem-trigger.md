@@ -39,6 +39,6 @@ Use this trigger to perform any cleanup or post processing needed after a data i
 ModifyAll("Modification Date",TODAY);   
 ```  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

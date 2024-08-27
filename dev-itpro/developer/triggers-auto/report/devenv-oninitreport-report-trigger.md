@@ -36,7 +36,7 @@ This trigger is run before the request page is run and before any table views or
 > [!NOTE]  
 > This trigger is currently not supported for [Report Extension Object](../../devenv-report-ext-example.md).
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

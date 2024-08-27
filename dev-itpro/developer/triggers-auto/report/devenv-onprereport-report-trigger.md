@@ -39,7 +39,7 @@ ReportFilter := SomeRecord.GetFilters;
   
 Use the ReportFilter text string as the source expression for a control in a section of the report.  
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -36,6 +36,6 @@ Includes code for database-related operations.
 
 This trigger is run once in the entire install process, in a single system session that does not open any company.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

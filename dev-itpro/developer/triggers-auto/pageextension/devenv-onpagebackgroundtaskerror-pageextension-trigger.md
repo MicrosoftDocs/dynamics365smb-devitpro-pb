@@ -50,7 +50,7 @@ Specifies the call stack for the error that occurred.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnPageBackgroundTaskError (Page) Trigger](../page/devenv-onpagebackgroundtaskerror-page-trigger.md)

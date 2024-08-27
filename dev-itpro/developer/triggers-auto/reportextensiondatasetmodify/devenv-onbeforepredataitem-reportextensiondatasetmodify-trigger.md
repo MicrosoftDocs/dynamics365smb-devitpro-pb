@@ -52,7 +52,7 @@ reportextension 50111 MyExtension extends "Customer - List"
 This trigger runs before the base object trigger [OnPreDataItem (Report Data Item) Trigger](../reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md).
 
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

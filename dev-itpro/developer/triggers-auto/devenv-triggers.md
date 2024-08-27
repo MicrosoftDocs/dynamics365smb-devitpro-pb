@@ -94,7 +94,7 @@ table 50100 MyTable
 }
 ```
 
-## See also
+## Related information
 
 [Methods](../methods-auto/library.md)  
 [Properties](../properties/devenv-properties.md)

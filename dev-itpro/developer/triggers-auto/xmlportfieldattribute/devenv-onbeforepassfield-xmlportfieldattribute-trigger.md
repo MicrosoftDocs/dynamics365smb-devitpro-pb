@@ -33,7 +33,7 @@ end;
  This trigger is only used to export data. This trigger gives you access to the field value in the record just before it is exported and is typically used to manipulate the field.  
 
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnBeforePassField (Xml Port Field Element) Trigger](../xmlportfieldelement/devenv-onbeforepassfield-xmlportfieldelement-trigger.md)

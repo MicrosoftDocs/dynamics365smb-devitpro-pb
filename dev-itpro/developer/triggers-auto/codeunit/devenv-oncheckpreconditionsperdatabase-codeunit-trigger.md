@@ -40,6 +40,6 @@ It is used to check that certain requirements are met in order to run the upgrad
 
 This trigger is run once in the entire upgrade process, in a single system session that does not open any company.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

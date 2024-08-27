@@ -40,7 +40,7 @@ If there is an error in the trigger code, then the page is closed.
 
 You can use this trigger to write to the database.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAssistEdit (Page Field) Trigger](../pagefield/devenv-onassistedit-pagefield-trigger.md)

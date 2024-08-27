@@ -47,7 +47,7 @@ If an error occurs in the trigger code a popup dialog shows an error message. Wh
 > [!NOTE]  
 > The **OnNewRecord** trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](Exposing-Methods-and-Properties-in-a-Windows-Client-Control-Add-in.md).  -->
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnNewRecord (Request Page) Trigger](../requestpage/devenv-onnewrecord-requestpage-trigger.md)  

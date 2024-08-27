@@ -39,6 +39,6 @@ It is used to perform the actual upgrade. If an error occurs during runtime the 
 
 This trigger is run once in the entire upgrade process, in a single system session that does not open any company.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -54,7 +54,7 @@ tableextension 50111 "CustomerExt" extends Customer
 }
 ```
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnBeforeValidate (Page Field Extension) Trigger](../pagefieldextension/devenv-onbeforevalidate-pagefieldextension-trigger.md)

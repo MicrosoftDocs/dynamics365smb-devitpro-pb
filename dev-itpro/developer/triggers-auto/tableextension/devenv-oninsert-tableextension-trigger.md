@@ -34,7 +34,7 @@ end;
   
  In tables where records are entered in pages that have the [DelayedInsert Property](../../properties/devenv-delayedinsert-property.md) set to **true**, we recommend that you write any code that is in an OnInsert trigger so that it will always succeed. For example, this applies to journal lines.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnInsert (Table) Trigger](../table/devenv-oninsert-table-trigger.md)

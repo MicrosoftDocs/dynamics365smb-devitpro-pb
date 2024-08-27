@@ -47,7 +47,7 @@ Text or code value with the following options:
 
 By default, open pages display the last record shown when the user exited the page. Use this trigger to override the default behavior and display the first record, last record, or a specific record as defined in the `Rec` variable.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnFindRecord (Request Page) Trigger](../requestpage/devenv-onfindrecord-requestpage-trigger.md)

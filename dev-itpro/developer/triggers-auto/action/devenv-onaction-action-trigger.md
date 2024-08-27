@@ -38,7 +38,7 @@ You typically use the [RunObject Property](../../properties/devenv-runobject-pro
 > [!NOTE]  
 > The **OnAction** trigger is not used on Role Center pages. If you add AL code to the trigger, the Role Center page will compile, but the AL code will be ignored at runtime.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [RunObject Property](../../properties/devenv-runobject-property.md)  

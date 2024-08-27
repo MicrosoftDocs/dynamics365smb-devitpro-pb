@@ -51,6 +51,6 @@ reportextension 50111 MyExtension extends "Customer - List"
 
 Use this trigger to perform any processing that is needed, based on the values in the fields of the individual records of a data item. The base object trigger is run before this trigger. For more information, see [OnAfterGetRecord (Report Data Item) Trigger](../reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md). 
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

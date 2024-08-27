@@ -46,6 +46,6 @@ The following code applies a filter on the Quantity column of the query by calli
 currQuery.SetFilter(Quantity, '>50');  
 ```
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

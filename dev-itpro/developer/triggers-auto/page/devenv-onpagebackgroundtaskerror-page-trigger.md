@@ -74,7 +74,7 @@ begin
 end;
 ```
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnPageBackgroundTaskError (Page Extension) Trigger](../pageextension/devenv-onpagebackgroundtaskerror-pageextension-trigger.md)
