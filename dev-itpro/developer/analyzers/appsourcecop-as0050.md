@@ -131,7 +131,7 @@ In version 2.0, the enum `MyEnum` remains not extensible, because the default pr
 For object for which the default property value for the Extensible property is true, removing the property makes the object extensible.
 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

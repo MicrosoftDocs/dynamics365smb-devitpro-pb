@@ -60,7 +60,7 @@ codeunit 50121 Foo_MyNewCodeunit
 In version 3.0 of the extension, codeunit 50120 has been deleted. This is okay, because codeunit 50120 previously had been marked with `ObsoleteState = Pending` informing developers to use "50121 Foo_MyNewCodeunit" instead.
 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -59,7 +59,7 @@ end;
 
 Remove the variable or make use of it if not using it was a mistake.
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

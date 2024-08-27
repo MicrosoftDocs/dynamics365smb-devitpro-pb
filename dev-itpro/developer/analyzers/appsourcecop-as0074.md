@@ -194,7 +194,7 @@ codeunit 50100 MyCodeunit
 
 The codeunit was marked as obsolete pending in the baseline without an obsolete tag. The new version of the extension specifies an obsolete version which is higher than the `obsoleteTagVersion`. This change is allowed by rule AS0074 in order to enable specifying tags without fixing the baselines. However, a diagnostic will be reported by [AS0072](appsourcecop-as0072.md).
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -55,7 +55,7 @@ table 50100 MyTable
 
 In version 2.0, the type of the field `MyField` has changed from `Text[50]` to `Text[150]`. If a dependent extension uses this field, this can lead to runtime exceptions. For instance, if it assigns it to a variable of type `Text[50]`.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

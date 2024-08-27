@@ -17,7 +17,7 @@ The 'Isolated' argument cannot be changed, added, or removed.
 Any change to the 'Isolated' argument is disallowed because it may break dependent extensions that have subscribed to the event.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

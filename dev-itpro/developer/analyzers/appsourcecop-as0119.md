@@ -17,7 +17,7 @@ The value of the MovedTo property in the source symbol does not match the destin
 The source symbol's MovedTo property value does not match the destination AppId.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

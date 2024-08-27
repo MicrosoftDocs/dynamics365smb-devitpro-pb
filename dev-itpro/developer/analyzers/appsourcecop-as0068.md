@@ -17,7 +17,7 @@ Changing a table extension's target is not allowed.
 Changing the target of a table extension that has been published is not allowed, because this might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

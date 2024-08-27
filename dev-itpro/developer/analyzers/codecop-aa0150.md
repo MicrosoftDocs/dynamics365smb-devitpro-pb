@@ -78,7 +78,7 @@ Variables of the following types are analyzed: `Integer`, `BigInteger`, `Boolean
 
 Event subscribers, Integration Events, and ConfirmHanders are also not analyzed. Parameters of the type `List` can be also changed following built-in methods: `Add`, `AddRange`, `Set`, `Insert`, `Remove`, `RemoveAt`, `RemoveRange`, `Reverse`. `Arrays` additionally changed by `CompressArray` and `CopyArray`. Also the `Evaluate` built-in method is supported. 
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

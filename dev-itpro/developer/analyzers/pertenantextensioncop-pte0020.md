@@ -17,7 +17,7 @@ Use the 'application' property instead of specifying an explicit dependency on B
 The 'application' property should be used for expressing a dependency on the 'Base Application'. See https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-application-app-file for additional information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

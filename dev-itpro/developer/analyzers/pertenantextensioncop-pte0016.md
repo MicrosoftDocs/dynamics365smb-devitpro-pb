@@ -17,7 +17,7 @@ Permission set extensions should not include permissions for objects defined in 
 Permission set extensions should not include permissions for objects defined in another application. This can pose a security risk by granting excessive privileges to users.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

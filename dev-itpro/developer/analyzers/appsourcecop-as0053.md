@@ -52,7 +52,7 @@ The following manifest specifies `Cloud` as compilation target and is allowed in
 }
 ```
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

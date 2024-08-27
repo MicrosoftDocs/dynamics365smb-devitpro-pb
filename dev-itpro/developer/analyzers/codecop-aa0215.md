@@ -17,7 +17,7 @@ Follow [the style guide](https://learn.microsoft.com/dynamics365/business-centra
 Follow [the style guide](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

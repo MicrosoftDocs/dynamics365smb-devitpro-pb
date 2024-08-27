@@ -22,7 +22,7 @@ To improve readability the name of variables and parameters must be suffixed wit
 
 For more information about best practices for AL, including using suffixes, see [Best Practices for AL](../../compliance/apptest-bestpracticesforalcode.md).
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -22,7 +22,7 @@ The extension name length must not exceed the limit of 200 characters.
 
 This rule verifies that the extension name specified in the [app.json](../devenv-json-files.md) does not exceed 50 characters.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

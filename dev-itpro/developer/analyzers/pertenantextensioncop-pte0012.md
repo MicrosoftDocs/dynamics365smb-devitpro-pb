@@ -21,7 +21,7 @@ The InternalsVisibleTo setting will expose your internal objects to any extensio
 ## Remarks
 For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0081](appsourcecop-as0081.md).
 
-## See Also
+## Related information
 
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  

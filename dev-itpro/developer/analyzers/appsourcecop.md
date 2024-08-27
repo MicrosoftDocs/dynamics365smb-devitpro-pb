@@ -219,7 +219,7 @@ Prepending **Foo** to the name of the page extension object will fix this error 
 > [!NOTE]  
 > It is still possible to use the `mandatoryPrefix` and `mandatorySuffix` properties in the `AppSourceCop.json`. For more information see [AS0011](appsourcecop-as0011.md).
 
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)  

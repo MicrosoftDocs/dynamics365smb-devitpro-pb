@@ -17,7 +17,7 @@ Use a text constant or label for format string in StrSubstNo.
 Use a text constant or label for format string in StrSubstNo.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -17,7 +17,7 @@ Use a text constant for passing user messages and errors without concatenations.
 Use a text constant for passing user messages and errors without concatenations.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

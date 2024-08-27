@@ -85,7 +85,7 @@ The AL permission set grants access to the table and thereby satisfies the valid
 > [!NOTE]  
 > You can grant access to all your tables using `*`. For instance `tabledata * = R;` grants read access to all of them.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

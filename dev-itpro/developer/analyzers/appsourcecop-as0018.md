@@ -145,7 +145,7 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the public procedure `MyProcedure` has been renamed to `MyRenamedProcedure`. This is not a breaking change because this procedure couldn't be referenced by other extensions.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

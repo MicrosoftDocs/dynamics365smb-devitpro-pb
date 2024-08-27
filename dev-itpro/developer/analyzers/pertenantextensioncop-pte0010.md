@@ -21,7 +21,7 @@ The extension name length must not exceed the limit of 50 characters.
 ## Remarks
 For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0047](appsourcecop-as0047.md).
 
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

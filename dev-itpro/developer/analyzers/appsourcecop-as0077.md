@@ -17,7 +17,7 @@ Adding a var modifier in events is not allowed
 Adding a var modifier in events is not allowed as it might break the runtime behavior of extensions subscribing to it.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

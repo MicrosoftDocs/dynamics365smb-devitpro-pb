@@ -17,7 +17,7 @@ You must write a tooltip in the Tooltip property for all fields on table objects
 You must write a tooltip in the Tooltip property for all fields on table objects. This helps the users of your app to fill in the right value(s) in the field. 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

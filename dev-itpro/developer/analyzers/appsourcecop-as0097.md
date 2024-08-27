@@ -85,7 +85,7 @@ Version 2.0 of the extension:
 
 In version 2.0, the publisher has been renamed from `Publisher Name` to `New Publisher Name` and the runtime version has been changed to 8.0. The rename is allowed.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

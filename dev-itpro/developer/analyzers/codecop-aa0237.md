@@ -31,7 +31,7 @@ TempJobWIPBuffer : Record "Job WIP Buffer";
 CopyOfJobWIPBuffer : Record "Job WIP Buffer";
 ```
  
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

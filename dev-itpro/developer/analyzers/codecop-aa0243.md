@@ -17,7 +17,7 @@ Running an upgrade codeunit is not allowed.
 Running codeunits of subtype upgrade will cause runtime error.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

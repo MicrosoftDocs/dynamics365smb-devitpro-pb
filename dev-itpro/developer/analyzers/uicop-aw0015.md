@@ -17,7 +17,7 @@ Actions with scope repeater must be promoted.
 Actions with scope repeater must be promoted in order to appear on the repeater control.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

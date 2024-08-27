@@ -48,7 +48,7 @@ codeunit 50100 MyCodeunit
 
 The codeunit `MyCodeunit` has the 50100 `10` which is valid because it is within the allowed range.
 
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

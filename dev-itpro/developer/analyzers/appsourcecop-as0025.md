@@ -134,7 +134,7 @@ codeunit 50100 MyCodeunit
 In version 2.0, the signature of the event has changed. However, it does not break dependent extensions because event subscribers do not have to use all the parameters defined in the event.
 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

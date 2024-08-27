@@ -17,7 +17,7 @@ Unsupported page property change
 Modifying page properties can break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

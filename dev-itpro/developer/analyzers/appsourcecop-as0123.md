@@ -17,7 +17,7 @@ A key cannot be declared as clustered on an existing table.
 A key cannot be declared as clustered on an existing table.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -21,7 +21,7 @@ Procedures must not subscribe to CompanyOpen events because it can increase the 
 ## Remarks
 For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0061](appsourcecop-as0061.md).
 
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

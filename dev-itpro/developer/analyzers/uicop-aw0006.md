@@ -28,7 +28,7 @@ If a page should not be searchable, set the property as follows:
 UsageCategory = None;
 ```
 
-## See Also  
+## Related information  
 [UICop Analyzer](uicop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -22,7 +22,7 @@ The extension name is not valid.
 
 In order to fix this diagnostic, you must change the extension name in the manifest (app.json) of your extension.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -22,7 +22,7 @@ Suppressing all diagnostics is not allowed. Specify the diagnostic(s) that you w
 
 Enabling this rule allows to enforce that when suppressing diagnostics using the #pragma warning `disable`, the code(s) of the diagnostics to suppress must be specified instead of suppressing all analyzer diagnostics and compiler warnings.
 
-## See Also
+## Related information
 
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

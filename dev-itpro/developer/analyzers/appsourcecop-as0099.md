@@ -48,7 +48,7 @@ For detailed examples, see [AS0013](appsourcecop-as0013.md).
 > [!IMPORTANT]  
 > Changing the ID of an enum value has an impact on the data stored in the database. You must carefully assess the impact of your changes before changing the ID of an enum value. This implies writing upgrade code for your app and for the dependent extensions storing this enum value in their own tables.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

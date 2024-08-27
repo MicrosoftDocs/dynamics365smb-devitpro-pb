@@ -17,7 +17,7 @@ When a symbol is moved the name must remain the same.
 The name of the moved symbol in the source and the destination application is different.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

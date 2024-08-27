@@ -17,7 +17,7 @@ You must write a tooltip in the Tooltip property for all controls of type Action
 You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

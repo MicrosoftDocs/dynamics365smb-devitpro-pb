@@ -149,7 +149,7 @@ page 50100 MyPage
 
 
 
-## See Also  
+## Related information  
 [UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

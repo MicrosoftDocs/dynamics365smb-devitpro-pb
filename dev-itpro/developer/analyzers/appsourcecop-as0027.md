@@ -17,7 +17,7 @@ Modifying the array size of a parameter in events and external procedures is not
 Modifying the array size of a parameter in events and external procedures is not allowed.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -20,7 +20,7 @@ The InternalsVisibleTo setting will expose your internal objects to any extensio
 
 For more information, see [JSON Files](../devenv-json-files.md).
 
-## See Also
+## Related information
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

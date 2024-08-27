@@ -75,7 +75,7 @@ interface FOO_IExampleInterface
 In version 3.0 of the extension, `FOO_IMyInterface` has been deleted. This is okay, because `FOO_IMyInterface` previously had been marked with `ObsoleteState = Pending` informing developers to use "FOO_IExampleInterface" instead.
 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

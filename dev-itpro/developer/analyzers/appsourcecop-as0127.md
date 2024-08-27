@@ -17,7 +17,7 @@ Objects should be placed in a namespace with at least two levels.
 Objects should be placed in a namespace with at least two levels of nesting. This minimizes conflicts with other applications and allows the object name to not use an affix.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

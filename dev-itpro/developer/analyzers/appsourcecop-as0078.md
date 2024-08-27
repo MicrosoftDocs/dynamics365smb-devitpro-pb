@@ -17,7 +17,7 @@ Adding or removing a var modifier in external procedures is not allowed
 Adding or removing a var modifier in public procedures is not allowed as it might break the runtime behavior of extensions calling it.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -121,7 +121,7 @@ When compiling the extension Bar, the AL compiler reports now a warning similar 
 
 When compiling the extension Foobar, the compilation fails because the AL compiler reports an error similar to `AL0196: The call is ambiguous between the method 'MyProcedure()' defined in TableExtension 'Bar_CustomerExtension' by the extension 'Bar' and the method 'MyProcedure()' defined in Table 'Foo_Table' by the extension 'Foo`.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

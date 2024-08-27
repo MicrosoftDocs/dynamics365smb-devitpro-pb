@@ -17,7 +17,7 @@ Optional return value should not be omitted in upgrade codeunits.
 In upgrade codeunits always remember to specify optional return values on methods that can cause run-time errors.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

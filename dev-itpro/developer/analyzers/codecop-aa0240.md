@@ -63,7 +63,7 @@ The following elements are checked in code:
 - Translation files (tags `<source>`, `<target>`, `<note>`)
 - App manifest file (Name, Brief, Description, Publisher)
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

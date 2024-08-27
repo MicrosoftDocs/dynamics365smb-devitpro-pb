@@ -17,7 +17,7 @@ An interface must not be removed from the the list of extended interfaces on an 
 An interface must not be removed from the list of extended interfaces on an interface that has been published, because dependent extensions may break
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

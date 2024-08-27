@@ -46,7 +46,7 @@ page 50100 MyPage
 ```
 
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [OptionCaption Property](../properties/devenv-optioncaption-property.md)  
 [Get Started with AL](../devenv-get-started.md)  

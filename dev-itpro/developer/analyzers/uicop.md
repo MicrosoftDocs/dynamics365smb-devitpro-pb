@@ -35,7 +35,7 @@ UICop is an analyzer that enforces rules that must be respected by extensions me
 |[AW0016](uicop-aw0016.md)|Rich Text Editor fields are only allowed while alone in a FastTab group.|WebClient|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)

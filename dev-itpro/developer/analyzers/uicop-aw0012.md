@@ -27,7 +27,7 @@ The following properties are used to enable teaching tips in the UI. For more in
 - [AboutText Property](../properties/devenv-abouttext-property.md)   
 - [AboutTextML Property](../properties/devenv-abouttextml-property.md)    
 
-## See Also  
+## Related information  
 [UICop Analyzer](uicop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

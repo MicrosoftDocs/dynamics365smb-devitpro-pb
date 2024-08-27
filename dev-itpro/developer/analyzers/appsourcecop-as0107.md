@@ -17,7 +17,7 @@ The access modifier of a variable that belongs to the public API cannot be chang
 The access modifier of a variable that belongs to the public API cannot be changed to a value that provides less access, because it will break dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

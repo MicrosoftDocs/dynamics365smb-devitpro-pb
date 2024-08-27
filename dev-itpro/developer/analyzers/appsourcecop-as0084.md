@@ -84,7 +84,7 @@ The `app.json` file of the extension:
 
 The ID range specified is included in the range allowed for AppSource applications. 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

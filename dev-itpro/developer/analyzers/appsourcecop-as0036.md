@@ -229,7 +229,7 @@ table 50100 MyTable
 
 In version 1.0, `MyField` was accessible to table extensions extending `MyTable`. In version 2.0, it is now accessible to other extensions both in and outside of table extensions extending `MyTable`. This is not a breaking change.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

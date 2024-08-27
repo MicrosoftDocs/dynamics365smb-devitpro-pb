@@ -21,7 +21,7 @@ Permission sets should not be defined in XML. Instead, use the dedicated AL obje
 ## Remarks
 For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0094](appsourcecop-as0094.md).
 
-## See Also
+## Related information
 [Entitlements and Permissions Sets Overview](../devenv-entitlements-and-permissionsets-overview.md)  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  

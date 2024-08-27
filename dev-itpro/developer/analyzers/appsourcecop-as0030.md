@@ -39,7 +39,7 @@ If the rename was done in order to comply with naming rules such as [AS0011](app
 
 Renaming a page has the same consequences as removing it for dependent extensions which are referencing it by name. You can then find examples of errors reported in dependent extensions in rule [AS0029](appsourcecop-as0029.md).
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

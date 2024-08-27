@@ -17,7 +17,7 @@ When ApplicationArea is set to 'All', no other values for ApplicationArea should
 'All' should always stand alone has incorrect order.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -151,7 +151,7 @@ key(MyIntegerField; MyIntegerField) { }
 
 This change is *not allowed* because the primary key was named `PK` in the baseline extension while it is now named `MyIntegerField`.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

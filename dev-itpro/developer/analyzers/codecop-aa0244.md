@@ -51,7 +51,7 @@ codeunit 50100 MyCodeunit
 > [!NOTE]  
 > Rule AA0244 warns on EventSubscribers and even if the subscribers don't have control over the names of the parameters, they have control over the global variables living in the Codeunit.
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

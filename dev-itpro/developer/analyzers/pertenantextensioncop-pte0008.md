@@ -21,7 +21,7 @@ Page controls and actions must use the ApplicationArea property to be visible to
 ## Remarks
 For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0062](appsourcecop-as0062.md).
 
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

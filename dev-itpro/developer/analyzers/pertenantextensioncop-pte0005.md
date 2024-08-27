@@ -21,7 +21,7 @@ The compilation target of an application must be a value that is allowed in a mu
 ## Remarks
 For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0053](appsourcecop-as0053.md).
 
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

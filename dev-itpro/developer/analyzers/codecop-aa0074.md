@@ -39,7 +39,7 @@ TextConst and Label variable names should have a suffix (an approved three-lette
 GetTok: Label 'GET', Locked = true;
 ```
 
-## See also
+## Related information
 
 [CodeCop Analyzer](codecop.md)  
 [Get started with AL](../devenv-get-started.md)  

@@ -36,7 +36,7 @@ The use of affixes is required for extensions submitted to the AppSource marketp
 
 In order to register your affixes, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
 
-## See Also  
+## Related information  
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

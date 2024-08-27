@@ -17,7 +17,7 @@ Interfaces that have been published must not be deleted.
 An interface that has been published must not be deleted, because dependent extensions may break.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

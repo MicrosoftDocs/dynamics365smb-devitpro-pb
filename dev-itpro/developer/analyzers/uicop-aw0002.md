@@ -17,7 +17,7 @@ The Web client does not support displaying both Actions and Fields in Cue Groups
 The Web client does not support displaying both Actions and Fields in Cue Groups. Only Fields will be displayed.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [UICop Analyzer](uicop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

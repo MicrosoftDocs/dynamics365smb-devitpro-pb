@@ -17,7 +17,7 @@ To avoid confusion, do not give methods the same name as fields or actions in th
 To avoid confusion, do not give methods the same name as fields or actions in the same scope.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

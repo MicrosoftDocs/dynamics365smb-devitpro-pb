@@ -99,7 +99,7 @@ table 50100 MyTable
 
 In version 2.0 of the extension, the clustered key has been renamed from `ClusteredKey` to `NewClusteredKey`. This change is detected as a removal of `ClusteredKey` and *is not allowed by the synchronization engine*.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

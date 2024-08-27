@@ -17,7 +17,7 @@ A variable belonging to the public API cannot be removed.
 A variable that belongs to the public API cannot be removed, because it will break dependent extensions referencing this variable.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

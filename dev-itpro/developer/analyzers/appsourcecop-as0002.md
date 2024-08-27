@@ -21,7 +21,7 @@ Fields must not be deleted. This might break the upgrade of existing installatio
 > [!NOTE]  
 > This rule validates all fields independently of their Accessibility or ObsoleteState, because they are used when synchronizing the schema defined in the extension to the database.
 
-## See Also
+## Related information
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

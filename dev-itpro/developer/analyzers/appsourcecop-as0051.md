@@ -20,7 +20,7 @@ The manifest property must be specified and contain a meaningful value. The valu
 
 The list of properties which must be specified in the manifest of extensions targeting the AppSource marketplace can be found in [App.json file](../devenv-json-files.md#appjson-file).
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

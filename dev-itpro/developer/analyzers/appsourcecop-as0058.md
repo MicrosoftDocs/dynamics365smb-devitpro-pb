@@ -34,7 +34,7 @@ For more information, see:
 - [TryFunction attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute)
 - [Handling Errors by Using Try Methods](../devenv-handling-errors-using-try-methods.md)
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

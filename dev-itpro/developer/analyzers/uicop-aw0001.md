@@ -21,7 +21,7 @@ The Web client does not support displaying the Request page of XMLPorts.
 
 This rule applies only to [!INCLUDE[prod_short](../../includes/prod_short.md)] Spring 2019 and earlier versions. Request pages for XMLPorts are supported as of [!INCLUDE[prod_short](../../includes/prod_short.md)] 2019 release wave 2.
 
-## See Also  
+## Related information  
 [UICop Analyzer](uicop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

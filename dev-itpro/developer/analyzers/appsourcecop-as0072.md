@@ -263,7 +263,7 @@ codeunit 50100 MyCodeunit
 
 The codeunit MyCodeunit is marked as obsolete pending in the baseline and remains obsolete in the current version. The obsolete tag is then not validated by rule AS0072, but is validated by AS0074. Note that this example does not trigger any diagnostics from the AppSourceCop for obsolete tags.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

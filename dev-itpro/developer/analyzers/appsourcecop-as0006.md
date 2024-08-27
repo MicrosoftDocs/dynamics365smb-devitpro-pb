@@ -21,7 +21,7 @@ Tables that have been published must not change name. This might break the upgra
 > [!NOTE]  
 > This rule validates tables independently of their Accessibility or ObsoleteState, because they are used when synchronizing the schema defined in the extension to the database.
 
-## See Also
+## Related information
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

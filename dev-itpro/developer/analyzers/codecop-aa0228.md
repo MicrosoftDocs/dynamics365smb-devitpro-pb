@@ -57,7 +57,7 @@ codeunit 10 MyCodeunit
 ## Good and bad practices for fixing the rule
 Remove the unused local method from the code.
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

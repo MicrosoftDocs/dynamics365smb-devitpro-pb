@@ -17,7 +17,7 @@ Avoids a runtime error from using CalcFields on a field that is not a FlowField 
 CalcFields should only be used for FlowFields or Blob fields
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -24,7 +24,7 @@ The ApplicationArea names must be specified in the following order:
 
 `Invoicing, **Basic**, **Suite**, RelationshipMgmt, Jobs, FixedAssets, Location, BasicHR, Assembly, ItemCharges, **Advanced**, Warehouse, Service, Manufacturing, Planning, Dimensions, ItemTracking, Intercompany, SalesReturnOrder, PurchReturnOrder, Prepayments, CostAccounting, SalesBudget, PurchaseBudget, ItemBudget, SalesAnalysis, PurchaseAnalysis, InventoryAnalysis, XBRL, Reservation, OrderPromising, ADCS, Comments, RecordLinks, Notes, VAT, SalesTax, ItemReferences, BasicEU, BasicCA, BasicUS, BasicMX, BasicAU, BasicNZ, BasicAT, BasicCH, BasicDE, BasicBE, BasicCZ, BasicDK, BasicES, BasicFI, BasicFR, BasicGB, BasicIS, BasicIT, BasicNL, BasicNO, BasicRU, BasicSE`
 
-## See Also
+## Related information
 
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

@@ -17,7 +17,7 @@ Obsoleted object must have a state 'Pending' or 'Removed' and a justification sp
 Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

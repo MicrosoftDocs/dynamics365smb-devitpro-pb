@@ -17,7 +17,7 @@ To avoid confusion, do not give global variables the same name as fields, method
 To avoid confusion, do not give global variables the same name as fields, methods, or actions in the same scope.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

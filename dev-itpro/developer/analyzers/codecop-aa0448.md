@@ -57,7 +57,7 @@ Change FieldName to FieldCaption or TableName to TableCaption.
 
 The Open(Dialog) method is not checked and is an exception from this rule.
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

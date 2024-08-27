@@ -17,7 +17,7 @@ SIFT index should not be used on primary or unique key.
 SIFT index should not be used on primary or unique key.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

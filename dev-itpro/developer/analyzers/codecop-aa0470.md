@@ -32,7 +32,7 @@ MissingNodeErr: Label 'Cannot find an XML node that matches %1 or %2.';
 MissingNodeErr: Label 'Cannot find an XML node that matches %1 or %2.', Comment = '%1 = XML node name ; %2 = Parent XML node name';
 ```
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

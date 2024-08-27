@@ -104,7 +104,7 @@ codeunit 50100 MyCodeunit
 > [!NOTE]  
 > The version to specify when using the default obsolete tag pattern is validated by the rules [AS0072](appsourcecop-as0072.md) and [AS0074](appsourcecop-as0074.md).
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

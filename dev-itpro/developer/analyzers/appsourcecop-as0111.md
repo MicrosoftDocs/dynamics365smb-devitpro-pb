@@ -17,7 +17,7 @@ Permission set extensions should not include permission sets defined in another 
 Permission set extensions should not include permission sets from another application. This can pose a security risk by granting excessive privileges to users.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

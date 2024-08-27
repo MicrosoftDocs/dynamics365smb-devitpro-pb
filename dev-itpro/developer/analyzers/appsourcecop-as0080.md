@@ -66,7 +66,7 @@ table 50100 MyTable
 In version 2.0, the type of the field `MyField` has changed from `Text[50]` to `Text[25]`. 
 As this is a breaking change, if version 1.0 was installed on a tenant, it won't be possible to synchronize and upgrade the version 2.0 of the extension. Moreover, if a dependent extension uses this field, this change of length can lead to runtime exceptions.
 
-## See also
+## Related information
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

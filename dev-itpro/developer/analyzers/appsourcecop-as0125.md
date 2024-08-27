@@ -17,7 +17,7 @@ Changes the XLIFF translation ID are not allowed.
 Changes affecting the XLIFF translation ID of an object or object member that has been published are not allowed, because this will break the translations provided by dependent extensions for your extension.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

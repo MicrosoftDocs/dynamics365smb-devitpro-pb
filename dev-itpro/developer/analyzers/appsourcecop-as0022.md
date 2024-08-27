@@ -156,7 +156,7 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the procedure `MyOnPremProcedure` becomes available for both `OnPrem` and `Cloud` development. Any dependent extension can now call this procedure, regardless of the compilation target specified in their app.json. The default Scope of a procedure is `Cloud`. Removing the attribute is then also allowed.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

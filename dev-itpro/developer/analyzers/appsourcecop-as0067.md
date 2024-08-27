@@ -120,7 +120,7 @@ enum 50100 MyEnum implements MyInterface
 
 In version 2.0, the enum specifies a default implementation which will prevent compilation errors for dependent extensions extending this enum.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

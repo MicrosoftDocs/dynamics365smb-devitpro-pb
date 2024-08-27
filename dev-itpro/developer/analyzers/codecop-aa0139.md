@@ -17,7 +17,7 @@ Do not assign a text  to a target with smaller size.
 Do not assign a text  to a target with smaller size.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

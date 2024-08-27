@@ -105,7 +105,7 @@ The field `Cust. Rep.` was renamed to `Alt. Name`. It is not allowed to change t
 > [!NOTE]  
 > This rule validates all fields independently of their Accessibility or ObsoleteState, because they are used when synchronizing the schema defined in the extension to the database.
 
-## See Also
+## Related information
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

@@ -28,7 +28,7 @@ This rule validates table extensions independently of the ObsoleteState of their
 
 Revert the changes done by adding back the tables and table extensions that have been removed.
 
-## See Also
+## Related information
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

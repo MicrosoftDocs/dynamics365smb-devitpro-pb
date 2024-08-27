@@ -17,7 +17,7 @@ It is not allowed to delete a value from an enum.
 Deleting an enum value is not allowed, unless the enum is marked as obsolete. This restriction prevents dependent extensions from breaking, if they use the enum value.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

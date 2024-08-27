@@ -17,7 +17,7 @@ Source symbol for the moved symbol cannot be found in the package with the given
 The source symbol for this moved symbol cannot be found in the package with the given AppId.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

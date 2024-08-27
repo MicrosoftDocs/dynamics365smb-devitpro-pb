@@ -157,7 +157,7 @@ There's no impact on the default section of the command bar since all actions re
 
 Use this approach if you didn't expect `MyPromotedAction` to appear in the promoted section of the command bar and you want to hide it completely. 
 
-## See Also  
+## Related information  
 [UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

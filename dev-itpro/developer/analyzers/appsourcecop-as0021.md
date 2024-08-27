@@ -163,7 +163,7 @@ codeunit 50100 MyCodeunit
 
 In the newer version of the extension, the sender becomes exposed through the business type event. 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

@@ -17,7 +17,7 @@ The type of a variable belonging to the public API cannot be changed.
 The type of a variable that belongs to the public API cannot be changed, because it will break dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

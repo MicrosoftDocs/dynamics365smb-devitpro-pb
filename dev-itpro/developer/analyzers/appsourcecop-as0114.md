@@ -17,7 +17,7 @@ The name of an external business event cannot be changed.
 The name attribute parameter of an external business event cannot be changed because it might break external subscribers.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

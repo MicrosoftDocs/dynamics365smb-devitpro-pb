@@ -17,7 +17,7 @@ When ApplicationArea is set to 'Basic', you must also specify 'Suite'.
 When ApplicationArea is set to 'Basic', you must also specify 'Suite'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

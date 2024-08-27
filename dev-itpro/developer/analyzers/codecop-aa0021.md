@@ -22,7 +22,7 @@ Variable declarations should be ordered by type. In general, object and complex 
 
 Object and complex variable types must be listed first, and then simple variables. The order is: Record, Report, Codeunit, XmlPort, Page, Query, Notification, BigText, DateFormula, RecordId, RecordRef, FieldRef, and FilterPageBuilder. The rest of the variables are not sorted.
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

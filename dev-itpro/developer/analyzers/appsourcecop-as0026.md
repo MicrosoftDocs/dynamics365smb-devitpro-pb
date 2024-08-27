@@ -75,7 +75,7 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the subtype of the parameter `i` has changed from a Customer record to a Vendor record. If a dependent extension calls this method, this will lead to a compilation error similar to `Argument 1: cannot convert from 'Record Vendor' to 'Record Customer' (AL0133)`.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

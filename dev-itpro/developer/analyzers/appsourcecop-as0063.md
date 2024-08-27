@@ -17,7 +17,7 @@ Removing a var modifier in events is not allowed
 Removing a var modifier on a parameter in an event is not allowed as it will break dependent extensions subscribing to it.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

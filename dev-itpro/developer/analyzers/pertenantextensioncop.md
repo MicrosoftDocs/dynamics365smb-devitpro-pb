@@ -42,7 +42,7 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |[PTE0023](pertenantextensioncop-pte0023.md)|The enum ordinal value should be within the allowed range|Extensibility|Info|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)

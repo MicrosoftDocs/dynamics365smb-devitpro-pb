@@ -101,7 +101,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0470](codecop-aa0470.md)|Placeholders should have a comment explaining their content.|Localizability|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)

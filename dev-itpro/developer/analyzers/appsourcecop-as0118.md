@@ -110,7 +110,7 @@ Moreover, if a dependent extension uses this field, this change of length can le
 > [!NOTE]  
 > When no primary key is explicitly defined in the table definition, the first field is used as primary key.
 
-## See also 
+## Related information 
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

@@ -17,7 +17,7 @@ Changing an extension object's target is not allowed.
 Changing the target of an extension object that has been published is not allowed, because this might break the dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

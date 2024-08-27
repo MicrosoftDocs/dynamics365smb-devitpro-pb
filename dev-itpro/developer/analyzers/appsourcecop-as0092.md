@@ -80,7 +80,7 @@ Using Application Insights provides telemetry to troubleshoot, understand, and f
 
 The Azure Application Insights resource specified in the manifest of the extension submitted to AppSource will be used to log detailed information about the validation process for your AppSource submission. For more information, see [Analyzing AppSource Submission Validation Trace Telemetry](../../administration/telemetry-appsource-submission-validation-trace.md).
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

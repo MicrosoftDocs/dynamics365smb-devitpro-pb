@@ -17,7 +17,7 @@ When BEGIN follows THEN, ELSE, DO, it should be on the same line, preceded by on
 When BEGIN follows THEN, ELSE, DO, it should be on the same line, preceded by one space character.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -17,7 +17,7 @@ The enum ordinal value should be within the allowed range
 The enum ordinal value shoul be within the allowed range and outside the range allocated to AppSource extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

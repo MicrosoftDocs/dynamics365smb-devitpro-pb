@@ -17,7 +17,7 @@ Unsafe methods cannot be invoked in an AppSource application
 The method cannot be invoked in an AppSource application because it can lead to runtime errors or undefined behavior.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
