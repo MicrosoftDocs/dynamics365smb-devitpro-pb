@@ -36,7 +36,7 @@ The preview period allows for testing of the new functionality before the versio
 
 > [!IMPORTANT]
 >
-> - The 5-month update period is a production-ready preview feature and only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.md).
+> - The 5-month update period is a production-ready preview feature that applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.md).
 > - Partner-localized environments have a 60-day update period that is expected to end in the first half of December 2024.
 > - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
@@ -54,7 +54,9 @@ When a new version is available as update on the environment, [Notification reci
 
 > [!IMPORTANT]
 >
-> - The 5-month update period is a production-ready preview feature and only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.md).
+> - The 1-month grace period is a production-ready preview feature that applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.ms).
+>
+> Partner-localized environments have a 3-month grace period that is expected to end in the first half of March 2025.The 5-month update period is a production-ready preview feature and only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.md).
 > - Partner-localized environments have a 3-month update period that is expected to end in the first half of March 2025.
 > - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
