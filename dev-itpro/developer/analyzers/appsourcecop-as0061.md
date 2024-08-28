@@ -19,6 +19,7 @@ Procedures must not subscribe to CompanyOpen events because it can increase the 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
 To improve the login time for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], extensions should no longer use the **OnBeforeCompanyOpen** and **OnAfterCompanyOpen** events. For more information, see [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](../../compliance/apptest-onbeforecompanyopen.md).
 
 ## See Also  

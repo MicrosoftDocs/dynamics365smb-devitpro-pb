@@ -17,6 +17,18 @@ Interface implementations that have been published must not be deleted.
 An interface implementation that has been published must not be deleted, because dependent extensions may break.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This error occurs when an attempt is made to delete an interface implementation that has already been published. Deleting a published interface implementation can break dependent extensions that rely on it, leading to runtime errors and loss of functionality.
+
+## How to fix this diagnostic?
+
+To resolve this error, you need to ensure that published interface implementations aren't deleted. Here are the steps:
+
+1. Locate the interface implementation in your code that is being deleted.
+2. Restore the interface implementation to its original state.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

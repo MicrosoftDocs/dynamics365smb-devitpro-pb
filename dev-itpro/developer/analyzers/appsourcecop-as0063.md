@@ -17,6 +17,18 @@ Removing a var modifier in events is not allowed
 Removing a var modifier on a parameter in an event is not allowed as it will break dependent extensions subscribing to it.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This error occurs when the `var` modifier is removed from a parameter in an event. The `var` modifier indicates that the parameter is passed by reference, allowing the event subscriber to modify the parameter's value. Removing the `var` modifier changes the parameter to be passed by value, which can break dependent extensions that rely on the original behavior.
+
+## How to fix this diagnostic?
+
+To resolve this error, you need to ensure that the `var` modifier isn't removed from parameters in events. Here are the steps:
+
+1. Locate the event in your code where the `var` modifier has been removed from a parameter.
+2. Restore the `var` modifier to the parameter.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
