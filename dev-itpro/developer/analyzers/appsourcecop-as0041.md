@@ -17,6 +17,18 @@ Table field property changes that cause destructive changes must not be removed
 Removing table field properties can lead to destructive changes that will break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This error occurs when an attempt is made to remove table field properties that have already been published and are considered destructive. Destructive changes can lead to data loss, corruption, or other issues that can break the upgrade process for existing installations and dependent extensions.
+
+## How to fix this diagnostic?
+
+To resolve this error, you need to avoid removing published table field properties that are considered destructive. Here are the steps:
+
+1. Locate the table field property in your code that is being removed.
+2. Restore the property to its original state.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

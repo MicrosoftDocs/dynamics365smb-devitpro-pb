@@ -18,7 +18,7 @@ Modifying table field properties can lead to destructive changes that will break
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-It is not allowed to change property values in a way that would prevent the schema synchronization of the extension on existing installations, or that would break dependent extensions.
+It's not allowed to change property values in a way that would prevent the schema synchronization of the extension on existing installations, or that would break dependent extensions.
 
 ## Code examples triggering the rule
 
