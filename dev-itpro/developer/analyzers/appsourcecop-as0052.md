@@ -17,6 +17,14 @@ The property 'url' must be set to a valid URL
 The property 'url' must be set to a valid URL.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+To resolve this error, you need to ensure that the 'url' property is set to a valid URL. Here are the steps:
+
+1. Locate the 'url' property in your code that is causing the error.
+2. Ensure that the URL is correctly formatted and points to a valid web address.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

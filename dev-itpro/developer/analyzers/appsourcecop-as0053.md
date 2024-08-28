@@ -18,6 +18,8 @@ The compilation target of an application must be a value that is allowed in a mu
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
 This rule validates that the manifest of your extension (app.json) specifies a compilation target that is allowed in a multi-tenant SaaS environment. For more information, see [JSON files](../devenv-json-files.md) and [Compilation Scope Overview](../devenv-compilation-scope-overview.md).
 
 ## How to fix this diagnostic?
