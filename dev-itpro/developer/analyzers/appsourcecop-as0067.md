@@ -20,15 +20,15 @@ Adding an interface to an enum that has been published must have a default imple
 
 ## Remarks
 
-When an extensible enum implements an interface, the AL compiler validates that all of its enum values implement this interface. This applies to enum values defined in the enum itself and to the enums defined in enum extensions. When an extensible enum that was part of the previous version of this extension implements a new interface, a default interface implementation must be specified using the [Default Implementation](../properties/devenv-defaultimplementation-property.md) property because dependent extensions extending this enum won't be implementing the interface explicitly.
+When an extensible enum implements an interface, the AL compiler validates that all of its enum values implement this interface. This applies to enum values defined in the enum itself and to the enums defined in enum extensions. When an extensible enum that was part of the previous version of this extension implements a new interface, a default interface implementation must be specified using the [Default implementation](../properties/devenv-defaultimplementation-property.md) property because dependent extensions extending this enum won't be implementing the interface explicitly.
 
 ## How to fix this diagnostic?
 
-Add the [Default Implementation](../properties/devenv-defaultimplementation-property.md) to the enum that implements a new interface.
+Add the [Default implementation](../properties/devenv-defaultimplementation-property.md) to the enum that implements a new interface.
 
 ## Code example triggering the rule
 
-In the following examples, the version 1.0 of the extension defines an extensible enum which does not implement any interface.
+In the following examples, the version 1.0 of the extension defines an extensible enum which doesn't implement any interface.
 
 Version 1.0 of the extension:
 
@@ -118,7 +118,7 @@ enum 50100 MyEnum implements MyInterface
 }
 ```
 
-In version 2.0, the enum specifies a default implementation which will prevent compilation errors for dependent extensions extending this enum.
+In version 2.0, the enum specifies a default implementation, which will prevent compilation errors for dependent extensions extending this enum.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
