@@ -72,20 +72,14 @@ The enforced period starts when the grace period ends. During this period, any e
 
 > [!IMPORTANT]
 >
-> - The 5-month update period is a production-ready preview feature and only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.md).
-> - Partner-localized environments have a 3-month update period that is expected to end in the first half of March 2025.
+> - Opting out of minor updates is a production-ready preview feature that applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.md) only, not partner-localized enviroments.
 > - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
 Minor updates are released every month in which there's no major update release, that is, every month except April and October. These updates contain application changes that are critical improvements to the service, including regulatory updates. Similar to major updates, minor updates are made generally available in the beginning of each calendar month. After a minor update is general available, new environments are created on the new minor version. The new minor version is made available as an update to environments on the previous version around a week after general availability; the exact timing might differ per environment. When a new minor version is made available as update on your environment, Microsoft schedules the update to take place around a week later; the exact timing might differ per environment.
 
-It isn't possible to skip versions; environments that aren't on the latest version when a new minor version becomes available have to update to every intermediate version before they can update to the latest version. It might take up to an hour for the next version to become as available as update on your environment upon completing an update to a version that isn't the latest generally available.
+With Microsoft-localized enviroments, administrators can opt out of monthly updates. The default behavior of environments receiving updates every month doesn’t change. However, administrators choose to wait to impelement minor updates until it suit thier needs and schedule. However, it isn't possible to skip minor update versions; environments that aren't on the latest version when a new minor version becomes available have to update to every intermediate version before they can update to the latest version. It might take up to an hour for the next version to become as available as update on your environment upon completing an update to a version that isn't the latest generally available.
 
-> [!IMPORTANT]
-> For 2024 release wave 2, minor updates are optional but not skippable as part of the public preview for [flexible update management](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md). This only applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.ms).
->
-> [Partner-localized environments](../compliance/apptest-countries-and-translations.ms) are not part of the public preview; for these environments minor updates are required and not skippable. As in previous release waves and similar to how major updates roll out, minor updates have a 28-day update period followed by a 3-month grace period for these environments.
->
-> Once the changes that are part of [flexible update management](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md) are generally available minor updates will be optional on all environments, and administrators will be able to skip versions by changing the target version for a scheduled update from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
+Partner-localized environments aren't part of the public preview. For these environments, minor updates are required and not skippable. As in previous release waves and similar to how major updates roll out, minor updates have a 28-day update period followed by a 3-month grace period for these environments. Once [flexible update management](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly.md) feature is generally available, minor updates will be optional on all environments, and administrators will be able to skip versions by changing the target version for a scheduled update from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 ## Release plans
 
