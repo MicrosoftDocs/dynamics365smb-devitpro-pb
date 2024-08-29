@@ -20,16 +20,15 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 
-- [Automate country of origin listed for item tracking code in Intrastat reporting (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
-- [Enable additional countries and regions (general availability)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/enable-additional-countries-regions)
-
+- tbd
+- 
 ## Localization updates
 
 |Country/region|Feature|Description|
 |-|-|-|
-||||
+|tbd|||
 
-## Release Plan
+## Release plan
 
 Do you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2024 release wave 1 (release from April 2024 through September 2024)? Learn more at [Plan and prepare for Dynamics 365 Business Central in 2024 release wave 1](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/)<!--(https://aka.ms/BCReleasePlan)-->.
 
@@ -73,4 +72,4 @@ Are you a partner who wants a list of relevant resources? Learn more in [Resourc
 
 ### Discover all user related resources on aka.ms/BCUsers
 
-Are you a user who want a list of relevant resources? Learn more in [Resources for users](https://aka.ms/BCUsers).  
+Are you a user who wants a list of relevant resources? Learn more in [Resources for users](https://aka.ms/BCUsers).  
