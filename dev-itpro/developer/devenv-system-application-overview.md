@@ -1,28 +1,26 @@
 ---
-title: "Overview of the Application"
-description: "This article provides an overview of the modules in the Application, and information about how you can use them."
+title: Overview of the application
+description: This article provides an overview of the modules in the Business Central application, and information about how you can use them.
 author: bholtorf
 ms.topic: overview
 ms.author: bholtorf
-ms.date: 01/08/2024
-ms.collection:
-  - bap-ai-copilot
-ms.reviewer: bholtorf
+ms.date: 08/29/2024
+ms.reviewer: solsen
 ---
 
-# Overview of the Application
+# Overview of the application
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-The business central application code is being refactored from a single monolythic application into smaller applications (layers) which in turn are built from small modules which handle a single functionality or feature.
+The [!INCLUDE [prod_short](includes/prod_short.md)] application code is being refactored from a single monolythic application into smaller applications (layers), which in turn are built from small modules which handle a single functionality or feature.
 
-The [System Application](https://github.com/microsoft/BCApps/tree/main/src/System%20Application) layer contains modules that provide ERP agnostic functionality. These are mostly technical features which any application needs.
-The [Business Foundation](https://github.com/microsoft/BCApps/tree/main/src/Business%20Foundation) layer contains modules that provide ERP related functionality that applies to all or none of the application domains.
+The [System application](https://github.com/microsoft/BCApps/tree/main/src/System%20Application) layer contains modules that provide ERP agnostic functionality. These are mostly technical features which any application needs.
+The [Business foundation](https://github.com/microsoft/BCApps/tree/main/src/Business%20Foundation) layer contains modules that provide ERP related functionality that applies to all or none of the application domains.
 
-As we continue to modernize the application code more modules and layers will be added. For an overview of system and application reference documentation, see [System and Base Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application).
+As we continue to modernize the application code more modules and layers will be added. For an overview of system and application reference documentation, see [System and base application reference for Dynamics 365 Business Central](/dynamics365/business-central/application).
 
 >[!Note]
-> If you find something you think we should add, visit our [Dynamics 365 Application Ideas](https://aka.ms/bcideas) page. If you would like to contribute directly, you can do so in to the [BCApps](https://github.com/microsoft/BCApps) repository. Please review the contribution guidelines here: [Contribution Guidelines](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md)
+> If you find something that you think we should add, visit our [Dynamics 365 Application Ideas](https://aka.ms/bcideas) page. If you would like to contribute directly, you can do so in to the [BCApps](https://github.com/microsoft/BCApps) repository. Please review the contribution guidelines here: [Contribution Guidelines](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md)
 
 
 <!--## Example - Enhancing a Module
@@ -114,6 +112,7 @@ Publish-BCContainerApp -containerName $containerName `
 ```
 8. You can share your enhancements with others. For more information, see [Git Going with Extensions](https://community.dynamics.com/business/b/businesscentraldevitpro/posts/quot-git-quot-going-with-extensions). The only difference in the guidance is that you must use a container instead of a cloud sandbox.  -->
 
-## See also
+## Related information
+
 [BCApps](https://github.com/microsoft/BCApps)  
 [BCApps reference documentation](https://microsoft.github.io/BCApps/#reference-documentation)
