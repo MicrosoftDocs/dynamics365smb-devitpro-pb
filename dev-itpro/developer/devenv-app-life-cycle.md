@@ -72,7 +72,7 @@ Additionally, there will not be any data loss during uninstall, install, or upgr
 
 When an extensions gets uninstalled, these tables do not get removed. Therefore, when the extension gets reinstalled (or upgraded), the data is still available. You do not need to worry about data loss for choosing the uninstall/install route. However, do keep in mind that if any actions are being performed on the tenant while the extension is uninstalled, the extension's events and such will not be firing, and your app may miss the creation of new data. Try to perform the uninstall/install while the tenant is not online.  
 
-For more information, see [When apps or PTEs cannot be updated by Microsoft](app-maintain.md#when-apps-or-ptes-cant-be-updated-by-microsoft).  
+For more information, see [When apps or PTEs cannot be updated by Microsoft](app-maintain.md#when-microsoft-cant-update-apps-or-ptes).  
 
 ## See also
 
