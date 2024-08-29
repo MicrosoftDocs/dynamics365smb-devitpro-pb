@@ -69,7 +69,7 @@ Work with your partner to update extensions and apps you have installed before a
 
 ### Discover all partner related resources on aka.ms/BCAll
 
-Are you a partner who wants a list of for relevant resources? Learn more in [Resources for Partners](https://aka.ms/BCAll).
+Are you a partner who wants a list of relevant resources? Learn more in [Resources for Partners](https://aka.ms/BCAll).
 
 ### Discover all user related resources on aka.ms/BCUsers
 
