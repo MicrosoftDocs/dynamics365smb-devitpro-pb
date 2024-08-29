@@ -83,13 +83,13 @@ Technical incompatibilities with AppSource apps installed on the environment mig
 
 The grace period starts when the update period ends and lasts for one month, which is September for the update period that starts in April and March for the update period that starts in October. During the grace period, the update can't be rescheduled to a later date and is run. Should a scheduled update fail due to technical incompatibilities with installed apps, [notification recipients](../administration/tenant-admin-center-notifications.md)  receive a notification with failure details and recommended actions. Although the publisher's code continues to run on an outdated version of [!INCLUDE [prod_short](includes/prod_short.md)] online, the customer must work with their reseller to resolve these issues immediately so that the environment can be updated. Next to messages in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)], all users in the customer's tenant might also get more active warnings about the incompatibilities when they use the product in the browser or their mobile device.
 
-For AppSource apps, if no appropriate action or follow-up was taken by the publisher since the release, the app is removed from AppSource. This situation means no new customers are able to install the app in a new tenant. The main reason for removing an app from the marketplace is to ensure that new customers aren't affected by incompatibilities with the latest version of the base product, [!INCLUDE [prod_short](includes/prod_short.md)].  
+For AppSource apps, if no appropriate action or follow-up was taken by the publisher since the release, the app is removed from AppSource. This situation means no new customers are able to install the app in a new tenant. It  ensures that new customers aren't affected by incompatibilities with the latest version of [!INCLUDE [prod_short](includes/prod_short.md)].  
 
 If the publisher wants to have their app available again, they must mitigate all existing incompatibility issues and go through the full validation process again. Once a compatible version of the app is published, the update to the app is automatically installed once environments are updated.
 
 ### Enforced update period
 
-The enforced update period starts when the grace period ends. During this period, any extensions that are causing the update to the next major version to fail might be uninstalled from the environment automatically in order for the update to succeed. For example, the update could fail because of compatibility issues. Data belonging to extensions that are uninstalled automatically during this period isn't deleted from the environment. The data can be recovered by installing a version of the extension that is compatible after the update succeeds.
+The enforced update period starts when the grace period ends. During this period, any extensions that are causing the update to the next major version to fail might be uninstalled from the environment automatically in order for the update to succeed. For example, the update could fail because of compatibility issues. Data belonging to extensions that are uninstalled automatically during this period isn't deleted from the environment. The data can be recovered by installing a version of the extension that is compatible after the update succeeds. Once a compatible version of an app is made available, it won't be automatically installed on each environment from which it was uninstalled as part of the enforced update period.
 
 During this period, the customer and their reselling partner are fully responsible for finding a solution on how to proceed in this situation. Microsoft might also choose to remove all existing apps by this publisher from AppSource and block the publisher from publishing new apps for [!INCLUDE [prod_short](includes/prod_short.md)].  
 
@@ -103,7 +103,7 @@ It's crucial for you to keep contact details correctly up to date. We advise you
 
 - App publishers
 
-    The mail addresses specified during App publication in the partner center during app publication as support and engineering contact details.  
+    The mail addresses specified during app publication in the partner center during app publication as support and engineering contact details.  
 
 - Customers
 
