@@ -22,7 +22,7 @@ An enum field replacing an option field should have at least the same number of 
 
 This error ensures that when you replace an option field with an enum field, the new enum field must include all the values that were present in the original option field. This is crucial because reducing the number of values can lead to data loss or corruption during the upgrade process. Additionally, dependent extensions that rely on the original option values may fail if those values are not present in the new enum field.
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 To resolve this error, follow these steps:
 

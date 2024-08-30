@@ -17,6 +17,19 @@ An enum field replacing an option field should preserve the member names.
 An enum field replacing an option field should preserve the member names. Renaming members might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This error ensures that when you replace an option field with an enum field, the new enum field must include all the values that were present in the original option field. This is crucial because reducing the number of values can lead to data loss or corruption during the upgrade process. Additionally, dependent extensions that rely on the original option values may fail if those values are not present in the new enum field.
+
+## How to fix this diagnostic?
+
+To resolve this error, follow these steps:
+
+1. Locate the enum field in your code that is replacing an option field.
+2. Ensure that the enum field has at least the same number of members as the option field it replaces.
+3. If the enum field has fewer members, add the missing members to match the original option field.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
