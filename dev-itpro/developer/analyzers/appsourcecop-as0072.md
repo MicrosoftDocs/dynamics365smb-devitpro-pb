@@ -18,6 +18,8 @@ The ObsoleteTag property and the Tag in the Obsolete attribute must be set to th
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
 This rule verifies that the version specified as obsolete tag for objects whose obsolete state (not obsolete, obsolete pending, or obsolete removed) is updated with the current version is matching the version specified in the `obsoleteTagVersion` property of the AppSourceCop.json.
 
 Obsolete objects which have the same obsolete state as in the baseline are not validated by this rule, but are validated by [AS0074](appsourcecop-as0074.md).
