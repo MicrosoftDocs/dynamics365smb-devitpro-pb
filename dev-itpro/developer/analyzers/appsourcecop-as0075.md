@@ -18,6 +18,8 @@ Obsolete Reason must be set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
 When an object, element, variable or procedure is marked as obsolete, you should also specify an obsolete reason. The obsolete reason can be used to provide valuable information, such as the reason for the obsoletion or a workaround to achieve the same goal, to developers that are referencing it. The obsolete reason appears in the message of the diagnostics AL0432 and AL0433 reported by the AL compiler when referencing obsolete elements.
 
 ## How to fix this diagnostic?

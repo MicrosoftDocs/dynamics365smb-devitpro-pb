@@ -18,6 +18,8 @@ Obsolete Tag must be set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
 When an object, element, variable or procedure is marked as obsolete, you should also specify an obsolete tag. The obsolete tag can be used to provide information, such as the timeline of the deprecation, to developers that are referencing it. The obsolete tag appears in the message of the diagnostics AL0432 and AL0433 reported by the AL compiler when referencing obsolete elements.
 
 The format of the Obsolete tag is not validated by the AL compiler. However, you can specify an expected format to be validated by the AppSourceCop. For more information, see [AS0076](appsourcecop-as0076.md).
