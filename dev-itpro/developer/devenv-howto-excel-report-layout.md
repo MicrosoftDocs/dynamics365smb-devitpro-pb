@@ -58,10 +58,11 @@ Starting from version 23.3, the [!INCLUDE[prod_short](../includes/prod_short.md)
 - CaptionData
 - Aggregated Metadata
 
-All data in these worksheets is organized in Excel tables from which you can reference individual fields using Excel table formulas.
+All three system worksheets are hidden by default and the data in these worksheets is organized in Excel tables from which you can reference individual fields using Excel table formulas.
 
 > [!NOTE]  
-> All three worksheets are hidden by default.
+> Excel report layout workbooks include named formulas for easier lookups. For more information, see [Named formulas](#named-formulas).
+
 
 #### TranslationData worksheet definition (table TranslationData)
 
@@ -145,6 +146,14 @@ The table has two columns **Filter** and **Filter Value**. It contains all Key-V
 The actual filter format is '\<DataItemName\>::\<Source Table Caption\>::\<FilterGroup\>::\<Field Caption\>'. 
 
 There will be one row for each active filter defined on the request page.
+
+
+#### Named formulas 
+
+In Business Central 2024 release wave 2 and later, at creation time (either from VSCode or when getting a new template from the request page), Excel report layout workbooks include named formulas for easier lookups. Instead of having to write complicated VLOOKUP or XLOOKUP formulas, report authors can use named formulas, such as **ReportRequest.Date** or **ReportMetaData.ReportHelpLink**.
+
+To see all available formulas in an Excel workbook, choose *Formulas*, and then **Name Manager** (in the **Defined Names** group). 
+
 
 ### Translating Excel sheets in 2023 release wave 2 and later versions
 
