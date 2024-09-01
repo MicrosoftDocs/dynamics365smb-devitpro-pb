@@ -152,7 +152,7 @@ There will be one row for each active filter defined on the request page.
 
 In Business Central 2024 release wave 2 and later, at creation time (either from VSCode or when getting a new template from the request page), Excel report layout workbooks include named formulas for easier lookups. Instead of having to write complicated VLOOKUP or XLOOKUP formulas, report authors can use named formulas, such as **ReportRequest.Date** or **ReportMetaData.ReportHelpLink**.
 
-To see all available formulas in an Excel workbook, choose *Formulas*, and then **Name Manager** (in the **Defined Names** group). 
+To see all available formulas in an Excel workbook, choose *Formulas*, and then *Name Manager* (in the *Defined Names* group). 
 
 
 ### Translating Excel sheets in 2023 release wave 2 and later versions
