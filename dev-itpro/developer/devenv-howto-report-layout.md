@@ -332,9 +332,11 @@ Specifically for Word layouts, there's no way to control formatting of data elem
 
 When you specify a data item in the `WordMergeDataItem` property, the [!INCLUDE[server](includes/server.md)] iterates over that dataitem and does a "Mail merge" between that data item (and the ones below it) and the Word layout when rendering the report using the Word layout. This way, the Word layout is applied to each element in the specified data item.
 
-Prior to [!INCLUDE[prod_short](includes/prod_short.md)] version 2024 release wave 2, if you've defined a different first page, page numbers, totals at the end, and similar report design elements in the Word layout using sections, they would "reset" for each element in the specified data item and hence the [!INCLUDE[server](includes/server.md) would disallow using Word sections in layouts for reports that use the `WordMergeDataItem` property. If section breaks are present in a layout used in such a report, then the user sees this error message: `You cannot run the report because the {0} layout contains section breaks that conflict with the sections in the report. Remove the section breaks from the report layout, and then run the report`
-
-Starting from version 2024 release wave 2, this restriction is no longer there. 
+> [!NOTE]
+> 
+> Prior to [!INCLUDE[prod_short](includes/prod_short.md)] version 2024 release wave 2, if you've defined a different first page, page numbers, totals at the end, and similar report design elements in the Word layout using sections, they would "reset" for each element in the specified data item and hence the [!INCLUDE[server](includes/server.md)] would disallow using Word sections in layouts for reports that use the `WordMergeDataItem` property. If section breaks are present in a layout used in such a report, then the user sees this error message: `You cannot run the report because the {0} layout contains section breaks that conflict with the sections in the report. Remove the section breaks from the report layout, and then run the report`
+> 
+> Starting from version 2024 release wave 2, this restriction is no longer there. 
 
 For more information and an example, see [WordMergeDataItem Property](properties/devenv-wordmergedataitem-property.md).
 
