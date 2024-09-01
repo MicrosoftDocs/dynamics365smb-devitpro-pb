@@ -221,12 +221,14 @@ For more information, see [Using hyperlinks in Word layouts](devenv-hyperlinks-i
 
 ### Using sections in a Word layout
 
-If you need your report to change style for different types of content, consider using different *Sections* in your Word layout. Within each section, you can have different formatting, such as page or table layouts, and headers/footers.
+If you need your report to change style for different types of content, consider using different *Sections* in your Word layout. Within each section, you can have different formatting, such as page or table layouts, paper orientation, watermarks, and headers/footers.
 
 > [!NOTE]  
-> Using section breaks in Word layouts is currently only supported for reports that don't use the **WordMergeDataItem** property. If section breaks are present in a layout used in such a report, then the user sees this error message:
+> Prior to [!INCLUDE[prod_short](includes/prod_short.md)] version 2024 release wave 2, using Word sections in layouts for reports that use the `WordMergeDataItem` property is not allowed
 >
-> `You cannot run the report because the {0} layout contains section breaks that conflict with the sections in the report. Remove the section breaks from the report layout, and then run the report.`
+> Starting from version 2024 release wave 2, this restriction is no longer there. 
+> 
+> For more information, see [How to iterate a Word layout over a data item](#how-to-iterate-a-word-layout-over-a-data-item).
 
 
 Sections are created using section breaks. To start a new section, select where you want it to begin. Then go to **Layout** > **Breaks**. For more information, see [Insert a section break](https://support.microsoft.com/en-us/office/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c) (use <kbd>Ctrl</kbd>+click to open in a new tab).
@@ -328,7 +330,11 @@ Specifically for Word layouts, there's no way to control formatting of data elem
 
 ## How to iterate a Word layout over a data item
 
-When you specify a data item in the `WordMergeDataItem` property, the [!INCLUDE[server](includes/server.md)] does a "Mail merge" between that data item (and the ones below it) and the Word layout when rendering the report using the Word layout. The Word layout is applied to each element in the specified data item. So, if you've defined a different first page, page numbers, totals at the end, and similar report design elements in the Word layout, they are "reset" for each element in the specified data item.
+When you specify a data item in the `WordMergeDataItem` property, the [!INCLUDE[server](includes/server.md)] iterates over that dataitem and does a "Mail merge" between that data item (and the ones below it) and the Word layout when rendering the report using the Word layout. This way, the Word layout is applied to each element in the specified data item.
+
+Prior to [!INCLUDE[prod_short](includes/prod_short.md)] version 2024 release wave 2, if you've defined a different first page, page numbers, totals at the end, and similar report design elements in the Word layout using sections, they would "reset" for each element in the specified data item and hence the [!INCLUDE[server](includes/server.md) would disallow using Word sections in layouts for reports that use the `WordMergeDataItem` property. If section breaks are present in a layout used in such a report, then the user sees this error message: `You cannot run the report because the {0} layout contains section breaks that conflict with the sections in the report. Remove the section breaks from the report layout, and then run the report`
+
+Starting from version 2024 release wave 2, this restriction is no longer there. 
 
 For more information and an example, see [WordMergeDataItem Property](properties/devenv-wordmergedataitem-property.md).
 
