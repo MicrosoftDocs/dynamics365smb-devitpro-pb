@@ -54,7 +54,7 @@ var
 begin
   MySessionSettings.Init;
   MySessionSettings.ProfileId('MyExtensionProfile');
-  MySessionSettings.ProfileAppId('12345678-1234-1234-1234-1234567890AB');
+  MySessionSettings.ProfileAppId('00001111-aaaa-2222-bbbb-3333cccc4444');
   MySessionSettings.RequestSessionUpdate(false);
 end;  
 ```  
