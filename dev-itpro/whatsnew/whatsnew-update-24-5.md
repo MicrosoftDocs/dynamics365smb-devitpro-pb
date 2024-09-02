@@ -20,13 +20,11 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 
-- tbd
-- 
+
+
 ## Localization updates
 
-|Country/region|Feature|Description|
-|-|-|-|
-|tbd|||
+No localization updates for 24.5.
 
 ## Release plan
 
