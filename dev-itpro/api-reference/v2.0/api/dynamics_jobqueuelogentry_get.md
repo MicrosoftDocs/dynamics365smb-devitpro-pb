@@ -2,11 +2,8 @@
 title: Get jobQueueLogEntries
 description: Gets a job queue log entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 08/30/2024
 ms.author: solsen
 ---
@@ -75,7 +72,6 @@ Here is an example of the response.
     "lastModifiedDateTime" : ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
