@@ -2,11 +2,8 @@
 title: jobQueueLogEntry resource type
 description: A job queue log entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 08/30/2024
 ms.author: solsen
 ---
@@ -25,9 +22,6 @@ Represents a job queue log entry in [!INCLUDE[prod_short](../../../includes/prod
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET jobQueueLogEntry](../api/dynamics_jobqueuelogentry_get.md)|jobQueueLogEntry|Gets a job queue log entry object.|
-|[GET jobQueueLogEntry](../api/dynamics_jobqueuelogentry_get.md)|jobQueueLogEntry|Gets a job queue log entry object.|
-
-
 
 ## Properties
 
@@ -77,8 +71,6 @@ Here is a JSON representation of the jobQueueLogEntry resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET jobQueueLogEntry](../api/dynamics_jobqueuelogentry_get.md)
-[GET jobQueueLogEntry](../api/dynamics_jobqueuelogentry_get.md)
+[GET jobQueueLogEntry](../api/dynamics_jobqueuelogentry_get.md)  
