@@ -50,8 +50,8 @@ PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micro
 Content-type: application/json
 If-Match:*
 {
-    "userSecurityId": "7ae30772-481f-4895-a042-98f36e280680" ,
-    "userName": "JOE"
+    "state": "Enabled",
+    "expiryDate": "2035-01-01T21:03:53.444Z"
 }
 ```
 **Response**

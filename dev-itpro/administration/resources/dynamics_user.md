@@ -30,13 +30,13 @@ Represents an user in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.
 
 The user resource type offers a bound action called `getNewUsersFromOffice365Async` which get new users from office 365 asyncs the corresponding user batch.
 This is illustrated in the following example:
-`GETNEWUSERSFROMOFFICE365ASYNC https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/users({id})/Microsoft.NAV.getNewUsersFromOffice365Async`
+`POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/users({id})/Microsoft.NAV.getNewUsersFromOffice365Async`
 
 The response has no content; the response code is 204.
 
 The user resource type offers a bound action called `getNewUsersFromOffice365` which get new users from office 365s the corresponding user batch.
 This is illustrated in the following example:
-`GETNEWUSERSFROMOFFICE365 https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/users({id})/Microsoft.NAV.getNewUsersFromOffice365`
+`POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/users({id})/Microsoft.NAV.getNewUsersFromOffice365`
 
 The response has no content; the response code is 204.
 
