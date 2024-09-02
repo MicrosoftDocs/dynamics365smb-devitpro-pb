@@ -22,7 +22,6 @@ Represents a job queue entry in [!INCLUDE[prod_short](../../../includes/prod_sho
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET jobQueueEntry](../api/dynamics_jobqueueentry_get.md)|jobQueueEntry|Gets a job queue entry object.|
-|[GET jobQueueEntry](../api/dynamics_jobqueueentry_get.md)|jobQueueEntry|Gets a job queue entry object.|
 
 ## Bound Actions
 
