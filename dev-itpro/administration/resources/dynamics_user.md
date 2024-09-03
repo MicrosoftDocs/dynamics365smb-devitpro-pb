@@ -57,7 +57,6 @@ The response has no content; the response code is 204.
 |displayName|string|Specifies the user's name. This name will appear on all sales documents for the user.|
 |state|string|Specifies the user's state.|
 |expiryDate|datetime|The date of expiration.|
-|expiryDate|datetime|The date of expiration.|
 |contactEmail|string|Specifies the user's email.|
 
 ## JSON representation
