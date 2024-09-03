@@ -32,6 +32,15 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 ## Before you begin
 
+### Add the full-text search feature to the SQL server instance
+
+The SQL server instance that hosts your Business Central database must include the **Full-text and Semantic Extractions for Search** feature. This feature is required by the version 25 Microsoft base application, however it isn't added by default  If this feature isn't already added to the instance, follow the 
+
+To verify whether [Viewing or Changing Server Properties for Full-Text Search](https://learn.microsoft.com/en-us/sql/relational-databases/search/manage-and-monitor-full-text-search-for-a-server-instance?view=sql-server-ver16#props)
+
+
+https://www.microsoft.com/en-US/download/details.aspx?id=101064
+
 ### Consider known issues
 
 [!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
