@@ -32,14 +32,34 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 ## Before you begin
 
-### Add the full-text search feature to the SQL server instance
+### Install the full-text search feature to the SQL server instance
 
-The SQL server instance that hosts your Business Central database must include the **Full-text and Semantic Extractions for Search** feature. This feature is required by the version 25 Microsoft base application, however it isn't added by default  If this feature isn't already added to the instance, follow the 
+The SQL server instance that hosts your Business Central database must include the **Full-text and Semantic Extractions for Search** feature. This feature is required by the version 25 Microsoft base application; however, it isn't installed by default.
 
-To verify whether [Viewing or Changing Server Properties for Full-Text Search](https://learn.microsoft.com/en-us/sql/relational-databases/search/manage-and-monitor-full-text-search-for-a-server-instance?view=sql-server-ver16#props)
+1. Verify whether full-text search is installed:
 
+   - Using Transactional-SQL
 
-https://www.microsoft.com/en-US/download/details.aspx?id=101064
+     Execute the following query on the SQL database instance: 
+
+     ```tsql  
+     SELECT FULLTEXTSERVICEPROPERTY('IsFullTextInstalled') AS IsFullTextInstalled;
+     ```
+
+     If the query returns `0`, then full-text seearch isn't installed; if `1`, then it is installed.
+
+   - Using SQL Server Management Studio
+
+     In Object Explorer, right-click a server instance, select **Properties**, then select **Advanced**. If the **Default Full-Text Lanuage** property is present, then full-text search is installed; otherwise, it isn't. 
+
+   Learn more at [Viewing or Changing Server Properties for Full-Text Search](/sql/relational-databases/search/manage-and-monitor-full-text-search-for-a-server-instance)
+
+2. If full-text search isn't installed, add it to the install by using the SQL Server Installation Center for your SQL Server version.
+
+    You'll need to go to the installation media or folder for your SQL Server version, and then run set.exe to start the SQL Server Installation Center. Follow the instructions at [Add Features to an Instance of SQL Server](sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). When you get to the **Feature Selection** page, choose **Full-text and Semantic Extractions for Search**.
+
+    > [!TIP]
+    > If you're using SQL Server 2019 Express, you can download the installation media from [Microsoft Download Center](https://www.microsoft.com/en-US/download/details.aspx?id=101064).
 
 ### Consider known issues
 
