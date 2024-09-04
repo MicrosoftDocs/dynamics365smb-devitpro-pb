@@ -16,7 +16,7 @@ Would you like to know what changes are in update 24.5? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes in this update at [Update 24.5 for Microsoft Dynamics 365 Business Central 2024 Release Wave 1](https://support.microsoft.com/help/5043981) and the download files at [here](https://www.microsoft.com/en-us/download/details.aspx?id=106168)<!--(https://aka.ms/BCDownload)-->.
+Learn about the hotfixes on Microsrosft Support at [Update 24.5 for Business Central 2024 Release Wave 1](https://support.microsoft.com/help/5043981). Download the on-premises files from the Microsoft Download Center at [Update 24.5 for Business Cenral](https://www.microsoft.com/en-us/download/details.aspx?id=106168)<!--(https://aka.ms/BCDownload)-->.
 
 ## Feature changes
 
