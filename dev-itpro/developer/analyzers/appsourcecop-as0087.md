@@ -29,6 +29,11 @@ To resolve this warning, follow these steps:
 1. Locate the enum value captions in your code that contain commas in their translations.
 2. Modify the translations to remove any commas from the captions.
 
+
+> [!CAUTION]
+> $150
+
+
 ## See Also
 
 [AppSourceCop Analyzer](appsourcecop.md)  
