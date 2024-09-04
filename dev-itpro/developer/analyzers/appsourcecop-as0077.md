@@ -17,7 +17,20 @@ Adding a var modifier in events is not allowed
 Adding a var modifier in events is not allowed as it might break the runtime behavior of extensions subscribing to it.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## Remarks
+
+This error ensures that the behavior of events remains consistent and predictable. Adding a `var` modifier to an event parameter can alter how the parameter is handled, potentially causing issues for extensions that subscribe to the event. These extensions might not be designed to handle parameters passed by reference, leading to compatibility issues and runtime errors. Maintaining the original parameter passing mechanism (by value) ensures that the event's behavior remains stable and that dependent extensions continue to function as expected.
+
+## How to fix this diagnostic?
+
+To resolve this error, follow these steps:
+
+1. Locate the event in your code where the `var` modifier has been added to a parameter.
+2. Modify the event definition to remove the `var` modifier from the parameter.
+
+## See Also
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
