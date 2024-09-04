@@ -40,13 +40,15 @@ Finally, as always, if you have ideas for features you would like to see in futu
 
 We need your feedback on the preview! Let us know about your experiences with the new version. There are two ways to contribute:
 
-- Provide feedback in [Business Central Public preview group](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=177710096384) on the Viva Engage (formerly Yammer)
+- Give feedback and ask questions in [Business Central public preview group](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=200815689728) on the Viva Engage (formerly Yammer)
 
-   Use this group to share your thoughts, ask questions, or seek clarifications on any aspect of the preview release. If you haven't joined the group yet, select **Join group**. [Learn more about Business Central partner community on Viva Engage](../join-viva-engage.md). Once you've joined, add your comment or question in the **Share something with this group** box and select **Post**. Or feel free to respond to another post.
+   Use this group to share your thoughts, ask questions, participate in discussions, or seek clarifications on any aspect of the preview release. If you haven't joined the group yet, select **Join group**. Once you've joined, add your comment or question in the **Share something with this group** box and select **Post**. Or feel free to respond to another post.
+
+    Learn more in [About Business Central partner community on Viva Engage](../join-viva-engage.md).
 
 - Report a bug at [https://aka.ms/bcpreviewbugs](https://aka.ms/bcpreviewbugs)
 
-   If you encounter any issues or glitches during your testing, please help us by filling out and submitting the form.
+   If you encounter any issues or glitches during your testing, please help us by filling out and submitting the form in the link.
 
 ## Guidelines for how to get started
 
