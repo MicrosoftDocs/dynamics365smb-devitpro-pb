@@ -41,6 +41,7 @@ The available options for setting the `runtime` in AL are:
 |`11.0`         |Business Central 2023 release wave 1|22.0|
 |`12.0`         |Business Central 2023 release wave 2|23.0|
 |`13.0`         |Business Central 2024 release wave 1|24.0|
+|`14.0`         |Business Central 2024 release wave 2|25.0|
 
 ## Setting the runtime version
 
