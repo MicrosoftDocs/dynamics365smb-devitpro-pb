@@ -66,13 +66,13 @@ The following table describes the settings in the `app.json` file. To see an exa
 |build|No|Specifies the properties for building the package. The options are:<br> `by`, which is useful for tracking the build agent/system that orchestrated the build, for example AL-Go for GitHub. <br> `url`, which can be used for the URL to the build system invocation where the build can be found.<br>The `build` setting can dynamically be set as part of build pipelines via command line parameters for the used alc.exe compiler executable. The values passed here overwrites any values in the app.json source file.|
 |alternateIds|No|The IDs of the applications, which will be replaced by this application. This property should be used by apps that replace the base application. Specified as a list of one or more IDs.|
 
-## See Also
+## Related information
 
 [Launch JSON file](devenv-json-launch-file.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[App Identity](devenv-app-identity.md)  
+[AL development environment](devenv-reference-overview.md)  
+[App identity](devenv-app-identity.md)  
 [Debugging in AL](devenv-debugging.md)  
-[Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
-[App Key Vaults](devenv-app-key-vault-overview.md)  
+[Resource exposure policy setting](devenv-security-settings-and-ip-protection.md)  
+[AL Language extension configuration](devenv-al-extension-configuration.md)  
+[Configure context-sensitive help](../help/context-sensitive-help.md)  
+[App key vaults](devenv-app-key-vault-overview.md)  
