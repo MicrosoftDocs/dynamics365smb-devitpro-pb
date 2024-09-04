@@ -22,9 +22,9 @@ The 'application' property should be used for expressing a dependency on the 'Ba
 
 This rule reports a diagnostic when the `app.json` of the extension specifies a dependency on the 'Base Application' or 'System Application' extensions by Microsoft.
 
-For more information about the benefits of using the `application` property, see [The Microsoft_Application.app File](../devenv-application-app-file.md).
+For more information about the benefits of using the `application` property, see [The Microsoft_Application.app file](../devenv-application-app-file.md).
 
-For more information about the properties in the `app.json`, see [JSON Files](../devenv-json-files.md).
+For more information about the properties in the `app.json`, see [JSON files](../devenv-json-files.md).
 
 ## How to fix this diagnostic?
 
