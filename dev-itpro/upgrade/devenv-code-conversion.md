@@ -15,7 +15,6 @@ This article explains how to convert a [!INCLUDE[prod_short](../developer/includ
 
 You'll use this procedure as part of the upgrade process when going from version 14 to a later version, from 18 to 20.
 
-
 ## Before you start
 
 Get familiar with the basics of setting up and developing in Visual Studio Code and AL, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
