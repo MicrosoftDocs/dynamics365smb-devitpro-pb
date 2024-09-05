@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2024 release wave 1 update
+# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2024 release wave 2 update
 
 This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
@@ -565,9 +565,10 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 [!INCLUDE[upgrade-web-server-instances](../developer/includes/upgrade-web-server-instances.md)]
 
-## See also
+## Related information
 
-[Dynamics 365 Business Central On-Premises 2023 Release Wave 1 Updates](../deployment/update-versions-22.md)   
+[Dynamics 365 Business Central On-Premises 2024 Release Wave 1 Updates](../deployment/update-versions-24.md)  
+[Dynamics 365 Business Central On-Premises 2023 Release Wave 2 Updates](../deployment/update-versions-23.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)   
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
