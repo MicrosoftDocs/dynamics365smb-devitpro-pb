@@ -49,7 +49,7 @@ The order of the fields determines how they appear in the layout of the tile, no
 
 - Field 1 appears in small font in its own row of the tile.
 - Fields 2 and 3 are shown in a large font and appear in the same row under primary field 1. These fields should typically contain data that identifies the brick. For example, in the **Customers** list, the **Customer Name** and **Balance** are displayed in fields 2 and 3. 
-- Fields 4 and 5 in a row under fields 2 and 3.
+- Remaining fields appear in rows of two.
 - A verbose field appears at the bottom of the tile, separated by a line.
 
 ### Including images in tiles
