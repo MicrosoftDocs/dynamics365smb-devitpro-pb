@@ -5,14 +5,14 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 01/08/2024
+ms.date: 09/04/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
 # Prepare for major updates with preview environments
 
-About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment, choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application. 
+About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application. 
 
 The following figure illustrates the suggested steps for getting a preview of a major update with example dates for the two release waves in any given calendar year.  
 
@@ -38,20 +38,23 @@ Finally, as always, if you have ideas for features you would like to see in futu
 
 ## Provide feedback on the preview
 
-We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Viva Engage (formerly Yammer) by following these steps:
+We need your feedback on the preview! Let us know about your experiences with the new version. There are two ways to contribute:
 
-1. Go to [Business Central Public preview group](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=177710096384) on Viva Engage.
-2. If you haven't joined the group yet, select **Join group**. [Learn more about Business Central partner community on Viva Engage](../join-viva-engage.md).
-3. Share your thoughts, ask questions, or seek clarifications on any aspect of the preview release. Just add your comment or question in the **Share something with this group** box and select **Post**. Or feel free to respond to another post.
-4. If you encounter any issues or glitches during your testing, please help us by posting them as bugs. Just include the hashtag `#Bug`in your post along with the following information, if you can:
+1. Give feedback and ask questions in the [Business Central public preview group](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=200815689728) on the Viva Engage (formerly Yammer).
 
-    - **Description of the problem:** Clearly describe the issue you encountered.
-    - **Repro steps:** Provide step-by-step instructions on how to reproduce the problem.
-    - **Screenshots:** If possible, attach screenshots to help illustrate the issue.
+   Use this group to share your thoughts, ask questions, participate in discussions, or seek clarifications on any aspect of the preview release.
+
+   If you haven't joined the group yet, select **Join group** in Viva Engage. Once you've joined, add your comment or question in the **Share something with this group** box and select **Post**. Or feel free to respond to another post.
+   
+   Learn more in [About Business Central partner community on Viva Engage](../join-viva-engage.md).
+
+1. Report a bug at [https://aka.ms/bcpreviewbugs](https://aka.ms/bcpreviewbugs).
+
+   If you encounter any issues or glitches during your testing, please help us by filling out and submitting the form.
 
 ## Guidelines for how to get started
 
-The newly created preview sandbox environment contains demonstration company data. Trying the preview on a copy of your current production data isn't yet supported; nor is testing the upgrade from your current version to the preview. However, you can use the newly created sandbox environment for exploring and learning the new product capabilities. You can also use the preview environment to validate that any per-tenant extensions are still working as expected.
+The newly created preview sandbox environment contains demonstration company data. Trying the preview on a copy of your current production data isn't yet supported; nor is testing the update from your current version to the preview. However, you can use the newly created sandbox environment for exploring and learning the new product capabilities. You can also use the preview environment to validate that any per-tenant extensions are still working as expected.
 
 If you run your tests on a preview environment one month before the announced major release of Business Central, it's more likely that the coming updates of your production environments go smoother. This way, you, your customers, and your code are better prepared for the official release.
 
