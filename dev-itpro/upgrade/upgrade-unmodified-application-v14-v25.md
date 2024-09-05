@@ -55,7 +55,7 @@ $AddinsFolder = "The file path to the Add-ins folder of version 25 server instal
    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
    For information about how to do the upgrade, see [Upgrading to Dynamics 365 Business Central on-premises](upgrading-to-business-central-on-premises.md).
-- Install the full-text search feature to the SQL server instance
+- Install the full-text search feature to the SQL server instance.
 
    [!INCLUDE[upgrade-install-full-text-serach-sql](../developer/includes/upgrade-install-full-text-search-sql.md)]
 <!-- 
