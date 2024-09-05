@@ -32,17 +32,17 @@ Many of the steps in this article use PowerShell cmdlets, which require that you
 $OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC140"
 $NewBcServerInstance = "The name of the Business Central server instance for version 25, for example: BC250"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
-$TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (19-0)" 
+$TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (14-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB. In a single-tenant deployment, this is the same as the $TenantDatabase" 
 $DatabaseServer = "The SQL Server instance that hosts the databases. The value has the format server_name\instance_name, For example: localhost\BCDEMO"
 $SystemAppPath = "The file path and name of the System Application extension for the update, for example: C:\DVD\Applications\system application\Source\Microsoft_System Application.app"
 $BusFoundAppPath = "The file path and name of the Business Foundationn extension for the update, for example: C:\DVD\Applications\BusinessFoundation\Source\Microsoft_Business Foundation.app"
 $BaseAppPath = "The file path and name of the Base Application extension for the update, for example: C:\DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
 $ApplicationAppPath = "The path and file name to the Application application extension for the update, for example: C:\DVD\Applications\Application\Source\Microsoft_Application.app"
-$NewBcVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 21.24582.0"
+$NewBcVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 25.24582.0"
 $PartnerLicense = "The file path and name of the partner license"
 $CustomerLicense = "The file path and name of the customer license"
-$AddinsFolder = "The file path to the Add-ins folder of version 25 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\240\Service\Add-ins."
+$AddinsFolder = "The file path to the Add-ins folder of version 25 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\250\Service\Add-ins."
 ```
 
 ## Prerequisite
