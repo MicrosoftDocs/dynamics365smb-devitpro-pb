@@ -5,7 +5,7 @@
    overflow="hidden"
    version="1.1"
    id="svg66"
-   sodipodi:docname="bc14-to-24-cal-upgrade-to-base-app.svg"
+   sodipodi:docname="bc14-to-25-cal-upgrade-to-base-app.svg"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -35,7 +35,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.5960938"
-     inkscape:cx="611.80617"
+     inkscape:cx="612.11941"
      inkscape:cy="276.61282"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
@@ -240,7 +240,7 @@
        font-weight="400"
        font-size="19px"
        transform="translate(848.418,155)"
-       id="text19">1</text>
+       id="text19">2</text>
     <text
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
@@ -252,7 +252,7 @@
        font-weight="400"
        font-size="19px"
        transform="translate(867.751,155)"
-       id="text21">V24</text>
+       id="text21">V25</text>
     <text
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
@@ -372,7 +372,7 @@
        font-weight="400"
        font-size="19px"
        transform="translate(739.076,237)"
-       id="text32">V24</text>
+       id="text32">V25</text>
     <rect
        x="942.5"
        y="175.5"
@@ -445,7 +445,7 @@
        font-weight="400"
        font-size="19px"
        transform="translate(858.363,238)"
-       id="text39">V24</text>
+       id="text39">V25</text>
     <rect
        x="1063.5"
        y="176.5"
@@ -523,7 +523,7 @@
        font-weight="400"
        font-size="19px"
        transform="translate(919.239,612)"
-       id="text47">V24</text>
+       id="text47">V25</text>
     <path
        d="m 746,567 h 347.02"
        stroke="#ffffff"
@@ -631,7 +631,7 @@
        font-weight="400"
        font-size="19px"
        transform="translate(860.441,340)"
-       id="text54">V24</text>
+       id="text54">V25</text>
     <rect
        x="1063.5"
        y="255.5"
@@ -695,7 +695,7 @@
        font-weight="400"
        font-size="19px"
        transform="translate(960.805,274)"
-       id="text60">V24</text>
+       id="text60">V25</text>
     <rect
        x="698.5"
        y="442.5"
@@ -719,7 +719,7 @@
        font-weight="400"
        font-size="19px"
        transform="translate(919.238,482)"
-       id="text62">V24</text>
+       id="text62">V25</text>
     <rect
        x="699.5"
        y="368.5"
@@ -757,6 +757,6 @@
        font-weight="400"
        font-size="19px"
        transform="translate(920.692,413)"
-       id="text66">V24</text>
+       id="text66">V25</text>
   </g>
 </svg>
