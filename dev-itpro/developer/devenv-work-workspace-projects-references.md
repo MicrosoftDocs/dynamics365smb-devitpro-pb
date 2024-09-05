@@ -2,7 +2,7 @@
 title: Work with multiple projects and project references
 description: Handling solutions in the AL language that contains multiple projects in one Visual Studio Code folder and contains references between these projects.
 author: SusanneWindfeldPedersen
-ms.date: 05/06/2024
+ms.date: 05/09/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -85,16 +85,18 @@ The following happens on the server:
 
 ## Recovery from publishing failures
 
-> [!NOTE]  
-> Recovery from publishing failures is a new feature added in BC25. In prior versions, you will need to recover any uninstalled or unpublished apps manually.
+[!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-When you perform a publish from VSCode, there is a possibility that the server will fail to compile the extension that you have published. This can happen because of issues in the AL code itself (e.g. breaking changes in the new code which is incompatible with the extensions on the server), or because of transient server-side issues. In these cases, there will be an attempt to restore the original state of extensions before the publishing happened. However, there are some cases in which recovery can fail. These are:
+> [!NOTE]  
+> Recovery from publishing failures is a new feature added in BC25. In prior versions, you'll need to recover any uninstalled or unpublished apps manually.
+
+When you perform a publish from Visual Studio Code, there's a possibility that the server will fail to compile the extension that you've published. This can happen because of issues in the AL code itself (for example, breaking changes in the new code, which are incompatible with the extensions on the server), or because of transient server-side issues. In these cases, there'll be an attempt to restore the original state of extensions before the publishing happened. However, there are some cases in which recovery can fail. These are:
 
 - Upgrade scenarios. For example, publishing v2 of an app over v1.
 - Extension changes that cause tables or table extensions to be moved between apps.
 - Bugs in the install/uninstall codeunits of any affected extensions.
 
-In the case where recovery cannot be performed, the server will provide a list of apps that could not be recovered to assist with manual recovery.
+In the case where recovery can't be performed, the server provides a list of apps that couldn't be recovered to assist with manual recovery.
 
 ## Launch.json file setting
 
