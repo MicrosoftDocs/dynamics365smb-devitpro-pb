@@ -20,7 +20,7 @@ The SQL server instance that hosts your Business Central database must include t
 
 2. To install full-text search, add it as a feature by using the SQL Server Installation Center.
 
-    You need to access the installation media or folder for your SQL Server version, and then run set.exe to start the SQL Server Installation Center. Follow the instructions at [Add Features to an Instance of SQL Server](sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). When you get to the **Feature Selection** page, choose **Full-text and Semantic Extractions for Search**.
+    You need to access the installation media or folder for your SQL Server version, and then run set.exe to start the SQL Server Installation Center. Follow the instructions at [Add Features to an Instance of SQL Server](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). When you get to the **Feature Selection** page, choose **Full-text and Semantic Extractions for Search**.
 
     > [!TIP]
     > If you're using SQL Server 2019 Express, you can download the installation media from [Microsoft Download Center](https://www.microsoft.com/en-US/download/details.aspx?id=101064).

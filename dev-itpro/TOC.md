@@ -1845,7 +1845,7 @@
 ###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 ##### Data migration toolkit - India
 ###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v24.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v25.md)
 ### Business Central 2024 release wave 1
 #### [Overview](upgrade/upgrade-overview-v24.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)

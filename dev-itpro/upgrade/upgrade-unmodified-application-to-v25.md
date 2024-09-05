@@ -9,7 +9,7 @@ ms.author: jswymer
 author: jswymer
 ---
 
-# Upgrading Microsoft System and Base Application to Version 24
+# Upgrading Microsoft System and Base Application to Version 25
 
 Use this scenario if you have one of the following [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions that use the Microsoft System and Base applications.
 
