@@ -33,7 +33,7 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 ## Before you begin
 
-### Install the full-text search feature to the SQL server instance
+### Install the full-text search feature on the SQL server instance
 
 [!INCLUDE[upgrade-install-full-text-serach-sql](../developer/includes/upgrade-install-full-text-search-sql.md)]
 
