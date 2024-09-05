@@ -1,5 +1,5 @@
 ---
-title: "Upgrading Unmodified C/AL Application to version 25"
+title: Upgrading Unmodified C/AL Application to version 25
 description: Describes how to upgrade an unmodified Business Central 14 application to version 25
 ms.custom: bap-template
 ms.date: 09/04/2024
@@ -10,7 +10,7 @@ author: jswymer
 ---
 # Upgrading unmodified C/AL application to version 25
 
-Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you replace the C/AL base application with the new Microsoft System and Base Application extensions. The result is a fully upgraded Business Central 2024 release wave 2 (version 25) application and platform.
+Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (non-Microsoft/3rd-party). With this upgrade, you replace the C/AL base application with the new Microsoft System and Base Application extensions. The result is a fully upgraded Business Central 2024 release wave 2 (version 25) application and platform.
 
 [![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-25-upgrade-unmodified-app.svg)](../developer/media/bc14-to-25-upgrade-unmodified-app.svg#lightbox)  
 
@@ -50,7 +50,7 @@ $AddinsFolder = "The file path to the Add-ins folder of version 25 server instal
 - Upgrade to Business Central Spring 2019 (version 14).
 
   - If your solution is already on version 14, then no action on this step is required.
-  - If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 25. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+  - If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 25. Learn more in [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
@@ -63,7 +63,7 @@ $AddinsFolder = "The file path to the Add-ins folder of version 25 server instal
 
     If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
 
-    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+    Learn more in [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 -->
@@ -82,13 +82,13 @@ $AddinsFolder = "The file path to the Add-ins folder of version 25 server instal
 
     You have to keep version 14 installed to complete some steps in the upgrade process. When you install version 25, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+    Learn more in [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 ## Task 2: Upgrade permission sets
 
 Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+Learn more in [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
 ## Task 3: Prepare version 14 databases
 
@@ -97,7 +97,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
     If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
 
-    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+    Learn more in [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
@@ -208,7 +208,7 @@ When you installed version 25 in **Task 1**, a version 25 [!INCLUDE[server](../d
     Set-NAVServerConfiguration -ServerInstance $NewBcServerInstance -KeyName DatabaseName -KeyValue $ApplicationDatabase
     ```
 
-    In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    In a single tenant deployment, this command mounts the tenant automatically. Learn more in [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
 2. Configure the server instance for migrate extensions to the use the new base application and system application extensions. 
 
@@ -258,7 +258,7 @@ If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] pa
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
+Learn more in [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
 
 <!-- Got the follwowing error, then just publsihed and synced after publishe:
 
@@ -313,7 +313,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 1. Publish the Microsoft_Application extension
 
-    The Microsoft_Application extension is a new extension introduced in 15.3. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+    The Microsoft_Application extension is an extension introduced in 15.3. Learn more in [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
     ```powershell
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path $ApplicationAppPath
@@ -334,7 +334,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
 
     > [!NOTE]
-    > A new extension for report layouts, called **_Exclude_ReportLayouts**, was added in version 20. If you're coming from a version earlier than version 20, make sure to publish and install this extension to get the latest report layout features described at [Get Started Creating Report Layouts](/dynamics365/business-central/ui-get-started-layouts).
+    > A new extension for report layouts, called **_Exclude_ReportLayouts**, was added in version 20. If you're coming from a version earlier than version 20, make sure to publish and install this extension to get the latest report layout features. Learn more in [Get Started Creating Report Layouts](/dynamics365/business-central/ui-get-started-layouts).
 
    >[!NOTE]
    >
@@ -353,9 +353,9 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
    > |INVoucherInterface|Microsoft_India Voucher Interface.app|
    > |INReports|Microsoft_India Reports.app|
 
-1. Publish 3rd-party extensions.
+1. Publish non-Microsoft extensions.
 
-    Publish 3rd-party extensions that were used on your version 14 solution. If you have new versions of these extensions, built on version 25, then publish the new versions. Otherwise, republish the same versions that were previously published in the old deployment.  
+    Publish non-Microsoft extensions that were used on your version 14 solution. If you have new versions of these extensions, built on version 25, then publish the new versions. Otherwise, republish the same versions that were previously published in the old deployment.  
 
     ```powershell
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path "<path to extension>"
@@ -431,7 +431,7 @@ Synchronize the tenant database with the platform changes in the application dat
     Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewBcVersion
     ```
 
-1. Synchronize the tenant with Microsoft and 3rd-party extensions.
+1. Synchronize the tenant with Microsoft and non-Microsoft extensions.
 
     For each extension, run the Sync-NAVApp cmdlet:
 
@@ -593,7 +593,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
 2. Search for and open the **Permission Sets** page.
 3. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
-For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
+Learn more in [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
 ## Task 14: Change application version
 
@@ -606,7 +606,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
 3. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
 4. If you want to use data encryption as before, enable it.
 
-   For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+   Learn more in [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
@@ -627,15 +627,15 @@ For more information, see [To export and import a permission set](/dynamics365/b
     - Sign in with the administrator credentials for the connected Dynamics 365 Sales organization. Signing in and the subsequent setup of the certificate authentication should take less than a minute.  
 
         > [!NOTE]
-        > This is a required step. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) in the business functionality content.
+        > This is a required step. Leran more in [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) in the business functionality content.
     - Once the setup of certificate authentication is done, choose **Cloud Migration**, and then choose **Rebuild Coupling Table**.  
 
-        This steo schedules the rebuilding of the coupling table and will open the corresponding job queue entry, so you can monitor its progress and restart it if it ends up in error state.  
+        This step schedules the rebuilding of the coupling table. It opens the corresponding job queue entry, so you can monitor its progress and restart it if it ends up in error state.  
 
         > [!NOTE]
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
-## See also  
+## Related information also  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
