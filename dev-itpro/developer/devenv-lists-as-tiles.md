@@ -34,7 +34,7 @@ You specify the data that you want shown in the tile view in the source table of
     }
 ```
 
-There's no limit on the number of fields you can define in the `fieldgroup`. However, the client can only display five fields in addition to the image and verbose fields.
+There's no limit on the number of fields you can define in the `fieldgroup`. However, we recommend that you limit tiles to five data fields and one image field.
 
 > [!IMPORTANT]  
 > By default, the `fieldgroup` named `DropDown` is interpreted as `Brick` when a `Brick` definition has not been set. The `DropDown` is typically set on entities such as customer, vendor, and items. For more information, see [Field Groups (Drop-Down Controls)](devenv-field-groups.md). 
@@ -49,7 +49,7 @@ The order of the fields determines how they appear in the layout of the tile, no
 
 - Field 1 appears in small font in its own row of the tile.
 - Fields 2 and 3 are shown in a large font and appear in the same row under primary field 1. These fields should typically contain data that identifies the brick. For example, in the **Customers** list, the **Customer Name** and **Balance** are displayed in fields 2 and 3. 
-- Fields 4 and 5 in a row under fields 2 and 3.
+- Remaining fields appear in rows of two.
 - A verbose field appears at the bottom of the tile, separated by a line.
 
 > [!NOTE]
