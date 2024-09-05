@@ -1718,8 +1718,8 @@
 #### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
 #### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
+##### Versions no longer updated
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
-#### Versions no longer updated
 ##### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
 ##### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ##### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
