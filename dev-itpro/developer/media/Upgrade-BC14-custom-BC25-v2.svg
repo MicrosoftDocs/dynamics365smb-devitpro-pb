@@ -5,7 +5,7 @@
    overflow="hidden"
    version="1.1"
    id="svg106"
-   sodipodi:docname="Upgrade-BC14-custom-BC24-v2.svg"
+   sodipodi:docname="Upgrade-BC14-custom-BC25-v2.svg"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -35,8 +35,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.5960938"
-     inkscape:cx="505.92266"
-     inkscape:cy="358.6882"
+     inkscape:cx="505.60938"
+     inkscape:cy="358.68819"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
@@ -147,7 +147,7 @@
        font-weight="400"
        font-size="11px"
        transform="translate(710.718,486)"
-       id="text9">v24</text>
+       id="text9">v25</text>
     <rect
        x="600.5"
        y="242.5"
@@ -735,7 +735,7 @@
        font-weight="400"
        font-size="11px"
        transform="translate(702.835,254)"
-       id="text68">v24</text>
+       id="text68">v25</text>
     <rect
        x="601.5"
        y="151.5"
@@ -785,7 +785,7 @@
        font-weight="400"
        font-size="11px"
        transform="translate(725.553,163)"
-       id="text71">v24</text>
+       id="text71">v25</text>
     <path
        d="M 1.04552e-6,-0.333333 26.8054,-0.333249 V 0.333417 L -1.04552e-6,0.333333 Z M 25.472,-3.99992 l 8,4.000024987 -8,3.999975013 z"
        fill="#a6a6a6"
@@ -894,7 +894,7 @@
        font-weight="400"
        font-size="11px"
        transform="translate(494.093,162)"
-       id="text80">v24</text>
+       id="text80">v25</text>
     <text
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
@@ -1075,7 +1075,7 @@
        font-weight="400"
        font-size="11px"
        transform="translate(612.467,387)"
-       id="text100">v24</text>
+       id="text100">v25</text>
     <text
        font-family="Calibri, Calibri_MSFontService, sans-serif"
        font-weight="400"
