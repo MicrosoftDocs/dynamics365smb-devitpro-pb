@@ -83,6 +83,19 @@ The following happens on the server:
 - **Base** is uninstalled, unpublished, and then published.  
 - **Leaf** and **External** are published, installed, and then compiled against the newly published **Base**. Important to notice here's that the **External** app is also published.
 
+## Recovery from publishing failures
+
+> [!NOTE]  
+> Recovery from publishing failures is a new feature added in BC25. In prior versions, you will need to recover any uninstalled or unpublished apps manually.
+
+When you perform a publish from VSCode, there is a possibility that the server will fail to compile the extension that you have published. This can happen because of issues in the AL code itself (e.g. breaking changes in the new code which is incompatible with the extensions on the server), or because of transient server-side issues. In these cases, there will be an attempt to restore the original state of extensions before the publishing happened. However, there are some cases in which recovery can fail. These are:
+
+- Upgrade scenarios. For example, publishing v2 of an app over v1.
+- Extension changes that cause tables or table extensions to be moved between apps.
+- Bugs in the install/uninstall codeunits of any affected extensions.
+
+In the case where recovery cannot be performed, the server will provide a list of apps that could not be recovered to assist with manual recovery.
+
 ## Launch.json file setting
 
 To control how dependency publishing is performed on the server, the `launch.json` file has a setting `dependencyPublishingOption` with the following options:
