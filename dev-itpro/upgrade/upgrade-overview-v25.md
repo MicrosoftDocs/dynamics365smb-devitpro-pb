@@ -1,6 +1,6 @@
 ---
 title: Upgrading to Dynamics 365 Business Central 2024 release wave 2
-description: Provides an overview of Business Central 2024 Release Wave 2 upgrade.
+description: Provides an overview of Business Central 2024 Release Wave 2 upgrade process.
 ms.custom: bap-template
 ms.date: 02/09/2024
 ms.reviewer: jswymer
