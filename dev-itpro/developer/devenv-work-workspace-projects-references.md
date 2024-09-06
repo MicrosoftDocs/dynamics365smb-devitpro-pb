@@ -88,7 +88,7 @@ The following happens on the server:
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
 > [!NOTE]  
-> Recovery from publishing failures is a new feature added in BC25. In prior versions, you'll need to recover any uninstalled or unpublished apps manually.
+> Recovery from publishing failures is a new feature added with [!INCLUDE [prod_short](includes/prod_short.md)] version 25. In prior versions, you'll need to recover any uninstalled or unpublished apps manually.
 
 When you perform a publish from Visual Studio Code, there's a possibility that the server will fail to compile the extension that you've published. This can happen because of issues in the AL code itself (for example, breaking changes in the new code, which are incompatible with the extensions on the server), or because of transient server-side issues. In these cases, there'll be an attempt to restore the original state of extensions before the publishing happened. However, there are some cases in which recovery can fail. These are:
 
