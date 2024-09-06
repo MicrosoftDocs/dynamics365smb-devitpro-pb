@@ -1103,8 +1103,8 @@
 <!-- end AL programming -->
 
 ## [System and application reference documentation](/dynamics365/business-central/application/)
-### [Overview of the system application](developer/devenv-system-application-overview.md)
-### Creating new modules in the system application
+### [Overview of the application layers and modules](developer/devenv-system-application-overview.md)
+### Creating new modules
 #### [Module architecture](developer/devenv-blueprint.md)
 #### [Get started with modules](developer/devenv-getting-started.md)
 #### [Set up your development environment](developer/devenv-set-up-an-environment.md)
@@ -1716,10 +1716,11 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
 #### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
+##### Versions no longer updated
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
-#### Versions no longer updated
 ##### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
 ##### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ##### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
