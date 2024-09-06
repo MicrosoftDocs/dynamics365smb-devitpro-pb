@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Troubleshoot in Visual Studio Code directly from the web client
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can open a new Visual Studio Code session directly from the web client for a specific customer production or sandbox environment. This enables performing troubleshooting, such as debugging, inspecting variables, setting breakpoints and viewing source code.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can open a new Visual Studio Code session directly from the web client for a specific customer production or sandbox environment. This enables performing troubleshooting, such as debugging, inspecting variables, setting breakpoints, and viewing source code.
 
 Depending on the context, Visual Studio Code opens to allow inspecting objects and source, and allows attaching to debug or snapshot debug and profile the current web client session. Whether you can access the source code is gated by the resource exposure profile settings for each extension. For more information, see [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
@@ -27,7 +27,7 @@ From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, y
 
 ![Page Inspection Open in VS Code.](media/page-inspection-openinvscode.png)
 
-To open and explore a page from the Page Inspector, do the following:
+To open and explore a page from the Page Inspector, follow these steps:
 
 1. Locate the page that you want to inspect.
 1. From that page, run the **Page Inspection** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
@@ -63,6 +63,20 @@ To attach the debugger to a session, do the following:
 1. If you want to debug, then set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.  
     > [!NOTE]  
     > For production environments, regular debugging isn't supported.
+
+## Open source in Visual Studio Code
+
+[!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
+
+With the **Open Source in VS Code** option, you can get the latest source code from an extension and open it directly in Visual Studio Code. You must have access to the source code. This enables investigating issues or developing new functionality based on an existing extension.
+
+Follow these steps:
+
+1. Open the **Extension Management** page and activate the context menu for the selected extension. 
+1. Choose the **Open Source in VS Code** option.  
+  In Visual Studio Code, you're now asked if you want to clone or open the GitHub repo for the extension. 
+
+The open source functionality uses the repo metadata that was included in the extension when it was built. In the manifest of an extension, the app.json file, you can specify metadata for where the related GitHub repository and a specific build is found. You do this by using the `build` and `source` setting. Learn more in [JSON files](devenv-json-files.md#appjson-file).
 
 ## Good to know
 
