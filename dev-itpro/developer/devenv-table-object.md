@@ -3,7 +3,7 @@ title: Table object
 description: This article describes the structure, object limits, and extensibility of the table object in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
-ms.date: 07/24/2024
+ms.date: 09/06/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -27,17 +27,17 @@ The order in which the sections appear matters. The following example illustrate
 ```AL
 table ObjectId TableName
 {
-    // table properties such as 
+    // Specify table properties, for example 
     Caption = 'Sample table';
     DataPerCompany = true;
 
-    // define the table schema here
+    // Define the table schema
     fields {}
    
-    // keys section is optional
+    // Define keys section (optional)
     keys {} 
     
-    // optionally, add AL code here
+    // Add AL code here (optional)
 }
 ```
 
