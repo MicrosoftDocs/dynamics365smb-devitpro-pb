@@ -230,6 +230,17 @@ group(Group2)
 }
 ```
 
+## Extending the built-in headlines
+
+Maybe you don't want to create your own role center and your own headline part, but just want to add some headlines to the built-in role centers in [!INCLUDE[prod_short](includes/prod_short.md)] application? You can do this by doing the following:
+
+1. Navigate to the Role Center in which you want to add headlines.
+1. Open the Page Inspector tool. For more information, see [Inspecting pages in Business Central](/dynamics365/business-central/across-inspect-page).
+1. Choose the HeadlinePart on the role center.
+1. In the Page Inspection pane, you can now see the name and id of the page hosting the HeadlinePart part in the [!INCLUDE[prod_short](includes/prod_short.md)] application. 
+1. Now you can use a normal page extension to add new headlines to the page.
+
+
 ## See Also
 
 [Pages Overview](devenv-pages-overview.md)  
