@@ -241,6 +241,43 @@ Maybe you don't want to create your own role center and your own headline part, 
 1. Now you can use a normal page extension to add new headlines to the page.
 
 
+For example, the following code adds a heading `headlineTextYoutube` to the Business Manager role center:
+
+```AL
+pageextension 50100 BCLEHeadlines extends "Headline RC Business Manager"
+{
+    layout
+    {
+        addfirst(Control1)
+        {
+            field(headlineTextYoutube; headlineTextYoutube)
+            {
+                ApplicationArea = All;
+
+                trigger OnDrillDown()
+                var
+                    DrillDownURLTxt: Label 'https://aka.ms/bcYoutube', Locked = True;
+                begin
+                    Hyperlink(DrillDownURLTxt)
+                end;
+            }
+        }
+    }
+
+    trigger OnOpenPage()
+    begin
+        headlineTextYoutube := 'Subscribed to Business Central Youtube yet? Visit aka.ms/bcYoutube';
+    end;
+
+    var
+        headlineTextYoutube: Text;
+}
+
+
+```
+
+
+
 ## See Also
 
 [Pages Overview](devenv-pages-overview.md)  
