@@ -19,7 +19,7 @@ The default configuration is for the service to log on using the NT Authority\\N
 
 ## Authentication
 
-We recommend that your solution uses Microsoft Entra ID for authentication, especially when a solutiont must access both cloud and on-premises resources. Microsoft Entra ID is a managed identities service that offers various security measures:
+We recommend that your solution uses Microsoft Entra ID for authentication, especially when a solution must access both cloud and on-premises resources. Microsoft Entra ID is a managed identities service that offers various security measures, like:
 
 - Multifactor Authentication (MFA): Adds an extra layer of security beyond passwords.
 - Passwordless sign-ins: Users can sign in using methods such as authentication apps, reducing reliance on traditional passwords.
