@@ -17,7 +17,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] is configured with a log
   
 The default configuration is for the service to log on using the NT Authority\\Network Service account. If [!INCLUDE[server](../developer/includes/server.md)] and SQL Server are on different computers, then we recommend that you configure [!INCLUDE[server](../developer/includes/server.md)] to log on using a dedicated Windows domain user account instead. This account shouldn't be an administrator either in the domain or on any local computer. A dedicated domain user account is considered more secure because no other services and therefore no other users have permissions for this account. Learn more about using a domain account and configuring the recommended permissions in [Provisioning the Business Central Server Service Account](../deployment/provision-server-account.md).  
 
-## Authenticating users
+## Authentication
 
 We recommend that your solution uses Microsoft Entra ID for authentication, especially when a solutiont must access both cloud and on-premises resources. Microsoft Entra ID is a managed identities service that offers various security measures:
 
