@@ -47,7 +47,7 @@ Unlike other page types, `PromptDialog` pages can only specify two action areas;
 
 |Action|Description|
 |------|-----------|
-|`SystemActions` | The `SystemActions` area only allow you to define a fixed set of actions called system actions, which are only supported by this page type. These system actions are `Generate`, `Regenerate`, `Attach`, `Ok` and `Cancel`.|
+|`SystemActions` | The `SystemActions` area only allows you to define a fixed set of actions called system actions, which are only supported by this page type. These system actions are `Generate`, `Regenerate`, `Attach`, `Ok` and `Cancel`.|
 |`PromptGuide` | The `PromptGuide` action area represents a list of predefined text prompt "guides", which users can select to use as input to generate content, rather than creating their own prompt from scratch. The prompt guide menu is only rendered in the web client when the `PromptMode` of the `PromptDialog` page is set to `Prompt`.|
 
 The following illustration shows an example of how the `PromptDialog` page with the `Prompt`, `Content`, `SystemActions`, and `PromptGuide` areas is implemented in [!INCLUDE [prod_short](includes/prod_short.md)] for the **Analyze Bank Account Reconciliation** prompt dialog. You identify the prompt guide by the ![Prompt guide icon that opens a prompt guide.](media/prompt-guide-icon.png "The prompt guide icon") icon of a prompt dialog page.
@@ -65,7 +65,7 @@ The page is divided into two main areas: `Prompt` and `Content`.
 
 - In the `Prompt` area, the field `ProjectDescriptionField` is bound to the variable `InputProjectDescription` and is a multiline text field where the user can describe the project they want to create with Copilot.
 
-- The `Content` area contains fields that display the job's short description, full details, and the customer's name. The `CustomerNameField` has two triggers: `OnAssistEdit` and `OnValidate`. The `OnAssistEdit` trigger is used to select a customer from the existing customer records. The `OnValidate` trigger is used to validate the customer name and number. There's also a part named `ProposalDetails` which is used to display the structure of the job proposal.
+- The `Content` area contains fields that display the job's short description, full details, and the customer's name. The `CustomerNameField` has two triggers: `OnAssistEdit` and `OnValidate`. The `OnAssistEdit` trigger is used to select a customer from the existing customer records. The `OnValidate` trigger is used to validate the customer name and number. There's also a part named `ProposalDetails`, which is used to display the structure of the job proposal.
 
 The `actions` section defines actions that the user can perform on this page. There are several actions defined under the `PromptGuide` area, such as `OrganizeCampaign`, `FurnishOffice`, `SetUpConferenceRooms`, and `OrganizeWorkshop`. Each action sets the `InputProjectDescription` to a predefined text. 
 
@@ -321,6 +321,113 @@ page 54320 "Copilot Job Proposal"
 ```
 
 To see the `Copilot Job Proposal` code example in a complete implementation, go to [aka.ms/BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al). For more information on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
+
+
+## Error handling in prompt dialog pages
+
+Errors and messages that are thrown by the code logic in Copilot prompt dialogs now surface directly inside the dialog rather than in a separate popup dialog. There's no extra work required by developers to enable this feature, apart from authoring proper error handling and warnings as you already do today. Both the classic `Dialog.Error()` and `Dialog.Message()`, and the newer `ErrorInfo` patterns are supported. When using `ErrorInfo`, the title and description will both be shown.
+
+If the code throws more than one message, only the latest will be shown, but the user is told that there were multiple issues. Also, as has already been the case, if an error is thrown, a subsequent message is suppressed. If the error or message contains line breaks, these are ignored, as opposed to rendering in dialogs.
+
+### Example 1: Rendering multiple messages thrown by Message() while in the prompt dialog
+
+The following code snippet illustrates throwing multiple messages, using Message(), when the user select the Generate button in a prompt dialog.
+
+```al
+page 50110 PromptDialog
+{
+    PageType = PromptDialog;
+
+    layout
+    { ... }
+
+    actions
+    {
+        area(SystemActions)
+        {
+            systemaction(Generate)
+            {
+                trigger OnAction()
+                begin
+                    Message('First message, which is not shown in the prompt dialog');
+                    Message('Last message, which is shown in the prompt dialog');
+                end;
+            }
+        }
+    }
+}
+```
+
+As a result, when invoking the Generate action in the Copilot prompt dialog, the last message is rendered inline in the Copilot prompt dialog, along with an indication that there were more messages.
+
+### Example 2: Rendering an error thrown by Error() while in the prompt dialog
+
+Here we instead change to throwing an Error():
+
+```al
+
+page 50110 PromptDialog
+{
+    PageType = PromptDialog;
+
+    layout
+    { ... }
+
+    actions
+    {
+        area(SystemActions)
+        {
+            systemaction(Generate)
+            {
+                trigger OnAction()
+                begin
+                    Error('This is an example of rendering an error that happens in the prompt dialog, e.g., during Generate');
+                end;
+            }
+        }
+    }
+}
+```
+
+In this case, the error is rendered inline.
+
+### Example 3: Rendering an error thrown by ErrorInfo while in the prompt dialog
+
+And the last example illustrates using the fairly recent ErrorInfo type.
+
+```al
+
+page 50110 PromptDialog
+{
+    PageType = PromptDialog;
+
+    layout
+    { ... }
+
+    actions
+    {
+        area(SystemActions)
+        {
+            systemaction(Generate)
+            {
+                trigger OnAction()
+                var
+                    ErrorInfo: ErrorInfo;
+                begin
+                    ErrorInfo.Title('Error info title');
+                    ErrorInfo.Message('Error message');
+                    ErrorInfo.DetailedMessage('Detailed error');
+
+                    Error(ErrorInfo);
+                end;
+            }
+        }
+    }
+}
+```
+
+In this case, the ErrorInfo message part is rendered inline, and the title part is used for the tooltip. The detailed message is ignored. 
+
 
 ## Nudging users with prompt actions
 
