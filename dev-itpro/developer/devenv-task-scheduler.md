@@ -127,7 +127,6 @@ If you're running [!INCLUDE[prod_short](includes/prod_short.md)] online, the ser
 
 Because failure codeunits are designed for error situations, expect for a selected few, almost all exceptions while running failure codeunits are retriable. It doesn't matter if you're using [!INCLUDE[prod_short](includes/prod_short.md)] online or on-premises. Even with on-premises, you can't specify retriable exceptions, like you can for main codeunits.
 
-  
 ### AL methods that throw nonretriable exceptions in background sessions
 
 When running codeunits as scheduled tasks, you must make sure that the AL code doesn't assume the ability to interact with a user through the UI. You can use the [GuiAllowed Method](../developer/methods-auto/system/system-guiallowed-method.md) to suppress UI interactions. 
