@@ -323,15 +323,22 @@ page 54320 "Copilot Job Proposal"
 To see the `Copilot Job Proposal` code example in a complete implementation, go to [aka.ms/BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al). For more information on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
 
 
+## Nudging users with prompt actions
+
+With the floating action bar, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered in a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features. For more information, see [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md).
+
+
 ## Error handling in prompt dialog pages
 
-Errors and messages that are thrown by the code logic in Copilot prompt dialogs now surface directly inside the dialog rather than in a separate popup dialog. There's no extra work required by developers to enable this feature, apart from authoring proper error handling and warnings as you already do today. Both the classic `Dialog.Error()` and `Dialog.Message()`, and the newer `ErrorInfo` patterns are supported. When using `ErrorInfo`, the title and description will both be shown.
+[!INCLUDE [2024-releasewave2-changed](../includes/2024-releasewave2-changed.md)]
 
-If the code throws more than one message, only the latest will be shown, but the user is told that there were multiple issues. Also, as has already been the case, if an error is thrown, a subsequent message is suppressed. If the error or message contains line breaks, these are ignored, as opposed to rendering in dialogs.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, errors and messages that are thrown by the code logic in Copilot prompt dialogs surface directly inside the dialog instead of in a separate popup dialog. The `Dialog.Error()`, `Dialog.Message()`, and `ErrorInfo` error patterns are all supported. When using `ErrorInfo`, both the title and description will be shown.
 
-### Example 1: Rendering multiple messages thrown by Message() while in the prompt dialog
+If the code throws more than one message, only the latest message will be shown, but the user is informed that there were multiple issues. If an error is thrown, any subsequent message is suppressed. If the error or message contains line breaks, these line breaks are ignored, as opposed to rendering in dialogs.
 
-The following code snippet illustrates throwing multiple messages, using Message(), when the user select the Generate button in a prompt dialog.
+### Example 1: Rendering multiple messages thrown by `Message()` while in the prompt dialog
+
+The following code snippet illustrates throwing multiple messages, using `Message()`, when the user chooses the **Generate** button in a prompt dialog.
 
 ```al
 page 50110 PromptDialog
@@ -349,7 +356,7 @@ page 50110 PromptDialog
             {
                 trigger OnAction()
                 begin
-                    Message('First message, which is not shown in the prompt dialog');
+                    Message('First message, which isn't shown in the prompt dialog');
                     Message('Last message, which is shown in the prompt dialog');
                 end;
             }
@@ -358,11 +365,13 @@ page 50110 PromptDialog
 }
 ```
 
-As a result, when invoking the Generate action in the Copilot prompt dialog, the last message is rendered inline in the Copilot prompt dialog, along with an indication that there were more messages.
+As a result, when invoking the **Generate** action in the Copilot prompt dialog, the last message is rendered inline in the Copilot prompt dialog, along with an indication that there were more messages.
 
-### Example 2: Rendering an error thrown by Error() while in the prompt dialog
+:::image type="content" source="../media/prompt-dialog-error-info-s.png" alt-text="Example of rendering a message in the prompt dialog":::
 
-Here we instead change to throwing an Error():
+### Example 2: Rendering an error thrown by `Error()` while in the prompt dialog
+
+In this example, an `Error()` is thrown:
 
 ```al
 
@@ -381,7 +390,7 @@ page 50110 PromptDialog
             {
                 trigger OnAction()
                 begin
-                    Error('This is an example of rendering an error that happens in the prompt dialog, e.g., during Generate');
+                    Error('This is an example of rendering an error that happens in the prompt dialog, for example, during Generate');
                 end;
             }
         }
@@ -391,12 +400,13 @@ page 50110 PromptDialog
 
 In this case, the error is rendered inline.
 
+:::image type="content" source="media/rendering-error-prompt-dialog-s2.png" alt-text="Example of rendering error thrown in prompt dialog":::
+
 ### Example 3: Rendering an error thrown by ErrorInfo while in the prompt dialog
 
-And the last example illustrates using the fairly recent ErrorInfo type.
+The last example illustrates using the `ErrorInfo` type.
 
 ```al
-
 page 50110 PromptDialog
 {
     PageType = PromptDialog;
@@ -426,12 +436,9 @@ page 50110 PromptDialog
 }
 ```
 
-In this case, the ErrorInfo message part is rendered inline, and the title part is used for the tooltip. The detailed message is ignored. 
+In this case, the `ErrorInfo` message part is rendered inline, and the title part is used for the tooltip. The detailed message is ignored. 
 
-
-## Nudging users with prompt actions
-
-With the floating action bar, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered in a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features. For more information, see [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md).
+:::image type="content" source="media/rendering-message-prompt-dialog-s.png" alt-text="Example of rendering a message in the prompt dialog":::
 
 ## See also
 
