@@ -792,7 +792,6 @@
 ####### [Prompting using a prompt guide](developer/devenv-page-promptguide.md)
 ####### [Prompting using a floating action bar](developer/devenv-page-prompting-floating-actionbar.md)
 ####### [Error handling in PromptDialog pages](developer/devenv-page-prompt-error-handling.md)
-
 ###### List pages
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
