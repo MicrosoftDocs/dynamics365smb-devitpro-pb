@@ -3,7 +3,7 @@ title: Creating an Excel layout report
 description: Describes the steps involved in creating a report that uses an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 06/10/2024
+ms.date: 09/09/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
@@ -20,7 +20,7 @@ For more information about the report object, see [Report Object](devenv-report-
 
 When designing an Excel layout, you need to know the following information:
 
-- How the layout is connected to the dataset definition, also known as the _data contract_).
+- How the layout is connected to the dataset definition, also known as the _data contract_.
 - How the layout file is validated when importing it into [!INCLUDE[prod_short](../includes/prod_short.md)].
 - How the [!INCLUDE[prod_short](../includes/prod_short.md)] server merges the layout with data when running the report.
 
@@ -145,6 +145,12 @@ The table has two columns **Filter** and **Filter Value**. It contains all Key-V
 The actual filter format is '\<DataItemName\>::\<Source Table Caption\>::\<FilterGroup\>::\<Field Caption\>'. 
 
 There will be one row for each active filter defined on the request page.
+
+## Using named formulas
+
+[!INCLUDE [prod_short](../includes/prod_short.md)] saves Excel report authors time and energy by providing built-in named formulas that make it easy to access data from metadata sheets. Instead of developing complicated VLOOKUP or XLOOKUP formulas, report authors can use named formulas, such as **ReportRequest.Date** or **ReportMetaData.ReportHelpLink**.
+
+Named formulas are built in to Excel layout workbooks generated in 2024 release wave 2 and later versions.
 
 ### Translating Excel sheets in 2023 release wave 2 and later versions
 
