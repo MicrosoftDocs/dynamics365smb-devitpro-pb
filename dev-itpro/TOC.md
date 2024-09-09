@@ -787,7 +787,11 @@
 ##### [Page extension object](developer/devenv-page-ext-object.md)
 
 ##### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
-###### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
+###### PromptDialog pages
+####### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
+####### [Prompting using a prompt guide](developer/devenv-page-promptguide.md)
+####### [Prompting using a floating action bar](developer/devenv-page-prompting-floating-actionbar.md)
+
 ###### List pages
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
