@@ -19,6 +19,9 @@ Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod
 
 For more information, see [Authentication and Credential Types](../administration/users-credential-types.md).
 
+> [!IMPORTANT]
+> Microsoft recommends that you use the most secure authentication flow available. The NavUserPassword authentication flow requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows, such as Microsoft Entra ID or Windows, aren't viable.
+
 ## Server security
 
 [!INCLUDE[server](../developer/includes/server.md)] handles communication between clients and databases, controlling authentication, event logging, scheduled tasks, reporting, and more. The following articles explain how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances.
