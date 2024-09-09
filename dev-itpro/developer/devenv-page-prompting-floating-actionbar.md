@@ -87,4 +87,5 @@ actions
 ## See also
 
 [The PromptDialog page type](devenv-page-type-promptdialog.md)  
-[Prompting using a prompt guide](devenv-page-promptguide.md)   
+[Prompting using a prompt guide](devenv-page-promptguide.md)  
+[Error handling in PromptDialog pages](devenv-page-prompt-error-handling.md)
