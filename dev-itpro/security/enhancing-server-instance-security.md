@@ -9,7 +9,7 @@ ms.reviewer: solsen
 ---
 # Hardening Business Central server security
 
-[!INCLUDE[server](../developer/includes/server.md)] is a .NET-based Windows Service application that works exclusively with SQL Server and Azure SQL Server databases. [!INCLUDE[server](../developer/includes/server.md)] provides an extra layer of security between clients and the database. It applies the authentication features of the Windows Communications Framework to provide another layer of user authentication and uses impersonation to ensure that business logic is executed in a process that has been instantiated by the user who submitted the request. Authorization and logging of user requests are performed on a per-user basis.  
+[!INCLUDE[server](../developer/includes/server.md)] is a .NET-based Windows Service application that works exclusively with SQL Server and Azure SQL Server databases. [!INCLUDE[server](../developer/includes/server.md)] provides an extra layer of security between clients and the database. It applies the authentication features of the Windows Communications Framework to provide another layer of user authentication. It uses impersonation to ensure that business logic is executed in a process that is instantiated by the user who submitted the request. Authorization and logging of user requests are performed on a per-user basis.  
   
 ## Login account
 
@@ -29,7 +29,7 @@ We recommend that your solution uses Microsoft Entra ID for authentication, espe
 
 ## Disk quotas
 
- Client users can send files to be stored on [!INCLUDE[server](../developer/includes/server.md)], so we recommend that administrators set up disk quotas on all computers running [!INCLUDE[server](../developer/includes/server.md)]. This can prevent users from uploading too many files, which can make the server unstable. Disk quotas track and control disk space usage for NTFS volumes, which allows administrators to control the amount of data that each user can store on a specific NTFS volume. For more information about disk quotas, see the [Disk Quotas Technical Reference](/previous-versions/windows/it-pro/windows-server-2003/cc786969(v=ws.10)) on Microsoft TechNet.  
+ Client users can send files to be stored on [!INCLUDE[server](../developer/includes/server.md)], so we recommend that administrators set up disk quotas on all computers running [!INCLUDE[server](../developer/includes/server.md)]. This quota can prevent users from uploading too many files, which can make the server unstable. Disk quotas track and control disk space usage for NTFS volumes, which allows administrators to control the amount of data that each user can store on a specific NTFS volume. For more information about disk quotas, see the [Disk Quotas Technical Reference](/previous-versions/windows/it-pro/windows-server-2003/cc786969(v=ws.10)) on Microsoft TechNet.  
   
 ## Limiting client services port access
 
