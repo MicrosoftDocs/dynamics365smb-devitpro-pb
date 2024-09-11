@@ -5,8 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.collection: 
-ms.date: 02/07/2024
+ms.date: 09/10/2024
 ms.custom: bap-template 
 ---
 
@@ -214,3 +213,46 @@ You can share a recording or a playback as a link (URL) that you can share with 
   - Recording 2: create customer.
   - Recording 3: create sales order.
   - Recording 4: post sales order.
+
+
+## Run page scripts in pipelines
+
+You can run page scripts in your own pipelines, using the stand-alone bc-replay script player. This is distributed as an npm package, so you can pull the latest version available from the npm feed.
+
+### Prerequisites
+
+The following things must be available to use this command:
+- NodeJs version 16.14.0 or later
+- PowerShell 7 or later 
+
+### Get started
+
+
+There is no setup, just run `npm install @microsoft/bc-replay --save`.
+Create a new folder and cd to it.
+Add @microsoft/bc-replay and install playwright
+npm i @microsoft/bc-replay --save
+Now add a folder to store some recordings, e.g. mkdir recordings and add some recording .yml files.
+Then you can run any tests added to the recordings folder against Business Central web client instance:
+npx replay .\recordings\*.yml -StartAddress http://localhost:8080/
+Parameters
+npx replay
+      [-Tests] <String>
+      -StartAddress <String>
+      [-Authentication Windows|AAD|UserPassword]
+      [-UserNameKey <String>]
+      [-PasswordKey <String>]
+      [-Headed]
+      [-ResultDir<String>]
+-Tests
+File glob pattern to select the tests recordings to run
+-StartAddress
+The url to the deployed web client.
+-Authentication
+The authentication to use against the web client. One of Windows, AAD, UserPassword. Windows is the default. It does not support multi-factor authentication. Use an account that requires only a username and password to sign in for your tests.
+-UserNameKey & -PasswordKey
+When -Authentication is set to AAD or UserPassword then a user name and password must be given. These must be transferred as environment variables and -UserNameKey and -PasswordKey are used to specify which environment variables contains these.
+-Headed
+Will show the test running in the browsers.
+-ResultDir
+The directory to write the test results.
