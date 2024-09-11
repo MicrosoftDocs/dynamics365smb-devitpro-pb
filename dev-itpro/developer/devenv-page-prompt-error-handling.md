@@ -49,7 +49,7 @@ page 50110 PromptDialog
 
 As a result, when invoking the **Generate** action in the Copilot prompt dialog, the last message is rendered inline in the Copilot prompt dialog, along with an indication that there were more messages.
 
-:::image type="content" source="../media/prompt-dialog-error-info-s.png" alt-text="Example of rendering a message in the prompt dialog":::
+:::image type="content" source="media/rendering-message-prompt-dialog-s.png" alt-text="Example of rendering a message in the prompt dialog":::
 
 ### Example 2: Rendering an error thrown by `Error()` while in the prompt dialog
 
@@ -72,7 +72,7 @@ page 50110 PromptDialog
             {
                 trigger OnAction()
                 begin
-                    Error('This is an example of rendering an error that happens in the prompt dialog, for example, during Generate');
+                    Error('This is an example of rendering an error that happens in the prompt dialog, e.g. during Generate');
                 end;
             }
         }
@@ -120,7 +120,7 @@ page 50110 PromptDialog
 
 In this case, the `ErrorInfo` message part is rendered inline, and the title part is used for the tooltip. The detailed message is ignored. 
 
-:::image type="content" source="media/rendering-message-prompt-dialog-s.png" alt-text="Example of rendering a message in the prompt dialog":::
+:::image type="content" source="../media/prompt-dialog-error-info-s.png" alt-text="Example of rendering a message in the prompt dialog":::
 
 ## Related information
 
