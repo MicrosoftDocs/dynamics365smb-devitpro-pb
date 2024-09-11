@@ -54,7 +54,6 @@ The following illustration shows an example of how the `PromptDialog` page with 
 
 :::image type="content" source="media/promptdialog-analyze-bank.png" alt-text="Analyze bank account prompt dialog":::
 
-
 ## Example
 
 The following example describes a page, which is a PromptDialog page, set with the `PromptDialog` option. The `Extensible = false;` is a mandatory setting, to ensure that the page isn't extended so that customers can trust the AI experience implemented.
@@ -322,6 +321,7 @@ page 54320 "Copilot Job Proposal"
 
 To see the `Copilot Job Proposal` code example in a complete implementation, go to [aka.ms/BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al). For more information on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
 
+Learn more about error handling in [Error handling in PromptDialog pages](devenv-page-prompt-error-handling.md).
 
 ## Nudging users with prompt actions
 
