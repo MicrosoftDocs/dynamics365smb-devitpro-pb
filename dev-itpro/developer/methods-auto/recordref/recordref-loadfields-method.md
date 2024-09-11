@@ -42,6 +42,9 @@ The FieldNo's of the fields to be loaded.
 
 This method will trigger a [JIT load](../../devenv-partial-records.md#jit) of the specified fields. The method allows for triggering the JIT load on multiple fields. If the fields are already loaded, another load won't be triggered. Using this method instead of of relying on implicit JIT loads lets you develop for more explicit error handling when a load fails.
 
+> [!NOTE]
+> You must not use the method LoadFields on fields with FieldClass FlowFilter or FlowField. Otherwise a runtime error will occur.
+
 The method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
 ## See Also
