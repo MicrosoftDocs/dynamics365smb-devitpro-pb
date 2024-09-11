@@ -14,11 +14,11 @@ ms.reviewer: solsen
 
 [!INCLUDE [2024-releasewave2-changed](../includes/2024-releasewave2-changed.md)]
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, errors and messages that are thrown by the code logic in Copilot prompt dialogs surface directly inside the dialog instead of in a separate popup dialog. The `Dialog.Error()`, `Dialog.Message()`, and `ErrorInfo` error patterns are all supported. When using `ErrorInfo`, both the title and description will be shown.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, errors and messages that are thrown by the code logic in Copilot prompt dialogs surface directly inside the dialog instead of in a separate popup dialog. The `Dialog.Error()`, `Dialog.Message()`, and `ErrorInfo` error patterns are all supported. When you use the `ErrorInfo` type, both the title and description will be shown inside the dialog.
 
-If the code throws more than one message, only the latest message will be shown, but the user is informed that there were multiple issues. If an error is thrown, any subsequent message is suppressed. If the error or message contains line breaks, these line breaks are ignored, as opposed to rendering in dialogs.
+If the code throws more than one message, only the last message will be shown, but the user is informed about the total number of issues. If an error is thrown, any subsequent message is suppressed. If the error or message contains line breaks, these line breaks are ignored, as opposed to when they are rendered in dialogs.
 
-### Example 1: Rendering multiple messages thrown by `Message()` while in the prompt dialog
+## Example 1: Rendering multiple messages thrown by `Message()` in the prompt dialog
 
 The following code snippet illustrates throwing multiple messages, using `Message()`, when the user chooses the **Generate** button in a prompt dialog.
 
@@ -51,9 +51,9 @@ As a result, when invoking the **Generate** action in the Copilot prompt dialog,
 
 :::image type="content" source="media/rendering-message-prompt-dialog-s.png" alt-text="Example of rendering a message in the prompt dialog":::
 
-### Example 2: Rendering an error thrown by `Error()` while in the prompt dialog
+## Example 2: Rendering an error thrown by `Error()` in the prompt dialog
 
-In this example, an `Error()` is thrown:
+In this example, an `Error()` is thrown when the user chooses the **Generate** button in a prompt dialog.
 
 ```al
 
@@ -84,9 +84,9 @@ In this case, the error is rendered inline.
 
 :::image type="content" source="media/rendering-error-prompt-dialog-s2.png" alt-text="Example of rendering error thrown in prompt dialog":::
 
-### Example 3: Rendering an error thrown by ErrorInfo while in the prompt dialog
+## Example 3: Rendering an error thrown by ErrorInfo while in the prompt dialog
 
-The last example illustrates using the `ErrorInfo` type.
+The last example illustrates using the `ErrorInfo` type when the user chooses the **Generate** button in a prompt dialog.
 
 ```al
 page 50110 PromptDialog
@@ -125,4 +125,5 @@ In this case, the `ErrorInfo` message part is rendered inline, and the title par
 ## Related information
 
 [The PromptDialog page type](devenv-page-type-promptdialog.md)  
-[Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md)
+[Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md)  
+[Prompting using a prompt guide](devenv-page-promptguide.md)
