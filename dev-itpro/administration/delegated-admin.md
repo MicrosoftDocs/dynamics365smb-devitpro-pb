@@ -29,7 +29,7 @@ At the partner company, we encourage you to keep track of which user names your 
 
 If a customer removes delegated permissions from you, you can still manage their subscription from the Partner Center, such as adding or removing licenses for their subscription, but you'll no longer be able to log into and manage their Business Central environment, Microsoft Entra ID, and other services. You'll also not be able to manage their users (add/remove/assign licenses) from the **Customer** page in the Partner Center.  
 
-### Restricted access to Business Central as delegated administrator
+### Limitations for delegated administrators
 
 When you sign in to your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as the *delegated administrator* from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you have access to all areas of their [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. However, because you aren't registered as a regular user, there are certain tasks that you can't do.
 
@@ -48,9 +48,6 @@ The following tasks aren't available to the delegated administrator:
 <!--- Use the **Cloud Migration Setup** assisted setup guide to migrate data from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
 
     Instead, a licensed user who is assigned the SUPER permission set in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can run the assisted setup guide.-->
-
-> [!NOTE]
-> [!INCLUDE [admin-conditional-access-policies](../includes/admin-conditional-access-policies.md)]
 
 ## Managing delegated permissions as an internal administrator
 
