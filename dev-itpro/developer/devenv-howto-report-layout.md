@@ -71,7 +71,8 @@ Using tables, you can design layouts with lines that have text aligned to both t
 ### Working with pictures in Word Layouts
 
 There are at least two things you should consider when adding pictures to your Word layout:
-1. Control how they fit into the layout (don't overflow),
+
+1. Control how they fit into the layout (don't overflow).
 2. Reduce report file size by compressing the pictures.
 
 #### Control how pictures fit into the layouts
@@ -98,7 +99,6 @@ To compress pictures that are part of the layout file, do as follows:
 Learn more at [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
 
 For pictures that are part of the report dataset, you need to adjust the size in Business Central. You can use the codeunit 5080 "Image Handler Management" to scale images in AL (from version 24.1 also available in [!INCLUDE[prod_short](includes/prod_short.md)] online). Learn more at [Codeunit "Image Handler Management"](/dynamics365/business-central/application/base-application/codeunit/system.media.image-handler-management).
-
 
 ### Using tables to display data from the report dataset (simple repeaters)
 
