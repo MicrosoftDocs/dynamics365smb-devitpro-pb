@@ -124,9 +124,8 @@ Learn more at [Supporting repeating content](/office/client-developer/word/conte
 
 > [!TIP]  
 > When you work with a very long table, it'll run across multiple pages. It's possible to set up the table so that the table header row appears on each page automatically. To achieve this, do as follows:
->
 > 1. Select the header row or rows that you want to repeat on each page. The selection must include the first row of the table.
-> 2. Under *Table Tools*, on the *Layout* tab, in the *Data* group, choose *Repeat Header Rows*.
+> 1. Under *Table Tools*, on the *Layout* tab, in the *Data* group, choose *Repeat Header Rows*.
 >
 > Learn more at [Repeat table header on subsequent pages](https://support.microsoft.com/en-us/office/repeat-table-header-on-subsequent-pages-2ff677e0-3150-464a-a283-fa52794b4b41).
 
