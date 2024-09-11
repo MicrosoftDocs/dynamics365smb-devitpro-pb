@@ -14,7 +14,7 @@ ms.reviewer: solsen
 # Prompting using a floating action bar
 
 > [!NOTE]
-> With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2 and runtime 14, you can now use prompt actions on Card, Document, and ListPlus page types to nudge users to use your Copilots on such pages. The required AL code follows the same model as when adding Copilot prompt actions to list pages.
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2 and runtime 14, you can use prompt actions on Card, Document, and ListPlus page types to nudge users to use your Copilots on such pages. The required AL code follows the same model as when adding Copilot prompt actions to list pages.
 
 Since [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and runtime 13, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered with more prominence than other actions in the UI. It can be shown as a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features.
 
