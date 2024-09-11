@@ -787,7 +787,11 @@
 ##### [Page extension object](developer/devenv-page-ext-object.md)
 
 ##### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
-###### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
+###### PromptDialog pages
+####### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
+####### [Prompting using a prompt guide](developer/devenv-page-promptguide.md)
+####### [Prompting using a floating action bar](developer/devenv-page-prompting-floating-actionbar.md)
+
 ###### List pages
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
@@ -1715,10 +1719,11 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
 #### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
+##### Versions no longer updated
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
-#### Versions no longer updated
 ##### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
 ##### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ##### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
