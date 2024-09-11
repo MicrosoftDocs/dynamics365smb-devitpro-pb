@@ -24,8 +24,7 @@ We recommend that your solution uses Microsoft Entra ID for authentication, espe
 - Multifactor Authentication (MFA): Adds an extra layer of security beyond passwords.
 - Passwordless sign-ins: Users can sign in using methods such as authentication apps, reducing reliance on traditional passwords.
 
-> [!IMPORTANT]
-> Microsoft recommends that you don't use NavUserPassword credential type. This authentication flow requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows, such as Microsoft Entra ID or Windows, aren't viable. Learn more in [Authentication and credential types](../administration/users-credential-types.md).
+[!INCLUDE[navuserpassword](../developer/includes/navuserpassword.md)]
 
 ## Disk quotas
 

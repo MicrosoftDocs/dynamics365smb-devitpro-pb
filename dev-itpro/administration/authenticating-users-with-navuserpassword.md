@@ -12,8 +12,7 @@ ms.service: dynamics-365-op
 
 NavUserPassword is an authentication method that's handled by [!INCLUDE[server](../developer/includes/server.md)], but isn't based on Windows users or Active Directory. Each user is set up with a user name and password that's configured inside [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only. The user is prompted for username/password credentials when they start the client.
 
-> [!IMPORTANT]
-> Microsoft recommends that you use the most secure authentication flow available. The NavUserPassword authentication flow requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows, such as Microsoft Entra ID or Windows, aren't viable.
+[!INCLUDE[navuserpassword](../developer/includes/navuserpassword.md)]
 
 ## Preparation
 

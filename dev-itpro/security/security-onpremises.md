@@ -17,10 +17,9 @@ This section helps you understand and improve the security of [!INCLUDE[prod_sho
 
 Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server tiers of Business Central.
 
-For more information, see [Authentication and Credential Types](../administration/users-credential-types.md).
+Learn more in [Authentication and Credential Types](../administration/users-credential-types.md).
 
-> [!IMPORTANT]
-> Microsoft recommends that you use the most secure authentication flow available. The NavUserPassword authentication flow requires a very high degree of trust in the application, and carries risks that are not present in other flows. You should only use this flow when other more secure flows, such as Microsoft Entra ID or Windows, aren't viable.
+[!INCLUDE[navuserpassword](../developer/includes/navuserpassword.md)]
 
 ## Server security
 
