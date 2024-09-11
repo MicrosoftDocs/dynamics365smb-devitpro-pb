@@ -211,7 +211,7 @@ Learn more in [Using hyperlinks in Word layouts](devenv-hyperlinks-in-word-repor
 If you need your report to change style for different types of content, consider using different *Sections* in your Word layout. Within each section, you can have different formatting, such as page or table layouts, paper orientation, watermarks, and headers/footers.
 
 > [!NOTE]  
-> Before [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 2 and earlier, you couldn't include Word sections in report layouts that used the `WordMergeDataItem` property. This restriction is removed starting from 2024 release wave 2. Learn more in [How to iterate a Word layout over a data item](#how-to-iterate-a-word-layout-over-a-data-item).
+> Before [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 2, you couldn't include Word sections in report layouts that used the `WordMergeDataItem` property. This restriction is removed starting from 2024 release wave 2. Learn more in [How to iterate a Word layout over a data item](#how-to-iterate-a-word-layout-over-a-data-item).
 
 Sections are created using section breaks. To start a new section, select where you want it to begin. Then go to **Layout** > **Breaks**. Learn more in [Insert a section break](https://support.microsoft.com/en-us/office/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c) (use <kbd>Ctrl</kbd>+click to open in a new tab).
 
