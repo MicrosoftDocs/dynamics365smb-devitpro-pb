@@ -181,29 +181,6 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
 
     For information, go to [Quickstart: Configure a client application to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).  
 
-<!--
-6. Configure OAuth2 authentication in the Excel add-in.
-
-    The Excel add-in requires OAuth2 implicit grant flow to be enabled on the Excel add-in application.
-
-    1. From the application's **Overview** page, select **Authentication**.
-    2. Under **Implicit grant and hybrid flows**, select **Access tokens (used for implicit flows)** and **ID tokens (used for implicit and hybrid flows)**.
-
-7. In the registered app's manifest, configure the reply URL for the Microsoft Dynamics Office Add-in:
-
-    1. From the application's **Overview** page, select **Manifest**.
-    2. Search for the `"replyUrlsWithType":`, and add the following lines:
-
-        ```json  
-        {
-            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/*",
-            "type": "Spa"
-        }
-        ```  
-
-        Remember to add a comma before or after this entry, depending on where you add it in the list.
-    3. Select **Save**.
--->
 7. On the application's **Overview** page, copy the **Application (Client) ID** that is assigned to Excel add-in application.
 
     You'll need it to configure the [!INCLUDE[server](../developer/includes/server.md)] instance.
