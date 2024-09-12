@@ -24,9 +24,12 @@ Before you choose the target version for your upgrade, read the [Some Known Issu
 
 ## Version 23 compatibility
 
-The following table lists the Business Central 23 versions and the minimum version of later releases that are compatible for upgrade.
+The following table lists the Business Central 23 update versions and the minimum update versions of later releases that are compatible for upgrade.
 
-|Version 23|Version 24|
+> [!NOTE]
+> Although the table lists the minimum compatible update versions, we recommend upgrading to the latest update version for the release you are upgrading to.
+
+|V23 update|24 update|
 |-|-|
 |23.0 to 23.5|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000) |
 |[23.6](https://support.microsoft.com/help/5037541)|[24.1](https://support.microsoft.com/help/5038531)|
@@ -40,9 +43,12 @@ To view a list of all available updates for Business Central 2023 Release Wave 2
 
 ## Version 22 compatibility
 
-The following table lists the Business Central 22 versions and the minimum version of later releases that are compatible for upgrade.
+The following table lists the Business Central 22 update versions and the minimum update versions of later releases that are compatible for upgrade.
 
-|Version 22|Version 23|Version 24|
+> [!NOTE]
+> Although the table lists the minimum compatible update versions, we recommend upgrading to the latest update version for the release you are upgrading to.
+
+|V22 update|V23 update| V24 update|
 |-|-|-|
 |22.0 to 22.5|[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)  |[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|
 |[22.6](https://support.microsoft.com/help/5031951) |[23.1](https://support.microsoft.com/help/5032755)|24.0|
@@ -64,9 +70,12 @@ To view a list of all available updates for Business Central 2023 Release Wave 1
 
 ## Version 21 compatibility
 
-The following table lists the Business Central 21 versions and the minimum version of later releases that are compatible for upgrade.
+The following table lists the Business Central 21 update versions and the minimum update versions of later releases that are compatible for upgrade.
 
-|Version 21|Version 22|Version 23|Version 24|
+> [!NOTE]
+> Although the table lists the minimum compatible update versions, we recommend upgrading to the latest update version for the release you are upgrading to.
+
+|V21 update|V22 update|V23 update|24 update|
 |-|-|-|-|
 |21.0 to 21.5|[22.0](https://www.microsoft.com/en-us/download/details.aspx?id=105113)  |[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|
 |[21.6](https://support.microsoft.com/help/5025975)  |[22.1](https://support.microsoft.com/help/5026932) |23.0|24.0|
