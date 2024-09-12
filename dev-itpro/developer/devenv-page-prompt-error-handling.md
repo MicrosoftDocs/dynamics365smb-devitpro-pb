@@ -126,4 +126,5 @@ In this case, the `ErrorInfo` message part is rendered inline, and the title par
 
 [The PromptDialog page type](devenv-page-type-promptdialog.md)  
 [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md)  
-[Prompting using a prompt guide](devenv-page-promptguide.md)
+[Prompting using a prompt guide](devenv-page-promptguide.md)  
+[User experience guidelines for errors](devenv-error-handling-guidelines.md)
