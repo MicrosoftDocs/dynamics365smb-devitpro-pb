@@ -29,7 +29,7 @@ The following table lists the Business Central 23 update versions and the minimu
 > [!NOTE]
 > Although the table lists the minimum compatible update versions, we recommend upgrading to the latest update version for the release you are upgrading to.
 
-|V23 update|24 update|
+|V23 update|V24 update|
 |-|-|
 |23.0 to 23.5|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000) |
 |[23.6](https://support.microsoft.com/help/5037541)|[24.1](https://support.microsoft.com/help/5038531)|
@@ -75,7 +75,7 @@ The following table lists the Business Central 21 update versions and the minimu
 > [!NOTE]
 > Although the table lists the minimum compatible update versions, we recommend upgrading to the latest update version for the release you are upgrading to.
 
-|V21 update|V22 update|V23 update|24 update|
+|V21 update|V22 update|V23 update|V24 update|
 |-|-|-|-|
 |21.0 to 21.5|[22.0](https://www.microsoft.com/en-us/download/details.aspx?id=105113)  |[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|
 |[21.6](https://support.microsoft.com/help/5025975)  |[22.1](https://support.microsoft.com/help/5026932) |23.0|24.0|
