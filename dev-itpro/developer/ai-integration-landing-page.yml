@@ -65,6 +65,8 @@ landingContent:
         url: devenv-page-promptguide.md
       - text: Prompting using a floating action bar
         url: devenv-page-prompting-floating-actionbar.md
+      - text: Error handling in prompt dialogs
+        url: devenv-page-prompt-error-handling.md
       - text: PromptMode property
         url: properties/devenv-promptmode-property.md      
       - text: Token counting in AI
