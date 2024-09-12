@@ -6,6 +6,7 @@ ms.date: 08/26/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: altotovi
+ms.custom: references_regions
 ---
 
 # Country/regional availability and supported languages
