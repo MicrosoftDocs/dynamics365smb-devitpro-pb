@@ -84,7 +84,7 @@ In this case, the error is rendered inline.
 
 :::image type="content" source="media/rendering-error-prompt-dialog-s2.png" alt-text="Example of rendering error thrown in prompt dialog":::
 
-## Example 3: Rendering an error thrown by ErrorInfo while in the prompt dialog
+## Example 3: Rendering an error thrown by ErrorInfo in the prompt dialog
 
 The last example illustrates using the `ErrorInfo` type when the user chooses the **Generate** button in a prompt dialog.
 
