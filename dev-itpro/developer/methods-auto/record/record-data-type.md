@@ -122,8 +122,8 @@ The following methods are available on instances of the Record data type.
 |[TestField(Any, TextConst, ErrorInfo)](record-testfield-joker-textconst-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code)](record-testfield-joker-code-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code, ErrorInfo)](record-testfield-joker-code-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
-|[TestField(Any, Text)](record-testfield-joker-string-method.md)|Tests whether the contents of a field match a given value.|
-|[TestField(Any, Text, ErrorInfo)](record-testfield-joker-string-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Text)](record-testfield-joker-text-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Text, ErrorInfo)](record-testfield-joker-text-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum)](record-testfield-joker-anyenum-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum, ErrorInfo)](record-testfield-joker-anyenum-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Any)](record-testfield-joker-joker-method.md)|Tests whether the contents of a field match a given value.|

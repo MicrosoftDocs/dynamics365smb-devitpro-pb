@@ -2,7 +2,7 @@
 title: Install a version 24 update
 description: This article describes the tasks required for getting the monthly version 24 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 05/29/2024
+ms.date: 07/24/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -32,7 +32,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - Business Foundation extension
 
-   This extension was introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application. It will contain more functionality in future releases.
+   This extension was introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application. It's expected to contain more functionality in future releases.
 
 - Base application extension
 
@@ -71,7 +71,7 @@ The installation media (DVD) includes new versions of Microsoft's Base Applicati
 Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the `" "` with the correct values for your environment.
 
 ```powershell
-$BcServerInstance = "The name of the Business Central server instance, for example: BC230"
+$BcServerInstance = "The name of the Business Central server instance, for example: BC240"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
 $TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (24-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB." 
@@ -80,7 +80,7 @@ $SystemAppPath = "The file path and name of the System Application extension for
 $BusFoundAppPath = "The file path and name of the Business Foundation extension for the update, for example: C:\DVD\Applications\BusinessFoundation\Source\Microsoft_Business Foundation.app"
 $BaseAppPath = "The file path and name of the Base Application extension for the update, for example: C:\DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
 $ApplicationAppPath = "The path and file name to the Application application extension for the update, for example: C:\DVD\Applications\Application\Source\Microsoft_Application.app"
-$NewBcVersion = "The version number for the update, for example: 24.1.39901.0"
+$NewBcVersion = "The version number for the update, for example: 24.4.39901.0"
 $ExtPath = "The path and file name to an extension package" 
 $ExtName = "The name of an extension"
 $ExtVersion = "The version of an extension, for example, 1.0.0.0"
@@ -417,7 +417,7 @@ Follow these steps if your existing solution uses the Microsoft System Applicati
 
 ## Upgrade Business Foundation Application
 
-Follow these steps if your existing solution uses the Microsoft Business Foundation Application. Otherwise, you can skip this procedure.
+Follow these steps if your existing solution uses the Microsoft Business Foundation Application. Otherwise, you can skip this procedure. The **Business Foundation** extension contains an expansive set of open source modules that make it easier to build, maintain, and easily upgrade on-premises and online apps.
 
 1. Publish the  **Business Foundation** extension (Microsoft_Business Foundation.app).
 
@@ -427,10 +427,10 @@ Follow these steps if your existing solution uses the Microsoft Business Foundat
     Publish-NAVApp -ServerInstance $BcServerInstance -Path $BusFoundAppPath
     ```
 
-1. Synchronize the tenant with the Business Foundation extension.
+1. Synchronize the tenant with the Business Foundation extension (Microsoft_Business Foundation):
 
     ```powershell
-    Sync-NAVApp -ServerInstance $BcServerInstance-Tenant $TenantId -Name "Business Foundation" -Version $NewBCVersion
+    Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBCVersion
     ```
 
    Replace `$NewBcVersion` with the exact version of the published Business Foundation extension.
@@ -442,6 +442,8 @@ Follow these steps if your existing solution uses the Microsoft Business Foundat
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBcVersion
     ```
+
+    Upgrading data updates the data in the tables of the tenant database to the schema changes made to tables of the Business Foundation.
 
 ## Upgrade Base Application
 

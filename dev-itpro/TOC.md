@@ -70,6 +70,9 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
+### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
+### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
 ### [Update 24.2](whatsnew/whatsnew-update-24-2.md)
 ### [Update 24.1](whatsnew/whatsnew-update-24-1.md)
 ### Updates for earlier major versions
@@ -119,7 +122,6 @@
 #### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 ## Help and support
 ### [Resources for help and support](help-and-support.md)
-### [Legal resources](terms/legal.md)
 ### [Technical support](technical-support.md)
 ### Help system
 #### [User assistance model](user-assistance.md)
@@ -585,7 +587,7 @@
 
 ##### JSON and XML types
 ###### [JsonArray data type](developer/methods-auto/jsonarray/jsonarray-data-type.md)
-###### [Jsonobject data type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
+###### [JsonObject data type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
 ###### [JsonToken data type](developer/methods-auto/jsontoken/jsontoken-data-type.md)
 ###### [JsonValue data type](developer/methods-auto/jsonvalue/jsonvalue-data-type.md)
 ###### [XmlAttribute data type](developer/methods-auto/xmlattribute/xmlattribute-data-type.md)
@@ -786,7 +788,11 @@
 ##### [Page extension object](developer/devenv-page-ext-object.md)
 
 ##### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
-###### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
+###### PromptDialog pages
+####### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
+####### [Prompting using a prompt guide](developer/devenv-page-promptguide.md)
+####### [Prompting using a floating action bar](developer/devenv-page-prompting-floating-actionbar.md)
+
 ###### List pages
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
@@ -830,14 +836,14 @@
 ##### [Actions in the user interface](developer/devenv-actions-user-interface.md)
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md)
-##### Promoted actions
-###### [Promoted actions](developer/devenv-promoted-actions.md)
-###### [Organizing promoted actions](developer/devenv-organizing-promoted-actions.md)
-###### [Common promoted action groups](developer/devenv-common-promoted-action-groups.md)
 ##### Modern action bar
 ###### [Action bar improvements](developer/devenv-action-bar-improvements.md)
 ###### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
 ###### [Pages with action bar improvements](developer/devenv-pages-action-bar-improvements.md)
+##### Promoted actions
+###### [Promoted actions](developer/devenv-promoted-actions.md)
+###### [Organizing promoted actions](developer/devenv-organizing-promoted-actions.md)
+###### [Common promoted action groups](developer/devenv-common-promoted-action-groups.md)
 
 #### Views
 ##### [Designing views](developer/devenv-views.md)
@@ -1102,8 +1108,8 @@
 <!-- end AL programming -->
 
 ## [System and application reference documentation](/dynamics365/business-central/application/)
-### [Overview of the system application](developer/devenv-system-application-overview.md)
-### Creating new modules in the system application
+### [Overview of the application layers and modules](developer/devenv-system-application-overview.md)
+### Creating new modules
 #### [Module architecture](developer/devenv-blueprint.md)
 #### [Get started with modules](developer/devenv-getting-started.md)
 #### [Set up your development environment](developer/devenv-set-up-an-environment.md)
@@ -1446,21 +1452,22 @@
 #### [API developer overview](developer/devenv-api.md)
 
 ### OData
-#### [Overview](webservices/odata-web-services.md)
+#### [OData overview](webservices/odata-web-services.md)
 #### [OData client performance](webservices/odata-client-performance.md)
-#### [Using filters with OData/REST API calls](developer/devenv-connect-apps-filtering.md)
 #### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
-#### [Return or obtain an AtomPub document](webservices/return-obtain-an-atompub-document.md)
-#### [Return or obtain service metadata EDMX document](webservices/return-obtain-service-metadata-edmx-document.md)
-#### [Return or obtain a JSON document](webservices/return-obtain-json-document.md)
+#### [Using filters with OData/REST API calls](developer/devenv-connect-apps-filtering.md)
 #### [Using filter expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
 #### [Using FlowFilters in OData URIs](webservices/use-flowfilters-in-odata-uris.md)
-#### [Server-driven paging](webservices/server-driven-paging-in-odata-web-services.md)
-#### [Containments and associations](webservices/use-containments-associations.md)
+#### [Server-driven paging in OData](webservices/server-driven-paging-in-odata-web-services.md)
+#### [Containments and associations in OData](webservices/use-containments-associations.md)
 #### [Using OData on queries set with top number of rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
 #### [Using OData to modify data](webservices/use-odata-to-modify-data.md)
 #### [Using OData transactional $batch requests](webservices/use-odata-batch.md)
+#### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)  
+#### [Return or obtain service metadata EDMX document for OData](webservices/return-obtain-service-metadata-edmx-document.md)
+#### [Return or obtain a JSON document with OData](webservices/return-obtain-json-document.md)
 #### [Known OData limitations](webservices/odata-known-limitations.md)
+#### [Return or obtain an AtomPub document in ODatav3](webservices/return-obtain-an-atompub-document.md)
 
 ### Publishing pages and codeunits as OData/SOAP web service endpoints
 #### [Publishing a web service](webservices/publish-web-service.md)
@@ -1518,13 +1525,14 @@
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
-### [Transparency note: Machine Learnining APIs](developer/ml-transparency-note.md)
+### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
 ### Integrating with Microsoft Excel
 #### [Using Excel for viewing and editing Business Central data](/dynamics365/business-central/across-work-with-excel)  
 #### [Using Excel to design analytical reports](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  
+#### [Using Excel to import data from other systems](/dynamics365/business-central/across-import-data-configuration-packages?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### [Controlling Edit in Excel on list pages](developer/devenv-edit-in-excel-lists.md)
 ### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 ### Integrating with Microsoft Onedrive
@@ -1712,10 +1720,11 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
 #### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
+##### Versions no longer updated
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
-#### Versions no longer updated
 ##### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
 ##### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ##### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
@@ -1993,7 +2002,7 @@
 ##### [Upgrade overview](upgrade/upgrade-overview-v16.md)
 ##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
 ##### Application and data
-<!--##### [Overiew](upgrade/upgrade-application-code-upgrade-v16.md)-->
+<!--##### [Overview](upgrade/upgrade-application-code-upgrade-v16.md)-->
 <!--##### [Unmodified Application](upgrade/upgrade-unmodified-application.md)-->
 ###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v16.md)
 ###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app.md)
@@ -2036,6 +2045,6 @@
 ## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 # Responsible AI
 ## [Transparency note: Developer tools for copilot](ai/transparency-note-dev-tools-for-copilot.md)
-## [Transparency note: Machine Learnining APIs](developer/ml-transparency-note.md)
+## [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 <!-- end upgrade -->
 <!--on-prem ends-->

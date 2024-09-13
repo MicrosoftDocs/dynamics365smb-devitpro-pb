@@ -2,10 +2,11 @@
 title: Country/regional availability and supported languages
 description: Overview of availability and supported languages.
 author: sorenfriisalexandersen
-ms.date: 01/25/2024
+ms.date: 08/26/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: altotovi
+ms.custom: references_regions
 ---
 
 # Country/regional availability and supported languages
@@ -207,7 +208,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 > [!NOTE]  
 > Microsoft will announce new planned countries for [!INCLUDE [prod_short](../includes/prod_short.md)] 2024 release wave 2 at October.
 
-For a list of the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available, go to [Geographical availability for Dynamics 365](https://dynamics.microsoft.com/en-us/availability-reports/georeport/) report and select [!INCLUDE [prod_long](../developer/includes/prod_long.md)] in the **Product** list.
+Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available in [Copilot international availability](https://aka.ms/bapcopilot-intl-report-external/).
 
 Administrators can use the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] admin center to find the Azure region that their environments are in.
 
@@ -229,7 +230,7 @@ This table gives an overview of supported platform and application languages, an
 |-----------|---------|--------|--------|----| 
 |Albanian (Albania)|sq-AL|-|Partner, Available on AppSource||
 |Bosnian (Bosnia and Herzegovina)|bs-BA|-|Partner, Available on AppSource|| 
-|Catalan (Spain)|ca-ES|-|Partner, Available on AppSource||
+|Catalan|ca-ES|-|Partner, Available on AppSource||
 |Bulgarian (Bulgaria)|bg-BG|Available|Partner, Available on AppSource||
 |Chinese (Simplified, China)|zh-CN|Available|Partner, Available on AppSource||
 |Chinese (Traditional, Hong Kong SAR)|zh-HK|Available|Partner, Available on AppSource|| 
