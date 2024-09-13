@@ -124,6 +124,7 @@ Learn more at [Supporting repeating content](/office/client-developer/word/conte
 
 > [!TIP]  
 > When you work with a very long table, it'll run across multiple pages. It's possible to set up the table so that the table header row appears on each page automatically. To achieve this, do as follows:
+>
 > 1. Select the header row or rows that you want to repeat on each page. The selection must include the first row of the table.
 > 1. Under *Table Tools*, on the *Layout* tab, in the *Data* group, choose *Repeat Header Rows*.
 >
@@ -490,8 +491,8 @@ Starting from 2024 release wave 2, the _Report layouts_ page includes the _Expor
 
 If you want to create a new Word layout based such an XML file, then do as follows:
 1. Navigate to the _Report layouts_ page and locate the report.
-1. Choose the _Export report schema_ action to download an XML file with the custom XML.
-1. Open your Word document where you want to inject the report XML. Note that the document cannot already have custom XML for a [!INCLUDE[prod_short](includes/prod_short.md)] report.
+1. Select the _Export report schema_ action to download an XML file with the custom XML.
+1. Open the Word document where you want to inject the report XML. Note that the document cannot already have custom XML for a [!INCLUDE[prod_short](includes/prod_short.md)] report.
 1. Open the **XML Mapping** pane (located in the **Developer** menu) and choose the carret symbol in the dropdown.
 1. In the bottom of the dropdown options, choose *(Add new part...)*.
 1. In the file explorer menu, navigate to the XML file you downloaded and choose **OK**.
