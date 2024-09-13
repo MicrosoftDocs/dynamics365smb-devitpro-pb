@@ -481,24 +481,31 @@ If you need an empty Word document where the Custom XML part has been added, you
 | [Export the custom XML from the _Report layouts_ page and import it in Word](#create-a-new-word-layout-by-importing-the-custom-xml) | 2024 release wave 2 | 
 | [Create a new layout of type Word from an existing report](#create-a-new-layout-of-type-word-from-an-existing-report) | 2024 release wave 2 | 
 
-### Create a new Word layout from Visual Studio Code
+### [From Visual Studio Code](#tab/vscode)
 
 If you have access to the AL code for the report object, add a new layout in the _Rendering_ section and compile. This will generate a new Word file on your developer machine. For more information, see [Example: Create a Word layout report](#example-create-a-word-layout-report).
 
-### Create a new Word layout by importing the custom XML
+### [From client: Import custom XML](#tab/vscode)
 
-Starting from 2024 release wave 2, the _Report layouts_ page includes the _Export report schema_ action that allows you to download an XML file with the custom XML needed in the Word file. 
+[!INCLUDE[2024-releasewave2](includes/2024-releasewave2.md)]
+
+The **Report layouts** page in the client includes the **Export report schema** action that allows you to download an XML file with the custom XML needed in the Word file. 
 
 If you want to create a new Word layout based such an XML file, then do as follows:
-1. Navigate to the _Report layouts_ page and locate the report.
-1. Select the _Export report schema_ action to download an XML file with the custom XML.
-1. Open the Word document where you want to inject the report XML. Note that the document cannot already have custom XML for a [!INCLUDE[prod_short](includes/prod_short.md)] report.
-1. Open the **XML Mapping** pane (located in the **Developer** menu) and choose the carret symbol in the dropdown.
+1. Navigate to the **Report layouts** page and locate the report.
+1. Select **Export report schema** to download an XML file with the custom XML.
+1. Open the Word document that you want to uss for the report.
+
+   > [!IMPORTANT]
+   > The Word document can't already have a custom XML part for a [!INCLUDE[prod_short](includes/prod_short.md)] report.
+
+1. In the **Developer** tab, select **XML Mapping Pane**.
+1. In the  and choose the carret symbol in the dropdown.
 1. In the bottom of the dropdown options, choose *(Add new part...)*.
 1. In the file explorer menu, navigate to the XML file you downloaded and choose **OK**.
 1. The report dataset is now available in the dropdown in the **XML Mapping** pane.
 
-### Create a new layout of type Word from an existing report
+### [From client: Use existing report](#tab/vscode)
 
 Starting from 2024 release wave 2, the _Report layouts_ page includes the ability to create a blank layout from the a report. 
 
@@ -509,6 +516,8 @@ If you want to create a new Word layout based on an existing report, then do as 
 1. The new (empty) layout is now available in the the _Report layouts_ page.
 1. Now download it using the **Export Layout** action.
 1. When you have updated the layout, import it back to [!INCLUDE[prod_short](includes/prod_short.md)], either as a new layout using the *New* action or replace the existing layout using the *Replace Layout* action.
+
+---
 
 ## How to update a layout with the latest report dataset definition
 
