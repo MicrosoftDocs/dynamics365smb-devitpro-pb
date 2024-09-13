@@ -487,31 +487,36 @@ If you have access to the AL code for the report object, add a new layout in the
 
 ### [From client: Import custom XML](#tab/vscode)
 
-[!INCLUDE[2024-releasewave2](includes/2024-releasewave2.md)]
+[!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
 The **Report layouts** page in the client includes the **Export report schema** action that allows you to download an XML file with the custom XML needed in the Word file. 
 
 If you want to create a new Word layout based such an XML file, then do as follows:
-1. Navigate to the **Report layouts** page and locate the report.
-1. Select **Export report schema** to download an XML file with the custom XML.
+
+1. Sign in to Business Central and open the **Report layouts** page.
+1. Select the report in the list that you want to export the XML and then select **Export report schema** to download an XML file with the custom XML.
 1. Open the Word document that you want to uss for the report.
 
    > [!IMPORTANT]
    > The Word document can't already have a custom XML part for a [!INCLUDE[prod_short](includes/prod_short.md)] report.
 
 1. In the **Developer** tab, select **XML Mapping Pane**.
-1. In the  and choose the carret symbol in the dropdown.
-1. In the bottom of the dropdown options, choose *(Add new part...)*.
-1. In the file explorer menu, navigate to the XML file you downloaded and choose **OK**.
+
+   By default, the **Developer** tab isn't present in the ribbon. Learn more [Show the Developer Tab on the Ribbon](/visualstudio/vsto/how-to-show-the-developer-tab-on-the-ribbon). 
+1. In the **XML Mapping** pane, select Custom XML Part: field and then in the dropdown select **(Add new part...)**.
+1. In the file explorer menu, br to the XML file you downloaded and choose **OK**.
 1. The report dataset is now available in the dropdown in the **XML Mapping** pane.
 
 ### [From client: Use existing report](#tab/vscode)
 
-Starting from 2024 release wave 2, the _Report layouts_ page includes the ability to create a blank layout from the a report. 
+[!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
+
+The **Report layouts** page includes the ability to create a blank layout from the a report.
 
 If you want to create a new Word layout based on an existing report, then do as follows:
-1. Navigate to the _Report layouts_ page and locate the report.
-1. Choose the _New_ action.
+
+1. Navigate to the **Report layouts** page and locate the report.
+1. Choose the **New** action.
 1. On the **Add New Layout for a Report** dialog page, fill in the name of your new layout, choose Word as Format Options, and enable the _Create a new layout of type Word from an existing report_ option. Click OK.
 1. The new (empty) layout is now available in the the _Report layouts_ page.
 1. Now download it using the **Export Layout** action.
