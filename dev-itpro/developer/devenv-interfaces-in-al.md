@@ -2,7 +2,7 @@
 title: Interfaces in AL
 description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method.
 author: SusanneWindfeldPedersen
-ms.date: 03/01/2024
+ms.date: 09/13/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -30,7 +30,7 @@ You can declare variables as a given interface to allow passing objects that imp
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-Interfaces in AL can be extended to allow additional changes to interfaces without changing the core functionality. For more information, see [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
+Interfaces in AL can be extended to allow additional changes to interfaces without changing the core functionality. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
 
 ## Snippet support
 
