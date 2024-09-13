@@ -475,12 +475,6 @@ For reports where you expect customers to adjust the layout or use themes to cha
 
 If you need an empty Word document where the Custom XML part has been added, you have a few options depending on your version of [!INCLUDE[prod_short](includes/prod_short.md)].
 
-| Method | Available in |
-| ------ | ------------ |
-| [Create a new Word layout from Visual Studio Code](#create-a-new-word-layout-from-visual-studio-code) | Any version of [!INCLUDE[prod_short](includes/prod_short.md)] |
-| [Export the custom XML from the _Report layouts_ page and import it in Word](#create-a-new-word-layout-by-importing-the-custom-xml) | 2024 release wave 2 | 
-| [Create a new layout of type Word from an existing report](#create-a-new-layout-of-type-word-from-an-existing-report) | 2024 release wave 2 | 
-
 ### [From Visual Studio Code](#tab/vscode)
 
 If you have access to the AL code for the report object, add a new layout in the _Rendering_ section and compile. This will generate a new Word file on your developer machine. For more information, see [Example: Create a Word layout report](#example-create-a-word-layout-report).
