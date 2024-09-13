@@ -28,7 +28,7 @@ If you want to create a new Word layout from Visual Studio Code, do the followin
 
 With Word layouts, you use Word as the editor for the report. Microsoft Word offers various features to help you format and layout your document reports. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that matches your organization. 
 
-In the Word report layout, you specify the fields of the report dataset to include on report and how the fields are arranged. You also define the general format of the report, such as text font and size, margins, and background images. You typically arrange the content of the report by adding tables to the layout. To make general formatting and layout changes, such as changing text font, adding and modifying a table, or removing a data field, just use the basic editing features of Word, like you do with any Word document.
+In the Word report layout, you specify the fields of the report dataset to include on report and how the fields are arranged. You also define the general format of the report, such as text font and size, margins, and background images. You typically arrange the content of the report by adding tables to the layout. To make general formatting and layout changes, such as changing text font, adding and modifying a table, or removing a data field, use the basic editing features of Word, like you do with any Word document.
 
 With the following sections, you can learn more about various concepts that you might want to use in your Word layouts:
 
