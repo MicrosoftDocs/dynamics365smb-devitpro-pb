@@ -4,7 +4,7 @@ description: Integrate with the Azure Machine Learning web service through the p
 author: AndreiPanko
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 06/13/2024
+ms.date: 09/13/2024
 ms.custom: bap-template
 ms.collection:
   - get-started
@@ -81,6 +81,9 @@ In [!INCLUDE [prod_short](includes/prod_short.md)] online, you can use the defau
 ```al
   MLPredictionManagement.InitializeWithKeyVaultCredentials(0);
 ```
+
+> [!NOTE]
+> You can always switch back to resources managed by Microsoft by removing values from API URL and API Key fields.
 
 Once initialized, you must prepare the training dataset. Just like the Forecasting API, the Prediction API can take almost any record as input. But, from a practical perspective, it's recommended to create a buffer table to aggregate the training data. In this case, you can gather data from multiple sources and perform the data transformation as needed. Even in the simple “Christmas Apparel Demo”, the data was coming from multiple sources: Sales prices come from the Item card or the Sales Prices table; gender, material, and sleeve length came from item attributes. So let’s get started by creating the buffer table.
 

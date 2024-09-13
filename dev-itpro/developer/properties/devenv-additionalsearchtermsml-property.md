@@ -54,7 +54,7 @@ page 50101 SearchTestML
     ApplicationArea = All;
     SourceTable = Item;
     UsageCategory = Lists;
-    CaptionMl = ENU = 'Items, DAN ='Varer';
+    CaptionMl = ENU = 'Items', DAN ='Varer';
     AdditionalSearchTermsML = ENU = 'product, merchandise', DAN = 'produkter';
     ...
 }

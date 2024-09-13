@@ -43,7 +43,8 @@ An instance of the [Record](record-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-If one of the fields specified is not a SumIndexField, the operation will be unsuccessful and a runtime error will occur.
+
+For more information, see [CalcSum method (FieldRef)](../fieldref/fieldref-calcsum-method.md).
 
 ## See Also
 [Record Data Type](record-data-type.md)  

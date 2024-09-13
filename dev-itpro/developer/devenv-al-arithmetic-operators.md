@@ -3,9 +3,10 @@ title: Arithmetic operators
 description: Description of the arithmetic operators in AL for Business Central.
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 04/26/2024
+ms.date: 07/01/2024
 ms.author: solsen
 author: KennieNP
+ms.custom: evergreen
 ms.collection: get-started
 ---
 
