@@ -485,7 +485,7 @@ If you need an empty Word document where the Custom XML part has been added, you
 
 If you have access to the AL code for the report object, add a new layout in the _Rendering_ section and compile. This will generate a new Word file on your developer machine. For more information, see [Example: Create a Word layout report](#example-create-a-word-layout-report).
 
-### [From client: Import custom XML](#tab/vscode)
+### [From client: Import custom XML](#tab/cusotmxml)
 
 [!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
@@ -508,7 +508,7 @@ If you want to create a new Word layout based such an XML file, then do as follo
 
    The report dataset is now available for selection in the **Custom XML Part:** field of the **XML Mapping** pane.
 
-### [From client: Use existing report](#tab/vscode)
+### [From client: Use existing report](#tab/exitingreport)
 
 [!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
