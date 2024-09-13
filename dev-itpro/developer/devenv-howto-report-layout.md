@@ -311,9 +311,9 @@ Learn more, including an example, in [WordMergeDataItem Property](properties/dev
 
 ## How to do totals in Word layouts
 
-Compared to the layout types Excel or RDL, it isn't possible to do calculations in a Word layout. If you want to add totals to your report, you need to calculate these in AL variables in the report object and then use a data item based on an Integer table to expose them to the XML Mapping pane in Word.
+Compared to the layout types Excel or RDL, it isn't possible to do calculations in a Word layout. If you want to add totals to your report, you need to calculate them in AL variables in the report object and then use a data item based on an Integer table to expose them to the XML Mapping pane in Word.
 
-The following example illustrates how to code this. The example is based on report 1306 "Standard Sales - Invoice" from the base application.
+The following example illustrates how to code totals. The example is based on report 1306 "Standard Sales - Invoice" from the base application.
 
 ```al
 report 50142 "My Sales Invoice report"
@@ -467,25 +467,23 @@ Learn more about report limits in [Report limits](devenv-report-object.md#report
 
 ## Difference between RDL and Word layouts
 
-If you're switching from developing reports with RDL layouts to using Word layouts, you might need to change your mindset on how you develop reports and their layouts. RDL allows you to dynamically change many properties in the layout. This isn't possible in Word. For many logic-related conditions, instead you have to do them in the report dataset in AL and then utilize the methods outlined in this article. 
+If you're switching from developing reports with RDL layouts to using Word layouts, you might need to change your mindset on how you develop reports and their layouts. RDL allows you to dynamically change many properties in the layout but it isn't possible in Word. For many logic-related conditions, instead you have to do them in the report dataset in AL and then utilize the methods outlined in this article. 
 
 For reports where you expect customers to adjust the layout or use themes to change the overall look-and-feel of the document, consider using a Word layout over an RDL layout. 
 
 ## How to create a new Word layout document from scratch
 
-If you need an empty Word document where the Custom XML part has been added, you have a few options depending on your version of [!INCLUDE[prod_short](includes/prod_short.md)].
+If you need an empty Word document that includes the custom XML part for a report's dataset, you have a few options depending on your [!INCLUDE[prod_short](includes/prod_short.md)] version:
 
 ### [From Visual Studio Code](#tab/vscode)
 
-If you have access to the AL code for the report object, add a new layout in the _Rendering_ section and compile. This will generate a new Word file on your developer machine. For more information, see [Example: Create a Word layout report](#example-create-a-word-layout-report).
+If you have access to the AL code for the report object, add a new layout in the _Rendering_ section and compile. This generates a new Word file on your developer machine. Learn more [Example: Create a Word layout report](#example-create-a-word-layout-report).
 
-### [From client: Import custom XML](#tab/cusotmxml)
+### [From client: Import custom XML](#tab/customxml)
 
 [!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
-The **Report layouts** page in the client includes the **Export report schema** action that allows you to download a report schema as a Microsdot Word custom XML file, which you can use to create Word layouts. 
-
-If you want to create a new Word layout based such an XML file, then do as follows:
+The **Report layouts** page in the client includes the **Export report schema** action that allows you to download a report schema/dataset as a Microsoft Word custom XML file. You can then use the file to create a new Word layout. This file makes it easier to convert an RDL layout or a customer-supplied Word file into a Word layout for a report.
 
 1. Sign in to Business Central and open the **Report layouts** page.
 1. Select the report in the list that you want to export the XML and then select **Export report schema** to download an XML file with the custom XML.
@@ -502,32 +500,34 @@ If you want to create a new Word layout based such an XML file, then do as follo
 
    The report dataset is now available for selection in the **Custom XML Part:** field of the **XML Mapping** pane.
 
-### [From client: Use existing report](#tab/exitingreport)
+### [From client: Use existing report](#tab/existingreport)
 
 [!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
-The **Report layouts** page includes the ability to create a blank layout from the a report.
+The **Report layouts** page includes the **New** action that you can use to create a blank Word layout from an existing report. The blank layout contains a custom XM part based on the reports dataset. 
 
-If you want to create a new Word layout based on an existing report, then do as follows:
+1. Sign in to [!INCLUDE[prod_short](includes/prod_short.md)] and open the **Report layouts** page.
+1. Select the report in the list and then select **New**.
+1. In the **Add New Layout for a Report** page, fill in the name of your new layout, set **Format Options** to Word, turn on the **Create a Blank Layout from the report object** toggle switch, and select **OK**.
 
-1. Navigate to the **Report layouts** page and locate the report.
-1. Choose the **New** action.
-1. On the **Add New Layout for a Report** dialog page, fill in the name of your new layout, choose Word as Format Options, and enable the _Create a new layout of type Word from an existing report_ option. Click OK.
-1. The new (empty) layout is now available in the the _Report layouts_ page.
+    The new (empty) layout is now available in the **Report layouts** page.
 1. Now download it using the **Export Layout** action.
-1. When you have updated the layout, import it back to [!INCLUDE[prod_short](includes/prod_short.md)], either as a new layout using the *New* action or replace the existing layout using the *Replace Layout* action.
+1. After you update the layout, import it back to [!INCLUDE[prod_short](includes/prod_short.md)], either as a new layout using the *New* action or replace the existing layout using the *Replace Layout* action.
 
 ---
 
 ## How to update a layout with the latest report dataset definition
 
-Starting from 2024 release wave 2, the _Report layouts_ page includes the ability to update a layout with the latest report dataset definition. 
+[!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
-If you want to update a layout with the latest report dataset definition, then do as follows:
-1. Navigate to the _Report layouts_ page and locate the report.
-1. Choose the _Update and Export Layout_ action.
-1. The updated layout is now downloaded to your computer.
-1. When you have updated the layout, import it back to [!INCLUDE[prod_short](includes/prod_short.md)], either as a new layout using the *New* action or replace the existing layout using the *Replace Layout* action.
+The **Report layouts** page in the client, helps you update a layout with the latest report dataset definition.
+
+1. Sign in to [!INCLUDE[prod_short](includes/prod_short.md)] and open the **Report layouts** page.
+1. Select the report in the list and then select **Update and Export Layout**.
+
+    The updated layout file is downloaded to your computer.
+1. Open the updated layout file in Word. Then make changes that want and save the file
+1. In [!INCLUDE[prod_short](includes/prod_short.md)], import the updated layout either as a new layout, by using the **New** action, or as a replacement to the existing layout, by the **Replace Layout** action.
 
 
 ## How to convert an RDL layout to a Word layout
