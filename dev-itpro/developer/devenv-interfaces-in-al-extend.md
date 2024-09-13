@@ -2,7 +2,7 @@
 title: Extending interfaces in AL
 description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method and extended for flexibility and adaptability.
 author: SusanneWindfeldPedersen
-ms.date: 06/27/2024
+ms.date: 09/13/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -17,9 +17,9 @@ An interface in AL is a syntactical contract that can be implemented by a nonabs
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, extensible interfaces in AL are supported. Extending interfaces enables you to create a flexible and adaptable extension. You can add new functionality without altering the core system, which can save time and resources and you reduce the risk of introducing errors into the existing codebase.
 
-When you declare an interface, you can extend one or more existing interfaces. When you implement an interface that extends other interfaces, the implementor must also implement all methods from all extended interfaces.
+When you declare an interface, you can extend one or more existing interfaces. The new interface will inherit all the methods from the interfaces it extends. So, when you implement an interface that extends other interfaces, the implementing class or object must provide implementations for all the methods defined in the extended interfaces, in addition to any methods defined in the new interface itself. This ensures that the implementor adheres to the contract specified by all the interfaces involved.
 
-The extensibile interfaces also work with the testing and casting operators `is` and `as`, which are new additions to the AL language with Business Central 2024 release wave 2. For more information, see [Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md).
+Extensible interfaces in AL also support the use of the testing and casting operators `is` and `as`. The `is` operator allows you to check if an object implements a specific interface, while the `as` operator enables you to cast an object to a specific interface type. This functionality enhances the flexibility and robustness of your code because it allows dynamic type checking and casting. Learn more in [Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md).
 
 ## Syntax
 
