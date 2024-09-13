@@ -8,6 +8,7 @@ ms.topic: conceptual
 author: jswymer
 ms.custom: 
     - bap-template
+    - evergreen
 ---
 
 # Update 24.3 for Microsoft Dynamics 365 Business Central online 2024 release wave 1
