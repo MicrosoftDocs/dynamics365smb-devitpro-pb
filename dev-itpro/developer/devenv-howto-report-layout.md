@@ -489,13 +489,13 @@ If you have access to the AL code for the report object, add a new layout in the
 
 [!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
-The **Report layouts** page in the client includes the **Export report schema** action that allows you to download an XML file with the custom XML needed in the Word file. 
+The **Report layouts** page in the client includes the **Export report schema** action that allows you to download a report schema as a Microsdot Word custom XML file, which you can use to create Word layouts. 
 
 If you want to create a new Word layout based such an XML file, then do as follows:
 
 1. Sign in to Business Central and open the **Report layouts** page.
 1. Select the report in the list that you want to export the XML and then select **Export report schema** to download an XML file with the custom XML.
-1. Open the Word document that you want to uss for the report.
+1. Open the Word document that you want to use for the report.
 
    > [!IMPORTANT]
    > The Word document can't already have a custom XML part for a [!INCLUDE[prod_short](includes/prod_short.md)] report.
@@ -503,9 +503,10 @@ If you want to create a new Word layout based such an XML file, then do as follo
 1. In the **Developer** tab, select **XML Mapping Pane**.
 
    By default, the **Developer** tab isn't present in the ribbon. Learn more [Show the Developer Tab on the Ribbon](/visualstudio/vsto/how-to-show-the-developer-tab-on-the-ribbon). 
-1. In the **XML Mapping** pane, select Custom XML Part: field and then in the dropdown select **(Add new part...)**.
-1. In the file explorer menu, br to the XML file you downloaded and choose **OK**.
-1. The report dataset is now available in the dropdown in the **XML Mapping** pane.
+1. In the **XML Mapping** pane, select the **Custom XML Part:** field, and then in the dropdown select **(Add new part...)**.
+1. Browse for the XML file that you downloaded and then select **Open**.
+
+   The report dataset is now available for selection in the **Custom XML Part:** field of the **XML Mapping** pane.
 
 ### [From client: Use existing report](#tab/vscode)
 
