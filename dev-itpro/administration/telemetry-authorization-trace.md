@@ -64,7 +64,7 @@ Occurs when a user has been successfully authorized. This data is not emitted fo
 |Value|Description|See more|
 |-----|-----------|--------|
 |Delegated_admin|Indicates that the user is a delegated administrator on the tenant. Delegated administrators are typically reserved for partners. Delegated administrator privileges are granted to users by the customer. You grant these privileges by setting up a Partner Relationship in the Microsoft Partner Center.|[Delegated Administrator Access to Business Central Online](delegated-admin.md)<br /><br />[Customers delegate administration privileges to partners](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)|
-|Internal_Admin|Indicates that the user is an internal administrator on the tenant. As an internal administrator, the user is assigned the **Global admin** role in the Microsoft 365 admin center.|[Administration as an internal administrator in Business Central](tenant-administration.md#administration-as-an-internal-administrator)<br /><br />[Assign admin roles in Microsoft 365 admin center](/office365/admin/add-users/assign-admin-roles)|
+|Internal_Admin|Indicates that the user is an internal administrator on the tenant. As an internal administrator, the user is typically assigned the **Dynamics 365 Administrator** or **Dynamics 365 Business Central Administrator** role in the Microsoft 365 admin center.|[Administration as an internal administrator in Business Central](tenant-administration.md#administration-as-an-internal-administrator)<br /><br />[Assign admin roles in Microsoft 365 admin center](/office365/admin/add-users/assign-admin-roles)|
 |Normal user|Indicates that the user is a normal user in the tenant, based on the license.|[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)|
 
 <!--
@@ -167,7 +167,8 @@ Occurs when the company has opened successfully. This data is emitted both for o
 |authorizationStatus|**Success**|
 |aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
 |clientType|Specifies the type of client that opened the session, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the session was created.|
+|companyId|Specifies the ID of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the session was created. This dimension is available from version 25 (and was backported to versions 22, 23, and 24, where it is available in the latest CU.) |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
@@ -210,6 +211,7 @@ Occurs when a company has failed to open. This data is emitted both for online a
 |---------|-----|
 |authorizationStatus|**Failed**|
 |companyName|Specifies the name of the company that the user tried to open.|
+|companyId|Specifies the ID of the company that the user tried to open. This dimension is available from version 25 (and was backported to versions 22, 23, and 24, where it is available in the latest CU.) |
 |failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#opencompanyfailures) section for details.|
 |eventId|**RT0002**|
 

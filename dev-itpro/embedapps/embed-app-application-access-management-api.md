@@ -4,7 +4,6 @@ description: Learn about the Application Access Management API.
 author: jswymer
 ms.author: jswymer
 ms.topic: conceptual
-
 ms.custom: bap-template
 ms.reviewer: jswymer
 ms.search.keywords: application, tenant, management, access, API
@@ -14,7 +13,7 @@ ms.date: 08/24/2023
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-As a **Delegated Global Administrator** or as a **Delegated Dynamics 365 Administrator**, you can manage access to application families available in the service. The application family is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[embedapp](../developer/includes/embedapp.md)] applications that may be provisioned through the service. 
+You can manage access to application families available in the service if you have at least the delegated **Dynamics 365 Administrator** role. The application family is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[embedapp](../developer/includes/embedapp.md)] applications that may be provisioned through the service.
 
 > [!NOTE]
 > This API endpoint can only be used by delegated administrators. Guest users in the customer tenant can't use this API endpoint, even if they are also a delegated administrator. Service-to-service authentication using a Microsot Entra app authorized in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] isn't supported.

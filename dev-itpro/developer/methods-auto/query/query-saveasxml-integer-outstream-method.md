@@ -1,6 +1,6 @@
 ---
 title: "Query.SaveAsXml(Integer, OutStream) Method"
-description: "Saves the resulting data set of a query as an .xml file."
+description: "Saves the resulting data set of a query xml into a stream."
 ms.author: solsen
 ms.date: 05/14/2024
 ms.topic: reference
@@ -40,47 +40,48 @@ The stream that you want to save the query as XML to.
 
 ## Remarks  
 
-When the **SaveAsXML** method is called, the dataset is generated and then saved in XML format in the file and location that is designated by the *FileName* parameter.  
+When the **SaveAsXML** method is called, the dataset is generated as XML and streamed to the OutStream object designated by the *OutStream* parameter.  
 
-The **SaveAsXML** method can be called at any place in the code and does not require that the **Close**, **Open**, or **Read** methods are called before it. When the **SaveAsXML** method is called, a new instance of the query is created. The query is implicitly opened, read, and closed. If there is currently a dataset in the opened state when the **SaveAsXML** method is called, then that instance is closed. This means that the following code is unauthorized because the query is not open on the second **Read** call.  
+## **Open**, **Read**, or **Close** semantics with the **SaveAsXML** method
 
-```al
+The **SaveAsXML** method can be called at any place in the code and does not require that the **Open**, **Read**, or **Close** methods are called before it. When the **SaveAsXML** method is called, a new instance of the query is created. The query is implicitly opened, read, and closed. If there is currently a dataset in the opened state when the **SaveAsXML** method is called, then that instance is closed. This means that the following code is in-correct because the query is not open on the second **Read** call.  
+
+```al 
+// Not correct way to use Query.SaveAsXML
 Query.Open;  
 Query.Read;  
-Query.SaveAsXML('c:\test.xml');  
+Query.SaveAsXML(myOutStream);  
+// Query is now closed, so next read call will fail
 Query.Read;   
 ```  
 
 The correct code for this example is as follows.  
 
 ```al
-Query.Open;  
-Query.Read;  
-Query.SaveAsXML('c:\test.xml');  
+// Correct way to use Query.SaveAsXML
+Query.SaveAsXML(myOutStream);  
 Query.Open;  
 Query.Read;   
 ```  
 
+
 ## Example
 
-The following example shows how to save a query with the name **My Customer Query** as an .xml file. The file is given the name **myquery.xml** and is saved on the c: drive of the computer running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
-
+The following example shows how to get data from a query with the name **My Customer Query** into an outstream for further processing. 
 
 ```al
 var
     MyCustomerQuery: Query "My Customer Query";
+    myOutStream: OutStream;
     OK: Boolean;
     Text000: Label 'Query was not saved.';
 begin
-    OK := MyCustomerQuery.SaveAsXML('c:\myquery.xml');  
+    OK := MyCustomerQuery.SaveAsXML(Query::MyCustomerQuery, myOutStream);  
     if not OK then
           Error(Text000);  
 end;
 ```  
 
-If the file cannot be saved, then the follow message appears:  
-
-**Query not saved.**
 
 ## See Also
 [Query Data Type](query-data-type.md)  

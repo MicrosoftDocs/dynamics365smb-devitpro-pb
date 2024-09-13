@@ -3,9 +3,9 @@ title: Get started building apps
 description: Learn how you can get started building apps for Dynamics 365 Business Central in six easy steps.
 author: SusanneWindfeldPedersen
 ms.topic: conceptual
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.author: kurtju
-ms.date: 02/06/2024
+ms.date: 05/07/2024
 ms.collection: get-started
 ---
 
@@ -74,59 +74,8 @@ After your Regional Operational Center process your Agreements and Object Range 
 ### Register your unique prefix or suffix
 
 In your extension, the name of each object must contain [a prefix or suffix](../../compliance/apptest-prefix-suffix.md) that is registered for your publisher name. For more information about the use of affixes and the registration process, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
- 
-## Step 4: Getting access to preview bits
 
-Get access to preview builds by joining Microsoft Collaborate.
-
-In Microsoft Collaborate, you get access to a set of [!INCLUDE [prod_short](../includes/prod_short.md)] builds:
-
-- The current major version
-- An upcoming major version
-- Daily builds
-
-You must have the following prerequisites to register on Microsoft Collaborate:
-
-- Microsoft Entra ID.
-
-  > [!NOTE]
-  > If you have Microsoft 365, then your company most likely has Microsoft Entra ID.
-
-- Microsoft Entra Global Administrator permission
-
-  > [!NOTE]
-  > To find out if your company has a Microsoft Entra account, check with your system administrator.
-
-### Step 4 A: How your Global Administrator must register for Collaborate
-
-Only your company's Global Administrator can start the onboarding to Collaborate. They must register at [https://aka.ms/Collaborate](https://aka.ms/Collaborate), choose the **Get Started** action, and then complete the registration form.  
-
-The administrator can then add the relevant colleagues.  
-
-#### Optional Step: Add your coworkers to Microsoft Collaborate
-
-To add coworkers:
-
-1. Sign in to Microsoft Collaborate with your Global Administrator account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
-
-2. Choose the settings :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon."::: icon in the top-right corner of the page,  got to on account settings, and choose **user management**.
-
-3. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now, you can search for one or more users that you want to add to Collaborate. To add them, you need to choose them from the menu, and then choose the grey **ADD SELECTED** button. Make sure to add them as a 'Manager (Collaborate)' for them to have the right permissions. 
-
-4. Once you successfully add your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
-
-### Step 4 B: Getting access to the available builds and engagements
-
-Once you successfully register on Microsoft Collaborate, Microsoft must assign you to the right programs, and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. The following table illustrates the type of information that you must submit:
-
-| **Publisher Display Name** | **MPN ID** | **First Name** | **Last Name** | **Work account Email** |
-|--|--|--|--|--|
-| Contoso | 12345 | Eugenia | Lopez | Eugenia.Lopez@Contoso.com |
-| Contoso | 12345 | Quincy | Watson | Quincy.Watson@Contoso.com |
-
-After sending the email, expect a response from Microsoft within 1-2 business days.
-
-## Step 5: Resources while you develop your solution
+## Step 4: Resources while you develop your solution
 
 In the following section, you find some guiding resources on how to develop your apps for [!INCLUDE [prod_short](../includes/prod_short.md)].
 
@@ -156,7 +105,7 @@ All partners are recommended to set up DevOps processes to ensure that this vali
 
 You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for GitHub: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
 
-## Step 6: Publish your app in the Microsoft commercial marketplace
+## Step 5: Publish your app in the Microsoft commercial marketplace
 
 Once your app is ready for submission, you can list your app in the Microsoft commercial marketplace by submitting it in [Partner Center](https://partner.microsoft.com/dashboard/commercial-marketplace/overview). For more information, see [Create a Dynamics 365 Business Central offer](/azure/marketplace/partner-center-portal/create-new-business-central-offer).
 

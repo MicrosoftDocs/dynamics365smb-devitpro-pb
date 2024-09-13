@@ -1,11 +1,10 @@
 ---
-title: "Rich Text and content controls"
+title: Rich Text and content controls
 description: How to create a functioning Rich Text Editor using ExtendedDataType and a table blob field in AL for Business Central.
 author: EmilDamsbo
 ms.author: solsen
-ms.date: 11/24/2023
+ms.date: 07/03/2024
 ms.reviewer: solsen
-
 ms.topic: conceptual
 ---
 
@@ -51,7 +50,7 @@ table 50100 MyTable
     begin
         Rec.CalcFields(Rec.RichTextBlob);
         Rec.RichTextBlob.CreateInStream(InStream);
-        InStream.ReadText(TextValue);
+        InStream.Read(TextValue);
 
         exit(TextValue);
     end;
@@ -66,7 +65,7 @@ table 50100 MyTable
         OutStream: OutStream;
     begin
         Rec.RichTextBlob.CreateOutStream(OutStream);
-        OutStream.WriteText(RichText);
+        OutStream.Write(RichText);
         Rec.Modify();
     end;
 }
