@@ -4,7 +4,7 @@ description: Integrate with the Azure Machine Learning web service through the f
 author: AndreiPanko
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 06/13/2024
+ms.date: 09/13/2024
 ms.custom: bap-template
 ms.collection:
   - get-started
@@ -79,6 +79,9 @@ begin
   TimeSeriesManagement.Initialize(URITxt, KeyTxt, 0, false);
  
 ```
+
+> [!NOTE]
+> You can always switch back to resources managed by Microsoft by removing values from API URL and API Key fields.
 
 If you pass empty strings, the system uses the default end-point, but that only works for [!INCLUDE [prod_short](includes/prod_short.md)] online: 
 
