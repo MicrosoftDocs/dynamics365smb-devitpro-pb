@@ -98,6 +98,10 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 
 For more information on report limits, see [Report limits](../developer/devenv-report-object.md#report-limits).
 
+## <a name="Excel"></a>Excel limits
+
+Excel has limits on the total number of rows and columns on a worksheet. This means that [!INCLUDE[prod_short](../includes/prod_short.md)] features such as Open in Excel, Edit in Excel, Get report data in Excel without a layout, and Excel layouts cannot exceed these limits. For more information, see [Excel specifications and limits](https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3). 
+
 ## Query limits
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Limit|  
