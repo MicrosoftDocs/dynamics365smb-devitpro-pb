@@ -344,7 +344,7 @@ For more information on how to configure report limits in [!INCLUDE[prod_short](
 
 
 > [!NOTE]
-> For Excel layouts and the ability to get report data in Excel without a layout, you also need to take Excel limits into consideration. For more information, see [Excel limits](../administration/operational-limits-online.md#excel-limits).
+> For Excel layouts and the ability to get report data in Excel without a layout, you also need to take Excel limits into consideration. For more information, see [Excel limits](../administration/operational-limits-online.md#Excel).
 
 
 
