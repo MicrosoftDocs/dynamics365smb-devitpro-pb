@@ -863,11 +863,11 @@ Example `200 OK` response:
       "id": "552d3cb2-144e-4195-9a92-1043c4f483e9", // Id of the operation used for tracking
       "type": "environmentAppInstall", // Type of operation 
       "status": "succeeded", // Status of operation (enum | "Queued", "Scheduled", "Running", "Succeeded", "Failed", "Canceled", "Skipped") 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", // AAD tenant ID for which the operation was executed 
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", // AAD tenant ID for which the operation was executed 
       "createdOn": "2021-03-22T15:45:46.537Z", // Date and time the request was created 
       "errorMessage": "", // Error message for failed operations 
       "parameters": { // Additional parameters for the operation, specific to every operation type 
-        "appId": "1bb96677-5112-4566-b742-12eebbb9a058", 
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888", 
         "targetAppVersion": "17.0.3.0", 
         "countryCode": "US", 
         "allowPreviewVersion": true, 
@@ -883,7 +883,7 @@ Example `200 OK` response:
       "id": "5fe4ac38-a523-4c1f-80db-acd2cf848c09", 
       "type": "environmentRename", 
       "status": "succeeded", 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", 
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", 
       "createdOn": "2021-03-16T18:57:36.223Z", 
       "startedOn": "2021-03-16T18:57:39.053Z", 
       "completedOn": "2021-03-16T18:57:47.867Z", 
@@ -933,11 +933,11 @@ Example `200 OK` response:
       "id": "552d3cb2-144e-4195-9a92-1043c4f483e9", // Id of the operation used for tracking
       "type": "environmentAppInstall", // Type of operation 
       "status": "succeeded", // Status of operation (enum | "Queued", "Scheduled", "Running", "Succeeded", "Failed", "Canceled", "Skipped") 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", // AAD tenant ID for which the operation was executed 
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", // AAD tenant ID for which the operation was executed 
       "createdOn": "2021-03-22T15:45:46.537Z", // Date and time the request was created 
       "errorMessage": "", // Error message for failed operations 
       "parameters": { // Additional parameters for the operation, specific to every operation type 
-        "appId": "1bb96677-5112-4566-b742-12eebbb9a058", 
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888", 
         "targetAppVersion": "17.0.3.0", 
         "countryCode": "US", 
         "allowPreviewVersion": true, 
@@ -953,7 +953,7 @@ Example `200 OK` response:
       "id": "5fe4ac38-a523-4c1f-80db-acd2cf848c09", 
       "type": "environmentRename", 
       "status": "succeeded", 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", 
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", 
       "createdOn": "2021-03-16T18:57:36.223Z", 
       "startedOn": "2021-03-16T18:57:39.053Z", 
       "completedOn": "2021-03-16T18:57:47.867Z", 

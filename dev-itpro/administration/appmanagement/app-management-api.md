@@ -423,7 +423,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
             "status": "Uploaded",
             "dependencies": [
                 {
-                    "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+                    "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
                     "name": "Example Dependency",
                     "publisher": "Other Publisher",
                     "version": "1.0.0.0"
@@ -494,7 +494,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
     "status": "Uploaded",
     "dependencies": [
         {
-            "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+            "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
             "name": "Example Dependency",
             "publisher": "Other Publisher",
             "version": "1.0.0.0"
@@ -570,7 +570,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
     "status": "Uploaded",
     "dependencies": [
         {
-            "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+            "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
             "name": "Example Dependency",
             "publisher": "Other Publisher",
             "version": "1.0.0.0"
@@ -644,7 +644,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
     "status": "Uploaded",
     "dependencies": [
         {
-            "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+            "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
             "name": "Example Dependency",
             "publisher": "Other Publisher",
             "version": "1.0.0.0"
