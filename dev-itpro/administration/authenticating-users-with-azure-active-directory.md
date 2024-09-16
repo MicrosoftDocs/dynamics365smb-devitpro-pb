@@ -202,7 +202,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         |Parameter|Description|
         |-|-|-|
         |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, like `aaaabbbb-0000-cccc-1111-dddd2222eeee` or `CRONUSInternationLtd.onmicrosoft.com`.|
-        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44445555-eeee-6666-ffff-7777aaaa8888` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
         |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.|
 
        > [!IMPORTANT]
@@ -245,7 +245,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         |Parameter|Description|
         |-|-|-|
         |`<AADTENANTID>`|Set this parameter to one of the following values:<ul><li>`{AADTENANTID}`- Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant you'll mount will use its own Microsoft Entra tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Microsoft Entra tenant. You'll specify the Microsoft Entra tenant ID when you mount the tenant.</li><li>`common`- Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Microsoft Entra ID configured as a multitenant application, but tenants will use the same Microsoft Entra tenant. </li></ul>|
-        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44445555-eeee-6666-ffff-7777aaaa8888` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
         |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.<br /><br />`https://cronusinternationltd.onmicrosoft.com/BC190/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Microsoft Entra authentication service where to send the authentication token. If you don't specify the `wreply` parameter, it will be deducted from the URL in the browser.|
 
        > [!IMPORTANT]
@@ -331,7 +331,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         |Parameter|Description|
         |-|-|-|
         |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, for example `aaaabbbb-0000-cccc-1111-dddd2222eeee` or `CRONUSInternationLtd.onmicrosoft.com`.|
-        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44445555-eeee-6666-ffff-7777aaaa8888` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
         |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.|
 
        > [!IMPORTANT]

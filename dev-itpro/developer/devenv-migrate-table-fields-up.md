@@ -109,7 +109,7 @@ You now create a new extension that contains the customization you want to move 
 5. Compile the extension package.
 6. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
-    For purposes of the example, the ID is `44444444-cccc-5555-dddd-666666666666`. The value for your extension will be different. 
+    For purposes of the example, the ID is `44445555-eeee-6666-ffff-7777aaaa8888`. The value for your extension will be different. 
 
 ## Create new empty version of transition extension (Ext Z v2)
 
@@ -124,7 +124,7 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
             "id": "66667777-aaaa-8888-bbbb-9999cccc0000"
         }
         { 
-            "id": "44444444-cccc-5555-dddd-666666666666"
+            "id": "44445555-eeee-6666-ffff-7777aaaa8888"
         }
     ] 
     } 

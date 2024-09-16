@@ -162,7 +162,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance 240 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666;https://api.businesscentral.dynamics.com"
+        Set-NAVServerConfiguration -ServerInstance 240 -KeyName ValidAudiences -KeyValue "44445555-eeee-6666-ffff-7777aaaa8888;https://api.businesscentral.dynamics.com"
         ```
 
     2. Set the `ADOpenIdMetadataLocation` parameter for version 22 and later or `ClientServicesFederationMetadataLocation` parameter for version 21 and earlier.
@@ -234,7 +234,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         |Parameter|Description|
         |-|-|-|
         |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, like `aaaabbbb-0000-cccc-1111-dddd2222eeee` or `CRONUSInternationLtd.onmicrosoft.com`.|
-        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44445555-eeee-6666-ffff-7777aaaa8888` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
         |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.|
 
        > [!IMPORTANT]
@@ -293,7 +293,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
     For example:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadApplicationId "44444444-cccc-5555-dddd-666666666666"
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadApplicationId "44445555-eeee-6666-ffff-7777aaaa8888"
     ```
 
 3. Set the `AadAuthorityUri` key.
