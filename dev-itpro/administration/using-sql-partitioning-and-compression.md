@@ -87,15 +87,15 @@ The following steps will partition the table on the**Posting Date** field, with 
 
 5. In the Transact-SQL Editor, partition table **My Ledger Entry** by using the previously defined partition scheme.
 
-    For illustration purposes, the extension ID in this example is `$11111111-aaaa-2222-bbbb-333333333333`.
+    For illustration purposes, the extension ID in this example is `$00001111-aaaa-2222-bbbb-3333cccc4444`.
     
     ```sql
-    ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333]  
-    DROP CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333$Key1]
+    ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$00001111-aaaa-2222-bbbb-3333cccc4444]  
+    DROP CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$00001111-aaaa-2222-bbbb-3333cccc4444$Key1]
     GO
     
-    ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333]
-    ADD CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333$Key1] PRIMARY KEY CLUSTERED
+    ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$00001111-aaaa-2222-bbbb-3333cccc4444]
+    ADD CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$00001111-aaaa-2222-bbbb-3333cccc4444$Key1] PRIMARY KEY CLUSTERED
     (
     -- Include all fields that are in the clustered index definition. Don't add or omit any fields.
     [Entry No_], [Posting Date]

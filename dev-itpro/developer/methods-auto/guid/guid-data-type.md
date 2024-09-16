@@ -40,8 +40,8 @@ MyTableRec.MyGuid  :=  MyTableRec.MyText;
 
 The supported formats of `MyText` are:
 
-`'11111111-1111-1111-1111-111111111111'`
-`'{22222222-2222-2222-2222-222222222222}'`
+`'aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb'`
+`'{bbbbbbbb-1111-2222-3333-cccccccccccc}'`
 
 ## Methods and properties
 
