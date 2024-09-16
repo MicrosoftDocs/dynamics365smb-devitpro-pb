@@ -2,10 +2,11 @@
 title: Country/regional availability and supported languages
 description: Overview of availability and supported languages.
 author: sorenfriisalexandersen
-ms.date: 01/25/2024
+ms.date: 08/26/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: altotovi
+ms.custom: references_regions
 ---
 
 # Country/regional availability and supported languages
@@ -229,7 +230,7 @@ This table gives an overview of supported platform and application languages, an
 |-----------|---------|--------|--------|----| 
 |Albanian (Albania)|sq-AL|-|Partner, Available on AppSource||
 |Bosnian (Bosnia and Herzegovina)|bs-BA|-|Partner, Available on AppSource|| 
-|Catalan (Spain)|ca-ES|-|Partner, Available on AppSource||
+|Catalan|ca-ES|-|Partner, Available on AppSource||
 |Bulgarian (Bulgaria)|bg-BG|Available|Partner, Available on AppSource||
 |Chinese (Simplified, China)|zh-CN|Available|Partner, Available on AppSource||
 |Chinese (Traditional, Hong Kong SAR)|zh-HK|Available|Partner, Available on AppSource|| 
