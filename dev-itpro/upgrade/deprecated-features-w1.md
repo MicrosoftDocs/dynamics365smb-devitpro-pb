@@ -3,7 +3,7 @@ title: Deprecated Features in the Base App
 description: Describes the features that have been moved, removed, or replaced in the W1 version.
 author: brentholtorf
 ms.author: bholtorf
-ms.date: 03/26/2024
+ms.date: 09/16/2024
 ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.custom: bap-template
@@ -27,6 +27,24 @@ The following features will be removed in 2026 release wave 1.
 |-----------------------------|-----|
 |Replaced| With [!INCLUDE[prod_short](../includes/prod_short.md)] you can create Connect apps. Connect apps establish a point-to-point connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and a 3rd party solution or service using the standard REST API to interchange data. <br><br>In 2020 release wave 2 we introduced a new improved API where all complex properties are replaced with first-level properties or navigation properties. This change significantly improves API performance, as complex fields were previously calculated at runtime. In API v2.0, all multipart keys and non-GUID keys are replaced with unique GUID keys, and entities can be retrieved using the SystemId, which is immutable, platform-enforced, and indexed. This change improves auditing and API reading performance.<br><br>The API (v1.0) will be removed in 2026 release wave 1.<br><br>The API v2.0 contains all the functionality from API v1.0, so migration should be possible. If this isn't the case, reach out to us via [https://github.com/microsoft/ALAppExtensions](https://github.com/microsoft/ALAppExtensions).<br><br>To learn about the replacement feature, go to [Transitioning from API v1.0 to API v2.0](../api-reference/v2.0/transition-to-api-v2.0.md). |
 
+## Changes in 2024 release wave 2
+
+The following features are marked as `obsolete:pending` in 2024 release wave 2.
+
+### The Create New Company assisted setup uses different logic to populate setup and evaluation data
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| As announced in the [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly), starting with 2024 release wave 2 administrators have more flexibility to update environments in a way that suits their needs.</br>To make extended periods for major releases and optional minor updates possible, there some changes in how databases are prepared. Instead of using configuration packages to populate evaluation and production companies with demo and setup data, it uses code from the **Contoso Coffee demo data** app. The Contoso Coffee demo data app was introduced several releases ago and covered multiple gaps in demo and setup data, such as Manufacturing, Service, and Warehouse. With this release, it gets remaining demo and setup data, that you earlier saw in the **Configuration Packages** page, when choose the **Import Predefined Package** action.</br>As predefined configuration packages won’t be available, the logic that initialize new company with data also has to change. The **Create New Company** assisted setup will get some modifications that might affect your extension. You can find details in the table below |
+|Object| Removed |
+|Enum 9120 "Company Data Type (Internal)"|the object itself|
+|Enum 9121 "Company Data Type (Sandbox)"|the object itself|
+|Enum 9122 "Company Data Type (Production)"|the object itself|
+|Codeunit 1799 "Import Config. Package File"|the object itself|
+|Codeunit 1800 "Assisted Company Setup"|Procedures:</br>WaitForPackageImportToComplete, </br>FillCompanyData, </br>ExistsConfigurationPackageFile, </br>FindConfigurationPackageFile, </br>SetUpNewCompany</br></br>Events:</br>OnAfterAssistedCompanySetupStatusEnabled,</br>OnBeforeScheduleTask|
+|Codeunit 1805 "Import Config. Package Files"| the object itself|
+|Table 1802 "Assisted Company Setup Status"|Fields:</br> Import Failed,</br> Package Imported</br></br>Procedure: SetEnabled|
+|Page 9192 "Company Creation Wizard"|Events:</br>OnBeforeValidateCompanyType,</br>OnBeforeValidateCompanyType,</br>OnOpenPageCheckAdditionalDemoData|
 
 ## Changes in 2024 release wave 1
 
