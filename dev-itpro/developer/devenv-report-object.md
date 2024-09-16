@@ -3,7 +3,7 @@ title: Report object
 description: The report object in AL for Business Central allows to create a new report.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 09/19/2024
+ms.date: 09/16/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
