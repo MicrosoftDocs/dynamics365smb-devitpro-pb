@@ -3,7 +3,7 @@ title: Report object
 description: The report object in AL for Business Central allows to create a new report.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 01/18/2024
+ms.date: 09/19/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
@@ -342,11 +342,8 @@ For more information on report limits in [!INCLUDE[prod_short](includes/prod_sho
 
 For more information on how to configure report limits in [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, see [Server settings for reports](../administration/configure-server-instance.md#Reports).
 
-
 > [!NOTE]
-> For Excel layouts and the ability to get report data in Excel without a layout, you also need to take Excel limits into consideration. For more information, see [Excel limits](../administration/operational-limits-online.md#Excel).
-
-
+> For Excel layouts and the ability to get report data in Excel without a layout, you also need to take Excel limits into consideration. Learn more in [Excel limits](../administration/operational-limits-online.md#Excel).
 
 ## See also
 
