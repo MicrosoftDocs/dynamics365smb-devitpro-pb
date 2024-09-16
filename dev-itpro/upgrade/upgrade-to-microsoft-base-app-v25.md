@@ -225,7 +225,7 @@ You'll create two versions of this extension. The first version contains the tab
 
     ```json
     {
-      "id": "11111111-aaa-2222-bbbb-333333333333",
+      "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
       "name": "bc14baseapptablesonly",
       "publisher": "Default Publisher",
       "version": "1.0.0.0",
