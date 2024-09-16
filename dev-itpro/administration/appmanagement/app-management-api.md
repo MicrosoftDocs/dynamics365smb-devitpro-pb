@@ -69,7 +69,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=storageLocation 
         {
             "id": "36d697e1-1982-43a5-9927-7f8f2a3eb361",
             "publisher": "Contoso",
-            "publisherAadTenantId": "49cf52d4-fc10-41af-91ab-2d7cd011db47",
+            "publisherAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
             "publisherContactEmail": "publisher@contoso.com",
             "storageLocation": "West Europe",
             "_etag": "5c47bfb0-d80c-4780-99ed-c3a3d38ac539"
@@ -236,7 +236,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
         {
             "id": "c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d",
             "type": "User",
-            "aadTenantId": "0c1cbce0-b823-4acf-be2f-1ac3a4e81c21",
+            "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
             "roles": [
                 "Owner"
             ],
@@ -271,7 +271,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 {
     "id": "c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d",
     "type": "User",
-    "aadTenantId": "0c1cbce0-b823-4acf-be2f-1ac3a4e81c21",
+    "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "roles": [
         "Owner"
     ],
@@ -322,7 +322,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/principals/c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d
 
 {
-    "aadTenantId":  "20ba9ed9-d37b-4db0-ade4-f64322ad7c02",
+    "aadTenantId":  "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "Type":  "User",
     "roles":  [
                   "Reader"
@@ -338,7 +338,7 @@ When using `Type:"Application"`, the `aadTenantId` must not be used.
 {
     "id": "c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d",
     "type": "User",
-    "aadTenantId": "0c1cbce0-b823-4acf-be2f-1ac3a4e81c21",
+    "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "roles": [
         "Reader"
     ],
@@ -423,7 +423,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
             "status": "Uploaded",
             "dependencies": [
                 {
-                    "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+                    "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
                     "name": "Example Dependency",
                     "publisher": "Other Publisher",
                     "version": "1.0.0.0"
@@ -494,7 +494,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
     "status": "Uploaded",
     "dependencies": [
         {
-            "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+            "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
             "name": "Example Dependency",
             "publisher": "Other Publisher",
             "version": "1.0.0.0"
@@ -570,7 +570,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
     "status": "Uploaded",
     "dependencies": [
         {
-            "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+            "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
             "name": "Example Dependency",
             "publisher": "Other Publisher",
             "version": "1.0.0.0"
@@ -644,7 +644,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
     "status": "Uploaded",
     "dependencies": [
         {
-            "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+            "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
             "name": "Example Dependency",
             "publisher": "Other Publisher",
             "version": "1.0.0.0"
@@ -702,7 +702,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 {
     "value": [
         {
-            "aadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+            "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
             "version": "16.0.1.2",
             "appId": "41a68924-7fcf-4fd0-9200-f10f36a2e213",
             "countryCode": "US",
@@ -773,7 +773,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
     "value": [
         {
             "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
-            "environmentAadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+            "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
             "sourceAppVersion": "16.0.0.5",
             "targetAppVersion": "16.0.1.2",
             "status": "Scheduled",
@@ -816,7 +816,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```json
 {
     "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
-    "environmentAadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+    "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "sourceAppVersion": "16.0.0.5",
     "targetAppVersion": "16.0.1.2",
     "status": "Scheduled",
@@ -853,7 +853,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environmentHotfixes
 
 {
-    "environmentAadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+    "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "targetAppVersion": "16.0.1.2",
     "runAfter": "2020-03-05T17:30:00.0000000Z",
     "environmentApplicationFamily": "Business Central",
@@ -867,7 +867,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
 ```json
 {
     "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
-    "environmentAadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+    "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "sourceAppVersion": "16.0.0.5",
     "targetAppVersion": "16.0.1.2",
     "status": "Scheduled",
@@ -915,7 +915,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 ```json
 {
     "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
-    "environmentAadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+    "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "sourceAppVersion": "16.0.0.5",
     "targetAppVersion": "16.0.1.2",
     "status": "Canceled",
