@@ -42,7 +42,7 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
             {
                 ApplicationArea = All;
                 CustomActionType = Flow;
-                FlowId = '11111111-aaaa-2222-bbbb-333333333333';
+                FlowId = '00001111-aaaa-2222-bbbb-3333cccc4444';
                 FlowEnvironmentId = 'Default-44444444-cccc-5555-dddd-666666666666';
             }
         }

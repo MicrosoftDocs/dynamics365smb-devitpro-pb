@@ -158,7 +158,7 @@ EnvironmentOperation response with HTTP status code 202 (Accepted) with the foll
 
 ```
 {
-  "id": "11111111-aaaa-2222-bbbb-333333333333",
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "type": "create",
   "status": "scheduled", // Will eventually switch to running and then one between succeeded/failed
   "aadTenantId": "",
@@ -285,7 +285,7 @@ EnvironmentOperation response with HTTP status code 202 (Accepted) with the foll
 
 ```
 {
-  "id": "11111111-aaaa-2222-bbbb-333333333333",
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "type": "copy",
   "status": "scheduled", // Will eventually switch to running and then one between succeeded/failed
   "aadTenantId": "",
@@ -544,10 +544,10 @@ POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName
 202 Accepted with body. Follows the general "Operations" format, but with specific operation parameters 
 ```
 { 
-  "id": "11111111-aaaa-2222-bbbb-333333333333", 
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444", 
   "type": "environmentRename", // Operation type 
   "status": "scheduled", 
-  "aadTenantId": "44444444-aaaa-5555-bbbb-666666666666", 
+  "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", 
   "createdOn": "2021-04-22T12:29:06.668254Z", 
   "createdBy": "greg.chapman@contoso.com", 
   "errorMessage": "", 
@@ -598,10 +598,10 @@ POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName
 
 ```
 { 
-  "id": "11111111-aaaa-2222-bbbb-333333333333", // Operation ID 
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444", // Operation ID 
   "type": "pitRestore",  // Operation type 
   "status": "queued", // Status 
-  "aadTenantId": "44444444-aaaa-5555-bbbb-666666666666",         
+  "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",         
   "createdOn": "2021-04-23T09:41:28.8300669Z", 
   "createdBy": "greg.chapman@contoso.com", 
   "errorMessage": "", 

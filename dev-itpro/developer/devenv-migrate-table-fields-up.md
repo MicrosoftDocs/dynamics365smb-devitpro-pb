@@ -54,7 +54,7 @@ The transition extension will contain replicas of all table object definitions i
 
 3. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
-    For purposes of the example, the ID is `11111111-aaaa-2222-bbbb-333333333333`. The value for your extension will be different.
+    For purposes of the example, the ID is `00001111-aaaa-2222-bbbb-3333cccc4444`. The value for your extension will be different.
 
 ## Create empty version of releasing extension (Ext X v2)
 
@@ -66,7 +66,7 @@ In this step, you create a new version of the releasing extension that doesn't c
     { 
     "apprules": [ 
         { 
-            "id": "11111111-aaaa-2222-bbbb-333333333333"
+            "id": "00001111-aaaa-2222-bbbb-3333cccc4444"
         } 
     ] 
     } 
@@ -88,7 +88,7 @@ In this step, you create another version of the releasing extension **Ext X**. T
 5. Compile the extension package.
 6. Make a note of the `ID` and  `version` of the extension. You'll use these values in the next task.
 
-    For purposes of the example, the ID is `77777777-eeee-8888-ffff-999999999999`. The value for your extension will be different.
+    For purposes of the example, the ID is `66667777-aaaa-8888-bbbb-9999cccc0000`. The value for your extension will be different.
 
 ## Create receiving extension (Ext Y v1)
 
@@ -100,7 +100,7 @@ You now create a new extension that contains the customization you want to move 
     For example:
 
    ```json
-     "dependencies": [{"id": "77777777-eeee-8888-ffff-999999999999", "name": "releaseextension", "publisher": "Default publisher", "version": "1.0.0.3"}],
+     "dependencies": [{"id": "66667777-aaaa-8888-bbbb-9999cccc0000", "name": "releaseextension", "publisher": "Default publisher", "version": "1.0.0.3"}],
    ```
   
     The values for each parameter are for illustration purposes only. The values for your extension will be different.
@@ -121,7 +121,7 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
     { 
     "apprules": [ 
         { 
-            "id": "77777777-eeee-8888-ffff-999999999999"
+            "id": "66667777-aaaa-8888-bbbb-9999cccc0000"
         }
         { 
             "id": "44444444-cccc-5555-dddd-666666666666"
