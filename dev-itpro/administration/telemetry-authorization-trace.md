@@ -68,7 +68,7 @@ Occurs when a user has been successfully authorized. This data is not emitted fo
 |Normal user|Indicates that the user is a normal user in the tenant, based on the license.|[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)|
 
 <!--
-{"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.2","telemetrySchemaVersion":"0.2","authorizationStatus":"Succeeded","Component version":"15.0.40073.41395","Environment type":"Production","componentVersion":"15.0.40073.41395","Environment name":"Production","environmentType":"Production","environmentName":"Production","deprecatedKeys":", AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","aadTenantId":"36093cb7-8b61-47a2-8f12-078ce1cbbf8b","AadTenantId":"36093cb7-8b61-47a2-8f12-078ce1cbbf8b","component":"Dynamics 365 Business Central Server","entitlementSetIds":"INTERNAL_ADMIN,DYN365_FINANCIALS_BUSINESS","guestUser":"False","userType":"INTERNAL_ADMIN"}
+{"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.2","telemetrySchemaVersion":"0.2","authorizationStatus":"Succeeded","Component version":"15.0.40073.41395","Environment type":"Production","componentVersion":"15.0.40073.41395","Environment name":"Production","environmentType":"Production","environmentName":"Production","deprecatedKeys":", AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","AadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","component":"Dynamics 365 Business Central Server","entitlementSetIds":"INTERNAL_ADMIN,DYN365_FINANCIALS_BUSINESS","guestUser":"False","userType":"INTERNAL_ADMIN"}
 
 -->
 
