@@ -13,9 +13,11 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Dynamics 365 Business Central Word add-in gives you a way to layout document reports with conditional visibility.
-
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
+
+The Dynamics 365 Business Central Word add-in includes several controls that you can use change the behavior of document reports. There's a control that lets you add a hidden comment in the layout, which doesn't appear in the rendered report. There are alo control that conditional visibility.
+
+
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
@@ -43,13 +45,13 @@ There are two ways to insert a comment:
 
 ### Excercise: Add a versioning table in a layout
 
-1. In Business Central, download a Word layout for a report:
+1. In Business Central, export a Word layout for a report:
 
    1. Sign in to Business Central.
    1. Search for and open the **Report Layouts** page.
    1. Choose a layout in the list that has the **Type** equal to **Word**.
    1. Select **Export Layout**.
-. Edit the Word layout:
+1. In Word, edit the Word layout:
    1. Open the Word layout file you downloaded.
    1. At the end of the document, insert a table with three columns and two rows like this:
 
@@ -59,15 +61,18 @@ There are two ways to insert a comment:
 
    1. Select the entire table, and then select the **Business Central (preview)** > **Insert layout comment**.
 
-   When you place your cursor somewhere in the table, you notice that the control displays a **Hidden Comment** label.
+   When you place your cursor somewhere in the table, the control displays a **Hidden Comment** label.
 
-1. In Business Central, import and run the layout
+1. In Business Central, import and run the layout:
 
-   1. In the **Report Layouts** page, select the report, thwn e report, and then use the *New* action to import the layout. Then use the *Run* action to test the layout. Hopefully, the comment is now gone (from the generated report.)
+   1. In the **Report Layouts** page, select the report for the new layout, and then select **New**.
+   1. In **Add New Layout for a Report** page, fill-in the fields, making sure to set **Format Options** to **Word**.
+   1. Select **OK** and upload the layout file.
+   1. In the **Report Layouts** page, select **Run Report**. The comment shouldn't be present.
 
 ## Hide if empty: Hide field if Zero control
 
-In some reports, you might want to mimic the [BlankZero](properties/devenv-blankzero-property.md) or [BlankNumbers](properties/devenv-blanknumbers-property.md) properties that exist on table and page fields. You can achieve this in the dataset, but what if you don't have control over the AL code? Or if some layouts should show zeros and others blank them out? 
+In some reports, you might want to mimic the [BlankZero](properties/devenv-blankzero-property.md) or [BlankNumbers](properties/devenv-blanknumbers-property.md) properties that exist on table and page fields. Thats is, for some layouts you want to display values that are 0,  while others you want to leave the file blank.  **Hide field if Zero** lets you achieve the same behavior, except using Word instead of AL code.  ? 
 
 Here, the *Hide Field if Zero* control comes to the rescue: simply apply it to a field (standalone or as part of a repeater). At runtime, the Business Central server will then convert any zero values to a blank string.
 
