@@ -77,7 +77,7 @@ There are at least two things you should consider when adding pictures to your W
 
 #### Control how pictures fit into the layouts
 
-When inserting a picture, ensure that it doesn't take up space according to its size, but that it's adjusted to the size that you want in your layout. The best way to do this is to encapsulate the picture in a cell in a table, maybe in a 1x1 table introduced only for this purpose. When you change the size of a table cell for a picture, by default it still adjusts to fit the picture. Therefore, you must also disable the cells ability to change its size dynamically. 
+When inserting a picture, ensure that it doesn't take up space according to its size, but that it's adjusted to the size that you want in your layout. The best way to do this is to encapsulate the picture in a cell in a table, maybe in a 1x1 table introduced only for this purpose. When you change the size of a table cell for a picture, by default it still adjusts to fit the picture. Therefore, you must also disable the cell's ability to change its size dynamically. 
 
 To control the picture size using a table, do as follows:
 
@@ -102,7 +102,7 @@ For pictures that are part of the report dataset, you need to adjust the size in
 
 ### Using tables to display data from the report dataset (simple repeaters)
 
-If you want to add a table to the report layout where data in each row comes from a dataitem from the report dataset, do as follows
+If you want to add a table to the report layout where data in each row comes from a dataitem from the report dataset, do as follows:
 
 1. Create a table with two rows and a column for each field that you want displayed.
 
@@ -114,11 +114,9 @@ If you want to add a table to the report layout where data in each row comes fro
   
 5. Add the repeating fields to the row as follows:  
  
-    a. Place your pointer in a cell.  
-  
-    b. In the **XML Mapping** pane, right-click the field that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
-  
-    c. For each field, repeat steps a and b.  
+    1. Place your pointer in a cell.  
+    1. In the **XML Mapping** pane, right-click the field that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
+    1. For each field, repeat steps a and b.  
 
 Learn more at [Supporting repeating content](/office/client-developer/word/content-controls-in-word#supporting-repeating-content).
 
@@ -132,7 +130,7 @@ Learn more at [Supporting repeating content](/office/client-developer/word/conte
 
 ### Using lists to display data from the report dataset (simple repeaters)
 
-If you want to add a bulleted or numbered list to the report layout where data in each row comes from a dataitem from the report dataset, do as follows
+If you want to add a bulleted or numbered list to the report layout where data in each row comes from a dataitem from the report dataset, do as follows:
 
 1. Place the cursor on the place where you want the list to be displayed.
   
@@ -216,7 +214,7 @@ If you need your report to change style for different types of content, consider
 Sections are created using section breaks. To start a new section, select where you want it to begin. Then go to **Layout** > **Breaks**. Learn more in [Insert a section break](https://support.microsoft.com/en-us/office/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c) (use <kbd>Ctrl</kbd>+click to open in a new tab).
 
 > [!TIP]  
-> When working with sections in a layout, it's recommended to turn the display of formatting marks on. This makes it much easier to see in which section of the layout you are working. Learn more in [Show or hide tab marks in Word](https://support.microsoft.com/en-us/office/show-or-hide-tab-marks-in-word-84a53213-5d02-404a-b022-09cae1a3958b) (use <kbd>Ctrl</kbd>+click to open in a new tab)
+> When working with sections in a layout, it's recommended to turn the display of formatting marks on. This makes it much easier to see in which section of the layout you are working. Learn more in [Show or hide tab marks in Word](https://support.microsoft.com/en-us/office/show-or-hide-tab-marks-in-word-84a53213-5d02-404a-b022-09cae1a3958b) (use <kbd>Ctrl</kbd>+click to open in a new tab).
 
 ### Changing layout properties such as margins or orientation
 
@@ -229,7 +227,7 @@ Learn more at [Change page orientation to landscape or portrait](https://support
 
 A watermark is text or a picture that sits behind your text and pictures, faint or washed-out so that it doesn't interfere with what's on the page. Like headers and footers, a watermark usually appears on all the pages of your document. You define and manage the watermark from the **Design** tab, select **Watermark**.
 
-Learn more at [Watermarks in Word](https://support.microsoft.com/en-us/office/watermarks-in-word-e8317e40-ba36-493f-9cb8-6b93537b14d8) (use <kbd>Ctrl</kbd>+click to open in a new tab)
+Learn more at [Watermarks in Word](https://support.microsoft.com/en-us/office/watermarks-in-word-e8317e40-ba36-493f-9cb8-6b93537b14d8) (use <kbd>Ctrl</kbd>+click to open in a new tab).
 
 #### Using different watermarks in sections
 
@@ -238,7 +236,7 @@ The internal data model in Word only allows one watermark for the entire documen
 In case you want to apply different watermarks to different sections, this work-around might work:
 
 1. On the **Home** tab, click **Select** > **Selection Pane**. The Selection pane is used to manage objects in your document: reorder them, show or hide them, and group or ungroup them.
-2. Within the first section, open the header or footer and insert the watermark you want to use. Just use the normal approach. In the Selection pane, the watermark now shows as "PowerPlusWaterMarkObject" for a text object or "WordPictureWaterMark" for a picture object (each name followed by an identifier). Double-click on the name to make it editable, and change it to something else (maybe to the watermark text, such as 'Customer copy' or 'Original'). Now Word won't treat the object as a (global) watermark. 
+2. Within the first section, open the header or footer and insert the watermark you want to use. Just use the normal approach. In the Selection pane, the watermark now shows as "PowerPlusWaterMarkObject" for a text object or "WordPictureWaterMark" for a picture object (each name followed by an identifier). Double-click on the name to make it editable and change it to something else (maybe to the watermark text, such as 'Customer copy' or 'Original'). Now Word won't treat the object as a (global) watermark.
 3. Within each subsequent section, repeat step number 2.
 4. On the **Home** tab, choose **Select** > **Selection Pane** to turn off the Selection pane again.
 
@@ -273,12 +271,12 @@ To learn more about templates, themes, and Word styles, see [Differences between
 
 If you need to design Word layouts where placement of design components on the page needs to be precise, then you can set their absolute position, both horizontal and vertical. It's possible to set precision to two decimals of cm/inch.
 
-For tables, you can control their absolute position on the page in *Table Properties*. In the *Tables* tab, choose *Around* for the text wrapping. Now the *Positioning* button is unlocked and you can set the horizontal and vertical position of the table. Learn more at [Set or change table properties](https://support.microsoft.com/en-us/office/set-or-change-table-properties-3237de89-b287-4379-8e0c-86d94873b2e0)
+For tables, you can control their absolute position on the page in *Table Properties*. In the *Tables* tab, choose *Around* for the text wrapping. Now the *Positioning* button is unlocked, and you can set the horizontal and vertical position of the table. Learn more at [Set or change table properties](https://support.microsoft.com/en-us/office/set-or-change-table-properties-3237de89-b287-4379-8e0c-86d94873b2e0).
 
-For text boxes, you can control their absolute position on the page in the *Shape format* menu: *Position* > *More Layout Options* (you can also navigate here by right-clicking on the text box). Now you can set the horizontal and vertical position of the text box. Learn more at [Ways to customize a text box](https://support.microsoft.com/en-us/office/ways-to-customize-a-text-box-0570ef01-1f4d-4f37-a787-7be3ce6b6380)
+For text boxes, you can control their absolute position on the page in the *Shape format* menu: *Position* > *More Layout Options* (you can also navigate here by right-clicking on the text box). Now you can set the horizontal and vertical position of the text box. Learn more at [Ways to customize a text box](https://support.microsoft.com/en-us/office/ways-to-customize-a-text-box-0570ef01-1f4d-4f37-a787-7be3ce6b6380).
 
 > [!TIP]  
-> When designing layouts for precision printing, consider enabling the ruler and gridlines (find them under *View* > *Show*). Learn more at [Show the ruler](https://support.microsoft.com/en-us/office/show-the-ruler-dc8a4e0d-209f-43b8-b967-8e65da24d4c7)
+> When designing layouts for precision printing, consider enabling the ruler and gridlines (find them under *View* > *Show*). Learn more at [Show the ruler](https://support.microsoft.com/en-us/office/show-the-ruler-dc8a4e0d-209f-43b8-b967-8e65da24d4c7).
 
 ## Design guidelines for a report dataset designed for Word layouts
 
@@ -361,7 +359,7 @@ The following example extends the Customer List page with a trigger that runs th
 > [!NOTE]
 > The **Different first page** and **Different odd and even** options for headers and footers in Word aren't supported for HTML conversion. If you select either of these options, the header and footer won't appear in rendered output, such as an Email Body.
 
-1. Create a new extension to the **Customer List** page that contains code to run the report and a report object by adding the following lines of code: 
+1. Create a new extension to the **Customer List** page that contains code to run the report and a report object by adding the following lines of code:
 
     ```AL
     pageextension 50100 MyExtension extends "Customer List"
@@ -467,9 +465,9 @@ Learn more about report limits in [Report limits](devenv-report-object.md#report
 
 ## Difference between RDL and Word layouts
 
-If you're switching from developing reports with RDL layouts to using Word layouts, you might need to change your mindset on how you develop reports and their layouts. RDL allows you to dynamically change many properties in the layout but it isn't possible in Word. For many logic-related conditions, instead you have to do them in the report dataset in AL and then utilize the methods outlined in this article. 
+If you're switching from developing reports with RDL layouts to using Word layouts, you might need to change your mindset on how you develop reports and their layouts. RDL allows you to dynamically change many properties in the layout but it isn't possible in Word. For many logic-related conditions, instead you have to do them in the report dataset in AL and then utilize the methods outlined in this article.
 
-For reports where you expect customers to adjust the layout or use themes to change the overall look-and-feel of the document, consider using a Word layout over an RDL layout. 
+For reports where you expect customers to adjust the layout or use themes to change the overall look-and-feel of the document, consider using a Word layout over an RDL layout.
 
 ## How to create a new Word layout document from scratch
 
@@ -526,7 +524,7 @@ The **Report layouts** page in the client, helps you update a layout with the la
 1. Select the report in the list and then select **Update and Export Layout**.
 
     The updated layout file is downloaded to your computer.
-1. Open the updated layout file in Word. Then make changes that want and save the file
+1. Open the updated layout file in Word. Then make changes that want and save the file.
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], import the updated layout either as a new layout, by using the **New** action, or as a replacement to the existing layout, by the **Replace Layout** action.
 
 
@@ -534,8 +532,8 @@ The **Report layouts** page in the client, helps you update a layout with the la
 
 There's no way to directly convert an RDL layout to a Word layout, but if you want to create a new Word layout based on an RDL layout, then do as follows:
 
-1. Create a new blank Word layout. See [How to create a new Word layout document from scratch](#how-to-create-a-new-word-layout-document-from-scratch) for more information. 
-1. Get a version of the report RDL layout rendered as a Word document
+1. Create a new blank Word layout. See [How to create a new Word layout document from scratch](#how-to-create-a-new-word-layout-document-from-scratch) for more information.
+1. Get a version of the report RDL layout rendered as a Word document:
     1. From the **Report layouts page**, find the RDL layout you want to base the new Word layout on.
     1. From the top pane menu, select the **Run Report** action. This opens the request page for the report.
     1. In the bottom of the request page, select the **Send to...** button. This opens a **Choose file type...** modal dialog.
