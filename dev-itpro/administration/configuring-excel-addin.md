@@ -137,6 +137,7 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
         ```  
 
         Remember to add a comma before or after this entry, depending on where you add it in the list.
+    1. Select **Save**.
 
     # [AAD Graph App Manifest (Deprecating Soon)](#tab/aad)
 
@@ -169,9 +170,10 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
         ```  
 
         Remember to add a comma before or after this entry, depending on where you add it in the list.
+    1. Select **Save**.
 
        ---
-    5. Select **Save**.
+
 
 6. Grant the Excel add-in application permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API.
 
