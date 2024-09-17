@@ -68,7 +68,7 @@ There are two ways to insert a comment:
    1. Select **OK** and upload the layout file.
    1. In the **Report Layouts** page, select **Run Report**. The comment shouldn't be present.
 
-## Hide field if Zero control
+## Hide Field if Zero control
 
 In some reports, you might want to mimic the [BlankZero](properties/devenv-blankzero-property.md) or [BlankNumbers](properties/devenv-blanknumbers-property.md) properties that exist on table and page fields in AL code. That is, for some layouts you want to display field values of 0 as 0, while with other you want to leave the field blank.
 
@@ -115,6 +115,6 @@ The RDLC layout for report 406 **Purchase - Invoice** has a table with a **Disco
 
 In this exercise, create an empty Word layout for report 406. Then, recreate the table from the RDLC layout but use the **Hide Empty Table Column** control to remove the *Discount %* column in the rendered report no discount is given.
 
-## Next steps
+## Related information
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+[Creating a Word layout report](devenv-howto-report-layout.md)  
