@@ -6,13 +6,13 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.topic: overview
 ms.collection: 
-ms.date: 12/20/2023
+ms.date: 09/17/2024
 ms.custom: bap-template
 ---
 
 # Troubleshoot in Visual Studio Code directly from the web client
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can open a new Visual Studio Code session directly from the web client for a specific customer production or sandbox environment. This enables performing troubleshooting, such as debugging, inspecting variables, setting breakpoints, and viewing source code.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can open a new Visual Studio Code session directly from the web client for a specific customer production or sandbox environment. Opening the session directly, enables performing troubleshooting, such as debugging, inspecting variables, setting breakpoints, and viewing source code.
 
 Depending on the context, Visual Studio Code opens to allow inspecting objects and source, and allows attaching to debug or snapshot debug and profile the current web client session. Whether you can access the source code is gated by the resource exposure profile settings for each extension. For more information, see [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
@@ -33,7 +33,7 @@ To open and explore a page from the Page Inspector, follow these steps:
 1. From that page, run the **Page Inspection** with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>.
 1. Choose the **Explore page in Visual Studio Code** link.  
 1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance opens.
-1. Then, you must specify, if you want to create a new project, or use an existing project. You'll only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
+1. Then, you must specify, if you want to create a new project, or use an existing project. You're only asked the first time, and from then on, the Visual Studio Code window that was last active is used.
 1. Next, you must decide if you want to download symbols.  
     > [!NOTE]  
     > If you specify yes, the app.json file will be updated with the dependent extensions of the page, which are shown on the **Extensions** tab in the **Page Inspection** page, and the symbols will automatically be downloaded. You can specify no, if you're already working on the specific source code files.  
@@ -59,7 +59,7 @@ To attach the debugger to a session, do the following:
 
 1. Go to the **Help and Support** page, and then choose the **Attach debugger to this session** link under the **Troubleshooting** section.
 1. Next, to open a Visual Studio Code instance, you must choose the **Open** button in the **Allow an extension to open this URI?** dialog. If you already have Visual Studio Code running that instance opens.
-1. Then, you must specify, if you want to create a new project, or use an existing project. You'll only be asked the first time, and from then on, the Visual Studio Code window that was last active will be used.
+1. Then, you must specify, if you want to create a new project, or use an existing project. You're only be asked the first time, and from then on, the Visual Studio Code window that was last active is used.
 1. If you want to debug, then set breakpoints and go back to the web client to run the task. When the breakpoint is hit, you can inspect the code in Visual Studio Code.  
     > [!NOTE]  
     > For production environments, regular debugging isn't supported.
@@ -76,7 +76,7 @@ Follow these steps:
 1. Choose the **Open Source in VS Code** option.  
   In Visual Studio Code, you're now asked if you want to clone or open the GitHub repo for the extension. 
 
-The open source functionality uses the repo metadata that was included in the extension when it was built. In the manifest of an extension, the app.json file, you can specify metadata for where the related GitHub repository and a specific build is found. You do this by using the `build` and `source` setting. Learn more in [JSON files](devenv-json-files.md#appjson-file).
+The open source functionality uses the repo metadata that was included in the extension when it was built. In the manifest of an extension, the app.json file, you can specify metadata for where the related GitHub repository and a specific build are found by using the `build` and `source` settings. Learn more in [JSON files](devenv-json-files.md#appjson-file).
 
 ## Good to know
 
