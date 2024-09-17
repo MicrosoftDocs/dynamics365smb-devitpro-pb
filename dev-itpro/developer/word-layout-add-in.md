@@ -28,27 +28,37 @@ The Dynamics 365 Business Central Word add-in gives you a way to layout document
 
 ## Layout controls for document reports
 
-The Word add-in introduces *layout controls* that you use to encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data. It also includes a way for layout creators to include comments in the layout file. These comments will then be removed from the document when the report is rendered.
+The Word add-in introduces *layout controls* that you use to encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data. It also includes a way for layout creators to include comments in the layout file. These comments aren't present in the document when the report is rendered.
 
-## The *comment* control
+## `comment` control
 
-As a layout creator, you might want to include comments in the layout file to help you or the next person who need to maintain the layout. These comments will then be removed from the document when the report is rendered. You can include text or tables in a comment control.
+As a layout creator, you might want to include comments in the layout file to help yourself or the next person who maintains it. Comments don't appear in the document when the report is rendered. You can include text or tables in a comment control.
 
-Use comments for things such as describing difficult parts of the layout, or maybe add a change log table in the end of the file to track different versions of the layout. This could be useful when troubleshooting a report issue (you will need to get both a copy of the rendered report and the layout as the comment will have been removed from the former at runtime).
+Use comments for tasks such as describing difficult parts of the layout or adding a change log table at the end of the file to track different versions. Comments are useful when troubleshooting a report issue because it helps to have a copy of both the rendered report and the layout file.
 
-### Exercise: Add a versioning table
+There are two ways to insert a comment:
 
-Download any Word layout from Business Central from the Report Layouts page (filter to type *Word* and then use the *Export Layout* action). Navigate to the end of the Word file. Add a table with three columns and two rows like this:
+- Add your text and tables, select the content and then **Business Central (preview)** > **Insert layout comment** to add the comment control. Clicking anywhere within the comment shows the **Hidden Comment** border.
+- Place your cursor where you want the comment, select **Business Central (preview)** > **Insert layout comment** to insert a comment control with the text *This text will not be printed in the final report*. Select inside the control to add the text and tables you want for the comment.
 
-| Layout description | Version | Date of change |
-| ------------------ | ------- | -------------- | 
-| Layout using a comment | 1.0 | <todays date> |
+### Example: Add a versioning table in a layout
 
-Then mark the table and choose the *comment* control from the *Layout Controls* menu in the Business Central add-in.
+1. Download a Word layout from Business Central:
 
-When you place your cursor somewhere in the table, you will notice that the control displays a "Hidden Comment" text. 
+   1. Sign in to Business Central.
+   1. Search for and open the **Report Layouts** page.
+   1. Choose a layout in the list that has the **Type** equal to **Word**.
+   1. Select **Export Layout**.
+2. Edit the Word layout:
+   1. Open the Word layout file you downloaded.
+   1. At the end of the document, insert a table with three columns and two rows like this:
 
-Contratulations, you have added your first comment. 
+      | Layout description | Version | Date of change |
+      |-|-|-|
+      |This layout uses a comment| 1.0 | <todays date> |
+   1. Select the entire table, and then select the **Business Central (preview)** > **Insert layout comment**.
+
+   When you place your cursor somewhere in the table, you notice that the control displays a **Hidden Comment" text.
 
 Now, try importing the layout back to Business Central: from the Report Layouts page, make sure you have focus on the report, and then use the *New* action to import the layout. Then use the *Run* action to test the layout. Hopefully, the comment is now gone (from the generated report.)
 
@@ -61,7 +71,7 @@ Here, the *Hide Field if Zero* control comes to the rescue: simply apply it to a
 
 ## Hide if empty: the *Hide Empty Table* control
 
-If you have a data item in the dataset that might have data and might not, you can enclose the repeater in a table with the *Hide Empty Table* control. If no rows exists when rendering the report at runtime, the Business Central server will then simply cut the enclosing table from the document. 
+If you have a data item in the dataset that might have data and might not, you can enclose the repeater in a table with the *Hide Empty Table* control. If no rows exist when rendering the report at runtime, the Business Central server will then simply cut the enclosing table from the document. 
 
 **Note!** The *Hide Empty table* you have to place on the table itself, not on the repeater.
 
