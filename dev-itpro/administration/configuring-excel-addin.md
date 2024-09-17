@@ -97,24 +97,57 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
 
 5. Modify the app's manifest to configure OAuth2 implicit grant flow and an *spa* type reply URL for the Excel add-in.
 
-    1. From the application's **Overview**, select **Manifest**.
-    2. There appears to be two editors in this tab now, **Microsoft Graph App Manifest (New)** and **AAD Graph App Manifest (Deprecating Soon)**. The following steps are for the **AAD Graph App Manifest (Deprecating Soon)** tab. Keep in mind that if the deprecated tab is not available
-    then it appears that this is the mapping of properties that you should use to fill in the new manifest:
+    From the application's **Overview**, select **Manifest**. You can choose to edit the manifest using the **Microsoft Graph App Manifest (New)** tab or the **AAD Graph App Manifest (Deprecating Soon)** tab. We recommend the **Microsoft Graph App Manifest (New)** tab.
 
-    |Old Property|New Property|
-    |-----------|--------------| 
-    | replyUrlsWithType | spa.redirectUris|
-    | oauth2AllowIdTokenImplicitFlow | web.implicitGrantSettings.enableIdTokenIssuance|
-    | oauth2AllowImplicitFlow | web.implicitGrantSettings.enableAccessTokenIssuance|
+    # [Microsoft Graph App Manifest (New)](#tab/graphapp)
 
-    3. In the editor, set `"oauth2AllowIdTokenImplicitFlow"` and `"oauth2AllowImplicitFlow"` keys to `true`:
+    1. In the editor, set `"web.implicitGrantSettings.enableIdTokenIssuance"` and `"web.implicitGrantSettings.enableAccessTokenIssuance"` keys to `true`:
+
+        ```json
+        "web": {
+            "homePageUrl": null,
+    		"logoutUrl": null,
+    		"redirectUris": [],
+    		"implicitGrantSettings": {
+    			"enableAccessTokenIssuance": true,
+    			"enableIdTokenIssuance": true
+            }
+        }
+        ```
+
+    1. In the `"spa.redirectUris":[]` key, add the following lines:
+
+        ```json 
+        "spa": {
+		    "redirectUris": [ 
+                {
+                    "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/DynamicsApp.html"
+                },
+                {
+                    "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/Authenticated.html"
+                },
+                {
+                    "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/AuthenticationDialog.html"
+                },
+                {
+                    "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/SignOutDialog.html"
+                }
+            ]
+        }
+        ```  
+
+        Remember to add a comma before or after this entry, depending on where you add it in the list.
+
+    # [AAD Graph App Manifest (Deprecating Soon)](#tab/aad)
+
+    1. In the editor, set `"oauth2AllowIdTokenImplicitFlow"` and `"oauth2AllowImplicitFlow"` keys to `true`:
 
         ```json
         "oauth2AllowIdTokenImplicitFlow": true,
         "oauth2AllowImplicitFlow": true,
         ```
 
-    4. In the `"replyUrlsWithType":[]` key, add the following lines:
+    1. In the `"replyUrlsWithType":[]` key, add the following lines:
 
         ```json  
         {
@@ -136,6 +169,8 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
         ```  
 
         Remember to add a comma before or after this entry, depending on where you add it in the list.
+
+       ---
     5. Select **Save**.
 
 6. Grant the Excel add-in application permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API.
