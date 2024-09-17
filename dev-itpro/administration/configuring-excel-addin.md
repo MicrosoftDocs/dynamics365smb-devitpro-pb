@@ -126,6 +126,13 @@ When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured f
 3. Under **Manage**, select **App registrations**, then select the app registration for Business Central authentication. 
 4. Under **Manage**, select **Expose API**.
 5. On the **Expose API** page, if the **Application ID URI** box is filled out, then API is already exposed, so you don't have to do anything else. Otherwise, select **Set** to expose the API.
+6. Under **Manage**, select **Token configuration**. Under **Optional claims** select **Add optional claim**. Under **Token type** pick **Access**.
+Under **Claim** pick **email** and **upn**. Click **Add**, if you get a dialog with the option to **Turn on the microsoft Graph email, profile permissions (required for claims to appear in token)**, then check this box and click **Add**. 
+7. Please note: After performing these steps, especially step 6, if the application have already issued a token to the Excel Add In it would be a good idea to clear any caches to ensure that you get the **upn** and **email** claims. To clear the cache of the Excel Add In:
+    - Right-click the Excel add-in pane, then select Inspect top open the browser developer tools.
+    - Go to the Application tab.
+    - In the Storage pane, clear instances of az689774.vo.mssecnd.net under Local Storage, Session Storage, Cookies and Shared Storage.  To clear, right-click an instance and select Clear.
+    - Then try to refresh the add-in by closing and opening the Excel file again or pressing Ctrl+R while being inside the developer tools.
 
 For information about how to expose the Web API, go to [Quickstart: Configure an application to expose web APIs](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis).
 
@@ -149,24 +156,44 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
 5. Modify the app's manifest to configure OAuth2 implicit grant flow and an *spa* type reply URL for the Excel add-in.
 
     1. From the application's **Overview**, select **Manifest**.
-    2. In the editor, set `"oauth2AllowIdTokenImplicitFlow"` and `"oauth2AllowImplicitFlow"` keys to `true`:
+    2. There appears to be two editors in this tab now, **Microsoft Graph App Manifest (New)** and **AAD Graph App Manifest (Deprecating Soon)**. The following steps are for the **AAD Graph App Manifest (Deprecating Soon)** tab. Keep in mind that if the deprecated tab is not available
+    then it appears that this is the mapping of properties that you should use to fill in the new manifest:
+    |Old Property|New Property|
+    |-----------|--------------| 
+    | replyUrlsWithType | spa.redirectUris|
+    | oauth2AllowIdTokenImplicitFlow | web.implicitGrantSettings.enableIdTokenIssuance|
+    | oauth2AllowImplicitFlow | web.implicitGrantSettings.enableAccessTokenIssuance|
+
+    3. In the editor, set `"oauth2AllowIdTokenImplicitFlow"` and `"oauth2AllowImplicitFlow"` keys to `true`:
 
         ```json
         "oauth2AllowIdTokenImplicitFlow": true,
         "oauth2AllowImplicitFlow": true,
         ```
 
-    3. In the `"replyUrlsWithType":[]` key, add the following lines:
+    4. In the `"replyUrlsWithType":[]` key, add the following lines:
 
         ```json  
         {
-            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/*",
+            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/DynamicsApp.html",
+            "type": "Spa"
+        },
+        {
+            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/Authenticated.html",
+            "type": "Spa"
+        },
+        {
+            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/AuthenticationDialog.html",
+            "type": "Spa"
+        },
+        {
+            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/SignOutDialog.html",
             "type": "Spa"
         }
         ```  
 
         Remember to add a comma before or after this entry, depending on where you add it in the list.
-    4. Select **Save**.
+    5. Select **Save**.
 
 6. Grant the Excel add-in application permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API.
 
@@ -223,8 +250,15 @@ You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.m
         ```powershell
         Set-NAVServerConfiguration -ServerInstance <Business Central server instance> -KeyName PublicODataBaseUrl -KeyValue <OData URL>
         ```
+   2. Select the **Enable OData Services** check box.
 
-   2. Select the **Enable API Services** check box.
+       If you're using the Set-NAVServerConfiguration cmdlet, set the `ODataServicesEnabled` key to `true`.
+
+        ```powershell
+        Set-Navserverconfiguration -ServerInstance <Business Central server instance> -KeyName ODataServicesEnabled -KeyValue true
+        ```
+
+   3. Select the **Enable API Services** check box.
 
        If you're using the Set-NAVServerConfiguration cmdlet, set the `ApiServicesEnabled` key to `true`.
 
