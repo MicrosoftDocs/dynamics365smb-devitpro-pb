@@ -15,9 +15,9 @@ ms.custom: bap-template
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-The Dynamics 365 Business Central Word add-in includes several controls that you can use change the behavior of document reports. There's a control that lets you add a hidden comment in the layout, which doesn't appear in the rendered report. There are alo control that conditional visibility.
+The Dynamics 365 Business Central Word add-in includes several controls that you can use change the behavior Word layouts for document reports.
 
-
+- A comment control allows you to add a comment in the layout, which appears in Word while designing the layout but doesn't appear in the rendered report. Other controls let you encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
@@ -40,8 +40,8 @@ Use comments for tasks such as describing difficult parts of the layout or addin
 
 There are two ways to insert a comment:
 
-- Add your text and tables, select the content and then **Business Central (preview)** > **Insert layout comment** to add the comment control. Clicking anywhere within the comment shows the **Hidden Comment** border.
-- Place your cursor where you want the comment, select **Business Central (preview)** > **Insert layout comment** to insert a comment control with the text *This text will not be printed in the final report*. Select inside the control to add the text and tables you want for the comment.
+- Add your content as text and tables first, select the content and then **Business Central (preview)** > **Insert layout comment** to add the comment control. Clicking anywhere within the comment shows the **Hidden Comment** border.
+- Place your cursor where you want the comment, select **Business Central (preview)** > **Insert layout comment** to insert a comment control with the text `This text will not be printed in the final report`. Select inside the control and then  the comment.
 
 ### Excercise: Add a versioning table in a layout
 
@@ -51,7 +51,7 @@ There are two ways to insert a comment:
    1. Search for and open the **Report Layouts** page.
    1. Choose a layout in the list that has the **Type** equal to **Word**.
    1. Select **Export Layout**.
-1. In Word, edit the Word layout:
+1. In Word, add a comment to the layout:
    1. Open the Word layout file you downloaded.
    1. At the end of the document, insert a table with three columns and two rows like this:
 
@@ -66,40 +66,56 @@ There are two ways to insert a comment:
 1. In Business Central, import and run the layout:
 
    1. In the **Report Layouts** page, select the report for the new layout, and then select **New**.
-   1. In **Add New Layout for a Report** page, fill-in the fields, making sure to set **Format Options** to **Word**.
+   1. In **Add New Layout for a Report** page, fill in the fields, making sure to set **Format Options** to **Word**.
    1. Select **OK** and upload the layout file.
    1. In the **Report Layouts** page, select **Run Report**. The comment shouldn't be present.
 
-## Hide if empty: Hide field if Zero control
+## Hide field if Zero control
 
-In some reports, you might want to mimic the [BlankZero](properties/devenv-blankzero-property.md) or [BlankNumbers](properties/devenv-blanknumbers-property.md) properties that exist on table and page fields. Thats is, for some layouts you want to display values that are 0,  while others you want to leave the file blank.  **Hide field if Zero** lets you achieve the same behavior, except using Word instead of AL code.  ? 
+In some reports, you might want to mimic the [BlankZero](properties/devenv-blankzero-property.md) or [BlankNumbers](properties/devenv-blanknumbers-property.md) properties that exist on table and page fields in AL code. That is, for some layouts you want to display field values of 0 as 0, while with other you want to leave the field blank.
 
-Here, the *Hide Field if Zero* control comes to the rescue: simply apply it to a field (standalone or as part of a repeater). At runtime, the Business Central server will then convert any zero values to a blank string.
+For this behavior, you can use the **Hide Field if Zero** control.
 
-## Hide if empty: Hide Empty Table control
+1. In Word, select the field, which can be standalone field or included in a repeater.
+1. In the **Business Central (preview)** tab, select **Hide if empty** > **Hide Field if Zero**.
 
-If you have a data item in the dataset that might have data and might not, you can enclose the repeater in a table with the *Hide Empty Table* control. If no rows exist when rendering the report at runtime, the Business Central server will then simply cut the enclosing table from the document. 
+When the report is run, zero values to a blank string.
 
-> [!NOTE]
-> You must apply the **Hide Empty table** control to the table, not the repeater.
+## Hide Empty Table control
 
-## Hide if empty: Hide Empty Table Row* control
+If you have a data item in the dataset that might or might not include data, you can enclose the table in a repeater with the **Hide Empty Table** control. If no rows exist when rendering the report at runtime, the table applied with the control is removed from the document.
 
-If you have a data item in the dataset, where one field should determine if the row is shown, you can enclose that fields in the repeater with the *Hide Empty Table Row* control. For rows, where that field has no value, when rendering the report at runtime, the Business Central server will then simply cut the row from the table. 
+1. In Word, select the table.
 
-## Hide if empty: the *Hide Empty Table Column* control
+  > [!IMPORTANT]
+  > You must apply the **Hide Empty table** control to the table, not the repeater control.
 
-If you have a data item in the dataset, where no table header and table column should be visible in the absense of data in the field (across all rows in the dataitem), you can enclose that fields in the table header with the *Hide Empty Table Column* control. For datasets, where that no values exist for that field, when rendering the report at runtime, the Business Central server will then simply cut the column from the table. 
+1. In the **Business Central (preview)** tab, select **Hide if empty** > **Hide Empty Table**.
 
-One use case for this layout control is discounts, where you want to remove the discount column from the invoice if no discount has been applied. 
+## Hide Empty Table Row control
 
-**Note!** You can combine *Hide Empty Table Column* with *Hide Field if Zero* to hide columns with zero values. Just add the *Hide Field if Zero* to the field in the repeater and use *Hide Empty Table Column* on the corresponding field in the table header.
+If you have a data item in the dataset, where field should determine whether the row is shown, you can enclose that field in the repeater with the **Hide Empty Table Row** control. For rows in which this field has no value, the row isn't included in the rendered report at runtime.
+
+1. In Word, select the field.
+1. In the **Business Central (preview)** tab, select **Hide if empty** > **Hide Empty Table Row**.
+
+## Hide Empty Table Column control
+
+Suppose you have a data item in the dataset, where no table header and table column should be visible in the absence of data in the field (across all rows in the data item). In this case, you can enclose that field in the table header with the **Hide Empty Table Column** control. For datasets where no values exist for that field, columns that include the filed are removed from the rendered report at runtime.
+
+A use case for this layout control is discounts, where you want to remove the discount column from the invoice if no discount is applied.
+
+1. In Word, select the field in the table header.
+1. In the **Business Central (preview)** tab, select **Hide if empty** > **Hide Empty Table Column**.
+
+> [!TIP]
+> You can combine **Hide Empty Table Column** with **Hide Field if Zero** to hide columns with zero values. Add the **Hide Field if Zero** to the field in the repeater, and then use **Hide Empty Table Column** on the corresponding field in the table header.
 
 ### Exercise: Make a version of the purchase invoice report where discount column is removed
 
-The RDLC layout for report 406, *Purchase - Invoice* has a table with a *Discount %* column. The demo data for Cronus should have plenty of purchase invoices without any discount. 
+The RDLC layout for report 406 **Purchase - Invoice** has a table with a **Discount %** column. The demonstration data for Cronus company should have plenty of purchase invoices without any discount.
 
-In this exercise, try to create an empty Word layout for report 406 and then see if you can re-create the table from the RDLC layout, but now in a version where the *Discount %* column is removed if no discount is given.
+In this exercise, create an empty Word layout for report 406. Then, recreate the table from the RDLC layout but use the **Hide Empty Table Column** control to remove the *Discount %* column in the rendered report no discount is given.
 
 ## Next steps
 
