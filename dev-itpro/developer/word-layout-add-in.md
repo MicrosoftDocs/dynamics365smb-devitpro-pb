@@ -26,10 +26,6 @@ The Dynamics 365 Business Central Word add-in includes several controls that you
 
     The **Business Central (preview)** tab appears in the ribbon.
 
-## Layout controls for document reports
-
-The Word add-in introduces *layout controls* that you use to encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data. It also includes a way for layout creators to include comments in the layout file. These comments aren't present in the document when the report is rendered.
-
 ## Comment control
 
 As a layout creator, you might want to include comments in the layout file to help yourself or the next person who maintains it. Comments don't appear in the document when the report is rendered. You can include text or tables in a comment control.
