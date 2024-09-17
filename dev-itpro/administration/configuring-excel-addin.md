@@ -29,62 +29,6 @@ For more information about how users work with Excel from [!INCLUDE[prod_short](
 > [!NOTE]
 > The Excel add-in is not available in the mobile apps.
 
-
-<!--
-## Deploy the Excel add-in for Business Central online
-
-For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, the administrator can deploy the add-in for all users. But users can also install the add-in themselves, provided they have permission to configure their Office experience.  
-
-> [!TIP]
-> In some organizations, administrators cannot deploy add-ins centrally. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide&preserve-view=true).
-
-### To deploy the Excel add-in for all users
-
-1. As the administrator, sign in to the Microsoft commercial website and find the add-in at [https://appsource.microsoft.com/product/office/WA104379629](https://appsource.microsoft.com/product/office/WA104379629).
-2. Choose the **Get it now** button.
-
-    You'll be redirected to the Microsoft 365 admin center.
-3. In the left panel, go to **Settings**, and then choose **Add-ins**.
-4. In the **Configure add-in** pane, specify which users to grant access to the add-in.
-5. Save your changes.
-
-When users now choose the **Edit in Excel** action, the add-in will launch as a pane in Excel. Each user will be automatically logged in and connected to their [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but if a user cannot connect automatically, you can unblock them by asking them to follow the steps in the [To configure the connection](#to-configure-the-connection) section.
-
-### To add the Excel add-in locally
-
-1. Open Excel, and then open any Excel workbook.
-2. On the **Insert** menu, choose **Office Add-ins**, and then choose **Admin managed** or **Store** as appropriate.
-3. Search for *Dynamics Office Add-In*, and then install the add-in.
-
-When the add-in is installed, it shows up as a panel in Excel. Next, you must configure the connection.
-
-### To configure the connection
-
-1. In the Dynamics 365 Excel add-in, choose **Add server information**, and then in the **Server URL** field, enter `https://exceladdinprovider.smb.dynamics.com`.
-2. Choose the OK button, and then confirm that the app reloads.
-3. When prompted, sign in with your Microsoft Entra account.
-4. Optionally, choose the environment and company that you want to connect to.
-
-The add-in is now connected to your [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and you can edit data and publish the changes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
-
-> [!TIP]
-> If the workbook is not automatically saved to the user's OneDrive, then recommend them to save all workbooks that they export from [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. When they open the workbook again, the connection is still available, so they do not have to configure the connection again.
-
-> [!NOTE]
-> In certain deployments, the administrator must configure network access to unblock the Excel add-in. For more information, see [Preparing Your Network for the Excel Add-In](configuring-network-for-addins.md).
-
-### Troubleshooting
-
-Sometimes, users run into problems with the Excel add-in. In this section, we provide tips for how to unblock users in certain circumstances.
-
-|Issue  |Solution or workaround  |Comments  |
-|---------|---------|---------|
-|The add-in doesn't start|Check if the add-in is deployed centrally, or if the user is blocked from installing it locally. | The admin can configure Office so that users cannot acquire add-ins. In those cases, the admin must deploy the add-in centrally. For more information, see [Deploy add-ins in the admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide&preserve-view=true).|
-|Data does not load into Excel|Test the connection by opening another list in Excel from [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. Alternatively, open the workbook in Excel in a browser.|If the user has specified a company name that contains special characters, the add-in might not be able to connect. |
-|Data can't publish back to [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. |Test the connection by opening the workbook in Excel in a browser. |Sometimes an extension can block the publishing job. If the page is extended or customized, remove the extensions, and then try again.|
-|The dates are wrong  |Excel might show times and dates in a different format than [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. This doesn't make them wrong, and the data in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] will not get messed up.|         |
-|For some list pages, editing multiple lines in Excel consistently causes errors. This condition can occur if OData calls include FlowFields and fields outside of the repeater control.|On the **Web Services** page, select the **Exclude Non-Editable FlowFields** and **Exclude Fields Outside of the Repeater** check boxes for the published page. Selecting these check boxes excludes non-editable FlowFields and field from the eTag calculation. |These check boxes are hidden by default. To show them on the **Web Services** page, use [personalization](/dynamics365/business-central/ui-personalization-user). |
--->
 ## Prepare Business Central
 
 Your on-premises deployment must meet the following prerequisites:
@@ -150,9 +94,6 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
     |-------|-----------|
     |Name|The name of your application as it will display to your users, such as *Excel Add-in for Business Central*.|
     |Supported account types|Specifies which accounts that you would like your application to support. For purposes of this article, select **Accounts in this organizational directory only**. |
-
-<!--
-    |Redirect URI|Set the **Select a platform** box to **Single-page application (SPA)**. In the box beside the platform box, enter the URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC200/SignIn`.<br /><br />The URL has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC200/SignIn` or `https://MyBcWebServer:Port/BC200/SignIn`.<br /><br /> **Important** The portion of the reply URL after the domain name (in this case `BC200/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|-->
 
 5. Modify the app's manifest to configure OAuth2 implicit grant flow and an *spa* type reply URL for the Excel add-in.
 
