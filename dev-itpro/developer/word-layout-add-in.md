@@ -15,9 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-The Dynamics 365 Business Central Word add-in includes several controls that you can use change the behavior Word layouts for document reports.
-
-- A comment control allows you to add a comment in the layout, which appears in Word while designing the layout but doesn't appear in the rendered report. Other controls let you encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data.
+The Dynamics 365 Business Central Word add-in includes several controls that you can use change the behavior Word layouts for document reports. A comment control allows you to add a comment in the layout, which appears in Word while designing the layout but doesn't appear in the rendered report. Other controls let you encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 

@@ -25,7 +25,6 @@ If you want to create a new Word layout from Visual Studio Code, do the followin
 1. Add a new layout entry of type Word and set the *LayoutFile* property to a value that is a valid name for a Word file, such as 'MyWordReport.docx'.
 1. Now build the extension (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate the Word file that includes the Custom XML part.
 
-
 ## How to lay out your report with Word layouts
 
 With Word layouts, you use Word as the editor for the report. Microsoft Word offers various features to help you format and layout your document reports. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that matches your organization. 
