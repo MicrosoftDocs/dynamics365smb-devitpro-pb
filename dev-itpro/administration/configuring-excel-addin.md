@@ -267,6 +267,15 @@ You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.m
         ```powershell
         Set-NAVServerConfiguration -ServerInstance <Business Central server instance> -KeyName ApiServicesEnabled -KeyValue true
         ```
+    4. Select the **Enable OData Services SSL** check box.
+
+       If you're using the Set-NAVServerConfiguration cmdlet, set the `ODataServicesSSLEnabled` key to `true`.
+
+        ```powershell
+        Set-NavServerConfiguration -ServerInstance <Business Central server instance> -KeyName ODataServicesSSLEnabled -KeyValue True
+        ```
+
+   
 
 ## Prepare devices and network for the Excel Add-In
 
