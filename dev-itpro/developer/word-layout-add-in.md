@@ -55,7 +55,7 @@ There are two ways to insert a comment:
 
       | Layout description | Version | Date of change |
       |-|-|-|
-      |This layout uses a comment| 1.0 | <todays date> |
+      |This layout uses a comment| 1.0 | \<todays date\> |
 
    1. Select the entire table, and then select the **Business Central (preview)** > **Insert layout comment**.
 
