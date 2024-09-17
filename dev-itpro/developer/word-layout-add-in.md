@@ -9,7 +9,7 @@ ms.collection:
 ms.date: 09/16/2024
 ms.custom: bap-template
 ---
-# Use the Word add-in for Business Central to layout document reports
+# Use the Business Central Word add-in to layout document reports
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -30,55 +30,57 @@ The Dynamics 365 Business Central Word add-in gives you a way to layout document
 
 The Word add-in introduces *layout controls* that you use to encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data. It also includes a way for layout creators to include comments in the layout file. These comments aren't present in the document when the report is rendered.
 
-## `comment` control
+## Comment control
 
 As a layout creator, you might want to include comments in the layout file to help yourself or the next person who maintains it. Comments don't appear in the document when the report is rendered. You can include text or tables in a comment control.
 
-Use comments for tasks such as describing difficult parts of the layout or adding a change log table at the end of the file to track different versions. Comments are useful when troubleshooting a report issue because it helps to have a copy of both the rendered report and the layout file.
+Use comments for tasks such as describing difficult parts of the layout or adding a change log table to track different versions. Comments are useful when troubleshooting a report issue because it helps to have a copy of both the rendered report and the layout file.
 
 There are two ways to insert a comment:
 
 - Add your text and tables, select the content and then **Business Central (preview)** > **Insert layout comment** to add the comment control. Clicking anywhere within the comment shows the **Hidden Comment** border.
 - Place your cursor where you want the comment, select **Business Central (preview)** > **Insert layout comment** to insert a comment control with the text *This text will not be printed in the final report*. Select inside the control to add the text and tables you want for the comment.
 
-### Example: Add a versioning table in a layout
+### Excercise: Add a versioning table in a layout
 
-1. Download a Word layout from Business Central:
+1. In Business Central, download a Word layout for a report:
 
    1. Sign in to Business Central.
    1. Search for and open the **Report Layouts** page.
    1. Choose a layout in the list that has the **Type** equal to **Word**.
    1. Select **Export Layout**.
-2. Edit the Word layout:
+. Edit the Word layout:
    1. Open the Word layout file you downloaded.
    1. At the end of the document, insert a table with three columns and two rows like this:
 
       | Layout description | Version | Date of change |
       |-|-|-|
       |This layout uses a comment| 1.0 | <todays date> |
+
    1. Select the entire table, and then select the **Business Central (preview)** > **Insert layout comment**.
 
-   When you place your cursor somewhere in the table, you notice that the control displays a **Hidden Comment" text.
+   When you place your cursor somewhere in the table, you notice that the control displays a **Hidden Comment** label.
 
-Now, try importing the layout back to Business Central: from the Report Layouts page, make sure you have focus on the report, and then use the *New* action to import the layout. Then use the *Run* action to test the layout. Hopefully, the comment is now gone (from the generated report.)
+1. In Business Central, import and run the layout
 
-## Hide if empty: the *Hide Field if Zero* control
+   1. In the **Report Layouts** page, select the report, thwn e report, and then use the *New* action to import the layout. Then use the *Run* action to test the layout. Hopefully, the comment is now gone (from the generated report.)
 
-In some reports, you might want to mimic the BlankZero or BlankNumbers properties that exist on table and page fields. You can achieve this in the dataset, but what if you don't have control over the AL code? Or if some layouts should show zeros and others blank them out? 
+## Hide if empty: Hide field if Zero control
+
+In some reports, you might want to mimic the [BlankZero](properties/devenv-blankzero-property.md) or [BlankNumbers](properties/devenv-blanknumbers-property.md) properties that exist on table and page fields. You can achieve this in the dataset, but what if you don't have control over the AL code? Or if some layouts should show zeros and others blank them out? 
 
 Here, the *Hide Field if Zero* control comes to the rescue: simply apply it to a field (standalone or as part of a repeater). At runtime, the Business Central server will then convert any zero values to a blank string.
 
-
-## Hide if empty: the *Hide Empty Table* control
+## Hide if empty: Hide Empty Table control
 
 If you have a data item in the dataset that might have data and might not, you can enclose the repeater in a table with the *Hide Empty Table* control. If no rows exist when rendering the report at runtime, the Business Central server will then simply cut the enclosing table from the document. 
 
-**Note!** The *Hide Empty table* you have to place on the table itself, not on the repeater.
+> [!NOTE]
+> You must apply the **Hide Empty table** control to the table, not the repeater.
 
-## Hide if empty: the *Hide Empty Table Row* control
+## Hide if empty: Hide Empty Table Row* control
 
 If you have a data item in the dataset, where one field should determine if the row is shown, you can enclose that fields in the repeater with the *Hide Empty Table Row* control. For rows, where that field has no value, when rendering the report at runtime, the Business Central server will then simply cut the row from the table. 
-
 
 ## Hide if empty: the *Hide Empty Table Column* control
 
