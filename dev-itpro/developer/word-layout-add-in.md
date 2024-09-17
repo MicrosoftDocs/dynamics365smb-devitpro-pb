@@ -9,7 +9,7 @@ ms.collection:
 ms.date: 09/16/2024
 ms.custom: bap-template
 ---
-# Use the Business Central Word add-in to layout document reports
+# Use the Word add-in for report layouts
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

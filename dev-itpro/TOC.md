@@ -893,7 +893,7 @@
 ###### [Creating an Excel layout report](developer/devenv-howto-excel-report-layout.md)
 ###### [Working with Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
-###### [Use the Word add-in on Word layouts](developer/word-layout-add-in.md)
+###### [Use the Word add-in for report layouts](developer/word-layout-add-in.md)
 ###### [Using hyperlinks in Word layouts](developer/devenv-hyperlinks-in-word-report-layouts.md)  
 ###### [Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ###### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
