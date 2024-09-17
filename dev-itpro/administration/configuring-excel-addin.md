@@ -129,10 +129,11 @@ When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured f
 6. Under **Manage**, select **Token configuration**. Under **Optional claims** select **Add optional claim**. Under **Token type** pick **Access**.
 Under **Claim** pick **email** and **upn**. Click **Add**, if you get a dialog with the option to **Turn on the microsoft Graph email, profile permissions (required for claims to appear in token)**, then check this box and click **Add**. 
 7. Please note: After performing these steps, especially step 6, if the application have already issued a token to the Excel Add In it would be a good idea to clear any caches to ensure that you get the **upn** and **email** claims. To clear the cache of the Excel Add In:
-    - Right-click the Excel add-in pane, then select Inspect top open the browser developer tools.
+    - Right-click the Excel add-in pane, then select Inspect to open the browser developer tools.
     - Go to the Application tab.
     - In the Storage pane, clear instances of az689774.vo.mssecnd.net under Local Storage, Session Storage, Cookies and Shared Storage.  To clear, right-click an instance and select Clear.
     - Then try to refresh the add-in by closing and opening the Excel file again or pressing Ctrl+R while being inside the developer tools.
+    - If the Add In Prompts you for login again, then you will receive a token with the new claims.
 
 For information about how to expose the Web API, go to [Quickstart: Configure an application to expose web APIs](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis).
 
@@ -158,6 +159,7 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
     1. From the application's **Overview**, select **Manifest**.
     2. There appears to be two editors in this tab now, **Microsoft Graph App Manifest (New)** and **AAD Graph App Manifest (Deprecating Soon)**. The following steps are for the **AAD Graph App Manifest (Deprecating Soon)** tab. Keep in mind that if the deprecated tab is not available
     then it appears that this is the mapping of properties that you should use to fill in the new manifest:
+
     |Old Property|New Property|
     |-----------|--------------| 
     | replyUrlsWithType | spa.redirectUris|
