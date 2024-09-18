@@ -180,7 +180,7 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
     5. Search for Business Central API by using registered application's name or application ID.
     6. Select the permission from the list, then select **Add Permission**. 
 
-    For information, go to [Quickstart: Configure a client application to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).  
+    Learn more at [Quickstart: Configure a client application to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).  
 
 1. On the application's **Overview** page, copy the **Application (Client) ID** that is assigned to Excel add-in application.
 
