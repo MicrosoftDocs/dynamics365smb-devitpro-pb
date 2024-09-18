@@ -76,7 +76,7 @@ When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured f
    1. In the **Token type** pane, choose **Access**.
    1. Under **Claim**, select **email** and **upn**, and then select **Add**.
 
-      If a dialog appears with the checkbox **Turn on the microsoft Graph email, profile permissions (required for claims to appear in token)**, select the checkbox, and then select **Add**.
+      If a dialog appears with the checkbox **Turn on the Microsoft Graph email, profile permissions (required for claims to appear in token)**, select the checkbox, and then select **Add**.
 1. After you perform the previous steps, especially step 6, the application might issue a token to the Excel add-in. It's recommended to clear any caches to ensure that you get the **upn** and **email** claims. To clear the cache of the Excel add-in, do the following steps:
 
     1. In Excel, right-click the Excel add-in pane, and then select **Inspect** to open the browser developer tools.
@@ -247,7 +247,7 @@ Network services such as proxies or firewalls must allow routing between each cl
 
 ## Next steps
 
-The next step is to get the add-in installed in Excel of the users. As an administrator, you can set up Centralized Deployment in Microsoft 365 admin center to automatically install the add-ins to users in your organization. Or, you can allow users to install it themselves from the Office Store. Learn more at [Get the Business Central Add-in for Excel](/dynamics365/business-central/admin-deploy-excel-addin) in the business functionality help.
+The next step is to get the add-in installed in Excel of the users. As an administrator, you can set up Centralized Deployment in Microsoft 365 admin center to automatically install the add-ins to users in your organization. Or you can allow users to install it themselves from the Office Store. Learn more at [Get the Business Central Add-in for Excel](/dynamics365/business-central/admin-deploy-excel-addin) in the business functionality help.
 
 ## Related information
 
