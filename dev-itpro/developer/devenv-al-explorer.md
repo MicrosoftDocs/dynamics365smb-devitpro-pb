@@ -5,8 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 07/01/2024
-ms.custom: bap-template
+ms.date: 09/18/2024
 ms.collection: get-started
 ---
 
@@ -30,20 +29,21 @@ You can choose when to show the **AL Explorer** as you start up Visual Studio Co
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-When you search in the AL Explorer, 2 wildcards are supported:
+When you search in the AL Explorer, you can use two types of wildcards to refine your search:
 
-- `*` means zero or more characters
-- `?` means any single character
+- `*` (asterisk): Represents zero or more characters. Use this wildcard when you want to match any sequence of characters, including an empty sequence.
+- `?` (question mark): Represents any single character. Use this wildcard when you want to match exactly one character.
 
 ### Examples
 
-|Pattern | Description | Examples|
-|-|-|-|
-|Customer* | Starts with **Customer** | 'Customer Card', 'Customer'|
-|*Card | Ends with **Card** | 'Customer Card', 'Item Card', 'SomeCard'|
-|Customer*Card | Starts with **Customer** and ends with **Card** | 'Customer Card', 'Customer Accounts Card'|
-|\*Customer\* | Customer anywhere | 'Customer', 'Apply Customer Entries'|
+| Pattern         | Description                                      | Examples                          |
+|-----------------|--------------------------------------------------|-----------------------------------|
+| `Customer*`     | Matches any string that starts with **Customer** | 'Customer Card', 'Customer'       |
+| `*Card`         | Matches any string that ends with **Card**       | 'Customer Card', 'Item Card', 'SomeCard' |
+| `Customer*Card` | Matches any string that starts with **Customer** and ends with **Card** | 'Customer Card', 'Customer Accounts Card' |
+| `*Customer*`    | Matches any string that contains **Customer** anywhere | 'Customer', 'Apply Customer Entries' |
 
+By using these wildcards, you can perform flexible searches in the AL Explorer, which makes it easier to find the objects that you're looking for.
 
 ## Go to source code
 
