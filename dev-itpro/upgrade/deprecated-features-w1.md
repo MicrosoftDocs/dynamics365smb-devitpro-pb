@@ -31,29 +31,29 @@ The following features will be removed in 2026 release wave 1.
 
 The following features are marked as `obsolete:pending` in 2024 release wave 2.
 
-### Changing how the Create New Company assisted setup creates setup and evaluation data
+### How the Create New Company assisted setup creates setup and evaluation data
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| We've changed the way we prepare databases for new evaluation and production companies. Instead of using configuration packages to add demo and setup data, you now use the **Contoso Coffee demo data** app. We shipped the Contoso Coffee demo data app in an earlier release to cover gaps in our demo and setup data, such as Manufacturing, Service, and Warehouse. Because the app is easy to use and now provides the comprehensive setup and demo data that was previously available in configuration packages, we're removing the configuration packages. To do that, we had to change how we initialize new companies with data in the **Create New Company** assisted setup guide. Our changes might affect your extensions. For details about what we removed, explore the Object and What's removed listings. |
+|Replaced| We've changed the way we prepare databases for new evaluation and production companies. Instead of using configuration packages to add demo and setup data, you now use the **Contoso Coffee demo data** app. We shipped the Contoso Coffee demo data app in an earlier release to cover gaps in our demo and setup data, such as Manufacturing, Service, and Warehouse. Because the app is easy to use and now provides the comprehensive setup and demo data that was previously available in configuration packages, we're removing the configuration packages. To do that, we had to change how the **Create New Company** assisted setup guide initializes new companies with data. Our changes might affect your extensions. For details about what we removed, explore the Object and What's removed listings. |
 |Object| What's removed |
 |Enum 9120 "Company Data Type (Internal)"|The object itself|
 |Enum 9121 "Company Data Type (Sandbox)"|The object itself|
 |Enum 9122 "Company Data Type (Production)"|The object itself|
 |Codeunit 1799 "Import Config. Package File"|The object itself|
-|Codeunit 1800 "Assisted Company Setup"|Procedures:</br>WaitForPackageImportToComplete, </br>FillCompanyData, </br>ExistsConfigurationPackageFile, </br>FindConfigurationPackageFile, </br>SetUpNewCompany</br></br>Events:</br>OnAfterAssistedCompanySetupStatusEnabled,</br>OnBeforeScheduleTask|
+|Codeunit 1800 "Assisted Company Setup"|Procedures:</br>* WaitForPackageImportToComplete, </br>* FillCompanyData, </br>* ExistsConfigurationPackageFile, </br>* FindConfigurationPackageFile, </br>* SetUpNewCompany</br></br>Events:</br>* OnAfterAssistedCompanySetupStatusEnabled,</br>* OnBeforeScheduleTask|
 |Codeunit 1805 "Import Config. Package Files"| The object itself|
-|Table 1802 "Assisted Company Setup Status"|Fields:</br> Import Failed,</br> Package Imported</br></br>Procedure: SetEnabled|
-|Page 9192 "Company Creation Wizard"|Events:</br>OnBeforeValidateCompanyType,</br>OnBeforeValidateCompanyType,</br>OnOpenPageCheckAdditionalDemoData|
+|Table 1802 "Assisted Company Setup Status"|Fields:</br>* Import Failed,</br>* Package Imported</br></br>Procedure:</br>* SetEnabled|
+|Page 9192 "Company Creation Wizard"|Events:</br>* OnBeforeValidateCompanyType,</br>* OnBeforeValidateCompanyType,</br>* OnOpenPageCheckAdditionalDemoData|
 |Replaced|In addition to making it easier to install rich demo data, this change also enables another improvement. We're loosening up the relatively rigid update policies for major and minor updates that were in place. We're giving administrators extended update periods. For major updates, we're offering five-month update periods to give more time to test and prepare. For example, partners can spread out the workload of updating customer environments, and developers can verify that all apps are compatible. We've also given administrators the ability to opt out of minor updates during a grade period. To learn more, go to [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly).|
 
-### User groups are replaced by security groups
+### User groups
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|||
+|Replaced|User groups are replaced by security groups. Security groups were introduced in Business Central in 2023 release wave 1. They make it easier for administrators to manage user permissions by allowing them to group users by department, job function, and so on. Administrators assign the permissions to the group that its members need to do their jobs. Security groups are based on groups in Microsoft 365 admin center or Azure portal. That benefits administrators because they can use their security groups with other Dynamics 365 apps. For example, if salespeople use Business Central and SharePoint, administrators don't have to recreate the group and its members.<br><br>To learn more about security groups, go to [Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups).|
 
-### Time sheets 
+### Time sheets
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
