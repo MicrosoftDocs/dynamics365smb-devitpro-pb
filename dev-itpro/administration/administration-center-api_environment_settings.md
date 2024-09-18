@@ -275,37 +275,6 @@ DELETE /admin/v2.22/applications/{applicationFamily}/environments/{environmentNa
 
 `environmentName` - Name of the targeted environment
 
-## Get foreign tenants with access to Business Central
-
-**INTRODUCED IN:** API version 2.22
-
-Returns a list of all foreign tenants that have access to Business Central, either because the tenant has an active GDAP relationship that includes a supported Entra role or because the tenant is home to a multitenant app that has permissions to Business Central APIs.
-
-> [!IMPORTANT]
-> This API endpoint can only be used by internal administrators. Authentication as delegated administrator or application is not supported.
-
-```
-GET /admin/v2.22/aadTenantInfo/foreigntenants
-```
-
-### Response
-```
-{
-  value:  [
-    {
-      "tenantId": "guid",
-      "displayName": "Contoso",
-      "domain": "contoso.com",
-      "accessType": "Gdap | App | GdapAndApp"
-    },
-    {
-      ...
-    }
-    ...
-  ]
-}
-```
-
 ## Get partner access settings
 
 **INTRODUCED IN:** API version 2.22
