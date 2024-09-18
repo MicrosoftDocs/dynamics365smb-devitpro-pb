@@ -4,7 +4,7 @@ author: jswymer
 description: Provides an overview of the licensing in Business Central
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 05/30/2024
+ms.date: 08/08/2024
 ms.reviewer: solsen
 ---
 
@@ -59,7 +59,7 @@ Now, you can explore such functionality by creating an evaluation company in eit
 
 ## Reassigning licenses
 
-The licensing terms in the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) document don't allow temporary assignment of a license that belongs to one user to another user.
+The licensing terms in the [Online Services Terms](https://go.microsoft.com/fwlink/?LinkId=2180986) <!--(https://www.microsoft.com/licensing/product-licensing/products)-->document don't allow temporary assignment of a license that belongs to one user to another user.
 
 Most, but not all, licenses can be reassigned. Except as permitted in this paragraph or in the Online Service-specific Terms, the customer can't reassign a license on a short-term basis, meaning within 90 days of the latest assignment. The customer can reassign a license on a short-term basis to cover a user's absence or the unavailability of a device that is out of service. Reassignment of a license for any other purpose must be permanent. When a customer reassigns a license from one device or user to another, they must block access and remove any related software from the former device or from the former user's device.
 
