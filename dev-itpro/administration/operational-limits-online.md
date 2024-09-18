@@ -3,7 +3,7 @@ title: Operation Limits in Dynamics 365 Business Central
 description: Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments.
 author: swinarko
 ms.custom: bap-template
-ms.date: 08/19/2024
+ms.date: 09/16/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: sawinark
@@ -97,6 +97,10 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Max rows | The maximum number of rows that can be processed in a report. If exceeded, the report will be canceled by the server.|10,000,000|
 
 For more information on report limits, see [Report limits](../developer/devenv-report-object.md#report-limits).
+
+## <a name="Excel"></a>Excel limits
+
+Excel has limits on the total number of rows and columns on a worksheet. This means that [!INCLUDE[prod_short](../includes/prod_short.md)] features such as Open in Excel, Edit in Excel, Get report data in Excel without a layout, and Excel layouts can't exceed these limits. Learn more in [Excel specifications and limits](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3). 
 
 ## Query limits
 

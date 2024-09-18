@@ -4,7 +4,7 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 07/22/2024
+ms.date: 08/29/2024
 ms.custom: bap-template
 ms.topic: whats-new 
 ---
@@ -28,6 +28,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|24.5|Application Build 24.5 Platform Build 24.0|September 2024|[Update 24.5 for Microsoft Dynamics 365 Business Central online 2024 release wave 1](whatsnew-update-24-5.md)|
 |24.4|Application Build 24.4 Platform Build 24.0|August 2024|[Update 24.4 for Microsoft Dynamics 365 Business Central online 2024 release wave 1](whatsnew-update-24-4.md)|
 |24.3|Application Build 24.3 Platform Build 24.0|July 2024|[Update 24.3 for Microsoft Dynamics 365 Business Central online 2024 release wave 1](whatsnew-update-24-3.md)|
 |24.2|Application Build 24.2 Platform Build 24.0|June 2024|[Update 24.2 for Microsoft Dynamics 365 Business Central online 2024 release wave 1](whatsnew-update-24-2.md)|
@@ -40,6 +41,6 @@ For earlier versions, see the archived release plans at [Release plans for Dynam
 
 New customers automatically get the latest version. If you're an existing partner/customer, check your email for notifications about updates. <!-- standard wording for apps with auto-update. If the app has an article with instruction for admins to apply an update, then link to that -->
 
-Learn more at [Manage updates in the admin center](../administration/tenant-admin-center-update-management.md). Learn more about updates at [Major updates and minor updates](../administration/update-rollout-timeline.md).  
+Learn more in [Manage updates in the admin center](../administration/tenant-admin-center-update-management.md). Learn more about updates in [Major updates and minor updates](../administration/update-rollout-timeline.md).  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
