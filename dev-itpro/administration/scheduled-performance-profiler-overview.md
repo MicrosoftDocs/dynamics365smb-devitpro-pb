@@ -131,5 +131,6 @@ Due to the background processing of profiles, it's possible that some profiles w
 
 ## Related information
 
+[Performance Profiler overview](performance-profiler-overview.md)  
 [Managing Technical Support](manage-technical-support.md)  
-[Escalate support issues to Microsoft](raise-support-case.md)
+[Escalate support issues to Microsoft](raise-support-case.md)  
