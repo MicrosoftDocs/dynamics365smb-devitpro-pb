@@ -36,7 +36,7 @@ Encoding = UTF16;
   
 ## Remarks  
 
-The two options available for this property are UTF8 and UTF16. UTF8 is the default setting. Information about the encoding system used is inserted into the header of the XML document.  
+The three options available for this property are UTF8, UTF16, and ISO88592. UTF8 is the default setting. Information about the encoding system used is inserted into the header of the XML document.
   
 ## See Also  
 
