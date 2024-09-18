@@ -29,7 +29,7 @@ The main benefits of using the `this` keyword are:
 The CodeCop rule [AA0248](analyzers/codecop-aa0248.md) is enabled by default with a severity level of `hidden`. Hidden means that it appears as three dots in the editor, but doesn't show up as a diagnostic in the **Problems** view in Visual Studio Code or in any pipelines. The CodeCop rule identifies where you can take advantage of using the `this` keyword. Additionally, a code action can help you update existing code to use the `this` keyword. Learn more in [AL code actions](devenv-code-actions.md).
 
 > [!NOTE]  
-> The newest version of the System Application has been updated to use the `this` keyword for referencing methods and globals within the same object.
+> The newest version of the [System Application](/dynamics365/business-central/application/system-application/module/system-application) has been updated to use the `this` keyword for referencing methods and globals within the same object.
 
 ## Related information
 
