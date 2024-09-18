@@ -31,20 +31,33 @@ The following features will be removed in 2026 release wave 1.
 
 The following features are marked as `obsolete:pending` in 2024 release wave 2.
 
-### The Create New Company assisted setup uses different logic to populate setup and evaluation data
+### Changing how the Create New Company assisted setup creates setup and evaluation data
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| As announced in the [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly), starting with 2024 release wave 2 administrators have more flexibility to update environments in a way that suits their needs.</br>To make extended periods for major releases and optional minor updates possible, there some changes in how databases are prepared. Instead of using configuration packages to populate evaluation and production companies with demo and setup data, it uses code from the **Contoso Coffee demo data** app. The Contoso Coffee demo data app was introduced several releases ago and covered multiple gaps in demo and setup data, such as Manufacturing, Service, and Warehouse. With this release, it gets remaining demo and setup data, that you earlier saw in the **Configuration Packages** page, when choose the **Import Predefined Package** action.</br>As predefined configuration packages won’t be available, the logic that initialize new company with data also has to change. The **Create New Company** assisted setup will get some modifications that might affect your extension. You can find details in the table below |
-|Object| Removed |
-|Enum 9120 "Company Data Type (Internal)"|the object itself|
-|Enum 9121 "Company Data Type (Sandbox)"|the object itself|
-|Enum 9122 "Company Data Type (Production)"|the object itself|
-|Codeunit 1799 "Import Config. Package File"|the object itself|
+|Replaced| We've changed the way we prepare databases for new evaluation and production companies. Instead of using configuration packages to add demo and setup data, you now use the **Contoso Coffee demo data** app. We shipped the Contoso Coffee demo data app in an earlier release to cover gaps in our demo and setup data, such as Manufacturing, Service, and Warehouse. Because the app is easy to use and now provides the comprehensive setup and demo data that was previously available in configuration packages, we're removing the configuration packages. To do that, we had to change how we initialize new companies with data in the **Create New Company** assisted setup guide. Our changes might affect your extensions. For details about what we removed, explore the Object and What's removed listings. |
+|Object| What's removed |
+|Enum 9120 "Company Data Type (Internal)"|The object itself|
+|Enum 9121 "Company Data Type (Sandbox)"|The object itself|
+|Enum 9122 "Company Data Type (Production)"|The object itself|
+|Codeunit 1799 "Import Config. Package File"|The object itself|
 |Codeunit 1800 "Assisted Company Setup"|Procedures:</br>WaitForPackageImportToComplete, </br>FillCompanyData, </br>ExistsConfigurationPackageFile, </br>FindConfigurationPackageFile, </br>SetUpNewCompany</br></br>Events:</br>OnAfterAssistedCompanySetupStatusEnabled,</br>OnBeforeScheduleTask|
-|Codeunit 1805 "Import Config. Package Files"| the object itself|
+|Codeunit 1805 "Import Config. Package Files"| The object itself|
 |Table 1802 "Assisted Company Setup Status"|Fields:</br> Import Failed,</br> Package Imported</br></br>Procedure: SetEnabled|
 |Page 9192 "Company Creation Wizard"|Events:</br>OnBeforeValidateCompanyType,</br>OnBeforeValidateCompanyType,</br>OnOpenPageCheckAdditionalDemoData|
+|Replaced|In addition to making it easier to install rich demo data, this change also enables another improvement. We're loosening up the relatively rigid update policies for major and minor updates that were in place. We're giving administrators extended update periods. For major updates, we're offering five-month update periods to give more time to test and prepare. For example, partners can spread out the workload of updating customer environments, and developers can verify that all apps are compatible. We've also given administrators the ability to opt out of minor updates during a grade period. To learn more, go to [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly).|
+
+### User groups are replaced by security groups
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|||
+
+### Time sheets 
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|||
 
 ## Changes in 2024 release wave 1
 
