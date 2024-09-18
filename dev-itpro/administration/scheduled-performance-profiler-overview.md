@@ -2,7 +2,7 @@
 title: Scheduled performance profiler overview
 description: Describes how to use the Profiler Schedules page in Business Central to troubleshoot slow processes across time.
 ms.author: sodragon
-ms.date: 08/06/2024
+ms.date: 09/18/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 author: sodragon
@@ -13,7 +13,7 @@ author: sodragon
 In some cases, many different business processes can interfere with each other, which can cause some of them to take longer than expected. Diagnosing these issues becomes more challenging because they can be transient as they depend on specific users' workflows
 or even happen outside of business hours. An example could be when scheduled jobs are run at the same time. 
 
-Your administrator can use the **Profiler Schedules** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to set up schedules for when snapshots of the processes should be recorded. A schedule defines the time slots and filters for which activity should be recorded for a particular user. While recording, the profiler monitors all the activities that match the filters and produces individual profiles for each of them separately. They allow for retroactive investigation on individual user interactions or system processes by providing a view of what processes were running on the system during the defined time slots. Identifying where the holdup is can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself.
+Your administrator can use the **Profiler Schedules** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to set up schedules for when snapshots of the processes should be recorded. A schedule defines the time slots and filters for which activity should be recorded for a particular user. While recording, the profiler monitors all the activities that match the filters and produces individual profiles for each of them separately. They allow for retroactive investigation on individual user interactions or system processes by providing a view of what processes were running on the system during the defined time slots. Identifying where the holdup is, can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself.
 
 ## Setting up a profiler schedule
 
@@ -66,16 +66,17 @@ This overview is the same as the one created for the in-client performance profi
 The profiles can also be analyzed via the AL profiler in Visual Studio Code after downloading them. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).
 
 An overview of the fields of the **Performance Profiles** page can be found below:
+
 | Name                  | Description                                                    |
 |-----------------------|----------------------------------------------------------------|
-| Start Time            | When the profile started                                       |
-| User Name             | The name of the user associated with the activity              |
-| Activity Type         | The type of activity for which the schedule is created         |
-| Activity Description  | A system generated description of the activity                 |
-| Activity Duration     | The duration of the recorded activity, not including idle time |
-| AL Execution Duration | The duration of the executed AL code in the recorded activity,  not including idle time  |
-| Correlation ID        | An ID used to correlate the activity with internal telemetry   |
-| Schedule ID           | The ID of the associated schedule                              |
+| Start Time            | When the profile started-                                      |
+| User Name             | The name of the user associated with the activity.             |
+| Activity Type         | The type of activity for which the schedule is created.        |
+| Activity Description  | A system generated description of the activity.                |
+| Activity Duration     | The duration of the recorded activity, not including idle time.|
+| AL Execution Duration | The duration of the executed AL code in the recorded activity,  not including idle time. |
+| Correlation ID        | An ID used to correlate the activity with internal telemetry.  |
+| Schedule ID           | The ID of the associated schedule.                              |
 
 ## Downloading performance profiles
 
@@ -128,7 +129,7 @@ First, ensure that the **Activity Duration Threshold** and **Sampling Frequency*
 Due to the background processing of profiles, it's possible that some profiles will be processed after their associated schedule is deleted. The system automatically deletes these profiles in a regular interval.
 
 
-## See also
+## Related information
 
 [Managing Technical Support](manage-technical-support.md)  
 [Escalate support issues to Microsoft](raise-support-case.md)
