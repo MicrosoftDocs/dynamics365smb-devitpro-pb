@@ -76,7 +76,7 @@ When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured f
    1. In the **Token type** pane, choose **Access**.
    1. Under **Claim**, select **email** and **upn**, and then select **Add**.
 
-      If a dialog appears with the checkbox **Turn on the microsoft Graph email, profile permissions (required for claims to appear in token)**, select the chexkbox, and then select **Add**.
+      If a dialog appears with the checkbox **Turn on the microsoft Graph email, profile permissions (required for claims to appear in token)**, select the checkbox, and then select **Add**.
 1. After you perform the previous steps, especially step 6, the application might issue a token to the Excel add-in. It's recommended to clear any caches to ensure that you get the **upn** and **email** claims. To clear the cache of the Excel add-in, do the following steps:
 
     1. In Excel, right-click the Excel add-in pane, and then select **Inspect** to open the browser developer tools.
@@ -117,18 +117,10 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
     1. In the `"spa.redirectUris":[]` key, add the following lines:
 
         ```json 
-        {
-            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/DynamicsApp.html"
-        },
-        {
-            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/Authenticated.html"
-        },
-        {
-            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/AuthenticationDialog.html"
-        },
-        {
-            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/SignOutDialog.html"
-        }
+        "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/DynamicsApp.html",
+        "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/Authenticated.html",
+        "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/AuthenticationDialog.html",
+        "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/SignOutDialog.html"
         ```  
 
         Remember to add a comma before or after this entry, depending on where you add it in the list.
