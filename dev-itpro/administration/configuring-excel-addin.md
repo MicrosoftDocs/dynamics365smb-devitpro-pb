@@ -110,25 +110,24 @@ When Microsoft Entra authentication was set up for your [!INCLUDE[prod_short](..
     1. In the editor, set `"web.implicitGrantSettings.enableIdTokenIssuance"` and `"web.implicitGrantSettings.enableAccessTokenIssuance"` keys to `true`:
 
         ```json
-    			"enableAccessTokenIssuance": true,
-    			"enableIdTokenIssuance": true
+        "enableAccessTokenIssuance": true,
+        "enableIdTokenIssuance": true
         ```
 
     1. In the `"spa.redirectUris":[]` key, add the following lines:
 
         ```json 
-                {
-                    "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/DynamicsApp.html"
-                },
-                {
-                    "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/Authenticated.html"
-                },
-                {
-                    "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/AuthenticationDialog.html"
-                },
-                {
-                    "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/SignOutDialog.html"
-                }
+        {
+            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/DynamicsApp.html"
+        },
+        {
+            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/Authenticated.html"
+        },
+        {
+            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/AuthenticationDialog.html"
+        },
+        {
+            "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/App/SignOutDialog.html"
         }
         ```  
 
