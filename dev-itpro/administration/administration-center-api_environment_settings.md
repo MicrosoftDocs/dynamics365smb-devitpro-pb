@@ -275,14 +275,48 @@ DELETE /admin/v2.22/applications/{applicationFamily}/environments/{environmentNa
 
 `environmentName` - Name of the targeted environment
 
+## Get foreign tenants with access to Business Central
+
+**INTRODUCED IN:** API version 2.22
+
+Returns a list of all foreign tenants that have access to Business Central, either because the tenant has an active GDAP relationship that includes a supported Entra role or because the tenant is home to a multitenant app that has permissions to Business Central APIs.
+
+> [!IMPORTANT]
+> This API endpoint can only be used by internal administrators. Authentication as delegated administrator or application is not supported.
+
+```
+GET /admin/v2.22/aadTenantInfo/foreigntenants
+```
+
+### Response
+```
+{
+  value:  [
+    {
+      "tenantId": "guid",
+      "displayName": "Contoso",
+      "domain": "contoso.com",
+      "accessType": "Gdap | App | GdapAndApp"
+    },
+    {
+      ...
+    }
+    ...
+  ]
+}
+```
+
 ## Get partner access settings
 
 **INTRODUCED IN:** API version 2.22
 
 Returns a boolean value that indicates whether the environment allows access for delegated administrators and foreign multitenant apps and a list of allowlisted foreign Entra tenant IDs.
 
+> [!IMPORTANT]
+> This API endpoint can only be used by internal administrators. Authentication as delegated administrator or application is not supported.
+
 ```
-GET /admin/v2.22/applications/{applicationType}/environments/{environmentName}/settings/partneraccess
+GET /admin/v2.22/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
 
 ### Route Parameters
@@ -295,16 +329,9 @@ GET /admin/v2.22/applications/{applicationType}/environments/{environmentName}/s
 
 ```
 {
-  "partnerAccessEnabled": true/false
-  "allowedPartnerTenants": [
-    {
-      "tenantId": "guid1",
-      "displayName": "string"          
-    },
-    {
-      "tenantId": "guid2",
-      "displayName": "string"          
-    },
+  "status": "Disabled | AllowAllPartnerTenants | AllowSelectedPartnerTenants",
+  "allowedPartnerTenantIds": ["guid1", "guid"2, ...] //Only if status is "AllowSelectedPartnerTenants"
+}
 ```
 
 ## Update partner access settings
@@ -313,8 +340,11 @@ GET /admin/v2.22/applications/{applicationType}/environments/{environmentName}/s
 
 Enable/disable delegated administrators and foreign multitenant apps to/from administering and accessing the environment, optionally allowlist only specific foreign Entra tenants to administer and access the environment.
 
+> [!IMPORTANT]
+> This API endpoint can only be used by internal administrators. Authentication as delegated administrator or application is not supported.
+
 ```
-PUT /admin/v2.22/applications/{applicationType}/environments/{environmentName}/settings/partneraccess
+PUT /admin/v2.22/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
 
 ### Route Parameters
@@ -327,8 +357,8 @@ PUT /admin/v2.22/applications/{applicationType}/environments/{environmentName}/s
 
 ```
 {
-  "partnerAccessEnabled": true/false
-  "allowedPartnerTenantIds": [guid1, guid2, ...]
+  "status": "Disabled | AllowAllPartnerTenants | AllowSelectedPartnerTenants",
+  "allowedPartnerTenantIds": ["guid1", "guid2", ...] //Only if status is "AllowSelectedPartnerTenants"
 }
 ```
 
