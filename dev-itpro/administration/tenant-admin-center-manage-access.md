@@ -11,19 +11,17 @@ ms.custom: bap-template
 ---
 # Manage Access to Environments
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+This article describes [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] features that you use for controlling user access to environments. In addition to what you do in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], these features typically require configuration and set up in either [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or another product or service.
 
-This article describes admin center features that you use for controlling user access to environments. In addition to what you do in the admin center, these features typically require configuration and set up in either Business Central or another product or service.
-
-## Manage access using Microsoft Entra groups
+## Manage access for internal users
 
 To manage access at the environment level, you can assign a Microsoft Entra group to the environment. By assigning a Microsoft Entra group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Microsoft Entra ID will be added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
 
 From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Microsoft Entra ID.
 
 > [!NOTE]
-> The restrictions imposed by a security group don't apply to administrators. Local and delegated admins can freely sign in to all environments, regardless of the assigned group.
- 
+> The restrictions imposed by a security group assigned to an environment don't apply to administrators. Internal administrators can freely sign in to all environments, regardless of the assigned group. Access for delegated administrators is determined by the Partner access setting on the environment.
+
 ### Assign, change, or remove a group
 
 Before you can assign a Microsoft Entra group to an environment, the group must be created in your Microsoft Entra tenant. For more information, see [Create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
@@ -46,14 +44,32 @@ Before you can assign a Microsoft Entra group to an environment, the group must 
 > [!NOTE]
 > If you change or remove a group, it can take a while before the changes to take effect or access is revoked from users.
 
+## Manage access for delegated administrators and multitenant applications
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] customers working with multiple partners may want to control which partner(s) and [multitenant application(s)](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow) can access and administer which environment(s). Internal administrators can use the **Partner access** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to control whether an environment is accessible and administrable by delegated administrators and multitenant applications, and, if so, to control from which Entra tenant(s) these delegated administrators and multitenant applications should come to do so.
+
+> [!IMPORTANT]
+> Up to ten Entra tenants can be allowlisted per environment to enable them to access and administer the environment.
+
+Environments that are set up not to allow access and administration by the authenticating entity, either because no partner access is allowed at all or because the home Entra tenant of the delegated administrator or multitenant app is not allowlisted, are not visible or administrable in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and the Admin Center API, and cannot be accessed using any client or API.
+
+The Partner access setting does not override the tenant-level prerequisites for any delegated administrator or multitenant application to authenticate to a customer tenant; it only allows for more granular access controls on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment level after tenant-level prerequisites are in place. Delegated administrators that do not have a Entra role that allows for administration and access of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments assigned in the customer tenant as part of an active [GDAP relationship](partner-center/customers/gdap-introduction) cannot access the customer tenant even if their home Entra tenant is allowlisted in the Partner access settings for the environment. Multitenant applications that are not registered in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and/or in the environment itself, or for which no [consent](/entra/identity/enterprise-apps/grant-admin-consent) has been granted in the customer tenant, cannot access the customer tenant even if their home Entra tenant is allowlisted in the Partner access settings for the environment.
+
+To turn access on or off or to limit access to selected home Entra tenants, complete the following steps:
+
+> [!IMPORTANT]
+> The Partner access setting can only be controlled by internal administrators.
+
+1. Select **Environments**, then select the environment for which you want to change partner access.
+2. On the environments details page, select **Modify** for the **Partner access** setting.
+3. In the **Partner access** pane, turn the switch on or off. If off, no delegated administrators or multitenant apps not homed in the customer tenant can administer or access the environment.
+4. Optionally, if on, up to 10 environments can be allowlisted to only allow administration and access from selected tenants.
+5. Select **Save** and accept the confirmation dialog. The change takes effect immediately.
+
 ## Manage access with Microsoft 365 licenses
 
-To help [!INCLUDE [prod_short](../developer/includes/prod_short.md)] users easily share and collaborate on business data with their coworkers, you can enable access with Microsoft 365 licenses. When enabled, users within the same organization who have an applicable Microsoft 365 license will be able to read (but not write) Business Central data that is shared with them in Microsoft Team&mdash;without needing a Business Central license.
+To help [!INCLUDE [prod_short](../developer/includes/prod_short.md)] users easily share and collaborate on business data with their coworkers, you can enable access with Microsoft 365 licenses. When enabled, users within the same organization who have an applicable Microsoft 365 license will be able to read (but not write) [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data that is shared with them in Microsoft Team&mdash;without needing a Business Central license.
 
-> [!NOTE]
-> This setting is only available for environments of platform version 21.1 or later.
-
-Enabling access to an environment is one of multiple steps required to configure this capability. We recommend that you complete all other setup steps before enabling access for an environment from the Business Central admin center. Learn more at [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license). 
+Enabling access to an environment is one of multiple steps required to configure this capability. We recommend that you complete all other setup steps before enabling access for an environment from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Learn more at [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license). 
 
 To turn access on or off, complete the following steps:
 

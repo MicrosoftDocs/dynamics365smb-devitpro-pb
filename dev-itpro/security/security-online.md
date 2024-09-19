@@ -16,7 +16,9 @@ This section helps you understand and improve the security of your [!INCLUDE[pro
 
 ## Authentication
  
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses Microsoft Entra ID as the authentication method, which is automatically set up and managed for you.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses Microsoft Entra ID as the authentication method, which is automatically set up and managed for you. It is possible to configure Microsoft Entra ID to allow or deny authentications to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only if certain additional conditions are met using Conditional Access to further improve security of your environments. For more information, see [Conditional Access](entra/identity/conditional-access/overview).
+
+Access can be controlled per [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment for internal users, delegated administrators, and multitenant applications. For more information, see [Manage Access to Environments](../administration/tenant-admin-center-manage-access.md).
 
 ## Data isolation and encryption
 
