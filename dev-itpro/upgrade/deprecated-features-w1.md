@@ -53,12 +53,6 @@ The following features are marked as `obsolete:pending` in 2024 release wave 2.
 |-----------------------------|-----|
 |Replaced|User groups are replaced by security groups. Security groups were introduced in Business Central in 2023 release wave 1. They make it easier for administrators to manage user permissions by allowing them to group users by department, job function, and so on. Administrators assign the permissions to the group that its members need to do their jobs. Security groups are based on groups in Microsoft 365 admin center or Azure portal. That benefits administrators because they can use their security groups with other Dynamics 365 apps. For example, if salespeople use Business Central and SharePoint, administrators don't have to recreate the group and its members.<br><br>To learn more about security groups, go to [Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups).|
 
-### Time sheets
-
-|Moved, Removed, or Replaced? |    Why?|
-|-----------------------------|-----|
-|||
-
 ## Changes in 2024 release wave 1
 
 The following features are marked as `obsolete:pending` in 2024 release wave 1.
