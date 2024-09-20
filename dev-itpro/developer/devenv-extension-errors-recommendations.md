@@ -20,7 +20,7 @@ To allow users effectively handle and resolve errors in your extension, you can 
 
 1. Implement the interface `ErrorMessageFix` and extend the enum 7901 `"Error Msg. Fix Implementation"`.
 2. Make sure that the extended fields (`tableextension 7900 "Error Message Ext."`) for the logged error message record have been populated.
-3. Use the drill-down feature on the recommended actions column or the **Accept recommended action** on the **Error Messages** page to fix the errors.
+3. In [!INCLUDE [prod_short](includes/prod_short.md)] users should now be able to use the drill-down feature in the **Recommended actions** column or the **Accept recommended action** on the **Error Messages** page to fix the errors in bulk.
 
 ## Technical details and usage
 
