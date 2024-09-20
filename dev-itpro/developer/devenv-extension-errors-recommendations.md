@@ -18,43 +18,44 @@ Use the actionable error messages displayed on the **Error Messages** page to re
 
 To effectively handle and resolve errors in your extension, follow these steps to implement and use the error message handling framework. The framework allows you to provide actionable recommendations and automated fixes for common issues, improve the overall user experience, and reduce the time spent troubleshooting. Here are the key steps to set up and use this framework:
 
-1. Implement the `interface ErrorMessageFix` and extend `enum 7901 "Error Msg. Fix Implementation"`.
-2. Make sure the extended fields (`tableextension 7900 "Error Message Ext."`) for the logged error message record have been populated.
+1. Implement the interface `ErrorMessageFix` and extend the enum 7901 `"Error Msg. Fix Implementation"`.
+2. Make sure that the extended fields (`tableextension 7900 "Error Message Ext."`) for the logged error message record have been populated.
 3. Use the drill-down feature on the recommended actions column or the **Accept recommended action** on the **Error Messages** page to fix the errors.
 
 ## Technical details and usage
 
-### `interface ErrorMessageFix`
+In the following sections, you find more detail on how the actionable error messages framework works in the Base Application.
 
-To add a logic to fix the error, implement this interface in a codeunit. 
-Extend the `enum 7901 "Error Msg. Fix Implementation"` to include the implemented codeunit.
+### The `ErrorMessageFix` interface
 
-### Base Application's `ErrorMessageManagement.Codeunit.al`
+First, to add a logic to enable fixing the error, implement the `ErrorMessageFix` interface in a codeunit. Then, extend the enum (ID 7901) `"Error Msg. Fix Implementation"` to include the implemented codeunit.
+
+### The `ErrorMessageManagement.Codeunit.al` codeunit in the Base Application
+
+The `ErrorMessageManagement` codeunit can be used to add sub-contextual information and the implementation for the error message action to the last logged error message, which triggers the `OnAddSubContextToLastErrorMessage` event.
 
 ```al
 procedure AddSubContextToLastErrorMessage(Tag: Text; VariantRec: Variant)
 ```
 
-It can be used to add sub-context information and the implementation for the error message action to the last logged error message. This triggers the `OnAddSubContextToLastErrorMessage` event.
+### Usage in the Base Application
 
-### Usage in Base Application
-
-`ErrorMessageMgt.AddSubContextToLastErrorMessage(...)` is used in `DimensionManagement.Codeunit.al` to log `SameCodeWrongDimErr` and `NoCodeFilledDimErr` by passing the Sub-Context information. Dimension Set Entry is the sub-context for these error messages.
+The `ErrorMessageMgt.AddSubContextToLastErrorMessage(...)` is used in `DimensionManagement.Codeunit.al` to log `SameCodeWrongDimErr` and `NoCodeFilledDimErr` by passing the sub-contextual information. Dimension Set Entry is the sub-contextual information for these error messages.
 
 #### Event `OnAddSubContextToLastErrorMessage(Tag, VariantRec, TempErrorMessage)`
 
-Use `Tag` to identify the error message in the subscriber. `VariantRec` can be used to pass the sub-context information. `TempErrorMessage` is the error message record under consideration.
+Use `Tag` to identify the error message in the subscriber. `VariantRec` can be used to pass the sub-contextual information. `TempErrorMessage` is the error message record under consideration.
 
 ### Usage in the Error messages with recommendations extension
 
-#### `codeunit 7903 "Dimension Code Same Error"` and `codeunit 7904 "Dimension Code Must Be Blank"`
+#### Codeunit (ID 7903) `"Dimension Code Same Error"` and codeunit (ID 7904) `"Dimension Code Must Be Blank"`
 
 Subscribe to the event `OnAddSubContextToLastErrorMessage`. Update the error message record based on the `Tag`.
 Set the `TempErrorMessage."Error Msg. Fix Implementation"` to use enum value from `enum 7901 "Error Msg. Fix Implementation"` which has the implementation for the error message action.
 
 ### `codeunit 7900 ErrorMessagesActionHandler`
 
-This handles the drill down operation and the accept recommended action on the Error Messages Page.
+This handles the drill-down operation and the accept recommended action on the Error Messages Page.
 
 ```al
 procedure OnActionDrillDown(var ErrorMessage: Record "Error Message")
