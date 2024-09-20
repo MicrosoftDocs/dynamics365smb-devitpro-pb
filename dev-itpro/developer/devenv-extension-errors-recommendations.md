@@ -48,7 +48,7 @@ procedure AddSubContextToLastErrorMessage(Tag: Text; VariantRec: Variant)
 
 ### Usage in the Base Application
 
-Likewise, in the Base Application the on the `ErrorMessageManagement` codeunit, you find the `AddSubContextToLastErrorMessage(...)` procedure. 
+Likewise, in the Base Application the on the `ErrorMessageManagement` codeunit, you find the `AddSubContextToLastErrorMessage` procedure. 
 
 <!-- the following names cannot be verified -->
 This procedure is used in the `DimensionManagement` codeunit to log `SameCodeWrongDimErr` and `NoCodeFilledDimErr` by passing the sub-contextual information. Dimension Set Entry is the sub-contextual information for these error messages.
@@ -66,13 +66,13 @@ Set the `TempErrorMessage."Error Msg. Fix Implementation"` to use enum value fro
 
 ### `codeunit 7900 ErrorMessagesActionHandler`
 
-This handles the drill-down operation and the accept recommended action on the Error Messages Page.
+This handles the drill-down operation and the **Accept recommended action** on the **Error Messages** page.
 
 ```al
 procedure OnActionDrillDown(var ErrorMessage: Record "Error Message")
 ```
 
-Drill down to the recommended action of an error message to execute it with a confirmation dialog box. When user confirms the action, the error message fix implementation is executed for the selected error message.
+Drill-down to the recommended action of an error message to run it with a confirmation dialog box. When the user confirms the action, the error message fix implementation is run for the selected error message.
 
 ```al
 procedure ExecuteActions(var ErrorMessages: Record "Error Message" temporary)
