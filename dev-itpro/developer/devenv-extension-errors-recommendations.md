@@ -38,7 +38,9 @@ To enable logic for fixing errors, follow these steps:
 
 ### The `ErrorMessageManagement.Codeunit.al` codeunit in the Base Application
 
-The `ErrorMessageManagement` codeunit can be used to add sub-contextual information and the implementation for the error message action to the last logged error message, which triggers the `OnAddSubContextToLastErrorMessage` event.
+In the Base Application you can find the `ErrorMessageManagement` codeunit. The codeunit can be used to add sub-contextual information and the implementation for the error message action to the last-logged error message, which then triggers the `OnAddSubContextToLastErrorMessage` event.
+
+<!-- example context?? -->
 
 ```al
 procedure AddSubContextToLastErrorMessage(Tag: Text; VariantRec: Variant)
@@ -46,7 +48,10 @@ procedure AddSubContextToLastErrorMessage(Tag: Text; VariantRec: Variant)
 
 ### Usage in the Base Application
 
-The `ErrorMessageMgt.AddSubContextToLastErrorMessage(...)` is used in `DimensionManagement.Codeunit.al` to log `SameCodeWrongDimErr` and `NoCodeFilledDimErr` by passing the sub-contextual information. Dimension Set Entry is the sub-contextual information for these error messages.
+Likewise, in the Base Application the on the `ErrorMessageManagement` codeunit, you find the `AddSubContextToLastErrorMessage(...)` procedure. 
+
+<!-- the following names cannot be verified -->
+This procedure is used in the `DimensionManagement` codeunit to log `SameCodeWrongDimErr` and `NoCodeFilledDimErr` by passing the sub-contextual information. Dimension Set Entry is the sub-contextual information for these error messages.
 
 #### Event `OnAddSubContextToLastErrorMessage(Tag, VariantRec, TempErrorMessage)`
 
