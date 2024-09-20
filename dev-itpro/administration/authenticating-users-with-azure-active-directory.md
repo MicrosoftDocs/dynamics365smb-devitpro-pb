@@ -122,7 +122,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
     2. On the **Expose API** page, next to the **Application ID URI**, select **Set**.
     3. The **Application ID URI** box displays the default application ID URI.
     
-        It has the format `api://<guid>`, such as `api://70b20a51-46b7-4290-8686-b79ec90379f6`. You can keep this value or change it. The application ID URI must be a valid URI starting with HTTPS, API, URN, MS-APPX. It must not end in a slash. To use an HTTPS URI, for example `https://cronusinternationltd.onmicrosoft.com/businesscentral`, it must be a verified domain.
+        It has the format `api://<guid>`, such as `api://00001111-aaaa-2222-bbbb-3333cccc4444`. You can keep this value or change it. The application ID URI must be a valid URI starting with HTTPS, API, URN, MS-APPX. It must not end in a slash. To use an HTTPS URI, for example `https://cronusinternationltd.onmicrosoft.com/businesscentral`, it must be a verified domain.
 
     4. Select **Save** when done.
 
@@ -201,8 +201,8 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
 
         |Parameter|Description|
         |-|-|-|
-        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, like `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.|
-        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, like `aaaabbbb-0000-cccc-1111-dddd2222eeee` or `CRONUSInternationLtd.onmicrosoft.com`.|
+        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44445555-eeee-6666-ffff-7777aaaa8888` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
         |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.|
 
        > [!IMPORTANT]
@@ -224,7 +224,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
 
         |Parameter|Description|
         |-|-|-|
-        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`. The value is the same as what you used in the WS-federation login endpoint in the previous step.|
+        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, for example, `aaaabbbb-0000-cccc-1111-dddd2222eeee` or `CRONUSInternationLtd.onmicrosoft.com`. The value is the same as what you used in the WS-federation login endpoint in the previous step.|
 
         **Example**
 
@@ -245,7 +245,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         |Parameter|Description|
         |-|-|-|
         |`<AADTENANTID>`|Set this parameter to one of the following values:<ul><li>`{AADTENANTID}`- Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant you'll mount will use its own Microsoft Entra tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Microsoft Entra tenant. You'll specify the Microsoft Entra tenant ID when you mount the tenant.</li><li>`common`- Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Microsoft Entra ID configured as a multitenant application, but tenants will use the same Microsoft Entra tenant. </li></ul>|
-        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44445555-eeee-6666-ffff-7777aaaa8888` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
         |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.<br /><br />`https://cronusinternationltd.onmicrosoft.com/BC190/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Microsoft Entra authentication service where to send the authentication token. If you don't specify the `wreply` parameter, it will be deducted from the URL in the browser.|
 
        > [!IMPORTANT]
@@ -282,7 +282,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         Use the **Tenants** node in the tool to mount the tenants.
 
         - If you'll be using the same Microsoft Entra tenant for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants, you can leave **Microsoft Entra tenant ID** blank.
-        - If you'll be using different Microsoft Entra tenants, set the **Microsoft Entra tenant ID** to the ID or domain name of the Microsoft Entra tenant that you want to use for the tenant. For example, **11111111-aaaa-2222-bbbb-333333333333** or **CRONUSInternationLtd.onmicrosoft.com**.
+        - If you'll be using different Microsoft Entra tenants, set the **Microsoft Entra tenant ID** to the ID or domain name of the Microsoft Entra tenant that you want to use for the tenant. For example, **aaaabbbb-0000-cccc-1111-dddd2222eeee** or **CRONUSInternationLtd.onmicrosoft.com**.
         - Also, if you've set up different host names that you want to use accessing the tenant, set the **Alternate ID**.
 
         For more information about mounting tenants, see [Mount or Dismount a Tenant on a Business Central Server Instance](mount-dismount-tenant.md).-->
@@ -330,8 +330,8 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
 
         |Parameter|Description|
         |-|-|-|
-        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, for example `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.|
-        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, for example `aaaabbbb-0000-cccc-1111-dddd2222eeee` or `CRONUSInternationLtd.onmicrosoft.com`.|
+        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44445555-eeee-6666-ffff-7777aaaa8888` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
         |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.|
 
        > [!IMPORTANT]
@@ -353,7 +353,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
 
         |Parameter|Description|
         |-|-|-|
-        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`. The value is the same as what you used in the WS-federation login endpoint in the previous step.|
+        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, for example, `aaaabbbb-0000-cccc-1111-dddd2222eeee` or `CRONUSInternationLtd.onmicrosoft.com`. The value is the same as what you used in the WS-federation login endpoint in the previous step.|
 
         **Example**
 
@@ -374,7 +374,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         |Parameter|Description|
         |-|-|-|
         |`<AADTENANTID>`|Set this parameter to one of the following values:<ul><li>`{AADTENANTID}`- Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant you'll mount will use its own Microsoft Entra tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Microsoft Entra tenant. You'll specify the Microsoft Entra tenant ID when you mount the tenant.</li><li>`common`- Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Microsoft Entra ID configured as a multitenant application, but tenants will use the same Microsoft Entra tenant. </li></ul>|
-        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://70b20a51-46b7-4290-8686-b79ec90379f6` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://00001111-aaaa-2222-bbbb-3333cccc4444` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
         |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.<br /><br />`https://cronusinternationltd.onmicrosoft.com/BC190/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Microsoft Entra authentication service where to send the authentication token. If you don't specify the `wreply` parameter, it will be deducted from the URL in the browser.|
 
        > [!IMPORTANT]
@@ -518,7 +518,7 @@ Use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!IN
 In the navigation pane, use the **Tenants** node  to mount the tenants.
 
 - If you'll be using the same Microsoft Entra tenant for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants, you can leave **Microsoft Entra tenant ID** blank.
-- If you'll be using different Microsoft Entra tenants, set the **Microsoft Entra tenant ID** to the ID or domain name of the Microsoft Entra tenant that you want to use for the tenant. For example, **11111111-aaaa-2222-bbbb-333333333333** or **CRONUSInternationLtd.onmicrosoft.com**.
+- If you'll be using different Microsoft Entra tenants, set the **Microsoft Entra tenant ID** to the ID or domain name of the Microsoft Entra tenant that you want to use for the tenant. For example, **aaaabbbb-0000-cccc-1111-dddd2222eeee** or **CRONUSInternationLtd.onmicrosoft.com**.
 - Also, if you've set up different host names that you want to use accessing the tenant, set the **Alternate ID**. See [Using alternate tenant IDs](#altid).
 
 # [Administration Shell](#tab/adminshell)
