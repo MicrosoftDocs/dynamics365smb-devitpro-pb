@@ -12,11 +12,11 @@ ms.reviewer: solsen
 
 Improving error handling and error messages reduces friction for users and highly impacts the user experience. Being able to resolve an error message by following a clear, informative error message helps users understand what went wrong and how to correct it, which reduces frustration, and improves user satisfaction.
 
-Use the actionable error messages displayed on the **Error Messages** page to resolve issues and continue working. The **Error Messages** page serves as a centralized location for all error notifications, making it easier to manage and resolve multiple issues efficiently.
+In [!INCLUDE [prod_short](includes/prod_short.md)], the user can use the actionable error messages displayed on the **Error Messages** page to resolve issues and continue working. The **Error Messages** page serves as a centralized location for all error notifications, making it easier to manage and resolve multiple issues efficiently.
 
 ## How to add error messages with fix implementation?
 
-To effectively handle and resolve errors in your extension, follow these steps to implement and use the error message handling framework. The framework allows you to provide actionable recommendations and automated fixes for common issues, improve the overall user experience, and reduce the time spent troubleshooting. Here are the key steps to set up and use this framework:
+To allow users effectively handle and resolve errors in your extension, you can follow the sections to learn how to implement and use the error message handling framework. The framework allows you to provide actionable recommendations and automated fixes for common issues, improve the overall user experience, and reduce the time spent troubleshooting. The key steps are:
 
 1. Implement the interface `ErrorMessageFix` and extend the enum 7901 `"Error Msg. Fix Implementation"`.
 2. Make sure that the extended fields (`tableextension 7900 "Error Message Ext."`) for the logged error message record have been populated.
@@ -46,7 +46,7 @@ The `ErrorMessageMgt.AddSubContextToLastErrorMessage(...)` is used in `Dimension
 
 Use `Tag` to identify the error message in the subscriber. `VariantRec` can be used to pass the sub-contextual information. `TempErrorMessage` is the error message record under consideration.
 
-### Usage in the Error messages with recommendations extension
+### Usage in the **Error messages with recommendations** extension
 
 #### Codeunit (ID 7903) `"Dimension Code Same Error"` and codeunit (ID 7904) `"Dimension Code Must Be Blank"`
 
