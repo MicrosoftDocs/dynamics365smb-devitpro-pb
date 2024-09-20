@@ -24,11 +24,17 @@ To allow users effectively handle and resolve errors in your extension, you can 
 
 ## Technical details and usage
 
-In the following sections, you find more detail on how the actionable error messages framework works in the Base Application.
+> In the following sections, you find more detail on how the actionable error messages framework works in the Base Application.
 
 ### The `ErrorMessageFix` interface
 
-First, to add a logic to enable fixing the error, implement the `ErrorMessageFix` interface in a codeunit. Then, extend the enum (ID 7901) `"Error Msg. Fix Implementation"` to include the implemented codeunit.
+To enable logic for fixing errors, follow these steps:
+
+- Implement the `ErrorMessageFix` interface  
+  Begin by creating a codeunit that implements the **ErrorMessageFix** interface. This interface defines the methods required to provide a fix for specific errors. By implementing this interface, you can define the logic needed to resolve the errors programmatically.
+
+- Extend the enum (ID 7901) `"Error Msg. Fix Implementation"`  
+  Extend the enum (ID 7901) named `"Error Msg. Fix Implementation"` to include the implemented codeunit. This enum is used to map specific error messages to their corresponding fix implementations.
 
 ### The `ErrorMessageManagement.Codeunit.al` codeunit in the Base Application
 
