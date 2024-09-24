@@ -86,13 +86,13 @@ Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, 
 
 For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
-## Enable text search on table fields
+## Enable full-text search on table fields
 
 [!INCLUDE[2024rw2_and_later](includes/2024rw2_and_later.md)]
 
 You can specify whether table fields are optimized for text search by setting the `OptimizeForTextSearch` property to `true`.
 
-For more information, see [Enable text search on table fields](devenv-table-field-text-search.md).
+Learn more in [Enable text search on table fields](devenv-table-field-text-search.md).
 
 ## Table example
 
