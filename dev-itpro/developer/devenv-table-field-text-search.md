@@ -8,11 +8,13 @@ ms.topic: conceptual
 ms.author: kepontop
 ms.collection: get-started
 ---
-# Enable text search on table fields
+# Enable full-text search on table fields
 
 [!INCLUDE[2024rw2_and_later](includes/2024rw2_and_later.md)]
 
-This article explains how you can specify which table fields to include in optimized text search. *Optimized text search* is used in various search functionalities in [!INCLUDE[prod_short](includes/prod_short.md)], such as in the company-wide search, but you can also use optimized text search in your own AL code.
+Business Central supports the full-text search feature in SQL Server and Azure SQL Database databases, which lets users and applications run full-text queries against character-based data in tables. Learn more at [Full-text search in SQL](/sql/relational-databases/search/full-text-search). This article explains how you can specify full-text search on table fields and use it in data filters. By enabling full-text search on fields, AL developers can significantly enhance data search in thier own AL code. 
+
+In the client, full-text search is used in various search functionalities, such as in the company-wide data search and on list pages that include full-text search fields. Learn more in [Search for a Record in Your Data](/dynamics365/business-central/ui-search-data) and [Searching lists](/dynamics365/business-central/ui-enter-criteria-filters#searching).
 
 ## Example syntax (table fields)
 
@@ -96,13 +98,12 @@ Item.FindSet()...
 Matcher ingen.
 Der maa ikke vaere ord imellem.
 
-
 ## Enable text search on the database (on-premises only)
 
 TODO
 
 ## See also
 
-TODO: add link to methods-auto article  
+[](  
 [Table object](devenv-table-object.md)
 [Tables overview](devenv-tables-overview.md)
