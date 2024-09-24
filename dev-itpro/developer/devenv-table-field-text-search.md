@@ -16,7 +16,7 @@ Business Central supports the full-text search feature in SQL Server and Azure S
 
 This article explains how you can specify full-text search on table fields and use it in data filters in AL. By enabling full-text search on fields, you can significantly enhance data search in your AL code.
 
-In the client, full-text search is used in various search functionalities, such as in the company-wide data search and on lists that include full-text search fields. Learn more in [Search for a record in company data](/dynamics365/business-central/ui-search-data) and [Search lists](/dynamics365/business-central/ui-enter-criteria-filters#searching).
+In the client, full-text search is used in various search functionalities, such as in the company-wide data search and on lists that include full-text search fields, referred to as modern search. Learn more in [Search for a record in company data](/dynamics365/business-central/ui-search-data) and [Search lists](/dynamics365/business-central/ui-enter-criteria-filters#searching).
 
 ## Enable full-text search on fields
 
@@ -57,7 +57,7 @@ table 50104 Address
     }
 ```
 
-You can also use the `OptimizedForTextSearch` property on the **Field** virtual table. `IsOptimizedForTextSearch` on variables of the FieldRef data type.
+You can use the `OptimizedForTextSearch` property on the **Field** virtual table. The `IsOptimizedForTextSearch` on variables of the FieldRef data type.
 
 ## Filter syntax for full-text search
 
