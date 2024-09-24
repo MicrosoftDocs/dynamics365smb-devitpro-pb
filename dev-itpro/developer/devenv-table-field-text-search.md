@@ -104,11 +104,11 @@ Der maa ikke vaere ord imellem.
 
 For full-text search to work in Business Central on-premsises, it must be be installed on the SQL Server instance. 
 
-[!INCLUDE[upgrade-install-full-text-serach-sql](../developer/includes/upgrade-install-full-text-search-sql.md)]
-
+[!INCLUDE[upgrade-install-full-text-serach-sql](includes/upgrade-install-full-text-search-sql.md)]
 
 ## See also
 
-[](OptimizeForTextSearch  
+[OptimizeForTextSearch property](properties/devenv-optimizefortextsearch-property.md)  
+[]()
 [Table object](devenv-table-object.md)
 [Tables overview](devenv-tables-overview.md)
