@@ -311,16 +311,16 @@ The url to the deployed web client.
 
 `-Authentication`
 
-The authentication to use against the web client. One of Windows, AAD, UserPassword. Windows is the default. It does not support multi-factor authentication. Use an account that requires only a username and password to sign in for your tests.
+The authentication to use against the web client: `Windows`, `AAD`, `UserPassword`. `Windows` is default. It does't support multi-factor authentication. Use an account that requires only a username and password to sign in for your tests.
 
 `-UserNameKey` and `-PasswordKey`
 
-When `-Authentication` is set to `AAD` or `UserPassword` then a user name and password must be given. These must be transferred as environment variables and `-UserNameKey` and `-PasswordKey` are used to specify which environment variables contains these.
+When `-Authentication` is set to `AAD` or `UserPassword` then a user name and password must be given. These must be transferred as environment variables and `-UserNameKey` and `-PasswordKey` are used to specify which environment variables contains them.
 
 `-Headed`
 
-Will show the test running in the browsers.
+Shows the test running in the browser.
 
 `-ResultDir`
 
-The directory to write the test results.
+The folder to write the test results to.
