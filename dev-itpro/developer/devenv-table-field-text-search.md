@@ -12,7 +12,9 @@ ms.collection: get-started
 
 [!INCLUDE[2024rw2_and_later](includes/2024rw2_and_later.md)]
 
-Business Central supports the full-text search feature in SQL Server and Azure SQL Database databases, which lets users and applications run full-text queries against character-based data in tables. Learn more at [Full-text search in SQL](/sql/relational-databases/search/full-text-search). This article explains how you can specify full-text search on table fields and use it in data filters. By enabling full-text search on fields, AL developers can significantly enhance data search in thier own AL code.
+Business Central supports the full-text search feature in SQL Server and Azure SQL Database databases, which lets users and applications run full-text queries against character-based data in tables. Learn more at [Full-text search in SQL](/sql/relational-databases/search/full-text-search).
+
+This article explains how you can specify full-text search on table fields and use it in data filters in AL. By enabling full-text search on fields, you can significantly enhance data search in your AL code.
 
 In the client, full-text search is used in various search functionalities, such as in the company-wide data search and on lists that include full-text search fields. Learn more in [Search for a record in company data](/dynamics365/business-central/ui-search-data) and [Search lists](/dynamics365/business-central/ui-enter-criteria-filters#searching).
 
