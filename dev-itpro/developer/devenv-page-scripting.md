@@ -214,28 +214,74 @@ You can share a recording or a playback as a link (URL) that you can share with 
   - Recording 3: create sales order.
   - Recording 4: post sales order.
 
-
 ## Run page scripts in pipelines
 
-You can run page scripts in your own pipelines, using the stand-alone bc-replay script player. This is distributed as an npm package, so you can pull the latest version available from the npm feed.
+You can run page scripts in your own pipelines, using the stand-alone bc-replay script player. This script player is distributed as an npm (Node Package Manager) package. You can install the latest version of the package from the npm feed.
 
 ### Prerequisites
 
-The following things must be available to use this command:
-- NodeJs version 16.14.0 or later
-- PowerShell 7 or later 
+Your machine must meet the following requirements:
 
-### Get started
+- NodeJs version 16.14.0 or later. You can download install the latest version from [https://nodejs.org](https://nodejs.org/en/download/package-manager).
+- Windows PowerShell 7 or later. Learn more about installing PowerShell at [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
+
+### Preparation
+
+Create the following folders on your machine:
+
+- A folder the BC replay installation. For example, `c:\bc-replay`.
+- A folder for storing the recorded scripts to be run. For example, `c:\bc-replay\recordings`.
+- A folder for storing the test results, like the recording and log. For example, `c:\bc-replay\results`.
+
+### Install BC replay
+
+1. Run Window Powershell as an administrator.
+1. At the command prompt, run the following command to change to the BC replay installation folder (for example, `bc-replay`):
+
+   ```powershell
+   cd bc-replay
+   ```
+
+1. Run the following command to add @microsoft/bc-replay and install playwright:
+
+   ```powershell
+   npm i @microsoft/bc-replay --save
+   ```  
+
+### Get started running scripts
+
+To run the scripts, you'll need to know URL of your Business Central web client, like `http://localhost:8080/bc250/`.
+
+1. Save the scripts you want to run to the folder you created for storing the scripts (For example, `c:\bc-replay\recordings`.).
+1. Run Window Powershell as an administrator.
+1. At the command prompt, change to the BC replay installation folder (for example,  `c:\bc-replay`):
+
+   ```powershell
+   cd bc-replay
+   ```
+
+1. Run the command to run scripts.
+
+   Use the following command to run a specific script, for example, `recording-1.yml`: 
+
+   ```powershell
+   npx replay .\recordings\recording-1.yml -StartAddress http://localhost:8080/bc250/ -ResultDir c:\bc-replay\result`
+   ```
+
+   Use the following command to run all scripts in the folder: 
+
+   ```powershell
+   npx replay .\recordings\*.yml -StartAddress http://localhost:8080/bc250/ -ResultDir c:\bc-replay\result`
+   ```
+
+   Replace `http://localhost:8080/bc250/`with the URL of your Business Central web client.
 
 
-There is no setup, just run `npm install @microsoft/bc-replay --save`.
-Create a new folder and cd to it.
-Add @microsoft/bc-replay and install playwright
-npm i @microsoft/bc-replay --save
-Now add a folder to store some recordings, e.g. mkdir recordings and add some recording .yml files.
-Then you can run any tests added to the recordings folder against Business Central web client instance:
-npx replay .\recordings\*.yml -StartAddress http://localhost:8080/
-Parameters
+### npx replay syntax and parameters
+
+Syntax:
+
+```PowerShell
 npx replay
       [-Tests] <String>
       -StartAddress <String>
@@ -244,7 +290,11 @@ npx replay
       [-PasswordKey <String>]
       [-Headed]
       [-ResultDir<String>]
--Tests
+
+```
+
+`-Tests`
+
 File glob pattern to select the tests recordings to run
 -StartAddress
 The url to the deployed web client.
