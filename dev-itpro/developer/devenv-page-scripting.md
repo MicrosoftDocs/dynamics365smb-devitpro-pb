@@ -276,6 +276,14 @@ To run the scripts, you'll need to know URL of your Business Central web client,
 
    Replace `http://localhost:8080/bc250/`with the URL of your Business Central web client.
 
+   When test run completes, the results is returned.
+
+1. To view the results of the last run, use the following command, replacing `c:\bc-replay\results` with the path to the results folder:
+
+   ```powershell
+   npx playwright show-report c:\bc-replay\results\playwright-report
+   ```
+
 ### npx replay syntax and parameters
 
 #### Syntax
