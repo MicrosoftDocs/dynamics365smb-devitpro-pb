@@ -193,7 +193,7 @@ Install the latest version of the package by using NuGet Package Manager in Visu
             // Specifies the Microsoft Entra tenant ID
             const string AadTenantId = "<mytenant.onmicrosoft.com>";
             // Specifies the Application (client) ID of the console application registration in Microsoft Entra ID
-            const string ClientId = "<7b235fb6-c01b-47c5-afeb-cbb165abeaf7>";
+            const string ClientId = "<00001111-aaaa-2222-bbbb-3333cccc4444>";
             // Specifies the redirect URL for the client that was configured for console application registration in Microsoft Entra ID
             const string ClientRedirectUrl = "<https://mybcclient>";
             // Specifies the APP ID URI that is configured for the registered Business Central application in Microsoft Entra ID

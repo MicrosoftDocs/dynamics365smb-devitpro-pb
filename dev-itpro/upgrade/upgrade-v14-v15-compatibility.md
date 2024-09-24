@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 07/01/2024
+ms.date: 08/29/2024
 ms.custom: bap-template
 ---
 
@@ -24,24 +24,32 @@ Before you choose the target version for your upgrade, read the [Some Known Issu
 
 ## Version 23 compatibility
 
-The following table lists the Business Central 23 versions and the minimum version of later releases that are compatible for upgrade.
+The following table lists the Business Central 23 update versions and the minimum update versions of later releases that are compatible for upgrade.
 
-|Version 23|Version 24|
-|----------|----------|
+> [!NOTE]
+> Although the table lists the minimum compatible update versions, we recommend upgrading to the latest update version for the release you are upgrading to.
+
+|V23 update|V24 update|
+|-|-|
 |23.0 to 23.5|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000) |
 |[23.6](https://support.microsoft.com/help/5037541)|[24.1](https://support.microsoft.com/help/5038531)|
 |[23.7](https://support.microsoft.com/help/5038530) |[24.2](https://support.microsoft.com/help/5040044)|
 |[23.8](https://support.microsoft.com/help/5040043)|[24.3](https://support.microsoft.com/help/5041133)|
-|[23.9](https://support.microsoft.com/help/5041132)<sup>[\[1\]](#1)</sup> |24.4|
+|[23.9](https://support.microsoft.com/help/5041132) |[24.4](https://support.microsoft.com/help/5042530)|
+|[23.10](https://support.microsoft.com/help/5042529)|[24.5](https://support.microsoft.com/help/5043981)|
+|[23.11](https://support.microsoft.com/help/5043980)<sup>[\[1\]](#1)</sup> |24.6|
 
 To view a list of all available updates for Business Central 2023 Release Wave 2, go to [Released Updates for Microsoft Dynamics 365 Business Central 2023 Release Wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d).
 
 ## Version 22 compatibility
 
-The following table lists the Business Central 22 versions and the minimum version of later releases that are compatible for upgrade.
+The following table lists the Business Central 22 update versions and the minimum update versions of later releases that are compatible for upgrade.
 
-|Version 22|Version 23|Version 24|
-|----------|----------|-|
+> [!NOTE]
+> Although the table lists the minimum compatible update versions, we recommend upgrading to the latest update version for the release you are upgrading to.
+
+|V22 update|V23 update| V24 update|
+|-|-|-|
 |22.0 to 22.5|[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)  |[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|
 |[22.6](https://support.microsoft.com/help/5031951) |[23.1](https://support.microsoft.com/help/5032755)|24.0|
 |[22.7](https://support.microsoft.com/help/5032754)|[23.2](https://support.microsoft.com/help/5033775)|24.0|
@@ -52,8 +60,9 @@ The following table lists the Business Central 22 versions and the minimum versi
 |[22.12](https://support.microsoft.com/help/5037540)|[23.7](https://support.microsoft.com/help/5038530) |[24.1](https://support.microsoft.com/help/5038531)|
 |[22.13](https://support.microsoft.com/help/5038529)|[23.8](https://support.microsoft.com/help/5040043)|[24.2](https://support.microsoft.com/help/5040044)|
 |[22.14](https://support.microsoft.com/help/5040042) |[23.9](https://support.microsoft.com/help/5041132)|[24.3](https://support.microsoft.com/help/5041133)|
-|[22.15](https://support.microsoft.com/help/5041131)<sup>[\[1\]](#1)</sup> |23.10|24.4|
-
+|[22.15](https://support.microsoft.com/help/5041131) |[23.10](https://support.microsoft.com/help/5042529)|[24.4](https://support.microsoft.com/help/5042530)|
+|[22.16](https://support.microsoft.com/help/5042528)|[23.11](https://support.microsoft.com/help/5043980)[24.5](https://support.microsoft.com/help/5043981)|
+|[22.17](https://support.microsoft.com/help/5043979)<sup>[\[1\]](#1)</sup> |23.12|24.6|
 
 To view a list of all available updates for Business Central 2023 Release Wave 1, go to [Released Updates for Microsoft Dynamics 365 Business Central 2023 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51).
 
@@ -61,9 +70,12 @@ To view a list of all available updates for Business Central 2023 Release Wave 1
 
 ## Version 21 compatibility
 
-The following table lists the Business Central 21 versions and the minimum version of later releases that are compatible for upgrade.
+The following table lists the Business Central 21 update versions and the minimum update versions of later releases that are compatible for upgrade.
 
-|Version 21|Version 22|Version 23|Version 24|
+> [!NOTE]
+> Although the table lists the minimum compatible update versions, we recommend upgrading to the latest update version for the release you are upgrading to.
+
+|V21 update|V22 update|V23 update|V24 update|
 |-|-|-|-|
 |21.0 to 21.5|[22.0](https://www.microsoft.com/en-us/download/details.aspx?id=105113)  |[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|
 |[21.6](https://support.microsoft.com/help/5025975)  |[22.1](https://support.microsoft.com/help/5026932) |23.0|24.0|
