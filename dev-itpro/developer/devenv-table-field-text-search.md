@@ -100,7 +100,10 @@ Der maa ikke vaere ord imellem.
 
 ## Enable full-text search on the database (on-premises only)
 
-For full-text search to work in Business Central on-premsises, it must be be installed on the SQL Server instance. Learn more 
+For full-text search to work in Business Central on-premsises, it must be be installed on the SQL Server instance. 
+
+[!INCLUDE[upgrade-install-full-text-serach-sql](../developer/includes/upgrade-install-full-text-search-sql.md)]
+
 
 ## See also
 
