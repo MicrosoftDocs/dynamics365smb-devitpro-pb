@@ -109,6 +109,6 @@ For full-text search to work in Business Central on-premsises, it must be be ins
 ## See also
 
 [OptimizeForTextSearch property](properties/devenv-optimizefortextsearch-property.md)  
-[]()
+[IsOptimizeForTextSearch method]()
 [Table object](devenv-table-object.md)
 [Tables overview](devenv-tables-overview.md)
