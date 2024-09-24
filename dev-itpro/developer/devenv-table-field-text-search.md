@@ -12,13 +12,13 @@ ms.collection: get-started
 
 [!INCLUDE[2024rw2_and_later](includes/2024rw2_and_later.md)]
 
-Business Central supports the full-text search feature in SQL Server and Azure SQL Database databases, which lets users and applications run full-text queries against character-based data in tables. Learn more at [Full-text search in SQL](/sql/relational-databases/search/full-text-search). This article explains how you can specify full-text search on table fields and use it in data filters. By enabling full-text search on fields, AL developers can significantly enhance data search in thier own AL code. 
+Business Central supports the full-text search feature in SQL Server and Azure SQL Database databases, which lets users and applications run full-text queries against character-based data in tables. Learn more at [Full-text search in SQL](/sql/relational-databases/search/full-text-search). This article explains how you can specify full-text search on table fields and use it in data filters. By enabling full-text search on fields, AL developers can significantly enhance data search in thier own AL code.
 
-In the client, full-text search is used in various search functionalities, such as in the company-wide data search and on list pages that include full-text search fields. Learn more in [Search for a Record in Your Data](/dynamics365/business-central/ui-search-data) and [Searching lists](/dynamics365/business-central/ui-enter-criteria-filters#searching).
+In the client, full-text search is used in various search functionalities, such as in the company-wide data search and on list pages that include full-text search fields. Learn more in [Search for a record in company data](/dynamics365/business-central/ui-search-data) and [Search lists](/dynamics365/business-central/ui-enter-criteria-filters#searching).
 
-## Example syntax (table fields)
+## Enable full-text search on fields
 
-To enable text search on field, set the property `OptimizeForTextSearch` to `true`. The following example shows how text search is enabled on the field level:
+To enable full-text search on field, set the property `OptimizeForTextSearch` to `true`. The following example shows how text search is enabled on the field level:
 
 ```AL
 table 50104 Address
@@ -30,7 +30,7 @@ table 50104 Address
         field(1; Address; Text[50])
         {
             Caption = 'Address retrieved by Service';
-            // in 2024 release wave 2, you can define that table fields are included in optimized text search
+            // In 2024 release wave 2 and later, you can define that table fields are included in full-text search
             OptimizeForTextSearch = true;
         }
         field(2; Locality; Text[30])
@@ -55,16 +55,16 @@ table 50104 Address
     }
 ```
 
-## Filter syntax for optimized text search
+## Filter syntax for full-text search
 
-To use optimized text search in AL, use the new `&&` operator when setting a filter, as illustrated in the following example 
+To use full-text search in AL, you can add the `&&` operator when setting a filter, as illustrated in the following example: 
 
 ```AL
-// optimized text search without wildcard
+// Full-text search without wildcard
 Rec.SetFilter(Rec.Field, '&&' + SearchString);
 ```
 
-You can also include wildcards in optimized text search by adding the `*` symbol to the search clause as illustrated in the following example 
+You can also include wildcards in full-text search by adding the `*` symbol to the search clause as illustrated in the following example 
 
 ```AL
 // optimized text search with wildcard
@@ -98,9 +98,9 @@ Item.FindSet()...
 Matcher ingen.
 Der maa ikke vaere ord imellem.
 
-## Enable text search on the database (on-premises only)
+## Enable full-text search on the database (on-premises only)
 
-TODO
+For full-text search to work in Business Central on-premsises, it must be be installed on the SQL Server instance. Learn more 
 
 ## See also
 
