@@ -57,6 +57,8 @@ table 50104 Address
     }
 ```
 
+You can also use the `OptimizedForTextSearch` property on the **Field** virtual table. `IsOptimizedForTextSearch` on variables of the FieldRef data type.
+
 ## Filter syntax for full-text search
 
 To use full-text search in AL, you can add the `&&` operator when setting a filter, as illustrated in the following example: 
@@ -72,6 +74,8 @@ You can also include wildcards in full-text search by adding the `*` symbol to t
 // optimized text search with wildcard
 Rec.SetFilter(Rec.Field, '&&' + SearchString + '*' ); 
 ```
+
+This syntax supports a subset of SQL Server's `CONTAINS` predicate. Learn more at [CONTAINS (Transact-SQL)](/sql/t-sql/queries/contains-transact-sql)
 
 ## Optimized text search semantics
 
@@ -109,6 +113,6 @@ For full-text search to work in Business Central on-premsises, it must be be ins
 ## See also
 
 [OptimizeForTextSearch property](properties/devenv-optimizefortextsearch-property.md)  
-[IsOptimizeForTextSearch method]()
+[IsOptimizeForTextSearch method](methods-auto/fieldref/fieldref-isoptimizedfortextsearch-method.md)
 [Table object](devenv-table-object.md)
 [Tables overview](devenv-tables-overview.md)
