@@ -276,33 +276,43 @@ To run the scripts, you'll need to know URL of your Business Central web client,
 
    Replace `http://localhost:8080/bc250/`with the URL of your Business Central web client.
 
-
 ### npx replay syntax and parameters
 
-Syntax:
+#### Syntax
 
 ```PowerShell
 npx replay
-      [-Tests] <String>
-      -StartAddress <String>
-      [-Authentication Windows|AAD|UserPassword]
-      [-UserNameKey <String>]
-      [-PasswordKey <String>]
-      [-Headed]
-      [-ResultDir<String>]
-
+   [-Tests] <String>
+   -StartAddress <String>
+   [-Authentication Windows|AAD|UserPassword]
+   [-UserNameKey <String>]
+   [-PasswordKey <String>]
+   [-Headed]
+   [-ResultDir<String>]
 ```
+
+#### Parameters
 
 `-Tests`
 
 File glob pattern to select the tests recordings to run
--StartAddress
+
+`-StartAddress`
+
 The url to the deployed web client.
--Authentication
+
+`-Authentication`
+
 The authentication to use against the web client. One of Windows, AAD, UserPassword. Windows is the default. It does not support multi-factor authentication. Use an account that requires only a username and password to sign in for your tests.
--UserNameKey & -PasswordKey
-When -Authentication is set to AAD or UserPassword then a user name and password must be given. These must be transferred as environment variables and -UserNameKey and -PasswordKey are used to specify which environment variables contains these.
--Headed
+
+`-UserNameKey` and `-PasswordKey`
+
+When `-Authentication` is set to `AAD` or `UserPassword` then a user name and password must be given. These must be transferred as environment variables and `-UserNameKey` and `-PasswordKey` are used to specify which environment variables contains these.
+
+`-Headed`
+
 Will show the test running in the browsers.
--ResultDir
+
+`-ResultDir`
+
 The directory to write the test results.
