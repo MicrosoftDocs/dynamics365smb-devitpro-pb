@@ -20,7 +20,7 @@ In the client, full-text search is used in various search functionalities, such 
 
 ## Enable full-text search on fields
 
-To enable full-text search on field, set the property `OptimizeForTextSearch` to `true`. The following example shows how text search is enabled on the field level:
+To enable full-text search on field, set the [OptimizeForTextSearch property](properties/devenv-optimizefortextsearch-property.md) to `true`. The following example shows how text search is enabled on the field level:
 
 ```AL
 table 50104 Address
@@ -57,7 +57,8 @@ table 50104 Address
     }
 ```
 
-You can use the `OptimizedForTextSearch` property on the **Field** virtual table. The `IsOptimizedForTextSearch` on variables of the FieldRef data type.
+You can use the `OptimizedForTextSearch` property on the **Field** virtual table. You can also use the [IsOptimizedForTextSearch() method](methods-auto/fieldref/fieldref-isoptimizedfortextsearch-method.md) on FieldRef type variables of the FieldRef data type.
+
 
 ## Filter syntax for full-text search
 
@@ -75,7 +76,7 @@ You can also include wildcards in full-text search by adding the `*` symbol to t
 Rec.SetFilter(Rec.Field, '&&' + SearchString + '*' ); 
 ```
 
-This syntax supports a subset of SQL Server's `CONTAINS` predicate. Learn more at [CONTAINS (Transact-SQL)](/sql/t-sql/queries/contains-transact-sql)
+This syntax supports a subset of SQL Server's `CONTAINS` predicate. Learn more at [CONTAINS (Transact-SQL)](/sql/t-sql/queries/contains-transact-sql).
 
 ## Optimized text search semantics
 
