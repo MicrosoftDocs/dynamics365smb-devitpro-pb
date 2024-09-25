@@ -33,6 +33,9 @@ The following features are marked as `obsolete:pending` in 2024 release wave 2.
 
 ### Configuration packages for setup and evaluation data
 
+> [!IMPORTANT]
+> We will remove this feature in update 25.1.
+
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced| We've changed the way we prepare databases for new evaluation and production companies. Instead of using configuration packages to add demo and setup data, you now use the **Contoso Coffee demo data** app. We shipped the Contoso Coffee demo data app in an earlier release to cover gaps in our demo and setup data, such as Manufacturing, Service, and Warehouse. Because the app is easy to use and now provides the comprehensive setup and demo data that was previously available in configuration packages, we're removing the configuration packages. To do that, we had to change how the **Create New Company** assisted setup guide initializes new companies with data. Our changes might affect your extensions. For details about what we removed, explore the Object and What's removed listings. |
