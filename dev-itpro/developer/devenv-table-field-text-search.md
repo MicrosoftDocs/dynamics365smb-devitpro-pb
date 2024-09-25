@@ -3,7 +3,7 @@ title: Enable text search on table fields
 description: Description of how you use enable text search on table fields.
 author: kennieNP
 ms.reviewer: jswymer
-ms.date: 07/17/2024
+ms.date: 09/25/2024
 ms.topic: conceptual
 ms.author: kepontop
 ms.collection: get-started
@@ -77,29 +77,28 @@ Rec.SetFilter(Rec.Field, '&&' + SearchString + '*' );
 
 Optimized text search differs from the traditional wildcard search using the '*' symbol in the following ways:
 
-- Optimized text search is always case insensitive, where wildcard search is case sensitive unless either the dataset collation is insensitive or the '@' operator is prefixed.
-- Optimized text search is always accent insensitive, where wildcard search is accent sensitive unless either the datase collation is insensitive or the '@' operator is prefixed.
-- Optimized text search will search for words within fields, where wildcard search for letters within fields. That means full-text search can find words or prefixes of words within a field, but wildcard search can find arbitrary substrings within words. See examples below.
+- Optimized text search is always case insensitive, where wildcard search is case sensitive unless either the dataset collation is insensitive or the `@` operator is prefixed.
+- Optimized text search is always accent insensitive, where wildcard search is accent sensitive unless either the dataset collation is insensitive or the `@` operator is prefixed.
+- Optimized text search searches for words within fields, where wildcard search for letters within fields. That means full-text search can find words or prefixes of words within a field, but wildcard search can find arbitrary substrings within words. Learn more in the following example.
 
 ### Example
 
-If we have the following item in the database 'london swivel chair' then the query behavior will be as follows:
+Consider a database that includes the item `london swivel chair`. The following table demonstrates different queries on the item and indicates whether there's a match.
 
-| Query     | Matches   |
-| :-------- | :-------: |
-| *swivel*  | Yes       |
-| &&swivel  | Yes       |
-| *swiv*    | Yes       |
-| &&swiv    | No        |
-| &&swiv*   | Yes       |
-| *hair*    | Yes       |
-| &&hair    | No        |
-| &&hair*   | No        |
-
+|Query|Match|
+|-|:-:|
+| `*swivel*`  | Yes|
+| `&&swivel`  | Yes|
+| `*swiv*`    | Yes|
+| `&&swiv`    | No|
+| `&&swiv*`   | Yes|
+| `*hair*`    | Yes|
+| `&&hair`    | No|
+| `&&hair*`   | No|
 
 ## Install full-text search on the database (on-premises only)
 
-For full-text search to work in Business Central on-premsises, it must be be installed on the SQL Server instance. 
+For full-text search to work in Business Central on-premises, it must be installed on the SQL Server instance.
 
 [!INCLUDE[upgrade-install-full-text-serach-sql](includes/upgrade-install-full-text-search-sql.md)]
 
