@@ -75,7 +75,9 @@ Follow these steps:
 1. Open the **Extension Management** page and activate the context menu for the selected extension. 
 1. Choose the **Open Source in VS Code** option.  
   In Visual Studio Code, you're now asked if you want to clone or open the GitHub repo for the extension. If you choose to clone the repo, you must specify where you want to clone the repo to on your local computer.  
-3. 
+3. Once the repo is cloned, you have different options for working with the source code. You can, for example, stay on the current main branch, or you can create a new branch for your modification.  
+  If you choose to create a new branch, you must give it a name.
+4. With access to the source code on your local computer, you can, for example, use the Page Inspector to help you navigate to the source code by using the **Explore page in Visual Studio Code** functionality. For more information, see [Open a page from the Page Inspector](#open-a-page-from-the-page-inspector).
 
 
 ## Good to know
