@@ -16,7 +16,7 @@ Business Central includes an optimized text search feature on table fields, whic
 
 In the client, optimized text search is used in various search functionalities, such as in the company-wide data search and on lists that include optimized text search fields, referred to as modern search. Learn more in [Search for a record in company data](/dynamics365/business-central/ui-search-data) and [Search lists](/dynamics365/business-central/ui-enter-criteria-filters#searching). By enabling optimized text search on fields in extensions, you can significantly optimize data search in your AL code.
 
-## Enable optimized text search  on fields
+## Enable optimized text search on fields
 
 To enable optimized text search on field, set the [OptimizeForTextSearch property](properties/devenv-optimizefortextsearch-property.md) to `true`. The following example shows how text search is enabled on the field level:
 
