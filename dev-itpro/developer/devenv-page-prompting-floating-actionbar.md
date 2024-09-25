@@ -6,8 +6,7 @@ ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 09/09/2024
-ms.custom: bap-template
+ms.date: 09/25/2024
 ms.reviewer: solsen
 ---
 
@@ -25,7 +24,7 @@ The following image shows what the floating action bar can look like.
 To create a floating action bar with one or more prompt actions, you must create a new area in the `actions` section of the page object. The area must be set to `area(Prompting)`. You can then create one or more new actions in the area and run a `PromptDialog` object that you want to activate when the action is clicked. Only objects of the `PromptDialog` page type can be run from a prompting area.
 
 > [!NOTE]
-> The floating action bar will only show if you have specified a `RunObject` property to the page.
+> The floating action bar only shows if you've specified a `RunObject` property to the page.
 
 The following example shows the syntax for how to create a prompt action that runs the **Copilot Marketing Text** page. This piece of AL code can be added to a page where you want to promote the **Copilot Marketing Text** functionality. When the action is clicked, the **Copilot Marketing Text** page is opened in a dialog.
 
@@ -46,7 +45,7 @@ actions
 ```
 
 > [!NOTE]
-> The user will see a floating action bar on the page that this code is implemented on. If the user selects **Hide**, the floating action bar will be placed in the action bar instead. It can easily be brought back by clicking **Show in page**.
+> The user sees a floating action bar on the page that this code is implemented on. If the user selects **Hide**, the floating action bar is placed in the action bar instead. It can easily be brought back by clicking **Show in page**.
 
 The next code is part of a code sample taken from the [aka.ms/BCTech](https://aka.ms/BCTech) repo; the [Job Planning Lines Copilot](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/SuggestResource/JobPlanningLinesCopilot.PageExt.al) page extension. This code sample illustrates how to create two prompt actions that run the `SuggestResourceCopilotAction` and `SuggestItemCopilotAction` actions. The `SuggestResourceCopilotAction` action is used to suggest a resource to be assigned to a job planning line, and the `SuggestItemCopilotAction` action is used to suggest an item to be assigned to a job planning line. The `SuggestResourceWithAI` and `SuggestItemWithAI` functions aren't implemented in this code sample. 
 
