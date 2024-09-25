@@ -5,9 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: overview
-ms.collection: 
 ms.date: 09/17/2024
-ms.custom: bap-template
 ---
 
 # Troubleshoot in Visual Studio Code directly from the web client
@@ -37,7 +35,7 @@ To open and explore a page from the Page Inspector, follow these steps:
 1. Next, you must decide if you want to download symbols.  
     > [!NOTE]  
     > If you specify yes, the app.json file will be updated with the dependent extensions of the page, which are shown on the **Extensions** tab in the **Page Inspection** page, and the symbols will automatically be downloaded. You can specify no, if you're already working on the specific source code files.  
-    > If you say no, and don't have the right symbols downloaded, you will not be able to navigate to the object source code.
+    > If you say no, and don't have the right symbols downloaded, you won't be able to navigate to the object source code.
 1. Now, you're prompted whether to do a snapshot or regular debugging session, or not to debug, but just view the source code.  
     > [!NOTE]  
     > For production environments, regular debugging isn't supported.
@@ -64,19 +62,21 @@ To attach the debugger to a session, do the following:
     > [!NOTE]  
     > For production environments, regular debugging isn't supported.
 
-## Open source in Visual Studio Code
+## Open source code in Visual Studio Code
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-With the **Open Source in VS Code** option, you can get the latest source code from an extension and open it directly in Visual Studio Code. You must have access to the source code. This enables investigating issues or developing new functionality based on an existing extension.
+With the **Open Source in VS Code** option, you can get the latest source code from an extension and open it directly in Visual Studio Code. The open source functionality uses the repo metadata that was included in the extension when it was built. In the manifest of an extension, the `app.json` file, you can specify metadata for where the related GitHub repository and a specific build are found by using the `build` and `source` settings. Learn more in [JSON files](devenv-json-files.md#appjson-file).
+
+Opening the source code enables investigating issues or developing new functionality based on an existing extension.
 
 Follow these steps:
 
 1. Open the **Extension Management** page and activate the context menu for the selected extension. 
 1. Choose the **Open Source in VS Code** option.  
-  In Visual Studio Code, you're now asked if you want to clone or open the GitHub repo for the extension. 
+  In Visual Studio Code, you're now asked if you want to clone or open the GitHub repo for the extension.  
+3. 
 
-The open source functionality uses the repo metadata that was included in the extension when it was built. In the manifest of an extension, the app.json file, you can specify metadata for where the related GitHub repository and a specific build are found by using the `build` and `source` settings. Learn more in [JSON files](devenv-json-files.md#appjson-file).
 
 ## Good to know
 
