@@ -87,7 +87,7 @@ Use the parameters to build the dimensions, or columns, that show for the trace 
 
 The following table explains the default dimensions that are automatically included in CustomDimensions for telemetry events sent from AL code.
 
-<!--{"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","environmentType":"Production","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","companyName":"CRONUS International Ltd.","component":"Dynamics 365 Business Central Server","eventId":"ALMyExt-0001","clientType":"WebClient","extensionName":"ALlogmessage","alCallerAppName":"Base Application","alObjectId":"50110","alDataClassification":"SystemMetadata","alCallerPublisher":"Microsoft","alresult":"failed","alObjectType":"PageExtension","alCallerAppVersion":"20.0.36796.0","extensionPublisher":"Default publisher","alObjectName":"CustomerListExt","extensionVersion":"1.0.0.0","extensionId":"f2ae006d-deef-4990-828e-4c76906e7171","alreason":"critical error in code"}
+<!--{"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","environmentType":"Production","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","companyName":"CRONUS International Ltd.","component":"Dynamics 365 Business Central Server","eventId":"ALMyExt-0001","clientType":"WebClient","extensionName":"ALlogmessage","alCallerAppName":"Base Application","alObjectId":"50110","alDataClassification":"SystemMetadata","alCallerPublisher":"Microsoft","alresult":"failed","alObjectType":"PageExtension","alCallerAppVersion":"20.0.36796.0","extensionPublisher":"Default publisher","alObjectName":"CustomerListExt","extensionVersion":"1.0.0.0","extensionId":"f2ae006d-deef-4990-828e-4c76906e7171","alreason":"critical error in code"}
  -->
 |Dimension|Description or value|
 |---------|-----|
