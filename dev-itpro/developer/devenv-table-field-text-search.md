@@ -1,5 +1,5 @@
 ---
-title: Enable text search on table fields
+title: Enable optimized text search on table fields
 description: Description of how you use enable text search on table fields.
 author: kennieNP
 ms.reviewer: jswymer
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.author: kepontop
 ms.collection: get-started
 ---
-# Enable full-text search on table fields
+# Enable optimized text search on table fields
 
 [!INCLUDE[2024rw2_and_later](includes/2024rw2_and_later.md)]
 
-Business Central supports the full-text search feature in SQL Server and Azure SQL Database databases, which lets users and applications run full-text queries against character-based data in tables. Learn more at [Full-text search in SQL](/sql/relational-databases/search/full-text-search). This article explains how to enable full-text search on table fields in Business Central and how you can use it to filter data in AL.
+Business Central includes an optimized text search feature on table fields, which uses the full-text search feature in SQL Server and Azure SQL Database databases. Optimized text search lets users and applications run full-text queries against character-based data in tables. This article explains how to enable optimized text search on table fields and how you can use it to filter data in AL.
 
-In the client, full-text search is used in various search functionalities, such as in the company-wide data search and on lists that include full-text search fields, referred to as modern search. Learn more in [Search for a record in company data](/dynamics365/business-central/ui-search-data) and [Search lists](/dynamics365/business-central/ui-enter-criteria-filters#searching). By enabling full-text search on fields in extensions, you can significantly optimize data search in your AL code.
+In the client, optimized text search is used in various search functionalities, such as in the company-wide data search and on lists that include optimized text search fields, referred to as modern search. Learn more in [Search for a record in company data](/dynamics365/business-central/ui-search-data) and [Search lists](/dynamics365/business-central/ui-enter-criteria-filters#searching). By enabling optimized text search on fields in extensions, you can significantly optimize data search in your AL code.
 
-## Enable full-text search on fields
+## Enable optimized text search  on fields
 
-To enable full-text search on field, set the [OptimizeForTextSearch property](properties/devenv-optimizefortextsearch-property.md) to `true`. The following example shows how text search is enabled on the field level:
+To enable optimized text search on field, set the [OptimizeForTextSearch property](properties/devenv-optimizefortextsearch-property.md) to `true`. The following example shows how text search is enabled on the field level:
 
 ```AL
-table 50104 Address
+table 50100 Address
 {
     Caption = 'Sample table';
 
@@ -30,7 +30,6 @@ table 50104 Address
         field(1; Address; Text[50])
         {
             Caption = 'Address retrieved by Service';
-            // In 2024 release wave 2 and later, you can define that table fields are included in full-text search
             OptimizeForTextSearch = true;
         }
         field(2; Locality; Text[30])
@@ -57,19 +56,19 @@ table 50104 Address
 
 You can use the `OptimizedForTextSearch` property on the **Field** virtual table. You can also use the [IsOptimizedForTextSearch() method](methods-auto/fieldref/fieldref-isoptimizedfortextsearch-method.md) on FieldRef type variables of the FieldRef data type.
 
-## Filter syntax for full-text search
+## Filter syntax for optimized text search
 
-To use full-text search in AL, you can add the `&&` operator when setting a filter, as illustrated in the following example: 
+To use optimized text search in AL, you can add the `&&` operator when setting a filter, as illustrated in the following example: 
 
 ```AL
-// Full-text search without wildcard
+// Optimized text search without wildcard
 Rec.SetFilter(Rec.Field, '&&' + SearchString);
 ```
 
 You can also include wildcards in full-text search by adding the `*` symbol to the search clause as illustrated in the following example 
 
 ```AL
-// optimized text search with wildcard
+// Optimized text search with wildcard
 Rec.SetFilter(Rec.Field, '&&' + SearchString + '*' ); 
 ```
 
@@ -98,7 +97,7 @@ Consider a database that includes the item `london swivel chair`. The following 
 
 ## Install full-text search on the database (on-premises only)
 
-For full-text search to work in Business Central on-premises, it must be installed on the SQL Server instance.
+To support optimized text search in Business Central on-premises, the SQL Server instance must include the full-text search feature.
 
 [!INCLUDE[upgrade-install-full-text-serach-sql](includes/upgrade-install-full-text-search-sql.md)]
 
@@ -107,4 +106,5 @@ For full-text search to work in Business Central on-premises, it must be install
 [OptimizeForTextSearch property](properties/devenv-optimizefortextsearch-property.md)  
 [IsOptimizeForTextSearch method](methods-auto/fieldref/fieldref-isoptimizedfortextsearch-method.md)
 [Table object](devenv-table-object.md)
-[Tables overview](devenv-tables-overview.md)
+[Tables overview](devenv-tables-overview.md)  
+[Full-text search in SQL](/sql/relational-databases/search/full-text-search)  
