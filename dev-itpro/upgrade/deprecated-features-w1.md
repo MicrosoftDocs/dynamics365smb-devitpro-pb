@@ -31,7 +31,7 @@ The following features will be removed in 2026 release wave 1.
 
 The following features are marked as `obsolete:pending` in 2024 release wave 2.
 
-### How the Create New Company assisted setup creates setup and evaluation data
+### Configuration packages for setup and evaluation data
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
