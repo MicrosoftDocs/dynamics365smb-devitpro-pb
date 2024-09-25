@@ -68,13 +68,13 @@ To attach the debugger to a session, do the following:
 
 With the **Open Source in VS Code** option, you can get the latest source code from an extension and open it directly in Visual Studio Code. The open source functionality uses the repo metadata that was included in the extension when it was built. In the manifest of an extension, the `app.json` file, you can specify metadata for where the related GitHub repository and a specific build are found by using the `build` and `source` settings. Learn more in [JSON files](devenv-json-files.md#appjson-file).
 
-Opening the source code enables investigating issues or developing new functionality based on an existing extension.
+Opening the source code enables investigating issues or developing new functionality based on an existing extension. You must have access to the code through GitHub to be able to open the source code through Visual Studio Code.
 
 Follow these steps:
 
 1. Open the **Extension Management** page and activate the context menu for the selected extension. 
 1. Choose the **Open Source in VS Code** option.  
-  In Visual Studio Code, you're now asked if you want to clone or open the GitHub repo for the extension.  
+  In Visual Studio Code, you're now asked if you want to clone or open the GitHub repo for the extension. If you choose to clone the repo, you must specify where you want to clone the repo to on your local computer.  
 3. 
 
 
