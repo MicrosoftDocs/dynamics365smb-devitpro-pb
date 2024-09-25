@@ -1,15 +1,15 @@
 ---
-title: Report Object
+title: Report object
 description: The report object in AL for Business Central allows to create a new report.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 01/18/2024
+ms.date: 09/16/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Report Object
+# Report object
 
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.
 
@@ -342,6 +342,8 @@ For more information on report limits in [!INCLUDE[prod_short](includes/prod_sho
 
 For more information on how to configure report limits in [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, see [Server settings for reports](../administration/configure-server-instance.md#Reports).
 
+> [!NOTE]
+> For Excel layouts and the ability to get report data in Excel without a layout, you also need to take Excel limits into consideration. Learn more in [Excel limits](../administration/operational-limits-online.md#Excel).
 
 ## See also
 
