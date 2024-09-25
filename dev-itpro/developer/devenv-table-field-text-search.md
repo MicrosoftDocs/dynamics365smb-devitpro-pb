@@ -74,34 +74,29 @@ You can also include wildcards in full-text search by adding the `*` symbol to t
 Rec.SetFilter(Rec.Field, '&&' + SearchString + '*' ); 
 ```
 
-This syntax supports a subset of SQL Server's `CONTAINS` predicate. Learn more at [CONTAINS (Transact-SQL)](/sql/t-sql/queries/contains-transact-sql).
-
 ## Optimized text search semantics
 
-Optimized text search differs from the traditional search using the '%' symbol in the following ways:
+Optimized text search differs from the traditional wildcard search using the '*' symbol in the following ways:
 
-- TODO
+- Optimized text search is always case insensitive, where wildcard search is case sensitive unless either the datase collation is insensitive or the '@' operator is prefixed.
+- Optimized text search is always accent insensitive, where wildcard search is accent sensitive unless either the datase collation is insensitive or the '@' operator is prefixed.
+- Optimized text search will search for words within fields, where wilcard search for letters within fields. That means full-text search can find words or prefixes of words within a field, but wildcard search can find arbitrary substrings within words. See examples below.
 
 ### Example 
 
-Hvis vi antager vi har rows med foelgede data i Description feltet:
-1 "Fast Computer Human Trainer"
-2 "Computerization Television"
-3 "'Blue Computer - Telegram'"
-4 "Red Computer - Telegram'"
- 
- 
-Eksemple uden prefix: 
-Item.SetFilter(Item.Description, '&&computer');
-Item.FindSet()... 
- 
-Matcher 1, 3, 4.
-Eksemple uden prefix flere ord:
-Item.SetFilter(Item.Description, '&&computer trainer');
-Item.FindSet()... 
- 
-Matcher ingen.
-Der maa ikke vaere ord imellem.
+If we have the following item in the database 'london swivel chair' then the query behavior will be as follows:
+
+| Query     | Matches   |
+| :-------- | :-------: |
+| *swivel*  | Yes       |
+| &&swivel  | Yes       |
+| *swiv*    | Yes       |
+| &&swiv    | No        |
+| &&swiv*   | Yes       |
+| *hair*    | Yes       |
+| &&hair    | No        |
+| &&hair*   | No        |
+
 
 ## Install full-text search on the database (on-premises only)
 
