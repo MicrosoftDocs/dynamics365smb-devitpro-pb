@@ -57,7 +57,6 @@ table 50104 Address
 
 You can use the `OptimizedForTextSearch` property on the **Field** virtual table. You can also use the [IsOptimizedForTextSearch() method](methods-auto/fieldref/fieldref-isoptimizedfortextsearch-method.md) on FieldRef type variables of the FieldRef data type.
 
-
 ## Filter syntax for full-text search
 
 To use full-text search in AL, you can add the `&&` operator when setting a filter, as illustrated in the following example: 
@@ -78,11 +77,11 @@ Rec.SetFilter(Rec.Field, '&&' + SearchString + '*' );
 
 Optimized text search differs from the traditional wildcard search using the '*' symbol in the following ways:
 
-- Optimized text search is always case insensitive, where wildcard search is case sensitive unless either the datase collation is insensitive or the '@' operator is prefixed.
+- Optimized text search is always case insensitive, where wildcard search is case sensitive unless either the dataset collation is insensitive or the '@' operator is prefixed.
 - Optimized text search is always accent insensitive, where wildcard search is accent sensitive unless either the datase collation is insensitive or the '@' operator is prefixed.
-- Optimized text search will search for words within fields, where wilcard search for letters within fields. That means full-text search can find words or prefixes of words within a field, but wildcard search can find arbitrary substrings within words. See examples below.
+- Optimized text search will search for words within fields, where wildcard search for letters within fields. That means full-text search can find words or prefixes of words within a field, but wildcard search can find arbitrary substrings within words. See examples below.
 
-### Example 
+### Example
 
 If we have the following item in the database 'london swivel chair' then the query behavior will be as follows:
 
