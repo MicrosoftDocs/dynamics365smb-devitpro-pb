@@ -33,11 +33,11 @@ As an AppSource publisher, you can focus on the following two scenarios with [!I
 
 Connect your existing online service with the [!INCLUDE[prod_short](../includes/prod_short.md)] through a powerful API. Following are some examples of existing connect apps that you can find on AppSource:  
 
-- [Square payments](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.squareinc1581374005853%7CAID.square-payments%7CPAPPID.313d5c68-0d92-4f43-b470-ab5857ecf9c6), which allows you take payments with a Square terminal.  
+- [Square payments](https://go.microsoft.com/fwlink/?linkid=2286649&clcid=0x409), which allows you take payments with a Square terminal.  
 
-- [Certify](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.efoqus-5058796%7CAID.certify%7CPAPPID.e24a3340-5ca9-4edb-aae7-8f9c709fc881?tab=Overview) which allows users to post expense reports using Certify.com  
+- [Certify](https://go.microsoft.com/fwlink/?linkid=2286557&clcid=0x409) which allows users to post expense reports using Certify.com  
 
-- [Scaptify](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview), which connects your Shopify store with Business Central  
+- [Scaptify](https://go.microsoft.com/fwlink/?linkid=2286558&clcid=0x409), which connects your Shopify store with Business Central  
 
 Learn more about the API to build connect apps: [Get started developing Connect apps](../devenv-develop-connect-apps.md).  
 
@@ -49,13 +49,13 @@ In countries/regions, where [!INCLUDE[prod_short](../includes/prod_short.md)] is
 
 Here are a few examples of some apps that extend [!INCLUDE[prod_short](../includes/prod_short.md)]:
 
-- [E-Ship and E-Receive from Lanham Associates](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.lanhamassociates%7CAID.e-ship_and_e-receive%7CPAPPID.f8750ab4-1d72-455d-b773-5b487a0ac106?tab=Overview), which extends warehouse management with barcoding and labeling, scanning functionality, and interfaces with carriers and weigh scales.
+- [E-Ship and E-Receive from Lanham Associates](https://go.microsoft.com/fwlink/?linkid=2286559&clcid=0x409), which extends warehouse management with barcoding and labeling, scanning functionality, and interfaces with carriers and weigh scales.
 
-- [Continia Document Capture](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.continia365%7CAID.6da8dd2f-e698-461f-9147-8e404244dd85%7CPAPPID.6da8dd2f-e698-461f-9147-8e404244dd85), which is an end-to-end solution for document recognition, invoice approval and digital archiving.
+- [Continia Document Capture](https://go.microsoft.com/fwlink/?linkid=2286723&clcid=0x409), which is an end-to-end solution for document recognition, invoice approval and digital archiving.
 
-- [Philippines localization from Pasi](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.e-pasi-1156349%7CAID.philwithholdingtax%7CPAPPID.abc622d1-0d07-40e3-9518-9a9adc77322a?tab=Overview), which computes the withholding tax as mandated by the Philippine government for both customers and vendors.
+- [Philippines localization from Pasi](https://go.microsoft.com/fwlink/?linkid=2286560&clcid=0x409), which computes the withholding tax as mandated by the Philippine government for both customers and vendors.
 
-- [SwissSalary 365](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.swisssalary%7CAID.swisssalary%7CPAPPID.ca3d5715-ac87-48ff-ace2-fc1605e50a69), which is a certified and flexible payroll app that's intuitive and easy to use for the Swiss market.
+- [SwissSalary 365](https://go.microsoft.com/fwlink/?linkid=2286650&clcid=0x409), which is a certified and flexible payroll app that's intuitive and easy to use for the Swiss market.
 
 Learn more on how to build your app: [Get Started with AL](../devenv-get-started.md)
 
