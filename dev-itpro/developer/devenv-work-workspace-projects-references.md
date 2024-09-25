@@ -2,7 +2,7 @@
 title: Work with multiple projects and project references
 description: Handling solutions in the AL language that contains multiple projects in one Visual Studio Code folder and contains references between these projects.
 author: SusanneWindfeldPedersen
-ms.date: 05/09/2024
+ms.date: 09/25/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -88,11 +88,11 @@ The following happens on the server:
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
 > [!NOTE]  
-> Recovery from publishing failures is a new feature added with [!INCLUDE [prod_short](includes/prod_short.md)] version 25. In prior versions, you'll need to recover any uninstalled or unpublished apps manually.
+> Recovery from publishing failures is a new feature added with [!INCLUDE [prod_short](includes/prod_short.md)] version 25. In prior versions, you need to recover any uninstalled or unpublished apps manually.
 
-When you perform a publish from Visual Studio Code, there's a possibility that the server will fail to compile the extension that you've published. This can happen because of issues in the AL code itself (for example, breaking changes in the new code, which are incompatible with the extensions on the server), or because of transient server-side issues. In these cases, there'll be an attempt to restore the original state of extensions before the publishing happened. However, there are some cases in which recovery can fail. These are:
+When you perform a publish from Visual Studio Code, there's a possibility that the server fails to compile the extension that you've published. This can happen because of issues in the AL code itself (for example, breaking changes in the new code, which are incompatible with the extensions on the server), or because of transient server-side issues. In these cases, there's an attempt to restore the original state of extensions before the publishing happened. However, there are some cases in which recovery can fail. These are:
 
-- Upgrade scenarios. For example, publishing v2 of an app over v1.
+- Upgrade scenarios. For example, when publishing a version 2.0 of an app over version 1.0.
 - Extension changes that cause tables or table extensions to be moved between apps.
 - Bugs in the install/uninstall codeunits of any affected extensions.
 
