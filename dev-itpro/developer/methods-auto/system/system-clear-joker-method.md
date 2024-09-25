@@ -118,11 +118,11 @@ end;
 
  The first message window displays the following:  
 
- **Initially the variable "MyTextVar" contains: >;My Text\> and "GuidVar" is defined as >;12345678-1234-1234-1234-1234567890AB\>**  
+ **Initially the variable "MyTextVar" contains: >;My Text\> and "GuidVar" is defined as >;aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb\>**  
 
  The second message window displays the following:  
 
- **After using Clear\(MyTextVar\), the variable "MyTextVar" contains: >;\> and GuidVar is still defined as >;12345678-1234-1234-1234-1234567890AB\>**  
+ **After using Clear\(MyTextVar\), the variable "MyTextVar" contains: >;\> and GuidVar is still defined as >;aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb\>**  
 
  The third message window displays the following:  
 

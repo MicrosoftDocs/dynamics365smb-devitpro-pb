@@ -35,7 +35,9 @@ Date :=   System.Today()
 
 ## Remarks  
 
-The date that is returned is different for the [!INCLUDE[webclient](../../includes/webclient.md)] and [!INCLUDE[nav_windows](../../includes/nav_windows_md.md)]. For the Web client, the day is determined by the Regional Setting that is set under **MySetting** in the client. The very first time a user signs in, the system automatically determines the Regional Setting based on the user's browser/computer. For the Windows client, Today returns the current day of the computer that is running the client, as determined by the date and time settings of the operating system.
+The date that is returned is different for the [!INCLUDE[webclient](../../includes/webclient.md)] and [!INCLUDE[nav_windows](../../includes/nav_windows_md.md)]. 
+For the Web client, the day is determined by the time zone that is set under **My Settings** in the client. The very first time a user signs in, the system automatically determines the time zone based on the user's browser/computer. 
+For the [!INCLUDE[nav_windows](../../includes/nav_windows_md.md)], **Today** returns the current day of the computer that is running the client, as determined by the date and time settings of the operating system.
 
 You can only use the **Today** method to retrieve the current date from the operating system. You cannot use it to set the date in the operating system.  
   

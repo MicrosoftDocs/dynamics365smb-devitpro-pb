@@ -24,7 +24,7 @@ The GUID is a 16-byte binary data type that can be logically grouped into the fo
   
 4byte-2byte-2byte-2byte-6byte.  
   
-The standard textual representation is {12345678-1234-1234-1234-1234567890AB}.  
+The standard textual representation is {aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb}.  
   
 The virtual table OLE Control (2000000042) does not use the GUID data type. It uses a textual representation of the GUID in a text field instead. It is easier to make operations and references to this text field using the GUID data type than it is using the textual representation. The GUID data type is compatible with the existing textual representation.  
   
@@ -40,8 +40,8 @@ MyTableRec.MyGuid  :=  MyTableRec.MyText;
 
 The supported formats of `MyText` are:
 
-`'11111111-1111-1111-1111-111111111111'`
-`'{22222222-2222-2222-2222-222222222222}'`
+`'aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb'`
+`'{bbbbbbbb-1111-2222-3333-cccccccccccc}'`
 
 ## Methods and properties
 
