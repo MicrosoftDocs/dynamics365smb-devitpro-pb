@@ -138,8 +138,6 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 
     Choose **OK** when done to close the **Edit Claim Rules** dialog box.
 
-    ![Edit Claims Rules dialog.](../media/ADFS_EditClaimsRule3.png "Edit Claims Rules dialog")
-
 ### Set up support for JSON Web tokens (JWT)
 
 1.  Choose the **Edit Claims Issuance Policy** action.

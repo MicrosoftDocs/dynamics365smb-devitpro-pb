@@ -88,7 +88,7 @@ The following video shows how to turn on telemetry for online environments.
 For a single-tenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, set the **Application Insights Connection String** or **Application Insights Instrumentation Key** setting of the server instance.
 
 ```powershell
-Set-NAVServerConfiguration -ServerInstance BC200 -Keyname ApplicationInsightsConnectionString -Keyvalue 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
+Set-NAVServerConfiguration -ServerInstance BC200 -Keyname ApplicationInsightsConnectionString -Keyvalue 'InstrumentationKey=aaaaaaaa-0b0b-1c1c-2d2d-333333333333;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
 ```
 For more information, see [Configuring Business Central Server](configure-server-instance.md#general-settings).
 
@@ -99,7 +99,7 @@ For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_sho
 The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps&preserve-view=true) includes the `-ApplicationInsightsConnectionString` and `-ApplicationInsightsKey` parameters. For example:
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -AadTenantId 'MyAadTenantId' -EnvironmentName 'MyEnvironmentName' -EnvironmentType Production -ApplicationInsightsConnectionString 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
+Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -AadTenantId 'MyAadTenantId' -EnvironmentName 'MyEnvironmentName' -EnvironmentType Production -ApplicationInsightsConnectionString 'InstrumentationKey=aaaaaaaa-0b0b-1c1c-2d2d-333333333333;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
 ```
 
 Or

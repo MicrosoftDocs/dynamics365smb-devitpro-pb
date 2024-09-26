@@ -67,19 +67,19 @@ Our CustomerRewardsTest project is referencing objects from the CustomerRewards 
   ...  
   "dependencies": [ 
     { 
-      "appId": "c228bdcf-7112-480b-a832-da81971b6feb", 
+      "appId": "00001111-aaaa-2222-bbbb-3333cccc4444", 
       "name": "CustomerRewards", 
       "publisher": "Microsoft", 
       "version": "1.0.0.0" 
     },
     {
-        "id":  "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
+        "id":  "00001111-aaaa-2222-bbbb-3333cccc4444",
         "name":  "Library Assert",
         "publisher":  "Microsoft",
         "version":  "19.0.0.0"
     },
     {
-        "id":  "5d86850b-0d76-4eca-bd7b-951ad998e997",
+        "id":  "00001111-aaaa-2222-bbbb-3333cccc4444",
         "name":  "Tests-TestLibraries",
         "publisher":  "Microsoft",
         "version":  "19.0.0.0"
