@@ -1,16 +1,16 @@
 ---
-title: Error handling in PromptDialog pages
+title: Error handling in prompt dialogs
 description: Learn how errors are handled in pages of the PromptDialog type in Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 09/09/2024
+ms.date: 09/26/2024
 ms.reviewer: solsen
 ---
 
-# Error handling in PromptDialog pages
+# Error handling in prompt dialogs
 
 [!INCLUDE [2024-releasewave2-changed](../includes/2024-releasewave2-changed.md)]
 
