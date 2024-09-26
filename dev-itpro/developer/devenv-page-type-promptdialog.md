@@ -321,7 +321,7 @@ page 54320 "Copilot Job Proposal"
 
 To see the `Copilot Job Proposal` code example in a complete implementation, go to [aka.ms/BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al). For more information on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
 
-Learn more about error handling in [Error handling in PromptDialog pages](devenv-page-prompt-error-handling.md).
+Learn more about error handling in [Error handling in prompt dialogs](devenv-page-prompt-error-handling.md).
 
 ## Nudging users with prompt actions
 
@@ -339,4 +339,4 @@ With the floating action bar, you can create prompt actions to promote AI capabi
 [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)  
 [Extensible property](properties/devenv-extensible-property.md)  
 [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md)  
-[Error handling in PromptDialog pages](devenv-page-prompt-error-handling.md)
+[Error handling in prompt dialogs](devenv-page-prompt-error-handling.md)

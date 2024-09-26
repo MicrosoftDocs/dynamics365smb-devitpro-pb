@@ -71,4 +71,4 @@ For a complete example of how to implement a prompt guide, see [The PromptDialog
 
 [The PromptDialog page type](devenv-page-type-promptdialog.md)  
 [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md)  
-[Error handling in PromptDialog pages](devenv-page-prompt-error-handling.md)
+[Error handling in prompt dialogs](devenv-page-prompt-error-handling.md)
