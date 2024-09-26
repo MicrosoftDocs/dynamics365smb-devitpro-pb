@@ -10,8 +10,6 @@ ms.author: jswymer
 
 # Welcome to Business Central resources for partners
 
-Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
-
 > [!NOTE]
 > The 2024 release wave 2 launch event for [!INCLUDE [prod_short](../includes/prod_short.md)] kicks off on October 8, 2024.
 >
@@ -21,6 +19,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 >
 > After the live session, you can access over 40 on-demand sessions at [aka.ms/BCYouTube](https://aka.ms/BCYouTube).
 
+Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 ## Hot topics right now
 
