@@ -252,7 +252,7 @@ In this task, you'll create an AL project in Visual Studio code that you'll use 
 
     ```json
     {
-        "id": "11111111-aaaa-2222-bbbb-333333333333",
+        "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
         "name": "My Base Application",
         "publisher": "Microsoft",
         "version": "14.13.0.0",
@@ -484,7 +484,7 @@ If you converted the test library form C/AL to AL, you'll now create and build a
 
     ```json
     {
-        "id": "44444444-aaaa-5555-bbbb-666666666666",
+        "id": "44445555-eeee-6666-ffff-7777aaaa8888",
         "name": "Test Library",
         "publisher": "Default Publisher",
         "version": "14.13.0.0",
