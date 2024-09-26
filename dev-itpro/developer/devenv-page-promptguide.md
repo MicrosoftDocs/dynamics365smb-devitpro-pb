@@ -65,9 +65,9 @@ actions
 }
 ```
 
-For a complete example of how to implement a prompt guide, see [The PromptDialog page type](devenv-page-type-promptdialog.md). For nudging users to use relevant Copilot built-in features, see [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md).
+For a complete example of how to implement a prompt guide, learn more in [The PromptDialog page type](devenv-page-type-promptdialog.md). For nudging users to use relevant Copilot built-in features, learn more in [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md).
 
-## See also
+## Related information
 
 [The PromptDialog page type](devenv-page-type-promptdialog.md)  
 [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md)  

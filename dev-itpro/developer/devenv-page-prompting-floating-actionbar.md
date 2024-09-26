@@ -84,7 +84,7 @@ actions
 ...
 ```
 
-## See also
+## Related information
 
 [The PromptDialog page type](devenv-page-type-promptdialog.md)  
 [Prompting using a prompt guide](devenv-page-promptguide.md)  
