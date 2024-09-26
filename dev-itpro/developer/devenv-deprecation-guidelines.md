@@ -20,6 +20,7 @@ When we obsolete code, we:
 - Use one of the following preprocessor symbols, where the pattern is `CLEAN<Version>`, such as `CLEAN15`, `CLEAN16`, `CLEAN17`, and `CLEAN18`. 
     > [!NOTE]  
     > These symbols aren't shipped with the product.
+- For tables and fields, we also use `CLEANSCHEMA` in a second phase to delete the SQL schema.
 - The version to use in the symbol matches the `<major>` of the `ObsoleteTag`. For example:
 
     - If a method is to be removed, then we use `#if not`
@@ -56,34 +57,40 @@ When we obsolete code, we:
 
         ```al
 
+        #if not CLEANSCHEMA19
         table 1808 "Aggregated Assisted Setup"
         {
             Access = Internal;
             Caption = 'Aggregated Assisted Setup';
         #if CLEAN16
             ObsoleteState = Removed;
-            ObsoleteTag = '17.0';
+            ObsoleteTag = '19.0';
         #else
             ObsoleteState = Pending;
             ObsoleteTag = '16.0';
         #endif
             ObsoleteReason = 'Data available in Assisted Setup already- extensions also register in the same table.';
+        }
+        #endif
+
         ```        
 
         ```al
+        #if not CLEANSCHEMA20
         field(11701; "Bank Account No."; Text[30])
         {
             Caption = 'Bank Account No.';
             Editable = false;
-        #if CLEAN18
+        #if CLEAN17
             ObsoleteState = Removed;
-            ObsoleteTag = '18.0';
+            ObsoleteTag = '20.0';
         #else
             ObsoleteState = Pending;
             ObsoleteTag = '17.0';
         #endif
             ObsoleteReason = 'Moved to Core Localization Pack for Czech.';
         }
+        #endif
         ```
     - If a table is to be marked as `Temporary`, then we use `#if #else #endif`
 
