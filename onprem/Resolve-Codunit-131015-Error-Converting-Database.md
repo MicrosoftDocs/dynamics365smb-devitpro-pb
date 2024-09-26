@@ -40,7 +40,7 @@ OBJECT Codeunit 131015 Library - Azure AD Auth Flow
       TokenByAuthCodeWithCredsTxt@1002 : TextConst '@@@={Locked};ENU=TokenByAuthCodeWithCreds';
       TokenFromCacheTxt@1003 : TextConst '@@@={Locked};ENU=TokenFromCache';
       TokenFromCacheWithCredentialsTxt@1004 : TextConst '@@@={Locked};ENU=TokenFromCacheWithCredentials';
-      SaasClientIdTxt@1005 : TextConst '@@@={Locked};ENU=11111111-1111-1111-1111-111111111111';
+      SaasClientIdTxt@1005 : TextConst '@@@={Locked};ENU=00001111-aaaa-2222-bbbb-3333cccc4444';
       CachedTokenAvailable@1007 : Boolean;
       ClientIdAvailable@1006 : Boolean;
 
