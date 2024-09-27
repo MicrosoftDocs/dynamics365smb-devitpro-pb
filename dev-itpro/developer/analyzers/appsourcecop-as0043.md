@@ -18,7 +18,7 @@ The clustered key must not be deleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-It is not allowed to rename or remove the clustered key in a table. For more information on table keys, see [Table Keys](../devenv-table-keys.md).
+It's not allowed to rename or remove the clustered key in a table. For more information on table keys, see [Table Keys](../devenv-table-keys.md).
 
 > [!NOTE]  
 > This rule validates tables independently of their Accessibility or ObsoleteState, because tables are always used when synchronizing the schema defined in the extension to the database.

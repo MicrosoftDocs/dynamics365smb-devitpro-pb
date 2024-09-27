@@ -18,6 +18,8 @@ The Obsolete Tag must be the same across branches. This rule is only relevant on
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
 This rule verifies that the version specified as obsolete tag for objects that do not change obsolete state (not obsolete, obsolete pending, or obsolete removed) with the current version has not changed.
 
 Obsolete objects which do not have the same state as in the baseline are not validated by this rule, but are validated by [AS0072](appsourcecop-as0072.md).

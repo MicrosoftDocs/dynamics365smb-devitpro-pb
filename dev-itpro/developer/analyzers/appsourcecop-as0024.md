@@ -6,6 +6,7 @@ ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
+ai-usage: ai-assisted
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,7 +21,7 @@ Parameters cannot be removed or added in external procedures, because it will br
 
 ## Remarks
 
-It is not allowed to remove or add new parameters in public procedures as this will break dependent extensions which are calling them.
+It's not allowed to remove or add new parameters in public procedures as this will break dependent extensions which are calling them.
 
 ## Code examples triggering the rule
 
