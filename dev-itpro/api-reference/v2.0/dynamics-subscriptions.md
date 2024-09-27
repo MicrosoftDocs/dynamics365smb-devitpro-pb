@@ -134,7 +134,7 @@ The change type is indicated by the `"changeType"` parameter:
   > Webhook notifications are used to trigger Power Automate flows from Business Central. However, Business Central currently doesn't support `collection` notifications for flows. So if an event changes more than 100 records with in 30 seconds, associated flows won't get triggered.
 -->
 > [!NOTE]  
-> If [!INCLUDE[prod_short](../../includes/prod_short.md)] cannot reach the subscriber, several retries will be attempted over the next 36 hours. The subscriber must respond with following error codes: `408 - Request Timeout`, `429 - Too Many Requests or any error in 500-599 range (5xx)`. If subscriber responds with any other code than listed, no retries will be attempted and the subscription will be deleted.
+> If [!INCLUDE[prod_short](../../includes/prod_short.md)] can't reach the subscriber, several retries are attempted over the next 36 hours. The subscriber must respond with following error codes: `408 - Request Timeout`, `429 - Too Many Requests or any error in 500-599 range (5xx)`. If subscriber responds with any other code than listed, no retries are attempted and the subscription is deleted.
 
 ## Unsubscribing
 
@@ -198,7 +198,7 @@ Custom APIs are also webhook-enabled and are listed in **webhookSupportedResourc
 > * The source table for the API page is Job Queue Entry ("Table No." = 472).
 
 > [!NOTE]  
-> Changes made by users who are not able to schedule job queues will not be notified until another user who is able to schedule job queues makes another change to the same table.
+> Changes made by users who aren't able to schedule job queues aren't notified until another user who is able to schedule job queues makes another change to the same table.
 
 ## Notes for on-premises
 
