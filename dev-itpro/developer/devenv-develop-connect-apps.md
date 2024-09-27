@@ -97,13 +97,6 @@ In this `Hello World` example, we're going over the basic steps required to retr
 5. Scroll down and choose **Use token** button.  
 An Authorization request header is now added containing the Bearer token.
 6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
-   > [!NOTE]  
-   > **For OAuth for testing purposes**, a multi-tenant Microsoft Entra app has been created. Admin consent is needed before the Microsoft Entra app can be used. Information is as follows:
-   > * Grant Type: Implicit
-   > * Callback URL: https://localhost 
-   > * Auth URL: https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.businesscentral.dynamics.com 
-   > * Client ID: 060af3ac-70c3-4c14-92bb-8a88230f3f38
-
 
 ## Explore APIs with Postman and basic authentication (only for on-premises)
 
@@ -130,7 +123,7 @@ Each resource is uniquely identified through an ID, see the following example of
         "@odata.context": "<endpoint>/$metadata#companies",
         "value": [
             {
-                "id": "bb6d48b6-c7b2-4a38-9a93-ad5506407f12",
+                "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
                 "systemVersion": "18453",
                 "name": "CRONUS USA, Inc.",
                 "displayName": "CRONUS USA, Inc.",
@@ -140,9 +133,9 @@ Each resource is uniquely identified through an ID, see the following example of
     }
 ```
 
-The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis `()` after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
+The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis `()` after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1)/`.
 
-All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore, it's a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the "CRONUS USA, Inc." company, we must call a GET on the URL `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`.
+All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore, it's a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the "CRONUS USA, Inc." company, we must call a GET on the URL `<endpoint>/companies(a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1)/customers`.
 -->
 
 ## See also
