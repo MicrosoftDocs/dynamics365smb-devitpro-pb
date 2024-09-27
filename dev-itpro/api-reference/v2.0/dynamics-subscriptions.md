@@ -71,11 +71,7 @@ Here's a sample notification payload:
       "expirationDateTime": "2018-10-29T07:52:31Z",
       "resource": "api/v2.0/companies(b18aed47-c385-49d2-b954-dbdf8ad71780)/items(26814998-936a-401c-81c1-0e848a64971d)",
       "changeType": "updated",
-      "lastModifiedDateTime": "2018-10-26T12:54:20.467Z",
-      "systemCreatedAt": "2017-01-23T00:24:31.766Z",
-      "systemCreatedBy": "f2a5738a-44e3-ea11-bb43-000d3a2feca1",
-      "systemModifiedAt": "2020-08-21T00:24:31.777Z",
-      "systemModifiedBy": "f2a5738a-44e3-ea11-bb43-000d3a2feca1"
+      "lastModifiedDateTime": "2018-10-26T12:54:20.467Z"
     },
     {
       "subscriptionId": "webhookCustomersId",
@@ -83,11 +79,7 @@ Here's a sample notification payload:
       "expirationDateTime": "2018-10-29T12:50:30Z",
       "resource": "api/v2.0/companies(b18aed47-c385-49d2-b954-dbdf8ad71780)/customers(130bbd17-dbb9-4790-9b12-2b0e9c9d22c3)",
       "changeType": "created",
-      "lastModifiedDateTime": "2018-10-26T12:54:26.057Z",
-      "systemCreatedAt": "2017-01-23T00:24:31.766Z",
-      "systemCreatedBy": "f2a5738a-44e3-ea11-bb43-000d3a2feca1",
-      "systemModifiedAt": "2020-08-21T00:24:31.777Z",
-      "systemModifiedBy": "f2a5738a-44e3-ea11-bb43-000d3a2feca1"
+      "lastModifiedDateTime": "2018-10-26T12:54:26.057Z"
     },
     {
       "subscriptionId": "webhookCustomersId",
@@ -95,24 +87,15 @@ Here's a sample notification payload:
       "expirationDateTime": "2018-10-29T12:50:30Z",
       "resource": "api/v2.0/companies(b18aed47-c385-49d2-b954-dbdf8ad71780)/customers(4b4f31f0-dc1c-4033-b2aa-ab03ca1d6ebc)",
       "changeType": "deleted",
-      "lastModifiedDateTime": "2018-10-26T12:54:30.503Z",
-      "systemCreatedAt": "2017-01-23T00:24:31.766Z",
-      "systemCreatedBy": "f2a5738a-44e3-ea11-bb43-000d3a2feca1",
-      "systemModifiedAt": "2020-08-21T00:24:31.777Z",
-      "systemModifiedBy": "f2a5738a-44e3-ea11-bb43-000d3a2feca1"
+      "lastModifiedDateTime": "2018-10-26T12:54:30.503Z"
     },    {
       "subscriptionId": "salesInvoice",
       "clientState": "someClientState",
       "expirationDateTime": "2018-10-20T10:55:01Z",
       "resource": "/api/v2.0/companies(7dbba574-5f69-4167-a43e-fb975045de15)/salesInvoices?$filter=lastDateTimeModified%20gt%202018-10-15T11:00:00Z",
       "changeType": "collection",
-       "lastModifiedDateTime": "2018-10-26T12:54:30.503Z",
-      "systemCreatedAt": "2017-01-23T00:24:31.766Z",
-      "systemCreatedBy": "f2a5738a-44e3-ea11-bb43-000d3a2feca1",
-      "systemModifiedAt": "2020-08-21T00:24:31.777Z",
-      "systemModifiedBy": "f2a5738a-44e3-ea11-bb43-000d3a2feca1"
+       "lastModifiedDateTime": "2018-10-26T12:54:30.503Z"
     }
-
   ]
 }
 ```
