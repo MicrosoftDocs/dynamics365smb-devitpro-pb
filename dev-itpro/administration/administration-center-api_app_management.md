@@ -112,7 +112,7 @@ Example `400 Bad Request` response when dependent apps need to be installed firs
   "data": { // Any additional data for the error. For example, when "installOrUpdateNeededDependencies" in the request body was set to false, and there are dependencies that must be first installed or updated. 
     "requirements": [ // List of requirements you need to fulfil before you can run the request 
       { 
-        "appId": "1ed76016-b288-401c-92e1-75b2d47ff223", 
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888", 
         "name": "Contoso App", 
         "publisher": "Contoso", 
         "version": "16.0.32.0", 
@@ -177,7 +177,7 @@ Example `400 Bad Request` response when dependent apps need to be uninstalled fi
   "data": { // Any additional data for the error. For example, when "uninstallDependents" in the request body was set to false, and there are existing dependent apps that need to be uninstalled first. The list of requirements is all apps that depend on app 35601559-224a-47d5-8089-86ac88b2b995. 
     "requirements": [ // List of requirements you need to fulfil before you can run the request 
       { 
-        "appId": "1ed76016-b288-401c-92e1-75b2d47ff223", 
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888", 
         "name": "Contoso App", 
         "publisher": "Contoso", 
         "version": "16.0.32.0", 
@@ -317,7 +317,7 @@ Example `400 Bad Request` response when dependent apps need to be updated first:
   "data": { // Any additional data for the error. For example, when when "installOrUpdateNeededDependencies" in the request body was set to false, and dependencies need to be installed or updated.  
     "requirements": [ // List of requirements you need to fulfil before you can run the request 
       { 
-        "appId": "1ed76016-b288-401c-92e1-75b2d47ff223", 
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888", 
         "name": "Contoso App", 
         "publisher": "Contoso", 
         "version": "16.0.32.0", 
