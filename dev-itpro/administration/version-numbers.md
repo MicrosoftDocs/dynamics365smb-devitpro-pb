@@ -11,7 +11,7 @@ ms.reviewer: jswymer
 
 # Version numbers in Business Central
 
-[!INCLUDE [prod_short](../developer/includes/prod_short.md)] online and on-premises consists of different components that must work together. If you are a an enduser, this doesn't matter in the course of your normal work day. But if you are an administrator, knowing the version numbers is important for troubleshooting, development, and on-premises upgrade scenarios.  
+[!INCLUDE [prod_short](../developer/includes/prod_short.md)] online and on-premises consists of different components that must work together. If you are an end-user, this doesn't matter in the course of your normal work day, however; if you are an administrator, knowing the version numbers is important for troubleshooting, development, and on-premises upgrade scenarios.  
 
 You can use the information about which version the tenant is on to help you troubleshoot an issue that a user has reported, for example. This information is listed in the **Troubleshooting** section of the **Help and Support** page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] in the following format:
 
