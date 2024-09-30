@@ -2,7 +2,7 @@
 title: AL code actions
 description: Code actions can help you fix code issues either for your project alone or for the entire workspace.
 author: SusanneWindfeldPedersen
-ms.date: 06/21/2024
+ms.date: 09/30/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -28,11 +28,11 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the following code a
 - Fix implicit `with` statements on the instance, document, project, or workspace.
 - Fix old report layout and replace with `rendering` layout section
 - Fix for [AW0013](analyzers\uicop-aw0013.md)
-- Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar. Fix for instance, document, project, or workspace. For more information, see [Code action for actions](devenv-code-actions.md#code-actions-for-promoted-actions).
+- Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar. Fix for instance, document, project, or workspace. Learn more in [Code action for actions](devenv-code-actions.md#code-actions-for-promoted-actions).
 - Set the default value for `ApplicationArea` on a page or a report level and remove all duplicates on field level. This code action can be applied to an object, a document, a project, or a workspace.
 - Convert existing event parameter in event subscribers from string literal to new identifier format. Fix event subscriber on the specific EventSubscriber instance, the active file, the active project, or the whole workspace. This makes it easy and controllable to opt in to the new syntax.
 - Insert `using` statement for a missing namespace. Fix for instance, document, project, or workspace.
-- Move the tooltip from page controls to table fields or clean them up from the page in case of duplicates. For more information, see [Tooltip property](properties/devenv-tooltip-property.md).
+- Move the tooltip from page controls to table fields or clean them up from the page if there are duplicates. Learn more in [Tooltip property](properties/devenv-tooltip-property.md).
 
 ## Examples
 
@@ -66,10 +66,9 @@ Alternatively:
 2. Navigate to **Extensions > AL Language extension configuration**.
 3. Choose the **Enable Code Actions** checkbox. You've now enabled code actions on your project.
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [AL outline view](devenv-al-outline-view.md)  
 [AL Formatter](devenv-al-formatter.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
-
