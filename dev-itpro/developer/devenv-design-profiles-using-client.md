@@ -1,14 +1,14 @@
 ---
-title: "Using the Client to Create Profiles"
-description: "Gives an overview of how to create profiles by using the client together with Visual Studio Code."
+title: Using the client to create profiles
+description: Gives an overview of how to create profiles by using the client together with Visual Studio Code.
 author: jswymer
-ms.date: 04/01/2021
+ms.date: 09/30/2024
 ms.topic: conceptual
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
-# Using the Client to Create Profiles and Page Customizations
+# Using the client to create profiles and page customizations
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
@@ -18,8 +18,8 @@ Besides creating profiles, profile extensions, and page customizations by writin
 
 For detailed instructions on how to use the client to create and modify profiles, see the following articles in the Business Central application help:
 
-- [Create Profiles](/dynamics365/business-central/admin-users-profiles-roles#to-create-a-profile)
-- [Customize Pages for Profiles](/dynamics365/business-central/ui-personalization-manage).
+- [Create profiles](/dynamics365/business-central/admin-users-profiles-roles#to-create-a-profile)
+- [Customize pages for profiles](/dynamics365/business-central/ui-personalization-manage).
 
 A consequence of using the client is that profile changes apply only to the tenant. Extension-based profiles and customizations, by contrast, are available for all tenants. However, the client lets you export user-created profiles and page customizations from a tenant, then import them on another tenant.
 
@@ -250,10 +250,10 @@ After you make modifications to exported profiles, profile extensions, and page 
 
 The profile package doesn't have to contain the same files that were originally exported. But it must contain the app.json and profile.json files. Otherwise, you can't import the package. To create the profile package, just compress the files into a zip folder.  
 
-## See Also
+## Related information
 
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Page Object](devenv-page-object.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Page Extension Properties](properties/devenv-page-property-overview.md)   
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Page object](devenv-page-object.md)  
+[Page extension object](devenv-page-ext-object.md)  
+[Page extension properties](properties/devenv-page-property-overview.md)   
