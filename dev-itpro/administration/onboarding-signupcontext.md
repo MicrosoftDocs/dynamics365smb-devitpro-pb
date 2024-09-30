@@ -76,7 +76,7 @@ To pass the `SignupContext` parameter through the sign-up process to the [!INCLU
 
    **Before encoding**
    ```json
-    {"name":"partnerx","appid":"12345678-1234-1234-1234-12456781234","countrycode":"us","eulaaccept": "true" ,"presystem":"Foo Accounting"}
+    {"name":"partnerx","appid":"00001111-aaaa-2222-bbbb-3333cccc4444","countrycode":"us","eulaaccept": "true" ,"presystem":"Foo Accounting"}
     ```    
    **After encoding**
    <pre>7B%22name%22%3A%22partnerx%22%2C%22appid%22%3A%2212345678-1234-1234-1234-12456781234%22%2C%22countrycode%22%3A%22us%22%2C%22eulaaccept%22%3A%20%22true%22%20%2C%22presystem%22%3A%22Foo%20Accounting%22%7D
