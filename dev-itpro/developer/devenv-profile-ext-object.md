@@ -2,7 +2,7 @@
 title: Profile extension object
 description: Description of the profile extension object, which allows you to modify an individual experience for each user profile.
 author: qutreson
-ms.date: 06/10/2024
+ms.date: 09/30/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -25,6 +25,7 @@ The profile extension object in [!INCLUDE [prod_short](includes/prod_short.md)] 
 > The property `allowDebugging`, which is a setting under `resourceExposurePolicy` doesn't apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied through **Use Designer**. For more information, see [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
 ## Snippet support
+
 Typing the shortcut `tprofileextension` creates the basic layout for a profile extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
@@ -53,7 +54,8 @@ pagecustomization MyCustomization customizes "Customer List"
 }
 ```
 
-## See also  
+## Related information
+
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions](devenv-dev-overview.md)  
 [Pages overview](devenv-pages-overview.md)  
