@@ -2,7 +2,7 @@
 title: Scheduled performance profiler overview
 description: Describes how to use the Profiler Schedules page in Business Central to troubleshoot slow processes across time.
 ms.author: sodragon
-ms.date: 09/18/2024
+ms.date: 09/30/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 author: sodragon
@@ -44,26 +44,26 @@ Profiler schedules are supported for the following types of activities:
 
 Administrator users can create schedules for themselves and other users. Other users can create schedules for themselves to record their workflow. 
 
-### How to disable a schedule
+### How to turn off a schedule
 
-A schedule can be disabled by navigating to it via the Profiler Schedules page and toggling off the Enabled field.
-> [!NOTE]  
-    > Profiles may still be generated for a short duration as the setting propagates across the system.
+A schedule can be turned off by navigating to it via the **Profiler Schedules** page and toggling off the **Enabled** field.  
+  > [!NOTE]  
+  > Profiles might still be generated for a short duration as the setting propagates across the system.
 
 ## Viewing and analyzing the profiles from a schedule
 
 The profiles generated from a specific schedule can be accessed by selecting it in the Profiler Schedules page and clicking on the **Open Profiles** action. This opens the **Performance Profiles** page.
 In the list, each profile corresponds to an activity within [!INCLUDE [prod_short](../includes/prod_short.md)]. The **Activity Description** column describes what kind of activity happened in order to 
 correlate these with user interactions, jobs, or web service calls. Various aggregate performance metrics are provided for each activity. Analysis mode can be used to perform a high-level investigation of what processes
-take the most time here. For more information, see [Learn more about data analysis mode](/dynamics365/business-central/analysis-mode).
+take the most time here. Learn more in [Learn more about data analysis mode](/dynamics365/business-central/analysis-mode).
 
 > [!TIP]  
 > The **Correlation ID** column can be provided to customer support when reporting a performance issue to identify a specific interaction.
 
 Each activity is associated with a performance profile, which contains a snapshot of the AL code that was executed as part of it. By clicking on the row or using the **Open Profile** action, an overview of the profile opens in the **Performance Profiler** page.
-This overview is the same as the one created for the in-client performance profiler. For information on how to analyze this data, see [Analyzing high-level results](performance-profiler-overview.md#analyzing-high-level-results) and [Viewing advanced results](performance-profiler-overview.md#viewing-advanced-results).
+This overview is the same as the one created for the in-client performance profiler. Learn more about how to analyze this data in [Analyzing high-level results](performance-profiler-overview.md#analyzing-high-level-results) and [Viewing advanced results](performance-profiler-overview.md#viewing-advanced-results).
 
-The profiles can also be analyzed via the AL profiler in Visual Studio Code after downloading them. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).
+The profiles can also be analyzed via the AL profiler in Visual Studio Code after downloading them. Learn more in [AL Profiler overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).
 
 An overview of the fields of the **Performance Profiles** page can be found below:
 
@@ -82,7 +82,7 @@ An overview of the fields of the **Performance Profiles** page can be found belo
 
 If you want to share a recording, for example, if you're in contact with the company that provided an app that you think is slowing down a process, you can share the recording with them. Choose the **Share** button on the **Performance Profiler** page, and send the link to the app provider.
 
-You can also download the recording and, for example,  copy the file to OneDrive to share it with your colleagues. Choose the **Download** button on the **Performance Profiles** page, and then choose **Yes** in the confirmation dialog. The file is downloaded to your default download location.
+You can also download the recording and, for example, copy the file to OneDrive to share it with your colleagues. Choose the **Download** button on the **Performance Profiles** page, and then choose **Yes** in the confirmation dialog. The file is downloaded to your default download location.
 
 ## Clearing performance profiles
 
@@ -132,5 +132,5 @@ Due to the background processing of profiles, it's possible that some profiles w
 ## Related information
 
 [Performance Profiler overview](performance-profiler-overview.md)  
-[Managing Technical Support](manage-technical-support.md)  
+[Managing technical support](manage-technical-support.md)  
 [Escalate support issues to Microsoft](raise-support-case.md)  
