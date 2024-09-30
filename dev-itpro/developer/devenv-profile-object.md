@@ -2,7 +2,7 @@
 title: Profile object
 description: Description of the profile object, which allows you to build an individual experience for each user profile.
 author: SusanneWindfeldPedersen
-ms.date: 06/10/2024
+ms.date: 09/30/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -56,7 +56,7 @@ pagecustomization MyCustomization customizes "Customer List"
 }
 ```
 
-## See also  
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions](devenv-dev-overview.md)  
