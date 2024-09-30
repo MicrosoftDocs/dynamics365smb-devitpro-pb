@@ -23,7 +23,7 @@ The **AL Explorer** has four tabs: **OBJECTS**, **EVENTS**, **APIS**, and **EXTE
 
 ## Settings
 
-You can choose when to show the **AL Explorer** as you start up Visual Studio Code, the default is that **AL Explorer** is shown once at startup. To change the default, go to user or workspace settings, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration**, change the **Show Explorer at startup** to a different value. For more information, see [AL Language extension configuration](devenv-al-extension-configuration.md).
+You can choose when to show the **AL Explorer** as you start up Visual Studio Code, the default is that **AL Explorer** is shown once at startup. To change the default, go to user or workspace settings, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration**, change the **Show Explorer at startup** to a different value. Learn more in [AL Language extension configuration](devenv-al-extension-configuration.md).
 
 ## Search
 
@@ -60,7 +60,7 @@ In the rightmost column, you can bookmark objects used frequently to filter a li
 
 The **EVENTS**, **APIS**, and **EXTENSIBLE ENUMS** tabs provide an overview of available extension points and extensible enums that implement interfaces. On any given event, you can choose the **Subscribe** button, which copies a code snippet with the event subscriber syntax into the clipboard, and you can paste that into a codeunit to get started.
 
-## See also
+## Related information
 
 [AL Home](devenv-al-home.md)  
 [Developing extensions in AL](devenv-dev-overview.md)
