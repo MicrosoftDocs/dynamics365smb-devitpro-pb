@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 08/29/2024
+ms.date: 09/30/2024
 ms.custom: bap-template
 ---
 
@@ -26,10 +26,10 @@ Before you choose the target version for your upgrade, read the [Some Known Issu
 
 The following table lists the Business Central 23 versions and the minimum version of later releases that are compatible for upgrade.
 
-|Version 24|Version 25|
+|V24 update|V25 update|
 |-|-|
 |24.0 to 24.5|25.0|
-|24.6<sup>[\[1\]](#1)</sup>|25.1|
+|[24.6](https://support.microsoft.com/help/5046146)<sup>[\[1\]](#1)</sup>|25.1|
 
 ## Version 23 compatibility
 
@@ -44,7 +44,7 @@ The following table lists the Business Central 23 update versions and the minimu
 |[23.9](https://support.microsoft.com/help/5041132) |[24.4](https://support.microsoft.com/help/5042530)|25.0|
 |[23.10](https://support.microsoft.com/help/5042529)|24.5|25.0|
 |[23.11](https://support.microsoft.com/help/5043980)|24.6|25.0|
-|23.12<sup>[\[1\]](#1)</sup> |24.7|25.1|
+|[23.12](https://support.microsoft.com/help/5046145)<sup>[\[1\]](#1)</sup> |24.7|25.1|
 
 Get a list of all available updates for Business Central 2023 Release Wave 2 at [Released Updates for Microsoft Dynamics 365 Business Central 2023 Release Wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d).
 
@@ -67,7 +67,7 @@ The following table lists the Business Central 22 update versions and the minimu
 |[22.15](https://support.microsoft.com/help/5041131) |[23.10](https://support.microsoft.com/help/5042529)|[24.4](https://support.microsoft.com/help/5042530)|25.0|
 |[22.16](https://support.microsoft.com/help/5042528) |23.11|24.5|25.0|
 |[22.17](https://support.microsoft.com/help/5043979)|23.12|24.6|25.0|
-|22.18<sup>[\[1\]](#1)</sup> |23.13|24.7|25.1|
+|[22.18](https://support.microsoft.com/help/5046144)<sup>[\[1\]](#1)</sup> |23.13|24.7|25.1|
 
 Get a list of all available updates for Business Central 2023 Release Wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2023 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51).
 
