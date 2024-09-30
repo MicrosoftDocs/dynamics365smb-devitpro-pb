@@ -12,7 +12,7 @@ ms.date: 09/17/2024
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can open a new Visual Studio Code session directly from the web client for a specific customer production or sandbox environment. Opening the session directly, enables performing troubleshooting, such as debugging, inspecting variables, setting breakpoints, and viewing source code.
 
-Depending on the context, Visual Studio Code opens to allow inspecting objects and source, and allows attaching to debug or snapshot debug and profile the current web client session. Whether you can access the source code is gated by the resource exposure profile settings for each extension. For more information, see [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
+Depending on the context, Visual Studio Code opens to allow inspecting objects and source, and allows attaching to debug or snapshot debug and profile the current web client session. Whether you can access the source code is gated by the resource exposure profile settings for each extension. Learn more in [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
 From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can open Visual Studio Code in the following ways:
 
@@ -21,7 +21,7 @@ From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can ope
 
 ## Open a page from the Page Inspector
 
-From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can open the **Page Inspection** page and explore the code behind it in Visual Studio Code. For more information about Page inspection, see [Page inspection](devenv-inspecting-pages.md).
+From a page in the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can open the **Page Inspection** page and explore the code behind it in Visual Studio Code. Learn more about page inspection in [Page inspection](devenv-inspecting-pages.md).
 
 ![Page Inspection Open in VS Code.](media/page-inspection-openinvscode.png)
 
@@ -77,7 +77,7 @@ Follow these steps:
   In Visual Studio Code, you're now asked if you want to clone or open the GitHub repo for the extension. If you choose to clone the repo, you must specify where you want to clone the repo to on your local computer.  
 3. Once the repo is cloned, you have different options for working with the source code. You can, for example, stay on the current main branch, or you can create a new branch for your modification.  
   If you choose to create a new branch, you must give it a name.
-4. With access to the source code on your local computer, you can, for example, use the Page Inspector to help you navigate to the source code by using the **Explore page in Visual Studio Code** functionality. For more information, see [Open a page from the Page Inspector](#open-a-page-from-the-page-inspector).
+4. With access to the source code on your local computer, you can, for example, use the Page Inspector to help you navigate to the source code by using the **Explore page in Visual Studio Code** functionality. Learn more in [Open a page from Page Inspector](#open-a-page-from-the-page-inspector).
 
 
 ## Good to know
@@ -85,11 +85,11 @@ Follow these steps:
 - If Visual Studio Code is already open, the last active session is used; otherwise, a new Visual Studio Code session opens. If the AL Language extension isn't installed, the user is asked to install it, and the process ends.
 - When invoked, a new project is created, and a matching launch configuration is created, depending on the current environment being a production or sandbox environment.
 - If the user chooses to debug, Visual Studio Code attaches to the web client process, which it was invoked from and awaits breaking on error.
-- If reusing a project and the source files aren't up to date with the version on the server, the breakpoints won't be hit correctly when debugging. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
+- If reusing a project and the source files aren't up to date with the version on the server, the breakpoints won't be hit correctly when debugging. Learn more in [Snapshot debugging](devenv-snapshot-debugging.md).
 - When you choose to generate new projects, remember to delete the projects occasionally to not accumulate many unused projects.
 - Running the web client in a browser, you're typically not running the browser as an administrator, which means that Visual Studio Code also doesn't open in administrator mode. So, for example, if Visual Studio Code prompts you for an update, and you choose yes, you get an error, because you don't have permissions to update. It's then recommended to shut down Visual Studio Code, and reopen it as an administrator and update it. Then, you can continue debugging.
 
-## See also
+## Related information
 
 [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md)  
 [Debugging](devenv-debugging.md)  
