@@ -113,7 +113,7 @@ To control how dependency publishing is performed on the server, the `launch.jso
 
 ## User and workspace launch configuration
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. For more information, see [User and workspace launch configuration](devenv-json-launch-file.md#user-and-workspace-launch-configuration).
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. Learn more in [User and workspace launch configuration](devenv-json-launch-file.md#user-and-workspace-launch-configuration).
 
 ## Traverse the dependency graph
 
@@ -126,7 +126,7 @@ To remove unnecessary manual work, use the **AL: Publish full dependency tree fo
 
 ## Incremental Build setting
 
-If the `al.incrementalBuild` setting is set to `true` on workspaces with project to project references, all resolutions happen from the referenced project, instead of happening from an app in the `\packagecache` folder, which enhances the build time. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+If the `al.incrementalBuild` setting is set to `true` on workspaces with project to project references, all resolutions happen from the referenced project, instead of happening from an app in the `\packagecache` folder, which enhances the build time. Learn more in [AL Language Extension configuration](devenv-al-extension-configuration.md).
 
 ## Making sure that your project or workspace is updated
 
@@ -134,7 +134,7 @@ If the `al.incrementalBuild` setting is set to `true` on workspaces with project
 > When working in a project or workspace, some operations require that you run a **Reload Window** command (<kbd>Ctrl</kbd>+<kbd>R</kbd>) for your project or workspace to ensure that it’s updated correctly. Examples are; source control operations like Git Pull, changes made to the `app.json` file, or updating User or Workspace settings for AL.
 
 
-## See also
+## Related information
 
 [Development in AL](devenv-dev-overview.md)  
 [Best practices for AL](../compliance/apptest-bestpracticesforalcode.md)  
