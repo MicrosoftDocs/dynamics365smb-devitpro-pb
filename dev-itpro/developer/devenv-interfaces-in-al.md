@@ -2,7 +2,7 @@
 title: Interfaces in AL
 description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method.
 author: SusanneWindfeldPedersen
-ms.date: 09/13/2024
+ms.date: 09/30/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -153,7 +153,7 @@ page 50200 MyAddressPage
 }
 ```
 
-## See also
+## Related information
 
 [Codeunit object](devenv-codeunit-object.md)  
 [Extensible enums](devenv-extensible-enums.md)  

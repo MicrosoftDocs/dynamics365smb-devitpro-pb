@@ -2,7 +2,7 @@
 title: Type testing and casting operators for interfaces
 description: With the `is` and `as` operators, you can do type testing and casting of interfaces in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 09/13/2024
+ms.date: 09/30/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -60,7 +60,7 @@ begin
 end;
 ```
 
-## See also
+## Related information
 
 [Interfaces in AL](devenv-interfaces-in-al.md)  
 [Extending interfaces in AL](devenv-interfaces-in-al-extend.md)  
