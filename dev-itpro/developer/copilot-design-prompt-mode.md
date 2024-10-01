@@ -106,7 +106,7 @@ var
     InputProjectDescription: Text;
 ```
 
-[Learn more about prompt guides](devenv-page-promptguide.md).
+[Learn more about prompt guides](devenv-page-promptguide.md) and about [Error handling in prompt dialogs](devenv-page-prompt-error-handling.md).
 
 ## Add a generate action
 

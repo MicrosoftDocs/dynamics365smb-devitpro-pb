@@ -797,7 +797,7 @@
 ####### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
 ####### [Prompting using a prompt guide](developer/devenv-page-promptguide.md)
 ####### [Prompting using a floating action bar](developer/devenv-page-prompting-floating-actionbar.md)
-
+####### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
 ###### List pages
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
@@ -1840,6 +1840,25 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
+### Business Central 2024 release wave 2
+#### [Overview](upgrade/upgrade-overview-v25.md)
+#### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
+#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrade permission sets](upgrade/upgrade-permissions.md)
+#### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
+#### Upgrade application and data
+##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v25.md)
+##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v25.md)
+##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v25.md)
+#### Related articles
+##### [Convert to AL](upgrade/devenv-code-conversion.md)
+##### Migrating tables and fields between extensions
+###### [Overview](developer/devenv-migrate-table-fields.md)
+###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### Data migration toolkit - India
+###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v25.md)
 ### Business Central 2024 release wave 1
 #### [Overview](upgrade/upgrade-overview-v24.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
@@ -1882,6 +1901,7 @@
 ##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v23.md)
 ##### [From version 20, 21, or 22](upgrade/upgrade-technical-upgrade-v23.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v23.md)
+### Earlier versions
 ### Business Central 2023 release wave 1
 #### [Overview](upgrade/upgrade-overview-v22.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v22.md)
@@ -1905,7 +1925,6 @@
 ##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v22.md)
 ##### [From version 20 or 21](upgrade/upgrade-technical-upgrade-v22.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v22.md)
-### Earlier versions
 #### Business Central 2022 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v21.md)
 ##### [Before you upgrade](upgrade/upgrade-considerations-v21.md)
