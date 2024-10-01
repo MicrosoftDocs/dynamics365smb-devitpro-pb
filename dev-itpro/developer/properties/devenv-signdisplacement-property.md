@@ -1,8 +1,8 @@
 ---
-title: "SignDisplacement Property"
+title: "SignDisplacement property"
 description: "Sets a value to shift negative values to the right for display purposes only."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets a value to shift negative values to the right for display purposes only. You can shift negative values in increments of 1/100 of a millimeter.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -42,6 +42,6 @@ For example, if you enter 600 (6 millimeters) you would see a result similar to:
   
 (+)987654321  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

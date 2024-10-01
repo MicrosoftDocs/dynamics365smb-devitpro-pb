@@ -1,8 +1,8 @@
 ---
-title: "RunPageOnRec Property"
+title: "RunPageOnRec property"
 description: "Sets the same record on the page you launch from this control as is already displayed on the current page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -35,7 +35,7 @@ RunPageOnRec = true;
 
 For example, suppose the current page is the sales order and you are providing a way to see the sales statistics for the current customer. You would select RunObject in the PushAction property and use the [RunObject Property](devenv-runobject-property.md) to run the sales statistics page. In this property you could select Yes to display the same record on both pages.  
   
-## See Also  
+## Related information  
 
 [RunPageView Property](devenv-runpageview-property.md)   
 [RunPageLink Property](devenv-runpagelink-property.md)

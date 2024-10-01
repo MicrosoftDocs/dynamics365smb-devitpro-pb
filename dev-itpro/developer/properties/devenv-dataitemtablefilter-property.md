@@ -1,8 +1,8 @@
 ---
-title: "DataItemTableFilter Property"
+title: "DataItemTableFilter property"
 description: "Sets filters on fields of the underlying table of a query."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -68,7 +68,7 @@ query 50001 "Low on stock inventory items"
 }
 ```
 
-## See Also
+## Related information
 
 [ColumnFilter Property](devenv-columnfilter-property.md)  
 [SetFilter Method (Query)](../methods-auto/library.md)  
