@@ -72,6 +72,7 @@ The in-client Performance Profiler described in this article, is a simplified ve
 
 ## See also
 
+[Scheduled performance profiler overview](scheduled-performance-profiler-overview.md)  
 [Managing technical support](/dynamics365/business-central/dev-itpro/administration/manage-technical-support)  
 [Escalate support issues to Microsoft](/dynamics365/business-central/dev-itpro/administration/raise-support-case)  
 [Debugging](/dynamics365/business-central/dev-itpro/developer/devenv-debugging)  

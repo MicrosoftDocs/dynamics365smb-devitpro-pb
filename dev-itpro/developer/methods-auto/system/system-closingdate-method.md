@@ -2,7 +2,7 @@
 title: "System.ClosingDate(Date) Method"
 description: "Gets the closing date for a Date Data Type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -101,7 +101,7 @@ The following message is displayed:
   
 **The closing date for C04/04/14 is C04/04/14.**  
   
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

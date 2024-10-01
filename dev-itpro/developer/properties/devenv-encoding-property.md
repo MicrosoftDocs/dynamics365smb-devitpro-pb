@@ -2,7 +2,7 @@
 title: "Encoding property"
 description: "Sets a value that specifies which system is applied to the XmlPort for character encoding."
 ms.author: solsen
-ms.date: 09/18/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -38,6 +38,6 @@ Encoding = UTF16;
 
 The three options available for this property are UTF8, UTF16, and ISO88592. UTF8 is the default setting. Information about the encoding system used is inserted into the header of the XML document.
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

@@ -2,10 +2,11 @@
 title: "AppSourceCop Error AS0024"
 description: "Parameters cannot be removed or added in external procedures, because it will break dependent extensions."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
+ai-usage: ai-assisted
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,7 +21,7 @@ Parameters cannot be removed or added in external procedures, because it will br
 
 ## Remarks
 
-It is not allowed to remove or add new parameters in public procedures as this will break dependent extensions which are calling them.
+It's not allowed to remove or add new parameters in public procedures as this will break dependent extensions which are calling them.
 
 ## Code examples triggering the rule
 
@@ -138,7 +139,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

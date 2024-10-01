@@ -1,8 +1,8 @@
 ---
-title: "Filters Property"
+title: "Filters property"
 description: "Sets a set of filters for the page that will be applied for this page view."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -49,6 +49,6 @@ pagecustomization MyCustomization customizes "Customer List"
 
 For more information on how you can scan, find, and limit records in a list, see [Sorting, Searching, and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters). 
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

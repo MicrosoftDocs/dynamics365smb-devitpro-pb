@@ -2,7 +2,7 @@
 title: "WebServiceActionContext.SetObjectId(Integer) Method"
 description: "Sets the object ID."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -40,7 +40,7 @@ actionContext.SetObjectId(Page::SalesInvoiceCopy);
 ```
 For a complete code example, see [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md).
 
-## See Also
+## Related information
 [WebServiceActionContext Data Type](webserviceactioncontext-data-type.md)  
 [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md)  
 [Get Started with AL](../../devenv-get-started.md)  

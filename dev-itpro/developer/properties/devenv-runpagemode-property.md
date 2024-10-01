@@ -1,8 +1,8 @@
 ---
-title: "RunPageMode Property"
+title: "RunPageMode property"
 description: "Sets the mode in which the page is run."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Sets the mode in which the page is run. Choose between View, Edit, or Create.
 ## Applies to
 -   Page Action
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -35,7 +35,7 @@ Sets the mode in which the page is run. Choose between View, Edit, or Create.
 RunPageMode = Edit;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [RunObject Property](devenv-runobject-property.md)

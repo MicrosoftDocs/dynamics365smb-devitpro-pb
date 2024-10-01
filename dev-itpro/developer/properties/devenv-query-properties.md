@@ -107,7 +107,7 @@ This article lists properties that apply to the query object.
 
 -->
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)  
 [Query Object](../devenv-query-object.md)  
 [Table and Table Extension Properties](devenv-table-properties.md)  

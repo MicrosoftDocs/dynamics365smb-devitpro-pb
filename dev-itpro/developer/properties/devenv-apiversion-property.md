@@ -18,7 +18,7 @@ The APIVersion property is applicable to the following types:
 - [APIVersion Property (Query)](devenv-apiversion-query-property.md)   
 
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)   
 [Page Object](../devenv-page-object.md)   
 [Query Object](../devenv-query-object.md)   

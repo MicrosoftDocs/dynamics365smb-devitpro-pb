@@ -1,8 +1,8 @@
 ---
-title: "DefaultImplementation Property"
+title: "DefaultImplementation property"
 description: "Specifies the default implementer for the enum value if there is no explicit implementer set for the value."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -107,6 +107,6 @@ Adding a new interface to an existing, extensible enum, requires that all extens
 Related to `DefaultImplementation` is the `UnknownValueImplementation` property, used for handling unknown enum values. For more information, see [UnknownValueImplementation Property](devenv-unknownvalueimplementation-property.md).
 
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
