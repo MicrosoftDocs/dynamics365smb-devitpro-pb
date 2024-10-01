@@ -3,7 +3,7 @@ title: Enable optimized text search on table fields
 description: Description of how you use enable text search on table fields.
 author: kennieNP
 ms.reviewer: jswymer
-ms.date: 09/25/2024
+ms.date: 10/01/2024
 ms.topic: conceptual
 ms.author: kepontop
 ms.collection: get-started
