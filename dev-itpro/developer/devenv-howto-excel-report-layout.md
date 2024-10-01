@@ -58,10 +58,11 @@ Starting from version 23.3, the [!INCLUDE[prod_short](../includes/prod_short.md)
 - CaptionData
 - Aggregated Metadata
 
-All data in these worksheets is organized in Excel tables from which you can reference individual fields using Excel table formulas.
+All three system worksheets are hidden by default and the data in these worksheets is organized in Excel tables from which you can reference individual fields using Excel table formulas.
 
 > [!NOTE]  
-> All three worksheets are hidden by default.
+> Excel report layout workbooks include named formulas for easier lookups. For more information, see [Named formulas](#named-formulas).
+
 
 #### TranslationData worksheet definition (table TranslationData)
 
@@ -146,11 +147,12 @@ The actual filter format is '\<DataItemName\>::\<Source Table Caption\>::\<Filte
 
 There will be one row for each active filter defined on the request page.
 
-## Using named formulas
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] saves Excel report authors time and energy by providing built-in named formulas that make it easy to access data from metadata sheets. Instead of developing complicated VLOOKUP or XLOOKUP formulas, report authors can use named formulas, such as **ReportRequest.Date** or **ReportMetaData.ReportHelpLink**.
+#### Named formulas 
 
-Named formulas are built in to Excel layout workbooks generated in 2024 release wave 2 and later versions.
+In Business Central 2024 release wave 2 and later, when you create Excel report layout workbooks, either from VSCode or when you get a new template from the request page, Excel report layout workbooks include named formulas for easier lookups. Instead of having to write complicated VLOOKUP or XLOOKUP formulas, report authors can use named formulas, such as **ReportRequest.Date** or **ReportMetaData.ReportHelpLink**.
+
+To see all available formulas in an Excel workbook, in the **Defined Names** group, choose **Formulas**, and then **Name Manager**.
 
 ### Translating Excel sheets in 2023 release wave 2 and later versions
 
