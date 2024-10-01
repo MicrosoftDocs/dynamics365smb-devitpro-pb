@@ -2,10 +2,10 @@
 title: "TestFilter.SetCurrentKey(TestFilterField [, TestFilterField,...]) Method"
 description: "Sets the specified fields in a data set on a test page as the current key."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,7 +41,7 @@ Additional field that you want to set as the current key. This parameter is opti
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [TestFilter Data Type](testfilter-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

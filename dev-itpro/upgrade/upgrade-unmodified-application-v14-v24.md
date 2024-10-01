@@ -265,7 +265,7 @@ Sync-NAVTenant : [31;1mSync-NAVTenant: [0m
 [31;1m[36;1mLine |[0m
 [31;1m[36;1m[36;1m  15 | [0m     $output = [36;1mSync-NAVTenant @cmdletArgs[0m;[0m
 [31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mMissing appid on table extension metadata for table extension Hybrid Activites Cue (part of extension 58623bfa-0559-4bc2-ae1c-0979c29fd9e0) on table 
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mMissing appid on table extension metadata for table extension Hybrid Activites Cue (part of extension 44445555-eeee-6666-ffff-7777aaaa8888) on table 
 Activities Cue[0m
 At line:1 char:1
 + Sync-NAVTenant -ServerInstance $NewBcServerInstance -Tenant $TenantId ...

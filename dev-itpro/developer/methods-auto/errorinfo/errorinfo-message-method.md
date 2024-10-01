@@ -2,10 +2,10 @@
 title: "ErrorInfo.Message([Text]) Method"
 description: "Specifies the message that will be sent to telemetry."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -67,7 +67,7 @@ end
 ```
 
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [User experience guidelines for errors](../../devenv-error-handling-guidelines.md)  

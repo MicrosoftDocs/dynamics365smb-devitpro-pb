@@ -1,11 +1,11 @@
 ---
-title: "MinOccurs Property"
+title: "MinOccurs property"
 description: "Sets the minimum number of times that an element can occur."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,7 +20,7 @@ Sets the minimum number of times that an element can occur.
 -   Xml Port Field Element
 -   Xml Port Table Element
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -43,6 +43,6 @@ If you use Lazy API for XML (LAX), then the minimum number is 1. If you do not u
   
 The maximum number can be either 1 or infinite.  
   
-## See Also  
+## Related information  
 
 [MaxOccurs Property](devenv-maxoccurs-Property.md)

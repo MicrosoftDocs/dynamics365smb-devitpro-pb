@@ -1,23 +1,24 @@
 ---
-title: "Publishing a Code-Customized Base Application"
-description: "Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem"
+title: Publishing a code-customized Base Application
+description: Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem.
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Publishing a Code-Customized Base Application for Business Central On-Prem
+# Publishing a code-customized Base Application for Business Central on-prem
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-This topic describes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-premises and publish the code-customized Base Application to the local server. 
+This article describes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-premises and publish the code-customized Base Application to the local server. 
 
 > [!IMPORTANT]  
-> Instead of code-customizing the Base Application, it is *strongly* recommended to create extensions whenever possible.
+> Instead of code-customizing the Base Application, it's *strongly* recommended to create extensions whenever possible.
 
 > [!NOTE]  
-> The steps in this topic are not validated against a Docker environment. If you are running the on-premises installation and development from Docker, there can be dependencies and other steps that you need to take into consideration.
+> The steps in this topic aren't validated against a Docker environment. If you are running the on-premises installation and development from Docker, there can be dependencies and other steps that you need to take into consideration.
 
 ## Prerequisites
 

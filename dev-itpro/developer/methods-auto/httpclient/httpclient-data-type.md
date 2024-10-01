@@ -1,16 +1,16 @@
 ---
-title: "HttpClient Data Type"
+title: "HttpClient data type"
 description: "Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpClient Data Type
+# HttpClient Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
@@ -29,6 +29,7 @@ The following methods are available on instances of the HttpClient data type.
 |[Delete(Text, var HttpResponseMessage)](httpclient-delete-method.md)|Sends a DELETE request to delete the resource identified by the request URL.|
 |[Get(Text, var HttpResponseMessage)](httpclient-get-method.md)|Sends a GET request to get the resource identified by the request URL.|
 |[GetBaseAddress()](httpclient-getbaseaddress-method.md)|Gets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.|
+|[Patch(Text, HttpContent, var HttpResponseMessage)](httpclient-patch-method.md)|Sends a PATCH request to the specified URI as an asynchronous operation.|
 |[Post(Text, HttpContent, var HttpResponseMessage)](httpclient-post-method.md)|Sends a POST request to the specified URI as an asynchronous operation.|
 |[Put(Text, HttpContent, var HttpResponseMessage)](httpclient-put-method.md)|Sends a PUT request to the specified URI as an asynchronous operation.|
 |[Send(HttpRequestMessage, var HttpResponseMessage)](httpclient-send-method.md)|Sends an HTTP request as an asynchronous operation.|
@@ -75,7 +76,7 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 [!INCLUDE[httpclientPerformance](../../../includes/performance-outgoing-http.md)]
 
 
-## See also
+## Related information
 [Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

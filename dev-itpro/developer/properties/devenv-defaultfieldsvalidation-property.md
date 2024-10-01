@@ -1,11 +1,11 @@
 ---
-title: "DefaultFieldsValidation Property"
+title: "DefaultFieldsValidation property"
 description: "Sets a value that indicates whether fields are validated."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -36,6 +36,6 @@ This property sets the default value of the [FieldValidate Property](devenv-fiel
   
 If you change the value of the **FieldValidate** property, the change does not affect the value of the **DefaultFieldsValidation** property. This means that **FieldValidate** can override **DefaultFieldsValidation**, but that it can also inherit the default value of **DefaultFieldsValidation**.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

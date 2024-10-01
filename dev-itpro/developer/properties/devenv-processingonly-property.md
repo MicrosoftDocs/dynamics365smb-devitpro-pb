@@ -1,11 +1,11 @@
 ---
-title: "ProcessingOnly Property"
+title: "ProcessingOnly property"
 description: "Sets the value that indicates whether a report produces printed output or only processes data."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,6 +38,6 @@ When **ProcessingOnly** is set to **true**, then the **Advanced** tab on the req
 > [!NOTE]  
 > In versions before Business Central 2022 release wave 2, if **ProcessingOnly** is **true**, then the **Print** and **Preview** options on the request page are replaced by an **OK** button.
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

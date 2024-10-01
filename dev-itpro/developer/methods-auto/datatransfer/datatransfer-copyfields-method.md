@@ -2,10 +2,10 @@
 title: "DataTransfer.CopyFields() Method"
 description: "Copies the fields specified in AddFields with filters from AddSourceFilter, and the join conditions from AddJoins in one bulk operation in SQL."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -39,7 +39,7 @@ Use this method to copy data in fields from one table to another table. For more
 
 [!INCLUDE[data-transfer-example-copy-fields](../../../developer/includes/data-transfer-example-copy-fields.md)]
 
-## See Also
+## Related information
 
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Transferring Data Between Tables](../../../developer/devenv-data-transfer.md)  

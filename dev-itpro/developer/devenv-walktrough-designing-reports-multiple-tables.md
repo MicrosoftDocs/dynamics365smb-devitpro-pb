@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 12/05/2023
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Walkthrough: Designing an RDL report from multiple tables

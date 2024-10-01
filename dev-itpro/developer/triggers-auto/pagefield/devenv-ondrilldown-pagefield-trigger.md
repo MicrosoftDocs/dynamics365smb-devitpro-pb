@@ -1,17 +1,17 @@
 ---
-title: "OnDrillDown (Page Field) Trigger"
+title: "OnDrillDown (Page Field) trigger"
 description: "Overrides the default drill-down behavior defined in the table definition for the FlowField."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnDrillDown (Page Field) Trigger
+# OnDrillDown (Page Field) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Overrides the default drill-down behavior defined in the table definition for the FlowField.
@@ -39,7 +39,7 @@ If there is an error in the trigger code, the drilldown is canceled. You can use
 
 This trigger overrides the [DrillDownPageID Property](../../properties/devenv-drilldownpageid-property.md) setting of the FlowField.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnDrillDown (Page Field Extension) Trigger](../pagefieldextension/devenv-ondrilldown-pagefieldextension-trigger.md)

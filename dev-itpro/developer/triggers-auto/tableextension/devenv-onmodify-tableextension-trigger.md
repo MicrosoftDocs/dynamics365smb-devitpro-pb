@@ -1,17 +1,17 @@
 ---
-title: "OnModify (Table Extension) Trigger"
+title: "OnModify (Table Extension) trigger"
 description: "Runs when a user modifies an existing record in a table."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnModify (Table Extension) Trigger
+# OnModify (Table Extension) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs when a user modifies an existing record in a table.
@@ -34,7 +34,7 @@ end;
   
  We recommend that you do not include code that can stop the user from recording a change in the **OnModify** trigger on a table. For example, do not include code for displaying error messages. If a user has previously changed the contents of some fields in a record, then these changes must always be accepted by the system.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnModify (Table) Trigger](../table/devenv-onmodify-table-trigger.md)

@@ -1,11 +1,7 @@
 ---
 title: "SQL Server Sysprep Installation Configuration File Example"
 author: jswymer
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 11afd541-bfcf-4564-8d19-a1a2e874df2e
 ms.author: jswymer

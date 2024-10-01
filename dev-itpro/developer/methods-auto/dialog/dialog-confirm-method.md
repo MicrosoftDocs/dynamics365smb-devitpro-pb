@@ -2,10 +2,10 @@
 title: "Dialog.Confirm(Text [, Boolean] [, Any,...]) Method"
 description: "Creates a dialog box that prompts the user for a yes or no answer."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -78,7 +78,7 @@ If you select the default **true** value, then the second dialog box is shown:
 **You selected true.**  
 
 
-## See Also
+## Related information
 [Dialog Data Type](dialog-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

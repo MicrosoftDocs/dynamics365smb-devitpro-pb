@@ -1,16 +1,16 @@
 ---
-title: "Code Data Type"
+title: "Code data type"
 description: "Denotes a special type of string that is converted to uppercase and removes any trailing or leading spaces."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Code Data Type
+# Code Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes a special type of string that is converted to uppercase and removes any trailing or leading spaces.
@@ -49,7 +49,7 @@ c := ' 2 ';
 // and is 1 character in length.  
 ```  
   
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

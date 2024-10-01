@@ -2,10 +2,11 @@
 title: "AppSourceCop Error AS0031"
 description: "Actions that have been published must not be deleted, because it will break dependent extensions."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
+ai-usage: ai-assisted
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,7 +21,7 @@ Actions that have been published must not be deleted, because it will break depe
 
 ## Remarks
 
-Removing an action which has been published is not allowed because it will break dependent extensions which are referencing or modifying it.
+Removing an action, which has been published isn't allowed because it will break dependent extensions which are referencing or modifying it.
 
 > [!NOTE]  
 > Renaming an action will also trigger this error. AppSourceCop will consider the renamed action as a new action, unrelated to the one defined in the previous version.
@@ -94,7 +95,7 @@ pageextension 50100 SomePageExtension extends MyPage
 }
 ```
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

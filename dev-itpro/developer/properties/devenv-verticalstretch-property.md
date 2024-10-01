@@ -1,11 +1,11 @@
 ---
-title: "VerticalStretch Property"
+title: "VerticalStretch property"
 description: "VerticalStretch specifies that the control add-in can be made larger vertically."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,6 +44,6 @@ VerticalStretch = true;
 MaximumHeight = 500;
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)   

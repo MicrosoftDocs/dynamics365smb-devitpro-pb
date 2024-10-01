@@ -1,11 +1,11 @@
 ---
-title: "Scripts Property"
+title: "Scripts property"
 description: "Specifies the list of scripts to include in the control add-in."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -96,6 +96,6 @@ app.json
 ```
 
 
-## See also
+## Related information
 
 [Control add-in object](../devenv-control-addin-object.md)  

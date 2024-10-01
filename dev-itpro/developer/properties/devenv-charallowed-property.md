@@ -1,11 +1,11 @@
 ---
-title: "CharAllowed Property"
+title: "CharAllowed property"
 description: "Sets the range of characters the user can enter into this field or control."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets the range of characters the user can enter into this field or control.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -34,6 +34,6 @@ You can specify multiple ranges of characters by entering the parameters in pair
   
 The setting for the field is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **CharAllowed** property is not validated.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

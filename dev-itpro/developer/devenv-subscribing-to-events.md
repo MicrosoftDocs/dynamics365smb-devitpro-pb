@@ -1,7 +1,7 @@
 ---
 title: Subscribing to events
 description: Designing event subscribers in AL for Business Central. 
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/18/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
@@ -75,7 +75,7 @@ codeunit 50101 MySubscribers
     EventSubscriberInstance = StaticAutomatic;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
-    procedure CheckAddressLineOnAddressLineChanged(line : Text[100]);
+    procedure CheckAddressLineOnAddressLineChanged(line : Text[100])
     begin
         if (StrPos(line, '+') > 0) then begin
             Message('Can''t use a plus sign (+) in the address [' + line + ']');

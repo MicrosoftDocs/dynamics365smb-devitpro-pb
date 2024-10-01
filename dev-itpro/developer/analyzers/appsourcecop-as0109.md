@@ -2,10 +2,10 @@
 title: "AppSourceCop Warning AS0109"
 description: "The type of a table should not be changed from Normal to Temporary, because synchronizing the app will fail if the table contains data."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +17,7 @@ The type of the table has changed from Normal to Temporary.
 The type of a table should not be changed from Normal to Temporary, because synchronizing the app will fail if the table contains data. Make sure to remove all data from the table before changing the table type to temporary.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

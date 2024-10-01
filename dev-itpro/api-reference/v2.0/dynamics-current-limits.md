@@ -2,10 +2,11 @@
 title: "Current API Limits in Dynamics 365 Business Central"
 description: "Learn about constraints on API calls made via OData or SOAP requests."
 author: jswymer
-ms.custom: na
+ms.custom: conceptual
 ms.date: 01/22/2024
 ms.topic: article
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Current API Limits  

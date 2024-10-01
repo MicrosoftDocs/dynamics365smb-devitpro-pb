@@ -2,10 +2,10 @@
 title: "Report.Preview() Method"
 description: "Indicates whether a report is being printed in preview mode."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -39,7 +39,7 @@ An instance of the [Report](report-data-type.md) data type.
 
 Application triggers are not invoked when the web client PDF viewer runs client actions. They are only invoked during the print action so that you can use the trigger code, for example, to increment the No.Printed value.
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

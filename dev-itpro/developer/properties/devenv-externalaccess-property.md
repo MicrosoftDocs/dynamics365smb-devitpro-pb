@@ -1,11 +1,11 @@
 ---
-title: "ExternalAccess Property"
+title: "ExternalAccess property"
 description: "Specifies the type of access to the original table field in the external database."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,9 +16,9 @@ author: SusanneWindfeldPedersen
 Specifies the type of access to the original table field in the external database.
 
 ## Applies to
--   Table Field
+-   Table field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -39,7 +39,7 @@ ExternalAccess = Full;
 
 This property appears when you specify **CDS** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
 
-## See Also  
+## Related information  
 
 [TableType Property](devenv-tabletype-property.md)   
 [ExternalSchema Property](devenv-externalschema-property.md)   

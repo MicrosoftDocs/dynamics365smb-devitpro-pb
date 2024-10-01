@@ -1,11 +1,11 @@
 ---
-title: "CodeCop Analyzer"
+title: "CodeCop analyzer"
 description: "CodeCop is an analyzer that enforces the official AL Coding Guidelines."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -15,7 +15,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[AA0001](codecop-aa0001.md)|There must be exactly one space character on each side of a binary operator such as := + - AND OR =.|Readability|Warning|
 |[AA0002](codecop-aa0002.md)|There must be no space character.|Readability|Warning|
@@ -95,12 +95,13 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0245](codecop-aa0245.md)|To avoid confusion, do not give parameters the same name as fields, methods, or actions in the same scope.|Design|Warning|
 |[AA0246](codecop-aa0246.md)|Suppressing all diagnostics is not allowed.|Design|Warning|
 |[AA0247](codecop-aa0247.md)|Use namespaces.|Design|Info|
+|[AA0248](codecop-aa0248.md)|Add 'this' qualification to improve readability.|Readability|Hidden|
 |[AA0448](codecop-aa0448.md)|You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method.|Localizability|Warning|
 |[AA0462](codecop-aa0462.md)|The CalcDate should only be used with DataFormula variables. Alternatively the string should be enclosed using the <> symbols.|Localizability|Warning|
 |[AA0470](codecop-aa0470.md)|Placeholders should have a comment explaining their content.|Localizability|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)

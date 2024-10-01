@@ -7,6 +7,7 @@ ms.topic: overview
 ms.date: 03/06/2024
 ms.custom: bap-template
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Namespaces in AL

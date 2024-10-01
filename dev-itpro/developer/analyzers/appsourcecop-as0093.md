@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 07/04/2022
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -35,7 +36,7 @@ entitlement MyLicense
 Remove the offending Entitlement object(s) from your extension and use one of the built-in entitlements, for more information see [Entitlements and Permissions Sets Overview](../devenv-entitlements-and-permissionsets-overview.md) provided in [!INCLUDE [prod_short](../includes/prod_short.md)]. It is currently not possible to create user-defined entitlements.
 
 
-## See Also  
+## Related information  
 [Entitlement Object](../devenv-entitlement-object.md)
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

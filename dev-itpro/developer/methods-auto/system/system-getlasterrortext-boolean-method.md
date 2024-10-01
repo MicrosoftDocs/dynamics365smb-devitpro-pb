@@ -2,10 +2,10 @@
 title: "System.GetLastErrorText(Boolean) Method"
 description: "Gets the last error that occurred in the debugger."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -42,7 +42,7 @@ If you call the GetLastErrorText method immediately after you call the ClearLast
 
 The result of the [GetLastErrorCode Method](../../methods-auto/system/system-getlasterrorcode-method.md) is not translated into the local language. The result of the GetLastErrorText method is translated into the local language.  
 
-## See Also
+## Related information
 [System Data Type](system-data-type.md)
 [Get Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../../devenv-dev-overview.md)

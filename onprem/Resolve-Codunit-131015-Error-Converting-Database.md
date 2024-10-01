@@ -1,11 +1,7 @@
 ---
 title: "Codeunit 131015 Library - Azure AD Auth Flow Error When Converting to Dynamics NAV 2018"
 description: "Explains how to resolve the compilation error that you get for Codeunit 131015 Library - Azure AD Auth Flow when converting a database from Dynamics NAV 2017 to 2018."
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---
@@ -44,7 +40,7 @@ OBJECT Codeunit 131015 Library - Azure AD Auth Flow
       TokenByAuthCodeWithCredsTxt@1002 : TextConst '@@@={Locked};ENU=TokenByAuthCodeWithCreds';
       TokenFromCacheTxt@1003 : TextConst '@@@={Locked};ENU=TokenFromCache';
       TokenFromCacheWithCredentialsTxt@1004 : TextConst '@@@={Locked};ENU=TokenFromCacheWithCredentials';
-      SaasClientIdTxt@1005 : TextConst '@@@={Locked};ENU=11111111-1111-1111-1111-111111111111';
+      SaasClientIdTxt@1005 : TextConst '@@@={Locked};ENU=00001111-aaaa-2222-bbbb-3333cccc4444';
       CachedTokenAvailable@1007 : Boolean;
       ClientIdAvailable@1006 : Boolean;
 

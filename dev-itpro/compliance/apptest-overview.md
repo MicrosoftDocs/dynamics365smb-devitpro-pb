@@ -1,16 +1,16 @@
 ---
-title: "Rules and guidelines for AL code"
-description: "Describing the steps you must go through to successfully submit your Dynamics 365 Business Central app to AppSource."
+title: Rules and guidelines for AL code
+description: Describing the steps you must go through to successfully submit your Dynamics 365 Business Central app to AppSource.
 author: SusanneWindfeldPedersen
 ms.date: 04/11/2023
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: overview
 ms.author: freddyk
 ---
 
 # Rules and guidelines for AL code
 
-This page defines the rules and guidelines to follow when writing AL code in an extension package for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. The rules and guidelines are grouped according to two importance levels: critical errors that must be resolved, and important errors that should be resolved. Errors that aren't resolved must include an explanation and justification for the error.
+This page defines the rules and guidelines to follow when writing AL code in an extension package for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. The rules and guidelines are grouped according to two importance levels: critical errors that must be resolved, and important errors that should be resolved. Errors that aren't resolved must include an explanation and justification for the error.
 
 ## Critical errors
 

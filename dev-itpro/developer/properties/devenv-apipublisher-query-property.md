@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 06/23/2023
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
  
 # APIPublisher Property (Query)
@@ -26,7 +27,7 @@ APIPublisher = 'contoso';
 For a full example, see [API Query Type](../devenv-api-querytype.md).
 
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)   
 [Query Object](../devenv-query-object.md)  
 [APIPublisher Property (Page)](devenv-apipublisher-page-property.md)  

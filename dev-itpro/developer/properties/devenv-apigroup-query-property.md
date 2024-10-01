@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 04/01/2021
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
  
 # APIGroup Property (Query)
@@ -25,7 +26,7 @@ APIGroup = 'app1';
 
 For a full example, see [API Query Type](../devenv-api-querytype.md).
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)   
 [Query Object](../devenv-query-object.md)  
 [APIGroup Property (Page)](devenv-apigroup-page-property.md)  

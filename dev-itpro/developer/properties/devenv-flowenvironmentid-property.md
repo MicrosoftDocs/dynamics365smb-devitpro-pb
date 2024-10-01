@@ -1,11 +1,11 @@
 ---
-title: "FlowEnvironmentId Property"
+title: "FlowEnvironmentId property"
 description: "Sets the ID of the environment where the Power Automate Flow triggered by this action is located."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -28,7 +28,7 @@ To learn more about Power Automate flows with Business Central, see [Power Autom
 
 ## Example
 
-The following example extends the **Customer Card** page with a promoted action that runs a Power Automate flow that has the flow environment ID `Default-44444444-cccc-5555-dddd-666666666666`.
+The following example extends the **Customer Card** page with a promoted action that runs a Power Automate flow that has the flow environment ID `Default-44445555-eeee-6666-ffff-7777aaaa8888`.
 
 ```al
 pageextension 50100 CustomerCardExt extends "Customer Card"
@@ -42,8 +42,8 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
             {
                 ApplicationArea = All;
                 CustomActionType = Flow;
-                FlowId = '11111111-aaaa-2222-bbbb-333333333333';
-                FlowEnvironmentId = 'Default-44444444-cccc-5555-dddd-666666666666';
+                FlowId = '00001111-aaaa-2222-bbbb-3333cccc4444';
+                FlowEnvironmentId = 'Default-44445555-eeee-6666-ffff-7777aaaa8888';
             }
         }
         addfirst(Promoted)
@@ -57,6 +57,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 }
 ```
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -1,22 +1,29 @@
 ---
-title: "DateTime Data Type"
+title: "DateTime data type"
 description: "Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# DateTime Data Type
+# DateTime Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999. An undefined or blank DateTime is specified by 0DT.
 
 
 
+## Instance methods
+The following methods are available on instances of the DateTime data type.
+
+|Method name|Description|
+|-----------|-----------|
+|[Date()](datetime-date-method.md)|Gets the date part.|
+|[Time()](datetime-time-method.md)|Gets the time part.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -46,7 +53,7 @@ The syntax for defining DateTime format follows the [ISO standard](https://en.wi
 
 In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000. The latest permitted DateTime is December 31, 9999, 23:59:59.999. If you store a date in the database that is outside the valid range for a SQL DateTime, a runtime error occurs.  
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -1,10 +1,7 @@
 ---
 title: "Key Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8e1fffd3-9a04-4062-aa9e-2655326db9c5
 caps.latest.revision: 6

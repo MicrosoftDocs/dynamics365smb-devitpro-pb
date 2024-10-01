@@ -6,6 +6,7 @@ ms.date: 04/18/2024
 ms.topic: article
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading Customized C/AL Application to Microsoft Base Application Version 18
 
@@ -202,7 +203,7 @@ You'll create two versions of this extension. The first version contains the tab
 
     ```json
     {
-      "id": "11111111-aaa-2222-bbbb-333333333333",
+      "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "name": "bc14baseapptablesonly",
       "publisher": "My publisher",
       "version": "1.0.0.0",

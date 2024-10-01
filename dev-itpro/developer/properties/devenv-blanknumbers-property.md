@@ -1,11 +1,11 @@
 ---
-title: "BlankNumbers Property"
+title: "BlankNumbers property"
 description: "Indicates whether the system will clear a range of numbers as it formats them."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,10 +16,10 @@ author: SusanneWindfeldPedersen
 Indicates whether the system will clear a range of numbers as it formats them.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -37,5 +37,5 @@ Indicates whether the system will clear a range of numbers as it formats them.
 BlankNumbers = BlankNegAndZero;
 ```
 
-## See Also  
+## Related information  
  [BlankZero Property](devenv-blankzero-property.md)

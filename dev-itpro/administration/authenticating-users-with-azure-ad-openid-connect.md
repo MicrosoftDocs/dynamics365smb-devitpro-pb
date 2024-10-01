@@ -2,7 +2,7 @@
 title: Configure Microsoft Entra authentication with OpenID Connect
 description: Learn how to authentication Business Central users by using Microsoft Entra ID with OpenID Connect.
 ms.custom: bap-template
-ms.date: 04/16/2024
+ms.date: 06/13/2024
 ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: how-to
@@ -162,7 +162,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance 240 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666;https://api.businesscentral.dynamics.com"
+        Set-NAVServerConfiguration -ServerInstance 240 -KeyName ValidAudiences -KeyValue "44445555-eeee-6666-ffff-7777aaaa8888;https://api.businesscentral.dynamics.com"
         ```
 
     2. Set the `ADOpenIdMetadataLocation` parameter for version 22 and later or `ClientServicesFederationMetadataLocation` parameter for version 21 and earlier.
@@ -181,7 +181,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
 
         # [Single-tenant](#tab/singletenant)
 
-        Replace `<AAD TENANT ID>` with the ID of the Microsoft Entra tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.
+        Replace `<AAD TENANT ID>` with the ID of the Microsoft Entra tenant ID or its domain, for example, `aaaabbbb-0000-cccc-1111-dddd2222eeee` or `CRONUSInternationLtd.onmicrosoft.com`.
 
         For example:
 
@@ -192,7 +192,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         or
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC210 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml"
+        Set-NAVServerConfiguration -ServerInstance BC240 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml"
         ```  
 
         # [Multitenant-tenant](#tab/multitenant)
@@ -215,7 +215,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         or
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC210 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml"
+        Set-NAVServerConfiguration -ServerInstance BC240 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml"
         ```
 
         ---
@@ -233,8 +233,8 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
 
         |Parameter|Description|
         |-|-|-|
-        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, like `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.|
-        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+        |`<AAD TENANT ID>`|The ID of the Microsoft Entra tenant ID or its domain, like `aaaabbbb-0000-cccc-1111-dddd2222eeee` or `CRONUSInternationLtd.onmicrosoft.com`.|
+        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Microsoft Entra ID, for example `api://44445555-eeee-6666-ffff-7777aaaa8888` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
         |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Microsoft Entra tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Microsoft Entra ID.|
 
        > [!IMPORTANT]
@@ -243,7 +243,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC240 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC210/SignIn"
+        Set-NAVServerConfiguration -ServerInstance BC240 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC240/SignIn"
         ```
 
 4. To configure SOAP and OData web services for Microsoft Entra authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Microsoft Entra ID.
@@ -293,7 +293,7 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
     For example:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadApplicationId "44444444-cccc-5555-dddd-666666666666"
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadApplicationId "44445555-eeee-6666-ffff-7777aaaa8888"
     ```
 
 3. Set the `AadAuthorityUri` key.
@@ -304,12 +304,12 @@ Once you have the Microsoft Entra tenant and a registered application for [!INCL
 
     # [Single-tenant](#tab/singletenant)
 
-    Replace `<AAD TENANT ID>` with the ID of the Microsoft Entra tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.
+    Replace `<AAD TENANT ID>` with the ID of the Microsoft Entra tenant ID or its domain, for example, `aaaabbbb-0000-cccc-1111-dddd2222eeee` or `CRONUSInternationLtd.onmicrosoft.com`.
 
     For example:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/11111111-aaaa-2222-bbbb-333333333333"
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/aaaabbbb-0000-cccc-1111-dddd2222eeee"
     ```
 
     # [Multitenant-tenant](#tab/multitenant)
@@ -355,7 +355,7 @@ Mount your tenants by using the [Mount-NAVTenant cmdlet](/powershell/module/micr
 For example:
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC210  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333
+Mount-NAVTenant -ServerInstance BC240  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333
 ```
 <!--
 --- 
@@ -404,7 +404,7 @@ Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName Exten
 **Example**
 
 ```powershell
-Set-NAVServerConfiguration -ServerInstance BC210  -KeyName ExtendedSecurityTokenLifetime -KeyValue "20"
+Set-NAVServerConfiguration -ServerInstance BC240  -KeyName ExtendedSecurityTokenLifetime -KeyValue "20"
 ```
 
 ### Using host names for tenants

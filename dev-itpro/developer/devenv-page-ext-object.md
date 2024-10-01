@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 01/08/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Page Extension Object
@@ -147,7 +148,7 @@ tableextension 50115 RetailWinterSportsStore extends Customer
         }
     }
 
-    procedure HasShoeSize() : Boolean;
+    procedure HasShoeSize() : Boolean
     begin
         exit(ShoeSize <> 0);
     end;

@@ -1,16 +1,16 @@
 ---
-title: "RecordRef Data Type"
+title: "RecordRef data type"
 description: "References a record in a table."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef Data Type
+# RecordRef Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 References a record in a table.
@@ -112,6 +112,6 @@ Use the [Open method](recordref-open-method.md) to use the table number to selec
   
 If one `RecordRef` variable is assigned to another `RecordRef` variable, then they both refer to the same table instance. 
 
-## See also  
+## Related information  
 [Get started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)  

@@ -1,11 +1,11 @@
 ---
-title: "Importance Property"
+title: "Importance property"
 description: "Sets the amount of information that is visible in a window or dialog box."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,7 +19,7 @@ Sets the amount of information that is visible in a window or dialog box.
 -   Page Label
 -   Page Field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -44,6 +44,6 @@ As a developer, the `Importance` property can also be set also by Use Designer (
 > [!NOTE]
 > In version 24 (runtime 14) and earlier, the `Importance` property is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. The field also can't be promoted in the header of a collapsed FastTab. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

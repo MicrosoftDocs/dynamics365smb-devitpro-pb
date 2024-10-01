@@ -1,22 +1,23 @@
 ---
-title: "TryFunction Attribute"
+title: "TryFunction attribute"
 description: "Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# TryFunction Attribute
+# TryFunction attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
 Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -70,7 +71,7 @@ begin
 end;
 ```
 
-## See Also  
+## Related information  
 
 [AL Method Reference](../methods-auto/library.md)  
 [Essential AL Methods](../devenv-essential-al-methods.md)  

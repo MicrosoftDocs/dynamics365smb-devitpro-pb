@@ -1,22 +1,23 @@
 ---
-title: "BusinessEvent Attribute"
+title: "BusinessEvent attribute"
 description: "Specifies that the method is published as a business type event."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# BusinessEvent Attribute
+# BusinessEvent attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
 Specifies that the method is published as a business type event.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -73,12 +74,12 @@ This example publishes a business type event by using the `OnAddressLineChanged`
 
 ```AL
 [BusinessEvent(false)] 
-procedure OnAddressLineChanged(line : Text[100]);
+procedure OnAddressLineChanged(line : Text[100])
 begin    
 end;
 ```  
 
-## See Also
+## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  

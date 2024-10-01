@@ -1,11 +1,11 @@
 ---
-title: "Permissions Property"
+title: "Permissions property"
 description: "Sets whether an object has additional permission required to perform some operations on one or more tables."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -117,7 +117,7 @@ codeunit 50113 CreateCustomer
 > 
 > Do not use the **Permissions** property to give extra permissions to an object that you would like your users to be able to modify. These users might not have direct permission to perform these operations. This is why you should be careful when you use the **Permissions** property for tables and pages.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)  

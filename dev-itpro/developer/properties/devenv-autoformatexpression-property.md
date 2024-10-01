@@ -1,11 +1,11 @@
 ---
-title: "AutoFormatExpression Property"
+title: "AutoFormatExpression property"
 description: "Sets an AL expression that specifies how to format data."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets an AL expression that specifies how to format data.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 -   Report Column
 
@@ -77,7 +77,7 @@ AutoFormatType = 1;
 AutoFormatExpression = '$<precision, 2:2><standard format, 0>':
 ```
 
-## See Also
+## Related information
 
 [AutoFormatType Property](devenv-autoformattype-property.md)  
 [DecimalPlaces Property](devenv-decimalplaces-property.md)

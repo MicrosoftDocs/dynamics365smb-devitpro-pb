@@ -2,10 +2,10 @@
 title: "PerTenantExtensionCop Warning PTE0022"
 description: "The member ID should be within the allowed range and outside the range allocated to AppSource extensions."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +17,7 @@ The member ID should be within the allowed range
 The member ID should be within the allowed range and outside the range allocated to AppSource extensions. This warning will become an error in a future release.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

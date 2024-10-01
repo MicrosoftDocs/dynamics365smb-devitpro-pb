@@ -1,11 +1,11 @@
 ---
-title: "Compressed Property"
+title: "Compressed property"
 description: "Sets a value that specifies whether a BLOB is compressed."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets a value that specifies whether a BLOB is compressed.
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -33,6 +33,6 @@ Compressed = true;
 ## Remarks
 It must be applied on a field of the [BLOB Data Type](../methods-auto/library.md).
 
-## See Also  
+## Related information  
 
 [BLOB Data Type](../methods-auto/library.md)

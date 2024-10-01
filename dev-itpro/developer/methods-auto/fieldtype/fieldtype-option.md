@@ -1,11 +1,11 @@
 ---
-title: "FieldType System Option"
+title: "FieldType system option"
 description: "Represents the type of a table field."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,6 +38,6 @@ Represents the type of a table field.
 |MediaSet|A complex type that encapsulates media, such as images, in application database tables. The MediaSet data type can be used as a table field data type, but cannot be used as variable or parameter.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

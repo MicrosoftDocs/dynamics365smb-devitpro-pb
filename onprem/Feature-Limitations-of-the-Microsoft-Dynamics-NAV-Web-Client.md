@@ -2,11 +2,7 @@
 title: "Feature Limitations of the Microsoft Dynamics NAV Web Client"
 description: "Listing non-supported and partically supported features of the Web client."
 author: jswymer
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ---
 # Feature Limitations of the Microsoft Dynamics NAV Web Client

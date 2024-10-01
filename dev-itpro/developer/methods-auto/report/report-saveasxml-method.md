@@ -2,10 +2,10 @@
 title: "Report.SaveAsXml(Integer, Text [, var Record]) Method"
 description: "Saves the resulting data set of a query as an .xml file."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Report.SaveAsXml(Integer, Text [, var Record]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Saves the resulting data set of a query as an .xml file. The following code shows the syntax of the SAVEASXML function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
+Saves the resulting data set of a query as an .xml file. The following code shows the syntax of the SaveAsXml method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
@@ -82,7 +82,7 @@ end;
 You can create an action on a page and set the action to run this code. When you run the action, the **Export File** dialog box opens. Choose **Save** to save the file to the client.  
 
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

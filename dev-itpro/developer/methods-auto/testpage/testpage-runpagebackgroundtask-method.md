@@ -1,11 +1,11 @@
 ---
 title: "TestPage.RunPageBackgroundTask(Integer [, var Dictionary of [Text, Text]] [, Boolean]) Method"
-description: "Runs the page background task codeunit in the current session."
+description: "Runs the page background task codeunit in a child session and waits for its completion."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # TestPage.RunPageBackgroundTask(Integer [, var Dictionary of [Text, Text]] [, Boolean]) Method
 > **Version**: _Available or changed with runtime version 4.0._
 
-Runs the page background task codeunit in the current session. Note that by default, no triggers are invoked at this point.
+Runs the page background task codeunit in a child session and waits for its completion. Note that page background task completion triggers are not invoked by default; see parameter "RunCompletionTriggers".
 
 
 ## Syntax
@@ -45,7 +45,7 @@ The dictionary of results for the page background task.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [TestPage Data Type](testpage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

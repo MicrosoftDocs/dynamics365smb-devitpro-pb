@@ -7,6 +7,7 @@ ms.topic: reference
 ms.assetid: 18e6df94-639e-4c5f-99ed-5729037bb719
 caps.latest.revision: 13
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
  
 # APIVersion Property 
@@ -17,7 +18,7 @@ The APIVersion property is applicable to the following types:
 - [APIVersion Property (Query)](devenv-apiversion-query-property.md)   
 
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)   
 [Page Object](../devenv-page-object.md)   
 [Query Object](../devenv-query-object.md)   

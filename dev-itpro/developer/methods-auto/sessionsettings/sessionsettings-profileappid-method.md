@@ -2,10 +2,10 @@
 title: "SessionSettings.ProfileAppId([Guid]) Method"
 description: "Gets or sets the ID of an extension, which provides a profile, in a SessionSettings object."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -46,7 +46,7 @@ A profile can be included as part of an extension, instead of being defined as p
 The ProfileAppId property in a SessionSettings object corresponds to the **App ID** field in the in the system table **2000000073 User Personalization**
 
 ## Example
-This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the ProfileAppId method and ProfileId method to set the object to use the profile that has the ID 'MyExtensionProfile', which is provided in the extension that has the ID '12345678-1234-1234-1234-1234567890AB'. Finally, the RequestSessionUpdate method sends a request to the client to abandon the current client session and start a new session that uses the new profile. This example requires a SessionSettings data type variable.
+This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the ProfileAppId method and ProfileId method to set the object to use the profile that has the ID 'MyExtensionProfile', which is provided in the extension that has the ID 'aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb'. Finally, the RequestSessionUpdate method sends a request to the client to abandon the current client session and start a new session that uses the new profile. This example requires a SessionSettings data type variable.
 
 ```al
 var
@@ -54,13 +54,13 @@ var
 begin
   MySessionSettings.Init;
   MySessionSettings.ProfileId('MyExtensionProfile');
-  MySessionSettings.ProfileAppId('12345678-1234-1234-1234-1234567890AB');
+  MySessionSettings.ProfileAppId('00001111-aaaa-2222-bbbb-3333cccc4444');
   MySessionSettings.RequestSessionUpdate(false);
 end;  
 ```  
 
 
-## See Also
+## Related information
 [SessionSettings Data Type](sessionsettings-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

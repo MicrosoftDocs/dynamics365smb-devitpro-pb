@@ -2,10 +2,10 @@
 title: "MediaSet.ImportStream(InStream, Text [, Text]) Method"
 description: "Adds a media file, such as a JPEG image, from an InStream object to the MediaSet of record for displaying in the client."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -101,7 +101,7 @@ end;
 ```  
 
 If you run system table **2000000181 Tenant Media**, you should see the new images in the list.
-## See Also
+## Related information
 [MediaSet Data Type](mediaset-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

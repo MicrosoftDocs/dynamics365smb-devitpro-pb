@@ -1,11 +1,11 @@
 ---
-title: "OptionCaptionML Property"
+title: "OptionCaptionML property"
 description: "Sets the strings that are displayed to the user for selecting an option."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets the strings that are displayed to the user for selecting an option. OptionCaptionML is only used if the field or variable has an OptionMembers Property.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 -   Report Column
 
@@ -68,6 +68,6 @@ The following examples demonstrate the relationship between the [OptionMembers P
   
      **Result** Same result as for example 3. As long as any OptionCaptionML property is set on the text box or the field, the [OptionMembers Property](devenv-optionmembers-field-property.md) is not used to display choices to the user.  
   
-## See Also
+## Related information
 
 [Working with Translation Files](../devenv-work-with-translation-files.md)

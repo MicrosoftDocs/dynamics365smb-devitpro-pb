@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 03/12/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Sign an app package file
@@ -85,7 +86,8 @@ sign code azure-key-vault --help
 
 The signing of an app package file must be performed on a computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed. If you're running [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker for your development environment, that environment meets this requirement. You must also have the certificate that is used for signing on the computer. The certificate must include code signing as the intended purpose. It's recommended that you use a certificate purchased from a third-party certificate authority.
 
-![Shows a list of certificates in the Windows Certificate Manager Tool.](media/certificates.png)
+To start the Certificate Manager tool, press <kbd>Win</kbd>+<kbd>R</kbd> to open up the **Run** dialog box. At the prompt, type `Certmgr.msc` and then press <kbd>Enter</kbd>. This opens the Certificate Manager. Inspect the **Trusted Root Certification Authorities** folder. 
+
 
 ### Steps for signing your .app file with a PFX file
 
@@ -126,11 +128,7 @@ Makecert –sk myNewKey –n “CN=Prosewaretest” –r –ss my
 
 If you publish the extension as an app on AppSource, the app package file must be signed using a certificate purchased from a Certification Authority (CA); a self-signed certificate won't be accepted by the technical validation. The CA must have its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to DigiCert and Symantec, see the image below. You don't have to use an EV Code Signing certificate, standard code signing certificates can be used for signing your extensions.
 
-You can check the validity of your code signing by transferring your signed app file to a Windows device, which didn't sign it. Right-click on the file and go to Properties, Digital Signatures, and then Details. In this pop-up, choose View Certificate and finally go to Certification Path. It should look similar to the below example (though it's a Microsoft binary file):
-
-![Shows the Digital Signatures window for a signed file with a valid root certificate.](media/CheckRootCA.png)
-
-If the Certification Path has only one entry, then the file isn't signed correctly and is rejected by AppSource technical validation.
+You can check the validity of your code signing by transferring your signed app file to a Windows device, which didn't sign it. Right-click on the file and go to **Properties**,**Digital Signatures**, and then choose **Details**. In this pop-up, choose **View Certificate** and finally go to **Certification Path**. If the Certification Path has only one entry, then the file isn't signed correctly and is rejected by AppSource technical validation.
 
 ## See also
 

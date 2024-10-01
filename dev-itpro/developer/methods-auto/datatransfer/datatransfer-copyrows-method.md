@@ -2,10 +2,10 @@
 title: "DataTransfer.CopyRows() Method"
 description: "Copies the rows from the source table to the destination table with the fields selected with AddFields and the filters applied with AddSourceFilter, in one bulk operation in SQL."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,7 +41,7 @@ Use this method to copy data in rows of a table to rows in another table. For mo
 
 [!INCLUDE[data-transfer-example](../../../developer/includes/data-transfer-example.md)]
 
-## See Also
+## Related information
 
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Transferring Data Between Tables](../../../developer/devenv-data-transfer.md)  

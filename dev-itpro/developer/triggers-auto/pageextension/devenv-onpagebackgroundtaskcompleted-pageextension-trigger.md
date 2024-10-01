@@ -1,17 +1,17 @@
 ---
-title: "OnPageBackgroundTaskCompleted (Page Extension) Trigger"
+title: "OnPageBackgroundTaskCompleted (Page Extension) trigger"
 description: "Runs after a page background task has successfully completed."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnPageBackgroundTaskCompleted (Page Extension) Trigger
+# OnPageBackgroundTaskCompleted (Page Extension) trigger
 > **Version**: _Available or changed with runtime version 4.0._
 
 Runs after a page background task has successfully completed.
@@ -19,7 +19,7 @@ Runs after a page background task has successfully completed.
 
 ## Syntax
 ```AL
-trigger OnPageBackgroundTaskCompleted(TaskId: Integer; Results: Dictionary[Text,Text])
+trigger OnPageBackgroundTaskCompleted(TaskId: Integer; Results: Dictionary of [Text,Text])
 begin
     ...
 end;
@@ -32,13 +32,13 @@ end;
 Specifies the ID of the background task that was run. The ID is automatically assigned to the background task when it is created.  
 
 *Results*  
-&emsp;Type: [Dictionary[Text,Text]](../../methods-auto/dictionary/dictionary-text-text-data-type.md)  
+&emsp;Type: [Dictionary of [Text,Text]](../../methods-auto/dictionary/dictionary-data-type.md)  
 Specifies the results of the page background task.  
 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnPageBackgroundTaskCompleted (Page) Trigger](../page/devenv-onpagebackgroundtaskcompleted-page-trigger.md)

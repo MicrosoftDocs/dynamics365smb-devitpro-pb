@@ -1,16 +1,17 @@
 ---
-title: Update user
-description: Updates an  user object in Dynamics 365 Business Central.
+title: (automation API) Update users
+description: Updates a user object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 09/02/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Update user
+# (automation API) Update user
 
 Updates the properties of an user object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
@@ -64,11 +65,13 @@ Content-type: application/json
     "userName": "JOE",
     "displayName": "JOE JONES",
     "state": "Enabled",
-    "expiryDate": "2035-01-01T21:03:53.443Z"
+    "expiryDate": "2035-01-01T21:03:53.443Z",
+    "contactEmail": "joejones@contoso.com"
 }
 ```
 
 ## See Also
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
-[user](../resources/dynamics_user.md)
+[user](../resources/dynamics_user.md)  
+[GET user](dynamics_user_get.md)  

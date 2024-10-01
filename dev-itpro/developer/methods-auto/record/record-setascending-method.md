@@ -2,10 +2,10 @@
 title: "Record.SetAscending(Any, Boolean) Method"
 description: "Sets the sort order for the records returned."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -83,7 +83,7 @@ page 50100 MyCustomerList
 
 If you publish the page as a web service, and read the OData feed, you'll see the records sorted in ascending alphabetical order by city and descending alphabetical order by name. However, if you open the page in the client the city and name are both sorted in ascending order.
 
-## See Also
+## Related information
 
 [SetCurrentKey Method](record-setcurrentkey-method.md)
 [Record Data Type](record-data-type.md)  

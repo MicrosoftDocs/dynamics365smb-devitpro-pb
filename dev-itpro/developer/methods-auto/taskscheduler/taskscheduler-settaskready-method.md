@@ -2,10 +2,10 @@
 title: "TaskScheduler.SetTaskReady(Guid [, DateTime]) Method"
 description: "Sets a task that runs a codeunit to the ready state."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -64,7 +64,7 @@ begin
 end;
 ```  
 
-## See also
+## Related information
 
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Using the Task Scheduler](../../devenv-task-scheduler.md)   

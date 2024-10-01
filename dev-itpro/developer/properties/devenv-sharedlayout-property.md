@@ -1,11 +1,11 @@
 ---
-title: "SharedLayout Property"
+title: "SharedLayout property"
 description: "Specifies whether the view has the same layout as the default view 'All'."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -79,7 +79,7 @@ view(UniqueView)
 > [!NOTE]  
 > `SharedLayout = false` must be specified in order to use a custom layout on the view (the layout section). A compiler error is reported otherwise.
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Views](../devenv-views.md)

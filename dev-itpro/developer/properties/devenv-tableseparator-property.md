@@ -1,11 +1,11 @@
 ---
-title: "TableSeparator Property"
+title: "TableSeparator property"
 description: "Specifies the table separator for a table."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,6 +41,6 @@ LF refers to the character with ASCII value 10.
   
 You can set the table separator in AL code so that the XMLport can import and export tables with different separators. For example, if your XMLport must import from a file or stream where one table uses a single **NewLine** elements and another uses two **NewLine** elements, you can change the table separator at run time.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

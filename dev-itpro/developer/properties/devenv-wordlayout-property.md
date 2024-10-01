@@ -1,11 +1,11 @@
 ---
-title: "WordLayout Property"
+title: "WordLayout property"
 description: "Sets the Word layout that is used on a report and returns it as a data stream."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -50,7 +50,7 @@ report 50124 MyWordReport
 }
 ```
 
-## See also
+## Related information
 
 [Creating a Word Layout Report](../devenv-howto-report-layout.md)  
 [RDLCLayout Property](devenv-rdlclayout-property.md)  

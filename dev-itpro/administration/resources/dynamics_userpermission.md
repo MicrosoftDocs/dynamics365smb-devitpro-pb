@@ -1,11 +1,12 @@
 ---
-title: userPermission resource type | Microsoft Docs
+title: userPermission resource type
 description: An user permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # userPermission resource type

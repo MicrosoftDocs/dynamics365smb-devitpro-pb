@@ -1,16 +1,16 @@
 ---
-title: "ProductName Data Type"
+title: "ProductName data type"
 description: "An application can have a full name, marketing name, and short name."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ProductName Data Type
+# ProductName Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 An application can have a full name, marketing name, and short name. The PRODUCTNAME functions enable you to retrieve these name variations.
@@ -32,6 +32,6 @@ The following methods are available on the ProductName data type.
 ## Remarks
 You define the different name variations for an application in the `navsettings.json` configuration file. For more information, see [Configuring Business Central Web Server Instances](../../../administration/configure-web-server.md).
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

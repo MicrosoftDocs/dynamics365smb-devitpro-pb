@@ -2,10 +2,10 @@
 title: "AppSourceCop Warning AS0094"
 description: "Permission sets should not be defined in XML."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -57,7 +57,7 @@ The `RIMD` access allows access to **R**ead, **I**nsert, **M**odify, and **D**el
 ## How to fix this diagnostic?
 You can convert XML permission sets to AL objects. For more information, see [Upgrading Permissions Sets and Permissions](../../upgrade/upgrade-permissions.md).
 
-## See Also
+## Related information
 [PermissionSet Object](../devenv-permissionset-object.md)
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

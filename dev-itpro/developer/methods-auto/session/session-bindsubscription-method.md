@@ -2,10 +2,10 @@
 title: "Session.BindSubscription(Codeunit) Method"
 description: "Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -61,7 +61,7 @@ end; // Notice, that when Subscriber goes out of scope, all bindings are removed
 ```  
   
 
-## See Also
+## Related information
 [Session Data Type](session-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -2,10 +2,10 @@
 title: "AppSourceCop Hidden AS0073"
 description: "Obsolete Tag must be set."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,6 +17,8 @@ Obsolete Tag must be set.
 Obsolete Tag must be set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
 
 When an object, element, variable or procedure is marked as obsolete, you should also specify an obsolete tag. The obsolete tag can be used to provide information, such as the timeline of the deprecation, to developers that are referencing it. The obsolete tag appears in the message of the diagnostics AL0432 and AL0433 reported by the AL compiler when referencing obsolete elements.
 
@@ -118,7 +120,7 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

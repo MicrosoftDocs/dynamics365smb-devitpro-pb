@@ -1,17 +1,17 @@
 ---
-title: "OnAfterGetCurrRecord (Request Page Extension) Trigger"
+title: "OnAfterGetCurrRecord (Request Page Extension) trigger"
 description: "Runs after the current record is retrieved from the table."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterGetCurrRecord (Request Page Extension) Trigger
+# OnAfterGetCurrRecord (Request Page Extension) trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
 Runs after the current record is retrieved from the table.
@@ -38,7 +38,7 @@ If there is an error in the trigger code, then the page is closed.
 > [!IMPORTANT]  
 > For pages of the type `Card`, `List`, `ListPlus`, `Document`, or `Worksheet`, the **OnAfterGetCurrRecord** trigger is called more than once if the page is opened in the edit mode and does not have any records to display. If the page is opened in the view mode or displays a record, the trigger is called only once.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAfterGetCurrRecord (Page) Trigger](../page/devenv-onaftergetcurrrecord-page-trigger.md)  

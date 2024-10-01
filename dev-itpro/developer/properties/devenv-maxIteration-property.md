@@ -1,11 +1,11 @@
 ---
-title: "MaxIteration Property"
+title: "MaxIteration property"
 description: "Sets a limit on the number of times that a data item will be iterated when the report is run."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -30,6 +30,6 @@ MaxIteration = 1;
 
 Valid settings of this property are integers between 0 and the maximum value of an integer (2,147,483,647).  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

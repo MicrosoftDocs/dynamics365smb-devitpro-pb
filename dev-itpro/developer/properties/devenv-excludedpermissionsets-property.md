@@ -1,11 +1,11 @@
 ---
-title: "ExcludedPermissionSets Property"
+title: "ExcludedPermissionSets property"
 description: "Sets the lists of other permission sets that are excluded in this permission set."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -31,7 +31,7 @@ ExcludedPermissionSets = BASIC;
 
 You can also include permission sets by using the [IncludedPermissionSets](devenv-includedpermissionsets-property.md). For more information, see [Composing Permission Sets](../devenv-permissionset-composing.md).
 
-## See Also
+## Related information
 
 [IncludedPermissionSets Property](devenv-includedpermissionsets-property.md)  
 [PermissionSet Object](../devenv-permissionset-object.md)  

@@ -1,11 +1,7 @@
 ---
 title: 401-Unauthorized-Access is denied due to invalid credentials
 description: The client is disconnected from the server instance and event log includes a warning event- The SAML2 token is invalid because its validity period ended.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 797fbf58-eca3-4c86-8644-7a5d3e248641
 caps.latest.revision: 10

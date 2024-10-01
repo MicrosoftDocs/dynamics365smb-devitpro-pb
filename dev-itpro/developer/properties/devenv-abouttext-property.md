@@ -1,11 +1,11 @@
 ---
-title: "AboutText Property"
+title: "AboutText property"
 description: "Sets the body of text that appears in a teaching tip in the UI."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -69,7 +69,7 @@ AboutText = '**Sales Orders** can be sorted *Ascending* or *Descending*. Use the
 - To change the `AboutText` for a page or control that already has a teaching tip defined in the source object, set the `AboutText` property. 
 - To hide a teaching tip for a page or control in the source object, set the About properties to an empty string. 
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

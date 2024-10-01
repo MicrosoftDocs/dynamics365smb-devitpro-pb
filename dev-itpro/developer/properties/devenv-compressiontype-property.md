@@ -1,11 +1,11 @@
 ---
-title: "CompressionType Property"
+title: "CompressionType property"
 description: "Specifies the compression type used."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -18,7 +18,7 @@ Specifies the compression type used.
 ## Applies to
 -   Table
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -59,7 +59,7 @@ table 50100 MyTable
        ...
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Page object](../devenv-page-object.md)  

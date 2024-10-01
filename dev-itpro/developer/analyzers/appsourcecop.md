@@ -1,11 +1,11 @@
 ---
-title: "AppSourceCop Analyzer"
+title: "AppSourceCop analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -15,7 +15,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[AS0001](appsourcecop-as0001.md)|Tables and table extensions that have been published must not be deleted.|Upgrade|Error|
 |[AS0002](appsourcecop-as0002.md)|Fields must not be deleted.|Upgrade|Error|
@@ -137,6 +137,9 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0124](appsourcecop-as0124.md)|Changing an extension object's target is not allowed.|Upgrade|Error|
 |[AS0125](appsourcecop-as0125.md)|Changes the XLIFF translation ID are not allowed.|Upgrade|Info|
 |[AS0126](appsourcecop-as0126.md)|InternalsVisibleTo should not specifying a different publisher name than the one of this extension.|Extensibility|Warning|
+|[AS0127](appsourcecop-as0127.md)|Objects should be placed in a namespace with at least two levels.|Extensibility|Warning|
+|[AS0128](appsourcecop-as0128.md)|An interface must not be removed from the the list of extended interfaces on an interface that has been published.|Upgrade|Error|
+|[AS0129](appsourcecop-as0129.md)|An interface must not be added to the the list of extended interfaces on an interface that has been published.|Upgrade|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -216,7 +219,7 @@ Prepending **Foo** to the name of the page extension object will fix this error 
 > [!NOTE]  
 > It is still possible to use the `mandatoryPrefix` and `mandatorySuffix` properties in the `AppSourceCop.json`. For more information see [AS0011](appsourcecop-as0011.md).
 
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)  

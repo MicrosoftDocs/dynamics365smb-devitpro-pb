@@ -1,22 +1,23 @@
 ---
-title: "PageHandler Attribute"
+title: "PageHandler attribute"
 description: "Specifies that the method is a PageHandler method, which handles specific pages that are not run modally."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# PageHandler Attribute
+# PageHandler attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
 Specifies that the method is a PageHandler method, which handles specific pages that are not run modally.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -59,7 +60,7 @@ The **PageHandler** method is called when a non-modal page is invoked in the cod
 
 You use handler methods to automate tests by handling instances when user interaction is required by the code that is being tested by the test method. In these instances, the handler method is run instead of the requested user interface. The handler method should simulate the user interaction for the test case, such as validating messages, making selections, or entering values. You declare a handler type attribute on the method. For more information about handler methods, see [Create Handler Methods](../devenv-creating-handler-methods.md).
 
-## See Also
+## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)  

@@ -1,17 +1,17 @@
 ---
-title: "OnPreDataItem (Report Data Item) Trigger"
+title: "OnPreDataItem (Report Data Item) trigger"
 description: "Runs before a data item is processed."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnPreDataItem (Report Data Item) Trigger
+# OnPreDataItem (Report Data Item) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs before a data item is processed.
@@ -35,6 +35,6 @@ This trigger is run before a data item is processed, but after the associated va
 
 You can use this trigger to add additional filtering beyond what is established by the [DataItemLink Property (Reports)](../../properties/devenv-dataitemlink-reports-property.md) or [DataItemTableView Property](../../properties/devenv-dataitemtableview-property.md). For example, use this trigger if you need to filter an indented data item based on the result of a calculation. Use the [SetRange Record](../../methods-auto/record/record-setrange-method.md) or [SetFilter Record](../../methods-auto/record/record-setfilter-method.md)  to add extra delimiters.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

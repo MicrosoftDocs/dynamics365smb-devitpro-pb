@@ -3,16 +3,20 @@ title: Troubleshooting the Cloud Migration
 description: Learn how to troubleshoot problems that you may experience with the cloud migration.
 author: dmc-dk
 ms.topic: troubleshooting
-ms. search.keywords: cloud, edge
-ms.date: 02/18/2022
+ms.search.keywords: cloud, edge
+ms.date: 05/27/2024
 ms.author: dmitrych
-ms.review: jswymer
-
+ms.reviewer: jswymer
 ---
-
 # Troubleshooting Cloud Migration
 
-In this article, you learn how to troubleshoot problems that you may experience with the cloud migration of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For the cloud migration to work properly, there are certain requirements that must be met on the online and on-premises databases. The following sections talk about these requirements, how you can check them, and correct them as needed.
+In this article, you learn how to troubleshoot problems that you might experience with the cloud migration of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For the cloud migration to work properly, there are certain requirements that must be met on the online and on-premises databases. The following sections talk about these requirements, how you can check them, and correct them as needed.
+
+## Cloud migration setup and data replication troubleshooting articles
+
+For a collection of troubleshooting articles related cloud migration setup and data replication, refer to [Cloud migration troubleshooting for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) in Microsoft troubleshooting documentation.
+
+The sections that follow provide guidance for general error that you might experience during cloud migration.
 
 ## SQL Server compatibility level
 

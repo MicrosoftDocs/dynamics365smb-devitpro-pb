@@ -2,7 +2,7 @@
 title: Integration overview for Business Central 
 description: Find links to information about the ways you can integrate Business Central to products and services.
 author: kennienp
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
 ms.date: 02/23/2024

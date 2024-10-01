@@ -2,10 +2,10 @@
 title: "AppSourceCop Warning AS0103"
 description: "Table definitions must have a matching permission set."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -85,7 +85,7 @@ The AL permission set grants access to the table and thereby satisfies the valid
 > [!NOTE]  
 > You can grant access to all your tables using `*`. For instance `tabledata * = R;` grants read access to all of them.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -4,6 +4,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.topic: reference
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Enabled (Profile) Property
@@ -44,8 +45,7 @@ profile MyProfile
 } 
 ```
 
-## See Also  
+## Related information  
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
-[InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute)

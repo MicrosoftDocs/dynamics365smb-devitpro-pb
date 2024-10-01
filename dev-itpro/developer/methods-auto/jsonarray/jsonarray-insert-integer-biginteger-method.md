@@ -2,10 +2,10 @@
 title: "JsonArray.Insert(Integer, BigInteger) Method"
 description: "Inserts the value at the given index in the array while shifting all the values to the right by one position."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -49,7 +49,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 The operation will fail if the Index is smaller than 0 or greater or equal than JsonArray.Count.
 
-## See Also
+## Related information
 [JsonArray Data Type](jsonarray-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

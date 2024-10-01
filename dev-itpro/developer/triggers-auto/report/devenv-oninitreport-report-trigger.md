@@ -1,17 +1,17 @@
 ---
-title: "OnInitReport (Report) Trigger"
+title: "OnInitReport (Report) trigger"
 description: "Runs when the report is loaded."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnInitReport (Report) Trigger
+# OnInitReport (Report) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs when the report is loaded.
@@ -36,7 +36,7 @@ This trigger is run before the request page is run and before any table views or
 > [!NOTE]  
 > This trigger is currently not supported for [Report Extension Object](../../devenv-report-ext-example.md).
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

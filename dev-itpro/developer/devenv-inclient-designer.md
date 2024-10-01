@@ -157,7 +157,7 @@ The display type icons let you preview the changes you made on desktop, tablet, 
 
 ## Control user access to Designer
 
-Accessing Designer is controlled on a user or user group basis by the **EXTEN. MGT. - ADMIN** permission set. If a user is assigned this permission set, then Designer is available for the user in the client. To prohibit a user from Use Designer, just remove the user from the **EXTEND. MGT. - ADMIN** permission set.
+Accessing Designer is controlled on a user or user group basis by the **EXTEN. MGT. - ADMIN** permission set. If a user is assigned this permission set, then Designer is available for the user in the client. To prohibit a user from Use Designer, just remove the user from the **EXTEN. MGT. - ADMIN** permission set.
 
 > [!NOTE]  
 > It's important that the **EXTEN. MGT. - ADMIN** permission set does not have a *company* specified; otherwise the user won't be able to access Designer.

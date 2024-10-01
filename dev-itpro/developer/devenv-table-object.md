@@ -6,6 +6,7 @@ ms.custom: evergreen
 ms.date: 04/17/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 --- 
 
 # Table object
@@ -19,6 +20,14 @@ The structure of a table has four sections:
 - The keys section contains the definitions of the keys that the table needs to support.
 - The final section details the triggers and code that can run on the table.
 
+
+## Table object limits
+
+The table object has limitations that are mostly dictated by SQL Server, such as the maximum record size, number of fields, and the number of keys.
+
+For more information about current limitations on the table object, see [Object specifications and limitations](devenv-object-specifications-limitations.md).
+
+
 ## Table extensibility limitations
 
 > [!IMPORTANT]  
@@ -30,11 +39,24 @@ The structure of a table has four sections:
 > [!IMPORTANT]  
 > System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object ranges](devenv-object-ranges.md).
 
-## Table object limits
 
-The table object has limitations that are mostly dictated by SQL Server, such as the maximum record size, number of fields, and the number of keys.
+## System fields
 
-For more information about current limitations on the table object, see [Object specifications and limitations](devenv-object-specifications-limitations.md).
+The [!INCLUDE [prod_short](includes/prod_short.md)] platform automatically adds several system fields to tables. For more information, see [System fields](devenv-table-system-fields.md).
+
+
+## Defining default values for fields
+
+It's commonly used to have field value set to a default value. To do this, you set the `InitValue` property on the field. 
+
+For more information, see [InitValue property](properties/devenv-initvalue-property.md).
+
+
+## Defining validation rules for fields
+
+If you want to run business logic to validate the value of a field, you can define the `OnValidate` trigger on the field. 
+
+For more information, see [OnValidate (Field) trigger](triggers-auto/field/devenv-onvalidate-field-trigger.md).
 
 ## Snippet support
 
@@ -50,7 +72,7 @@ For more information, see [Add tooltips to table and page fields](devenv-adding-
 
 ## Table example
 
-This table stores address information and it has four fields; `Address`, `Locality`, `Town/City`, and `County`.
+This table stores address information and it has five fields; `Address`, `Locality`, `Town/City`, `County`, and `IsValidated`.
 
 ```AL
 table 50104 Address
@@ -62,65 +84,57 @@ table 50104 Address
     {
         field(1; Address; Text[50])
         {
-            Description = 'Address retrieved by Service';
-
-            // in 2024 release wave 1, you can define tooltips on the table field level
-            // uncomment the Tooltip line below to try it out
-            // ToolTip = 'Address retrieved by Service';
+            Caption = 'Address retrieved by Service';
         }
         field(2; Locality; Text[30])
         {
-            Description = 'Locality retrieved by Service';
+            Caption = 'Locality retrieved by Service';
+            Description = 'Locality feature likely to change in vNext'; // Internal note (not shown in the client)
         }
         field(3; "Town/City"; Text[30])
         {
-            Description = 'Town/City retrieved by Service';
+            Caption = 'Town/City retrieved by Service';
+            // in 2024 release wave 1, you can define tooltips on the table field level
+            // uncomment the Tooltip line below to try it out
+            // ToolTip = 'Town/City retrieved by Service';
         }
         field(4; County; Text[30])
         {
-            Description = 'County retrieved by Service';
+            Caption = 'County retrieved by Service';
 
-            trigger OnValidate();
+            // this is how you define field validation on the table level
+            trigger OnValidate()
             begin
                 ValidateCounty(County);
             end;
 
         }
+        field(5; IsValidated; Boolean)
+        {
+            Caption = 'Address validated yet?';
+            InitValue = false; // this is how you define default values 
+        }        
     }
     keys
     {
         key(PrimaryKey; Address)
         {
-            Clustered = TRUE;
+            Clustered = true;
         }
     }
-
-    var
-        Msg: Label 'Hello from my method';
-
-    trigger OnInsert();
-    begin
-
-    end;
-
-    procedure MyMethod()
-    begin
-        Message(Msg);
-    end;
 }
 ```
 
-## System fields
-
-The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will automatically add several system fields to tables. For more information, see [System Fields](devenv-table-system-fields.md).
 
 ## See also
 
-[AL development environment](devenv-reference-overview.md)  
 [Table overview](devenv-tables-overview.md)  
 [Table extension object](devenv-table-ext-object.md)  
 [Adding tooltips to table and page fields](devenv-adding-tooltips.md)  
-[SqlTimestamp property](properties/devenv-sqltimestamp-property.md)  
+[InitValue Property (defining default values for fields)](properties/devenv-initvalue-property.md)   
+[OnValidate (Field) Trigger](triggers-auto/field/devenv-onvalidate-field-trigger.md)   
 [Table keys](devenv-table-keys.md)  
 [Table, table fields, and table extension properties](properties/devenv-table-properties.md)  
 [Object specifications and limitations](devenv-object-specifications-limitations.md)   
+[AL development environment](devenv-reference-overview.md)   
+ 

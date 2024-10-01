@@ -1,10 +1,6 @@
 ---
 title: "Dates and Times"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 900fad3c-1d2c-4e9b-8bdf-422c07a00657
 caps.latest.revision: 3

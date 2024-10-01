@@ -1,11 +1,11 @@
 ---
-title: "DrillDownPageId Property"
+title: "DrillDownPageId property"
 description: "Sets the ID of the page to use as a drill-down."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -31,6 +31,6 @@ DrillDownPageID = 50100;
 
 Drill-downs are a system-wide feature of fields (normal fields and [FlowFields](../devenv-flowfields.md)) that let you see the underlying transactions that make up the information shown in the field. For example, the DrillDownID property is typically used to create a link from a Cue to an underlying page.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

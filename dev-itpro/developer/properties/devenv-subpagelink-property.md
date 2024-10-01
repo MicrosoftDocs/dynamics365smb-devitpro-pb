@@ -1,11 +1,11 @@
 ---
-title: "SubPageLink Property"
+title: "SubPageLink property"
 description: "Sets a link to a Factbox from a page."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -52,7 +52,7 @@ The link is updated when the current record changes.
   
 For an example of how to use `SubPageLink` to update the content of a FactBox in the client as different items are selected in a list page. <!-- See [Walkthrough: Adding a FactBox to the Customer List Page](../devenv-Walkthrough-Adding-a-FactBox-to-the-Customer-List-Page.md).  -->
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [SubPageView Property](devenv-subpageview-property.md)

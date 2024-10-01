@@ -2,13 +2,13 @@
 title: Install a version 24 update
 description: This article describes the tasks required for getting the monthly version 24 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 03/06/2024
+ms.date: 07/24/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2024 Release Wave 1 Update
+# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2024 release wave 1 update
 
 This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
@@ -32,7 +32,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - Business Foundation extension
 
-   This extension was introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application. It will contain more functionality in future releases.
+   This extension was introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application. It's expected to contain more functionality in future releases.
 
 - Base application extension
 
@@ -71,7 +71,7 @@ The installation media (DVD) includes new versions of Microsoft's Base Applicati
 Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the `" "` with the correct values for your environment.
 
 ```powershell
-$BcServerInstance = "The name of the Business Central server instance, for example: BC230"
+$BcServerInstance = "The name of the Business Central server instance, for example: BC240"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
 $TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (24-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB." 
@@ -80,7 +80,7 @@ $SystemAppPath = "The file path and name of the System Application extension for
 $BusFoundAppPath = "The file path and name of the Business Foundation extension for the update, for example: C:\DVD\Applications\BusinessFoundation\Source\Microsoft_Business Foundation.app"
 $BaseAppPath = "The file path and name of the Base Application extension for the update, for example: C:\DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
 $ApplicationAppPath = "The path and file name to the Application application extension for the update, for example: C:\DVD\Applications\Application\Source\Microsoft_Application.app"
-$NewBcVersion = "The version number for the update, for example: 24.1.39901.0"
+$NewBcVersion = "The version number for the update, for example: 24.4.39901.0"
 $ExtPath = "The path and file name to an extension package" 
 $ExtName = "The name of an extension"
 $ExtVersion = "The version of an extension, for example, 1.0.0.0"
@@ -163,16 +163,20 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
 
 1. Stop the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
-    ```powershell
-    Stop-NAVServerInstance -ServerInstance $BcServerInstance
-    ```
+   ```powershell
+   Stop-NAVServerInstance -ServerInstance $BcServerInstance
+   ```
 
-2. Run setup.exe to uninstall your current version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
-3. Run setup.exe again to install components of the update.
+1. Run setup.exe to uninstall your current version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+
+   > [!IMPORTANT]
+   > If you're machine is installed with Windows PowerShell 7.4.2 or later, you must uninstall it before you install Business Central version 24.1; otherwise the installation fails. For more information, see [Known issues](known-issues.md#installation-fails-because-powershell-7-is-already-installed).
+
+1. Run setup.exe again to install components of the update.
 
     1. Follow setup pages until you get to the **Microsoft [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Setup** page.
-    2. Select **Advanced installation options** > **Choose an installation option** > **Custom**.
-    3. On the **Customize the installation** page, select the following components as a minimum:
+    1. Select **Advanced installation options** > **Choose an installation option** > **Custom**.
+    1. On the **Customize the installation** page, select the following components as a minimum:
 
         - AL Development Environment (optional but recommended)
         - Server
@@ -181,13 +185,13 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
           > [!NOTE]
           > When install the Web Server Components, a [!INCLUDE[webserverinstance](../developer/includes/webserverinstance.md)] instance with the same name that you define for the [!INCLUDE[server](../developer/includes/server.md)] instance will be created on Internet Information Services (IIS). If you're existing deployment has multiple web server instances that you want to reuse, you'll have to upgrade these instances later in this article.
 
-    4. Select **Next**.
-    5. On the **Specify parameters** page, set the fields as needed.
+    1. Select **Next**.
+    1. On the **Specify parameters** page, set the fields as needed.
 
         > [!IMPORTANT]
         > Clear the **SQL Database** field so that it is blank. At this time, do not set this to the database that you want to update; otherwise, the installation of the [!INCLUDE[server](../developer/includes/server.md)] will fail. You will connect the database to the [!INCLUDE[server](../developer/includes/server.md)] later after it is converted to the new platform.
 
-    6. Select **Apply** to complete the installation.
+    1. Select **Apply** to complete the installation.
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -245,7 +249,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     > You'll see this message if you ran the cmdlet without the `-Force` parameter. Run the cmdlet again, but be sure to include `-Force` parameter.
 
 ## Connect server instance to database
- 
+
 1. (Multitenant only) Enable the server instance as a multitenant instance:
 
     ```powershell
@@ -410,6 +414,36 @@ Follow these steps if your existing solution uses the Microsoft System Applicati
     ```
 
     Upgrading data updates the data in the tables of the tenant database to the schema changes made to tables of the System Application.
+
+## Upgrade Business Foundation Application
+
+Follow these steps if your existing solution uses the Microsoft Business Foundation Application. Otherwise, you can skip this procedure. The **Business Foundation** extension contains an expansive set of open source modules that make it easier to build, maintain, and easily upgrade on-premises and online apps.
+
+1. Publish the  **Business Foundation** extension (Microsoft_Business Foundation.app).
+
+    You find the Microsoft_Business Foundation.app in the **Applications\BusinessFoundation\Source** folder of installation media (DVD).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $BcServerInstance -Path $BusFoundAppPath
+    ```
+
+1. Synchronize the tenant with the Business Foundation extension (Microsoft_Business Foundation):
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBCVersion
+    ```
+
+   Replace `$NewBcVersion` with the exact version of the published Business Foundation extension.
+
+1. Run the data upgrade on the Business Foundation.
+
+    To run the data upgrade, use the [Start-NavAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
+
+    ```powershell
+    Start-NAVAppDataUpgrade -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBcVersion
+    ```
+
+    Upgrading data updates the data in the tables of the tenant database to the schema changes made to tables of the Business Foundation.
 
 ## Upgrade Base Application
 

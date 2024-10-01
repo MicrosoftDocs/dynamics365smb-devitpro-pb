@@ -1,17 +1,17 @@
 ---
-title: "OnDeleteRecord (Page Extension) Trigger"
+title: "OnDeleteRecord (Page Extension) trigger"
 description: "Runs before a record is deleted from the table."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnDeleteRecord (Page Extension) Trigger
+# OnDeleteRecord (Page Extension) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs before a record is deleted from the table.
@@ -38,7 +38,7 @@ end;
 
 The action is canceled but the page is not closed if an error occurs in the trigger code. You can use this trigger to write to the database.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnDeleteRecord (Page) Trigger](../page/devenv-ondeleterecord-page-trigger.md)  

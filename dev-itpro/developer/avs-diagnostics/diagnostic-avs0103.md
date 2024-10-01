@@ -1,9 +1,9 @@
 ---
-title: "AVS Error AVS0103"
+title: AVS Error AVS0103
 description: "The extension with Id '{0}' appears multiple times in the submission, while all extensions submitted are expected to have a unique Id."
 ms.author: thpeder
-ms.date: 02/05/2022
-ms.reviewer: solsen
+ms.date: 04/26/2024
+ms.reviewer: jswymer
 ms.topic: reference
 author: thpeder
 ---
@@ -18,7 +18,7 @@ The extension with ID '{0}' appears multiple times in the submission, while all 
 
 Make sure you only include your app once in the submission in Partner Center.
 
-## See Also
+## See also
 
-[Get Started with AL](../devenv-get-started.md)  
+[Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

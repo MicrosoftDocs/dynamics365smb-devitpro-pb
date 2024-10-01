@@ -1,11 +1,11 @@
 ---
-title: "ContextSensitiveHelpPage Property"
+title: "ContextSensitiveHelpPage property"
 description: "Specifies the help topic to show when the user presses Help in the UI."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -33,7 +33,7 @@ ContextSensitiveHelpPage = 'page-extension-topic';
 
 The value of this property forms the second half of the URL to context-sensitive Help for your app. The first half is set in the app.json where you specify the URL to your library of Learn More content. For more information, see [Configure Context-Sensitive Help](../../help/context-sensitive-help.md).  
 
-## See Also  
+## Related information  
 
 [Configure Context-Sensitive Help](../../help/context-sensitive-help.md)  
 [User Assistance Model](../../user-assistance.md)  

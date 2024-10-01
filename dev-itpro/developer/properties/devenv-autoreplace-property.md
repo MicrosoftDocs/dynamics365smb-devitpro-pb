@@ -1,11 +1,11 @@
 ---
-title: "AutoReplace Property"
+title: "AutoReplace property"
 description: "Sets whether imported records automatically replace existing records with the same primary key."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -34,6 +34,6 @@ AutoReplace = true;
 > [!WARNING]  
 >  If this property is set to **true**, then the [AutoUpdate Property](devenv-autoupdate-property.md) has no effect.  
   
-## See Also  
+## Related information  
  [AutoUpdate Property](devenv-autoupdate-property.md)   
  [AutoSave Property](devenv-autoSave-property.md)

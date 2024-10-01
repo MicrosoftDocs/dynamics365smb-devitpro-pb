@@ -1,11 +1,11 @@
 ---
-title: "Tips for working with the APIs"
+title: Tips for working with the APIs
 description: Provides some tips about working with Business Central API.
 author: SusanneWindfeldPedersen
 ms.author: solsen
+ms.reviewer: solsen
 ms.custom: bap-template
-ms.date: 07/03/2023
-
+ms.date: 05/29/2024
 ms.topic: conceptual
 ---
 
@@ -107,9 +107,9 @@ Don't supply a request body for this method.
 #### Response
 If successful, this method returns a `200 OK` response code and a report PDF file in the response body.
 
-## See Also
+## See also
 <!-- [Using Deltas With APIs](devenv-connect-apps-delta.md)-->  
-[Using Filtering With APIs](devenv-connect-apps-filtering.md)  
+[Using filtering With APIs](devenv-connect-apps-filtering.md)  
 [API performance](../webservices/web-service-performance.md)   
-[Performance Articles For Developers](../performance/performance-developer.md)  
+[Performance articles For developers](../performance/performance-developer.md)  
 [DataAccessIntent property](properties/devenv-dataaccessintent-property.md)

@@ -2,10 +2,10 @@
 title: "HttpClient.Get(Text, var HttpResponseMessage) Method"
 description: "Sends a GET request to get the resource identified by the request URL."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -92,7 +92,7 @@ The preceding code:
 
 [!INCLUDE[SupportedHTTPmethods](../../../includes/include-http-methods.md )]
 
-## See Also
+## Related information
 [Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

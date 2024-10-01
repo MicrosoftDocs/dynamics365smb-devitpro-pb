@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 04/17/2024
 ms.topic: article
+ms.reviewer: solsen
 ---
 
 # Development and administration for Dynamics 365 Business Central
@@ -78,7 +79,7 @@ If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we
 [Resources for help and support for [!INCLUDE[prod_long](includes/prod_long.md)]](help-and-support.md)  
 [The lifecycle of apps and extensions](developer/devenv-app-life-cycle.md)  
 [Maintenance of AppSource apps and per-tenant extensions](developer/app-maintain.md)  
-[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
+[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  
 [Dynamics NAV developer and IT-pro content](/dynamics-nav/index)  
 [Dynamics 365 Product Licensing](https://www.microsoft.com/Licensing/product-licensing/dynamics365)  

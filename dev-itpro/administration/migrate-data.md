@@ -1,14 +1,13 @@
 ---
-title: Migrate on-premises data to the cloud
+title: Migrate On-Premises Data to Business Central Online
 description: Learn how to set up cloud data migration to Business Central online from supported versions of Dynamics products, and from Business Central on-premises. Azure Data Factory manages the data migration directly between databases.
 author: jswymer
 ms.topic: conceptual
 ms.reviewer: jswymer
-ms. search.keywords: cloud, edge
+ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003
-ms.date: 11/30/2022
+ms.date: 06/03/2024
 ms.author: jswymer
-
 ms.custom: bap-template
 ---
 
@@ -246,43 +245,6 @@ This task will run the cloud migration on your that you set up previously, movin
 1. Search for and open the **Cloud Migration Management** page.
 2. Select **Run Migration Now** > **Yes**. This step will try to start the cloud migration.
 3. If successful, you'll get a message that the could migration was triggered. Select OK, then you can monitor the status on the **Cloud Migration Management** page.-->
-
-<!--
-## Specify the SQL connection
-
-If the product you selected requires a SQL connection, this page will be presented. Other source applications may require different information to connect to them. This page will display the connection information based on the product that you specified in the previous page. This is defined from the installed extensions for the product you've selected. The following list provides more details about the fields in this part of the assisted setup guide.  
-
-* **SQL Connection**
-
-  Specify *SQL Server* for a locally installed SQL Server instance, or *Azure SQL*.
-  
-  > [!IMPORTANT]
-  > Azure SQL Managed Instance is not supported.  
-
-* **SQL Connection string**
-
-  You must specify the connection string to your SQL Server, including the name of the server that SQL Server is running on, and the name of the instance, the database, and the relevant user account.  
-
-  For example, `Server=MyServer\BCDEMO;Database=BC180;UID=MySQLAccount;PWD=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, version 18. For more information, see [the SQL Server blog](/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string).  
-
-  The following snippets illustrate a couple of connection strings with different formats:  
-
-    `Server={Server Name\Instance Name};Initial Catalog={Database Name};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};`  
-
-    `Server={Server Name\Instance Name};Database={Database Name};User Id={SQL Server Authenticated UserName};Password={SQL Server Authenticated Password};`  
-
-  > [!IMPORTANT]
-  > In the second connection string format, don't forget to add the **space** in *User Id* parameter as it's mandatory and can throw an error if it's missing.
-
-  The SQL connection string is passed to Azure Data Factory (ADF), where it's encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data migration process.  
-
-* **Integration runtime name**
-
-  If your SQL connection is *SQL Server*, you must specify the runtime service that will be used to replicate the data from the defined source to [!INCLUDE [prod_short](../includes/prod_short.md)] online. The integration runtime must be running on the machine that holds the SQL Server database. If you don't already have a runtime service, leave the field empty, and then choose the **Next** button.  
-
-  If you leave the **Integration runtime name** field empty, a new page appears from where you can download the self-hosted integration runtime that you must install. Follow the instructions on the page.  [!INCLUDE [tooltip-inline-tip_md](../includes/tooltip-inline-tip_md.md)]
-
-Once you choose **Next**, a new pipeline will be created in the Azure service. This takes less than a minute to complete, in most cases. If you want to test your SQL string, open the **Microsoft Integration Runtime Configuration Manager**, and then choose the **Diagnostics** menu option. From there, you can test to see if the connection is good.  -->
 
 <!--
 ## Manage the migration

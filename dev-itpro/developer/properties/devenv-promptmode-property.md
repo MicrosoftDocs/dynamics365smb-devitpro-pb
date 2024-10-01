@@ -1,11 +1,11 @@
 ---
-title: "PromptMode Property"
+title: "PromptMode property"
 description: "Specifies the current mode of a PromptDialog page."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -18,7 +18,7 @@ Specifies the current mode of a PromptDialog page.
 ## Applies to
 -   Page
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -32,7 +32,7 @@ Specifies the current mode of a PromptDialog page.
 
 The `PromptMode` property is used on pages that have the [PageType Property](devenv-pagetype-property.md) set to `PromptDialog`. The `PromptDialog` enables creating a generative AI dialog in [!INCLUDE [prod_short](../includes/prod_short.md)]. The default value is `Prompt`, which is the starting prompt mode. The `PromptMode` property can be changed at runtime. The other options are `Generate`, which triggers generating the output of the copilot interaction, and `Content`, which shows the output of the copilot interaction. You can programmatically set this property by setting the variable `CurrPage.PromptMode` before the page is opened. For more information, see [PromptDialog page type](../devenv-page-type-promptdialog.md).
 
-## See Also
+## Related information
 
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -6,6 +6,7 @@ ms.date: 04/15/2021
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading Customized C/AL Application to Microsoft Base Application Version 17
 
@@ -194,7 +195,7 @@ You'll create two versions of this extension. The first version contains the tab
 
     ```
     {
-      "id": "11111111-aaaa-2222-bbbb-333333333333",
+      "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "name": "bc14tablesonly",
       "publisher": "My publisher",
       "version": "1.0.0.0",
@@ -366,7 +367,7 @@ In this step, you configure the version 17 server instance. In particular, you c
     For example:
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance BC -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"11111111-aaaa-2222-bbbb-333333333333", "name":"bc14tablesonly", "publisher": "My publisher"}]'
+    Set-NAVServerConfiguration -ServerInstance BC -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"bc14tablesonly", "publisher": "My publisher"}]'
     ```
 
     > [!NOTE]

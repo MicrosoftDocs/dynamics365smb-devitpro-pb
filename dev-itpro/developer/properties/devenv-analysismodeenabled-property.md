@@ -1,11 +1,11 @@
 ---
-title: "AnalysisModeEnabled Property"
+title: "AnalysisModeEnabled property"
 description: "Sets a value that specifies whether analysis mode on the page is allowed."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -32,8 +32,8 @@ AnalysisModeEnabled = true|false;
 
 ## Remarks
 
-The analysis mode enables users to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. [Learn more about the analysis mode](/dynamics365/business-central/analysis-mode) in the business functionality help.
+Data analysis mode enables users to analyze data directly from the page, without having to run a report or switch another application like Excel. It provides an interactive and versatile way to calculate, summarize, and examine data. [Learn more about data analysis mode](/dynamics365/business-central/analysis-mode) in the business functionality help.
 
-## See also
+## Related information
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

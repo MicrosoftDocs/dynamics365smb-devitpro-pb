@@ -1,11 +1,11 @@
 ---
-title: "Format Property"
+title: "Format property"
 description: "Sets the formats of the source expression for various data types."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -18,7 +18,7 @@ Sets the formats of the source expression for various data types.
 ## Applies to
 -   Xml Port
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -52,6 +52,6 @@ You can configure the text file's default settings by using the properties [Text
 [FieldSeparator Property](devenv-fieldseparator-property.md) and
 [FieldDelimiter Property](devenv-fielddelimiter-property.md).
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

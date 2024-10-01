@@ -2,10 +2,10 @@
 title: "Record.AddLoadFields([Any,...]) Method"
 description: "Specifies fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -62,7 +62,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 [Using Partial Records](../../devenv-partial-records.md)  
 [Record Data Type](record-data-type.md)  

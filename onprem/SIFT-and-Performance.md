@@ -1,10 +1,6 @@
 ---
 title: "SIFT and Performance"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e6de5abc-6a10-4c51-9e31-70dfd1b1aca1
 caps.latest.revision: 15

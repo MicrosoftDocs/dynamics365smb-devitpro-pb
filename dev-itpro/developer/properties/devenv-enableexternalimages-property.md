@@ -1,11 +1,11 @@
 ---
-title: "EnableExternalImages Property"
+title: "EnableExternalImages property"
 description: "Sets whether external images are allowed on a report."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -50,6 +50,6 @@ For information about how to add images using Visual Studio Report Designer, see
 
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] cannot verify image sources and protect against malicious images or sources that may be harmful to your computer. You should set the **EnableExternalImages** property to **true** only if you can ensure that images on the report come from a trusted source.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

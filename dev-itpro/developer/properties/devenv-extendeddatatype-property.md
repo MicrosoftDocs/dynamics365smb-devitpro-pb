@@ -1,11 +1,11 @@
 ---
-title: "ExtendedDatatype Property"
+title: "ExtendedDatatype property"
 description: "Sets the extended data type of a control."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,10 +16,10 @@ author: SusanneWindfeldPedersen
 Sets the extended data type of a control.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -52,7 +52,7 @@ The value of this property on a page control overrides the same property on a ta
 
 With [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2, you can use the `RichContent` option to enable a rich text field. To enable a rich text field, the field must have the [Multiline property](devenv-multiline-property.md) set to `true` and it must reside alone within a FastTab group. For an example of creating a rich text editor, see [Creating a rich text editor](../devenv-richtext-content-controls.md).
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Creating a rich text editor](../devenv-richtext-content-controls.md)

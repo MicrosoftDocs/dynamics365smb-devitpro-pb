@@ -1,11 +1,11 @@
 ---
-title: "Printing Reports"
+title: Developing printer extensions in Business Central
 description: Dynamics 365 Business Central supports printing reports to cloud-based printers. 
-ms.date: 04/01/2021
+ms.date: 06/20/2024
 ms.topic: conceptual
 author: jswymer
 ---
-# Developing Printer Extensions in Business Central
+# Developing printer extensions in Business Central
 
 This article provides an overview about how to add code that enables [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reports to be sent from the client directly to a web-connected printer, like an email printer or through a cloud printing service.
 
@@ -15,7 +15,7 @@ Without any customized code, there's no way to send a report directly to a print
 
 To accommodate printing, the system publishes two events that you can subscribe to: [OnAfterSetupPrinters](devenv-onaftersetupprinters-event.md) and [OnAfterDocumentPrintReady](devenv-onafterdocumentprintready-event.md). The following figure illustrates the runtime execution of the events:
 
-![Report printing.](media/report-printing-runtime4.png "Report printing")
+![Shows a flow diagram for report printing.](media/report-printing-runtime4.png "Shows a flow diagram for report printing.")
 
 Throughout the print process, the system compiles the report into a PDF file and passes it in a stream object, then finally sends the PDF file to the printer.
 
@@ -25,7 +25,7 @@ You subscribe to the OnAfterSetupPrinters event to set up different printers tha
 
 ```AL
 [IntegrationEvent(false, false)]
-local procedure OnAfterSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
+local procedure OnAfterSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject])
 ```
 
 The *Printers* parameter is a [Dictionary of [Text, Text]](methods-auto/dictionary/dictionary-data-type.md) type that includes a collection of key-value pairs that define different printer setups. The key specifies a name for the printer. The value is a JSON object that specifies settings supported by the printer. The settings include information like paper size, paper trays, default copies, and more. The JSON object is referred to as the *payload*.
@@ -44,7 +44,7 @@ The OnAfterDocumentPrintReady event is also a global integration event that is p
 
 ```AL
 IntegrationEvent(false, false)]
-local procedure OnAfterDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean);
+local procedure OnAfterDocumentPrintReady(ObjectType: Option "Report","Page"; ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
 ```
 
 The event is raised when the use selects the **Print** action on the request page of a report. Two parameters of interest are *DocumentStream* and *ObjectPayload*. *DocumentStream* is an Upstream object that contains the report data to be printed. The *ObjectPayload* is a JsonObject type object that combines the printer payload and report metadata. The report metadata includes information like the company name, MIME type, views, and more. This combination is referred to as the *report payload*. 
@@ -54,7 +54,7 @@ The event is raised when the use selects the **Print** action on the request pag
 To develop a printer extension, you create codeunits that subscribe to the OnAfterSetupPrinters and OnAfterDocumentPrintReady events. Plus, you would typically add other objects to support the printing. For example, you could create a table that stores printer setups and a page that enables users to manage them. <!--As a good example, check out the **Send To Email Printer** extension that is available with Business Central. The following figure provides a simplified overview of the objects that make up this extension. -->
 
 
-![Report printing.](media/report-printing-design-v2.png "Report printing")
+![Shows elements associated with developing a report.](media/report-printing-design-v2.png "Shows elements associated with developing a report.")
 
 <!--
 The following figure illustrates a simplified development flow:
@@ -73,10 +73,10 @@ articles will explain how to subscribe to and use the events:
 
 [Handling Print Action with the OnAfterSetupPrinters Event](devenv-reports-handle-print-action.md)-->
 
-## See Also  
+## See also  
 
 <!--[Troubleshooting Email Printing](devenv-report-troubleshooting-printing.md)  -->
- [Events in AL](devenv-events-in-al.md)   
- [Publishing Events](devenv-publishing-events.md)   
- [Raising Events](devenv-raising-events.md)   
+ [Events in AL](devenv-events-in-al.md)  
+ [Publishing Events](devenv-publishing-events.md)  
+ [Raising Events](devenv-raising-events.md)  
  [Subscribing to Events](devenv-subscribing-to-events.md)  

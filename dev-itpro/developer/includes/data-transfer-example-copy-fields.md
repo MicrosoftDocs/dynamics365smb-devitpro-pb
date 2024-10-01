@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 09/28/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 In this example, you have two tables, **Source** and **Destination**. You're planning on obsoleting field **S3** in the **Source** table. But before you do, you want to copy some values of **S3** into the field **D3** of the **Destination** table. Specifically, you only want to copy field **S3** in rows where field **S2** is equal to *A*.
 

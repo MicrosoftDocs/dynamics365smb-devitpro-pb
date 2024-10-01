@@ -1,17 +1,17 @@
 ---
-title: "OnOpenPage (Page) Trigger"
+title: "OnOpenPage (Page) trigger"
 description: "Runs after a page is initialized and run."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnOpenPage (Page) Trigger
+# OnOpenPage (Page) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs after a page is initialized and run.
@@ -45,7 +45,7 @@ If an error occurs in the trigger execution, then the page closes.
 > [!NOTE]  
 > The **OnOpenPage** trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](exposing-methods-and-properties-in-a-windows-client-pagefield-add-in.md).-->
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnOpenPage (Request Page) Trigger](../requestpage/devenv-onopenpage-requestpage-trigger.md)  

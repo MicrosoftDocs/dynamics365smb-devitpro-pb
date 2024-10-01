@@ -1,10 +1,6 @@
 ---
 title: "How to: Open a Card Page from an Item in a List"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cd014621-799b-42ed-9042-bed46a86f965
 caps.latest.revision: 7

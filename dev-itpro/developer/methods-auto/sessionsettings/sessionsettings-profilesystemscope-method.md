@@ -2,16 +2,16 @@
 title: "SessionSettings.ProfileSystemScope([Boolean]) Method"
 description: "Gets or sets the profile scope property in a SessionSettings object."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SessionSettings.ProfileSystemScope([Boolean]) Method
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0 until version 13.0 where it was deprecated for the following reason: "System profiles have been deprecated. All profiles are now in the Tenant. Setting this value to true has no effect."_
 
 Gets or sets the profile scope property in a SessionSettings object.
 
@@ -54,7 +54,7 @@ begin
 end;  
 ```  
 
-## See Also
+## Related information
 [SessionSettings Data Type](sessionsettings-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

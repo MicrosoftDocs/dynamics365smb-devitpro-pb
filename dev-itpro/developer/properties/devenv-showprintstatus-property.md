@@ -1,11 +1,11 @@
 ---
-title: "ShowPrintStatus Property"
+title: "ShowPrintStatus property"
 description: "Sets whether a window that shows the printing status of a report when it is run is displayed."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -37,7 +37,7 @@ Apart from showing the progress of the report, the window also contains a **Canc
   
 If the [ProcessingOnly Property](devenv-processingonly-property.md) is **true**, there will be no status dialog box, even if ShowPrintStatus is **true**. If you need a status dialog box, you must create one yourself.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [ProcessingOnly Property](devenv-processingonly-property.md)

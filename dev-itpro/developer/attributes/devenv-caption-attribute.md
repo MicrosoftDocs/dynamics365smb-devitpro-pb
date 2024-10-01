@@ -1,22 +1,23 @@
 ---
-title: "Caption Attribute"
+title: "Caption attribute"
 description: "Specifies a caption for OData actions."
 ms.author: solsen
-ms.date: 07/07/2022
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# Caption Attribute
+# Caption attribute
 > **Version**: _Available or changed with runtime version 6.0._
 
 Specifies a caption for OData actions.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -45,6 +46,6 @@ Specifies a comment for the translation.
 Specifies the maximum length of the translation.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

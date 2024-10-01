@@ -5,6 +5,7 @@ ms.author: jswymer
 ms.date: 05/17/2021
 ms.topic: reference
 ms.search.keywords: reports, triggers, trigger flow, sequence
+ms.reviewer: jswymer
 ---
 
 # Report Triggers and Runtime Operations

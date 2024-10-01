@@ -1,11 +1,11 @@
 ---
-title: "StartupScript Property"
+title: "StartupScript property"
 description: "Specifies the script which is invoked when web page with the control add-in is loaded."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -37,7 +37,7 @@ The script is embedded within the extension and must be added to the extension p
 StartupScript = 'js/chart.js';
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Control Add-In Object](../devenv-control-addin-object.md)   

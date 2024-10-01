@@ -7,6 +7,7 @@ ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/22/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing Error Message Quality Telemetry
@@ -33,7 +34,7 @@ The following table explains the general dimensions included in the trace. The t
 
 |Dimension|Description or value|
 |---------|--------------------|
-|message|**User gave feedback on error message: [OK|Not OK]**|
+|message| **User gave feedback on error message: [OK\|Not OK]** |
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] <br><br>Data in user_Id from the **User** card was introduced in version 24 for page view telemetry.  |
 
 <!-- removed by request |severityLevel|**3**| -->
@@ -68,13 +69,13 @@ The following table explains the custom dimensions included in the trace.
 |hostType|Specifies [tbd]|-->
 
 <!--
-{"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","companyName":"CRONUS International Ltd.","component":"Dynamics 365 Business Central Client","eventId":"CL0002","clientType":"Desktop","alObjectType":"Page","alObjectName":"Dialog","alObjectId":"-1","alStackTrace":"undefined","hostType":"Browser","userLocale":"en-US","exceptionId":"undefined","errorMessage":"undefined","userFeedback":"No","appId":"null","appName":"null","appPublisher":"null","appVersion":"null","environmentName":"null"}
+{"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","companyName":"CRONUS International Ltd.","component":"Dynamics 365 Business Central Client","eventId":"CL0002","clientType":"Desktop","alObjectType":"Page","alObjectName":"Dialog","alObjectId":"-1","alStackTrace":"undefined","hostType":"Browser","userLocale":"en-US","exceptionId":"undefined","errorMessage":"undefined","userFeedback":"No","appId":"null","appName":"null","appPublisher":"null","appVersion":"null","environmentName":"null"}
 
 
-{"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","environmentType":"undefined","companyName":"CRONUS International Ltd.","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","clientType":"Desktop","component":"Dynamics 365 Business Central Client","eventId":"CL0002","userFeedback":"No","userLocale":"en-US","appVersion":"1.0.0.0","appPublisher":"Default publisher","environmentName":"null","exceptionId":"4c70c77a-147e-4fc1-af16-96cf7c008fa6","alStackTrace":"CustomerListExt(PageExtension 50110).OnOpenPage(Trigger) line 8 - ALlogmessage by Default publisher","hostType":"Browser","errorMessage":"Use ERROR with a text constant to improve telemetry details","appId":"f2ae006d-deef-4990-828e-4c76906e7171","appName":"ALlogmessage","alObjectType":"Page","alObjectName":"Dialog","alObjectId":"-1"}
+{"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","environmentType":"undefined","companyName":"CRONUS International Ltd.","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","clientType":"Desktop","component":"Dynamics 365 Business Central Client","eventId":"CL0002","userFeedback":"No","userLocale":"en-US","appVersion":"1.0.0.0","appPublisher":"Default publisher","environmentName":"null","exceptionId":"4c70c77a-147e-4fc1-af16-96cf7c008fa6","alStackTrace":"CustomerListExt(PageExtension 50110).OnOpenPage(Trigger) line 8 - ALlogmessage by Default publisher","hostType":"Browser","errorMessage":"Use ERROR with a text constant to improve telemetry details","appId":"f2ae006d-deef-4990-828e-4c76906e7171","appName":"ALlogmessage","alObjectType":"Page","alObjectName":"Dialog","alObjectId":"-1"}
 
 
-{"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","companyName":"CRONUS International Ltd.","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","component":"Dynamics 365 Business Central Client","eventId":"CL0002","clientType":"Desktop","alObjectName":"Dialog","alObjectType":"Page","alObjectId":"-1","alStackTrace":"CustomerListExt(PageExtension 50110).OnOpenPage(Trigger) line 9 - ALlogmessage by Default publisher","appPublisher":"Default publisher","appName":"ALlogmessage","hostType":"Browser","environmentName":"null","appId":"f2ae006d-deef-4990-828e-4c76906e7171","userFeedback":"Yes","appVersion":"1.0.0.0","userLocale":"en-US","errorMessage":"Something went wrong again","exceptionId":"ddc77782-caa0-44a9-8fae-9329375613e2"}
+{"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","companyName":"CRONUS International Ltd.","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","component":"Dynamics 365 Business Central Client","eventId":"CL0002","clientType":"Desktop","alObjectName":"Dialog","alObjectType":"Page","alObjectId":"-1","alStackTrace":"CustomerListExt(PageExtension 50110).OnOpenPage(Trigger) line 9 - ALlogmessage by Default publisher","appPublisher":"Default publisher","appName":"ALlogmessage","hostType":"Browser","environmentName":"null","appId":"f2ae006d-deef-4990-828e-4c76906e7171","userFeedback":"Yes","appVersion":"1.0.0.0","userLocale":"en-US","errorMessage":"Something went wrong again","exceptionId":"ddc77782-caa0-44a9-8fae-9329375613e2"}
 
 -->
 

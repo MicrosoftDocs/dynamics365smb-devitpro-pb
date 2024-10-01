@@ -1,15 +1,15 @@
 ---
-title: (v1.0) "Endpoints for the APIs for Microsoft Dynamics NAV and Microsoft Dynamics 365 Business Central"
-description: (v1.0) "Describing the steps you must go through to enable access to the APIs in on-prem and cloud product versions."
+title: (v1.0) Endpoints for the APIs for Microsoft Dynamics NAV and Microsoft Dynamics 365 Business Central
+description: (v1.0) Describing the steps you must go through to enable access to the APIs in on-prem and cloud product versions.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 01/08/2024
+ms.custom: evergreen
+ms.date: 05/01/2024
 ms.topic: article
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online (v1.0)
+# Endpoints for the APIs for Dynamics 365 Business Central on-premises and online (v1.0)
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 

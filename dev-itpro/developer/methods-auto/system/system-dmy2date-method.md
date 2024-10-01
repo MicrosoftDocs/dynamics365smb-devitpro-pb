@@ -2,10 +2,10 @@
 title: "System.DMY2Date(Integer [, Integer] [, Integer]) Method"
 description: "Gets a Date object based on a day, month, and year."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -66,7 +66,7 @@ On a computer that has the regional format set to English \(United States\), the
   
 **Day number 17, month number 2, and year number 2014 corresponds to the date 02/17/14.**
  
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

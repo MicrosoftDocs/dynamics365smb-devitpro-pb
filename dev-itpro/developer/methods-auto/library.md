@@ -1,18 +1,18 @@
 ---
-title: "Data Types and Methods in AL"
+title: "Data types and methods in AL"
 description: ""
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Data Types and Methods in AL
+# Data types and methods in AL
 
-The following data types are available as part of the AL Language. Each data type has various methods that support it. For more information about a data type and its methods, select a link in the table.
+The following data types are available as part of the AL language. Each data type has various methods that support it. For more information about a data type and its methods, select a link in the table.
 
 |Type|Description|
 |-----------|-----------|
@@ -133,6 +133,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[NotificationScope](notificationscope/notificationscope-option.md)|Specifies the context in which the notification appears in the client.|
 |[ObjectType](objecttype/objecttype-option.md)|The different types of objects.|
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|
+|[PageStyle](pagestyle/pagestyle-option.md)|Represents the different kinds of styles that can be applied to page controls.|
 |[PermissionObjectType](permissionobjecttype/permissionobjecttype-option.md)|The different types of objects that can have different permissions assigned.|
 |[PromptMode](promptmode/promptmode-option.md)|Specifies the current mode of a PromptDialog page.|
 |[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
@@ -149,6 +150,6 @@ The following data types are available as part of the AL Language. Each data typ
 |[WebServiceActionResultCode](webserviceactionresultcode/webserviceactionresultcode-option.md)|Represents a web service action status code.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -2,10 +2,10 @@
 title: "Report.RunModal(Integer [, Boolean] [, Boolean] [, var Record]) Method"
 description: "Loads and executes the report that you specify."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -82,7 +82,7 @@ This example shows how to run a report. This example skips the request window an
 Report.RunModal(1001, False, True);  
 ```  
 
-## See Also
+## Related information
 [RunModal (instance) Method](reportinstance-runmodal-method.md)   
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

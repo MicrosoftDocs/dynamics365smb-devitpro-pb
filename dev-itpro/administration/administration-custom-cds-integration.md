@@ -2,7 +2,7 @@
 title: Customizing an Integration with Microsoft Dataverse
 description: Learn how to integrate your extension with Microsoft Dataverse. This walkthrough takes you through each step.
 author: bholtorf
-ms.reviewer: solsen
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.author: bholtorf
 ms.date: 04/01/2021
@@ -219,7 +219,7 @@ Now use the table to create a page for coupling [!INCLUDE[prod_short](../include
 
     ```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnAddEntityTableMapping', '', false, false)]
-        local procedure HandleOnAddEntityTableMapping(var TempNameValueBuffer: Record "Name/Value Buffer" temporary);
+        local procedure HandleOnAddEntityTableMapping(var TempNameValueBuffer: Record "Name/Value Buffer" temporary)
         var
             CRMSetupDefaults: Codeunit "CRM Setup Defaults";
         begin

@@ -1,11 +1,11 @@
 ---
-title: "Extensible Property"
+title: "Extensible property"
 description: "Sets whether the report can be extended."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -42,7 +42,7 @@ table 50111 MyTable
 
 If the value is **true**, the object can be extended using a `tableextension`, `pageextension`, `reportextension`, or `enumextension` respectively.
 
-## See Also
+## Related information
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  

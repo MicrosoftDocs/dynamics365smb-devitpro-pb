@@ -1,17 +1,17 @@
 ---
-title: "OnAfterModifyRecord (Xml Port Table Element) Trigger"
+title: "OnAfterModifyRecord (Xml Port Table Element) trigger"
 description: "Runs after a record has been modified."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterModifyRecord (Xml Port Table Element) Trigger
+# OnAfterModifyRecord (Xml Port Table Element) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs after a record has been modified.
@@ -34,6 +34,6 @@ end;
 
  If the [AutoSave Property](../../properties/devenv-autosave-property.md) is **false**, then although the record is not modified automatically, the OnAfterModifyRecord trigger is still called after the modification would have occurred.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

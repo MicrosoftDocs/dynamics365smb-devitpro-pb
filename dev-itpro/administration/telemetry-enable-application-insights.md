@@ -1,14 +1,15 @@
 ---
-title: Enable Sending Telemetry to Application Insights
+title: Turn sending telemetry to application insights on or off
 description: Learn how you can get richer telemetry by connecting your Business Central with Application Insights for telemetry. 
-ms.reviewer: kepontop
+ms.author: kepontop
 ms.topic: conceptual
 author: jswymer
-ms.date: 01/26/2024
+ms.date: 07/23/2024
 ms.custom: bap-template
+ms.reviewer: jswymer
 ---
 
-# Enable Environment Telemetry
+# Turn environment telemetry on or off
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
@@ -52,19 +53,19 @@ The following video summarizes how to store [!INCLUDE [prod_short](../includes/p
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fAB5]
 
-## Enable telemetry on environments
+## Turn on telemetry on environments
 
 Once you have the resource and its connection string or instrumentation key, you can enable your tenants to send telemetry to your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
 
-The way you enable [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] depends on whether you want to connect to a [!INCLUDE [prod_short](../includes/prod_short.md)] online or [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises environment. For on-premises, if also depends on whether the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a single-tenant or multitenant instance.
+The way you turn on [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] depends on whether you want to connect to a [!INCLUDE [prod_short](../includes/prod_short.md)] online or [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises environment. For on-premises, if also depends on whether the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a single-tenant or multitenant instance.
 
 ### For online environments
 
-For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can enable telemetry on environments either from the admin center or by using the the admin center API.  To use the admin center, complete the following steps. For information about using the admin center API, go to [Put AppInsights key](administration-center-api_environment_settings.md#put-appinsights-key).
+For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can turn on telemetry on environments either from the admin center or by using the admin center API. To use the admin center, complete the following steps. For information about using the admin center API, go to [Put AppInsights key](administration-center-api_environment_settings.md#put-appinsights-key).
 
 #### Video guidance
 
-The following video shows how to enable telemetry for online environments.
+The following video shows how to turn on telemetry for online environments.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fAB2]
 
@@ -76,10 +77,10 @@ The following video shows how to enable telemetry for online environments.
     > The next steps require a restart to the environment, which is triggered automatically at the end of this procedure. Plan to do this during non-working hours to avoid disruptions.
 2. On the **Environment** page, the **Application Insights Key** field shows if the environment already uses application insights.
 
-    To enable telemetry, choose the **Define** caption, and then, in the **Set Application Insights Key** pane, choose the **Enable application insights** field and enter the instrumentation key in the **Instrumentation Key** field.  
+    To turn on telemetry, choose the **Define** caption, and then, in the **Set Application Insights Key** pane, choose the **Enable application insights** field and enter the instrumentation key in the **Instrumentation Key** field.  
 
     > [!NOTE]
-    > In version 15 and 16, to enable telemetry, choose the **Application Insights Key** action, and then specify the instrumentation key.
+    > In version 15 and 16, to turn on telemetry, choose the **Application Insights Key** action, and then specify the instrumentation key.
 3. Choose the **Save** button.
 
 ### For on-premises environments (single-tenant mode)
@@ -87,20 +88,21 @@ The following video shows how to enable telemetry for online environments.
 For a single-tenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, set the **Application Insights Connection String** or **Application Insights Instrumentation Key** setting of the server instance.
 
 ```powershell
-Set-NAVServerConfiguration -ServerInstance BC200 -Keyname ApplicationInsightsConnectionString -Keyvalue 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
+Set-NAVServerConfiguration -ServerInstance BC200 -Keyname ApplicationInsightsConnectionString -Keyvalue 'InstrumentationKey=aaaaaaaa-0b0b-1c1c-2d2d-333333333333;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
 ```
 For more information, see [Configuring Business Central Server](configure-server-instance.md#general-settings).
 
-### For on-premises environments (multi-tenant mode)
-For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, enable telemetry on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance.
+### For on-premises environments (multitenant mode)
+
+For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, turn on telemetry on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps&preserve-view=true) includes the `-ApplicationInsightsConnectionString` and `-ApplicationInsightsKey` parameters. For example:
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -AadTenantId 'MyAadTenantId' -EnvironmentName 'MyEnvironmentName' -EnvironmentType Production -ApplicationInsightsConnectionString 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
+Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -AadTenantId 'MyAadTenantId' -EnvironmentName 'MyEnvironmentName' -EnvironmentType Production -ApplicationInsightsConnectionString 'InstrumentationKey=aaaaaaaa-0b0b-1c1c-2d2d-333333333333;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
 ```
 
-or
+Or
 
 ```powershell
 Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -EnvironmentName 'MyEnvironmentName' -EnvironmentType Sandbox -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
@@ -126,22 +128,27 @@ You can specify the same or another key when creating more tenants:
 New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
 ```
 
+## Turn off telemetry on environments
+
+To turn off having telemetry sent from environments, follow the instructions above for turning on telemetry, but set the [!INCLUDE [azure-appinsights-name](../includes/azure-appinsights-name.md)] connection string or instrumentation key to a blank value.
+
 ## Troubleshooting telemetry setup
 
-If you set up telemetry but don't get any data in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], then take a look at these common mistakes that others have made.
+If you set up telemetry but don't get any data in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], then take a look at these common mistakes that others made.
 
-1. Check that you have used the correct [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string. 
+1. Check that you used the correct [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] connection string. 
 1. Check that you enabled telemetry in the correct environment.
-1. (Only for on-premises) Check that network traffic from [!INCLUDE [prod_short](../includes/prod_short.md)]  to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] isn't blocked by a firewall or some software that is filtering outgoing calls to the ingestion endpoint. 
-1. (Only for on-premises) Similar to checking network traffic, check if you block DNS to lookup Azure resources. 
+1. (Only for on-premises) Check that network traffic from [!INCLUDE [prod_short](../includes/prod_short.md)] to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] isn't blocked by a firewall or some software that is filtering outgoing calls to the ingestion endpoint. 
+1. (Only for on-premises) Similar to checking network traffic, check if you block domain name service (DNS) to lookup Azure resources. 
 1. (Only for on-premises) Did you restart [!INCLUDE [server](../developer/includes/server.md)] unstances after enabling telemetry?
-
 
 ## Assign a telemetry ID to users
 
-To help troubleshooting problems experienced by a given Business Central user, you can assign the user a random ID that will be included in traces logged in Application Insights. This ID is a special GUID that's only used for telemetry. It will appear in the `user_Id` column in certain events, but not all. Specifically, it's used only in telemetry that the Business Central service/server emits in the context of a user session. So, for example, telemetry that the Business Central Web server emits won't include this ID.
+To help troubleshooting problems experienced by a given [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user, you can assign the user a random ID to be included in traces logged in Application Insights. This ID is a special globally unique identifier (GUID) that's only used for telemetry. It appears in the `user_Id` column in certain events, but not all. 
 
-The telemetry ID for a user is initially set by the [!INCLUDE [prod_short](../includes/prod_short.md)] server when the user is created. To change, or clear the telemetry ID on a user, set the **Telemetry ID** field on the **User Card** for the user in Business Central:
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24 and later, the server and the browser components align on the GUIDs logged to the **user_Id** column in the *traces* and *pageViews* tables. For versions before version 24, only events logged by the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server emit in the context of a user session. 
+
+The [!INCLUDE [prod_short](../includes/prod_short.md)] server initially sets the telemetry ID for a user when the user is created. To change, or clear the telemetry ID on a user, set the **Telemetry ID** field on the **User Card** for the user in Business Central:
 
 1. Sign in to [!INCLUDE [prod_short](../includes/prod_short.md)] using an administrator account.
 2. Choose the ![Lightbulb that opens the Tell Me feature.](../developer/media/search_small.png "Tell me what you want to do") icon, enter **Users**, and then choose the related link.
@@ -156,16 +163,18 @@ The telemetry ID for a user is initially set by the [!INCLUDE [prod_short](../in
 > [!NOTE]
 > We recommend that a telemetry ID is assigned to all users to make it possible to troubleshoot situations that happened in the past using telemetry.
 
+For more information on how to query the user_Id in telemetry, see [KQL example - following telemetry events for a user](./telemetry-analyze-with-kql.md#kql-example---following-telemetry-events-for-a-user).
+
 ## Cleaning up settings
 
-If the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource is tied to your partner account, and you end the relationship with a customer where you have set up telemetry based on your account's instrumentation key, you must remove the instrumentation key while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
+If the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource is tied to your partner account, and you end the relationship with a customer where telemetry is set up based on your account's instrumentation key, you must remove the instrumentation key while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-It is also considered good practice to change all user telemetry IDs at the end of the relationship with the customer. This will remove traceability to users for all data in the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
+It's good practice to change all user telemetry IDs at the end of the relationship with the customer. This practice removes traceability to users for all data in the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
 
-## See Also
+## See also
 
 [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)  
-[Monitoring Long Running SQL Queries](monitor-long-running-sql-queries-event-log.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  
-[Monitoring and Analyzing With Telemetry](telemetry-overview.md)  
-[Telemetry FAQ](telemetry-faq.md)
+[Analyze Telemetry with KQL](telemetry-analyze-with-kql.md)  
+[Telemetry FAQ](telemetry-faq.md)  
+[Telemetry overview](telemetry-overview.md)  

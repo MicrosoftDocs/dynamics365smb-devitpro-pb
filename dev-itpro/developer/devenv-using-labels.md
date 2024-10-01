@@ -1,7 +1,7 @@
 ---
 title: Working with labels
 description: Labels syntax and usage in Business Central.
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.date: 09/20/2023
 ms.topic: conceptual
 ms.author: brobledodiaz
@@ -81,7 +81,7 @@ Page labels are defined by a `label(Name)` control inside the `area(Content)` pa
 label(BeforeSetupCloseMessage)
 {
     ApplicationArea = Basic, Suite;
-    Caption = 'If you still need to change setup data, don't change the profile.'
+    Caption = 'If you still need to change setup data, don''t change the profile.'
 }
 ```
 

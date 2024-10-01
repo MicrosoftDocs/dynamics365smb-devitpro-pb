@@ -2,10 +2,10 @@
 title: "XmlNamespaceManager.LookupPrefix(Text, var Text) Method"
 description: "Finds the prefix declared for the given namespace URI."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,7 +41,7 @@ The matching prefix. If there is no mapped prefix, the method returns an empty s
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [XmlNamespaceManager Data Type](xmlnamespacemanager-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

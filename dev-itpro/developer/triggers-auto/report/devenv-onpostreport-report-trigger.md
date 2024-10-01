@@ -1,17 +1,17 @@
 ---
-title: "OnPostReport (Report) Trigger"
+title: "OnPostReport (Report) trigger"
 description: "Runs after a report is run."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnPostReport (Report) Trigger
+# OnPostReport (Report) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs after a report is run.
@@ -48,7 +48,7 @@ Create the following global text constant variable.
 
 Because this trigger is run before the End Write Transaction, you can also give the user the opportunity to roll back changes to the database by leaving the report with the [Quit Method \(Report, XMLport\)](../../methods-auto/report/reportinstance-quit-method.md).  
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

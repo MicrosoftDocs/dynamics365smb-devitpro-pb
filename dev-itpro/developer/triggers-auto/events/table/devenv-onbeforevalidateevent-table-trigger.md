@@ -1,17 +1,17 @@
 ---
-title: "OnBeforeValidateEvent (Table) Trigger Event"
+title: "OnBeforeValidateEvent (Table) trigger event"
 description: "Executed before a field is validated when its value has been changed."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnBeforeValidateEvent (Table) Trigger Event
+# OnBeforeValidateEvent (Table) trigger event
 > **Version**: _Available or changed with runtime version 1.0._
 
 Executed before a field is validated when its value has been changed.
@@ -43,6 +43,6 @@ The number of the field that raises the event.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../../devenv-get-started.md)  
 [Developing Extensions](../../../devenv-dev-overview.md)   

@@ -2,10 +2,10 @@
 title: "Dialog.Close() Method"
 description: "Closes a dialog window that has been opened by the OPEN method."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -34,7 +34,7 @@ An instance of the [Dialog](dialog-data-type.md) data type.
 
 If `Close` is used on a dialog window that is not open, a run-time error will occur. The dialog windows of an object are automatically closed when the object terminates. 
 
-## See Also
+## Related information
 [Dialog Data Type](dialog-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

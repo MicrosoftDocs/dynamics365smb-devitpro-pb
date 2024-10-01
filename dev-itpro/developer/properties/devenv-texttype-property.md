@@ -1,11 +1,11 @@
 ---
-title: "TextType Property"
+title: "TextType property"
 description: "Sets the type of text this element or attribute contains."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,7 +19,7 @@ Sets the type of text this element or attribute contains.
 -   Xml Port Text Attribute
 -   Xml Port Text Element
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -35,6 +35,6 @@ Sets the type of text this element or attribute contains.
 TextType = BigText;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

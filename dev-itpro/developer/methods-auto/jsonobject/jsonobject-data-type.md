@@ -1,16 +1,16 @@
 ---
-title: "JsonObject Data Type"
+title: "JsonObject data type"
 description: "Is a container for any well-formed JSON object."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject Data Type
+# JsonObject Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is a container for any well-formed JSON object. A default JsonObject contains an empty JSON object.
@@ -80,6 +80,6 @@ An unitialized variable of JsonObject type represents an empty JSON object. Give
 jsonObject.Keys.Count =  0
 ```
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

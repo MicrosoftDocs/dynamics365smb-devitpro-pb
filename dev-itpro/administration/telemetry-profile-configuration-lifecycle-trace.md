@@ -3,7 +3,7 @@ title: Analyzing profile configuration lifecycle telemetry
 description: Learn about the telemetry for configuration profiles using the in-client designer.  
 author: jswymer
 ms.author: jswymer
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.date: 12/18/2023
 ms.custom: bap-template
@@ -225,7 +225,7 @@ Occurs when a new profile was created successfully.
 |[See common custom dimensions](#other)||
 
 <!--
-{"component":"Dynamics 365 Business Central Server","environmentType":"Production","eventId":"LC0052","telemetrySchemaVersion":"0.1","componentVersion":"21.0.45947.0","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","profileAppId":"00000000-0000-0000-0000-000000000000","profileId":"MY-NEW-PROFILE"}
+{"component":"Dynamics 365 Business Central Server","environmentType":"Production","eventId":"LC0052","telemetrySchemaVersion":"0.1","componentVersion":"21.0.45947.0","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","profileAppId":"00000000-0000-0000-0000-000000000000","profileId":"MY-NEW-PROFILE"}
 
 -->
 

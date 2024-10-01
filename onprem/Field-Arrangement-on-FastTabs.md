@@ -1,10 +1,6 @@
 ---
 title: "Field Arrangement on FastTabs"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a25d7a44-f769-4415-b52e-6d8350f049d3
 caps.latest.revision: 9

@@ -1,11 +1,11 @@
 ---
-title: "ObsoleteReason Property"
+title: "ObsoleteReason property"
 description: "Specifies why the object has been marked as Pending in the ObsoleteState property."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,8 +20,8 @@ Specifies why the object has been marked as Pending in the ObsoleteState propert
 -   Page Custom Action
 -   Page File Upload Action
 -   Table
--   Table Field
--   Table Key
+-   Table field
+-   Table key
 -   Codeunit
 -   Enum Type
 -   Enum Value
@@ -65,7 +65,7 @@ ObsoleteReason = 'Not Needed';
 
 Use this property to inform developers about an object or element that will become obsolete in time or is already obsolete. Use the [ObsoleteTag Property](devenv-obsoletetag-property.md) to specify additional information which can be valuable to other developers.
 
-## See Also
+## Related information
 
 [ObsoleteState](devenv-obsoletestate-property.md)  
 [ObsoleteTag](devenv-obsoletetag-property.md)  

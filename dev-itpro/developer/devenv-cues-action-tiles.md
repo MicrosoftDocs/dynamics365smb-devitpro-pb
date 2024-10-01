@@ -1,7 +1,7 @@
 ---
 title: "Creating and Customizing Cues"
 description: Get an overview of cues and action tiles and the tasks involved in customizing them on Role Centers.
-ms.date: 04/01/2021
+ms.date: 07/03/2024
 ms.topic: conceptual
 author: jswymer
 ---
@@ -67,7 +67,7 @@ The first thing that you must do is to create a table that contains fields that 
 
     For each Cue that you want to display on the page, you must add a **Field** control in the table object. When you add the **Field** control, specify the following properties:  
   
-    - Set the [Data Type property](./properties/devenv-properties.md) to **Decimal**, **Integer**, or **Text**, depending on the type of data the Cue will display. 
+    - Set the [Data Type property](./properties/devenv-properties.md) to **Decimal** or **Integer**, depending on the type of data the Cue will display. 
 
     - Set the [FieldClass property](properties/devenv-fieldclass-property.md) to **FlowField** or **Normal**.  
   
@@ -146,7 +146,7 @@ page 50105 SalesInvoiceCuePage
 {
     PageType = CardPart;
     SourceTable = SalesInvoiceCueTable;
-
+    Caption = 'Sales Invoices Cues';
     layout
     {
         area(content)
@@ -155,7 +155,7 @@ page 50105 SalesInvoiceCuePage
             {
                 Caption='Sales Invoices';
                 // CuegroupLayout=Wide;
-                field(SalesCue; SalesInvoicesOpen)
+                field(SalesCue; Rec,SalesInvoicesOpen)
                 {
                     Caption='Open';
                     DrillDownPageId="Sales Invoice List";
@@ -220,6 +220,7 @@ cuegroup(SalesActionontainer)
 ```
 
 ### Styling an Action tile
+
 You can use the [Image property](properties/devenv-image-property.md) on an `action` control to change the look of the Action tile. For Action tiles, the `Image` property supports several standard values that start with the text `Tile`, such as `TileNew` and `TileYellow`. These values change the Action's background color and icon as follows:
 
 -   A value that has the format `Tile[color]` will set the Action tile to use the circle icon and a background that is specified by `[color]`. For example, `TileBlue` will display a circle icon in a blue background.

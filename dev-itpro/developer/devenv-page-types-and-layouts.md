@@ -3,8 +3,8 @@ title: Page types and layouts
 description: Understanding page types to be able to create good user experience in Business Central.
 author: jacobwj
 ms.custom: bap-template
-ms.date: 11/24/2022
-ms.reviewer: solsen
+ms.date: 04/26/2024
+ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: conceptual
 ---
@@ -235,11 +235,11 @@ Given the size of the screen where the dialog appears, more or less of the page 
 >
 > In version 24 (runtime 14) and earlier, the [Importantance* property](properties/devenv-importance-property.md) is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. The field also can't be promoted in the header of a collapsed FastTab. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
  
-## See Also
+## See also
 
-[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
-[PageType Property](properties/devenv-pagetype-property.md)  
-[Actions Overview](devenv-actions-overview.md)  
+[Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  
+[PageType property](properties/devenv-pagetype-property.md)  
+[Actions overview](devenv-actions-overview.md)  
 [Use Designer](devenv-inclient-designer.md)  
-[Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  
+[Adding a FactBox to a page](devenv-adding-a-factbox-to-page.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  

@@ -1,16 +1,16 @@
 ---
-title: "HttpRequestMessage Data Type"
+title: "HttpRequestMessage data type"
 description: "Represents an HTTP request message."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpRequestMessage Data Type
+# HttpRequestMessage Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents an HTTP request message.
@@ -40,6 +40,6 @@ The following methods are available on instances of the HttpRequestMessage data 
 > [!NOTE]  
 > For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data. 
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

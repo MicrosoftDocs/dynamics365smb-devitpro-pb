@@ -1,17 +1,17 @@
 ---
-title: "OnBeforeOpen (Query) Trigger"
+title: "OnBeforeOpen (Query) trigger"
 description: "Runs before a query is run and the dataset is generated."
 ms.author: solsen
-ms.date: 03/11/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnBeforeOpen (Query) Trigger
+# OnBeforeOpen (Query) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs before a query is run and the dataset is generated.
@@ -46,6 +46,6 @@ The following code applies a filter on the Quantity column of the query by calli
 currQuery.SetFilter(Quantity, '>50');  
 ```
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

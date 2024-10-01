@@ -1,13 +1,15 @@
 ---
-title: (v1.0) "OpenAPI Specification"
-description: (v1.0) "OpenAPI Specification for Dynamics 365 Business Central"
+title: (v1.0) OpenAPI specification
+description: (v1.0) OpenAPI specification for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 10/23/2019
+ms.date: 05/01/2024
 ms.topic: article
 ms.author: solsen
+ms.custom: evergreen
+ms.reviewer: solsen
 ---
 
-# OpenAPI Specification for Dynamics 365 Business Central (v1.0)
+# OpenAPI specification for Dynamics 365 Business Central (v1.0)
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -54,10 +56,7 @@ To run SwaggerUI locally, node.js can be used to serve the SwaggerUI, by followi
     node BC_OAS.js
     ```
 6) Browse to `https://localhost:3000`.
-7) To use **Try it out** authorization in SwaggerUI, a Microsoft Entra app must be created. [Follow these steps to create a Microsoft Entra app, with access to Business Central](../../developer/devenv-develop-connect-apps.md#setting-up-microsoft-entra-id-based-authentication). Copy and paste the client ID from the Microsoft Entra app into the authorization dialog of SwaggerUI.
-
-> [!NOTE]  
-> For OAuth2 testing purposes, a multi-tenant Microsoft Entra app has been created. Admin consent is needed. Client ID : 060af3ac-70c3-4c14-92bb-8a88230f3f38.
+7) To use **Try it out** authorization in SwaggerUI, a Microsoft Entra app must be created. [Follow these steps to create a Microsoft Entra app, with access to Business Central](../../developer/devenv-develop-connect-apps.md#set-up-microsoft-entra-id-based-authentication). Copy and paste the client ID from the Microsoft Entra app into the authorization dialog of SwaggerUI.
 
 ## See Also 
 

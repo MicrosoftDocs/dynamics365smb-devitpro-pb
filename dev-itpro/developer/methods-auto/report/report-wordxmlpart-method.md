@@ -2,10 +2,10 @@
 title: "Report.WordXmlPart(Integer [, Boolean]) Method"
 description: "Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -66,7 +66,7 @@ end;
 > The first parameter in WordXmlPart is an integer which represents the object ID of the report. To code robustly, never supply the object ID directly in your code. Instead, use the :: operator as illustrated in the example above. With this technique, if the report does not exist, you'll get a compile time error instead of a runtime error. 
 
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

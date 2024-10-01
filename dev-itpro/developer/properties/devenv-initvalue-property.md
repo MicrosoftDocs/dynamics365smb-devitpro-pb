@@ -1,11 +1,11 @@
 ---
-title: "InitValue Property"
+title: "InitValue property"
 description: "Sets the initial value of this field when a user creates a new record."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets the initial value of this field when a user creates a new record.
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -34,7 +34,7 @@ This attribute is only important if you create the record in a window or by usin
 > [!NOTE]  
 > For a new field added in the table, values are initialized by default according to the data type or they are initialized by the value given in the `InitValue` property for all new records. If you want to change the `InitValue` for existing records, you have to specify it in the code and run an upgrade because the value you've set in the `InitValue` property for the new record doesn't set the values for already existing records.
   
-## See Also
+## Related information
 
 [Clear Method](../methods-auto/system/system-clear-joker-method.md)  
 [ClearAll Method](../methods-auto/system/system-clearall-method.md)

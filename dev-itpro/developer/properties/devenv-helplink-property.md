@@ -1,11 +1,11 @@
 ---
-title: "HelpLink Property"
+title: "HelpLink property"
 description: "Specifies the help link to show when the user presses Help in the UI."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -28,7 +28,7 @@ Specifies the help link to show when the user presses Help in the UI.
 HelpLink = 'https://www.my-help-link-page.com';
 ```
 
-## See Also
+## Related information
 
 [Page Object](../devenv-page-object.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../devenv-adding-help-links-from-pages-tables-xmlports.md)

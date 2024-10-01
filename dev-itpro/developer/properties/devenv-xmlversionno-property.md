@@ -1,11 +1,11 @@
 ---
-title: "XmlVersionNo Property"
+title: "XmlVersionNo property"
 description: "Set which version of XML the XML document conforms to."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -18,7 +18,7 @@ Set which version of XML the XML document conforms to. Two options are available
 ## Applies to
 -   Xml Port
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -38,6 +38,6 @@ XMLVersionNo = V10;
 
 The XML version number is inserted into the XML document as the XML declaration.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

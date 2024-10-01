@@ -5,6 +5,7 @@ author: SusanneWindfeldPedersen
 ms.date: 08/31/2023
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Using request pages with XMLports

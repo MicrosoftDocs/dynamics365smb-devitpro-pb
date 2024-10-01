@@ -4,6 +4,7 @@ ms.date: 12/21/2023
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 --- 
 
 # Implementation tips for gestures

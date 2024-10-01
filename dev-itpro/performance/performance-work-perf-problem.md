@@ -1,7 +1,7 @@
 ---
-title: "How to work with a performance problem"
+title: How to work with a performance problem
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
-ms.date: 05/24/2023
+ms.date: 05/31/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 author: KennieNP
@@ -13,7 +13,7 @@ What do you do if users complain that "it's slow"? In this section, we describe 
 
 ## A generic performance tuning process
 
-Before you get started on solving a performance-tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of the "slow" operations with users. Learning about the user's expectations is key when determining when the performance tuning effort has been successful (or if the expectations are unrealistic). 
+Before you get started on solving a performance-tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of the "slow" operations with users. Learning about the user's expectations is key when determining when the performance tuning effort is successful (or if the expectations are unrealistic). 
 
 You also need to measure how the system performs on the given operation before starting to change anything. This task is sometimes called "establishing a baseline." To define baselines for performance, and to test whether new code or extensions introduce a performance regression, you can use the [Performance Toolkit](../developer/devenv-performance-toolkit.md) extension. The extension makes it easier to simulate and compare user experiences to your baseline. The following are examples of when the extension can help:  
 
@@ -32,14 +32,14 @@ Continue until the "slow" operations are comparable to the established baseline.
 
 ## Performance analysis tools
 
-Business Central comes with a number of tools that can be used to analyze a performance problem. In the following, you can read about the pros and cons of the different performance tools described below.
+Business Central comes with tools that can be used to analyze a performance problem. In the following, you can read about the pros and cons of the different performance tools described below.
 
 |Performance tool | Properties |
 |---------------------------------|-------------|
 | Page inspector | Good to troubleshoot performance of a single page. <br> No need to enable this (always available). <br> End users can run the tool. <br> Data collection must happen live.  | 
 |In-client performance profiler | Good for troubleshooting a performance scenario in the web client. <br>No developer required to run the tool.<br>For more information, see [In-client Performance Profiler overview](../administration/performance-profiler-overview.md). | 
 |Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Little performance impact to have turned on always. <br> Telemetry must be enabled before the performance issue occurs. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
-|Verbose telemetry | Will give you all SQL queries for the session where you repro the issue. <br> Will slow down the system while running. <br> Can inject much data into Azure Application Insights. <br> Data collection must happen live. |
+|Verbose telemetry | Will give you all SQL queries for the session where you repro the issue. <br> Slows down the system while running. <br> Can inject much data into Azure Application Insights. <br> Data collection must happen live. |
 |Database performance pages|The pages _Database Missing Indexes_ and _Database Wait Statistics_ show insights into database performance and how to fix it. |
 | AL profiler | Good to troubleshoot performance of a scenario. <br> Detailed information on where in the code the time is spent. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. <br>For more information, see [AL Profiler](../developer/devenv-al-profiler-overview.md) |
 
@@ -65,7 +65,7 @@ For more specific information on how to start and use the in-client Performance 
 When analyzing the result, you have three options:
 
 1. Look at _Active Apps_ to see in which app time is spent (did you recently install an app?).
-2. Click on an app to see how time is distributed over the apps/extensions that have code running in the app.
+2. Select an app to see how time is distributed over the apps/extensions that have code running in the app.
 3. Go to _Time Spent by Application Object_ to see the distribution of time spent in the AL call tree (this is an advanced option).
 4. Download the generated profile content and share it with a developer. The profile file can be viewed in Visual Studio Code with the standard AL Profiler editor. From there, you can use existing options to access the AL code that was slow.
 
@@ -79,8 +79,8 @@ In the following, you can read about ways where telemetry can help troubleshoot 
 
 | Area | Telemetry | Why |
 |---------------------------|------------|------------|
-| Some page is slow (and it uses Page Background Tasks) | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Each page background task will open a new session. Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions. | 
-| Sign-in      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions. | 
+| Some page is slow (and it uses Page Background Tasks) | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Each page background task opens a new session. Any expensive action in the OnCompanyOpen trigger slows down opening new sessions. | 
+| Sign-in      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Any expensive action in the OnCompanyOpen trigger slows down opening new sessions. | 
 | Something was slow during this period of time | [Company lifecycle signal](../administration/telemetry-company-lifecycle-trace.md) | Check whether a copy-company operation was running while the performance issue occurred. |
 | Something was slow during this period of time | [Database locks signal](../administration/telemetry-database-locks-trace.md) | Maybe the performance issue was because of locking in the database. |
 | Suddenly the XYZ page is slow | [Extension lifecycle signal](../administration/telemetry-extension-lifecycle-trace.md) | Maybe an extension was installed that interferes with the page in question.|
@@ -119,6 +119,7 @@ Read more about how to use the AL profiler to troubleshoot performance here [AL 
 
 
 ## Example - How to deal with a performance problem in a report from an AppSource extension
+
 This example illustrates how you can use the performance tuning process and telemetry to deal with a performance problem in a report from an AppSource extension.
 
 - Together with the tenant administrator/customer, you need to define "slow" and what the acceptable rendering time will be. 
@@ -131,12 +132,12 @@ This example illustrates how you can use the performance tuning process and tele
 
 
 
-## See Also
+## See also
 
-[Performance Overview](performance-overview.md)  
-[Performance Topics For Developers](performance-developer.md)  
+[Performance overview](performance-overview.md)  
+[Performance topics For developers](performance-developer.md)  
 [Performance tips for business users](performance-users.md)  
-[How Application Configurations Affect Performance](performance-application.md)  
-[Performance Online](performance-online.md)  
-[Performance of On-Premises Installations](performance-onprem.md)  
+[How application configurations affect performance](performance-application.md)  
+[Performance online](performance-online.md)  
+[Performance of on-premises installations](performance-onprem.md)  
 [Moving from OnCompanyOpen](../developer/devenv-oncompanyopencompleted.md)  

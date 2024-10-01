@@ -1,10 +1,6 @@
 ---
 title: "Defining the Report Dataset"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1c928d15-a4d6-4b64-a2a1-99ac57b95cdd
 caps.latest.revision: 3

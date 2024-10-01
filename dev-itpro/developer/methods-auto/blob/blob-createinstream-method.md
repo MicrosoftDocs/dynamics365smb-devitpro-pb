@@ -2,10 +2,10 @@
 title: "Blob.CreateInStream(InStream [, TextEncoding]) Method"
 description: "Creates an InStream object for a binary large object (BLOB)."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,7 +44,7 @@ MyTable.MyBLOBfield.CreateInStream(MyStream, TextEncoding::WINDOWS);
 ```  
   
  For more information, see [File Handling and Text Encoding](../../devenv-file-handling-and-text-encoding.md).  
-## See Also
+## Related information
 [Blob Data Type](blob-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -4,7 +4,7 @@ description: Test your extensions for performance regressions during the develop
 author: bholtorf
 ms.custom: bap-template
 ms.date: 02/21/2024
-ms.reviewer: jswymer
+ms.reviewer: bholtorf
 
 ms.search.form: 149000, 149001, 149003, 149004, 149005, 149006, 149007, 149008, 149009
 ms.topic: conceptual
@@ -49,7 +49,7 @@ In the following table, you find examples of scenarios for each persona where th
 | Supporter | Analyze performance issues due to locking or deadlocks | Similar to the developer scenario for concurrency testing. If you're lucky, scenario codeunits are already available on GitHub. |
 
 > [!TIP]
-> Get started with [understanding busines processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
+> Get started with [understanding business processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
 
 ## How can I answer the question "Can Business Central handle a specific load for prospect customer"?
 

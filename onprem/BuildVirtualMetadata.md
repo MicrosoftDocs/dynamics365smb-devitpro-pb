@@ -1,11 +1,7 @@
 ---
 title: "BuildVirtualMetadata"
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bbd6a403-863d-44cb-998c-895b4a860ece
 caps.latest.revision: 8

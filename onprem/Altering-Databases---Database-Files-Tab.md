@@ -1,10 +1,6 @@
 ---
 title: "Altering Databases - Database Files Tab"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0ea30975-b1c4-4ac1-8497-2cc1891c3221
 caps.latest.revision: 7

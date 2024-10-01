@@ -2,10 +2,10 @@
 title: "System.ClearLastError() Method"
 description: "Removes the last error message from memory."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -31,7 +31,7 @@ Removes the last error message from memory.
 You can use the [GetLastErrorText Method](../../methods-auto/system/system-getlasterrortext--method.md) to determine whether an error has occurred and to see the text in the last error message that was generated. You can then use the ClearLastError method to remove the last error message from memory. If you subsequently call the [GetLastErrorText Method](../../methods-auto/system/system-getlasterrortext--method.md), an empty string is returned. 
 
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

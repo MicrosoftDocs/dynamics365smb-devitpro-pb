@@ -1,11 +1,11 @@
 ---
-title: "MaximumDocumentCount Property"
+title: "MaximumDocumentCount property"
 description: "Sets the maximum document count when generating a report by using WordMergerDataItem."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -36,7 +36,7 @@ At runtime, this property will override the hard limit that is set by the **Defa
 
 For more information on report limits, see [Report limits](../devenv-report-object.md#report-limits).
 
-## See Also  
+## Related information  
 
 [Report Properties](devenv-report-properties.md)  
 [Report Object](../devenv-report-object.md)  

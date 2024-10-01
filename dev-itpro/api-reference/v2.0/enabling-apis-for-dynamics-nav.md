@@ -2,10 +2,11 @@
 title: Enabling APIs for Microsoft Dynamics 365 Business Central
 description: Describing the steps you must go through to enable access to the APIs.
 author: SusanneWindfeldPedersen
-ms.custom: na
+ms.custom: how-to
 ms.date: 02/07/2024
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Enabling the APIs for Business Central

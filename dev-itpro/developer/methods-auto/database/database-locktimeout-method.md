@@ -2,10 +2,10 @@
 title: "Database.LockTimeout([Boolean]) Method"
 description: "Determines whether the lock time-out setting is set to On."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,7 +44,7 @@ This method has been designed specifically for use in long-running processes tha
 
 When the AL code has finished running, the default setting is used again. This method does not change the duration of a lock time-out.  
 
-## See Also
+## Related information
 
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

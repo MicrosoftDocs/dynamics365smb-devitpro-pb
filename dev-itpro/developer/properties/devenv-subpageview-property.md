@@ -1,11 +1,11 @@
 ---
-title: "SubPageView Property"
+title: "SubPageView property"
 description: "Sets the table view for a subpage."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -48,7 +48,7 @@ SubPageView = sorting("No.") where (City=filter('Miami'));
 
 For an example of a page part using the `SubPageView` property, see [Adding a FactBox to a Page](../devenv-adding-a-factbox-to-page.md).
 
-## See Also 
+## Related information 
  
 [Properties](devenv-properties.md)  
 [SubPageLink Property](devenv-subpagelink-property.md)  

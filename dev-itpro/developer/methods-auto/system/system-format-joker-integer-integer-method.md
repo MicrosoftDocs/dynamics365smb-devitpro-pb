@@ -2,10 +2,10 @@
 title: "System.Format(Any [, Integer] [, Integer]) Method"
 description: "Formats a value into a string."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -57,7 +57,7 @@ The *FormatNumber* parameter specifies the format that you want to use. The basi
 
 For more information, see [Formatting Values, Dates, and Time](../../devenv-format-property.md)).
 
-## See also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get started with AL](../../devenv-get-started.md)  

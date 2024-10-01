@@ -1,11 +1,11 @@
 ---
-title: "OrderBy Property"
+title: "OrderBy property"
 description: "Sorts table fields in the page view in ascending or descending order."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -84,7 +84,7 @@ The following is the Order By clause in SQL that corresponds to the OrderBy prop
 OrderBy = ascending (Name,Quantity);  
 ```
 
-## See Also  
+## Related information  
 
 [Query Properties](devenv-query-properties.md)  
 [View Properties](devenv-view-properties.md)

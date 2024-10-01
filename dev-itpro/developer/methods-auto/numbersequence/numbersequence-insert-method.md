@@ -2,10 +2,10 @@
 title: "NumberSequence.Insert(Text [, BigInteger] [, BigInteger] [, Boolean]) Method"
 description: "Creates a number sequence in the database, with the given parameters."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,7 +47,7 @@ The following example creates the number sequence `MyNumberSequence` that starts
 ```al
 NumberSequence.Insert('MyNumberSequence', 0, 10, false);
 ```
-## See Also
+## Related information
 [NumberSequence Data Type](numbersequence-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

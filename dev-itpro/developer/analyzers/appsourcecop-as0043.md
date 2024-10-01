@@ -2,10 +2,10 @@
 title: "AppSourceCop Error AS0043"
 description: "The clustered key must not be deleted."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -18,7 +18,7 @@ The clustered key must not be deleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-It is not allowed to rename or remove the clustered key in a table. For more information on table keys, see [Table Keys](../devenv-table-keys.md).
+It's not allowed to rename or remove the clustered key in a table. For more information on table keys, see [Table Keys](../devenv-table-keys.md).
 
 > [!NOTE]  
 > This rule validates tables independently of their Accessibility or ObsoleteState, because tables are always used when synchronizing the schema defined in the extension to the database.
@@ -99,7 +99,7 @@ table 50100 MyTable
 
 In version 2.0 of the extension, the clustered key has been renamed from `ClusteredKey` to `NewClusteredKey`. This change is detected as a removal of `ClusteredKey` and *is not allowed by the synchronization engine*.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -2,8 +2,7 @@
 title: "Database.SelectLatestVersion() Method"
 description: "Forces the latest version of the database to be used."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/15/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -34,7 +33,7 @@ This method makes sure that the data displayed is the most current data in the d
 > Clearing the cache and reading data directly from the database adversely affects performance.  
   
 
-## See Also
+## Related information
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

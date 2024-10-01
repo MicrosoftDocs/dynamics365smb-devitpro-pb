@@ -1,11 +1,11 @@
 ---
-title: "FieldClass Property"
+title: "FieldClass property"
 description: "Sets the class of the field."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,9 +16,9 @@ author: SusanneWindfeldPedersen
 Sets the class of the field.
 
 ## Applies to
--   Table Field
+-   Table field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -38,7 +38,7 @@ FieldClass = FlowFilter;
 
 There are three classes of fields: Normal, FlowFields, and FlowFilters. For more information, see [FlowFields](../devenv-flowfields.md) and [FlowFilter Overview](../devenv-flowfilter-overview.md).  
   
-## See Also
+## Related information
   
 [Properties](devenv-properties.md)   
  

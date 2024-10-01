@@ -1,16 +1,16 @@
 ---
-title: "NumberSequence Data Type"
+title: "NumberSequence data type"
 description: "Is a complex data type for creating and managing number sequences in the database."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# NumberSequence Data Type
+# NumberSequence Data type
 > **Version**: _Available or changed with runtime version 4.0._
 
 Is a complex data type for creating and managing number sequences in the database.
@@ -35,7 +35,7 @@ The following methods are available on the NumberSequence data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## See Also  
+## Related information  
 [Using number sequences](../../devenv-number-sequences.md)  
 [Get atarted with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)  

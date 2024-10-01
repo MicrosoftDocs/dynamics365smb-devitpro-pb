@@ -2,10 +2,10 @@
 title: "System.GetLastErrorCallStack() Method"
 description: "Gets the call stack from where the last error occurred."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -65,7 +65,7 @@ When you run codeunit 50002, the message window displays the following:
   
 **TestErrors2\(CodeUnit 50002\).OnRun\(Trigger\) line 2**  
   
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

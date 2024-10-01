@@ -3,7 +3,7 @@ title: Deprecated features in the client, server, database
 description: Describes the features that have been removed or replaced in the platform components of Business Central.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: jswymer
+ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.date: 04/02/2024
 ms.custom: bap-template
@@ -88,6 +88,13 @@ This article describes the features that are up for removal or that have been re
 
 [!INCLUDE[soap_deprecacation](../includes/soap_deprecation_note.md)]
 
+### <a name="views"></a>Legacy views on list pages (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Legacy views are list views that were created by developers in previous releases by placing them on the Role Center page object. In April 2019 release wave, we introduced a new, modern way of creating views. Starting in version 24, views must be created using the modern way. Legacy views will no longer be supported and won't display on list pages. Learn more at [Migrating from Legacy Views to Modern Views](../developer/devenv-views-legacy.md).|
+
+
 ## Changes in 2023 release wave 2 (version 23.0)
 
 ### <a name="databasehints"></a>Server settings for database hints FORCEORDER and LOOPJOIN (warning)
@@ -114,13 +121,6 @@ This article describes the features that are up for removal or that have been re
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 24, this is no longer possible. |
-
-### <a name="views"></a>Legacy views on list pages (removal)
-
-|Removed or Replaced? |Why?|
-|---------|---------|
-|Replaced | Legacy views are list views that were created by developers in previous releases by placing them on the Role Center page object. In April 2019 release wave, we introduced a new, modern way of creating views. Starting in version 23, views must be created using the modern way. Legacy views will no longer be supported and won't display on list pages. Learn more at [Migrating from Legacy Views to Modern Views](../developer/devenv-views-legacy.md).|
-
 
 ### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (removal)
 

@@ -5,6 +5,7 @@ ms.author: solsen
 ms.date: 06/23/2023
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
  
 # APIPublisher Property (Page)
@@ -28,7 +29,7 @@ APIPublisher = 'contoso';
 > The property **APIPublisher** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](../devenv-api-pagetype.md).
 
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Page Object](../devenv-page-object.md)  

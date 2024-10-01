@@ -1,16 +1,17 @@
 ---
-title: Create dataverseEntityChanges
+title: (Business Central Dataverse API) Create dataverseEntityChanges
 description: Creates a dataverse entity change object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/25/2022
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Create dataverseEntityChanges
+# (Business Central Dataverse API) Create dataverseEntityChanges
 
 Creates a dataverse entity change in [!INCLUDE [prod_short](../../includes/prod_short.md)].
 

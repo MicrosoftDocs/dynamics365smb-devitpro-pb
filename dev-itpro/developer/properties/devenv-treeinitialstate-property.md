@@ -1,11 +1,11 @@
 ---
-title: "TreeInitialState Property"
+title: "TreeInitialState property"
 description: "Specifies the initial state of the records in a repeater control which is displayed as a tree structure."
 ms.author: solsen
-ms.date: 02/26/2024
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -18,7 +18,7 @@ Specifies the initial state of the records in a repeater control which is displa
 ## Applies to
 -   Page Group
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -66,7 +66,7 @@ repeater(Control1)
 
 ```
 
-## See Also
+## Related information
 
 [ShowAsTree Property](devenv-showastree-property.md)  
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  

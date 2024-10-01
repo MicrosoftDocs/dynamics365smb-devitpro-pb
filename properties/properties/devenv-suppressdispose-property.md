@@ -1,10 +1,8 @@
 ---
 title: "SuppressDispose Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 96935e30-d516-4997-b47e-f693b8e5718a
 caps.latest.revision: 4

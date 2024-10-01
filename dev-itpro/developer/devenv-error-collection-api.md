@@ -6,7 +6,7 @@ ms.date: 12/25/2023
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 
 # Collectible errors API
