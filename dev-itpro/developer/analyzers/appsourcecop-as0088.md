@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0088"
 description: "Objects that can be referenced by ID and which have been published must not be deleted."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -60,7 +60,7 @@ codeunit 50121 Foo_MyNewCodeunit
 In version 3.0 of the extension, codeunit 50120 has been deleted. This is okay, because codeunit 50120 previously had been marked with `ObsoleteState = Pending` informing developers to use "50121 Foo_MyNewCodeunit" instead.
 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

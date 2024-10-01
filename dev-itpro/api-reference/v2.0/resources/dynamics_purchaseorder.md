@@ -99,7 +99,7 @@ The response has no content; the response code is 204.
 |totalAmountExcludingTax|decimal|The total amount excluding tax. Read-Only.  |
 |totalTaxAmount|decimal|The total tax amount for the purchase order. Read-Only.|
 |totalAmountIncludingTax|decimal|The total amount including tax. Read-Only.  |
-|fullyReceived|boolean|Specifies whether the purchase order has been fully recieved.|
+|fullyReceived|boolean|Specifies whether the purchase order has been fully received.|
 |status|NAV.purchaseOrderEntityBufferStatus|The status of the purchase order. It can be "Draft", "In Review" or "Open".|
 |lastModifiedDateTime|datetime|The last datetime the purchase order was modified. Read-Only.|
 

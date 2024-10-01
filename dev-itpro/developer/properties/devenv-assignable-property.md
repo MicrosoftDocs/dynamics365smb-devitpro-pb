@@ -1,8 +1,8 @@
 ---
-title: "Assignable Property"
+title: "Assignable property"
 description: "Sets whether the permission set can be assigned to a user."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ permissionset 50100 MyPermissionSet
 
 Assignable permission sets are permissions that an admin can assign to users in [!INCLUDE[prod_short](../../includes/prod_short.md)], using the **Permission Sets** page.
 
-## See Also  
+## Related information  
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

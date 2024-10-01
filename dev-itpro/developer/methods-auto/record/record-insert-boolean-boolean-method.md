@@ -2,7 +2,7 @@
 title: "Record.Insert(Boolean, Boolean) Method"
 description: "Inserts a record into a table."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -68,7 +68,7 @@ end;
 
 No run-time error occurs if customer 1120 already exists.
 
-## See Also
+## Related information
 
 [SystemId Field](../../devenv-table-system-fields.md#systemid)  
 [Record Data Type](record-data-type.md)  

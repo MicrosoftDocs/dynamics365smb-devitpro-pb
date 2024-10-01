@@ -1,8 +1,8 @@
 ---
-title: "Report Data Type"
+title: "Report data type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report Data Type
+# Report Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is used to display, print, or process information from a database.
@@ -86,7 +86,7 @@ The following methods are available on instances of the Report data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## See Also  
+## Related information  
 [Report object properties (AL Language Reference)](../../properties/devenv-report-properties.md)   
 [Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](../../properties/devenv-report-property-overview.md)   
 [Report overview](../../devenv-reports.md)   

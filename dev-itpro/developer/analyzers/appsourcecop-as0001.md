@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0001"
 description: "Tables and table extensions that have been published must not be deleted."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -28,7 +28,7 @@ This rule validates table extensions independently of the ObsoleteState of their
 
 Revert the changes done by adding back the tables and table extensions that have been removed.
 
-## See Also
+## Related information
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

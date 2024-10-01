@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0009"
 description: "The list of fields for the primary key or for the clustered key must not be changed."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -174,7 +174,7 @@ table 50100 MyTable
 
 In version 2.0, the field `MyDateField` has been replaced by the field `MyTextField` in the list of fields for the key `SimpleKey`. This change is allowed by the synchronization engine because `SimpleKey` is not the primary key and is not the clustered key.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

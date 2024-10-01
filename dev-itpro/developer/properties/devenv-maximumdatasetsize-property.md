@@ -1,8 +1,8 @@
 ---
-title: "MaximumDatasetSize Property"
+title: "MaximumDatasetSize property"
 description: "Sets the maximum amount of rows to be included on the report."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -36,7 +36,7 @@ At runtime, this property will override the hard limit that is set by the **Defa
 
 For more information on report limits, see [Report limits](../devenv-report-object.md#report-limits).
 
-## See Also  
+## Related information  
 
 [Report Properties](devenv-report-properties.md)  
 [Report Object](../devenv-report-object.md)  
