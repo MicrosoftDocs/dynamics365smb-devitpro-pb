@@ -1,14 +1,14 @@
 ---
-title: Customizing an Integration with Microsoft Dataverse
+title: Customizing an integration with Microsoft Dataverse
 description: Learn how to integrate your extension with Microsoft Dataverse. This walkthrough takes you through each step.
 author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.author: bholtorf
-ms.date: 04/01/2021
+ms.date: 10/01/2024
 ---
 
-# Customizing an Integration with Microsoft Dataverse
+# Customizing an integration with Microsoft Dataverse
 
 This walkthrough describes how to customize an integration between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. As an example, this walkthrough guides you through the tasks to set up an integration between an employee in [!INCLUDE[prod_short](../includes/prod_short.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
@@ -427,6 +427,35 @@ Create the integration table mapping by subscribing to the **OnAfterResetConfigu
         ...
     end;
     ``` 
+
+The **InsertIntegrationTableMapping** procedure inserts only one configuration table template for [!INCLUDE [prod_short](../includes/prod_short.md)] tables and integration tables. You can insert multiple templates with filters by creating records in **Table Config Template** (ID 5325) and **Int. Table Config Template** (ID 5326).
+
+```al
+    local procedure CreateTableConfigTemplate(IntegrationTableMapping: Record "Integration Table Mapping"; TableConfigTemplateCode: Text; FilterTxt: Text)
+    var
+        TableConfigTemplate: Record "Table Config Template";
+    begin
+        TableConfigTemplate."Integration Table Mapping Name" := IntegrationTableMapping.Name;
+        TableConfigTemplate.Validate("Table ID", IntegrationTableMapping."Table ID");
+        TableConfigTemplate.Validate("Integration Table ID", IntegrationTableMapping."Integration Table ID");
+        TableConfigTemplate.Validate("Table Config Template Code", TableConfigTemplateCode);
+        TableConfigTemplate.Priority := 1;
+        TableConfigTemplate.SetTableFilter(FilterTxt);
+        TableConfigTemplate.Insert();
+    end;
+    local procedure CreateIntTableConfigTemplate(IntegrationTableMapping: Record "Integration Table Mapping"; IntTableConfigTemplateCode: Text; FilterTxt: Text)
+    var
+        IntTableConfigTemplate: Record "Int. Table Config Template";
+    begin
+        IntTableConfigTemplate."Integration Table Mapping Name" := IntegrationTableMapping.Name;
+        IntTableConfigTemplate.Validate("Integration Table ID", IntegrationTableMapping."Integration Table ID");
+        IntTableConfigTemplate.Validate("Table ID", IntegrationTableMapping."Table ID");
+        IntTableConfigTemplate.Validate("Int. Tbl. Config Template Code", IntegrationTableConfigTemplateCode);
+        IntTableConfigTemplate.Priority := 1;
+        IntTableConfigTemplate.SetIntegrationTableFilter(FilterTxt);
+        IntTableConfigTemplate.Insert();
+    end;
+```
 
 Each integration table mapping entry must have integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prod_short](../includes/prod_short.md)] that we want to map to the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
 
