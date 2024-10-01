@@ -3,7 +3,7 @@ title: Creating a Word layout report
 description: Describes the steps involved in creating a report that uses a Word layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 09/11/2024
+ms.date: 10/01/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
@@ -154,13 +154,13 @@ Word supports placing tables within table cells or having multi-level lists. And
 
 Word doesn't have a programming model such as RDL and hence it isn't possible to do sub totals/running totals in the Word layout itself. 
 
-Instead, you can do the work in the dataset by defining a dataitem that calculates subtotals per partition and then a nested dataitem with the partitioned data. In the layout, you then add a table that repeat over the top level dataitem and use a nested repeater on the partitioned dataitem.
+Instead, you can do the work in the dataset by defining a dataitem that calculates subtotals per partition and then a nested dataitem with the partitioned data. In the layout, you then add a table that repeats over the top level dataitem and use a nested repeater on the partitioned dataitem.
 
 ### Conditional formatting
 
 Word doesn't have a programming model such as RDL and hence it isn't possible to do conditional formatting directly in the Word layout itself. 
 
-But there are ways to work around this limitation by calculating the conditions in AL and add them to the dataset. In the Word layout, you then utilize the fact that Word don't render XML elements without a value. in the following, you can learn more about different ways to do conditional formatting.
+But there are ways to work around this limitation by calculating the conditions in AL and adding them to the dataset. In the Word layout, you then utilize the fact that Word don't render XML elements without a value. in the following, you can learn more about different ways to do conditional formatting.
 
 #### How to hide/show values based on a condition
 
@@ -524,7 +524,7 @@ The **Report layouts** page in the client, helps you update a layout with the la
 1. Select the report in the list and then select **Update and Export Layout**.
 
     The updated layout file is downloaded to your computer.
-1. Open the updated layout file in Word. Then make changes that want and save the file.
+1. Open the updated layout file in Word. Then make changes and save the file.
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], import the updated layout either as a new layout, by using the **New** action, or as a replacement to the existing layout, by the **Replace Layout** action.
 
 
