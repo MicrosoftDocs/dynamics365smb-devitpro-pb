@@ -2,7 +2,7 @@
 title: "JsonValue.AsText() Method"
 description: "Converts the value in a JsonValue to a Text data type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -36,7 +36,7 @@ An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 ## Remarks 
 The operation will fail with a run-time error if the JsonValue contains NULL or UNDEFINED.
 
-## See Also
+## Related information
 [JsonValue Data Type](jsonvalue-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -1,16 +1,17 @@
 ---
-title: "OnUpgradePerDatabase (Codeunit) Trigger"
+title: "OnUpgradePerDatabase (Codeunit) trigger"
 description: "Runs during the upgrade of an extension."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnUpgradePerDatabase (Codeunit) Trigger
+# OnUpgradePerDatabase (Codeunit) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs during the upgrade of an extension.
@@ -38,6 +39,6 @@ It is used to perform the actual upgrade. If an error occurs during runtime the 
 
 This trigger is run once in the entire upgrade process, in a single system session that does not open any company.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

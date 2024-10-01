@@ -1,8 +1,8 @@
 ---
-title: "Database Data Type"
+title: "Database data type"
 description: "Provides access to common database functionality."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Database Data Type
+# Database Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Provides access to common database functionality.
@@ -39,7 +39,8 @@ The following methods are available on the Database data type.
 |[LockTimeout([Boolean])](database-locktimeout-method.md)|Determines whether the lock time-out setting is set to On. You can also use this method to override the default setting.|
 |[MinimumActiveRowVersion()](database-minimumactiverowversion-method.md)|Returns the lowest active RowVersion in the database. This is the lowest RowVersion for an uncomitted row, meaning rows with a lower timestamp than this value are guaranteed to be comitted. If there are no active transactions, this value is equal to LastUsedRowVersion + 1.|
 |[RegisterTableConnection(TableConnectionType, Text, Text)](database-registertableconnection-method.md)|Registers a table connection to an external database.|
-|[SelectLatestVersion()](database-selectlatestversion-method.md)|Forces the latest version of the database to be used.|
+|[SelectLatestVersion()](database-selectlatestversion--method.md)|Forces the latest version of the database to be used.|
+|[SelectLatestVersion(Integer)](database-selectlatestversion-integer-method.md)|Ensures that the table's latest version is used, ignoring any cached values older than the method's call time.|
 |[SerialNumber()](database-serialnumber-method.md)|Gets a string that contains the serial number of the license file for your system.|
 |[ServiceInstanceId()](database-serviceinstanceid-method.md)|Gets the ID of the service instance.|
 |[SessionId()](database-sessionid-method.md)|Gets the ID of the current session.|
@@ -53,6 +54,6 @@ The following methods are available on the Database data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -2,7 +2,7 @@
 title: "System.DeleteEncryptionKey() Method"
 description: "Deletes an encryption key for the current tenant."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -36,7 +36,7 @@ if not EncryptionEnabled then
   DeleteEncryptionKey();  
 ```
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

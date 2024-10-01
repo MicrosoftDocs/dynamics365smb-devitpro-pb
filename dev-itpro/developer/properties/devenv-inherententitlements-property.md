@@ -1,8 +1,8 @@
 ---
-title: "InherentEntitlements Property"
+title: "InherentEntitlements property"
 description: "Specifies the entitlement permissions that are inherently assigned to the given object."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -60,7 +60,7 @@ table 50145 NewItem
 }
 ```
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [Inherent Permissions](../devenv-inherent-permissions.md)  

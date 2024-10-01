@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 02/17/2024
+ms.date: 09/09/2024
 ms.custom: bap-template
 ---
 
@@ -44,7 +44,9 @@ You can create a prompt action to promote your Copilot on pages and encourage us
 
 ![Shows the Copilot action icon clip](media/promptdialog-launch-floating.png)
 
-Prompt actions are only supported on `List`, `ListPage`, `StandardDialog`, and `WorkSheet` page types. To create a prompt action, add an action area called `area(Prompting)` to the page and an `action` that runs the prompt dialog page. 
+Prompt actions are supported on `List`, `ListPage`, `StandardDialog`, and `WorkSheet` page types in versions prior to [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2. Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, page types `Card`, `Document`, and `ListPlus` are also supported.
+
+To create a prompt action, add an action area called `area(Prompting)` to the page and an `action` that runs the prompt dialog page. 
 
 ```al
 ...

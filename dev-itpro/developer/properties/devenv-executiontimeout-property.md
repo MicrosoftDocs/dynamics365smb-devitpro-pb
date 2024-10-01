@@ -1,8 +1,8 @@
 ---
-title: "ExecutionTimeout Property"
+title: "ExecutionTimeout property"
 description: "Sets the maximum time the report will run after which it is automatically terminated."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -30,7 +30,7 @@ At runtime, this property will override the limit that is set by the **Default M
 
 For more information on report limits, see [Report limits](../devenv-report-object.md#report-limits).
 
-## See Also  
+## Related information  
 
 [Report Properties](devenv-report-properties.md)  
 [Report Object](../devenv-report-object.md)  
