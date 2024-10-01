@@ -20,7 +20,7 @@ Adding a var modifier in events is not allowed as it might break the runtime beh
 
 ## Remarks
 
-This error ensures that the behavior of events remains consistent and predictable. Adding a `var` modifier to an event parameter can alter how the parameter is handled, potentially causing issues for extensions that subscribe to the event. These extensions might not be designed to handle parameters passed by reference, leading to compatibility issues and runtime errors.
+This error ensures that the behavior of events remains consistent and predictable. Adding a `var` modifier to an event parameter can alter how the parameter is handled, potentially causing issues for extensions that subscribe to the event. These extensions might not be designed to handle parameters passed by reference, leading to compatibility issues and runtime errors. Maintaining the original parameter passing mechanism (by value) ensures that the event's behavior remains stable and that dependent extensions continue to function as expected.
 
 ## How to fix this diagnostic?
 
