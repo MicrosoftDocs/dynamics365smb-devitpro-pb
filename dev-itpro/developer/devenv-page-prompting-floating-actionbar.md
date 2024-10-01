@@ -87,7 +87,8 @@ actions
 ...
 ```
 
-## See also
+## Related information
 
 [The PromptDialog page type](devenv-page-type-promptdialog.md)  
-[Prompting using a prompt guide](devenv-page-promptguide.md)   
+[Prompting using a prompt guide](devenv-page-promptguide.md)  
+[Error handling in prompt dialogs](devenv-page-prompt-error-handling.md)
