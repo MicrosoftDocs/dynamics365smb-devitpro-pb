@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Business Central upgrade compatibility matrix
 
-You can upgrade from one major version of [!INCLUDE [prod_short](../includes/prod_short.md)] to the next. However, minor updates are regularly made available for each major release, like 20.11 or 21.6. Whether you're upgrading from one on-premises version to another, or you're migrating to [!INCLUDE [prod_short](../includes/prod_short.md)] online, it's important to target an update versions that are compatible with your current version.
+You can upgrade from one major version of [!INCLUDE [prod_short](../includes/prod_short.md)] to the next. However, minor updates are regularly made available for each major release, like 23.11 or 24.5. Whether you're upgrading from one on-premises version to another, or you're migrating to [!INCLUDE [prod_short](../includes/prod_short.md)] online, it's important to target an update versions that are compatible with your current version.
 
 Learn more about the supported paths in [Supported Upgrade Paths](upgrade-paths.md). For an overview of compatibility across minor versions, refer to the relevant sections in this article.  
 
@@ -28,7 +28,7 @@ The following table lists the Business Central 23 versions and the minimum versi
 
 |V24 update|V25 update|
 |-|-|
-|24.0 to 24.5|25.0|
+|24.0 to 24.5|[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|
 |[24.6](https://support.microsoft.com/help/5046146)<sup>[\[1\]](#1)</sup>|25.1|
 
 ## Version 23 compatibility
