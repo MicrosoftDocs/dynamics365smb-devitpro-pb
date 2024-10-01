@@ -618,7 +618,10 @@
 ###### [Enum](developer/devenv-extensible-enums.md)
 ###### [Option](developer/methods-auto/option/option-data-type.md)
 
-#### [Interfaces](developer/devenv-interfaces-in-al.md)
+#### Interfaces
+##### [Interfaces](developer/devenv-interfaces-in-al.md)
+##### [Extending interfaces in AL](developer/devenv-interfaces-in-al-extend.md)
+##### [Type testing and casting operators for interfaces](developer/devenv-interfaces-in-al-operators.md)
 
 #### [Methods](developer/devenv-al-methods.md)
 ##### [Progress windows, Message, Error, and Confirm methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
@@ -637,6 +640,7 @@
 ###### [Page customization object](developer/devenv-page-customization-object.md)
 ##### [Report](developer/devenv-report-object.md)
 ##### [Profile](developer/devenv-profile-object.md)
+##### [Profile extension](developer/devenv-profile-ext-object.md)
 ##### [Codeunit](developer/devenv-codeunit-object.md)
 ##### [Query](developer/devenv-query-object.md)
 ##### [XMLPort](developer/devenv-xmlport-object.md)
