@@ -2,7 +2,7 @@
 title: Work with multiple projects and project references
 description: Handling solutions in the AL language that contains multiple projects in one Visual Studio Code folder and contains references between these projects.
 author: SusanneWindfeldPedersen
-ms.date: 05/06/2024
+ms.date: 09/25/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -83,6 +83,21 @@ The following happens on the server:
 - **Base** is uninstalled, unpublished, and then published.  
 - **Leaf** and **External** are published, installed, and then compiled against the newly published **Base**. Important to notice here's that the **External** app is also published.
 
+## Recovery from publishing failures
+
+[!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
+
+> [!NOTE]  
+> Recovery from publishing failures is a new feature added with [!INCLUDE [prod_short](includes/prod_short.md)] version 25. In prior versions, you need to recover any uninstalled or unpublished apps manually.
+
+When you perform a publish from Visual Studio Code, there's a possibility that the server fails to compile the extension that you've published. This can happen because of issues in the AL code itself (for example, breaking changes in the new code, which are incompatible with the extensions on the server), or because of transient server-side issues. In these cases, there's an attempt to restore the original state of extensions before the publishing happened. However, there are some cases in which recovery can fail. These are:
+
+- Upgrade scenarios. For example, when publishing a version 2.0 of an app over version 1.0.
+- Extension changes that cause tables or table extensions to be moved between apps.
+- Bugs in the install/uninstall codeunits of any affected extensions.
+
+In the case where recovery can't be performed, the server provides a list of apps that couldn't be recovered to assist with manual recovery.
+
 ## Launch.json file setting
 
 To control how dependency publishing is performed on the server, the `launch.json` file has a setting `dependencyPublishingOption` with the following options:
@@ -98,7 +113,7 @@ To control how dependency publishing is performed on the server, the `launch.jso
 
 ## User and workspace launch configuration
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. For more information, see [User and workspace launch configuration](devenv-json-launch-file.md#user-and-workspace-launch-configuration).
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. Learn more in [User and workspace launch configuration](devenv-json-launch-file.md#user-and-workspace-launch-configuration).
 
 ## Traverse the dependency graph
 
@@ -111,7 +126,7 @@ To remove unnecessary manual work, use the **AL: Publish full dependency tree fo
 
 ## Incremental Build setting
 
-If the `al.incrementalBuild` setting is set to `true` on workspaces with project to project references, all resolutions happen from the referenced project, instead of happening from an app in the `\packagecache` folder, which enhances the build time. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+If the `al.incrementalBuild` setting is set to `true` on workspaces with project to project references, all resolutions happen from the referenced project, instead of happening from an app in the `\packagecache` folder, which enhances the build time. Learn more in [AL Language Extension configuration](devenv-al-extension-configuration.md).
 
 ## Making sure that your project or workspace is updated
 
@@ -119,7 +134,7 @@ If the `al.incrementalBuild` setting is set to `true` on workspaces with project
 > When working in a project or workspace, some operations require that you run a **Reload Window** command (<kbd>Ctrl</kbd>+<kbd>R</kbd>) for your project or workspace to ensure that it’s updated correctly. Examples are; source control operations like Git Pull, changes made to the `app.json` file, or updating User or Workspace settings for AL.
 
 
-## See also
+## Related information
 
 [Development in AL](devenv-dev-overview.md)  
 [Best practices for AL](../compliance/apptest-bestpracticesforalcode.md)  

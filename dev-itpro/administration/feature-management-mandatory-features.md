@@ -74,7 +74,6 @@ However, these features are only optional for a while. The period in which they'
 |---------|---------|
 |[Feature update: Enable using SIE Audit Files Exports](/dynamics365/business-central/localfunctionality/sweden/how-to-use-sie-audit-files-export)|You can import and export general ledger data according to the standard import export (SIE) format. By specifying SIE dimensions and file types, you can define the level of detail that's covered by import or export transactions.|
 
-
 ## Features becoming generally available in 2023 release wave 2
 
 The following features are generally available. However, they aren't turned on by default, so to use them your administrator must manually enable them.

@@ -1,8 +1,8 @@
 ---
-title: "EventSubscriber Attribute"
+title: "EventSubscriber attribute"
 description: "Specifies the event to which the method subscribes."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,13 +11,13 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# EventSubscriber Attribute
+# EventSubscriber attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
 Specifies the event to which the method subscribes.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -111,7 +111,7 @@ codeunit 50107 MyEventSubscriber
 }
 ```
 
-## See also  
+## Related information  
 [AL method reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  
 [Publishing events](../devenv-publishing-events.md)   

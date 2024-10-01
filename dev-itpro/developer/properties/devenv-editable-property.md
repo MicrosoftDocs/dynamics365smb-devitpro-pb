@@ -1,8 +1,8 @@
 ---
-title: "Editable Property"
+title: "Editable property"
 description: "Sets a value that indicates whether a field, page, or control can be edited through the UI."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets a value that indicates whether a field, page, or control can be edited through the UI.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page
 -   Request Page
 -   Page Label
@@ -63,7 +63,7 @@ Editable = "Balance Due (LCY)" > "Credit Limit (LCY)"
 > [!NOTE]  
 > You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Editable** property, it must be set as a global page variable.  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Page Properties](./devenv-properties.md)  

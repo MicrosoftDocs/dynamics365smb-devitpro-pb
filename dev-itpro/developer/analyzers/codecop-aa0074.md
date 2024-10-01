@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0074"
 description: "TextConst and Label variable names should have a suffix (an approved three-letter suffix: Msg, Tok, Err, Qst, Lbl, Txt) describing usage."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,7 +39,7 @@ TextConst and Label variable names should have a suffix (an approved three-lette
 GetTok: Label 'GET', Locked = true;
 ```
 
-## See also
+## Related information
 
 [CodeCop Analyzer](codecop.md)  
 [Get started with AL](../devenv-get-started.md)  

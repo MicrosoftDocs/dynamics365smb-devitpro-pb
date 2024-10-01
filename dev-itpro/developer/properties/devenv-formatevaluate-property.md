@@ -1,8 +1,8 @@
 ---
-title: "FormatEvaluate Property"
+title: "FormatEvaluate property"
 description: "Sets the data that is being imported or exported as XML data types or as the standard AL data types."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Sets the data that is being imported or exported as XML data types or as the sta
 ## Applies to
 -   Xml Port
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -65,7 +65,7 @@ This is an XMLport property and therefore applies to all the data that is being 
   
 For more information about formatting AL data types, see [Formatting Values, Dates, and Time](../devenv-format-property.md). For more information about evaluating variables, see [EVALUATE Method](../methods-auto/system/system-evaluate-method.md). For more information about using temporary tables, see [UseTemporary Property (XMLport)](devenv-usetemporary-xmlport-property.md).  
   
-## See Also  
+## Related information  
 
 [Format Property (XMLports)](devenv-format-property.md)  
 [Evaluate Method](../methods-auto/system/system-EVALUATE-method.md)  

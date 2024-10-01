@@ -2,7 +2,7 @@
 title: "Report.SaveAsExcel(Integer, Text [, var Record]) Method"
 description: "Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -81,7 +81,7 @@ end;
 
 [!INCLUDE[report_save_as_example](../../includes/include-report-saveas-example.md)]
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -2,7 +2,7 @@
 title: "ErrorInfo.Collectible([Boolean]) Method"
 description: "Specifies if the error is collectible using ErrorBehavior.Collect."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -69,7 +69,7 @@ end
 ```
 
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Collecting Errors](../../devenv-error-collection.md)  
