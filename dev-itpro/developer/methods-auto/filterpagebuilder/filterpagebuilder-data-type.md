@@ -1,8 +1,8 @@
 ---
-title: "FilterPageBuilder Data Type"
+title: "FilterPageBuilder data type"
 description: "Stores filter configurations for a filter page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder Data Type
+# FilterPageBuilder Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Stores filter configurations for a filter page. A filter page is a dynamic page type that contains one or more filter controls that enables users to set filters on fields of the underlying tables.
@@ -36,7 +36,7 @@ The following methods are available on instances of the FilterPageBuilder data t
 |[SetView(Text, Text)](filterpagebuilder-setview-method.md)|Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page. The view contains all fields that have default filters, but does not contain fields without filters.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

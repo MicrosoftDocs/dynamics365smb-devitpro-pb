@@ -1,8 +1,8 @@
 ---
-title: "CodeCop Analyzer"
+title: "CodeCop analyzer"
 description: "CodeCop is an analyzer that enforces the official AL Coding Guidelines."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -15,7 +15,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[AA0001](codecop-aa0001.md)|There must be exactly one space character on each side of a binary operator such as := + - AND OR =.|Readability|Warning|
 |[AA0002](codecop-aa0002.md)|There must be no space character.|Readability|Warning|
@@ -101,7 +101,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0470](codecop-aa0470.md)|Placeholders should have a comment explaining their content.|Localizability|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)

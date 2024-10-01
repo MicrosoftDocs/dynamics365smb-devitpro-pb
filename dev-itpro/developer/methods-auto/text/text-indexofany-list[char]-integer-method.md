@@ -2,7 +2,7 @@
 title: "Text.IndexOfAny(List of [Char] [, Integer]) Method"
 description: "Reports the one-based index of the first occurrence in this instance of any character in a specified array of Unicode characters."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -43,7 +43,7 @@ The one-based index of the first occurrence of the specified string in this inst
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

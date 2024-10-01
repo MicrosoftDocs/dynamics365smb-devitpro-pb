@@ -1,8 +1,8 @@
 ---
-title: "RecreateScript Property"
+title: "RecreateScript property"
 description: "Specifies the script which is invoked when the control add-in is recreated."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,7 +39,7 @@ This property is optional. If left blank, the script defined by [StartupScript](
 RecreateScript = 'js/chartCached.js';
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

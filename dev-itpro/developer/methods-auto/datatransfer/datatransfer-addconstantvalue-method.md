@@ -2,7 +2,7 @@
 title: "DataTransfer.AddConstantValue(Any, Integer) Method"
 description: "Specifies the given value is to be set in the given field in the destination table."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -47,7 +47,7 @@ Use this method to set a constant value for a field when copying data in rows or
 
 [!INCLUDE[data-transfer-example](../../../developer/includes/data-transfer-example.md)]
 
-## See Also
+## Related information
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

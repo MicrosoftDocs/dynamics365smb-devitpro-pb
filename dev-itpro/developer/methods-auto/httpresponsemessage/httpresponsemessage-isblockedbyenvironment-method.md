@@ -2,7 +2,7 @@
 title: "HttpResponseMessage.IsBlockedByEnvironment() Method"
 description: "Gets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,7 +34,7 @@ An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [HttpResponseMessage Data Type](httpresponsemessage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
