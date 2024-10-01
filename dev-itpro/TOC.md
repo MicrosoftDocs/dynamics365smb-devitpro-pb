@@ -618,7 +618,10 @@
 ###### [Enum](developer/devenv-extensible-enums.md)
 ###### [Option](developer/methods-auto/option/option-data-type.md)
 
-#### [Interfaces](developer/devenv-interfaces-in-al.md)
+#### Interfaces
+##### [Interfaces](developer/devenv-interfaces-in-al.md)
+##### [Extending interfaces in AL](developer/devenv-interfaces-in-al-extend.md)
+##### [Type testing and casting operators for interfaces](developer/devenv-interfaces-in-al-operators.md)
 
 #### [Methods](developer/devenv-al-methods.md)
 ##### [Progress windows, Message, Error, and Confirm methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
@@ -637,6 +640,7 @@
 ###### [Page customization object](developer/devenv-page-customization-object.md)
 ##### [Report](developer/devenv-report-object.md)
 ##### [Profile](developer/devenv-profile-object.md)
+##### [Profile extension](developer/devenv-profile-ext-object.md)
 ##### [Codeunit](developer/devenv-codeunit-object.md)
 ##### [Query](developer/devenv-query-object.md)
 ##### [XMLPort](developer/devenv-xmlport-object.md)
@@ -694,6 +698,7 @@
 ##### [Tables overview](developer/devenv-tables-overview.md)
 ##### [Table object](developer/devenv-table-object.md)
 ##### [Add tooltips to table fields](developer/devenv-adding-tooltips.md)
+##### [Enable text search on table fields](developer/devenv-table-field-text-search.md)
 ##### [System fields](developer/devenv-table-system-fields.md)
 ##### [Table extension object](developer/devenv-table-ext-object.md)
 ##### [Setting relationships between tables](developer/devenv-set-relationships-between-tables.md)
@@ -1290,7 +1295,9 @@
 #### [Database locks](/dynamics365/business-central/admin-view-database-locks)
 #### [Missing indexes](administration/database-missing-indexes.md)
 #### [Database wait statistics](administration\database-wait-statistics.md)
-#### [Using the Performance Profiler](administration/performance-profiler-overview.md)
+#### Performance Profiler
+##### [Using the Performance Profiler](administration/performance-profiler-overview.md)
+##### [Scheduled performance profiler overview](administration/scheduled-performance-profiler-overview.md)
 #### [Verifying report datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking personalization issues](/dynamics365/business-central/ui-personalization-user)
 #### [Checking customization issues](/dynamics365/business-central/ui-personalization-manage)
@@ -1706,6 +1713,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
+#### [2024 release wave 2](deployment/system-requirements-business-central-v25.md)
 #### [2024 release wave 1](deployment/system-requirements-business-central-v24.md)
 #### [2023 release wave 2](deployment/system-requirements-business-central-v23.md)
 #### [2023 release wave 1](deployment/system-requirements-business-central-v22.md)

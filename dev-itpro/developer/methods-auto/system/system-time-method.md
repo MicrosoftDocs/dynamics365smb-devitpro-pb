@@ -2,7 +2,7 @@
 title: "System.Time() Method"
 description: "Gets the current time from the operating system."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -54,7 +54,7 @@ On a computer that has the regional format set to English \(United States\), the
 **The current system time is 11:15:46 AM.**  
 
  
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

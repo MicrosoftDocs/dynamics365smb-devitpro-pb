@@ -1,8 +1,8 @@
 ---
-title: "Visible Property"
+title: "Visible property"
 description: "Sets whether to display the page or control."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -73,7 +73,7 @@ Even if a field on page is hidden by setting the **Visible** property, the data 
 > [!NOTE]  
 > Hidden record fields on a page that calculates data such as FlowFields can lead to performance issues even if they are hidden. For more information see [Writing efficient pages](../../performance/performance-developer.md#writing-efficient-pages).
 
-## See also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Performance Developer](../../performance/performance-developer.md)  

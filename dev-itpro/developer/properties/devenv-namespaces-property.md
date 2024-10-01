@@ -1,8 +1,8 @@
 ---
-title: "Namespaces Property"
+title: "Namespaces property"
 description: "Specifies namespaces on the XmlPort."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -44,7 +44,7 @@ To specify a default namespace, set the prefix to `""`. You can also specify a d
 
 For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [NamespacePrefix Property](devenv-namespaceprefix-property.md)  

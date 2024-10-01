@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0246"
 description: "Suppressing all diagnostics is not allowed."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -22,7 +22,7 @@ Suppressing all diagnostics is not allowed. Specify the diagnostic(s) that you w
 
 Enabling this rule allows to enforce that when suppressing diagnostics using the #pragma warning `disable`, the code(s) of the diagnostics to suppress must be specified instead of suppressing all analyzer diagnostics and compiler warnings.
 
-## See Also
+## Related information
 
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

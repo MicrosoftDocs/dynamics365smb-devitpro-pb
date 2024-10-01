@@ -1,8 +1,8 @@
 ---
-title: "TableConnectionType System Option"
+title: "TableConnectionType system option"
 description: "Use variables of this data type to specify the type of connection to an external database."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,6 +24,6 @@ Use variables of this data type to specify the type of connection to an external
 |MicrosoftGraph|This is for internal use only.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

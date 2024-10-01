@@ -1,8 +1,8 @@
 ---
-title: "LookupPageId Property"
+title: "LookupPageId property"
 description: "Sets the ID of the page you want to use as a lookup."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -28,7 +28,7 @@ By default, a lookup provides a list of records in the table. Using this list, u
 > [!NOTE]  
 > Consider creating dedicated lookup pages instead of standard pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages run all triggers and fact boxes even if they aren't shown in the lookup. For more information see [Writing efficient pages](../../performance/performance-developer.md#writing-efficient-pages).
 
-## See also
+## Related information
 
 [Lookup Property](devenv-lookup-property.md)  
 [Performance Developer](../../performance/performance-developer.md)

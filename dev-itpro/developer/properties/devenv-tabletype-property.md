@@ -1,8 +1,8 @@
 ---
-title: "TableType Property"
+title: "TableType property"
 description: "Specifies the table type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Specifies the table type.
 ## Applies to
 -   Table
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -63,7 +63,7 @@ You can change an existing table from **Normal** to **Temporary**. But the table
 
 For more information, see [Temporary Tables](../devenv-temporary-tables.md).
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [SourceTableTemporary Property](devenv-sourcetabletemporary-property.md)  
