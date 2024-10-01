@@ -2,7 +2,7 @@
 title: "Xmlport.Filename([Text]) Method"
 description: "Gets the current value of the FileName Property of an XmlPort and sets this property to a new value."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,7 +39,7 @@ The current value of the FileName Property of an XmlPort.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Xmlport Data Type](xmlport-data-type.md)  
 [FileName Property](../../properties/devenv-filename-property.md)   
 [Get Started with AL](../../devenv-get-started.md)  

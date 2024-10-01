@@ -1,8 +1,8 @@
 ---
-title: "ExternalBusinessEvent Attribute"
+title: "ExternalBusinessEvent attribute"
 description: "Specifies that the method is published as an external business event."
 ms.author: solsen
-ms.date: 06/07/2023
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,13 +11,13 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# ExternalBusinessEvent Attribute
+# ExternalBusinessEvent attribute
 > **Version**: _Available or changed with runtime version 11.0._
 
 Specifies that the method is published as an external business event.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -55,6 +55,6 @@ Specifies a version for the external business event.
 
 The `ExternalBusinessEvent` attribute can be set on methods that are published as external business events.
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

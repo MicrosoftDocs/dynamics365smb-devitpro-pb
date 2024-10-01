@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0230"
 description: "Version number should not be specified for internal assemblies to avoid errors during upgrade procedures."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ Version should not be specified for internal assemblies.
 Version number should not be specified for internal assemblies to avoid errors during upgrade procedures.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

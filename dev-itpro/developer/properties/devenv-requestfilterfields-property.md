@@ -1,8 +1,8 @@
 ---
-title: "RequestFilterFields Property"
+title: "RequestFilterFields property"
 description: "Sets which fields are automatically included on the tab of the request page that is related to this data item."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -45,6 +45,6 @@ If you do not want users to add filters on fields, then use one of the following
 > [!NOTE]  
 > On the Windows client, users can specify filters, even if **RequestFilterFields** is not specified.
 
-## See Also
+## Related information
 
 [Request Pages](../devenv-request-pages.md)  

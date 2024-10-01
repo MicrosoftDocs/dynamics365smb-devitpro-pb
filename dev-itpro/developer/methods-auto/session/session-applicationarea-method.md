@@ -2,7 +2,7 @@
 title: "Session.ApplicationArea([Text]) Method"
 description: "Gets or sets the application areas for the current session."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -42,7 +42,7 @@ The application areas for the current session.
 > [!NOTE]  
 >  Currently, this functionality is intended for the application areas that are defined in **table 9178 Application Area Setup**. You can define your own application areas but be aware that the implementation might change in future release.  
 
-## See Also
+## Related information
 [Session Data Type](session-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

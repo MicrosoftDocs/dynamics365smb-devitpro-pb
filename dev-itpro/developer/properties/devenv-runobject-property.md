@@ -1,8 +1,8 @@
 ---
-title: "RunObject Property"
+title: "RunObject property"
 description: "Sets the object you want to run immediately when the action is activated."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -38,6 +38,6 @@ Use the following properties to set parameters for the object you want to run:
 - [RunPageView Property](devenv-runpageview-property.md)  
 - [RunPageLink Property](devenv-runpagelink-property.md)  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  

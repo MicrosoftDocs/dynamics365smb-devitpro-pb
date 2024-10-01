@@ -1,8 +1,8 @@
 ---
-title: "InstructionalTextML Property"
+title: "InstructionalTextML property"
 description: "Sets the multilanguage value of the InstructionalText of the object."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ InstructionalTextML = ENU='Add an entity from your list of contacts.'; ESP='Aña
 
 To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)
 [Page object](../devenv-page-object.md)

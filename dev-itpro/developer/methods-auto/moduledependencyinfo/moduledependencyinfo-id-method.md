@@ -2,7 +2,7 @@
 title: "ModuleDependencyInfo.Id() Method"
 description: "Gets the app ID of the specified app."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,7 +34,7 @@ The application ID.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [ModuleDependencyInfo Data Type](moduledependencyinfo-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

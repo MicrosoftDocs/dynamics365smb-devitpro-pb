@@ -29,7 +29,7 @@ APIPublisher = 'contoso';
 > The property **APIPublisher** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](../devenv-api-pagetype.md).
 
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Page Object](../devenv-page-object.md)  

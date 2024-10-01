@@ -2,10 +2,11 @@
 title: "AppSourceCop Error AS0029"
 description: "Pages and PageExtensions that have been published must not be deleted."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 09/27/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
+ai-usage: ai-assisted
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,7 +21,8 @@ Pages and PageExtensions that have been published must not be deleted.
 
 ## Remarks
 
-It is not allowed to remove pages which have been published unless they have been marked as [Obsolete](../properties/devenv-obsoletestate-property.md). This will break dependent extensions which:
+It's not allowed to remove pages which have been published unless they have been marked as [Obsolete](../properties/devenv-obsoletestate-property.md). This will break dependent extensions which:
+
 - are referencing this page from code,
 - are extending the page using a page extension,
 - are customizing the page using page customizations.
@@ -135,7 +137,8 @@ pageextension 50100 MyExtension extends MyPage
 }
 ```
 
-## See Also  
+## Related information
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

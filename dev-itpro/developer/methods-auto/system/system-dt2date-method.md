@@ -2,7 +2,7 @@
 title: "System.DT2Date(DateTime) Method"
 description: "Gets the date part of a DateTime object."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,7 +39,7 @@ The DateTime of which to return the date part.
 ## Remarks  
  If *Datetime* is undefined, then this method returns an undefined date.  
 
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

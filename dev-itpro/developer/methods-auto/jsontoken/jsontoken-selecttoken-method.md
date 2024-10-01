@@ -2,7 +2,7 @@
 title: "JsonToken.SelectToken(Text, var JsonToken) Method"
 description: "Selects a JsonToken using a JPath expression."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -83,7 +83,7 @@ end;
 > [!NOTE]
 > Ensure that the selected expression contains ' (single quotation mark) and not " (double quotation mark) to decorate the string value.
 
-## See Also
+## Related information
 [JsonToken Data Type](jsontoken-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
