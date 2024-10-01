@@ -65,7 +65,7 @@ To use optimized text search in AL, you can add the `&&` operator when setting a
 Rec.SetFilter(Rec.Field, '&&' + SearchString);
 ```
 
-You can also include wildcards in full-text search by adding the `*` symbol to the search clause as illustrated in the following example 
+You can also include wildcards in full-text search by adding the `*` symbol to the search clause as illustrated in the following example:
 
 ```AL
 // Optimized text search with wildcard
