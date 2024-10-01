@@ -88,7 +88,8 @@ Here's a sample notification payload:
       "resource": "api/v2.0/companies(b18aed47-c385-49d2-b954-dbdf8ad71780)/customers(4b4f31f0-dc1c-4033-b2aa-ab03ca1d6ebc)",
       "changeType": "deleted",
       "lastModifiedDateTime": "2018-10-26T12:54:30.503Z"
-    },    {
+    },    
+    {
       "subscriptionId": "salesInvoice",
       "clientState": "someClientState",
       "expirationDateTime": "2018-10-20T10:55:01Z",
