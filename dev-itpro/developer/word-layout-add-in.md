@@ -6,7 +6,7 @@ ms.author: kepontop
 ms.reviewer: jswymer
 ms.topic: conceptual 
 ms.collection: 
-ms.date: 09/16/2024
+ms.date: 10/01/2024
 ms.custom: bap-template
 ---
 # Use the Word add-in for report layouts
@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-The Dynamics 365 Business Central Word add-in includes several controls that you can use change the behavior of Word layouts for document reports. A comment control allows you to add a comment in the layout, which appears in Word while designing the layout but doesn't appear in the rendered report. Other controls let you encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data.
+The Dynamics 365 Business Central Word add-in includes several controls that you can use to change the behavior of Word layouts for document reports. A comment control allows you to add a comment in the layout, which appears in Word while designing the layout but doesn't appear in the rendered report. Other controls let you encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
@@ -66,7 +66,7 @@ There are two ways to insert a comment:
 
 ## Hide Field if Zero control
 
-In some reports, you might want to mimic the [BlankZero](properties/devenv-blankzero-property.md) or [BlankNumbers](properties/devenv-blanknumbers-property.md) properties that exist on table and page fields in AL code. That is, for some layouts you want to display field values of 0 as 0, while with other you want to leave the field blank.
+In some reports, you might want to mimic the [BlankZero](properties/devenv-blankzero-property.md) or [BlankNumbers](properties/devenv-blanknumbers-property.md) properties that exist on table and page fields in AL code. That is, for some layouts you want to display field values of 0 as 0, while for others, you want to leave the field blank.
 
 For this behavior, you can use the **Hide Field if Zero** control.
 
