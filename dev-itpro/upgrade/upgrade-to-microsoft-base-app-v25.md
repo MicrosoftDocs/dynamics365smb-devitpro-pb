@@ -1,24 +1,24 @@
 ---
-title: Upgrading Customized C/AL Application to Microsoft Base Application for version 23
-description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 23.
+title: Upgrading Customized C/AL Application to Microsoft Base Application for version 25
+description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 25.
 ms.topic: article
 author: jswymer
 ms.author: jswymer
-ms.date: 08/14/2023
+ms.date: 09/04/2024
 ms.reviewer: jswymer
 ---
 
-# Upgrading Customized C/AL Application to Microsoft Base Application version 23
+# Upgrading Customized C/AL Application to Microsoft Base Application version 25
 
-This article describes how to upgrade a customized version 14 application to a version 23 solution that uses the Microsoft system and base applications.
+This article describes how to upgrade a customized version 14 application to a version 25 solution that uses the Microsoft system and base applications.
 
-[![Shows the upgrade of an unmodified Business Central v21 application.](../developer/media/bc14-to-23-cal-upgrade-to-base-app.png)](../developer/media/bc14-to-23-cal-upgrade-to-base-app.png#lightbox) 
+[![Shows the upgrade of an unmodified Business Central v25 application.](../developer/media/bc14-to-25-cal-upgrade-to-base-app.svg)](../developer/media/bc14-to-25-cal-upgrade-to-base-app.svg#lightbox) 
 
 ## Overview
 
 The upgrade is divided into two sections: Application Upgrade and Data Upgrade. The Application Upgrade section deals with upgrading the application code. For the application upgrade, you'll have to create several extensions. Some of these extensions are only used for upgrade purposes. The Data Upgrade section deals with upgrading the data on tenants - publishing, syncing, and installing extensions. For this scenario, the data upgrade consists of two phases for migrating data from the current tables to extension-based tables. The following figure illustrates the upgrade process.  
 
-[![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC23.png)](../developer/media/Upgrade-BC14-custom-BC23.png#lightbox) 
+[![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC25-v2.svg)](../developer/media/Upgrade-BC14-custom-BC25-v2.svg#lightbox) 
 
 The process uses two special features for migrating tables and data to extensions:
 
@@ -40,27 +40,33 @@ The process uses two special features for migrating tables and data to extension
 
 ## <a name="prereqs"></a>Prerequisites
 
-1. Your version 14 is compatible with version 23.
+1. Your version 14 is compatible with version 25.
 
-    There are several updates for version 14. The updates have a compatible version 23 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+    There are several updates for version 14. The updates have a compatible version 25 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
 2. The version 14 [!INCLUDE[devshell](../developer/includes/devshell.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)] are installed. 
+
+   To run the [!INCLUDE[devshell](../developer/includes/devshell.md)], you must have a developer/partner licence that allows you to run the File, Export, and Text system.
 
 3. Get the required version of the txt2al conversion tool.
 
     During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
 
-## Task 1: Install version 23
+- Install the full-text search feature to the SQL server instance
 
-1. Download the latest available update for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] (version 23) that is compatible with your version 14.
+   [!INCLUDE[upgrade-install-full-text-serach-sql](../developer/includes/upgrade-install-full-text-search-sql.md)]
+
+## Task 1: Install version 25
+
+1. Download the latest available update for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] (version 25) that is compatible with your version 14.
 
     For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
-2. Before you install version 23, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 23 tools.
+2. Before you install version 25, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 25 tools.
 
-3. Install Business Central version 23 components.
+3. Install Business Central version 25 components.
 
-    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 23, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 25, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -78,22 +84,23 @@ This section describes how to upgrade the application code. This work involves c
 
 The first step, and the largest step, is to create extensions for the customizations compared to the Microsoft system and base applications. 
 
-- Create extensions for the target platform **12.0 Business Central 2023 release wave 2**.
-- Include dependencies for the Microsoft System, Base, and Application extensions for version 23.0.0.0.
+- Create extensions for the target platform **14.0 Business Central 2024 release wave 2**.
+- Include dependencies for the Microsoft System, Base, and Application extensions for version 25.0.0.0.
 
 For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields will be migrated from the existing tables to the new ones defined in the extensions.
 
 Also, be aware that since version 18, several base application tables are now temporary tables. This change may affect the upgrade. For more information, see [Known Issues - Tables changed to temporary may prevent synchronizing new base application version](known-issues.md#temptables).
 
-## Task 4: Create empty System, Base, and customization extensions
+## Task 4: Create empty system, business foundation, base, and customization extensions
 
 For the interim phase of migrating tables and data to extensions, you create empty extension versions for:
 
 - Microsoft system application
+- Microsoft business foundation application. This extension was introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application. It will contain more functionality in future releases.
 - Microsoft base application
 - Each new customization extension that includes table or table extension objects for moving out of the existing base application. You don't have to create empty versions for extensions that don't include table changes. For example, the extension only includes a page object and code.
 
-[![Shows the empty extensions for data migration.](../developer/media/Upgrade-BC14-custom-BC23-empty.png)](../developer/media/Upgrade-BC14-custom-BC23-empty.png#lightbox)
+[![Shows the empty extensions for data migration.](../developer/media/Upgrade-BC14-custom-BC25-empty.svg)](../developer/media/Upgrade-BC14-custom-BC25-empty.svg#lightbox)
 
 The only file in the extension project that's required is an app.json. You can create the empty extension like any other extension by adding an AL project in Visual Studio Code:
 
@@ -104,10 +111,10 @@ The only file in the extension project that's required is an app.json. You can c
     The important settings in the app.json file are: `"id"`, `"name"`, `"version"`, `"publisher"`, `"dependencies"`, and `"runtime"`.
 
     - The `id` and `name` must match the value used by Microsoft's extensions.
-    - Set the `version` to any version lower than 23.0.0.0, like 14.0.0.0.
+    - Set the `version` to any version lower than 25.0.0.0, like 14.0.0.0.
     - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
     - Remove all other settings. It's important that there are no `"dependencies"` set.
-    - Set the `runtime` to `"12.0"`.
+    - Set the `runtime` to `"14.0"`.
 
     The app.json files for each extension should look similar to following examples:
 
@@ -118,7 +125,18 @@ The only file in the extension project that's required is an app.json. You can c
       "name": "System Application",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
-      "runtime": "12.0",
+      "runtime": "14.0",
+      "target": "OnPrem"
+    ```
+
+    **Business Foundation**
+
+    ```json
+      "id": "f3552374-a1f2-4356-848e-196002525837",
+      "name": "Business Foundation",
+      "publisher": "Microsoft",
+      "version": "14.0.0.0",
+      "runtime": "14.0",
       "target": "OnPrem"
     ```
 
@@ -129,7 +147,7 @@ The only file in the extension project that's required is an app.json. You can c
       "name": "Base Application",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
-      "runtime": "12.0",
+      "runtime": "14.0",
       "target": "OnPrem"
     ```
 
@@ -140,7 +158,7 @@ The only file in the extension project that's required is an app.json. You can c
       "name": "<extension name>",
       "publisher": "<extension publisher",
       "version": "<extension version - must be lower than the final version>",
-      "runtime": "12.0",
+      "runtime": "14.0",
       "target": "OnPrem"
     ```
 
@@ -158,7 +176,7 @@ In this step, you create an extension that consists only of the non-system table
 
 You'll create two versions of this extension. The first version contains the table objects. The second version, is an empty extension that contains a migrate.json file.
 
-[![Shows the two versions of the table migration extension.](../developer/media/Upgrade-BC14-custom-BC23-table-migration.png)](../developer/media/Upgrade-BC14-custom-BC23-table-migration.png#lightbox)
+[![Shows the two versions of the table migration extension.](../developer/media/Upgrade-BC14-custom-BC25-table-migration.svg)](../developer/media/Upgrade-BC14-custom-BC25-table-migration.svg#lightbox)
 
 ### Create the first version - tables only
 
@@ -187,13 +205,13 @@ You'll create two versions of this extension. The first version contains the tab
     > [!NOTE]
     > If the `--tableDataOnly` parameter isn't available, you'll need a later version ot the txt2al conversion tool. See [Prerequisites](#prereqs) for more information.
 
-5. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 23 DVD.
+5. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 25 DVD.
 
    For more information, see [Get Started with AL](../developer/devenv-get-started.md).
 
 6. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
 
-   Set the target platform to **12.0 Business Central 2023 release wave 2**.
+   Set the target platform to **14.0 Business Central 2024 release wave 2**.
 7. If present, delete the HelloWorld.al file.
 8. Configure the project's app.json file:
 
@@ -207,9 +225,9 @@ You'll create two versions of this extension. The first version contains the tab
 
     ```json
     {
-      "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
+      "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
       "name": "bc14baseapptablesonly",
-      "publisher": "My publisher",
+      "publisher": "Default Publisher",
       "version": "1.0.0.0",
       "brief": "",
       "description": "",
@@ -220,42 +238,44 @@ You'll create two versions of this extension. The first version contains the tab
       "logo": "",
       "dependencies": [],
       "screenshots": [],
-      "platform": "23.0.0.0",
-      "idRanges": [  ],
+      "platform": "1.0.0.0",
+      "idRanges": [],
       "resourceExposurePolicy": {
         "allowDebugging": true,
         "allowDownloadingSource": true,
         "includeSourceInSymbolFile": true
       },
-     "runtime": "12.0",
-     "features": [
+      "runtime": "14.0",
+      "features": [
         "NoImplicitWith"
       ],
-      "target": "OnPrem",
-      "showMyCode": true
+      "target": "OnPrem"
     }
     ```
 
-9. Create an `.alpackages` folder in the root folder of the project and then copy the version 23 system symbols extension (System.app file) to the folder.
+9. Create an `.alpackages` folder in the root folder of the project and then copy the version 25 system symbols extension (System.app file) to the folder.
 
-    The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\230\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
+    The System.app file is located where you installed the AL Development Environment. By default, the folder path is `C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\250\AL Development Environment`. This package contains the symbols for all the system tables and codeunits.
 
 10. Add the AL files for the tables that you converted earlier to the root folder for the project.
 
 11. Build the extension package for the first version.
 
-    To build the extension package, press Ctrl+Shift+B. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
+    To build the extension package, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
 
 ### Create the second version - empty
 
 1. In Visual Studio Code, create a new file called migration.json file and add it to the project's root folder.
-2. In the migration.json, include rules for the Microsoft base application, system application, and your customization extensions.
+2. In the migration.json, include rules for system application, business foundation extension, base application, and your customization extensions.
 
     ```json
     {
         "apprules": [
             {
                 "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f"
+            },
+            {
+                "id": "f3552374-a1f2-4356-848e-196002525837"
             },
             {
                 "id": "437dbf0e-84ff-417a-965d-ed2bb9650972"
@@ -270,6 +290,7 @@ You'll create two versions of this extension. The first version contains the tab
     In the example code:
 
     - `63ca2fa4-4f03-4f2b-a480-172fef340d3f` identifies the system application extension
+    - `f3552374-a1f2-4356-848e-196002525837` identifies the business foundation extension
     - `437dbf0e-84ff-417a-965d-ed2bb9650972` identifies the base application extension
     - The last entry is an example that identifies new customization extension. Include an entry for each customization extension for which you created an empty version in **Task 4**. Replace `<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>` with the actual extension ID. Remove this entry if not used.
 
@@ -288,7 +309,7 @@ You'll create two versions of this extension. The first version contains the tab
 4. Increase the `version` in the app.json file.
 5. Build the extension package for the second version.
 
-    To build the extension package, press Ctrl+Shift+B.
+    To build the extension package, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>.
 
 ## DATA UPGRADE
 
@@ -348,10 +369,10 @@ You'll create two versions of this extension. The first version contains the tab
 
 ## Task 7: Convert version 14 database
 
-This task runs a technical upgrade on the application database. The task converts the database from the version 14 platform to the version 23 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database. The task converts the database from the version 14 platform to the version 25 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
 [!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
-2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 23 as an administrator.
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 25 as an administrator.
 3. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```powershell
@@ -371,9 +392,9 @@ This task runs a technical upgrade on the application database. The task convert
 
 [!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
-## Task 8: Configure version 23 server for DestinationAppsForMigration
+## Task 8: Configure version 25 server for DestinationAppsForMigration
 
-In this step, you configure the version 23 server instance. In particular, you configure it to migrate the table migration extension that you created earlier. The migration is controlled by the `DestinationAppsForMigration` setting for the server instance. For more information about the `DestinationAppsForMigration` setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
+In this step, you configure the version 25 server instance. In particular, you configure it to migrate the table migration extension that you created earlier. The migration is controlled by the `DestinationAppsForMigration` setting for the server instance. For more information about the `DestinationAppsForMigration` setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
 
 1. Set the server instance to connect to the application database.
 
@@ -409,7 +430,7 @@ In this step, you configure the version 23 server instance. In particular, you c
 
 ## Task 9: Import License
 
-Import the version 23 partner license. To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
+Import the version 25 partner license. To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
 
 ```powershell
 Import-NAVServerLicense -ServerInstance <server instance name> -LicenseFile <path>
@@ -424,16 +445,17 @@ In this task, you'll publish the extensions configured as DestinationAppsForMigr
 1. Publish the first version of the table migration extension, which is the version that contains the table objects.
 
     ```powershell
-    Publish-NAVApp -ServerInstance <server instance name> -Path "<path to extension .app file>"
+    Publish-NAVApp -ServerInstance <server instance name> -Path "<path to tables only extension version 1.app file>" -SkipVerification
     ```
 
 2. Publish the empty versions of the following extensions:
 
     - **System Application** extension
+    - **Business Foundation** extension
     - **Base Application** extension
     - Customization extensions (if any).
 
-    This step publishes the extensions you created in Task 3. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter.
+    This step publishes the extensions you created in Task 3. Publish the extensions using the Publish-NAVApp, like in the previous steps.
 
 3. Restart the server instance.
 
@@ -447,7 +469,7 @@ In this task, you'll synchronize the tenant's database schema with any schema ch
 
 If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 23 server instance.
+1. (Multitenant only) Mount the tenant to the version 25 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
 
@@ -486,7 +508,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     > To verify the tenant state, run [Get-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/get-navtenant) cmdlet with the `-ForceRefresh` switch:
     >
     > `Get-NAVTenant <server instance> -Tenant <default> -ForceRefresh`
-4. Synchronize the empty versions of system application, base application, and customization extensions that you published in **Task 10**.
+4. Synchronize the empty versions of system application, business foundation, base application, and customization extensions that you published in **Task 10**.
 
 ## Task 12: Install DestinationAppsForMigration and move tables
 
@@ -512,11 +534,11 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
    Get-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -Detailed
    ```
 
-   The process is complete when you see `State = Operational` in the results.
+   The process is complete when you see `State = Operational` or `State = Completed` in the results.
 
    When completed, the table migration extension will be installed.
 
-3. Install the empty versions of the system, base, and customization extensions that you published in **Task 8**.
+3. Install the empty versions of the system, business foundation, base, and customization extensions that you published in **Task 8**.
 
     To install the extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
 
@@ -539,19 +561,24 @@ Publish-NAVApp -ServerInstance <server instance name> -Path "<path to extension 
 Publish the extensions in the following order:
 
 1. Second version of the table migration extension, which is the empty version with the migration.json file.
-2. Microsoft System Application
+1. Microsoft System Application
 
     Publish the Microsoft_System Application.app extension package file that is in the **Applications\System Application\Source** folder of installation media (DVD).  
-3. Microsoft Base Application
+1. Microsoft Business Foundation
+
+    Publish the Microsoft_Business Foindation.app extension package file that is in the **Applications\BusinessFoundation\Source** folder of installation media (DVD).  
+1. Microsoft Base Application
 
     Publish the Microsoft_Base Application.app extension package file that is in the **Applications\BaseApp\Source** folder of installation media (DVD).
 
     > [!NOTE]
     > The other .app files in this folder, like Microsoft_Danish language (Denmark).app, are extensions that add translations for a specific language. By publishing and installing these extensions, you add the capability of showing the base application in another language. These extensions aren't required to complete the upgrade and can be published and installed later.
-4. Application extension.
-5. Customization extensions.
+1. Application extension.
 
-6. Microsoft and third-party extensions.
+    Publish the Microsoft_Application.app extension package file that is in the **Applications\Application\Source** folder of installation media (DVD).
+1. Customization extensions.
+
+1. Microsoft and third-party extensions.
 
     The Microsoft extensions are in the **Applications** folder of installation media (DVD).
 
@@ -581,9 +608,11 @@ Synchronize the newly published extensions using the Sync-NAVApp cmdlet like you
 Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<extension name>" -Version <extension version>
 ```
 
+
 Synchronize the extensions in the following order:
 
 1. Microsoft System Application
+1. Microsoft Business Foundation
 1. Microsoft Base Application
 1. Microsoft Application
 1. Customization extensions that must take ownership of fields/tables from the table migration extension. These extensions contain table objects or table extension objects that must take ownership of tables or fields included in the first table migration extension version.
@@ -623,16 +652,16 @@ This step removes the temporary tables included in the table migration extension
 1. Uninstall the second version of the table migration extension.
 
    ```powershell
-   Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension>" -Version <extension version>
+   Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension - version 2>" -Version <extension version>
    ```
 
-2. Synchronize the extension by using the clean mode:
+1. Synchronize the extension by using the clean mode:
 
    ```powershell
-   Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension>" -Version <extension version> -Mode clean
+   Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension - version 2>" -Version <extension version> -Mode clean
    ```
 
-3. Unpublish the two versions of the table migration extension.
+1. Unpublish the two versions of the table migration extension.
 
 For more information, see [Unpublishing and Uninstalling Extensions](../developer/devenv-unpublish-and-uninstall-extension-v2.md).
 
@@ -643,33 +672,33 @@ The final step is to upgrade to the new extension versions in the following orde
 Run the data upgrade on the extensions in the following order:
 
 1. Upgrade the Microsoft System Application extension.
-2. Upgrade the Microsoft Base Application extension.
-3. Install the Microsoft Application extension
-4. Upgrade customization extensions, Microsoft, and third-party extensions.
+1. Upgrade the Microsoft Business Foundation extension.
+1. Upgrade the Microsoft Base Application extension.
+1. Install the Microsoft Application extension
+1. Upgrade customization extensions, Microsoft, and third-party extensions.
 
-  > [!NOTE]
-  >
-  > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must upgrade and install the India extensions.
-  >
-  > - Install the QR Generator.
-  > - Upgrade the Tax Engine extension.
-  > - Upgrade the India Tax Base extension.
-  > - Upgrade the India GST extension.
-  > - Upgrade the India Gate Entry extension.
-  > - Upgrade the India TCS extension.
-  > - Upgrade the India TDS extension.
-  > - Upgrade the India Voucher Interface extension.
-  > - Upgrade the Fixed Asset Depreciation for India extension.
-  > - Install the India Reports extension.
-  > - Upgrade the India Data Migration.
+    > [!NOTE]
+    >
+    > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must upgrade and install the India extensions.
+    >
+    > - Install the QR Generator.
+    > - Upgrade the Tax Engine extension.
+    > - Upgrade the India Tax Base extension.
+    > - Upgrade the India GST extension.
+    > - Upgrade the India Gate Entry extension.
+    > - Upgrade the India TCS extension.
+    > - Upgrade the India TDS extension.
+    > - Upgrade the India Voucher Interface extension.
+    > - Upgrade the Fixed Asset Depreciation for India extension.
+    > - Install the India Reports extension.
+    > - Upgrade the India Data Migration.
 
    For customization extensions, only do this step for those extensions that have an empty version currently installed on the tenant (see **Task 10**). If you have a customization extension for which you didn't create and publish an empty version, complete the next step to install these extensions.
-5. Install remaining customization extensions for which you didn't create and publish an empty version.
+1. Install remaining customization extensions for which you didn't create and publish an empty version.
 
 ## Task 18: Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
-
 
 ## Task 19: Install upgraded permissions sets
 
@@ -678,8 +707,8 @@ In this task, you install the custom permission sets that you upgraded earlier i
 ### For permission sets as AL objects
 
 1. Publish the extension or extensions that include the permission sets.
-2. Sync the extensions with the tenant.
-3. Install the extensions on the tenant.
+1. Sync the extensions with the tenant.
+1. Install the extensions on the tenant.
 
 ### For permission sets as data in XML
 
@@ -689,10 +718,10 @@ In this task, you install the custom permission sets that you upgraded earlier i
     Set-NavServerConfiguration -ServerInstance <BC19 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
     ```
 
-2. Restart the serve instance.
-3. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
-4. Search for and open the **Permission Sets** page.
-5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
+1. Restart the serve instance.
+1. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
+1. Search for and open the **Permission Sets** page.
+1. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
@@ -703,16 +732,16 @@ For more information, see [To export and import a permission set](/dynamics365/b
 ## Post-upgrade tasks
 
 1. [!INCLUDE[delegation-upgrade](../developer/includes/delegation-upgrade.md)]
-2. Uninstall the table migration extension.
-3. Enable task scheduler on the server instance.
-4. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
-5. If you want to use data encryption as before, enable it.
+1. Uninstall the table migration extension.
+1. Enable task scheduler on the server instance.
+1. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
+1. If you want to use data encryption as before, enable it.
 
    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
-6. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
+1. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
     Version 18 introduced a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
 
@@ -721,7 +750,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).  
-7. Complete the setup of the integration with Dynamics 365 Sales.
+1. Complete the setup of the integration with Dynamics 365 Sales.
 
     If your [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises deployment had an active connection with Dynamics 365 Sales, you must perform the following steps to complete the setup of the connection in [!INCLUDE [prod_short](../includes/prod_short.md)] online:
 
