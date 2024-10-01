@@ -456,7 +456,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=6>The user settings (UserSecurityId [UserSecurityId1]) has been updated with the values: Language ID [LanguageId], Locale ID [LocaleId], Company [Company], Time Zone [TimeZone], Profile ID [ProfileId] by UserSecurityId [UserSecurityId2]</td>
+            <td rowspan=7>The user settings (UserSecurityId [UserSecurityId1]) has been updated with the values: Language ID [LanguageId], Locale ID [LocaleId], Company [Company], Time Zone [TimeZone], Profile ID [ProfileId] by UserSecurityId [UserSecurityId2]</td>
             <td>UserSecurityID1</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
