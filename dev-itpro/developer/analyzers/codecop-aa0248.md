@@ -20,7 +20,7 @@ Add 'this' qualification to improve readability.
 
 ## Remarks
 
-This rule is hidden by default, which means that it appears as three dots in the editor, but doesn't show up as a diagnostic in the **Problems** view in Visual Studio Code or in any pipelines. The CodeCop rule identifies where you can take advantage of using the `this` keyword. Use the [workspace-wide code action](devenv-code-actions.md) to help you clean up your code.
+This rule is hidden by default, which means that it appears as three dots in the editor, but doesn't show up as a diagnostic in the **Problems** view in Visual Studio Code or in any pipelines. The CodeCop rule identifies where you can take advantage of using the `this` keyword. Use the [workspace-wide code action](../devenv-code-actions.md) to help you clean up your code.
 
 ## Related information
 
