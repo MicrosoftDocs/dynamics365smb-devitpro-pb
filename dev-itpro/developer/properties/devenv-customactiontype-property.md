@@ -1,8 +1,8 @@
 ---
-title: "CustomActionType Property"
+title: "CustomActionType property"
 description: "Sets the type of the custom action."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Sets the type of the custom action.
 ## Applies to
 -   Page Custom Action
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -121,6 +121,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 }
 ```
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

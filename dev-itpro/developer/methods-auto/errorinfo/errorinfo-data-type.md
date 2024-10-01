@@ -1,8 +1,8 @@
 ---
-title: "ErrorInfo Data Type"
+title: "ErrorInfo data type"
 description: "Provides a structure for grouping information about an error."
 ms.author: solsen
-ms.date: 07/22/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ErrorInfo Data Type
+# ErrorInfo Data type
 > **Version**: _Available or changed with runtime version 3.0._
 
 Provides a structure for grouping information about an error.
@@ -75,7 +75,7 @@ The different properties in the `ErrorInfo` data type are used in different ways
 |[Title([Text])](errorinfo-title-method.md)| Add a title to the error message. Not recommended for validation errors. |
 
 
-## See Also
+## Related information
 
 [Error(ErrorInfo) method](../dialog/dialog-error-errorinfo-method.md)   
 [Actionable errors](../../devenv-actionable-errors.md)  

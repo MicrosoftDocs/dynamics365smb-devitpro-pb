@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0022"
 description: "An IF followed by two or more ELSE IF should be replaced with a CASE."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ Substitute the IF THEN ELSE structure with a CASE.
 An IF followed by two or more ELSE IF should be replaced with a CASE.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

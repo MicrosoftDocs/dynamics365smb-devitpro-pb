@@ -1,8 +1,8 @@
 ---
-title: "WordMergeDataItem Property"
+title: "WordMergeDataItem property"
 description: "Specifies the root-level DataItem that is used to generate separate reports for multiple records."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -73,7 +73,7 @@ report 1306 "Standard Sales - Invoice"
 ```
 
 
-## See Also
+## Related information
 
 [Creating a Word layout report](../devenv-howto-report-layout.md)   
 [Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)   

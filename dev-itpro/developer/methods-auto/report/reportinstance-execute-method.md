@@ -2,7 +2,7 @@
 title: "Report.Execute(Text [, RecordRef]) Method"
 description: "Runs a report in preview or processing-only mode without showing the request page in the client."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -45,7 +45,7 @@ You typically use this method together with the [RunRequestPage Method](../../me
 
  For a simple example that illustrates how to use the Execute method, see example in the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) topic.  
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -2,7 +2,7 @@
 title: "CompanyProperty.DisplayName() Method"
 description: "Gets the current company display name."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -28,7 +28,7 @@ The display name of the company as specified in the **Display Name** field in th
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [CompanyProperty Data Type](companyproperty-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

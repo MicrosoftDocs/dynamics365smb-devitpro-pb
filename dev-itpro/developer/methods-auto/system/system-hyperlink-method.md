@@ -2,7 +2,7 @@
 title: "System.Hyperlink(Text) Method"
 description: "Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -59,7 +59,7 @@ HyperLink(Rec.UrlField);
 
 ```  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

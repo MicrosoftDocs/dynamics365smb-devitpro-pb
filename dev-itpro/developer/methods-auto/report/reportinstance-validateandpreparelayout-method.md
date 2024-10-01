@@ -2,7 +2,7 @@
 title: "Report.ValidateAndPrepareLayout(InStream, var InStream, ReportLayoutType) Method"
 description: "Validates if the provided report layout is compatible with the specified report and performs the required modifications so that it can be used for rendering."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -45,7 +45,7 @@ The type of the layout.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

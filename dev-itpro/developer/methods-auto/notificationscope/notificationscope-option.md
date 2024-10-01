@@ -1,8 +1,8 @@
 ---
-title: "NotificationScope System Option"
+title: "NotificationScope system option"
 description: "Specifies the context in which the notification appears in the client."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -22,6 +22,6 @@ Specifies the context in which the notification appears in the client.
 |LocalScope|The notification appears in context of the user's current task, on the page the user is currently working on. This is the default value.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

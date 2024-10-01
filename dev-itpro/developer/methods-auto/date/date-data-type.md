@@ -1,8 +1,8 @@
 ---
-title: "Date Data Type"
+title: "Date data type"
 description: "Denotes a date ranging from January 1, 1753 to December 31, 9999."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,13 +10,23 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Date Data Type
+# Date Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes a date ranging from January 1, 1753 to December 31, 9999.
 
 
 
+## Instance methods
+The following methods are available on instances of the Date data type.
+
+|Method name|Description|
+|-----------|-----------|
+|[Day()](date-day-method.md)|Gets the day of month.|
+|[DayOfWeek()](date-dayofweek-method.md)|Gets the day of the week.|
+|[Month()](date-month-method.md)|Gets the month.|
+|[WeekNo()](date-weekno-method.md)|Gets the week number.|
+|[Year()](date-year-method.md)|Gets the year.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -62,7 +72,7 @@ The message window displays the following:
   
 **06/12/2018**
   
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

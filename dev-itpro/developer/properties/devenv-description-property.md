@@ -1,8 +1,8 @@
 ---
-title: "Description Property"
+title: "Description property"
 description: "Sets the description."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,8 +17,8 @@ Sets the description. This description is for internal use and does not appear t
 
 ## Applies to
 -   Codeunit
--   Table Field
--   Table Key
+-   Table field
+-   Table key
 -   Page
 -   Page Action
 -   Page Action Area
@@ -55,6 +55,6 @@ Sets the description. This description is for internal use and does not appear t
 Description = 'Name of the organization.';
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  

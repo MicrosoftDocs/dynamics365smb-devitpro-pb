@@ -2,7 +2,7 @@
 title: "HttpClient.Delete(Text, var HttpResponseMessage) Method"
 description: "Sends a DELETE request to delete the resource identified by the request URL."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -85,7 +85,7 @@ The preceding code:
 ## Supported HTTP methods
 [!INCLUDE[SupportedHTTPmethods](../../../includes/include-http-methods.md )]
 
-## See Also
+## Related information
 [Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

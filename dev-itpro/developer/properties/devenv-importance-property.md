@@ -1,8 +1,8 @@
 ---
-title: "Importance Property"
+title: "Importance property"
 description: "Sets the amount of information that is visible in a window or dialog box."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -19,7 +19,7 @@ Sets the amount of information that is visible in a window or dialog box.
 -   Page Label
 -   Page Field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -41,6 +41,6 @@ You use this property to control the amount of information that is visible on a 
 
 As a developer, the **Importance** property can also be set also by Use Designer (see [Use Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)
