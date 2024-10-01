@@ -379,7 +379,114 @@ Activities listed in the table below can be audited by filtering to the `Configu
 </table>
 
 ### Administered user activities
-Coming soon.
+
+Activities listed in the table below can be audited by filtering to the `Administered user` event.
+
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Message parameters</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>The license configuration [PlanConfiguration] has been created by the UserSecurityID [UserSecurityId]</td>
+            <td>PlanConfiguration</td>
+            <td>D365 Business Central Basic Financials</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The license configuration [PlanConfiguration] has been modified by the UserSecurityID [UserSecurityId]</td>
+            <td>PlanConfiguration</td>
+            <td>D365 Business Central Basic Financials</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The license configuration [PlanConfiguration] has been deleted by the UserSecurityID [UserSecurityId]</td>
+            <td>PlanConfiguration</td>
+            <td>D365 Business Central Basic Financials</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The plan configuration [PlanConfiguration] has been customized by the UserSecurityID [UserSecurityId]</td>
+            <td>PlanConfiguration</td>
+            <td>D365 Business Central Basic Financials</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Update users from Microsoft 365 wizard has been run by the UserSecurityID [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The user with UserSecurityId [UserSecurityId1] has been disabled by user with UserSecurityID [UserSecurityId2]</td>
+            <td>UserSecurityId1</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId2</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The permission set [PermissionSet] has been copied by UserSecurityId</td>
+            <td>UserSecurityID1</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>UserSecurityID2</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>The Effective Permissions page has been opened by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=6>The user settings (UserSecurityId [UserSecurityId1]) has been updated with the values: Language ID [LanguageId], Locale ID [LocaleId], Company [Company], Time Zone [TimeZone], Profile ID [ProfileId] by UserSecurityId [UserSecurityId2]</td>
+            <td>UserSecurityID1</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>LanguageId</td>
+            <td>1033</td>
+        </tr>
+        <tr>
+            <td>LocaleId</td>
+            <td>1033</td>
+        </tr>
+        <tr>
+            <td>Company</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td>TimeZone</td>
+            <td>W. Europe Standard Time</td>
+        </tr>
+        <tr>
+            <td>ProfileId</td>
+            <td>BUSINESS MANAGER EVALUATION</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId2</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+    </tbody>
+</table>
+
 
 ### Administered company activities
 Coming soon.
