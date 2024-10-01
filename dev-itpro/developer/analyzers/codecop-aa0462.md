@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0462"
 description: "The CalcDate should only be used with DataFormula variables."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ The CalcDate should only be used with DataFormula variables. Alternatively the s
 The CalcDate should only be used with DataFormula variables. Alternatively the string should be enclosed using the < > symbols.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

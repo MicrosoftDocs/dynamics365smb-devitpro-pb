@@ -2,7 +2,7 @@
 title: "File.UploadIntoStream(Text, Text, Text, var Text, var InStream) Method"
 description: "Sends a file from the client computer to the corresponding server."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -56,7 +56,7 @@ The default file to upload to the service. The name displays in the dialog box f
 > This method is deprecated from runtime 7.0. Use [File.UploadIntoStream Method](file-uploadintostream-string-instream-method.md) instead.
 
 
-## See Also
+## Related information
 [File Data Type](file-data-type.md)
 [Get Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../../devenv-dev-overview.md)

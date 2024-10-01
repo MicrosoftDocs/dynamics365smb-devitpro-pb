@@ -2,7 +2,7 @@
 title: "BigText.AddText(Text [, Integer]) Method"
 description: "Adds a text string to a BigText variable."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -97,7 +97,7 @@ MyBigText.AddText('ABCDEFG');
 MyBigText.AddText('ZZZ', 0); // Returns an error.  
 ```  
 
-## See Also
+## Related information
 
 [BigText Data Type](bigtext-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

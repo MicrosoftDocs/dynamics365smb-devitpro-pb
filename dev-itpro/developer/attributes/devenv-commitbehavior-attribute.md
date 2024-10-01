@@ -1,8 +1,8 @@
 ---
-title: "CommitBehavior Attribute"
+title: "CommitBehavior attribute"
 description: "Specifies the behavior of a commit call inside the method scope."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,13 +11,13 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# CommitBehavior Attribute
+# CommitBehavior attribute
 > **Version**: _Available or changed with runtime version 6.0._
 
 Specifies the behavior of a commit call inside the method scope.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -124,6 +124,6 @@ codeunit 50103 MySubscribingCodeunit
 
 ```
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

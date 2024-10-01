@@ -2,7 +2,7 @@
 title: "SessionSettings.TimeZone([Text]) Method"
 description: "Gets or sets the time zone property in a SessionSettings object."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -59,7 +59,7 @@ end;
 ```  
 
 
-## See Also
+## Related information
 
 [SessionSettings Data Type](sessionsettings-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

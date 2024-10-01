@@ -28,7 +28,7 @@ UseTemporary = true;
 
 If the data that you are importing has a different structure than the table in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] that you want to insert it into, you could import the data into a temporary table. The temporary table holds the data in cache without writing it to the database. You can then modify the data before inserting it into the database.
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [XMLPort Object](../devenv-xmlport-object.md)   

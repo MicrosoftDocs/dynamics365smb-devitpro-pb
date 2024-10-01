@@ -2,7 +2,7 @@
 title: "Report.DefaultLayout(Integer) Method"
 description: "Gets the default built-in layout type that is used on a specified report."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -82,7 +82,7 @@ begin
 end;
 ```
 
-## See also
+## Related information
 
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

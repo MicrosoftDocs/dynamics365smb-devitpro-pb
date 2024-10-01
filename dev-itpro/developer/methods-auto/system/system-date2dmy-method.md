@@ -2,7 +2,7 @@
 title: "System.Date2DMY(Date, Integer) Method"
 description: "Gets the day, month, or year of a Date Data Type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -68,7 +68,7 @@ The message window displays the following:
   
 **Today is day 16 of month 2 of the year 2014.**  
  
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

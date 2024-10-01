@@ -1,8 +1,8 @@
 ---
-title: "TableNo Property"
+title: "TableNo property"
 description: "Sets the source table number, if any, for this codeunit."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -42,6 +42,6 @@ The signature of the `OnRun` trigger is `OnRun(var Rec : Record Item)`.
 
 You can then use the `Rec` variable in the codeunit, and use the  [Run Method \(Codeunit\)](../methods-auto/codeunit/codeunit-RUN-method.md) to execute the codeunit.  
   
-## See Also
+## Related information
 
 [Run Method \(Codeunit\)](../methods-auto/codeunit/codeunit-run-method.md)

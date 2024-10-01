@@ -1,8 +1,8 @@
 ---
-title: "InDataSet Attribute"
+title: "InDataSet attribute"
 description: "Sets whether the AL variable's value is included in the dataset."
 ms.author: solsen
-ms.date: 08/02/2023
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,13 +11,13 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# InDataSet Attribute
+# InDataSet attribute
 > **Version**: _Available or changed with runtime version 1.0 until version 11.0 where it was deprecated for the following reason: "The InDataset attribute is unused."_
 
 Sets whether the AL variable's value is included in the dataset.
 
 
-## Applies To
+## Applies to
 
 - Variable
 
@@ -49,7 +49,7 @@ You must define this attribute on a variable if it's used as the value of the [E
 > [!NOTE]
 > This attribute is obsolete. It no longer works and isn't required to include the AL variable's value in the dataset.
 
-## See Also
+## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
 [StyleExpr Property](../properties/devenv-styleexpr-property.md)  

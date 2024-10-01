@@ -2,7 +2,7 @@
 title: "Database.Commit() Method"
 description: "Ends the current write transaction."
 ms.author: solsen
-ms.date: 07/08/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -44,7 +44,7 @@ Commit();
 EndWriteTransactions   
 ```  
 
-## See Also
+## Related information
 
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
