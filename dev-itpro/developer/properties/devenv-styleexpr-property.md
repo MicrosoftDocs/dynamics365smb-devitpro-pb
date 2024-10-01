@@ -1,8 +1,8 @@
 ---
-title: "StyleExpr Property"
+title: "StyleExpr property"
 description: "Sets whether the format that is specified in the Style Property is applied to text in a field."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -44,6 +44,6 @@ if (MyField = 'abc')
 > [!NOTE]  
 > To use a variable for the **StyleExpr** property, it must be set as a global page variable.  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  

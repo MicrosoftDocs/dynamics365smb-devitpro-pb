@@ -30,7 +30,7 @@ Sets additional information about what will be contained in the field.
 SubType = Bitmap;
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)   

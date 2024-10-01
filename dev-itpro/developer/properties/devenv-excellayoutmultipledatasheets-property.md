@@ -1,8 +1,8 @@
 ---
-title: "ExcelLayoutMultipleDataSheets Property"
+title: "ExcelLayoutMultipleDataSheets property"
 description: "Sets whether an Excel layout will render to multiple data sheets or in a single sheet named Data."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -23,6 +23,6 @@ There will be one sheet per root dataitem in the report object. The default is t
 -   Report
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

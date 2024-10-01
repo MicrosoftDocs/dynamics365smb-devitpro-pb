@@ -1,8 +1,8 @@
 ---
-title: "XmlName Property"
+title: "XmlName property"
 description: "Sets a variable name for the table or the text that is the data source of the current element."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,6 +39,6 @@ XmlName = 'CreditNote';
 
 If the **XmlName** property is not defined, it will use the string specified in the [NodeName Property](./devenv-properties.md) as the default variable name.
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)
