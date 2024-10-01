@@ -120,7 +120,7 @@ page 50110 PromptDialog
 
 In this case, the `ErrorInfo` message part is rendered inline, and the title part is used for the tooltip. The detailed message is ignored. 
 
-:::image type="content" source="../media/prompt-dialog-error-info-s.png" alt-text="Example of rendering a message in the prompt dialog":::
+:::image type="content" source="../media/prompt-dialog-error-info-s.png" alt-text="Example of rendering an errorinfo message in the prompt dialog":::
 
 ## Related information
 
