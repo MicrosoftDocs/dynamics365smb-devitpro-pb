@@ -1,8 +1,8 @@
 ---
-title: "Record Data Type"
+title: "Record data type"
 description: "Is a complex data type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record Data Type
+# Record Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is a complex data type.
@@ -122,8 +122,6 @@ The following methods are available on instances of the Record data type.
 |[TestField(Any, TextConst, ErrorInfo)](record-testfield-joker-textconst-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code)](record-testfield-joker-code-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code, ErrorInfo)](record-testfield-joker-code-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
-|[TestField(Any, Text)](record-testfield-joker-text-method.md)|Tests whether the contents of a field match a given value.|
-|[TestField(Any, Text, ErrorInfo)](record-testfield-joker-text-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum)](record-testfield-joker-anyenum-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum, ErrorInfo)](record-testfield-joker-anyenum-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Any)](record-testfield-joker-joker-method.md)|Tests whether the contents of a field match a given value.|
@@ -134,6 +132,6 @@ The following methods are available on instances of the Record data type.
 |[WritePermission()](record-writepermission-method.md)|Determines whether a user can write to a table. This method can test for both full write permission and partial write permission that has been granted with a security filter. A write permission consists of Insert, Delete, and Modify permissions.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

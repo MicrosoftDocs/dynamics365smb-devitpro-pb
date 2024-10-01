@@ -1,8 +1,8 @@
 ---
 title: "Report.SaveAsXml(Integer, Text [, var Record]) Method"
-description: "Saves the resulting data set of a report as an .xml file."
+description: "Saves the resulting data set of a query as an .xml file."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -82,7 +82,7 @@ end;
 You can create an action on a page and set the action to run this code. When you run the action, the **Export File** dialog box opens. Choose **Save** to save the file to the client.  
 
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

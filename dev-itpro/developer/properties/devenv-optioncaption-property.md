@@ -1,8 +1,8 @@
 ---
-title: "OptionCaption Property"
+title: "OptionCaption property"
 description: "Sets the string string options that are displayed to the user."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets the string string options that are displayed to the user.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 -   Report Column
 
@@ -45,7 +45,7 @@ field(1301; "Prediction Confidence"; Option)
 
 **OptionCaption** sets the text used to show the option values available for a variable or a field on a page or report. The [OptionString Property](./devenv-optionmembers-field-property.md) contains the set of values that are acceptable choices. If you have set the [OptionCaptionML Property](devenv-optioncaptionml-property.md), this overrides the OptionCaption setting.  
   
-## See Also  
+## Related information  
 
 [OptionString Property](./devenv-optionmembers-field-property.md)  
 [OptionCaptionML Property](devenv-optioncaptionml-property.md)

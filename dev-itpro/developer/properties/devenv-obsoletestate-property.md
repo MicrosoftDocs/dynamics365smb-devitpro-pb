@@ -1,8 +1,8 @@
 ---
-title: "ObsoleteState Property"
+title: "ObsoleteState property"
 description: "Marks whether the object will be deprecated."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -20,8 +20,8 @@ Marks whether the object will be deprecated.
 -   Page Custom Action
 -   Page File Upload Action
 -   Table
--   Table Field
--   Table Key
+-   Table field
+-   Table key
 -   Codeunit
 -   Enum Type
 -   Enum Value
@@ -52,7 +52,7 @@ Marks whether the object will be deprecated.
 -   Permission Set
 -   Field Group
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -78,7 +78,7 @@ By coding against this property, you can use this property as a way to communica
 > [!NOTE]  
 > When developing using [!INCLUDE[nav_dev_long_md](../includes/nav_dev_long_md.md)] (C/SIDE), you do not get warnings or errors when you compile objects that reference table objects, fields, or keys that are marked as **Pending** or **Removed**. **ObsoleteState** property is only detected by the AL compiler, which will return warnings for references to elements marked as **Pending** and errors for references to elements marked as **Removed**.
 
-## See Also
+## Related information
 
 [ObsoleteReason Property](devenv-obsoletereason-property.md)  
 [Properties](devenv-properties.md)  

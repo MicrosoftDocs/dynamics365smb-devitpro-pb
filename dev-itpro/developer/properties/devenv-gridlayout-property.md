@@ -1,8 +1,8 @@
 ---
-title: "GridLayout Property"
+title: "GridLayout property"
 description: "Specifies if the layout is rows or columns."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Specifies if the layout is rows or columns.
 ## Applies to
 -   Page Group
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -45,7 +45,7 @@ This property is only supported on grids.
 > [!IMPORTANT]
 > Arranging in rows only works in the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. In the [!INCLUDE[webclient](../includes/webclient.md)], fields can only be arranged in columns.
 
-## See Also
+## Related information
 
 [Field Arrangement on FastTabs](../devenv-arranging-fields-on-fasttab.md)  
 [Properties](devenv-properties.md)

@@ -1,8 +1,8 @@
 ---
-title: "SourceTable Property"
+title: "SourceTable property"
 description: "Sets the ID of the table from which this page will display records."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ SourceTable = Customer;
 Use the up arrow to select the table you want. There are some page types that do not support having a source table. 
 The SourceTable defines the structure of the record that you want to show on the page. 
   
-## See Also  
+## Related information  
 
 [Page Property Overview](devenv-page-property-overview.md)   
 [Properties](devenv-page-property-overview.md)

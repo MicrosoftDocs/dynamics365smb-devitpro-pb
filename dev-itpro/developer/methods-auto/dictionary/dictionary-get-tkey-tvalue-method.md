@@ -2,7 +2,7 @@
 title: "Dictionary.Get(TKey, var TValue) Method"
 description: "Gets the value associated with the specified key."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,7 +41,7 @@ The value associated with the specified key.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Dictionary Data Type](dictionary-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

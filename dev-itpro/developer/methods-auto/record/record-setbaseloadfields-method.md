@@ -2,7 +2,7 @@
 title: "Record.SetBaseLoadFields() Method"
 description: "Sets that only fields for the base table to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,7 +32,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

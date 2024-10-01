@@ -1,8 +1,8 @@
 ---
-title: "RequestedWidth Property"
+title: "RequestedWidth property"
 description: "RequestedWidth specifies the initial width of the control add-in."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -43,6 +43,6 @@ HorizontalShrink = true;
 MinimumWidth = 100; 
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)  

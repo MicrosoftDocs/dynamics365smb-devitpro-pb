@@ -16,8 +16,7 @@ In a query object, you can use the [Method property](properties/devenv-method-pr
 |[Average](devenv-query-totals-grouping.md#Average)|Calculates the average value of the field in the designated column for all records that are selected as part of the grouped set.<br /><br /> When averaging fields that have an integer data type \(such as `Integer` or `BigInteger`\), integer division is used. The result isn't rounded, and the remainder is discarded. For example, 5÷2=2 instead of 2.5 \(or 2 1/2\).|  
 |[Min](devenv-query-totals-grouping.md#Minimum)|Retrieves the lowest value of the field in the designated column for all records that are selected as part of the grouped set.|  
 |[Max](devenv-query-totals-grouping.md#Maximum)|Retrieves the highest value of the field in the designated column for all records that are selected as part of the grouped set.|  
-|[Count](devenv-query-totals-grouping.md#Count)|Returns the number of records that are selected as part of the grouped set.|  
-|[Distinct](#using-a-query-to-get-distinct-values)| Returns a set of distinct values from a table.|  
+|[Count](devenv-query-totals-grouping.md#Count)|Returns the number of records that are selected as part of the grouped set. <br />  You can return a set of [Distinct](#using-a-query-to-get-distinct-values) values from a table using a `Count` method. |  
 
 ## Setting up an aggregate method for a query column
 

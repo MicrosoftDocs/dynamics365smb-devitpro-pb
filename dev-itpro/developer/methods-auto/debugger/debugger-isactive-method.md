@@ -2,7 +2,7 @@
 title: "Debugger.IsActive() Method"
 description: "Indicates whether the debugger is active."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -36,7 +36,7 @@ When the debugger is activated, it is in one of the following states:
 - Attached to a session.
 - Waiting to attach to a session.  
 
-## See Also
+## Related information
 
 [Debugger Data Type](debugger-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -2,7 +2,7 @@
 title: "Text.StrPos(Text, Text) Method"
 description: "Searches for the first occurrence of substring inside a string."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -85,7 +85,7 @@ Pos3 := StrPos("abc","bc"); // Returns 2.
 Pos4 := StrPos("abc","x"); // Returns 0.  
 ```  
 
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
