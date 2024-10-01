@@ -1,8 +1,8 @@
 ---
-title: "DeleteAllowed Property"
+title: "DeleteAllowed property"
 description: "Sets a value that specifies whether users can delete records while using the page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -31,5 +31,5 @@ Sets a value that specifies whether users can delete records while using the pag
 DeleteAllowed = false;
 ```
   
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)

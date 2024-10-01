@@ -2,7 +2,7 @@
 title: "HttpRequestMessage.GetCookie(Text, var Cookie) Method"
 description: "Gets the specified cookie given a name."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,7 +41,7 @@ The cookie object.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [HttpRequestMessage Data Type](httprequestmessage-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

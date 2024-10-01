@@ -2,7 +2,7 @@
 title: "Debugger.EnableSqlTrace(Integer [, Boolean]) Method"
 description: "Enables or verifies SQL tracing."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -44,7 +44,7 @@ You use Microsoft SQL Server Profiler to view traces. For more information, see 
   
 You can also enable and disable SQL tracing by using the **Start Full SQL Tracing** and **Stop Full SQL Tracing** buttons on the **Session List** page.  
 
-## See Also
+## Related information
 [Debugger Data Type](debugger-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

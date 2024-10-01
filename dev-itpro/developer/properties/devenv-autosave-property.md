@@ -1,8 +1,8 @@
 ---
-title: "AutoSave Property"
+title: "AutoSave property"
 description: "Sets whether imported records are automatically written to the table."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -36,6 +36,6 @@ If AutoSave is set to **false**, then an imported record is not automatically wr
   
 If a record already exists and AutoSave is set to **true**, then the values of the [AutoReplace Property](devenv-autoreplace-property.md) and the [AutoUpdate Property](devenv-autoupdate-property.md) determine whether the imported record overwrites or updates the existing record. If the record already exists and the values of the AutoReplace property and the AutoUpdate property are both **false**, then an error occurs.  
   
-## See Also  
+## Related information  
 [AutoReplace Property](devenv-autoreplace-property.md)   
 [AutoUpdate Property](devenv-autoupdate-property.md)

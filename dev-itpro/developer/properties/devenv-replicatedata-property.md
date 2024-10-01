@@ -1,8 +1,8 @@
 ---
-title: "ReplicateData Property"
+title: "ReplicateData property"
 description: "Specifies if the table should be replicated."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -31,7 +31,7 @@ Specifies if the table should be replicated.
 ReplicateData = false;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Table Properties](devenv-table-properties.md)  
