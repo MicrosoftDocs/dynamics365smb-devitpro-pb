@@ -2,7 +2,7 @@
 title: "TaskScheduler.CreateTask(Integer, Integer [, Boolean] [, Text] [, DateTime] [, RecordId]) Method"
 description: "Adds a task to be run by the task scheduler."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -93,7 +93,7 @@ begin
 end;
 ```  
 
-## See also
+## Related information
 
 [CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration)](taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-duration-method.md)   
 [TaskScheduler Data Type](taskscheduler-data-type.md)     

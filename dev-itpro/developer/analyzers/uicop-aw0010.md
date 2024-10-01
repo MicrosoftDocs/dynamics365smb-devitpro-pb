@@ -2,7 +2,7 @@
 title: "UICop Warning AW0010"
 description: "A Repeater control used on a List page must be defined at the beginning of the area(Content) section."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ A Repeater control used on a List page must be defined at the beginning of the a
 A Repeater control used on a List page must be defined at the beginning of the area(Content) section.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [UICop Analyzer](uicop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

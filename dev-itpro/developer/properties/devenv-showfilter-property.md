@@ -1,8 +1,8 @@
 ---
-title: "ShowFilter Property"
+title: "ShowFilter property"
 description: "Sets whether the filter pane is shown on a page by default."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,5 +39,5 @@ ShowFilter = false;
 
 Using customization, a user can override the ShowFilter property setting to show or hide the filter except when the page is displayed in a part of another page, such as a FastTab or FactBox. When the page is displayed in a page part, the ShowFilter property permanently hides or shows the filter pane.
 
-## See Also
+## Related information
 [Properties](devenv-properties.md)

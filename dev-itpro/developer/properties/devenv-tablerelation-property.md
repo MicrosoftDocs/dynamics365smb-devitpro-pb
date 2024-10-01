@@ -1,8 +1,8 @@
 ---
-title: "TableRelation Property"
+title: "TableRelation property"
 description: "Sets up a lookup into another table."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -26,7 +26,7 @@ TableRelation = <TableName>[.<FieldName>] [WHERE(<TableFilters>)] |
 
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -114,7 +114,7 @@ tableextension 50135 TableWithRelationExt extends TableWithRelation
 ```
 
   
-## See Also
+## Related information
 
 [ValidateTableRelation Property](devenv-validatetablerelation-property.md)  
 [TestTableRelation Property](devenv-testtablerelation-property.md)

@@ -2,7 +2,7 @@
 title: "RecordRef.SetTable(Record, Boolean) Method"
 description: "Sets the table to which a Record variable refers as the same table as a RecordRef variable."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -36,7 +36,7 @@ Specifies whether the method copies filters, views, automatically calculated Flo
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [RecordRef Data Type](recordref-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

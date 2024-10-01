@@ -1,8 +1,8 @@
 ---
-title: "PrintOnlyIfDetail Property"
+title: "PrintOnlyIfDetail property"
 description: "Specifies whether to print data in a report for the parent data item when the child data item does not generate any output."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -82,6 +82,6 @@ If you set **PrintOnlyIfDetail** to **false**, then the report outputs the follo
 |Order|46897889|101015||…|  
 |Order|10000|101016||…|  
   
-## See Also  
+## Related information  
 
 [PrintOnlyIfDetail Method (Report)](../methods-auto/report/reportinstance-printonlyifdetail-method.md)

@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0223"
 description: "The value of the OptionCaption property of Fields must be filled in."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ The value of the OptionCaption property of Fields must be filled in.
 The value of the OptionCaption property of Fields must be filled in.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

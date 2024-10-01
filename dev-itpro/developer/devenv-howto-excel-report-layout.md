@@ -3,7 +3,7 @@ title: Creating an Excel layout report
 description: Describes the steps involved in creating a report that uses an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 06/10/2024
+ms.date: 09/09/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
@@ -20,7 +20,7 @@ For more information about the report object, see [Report Object](devenv-report-
 
 When designing an Excel layout, you need to know the following information:
 
-- How the layout is connected to the dataset definition, also known as the _data contract_).
+- How the layout is connected to the dataset definition, also known as the _data contract_.
 - How the layout file is validated when importing it into [!INCLUDE[prod_short](../includes/prod_short.md)].
 - How the [!INCLUDE[prod_short](../includes/prod_short.md)] server merges the layout with data when running the report.
 
@@ -150,10 +150,9 @@ There will be one row for each active filter defined on the request page.
 
 #### Named formulas 
 
-In Business Central 2024 release wave 2 and later, at creation time (either from VSCode or when getting a new template from the request page), Excel report layout workbooks include named formulas for easier lookups. Instead of having to write complicated VLOOKUP or XLOOKUP formulas, report authors can use named formulas, such as **ReportRequest.Date** or **ReportMetaData.ReportHelpLink**.
+In Business Central 2024 release wave 2 and later, when you create Excel report layout workbooks, either from VSCode or when you get a new template from the request page, Excel report layout workbooks include named formulas for easier lookups. Instead of having to write complicated VLOOKUP or XLOOKUP formulas, report authors can use named formulas, such as **ReportRequest.Date** or **ReportMetaData.ReportHelpLink**.
 
-To see all available formulas in an Excel workbook, choose *Formulas*, and then *Name Manager* (in the *Defined Names* group). 
-
+To see all available formulas in an Excel workbook, in the **Defined Names** group, choose **Formulas**, and then **Name Manager**.
 
 ### Translating Excel sheets in 2023 release wave 2 and later versions
 

@@ -2,7 +2,7 @@
 title: "PerTenantExtensionCop Error PTE0002"
 description: "Field ID must be in free range."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -87,7 +87,7 @@ table 50100 MyTable
 
 The table field `MyField` has the ID `1` which is valid because it is within the range 0-49,999.
 
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
