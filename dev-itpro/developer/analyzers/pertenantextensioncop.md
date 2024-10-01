@@ -1,8 +1,8 @@
 ---
-title: "PerTenantExtensionCop Analyzer"
+title: "PerTenantExtensionCop analyzer"
 description: "PerTenantExtensionCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -15,7 +15,7 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[PTE0001](pertenantextensioncop-pte0001.md)|Object ID must be in free range.|Extensibility|Error|
 |[PTE0002](pertenantextensioncop-pte0002.md)|Field ID must be in free range.|Extensibility|Error|
@@ -42,7 +42,7 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |[PTE0023](pertenantextensioncop-pte0023.md)|The enum ordinal value should be within the allowed range|Extensibility|Info|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)

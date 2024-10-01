@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0102"
 description: "It is not allowed to add a return value to a publicly exposed procedure, because it might break dependent extensions at runtime."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -130,7 +130,7 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the procedure is now explicitly returning a Boolean. The return type has not changed.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

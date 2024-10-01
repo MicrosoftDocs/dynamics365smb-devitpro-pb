@@ -33,7 +33,7 @@ A temporary table is used as a buffer or intermediate storage for data. A tempor
   
 For an example of the use of the UseTemporary property, see report 1306 in the [!INCLUDE[demolong](../includes/demolong_md.md)].  
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [Report Object](../devenv-report-object.md)   

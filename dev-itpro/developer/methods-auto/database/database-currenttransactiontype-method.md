@@ -2,7 +2,7 @@
 title: "Database.CurrentTransactionType([TransactionType]) Method"
 description: "Gets the current transaction type and sets a new type to be assigned."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -126,7 +126,7 @@ Report 2
 CurrentTransactionType := TransactionType::Update;  
 ```  
 
-## See Also
+## Related information
 
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

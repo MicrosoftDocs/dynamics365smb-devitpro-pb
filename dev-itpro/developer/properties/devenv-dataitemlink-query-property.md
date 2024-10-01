@@ -43,7 +43,7 @@ A Salesperson table and a Sales Header table have the Code column and Salesperso
 DataItemLink = "Salesperson Code" = Salesperson.Code  
 ```  
 
-## See Also
+## Related information
 
 [Query Object](../devenv-query-object.md)  
 [SQLJoinType Property](devenv-sqljointype-property.md)

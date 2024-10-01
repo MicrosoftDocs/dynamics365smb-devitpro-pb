@@ -1,8 +1,8 @@
 ---
-title: "ShortcutKey Property"
+title: "ShortcutKey property"
 description: "Sets a shortcut key for selecting a menu item."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -43,6 +43,6 @@ Some shortcut keys have default assignments. Don't reuse shortcut keys that are 
 
 For more information, see [Adding Actions to a Page](../devenv-adding-actions-to-a-page.md).
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

@@ -45,7 +45,7 @@ profile MyProfile
 } 
 ```
 
-## See Also  
+## Related information  
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  

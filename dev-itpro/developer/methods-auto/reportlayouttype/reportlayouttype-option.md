@@ -1,8 +1,8 @@
 ---
-title: "ReportLayoutType System Option"
+title: "ReportLayoutType system option"
 description: "Represents the type of a report layout."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,6 +24,6 @@ Represents the type of a report layout.
 |Custom|Denotes a report layout of a user-defined type.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
