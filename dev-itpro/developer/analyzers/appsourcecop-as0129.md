@@ -1,6 +1,6 @@
 ---
-title: "AppSourceCop Warning AS0110"
-description: "Permission set extensions should not include permissions for objects defined in another application."
+title: "AppSourceCop Error AS0129"
+description: "An interface must not be added to the list of extended interfaces on an interface that has been published, because dependent extensions may break"
 ms.author: solsen
 ms.date: 08/26/2024
 ms.topic: reference
@@ -10,11 +10,11 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Warning AS0110
-Permission set extensions should not include permissions for objects defined in another application.
+# AppSourceCop Error AS0129
+An interface must not be added to the the list of extended interfaces on an interface that has been published.
 
 ## Description
-Permission set extensions should not include permissions for objects defined in another application. This can pose a security risk by granting excessive privileges to users.
+An interface must not be added to the list of extended interfaces on an interface that has been published, because dependent extensions may break
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  

@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0118"
 description: "Modifying the length of a field part of the primary key is not allowed."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -110,7 +110,7 @@ Moreover, if a dependent extension uses this field, this change of length can le
 > [!NOTE]  
 > When no primary key is explicitly defined in the table definition, the first field is used as primary key.
 
-## See also 
+## Related information 
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

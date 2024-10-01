@@ -870,7 +870,7 @@
 <!-- [//]: # (START>DO_NOT_EDIT_ANALYZERS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
-### CodeCop Analyzer Rules
+### CodeCop Analyzer rules
 #### [AA0001](analyzers/codecop-aa0001.md)
 #### [AA0002](analyzers/codecop-aa0002.md)
 #### [AA0003](analyzers/codecop-aa0003.md)
@@ -953,7 +953,7 @@
 #### [AA0448](analyzers/codecop-aa0448.md)
 #### [AA0462](analyzers/codecop-aa0462.md)
 #### [AA0470](analyzers/codecop-aa0470.md)
-### AppSourceCop Analyzer Rules
+### AppSourceCop Analyzer rules
 #### [AS0001](analyzers/appsourcecop-as0001.md)
 #### [AS0002](analyzers/appsourcecop-as0002.md)
 #### [AS0003](analyzers/appsourcecop-as0003.md)
@@ -1074,7 +1074,10 @@
 #### [AS0124](analyzers/appsourcecop-as0124.md)
 #### [AS0125](analyzers/appsourcecop-as0125.md)
 #### [AS0126](analyzers/appsourcecop-as0126.md)
-### PerTenantExtensionCop Analyzer Rules
+#### [AS0127](analyzers/appsourcecop-as0127.md)
+#### [AS0128](analyzers/appsourcecop-as0128.md)
+#### [AS0129](analyzers/appsourcecop-as0129.md)
+### PerTenantExtensionCop Analyzer rules
 #### [PTE0001](analyzers/pertenantextensioncop-pte0001.md)
 #### [PTE0002](analyzers/pertenantextensioncop-pte0002.md)
 #### [PTE0003](analyzers/pertenantextensioncop-pte0003.md)
@@ -1098,7 +1101,7 @@
 #### [PTE0021](analyzers/pertenantextensioncop-pte0021.md)
 #### [PTE0022](analyzers/pertenantextensioncop-pte0022.md)
 #### [PTE0023](analyzers/pertenantextensioncop-pte0023.md)
-### UICop Analyzer Rules
+### UICop Analyzer rules
 #### [AW0001](analyzers/uicop-aw0001.md)
 #### [AW0002](analyzers/uicop-aw0002.md)
 #### [AW0003](analyzers/uicop-aw0003.md)
