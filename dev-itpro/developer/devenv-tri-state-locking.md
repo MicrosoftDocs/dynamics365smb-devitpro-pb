@@ -77,7 +77,7 @@ Tri-state locking is enabled by default for Business Central online and on-premi
 
 - In versions 24 and 23, set the **Enabled for** field for **Feature: Enable tri-state locking in AL** to **None**.
 
-Changes take effect for users the next time they sign in to Business Central. Learn more about feature management in [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
+Changes take effect on users the next time they sign in to Business Central. Learn more about feature management in [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
 
 > [!NOTE]
 > If you're using Business Central on-premises, the `EnableTriStateLocking` setting in the server configuration must also be set to `true` to use tri-state locking. [Learn more about configuring the server](../administration/configure-server-instance.md#Database).
