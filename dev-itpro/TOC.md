@@ -879,7 +879,6 @@
 ##### [Opening the Business Central tablet or phone client from a browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a sales rep role center for the tablet client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)
 
-
 ### Developing reports
 #### [Overview](developer/devenv-reports.md)
 #### [Report design overview](developer/devenv-report-design-overview.md)
@@ -901,6 +900,7 @@
 ###### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
 ###### [Using hyperlinks in Word layouts](developer/devenv-hyperlinks-in-word-report-layouts.md)  
 ###### [Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Using the Word add-in for layouts](developer/word-layout-add-in.md)
 ###### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
 ###### [Working with RDL layouts](/dynamics365/business-central/ui-rdlc-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json)
