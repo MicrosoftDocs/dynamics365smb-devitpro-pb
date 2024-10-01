@@ -1,8 +1,8 @@
 ---
-title: "IndentationControls Property"
+title: "IndentationControls property"
 description: "Sets which columns (controls) are indented in a list."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -56,7 +56,7 @@ repeater(Control1)
 }
 ```
 
-## See Also
+## Related information
 
 [ShowAsTree Property](devenv-showastree-property.md)  
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  

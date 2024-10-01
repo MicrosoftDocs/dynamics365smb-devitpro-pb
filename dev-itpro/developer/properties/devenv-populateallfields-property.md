@@ -1,8 +1,8 @@
 ---
-title: "PopulateAllFields Property"
+title: "PopulateAllFields property"
 description: "Sets whether fields are filled out automatically with a single filter value when a new record is inserted in a table."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -36,6 +36,6 @@ PopulateAllFields = true;
 
 Values are inserted in those fields where a currently active filter expression evaluates to exactly one value. Key fields are always populated.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

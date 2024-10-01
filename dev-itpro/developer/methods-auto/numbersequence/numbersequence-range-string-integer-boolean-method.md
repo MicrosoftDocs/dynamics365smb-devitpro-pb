@@ -2,7 +2,7 @@
 title: "NumberSequence.Range(Text, Integer [, Boolean]) Method"
 description: "Retrieves a range of values from the number sequence."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,7 +41,7 @@ Returns the start of the range from the number sequence.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [NumberSequence Data Type](numbersequence-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

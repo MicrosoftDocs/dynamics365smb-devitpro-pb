@@ -2,7 +2,7 @@
 title: "XmlProcessingInstruction.Remove() Method"
 description: "Removes this node from its parent element."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,7 +32,7 @@ An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [XmlProcessingInstruction Data Type](xmlprocessinginstruction-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

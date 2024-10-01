@@ -1,8 +1,8 @@
 ---
-title: "MaintainSiftIndex Property"
+title: "MaintainSiftIndex property"
 description: "Sets the value to determine whether SIFT structures (indexed views) should be created in SQL Server to support the corresponding SumIndexFields part of the Dynamics 365 Business Central key."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets the value to determine whether SIFT structures (indexed views) should be created in SQL Server to support the corresponding SumIndexFields part of the Dynamics 365 Business Central key.  
 
 ## Applies to
--   Table Key
+-   Table key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -38,6 +38,6 @@ SumIndexFields are created in [!INCLUDE[d365fin_long_md](../includes/d365fin_lon
   
 In situations where SumIndexFields must be created on a key to enable FlowField calculations, but the calculations are performed infrequently or on small sets of data, you can disable this property to prevent slow modifications to the table.  
   
-## See Also  
+## Related information  
 [SumIndexFields Property](devenv-sumindexfields-property.md)  
 [Properties](devenv-properties.md)
