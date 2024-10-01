@@ -29,7 +29,7 @@ The `PromptDialog` page type has some specific properties that characterize the 
 |`IsPreview` | The `IsPreview` property adds a specific note in the UI to indicate that the feature is in preview. It's by default set to `false`.|
 |`Image`| To identify and ensure consistency in the UI for a generative AI experience, the `Image` property for the action invoking it, should be set to `Sparkle`. If there are multiple copilot options to choose from in the UI, the `Image` property can be set to `Image = SparkleFilled;` to make a specific action more prominent. To view a list of images, see [Available icons](https://aka.ms/bcicons). |
 
-To find links to the properties related to the `PromptDialog` page type, see the [See also](devenv-page-type-promptdialog.md#see-also) section in this article.
+To find links to the properties related to the `PromptDialog` page type, see the [Related information](devenv-page-type-promptdialog.md#related-information) section in this article.
 
 ## Areas of the PromptDialog page type
 
