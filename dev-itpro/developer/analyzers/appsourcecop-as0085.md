@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0085"
 description: "The 'application' property should be used for expressing a dependency on the 'Base Application' or the 'System Application' instead of explicit dependencies."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -65,7 +65,7 @@ The `app.json` file of the extension:
 }
 ```
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

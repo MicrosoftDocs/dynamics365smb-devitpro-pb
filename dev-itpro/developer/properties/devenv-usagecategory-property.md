@@ -1,8 +1,8 @@
 ---
-title: "UsageCategory Property"
+title: "UsageCategory property"
 description: "Sets the department column for a searched page, report, or query in the web client."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -20,7 +20,7 @@ Sets the department column for a searched page, report, or query in the web clie
 -   Page
 -   Report
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -54,7 +54,7 @@ UsageCategory = ReportsAndAnalysis;
 
 The [AccessByPermission property](devenv-accessbypermission-property.md) and [ApplicationArea Property](devenv-applicationarea-property.md) are optional properties, which can be applied to set restrictions on an object accessibility, when you add the **UsageCategory** property. 
 
-## See Also
+## Related information
 
 [Add pages and reports to Tell me](../devenv-al-menusuite-functionality.md)  
 [Properties](devenv-properties.md)  

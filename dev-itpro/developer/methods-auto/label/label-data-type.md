@@ -1,8 +1,8 @@
 ---
-title: "Label Data Type"
+title: "Label data type"
 description: "Denotes a string constant that can be optionally translated into multiple languages."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Label Data Type
+# Label Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes a string constant that can be optionally translated into multiple languages.
@@ -43,7 +43,7 @@ The `Label` data type is used in .xlf files for translations. For more informati
 
 For information about naming, see [CodeCop Rule AA0074](../../analyzers/codecop-aa0074.md).
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

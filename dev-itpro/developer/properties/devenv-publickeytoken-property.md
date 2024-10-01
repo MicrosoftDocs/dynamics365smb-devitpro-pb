@@ -1,8 +1,8 @@
 ---
-title: "PublicKeyToken Property"
+title: "PublicKeyToken property"
 description: "Specifies the public key token of the .NET assembly."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -27,7 +27,7 @@ Specifies the public key token of the .NET assembly.
 PublicKeyToken = 'b77e3c561734a029';
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

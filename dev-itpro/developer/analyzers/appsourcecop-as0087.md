@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0087"
 description: "Translations of enum value captions must not contain commas."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -29,7 +29,7 @@ To resolve this warning, follow these steps:
 1. Locate the enum value captions in your code that contain commas in their translations.
 2. Modify the translations to remove any commas from the captions.
 
-## See Also
+## Related information
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

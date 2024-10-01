@@ -2,7 +2,7 @@
 title: "TestFilter.GetFilter(TestFilterField) Method"
 description: "Gets the filter that is applied to the specified field in a data set that is displayed on a test page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -37,7 +37,7 @@ The field that you want to get the filter from.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [TestFilter Data Type](testfilter-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

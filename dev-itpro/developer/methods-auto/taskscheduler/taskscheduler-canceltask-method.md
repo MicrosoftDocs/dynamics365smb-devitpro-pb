@@ -2,7 +2,7 @@
 title: "TaskScheduler.CancelTask(Guid) Method"
 description: "Cancels and deletes a scheduled task that runs a specific codeunit."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -55,7 +55,7 @@ begin
 end;
 ```
 
-## See also
+## Related information
 
 [TaskScheduler Data Type](taskscheduler-data-type.md)    
 [Using the Task Scheduler](../../devenv-task-scheduler.md)   

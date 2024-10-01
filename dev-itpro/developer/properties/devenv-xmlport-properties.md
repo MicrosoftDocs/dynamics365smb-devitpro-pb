@@ -218,7 +218,7 @@ C:\GitHub\dynamics365smb-devitpro\dev-itpro\developer\includes\properties_note.m
 
 --> 
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Table and Table Extension Properties](devenv-table-properties.md)  

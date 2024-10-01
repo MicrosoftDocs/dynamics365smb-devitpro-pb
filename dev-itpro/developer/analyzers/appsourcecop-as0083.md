@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0083"
 description: "Deleting an enum value is not allowed, unless the enum is marked as obsolete."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -30,7 +30,7 @@ To resolve this error, follow these steps:
 2. Re-add the deleted enum value to the enum definition.
 3. If the enum value should no longer be used, mark it as obsolete instead of deleting it.
 
-## See Also
+## Related information
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

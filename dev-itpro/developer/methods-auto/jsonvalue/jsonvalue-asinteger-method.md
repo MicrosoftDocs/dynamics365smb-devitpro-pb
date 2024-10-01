@@ -2,7 +2,7 @@
 title: "JsonValue.AsInteger() Method"
 description: "Converts the value in a JsonValue to an Integer data type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -35,7 +35,7 @@ If the JsonValue does not contain a number which can be converted without loss o
 
 
 
-## See Also
+## Related information
 [JsonValue Data Type](jsonvalue-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

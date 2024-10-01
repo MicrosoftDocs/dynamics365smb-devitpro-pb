@@ -2,7 +2,7 @@
 title: "ErrorInfo.RecordId([RecordId]) Method"
 description: "Specifies the record ID of the record that the error relates to."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -84,7 +84,7 @@ end
 ```
 
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Actionable errors](../../devenv-actionable-errors.md)  

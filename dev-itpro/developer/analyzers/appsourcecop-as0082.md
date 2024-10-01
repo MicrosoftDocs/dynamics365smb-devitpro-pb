@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0082"
 description: "Renaming an enum value is not allowed."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -29,7 +29,7 @@ To resolve this error, follow these steps:
 1. Locate the enum value in your code that has been renamed.
 2. Restore the original name of the enum value.
 
-## See Also
+## Related information  
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

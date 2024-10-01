@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0077"
 description: "Adding a var modifier in events is not allowed as it might break the runtime behavior of extensions subscribing to it."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -29,7 +29,7 @@ To resolve this error, follow these steps:
 1. Locate the event in your code where the `var` modifier has been added to a parameter.
 2. Modify the event definition to remove the `var` modifier from the parameter.
 
-## See Also
+## Related information  
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
