@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0003"
 description: "The previous version of the extension, used as a baseline for detecting breaking changes, could not be found in the package cache folder."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -50,7 +50,7 @@ If you do not want to detect breaking changes in your extension, remove the prop
 
 If you want to detect breaking changes, verify that the version specified in the AppSourceCop.json file is correct and that the extension can be found in the baseline package cache.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -1,8 +1,8 @@
 ---
-title: "AutoCalcField Property"
+title: "AutoCalcField property"
 description: "Sets whether FlowFields should be automatically calculated."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,7 +34,7 @@ AutoCalcField = false;
 ## Remarks
 FlowFields have an effect if the associated data source is a calculated value of the FlowFields.
 
-## See Also  
+## Related information  
 [FlowFields](../devenv-flowfields.md)   
 [Create FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md)   
 [CalcFormula Property](devenv-calcformula-property.md)  

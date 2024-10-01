@@ -2,7 +2,7 @@
 title: "ErrorInfo.Verbosity([Verbosity]) Method"
 description: "Specifies the severity level of the error."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -68,7 +68,7 @@ begin
 end
 ```
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [AL error handling](../../devenv-al-error-handling.md)  

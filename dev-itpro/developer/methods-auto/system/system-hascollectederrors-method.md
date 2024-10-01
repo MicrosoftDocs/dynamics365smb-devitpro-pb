@@ -2,7 +2,7 @@
 title: "System.HasCollectedErrors() Method"
 description: "Gets a value indicating whether errors have been collected in the current error collection scope."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,7 +32,7 @@ Ok :=   System.HasCollectedErrors()
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 
 [Collecting Errors](../../devenv-error-collection.md)  
 [System Data Type](system-data-type.md)

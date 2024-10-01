@@ -2,7 +2,7 @@
 title: "System.Format(Any, Integer, Text) Method"
 description: "Formats a value into a string."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -105,7 +105,7 @@ The message window displays the following:
 
 **Today is April 15.**  
 
-## See Also
+## Related information
 
 [Formatting Values, Dates, and Time](../../devenv-format-property.md)  
 [System Data Type](system-data-type.md)  

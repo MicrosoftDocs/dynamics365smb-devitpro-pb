@@ -45,7 +45,7 @@ page 50100 MyPage
 > [!TIP]
 > Use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to trigger IntelliSense and get assistance on selecting a property and help on its syntax.
 
-## See also
+## Related information
 
 [Methods](../methods-auto/library.md)  
 [Triggers](../triggers-auto/devenv-triggers.md)  

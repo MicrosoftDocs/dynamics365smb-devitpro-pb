@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0016"
 description: "Fields of field class 'Normal' must use the DataClassification property and its value must be different from ToBeClassified."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -78,7 +78,7 @@ table 50100 MyTable
 
 The following example does not trigger the rule because the data classification for field `MyField` still has a valid data classification specified.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

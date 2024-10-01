@@ -2,7 +2,7 @@
 title: "Record.ModifyAll(Any, Any [, Boolean]) Method"
 description: "Modifies a field in all records within a range that you specify."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -69,7 +69,7 @@ end;
 
 ```
 
-## See Also
+## Related information
 
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

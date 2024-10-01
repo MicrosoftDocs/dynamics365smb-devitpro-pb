@@ -2,7 +2,7 @@
 title: "Dialog.Error(ErrorInfo) Method"
 description: "Displays an error message and ends the execution of AL code."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -80,7 +80,7 @@ The error window displays the following:
 
 The `Error` method causes execution of AL code to stop. [Message Method](../../methods-auto/dialog/dialog-message-method.md) is never executed.  
 
-## See Also
+## Related information
 [Error handling overview](../../devenv-al-error-handling.md)  
 [Analyzing Error method telemetry](../../../administration/telemetry-error-method-trace.md)   
 [Dialog data type](dialog-data-type.md)  

@@ -2,7 +2,7 @@
 title: "PerTenantExtensionCop Error PTE0008"
 description: "Page controls and actions must use the ApplicationArea property to be visible to users."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -21,7 +21,7 @@ Page controls and actions must use the ApplicationArea property to be visible to
 ## Remarks
 For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0062](appsourcecop-as0062.md).
 
-## See Also  
+## Related information  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
