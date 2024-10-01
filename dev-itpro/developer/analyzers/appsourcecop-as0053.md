@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0053"
 description: "The compilation target of an application must be a value that is allowed in a multi-tenant SaaS environment."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,6 +17,8 @@ The compilation target of an application must be a value that is allowed in a mu
 The compilation target of an application must be a value that is allowed in a multi-tenant SaaS environment.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
 
 This rule validates that the manifest of your extension (app.json) specifies a compilation target that is allowed in a multi-tenant SaaS environment. For more information, see [JSON files](../devenv-json-files.md) and [Compilation Scope Overview](../devenv-compilation-scope-overview.md).
 
@@ -52,7 +54,7 @@ The following manifest specifies `Cloud` as compilation target and is allowed in
 }
 ```
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

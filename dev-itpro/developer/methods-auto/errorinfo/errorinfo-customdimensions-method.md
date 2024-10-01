@@ -2,7 +2,7 @@
 title: "ErrorInfo.CustomDimensions([Dictionary of [Text, Text]]) Method"
 description: "Set of additional dimensions, specified as a dictionary that relates to the error."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -83,7 +83,7 @@ end
 
 
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Actionable errors](../../devenv-actionable-errors.md)  

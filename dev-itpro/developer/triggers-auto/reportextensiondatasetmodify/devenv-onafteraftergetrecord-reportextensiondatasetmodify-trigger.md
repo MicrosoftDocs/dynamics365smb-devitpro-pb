@@ -1,16 +1,17 @@
 ---
-title: "OnAfterAfterGetRecord (Report Extension Data Set Modify) Trigger"
+title: "OnAfterAfterGetRecord (Report Extension Data Set Modify) trigger"
 description: "Runs after the OnAfterGetRecord trigger of the base data item."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterAfterGetRecord (Report Extension Data Set Modify) Trigger
+# OnAfterAfterGetRecord (Report Extension Data Set Modify) trigger
 > **Version**: _Available or changed with runtime version 7.1._
 
 Runs after the OnAfterGetRecord trigger of the base data item.
@@ -50,6 +51,6 @@ reportextension 50111 MyExtension extends "Customer - List"
 
 Use this trigger to perform any processing that is needed, based on the values in the fields of the individual records of a data item. The base object trigger is run before this trigger. For more information, see [OnAfterGetRecord (Report Data Item) Trigger](../reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md). 
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

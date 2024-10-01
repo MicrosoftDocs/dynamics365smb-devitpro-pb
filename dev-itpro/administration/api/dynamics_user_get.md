@@ -1,17 +1,17 @@
 ---
-title: (automation API) Get user
-description: Gets an user object in Dynamics 365 Business Central.
+title: (automation API) Get users
+description: Gets a user object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 09/02/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# (automation API) Get user
+# (automation API) Get users
 
 Retrieves the properties and relationships of an user object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
@@ -52,7 +52,7 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 Here is an example of the response.
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {
@@ -60,11 +60,13 @@ Here is an example of the response.
     "userName": "JOE",
     "displayName": "JOE JONES",
     "state": "Enabled",
-    "expiryDate": "0001-01-01T00:00:00Z"
+    "expiryDate": "0001-01-01T00:00:00Z",
+    "contactEmail": "joejones@contoso.com"
 }
 ```
 
 ## See Also
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
-[user](../resources/dynamics_user.md)
+[user](../resources/dynamics_user.md)  
+[PATCH user](dynamics_user_update.md)  

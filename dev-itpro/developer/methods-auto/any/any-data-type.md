@@ -1,8 +1,8 @@
 ---
-title: "Any Data Type"
+title: "Any data type"
 description: "This data type can be substituted by any other data type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Any Data Type
+# Any Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 This data type can be substituted by any other data type.
@@ -24,7 +24,7 @@ This data type can be substituted by any other data type.
 > The Any Data type cannot be used for declaring constructs in AL. Any is a type that is used for the parameters or return type of methods in the platform.
 
 
-## See Also  
+## Related information  
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
