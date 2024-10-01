@@ -57,7 +57,7 @@ Here is an example of the response.
 ```json
 {
     "scope": "Tenant",
-    "applicationId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+    "applicationId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "profileId": "BUSINESS MANAGER",
     "source": "Base Application",
     "displayName": "Business Manager",
