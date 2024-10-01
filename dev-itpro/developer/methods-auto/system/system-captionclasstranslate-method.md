@@ -2,7 +2,7 @@
 title: "System.CaptionClassTranslate(Text) Method"
 description: "Returns a translated version of the caption string."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,7 +41,7 @@ A literal string that defines the caption.
 You can use the [SelectLatestVersion Method \(Database\)](../../methods-auto/database/database-selectlatestversion-method.md) to clear the current session's cache for the CaptionClassTranslate strings. The strings will then be reevaluated by the **CaptionClassTranslate** method trigger in codeunit 42.  
 
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

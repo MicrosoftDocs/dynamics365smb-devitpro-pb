@@ -1,8 +1,8 @@
 ---
-title: "TestPermissions Attribute"
+title: "TestPermissions attribute"
 description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by a test method."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,13 +11,13 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# TestPermissions Attribute
+# TestPermissions attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
 Specifies a value that can be used to determine which permission sets are used on tests that are run by a test method.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -46,7 +46,7 @@ Apart from **InheritFromTestCodeunit**, the values themselves do not perform any
 > [!NOTE]  
 > To specify the permission sets that are used by all the tests run by a test codeunit, use the [TestPermissions Property](../properties/devenv-testpermissions-property.md).
 
-## See Also  
+## Related information  
 [AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)   
 [TestPermissions Property](../properties/devenv-testpermissions-property.md)

@@ -2,7 +2,7 @@
 title: "System.CopyArray(Array of [Any], Array of [Any], Integer [, Integer]) Method"
 description: "Copies one or more elements in an array to a new array."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -83,7 +83,7 @@ CopyArray(Array2,Array1,3);
 
 The error occurs because the code attempts to copy eight elements from Array1 to Array2, and Array2 has room for only five elements.  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

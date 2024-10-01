@@ -1,8 +1,8 @@
 ---
-title: "LinksAllowed Property"
+title: "LinksAllowed property"
 description: "Sets whether links are allowed."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -37,6 +37,6 @@ If LinksAllowed is set to **true**, then you can add links or notes to a page. T
   
 On a page, the links and notes are displayed in FactBoxes. If LinksAllowed is set to **true**, then the **Actions** menu has a **Notes** item and a **Links** item. You use these to create and modify notes and links.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

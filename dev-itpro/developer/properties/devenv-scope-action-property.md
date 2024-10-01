@@ -30,7 +30,7 @@ The Scope property has the following effect:
     -   If the list **is not** associated with a card page, and the user taps a row in the list to view details, the action is available on the details page.  
     
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Scope (Table) Property](devenv-scope-table-property.md)  

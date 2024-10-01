@@ -1,8 +1,8 @@
 ---
-title: "InlineSchema Property"
+title: "InlineSchema property"
 description: "Specifies whether an XML schema definition should be included inside an XML document."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -42,7 +42,7 @@ Inline schemas can be useful in many situations. You can use inline schemas in t
   
 - When there is so much diversity in the XML document and the schema. The document is easier to process if the schema is inside the XML document.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [XMLport Data Type](../methods-auto/library.md)

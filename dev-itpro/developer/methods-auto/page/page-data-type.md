@@ -1,8 +1,8 @@
 ---
-title: "Page Data Type"
+title: "Page data type"
 description: "Contains a number of simpler elements called controls."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page Data Type
+# Page Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Contains a number of simpler elements called controls. Controls are used to display information to the user or receive information from the user.
@@ -54,6 +54,6 @@ The following methods are available on instances of the Page data type.
 |[Update([Boolean])](page-update-method.md)|Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

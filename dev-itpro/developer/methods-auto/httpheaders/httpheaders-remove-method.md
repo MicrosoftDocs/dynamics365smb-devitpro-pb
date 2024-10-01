@@ -2,7 +2,7 @@
 title: "HttpHeaders.Remove(Text) Method"
 description: "Removes the specified header from the HttpHeaders collection."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -37,7 +37,7 @@ The name of the header to remove from the collection.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [HttpHeaders Data Type](httpheaders-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

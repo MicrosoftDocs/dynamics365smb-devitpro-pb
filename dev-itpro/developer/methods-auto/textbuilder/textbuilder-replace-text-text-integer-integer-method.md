@@ -2,7 +2,7 @@
 title: "TextBuilder.Replace(Text, Text, Integer, Integer) Method"
 description: "Replaces, within a substring of this instance, all occurrences of a specified string in this TextBuilder instance with another specified string."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -49,7 +49,7 @@ The length of the substring.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [TextBuilder Data Type](textbuilder-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0084"
 description: "The ID range assigned to the extension must be within the range allowed for AppSource applications."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -84,7 +84,7 @@ The `app.json` file of the extension:
 
 The ID range specified is included in the range allowed for AppSource applications. 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

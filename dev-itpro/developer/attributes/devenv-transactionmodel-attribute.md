@@ -1,8 +1,8 @@
 ---
-title: "TransactionModel Attribute"
+title: "TransactionModel attribute"
 description: "Specifies whether data is committed to the database during execution of a test method and whether transactions are rolled back at the end of a test method."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,13 +11,13 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# TransactionModel Attribute
+# TransactionModel attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
 Specifies whether data is committed to the database during execution of a test method and whether transactions are rolled back at the end of a test method.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -79,7 +79,7 @@ When you create test methods that exercise pages that interact with the database
 
 With **AutoCommit** and **AutoRollback**, the test method starts a write transaction. Triggers that are invoked by the test code inherit this open transaction instead of running in their own separate transactions. By using the **AutoCommit** and **AutoRollback** settings, if several page interactions are invoked from test code, then they share the same transaction. By using the **None** setting, each page interaction runs in a separate transaction.  
 
-## See Also  
+## Related information  
 
 [Properties](../properties/devenv-properties.md)   
 [TestIsolation Property](../properties/devenv-testisolation-property.md)   

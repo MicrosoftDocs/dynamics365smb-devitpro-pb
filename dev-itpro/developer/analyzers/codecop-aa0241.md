@@ -2,7 +2,7 @@
 title: "CodeCop Hidden AA0241"
 description: "Use all lowercase letters for reserved language keywords."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -55,7 +55,7 @@ var
 
 Change *every reserved language keyword to use lowercase letters*. Use Pascal case for data types in variable and parameter declarations.
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
