@@ -3,7 +3,7 @@ title: Page types and layouts
 description: Understanding page types to be able to create good user experience in Business Central.
 author: jacobwj
 ms.custom: bap-template
-ms.date: 04/26/2024
+ms.date: 10/01/2024
 ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: conceptual
@@ -19,7 +19,7 @@ In this article, we're focusing on how pages appear when a user accesses [!INCLU
 
 Choosing the right page type is the first step when creating or modifying a page. The next step is to organize the page contents to suit its purpose in your solution. We recommend that you design pages based on the user tasks that you want to support.
 
-The following table provides an overview of the page types supported in [!INCLUDE[prod_short](includes/prod_short.md)], their typical uses, and basic characteristics. To specify the page type, use the `PageType` property. For more information, see [PageType Property](properties/devenv-pagetype-property.md).
+The following table provides an overview of the page types supported in [!INCLUDE[prod_short](includes/prod_short.md)], their typical uses, and basic characteristics. To specify the page type, use the `PageType` property. Learn more in [PageType Property](properties/devenv-pagetype-property.md).
 
 
 |Page type|Examples of use|Main data display|Characteristics|
@@ -36,7 +36,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`CardPart`|A page that is embedded in another page, such as in a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
 |`ListPart`|A page that is embedded in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below the repeater.|
 |`HeadlinePart`|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|Single entity|Single group of fields representing headlines.|
-|`PromptDialog`|A page that enables creating generative AI experiences with the copilot look and feel|Single or collection. For more information, see [PromptDialog page type](devenv-page-type-promptdialog.md).||
+|`PromptDialog`|A page that enables creating generative AI experiences with the copilot look and feel|Single or collection. Learn more in [PromptDialog page type](devenv-page-type-promptdialog.md).||
 
 ### The two principal categories of page types
 
@@ -90,7 +90,7 @@ For all pages (excluding `RoleCenter`, dialogs, and part pages) there's a common
 
 The `content` area provides rich layout capabilities, which are described in the coming sections. The `FactBoxes` area is limited to showing a list of parts, usually in a vertical arrangement. The header consists of the title, action bar, and controls for filtering, views, and so on.
 
-For more information about page areas, see [Pages Overview](devenv-pages-overview.md). 
+Learn more in [Pages Overview](devenv-pages-overview.md). 
 
 ### Field groups and page parts 
 
@@ -233,7 +233,7 @@ Given the size of the screen where the dialog appears, more or less of the page 
 > [!NOTE]  
 > The dialogs created from the `StandardDialog` and `ConfirmationDialog` page types aren't currently providing a maximize button.
 >
-> In version 24 (runtime 14) and earlier, the [Importantance* property](properties/devenv-importance-property.md) is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. The field also can't be promoted in the header of a collapsed FastTab. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
+> In version 24 (runtime 14) and earlier, the [Importantance property](properties/devenv-importance-property.md) is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
  
 ## See also
 
