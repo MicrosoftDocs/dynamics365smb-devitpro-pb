@@ -698,6 +698,7 @@
 ##### [Tables overview](developer/devenv-tables-overview.md)
 ##### [Table object](developer/devenv-table-object.md)
 ##### [Add tooltips to table fields](developer/devenv-adding-tooltips.md)
+##### [Enable text search on table fields](developer/devenv-table-field-text-search.md)
 ##### [System fields](developer/devenv-table-system-fields.md)
 ##### [Table extension object](developer/devenv-table-ext-object.md)
 ##### [Setting relationships between tables](developer/devenv-set-relationships-between-tables.md)
@@ -1712,6 +1713,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
+#### [2024 release wave 2](deployment/system-requirements-business-central-v25.md)
 #### [2024 release wave 1](deployment/system-requirements-business-central-v24.md)
 #### [2023 release wave 2](deployment/system-requirements-business-central-v23.md)
 #### [2023 release wave 1](deployment/system-requirements-business-central-v22.md)
