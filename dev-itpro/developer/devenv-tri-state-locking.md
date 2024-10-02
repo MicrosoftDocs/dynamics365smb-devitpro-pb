@@ -12,14 +12,16 @@ ms.custom: bap-template
 
 # Tri-state locking in database
 
-The tri-state locking feature is aimed at enhancing the performance and concurrency of database transactions. By enabling this feature, AL-based read operations that follow write operations are performed optimistically, rather than with strict consistency and low concurrency. Consequently, users can expect higher levels of concurrency and fewer blocked or failed operations while accessing data. 
+[!INCLUDE[prod_short](../includes/2023_releasewave2.md)]
+
+The tri-state locking feature is aimed at enhancing the performance and concurrency of database transactions. By enabling this feature, AL-based read operations that follow write operations are performed optimistically, rather than with strict consistency and low concurrency. So, users can expect higher levels of concurrency and fewer blocked or failed operations while accessing data. 
 
 > [!NOTE]
 > Explicitly using the [LockTable](methods-auto/record/record-locktable-method.md) method in code will maintain the same behavior, disabling optimistic reads.
 
 ## Locking behavior
 
-The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server uses database locks on a table when a session starts to change data in the table. The following examples illustrate the locking behavior in versions 22 and earlier compared to how tri-state locking works.
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server uses database locks on a table when a session starts to change data in the table. The following examples illustrate the legacy locking behavior, used in versions 22 and earlier, compared to tri-state locking.
 
 ```AL
 // locking behavior in versions 22 (and earlier)
@@ -59,20 +61,26 @@ begin
 end;
 ```  
 
-In both cases, the locking behavior is about what happens in a session after a record instance has done a data modification (insert/update/delete) on a table. 
+In both cases, the locking behavior is about what happens in a session after a record instance does a data modification (insert/update/delete) on a table. 
 
 | Properties | Locking behavior in versions 22 (and earlier) | Locking behavior with tri-state locking  | 
 | ---------- | ----- | ---------  | 
 | Default isolation level for subsequent operations | UpdLock | ReadCommitted |
-| Locking behavior | Session would acquire update lock on data from the table until it committed or rolled back its changes.  | Session will only acquire a shared lock when reading data. |
+| Locking behavior | Session would acquire update lock on data from the table until it committed or rolled back its changes.  | Session only acquires a shared lock when reading data. |
 | Consequences | Could cause blocking and contention issues when multiple sessions tried to access or modify the same table. | Allows other sessions to read and write to the same table concurrently, if they don't conflict with each other's changes. |
 
+## Enable and disable tri-state locking for a tenant
 
-## Next steps
+Tri-state locking is enabled by default for Business Central online and on-premises. If you prefer to use legacy locking, you can disable tri-state locking from the **Feature Management** page as follows:  
 
-The feature is enabled by default, but you can turn it on or off using the **Enable Tri-State locking in AL** switch on the Feature Management page in Business Central. Changes take effect for users the next time they sign in to Business Central. [Learn more about enabling upcoming features ahead of time](../administration/feature-management.md).
+- In version 25, set the **Enabled for** field for the **Feature: Enable legacy locking scheme in AL** to **All users**:
 
-If you're using Business Central on-premises, the `EnableTriStateLocking` setting in the server configuration must also be set to `true` to enable tri-state locking. [Learn more about configuring the server](../administration/configure-server-instance.md#Database).
+- In versions 24 and 23, set the **Enabled for** field for **Feature: Enable tri-state locking in AL** to **None**.
+
+Changes take effect on users the next time they sign in to Business Central. Learn more about feature management in [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
+
+> [!NOTE]
+> If you're using Business Central on-premises, the `EnableTriStateLocking` setting in the server configuration must also be set to `true` to use tri-state locking. [Learn more about configuring the server](../administration/configure-server-instance.md#Database).
 
 ## See also
 

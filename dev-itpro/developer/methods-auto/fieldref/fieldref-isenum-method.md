@@ -2,7 +2,7 @@
 title: "FieldRef.IsEnum() Method"
 description: "Checks if the currently selected field is an enum."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,7 +34,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [FieldRef Data Type](fieldref-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

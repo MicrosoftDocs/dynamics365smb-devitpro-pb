@@ -1,8 +1,8 @@
 ---
-title: "ShowAsTree Property"
+title: "ShowAsTree property"
 description: "Sets the indentation of rows on a List Page to Tree View."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -54,7 +54,7 @@ repeater(Control1)
 
 ```
 
-## See Also
+## Related information
 
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  
 [TreeInitialState Property](devenv-treeinitialstate-property.md)  

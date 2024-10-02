@@ -1,8 +1,8 @@
 ---
-title: "FlowId Property"
+title: "FlowId property"
 description: "Sets the ID of the Power Automate Flow triggered by this action."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -57,6 +57,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 }
 ```
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

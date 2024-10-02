@@ -5,8 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.collection: 
-ms.date: 02/07/2024
+ms.date: 09/10/2024
 ms.custom: bap-template 
 ---
 
@@ -35,7 +34,7 @@ The **Page Scripting** pane opens on the right side, as illustrated in the follo
 
 :::image type="content" source="media/page-scripting-2.svg" alt-text="Shows the page scripting pane in Business Central.":::
 
-Now you ready to start a new recording or play an existing recording. 
+Now you're ready to start a new recording or play an existing recording. 
 
 
 <!--
@@ -87,7 +86,7 @@ This section outlines the basic steps to making a recording with the page script
 
 ## Options for capturing steps during recording
 
-During recording, you can manually insert special steps by right clicking a page control and selecting an appropriate option. These options are explained in the following sections.
+During recording, you can manually insert special steps by right-clicking a page control and selecting an appropriate option. These options are explained in the following sections.
 
 ### Copy and paste control values
 
@@ -132,9 +131,9 @@ To insert conditional steps:
 
    A *conditional branch step* is added to the **Page Scripting** pane, for example, **When rows count is 0**. The **End Scope** button appears at the top of the step list to indicate that the next steps you add are the conditional steps.
 
-1. Return to the page and go through steps that you want run if the condition is met.
+1. Return to the page and go through steps that you want to run if the condition is met.
 1. When you're finished adding conditional steps, select **End scope** in the **Page Scripting** pane.
-1. If you want to modify the condition, go the conditional step in the **Page Scripting** pane, and then select **...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields to set the comparison rule and value.
+1. If you want to modify the condition, go to the conditional step in the **Page Scripting** pane, and then select **...** > **Properties**. In the **Properties** area, change the **Operator** and **Value** fields to set the comparison rule and value.
 
 ### Add a wait step
 
@@ -148,7 +147,7 @@ To add a wait step:
 
 ## Edit captured steps
 
-During recording and playback, you can edit a captured step. The editing options for a step depend on whether your recording or playing back a recording and what kind of action the step runs. This section explains some of the options. 
+During recording and playback, you can edit a captured step. The editing options for a step depend on whether you're recording or playing back a recording and what kind of action the step runs. This section explains some of the options. 
 
 ### Change step properties
 
@@ -171,7 +170,7 @@ Sometimes a page doesn’t always show in a recorded flow because it depends on 
 
 To make a page optional:
 
-1. In the **Page Scripting** pane, locate the recorded step that opens optional page. The step has the similar to **Page X was shown**, where **X** is the name.
+1. In the **Page Scripting** pane, locate the recorded step that opens the optional page. The step has the similar to **Page X was shown**, where **X** is the name.
 1. On the step, select **...** > **Make this an optional page**.
 
    The steps that follow the optional page are indented to indicate that they're only run if the page is shown.
@@ -205,12 +204,123 @@ You can share a recording or a playback as a link (URL) that you can share with 
 
 ## Best practices and tips
 
-- Start recording from a well-known place, like the role center. Playback always starts from current page.
+- Start recording from a well-known place, like the role center. Playback always starts from the current page.
 - When you select a value in a grid, filter it so that the desired value is the first one.
-- Create new entities to use in a test hwnever possible. For example, create a new customer to use in the new sales order test.
+- Create new entities to use in a test whenever possible. For example, create a new customer to use in the new sales order test.
 - Avoid dependencies on data that might not be available during playback.
 - Break down recording to small parts for easier maintenance, for example:
   - Recording 1: setup user.
   - Recording 2: create customer.
   - Recording 3: create sales order.
   - Recording 4: post sales order.
+
+## Run page scripts in pipelines
+
+You can run page scripts in your own pipelines, using the stand-alone bc-replay script player. This script player is distributed as an npm (Node Package Manager) package. You can install the latest version of the package from the npm feed.
+
+### Prerequisites
+
+Your machine must meet the following requirements:
+
+- NodeJs version 16.14.0 or later. You can download install the latest version from [https://nodejs.org](https://nodejs.org/en/download/package-manager).
+- Windows PowerShell 7 or later. Learn more about installing PowerShell at [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
+
+### Preparation
+
+Create the following folders on your machine:
+
+- A folder for the BC replay installation. For example, `c:\bc-replay`.
+- A folder for storing the recorded scripts to be run. For example, `c:\bc-replay\recordings`.
+- A folder for storing the test results, like the recording and log. For example, `c:\bc-replay\results`.
+
+### Install BC replay
+
+1. Run Window PowerShell as an administrator.
+1. At the command prompt, run the following command to change to the BC replay installation folder (for example, `bc-replay`):
+
+   ```powershell
+   cd bc-replay
+   ```
+
+1. Run the following command to add @microsoft/bc-replay and install playwright:
+
+   ```powershell
+   npm i @microsoft/bc-replay --save
+   ```  
+
+### Get started running scripts
+
+To run the scripts, you'll need to know URL of your Business Central web client, like `http://localhost:8080/bc250/`.
+
+1. Save the scripts you want to run to the folder you created for storing the scripts (For example, `c:\bc-replay\recordings`.).
+1. Run Window PowerShell as an administrator.
+1. At the command prompt, change to the BC replay installation folder (for example,  `c:\bc-replay`):
+
+   ```powershell
+   cd bc-replay
+   ```
+
+1. Run the command to run scripts.
+
+   Use the following command to run a specific script, for example, `recording-1.yml`: 
+
+   ```powershell
+   npx replay .\recordings\recording-1.yml -StartAddress http://localhost:8080/bc250/ -ResultDir c:\bc-replay\result`
+   ```
+
+   Use the following command to run all scripts in the folder: 
+
+   ```powershell
+   npx replay .\recordings\*.yml -StartAddress http://localhost:8080/bc250/ -ResultDir c:\bc-replay\result`
+   ```
+
+   Replace `http://localhost:8080/bc250/`with the URL of your Business Central web client.
+
+   When the test run completes, the results are returned.
+
+1. To view the results of the last run, use the following command, replacing `c:\bc-replay\results` with the path to the results folder:
+
+   ```powershell
+   npx playwright show-report c:\bc-replay\results\playwright-report
+   ```
+
+### npx replay syntax and parameters
+
+#### Syntax
+
+```PowerShell
+npx replay
+   [-Tests] <String>
+   -StartAddress <String>
+   [-Authentication Windows|AAD|UserPassword]
+   [-UserNameKey <String>]
+   [-PasswordKey <String>]
+   [-Headed]
+   [-ResultDir<String>]
+```
+
+#### Parameters
+
+`-Tests`
+
+File glob pattern to select the tests recordings to run
+
+`-StartAddress`
+
+The URLto the deployed web client.
+
+`-Authentication`
+
+The authentication to use against the web client: `Windows`, `AAD`, `UserPassword`. `Windows` is default. It doesn't support multi-factor authentication. Use an account that requires only a username and password to sign in for your tests.
+
+`-UserNameKey` and `-PasswordKey`
+
+When `-Authentication` is set to `AAD` or `UserPassword` then a username and password must be given. These must be transferred as environment variables and `-UserNameKey` and `-PasswordKey` are used to specify which environment variables contain them.
+
+`-Headed`
+
+Shows the test running in the browser.
+
+`-ResultDir`
+
+The folder to write the test results to.

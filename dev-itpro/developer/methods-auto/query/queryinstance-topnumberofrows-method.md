@@ -2,7 +2,7 @@
 title: "Query.TopNumberOfRows([Integer]) Method"
 description: "Specifies the maximum number of rows to include in the resulting data set of a query."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -114,7 +114,7 @@ codeunit 50100 MyQueryTop10
 }
 ```
 
-## See Also
+## Related information
 [Query Data Type](query-data-type.md)  
 [Query Object](../../devenv-query-object.md)  
 [Linking and Joining Data Items](../../devenv-query-links-joins.md)  

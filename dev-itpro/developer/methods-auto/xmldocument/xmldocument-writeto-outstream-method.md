@@ -2,7 +2,7 @@
 title: "XmlDocument.WriteTo(OutStream) Method"
 description: "Serializes and saves the current node to the given variable."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -87,7 +87,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 ```
 
 
-## See Also
+## Related information
 [XmlDocument Data Type](xmldocument-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

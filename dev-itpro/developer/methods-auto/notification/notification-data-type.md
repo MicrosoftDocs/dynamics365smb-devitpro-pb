@@ -1,8 +1,8 @@
 ---
-title: "Notification Data Type"
+title: "Notification data type"
 description: "Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Notification Data Type
+# Notification Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client.
@@ -34,7 +34,7 @@ The following methods are available on instances of the Notification data type.
 |[SetData(Text, Text)](notification-setdata-method.md)|Specifies a data property value for the notification. The data is specified as text in a key-value pair.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Notifications](../../devenv-notifications-developing.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

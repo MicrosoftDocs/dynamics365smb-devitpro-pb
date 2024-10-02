@@ -1,8 +1,8 @@
 ---
-title: "RowSpan Property"
+title: "RowSpan property"
 description: "Sets the number of rows that a field spans in a Grid control."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -42,7 +42,7 @@ If you set Field 1 to span two rows, then the following layout is displayed:
 > [!IMPORTANT]  
 > The RowSpan property is not supported by the [!INCLUDE[nav_web](../includes/nav_web_md.md)]. If the page displays in the [!INCLUDE[nav_web](../includes/nav_web_md.md)], then the property is ignored and the field will not span any rows.
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [ColumnSpan Property](devenv-columnspan-property.md)  

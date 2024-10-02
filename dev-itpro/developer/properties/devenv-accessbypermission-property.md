@@ -1,8 +1,8 @@
 ---
-title: "AccessByPermission Property"
+title: "AccessByPermission property"
 description: "Sets a value for a table field or UI element that determines the permission mask for an object that a user must have to see and access the related page fields or UI element in the client."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -26,7 +26,7 @@ All types of UI elements will be removed if they relate to an object to which th
    
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 -   Page Part
 -   Page System Part
@@ -76,6 +76,6 @@ For other objects including Table, Page, Query, Report, Codeunit, or Xmlport, it
 
 The **UsageCategory** property is a required setting used together with the **AccessByPermission** property. This enables a page or a report to be available in Search for the navigation support. For more information about navigation support, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).  
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

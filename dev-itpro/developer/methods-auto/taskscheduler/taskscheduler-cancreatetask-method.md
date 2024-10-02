@@ -2,7 +2,7 @@
 title: "TaskScheduler.CanCreateTask() Method"
 description: "Checks whether it is possible to schedule tasks in this session (depends on the user/app entitlements)."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -54,7 +54,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Using the Task Scheduler](../../devenv-task-scheduler.md)   
