@@ -233,7 +233,7 @@ Given the size of the screen where the dialog appears, more or less of the page 
 > [!NOTE]  
 > The dialogs created from the `StandardDialog` and `ConfirmationDialog` page types aren't currently providing a maximize button.
 >
-> In version 24 (runtime 14) and earlier, the [Importantance property](properties/devenv-importance-property.md) is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
+> In version 24 (runtime 14) and earlier, the [Importance property](properties/devenv-importance-property.md) is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
  
 ## See also
 
