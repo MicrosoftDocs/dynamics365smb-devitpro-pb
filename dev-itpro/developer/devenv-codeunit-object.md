@@ -43,7 +43,7 @@ codeunit 50113 CreateCustomer
 
 ## Codeunit self-reference keyword
 
-The `this` keyword can be used in codeunits in AL as a self-reference, and it allows passing the current object as an argument to methods. Additionally, using the `this` keyword enhances readability in larger methods by clearly indicating whether a variable is in the global or local scope. Learn more about the `this` keyword in [Use the this keyword for codeunit self-reference](../devenv-al-this-keyword.md).
+The `this` keyword can be used in codeunits in AL as a self-reference, and it allows passing the current object as an argument to methods. Additionally, using the `this` keyword enhances readability in larger methods by clearly indicating whether a variable is in the global or local scope. Learn more about the `this` keyword in [Use the this keyword for codeunit self-reference](devenv-al-this-keyword.md).
 
 ## Related information
 
@@ -52,4 +52,4 @@ The `this` keyword can be used in codeunits in AL as a self-reference, and it al
 [Page extension object](devenv-page-ext-object.md)  
 [AL development environment](devenv-reference-overview.md)  
 [XML comments in code](devenv-xml-comments.md)  
-[Use the this keyword for codeunit self-reference](../devenv-al-this-keyword.md).
+[Use the this keyword for codeunit self-reference](devenv-al-this-keyword.md).
