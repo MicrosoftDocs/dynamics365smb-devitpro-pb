@@ -1,8 +1,8 @@
 ---
 title: "OptionCaption property"
-description: "Sets the string string options that are displayed to the user."
+description: "Sets the text string options that are displayed to the user."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/02/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 # OptionCaption Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets the string string options that are displayed to the user.
+Sets the text string options that are displayed to the user.
 
 ## Applies to
 -   Table field
