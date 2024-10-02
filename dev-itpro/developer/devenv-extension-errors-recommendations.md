@@ -38,6 +38,8 @@ To enable logic for fixing errors, follow these steps:
 
 ### The `ErrorMessageManagement.Codeunit.al` codeunit in the Base Application
 
+<!-- what is the context here?? -->
+
 In the Base Application you can find the `ErrorMessageManagement` codeunit. The codeunit can be used to add sub-contextual information and the implementation for the error message action to the last-logged error message, which then triggers the `OnAddSubContextToLastErrorMessage` event.
 
 <!-- example context?? -->
@@ -50,7 +52,7 @@ procedure AddSubContextToLastErrorMessage(Tag: Text; VariantRec: Variant)
 
 Likewise, in the Base Application the on the `ErrorMessageManagement` codeunit, you find the `AddSubContextToLastErrorMessage` procedure. 
 
-<!-- the following names cannot be verified -->
+<!-- the following names cannot be verified -> -->
 This procedure is used in the `DimensionManagement` codeunit to log `SameCodeWrongDimErr` and `NoCodeFilledDimErr` by passing the sub-contextual information. Dimension Set Entry is the sub-contextual information for these error messages.
 
 #### Event `OnAddSubContextToLastErrorMessage(Tag, VariantRec, TempErrorMessage)`
@@ -59,12 +61,14 @@ Use `Tag` to identify the error message in the subscriber. `VariantRec` can be u
 
 ### Usage in the **Error messages with recommendations** extension
 
+<!-- what is the context here? is it an open source extension? can we link -->
+
 #### Codeunit (ID 7903) `"Dimension Code Same Error"` and codeunit (ID 7904) `"Dimension Code Must Be Blank"`
 
 Subscribe to the event `OnAddSubContextToLastErrorMessage`. Update the error message record based on the `Tag`.
 Set the `TempErrorMessage."Error Msg. Fix Implementation"` to use enum value from `enum 7901 "Error Msg. Fix Implementation"` which has the implementation for the error message action.
 
-### `codeunit 7900 ErrorMessagesActionHandler`
+### Codeunit (ID 7900) `ErrorMessagesActionHandler`
 
 This handles the drill-down operation and the **Accept recommended action** on the **Error Messages** page.
 
@@ -82,7 +86,7 @@ Execute recommended actions for all the selected error messages on the page.
 Selected error messages are passed from the page and all the error message fix implementations are executed for the selected error messages.
 The procedure does not stop if there is an error in applying fix. Instead, it updates the error message status and continues to apply remaining recommendations for the remaining error messages.
 
-### `codeunit 7901 "Execute Error Action"`
+### Codeunit (ID 7901) `"Execute Error Action"`
 
 This codeunit is internally used to execute the error message fix implementation with ErrorBehavior::Collect. This allows us to continue applying recommendations for all the selected error messages even if there is an error.
 **Note:** Commits will be ignored inside the implementation of ErrorMessageFix interface.
