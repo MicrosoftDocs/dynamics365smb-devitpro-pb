@@ -66,12 +66,12 @@ There are two system actions that control the behavior: `systemaction(OK)` for s
             systemaction(OK)
             {
                 Caption = 'Save';
-                ToolTip = 'Save the proposal.';
+                ToolTip = 'Save the draft.';
              }
             systemaction(Cancel)
             {
                 Caption = 'Cancel';
-                ToolTip = 'Throw away the proposal.';
+                ToolTip = 'Throw away the draft.';
             }
         }
     }
@@ -130,9 +130,9 @@ A useful pattern for the caption is to use the prompt input that was provided be
 The following code adds the `DataCaptionExpression` property to our example to set the caption to the text the user provides in the prompt area:
 
 ```al
-page 50100 "My Copilot"
+page 50100 "My Prompt Dialog"
 {
-    Caption = 'Draft with my Copilot';
+    Caption = 'Draft a proposal';
     PageType = PromptDialog;
     Extensible = false;
     PromptMode = Prompt;
@@ -144,7 +144,7 @@ page 50100 "My Copilot"
 
 ## Enable proposal history capability
 
-A user might get more than one generated output when using Copilot. This situation can happen when Copilot provides several versions of an output from start, or when the user chooses to regenerate the output. It can be beneficial to provide users with a way to scroll back and forth through a history of the different proposals. To accommodate this capability, you can set up a version carousel at the top of the PromptDialog page.
+A user might get more than one generated output when using the Copilot feature. This situation can happen when Copilot provides several versions of an output from start, or when the user chooses to regenerate the output. It can be beneficial to provide users with a way to scroll back and forth through a history of the different proposals. To accommodate this capability, you can set up a version carousel at the top of the PromptDialog page.
 
 [![Shows the version control in content mode of the PromptDialog type page](media/promptdialog-content-mode-versions.svg)](media/promptdialog-content-mode-versions.svg#lightbox)
 
@@ -153,9 +153,9 @@ This capability requires that the PromptDialog page uses a temporary source tabl
 You should design the capability to insert a new record each time content is generated. When in place, the control appears on the PromptDialog page whenever the source table contains multiple records. After the user closes Copilot, for example by saving or discarding the results, the version history is deleted.
 
 ```al
-page 50100 "My Copilot"
+page 50100 "My Prompt Dialog"
 {
-    Caption = 'Draft with Copilot';
+    Caption = 'Draft a proposal';
     PageType = PromptDialog;
     Extensible = false;
     PromptMode = Prompt;

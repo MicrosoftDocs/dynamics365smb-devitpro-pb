@@ -1,5 +1,5 @@
 ---
-title: Create prompt dialog page for Copilot 
+title: Create prompt dialog page for Copilot feature 
 description: Learn the first in designing the Copilot UI.
 author: jswymer
 ms.author: jswymer
@@ -11,7 +11,7 @@ ms.collection:
 ms.date: 03/25/2024
 ms.custom: bap-template
 ---
-# Create prompt dialog page for Copilot
+# Create prompt dialog page for a Copilot feature
 
 The first step in designing the Copilot UI is creating a page of the type `PromptDialog`. Once you create the prompt dialog page following this article, you use it to build the different display modes needed for your Copilot extension, including prompt, generate, and content.
 
@@ -22,9 +22,9 @@ For an overview building of the Copilot UI, refer to [Build Copilot user experie
 You create a prompt dialog page similar to any other page, except it has some specific properties to consider, as shown in the following code snippet:
 
 ```al
-page 50100 "My Copilot"
+page 50100 "My Prompt Dialog"
 {
-    Caption = 'Draft with my Copilot';
+    Caption = 'Create a draft';
     PageType = PromptDialog;
     Extensible = false;
     PromptMode = Prompt;
@@ -59,8 +59,7 @@ In both cases, the trigger defined for the `systemaction(Generate)` control is a
 
 ## Next steps
 
-- [Design Copilot prompt mode](copilot-design-prompt-mode.md)
-- [Design Copilot content mode](copilot-design-content-mode.md)
-- [Customize Copilot generate mode](copilot-customize-generate-mode.md)
-- [Launch Copilot](copilot-launch-experience.md)
-
+- [Design the prompt mode](copilot-design-prompt-mode.md)
+- [Design the content mode](copilot-design-content-mode.md)
+- [Customize  generate mode](copilot-customize-generate-mode.md)
+- [Launch the prompt dialog page](copilot-launch-experience.md)

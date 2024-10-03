@@ -12,23 +12,23 @@ ms.date: 09/09/2024
 ms.custom: bap-template
 ---
 
-# Launch Copilot experience
+# Launch the Copilot experience
 
-In this article, you learn how to add an action in the UI that users select to start the Copilot experience. This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot extension. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
+In this article, you learn how to add an action in the UI that users select to start the Copilot feature. This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot feature. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
 
-## Add an action for your Copilot
+## Add an action that runs the prompt dialog page
 
-The following code illustrates how to add an action that opens the prompt dialog page for Copilot:  
+The following code illustrates how to add an action that opens the prompt dialog page for Copilot feature:  
 
 ```al
-action(GenerateCopilot)
+action(MyPromptAction)
 {
-    Caption = 'Draft with Copilot';
+    Caption = 'Create draft';
     Image = Sparkle;
 
     trigger OnAction()
     begin
-        Page.RunModal(Page::"My Copilot");
+        Page.RunModal(Page::"My Prompt Dialog");
     end;
 }
 ```
@@ -38,15 +38,15 @@ or `SparkleFilled` ![Shows the Copilot sparkle filled icon](media/copilot-sparkl
 
 In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific Copilot. For example, if there are multiple Copilot actions on a page, you might want to emphasize one Copilot action over the others.  
 
-## Promote Copilot using prompt action 
+## Promote the Copilot feature using a prompt action
 
 You can create a prompt action to promote your Copilot on pages and encourage users to use it. A prompt action is a standard action that appears under the ![Shows the Copilot action icon icon](media/promptdialog-copilot-action-icon.png) in the action bar and in the Copilot toolbar that floats on the page for easy access. Users can hide Copilot toolbar by selecting the **Hide** action on the toolbar or **Show in page** in the action bar.
 
 ![Shows the Copilot action icon clip](media/list-page-copilot-callouts.svg)
 
-Prompt actions are supported on `List`, `ListPage`, `StandardDialog`, and `WorkSheet` page types in versions prior to [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2. Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, page types `Card`, `Document`, and `ListPlus` are also supported.
+Prompt actions are supported on `List`, `ListPart`, `StandardDialog`, and `WorkSheet` page types in versions prior to [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2. Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, page types `Card`, `Document`, and `ListPlus` are also supported.
 
-To create a prompt action, add an action area called `area(Prompting)` to the page and an `action` that runs the prompt dialog page. 
+To create a prompt action, add an action area called `area(Prompting)` to the page and an `action` that runs the prompt dialog page.
 
 ```al
 ...
@@ -57,8 +57,8 @@ actions
         action(MyPromptAction)
         {
             ApplicationArea = All;
-            Caption = 'Run my Copilot';
-            RunObject = page "Copilot Job Proposal";
+            Caption = 'Create draft';
+            RunObject = page "My Prompt Dialog";
         }
     }
 }
@@ -77,8 +77,8 @@ actions
         action(MyPromptAction)
         {
             ApplicationArea = All;
-            Caption = 'Run my Copilot';
-            RunObject = page "Copilot Job Proposal";
+            Caption = 'Create draft';
+            RunObject = page "My Prompt Dialog";
         }
     }
 }
