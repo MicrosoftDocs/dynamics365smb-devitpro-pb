@@ -1,8 +1,8 @@
 ---
-title: Error messages with recommendations
-description: Overview of error messages with recommendations.
+title: Extending error messages with recommendations
+description: Overview of how you can extend the error messages with recommendations framework to reduce friction for users of Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 09/19/2024
+ms.date: 10/03/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -37,8 +37,8 @@ To enable logic for fixing errors, follow these steps:
   Extend the enum (ID 7901) named `"Error Msg. Fix Implementation"` to include the implemented codeunit. This enum is used to map specific error messages to their corresponding fix implementations.
 
 ### The `ErrorMessageManagement.Codeunit.al` codeunit in the Base Application
-
-<!-- what is the context here?? -->
+move to the top before steps
+<!-- what is the context here?? https://learn.microsoft.com/en-us/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-management --> introduction
 
 In the Base Application you can find the `ErrorMessageManagement` codeunit. The codeunit can be used to add sub-contextual information and the implementation for the error message action to the last-logged error message, which then triggers the `OnAddSubContextToLastErrorMessage` event.
 
@@ -58,6 +58,8 @@ This procedure is used in the `DimensionManagement` codeunit to log `SameCodeWro
 #### Event `OnAddSubContextToLastErrorMessage(Tag, VariantRec, TempErrorMessage)`
 
 Use `Tag` to identify the error message in the subscriber. `VariantRec` can be used to pass the sub-contextual information. `TempErrorMessage` is the error message record under consideration.
+
+<!-- move up -->
 
 ### Usage in the **Error messages with recommendations** extension
 
