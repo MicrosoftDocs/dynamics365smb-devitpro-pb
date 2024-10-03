@@ -1,8 +1,8 @@
 ---
-title: "MaintainSqlIndex Property"
+title: "MaintainSqlIndex property"
 description: "Sets a value that indicates whether a SQL Server index that corresponds to the fields part of the Dynamics 365 Business Central key should be created."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets a value that indicates whether a SQL Server index that corresponds to the fields part of the Dynamics 365 Business Central key should be created.
 
 ## Applies to
--   Table Key
+-   Table key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -42,6 +42,6 @@ This property is mostly used in the case where the key definition is for a SIFT 
 > [!NOTE]  
 > You cannot disable this property on the primary key of a table. This key is always created in SQL Server.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

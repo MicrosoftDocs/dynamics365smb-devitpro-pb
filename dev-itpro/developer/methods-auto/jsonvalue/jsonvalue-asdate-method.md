@@ -2,7 +2,7 @@
 title: "JsonValue.AsDate() Method"
 description: "Converts the value in a JsonValue to a Date data type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -35,7 +35,7 @@ If the JsonValue does not contain a string of the format "yyyy-MM-dd" e.g. "2017
 
 
 
-## See Also
+## Related information
 [JsonValue Data Type](jsonvalue-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

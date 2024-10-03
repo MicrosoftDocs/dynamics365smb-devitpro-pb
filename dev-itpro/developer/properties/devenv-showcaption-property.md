@@ -1,8 +1,8 @@
 ---
-title: "ShowCaption Property"
+title: "ShowCaption property"
 description: "Sets whether the text that is specified by the Caption Property is displayed for the control."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ Sets whether the text that is specified by the Caption Property is displayed for
 ShowCaption = false;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [Caption Property](devenv-caption-property.md)  

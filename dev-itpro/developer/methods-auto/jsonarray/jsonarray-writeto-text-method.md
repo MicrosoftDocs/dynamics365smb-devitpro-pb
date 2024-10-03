@@ -2,7 +2,7 @@
 title: "JsonArray.WriteTo(var Text) Method"
 description: "Serializes and writes the JSON data of the JsonArray to a given Text object."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -37,7 +37,7 @@ The Text object to which the JSON data will be written.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [JsonArray Data Type](jsonarray-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

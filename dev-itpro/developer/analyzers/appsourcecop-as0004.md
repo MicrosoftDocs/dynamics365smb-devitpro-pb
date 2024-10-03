@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0004"
 description: "Fields must not change type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -59,7 +59,7 @@ table 50 MyTable
 
 The data type of the field `Identifier` was changed from `Integer` to `Text[30]`, which isn't allowed and will trigger this rule.
 
-## See Also
+## Related information
 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

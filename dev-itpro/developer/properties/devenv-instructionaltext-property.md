@@ -1,8 +1,8 @@
 ---
-title: "InstructionalText Property"
+title: "InstructionalText property"
 description: "Sets the string used for instructions in the UI."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -58,7 +58,7 @@ InstructionalText = 'Add an entity from your list of contacts. The entity can be
 
 The InstructionalText property on a page field should provide an example value or a short summary of the field's purpose to guide the user towards entering the expected value.
 
-## See also
+## Related information
 
 [Configuring the Help Experience](../../deployment/configure-help.md)  
 [Page object](../devenv-page-object.md)  

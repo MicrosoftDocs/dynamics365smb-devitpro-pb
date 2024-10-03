@@ -1,8 +1,8 @@
 ---
-title: "CaptionML Property"
-description: "Sets the string string that displays with the object, control, or other element in user interface for the current language."
+title: "CaptionML property"
+description: "Sets the text string that displays with the object, control, or other element in user interface for the current language."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/02/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -13,11 +13,11 @@ ms.reviewer: solsen
 # CaptionML Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets the string string that displays with the object, control, or other element in user interface for the current language.
+Sets the text string that displays with the object, control, or other element in user interface for the current language.
 
 ## Applies to
 -   Table
--   Table Field
+-   Table field
 -   Page Field
 -   Field Group
 -   Page
@@ -94,6 +94,6 @@ When the CaptionML property does not include an entry for the language used in t
     |Query objects|Name property|  
     |Query columns|CaptionML property of the underlying table field for the column|  
 
-## See Also  
+## Related information  
  [Caption Property](devenv-caption-property.md)   
  [Name Property](./devenv-properties.md)

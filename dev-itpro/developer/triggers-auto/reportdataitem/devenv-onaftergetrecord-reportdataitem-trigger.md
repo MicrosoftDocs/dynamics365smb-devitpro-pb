@@ -1,16 +1,17 @@
 ---
-title: "OnAfterGetRecord (Report Data Item) Trigger"
+title: "OnAfterGetRecord (Report Data Item) trigger"
 description: "Runs each time a record is retrieved from the data item."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterGetRecord (Report Data Item) Trigger
+# OnAfterGetRecord (Report Data Item) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs each time a record is retrieved from the data item.
@@ -36,7 +37,7 @@ If the record contains [FlowFields](../../devenv-flowfields.md), you can put [Ca
 
 Another example is when you need to retrieve information from a table that is external to the report or XMLport. This is the situation when the records of a data item contain fields that are foreign keys \(that is, fields that are primary keys in other tables\), and you want to extract further information from the related tables. For example, in a report, the records in a data item might contain a field with a Vendor code, while you want to print the full name and address of the vendor. You use this trigger to retrieve the information in order to print it in your report.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAfterGetRecord (Page) Trigger](../page/devenv-onaftergetrecord-page-trigger.md)  

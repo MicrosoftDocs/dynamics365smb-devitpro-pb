@@ -32,6 +32,6 @@ This property is used only if the [Format Property \(XMLports\)](devenv-format-p
   
 The value is an integer that defines the number of characters in the field.  
  
-## See Also  
+## Related information  
 
 [XMLport Properties](devenv-xmlport-properties.md)

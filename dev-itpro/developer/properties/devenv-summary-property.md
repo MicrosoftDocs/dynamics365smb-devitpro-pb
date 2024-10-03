@@ -1,8 +1,8 @@
 ---
-title: "Summary Property"
+title: "Summary property"
 description: "Sets the string that is used to provide a detailed description of this layout."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -19,6 +19,6 @@ Sets the string that is used to provide a detailed description of this layout.
 -   Report Layout
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

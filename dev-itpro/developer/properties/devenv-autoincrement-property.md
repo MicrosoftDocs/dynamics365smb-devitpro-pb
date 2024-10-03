@@ -1,8 +1,8 @@
 ---
-title: "AutoIncrement Property"
+title: "AutoIncrement property"
 description: "Sets whether the field value should be automatically incremented."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets whether the field value should be automatically incremented.
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -48,5 +48,5 @@ The AutoIncrement property is designed to always assign numbers automatically. I
   
 The AutoIncrement property does not work with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] temporary tables.  
   
-## See Also  
+## Related information  
  [Properties](devenv-properties.md)

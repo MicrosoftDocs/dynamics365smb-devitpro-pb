@@ -2,10 +2,11 @@
 title: "AppSourceCop Error AS0026"
 description: "The type and subtype of parameters cannot be modified in events and external procedures."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
+ai-usage: ai-assisted
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,7 +21,7 @@ The type and subtype of parameters cannot be modified in events and external pro
 
 ## Remarks
 
-It is not allowed to change the type or subtype of parameters in public procedures as this will break dependent extensions which are calling them.
+It's not allowed to change the type or subtype of parameters in public procedures as this will break dependent extensions which are calling them.
 
 > [!NOTE]  
 > This rule allows to convert `Option` type parameters into `Enum` type parameters.
@@ -75,7 +76,7 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the subtype of the parameter `i` has changed from a Customer record to a Vendor record. If a dependent extension calls this method, this will lead to a compilation error similar to `Argument 1: cannot convert from 'Record Vendor' to 'Record Customer' (AL0133)`.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
