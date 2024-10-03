@@ -18,7 +18,7 @@ In [!INCLUDE [prod_short](includes/prod_short.md)], the user can use the actiona
 
 In the following sections, you find more detail on how the actionable error messages framework works in the Base Application and how you can extend this framework.
 
-### The `ErrorMessageManagement.Codeunit.al` in the Base Application
+### Codeunit `ErrorMessageManagement` in Base Application
 
 In the Base Application you can find the [ErrorMessageManagement codeunit](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-management). This codeunit can be used to add sub-contextual information and the implementation for the error message action to the last-logged error message, which triggers the `OnAddSubContextToLastErrorMessage` event. 
 
@@ -33,6 +33,29 @@ This procedure is used in the `DimensionManagement` codeunit to log `SameCodeWro
 #### Event `OnAddSubContextToLastErrorMessage(Tag, VariantRec, TempErrorMessage)`
 
 Use `Tag` to identify the error message in the subscriber. `VariantRec` can be used to pass the sub-contextual information. `TempErrorMessage` is the error message record under consideration.
+
+### Codeunit `ErrorMessagesActionHandler` in Base Application
+
+This codeunit handles the drill-down operation and the **Accept recommended action** on the **Error Messages** page.
+
+It handles drill-down to the recommended action of an error message to run it with a confirmation dialog box. When the user confirms the action, the error message fix implementation is run for the selected error message:
+
+```al
+procedure OnActionDrillDown(var ErrorMessage: Record "Error Message")
+```
+
+It executes recommended actions for all the selected error messages on the page. Selected error messages are passed from the page and all the error message fix implementations are executed for the selected error messages. The procedure doesn't stop if there's an error in applying fix. Instead, it updates the error message status and continues to apply remaining recommendations for the remaining error messages:
+
+```al
+procedure ExecuteActions(var ErrorMessages: Record "Error Message" temporary)
+```
+
+### Codeunit (ID 7901) `"Execute Error Action"`
+
+This codeunit is internally used to execute the error message fix implementation with `ErrorBehavior::Collect`. This allows us to continue applying recommendations for all the selected error messages even if there is an error.
+
+> [!NOTE]
+> Commits are ignored inside the implementation of ErrorMessageFix interface.
 
 ## How to add error messages with fix implementation?
 
@@ -53,36 +76,15 @@ Implement the `ErrorMessageFix` interface and extend the `"Error Msg. Fix Implem
   Extend the enum (ID 7901) named `"Error Msg. Fix Implementation"` to include the implemented codeunit. This enum is used to map specific error messages to their corresponding fix implementations.
 
 
-### Example usage in the **Error messages with recommendations** extension
+## Example usage in the **Error messages with recommendations** extension
 
-<!-- what is the context here? is it an open source extension? can we link -->
+The `ErrorMessagesWithRecommendations` extension is available in the [ALAppExtensions open source repo](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/ErrorMessagesWithRecommendations). Here you can see an example of how the error messages with recommendations framework is extended. The next sections explain the details of the implementation.
 
 #### Codeunit (ID 7903) `"Dimension Code Same Error"` and codeunit (ID 7904) `"Dimension Code Must Be Blank"`
 
-Subscribe to the event `OnAddSubContextToLastErrorMessage`. Update the error message record based on the `Tag`.
-Set the `TempErrorMessage."Error Msg. Fix Implementation"` to use enum value from `enum 7901 "Error Msg. Fix Implementation"` which has the implementation for the error message action.
-
-### Codeunit (ID 7900) `ErrorMessagesActionHandler`
-
-This handles the drill-down operation and the **Accept recommended action** on the **Error Messages** page.
-
-```al
-procedure OnActionDrillDown(var ErrorMessage: Record "Error Message")
-```
-
-Drill-down to the recommended action of an error message to run it with a confirmation dialog box. When the user confirms the action, the error message fix implementation is run for the selected error message.
-
-```al
-procedure ExecuteActions(var ErrorMessages: Record "Error Message" temporary)
-```
-
-Execute recommended actions for all the selected error messages on the page.
-Selected error messages are passed from the page and all the error message fix implementations are executed for the selected error messages.
-The procedure does not stop if there is an error in applying fix. Instead, it updates the error message status and continues to apply remaining recommendations for the remaining error messages.
-
-### Codeunit (ID 7901) `"Execute Error Action"`
-
-This codeunit is internally used to execute the error message fix implementation with ErrorBehavior::Collect. This allows us to continue applying recommendations for all the selected error messages even if there is an error.
-**Note:** Commits will be ignored inside the implementation of ErrorMessageFix interface.
+Subscribes to the event `OnAddSubContextToLastErrorMessage` and updates the error message record based on the `Tag`.
+Sets the `TempErrorMessage."Error Msg. Fix Implementation"` to use the enum value from enum (ID 7901) `"Error Msg. Fix Implementation"`, which has the implementation for the error message action.
 
 ## Related information
+
+[ErrorMessageManagement codeunit](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-management)
