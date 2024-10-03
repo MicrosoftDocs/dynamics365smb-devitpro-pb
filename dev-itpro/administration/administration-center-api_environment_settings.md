@@ -282,7 +282,7 @@ DELETE /admin/v2.22/applications/{applicationFamily}/environments/{environmentNa
 Returns a boolean value that indicates whether the environment allows access for delegated administrators and foreign multitenant apps and a list of allowlisted foreign Entra tenant IDs.
 
 > [!IMPORTANT]
-> This API endpoint can only be used by internal administrators. Authentication as delegated administrator or application is not supported.
+> This API endpoint can only be used by internal global administrators. Authentication as delegated administrator or application is not supported.
 ```
 GET /admin/v2.22/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
@@ -309,7 +309,7 @@ GET /admin/v2.22/applications/{applicationFamily}/environments/{environmentName}
 Enable/disable delegated administrators and foreign multitenant apps to/from administering and accessing the environment, optionally allowlist only specific foreign Entra tenants to administer and access the environment.
 
 > [!IMPORTANT]
-> This API endpoint can only be used by internal administrators. Authentication as delegated administrator or application is not supported.
+> This API endpoint can only be used by internal global administrators. Authentication as delegated administrator or application is not supported.
 ```
 PUT /admin/v2.22/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
