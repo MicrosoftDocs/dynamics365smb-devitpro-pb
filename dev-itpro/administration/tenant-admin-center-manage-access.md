@@ -46,25 +46,30 @@ Before you can assign a Microsoft Entra group to an environment, the group must 
 
 ## Manage access for delegated administrators and multitenant applications
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] customers working with multiple partners may want to control which partner(s) and [multitenant application(s)](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow) can access and administer which environment(s). Internal administrators can use the **Partner access** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to control whether an environment is accessible and administrable by delegated administrators and multitenant applications, and, if so, to control from which Entra tenant(s) these delegated administrators and multitenant applications should come to do so.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] customers working with multiple partners may want to control which partner(s) and [multitenant application(s)](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow) can access and administer which environment(s). Internal global administrators can use the **Partner access** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to control whether an environment is accessible and administrable by delegated administrators and multitenant applications, and, if so, to control from which Entra tenant(s) these delegated administrators and multitenant applications should come to do so.
 
 > [!IMPORTANT]
 > Up to ten Entra tenants can be allowlisted per environment to enable them to access and administer the environment.
 
-Environments that are set up not to allow access and administration by the authenticating entity, either because no partner access is allowed at all or because the home Entra tenant of the delegated administrator or multitenant app is not allowlisted, are not visible or administrable in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and the Admin Center API, and cannot be accessed using any client or API.
+Environments that are set up not to allow access and administration by the authenticating entity, either because no partner access is allowed at all or because the home Entra tenant of the delegated administrator or multitenant app is not allowlisted, are not visible or administrable in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and the Admin Center API. Delegated administrators are also blocked from accessing the environment itself through any client or API. Multitenant apps are only blocked from using the Admin Center API; to control app access to other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] APIs for the environment, [remove its permissions in the environment](/dynamics365/business-central/ui-define-granular-permissions).
 
 The Partner access setting does not override the tenant-level prerequisites for any delegated administrator or multitenant application to authenticate to a customer tenant; it only allows for more granular access controls on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment level after tenant-level prerequisites are in place. Delegated administrators that do not have a Entra role that allows for administration and access of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments assigned in the customer tenant as part of an active [GDAP relationship](/partner-center/customers/gdap-introduction) cannot access the customer tenant even if their home Entra tenant is allowlisted in the Partner access settings for the environment. Multitenant applications that are not registered in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and/or in the environment itself, or for which no [consent](/entra/identity/enterprise-apps/grant-admin-consent) has been granted in the customer tenant, cannot access the customer tenant even if their home Entra tenant is allowlisted in the Partner access settings for the environment.
 
 To turn access on or off or to limit access to selected home Entra tenants, complete the following steps:
 
 > [!IMPORTANT]
-> The Partner access setting can only be controlled by internal administrators.
+> The Partner access setting can only be controlled by internal global administrators.
 
 1. Select **Environments**, then select the environment for which you want to change partner access.
 2. On the environments details page, select **Modify** for the **Partner access** setting.
-3. In the **Partner access** pane, turn the switch on or off. If off, no delegated administrators or multitenant apps not homed in the customer tenant can administer or access the environment.
-4. Optionally, if on, up to 10 environments can be allowlisted to only allow administration and access from selected tenants.
+3. In the **Partner access** pane, turn the **Allow partner access** switch on or off. If off, no delegated administrators or multitenant apps not homed in the customer tenant can administer or access the environment.
+4. Use the **Allow access to all partner tenants** switch to control if all partners with tenant-level access should be able to access the environment. If off, a list of partners with current tenant-level access will show. Use the switches on each row on the list to allow or deny access for a specific partner. You can allow up to ten partner tenants per environment.
 5. Select **Save** and accept the confirmation dialog. The change takes effect immediately.
+
+> [!NOTE]
+> By default, environments are set up to allow all partner access. To ensure partners that get access to your tenant in the future do not automatically gain access to an environment, set the environment up not to allow access to all partner tenants.
+
+The Partner access settings on an environment are preserved if tenant-level access is removed, for example when a GDAP relationship has ended or application consent to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API has been revoked. Should the tenant-level access be re-enabled, the partner would automatically have access to the environment again. To avoid this, change the Partner access setting on the environment after the tenant-level access is removed.
 
 ## Manage access with Microsoft 365 licenses
 
