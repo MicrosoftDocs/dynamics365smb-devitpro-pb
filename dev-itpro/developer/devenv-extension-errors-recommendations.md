@@ -14,6 +14,26 @@ Improving error handling and error messages reduces friction for users and highl
 
 In [!INCLUDE [prod_short](includes/prod_short.md)], the user can use the actionable error messages displayed on the **Error Messages** page to resolve issues and continue working. The **Error Messages** page serves as a centralized location for all error notifications, making it easier to manage and resolve multiple issues efficiently.
 
+## Technical details and usage in the Base Application
+
+In the following sections, you find more detail on how the actionable error messages framework works in the Base Application and how you can extend this framework.
+
+### The `ErrorMessageManagement.Codeunit.al` in the Base Application
+
+In the Base Application you can find the [ErrorMessageManagement codeunit](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-management). This codeunit can be used to add sub-contextual information and the implementation for the error message action to the last-logged error message, which triggers the `OnAddSubContextToLastErrorMessage` event. 
+
+In the Base Application on the `ErrorMessageManagement` codeunit, you find the `AddSubContextToLastErrorMessage` procedure.
+
+```al
+procedure AddSubContextToLastErrorMessage(Tag: Text; VariantRec: Variant)
+```
+
+This procedure is used in the `DimensionManagement` codeunit to log `SameCodeWrongDimErr` and `NoCodeFilledDimErr` by passing the sub-contextual information. Dimension Set Entry is the sub-contextual information for these error messages.
+
+#### Event `OnAddSubContextToLastErrorMessage(Tag, VariantRec, TempErrorMessage)`
+
+Use `Tag` to identify the error message in the subscriber. `VariantRec` can be used to pass the sub-contextual information. `TempErrorMessage` is the error message record under consideration.
+
 ## How to add error messages with fix implementation?
 
 To allow users effectively handle and resolve errors in your extension, you can follow the sections to learn how to implement and use the error message handling framework. The framework allows you to provide actionable recommendations and automated fixes for common issues, improve the overall user experience, and reduce the time spent troubleshooting. The key steps are:
@@ -22,13 +42,9 @@ To allow users effectively handle and resolve errors in your extension, you can 
 2. Make sure that the extended fields (`tableextension 7900 "Error Message Ext."`) for the logged error message record have been populated.
 3. In [!INCLUDE [prod_short](includes/prod_short.md)] users should now be able to use the drill-down feature in the **Recommended actions** column or the **Accept recommended action** on the **Error Messages** page to fix the errors in bulk.
 
-## Technical details and usage
-
-> In the following sections, you find more detail on how the actionable error messages framework works in the Base Application.
-
 ### The `ErrorMessageFix` interface
 
-To enable logic for fixing errors, follow these steps:
+Implement the `ErrorMessageFix` interface and extend the `"Error Msg. Fix Implementation"` enum.
 
 - Implement the `ErrorMessageFix` interface  
   Begin by creating a codeunit that implements the **ErrorMessageFix** interface. This interface defines the methods required to provide a fix for specific errors. By implementing this interface, you can define the logic needed to resolve the errors programmatically.
@@ -36,32 +52,8 @@ To enable logic for fixing errors, follow these steps:
 - Extend the enum (ID 7901) `"Error Msg. Fix Implementation"`  
   Extend the enum (ID 7901) named `"Error Msg. Fix Implementation"` to include the implemented codeunit. This enum is used to map specific error messages to their corresponding fix implementations.
 
-### The `ErrorMessageManagement.Codeunit.al` codeunit in the Base Application
-move to the top before steps
-<!-- what is the context here?? https://learn.microsoft.com/en-us/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-management --> introduction
 
-In the Base Application you can find the `ErrorMessageManagement` codeunit. The codeunit can be used to add sub-contextual information and the implementation for the error message action to the last-logged error message, which then triggers the `OnAddSubContextToLastErrorMessage` event.
-
-<!-- example context?? -->
-
-```al
-procedure AddSubContextToLastErrorMessage(Tag: Text; VariantRec: Variant)
-```
-
-### Usage in the Base Application
-
-Likewise, in the Base Application the on the `ErrorMessageManagement` codeunit, you find the `AddSubContextToLastErrorMessage` procedure. 
-
-<!-- the following names cannot be verified -> -->
-This procedure is used in the `DimensionManagement` codeunit to log `SameCodeWrongDimErr` and `NoCodeFilledDimErr` by passing the sub-contextual information. Dimension Set Entry is the sub-contextual information for these error messages.
-
-#### Event `OnAddSubContextToLastErrorMessage(Tag, VariantRec, TempErrorMessage)`
-
-Use `Tag` to identify the error message in the subscriber. `VariantRec` can be used to pass the sub-contextual information. `TempErrorMessage` is the error message record under consideration.
-
-<!-- move up -->
-
-### Usage in the **Error messages with recommendations** extension
+### Example usage in the **Error messages with recommendations** extension
 
 <!-- what is the context here? is it an open source extension? can we link -->
 
