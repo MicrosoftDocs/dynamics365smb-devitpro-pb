@@ -30,7 +30,7 @@ For an overview building the Copilot UI, go to [Build Copilot user experience](a
 
 The prompt area is where users can provide input to the AI generation. The prompt area supports natural language input (like free text fields) and structured input (like field groups and page parts). The example uses a single field that allows the user to type text in an unstructured format.
 
-[![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.png)](media/promptdialog-prompt-mode-prompt-area.png#lightbox)
+[![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)](media/promptdialog-prompt-mode-prompt-area.svg#lightbox)
 
 The prompt area is defined by adding an `area` control to the `layout` of the page, similar to way you'd add content areas on other page types. Except you use the syntax `area(Prompt)`:
 
