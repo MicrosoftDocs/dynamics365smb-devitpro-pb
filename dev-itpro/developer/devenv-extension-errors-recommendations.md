@@ -16,11 +16,13 @@ In [!INCLUDE [prod_short](includes/prod_short.md)], the user can use the actiona
 
 This article shows how to raise actionable error messages from the `ErrorMessageManagement` codeunit using the **Error Messages with Recommendations** app. 
 
-## Technical details and usage in the Base Application
+## Technical implementation details
 
-In the following sections, you find more detail on how the actionable error messages framework works in the Base Application and how you can extend this framework.
+In the following sections, you find more details on how the **Error messages with recommendations** extension can be used to raise actionable errors.
 
-### Codeunit `ErrorMessageManagement` in Base Application
+### Base Application
+
+#### Codeunit `ErrorMessageManagement`
 
 In the Base Application you can find the [ErrorMessageManagement codeunit](/dynamics365/business-central/application/base-application/codeunit/system.utilities.error-message-management). This codeunit can be used to add sub-contextual information and the implementation for the error message action to the last-logged error message, which triggers the `OnAddSubContextToLastErrorMessage` event. 
 
@@ -32,11 +34,11 @@ procedure AddSubContextToLastErrorMessage(Tag: Text; VariantRec: Variant)
 
 This procedure is used in the `DimensionManagement` codeunit to log `SameCodeWrongDimErr` and `NoCodeFilledDimErr` by passing the sub-contextual information. Dimension Set Entry is the sub-contextual information for these error messages.
 
-#### Event `OnAddSubContextToLastErrorMessage(Tag, VariantRec, TempErrorMessage)`
-
 Use `Tag` to identify the error message in the subscriber. `VariantRec` can be used to pass the sub-contextual information. `TempErrorMessage` is the error message record under consideration.
 
-### Codeunit `ErrorMessagesActionHandler` in Base Application
+### Error messages with recommendations
+
+#### Codeunit (ID 7900) `ErrorMessagesActionHandler`
 
 This codeunit handles the drill-down operation and the **Accept recommended action** on the **Error Messages** page.
 
@@ -52,20 +54,12 @@ It executes recommended actions for all the selected error messages on the page.
 procedure ExecuteActions(var ErrorMessages: Record "Error Message" temporary)
 ```
 
-### Codeunit (ID 7901) `"Execute Error Action"`
+#### Codeunit (ID 7901) `"Execute Error Action"`
 
 This codeunit is internally used to execute the error message fix implementation with `ErrorBehavior::Collect`. This allows us to continue applying recommendations for all the selected error messages even if there is an error.
 
 > [!NOTE]
 > Commits are ignored inside the implementation of ErrorMessageFix interface.
-
-## How to add error messages with fix implementation?
-
-To allow users effectively handle and resolve errors in your extension, you can follow the sections to learn how to implement and use the error message handling framework. The framework allows you to provide actionable recommendations and automated fixes for common issues, improve the overall user experience, and reduce the time spent troubleshooting. The key steps are:
-
-1. Implement the interface `ErrorMessageFix` and extend the enum 7901 `"Error Msg. Fix Implementation"`.
-2. Make sure that the extended fields (`tableextension 7900 "Error Message Ext."`) for the logged error message record have been populated.
-3. In [!INCLUDE [prod_short](includes/prod_short.md)] users should now be able to use the drill-down feature in the **Recommended actions** column or the **Accept recommended action** on the **Error Messages** page to fix the errors in bulk.
 
 ### The `ErrorMessageFix` interface
 
@@ -78,11 +72,11 @@ Implement the `ErrorMessageFix` interface and extend the `"Error Msg. Fix Implem
   Extend the enum (ID 7901) named `"Error Msg. Fix Implementation"` to include the implemented codeunit. This enum is used to map specific error messages to their corresponding fix implementations.
 
 
-## Example usage in the **Error messages with recommendations** extension
+## Example usage to fix an error raised from the Base Application
 
-The `ErrorMessagesWithRecommendations` extension is available in the [ALAppExtensions open source repo](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/ErrorMessagesWithRecommendations). Here you can see an example of how the error messages with recommendations framework is extended. The next sections explain the details of the implementation.
+The `ErrorMessagesWithRecommendations` extension is available in the [ALAppExtensions open source repo](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/ErrorMessagesWithRecommendations/app/src/Implementation). Here you can see an example of how the error messages with recommendations framework is implemented and how error messages raised from the Base Application are fixed. The next sections explain the details of the implementation.
 
-#### Codeunit (ID 7903) `"Dimension Code Same Error"` and codeunit (ID 7904) `"Dimension Code Must Be Blank"`
+### Codeunit (ID 7903) `"Dimension Code Same Error"` and codeunit (ID 7904) `"Dimension Code Must Be Blank"`
 
 Subscribes to the event `OnAddSubContextToLastErrorMessage` and updates the error message record based on the `Tag`.
 Sets the `TempErrorMessage."Error Msg. Fix Implementation"` to use the enum value from enum (ID 7901) `"Error Msg. Fix Implementation"`, which has the implementation for the error message action.
