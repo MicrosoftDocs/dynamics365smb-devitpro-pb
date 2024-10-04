@@ -630,7 +630,130 @@ Activities listed in the table below can be audited by filtering to the `Adminis
 
 
 ### Administered company activities
-Coming soon.
+
+Activities listed in the table below can be audited by filtering to the `Administered company` event.
+
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Message parameters</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The Monitor Field feature has been set up by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The Field Monitoring has been set for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
+            <td>FieldId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The Field Monitoring has been modified for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
+            <td>FieldId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The Field Monitoring has been deleted for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
+            <td>FieldId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=5>The Data sensitivity value [DataSensitivityValue] has been set for Company Name [CompanyName], Table No [TableId], Field No [FieldId] by UserSecurityId [UserSecurityId]</td>
+            <td>DataSensitivityValue</td>
+            <td>Sensitive</td>
+        </tr>
+        <tr>
+            <td>CompanyName</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>FieldId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The new Retention Policy record with Table ID [TableId] is created by the UserSecurityId [UserSecurityId]</td>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The retention policy defined for table [TableId], [TableName] applied by the UserSecurityId [UserSecurityId]</td>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>TableName</td>
+            <td>Customer</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>UserSecurityId [UserSecurityId] set the Status of the job queue entry [JobQueueEntryId] to Ready</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>JobQueueEntryId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The status of the feature key [FeatureKey] has been set to [FeatureStatus] by UserSecurityId [UserSecurityId]</td>
+            <td>FeatureKey</td>
+            <td>ConcurrentWarehousingPosting</td>
+        </tr>
+        <tr>
+            <td>FeatureStatus</td>
+            <td>Enabled</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+    </tbody>
+</table>
+
 
 ### Configured integration activities
 
