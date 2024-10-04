@@ -14,6 +14,8 @@ Improving error handling and error messages reduces friction for users and highl
 
 In [!INCLUDE [prod_short](includes/prod_short.md)], the user can use the actionable error messages displayed on the **Error Messages** page to resolve issues and continue working. The **Error Messages** page serves as a centralized location for all error notifications, making it easier to manage and resolve multiple issues efficiently.
 
+This article shows how to raise actionable error messages from the `ErrorMessageManagement` codeunit using the **Error Messages with Recommendations** app. 
+
 ## Technical details and usage in the Base Application
 
 In the following sections, you find more detail on how the actionable error messages framework works in the Base Application and how you can extend this framework.
