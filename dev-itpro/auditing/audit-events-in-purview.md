@@ -583,12 +583,12 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=2>The permission set [PermissionSet] has been copied by UserSecurityId</td>
+            <td rowspan=2>The permission set [PermissionSet] has been copied by UserSecurityId [UserSecurityId]</td>
             <td>PermissionSet</td>
             <td>D365 READ</td>
         </tr>
         <tr>
-            <td>UserSecurityID2</td>
+            <td>UserSecurityID</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
