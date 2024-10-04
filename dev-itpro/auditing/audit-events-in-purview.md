@@ -994,7 +994,7 @@ Activities listed in the table below can be audited by filtering to the `Configu
     </thead>
     <tbody>
         <tr>
-            <td rowspan=2>The copilot/AI capability [CopilotCapability], App Id [AppId] has been activated by the UserSecurityId [UserSecurityId]</td>
+            <td rowspan=3>The copilot/AI capability [CopilotCapability], App Id [AppId] has been activated by the UserSecurityId [UserSecurityId]</td>
             <td>CopilotCapability</td>
             <td>Sales Line Suggestions</td>
         </tr>
