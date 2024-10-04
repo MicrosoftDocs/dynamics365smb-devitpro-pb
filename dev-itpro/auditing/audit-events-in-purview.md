@@ -392,6 +392,147 @@ Activities listed in the table below can be audited by filtering to the `Adminis
     </thead>
     <tbody>
         <tr>
+            <td rowspan=7>The tenant [TenantPermission] permission for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] has been updated with the value: "[Value]", by the UserSecurityId [UserSecurityId]</td>
+            <td>TenantPermission</td>
+            <td>READ</td>
+        </tr>
+        <tr>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Role</td>
+            <td>D365 ACCOUNTANTS</td>
+        </tr>
+        <tr>
+            <td>ObjectType</td>
+            <td>Table</td>
+        </tr>
+        <tr>
+            <td>ObjectId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Value</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=5>The Read Permission for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been granted by the UserSecurityId [UserSecurityId]</td>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Role</td>
+            <td>D365 ACCOUNTANTS</td>
+        </tr>
+        <tr>
+            <td>ObjectType</td>
+            <td>Table</td>
+        </tr>
+        <tr>
+            <td>ObjectId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=10>The tenant permissions for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been inserted with the following values - Read "[Read]", Insert "[Insert]", Modify "[Modify]", Delete "[Delete]" and Execute "[Execute]" by the UserSecurityId [UserSecurityId]</td>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Role</td>
+            <td>D365 ACCOUNTANTS</td>
+        </tr>
+        <tr>
+            <td>ObjectType</td>
+            <td>Table</td>
+        </tr>
+        <tr>
+            <td>ObjectId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Read</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Insert</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Modify</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Delete</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Execute</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=10>The tenant permissions for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been updated with the following values - Read "[Read]", Insert "[Insert]", Modify "[Modify]", Delete "[Delete]" and Execute "[Execute]" by the UserSecurityId [UserSecurityId]</td>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Role</td>
+            <td>D365 ACCOUNTANTS</td>
+        </tr>
+        <tr>
+            <td>ObjectType</td>
+            <td>Table</td>
+        </tr>
+        <tr>
+            <td>ObjectId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Read</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Insert</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Modify</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Delete</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The permission set [PermissionSet] has been added to the security group [SecurityGroupName] by UserSecurityId [UserSecurityId]</td>
+            <td>PermissionSet</td>
+            <td>D365 READ</td>
+        </tr>
+        <tr>
+            <td>SecurityGroupName</td>
+            <td>My security group</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
             <td rowspan=2>The license configuration [PlanConfiguration] has been created by the UserSecurityID [UserSecurityId]</td>
             <td>PlanConfiguration</td>
             <td>D365 Business Central Basic Financials</td>
