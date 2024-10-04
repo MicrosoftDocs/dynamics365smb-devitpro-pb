@@ -8,7 +8,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Error messages with recommendations
+# Extending error messages with recommendations
 
 Improving error handling and error messages reduces friction for users and highly impacts the user experience. Being able to resolve an error message by following a clear, informative error message helps users understand what went wrong and how to correct it, which reduces frustration, and improves user satisfaction.
 
