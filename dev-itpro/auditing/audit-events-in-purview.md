@@ -483,7 +483,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=10>The tenant permissions for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been updated with the following values - Read "[Read]", Insert "[Insert]", Modify "[Modify]", Delete "[Delete]" and Execute "[Execute]" by the UserSecurityId [UserSecurityId]</td>
+            <td rowspan=9>The tenant permissions for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been updated with the following values - Read "[Read]", Insert "[Insert]", Modify "[Modify]", Delete "[Delete]" and Execute "[Execute]" by the UserSecurityId [UserSecurityId]</td>
             <td>AppId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
