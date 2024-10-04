@@ -10,7 +10,7 @@
    class="st17"
    version="1.1"
    id="svg34"
-   sodipodi:docname="promptdialog-prompt-mode.svg"
+   sodipodi:docname="promptdialog-prompt-mode-attach.svg"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -62,13 +62,13 @@
    inkscape:document-units="in"
    inkscape:zoom="2.3837168"
    inkscape:cx="396.85922"
-   inkscape:cy="173.46859"
+   inkscape:cy="207.02963"
    inkscape:window-width="2560"
    inkscape:window-height="1369"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="g34" />
+   inkscape:current-layer="svg34" />
 	<v:documentProperties
    v:langID="1033"
    v:metric="true"
@@ -895,8 +895,35 @@
    v:langID="1033"
    id="text51"
    style="font-size:10px;font-family:'Segoe UI';fill:#b18675"><v:paragraph /><v:tabList />Enter the information that you want to give Copilot...</text>		</g></g>
-<path
+<g
+   id="shape93-123"
+   v:mID="93"
+   v:groupContext="shape"
+   v:layerMember="0"
+   transform="matrix(1.3695907,0,0,0.99715754,198.87686,-167.42569)"
+   style="stroke-width:1.92532965;stroke-dasharray:none">
+			<title
+   id="title53">Sheet.93</title>
+			<desc
+   id="desc53">How can I [do this]</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="65.9893"
+   cy="345.77"
+   width="131.98"
+   height="20" />
+			<rect
+   x="0"
+   y="335.76999"
+   width="131.979"
+   height="20"
+   class="st7"
+   id="rect54"
+   style="fill:none;stroke:none;stroke-width:1.92532965;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none" />
+					<path
    id="rect17819"
-   style="fill:none;stroke:#e91c1c;stroke-width:2.25;stroke-dasharray:none"
-   d="m 79.25903,4.6650763 h 43.1257 c 0.16257,0 0.29345,0.054392 0.29345,0.1219388 V 22.666647 c 0,0.06752 -0.13088,0.121932 -0.29345,0.121932 h -43.1257 c -0.16257,0 -0.29345,-0.05438 -0.29345,-0.121932 V 4.7870151 c 0,-0.067587 0.13088,-0.1219388 0.29345,-0.1219388 z"
-   inkscape:label="Rectangle callout" /></svg>
+   style="fill:none;stroke:#e91c1c;stroke-width:1.92532965;stroke-dasharray:none"
+   d="m -70.519972,289.02873 h 66.0950762 c 0.2491522,0 0.4497394,0.0756 0.4497394,0.16951 v 24.85306 c 0,0.0939 -0.2005872,0.1695 -0.4497394,0.1695 H -70.519972 c -0.249156,0 -0.449739,-0.0756 -0.449739,-0.1695 v -24.85306 c 0,-0.0939 0.200583,-0.16951 0.449739,-0.16951 z"
+   inkscape:label="Rectangle callout" /></g></svg>
