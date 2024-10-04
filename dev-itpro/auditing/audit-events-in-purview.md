@@ -759,6 +759,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
 
 Activities listed in the table below can be audited by filtering to the `Configured integration` event.
 
+Events in the table below are emitted with custom dimensions.
 <table>
     <thead>
         <tr>
@@ -816,8 +817,198 @@ Activities listed in the table below can be audited by filtering to the `Configu
     </tbody>
 </table>
 
+Events in the table below are emitted with message parameters.
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Message parameters</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>Privacy Notice Approval ID [PrivacyApprovalName] provided by UserSecurityId [UserSecurityId]</td>
+            <td>PrivacyApprovalName</td>
+            <td>Azure OpenAI</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Privacy Notice Approval ID [PrivacyApprovalName] has been reset by UserSecurityId [UserSecurityId]</td>
+            <td>PrivacyApprovalName</td>
+            <td>Azure OpenAI</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The Web Service record with Object Type [ObjectType], Service Name [ServiceName] has been created by UserSecurityId [UserSecurityId]</td>
+            <td>ObjectType</td>
+            <td>Page</td>
+        </tr>
+        <tr>
+            <td>ServiceName</td>
+            <td>ItemLedgerEntries</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=4>The new API Setup record Table ID [TableId], Template Code [TemplateCode], Page ID [PageId] is created by the UserSecurityId [UserSecurityId]</td>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>TemplateCode</td>
+            <td>RESO000001</td>
+        </tr>
+        <tr>
+            <td>PageId</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>User [UserSecurityId] enabled integration to Dataverse</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>User [UserSecurityId] enabled integration to Dynamics 365 Sales</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Email Logging has been set up by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>CDS Connection Setup - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Sales and Inventory Forecast application - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Online Map Setup enabled by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Late Payment Prediction - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Cash Flow Forecast feature, Azure AI - consent provided</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Image Analyzer - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Image Analyzer - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>MS PayPal - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>MS Yodlee Bank Service - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AMC Banking Fundamentals - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>VAT Registration Service enabled by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Curr. Exch. Rate Update Setup - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Document Exchange Service Setup - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>CFDI - consent provided</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>NO Elect. VAT Setup - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>SII Setup - consent provided</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>The UK Making Tax Digital consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
 ### Configured Copilot activities
-Coming soon.
+
+Activities listed in the table below can be audited by filtering to the `Configured Copilot` event.
+
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Message parameters</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>The copilot/AI capability [CopilotCapability], App Id [AppId] has been activated by the UserSecurityId [UserSecurityId]</td>
+            <td>CopilotCapability</td>
+            <td>Sales Line Suggestions</td>
+        </tr>
+        <tr>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+    </tbody>
+</table>
+
 
 ### Configured cloud migration activities
 Coming soon.
