@@ -2,7 +2,7 @@
 title: "Report.ExcelLayout(var InStream) Method"
 description: "Gets the Excel layout that is used on a report and returns it as a data stream."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/07/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.ExcelLayout(var InStream) Method
-> **Version**: _Available or changed with runtime version 9.0._
+> **Version**: _Available or changed with runtime version 9.0 until version 14.0 where it was deprecated for the following reason: "Replace with layout selection and 'Report Layout List' lookup. See https://go.microsoft.com/fwlink/?linkid=2284102&clcid=0x409 for more information."_
 
 Gets the Excel layout that is used on a report and returns it as a data stream.
 
