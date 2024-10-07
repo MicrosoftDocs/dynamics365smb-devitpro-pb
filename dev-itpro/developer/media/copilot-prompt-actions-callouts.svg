@@ -27,15 +27,15 @@
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
    inkscape:document-units="in"
-   inkscape:zoom="3.4294059"
-   inkscape:cx="381.69877"
-   inkscape:cy="181.80992"
+   inkscape:zoom="1"
+   inkscape:cx="483"
+   inkscape:cy="204.5"
    inkscape:window-width="2560"
    inkscape:window-height="1369"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="svg109" />
+   inkscape:current-layer="g109" />
 	<v:documentProperties
    v:langID="1033"
    v:metric="true"
@@ -109,7 +109,15 @@
    transform="scale(-11.08,-11.08) "
    id="use2" />
 		</marker>
-	</defs>
+	<clipPath
+   clipPathUnits="userSpaceOnUse"
+   id="clipPath1"><rect
+     style="fill:none;stroke-width:2.25001"
+     id="rect2"
+     width="415.78"
+     height="216.90564"
+     x="-0.26590008"
+     y="0" /></clipPath></defs>
 	<defs
    id="Filters">
 		<filter
@@ -137,7 +145,8 @@
    v:mID="0"
    v:index="1"
    v:groupContext="foregroundPage"
-   id="g109">
+   id="g109"
+   clip-path="url(#clipPath1)">
 		<title
    id="title3">Page-1</title>
 		<v:pageProperties
@@ -1876,7 +1885,7 @@
    transform="translate(-16.87505)"><tspan
      x="204.5331"
      y="208.4225"
-     id="tspan3">Hide</tspan></text><text
+     id="tspan1">Hide</tspan></text><text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.00003px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-anchor:middle;fill:#000000;stroke-width:2.25001;stroke-dasharray:none"
    x="208.18741"
