@@ -23,7 +23,7 @@ The following code illustrates how to add an action that opens the prompt dialog
 ```al
 action(MyPromptDialogAction)
 {
-    Caption = 'Create draft';
+    Caption = 'Draft a proposal';
     Image = Sparkle;
 
     trigger OnAction()
@@ -65,6 +65,26 @@ actions
     {
         action(MyPromptAction)
         {
+            Caption = 'Draft a proposal';
+            RunObject = page "My Prompt Dialog";
+        }
+    }
+}
+...
+```
+
+Here's an example if you're extending a list page:
+
+```al
+...
+
+actions
+{
+    addlast(Prompting)
+    {
+        action(MyPromptAction)
+        {
+            ApplicationArea = All;
             Caption = 'Draft a proposal';
             RunObject = page "My Prompt Dialog";
         }
