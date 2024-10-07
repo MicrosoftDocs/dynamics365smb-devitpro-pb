@@ -38,23 +38,20 @@ In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special
 
 ## Add prompt actions to promote Copilot features
 
-> **Applies to:** [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and runtime.
+> **Applies to:** [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 (runtime 13) and later.
 
-> [!NOTE]
-> With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2 and runtime 14, you can also use prompt actions on Card, Document, and ListPlus page types to nudge users to use your Copilot features on such pages. The required AL code follows the same model as when adding Copilot prompt actions to list pages.
+In the UI, prompt actions associate actions directly with Copilot. They draw users' attention to tasks that Copilot can assist with on the page. Copilot might display these prompt actions elsewhere such as in the Copilot pane when asked for assistance.
 
-A prompt action associates an action directly with Copilot. Prompt actions draw users' attention to tasks that Copilot can assist with on the page. Copilot might display these prompt actions elsewhere such as in the Copilot pane when asked for assistance.
+A prompt action is a standard action that appears under the ![Shows the Copilot action icon icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in a page's action bar to give it more prominence than other actions in the UI. 
 
-A prompt action is a standard action that appears under the ![Shows the Copilot action icon icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in a page's action bar to give it more prominence than other actions in the UI. If a prompt action is added to a `List` or `Worksheet` page type, it can also appear in floating action bar on the page the code is implemented on.  Users can hide the floating action bar by selecting **Hide**, and they bring bring it back by selecting **Show in page**.
-
-A prompt action is a standard action that is rendered with more prominence than other actions in the UI. Depending on the page on which it is shown, it could be shown as a floating action bar or in another highly prominent space on the page.
-
-![Shows the Copilot action icon clip](media/copilot-prompt-actions-callouts.svg)
+If a prompt action is added to a `List` or `Worksheet` page type, it can also appear in floating action bar on the page the code is implemented on.  Users can hide the floating action bar by selecting **Hide**, and they bring bring it back by selecting **Show in page**.
 
 The following image shows an example of a Copilot prompt action.
 
-:::image type="content" source="media/floating-bar.svg" alt-text="Example of a floating action bar for Copilot feature":::
+:::image type="content" source="media/copilot-prompt-actions-callouts.svg" alt-text="Example of a floating action bar for Copilot feature":::
 
+### To create prompt actions, 
+-  Card, Document, and ListPlus page types to nudge users to use your Copilot features on such pages. The required AL code follows the same model as when adding Copilot prompt actions to list pages.
 To create prompt actions, you must create a new area in the `actions` section of the page object. The area must be set to `area(Prompting)`. You can then add one or more actions in the area and run a `PromptDialog` object that you want to activate when the action is clicked. Only objects of the `PromptDialog` page type can be run from a prompting area.
 
 > [!NOTE]
