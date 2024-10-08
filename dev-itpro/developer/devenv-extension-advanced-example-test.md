@@ -73,13 +73,13 @@ Our CustomerRewardsTest project is referencing objects from the CustomerRewards 
       "version": "1.0.0.0" 
     },
     {
-        "id":  "00001111-aaaa-2222-bbbb-3333cccc4444",
+        "id":  "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
         "name":  "Library Assert",
         "publisher":  "Microsoft",
         "version":  "19.0.0.0"
     },
     {
-        "id":  "00001111-aaaa-2222-bbbb-3333cccc4444",
+        "id":  "5d86850b-0d76-4eca-bd7b-951ad998e997",
         "name":  "Tests-TestLibraries",
         "publisher":  "Microsoft",
         "version":  "19.0.0.0"
