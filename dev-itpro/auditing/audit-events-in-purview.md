@@ -291,6 +291,41 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>Url</td>
             <td>https://cronus.com/support</td>
         </tr>
+        <tr>
+            <td>Changed tenant permission system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed tenant permission set system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed tenant permission set relation system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed tenant feature key system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed tenant profile setting system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed tenant profile extension system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed data sensitivity system table</td>
+            <td></td>
+            <td></td>
+        </tr>
     </tbody>
 </table>
 
@@ -374,6 +409,162 @@ Activities listed in the table below can be audited by filtering to the `Configu
         <tr>
             <td>ScheduledOperationId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Published app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Installed app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Upgraded app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Uninstalled app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Unpublished app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Uploaded app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Deployed app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=9>Changed permission set by extension</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>permissionSetExtensionObjectId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>permissionSetExtensionObjectName</td>
+            <td>Test Permission Set Extension</td>
+        </tr>
+        <tr>
+            <td>permissionSetId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>permissionSetName</td>
+            <td>Test Permission Set Name</td>
+        </tr>
+        <tr>
+            <td>changeSummary</td>
+            <td>Test change summary</td>
+        </tr>
+        <tr>
+            <td>isNewPermissionSet</td>
+            <td>True</td>
         </tr>
     </tbody>
 </table>
@@ -625,14 +816,62 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>UserSecurityId2</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
+        <tr>
+            <td>Changed access control system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed user system table</td>
+            <td></td>
+            <td></td>
+        </tr>
     </tbody>
 </table>
-
 
 ### Administered company activities
 
 Activities listed in the table below can be audited by filtering to the `Administered company` event.
 
+Events in the table below are emitted with custom dimensions.
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Custom dimensions</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Created new company</td>
+            <td>ompanyName</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Copied company</td>
+            <td>fromCompanyName</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td>toCompanyName</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td>Deleted company</td>
+            <td>CompanyName</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td>Changed company system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+Events in the table below are emitted with message parameters.
 <table>
     <thead>
         <tr>
@@ -978,8 +1217,6 @@ Events in the table below are emitted with message parameters.
     </tbody>
 </table>
 
-
-
 ### Configured Copilot activities
 
 Activities listed in the table below can be audited by filtering to the `Configured Copilot` event.
@@ -1014,4 +1251,30 @@ Activities listed in the table below can be audited by filtering to the `Configu
 Coming soon.
 
 ### Administered report activities
-Coming soon.
+
+Activities listed in the table below can be audited by filtering to the `Administered report` event.
+
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Custom dimensions</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=3>Created report</td>
+            <td>ReportId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>LayoutName</td>
+            <td>TestReport</td>
+        </tr>
+        <tr>
+            <td>Action</td>
+            <td>SetDefault</td>
+        </tr>
+    </tbody>
+</table>
