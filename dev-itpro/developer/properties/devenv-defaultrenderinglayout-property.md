@@ -28,6 +28,8 @@ The following example shows how to use this property together with a *rendering*
 report 50124 MyExcelReport
     DefaultRenderingLayout = MyExcelLayout; 
     // More report properties goes here
+   
+    // dataset definition goes here
 
     rendering
     {
@@ -48,7 +50,6 @@ report 50124 MyExcelReport
         }        
     }
 
-    // dataset definition goes here
 ```
 
 ## Related information
