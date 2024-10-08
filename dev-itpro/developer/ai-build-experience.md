@@ -46,7 +46,7 @@ The following table gives an overview of the typical flow from the user's perspe
 
 |Phase|In UI|In AL code|Learn more|
 |-|-|-|-|
-|1|User starts the Copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](Copilot-launch-experience.md)|
+|1|User starts the Copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](developer/devenv-page-prompting-floating-actionbar.md)|
 |2|The PromptDialog page opens in the prompt mode, where users can provide input.|The PromptDialog page is defined by setting the PageType property to `PromptDialog`.|[Create PromptDialog type page](Copilot-create-promptdialog.md) |
 |3|User enters information that Copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more fields.|[Design the prompt mode](Copilot-design-prompt-mode.md)|
 |4|User selects a button to start generating content with AI|The system action `Generate` calls the procedure that starts the AI generation process.|[Add the generate action](Copilot-design-prompt-mode.md#add-a-generate-action)|
