@@ -2,7 +2,7 @@
 title: About dates in Business Central
 description: About dates and time zones in Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
-ms.date: 10/11/2023
+ms.date: 10/08/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -21,11 +21,12 @@ When you work with dates and time zones in [!INCLUDE[prod_short](../includes/pro
 - The places in [!INCLUDE[prod_short](../includes/prod_short.md)], where you still see `Date` fields are there because these fields don’t represent a timestamp. Instead, they represent a date for financial reporting or similar.
 - `Date` fields are never converted per time zone; a date value stays as it was entered.
 - The user enters the posting date in the UI, which represents the date on which this line is posted in the journal.
+- The date and time is always displayed as local time in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)]. Local time is determined by the time zone regional settings used by your computer. You must always enter date and time as local time. When you enter date and time as local time, it's converted to UTC using the current settings for the time zone and daylight savings time.  
 
 > [!NOTE]  
 > Issues can occur when the posting date field is defaulted in code using the `Today` method or using a conversion from a `DateTime` to `Date`. This conversion uses the user's timezone. Based on the current settings, it is not possible to guess what the right date for a conversion like that is. Today UTC is used, which for businesses in the US and Australia will surface immediately.
 
-## See also
+## Related information
 
 [DateTime data type](methods-auto/datetime/datetime-data-type.md)  
 [Date data type](methods-auto/date/date-data-type.md)
