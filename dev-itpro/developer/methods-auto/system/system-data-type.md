@@ -2,7 +2,7 @@
 title: "System data type"
 description: "Is a complex data type."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/07/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -76,7 +76,7 @@ The following methods are available on the System data type.
 |[GlobalLanguage([Integer])](system-globallanguage-method.md)|Gets and sets the current global language setting.|
 |[GuiAllowed()](system-guiallowed-method.md)|Checks whether the AL code can show any information on the screen.|
 |[HasCollectedErrors()](system-hascollectederrors-method.md)|Gets a value indicating whether errors have been collected in the current error collection scope.|
-|[Hyperlink(Text)](system-hyperlink-method.md)|Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer.|
+|[Hyperlink(Text)](system-hyperlink-method.md)|Passes a URL as an argument to an Internet browser, such as Microsoft Edge.|
 |[ImportEncryptionKey(Text, Text)](system-importencryptionkey-method.md)|Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTENCRYPTIONKEY method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.|
 |[ImportObjects(Text [, Integer])](system-importobjects-method.md)|Imports application objects from a file.|
 |[ImportStreamWithUrlAccess(InStream, Text [, Integer])](system-importstreamwithurlaccess-method.md)|Imports an object into a media container to be used in a temporary URL with a default expiration time.|
