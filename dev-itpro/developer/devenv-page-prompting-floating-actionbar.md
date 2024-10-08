@@ -101,7 +101,7 @@ actions
 
   - The simplest approach is to check whether the following statement is `true`: `EnvironmentInformation.IsSaaSInfrastructure()`
   - The preferred approach is to register the Copilot capability only if the environment is online, then on the prompt action’s Visible property check if IsCapabilityRegistered returns true.
-  - You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
+- You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
 
 ### Detailed example
 
