@@ -109,4 +109,4 @@ For a more comprehensive example, go to [Advanced_SuggestJob sample on GitHub](h
 
 - [Design Copilot prompt mode](copilot-design-prompt-mode.md)
 - [Design Copilot content mode](copilot-design-content-mode.md)
-- [Launch Copilot](copilot-launch-experience.md) 
+- [Launch Copilot prompt dialog page](developer/devenv-page-prompting-floating-actionbar.md)

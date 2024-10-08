@@ -205,4 +205,4 @@ actions
 
 - [Design Copilot content mode](copilot-design-content-mode.md)
 - [Customize Copilot generate mode](copilot-customize-generate-mode.md)
-- [Launch Copilot](copilot-launch-experience.md)
+- [Launch Copilot prompt dialog page](developer/devenv-page-prompting-floating-actionbar.md)
