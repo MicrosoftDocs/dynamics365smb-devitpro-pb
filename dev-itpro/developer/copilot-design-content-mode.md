@@ -171,4 +171,4 @@ page 50100 "My Prompt Dialog"
 
 - [Design copilot prompt mode](copilot-design-prompt-mode.md)
 - [Customize copilot generate mode](copilot-customize-generate-mode.md)
-- [Launch copilot](copilot-launch-experience.md)
+- [Launch Copilot prompt dialog page](devenv-page-prompting-floating-actionbar.md)
