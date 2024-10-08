@@ -1,8 +1,8 @@
 ---
 title: "System.Hyperlink(Text) Method"
-description: "Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer."
+description: "Passes a URL as an argument to an Internet browser, such as Microsoft Edge."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 10/07/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 # System.Hyperlink(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer.
+Passes a URL as an argument to an Internet browser, such as Microsoft Edge.
 
 
 ## Syntax

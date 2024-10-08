@@ -98,18 +98,32 @@ The important differences between `Get` and `Find` are as follows:
 - `Find` can find the first or the last record, depending on the sort order defined by the current key.  
   
 When you're developing applications in a relational database, there are often one-to-many relationships defined between tables. An example could be the relationship between an **Item** table, which registers items, and a **Sales Line** table, which registers the detailed lines from sales orders. One record in the **Sales Line** table can only be related to one item, but each item can be related to any number of sales line records. You won't want an item record to be deleted as long as there are still open sales orders that include the item. You can use Find to check for open sales orders.  
-  
-The OnDelete trigger of the **Item** table includes the following code that illustrates using Find.  
+
+If you want to find the first record in a table or set, then use the [FindFirst method (Record)](methods-auto/record/record-findfirst-method.md). If you want to find the last record in a table or set, then use the [FindLast method (Record)](methods-auto/record/record-findlast-method.md).  
+
+The PickItem procedure of the **Item** table includes the following code that illustrates using `FindFirst`.  
   
 ```AL  
-SalesOrderLine.SetCurrentKey(Type,"No.");  
-SalesOrderLine.SetRange(Type,SalesOrderLine.Type::Item);  
-SalesOrderLine.SetRange("No.","No.");  
-if SalesOrderLine.Find('-') then  
-    Error(Text001,TableCaption,"No.",SalesOrderLine."Document Type");  
+procedure PickItem(var Item: Record Item): Code[20]
+    var
+        ItemList: Page "Item List";
+    begin
+        if Item.FilterGroup = -1 then
+            ItemList.SetTempFilteredItemRec(Item);
+
+        if Item.FindFirst() then;
+        ItemList.SetTableView(Item);
+        ItemList.SetRecord(Item);
+        ItemList.LookupMode := true;
+        if ItemList.RunModal() = ACTION::LookupOK then
+            ItemList.GetRecord(Item)
+        else
+            Clear(Item);
+
+        exit(Item."No.");
+    end;
 ```  
-  
-If you want to find the first record in a table or set, then use the [FindFirst method (Record)](methods-auto/record/record-findfirst-method.md). If you want to find the last record in a table or set, then use the [FindLast method (Record)](methods-auto/record/record-findlast-method.md).  
+
   
 ## `Next` method  
 
@@ -130,7 +144,7 @@ repeat
 until (Rec.Next = 0);  
 ```
 
-## See also
+## Related information
 
 [AL methods](methods-auto/library.md)  
 [SystemId field](devenv-table-system-fields.md#systemid)
