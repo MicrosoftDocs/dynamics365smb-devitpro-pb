@@ -7618,7 +7618,13 @@
     "source_path": "dev-itpro/terms/legal-universal-app.md",
     "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2182906",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/database/database-selectlatestversion--method.md",
+    "redirect_url": "dev-itpro/developer/methods-auto/database/database-selectlatestversion-method",
+    "redirect_document_id": false
    }
+   
   ] 
 }
 
