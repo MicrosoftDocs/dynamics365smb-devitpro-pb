@@ -4,7 +4,7 @@ description: Integrate with Azure OpenAI Service through the AI module of Busine
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 03/25/2024
+ms.date: 10/09/2024
 ms.custom: bap-template
 ms.collection:
   - get-started

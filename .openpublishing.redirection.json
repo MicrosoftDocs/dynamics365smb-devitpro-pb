@@ -7623,8 +7623,12 @@
     "source_path": "dev-itpro/developer/methods-auto/database/database-selectlatestversion--method.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/database/database-selectlatestversion-method",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "/dev-itpro/developer/copilot-launch-experience.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-page-prompting-floating-actionbar",
+    "redirect_document_id": false
    }
-   
   ] 
 }
 
