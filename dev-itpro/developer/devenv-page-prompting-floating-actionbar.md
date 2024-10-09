@@ -96,13 +96,68 @@ actions
 ### Design guidelines and considerations
 
 - Prompt actions are supported only on the following page types: `Card`, `Document`, `List`, `ListPart`, `ListPlus`, `StandardDialog`, and `Worksheet`.
+- You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
 - Prompt actions only appear if the `RunObject` property is specified.
 - Prompt actions display in Business Central online and on-premises environments. However, Microsoft Copilot is exclusively for Business Central online. To make actions dynamically visible based on the deployment, use the [Visible property](properties/devenv-visible-property.md) on prompt actions. For example, you can use one of these two approaches:
 
-  - The simplest approach is to check whether the following statement is `true`: `EnvironmentInformation.IsSaaSInfrastructure()`
-  - The preferred approach is to register the Copilot capability only if the environment is online, then on the prompt action’s Visible property check if IsCapabilityRegistered returns true.
-  - You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
+   The simplest approach is to check whether the following statement is `true`: `EnvironmentInformation.IsSaaSInfrastructure()`.
 
+    ```al
+    actions
+    {
+        addlast(Prompting)
+        {
+            action(MyPromptAction)
+            {
+                ApplicationArea = All;
+                Caption = 'Draft a proposal';
+                RunObject = page "My Prompt Dialog";
+                Visible = IsCapabilityRegistered;
+            }
+        }
+    }
+
+    var
+        IsSaaS: Boolean;
+
+
+    trigger OnOpenPage()
+    var
+        EnvInfo: Codeunit "Environment Information";
+
+    begin
+        IsSaaS := EnvInfo.IsSaaSInfrastructure()
+    end;
+    ```
+
+    The preferred approach is to register the Copilot capability only if the environment is online, then on the prompt action’s Visible property check if IsCapabilityRegistered returns true. For example:
+
+    ```al
+    actions
+    {
+        addlast(Prompting)
+        {
+            action(MyPromptAction)
+            {
+                ApplicationArea = All;
+                Caption = 'Draft a proposal';
+                RunObject = page "My Prompt Dialog";
+                Visible = IsCapabilityRegistered;
+            }
+        }
+    }
+
+    var
+        IsCapabilityRegistered: Boolean;
+
+    trigger OnOpenPage()
+    var
+        CopilotCapability: Codeunit "Copilot Capability";
+    begin
+        IsCapabilityRegistered := CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::"Draft a job");
+    end;
+    ```
+  
 ### Detailed example
 
 The next code is part of a code sample taken from the [aka.ms/BCTech](https://aka.ms/BCTech) repo; the [Job Planning Lines Copilot](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/SuggestResource/JobPlanningLinesCopilot.PageExt.al) page extension. This code sample illustrates how to create two prompt actions that run the `SuggestResourceCopilotAction` and `SuggestItemCopilotAction` actions. The `SuggestResourceCopilotAction` action is used to suggest a resource to be assigned to a job planning line, and the `SuggestItemCopilotAction` action is used to suggest an item to be assigned to a job planning line. The `SuggestResourceWithAI` and `SuggestItemWithAI` functions aren't implemented in this code sample. 
