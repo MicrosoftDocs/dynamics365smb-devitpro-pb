@@ -1224,7 +1224,7 @@
 #### [Database.LockTimeout([Boolean]) method](methods-auto/database/database-locktimeout-method.md)
 #### [Database.MinimumActiveRowVersion() method](methods-auto/database/database-minimumactiverowversion-method.md)
 #### [Database.RegisterTableConnection(TableConnectionType, Text, Text) method](methods-auto/database/database-registertableconnection-method.md)
-#### [Database.SelectLatestVersion() method](methods-auto/database/database-selectlatestversion--method.md)
+#### [Database.SelectLatestVersion() method](methods-auto/database/database-selectlatestversion-method.md)
 #### [Database.SelectLatestVersion(Integer) method](methods-auto/database/database-selectlatestversion-integer-method.md)
 #### [Database.SerialNumber() method](methods-auto/database/database-serialnumber-method.md)
 #### [Database.ServiceInstanceId() method](methods-auto/database/database-serviceinstanceid-method.md)
