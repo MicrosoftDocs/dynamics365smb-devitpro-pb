@@ -7581,27 +7581,27 @@
    },
    {
     "source_path": "dev-itpro/developer/methods-auto/notification/notification-addaction-method.md",
-    "redirect_url": "/dev-itpro/developer/methods-auto/notification/notification-addaction-string-integer-string-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/notification/notification-addaction-string-integer-string-method",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/outstream/outstream-write-string-integer-method.md",
-    "redirect_url": "/dev-itpro/developer/methods-auto/outstream/outstream-write-text-integer-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/outstream/outstream-write-text-integer-method",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/record/record-testfield-joker-string-errorinfo-method.md",
-    "redirect_url": "/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-errorinfo-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-errorinfo-method",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/record/record-testfield-joker-string-method.md",
-    "redirect_url": "/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-method",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/recordref/recordref-settable-method.md",
-    "redirect_url": "/dev-itpro/developer/methods-auto/recordref/recordref-settable-table-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/recordref/recordref-settable-table-method",
     "redirect_document_id": false
    },
    { 
@@ -7618,7 +7618,13 @@
     "source_path": "dev-itpro/terms/legal-universal-app.md",
     "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2182906",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/database/database-selectlatestversion--method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/database/database-selectlatestversion-method",
+    "redirect_document_id": false
    }
+   
   ] 
 }
 
