@@ -108,7 +108,6 @@ actions
         {
             action(MyPromptAction)
             {
-                ApplicationArea = All;
                 Caption = 'Draft a proposal';
                 RunObject = page "My Prompt Dialog";
                 Visible = IsCapabilityRegistered;
@@ -138,7 +137,6 @@ actions
         {
             action(MyPromptAction)
             {
-                ApplicationArea = All;
                 Caption = 'Draft a proposal';
                 RunObject = page "My Prompt Dialog";
                 Visible = IsCapabilityRegistered;
