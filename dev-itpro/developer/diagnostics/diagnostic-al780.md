@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-It is not allowed to assign a value to a field of FieldClass='{0}'.
+It is not allowed to call `ModifyAll` on a field of FieldClass='{0}'.
 
 
 > [!IMPORTANT]
