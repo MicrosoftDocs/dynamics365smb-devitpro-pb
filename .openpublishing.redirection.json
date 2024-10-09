@@ -7625,7 +7625,7 @@
     "redirect_document_id": false
    },
    { 
-    "source_path": "/dev-itpro/developer/copilot-launch-experience.md",
+    "source_path": "dev-itpro/developer/copilot-launch-experience.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-page-prompting-floating-actionbar",
     "redirect_document_id": false
    }
