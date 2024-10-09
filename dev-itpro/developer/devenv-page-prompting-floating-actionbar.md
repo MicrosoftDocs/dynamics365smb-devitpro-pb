@@ -96,7 +96,7 @@ actions
 ### Design guidelines and considerations
 
 - Prompt actions are supported only on the following page types: `Card`, `Document`, `List`, `ListPart`, `ListPlus`, `StandardDialog`, and `Worksheet`.
-- Prompt actions only appear if the `RunObject` property is specified.
+- Prompt actions only display if the `RunObject` property is specified.
 - Prompt actions display in Business Central online and on-premises environments. However, Microsoft Copilot is exclusively for Business Central online. To make actions dynamically visible based on the deployment, use the [Visible property](properties/devenv-visible-property.md) on prompt actions. For example, you can use one of these two approaches:
 
    The simplest approach is to use the [EnvironmentInformation.IsSaaSInfrastructure()](/dynamics365/business-central/application/system-application/codeunit/system.environment.environment-information) method to check whether the environment is online or on-premises and use the return value as an expression on the prompt action's [Visible](properties/devenv-visible-property.md) property. If the method returns `true`, then the environment is online, and the action is made visible. For example:
@@ -128,7 +128,7 @@ actions
     end;
     ```
 
-    The preferred approach is to register the Copilot capability only if the environment is online. Then, use [CopilotCapability.IsCapabilityRegistered](/dynamics365/business-central/application/system-application/codeunit/system.ai.copilot-capability#iscapabilityregistered) method on the prompt action's Visible property to check whether the capability is registered. If the method returns `true`, the Copilot capability is registered, and the action is visible. For example:
+    The preferred approach is to register the Copilot capability only if the environment is online. Then, use the [CopilotCapability.IsCapabilityRegistered](/dynamics365/business-central/application/system-application/codeunit/system.ai.copilot-capability#iscapabilityregistered) method on the prompt action's Visible property to check whether the capability is registered. If the method returns `true`, the Copilot capability is registered, and the action is visible. For example:
 
     ```al
     actions
