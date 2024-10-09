@@ -110,7 +110,7 @@ actions
             {
                 Caption = 'Draft a proposal';
                 RunObject = page "My Prompt Dialog";
-                Visible = IsCapabilityRegistered;
+                Visible = IsSaaS;
             }
         }
     }
