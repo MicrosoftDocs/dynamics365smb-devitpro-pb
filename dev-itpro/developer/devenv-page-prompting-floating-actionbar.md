@@ -99,7 +99,7 @@ actions
 - Prompt actions only appear if the `RunObject` property is specified.
 - Prompt actions display in Business Central online and on-premises environments. However, Microsoft Copilot is exclusively for Business Central online. To make actions dynamically visible based on the deployment, use the [Visible property](properties/devenv-visible-property.md) on prompt actions. For example, you can use one of these two approaches:
 
-   The simplest approach is to check whether the following statement is `true`: `EnvironmentInformation.IsSaaSInfrastructure()`.
+   The simplest approach is to use the [EnvironmentInformation.IsSaaSInfrastructure()](/dynamics365/business-central/application/system-application/codeunit/system.environment.environment-information) method to check whether the environment is online or on-premises. Use the return value as an expression on the prompt action's [Visible](properties/devenv-visible-property.md) property. If the method returns `true`, then the environment is online and the action is visible. For example:
 
     ```al
     actions
@@ -128,7 +128,7 @@ actions
     end;
     ```
 
-    The preferred approach is to register the Copilot capability only if the environment is online, then on the prompt action’s Visible property check if IsCapabilityRegistered returns true. For example:
+    The preferred approach is to register the Copilot capability only if the environment is online. Then, use [CopilotCapability.IsCapabilityRegistered](/dynamics365/business-central/application/system-application/codeunit/system.ai.copilot-capability#iscapabilityregistered) method on the prompt action's Visible property to check whether the capability is registered. If the method returns `true`, the Copilot capability is registered, and the action is visible. For example:
 
     ```al
     actions
@@ -151,10 +151,19 @@ actions
     var
         CopilotCapability: Codeunit "Copilot Capability";
     begin
-        IsCapabilityRegistered := CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::"Draft a job");
+        IsCapabilityRegistered := CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::"Draft a proposal");
     end;
     ```
 
+    <!--
+    enumextension 50104 "Copilot Capability Extension" extends "Copilot Capability"
+    {
+        value(54300; "Draft a proposal")
+        {
+            Caption = 'Draft a proposal';
+        }
+    }
+    -->
 - You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
   
 ### Detailed example
