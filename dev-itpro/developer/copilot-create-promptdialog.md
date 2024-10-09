@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 03/25/2024
+ms.date: 10/09/2024
 ms.custom: bap-template
 ---
 # Create prompt dialog page for a Copilot feature
@@ -62,4 +62,4 @@ In both cases, the trigger defined for the `systemaction(Generate)` control is a
 - [Design the prompt mode](copilot-design-prompt-mode.md)
 - [Design the content mode](copilot-design-content-mode.md)
 - [Customize  generate mode](copilot-customize-generate-mode.md)
-- [Launch the prompt dialog page](copilot-launch-experience.md)
+- [Launch the prompt dialog page](devenv-page-prompting-floating-actionbar.md)
