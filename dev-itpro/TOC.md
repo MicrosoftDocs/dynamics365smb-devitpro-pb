@@ -840,7 +840,7 @@
 ##### [Actions in the user interface](developer/devenv-actions-user-interface.md)
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md)
-##### [Copilot prompt actions](developer/devenv-page-prompting-floating-actionbar.md)
+##### [Copilot prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### Modern action bar
 ###### [Action bar improvements](developer/devenv-action-bar-improvements.md)
 ###### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
@@ -1529,7 +1529,7 @@
 ##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
-##### [Launch prompt dialog page using actions](developer/devenv-page-prompting-floating-actionbar.md)
+##### [Launch prompt dialog page using actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)

@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 In this article, you learn how to add actions in the UI that users select to start the Copilot feature.
 
-## Add action that runs the prompt dialog page
+## Add an action that runs the prompt dialog page
 
 This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot feature. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
 
