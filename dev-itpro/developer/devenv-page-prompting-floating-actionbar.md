@@ -38,7 +38,7 @@ or `SparkleFilled` ![Shows the Copilot sparkle filled icon](media/copilot-sparkl
 
 In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific Copilot. For example, if there are multiple Copilot actions on a page, you might want to emphasize one Copilot action over the others.  
 
-## Add prompt action that promotes the Copilot feature
+## Add a prompt action that promotes the Copilot feature
 
 > **Applies to:** [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 (runtime 13) and later.
 
@@ -48,7 +48,7 @@ A prompt action is a standard action that appears under the ![Shows the Copilot 
 
 :::image type="content" source="media/copilot-prompt-actions-callouts.svg" alt-text="Example of a floating action bar for Copilot feature":::
 
-### Create prompt actions
+### Create a prompt action
 
 To create prompt actions, you must create a new area in the `actions` section of the page object. The area must be set to `area(Prompting)`. You can then add one or more actions in the area and run a `PromptDialog` object that you want to activate when the action is clicked. Only objects of the `PromptDialog` page type can be run from a prompting area.
 
@@ -207,7 +207,6 @@ actions
     }
 ...
 ```
-
 
 ## Related information
 
