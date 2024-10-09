@@ -1264,7 +1264,28 @@ Activities listed in the table below can be audited by filtering to the `Adminis
     </thead>
     <tbody>
         <tr>
-            <td rowspan=3>Created report</td>
+            <td rowspan=5>Created report layout</td>
+            <td>ReportId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>LayoutName</td>
+            <td>TestReport</td>
+        </tr>
+        <tr>
+            <td>LayoutDescription</td>
+            <td>Test Layout Description</td>
+        </tr>
+        <tr>
+            <td>LayoutFormat</td>
+            <td>Layout Format</td>
+        </tr>
+        <tr>
+            <td>Action</td>
+            <td>New</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Deleted report layout</td>
             <td>ReportId</td>
             <td>1</td>
         </tr>
@@ -1274,7 +1295,32 @@ Activities listed in the table below can be audited by filtering to the `Adminis
         </tr>
         <tr>
             <td>Action</td>
-            <td>SetDefault</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td rowspan=6>Modified report layout</td>
+            <td>ReportId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>OldLayoutName</td>
+            <td>OldTestReport</td>
+        </tr>
+        <tr>
+            <td>OldLayoutDescription</td>
+            <td>Old Layout Description</td>
+        </tr>
+        <tr>
+            <td>NewLayoutName</td>
+            <td>NewTestReport</td>
+        </tr>
+        <tr>
+            <td>NewLayoutDescription</td>
+            <td>New Layout Description</td>
+        </tr>
+        <tr>
+            <td>Action</td>
+            <td>Edit</td>
         </tr>
     </tbody>
 </table>
