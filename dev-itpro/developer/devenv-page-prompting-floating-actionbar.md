@@ -96,7 +96,6 @@ actions
 ### Design guidelines and considerations
 
 - Prompt actions are supported only on the following page types: `Card`, `Document`, `List`, `ListPart`, `ListPlus`, `StandardDialog`, and `Worksheet`.
-- You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
 - Prompt actions only appear if the `RunObject` property is specified.
 - Prompt actions display in Business Central online and on-premises environments. However, Microsoft Copilot is exclusively for Business Central online. To make actions dynamically visible based on the deployment, use the [Visible property](properties/devenv-visible-property.md) on prompt actions. For example, you can use one of these two approaches:
 
@@ -157,6 +156,8 @@ actions
         IsCapabilityRegistered := CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::"Draft a job");
     end;
     ```
+
+- You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
   
 ### Detailed example
 
