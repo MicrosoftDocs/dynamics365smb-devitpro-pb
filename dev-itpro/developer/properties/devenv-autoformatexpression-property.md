@@ -74,7 +74,7 @@ This example prefixes the decimal value with a $, includes a thousand separator,
 
 ```AL
 AutoFormatType = 1;
-AutoFormatExpression = '$<precision, 2:2><standard format, 0>':
+AutoFormatExpression = '$<precision, 2:2><standard format, 0>';
 ```
 
 ## Related information
