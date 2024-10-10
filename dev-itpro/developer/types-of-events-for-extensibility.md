@@ -20,7 +20,7 @@ To learn more about events, go to [Events in AL](devenv-events-in-al.md).
 
 ### Types of events
 
-<!--need to say what the list shows-->
+The following list includes the types of events that are available. Use the links to learn more about them.
 
 - [Business Events](#business-events)
 - [OnBefore/OnAfter Events](#onbeforeonafter-events)
@@ -51,13 +51,13 @@ Examples:
 
 ### OnBefore/OnAfter Events
 
-`OnBefore/After` events vary in terms of quality, depending on where they're implemented.
+`OnBefore/After` events vary in terms of quality, depending on where they're implemented. <!--what do they do?-->
 
 `OnBefore/After` events might not allow the code to override existing behavior just to add additional logic to flows.
 
 #### Before/After Operation
 
-**High Value** - If events are implemented before or after a large operation starts, they're High Quality. <!--High quality, or high value? Starting to think that we might want to explain what the high and medium quality and value mean-->
+**High Value** - If events are implemented before or after a large operation starts, they're High Quality. <!--High quality, or high value? Starting to think that we might want to explain what the high and medium quality and value mean. Also, what do these do?-->
 
 Examples of high-quality events are:
 
@@ -71,7 +71,7 @@ Examples of high-quality events are:
 
 #### Before/After Procedure
 
-**Medium Value** - We often use these events to provide more processing before or after a specific method is called.
+**Medium Value** - We often use these events to provide more processing before or after a specific method is called. <!--can we drop, "we often use..." and just say, "Provide more processing..."-->
 
 These events are medium quality because they're connected to the specific procedure, but it's unclear how to handle them if the procedure is removed or changed.
 
@@ -84,7 +84,7 @@ These events are medium quality because they're connected to the specific proced
 **Low Value** - A valid use could be before we insert or modify a line to update specific fields. Otherwise, avoid them because they're too narrow. <!--should we elaborate on "narrow"?-->
 They were needed before because the Hook pattern was used as a default extensibility.
 
-We should carefully consider whether we need Hook events before we introduce them. Hook events have little reuse between extensions, and can be fragile to the code changes.
+We should carefully consider whether we need Hook events before we introduce them. Hook events have little reuse between extensions, and can be fragile to code changes.
 
 Example of valid usage: <!--replace images with code examples-->
 
@@ -114,7 +114,7 @@ Use before events as early in the code as possible. We must avoid any risk of pa
 
 ![VerifyEvents_03](images/VerifyEvents_03.png)
 
-### Isolated Events
+### Isolated events
 
 **Medium Value** - Use isolated events to allow handling errors that won't interrupt the code execution.
 
@@ -195,7 +195,7 @@ or
 
 Discovery events were used to discover all possible implementations of the functionality.
 
-The event was raised with a temporary table, and then all subscribers would fill the temporary table. The table would show in the UI for the user to select the specific implementation.
+The event was raised with a temporary table, and all subscribers would fill in the temporary table. The table would show in the UI so you could select the specific implementation.
 
 We can get better designs with enums and interfaces.
 
