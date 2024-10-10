@@ -10,9 +10,13 @@ ms.custom: bap-template
 ---
 # Create an extensibility request
 
-Before you create an extensibility request, please check out these instructions. Following this guidance can help you, and Microsoft, get to the right solution faster.
+Microsoft's [ALAppExtension repository](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#microsoft-al-application-add-ons-for-microsoft-dynamics-365-business-central) on GitHub is a place where Microsoft and our partners can collaborate on building add-on apps and vertical solutions in the AL language for [!INCLUDE [prod_short](../includes/prod_short.md)].
 
-At the moment, extensibility requests are optional. However, submitting structured requests makes things easier for everyone:
+These collaborations start through extensibility requests that you submit from the ALAppExtension repo. For example, you might request a new integration event or that we make a function external so your extension can access it. To learn more about extensibility requests, go to [Extensibility requests](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#extensibility-requests).
+
+Before you create an extensibility request, check out these guidelines. This guidance can help you, and Microsoft, get to the right solution faster.
+
+Extensibility requests are optional. However, submitting structured requests makes things easier for everyone and more likely to be implemented:
 
 * Understand the need for the extension
 * Track whether something similar was already done
@@ -20,7 +24,7 @@ At the moment, extensibility requests are optional. However, submitting structur
 
 > [!NOTE]
 >
-> * We're adding new events in master and latest release branch. At the time of this writing, the latest release branch is 25.x. In most cases, we'll make other types of requests, again, only in the master branch, available in upcoming major releases.
+> * We're adding new events in master <!--is it still master, or is it main?--> and latest release branch. At the time of this writing, the latest release branch is 25.x. In most cases, we'll make other types of requests, again, only in the master branch, available in upcoming major releases.
 > * If the procedure, field, object or any part it are marked as `Obsolete` or surrounded by `CLEAN` tags, we won't add or update the events.
 
 ## Minimum requirements
@@ -47,7 +51,7 @@ Provide a brief description of why you need us to change the app, and what the c
 
 > [!TIP]
 > Please don't provide generic sentences. Being vague doesn't help us understand your need. For example, avoid sentences such as:
-> 
+>
 > * *"We would like to use our function instead of standard."*
 >
 > Instead, explain why. For example, maybe it makes sense to change our standard code because many of you have the same process.

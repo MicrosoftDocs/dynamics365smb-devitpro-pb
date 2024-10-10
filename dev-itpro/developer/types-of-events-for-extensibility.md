@@ -12,7 +12,11 @@ ms.custom: bap-template
 
 ## Types of events for extensibility
 
-<!--need an intro. Work with Marko-->
+Use events to design the application to react to specific actions or behaviors. <!--can we give an example of an action or behavior? Maybe... For example, an event might display a notification when someone changes a customer address.--> Events let you separate custom functionality from the application's business logic. By using events where customizations are typically made, you lower the cost of code modifications and upgrades to the original application.
+
+<!--should we make the intro more about extensibility requests-->
+
+To learn more about events, go to [Events in AL](devenv-events-in-al.md).
 
 ### Types of events
 
@@ -36,8 +40,8 @@ ms.custom: bap-template
 
 Examples:
 
-- OnRejectApprovalRequest(var ApprovalEntry: Record "Approval Entry"), 
-- OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry"), 
+- OnRejectApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
+- OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
 
 ![BusinessEvent_01](images/BusinessEvents_01.png)
 
@@ -94,10 +98,10 @@ Example of not the best usage (could be grouped): <!--not the best usage, or is 
 or
 <figure><img src="images/OnBeforeAfterLineEvents_bad_02.png" alt="OnBeforeAfterLineEvents_bad_02" style="border: 3px solid red;"></figure>
 
-### Verify events 
+### Verify events
 
 **Medium Value** - Use verify events before or after the operation to check whether the business logic is correct.
- 
+
 Verify events shouldn't create transactions. If the operation should be rolled back from an after event, make sure that the code before the event uses the `Ignore Commit` parameter.
 
 Use before events as early in the code as possible. We must avoid any risk of partial commits when we introduce verify events.
@@ -110,7 +114,7 @@ Use before events as early in the code as possible. We must avoid any risk of pa
 
 ![VerifyEvents_03](images/VerifyEvents_03.png)
 
-### Isolated Events 
+### Isolated Events
 
 **Medium Value** - Use isolated events to allow handling errors that won't interrupt the code execution.
 
@@ -177,11 +181,11 @@ or
 
 ![HandledEvents_03](images/HandledEvents_03.png)
 
-Advantage
+**Advantage**
 
 * Easy to implement
 
-Disadvantages 
+**Disadvantages**
 
 * Only one subscriber can process the request. If there are multiple subscribers, by contract the first subscriber should handle the event.
 * We need to be careful about the events raised by the existing code. The question is whether to raise them. Introducing a handled event can break these events.
@@ -201,9 +205,9 @@ We can get better designs with enums and interfaces.
 
 ![DiscoveryEvents_02](images/DiscoveryEvents_02.png)
 
-
+<!--can we delete this?-->
 <style>
-r { color: Orange }
+r { color: Orange } 
 </style>
 
 ## See also
