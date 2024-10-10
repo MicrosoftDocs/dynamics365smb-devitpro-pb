@@ -12,9 +12,12 @@ ms.custom: bap-template
 
 ## Types of events for extensibility
 
-Use events to design the application to react to specific actions or behaviors. <!--can we give an example of an action or behavior? Maybe... For example, an event might display a notification when someone changes a customer address.--> Events let you separate custom functionality from the application's business logic. By using events where customizations are typically made, you lower the cost of code modifications and upgrades to the original application.
+Use events to design the application to react to specific actions or behaviors. Events let you separate custom functionality from the application's business logic. By using events where customizations are typically made, you lower the cost of code modifications and upgrades to the original application.
 
-<!--should we make the intro more about extensibility requests-->
+This article describes the types of integration events, and the events that we consider as high, medium, and low quality. How we define these rankings varies, depending on factors such as:
+
+* The number of times they're implemented.
+* How easy they are to maintain when you refactor code.
 
 To learn more about events, go to [Events in AL](devenv-events-in-al.md).
 
@@ -36,12 +39,12 @@ The following list includes the types of events that are available. Use the link
 
 ### Business events
 
-**Very High Value** - Use business events to notify subscribers that a specific business event has occurred. <!--not sure what very high value means here-->
+**Very High Value** - Use business events to notify subscribers that a specific business event has occurred. 
 
 Examples:
 
-- OnRejectApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
-- OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
+* OnRejectApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
+* OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
 
 ![BusinessEvent_01](images/BusinessEvents_01.png)
 
@@ -51,19 +54,19 @@ Examples:
 
 ### OnBefore/OnAfter Events
 
-`OnBefore/After` events vary in terms of quality, depending on where they're implemented. <!--what do they do?-->
+`OnBefore/After` events vary in terms of quality, depending on where they're implemented.
 
 `OnBefore/After` events might not allow the code to override existing behavior just to add additional logic to flows.
 
 #### Before/After Operation
 
-**High Value** - If events are implemented before or after a large operation starts, they're High Quality. <!--High quality, or high value? Starting to think that we might want to explain what the high and medium quality and value mean. Also, what do these do?-->
+**High Value** - If events are implemented before or after a large operation starts, they're high quality.
 
 Examples of high-quality events are:
 
-- `OnAfterPostSalesDoc`
-- `OnBeforeSendEmail`
-- `OnAfterEmailSent`
+* `OnAfterPostSalesDoc`
+* `OnBeforeSendEmail`
+* `OnAfterEmailSent`
 
 ![OnBeforeAfterOperationEvents_01](images/OnBeforeAfterOperationEvents_01.png)
 
@@ -71,7 +74,7 @@ Examples of high-quality events are:
 
 #### Before/After Procedure
 
-**Medium Value** - We often use these events to provide more processing before or after a specific method is called. <!--can we drop, "we often use..." and just say, "Provide more processing..."-->
+**Medium Value** - We often use these events to provide more processing before or after a specific method is called. 
 
 These events are medium quality because they're connected to the specific procedure, but it's unclear how to handle them if the procedure is removed or changed.
 
@@ -81,8 +84,7 @@ These events are medium quality because they're connected to the specific proced
 
 #### Before/After specific line
 
-**Low Value** - A valid use could be before we insert or modify a line to update specific fields. Otherwise, avoid them because they're too narrow. <!--should we elaborate on "narrow"?-->
-They were needed before because the Hook pattern was used as a default extensibility.
+**Low Value** - A valid use could be before we insert or modify a line to update specific fields. Otherwise, avoid them because the point to a specific line of code. They were needed before because the Hook pattern was used as a default extensibility.
 
 We should carefully consider whether we need Hook events before we introduce them. Hook events have little reuse between extensions, and can be fragile to code changes.
 
@@ -92,7 +94,7 @@ Example of valid usage: <!--replace images with code examples-->
 
 <figure><img src="images/OnBeforeAfterLineEvents_02.png" alt="OnBeforeAfterLineEvents_02" style="border: 3px solid green;"></figure>
 
-Example of not the best usage (could be grouped): <!--not the best usage, or is this what not to do?-->
+Example of a lower quality usage, because they could be grouped into a single event, rather than several:
 
 <figure><img src="images/OnBeforeAfterLineEvents_bad_01.png" alt="OnBeforeAfterLineEvents_bad_01" style="border: 3px solid red;"></figure>
 or
@@ -122,10 +124,11 @@ Multiple extensions can subscribe and do their processing. An error from one ext
 
 Isolated events require a commit before invoking the code, and will commit before invoking the next subscriber. Therefore, they require a detailed review.
 
-An alternative is to invoke the if Codeunit.Run() then to handle things in isolation. <!--not sure about this sentence. Check with Marko-->
+An alternative is to invoke `if Codeunit.Run()` and then handle things in isolation.
+
 `Codeunit.Run` requires an explicit commit before and has better testability, because there isn't an easy to test isolated events for error cases. To do error case testing, disable test isolation. Otherwise, the error eon't be handled.
 
-Event <!--what event?--> is better than `Codeunit.Run` because it allows multiple subscribers. Running a codeunit only lets one implementation run at a time.
+Events are better than `Codeunit.Run` because they allow multiple subscribers. Running a codeunit only lets one implementation run at a time.
 
 <!--need to replace the images with code examples-->
 
@@ -171,7 +174,10 @@ or
 
 ### Handled events
 
-**Low Value** - Handled events are low quality events. **Subscriber must exit if the event is already handled**, <!--is this bold for emphasis only?--> thus these events don't scale. Consider using skip events.
+**Low Value** - Handled events are low quality events.
+
+> [!NOTE]
+> Subscribers must exit if the event is already handled, thus these events don't scale. Consider using skip events.
 
 <!--need to replace the images with code examples-->
 
@@ -204,11 +210,6 @@ We can get better designs with enums and interfaces.
 ![DiscoveryEvents_01](images/DiscoveryEvents_01.png)
 
 ![DiscoveryEvents_02](images/DiscoveryEvents_02.png)
-
-<!--can we delete this?-->
-<style>
-r { color: Orange } 
-</style>
 
 ## See also
 

@@ -24,7 +24,7 @@ Extensibility requests are optional. However, submitting structured requests mak
 
 > [!NOTE]
 >
-> * We're adding new events in master <!--is it still master, or is it main?--> and latest release branch. At the time of this writing, the latest release branch is 25.x. In most cases, we'll make other types of requests, again, only in the master branch, available in upcoming major releases.
+> * We're adding new events in main and the latest release branch. At the time of this writing, the latest release branch is 25.x. In most cases, we'll make other types of requests, again, only in the master branch, available in upcoming major releases.
 > * If the procedure, field, object or any part of it are marked as `Obsolete` or surrounded by `CLEAN` tags, we won't add or update the events.
 
 ## Minimum requirements
@@ -68,28 +68,25 @@ A request might require several changes, and some of the changes might have one 
 
 ## Events
 
-Submit requests related to events in the following predefined structure:
+It's optional, but we prefer that you submit requests related to events in the following structure. You can copy the following example into your request, and then fill in the sections with your information.
 
-<!--ask Marko to verify this snippit. The first part looks like how to fill in a request, but the second looks like code.-->
-
-```AL
 **EventRequest** 
 [W1][Object_Type][Object_id][Object_name]
 [Procedure or trigger]
 ___
-description
+
+Enter your description
 ___
 [IntegrationEvent(false,false)]
 local procedure event_signature(needed_parameters)
 begin
 end;
-```
 
 ### Design guidelines
 
 When you create a request for an event, please check the [Types of events for extensibility](types-of-events-for-extensibility.md) **[Event Types](Types%20of%20Events.md)** page. <!--what are they looking for? Whether one already exists, maybe? Also, double-check that the link is correct.-->
 
-* Add records with a VAR <!--function? or is it enough just to say VAR?-->, due to performance and logic impact.
+* Add records with a VAR, due to performance and logic impact.
 * Pass records rather than expose a specific length of the text field or many fields from the record.
 * Avoid variants in event signatures. Use interfaces or temporary tables, or a combination of **TableID** and **SystemId**.
 * If there are too many variables, use temporary tables to group the parameters. To learn more, go to [Argument table](https://alguidelines.dev/docs/navpatterns/patterns/argument-table/).
@@ -102,11 +99,6 @@ Consider making designs that use manual binding, instead of static-automatic sub
 Consider whether you're exposing any sensitive data through an event. Everyone can subscribe to the event, using Internal is not a security feature. <!--Not sure what Internal is--> Events must not expose sensitive data.
 
 Consider whether, and how, multiple extensions can use the event at the same time, and how to handle errors.
-
-<style>
-r { color: Red }
-o { color: Orange }
-</style>
 
 ## See also
 
