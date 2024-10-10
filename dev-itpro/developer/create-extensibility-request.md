@@ -54,7 +54,7 @@ Provide a brief description of why you need us to change the app, and what the c
 >
 > * *"We want to avoid displaying testfield() errors to the user."*
 >
-> Explain why. Maybe that can be done differently, or it might cause an issue in another part of the system which you are not aware of, or it make sense to remove it in general. <!--This seems to mix our concerns with theirs.-->
+> Explain why. Maybe that can be done differently, or it might cause an issue in another part of the system which you are not aware of, or it makes sense to remove it in general. <!--This seems to mix our concerns with theirs.-->
 
 ## Describe the request(s)
 
