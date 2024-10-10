@@ -28,7 +28,7 @@ At the moment, extensibility requests are optional. However, submitting structur
 Each request should at least contain the following information:
 
 * Title
-* A description of why is the change needed. What's the benefit?
+* A description of why the change is needed. What's the benefit?
 * A description of the request
 
 ### Title
