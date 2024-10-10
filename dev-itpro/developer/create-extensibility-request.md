@@ -58,7 +58,7 @@ Provide a brief description of why you need us to change the app, and what the c
 >
 > * *"We want to avoid displaying testfield() errors to the user."*
 >
-> Explain why. Maybe something can be done differently, or it might cause an issue in another part of the system that you aren't aware of, or it makes sense to remove it in general. <!--This seems to mix our concerns with theirs.-->
+> Explain why. Maybe something can be done differently, or it might cause an issue in another part of the system that you aren't aware of, or it makes sense to remove it in general.
 
 ## Describe the requests
 
@@ -84,7 +84,7 @@ end;
 
 ### Design guidelines
 
-When you create a request for an event, please check the [Types of events for extensibility](types-of-events-for-extensibility.md) **[Event Types](Types%20of%20Events.md)** page. <!--what are they looking for? Whether one already exists, maybe? Also, double-check that the link is correct.-->
+When you create a request for an event, please check the [Types of events for extensibility](types-of-events-for-extensibility.md).
 
 * Add records with a VAR, due to performance and logic impact.
 * Pass records rather than expose a specific length of the text field or many fields from the record.
@@ -96,7 +96,7 @@ When you create a request for an event, please check the [Types of events for ex
 
 Consider making designs that use manual binding, instead of static-automatic subscribers. It's easier to debug, requires fewer system resources, and leads to better designs.
 
-Consider whether you're exposing any sensitive data through an event. Everyone can subscribe to the event, using Internal is not a security feature. <!--Not sure what Internal is--> Events must not expose sensitive data.
+Consider whether you're exposing any sensitive data through an event. Everyone can subscribe to the event, using Internal is not a security feature. Events must not expose sensitive data.
 
 Consider whether, and how, multiple extensions can use the event at the same time, and how to handle errors.
 

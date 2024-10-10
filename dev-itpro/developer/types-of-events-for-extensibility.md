@@ -10,7 +10,7 @@ ms.date: 10/09/2024
 ms.custom: bap-template
 ---
 
-## Types of events for extensibility
+# Types of events for extensibility
 
 Use events to design the application to react to specific actions or behaviors. Events let you separate custom functionality from the application's business logic. By using events where customizations are typically made, you lower the cost of code modifications and upgrades to the original application.
 
@@ -21,21 +21,21 @@ This article describes the types of integration events, and the events that we c
 
 To learn more about events, go to [Events in AL](devenv-events-in-al.md).
 
-### Types of events
+## Types of events
 
 The following list includes the types of events that are available. Use the links to learn more about them.
 
-- [Business Events](#business-events)
-- [OnBefore/OnAfter Events](#onbeforeonafter-events)
-    - [Before/After Operation](#beforeafter-operation)
-    - [Before/After Procedure](#beforeafter-procedure)
-    - [Before/After specific line](#beforeafter-specific-line)
-- [Verify Events](#verify-events)
-- [Isolated Events](#isolated-events)
-- [Switch Events](#switch-events-manually-bound-events)
-- [OnSkip Events](#onskip-operation-events)
-- [Handled Events](#handled-events)
-- [Discovery Events](#discovery-events-mostly-obsoleted)
+* [Business Events](#business-events)
+* [OnBefore/OnAfter Events](#onbeforeonafter-events)
+   * [Before/After Operation](#beforeafter-operation)
+   * [Before/After Procedure](#beforeafter-procedure)
+   * [Before/After specific line](#beforeafter-specific-line)
+* [Verify Events](#verify-events)
+* [Isolated Events](#isolated-events)
+* [Switch Events](#switch-events-manually-bound-events)
+* [OnSkip Events](#onskip-operation-events)
+* [Handled Events](#handled-events)
+* [Discovery Events](#discovery-events-mostly-obsoleted)
 
 ### Business events
 
@@ -46,13 +46,13 @@ Examples:
 * OnRejectApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
 * OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
 
-![BusinessEvent_01](images/BusinessEvents_01.png)
+[BusinessEvent_01]
 
-![BusinessEvent_02](images/BusinessEvents_02.png)
+[BusinessEvent_02]
 
 <!--need to replace the images with code examples-->
 
-### OnBefore/OnAfter Events
+#### OnBefore/OnAfter Events
 
 `OnBefore/After` events vary in terms of quality, depending on where they're implemented.
 
@@ -68,9 +68,9 @@ Examples of high-quality events are:
 * `OnBeforeSendEmail`
 * `OnAfterEmailSent`
 
-![OnBeforeAfterOperationEvents_01](images/OnBeforeAfterOperationEvents_01.png)
+[OnBeforeAfterOperationEvents_01]
 
-![OnBeforeAfterOperationEvents_02](images/OnBeforeAfterOperationEvents_02.png)
+[OnBeforeAfterOperationEvents_02]
 
 #### Before/After Procedure
 
@@ -78,9 +78,9 @@ Examples of high-quality events are:
 
 These events are medium quality because they're connected to the specific procedure, but it's unclear how to handle them if the procedure is removed or changed.
 
-![OnBeforeAfterProcedureEvents_01](images/OnBeforeAfterProcedureEvents_01.png)
+[OnBeforeAfterProcedureEvents_01]
 
-![OnBeforeAfterProcedureEvents_02](images/OnBeforeAfterProcedureEvents_02.png)
+[OnBeforeAfterProcedureEvents_02]
 
 #### Before/After specific line
 
@@ -90,15 +90,15 @@ We should carefully consider whether we need Hook events before we introduce the
 
 Example of valid usage: <!--replace images with code examples-->
 
-<figure><img src="images/OnBeforeAfterLineEvents_01.png" alt="OnBeforeAfterLineEvents_01" style="border: 3px solid green;"></figure>
+"images/OnBeforeAfterLineEvents_01.png"
 
-<figure><img src="images/OnBeforeAfterLineEvents_02.png" alt="OnBeforeAfterLineEvents_02" style="border: 3px solid green;"></figure>
+"images/OnBeforeAfterLineEvents_02.png" alt="OnBeforeAfterLineEvents_02"
 
 Example of a lower quality usage, because they could be grouped into a single event, rather than several:
 
-<figure><img src="images/OnBeforeAfterLineEvents_bad_01.png" alt="OnBeforeAfterLineEvents_bad_01" style="border: 3px solid red;"></figure>
+"images/OnBeforeAfterLineEvents_bad_01.png" alt="OnBeforeAfterLineEvents_bad_01"
 or
-<figure><img src="images/OnBeforeAfterLineEvents_bad_02.png" alt="OnBeforeAfterLineEvents_bad_02" style="border: 3px solid red;"></figure>
+"images/OnBeforeAfterLineEvents_bad_02.png" alt="OnBeforeAfterLineEvents_bad_02"
 
 ### Verify events
 
@@ -110,11 +110,11 @@ Use before events as early in the code as possible. We must avoid any risk of pa
 
 <!--replace the images with code examples-->
 
-![VerifyEvents_01](images/VerifyEvents_01.png)
+[VerifyEvents_01]
 
-![VerifyEvents_02](images/VerifyEvents_02.png)
+[VerifyEvents_02]
 
-![VerifyEvents_03](images/VerifyEvents_03.png)
+[VerifyEvents_03]
 
 ### Isolated events
 
@@ -132,11 +132,11 @@ Events are better than `Codeunit.Run` because they allow multiple subscribers. R
 
 <!--need to replace the images with code examples-->
 
-![IsolatedEvents_01](images/IsolatedEvents_01.png)
+[IsolatedEvents_01]
 
-![IsolatedEvents_02](images/IsolatedEvents_02.png)
+[IsolatedEvents_02]
 
-![IsolatedEvents_03](images/IsolatedEvents_03.png)
+[IsolatedEvents_03]
 
 ### Switch events (manually bound events)
 
@@ -146,13 +146,13 @@ Then, early in the action, you can implement a manually bound subscriber that he
 
 <!--Need to replace the images with code examples-->
 
-![SwitchEvents_01](images/SwitchEvents_01.png)
+[SwitchEvents_01]
 
-![SwitchEvents_02](images/SwitchEvents_02.png)
+[SwitchEvents_02]
 
-![SwitchEvents_03](images/SwitchEvents_03.png)
+[SwitchEvents_03]
 
-![SwitchEvents_04](images/SwitchEvents_04.png)
+[SwitchEvents_04]
 
 ### OnSkip (operation) events
 
@@ -162,15 +162,15 @@ The signature expects multiple subscribers, so there can be multiple extensions 
 
 <!--need to replace the images with code examples-->
 
-![SkipEvents_01](images/SkipEvents_01.png)
+[SkipEvents_01]
 
-![SkipEvents_02](images/SkipEvents_02.png)
+[SkipEvents_02]
 
 or
 
-![SkipEvents_03](images/SkipEvents_03.png)
+[SkipEvents_03]
 
-![SkipEvents_04](images/SkipEvents_04.png)
+[SkipEvents_04]
 
 ### Handled events
 
@@ -181,11 +181,11 @@ or
 
 <!--need to replace the images with code examples-->
 
-![HandledEvents_01](images/HandledEvents_01.png)
+[HandledEvents_01]
 
-![HandledEvents_02](images/HandledEvents_02.png)
+[HandledEvents_02]
 
-![HandledEvents_03](images/HandledEvents_03.png)
+[HandledEvents_03]
 
 **Advantage**
 
@@ -207,9 +207,9 @@ We can get better designs with enums and interfaces.
 
 <!--need to replace the images with code examples-->
 
-![DiscoveryEvents_01](images/DiscoveryEvents_01.png)
+[DiscoveryEvents_01]
 
-![DiscoveryEvents_02](images/DiscoveryEvents_02.png)
+[DiscoveryEvents_02]
 
 ## See also
 
