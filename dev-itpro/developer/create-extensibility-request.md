@@ -93,7 +93,7 @@ When you create a request for an event, please check **[Event Types](Types%20of%
 
 Consider making designs that use manual binding, instead of static-automatic subscribers. It's easier to debug, requires fewer system resources, and leads to better designs.
 
-Consider whether you're exposing any sensitive data through an events. Everyone can subscribe to the event, using Internal is not a security feature. <!--Not sure what Internal is--> Events must not expose sensitive data.
+Consider whether you're exposing any sensitive data through an event. Everyone can subscribe to the event, using Internal is not a security feature. <!--Not sure what Internal is--> Events must not expose sensitive data.
 
 Consider whether, and how, multiple extensions can use the event at the same time, and how to handle errors.
 
