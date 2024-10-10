@@ -10,11 +10,11 @@ ms.custom: bap-template
 ---
 # Create an extensibility request
 
-Microsoft's [ALAppExtension repository](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#microsoft-al-application-add-ons-for-microsoft-dynamics-365-business-central) on GitHub is a place where Microsoft and our partners can collaborate on building add-on apps and vertical solutions in the AL language for [!INCLUDE [prod_short](../includes/prod_short.md)].
+Microsoft's [ALAppExtension repository](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#microsoft-al-application-add-ons-for-microsoft-dynamics-365-business-central) on GitHub is a place where Microsoft and our partners can collaborate on building add-on apps and vertical solutions in the AL language for [!INCLUDE [prod_short](../includes/prod_short.md)]. 
 
-These collaborations start through extensibility requests that you submit from the ALAppExtension repo. For example, you might request a new integration event or that we make a function external so your extension can access it. To learn more about extensibility requests, go to [Extensibility requests](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#extensibility-requests).
+This article describes how to submit a request for a code change from Microsoft. Before you create an extensibility request, check out these guidelines. This guidance can help you, and Microsoft, get to the right solution faster.
 
-Before you create an extensibility request, check out these guidelines. This guidance can help you, and Microsoft, get to the right solution faster.
+Collaborations start through extensibility requests that you submit from the ALAppExtension repo. For example, you might request a new integration event or that we make a function external so your extension can access it. To learn more about extensibility requests, go to [Extensibility requests](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#extensibility-requests).
 
 Extensibility requests are optional. However, submitting structured requests makes things easier for everyone and more likely to be implemented:
 
@@ -35,7 +35,7 @@ Each request should at least contain the following information:
 * A description of why the change is needed. What's the benefit?
 * A description of the request
 
-### Write a clear title
+## Write a clear title
 
 If your request requires changes in just one object, the title should contain information about the specific object to change. For example "**[Country Code] [Object Type] [Object Id] [Object Name]** Also, add a description of the change, or a descriptive title with the `MultiObjects` tag.
 
