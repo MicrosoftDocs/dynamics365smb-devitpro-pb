@@ -35,7 +35,7 @@ Each request should at least contain the following information:
 * A description of why the change is needed. What's the benefit?
 * A description of the request
 
-### Title
+### Write a clear title
 
 If your request requires changes in just one object, the title should contain information about the specific object to change. For example "**[Country Code] [Object Type] [Object Id] [Object Name]** Also, add a description of the change, or a descriptive title with the `MultiObjects` tag.
 
@@ -60,7 +60,7 @@ Provide a brief description of why you need us to change the app, and what the c
 >
 > Explain why. Maybe that can be done differently, or it might cause an issue in another part of the system which you are not aware of, or it makes sense to remove it in general. <!--This seems to mix our concerns with theirs.-->
 
-## Describe the request(s)
+## Describe the requests
 
 Create a separate extensibility request for every change you want us to make.
 
