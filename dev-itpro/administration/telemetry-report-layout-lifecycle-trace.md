@@ -15,10 +15,11 @@ ms.custom: bap-template
 
 [!INCLUDE[2024_releasewave2.md](../developer/includes/2024rw2_and_later.md)]
 
-The following operations about report layout lifecycle actions (done by a user in the Report Layouts page) can be found in telemetry
-## Successful report generation
+This article describes the telemetry gathered for actions taken by users on report layouts.
 
-Occurs when a report dataset generates without any errors.
+## Report layout added by user
+
+Occurs when a user adds a new report layout.
 
 ### General dimensions
 
@@ -26,169 +27,114 @@ The following table explains the general dimensions of this trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|operation_Name|**Success report generation**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventId` column custom in Kusto queries instead of `operation_Name`.|
-|message|Version 16.1 and later:<br />**Report rendered: {report ID} - {report name}**<br /><br />Before version 16.1:<br />**The report {report ID} '{report name}' rendered successfully**|
-|severityLevel|**1**|
+|message|**Report layout added by user**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
-<!--
-The custom dimensions that are of particular interest for this operation include: numberOfRows, result, serverExecutionTime, sqlExecutes, sqlRowsRead, totalTime. For a description of these dimensions and other custom dimensions, see [Custom dimensions](#customdimensions).
--->
-<!--
 |Dimension|Description or value|
 |---------|-----|
-|numberOfRows|Specifies the number of rows generated for the report dataset.|
-|result|**Success**.|
-|serverExecutionTime|Specifies the amount of time it took the service to complete the request. The time has the format hh:mm:ss.sssssss.|
-|sqlExecutes|Specifies the number of SQL statements that the report executed. |
-|totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report. The time has the format hh:mm:ss.sssssss.|
--->
+|aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|action|**New**|
+|companyName|[!INCLUDE[include-telemetry-dimension-company-name](../includes/include-telemetry-dimension-company-name.md)]|
+|environmentName|[!INCLUDE[include-telemetry-dimension-environment-name](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
+|eventId|**AL0000N0D**|
+|layoutFormat|Specifies the layout file type. Learn more in [layoutFormat](#layoutFormat).|
+|layoutName |Specifies the name of the report layout.|
+|reportId|Specifies the ID of the report assigned the layout.|
 
-|Dimension|Description or value|
-|---------|-----|
-|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|alObjectId|Specifies the ID of the report object that was run.|
-|alObjectName|Specifies the name of the report object that was run.|
-|alObjectType|**Report**.|
-|alStackTrace|The stack trace in AL.|
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
-|component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|documentFormat|Specifies the format of the report outputs as a result of the report action. See [documentFormat](#documentFormat). This dimension was added in version 20.0.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
-|extensionId|Specifies the appID of the extension that the report object belongs to.|
-|extensionName|Specifies the name of the extension that the report object belongs to.|
-|extensionVersion|Specifies the version of the extension that the report object belongs to.|
-|extensionPublisher|Specifies the publisher of the extension that the report object belongs to.|
-|numberOfRows|Specifies the number of rows/records generated for the report dataset.|
-|reportAction|Specifies the action that was done on the report. See [reportAction](#reportAction). This dimension was added in version 20.0.|
-|reportingEngine | Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |
-|result|**Success**|
-|serverExecutionTime|Specifies the amount of time it took the service to complete the request<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
-|sqlDatabaseAccessIntent | Specifies the database access intent used to read data for the report, such as **ReadOnly**, or **ReadWrite**. This dimension was added in version 19.1. |
-|sqlExecutes|Specifies the number of SQL statements that the report executed<sup>[\[1\]](#1)</sup>.|
-|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements<sup>[\[1\]](#1)</sup>.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
-|totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
+### <a name=layoutFormat></a>layoutFormat
 
-<sup><a name=1>1</a></sup>From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
-
-
-### <a name=reportAction></a>reportAction
-
-The reportAction dimension shows actions taken to generate a report. The action can be taken from the report request page, for example, from the **Send To** menu,  or from AL code.
+The layoutFormat dimension indicates the file type of the layout.
 
 |Value|Description|
 |-----|-----------|
-|None|There were no results from the request page, for example, the user canceled.|
-|Print|The user selected to print the report.|
-|Preview|The user selected to preview the report from the request page.|
-|Save|The report was saved to a file by a call to the [SaveAs method](/dynamics365/business-central/dev-itpro/developer/methods-auto/report/report-saveas-method) in AL code.|
-|Schedule|The user selected to schedule the report from the request page.|
-|Download|The user downloaded the report as a file from the request page.  |
-|Parameters|Parameters and filters were collected from the request page without rendering the output.|
+|RDLC (0)|The layout is a .rdlc file type.|
+|Word (1)|The layout was a .docx file type.|
+|Excel (2)|The layout was a .xlsx file type.|
+|Custom (3)|The layout was an custom file type. In the client UI, this format referred to as **External**.|
 
-### <a name=documentFormat></a>documentFormat
+> [!NOTE]
+> In versions before 25.1, the LayoutFormat value is represented as an integer as shown in parentheses.
 
-The documentFormat dimension shows the output of the generated report as a result of the report action. The action can be taken from the report request page, for example, from the **Send To** menu,  or from AL code.
-
-|Value|Description|
-|-----|-----------|
-|None|There was no output, for example, the user canceled.|
-|Pdf|The output was a .pdf file type.|
-|Xml|The outout was a .xml file type.|
-|Word|The output was a .docx file type.|
-|Html|The output was a .html file type.|
-|Excel|The output was a .xlsx file type that included the layout and dataset.|
-|ExcelDataset|The output was a .xlsx file type that contained the dataset only.|
-|Custom|The output was an custom file type.|
-|ProcessingOnly|The action was for processing report without any kind of layout.|
-
-### <a name=layoutType></a>layoutType
-
-The layoutType shows the layout type that was used to generate the report in the current action. The action can be taken from the report request page, for example, from the **Send To** menu,  or from AL code.
-
-|Value|Description|
-|-----|-----------|
-|None|There was no layout specified.|
-|Rdlc|The layout was a .rdlc file type.|
-|Word|The layout was a .docx file type.|
-|Excel|The layout was a .xlsx file type.|
-|Custom|The layout was an custom file type.|
-|ProcessingOnly|The action was for processing report without any kind of layout.|
-
-### Sample KQL code (successful report generation - usage)
+### Sample KQL code (Report layout added by user)
 
 This KQL code can help you get started analyzing which reports users run:
 
 ```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
-| where customDimensions has 'RT0006'
-| where customDimensions.eventId == 'RT0006' 
-// | where operation_Name == "Success report generation" // use this instead of eventId clause for versions 16.0 or earlier
-| where customDimensions.result == "Success"
+| where customDimensions has 'AL0000N0E' // performance optimization
+| where customDimensions.eventId == 'AL0000N0E'
 | project timestamp
 // in which environment/company did it happen
 , aadTenantId = customDimensions.aadTenantId
 , environmentName = customDimensions.environmentName
 , environmentType = customDimensions.environmentType
 , companyName = customDimensions.companyName
-// in which extension/app
-, extensionId = customDimensions.extensionId
-, extensionName = customDimensions.extensionName
-, extensionVersion = customDimensions.extensionVersion
-, extensionPublisher = customDimensions.extensionPublisher
-// in which object
-, alObjectId = customDimensions.alObjectId
-, alObjectName = customDimensions.alObjectName
-, alObjectType = customDimensions.alObjectType
+// for which report and layout
+, reportId = customDimensions.alReportId // object ID of the report
+, layoutName = customDimensions.alLayoutName 
+, layoutFormat = customDimensions.alLayoutFormat // possible values: RDLC, Word, Excel, Custom
 // what did the user do
-, documentFormat = customDimensions.documentFormat   // documentFormat dimension added in version 20.0
-, LayoutAppId = customDimensions.layoutAppId         // layout dimensions added in version 20.0
-, LayoutName = customDimensions.layoutName           // layout dimensions added in version 20.0
-, LayoutType = customDimensions.layoutType           // layout dimensions added in version 20.0
-, reportAction = customDimensions.reportAction       // reportAction dimension added in version 20.0
-, reportingEngine = customDimensions.reportingEngine // reportingEngine dimension was added in version 17.3
-// which user ran the report
-, usertelemetryId = case(
-  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id // user telemetry id was introduced in the platform in version 20.0
-, 'N/A'
-)
+, action = customDimensions.alAction // alAction is "New" for this event
+// which user did it
+, user_Id // user telemetry ID
 ```
 
+## Report layout default changed by user
 
-If you want to summarize the data, keep the columns you want to group by in the _project_ part of the KQL query above, and add a _summarize_ command:
+Occurs when a user changes the default layout used by a report. 
+
+### General dimensions
+
+The following table explains the general dimensions of this trace.
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Report layout default changed by user**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|action|**SetDefault**|
+|companyName|[!INCLUDE[include-telemetry-dimension-company-name](../includes/include-telemetry-dimension-company-name.md)]|
+|environmentName|[!INCLUDE[include-telemetry-dimension-environment-name](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
+|eventId|**AL0000N0D**|
+|layoutFormat|Specifies the layout file type. Learn more in [layoutFormat](#layoutFormat).|
+|layoutName |Specifies the name of the report layout.|
+|reportId|Specifies the ID of the report assigned the layout.|
+
+### Sample KQL code (Report layout default changed by user)
+
+This KQL code can help you get started analyzing which reports users run:
 
 ```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
-| where customDimensions has 'RT0006'
-| where customDimensions.eventId == 'RT0006' 
-// | where operation_Name == "Success report generation" // use this instead of eventId clause for versions 16.0 or earlier
-| where customDimensions.result == "Success"
+| where customDimensions has 'AL0000N0D' // performance optimization
+| where customDimensions.eventId == 'AL0000N0D'
 | project timestamp
-, alObjectName = customDimensions.alObjectName
-, LayoutType = customDimensions.layoutType           
-, reportAction = customDimensions.reportAction       
-// calculate report count by ReportName, ReportAction (save/preview/download/...), and LayoutType (Word/Excel/RDLC/...)
-| summarize ReportCount=count() 
-by ReportName = tostring(customDimensions.alObjectName)
-, ReportAction = tostring(customDimensions.reportAction)
-, LayoutType = tostring(customDimensions.layoutType)
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// for which report and layout
+, reportId = customDimensions.alReportId // object id of the report
+, newDefaultLayoutName = customDimensions.alLayoutName 
+// NB! alLayoutFormat shows as an integer in the telemetry in versions prior to 25.1
+, layoutFormat = customDimensions.alLayoutFormat // possible values: RDLC, Word, Excel, Custom
+// what did the user do
+, action = customDimensions.alAction // alAction is "SetDefault" for this event
+// which user did it
+, user_Id // user telemetry id
 ```
-
-
-### Sample KQL code (successful report generation - all dimensions)
-
-[!INCLUDE[report-success-kql](../includes/include-telemetry-report-success-kql.md)]
-
 
 ## Failed report generation
 
