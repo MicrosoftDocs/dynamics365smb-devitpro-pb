@@ -95,7 +95,7 @@ For more information, see [FAQ about Migrating to Business Central Online from O
 During the data migration process, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't migrate most system tables, users, and permissions.  
 
 > [!NOTE]
-> Currently, record links are not migrated because the links are associated with a user ID, and we do not migrate users from the on-premises environment to the online tenant. You can choose to [upvote this feature suggestion](https://experience.dynamics.com/ideas/idea/?ideaid=b515c246-801d-ea11-b265-0003ff68f605).
+> Currently, record links are not migrated because the links are associated with a user ID, and we do not migrate users from the on-premises environment to the online tenant. You can choose to [upvote this feature suggestion](https://experience.dynamics.com/ideas/idea/?ideaid=00aa00aa-bb11-cc22-dd33-44ee44ee44ee).
 
 ### Upgrading to a new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
