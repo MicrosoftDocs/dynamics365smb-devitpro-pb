@@ -70,7 +70,7 @@ The property value for TableData can be set with a combination of **Read**, **In
 For other objects including Table, Page, Query, Report, Codeunit, or Xmlport, it can only be **Execute** permission. This means, you can set the property value to ``X`` for the specified object type. 
 
 > [!NOTE]  
->  If you set multiple permissions, then one or the other applies. 
+>  If you set multiple permissions, then one or the other applies. If specifying ``RIMD`` permissions, the user needs to have at least one of the R, I, M, D permissions. 
 
 ## Dependent Property
 
