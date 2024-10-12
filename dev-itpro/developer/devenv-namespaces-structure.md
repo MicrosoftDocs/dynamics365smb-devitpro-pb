@@ -49,7 +49,7 @@ param
     [string] $BasePath,
     [ValidateSet("Add","Ignore")]
     [string] $License = "Ignore",
-    [char] $Delimiter = ";"
+    [char] $Delimiter = ","
 )
 
 $files = Import-Csv $CsvMappingFile -Delimiter $Delimiter
