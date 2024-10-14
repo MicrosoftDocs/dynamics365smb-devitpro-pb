@@ -81,9 +81,9 @@ To register the capability, you add an `enumextension` of the **Copilot Capabili
 ```al
 enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
 {
-    value(54300; “Draft a job")
+    value(54300; "Draft a job")
     {
-        Caption = ‘Draft a Job';
+        Caption = 'Draft a Job';
     }
 }
 ```
@@ -108,9 +108,10 @@ codeunit 54310 "Secrets And Capabilities Setup"
         CopilotCapability: Codeunit "Copilot Capability";
         LearnMoreUrlTxt: Label 'https://example.com/DraftaJob', Locked = true;
     begin
-        if not CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::“Draft a Job") then
+        if not CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::"
+Draft a Job") then
             CopilotCapability.RegisterCapability(
-            Enum::"Copilot Capability"::“Draft a Job", 
+            Enum::"Copilot Capability"::"Draft a Job", 
             Enum::"Copilot Availability"::"Generally Available", LearnMoreUrlTxt);
     end;
 }
@@ -167,7 +168,7 @@ codeunit 54334 "CopilotJob"
     begin
         SetAuthorization(AzureOpenAI);
         SetParameters(AOAIChatCompletionParams);
-        AzureOpenAI.SetCopilotCapability(Enum::"Copilot Capability"::“Draft a Job");
+        AzureOpenAI.SetCopilotCapability(Enum::"Copilot Capability"::"Draft a Job");
         IsolatedStorage.Get('DescribeJobMetaprompt', Metaprompt);
         if AzureOpenAI.ApproximateTokenCount(Metaprompt) + AzureOpenAI.ApproximateTokenCount(Prompt) <= 
            MaxModelRequestTokens() then 
