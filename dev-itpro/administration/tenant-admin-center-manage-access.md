@@ -71,6 +71,8 @@ To turn access on or off or to limit access to selected home Entra tenants, comp
 
 The Partner access settings on an environment are preserved if tenant-level access is removed, for example when a GDAP relationship has ended or application consent to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API has been revoked. Should the tenant-level access be re-enabled, the partner would automatically have access to the environment again. To avoid this, change the Partner access setting on the environment after the tenant-level access is removed.
 
+The Partner access settings on an environment are preserved during environment lifecycle operations, such as [copy](tenant-admin-center-environments-copy.md), [restore](tenant-admin-center-backup-restore.md), and [transfer](tenant-admin-center-environments-move.md). During a restore operation, the setting is restored to what it was at the point-in-time the environment is being restored to.
+
 ## Manage access with Microsoft 365 licenses
 
 To help [!INCLUDE [prod_short](../developer/includes/prod_short.md)] users easily share and collaborate on business data with their coworkers, you can enable access with Microsoft 365 licenses. When enabled, users within the same organization who have an applicable Microsoft 365 license will be able to read (but not write) [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data that is shared with them in Microsoft Team&mdash;without needing a Business Central license.
