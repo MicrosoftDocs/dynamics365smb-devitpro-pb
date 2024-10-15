@@ -4,7 +4,7 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 08/29/2024
+ms.date: 10/04/2024
 ms.custom: bap-template
 ms.topic: whats-new 
 ---
@@ -15,8 +15,8 @@ Wondering about upcoming and recently released capabilities in Dynamics 365 Busi
 
 See the release plans for what's coming. Choose the following links to learn about the latest versions of Business Central.
 
+- [2024 release wave 2](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/planned-features)
 - [2024 release wave 1](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/planned-features)
-- [2023 release wave 2](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features)
 
 Keep track of changes on the [Dynamics 365 Business Central release planner](https://experience.dynamics.com/releaseplans/?app=Business+Central) site, or download the release plan as a single PDF.  
 
