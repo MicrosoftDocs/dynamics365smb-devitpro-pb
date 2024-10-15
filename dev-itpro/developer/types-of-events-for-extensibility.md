@@ -69,7 +69,7 @@ Examples:
 
         ApprovalEntry.Validate(Status, ApprovalEntry.Status::Approved);
         ApprovalEntry.Modify(true);
-        **OnApproveApprovalRequest(ApprovalEntry);**
+        OnApproveApprovalRequest(ApprovalEntry);
     end;
 ```
 
@@ -109,7 +109,7 @@ Examples of high-quality events are:
             UpdateItemAnalysisView.UpdateAll(0, true);
         end;
 
-        <r>OnAfterPostSalesDoc(SalesHeader2, GenJnlPostLine, SalesShptHeader."No.", ReturnRcptHeader."No.", SalesInvHeader."No.", SalesCrMemoHeader."No.", SuppressCommit, InvtPickPutaway, CustLedgEntry, WhseShip, WhseReceive, PreviewMode);</r>
+        OnAfterPostSalesDoc(SalesHeader2, GenJnlPostLine, SalesShptHeader."No.", ReturnRcptHeader."No.", SalesInvHeader."No.", SalesCrMemoHeader."No.", SuppressCommit, InvtPickPutaway, CustLedgEntry, WhseShip, WhseReceive, PreviewMode);
 ```
 
 #### Before/After Procedure
@@ -142,9 +142,10 @@ These events are medium quality because they're connected to the specific proced
         StockkeepingUnit := Item.GetSKU("Location Code", "Variant Code");
         Result := SKU.Get("Location Code", "Item No.", "Variant Code");
 
-        <r>OnAfterGetSKU(Rec, Result);</r>
+        OnAfterGetSKU(Rec, Result);
     end;
 ```
+
 #### Before/After specific line
 
 **Low Value** - A valid use could be before we insert or modify a line to update specific fields. Otherwise, avoid them because the point to a specific line of code. They were needed before because the Hook pattern was used as a default extensibility.
@@ -170,7 +171,7 @@ Example of valid usage:
         ContactBusinessRelation."Business Relation Code" := MarketingSetup."Bus. Rel. Code for Customers";
         ContactBusinessRelation."Link to Table" := ContactBusinessRelation."Link to Table"::Customer;
         ContactBusinessRelation."No." := Cust."No.";
-        <r>OnInsertNewContactOnBeforeContBusRelInsert(ContactBusinessRelation, Contact, Cust);</r>
+        OnInsertNewContactOnBeforeContBusRelInsert(ContactBusinessRelation, Contact, Cust);
         ContactBusinessRelation.Insert(true);
     end;
 ```
@@ -187,14 +188,15 @@ Example of a lower quality usage, because they could be grouped into a single ev
         ...
 
         MinimalPossibleLiability := Abs(OldCVLedgEntryBuf2."Remaining Amount" - OldCVLedgEntryBuf2.GetRemainingPmtDiscPossible(NewCVLedgEntryBuf."Posting Date"));
-        <r>OnAfterCalcMinimalPossibleLiability(NewCVLedgEntryBuf, OldCVLedgEntryBuf, OldCVLedgEntryBuf2, MinimalPossibleLiability);</r>
+        OnAfterCalcMinimalPossibleLiability(NewCVLedgEntryBuf, OldCVLedgEntryBuf, OldCVLedgEntryBuf2, MinimalPossibleLiability);
 
         PaymentExceedsLiability := Abs(OldCVLedgEntryBuf2."Amount to Apply") >= MinimalPossibleLiability;
-        <r>OnAfterCalcPaymentExceedsLiability(NewCVLedgEntryBuf, OldCVLedgEntryBuf, OldCVLedgEntryBuf2, MinimalPossibleLiability, PaymentExceedsLiability);</r>
+        OnAfterCalcPaymentExceedsLiability(NewCVLedgEntryBuf, OldCVLedgEntryBuf, OldCVLedgEntryBuf2, MinimalPossibleLiability, PaymentExceedsLiability);
 
         ToleratedPaymentExceedsLiability := Abs(NewCVLedgEntryBuf."Remaining Amount" + PmtTolAmtToBeApplied) >= MinimalPossibleLiability;
-        <r>OnAfterCalcToleratedPaymentExceedsLiability(NewCVLedgEntryBuf, OldCVLedgEntryBuf, OldCVLedgEntryBuf2, MinimalPossibleLiability, ToleratedPaymentExceedsLiability, PmtTolAmtToBeApplied);</r>
+        OnAfterCalcToleratedPaymentExceedsLiability(NewCVLedgEntryBuf, OldCVLedgEntryBuf, OldCVLedgEntryBuf2, MinimalPossibleLiability, ToleratedPaymentExceedsLiability, PmtTolAmtToBeApplied);
 ```
+
 or
 <!--"images/OnBeforeAfterLineEvents_bad_02.png" alt="OnBeforeAfterLineEvents_bad_02"-->
 ```AL
@@ -213,7 +215,7 @@ or
 			TestStatusOpen();
 			...
 			IsHandled := false;
-			<r>OnValidateVariantCodeOnBeforeValidateDates(Rec, xRec, IsHandled);</r>
+			OnValidateVariantCodeOnBeforeValidateDates(Rec, xRec, IsHandled);
 			if not IsHandled then
 				ValidateDates(FieldNo("Due Date"), true);
    }
@@ -231,13 +233,13 @@ Use before events as early in the code as possible. We must avoid any risk of pa
 ```AL
 **codeunit 370 "Bank Acc. Reconciliation Post"**
     [Scope('OnPrem')]
-    <r>[CommitBehavior(CommitBehavior::Ignore)]</r>
+    [CommitBehavior(CommitBehavior::Ignore)]
     procedure RunPreview(var BankAccReconciliation: Record "Bank Acc. Reconciliation"): Boolean
     begin
         PreviewMode := true;
         InitPost(BankAccReconciliation);
         Post(BankAccReconciliation);
-        <r>FinalizePost(BankAccReconciliation);</r>
+        FinalizePost(BankAccReconciliation);
         exit(true);
     end;
 ```
@@ -253,7 +255,7 @@ Use before events as early in the code as possible. We must avoid any risk of pa
     begin
         if PreviewMode then
             exit;
-        <r>OnBeforeFinalizePost(BankAccRecon);</r>
+        OnBeforeFinalizePost(BankAccRecon);
         CreationDateTime := BankAccRecon.SystemCreatedAt;
         MatchedWithAI := AIMatchProposalsExist(BankAccRecon);
         if BankAccReconLine.LinesExist(BankAccRecon) then
@@ -274,7 +276,7 @@ Use before events as early in the code as possible. We must avoid any risk of pa
         TelemetryCategories.Add('NumberOfLines', Format(LineCount));
         if TryCalculateDurationToPost(DurationUntilPosting, CreationDateTime) then
             Session.LogMessage('0000LHY', Format(DurationUntilPosting), Verbosity::Normal, DataClassification::SystemMetadata, TelemetryScope::ExtensionPublisher, TelemetryCategories);
-        <r>OnAfterFinalizePost(BankAccRecon);</r>
+        OnAfterFinalizePost(BankAccRecon);
     end;
 ```
 
@@ -306,7 +308,7 @@ Events are better than `Codeunit.Run` because they allow multiple subscribers. R
         Success: Boolean;
     begin
         Commit();
-        <r>OnCreateReminderSafe(Customer, GlobalCustLedgEntry, GlobalReminderHeader, GlobalCreateRemindersSetup."Only Overdue Amount Entries", GlobalCreateRemindersSetup."Include Entries On Hold", GlobalFeeCustLedgEntry, Success);</r>
+        OnCreateReminderSafe(Customer, GlobalCustLedgEntry, GlobalReminderHeader, GlobalCreateRemindersSetup."Only Overdue Amount Entries", GlobalCreateRemindersSetup."Include Entries On Hold", GlobalFeeCustLedgEntry, Success);
         if Success then
             exit(true);
 
@@ -317,13 +319,13 @@ Events are better than `Codeunit.Run` because they allow multiple subscribers. R
 ```
 ```AL
 **codeunit 6761 "Create Aut. Event Handler"**
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Create Reminders Action Job", <r>'OnCreateReminderSafe'</r>, '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Create Reminders Action Job", 'OnCreateReminderSafe', '', false, false)]
     local procedure CreateReminderSafeHandler(var Customer: Record Customer; var CustLedgEntry: Record "Cust. Ledger Entry"; var ReminderHeader: Record "Reminder Header"; OverdueEntriesOnly: Boolean; IncludeEntriesOnHold: Boolean; var FeeCustLedgEntryLine: Record "Cust. Ledger Entry"; var Success: Boolean)
     begin
         CreateReminders(Customer, CustLedgEntry, ReminderHeader, OverdueEntriesOnly, IncludeEntriesOnHold, FeeCustLedgEntryLine, Success);
     end;
 
-    <r>[CommitBehavior(CommitBehavior::Ignore)]</r>
+    [CommitBehavior(CommitBehavior::Ignore)]
     local procedure CreateReminders(var Customer: Record Customer; var CustLedgEntry: Record "Cust. Ledger Entry"; var ReminderHeader: Record "Reminder Header"; OverdueEntriesOnly: Boolean; IncludeEntriesOnHold: Boolean; var FeeCustLedgEntryLine: Record "Cust. Ledger Entry"; var Success: Boolean)
     var
         ReminderMake: Codeunit "Reminder-Make";
@@ -354,7 +356,7 @@ Then, early in the action, you can implement a manually bound subscriber that he
     begin
         if (not LastLineIsFooter and SkipLine) or HeaderWarning then begin
             ErrorMessage := LastLineIsHeaderErr;
-            <r>OnNoLinesFoundSetErrorMessage(ErrorMessage);</r>
+            OnNoLinesFoundSetErrorMessage(ErrorMessage);
             Error(ErrorMessage);
         end;
     end;
@@ -369,7 +371,7 @@ Then, early in the action, you can implement a manually bound subscriber that he
         CreateBankAccountReconcillation();
         if BankAccountCouldBeUsedForImport() then begin
             DataExch.Init();
-            <r>BindSubscription(ProcessBankAccRecLines);</r>
+            BindSubscription(ProcessBankAccRecLines);
             ProcessBankAccRecLines.SetBankAccountNo(Rec."Bank Account No.");
             ProcessBankAccRecLines.ImportBankStatement(Rec, DataExch);
             UnBindSubscription(ProcessBankAccRecLines);
@@ -380,7 +382,7 @@ Then, early in the action, you can implement a manually bound subscriber that he
 <!--[SwitchEvents_02]-->
 ```AL
 **codeunit 1248 "Process Bank Acc. Rec Lines"**	
-	[EventSubscriber(ObjectType::XmlPort, XmlPort::"Data Exch. Import - CSV", <r>'OnNoLinesFoundSetErrorMessage'</r>, '', false, false)]
+	[EventSubscriber(ObjectType::XmlPort, XmlPort::"Data Exch. Import - CSV", 'OnNoLinesFoundSetErrorMessage', '', false, false)]
     local procedure HandleOnNoLinesFoundSetErrorMessage(var ErrorMessage: Text);
     begin
         InvalidFileFormatError(ErrorMessage);
@@ -412,7 +414,7 @@ The signature expects multiple subscribers, so there can be multiple extensions 
                 UpdateLocationCode(SellToCustomer."Location Code");
         end;
 
-        <r>OnAfterCopySellToCustomerAddressFieldsFromCustomer(Rec, SellToCustomer, CurrFieldNo, SkipBillToContact, SkipSellToContact);</r>
+        OnAfterCopySellToCustomerAddressFieldsFromCustomer(Rec, SellToCustomer, CurrFieldNo, SkipBillToContact, SkipSellToContact);
     end;
 ```
 
@@ -428,7 +430,7 @@ or
 	
     procedure InsertReverseEntry(NewGLEntryNo: Integer; FAEntryType: Option " ","Fixed Asset",Maintenance; FAEntryNo: Integer; var NewFAEntryNo: Integer; TransactionNo: Integer)
     ...
-		<r>OnInsertReverseEntryOnBeforeInsertMaintenanceLedgerEntryBuffer(MaintenanceLedgEntry3, SkipInsertOfMaintenanceLedgerEntry);</r>
+		OnInsertReverseEntryOnBeforeInsertMaintenanceLedgerEntryBuffer(MaintenanceLedgEntry3, SkipInsertOfMaintenanceLedgerEntry);
 		if not SkipInsertOfMaintenanceLedgerEntry then begin
 			TempMaintenanceLedgEntry := MaintenanceLedgEntry3;
 			TempMaintenanceLedgEntry.Insert()
@@ -462,7 +464,7 @@ or
 				Handled: Boolean;
 			begin
 				Handled := false;
-				<r>OnBeforeStatisticsAction(Rec, Handled);</r>
+				OnBeforeStatisticsAction(Rec, Handled);
 				if Handled then
 					exit;
 
@@ -473,11 +475,11 @@ or
 ```
 ```AL		
 	**usage exmple**
-	[EventSubscriber(ObjectType: : Page, Page::"Sales Order", <r>'OnBeforeStatisticsAction'</r>, '', false, false)]
+	[EventSubscriber(ObjectType: : Page, Page::"Sales Order", 'OnBeforeStatisticsAction', '', false, false)]
 	local procedure CheckReleased(Sa1esHeader: Record "Sales Header"; var Handled: Boolean)
 	begin
-		<r>if Handled then
-			exit;</r>
+		if Handled then
+			exit;
 			
 		with SalesHeader do begin
 			if Status = Status::Re1eased then		
@@ -520,7 +522,7 @@ We can get better designs with enums and interfaces.
         TempPaymentServiceSetup: Record "Payment Service Setup" temporary;
         TempPaymentServiceSetupProviders: Record "Payment Service Setup" temporary;
     begin
-        <r>OnRegisterPaymentServiceProviders(TempPaymentServiceSetupProviders);</r>
+        OnRegisterPaymentServiceProviders(TempPaymentServiceSetupProviders);
         case TempPaymentServiceSetupProviders.Count of
             0:
                 exit(false);
