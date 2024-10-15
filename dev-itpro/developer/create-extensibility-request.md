@@ -58,13 +58,13 @@ Provide a brief description of why you need us to change the app, and what the c
 >
 > * *"We want to avoid displaying testfield() errors to the user."*
 >
-> Explain why. Maybe something can be done differently, or it might cause an issue in another part of the system that you aren't aware of, or it makes sense to remove it in general.
+> Explain why. Maybe something can be done differently. It might cause an issue in a part of the system that you aren't aware of. Maybe it makes sense to remove it in general.
 
 ## Describe the requests
 
 Create a separate extensibility request for every change you want us to make.
 
-A request might require several changes, and some of the changes might have one or more dependencies on others. For example, there might be a situation where, unless one change is approved, the others don't make sense. In that situation, put all changes in the same request. Otherwise, create a request for each change.
+However, there can be exceptions. A request might require several changes, and some might depend on other changes. For example, there might be a situation where, unless one change is approved, the others don't make sense. In that situation, put all changes in the same request. Otherwise, create a request for each change.
 
 ## Events
 
@@ -75,8 +75,9 @@ It's optional, but we prefer that you submit requests related to events in the f
 [Procedure or trigger]
 ___
 
-Enter your description
+Enter a description.
 ___
+
 [IntegrationEvent(false,false)]
 local procedure event_signature(needed_parameters)
 begin
@@ -84,7 +85,7 @@ end;
 
 ### Design guidelines
 
-When you create a request for an event, please check the [Types of events for extensibility](types-of-events-for-extensibility.md).
+Before you create a request for an event, check the [Types of events for extensibility](types-of-events-for-extensibility.md).
 
 * Add records with a VAR, due to performance and logic impact.
 * Pass records rather than expose a specific length of the text field or many fields from the record.
