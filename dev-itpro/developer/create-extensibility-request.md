@@ -24,7 +24,7 @@ Extensibility requests are optional. However, submitting structured requests mak
 
 > [!NOTE]
 >
-> * We're adding new events in main and the latest release branch. At the time of this writing, the latest release branch is 25.x. In most cases, we'll make other types of requests, again, only in the master branch, available in upcoming major releases.
+> * We're adding new events in main and the latest release branch. At the time of this writing, the latest release branch is 25.x. In most cases, we'll make other types of requests, again, only in the main branch, available in upcoming major releases.
 > * If the procedure, field, object or any part of it are marked as `Obsolete` or surrounded by `CLEAN` tags, we won't add or update the events.
 
 ## Minimum requirements
