@@ -52,7 +52,8 @@ Examples:
 	local procedure OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry")
 	begin
 	end;
-	
+```
+```AL	
     local procedure ApproveSelectedApprovalRequest(var ApprovalEntry: Record "Approval Entry")
     var
         IsHandled: Boolean;
@@ -68,13 +69,9 @@ Examples:
 
         ApprovalEntry.Validate(Status, ApprovalEntry.Status::Approved);
         ApprovalEntry.Modify(true);
-        <r>OnApproveApprovalRequest(ApprovalEntry);</r>
+        **OnApproveApprovalRequest(ApprovalEntry);**
     end;
 ```
-
-<!--[BusinessEvent_02]
-
-need to replace the images with code examples-->
 
 #### OnBefore/OnAfter Events
 
@@ -99,7 +96,8 @@ Examples of high-quality events are:
     local procedure OnAfterPostSalesDoc(var SalesHeader: Record "Sales Header"; var GenJnlPostLine: Codeunit "Gen. Jnl.-Post Line"; SalesShptHdrNo: Code[20]; RetRcpHdrNo: Code[20]; SalesInvHdrNo: Code[20]; SalesCrMemoHdrNo: Code[20]; CommitIsSuppressed: Boolean; InvtPickPutaway: Boolean; var CustLedgerEntry: Record "Cust. Ledger Entry"; WhseShip: Boolean; WhseReceiv: Boolean; PreviewMode: Boolean)
     begin
     end;
-	
+```
+```AL	
 	internal procedure RunWithCheck(var SalesHeader2: Record "Sales Header")
     var
         SalesHeader: Record "Sales Header";
@@ -114,10 +112,6 @@ Examples of high-quality events are:
         <r>OnAfterPostSalesDoc(SalesHeader2, GenJnlPostLine, SalesShptHeader."No.", ReturnRcptHeader."No.", SalesInvHeader."No.", SalesCrMemoHeader."No.", SuppressCommit, InvtPickPutaway, CustLedgEntry, WhseShip, WhseReceive, PreviewMode);</r>
 ```
 
-<!--[OnBeforeAfterOperationEvents_02]
-
-Need to replace with a code example-->
-
 #### Before/After Procedure
 
 **Medium Value** - We often use these events to provide more processing before or after a specific method is called. 
@@ -131,7 +125,8 @@ These events are medium quality because they're connected to the specific proced
     local procedure OnAfterGetSKU(AssemblyHeader: Record "Assembly Header"; var Result: Boolean)
     begin
     end;
-	
+```
+```AL	
     local procedure GetSKU()
     var
         SKU: Record "Stockkeeping Unit";
@@ -150,18 +145,13 @@ These events are medium quality because they're connected to the specific proced
         <r>OnAfterGetSKU(Rec, Result);</r>
     end;
 ```
-
-<!--[OnBeforeAfterProcedureEvents_02]-->
-
-<!--NEED TO REPLACE WITH A CODE EXAMPLE OR DELETE-->
-
 #### Before/After specific line
 
 **Low Value** - A valid use could be before we insert or modify a line to update specific fields. Otherwise, avoid them because the point to a specific line of code. They were needed before because the Hook pattern was used as a default extensibility.
 
 We should carefully consider whether we need Hook events before we introduce them. Hook events have little reuse between extensions, and can be fragile to code changes.
 
-Example of valid usage: <!--replace images with code examples-->
+Example of valid usage: 
 
 <!--"images/OnBeforeAfterLineEvents_01.png"-->
 ```AL
@@ -170,7 +160,8 @@ Example of valid usage: <!--replace images with code examples-->
     local procedure OnInsertNewContactOnBeforeContBusRelInsert(var ContactBusinessRelation: Record "Contact Business Relation"; Contact: Record Contact; Customer: Record Customer)
     begin
     end;
-	
+```
+```AL	
 	procedure InsertNewContact(var Cust: Record Customer; LocalCall: Boolean)
 	var
         ContactBusinessRelation: Record "Contact Business Relation";
@@ -183,10 +174,6 @@ Example of valid usage: <!--replace images with code examples-->
         ContactBusinessRelation.Insert(true);
     end;
 ```
-
-<!--"images/OnBeforeAfterLineEvents_02.png" alt="OnBeforeAfterLineEvents_02"
-
-Need to replace or delete-->
 
 Example of a lower quality usage, because they could be grouped into a single event, rather than several:
 
@@ -240,8 +227,6 @@ Verify events shouldn't create transactions. If the operation should be rolled b
 
 Use before events as early in the code as possible. We must avoid any risk of partial commits when we introduce verify events.
 
-<!--replace the images with code examples-->
-
 <!--[VerifyEvents_01]-->
 ```AL
 **codeunit 370 "Bank Acc. Reconciliation Post"**
@@ -255,7 +240,8 @@ Use before events as early in the code as possible. We must avoid any risk of pa
         <r>FinalizePost(BankAccReconciliation);</r>
         exit(true);
     end;
-	
+```
+```AL	
 	[IntegrationEvent(false, false)]
     local procedure OnBeforeFinalizePost(var BankAccReconciliation: Record "Bank Acc. Reconciliation")
     begin
@@ -292,12 +278,6 @@ Use before events as early in the code as possible. We must avoid any risk of pa
     end;
 ```
 
-<!--[VerifyEvents_02]
-
-[VerifyEvents_03]
-
-REPLACE OR DELETE    -->
-
 ### Isolated events
 
 **Medium Value** - Use isolated events to allow handling errors that won't interrupt the code execution.
@@ -312,8 +292,6 @@ An alternative is to invoke `if Codeunit.Run()` and then handle things in isolat
 
 Events are better than `Codeunit.Run` because they allow multiple subscribers. Running a codeunit only lets one implementation run at a time.
 
-<!--need to replace the images with code examples-->
-
 <!--[IsolatedEvents_01]-->
 ```AL
 **codeunit 6759 "Create Reminders Action Job"**
@@ -321,7 +299,8 @@ Events are better than `Codeunit.Run` because they allow multiple subscribers. R
     local procedure OnCreateReminderSafe(var Customer: Record Customer; var CustLedgEntry: Record "Cust. Ledger Entry"; var ReminderHeader: Record "Reminder Header"; OverdueEntriesOnly: Boolean; IncludeEntriesOnHold: Boolean; var FeeCustLedgEntryLine: Record "Cust. Ledger Entry"; var Success: Boolean)
     begin
     end;
-	
+```
+```AL	
     local procedure CreateReminderForCustomer(var Customer: Record Customer): Boolean
     var
         Success: Boolean;
@@ -335,7 +314,8 @@ Events are better than `Codeunit.Run` because they allow multiple subscribers. R
         ClearLastError();
         exit(false);
     end;
-
+```
+```AL
 **codeunit 6761 "Create Aut. Event Handler"**
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Create Reminders Action Job", <r>'OnCreateReminderSafe'</r>, '', false, false)]
     local procedure CreateReminderSafeHandler(var Customer: Record Customer; var CustLedgEntry: Record "Cust. Ledger Entry"; var ReminderHeader: Record "Reminder Header"; OverdueEntriesOnly: Boolean; IncludeEntriesOnHold: Boolean; var FeeCustLedgEntryLine: Record "Cust. Ledger Entry"; var Success: Boolean)
@@ -354,20 +334,11 @@ Events are better than `Codeunit.Run` because they allow multiple subscribers. R
     end;
 ```
 
-<!--[IsolatedEvents_02]
-
-[IsolatedEvents_03]
-
-REPLACE OR DELETE
--->
-
 ### Switch events (manually bound events)
 
 **Medium Value** - For switch events, the idea is to create an event that only manually bound subscribers should subscribe to.
 
 Then, early in the action, you can implement a manually bound subscriber that helps you change the behavior of that specific call.
-
-<!--Need to replace the images with code examples-->
 
 <!--[SwitchEvents_01]-->
 ```AL
@@ -387,7 +358,8 @@ Then, early in the action, you can implement a manually bound subscriber that he
             Error(ErrorMessage);
         end;
     end;
-
+```
+```AL
 **table 273 "Bank Acc. Reconciliation"**
 	procedure ImportBankStatement()
     var
@@ -415,20 +387,11 @@ Then, early in the action, you can implement a manually bound subscriber that he
     end;
 ```
 
-<!--[SwitchEvents_03]
-
-[SwitchEvents_04]
-
-REPLACE OR DELETE    
--->
-
 ### OnSkip (operation) events
 
 **Medium Value** - Skip events are similar to handled events. However, they can have multiple skip parameters, which gives us more granular control of the code.
 
 The signature expects multiple subscribers, so there can be multiple extensions that handle the event.
-
-<!--need to replace the images with code examples-->
 
 <!--[SkipEvents_01]-->
 ```AL
@@ -437,7 +400,8 @@ The signature expects multiple subscribers, so there can be multiple extensions 
     local procedure OnAfterCopySellToCustomerAddressFieldsFromCustomer(var SalesHeader: Record "Sales Header"; SellToCustomer: Record Customer; CurrentFieldNo: Integer; var SkipBillToContact: Boolean; var SkipSellToContact: Boolean)
     begin
     end;
-	
+```
+```AL	
 	local procedure CopySellToCustomerAddressFieldsFromCustomer(var SellToCustomer: Record Customer)
     var
         IsHandled: Boolean;
@@ -451,11 +415,6 @@ The signature expects multiple subscribers, so there can be multiple extensions 
         <r>OnAfterCopySellToCustomerAddressFieldsFromCustomer(Rec, SellToCustomer, CurrFieldNo, SkipBillToContact, SkipSellToContact);</r>
     end;
 ```
-
-<!--[SkipEvents_02]
-
-REPLACE OR DELETE   
--->
 
 or
 
@@ -476,19 +435,12 @@ or
 		end;
 ```
 
-<!--[SkipEvents_04]
-
-REPLACE OR DELETE    
--->
-
 ### Handled events
 
 **Low Value** - Handled events are low quality events.
 
 > [!NOTE]
 > Subscribers must exit if the event is already handled, thus these events don't scale. Consider using skip events.
-
-<!--need to replace the images with code examples-->
 
 <!--[HandledEvents_01]-->
 ```AL
@@ -497,7 +449,8 @@ REPLACE OR DELETE
     local procedure OnBeforeStatisticsAction(var SalesHeader: Record "Sales Header"; var Handled: Boolean)
     begin
     end;	
-	
+```
+```AL	
 	action(Statistics)
 		{
 			ApplicationArea = Basic, Suite;
@@ -517,7 +470,8 @@ REPLACE OR DELETE
 				CurrPage.SalesLines.Page.ForceTotalsCalculation();
 			end;
 		}	
-		
+```
+```AL		
 	**usage exmple**
 	[EventSubscriber(ObjectType: : Page, Page::"Sales Order", <r>'OnBeforeStatisticsAction'</r>, '', false, false)]
 	local procedure CheckReleased(Sa1esHeader: Record "Sales Header"; var Handled: Boolean)
@@ -533,13 +487,6 @@ REPLACE OR DELETE
 		end;
 	end;
 ```
-
-<!--[HandledEvents_02]
-
-[HandledEvents_03]
-
-REPLACE OR DELETE    
--->
 
 **Advantage**
 
@@ -559,8 +506,6 @@ The event was raised with a temporary table, and all subscribers would fill in t
 
 We can get better designs with enums and interfaces.
 
-<!--need to replace the images with code examples-->
-
 <!--[DiscoveryEvents_01]-->
 ```AL
 **table 1060 "Payment Service Setup"**
@@ -568,7 +513,8 @@ We can get better designs with enums and interfaces.
     procedure OnRegisterPaymentServiceProviders(var PaymentServiceSetup: Record "Payment Service Setup")
     begin
     end;
-	
+```
+```AL	
     procedure NewPaymentService(): Boolean
     var
         TempPaymentServiceSetup: Record "Payment Service Setup" temporary;
@@ -595,11 +541,6 @@ We can get better designs with enums and interfaces.
         end;
     end;
 ```
-
-<!--[DiscoveryEvents_02]
-
-REPLACE OR DELETE
--->
 
 ## See also
 
