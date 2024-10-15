@@ -27,9 +27,9 @@ The following list includes the types of events that are available. Use the link
 
 * [Business Events](#business-events)
 * [OnBefore/OnAfter Events](#onbeforeonafter-events)
-   * [Before/After Operation](#beforeafter-operation)
-   * [Before/After Procedure](#beforeafter-procedure)
-   * [Before/After specific line](#beforeafter-specific-line)
+   * [Before or after an operation](#before-or-after-an-operation)
+   * [Before or after a procedure](#before-or-after-a-procedure)
+   * [Before or after a specific line](#before-or-after-a-specific-line)
 * [Verify Events](#verify-events)
 * [Isolated Events](#isolated-events)
 * [Switch Events](#switch-events-manually-bound-events)
@@ -79,7 +79,7 @@ codeunit 1535 "Approvals Mgmt."
 
 `OnBefore/After` events might not allow the code to override existing behavior just to add additional logic to flows.
 
-#### Before/After Operation
+#### Before or after an operation
 
 **High Value** - If events are implemented before or after a large operation starts, they're high quality.
 
