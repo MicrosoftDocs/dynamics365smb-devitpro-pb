@@ -571,7 +571,7 @@ Activities listed in the table below can be audited by filtering to the `Configu
 
 ### Administered user activities
 
-Activities listed in the table below can be audited by filtering to the `Administered user` event.
+You can audit the activities in the table below by filtering to the `Administered user` event.
 
 <table>
     <thead>
@@ -612,7 +612,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=5>The Read Permission for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been granted by the UserSecurityId [UserSecurityId]</td>
+            <td rowspan=5>The Read permission for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been granted by the UserSecurityId [UserSecurityId]</td>
             <td>AppId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -760,7 +760,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td>Update users from Microsoft 365 wizard has been run by the UserSecurityID [UserSecurityId]</td>
+            <td>The Update users from Microsoft 365 wizard has been run by the UserSecurityID [UserSecurityId]</td>
             <td>UserSecurityId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -831,7 +831,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
 
 ### Administered company activities
 
-Activities listed in the table below can be audited by filtering to the `Administered company` event.
+You can audit the activities in the table below by filtering to the `Administered company` event.
 
 Events in the table below are emitted with custom dimensions.
 <table>
@@ -887,7 +887,7 @@ Events in the table below are emitted with message parameters.
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=3>The Field Monitoring has been set for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
+            <td rowspan=3>Field monitoring has been set for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
             <td>FieldId</td>
             <td>1</td>
         </tr>
@@ -900,7 +900,7 @@ Events in the table below are emitted with message parameters.
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=3>The Field Monitoring has been modified for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
+            <td rowspan=3>Field monitoring has been modified for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
             <td>FieldId</td>
             <td>1</td>
         </tr>
@@ -913,7 +913,7 @@ Events in the table below are emitted with message parameters.
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=3>The Field Monitoring has been deleted for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
+            <td rowspan=3>Field monitoring has been deleted for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
             <td>FieldId</td>
             <td>1</td>
         </tr>
@@ -926,7 +926,7 @@ Events in the table below are emitted with message parameters.
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=5>The Data sensitivity value [DataSensitivityValue] has been set for Company Name [CompanyName], Table No [TableId], Field No [FieldId] by UserSecurityId [UserSecurityId]</td>
+            <td rowspan=5>The data sensitivity value [DataSensitivityValue] has been set for Company Name [CompanyName], Table No. [TableId], Field No. [FieldId] by UserSecurityId [UserSecurityId]</td>
             <td>DataSensitivityValue</td>
             <td>Sensitive</td>
         </tr>
@@ -947,7 +947,7 @@ Events in the table below are emitted with message parameters.
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=2>The new Retention Policy record with Table ID [TableId] is created by the UserSecurityId [UserSecurityId]</td>
+            <td rowspan=2>The new retention policy record with Table ID [TableId] is created by the UserSecurityId [UserSecurityId]</td>
             <td>TableId</td>
             <td>18</td>
         </tr>
@@ -956,7 +956,7 @@ Events in the table below are emitted with message parameters.
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=3>The retention policy defined for table [TableId], [TableName] applied by the UserSecurityId [UserSecurityId]</td>
+            <td rowspan=3>The retention policy defined for table [TableId], [TableName] was applied by the UserSecurityId [UserSecurityId]</td>
             <td>TableId</td>
             <td>18</td>
         </tr>
@@ -969,7 +969,7 @@ Events in the table below are emitted with message parameters.
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=2>UserSecurityId [UserSecurityId] set the Status of the job queue entry [JobQueueEntryId] to Ready</td>
+            <td rowspan=2>UserSecurityId [UserSecurityId] set the status of the job queue entry [JobQueueEntryId] to Ready</td>
             <td>UserSecurityId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
@@ -996,7 +996,7 @@ Events in the table below are emitted with message parameters.
 
 ### Configured integration activities
 
-Activities listed in the table below can be audited by filtering to the `Configured integration` event.
+You can audit the activities in the table below by filtering to the `Configured integration` event.
 
 Events in the table below are emitted with custom dimensions.
 <table>
@@ -1085,7 +1085,7 @@ Events in the table below are emitted with message parameters.
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
         <tr>
-            <td rowspan=3>The Web Service record with Object Type [ObjectType], Service Name [ServiceName] has been created by UserSecurityId [UserSecurityId]</td>
+            <td rowspan=3>The web service record with Object Type [ObjectType], Service Name [ServiceName] has been created by UserSecurityId [UserSecurityId]</td>
             <td>ObjectType</td>
             <td>Page</td>
         </tr>
@@ -1219,7 +1219,7 @@ Events in the table below are emitted with message parameters.
 
 ### Configured Copilot activities
 
-Activities listed in the table below can be audited by filtering to the `Configured Copilot` event.
+You can audit the activities in the table below by filtering to the `Configured Copilot` event.
 
 <table>
     <thead>
@@ -1248,11 +1248,12 @@ Activities listed in the table below can be audited by filtering to the `Configu
 
 
 ### Configured cloud migration activities
+
 Coming soon.
 
 ### Administered report activities
 
-Activities listed in the table below can be audited by filtering to the `Administered report` event.
+You can audit the activities in the table below by filtering to the `Administered report` event.
 
 <table>
     <thead>
@@ -1324,3 +1325,9 @@ Activities listed in the table below can be audited by filtering to the `Adminis
         </tr>
     </tbody>
 </table>
+
+## See also
+
+[Auditing in Business Central](auditing-overview.md)  
+[Auditing changes](/dynamics365/business-central/across-log-changes)  
+[Security Auditing in Business Central](../security/security-auditing.md)  
