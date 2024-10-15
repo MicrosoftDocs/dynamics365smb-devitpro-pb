@@ -80,7 +80,7 @@ Returns a wrapped array of time zones.
 }
 ```
 
-## Put Update Settings
+## Set Update Settings
 
 Sets the update window start and end times.
 
@@ -109,13 +109,9 @@ Example with wall-time + timezone parameter set (supported only by API v2.13 and
 
 ```
 {
-
   "preferredStartTime": string, // Start of environment update window,
-
   "preferredEndTime": string, // End of environment update window
-
   "timeZoneId": string // Windows time zone identifier
-
 }
 ```
 
@@ -156,7 +152,7 @@ Returns the updated settings
 `ScheduledUpgradeConstraintViolation` - the update window conflicts with the current update date that's set for the environment. Either the update would occur outside the allowed update date range or, if the update date is today, the update window is in the past. Adjust the update window or change the update date.
 
 
-## Put AppInsights key
+## Set Application Insights key
 
 Sets the connection string or instrumentation key an environment uses for Azure Application Insights resource, which you can use to gather telemetry. For information about Application Insights and the connection string/instrumentation key, go to [Enable Environment Telemetry](telemetry-enable-application-insights.md#appinsights).
 
@@ -298,11 +294,11 @@ GET /admin/v2.22/applications/{applicationFamily}/environments/{environmentName}
 ```
 {
   "status": "Disabled | AllowAllPartnerTenants | AllowSelectedPartnerTenants",
-  "allowedPartnerTenantIds": ["guid1", "guid"2, ...] //Only if status is "AllowSelectedPartnerTenants"
+  "allowedPartnerTenantIds": ["guid1", "guid"2, ...] // Only if status is "AllowSelectedPartnerTenants"
 }
 ```
 
-## Update partner access settings
+## Set partner access settings
 
 **INTRODUCED IN:** API version 2.22
 
@@ -325,7 +321,7 @@ PUT /admin/v2.22/applications/{applicationFamily}/environments/{environmentName}
 ```
 {
   "status": "Disabled | AllowAllPartnerTenants | AllowSelectedPartnerTenants",
-  "allowedPartnerTenantIds": ["guid1", "guid2", ...] //Only if status is "AllowSelectedPartnerTenants"
+  "allowedPartnerTenantIds": ["guid1", "guid2", ...] // Only if status is "AllowSelectedPartnerTenants"
 }
 ```
 
