@@ -47,7 +47,7 @@ Examples:
 * OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
 <!--[BusinessEvent_01]-->
 ```AL
-**codeunit 1535 "Approvals Mgmt."**
+codeunit 1535 "Approvals Mgmt."
 	[IntegrationEvent(false, false)]
 	local procedure OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry")
 	begin
@@ -91,7 +91,7 @@ Examples of high-quality events are:
 
 <!--[OnBeforeAfterOperationEvents_01]-->
 ```AL
-**codeunit 80 "Sales-Post"**
+codeunit 80 "Sales-Post"
     [IntegrationEvent(false, false)]
     local procedure OnAfterPostSalesDoc(var SalesHeader: Record "Sales Header"; var GenJnlPostLine: Codeunit "Gen. Jnl.-Post Line"; SalesShptHdrNo: Code[20]; RetRcpHdrNo: Code[20]; SalesInvHdrNo: Code[20]; SalesCrMemoHdrNo: Code[20]; CommitIsSuppressed: Boolean; InvtPickPutaway: Boolean; var CustLedgerEntry: Record "Cust. Ledger Entry"; WhseShip: Boolean; WhseReceiv: Boolean; PreviewMode: Boolean)
     begin
@@ -112,7 +112,7 @@ Examples of high-quality events are:
         OnAfterPostSalesDoc(SalesHeader2, GenJnlPostLine, SalesShptHeader."No.", ReturnRcptHeader."No.", SalesInvHeader."No.", SalesCrMemoHeader."No.", SuppressCommit, InvtPickPutaway, CustLedgEntry, WhseShip, WhseReceive, PreviewMode);
 ```
 
-#### Before/After Procedure
+#### Before or after a procedure
 
 **Medium Value** - We often use these events to provide more processing before or after a specific method is called. 
 
@@ -120,7 +120,7 @@ These events are medium quality because they're connected to the specific proced
 
 <!--[OnBeforeAfterProcedureEvents_01]-->
 ```AL
-**table 900 "Assembly Header"**
+table 900 "Assembly Header"
     [IntegrationEvent(false, false)]
     local procedure OnAfterGetSKU(AssemblyHeader: Record "Assembly Header"; var Result: Boolean)
     begin
@@ -146,7 +146,7 @@ These events are medium quality because they're connected to the specific proced
     end;
 ```
 
-#### Before/After specific line
+#### Before or after a specific line
 
 **Low Value** - A valid use could be before we insert or modify a line to update specific fields. Otherwise, avoid them because the point to a specific line of code. They were needed before because the Hook pattern was used as a default extensibility.
 
@@ -156,7 +156,7 @@ Example of valid usage:
 
 <!--"images/OnBeforeAfterLineEvents_01.png"-->
 ```AL
-**codeunit 5056 "CustCont-Update"**
+codeunit 5056 "CustCont-Update"
     [IntegrationEvent(false, false)]
     local procedure OnInsertNewContactOnBeforeContBusRelInsert(var ContactBusinessRelation: Record "Contact Business Relation"; Contact: Record Contact; Customer: Record Customer)
     begin
@@ -180,7 +180,7 @@ Example of a lower quality usage, because they could be grouped into a single ev
 
 <!--"images/OnBeforeAfterLineEvents_bad_01.png" alt="OnBeforeAfterLineEvents_bad_01"-->
 ```AL
-**codeunit 12 "Gen. Jnl.-Post Line"**	
+codeunit 12 "Gen. Jnl.-Post Line"	
     local procedure CalcPmtDisc(var NewCVLedgEntryBuf: Record "CV Ledger Entry Buffer"; var OldCVLedgEntryBuf: Record "CV Ledger Entry Buffer"; var OldCVLedgEntryBuf2: Record "CV Ledger Entry Buffer"; var DtldCVLedgEntryBuf: Record "Detailed CV Ledg. Entry Buffer"; GenJnlLine: Record "Gen. Journal Line"; PmtTolAmtToBeApplied: Decimal; ApplnRoundingPrecision: Decimal; NextTransactionNo: Integer; FirstNewVATEntryNo: Integer)
     var
         PmtDisc: Decimal;
@@ -200,7 +200,7 @@ Example of a lower quality usage, because they could be grouped into a single ev
 or
 <!--"images/OnBeforeAfterLineEvents_bad_02.png" alt="OnBeforeAfterLineEvents_bad_02"-->
 ```AL
-**table 900 "Assembly Header"**
+table 900 "Assembly Header"
 	field(12; "Variant Code"; Code[10])
 	{
 		Caption = 'Variant Code';
@@ -231,7 +231,7 @@ Use before events as early in the code as possible. We must avoid any risk of pa
 
 <!--[VerifyEvents_01]-->
 ```AL
-**codeunit 370 "Bank Acc. Reconciliation Post"**
+codeunit 370 "Bank Acc. Reconciliation Post"
     [Scope('OnPrem')]
     [CommitBehavior(CommitBehavior::Ignore)]
     procedure RunPreview(var BankAccReconciliation: Record "Bank Acc. Reconciliation"): Boolean
@@ -296,7 +296,7 @@ Events are better than `Codeunit.Run` because they allow multiple subscribers. R
 
 <!--[IsolatedEvents_01]-->
 ```AL
-**codeunit 6759 "Create Reminders Action Job"**
+codeunit 6759 "Create Reminders Action Job"
     [IntegrationEvent(false, false, true)]
     local procedure OnCreateReminderSafe(var Customer: Record Customer; var CustLedgEntry: Record "Cust. Ledger Entry"; var ReminderHeader: Record "Reminder Header"; OverdueEntriesOnly: Boolean; IncludeEntriesOnHold: Boolean; var FeeCustLedgEntryLine: Record "Cust. Ledger Entry"; var Success: Boolean)
     begin
@@ -318,7 +318,7 @@ Events are better than `Codeunit.Run` because they allow multiple subscribers. R
     end;
 ```
 ```AL
-**codeunit 6761 "Create Aut. Event Handler"**
+codeunit 6761 "Create Aut. Event Handler"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Create Reminders Action Job", 'OnCreateReminderSafe', '', false, false)]
     local procedure CreateReminderSafeHandler(var Customer: Record Customer; var CustLedgEntry: Record "Cust. Ledger Entry"; var ReminderHeader: Record "Reminder Header"; OverdueEntriesOnly: Boolean; IncludeEntriesOnHold: Boolean; var FeeCustLedgEntryLine: Record "Cust. Ledger Entry"; var Success: Boolean)
     begin
@@ -344,7 +344,7 @@ Then, early in the action, you can implement a manually bound subscriber that he
 
 <!--[SwitchEvents_01]-->
 ```AL
-**xmlport 1220 "Data Exch. Import - CSV"**
+xmlport 1220 "Data Exch. Import - CSV"
     [IntegrationEvent(false, false)]
     local procedure OnNoLinesFoundSetErrorMessage(var ErrorMessage: Text);
     begin
@@ -362,7 +362,7 @@ Then, early in the action, you can implement a manually bound subscriber that he
     end;
 ```
 ```AL
-**table 273 "Bank Acc. Reconciliation"**
+table 273 "Bank Acc. Reconciliation"
 	procedure ImportBankStatement()
     var
         DataExch: Record "Data Exch.";
@@ -381,7 +381,7 @@ Then, early in the action, you can implement a manually bound subscriber that he
 
 <!--[SwitchEvents_02]-->
 ```AL
-**codeunit 1248 "Process Bank Acc. Rec Lines"**	
+codeunit 1248 "Process Bank Acc. Rec Lines"
 	[EventSubscriber(ObjectType::XmlPort, XmlPort::"Data Exch. Import - CSV", 'OnNoLinesFoundSetErrorMessage', '', false, false)]
     local procedure HandleOnNoLinesFoundSetErrorMessage(var ErrorMessage: Text);
     begin
@@ -397,7 +397,7 @@ The signature expects multiple subscribers, so there can be multiple extensions 
 
 <!--[SkipEvents_01]-->
 ```AL
-**table 36 "Sales Header"**	
+table 36 "Sales Header"	
     [IntegrationEvent(false, false)]
     local procedure OnAfterCopySellToCustomerAddressFieldsFromCustomer(var SalesHeader: Record "Sales Header"; SellToCustomer: Record Customer; CurrentFieldNo: Integer; var SkipBillToContact: Boolean; var SkipSellToContact: Boolean)
     begin
@@ -422,9 +422,9 @@ or
 
 <!--[SkipEvents_03]-->
 ```AL
-**codeunit 5600 "FA Insert Ledger Entry"**
+codeunit 5600 "FA Insert Ledger Entry"
 	[IntegrationEvent(false, false)]
-    local procedure OnInsertReverseEntryOnBeforeInsertMaintenanceLedgerEntryBuffer(var MaintenanceKedgerEntry: Record "Maintenance Ledger Entry"; var SkipInsertOfMaintenanceLedgerEntry: Boolean)
+    local procedure OnInsertReverseEntryOnBeforeInsertMaintenanceLedgerEntryBuffer(var MaintenanceLedgerEntry: Record "Maintenance Ledger Entry"; var SkipInsertOfMaintenanceLedgerEntry: Boolean)
     begin
     end;
 	
@@ -446,7 +446,7 @@ or
 
 <!--[HandledEvents_01]-->
 ```AL
-**page 42 "Sales Order"**	
+page 42 "Sales Order"
     [IntegrationEvent(false, false)]
     local procedure OnBeforeStatisticsAction(var SalesHeader: Record "Sales Header"; var Handled: Boolean)
     begin
@@ -474,7 +474,6 @@ or
 		}	
 ```
 ```AL		
-	**usage exmple**
 	[EventSubscriber(ObjectType: : Page, Page::"Sales Order", 'OnBeforeStatisticsAction', '', false, false)]
 	local procedure CheckReleased(Sa1esHeader: Record "Sales Header"; var Handled: Boolean)
 	begin
@@ -510,7 +509,7 @@ We can get better designs with enums and interfaces.
 
 <!--[DiscoveryEvents_01]-->
 ```AL
-**table 1060 "Payment Service Setup"**
+table 1060 "Payment Service Setup"
     [IntegrationEvent(false, false)]
     procedure OnRegisterPaymentServiceProviders(var PaymentServiceSetup: Record "Payment Service Setup")
     begin
