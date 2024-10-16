@@ -428,8 +428,6 @@ table 36 "Sales Header"
 }
 ```
 
-or
-
 ```AL
     local procedure CopySellToCustomerAddressFieldsFromCustomer(var SellToCustomer: Record Customer)
     var
@@ -454,7 +452,10 @@ codeunit 5600 "FA Insert Ledger Entry"
     local procedure OnInsertReverseEntryOnBeforeInsertMaintenanceLedgerEntryBuffer(var MaintenanceLedgerEntry: Record "Maintenance Ledger Entry"; var SkipInsertOfMaintenanceLedgerEntry: Boolean)
     begin
     end;
+}
+```
 
+```AL
     procedure InsertReverseEntry(NewGLEntryNo: Integer; FAEntryType: Option " ","Fixed Asset",Maintenance; FAEntryNo: Integer; var NewFAEntryNo: Integer; TransactionNo: Integer)
     ...
         OnInsertReverseEntryOnBeforeInsertMaintenanceLedgerEntryBuffer(MaintenanceLedgEntry3, SkipInsertOfMaintenanceLedgerEntry);
@@ -462,7 +463,6 @@ codeunit 5600 "FA Insert Ledger Entry"
             TempMaintenanceLedgEntry := MaintenanceLedgEntry3;
             TempMaintenanceLedgEntry.Insert()
         end;
-}
 ```
 
 ### Handled events
