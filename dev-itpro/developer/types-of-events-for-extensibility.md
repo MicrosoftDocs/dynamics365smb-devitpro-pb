@@ -242,7 +242,7 @@ Use before events as early in the code as possible. We must avoid any risk of pa
 ```AL
 codeunit 370 "Bank Acc. Reconciliation Post"
 {
-[IntegrationEvent(false, false)]
+    [IntegrationEvent(false, false)]
     local procedure OnBeforeFinalizePost(var BankAccReconciliation: Record "Bank Acc. Reconciliation")
     begin
     end;
@@ -297,7 +297,6 @@ codeunit 370 "Bank Acc. Reconciliation Post"
 **Medium Value** - Use isolated events to allow handling errors that won't interrupt the code execution.
 
 Multiple extensions can subscribe and do their processing. An error from one extension won't interrupt the transaction.
-
 Isolated events require a commit before invoking the code, and will commit before invoking the next subscriber. Therefore, they require a detailed review.
 
 An alternative is to invoke `if Codeunit.Run()` and then handle things in isolation.
