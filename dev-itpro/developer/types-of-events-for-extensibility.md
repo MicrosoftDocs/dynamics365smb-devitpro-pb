@@ -48,10 +48,12 @@ Examples:
 <!--[BusinessEvent_01]-->
 ```AL
 codeunit 1535 "Approvals Mgmt."
-	[IntegrationEvent(false, false)]
-	local procedure OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry")
-	begin
-	end;
+{
+    [IntegrationEvent(false, false)]
+    local procedure OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry")
+    begin
+    end;
+}
 ```
 ```AL	
     local procedure ApproveSelectedApprovalRequest(var ApprovalEntry: Record "Approval Entry")
@@ -92,10 +94,12 @@ Examples of high-quality events are:
 <!--[OnBeforeAfterOperationEvents_01]-->
 ```AL
 codeunit 80 "Sales-Post"
+{
     [IntegrationEvent(false, false)]
     local procedure OnAfterPostSalesDoc(var SalesHeader: Record "Sales Header"; var GenJnlPostLine: Codeunit "Gen. Jnl.-Post Line"; SalesShptHdrNo: Code[20]; RetRcpHdrNo: Code[20]; SalesInvHdrNo: Code[20]; SalesCrMemoHdrNo: Code[20]; CommitIsSuppressed: Boolean; InvtPickPutaway: Boolean; var CustLedgerEntry: Record "Cust. Ledger Entry"; WhseShip: Boolean; WhseReceiv: Boolean; PreviewMode: Boolean)
     begin
     end;
+}
 ```
 ```AL	
 	internal procedure RunWithCheck(var SalesHeader2: Record "Sales Header")
@@ -121,10 +125,12 @@ These events are medium quality because they're connected to the specific proced
 <!--[OnBeforeAfterProcedureEvents_01]-->
 ```AL
 table 900 "Assembly Header"
+{
     [IntegrationEvent(false, false)]
     local procedure OnAfterGetSKU(AssemblyHeader: Record "Assembly Header"; var Result: Boolean)
     begin
     end;
+}
 ```
 ```AL	
     local procedure GetSKU()
@@ -152,22 +158,26 @@ table 900 "Assembly Header"
 
 We should carefully consider whether we need Hook events before we introduce them. Hook events have little reuse between extensions, and can be fragile to code changes.
 
-Example of valid usage: 
+Example of valid use.
 
-<!--"images/OnBeforeAfterLineEvents_01.png"-->
 ```AL
 codeunit 5056 "CustCont-Update"
+{
     [IntegrationEvent(false, false)]
     local procedure OnInsertNewContactOnBeforeContBusRelInsert(var ContactBusinessRelation: Record "Contact Business Relation"; Contact: Record Contact; Customer: Record Customer)
     begin
     end;
+}
 ```
-```AL	
-	procedure InsertNewContact(var Cust: Record Customer; LocalCall: Boolean)
-	var
+
+Example of a lower quality use where it's added for something very specific, which makes it hard to maintain.
+
+```AL
+    procedure InsertNewContact(var Cust: Record Customer; LocalCall: Boolean)
+var
         ContactBusinessRelation: Record "Contact Business Relation";
-		...
-	    ContactBusinessRelation."Contact No." := Contact."No.";
+        ...
+        ContactBusinessRelation."Contact No." := Contact."No.";
         ContactBusinessRelation."Business Relation Code" := MarketingSetup."Bus. Rel. Code for Customers";
         ContactBusinessRelation."Link to Table" := ContactBusinessRelation."Link to Table"::Customer;
         ContactBusinessRelation."No." := Cust."No.";
@@ -178,9 +188,8 @@ codeunit 5056 "CustCont-Update"
 
 Example of a lower quality usage, because they could be grouped into a single event, rather than several:
 
-<!--"images/OnBeforeAfterLineEvents_bad_01.png" alt="OnBeforeAfterLineEvents_bad_01"-->
 ```AL
-codeunit 12 "Gen. Jnl.-Post Line"	
+codeunit 12 "Gen. Jnl.-Post Line"
     local procedure CalcPmtDisc(var NewCVLedgEntryBuf: Record "CV Ledger Entry Buffer"; var OldCVLedgEntryBuf: Record "CV Ledger Entry Buffer"; var OldCVLedgEntryBuf2: Record "CV Ledger Entry Buffer"; var DtldCVLedgEntryBuf: Record "Detailed CV Ledg. Entry Buffer"; GenJnlLine: Record "Gen. Journal Line"; PmtTolAmtToBeApplied: Decimal; ApplnRoundingPrecision: Decimal; NextTransactionNo: Integer; FirstNewVATEntryNo: Integer)
     var
         PmtDisc: Decimal;
@@ -198,26 +207,26 @@ codeunit 12 "Gen. Jnl.-Post Line"
 ```
 
 or
-<!--"images/OnBeforeAfterLineEvents_bad_02.png" alt="OnBeforeAfterLineEvents_bad_02"-->
+
 ```AL
 table 900 "Assembly Header"
-	field(12; "Variant Code"; Code[10])
-	{
-		Caption = 'Variant Code';
-		TableRelation = "Item Variant".Code where("Item No." = field("Item No."), Code = field("Variant Code"));
+    field(12; "Variant Code"; Code[10])
+    {
+        Caption = 'Variant Code';
+        TableRelation = "Item Variant".Code where("Item No." = field("Item No."), Code = field("Variant Code"));
 
-		trigger OnValidate()
-		var
-			ItemVariant: Record "Item Variant";
-			IsHandled: Boolean;
-		begin
-			CheckIsNotAsmToOrder();
-			TestStatusOpen();
-			...
-			IsHandled := false;
-			OnValidateVariantCodeOnBeforeValidateDates(Rec, xRec, IsHandled);
-			if not IsHandled then
-				ValidateDates(FieldNo("Due Date"), true);
+        trigger OnValidate()
+        var
+            ItemVariant: Record "Item Variant";
+            IsHandled: Boolean;
+        begin
+            CheckIsNotAsmToOrder();
+            TestStatusOpen();
+            ...
+            IsHandled := false;
+            OnValidateVariantCodeOnBeforeValidateDates(Rec, xRec, IsHandled);
+            if not IsHandled then
+                ValidateDates(FieldNo("Due Date"), true);
    }
 ```
 
@@ -229,11 +238,11 @@ Verify events shouldn't create transactions. If the operation should be rolled b
 
 Use before events as early in the code as possible. We must avoid any risk of partial commits when we introduce verify events.
 
-<!--[VerifyEvents_01]-->
 ```AL
 codeunit 370 "Bank Acc. Reconciliation Post"
+{
     [Scope('OnPrem')]
-    [CommitBehavior(CommitBehavior::Ignore)]
+    [CommitBehavior(CommitBehavior::Ignore)] //Ignore commit
     procedure RunPreview(var BankAccReconciliation: Record "Bank Acc. Reconciliation"): Boolean
     begin
         PreviewMode := true;
@@ -242,16 +251,18 @@ codeunit 370 "Bank Acc. Reconciliation Post"
         FinalizePost(BankAccReconciliation);
         exit(true);
     end;
+}
 ```
-```AL	
-	[IntegrationEvent(false, false)]
+
+```AL
+    [IntegrationEvent(false, false)]
     local procedure OnBeforeFinalizePost(var BankAccReconciliation: Record "Bank Acc. Reconciliation")
     begin
     end;
 
     local procedure FinalizePost(BankAccRecon: Record "Bank Acc. Reconciliation")
     var
-		...
+        ...
     begin
         if PreviewMode then
             exit;
@@ -294,15 +305,17 @@ An alternative is to invoke `if Codeunit.Run()` and then handle things in isolat
 
 Events are better than `Codeunit.Run` because they allow multiple subscribers. Running a codeunit only lets one implementation run at a time.
 
-<!--[IsolatedEvents_01]-->
 ```AL
 codeunit 6759 "Create Reminders Action Job"
+{
     [IntegrationEvent(false, false, true)]
     local procedure OnCreateReminderSafe(var Customer: Record Customer; var CustLedgEntry: Record "Cust. Ledger Entry"; var ReminderHeader: Record "Reminder Header"; OverdueEntriesOnly: Boolean; IncludeEntriesOnHold: Boolean; var FeeCustLedgEntryLine: Record "Cust. Ledger Entry"; var Success: Boolean)
     begin
     end;
+}
 ```
-```AL	
+
+```AL
     local procedure CreateReminderForCustomer(var Customer: Record Customer): Boolean
     var
         Success: Boolean;
@@ -317,6 +330,7 @@ codeunit 6759 "Create Reminders Action Job"
         exit(false);
     end;
 ```
+
 ```AL
 codeunit 6761 "Create Aut. Event Handler"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Create Reminders Action Job", 'OnCreateReminderSafe', '', false, false)]
@@ -325,7 +339,7 @@ codeunit 6761 "Create Aut. Event Handler"
         CreateReminders(Customer, CustLedgEntry, ReminderHeader, OverdueEntriesOnly, IncludeEntriesOnHold, FeeCustLedgEntryLine, Success);
     end;
 
-    [CommitBehavior(CommitBehavior::Ignore)]
+    [CommitBehavior(CommitBehavior::Ignore)] //Ignore commit
     local procedure CreateReminders(var Customer: Record Customer; var CustLedgEntry: Record "Cust. Ledger Entry"; var ReminderHeader: Record "Reminder Header"; OverdueEntriesOnly: Boolean; IncludeEntriesOnHold: Boolean; var FeeCustLedgEntryLine: Record "Cust. Ledger Entry"; var Success: Boolean)
     var
         ReminderMake: Codeunit "Reminder-Make";
@@ -342,14 +356,15 @@ codeunit 6761 "Create Aut. Event Handler"
 
 Then, early in the action, you can implement a manually bound subscriber that helps you change the behavior of that specific call.
 
-<!--[SwitchEvents_01]-->
 ```AL
 xmlport 1220 "Data Exch. Import - CSV"
     [IntegrationEvent(false, false)]
     local procedure OnNoLinesFoundSetErrorMessage(var ErrorMessage: Text);
     begin
     end;
+```
 
+```AL
     trigger OnPostXmlPort()
     var
         ErrorMessage: Text;
@@ -361,9 +376,10 @@ xmlport 1220 "Data Exch. Import - CSV"
         end;
     end;
 ```
+
 ```AL
 table 273 "Bank Acc. Reconciliation"
-	procedure ImportBankStatement()
+    procedure ImportBankStatement()
     var
         DataExch: Record "Data Exch.";
         ProcessBankAccRecLines: Codeunit "Process Bank Acc. Rec Lines";
@@ -371,7 +387,7 @@ table 273 "Bank Acc. Reconciliation"
         CreateBankAccountReconcillation();
         if BankAccountCouldBeUsedForImport() then begin
             DataExch.Init();
-            BindSubscription(ProcessBankAccRecLines);
+            BindSubscription(ProcessBankAccRecLines); //Bind
             ProcessBankAccRecLines.SetBankAccountNo(Rec."Bank Account No.");
             ProcessBankAccRecLines.ImportBankStatement(Rec, DataExch);
             UnBindSubscription(ProcessBankAccRecLines);
@@ -379,10 +395,9 @@ table 273 "Bank Acc. Reconciliation"
     end;
 ```
 
-<!--[SwitchEvents_02]-->
 ```AL
 codeunit 1248 "Process Bank Acc. Rec Lines"
-	[EventSubscriber(ObjectType::XmlPort, XmlPort::"Data Exch. Import - CSV", 'OnNoLinesFoundSetErrorMessage', '', false, false)]
+    [EventSubscriber(ObjectType::XmlPort, XmlPort::"Data Exch. Import - CSV", 'OnNoLinesFoundSetErrorMessage', '', false, false)]
     local procedure HandleOnNoLinesFoundSetErrorMessage(var ErrorMessage: Text);
     begin
         InvalidFileFormatError(ErrorMessage);
@@ -395,16 +410,18 @@ codeunit 1248 "Process Bank Acc. Rec Lines"
 
 The signature expects multiple subscribers, so there can be multiple extensions that handle the event.
 
-<!--[SkipEvents_01]-->
 ```AL
-table 36 "Sales Header"	
+table 36 "Sales Header"
     [IntegrationEvent(false, false)]
     local procedure OnAfterCopySellToCustomerAddressFieldsFromCustomer(var SalesHeader: Record "Sales Header"; SellToCustomer: Record Customer; CurrentFieldNo: Integer; var SkipBillToContact: Boolean; var SkipSellToContact: Boolean)
     begin
     end;
 ```
-```AL	
-	local procedure CopySellToCustomerAddressFieldsFromCustomer(var SellToCustomer: Record Customer)
+
+or
+
+```AL
+    local procedure CopySellToCustomerAddressFieldsFromCustomer(var SellToCustomer: Record Customer)
     var
         IsHandled: Boolean;
     begin
@@ -420,21 +437,22 @@ table 36 "Sales Header"
 
 or
 
-<!--[SkipEvents_03]-->
 ```AL
 codeunit 5600 "FA Insert Ledger Entry"
-	[IntegrationEvent(false, false)]
+{
+    [IntegrationEvent(false, false)]
     local procedure OnInsertReverseEntryOnBeforeInsertMaintenanceLedgerEntryBuffer(var MaintenanceLedgerEntry: Record "Maintenance Ledger Entry"; var SkipInsertOfMaintenanceLedgerEntry: Boolean)
     begin
     end;
-	
+
     procedure InsertReverseEntry(NewGLEntryNo: Integer; FAEntryType: Option " ","Fixed Asset",Maintenance; FAEntryNo: Integer; var NewFAEntryNo: Integer; TransactionNo: Integer)
     ...
-		OnInsertReverseEntryOnBeforeInsertMaintenanceLedgerEntryBuffer(MaintenanceLedgEntry3, SkipInsertOfMaintenanceLedgerEntry);
-		if not SkipInsertOfMaintenanceLedgerEntry then begin
-			TempMaintenanceLedgEntry := MaintenanceLedgEntry3;
-			TempMaintenanceLedgEntry.Insert()
-		end;
+        OnInsertReverseEntryOnBeforeInsertMaintenanceLedgerEntryBuffer(MaintenanceLedgEntry3, SkipInsertOfMaintenanceLedgerEntry);
+        if not SkipInsertOfMaintenanceLedgerEntry then begin
+            TempMaintenanceLedgEntry := MaintenanceLedgEntry3;
+            TempMaintenanceLedgEntry.Insert()
+        end;
+}
 ```
 
 ### Handled events
@@ -444,56 +462,55 @@ codeunit 5600 "FA Insert Ledger Entry"
 > [!NOTE]
 > Subscribers must exit if the event is already handled, thus these events don't scale. Consider using skip events.
 
-<!--[HandledEvents_01]-->
 ```AL
 page 42 "Sales Order"
+{
     [IntegrationEvent(false, false)]
     local procedure OnBeforeStatisticsAction(var SalesHeader: Record "Sales Header"; var Handled: Boolean)
     begin
-    end;	
-```
-```AL	
-	action(Statistics)
-		{
-			ApplicationArea = Basic, Suite;
-			Caption = 'Statistics';
-			...
-
-			trigger OnAction()
-			var
-				Handled: Boolean;
-			begin
-				Handled := false;
-				OnBeforeStatisticsAction(Rec, Handled);
-				if Handled then
-					exit;
-
-				Rec.OpenSalesOrderStatistics();
-				CurrPage.SalesLines.Page.ForceTotalsCalculation();
-			end;
-		}	
-```
-```AL		
-	[EventSubscriber(ObjectType: : Page, Page::"Sales Order", 'OnBeforeStatisticsAction', '', false, false)]
-	local procedure CheckReleased(Sa1esHeader: Record "Sales Header"; var Handled: Boolean)
-	begin
-		if Handled then
-			exit;
-			
-		with SalesHeader do begin
-			if Status = Status::Re1eased then		
-				exit;
-				
-			Handled := not Confirm(ConfShowStatsCaption);
-		end;
-	end;
+    end;
+}
 ```
 
-**Advantage**
+```AL
+    action(Statistics)
+        {
+            ApplicationArea = Basic, Suite;
+            Caption = 'Statistics';
+            ...
 
-* Easy to implement
+            trigger OnAction()
+            var
+                Handled: Boolean;
+            begin
+                Handled := false;
+                OnBeforeStatisticsAction(Rec, Handled);
+                if Handled then
+                    exit;
 
-**Disadvantages**
+                Rec.OpenSalesOrderStatistics();
+                CurrPage.SalesLines.Page.ForceTotalsCalculation();
+            end;
+        }
+```
+
+```AL
+    [EventSubscriber(ObjectType: : Page, Page::"Sales Order", 'OnBeforeStatisticsAction', '', false, false)]
+    local procedure CheckReleased(Sa1esHeader: Record "Sales Header"; var Handled: Boolean)
+    begin
+        if Handled then //Check is already handled
+            exit;
+
+        with SalesHeader do begin
+            if Status = Status::Re1eased then
+                exit;
+
+            Handled := not Confirm(ConfShowStatsCaption);
+        end;
+    end;
+```
+
+This approach offers the advantage that it's easy to implement. However, it also has several disadvantages:
 
 * Only one subscriber can process the request. If there are multiple subscribers, by contract the first subscriber should handle the event.
 * We need to be careful about the events raised by the existing code. The question is whether to raise them. Introducing a handled event can break these events.
@@ -507,15 +524,17 @@ The event was raised with a temporary table, and all subscribers would fill in t
 
 We can get better designs with enums and interfaces.
 
-<!--[DiscoveryEvents_01]-->
 ```AL
 table 1060 "Payment Service Setup"
+{
     [IntegrationEvent(false, false)]
     procedure OnRegisterPaymentServiceProviders(var PaymentServiceSetup: Record "Payment Service Setup")
     begin
     end;
+}
 ```
-```AL	
+
+```AL
     procedure NewPaymentService(): Boolean
     var
         TempPaymentServiceSetup: Record "Payment Service Setup" temporary;
