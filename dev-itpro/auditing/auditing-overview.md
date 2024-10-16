@@ -17,3 +17,7 @@ An effective business solution must incorporate comprehensive auditing capabilit
 - [Data auditing](/dynamics365/business-central/across-log-changes)  
 - [Security auditing](../security/security-auditing.md)  
 - [Data classification](/dynamics365/business-central/admin-classifying-data-sensitivity)  
+
+## See also
+
+[Auditing in Purview](audit-events-in-purview.md)
