@@ -45,7 +45,7 @@ Examples:
 
 * OnRejectApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
 * OnApproveApprovalRequest(var ApprovalEntry: Record "Approval Entry"),
-<!--[BusinessEvent_01]-->
+
 ```AL
 codeunit 1535 "Approvals Mgmt."
 {
@@ -55,7 +55,8 @@ codeunit 1535 "Approvals Mgmt."
     end;
 }
 ```
-```AL	
+
+```AL
     local procedure ApproveSelectedApprovalRequest(var ApprovalEntry: Record "Approval Entry")
     var
         IsHandled: Boolean;
@@ -91,7 +92,6 @@ Examples of high-quality events are:
 * `OnBeforeSendEmail`
 * `OnAfterEmailSent`
 
-<!--[OnBeforeAfterOperationEvents_01]-->
 ```AL
 codeunit 80 "Sales-Post"
 {
@@ -101,13 +101,14 @@ codeunit 80 "Sales-Post"
     end;
 }
 ```
-```AL	
-	internal procedure RunWithCheck(var SalesHeader2: Record "Sales Header")
+
+```AL
+    internal procedure RunWithCheck(var SalesHeader2: Record "Sales Header")
     var
         SalesHeader: Record "Sales Header";
         CustLedgEntry: Record "Cust. Ledger Entry";	
-		...
-	    if not (InvtPickPutaway or SuppressCommit or PreviewMode) then begin
+        ...
+        if not (InvtPickPutaway or SuppressCommit or PreviewMode) then begin
             Commit();
             UpdateAnalysisView.UpdateAll(0, true);
             UpdateItemAnalysisView.UpdateAll(0, true);
@@ -122,7 +123,6 @@ codeunit 80 "Sales-Post"
 
 These events are medium quality because they're connected to the specific procedure, but it's unclear how to handle them if the procedure is removed or changed.
 
-<!--[OnBeforeAfterProcedureEvents_01]-->
 ```AL
 table 900 "Assembly Header"
 {
@@ -132,7 +132,8 @@ table 900 "Assembly Header"
     end;
 }
 ```
-```AL	
+
+```AL
     local procedure GetSKU()
     var
         SKU: Record "Stockkeeping Unit";
@@ -170,11 +171,9 @@ codeunit 5056 "CustCont-Update"
 }
 ```
 
-Example of a lower quality use where it's added for something very specific, which makes it hard to maintain.
-
 ```AL
     procedure InsertNewContact(var Cust: Record Customer; LocalCall: Boolean)
-var
+    var
         ContactBusinessRelation: Record "Contact Business Relation";
         ...
         ContactBusinessRelation."Contact No." := Contact."No.";
@@ -190,6 +189,7 @@ Example of a lower quality usage, because they could be grouped into a single ev
 
 ```AL
 codeunit 12 "Gen. Jnl.-Post Line"
+{
     local procedure CalcPmtDisc(var NewCVLedgEntryBuf: Record "CV Ledger Entry Buffer"; var OldCVLedgEntryBuf: Record "CV Ledger Entry Buffer"; var OldCVLedgEntryBuf2: Record "CV Ledger Entry Buffer"; var DtldCVLedgEntryBuf: Record "Detailed CV Ledg. Entry Buffer"; GenJnlLine: Record "Gen. Journal Line"; PmtTolAmtToBeApplied: Decimal; ApplnRoundingPrecision: Decimal; NextTransactionNo: Integer; FirstNewVATEntryNo: Integer)
     var
         PmtDisc: Decimal;
@@ -204,9 +204,10 @@ codeunit 12 "Gen. Jnl.-Post Line"
 
         ToleratedPaymentExceedsLiability := Abs(NewCVLedgEntryBuf."Remaining Amount" + PmtTolAmtToBeApplied) >= MinimalPossibleLiability;
         OnAfterCalcToleratedPaymentExceedsLiability(NewCVLedgEntryBuf, OldCVLedgEntryBuf, OldCVLedgEntryBuf2, MinimalPossibleLiability, ToleratedPaymentExceedsLiability, PmtTolAmtToBeApplied);
+}
 ```
 
-or
+Example of a lower quality use where it's added for something very specific, which makes it hard to maintain.
 
 ```AL
 table 900 "Assembly Header"
@@ -241,7 +242,15 @@ Use before events as early in the code as possible. We must avoid any risk of pa
 ```AL
 codeunit 370 "Bank Acc. Reconciliation Post"
 {
-    [Scope('OnPrem')]
+[IntegrationEvent(false, false)]
+    local procedure OnBeforeFinalizePost(var BankAccReconciliation: Record "Bank Acc. Reconciliation")
+    begin
+    end;
+}
+```
+
+```AL
+[Scope('OnPrem')]
     [CommitBehavior(CommitBehavior::Ignore)] //Ignore commit
     procedure RunPreview(var BankAccReconciliation: Record "Bank Acc. Reconciliation"): Boolean
     begin
@@ -250,14 +259,6 @@ codeunit 370 "Bank Acc. Reconciliation Post"
         Post(BankAccReconciliation);
         FinalizePost(BankAccReconciliation);
         exit(true);
-    end;
-}
-```
-
-```AL
-    [IntegrationEvent(false, false)]
-    local procedure OnBeforeFinalizePost(var BankAccReconciliation: Record "Bank Acc. Reconciliation")
-    begin
     end;
 
     local procedure FinalizePost(BankAccRecon: Record "Bank Acc. Reconciliation")
@@ -333,6 +334,7 @@ codeunit 6759 "Create Reminders Action Job"
 
 ```AL
 codeunit 6761 "Create Aut. Event Handler"
+{
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Create Reminders Action Job", 'OnCreateReminderSafe', '', false, false)]
     local procedure CreateReminderSafeHandler(var Customer: Record Customer; var CustLedgEntry: Record "Cust. Ledger Entry"; var ReminderHeader: Record "Reminder Header"; OverdueEntriesOnly: Boolean; IncludeEntriesOnHold: Boolean; var FeeCustLedgEntryLine: Record "Cust. Ledger Entry"; var Success: Boolean)
     begin
@@ -348,6 +350,7 @@ codeunit 6761 "Create Aut. Event Handler"
         ReminderMake.Code();
         Success := true;
     end;
+}
 ```
 
 ### Switch events (manually bound events)
@@ -358,10 +361,12 @@ Then, early in the action, you can implement a manually bound subscriber that he
 
 ```AL
 xmlport 1220 "Data Exch. Import - CSV"
+{
     [IntegrationEvent(false, false)]
     local procedure OnNoLinesFoundSetErrorMessage(var ErrorMessage: Text);
     begin
     end;
+}
 ```
 
 ```AL
@@ -379,6 +384,7 @@ xmlport 1220 "Data Exch. Import - CSV"
 
 ```AL
 table 273 "Bank Acc. Reconciliation"
+{
     procedure ImportBankStatement()
     var
         DataExch: Record "Data Exch.";
@@ -393,15 +399,18 @@ table 273 "Bank Acc. Reconciliation"
             UnBindSubscription(ProcessBankAccRecLines);
         end;
     end;
+}
 ```
 
 ```AL
 codeunit 1248 "Process Bank Acc. Rec Lines"
+{
     [EventSubscriber(ObjectType::XmlPort, XmlPort::"Data Exch. Import - CSV", 'OnNoLinesFoundSetErrorMessage', '', false, false)]
     local procedure HandleOnNoLinesFoundSetErrorMessage(var ErrorMessage: Text);
     begin
         InvalidFileFormatError(ErrorMessage);
     end;
+}
 ```
 
 ### OnSkip (operation) events
@@ -412,10 +421,12 @@ The signature expects multiple subscribers, so there can be multiple extensions 
 
 ```AL
 table 36 "Sales Header"
+{
     [IntegrationEvent(false, false)]
     local procedure OnAfterCopySellToCustomerAddressFieldsFromCustomer(var SalesHeader: Record "Sales Header"; SellToCustomer: Record Customer; CurrentFieldNo: Integer; var SkipBillToContact: Boolean; var SkipSellToContact: Boolean)
     begin
     end;
+}
 ```
 
 or
