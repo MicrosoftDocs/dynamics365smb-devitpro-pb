@@ -15,6 +15,7 @@ An effective business solution must incorporate comprehensive auditing capabilit
  The auditing capabilities should also enable you to analyze patterns, detect potential issues, and make informed decisions for your business. The following articles help you understand and improve the auditing capabilities of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 | To... | Read more | 
+| ----- | --------- | 
 | Learn how Business Central emits auditable events to Microsoft Purview to help you effectively respond to security events, forensic investigations, internal investigations, and compliance obligations | [Auditing events in Purview](audit-events-in-purview.md) |
 | See who has access to what | [Authorization assessment](/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions) |
 | Set up auditing on data changes | [Data auditing](/dynamics365/business-central/across-log-changes)|
