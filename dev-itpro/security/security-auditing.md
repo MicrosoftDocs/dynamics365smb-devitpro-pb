@@ -39,7 +39,16 @@ Some of the most important tables tracked include:
 
 For more information, see [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes).
 
+
+## Analyzing the change log
+
+You can use the **Data Analysis** feature to analyze data in the Change Log from the [Change Log Entries](https://businesscentral.dynamics.com/?page=595) page. You don't have to run a report or open another application, such as Excel. The feature provides an interactive and versatile way to calculate, summarize, and examine data. Instead of running reports using options and filters, you can add multiple tabs that represent different tasks or views on the data. Some examples are "Who changed what data, and when," or "Data changes by table/field," or any other view you can imagine. 
+
+For more information, see [Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes#analyze-data-in-the-change-log) 
+
 <!-- change title to auditing data changes -->
+
 ## See Also  
 
-[Security Development Lifecycle](https://www.microsoft.com/sdl)  
+[Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes#analyze-data-in-the-change-log)  
+[Auditing overview](../auditing/auditing-overview.md)   
