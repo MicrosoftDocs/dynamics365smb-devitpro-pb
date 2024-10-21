@@ -449,6 +449,7 @@ Which results in following response:
 3. Use Enumerations.
 4. Make sure to localize your custom API pages:
     - Use `EntityCaption` and `EntitySetCaption` properties
+    - Use captions for fields
     - Use captions for Enums
     - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
 
