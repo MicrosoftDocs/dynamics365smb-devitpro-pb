@@ -4,7 +4,7 @@ description: Get an overview of the signals Business Central emits to Purview.
 author: jobulsin
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 05/21/2024
+ms.date: 10/21/2024
 ms.author: jobulsin
 ---
 
