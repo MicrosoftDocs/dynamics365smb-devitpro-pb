@@ -1364,9 +1364,14 @@
 ### [Service overview](service-overview.md)
 ### [Service scalability](service-scalability.md)
 ### [Service operations](service-operations.md)
+
 ## Auditing
 ### [Auditing overview](auditing/auditing-overview.md)
+### [Auditing data changes](/dynamics365/business-central/across-log-changes)
+### [Security auditing](security/security-auditing.md)
+### [Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes?toc=/dynamics365/business-central/dev-itpro/toc.json#analyze-data-in-the-change-log) 
 ### [Auditing in Purview](auditing/audit-events-in-purview.md)
+
 <!-- begin performance -->
 # Performance
 ## [Performance overview](performance/performance-overview.md)
