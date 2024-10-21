@@ -54,7 +54,7 @@ Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "Dest
 For example, the following command specifies the Microsoft system and base applications and a custom extension named My Extension.
 
 ```
-Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"My Extension", "publisher": "Me"}]'
+Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"My Extension", "publisher": "Me"}]'
 ```
 
 > [!IMPORTANT]
