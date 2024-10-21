@@ -14,31 +14,7 @@ ms.reviewer: solsen
 
 In this article, you learn how to add actions in the UI that users select to start the Copilot feature.
 
-## Add an action that runs the prompt dialog page
-
-This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot feature. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
-
-The following code illustrates how to add an action that opens the prompt dialog page for Copilot feature:  
-
-```al
-action(MyPromptDialogAction)
-{
-    Caption = 'Draft a proposal';
-    Image = Sparkle;
-
-    trigger OnAction()
-    begin
-        Page.RunModal(Page::"My Prompt Dialog");
-    end;
-}
-```
-
-Set the [Image property](properties/devenv-image-property.md) to either `Sparkle` ![Shows the Copilot sparkle icon](media/copilot-sparkle.png)
-or `SparkleFilled` ![Shows the Copilot sparkle filled icon](media/copilot-sparkle-filled.png). These images are recognized across Microsoft products to indicate that the action is associated with Copilot.
-
-In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific Copilot. For example, if there are multiple Copilot actions on a page, you might want to emphasize one Copilot action over the others.  
-
-## Add a prompt action that promotes the Copilot feature
+## Add prompt actions that launch Copilot features
 
 > **Applies to:** [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 (runtime 13) and later.
 
@@ -46,7 +22,15 @@ You use a prompt action to promote your Copilot feature on pages and encourage u
 
 A prompt action is a standard action that appears under the ![Shows the Copilot action icon icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in a page's action bar to give it more prominence than other actions in the UI. On `List` and  `Worksheet` page types, prompt actions can also appear in a floating action bar, as illustrated in the following figure. Users can hide the floating action bar by selecting **Hide** and bring it back by selecting **Show in page**.
 
-:::image type="content" source="media/copilot-prompt-actions-callouts.svg" alt-text="Example of a floating action bar for Copilot feature":::
+A prompt action is a standard action that appears in a highly visible area of the page. Depending on the page type, it could appear in the action bar, at the bottom or top of the page, and even in a floating action bar.
+
+For example, on `List` and  `Worksheet` page types, prompt actions appear under the ![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in the page's action bar and also in a floating action bar as illustrated in the following figure. Users can hide the floating action bar by selecting Hide and bring it back by selecting Show in page.
+
+:::image type="content" source="media/copilot-prompt-actions-callouts.svg" alt-text="Example of a floating action bar for Copilot feature on list page":::
+
+On a `Card` page type, the prompt actions appear in the upper-right corner together with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon as illustrated in the following figure.
+
+:::image type="content" source="media/copilot-prompt-actions-card.svg" alt-text="Example of a floating action bar for Copilot feature on card page":::
 
 ### Create a prompt action
 
@@ -66,6 +50,7 @@ actions
         action(MyPromptAction)
         {
             Caption = 'Draft a proposal';
+            Image = Sparkle;
             RunObject = page "My Prompt Dialog";
         }
     }
@@ -84,8 +69,8 @@ actions
     {
         action(MyPromptAction)
         {
-            ApplicationArea = All;
             Caption = 'Draft a proposal';
+            Image = Sparkle;
             RunObject = page "My Prompt Dialog";
         }
     }
@@ -95,8 +80,13 @@ actions
 
 ### Design guidelines and considerations
 
-- Prompt actions are supported only on the following page types: `Card`, `Document`, `List`, `ListPart`, `ListPlus`, `StandardDialog`, and `Worksheet`.
-- Prompt actions only display if the `RunObject` property is specified.
+- You should set the [Image property](properties/devenv-image-property.md) to either `Sparkle` ![Shows the Copilot sparkle icon](media/copilot-sparkle.png)
+or `SparkleFilled` ![Shows the Copilot sparkle filled icon](media/copilot-sparkle-filled.png).
+
+   These images are recognized across Microsoft products to indicate that the action is associated with Copilot. In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific Copilot. For example, if there are multiple Copilot actions on a page, you might want to emphasize one Copilot action over the others.
+- You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
+- Prompt actions are supported only on the following page types: `List`, `ListPart`, `StandardDialog` and `Worksheet` with runtime 13 and later. `Card`, `Document`, and `ListPlus` for runtime 14 and later.
+- Prompt actions display only if the `RunObject` property is specified.
 - Prompt actions display in Business Central online and on-premises environments. However, Microsoft Copilot is exclusively for Business Central online. To make actions dynamically visible based on the deployment, use the [Visible property](properties/devenv-visible-property.md) on prompt actions. For example, you can use one of these two approaches:
 
    The simplest approach is to use the [EnvironmentInformation.IsSaaSInfrastructure()](/dynamics365/business-central/application/system-application/codeunit/system.environment.environment-information) method to check whether the environment is online or on-premises and use the return value as an expression on the prompt action's [Visible](properties/devenv-visible-property.md) property. If the method returns `true`, then the environment is online, and the action is made visible. For example:
@@ -164,8 +154,7 @@ actions
         }
     }
     -->
-- You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
-  
+
 ### Detailed example
 
 The next code is part of a code sample taken from the [aka.ms/BCTech](https://aka.ms/BCTech) repo; the [Job Planning Lines Copilot](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/SuggestResource/JobPlanningLinesCopilot.PageExt.al) page extension. This code sample illustrates how to create two prompt actions that run the `SuggestResourceCopilotAction` and `SuggestItemCopilotAction` actions. The `SuggestResourceCopilotAction` action is used to suggest a resource to be assigned to a job planning line, and the `SuggestItemCopilotAction` action is used to suggest an item to be assigned to a job planning line. The `SuggestResourceWithAI` and `SuggestItemWithAI` functions aren't implemented in this code sample. 
@@ -206,6 +195,25 @@ actions
         }
     }
 ...
+```
+
+## Add an action that runs the prompt dialog page
+
+This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot feature. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
+
+The following code illustrates how to add an action that opens the prompt dialog page for Copilot feature:  
+
+```al
+action(MyPromptDialogAction)
+{
+    Caption = 'Draft a proposal';
+    Image = Sparkle;
+
+    trigger OnAction()
+    begin
+        Page.RunModal(Page::"My Prompt Dialog");
+    end;
+}
 ```
 
 ## Related information
