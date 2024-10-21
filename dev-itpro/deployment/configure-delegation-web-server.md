@@ -115,13 +115,10 @@ As a best practice, you should configure kernel mode authentication to use the a
 
 ## <a name="RegisterSPN"></a> Registering Service Principal Names for [!INCLUDE[server](../developer/includes/server.md)]
 
-> [!NOTE]
-> This section only applies to Business Central 2022 release wave 1 (version 20) and earlier. SPNs aren't supported in later versions.
-
 When [!INCLUDE[server](../developer/includes/server.md)] is using a dedicated domain user account as its logon account, then you must register service principal names \(SPN\) for the [!INCLUDE[server](../developer/includes/server.md)] on the domain user account to make delegation work. An SPN is the name by which a client uniquely identifies an instance of a service, using the account under which the service runs. To register SPNs, you used the setspn command-line tool that is available in Windows Server 2008 and Windows 7.  
   
 > [!NOTE]  
-> You do not have to perform this task if the domain user account has permissions to register SPNs. In this case, SPNs for [!INCLUDE[server](../developer/includes/server.md)] will be automatically registered when [!INCLUDE[server](../developer/includes/server.md)] instance starts and then unregistered when the [!INCLUDE[server](../developer/includes/server.md)] instance stops. For information about how to configure the service account to register SPNs, see [Provisioning the Service Account](provision-server-account.md).  
+> For Business Central 2022 Wave 1 (verision 20) and earlier, you do not have to perform this task if the domain user account has permissions to register SPNs. In this case, SPNs for [!INCLUDE[server](../developer/includes/server.md)] will be automatically registered when [!INCLUDE[server](../developer/includes/server.md)] instance starts and then unregistered when the [!INCLUDE[server](../developer/includes/server.md)] instance stops. For information about how to configure the service account to register SPNs, see [Provisioning the Service Account](provision-server-account.md).  
   
 ### Create a service principal name
   
@@ -139,15 +136,23 @@ When [!INCLUDE[server](../developer/includes/server.md)] is using a dedicated do
     setspn -l domain\computername$  
     ```  
   
-3. At the command prompt, create an SPN for the [!INCLUDE[server](../developer/includes/server.md)] service using the following syntax.  
-  
-    ```dos  
-    setspn -A DynamicsNAV/FullyQualifiedDomainNameOfServer:Port Domain\User  
-    ```  
-  
-     Replace *FullyQualifiedDomainNameOfServer*, *Port*, and *Domain\\ServiceAccountUserName* with the appropriate values.  
-  
-     For example, if **BCSERVER** is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)], the actual command has the following format.  
+3. At the command prompt, create an SPN for the [!INCLUDE[server](../developer/includes/server.md)] service using the following syntax.
+
+   For Business Central 2022 Wave 1 (version 20) and earlier.
+     
+   ```dos  
+   setspn -A DynamicsNAV/FullyQualifiedDomainNameOfServer:Port Domain\User  
+   ```  
+
+   For Business Central 2022 Wave 2 (version 21) and later.
+     
+   ```dos
+   setspn -A http/FullyQualifiedDomainNameOfServer Domain\User
+   ```
+     
+   Replace *FullyQualifiedDomainNameOfServer*, *Port*, and *Domain\\ServiceAccountUserName* with the appropriate values.  
+
+   For example, if **BCSERVER** is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)], the actual command has the following format.  
   
     ```dos  
     setspn -A DynamicsNAV/BCSERVER.corp:7046 corp\bcdomainuser  
