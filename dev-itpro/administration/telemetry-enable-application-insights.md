@@ -105,7 +105,7 @@ Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Databa
 Or
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -EnvironmentName 'MyEnvironmentName' -EnvironmentType Sandbox -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
+Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -EnvironmentName 'MyEnvironmentName' -EnvironmentType Sandbox -ApplicationInsightsKey aaaabbbb-0000-cccc-1111-dddd2222eeee
 ```
 
 If you use the same [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource for multiple environments, consider also using the parameters AadTenantId, EnvironmentName, and EnvironmentType to distinguish tenants in telemetry.
@@ -119,13 +119,13 @@ New-BcContainer `
     -accept_eula `
     -updateHosts `
     -artifactUrl (Get-BCArtifactUrl -country us) `
-    -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
+    -applicationInsightsKey "aaaabbbb-0000-cccc-1111-dddd2222eeee" 
 ```
 
 You can specify the same or another key when creating more tenants:
 
 ```powershell
-New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
+New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "aaaabbbb-0000-cccc-1111-dddd2222eeee" 
 ```
 
 ## Turn off telemetry on environments

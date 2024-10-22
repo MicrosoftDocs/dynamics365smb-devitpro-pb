@@ -413,7 +413,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
     "value": [
         {
             "version": "16.0.1.2",
-            "appId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+            "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
             "countryCode": "US",
             "packageId": "ffffffff-5555-6666-7777-aaaaaaaaaaaa",
             "publisher": "Example Publisher",
@@ -484,7 +484,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222
 ```json
 {
     "version": "16.0.1.2",
-    "appId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
     "packageId": "ffffffff-5555-6666-7777-aaaaaaaaaaaa",
     "publisher": "Example Publisher",
@@ -560,7 +560,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
 ```json
 {
     "version": "16.0.1.2",
-    "appId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
     "packageId": "ffffffff-5555-6666-7777-aaaaaaaaaaaa",
     "publisher": "Example Publisher",
@@ -634,7 +634,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-222
 ```json
 {
     "version": "16.0.1.2",
-    "appId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
     "packageId": "ffffffff-5555-6666-7777-aaaaaaaaaaaa",
     "publisher": "Example Publisher",
@@ -704,7 +704,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
         {
             "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
             "version": "16.0.1.2",
-            "appId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+            "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
             "countryCode": "US",
             "applicationFamily": "Business Central",
             "locationName": "West Europe",
@@ -779,7 +779,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
             "status": "Scheduled",
             "createdOn": "2020-03-05T15:41:20.6468128Z",
             "runAfter": "2020-03-05T17:30:00.0000000Z",
-            "appId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+            "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
             "countryCode": "US",
             "environmentApplicationFamily": "Business Central",
             "environmentName": "MyCustomer",
@@ -822,7 +822,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
     "status": "Scheduled",
     "createdOn": "2020-03-05T15:41:20.6468128Z",
     "runAfter": "2020-03-05T17:30:00.0000000Z",
-    "appId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
     "environmentApplicationFamily": "Business Central",
     "environmentName": "MyCustomer",
@@ -873,7 +873,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222
     "status": "Scheduled",
     "createdOn": "2020-03-05T15:41:20.6468128Z",
     "runAfter": "2020-03-05T17:30:00.0000000Z",
-    "appId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
     "environmentApplicationFamily": "Business Central",
     "environmentName": "MyCustomer",
@@ -921,7 +921,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-222
     "status": "Canceled",
     "createdOn": "2020-03-05T15:41:20.6468128Z",
     "runAfter": "2020-03-05T17:30:00.0000000Z",
-    "appId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
     "environmentApplicationFamily": "Business Central",
     "environmentName": "MyCustomer",

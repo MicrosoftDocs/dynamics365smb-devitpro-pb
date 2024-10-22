@@ -67,7 +67,7 @@ If you specify `cdm_workeraddress, cdm_worker` in the `Entities` parameter, the 
 The following example starts the process for creating a new integration table in the specified AL project. When complete, the output path contains the **Worker.al** file that contains the description of the **50000 CDS Worker** integration table. This table is set to the table type **CDS**.
 
 ```powershell
-.\altpgen -project:"C:\myprojectpath" -packagecachepath:"C:\mypackagepath" -serviceuri:"https://tenant.crm.dynamics.com" -clientid:00000000-0000-0000-0000-000000000000 -redirecturi:"https://localhost:8080" -entities:cdm_worker,cdm_workeraddress -baseid:50000 -tabletype:CDS 
+.\altpgen -project:"C:\myprojectpath" -packagecachepath:"C:\mypackagepath" -serviceuri:"https://tenant.crm.dynamics.com" -clientid:00001111-aaaa-2222-bbbb-3333cccc4444 -redirecturi:"https://localhost:8080" -entities:cdm_worker,cdm_workeraddress -baseid:50000 -tabletype:CDS 
 ```
 
 ## Authentication

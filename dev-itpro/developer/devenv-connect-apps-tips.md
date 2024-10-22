@@ -29,7 +29,7 @@ ms.topic: conceptual
         "@odata.context": "<endpoint>/$metadata#companies",
         "value": [
             {
-                "id": "bb6d48b6-c7b2-4a38-9a93-ad5506407f12",
+                "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
                 "systemVersion": "18453",
                 "name": "CRONUS USA, Inc.",
                 "displayName": "CRONUS USA, Inc.",
@@ -39,8 +39,8 @@ ms.topic: conceptual
     }
     ```
 
-+ The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in () after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`
-+ All resources live in the context of a parent company, which means that the company ID must be provided in the URL for all resource API calls. For example, to GET all customers in the "CRONUS USA, Inc." company, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`
++ The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in () after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1)/`
++ All resources live in the context of a parent company, which means that the company ID must be provided in the URL for all resource API calls. For example, to GET all customers in the "CRONUS USA, Inc." company, you must call `<endpoint>/companies(a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1)/customers`
 
 ## <a name="AcceptLanguage"></a>Accept-Language HTTP header
 

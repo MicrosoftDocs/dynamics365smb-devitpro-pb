@@ -60,10 +60,10 @@ To provision the key vault reader application, use the [Microsoft Entra ID Power
 4. Create a Microsoft Entra service principal using the following command:
       
     ```powershell
-    New-AzureADServicePrincipal -AppId 7e97dcfb-bcdd-426e-8f0a-96439602627a
+    New-AzureADServicePrincipal -AppId 00001111-aaaa-2222-bbbb-3333cccc4444
     ```
     
-    `7e97dcfb-bcdd-426e-8f0a-96439602627a` is the Application (client) ID of Microsoft's centralized Microsoft Entra application.
+    `00001111-aaaa-2222-bbbb-3333cccc4444` is the Application (client) ID of Microsoft's centralized Microsoft Entra application.
     
     This step provisions the application in your Microsoft Entra tenant, where it now "lives" together with your key vaults.
 
@@ -74,7 +74,7 @@ The next task is to grant the key vault reader application permission to read se
 1. Open the key vault in the portal.
 2. Select **Access policies**, then **Add Access Policy**.
 3. Set **Secret Permissions** to **Get**.
-4. Choose **Select principal**, and on the right, search for either the application (client) ID **7e97dcfb-bcdd-426e-8f0a-96439602627a** or the display name **Dynamics 365 Business Central ISV Key Vault Reader**. 
+4. Choose **Select principal**, and on the right, search for either the application (client) ID **00001111-aaaa-2222-bbbb-3333cccc4444** or the display name **Dynamics 365 Business Central ISV Key Vault Reader**. 
 5. Select **Add**, then **Save**.
 
 ## Contact Microsoft to enable the App Key Vault feature
