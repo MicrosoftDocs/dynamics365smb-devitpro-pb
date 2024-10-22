@@ -81,7 +81,7 @@ Here is a JSON representation of the opportunity resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET opportunity](../api/dynamics_opportunity_get.md)  
 [DELETE opportunity](../api/dynamics_opportunity_delete.md)  
 [POST opportunity](../api/dynamics_opportunity_create.md)  

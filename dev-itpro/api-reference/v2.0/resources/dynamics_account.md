@@ -79,5 +79,5 @@ Here is a JSON representation of the account resource.
 
 
 
-## See Also
+## Related information
 [GET account](../api/dynamics_account_Get.md)

@@ -78,5 +78,5 @@ Here is a JSON representation of the purchaseReceiptLine resource.
 
 
 
-## See Also
+## Related information
 [GET purchaseReceiptLine](../api/dynamics_purchaseReceiptLine_Get.md)

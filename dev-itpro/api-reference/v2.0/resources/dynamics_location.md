@@ -75,7 +75,7 @@ Here is a JSON representation of the location resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET location](../api/dynamics_location_get.md)   
 [DELETE location](../api/dynamics_location_delete.md)  
 [POST location](../api/dynamics_location_create.md)  

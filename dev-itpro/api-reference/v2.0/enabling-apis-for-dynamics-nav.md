@@ -46,7 +46,7 @@ Depending on where you want to access the APIs from, you must specify the correc
 
 [!INCLUDE[on-prem-ws-off-405-note](../../includes/include-on-prem-ws-off-405-note.md)]
 
-## See also
+## Related information
 
 [Developing connect apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
 [Microsoft web services overview](../../webservices/web-services.md)  
