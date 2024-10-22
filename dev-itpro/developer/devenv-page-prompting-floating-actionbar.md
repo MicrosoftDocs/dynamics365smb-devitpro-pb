@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Launch Copilot features using actions and prompt actions
 
-In this article, you learn how to add actions in the UI that users select to start the Copilot feature.
+In this article, you learn how to add actions in the UI that users can select to start Copilot features. There are two ways to launch a Copilot feature using an action. The recommended way is to use a *prompt action*, which is a type of action designed for specifically for Copilot features that you want available on a page. The alternative way is to use a standard action that runs the prompt dialo  
 
 ## Add prompt actions that launch Copilot features
 
@@ -20,9 +20,7 @@ In this article, you learn how to add actions in the UI that users select to sta
 
 You use a prompt action to promote your Copilot feature on pages and encourage users to use it. In the UI, prompt actions associate actions directly with Copilot. They draw users' attention to tasks that Copilot can assist with on the page. Copilot might display these prompt actions elsewhere such as in the Copilot pane when asked for assistance.
 
-A prompt action is a standard action that appears under the ![Shows the Copilot action icon icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in a page's action bar to give it more prominence than other actions in the UI. On `List` and  `Worksheet` page types, prompt actions can also appear in a floating action bar, as illustrated in the following figure. Users can hide the floating action bar by selecting **Hide** and bring it back by selecting **Show in page**.
-
-A prompt action is a standard action that appears in a highly visible area of the page. Depending on the page type, it could appear in the action bar, at the bottom or top of the page, and even in a floating action bar.
+A prompt action is an action that appears in a highly visible area of the page. Depending on the page type, it could appear in the action bar, at the bottom or top of the page, and even in a floating action bar.
 
 For example, on `List` and  `Worksheet` page types, prompt actions appear under the ![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in the page's action bar and also in a floating action bar as illustrated in the following figure. Users can hide the floating action bar by selecting Hide and bring it back by selecting Show in page.
 
