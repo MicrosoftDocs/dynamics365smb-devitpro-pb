@@ -22,11 +22,16 @@ You use a prompt action to promote your Copilot feature on pages and encourage u
 
 A prompt action is an action that appears in a highly visible area of the page. Depending on the page type, it could appear in the action bar, at the bottom or top of the page, and even in a floating action bar.
 
-For example, on `List` and  `Worksheet` page types, prompt actions appear under the ![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in the page's action bar and also in a floating action bar as illustrated in the following figure. Users can hide the floating action bar by selecting Hide and bring it back by selecting Show in page.
+For example, on `List` and  `Worksheet` page types, prompt actions appear under the ![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in the page's action bar and also in a floating action bar as illustrated in the following figure for a `List` page. Users can hide the floating action bar by selecting Hide and bring it back by selecting Show in page.
 
 :::image type="content" source="media/copilot-prompt-actions-callouts.svg" alt-text="Example of a floating action bar for Copilot feature on list page":::
 
-On a `Card` page type, the prompt actions appear in the upper-right corner together with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon as illustrated in the following figure.
+On a `Card`, Dpage type, the prompt actions appear in the upper-right corner together with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon as illustrated in the following figure.
+
+|Card, Document, ListPlus|ListPart|StandardDialog
+|-|-|-|
+|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner|
+|[![Shows a flow of a Copilot with the prompt dialog page type](media/copilot-prompt-actions-card.svg)](media/media/copilot-prompt-actions-card.svg#lightbox)|[![Shows a flow of a Copilot with the prompt dialog page type](media/copilot-prompt-actions-listpart.svg)](media/media/copilot-prompt-actions-listpart.svg#lightbox)|[![Shows a flow of a Copilot with the prompt dialog page type](media/copilot-prompt-actions-standarddialog.svg)](media/media/copilot-prompt-actions-standarddialog.svg#lightbox)
 
 :::image type="content" source="media/copilot-prompt-actions-card.svg" alt-text="Example of a floating action bar for Copilot feature on card page":::
 
