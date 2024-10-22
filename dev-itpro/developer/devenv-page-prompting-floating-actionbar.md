@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Launch Copilot features using actions and prompt actions
 
-In this article, you learn how to add actions in the UI that users can select to start Copilot features. To start a Copilot feature, an action must run the prompt dialog page. There are two approaches to creating these actions. The recommended approach is to use a *prompt action*, which is a type of action designed for specifically for Copilot features that you want available on a page. The alternative way is to use a standard action that runs the prompt dialog  
+In this article, you learn how to add actions in the UI that users can select to start Copilot features. There are two approaches to creating these actions. The recommended approach is to use a *prompt action*, which is an action designed for specifically for Copilot features you want available on a page. Another way is to use a standard action that runs the prompt dialog. Which ever approach you choose, the action muat runs the prompt dialig page for the Copilot feature. 
 
 ## Add prompt actions that launch Copilot features
 
@@ -22,18 +22,16 @@ You use a prompt action to promote your Copilot feature on pages and encourage u
 
 A prompt action is an action that appears in a highly visible area of the page. Depending on the page type, it could appear in the action bar, at the bottom or top of the page, and even in a floating action bar.
 
-For example, on `List` and  `Worksheet` page types, prompt actions appear under the ![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in the page's action bar and also in a floating action bar as illustrated in the following figure for a `List` page. Users can hide the floating action bar by selecting Hide and bring it back by selecting Show in page.
+On `List` and  `Worksheet` page types, prompt actions appear under the ![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in the page's action bar and also in a floating action bar as illustrated in the following figure for a `List` page. Users can hide the floating action bar by selecting Hide and bring it back by selecting Show in page.
 
 :::image type="content" source="media/copilot-prompt-actions-callouts.svg" alt-text="Example of a floating action bar for Copilot feature on list page":::
 
-On a `Card`, Dpage type, the prompt actions appear in the upper-right corner together with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon as illustrated in the following figure.
+The following table describes the prompt actions in the UI for other page types.
 
-|Card, Document, ListPlus|ListPart|StandardDialog
+|Card, Document, ListPlus|ListPart|StandardDialog|
 |-|-|-|
-|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner.|![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in the parts action bar|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon at the bottom|
-|[![Shows a flow of a Copilot with the prompt dialog page type](media/copilot-prompt-actions-card.svg)](media/copilot-prompt-actions-card.svg#lightbox)|[![Shows a flow of a Copilot with the prompt dialog page type](media/copilot-prompt-actions-listpart.svg)](media/copilot-prompt-actions-listpart.svg#lightbox)|[![Shows a flow of a Copilot with the prompt dialog page type](media/copilot-prompt-actions-standarddialog.svg)](media/copilot-prompt-actions-standarddialog.svg#lightbox)
-
-:::image type="content" source="media/copilot-prompt-actions-card.svg" alt-text="Example of a floating action bar for Copilot feature on card page":::
+|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner of the page.|Prompt actions appear in the ![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** menu in part'ss action bar.|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon at the bottom of the page.|
+|:::image type="content" source="media/copilot-prompt-actions-card.svg" alt-text="Example of a prompt action bar for Copilot feature on card page":::|:::image type="content" source="media/copilot-prompt-actions-listpart.svg" alt-text="Example of a pompt action for Copilot feature on list part page":::|:::image type="content" source="media/copilot-prompt-actions-standarddialog.svg" alt-text="Example of a prompt action for Copilot feature on standard dialog page":::|
 
 ### Create a prompt action
 
@@ -88,7 +86,7 @@ or `SparkleFilled` ![Shows the Copilot sparkle filled icon](media/copilot-sparkl
 
    These images are recognized across Microsoft products to indicate that the action is associated with Copilot. In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific Copilot. For example, if there are multiple Copilot actions on a page, you might want to emphasize one Copilot action over the others.
 - You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
-- Prompt actions are supported on specific page types. Starting with runtime 13, these include `List`, `ListPart`, `StandardDialog`, and `Worksheet`. With runtime 14, the supported page types also include `Card`, `Document`, and `ListPlus`.
+- Prompt actions are supported on specific page types. Starting with runtime 13, the supported page types include `List`, `ListPart`, `StandardDialog`, and `Worksheet`. With runtime 14, the supported page types also include `Card`, `Document`, and `ListPlus`.
 - Prompt actions display only if the `RunObject` property is specified.
 - Prompt actions display in Business Central online and on-premises environments. However, Microsoft Copilot is exclusively for Business Central online. To make actions dynamically visible based on the deployment, use the [Visible property](properties/devenv-visible-property.md) on prompt actions. For example, you can use one of these two approaches:
 
