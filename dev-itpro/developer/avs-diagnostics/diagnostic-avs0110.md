@@ -14,7 +14,7 @@ author: thpeder
 
 A {0} with ID {1} is found in both {2} and {3}. Object IDs must be unique per environment. Resolve the conflict in your extension by using a different ID and upload the extension again.
 
-## See also
+## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
