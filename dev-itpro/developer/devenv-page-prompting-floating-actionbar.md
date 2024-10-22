@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Launch Copilot features using actions and prompt actions
 
-In this article, you learn how to add actions in the UI that users can select to start Copilot features. There are two approaches to creating these actions. The recommended approach is to use a *prompt action*, which is an action designed for specifically for Copilot features you want available on a page. Another way is to use a standard action that runs the prompt dialog. Which ever approach you choose, the action must run the prompt dialog page for the Copilot feature.
+In this article, you learn how to add actions in the UI that users can select to start Copilot features. There are two approaches to creating these actions. Which ever approach you choose, the action must run the prompt dialog page for the Copilot feature. The recommended approach is to use a *prompt action*, which is an action designed for specifically for Copilot features you want available on a page. The other approach a standard action as you would for other pages.
 
 ## Add prompt actions that launch Copilot features
 
@@ -30,7 +30,7 @@ The following table describes the prompt actions in the UI for other page types.
 
 |Card, Document, ListPlus|ListPart|StandardDialog|
 |-|-|-|
-|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner of the page.|Prompt actions appear in the ![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** menu in part'ss action bar.|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon at the bottom of the page.|
+|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner of the page.|Prompt actions appear in the ![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** menu in part's action bar.|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon at the bottom of the page.|
 |:::image type="content" source="media/copilot-prompt-actions-card.svg" alt-text="Example of a prompt action bar for Copilot feature on card page":::|:::image type="content" source="media/copilot-prompt-actions-listpart.svg" alt-text="Example of a pompt action for Copilot feature on list part page":::|:::image type="content" source="media/copilot-prompt-actions-standarddialog.svg" alt-text="Example of a prompt action for Copilot feature on standard dialog page":::|
 
 ### Create a prompt action
@@ -198,7 +198,7 @@ actions
 ...
 ```
 
-## Add an action that runs the prompt dialog page
+## Add a standard action that runs the prompt dialog page
 
 This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot feature. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
 
