@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Launch Copilot features using actions and prompt actions
 
-In this article, you learn how to add actions in the UI that users can select to start Copilot features. There are two approaches to creating these actions. Which ever approach you choose, the action must run the prompt dialog page for the Copilot feature. The recommended approach is to use a *prompt action*, which is an action designed for specifically for Copilot features you want available on a page. The other approach a standard action as you would for other pages.
+In this article, you will learn how to add actions in the UI that users can select to start Copilot features. There are two approaches to creating these actions. Whichever approach you choose, the action must run the prompt dialog page for the Copilot feature. The recommended approach is to use a *prompt action*, which is specifically designed for Copilot features you want available on a page. The other approach is to use a standard action, as you would for other pages.
 
 ## Add prompt actions that launch Copilot features
 
