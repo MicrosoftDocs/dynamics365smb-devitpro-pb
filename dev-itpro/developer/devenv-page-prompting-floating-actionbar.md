@@ -119,7 +119,7 @@ or `SparkleFilled` ![Shows the Copilot sparkle filled icon](media/copilot-sparkl
     end;
     ```
 
-    The preferred approach is to register the Copilot capability only if the environment is online. Then, use the [CopilotCapability.IsCapabilityRegistered](/dynamics365/business-central/application/system-application/codeunit/system.ai.copilot-capability#iscapabilityregistered) method on the prompt action's Visible property to check whether the capability is registered. If the method returns `true`, the Copilot capability is registered, and the action is visible. For example:
+    The preferred approach is to register the Copilot capability only if the environment is online (learn more in [Registering an AI capability](ai-build-capability-in-al.md#registering-an-ai-capability)). Then, use the [CopilotCapability.IsCapabilityRegistered](/dynamics365/business-central/application/system-application/codeunit/system.ai.copilot-capability#iscapabilityregistered) method on the prompt action's Visible property to check whether the capability is registered. If the method returns `true`, the Copilot capability is registered, and the action is visible. For example:
 
     ```al
     actions
