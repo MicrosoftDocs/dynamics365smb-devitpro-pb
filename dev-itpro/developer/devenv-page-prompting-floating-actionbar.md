@@ -30,7 +30,7 @@ On a `Card`, Dpage type, the prompt actions appear in the upper-right corner tog
 
 |Card, Document, ListPlus|ListPart|StandardDialog
 |-|-|-|
-|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner|
+|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner.|![Shows the Copilot action icon](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in the parts action bar|Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon at the bottom|
 |[![Shows a flow of a Copilot with the prompt dialog page type](media/copilot-prompt-actions-card.svg)](media/copilot-prompt-actions-card.svg#lightbox)|[![Shows a flow of a Copilot with the prompt dialog page type](media/copilot-prompt-actions-listpart.svg)](media/copilot-prompt-actions-listpart.svg#lightbox)|[![Shows a flow of a Copilot with the prompt dialog page type](media/copilot-prompt-actions-standarddialog.svg)](media/copilot-prompt-actions-standarddialog.svg#lightbox)
 
 :::image type="content" source="media/copilot-prompt-actions-card.svg" alt-text="Example of a floating action bar for Copilot feature on card page":::
