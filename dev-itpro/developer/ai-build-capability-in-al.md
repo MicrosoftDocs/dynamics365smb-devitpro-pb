@@ -4,7 +4,7 @@ description: Integrate with Azure OpenAI Service through the AI module of Busine
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 10/09/2024
+ms.date: 10/22/2024
 ms.custom: bap-template
 ms.collection:
   - get-started
@@ -105,14 +105,17 @@ codeunit 54310 "Secrets And Capabilities Setup"
 
     local procedure RegisterCapability()
     var
-        CopilotCapability: Codeunit "Copilot Capability";
+        EnvironmentInfo: Codeunit "Environment Information";
+        CopilotCapability: Codeunit "Copilot Capability";
         LearnMoreUrlTxt: Label 'https://example.com/DraftaJob', Locked = true;
     begin
-        if not CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::"
-Draft a Job") then
-            CopilotCapability.RegisterCapability(
-            Enum::"Copilot Capability"::"Draft a Job", 
-            Enum::"Copilot Availability"::"Generally Available", LearnMoreUrlTxt);
+        // Verify that environment in a Business Central online environment
+        if EnvironmentInfo.IsSaaSInfrastructure() then
+            // Register capability 
+            if not CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::"Draft a Job") then
+                CopilotCapability.RegisterCapability(
+                Enum::"Copilot Capability"::"Draft a Job", 
+                Enum::"Copilot Availability"::"Generally Available", LearnMoreUrlTxt);
     end;
 }
 ```
