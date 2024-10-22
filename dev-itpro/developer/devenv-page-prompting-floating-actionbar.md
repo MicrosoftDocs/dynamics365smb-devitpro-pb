@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Launch Copilot features using actions and prompt actions
 
-In this article, you learn how to add actions in the UI that users can select to start Copilot features. There are two ways to launch a Copilot feature using an action. The recommended way is to use a *prompt action*, which is a type of action designed for specifically for Copilot features that you want available on a page. The alternative way is to use a standard action that runs the prompt dialo  
+In this article, you learn how to add actions in the UI that users can select to start Copilot features. To start a Copilot feature, an action must run the prompt dialog page. There are two approaches to creating these actions. The recommended approach is to use a *prompt action*, which is a type of action designed for specifically for Copilot features that you want available on a page. The alternative way is to use a standard action that runs the prompt dialog  
 
 ## Add prompt actions that launch Copilot features
 
@@ -83,7 +83,7 @@ or `SparkleFilled` ![Shows the Copilot sparkle filled icon](media/copilot-sparkl
 
    These images are recognized across Microsoft products to indicate that the action is associated with Copilot. In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific Copilot. For example, if there are multiple Copilot actions on a page, you might want to emphasize one Copilot action over the others.
 - You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
-- Prompt actions are supported only on the following page types: `List`, `ListPart`, `StandardDialog` and `Worksheet` with runtime 13 and later. `Card`, `Document`, and `ListPlus` for runtime 14 and later.
+- Prompt actions are supported on specific page types. Starting with runtime 13, these include `List`, `ListPart`, `StandardDialog`, and `Worksheet`. With runtime 14, the supported page types also include `Card`, `Document`, and `ListPlus`.
 - Prompt actions display only if the `RunObject` property is specified.
 - Prompt actions display in Business Central online and on-premises environments. However, Microsoft Copilot is exclusively for Business Central online. To make actions dynamically visible based on the deployment, use the [Visible property](properties/devenv-visible-property.md) on prompt actions. For example, you can use one of these two approaches:
 
