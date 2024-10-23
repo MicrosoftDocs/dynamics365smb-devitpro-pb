@@ -142,7 +142,7 @@ The following example shows how to populate fields on an order that you imported
 ```al
 codeunit 50113 "Shpfy Order Set Customer"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", 'OnAfterImportShopifyOrderHeader', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", OnAfterImportShopifyOrderHeader, '', false, false)]
     procedure OnAfterImportShopifyOrderHeader(var ShopifyOrderHeader: Record "Shpfy Order Header", IsNew: Boolean)
     var
         ShopifyShop: Record "Shpfy Shop";
@@ -190,7 +190,7 @@ The following example shows how to check whether a Shopify order is ready to be 
 ```al
 codeunit 50107 "Shpfy Order Check Pay. Method"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", 'OnBeforeCreateSalesHeader', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", OnBeforeCreateSalesHeader, '', false, false)]
     internal procedure OnBeforeCreateSalesHeader(ShopifyOrderHeader: Record "Shpfy Order Header"; var SalesHeader: Record "Sales Header"; var Handled: Boolean)
     begin
         ShopifyOrderHeader.Testfield("Payment Method Code");
@@ -206,11 +206,11 @@ You can add more information to a sales document that's based on a Shopify order
 codeunit 50112 "Shpfy Order External Doc. No"
 {
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", 'OnAfterCreateSalesHeader', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", OnAfterCreateSalesHeader, '', false, false)]
     procedure OnAfterCreateSalesHeader(ShopifyHeader: Record "Shpfy Order Header"; var SalesHeader: Record "Sales Header")
     begin
         SalesHeader."External Document No." := ShopifyHeader."Shopify Order No.";
-        SalesHeader.Modify();
+        SalesHeader.Modify(true);
     end;
 }
 ```
@@ -254,7 +254,7 @@ The following example shows how to add dimensions to a sales document line that'
 ```al
 codeunit 50111 "Shpfy Order Line Dim"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", 'OnAfterCreateItemSalesLine', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Order Events", OnAfterCreateItemSalesLine, '', false, false)]
 
     procedure OnAfterCreateItemSalesLine(ShopifyOrderHeader: Record "Shpfy Order Header"; ShopifyOrderLine: Record "Shpfy Order Line"; SalesHeader: Record "Sales Header"; var SalesLine: Record "Sales Line")
     var
@@ -272,21 +272,23 @@ codeunit 50111 "Shpfy Order Line Dim"
         if not TempDimSetEntry.Insert() then
             TempDimSetEntry.Modify();
         SalesLine.Validate("Dimension Set ID", DimMgt.GetDimensionSetID(TempDimSetEntry));
-        SalesLine.Modify();
+        SalesLine.Modify(true);
     end;
 
     local procedure FindShpfyDimension(SourceName: Code[20]; var DimensionValue: Record "Dimension Value")
     var
         Dimension: Record Dimension;
     begin
-        If not Dimension.get('SHOPIFY') then begin
+        If not Dimension.Get('SHOPIFY') then begin
+            Dimension.Init();
             Dimension.Code := 'SHOPIFY';
-            Dimension.Insert();
+            Dimension.Insert(true);
         end;
         if not DimensionValue.Get(Dimension.Code, SourceName) then begin
-            DimensionValue."Dimension Code" := Dimension.Code;
-            DimensionValue.Code := SourceName;
-            DimensionValue.Insert();
+            DimensionValue.Init();
+            DimensionValue.Validate("Dimension Code", Dimension.Code);
+            DimensionValue.Validate(Code, SourceName);
+            DimensionValue.Insert(true);
         end;
     end;
 }
@@ -520,7 +522,7 @@ The following example shows how to implement logic for defining prices.
 ```al
 codeunit 50105 "Shpfy Custom Price"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnBeforeCalculateUnitPrice', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnBeforeCalculateUnitPrice, '', false, false)]
     procedure BeforeCalculateUnitPrice(Item: Record Item; VariantCode: Code[20]; UnitOfMeasure: Code[20]; ShopifyShop: Record "Shpfy Shop"; var UnitCost: Decimal; var Price: Decimal; var ComparePrice: Decimal; var Handled: Boolean)
     var
         CurrExchRate: Record "Currency Exchange Rate";
@@ -549,7 +551,7 @@ The following example shows how to implement logic for defining compare-at price
 ```al
 codeunit 50110 "Shpfy Custom Compare Price"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnAfterCalculateUnitPrice', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnAfterCalculateUnitPrice, '', false, false)]
     procedure AfterCalculateUnitPrice(Item: Record Item; VariantCode: Code[20]; UnitOfMeasure: Code[20]; ShopifyShop: Record "Shpfy Shop"; var UnitCost: Decimal; var Price: Decimal; var ComparePrice: Decimal)
     begin
         ComparePrice := Round(Price * 1.3, 1);
@@ -573,7 +575,7 @@ The following example shows how to use a manufacturer instead of a vendor when y
 ```al
 codeunit 50106 "Shpfy Product Export Manuf"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnAfterFillInShopifyProductFields', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnAfterFillInShopifyProductFields, '', false, false)]
     procedure OnAfterFillInShopifyProductFields(Item: Record Item; var ShopifyProduct: Record "Shpfy Product")
     var
         Manufacturer: Record Manufacturer;
@@ -594,7 +596,7 @@ The following example shows how to tag exported items. Tags categorize products 
 ```al
 codeunit 50109 "Shpfy Product Export Tag"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnAfterCreateTempShopifyProduct', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnAfterCreateTempShopifyProduct, '', false, false)]
     procedure AfterCreateTempShopifyProduct(Item: Record Item; var ShopifyProduct: Record "Shpfy Product"; var ShopifyVariant: Record "Shpfy Variant"; var ShopifyTag: Record "Shpfy Tag")
     begin
         ShopifyTag."Parent Table No." := 30127;
@@ -613,7 +615,7 @@ The following example shows how to use the GTIN field to map imported products t
 ```al
 codeunit 50108 "Shpfy Product Import Mapping"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", 'OnBeforeFindMapping', '', false, false)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnBeforeFindMapping, '', false, false)]
     procedure BeforeFindMapping(Direction: Enum "Shpfy Mapping Direction"; var ShopifyProduct: Record "Shpfy Product"; var ShopifyVariant: Record "Shpfy Variant"; var Item: Record Item; ItemVariant: Record "Item Variant"; var Handled: Boolean)
     var
         FindItem: Record Item;
