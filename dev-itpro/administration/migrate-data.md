@@ -352,7 +352,7 @@ The migration process, including the data flow and tasks that must be done to pr
 
 ## Partner webinars and office hours
 
-Explore upcoming partner webinars and office hours for Dynamics GP partners exploring Dynamics 365 Business Central. Join the webinars to learn more and there will be options to ask questions. Explore the topics and dates below. Registration opens end of October 2024 here: [aka.ms/GPtoBCOfficeHours](https://aka.ms/GPtoBCOfficeHours).
+Explore upcoming partner webinars and office hours for Dynamics GP partners exploring Dynamics 365 Business Central. Join the webinars to learn more and there will be options to ask questions. Explore the topics and dates below. Registration opens **end of October 2024** here: [aka.ms/GPtoBCOfficeHours](https://aka.ms/GPtoBCOfficeHours).
 
 | Date	| Office Hour Topic	| Abstract |
 |-------|-------------------|----------|
