@@ -85,7 +85,7 @@ Here is a JSON representation of the configurationPackage resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET configurationPackage](../api/dynamics_configurationpackage_get.md)  
 [DELETE configurationPackage](../api/dynamics_configurationpackage_delete.md)  
 [POST configurationPackage](../api/dynamics_configurationpackage_create.md)  
