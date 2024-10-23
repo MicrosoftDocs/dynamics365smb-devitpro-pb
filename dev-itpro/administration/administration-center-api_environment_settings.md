@@ -251,7 +251,7 @@ POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName
 
 ```
 {
-  "Value": GUID, // The object Id of the Microsoft Entra group, "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1"
+  "Value": GUID, // The object Id of the Microsoft Entra group, "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 }
 ```
 
