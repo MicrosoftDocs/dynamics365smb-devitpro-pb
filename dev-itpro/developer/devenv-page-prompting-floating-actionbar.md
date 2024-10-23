@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 # Launch Copilot features using actions and prompt actions
 
-In this article, you will learn how to add actions in the UI that users can select to start Copilot features. There are two approaches to creating these actions. Whichever approach you choose, the action must run the prompt dialog page for the Copilot feature. The recommended approach is to use a *prompt action*, which is specifically designed for Copilot features you want available on a page. The other approach is to use a standard action, as you would for other pages.
+In this article, you learn how to add actions in the UI that users can select to start Copilot features. There are two approaches to creating these actions. Whichever approach you choose, the action must run the prompt dialog page for the Copilot feature. The recommended approach is to use a *prompt action*, which is specifically designed for Copilot features you want available on a page. The other approach is to use a standard action, as you would for other pages.
 
 ## Add prompt actions that launch Copilot features
 
@@ -87,13 +87,15 @@ or `SparkleFilled` ![Shows the Copilot sparkle filled icon](media/copilot-sparkl
    These images are recognized across Microsoft products to indicate that the action is associated with Copilot. In general, use the `Sparkle` icon. Reserve the `SparkleFilled` icon for special cases where you want to emphasize a specific Copilot. For example, if there are multiple Copilot actions on a page, you might want to emphasize one Copilot action over the others.
 - You shouldn't use "Copilot" in prompt action captions. Instead, focus on the assistive task that Copilot performs, starting with a verb such as draft, suggest, search, or troubleshoot.
 - Prompt actions are supported on specific page types. Starting with runtime 13, the supported page types include `List`, `ListPart`, `StandardDialog`, and `Worksheet`. With runtime 14, the supported page types also include `Card`, `Document`, and `ListPlus`.
-- Prompt actions display only if the `RunObject` property is specified.
-- Prompt actions display in Business Central online and on-premises environments. However, Microsoft Copilot is exclusively for Business Central online. To make actions dynamically visible based on the deployment, use the [Visible property](properties/devenv-visible-property.md) on prompt actions. For example, you can use one of these two approaches:
+- Prompt actions are displayed only if the `RunObject` property is specified.
+- Prompt actions are displayed in both Business Central online and on-premises environments. However, Microsoft Copilot is exclusively available for Business Central online. Therefore, it's good practice to display prompt actions only in online environments, not in on-premises environments. To make actions dynamically visible based on the deployment, use the [Visible property](properties/devenv-visible-property.md) on prompt actions. For example, you can use one of the approaches described in the following sections. These approaches ensure that developers can view and test their prompt actions on their Docker container.
 
-   The simplest approach is to use the [EnvironmentInformation.IsSaaSInfrastructure()](/dynamics365/business-central/application/system-application/codeunit/system.environment.environment-information) method to check whether the environment is online or on-premises and use the return value as an expression on the prompt action's [Visible](properties/devenv-visible-property.md) property. If the method returns `true`, then the environment is online, and the action is made visible. For example:
+   **Based on deployment infrastructure:**
+
+    The simplest approach is to use the [EnvironmentInformation.IsSaaSInfrastructure()](/dynamics365/business-central/application/system-application/codeunit/system.environment.environment-information) method to check whether the environment is online or on-premises and use the return value as an expression on the prompt action's [Visible](properties/devenv-visible-property.md) property. If the method returns `true`, then the environment is online, and the action is made visible. For example:
 
     ```al
-    actions
+    actions 
     {
         addlast(Prompting)
         {
@@ -118,6 +120,8 @@ or `SparkleFilled` ![Shows the Copilot sparkle filled icon](media/copilot-sparkl
         IsSaaS := EnvInfo.IsSaaSInfrastructure()
     end;
     ```
+
+    **Based on capability registration:**
 
     The preferred approach is to register the Copilot capability only if the environment is online (learn more in [Registering an AI capability](ai-build-capability-in-al.md#registering-an-ai-capability)). Then, use the [CopilotCapability.IsCapabilityRegistered](/dynamics365/business-central/application/system-application/codeunit/system.ai.copilot-capability#iscapabilityregistered) method on the prompt action's Visible property to check whether the capability is registered. If the method returns `true`, the Copilot capability is registered, and the action is visible. For example:
 
