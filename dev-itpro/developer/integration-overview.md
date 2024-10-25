@@ -90,7 +90,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Dynamic
 
 For more information, see [Integrating Business Central with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration).  
 
-## Built in: Integrating with Dynamics 365 Field Service
+## Built in: Integrating Business Central with Dynamics 365 Field Service
 
 Service organizations require a front-to-back application in which financials, inventory, and procurement are tightly coupled with service delivery. They generate financial data with every transaction. Every work order represents cost and revenue, and every resource generates profit and loss. Customer interactions add entries on the general ledger. The integration between [!INCLUDE [prod_short](includes/prod_short.md)] and [!INCLUDE [m365-field-service-name](includes/m365-field-service-name.md)] streamlines the end-to-end process of managing service operations and ensures a smooth flow of information between the two systems.
 
