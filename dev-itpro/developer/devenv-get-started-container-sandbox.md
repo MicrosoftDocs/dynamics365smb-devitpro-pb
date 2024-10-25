@@ -33,48 +33,6 @@ To install and configure Docker, choose the version of Docker that is appropriat
 
 To set up a Docker container sandbox using an existing sandbox environment, see [Running a Container-Based Development Environment](devenv-running-container-development.md).
 
-### Set up a Docker container sandbox using an existing sandbox environment
-
-To set up a Docker container sandbox using an existing sandbox environment, follow these steps
-2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
-3. Choose **Host Locally**.
-4. Save the **CreateBCSandbox.ps1** file to your computer.
-5. Run Windows PowerShell ISE as an administrator.
-6. Open the **CreateBCSandbox.ps1** file.
-7. Set the `$containername = ''` variable to the name that you want to give the container, for example `$containername = 'mybc'`.  
-  This name is only used internally in your environment for identification purposes.
-8. Set the `$accept_eula = ''` variable to `'$true'`.
-9. Select <kbd>F5</kbd> to run the script.
-
-   The console pane displays the progress of the script. When the script has completed successfully, information like in the following example displays:
-
-   ```powershell
-   ...
-   Container IP Address: 172.22.147.63
-   Container Hostname  : mybc
-   Container Dns Name  : mybc
-   Web Client          : http://mybc/BC/
-   Dev. Server         : http://mybc
-   Dev. ServerInstance : BC
-   
-   Files:
-   http://test:8080/ALLanguage.vsix
-   
-   Initialization took 116 seconds
-   Ready for connections!
-   Reading CustomSettings.config from mybc
-   Creating Desktop Shortcuts for mybc
-   ```
-
-10. Write down or copy the following parameter/values from the console: `Dev. Server`,  `Dev. ServerInstance`, and `Files`. You need this information later to [set up Visual Studio Code for extension development](#VSCode).
-
-You now have a container sandbox set up on your computer. The following shortcuts are added to your desktop:
-
-- **\<Container name\> Web Client** - opens the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] for your application in the container.
-- **\<Container name\> PowerShell Prompt** - opens a Windows PowerShell prompt in the container. This gives you access to the [!INCLUDE[navnowg_md](includes/navnow_md.md)] (/powershell/business-central/overview), which you can run against the container sandbox environment. 
-- **\<Container name\>Command Prompt**  - opens a Windows command prompt in the container.
-
-
 ### <a name="VSCode"></a>Set up Visual Studio Code
 
 After the container sandbox is set up, you must set up Visual Studio Code for extension development. To do this, you need the values for `Dev. Server`,  `Dev. ServerInstance`, and `Files` parameters that you retrieved from the Windows PowerShell ISE console when you ran the **CreateBCSandbox.ps1** script. 
