@@ -33,7 +33,7 @@ See operational limits for [OData](../../administration/operational-limits-onlin
 
 See operational limits for [OData](../../administration/operational-limits-online.md#ODataServices) and [SOAP](../../administration/operational-limits-online.md#SOAPServices) requests.
 
-## See Also
+## Related information
 
 [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)  
 [Best practices on transient errors](/azure/architecture/best-practices/transient-faults)  

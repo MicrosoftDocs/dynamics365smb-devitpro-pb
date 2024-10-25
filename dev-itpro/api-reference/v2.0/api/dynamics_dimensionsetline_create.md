@@ -96,7 +96,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [dimensionsetline](../resources/dynamics_dimensionsetline.md)    
 [Get dimensionsetline](dynamics_dimensionsetline_Get.md)    

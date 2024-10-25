@@ -157,7 +157,7 @@ Represents the *Sustainability Ledger Entries* in [!INCLUDE[prod_short](../inclu
 | reasonCode | string | The reason code in the sustainabilityLedgerEntry. |
 
 
-## See also
+## Related information
 
 [Sustainability management overview](/dynamics365/business-central/finance-manage-sustainability)  
 [Sustainability setup](/dynamics365/business-central/finance-sustainability-setup)  

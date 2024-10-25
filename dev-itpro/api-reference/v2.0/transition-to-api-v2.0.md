@@ -170,7 +170,7 @@ All properties that were of type option in API v1.0 are converted into enums for
 
 This change allows integration utilizing [!INCLUDE [prod_short](../../developer/includes/prod_short.md)] API v2.0 to determine available values for enum properties, for example displaying dropdown values to the end user.
 
-## See also
+## Related information
 
 [API (v2.0) documentation](index.md)  
 [API (v1.0) documentation](../v1.0/index.md)  

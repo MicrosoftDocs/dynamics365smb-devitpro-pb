@@ -72,7 +72,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [attachment](../resources/dynamics_attachment.md)    
 [Get attachment](dynamics_attachment_Get.md)    
