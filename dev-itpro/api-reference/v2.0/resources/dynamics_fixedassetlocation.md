@@ -56,7 +56,7 @@ Here is a JSON representation of the fixedAssetLocation resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET fixedAssetLocation](../api/dynamics_fixedassetlocation_get.md)
 [DELETE fixedAssetLocation](../api/dynamics_fixedassetlocation_delete.md)
 [POST fixedAssetLocation](../api/dynamics_fixedassetlocation_create.md)
