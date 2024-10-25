@@ -56,5 +56,5 @@ Here is a JSON representation of the generalProductPostingGroup resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET generalProductPostingGroup](../api/dynamics_generalproductpostinggroup_get.md)

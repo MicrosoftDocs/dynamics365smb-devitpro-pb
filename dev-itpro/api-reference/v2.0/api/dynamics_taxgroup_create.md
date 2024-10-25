@@ -72,7 +72,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [taxgroup](../resources/dynamics_taxgroup.md)    
 [Get taxgroup](dynamics_taxgroup_Get.md)    

@@ -70,5 +70,5 @@ Here is a JSON representation of the vendor resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET vendor](../api/dynamics_vendor_get.md)

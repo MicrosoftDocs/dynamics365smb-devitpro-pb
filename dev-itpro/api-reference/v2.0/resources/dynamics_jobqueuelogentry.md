@@ -72,5 +72,5 @@ Here is a JSON representation of the jobQueueLogEntry resource.
 }
 ```
 
-## See Also
+## Related information
 [GET jobQueueLogEntry](../api/dynamics_jobqueuelogentry_get.md)  
