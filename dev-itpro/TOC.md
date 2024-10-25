@@ -1641,7 +1641,7 @@
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
-
+## [Integrate with Dynamics 365 Field Service](/dynamics365/business-central/admin-integrate-field-service)
 <!-- Azure services -->
 ## Integrating with Azure services
 ### [Overview](developer/integration-azure-overview.md)
