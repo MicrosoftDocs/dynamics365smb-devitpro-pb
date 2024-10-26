@@ -4,7 +4,7 @@ description: Configure and modify settings in the Setup or Installed Business Ce
 author: jswymer
 ms.topic: conceptual
 ms.service: dynamics-365-op
-ms.date: 06/25/2024
+ms.date: 10/25/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: bap-template
@@ -107,7 +107,6 @@ The following table describes general settings for the server.
 |GlobalSymbolReferenceCacheSize|Specifies a value for the LRU global symbol reference cache size. The value is the number of objects that are stored in the cache. The larger the number the larger the cache size.<br /><br /> The default value is the recommended value for deployments, so you typically won't change this setting.<br /><br />Default: 200|
 |GlobalSymbolReferenceCacheTTLInHours|Specifies the lifespan, in hours, of entries in the global symbol reference cache. This is a strict value on the number of // objects that are housed in the cache. The larger the number the larger the cache size<br /><br /> The default value is the recommended value for deployments, so you typically won't change this setting.<br /><br />Default: 24|
 |PTESymbolReferenceCacheSize|Specifies a value for the LRU per-tenant extension (PTE) symbol reference cache size. The value is the number of objects that are stored in the cache. The larger the number the larger the cache size.<br /><br /> The default value is the recommended value for deployments, so you typically won't change this setting.<br /><br />Default: 700|
-|GlobalSymbolReferenceCacheSize|Specifies a value for the LRU global symbol reference cache size. The value is the number of objects that are stored in the cache. The larger the number the larger the cache size.<br /><br /> The default value is the recommended value for deployments, so you typically won't change this setting.<br /><br />Default: 700|
 |PTESymbolReferenceCacheTTLInHours|Specifies the lifespan, in hours, of entries in the PTEn symbol reference cache.<br /><br /> The default value is the recommended value for deployments, so you typically won't change this setting.<br /><br />Default: 24|
 |XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
 
