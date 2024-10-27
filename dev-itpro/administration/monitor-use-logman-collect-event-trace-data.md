@@ -3,13 +3,16 @@ title: "How to: Use Logman to Collect Event Trace Data"
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 04/16/2024
+ms.date: 10/26/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
 # How to: Use LogMan to Collect Event Trace Data
+
+[!INCLUDE[on_prem_only_v2](../developer/includes/on_prem_only_v2.md)]
+
 This article describes how to use logman to collect event trace data for [!INCLUDE[server](../developer/includes/server.md)]. Logman (logman.exe) comes with the Windows Operating System. You can use it to create and manage event trace session and performance logs from the command prompt.
 
 This article provides a brief introduction to using logman to collect trace event data for [!INCLUDE[server](../developer/includes/server.md)] and telemetry events. For more detailed information about logman, see [Logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
@@ -75,7 +78,7 @@ For example, from the command line, you can use the
 tracerpt c:\perflogs\MyTelemetryTraceData_000001.etl -o c:\perflogs\MyTelemetry-dmp.xml -of XML -summary c:\perflogs\MyTelemetry-summary.txt -report c:\perflogs\MyTelemetry-rpt.xml
 ```
 
-You can also use PerView. For more information, see [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).
+You can also use PerView. Learn more in [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).
   
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   

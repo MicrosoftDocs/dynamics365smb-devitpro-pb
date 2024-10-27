@@ -4,13 +4,16 @@ description: Learn how to use PowerShell to monitor Business Central Server inst
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 04/16/2024
+ms.date: 10/26/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
 # Monitoring Business Central Server Events with PowerShell
+
+[!INCLUDE[on_prem_only_v2](../developer/includes/on_prem_only_v2.md)]
+
 Events that occur on the [!INCLUDE[server](../developer/includes/server.md)] instances are recorded in event logs on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. You can view the events by using Windows PowerShell as described in this article.  
 
 ##  <a name="ViewEventsWinPS"></a>PowerShell Get-WinEvent Cmdlet   
@@ -28,7 +31,7 @@ For more information about installing and getting started with Windows PowerShel
   
 2.  On the computer that is running [!INCLUDE[server](../developer/includes/server.md)], start Window PowerShell.  
   
-     For more information, see [Starting Windows PowerShell](https://go.microsoft.com/fwlink/?LinkID=513794).  
+     Learn more at [Starting Windows PowerShell](https://go.microsoft.com/fwlink/?LinkID=513794).  
   
 3.  At the command prompt, enter the `Get-WinEvent` command. The following table provides some simple example commands.  
   
@@ -58,7 +61,7 @@ There are two debug logs for [!INCLUDE[prod_short](../developer/includes/prod_sh
     ```  
   
 > [!TIP]  
->  You can also enable the Debug log from Event Viewer. For more information, see [Enable Analytic and Debug Logs](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749492(v=ws.11)).  
+>  You can also enable the Debug log from Event Viewer. Learn more at [Enable Analytic and Debug Logs](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749492(v=ws.11)).  
   
 ## Filtering [!INCLUDE[server](../developer/includes/server.md)] Events  
 You can filter the events that you view in a [!INCLUDE[server](../developer/includes/server.md)] log by setting the *FilterXpath* parameter of the Get-WinEvent cmdlet. The following examples illustrate how you can use the *FilterXpath* parameter to filter the [!INCLUDE[server](../developer/includes/server.md)] events.  

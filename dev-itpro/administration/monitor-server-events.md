@@ -11,6 +11,9 @@ ms.topic: conceptual
 author: jswymer
 ---
 # Monitoring Business Central Server Events
+
+[!INCLUDE[on_prem_only_v2](../developer/includes/on_prem_only_v2.md)]
+
 You can monitor events on [!INCLUDE[server](../developer/includes/server.md)] to diagnose conditions and troubleshoot problems that affect operation and performance.  
 
 ## Event Logging Overview  
@@ -25,22 +28,18 @@ Event tracing provides detailed information about what is occurring on the [!INC
   
 You can use event tracing to track the following operations on [!INCLUDE[server](../developer/includes/server.md)] instances:  
   
--   Running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reports, queries, and XMLports.  
-  
--   Execution of SQL statements by [!INCLUDE[server](../developer/includes/server.md)].  
-  
--   Execution of AL functions.  
-
--   Telemetry. 
-  
--   Windows event log events.  
+- Running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reports, queries, and XMLports.
+- Execution of SQL statements by [!INCLUDE[server](../developer/includes/server.md)]. 
+- Execution of AL functions.  
+- Telemetry.
+- Windows event log events.  
   
 ## Event Trace Monitoring Tools  
 There are various industry-standard tools that you can use to collect event trace data. The procedures in this section use Windows Performance Monitor, PerfView, Event Viewer, and Windows PowerShell to illustrate how you can collect and view event trace data. For details about how to use these tools and others, refer to the documentation available with the tool. For an overview of some of the tools, see [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md). 
   
 ## <a name="GetStartedEvents"></a>Get Started  
   
-|Task|For more information, see|  
+|Task|Learn more in|  
 |----------|-------------------------------|  
 |Review the list of trace events that are available for monitoring [!INCLUDE[server](../developer/includes/server.md)] instances.|[Business Central Trace Events List](server-trace-events.md)|  
 |Collect event trace data in an event trace log \(.etl\) file. Use the event trace monitoring tool to start an event trace session.|[Use Performance Monitor to Collect Event Trace Data](monitor-use-performance-monitor-collect-event-trace-data.md)<br /><br /> [Use PerfView to Collect Event Trace Data](monitor-use-perfview-collect-event-trace-data.md)<br /><br />[Use Logman to Collect Event Trace Data](monitor-use-logman-collect-event-trace-data.md)|  

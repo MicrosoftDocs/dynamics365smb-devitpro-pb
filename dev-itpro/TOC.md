@@ -1820,7 +1820,7 @@
 #### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central server
 #### [Monitoring performance counters](administration/performance-counters.md)
-#### Monitoring server events
+#### Monitoring server events on-premises
 ##### [Monitoring server events overview](administration/monitor-server-events.md)
 ##### [Trace events list](administration/server-trace-events.md)
 ##### [Admin and operational events list](administration/server-events.md)
