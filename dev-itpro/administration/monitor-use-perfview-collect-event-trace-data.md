@@ -1,5 +1,5 @@
 ---
-title: How to: Use PerfView to Collect Event Trace Data
+title: Use PerfView to Collect Event Trace Data
 description: Get tips for how to use PerView on telemetry traces.
 ms.custom:
   - bap-template
@@ -10,7 +10,7 @@ ms.service: dynamics-365-op
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
-# How to: Use PerfView to Collect Event Trace Data
+# Use PerfView to Collect Event Trace Data
 
 [!INCLUDE[on_prem_only_v2](../developer/includes/on_prem_only_v2.md)]
 

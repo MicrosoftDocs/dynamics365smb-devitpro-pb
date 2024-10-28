@@ -1,5 +1,5 @@
 ---
-title: How to: Use Performance Monitor to Collect Event Trace Data
+title: Use Performance Monitor to Collect Event Trace Data
 description: Get tips for how to use Performance Monitor on telemetry traces.
 ms.custom:
   - bap-template
@@ -10,7 +10,7 @@ ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
-# How to: Use Performance Monitor to collect event trace data
+# Use Performance Monitor to collect event trace data
 
 [!INCLUDE[on_prem_only_v2](../developer/includes/on_prem_only_v2.md)]
 

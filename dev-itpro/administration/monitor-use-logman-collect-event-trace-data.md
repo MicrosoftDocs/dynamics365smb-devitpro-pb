@@ -1,5 +1,5 @@
 ---
-title: How to: Use Logman to Collect Event Trace Data
+title: Use Logman to Collect Event Trace Data
 description: Get tips for how to use LogMan on telemetry traces.
   - bap-template
   - evergreen
@@ -9,7 +9,7 @@ ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
-# How to: Use LogMan to Collect Event Trace Data
+# Use LogMan to Collect Event Trace Data
 
 [!INCLUDE[on_prem_only_v2](../developer/includes/on_prem_only_v2.md)]
 
