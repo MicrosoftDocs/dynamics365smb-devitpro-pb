@@ -153,13 +153,13 @@ You must set the `CommitBehavior` property to `Ignore` if you want to use the `C
 
 ```
 
-## See also
+## Related information
 
-[Business Central User Assistance Model](../user-assistance.md)  
-[Configuring the Help Experience](../deployment/configure-help.md)  
-[Authoring Guide](writing-guide.md)  
-[Docs Contributor Guide](/contribute/)  
-[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
+[Business Central user assistance model](../user-assistance.md)  
+[Configuring the help experience](../deployment/configure-help.md)  
+[Authoring guide](writing-guide.md)  
+[Docs contributor guide](/contribute/)  
+[Docs authoring pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)  
 [Visual Studio Code](https://code.visualstudio.com/)  
 [Atom](https://atom.io/)  
