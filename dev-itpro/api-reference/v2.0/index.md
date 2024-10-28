@@ -4,25 +4,25 @@ description: Reference content for the API (v2.0) endpoint for integration with 
 author: SusanneWindfeldPedersen
 ms.topic: get-started
 ms.devlang: al
-ms.date: 03/14/2024
+ms.date: 10/28/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 # Welcome to the API (v2.0) for Business Central
 
-With [!INCLUDE[prod_short](../../includes/prod_short.md)] you can create Connect apps. Connect apps establish a point-to-point connection between Dynamics 365 Business Central and a 3rd party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. For more information to get started with Connect apps, see [Developing connect apps for Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps).
+With [!INCLUDE[prod_short](../../includes/prod_short.md)] you can create Connect apps. Connect apps establish a point-to-point connection between Dynamics 365 Business Central and a third party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. For more information to get started with Connect apps, see [Developing connect apps for Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps).
 
 > [!TIP]  
 > For inspiration and examples, see the open source [ALAppExtensions](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/APIV2/app/src/pages) repo. Here you'll find examples of API pages written in AL.
 
 ## Microsoft APIs Terms of Use
 
-Before you start using the Business Central APIs, please familiarize yourself with the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
+Before you start using the Business Central APIs, familiarize yourself with the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
 
 ## Enabling APIs
 
-For information about enabling APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
+Learn more about enabling APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] in [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
 
 
 ## Extending APIs
@@ -32,7 +32,7 @@ For information about enabling APIs for [!INCLUDE[prod_short](../../includes/pro
 
 ## Transition from API v1.0 to API v2.0
 
-For information about transitioning from API v1.0 to API v2.0 see [Transition from API v1.0 to API v2.0](transition-to-api-v2.0.md).
+Learn more about transitioning from API v1.0 to API v2.0 in [Transition from API v1.0 to API v2.0](transition-to-api-v2.0.md).
 
 
 ## Related information

@@ -3,7 +3,7 @@ title: Enabling APIs for Microsoft Dynamics 365 Business Central
 description: Describing the steps you must go through to enable access to the APIs.
 author: SusanneWindfeldPedersen
 ms.custom: how-to
-ms.date: 02/07/2024
+ms.date: 10/28/2024
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
@@ -40,7 +40,7 @@ ms.reviewer: solsen
    ```
 1. In [!INCLUDE[prod_short](../../includes/prod_short.md)], search for **API Setup** and then choose the related link.
 1. On the **API Setup** page, choose the **Integrate APIs** button.  
-    This will start a process of populating all the integration tables with records for all APIs. The process can take several minutes.
+    This starts a process of populating all the integration tables with records for all APIs. The process can take several minutes.
 
 Depending on where you want to access the APIs from, you must specify the correct endpoint. For more information, see [Endpoints for APIs](endpoints-apis-for-dynamics.md).
 
