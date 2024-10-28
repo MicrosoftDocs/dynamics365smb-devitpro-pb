@@ -73,7 +73,7 @@ Here is a JSON representation of the subscriptions resource.
 
 
 
-## See Also
+## Related information
 [GET subscriptions](../api/dynamics_subscriptions_Get.md)  
 [DELETE subscriptions](../api/dynamics_subscriptions_Delete.md)  
 [POST subscriptions](../api/dynamics_subscriptions_Create.md)  

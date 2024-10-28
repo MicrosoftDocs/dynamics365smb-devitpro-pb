@@ -86,7 +86,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Error Codes](../dynamics-error-codes.md)  
 [timeRegistrationEntries](../resources/dynamics_timeRegistrationEntry.md)  

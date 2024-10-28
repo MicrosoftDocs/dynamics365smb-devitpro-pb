@@ -55,6 +55,6 @@ Here is a JSON representation of the securityGroup resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET securityGroup](../api/dynamics_securitygroup_get.md)
 [DELETE securityGroup](../api/dynamics_securitygroup_delete.md)

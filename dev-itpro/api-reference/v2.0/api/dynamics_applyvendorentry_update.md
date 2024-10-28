@@ -82,7 +82,7 @@ Content-type: application/json
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [applyVendorEntry](../resources/dynamics_applyVendorEntry.md)  

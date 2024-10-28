@@ -14,7 +14,7 @@ author: thpeder
 
 A {0} with name '{1}' is found in both {2} and {3}. Object names must be unique per environment. Resolve the conflict in your extension by using a different name and upload the extension again.
 
-## See also
+## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

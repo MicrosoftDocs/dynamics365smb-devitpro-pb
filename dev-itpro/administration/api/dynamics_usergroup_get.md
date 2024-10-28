@@ -62,7 +62,7 @@ Here is an example of the response.
     "assignToAllNewUsers": false
 }
 ```
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [userGroup](../resources/dynamics_userGroup.md)

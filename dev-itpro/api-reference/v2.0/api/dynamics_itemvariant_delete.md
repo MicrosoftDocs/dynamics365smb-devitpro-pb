@@ -54,7 +54,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [itemvariant](../resources/dynamics_itemvariant.md)    
 [Get itemvariant](dynamics_itemvariant_Get.md)    

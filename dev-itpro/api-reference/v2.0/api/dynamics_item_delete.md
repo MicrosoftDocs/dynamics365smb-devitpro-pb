@@ -52,7 +52,7 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [item](../resources/dynamics_item.md)    
 [Get item](dynamics_item_Get.md)    

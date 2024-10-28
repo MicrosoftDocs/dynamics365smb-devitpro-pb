@@ -76,5 +76,5 @@ Here is a JSON representation of the generalBudgetEntry resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET generalBudgetEntry](../api/dynamics_generalbudgetentry_get.md)
