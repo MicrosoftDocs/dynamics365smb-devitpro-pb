@@ -132,7 +132,7 @@ Here is a JSON representation of the resource.
       "lastModifiedDateTime": "DateTime"
 }
 ```
-## See also
+## Related information
 
 [Get Sales Invoice](../api/dynamics_salesinvoice_get.md)  
 [Create Sales Invoice](../api/dynamics_create_salesinvoice.md)  

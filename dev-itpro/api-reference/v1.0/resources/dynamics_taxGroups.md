@@ -55,7 +55,7 @@ Here is a JSON representation of the taxGroup.
 }
 ```
 
-## See Also
+## Related information
 
 [Get Tax Groups](../api/dynamics_taxgroups_get.md)  
 [Create Tax Groups](../api/dynamics_create_taxgroups.md)  

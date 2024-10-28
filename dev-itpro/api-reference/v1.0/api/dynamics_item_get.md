@@ -77,7 +77,7 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-07T00:35:30.073Z"
 }
 ```
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 
