@@ -276,14 +276,14 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
                     {
                         Caption = 'Country';
                     }
-                }
 
-                part(carModels; "API Car Model")
-                {
-                    Caption = 'Car Models';
-                    EntityName = 'carModel';
-                    EntitySetName = 'carModels';
-                    SubPageLink = "Brand Id" = Field(SystemId);
+                    part(carModels; "API Car Model")
+                    {
+                        Caption = 'Car Models';
+                        EntityName = 'carModel';
+                        EntitySetName = 'carModels';
+                        SubPageLink = "Brand Id" = Field(SystemId);
+                    }
                 }
             }
         }
