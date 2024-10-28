@@ -10,20 +10,22 @@ ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
-# Monitoring Business Central Server Events
+# Monitoring Business Central Server events
 
 [!INCLUDE[on_prem_only_v2](../developer/includes/on_prem_only_v2.md)]
 
 You can monitor events on [!INCLUDE[server](../developer/includes/server.md)] to diagnose conditions and troubleshoot problems that affect operation and performance.  
 
-## Event Logging Overview  
- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses Event Tracing for Windows \(ETW\), which is a subsystem of Windows operating systems. ETW provides a tracing mechanism for events that are raised by an application or service. ETW enables you to use industry standard tools such as Windows Performance Monitor, PerfView, Event Viewer, and Windows PowerShell to dynamically collect data on trace events that occur on the [!INCLUDE[server](../developer/includes/server.md)].  
+## Event logging overview
 
- Events that occur on [!INCLUDE[server](../developer/includes/server.md)] instances are recorded in Windows Event logs on the [!INCLUDE[server](../developer/includes/server.md)] computer. [!INCLUDE[prod_long](../developer/includes/prod_long.md)] uses channels on all events. Event channels provide a way to collect and view events from a specific provider, which in this case is [!INCLUDE[server](../developer/includes/server.md)], and group the events according to predefined types, such as admin, operational, and debug. For example, in Event Viewer, [!INCLUDE[server](../developer/includes/server.md)] instance events are collected in the Admin, Operational, and Debug channel logs for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Applications and Services Logs.  
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses Event Tracing for Windows \(ETW\), which is a subsystem of Windows operating systems. ETW provides a tracing mechanism for events that are raised by an application or service. ETW enables you to use industry standard tools such as Windows Performance Monitor, PerfView, Event Viewer, and Windows PowerShell to dynamically collect data on trace events that occur on the [!INCLUDE[server](../developer/includes/server.md)].  
 
- For more general information about ETW and event channels, see [Event Tracing for Windows](/windows/win32/etw/event-tracing-portal) and [Event Logs and Channels in Windows Event Log](/previous-versions//aa385225(v=vs.85)).  
+Events that occur on [!INCLUDE[server](../developer/includes/server.md)] instances are recorded in Windows Event logs on the [!INCLUDE[server](../developer/includes/server.md)] computer. [!INCLUDE[prod_long](../developer/includes/prod_long.md)] uses channels on all events. Event channels provide a way to collect and view events from a specific provider, which in this case is [!INCLUDE[server](../developer/includes/server.md)], and group the events according to predefined types, such as admin, operational, and debug. For example, in Event Viewer, [!INCLUDE[server](../developer/includes/server.md)] instance events are collected in the Admin, Operational, and Debug channel logs for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Applications and Services Logs.  
 
-## Monitoring Business Central Server Event Traces
+For more general information about ETW and event channels, see [Event Tracing for Windows](/windows/win32/etw/event-tracing-portal) and [Event Logs and Channels in Windows Event Log](/previous-versions//aa385225(v=vs.85)).  
+
+## Monitoring Business Central Server event traces
+
 Event tracing provides detailed information about what is occurring on the [!INCLUDE[server](../developer/includes/server.md)] and application when users work with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. This can help you identify and analyze problems or conditions that affect performance. Event tracing enables you to dynamically monitor [!INCLUDE[server](../developer/includes/server.md)] without having to restart the server or [!INCLUDE[prod_short](../developer/includes/prod_short.md)] clients. By using industry-standard tools for event tracing, you can start and stop event tracing sessions, and then view the trace event data from a stored log file.  
   
 You can use event tracing to track the following operations on [!INCLUDE[server](../developer/includes/server.md)] instances:  
@@ -34,10 +36,11 @@ You can use event tracing to track the following operations on [!INCLUDE[server]
 - Telemetry.
 - Windows event log events.  
   
-## Event Trace Monitoring Tools  
-There are various industry-standard tools that you can use to collect event trace data. The procedures in this section use Windows Performance Monitor, PerfView, Event Viewer, and Windows PowerShell to illustrate how you can collect and view event trace data. For details about how to use these tools and others, refer to the documentation available with the tool. For an overview of some of the tools, see [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md). 
+## Event trace monitoring tools
+
+There are various industry-standard tools that you can use to collect event trace data. The procedures in this section use Windows Performance Monitor, PerfView, Event Viewer, and Windows PowerShell to illustrate how you can collect and view event trace data. For details about how to use these tools and others, refer to the documentation available with the tool. For an overview of some of the tools, see [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md).
   
-## <a name="GetStartedEvents"></a>Get Started  
+## <a name="GetStartedEvents"></a>Get started  
   
 |Task|Learn more in|  
 |----------|-------------------------------|  
@@ -46,8 +49,9 @@ There are various industry-standard tools that you can use to collect event trac
 |View event trace data that is contained in an .etl file.|[Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md)|  
 |Use Event Viewer to collect and view events |[Monitoring Business Central Server Events by Using Event Viewer](monitor-server-events-windows-event-log.md) |  
 |Use Windows PowerShell to view event trace data|[Monitoring Business Central Server Events by Using Windows PowerShell](monitor-server-events-with-powershell.md)|
-|Turn off or limit the amount of telemetry trace events emitted based on the severity level.|[Turn Off or Limit Telemetry Trace Events](disable-limit-telemetry-events.md)|   
+|Turn off or limit the amount of telemetry trace events emitted based on the severity level.|[Turn Off or Limit Telemetry Trace Events](disable-limit-telemetry-events.md)|
   
-## See Also    
+## Related information
+
 [Business Central Server Trace Events](server-trace-events.md)  
 [Business Central Server Admin and Operational Events](server-events.md)
