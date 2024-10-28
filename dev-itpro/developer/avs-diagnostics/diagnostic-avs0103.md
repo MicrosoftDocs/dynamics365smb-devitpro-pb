@@ -18,7 +18,7 @@ The extension with ID '{0}' appears multiple times in the submission, while all 
 
 Make sure you only include your app once in the submission in Partner Center.
 
-## See also
+## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

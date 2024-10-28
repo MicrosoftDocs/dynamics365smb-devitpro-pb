@@ -80,5 +80,5 @@ Here is a JSON representation of the vendorLedgerEntry resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET vendorLedgerEntry](../api/dynamics_vendorledgerentry_get.md)

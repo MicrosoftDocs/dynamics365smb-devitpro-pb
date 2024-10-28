@@ -79,7 +79,7 @@ Content-type: application/json
     "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [customerpayment](../resources/dynamics_customerpayment.md)    
 [Get customerpayment](dynamics_customerpayment_Get.md)    

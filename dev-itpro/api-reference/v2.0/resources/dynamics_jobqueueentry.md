@@ -144,5 +144,5 @@ Here is a JSON representation of the jobQueueEntry resource.
 }
 ```
 
-## See Also
+## Related information
 [GET jobQueueEntry](../api/dynamics_jobqueueentry_get.md)  

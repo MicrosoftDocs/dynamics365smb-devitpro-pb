@@ -18,7 +18,7 @@ The submission must target at least one existing release of [!INCLUDE [prod_shor
 
 The app.json files has a dependency either from the `application` property or the `dependencies` section that sets the requirement higher than the available releases of [!INCLUDE [prod_short](../includes/prod_short.md)]. To learn more see [Technical Validation FAQ](../devenv-checklist-submission-faq.md).
 
-## See also
+## Related information
 
 [Choosing Runtime Version in AL](../devenv-choosing-runtime.md)
 [Get started with AL](../devenv-get-started.md)

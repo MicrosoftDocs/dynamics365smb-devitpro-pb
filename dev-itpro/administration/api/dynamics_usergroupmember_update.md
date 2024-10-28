@@ -71,7 +71,7 @@ Content-type: application/json
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [userGroupMember](../resources/dynamics_userGroupMember.md)

@@ -104,7 +104,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({companyid})/salesQuotes(
 **Response** 
 The PDF document in binary format.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesquote](../resources/dynamics_salesquote.md)    
 [Get salesquote](dynamics_salesquote_Get.md)    

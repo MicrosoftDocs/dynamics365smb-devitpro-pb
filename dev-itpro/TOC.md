@@ -1550,7 +1550,7 @@
 ### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 ### Integrating with Microsoft Onedrive
 #### [Integrating with Onedrive for Business overview (for administrators)](/dynamics365/business-central/across-onedrive-overview)  
-#### [Extending Document Sharing and OneDrive for Business Integration (for developers)](developer/ devenv-extending-document-sharing-onedrive.md)  
+#### [Extending Document Sharing and OneDrive for Business Integration (for developers)](developer/devenv-extending-document-sharing-onedrive.md)  
 ### [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
 ### [Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
 <!-- Microsoft Teams -->
@@ -1563,7 +1563,7 @@
 #### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 #### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
-### Integrating with Microsoft OneDrive
+### Integrating with Microsoft Word
 #### [Using Word templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
 #### [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge)  
 
@@ -1641,7 +1641,7 @@
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
-
+## [Integrate with Dynamics 365 Field Service](/dynamics365/business-central/admin-integrate-field-service)
 <!-- Azure services -->
 ## Integrating with Azure services
 ### [Overview](developer/integration-azure-overview.md)
@@ -1820,7 +1820,7 @@
 #### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central server
 #### [Monitoring performance counters](administration/performance-counters.md)
-#### Monitoring server events
+#### Monitoring server events on-premises
 ##### [Monitoring server events overview](administration/monitor-server-events.md)
 ##### [Trace events list](administration/server-trace-events.md)
 ##### [Admin and operational events list](administration/server-events.md)
