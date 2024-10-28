@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 02/17/2024
+ms.date: 10/27/2024
 ms.custom: bap-template
 ---
 
@@ -181,10 +181,10 @@ In this task, you add actions to the PromptDialog page that enable users to set 
 
 [![Shows a screenshot that highlights the preference option actions in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.png)](media/promptdialog-prompt-mode-options.png#lightbox)
 
-You add the options by using in a `area(PromptOptions)` control with the `actions` control. Each option is defined by a field using the `field` control. Only fields of the [option data type](methods-auto/option/option-data-type.md) are supported.
+You add the options by using in an `area(PromptOptions)` control with the `actions` control. Each option is defined by a field using the `field` control. Only fields of the [option data type](methods-auto/option/option-data-type.md) are supported.
 
 ```al
-actions
+layout
 {
     area(PromptOptions) 
     {          
