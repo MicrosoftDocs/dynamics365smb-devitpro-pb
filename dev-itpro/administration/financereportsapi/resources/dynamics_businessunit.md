@@ -57,5 +57,5 @@ Here is a JSON representation of the businessUnit resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET businessUnit](../api/dynamics_businessunit_get.md)

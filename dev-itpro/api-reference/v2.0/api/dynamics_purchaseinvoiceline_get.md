@@ -82,7 +82,7 @@ Here is an example of the response.
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [purchaseinvoiceline](../resources/dynamics_purchaseinvoiceline.md)    
 [Delete purchaseinvoiceline](dynamics_purchaseinvoiceline_Delete.md)    

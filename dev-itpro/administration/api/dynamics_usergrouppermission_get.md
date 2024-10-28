@@ -60,13 +60,13 @@ Here is an example of the response.
     "userGroupCode": "D365 COMPANY HUB",
     "roleId": "D365 COMPANY HUB",
     "displayName": "D365 COMPANY HUB",
-    "appID": "00000000-0000-0000-0000-000000000000",
+    "appID": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "scope": "System",
     "extensionName": ""
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [userGroupPermission](../resources/dynamics_usergrouppermission.md)  

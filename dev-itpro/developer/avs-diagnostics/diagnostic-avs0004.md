@@ -18,7 +18,7 @@ The specified ruleset could not be loaded. Details: {0}
 
 Something went wrong when loading a ruleset, retry the operation and contact Partner Center support if it fails again.
 
-## See also
+## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

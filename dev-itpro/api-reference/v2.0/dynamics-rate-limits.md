@@ -55,7 +55,7 @@ There are several areas to consider, which can reduce the amount of calls from a
 
     Deep insert can also be performed in Batch calls.
 
-## See Also
+## Related information
 
 [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)  
 [Best practices on transient errors](/azure/architecture/best-practices/transient-faults)  
