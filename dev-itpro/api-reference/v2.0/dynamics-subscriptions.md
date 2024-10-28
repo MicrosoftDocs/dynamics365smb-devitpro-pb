@@ -101,11 +101,11 @@ Here's a sample notification payload:
 }
 ```
 
-The change type is indicated by the `"changeType"` parameter:
+The `"changeType"` parameter indicates the change type:
 
 - `created`, `updated`, and `deleted` identify the state change for the entity.
 
-- `collection` means [!INCLUDE[prod_short](../../includes/prod_short.md)] sends a notification that many records have been created or changed. A filter is applied to the resource, enabling the subscriber to request all entities satisfying the filter.
+- `collection` means [!INCLUDE[prod_short](../../includes/prod_short.md)] sends a notification that many records are created or changed. A filter is applied to the resource, enabling the subscriber to request all entities satisfying the filter.
 
   Notifications aren't sent immediately when the record changes. By delaying notifications, [!INCLUDE[prod_short](../../includes/prod_short.md)] can ensure that only one notification is sent, even though the entity might have changed several times within a few seconds. By default, the system waits 30 seconds after the first change to an entity before it sends the notification. During the 30-second delay, if more than a 1,000 records are changed, a single `collection` notification is sent&mdash;otherwise, a separate notification is sent for each change. With Business Central on-premises, this time delay and notification limit are configurable.  
 
@@ -194,7 +194,7 @@ The [!INCLUDE[server](../../developer/includes/server.md)] includes several conf
 
 ## Notes for Power Automate flows
 
-Webhook notifications are used to trigger Power Automate flows from events in Business Central. However, the Business Central connector for Power Automate can't process `collection` notifications for flows. With  Business Central online, this condition means that if an event creates or changes more than 1,000 records within 30 seconds, the associated flow isn't triggered. The same applies to Business Central on-premises although the limit on the records depend on the [!INCLUDE[server](../../developer/includes/server.md)] configuration.
+Webhook notifications are used to trigger Power Automate flows from events in Business Central. However, the Business Central connector for Power Automate can't process `collection` notifications for flows. With  Business Central online, this condition means that if an event creates or changes more than 1,000 records within 30 seconds, the associated flow isn't triggered. The same applies to Business Central on-premises although the limits on the records depend on the [!INCLUDE[server](../../developer/includes/server.md)] configuration.
 
 ## Related information
 
