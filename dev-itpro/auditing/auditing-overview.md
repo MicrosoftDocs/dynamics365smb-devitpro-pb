@@ -21,7 +21,7 @@ The auditing capabilities should also enable you to analyze patterns, detect pot
 | Set up auditing on data changes | [Data auditing](/dynamics365/business-central/across-log-changes)|
 | Learn about which security events that are always logged to the change log | [Security auditing](../security/security-auditing.md) |
 | Analyze the changelog, for example to see "Who changed what data, and when," or "Data changes by table/field" | [Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes?toc=/dynamics365/business-central/dev-itpro/toc.json#analyze-data-in-the-change-log) |
-| To classify how you use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with respect to privacy. | [Data classification](/dynamics365/business-central/admin-classifying-data-sensitivity) |
+| To classify how, you use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with respect to privacy. | [Data classification](/dynamics365/business-central/admin-classifying-data-sensitivity) |
 
 
 ## Related information
@@ -30,5 +30,5 @@ The auditing capabilities should also enable you to analyze patterns, detect pot
 [Authorization assessment](/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)  
 [Data auditing](/dynamics365/business-central/across-log-changes)  
 [Security auditing](../security/security-auditing.md)  
-[Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes?toc=/dynamics365/business-central/dev-itpro/toc.json#analyze-data-in-the-change-log)  
+[Ad hoc analysis of change log data](/dynamics365/business-central/across-log-changes?toc=/dynamics365/business-central/dev-itpro/toc.json#analyze-data-in-the-change-log)  
 [Data classification](/dynamics365/business-central/admin-classifying-data-sensitivity)

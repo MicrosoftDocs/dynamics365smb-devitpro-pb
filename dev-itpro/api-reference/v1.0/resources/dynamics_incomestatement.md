@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
     "dateFilter": "date"
 }
 ```
-## See also
+## Related information
 
 
 

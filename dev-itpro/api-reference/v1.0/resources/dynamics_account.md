@@ -58,7 +58,7 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "datetime"
 }
 ```
-## See also
+## Related information
   
 [Get Account](../api/dynamics_account_get.md)  
 [Aged Accounts Payable](dynamics_agedaccountspayable.md)  

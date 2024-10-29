@@ -85,7 +85,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
 [Journal Line](../resources/dynamics_journalline.md)  
 [Get Journal Line](../api/dynamics_journalline_get.md)  
 [Create Journal Line](../api/dynamics_create_journalline.md)  
