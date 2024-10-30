@@ -1,6 +1,6 @@
 ---
-title: "Current API Limits in Dynamics 365 Business Central"
-description: "Learn about constraints on API calls made via OData or SOAP requests."
+title: Current API Limits in Dynamics 365 Business Central
+description: Learn about constraints on API calls made via OData or SOAP requests.
 author: jswymer
 ms.custom: conceptual
 ms.date: 01/22/2024
@@ -35,7 +35,7 @@ See operational limits for [OData](../../administration/operational-limits-onlin
 
 ## Related information
 
-[Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)  
+[Operational limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)  
 [Best practices on transient errors](/azure/architecture/best-practices/transient-faults)  
 [Using OData Batch request](/openspecs/windows_protocols/ms-odata/dd99aa5c-d81e-4eac-9e07-039491356bf6)  
 [Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use)

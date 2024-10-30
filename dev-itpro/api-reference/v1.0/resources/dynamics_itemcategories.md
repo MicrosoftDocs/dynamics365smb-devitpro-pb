@@ -55,7 +55,7 @@ Here is a JSON representation of the itemCategories.
 }
 ```
 
-## See also
+## Related information
 
 
 

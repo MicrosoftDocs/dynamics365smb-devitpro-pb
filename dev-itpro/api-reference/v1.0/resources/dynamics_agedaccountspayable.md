@@ -68,7 +68,7 @@ Here is a JSON representation of the resource.
     "periodLengthFilter": "string"
 }
 ```
-## See also
+## Related information
   
 [Get Aged Accounts Payable](../api/dynamics_agedaccountspayable_get.md)  
 [Aged Accounts Receivable](dynamics_agedaccountsreceivable.md)  

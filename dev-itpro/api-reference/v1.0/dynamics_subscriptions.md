@@ -160,7 +160,7 @@ Custom APIs are also webhook-enabled and will be listed in **webhookSupportedRes
 
 By default, a subscription lives for 3 days if it is not renewed. The value is specified in the CustomSettings.config file under the ApiSubscriptionExpiration entry. There is a maximum number of subscriptions specified in the ApiSubscriptionMaxNumberOfSubscriptions in the CustomSettings.config file.
 
-## See also
+## Related information
 
 [Subscription Resource Type](resources/dynamics_subscription.md)  
 [Get subscriptions](api/dynamics_subscription_get.md)  

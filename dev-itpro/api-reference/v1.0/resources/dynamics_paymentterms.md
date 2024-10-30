@@ -64,7 +64,7 @@ Here is a JSON representation of the paymentTerms.
 }
 ```
 
-## See also
+## Related information
 
 [Get Payment Terms](../api/dynamics_paymentterms_get.md)  
 [Create Payment Terms](../api/dynamics_create_paymentterms.md)  

@@ -48,7 +48,7 @@ Content-type: application/json
 "quantity": 9
 }
 ```
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Sales Order Line](../resources/dynamics_salesorderline.md)  

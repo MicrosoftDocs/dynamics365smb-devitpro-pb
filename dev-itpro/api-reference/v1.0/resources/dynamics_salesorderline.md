@@ -111,7 +111,7 @@ Here is a JSON representation of the resource.
   ]
 ```
 
-## See also
+## Related information
 
 [Get Sales Order Line](../api/dynamics_salesorderline_get.md)  
 [Create Sales Order Line](../api/dynamics_create_salesorderline.md)  
