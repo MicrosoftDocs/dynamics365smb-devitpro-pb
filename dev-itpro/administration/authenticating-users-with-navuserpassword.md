@@ -91,7 +91,7 @@ Learn more in [Configure Configuring [!INCLUDE[webserver](../developer/includes/
 1. Set up other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users with a Business Central password, like you did in [Task 1](#task1).
 2. (Optional) Set web service accounts as needed. For more information, see [How to use an Access Key for SOAP and OData Web Service Authentication](../webservices/web-services-authentication.md#accesskey).
 
-## Relaated information  
+## Related information  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
 [Troubleshooting: SAML2 token errors with Microsoft Entra ID/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
