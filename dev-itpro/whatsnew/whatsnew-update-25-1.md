@@ -39,6 +39,13 @@ New customers automatically get the latest builds of Business Central (25.1). If
 
 ## Good to know
 
+### Business Central Launch Event videos on YouTube
+
+he Business Central Launch Event for the 2024 release wave 2 took place on October 8th, 20241. 
+
+On October 18, we held the Business Central Launch Event for the 2024 release wave 2. This online event featured various sessions to prepare partners for the new and improved features in the 2024 release wave 2. 
+Follow along as we're posting Business Central Launch Event sessions to the new YouTube channel. All 35 videos will be added to the channel by December 31, 2023. Subscribe now and watch the videos: [aka.ms/BCYouTube](https://aka.ms/BCYouTube). Find the rest of the launch event videos on: [aka.ms/BCLE](https://aka.ms/BCLE).
+
 ### Recent service features
 
 The following Business Central online service features were recently rolled out.
