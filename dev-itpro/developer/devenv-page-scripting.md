@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 09/10/2024
+ms.date: 10/30/2024
 ms.custom: bap-template 
 ---
 
@@ -14,6 +14,8 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The page scripting tool in the Business Central web client lets you record your interactions with the user interface (UI), such as opening pages, selecting actions, filling in fields, and so on. You can then replay the recording to automatically replicate the exact same actions in the UI that were done during recording. As the recording is replayed, you receive real-time status feedback on whether an action succeeds or fails. A primary use of the page scripting tool is testing business processes and scenarios in the application and validating they continue to work as expected after changes or updates to the application. This testing is often referred to as user acceptance testing (UAT). The page scripting tool makes the testing easier and faster because it eliminates the need to manually go through each scenario in the UI.
+
+You can use the page scripting on any Business Central environment type, including on-premises, online (production and sandbox), and docker.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
@@ -75,7 +77,7 @@ This section outlines the basic steps to making a recording with the page script
    - To pause recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button in the control bar.
    - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar.
    - To delete the last captured step, select **...** next to the step and then select **Delete**.
-   - To hide the page scripting pane, select the upper most ![Shows the X button that hides the page scripting pane](media/page-scripting-hide-button.png) in the top right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
+   - To hide the page scripting pane, select the uppermost ![Shows the X button that hides the page scripting pane](media/page-scripting-hide-button.png) in the top right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
    - To cancel recording and exit the page scripting tool, select the **Close recording** ![Shows the X button that closes the page scripting pane](media/page-scripting-hide-button.png) button in the **Recording** bar.
 
 1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button.
@@ -222,7 +224,7 @@ You can run page scripts in your own pipelines, using the stand-alone bc-replay 
 
 Your machine must meet the following requirements:
 
-- NodeJs version 16.14.0 or later. You can download install the latest version from [https://nodejs.org](https://nodejs.org/en/download/package-manager).
+- NodeJs version 16.14.0 or later. You can download and install the latest version from [https://nodejs.org](https://nodejs.org/en/download/package-manager).
 - Windows PowerShell 7 or later. Learn more about installing PowerShell at [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 
 ### Preparation
@@ -250,7 +252,7 @@ Create the following folders on your machine:
 
 ### Get started running scripts
 
-To run the scripts, you'll need to know URL of your Business Central web client, like `http://localhost:8080/bc250/`.
+To run the scripts, you need to know URL of your Business Central web client, like `http://localhost:8080/bc250/`.
 
 1. Save the scripts you want to run to the folder you created for storing the scripts (For example, `c:\bc-replay\recordings`.).
 1. Run Window PowerShell as an administrator.
@@ -260,7 +262,7 @@ To run the scripts, you'll need to know URL of your Business Central web client,
    cd bc-replay
    ```
 
-1. Run the command to run scripts.
+1. To run scripts, use the following command.
 
    Use the following command to run a specific script, for example, `recording-1.yml`: 
 
@@ -307,15 +309,15 @@ File glob pattern to select the tests recordings to run
 
 `-StartAddress`
 
-The URLto the deployed web client.
+The URL to the deployed web client.
 
 `-Authentication`
 
-The authentication to use against the web client: `Windows`, `AAD`, `UserPassword`. `Windows` is default. It doesn't support multi-factor authentication. Use an account that requires only a username and password to sign in for your tests.
+The authentication to use against the web client: `Windows`, `AAD`, `UserPassword`. `Windows` is default. It doesn't support multifactor authentication. Use an account that requires only a username and password to sign in for your tests.
 
 `-UserNameKey` and `-PasswordKey`
 
-When `-Authentication` is set to `AAD` or `UserPassword` then a username and password must be given. These must be transferred as environment variables and `-UserNameKey` and `-PasswordKey` are used to specify which environment variables contain them.
+When `-Authentication` is set to `AAD` or `UserPassword` then a username and password must be given. The values must be transferred as environment variables and `-UserNameKey` and `-PasswordKey` are used to specify which environment variables contain them.
 
 `-Headed`
 
