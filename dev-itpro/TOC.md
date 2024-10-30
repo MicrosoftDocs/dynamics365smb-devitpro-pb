@@ -1834,9 +1834,6 @@
 #### [Monitoring long-running SQL queries](administration/monitor-long-running-sql-queries-event-log.md)
 #### [Troubleshooting: Analyzing long-running SQL queries involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to monitor long-running SQL queries](administration/troubleshoot-long-running-queries-using-event-log.md)
-### Monitoring and Analyzing Using telemetry
-#### [Telemetry overview](administration/telemetry-overview.md)
-#### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 ### [Understanding session timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 ### [Registering your deployment on Azure](administration/register-app-azure.md)
