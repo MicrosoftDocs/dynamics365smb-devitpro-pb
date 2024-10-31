@@ -44,11 +44,13 @@ New customers automatically get the latest builds of Business Central (25.1). If
 
 The Business Central Launch Event for the 2024 release wave 2 took place on October 18, 2024. This online event aimed to provide information about the new features and enhancements in the 2024 release wave 2 to resellers, partners, ISVs, and consultants. You can find over 40 videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE).
 
-### Sales order agent in Business Central announcements
+### Sales Order Agent in Business Central announcements
 
-In October, the new sales order agent was announced in the Dynamics 365 blog post [Transform work with autonomous agents across your business processes](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes) and at the Microsoft Business Application Launch Event. The sale order agent automates routine sales order tasks, allowing sales teams to focus more on customer engagement while improving order accuracy and speed.
+In October, the upcoming **Sales Order Agent** was announced in the Dynamics 365 blog post [Transform work with autonomous agents across your business processes](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes) and at the Microsoft Business Application Launch Event. This agent automates routine sales order tasks, allowing sales teams to focus more on customer engagement while improving order accuracy and speed.
 
 To learn more, you can watch the [Business Application Launch Event video](https://vshow.on24.com/vshow/BALE?regPageId=21469#exhibits/Home1) (registration required) or read the highlights in the Dynamics 365 blog [2024 release wave 2 launches with hundreds of Copilot capabilities](https://aka.ms/BALE102924). Also, check out this short [video](https://www.youtube.com/watch?v=6icbmbLc_Og) on YouTube for a quick overview.
+
+Follow the release plan at [Use Copilot with agent capabilities to automate sales order-taking](/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process?branch=main).
 
 ### Directions EMEA 2024
 
