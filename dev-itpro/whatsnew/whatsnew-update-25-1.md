@@ -45,13 +45,15 @@ The Business Central Launch Event for the 2024 release wave 2 took place on Octo
 
 ### Sales Order agent announcement
 
-The Sales Order agent in Dynamics 365 Business Central was recently announced in the Dynamics 365 blog [Transform work with autonomous agents across your business processes](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes) and at the Microsoft Business Application Launch Event, which highlighted Dynamics 365 Copilot capabilities offered in 2024 release wave 2.
+In October, the new Sales Order agent was announced in the Dynamics 365 blog post [Transform work with autonomous agents across your business processes](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes) and at the Microsoft Business Application Launch Event. The Sale Order agent automates routine sales order tasks, allowing sales teams to focus more on customer engagement while improving order accuracy and speed.
 
-The Sales Order agent streamlines how a customer places an order, automating routine sales order processing tasks to help sales teams focus more time on customer engagement while ensuring better order accuracy and faster fulfillment. You can learn more by exploring the Business Application Launch Event video at [https://info.microsoft.com/ww-landing-microsoft-business-applications-launch-event-on-demand.html?lcid=en-us](https://info.microsoft.com/ww-landing-microsoft-business-applications-launch-event-on-demand.html?lcid=en-us) (requires registration) or reading the highlights in the Microsoft Dynamics 365 blog at [https://aka.ms/BALE102924](https://aka.ms/BALE102924). Or, check out this  video on [YouTube](https://www.youtube.com/watch?v=6icbmbLc_Og).
+To learn more, you can watch the [Business Application Launch Event video](https://vshow.on24.com/vshow/BALE?regPageId=21469#exhibits/Home1) (registration required) or read the highlights in the Dynamics 365 blog [2024 release wave 2 launches with hundreds of Copilot capabilities](https://aka.ms/BALE102924). Also, check out this short [video](https://www.youtube.com/watch?v=6icbmbLc_Og) on YouTube for a quick overview.
 
 ### Directions EMEA 2024
 
-Directions EMEA 2024 is being held November 6-8 in Vienna. Directions EMEA is the "Go To" place where Dynamics partners share the future. The focus is on helping the SMB market unlock its full potential in technical, business development and strategy with ERP, CRM, and Cloud solutions, including Microsoft Dynamics 365 Business Central. Learn more and register at [Directions EMEA 2024](https://www.directionsforpartners.com/conferences-and-events/directions/emea-2024).
+Directions EMEA 2024 will take place from November 6-8 in Vienna. Directions EMEA is the premier event for Dynamics partners to gather and share insights on the future of the industry. The conference focuses on helping the SMB market unlock its full potential in technical, business development and strategy with ERP, CRM, and Cloud solutions, including Microsoft Dynamics 365 Business Central. Learn more and register at
+
+To learn more about this event and to register, visit [Directions EMEA 2024](https://www.directionsforpartners.com/conferences-and-events/directions/emea-2024).
 
 ### Features becoming mandatory soon
 
