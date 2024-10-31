@@ -16,7 +16,7 @@ Would you like to know what changes are in update 25.1? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes on Microsoft Support at [Update 25.1 for Business Central 2024 Release Wave 1](https://support.microsoft.com/help/5043981). Download the on-premises files from the Microsoft Download Center at [Update 25.1 for Business Cenral](https://www.microsoft.com/en-us/download/details.aspx?id=106245)<!--(https://aka.ms/BCDownload)-->.
+Learn about the hotfixes on Microsoft Support at [Update 25.1 for Business Central 2024 Release Wave 1](https://support.microsoft.com/help/5043981). Download the on-premises files from the Microsoft Download Center at [Update 25.1 for Business Central](https://www.microsoft.com/en-us/download/details.aspx?id=106245)<!--(https://aka.ms/BCDownload)-->.
 
 ## Feature changes
 
@@ -41,18 +41,17 @@ New customers automatically get the latest builds of Business Central (25.1). If
 
 ### Business Central Launch Event videos on YouTube
 
-he Business Central Launch Event for the 2024 release wave 2 took place on October 8th, 20241. 
+The Business Central Launch Event for the 2024 release wave 2 took place on October 18, 2024. This online event aimed to provide information about the new features and enhancements in the 2024 release wave 2 to resellers, partners, ISVs, and consultants. You can find over 40 videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE).
 
-On October 18, we held the Business Central Launch Event for the 2024 release wave 2. This online event featured various sessions to prepare partners for the new and improved features in the 2024 release wave 2. 
-Follow along as we're posting Business Central Launch Event sessions to the new YouTube channel. All 35 videos will be added to the channel by December 31, 2023. Subscribe now and watch the videos: [aka.ms/BCYouTube](https://aka.ms/BCYouTube). Find the rest of the launch event videos on: [aka.ms/BCLE](https://aka.ms/BCLE).
+### Sales Order agent announcement
 
-### Recent service features
+The Sales Order agent in Dynamics 365 Business Central was recently announced in the Dynamics 365 blog [Transform work with autonomous agents across your business processes](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes) and at the Microsoft Business Application Launch Event, which highlighted Dynamics 365 Copilot capabilities offered in 2024 release wave 2.
 
-The following Business Central online service features were recently rolled out.
+The Sales Order agent streamlines how a customer places an order, automating routine sales order processing tasks to help sales teams focus more time on customer engagement while ensuring better order accuracy and faster fulfillment. You can learn more by exploring the Business Application Launch Event video at [https://info.microsoft.com/ww-landing-microsoft-business-applications-launch-event-on-demand.html?lcid=en-us](https://info.microsoft.com/ww-landing-microsoft-business-applications-launch-event-on-demand.html?lcid=en-us) (requires registration) or reading the highlights in the Microsoft Dynamics 365 blog at [https://aka.ms/BALE102924](https://aka.ms/BALE102924). Or, check out this  video on [YouTube](https://www.youtube.com/watch?v=6icbmbLc_Og).
 
-- [Manage environment updates more flexibly (preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly)
+### Directions EMEA 2024
 
-   With this feature, we establish a five-month update period for major updates and the possibility to opt in to minor updates. Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md).
+Directions EMEA 2024 is being held November 6-8 in Vienna. Directions EMEA is the "Go To" place where Dynamics partners share the future. The focus is on helping the SMB market unlock its full potential in technical, business development and strategy with ERP, CRM, and Cloud solutions, including Microsoft Dynamics 365 Business Central. Learn more and register at [Directions EMEA 2024](https://www.directionsforpartners.com/conferences-and-events/directions/emea-2024).
 
 ### Features becoming mandatory soon
 
