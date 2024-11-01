@@ -41,7 +41,7 @@ New customers automatically get the latest builds of Business Central (25.1). If
 
 ### Enhancements to chat with Copilot coming in November
 
-During November, we're releasing the [Experience enhancements to chat with Copilot](//dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/experience-enhancements-chat-copilot) feature.
+During November, we'll be releasing the [Experience enhancements to chat with Copilot](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/experience-enhancements-chat-copilot) feature.
 
 ### Business Central Launch Event videos on YouTube
 
