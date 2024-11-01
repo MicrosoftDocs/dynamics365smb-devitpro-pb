@@ -20,7 +20,7 @@ To manage access at the environment level, you can assign a Microsoft Entra grou
 From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Microsoft Entra ID.
 
 > [!NOTE]
-> The restrictions imposed by a security group assigned to an environment don't apply to administrators. Internal administrators can freely sign in to all environments, regardless of the assigned group. Access for delegated administrators is determined by the Partner access setting on the environment.
+> The restrictions imposed by a security group assigned to an environment don't apply to administrators. Internal administrators can freely sign in to all environments, regardless of the assigned group. Access for delegated administrators is determined by the **Partner access** setting on the environment.
 
 ### Assign, change, or remove a group
 
@@ -46,7 +46,7 @@ Before you can assign a Microsoft Entra group to an environment, the group must 
 
 ## Manage access for delegated administrators and multitenant applications
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] customers working with multiple partners may want to control which partner(s) and [multitenant application(s)](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow) can access and administer which environment(s). Internal global administrators can use the **Partner access** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to control whether an environment is accessible and administrable by delegated administrators and multitenant applications, and, if so, to control from which Entra tenant(s) these delegated administrators and multitenant applications should come to do so.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] customers working with multiple partners might want to control which partners and [multitenant applications](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow) can access and administer which environments. Internal global administrators can use the **Partner access** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to control whether an environment is accessible and administrable by delegated administrators and multitenant applications, and, if so, to control from which Entra tenant(s) these delegated administrators and multitenant applications should come to do so.
 
 > [!IMPORTANT]
 > Up to ten Entra tenants can be allowlisted per environment to enable them to access and administer the environment.
@@ -67,6 +67,7 @@ To turn access on or off or to limit access to selected home Entra tenants, comp
 5. Select **Save** and accept the confirmation dialog. The change takes effect immediately.
 
 ### Considerations
+
 - By default, environments are set up to allow all partner access. To ensure partners that get access to your tenant in the future do not automatically gain access to an environment, set the environment up not to allow access to all partner tenants and explicitly allow the partner(s) that currently has(have) access to your tenant to have access to the environment.
 - The Partner access settings on an environment are preserved if tenant-level access is removed, for example when a GDAP relationship has ended or application consent to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API has been revoked. Should the tenant-level access be re-enabled, the partner would automatically have access to the environment again. To avoid this, change the Partner access setting on the environment after the tenant-level access is removed.
 - The Partner access settings on an environment are preserved during environment lifecycle operations, such as [copy](tenant-admin-center-environments-copy.md), [restore](tenant-admin-center-backup-restore.md), and [transfer](tenant-admin-center-environments-move.md).
