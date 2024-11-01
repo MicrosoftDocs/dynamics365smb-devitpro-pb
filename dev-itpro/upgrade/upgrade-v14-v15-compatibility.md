@@ -38,13 +38,13 @@ The following table lists the Business Central 23 update versions and the minimu
 
 |V23 update|V24 update|V25 update|
 |-|-|-|
-|23.0 to 23.5|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000) |25.0|
+|23.0 to 23.5|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000) |[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|
 |[23.6](https://support.microsoft.com/help/5037541)|[24.1](https://support.microsoft.com/help/5038531)|25.0|
 |[23.7](https://support.microsoft.com/help/5038530) |[24.2](https://support.microsoft.com/help/5040044)|25.0|
 |[23.8](https://support.microsoft.com/help/5040043)|[24.3](https://support.microsoft.com/help/5041133)|25.0|
 |[23.9](https://support.microsoft.com/help/5041132) |[24.4](https://support.microsoft.com/help/5042530)|25.0|
-|[23.10](https://support.microsoft.com/help/5042529)|24.5|25.0|
-|[23.11](https://support.microsoft.com/help/5043980)|24.6|25.0|
+|[23.10](https://support.microsoft.com/help/5042529)|[24.5](https://support.microsoft.com/help/5043981)|25.0|
+|[23.11](https://support.microsoft.com/help/5043980)|[24.6](https://support.microsoft.com/help/5046146)|25.0|
 |[23.12](https://support.microsoft.com/help/5046145)|[24.7](https://support.microsoft.com/help/5047903)|[25.1](https://support.microsoft.com/help/5047904)|
 |[23.13](https://support.microsoft.com/help/5047902)<sup>[\[1\]](#1)</sup> |24.8|25.2|
 
@@ -56,7 +56,7 @@ The following table lists the Business Central 22 update versions and the minimu
 
 |V22 update|V23 update|V24 update|V25 update|
 |-|-|-|-|
-|22.0 to 22.5|[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)  |[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|25.0|
+|22.0 to 22.5|[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)  |[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|
 |[22.6](https://support.microsoft.com/help/5031951) |[23.1](https://support.microsoft.com/help/5032755)|24.0|25.0|
 |[22.7](https://support.microsoft.com/help/5032754)|[23.2](https://support.microsoft.com/help/5033775)|24.0|25.0|
 |[22.8](https://support.microsoft.com/help/5033776) |[23.3](https://support.microsoft.com/help/5034720)|24.0|25.0|
@@ -67,8 +67,8 @@ The following table lists the Business Central 22 update versions and the minimu
 |[22.13](https://support.microsoft.com/help/5038529)|[23.8](https://support.microsoft.com/help/5040043)|[24.2](https://support.microsoft.com/help/5040044)|25.0|
 |[22.14](https://support.microsoft.com/help/5040042) |[23.9](https://support.microsoft.com/help/5041132)|[24.3](https://support.microsoft.com/help/5041133)|25.0|
 |[22.15](https://support.microsoft.com/help/5041131) |[23.10](https://support.microsoft.com/help/5042529)|[24.4](https://support.microsoft.com/help/5042530)|25.0|
-|[22.16](https://support.microsoft.com/help/5042528) |23.11|24.5|25.0|
-|[22.17](https://support.microsoft.com/help/5043979)|23.12|24.6|25.0|
+|[22.16](https://support.microsoft.com/help/5042528) |[23.11](https://support.microsoft.com/help/5043980)|[24.5](https://support.microsoft.com/help/5043981)|25.0|
+|[22.17](https://support.microsoft.com/help/5043979)|[23.12](https://support.microsoft.com/help/5046145)|[24.6](https://support.microsoft.com/help/5046146)|25.0|
 |[22.18](https://support.microsoft.com/help/5046144)<sup>[\[1\]](#1)</sup> |[23.13](https://support.microsoft.com/help/5047902)|[24.7](https://support.microsoft.com/help/5047903)|[25.1](https://support.microsoft.com/help/5047904)|
 
 Get a list of all available updates for Business Central 2023 Release Wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2023 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51).
