@@ -67,7 +67,7 @@ actions
                 ToolTip = 'Ask Copilot for help with a specific task.';
             }
             
-            action(MyPromptAction)
+            action(MyNextPromptAction)
             {
                 Caption = 'Find all [customers]?';
                 ToolTip = 'Ask Copilot for help with a specific task.';
