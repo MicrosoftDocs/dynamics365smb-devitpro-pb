@@ -23,7 +23,6 @@ Learn about the hotfixes on Microsoft Support at [Update 25.1 for Business Centr
 - [Change the data search method in lists (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/change-data-search-method-lists)
 - [Report sustainability entries with financial reports (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/reporting-sustainability-entries-financial-reports)
 - [VAT Return feature now available - Czechia (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/vat-return-czechia)
-- [Experience enhancements to chat with Copilot (public preview)](//dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/experience-enhancements-chat-copilot)
 - [Use new service providers in the e-documents framework (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-new-service-providers-e-documents-framework)
 
 ## Localization updates
@@ -39,6 +38,10 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 New customers automatically get the latest builds of Business Central (25.1). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
 
 ## Good to know
+
+### Enhancements to chat with Copilot coming in November
+
+During November, we're releasing the [Experience enhancements to chat with Copilot](//dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/experience-enhancements-chat-copilot) feature.
 
 ### Business Central Launch Event videos on YouTube
 
