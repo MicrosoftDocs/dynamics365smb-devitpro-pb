@@ -4,9 +4,8 @@ description: This article describes features in the admin center that help contr
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-
 ms.topic: how-to
-ms.date: 11/03/2022
+ms.date: 11/01/2022
 ms.custom: bap-template
 ---
 # Manage Access to Environments
@@ -24,7 +23,7 @@ From the **Environments** page, you see the currently assigned group in the **Se
 
 ### Assign, change, or remove a group
 
-Before you can assign a Microsoft Entra group to an environment, the group must be created in your Microsoft Entra tenant. For more information, see [Create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
+Before you can assign a Microsoft Entra group to an environment, the group must be created in your Microsoft Entra tenant. Learn more at [Create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
 
 1. Select **Environments**, then select the environment on which you want to assign, change, or remove the group.
 2. On the **Environment Details** page, the currently assigned group is shown under **Security Group**.
