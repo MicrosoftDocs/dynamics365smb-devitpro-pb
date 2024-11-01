@@ -19,7 +19,9 @@ A prompt guide is a predefined list of prompt texts that users can choose from w
 
 ## Predefined prompts
 
-A prompt guide is implemented by using a specific action area on `PromptDialog` pages, called `PromptGuide`. The `PromptGuide` area is then defined by a list of predefined prompts that are shown to the user when the `PromptDialog` page is opened. You define these predefined prompts as questions or statements that the user can select from. Examples of predefined prompts could be "How can I...?" or "Show me the latest..." to inspire the user to ask for help or to get the latest information.
+A prompt guide is implemented by using a specific action area on `PromptDialog` pages, called `PromptGuide`. The `PromptGuide` area is then defined by a list of predefined prompts that are shown to the user when the `PromptDialog` page is opened. You define these predefined prompts as questions or statements that the user can select from. Examples of predefined prompts could be "How can I...?" or "Show me the latest..." to inspire the user to ask for help or to get the latest information. The following example from the **Analyze Bank Account Reconciliations** shows how a prompt guide is implemented with the options to modify the analysis view. 
+
+:::image type="content" source="media/promptdialog-analyze-bank.png" alt-text="Promptdialog for analyze bank account reconciliation":::
 
 ### Keep in mind
 
