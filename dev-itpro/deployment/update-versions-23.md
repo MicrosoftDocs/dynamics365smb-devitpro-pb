@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 09/30/2024
+ms.date: 11/01/2024
 ms.custom: bap-template
 ---
 
@@ -28,6 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5047902](https://support.microsoft.com/help/5047902)|Update 23.13 |November 2024|Application Build 23.13.25917</br>Platform Build 23.0.25896|
 |[5046145](https://support.microsoft.com/help/5046145)|Update 23.12 |October 2024|Application Build 23.12.24784</br>Platform Build 23.0.24742|
 |[5043980](https://support.microsoft.com/help/5043980)|Update 23.11 |September 2024|Application Build 23.11.23421</br>Platform Build 23.0.23293|
 |[5042529](https://support.microsoft.com/help/5042529)|Update 23.10 |August 2024|Application Build 23.10.22604</br>Platform Build 23.0.22561|
@@ -47,8 +48,8 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v23.md)  
-[Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates](update-versions-22.md)  
-[Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates](update-versions-21.md)  
+[Dynamics 365 Business Central On-Premises 2024 Release Wave 1 Updates](update-versions-24.md)  
+[Dynamics 365 Business Central On-Premises 2024 Release Wave 2 Updates](update-versions-25.md)  
 [Dynamics 365 Business Central On-Premises Spring 2019 Updates](update-versions-14.md)  
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements](system-requirements-business-central-v23.md)  
