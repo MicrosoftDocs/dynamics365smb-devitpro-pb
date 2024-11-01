@@ -99,7 +99,7 @@ GET https://{businesscentralPrefix}/api/v1.0/companies({companyid})/salesCreditM
 **Response** 
 The PDF document in binary format.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 
