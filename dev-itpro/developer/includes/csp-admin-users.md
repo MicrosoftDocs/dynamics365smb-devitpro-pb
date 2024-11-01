@@ -9,7 +9,7 @@ In the Microsoft Partner Center documentation, you can learn how to [request a r
 
 ### Add users from your own organization
 
-Typically, a partner organization includes employees with different responsibilities. You can assign different roles to users in your Partner Center environment depending on their responsibilities. For more information, see [Roles, permissions, and workspace access for users](/partner-center/account-settings/permissions-overview).
+Typically, a partner organization includes employees with different responsibilities. You can assign different roles to users in your Partner Center environment depending on their responsibilities. Learn more in [Roles, permissions, and workspace access for users](/partner-center/account-settings/permissions-overview).
 
 Employees in your partner organization can access [!INCLUDE[prod_short](prod_short.md)] environments in your customers' tenants if they are a member of a security group that is assigned an Entra role that allows for administration and access of [!INCLUDE[prod_short](prod_short.md)] in a *granular delegated administration privileges (GDAP)* relationship set up with the customer. These partner users in a customer tenant are called *delegated administrators* in daily shorthand. For more information, see [Delegated Administrator Access to Business Central Online](../../administration/delegated-admin.md).  
 
