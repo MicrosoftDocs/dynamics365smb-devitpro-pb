@@ -44,7 +44,7 @@ In an end-to-end scenario, such as receiving an email to purchase some items, th
 
 In the [!INCLUDE [prod_short](includes/prod_short.md)] system application, you find the "AOAI Chat Messages" codeunit. It's located on GitHub in the following path: [https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/AI/src/Azure%20OpenAI/Chat%20Completion/AOAIChatMessages.Codeunit.al](https://github.com/microsoft/BCApps/blob/main/src/System%20Application/App/AI/src/Azure%20OpenAI/Chat%20Completion/AOAIChatMessages.Codeunit.al). 
 
-For more documentation, see [“AOAI Chat Messages” codeunit](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages).
+Learn more in [“AOAI Chat Messages” codeunit](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-messages).
 
 The “AOAI Chat Messages” codeunit has many methods, the following methods are some of them:
 
@@ -59,7 +59,7 @@ The “AOAI Chat Messages” codeunit has many methods, the following methods ar
 
 ## Code snippet
 
-The following code snippet demonstrates how to use the function calling tool in the Azure OpenAI service. The example shows how to set the temperature to 0 for fixed JSON output, add a tool, set the tool choice to the added tool, mock user input, call generate, and process the output.
+The following code snippet demonstrates how to use the function calling tool in the Azure OpenAI service. The example shows how to set the temperature to 0 for a fixed JSON output, add a tool, set the tool choice to the added tool, mock user input, call generate, and process the output.
 
 
 ```al
@@ -133,7 +133,7 @@ procedure ProcessWeatherCopilotResponse(Response: JsonObject)
  
 ## Things to consider
 
-When using the Function Calling tool, you can set the tool choice to either `Auto` or `Specific` function in the `SetToolChoice` method. `Auto` is the default if not set. The response can be either a function or a regular chat message response. Setting it to `Specific` function guarantees the response always calls the function. Even if the intent and context don't match the function, as such, the developer should validate the arguments.
+When using the Function Calling tool, you can set the tool choice to either `Auto` or `Specific` function in the `SetToolChoice` method. `Auto` is the default if it's not set. The response can be either a function or a regular chat message response. Setting it to `Specific` function guarantees the response always calls the function. Even if the intent and context don't match the function, as such, the developer should validate the arguments.
 
 ## Related information
 
