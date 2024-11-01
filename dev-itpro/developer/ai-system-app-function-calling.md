@@ -24,18 +24,21 @@ The concept of function calling enables you to provide a description of function
 
 ### Determining intent
 
-There are many scenarios that you can use function calling for, one is to determine the intent of the input:
+Function calling can be used to determine the intent of the input. For example, consider two functions: "Document lookup" and "Item lookup".
 
-An example could be the following. You have two functions, "Document lookup" and "Item lookup". If the user input is "I need the items from the last invoice", the inferred intent would be to trigger a document lookup, as it requires information from the last invoice. If the user input is instead "I need two red bicycles", the inferred intent would be to perform an item lookup, as it aims to locate the closest match to red bicycles.
+- If the user input is "I need the items from the last invoice", the inferred intent would be to trigger a document lookup.
+- If the user input is instead "I need two red bicycles", the inferred intent would be to perform an item lookup, as it aims to locate the closest match to red bicycles.
 
 ### End-to-end scenario
 
-In an end-to-end scenario, where you receive an email to purchase some items, the steps look something like this: 
+In an end-to-end scenario, such as receiving an email to purchase some items, the steps look something like this: 
 
 1. Determine the intent of the email:  
-  If it's just a regular email, that the customer would like to purchase items etc.
-2. Extract the contact information if the contact doesn't already exist.
-3. Extract what items the customer would like to purchase and create an invoice.  
+  If it's just a regular email where the customer would like to, for example, purchase items.
+2. Extract the contact information:  
+  Extract the contact information f the contact doesn't already exist.
+3. Extract purchase details:  
+  Extract the items the customer would like to purchase and create an invoice.  
 
 ## Function calling - "AOAI Chat Messages" codeunit
 
