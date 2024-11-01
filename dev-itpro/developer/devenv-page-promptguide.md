@@ -66,6 +66,12 @@ actions
                 Caption = 'How can I...?';
                 ToolTip = 'Ask Copilot for help with a specific task.';
             }
+            
+            action(MyPromptAction)
+            {
+                Caption = 'Find all [customers]?';
+                ToolTip = 'Ask Copilot for help with a specific task.';
+            }
         }
     }
 }
