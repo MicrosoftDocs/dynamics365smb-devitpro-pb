@@ -59,5 +59,5 @@ Here is a JSON representation of the currencyExchangeRate resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET currencyExchangeRate](../api/dynamics_currencyexchangerate_get.md)

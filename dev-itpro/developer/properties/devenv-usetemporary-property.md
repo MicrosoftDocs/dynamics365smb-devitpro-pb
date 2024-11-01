@@ -15,7 +15,7 @@ The UseTemporary property is applicable to the following types:
 - [UseTemporary Property (XMLPort)](devenv-usetemporary-xmlport-property.md) 
 - [UseTemporary Property (Report)](devenv-usetemporary-report-property.md)
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)   
 [XMLPort Object](../devenv-xmlport-object.md)    
 [Report Object](../devenv-report-object.md)  

@@ -1,8 +1,8 @@
 ---
-title: "ModalPageHandler Attribute"
+title: "ModalPageHandler attribute"
 description: "Specifies that the method is a ModalPageHandler method, which handles specific pages that are run modally."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,13 +11,13 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# ModalPageHandler Attribute
+# ModalPageHandler attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
 Specifies that the method is a ModalPageHandler method, which handles specific pages that are run modally.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -64,6 +64,6 @@ The **ModalPageHandler** method is called when a modal page is invoked in the co
 
 You use handler methods to automate tests by handling instances when user interaction is required by the code that is being tested by the test method. In these instances, the handler method is run instead of the requested user interface. The handler method should simulate the user interaction for the test case, such as validating messages, making selections, or entering values. You declare a handler type attribute on the method. For more information about handler methods, see [Create Handler Methods](../devenv-creating-handler-methods.md).
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

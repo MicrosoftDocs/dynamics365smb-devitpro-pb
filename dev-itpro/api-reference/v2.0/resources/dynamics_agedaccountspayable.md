@@ -73,5 +73,5 @@ Here is a JSON representation of the agedAccountsPayable resource.
 
 
 
-## See Also
+## Related information
 [GET agedAccountsPayable](../api/dynamics_agedAccountsPayable_Get.md)

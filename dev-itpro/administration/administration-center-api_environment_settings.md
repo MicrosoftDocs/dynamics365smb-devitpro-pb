@@ -6,13 +6,13 @@ ms.topic: conceptual
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 10/30/2024
 ---
 # Business Central Admin Center API - Environment Settings
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-Allows you to manage environment-specific settings such as the AppInsights key or the update window. 
+Allows you to manage environment-specific settings such as the AppInsights key or the update window.
 
 ## Get Update Settings
 
@@ -60,7 +60,7 @@ Returns a list of time zones and basic information associated with them, such as
 ```
 GET /admin/v2.22/applications/settings/timezones
 ```
- 
+
 ### Response
  
 Returns a wrapped array of time zones.
@@ -127,6 +127,7 @@ Example with UTC parameter set:
 ### Response
 
 Returns the updated settings
+
 ```
 {
   "preferredStartTimeUtc": datetime, // Start of environment update window
@@ -161,7 +162,7 @@ Sets the connection string or instrumentation key an environment uses for Azure 
 
 ```
 Content-Type: application/json
-PUT /admin/v2.22/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+POST /admin/v2.22/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 ### Route Parameters
@@ -247,7 +248,7 @@ POST /admin/v2.22/applications/{applicationFamily}/environments/{environmentName
 
 ```
 {
-  "Value": GUID, // The object Id of the Microsoft Entra group, "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1"
+  "Value": GUID, // The object Id of the Microsoft Entra group, "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 }
 ```
 
@@ -406,7 +407,6 @@ POST /admin/v2.22/applications/{applicationFamily}/environments/{environmentNa
 ### Response
 
 Returns 200 if successful.
-
 
 ## See Also
 

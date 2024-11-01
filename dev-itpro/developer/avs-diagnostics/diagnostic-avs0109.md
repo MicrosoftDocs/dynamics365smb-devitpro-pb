@@ -18,7 +18,7 @@ The per-tenant extension (or one of its dependencies) cannot be deployed as it h
 
 A common reason for this error is that a build already has been published directly from Visual Studio Code in DEV scope.
 
-## See also
+## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing extensions](../devenv-dev-overview.md)  

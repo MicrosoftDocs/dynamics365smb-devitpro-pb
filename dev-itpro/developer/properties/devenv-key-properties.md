@@ -22,6 +22,6 @@ The keys associated with a table have properties that describe their behavior, j
 |[SQLIndex](./devenv-sqlindex-property.md)|Sets the actual fields and field order that are used in the corresponding index on SQL Server.|  
 |[Unique](devenv-unique-property.md)|Sets whether the value of a key must be unique.| 
 
-## See Also  
+## Related information  
 
 [Table Keys](../devenv-table-keys.md)

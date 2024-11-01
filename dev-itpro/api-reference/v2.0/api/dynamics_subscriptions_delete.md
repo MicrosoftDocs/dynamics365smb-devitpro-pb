@@ -48,7 +48,7 @@ No response body.
 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [Subscriptions](../resources/dynamics_subscriptions.md)    
 [Get subscriptions](dynamics_subscriptions_Get.md)    

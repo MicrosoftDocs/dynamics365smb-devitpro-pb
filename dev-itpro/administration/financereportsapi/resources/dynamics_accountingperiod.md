@@ -60,5 +60,5 @@ Here is a JSON representation of the accountingPeriod resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET accountingPeriod](../api/dynamics_accountingperiod_get.md)

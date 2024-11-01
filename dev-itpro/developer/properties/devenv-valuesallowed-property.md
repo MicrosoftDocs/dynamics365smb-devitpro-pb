@@ -1,8 +1,8 @@
 ---
-title: "ValuesAllowed Property"
+title: "ValuesAllowed property"
 description: "Sets the values that are allowed in the field."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets the values that are allowed in the field.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -34,6 +34,6 @@ Separate the values with a comma. For example, if you only want the user to ente
   
 The property setting is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table. If a field is updated through application code, then the **ValuesAllowed** property is not validated.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

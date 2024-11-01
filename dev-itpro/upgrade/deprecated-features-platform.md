@@ -40,6 +40,12 @@ This article describes the features that are up for removal or that have been re
 
 [!INCLUDE[soap_deprecacation](../includes/soap_deprecation_note.md)]
 
+### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 26, this is no longer possible. |
+
 ## Changes in 2024 release wave 2 (version 25.0)
 
 ### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (warning)
@@ -73,12 +79,6 @@ This article describes the features that are up for removal or that have been re
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed | For Business Central installations on-premises, it's possible to control many server settings. Two of these control the way the Business Central server add hints to SQL statements: DisableQueryHintForceOrder and DisableQueryHintLoopJoin. Starting in version 24, these server settings will no longer be available.|
-
-### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
-
-|Removed or Replaced? |Why?|
-|---------|---------|
-|Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 24, this is no longer possible. |
 
 ### <a name="soap-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a SOAP endpoint (warning)
 

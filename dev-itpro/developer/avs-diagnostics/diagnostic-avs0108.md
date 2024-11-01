@@ -18,7 +18,7 @@ The following extension(s) could not be found. Upload the missing extensions and
 
 The app has a dependency on one or more apps that are missing. Make sure all the dependencies of the app is installed and retry the operation again.
 
-## See also
+## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

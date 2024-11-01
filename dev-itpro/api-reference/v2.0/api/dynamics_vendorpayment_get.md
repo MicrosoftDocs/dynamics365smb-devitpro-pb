@@ -54,7 +54,7 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [vendorPayment](../resources/dynamics_vendorPayment.md)  
 [Delete vendorPayment](dynamics_vendorPayment_Delete.md)   

@@ -84,7 +84,7 @@ Here is a JSON representation of the documentAttachment resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET documentAttachment](../api/dynamics_documentattachment_get.md)
 [DELETE documentAttachment](../api/dynamics_documentattachment_delete.md)
 [POST documentAttachment](../api/dynamics_documentattachment_create.md)

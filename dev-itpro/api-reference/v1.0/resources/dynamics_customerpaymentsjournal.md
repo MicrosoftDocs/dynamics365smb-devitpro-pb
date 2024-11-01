@@ -54,7 +54,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
 [Microsoft Graph Reference](../api/dynamics_graph_reference.md)  
   
 [Customer Payments Journal](../api/dynamics_customerpaymentsjournal_get.md)  

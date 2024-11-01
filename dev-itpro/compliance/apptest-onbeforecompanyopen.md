@@ -25,7 +25,7 @@ To improve the login time for [!INCLUDE [prod_short](../developer/includes/prod_
 
 - If you're inserting data for a newly created company, we recommend subscribing to **OnCompanyInitialize** from Codeunit 2 instead. Use Installation or Upgrade code for the extension, or to set up on the first usage and if this isn't possible only then **OnCompanyInitialize** should be used to populate data for new companies, since this runs after every upgrade.
 
-## See also
+## Related information
 
 [Checklist for submitting your app](../developer/devenv-checklist-submission.md)  
 [Rules and guidelines for AL code](apptest-overview.md)  

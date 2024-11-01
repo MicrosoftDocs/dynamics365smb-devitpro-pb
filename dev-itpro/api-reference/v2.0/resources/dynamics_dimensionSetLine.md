@@ -96,7 +96,7 @@ Here is a JSON representation of the dimensionSetLine resource.
 
 
 
-## See Also
+## Related information
 [GET dimensionSetLine](../api/dynamics_dimensionSetLine_Get.md)  
 [DELETE dimensionSetLine](../api/dynamics_dimensionSetLine_Delete.md)  
 [POST dimensionSetLine](../api/dynamics_dimensionSetLine_Create.md)  

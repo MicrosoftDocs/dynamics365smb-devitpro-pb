@@ -80,5 +80,5 @@ Here is a JSON representation of the customerLedgerEntry resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET customerLedgerEntry](../api/dynamics_customerledgerentry_get.md)

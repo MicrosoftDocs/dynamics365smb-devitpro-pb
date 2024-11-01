@@ -1,8 +1,8 @@
 ---
-title: "ProfileDescriptionML Property"
+title: "ProfileDescriptionML property"
 description: "Sets the description of the profile that users will see in the relevant language."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -27,7 +27,7 @@ Sets the description of the profile that users will see in the relevant language
 ProfileDescriptionML = ENU ='This profile can be used for processing sales order on a daily basis.', DAN = 'Denne profil kan bruges til daglig salgsordrehåndtering.';
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [ProfileDescription Property](devenv-profiledescription-property.md)

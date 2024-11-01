@@ -2,7 +2,7 @@
 title: "Codeunit.Run(Integer [, var Record]) Method"
 description: "Loads and runs the unit of AL code you specify."
 ms.author: solsen
-ms.date: 07/10/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -63,7 +63,7 @@ begin
 end;
 ```  
 
-## See Also
+## Related information
 [Codeunit Data Type](codeunit-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

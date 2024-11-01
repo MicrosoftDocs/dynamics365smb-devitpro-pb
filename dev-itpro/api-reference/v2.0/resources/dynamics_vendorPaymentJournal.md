@@ -68,7 +68,7 @@ Here is a JSON representation of the vendorPaymentJournal resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET vendorPaymentJournal](../api/dynamics_vendorpaymentjournal_get.md)
 [DELETE vendorPaymentJournal](../api/dynamics_vendorpaymentjournal_delete.md)
 [POST vendorPaymentJournal](../api/dynamics_vendorpaymentjournal_create.md)

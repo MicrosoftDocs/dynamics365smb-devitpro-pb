@@ -1,8 +1,8 @@
 ---
-title: "Report Data Type"
+title: "Report data type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/07/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report Data Type
+# Report Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is used to display, print, or process information from a database.
@@ -33,7 +33,7 @@ The following methods are available on the Report data type.
 |[RunRequestPage(Integer [, Text])](report-runrequestpage-method.md)|Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page.|
 |[SaveAs(Integer, Text, ReportFormat, var OutStream [, RecordRef])](report-saveas-method.md)|Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RunRequestPage method call.|
 |[SaveAsExcel(Integer, Text [, var Record])](report-saveasexcel-method.md)|Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook.|
-|[SaveAsHtml(Integer, Text [, var Record])](report-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.|
+|[SaveAsHtml(Integer, Text [, var Record])](report-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. This method is only supported when a report uses a Word report layout when it is run.|
 |[SaveAsPdf(Integer, Text [, var Record])](report-saveaspdf-method.md)|Saves a report as a .pdf file.|
 |[SaveAsWord(Integer, Text [, var Record])](report-saveasword-method.md)|Saves a report on the computer that is running the server as a Microsoft Word (.doc) document.|
 |[SaveAsXml(Integer, Text [, var Record])](report-saveasxml-method.md)|Saves the resulting data set of a query as an .xml file. The following code shows the syntax of the SaveAsXml method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
@@ -70,7 +70,7 @@ The following methods are available on instances of the Report data type.
 |[RunRequestPage([Text])](reportinstance-runrequestpage-method.md)|Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page.|
 |[SaveAs(Text, ReportFormat, var OutStream [, RecordRef])](reportinstance-saveas-method.md)|Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RunRequestPage method call.|
 |[SaveAsExcel(Text)](reportinstance-saveasexcel-method.md)|Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook.|
-|[SaveAsHtml(Text)](reportinstance-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.|
+|[SaveAsHtml(Text)](reportinstance-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. This method is only supported when a report uses a Word report layout when it is run.|
 |[SaveAsPdf(Text)](reportinstance-saveaspdf-method.md)|Saves a report as a .pdf file.|
 |[SaveAsWord(Text)](reportinstance-saveasword-method.md)|Saves a report on the computer that is running the server as a Microsoft Word (.doc) document.|
 |[SaveAsXml(Text)](reportinstance-saveasxml-method.md)|Saves the resulting data set of a query as an .xml file.The following code shows the syntax of the SaveAsXml method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
@@ -86,7 +86,7 @@ The following methods are available on instances of the Report data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## See Also  
+## Related information  
 [Report object properties (AL Language Reference)](../../properties/devenv-report-properties.md)   
 [Report, Report Dataitem, and Report Extension Properties (AL Language Reference)](../../properties/devenv-report-property-overview.md)   
 [Report overview](../../devenv-reports.md)   

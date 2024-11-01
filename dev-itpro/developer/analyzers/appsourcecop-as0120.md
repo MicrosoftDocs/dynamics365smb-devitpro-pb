@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0120"
 description: "The destination symbol's MovedFrom property value does not match the source AppId."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ The value of the MovedFrom property in the destination object does not match the
 The destination symbol's MovedFrom property value does not match the source AppId.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
