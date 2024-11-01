@@ -33,7 +33,7 @@ An instance of the [Record](record-data-type.md) data type.
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+**true** if the record was found; **false** if the record was not found in the database.  If you omit this optional return value and the record does not exist, a runtime error will occur. 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -47,6 +47,9 @@ This method always uses the primary key for the table. It ignores any filters th
 
 > [!NOTE]  
 > You cannot use the **Get** method to retrieve a record in a table by its primary key value if the primary key field in the table has the data type [RecordID](../recordid/recordid-data-type.md). This is because **RecordId** already is the primary key itself and not one of the fields that forms it, as the method expects. In this case, you can retrieve the record by using the [SetRange Method](record-setrange-method.md).
+
+> [!NOTE]  
+> If the retrieval of the record fails for other reasons than it not existing a runtime error will still occur, even if using the return value.
 
 <!--
 ## Example
