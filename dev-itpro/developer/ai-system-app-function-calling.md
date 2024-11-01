@@ -7,20 +7,28 @@ ms.topic: reference
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 04/11/2024
+ms.date: 11/01/2024
 ms.custom: bap-template
 ms.reviewer: solsen
 ---
 
 # Function calling in AI
 
-The model has access to various tools that enable it to perform extra features. Currently, these tools include Code interpreter, Knowledge retrieval, and Function calling. 
+The model has access to various tools that enable it to perform extra features. Currently, these tools include Code interpreter, Knowledge retrieval, and Function calling.
 
-The concept of function calling enables you to provide a description of functions to the Assistant. In response, the Assistant identifies the appropriate function that needs to be invoked, along with the necessary arguments. The specific function and its corresponding arguments are determined based on the user's input. The function calling tool is designed to parse essential details from user's natural language input and use this as arguments for the functions that you've defined. This way, it bridges the gap between human language and programmatic functions, making the interaction more intuitive and user-friendly.
+## What is function calling?
+
+The concept of function calling enables you to provide a description of functions to the Assistant. In response, the Assistant identifies the appropriate function that needs to be invoked, along with the necessary arguments. The specific function and its corresponding arguments are determined based on the user's input. The function calling tool is designed to parse essential details from user's natural language input and use this as arguments for the functions that you've defined. This bridges the gap between human language and programmatic functions, making the interaction more intuitive and user-friendly.
+
+## Use cases for function calling
+
+### Determining intent
 
 There are many scenarios that you can use function calling for, one is to determine the intent of the input:
 
 An example could be the following. You have two functions, "Document lookup" and "Item lookup". If the user input is "I need the items from the last invoice", the inferred intent would be to trigger a document lookup, as it requires information from the last invoice. If the user input is instead "I need two red bicycles", the inferred intent would be to perform an item lookup, as it aims to locate the closest match to red bicycles.
+
+### End-to-end scenario
 
 In an end-to-end scenario, where you receive an email to purchase some items, the steps look something like this: 
 
@@ -124,7 +132,7 @@ procedure ProcessWeatherCopilotResponse(Response: JsonObject)
 
 When using the Function Calling tool, you can set the tool choice to either `Auto` or `Specific` function in the `SetToolChoice` method. `Auto` is the default if not set. The response can be either a function or a regular chat message response. Setting it to `Specific` function guarantees the response always calls the function. Even if the intent and context don't match the function, as such, the developer should validate the arguments.
 
-## See also
+## Related information
 
 [Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md)  
 [Token counting in AI](ai-system-app-token-counting.md)  
