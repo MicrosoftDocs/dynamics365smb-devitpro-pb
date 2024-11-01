@@ -70,7 +70,7 @@ actions
             action(MyNextPromptAction)
             {
                 Caption = 'Find all [customers]?';
-                ToolTip = 'Ask Copilot for help with a specific task.';
+                ToolTip = 'Ask Copilot to help find something.';
             }
         }
     }
