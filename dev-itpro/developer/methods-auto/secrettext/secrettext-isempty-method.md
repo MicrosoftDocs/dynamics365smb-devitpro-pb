@@ -30,7 +30,7 @@ An instance of the [SecretText](secrettext-data-type.md) data type.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the secret text does not contain any content, otherwise **true**.
+**true** if the secret text does not contain any content, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
