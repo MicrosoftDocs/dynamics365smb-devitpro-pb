@@ -37,7 +37,7 @@ You can use the `Rec` and `xRec` variables to design your application in the fol
 - If the order has shipped, compare the customer number fields in the Rec and xRec records. If they differ, reject the change.
 
 > [!NOTE]
-> Avoid modifications to the xRec varialbe because the record might share some of the underlying state with the Rec variable for performance and compatilibty reasons and changes can unexpectedly propagate to the Rec variable.
+> Avoid modifications to the xRec variable because the record might share some of the underlying state with the Rec variable for performance and compatilibty reasons and changes can unexpectedly propagate to the Rec variable.
 
 ## Using `CurrPage`
 
