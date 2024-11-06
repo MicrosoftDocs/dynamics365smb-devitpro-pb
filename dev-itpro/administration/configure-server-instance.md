@@ -109,7 +109,7 @@ The following table describes general settings for the server.
 |PTESymbolReferenceCacheSize|Specifies a value for the LRU per-tenant extension (PTE) symbol reference cache size. The value is the number of objects that are stored in the cache. The larger the number the larger the cache size.<br /><br /> The default value is the recommended value for deployments, so you typically won't change this setting.<br /><br />Default: 700|
 |PTESymbolReferenceCacheTTLInHours|Specifies the lifespan, in hours, of entries in the PTEn symbol reference cache.<br /><br /> The default value is the recommended value for deployments, so you typically won't change this setting.<br /><br />Default: 24|
 |XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
-|DisableWriteInsideTryFunctions|Specifies whether database writes are allowed inside the scope of try methods. `true` prevents database writes; `false` allows database writes.<br><br>Default: `true`<br />Dynamically updatable: No|
+|DisableWriteInsideTryFunctions|Specifies whether database writes are allowed inside the scope of try methods. `true` prevents database writes; `false` allows database writes. Learn more in [Handling errors using try methods](../developer/devenv-handling-errors-using-try-methods.md)<br><br>Default: `true`<br />Dynamically updatable: No|
 
 ##  <a name="Database"></a> Database settings
   
