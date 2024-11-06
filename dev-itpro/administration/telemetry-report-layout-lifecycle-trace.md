@@ -1,17 +1,16 @@
 ---
-title: Report Generation Telemetry | Microsoft Docs
-description: Learn about the report telemetry in Business Central  
+title: Analyzing report layout lifecycle telemetry
+description: Learn about report layout lifecycle telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/04/2024
+ms.date: 11/06/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: bap-template
-
 ---
 
-# Analyzing Report Layout Lifecycle Telemetry
+# Analyzing report layout lifecycle telemetry
 
 [!INCLUDE[2024_releasewave2.md](../developer/includes/2024rw2_and_later.md)]
 
@@ -35,28 +34,14 @@ The following table explains the general dimensions of this trace.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
-|action|**New**|
+|alAction|**SetDefault**|
+|alLayoutFormat|Specifies the layout file type. Possible values: `RDLC` (.rdlc file type), `Word` (.docx file type), `Excel` (.xlsx file type), Custom (custom file type, indicated as **External** in the client UI).|
+|alLayoutName |Specifies the name of the report layout.|
+|alReportId|Specifies the ID of the report assigned the layout.|
 |companyName|[!INCLUDE[include-telemetry-dimension-company-name](../includes/include-telemetry-dimension-company-name.md)]|
 |environmentName|[!INCLUDE[include-telemetry-dimension-environment-name](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
-|eventId|**AL0000N0D**|
-|layoutFormat|Specifies the layout file type. Learn more in [layoutFormat](#layoutFormat).|
-|layoutName |Specifies the name of the report layout.|
-|reportId|Specifies the ID of the report assigned the layout.|
-
-### <a name=layoutFormat></a>layoutFormat
-
-The layoutFormat dimension indicates the file type of the layout.
-
-|Value|Description|
-|-----|-----------|
-|RDLC (0)|The layout is a .rdlc file type.|
-|Word (1)|The layout was a .docx file type.|
-|Excel (2)|The layout was a .xlsx file type.|
-|Custom (3)|The layout was an custom file type. In the client UI, this format referred to as **External**.|
-
-> [!NOTE]
-> In versions before 25.1, the LayoutFormat value is represented as an integer as shown in parentheses.
+|eventId|**AL0000N0E**|
 
 ### Sample KQL code (Report layout added by user)
 
@@ -101,14 +86,14 @@ The following table explains the general dimensions of this trace.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
-|action|**SetDefault**|
+|alAction|**SetDefault**|
+|alLayoutFormat|Specifies the layout file type. Possible values: `RDLC` (.rdlc file type), `Word` (.docx file type), `Excel` (.xlsx file type), Custom (custom file type, indicated as **External** in the client UI).|
+|alLayoutName |Specifies the name of the report layout.|
+|alReportId|Specifies the ID of the report assigned the layout.|
 |companyName|[!INCLUDE[include-telemetry-dimension-company-name](../includes/include-telemetry-dimension-company-name.md)]|
 |environmentName|[!INCLUDE[include-telemetry-dimension-environment-name](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000N0D**|
-|layoutFormat|Specifies the layout file type. Learn more in [layoutFormat](#layoutFormat).|
-|layoutName |Specifies the name of the report layout.|
-|reportId|Specifies the ID of the report assigned the layout.|
 
 ### Sample KQL code (Report layout default changed by user)
 
@@ -132,6 +117,62 @@ traces
 , layoutFormat = customDimensions.alLayoutFormat // possible values: RDLC, Word, Excel, Custom
 // what did the user do
 , action = customDimensions.alAction // alAction is "SetDefault" for this event
+// which user did it
+, user_Id // user telemetry id
+```
+
+## Report layout properties changed by user
+
+Occurs when a user changes the properties of layout used by a report.
+
+### General dimensions
+
+The following table explains the general dimensions of this trace.
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Report layout properties changed by user**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|alAction|**Edit**|
+|alLayoutFormat|Specifies the layout file type. Possible values: `RDLC` (.rdlc file type), `Word` (.docx file type), `Excel` (.xlsx file type), Custom (custom file type, indicated as **External** in the client UI).|
+|alLayoutName |Specifies the name of the report layout.|
+|alOldLayoutDescription||
+|alOldLayoutName||
+|alReportId|Specifies the ID of the report assigned the layout.|
+|companyName|[!INCLUDE[include-telemetry-dimension-company-name](../includes/include-telemetry-dimension-company-name.md)]|
+|environmentName|[!INCLUDE[include-telemetry-dimension-environment-name](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
+|eventId|**AL0000N0D**|
+
+### Sample KQL code (Report layout default changed by user)
+
+This KQL code can help you get started analyzing which reports users run:
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions has 'AL0000N0H' // performance optimization
+| where customDimensions.eventId == 'AL0000N0H'
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// for which report
+, reportId = customDimensions.alReportId // object id of the report
+// what did the user do
+, action = customDimensions.alAction // alAction is "Edit" for this event
+, oldLayoutDescription = customDimensions.alOldLayoutDescription
+, oldLayoutName = customDimensions.alOldLayoutName
+, newLayoutDescription = customDimensions.alNewLayoutDescription
+, newLayoutName = customDimensions.alNewLayoutName
 // which user did it
 , user_Id // user telemetry id
 ```
