@@ -5,7 +5,6 @@ ms.date: 11/06/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
-
 # Handling errors using try methods
 
 Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than errors thrown by the system.  
@@ -19,9 +18,7 @@ The main purpose of try methods is to catch errors/exceptions thrown by the [!IN
 
 ### <a name="DbWriteTransactions"></a>Database write transactions in try methods
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] configuration prevents database write transactions with a try method. If a try method contains a database write transaction, a runtime error occurs. To change this behavior, set the `DisableWriteInsideTryFunctions` parameter in [!INCLUDE[server](includes/server.md)] configuration to `false`. Learn more about configuring the server in [](../administration/configure-server-instance.md).
-
-<!--Because changes made to the database by a try method aren't rolled back, you shouldn't include database write transactions within a try method. By default, the [!INCLUDE[server](includes/server.md)] configuration prevents you from doing this. If a try method contains a database write transaction, a runtime error occurs.-->
+Because changes made to the database by a try method aren't rolled back, you shouldn't include database write transactions within a try method. With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] configuration prevents database write transactions with a try method. If a try method contains a database write transaction, a runtime error occurs. To change this behavior, set the `DisableWriteInsideTryFunctions` parameter in [!INCLUDE[server](includes/server.md)] configuration to `false`. Learn more about configuring the server in [Configure Business Central Server](../administration/configure-server-instance.md). This restrication isn't in place with [!INCLUDE[prod_short](includes/prod_short.md)] online. This behavior might change in an upcoming release.
 
 ### Handling errors with a return value
 
