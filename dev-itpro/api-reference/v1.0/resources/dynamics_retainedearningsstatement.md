@@ -56,6 +56,6 @@ Here is a JSON representation of the resource.
     "dateFilter": "date"
 }
 ```
-## See also
+## Related information
 
 [Get Retained Earnings Statement](../api/dynamics_retainedearningsstatement_get.md)  

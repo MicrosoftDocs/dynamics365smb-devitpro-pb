@@ -182,5 +182,5 @@ Represents a Line Details complex type in [!INCLUDE[prod_short](../../../include
 } 
 ```
 
-## See also
+## Related information
     

@@ -70,12 +70,13 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
-### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
-### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
-### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
-### [Update 24.2](whatsnew/whatsnew-update-24-2.md)
-### [Update 24.1](whatsnew/whatsnew-update-24-1.md)
+### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 ### Updates for earlier major versions
+#### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
+#### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
+#### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
+#### [Update 24.2](whatsnew/whatsnew-update-24-2.md)
+#### [Update 24.1](whatsnew/whatsnew-update-24-1.md)
 #### [Update 23.5](whatsnew/whatsnew-update-23-5.md)
 #### [Update 23.4](whatsnew/whatsnew-update-23-4.md)
 #### [Update 23.3](whatsnew/whatsnew-update-23-3.md)
@@ -1834,9 +1835,6 @@
 #### [Monitoring long-running SQL queries](administration/monitor-long-running-sql-queries-event-log.md)
 #### [Troubleshooting: Analyzing long-running SQL queries involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to monitor long-running SQL queries](administration/troubleshoot-long-running-queries-using-event-log.md)
-### Monitoring and Analyzing Using telemetry
-#### [Telemetry overview](administration/telemetry-overview.md)
-#### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 ### [Understanding session timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 ### [Registering your deployment on Azure](administration/register-app-azure.md)
