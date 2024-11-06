@@ -33,7 +33,7 @@ An instance of the [Record](record-data-type.md) data type.
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the record was found; **false** if the record was not found in the database.  If you omit this optional return value and the record does not exist, a runtime error will occur. 
+**true** if the operation was successful; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur. 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
