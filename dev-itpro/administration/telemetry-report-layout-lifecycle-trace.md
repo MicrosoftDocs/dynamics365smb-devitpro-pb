@@ -64,7 +64,7 @@ traces
 , layoutFormat = customDimensions.alLayoutFormat // possible values: RDLC, Word, Excel, Custom
 // what did the user do
 , action = customDimensions.alAction // alAction is "New" for this event
-// which user did it
+// user who performed the action
 , user_Id // user telemetry ID
 ```
 
@@ -117,7 +117,7 @@ traces
 , layoutFormat = customDimensions.alLayoutFormat // possible values: RDLC, Word, Excel, Custom
 // what did the user do
 , action = customDimensions.alAction // alAction is "SetDefault" for this event
-// which user did it
+// user who performed the action
 , user_Id // user telemetry ID
 ```
 
@@ -173,7 +173,7 @@ traces
 , oldLayoutName = customDimensions.alOldLayoutName
 , newLayoutDescription = customDimensions.alNewLayoutDescription
 , newLayoutName = customDimensions.alNewLayoutName
-// which user did it
+// user who performed the action
 , user_Id // user telemetry ID
 ```
 
@@ -224,7 +224,7 @@ traces
 , layoutName = customDimensions.alLayoutName 
 // what did the user do
 , action = customDimensions.alAction // alAction is "Export" for this event
-// which user did it
+// user who performed the action
 , user_Id // user telemetry ID
 ```
 
@@ -274,7 +274,7 @@ traces
 , layoutName = customDimensions.alLayoutName 
 // what did the user do
 , action = customDimensions.alAction // alAction is "Delete" for this event
-// which user did it
+// user who performed the action
 , user_Id // user telemetry ID
 ```
 
@@ -324,7 +324,7 @@ traces
 , layoutName = customDimensions.alLayoutName 
 // what did the user do
 , action = customDimensions.alAction // alAction is "Replace" for this event
-// which user did it
+// user who performed the action
 , user_Id // user telemetry ID
 ```
  
