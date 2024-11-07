@@ -18,7 +18,7 @@ The extension '{0}' by '{1}' (version '{2}') is a runtime package, which is not 
 
 Runtime packages are not allowed. A new non-runtime package must be submitted. For more information, see [Runtime packages limitations](../devenv-creating-runtime-packages.md#limitations).
 
-## See also
+## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

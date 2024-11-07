@@ -63,5 +63,5 @@ Here is a JSON representation of the pdfDocument resource.
 
 
 
-## See Also
+## Related information
 [GET pdfDocument](../api/dynamics_pdfDocument_Get.md)

@@ -34,21 +34,13 @@ The following features are marked as `obsolete:pending` in 2024 release wave 2.
 ### Configuration packages for setup and evaluation data
 
 > [!IMPORTANT]
-> We will remove this feature in update 25.1.
+> We will remove this feature in update 25.2.
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced| We've changed the way we prepare databases for new evaluation and production companies. Instead of using configuration packages to add demo and setup data, you now use the **Contoso Coffee demo data** app. We shipped the Contoso Coffee demo data app in an earlier release to cover gaps in our demo and setup data, such as Manufacturing, Service, and Warehouse. Because the app is easy to use and now provides the comprehensive setup and demo data that was previously available in configuration packages, we're removing the configuration packages. To do that, we had to change how the **Create New Company** assisted setup guide initializes new companies with data. Our changes might affect your extensions. For details about what we removed, explore the Object and What's removed listings. |
-|Object| What's removed |
-|Enum 9120 "Company Data Type (Internal)"|The object itself|
-|Enum 9121 "Company Data Type (Sandbox)"|The object itself|
-|Enum 9122 "Company Data Type (Production)"|The object itself|
-|Codeunit 1799 "Import Config. Package File"|The object itself|
-|Codeunit 1800 "Assisted Company Setup"|Procedures:</br>* WaitForPackageImportToComplete, </br>* FillCompanyData, </br>* ExistsConfigurationPackageFile, </br>* FindConfigurationPackageFile, </br>* SetUpNewCompany</br></br>Events:</br>* OnAfterAssistedCompanySetupStatusEnabled,</br>* OnBeforeScheduleTask|
-|Codeunit 1805 "Import Config. Package Files"| The object itself|
-|Table 1802 "Assisted Company Setup Status"|Fields:</br>* Import Failed,</br>* Package Imported</br></br>Procedure:</br>* SetEnabled|
-|Page 9192 "Company Creation Wizard"|Events:</br>* OnBeforeValidateCompanyType,</br>* OnBeforeValidateCompanyType,</br>* OnOpenPageCheckAdditionalDemoData|
-|Replaced|In addition to making it easier to install rich demo data, this change also enables another improvement. We're loosening up the relatively rigid update policies for major and minor updates that were in place. We're giving administrators extended update periods. For major updates, we're offering five-month update periods to give more time to test and prepare. For example, partners can spread out the workload of updating customer environments, and developers can verify that all apps are compatible. We've also given administrators the ability to opt out of minor updates during a grade period. To learn more, go to [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly).|
+|Removed| Enum 9120 "Company Data Type (Internal)"</br> Enum 9121 "Company Data Type (Sandbox)" </br> Enum 9122 "Company Data Type (Production)"</br> Codeunit 1799 "Import Config. Package File"</br> Codeunit 1800 "Assisted Company Setup":</br>* procedure WaitForPackageImportToComplete</br>* procedure FillCompanyData</br>* procedure ExistsConfigurationPackageFile</br>* procedure FindConfigurationPackageFile</br>* procedure SetUpNewCompany</br>* event OnAfterAssistedCompanySetupStatusEnabled</br>* event OnBeforeScheduleTask</br></br> Codeunit 1805 "Import Config. Package Files"</br>Table 1802 "Assisted Company Setup Status": </br>* field Import Failed</br>* field Package Imported</br>* procedure SetEnabled</br></br>Page 9192 "Company Creation Wizard":</br>* event OnBeforeValidateCompanyType</br>* event OnBeforeValidateCompanyType</br>* event OnOpenPageCheckAdditionalDemoData|
+|Replaced|In addition to making it easier to install rich demo data, this change also enables another improvement. We're loosening up the relatively rigid update policies for major and minor updates that were in place. We're giving administrators extended update periods. For major updates, we're offering five-month update periods to give more time to test and prepare. For example, partners can spread out the workload of updating customer environments, and developers can verify that all apps are compatible. We've also given administrators the ability to opt out of minor updates during a grace period. To learn more, go to [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly).|
 
 ### User groups
 

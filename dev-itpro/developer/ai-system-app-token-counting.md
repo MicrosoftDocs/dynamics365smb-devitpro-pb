@@ -7,7 +7,7 @@ ms.topic: reference
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 04/11/2024
+ms.date: 11/01/2024
 ms.custom: bap-template
 ms.reviewer: solsen
 ---
@@ -21,11 +21,11 @@ Large Language Models (LLMs) operate using tokens, which are representations of 
 **Number of tokens:** 7
 
 > [!NOTE]  
-> The spacing between the numbers in the above example has been added purely for readability. In reality, the tokens are not separated by spaces.
+> The spacing between the numbers in the above example has been added purely for readability. In reality, the tokens aren't separated by spaces.
 
 Evaluating the number of tokens in your input is important because it helps you understand the cost of your request and the limitations of the model. By evaluating the number of tokens it takes for your request, you can determine the following:
 
-- Estimate your potential cost of your copilot. For more information, see [Azure OpenAI Service pricing overview](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/). 
+- Estimate your potential cost of your copilot. Learn more in [Azure OpenAI Service pricing overview](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/). 
 - Help split up your generation into multiple generations, because models have limited context sizes and you might have more data than what fits the context size.
 
 ## Token counting - "AOAI Token" codeunit
@@ -43,7 +43,7 @@ The AOAIToken codeunit has the following methods to support token counting:
 
 These methods are version agnostic. For example, `GetGPT4TokenCount` works for GPT4 0613, GPT4 0125, and all versions. 
 
-## See also
+## Related information
 
 [Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md)  
 [Function calling in AI](ai-system-app-function-calling.md)  

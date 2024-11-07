@@ -18,7 +18,7 @@ A package with publisher '{0}', name '{1}', and a version compatible with '{2}' 
 
 Retry the operation and contact Partner Center support if it fails again.
 
-## See also
+## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

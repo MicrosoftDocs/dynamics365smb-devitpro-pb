@@ -41,7 +41,7 @@ Here is a JSON representation of the permissionSet.
 ```json
 {
     "scope": "System",
-    "appID": "00000000-0000-0000-0000-000000000000",
+    "appID": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "id": "D365 ACC. PAYABLE",
     "displayName": "Gæld i Dynamics 365",
     "extensionName": ""

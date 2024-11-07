@@ -53,7 +53,7 @@ When you exchange data through the API, you might have to safelist the IP addres
 For more information, see [FAQ: IP addresses or ranges for the Business Central service](../../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
 
 
-## See Also
+## Related information
 
 [Developing Connect apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
 [Microsoft web services overview](../../webservices/web-services.md)  

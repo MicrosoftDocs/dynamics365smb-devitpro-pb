@@ -58,7 +58,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
 
 
 

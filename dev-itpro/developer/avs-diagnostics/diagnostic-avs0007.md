@@ -18,7 +18,7 @@ The release version '{0}' is not supported.
 
 In the app.json file of the app you must specify one of the supported runtime versions from [Choosing Runtime Version in AL](../devenv-choosing-runtime.md).
 
-## See also
+## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

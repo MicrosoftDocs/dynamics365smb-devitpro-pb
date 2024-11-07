@@ -57,7 +57,7 @@ Here is a JSON representation of the **unitsOfMeasure** resource.
 }
 ```
 
-## See also
+## Related information
 
 [Get Units of Measure](../api/dynamics_unitsofmeasure_get.md)  
 [Create Units of Measure](../api/dynamics_create_unitsofmeasure.md)  

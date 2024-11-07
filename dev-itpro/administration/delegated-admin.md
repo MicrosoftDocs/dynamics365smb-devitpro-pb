@@ -5,47 +5,31 @@ author: jswymer
 
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 10/18/2022
+ms.date: 11/01/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
-# Delegated Administrator Access to Business Central Online
+# Delegated administrator access to Business Central Online
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+As a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reselling partner, you must set up your employees to work in Partner Center, and you must assign employees to support your customers. There are two types of relationships reselling partners can set up with their customers. [*Reseller* relationships](/partner-center/customers/request-a-relationship-with-a-customer) enable the reseller to sell customers [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses. [*Granular delegated administration privileges (GDAP)* relationships](/partner-center/customers/gdap-introduction) enable users in the reseller's tenant to access and administer the customer's [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments as delegated administrator.
 
-As a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reselling partner, you must set up your employees to work in Partner Center, and you must assign employees to support your customers. When you request a reseller relationship with a customer, you can choose to include *delegated administration* privileges for Microsoft Entra ID and Microsoft 365 in the request email that you send to the customer.  
+For each relationship type, the partner generates a link in Partner Center that internal Global Administrators in the customer tenant can navigate to accept the relationship. After a customer accepts a partner's request for a GDAP relationship, the partner can assign security groups in their own tenant to one or multiple Microsoft Entra roles that the customer accepted as part of the GDAP relationship.
 
-> [!TIP]
-> Since February 2022, you can request access to your customer's tenant with *granular delegated admin privileges*. This way, you [set up security groups](/partner-center/gdap-assign-azure-ad-roles) to specify which users in your own organization must have access to a specific customer as *Dynamics 365 administrator* or any other role you prefer. For more information, see [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) in the Partner Center content. We recommend that you switch off any existing relationship and [request granular delegated admin privileges](/partner-center/gdap-assign-azure-ad-roles) instead. For more information, see the [GDAP FAQ](/partner-center/gdap-faq#dap-and-gdap).  
-
-When a customer accepts a partner's request for *granular delegated administration privileges*, the relevant members of the specified security group in the partner's Microsoft Entra tenant get access as indicated in the following list:
-
-- The *[Dynamics 365 Administrator](/azure/active-directory/roles/permissions-reference?branch=main#dynamics-365-administrator)* role gives access to manage Dynamics 365 for the customer, including support requests  
-- The *[Service Support Administrator](/azure/active-directory/roles/permissions-reference#service-support-administrator)* role gives access to manage support requests on the customer's behalf
-- The *[Helpdesk Administrator](/azure/active-directory/roles/permissions-reference#helpdesk-administrator)* role gives access to the customer's Microsoft Entra tenant.  
-
-For more information, see [Least-privileged roles](/partner-center/gdap-least-privileged-roles-by-task) in the GDAP section of the Partner Center content.  
-
-The members of the security group have either the *Admin agent* or *Helpdesk agent* role in your own Microsoft Entra tenant. For more information, see [Assign roles and permissions to users](/partner-center/permissions-overview).  
-
-For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is a powerful tool for you to manage your customers' tenants. From the administration center, you can manage upgrades and access the tenants as the delegated administrator. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
+To administer [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as delegated administrator, the recommended [least-privileged](/partner-center/gdap-least-privileged-roles-by-task) role to include in your relationship is [Dynamics 365 Business Central Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-business-central-administrator), which grants access to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and environments in the customer tenant. Find more information about roles supported by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and products and services that integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in [Supported Microsoft Entra roles for access](tenant-admin-center.md#supported-microsoft-entra-roles-for-access).
 
 > [!TIP]
 > Always include the domain or the Microsoft Entra ID of the customer in the URL when you log in as a *delegated admin*, such as in `https://businesscentral.dynamics.com/contoso.com/admin`. This way, you always know exactly which customer you are trying to access.
-
-> [!CAUTION]
-> [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
 ## Managing delegated permissions as a partner
 
 [!INCLUDE [admin-gdap-user](../includes/admin-gdap-user.md)]
 
-At the partner company, we encourage you to keep track of which user names your technicians and consultants have in your customers' Business Central tenants. For example, you have a consultant who is an admin with GDAP in your partner company's five customers' Business Central. Your consultant can see which customers they have GDAP access to in the **Granular administration** list in the **Administer** page in Partner Center. But as an organization, you can also maintain a list of names and IDs. 
+At the partner company, we encourage you to keep track of which user names your technicians and consultants have in your customers' Business Central tenants. For example, you have a consultant who is an admin with GDAP in your partner company's five customers' [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Your consultant can see which customers they have GDAP access to in the **Granular administration** list in the **Administer** page in Partner Center. But as an organization, you can also maintain a list of names and IDs. 
 
-If a customer removes delegated permissions from you, you can still manage their subscription from the Partner Center, such as adding or removing licenses for their subscription, but you'll no longer be able to log into and manage their Business Central environment, Microsoft Entra ID, and other services. You'll also not be able to manage their users (add/remove/assign licenses) from the **Customer** page in the Partner Center.  
+If a customer removes delegated permissions from you, you can still manage their subscription from the Partner Center, such as adding or removing licenses for their subscription, but you're no longer be able to log into and manage their Business Central environment, Microsoft Entra ID, and other services. You're'also not able to manage their users (add/remove/assign licenses) from the **Customer** page in the Partner Center.  
 
-### Restricted access to Business Central as delegated administrator
+### Limitations for delegated administrators
 
 When you sign in to your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as the *delegated administrator* from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you have access to all areas of their [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. However, because you aren't registered as a regular user, there are certain tasks that you can't do.
 
@@ -65,37 +49,24 @@ The following tasks aren't available to the delegated administrator:
 
     Instead, a licensed user who is assigned the SUPER permission set in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can run the assisted setup guide.-->
 
-- Access a web service by using a Web Service Access key.
-
-    Usage of Web Service Access key was deprecated in 2022 release wave 1. Find out more [here](../upgrade/deprecated-features-platform.md#accesskeys).
-
-> [!NOTE]
-> [!INCLUDE [admin-conditional-access-policies](../includes/admin-conditional-access-policies.md)]
-
 ## Managing delegated permissions as an internal administrator
 
-As a Microsoft customer organization, you can have multiple partners registered as your resellers. It isn't unusual for a single organization to use one partner as the delegated admin for their Microsoft 365 subscription and another for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], for example. However, as soon as the delegated administration right is granted in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center), you can't restrict partner access to a specific service only. The delegated admin access applies to all Microsoft services that your organization subscribes to.  
+As a Microsoft customer organization, you can have multiple partners registered as your resellers. It isn't unusual for a single organization to use one partner as the delegated admin for their Microsoft 365 subscription and another for their [!INCLUDE [prod_short](../developer/includes/prod_short.md)] subscription, for example. The services each partner can administer are determined by the Entra roles that are included in the GDAP relationship. For partners managing [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the [Dynamics 365 Business Central Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-business-central-administrator) role is recommended as the [least-privileged](/partner-center/gdap-least-privileged-roles-by-task) role that allows for administration of and access to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments.
 
-> [!TIP]
-> If the partner has requested access to your tenant using *granular delegated admin privileges*, then you can see the relevant users in the **Users** list in [!INCLUDE [prod_short](../includes/prod_short.md)], and you can see them in the **Sign in** log in your Microsoft 365 admin center. With granular delegated admin privileges, the partner typically doesn't have global access to your tenant but only access to Dynamics 365. You will not be able to see the name of the partner user, but you can see an ID and the name of their company.
+It also isn't unusual for a single organization to have multiple [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments, each managed by a different partner. In this case, the customer would have to accept a GDAP relationship including at least the [Dynamics 365 Business Central Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-business-central-administrator) role with each partner organization. Internal administrators can use the **Partner access** settings in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to enable or disable delegated administrators from administering and accessing each environment, or to only allow delegated administrators from specific partner Entra tenants to administer and access an environment. Learn more in [Manage Access to Environments](tenant-admin-center-manage-access.md).
 
 [!INCLUDE [admin-gdap-user](../includes/admin-gdap-user.md)]
 
 [!INCLUDE [admin-conditional-access-policies](../includes/admin-conditional-access-policies.md)]
 
-If you don't need delegated admin help continuously, you can restrict access for the partner users into your environment. There are two approaches that you can use to restrict delegated admin access to a Business Center environment:  
+If you don't need delegated admin help continuously, you can (temporarily) restrict access for the partner users into your environment. There are several approaches you could take to limit partner access:
 
-- Disable a specific delegated admin user within the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. For more information, see [How to remove a user's access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system).  
-- Revoke delegated administration rights from all partner users at once in the Microsoft 365 admin center, without breaking the reseller relationship with the partner.  
+- Disable a specific delegated admin user within the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. Learn more in [How to remove a user's access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system).
+- Remove some or all permissions from the license configurations for delegated administrators to prevent any new delegated administrator users from being assigned those permissions when they first sign in to an environment. Learn more in [Configure permissions based on licenses](/dynamics365/business-central/ui-how-users-permissions#licensespermissions).
+- Disable all partners from accessing and administering specific environments in your tenant, or allowlist only specific partners for access if you have GDAP relationships with multiple partners. Learn more in [Manage Access to Environments](tenant-admin-center-manage-access.md).
+- Accept only short-lived GDAP relationships that don't auto-extend whenever a partner has a specific temporary need to access or administer your environments. Internal Global Administrators can view and disable GDAP relationships in the Microsoft 365 Admin Center. Learn more at [Customers delegate administration privileges to partners](/partner-center/customers_revoke_admin_privileges) in the Partner Center content.
 
-In the Microsoft 365 admin center, internal administrators can find information about their partner relationships in the Settings/Partner Relationship menu. On the same page, you can remove delegated permissions from the partner, to restrict their access to Business Central and other services, while still keeping the reseller relationship with them.  
-
-If you then want to allow access to your environment again, you can ask the partner to share the "Request a reseller relationship" invitation link with you again.  
-
-For more information, see [Customers delegate administration privileges to partners](/partner-center/customers_revoke_admin_privileges) in the Partner Center content.
-
-> [!NOTE]
-> [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
+If your organization decides to terminate a GDAP relationship with a partner or to switch to another partner, you must make sure that some settings that your current partner might have set up in your [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] are removed. Learn more in [Cleaning up settings](tenant-admin-center.md#cleaning-up-settings).
 
 ## See also
 

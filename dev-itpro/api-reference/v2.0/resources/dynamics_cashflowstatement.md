@@ -60,5 +60,5 @@ Here is a JSON representation of the cashFlowStatement resource.
 
 
 
-## See Also
+## Related information
 [GET cashFlowStatement](../api/dynamics_cashFlowStatement_Get.md)
