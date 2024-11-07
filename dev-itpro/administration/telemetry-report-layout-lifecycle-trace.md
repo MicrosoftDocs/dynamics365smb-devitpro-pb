@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE[2024_releasewave2.md](../developer/includes/2024rw2_and_later.md)]
 
-This article describes the telemetry gathered for actions taken by users on report layouts.
+This article describes the telemetry gathered for actions taken by users on report layouts. Learn more about the actions users can take on report layouts at [Get started with report layouts](/dynamics365/business-central/ui-get-started-layouts?tabs=copy#get-started).
 
 ## Report layout added by user
 
