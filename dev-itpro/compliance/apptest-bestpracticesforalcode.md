@@ -104,20 +104,9 @@ actions
 codeunit 70000000 MyPrefixSalesperson
 ```
 
-## Copilot and naming
+## Copilot and action names
 
-Trailing whitespaces are allowed in action names, meaning that the compiler won't throw an error. For example:
-
-```al
-group("CopilotActionGroup  ")
-{
-    action("Suggest Sales Lines   ")
-    {
-        // Code that generates sales lines suggestions
-    }
-}
-
-Trailing whitespaces are allowed in action names meaning that the compiler won't throw an error. For example:
+Trailing whitespaces are allowed in action names, meaning that you won't get a compiler error. For example:
 
 ```al
 group("CopilotActionGroup  ")
