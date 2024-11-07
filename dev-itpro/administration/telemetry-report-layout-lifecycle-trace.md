@@ -34,7 +34,7 @@ The following table explains the general dimensions of this trace.
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
-|alAction|**SetDefault**|
+|alAction|**New**|
 |alLayoutFormat|Specifies the layout file type. Possible values: `RDLC` (.rdlc file type), `Word` (.docx file type), `Excel` (.xlsx file type), Custom (custom file type, indicated as **External** in the client UI).|
 |alLayoutName |Specifies the name of the report layout.|
 |alReportId|Specifies the ID of the report assigned the layout.|
@@ -142,13 +142,73 @@ The following table explains the general dimensions of this trace.
 |alAction|**Edit**|
 |alLayoutFormat|Specifies the layout file type. Possible values: `RDLC` (.rdlc file type), `Word` (.docx file type), `Excel` (.xlsx file type), Custom (custom file type, indicated as **External** in the client UI).|
 |alLayoutName |Specifies the name of the report layout.|
-|alOldLayoutDescription||
-|alOldLayoutName||
+|alOldLayoutDescription|Specifies the description of the layout before it was changed.|
+|alOldLayoutName|Specifies the name of the layout before it was changed.|
+|alNewLayoutDescription|Specifies the new description of the layout.|
+|alNewLayoutName|Specifes the new name of the layout.|
 |alReportId|Specifies the ID of the report assigned the layout.|
 |companyName|[!INCLUDE[include-telemetry-dimension-company-name](../includes/include-telemetry-dimension-company-name.md)]|
 |environmentName|[!INCLUDE[include-telemetry-dimension-environment-name](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
-|eventId|**AL0000N0D**|
+|eventId|**AL0000N0H**|
+
+### Sample KQL code (Report layout default changed by user)
+
+This KQL code can help you get started analyzing which reports users run:
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions has 'AL0000N0H' // performance optimization
+| where customDimensions.eventId == 'AL0000N0H'
+| project timestamp
+// in which environment/company did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+// for which report
+, reportId = customDimensions.alReportId // object id of the report
+// what did the user do
+, action = customDimensions.alAction // alAction is "Edit" for this event
+, oldLayoutDescription = customDimensions.alOldLayoutDescription
+, oldLayoutName = customDimensions.alOldLayoutName
+, newLayoutDescription = customDimensions.alNewLayoutDescription
+, newLayoutName = customDimensions.alNewLayoutName
+// which user did it
+, user_Id // user telemetry id
+```
+
+## Report layout properties changed by user
+
+Occurs when a user changes the properties of layout used by a report.
+
+### General dimensions
+
+The following table explains the general dimensions of this trace.
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Report layout properties changed by user**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|alAction|**Edit**|
+|alLayoutFormat|Specifies the layout file type. Possible values: `RDLC` (.rdlc file type), `Word` (.docx file type), `Excel` (.xlsx file type), Custom (custom file type, indicated as **External** in the client UI).|
+|alLayoutName |Specifies the name of the report layout.|
+|alOldLayoutDescription|Specifies the description of the layout before it was changed.|
+|alOldLayoutName|Specifies the name of the layout before it was changed.|
+|alNewLayoutDescription|Specifies the new description of the layout.|
+|alNewLayoutName|Specifes the new name of the layout.|
+|alReportId|Specifies the ID of the report assigned the layout.|
+|companyName|[!INCLUDE[include-telemetry-dimension-company-name](../includes/include-telemetry-dimension-company-name.md)]|
+|environmentName|[!INCLUDE[include-telemetry-dimension-environment-name](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
+|eventId|**AL0000N0H**|
 
 ### Sample KQL code (Report layout default changed by user)
 
