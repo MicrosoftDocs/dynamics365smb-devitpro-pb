@@ -143,7 +143,7 @@ The following table explains the general dimensions of this trace.
 |alOldLayoutDescription|Specifies the description of the layout before it was changed.|
 |alOldLayoutName|Specifies the name of the layout before it was changed.|
 |alNewLayoutDescription|Specifies the new description of the layout.|
-|alNewLayoutName|Specifes the new name of the layout.|
+|alNewLayoutName|Specifies the new name of the layout.|
 |alReportId|Specifies the ID of the report assigned the layout.|
 |companyName|[!INCLUDE[include-telemetry-dimension-company-name](../includes/include-telemetry-dimension-company-name.md)]|
 |environmentName|[!INCLUDE[include-telemetry-dimension-environment-name](../includes/include-telemetry-dimension-environment-name.md)]|
