@@ -106,7 +106,7 @@ codeunit 70000000 MyPrefixSalesperson
 
 ## Copilot and action names
 
-Trailing whitespaces are allowed in action names, meaning that you won't get a compiler error. For example:
+Trailing whitespaces are allowed in action names, meaning that you won't get a compiler error. For example these names are accepted:
 
 ```al
 group("CopilotActionGroup  ")
@@ -118,7 +118,7 @@ group("CopilotActionGroup  ")
 }
 ```
 
-However, these trailing whitespaces are trimmed internally and will not be recognized by Copilot. To ensure that Copilot works correctly with your feature, you must avoid trailing spaces in action names. Instead, write the code like this:
+However, these trailing whitespaces are trimmed internally and won't be recognized by Copilot. To ensure that Copilot works correctly with your feature, you must *avoid trailing spaces* in action names. Instead, write the code like this:
 
 ```al
 group("CopilotActionGroup")
