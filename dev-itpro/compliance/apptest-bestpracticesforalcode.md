@@ -118,7 +118,17 @@ group("CopilotActionGroup  ")
 }
 ```
 
-However, these trailing whitespaces are trimmed internally and will not be recognized by Copilot. To ensure that Copilot works correctly with your feature, you must avoid trailing spaces in action names.
+However, these trailing whitespaces are trimmed internally and will not be recognized by Copilot. To ensure that Copilot works correctly with your feature, you must avoid trailing spaces in action names. Instead, write the code like this:
+
+```al
+group("CopilotActionGroup")
+{
+    action("Suggest Sales Lines")
+    {
+        // Code that generates sales lines suggestions
+    }
+}
+```
 
 ## Formatting
 
