@@ -28,13 +28,13 @@ PowerShell commands can be used with Microsoft Entra ID to disable adhoc (self-s
     Import-Module PowerShellGet
     ```
 
-1. Run the following command to connect to the Microsoft Entra service using the provided credentials:
+1. Run the following command to connect to the Microsoft Entra service. You must provide your user name and password for managing the Microsoft Entra tenant.
 
     ```PowerShell
     Connect-MsolService
     ```
 
-3. Run the following command to disable self-service signups:
+1. Run the following command to disable self-service signups:
 
     ```PowerShell  
     Set-MsolCompanySettings -AllowAdHocSubscriptions $false 
@@ -46,7 +46,7 @@ PowerShell commands can be used with Microsoft Entra ID to disable adhoc (self-s
 
     **Your IT department has turned off signup for [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)]. Contact them to complete signup.** 
 
- 
+
 ## Enable self-service signups
 
 To enable self-service signups, follow the same steps to sign in and connect to your Microsoft Entra service, and then run the following command:
@@ -57,7 +57,7 @@ Set-MsolCompanySettings -AllowAdHocSubscriptions $true
 
 ## Verify whether signups are enabled or disabled
 
-To check whether self-service signups are enabled or disabled in Microsoft Entra ID, follow the same steps to sign in and connect to your Microsoft Entra service. Then run the following command:
+To check whether self-service signups are enabled in Microsoft Entra ID, follow the same steps to sign in and connect to the Microsoft Entra service. Then run the following command:
 
 ```PowerShell
 Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
@@ -65,4 +65,4 @@ Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
 
 ## Related info
 
-[Announcing Microsoft Dynamics 365 Business Central: greater impact with an end-to-end view](https://cloudblogs.microsoft.com/dynamics365/2018/03/13/announcing-microsoft-dynamics-365-business-central-greater-impact-with-an-end-to-end-view/)  
+[Administration of Business Central Online](../administration/tenant-administration.md)
