@@ -12,7 +12,7 @@ description: Learn how to prevent Microsoft Entra tenant users from self-service
 
 Administrators for a Microsoft 365 tenant might not want their users to sign up for the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] service without their awareness. You can complete the following procedure in Microsoft Entra ID to block individual user signups.  
 
-To complete this procedure, you must install and use Microsoft Entra ID cmdlets. For a list of MSOnline cmdlets that are available for Microsoft Entra ID using Windows PowerShell, see [MSOnline](/powershell/module/MSOnline/?view=azureadps-1.0&redirectedfrom=msdn). 
+To complete this procedure, you must install and use Microsoft Entra ID cmdlets. For a list of MSOnline cmdlets that are available for Microsoft Entra ID using Windows PowerShell, see [MSOnline](/powershell/module/MSOnline/). 
 
 PowerShell commands can be used with Microsoft Entra ID to disable adhoc (self-service) subscriptions. 
 
