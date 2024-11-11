@@ -18,7 +18,7 @@ In this article, you learn how to add actions in the UI that users can select to
 
 > **Applies to:** [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 (runtime 13) and later.
 
-You use a prompt action to promote your Copilot feature on pages and encourage users to use it. In the UI, prompt actions associate actions directly with Copilot. They draw users' attention to tasks that Copilot can assist with on the page. Copilot might display these prompt actions elsewhere such as in the Copilot pane when asked for assistance.
+You use a prompt action to promote your Copilot feature on pages and encourage users to use it. In the UI, prompt actions associate actions directly with Copilot. They draw users' attention to tasks that Copilot can assist with a task on the page. Copilot might display these prompt actions elsewhere such as in the Copilot pane when asked for assistance.
 
 A prompt action is an action that appears in a highly visible area of the page. Depending on the page type, it could appear in the action bar, at the bottom or top of the page, and even in a floating action bar.
 
