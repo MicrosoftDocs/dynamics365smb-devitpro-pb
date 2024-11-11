@@ -37,7 +37,7 @@ Environments that have extensions with name collisions can experience issues whe
 
 In order to meet the requirements for the AppSource technical validation, you must have a three letters affix registered for your extension publisher, and you must use the affix in your extension.
 
-If you don't have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) and provide us with the following information to reserve the prefix/suffix of your choosing:
+If you don't have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com?subject=Affix%20Registration%20Request&body=MPN%20ID%3A%20%3CMPN%20ID%20in%20Partner%20Center%3E%0APublisher%20Name%3A%20%3Cthe%20publisher%20name%20that%20you%20use%20in%20your%20extensions%20(in%20the%20app.json%20file)%3E%0AAffixes%3A%20%3Cfive%20affix%20suggestions%20(each%20exactly%20three%20characters%20long)%20in%20order%20of%20priority) and provide us with the following information to reserve the prefix/suffix of your choosing:
 
 - Your MPN ID,
 - The publisher name that you use in your extensions (in the app.json file),
