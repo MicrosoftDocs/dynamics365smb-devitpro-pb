@@ -268,6 +268,7 @@
 #### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
 #### [Profile configuration telemetry](administration/telemetry-profile-configuration-lifecycle-trace.md)
 #### [Report generation telemetry](administration/telemetry-reports-trace.md)
+#### [Report layout lifecycle telemetry](administration/telemetry-report-layout-lifecycle-trace.md)
 #### [Retention policy telemetry](administration/telemetry-retention-policy-trace.md)
 #### [Stopped sessions telemetry](administration/telemetry-stop-session-trace.md)
 #### [Table index telemetry](administration/telemetry-table-index-trace.md)
