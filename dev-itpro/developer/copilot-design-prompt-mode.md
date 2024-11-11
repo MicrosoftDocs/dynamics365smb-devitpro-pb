@@ -108,6 +108,9 @@ var
 
 [Learn more about prompt guides](devenv-page-promptguide.md) and about [Error handling in prompt dialogs](devenv-page-prompt-error-handling.md).
 
+> [!NOTE]  
+> Using trailing whitespaces in action names will prevent Copilot from working correctly. Learn more in [Best practices for AL code](../compliance/apptest-bestpracticesforalcode.md#copilot-and-action-names).
+
 ## Add a generate action
 
 In this task, you add action to the PromptDialog page that users select to start generating output with Copilot and AI. 
