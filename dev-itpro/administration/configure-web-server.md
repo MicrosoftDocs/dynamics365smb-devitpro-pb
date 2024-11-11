@@ -67,18 +67,21 @@ The PowerShell script module **NAVWebClientManagement.psm1** includes the [Set-N
 
     For more information, see [Get started with the [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets](../deployment/configure-multiple-web-server-instances.md#GetStartedWebServerCmdlets).
 
+> [!WARNING]
+> Although -SiteDeploymentType is not a required parameter, the PowerShell script module **NAVWebClientManagement.psm1** is written such that the default SiteDeploymentType is "SubSite". If a SiteDeploymentType is not provided, the commandlets
+> will only operate against sub-sites.
+
 2. For each setting that you want to change, at the command prompt, run the following command:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration -Server [MyComputer] -ServerInstance [ServerInstanceName] -WebServerInstance [MyBCWebServerInstance] -KeyName [Setting] -KeyValue [Value]
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance [MyBCWebServerInstance] -KeyName [Setting] -KeyValue [Value] -SiteDeploymentType [Type]
     ```
 
     Replace:
-    - `[MyComputer]` with the name of the computer that is running the [!INCLUDE[server](../developer/includes/server.md)]
-    - `[ServerInstanceName]` with the name of the server instance, such as **[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]**.
     - `[MyBCWebServerInstance]`with the name of the web server instance for the [!INCLUDE[webserver](../developer/includes/webserver.md)].
-    - `[KeyName]` with the name of the setting. Refer to the next section in this article.
-    - `[KeyValue]` with the new value of the setting.
+    - `[Setting]` with the name of the setting. Refer to the next section in this article.
+    - `[Value]` with the new value of the setting.
+    - `[Type]` with the site deployment type. (SubSite or RootSite)
 
 ## <a name="Settings"></a>Settings in the navsettings.json
 
