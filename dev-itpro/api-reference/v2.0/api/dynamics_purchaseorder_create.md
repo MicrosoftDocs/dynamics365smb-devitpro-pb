@@ -141,7 +141,7 @@ Content-type: application/json
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [purchaseOrder](../resources/dynamics_purchaseOrder.md)  

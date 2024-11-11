@@ -95,7 +95,7 @@ Content-type: application/json
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [extensionUpload](../resources/dynamics_extensionUpload.md)

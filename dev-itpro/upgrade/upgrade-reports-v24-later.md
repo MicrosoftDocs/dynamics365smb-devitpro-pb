@@ -2,7 +2,7 @@
 title: Upgrading reports
 description: Describes how to upgrade reports in Business Central. 
 ms.custom: bap-template
-ms.date: 03/18/2024
+ms.date: 03/09/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -185,7 +185,7 @@ Extensions that depend on the legacy Microsoft Word render by using the `OnMerge
 
 By subscribing to `OnCustomDocumentMergerEx`, the application can use extension defined report renders featuring layouts stored in the platform layout tables. These layouts must be added as type custom in the reports rendering section. By subscribing to `OnCustomDocumentMergerEx`, the layouts can be added in the extension by using the `rendering` section in AL code of the report. The layout will then be stored in the platform layout tables.
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

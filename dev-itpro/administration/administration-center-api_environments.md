@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 07/23/2024
+ms.date: 11/01/2024
 ---
 
 # Business Central Admin Center API - Environments
@@ -158,7 +158,7 @@ EnvironmentOperation response with HTTP status code 202 (Accepted) with the foll
 
 ```
 {
-  "id": "11111111-aaaa-2222-bbbb-333333333333",
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "type": "create",
   "status": "scheduled", // Will eventually switch to running and then one between succeeded/failed
   "aadTenantId": "",
@@ -285,7 +285,7 @@ EnvironmentOperation response with HTTP status code 202 (Accepted) with the foll
 
 ```
 {
-  "id": "11111111-aaaa-2222-bbbb-333333333333",
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "type": "copy",
   "status": "scheduled", // Will eventually switch to running and then one between succeeded/failed
   "aadTenantId": "",
@@ -544,10 +544,10 @@ POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName
 202 Accepted with body. Follows the general "Operations" format, but with specific operation parameters 
 ```
 { 
-  "id": "11111111-aaaa-2222-bbbb-333333333333", 
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444", 
   "type": "environmentRename", // Operation type 
   "status": "scheduled", 
-  "aadTenantId": "44444444-aaaa-5555-bbbb-666666666666", 
+  "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", 
   "createdOn": "2021-04-22T12:29:06.668254Z", 
   "createdBy": "greg.chapman@contoso.com", 
   "errorMessage": "", 
@@ -598,10 +598,10 @@ POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName
 
 ```
 { 
-  "id": "11111111-aaaa-2222-bbbb-333333333333", // Operation ID 
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444", // Operation ID 
   "type": "pitRestore",  // Operation type 
   "status": "queued", // Status 
-  "aadTenantId": "44444444-aaaa-5555-bbbb-666666666666",         
+  "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",         
   "createdOn": "2021-04-23T09:41:28.8300669Z", 
   "createdBy": "greg.chapman@contoso.com", 
   "errorMessage": "", 
@@ -815,7 +815,7 @@ Data is returned for the following operation types:
 |EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api_app_management.md#install-an-app)|
 |EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api_app_management.md#uninstall-an-app)|
 |EnvironmentRename|Environment was renamed by using the Admin Center|[Rename an Environment](tenant-admin-center-environments-rename.md)<br><br>[Rename Endpoint](#rename-environment)|
-|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#put-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#put-appinsights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Microsoft Entra groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-using-microsoft-entra-groups)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
+|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#set-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#set-application-insights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Microsoft Entra groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-for-internal-users)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
 |MoveToAnotherAadTenant|An environment was moved to another Microsoft Entra organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)|
 |PitRestore|Environment was restored by using the Admin Center|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
 |Recover<sup>7</sup>|A deleted environment was recovered.|[Delete and Recover Environments in Admin Center](tenant-admin-center-environments-delete.md#recover-an-environment)<br><br>[Delete Endpoint](#recover-environment)|
@@ -863,11 +863,11 @@ Example `200 OK` response:
       "id": "552d3cb2-144e-4195-9a92-1043c4f483e9", // Id of the operation used for tracking
       "type": "environmentAppInstall", // Type of operation 
       "status": "succeeded", // Status of operation (enum | "Queued", "Scheduled", "Running", "Succeeded", "Failed", "Canceled", "Skipped") 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", // AAD tenant ID for which the operation was executed 
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", // AAD tenant ID for which the operation was executed 
       "createdOn": "2021-03-22T15:45:46.537Z", // Date and time the request was created 
       "errorMessage": "", // Error message for failed operations 
       "parameters": { // Additional parameters for the operation, specific to every operation type 
-        "appId": "1bb96677-5112-4566-b742-12eebbb9a058", 
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888", 
         "targetAppVersion": "17.0.3.0", 
         "countryCode": "US", 
         "allowPreviewVersion": true, 
@@ -883,7 +883,7 @@ Example `200 OK` response:
       "id": "5fe4ac38-a523-4c1f-80db-acd2cf848c09", 
       "type": "environmentRename", 
       "status": "succeeded", 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", 
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", 
       "createdOn": "2021-03-16T18:57:36.223Z", 
       "startedOn": "2021-03-16T18:57:39.053Z", 
       "completedOn": "2021-03-16T18:57:47.867Z", 
@@ -933,11 +933,11 @@ Example `200 OK` response:
       "id": "552d3cb2-144e-4195-9a92-1043c4f483e9", // Id of the operation used for tracking
       "type": "environmentAppInstall", // Type of operation 
       "status": "succeeded", // Status of operation (enum | "Queued", "Scheduled", "Running", "Succeeded", "Failed", "Canceled", "Skipped") 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", // AAD tenant ID for which the operation was executed 
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", // AAD tenant ID for which the operation was executed 
       "createdOn": "2021-03-22T15:45:46.537Z", // Date and time the request was created 
       "errorMessage": "", // Error message for failed operations 
       "parameters": { // Additional parameters for the operation, specific to every operation type 
-        "appId": "1bb96677-5112-4566-b742-12eebbb9a058", 
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888", 
         "targetAppVersion": "17.0.3.0", 
         "countryCode": "US", 
         "allowPreviewVersion": true, 
@@ -953,7 +953,7 @@ Example `200 OK` response:
       "id": "5fe4ac38-a523-4c1f-80db-acd2cf848c09", 
       "type": "environmentRename", 
       "status": "succeeded", 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", 
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", 
       "createdOn": "2021-03-16T18:57:36.223Z", 
       "startedOn": "2021-03-16T18:57:39.053Z", 
       "completedOn": "2021-03-16T18:57:47.867Z", 

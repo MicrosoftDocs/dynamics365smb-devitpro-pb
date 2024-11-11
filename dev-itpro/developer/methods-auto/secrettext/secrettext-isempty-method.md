@@ -1,8 +1,8 @@
 ---
 title: "SecretText.IsEmpty() Method"
-description: "Returns a value indicating whether the secret text contains any content."
+description: "Returns a value indicating whether the secret text does not contain any content."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 11/01/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 # SecretText.IsEmpty() Method
 > **Version**: _Available or changed with runtime version 12.0._
 
-Returns a value indicating whether the secret text contains any content.
+Returns a value indicating whether the secret text does not contain any content.
 
 
 ## Syntax
@@ -30,11 +30,11 @@ An instance of the [SecretText](secrettext-data-type.md) data type.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the secret text contains any content, otherwise **false**.
+**true** if the secret text does not contain any content, otherwise **true**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [SecretText Data Type](secrettext-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

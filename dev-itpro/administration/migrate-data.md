@@ -3,10 +3,10 @@ title: Migrate On-Premises Data to Business Central Online
 description: Learn how to set up cloud data migration to Business Central online from supported versions of Dynamics products, and from Business Central on-premises. Azure Data Factory manages the data migration directly between databases.
 author: jswymer
 ms.topic: conceptual
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003
-ms.date: 06/03/2024
+ms.date: 10/23/2024
 ms.author: jswymer
 ms.custom: bap-template
 ---
@@ -247,43 +247,6 @@ This task will run the cloud migration on your that you set up previously, movin
 3. If successful, you'll get a message that the could migration was triggered. Select OK, then you can monitor the status on the **Cloud Migration Management** page.-->
 
 <!--
-## Specify the SQL connection
-
-If the product you selected requires a SQL connection, this page will be presented. Other source applications may require different information to connect to them. This page will display the connection information based on the product that you specified in the previous page. This is defined from the installed extensions for the product you've selected. The following list provides more details about the fields in this part of the assisted setup guide.  
-
-* **SQL Connection**
-
-  Specify *SQL Server* for a locally installed SQL Server instance, or *Azure SQL*.
-  
-  > [!IMPORTANT]
-  > Azure SQL Managed Instance is not supported.  
-
-* **SQL Connection string**
-
-  You must specify the connection string to your SQL Server, including the name of the server that SQL Server is running on, and the name of the instance, the database, and the relevant user account.  
-
-  For example, `Server=MyServer\BCDEMO;Database=BC180;UID=MySQLAccount;PWD=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, version 18. For more information, see [the SQL Server blog](/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string).  
-
-  The following snippets illustrate a couple of connection strings with different formats:  
-
-    `Server={Server Name\Instance Name};Initial Catalog={Database Name};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};`  
-
-    `Server={Server Name\Instance Name};Database={Database Name};User Id={SQL Server Authenticated UserName};Password={SQL Server Authenticated Password};`  
-
-  > [!IMPORTANT]
-  > In the second connection string format, don't forget to add the **space** in *User Id* parameter as it's mandatory and can throw an error if it's missing.
-
-  The SQL connection string is passed to Azure Data Factory (ADF), where it's encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data migration process.  
-
-* **Integration runtime name**
-
-  If your SQL connection is *SQL Server*, you must specify the runtime service that will be used to replicate the data from the defined source to [!INCLUDE [prod_short](../includes/prod_short.md)] online. The integration runtime must be running on the machine that holds the SQL Server database. If you don't already have a runtime service, leave the field empty, and then choose the **Next** button.  
-
-  If you leave the **Integration runtime name** field empty, a new page appears from where you can download the self-hosted integration runtime that you must install. Follow the instructions on the page.  [!INCLUDE [tooltip-inline-tip_md](../includes/tooltip-inline-tip_md.md)]
-
-Once you choose **Next**, a new pipeline will be created in the Azure service. This takes less than a minute to complete, in most cases. If you want to test your SQL string, open the **Microsoft Integration Runtime Configuration Manager**, and then choose the **Diagnostics** menu option. From there, you can test to see if the connection is good.  -->
-
-<!--
 ## Manage the migration
 
 Once you have set up this configuration, you can manage your cloud environment and data migration from the **Cloud Migration Management** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  
@@ -384,6 +347,21 @@ The migration process, including the data flow and tasks that must be done to pr
 - [Business Central on-premise to online migration](migrate-business-central-on-premises.md)
 - [Dynamics GP on-premise to online migration](migrate-gp-overview.md)
 - [Dynamics NAV to Business Central online](../administration/migrate-nav.md)
+- [Forrester Report: The total economic impact of a migration to Business Central](https://go.microsoft.com/fwlink/?linkid=2292320)
+
+
+## Partner webinars and office hours
+
+Join the upcoming partner webinars and office hours for Dynamics GP partners exploring Dynamics 365 Business Central. Join the webinars to learn more and there will be options to ask questions. Find the topics and dates below. Registration opens end of October 2024 here: [aka.ms/GPtoBCOfficeHours](https://aka.ms/GPtoBCOfficeHours).
+
+| Date	| Office Hour Topic	| Abstract |
+|-------|-------------------|----------|
+|November 12 |	Architecture	| Join the webinar and open office hour with Microsoft where we will cover how to effectively manage multiple environments and companies, understand the relationship between tenants and environments, manage users from different tenants, transfer environments between Microsoft Entra tenants, optimize capacity, and implement localizations to comply with regional regulations.|
+|November 19 |	Performance	| This cloud performance webinar focuses on enhancing the performance of Microsoft Dynamics 365 Business Central through various strategies and tools. It covers real-life workloads, scalable architecture, and factors affecting performance such as configuration, data volume, and concurrent activities. The session also highlights tools like the Business Central Performance Toolkit (BCPT) and telemetry for monitoring and optimizing performance.|
+|December 5	| Maintenance |	Join the Microsoft webinar on monitoring and maintenance for Dynamics 365 Business Central, covering key topics such as Backup, Restore, and Disaster Recovery, Security and Compliance, Monitoring, and Code Maintenance within Application Lifecycle Management. Gain insights into keeping your environment secure, monitoring its health, and streamlining your development processes.|
+|December 10 | Transformation |	Join the Microsoft webinar and office hour about the cloud transformation. We will provide guidance for transitioning from Dynamics GP to Dynamics 365 Business Central. We will cover key topics such as strategies, tools and processes for data migration. Covering both master data and historical data to ensure a smooth transition. And will share best practices for reducing data stored in Business Central databases.|
+|December 17 | Financial Management |	Join the Microsoft webinar and office hour about financial management In Dynamics 365 Business Central. We will provide an overview of setting up and managing the Chart of Accounts and Dimensions, ensuring accurate and efficient financial tracking. Additionally, we will explore the functionalities of the General Ledger, including making corrections and adjustments. The webinar will also cover budgeting techniques and tools, as well as best practices for generating and analyzing financial reports.|
+|December 18	|Financial Management |	Repeat |
 
 ## See also
 

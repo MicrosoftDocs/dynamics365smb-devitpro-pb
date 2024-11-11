@@ -44,7 +44,7 @@ DELETE https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'})
 
 No response body.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 

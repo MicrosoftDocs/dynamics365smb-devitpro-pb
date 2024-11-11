@@ -4,7 +4,7 @@ description: Get an overview of the signals Business Central emits to Purview.
 author: jobulsin
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 05/21/2024
+ms.date: 10/21/2024
 ms.author: jobulsin
 ---
 
@@ -291,6 +291,41 @@ Activities listed in the table below can be audited by filtering to the `Adminis
             <td>Url</td>
             <td>https://cronus.com/support</td>
         </tr>
+        <tr>
+            <td>Changed tenant permission system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed tenant permission set system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed tenant permission set relation system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed tenant feature key system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed tenant profile setting system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed tenant profile extension system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed data sensitivity system table</td>
+            <td></td>
+            <td></td>
+        </tr>
     </tbody>
 </table>
 
@@ -375,19 +410,595 @@ Activities listed in the table below can be audited by filtering to the `Configu
             <td>ScheduledOperationId</td>
             <td>00000000-0000-0000-0000-000000000000</td>
         </tr>
+        <tr>
+            <td rowspan=4>Published app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Installed app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Upgraded app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Uninstalled app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Unpublished app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Uploaded app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Deployed app</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>user</td>
+            <td>Test User</td>
+        </tr>
+        <tr>
+            <td rowspan=9>Changed permission set by extension</td>
+            <td>tenantId</td>
+            <td>tenant01a123456789</td>
+        </tr>
+        <tr>
+            <td>appId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+            <td>1.1.1234.0000</td>
+        </tr>
+        <tr>
+            <td>permissionSetExtensionObjectId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>permissionSetExtensionObjectName</td>
+            <td>Test Permission Set Extension</td>
+        </tr>
+        <tr>
+            <td>permissionSetId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>permissionSetName</td>
+            <td>Test Permission Set Name</td>
+        </tr>
+        <tr>
+            <td>changeSummary</td>
+            <td>Test change summary</td>
+        </tr>
+        <tr>
+            <td>isNewPermissionSet</td>
+            <td>True</td>
+        </tr>
     </tbody>
 </table>
 
 ### Administered user activities
-Coming soon.
+
+You can audit the activities in the table below by filtering to the `Administered user` event.
+
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Message parameters</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=7>The tenant [TenantPermission] permission for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] has been updated with the value: "[Value]", by the UserSecurityId [UserSecurityId]</td>
+            <td>TenantPermission</td>
+            <td>READ</td>
+        </tr>
+        <tr>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Role</td>
+            <td>D365 ACCOUNTANTS</td>
+        </tr>
+        <tr>
+            <td>ObjectType</td>
+            <td>Table</td>
+        </tr>
+        <tr>
+            <td>ObjectId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Value</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=5>The Read permission for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been granted by the UserSecurityId [UserSecurityId]</td>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Role</td>
+            <td>D365 ACCOUNTANTS</td>
+        </tr>
+        <tr>
+            <td>ObjectType</td>
+            <td>Table</td>
+        </tr>
+        <tr>
+            <td>ObjectId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=10>The tenant permissions for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been inserted with the following values - Read "[Read]", Insert "[Insert]", Modify "[Modify]", Delete "[Delete]" and Execute "[Execute]" by the UserSecurityId [UserSecurityId]</td>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Role</td>
+            <td>D365 ACCOUNTANTS</td>
+        </tr>
+        <tr>
+            <td>ObjectType</td>
+            <td>Table</td>
+        </tr>
+        <tr>
+            <td>ObjectId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Read</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Insert</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Modify</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Delete</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Execute</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=9>The tenant permissions for the App Id [AppId], Role [Role], ObjectType [ObjectType], ObjectId [ObjectId] have been updated with the following values - Read "[Read]", Insert "[Insert]", Modify "[Modify]", Delete "[Delete]" and Execute "[Execute]" by the UserSecurityId [UserSecurityId]</td>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Role</td>
+            <td>D365 ACCOUNTANTS</td>
+        </tr>
+        <tr>
+            <td>ObjectType</td>
+            <td>Table</td>
+        </tr>
+        <tr>
+            <td>ObjectId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Read</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Insert</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Modify</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Delete</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The permission set [PermissionSet] has been added to the security group [SecurityGroupName] by UserSecurityId [UserSecurityId]</td>
+            <td>PermissionSet</td>
+            <td>D365 READ</td>
+        </tr>
+        <tr>
+            <td>SecurityGroupName</td>
+            <td>My security group</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The license configuration [PlanConfiguration] has been created by the UserSecurityID [UserSecurityId]</td>
+            <td>PlanConfiguration</td>
+            <td>D365 Business Central Basic Financials</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The license configuration [PlanConfiguration] has been modified by the UserSecurityID [UserSecurityId]</td>
+            <td>PlanConfiguration</td>
+            <td>D365 Business Central Basic Financials</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The license configuration [PlanConfiguration] has been deleted by the UserSecurityID [UserSecurityId]</td>
+            <td>PlanConfiguration</td>
+            <td>D365 Business Central Basic Financials</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The plan configuration [PlanConfiguration] has been customized by the UserSecurityID [UserSecurityId]</td>
+            <td>PlanConfiguration</td>
+            <td>D365 Business Central Basic Financials</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>The Update users from Microsoft 365 wizard has been run by the UserSecurityID [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The user with UserSecurityId [UserSecurityId1] has been disabled by user with UserSecurityID [UserSecurityId2]</td>
+            <td>UserSecurityId1</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId2</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The permission set [PermissionSet] has been copied by UserSecurityId [UserSecurityId]</td>
+            <td>PermissionSet</td>
+            <td>D365 READ</td>
+        </tr>
+        <tr>
+            <td>UserSecurityID</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>The Effective Permissions page has been opened by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=7>The user settings (UserSecurityId [UserSecurityId1]) has been updated with the values: Language ID [LanguageId], Locale ID [LocaleId], Company [Company], Time Zone [TimeZone], Profile ID [ProfileId] by UserSecurityId [UserSecurityId2]</td>
+            <td>UserSecurityID1</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>LanguageId</td>
+            <td>1033</td>
+        </tr>
+        <tr>
+            <td>LocaleId</td>
+            <td>1033</td>
+        </tr>
+        <tr>
+            <td>Company</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td>TimeZone</td>
+            <td>W. Europe Standard Time</td>
+        </tr>
+        <tr>
+            <td>ProfileId</td>
+            <td>BUSINESS MANAGER EVALUATION</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId2</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Changed access control system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Changed user system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
 ### Administered company activities
-Coming soon.
+
+You can audit the activities in the table below by filtering to the `Administered company` event.
+
+Events in the table below are emitted with custom dimensions.
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Custom dimensions</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Created new company</td>
+            <td>ompanyName</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Copied company</td>
+            <td>fromCompanyName</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td>toCompanyName</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td>Deleted company</td>
+            <td>CompanyName</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td>Changed company system table</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+Events in the table below are emitted with message parameters.
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Message parameters</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The Monitor Field feature has been set up by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Field monitoring has been set for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
+            <td>FieldId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Field monitoring has been modified for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
+            <td>FieldId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Field monitoring has been deleted for the field [FieldId] in the table [TableId] by UserSecurityId [UserSecurityId]</td>
+            <td>FieldId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=5>The data sensitivity value [DataSensitivityValue] has been set for Company Name [CompanyName], Table No. [TableId], Field No. [FieldId] by UserSecurityId [UserSecurityId]</td>
+            <td>DataSensitivityValue</td>
+            <td>Sensitive</td>
+        </tr>
+        <tr>
+            <td>CompanyName</td>
+            <td>CRONUS USA, Inc.</td>
+        </tr>
+        <tr>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>FieldId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>The new retention policy record with Table ID [TableId] is created by the UserSecurityId [UserSecurityId]</td>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The retention policy defined for table [TableId], [TableName] was applied by the UserSecurityId [UserSecurityId]</td>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>TableName</td>
+            <td>Customer</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>UserSecurityId [UserSecurityId] set the status of the job queue entry [JobQueueEntryId] to Ready</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>JobQueueEntryId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The status of the feature key [FeatureKey] has been set to [FeatureStatus] by UserSecurityId [UserSecurityId]</td>
+            <td>FeatureKey</td>
+            <td>ConcurrentWarehousingPosting</td>
+        </tr>
+        <tr>
+            <td>FeatureStatus</td>
+            <td>Enabled</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+    </tbody>
+</table>
+
 
 ### Configured integration activities
 
-Activities listed in the table below can be audited by filtering to the `Configured integration` event.
+You can audit the activities in the table below by filtering to the `Configured integration` event.
 
+Events in the table below are emitted with custom dimensions.
 <table>
     <thead>
         <tr>
@@ -445,11 +1056,278 @@ Activities listed in the table below can be audited by filtering to the `Configu
     </tbody>
 </table>
 
+Events in the table below are emitted with message parameters.
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Message parameters</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>Privacy Notice Approval ID [PrivacyApprovalName] provided by UserSecurityId [UserSecurityId]</td>
+            <td>PrivacyApprovalName</td>
+            <td>Azure OpenAI</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Privacy Notice Approval ID [PrivacyApprovalName] has been reset by UserSecurityId [UserSecurityId]</td>
+            <td>PrivacyApprovalName</td>
+            <td>Azure OpenAI</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=3>The web service record with Object Type [ObjectType], Service Name [ServiceName] has been created by UserSecurityId [UserSecurityId]</td>
+            <td>ObjectType</td>
+            <td>Page</td>
+        </tr>
+        <tr>
+            <td>ServiceName</td>
+            <td>ItemLedgerEntries</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td rowspan=4>The new API Setup record Table ID [TableId], Template Code [TemplateCode], Page ID [PageId] is created by the UserSecurityId [UserSecurityId]</td>
+            <td>TableId</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>TemplateCode</td>
+            <td>RESO000001</td>
+        </tr>
+        <tr>
+            <td>PageId</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>User [UserSecurityId] enabled integration to Dataverse</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>User [UserSecurityId] enabled integration to Dynamics 365 Sales</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Email Logging has been set up by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>CDS Connection Setup - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Sales and Inventory Forecast application - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Online Map Setup enabled by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Late Payment Prediction - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Cash Flow Forecast feature, Azure AI - consent provided</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Image Analyzer - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Image Analyzer - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>MS PayPal - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>MS Yodlee Bank Service - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>AMC Banking Fundamentals - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>VAT Registration Service enabled by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Curr. Exch. Rate Update Setup - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>Document Exchange Service Setup - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>CFDI - consent provided</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>NO Elect. VAT Setup - consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>SII Setup - consent provided</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>The UK Making Tax Digital consent provided by UserSecurityId [UserSecurityId]</td>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+    </tbody>
+</table>
+
 ### Configured Copilot activities
-Coming soon.
+
+You can audit the activities in the table below by filtering to the `Configured Copilot` event.
+
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Message parameters</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=3>The copilot/AI capability [CopilotCapability], App Id [AppId] has been activated by the UserSecurityId [UserSecurityId]</td>
+            <td>CopilotCapability</td>
+            <td>Sales Line Suggestions</td>
+        </tr>
+        <tr>
+            <td>AppId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+        <tr>
+            <td>UserSecurityId</td>
+            <td>00000000-0000-0000-0000-000000000000</td>
+        </tr>
+    </tbody>
+</table>
+
 
 ### Configured cloud migration activities
+
 Coming soon.
 
 ### Administered report activities
-Coming soon.
+
+You can audit the activities in the table below by filtering to the `Administered report` event.
+
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Custom dimensions</th>
+            <th>Sample value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=5>Created report layout</td>
+            <td>ReportId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>LayoutName</td>
+            <td>TestReport</td>
+        </tr>
+        <tr>
+            <td>LayoutDescription</td>
+            <td>Test Layout Description</td>
+        </tr>
+        <tr>
+            <td>LayoutFormat</td>
+            <td>Layout Format</td>
+        </tr>
+        <tr>
+            <td>Action</td>
+            <td>New</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Deleted report layout</td>
+            <td>ReportId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>LayoutName</td>
+            <td>TestReport</td>
+        </tr>
+        <tr>
+            <td>Action</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td rowspan=6>Modified report layout</td>
+            <td>ReportId</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>OldLayoutName</td>
+            <td>OldTestReport</td>
+        </tr>
+        <tr>
+            <td>OldLayoutDescription</td>
+            <td>Old Layout Description</td>
+        </tr>
+        <tr>
+            <td>NewLayoutName</td>
+            <td>NewTestReport</td>
+        </tr>
+        <tr>
+            <td>NewLayoutDescription</td>
+            <td>New Layout Description</td>
+        </tr>
+        <tr>
+            <td>Action</td>
+            <td>Edit</td>
+        </tr>
+    </tbody>
+</table>
+
+## See also
+
+[Auditing in Business Central](auditing-overview.md)  
+[Auditing changes](/dynamics365/business-central/across-log-changes)  
+[Security Auditing in Business Central](../security/security-auditing.md)  

@@ -1,5 +1,5 @@
 ---
-title: Update purchaseCreditMemoes
+title: Update purchaseCreditMemos
 description: Updates a  purchase credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: dynamics-365-business-central
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Update purchaseCreditMemoes
+# Update purchaseCreditMemos
 
 Updates the properties of a purchase credit memo object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
@@ -23,7 +23,7 @@ Updates the properties of a purchase credit memo object for [!INCLUDE[prod_short
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
 ```
-PATCH businesscentralPrefix/companies({id})/purchaseCreditMemoes({id})
+PATCH businesscentralPrefix/companies({id})/purchaseCreditMemos({id})
 ```
 <!-- END>EDIT_IS_REQUIRED-->
 ## Request headers
@@ -49,7 +49,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values) -->
 ```json
-PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemoes({id})
+PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos({id})
 Content-type: application/json
 {
     "id" : ,
@@ -110,7 +110,7 @@ Content-type: application/json
 }
 ```
 <!-- END>EDIT_IS_REQUIRED-->
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [purchaseCreditMemo](../resources/dynamics_purchaseCreditMemo.md)  

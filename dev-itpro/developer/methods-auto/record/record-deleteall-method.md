@@ -2,7 +2,7 @@
 title: "Record.DeleteAll([Boolean]) Method"
 description: "Deletes all records in a table that fall within a specified range."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,7 +41,7 @@ Specifies whether to run the AL code in the OnDelete Trigger. If this parameter 
 > [!NOTE]  
 > Setting `RunTrigger` to **false** only affects the `OnDelete` trigger. The `OnBeforeDelete` and `OnAfterDelete` triggers from table extensions will still run regardless.
 
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

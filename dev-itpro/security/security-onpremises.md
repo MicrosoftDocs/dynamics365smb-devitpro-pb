@@ -11,13 +11,15 @@ ms.date: 04/01/2021
 ---
 # Business Central (On-Premises) Security
 
-This section helps you understand and improve the security of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] hosted on-premises. In the links below you'll find information, hardening guidance, and recommended best practices that address client, database, server, and network security.  
+This section helps you understand and improve the security of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] hosted on-premises. In the links below you find information, hardening guidance, and recommended best practices that address client, database, server, and network security.  
 
 ## Authentication
 
 Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server tiers of Business Central.
 
-For more information, see [Authentication and Credential Types](../administration/users-credential-types.md).
+Learn more in [Authentication and Credential Types](../administration/users-credential-types.md).
+
+[!INCLUDE[navuserpassword](../developer/includes/navuserpassword.md)]
 
 ## Server security
 
@@ -33,9 +35,9 @@ For more information, see [Authentication and Credential Types](../administratio
 
 The following articles explain how to improve the security of connections from the clients to [!INCLUDE[server](../developer/includes/server.md)].  
 
-[Configuring SSL to Secure the Client Connections](../deployment/configure-ssl-web-client-connection.md)
+[Configuring SSL to secure the client connections](../deployment/configure-ssl-web-client-connection.md)
 
-[Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md)
+[Using security certificates with Business Central on-premises](../deployment/implement-security-certificates-production-environment.md)
 
 ## Database security
 

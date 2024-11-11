@@ -18,7 +18,7 @@ A package with publisher '{0}', name '{1}', and a version compatible with '{2}' 
 
 Validate that the dependency information is correct and that the dependencies are available for the countries/regions and releases that are validated.
 
-## See also
+## Related information
 
 [Technical Validation FAQ](../devenv-checklist-submission-faq.md)
 [Get started with AL](../devenv-get-started.md)  

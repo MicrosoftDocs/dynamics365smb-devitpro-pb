@@ -14,7 +14,7 @@ author: thpeder
 
 A {0} with ID {1} in '{2}' is found in both {3} and {4}. {0} IDs must be unique within the base objects and their extension objects. Resolve the conflict in your extension by using a different ID and upload the extension again.
 
-## See also
+## Related information
 
 [Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

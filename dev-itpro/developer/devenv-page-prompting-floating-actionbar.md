@@ -6,14 +6,16 @@ ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 03/21/2024
-ms.custom: bap-template
+ms.date: 09/25/2024
 ms.reviewer: solsen
 ---
 
 # Prompting using a floating action bar
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and runtime 13, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered in a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features.
+> [!NOTE]
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2 and runtime 14, you can also use prompt actions on Card, Document, and ListPlus page types to nudge users to use your Copilots on such pages. The required AL code follows the same model as when adding Copilot prompt actions to list pages.
+
+Since [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and runtime 13, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered with more prominence than other actions in the UI. It can be shown as a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features.
 
 The following image shows what the floating action bar can look like.
 
@@ -22,7 +24,7 @@ The following image shows what the floating action bar can look like.
 To create a floating action bar with one or more prompt actions, you must create a new area in the `actions` section of the page object. The area must be set to `area(Prompting)`. You can then create one or more new actions in the area and run a `PromptDialog` object that you want to activate when the action is clicked. Only objects of the `PromptDialog` page type can be run from a prompting area.
 
 > [!NOTE]
-> The floating action bar will only show if you have specified a `RunObject` property to the page.
+> The floating action bar only shows if you've specified a `RunObject` property to the page.
 
 The following example shows the syntax for how to create a prompt action that runs the **Copilot Marketing Text** page. This piece of AL code can be added to a page where you want to promote the **Copilot Marketing Text** functionality. When the action is clicked, the **Copilot Marketing Text** page is opened in a dialog.
 
@@ -42,7 +44,8 @@ actions
 ...
 ```
 
-The user will see a floating action bar on the page that this code is implemented on. If the user selects **Hide**, the floating action bar will be placed in the action bar instead. It can easily be brought back by clicking **Show in page**.
+> [!NOTE]
+> The user sees a floating action bar on the page that this code is implemented on. If the user selects **Hide**, the floating action bar is placed in the action bar instead. It can easily be brought back by clicking **Show in page**.
 
 The next code is part of a code sample taken from the [aka.ms/BCTech](https://aka.ms/BCTech) repo; the [Job Planning Lines Copilot](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/SuggestResource/JobPlanningLinesCopilot.PageExt.al) page extension. This code sample illustrates how to create two prompt actions that run the `SuggestResourceCopilotAction` and `SuggestItemCopilotAction` actions. The `SuggestResourceCopilotAction` action is used to suggest a resource to be assigned to a job planning line, and the `SuggestItemCopilotAction` action is used to suggest an item to be assigned to a job planning line. The `SuggestResourceWithAI` and `SuggestItemWithAI` functions aren't implemented in this code sample. 
 
@@ -84,7 +87,8 @@ actions
 ...
 ```
 
-## See also
+## Related information
 
 [The PromptDialog page type](devenv-page-type-promptdialog.md)  
-[Prompting using a prompt guide](devenv-page-promptguide.md)   
+[Prompting using a prompt guide](devenv-page-promptguide.md)  
+[Error handling in prompt dialogs](devenv-page-prompt-error-handling.md)

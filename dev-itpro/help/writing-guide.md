@@ -16,7 +16,7 @@ If you're contributing to the [!INCLUDE [prod_short](../developer/includes/prod_
 
 - The [Microsoft Style Guide](/style-guide/welcome/) is published online
   
-  The content on the learn.microsoft.com site generally follows the Microsoft Style Guide. The content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] varies in certain ways, partly with product-specific terminology, and a more conservative approach to contractions, for example. Also, since navigation in the [!INCLUDE [prod_short](../includes/prod_short.md)] user interface is different from that of other Dynamics 365 apps, our guidance for steps that describe such navigation is slightly different. For more information, see the [Write for accessibility](#write-for-accessibility) section.  
+  The content on the learn.microsoft.com site generally follows the Microsoft Style Guide. The content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] varies in certain ways, partly with product-specific terminology, and a more conservative approach to contractions, for example. Also, since navigation in the [!INCLUDE [prod_short](../includes/prod_short.md)] user interface is different from that of other Dynamics 365 apps, our guidance for steps that describe such navigation is slightly different. Learn more in the [Write for accessibility](#write-for-accessibility) section.  
 - [Contribute to the Help](contributor-guide.md) shows you the basics of collaborating on content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
 - The [Docs Contributor Guide](/contribute/) has many tips and tricks for authoring in MarkDown
@@ -25,7 +25,7 @@ If you're contributing to the [!INCLUDE [prod_short](../developer/includes/prod_
 
 ## Write for accessibility
 
-At Microsoft, we write for accessibility, which also means that the same content applies to interactions with the software across devices, regardless of input method, for example. For more information, see [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) in the Microsoft Style Guide. The product-specific guidance is found in the [Navigation in the product](#navigation-in-the-product) section.  
+At Microsoft, we write for accessibility, which also means that the same content applies to interactions with the software across devices, regardless of input method, for example. Learn more in [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) in the Microsoft Style Guide. The product-specific guidance is found in the [Navigation in the product](#navigation-in-the-product) section.  
 
 ### Accessible illustrations
 
@@ -41,7 +41,7 @@ Most of Microsoft's articles use a different MarkDown formatting for illustratio
 ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do")
 ```
 
-Both formats are valid MarkDown, and both formats are supported by DocFx.exe. For more information, see [Images](/contribute/markdown-reference#images) in the Docs Contributor Guide.  
+Both formats are valid MarkDown, and both formats are supported by DocFx.exe. Learn more in [Images](/contribute/markdown-reference#images) in the Docs Contributor Guide.  
 
 ### Navigation in the product
 
@@ -62,7 +62,7 @@ The following table provides examples of how to write about the user interface i
 
 ## Authoring in MarkDown
 
-The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content is styled using a MarkDown syntax as described in the next sections. Extended guidance is available in the [MarkDown Reference](/contribute/markdown-reference) section in the Docs Contributor Guide.
+The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content is styled using a MarkDown syntax as described in the next sections. Extended guidance is available in the [MarkDown reference](/contribute/markdown-reference) section in the Docs Contributor Guide.
 
 ### Headings
 
@@ -131,7 +131,7 @@ MarkDown syntax for nested tables is limited, so we recommend using HTML-syntax 
 
 ### Placeholders
 
-Rather than repeating text in two or more articles, use *includes*. For more information, see [Included Markdown files](/contribute/markdown-reference#included-markdown-files).  
+Rather than repeating text in two or more articles, use *includes*. Learn more in [Included Markdown files](/contribute/markdown-reference#included-markdown-files).  
 
 For [!INCLUDE [prod_short](../includes/prod_short.md)], we use includes for boilerplate text, for content that is repeated in more than one article, and for the product name. That way, we can make changes in just one location - and so can you.  
 
@@ -249,11 +249,11 @@ All fields in Business Central have tooltips; therefore, don't document fields i
 
 > "Choose a field to read a short description of the field or link to more information."
 
-For more information, see [Business Central User Assistance Model](../user-assistance.md).
+Learn more in [Business Central user assistance model](../user-assistance.md).
 
 ### Recycle content
 
-Rather than copy-pasting content that you want to surface in two or more places, use *includes*. For more information, see [Included Markdown files](/contribute/markdown-reference#included-markdown-files) in the Docs Contributor Guide.  
+Rather than copy-pasting content that you want to surface in two or more places, use *includes*. Learn more in [Included Markdown files](/contribute/markdown-reference#included-markdown-files) in the Docs Contributor Guide.  
 
 ### Article titles
 
@@ -272,7 +272,7 @@ In this section, we describe best practices for file names of MarkDown files tha
 - No more than 80 characters - this is a publishing system limit
 - Use action verbs that are specific such as develop, buy, build, troubleshoot. No -ing words.
 - No small words - don't include a, and, the, in, or, etc.
-- All files must be in markdown and use the .md file extension.
+- All files must be in Markdown and use the .md file extension.
 
     New FAQ files must use YAML format. For an example, see the `https://github.com/MicrosoftDocs/dynamics365smb-docs/blob/live/business-central/faq-copy-paste.yml` file.
 
@@ -292,7 +292,7 @@ In this section, we describe best practices for file names of MarkDown files tha
 
 ### Country-specific content
 
-To simplify content localization and translation, country-specific articles live in country-specific folders. The TOC entries live under the "Local Functionality" parent node.  
+To simplify content localization and translation, country-specific articles live in country-specific folders. Their equivalent TOC entries live under the "Local Functionality" parent node.  
 
 ## User interface text
 
@@ -349,14 +349,14 @@ Messages that users see when they work in [!INCLUDE [prod_short](../developer/in
 
 [!INCLUDE [ua-teaching-tips](../includes/ua-teaching-tips.md)]
 
-## See also
+## Related information
 
-[Business Central User Assistance Model](../user-assistance.md)  
-[Contribute to the Help](contributor-guide.md)  
-[Configuring the Help Experience](../deployment/configure-help.md)  
+[Business Central user assistance model](../user-assistance.md)  
+[Contribute to the help](contributor-guide.md)  
+[Configuring the help experience](../deployment/configure-help.md)  
 [Generating help with the ALDoc tool](help-aldoc-generate-help.md)  
-[Docs Contributor Guide](/contribute/)  
-[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
+[Docs contributor guide](/contribute/)  
+[Docs authoring pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)  
 [Visual Studio Code](https://code.visualstudio.com/)  
 [Atom](https://atom.io/)  

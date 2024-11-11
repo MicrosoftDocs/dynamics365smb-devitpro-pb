@@ -71,7 +71,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [currency](../resources/dynamics_currency.md)    
 [Get currency](dynamics_currency_Get.md)    

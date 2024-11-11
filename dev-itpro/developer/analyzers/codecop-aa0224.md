@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0224"
 description: "The count of option captions specified in the OptionCaption property is wrong."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -46,7 +46,7 @@ page 50100 MyPage
 ```
 
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [OptionCaption Property](../properties/devenv-optioncaption-property.md)  
 [Get Started with AL](../devenv-get-started.md)  

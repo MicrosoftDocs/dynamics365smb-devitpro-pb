@@ -2,7 +2,7 @@
 title: "TestPage.GoToRecord(Record) Method"
 description: "Finds the specified record in a data set on a test page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,7 +41,7 @@ The record to find.
 ## Remarks
 The GoToRecord method loops over all records until it finds the identifies record.  For each record, the [OnAfterGetCurrRecord Trigger](../../triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) is executed. 
 
-## See Also
+## Related information
 [TestPage Data Type](testpage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

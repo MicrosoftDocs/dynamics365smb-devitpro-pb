@@ -91,3 +91,7 @@ Web services:
 - [Troubleshoot web service errors](../webservices/web-service-troubleshooting.md)
 - [Troubleshooting OData calls](../webservices/dynamics-error-codes.md)
 - [Troubleshooting API calls](../webservices/dynamics-error-codes.md)
+
+Edit in Excel:
+
+- [Troubleshoot Edit In Excel](/dynamics365/business-central/admin-deploy-excel-addin#known-limitations-in-metadata-generation)

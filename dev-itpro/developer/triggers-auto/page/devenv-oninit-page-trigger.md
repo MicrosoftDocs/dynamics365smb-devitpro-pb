@@ -1,8 +1,8 @@
 ---
-title: "OnInit (Page) Trigger"
+title: "OnInit (Page) trigger"
 description: "Initializes the user-defined variables on the page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnInit (Page) Trigger
+# OnInit (Page) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Initializes the user-defined variables on the page.
@@ -38,7 +38,7 @@ After this trigger is executed, the [OnOpenPage Trigger](devenv-onopenpage-page-
 > [!NOTE]  
 > The **OnInit** trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](exposing-methods-and-properties-in-a-windows-client-pagefield-add-in.md). --> 
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnInit (Request Page) Trigger](../requestpage/devenv-oninit-requestpage-trigger.md)

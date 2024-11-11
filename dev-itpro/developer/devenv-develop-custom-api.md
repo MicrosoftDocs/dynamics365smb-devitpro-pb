@@ -276,14 +276,14 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
                     {
                         Caption = 'Country';
                     }
-                }
 
-                part(carModels; "API Car Model")
-                {
-                    Caption = 'Car Models';
-                    EntityName = 'carModel';
-                    EntitySetName = 'carModels';
-                    SubPageLink = "Brand Id" = Field(SystemId);
+                    part(carModels; "API Car Model")
+                    {
+                        Caption = 'Car Models';
+                        EntityName = 'carModel';
+                        EntitySetName = 'carModels';
+                        SubPageLink = "Brand Id" = Field(SystemId);
+                    }
                 }
             }
         }
@@ -449,20 +449,21 @@ Which results in following response:
 3. Use Enumerations.
 4. Make sure to localize your custom API pages:
     - Use `EntityCaption` and `EntitySetCaption` properties
-    - Use captions for Enums
+    - Use captions for fields
+    - Use captions for enums
     - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
 
 ## Replacing ODataEDMType property
 
-[ODataEDMType property](../developer/properties/devenv-odataedmtype-property.md) was used to create nested JSON objects in the API response. Fields using this property were also called complex types. In [API v2.0](../api-reference/v2.0/index.md), all complex types are replaced with first-level properties or navigation properties. Overview of API v2.0 changes are documented [here](../api-reference/v2.0/transition-to-api-v2.0.md).
+The [ODataEDMType property](../developer/properties/devenv-odataedmtype-property.md) was used to create nested JSON objects in the API response. Fields using this property were also called complex types. In [API v2.0](../api-reference/v2.0/index.md), all complex types are replaced with first-level properties or navigation properties. An overview of the API v2.0 changes are documented [here](../api-reference/v2.0/transition-to-api-v2.0.md).
 
-[ODataEDMType property](../developer/properties/devenv-odataedmtype-property.md) is deprecated and custom API implementations should transition from complex types to first-level properties or navigation properties. This transition will improve API performance significantly since complex fields were calculated in the runtime and added additional compute time.
+The [ODataEDMType property](../developer/properties/devenv-odataedmtype-property.md) is deprecated and custom API implementations should transition from complex types to first-level properties or navigation properties. This transition will improve API performance significantly since complex fields were calculated in the runtime and added additional compute time.
 
 ### ODataEDMType to first-level property
 
-Following example shows an API page with a complex type field using ```ODataEDMType``` ```POSTALADDRESS```.
+The following example shows an API page with a complex type field using ```ODataEDMType``` ```POSTALADDRESS```.
 
-```
+```al
 page 50100 "Customers API"
 {
     PageType = API;
@@ -599,9 +600,9 @@ page 50100 "Customers API"
 }
 ```
 
-Removing the complex type field and instead introducing a first-level property will result in following API page. Instead of a complex field that requires a custom logic with slow compute time, several first-level fields are introduced.
+Removing the complex type field and instead introducing a first-level property results in the following API page. Instead of a complex field that requires a custom logic with slow compute time, several first-level fields are introduced.
 
-```
+```al
 page 50100 "Customers API"
 {
     PageType = API;
@@ -672,9 +673,9 @@ page 50100 "Customers API"
 
 ### ODataEDMType to navigational property
 
-Following example shows an API page with a complex type field using ```ODataEDMType``` ```Collection(DIMENSION)```.
+The following example shows an API page with a complex type field using ```ODataEDMType``` ```Collection(DIMENSION)```.
 
-```
+```al
 page 5010 "Journal Lines API"
 {
     PageType = API;
@@ -832,9 +833,9 @@ page 5010 "Journal Lines API"
 }
 ```
 
-Removing the complex type field and instead introducing a navigational property will result in following API page. Instead of a complex field that requires a custom logic with slow compute time, an API page part to corresponding entity is introduced.
+Removing the complex type field and instead introducing a navigational property results in the following API page. Instead of a complex field that requires a custom logic with slow compute time, an API page part to corresponding entity is introduced.
 
-```
+```al
 page 5010 "Journal Lines API"
 {
     PageType = API;
@@ -888,11 +889,11 @@ page 5010 "Journal Lines API"
 
 ## Using an API query type
 
-If you need to generate a web service endpoint that joins data between different tables, then consider using an API query object. This type of API cannot be used to display data in the user interface and data can only be read (not updated).
+If you need to generate a web service endpoint that joins data between different tables, then consider using an API query object. This type of API can't be used to display data in the user interface and data can only be read (not updated).
 
-For more information, see [API Query Type](devenv-api-querytype.md).
+Learn more in [API query type](devenv-api-querytype.md).
 
-## See also
+## Related information
 
 [Get started with AL](../developer/devenv-get-started.md)  
 [API page type](devenv-api-pagetype.md)   

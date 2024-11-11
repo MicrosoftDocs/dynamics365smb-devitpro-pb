@@ -147,5 +147,5 @@ Here is a JSON representation of the company resource.
 
 
 
-## See Also
+## Related information
 [GET company](../api/dynamics_company_Get.md)

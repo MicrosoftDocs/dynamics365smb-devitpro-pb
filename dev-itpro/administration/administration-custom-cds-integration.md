@@ -1,14 +1,14 @@
 ---
-title: Customizing an Integration with Microsoft Dataverse
+title: Customizing an integration with Microsoft Dataverse
 description: Learn how to integrate your extension with Microsoft Dataverse. This walkthrough takes you through each step.
 author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.author: bholtorf
-ms.date: 04/01/2021
+ms.date: 10/01/2024
 ---
 
-# Customizing an Integration with Microsoft Dataverse
+# Customizing an integration with Microsoft Dataverse
 
 This walkthrough describes how to customize an integration between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. As an example, this walkthrough guides you through the tasks to set up an integration between an employee in [!INCLUDE[prod_short](../includes/prod_short.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
@@ -363,7 +363,7 @@ end;
 
 ```
 
-During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 5357) raises and publishes events. You can add code that subscribes to these events so that you can add custom logic at different stages of the uncoupling process. The following list describes some of the events that are published by codeunit Int. Rec. Uncouple Invoke. For a complete list of events, refer to [CodeUnit Int. Rec. Uncouple Invoke reference](/dynamics365/business-central/application/base-application/codeunit/base-application-codeunit-int.-rec.-uncouple-invoke#events).
+During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 5357) raises and publishes events. You can add code that subscribes to these events so that you can add custom logic at different stages of the uncoupling process. The following list describes some of the events that are published by codeunit Int. Rec. Uncouple Invoke. For a complete list of events, refer to  [CodeUnit Int. Rec. Uncouple Invoke reference](/dynamics365/business-central/application/base-application/codeunit/microsoft.integration.syncengine.int.-rec.-uncouple-invoke#events).
 
 * **OnBeforeUncoupleRecord** - Occurs before remove coupling, and can be used to change data before uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnBeforeUncoupleRecord. The event resets the company ID on the uncoupled tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 * **OnAfterUncoupleRecord** - Occurs after coupling is removed, and can be used to change data after uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnAfterUncoupleRecord. The event removes couplings to the contacts linked to the uncoupled customers and vendors.
@@ -427,6 +427,35 @@ Create the integration table mapping by subscribing to the **OnAfterResetConfigu
         ...
     end;
     ``` 
+
+The **InsertIntegrationTableMapping** procedure inserts only one configuration table template for [!INCLUDE [prod_short](../includes/prod_short.md)] tables and integration tables. You can insert multiple templates with filters by creating records in **Table Config Template** (ID 5325) and **Int. Table Config Template** (ID 5326).
+
+```al
+    local procedure CreateTableConfigTemplate(IntegrationTableMapping: Record "Integration Table Mapping"; TableConfigTemplateCode: Text; FilterTxt: Text)
+    var
+        TableConfigTemplate: Record "Table Config Template";
+    begin
+        TableConfigTemplate."Integration Table Mapping Name" := IntegrationTableMapping.Name;
+        TableConfigTemplate.Validate("Table ID", IntegrationTableMapping."Table ID");
+        TableConfigTemplate.Validate("Integration Table ID", IntegrationTableMapping."Integration Table ID");
+        TableConfigTemplate.Validate("Table Config Template Code", TableConfigTemplateCode);
+        TableConfigTemplate.Priority := 1;
+        TableConfigTemplate.SetTableFilter(FilterTxt);
+        TableConfigTemplate.Insert();
+    end;
+    local procedure CreateIntTableConfigTemplate(IntegrationTableMapping: Record "Integration Table Mapping"; IntTableConfigTemplateCode: Text; FilterTxt: Text)
+    var
+        IntTableConfigTemplate: Record "Int. Table Config Template";
+    begin
+        IntTableConfigTemplate."Integration Table Mapping Name" := IntegrationTableMapping.Name;
+        IntTableConfigTemplate.Validate("Integration Table ID", IntegrationTableMapping."Integration Table ID");
+        IntTableConfigTemplate.Validate("Table ID", IntegrationTableMapping."Table ID");
+        IntTableConfigTemplate.Validate("Int. Tbl. Config Template Code", IntegrationTableConfigTemplateCode);
+        IntTableConfigTemplate.Priority := 1;
+        IntTableConfigTemplate.SetIntegrationTableFilter(FilterTxt);
+        IntTableConfigTemplate.Insert();
+    end;
+```
 
 Each integration table mapping entry must have integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prod_short](../includes/prod_short.md)] that we want to map to the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
 
@@ -510,7 +539,7 @@ When synchronizing data, some tables may require custom code to successfully syn
 
 You can either use the standard transformation rules on page **Integration Field Mapping List** (ID 5361) or you can transform data programmatically. For more information, see [Transformation Rules](/dynamics365/business-central/across-how-to-set-up-data-exchange-definitions#transformation-rules).
 
-During synchronization, codeunit **Integration Record Synch. Invoke** (ID 5345) raises and publishes certain events. We can add code that subscribes to these events so that we can add custom logic at different stages of the synchronization process. The following table describes some of the events that are published by codeunit **Integration Record Synch. Invoke**. For a complete list of published events, refer to [CodeUnit Integration Rec. Synch. Invoke reference](/dynamics365/business-central/application/base-application/codeunit/base-application-codeunit-integration-rec.-synch.-invoke#events). 
+During synchronization, codeunit **Integration Record Synch. Invoke** (ID 5345) raises and publishes certain events. We can add code that subscribes to these events so that we can add custom logic at different stages of the synchronization process. The following table describes some of the events that are published by codeunit **Integration Record Synch. Invoke**. For a complete list of published events, refer to [CodeUnit Integration Rec. Synch. Invoke reference](/dynamics365/business-central/application/base-application/codeunit/microsoft.integration.syncengine.int.-rec.-uncouple-invoke#events). 
 
 |Event|Description|  
 |-----|-----------|  
@@ -524,7 +553,7 @@ During synchronization, codeunit **Integration Record Synch. Invoke** (ID 5345) 
 |**OnBeforeModifyRecord**|Occurs before modifying an existing destination record, and can be used to validate or change data before modification.|  
 |**OnAfterModifyRecord**|Occurs after an existing destination record is modified, and can be used to do post-modify operations such as updating related data.|  
 
-The following table describes some of the events that are published by codeunit **Integration Record Synch.** (ID 5336). For a complete list of published events, refer to [CodeUnit Integration Record Synch. reference](/dynamics365/business-central/application/base-application/codeunit/base-application-codeunit-integration-record-synch.#events).
+The following table describes some of the events that are published by codeunit **Integration Record Synch.** (ID 5336). For a complete list of published events, refer to [CodeUnit Integration Record Synch. reference](/dynamics365/business-central/application/base-application/codeunit/microsoft.integration.syncengine.int.-rec.-uncouple-invoke#events).
 
 |Event|Description|  
 |-----|-----------|  

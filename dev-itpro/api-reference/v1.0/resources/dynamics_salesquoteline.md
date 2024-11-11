@@ -99,7 +99,7 @@ Here is a JSON representation of the resource.
   ]
 ```
 
-## See also
+## Related information
 
 [Sales Quote Line](../resources/dynamics_salesquoteline.md)  
 [Get Sales Quote Line](../api/dynamics_salesquoteline_get.md)  

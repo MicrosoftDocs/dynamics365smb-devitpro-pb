@@ -2,7 +2,7 @@
 title: "Page.Run() Method"
 description: "Creates and launches a page that you specify."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -30,11 +30,13 @@ An instance of the [Page](page-data-type.md) data type.
 
 ## Remarks
 
-If, at design time, you do not know the specific page you want to run, then use this method or the [Page.RunModal Method](page-runmodal--method.md) and specify the page in the *Number* parameter.  
+If, at design time, you don't know the specific page you want to run, then use this method or the [Page.RunModal method](page-runmodal--method.md) and specify the page in the *Number* parameter.  
 
-If you do know which page you want to run, then you can create a Page variable, set the subtype of the variable to a specific page, and then use the [Run Method \(Page\)](page-run--method.md) or [RunModal Method \(Page\)](page-runmodal--method.md) on the Page variable.  
+If you do know, which page you want to run, then you can create a Page variable, set the subtype of the variable to a specific page, and then use the [RunmMethod \(Page\)](page-run--method.md) or [RunModal method \(Page\)](page-runmodal--method.md) on the Page variable.  
 
-When you want to close the page, use CurrPage.Close. CurrPage is a predefined system variable. For more information, see [System-Defined Variables](../../devenv-system-defined-variables.md).  
+When you want to close the page, use `CurrPage.Close`. CurrPage is a predefined system variable. For more information, see [System-defined variables](../../devenv-system-defined-variables.md).  
+
+The `Run` method will clear the instance of the page every time `Run` completes, which means that all variables inside the page are initialized. The `RunModal` method doesn't clear the instance of the page every time. For more information, see [RunModal method \(Page\)](page-runmodal--method.md).
 
 ## Example  
 
@@ -42,8 +44,7 @@ When you want to close the page, use CurrPage.Close. CurrPage is a predefined sy
 Page.Run(4711)
 ```  
   
-
-## See Also
+## Related information
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

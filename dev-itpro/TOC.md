@@ -70,10 +70,13 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
-### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
-### [Update 24.2](whatsnew/whatsnew-update-24-2.md)
-### [Update 24.1](whatsnew/whatsnew-update-24-1.md)
+### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 ### Updates for earlier major versions
+#### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
+#### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
+#### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
+#### [Update 24.2](whatsnew/whatsnew-update-24-2.md)
+#### [Update 24.1](whatsnew/whatsnew-update-24-1.md)
 #### [Update 23.5](whatsnew/whatsnew-update-23-5.md)
 #### [Update 23.4](whatsnew/whatsnew-update-23-4.md)
 #### [Update 23.3](whatsnew/whatsnew-update-23-3.md)
@@ -120,7 +123,6 @@
 #### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 ## Help and support
 ### [Resources for help and support](help-and-support.md)
-### [Legal resources](terms/legal.md)
 ### [Technical support](technical-support.md)
 ### Help system
 #### [User assistance model](user-assistance.md)
@@ -266,6 +268,7 @@
 #### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
 #### [Profile configuration telemetry](administration/telemetry-profile-configuration-lifecycle-trace.md)
 #### [Report generation telemetry](administration/telemetry-reports-trace.md)
+#### [Report layout lifecycle telemetry](administration/telemetry-report-layout-lifecycle-trace.md)
 #### [Retention policy telemetry](administration/telemetry-retention-policy-trace.md)
 #### [Stopped sessions telemetry](administration/telemetry-stop-session-trace.md)
 #### [Table index telemetry](administration/telemetry-table-index-trace.md)
@@ -617,7 +620,10 @@
 ###### [Enum](developer/devenv-extensible-enums.md)
 ###### [Option](developer/methods-auto/option/option-data-type.md)
 
-#### [Interfaces](developer/devenv-interfaces-in-al.md)
+#### Interfaces
+##### [Interfaces](developer/devenv-interfaces-in-al.md)
+##### [Extending interfaces in AL](developer/devenv-interfaces-in-al-extend.md)
+##### [Type testing and casting operators for interfaces](developer/devenv-interfaces-in-al-operators.md)
 
 #### [Methods](developer/devenv-al-methods.md)
 ##### [Progress windows, Message, Error, and Confirm methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
@@ -636,6 +642,7 @@
 ###### [Page customization object](developer/devenv-page-customization-object.md)
 ##### [Report](developer/devenv-report-object.md)
 ##### [Profile](developer/devenv-profile-object.md)
+##### [Profile extension](developer/devenv-profile-ext-object.md)
 ##### [Codeunit](developer/devenv-codeunit-object.md)
 ##### [Query](developer/devenv-query-object.md)
 ##### [XMLPort](developer/devenv-xmlport-object.md)
@@ -693,6 +700,7 @@
 ##### [Tables overview](developer/devenv-tables-overview.md)
 ##### [Table object](developer/devenv-table-object.md)
 ##### [Add tooltips to table fields](developer/devenv-adding-tooltips.md)
+##### [Enable text search on table fields](developer/devenv-table-field-text-search.md)
 ##### [System fields](developer/devenv-table-system-fields.md)
 ##### [Table extension object](developer/devenv-table-ext-object.md)
 ##### [Setting relationships between tables](developer/devenv-set-relationships-between-tables.md)
@@ -787,7 +795,11 @@
 ##### [Page extension object](developer/devenv-page-ext-object.md)
 
 ##### [Page types and layouts](developer/devenv-page-types-and-layouts.md)
-###### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
+###### PromptDialog pages
+####### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
+####### [Prompting using a prompt guide](developer/devenv-page-promptguide.md)
+####### [Prompting using a floating action bar](developer/devenv-page-prompting-floating-actionbar.md)
+####### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
 ###### List pages
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
 ####### [Sample list page](developer/devenv-simple-list-page-example.md)
@@ -869,7 +881,6 @@
 ##### [Opening the Business Central tablet or phone client from a browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a sales rep role center for the tablet client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)
 
-
 ### Developing reports
 #### [Overview](developer/devenv-reports.md)
 #### [Report design overview](developer/devenv-report-design-overview.md)
@@ -891,6 +902,7 @@
 ###### [Creating a Word layout report](developer/devenv-howto-report-layout.md)
 ###### [Using hyperlinks in Word layouts](developer/devenv-hyperlinks-in-word-report-layouts.md)  
 ###### [Working with Word layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout?toc=/dynamics365/business-central/dev-itpro/toc.json)
+###### [Using the Word add-in for layouts](developer/word-layout-add-in.md)
 ###### [Creating an RDL layout report](developer/devenv-howto-rdl-report-layout.md)
 ###### [Working with RDL layouts](/dynamics365/business-central/ui-rdlc-report-layouts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -1103,8 +1115,8 @@
 <!-- end AL programming -->
 
 ## [System and application reference documentation](/dynamics365/business-central/application/)
-### [Overview of the system application](developer/devenv-system-application-overview.md)
-### Creating new modules in the system application
+### [Overview of the application layers and modules](developer/devenv-system-application-overview.md)
+### Creating new modules
 #### [Module architecture](developer/devenv-blueprint.md)
 #### [Get started with modules](developer/devenv-getting-started.md)
 #### [Set up your development environment](developer/devenv-set-up-an-environment.md)
@@ -1156,6 +1168,7 @@
 ##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 ##### [Extending Currency Exchange Rate Adjustments](developer/devenv-extend-exchange-rates.md)
 ##### [Extending e-documents functionality](developer/devenv-extend-edocuments.md)
+##### [Extending error messages with recommendations](developer/devenv-extension-errors-recommendations.md)
 <!-- ##### [Add drop zones for uploading multiple files](developer/devenv-extending-drop-zones.md) -->
 
 ### Using events
@@ -1285,7 +1298,9 @@
 #### [Database locks](/dynamics365/business-central/admin-view-database-locks)
 #### [Missing indexes](administration/database-missing-indexes.md)
 #### [Database wait statistics](administration\database-wait-statistics.md)
-#### [Using the Performance Profiler](administration/performance-profiler-overview.md)
+#### Performance Profiler
+##### [Using the Performance Profiler](administration/performance-profiler-overview.md)
+##### [Scheduled performance profiler overview](administration/scheduled-performance-profiler-overview.md)
 #### [Verifying report datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking personalization issues](/dynamics365/business-central/ui-personalization-user)
 #### [Checking customization issues](/dynamics365/business-central/ui-personalization-manage)
@@ -1351,9 +1366,14 @@
 ### [Service overview](service-overview.md)
 ### [Service scalability](service-scalability.md)
 ### [Service operations](service-operations.md)
+
 ## Auditing
 ### [Auditing overview](auditing/auditing-overview.md)
+### [Auditing data changes](/dynamics365/business-central/across-log-changes)
+### [Security auditing](security/security-auditing.md)
+### [Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes?toc=/dynamics365/business-central/dev-itpro/toc.json#analyze-data-in-the-change-log) 
 ### [Auditing in Purview](auditing/audit-events-in-purview.md)
+
 <!-- begin performance -->
 # Performance
 ## [Performance overview](performance/performance-overview.md)
@@ -1532,7 +1552,7 @@
 ### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 ### Integrating with Microsoft Onedrive
 #### [Integrating with Onedrive for Business overview (for administrators)](/dynamics365/business-central/across-onedrive-overview)  
-#### [Extending Document Sharing and OneDrive for Business Integration (for developers)](developer/ devenv-extending-document-sharing-onedrive.md)  
+#### [Extending Document Sharing and OneDrive for Business Integration (for developers)](developer/devenv-extending-document-sharing-onedrive.md)  
 ### [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
 ### [Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
 <!-- Microsoft Teams -->
@@ -1545,7 +1565,7 @@
 #### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 #### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
-### Integrating with Microsoft OneDrive
+### Integrating with Microsoft Word
 #### [Using Word templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
 #### [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge)  
 
@@ -1623,7 +1643,7 @@
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
-
+## [Integrate with Dynamics 365 Field Service](/dynamics365/business-central/admin-integrate-field-service)
 <!-- Azure services -->
 ## Integrating with Azure services
 ### [Overview](developer/integration-azure-overview.md)
@@ -1701,6 +1721,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
+#### [2024 release wave 2](deployment/system-requirements-business-central-v25.md)
 #### [2024 release wave 1](deployment/system-requirements-business-central-v24.md)
 #### [2023 release wave 2](deployment/system-requirements-business-central-v23.md)
 #### [2023 release wave 1](deployment/system-requirements-business-central-v22.md)
@@ -1715,10 +1736,11 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
 #### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
 #### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
+##### Versions no longer updated
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
-#### Versions no longer updated
 ##### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
 ##### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
 ##### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
@@ -1800,7 +1822,7 @@
 #### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central server
 #### [Monitoring performance counters](administration/performance-counters.md)
-#### Monitoring server events
+#### Monitoring server events on-premises
 ##### [Monitoring server events overview](administration/monitor-server-events.md)
 ##### [Trace events list](administration/server-trace-events.md)
 ##### [Admin and operational events list](administration/server-events.md)
@@ -1814,9 +1836,6 @@
 #### [Monitoring long-running SQL queries](administration/monitor-long-running-sql-queries-event-log.md)
 #### [Troubleshooting: Analyzing long-running SQL queries involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to monitor long-running SQL queries](administration/troubleshoot-long-running-queries-using-event-log.md)
-### Monitoring and Analyzing Using telemetry
-#### [Telemetry overview](administration/telemetry-overview.md)
-#### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 ### [Understanding session timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 ### [Registering your deployment on Azure](administration/register-app-azure.md)
@@ -1826,6 +1845,25 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
+### Business Central 2024 release wave 2
+#### [Overview](upgrade/upgrade-overview-v25.md)
+#### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
+#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrade permission sets](upgrade/upgrade-permissions.md)
+#### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
+#### Upgrade application and data
+##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v25.md)
+##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v25.md)
+##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v25.md)
+#### Related articles
+##### [Convert to AL](upgrade/devenv-code-conversion.md)
+##### Migrating tables and fields between extensions
+###### [Overview](developer/devenv-migrate-table-fields.md)
+###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### Data migration toolkit - India
+###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v25.md)
 ### Business Central 2024 release wave 1
 #### [Overview](upgrade/upgrade-overview-v24.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
@@ -1868,6 +1906,7 @@
 ##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v23.md)
 ##### [From version 20, 21, or 22](upgrade/upgrade-technical-upgrade-v23.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v23.md)
+### Earlier versions
 ### Business Central 2023 release wave 1
 #### [Overview](upgrade/upgrade-overview-v22.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v22.md)
@@ -1891,7 +1930,6 @@
 ##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v22.md)
 ##### [From version 20 or 21](upgrade/upgrade-technical-upgrade-v22.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v22.md)
-### Earlier versions
 #### Business Central 2022 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v21.md)
 ##### [Before you upgrade](upgrade/upgrade-considerations-v21.md)

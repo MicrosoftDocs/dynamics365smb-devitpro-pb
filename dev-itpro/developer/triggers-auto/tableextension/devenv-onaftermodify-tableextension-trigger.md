@@ -1,8 +1,8 @@
 ---
-title: "OnAfterModify (Table Extension) Trigger"
+title: "OnAfterModify (Table Extension) trigger"
 description: "Runs when a user modifies an existing record in a table."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterModify (Table Extension) Trigger
+# OnAfterModify (Table Extension) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs when a user modifies an existing record in a table.
@@ -32,6 +32,6 @@ end;
 ## Remarks  
  This trigger is run after the default modify behavior, which checks that all the fields of a record are valid before the modification occurs. It runs automatically when the user changes at least one field (different from the primary key field) of a record in a page from the Web Client. If an error occurs in the trigger code, the record changes are canceled.  
   
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

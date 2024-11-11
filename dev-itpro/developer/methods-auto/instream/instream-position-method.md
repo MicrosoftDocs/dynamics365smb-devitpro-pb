@@ -2,7 +2,7 @@
 title: "InStream.Position([BigInteger]) Method"
 description: "Get or set the current stream position in seekable streams."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -45,7 +45,7 @@ The current stream position or -1 if the stream is not seekable. The actual posi
 With [!INCLUDE [prod_short](../../includes/prod_short.md)] 2023 release wave 1, the `Position` method allows you to get the position within the current stream. Use the [InStream.Length() Method](instream-length-method.md) to get the position within the current stream.
 
 
-## See Also
+## Related information
 [InStream Data Type](instream-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

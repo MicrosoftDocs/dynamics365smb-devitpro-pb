@@ -257,7 +257,7 @@ var
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
 ```
 
-## See also
+## Related information
 
 [Checklist for submitting your app](../developer/devenv-checklist-submission.md)  
 [Rules and guidelines for AL code](apptest-overview.md)  

@@ -83,7 +83,7 @@ Content-type: application/json
 Here is an example of the response. 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [currency](../resources/dynamics_currency.md)    
 [Get currency](dynamics_currency_Get.md)    
