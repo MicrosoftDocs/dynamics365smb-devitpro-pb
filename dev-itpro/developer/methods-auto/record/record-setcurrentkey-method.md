@@ -57,7 +57,7 @@ When you use SetCurrentKey, the following rules apply:
   - FlowFields that query across app / tenant db
   - FlowFields that query different table types
 
-  These fields aren't sortable. If any of these fields are used in the method, it returns `false` at runtime and an error occurs if the error isn't handled.
+  These fields aren't sortable. If any of these fields are used in the method, it returns `false` at runtime and an error occurs if not handled.
 - Only active keys are considered.
 
 - When the system searches for a key, the first occurrence of a key that starts with the specified fields is selected, which means:  
