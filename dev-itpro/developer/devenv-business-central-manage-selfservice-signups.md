@@ -1,6 +1,6 @@
 ---
 title: Enable and disable Business Central self-service signups
-ms.date: 11/09/2024
+ms.date: 11/11/2024
 ms.topic: conceptual
 author: jswymer
 description: Learn how to prevent Microsoft Entra tenant users from self-service sign ups
@@ -46,7 +46,6 @@ PowerShell commands can be used with Microsoft Entra ID to disable adhoc (self-s
 
     **Your IT department has turned off signup for [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)]. Contact them to complete signup.** 
 
-
 ## Enable self-service signups
 
 To enable self-service signups, follow the same steps to sign in and connect to your Microsoft Entra service, and then run the following command:
@@ -63,6 +62,6 @@ To check whether self-service signups are enabled in Microsoft Entra ID, follow 
 Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
 ```
 
-## Related info
+## Related information
 
 [Administration of Business Central Online](../administration/tenant-administration.md)
