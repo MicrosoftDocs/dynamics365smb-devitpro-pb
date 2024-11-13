@@ -256,11 +256,11 @@ pageextension 50114 AddCustomerReport extends "Customer List"
 }
 ```
 
-## See Also  
+## Related information
 
-[Page Object](devenv-page-object.md)  
+[Page object](devenv-page-object.md)  
 [Views](devenv-views.md)  
-[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
-[Extending Pages Previously Based on the Date Virtual Table](devenv-extend-pages-based-on-date-virtual-table.md)
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
+[Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  
+[Extending pages previously based on the Date Virtual Table](devenv-extend-pages-based-on-date-virtual-table.md)
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
