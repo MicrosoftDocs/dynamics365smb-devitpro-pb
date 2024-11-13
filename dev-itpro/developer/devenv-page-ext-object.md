@@ -42,7 +42,7 @@ Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on li
 
 Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip. 
 
-For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
+Learn more about adding tooltips in [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
 ## Using keywords to place actions and controls
 
@@ -62,7 +62,7 @@ You can use the following keywords in the `layout` section to place and move fie
 
 ### Example
 
-To modify the existing fields and groups on a page, you use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, the `actions` section creates a new group in the ribbon and places it last in the `Creation` group.  
+To modify the existing fields and groups on a page, use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, the `actions` section creates a new group in the ribbon and places it last in the `Creation` group. The group contains an action that displays a message when the user chooses it. The `layout` section adds a new field control `ShoeSize` to the `General` group on the page. The field control is added as the last control in the group using the `addlast` method. The example also illustrates how to modify the caption of an existing field on the page.
 
 ```AL
 pageextension 70000020 CustomerCardExtension extends "Customer Card"
