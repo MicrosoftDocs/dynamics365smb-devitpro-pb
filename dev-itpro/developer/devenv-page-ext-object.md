@@ -1,23 +1,23 @@
 ---
-title: "Page Extension Object"
-description: "Description of the page extension object in AL for Business Central."
+title: Page extension object
+description: Extend page objects with page extension objects in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 01/08/2024
+ms.date: 11/13/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Page Extension Object
+# Page extension object
 
-The page extension object extends a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] page object and adds or overrides the functionality.
+The page extension object extends a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] page object and adds or overrides the functionality. 
 
 The structure of a page is hierarchical and breaks down into three sections. The first block contains metadata for the overall page; the type of the page and the source table it is showing data from. The next section; the layout, describes the visual parts on the page. The final section details the actions that are published on the page.
 
-For more information about the Page and Page Extension objects, see [Pages Overview](devenv-pages-overview.md).
+Learn more about Page and Page Extension objects in [Pages overview](devenv-pages-overview.md).
 
 > [!IMPORTANT]  
-> Only pages with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
+> Only pages with the [Extensible property](properties/devenv-extensible-property.md) set to **true** can be extended.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
@@ -29,13 +29,14 @@ For more information about the Page and Page Extension objects, see [Pages Overv
 > Modifying actions in Cue groups on page extensions isn't supported.
 
 ## Snippet support
+
 Typing the shortcut `tpageext` will create the basic layout for a page extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Views
 
-Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
+Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page extensions](devenv-page-ext-object.md), and [Page customizations](devenv-page-customization-object.md). Learn more in [Views](devenv-views.md).
 
 ## Add tooltips on page fields
 
