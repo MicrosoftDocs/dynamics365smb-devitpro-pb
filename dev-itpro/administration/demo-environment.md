@@ -7,21 +7,21 @@ ms.reviewer: jswymer
 ms.topic: conceptual
 ms.search.form: 2500, 2502, 20350
 ms.author: jswymer
-ms.date: 09/22/2022
+ms.date: 11/12/2024
 ---
-# Prepare demonstration environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+# Prepare demonstration environments of Business Central
 
 As a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reselling partner, you might want to have an environment that you can show prospects as part of pre-sales demonstrations. Depending on your requirements, you have several different options that are described in this article.  
 
-Learn more about [!INCLUDE [prod_short](../includes/prod_short.md)] trials and subscriptions [here](trials-subscriptions.md).  
+Learn more about [!INCLUDE [prod_short](../includes/prod_short.md)] trials and subscriptions in [Business Central trials and subscriptions](trials-subscriptions.md).  
 
 ## Microsoft 365 demo plus Business Central
 
-For repeatable demos that showcase Business Central together with Microsoft apps and services in an independent Azure organization (tenant) that you fully control, get a Microsoft 365 demo account at [https://aka.ms/CDX](https://aka.ms/CDX). You have access to the Customer Digital Experiences site if you are [enrolled with the Microsoft Partner Center](get-started-online.md#step-1-become-a-partner).  
+For repeatable demos that showcase Business Central together with Microsoft apps and services in an independent Azure organization (tenant) that you fully control, get a Microsoft 365 demo account at [https://aka.ms/CDX](https://aka.ms/CDX). You have access to the Customer Digital Experiences site if you're enrolled with the Microsoft Partner Center. Learn more in [Become a partner](get-started-online.md#step-1-become-a-partner).
 
-Such Microsoft demo accounts give you environments that you can use for demos and training without the risk of introducing changes to an existing production environment, for example. For more information about demo accounts in general, see [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products) in the Partner Center documentation.  
+Such Microsoft demo accounts give you environments that you can use for demos and training without the risk of introducing changes to an existing production environment, for example. Learn more about demo accounts at [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products) in the Partner Center documentation.  
 
-### To get a demo environment based on Microsoft 365 content packs
+### Get a demo environment based on Microsoft 365 content packs
 
 [!INCLUDE [admin_m365demo](../developer/includes/admin_m365demo.md)]
 
