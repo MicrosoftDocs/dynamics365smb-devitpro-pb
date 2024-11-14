@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 02/17/2024
+ms.date: 11/14/2024
 ms.custom: bap-template
 ---
 
@@ -18,7 +18,7 @@ In this article, you learn how to design the Copilot screen where users can add 
 
 The following figure illustrates an example of the prompt mode. The prompt mode UI consists of several elements, which are described in the sections that follow.
 
-[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.png)](media/promptdialog-prompt-mode-prompt-area-no-callout.png#lightbox)
+[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.svg)](media/promptdialog-prompt-mode-prompt-area-no-callout.svg#lightbox)
 
 For an overview building the Copilot UI, go to [Build Copilot user experience](ai-build-experience.md).
 
@@ -30,7 +30,7 @@ For an overview building the Copilot UI, go to [Build Copilot user experience](a
 
 The prompt area is where users can provide input to the AI generation. The prompt area supports natural language input (like free text fields) and structured input (like field groups and page parts). The example uses a single field that allows the user to type text in an unstructured format.
 
-[![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.png)](media/promptdialog-prompt-mode-prompt-area.png#lightbox)
+[![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)](media/promptdialog-prompt-mode-prompt-area.svg#lightbox)
 
 The prompt area is defined by adding an `area` control to the `layout` of the page, similar to way you'd add content areas on other page types. Except you use the syntax `area(Prompt)`:
 
@@ -76,7 +76,7 @@ Here are some guidelines for using placeholders:
 
 A prompt guide is a predefined list of prompt texts that users can choose from by selecting **Prompt guide** ![Shows the prompt guide button in the prompt dialog type page](media/promptdialog-prompt-mode-prompt-guide-icon.png) on the prompt dialog page.
 
-[![Shows the prompt guide of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-guide.png)](media/promptdialog-prompt-mode-prompt-guide.png#lightbox)
+[![Shows the prompt guide of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-guide.svg)](media/promptdialog-prompt-mode-prompt-guide.svg#lightbox)
 
 The prompt guide saves users time because they don't have to write prompts from scratch. Plus, it can help them to understand how to write prompts to get the results they want.
 
@@ -108,11 +108,14 @@ var
 
 [Learn more about prompt guides](devenv-page-promptguide.md) and about [Error handling in prompt dialogs](devenv-page-prompt-error-handling.md).
 
+> [!NOTE]  
+> Using trailing whitespaces in action names will prevent Copilot from working correctly. Learn more in [Best practices for AL code](../compliance/apptest-bestpracticesforalcode.md#copilot-and-action-names).
+
 ## Add a generate action
 
 In this task, you add action to the PromptDialog page that users select to start generating output with Copilot and AI. 
 
-[![Shows a screenshot that highlights the generate action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-generate.png)](media/promptdialog-prompt-mode-generate.png#lightbox)
+[![Shows a screenshot that highlights the generate action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-generate.svg)](media/promptdialog-prompt-mode-generate.svg#lightbox)
 
 The `PromptDialog` page type supports several *system actions* that appear as buttons in the UI. You add these actions in the `actions` control on the page like you would any other action. Except you define the system actions by first adding an `area(SystemActions)` control, then using the `systemaction()`control to define the specific action. In this case, you use a `systemaction(Generate)` control. 
 
@@ -147,7 +150,7 @@ For an example on building an AI capability, see [Build the Copilot capability i
 
 In this task, you add action to the PromptDialog page that enables users to select a file to upload in the prompt area. The content of the file can provide input to the AI generation.
 
-[![Shows a screenshot that highlights the file attachment action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-attach.png)](media/promptdialog-prompt-mode-attach.png#lightbox)
+[![Shows a screenshot that highlights the file attachment action in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-attach.svg)](media/promptdialog-prompt-mode-attach.svg#lightbox)
 
 Like the system action for generating AI, there's also a system action for attaching a file. In this case, you use a `systemaction(Attach)` control.
 
@@ -179,12 +182,12 @@ actions
 
 In this task, you add actions to the PromptDialog page that enable users to set style preferences to influence the AI-generated output. The options appear as buttons in the UI to the right of the system actions.
 
-[![Shows a screenshot that highlights the preference option actions in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.png)](media/promptdialog-prompt-mode-options.png#lightbox)
+[![Shows a screenshot that highlights the preference option actions in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.svg)](media/promptdialog-prompt-mode-options.svg#lightbox)
 
-You add the options by using in a `area(PromptOptions)` control with the `actions` control. Each option is defined by a field using the `field` control. Only fields of the [option data type](methods-auto/option/option-data-type.md) are supported.
+You add the options by using in an `area(PromptOptions)` control with the `actions` control. Each option is defined by a field using the `field` control. Only fields of the [option data type](methods-auto/option/option-data-type.md) are supported.
 
 ```al
-actions
+layout
 {
     area(PromptOptions) 
     {          
@@ -205,4 +208,4 @@ actions
 
 - [Design Copilot content mode](copilot-design-content-mode.md)
 - [Customize Copilot generate mode](copilot-customize-generate-mode.md)
-- [Launch Copilot](copilot-launch-experience.md)
+- [Launch Copilot prompt dialog page](devenv-page-prompting-floating-actionbar.md)

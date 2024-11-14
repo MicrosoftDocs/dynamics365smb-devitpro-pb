@@ -59,7 +59,7 @@ Here is a JSON representation of the countryRegion resource.
 
 
 
-## See Also
+## Related information
 [GET countryRegion](../api/dynamics_countryRegion_Get.md)  
 [DELETE countryRegion](../api/dynamics_countryRegion_Delete.md)  
 [POST countryRegion](../api/dynamics_countryRegion_Create.md)  

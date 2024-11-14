@@ -287,9 +287,9 @@ This table gives an overview of supported platform and application languages, an
 |Vietnamese (Vietnam)|vi-VN|Available|Partner, Available on AppSource|| 
 
 > [!NOTE]  
-> Application translations provided by Microsoft cover features in the international version (W1). Local functionality is not translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
+> Application translations provided by Microsoft cover features in the international version (W1). Local functionality isn't translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
 
-## See also
+## Related information
 
 [Rules and guidelines for AL code](apptest-overview.md)  
 [Checklist for submitting your app](../developer/devenv-checklist-submission.md)

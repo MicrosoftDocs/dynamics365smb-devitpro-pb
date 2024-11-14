@@ -171,7 +171,7 @@ Here is a JSON representation of the salesOrder resource.
 
 
 
-## See Also
+## Related information
 [GET salesOrder](../api/dynamics_salesOrder_Get.md)  
 [DELETE salesOrder](../api/dynamics_salesOrder_Delete.md)  
 [POST salesOrder](../api/dynamics_salesOrder_Create.md)  

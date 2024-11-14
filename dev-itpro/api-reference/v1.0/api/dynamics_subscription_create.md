@@ -71,7 +71,7 @@ Here is an example of the response.
 > [!IMPORTANT]  
 > Handshake is mandatory when [creating a subscription](dynamics_subscription_create.md) and [renewing a subscription](dynamics_subscription_update.md). See [Working with Webhooks](../dynamics_subscriptions.md).  
 
-## See also
+## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Error Codes](../dynamics_error_codes.md)  

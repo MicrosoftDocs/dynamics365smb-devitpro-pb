@@ -59,7 +59,7 @@ Here is a JSON representation of the taxGroup resource.
 
 
 
-## See Also
+## Related information
 [GET taxGroup](../api/dynamics_taxGroup_Get.md)  
 [DELETE taxGroup](../api/dynamics_taxGroup_Delete.md)  
 [POST taxGroup](../api/dynamics_taxGroup_Create.md)  

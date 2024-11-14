@@ -1,11 +1,11 @@
 ---
-title: Setting up App Key Vaults for Business Central
+title: Set up app key vaults for Business Central online
 description: Describes how to use an Azure Key vault with Business Central extensions for online.
-ms.date: 04/08/2022
+ms.date: 10/30/2024
 ms.topic: conceptual
 author: jswymer
 ---
-# Setting up App Key Vaults for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
+# Set up app key vaults for Business Central online
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
@@ -38,33 +38,36 @@ Your Business Central online solution is configured to use a Microsoft Entra app
 To provision the key vault reader application, use the [Microsoft Entra ID PowerShell module](/powershell/module/azuread).
 
 1. Open Windows PowerShell as an administrator.
-2. Install the Microsoft Entra ID PowerShell module.
+1. Install the Microsoft Entra ID PowerShell module.
 
     ```powershell
     Install-Module AzureAD 
     ```
-3. Import the Microsoft Entra ID module.
+
+1. Import the Microsoft Entra ID module.
 
     ```powershell
     Import-Module AzureAD 
     ```
-4. Connect to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Microsoft Entra tenant.
+
+1. Connect to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Microsoft Entra tenant.
 
     1. Run the following command:
 
        ```powershell
        Connect-AzureAD 
        ```
-    2. Provide your sign-in name and password when prompted.
 
-4. Create a Microsoft Entra service principal using the following command:
-      
+    1. Provide your sign-in name and password when prompted.
+
+1. Create a Microsoft Entra service principal using the following command:
+
     ```powershell
     New-AzureADServicePrincipal -AppId 7e97dcfb-bcdd-426e-8f0a-96439602627a
     ```
-    
+
     `7e97dcfb-bcdd-426e-8f0a-96439602627a` is the Application (client) ID of Microsoft's centralized Microsoft Entra application.
-    
+
     This step provisions the application in your Microsoft Entra tenant, where it now "lives" together with your key vaults.
 
 ## Grant the key vault reader application permission to your key vaults
@@ -74,16 +77,16 @@ The next task is to grant the key vault reader application permission to read se
 1. Open the key vault in the portal.
 2. Select **Access policies**, then **Add Access Policy**.
 3. Set **Secret Permissions** to **Get**.
-4. Choose **Select principal**, and on the right, search for either the application (client) ID **7e97dcfb-bcdd-426e-8f0a-96439602627a** or the display name **Dynamics 365 Business Central ISV Key Vault Reader**. 
+4. Choose **Select principal**, and then in the pane on the right, search for either the application (client) ID **7e97dcfb-bcdd-426e-8f0a-96439602627a** or the display name **Dynamics 365 Business Central ISV Key Vault Reader**. 
 5. Select **Add**, then **Save**.
 
 ## Contact Microsoft to enable the App Key Vault feature
 
 Send an email to [bcappkeyvaultonboard@microsoft.com](mailto:bcappkeyvaultonboard@microsoft.com) to start the onboarding process following this guideline:
 
-- If it is a new AppSource app, you should send the email after you have published the app on Partner Center. When the app has been onboarded to the app key vault, you then need to publish a new version of the app to Partner Center.
+- If it's a new AppSource app, you should send the email after you publish the app on Partner Center. When the app is onboarded to the app key vault, you then need to publish a new version of the app to Partner Center.
 
-- If it is an existing AppSource app, you can send the email at any time, but it will only take effect when you publish a new version of the app to Partner Center.
+- If it's an existing AppSource app, you can send the email at any time, but it only takes effect when you publish a new version of the app to Partner Center.
 
 <!-- Do this step before you publish your updated extension to Partner Center.-->
 
@@ -97,8 +100,8 @@ Provide the following information in the email:
 - Optionally, a screenshot from the Azure portal showing the key vault and its access policies. The screenshot can help Microsoft catch configuration mistakes early in the process.
 
 
-## See Also  
+## Related information  
 
-[Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
-[Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
+[Security considerations with app key vaults](../developer/devenv-app-key-vault.md#security)  
+[Monitoring and troubleshooting app key vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
 [Configuring Business Central Server](configure-server-instance.md)  

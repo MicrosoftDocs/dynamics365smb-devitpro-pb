@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
     "dateFilter": "date"
 }
 ```
-## See also
+## Related information
   
 [Get Balance Sheet](../api/dynamics_balancesheet_get.md)  
 [Cash Flow Statement](dynamics_cashflowstatement.md)  

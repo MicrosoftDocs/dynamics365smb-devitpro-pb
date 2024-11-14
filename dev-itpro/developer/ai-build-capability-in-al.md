@@ -4,8 +4,7 @@ description: Integrate with Azure OpenAI Service through the AI module of Busine
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 03/25/2024
-ms.custom: bap-template
+ms.date: 11/14/2024
 ms.collection:
   - get-started
   - bap-ai-copilot
@@ -20,7 +19,7 @@ Your extensions can enhance Copilot in [!INCLUDE [prod_short](includes/prod_shor
 
 The AI module of [!INCLUDE [prod_short](includes/prod_short.md)] integrates with Azure OpenAI Service and provides a set of AL objects that you can use to build AI capabilities. The AI module is designed for Large Language Models (LLMs) such as GPT. It doesn't support image generation like DALL-E or transcribing speech to text like Whisper. 
 
-The AI module is available in the System Application, in the System.AI namespace. For reference documentation, see [System and Base Application Reference](/dynamics365/business-central/application).
+The AI module is available in the System Application, in the System.AI namespace. Learn more in [System and Base Application reference](/dynamics365/business-central/application).
 
 The AI module can be used in any AL extension and provides the following capabilities:
 
@@ -31,7 +30,7 @@ The AI module can be used in any AL extension and provides the following capabil
 - Usage insights about your AI capability through telemetry.
 
 > [!NOTE]  
-> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as Copilot chat in [!INCLUDE [prod_short](includes/prod_short.md)]. The upcoming preview of Chat with Copilot won't be extensible and the AI module can't be used to influence chat. For more information, see [Chat with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/chat-copilot).
+> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as Copilot chat in [!INCLUDE [prod_short](includes/prod_short.md)]. The upcoming preview of Chat with Copilot won't be extensible and the AI module can't be used to influence chat. Learn more in [Chat with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/chat-copilot).
 
 > [!TIP]  
 > To see the AI module in action, try the example extension available at [BCTech on GitHub](https://aka.ms/BCStartCodingWithAI).
@@ -44,7 +43,7 @@ To build an AI capability in AL, you need the following:
 - The Azure Deployment Name, such as: MyGPT3.5
 - An Azure OpenAI API key
 
-For more information on how to obtain this, see [aka.ms/oaiapply](https://aka.ms/oaiapply) for requesting access and [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md) to help get started.
+Learn more about how to obtain this in [aka.ms/oaiapply](https://aka.ms/oaiapply) for requesting access and in [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md) to help get started.
 
 ## Building an AI capability
 
@@ -70,7 +69,7 @@ Under Azure OpenAI you find the following objects:
 |[AOAI Chat Completion Params](/dynamics365/business-central/application/system-application/codeunit/system.ai.aoai-chat-completion-params)| Codeunit|Optional parameters that can be modified for chat generation.|
 |[AOAI Chat Roles](/dynamics365/business-central/application/system-application/enum/system.ai.aoai-chat-roles)|Enum|The chat roles available for chat generation; `User`, `System`, and `Assistant`. `User` defines when the end user inputs text to the chat, `System` defines guiding the system, for example, by giving a metaprompt, and `Assistant` defines when the model returns output.|
 
-For more information, see [System application reference](/dynamics365/business-central/application/system-application/module/system-application).
+Learn more in [System application reference](/dynamics365/business-central/application/system-application/module/system-application).
 
 ### Registering an AI capability
 
@@ -105,14 +104,17 @@ codeunit 54310 "Secrets And Capabilities Setup"
 
     local procedure RegisterCapability()
     var
-        CopilotCapability: Codeunit "Copilot Capability";
+        EnvironmentInfo: Codeunit "Environment Information";
+        CopilotCapability: Codeunit "Copilot Capability";
         LearnMoreUrlTxt: Label 'https://example.com/DraftaJob', Locked = true;
     begin
-        if not CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::"
-Draft a Job") then
-            CopilotCapability.RegisterCapability(
-            Enum::"Copilot Capability"::"Draft a Job", 
-            Enum::"Copilot Availability"::"Generally Available", LearnMoreUrlTxt);
+        // Verify that environment in a Business Central online environment
+        if EnvironmentInfo.IsSaaSInfrastructure() then
+            // Register capability 
+            if not CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::"Draft a Job") then
+                CopilotCapability.RegisterCapability(
+                Enum::"Copilot Capability"::"Draft a Job", 
+                Enum::"Copilot Availability"::"Generally Available", LearnMoreUrlTxt);
     end;
 }
 ```
@@ -125,7 +127,7 @@ When the prerequisites are met, and you have retrieved an endpoint URL, an Azure
 
 The following example shows how to save the authorization information by calling the `Azure OpenAI` codeunit. The `SetAuthorization` procedure saves the authorization information in the `IsolatedStorage` object, which provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. The ApiKey variable is defined as `SecretText`, which means that it isn't available to the debugger for inspection.
 
-An alternative to using the `IsolatedStorage` object, if you're building an AppSource app, is to use the AppSource Key Vault. For more information, see [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md).
+An alternative to using the `IsolatedStorage` object, if you're building an AppSource app, is to use the AppSource Key Vault. Learn more in [Setting up App Key Vaults for Business Central online](../administration/setup-app-key-vault.md).
 
 ```al
 local procedure SetAuthorization(var AzureOpenAI: Codeunit "Azure OpenAI")
@@ -148,9 +150,9 @@ Next, you can use the `Azure OpenAI` codeunit to generate text. The following `C
 
 The `Generate` procedure takes a prompt as a parameter and returns the generated text. It calls the other procedures to set up the authorization, parameters, and capability for the generation. The `SetAuthorization` sets the authorization information as described in the previous section, and uses the `AzureOpenAI` object to set the endpoint and key for the service.
 
-The `SetParameters` sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is a number between 0 and 2 that controls how creative the model is when generating text. Higher values are typically ideal for creative use cases, while lower values result in more deterministic and consistent completion. This example sets the temperature to 0, which outputs a well-defined answer. For more information, see [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
+The `SetParameters` sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is a number between 0 and 2 that controls how creative the model is when generating text. Higher values are typically ideal for creative use cases, while lower values result in more deterministic and consistent completion. This example sets the temperature to 0, which outputs a well-defined answer. Learn more in [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
 
-The `SetCopilotCapability` call sets the capability for the generation. The `SetPrimarySystemMessage` call uses the `IsolatedStorage` object to get the metaprompt from the storage. The primary system message will be included in all chat histories unlike regular system messages. The metaprompt is a special message that tells the model what kind of text to generate. For more information, see [Metaprompt](ai-build-capability-in-al.md#metaprompt). 
+The `SetCopilotCapability` call sets the capability for the generation. The `SetPrimarySystemMessage` call uses the `IsolatedStorage` object to get the metaprompt from the storage. The primary system message will be included in all chat histories unlike regular system messages. The metaprompt is a special message that tells the model what kind of text to generate. Learn more in [Metaprompt](ai-build-capability-in-al.md#metaprompt). 
 
 Then, the `AddUserMessage` call adds a user message to the chat history. The user message is what you want to generate text from. Next, the `GenerateChatCompletion` call generates the chat completion based on the user message and input parameters. It uses the `AzureOpenAI` object to call the service and get the response. The `IsSuccess` method checks if the operation was successful, and finally, the `GetLastMessage` call returns the last message from the chat history. The last message is the generated text that you want to use.
 
@@ -197,15 +199,14 @@ codeunit 54334 "CopilotJob"
 
 ### Metaprompt
 
-A *metaprompt* is a prompt used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides other behavioral guardrails to ensure that the model doesn't generate undesirable content. For more information, see [System message framework and template recommendations for Large Language Models (LLMs)](/azure/ai-services/openai/concepts/system-message).
+A *metaprompt* is a prompt used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides other behavioral guardrails to ensure that the model doesn't generate undesirable content. Learn more in [System message framework and template recommendations for Large Language Models (LLMs)](/azure/ai-services/openai/concepts/system-message).
 
 
 ## Next steps
 
 When you've registered the AI capability, authorized through Azure OpenAI, and written code that generates text based on the metaprompt and the user input, you can now build the interface for handling the user input and generated output. For next steps, see [Design the user experience](ai-build-experience.md).
 
-## See also
+## Related information
 
 [Get started with Azure OpenAI Service](ai-dev-tools-get-started.md)  
 [Design the user experience](ai-build-experience-overview.md)  
-

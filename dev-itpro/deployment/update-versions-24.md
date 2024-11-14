@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 09/30/2024
+ms.date: 10/01/2024
 ms.custom: bap-template
 ---
 
@@ -28,6 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5047903](https://support.microsoft.com/help/5047903)|Update 24.7 |November 2024|Application Build 24.7.25890</br>Platform Build 24.0.25868|
 |[5046146](https://support.microsoft.com/help/5046146)|Update 24.6 |October 2024|Application Build 24.6.24785</br>Platform Build 24.0.24762|
 |[5043981](https://support.microsoft.com/help/5043981)|Update 24.5 |September 2024|Application Build 24.5.23968</br>Platform Build 24.0.23888|
 |[5042530](https://support.microsoft.com/help/5042530)|Update 24.4 |August 2024|Application Build 24.4.22925</br>Platform Build 24.0.22865|
@@ -41,8 +42,8 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v24.md)  
+[Dynamics 365 Business Central On-Premises 2024 Release Wave 2 Updates](update-versions-25.md)  
 [Dynamics 365 Business Central On-Premises 2023 Release Wave 2 Updates](update-versions-23.md)  
-[Dynamics 365 Business Central On-Premises 2022 Release Wave 2 Updates](update-versions-22.md)  
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements](system-requirements-business-central-v24.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  

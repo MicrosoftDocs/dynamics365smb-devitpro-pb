@@ -31,6 +31,12 @@
 | AL0000JT3 | Feature Lifecycle | [Feature switch has been flipped](../administration/telemetry-feature-management-trace.md) |
 |AL0000G7J|	Feature Lifecycle |[More than one telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#multipleloggers)|
 |AL0000G7K|	Feature Lifecycle |[No telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#nologger)|
+|AL0000N0D|Report Layout Lifecycle|[Report layout default changed by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-default-changed-by-user)|
+|AL0000N0E|Report Layout Lifecycle|[Report layout added by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-added-by-user)|
+|AL0000N0F|Report Layout Lifecycle|[Report layout deleted by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-deleted-by-user)|
+|AL0000N0G|Report Layout Lifecycle|[Report layout replaced by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-replaced-by-user)|
+|AL0000N0H|Report Layout Lifecycle|[Report layout properties changed by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-properties-changed-by-user) |
+|AL0000N0I|Report Layout Lifecycle|[Report layout exported by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-exported-by-user)|
 | LC0001 | Company Lifecycle | [Company created: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-created) |
 | LC0002 | Company Lifecycle | [Company creation canceled: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-creation-canceled) |
 | LC0003 | Company Lifecycle | [Company creation failed: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-creation-failed) |
@@ -184,4 +190,3 @@
 |LC0222|Environment validation| [Environment validation request completed successfully for {environmentName} target build version  {targetVersion}](../administration/telemetry-environment-validation-trace.md#environment-validation-request-completed-successfully) |
 |LC0223|Environment validation| [Environment validation request completed with failures for environment {environmentName} target build version {targetVersion}](../administration/telemetry-environment-validation-trace.md#environment-validation-request-completed-with-failures) |
 |LC0227|Environment validation| [Validation diagnostic reported: extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](../administration/telemetry-environment-validation-trace.md#environment-diagnostic-reported) |
-

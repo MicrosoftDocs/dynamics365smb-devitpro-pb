@@ -70,12 +70,13 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
-### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
-### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
-### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
-### [Update 24.2](whatsnew/whatsnew-update-24-2.md)
-### [Update 24.1](whatsnew/whatsnew-update-24-1.md)
+### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 ### Updates for earlier major versions
+#### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
+#### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
+#### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
+#### [Update 24.2](whatsnew/whatsnew-update-24-2.md)
+#### [Update 24.1](whatsnew/whatsnew-update-24-1.md)
 #### [Update 23.5](whatsnew/whatsnew-update-23-5.md)
 #### [Update 23.4](whatsnew/whatsnew-update-23-4.md)
 #### [Update 23.3](whatsnew/whatsnew-update-23-3.md)
@@ -267,6 +268,7 @@
 #### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
 #### [Profile configuration telemetry](administration/telemetry-profile-configuration-lifecycle-trace.md)
 #### [Report generation telemetry](administration/telemetry-reports-trace.md)
+#### [Report layout lifecycle telemetry](administration/telemetry-report-layout-lifecycle-trace.md)
 #### [Retention policy telemetry](administration/telemetry-retention-policy-trace.md)
 #### [Stopped sessions telemetry](administration/telemetry-stop-session-trace.md)
 #### [Table index telemetry](administration/telemetry-table-index-trace.md)
@@ -796,7 +798,6 @@
 ###### PromptDialog pages
 ####### [PromptDialog page type](developer/devenv-page-type-promptdialog.md)
 ####### [Prompting using a prompt guide](developer/devenv-page-promptguide.md)
-####### [Prompting using a floating action bar](developer/devenv-page-prompting-floating-actionbar.md)
 ####### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
 ###### List pages
 ####### [Designing list pages](developer/devenv-designing-list-pages.md)
@@ -841,6 +842,7 @@
 ##### [Actions in the user interface](developer/devenv-actions-user-interface.md)
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md)
+##### [Copilot prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### Modern action bar
 ###### [Action bar improvements](developer/devenv-action-bar-improvements.md)
 ###### [Behavioral changes for promoted actions](developer/devenv-promoted-actions-behavioral-changes.md)
@@ -1364,9 +1366,14 @@
 ### [Service overview](service-overview.md)
 ### [Service scalability](service-scalability.md)
 ### [Service operations](service-operations.md)
+
 ## Auditing
 ### [Auditing overview](auditing/auditing-overview.md)
+### [Auditing data changes](/dynamics365/business-central/across-log-changes)
+### [Security auditing](security/security-auditing.md)
+### [Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes?toc=/dynamics365/business-central/dev-itpro/toc.json#analyze-data-in-the-change-log) 
 ### [Auditing in Purview](auditing/audit-events-in-purview.md)
+
 <!-- begin performance -->
 # Performance
 ## [Performance overview](performance/performance-overview.md)
@@ -1529,7 +1536,7 @@
 ##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
-##### [Launch Copilot](developer/copilot-launch-experience.md)
+##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
@@ -1545,7 +1552,7 @@
 ### [Integrating with Microsoft Graph (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/MicrosoftGraph)  
 ### Integrating with Microsoft Onedrive
 #### [Integrating with Onedrive for Business overview (for administrators)](/dynamics365/business-central/across-onedrive-overview)  
-#### [Extending Document Sharing and OneDrive for Business Integration (for developers)](developer/ devenv-extending-document-sharing-onedrive.md)  
+#### [Extending Document Sharing and OneDrive for Business Integration (for developers)](developer/devenv-extending-document-sharing-onedrive.md)  
 ### [Using Outlook with Business Central](/dynamics365/business-central/admin-outlook)  
 ### [Integrating with SharePoint (System Application reference)](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint)  
 <!-- Microsoft Teams -->
@@ -1558,7 +1565,7 @@
 #### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 #### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
-### Integrating with Microsoft OneDrive
+### Integrating with Microsoft Word
 #### [Using Word templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
 #### [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge)  
 
@@ -1636,7 +1643,7 @@
 <!-- end Microsoft Power Platform -->
 
 ## [Integrate with Dynamics 365 Sales via data sync](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration)
-
+## [Integrate with Dynamics 365 Field Service](/dynamics365/business-central/admin-integrate-field-service)
 <!-- Azure services -->
 ## Integrating with Azure services
 ### [Overview](developer/integration-azure-overview.md)
@@ -1815,7 +1822,7 @@
 #### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central server
 #### [Monitoring performance counters](administration/performance-counters.md)
-#### Monitoring server events
+#### Monitoring server events on-premises
 ##### [Monitoring server events overview](administration/monitor-server-events.md)
 ##### [Trace events list](administration/server-trace-events.md)
 ##### [Admin and operational events list](administration/server-events.md)
@@ -1829,9 +1836,6 @@
 #### [Monitoring long-running SQL queries](administration/monitor-long-running-sql-queries-event-log.md)
 #### [Troubleshooting: Analyzing long-running SQL queries involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to monitor long-running SQL queries](administration/troubleshoot-long-running-queries-using-event-log.md)
-### Monitoring and Analyzing Using telemetry
-#### [Telemetry overview](administration/telemetry-overview.md)
-#### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 ### [Understanding session timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
 ### [Registering your deployment on Azure](administration/register-app-azure.md)
