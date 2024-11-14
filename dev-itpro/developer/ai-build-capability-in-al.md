@@ -4,7 +4,7 @@ description: Integrate with Azure OpenAI Service through the AI module of Busine
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 11/01/2024
+ms.date: 11/14/2024
 ms.collection:
   - get-started
   - bap-ai-copilot
