@@ -1536,7 +1536,7 @@
 ##### [Design prompt mode](developer/copilot-design-prompt-mode.md)
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
-##### [Launch prompt dialog page using actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
