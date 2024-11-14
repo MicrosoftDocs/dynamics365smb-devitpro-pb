@@ -6,11 +6,11 @@ ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 10/09/2024
+ms.date: 11/14/2024
 ms.reviewer: solsen
 ---
 
-# Launch Copilot features using actions and prompt actions
+# Launch Copilot features using prompt actions
 
 In this article, you learn how to add actions in the UI that users can select to start Copilot features. There are two approaches to creating these actions. Whichever approach you choose, the action must run the prompt dialog page for the Copilot feature. The recommended approach is to use a *prompt action*, which is specifically designed for Copilot features you want available on a page. The other approach is to use a standard action, as you would for other pages.
 
@@ -204,7 +204,7 @@ actions
 
 ## Add a standard action that runs the prompt dialog page
 
-This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot feature. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
+If your Copilot feature will be reached from a page that doesn't yet support Copilot prompt actions, you can use a standard action. This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot feature. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
 
 The following code illustrates how to add an action that opens the prompt dialog page for Copilot feature:  
 
