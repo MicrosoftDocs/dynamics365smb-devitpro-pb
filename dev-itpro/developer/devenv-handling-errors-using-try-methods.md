@@ -1,10 +1,11 @@
 ---
 title: Handling errors using try methods
 description: Try methods in AL enable you to handle errors that occur in the application during code execution.
-ms.date: 11/06/2024
+ms.date: 11/12/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
+# Handling errors using try methods
 
 # Handling errors using try methods
 
@@ -19,7 +20,7 @@ The main purpose of try methods is to catch errors/exceptions thrown by the [!IN
 
 ### <a name="DbWriteTransactions"></a>Database write transactions in try methods
 
-Because changes made to the database by a try method aren't rolled back, you shouldn't include database write transactions within a try method. With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] configuration prevents database write transactions with a try method. If a try method contains a database write transaction, a runtime error occurs. To change this behavior, set the `DisableWriteInsideTryFunctions` parameter in [!INCLUDE[server](includes/server.md)] configuration to `false`. Learn more about configuring the server in [Configure Business Central Server](../administration/configure-server-instance.md). This restriction isn't in place with [!INCLUDE[prod_short](includes/prod_short.md)] online. This behavior might change in upcoming release.
+Because changes made to the database by a try method aren't rolled back, you shouldn't include database write transactions within a try method. For [!INCLUDE[prod_short](includes/prod_short.md)] online, there are no restrictions on performing write transactions in try methods. For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] prevents database write transactions within try methods by default. If a try method contains a database write transaction, a runtime error occurs. You can allow write transactions by setting the `DisableWriteInsideTryFunctions` parameter in the [!INCLUDE[server](includes/server.md)] configuration to `false`. Learn more about configuring the server in [Configure Business Central Server](../administration/configure-server-instance.md). This behavior might change in an upcoming release.
 
 ### Handling errors with a return value
 
@@ -156,8 +157,8 @@ END;
 ```  
 -->
 
-## See Also  
+## Related information  
 
 [Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
-[AL error handling](devenv-al-error-handling.md)   
+[AL error handling](devenv-al-error-handling.md)  
 [AL Simple Statements](devenv-al-simple-statements.md)

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 11/05/2023
+ms.date: 11/11/2024
 ms.custom: bap-template 
 ---
 
@@ -20,7 +20,7 @@ This article explains the essential characteristics of a Copilot and what your o
 
 ## LLM-based
 
-A Copilot experience is an interactive agent built on a large language model (LLM) or other state-of-the-art foundational model. This means that the Copilot may use advanced natural language processing either to understand user input or to generate responses that are tailored to the user's specific needs. Copilot capabilities may also call upon other machine learning models to get tasks done.
+A Copilot experience is an interactive agent built on a large language model (LLM) or other state-of-the-art foundational model. This means that the Copilot might use advanced natural language processing either to understand user input or to generate responses that are tailored to the user's specific needs. Copilot capabilities might also call upon other machine learning models to get tasks done.
 
 ## Responds to natural language for empowering users to achieve tasks
 
@@ -40,10 +40,9 @@ While Copilot can be a powerful tool for productivity and creativity, it's impor
 Copilot must mitigate or reduce these risks by incorporating human oversight, also known as human-in-the-loop (HITL), into the experience. To reduce the risk of undesirable or harmful side effects, Copilot supports the following:
 
 - A preview of AI-generated results before taking action on the user's behalf.
-- When showing generated information, Copilot indicates that the information is AI-generated and might state the confidence level, allowing users to make informed decisions. 
-- Users have the option to completely discard or undo the results.
+- When Copilot shows generated information, Copilot indicates that the information is AI-generated and might state the confidence level, allowing users to make informed decisions. 
+- Users can completely discard or undo the results.
 - Users can provide feedback about the quality of the results.
-
 
 ## Next steps
 

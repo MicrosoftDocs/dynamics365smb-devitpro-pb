@@ -38,7 +38,7 @@ With the following sections, you can learn more about various concepts that you 
 - [Using tables to display data from the report dataset (simple repeaters)](#using-tables-to-display-data-from-the-report-dataset-simple-repeaters)
 - [Using lists to display data from the report dataset (simple repeaters)](#using-lists-to-display-data-from-the-report-dataset-simple-repeaters)
 - [Using nested repeaters to display data from nested dataitems in the report dataset](#using-nested-repeaters-to-display-data-from-nested-dataitems-in-the-report-dataset)
-- [Sub totals / running totals](#sub-totals--running-totals)
+- [Sub totals / running totals](#sub-totalsrunning-totals)
 - [Conditional formatting](#conditional-formatting)
 - [Using the same table style for all tables in the layout](#using-the-same-table-style-for-all-tables-in-the-layout)
 - [Using hyperlinks](#using-hyperlinks-in-word-layouts)  
