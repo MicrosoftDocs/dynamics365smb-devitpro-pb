@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.collection:
   - get-started
   - bap-ai-Copilot
-ms.date: 02/17/2024
+ms.date: 11/14/2024
 ms.custom: bap-template
 ---
 # Build Copilot user experience
