@@ -7,7 +7,7 @@ ms.reviewer: solsen
 ms.topic: faq
 ms.collection:
   - bap-ai-copilot 
-ms.date: 06/12/2024
+ms.date: 11/15/2024
 ms.custom: bap-template
 ---
 
@@ -15,15 +15,15 @@ ms.custom: bap-template
 
 ## What is a Transparency Note? 
 
-An AI system includes not only the technology, but also the people who will use it, the people who will be affected by it, and the environment in which it is deployed. Creating a system that is fit for its intended purpose requires an understanding of how the technology works, what its capabilities and limitations are, and how to achieve the best performance. Microsoft's Transparency Notes are intended to help you understand how our AI technology works, the choices system owners can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment. You can use Transparency Notes when developing or deploying your own system, or share them with the people who will use or be affected by your system. 
+An AI system includes not only the technology, but also the people who will use it, the people who will be affected by it, and the environment in which it is deployed. Creating a system that is fit for its intended purpose requires an understanding of how the technology works, what its capabilities and limitations are, and how to achieve the best performance. Microsoft's Transparency Notes are intended to help you understand how our AI technology works, the choices system owners can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment. You can use Transparency Notes when developing or deploying your own system, or share them with the people who will use or be affected by your system.
 
-Microsoft’s Transparency Notes are part of a broader effort at Microsoft to put our AI Principles into practice. To find out more, see the [Microsoft AI principles](https://aka.ms/RAI). 
+Microsoft's Transparency Notes are part of a broader effort at Microsoft to put our AI Principles into practice. To find out more, see the [Microsoft AI principles](https://aka.ms/RAI).
 
 ## The basics of Machine Learning APIs for  Business Central  
 
 ### Introduction 
 
-Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and midsized organizations. Customers purchase Business Central through a network of software partners, who also customize the system to their needs via mature development tools in Visual Studio Code. From the very beginning, adaptability has been one of the core tenets of Business Central, and our community of partners across the world have built their business around this, tailoring the system to individual and changing customer needs, providing solutions in virtually all industries and geographies, selling add-ons at scale through the Microsoft AppSource store. Naturally, both partners and customers expect Copilot to be as adaptable as the rest of Business Central. 
+Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and midsized organizations. Customers purchase Business Central through a network of software partners, who also customize the system to their needs via mature development tools in Visual Studio Code. From the very beginning, adaptability has been one of the core tenets of Business Central, and our community of partners across the world have built their business around this, tailoring the system to individual and changing customer needs, providing solutions in virtually all industries and geographies, selling add-ons at scale through the Microsoft AppSource store. Naturally, both partners and customers expect Copilot to be as adaptable as the rest of Business Central.
 
 Business Central’s development platform includes an extension model, the proprietary AL (Application Language) programming language in Visual Studio Code, open-sourced components and business functionality, and diverse UI and APIs in which to add capabilities to Business Central or connect to and from external services or data sources. Machine Learning APIs for Business Central are a native part of this same platform  empowering partners to implement and deploy safer, enterprise-grade, AI capabilities for their customers.
 
@@ -38,26 +38,25 @@ Not only does this support our partner community, but many of Microsoft’s own 
 |API|Short name for the Machine Learning APIs for  Business Central .|
 |UI|Abbreviation for user-interface, which refers to the space where interactions between users and the system occur, like screens, pages, fields, and buttons of Business Central's browser client or mobile app.|
 
-## Capabilities 
+## Capabilities
 
-### System components 
+### System components
 
-The APIs allows developers to build machine learning features (non-generative AI) integrated into Business Central's line-of-business functionality and deploy them as Business Central extensions to Business Central online. The following components are included: 
+The APIs allows developers to build machine learning features (non-generative AI) integrated into Business Central's line-of-business functionality and deploy them as Business Central extensions to Business Central online. The following components are included:
 
-- **APIs** 
+- **APIs**
 
    The APIs provide a convenient abstraction layer that wraps Machine Learning models - Forecasting Model and Prediction Model and reduces the amount of code that must be written in AL for forecasting of time series or classification task. 
 
-- **Resources** 
+- **Resources**
 
    For Business Central online, the models are deployed by Microsoft and connected to the Microsoft subscription. For other deployment options, you have to create Machine Learning resources in your own Azure subscription. You can find sample steps in the [sample repo](https://github.com/microsoft/BCTech/tree/master/samples/MachineLearning).
 
-- **Guidance** 
+- **Guidance**
 
    This component includes a "Hello world" code example and documentation that illustrates how to use the APIs.  
 
-
-### Use cases 
+### Use cases
 
 #### Intended uses
 
@@ -66,15 +65,15 @@ The toolkit is intended for Business Central partners to extend Business Central
 - Forecast sales, usage, cash flow, returns.
 - Predict customer churn, quote conversion, shipment delay.
 
-#### Considerations when choosing a use case 
+#### Considerations when choosing a use case
 
-We encourage partners to leverage the APIs in their innovative solutions or applications. However, here are some considerations when choosing a use case. 
+We encourage partners to leverage the APIs in their innovative solutions or applications. However, here are some considerations when choosing a use case.
 
 - Financial impact
 
-   When depend on models deployed by Microsoft be aware about avalable capacity and usage. 
+   When depend on models deployed by Microsoft be aware about avalable capacity and usage.
 
-   If your API features are attached to models in your subscription, you are responsible for the operating costs of Azure MAchine Learning resources throughout development, testing and when your customers use the feature in production or sandbox environments. 
+   If your API features are attached to models in your subscription, you are responsible for the operating costs of Azure MAchine Learning resources throughout development, testing and when your customers use the feature in production or sandbox environments.
 
 - Sensitive use cases
 
@@ -90,19 +89,19 @@ We encourage partners to leverage the APIs in their innovative solutions or appl
 
    We strongly recommend seeking legal advice from a specialist to understand the laws and regulations applicable to your use case. You are responsible for complying with all laws and regulations, including privacy, security, accessibility, and AI safety. 
 
-## Limitations 
+## Limitations
 
-### General limitations for AI models 
+### General limitations for AI models
 
-It is important to understand that while AI systems are valuable tools, they are non-deterministic. This means that perfect accuracy of any generated content, suggestions or insights is not possible. Failure to understand this limitation can lead to over-reliance on the system and unmerited decisions that can impact any stakeholders including customers, their customers, and partners. Ensuring that any output of the AI model is weighted against human judgement and logic can help mitigate this risk. 
+It is important to understand that while AI systems are valuable tools, they are non-deterministic. This means that perfect accuracy of any generated content, suggestions or insights is not possible. Failure to understand this limitation can lead to over-reliance on the system and unmerited decisions that can impact any stakeholders including customers, their customers, and partners. Ensuring that any output of the AI model is weighted against human judgement and logic can help mitigate this risk.
 
 ### Country/region limitations  
 
 The API itself does not determine the environment localizations in which your AI feature is available. If your API features are attached to models in your subscription, then partner developers fully control these aspects of their AI features, and are responsible for ensuring both quality and compliance.
 
-## Evaluation of the APIs 
+## Evaluation of the APIs
 
-### Evaluation methods and results 
+### Evaluation methods and results
 
 The APIs are reviewed and tested throughout Microsoft's development lifecycle and is designed to meet the requirements outlined in the [Responsible AI Standard](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2022/06/Microsoft-Responsible-AI-Standard-v2-General-Requirements-3.pdf) that sets the bar for Microsoft's AI products and features.
 
@@ -121,9 +120,9 @@ We recommend that partners adopt a similar process and criteria to the [Microsof
 
 ## Learn more about responsible AI 
 
-[Microsoft AI principles](https://www.microsoft.com/en-us/ai/responsible-ai) 
+[Microsoft AI principles](https://www.microsoft.com/en-us/ai/responsible-ai)
 
-[Microsoft responsible AI resources](https://www.microsoft.com/en-us/ai/tools-practices) 
+[Microsoft responsible AI resources](https://www.microsoft.com/en-us/ai/tools-practices)
 
 [Microsoft Azure Learning courses on responsible AI](/ai/)
 
