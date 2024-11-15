@@ -39,9 +39,9 @@ Typing the shortcut `treportext` creates the basic layout for a report extension
 
 ## Report extension example
 
-The following example illustrates a simplified table extension, which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds `MyField` and an extra field in original `Customer` table to the **Customer - Top 10 List** report, and it adds a new Excel layout to the report. The example also illustrates how a new field added to the report extension, can be modified using the `OnBeforeAfterGetRecord` trigger. For more information, see [OnBeforeAfterGetRecord (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onbeforepredataitem-reportextensiondatasetmodify-trigger.md). For a list of triggers that can be used inside the `modify` section of a report, go to the [See Also](devenv-report-ext-object.md#see-also) section.
+The following example illustrates a simplified table extension, which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds `MyField` and an extra field in original `Customer` table to the **Customer - Top 10 List** report, and it adds a new Excel layout to the report. The example also illustrates how a new field added to the report extension, can be modified using the `OnBeforeAfterGetRecord` trigger. For more information, see [OnBeforeAfterGetRecord (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onbeforepredataitem-reportextensiondatasetmodify-trigger.md). For a list of triggers that can be used inside the `modify` section of a report, go to the [Related information](devenv-report-ext-object.md#related-information) section.
 
-For a more advanced example, see [Report Extension Example](devenv-report-ext-example.md). 
+For a more advanced example, see [Report extension example](devenv-report-ext-example.md). 
 
 > [!NOTE]  
 > Inside the `requestpage` element, you cannot modify any properties.
