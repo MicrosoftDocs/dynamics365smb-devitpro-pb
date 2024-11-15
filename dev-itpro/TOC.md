@@ -529,7 +529,7 @@
 
 ### Work in sandboxes
 #### [Sandbox environments for development](developer/devenv-sandbox-overview.md)
-#### [Get started with the container sandbox development environment](developer/devenv-get-started-container-sandbox.md)
+#### [Running a container-based development environment](developer/devenv-running-container-development.md)
 #### [Work with development sandboxes and entitlements](developer/devenv-work-sandbox-entitlements.md)
 
 ### Working with apps
