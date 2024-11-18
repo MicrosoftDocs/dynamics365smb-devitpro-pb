@@ -26,7 +26,7 @@ Learn more about assigning licenses in [Licensing in Dynamics 365 Business Centr
 
 ## Permission set scope
 
-A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (by an ISV application that you installed from AppSource).
+A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains many predefined permission sets that are added by Microsoft or by your software provider (by an ISV application that you installed from AppSource).
 
 Permission sets included with Microsoft and AppSource apps defined as AL objects are of the type **System**. <!-- If they are included in XML format, they are of the type **Extension**.--> <!-- Old data-sourced permissions are also tagged as System type. These are permission sets that on-premises admins/devs can add using our PowerShell cmdlets or creating and importing XML files with scope=system-->
 
@@ -47,7 +47,7 @@ When developing an app, entitlements and permission sets are handled as objects 
 
 ## System Application objects for permissions
 
-The [!INCLUDE [prod_short](includes/prod_short.md)] System Application includes a number of objects that can help you when working with permissions:
+The [!INCLUDE [prod_short](includes/prod_short.md)] System Application includes many objects that can help you when working with permissions:
 
 - [Codeunit 'User Permissions'](/dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
 - [Page 'Effective Permissions'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -80,7 +80,7 @@ When upgrading to version 18, first decide whether you want to use the permissio
 
 ## Earlier versions of Business Central
 
-In releases of [!INCLUDE [prod_short](includes/prod_short.md)] prior to 2021 release wave 1 (v18.0), System and Extension permissions and entitlements were defined as data in the application database: 
+In releases of [!INCLUDE [prod_short](includes/prod_short.md)] prior to 2021 release wave 1 (v18.0), System, and Extension permissions and entitlements were defined as data in the application database: 
 
 Entitlements tables:
 
@@ -93,7 +93,7 @@ Permissions tables:
 - Permission Set
 - Permission
 
-Keeping such sensitive information as data comes with additional maintenance, security, and audit risks for the software providers (ISVs). Changes applied to this data should ideally be well traceable, easy to update and maintain. Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, the System permissions and entitlements are defined in code, using Entitlement, PermissionSet, and PermissionSetExtension AL objects. This change provides ISVs with all of the advantages of using the AL Language extension in Visual Studio Code and source control systems (as Visual Studio Online and GitHub) to design, get an overview, and track changes to the objects that describe user access. 
+Keeping such sensitive information as data comes with other maintenance, security, and audit risks for the software providers (ISVs). Changes applied to this data should ideally be traceable, easy to update and maintain. Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, the System permissions and entitlements are defined in code, using Entitlement, PermissionSet, and PermissionSetExtension AL objects. This change provides ISVs with all of the advantages of using the AL Language extension in Visual Studio Code and source control systems (as Visual Studio Online and GitHub) to design, get an overview, and track changes to the objects that describe user access. 
 
 Turning this data into code has another significant advantage: the ability to apply hotfixes to the entitlements and permissions in the same way that the hotfixes are applied to the apps themselves, simply by updating an app to a new version which carries fixed code. This improves [!INCLUDE [prod_short](includes/prod_short.md)] support agility considerably, ultimately improving customer satisfaction with the service.
 
