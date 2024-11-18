@@ -10,9 +10,10 @@ ms.reviewer: solsen
 
 # Using nonintrusive notifications in the User Interface
 
-Notifications provide a programmatic way to send nonintrusive information to the User Interface (UI) in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. Notifications differ from messages initiated by the **Message** method. Messages are modal, which means users are typically required to address the message and take some form of corrective action before they continue working. On the other hand, notifications are nonmodal. Their purpose is to give users information about a current situation, but don't require any immediate action or block users from continuing with their current task. For example, you could have a notification that a customer's credit limit is exceeded.
+Notifications provide a programmatic way to send nonintrusive information to the User Interface (UI) in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. Notifications differ from messages that are initiated by the **Message** method. Messages are modal, which means users are typically required to address the message and take some form of corrective action before they continue working. Notifications, however, are nonmodal. Their purpose is to give users information about a current situation, but they don't require any immediate action or block users from continuing with their current task. For example, you could have a notification that a customer's credit limit is exceeded.
 
 ## Notifications in the UI
+
 In the UI, notifications appear in the **Notification** bar (similar to validation errors) at the top of the page on which a user is currently working. The user can then choose to dismiss the notification, which clears it. Or, if actions are defined on notification, the user can choose one of the actions.
 
 * There can be multiple notifications. The notifications appear in chronological order from top to bottom.
@@ -20,7 +21,8 @@ In the UI, notifications appear in the **Notification** bar (similar to validati
 * Notifications that are defined on subpages, for example in parts and FactBoxes, appear in the same **Notification** bar.
 * Validation errors on the page will be shown first.
 
-## Notifications in the development environment
+## Adding code to send notifications to users
+
 By using the **Notification** and **NotificationScope** data types and methods in AL, you can add code to send notifications to users. The following table provides an overview of the available methods. The sections that follow provide additional information about how to create notifications.
 
 |  Method  |  Description  |
@@ -35,6 +37,7 @@ By using the **Notification** and **NotificationScope** data types and methods i
 
 
 ## Creating and sending a notification
+
 You create a notification by using the **Message** and **Send** methods. The **Message** method defines the message part of the notification. When the **Send** method is called, the notification is sent to the client and content of the message is displayed.
 
 ```AL
@@ -63,6 +66,7 @@ MyNotification.Send();
 ```
 
 ## Adding actions on a notification
+
 You add actions on notifications by using the **AddAction** method. This method provides a way for you to create interactive notifications. By default, users have the option to dismiss the notifications. However, there might be cases where you want to provide users with different actions that they can take to address the notification, like opening an associated page for modifying data.
 
 Conceptually, a notification action calls a method in a specified codeunit, passing the notification object in the call. The method includes the business logic for handling the action.
@@ -85,6 +89,7 @@ The basic steps for adding an action are as follows:
 > You can have more than one action on a notification. A LocalScope notification can have up to 3 actions. A GlobalScope notification can have up to 2 actions.
 
 ## Sending data with a notification
+
 You use the **SetData** and **GetData** methods to add data to a notification, which is typically needed when actions are invoked. The **SetData** method sets, or adds, data to the notification. The data is defined as text in a key-value pair. With the **GetData** method, you can then retrieve the data again.
 
 The following code sets data for a notification:
@@ -105,7 +110,9 @@ The following code gets the data for a notification:
 DataValue := MyNotification.GetData('Created');
 DataValue := MyNotification.GetData('ID');
 ```
+
 ## Example
+
 This simple example illustrates how notifications work and provides some insight into how you can use them. This example extends page **42 Sales Order** of the CRONUS International Ltd. demonstration database according to the following:
 
 - The code compares a customer's balance with their credit limit. If the balance exceeds the credit limit, a notification is sent to the client.
@@ -223,7 +230,8 @@ To complete the example, follow these steps:
     }
     ```
 
-## See Also
-[Notification Data Type](./methods-auto/library.md)   
-[Developing Extensions](devenv-dev-overview.md)   
-[Get Started with AL](devenv-get-started.md)
+## Related information
+
+[Notification data type](./methods-auto/library.md)   
+[Developing extensions](devenv-dev-overview.md)   
+[Get started with AL](devenv-get-started.md)
