@@ -537,6 +537,7 @@
 #### [Choosing runtime version in AL](developer/devenv-choosing-runtime.md)
 #### [FAQ about library and dependency apps in Business Central](developer/app-faq-dependencies-libraries.md)
 #### [Adding data for extensions](developer/devenv-export-data-for-extension.md)
+#### [Adding and Accessing Resources](developer/devenv-app-resources.md)
 
 ### Other tools
 #### [The Txt2Al conversion tool](developer/devenv-txt2al-tool.md)
