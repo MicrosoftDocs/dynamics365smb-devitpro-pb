@@ -1,10 +1,10 @@
 ---
-title: DELETE subscriptions  
+title: Delete subscriptions  
 description: Deletes subscriptions  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 11/20/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -16,10 +16,14 @@ ms.reviewer: solsen
 Deletes a subscriptions object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
+
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../endpoints-apis-for-dynamics.md).
 ```
 DELETE businesscentralPrefix/subscriptions({'id'})
 ```
+
+> [!NOTE]
+> If you've created custom entities, you must include the `<APIPublisher>` and `<APIGroup>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/APIVersion/subscriptions`. For example, if your API publisher is `pub` and your API group is `grp`, the URL would be `api/pub/grp/v1.0/subscriptions`.
 
 ## Request headers
 |Header|Value|

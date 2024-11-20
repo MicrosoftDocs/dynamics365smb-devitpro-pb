@@ -1,10 +1,10 @@
 ---
-title: UPDATE subscriptions   
+title: Update subscriptions   
 description: Updates a subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 11/20/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -16,10 +16,14 @@ ms.reviewer: solsen
 Updates a subscriptions object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. A subscription is valid for 3 days unless it is updated. `PATCH` requests will perform a handshake with the subscriber.
 
 ## HTTP request
+
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../endpoints-apis-for-dynamics.md).
 ```
 PATCH businesscentralPrefix/subscriptions({'id'})
 ```
+
+> [!NOTE]
+> If you've created custom entities, you must include the `<APIPublisher>` and `<APIGroup>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/APIVersion/subscriptions`. For example, if your API publisher is `pub` and your API group is `grp`, the URL would be `api/pub/grp/v1.0/subscriptions`.
 
 ## Request headers
 |Header|Value|

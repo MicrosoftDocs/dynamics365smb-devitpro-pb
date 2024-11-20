@@ -1,10 +1,10 @@
 ---
-title: CREATE subscriptions  
+title: Create subscriptions  
 description: Creates a subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 11/20/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -16,10 +16,15 @@ ms.reviewer: solsen
 Creates a webhook subscription for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. Will be created only if handshake is successful.
 
 ## HTTP request
+
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../endpoints-apis-for-dynamics.md).
+
 ```
 POST businesscentralPrefix/subscriptions
 ```
+
+> [!NOTE]
+> If you've created custom entities, you must include the `<APIPublisher>` and `<APIGroup>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/APIVersion/subscriptions`. For example, if your API publisher is `pub` and your API group is `grp`, the URL would be `api/pub/grp/v1.0/subscriptions`.
 
 ## Request headers
 
@@ -88,6 +93,7 @@ Here is an example of the response.
 
 
 ## Related information
+
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Subscriptions](../resources/dynamics_subscriptions.md)  
 [Get subscriptions](dynamics_subscriptions_Get.md)  

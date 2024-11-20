@@ -1,10 +1,10 @@
 ---
-title: GET subscriptions  
+title: Get subscriptions  
 description: Gets a subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/31/2024
+ms.date: 11/20/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -20,6 +20,10 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 ```
 GET businesscentralPrefix/subscriptions
 ```
+
+> [!NOTE]
+> If you've created custom entities, you must include the `<APIPublisher>` and `<APIGroup>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/APIVersion/subscriptions`. For example, if your API publisher is `pub` and your API group is `grp`, the URL would be `api/pub/grp/v1.0/subscriptions`.
+
 
 ## Request headers
 |Header|Value|
