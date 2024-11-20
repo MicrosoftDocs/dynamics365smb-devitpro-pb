@@ -21,7 +21,7 @@ Represents a subscriptions in [!INCLUDE[prod_short](../../../includes/prod_short
 > For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
 
 > [!NOTE]
-> If you've created custom entities, you must include the `<APIPublisher>` and `<APIGroup>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/APIVersion/subscriptions`. For example, if your API publisher is `pub` and your API group is `grp`, the URL would be `api/pub/grp/v2.0/subscriptions`.
+> If you've created custom entities, you must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, the URL would be `api/pub/grp/v1.0/subscriptions`.
 
 ## Methods
 

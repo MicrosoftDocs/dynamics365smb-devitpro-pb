@@ -17,7 +17,7 @@ Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short
 In the following replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](endpoints-apis-for-dynamics.md).
 
 > [!NOTE]
-> If you've created custom entities, you must include the `<APIPublisher>` and `<APIGroup>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/APIVersion/subscriptions`. For example, if your API publisher is `pub` and your API group is `grp`, the URL would be `api/pub/grp/v1.0/subscriptions`.
+> If you've created custom entities, you must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, the URL would be `api/pub/grp/v1.0/subscriptions`.
 
 ## Register a webhook subscription
 Using webhooks requires the client/subscriber to perform a handshake with [!INCLUDE[prod_short](../../includes/prod_short.md)] to register the webhook subscription.
