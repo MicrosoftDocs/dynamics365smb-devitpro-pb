@@ -4,7 +4,7 @@ description: A subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 11/20/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -20,6 +20,9 @@ Represents a subscriptions in [!INCLUDE[prod_short](../../../includes/prod_short
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
 
+> [!NOTE]
+> If you've created custom entities, you must include the `<APIPublisher>` and `<APIGroup>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/APIVersion/subscriptions`. For example, if your API publisher is `pub` and your API group is `grp`, the URL would be `api/pub/grp/v2.0/subscriptions`.
+
 ## Methods
 
 | Method | Return Type|Description |
@@ -28,8 +31,6 @@ Represents a subscriptions in [!INCLUDE[prod_short](../../../includes/prod_short
 |[DELETE subscriptions](../api/dynamics_subscriptions_delete.md)|none|Deletes a subscriptions object.|
 |[POST subscriptions](../api/dynamics_subscriptions_create.md)|subscriptions|Creates a subscriptions object.|
 |[PATCH subscriptions](../api/dynamics_subscriptions_update.md)|subscriptions|Updates a subscriptions object.|
-
-
 
 ## Properties
 
@@ -52,7 +53,6 @@ Represents a subscriptions in [!INCLUDE[prod_short](../../../includes/prod_short
 
 Here is a JSON representation of the subscriptions resource.
 
-
 ```json
 {
     "subscriptionId": "string",
@@ -69,11 +69,9 @@ Here is a JSON representation of the subscriptions resource.
     "systemModifiedBy": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+# Related information
 
-
-## Related information
 [GET subscriptions](../api/dynamics_subscriptions_Get.md)  
 [DELETE subscriptions](../api/dynamics_subscriptions_Delete.md)  
 [POST subscriptions](../api/dynamics_subscriptions_Create.md)  
