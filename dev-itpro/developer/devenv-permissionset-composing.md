@@ -9,7 +9,7 @@ ms.reviewer: jswymer
 ---
 # Composing Permission Sets
 
-Permissions define a specific level of [access to data and objects](devenv-permissions-on-database-objects.md) in the application, like read, insert, modify, and delete permission on table data. Permission sets combine these permissions in logical groups that can then be assigned to users. Permission sets in AL are created using the [permissionset object](devenv-permissionset-object.md), and existing permission sets are extended using the [permissionset extension object](devenv-permissionset-ext-object.md). In the client, administrators can't modify these AL-based permission sets, but they can copy them and modify the copies (see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions)).
+Permissions define a specific level of [access to data and objects](devenv-permissions-on-database-objects.md) in the application, like read, insert, modify, and delete permission on table data. Permission sets combine these permissions in logical groups that can then be assigned to users. Permission sets in AL are created using the [permissionset object](devenv-permissionset-object.md), and existing permission sets are extended using the [permissionset extension object](devenv-permissionset-ext-object.md). In the client, administrators can't modify these AL-based permission sets, but they can copy them and modify the copies (learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions)).
 
 ## Design concepts
 
@@ -25,7 +25,7 @@ The disadvantage with this approach by itself is that if you have to change a pe
 
 ### Composite permission sets
 
-Another approach is to use the [IncludedPermissionSets property](properties/devenv-includedpermissionsets-property.md) and [ExludedPermissionSets property](properties/devenv-excludedpermissionsets-property.md) to create permission sets that are composed of the other permission sets. Any changes made to the included or excluded permission sets are automatically propagated to the permission sets that use them. In this manner, you create permission sets that have hierarchical structure, as illustrated in the following figure. Looking at the figure, permission set 5 is composed from all permission sets, minus the permissions in permission set 3.
+Another approach is to use the [IncludedPermissionSets property](properties/devenv-includedpermissionsets-property.md) and [ExludedPermissionSets property](properties/devenv-excludedpermissionsets-property.md) to create permission sets that are composed of the other permission sets. Any changes made to the included or excluded permission sets are automatically propagated to the permission sets that use them. In this manner, you create permission sets that have hierarchical structure, as illustrated in the following figure. In the figure, permission set 5 is composed from all permission sets, minus the permissions in permission set 3.
 
 ![Shows the hierarchy of a permission set that includes several other permission sets.](media/permission-sets-hierarchy-v2.png)
 
@@ -33,7 +33,7 @@ Composite permission sets are easier to maintain and keep up-to-date compared to
 
 ### Bringing approaches together
 
-Ultimately, you'll use a combination of these approaches to meet your permission requirements. Many of the default permission sets from Microsoft follow this approach. The following figure illustrates how different permission sets (in this case, standard Dynamics 365 permission sets) can be used to compose two custom permission sets (EMPLOYEE and HR). The permission sets have been simplified for illustration purposes.
+Ultimately, you use a combination of these approaches to meet your permission requirements. Many of the default permission sets from Microsoft follow this approach. The following figure illustrates how different permission sets (in this case, standard Dynamics 365 permission sets) can be used to compose two custom permission sets (EMPLOYEE and HR). The permission sets are simplified for illustration purposes.
 
 ![Shows an example of two custom permission sets based on standard D365 permission sets.](media/composed-permission-sets-v3.png)
 
@@ -126,8 +126,9 @@ Composing permission sets supports security filters. Excluding permission sets c
 This section explains points that can help you get the resultant permissions that you want.
 
 - Permissions are determined by working up the hierarchy, adding or removing permissions at each level.
-- Exclude permissions take precedence over included permissions when applied on the same level. If an excluded permission set and included permission set define the same permissions, the excluded permission set permissions will be used, overriding the included permission set permissions.
-- Direct permissions will override indirect permissions.
+- Exclude permissions take precedence over included permissions when applied on the same level. If an excluded permission set and included permission set define the same permissions, the excluded permission set permissions are used, overriding the included permission set permissions.
+- Direct permissions override indirect permissions.
+- When excluded permission sets are used, only permissions are excluded. Security filters from the excluded permission sets aren't used for the negation.
 
 The following table shows how the permissions are determined on a single object when included and excluded permission sets are used:
 
@@ -141,13 +142,13 @@ The following table shows how the permissions are determined on a single object 
 > [!TIP]
 > When including and excluding multiple permission sets, it can be difficult to get an overview of what the resultant permissions will be. To help, use the **View all permissions** action from the the permission set in the client.
 
-## See Also
+## Related information
 
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  
-[Permission Set Extension Object](devenv-permissionset-ext-object.md)  
-[Permissions on Database Objects](devenv-permissions-on-database-objects.md)  
-[Assignable Property](properties/devenv-assignable-property.md)  
-[IncludedPermissionSets](properties/devenv-includedpermissionsets-property.md)  
-[Permissions Property](properties/devenv-permissions-property.md)
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Entitlements and permission set overview](devenv-entitlements-and-permissionsets-overview.md)  
+[Permission set extension object](devenv-permissionset-ext-object.md)  
+[Permissions on database objects](devenv-permissions-on-database-objects.md)  
+[Assignable property](properties/devenv-assignable-property.md)  
+[IncludedPermissionSets property](properties/devenv-includedpermissionsets-property.md)  
+[Permissions property](properties/devenv-permissions-property.md)
