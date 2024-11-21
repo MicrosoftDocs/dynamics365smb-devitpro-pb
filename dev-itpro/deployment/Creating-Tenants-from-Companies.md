@@ -1,10 +1,13 @@
 ---
-title: "Creating Tenants from Companies"
+title: Creating Tenants from Companies
+description: Learn how to create tenants from companies in Business Central.
 author: jswymer
 ms.date: 04/01/2021
 ms.topic: conceptual
 ---
-# Creating Tenants from Companies in Business Central
+
+# Creating tenants from companies in Business Central
+
 If your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution includes multiple companies in one database, you can choose to migrate to multitenancy where the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] companies become tenants of your application database.  
 
 ## Companies in multitenancy deployments

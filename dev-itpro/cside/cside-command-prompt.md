@@ -1,13 +1,16 @@
 ---
-title: "Using the Development Environment from the Command Prompt"
+title: Using the Development Environment from the Command Prompt
+description: Learn how to use the C/SIDE Development Environment from the command prompt.
 author: jswymer
 ms.date: 04/01/2021
 ms.topic: article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Using the Development Environment from the Command Prompt
->[!NOTE]
+
+# Using the development environment from the command prompt
+
+> [!NOTE]
 > [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
 
 You can start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] by running finsql.exe at the command prompt. You can also use the finsql.exe command to run the several development tasks without using the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] client.  
