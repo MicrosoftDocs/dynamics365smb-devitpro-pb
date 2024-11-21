@@ -21,7 +21,7 @@ FlowFilter fields aren't saved in the database. Instead, they're stored for each
 
 You can't have a FlowFilter field as the **SourceExpression** value for a control on a page. If you do, then the control on the page isn't editable, and you can't select a value and filter the data that is displayed in the page.  
 
-## See Also
+## Related information
 
 [Create FlowFields and FlowFilters](devenv-creating-flowfields-and-flowfilters.md)  
 [Flowfields](devenv-flowfields.md)  

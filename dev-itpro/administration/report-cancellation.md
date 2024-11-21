@@ -23,7 +23,7 @@ This flow means a report isn't necessarily canceled when a limit is exceeded. Fo
 > [!NOTE]
 > The report rendering is not included in the evaluate cancellation process and can't be canceled.
 
-## See Also
+## Related information
 
 [Configuring Business Central Server](configure-server-instance.md)  
 [Analyzing Report Telemetry](telemetry-reports-trace.md)  

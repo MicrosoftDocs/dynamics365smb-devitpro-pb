@@ -68,7 +68,7 @@ If you don't need delegated admin help continuously, you can (temporarily) restr
 
 If your organization decides to terminate a GDAP relationship with a partner or to switch to another partner, you must make sure that some settings that your current partner might have set up in your [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] are removed. Learn more in [Cleaning up settings](tenant-admin-center.md#cleaning-up-settings).
 
-## See also
+## Related information
 
 [Administration of Business Central Online](tenant-administration.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  

@@ -104,7 +104,7 @@ User-Defined permission sets and permissions, and functionality around them, rem
 
 Permission sets and permissions [included with apps in XML format](devenv-export-permission-sets.md) will continue to work as before, however, we recommend you to start using the AL objects of type `PermissionSet` and `PermissionSetExtension` instead.
 
-## See Also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)  
 [Entitlement Object](devenv-entitlement-object.md)  

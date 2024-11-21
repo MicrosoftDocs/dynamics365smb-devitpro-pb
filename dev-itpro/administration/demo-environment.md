@@ -139,7 +139,7 @@ You can set up tailored demo environments in a sandbox environment if you alread
 
 Starting in February 2022, partners can request dedicated licenses to set up additional sandbox environments. For more information, see [Partner sandboxes](environment-types.md#partnersandbox).  
 
-## See also
+## Related information
 
 [Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](test-environment.md)  
 [Trials and Subscriptions](trials-subscriptions.md)  

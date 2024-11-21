@@ -61,7 +61,7 @@ When creating the support request, provide this information:
 
 The following article takes you through creating a support request: [Escalate Support Issues to Microsoft](raise-support-case.md).
 
-## See also
+## Related information
 
 [Escalating Support Issues to Microsoft](raise-support-case.md)    
 [Managing Technical Support](manage-technical-support.md)    

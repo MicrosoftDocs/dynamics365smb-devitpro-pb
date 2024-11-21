@@ -107,7 +107,7 @@ Don't supply a request body for this method.
 #### Response
 If successful, this method returns a `200 OK` response code and a report PDF file in the response body.
 
-## See also
+## Related information
 <!-- [Using Deltas With APIs](devenv-connect-apps-delta.md)-->  
 [Using filtering With APIs](devenv-connect-apps-filtering.md)  
 [API performance](../webservices/web-service-performance.md)   

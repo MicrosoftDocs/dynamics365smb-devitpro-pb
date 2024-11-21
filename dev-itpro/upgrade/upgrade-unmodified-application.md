@@ -538,6 +538,6 @@ For each extension, run the Install-NAVApp cmdlet:
     ```
 -->
 
-## See also  
+## Related information  
 [Upgrading the Data](Upgrading-the-Data.md)   
 [Upgrading to Business Central](upgrading-to-business-central.md)  

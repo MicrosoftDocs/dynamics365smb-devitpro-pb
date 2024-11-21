@@ -44,7 +44,7 @@ The Copilot user interface is an essential component of any Copilot experience. 
 
 To learn more, go to [Design the Copilot user experience](ai-build-experience.md).
 
-## See also
+## Related information
 
 [Integrating AI using developer tools for Copilot](ai-integration-landing-page.yml)
 

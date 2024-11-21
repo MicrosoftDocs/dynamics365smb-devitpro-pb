@@ -632,7 +632,7 @@ codeunit 50108 "Shpfy Product Import Mapping"
 }
 ```
 
-## See also
+## Related information
 
 [Extensibility overview](devenv-extensibility-overview.md)  
 [Shopify](/dynamics365/business-central/shopify/get-started)  

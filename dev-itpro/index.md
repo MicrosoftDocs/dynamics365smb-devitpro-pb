@@ -71,7 +71,7 @@ If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we
 
 [!INCLUDE [ua-rss](includes/ua-rss.md)]
 
-## See also
+## Related information
 
 [[!INCLUDE[prod_long](includes/prod_long.md)] Business functionality Help](/dynamics365/business-central/index)  
 [Dynamics 365 Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)  

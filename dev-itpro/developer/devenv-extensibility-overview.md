@@ -91,7 +91,7 @@ These resources provide a comprehensive overview of the extensibility options av
 * [Extending the Shopify Connector](devenv-extending-shopify.md)
 
 
-## See Also
+## Related information
 Extending AL objects and artifacts
 * [Extending application areas](devenv-extending-application-areas.md)
 * [Extending enumerations](devenv-extensible-enums.md)

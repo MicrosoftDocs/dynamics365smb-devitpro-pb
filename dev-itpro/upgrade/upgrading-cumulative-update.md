@@ -207,7 +207,7 @@ The general steps for this task are listed below. For detailed steps, see [Publi
 
 Import the customer license as you did with the partner license. For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## See Also
+## Related information
 
 [Dynamics 365 Business Central On-Premises October'18 Updates](../deployment/update-versions-13.md)  
 [Dynamics 365 Business Central On-Premises April'19 Updates](../deployment/update-versions-14.md)  

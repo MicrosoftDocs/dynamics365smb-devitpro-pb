@@ -93,7 +93,7 @@ Search in lists searches all columns in a table. To avoid resource starvation on
 
 Users experiencing slow search in lists should consider using a column filter instead. Learn about [Searching and Filtering](/dynamics365/business-central/ui-search-filter-faq).  
 
-## See Also
+## Related information
 
 [Performance Overview](performance-overview.md)  
 [Configuring the application for performance](performance-application.md)  

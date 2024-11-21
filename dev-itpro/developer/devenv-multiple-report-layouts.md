@@ -69,7 +69,7 @@ If one or more of the layouts do not exist, they will be generated when selectin
 
 Creating layouts in Excel, RDL, or Word is further described in the topics shown under [See also](devenv-multiple-report-layouts.md#see-also).
 
-## See also
+## Related information
 
 [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  

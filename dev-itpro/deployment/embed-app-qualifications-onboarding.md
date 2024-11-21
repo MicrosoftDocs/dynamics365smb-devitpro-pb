@@ -31,7 +31,7 @@ When an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is qualified for
 
 The rest of the information will be included with the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] package that the partner deploys through LifeCycle Services.
 
-## See Also
+## Related information
 
 [Embed App Overview](embed-app-overview.md)  
 [Microsoft Responsibilities](microsoft-responsibilities.md)  

@@ -68,7 +68,7 @@ Don't use split buttons for action groups with actions that the user isn't perce
 
 For more information about split button groups, see [Split buttons for actions](devenv-promoted-actions.md#split-buttons-for-actions).
 
-## See also
+## Related information
 
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [Actions in AL](devenv-actions-overview.md)  

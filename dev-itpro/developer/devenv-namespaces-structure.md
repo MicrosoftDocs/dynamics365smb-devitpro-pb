@@ -91,7 +91,7 @@ foreach ($file in $files) {
 
 You're now ready to open Visual Studio Code and use the AL code actions to apply all the missing `using` statements.
 
-## See also
+## Related information
 
 [Namespaces in AL](devenv-namespaces-overview.md)  
 [Programming in AL](devenv-programming-in-al.md)  

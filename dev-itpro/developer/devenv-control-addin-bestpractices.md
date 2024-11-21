@@ -61,7 +61,7 @@ function invokeALTriggerTheRightWay() {
 }
 ```
 
-## See also
+## Related information
 
 [Control add-in resiliency](/dynamics365/business-central/across-controladdin-resiliency) <!-- link to app doc -->  
 [InvokeExtensibilityMethod method](methods/devenv-invokeextensibility-method.md)  

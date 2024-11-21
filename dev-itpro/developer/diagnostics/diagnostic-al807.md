@@ -21,6 +21,6 @@ The integer '{0}' should not be used as the name for the object.
 Integers should not be used as the names of objects because they prevent referencing the object by name.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

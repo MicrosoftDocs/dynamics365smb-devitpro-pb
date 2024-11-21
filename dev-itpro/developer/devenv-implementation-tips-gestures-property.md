@@ -29,7 +29,7 @@ Before assigning gesture activation to actions, take a moment to consider which 
  
 In general, having a single action available on swipe-right that starts or progresses the most important task is recommended, and - optionally - a single action is made available on left swipe. In special cases, multiple actions can be made available on either right or left swipe. In this case, the user's first swipe reveals the available actions, and a second tap gesture is then needed to activate one of the actions. When using multiple actions on swipe, organize actions in their order of importance, sequenced in reading order, most important first.
 
-## See also
+## Related information
 
 [Gesture Property](properties/devenv-gesture-property.md) 
 <!-- 

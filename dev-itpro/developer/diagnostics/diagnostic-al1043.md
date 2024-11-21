@@ -21,6 +21,6 @@ The runtime version '{0}' is not supported by the AL compiler.
 The specified runtime version is not supported by the AL compiler. For more information, see [Currently available runtime versions](../devenv-choosing-runtime.md).  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

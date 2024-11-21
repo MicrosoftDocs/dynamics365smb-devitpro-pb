@@ -209,7 +209,7 @@ FieldRef := RecordRef.Field(0);
 Message(Format(FieldRef.Value()));
 ```
 
-## See Also
+## Related information
 
 [Table Object](devenv-table-object.md)  
 [AL Development Environment](devenv-reference-overview.md)  

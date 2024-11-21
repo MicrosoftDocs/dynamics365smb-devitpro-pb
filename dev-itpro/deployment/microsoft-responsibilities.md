@@ -22,7 +22,7 @@ Microsoft responsibilities in the [!INCLUDE[prod_short](../developer/includes/pr
 |Base application and platform|<ul><li>Availability and security</li><li>Diagnostics, patches, updates, hotfixes, and updates</li><li>Monitoring and first-line support for partners building apps</li></ul>| 
 |Lifecyle Services portal (EmbedApp program)|<ul><li>Development, deployment, and support of the portal functionality</li><li>High availability and disaster recovery</li><li>Monitoring, updating and patching</li><li>First-line support for partners</li></ul>|  
 
-## See also
+## Related information
 
 [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  
 [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](../developer/app-maintain.md)  

@@ -304,6 +304,6 @@ When you initially set the **Authentication Email**, the **Authentication Status
 
 For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
-## See Also  
+## Related information  
 [Configuring Business Central Server](configure-server-instance.md)  
 [Authentication and Credential Types](Users-Credential-Types.md)

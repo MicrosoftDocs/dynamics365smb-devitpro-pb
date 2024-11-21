@@ -18,6 +18,6 @@ This is the case when you have, for example, **Line Comments** which are related
   
 For more information on how the settings are interpreted on the various clients, see [Scope Property](properties/devenv-scope-property.md).  
   
-## See Also  
+## Related information  
 
 [Scope Property](properties/devenv-scope-action-property.md)

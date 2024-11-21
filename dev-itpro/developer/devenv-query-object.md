@@ -210,7 +210,7 @@ Learn more at [Analyze list page and query data using data analysis mode](/dynam
 
 
 
-## See Also
+## Related information
 
 [Linking and Joining Data Items](devenv-query-links-joins.md)  
 [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  

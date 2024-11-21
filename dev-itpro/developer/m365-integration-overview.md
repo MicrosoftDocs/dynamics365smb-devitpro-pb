@@ -127,7 +127,7 @@ To make it easy to mass communicate in print or email, power users can use mail 
 
 
 
-## See also
+## Related information
 
 [Viewing and Editing in Excel From Business Central](/dynamics365/business-central/across-work-with-excel)  
 [Working with Microsoft Excel Layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report)  

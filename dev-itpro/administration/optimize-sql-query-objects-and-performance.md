@@ -56,6 +56,6 @@ SQL Server query optimizer will try to select the best execution plan for SELECT
 
 For more information, see [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](sql-server-query-hints.md).
   
-## See Also  
+## Related information  
  [Query Object](../developer/devenv-query-object.md)  
  [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)

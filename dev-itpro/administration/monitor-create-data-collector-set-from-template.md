@@ -36,7 +36,7 @@ author: SusanneWindfeldPedersen
   
  For information about how to start the Data Collector Set, see [To start and stop a Data Collector Set](create-data-collector-performance-counters.md#StartDataCollectorSet).  
   
-## See Also  
+## Related information  
  [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)   
  [Business Central Performance Counters](performance-counters.md)   
  [View Performance Counter Data for a Data Collector Set](monitor-view-performance-counter-data-for-data-collector-set.md)   

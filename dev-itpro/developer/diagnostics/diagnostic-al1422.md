@@ -21,6 +21,6 @@ The target action '{0}' cannot be resolved in page '{1}'. Ignoring the ActionRef
 This can cover both the RunObject or the ActionTarget.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

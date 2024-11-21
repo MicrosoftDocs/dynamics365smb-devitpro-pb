@@ -264,7 +264,7 @@ GET /admin/v2.21/transfers/incoming/{sourceEntraTenantId}
 ```
 
 
-## See also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Transfer environments](tenant-admin-center-environments-move.md)

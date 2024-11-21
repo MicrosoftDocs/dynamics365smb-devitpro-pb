@@ -30,5 +30,5 @@ You can also log ETW events using the Microsoft TraceEvent Library, which includ
 ## PerfView  
 PerfView is a performance-analysis tool that focuses on Event Tracing for Windows information. PerfView can help you isolate performance issues that are related to [!INCLUDE[server](../developer/includes/server.md)]. To download and install PerfView, see [https://go.microsoft.com/fwlink/?LinkID=313428](https://go.microsoft.com/fwlink/?LinkID=313428).
 
-## See Also
+## Related information
 [Monitoring Business Central Server Events](monitor-server-events.md)

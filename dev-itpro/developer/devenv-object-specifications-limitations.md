@@ -81,6 +81,6 @@ The following characteristics are based on maximum capacity specifications for S
 
 <sup>3</sup> If no length is specified for text variables, the length is unlimited.  
   
-## See Also  
+## Related information  
  [Field Data Types](./methods-auto/library.md)   
  [Maximum Capacity Specifications for SQL Server](/sql/sql-server/maximum-capacity-specifications-for-sql-server)

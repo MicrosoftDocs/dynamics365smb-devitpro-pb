@@ -42,7 +42,7 @@ The app key vault secret process has two operations: *initialization* and *retri
 
 For more information, see [App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
-## See Also  
+## Related information  
 
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
 [Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  

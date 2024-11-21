@@ -38,7 +38,7 @@ The notification is similar to that provided by the automated extension validati
 
 The publisher of an extension must maintain compatibility with the new release of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information about automatic removal of incompatible extensions, see [Maintain AppSource apps and PTEs in Business Central online](app-maintain.md).
 
-## See Also
+## Related information
 
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  
 [Upgrading Extensions](devenv-upgrading-extensions.md)  

@@ -32,7 +32,7 @@ The following table describes different aspects of using the application family 
 |Cloud Migration Tool|Supported|[Migrating On-Premises Data to Business Central Online](../administration/migrate-data.md)|
 
 
-## See Also
+## Related information
 
 [[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md)  
 [Licensing in Dynamics 365 Business Central](licensing.md)  

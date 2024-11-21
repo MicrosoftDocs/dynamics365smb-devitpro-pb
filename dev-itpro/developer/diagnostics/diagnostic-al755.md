@@ -24,6 +24,6 @@ The '{0}' already defines a built-in member called '{1}'. Choose another name fo
 A built-in member with the same name is already defined for the object, which can cause runtime errors.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

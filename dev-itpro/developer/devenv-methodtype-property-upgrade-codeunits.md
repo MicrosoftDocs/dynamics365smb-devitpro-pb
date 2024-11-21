@@ -21,6 +21,6 @@ AL methods on upgrade codeunits. An upgrade codeunit is codeunit that has the [S
 |**TableSyncSetup**|Provides instructions about how to synchronize the table schemas in the business database with the table definitions.|  
 |**CheckPrecondition**|Provides logic that checks conditions that must be met in order for the data upgrade process to continue and start running the **Upgrade** methods.|  
 
-## See Also
+## Related information
 
 [SubType Property \(Codeunit\)](properties/devenv-subtype-codeunit-property.md)

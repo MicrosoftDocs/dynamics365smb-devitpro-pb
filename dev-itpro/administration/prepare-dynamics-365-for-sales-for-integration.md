@@ -79,5 +79,5 @@ For more information, see [System Requirements for Business Central](../deployme
 
 -->
 
-## See Also  
+## Related information  
 [Connecting On-Premises Versions](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#connecting-on-premises-versions)

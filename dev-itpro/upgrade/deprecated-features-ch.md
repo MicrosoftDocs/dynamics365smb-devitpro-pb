@@ -45,7 +45,7 @@ You can archive and delete blanket sales and purchase orders. You can view docum
 
 [!INCLUDE [fields-obsolete-ch](../includes/fields-obsolete-ch.md)]
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

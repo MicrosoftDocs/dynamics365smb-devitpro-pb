@@ -18,6 +18,6 @@ The control '{0}' cannot be declared in the 'PromptOptions' area because it is n
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

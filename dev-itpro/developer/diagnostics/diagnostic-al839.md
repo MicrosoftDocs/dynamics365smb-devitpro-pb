@@ -18,6 +18,6 @@ The symbol '{0}' has same trans unit ID in Text Data XLIFF file as one or more o
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

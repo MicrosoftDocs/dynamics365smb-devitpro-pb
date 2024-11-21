@@ -20,7 +20,7 @@ ms.service: dynamics-365-op
 |Perform administration tasks with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Windows PowerShell cmdlets.|[Business Central PowerShell Cmdlets](/powershell/business-central/overview)|  
 |Optimize performance when accessing data from SQL Server.|[Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)|  
 
-## See Also
+## Related information
 
 [Administration of Business Central Online](tenant-administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

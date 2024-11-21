@@ -21,6 +21,6 @@ The alias '{0}' is already declared.
 There are multiple DotNet types defined with the same alias.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

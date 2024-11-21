@@ -86,7 +86,7 @@ For information on upgrading, see the following topics:
 [Upgrading Extensions v2](devenv-upgrading-extensions.md) and [Converting from Extensions v1 to Extensions v2](devenv-upgrade-v1-to-v2-overview.md). -->
 
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)  
 [Keyboard shortcuts](devenv-keyboard-shortcuts.md)    

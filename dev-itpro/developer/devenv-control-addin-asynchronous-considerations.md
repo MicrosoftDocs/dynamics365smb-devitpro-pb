@@ -19,7 +19,7 @@ When writing control add-ins that work on all display targets, you have to consi
 The methods from the "See Also" section are not auto-generated as they come from the .NET assemblies in the platform. When the old methods folder will be deprecated, remember to not remove these methods. 
 -->
   
-## See also  
+## Related information  
 
 [InvokeExtensibilityMethod Method](methods/devenv-invokeextensibility-method.md)   
 [GetImageResource Method](methods/devenv-getimageresource-method.md)  

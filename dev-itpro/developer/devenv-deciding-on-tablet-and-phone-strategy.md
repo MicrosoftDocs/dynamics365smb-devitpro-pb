@@ -20,6 +20,6 @@ This section briefly describes some of the options that exist for [!INCLUDE[d365
 ## Remarks
 If you are developing using the AL language, use a browser for continuous development and test of the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] solution that you are working on. Switching to running in a browser is an easy and efficient way to test what new and modified pages look like. Running the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser is only recommended for development scenarios. For more information, see [Opening the Dynamics 365 Business Central Tablet or Phone Client from a Browser](devenv-opening-business-central-tablet-or-phone-client-from-browser.md).
 
-## See Also  
+## Related information  
  [Getting Started Developing for the Dynamics 365 Business Central Mobile App](devenv-getting-started-developing-business-central-mobile-app.md)  
  [Introducing the Business Central Mobile App](devenv-introducing-business-central-mobile-app.md)

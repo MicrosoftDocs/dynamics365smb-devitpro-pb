@@ -31,7 +31,7 @@ When you run a Data Collector Set, the data that is collected for performance co
   
 6.  Choose the **OK** button.  
   
-## See also  
+## Related information  
  [Business Central Performance Counters](performance-counters.md)   
  [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)   
  [Create Data Collector for Microsoft Dynamics NAV Performance Counters](create-data-collector-performance-counters.md)   

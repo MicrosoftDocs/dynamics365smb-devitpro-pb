@@ -21,6 +21,6 @@ The name '{0}' does not exist in the current context.
 The referenced name does not exist in the current context.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

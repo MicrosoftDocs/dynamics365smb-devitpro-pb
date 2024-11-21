@@ -1030,7 +1030,7 @@ When you go into the SetDefaultCustomerRewardsExtMgtCodeunit method, codeunit 50
 ### Conclusion
 At this point, the Customer Rewards sample extension can be published and installed on your sandbox. 
 
-## See Also  
+## Related information  
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  

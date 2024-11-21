@@ -21,6 +21,6 @@ The {0} '{1}' already defines a method called '{2}' with the same parameter type
 A method is defined multiple times.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -53,7 +53,7 @@ SalesInvoiceHeader."No." = '103007'
 
 When the code execution reaches the breakpoint, the condition is evaluated. If the condition is true, then the code execution breaks at the breakpoint. If the condition is false, then the code execution continues.
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)  
 [Debugging in AL](devenv-debugging.md)  

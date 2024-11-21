@@ -148,7 +148,7 @@ You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_se
     Sync-NAVApp -ServerInstance YourDynamicsNAVServer -Tenant 'TenantID' -Name 'My Extension' -Mode Clean
     ```
 
-## See Also
+## Related information
 
 [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Developing Extensions](devenv-dev-overview.md)  

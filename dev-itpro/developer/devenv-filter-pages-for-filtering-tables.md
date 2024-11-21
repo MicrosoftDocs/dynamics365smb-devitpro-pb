@@ -29,6 +29,6 @@ begin
 end;
 ```
   
-## See Also
+## Related information
 
 [FilterPageBuilder Data Type](methods-auto/filterpagebuilder/filterpagebuilder-data-type.md)  

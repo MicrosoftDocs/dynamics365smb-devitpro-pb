@@ -21,6 +21,6 @@ The action area '{0}' can only contain actions.
 An action area can only directly contain groups.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

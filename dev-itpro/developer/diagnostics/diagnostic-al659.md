@@ -21,6 +21,6 @@ The length of the enum identifier '{0}' should not exceed {1} characters as it m
 The length of an enum identifier should not exceed 30 characters.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

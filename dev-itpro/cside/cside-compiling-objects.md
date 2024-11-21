@@ -38,7 +38,7 @@ Syntax errors are detected by the C/AL compiler when you try to compile C/AL cod
   
  When you compile application objects, the objects are stored in Unicode encoding. If the application objects contain multilanguage captions, [!INCLUDE[navnow](../developer/includes/navnow_md.md)] uses the code page that is relevant for the languages that you have specified. 
 
-## See Also
+## Related information
 [Locking and Unlocking Objects](cside-lock-unlock-objects.md)
 
 

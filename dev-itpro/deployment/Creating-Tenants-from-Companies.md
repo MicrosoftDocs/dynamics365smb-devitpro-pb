@@ -42,7 +42,7 @@ MoveCompanyToTenant -ServerInstance 'BC' -FromDatabase 'Demo Database NAV (13-0)
 
  The script uses the **sqlcmd** utility to create the database, assign database permissions to the service account, and move the data. This utility is part of SQL Server. The script creates four temporary tables in the original database to handle user-specific data, company-specific data, tables that will not be moved, and user IDs. You must modify the MoveCompanyToTenant.sql script to change the default values.  
 
-## See Also  
+## Related information  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md)   
 

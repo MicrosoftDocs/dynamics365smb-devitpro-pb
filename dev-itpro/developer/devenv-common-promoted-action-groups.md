@@ -34,7 +34,7 @@ ms.reviewer: solsen
 | Synchronize | For actions that set up data coupling to other systems, and for synchronizing data based on the couplings.<br> Used in these page types: Card (6), Document (2), List (15). | No | 
 
 
-## See also
+## Related information
 
 [Actions in AL](devenv-actions-overview.md)  
 [Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  

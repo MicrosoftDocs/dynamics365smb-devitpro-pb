@@ -19,7 +19,7 @@ This topic lists and describes the local functionality for Denmark that has been
 
 [!INCLUDE [fields-obsolete-dk](../includes/fields-obsolete-dk.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

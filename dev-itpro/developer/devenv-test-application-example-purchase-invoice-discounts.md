@@ -132,6 +132,6 @@ codeunit 50111 "ERM Vendor Discount"
 }
 ```
 
-## See Also  
+## Related information  
 
  [Testing the Application](devenv-Testing-Application.md)

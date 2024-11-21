@@ -529,4 +529,4 @@ finsql.exe command=upgradedatabase, servername=<server>, database=<database>[, l
 finsql.exe command=upgradedatabase,servername=TestComputer01\BCDEMO,database="BC Danish Database"  
 ```  
  
-## See Also
+## Related information

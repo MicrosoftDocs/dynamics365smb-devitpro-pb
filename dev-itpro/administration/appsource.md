@@ -22,7 +22,7 @@ AppSource is a market place where partners can provide marketing details, such a
 > [!IMPORTANT]  
 > As soon as your app has been uploaded to the AppSource marketplace, it will be used as a baseline during the technical validation of your next submission(s). As a consequence, you won't be allowed to perform breaking changes without obsoleting the AL objects first and you won't be allowed to perform schema breaking changes; breaking changes on tables or table extensions. This applies also if your extension isn't used by customers yet. You should then not submit your app to the AppSource marketplace if you are still developing it and expect to change it in the near future.
 
-## See Also
+## Related information
 
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Build Your Business on Dynamics 365 Business Central](../developer/readiness/opportunity-app-publisher.md)  

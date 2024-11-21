@@ -224,7 +224,7 @@ To complete the example, follow these steps:
     }
     ```
 
-## See Also
+## Related information
 [Notification Data Type](./methods-auto/library.md)   
 [Developing Extensions](devenv-dev-overview.md)   
 [Get Started with AL](devenv-get-started.md)

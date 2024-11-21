@@ -113,7 +113,7 @@ Only members of the .NET type implementing the control add-in that are annotated
 
 If within the same project you have a native AL control add-in and a .NET add-in with the same name, the .NET add-in will be the one used.  
 
-## See also
+## Related information
 
 [Migrating from .NET framework to .NET standard](devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
 [Get started with AL](devenv-get-started.md)  

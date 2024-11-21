@@ -34,5 +34,5 @@ You can publish a page as a web service and consume it using JavaScript Object N
   
      You can use a similar URI to return the web service as an AtomPub document, in which case the attribute is `?$format=atom`. For more information, see [Using OData to Return-Obtain an AtomPub Document](Return-Obtain-an-AtomPub-Document.md).  
   
-## See Also  
+## Related information  
  [Using OData Web Services to Modify Data](use-odata-to-modify-data.md)

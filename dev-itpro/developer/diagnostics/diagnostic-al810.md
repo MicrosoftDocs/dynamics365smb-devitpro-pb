@@ -18,6 +18,6 @@ The name '{0}' cannot be used for a system action. The allowed names in a '{1}' 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

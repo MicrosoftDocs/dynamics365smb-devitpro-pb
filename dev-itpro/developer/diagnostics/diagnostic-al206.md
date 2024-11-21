@@ -21,6 +21,6 @@ A field with ID {0} is already defined in {1} '{2}' by the extension '{3}'.
 There are multiple fields with the same ID defined in the same object.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

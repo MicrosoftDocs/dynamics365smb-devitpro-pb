@@ -127,7 +127,7 @@ When you set the **Grid** control, the fields of that group can be set to span r
   
 You can hide the caption of a group or a field. To hide the caption of a field, set the value of the **ShowCaption** property to **False**. For more information, see [ShowCaption Property](properties/devenv-showcaption-property.md).
 
-## See Also
+## Related information
 
 [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md)  
 [Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md)  

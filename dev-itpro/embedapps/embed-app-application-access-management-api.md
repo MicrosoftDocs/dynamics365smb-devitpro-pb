@@ -98,7 +98,7 @@ $access = "true"
 Invoke-WebRequest -Uri "$($url)/manageableapplications/$($applicationFamily)/countries/$($country)"  -Headers @{"Authorization" = "Bearer $token"} -Body $access -Method Put -ContentType "application/json"
 ```
 
-## See Also
+## Related information
 
 [Application Access Management](../embedapps/embed-app-application-access-management.md)  
 [Using Application Family](../deployment/embed-app-using-application-family.md)  

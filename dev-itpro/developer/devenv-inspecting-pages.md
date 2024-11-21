@@ -164,7 +164,7 @@ The following table describes the different filter types.
 
 ---
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  

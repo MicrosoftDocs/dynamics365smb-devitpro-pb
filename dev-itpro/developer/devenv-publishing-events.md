@@ -79,7 +79,7 @@ codeunit 50100 MyPublishers
 ```
 The next step is to raise this event in the application. To see an example for how this event is raised, go to [Raising Event Example](devenv-raising-events.md#example).
 
-## See Also  
+## Related information  
 [Raising Events](devenv-raising-events.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)   
 [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)
