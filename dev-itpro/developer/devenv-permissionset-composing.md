@@ -1,13 +1,13 @@
 ---
-title: "Composing Permission Sets from Other Permission Sets"
+title: Composing Permission Sets from Other Permission Sets
 description: "Learn how to create a permission set from one or more existing permission sets in AL code for Business Central."
 author: jswymer
-ms.date: 09/23/2022
+ms.date: 11/21/2024
 ms.topic: article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Composing Permission Sets
+# Composing permission sets
 
 Permissions define a specific level of [access to data and objects](devenv-permissions-on-database-objects.md) in the application, like read, insert, modify, and delete permission on table data. Permission sets combine these permissions in logical groups that can then be assigned to users. Permission sets in AL are created using the [permissionset object](devenv-permissionset-object.md), and existing permission sets are extended using the [permissionset extension object](devenv-permissionset-ext-object.md). In the client, administrators can't modify these AL-based permission sets, but they can copy them and modify the copies (learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions)).
 
