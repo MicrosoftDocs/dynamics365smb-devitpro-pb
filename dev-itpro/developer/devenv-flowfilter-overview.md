@@ -1,8 +1,11 @@
 ---
-title: "FlowFilters overview"
+title: FlowFilters overview
+description: Learn about how FlowFilters in Business Central sum and filter data.
 ms.date: 03/31/2023
 ms.topic: overview
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # FlowFilters overview

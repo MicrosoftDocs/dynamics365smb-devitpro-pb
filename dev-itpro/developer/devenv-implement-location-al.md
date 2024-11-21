@@ -1,12 +1,15 @@
 ---
-title: "Implementing Location in AL"
+title: Implementing Location in AL
+description: Learn how to implement location access in AL for Dynamics 365 Business Central. Enhance your app with GPS capabilities for better customer service.
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: blrobl
-description: Learn how to implement location access in AL for Dynamics 365 Business Central. Enhance your app with GPS capabilities for better customer service.
+ms.author: blrobl
+ms.reviewer: solsen
 ---
 
-# Implementing Location in AL
+# Implementing location in AL
+
 You can access the location information of a device from the [!INCLUDE[webclient](includes/webclient.md)] in the browser and from the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. This functionality could be useful in scenarios such as calculating routes from the current location or planning the next round of customer visits based on their addresses.
 
 You can also add access to location information to a specific page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)].

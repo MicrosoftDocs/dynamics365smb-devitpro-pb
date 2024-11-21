@@ -1,5 +1,6 @@
 ---
 title: Control add-in performance best practices
+description: Learn how to provide the best possible experience and performance for control add-ins in Business Central.
 ms.date: 05/01/2024
 ms.topic: overview
 author: SusanneWindfeldPedersen

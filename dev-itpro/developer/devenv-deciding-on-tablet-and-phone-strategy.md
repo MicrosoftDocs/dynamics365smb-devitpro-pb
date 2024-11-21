@@ -1,11 +1,14 @@
 ---
-title: "Deciding on Your Tablet and Phone Strategy"
+title: Deciding on Your Tablet and Phone Strategy
+description: To offer users a great mobile experience, you must decide on a strategy for how to accomplish this based on an analysis of your users' needs. This topic explains the different options for developing for the tablet and phone, but the documentation you will find in this section is primarily focused on the first of these scenarios.
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 author: blrobl
 ---
-# Deciding on Your Tablet and Phone Strategy
+
+# Deciding on your tablet and phone strategy
+
 To offer users a great mobile experience, you must decide on a strategy for how to accomplish this based on an analysis of your users' needs. This topic explains the different options for developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)], but the documentation you will find in this section is primarily focused on the first of these scenarios.  
   
 ## Mobile app development strategy  

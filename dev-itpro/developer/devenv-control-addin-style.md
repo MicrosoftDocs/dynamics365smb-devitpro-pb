@@ -1,16 +1,19 @@
 ---
-title: "Control Add-in Style Guide"
+title: Control Add-in Style Guide
+description: Learn about the style guide for control add-ins in Dynamics 365 Finance.
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer
+ms.author: jswymer
+ms.reviewer: solsen
 ---
 
- 
+# Control add-in style guide
 
-# Control Add-in Style Guide
 This article offers a variety of stylistic definitions that are used throughout [!INCLUDE[d365fin_md](includes/d365fin_md.md)], which you can apply to your control add-ins to create an experience that complements [!INCLUDE[d365fin_md](includes/d365fin_md.md)].
 
 ## Introduction
+
 Control add-ins for [!INCLUDE[d365fin_md](includes/d365fin_md.md)] extend a business solution by surfacing contextual functionality alongside business data. Control add-ins empower users to get more done without costly context switching, no matter which device they access Dynamics 365 from. Typical uses of control add-ins include unique data visualizations, surfacing controls from a third party service, or displaying related content from another data source.
 
 Apart from the functionality, an important aspect of creating a control add-in is making sure the control add-in looks good and blends seamlessly into [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. To achieve this, you should follow these basic principles:
