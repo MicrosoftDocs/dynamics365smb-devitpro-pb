@@ -20,7 +20,7 @@ The first thing to do is to download the Cumulative Update package that matches 
 
 1. Go to the relevant list of available updates for your on-premises version of Business Central. Then, choose the Cumulative Update you want.
 
-    For a list of supported versions of Business Central on-premises, see the [See Also](#see-also) section.
+    For a list of supported versions of Business Central on-premises, see the [Related information](#related-information) section.
 2. From the cumulative update page, under the **Resolution** section, select the link for downloading the update and follow the instructions.
 3. On the computer where you downloaded cumulative update, extract files from all .zip files.
 

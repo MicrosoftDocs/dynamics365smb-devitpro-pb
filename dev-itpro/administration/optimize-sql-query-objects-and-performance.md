@@ -1,10 +1,14 @@
 ---
-title: "Query Objects and Performance"
+title: Query Objects and Performance
+description: Learn how to design queries and table keys in the most efficient way in Business Central.
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer
+ms.reviewer: solsen
 ---
-# Query Objects and Performance
+
+# Query objects and performance
+
 A *query* is an object in [!INCLUDE[prod_long](../developer/includes/prod_long.md)] that you use to specify a set of data that you want to read from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. You can query the database to retrieve one or more fields from a single table or multiple tables. You can specify how to join the tables in the query. You can specify totaling methods on fields, such as sums and averages. This topic describes how to design queries and table keys in the most efficient way.  
   
 ## FlowFields in Queries  

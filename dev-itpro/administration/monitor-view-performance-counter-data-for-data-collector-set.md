@@ -1,5 +1,5 @@
 ---
-title: "How to: View performance counter data for a Data Collector Set"
+title: How to: View performance counter data for a Data Collector Set
 decription: Explains how to view performance counter data for a Data Collector Set.
 ms.custom:
   - bap-template
@@ -10,6 +10,7 @@ ms.service: dynamics-365-op
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
+
 # How to: View performance counter data for a Data Collector Set
 When you run a Data Collector Set, the data that is collected for performance counters is stored to a log file \(.blg\) in the location that was defined when the Data Collector Set was created. In Windows Performance Monitor, you can view log files to see a visual representation of performance counter data.  
   
