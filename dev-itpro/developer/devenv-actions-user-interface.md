@@ -1,6 +1,6 @@
 ---
 title: Actions in the user interface
-description: Guidelines for organizing actions in the action bar for Dynamics 365 Business Central
+description: Learn about the guidelines for organizing actions when creating, extending, and customizing pages in Business Central.
 author: jacobwj
 ms.author: solsen
 ms.topic: conceptual
