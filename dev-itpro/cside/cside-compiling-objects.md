@@ -1,11 +1,12 @@
 ---
-title: "Compiling Objects"
+title: Compiling objects
+description: Learn how to compile objects in C/SIDE in Business Central-
 ms.date: 04/01/2021
 ms.topic: article
-ms.assetid: 386dbfff-1518-4731-a2b1-424b556ed42a
-caps.latest.revision: 14
 ---
-# Compiling Objects
+
+# Compiling objects
+
 Before you can run an object, you must compile the object. To compile an object, do one of the following:  
 
 -   In Object Designer, choose **Tools**, and then choose **Compile**. Any syntax errors are displayed in a dialog box. Any errors or warnings about obsolete constructs in a three-tier environment are displayed in the **Error List** window.  
