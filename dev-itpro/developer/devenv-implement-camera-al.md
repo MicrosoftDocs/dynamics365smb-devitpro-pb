@@ -4,7 +4,7 @@ description: Learn about how to implement the camera capability on a page in AL.
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: blrobl
-ms.author: blrobl
+ms.author: brobledodiaz
 ms.reviewer: solsen
 ---
 

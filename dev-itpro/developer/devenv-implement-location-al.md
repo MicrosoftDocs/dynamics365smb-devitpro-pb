@@ -4,7 +4,7 @@ description: Learn how to implement location access in AL for Dynamics 365 Busin
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: blrobl
-ms.author: blrobl
+ms.author: brobledodiaz
 ms.reviewer: solsen
 ---
 
