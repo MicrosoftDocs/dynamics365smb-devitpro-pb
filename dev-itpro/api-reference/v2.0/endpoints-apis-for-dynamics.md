@@ -3,7 +3,7 @@ title: Endpoints for the APIs for Microsoft Dynamics 365 Business Central
 description: Describes the steps you must go through to enable access to the APIs in on-prem and cloud product versions.
 author: SusanneWindfeldPedersen
 ms.custom: conceptual
-ms.date: 01/08/2024
+ms.date: 11/13/2024
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
