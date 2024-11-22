@@ -81,14 +81,14 @@ The Contoso Coffee Demo Data app for [!INCLUDE [prod_short](../includes/prod_sho
 
 ## Add Dynamics 365 Sales Professional
 
-Once you have a Microsoft 365 demo account as described in [To get a demo environment based on Microsoft 365 content packs](#to-get-a-demo-environment-based-on-microsoft-365-content-packs), you can use the admin account to also sign up for a trial of Dynamics 365 Sales Professional. With the Dynamics 365 Sales Professional trial, you can demo the integration of the Sales app and [!INCLUDE [prod_short](../includes/prod_short.md)].  
+Once you have a Microsoft 365 demo account as described in [Get a demo environment based on Microsoft 365 content packs](#get-a-demo-environment-based-on-microsoft-365-content-packs), you can use the admin account to also sign up for a trial of Dynamics 365 Sales Professional. With the Dynamics 365 Sales Professional trial, you can demo the integration of the Sales app and [!INCLUDE [prod_short](../includes/prod_short.md)].  
 
 > [!TIP]
 > Integration between Business Central and Sales happens through Dataverse. Learn more at [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration) in the business functionality content.
 
 ### To add Dynamics 365 Sales Professional to your Microsoft 365 demo account
 
-1. In a dedicated browser window, sign in as the admin account for the Microsoft demo account that you created in the [To get a demo environment based on Microsoft 365 content packs](#to-get-a-demo-environment-based-on-microsoft-365-content-packs) section. Learn more in the [Use profiles in Microsoft Edge](#use-profiles-in-microsoft-edge) section.  
+1. In a dedicated browser window, sign in as the admin account for the Microsoft demo account that you created in the [Get a demo environment based on Microsoft 365 content packs](#get-a-demo-environment-based-on-microsoft-365-content-packs) section. Learn more in the [Use profiles in Microsoft Edge](#use-profiles-in-microsoft-edge) section.  
 
 1. Visit [Microsoft Dynamics 365 Sales Professional marketing page](https://dynamics.microsoft.com/sales/professional/), select **Try for free**, and then follow the guidance in the steps to add the Sales trial to your account.  
 
@@ -103,11 +103,11 @@ Once you have a Microsoft 365 demo account as described in [To get a demo enviro
 
 ## Richer demos with the Customer Engagement content pack
 
-In certain scenarios, you want to demo richer integration capabilities than the Sales Professional app offers. In those cases, you follow the same steps to get a Microsoft 365 as is described in the [To get a demo environment based on Microsoft 365 content packs](#to-get-a-demo-environment-based-on-microsoft-365-content-packs) section. But you choose the more advanced Dynamics 365 Customer Engagement content pack so that you can demo integration with Power Apps, Power Automate, and the Dynamics 365 Sales Enterprise, for example.
+In certain scenarios, you want to demo richer integration capabilities than the Sales Professional app offers. In those cases, you follow the same steps to get a Microsoft 365 as is described in the [Get a demo environment based on Microsoft 365 content packs](#get-a-demo-environment-based-on-microsoft-365-content-packs) section. But you choose the more advanced Dynamics 365 Customer Engagement content pack so that you can demo integration with Power Apps, Power Automate, and the Dynamics 365 Sales Enterprise, for example.
 
-### To get richer demo environments with Dataverse and the Customer Engagement content pack
+### Get richer demo environments with Dataverse and the Customer Engagement content pack
 
-1. Follow the steps in the [To get a demo environment based on Microsoft 365 content packs](#to-get-a-demo-environment-based-on-microsoft-365-content-packs) section. But at step 6, choose the more advanced Dynamics 365 Customer Engagement content pack.
+1. Follow the steps in the [Get a demo environment based on Microsoft 365 content packs](#get-a-demo-environment-based-on-microsoft-365-content-packs) section. But at step 6, choose the more advanced Dynamics 365 Customer Engagement content pack.
 
 2. Complete step 7 in the procedure where you sign into [!INCLUDE [prod_short](../includes/prod_short.md)] with the new Microsoft 365 tenant's admin credentials.  
 
