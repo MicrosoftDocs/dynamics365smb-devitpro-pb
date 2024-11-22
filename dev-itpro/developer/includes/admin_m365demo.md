@@ -17,9 +17,9 @@ ms.author: jswymer
 
 1. Choose one of the available content packs and then select the **Create Tenant** button.  
 
-    Content packs offer different bundles of Microsoft software free trials. Each content pack typically results in a dedicated demonstration organization in Azure and multiple demonstration users, including pre-configured Microsoft 365 or Dynamics 365 applications. You can choose any of the content packs that match your prospects' industry or interests, and then add Business Central to the tenant afterwards.
+    Content packs offer different bundles of Microsoft software free trials. Each content pack typically results in a dedicated demonstration organization in Azure and multiple demonstration users, including preconfigured Microsoft 365 or Dynamics 365 applications. You can choose any of the content packs that match your prospects' industry or interests, and then add Business Central to the tenant afterwards.
 
-    If you're uncertain which content pack is a fit for you, we recommend one of the following:
+    If you're uncertain which content pack is a fit for you, we recommend one of the following packages:
 
     - **Dynamics 365 Customer Engagement** currently includes Microsoft 365 Copilot, Power Platform, and the Dynamics 365 apps that Business Central typically integrates with.
     - **Microsoft 365 Enterprise Demo Content** currently includes demonstration data that simulates an organization that is using Microsoft 365
@@ -29,14 +29,12 @@ ms.author: jswymer
     > [!NOTE]
     > When demand for a specific content pack is high, the **Create Tenant** button isn't activated, and you must choose a different content pack.
 
-1. When the tenant is created a page appears with details of tenant. Keep the page open because you need administrator email and password in the next step.
+1. When the tenant is created, a page appears with details of tenant. Keep the page open because you need administrator email and password in the next step.
 1. Sign up for a [!INCLUDE [prod_short](prod_short.md)] trial by completing the following steps:
 
    1. In a dedicated browser window, visit [https://www.microsoft.com/en-us/dynamics-365/products/business-central](https://www.microsoft.com/en-us/dynamics-365/products/business-central)
    1. Select the **Try for free**
-   1. Follow the online instructions to fill in the information required to sign up to Business Central. For the email, use the new administrator account email that you got as part of your demo account in the previous step. Typically the email is something like `admin@CRMbc123456.onmicrosoft.com` or `admin@contoso.onmicrosoft.com`.  
-
-    <!--Alternatively, if you used the **Dynamics 365 [!INCLUDE [prod_short](prod_short.md)]** content pack, go to [https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense](https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense) and sign in with the new administrator account that you got as part of your demo account, typically called something like `admin@CRMbc123456.onmicrosoft.com`, or `admin@contoso.onmicrosoft.com`.-->
+   1. Follow the online instructions to fill in the information required to sign up to Business Central. For the email, use the new administrator account email that you got as part of your demo account in the previous step.
 
     > [!TIP]
     > We recommend that you use profiles in the Microsoft Edge browser rather than InPrivate or Incognito browser mode. Learn more at [Microsoft Edge](/microsoft-edge/).
