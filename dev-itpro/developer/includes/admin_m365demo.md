@@ -22,7 +22,7 @@ ms.author: jswymer
     If you're uncertain which content pack is a fit for you, we recommend one of the following packs:
 
     - **Dynamics 365 Customer Engagement** currently includes Microsoft 365 Copilot, Power Platform, and the Dynamics 365 apps that Business Central typically integrates with.
-    - **Microsoft 365 Enterprise Demo Content** currently includes demonstration data that simulates an organization that is using Microsoft 365
+    - **Microsoft 365 Enterprise Demo Content** currently includes demonstration data that simulates an organization that is using Microsoft 365.
 
     These content packs give you a dedicated demonstration organization in Azure that includes multiple demo users with Microsoft 365 licenses.  
 
