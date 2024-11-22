@@ -2,7 +2,7 @@
 title: Query object
 description: Description of the AL query object.
 ms.custom: bap-template
-ms.date: 11/12/2024
+ms.date: 11/22/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
