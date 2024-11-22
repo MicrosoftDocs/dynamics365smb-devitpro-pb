@@ -34,9 +34,7 @@ ms.author: dmitrych
 
 7. In a dedicated browser window, go to the [https://dynamics.microsoft.com/business-central/](https://dynamics.microsoft.com/business-central/) page, choose the **Get started** button, and then choose the **Sign up now** button.  
 
-    Use the new administrator account that you got as part of your demo account, typically called something like `admin@CRMbc123456.onmicrosoft.com`, or `admin@contoso.onmicrosoft.com`.  
-
-    <!--Alternatively, if you used the **Dynamics 365 [!INCLUDE [prod_short](prod_short.md)]** content pack, go to [https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense](https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense) and sign in with the new administrator account that you got as part of your demo account, typically called something like `admin@CRMbc123456.onmicrosoft.com`, or `admin@contoso.onmicrosoft.com`.-->
+    Use the new administrator account that you got as part of your demo account.
 
     > [!TIP]
     > We recommend that you use profiles in the Microsoft Edge browser rather than InPrivate or Incognito browser mode. For more information, see [Microsoft Edge documentation](/microsoft-edge/).
