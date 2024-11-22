@@ -2,7 +2,7 @@
 title: "SecretText.IsEmpty() Method"
 description: "Returns a value indicating whether the secret text does not contain any content."
 ms.author: solsen
-ms.date: 11/01/2024
+ms.date: 11/13/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -30,7 +30,7 @@ An instance of the [SecretText](secrettext-data-type.md) data type.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the secret text does not contain any content, otherwise **true**.
+**true** if the secret text does not contain any content, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
