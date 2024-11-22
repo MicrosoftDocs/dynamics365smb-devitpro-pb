@@ -24,18 +24,20 @@ Sets whether an object has additional permission required to perform some operat
 -   Report
 -   Query
 -   Permission Set
--   Permission Set Extension
+-   Permission Set Extensionpermi
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
 ## Syntax
 
+The Permissions property allows you to set permissions for one or more objects.
+
 ```AL
-Permissions = TableData 1221 = rimd;
+Permissions = ObjectType ObjectIdentifier = PermissionValues [, ObjectType ObjectIdentifier = PermissionValues] ;
 ```
 
-## Values
+## Possible values for permissions
 
 | Values   |Represents  |Description   |
 |----------|------------|---------------------------------------------|
@@ -44,6 +46,20 @@ Permissions = TableData 1221 = rimd;
 |M or m    |Modify      |Specifies direct (M) or indirect (m) modify permission.|
 |D or d    |Delete      |Specifies direct (D) or indirect (d) delete permission.|
 |X or x    |Execute     |Specifies direct (X) or indirect (x) execute permission.|
+
+
+## Example 
+
+The following AL code sets permissions to read/insert/modify/delete data in the table **MyTable** as well as permission to run the codeunit **MyCodeUnit**, open the page **MyPage**, and run the report **MyReport**.
+
+
+```AL
+Permissions = 
+     tabledata MyTable = RIMD,
+     codeunit MyCodeUnit = X,
+     page MyPage = X,
+     report MyReport = X
+```
 
   
 ## Remarks  
