@@ -53,7 +53,7 @@ In October, the upcoming **Sales Order Agent** was announced in the Dynamics 365
 
 To learn more, you can watch the [Business Application Launch Event video](https://vshow.on24.com/vshow/BALE?regPageId=21469#exhibits/Home1) (registration required) or read the highlights in the Dynamics 365 blog [2024 release wave 2 launches with hundreds of Copilot capabilities](https://aka.ms/BALE102924). Also, check out this short [video](https://www.youtube.com/watch?v=6icbmbLc_Og) on YouTube for a quick overview.
 
-Follow the release plan at [Use Copilot with agent capabilities to automate sales order-taking](/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process?branch=main).
+Follow the release plan at [Use Copilot with agent capabilities to automate sales order-taking](/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
 ### Directions EMEA 2024
 
