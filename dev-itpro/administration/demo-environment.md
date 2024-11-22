@@ -1,13 +1,13 @@
 ---
 title: Prepare demonstrations of Business Central
-description: Get an overview of your options for setting up demos of Dynamics 365 Business Central online that will help you turn your prospects into customers.
+description: Get an overview of your options for setting up demos of Dynamics 365 Business Central online that helps you turn your prospects into customers.
 author: jswymer
 ms.custom: bap-template
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.search.form: 2500, 2502, 20350
 ms.author: jswymer
-ms.date: 11/12/2024
+ms.date: 11/22/2024
 ---
 # Prepare demonstration environments of Business Central
 
@@ -26,9 +26,9 @@ Such Microsoft demo accounts give you environments that you can use for demos an
 [!INCLUDE [admin_m365demo](../developer/includes/admin_m365demo.md)]
 
 > [!IMPORTANT]
-> Environments that are based on Microsoft 365 demo accounts are intended for demonstration and training purposes. If a prospect uses such an environment to help run their business, then they risk losing their company data when the demo environment or the Microsoft 365 demo account expires. If a prospect wants to use [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to help run their business, they should sign up for a trial using their own email account. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
+> Environments that are based on Microsoft 365 demo accounts are intended for demonstration and training purposes. If a prospect uses such an environment to help run their business, then they risk losing their company data when the demo environment or the Microsoft 365 demo account expires. If a prospect wants to use [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to help run their business, they should sign up for a trial using their own email account. Learn more at [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
 
-For example, if you sign up for a [trial](https://trials.dynamics.com/Dynamics365/Signup/BusinessCentral) with a Microsoft 365 demo account, you can keep that environment for up to a year. However, if you switch to the actual trial experience in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], that experience will expire after 30 days. At that point, you can [extend the trial](/dynamics365/business-central/admin-extend-trial), or you can return to the CRONUS demonstration experience, which will still be available until your Microsoft 365 demo account expires.  
+For example, if you sign up for a trial with a Microsoft 365 demo account at [https://www.microsoft.com/en-us/dynamics-365/products/business-central](https://www.microsoft.com/en-us/dynamics-365/products/business-central), you can keep that environment for up to a year. However, if you switch to the actual trial experience in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], that experience will expire after 30 days. At that point, you can extend the trial. Learn more at [extend the trial](/dynamics365/business-central/admin-extend-trial). You can also return to the CRONUS demonstration experience, which is still available until your Microsoft 365 demo account expires.  
 
 ### Customize the demo environment
 
@@ -38,7 +38,7 @@ Since 2022 release wave 1, you can add the **Contoso Coffee Demo Data** app to y
 
 ### Use profiles in Microsoft Edge
 
-If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser, you can easily switch between different browser profiles. That way, you do not have to use private mode for browsing, and you can let Microsoft Edge save passwords and sites to any of your browser profiles, including a Microsoft 365 demo account. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] also performs well in the Microsoft Edge for even better demos. You can also switch the page layout to *Focused* to minimize demo distraction. For more information, see [Microsoft Edge documentation](/deployedge/).  
+If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser, you can easily switch between different browser profiles. That way, you don't have to use private mode for browsing, and you can let Microsoft Edge save passwords and sites to any of your browser profiles, including a Microsoft 365 demo account. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] also performs well in the Microsoft Edge for even better demos. You can also switch the page layout to *Focused* to minimize demo distraction. Learn more at [Microsoft Edge documentation](/deployedge/).  
 
 > [!TIP]
 > We recommend that you connect to a low-latency network for a faster response time during demos, and that you always plug in your laptop if you are about to demo anything. Performance impact may vary depending on your device and choice of browser, but being plugged in generally helps overall snappiness.  
@@ -55,9 +55,9 @@ This type of environment can be useful if you want to demonstrate the general us
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
-If a prospect has signed up for a free trial, and they use [!INCLUDE [prod_short](../includes/prod_short.md)] to help run their business, then they must decide whether to subscribe within the first 60 days. If they extend their trial once, and they are still not sure, they must contact a partner.
+If a prospect signed up for a free trial, and they use [!INCLUDE [prod_short](../includes/prod_short.md)] to help run their business, then they must decide whether to subscribe within the first 60 days. If they extend their trial once, and they're still not sure, they must contact a partner.
 
-However, in many cases, you will probably prefer to show prospects more tailored experiences with your own trial as described in the [Microsoft 365 demo plus Business Central](#microsoft-365-demo-plus-business-central) section.
+However, in many cases, you'll probably prefer to show prospects more tailored experiences with your own trial as described in the [Microsoft 365 demo plus Business Central](#microsoft-365-demo-plus-business-central) section.
 
 <!-- ## Richer experiences
 
@@ -77,29 +77,29 @@ Alternatively, you can create a free trial with a Microsoft 365 demo account fro
 
 ## Use Contoso Coffee demo data for advanced manufacturing
 
-The Contoso Coffee Demo Data app for [!INCLUDE [prod_short](../includes/prod_short.md)] includes demo data that you can add to a trial company or a sandbox environment to showcase or learn advanced manufacturing capabilities. For more information, see [Introduction to Contoso Coffee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) and [Scenarios for Contoso Coffee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) in the business functionality content.  
+The Contoso Coffee Demo Data app for [!INCLUDE [prod_short](../includes/prod_short.md)] includes demo data that you can add to a trial company or a sandbox environment to showcase or learn advanced manufacturing capabilities. Learn more at [Introduction to Contoso Coffee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) and [Scenarios for Contoso Coffee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) in the business functionality content.  
 
 ## Add Dynamics 365 Sales Professional
 
-Once you have a Microsoft 365 demo account as described in the [To get a demo environment based on Microsoft 365 content packs](#to-get-a-demo-environment-based-on-microsoft-365-content-packs) section, you can use the admin account to also sign up for a trial of Dynamics 365 Sales Professional so that you can demo the integration of the Sales app and [!INCLUDE [prod_short](../includes/prod_short.md)].  
+Once you have a Microsoft 365 demo account as described in [To get a demo environment based on Microsoft 365 content packs](#to-get-a-demo-environment-based-on-microsoft-365-content-packs), you can use the admin account to also sign up for a trial of Dynamics 365 Sales Professional. With the Dynamics 365 Sales Professional trial, you can demo the integration of the Sales app and [!INCLUDE [prod_short](../includes/prod_short.md)].  
 
 > [!TIP]
-> Integration between Business Central and Sales happens through Dataverse. For more information, see [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration) in the business functionality content.
+> Integration between Business Central and Sales happens through Dataverse. Learn more at [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration) in the business functionality content.
 
 ### To add Dynamics 365 Sales Professional to your Microsoft 365 demo account
 
-1. In a dedicated browser window, sign in as the admin account for the Microsoft demo account that you created in the [To get a demo environment based on Microsoft 365 content packs](#to-get-a-demo-environment-based-on-microsoft-365-content-packs) section. For more information, see the [Use profiles in Microsoft Edge](#use-profiles-in-microsoft-edge) section.  
+1. In a dedicated browser window, sign in as the admin account for the Microsoft demo account that you created in the [To get a demo environment based on Microsoft 365 content packs](#to-get-a-demo-environment-based-on-microsoft-365-content-packs) section. Learn more in the [Use profiles in Microsoft Edge](#use-profiles-in-microsoft-edge) section.  
 
-2. Go to the [Microsoft Dynamics 365 Sales Professional marketing page](https://dynamics.microsoft.com/sales/professional/), and choose the **Try free** action, and then follow the guidance in the steps to add the Sales trial to your account.  
+1. Visit [Microsoft Dynamics 365 Sales Professional marketing page](https://dynamics.microsoft.com/sales/professional/), select **Try for free**, and then follow the guidance in the steps to add the Sales trial to your account.  
 
     Once the trial is available, proceed to the next step.  
-3. In another browser tab, sign into [!INCLUDE [prod_short](../includes/prod_short.md)] at [https://businesscentral.dynamics.com/?redirectedFromSignup=1](https://businesscentral.dynamics.com/?redirectedFromSignup=1).  
-4. Choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Dataverse Connection Setup**, and then choose the related link.  
-5. Follow the steps in the wizard to connect to your Sales trial.  
+1. In another browser tab, sign into [!INCLUDE [prod_short](../includes/prod_short.md)] at [https://businesscentral.dynamics.com/?redirectedFromSignup=1](https://businesscentral.dynamics.com/?redirectedFromSignup=1).  
+1. Select the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Dataverse Connection Setup**, and then select the related link.  
+1. Follow the steps in the wizard to connect to your Sales trial.  
 
     To finish setting up the connection, you must run the Sales-specific assisted setup.  
-6. Choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Dynamics 365 Connection Setup**, and then choose the related link.  
-7. Follow the steps in the wizard to connect to your Sales trial.  
+1. Select the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Dynamics 365 Connection Setup**, and then select the related link.  
+1. Follow the steps in the wizard to connect to your Sales trial.  
 
 ## Richer demos with the Customer Engagement content pack
 
@@ -113,33 +113,33 @@ In certain scenarios, you want to demo richer integration capabilities than the 
 
     Next, you move to the Power Platform to prepare the demo environment.  
 3. Sign into the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/environments) with the same admin credentials.  
-4. In the list of environments, choose the trial environment, and then choose the **Convert to production** action.  
+4. In the list of environments, choose the trial environment, and then select the **Convert to production** action.  
 
     > [!NOTE]
     > The trial environment will have the Type field set to *Trial (29 days)*. Do not convert the default environment.
 
     After a few minutes, the trial environment is converted to a production environment, and the Type field changes to *Production*.  
-5. Choose the converted environment again, and then choose the **Convert to sandbox** action.  
+5. Choose the converted environment again, and then select the **Convert to sandbox** action.  
 
 We recommend that you convert the environment to a sandbox environment for demo purposes. In the sandbox environment, you can:
 
 * Reset the environment without any Dynamics 365 apps, which effectively gives you an empty Dataverse database to connect to using the **Set up Dataverse connection** assisted setup if you want to integrate [!INCLUDE [prod_short](../includes/prod_short.md)] just to Dataverse.
 
-  For more information, see [Reset environment](/power-platform/admin/reset-environment) in the Power Platform docs, and [Integrating with Microsoft Dataverse](/dynamics365/business-central/admin-common-data-service) in the business functionality content for [!INCLUDE [prod_short](../includes/prod_short.md)].
-* Reset the environment with specific Dynamics 365 apps with or without sample data to demo to various audiences. For more information, see [Reset environment](/power-platform/admin/reset-environment).  
+  Learn more at [Reset environment](/power-platform/admin/reset-environment) in the Power Platform docs, and [Integrating with Microsoft Dataverse](/dynamics365/business-central/admin-common-data-service) in the business functionality content for [!INCLUDE [prod_short](../includes/prod_short.md)].
+* Reset the environment with specific Dynamics 365 apps with or without sample data to demo to various audiences. Learn more at [Reset environment](/power-platform/admin/reset-environment).  
 
-  For example, when you reset the sandbox environment, you can choose to deploy Sales enterprise and demo integration between [!INCLUDE [prod_short](../includes/prod_short.md)] and the full capabilities of Dynamics 365 Sales. For more information, see [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration#integrating-through-dataverse) in the business functionality content.  
+  For example, when you reset the sandbox environment, you can choose to deploy Sales enterprise and demo integration between [!INCLUDE [prod_short](../includes/prod_short.md)] and the full capabilities of Dynamics 365 Sales. Learn more at [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration#integrating-through-dataverse) in the business functionality content.  
 
 ## Demo in a sandbox environment
 
 You can set up tailored demo environments in a sandbox environment if you already have a [!INCLUDE [prod_short](../includes/prod_short.md)] tenant. For example, to show two different implementations of a capability, or to illustrate an integration point.  
 
 > [!NOTE]
-> Sandboxes are limited in functionality, including performance. For more information, see [Sandbox environments](environment-types.md#sandbox-environments).
+> Sandboxes are limited in functionality, including performance. Learn more in [Sandbox environments](environment-types.md#sandbox-environments).
 
-Starting in February 2022, partners can request dedicated licenses to set up additional sandbox environments. For more information, see [Partner sandboxes](environment-types.md#partnersandbox).  
+Starting in February 2022, partners can request dedicated licenses to set up more sandbox environments. Learn more in [Partner sandboxes](environment-types.md#partnersandbox).  
 
-## See also
+## Related information
 
 [Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](test-environment.md)  
 [Trials and Subscriptions](trials-subscriptions.md)  

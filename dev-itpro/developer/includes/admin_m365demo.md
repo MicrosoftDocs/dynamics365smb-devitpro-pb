@@ -19,7 +19,7 @@ ms.author: jswymer
 
     Content packs offer different bundles of Microsoft software free trials. Each content pack typically results in a dedicated demonstration organization in Azure and multiple demonstration users, including preconfigured Microsoft 365 or Dynamics 365 applications. You can choose any of the content packs that match your prospects' industry or interests, and then add Business Central to the tenant afterwards.
 
-    If you're uncertain which content pack is a fit for you, we recommend one of the following packages:
+    If you're uncertain which content pack is a fit for you, we recommend one of the following packs:
 
     - **Dynamics 365 Customer Engagement** currently includes Microsoft 365 Copilot, Power Platform, and the Dynamics 365 apps that Business Central typically integrates with.
     - **Microsoft 365 Enterprise Demo Content** currently includes demonstration data that simulates an organization that is using Microsoft 365
