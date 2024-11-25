@@ -70,7 +70,7 @@ Here is a JSON representation of the subscriptions resource.
 }
 ```
 
-# Related information
+## Related information
 
 [GET subscriptions](../api/dynamics_subscriptions_Get.md)  
 [DELETE subscriptions](../api/dynamics_subscriptions_Delete.md)  
