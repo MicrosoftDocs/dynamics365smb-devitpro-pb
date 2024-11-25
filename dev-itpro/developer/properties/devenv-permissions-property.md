@@ -2,7 +2,7 @@
 title: "Permissions property"
 description: "Sets whether an object has additional permission required to perform some operations on one or more tables."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 11/25/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,7 +24,7 @@ Sets whether an object has additional permission required to perform some operat
 -   Report
 -   Query
 -   Permission Set
--   Permission Set Extensionpermi
+-   Permission Set Extension
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -37,7 +37,7 @@ The Permissions property allows you to set permissions for one or more objects.
 Permissions = ObjectType ObjectIdentifier = PermissionValues [, ObjectType ObjectIdentifier = PermissionValues] ;
 ```
 
-## Possible values for permissions
+## Property values
 
 | Values   |Represents  |Description   |
 |----------|------------|---------------------------------------------|
@@ -136,5 +136,5 @@ codeunit 50113 CreateCustomer
 ## Related information
 
 [Properties](devenv-properties.md)  
-[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)  
-[Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions)
+[Create users according to licenses](/dynamics365/business-central/ui-how-users-permissions)  
+[Assign permissions to users and groups](/dynamics365/business-central/ui-define-granular-permissions)
