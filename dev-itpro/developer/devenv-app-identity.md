@@ -60,7 +60,7 @@ The `version` must be incremented anytime a new version of your app is uploaded 
 > [!NOTE]  
 > In a Visual Studio Code workspace an app's `name`, `publisher`, and `version` are part of identifying a project and a project dependency. Therefore, if any of these properties change, it is recommended that you reload the workspace.
  
-## See also
+## Related information
 
 [JSON files](devenv-json-files.md)  
 [Publish NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp)  

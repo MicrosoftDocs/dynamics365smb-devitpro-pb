@@ -138,7 +138,7 @@ The publisher of an AppSource app may run a preview for a future version of an a
 
 [Learn more about Preview versions of AppSource Apps](../developer/devenv-checklist-submission-faq.md#questions-about-appsource-app-previews).
 
-## See also
+## Related information
 
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

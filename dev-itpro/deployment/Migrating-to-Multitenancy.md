@@ -39,7 +39,7 @@ If you decide to move to a multitenant architecture, you must complete the follo
   
  If you want to move back to storing application tables and business data in a single database, you can use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Windows PowerShell cmdlets to merge the databases. For more information, see [Merging an Application Database with a Tenant Database](Merging-an-Application-Database-with-a-Tenant-Database.md).  
   
-## See also
+## Related information
   
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
  [Creating Tenants from Companies](Creating-Tenants-from-Companies.md)   

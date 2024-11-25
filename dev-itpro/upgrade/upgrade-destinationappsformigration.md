@@ -82,7 +82,7 @@ It depends. For the setting to have any effect, you also include the system and 
 
 As many as you like. There's no limit or performance impact.
 
-## See also
+## Related information
 
 [JSON Files](../developer/devenv-json-files.md)  
 [Migrating Tables and Fields Between Extensions](../developer/devenv-migrate-table-fields.md) 

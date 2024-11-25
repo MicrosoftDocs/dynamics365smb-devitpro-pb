@@ -82,7 +82,7 @@ Changes take effect on users the next time they sign in to Business Central. Lea
 > [!NOTE]
 > If you're using Business Central on-premises, the `EnableTriStateLocking` setting in the server configuration must also be set to `true` to use tri-state locking. [Learn more about configuring the server](../administration/configure-server-instance.md#Database).
 
-## See also
+## Related information
 
 [Release plan: Performance gain by reducing locks in the database](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/performance-gain-reducing-locks-database)  
 [Monitoring SQL database locks](../administration/monitor-database-locks.md)  

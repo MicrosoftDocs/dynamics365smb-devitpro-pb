@@ -37,7 +37,7 @@ By default the **Debug** logs are disabled and might also be hidden in the Event
   
  [!INCLUDE[server](../developer/includes/server.md)] trace events will now be recorded in the **Debug** log. For a list and description of trace events, see [Business Central Server Trace Events](server-trace-events.md).  
   
-## See also  
+## Related information  
  [Monitoring Business Central Server Events](monitor-server-events.md)    
  [Show or Hide Analytic and Debug](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766275(v=ws.11))   
  [Enable Analytic and Debug Logs](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749492(v=ws.11))

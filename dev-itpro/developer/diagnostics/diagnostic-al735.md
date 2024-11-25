@@ -18,6 +18,6 @@ The custom action '{0}' cannot be defined in {1} '{2}' because '{2}' uses promot
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

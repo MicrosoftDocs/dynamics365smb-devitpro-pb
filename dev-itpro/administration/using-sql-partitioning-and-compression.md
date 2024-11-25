@@ -138,7 +138,7 @@ ALTER TABLE ADD CONSTRAINT constraint_name DEFAULT default_value FOR field_name
 
 The name of the default constraint isn't important, as long as it isn't used by another column in the database.
 
-## See Also
+## Related information
 
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)  
 [Table Keys](../developer/devenv-table-keys.md)  

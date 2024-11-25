@@ -99,7 +99,7 @@ When a partner deploys a solution through the LCS portal, they can pick from the
 
 Any existing deployments, running on platform versions that are older than 3 updates, will enter a grace period of 30 days. And after that, if the deployment is not upgraded, it will be moved out of the standard SLA.  
 
-## See Also
+## Related information
 
 [Microsoft Responsibilities](microsoft-responsibilities.md)  
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  

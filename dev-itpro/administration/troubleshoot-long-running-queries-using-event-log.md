@@ -68,7 +68,7 @@ ThreadId: 10
 CounterInformation:
 ```
 
-## See Also
+## Related information
 
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)   
 [Monitoring Long Running SQL Queries using the Event Log](monitor-long-running-sql-queries-event-log.md)  

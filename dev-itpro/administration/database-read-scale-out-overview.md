@@ -70,7 +70,7 @@ When data is committed to the primary database, the transaction log entries are 
 
 Sandbox environments can't be enabled with read scale-out. Objects that use the **DataAccessIntent** property will compile and run. But they'll just access the primary database.
 
-## See also
+## Related information
 
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)  
 [Performance Overview](../performance/performance-overview.md)

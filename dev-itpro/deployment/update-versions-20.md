@@ -51,7 +51,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 |[5015475](https://support.microsoft.com/help/5015475)|Update 20.2 |June 2022 |Application Build 20.2.41423</br>Platform Build 20.0.41354  |
 |[5014491](https://support.microsoft.com/help/5014491) |Update 20.1 |May 2022 |Application Build 20.1.39901</br>Platform Build 20.0.39849 |
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v20.md)  

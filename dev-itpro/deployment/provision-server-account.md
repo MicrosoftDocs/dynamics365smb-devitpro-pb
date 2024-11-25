@@ -313,7 +313,7 @@ ALTER ROLE bc_server_runtime ADD MEMBER [domain\accountname]
 GO
 ```  
 
-## See Also
+## Related information
 
 [Creating Databases](devenv-create-databases.md)  
 [Configuring Business Central Server](../administration/configure-server-instance.md)

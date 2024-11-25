@@ -133,7 +133,7 @@ Returns the notification settings.
 `tenantNotFound` - the calling tenant information couldn't be found
 
 
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

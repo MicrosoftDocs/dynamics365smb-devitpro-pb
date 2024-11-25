@@ -1326,7 +1326,7 @@ You can audit the activities in the table below by filtering to the `Administere
     </tbody>
 </table>
 
-## See also
+## Related information
 
 [Auditing in Business Central](auditing-overview.md)  
 [Auditing changes](/dynamics365/business-central/across-log-changes)  

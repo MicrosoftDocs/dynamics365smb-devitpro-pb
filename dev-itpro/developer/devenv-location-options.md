@@ -23,6 +23,6 @@ The maximum length of time \(milliseconds\) that is allowed to pass to a locatio
 `int MaximumAge`
 The maximum length of time \(milliseconds\) of a cached location. 
 
-## See also  
+## Related information  
 [Implementing Location in AL](devenv-implement-location-al.md)  
   

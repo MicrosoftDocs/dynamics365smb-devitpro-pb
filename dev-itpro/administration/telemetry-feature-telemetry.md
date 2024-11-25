@@ -333,7 +333,7 @@ traces
 ```
 
 
-## See also
+## Related information
 
 [Error handling](../developer/devenv-al-error-handling.md)   
 [Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  

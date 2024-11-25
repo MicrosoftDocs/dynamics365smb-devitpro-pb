@@ -123,7 +123,7 @@ Here are some examples of how you use this principle in practice:
 
 - If you don't handle the error, consider at least to log this to telemetry using `Telemetry.LogError` or a raw `Session.LogMessage` call. That way, you can always query for affect over time and across customer installations and maybe revisit the choice of error handling in case the error happens more frequently than what you initially expected.
 
-## See also
+## Related information
 
 [Actionable errors](devenv-actionable-errors.md)   
 [Collecting errors](devenv-error-collection.md)  

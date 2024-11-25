@@ -24,7 +24,7 @@ You manage the look and feel of the **Outline** view by defining settings that a
 + `outline.problems.badges` - Badges displayed for errors and warnings
 + `outline.problems.colors` - Colors used for errors and warnings
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [AL formatter](devenv-al-formatter.md)  

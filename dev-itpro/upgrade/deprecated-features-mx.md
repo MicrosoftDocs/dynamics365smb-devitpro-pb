@@ -38,7 +38,7 @@ Shows a list of aged remaining balances for each customer for a given period of 
 
 [!INCLUDE [fields-obsolete-mx](../includes/fields-obsolete-mx.md)]
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

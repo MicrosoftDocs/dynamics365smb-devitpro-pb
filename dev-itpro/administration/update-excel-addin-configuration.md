@@ -43,7 +43,7 @@ You'll have to change to the existing Microsoft Entra app registration that's se
 > [!IMPORTANT]
 > Your experience may vary if your Microsoft Entra app registration also includes redirect URIs for other services. Don't not change other redirect URIs for other services or for the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Web client as part of this change. To check if other services are affected by similar security hardening exercises and require re-configuration, contact the service provider.
 
-## See also
+## Related information
 
 [Setting up the Business Central Add-in for Excel in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises](configuring-excel-addin.md)  
 [Registering an application Microsoft Entra ID](/azure/active-directory/develop/quickstart-register-app)    

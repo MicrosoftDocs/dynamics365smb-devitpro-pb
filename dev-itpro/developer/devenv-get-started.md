@@ -93,7 +93,7 @@ To prohibit a user from publishing, just remove the user from the **EXTEN. MGT. 
 
 Now that you have the tools and the `HelloWorld` example up and running, you might want to create a small sample app in AL. This walkthrough guides you to create an app adding objects, code, and publishing the app to your tenant. For more information, see [Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md).
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [FAQ for developing in AL](devenv-dev-faq.md)  

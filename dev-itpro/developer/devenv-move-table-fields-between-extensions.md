@@ -290,4 +290,4 @@ Moving a table or a field is a breaking change in most of the cases and should b
 
 If a table is moved to one of its dependencies and it has the `PropagateDependency` setting in the manifest set to `true` then this isn't a breaking change. In this case the table or the fields are available to all the extensions that depended on the extension. Such a move can be done in one step and is seamless to all other extensions.
 
-## See also
+## Related information

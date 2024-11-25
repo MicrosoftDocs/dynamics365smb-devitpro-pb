@@ -126,7 +126,7 @@ Any other HTML markup tags will be ignored during report processing (for example
 
 * [Tonya Bricco-Meske](https://www.linkedin.com/in/tonyabriccomeske/) | Senior Developer
 
-## See also
+## Related information
 
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  

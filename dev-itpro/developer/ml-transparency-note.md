@@ -71,7 +71,7 @@ We encourage partners to leverage the APIs in their innovative solutions or appl
 
 - Financial impact
 
-   When depend on models deployed by Microsoft be aware about avalable capacity and usage.
+   When depend on models deployed by Microsoft be aware about available capacity and usage.
 
    If your API features are attached to models in your subscription, you are responsible for the operating costs of Azure MAchine Learning resources throughout development, testing and when your customers use the feature in production or sandbox environments.
 

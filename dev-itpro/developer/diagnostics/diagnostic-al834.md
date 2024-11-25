@@ -21,6 +21,6 @@ ms.reviewer: solsen
 When a symbol is prepared for moving or being moved the destination Application Id must be specified in the 'MovedTo' property.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -80,6 +80,6 @@ Resolving tokens is intended to be fast, simple, and reliable. When implementing
  - Avoid displaying pages, dialogs or any other form of interactive UI.
 
 
-## See Also
+## Related information
 
 [Sorting, Searching and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters)

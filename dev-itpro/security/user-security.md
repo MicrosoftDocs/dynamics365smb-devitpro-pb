@@ -49,7 +49,7 @@ Passwords in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] do not 
   
  You can specify which printer that each individual user can use. In the client, search for the **Printer Selections** page.  
   
-## See Also  
+## Related information  
 
 [Security and Protection](security-and-protection.md)  
 [Data Security](data-security.md)  

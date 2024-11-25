@@ -21,6 +21,6 @@ The name of the codeunit global variable '{0}' is identical to a field in table 
 The name of the codeunit global variable should be different from the name of any table field.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

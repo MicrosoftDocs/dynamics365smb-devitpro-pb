@@ -70,7 +70,7 @@ The following table lists the types of controls that aren't supported in a Grid 
 For more information on how to use the **Grid** control, see [Arranging Fields in Rows and Columns Using the Grid Control](devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md).
 For more information on how to use the **Fixed** control, see [Arranging Fields in Rows and Columns Using the Fixed Control](devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md).
 
-## See also   
+## Related information   
 [Arranging Fields on a FastTab](devenv-arranging-fields-on-fasttab.md)  
 [Pages Overview](devenv-pages-overview.md)  
 [GridLayout Property](properties/devenv-gridlayout-property.md)  

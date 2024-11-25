@@ -146,7 +146,7 @@ In Business Central online, customers are provided with a default storage quota 
 
 [Learn more about storage](administration/tenant-admin-center-capacity.md).
 
-## See also
+## Related information
 
 - [Service overview](service-overview.md)
 - [Service operations](service-operations.md)

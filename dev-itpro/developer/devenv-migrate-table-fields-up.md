@@ -188,7 +188,7 @@ PS C:\Windows\system32> install-NAVApp bc160 -Name extY -Version 1.0.0.0
 PS C:\Windows\system32> Start-NAVAppDataUpgrade bc160 -Name extX -Version 1.0.0.2
 -->
 
-## See Also
+## Related information
 
 [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md)  
 [Moving Tables and Fields to Extension Down the Dependency Graph](devenv-migrate-table-fields-down.md)  

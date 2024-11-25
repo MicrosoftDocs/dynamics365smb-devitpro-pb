@@ -61,5 +61,5 @@ namespace ConsoleApplication
 }  
 ```  
   
-## See also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

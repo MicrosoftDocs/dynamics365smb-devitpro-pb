@@ -72,7 +72,7 @@ There are many options to measure performance. The simplest one is to run two ve
 Whatever your approach is, run both queries multiple times. For example, run the queries 30 times each to have a sufficiently large sample set. Then figure out the performance characteristics. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses a  multi-tenant architecture, so the duration of your queries might be affected by other operations that occur at the same time. 
 
 
-## See Also
+## Related information
 
 [OData Web Services](OData-Web-Services.md)  
 [Web service performance](web-service-performance.md)  

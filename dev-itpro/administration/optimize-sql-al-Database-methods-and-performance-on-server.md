@@ -174,7 +174,7 @@ Using **ModifyAll** and **DeleteAll** can improve performance by limiting the am
 - The table contains `Media` or `MediaSet` data type fields.
 - There are fields that are added through companion tables.
   
-## See Also  
+## Related information  
 
 [Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
 [Bulk Inserts](optimize-sql-bulk-Inserts.md)   

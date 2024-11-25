@@ -21,6 +21,6 @@ The field '{0}' which is part of the primary key of table '{1}' cannot be obsole
 > This warning will become an error with Business Central 2022 release wave 1.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

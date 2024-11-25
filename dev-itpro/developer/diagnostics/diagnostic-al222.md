@@ -21,6 +21,6 @@ The ID '{0}' is not valid. ID's must be greater than zero.
 An object ID must be greater than 0.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

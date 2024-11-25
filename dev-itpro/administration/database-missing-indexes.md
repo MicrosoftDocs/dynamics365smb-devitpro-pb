@@ -43,7 +43,7 @@ To get information on missing indexes, go to **Database Missing Indexes** in Bus
 > [!Important]
 > The information provided on **Database Missing Indexes** page are the suggestions and must not be taken as mandatory actions. You need to analyze where and how many indexes are best suited for optimal performance of your application. Indexes also take storage space, can affect updates for the tables where insertions and deletions are more common, and therefore can be an expensive operation if you overdo it.
 
-## See Also
+## Related information
 
 [Performance Article For Developers](../performance/performance-developer.md)  
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  

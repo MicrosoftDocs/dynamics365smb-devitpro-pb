@@ -49,7 +49,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
-## See also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v22.md)  

@@ -71,7 +71,7 @@ A key pillar of helping users help themselves is to give them access to help for
 For more information, see [Adding help links to your pages](./devenv-adding-help-links-from-pages-tables-xmlports.md).
 
 
-## See also
+## Related information
 
 [Adding pages to Tell Me](devenv-al-menusuite-functionality.md)  
 [Adding links to the navigation menu on the role center](devenv-adding-menus-to-navigation-pane.md)  

@@ -115,7 +115,7 @@ Finally, make sure that you don't repeat these performance mistakes that we have
 - Don't run the **Copy company** operation during business hours.
 - Don't apply large configuration packages during business hours. See also [Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package).
 
-## See Also
+## Related information
 
 [Performance Overview](performance-overview.md)  
 [Performance Topics For Developers](performance-developer.md)  

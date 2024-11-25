@@ -103,7 +103,7 @@ page 50102 "Customer Card"
 }
 ```
 
-## See Also
+## Related information
 
 [Page Parts Overview](devenv-designing-parts.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  

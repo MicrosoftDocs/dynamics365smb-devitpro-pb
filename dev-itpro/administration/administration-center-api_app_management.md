@@ -462,7 +462,7 @@ You'll need the following information about Business Central and your Teams serv
     2. Select the resource for the Teams API connection to open it.
     3. Select **Edit API connection** > **Authorize**, then sign in with your credentials.
 
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

@@ -33,7 +33,7 @@ The articles in this section describe the key concepts and techniques for using 
 |Enable built-in API (for on-premises) | [Enabling the API for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md)|  
 
 
-## See also
+## Related information
 
 [Web services overview](web-services.md)   
 [Integration overview](../developer/integration-overview.md)  

@@ -42,7 +42,7 @@ AL has a number of data types available for accessing services. The following ta
 |[XmlText](methods-auto/xmltext/xmltext-data-type.md)|Represents the text content of an element or attribute.|
 
 
-## See Also
+## Related information
 
 [Developing extensions](devenv-dev-overview.md)  
 [Get started with AL](devenv-get-started.md)  

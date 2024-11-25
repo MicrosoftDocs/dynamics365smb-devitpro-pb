@@ -21,6 +21,6 @@ Parameter '{0}' must be 'var' if and only if the publisher parameter is 'var'.
 The parameter of an event subscriber can only if the publisher parameter is 'var.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

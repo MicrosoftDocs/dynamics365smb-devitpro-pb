@@ -79,7 +79,7 @@ page 50120 MyCustomerApi
 }
 ```
 
-## See also
+## Related information
 
 [API developer overview](devenv-api.md)
 [AL development environment](devenv-reference-overview.md)  

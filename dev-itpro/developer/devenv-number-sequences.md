@@ -74,7 +74,7 @@ number := NumberSequence.Current('MySequence',true);​
 number := NumberSequence.Next('MySequence',true); ​
 ```
 
-## See also
+## Related information
 
 [Number sequence data type](methods-auto/numbersequence/numbersequence-data-type.md)  
 [SQL Server Sequences](/sql/relational-databases/sequence-numbers/sequence-numbers)  

@@ -64,7 +64,7 @@ The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment is 
 
 About two months before a major update, you can try out new functionality in preview environments. For more information, see [Prepare for major updates with preview environments](preview-environments.md).  
 
-## See also
+## Related information
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

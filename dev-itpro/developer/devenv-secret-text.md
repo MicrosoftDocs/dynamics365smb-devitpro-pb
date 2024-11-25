@@ -190,7 +190,7 @@ begin
 end;
 ```
 
-## See also
+## Related information
 
 [SecretText data type](methods-auto/secrettext/secrettext-data-type.md)  
 [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md)  

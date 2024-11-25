@@ -107,7 +107,7 @@ If you decide at some point that you want to restore the exported data to a new 
 
 If you want to use the exported data in a container-based developer environment, you can use Windows PowerShell scripts to help you do that, including the [BCContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).  
 
-## See also
+## Related information
 
 [SQL Server technical documentation](/sql/sql-server/)  
 [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import)  

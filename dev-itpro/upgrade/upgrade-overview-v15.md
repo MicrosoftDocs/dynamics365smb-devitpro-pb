@@ -667,7 +667,7 @@ In version 15, with the move to AL, the only symbols required are the system sym
 ### Customization extensions
 Customization extensions are AL extensions that add functionality to the base application or system application. These extensions can be Microsoft (1st party) or 3rd party extensions. 3rd party extensions are extensions that your organization provides or extensions that are provided by others, such as from ISVs or from App Source.
   
-## See Also  
+## Related information  
 
 [Upgrade of an Unmodified Application](upgrade-unmodified-application.md)  
 [Technical Upgrade of Customized Application](upgrade-technical-upgrade-v14-v15.md)  
