@@ -82,7 +82,7 @@ codeunit 50001 GLAccountBalanceLinesExt
 }
 ```
 
-## See Also
+## Related information
 
 [Page Extension object](devenv-page-ext-object.md)  
 [Page object](devenv-page-object.md)  

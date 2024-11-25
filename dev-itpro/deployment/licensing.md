@@ -108,7 +108,7 @@ Microsoft 365 users can access [!INCLUDE [prod_short](../developer/includes/prod
 
 For a detailed overview of the use rights, minimum requirements and which Microsoft 365 plans are supported, see [Business Central Access with Microsoft 365 Licenses](/dynamics365/business-central/admin-access-with-m365-license).
 
-## See Also  
+## Related information  
 
 [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](Deployment.md)  

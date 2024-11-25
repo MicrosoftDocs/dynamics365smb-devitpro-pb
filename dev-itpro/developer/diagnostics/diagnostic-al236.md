@@ -18,6 +18,6 @@ An empty CONST() expression is not allowed on field '{0}' of type '{1}'.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

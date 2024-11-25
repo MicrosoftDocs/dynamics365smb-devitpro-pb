@@ -55,6 +55,6 @@ end;
 
 If a test codeunit contains two tests, and both use random data, they run in sequence so that Test A gets Random Data A and Test B gets Random Data B. But if you decide to run only Test B, it gets a new random value. Similarly, if you change the order of the tests in your test codeunit, they all get new random data. You can use this behavior in different ways. For example, you can call the `SetSeed` method in the beginning of each test to ensure that the same set of random number is generated; or you can use this for fuzzy testing.
 
-## See Also
+## Related information
  <!--[Application Test Automation](Application-Test-Automation.md)-->
  [Testing the Application](devenv-Testing-Application.md)  

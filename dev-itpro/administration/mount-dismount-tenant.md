@@ -47,6 +47,6 @@ This article describes how to use the [!INCLUDE[admintool](../developer/includes
 
 - In the center pane, right-click the tenant, and then choose **Dismount Tenant**.  
 
-## See Also  
+## Related information  
  [Server Administration Tool](administration-tool.md)   
  [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md)

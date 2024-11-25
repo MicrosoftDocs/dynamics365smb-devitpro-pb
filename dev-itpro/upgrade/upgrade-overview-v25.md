@@ -52,7 +52,7 @@ From these articles, use the links in the table of contents to view more depreca
 
 For information about migrating an on-premises solution to online, see [Migrate to Business Central Online from Business Central On-premises](/dynamics365/business-central/dev-itpro/administration/migrate-business-central-on-premises).
 
-## See also  
+## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

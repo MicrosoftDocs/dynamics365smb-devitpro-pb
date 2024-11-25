@@ -46,7 +46,7 @@ Based on the overview in the previous section and the requirements for your deve
 + [Online sandbox with production data](../administration/tenant-admin-center.md)  
 + [Container sandbox](devenv-get-started-container-sandbox.md)  
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)  
 [Keyboard shortcuts](devenv-keyboard-shortcuts.md)  

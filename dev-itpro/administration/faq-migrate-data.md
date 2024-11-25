@@ -143,7 +143,7 @@ No. But if your cloud migration includes data upgrade of a large amount of data,
 
 The extension must be created in the same manner as any other extension. For data to replicate, you must add a **ReplicateData** property to your table and set the value to *True*. If your extension connects with an external service and you want to restrict any service calls from your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant, a good practice would be to store the connection information in a separate table and set the **ReplicateData** property to *False*. This would enable you to keep the extension installed but prevent it from making any type of service calls from the read-only [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Once the extension is installed in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises, the data will begin to replicate.  -->
 
-## See also
+## Related information
 
 [Troubleshooting Cloud Migration](migration-troubleshooting.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  

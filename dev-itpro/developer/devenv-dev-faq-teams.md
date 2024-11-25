@@ -66,7 +66,7 @@ Yes. Business Central doesn't restrict which object ranges you can display in a 
 
 Role Center pages aren't supported in tabs and card details windows. To display business insights, charts, and KPIs, try building Power BI reports that can be displayed and accessed in Teams. Learn about adding the Power BI app to Teams at [Embed Power BI content in Microsoft Teams](/power-bi/collaborate-share/service-embed-report-microsoft-teams).
 
-## See Also
+## Related information
 
 [Field Groups](devenv-field-groups.md)  
 [Designing List Pages](devenv-designing-list-pages.md)  

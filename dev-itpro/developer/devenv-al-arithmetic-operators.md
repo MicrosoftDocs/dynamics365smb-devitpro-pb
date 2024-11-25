@@ -96,7 +96,7 @@ This table illustrates type conversion in text and code \(String\) operator expr
 |`+`|Concatenation|Code + Text|Text|  
 |`+`|Concatenation|Code + Code|Code|  
 
-## See also
+## Related information
 
 [AL operators](devenv-al-operators.md)  
 [Boolean operators](devenv-al-boolean-operators.md)  

@@ -43,7 +43,7 @@ Returns a wrapped array of environments.
 }
 ```
 
-## See Also
+## Related information
 
 [Developing Connect Apps for Dynamics 365 Business Central](../developer/devenv-develop-connect-apps.md)  
 [Microsoft Web Services Overview](web-services.md)  

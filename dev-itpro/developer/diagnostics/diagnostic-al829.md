@@ -21,6 +21,6 @@ Symbol of kind {0} '{1}' cannot be moved to its own app.
 MovedTo/MovedFrom property cannot have Guid that matches its own AppId.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

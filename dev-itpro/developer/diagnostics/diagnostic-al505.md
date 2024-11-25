@@ -18,6 +18,6 @@ Pages of type API must have the 'DelayedInsert' property set to true. From runti
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

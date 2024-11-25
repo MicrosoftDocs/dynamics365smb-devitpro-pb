@@ -138,7 +138,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 The Base Application is now published with the small customization of bolding the text in the **Name** field on the **Customer Card** page.
 
-## See Also
+## Related information
 
 [Unpublishing and Uninstalling Extensions](devenv-unpublish-and-uninstall-extension-v2.md)  
 [Developing Extensions](devenv-dev-overview.md)

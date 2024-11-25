@@ -43,5 +43,5 @@ When you convert a [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] da
     IF TimeZone.FINDFIRST THEN
         EXIT(TimeZone."Display Name");
     ```
-## See Also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)

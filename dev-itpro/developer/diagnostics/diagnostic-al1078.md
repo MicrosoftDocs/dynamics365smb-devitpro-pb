@@ -21,6 +21,6 @@ Key vault URL is not a valid Azure key vault URL. A valid key vault URL must use
 > This warning will become an error with Business Central 2023 release wave 2.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

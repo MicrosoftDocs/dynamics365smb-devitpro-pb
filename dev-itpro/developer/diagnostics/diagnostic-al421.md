@@ -18,6 +18,6 @@ A ‘foreach’ statement can only be used with an expression of an enumerable t
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

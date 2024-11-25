@@ -92,6 +92,6 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
   http://localhost:8080/BC210 
   ```
 
-## See Also  
+## Related information  
 [Business Central Web Server Overview](web-server-overview.md) 
  

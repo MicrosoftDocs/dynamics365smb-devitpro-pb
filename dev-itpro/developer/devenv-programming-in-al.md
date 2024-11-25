@@ -70,7 +70,7 @@ We recommend the following guidelines for AL code:
 
 Reusing code makes developing applications both faster and easier. More importantly, if you organize your AL code as suggested, your applications are less prone to errors. By centralizing the code, you don't unintentionally create inconsistencies by performing the same calculation in many places, for example, in several triggers that have the same table field as their source expression. If you have to change the code, you could either forget about some of these triggers or make a mistake when you modify one of them.
 
-## See also
+## Related information
 
 [Simple statements](devenv-al-simple-statements.md)  
 [Control statements](devenv-al-control-statements.md)  

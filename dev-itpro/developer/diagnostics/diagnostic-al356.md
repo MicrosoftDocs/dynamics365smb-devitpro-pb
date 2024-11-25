@@ -21,6 +21,6 @@ Cannot modify the {0} '{1}' multiple times.
 The element cannot be modified multiple times.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

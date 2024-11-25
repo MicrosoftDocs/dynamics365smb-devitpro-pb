@@ -21,6 +21,6 @@ You cannot reference the {0} '{1}' because it is defined in the page customizati
 You cannot reference an element defined in a page customization outside the page customization declaring it.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -76,7 +76,7 @@ Sometimes an environment can't get the new update. For example, a per-tenant ext
 
 For more information, see [Failed updates and rescheduling](update-rollout-timeline.md#failed-updates-and-rescheduling).  
 
-## See also
+## Related information
 
 [What's new or changed in Business Central](../whatsnew/overview.md)  
 [Major Updates of Business Central Online](update-rollout-timeline.md)  

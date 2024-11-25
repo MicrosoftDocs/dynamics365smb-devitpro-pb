@@ -158,7 +158,7 @@ If you specify the `applicationInsightsConnectionString` setting for your extens
 "applicationInsightsConnectionString": "MyConnectionString1234"
 ```
  
-## See Also
+## Related information
 
 [JSON Files](devenv-json-files.md)  
 [AL Development Environment](devenv-reference-overview.md)  

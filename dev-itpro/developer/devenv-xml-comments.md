@@ -117,7 +117,7 @@ For more examples, see [https://stackoverflow.com/questions/3143324/what-are-bes
 
 You can use the ALDoc tool, which comes with the AL Language extension for Visual Studio Code to generate documentation from your XML comments. For more information, see [Generating help with the ALDoc tool](../help/help-aldoc-generate-help.md).
 
-## See also  
+## Related information  
 
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions in AL](devenv-dev-overview.md)  

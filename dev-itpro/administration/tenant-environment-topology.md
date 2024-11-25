@@ -71,7 +71,7 @@ Contoso is just an example to illustrate how the Microsoft Entra tenant both aff
 > [!TIP]
 > For information about how to find out which Azure region a [!INCLUDE [prod_short](../includes/prod_short.md)] environment is deployed to, see the overview at [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md).
 
-## See also
+## Related information
 
 [Administration of Business Central Online](tenant-administration.md)  
 [Production and Sandbox Environments](environment-types.md)  

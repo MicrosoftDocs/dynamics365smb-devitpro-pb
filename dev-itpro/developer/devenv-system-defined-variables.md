@@ -51,7 +51,7 @@ You can access properties of a report through the `CurrReport` variable and set 
 
 You can access properties of the request page through the RequestOptionsPage variable and set them dynamically. 
 
-## See also
+## Related information
 
 [AL variables](devenv-al-variables.md)  
 [AL method reference](methods-auto/library.md)  

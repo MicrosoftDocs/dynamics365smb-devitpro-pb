@@ -21,6 +21,6 @@ An action with ID = {0} is already defined.
 Multiple actions with the same ID are defined.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

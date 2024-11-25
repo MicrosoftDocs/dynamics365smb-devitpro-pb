@@ -70,7 +70,7 @@ Here is a JSON representation of the subscriptions resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET subscriptions](../api/dynamics_subscriptions_get.md)  
 [DELETE subscriptions](../api/dynamics_subscriptions_delete.md)  
 [POST subscriptions](../api/dynamics_subscriptions_create.md)  

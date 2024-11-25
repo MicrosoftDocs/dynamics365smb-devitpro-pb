@@ -197,7 +197,7 @@ This temporary table makes it straightforward to add overloads to the facade. Fo
 
 ```
 
-## See Also
+## Related information
 [Module Architecture](devenv-blueprint.md)  
 [Getting Started with Modules in the System Application](devenv-getting-started.md)  
 [Set Up an Environment for Developing a Module](devenv-set-up-an-environment.md)  

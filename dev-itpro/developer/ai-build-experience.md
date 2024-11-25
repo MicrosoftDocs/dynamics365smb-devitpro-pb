@@ -158,7 +158,7 @@ System actions order on promptdialog in Content mode is always: OK, Regenerate, 
 
 [Create PromptDialog page](Copilot-create-promptdialog.md).
 
-## See also
+## Related information
 
 [Integrating AI using developer tools for Copilot](ai-integration-landing-page.yml)  
 

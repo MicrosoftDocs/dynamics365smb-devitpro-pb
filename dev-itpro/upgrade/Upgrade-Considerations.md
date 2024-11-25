@@ -89,7 +89,7 @@ Sometimes Microsoft will refactor code so that fields are no longer used, or the
 
  Make sure that all objects where compiled in a development environment with the right .ETX and .STX files. You can verify that you are running in the correct environment with English \(US\) as the base language by opening the **ndo$dbproperty** table in SQL Server Management Studio. In the **Identifiers** column, the word `Object` must be written exactly as shown here.  
 
-## See Also  
+## Related information  
 
 [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
 [Upgrading the Data](Upgrading-the-Data.md)   

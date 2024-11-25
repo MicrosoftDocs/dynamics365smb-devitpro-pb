@@ -304,7 +304,7 @@ What about always using ALL? That’s a good option, however with its own drawba
  
 For more information, see the source code of the [Sales and Inventory Forecast extension](https://github.com/microsoft/ALAppExtensions/tree/master/AddOns/SalesAndInventoryForecast). Alternatively, you can also take a closer look at the Cash Flow Forecast feature, which is part of the Base Application extension.
 
-## See also
+## Related information
 
 [Prediction API overview](ml-forecasting-api-overview.md)  
 [The Sales and Inventory Forecast Extension](/dynamics365/business-central/ui-extensions-sales-forecast)  

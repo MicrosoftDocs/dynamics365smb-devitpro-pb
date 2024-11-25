@@ -24,6 +24,6 @@ With:
 ```
 Designer.GenerateDesignerPackageZipStreamByVersion(NvOutStream,ID,VersionString);
 ```
-## See Also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)  
  [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)  

@@ -363,6 +363,6 @@ Join the upcoming partner webinars and office hours for Dynamics GP partners exp
 |December 17 | Financial Management |	Join the Microsoft webinar and office hour about financial management In Dynamics 365 Business Central. We will provide an overview of setting up and managing the Chart of Accounts and Dimensions, ensuring accurate and efficient financial tracking. Additionally, we will explore the functionalities of the General Ledger, including making corrections and adjustments. The webinar will also cover budgeting techniques and tools, as well as best practices for generating and analyzing financial reports.|
 |December 18	|Financial Management |	Repeat |
 
-## See also
+## Related information
 
 [FAQ about Migrating to the Cloud from On-Premises Solutions](faq-migrate-data.md)  

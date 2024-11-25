@@ -45,6 +45,6 @@ The apps that are stored in the App Repository are governed by the Microsoft Pub
 
 The App Management API is governed by Microsoft APIs Terms of Use. For more information, see [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use)  
 
-## See Also
+## Related information
 
 [Manage Apps in the Business Central Administration Center](../tenant-admin-center-manage-apps.md)   

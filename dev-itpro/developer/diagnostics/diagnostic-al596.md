@@ -18,6 +18,6 @@ Value '{0}' does not implement interface '{1}' and there is no default implement
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

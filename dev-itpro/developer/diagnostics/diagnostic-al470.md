@@ -21,6 +21,6 @@ The referenced page '{0}' of PageType 'HeadlinePart' is only allowed inside page
 Pages of the type 'HeadlinePart' are only allowed inside pages of PageType 'RoleCenter'.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -21,6 +21,6 @@ The variable name '{0}' is already defined.
 Multiple variables with the same name are defined in the same object.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

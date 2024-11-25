@@ -24,6 +24,6 @@ Access modifier '{0}' is not allowed for member '{1}' in the context of object t
 The access modifier is not allowed for the declared member in the context of the containing type.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

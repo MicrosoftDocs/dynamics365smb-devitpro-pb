@@ -18,6 +18,6 @@ A SQLIndex defined for the primary key must contain the same fields as the key f
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -61,7 +61,7 @@ Any changes done in the handler above results in the `XmlParameters` being chang
 
 [!INCLUDE [send-report-xml](../developer/includes/send-report-xml.md)]
 
-## See Also
+## Related information
 
 [Reports Overview](devenv-reports.md)  
 [Test pages](devenv-testing-pages.md)  

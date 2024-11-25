@@ -21,6 +21,6 @@ The implicit conversion will overflow when converting from a 'Guid' to a '{0}' w
 > This warning will become an error with Business Central 2024 release wave 2.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

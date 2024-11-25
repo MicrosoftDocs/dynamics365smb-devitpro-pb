@@ -21,6 +21,6 @@ The property {0} cannot be used on page '{1}' because this page does not have a 
 The properties **OrderBy** and **Filters** cannot be used on pages without a source table.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

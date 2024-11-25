@@ -23,6 +23,6 @@ The articles in this section describe the most common AL methods. For more infor
 - [Progress Windows, Message, Error, and Confirm methods](devenv-progress-windows-message-error-and-confirm-methods.md)  
 - [StrMenu method](methods-auto/dialog/dialog-strmenu-method.md)
 
-## See also
+## Related information
 
 [AL method reference](methods-auto/library.md)

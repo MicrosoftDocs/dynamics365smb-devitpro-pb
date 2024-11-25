@@ -22,6 +22,6 @@ Here you find links that can help you find answers to questions concerning priva
 - Get the PDF file that shows the international availability of Dynamics 365:[International availability of Dynamics 365](/dynamics365/get-started/availability)
 - Business Central online uses Azure Front Door, which isn't in scope for the EU Data Boundary: [Services permanently excluded from the EU Data Boundary](/privacy/eudb/eu-data-boundary-permanent-transfers-from-services)
 
-## See also
+## Related information
 
 [Security and Protection in Business Central](security-and-protection.md)

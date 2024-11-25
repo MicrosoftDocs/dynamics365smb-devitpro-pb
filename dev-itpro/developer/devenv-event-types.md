@@ -175,7 +175,7 @@ The following table describes the parameters of the trigger events:
 |*BelowxRec*|Boolean|Specifies whether the new record was inserted after the last record in the table \(xRec\).|
 |*AllowClose*|Boolean|Specifies whether to the page can close. If this parameter is true, the code will be executed. If this parameter is false, then the code is not executed.|
 
-## See also
+## Related information
 
 [Events in AL](devenv-events-in-al.md)  
 [Publishing events](devenv-publishing-events.md)  

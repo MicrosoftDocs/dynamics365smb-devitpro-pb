@@ -18,6 +18,6 @@ The property '{0}' can only be specified when the property '{1}' has a value of 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

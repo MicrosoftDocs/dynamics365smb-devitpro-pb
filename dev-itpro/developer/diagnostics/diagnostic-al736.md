@@ -18,6 +18,6 @@ The value '{0}' of the property 'FlowEnvironmentId' is not a valid. It must eith
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

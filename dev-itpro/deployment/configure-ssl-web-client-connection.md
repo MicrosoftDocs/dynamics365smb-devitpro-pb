@@ -77,5 +77,5 @@ In a production environment, you should obtain an SSL certificate from a certifi
     ```  
 4.  Save the navsettings.json file.  
   
-## See Also  
+## Related information  
   [Business Central Web Server Overview](web-server-overview.md)

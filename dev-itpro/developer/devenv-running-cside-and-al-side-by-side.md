@@ -72,5 +72,5 @@ In addition to the symbol generation setting you have chosen above, you must ena
 > [!IMPORTANT]  
 > This setting must be enabled to allow any symbol generation. If the setting is not enabled, the `generatesymbolreference` setting doesn't have any effect.
 
-## See Also
+## Related information
 [Developing Extensions](devenv-dev-overview.md)  

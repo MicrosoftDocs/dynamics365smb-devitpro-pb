@@ -21,6 +21,6 @@ The {0} FlowField is not a Boolean field. If a FlowField CalcFormula starts with
 If a FlowField CalcFormula starts with 'Exist', then the FlowField must be a Boolean type field.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

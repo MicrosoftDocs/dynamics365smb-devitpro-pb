@@ -21,6 +21,6 @@ The flowfield '{0}' cannot be part of the keys for table '{1}'.
 A FlowField cannot be part of the keys of a table.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

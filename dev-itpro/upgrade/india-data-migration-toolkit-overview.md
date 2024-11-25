@@ -40,6 +40,6 @@ For data migration from Business Central 2021 release wave 2 On-Prem to Cloud, s
 For list of deprecated India (IN) localization tables in Business Central 2021 release wave 2, see information, [List of deprecated India (IN) localization tables](../upgrade/india-data-migration-list-of-deprecated-tables.md)
 
 
-## See Also 
+## Related information 
 [India Post India Upgrade Tables](../upgrade/post-india-upgrade-tables.md)
  

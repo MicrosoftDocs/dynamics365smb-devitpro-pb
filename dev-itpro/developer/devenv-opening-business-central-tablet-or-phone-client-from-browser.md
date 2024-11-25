@@ -43,5 +43,5 @@ The steps in this article illustrates how you can open the [!INCLUDE[nav_tablet]
 
     -   **ProfileID** with the ID that is assigned to the profile in [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)].  
 
-## See Also  
+## Related information  
  [Introducing the Dynamics 365 Business Central Mobile App](devenv-Introducing-business-central-Mobile-App.md)   

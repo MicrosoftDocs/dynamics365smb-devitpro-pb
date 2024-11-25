@@ -21,6 +21,6 @@ Dependency '{0}' is referenced in the property '{1}' and as an explicit dependen
 > This warning will become an error with Business Central 2024 release wave 1.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

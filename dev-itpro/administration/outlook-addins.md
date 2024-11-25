@@ -55,7 +55,7 @@ If the add-ins aren't set up for deploy automatically, users can run the **Get t
 
 For more information, see [Install the add-in for your own use](/dynamics365/business-central/admin-outlook#install).
 
-## See Also  
+## Related information  
 [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin)  
 [Set Up the Add-Ins for Outlook with Business Central on-premises](Setting-up-Office-Add-Ins-Outlook-Inbox.md)  
 [Deployment of Business Central on-premises](../deployment/deployment.md)  

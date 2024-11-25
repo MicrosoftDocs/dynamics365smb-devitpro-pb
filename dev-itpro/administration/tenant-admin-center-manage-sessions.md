@@ -33,7 +33,7 @@ To restart an environment that is causing problems for you, go to the **Manage S
 > [!IMPORTANT]
 > Make sure that all users are signed out of all companies in the environment before you restart it.
 
-## See also
+## Related information
 
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Managing Apps](tenant-admin-center-manage-apps.md)  

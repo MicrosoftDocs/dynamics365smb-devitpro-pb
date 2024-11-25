@@ -67,7 +67,7 @@ begin
 end; 
 ```
 
-## See also
+## Related information
 
 [Developing for Microsoft Teams Integration Overview](devenv-develop-for-teams.md)  
 [Extend Teams Cards](devenv-develop-for-teams-cards.md)  

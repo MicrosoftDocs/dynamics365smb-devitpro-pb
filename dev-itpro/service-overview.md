@@ -108,7 +108,7 @@ An exception to this type of schedule is the continuous updates to the underlyin
 
 Learn more about new and upcoming changes in [Dynamics 365 release plans](/dynamics365/release-plans/).  
 
-## See also
+## Related information
 
 [Scalability](service-scalability.md)  
 [Service operations](service-operations.md)  

@@ -44,7 +44,7 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance include
 
 -->
 
-## See also  
+## Related information  
 
 [Security and Protection](security-and-protection.md)  
 [Data Security](data-security.md)  

@@ -18,6 +18,6 @@ The value '{0}' specified for FormatRegion cannot be parsed as a valid format cu
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -46,7 +46,7 @@ You then apply the namespaces to XMLport elements by setting the [NamespacePrefi
 You can also specify a default namespace using the [DefaultNamespace Property](properties/devenv-defaultnamespace-property.md) and setting the [UseDefaultNamespace Property](properties/devenv-usedefaultnamespace-property.md) to **true**. There can only be one default namespace, so if you specify the default namespace in the [Namespaces Property](properties/devenv-namespaces-property.md), you must set the [DefaultNamespace Property](properties/devenv-defaultnamespace-property.md) to **false**. 
 
 
-## See also
+## Related information
 
 [XMLport Object](devenv-xmlport-object.md)  
 [Namespaces Property](properties/devenv-namespaces-property.md)   

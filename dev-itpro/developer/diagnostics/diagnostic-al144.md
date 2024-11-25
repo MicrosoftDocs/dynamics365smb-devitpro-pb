@@ -21,6 +21,6 @@ Wrong number of indices inside []; expected {0}.
 The number of indices inside [] does not match the dimensions of the array.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -75,7 +75,7 @@ Occurs when a user completes onboarding criteria in a company.
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
 |eventId|**AL0000EIV**|
 
-## See also
+## Related information
 
 [Measure onboarding progress using telemetry](onboarding-telemetry.md)
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

@@ -124,6 +124,6 @@ Table mappings will be inserted after the setup wizard is completed or if you ru
 
 [Run data migration setup](migration-setup.md)
 
-## See also
+## Related information
 
 [Migrate Data](migrate-data.md)  

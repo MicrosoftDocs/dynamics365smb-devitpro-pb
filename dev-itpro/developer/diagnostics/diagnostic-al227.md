@@ -21,6 +21,6 @@ A key with ID {0} is already defined.
 Multiple keys with the same ID are defined in the same table.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

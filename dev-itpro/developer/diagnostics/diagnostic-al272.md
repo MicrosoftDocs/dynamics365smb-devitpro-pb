@@ -21,6 +21,6 @@ The anchoring symbol '{0}' must be a grouping symbol.
 An anchoring symbol must be a grouping symbol.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -35,7 +35,7 @@ Occurs when the checklist status changes for the environment.
 |alOldStatus| The old status of the checklist, for example **Not Started** or **In progress**. |
 |alNewStatus| The new status of the checklist, for example **In progress** or **Completed**. |
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

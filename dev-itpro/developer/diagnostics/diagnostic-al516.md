@@ -18,6 +18,6 @@ The symbol file is not valid. An enum with ID '{0}' and name '{1}' is already de
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

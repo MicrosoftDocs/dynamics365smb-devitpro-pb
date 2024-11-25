@@ -87,7 +87,7 @@ Telemetry signals for the environment transfer operation are emitted to the Appl
 - Environment settings are carried over from the source to the destination tenant. Depending on the nature of the environment transfer settings such as the Application Insights Connection String or Partner Access set up on the environment may need to be changed or removed.
 - Environments that are [linked](tenant-admin-center-environments.md#linked-power-platform-environment) to a Power Platform environment cannot be transferred. Unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment before creating a transfer on the source tenant.
 
-## See also
+## Related information
 
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)
 [Managing Apps](tenant-admin-center-manage-apps.md)

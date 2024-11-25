@@ -43,7 +43,7 @@ FIND('-')
 
 ```  
 
-## See Also  
+## Related information  
  [Data Access](optimize-sql-data-access.md)   
  [Bulk Inserts](optimize-sql-bulk-inserts.md)   
  [AL Database Methods and Performance on SQL Server](optimize-sql-al-database-methods-and-performance-on-server.md)   

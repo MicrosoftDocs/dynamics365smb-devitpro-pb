@@ -85,7 +85,7 @@ For more information, go to [Alert on Telemetry](telemetry-alert.md).
 ## [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry FAQ
 We have compiled a list of frequently asked questions (FAQ) on telemetry. See [Telemetry FAQ](telemetry-faq.md)
 
-## See also
+## Related information
 [Available signal in telemetry](telemetry-available-telemetry.md)  
 [Enable Telemetry](telemetry-enable-application-insights.md)  
 [Control Telemetry Cost](telemetry-control-cost.md)  

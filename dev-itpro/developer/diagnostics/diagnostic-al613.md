@@ -24,6 +24,6 @@ Wrong signature. Correct signature for '{0}' is '{1}'.
 Invalid signature for trigger. For more information about the correct signature, refer to the trigger's documentation.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
