@@ -1,17 +1,21 @@
 ---
-title: "MethodType Property (Upgrade Codeunits)"
+title: MethodType Property (Upgrade Codeunits)
+description: Sets the type of method in an upgrade codeunit.
 ms.date: 04/01/2021
 ms.topic: conceptual
+ms.reviewer: solsen
+ms.author: solsen
+author: SusanneWindfeldPedersen
 ---
 
-# MethodType Property (Upgrade Codeunits)
+# MethodType property (Upgrade Codeunits)
 Sets the type of method in an upgrade codeunit.  
 
-## Applies To  
+## Applies to  
 
 AL methods on upgrade codeunits. An upgrade codeunit is codeunit that has the [SubType Property \(Codeunit\)](properties/devenv-subtype-codeunit-property.md) set to **Upgrade**.  
 
-## Property Value  
+## Property value  
 
 |Value|Description|  
 |-----------|-----------------|  
@@ -23,4 +27,4 @@ AL methods on upgrade codeunits. An upgrade codeunit is codeunit that has the [S
 
 ## Related information
 
-[SubType Property \(Codeunit\)](properties/devenv-subtype-codeunit-property.md)
+[SubType property \(Codeunit\)](properties/devenv-subtype-codeunit-property.md)
