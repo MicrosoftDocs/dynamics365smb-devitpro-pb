@@ -225,7 +225,7 @@ When we move, remove, or replace an object, breaking changes can occur in other 
 <!--Should we include a section about this?-->
 Some features are available only under specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
 
-## See Also
+## Related information
 
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  
 [Deprecated Features in the Austrian Version](deprecated-features-at.md)  

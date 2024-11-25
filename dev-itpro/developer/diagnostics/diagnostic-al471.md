@@ -18,6 +18,6 @@ The format of link '{0}' is not valid. It should be using the HTTP or HTTPS prot
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -140,7 +140,7 @@ Occurs when the `SetUpgradeTag` method in Codeunit **9999 Upgrade Tag** is calle
 
 -->
 
-## See also
+## Related information
 
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

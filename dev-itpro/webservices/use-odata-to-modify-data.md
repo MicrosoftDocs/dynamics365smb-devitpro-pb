@@ -43,7 +43,7 @@ PATCH operations require the 'If-Match' header to be set, either with a retrieve
   
  If no default company can be found based on the criteria, an error message appears.  
   
-## See Also  
+## Related information  
 
 [Known OData limitations](odata-known-limitations.md)   
 [OData Web Services](OData-Web-Services.md)   

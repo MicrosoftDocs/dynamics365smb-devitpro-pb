@@ -38,5 +38,5 @@ string id = service.GetRecIdFromKey(cust.No);
 cust = service.ReadByRecId(id.ToUpper());  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

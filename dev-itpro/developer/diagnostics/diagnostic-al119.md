@@ -21,6 +21,6 @@ The parameter name '{0}' is already defined.
 Multiple parameters with the same name are defined.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

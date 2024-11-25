@@ -98,7 +98,7 @@ begin
 end; 
 ```
 
-## See Also  
+## Related information  
 
 [Developing Printer Extensions](devenv-reports-printing.md)  
 [Create a Printer Extension](devenv-reports-create-printer-extension.md)  

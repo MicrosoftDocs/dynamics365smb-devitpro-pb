@@ -23,7 +23,7 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, we int
 |If a hidden group contains actions with dynamic visibility and the visibility evaluates to `true` without the parent, then the actions will be ghosted during design mode even if the visibility has never been modified.| Actions with dynamic visibility were initially visible. Then, if the parent was hidden and because their visibility was never modified, they would disappear from the page.|
 
 
-## See also
+## Related information
 
 [Promoted Actions](devenv-promoted-actions.md)  
 [Actions in AL](devenv-actions-overview.md)  

@@ -101,7 +101,7 @@ Returns the newly updated support contact information.
 `businessCentralCommunicationException` - an unhandled error occurred when communicating with the targeted environment's API
 
 
-## See also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

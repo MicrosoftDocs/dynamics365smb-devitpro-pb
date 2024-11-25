@@ -190,7 +190,7 @@ The service components apply to multiple environments, such as all tenants in a 
 
 These updates don't add or remove functionality, and they're transparent to business users.
 
-## See also
+## Related information
 
 [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md)  
 [Working with Administration Tools](administration.md)  

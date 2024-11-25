@@ -21,6 +21,6 @@ Source will still be visible for this extension via debugging because 'allowDebu
 For more information, see [Resource Exposure Policy Setting](/dynamics365/business-central/dev-itpro/developer/devenv-security-settings-and-ip-protection#when-should-i-set-allowdebugging-to-true).  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

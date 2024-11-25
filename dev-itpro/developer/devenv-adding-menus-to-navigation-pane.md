@@ -157,7 +157,7 @@ addlast(Reporting)
 ```
   
 
-## See Also
+## Related information
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  

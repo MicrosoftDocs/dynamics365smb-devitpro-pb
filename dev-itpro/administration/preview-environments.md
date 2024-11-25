@@ -67,7 +67,7 @@ We expect to update the preview version only if we discover critical issues befo
 > The preview version as well as all sandbox environments that are based on it will be removed 30 days after the official release becomes available. 
 
 
-## See also
+## Related information
 
 [Major Updates of Business Central Online](update-rollout-timeline.md)  
 [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md)  

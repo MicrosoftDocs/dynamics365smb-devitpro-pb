@@ -199,7 +199,7 @@ With this deployment option, users install the Business Central add-in for Outlo
 
 After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. For more information, see [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#onprem).
 
-## See Also  
+## Related information  
 
 [Deploying Business Central](../deployment/deployment.md)  
 [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook?toc=/dynamics365/business-central/dev-itpro/toc.json)  

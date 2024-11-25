@@ -117,7 +117,7 @@ In general, extensions are uniquely defined by their `id`. A specific version of
 
 - It isn't possible to deploy a **Global app** and a **DEV** extension with the same `id` and `version`. When deploying the DEV version of a Global app from Visual Studio Code to a sandbox environment, for example, for development or troubleshooting, you must make sure that your DEV extension has a different `version` than what is published to AppSource. Similarly, after you're done developing/testing your extension, you should increase the `version` before submitting to AppSource. 
 
-## See also
+## Related information
 
 [Developing extensions](devenv-dev-overview.md)  
 [Get started with AL](devenv-get-started.md)  

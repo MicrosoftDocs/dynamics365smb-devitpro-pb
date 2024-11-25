@@ -52,7 +52,7 @@ The following table includes links to help you get started with designing and wo
 |Learn about existing (built-in) APIs | [Overview](../webservices/api-overview.md) |
 |Learn about the difference between APIs and exposing UI pages as OData/SOAP webservices | [Web services overview](../webservices/web-services.md) |
 
-## See also
+## Related information
 
 [API page type](devenv-api-pagetype.md)  
 [API queries](devenv-api-querytype.md)  

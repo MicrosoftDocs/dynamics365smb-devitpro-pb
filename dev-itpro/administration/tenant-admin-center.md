@@ -100,7 +100,7 @@ If your organization decides to switch to another partner, you must make sure th
 When you establish a relationship with a new partner, they fill in these fields again.
 
 
-## See also
+## Related information
 
 [Production and Sandbox Environments](environment-types.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

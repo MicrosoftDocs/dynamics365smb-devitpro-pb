@@ -176,7 +176,7 @@ https://localhost:7048/BC230/ODataV4/Company('CRONUS-International-Ltd.')/Custom
 
 For more information, see [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md).  
 
-## See also
+## Related information
 
 - [Web Service Telemetry](web-service-telemetry.md)  
 - [Web service performance](web-service-performance.md)  

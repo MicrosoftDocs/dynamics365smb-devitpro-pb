@@ -29,6 +29,6 @@ This topic lists all the warning diagnostics that will turn or have turned into 
 |2020 release wave 1| - [AL0559](diagnostic-al559.md) <br /> | - A Part type page cannot contain other parts.<br />|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

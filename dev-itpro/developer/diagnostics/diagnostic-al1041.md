@@ -21,6 +21,6 @@ The property '{0}' must be defined in the manifest.
 The properties 'name', 'publisher','id' and 'version' must be defined in the manifest.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

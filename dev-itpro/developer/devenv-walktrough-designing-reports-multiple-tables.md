@@ -673,7 +673,7 @@ Viktor can now add advanced features to the report such as displaying the compan
 
 To make the report fully discoverable for users, Victor might also add actions that run the report to pages such as the customer list and also add links to the report to appropriate role centers.
 
-## See also
+## Related information
 
 [Report Overview](devenv-reports.md)  
 [Defining a Report Dataset](devenv-report-dataset.md)  

@@ -49,7 +49,7 @@ The following table lists the cumulative updates that have been released for the
 |[4479230](https://support.microsoft.com/help/4479230) |Cumulative Update 02 |December 2018|26556|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4470115](https://support.microsoft.com/help/4470115) |Cumulative Update 01 |November 2018|Application Build 25940</br>Platform Build 25924|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Cumulative Update](../upgrade/upgrading-cumulative-update.md)  

@@ -94,6 +94,6 @@ To turn access on or off, complete the following steps:
 3. In the **Microsoft 365 licenses** pane, turn the switch on or off.
 4. Select **Save** and accept the confirmation dialog. The change takes effect immediately.
 
-## See also
+## Related information
 
 [Managing Environments](tenant-admin-center-environments.md)  

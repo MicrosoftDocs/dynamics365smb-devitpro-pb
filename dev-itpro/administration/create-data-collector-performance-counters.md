@@ -51,7 +51,7 @@ This topic describes how to create a Data Collector Set in Performance Monitor t
   
  For information about how to view the data that is collected by the Data Collector Set, see [View Performance Counter Data for a Data Collector Set](monitor-view-performance-counter-data-for-data-collector-set.md).  
   
-## See Also  
+## Related information  
  [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)   
  [Create a Data Collector Set From Template](monitor-create-data-collector-set-from-template.md)   
  [Business Central Performance Counters](performance-counters.md)

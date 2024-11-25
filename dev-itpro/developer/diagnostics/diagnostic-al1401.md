@@ -21,6 +21,6 @@ Reference '{0}' in application object '{1}' does not exist.
 Cannot resolve the type of the referenced element.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

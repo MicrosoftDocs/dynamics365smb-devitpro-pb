@@ -176,7 +176,7 @@ Currently, the log includes the following operations:
 
 The operations are kept for 180 days, after which they're deleted.
 
-## See also
+## Related information
 
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Managing Apps](tenant-admin-center-manage-apps.md)  

@@ -55,7 +55,7 @@ traces
 , usertelemetryId = user_Id // who did it
 ```
 
-## See also
+## Related information
 
 [Telemetry Overview](telemetry-overview.md)  
 [Enable Telemetry in Business Central](telemetry-enable-application-insights.md)  

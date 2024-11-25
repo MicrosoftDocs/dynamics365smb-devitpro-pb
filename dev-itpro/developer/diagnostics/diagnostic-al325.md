@@ -21,6 +21,6 @@ The field '{0}' in the table '{1}' cannot be included in a key because its type 
 Only fields of the type Guid, Decimal or Integer can be included in a key.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

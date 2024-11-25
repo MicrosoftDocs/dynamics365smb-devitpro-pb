@@ -21,6 +21,6 @@ The signature of procedure '{0}' does not match the signature required by attrib
 The visibility of the procedure where the attribute is set does not match the signature required by attribute. For more information about the required signature, see the attribute's documentation.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

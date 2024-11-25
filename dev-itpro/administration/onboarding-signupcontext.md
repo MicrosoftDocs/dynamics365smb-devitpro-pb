@@ -178,6 +178,6 @@ end;
 > [!IMPORTANT]
 > Partners who load their apps when the trial is provisioned must give users the chance to review and agree to the EULA for their app before starting the trial. This also means that only the partner's own apps can be loaded. Therefore, partners should avoid having non-owned apps in the dependency list in the app manifest.
 
-## See also
+## Related information
 
 [Onboarding experiences in Business Central](onboarding-experiences.md)  

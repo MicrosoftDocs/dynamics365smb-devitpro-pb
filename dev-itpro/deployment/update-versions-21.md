@@ -49,7 +49,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 |[5021672](https://support.microsoft.com/help/5021672)|Update 21.2| December 2022|Application Build 21.2.49990</br>Platform Build 21.0.49984 |
 |[5021004](https://support.microsoft.com/help/5021004)|Update 21.1| November 2022|Application Build 21.1.48638</br>Platform Build 21.0.48504 |
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v21.md)  

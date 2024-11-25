@@ -21,6 +21,6 @@ No overload for attribute '{0}' expects {1} arguments.
 The attribute has been specified with the wrong number of attributes. For more information, see the attribute's documentation.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

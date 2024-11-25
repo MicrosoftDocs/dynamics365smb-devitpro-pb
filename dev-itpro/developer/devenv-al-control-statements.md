@@ -562,7 +562,7 @@ var
     I : integer
 ```
 
-## See also
+## Related information
 
 [Programming in AL](devenv-programming-in-al.md)  
 [AL simple statements](devenv-al-simple-statements.md)  

@@ -333,7 +333,7 @@ The following table explains the general dimensions of this trace.
 [!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
 
 
-## See also
+## Related information
 [Task Scheduler](../developer/devenv-task-scheduler.md)   
 [Telemetry overview](telemetry-overview.md)  
 [Enabling Telemetry](telemetry-enable-application-insights.md)  

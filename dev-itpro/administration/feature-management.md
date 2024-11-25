@@ -152,7 +152,7 @@ In a future version, we hope to redesign feature management to better reflect lo
 
 Yes. You can turn optional features on or off in a similar way.
 
-## See also
+## Related information
 
 [New and planned features](/dynamics365-release-plan/2021wave1/)  
 [Administration of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](tenant-administration.md)  

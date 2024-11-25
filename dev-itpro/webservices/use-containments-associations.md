@@ -93,5 +93,5 @@ https://localhost:7048/<server instance>/ODataV4/Company('CRONUS-International-L
 https://localhost:7048/<server instance>/ODataV4/CustomerList('30000')  
 ```  
   
-## See also  
+## Related information  
  [OData Web Services](OData-Web-Services.md)

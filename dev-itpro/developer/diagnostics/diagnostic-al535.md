@@ -21,6 +21,6 @@ The referenced page '{0}' must be a List part, a Card part, or an API page.
 A page used for a part control of an API page must be a List part, a Card part, or an API page.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

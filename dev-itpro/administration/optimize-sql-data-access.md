@@ -101,7 +101,7 @@ The name of the default constraint isn't important, as long as it isn't used by 
 > [!NOTE]
 > Blobs don't get default constraints, but they are allowed to be null.
 
-## See Also
+## Related information
 
 [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)  
 [GetBySystemId(Guid)](../developer/methods-auto/record/record-getbysystemid-method.md)  

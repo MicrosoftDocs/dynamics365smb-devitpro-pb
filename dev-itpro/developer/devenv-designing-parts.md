@@ -84,7 +84,7 @@ Like other page types, you can design a part page to use one or more page backgr
 - Parts aren't intended to be displayed on their own without a hosting page.
 
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  

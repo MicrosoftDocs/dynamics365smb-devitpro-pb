@@ -418,6 +418,6 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
     ```
 
-## See Also  
+## Related information  
 [Upgrading the Data](Upgrading-the-Data.md)   
 [Upgrading to Business Central](upgrading-to-business-central.md)

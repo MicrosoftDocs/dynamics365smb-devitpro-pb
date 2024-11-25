@@ -45,7 +45,7 @@ This procedure describes how to use the [!INCLUDE[admintool](../developer/includ
 
      This stops and restarts the service instance, and the service instance now connects to the converted database.  
 
-## See Also
+## Related information
   
 [Upgrading the Data](../upgrade/Upgrading-the-Data.md)  
 [Converting a Database](../upgrade/converting-a-database.md)  

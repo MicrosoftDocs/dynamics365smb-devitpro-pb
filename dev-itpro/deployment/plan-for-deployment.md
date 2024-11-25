@@ -63,7 +63,7 @@ For more information, see:
 [Configuring SSL to Secure the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Client Connection](configure-ssl-web-client-connection.md)
 
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)
 [Business Central Components](Product-and-Architecture-Overview.md)  

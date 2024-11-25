@@ -118,7 +118,7 @@ Table 10505 has been deleted. The following list shows additional fields that ar
 
 [!INCLUDE [fields-obsolete-uk](../includes/fields-obsolete-uk.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

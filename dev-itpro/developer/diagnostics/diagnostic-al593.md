@@ -21,6 +21,6 @@ The type of the parameter '{0}' on the event subscriber '{1}' has a smaller capa
 The capacity of the type of a parameter on an event subscriber is smaller than the capacity of type of the same parameter on the publisher, which will lead to a lossy conversion.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

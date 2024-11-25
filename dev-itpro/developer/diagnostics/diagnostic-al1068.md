@@ -21,6 +21,6 @@ Duplicate package dependency with application ID '{0}', and publisher '{1}'. Rem
 Multiple package dependencies with the same application ID and publisher have been defined.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

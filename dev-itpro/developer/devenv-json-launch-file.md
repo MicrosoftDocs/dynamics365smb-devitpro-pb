@@ -346,7 +346,7 @@ With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a 
 > [!NOTE]  
 > If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the user `settings.json` file won't be able to override it.
 
-## See also
+## Related information
 
 [JSON files](devenv-json-files.md)  
 [AL development environment](devenv-reference-overview.md)  

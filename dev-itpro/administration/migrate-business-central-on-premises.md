@@ -233,7 +233,7 @@ Users that are reassigned to the *Intelligent Cloud* <!--user group--> permissio
 > [!WARNING]
 > If you grant insert, modify or delete permissions to any resource in the application that was set to read-only, it could have a negative impact on the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you may have to clear all your data and rerun a full migration to correct this.
 
-## See also
+## Related information
 
 [Migrate on-premises data to Business Central online introduction](migrate-data.md)  
 [Intelligent Insights with Business Central Online](/dynamics365/business-central/about-intelligent-cloud)  

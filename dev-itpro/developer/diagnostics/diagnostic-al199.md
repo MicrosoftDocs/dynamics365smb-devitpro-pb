@@ -21,6 +21,6 @@ The type of the sum index field '{0}' must be numeric (Decimal, BigInteger, Inte
 Only fields of the numeric type (Decimal, BigInteger, Integer, or Duration) can be used as sum index fields.   
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

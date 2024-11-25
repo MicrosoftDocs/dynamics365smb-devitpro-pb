@@ -18,6 +18,6 @@ The value '{0}' for the property '{1}' cannot be used for '{2}' development.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -303,6 +303,6 @@ The following are limitations of ClickOnce installed on the [!INCLUDE[nav_window
 - An end user can send a list page to Excel, but can't refresh data from the Excel application.  
 - Third-party applications can't start the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)].  
   
-## See also
+## Related information
 
 [Deployment](Deployment.md)  

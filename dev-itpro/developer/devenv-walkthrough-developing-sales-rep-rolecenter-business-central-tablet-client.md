@@ -100,7 +100,7 @@ Simon now wants to test the Sales Rep Role Center that was created, and uses a b
 ## Next steps  
 Nancy now has a Role Center that gives access to most of the information needed when on the road. The next step for Simon is to refine the Sales Rep Role Center by adding more functionality, for example, the ability to retrieve more lists or making sure that Nancy can smoothly continue to work back at the office on the desktop computer.  
 
-## See Also  
+## Related information  
  [Designing for Different Screen Sizes on Tablet and Phone](devenv-Designing-Different-Screen-Sizes-Tablet-and-Phone.md)   
  [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-Differences-and-Limitations-Developing-Pages-business-central-Mobile-App.md)   
  [Designing Role Centers](devenv-designing-role-centers.md)  

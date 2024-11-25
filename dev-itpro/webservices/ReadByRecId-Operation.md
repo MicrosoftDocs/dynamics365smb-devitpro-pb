@@ -36,5 +36,5 @@ public void ReadById(String id)
 }  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

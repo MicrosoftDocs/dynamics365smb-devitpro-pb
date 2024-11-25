@@ -72,7 +72,7 @@ Use open-source tools such as [DocFx](https://dotnet.github.io/docfx/) to genera
 
 If you don't yet have a website that you publish content to, then there are several ways in which you can create such a site. For example, you can work with a web designer to build a site to host your content. We recommend deploying to [an Azure web app](/azure/app-service/overview). [!INCLUDE [prod_short](../developer/includes/prod_short.md)] doesn't require a special design of your website, unlike the now deprecated [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help Server. It's your choice what the website looks like, including the styling.  
 
-## See also
+## Related information
 
 [Configuring the Help Experience](../deployment/configure-help.md)  
 [Contribute to the Help](../help/contributor-guide.md)  

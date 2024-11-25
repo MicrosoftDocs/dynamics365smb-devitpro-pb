@@ -18,6 +18,6 @@ Defining the contract '{0}' on interface '{1}' is not allowed because it is matc
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

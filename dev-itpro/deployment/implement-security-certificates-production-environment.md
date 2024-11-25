@@ -215,6 +215,6 @@ After you have installed the root CA on the computer running the [!INCLUDE[nav_w
   
 When starting the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], users are prompted for a valid user name and password.
 
-## See Also
+## Related information
 
 [Authentication and User Credential Types](../administration/users-credential-types.md)

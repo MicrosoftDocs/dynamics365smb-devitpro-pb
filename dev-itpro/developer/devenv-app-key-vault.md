@@ -173,7 +173,7 @@ You can set up extensions to emit telemetry to an Application Insights resource 
 
 For more information, see [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md) and [Analyzing App Key Vault Secret Trace Telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
-## See also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)  
 [Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  

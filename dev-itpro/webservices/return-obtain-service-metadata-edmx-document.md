@@ -39,5 +39,5 @@ The following guidelines have been implemented for EDM.
   
      ![EDMX metadata.](../developer/media/EDMX.JPG "EDMX")  
   
-## See Also  
+## Related information  
  [OData Web Services](OData-Web-Services.md)

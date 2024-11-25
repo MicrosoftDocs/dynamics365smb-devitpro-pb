@@ -21,6 +21,6 @@ It is not allowed to assign a value to a field of FieldClass='{0}'.
 > This warning will become an error with Business Central 2024 release wave 2.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

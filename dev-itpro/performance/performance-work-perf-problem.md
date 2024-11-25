@@ -132,7 +132,7 @@ This example illustrates how you can use the performance tuning process and tele
 
 
 
-## See also
+## Related information
 
 [Performance overview](performance-overview.md)  
 [Performance topics For developers](performance-developer.md)  

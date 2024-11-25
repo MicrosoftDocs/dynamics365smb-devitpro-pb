@@ -21,6 +21,6 @@ Cannot calculate Sum or Average for the field {0} because it is not a numeric fi
 Only fields of the numeric type (Decimal, BigInteger, Integer, or Duration) can be used to calculate Sum or Average for a field.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

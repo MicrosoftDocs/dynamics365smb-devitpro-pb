@@ -21,6 +21,6 @@ The property value '{0}' on property '{1}' is not valid.
 The specified property value is not valid. For more information, refer to the property's documentation.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

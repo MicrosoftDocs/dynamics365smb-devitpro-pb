@@ -283,5 +283,5 @@ codeunit 50101 TemplateExtMgt
     end;
 }
 ```
-## See Also
+## Related information
 [Extending Application Areas](devenv-extending-application-areas.md)

@@ -47,7 +47,7 @@ The app will not be automatically uninstalled from customer environments. If the
 
 Even after you removed your offer from the AppSource marketplace, the apps are still stored in Business Central because there can still be customers using them.
 
-## See Also
+## Related information
 
 [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md)  
 [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md)  

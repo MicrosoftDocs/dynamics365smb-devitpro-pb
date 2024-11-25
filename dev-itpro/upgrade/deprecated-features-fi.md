@@ -24,7 +24,7 @@ When you create finance charge terms and reminder terms, for delayed payment pen
 
 [!INCLUDE [fields-obsolete-fi](../includes/fields-obsolete-fi.md)]
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

@@ -210,7 +210,7 @@ GROUP BY Customer."No."
 HAVING Qty  50  
 ```  
 
-## See also
+## Related information
 
 [Query object](devenv-query-object.md)  
 [Aggregating data](devenv-query-totals-grouping.md)  

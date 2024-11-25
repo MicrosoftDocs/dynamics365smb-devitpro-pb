@@ -47,7 +47,7 @@ After a rule is identified as long-running, it can be switched off in the [rules
 
 The next step is to access the settings and configure your projects to achieve satisfactory performance.
 
-## See Also
+## Related information
 
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Using the Code Analysis Tools with the ruleset](devenv-using-code-analysis-tool-with-rule-set.md)
