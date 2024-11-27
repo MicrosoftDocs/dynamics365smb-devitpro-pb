@@ -12,7 +12,7 @@ ms.collection: get-started
 
 # Arithmetic operators
 
-This article contains examples of how to use the type conversion rules for arithmetic operators. The examples illustrate how the operators should be used and the effect of the type conversion that the AL compiler performs. The examples are divided into groups corresponding to the data types in AL.  
+This article shows how to use type conversion rules for arithmetic operators in AL. The examples demonstrate operator usage and the effect of type conversion by the AL compiler. Examples are grouped by AL data types.
 
 ## Unary arithmetic operators
 
