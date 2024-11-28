@@ -633,7 +633,32 @@ codeunit 50108 "Shpfy Product Import Mapping"
     end;
 }
 ```
+#### Process imported product metafields
 
+The following example shows how to handle product metafields. Metafields are a flexible way to add and store additional information about a Shopify resource, such as a product or variant. 
+
+```al
+codeunit 50110 "Shpfy Product Metafields"
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnAfterCreateItem, '', false, false)]
+    procedure CreateSubstitutesOnAfterCreateItem(var Item: Record Item; var ShopifyProduct: Record "Shpfy Product")
+    var
+        Metafield: Record "Shpfy Metafield";
+        ItemSubstitution: Record "Item Substitution";
+    begin
+        Metafield.SetRange("Owner Type", Metafield."Owner Type"::Product);
+        Metafield.SetRange("Owner ID", ShopifyProduct.Id);
+        Metafield.SetRange(Name,'substitute');
+        if Metafield.FindFirst() then begin
+            ItemSubstitution.Init();
+            ItemSubstitution."No." := Item."No.";
+            ItemSubstitution."Substitute Type" := ItemSubstitution."Substitute Type"::Item;
+            ItemSubstitution.Validate("Substitute No.",SubstituteItem."No.");
+            ItemSubstitution.Insert(true);
+        end;
+    end;
+}
+```
 ## Related information
 
 [Extensibility overview](devenv-extensibility-overview.md)  
