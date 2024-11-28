@@ -18,8 +18,6 @@ In the sections that follow, replace the URL prefix for [!INCLUDE[prod_short](..
 > [!IMPORTANT]  
 > With [!INCLUDE[prod_short](../../includes/prod_short.md)] version 19, all webhook notifications sent from [!INCLUDE[prod_short](../../includes/prod_short.md)] will no longer contain the byte order mark (BOM), to align with RCF 7159, section 8.1.
 
-> [!NOTE]
-> If you've created custom entities, you must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, the URL would be `api/pub/grp/v1.0/subscriptions`.
 
 ## Register a webhook subscription
 
@@ -45,6 +43,10 @@ If [!INCLUDE[prod_short](../../includes/prod_short.md)] receives the response co
 ### Client state
 
 Optionally clientState can be provided in the `POST` and `PATCH` requests bodies. clientState is included in the body of a webhook notification and can be used as an opaque token; a shared secret, enabling the subscriber to verify notifications.
+
+## Custom APIs
+
+If you've created custom entities, the URL that you use for the request and the `resource` part of the request must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements equivalent to: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, part of the URL will contain these elements `api/pub/grp/v1.0/subscriptions`.
 
 ## Renewing the subscription
 
