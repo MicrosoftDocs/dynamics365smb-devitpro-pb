@@ -31,7 +31,6 @@ POST businesscentralPrefix/companies({id})/salesQuoteLines({salesQouteLineId})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **salesQuoteLine**, the **salesQuoteLine** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **salesQuoteLines** object.
