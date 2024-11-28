@@ -22,7 +22,7 @@ The specified data type is not valid for columns. Valid data types are Boolean, 
 
 ## Remarks
 > [!WARNING]
-> From Business Central 2021 release wave 1, a report column can no longer be of the type 'Variant'. For more information, see [Compiler Error AL0638](diagnostic-al638.md).
+> From Business Central 2021 release wave 1, report columns can no longer be of the type 'Variant'. For more information, see [Compiler Error AL0638](diagnostic-al638.md).
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
