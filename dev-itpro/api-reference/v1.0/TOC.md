@@ -202,7 +202,7 @@
 ### [Create shipment methods](api/dynamics_create_shipmentmethods.md)
 ### [Update shipment methods](api/dynamics_shipmentmethods_update.md)
 ### [Delete shipment methods](api/dynamics_shipmentmethods_delete.md)
-## [Subscription](resources/dynamics_subscription.md)
+## [Subscription](dynamics-subscription.md)
 ## [Tax area](resources/dynamics_taxarea.md)
 ### [Get tax area](api/dynamics_taxarea_get.md)
 ### [Create tax area](api/dynamics_create_taxarea.md)
