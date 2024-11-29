@@ -17,7 +17,8 @@ Updates a subscriptions object for [!INCLUDE[prod_short](../../../includes/prod_
 
 ## Custom APIs
 
-If you've created custom entities, the URL that you use for the request and the `resource` part of the request must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements equivalent to: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, part of the URL will contain these elements `api/pub/grp/v1.0/subscriptions`.
+If you're subscribing to a custom API page, both the URL you send the subscription HTTP request to and the resource path you wish to subscribe to must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements equivalent to: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, part of the URL will contain these elements `api/pub/grp/v1.0/subscriptions`.
+
 
 ## HTTP request
 
@@ -25,9 +26,6 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 ```
 PATCH businesscentralPrefix/subscriptions({'id'})
 ```
-
-> [!NOTE]
-> If you've created custom entities, you must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements in the URL. The format for the URL should be: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, the URL would be `api/pub/grp/v1.0/subscriptions`.
 
 ## Request headers
 |Header|Value|
