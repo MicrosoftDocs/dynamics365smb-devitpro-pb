@@ -20,7 +20,7 @@ Environments that have extensions with name collisions can experience issues whe
 
 ## General rules
 
-- The prefix/suffix must be at least three characters
+- The prefix/suffix must be at exactly three characters
 - The object/field name must start or end with the prefix/suffix
 - If a conflict arises, the one who registered the prefix/suffix always wins
 - For your own objects, you must set the prefix/suffix at the top object level
