@@ -207,9 +207,6 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 > 
 > *3) This country is available for deployment and transactions, but marketplace availability has been postponed. Therefore, ISV solutions from AppSource will not be accessible until further notice.*
 
-> [!NOTE]  
-> Microsoft will announce new planned countries for [!INCLUDE [prod_short](../includes/prod_short.md)] 2024 release wave 2 at October.
-
 Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
 
 Administrators can use the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] admin center to find the Azure region that their environments are in.
