@@ -18,7 +18,7 @@ ms.date: 08/12/2024
 
 In the rapidly evolving landscape of technology-driven businesses, finding a business management solution that seamlessly adapts to your organization's growth is paramount. Modern small and medium businesses (SMBs) are looking for a solution that doesn't just meet but anticipates the evolving needs of businesses in today's dynamic marketplace. 
 
-[!INCLUDE [prod_long](includes/prod_long.md)] online is a cloud-based ERP software solution for small and mid-sized organizations. It was launched in April 2018 and has since onboarded more than 30-K customers working in professional services, consumer goods, manufacturing, retail, health, hospitality, transport and logistics, finance, and dozens more industries. It has become a mature, battle-tested solution that understands the intricacies of modern business operations in the areas of security, scalability, performance, resilience, and high availability. 
+[!INCLUDE [prod_long](includes/prod_long.md)] online is a cloud-based ERP software solution for small and mid-sized organizations. It was launched in April 2018 and has since onboarded more than 40 thousandths customers working in professional services, consumer goods, manufacturing, retail, health, hospitality, transport and logistics, finance, and dozens more industries. It has become a mature, battle-tested solution that understands the intricacies of modern business operations in the areas of security, scalability, performance, resilience, and high availability. 
 
 The team that develops the Business Central product itself is the same team responsible for running and managing the Business Central online service. It has first-hand knowledge of all its components.
 
