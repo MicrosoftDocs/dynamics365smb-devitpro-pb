@@ -53,10 +53,9 @@ Here is an example of the request.
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/fixedAssetLocations({id})
 Content-type: application/json
 {
-    "id" : "",
-    "code" : "",
-    "displayName" : "",
-    "lastModifiedDateTime" : ""
+    "code": "ADM",
+    "displayName": "Administration, Building 1",
+    "lastModifiedDateTime": "2024-04-23T21:10:13.737Z"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
@@ -68,10 +67,10 @@ Here is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 {
-    "id" : "",
-    "code" : "",
-    "displayName" : "",
-    "lastModifiedDateTime" : ""
+    "id": "c5adcedf-b501-ef11-b3c3-83fe9ccecec3",
+    "code": "ADM",
+    "displayName": "Administration, Building 1",
+    "lastModifiedDateTime": "2024-04-23T21:10:13.737Z"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
