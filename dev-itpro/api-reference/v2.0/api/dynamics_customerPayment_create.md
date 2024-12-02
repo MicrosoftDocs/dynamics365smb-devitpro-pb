@@ -29,7 +29,6 @@ POST businesscentralPrefix/companies({id})/customerPayments({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **customerPayment**, the **customerPayment** will not be updated. |
 
 
 ## Request body

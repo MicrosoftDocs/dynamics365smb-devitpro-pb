@@ -32,7 +32,6 @@ POST businesscentralPrefix/companies({id})/purchaseCreditMemoLines({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **purchaseCreditMemoLine**, the **purchaseCreditMemoLine** will not be updated. |
 
 ## Request body
 
