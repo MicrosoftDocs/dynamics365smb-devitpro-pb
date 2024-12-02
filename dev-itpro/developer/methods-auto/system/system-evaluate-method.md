@@ -64,7 +64,7 @@ var
     Text002: Label 'VarYesNo = \#5\#\#\#\#\#\#. The return code is: %6.\\';  
     Text003: Label 'VarDuration = %7. The return code is: %8.';
 begin
-    Value := '19960101';  
+    Value := '010196';  
     Ok1 := Evaluate(VarInteger, Value);  
     Ok2 := Evaluate(VarDate, Value);  
     Ok3 := Evaluate(VarYesNo, Value);  
@@ -76,15 +76,15 @@ end;
   
 The message window displays the following:  
   
-**VarInteger = 10196   . The return code is: Yes.**  
+**VarInteger = 010196. The return code is: Yes.**  
   
 **VarDate = 01/01/96. The return code is: Yes.**  
   
-**VarYesNo = No      . The return code is: No.**  
+**VarYesNo = No. The return code is: No.**  
   
 **VarDuration = 2 days 4 hours 3 seconds 717 milliseconds. The return code is: Yes.**  
   
-This example shows that although Value \('19960101'\) can be interpreted as both an integer and a date expression, it cannot be interpreted as a Boolean expression. This causes an error, shown in the return code Ok3 \(=False\).  
+This example shows that although Value \('010196'\) can be interpreted as both an integer and a date expression, it can't be interpreted as a Boolean expression. This causes an error, shown in the return code Ok3 \(=False\).  
   
 This example also shows that when you evaluate a string as a duration data type, you can use certain words in the string to describe the duration. The following words or abbreviations are supported:  
   
