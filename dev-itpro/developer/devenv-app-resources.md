@@ -8,7 +8,7 @@ ms.reviewer: solsen
 ---
 # Adding and Accessing Resources in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions
 
-[!INCLUDE[2025_releasewave1](includes/2025rw1_and_later.md)]
+[!INCLUDE[2024_releasewave2_24.2](../includes/2024-releasewave2_24.2.md)]
 
 This article describes how to package and use resources with your extensions. Resources are arbitrary files that can be included with your extension and accessed at runtime. For example, you can include sample data, images, or any other file that will be used by your extension. Resources can only be accessed within the extension that includes them; it is not possible for extensions to access resources that are packaged with other extensions.
 
@@ -30,11 +30,13 @@ Resource folders can contain subfolders as well. Files within these subfolders w
 
 ## Accessing the resources from AL
 
-Resources can be accessed from AL code at runtime. There are two methods that can be used to interact with resources:
+Resources can be accessed from AL code at runtime. There are several methods that can be used to interact with resources:
 
 | Method | Description |
 |--------|-------------|
 | `NavApp.GetResource(ResourceName: Text; var ResourceStream: Instream; (Optional) Encoding: TextEncoding)` | Used to read the content of resource files at runtime |
+| `NavApp.GetResourceAsText(ResourceName: Text; (Optional) Encoding: TextEncoding): Text` | Used to read the content of resource files directly into a Text object |
+| `NavApp.GetResourceAsJson(ResourceName: Text; (Optional) Encoding: TextEncoding): JsonObject` | Used to read the content of resource files directly into a JsonObject |
 | `NavApp.ListResources((Optional) Filter: Text)` | Used to list available resources in an extension |
 
 The `ResourceName` of a resource is the path to the resource from the folder specified in the `resourceFolders` attribute of the app.json. For example, if you had the following project structure:
@@ -70,6 +72,18 @@ NavApp.ListResources(); // Will return ["Images/SampleImage1.png", "Images/Sampl
 NavApp.ListResources("Images") // Will return ["Images/SampleImage1.png", "Images/SampleImage2.png"]
 NavApp.ListResources("*.png"); // Will return ["Images/SampleImage1.png", "Images/SampleImage2.png", "Templates/Template2.png"]
 ```
+
+## Limits on resources
+
+The following limits are enforced on the resources you can include in an extension:
+
+| Limit | Value |
+|-------|-------|
+| Maximum size of any single resource file | 16 MB |
+| Maximum size of the total of all resource files | 256 MB |
+| Maximum number of resource files in an extension | 256 files |
+
+These limits are subject to change in the future.
 
 ## Limiting access to resources
 
