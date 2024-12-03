@@ -3,7 +3,7 @@ title: Testing the advanced sample extension
 description: Includes test code for the advanced example extension.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/03/2024
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
