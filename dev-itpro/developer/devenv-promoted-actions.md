@@ -1,22 +1,19 @@
 ---
-title: "Promoted Actions"
+title: Promoted actions
 description: Promoted actions are configured to display on the Home tab for accessing quick daily actions in Dynamics 365 Business Central. 
-ms.custom: na
-ms.date: 05/05/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 07/09/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 --- 
 
-# Promoted Actions
+# Promoted actions
 
-You can promote actions that are used more often than others and thereby ensure quick access to them. This type of actions is called *promoted actions*. Promoted actions are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. You can, however, choose to hide them on the Actions, Navigate, or Report menus and only show them on the Home tab. 
+You can promote actions that are used more often than others and thereby ensure quick access to them. This type of actions is called *promoted actions*. Promoted actions are either placed in the Home menu or in suitable menus and groups named so users know what to expect in each.  
 
-Promoted actions can be used on Card, Document, List, ListPlus, and Worksheet pages to provide quick access to common tasks that appear under the Home tab. 
+Promoted actions can be used on Card, Document, List, ListPlus, and Worksheet pages to provide quick access to common tasks.
 
-## Promoted actions using the actionref syntax
+## Promoting actions using the actionref syntax
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
@@ -24,11 +21,11 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the wa
 
 In [!INCLUDE [prod_short](includes/prod_short.md)] the new action bar is enabled when the feature flag **Modern Action Bar** on the **Feature Management** page is set to *Enabled*. The flag can be switched off to simulate legacy behavior, but the promoted action code in the base application uses the `actionref` syntax.
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > The [legacy syntax](devenv-promoted-actions.md#promoting-actions-by-category-legacy-syntax) for defining promoted actions is still supported in releases going forward, but it's recommended to implement the new syntax.
 
 > [!NOTE]  
-> Removing the Promoted property on a published action is considered a breaking change. For more information, see [AppSourceCop Error AS0031](analyzers/appsourcecop-as0031.md) and [UICop Warning AW0013](analyzers/uicop-aw0013.md).
+> Removing the `Promoted` property on a published action is considered a breaking change. For more information, see [AppSourceCop Error AS0031](analyzers/appsourcecop-as0031.md) and [UICop Warning AW0013](analyzers/uicop-aw0013.md).
 
 To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. An `actionref` can only be defined in the `area(Promoted)` section. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action. For page extensions, you can add to existing groups and you can add new groups. 
 
@@ -38,9 +35,9 @@ For more information about behavioral changes introduced with the new action bar
 
 As part of the new programming model for promoted actions, you can combine multiple actions into a split button to help organize the actions that you're promoting, thereby reducing clutter and improving coherence and closeness of related actions. A split button can be defined for a page action group, which renders as a combination of a button and a menu. Use the `ShowAs` property to specify that a certain page action group should render as a split button. For more information, see [ShowAs Property](properties/devenv-showas-property.md).
 
-### Syntax example
+### `actionref` syntax example 
 
-This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar and it will be promoted because it's added to the `area(Promoted)` section, which defines the actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the **Processing** group, also is promoted for easy access on the page.<!--?? check with deprecation and new behavior -->. Also, the example illustrates using a split button for `Group2` where two `actionref`s 
+This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar and it will be promoted because it's added to the `area(Promoted)` section, which defines the actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the **Processing** group, also is promoted for easy access on the page.<!--?? check with deprecation and new behavior -->. Also, the example illustrates using a split button for `Group2` where two `actionref`s are included in the button.
 
 ```al
 page 50105 ActionRefPage
@@ -85,7 +82,6 @@ page 50105 ActionRefPage
         }
     }
 }
-
 ```
 
 ### Extensibility and compatibility
@@ -242,15 +238,15 @@ page 50103 Customers
 
 For more examples of how to use actions, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
 
-## See Also
+## Related information
 
-[Actions Overview](devenv-actions-overview.md)  
-[Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  
-[Behavioral Changes for Promoted Actions](devenv-promoted-actions-behavioral-changes.md)  
+[Actions overview](devenv-actions-overview.md)  
+[Adding actions to a page](devenv-adding-actions-to-a-page.md)  
+[Behavioral changes for promoted actions](devenv-promoted-actions-behavioral-changes.md)  
 [Actions in AL](devenv-actions-overview.md)  
-[Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  
-[Actions in the User Interface](devenv-actions-user-interface.md)  
-[How to Promote Actions](devenv-promoted-actions.md)  
-[Organizing Promoted Actions](devenv-organizing-promoted-actions.md)  
-[Common Promoted Action Groups](devenv-common-promoted-action-groups.md)  
-[Action Bar Improvements](devenv-action-bar-improvements.md)  
+[Adding actions to a page](devenv-adding-actions-to-a-page.md)  
+[Actions in the user interface](devenv-actions-user-interface.md)  
+[How to promote actions](devenv-promoted-actions.md)  
+[Organizing promoted actions](devenv-organizing-promoted-actions.md)  
+[Common promoted action groups](devenv-common-promoted-action-groups.md)  
+[Action bar improvements](devenv-action-bar-improvements.md)  

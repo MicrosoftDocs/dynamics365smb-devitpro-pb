@@ -3,11 +3,10 @@ title: CREATE customerPaymentJournals
 description: Creates a customerPaymentJournal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create customerPaymentJournals
@@ -29,7 +28,6 @@ POST businesscentralPrefix/companies({id})/customerPaymentJournals({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **customerPaymentJournal**, the **customerPaymentJournal** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **customerPaymentJournals** object.
@@ -72,7 +70,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [customerpaymentjournal](../resources/dynamics_customerpaymentjournal.md)    
 [Get customerpaymentjournal](dynamics_customerpaymentjournal_Get.md)    

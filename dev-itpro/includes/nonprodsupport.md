@@ -1,9 +1,9 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
-ms.reviewer: edupont
-ms.date: 05/30/2022
-ms.author: edupont
+ms.reviewer: jswymer
+ms.date: 06/20/2024
+ms.author: jswymer
 ---
 |For questions related to               |Contact               |
 |---------------------------------------|----------------------|
@@ -15,4 +15,4 @@ ms.author: edupont
 |Incentives |Email [CSA Team](mailto:mbscsa@microsoft.com)|
 |Cloud Solution Provider incentives|Email [Online Channel Incentives Support](mailto:ocina@microsoft.com) |
 |CSA/Ocina escalations| Email [NAOC Channel Incentives Escalations](mailto:naoccies@microsoft.com) |
-|Volume licensing |The [Call Logging Tool](https://clt.partners.extranet.microsoft.com/clt/) site or email [Online Licensing](mailto:mvlohelp@microsoft.com)|
+|Volume licensing |The [Call logging tool on Microsoft Partner Self Serve](https://partnerselfserve.microsoft.com/Info/ContactUs) site or email [Online Licensing](mailto:mvlohelp@microsoft.com)| 

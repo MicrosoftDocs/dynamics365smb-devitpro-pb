@@ -1,13 +1,8 @@
 ---
 title: User Interface Language Change
 description: Change the language used for captions in windows, command buttons, and UI elements from the Developer Environment and Windows Client in Dynamics NAV.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 74eabc9d-1fe8-42c0-ac1c-2491d075ad73
 caps.latest.revision: 10
 ---

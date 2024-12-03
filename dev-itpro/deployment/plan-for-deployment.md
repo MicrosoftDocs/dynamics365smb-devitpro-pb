@@ -1,10 +1,6 @@
 ---
 title: Plan for Deployment
 description: Get an overview of things you should consider and decide on before deploying
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ms.date: 04/01/2021
@@ -67,7 +63,7 @@ For more information, see:
 [Configuring SSL to Secure the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Client Connection](configure-ssl-web-client-connection.md)
 
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)
 [Business Central Components](Product-and-Architecture-Overview.md)  

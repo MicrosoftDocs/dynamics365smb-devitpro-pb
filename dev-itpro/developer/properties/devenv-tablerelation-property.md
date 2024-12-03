@@ -1,14 +1,11 @@
 ---
-title: "TableRelation Property"
+title: "TableRelation property"
 description: "Sets up a lookup into another table."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -29,7 +26,7 @@ TableRelation = <TableName>[.<FieldName>] [WHERE(<TableFilters>)] |
 
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -94,8 +91,8 @@ table 50120 TableWithRelation
     }
   }
 }
-
 ```
+
 The next code sample implements a table extension of the table defined above and an enum extension. The combined table relation is evaluated top-down. That means that the first unconditional relation will prevail, meaning that you cannot change an existing `TableRelation` from Customer to Item, since the original table relation is unconditional. 
 
 ```AL
@@ -117,7 +114,7 @@ tableextension 50135 TableWithRelationExt extends TableWithRelation
 ```
 
   
-## See Also
+## Related information
 
 [ValidateTableRelation Property](devenv-validatetablerelation-property.md)  
 [TestTableRelation Property](devenv-testtablerelation-property.md)

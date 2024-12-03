@@ -1,11 +1,7 @@
 ---
 title: "Insert, Modify, ModifyAll, Delete, and DeleteAll Methods"
 description: Describes how to use the Insert, Modify, ModifyAll, Delete, and DeleteAll methods in Business Central
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -152,6 +148,6 @@ Customer.DeleteAll;
 > When you use DeleteAll (true), a copy of the AL variable with its initial values is created. This means that when you use DeleteAll(true) to run the OnDelete trigger, all the changes that were made to the variables in the method or codeunit that is making the call cannot be seen in the OnDelete trigger. If you want to see the changes that you made to the variables, you must use Delete(true) in a loop. There is no difference in performance between using DeleteAll(true) and using Delete(true) in a loop.
 
 
-## See Also
+## Related information
 [AL Methods](./methods-auto/library.md)  
 [SystemId Field](devenv-table-system-fields.md#systemid)

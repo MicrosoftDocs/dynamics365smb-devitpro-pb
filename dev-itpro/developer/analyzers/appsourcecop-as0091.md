@@ -2,13 +2,10 @@
 title: "AppSourceCop Error AS0091"
 description: "One or more dependencies of the previous version of the extension, used as a baseline for detecting breaking changes, could not be found in the package cache folder."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -36,7 +33,7 @@ If you do not want to detect breaking changes in your extension, remove the prop
 
 If you want to detect breaking changes, verify that the version specified in the AppSourceCop.json file is correct and that the baseline's dependencies can be found in the baseline package cache.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

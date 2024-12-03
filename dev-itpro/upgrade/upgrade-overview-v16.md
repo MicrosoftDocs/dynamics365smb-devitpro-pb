@@ -1,13 +1,11 @@
 ---
 title: "Upgrade to Business Central 2020 Wave 1"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: overview
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2020 Release Wave 1
 <!--
@@ -86,7 +84,7 @@ For information about migrating an on-premises solution to online, see [Migrate 
 
 
   
-## See Also  
+## Related information  
  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

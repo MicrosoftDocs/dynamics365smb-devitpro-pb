@@ -3,12 +3,9 @@ title: "Database Wait Statistics in Dynamics 365 Business Central"
 description: "Description about wait statistics page"
 author: jswymer
 ms.date: 06/21/2022
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: 
+ms.topic: conceptual
 ms.author: jswymer
-ms.custom: 
+ms.reviewer: jswymer
 ---
 
 # Database Wait Statistics in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]
@@ -26,7 +23,7 @@ Buffer IO, and so on. For more information about these objects, see [SQL Server,
 You can also emit this data to telemetry and can analyze it in Application Insights. To do this, choose the **Emit telemetry** icon from the tab. To set the telemetry signal for the application, see [Monitoring and Analyzing Telemetry](telemetry-overview.md). To know more about which information you'll get in Application Insights and how to analyze it, see [Analyzing Database Wait Statistics Telemetry](telemetry-database-wait-statistics-trace.md).
 
 
-## See Also
+## Related information
 
 [sys.dm_os_wait_stats (Transact- SQL)](/sql/relational-databases/system-dynamic-management-views/sys-dm-os-wait-stats-transact-sql)  
 [How to work with a Performance problem](../performance/performance-work-perf-problem.md)  

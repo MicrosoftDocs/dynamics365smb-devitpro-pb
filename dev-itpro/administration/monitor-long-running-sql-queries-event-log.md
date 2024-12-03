@@ -1,11 +1,10 @@
 ---
 title: "Monitoring Long Running SQL Queries to the Event Log"
 description: This topic provides an overview on how to monitor long running SQL queries in the event log starting with NAV 2017. 
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
@@ -123,7 +122,7 @@ If you have access to an Application Insights resource in Microsoft Azure, you c
 -->
 
 
-## See Also
+## Related information
 
 [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md)  
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  

@@ -2,11 +2,7 @@
 title: "How to: Export the Application Tables to a Dedicated Database"
 description: Learn how to export application tables from one database to a dedicated database.
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 0f5cdab3-c8f9-4a02-9f81-837f2f1a39e8
 caps.latest.revision: 14
@@ -101,7 +97,7 @@ Mount-NAVTenant –ServerInstance ‘nav_server_instance’ -Id tenant1 –Datab
 > [!TIP]  
 >  For an example of how you can automate the process of transferring user accounts from the original database to the new application database, see the HowTo-ExportNAVApplicationDatabase.ps1 sample script. This and other sample scripts are in the **…\\Windows PowerShell\\Upgrade\\** folder on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] product media. The ExportNAVApplicationDatabase.ps1 sample script can be run in the context of the NAVUpgradeSamples.psm1 script module file. When you call a script such as this, it will export the application tables to a new application database and copy all accounts and SQL Server user roles to the application database. To only transfer the account that the [!INCLUDE[server](../developer/includes/server.md)] instance uses, use the *–ServiceAccount* parameter for the **Export-NAVApplication** cmdlet. In the examples in this topic, this parameter has not been specified. As a result, the default account, NT AUTHORITY\\NETWORK SERVICE, is set up with the required user roles.  
 
-## See Also  
+## Related information  
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview)   

@@ -3,11 +3,10 @@ title: Get agedAccountsPayable
 description: Gets an aged accounts payable object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 02/01/2023
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get agedAccountsPayable
@@ -67,6 +66,6 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [agedaccountspayable](../resources/dynamics_agedaccountspayable.md)    

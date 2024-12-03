@@ -1,24 +1,22 @@
 ---
-title: "XmlDocument Data Type"
+title: "XmlDocument data type"
 description: "Represents an XML document."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDocument Data Type
+# XmlDocument Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents an XML document.
 
 
+## Static methods
 The following methods are available on the XmlDocument data type.
 
 
@@ -31,6 +29,7 @@ The following methods are available on the XmlDocument data type.
 |[ReadFrom(InStream, var XmlDocument)](xmldocument-readfrom-instream-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
 |[ReadFrom(InStream, XmlReadOptions, var XmlDocument)](xmldocument-readfrom-instream-xmlreadoptions-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
 
+## Instance methods
 The following methods are available on instances of the XmlDocument data type.
 
 |Method name|Description|
@@ -69,6 +68,6 @@ The following methods are available on instances of the XmlDocument data type.
 |[WriteTo(XmlWriteOptions, var Text)](xmldocument-writeto-xmlwriteoptions-text-method.md)|Serializes and saves the current node to the given variable.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

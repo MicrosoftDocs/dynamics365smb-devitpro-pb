@@ -2,13 +2,10 @@
 title: "Variant.IsText() Method"
 description: "Indicates whether an AL variant contains a Text variable."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -25,7 +22,6 @@ Ok :=   Variant.IsText()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *Variant*  
 &emsp;Type: [Variant](variant-data-type.md)  
@@ -42,7 +38,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 ## Example  
  The following example determines whether an AL variant contains a text variable. The code initializes the MyText variable with a text value. The MyText variable is assigned to the variant variable that is named MyVariant. The **IsText** method determines whether the variant contains a text variable and stores the return value in the varResult variable. In this case, the variant contains a text variable so **Yes** is returned and displayed in a message box. The **IsCode** method determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code. 
 
-```  
+```al
 var
     MyText: Text[50];
     MyVariant: Variant;
@@ -59,7 +55,7 @@ begin
 end;
 ```  
 
-## See Also
+## Related information
 [Variant Data Type](variant-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

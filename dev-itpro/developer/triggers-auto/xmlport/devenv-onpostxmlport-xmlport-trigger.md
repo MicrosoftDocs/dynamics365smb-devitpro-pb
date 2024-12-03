@@ -1,20 +1,17 @@
 ---
-title: "OnPostXmlPort (Xml Port) Trigger"
+title: "OnPostXmlPort (Xml Port) trigger"
 description: "Runs after the XMLPort is run."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnPostXmlPort (Xml Port) Trigger
+# OnPostXmlPort (Xml Port) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs after the XMLPort is run.
@@ -35,6 +32,6 @@ end;
 ## Remarks  
  This trigger is run after all data items are processed.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -1,17 +1,14 @@
 ---
-title: "Working with Sandboxes and Entitlements"
-description:
+title: Working with sandboxes and entitlements
+description: Learn about development sandboxes and entitlements.
 ms.author: freddyk
-ms.reviewer: solsen
-ms.custom: na
-ms.date: 04/01/2021
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
+ms.date: 01/04/2024
 ms.topic: conceptual
 author: freddydk
 ---
 
-# Working with Development Sandboxes and Entitlements
+# Working with development sandboxes and entitlements
 
 The experience that a user has in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] depends on the purchased subscription plan. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two main plans; the Essential and the Premium plan, plus a few more. For more information, see [Licensing in Dynamics 365 Business Central](../deployment/licensing.md). For detailed information about the Essential and Premium plans, see [Business Central](https://dynamics.microsoft.com/business-central/overview/) on the Microsoft Dynamics 365 site.  
 
@@ -29,13 +26,13 @@ To mimic users with a specific subscription plan assigned, you can set them up w
 
 |User Name <br>The type of subscription plan <br> assigned to the given user|User Groups|
 |---------|-----------
-|EXTERNALACCOUNTANT<br><br>Dynamics 365 Business Central External Accountant|D365 EXT. ACCOUNTANT<br>EXTEND. MGT. - ADMIN (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
-|PREMIUM<br><br>Dynamics 365 Business Central Premium<br>Dynamics 365 Business Central for IWs|D365 BUS PREMIUM<br>EXTEND. MGT. - ADMIN (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
-|ESSENTIAL<br><br>Dynamics 365 Business Central Essential|D365 BUS FULL ACCESS<br>EXTEND. MGT. - ADMIN (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
-|INTERNALADMIN<br><br>Internal Administrator (Microsoft 365 Global administrator role)|D365 INTERNAL ADMIN<br>D365 TROUBLESHOOT<br>D365 BACKUP/RESTORE<br>D365 SECURITY (non-default)|
+|EXTERNALACCOUNTANT<br><br>Dynamics 365 Business Central External Accountant|D365 EXT. ACCOUNTANT<br>EXTEN. MGT. - ADMIN (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
+|PREMIUM<br><br>Dynamics 365 Business Central Premium<br>Dynamics 365 Business Central for IWs|D365 BUS PREMIUM<br>EXTEN. MGT. - ADMIN (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
+|ESSENTIAL<br><br>Dynamics 365 Business Central Essential|D365 BUS FULL ACCESS<br>EXTEN. MGT. - ADMIN (non-default)<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
+|INTERNALADMIN<br><br>Internal Administrator|D365 INTERNAL ADMIN<br>D365 TROUBLESHOOT<br>D365 BACKUP/RESTORE<br>D365 SECURITY (non-default)|
 |TEAMMEMBER<br><br>Dynamics 365 for Team Members|D365 TEAM MEMBER<br>D365 TROUBLESHOOT (non-default)<br>D365 SECURITY (non-default)|
-|DEVICE    <br><br>Dynamics 365 Business Central Device|D365 FULL ACCESS<br>EXTEND. MGT. - ADMIN (non-default)<br>D365 BUS PREMIUM (non-default)* <br>D365 TROUBLESHOOT (non-default)<br><br>D365 SECURITY (non-default)<br><br> *) Please note: usage need to be according to terms in Licensing Guide |
-|DELEGATEDADMIN<br><br>Delegated Admin agent - Partner<br>Delegated Helpdesk agent - Partner|EXTEND. MGT. - ADMIN<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 BACKUP/RESTORE<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|
+|DEVICE    <br><br>Dynamics 365 Business Central Device|D365 FULL ACCESS<br>EXTEN. MGT. - ADMIN (non-default)<br>D365 BUS PREMIUM (non-default)* <br>D365 TROUBLESHOOT (non-default)<br><br>D365 SECURITY (non-default)<br><br> *) Please note: usage need to be according to terms in Licensing Guide |
+|DELEGATEDADMIN<br><br>Delegated Admin agent - Partner<br>Delegated Helpdesk agent - Partner|EXTEN. MGT. - ADMIN<br>D365 FULL ACCESS<br>D365 RAPIDSTART<br>D365 BACKUP/RESTORE<br>D365 TROUBLESHOOT<br>D365 SECURITY (non-default)|
 
 > [!TIP]  
 > For more information about how to choose a user experience, see [Changing Which Features are Displayed](/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features).
@@ -49,11 +46,11 @@ If you use [https://aka.ms/bcsandbox](https://aka.ms/bcsandbox) to create your [
 **Assign Premium Plan** specifies whether or not your admin user should be assigned a Premium plan. **Create Test Users** specifies whether or not you want the setup to include test users. 
 
 ### BCContainerHelper
-If you are using `New-BCContainer` to create your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Sandbox container, you must make sure that you are using version 0.2.8.3 or later.
+If you're using `New-BCContainer` to create your [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Sandbox container, you must make sure that you're using version 0.2.8.3 or later.
 
 Use the switch `assignPremiumPlan` on `New-BCContainer` like this:
 
-```
+```powershell
 New-BCContainer -accept_eula -updateHosts -containerName test -artifactUrl (Get-BCArtifactUrl -country us) -assignPremiumPlan
 ```
 
@@ -61,22 +58,22 @@ This assigns the Premium plan to your default admin user. Internally this just a
 
 To create the test users, you must call the `Setup-BCContainerTestUsers` method:
 
-```
+```powershell
 Setup-BCContainerTestUsers containerName test -tenant default -password $securePassword
 ```
 
 specifying the container and the password that you want to use for the new users.
 
-Internally, the `Setup-BCContainerTestUsers` downloads an app which exposes an API, publishes and installs the app, and then invokes the `CreateTestUsers` API with the password needed. After this, the app is uninstalled and unpublished.
+Internally, the `Setup-BCContainerTestUsers` downloads an app that exposes an API, publishes and installs the app, and then invokes the `CreateTestUsers` API with the password needed. After this, the app is uninstalled and unpublished.
 
-If you want to see code behind the app, it is available [here](https://github.com/businesscentralapps/createtestusers).
+If you want to see code behind the app, it's available [here](https://github.com/businesscentralapps/createtestusers).
 
 ### Docker run
-If you are using Docker run to run your containers, you have a little more work to do.
+If you're using Docker run to run your containers, you have a little more work to do.
 
 First of all, you must override the `SetupNavUsers.ps1` by sharing a local folder to `c:\run\my` in the container and place a file called `SetupNavUsers.ps1` in that folder with the following content:
 
-```
+```powershell
 # Invoke default behavior
 . (Join-Path $runPath $MyInvocation.MyCommand.Name)
  
@@ -93,10 +90,10 @@ This will assign the Premium plan to the admin user in the database.
 > [!TIP]  
 > To set up test users, you can clone the [createtestusers](https://github.com/businesscentralapps/createtestusers) repository and modify the code to create the users on the `oninstall` trigger with the password that you want.
 
-## See Also
+## Related information
 
-[Programming in AL](devenv-programming-in-al.md)  
-[Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md)  
-[Container Sandbox](devenv-get-started-container-sandbox.md)  
-[Changing Which Features are Displayed](/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features)  
+[Programming in AL](devenv-programming-in-al.md)    
+[Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md)    
+[Container Sandbox](devenv-get-started-container-sandbox.md)    
+[Changing Which Features are Displayed](/dynamics365/business-central/ui-experiences#choosing-a-user-experience-to-show-or-hide-features)    
 [Production and Sandbox Environments](../administration/environment-types.md)  

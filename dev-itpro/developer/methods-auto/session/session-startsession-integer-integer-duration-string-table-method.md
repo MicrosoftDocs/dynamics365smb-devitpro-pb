@@ -2,13 +2,10 @@
 title: "Session.StartSession(var Integer, Integer, Duration [, Text] [, var Record]) Method"
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -61,7 +58,7 @@ The session is started on the same [!INCLUDE[prod_short](../../includes/prod_sho
 
 For information about how dialog boxes are handled in a background session, see [Dialog box behavior](session-startsession-integer-integer-string-table-method.md#dialog-box-behavior).  
 
-## See Also
+## Related information
 [Session Data Type](session-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

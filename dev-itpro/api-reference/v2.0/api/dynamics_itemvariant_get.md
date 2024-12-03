@@ -3,11 +3,10 @@ title: GET itemVariants
 description: Gets a itemVariant object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get itemVariants
@@ -60,7 +59,7 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [itemvariant](../resources/dynamics_itemvariant.md)    
 [Delete itemvariant](dynamics_itemvariant_Delete.md)    

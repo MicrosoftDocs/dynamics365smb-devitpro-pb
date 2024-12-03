@@ -1,14 +1,11 @@
 ---
-title: "TransactionType Property"
+title: "TransactionType property"
 description: "Sets the transaction type."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -22,7 +19,7 @@ Sets the transaction type.
 -   Xml Port
 -   Report
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -55,7 +52,7 @@ The following table shows transaction behavior with SQL Server.
   
 Report and XMLport objects have a **TransactionType** property, which you can view and modify in the **Properties** window. The **TransactionType** property that is specified on a report or XMLport object is used only when you run the report or XMLport from Object Designer.  
   
-## See Also
+## Related information
 
 [Isolation Levels in the Database Engine](/previous-versions/sql/sql-server-2008-r2/ms189122(v=sql.105))  
 [CurrentTransactionType Method \(Database\)](../methods-auto/database/database-currenttransactiontype-method.md)

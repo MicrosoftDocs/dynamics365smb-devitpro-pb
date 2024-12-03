@@ -1,14 +1,11 @@
 ---
-title: "TestIsolation Property"
+title: "TestIsolation property"
 description: "Specifies which changes to the database to roll back after the tests in the test runner codeunit execute."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +18,7 @@ Specifies which changes to the database to roll back after the tests in the test
 ## Applies to
 -   Codeunit
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -45,7 +42,7 @@ We recommend that you design tests to be independent of each other. Tests might 
 > [!NOTE]  
 > If you specify that you want to roll back database changes, then all database changes are rolled back, including changes that were explicitly committed to the database during the test by using the [Commit Method](../methods-auto/database/database-commit-method.md).  
 
-## See Also
+## Related information
 
 [TestPermissions Property](devenv-testpermissions-property.md)  
 [Properties](devenv-properties.md)

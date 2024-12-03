@@ -1,11 +1,11 @@
 ---
 title: "Designing ListParts"
 description: "Design and implementation tips for page part of type ListPart."
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: brobledodiaz
 author: blrobl
+ms.reviewer: jswymer
 ---
 
 # Working with List Parts
@@ -91,7 +91,7 @@ page 50102 "Customer Card"
 }
 ```
 
-## See Also
+## Related information
 
 [Page Parts Overview](devenv-designing-parts.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  
@@ -101,5 +101,5 @@ page 50102 "Customer Card"
 [Adding a FactBox to a page](devenv-adding-a-factbox-to-page.md)   
 [CardPart Pages](devenv-designing-cardparts.md)   
 [AL Development Environment](devenv-reference-overview.md)  
-[Using Designer](devenv-inclient-designer.md) 
+[Use Designer](devenv-inclient-designer.md) 
 

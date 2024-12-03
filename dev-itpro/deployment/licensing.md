@@ -1,12 +1,11 @@
 ---
-title: "Licensing in Business Central"
+title: Licensing in Business Central
 author: jswymer
 description: Provides an overview of the licensing in Business Central
-ms.reviewer: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 03/23/2022
+ms.date: 08/08/2024
+ms.reviewer: solsen
 ---
 
 # Licensing in Dynamics 365 Business Central
@@ -15,13 +14,13 @@ ms.date: 03/23/2022
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses can only be purchased through CSP. Microsoft offers several types of paid licenses for business users:
 
-- Essential  
+- Essentials  
 - Premium  
 - Team Member  
 - External Accountant  
 - Microsoft also offers read-only access to [!include[prod_short](../developer/includes/prod_short.md)] through Microsoft 365 licenses, as an addition to Premium or Essentials plans
 
-Prospects and customers can also subscribe for an evaluation version by using self-service sign-up, also known as the viral trial. This subscription comes with 10,000 licenses, and partners can use such viral trials to let prospects explore [!INCLUDE [prod_short](../includes/prod_short.md)] using non-production companies. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md).  
+Prospects and customers can also subscribe for an evaluation version by using self-service sign-up, also known as the viral trial. This subscription comes with 10,000 licenses, and partners can use such viral trials to let prospects explore [!INCLUDE [prod_short](../includes/prod_short.md)] using nonproduction companies. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md).  
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
@@ -29,13 +28,18 @@ Prospects and customers can also subscribe for an evaluation version by using se
 
 Behind the scenes, the **Entitlements** table defines license permissions per object. Entitlements are grouped in the **Entitlement Set** table, and then each entitlement set is associated with one of the four Microsoft Entra ID service plans.  
 
-This condition means that when a user purchases, for example, an Essential license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essential) from Microsoft Entra ID. Then, we load the corresponding entitlements as license permissions.  
+This condition means that when a user purchases, for example, an Essentials license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essentials) from Microsoft Entra ID. Then, we load the corresponding entitlements as license permissions.  
 
 > [!NOTE]
 > For more information about the different types of licenses and how licensing works in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], see the Dynamics 365
 Licensing Guide, which you can download from [https://go.microsoft.com/fwlink/?LinkId=866544](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## Entitlements and user groups
+
+> [!NOTE]  
+> With the next major release, version 25.0, user groups are deprecated and replaced with composable permission sets and security groups. For more information, see [Migrate from User Groups to Permission Sets or Security Groups](../upgrade/deprecated-features-user-groups.md).
+> 
+> User groups are replaced with security groups. For more information, see [Create users according to licenses](/dynamics365/business-central/ui-how-users-permissions)
 
 *Entitlements* are permissions that describe which objects in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] a user is entitled to use according to their Microsoft Entra role or the license they purchased from Microsoft.  
 
@@ -55,7 +59,7 @@ Now, you can explore such functionality by creating an evaluation company in eit
 
 ## Reassigning licenses
 
-The licensing terms in the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) document don't allow temporary assignment of a license that belongs to one user to another user.
+The licensing terms in the [Online Services Terms](https://go.microsoft.com/fwlink/?LinkId=2180986) <!--(https://www.microsoft.com/licensing/product-licensing/products)-->document don't allow temporary assignment of a license that belongs to one user to another user.
 
 Most, but not all, licenses can be reassigned. Except as permitted in this paragraph or in the Online Service-specific Terms, the customer can't reassign a license on a short-term basis, meaning within 90 days of the latest assignment. The customer can reassign a license on a short-term basis to cover a user's absence or the unavailability of a device that is out of service. Reassignment of a license for any other purpose must be permanent. When a customer reassigns a license from one device or user to another, they must block access and remove any related software from the former device or from the former user's device.
 
@@ -67,7 +71,7 @@ Your company's Microsoft 365 administrator or Microsoft partner can create the *
 
 ### Device user features and limitations
 
-Users with the Device license can now set up jobs to run as scheduled tasks in the job queue of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. Device users are concurrent users and when it's time to run their scheduled tasks, they'll be automatically signed in to run their tasks in background sessions. When their tasks are running, each of them is considered present in the system and using a device license. 
+Users with the Device license can now set up jobs to run as scheduled tasks in the job queue of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. Device users are concurrent users and when it's time to run their scheduled tasks, they are automatically signed in to run their tasks in background sessions. When their tasks are running, each of them is considered present in the system and using a device license. 
 
 In terms of limitations, a device user can't be the first user to sign in. A user of type Administrator, Full User, or External Accountant must be the first to sign in so they can set up [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Administration of Business Central Online](../administration/tenant-administration.md).  
 
@@ -104,7 +108,7 @@ Microsoft 365 users can access [!INCLUDE [prod_short](../developer/includes/prod
 
 For a detailed overview of the use rights, minimum requirements and which Microsoft 365 plans are supported, see [Business Central Access with Microsoft 365 Licenses](/dynamics365/business-central/admin-access-with-m365-license).
 
-## See Also  
+## Related information  
 
 [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](Deployment.md)  

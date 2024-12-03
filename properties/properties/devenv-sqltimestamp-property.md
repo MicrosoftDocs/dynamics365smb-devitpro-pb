@@ -1,11 +1,9 @@
 ---
 title: "SQLTimestamp Property"
 description: Describes the SQLTimestanp property on table fields in Business Central
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 615d15ba-5d0e-4071-bfa2-c262c1dccbf4
 caps.latest.revision: 3

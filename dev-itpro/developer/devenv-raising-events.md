@@ -1,11 +1,7 @@
 ---
 title: "Raising Events"
 description: This article describes how to modify the application to raise an event in Dynamics 365 Business Central. 
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -57,7 +53,7 @@ To learn about how the event used in this example is published, see [Publishing 
 
 The next step would be to subscribe to the event to handle to condition. To see an example of how to subscribe to this event, see [Subscribing to Events Example](devenv-subscribing-to-events.md#example-1).  
 
-## See Also
+## Related information
 
 [Publishing Events](devenv-publishing-events.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)   

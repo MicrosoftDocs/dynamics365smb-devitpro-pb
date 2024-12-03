@@ -2,13 +2,10 @@
 title: "ErrorInfo.ErrorType([ErrorType]) Method"
 description: "Specifies type of the error."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -42,7 +39,10 @@ The current error type of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+
+## Related information
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[AL error handling](../../devenv-al-error-handling.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

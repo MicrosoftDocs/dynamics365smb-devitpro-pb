@@ -2,13 +2,10 @@
 title: "Media.ExportFile(Text) Method"
 description: "Exports the media object (such as an image) that is currently used on record to a file on your computer or network."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -55,8 +52,8 @@ Specifies the full path and name of the file to create for the exported media.
 
 The code iterates over records in the **My Items** table. If a media object is referenced in the *Image* field, the media is exported to a file in the *C:\images* folder. The file is given a name in the format *ItemNN.jpg*, where *NN* is the number assigned to item record in the table, as specified by the **No.** field.
 
-```  
- var
+```al 
+var
     myItemRec: Record "My Items";
     fileName: Text;
     count: Integer;
@@ -74,7 +71,7 @@ end;
 ```  
 
 
-## See Also
+## Related information
 [Media Data Type](media-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

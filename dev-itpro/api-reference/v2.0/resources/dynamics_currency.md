@@ -3,11 +3,10 @@ title: currency resource type
 description: A currency object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # currency resource type
@@ -64,7 +63,7 @@ Here is a JSON representation of the currency resource.
 
 
 
-## See Also
+## Related information
 [GET currency](../api/dynamics_currency_Get.md)  
 [DELETE currency](../api/dynamics_currency_Delete.md)  
 [POST currency](../api/dynamics_currency_Create.md)  

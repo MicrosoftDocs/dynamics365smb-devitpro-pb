@@ -5,7 +5,7 @@ ms.date: 05/23/2023
 ms.topic: conceptual
 author: sorenfriisalexandersen
 ms.author: soalex
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ---
 
 # Requirements for connectivity apps
@@ -99,8 +99,8 @@ ISVs may submit applications continuously, and quarterly reviews are scheduled. 
 > [!NOTE]  
 > The requirements to become a connectivity app as listed above may change over time. The changes will be reflected in this article, so make sure you follow the recommendations and requirements here to make sure your app complies with the current rules.
 
-## See also
+## Related information
 
-[Best Practices for AL](apptest-bestpracticesforalcode.md)  
+[Best practices for AL](apptest-bestpracticesforalcode.md)  
 [Onboarding experiences](../administration/onboarding-experiences.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+[Configure context-sensitive help](../help/context-sensitive-help.md)  

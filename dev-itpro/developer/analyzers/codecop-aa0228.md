@@ -1,14 +1,11 @@
 ---
 title: "CodeCop Warning AA0228"
-description: "The local method must be used, otherwise the variable is not necessary."
+description: "The local method must be used, otherwise the method is not necessary."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +14,7 @@ author: SusanneWindfeldPedersen
 The local method must be used; otherwise removed.
 
 ## Description
-The local method must be used, otherwise the variable is not necessary.
+The local method must be used, otherwise the method is not necessary.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -60,7 +57,7 @@ codeunit 10 MyCodeunit
 ## Good and bad practices for fixing the rule
 Remove the unused local method from the code.
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

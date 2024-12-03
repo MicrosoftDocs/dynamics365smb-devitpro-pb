@@ -1,8 +1,7 @@
 ﻿---
-title: "Testing your extension"
-description: "Describing the steps you must go through to successfully submit your app to AppSource."
+title: Testing your extension
+description: Describing the steps you must go through to successfully submit your app to AppSource.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/11/2023
 ms.topic: conceptual
 ms.author: freddyk
@@ -65,6 +64,7 @@ Although we do regular testing of your app when we prepare a new version of [!IN
 
 You should be doing regular testing against our next minor (monthly) and next major (bi-annual) release branches that ports into our monthly service updates. To test against these builds, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the package named **Working With Business Central Insider Builds**. The package contains a Shared Access Signature token with which you can download artifacts of future releases for use with Docker.
 
-## See Also
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-[Rules and Guidelines for AL Code](apptest-overview.md)  
+## Related information
+
+[Checklist for submitting your app](../developer/devenv-checklist-submission.md)  
+[Rules and Guidelines for AL code](apptest-overview.md)  

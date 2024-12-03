@@ -1,10 +1,6 @@
 ---
 title: "SubType Property (Codeunit)"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -54,7 +50,7 @@ When developing a new extension version, you can use upgrade codeunits to upgrad
 
 For more information on how to use install codeunits to write extension install code, see [Writing Extension Install Code](../devenv-extension-install-code.md). 
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Codeunit Properties](devenv-codeunit-properties.md)  

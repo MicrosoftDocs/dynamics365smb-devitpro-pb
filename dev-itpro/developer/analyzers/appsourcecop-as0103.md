@@ -2,13 +2,10 @@
 title: "AppSourceCop Warning AS0103"
 description: "Table definitions must have a matching permission set."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/21/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -31,9 +28,9 @@ Permissions can be defined either by using XML, or by using AL permission set ob
 
 To generate XML permission sets, you can use the dedicated command in Visual Studio Code:
 
-1. Press **Ctrl+Shift+P** to open the command palette.
-2. Select **AL: Generate permission set as AL object containing current extension objects**. This will generate the AL permission set for your extension.
-3. Rebuild your extension by pressing **Ctrl+Shift+B** to package the permission set with your extension.
+1.   Select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+</kbd>P</kbd> to open the command palette.
+2. Select **AL: Generate permission set containing current extension objects**. This will generate the XML permission set for your extension.
+3. Rebuild your extension by selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to package the permission set with your extension.
 
 For more information about AL permission sets, see [Permission Set Object](../devenv-permissionset-object.md).
 
@@ -88,7 +85,7 @@ The AL permission set grants access to the table and thereby satisfies the valid
 > [!NOTE]  
 > You can grant access to all your tables using `*`. For instance `tabledata * = R;` grants read access to all of them.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

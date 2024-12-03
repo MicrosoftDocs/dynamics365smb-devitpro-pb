@@ -3,13 +3,12 @@ title: (v1.0) Get salesCreditMemo pdfDocument
 description: (v1.0) Gets a PDF document on a salesCreditMemo in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get salesCreditmemo pdfDocument (v1.0)
@@ -100,7 +99,7 @@ GET https://{businesscentralPrefix}/api/v1.0/companies({companyid})/salesCreditM
 **Response** 
 The PDF document in binary format.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 

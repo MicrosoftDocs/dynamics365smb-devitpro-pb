@@ -2,13 +2,10 @@
 title: "MediaSet.ImportFile(Text, Text [, Text]) Method"
 description: "Adds a media, such as a JPEG image, to the MediaSet data type field of a record for displaying the media in the client."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -90,7 +87,7 @@ end;
 ```  
 If you run system table **2000000181 Tenant Media**, you should see the new images in the list.
 
-## See Also
+## Related information
 [MediaSet Data Type](mediaset-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

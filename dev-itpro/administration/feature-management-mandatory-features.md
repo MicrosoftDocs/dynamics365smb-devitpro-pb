@@ -3,10 +3,12 @@ title: Optional features now mandatory
 description: Learn about the features that were optional but are now mandatory.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: jswymer
+ms.reviewer: bholtorf
 ms.topic: conceptual
-ms.date: 08/23/2023
+ms.date: 11/11/2024
 ms.custom: bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Optional features that are now mandatory
@@ -22,17 +24,67 @@ Some of the features or design improvements in major and minor updates are optio
 
 However, these features are only optional for a while. The period in which they're optional typically starts when the update they're made in becomes generally available. The period ends when the features become mandatory and are automatically enabled. The approximate date and service update when we expect to make each optional feature mandatory is shown in the **Automatically enabled from** field on the **Feature Management** page. After that date, the feature will no longer appear on the Feature Management page, and you can't turn it off. To learn more about the optional period, go to [Example timeline for an optional feature](feature-management.md#example-timeline-for-an-optional-feature).
 
+## Features becoming generally available in 2024 release wave 1
+
+|Feature  |Description  |
+|---------|---------|
+|[Modern Action Bar](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/modern-action-bar)|A promoted section of the action bar can help you learn the product, improve your productivity, and make the product easier to use. You can tailor it to fit the needs of your industry, company, or yourself. Add actions that you want to make available in an easily discoverable and consistent way across the product for new users to quickly learn the product, or tailor it to your business-specific needs for proficient users.|
+
+|Feature  |Description  |
+|---------|---------|
+|[New approval workflow experience with Power Automate templates](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/new-approval-workflow-experience-templates-power-automate)|[!INCLUDE [prod_short](../developer/includes/prod_short.md)] online customers who use Power Automate to run document approval workflows are able to do so easily with this release. Several actions linked to workflow approvals and Power Automate have been improved with additional support for selecting one of many templates for each document type. Users and decisions makers can use Power Automate to run approval and take advantage of the rich experience.|
+
+|Feature  |Description  |
+|---------|---------|
+|[Search for pages and data in the mobile app](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/search-pages-data-mobile-app)|Adds the popular Tell Me experience to mobile devices that run the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] app. It also provides access to the Tell Me built-in data search.|
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature Update: Use tracking by package number in reservation and tracking system](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/additional-dimensions-item-tracking-as-foundation-vertical-solutions)|Support for a third dimension for item tracking that you can use as is to keep track of simple warehouse management packages or pallets, or which you can use as a foundation for advanced vertical solutions.|
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature Update: Replace the existing Automatic Account Codes functionality with the new Automatic Account Codes extension](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/automatic-account-codes)|People who work with documents can save time by using automatic account codes to allocate recurring transactions in a faster way. You can use customized posting groups to automate recurring transactions in journals, sales documents, or purchase documents. These posting groups can be used throughout [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to trigger automatic postings and allocations across different accounts or dimensions. |
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature Preview: Bank account reconciliation with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/complete-bank-account-reconciliation-faster-copilot)|Bookkeepers in SMB organizations need to import bank statements and reconcile transactions with their bank ledger entries, making sure all transactions are accounted for. While [!INCLUDE [prod_short](../developer/includes/prod_short.md)] already reduces effort through rule-based transaction matching, the residual work to process the unmatched transactions every week remains cumbersome and quickly accrues to lost workdays. Copilot reduces bookkeeping effort by matching more transactions and suggesting G/L accounts to post the remaining transactions.|
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature Update: Use the platform table 'Report Layout List' for adding and selecting layouts in the 'Report Selection' pages](/dynamics365/business-central/dev-itpro/developer/devenv-howto-report-layout?wt.mc_id=d365bc_inproduct_page)|When enabled, report selection and report layout selection are handled from the platform using data managed by extensions. This strategy lets [!INCLUDE [prod_short](../developer/includes/prod_short.md)] select layouts that were shipped with extensions or uploaded by users. The previous strategy used layout selection based on data in Custom Report Layout table which did not handle extension layouts.|
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature: New Microsoft Word report rendering platform.](../developer/devenv-howto-report-layout.md)|Word-based document reports were rendered by an add-in in application code using the MergeDocument platform trigger. The document generation is now fully managed by the platform and the application code is marked as obsolete.|
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature: Create AI-powered product descriptions with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/get-marketing-text-suggestions-copilot)|Business Central's first copilot feature, marketing text suggestions, moves from public preview to being generally available. This feature provides the following benefits:<br>* Start with a picture<br>* Author marketing copy<br>* Get AI-powered suggestions<br>* Customize suggestions<br>* Publish to Shopify|
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature Update: Legacy list views are hidden](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/legacy-list-views-are-hidden)|Legacy views are list views that were created by developers in previous versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] by placing them on the Role Center page. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] displays legacy views side by side with modern views directly on the list page, but legacy views offer a degraded experience and fewer options compared to modern views.|
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature Update: Replace VAT Date CZ with VAT Reporting Date- Czechia](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/replace-vat-date-cz-vat-reporting-date--czechia)|Some countries require reporting for VAT statements and VAT returns by using a date that's different than the posting date. Sometimes, the date can be the document date, but even this date can differ from the requirement. For this reason, the VAT Date exists on all purchase and sales documents and on journals.|
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature update: Enable using SIE Audit Files Exports](/dynamics365/business-central/localfunctionality/sweden/how-to-use-sie-audit-files-export)|You can import and export general ledger data according to the standard import export (SIE) format. By specifying SIE dimensions and file types, you can define the level of detail that's covered by import or export transactions.|
+
 ## Features becoming generally available in 2023 release wave 2
 
 The following features are generally available. However, they aren't turned on by default, so to use them your administrator must manually enable them.
 
 |Feature  |Description  |
 |---------|---------|
-|[Feature Update: Enable use of new extensible invoice posting engine](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)  |Regulations in different countries and industries, and customer business practices, might require a change to how general ledger entries are aggregated during posting. We remove the dependencies from the Invoice Posting Buffer table in the base application and build an invoice posting component with an interface and an extensible enum for the implementation setup. This refactoring makes the posting process for sales, purchase, and service transactions extensible. Partners can also change the way the posting algorithm aggregates G/L entries—for example, by specific document lines, posting groups, or any tax setup that is required by local legislation. Partners can replace customizations by using the interface for G/L invoice posting, resolve legacy issues for the Invoice Posting Buffer table, and use their own implementation of G/L invoice posting.<br><br>   |
+|[Feature Update: Enable use of new extensible invoice posting engine](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)  |Regulations in different countries/regions and industries, and customer business practices, might require a change to how general ledger entries are aggregated during posting. We remove the dependencies from the Invoice Posting Buffer table in the base application and build an invoice posting component with an interface and an extensible enum for the implementation setup. This refactoring makes the posting process for sales, purchase, and service transactions extensible.  |
 
 |Feature  |Description  |
 |---------|---------|
-|[Feature Update: Enable use of new extensible exchange rate adjustment, including posting review](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/adjust-exchange-rates-easily-replace-built-in-batch-job)  |**Note:** This feature update will become generally available in the first update for 2023 release wave 2.<br><br>When companies operate in multiple countries or regions, it's important that they can do business and run financial reports in more than one currency. Because exchange rates often change, businesses must periodically update the rates in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. This feature update gives accountants additional control over how they adjust exchange rates. At the same time, it allows partners to extend and customize an exchange rate adjustment to meet the needs of specific industries or markets.  |
+|[Feature Update: Enable use of new extensible exchange rate adjustment, including posting review](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/adjust-exchange-rates-easily-replace-built-in-batch-job)  |When companies operate in multiple countries or regions, it's important that they can do business and run financial reports in more than one currency. Because exchange rates often change, businesses must periodically update the rates in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. This feature update gives accountants additional control over how they adjust exchange rates. At the same time, it allows partners to extend and customize an exchange rate adjustment to meet the needs of specific industries or markets.  |
 
 |Feature  |Description  |
 |---------|---------|
@@ -59,19 +111,8 @@ Coming soon...
 
 |Feature  |Description  |
 |---------|---------|
-|[Feature Preview: Create AI-powered product descriptions with Copilot](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/drive-sales-ai-generated-product-descriptions) | Great products deserve great marketing, but authoring compelling product descriptions for dozens or even hundreds of similar products for your online store requires time, skill, and creativity. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] accelerates time to market with AI-generated product descriptions, right from where you manage your inventory. We've streamlined the end-to-end process, starting from uploading a picture to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], to AI-powered suggestions for marketing copy based on your product attributes such as color and material, to publishing that to your online store with just a few clicks. |
-
-|Feature  |Description  |
-|---------|---------|
 |[Feature: Enable using Form 1096 to transmit paper Tax Forms to the IRS in the United States](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/irs-1096-form-united-states)  |Form 1096 is used to transmit paper forms 1097, 1098, 1099, 3921, 3922, 5498, and W-2G to the IRS. You can now run the Form 1096 report and send it to the IRS if this is required for them. Because [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reports only Form 1099, the new Form 1096 is related only to any already transmitted 1099 paper forms.  |
 
-|Feature  |Description  |
-|---------|---------|
-|[Feature Update: Legacy list views are hidden](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/legacy-list-views-are-hidden)  | Legacy views are list views that were created by developers in previous versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] by placing them on the role center page. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] displays legacy views side by side with modern views directly on the list page, but legacy views offer a degraded experience and fewer options compared to modern views.|
-
-|Feature  |Description  |
-|---------|---------|
-|[Feature Update: Auto-save with every field change](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)  | [!INCLUDE [prod_short](../developer/includes/prod_short.md)] immediately saves changes to individual fields as soon as you tab away from the field or set focus to another element on the page, instead of only saving when the page is closed. Changes are saved to the database without any noticeable impact to performance. |
 
 |Feature  |Description  |
 |---------|---------|
@@ -80,6 +121,26 @@ Coming soon...
 |Feature  |Description  |
 |---------|---------|
 |[Feature Update: Standardized bank reconciliation and deposits.](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions?branch=main&branchFallbackFrom=pr-en-us-2746)|Bank reconciliation in the North American (NA) versions for the United States, Canada, and Mexico can be done either through the standard **Bank Reconciliation** page or with the **Bank Rec. Worksheet** page, which was missing some of the newer features that the **Bank Reconciliation** page offers. To standardize the bank reconciliation process, we have modified the **Bank Reconciliation** page, added a feature for deposits that is the same as we provide for the NA version today, and added capabilities to allow users to reconcile deposits.|
+
+### Features postponed from becoming mandatory in 2023 Release Wave 2
+
+The change to making these features mandatory is postponed. They aren't turned on by default and must be enabled manually. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
+
+|Feature  |Description  |Expected to be mandatory release wave |
+|---------|---------|-|
+|[Feature: Create AI-powered product descriptions with Copilot](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/drive-sales-ai-generated-product-descriptions) | Great products deserve great marketing, but authoring compelling product descriptions for dozens or even hundreds of similar products for your online store requires time, skill, and creativity. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] accelerates time to market with AI-generated product descriptions, right from where you manage your inventory. We've streamlined the end-to-end process, starting from uploading a picture to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], to AI-powered suggestions for marketing copy based on your product attributes such as color and material, to publishing that to your online store with just a few clicks. |2024 release wave 1 |
+
+|Feature  |Description  |Expected to be mandatory release wave |
+|---------|---------|-|
+|[Feature Update: Legacy list views are hidden](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/legacy-list-views-are-hidden)  | Legacy views are list views that were created by developers in previous versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] by placing them on the role center page. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] displays legacy views side by side with modern views directly on the list page, but legacy views offer a degraded experience and fewer options compared to modern views.|2024 release wave 1 |
+
+|Feature  |Description  |Expected to be mandatory release wave |
+|---------|---------|-|
+|[Feature Update: Auto-save with every field change](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)  | [!INCLUDE [prod_short](../developer/includes/prod_short.md)] immediately saves changes to individual fields as soon as you tab away from the field or set focus to another element on the page, instead of only saving when the page is closed. Changes are saved to the database without any noticeable impact to performance. |2024 release wave 2 |
+
+|Feature  |Expected to be mandatory release wave |
+|---------|---------|
+|[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     | 2025 release wave 1        | 
 
 ## Features becoming mandatory in 2023 release wave 1
 
@@ -121,11 +182,11 @@ The change to making these features mandatory is postponed. They aren't turned o
 |Feature  |Expected to be mandatory release wave |
 |---------|---------|
 |[Use tracking by package number in reservation and tracking system](/dynamics365/business-central/inventory-how-setup-item-tracking)     |  2024 release wave 1       |
-|[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     | 2024 release wave 1        |
+|[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     |**Note:** This feature was originally scheduled to become mandatory in 2024 release wave 1. It's now expected to become mandatory in 2025 release wave 1.        |
 |[New Microsoft Word report rendering platform](/dynamics365/business-central/dev-itpro/developer/devenv-howto-report-layout)     | 2024 release wave 1        |
 |[Replace Multiple Interest Rate CZ with Finance Charge Interest Rate](/dynamics365/business-central/receivables-collect-outstanding-balances)| 2025 release wave 2 |
 
-## See Also
+## Related information
 
 [Enabling Upcoming Features Ahead of Time](feature-management.md)  
 [Deprecated Features in the Base App](../upgrade/deprecated-features-w1.md)

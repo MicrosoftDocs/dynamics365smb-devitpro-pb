@@ -1,13 +1,14 @@
 ---
-title: Technical Support Overview
+title: Technical support overview
 description: Learn about how to support your Business Central customers, online and on-premises, troubleshoot issues, and when to escalate problems to Microsoft.
-author: edupont04
-ms.reviewer: na
+author: SusanneWindfeldPedersen
 ms.topic: overview
-ms.author: edupont
-ms.date: 08/02/2022
+ms.author: solsen
+ms.date: 06/20/2024
+ms.reviewer: solsen
 ---
-# Technical Support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]
+
+# Technical support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]
 
 Each customer of [!INCLUDE [prod_short](developer/includes/prod_short.md)] has a partner who assists with technical support. As a [!INCLUDE[prod_short](developer/includes/prod_short.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prod_short](developer/includes/prod_short.md)] tenants, and you are the first line of support. You will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft.  
 
@@ -84,14 +85,14 @@ On occasion, as a partner, you will run into questions that are not directly rel
 
 [!INCLUDE [nonprodsupport](includes/nonprodsupport.md)]
 
-## See Also
+## Related information
 
-[Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)  
+[Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)  
 [The Business Central Administration Center](administration/tenant-admin-center.md)  
-[Managing Technical Support](administration/manage-technical-support.md)  
-[Deployment Overview](deployment/Deployment.md)  
-[Administration of Business Central Online](administration/tenant-administration.md)  
-[Administration of Business Central On-Premises](administration/Administration.md)  
+[Managing technical support](administration/manage-technical-support.md)  
+[Deployment overview](deployment/Deployment.md)  
+[Administration of Business Central online](administration/tenant-administration.md)  
+[Administration of Business Central on-premises](administration/Administration.md)  
 [Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
 [Providing support to your customers (Microsoft Partner Center)](/partner-center/customer-support)  
 

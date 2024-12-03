@@ -2,11 +2,8 @@
 title: Adding help links from pages, reports, and XMLports
 description: This article shows how to specify the Help link on pages, reports and XMLports in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 05/23/2022
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -50,7 +47,7 @@ xmlport 50100 XmlPortWithHelp
 
 In all three examples, the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) is set to point at the same Help file. This is because all three example objects support the same feature that is explained in the *sales-rewards* Help article. In your app, you can choose to structure the Help differently.  
 
-## See Also
+## Related information
 
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
 [Translating Base App Help](devenv-translate-base-app-help.md)  

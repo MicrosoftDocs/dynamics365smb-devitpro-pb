@@ -1,23 +1,22 @@
 ---
-title: "Extensibility overview"
-description: "How you can extend functionality in Dynamics 365 Business Central."
+title: Extensibility overview
+description: How you can extend functionality in Dynamics 365 Business Central.
 ms.author: kepontop
-ms.custom: na
 ms.date: 10/09/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: KennieNP
 ---
 
 # Extensibility overview
-AL developers can extend the functionality of Business Central in several ways. They can extend tables, enumerations, application areas, pages, reports, code flows and the security model. They can also contribute directly to the base application in the open source projects for the system application modules. 
 
-This article provides an overview of the extensibility options available to AL developers in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] including examples on how to extend various features, such as extending item charges, best price calculations, and data archiving. 
+AL developers can extend the functionality of Business Central in several ways. They can extend tables, enumerations, application areas, pages, reports, code flows and the security model. They can also contribute directly to the base application in the open source projects for the system application modules.
+
+This article provides an overview of the extensibility options available to AL developers in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] including examples on how to extend various features, such as extending item charges, best price calculations, and data archiving.
 
 ## Extending AL objects and artifacts
-The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports many different ways for developers to extend objects and artifacts in an app. 
+
+The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports many different ways for developers to extend objects and artifacts in an app.
 
 1. **Extending Code Flows**: Codeunits contain AL code that can be reused across the application. Developers can subscribe to events in base app codeunits and write custom logic to extend the application's functionality. See [Extending AL code flows: events](devenv-event-types.md).
 
@@ -33,35 +32,41 @@ The AL object model in [!INCLUDE[prod_short](../developer/includes/prod_short.md
 
 7. **Extending Application Areas**: Application areas help control the visibility of UI elements based on licensing and configuration. Developers can extend these areas to tailor the user interface according to business needs. See [Extending AL objects: application areas](devenv-extending-application-areas.md).
 
-> [!NOTE]  
-> Extending API pages and queries is not currently possible in Business Central.
 
+[!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
 
 ## Extending the Business Central application
 
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application consists of multiple layers
+
 * The System Application, which is a set of open source modules that make it easier to build, maintain, and easily upgrade on-premises and online apps. These modules let you focus on the business logic, and the needs of your users or customers.
 * The Base Application, which is the business logic for the functionality in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### Contributing to the Business Central open source System Application
 
-If you want to contribute code to the Business Central open source System Application, you need to determine the type of contribution: 
+If you want to contribute code to the Business Central open source System Application, you need to determine the type of contribution:
 1. Small bug fixes, product improvements, or customer conveniences; or
 2. New capabilities or larger changes to the existing application platform.
 
-For more information about making contributions, go to [Contributing to the Business Central open source System Application](https://github.com/microsoft/ALAppExtensions/blob/main/CONTRIBUTING.md).
+For more information about making contributions, go to [Contributing to the Business Central open source System Application](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md).
 
-To learn more about the System Application, its module architecture, and how to modify or create new modules, go to [Creating new modules in the system application](devenv-blueprint.md). 
+To learn more about the System Application, its module architecture, and how to modify or create new modules, go to [Creating new modules in the system application](devenv-blueprint.md).
 
 ### Extending the Business Central base application
 
 For more information on how to get started on extending functionality in the base application by extending AL objects and using events, see:
+
 * [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 * [The Microsoft_Application.app file](devenv-application-app-file.md)
 * [Publishing a code-customized base application](devenv-publish-code-customization.md)
 * [Extending application areas](devenv-extending-application-areas.md)
 
+### Extension objects in the same app
+
+[!INCLUDE [extension-obj-same-app](includes/extension-obj-same-app.md)]
+
 ## Examples
+
 There are numerous examples available that demonstrate how to extend various features in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 
 - Extending item charges
@@ -86,7 +91,7 @@ These resources provide a comprehensive overview of the extensibility options av
 * [Extending the Shopify Connector](devenv-extending-shopify.md)
 
 
-## See Also
+## Related information
 Extending AL objects and artifacts
 * [Extending application areas](devenv-extending-application-areas.md)
 * [Extending enumerations](devenv-extensible-enums.md)
@@ -97,7 +102,7 @@ Extending AL objects and artifacts
 * [Extending tables](devenv-table-ext-object.md)
 
 Extending the base application
-* [Contributing to the Business Central open source System Application](https://github.com/microsoft/ALAppExtensions/blob/main/CONTRIBUTING.md)
+* [Contributing to the Business Central open source System Application](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md)
 * [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 * [The Microsoft_Application.app file](devenv-application-app-file.md)
 * [Publishing a code-customized base application](devenv-publish-code-customization.md)

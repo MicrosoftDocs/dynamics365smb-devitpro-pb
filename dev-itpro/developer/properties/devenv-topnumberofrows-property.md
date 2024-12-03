@@ -1,14 +1,11 @@
 ---
-title: "TopNumberOfRows Property"
+title: "TopNumberOfRows property"
 description: "Specifies the maximum number of rows to include in the resulting data set of a query."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -26,7 +23,7 @@ Specifies the maximum number of rows to include in the resulting data set of a q
 
 ## Property Value  
 
-An integer that specifies the maximum number of rows to include in the resulting dataset.  
+An integer that specifies the maximum number of rows to include in the resulting dataset. The default value for this property is **0**.
   
 > [!NOTE]  
 > A value of **0** is the same as leaving the property blank. If you set the value to **0**, then there is no limit and all rows of the dataset are returned.  
@@ -43,7 +40,7 @@ You use the **TopNumberOfRows** property to limit the resulting dataset to the f
   
 You can also specify the number of rows to include in the dataset by calling the [TopNumberOfRows Method](../methods-auto/query/queryinstance-TopNumberOfRows-method.md) from AL. The TopNumberOfRows method will overwrite the **TopNumberOfRows** property setting.  
   
-## See Also
+## Related information
 
 [Query Object](../devenv-query-object.md)  
 [Linking and Joining Data Items](../devenv-query-links-joins.md)  

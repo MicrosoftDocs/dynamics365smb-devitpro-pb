@@ -2,13 +2,10 @@
 title: "SessionSettings.LocaleId([Integer]) Method"
 description: "Gets or sets the locale ID property in a SessionSettings object."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -49,7 +46,7 @@ The locale ID in the SessionSettings object corresponds to the **Locale ID** fie
 ## Example
 This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the LocaleId method to set the locale ID to '1033'. Finally, the RequestSessionUpdate method sends a request to the client to abandon the current client session and start a new session that uses the new locale ID. This example requires a SessionSettings data type variable.
 
-```
+```al
 var
   MySessionSettings : SessionSettings;
 begin
@@ -60,7 +57,7 @@ end;
 ```  
 
 
-## See Also
+## Related information
 [SessionSettings Data Type](sessionsettings-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

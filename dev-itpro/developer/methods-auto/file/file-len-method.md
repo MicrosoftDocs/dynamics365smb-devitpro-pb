@@ -2,13 +2,10 @@
 title: "File.Len() Method"
 description: "Gets the length of an ASCII or binary file."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/05/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -29,7 +26,6 @@ Length :=   File.Len()
 > This method can be invoked using property access syntax.
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
-
 ## Parameters
 *File*  
 &emsp;Type: [File](file-data-type.md)  
@@ -51,8 +47,8 @@ This method is often used with [Pos Method \(File\)](../../methods-auto/file/fil
 
 The following example opens a text file that is named 'C:\\TestFolder\\TestFile.txt' and contains the text ‘Hello World’. The [Seek Method \(File\)](file-seek-method.md) sets a pointer to position 6 in the file. The [Read Method \(File\)](file-read-method.md) reads the file and stores the retrieved contents in the varString variable. The LEN method retrieves the length of the file and stores it the varLength variable. The text that is read starts from the position of the pointer, so the text ‘World’ and the length of 12 are displayed in the message box. The length of the file is not affected by the [Seek Method \(File\)](file-Seek-method.md). This example assumes that you have created the text file that is named C:\\TestFolder\\TestFile.txt and contains the text ‘Hello World’. This example requires that you create the following global variables.  
 
- ```
- var
+```al
+var
     Testfile: File;
     varString: Text[200];
     varLength: Integer;
@@ -66,7 +62,7 @@ end;
 ```  
   
 
-## See Also
+## Related information
 [File Data Type](file-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

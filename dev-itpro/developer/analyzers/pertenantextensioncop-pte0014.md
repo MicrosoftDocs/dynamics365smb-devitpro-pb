@@ -2,13 +2,10 @@
 title: "PerTenantExtensionCop Warning PTE0014"
 description: "Permission sets should not be defined in XML."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -24,7 +21,7 @@ Permission sets should not be defined in XML. Instead, use the dedicated AL obje
 ## Remarks
 For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0094](appsourcecop-as0094.md).
 
-## See Also
+## Related information
 [Entitlements and Permissions Sets Overview](../devenv-entitlements-and-permissionsets-overview.md)  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  

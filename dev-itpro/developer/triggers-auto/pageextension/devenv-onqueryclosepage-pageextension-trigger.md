@@ -1,20 +1,17 @@
 ---
-title: "OnQueryClosePage (Page Extension) Trigger"
+title: "OnQueryClosePage (Page Extension) trigger"
 description: "Runs when a page closes and before the OnClosePage trigger executes."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/05/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnQueryClosePage (Page Extension) Trigger
+# OnQueryClosePage (Page Extension) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs when a page closes and before the OnClosePage trigger executes.
@@ -56,7 +53,7 @@ When the OnQueryClosePage trigger is called on a subpage, the *CloseAction* para
 
 You can use this trigger to write to the database.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnQueryClosePage (Page) Trigger](../page/devenv-onqueryclosepage-page-trigger.md)  

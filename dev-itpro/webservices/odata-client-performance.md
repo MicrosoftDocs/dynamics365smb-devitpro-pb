@@ -1,22 +1,28 @@
 ---
-title: OData/API Client Performance
-description: Learn about how to develop efficient and fast OData/API clients for Business Central.
+title: OData/API web service client performance
+description: Learn about how to develop efficient and fast OData/API web service clients for Business Central.
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms.topic: conceptual
 ms.author: kepontop
 ms.date: 07/03/2023
 ---
 
-# OData/API client performance
+# OData/API web service client performance
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports OData web services (APIs and pages exposed as OData endpoints) to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). This article focuses on client performance.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports web services based on the OData standard (REST APIs and queries/pages/codeunits exposed as OData endpoints) to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the web service client that calls the endpoints). 
+
+:::image type="content" source="../developer/media/webservice-stack.svg" alt-text="Shows the three different types of web services in Business Central" lightbox="../developer/media/webservice-stack.svg":::
+
+This article focuses on web service client performance when calling REST APIs and OData endpoints.
 
 ## Using data access intent read-only
 
 By specifying the HTTP header `Data-Access-Intent: ReadOnly` for GET requests, you can instruct Business Central to run requests against a replica of the database, which can lead to improved performance. To learn more, see [Specifying Data Access Intent for GET requests](../developer/devenv-connect-apps-tips.md#DataAccessIntent).
+
+[!INCLUDE[database_access_intent_note](../includes/include-database-access-intent-note.md)]
 
 ## Using OData transaction `$batch`
 
@@ -66,8 +72,8 @@ There are many options to measure performance. The simplest one is to run two ve
 Whatever your approach is, run both queries multiple times. For example, run the queries 30 times each to have a sufficiently large sample set. Then figure out the performance characteristics. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses a  multi-tenant architecture, so the duration of your queries might be affected by other operations that occur at the same time. 
 
 
-## See Also
+## Related information
 
 [OData Web Services](OData-Web-Services.md)  
 [Web service performance](web-service-performance.md)  
-[SOAP Web Services](SOAP-Web-Services.md)  
+[Business Central web services overview](web-services.md)  

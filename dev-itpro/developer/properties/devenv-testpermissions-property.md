@@ -1,14 +1,11 @@
 ---
-title: "TestPermissions Property"
+title: "TestPermissions property"
 description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +18,7 @@ Specifies a value that can be used to determine which permission sets are used o
 ## Applies to
 -   Codeunit
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -45,12 +42,12 @@ The default value of `TestPermissions` is `Restrictive`. The **TestPermissions**
 
 Tests have the `TestPermissions` property by default set to `Restrictive`. With the **Permissions Mock** system app in the test framework library, you can mock permissions when running unit tests. The **Permissions Mock** module can be used to add permissions sets to the running test user, or limit the user's permissions.
 
-For more information, see the open source module [Permissions Mock](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/DevTools/TestFramework/TestLibraries/Permissions%20Mock).
+For more information, see the open source test library [Permissions Mock](https://github.com/microsoft/BCApps/tree/main/src/Tools/Test%20Framework/Test%20Libraries/Permissions%20Mock).
 
 > [!NOTE]  
 > To specify the permission sets that are used by the tests run by a specific test method, use the [TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute).
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
-[TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute)
+[TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute)  

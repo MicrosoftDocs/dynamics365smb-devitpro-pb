@@ -3,11 +3,10 @@ title: Managing technical support
 description: Learn about how to support your Business Central users, both online and on-premises, as the internal or delegated administrator.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 01/25/2022
+ms.devlang: al
+ms.date: 12/15/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Managing technical support
@@ -92,7 +91,7 @@ This section provides an overview of the most useful tools for troubleshooting t
     Open the **Database Locks** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to view existing locks in this tenant's database. You can often see which where the code is tht caused the problem.  
 - Additional logging per session
 
-    You can enable more logging that can help you troubleshoot in the current session. For example, if you're concerned if a specific report or other process might be the reason for database locks, go to the **Help and Support** page and enable more logging. Then, run the process that you're concerned about, and then analyze the logs. For more information, see [Analyzing long running operations in Application Insights](telemetry-long-running-sql-query-trace.md).
+    You can enable more logging that can help you troubleshoot in the current session. For example, if you're concerned if a specific report or other process might be the reason for database locks, go to the **Help and Support** page and enable more logging. For more information, see [Resources for Help and Support - Troubleshooting](/dynamics365/business-central/product-help-and-support#troubleshooting). Then, run the process that you're concerned about, and then analyze the logs. For more information, see [Analyzing long running SQL operations in Application Insights](telemetry-long-running-sql-query-trace.md).
 - Debug your app or pre-tenant extension  
 
     With Visual Studio Code and the AL Language extension, you get an integrated debugger to help you inspect your code to verify that your application can run as expected. For more information, see [Debugging in AL](../developer/devenv-debugging.md).
@@ -183,7 +182,7 @@ Both internal and delegated administrators can access [!INCLUDE [prodadmincenter
 
 <!-- TODO: How to manage your customers' support issues -->
 
-## See also
+## Related information
 
 [How to check service health](/microsoft-365/enterprise/view-service-health?view=o365-worldwide&preserve-view=true#how-to-check-service-health)  
 [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md)  

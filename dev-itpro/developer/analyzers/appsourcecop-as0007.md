@@ -1,22 +1,20 @@
 ---
-title: "Properties must not change value."
+title: "AppSourceCop Error AS0007"
+description: "Objects that have been published must not change namespace."
 ms.author: solsen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0007
-Properties must not change value.  
+# AppSourceCop Error AS0007
+Objects that have been published must not change namespace.
 
 ## Description
-Properties must not change value. This might break the upgrade of existing installations and dependent extensions.
+Objects that have been published must not change namespace. This might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -28,7 +26,7 @@ This rule does not exist anymore and has been replaced by:
 - [AS0041 - For field property removal](appsourcecop-as0041.md)
 - [AS0042 - For key property removal](appsourcecop-as0042.md)
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

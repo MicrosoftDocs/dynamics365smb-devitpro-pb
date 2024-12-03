@@ -1,20 +1,17 @@
 ---
-title: "OnBeforePassField (Xml Port Field Element) Trigger"
+title: "OnBeforePassField (Xml Port Field Element) trigger"
 description: "Runs before a field is passed to the XML document."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnBeforePassField (Xml Port Field Element) Trigger
+# OnBeforePassField (Xml Port Field Element) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs before a field is passed to the XML document.
@@ -35,7 +32,7 @@ end;
 ## Remarks  
  This trigger is only used to export data. This trigger gives you access to the field value in the record just before it is exported and is typically used to manipulate the field.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnBeforePassField (Xml Port Field Attribute) Trigger](../xmlportfieldattribute/devenv-onbeforepassfield-xmlportfieldattribute-trigger.md)

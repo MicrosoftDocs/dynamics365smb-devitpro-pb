@@ -3,12 +3,11 @@ title: Fields that are Moved, Removed, or Replaced
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the fields that you want to refactor your code for.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms. search.keywords: deprecated, obsolete
+ms.devlang: al
+ms.search.keywords: deprecated, obsolete
 ms.date: 04/01/2021
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 
 # Deprecated Fields, and Fields Marked as Obsolete
@@ -142,7 +141,7 @@ The functionality for payments and reconciliation in the Danish version (FIK) ha
 |1250|Bank Statement Matching Buffer|13601|13652|Match Status|MatchStatus|
 |1250|Bank Statement Matching Buffer|13600|13653|Description|DescriptionBankStatement|
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

@@ -1,11 +1,7 @@
 ---
 title: "Developing Pages and Tables for Microsoft Teams Integration using Events"
 description: Explains how to use events to add custom fields to a Business Central card in Teams
-ms.custom: na
 ms.date: 10/08/2020
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---
@@ -23,7 +19,7 @@ This article explains how to use events to customize the fields shown in a Teams
 <!--
 
 |OnBeforeGetPageSummary|This is ideal for overriding all data for a Card by specifying a custom set of key-value pairs that will be displayed. The platform will not attempt to select any list of fields or their corresponding values if you subscribe to this event.|-->
-The events are part of the [Page Summary Provider](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Page%20Summary%20Provider/README.md) module of the Microsoft System Application.
+The events are part of the [Page Summary Provider](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Page%20Summary%20Provider) module of the Microsoft System Application.
 
 > [!NOTE]
 > In most cases, we recommend you set the `Brick` field group instead of using events to define card content. This ensures a consistent experience across the Business Central Web client, mobile devices, and Teams.
@@ -45,7 +41,7 @@ The OnBeforeGetPageSummary event subscription has the following syntax:
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnBeforeGetPageSummary', '', false, false)]
-local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; Handled: Boolean);
+local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; Handled: Boolean)
 ```
 
 #### Parameters
@@ -111,7 +107,7 @@ The OnAfterGetSummaryFields event lets you add or remove from the set of fields 
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetSummaryFields', '', false, false)]
-local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer]);
+local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer])
 ```
 
 #### Parameters
@@ -151,7 +147,7 @@ begin
     if PageId <> Page::"Vendor Card" then
         exit;
 
-    // Remove Balance Due  details 
+    // Remove Balance Due  details
     FieldList.Remove(Vendor.FieldNo("Balance Due (LCY)"));
     FieldList.Remove(Vendor.FieldNo("Balance (LCY)"));
 
@@ -173,7 +169,7 @@ This event allows you to modify, add, or remove fields included in the card thro
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetPageSummary', '', false, false)]
-local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray);
+local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray)
 ```
 
 #### Parameters

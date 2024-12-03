@@ -1,19 +1,17 @@
 ---
-title: Get cloudMigrationCompanies
+title: (cloudMigration API) Get cloudMigrationCompanies
 description: Gets a cloud migration company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/25/2022
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get cloudMigrationCompanies
+# (cloudMigration API) Get cloudMigrationCompanies
 
 Retrieves the properties and relationships of a cloud migration company object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
@@ -66,7 +64,7 @@ Here is an example of the response.
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [cloudMigrationCompany](../resources/dynamics_cloudMigrationCompany.md)  

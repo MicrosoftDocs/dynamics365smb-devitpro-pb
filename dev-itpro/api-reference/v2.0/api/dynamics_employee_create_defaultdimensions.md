@@ -5,11 +5,10 @@ description: Creates a default dimensions of the employee object in Dynamics 365
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create employee defaultDimensions
@@ -79,7 +78,7 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/employees({
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 
 [Employee](../resources/dynamics_employee.md)  

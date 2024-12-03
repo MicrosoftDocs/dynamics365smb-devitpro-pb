@@ -6,7 +6,6 @@ author: henrikwh
 
 ms.topic: reference
 ms.devlang: na
-ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2020
 ms.author: solsen
@@ -45,7 +44,6 @@ Content-Type:application/json
     "id": "SECURITY", 
     "company" : "CRONUS"
 }
-
 ```
 
 **Response**
@@ -61,7 +59,7 @@ Here is an example of the response.
     "id": "SECURITY",
     "company": "",
     "scope": "System",
-    "appID": "00000000-0000-0000-0000-000000000000",
+    "appID": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "displayName": "",
     "extensionName": ""
 }

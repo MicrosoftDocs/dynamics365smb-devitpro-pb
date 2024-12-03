@@ -1,14 +1,11 @@
 ---
-title: "FieldSeparator Property"
+title: "FieldSeparator property"
 description: "Sets the string that is to be used to separate fields."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -56,7 +53,7 @@ LF refers to the character with ASCII value 10.
   
 You can set the field separator in AL code so that the XMLport can import and export records with different separators. For example, if your XMLport must import from a file or stream where one record uses commas and another uses **TAB**, you can change the field separator property at run time.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [Format Property (XMLports)](devenv-format-property.md)

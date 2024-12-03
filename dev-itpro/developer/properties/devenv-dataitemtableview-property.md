@@ -1,14 +1,11 @@
 ---
-title: "DataItemTableView Property"
+title: "DataItemTableView property"
 description: "Sets the key on which to sort, the sort order, and the filters for the data item."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -25,7 +22,7 @@ Sets the key on which to sort, the sort order, and the filters for the data item
 
 ## Examples
 
-In the following example, the **DataItemView** property is used to sort a table view based on the `"Entry No."` field.
+In the following example, the **DataItemTableView** property is used to sort a table view based on the `"Entry No."` field.
 
 ```AL
 DataItemTableView = SORTING ("Entry No.");
@@ -47,6 +44,6 @@ DataItemTableView = WHERE("Document Type" = FILTER(Payment | Invoice | "Credit M
   
 - Setting a sort order, a filter, or both does not prevent end users from selecting a sort field on the request page. The default sort field that is displayed in the request page is the primary key. The list of fields on which you can sort includes all keys for the data item. To add fields to the list, you must add keys to the table.
 
-## See Also
+## Related information
 
 [Request Pages](../devenv-request-pages.md)

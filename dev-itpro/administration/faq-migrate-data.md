@@ -5,7 +5,7 @@ author: jswymer
 
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms. search.keywords: cloud, edge
+ms.search.keywords: cloud, edge
 ms.date: 11/30/2022
 ms.author: jswymer
 ---
@@ -44,8 +44,6 @@ There are no restrictions on the type of data that can be migrated. [!INCLUDE [d
 We recommend that you reduce the number of companies that you're migrating data for in each migration run. You can specify which companies to include in the migration in the assisted setup wizard.  
 
 If you want to add more companies after the first selection of companies, you can add more companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Run the tool multiple times](migration-setup.md#rerunning-cloud-migration-setup-guide).
-
-If you're looking at migrating databases larger than 80 GB, we recommend that you contact the support team and work with them to make sure that the migration is successful. If needed, you can also purchase more storage. For more information, go to [Managing Capacity](tenant-admin-center-capacity.md).  
 
 ## Is my SQL connection string required to set up the connection?
 
@@ -145,7 +143,7 @@ No. But if your cloud migration includes data upgrade of a large amount of data,
 
 The extension must be created in the same manner as any other extension. For data to replicate, you must add a **ReplicateData** property to your table and set the value to *True*. If your extension connects with an external service and you want to restrict any service calls from your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant, a good practice would be to store the connection information in a separate table and set the **ReplicateData** property to *False*. This would enable you to keep the extension installed but prevent it from making any type of service calls from the read-only [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Once the extension is installed in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises, the data will begin to replicate.  -->
 
-## See also
+## Related information
 
 [Troubleshooting Cloud Migration](migration-troubleshooting.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  

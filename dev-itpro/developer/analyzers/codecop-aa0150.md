@@ -2,13 +2,10 @@
 title: "CodeCop Warning AA0150"
 description: "Do not declare parameters by reference if their values are never changed."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -81,7 +78,7 @@ Variables of the following types are analyzed: `Integer`, `BigInteger`, `Boolean
 
 Event subscribers, Integration Events, and ConfirmHanders are also not analyzed. Parameters of the type `List` can be also changed following built-in methods: `Add`, `AddRange`, `Set`, `Insert`, `Remove`, `RemoveAt`, `RemoveRange`, `Reverse`. `Arrays` additionally changed by `CompressArray` and `CopyArray`. Also the `Evaluate` built-in method is supported. 
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

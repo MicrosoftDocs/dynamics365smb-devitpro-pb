@@ -1,11 +1,12 @@
 ---
-title: "Configuring Query Hints for Optimizing SQL Server Performance"
+title: Configuring Query Hints for Optimizing SQL Server Performance
 description: Enable query hints in a database for optimizing performance.
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
@@ -24,7 +25,7 @@ For more information about configuring the [!INCLUDE[server](../developer/includ
 > [!IMPORTANT]
 > We recommend that you do not change the query hint settings from the default values unless you are certain that the change will better suit your scenario.
 
-## See Also
+## Related information
   
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  

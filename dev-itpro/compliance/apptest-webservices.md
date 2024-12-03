@@ -1,13 +1,11 @@
 ---
-title: "Be careful about UI for web services"
+title: Be careful about UI for web services
 description: Describes restrictions on UI for web services.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/11/2023
-ms.reviewer: na
-ms.suite: na
 ms.topic: conceptual
 ms.author: freddyk
+ms.reviewer: jswymer
 ---
 
 # Restrictions on UI for objects exposed as web services
@@ -40,7 +38,7 @@ Additionally, when running the page or code unit as a web service, the following
 
 *Microsoft.Dynamics.Nav.Types.Exceptions.NavNCLCallbackNotAllowedException: Callback functions are not allowed.*
 
-## See Also
+## Related information
 
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-[Rules and Guidelines for AL Code](apptest-overview.md)  
+[Checklist for submitting your app](../developer/devenv-checklist-submission.md)  
+[Rules and guidelines for AL code](apptest-overview.md)  

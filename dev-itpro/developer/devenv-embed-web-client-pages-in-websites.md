@@ -3,11 +3,10 @@ title: Embed the Web Client Pages
 description: Deploy the Web client as an independent website in an internal company portal containing data from Business Central including document handling, newsfeed etc.
 ms.custom: bap-template
 ms.date: 01/10/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms-service: dynamics365-business-central
+ms.reviewer: jswymer
 ---
 # Embed Business Central Web Client in Other Websites
 

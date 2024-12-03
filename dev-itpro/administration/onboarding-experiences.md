@@ -2,7 +2,6 @@
 title: Onboarding experiences
 description: As a partner, you can get your customers up to speed in a hurry with the right onboarding story. Learn about checklists and teaching tips in the onboarding framework.
 author: sorenfriisalexandersen
-ms.custom: na
 ms.reviewer: jswymer
 ms.topic: article
 ms.date: 03/28/2023
@@ -34,7 +33,7 @@ In the following sections you find descriptions of components you can use when a
 
   For information, see [Create customer centric onboarding experiences](onboarding-signupcontext.md).
 
-## See also
+## Related information
 
 [Get Users Started with the Checklist](onboarding-checklist.md)  
 [Onboard New Users with the Welcome Banner](onboarding-welcome-banner.md)  

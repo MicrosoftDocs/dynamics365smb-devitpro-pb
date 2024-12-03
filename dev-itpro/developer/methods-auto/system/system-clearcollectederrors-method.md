@@ -2,13 +2,10 @@
 title: "System.ClearCollectedErrors() Method"
 description: "Clears all collected errors from the current collection scope."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/24/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -27,9 +24,8 @@ Clears all collected errors from the current collection scope.
 > This method can be invoked without specifying the data type name.
 
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 
 [Collecting Errors](../../devenv-error-collection.md)  
 [System Data Type](system-data-type.md)

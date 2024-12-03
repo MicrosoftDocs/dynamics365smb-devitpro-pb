@@ -2,13 +2,10 @@
 title: "Lifecycle Services for Embed App"
 author: jswymer
 description: Provides an overview of Lifecycle Services for Embed App in Business Central
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Managing an [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [!INCLUDE[embed app](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
@@ -147,7 +144,7 @@ For easier troubleshooting, we recommend exporting the logs to a CSV file, using
 It's important to always review the logs before submitting any issues to Microsoft. When reporting issues, attach the relevant logs in TXT or CSV format, don't use screenshots. 
  
 
-## See Also
+## Related information
 
 [[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md)  
 [Licensing in Dynamics 365 Business Central](licensing.md)  

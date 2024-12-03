@@ -2,13 +2,10 @@
 title: "Compiler Error AL1044"
 description: "The value for the manifest property '{0}' is not valid."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/23/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,9 +18,9 @@ The value for the manifest property '{0}' is not valid. Expected type: {1}.
 
 
 ## Description
-Wrong type for a manifest property. For more information about manifest properties and their type, see [App.json file](../devenv-json-files.md#Appjson).  
+Wrong type for a manifest property. For more information about manifest properties and their type, see [App.json file](../devenv-json-files.md#appjson-file).  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

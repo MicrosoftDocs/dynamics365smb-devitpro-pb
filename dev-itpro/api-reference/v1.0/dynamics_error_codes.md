@@ -4,13 +4,12 @@ description: (v1.0) List of error codes.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 06/19/2019
+ms.devlang: al
+ms.date: 05/01/2024
+ms.custom: evergreen
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Error Codes  (v1.0)
@@ -67,5 +66,5 @@ The error codes in the table below can be divided into the following categories 
 |NavInvalidCredentialException|The server has rejected the client credentials|Authentication_InvalidCredentials|
 |Any|Any|Unknown|
 
-## See also
+## Related information
 [Dynamics 365 Business Central in Graph](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta) 

@@ -2,26 +2,23 @@
 title: Prepare for major updates with preview environments
 description: Learn how to use preview sandboxes to help prepare for the next major update of Business Central online.
 author: jswymer
-
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 01/06/2022
+ms.date: 09/04/2024
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Prepare for major updates with preview environments
 
-About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment, choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application. 
+About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application. 
 
 The following figure illustrates the suggested steps for getting a preview of a major update with example dates for the two release waves in any given calendar year.  
 
 ![Generic timeline for steps to get a preview of a major update with sample dates for the two release waves each year.](../media/update-rollout-timeline-preview.png)
 
 For more information, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md). 
-
 
 ## Practice and test
 
@@ -35,45 +32,42 @@ Once you have the preview, start using it:
 
     In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. Then, if tests complete successfully, upload the app into your production environment, setting the **Deploy to** field to *Next major version*. This way, the compatible version of your app will be used when you schedule the upgrade of your production environment to the new major update once it becomes available.
 
-3. Test the quality. If you run into issues related to the preview, please provide [feedback on Collaborate](#provide-feedback-on-the-preview).
+3. Test the quality. If you run into issues related to the preview, please provide feedback as described in the [next section](#provide-feedback-on-the-preview).
 
 Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
 
 ## Provide feedback on the preview
 
-We need your feedback on the preview! Let us know about your experiences with the new version. You can provide feedback on Microsoft Collaborate:
+We need your feedback on the preview! Let us know about your experiences with the new version. There are two ways to contribute:
 
-1. Browse to [aka.ms/collaborate](https://aka.ms/collaborate)
+1. Give feedback and ask questions in the [Business Central public preview group](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=200815689728) on the Viva Engage (formerly Yammer).
 
-2. If you have not registered before, complete the registration form to access Collaborate (discover the steps [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-a-how-your-global-administrator-must-register-for-collaborate))
+   Use this group to share your thoughts, ask questions, participate in discussions, or seek clarifications on any aspect of the preview release.
 
-3. Choose **Engagements**, and then choose the **Join** action
+   If you haven't joined the group yet, select **Join group** in Viva Engage. Once you've joined, add your comment or question in the **Share something with this group** box and select **Post**. Or feel free to respond to another post.
+   
+   Learn more in [About Business Central partner community on Viva Engage](../join-viva-engage.md).
 
-4. Under the **Ready! for Dynamics 365 Business Central** program, find the latest preview version in the list of available engagements, and then choose the **Join** action
+1. Report a bug at [https://aka.ms/bcpreviewbugs](https://aka.ms/bcpreviewbugs).
 
-Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you are reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system is not crashing and users are not blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate. 
-
-For every public preview, we create a "Public preview" group on [Yammer](https://aka.ms/BCYammer). Make sure to join it and feel free to provide your feedback here as well. 
-
-> [!TIP] 
-> If you get stuck trying to join Collaborate or Yammer, please contact [dyn365bep@microsoft.com](mailto:dyn365bep@microsoft.com) with as many details about the error that you got and other circumstances.
+   If you encounter any issues or glitches during your testing, please help us by filling out and submitting the form.
 
 ## Guidelines for how to get started
 
-The newly created preview sandbox environment contains demonstration company data. Trying the preview on a copy of your current production data is not yet supported; nor is testing the upgrade from your current version to the preview. However, you can use the newly created sandbox environment for exploring and learning the new product capabilities. You can also use the preview environment to validate that any per-tenant extensions are still working as expected.
+The newly created preview sandbox environment contains demonstration company data. Trying the preview on a copy of your current production data isn't yet supported; nor is testing the update from your current version to the preview. However, you can use the newly created sandbox environment for exploring and learning the new product capabilities. You can also use the preview environment to validate that any per-tenant extensions are still working as expected.
 
-If you run your tests on a preview environment one month before the announced major release of Business Central, it is more likely that the coming updates of your production environments will go smoother. This way, you, your customers, and your code are better prepared for the official release.
+If you run your tests on a preview environment one month before the announced major release of Business Central, it's more likely that the coming updates of your production environments go smoother. This way, you, your customers, and your code are better prepared for the official release.
 
-We expect to update the preview version only if we discover critical issues before the major update is generally available for production environments. Apart from these potential fixes, we do not expect any further changes to the product between the preview and the official release. You can start your testing and learning activities immediately, without waiting for the official release.
+We expect to update the preview version only if we discover critical issues before the major update is generally available for production environments. Apart from these potential fixes, we don't expect any further changes to the product between the preview and the official release. You can start your testing and learning activities immediately, without waiting for the official release.
 
-> [!NOTE] 
+> [!NOTE]
 > You will be able to test the update on a copy of your production data in a sandbox environment when we release the new update in production in April or October, respectively. When the official release becomes available, you can continue your tests on that version. You will no longer be able to create new preview sandboxes.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > The preview version as well as all sandbox environments that are based on it will be removed 30 days after the official release becomes available. 
 
 
-## See also
+## Related information
 
 [Major Updates of Business Central Online](update-rollout-timeline.md)  
 [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md)  
@@ -81,4 +75,3 @@ We expect to update the preview version only if we discover critical issues befo
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Step 4: Getting access to preview bits](../developer/readiness/get-started.md#step-4-getting-access-to-preview-bits)  

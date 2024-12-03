@@ -2,13 +2,10 @@
 title: "AppSourceCop Hidden AS0072"
 description: "The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version (Major.Minor)."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,6 +17,8 @@ The ObsoleteTag property and the Tag in the Obsolete attribute must be set to th
 The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version (Major.Minor). This rule is only relevant if the Major.Minor format is set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
 
 This rule verifies that the version specified as obsolete tag for objects whose obsolete state (not obsolete, obsolete pending, or obsolete removed) is updated with the current version is matching the version specified in the `obsoleteTagVersion` property of the AppSourceCop.json.
 
@@ -266,7 +265,7 @@ codeunit 50100 MyCodeunit
 
 The codeunit MyCodeunit is marked as obsolete pending in the baseline and remains obsolete in the current version. The obsolete tag is then not validated by rule AS0072, but is validated by AS0074. Note that this example does not trigger any diagnostics from the AppSourceCop for obsolete tags.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -1,16 +1,14 @@
 ---
-title: "Entitlements and Permission Sets Overview"
+title: Entitlements and permission sets overview
 description: Learn about the different built-in methods to control which users can do what so that you can design the Business Central permission sets more precisely. 
-ms.custom: na
-ms.date: 08/18/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 11/18/2024
 ms.topic: overview
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Entitlements and Permission Sets Overview
+# Entitlements and permission sets overview
 
 [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
 
@@ -18,17 +16,17 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE [prod_short](includes/prod_short.md)] uses two main concepts for defining access to functionality: *Entitlements* and *permissions*.
 
-- *Entitlements* describe which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the *license* that they purchased from Microsoft or according to the Microsoft Entra role that they have assigned in Microsoft 365 Admin Center, such as Global Administrator. Entitlements are only used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)]. 
+- *Entitlements* describe which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the *license* that they purchased from Microsoft or according to the [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference) that they have assigned in Microsoft 365 admin center. Entitlements are only used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)]. 
 
 - *Permissions* describe which objects an administrator or a partner has given the user.
 
 - *Permission sets* combine objects permissions in logical groups (or sets), which can then be assigned to the users explicitly or through a user group.  
 
-For more information about assigning licenses, see [Licensing in Dynamics 365 Business Central](../deployment/licensing.md). For more information about how to create and assign permissions, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).  
+Learn more about assigning licenses in [Licensing in Dynamics 365 Business Central](../deployment/licensing.md). Learn more about how to create and assign permissions in [Assign permissions to users and groups](/dynamics365/business-central/ui-define-granular-permissions).  
 
-## Permission Set scope
+## Permission set scope
 
-A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (by an ISV application that you installed from AppSource).
+A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains many predefined permission sets that are added by Microsoft or by your software provider (by an ISV application that you installed from AppSource).
 
 Permission sets included with Microsoft and AppSource apps defined as AL objects are of the type **System**. <!-- If they are included in XML format, they are of the type **Extension**.--> <!-- Old data-sourced permissions are also tagged as System type. These are permission sets that on-premises admins/devs can add using our PowerShell cmdlets or creating and importing XML files with scope=system-->
 
@@ -38,7 +36,7 @@ End-users can't create or edit these types of permission sets or the permissions
 
 When developing an app, entitlements and permission sets are handled as objects in AL, and existing permission sets can be extended in AL. The following object types are used for handling entitlements and permissions:
 
-- [Entitlement Object](devenv-entitlement-object.md)  
+- [Entitlement object](devenv-entitlement-object.md)  
 - [PermissionSet](devenv-permissionset-object.md)  
 - [PermissionSetExtension](devenv-permissionset-ext-object.md)
 
@@ -47,7 +45,16 @@ When developing an app, entitlements and permission sets are handled as objects 
 > In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases.  
 -->
 
-## Upgrade considerations
+## System Application objects for permissions
+
+The [!INCLUDE [prod_short](includes/prod_short.md)] System Application includes many objects that can help you when working with permissions:
+
+- [Codeunit 'User Permissions'](/dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+- [Page 'Effective Permissions'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)
+- [Page 'Effective Permissions By Set'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions-by-set?toc=/dynamics365/business-central/dev-itpro/toc.json) 
+
+
+## Upgrade considerations (prior to version 18)
 
 Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v18.0), the [!INCLUDE [prod_short](includes/prod_short.md)] demo database, which is shipped with our on-premises installation, doesn't contain any data in the **Permission Set** and **Permission** tables in the application database. Instead, the **System** permission sets and permissions are provided as AL objects of type `PermissionSet` and `PermissionSetExtension`, included with Microsoft apps. 
 
@@ -59,21 +66,21 @@ The application database tables that used to store the entitlements won't contai
  <add key="UsePermissionSetsFromExtensions" value="true" />
 ```
 
-The default value for this setting is `true`, meaning that the server will be retrieving all **System** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. With the value for this setting set to `true`, the permissions data, in case it is still present in the application database, will be disregarded. 
+The default value for this setting is `true`, meaning that the server will be retrieving all **System** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. With the value for this setting set to `true`, the permissions data, in case it's still present in the application database, will be disregarded. 
 
-It's not possible to customize the **System** permission sets and permissions used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)]. End-users can only copy these types to new permission sets, which they can then adjust to their needs. For more information, see [Assign Permissions to Users and Group](/dynamics365/business-central/ui-define-granular-permissions#to-create-or-modify-a-permission-set).
+It's not possible to customize the **System** permission sets and permissions used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)]. End-users can only copy these types to new permission sets, which they can then adjust to their needs. Learn more in [Assign permissions to users and groups](/dynamics365/business-central/ui-define-granular-permissions#to-create-or-modify-a-permission-set).
 
 In the on-premises version of [!INCLUDE [prod_short](includes/prod_short.md)], even though it's not recommended, the partners can customize the permission sets and permissions shipped in the application database. In this case, as for any upgrade before, the changes in Microsoft permissions should be merged with the customized permissions by partners during upgrade.
 
-Although starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), System permissions are no longer shipped as data in the application database, the partners can use the same procedure as before to export the new permissions that are defined using AL objects. The new permission sets and permissions can be exported into XML file by running XMLport 9171 Import/Export Permission Sets, making it possible to compare and merge the customized permission sets in your old database with the newly shipped permission sets. Find more details, see [Export and Import Permission Sets and Permissions](../upgrade/how-to--import-export-permission-sets-permissions.md).
+Although starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), System permissions are no longer shipped as data in the application database, the partners can use the same procedure as before to export the new permissions that are defined using AL objects. The new permission sets and permissions can be exported into an XML file by running XMLport 9171 Import/Export Permission Sets, making it possible to compare and merge the customized permission sets in your old database with the newly shipped permission sets. Find more details in [Export and import permission sets and permissions](../upgrade/how-to--import-export-permission-sets-permissions.md).
 
-### How to upgrade permission sets
+### How to upgrade permission sets (when upgrading to version 18)
 
-When upgrading to version 18, first decide whether you want to use the permissions defined as data or switch to permissions defined as AL objects. Then, follow the guidelines at [Upgrading Permission Sets](../upgrade/upgrade-permissions.md) for details on how to do the upgrade.  
+When upgrading to version 18, first decide whether you want to use the permissions defined as data or switch to permissions defined as AL objects. Then, follow the guidelines at [Upgrading permission sets](../upgrade/upgrade-permissions.md) for details on how to do the upgrade.  
 
 ## Earlier versions of Business Central
 
-In releases of [!INCLUDE [prod_short](includes/prod_short.md)] prior to 2021 release wave 1 (v18.0), System and Extension permissions and entitlements were defined as data in the application database: 
+In releases of [!INCLUDE [prod_short](includes/prod_short.md)] prior to 2021 release wave 1 (v18.0), System, and Extension permissions and entitlements were defined as data in the application database: 
 
 Entitlements tables:
 
@@ -86,22 +93,25 @@ Permissions tables:
 - Permission Set
 - Permission
 
-Keeping such sensitive information as data comes with additional maintenance, security, and audit risks for the software providers (ISVs). Changes applied to this data should ideally be well traceable, easy to update and maintain. Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, the System permissions and entitlements are defined in code, using Entitlement, PermissionSet, and PermissionSetExtension AL objects. This change provides ISVs with all of the advantages of using the AL Language extension in Visual Studio Code and source control systems (as Visual Studio Online and GitHub) to design, get an overview, and track changes to the objects that describe user access. 
+Keeping such sensitive information as data comes with other maintenance, security, and audit risks for the software providers (ISVs). Changes applied to this data should ideally be traceable, easy to update and maintain. Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, the System permissions and entitlements are defined in code, using Entitlement, PermissionSet, and PermissionSetExtension AL objects. This change provides ISVs with all of the advantages of using the AL Language extension in Visual Studio Code and source control systems (as Visual Studio Online and GitHub) to design, get an overview, and track changes to the objects that describe user access. 
 
 Turning this data into code has another significant advantage: the ability to apply hotfixes to the entitlements and permissions in the same way that the hotfixes are applied to the apps themselves, simply by updating an app to a new version which carries fixed code. This improves [!INCLUDE [prod_short](includes/prod_short.md)] support agility considerably, ultimately improving customer satisfaction with the service.
 
 And finally, the new AL objects are envisioned to become the core building blocks in the story of monetizing the AppSource apps. It's through these new AL objects that AppSource ISVs will be able to define which capabilities of their apps should be made available to their users, when the customers purchase their app licenses. With [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, we're paving the way by moving the entitlements and permission sets into AL objects for Microsoft apps, so that ISVs can follow the same approach for their apps, when the monetization story is introduced with one of the next releases of [!INCLUDE [prod_short](includes/prod_short.md)].
 
-User-Defined permission sets and permissions, and functionality around them, remain unchanged. They're still stored as data in the tenant database:
+User-defined permission sets and permissions, and functionality around them, remain unchanged. They're still stored as data in the tenant database:
 
 - Tenant Permission
 - Tenant Permission Set
 
 Permission sets and permissions [included with apps in XML format](devenv-export-permission-sets.md) will continue to work as before, however, we recommend you to start using the AL objects of type `PermissionSet` and `PermissionSetExtension` instead.
 
-## See Also
+## Related information
 
-[Get Started with AL](devenv-get-started.md)  
-[Entitlement Object](devenv-entitlement-object.md)  
-[PermissionSet Object](devenv-permissionset-object.md)  
-[PermissionSet Extension Object](devenv-permissionset-ext-object.md)  
+[Get started with AL](devenv-get-started.md)  
+[Entitlement object](devenv-entitlement-object.md)  
+[PermissionSet object](devenv-permissionset-object.md)  
+[PermissionSet extension object](devenv-permissionset-ext-object.md)   
+[Codeunit 'User Permissions'](/dynamics365/business-central/application/system-application/codeunit/system.security.user.user-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+[Page 'Effective Permissions'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+[Page 'Effective Permissions By Set'](/dynamics365/business-central/application/base-application/page/system.security.accesscontrol.effective-permissions-by-set?toc=/dynamics365/business-central/dev-itpro/toc.json)  

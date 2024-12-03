@@ -2,15 +2,13 @@
 title: Preparing test environments of Business Central
 description: Get an overview of your options for deploying test environments for Dynamics 365 Business Central for performance testing.
 author: jswymer
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
-# Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+
+# Preparing test environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -66,7 +64,7 @@ The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment is 
 
 About two months before a major update, you can try out new functionality in preview environments. For more information, see [Prepare for major updates with preview environments](preview-environments.md).  
 
-## See also
+## Related information
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

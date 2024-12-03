@@ -1,14 +1,11 @@
 ---
-title: "PromotedActionCategoriesML Property"
+title: "PromotedActionCategoriesML property"
 description: "Sets the caption of the group that you are promoting the action to."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -45,7 +42,7 @@ By default, the category names are used as the captions in the ribbon. You use t
 > [!NOTE]  
 > Any empty spaces in the string of promoted action categories are removed. This means that `PromotedActionCategories = 'New caption,,,Category4 caption';` is interpreted as `PromotedActionCategories = 'New caption,Category4 caption';`. To maintain the sequence, you must fill in any empty spaces by, for example, using `Category4`, `Category5` etc.
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Promoted Property](devenv-promoted-property.md)  

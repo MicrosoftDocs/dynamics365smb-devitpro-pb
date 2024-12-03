@@ -1,10 +1,7 @@
 ---
 title: "CaptionClass Property"
-ms.custom: na
 ms.date: 11/06/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: SusanneWindfeldPedersen
 ---
@@ -40,9 +37,9 @@ When you set the **CaptionClass property** on a field, users can configure the c
 
 The `Caption Class` (codeunit 42) in the system application exposes two events; the `OnResolveCaptionClass` and the `OnAfterCaptionClassResolve` event.
 
-For more information, see the system [Caption Class](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md).
+For more information, see the system [Caption Class](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Caption%20Class).
 
-The Caption Class raises an `OnResolveCaptionClass` event for any other value of <Caption Area>. 
+The Caption Class raises an `OnResolveCaptionClass` event for any other value of <Caption Area>.
 
 ```al
 [IntegrationEvent(false, false)]
@@ -87,6 +84,6 @@ codeunit 50000 "MyCaptionClassMgmt"
 
 ## See Also
 
-[CaptionML Property](devenv-captionml-property.md)   
+[CaptionML Property](devenv-captionml-property.md)  
 [Caption Property](devenv-caption-property.md)  
-[CaptionClassTranslate Method](../methods-auto/system/system-captionclasstranslate-method.md) 
+[CaptionClassTranslate Method](../methods-auto/system/system-captionclasstranslate-method.md)

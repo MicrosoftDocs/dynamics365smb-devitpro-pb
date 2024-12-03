@@ -2,13 +2,10 @@
 title: "CodeCop Warning AA0240"
 description: "Email and Phone No must not be present in any part of the source code that might be collected as telemetry data."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -66,7 +63,7 @@ The following elements are checked in code:
 - Translation files (tags `<source>`, `<target>`, `<note>`)
 - App manifest file (Name, Brief, Description, Publisher)
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

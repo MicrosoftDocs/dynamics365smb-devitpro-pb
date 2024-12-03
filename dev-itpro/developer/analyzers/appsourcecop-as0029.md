@@ -2,13 +2,11 @@
 title: "AppSourceCop Error AS0029"
 description: "Pages and PageExtensions that have been published must not be deleted."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 09/27/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
+ai-usage: ai-assisted
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,14 +21,64 @@ Pages and PageExtensions that have been published must not be deleted.
 
 ## Remarks
 
-It is not allowed to remove pages which have been published. This will break dependent extensions which:
+It's not allowed to remove pages which have been published unless they have been marked as [Obsolete](../properties/devenv-obsoletestate-property.md). This will break dependent extensions which:
+
 - are referencing this page from code,
 - are extending the page using a page extension,
 - are customizing the page using page customizations.
 
+> [!NOTE]  
+> If a page coming from a dependency has been removed, AppSourceCop allows the removal of page extensions extending it even if these page extensions have not been previously marked as [Obsolete](../properties/devenv-obsoletestate-property.md).
+
 ## How to fix this diagnostic?
 
-Revert the change by adding the page back and marking it as [Obsolete](../properties/devenv-obsoletestate-property.md). Marking a *page extension* as obsolete is not currently supported, which means that undoing the deletion at this point is the only available fix.
+In order to fix this diagnostic, the removal of the page extension must be reverted. The page extension should also be marked as [Obsolete](../properties/devenv-obsoletestate-property.md) instead, so that the page extension can be removed in a future version.
+
+## Examples not triggering the rule
+
+### Example 1 - Removing an obsolete page extension
+
+Version 1.0 of the extension:
+```AL
+pageextension 50100 MyCustomerCardExt extends "Customer Card"
+{
+    // Some changes on the page.
+}
+```
+
+Version 2.0 of the extension:
+```AL
+pageextension 50100 MyCustomerCardExt extends "Customer Card"
+{
+    ObsoleteState = Pending;
+
+    // Some changes on the page.
+}
+```
+
+Once dependent extensions have been updated to not reference the page extension anymore, the page extension can be removed.
+
+Version 3.0 of the extension:
+```AL
+// Page extension has been removed
+```
+
+### Example 2 - Removing a page extension targeting a removed page
+
+Version 1.0 of the extension:
+```AL
+pageextension 50100 MyCustomerCardExt extends "Customer Card"
+{
+    // Some changes on the page.
+}
+```
+
+Let's consider that between version 1.0, the dependency defining "Customer Card" has removed the page. Removing the page extension is then allowed.
+
+Version 2.0 of the extension:
+```AL
+// Page extension has been removed
+```
 
 ## Examples of errors for dependent extensions
 
@@ -89,7 +137,8 @@ pageextension 50100 MyExtension extends MyPage
 }
 ```
 
-## See Also  
+## Related information
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

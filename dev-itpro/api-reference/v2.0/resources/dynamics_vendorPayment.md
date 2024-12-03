@@ -3,11 +3,10 @@ title: vendorPayment resource type
 description: A vendor payment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # vendorPayment resource type
@@ -85,11 +84,9 @@ Here is a JSON representation of the vendorPayment resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET vendorPayment](../api/dynamics_vendorPayment_Get.md)  
 [DELETE vendorPayment](../api/dynamics_vendorPayment_Delete.md)  
 [POST vendorPayment](../api/dynamics_vendorPayment_Create.md)  

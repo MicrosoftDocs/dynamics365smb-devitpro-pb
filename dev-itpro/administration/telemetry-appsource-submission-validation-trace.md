@@ -3,12 +3,11 @@ title: Analyzing AppSource submission validation trace telemetry
 description: Learn about the telemetry for publishing apps to AppSource from Partner Center.  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, AppSource, validation
 ms.date: 08/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing AppSource submission validation telemetry
@@ -460,7 +459,7 @@ traces
 
 [!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
-## See also
+## Related information
 
 [Telemetry overview](telemetry-overview.md)   
 [Sending App Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)   

@@ -3,7 +3,7 @@ title: Analyzing Job Queue Lifecycle Trace Telemetry
 description: Learn about the telemetry for job queue entries in Business Central  
 author: kennienp
 ms.topic: conceptual
-ms.service: dynamics365-business-central
+
 ms.reviewer: jswymer
 ms.custom: bap-template
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
@@ -363,7 +363,7 @@ In the table below, you can read more about the scenarios and get sample KQL cod
 
 For more information about how to setup alerts on telemetry, see [Alert on Telemetry](telemetry-alert.md).
 
-## See also
+## Related information
 
 [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks)   
 [How the Job Queue works](../developer/devenv-job-queue.md)   

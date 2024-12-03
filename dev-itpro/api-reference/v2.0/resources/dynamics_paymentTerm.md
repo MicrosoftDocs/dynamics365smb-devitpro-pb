@@ -3,11 +3,10 @@ title: paymentTerm resource type
 description: A payment term object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # paymentTerm resource type
@@ -66,7 +65,7 @@ Here is a JSON representation of the paymentTerm resource.
 
 
 
-## See Also
+## Related information
 [GET paymentTerm](../api/dynamics_paymentTerm_Get.md)  
 [DELETE paymentTerm](../api/dynamics_paymentTerm_Delete.md)  
 [POST paymentTerm](../api/dynamics_paymentTerm_Create.md)  

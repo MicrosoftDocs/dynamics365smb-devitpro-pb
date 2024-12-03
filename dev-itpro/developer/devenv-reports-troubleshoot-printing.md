@@ -1,11 +1,7 @@
 ---
 title: "Troubleshooting Printing"
 description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global, and trigger events. 
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -102,7 +98,7 @@ begin
 end; 
 ```
 
-## See Also  
+## Related information  
 
 [Developing Printer Extensions](devenv-reports-printing.md)  
 [Create a Printer Extension](devenv-reports-create-printer-extension.md)  

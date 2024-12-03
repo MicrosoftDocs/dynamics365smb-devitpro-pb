@@ -3,13 +3,12 @@ title: (v1.0) dimensionValues resource type
 description: (v1.0) A dimension value in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # dimensionValues resource type (v1.0)
@@ -53,6 +52,6 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
   
 [Get Dimension Value](../api/dynamics_dimensionvalue_get.md)  

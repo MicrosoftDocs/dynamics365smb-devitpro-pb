@@ -1,10 +1,6 @@
 ---
 title: "DataItemLink Property (Query)"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: jswymer
 ---
@@ -47,7 +43,7 @@ A Salesperson table and a Sales Header table have the Code column and Salesperso
 DataItemLink = "Salesperson Code" = Salesperson.Code  
 ```  
 
-## See Also
+## Related information
 
 [Query Object](../devenv-query-object.md)  
 [SQLJoinType Property](devenv-sqljointype-property.md)

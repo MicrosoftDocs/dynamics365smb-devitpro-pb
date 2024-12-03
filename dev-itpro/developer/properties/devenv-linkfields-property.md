@@ -1,14 +1,11 @@
 ---
-title: "LinkFields Property"
+title: "LinkFields property"
 description: "Specifies the fields that are linked between two tables using the LinkTable Property."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -54,7 +51,7 @@ The same result can be obtained by placing this AL statement in the [OnPreXMLIte
 SetRange("Sell-to Customer No.",Customer."No.");  
 ```  
   
-## See Also
+## Related information
 
 [LinkTable Property](devenv-linktable-property.md)   
 [LinkTableForceInsert Property](devenv-linktableforceinsert-property.md)

@@ -1,17 +1,16 @@
 ---
-title: "Number Sequences"
-description: "This topic describes how to create number sequences in AL code in Dynamics 365 Business Central." 
+title: Number sequences in Business Central
+description: This article describes how to create and use number sequences in AL code in Dynamics 365 Business Central. 
 author: jswymer
-ms.custom: na
-ms.date: 10/27/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 11/21/2023
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
+ms.collection: get-started
 ---
 
-# Number Sequences in [!INCLUDE[prod_short](includes/prod_short.md)]
+# Number sequences in [!INCLUDE[prod_short](includes/prod_short.md)]
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
  
@@ -26,7 +25,8 @@ Unlike number sequences, number series are specially designed for scenarios wher
 For more information about number series, see [Create Number Series](/dynamics365/business-central/ui-create-number-series?branch=fall-2019#gaps-in-number-series) in the [!INCLUDE[prod_short](includes/prod_short.md)] application help.  
 
 ## Using non-blocking number series for improved performance
-Number series also include an option called **Allow Gaps in Nos.**. This option actually uses number sequences in the underlying code, and allows you to implement non-continuous, non-blocking numbering. So, if there are no regulatory requirements for using continuous numbering, you can improve performance by allowing gaps and using a number sequence instead. Customer cards, sales quotes, and warehouse activities are examples of entities that typically do not require continuous numbering.
+
+Number series also include an option called **Allow Gaps in Nos.**. This option actually uses number sequences in the underlying code, and allows you to implement non-continuous, non-blocking numbering. So, if there are no regulatory requirements for using continuous numbering, you can improve performance by allowing gaps and using a number sequence instead. Customer cards, sales quotes, and warehouse activities are examples of entities that typically don't require continuous numbering.
 
 ## Creating and managing number sequences in AL
 
@@ -40,7 +40,9 @@ To create and manage number sequences, you use the `NumberSequence` data type an
 |[Next(String[, Boolean])](methods-auto/numbersequence/numbersequence-next-method.md)|Retrieves the next value from the number sequence.|
 |[Current(String[, Boolean])](methods-auto/numbersequence/numbersequence-current-method.md)|Gets the current value from the number sequence, without doing any increment. The value is retrieved out of transaction. The value will not be returned on transaction rollback.|
 
-### Examples
+### Examples (creating and deleting NumberSequence objects)
+
+The following AL examples show how you can create and delete NumberSequence objects (and the corresponding sequence objects in SQL).
 
 ```AL
 // Creates a NumberSequence object that starts with the value '0' and increments by '1'​
@@ -56,10 +58,15 @@ NumberSequence.Insert('StartsWithZeroIncrementTenSequence', 0, 10);
 NumberSequence.Insert('MyCompanySequence', 0, 1, true); ​
 ​
 // Verifies whether a specific NumberSequence object exists, and if so, deletes it
-
 if NumberSequence.Exists('MySequence', true) then
-    NumberSequence.Delete('MySequence',true);​
-​
+    NumberSequence.Delete('MySequence',true);​​
+```
+
+### Examples (using NumberSequence objects)
+
+The following AL examples show how you can use NumberSequence objects in your AL code to generate numbers.
+
+```AL
 // Gets and returns the current value in a NumberSequence object
 number := NumberSequence.Current('MySequence',true);​
 
@@ -67,6 +74,7 @@ number := NumberSequence.Current('MySequence',true);​
 number := NumberSequence.Next('MySequence',true); ​
 ```
 
-## See Also  
-[Number Sequence data type](methods-auto/numbersequence/numbersequence-data-type.md)  
+## Related information
+
+[Number sequence data type](methods-auto/numbersequence/numbersequence-data-type.md)  
 [SQL Server Sequences](/sql/relational-databases/sequence-numbers/sequence-numbers)  

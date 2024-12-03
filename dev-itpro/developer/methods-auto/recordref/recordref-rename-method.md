@@ -2,13 +2,10 @@
 title: "RecordRef.Rename(Any [, Any,...]) Method"
 description: "Changes the value of a primary key in a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -31,6 +28,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 *Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The new values for the primary key.  
+
 *[Optional] Value2*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The new values for the primary key.  
@@ -110,7 +108,7 @@ If a record with No. 0112121 is found, and if the renames are successful, then t
 **After rename 2 - Customer name: Spotsmeyer’s Furnishings; Customer number: 8888888**  
   
 
-## See Also
+## Related information
 
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

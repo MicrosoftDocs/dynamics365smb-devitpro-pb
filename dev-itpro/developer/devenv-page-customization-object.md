@@ -2,13 +2,10 @@
 title: "Page customization object"
 description: "Description of the page customization object in AL for Business Central    ."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 08/21/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Page customization object
@@ -27,7 +24,7 @@ The page customization object has more restrictions than the [page extension obj
 > Modifying actions in Cue groups on page extensions is not supported.
 
 > [!NOTE]  
-> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` doesn't apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied using Designer. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
+> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` doesn't apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied Use Designer. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
 
 
 ## Snippet support
@@ -103,7 +100,7 @@ pagecustomization MyPageCust customizes MyPage
 To specify if a table field can be used as a source expression for page fields that are created in page customizations, use the [AllowInCustomizations](properties/devenv-allowincustomizations-property.md). Default is that a table field can be used in such a way.
 
 
-## See Also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

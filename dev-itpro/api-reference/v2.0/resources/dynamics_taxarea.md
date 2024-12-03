@@ -3,11 +3,10 @@ title: taxArea resource type
 description: A tax area object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # taxArea resource type
@@ -60,7 +59,7 @@ Here is a JSON representation of the taxArea resource.
 
 
 
-## See Also
+## Related information
 [GET taxArea](../api/dynamics_taxArea_Get.md)  
 [DELETE taxArea](../api/dynamics_taxArea_Delete.md)  
 [POST taxArea](../api/dynamics_taxArea_Create.md)  

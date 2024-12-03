@@ -1,13 +1,8 @@
 ---
 title: Add Beep Sound to ADCS Solution
 description: Add a Beep to an ADCS solution by adding a keyword _BELL_ to a string for the miniform that has the functionality you want to modify.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: d1fde2a6-ab79-45f1-a703-6ceebb828147
 caps.latest.revision: 6
 ---

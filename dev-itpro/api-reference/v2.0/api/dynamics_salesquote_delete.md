@@ -5,11 +5,10 @@ description: Deletes a sales quote object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete salesQuotes
@@ -55,7 +54,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesquote](../resources/dynamics_salesquote.md)    
 [Get salesquote](dynamics_salesquote_Get.md)    

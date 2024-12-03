@@ -1,14 +1,12 @@
 ---
 title: "Technical Upgrade to Version 21"
 description: Describes how to do a technical upgrade from Business Central V18, V19, V20 to V21
-ms.custom: na
-ms.date: 02/09/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Technical Upgrade to Version 21
 
@@ -363,7 +361,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## See Also
+## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central Compatibility matrix](upgrade-v14-v15-compatibility.md)

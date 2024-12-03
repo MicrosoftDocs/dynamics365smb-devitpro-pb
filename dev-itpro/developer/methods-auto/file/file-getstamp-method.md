@@ -2,13 +2,10 @@
 title: "File.GetStamp(Text, var Date [, var Time]) Method"
 description: "Gets the exact time that a file was last written to."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -55,8 +52,8 @@ The time that the file was last written to. Optional.
 ## Example  
  The following example gets the date and time that a file was written to and displays the data in a message box. The code example assumes that you have created the file 'C:\\MyFolder\\MyText.txt'. This example requires that you create the following global variables and text constant.  
 
-```
- var
+```al
+var
     varDate: Date;
     varTime: Time;
     varFileName: Text;
@@ -68,7 +65,7 @@ begin
 end;
 ```  
 
-## See Also
+## Related information
 [File Data Type](file-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

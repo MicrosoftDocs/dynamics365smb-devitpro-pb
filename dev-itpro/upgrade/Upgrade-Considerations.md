@@ -2,10 +2,7 @@
 title: Upgrade Considerations
 description: This article provides tips and considerations to prepare a solution when you are planning to upgrade Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.custom: na
 ms.reviewer: jswymer
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 04/01/2021
 ms.author: jswymer
@@ -92,7 +89,7 @@ Sometimes Microsoft will refactor code so that fields are no longer used, or the
 
  Make sure that all objects where compiled in a development environment with the right .ETX and .STX files. You can verify that you are running in the correct environment with English \(US\) as the base language by opening the **ndo$dbproperty** table in SQL Server Management Studio. In the **Identifiers** column, the word `Object` must be written exactly as shown here.  
 
-## See Also  
+## Related information  
 
 [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
 [Upgrading the Data](Upgrading-the-Data.md)   

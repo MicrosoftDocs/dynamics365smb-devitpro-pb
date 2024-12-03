@@ -1,51 +1,102 @@
 ---
-title: "Table Object"
-description: "Description of the table object."
+title: Table object
+description: This article describes the structure, object limits, and extensibility of the table object in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 10/01/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 --- 
 
-# Table Object
+# Table object
 
-Tables are the core objects used to store data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. No matter how data is registered in the product - from a web service to a finger swipe on the phone app, the results of that transaction will be recorded in a table. 
+Tables are the core objects used to store data in [!INCLUDE [prod_short](includes/prod_short.md)]. No matter how data is registered in the product&mdash;from a web service to the phone app&mdash;the results of that transaction are recorded in a table.
+
+## Table syntax
 
 The structure of a table has four sections:
 
 - The first block contains metadata for the overall table, such as the table type.
-- The fields section describes the data elements that make up the table, such as their name and the type of data they can store.
+- The fields section describes the data elements that make up the table, such as their name or the type of data they can store.
 - The keys section contains the definitions of the keys that the table needs to support.
 - The final section details the triggers and code that can run on the table.
 
+The order in which the sections appear matters. The following example illustrates the ordering:
+
+```AL
+table ObjectId TableName
+{
+    // Specify table properties, for example 
+    Caption = 'Sample table';
+    DataPerCompany = true;
+
+    // Define the table schema
+    fields {}
+   
+    // Define keys section (optional)
+    keys {} 
+    
+    // Add AL code here (optional)
+}
+```
+
+## Table object limits
+
+The table object has limitations that are mostly dictated by SQL Server, such as the maximum record size, number of fields, and the number of keys.
+
+Learn more in [Object specifications and limitations](devenv-object-specifications-limitations.md).
+
 ## Table extensibility limitations
+
 > [!IMPORTANT]  
-> Only tables with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
+> Only tables with the [Extensible property](properties/devenv-extensible-property.md) set to **true** can be extended.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!IMPORTANT]  
-> System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and above. For more information about object ranges, see [Object Ranges](devenv-object-ranges.md).
+> System and virtual tables can't be extended. System tables are created in the ID range of 2.000.000.000 and higher. Learn more in [Object ranges](devenv-object-ranges.md).
 
-## Table object limits 
-The table object has limitations that are mostly dictated by SQL Server, such as the maximum record size, number of fields, and the number of keys.
+## System fields
 
-For more information about current limitations on the table object, see [Object Specifications and Limitations](devenv-object-specifications-limitations.md)   
+The [!INCLUDE [prod_short](includes/prod_short.md)] platform automatically adds several system fields to tables. Learn more in [System fields](devenv-table-system-fields.md).
+
+## Defining default values for fields
+
+It's common to have field values set to a default value. To set a default, you set the `InitValue` property on the field.
+
+Learn more in [InitValue property](properties/devenv-initvalue-property.md).
+
+## Defining validation rules for fields
+
+If you want to run business logic to validate the value of a field, you can define the `OnValidate` trigger on the field. 
+
+Learn more in [OnValidate (Field) trigger](triggers-auto/field/devenv-onvalidate-field-trigger.md).
 
 ## Snippet support
-Typing the shortcut `ttable` will create the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
+Typing the shortcut `ttable` creates the basic layout for a table object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
+## Add tooltips on table fields
+
+Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip. 
+
+Learn more in [Add tooltips to table and page fields](devenv-adding-tooltips.md).
+
+## Enable full-text search on table fields
+
+[!INCLUDE[2024rw2_and_later](includes/2024rw2_and_later.md)]
+
+You can specify whether table fields are optimized for text search by setting the `OptimizeForTextSearch` property to `true`.
+
+Learn more in [Enable text search on table fields](devenv-table-field-text-search.md).
+
 ## Table example
 
-This table stores address information and it has four fields; `Address`, `Locality`, `Town/City`, and `County`.
+This table stores address information and it has five fields; `Address`, `Locality`, `Town/City`, `County`, and `IsValidated`.
 
 ```AL
 table 50104 Address
@@ -57,61 +108,61 @@ table 50104 Address
     {
         field(1; Address; Text[50])
         {
-            Description = 'Address retrieved by Service';
+            Caption = 'Address retrieved by Service';
+            // in 2024 release wave 2, you can define that table fields are included in optimized text search
+            OptimizeForTextSearch = true;
         }
         field(2; Locality; Text[30])
         {
-            Description = 'Locality retrieved by Service';
+            Caption = 'Locality retrieved by Service';
+            Description = 'Locality feature likely to change in vNext'; // Internal note (not shown in the client)
+            OptimizeForTextSearch = true;
         }
         field(3; "Town/City"; Text[30])
         {
-            Description = 'Town/City retrieved by Service';
+            Caption = 'Town/City retrieved by Service';
+            // in 2024 release wave 1, you can define tooltips on the table field level            
+            ToolTip = 'Town/City retrieved by Service';
+            OptimizeForTextSearch = true;            
         }
         field(4; County; Text[30])
         {
-            Description = 'County retrieved by Service';
+            Caption = 'County retrieved by Service';
+            OptimizeForTextSearch = true;
 
-            trigger OnValidate();
+            // this is how you define field validation on the table level
+            trigger OnValidate()
             begin
                 ValidateCounty(County);
             end;
 
         }
+        field(5; IsValidated; Boolean)
+        {
+            Caption = 'Address validated yet?';
+            InitValue = false; // this is how you define default values 
+        }        
     }
+
     keys
     {
         key(PrimaryKey; Address)
         {
-            Clustered = TRUE;
+            Clustered = true;
         }
     }
-
-    var
-        Msg: Label 'Hello from my method';
-
-    trigger OnInsert();
-    begin
-
-    end;
-
-    procedure MyMethod();
-    begin
-        Message(Msg);
-    end;
 }
 ```
 
-## System fields
+## Related information
 
-The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will automatically add several system fields to tables. For more information, see [System Fields](devenv-table-system-fields.md).
-
-
-## See Also
-
-[AL Development Environment](devenv-reference-overview.md)  
-[Table Overview](devenv-tables-overview.md)  
-[Table Extension Object](devenv-table-ext-object.md)  
-[SqlTimestamp Property](properties/devenv-sqltimestamp-property.md)  
-[Table Keys](devenv-table-keys.md)  
-[Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  
-[Object Specifications and Limitations](devenv-object-specifications-limitations.md)   
+[Table overview](devenv-tables-overview.md)  
+[Table extension object](devenv-table-ext-object.md)  
+[Adding tooltips to table and page fields](devenv-adding-tooltips.md)  
+[InitValue Property (defining default values for fields)](properties/devenv-initvalue-property.md)  
+[OnValidate (Field) Trigger](triggers-auto/field/devenv-onvalidate-field-trigger.md)  
+[Enable text search on table fields](devenv-table-field-text-search.md)  
+[Table keys](devenv-table-keys.md)  
+[Table, table fields, and table extension properties](properties/devenv-table-properties.md)  
+[Object specifications and limitations](devenv-object-specifications-limitations.md)  
+[AL development environment](devenv-reference-overview.md)  

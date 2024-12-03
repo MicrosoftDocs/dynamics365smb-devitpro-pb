@@ -1,24 +1,22 @@
 ---
-title: "Dialog Data Type"
+title: "Dialog data type"
 description: "Represents a dialog window."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Dialog Data Type
+# Dialog Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents a dialog window.
 
 
+## Static methods
 The following methods are available on the Dialog data type.
 
 
@@ -32,6 +30,7 @@ The following methods are available on the Dialog data type.
 |[Message(Text [, Any,...])](dialog-message-method.md)|Displays a text string in a message window.|
 |[StrMenu(Text [, Integer] [, Text])](dialog-strmenu-method.md)|Creates a menu window that displays a series of options.|
 
+## Instance methods
 The following methods are available on instances of the Dialog data type.
 
 |Method name|Description|
@@ -42,6 +41,6 @@ The following methods are available on instances of the Dialog data type.
 |[Update([Integer] [, Any])](dialog-update-method.md)|Updates the value of a '#'-or '@' field in the active window.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

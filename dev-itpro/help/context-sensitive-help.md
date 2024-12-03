@@ -2,10 +2,10 @@
 title: Configure context-sensitive help
 description: Learn about how to add context-sensitive help to your Business Central solution, both as an app publisher, an administrator, and as a developer.
 author: SusanneWindfeldPedersen
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
-ms.date: 09/01/2023
+ms.date: 01/03/2024
+ms.reviewer: solsen
 ---
 
 # Configure context-sensitive help
@@ -112,7 +112,7 @@ You can use the [ContextSensitiveHelpPage property](../developer/properties/deve
 
 Your target website is expected to have a default page that will display if no other page is appropriate. For every page where *ContextSensitiveHelpPage* isn't set, this default help page will be shown.  
 
-For page extensions, the value of the *ContextSensitiveHelpPage* property will apply only to the controls that the page extension adds to the extended page objects. For example, if your page extension adds two new controls to the base application's Customer Card page, then the *Learn more* links in the tooltips for those two controls will go to the help page that you've specified. The *Learn more* links in the rest of the controls will go to the default help that is specified in the base application. This way, multiple apps can extend the same page object and each apply their own content-sensitive help link without overwriting the context-sensitive links for other apps.  
+For page extensions, the value of the *ContextSensitiveHelpPage* property applies only to the controls that the page extension adds to the extended page objects. For example, if your page extension adds two new controls to the base application's Customer Card page, then the *Learn more* links in the tooltips for those two controls will go to the help page that you've specified. The *Learn more* links in the rest of the controls will go to the default help that is specified in the base application. This way, multiple apps can extend the same page object and each apply their own content-sensitive help link without overwriting the context-sensitive links for other apps.  
 
 > [!NOTE]  
 > The app.json file also contains a *help* property that is used by AppSource to specify the link that describes the app or solution.  
@@ -150,20 +150,20 @@ Once you've done this mapping, you can apply it to the **Page Documentation** ta
 
 You can find a couple of suggestions for how to go about this in our blog post, [Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/).
 
-## See also
+## Related information
 
-[User Assistance Model](../user-assistance.md)  
-[Resources for Help and Support for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../help-and-support.md)  
-[Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
-[Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
-[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../developer/devenv-extension-example.md)  
-[Building an Advanced Sample Extension](../developer/devenv-extension-advanced-example.md)  
-[Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
-[JSON Files](../developer/devenv-json-files.md)  
+[User assistance model](../user-assistance.md)  
+[Resources for help and support for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../help-and-support.md)  
+[Adding help links from pages, reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[Migrate legacy help to the Business Central format](../upgrade/migrate-help.md)    
+[Building your first sample extension with extension objects, install code, and upgrade code](../developer/devenv-extension-example.md) 
+[Building an advanced sample extension](../developer/devenv-extension-advanced-example.md)  
+[Development of a localization solution](../developer/readiness/readiness-develop-localization.md)  
+[JSON files](../developer/devenv-json-files.md)  
 [Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
 [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
 [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/)  
-[Docs Contributor Guide](/contribute/)  
-[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
+[Docs contributor guide](/contribute/)  
+[Docs authoring pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

@@ -3,11 +3,11 @@ title: Configure Business Central Database Authentication
 description: This article describes how to configure SQL Server authentication between the Dynamics Business Central instance and a database. 
 ms.date: 11/21/2022
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
 ms.author: jswymer
-ms.custom: bac-template
+ms.custom: bap-template
 ---
 # Configure Business Central Database Authentication
 
@@ -170,8 +170,11 @@ To configure a SQL Server authentication on a [!INCLUDE [server](../developer/in
    For more information, see [Mount or Dismount a Tenant](mount-dismount-tenant.md).  
   
 5. Restart the server instance.
-  
-## See Also
+
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
+## Related information
 
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
 [Deployment](../deployment/deployment.md)  

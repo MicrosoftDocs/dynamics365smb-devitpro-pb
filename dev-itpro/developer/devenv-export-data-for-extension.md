@@ -2,13 +2,10 @@
 title: "Adding data for Extensions"
 description: "How you can add data such as permisisons, web services, and table data for an extension."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Adding data for Extensions
@@ -125,7 +122,7 @@ The data must be exported into files to be included in the extension. To use the
 
 3. Add the exported custom report files to the Visual Studio Code project that contains your extension.
 
-## See Also
+## Related information
 
 [Developing Extensions in AL](devenv-dev-overview.md)  
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  

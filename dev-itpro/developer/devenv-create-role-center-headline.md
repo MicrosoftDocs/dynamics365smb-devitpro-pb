@@ -1,16 +1,13 @@
 ---
-title: "Create a Role Center Headline"
+title: Create a Role Center headline
 description: You can provide information and insights as headlines on Role Centers.
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 09/09/2024
 ms.topic: conceptual
 author: jswymer
+ms.reviewer: solsen
 ---
 
-# Creating a Role Center Headline
+# Creating a Role Center headline
 
 You can set up a Role Center to display a series of headline texts that appear one by one for a predefined period of time.
 
@@ -234,7 +231,52 @@ group(Group2)
 }
 ```
 
-## See Also
+## Extending the built-in headlines
 
-[Pages Overview](devenv-pages-overview.md)  
-[Page Object](devenv-page-object.md)
+Maybe you don't want to create your own role center and your own headline part, but just want to add some headlines to the built-in role centers in [!INCLUDE[prod_short](includes/prod_short.md)] application. You can do so with the following steps:
+
+1. Navigate to the Role Center in which you want to add headlines.
+1. Open the **Page Inspector** tool. For more information, see [Inspecting pages in Business Central](/dynamics365/business-central/across-inspect-page).
+1. Choose the HeadlinePart on the role center.
+1. In the **Page Inspection** pane, you can now see the name and ID of the page hosting the HeadlinePart part in the [!INCLUDE[prod_short](includes/prod_short.md)] application. 
+1. Now you can use a normal page extension to add new headlines to the page.
+
+
+For example, the following code adds a heading `headlineTextYoutube` to the Business Manager role center:
+
+```AL
+pageextension 50100 BCLEHeadlines extends "Headline RC Business Manager"
+{
+    layout
+    {
+        addfirst(Control1)
+        {
+            field(headlineTextYoutube; headlineTextYoutube)
+            {
+                ApplicationArea = All;
+
+                trigger OnDrillDown()
+                var
+                    DrillDownURLTxt: Label 'https://aka.ms/bcYoutube', Locked = True;
+                begin
+                    Hyperlink(DrillDownURLTxt)
+                end;
+            }
+        }
+    }
+
+    trigger OnOpenPage()
+    begin
+        headlineTextYoutube := 'Subscribed to Business Central Youtube yet? Visit aka.ms/bcYoutube';
+    end;
+
+    var
+        headlineTextYoutube: Text;
+}
+
+```
+
+## Related information
+
+[Pages overview](devenv-pages-overview.md)  
+[Page object](devenv-page-object.md)

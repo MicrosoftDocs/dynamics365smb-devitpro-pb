@@ -2,12 +2,11 @@
 title: "Extending Application Areas"
 description: "Document the extension of Application Areas."
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 ms.date: 04/01/2021
+ms.reviewer: solsen
 ---
 
 # Extending Application Areas
@@ -198,11 +197,11 @@ codeunit 50102 EnableAdvancedApplicationArea
 
 If you decide to code application areas as an extension, there are some aspects that must be considered. Application areas enable hiding entire business scenarios and you can have the same code base, which makes it possible to quickly modify the UI for different business scenarios or audiences. However, tagging errors as missing tags or incorrect tags occur and every single control must be tagged. 
 
-## See Also
+## Related information
 
-[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)  
-[Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  
-[ApplicationArea Property](properties/devenv-applicationarea-property.md)  
-[ApplicationArea Method](./methods-auto/library.md)  
-[AccessByPermission Property](properties/devenv-accessbypermission-property.md)  
+[Module System Application](/dynamics365/business-central/application/system-application/module/system-application/)    
+[Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)    
+[ApplicationArea Property](properties/devenv-applicationarea-property.md)    
+[ApplicationArea Method](./methods-auto/library.md)    
+[AccessByPermission Property](properties/devenv-accessbypermission-property.md)    
 [Properties](properties/devenv-properties.md)

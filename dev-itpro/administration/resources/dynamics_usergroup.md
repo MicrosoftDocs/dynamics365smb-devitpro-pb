@@ -1,13 +1,12 @@
 ---
-title: userGroup resource type | Microsoft Docs
+title: userGroup resource type
 description: An user group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # userGroup resource type
@@ -19,6 +18,8 @@ Represents an user group in [!INCLUDE[d365fin_long_md](../../includes/d365fin_lo
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
+> [!NOTE]  
+> User groups are replaced with [security groups](../../upgrade/deprecated-features-user-groups.md) and will be deprecated in version 25. For more information, see [security group APIs](../resources/dynamics_securitygroup.md) and [Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups).
 
 ## Methods
 
@@ -63,7 +64,7 @@ Here is a JSON representation of the userGroup resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET userGroup](../api/dynamics_usergroup_get.md)  
 [DELETE userGroup](../api/dynamics_usergroup_delete.md)  
 [POST userGroup](../api/dynamics_usergroup_create.md)   

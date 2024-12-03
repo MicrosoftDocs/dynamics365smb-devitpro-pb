@@ -1,13 +1,12 @@
 ---
-title: GET subscriptions  
+title: Get subscriptions  
 description: Gets a subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 11/20/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get subscriptions
@@ -15,6 +14,11 @@ ms.author: solsen
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Retrieves the properties of webhook subscription objects for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+
+## Custom APIs
+
+If you're subscribing to a custom API page, both the URL you send the subscription HTTP request to and the resource path you wish to subscribe to must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements equivalent to: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, part of the URL will contain these elements `api/pub/grp/v1.0/subscriptions`.
+
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../endpoints-apis-for-dynamics.md).
@@ -66,7 +70,7 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [Subscriptions](../resources/dynamics_subscriptions.md)    
 [Delete subscriptions](dynamics_subscriptions_Delete.md)    

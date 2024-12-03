@@ -2,13 +2,10 @@
 title: "WebServiceActionContext.GetResultCode() Method"
 description: "Gets the web service action result status code."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +20,6 @@ Gets the web service action result status code.
 ```AL
 ResultCode :=   WebServiceActionContext.GetResultCode()
 ```
-
 ## Parameters
 *WebServiceActionContext*  
 &emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)  
@@ -37,7 +33,7 @@ The web service action result status code.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## See Also
+## Related information
 [WebServiceActionContext Data Type](webserviceactioncontext-data-type.md)  
 [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md)  
 [Get Started with AL](../../devenv-get-started.md)  

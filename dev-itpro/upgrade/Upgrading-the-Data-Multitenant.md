@@ -1,14 +1,12 @@
 ---
 title: Upgrading the Database to in a Multitenant Deployment
 description: This article describes the tasks required for upgrade the data when you have a multitenant deployment. 
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading the Data to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]: Multitenant Deployment
 
@@ -320,6 +318,6 @@ You perform these tasks on each tenant that you want to upgrade.
 
     For more information, see [Uploading the License File](../cside/cside-upload-license-file.md)
 
-## See Also  
+## Related information  
  [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
  [Upgrading to Business Central](upgrading-to-business-central.md)

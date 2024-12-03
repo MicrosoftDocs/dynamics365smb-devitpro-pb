@@ -4,10 +4,12 @@ description: Learn about the updates for Dynamics 365 Business Central 2022 Rele
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 10/05/2023
-ms.custom: bap-template
+ms.date: 04/16/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates
@@ -22,7 +24,7 @@ You should always install the latest update.
 
 ## Available updates for Business Central 2022 Release Wave 1
 
-The following table lists the updates that have been released for 2022 release wave 1 of Business Central (version 20). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the updates that have been released for 2022 release wave 1 of Business Central (version 20). The updates include hotfixes that apply to all countries/regions and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 
@@ -49,7 +51,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 |[5015475](https://support.microsoft.com/help/5015475)|Update 20.2 |June 2022 |Application Build 20.2.41423</br>Platform Build 20.0.41354  |
 |[5014491](https://support.microsoft.com/help/5014491) |Update 20.1 |May 2022 |Application Build 20.1.39901</br>Platform Build 20.0.39849 |
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v20.md)  
@@ -61,7 +63,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
-[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
+[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

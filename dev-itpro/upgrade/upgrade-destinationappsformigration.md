@@ -1,14 +1,12 @@
 ---
 title: "DestinationAppsForMigration"
 author: jswymer
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 description: Learn how to use the DestinationAppsForMigration setting in Business Central Server for upgrading from C/AL to AL extensions. Detailed guide and FAQs included.
+ms.reviewer: jswymer
 ---
 
 # DestinationAppsForMigration
@@ -29,7 +27,7 @@ The DestinationAppsForMigration setting serves the following purposes:
     - Table ID in AL must be the same ID as was in the C/AL. 
     - The table definition (schema) must match the existing schema. Or, if there are schema changes, they must be additive only.
 
-        If this condition isn't met, it won't prohibit the move to the extension. But, the data upgrade may fail because of the breaking changes.
+        If this condition isn't met, it won't prohibit the move to the extension. But, the data upgrade might fail because of the breaking changes.
     
 2. Runs upgrade code and installs extensions automatically during upgrade.
 
@@ -39,9 +37,9 @@ The DestinationAppsForMigration setting serves the following purposes:
 
 3. Enables republishing and reinstalling extensions that haven't been built on the latest platform. For example, extensions that haven't been compiled on version 15 or 16.
 
-    These extensions don't include base or system application dependencies in their manifests (app.json file). These extensions typically include the third-party extensions used on your version 14 solution. The DestinationAppsForMigration setting will resolve references to the Microsoft base application and system application for the extensions. When an extension is published, the system will automatically modify its manifest to include a dependency on the base and system applications.
+    These extensions don't include base or system application dependencies in their manifests (app.json file). These extensions typically include the third-party extensions used on your version 14 solution. The DestinationAppsForMigration setting resolves references to the Microsoft base application and system application for the extensions. When an extension is published, the system will automatically modify its manifest to include a dependency on the base and system applications.
 
-    The destinationappsformigration process only inserts dependencies, which allows you to resolve dependencies. If the extension introduces breaking changes, it will fail.
+    The destinationappsformigration process only inserts dependencies, which allows you to resolve dependencies. If the extension introduces breaking changes, it fails.
 
 > [!TIP]
 > If you moving a table and fields from one extension to another, this move is considered an AL to AL move. For this move, you use the migration.json file. For more information, see [Migrating Tables and Fields Between Extensions](../developer/devenv-migrate-table-fields.md).
@@ -56,7 +54,7 @@ Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "Dest
 For example, the following command specifies the Microsoft system and base applications and a custom extension named My Extension.
 
 ```
-Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"My Extension", "publisher": "Me"}]'
+Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"My Extension", "publisher": "Me"}]'
 ```
 
 > [!IMPORTANT]
@@ -84,7 +82,7 @@ It depends. For the setting to have any effect, you also include the system and 
 
 As many as you like. There's no limit or performance impact.
 
-## See Also
+## Related information
 
 [JSON Files](../developer/devenv-json-files.md)  
 [Migrating Tables and Fields Between Extensions](../developer/devenv-migrate-table-fields.md) 

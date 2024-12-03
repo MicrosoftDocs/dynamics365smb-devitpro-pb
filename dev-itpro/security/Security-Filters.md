@@ -3,12 +3,10 @@ title: Using Security Filters in Business Central
 description: Learn how you can configure security filters at different levels in your Business Central solution so that you can limit access to data.
 author: jswymer
 
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 # Using Security Filters
 
@@ -133,7 +131,7 @@ If security filters are not set, then setting the **SecurityFiltering** property
 > [!NOTE]  
 > We recommend that you change commonly used record variables from the default value of **Validated** to either **Filtered** or **Ignored** to improve performance.  
 
-## See Also  
+## Related information  
 
 [Record-Level Security](data-security.md)   
 

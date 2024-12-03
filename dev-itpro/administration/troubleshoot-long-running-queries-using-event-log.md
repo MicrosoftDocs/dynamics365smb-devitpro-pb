@@ -1,11 +1,7 @@
 ---
 title: "Using Event Log to Monitor Long Running SQL Queries"
 description: Shows how to monitor long running SQL queries in Event Viewer. Use the information determine SQL queries that are good candidates for optimization.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 author: jswymer
@@ -72,7 +68,7 @@ ThreadId: 10
 CounterInformation:
 ```
 
-## See Also
+## Related information
 
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)   
 [Monitoring Long Running SQL Queries using the Event Log](monitor-long-running-sql-queries-event-log.md)  

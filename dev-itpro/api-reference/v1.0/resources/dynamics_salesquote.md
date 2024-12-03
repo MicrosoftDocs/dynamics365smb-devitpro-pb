@@ -3,13 +3,12 @@ title: (v1.0) salesQuotes resource type
 description: (v1.0) A sales quote object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesQuotes resource type (v1.0)
@@ -75,7 +74,7 @@ Represents a salesQuote resource type in [!INCLUDE[prod_short](../../../includes
 |shipToContact   |string, maximum size 100   |Ship to contact|
 |sellingPostalAddress|Microsoft.NAV.postalAddressType| Selling postal address|
 |billingPostalAddress|Microsoft.NAV.postalAddressType| Billing postal address|
-|shippingPostalAddress|Microsoft.NAV.postalAddressType| Shipping postal adress|
+|shippingPostalAddress|Microsoft.NAV.postalAddressType| Shipping postal address|
 |lastModifiedDateTime|datetime|The last datetime the sales quote was modified. Read-Only.|
 
 
@@ -122,7 +121,7 @@ Here is a JSON representation of the resource.
       "lastModifiedDateTime": "DateTime"
 }
 ```
-## See also
+## Related information
 
 [Get Sales Quote](../api/dynamics_salesquote_get.md)  
 [Create Sales Quote](../api/dynamics_create_salesquote.md)  

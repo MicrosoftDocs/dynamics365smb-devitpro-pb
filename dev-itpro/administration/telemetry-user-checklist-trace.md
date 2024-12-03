@@ -3,12 +3,11 @@ title:  User Checklist Trace Telemetry | Microsoft Docs
 description: Learn about the user checklist telemetry in Business Central  
 author: KennieNP
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 07/21/2022
 ms.author: kepontop
+ms.reviewer: jswymer
 ---
 # Analyzing User Checklist Telemetry
 
@@ -36,7 +35,7 @@ Occurs when the checklist status changes for the environment.
 |alOldStatus| The old status of the checklist, for example **Not Started** or **In progress**. |
 |alNewStatus| The new status of the checklist, for example **In progress** or **Completed**. |
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

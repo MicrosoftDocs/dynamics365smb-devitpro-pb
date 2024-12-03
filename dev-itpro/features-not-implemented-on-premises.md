@@ -2,9 +2,9 @@
 title: Features not implemented in on-premises deployments
 description: Some features work differently or not at all, depending on whether your Business Central solution is in the cloud or on-premises.
 author: jswymer
-
-ms.custom: na
-ms.reviewer: na
+ms.service: dynamics-365-op
+ms.custom: bap-template
+ms.reviewer: jswymer
 ms.topic: article
 ms.author: jswymer
 ms.date: 06/13/2022
@@ -53,8 +53,9 @@ The following features aren't intended for use in on-premises deployments. There
 |[!INCLUDE[prod_short](includes/prod_short.md)] app for Microsoft Teams|This app connects Teams to your business data in [!INCLUDE[prod_short](includes/prod_short.md)]. The app can't connect to [!INCLUDE[prod_short](includes/prod_short.md)] on-premises. For more information about [!INCLUDE[prod_short](includes/prod_short.md)] online and Teams, see [Business Central and Microsoft Teams Integration](/dynamics365/business-central/across-teams-overview).|
 |Share to Teams|This feature lets Business Central online users copy a link from a page directly into a Teams conversation. For more information, see [Sharing Business Central Records and Page Links in Microsoft Teams](/dynamics365/business-central/across-working-with-teams). |
 |Connect to Shopify|Online tenants can connect their Shopify store (or stores) with Business Central and maximize their business productivity. The Shopify connector is not supported for on-premises deployments. For more information, see [Get Started with the Shopify Connector](/dynamics365/business-central/shopify/get-started).|
+|Copilot|Copilot in Business Central is available exclusively for Business Central online. Copilot is the AI-powered assistant that helps people across your organization unlock their creativity and automate tedious tasks. For example, see [Marketing text suggestions](/dynamics365/business-central/ai-overview) and [Bank account reconciliation assist](/dynamics365/business-central/bank-reconciliation-with-copilot).|
 
-## See Also
+## Related information
 
 [System Requirements](deployment/system-requirement-business-central.md)  
 [How to: Create a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/toc.json)  

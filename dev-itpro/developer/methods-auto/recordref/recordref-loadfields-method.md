@@ -2,13 +2,10 @@
 title: "RecordRef.LoadFields(Integer,...) Method"
 description: "Accesses the table's corresponding data source and loads the values of the specified fields on the record."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,7 +44,7 @@ This method will trigger a [JIT load](../../devenv-partial-records.md#jit) of th
 
 The method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
-## See Also
+## Related information
 
 [Using Partial Records](../../devenv-partial-records.md)  
 [RecordRef Data Type](recordref-data-type.md)  

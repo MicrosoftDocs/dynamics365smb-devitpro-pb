@@ -2,13 +2,10 @@
 title: "Database.UserSecurityId() Method"
 description: "Gets the unique identifier of the user that is logged on to the current session."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -26,7 +23,6 @@ USID :=   Database.UserSecurityId()
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 
-
 ## Return Value
 *USID*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
@@ -34,7 +30,7 @@ The ID that is assigned to the user by the application. This is the value of the
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

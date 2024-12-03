@@ -1,14 +1,12 @@
 ---
 title: "Technical Upgrade from Version 17 to Version 18"
 description: Describes how to do a technical upgrade from Business Central V15, 16, and 17, to V18
-ms.custom: na
-ms.date: 10/01/2020
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Technical Upgrade to Version 18
 
@@ -406,7 +404,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
-## See Also
+## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central Compatibility matrix](upgrade-v14-v15-compatibility.md)

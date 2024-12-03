@@ -4,11 +4,10 @@ description: Learn how to enable select features ahead of time as the administra
 author: mikebcMSFT
 
 ms.topic: conceptual
-ms.workload: na
-ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
 ms.date: 10/26/2021
 ms.author: mikebc
+ms.reviewer: jswymer
 ---
 
 # Enabling Upcoming Features Ahead of Time
@@ -143,7 +142,7 @@ Starting with version 19.1, when you create a copy of an environment, any irreve
 
 When you create a new sandbox environment with a copy of production data, your choice of enabled features is also copied to the sandbox. When you create a fresh sandbox, each feature is enabled by default, unless a feature is irreversible.  
 
-### Why does the list include features that apply to other countries?
+### Why does the list include features that apply to other countries/regions?
 
 Microsoft's business functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] consists of functionality that is generic and functionality that is particular to a specific country or region. The **Feature Management** page will at times show optional features that are particular to a country, even if your [!INCLUDE [prod_short](../includes/prod_short.md)] is based on another country-specific version. This is due to the current limitations of feature management, which relies on a system table to populate the **Feature Management** page.  
 
@@ -153,7 +152,7 @@ In a future version, we hope to redesign feature management to better reflect lo
 
 Yes. You can turn optional features on or off in a similar way.
 
-## See also
+## Related information
 
 [New and planned features](/dynamics365-release-plan/2021wave1/)  
 [Administration of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](tenant-administration.md)  

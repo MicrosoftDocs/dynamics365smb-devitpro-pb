@@ -3,11 +3,10 @@ title: salesQuoteLine resource type
 description: A sales quote line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesQuoteLine resource type
@@ -55,6 +54,7 @@ Represents a sales quote line in [!INCLUDE[prod_short](../../../includes/prod_sh
 |lineType|NAV.invoiceLineAggLineType|The type of the sales quote line. It can be "Comment", "Account", "Item", "Resource" Value", "Fixed Asset" or "Charge".|
 |lineObjectNumber|string|The number of the object (account or item) of the sales quote line.|
 |description|string|Specifies the description of the sales quote line.|
+|description2|string||
 |unitOfMeasureId|GUID|The ID of unit of measure for the sales quote line.|
 |unitOfMeasureCode|string|The code of unit of measure for the sales quote line.|
 |unitPrice|decimal|Specifies the price for one unit of the item in the specified sales quote line.|
@@ -88,6 +88,7 @@ Here is a JSON representation of the salesQuoteLine resource.
     "lineType": "NAV.invoiceLineAggLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureId": "GUID",
     "unitOfMeasureCode": "string",
     "unitPrice": "decimal",
@@ -111,7 +112,7 @@ Here is a JSON representation of the salesQuoteLine resource.
 
 
 
-## See Also
+## Related information
 [GET salesQuoteLine](../api/dynamics_salesQuoteLine_Get.md)  
 [DELETE salesQuoteLine](../api/dynamics_salesQuoteLine_Delete.md)  
 [POST salesQuoteLine](../api/dynamics_salesQuoteLine_Create.md)  

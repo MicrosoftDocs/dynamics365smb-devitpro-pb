@@ -4,7 +4,6 @@ description: Guidance on troubleshooting and optimizing code analysis performanc
 author:  BazookaMusic 
 ms.author: sodragon
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.custom: bap-template
@@ -48,7 +47,7 @@ After a rule is identified as long-running, it can be switched off in the [rules
 
 The next step is to access the settings and configure your projects to achieve satisfactory performance.
 
-## See Also
+## Related information
 
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Using the Code Analysis Tools with the ruleset](devenv-using-code-analysis-tool-with-rule-set.md)

@@ -2,15 +2,12 @@
 title: "Making Pages and Reports in the MenuSuite Searchable After Upgrade"
 description: Explains how to make pages and reports searchable in the Web Client after an upgrade to the Business Central platform from Dynamics NAV.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
+ms.reviewer: solsen
 ---
 
 # Making Pages and Reports Searchable in the [!INCLUDE[d365fin_web_md.md](../developer/includes/d365fin_web_md.md)] After an Upgrade
@@ -66,7 +63,7 @@ You can set the properties of pages and reports manually (see [Adding Pages and 
     The pages and reports will not be searchable until you run **Build Object Search Index**. 
 
 
-## See Also
+## Related information
 [Converting a Database - Technical Upgrade](converting-a-database.md)  
 [Upgrading the Data](upgrading-the-data.md)  
 

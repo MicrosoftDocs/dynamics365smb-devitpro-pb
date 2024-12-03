@@ -1,10 +1,7 @@
 ---
 title: "GridLayout Property"
-ms.custom: na
-ms.date: 10/01/2020
-ms.reviewer: na
+ms.date: 12/05/2023
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: SusanneWindfeldPedersen
 ---
@@ -37,6 +34,9 @@ This property is only supported on grids.
 
 > [!IMPORTANT]
 > Arranging in rows only works in the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. In the [!INCLUDE[webclient](../includes/webclient.md)], fields can only be arranged in columns.
+
+> [!NOTE]
+> Due to restrictions on design capabilities in the web client, it's currently not possible to customize or personalize the controls within the grid syntax. It applies to all design modes, not just personalization.
 
 ## See Also
 

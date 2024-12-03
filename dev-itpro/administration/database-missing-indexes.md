@@ -3,12 +3,9 @@ title: "Missing Indexes in Dynamics 365 Business Central"
 description: "Description about missing indexes and database missing indexes page"
 author: jswymer
 ms.date: 06/09/2022
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: 
+ms.topic: conceptual
 ms.author: jswymer
-ms.custom: 
+ms.reviewer: jswymer
 ---
 
 # Missing Indexes in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]
@@ -46,7 +43,7 @@ To get information on missing indexes, go to **Database Missing Indexes** in Bus
 > [!Important]
 > The information provided on **Database Missing Indexes** page are the suggestions and must not be taken as mandatory actions. You need to analyze where and how many indexes are best suited for optimal performance of your application. Indexes also take storage space, can affect updates for the tables where insertions and deletions are more common, and therefore can be an expensive operation if you overdo it.
 
-## See Also
+## Related information
 
 [Performance Article For Developers](../performance/performance-developer.md)  
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  

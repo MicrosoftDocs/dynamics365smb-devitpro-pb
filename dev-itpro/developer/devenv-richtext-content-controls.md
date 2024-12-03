@@ -1,12 +1,10 @@
 ---
-title: "Rich Text and content controls"
+title: Rich Text and content controls
 description: How to create a functioning Rich Text Editor using ExtendedDataType and a table blob field in AL for Business Central.
 author: EmilDamsbo
 ms.author: solsen
-ms.custom: na
-ms.date: 09/25/2023
+ms.date: 10/23/2024
 ms.reviewer: solsen
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 
@@ -14,7 +12,7 @@ ms.topic: conceptual
 
 [!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
-The Rich Text feature in !INCLUDE [prod_short] is designed to handle multimedia content, such as social media posts, email bodies, quick annotations, file contents, or any field that requires a mix of text, tables, links, and images. It's best suited for cases where the user needs to author, view, or modify unstructured information and requires a moderate amount of space to work comfortably. The rich text control enables rich multimedia content editing. With that you get a multiline textbox with a rich toolbar, corresponding keyboard shortcuts, and the ability to author or paste in pictures, tables, and formatted text. A typical use case of a Rich Text Editor is the email editor. They require significant screen space to function correctly and fill the available horizontal space and stretch vertically up to a limit. The control includes a toolbar and shortcuts for formatting text (for example, for changing the font or font size), making text italic, bold, and more. There's also the option to add tables, images, and hyperlinks.
+The Rich Text feature in [!INCLUDE [prod_short](includes/prod_short.md)] is designed to handle multimedia content, such as social media posts, email bodies, quick annotations, file contents, or any field that requires a mix of text, tables, links, and images. It's best suited for cases where the user needs to author, view, or modify unstructured information and requires a moderate amount of space to work comfortably. The rich text control enables rich multimedia content editing. With that you get a multiline textbox with a rich toolbar, corresponding keyboard shortcuts, and the ability to author or paste in pictures, tables, and formatted text. A typical use case of a Rich Text Editor is the email editor. They require significant screen space to function correctly and fill the available horizontal space and stretch vertically up to a limit. The control includes a toolbar and shortcuts for formatting text (for example, for changing the font or font size), making text italic, bold, and more. There's also the option to add tables, images, and hyperlinks.
 The following image shows an example of the Rich Text Editor containing multiple different types of text formatting.
 
 ![Shows an example of the Rich Text Editor containing multiple different types of text formatting.](../developer/media/RichTextEditorExample.png)
@@ -22,11 +20,11 @@ The following image shows an example of the Rich Text Editor containing multiple
 The Rich Text feature can be applied to Blob, BigText, and Text data types without any size limits. A Rich Text control must be placed on its own in a group (for example, in a FastTab). When the content of the Rich Text control is persisted in the database, it's saved as HTML. Media-like pictures are embedded in the HTML content itself and aren't persisted in a separate table, nor in online file storage. The size and type of data means that the control’s content is best persisted by using a table field of the Blob data type.
 
 > [!NOTE]  
-> The Rich Text feature isn't intended for simple text formatting, such as bold, italic, and underline, but that will be supported in a future update.
+> The Rich Text feature is intended for scenarios where users can apply formatting and input advanced content that may include images and tables. Business Central doesn't currently offer any way for you to restrict user input to simple formatting only.
 
 ## Creating a Rich Text Editor
 
-Creating a control, which renders a Rich Text Editor is done with a few steps, but it takes a bit more work to combine the control with a persisted value on a record. In the following section, you'll see an example of how to persist the value of a Rich Text Editor in a table's blob field.
+Creating a control, which renders a Rich Text Editor is done with a few steps, but it takes a bit more work to combine the control with a persisted value on a record. In the following section, you see an example of how to persist the value of a Rich Text Editor in a table's blob field.
 
 ### Example: Creating a Rich Text Editor backed by a Blob field
 
@@ -52,7 +50,7 @@ table 50100 MyTable
     begin
         Rec.CalcFields(Rec.RichTextBlob);
         Rec.RichTextBlob.CreateInStream(InStream);
-        InStream.ReadText(TextValue);
+        InStream.Read(TextValue);
 
         exit(TextValue);
     end;
@@ -67,7 +65,7 @@ table 50100 MyTable
         OutStream: OutStream;
     begin
         Rec.RichTextBlob.CreateOutStream(OutStream);
-        Output.WriteText(RichText);
+        OutStream.Write(RichText);
         Rec.Modify();
     end;
 }
@@ -126,9 +124,9 @@ page 50100 MyPage
 - The Rich Text Editor must specify `MultiLine = true`.
 - The placement of the Rich Text Editor must be on a root-level group on the page (that is, a FastTab group), and it must be the only control in that group.
 
-## See also
+## Related information
 
 [Blob data type](methods-auto/blob/blob-data-type.md)  
 [BigText data type](methods-auto/bigtext/bigtext-data-type.md)  
 [Text data type](methods-auto/text/text-data-type.md)  
-[ExtendedDataType Property](properties/extendeddatatype-property.md)  
+[ExtendedDataType Property](properties/devenv-extendeddatatype-property.md)   

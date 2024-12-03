@@ -1,14 +1,11 @@
 ---
-title: "SaveValues Property"
+title: "SaveValues property"
 description: "Sets whether user-specific control values are saved for this page."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -40,7 +37,7 @@ You can later use the saved settings to consistently generate the same reports, 
 > [!NOTE]
 > Together with the [AllowScheduling Property](devenv-allowscheduling-property.md), this property also determines whether the report supports multiple previews. When both the **AllowScheduling** and **SaveValues** properties are set to **true**, users can preview the report from the request page as many times as the like, without having the request page close. This capability lets users change filters, see what the generated report will look like, and then try again. If either property is set to **false**, the report won't support multiple previews and the request page closes once the user previews the report. In this case, the request page includes a **Preview and Close** button instead of **Preview**.
 
-## See Also
+## Related information
 
 [Request Pages](../devenv-request-pages.md)  
 [Properties](devenv-properties.md)  

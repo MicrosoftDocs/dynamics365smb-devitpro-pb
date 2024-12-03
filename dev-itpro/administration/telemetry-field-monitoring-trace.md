@@ -3,12 +3,11 @@ title: Analyzing Field Monitoring Telemetry
 description: Learn about the telemetry for monitoring changes to sensitive data in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 05/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing Field Monitoring Telemetry
@@ -50,9 +49,6 @@ Occurs when the field monitor feature is started or stopped in the company.
 |---------|-----|
 |eventId|**AL0000DD3**|
 |alMonitorStatus|**Yes** - the field monitor feature was started.<br /><br /> **No** the field monitor feature was stopped. This dimension is called "almonitorStatus" before version 18.0.|
-|alObjectId|**1392**|
-|alObjectName|**Monitor Sensitive Field**|
-|alObjectType|**CodeUnit**|
 
 <a name="other"></a>**Common custom dimensions**
 
@@ -60,18 +56,9 @@ The following table explains other custom dimensions that are common to all fiel
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|alDataClassification|**SystemMetadata**|
-|component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|extensionName|Specifies the name of the base application. |
-|extensionId|Specifies the ID of the base extension.|
-|extensionPublisher|Specifies the publisher of the extension.|
-|extensionVersion|Specifies the version of the base application.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
+|aadTenantId| [!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)] |
+|environmentName| [!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)] |
+|environmentType| [!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)] |
 
 
 ## <a name="changed"></a>Sensitive field value has changed
@@ -88,7 +75,6 @@ Occurs the value of a monitored field has changed in the company.
 
 |Dimension|Description or value|
 |---------|---------|
-|alTableNumber|Specifies the ID of the table where the changed field is included. This dimension was introduced in version 18.0. |
 |message|**Sensitive field value has changed: {alfieldCaption} ({alFieldNumber}) in table {altableCaption} ({alTableNumber})**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
@@ -102,9 +88,6 @@ Occurs the value of a monitored field has changed in the company.
 |alFieldNumber|Specifies the ID of the field that was changed. This dimension was introduced in version 18.0. |
 |alTableCaption|Specifies the name of the table that includes the changed field. This dimension is called "altableCaption" before version 18.0. |
 |alTableNumber|Specifies the ID of the table that includes the changed field. This dimension was introduced in version 18.0. |
-|alObjectId|**1367**|
-|alObjectName|**Monitor Sensitive Field Data**|
-|alObjectType|**CodeUnit**|
 |[See common custom dimensions](#other)||
 
 > [!NOTE]
@@ -135,9 +118,6 @@ Occurs when a field has been added to or removed from monitoring. This dimension
 |alFieldNumber|Specifies the ID of the field that was added or removed.  |
 |alTableNumber|Specifies the ID of the table that includes the added or removed field. |
 |alTableCaption|Specifies the name of the table that includes the added or removed field.|
-|alObjectId|**1367**|
-|alObjectName|**Monitor Sensitive Field Data**|
-|alObjectType|**CodeUnit**|
 |[See common custom dimensions](#other)||
 
 
@@ -148,7 +128,8 @@ Occurs when a field has been added to or removed from monitoring. This dimension
 {"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","extensionPublisher":"Microsoft","Component version":"18.0.24800.0","Extension version":"18.1.24822.0","extensionVersion":"18.1.24822.0","componentVersion":"18.0.24800.0","Environment type":"Production","Extension App Id":"437dbf0e-84ff-417a-965d-ed2bb9650972","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension name":"Base Application","extensionName":"Base Application","alObjectName":"Monitor Sensitive Field Data","alObjectType":"CodeUnit","aadTenantId":"common","AadTenantId":"common","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","alObjectId":"1367","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000EMW","alDataClassification":"SystemMetadata","alFieldCaption":"Name 2","alTableCaption":"Vendor","alFieldNumber":"4","alTableNumber":"23"}
 
 -->
-## See also
-
+## Related information
+[Changelog configuration telemetry](telemetry-changelog-configuration-trace.md)
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Alert on telemetry](telemetry-alert.md)

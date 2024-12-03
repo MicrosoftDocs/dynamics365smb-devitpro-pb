@@ -1,21 +1,18 @@
 ---
 title: (v1.0) Moving from beta to v1.0
 description: (v1.0) Changes from the beta version of the APIs to the v1.0 of the APIs in Dynamics 365 Business Central.
-services: project-madeira
-documentationcenter: ''
 author: SusanneWindfeldPedersen
-
 ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 02/03/2020
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.custom: evergreen
+ms.reviewer: solsen
 ---
 
 # Moving from Beta to v1.0
 
-With the April'19 release of [!INCLUDE[prod_short](../../includes/prod_short.md)], the standard APIs were released in version 1.0.  
+With the April 2019 release of [!INCLUDE[prod_short](../../includes/prod_short.md)], the standard APIs were released in version 1.0.  
 
 API version numbers are managed in the URI `https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/{API VERSION}/`. For example, for v1.0 of the API the URI is `https://api.businesscentral.dynamics.com/v2.0/production/api/v1.0/`.
 
@@ -49,7 +46,7 @@ Using Basic Auth:
 GET https://api.businesscentral.dynamics.com/v2.0/{tenant Id}/{environment}/api/v1.0/$metadata
 ```
 
-## See Also
+## Related information
 
 [Welcome to the API(v1.0) for Dynamics 365 Business Central](index.md)  
 [Endpoints for the APIs](endpoints-apis-for-dynamics.md)  

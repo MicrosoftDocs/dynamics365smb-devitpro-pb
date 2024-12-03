@@ -1,13 +1,8 @@
 ---
 title: "Microsoft Dynamics NAV Extension Packages"
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: f7a66201-dc01-4221-8aa4-6ba1e7a4ef6a
 caps.latest.revision: 2
 ---
@@ -32,7 +27,7 @@ New-NAVAppManifest -Name ‘My Extension’ -Publisher ‘Proseware’ -Version 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <Package xmlns="https://schemas.microsoft.com/navx/2015/manifest">  
-<App Id="6147E5EF-197E-43CF-B4A2-168AAE537A0B"  
+<App Id="00001111-aaaa-2222-bbbb-3333cccc4444"  
 Name="Microsoft Dynamics NAV Customer Loyalty"  
 Publisher="Microsoft Corporation"  
 Description="Customer Loyalty Extension Package for Microsoft Dynamics NAV"  

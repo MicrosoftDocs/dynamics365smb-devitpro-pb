@@ -1,14 +1,11 @@
 ---
-title: "Prefix and suffix for naming in extensions"
-description: "Use a prefix or suffix for names in your extension."
+title: Prefix and suffix for naming in extensions
+description: Use a prefix or suffix for names in your extension. This rule applies to all objects, including tables, pages, and codeunits. This topic explains the benefits and guidelines for using a prefix or suffix."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/11/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: freddyk
+ms.reviewer: jswymer
 ---
 
 # Benefits and guidelines for using a prefix or suffix
@@ -23,7 +20,7 @@ Environments that have extensions with name collisions can experience issues whe
 
 ## General rules
 
-- The prefix/suffix must be at least three characters
+- The prefix/suffix must be at exactly three characters
 - The object/field name must start or end with the prefix/suffix
 - If a conflict arises, the one who registered the prefix/suffix always wins
 - For your own objects, you must set the prefix/suffix at the top object level
@@ -40,7 +37,7 @@ Environments that have extensions with name collisions can experience issues whe
 
 In order to meet the requirements for the AppSource technical validation, you must have a three letters affix registered for your extension publisher, and you must use the affix in your extension.
 
-If you don't have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) and provide us with the following information to reserve the prefix/suffix of your choosing:
+If you don't have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com?subject=Affix%20Registration%20Request&body=MPN%20ID%3A%20%3CMPN%20ID%20in%20Partner%20Center%3E%0APublisher%20Name%3A%20%3Cthe%20publisher%20name%20that%20you%20use%20in%20your%20extensions%20(in%20the%20app.json%20file)%3E%0AAffixes%3A%20%3Cfive%20affix%20suggestions%20(each%20exactly%20three%20characters%20long)%20in%20order%20of%20priority%3E) and provide us with the following information to reserve the prefix/suffix of your choosing:
 
 - Your MPN ID,
 - The publisher name that you use in your extensions (in the app.json file),
@@ -171,7 +168,7 @@ At Fabrikam, another team is building another app, so you request a special affi
 
 In this scenario, your AppSourceCop.json file configuration specifies `fab-rentals` and `rentals-fab` as values for `mandatoryaffixes`, even though only *fab* was registered with Microsoft.
 
-## See Also
+## Related information
 
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-[Rules and Guidelines for AL Code](apptest-overview.md)  
+[Checklist for submitting your app](../developer/devenv-checklist-submission.md)  
+[Rules and guidelines for AL code](apptest-overview.md)  

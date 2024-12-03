@@ -3,13 +3,12 @@ title: (v1.0) Get purchaseInvoice pdfDocument
 description: (v1.0) Gets a PDF document on a purchaseInvoice in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get purchaseInvoice pdfDocument (v1.0)
@@ -101,7 +100,7 @@ The PDF document in binary format.
 
 The pdfDocument is not supported for unposted purchase invoices. The purchase invoice must be posted before it is printed; if it is not posted, the response will return an error.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 

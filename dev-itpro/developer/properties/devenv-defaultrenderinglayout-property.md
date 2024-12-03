@@ -1,14 +1,11 @@
 ---
-title: "DefaultRenderingLayout Property"
+title: "DefaultRenderingLayout property"
 description: "Sets the default layout that should be used for this report."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/11/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -31,6 +28,8 @@ The following example shows how to use this property together with a *rendering*
 report 50124 MyExcelReport
     DefaultRenderingLayout = MyExcelLayout; 
     // More report properties goes here
+   
+    // dataset definition goes here
 
     rendering
     {
@@ -51,10 +50,9 @@ report 50124 MyExcelReport
         }        
     }
 
-    // dataset definition goes here
 ```
 
-## See also
+## Related information
 
 [Developing reports](../devenv-reports.md)  
 [Defining multiple report layouts](../devenv-multiple-report-layouts.md)  

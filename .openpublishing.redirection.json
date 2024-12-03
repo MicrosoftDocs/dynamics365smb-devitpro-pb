@@ -7396,82 +7396,242 @@
    },
    { 
     "source_path": "dev-itpro/al-go/algo-add-test-app.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-create-online-dev-env-github.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-create-online-dev-env-vscode.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-create-release-app.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-dependency-app-github.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-enable-keyvault-app-development.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-enabling-telemetry.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-get-started.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-register-cust-prod-env.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-register-sandbox-env.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-settings.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-setup-cicd-existing-app.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-setup-cicd-existing-pte.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-setup-github-runner-performance.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-system-files.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/al-go/algo-use-azure-keyvault-for-secrets.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/algo/algo-overview",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/errorinfo/errorinfo-addaction-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/errorinfo/errorinfo-addaction-string-integer-string-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/errorinfo/errorinfo-addnavigationaction-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/errorinfo/errorinfo-addnavigationaction-string-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-platform-overview.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-reference-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-extending-drop-zones.md",
+    "redirect_url": "/dynamics365/business-central/application/",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/properties/devenv-table-properties.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-table-property-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/resources/dynamics_externalbusinesseventdefinitions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externalbusinesseventdefinitions_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/resources/dynamics_apicategoryroutes.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_apicategoryroutes_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/resources/dynamics_externaleventsubscriptions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_update.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_delete.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/api/dynamics_externaleventsubscriptions_create.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/api-reference/v2.0/index",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/api/dynamics_apicategoryroutes_get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/migration-data-replication-troubleshooting.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/migration-setup-troubleshooting.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-user-personalization.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-user-personalization",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-profile-configuration.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-profile-configuration",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-icon-font-not-loaded.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-icon-font-not-loaded",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-troubleshooting-client-returns-wrong-clienttype.md",
+    "redirect_url": "/troubleshoot/dynamics-365/business-central/client/client-returns-wrong-clienttype",
+    "redirect_document_id": false
+   },
+   {
+    "source_path": "dev-itpro/developer/methods-auto/notification/notification-addaction-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/notification/notification-addaction-string-integer-string-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/outstream/outstream-write-string-integer-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/outstream/outstream-write-text-integer-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/record/record-testfield-joker-string-errorinfo-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-errorinfo-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/record/record-testfield-joker-string-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/recordref/recordref-settable-method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/recordref/recordref-settable-table-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/terms/legal.md",
+    "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2182906",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/terms/legal-onpremises.md",
+    "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2182906",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/terms/legal-universal-app.md",
+    "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2182906",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/database/database-selectlatestversion--method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/database/database-selectlatestversion-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/copilot-launch-experience.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-page-prompting-floating-actionbar",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-get-started-container-sandbox.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-running-container-development",
     "redirect_document_id": false
    }
   ] 

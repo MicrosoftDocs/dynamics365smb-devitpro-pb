@@ -1,12 +1,9 @@
 ---
-title: "Creating and interacting with an OData V4 unbound action"
-description: "Describing how to create and interact with an OData V4 Unbound Action in AL."
+title: Creating and interacting with an OData V4 unbound action
+description: Describing how to create and interact with an OData V4 Unbound Action in AL.
 author: ap3rus
-ms.custom: na
-ms.date: 04/19/2023
+ms.date: 07/23/2024
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: vlnagorn
 ---
@@ -92,12 +89,12 @@ HTTP/1.1 200 OK
 }
 ```
 
-## See Also
+## Related information
 
-[AL Development Environment](devenv-reference-overview.md)  
-[Creating and Interacting with an OData V4 Bound Action](devenv-creating-and-interacting-with-odatav4-bound-action.md)  
-[Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
-[Devoloping for Multiple Platform Versions](devenv-developing-for-multiple-platform-versions.md)  
-[Exporting Permission Sets](devenv-export-permission-sets.md)  
-[Discover Events Using the Event Recorder](devenv-events-discoverability.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Creating and interacting with an OData V4 bound action](devenv-creating-and-interacting-with-odatav4-bound-action.md)  
+[Getting started with Microsoft .NET interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
+[Devoloping for multiple platform versions](devenv-developing-for-multiple-platform-versions.md)  
+[Exporting permission sets](devenv-export-permission-sets.md)  
+[Discover events using the Event Recorder](devenv-events-discoverability.md)  
 

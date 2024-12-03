@@ -3,13 +3,12 @@ title: (v1.0) irs1099Codes resource type
 description: (v1.0) An IRS 1099 Code object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # irs1099Codes resource type (v1.0)
@@ -59,7 +58,7 @@ Here is a JSON representation of the irs1099Codes.
 }
 ```
 
-## See also
+## Related information
 
 [Get IRS 1099](../api/dynamics_irs1099_get.md)  
 [Post IRS 1099](../api/dynamics_create_irs1099.md)  

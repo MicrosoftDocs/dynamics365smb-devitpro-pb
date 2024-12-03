@@ -1,11 +1,7 @@
 ---
 title: "Field Calculation Methods"
 description: "CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 22168a6c-9034-4503-bc82-1cae9497762d
 caps.latest.revision: 9
@@ -203,5 +199,5 @@ The `Validate` method is useful for centralizing processing, which makes your ap
 
 For example, if the OnValidate trigger of the Total Amount field performs a calculation that uses values from three other fields as operands, the calculation must be performed again if the contents of any one of these fields changes. You should avoid entering the calculation formula in the OnValidate triggers of each field because this can create errors if the calculation formula has to be changed later and you have to update the code in all the triggers. Instead, you should enter the calculation formula in the OnValidate trigger of only one of the fields and call this trigger code from the OnValidate triggers of the other fields.
 
-## See Also
+## Related information
 [AL Methods](methods-auto/library.md)  

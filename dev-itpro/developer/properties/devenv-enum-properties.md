@@ -1,10 +1,6 @@
 ---
 title: "Enum Properties"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -29,7 +25,7 @@ This article lists properties that apply to the [Extensible Enums](../devenv-ext
 |[ObsoleteTag Property](devenv-obsoletetag-property.md)|<ul><li>Enum objects</li><li>Enum value</li></ul>|
 
 
-## See Also
+## Related information
 [Developing Extensions](../devenv-dev-overview.md)  
 [AL Development Environment](../devenv-reference-overview.md)  
 [Properties](devenv-properties.md)  

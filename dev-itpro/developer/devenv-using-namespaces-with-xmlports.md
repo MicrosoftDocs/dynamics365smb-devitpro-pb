@@ -2,13 +2,10 @@
 title: "Using namespaces with XMLports"
 description: "Namespaces are used to avoid element name conflicts."
 author: blrobl
-ms.custom: na
 ms.date: 09/20/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: brobledodiaz
+ms.reviewer: jswymer
 ---
 
 # Using namespaces with XMLports
@@ -49,7 +46,7 @@ You then apply the namespaces to XMLport elements by setting the [NamespacePrefi
 You can also specify a default namespace using the [DefaultNamespace Property](properties/devenv-defaultnamespace-property.md) and setting the [UseDefaultNamespace Property](properties/devenv-usedefaultnamespace-property.md) to **true**. There can only be one default namespace, so if you specify the default namespace in the [Namespaces Property](properties/devenv-namespaces-property.md), you must set the [DefaultNamespace Property](properties/devenv-defaultnamespace-property.md) to **false**. 
 
 
-## See also
+## Related information
 
 [XMLport Object](devenv-xmlport-object.md)  
 [Namespaces Property](properties/devenv-namespaces-property.md)   

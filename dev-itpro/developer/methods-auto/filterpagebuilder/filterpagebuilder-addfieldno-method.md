@@ -2,13 +2,10 @@
 title: "FilterPageBuilder.AddFieldNo(Text, Integer [, Text]) Method"
 description: "Adds a table field to the filter control for a table on the filter page."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -72,7 +69,7 @@ begin
 end;
 ```  
 
-## See Also
+## Related information
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
 [Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Get Started with AL](../../devenv-get-started.md)  

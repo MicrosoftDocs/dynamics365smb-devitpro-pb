@@ -1,14 +1,11 @@
 ---
-title: "ExcelLayout Property"
+title: "ExcelLayout property"
 description: "Sets the Excel layout that is used on a report and returns it as a data stream."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/11/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -49,7 +46,7 @@ report 50124 MyExcelReport
 }
 ```
 
-## See also
+## Related information
 
 [Creating an Excel layout report](../devenv-howto-excel-report-layout.md)  
 [WordLayout Property](devenv-wordlayout-property.md)  

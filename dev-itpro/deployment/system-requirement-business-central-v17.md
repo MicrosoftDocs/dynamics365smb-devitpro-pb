@@ -1,9 +1,6 @@
 ---
 title: System Requirements for Business Central 2020 Release Wave 2
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central version 17 on-premises.
-ms.custom: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 04/01/2021
 author: jswymer
@@ -179,7 +176,7 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 |-|-|  
 |Supported SharePoint servers|<ul><li>SharePoint Server 2016</li><li>SharePoint Online.</li></ul>|  
 
-## See Also
+## Related information
 
 [Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  

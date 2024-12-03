@@ -2,23 +2,17 @@
 title: "Maintain AppSource apps and per-tenant extensions"
 description: "Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product."
 author: solsen
-ms.custom: na
-ms.date: 08/15/2022
+ms.date: 08/28/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: jswymer
 ---
 
-# Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online
+# Maintain AppSource apps and Per-Tenant extensions in Business Central online
 
-As a partner, keeping your apps and per-tenant extensions (PTEs) up to date is your responsibility. [!INCLUDE [prod_short](includes/prod_short.md)] is regularly updated with major and minor releases. These updates provide customers with a business application that is always compliant, secure, and enriched with new platform and application functionality. Often customers choose [!INCLUDE [prod_short](includes/prod_short.md)] because of this promise of having an always up-to-date business solution.  
+As a partner, keeping your apps and per-tenant extensions (PTEs) up to date is your responsibility. [!INCLUDE [prod_short](includes/prod_short.md)] is regularly updated with major and minor releases. These updates provide customers with a business application that is always compliant, secure, and enriched with new platform and application functionality. Often customers choose [!INCLUDE [prod_short](includes/prod_short.md)] because of the promise of having an always up-to-date business solution.  
 
-To not break this promise, developers that bring apps to Microsoft AppSource, and resellers that provide PTEs to respond to the unique needs of customers, have a responsibility to align their code to the Microsoft release rhythm.  
-
-The following diagram illustrates the time for how updates roll out for [!INCLUDE [prod_short](includes/prod_short.md)] online and how you can use previews to test your apps ahead of time:
-
-:::image type="content" source="../media/update-rollout-timeline-preview.png" alt-text="Timeline for preview environments and major updates":::
-
-An inability for Microsoft to update tenants because of publishers incompatible code causes serious disruption in the service and must be avoided since it impacts the trustworthiness of the service and customer satisfaction.  
+To not break this promise, developers that bring apps to Microsoft AppSource, and resellers that provide PTEs to respond to the unique needs of customers, have a responsibility to align their code to the Microsoft release rhythm. For more information, see [major updates and minor updates](../administration/update-rollout-timeline.md). Microsoft's inability to update tenants due to publishers' incompatible code leads to significant service disruptions and must be prevented because it affects the service's trustworthiness and customer satisfaction.  
 
 ## Resources
 
@@ -28,9 +22,9 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
     For more information, see [Dynamics 365 release plans](/dynamics365/release-plans/).  
 
-- Access to pre-release bits
+- Access to prerelease bits
 
-    Business Central partners have access to the next major, next minor, and daily pre-release bits in Docker through [Microsoft Collaborate](https://aka.ms/collaborate). To get access to Collaborate, follow steps 1 and 4 in the [https://aka.ms/bcpublisher](readiness/get-started.md) article. Use the pre-release bits to test apps against upcoming updates.  
+    Business Central partners have access to the next major, next minor, and daily prerelease bits in Docker. The bits are available to all customers and partners through Business Central insider artifacts. Use the prerelease bits to test apps against upcoming updates.  
 
     Learn about [the update lifecycle for apps and extensions](devenv-app-life-cycle.md) and [automated extension validation](devenv-customization-update-lifecycle.md#automated-extension-validation). Use the [AppSourceCop analyzer rules](analyzers/appsourcecop.md) to keep your code compliant. Get agile with [AL Go for GitHub](../al-go/algo-overview.md) and stay on top of changes that way.  
 
@@ -50,17 +44,21 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
 - Service notifications
 
-    [!INCLUDE [prod_short](includes/prod_short.md)] online will support app and PTE publishers with extra warnings about potential technical incompatibility. If publishers respond to these notifications in due timing and avoid incompatibilities repeatedly, Microsoft will stand with these publishers to help where needed. If a publisher includes a telemetry key in their app, then, starting with 2020 release wave 2, [!INCLUDE [prod_short](includes/prod_short.md)] also provides publishers with telemetry about upgrade failures that happen in production because of issues in the publisher's upgrade code.
+    [!INCLUDE [prod_short](includes/prod_short.md)] online supports app and PTE publishers with extra warnings about potential technical incompatibility. If publishers respond to these notifications in due timing and avoid incompatibilities repeatedly, Microsoft stands with these publishers to help where needed. If a publisher includes a telemetry key in their app, then [!INCLUDE [prod_short](includes/prod_short.md)] also provides publishers with telemetry about upgrade failures that happen in production because of issues in the publisher's upgrade code.
 
-If publishers lack to keep their code updatable, they risk that ultimately their apps or PTEs will be removed from the customer's tenant, and this will most likely result in important data not being captured as it should. For apps, this also means removal from the marketplace.  
+If publishers lack to keep their code updatable, they risk that ultimately their apps or PTEs are removed from the customer's tenant. This condition most likely results in important data not being captured as it should. For apps, it also means removal from the marketplace.  
 
-Since resellers are the first line contact point for customers, they carry responsibility to explain what it means to load code in a customer's environment. The best way is to explain this is with terms.  
+Since resellers are the frontline contact point for customers, they carry responsibility to explain what it means to load code in a customer's environment. The best way is to explain this is with terms.  
 
-We advise these terms include topics like intellectual property rights, upgrade responsibilities, associated costs to keep code updatable, support options, data privacy, and so on.  
+We advise these terms include articles like intellectual property rights, upgrade responsibilities, associated costs to keep code updatable, support options, data privacy, and so on.  
 
-## Pre-release publisher support to keep apps and PTEs compatible and up-to date
+## When Microsoft can't update apps or PTEs
 
-Publishers have several tools available for them to keep their code in good shape. Not least, a Public Preview release is made available approximately one month before the announced release date for a major release. In that Public Preview release time frame, [!INCLUDE [prod_short](includes/prod_short.md)] will automatically test and notify publishers of existing apps and PTEs running in production on technical incompatibility with the upcoming release.  
+This section describes the processes that are initiated during [major update cycles](../administration/update-rollout-timeline.md) of [!INCLUDE [prod_short](includes/prod_short.md)] with extensions installed provided by publishers of apps or PTEs. For information about handling a PTE that has conflicts with another extension, see [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](../upgrade/upgrade-pte-merge-conflict.md).
+
+### Preview period
+
+A preview release is made available approximately one month before the announced release date for a major release. During this period, administrators can create sandbox environments on the preview version to test new functionality and app compatibility. [!INCLUDE [prod_short](includes/prod_short.md)] automatically tests PTEs running in production on technical incompatibility with the upcoming release and notify [notification recipients](../administration/tenant-admin-center-notifications.md) in case any incompatibilities are detected. For more information, see [prepare for major updates with preview environments](../administration/preview-environments.md).
 
 > [!IMPORTANT]
 > Microsoft tests code based on technical compatibility. As the publisher, you are still responsible for all functional and logical validation. For more information, see [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md).
@@ -68,59 +66,50 @@ Publishers have several tools available for them to keep their code in good shap
 > [!NOTE]  
 > If an app has been published through AppSource, it should not be tested, installed, or in other ways treated as a PTE since this will create conflicts.
 
-## When apps or PTEs cannot be updated by Microsoft
+### Update period
 
-This section describes the processes that are initiated during and after upgrade attempts of code provided by publishers of apps or PTEs. For information about handling a PTE that has conflicts with another extension, see [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](../upgrade/upgrade-pte-merge-conflict.md).
+[This section is prerelease documentation and is subject to change.]
 
-- **T+1 – T+30**: Microsoft alerts administrators, resellers, and ISVs
+> [!IMPORTANT]
+>
+> - The 5-month update period is a production-ready preview feature that applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.md). It doesn't apply to partner-localized environments, which have a 60-day update period that is expected to end in the first half of December 2024. Learn more about the preview feature at [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly).
+> - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
-    Shortly after a service update of [!INCLUDE [prod_short](includes/prod_short.md)] online (Day **T**), Microsoft will initiate daily updates attempts on all tenants. In these update attempts, the publisher's provided upgrade code is triggered and run. These attempts run repeatedly in a time frame of approximately one month until the upgrade is successful. For more information, see [Major Updates of Business Central Online](../administration/update-rollout-timeline.md).  
+The update period starts when a new major version is generally available, typically the first workday of every April and October, and lasts for five months. Administrators can schedule the update to run on any day during this period. Should a scheduled update fail due to technical incompatibilities with installed apps, [notification recipients](../administration/tenant-admin-center-notifications.md) will receive a notification with failure details and recommended actions.
 
-    With every unsuccessful upgrade attempt, stakeholders will receive notifications. Customers and their reselling partners can follow these notifications in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)].  
+Technical incompatibilities with AppSource apps installed on the environment might not be visible in the customer's [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)]. AppSource Apps that are incompatible with the latest generally available version of [!INCLUDE [prod_short](includes/prod_short.md)] might be removed from AppSource **30 days** after the release of that version. If an incompatible AppSource app, PTE, or Dev Extension is preventing the deployment of a critical security update, it might be uninstalled within **14 days** of the critical security update first becoming available.
 
-    ISVs who provide third-party AppSource apps might not be listed in the customer's admin center. The reseller will in most cases have worked with the ISV to test compatibility, but after two weeks (Day **T+15**) of failed upgrade attempts, the Microsoft AppSource team will also send the app provider a warning message that action within the next few days is required. Incompatible extensions can be uninstalled within **14 days** if they prevent deployment of security updates.  
+### Grace period
 
-    This message will explain that if they fail to respond correctly, their app will be removed from AppSource at Day **T+30**.  
+The grace period starts when the update period ends and lasts for one month, which is September for the update period that starts in April and March for the update period that starts in October. During the grace period, the update can't be rescheduled to a later date and is run. Should a scheduled update fail due to technical incompatibilities with installed apps, [notification recipients](../administration/tenant-admin-center-notifications.md)  receive a notification with failure details and recommended actions. Although the publisher's code continues to run on an outdated version of [!INCLUDE [prod_short](includes/prod_short.md)] online, the customer must work with their reseller to resolve these issues immediately so that the environment can be updated. Next to messages in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)], all users in the customer's tenant might also get more active warnings about the incompatibilities when they use the product in the browser or their mobile device.
 
-- **T+30 – T+60**: Microsoft alerts the customer
+For AppSource apps, if no appropriate action or follow-up was taken by the publisher since the release, the app is removed from AppSource. This situation means no new customers are able to install the app in a new tenant. It  ensures that new customers aren't affected by incompatibilities with the latest version of [!INCLUDE [prod_short](includes/prod_short.md)].  
 
-    After one month of failed upgrade attempts (Day **T+30**), the customers will be notified again that apps or PTEs are incompatible with the new version of [!INCLUDE [prod_short](includes/prod_short.md)], and that no further automatic upgrade attempts will be planned until further notice. Although the publisher's code continues to run on an outdated version of [!INCLUDE [prod_short](includes/prod_short.md)] online, the customer must work with their reseller to resolve these issues immediately so that the tenant can be updated. Next to messages in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)], all users in the customer's tenant will also get more active warning about the incompatibilities when they use the product in the browser or their mobile device.  
+If the publisher wants to have their app available again, they must mitigate all existing incompatibility issues and go through the full validation process again. Once a compatible version of the app is published, the update to the app is automatically installed once environments are updated.
 
-    For AppSource apps, if no appropriate action or follow-up was taken by the publisher since the release (**T - T+30days**), the app will be removed from AppSource. This means no new customer will be able to install the app in a new tenant. The main reason for removing an app from the marketplace is to ensure that no new customers will be affected by incompatibilities with the latest version of the base product, [!INCLUDE [prod_short](includes/prod_short.md)].  
+### Enforced update period
 
-    If the publisher wants to have their app available again, they must mitigate all existing incompatibility issues and go through the full validation process again.  
+The enforced update period starts when the grace period ends. During this period, any extensions that are causing the update to the next major version to fail might be uninstalled from the environment automatically in order for the update to succeed. For example, the update could fail because of compatibility issues. Data belonging to extensions that are uninstalled automatically during this period isn't deleted from the environment. The data can be recovered by installing a version of the extension that is compatible after the update succeeds. Once a compatible version of an app is made available, it won't be automatically installed on each environment from which it was uninstalled as part of the enforced update period.
 
-    If the source of the incompatibility has been resolved by the publisher, they'll have to submit a support request to schedule a new set of upgrade attempts for any tenants that are blocked because of this incompatibility. They'll also have to work with their resellers to inform them about the compatibility resolution.  
-
-- **T+60 – T+150**: Microsoft initiates the customer wind-down period
-
-    If the incompatibility issues are not resolved at **T+60**, and the publisher remained unresponsive to the request to resolve the incompatibility, Microsoft may choose to send out a wind-down communication to the customer about removal of the publisher's code.  
-
-    This communication will share that the code from the publisher will be removed in *90* days from the day of the communication from Microsoft (**T+150**).  
-
-    During this wind-down time, the customer and their reselling partner are fully responsible for finding a solution on how to proceed in this situation. If the customer decides to leave [!INCLUDE [prod_short](includes/prod_short.md)], or decides to use another publisher, they can access their data by [exporting the database](../administration/tenant-admin-center-database-export.md), use [RapidStart Services](/dynamics365/business-central/admin-migrate-customer-data), or copy data to Excel. For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data) in the business functionality content.  
-
-    Microsoft may also choose to remove all existing apps by this publisher from AppSource and block the publisher from publishing new apps for [!INCLUDE [prod_short](includes/prod_short.md)].  
-
-    If this wind-down period is initiated, and the customer was able to fix the incompatible issues with their reseller and potential publishers, it will be at Microsoft discretion if the publisher's code will be removed from [!INCLUDE [prod_short](includes/prod_short.md)] or not.  
+During this period, the customer and their reselling partner are fully responsible for finding a solution on how to proceed in this situation. Microsoft might also choose to remove all existing apps by this publisher from AppSource and block the publisher from publishing new apps for [!INCLUDE [prod_short](includes/prod_short.md)].  
 
 ## Get notified about incompatibilities by Microsoft
 
-It is crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we'll use in the process that is described in the [When apps or PTEs cannot be updated by Microsoft](#when-apps-or-ptes-cannot-be-updated-by-microsoft) section:  
+It's crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we use in the process that is described in the [When Microsoft can't update apps or PTEs](#when-microsoft-cant-update-apps-or-ptes) section:  
 
 - PTE publishers
 
-    The mail addresses specified in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)]; this could be both a customer user and a partner user.  
+    The mail addresses specified in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)], which could be both a customer user and a partner user.  
 
 - App publishers
 
-    The mail addresses specified during App publication in the partner center during app publication as support and engineering contact details.  
+    The mail addresses specified during app publication in the partner center during app publication as support and engineering contact details.  
 
 - Customers
 
-    The mail addresses specified in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)]; this could be both a customer and a partner user.  
+    The mail addresses specified in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)], which could be both a customer and a partner user.  
 
-## See also
+## Related information
 
 [The Lifecycle of Apps and Extensions](devenv-app-life-cycle.md)  
 [Update Lifecycle for Customizations](devenv-customization-update-lifecycle.md)  

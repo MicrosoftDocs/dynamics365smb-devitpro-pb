@@ -1,16 +1,15 @@
 ---
-title: Page Types and Layouts
+title: Page types and layouts
 description: Understanding page types to be able to create good user experience in Business Central.
 author: jacobwj
 ms.custom: bap-template
-ms.date: 11/24/2022
-ms.reviewer: solsen
+ms.date: 10/01/2024
+ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: conceptual
-ms.service: dynamics365-business-central
 ---
 
-# Page Types and Layouts
+# Page types and layouts
 
 Understanding how [!INCLUDE[prod_short](includes/prod_short.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
 
@@ -20,7 +19,7 @@ In this article, we're focusing on how pages appear when a user accesses [!INCLU
 
 Choosing the right page type is the first step when creating or modifying a page. The next step is to organize the page contents to suit its purpose in your solution. We recommend that you design pages based on the user tasks that you want to support.
 
-The following table provides an overview of the page types supported in [!INCLUDE[prod_short](includes/prod_short.md)], their typical uses, and basic characteristics. To specify the page type, use the `PageType` property. For more information, see [PageType Property](properties/devenv-pagetype-property.md).
+The following table provides an overview of the page types supported in [!INCLUDE[prod_short](includes/prod_short.md)], their typical uses, and basic characteristics. To specify the page type, use the `PageType` property. Learn more in [PageType Property](properties/devenv-pagetype-property.md).
 
 
 |Page type|Examples of use|Main data display|Characteristics|
@@ -37,6 +36,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`CardPart`|A page that is embedded in another page, such as in a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
 |`ListPart`|A page that is embedded in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below the repeater.|
 |`HeadlinePart`|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|Single entity|Single group of fields representing headlines.|
+|`PromptDialog`|A page that enables creating generative AI experiences with the copilot look and feel|Single or collection. Learn more in [PromptDialog page type](devenv-page-type-promptdialog.md).||
 
 ### The two principal categories of page types
 
@@ -56,7 +56,7 @@ In [!INCLUDE[prod_short](includes/prod_short.md)], entity-oriented pages are use
 The `CardPart` page type is an entity-oriented page type for inclusion in another page, for example, in a FactBox.
 
 > [!IMPORTANT]  
-> Because entity-oriented pages represent a *single* entity, such as a customer or an item, don't use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features may not work properly, and it may not get the expected size. However, an entity-oriented page *can* embed a `ListPart` part page that, in turn, contains a repeater control. Learn more about how to user repeater controls [Working with Repeater Controls](devenv-repeater-controls.md).
+> Because entity-oriented pages represent a *single* entity, such as a customer or an item, don't use a `Repeater` group in the construction of entity-oriented pages. If you do, some of the repeater's features may not work properly, and it may not get the expected size. However, an entity-oriented page *can* embed a `ListPart` part page that, in turn, contains a repeater control. Learn more about how to user repeater controls [Work with repeater controls](devenv-repeater-controls.md).
 >
 > If you currently have an entity-oriented page that uses a repeater, in most cases, you can just change the page type from `Card` to `List`, or `CardPart` to `ListPart`. In some cases, it is more complicated. For example, if the page has actions that act on the grid or variables that are used in the grid.
 
@@ -90,7 +90,7 @@ For all pages (excluding `RoleCenter`, dialogs, and part pages) there's a common
 
 The `content` area provides rich layout capabilities, which are described in the coming sections. The `FactBoxes` area is limited to showing a list of parts, usually in a vertical arrangement. The header consists of the title, action bar, and controls for filtering, views, and so on.
 
-For more information about page areas, see [Pages Overview](devenv-pages-overview.md). 
+Learn more in [Pages Overview](devenv-pages-overview.md). 
 
 ### Field groups and page parts 
 
@@ -218,7 +218,6 @@ From the user's perspective, the following are qualities of a well-designed work
 - Has fields above the grid that specify filtering options or specify the default values effective during data entry and editing in the grid.
 - If summary fields or more details of the selected row are shown, these appear below the repeater.
 
-
 ## Dialog page layouts 
 
 Some page types in [!INCLUDE[prod_short](includes/prod_short.md)] are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types. In addition, there are programmatic ways in AL to display a dialog to the user with the Dialog data type, and dialogs defined as report request pages.
@@ -229,15 +228,18 @@ It's also possible to use the common page types (`Card`, `Document`, `List`, etc
 
 Generally, [!INCLUDE[prod_short](includes/prod_short.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
 
-Given the size of the screen where the dialog appears, more or less of the page contents will be visible without scrolling. When a page contains much content, it's possible for the user to increase the dialog size with the maximize button.  
+Given the size of the screen where the dialog appears, more or less of the page contents will be visible without scrolling. When a page contains much content, it's possible for the user to increase the dialog size with the maximize button.
+  
 > [!NOTE]  
-> The dialogs created from the ConfirmationDialog and StandardDialog page types are not currently providing a maximize button.
+> The dialogs created from the `StandardDialog` and `ConfirmationDialog` page types aren't currently providing a maximize button.
+>
+> In version 24 (runtime 14) and earlier, the [Importance property](properties/devenv-importance-property.md) is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
  
-## See Also
+## Related information
 
-[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
-[PageType Property](properties/devenv-pagetype-property.md)  
-[Actions Overview](devenv-actions-overview.md)  
-[Using Designer](devenv-inclient-designer.md)  
-[Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  
+[Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  
+[PageType property](properties/devenv-pagetype-property.md)  
+[Actions overview](devenv-actions-overview.md)  
+[Use Designer](devenv-inclient-designer.md)  
+[Adding a FactBox to a page](devenv-adding-a-factbox-to-page.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  

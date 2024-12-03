@@ -2,13 +2,10 @@
 title: "BigText.Read(InStream) Method"
 description: "Streams a BigText object that is stored as a BLOB in a table to a BigText variable."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -68,7 +65,7 @@ end;
   
 Use the [CalcFields Method \(Record\)](../../methods-auto/record/record-calcfields-method.md) to calculate the BlobField. A BlobField is a binary large object \(maximum size 2 GB\) and must be calculated if you want to use it in AL or display it in the application.  
 
-## See Also
+## Related information
 
 [BigText Data Type](bigtext-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

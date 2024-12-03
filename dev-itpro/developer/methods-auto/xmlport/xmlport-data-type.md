@@ -1,24 +1,22 @@
 ---
-title: "Xmlport Data Type"
+title: "Xmlport data type"
 description: "XmlPorts are used to export or import data between an external source and a Microsoft Dynamics Business Central database."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Xmlport Data Type
+# Xmlport Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 XmlPorts are used to export or import data between an external source and a Microsoft Dynamics Business Central database.
 
 
+## Static methods
 The following methods are available on the Xmlport data type.
 
 
@@ -28,6 +26,7 @@ The following methods are available on the Xmlport data type.
 |[Import(Integer, var InStream [, var Record])](xmlport-import-method.md)|Reads and parses an incoming XML data stream (XML document).|
 |[Run(Integer [, Boolean] [, Boolean] [, var Record])](xmlport-run-method.md)|Loads and executes the XmlPort that you specify.|
 
+## Instance methods
 The following methods are available on instances of the Xmlport data type.
 
 |Method name|Description|
@@ -52,7 +51,7 @@ The following methods are available on instances of the Xmlport data type.
 |[TextEncoding([TextEncoding])](xmlportinstance-textencoding-method.md)|Gets and sets the TextEncoding used when running, importing or exporting the XmlPort.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [XMLport Overview](../../devenv-xmlport-overview.md)

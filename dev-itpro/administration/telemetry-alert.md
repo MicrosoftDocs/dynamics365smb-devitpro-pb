@@ -7,8 +7,8 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 11/17/2022
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
-ms.custom: bac-template
+
+ms.custom: bap-template
 ---
 # Alert on Telemetry
 
@@ -80,7 +80,7 @@ This Logic App queries Application Insights every number of minutes (specified i
 
 
 
-## See also
+## Related information
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  

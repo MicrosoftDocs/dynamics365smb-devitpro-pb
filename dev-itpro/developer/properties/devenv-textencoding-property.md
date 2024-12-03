@@ -1,14 +1,11 @@
 ---
-title: "TextEncoding Property"
+title: "TextEncoding property"
 description: "Specifies the text encoding format to use when you use an XmlPort to export or import data as text."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +18,7 @@ Specifies the text encoding format to use when you use an XmlPort to export or i
 ## Applies to
 -   Xml Port
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -45,7 +42,9 @@ TextEncoding = Windows;
 
 The **TextEncoding** property is only available when the **Format** property is set to **Fixed Text** or **Variable Text**.
 
-[File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md) is the process of transforming bytes of data into readable characters for users of a system or program. There are several industry [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md) formats and different systems support different formats. Internally, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] uses Unicode encoding. For exporting and importing data with an XMLport, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] supports MS-DOS, UTF-8, UTF-16, and Windows encoding formats.  
+[File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md) is the process of transforming bytes of data into readable characters for users of a system or program. There are several industry [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md) formats and different systems support different formats. Internally, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] uses Unicode encoding. For exporting and importing data with an XMLport, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] supports MS-DOS, UTF-8, UTF-16, and Windows encoding formats. 
+
+The [Text data type](../methods-auto/text/text-data-type.md) in AL uses the in AL uses UTF-16 encoding, the same encoding as .NET strings. For more information, see [String class (.NET)](/dotnet/api/system.string?view=net-8.0&preserve-view=true).
   
 You should set the **TextEncoding** property to the encoding format that is compatible with the system or program that you will be exporting to or importing from. The following sections describe the available [File Handling and Text Encoding](../devenv-file-handling-and-text-encoding.md) formats.  
   
@@ -75,7 +74,7 @@ The following code example illustrates how you can set the encoding during run t
   
 The code example is based on XMLport 1220 in the [!INCLUDE[demolong](../includes/demolong_md.md)]. The table, **MyDefinitionTable**, has a field, **File Encoding**, that specifies the encoding for this part of an import.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [Format Property \(XMLports\)](devenv-format-property.md)   

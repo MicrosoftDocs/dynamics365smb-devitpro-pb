@@ -1,9 +1,6 @@
 ---
 title: "Upgrading to Microsoft Dynamics 365 Business Central"
-ms.custom: na
 ms.reviewer: jswymer
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -21,7 +18,7 @@ Depending on your decision to upgrade to either [!INCLUDE [prod_short](../develo
 
 Depending on which version you are upgrading from, you may have to convert or migrate the existing Help for your solution. For more information, see [Migrate Legacy Help to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Format](migrate-help.md) and [User Assistance Model](../user-assistance.md).  
 
-## See Also
+## Related information
 
 [Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Online](upgrading-to-business-central-online.md)  
 [Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] On-Premises](upgrading-to-business-central-on-premises.md)  

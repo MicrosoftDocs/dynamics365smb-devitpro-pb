@@ -1,30 +1,30 @@
 ---
-title: "HttpResponseMessage Data Type"
+title: "HttpResponseMessage data type"
 description: "Represents an HTTP response message including the status code and data."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/21/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpResponseMessage Data Type
+# HttpResponseMessage Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents an HTTP response message including the status code and data.
 
 
 
+## Instance methods
 The following methods are available on instances of the HttpResponseMessage data type.
 
 |Method name|Description|
 |-----------|-----------|
 |[Content()](httpresponsemessage-content-method.md)|Gets the contents of the HTTP response.|
+|[GetCookie(Text, var Cookie)](httpresponsemessage-getcookie-method.md)|Gets the specified cookie given a name.|
+|[GetCookieNames()](httpresponsemessage-getcookienames-method.md)|Gets the list of cookie names.|
 |[Headers()](httpresponsemessage-headers-method.md)|Gets the HTTP response's HTTP headers.|
 |[HttpStatusCode()](httpresponsemessage-httpstatuscode-method.md)|Gets the status code of the HTTP response.|
 |[IsBlockedByEnvironment()](httpresponsemessage-isblockedbyenvironment-method.md)|Gets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request.|
@@ -39,6 +39,6 @@ The size of the `HttpResponseMessage` is determined by the `HttpClient AL Functi
 > [!NOTE]   
 > For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data.
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

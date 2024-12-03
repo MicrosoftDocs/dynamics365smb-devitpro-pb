@@ -1,11 +1,7 @@
 ---
 title: "SIFT and Performance"
 description: This article looks at the factors you must take into consideration when you deal with SIFT and performance. 
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -41,7 +37,7 @@ This topic looks at the factors you must take into consideration when you deal w
 > [!IMPORTANT]  
 >  It is important that you remember to perform tests every time you make any changes to the SIFT structures. You must ensure that the changes that you have made do not cause problems in any other areas of the application. You must also ensure that your changes do not have a negative effect on performance.  
   
-## See Also
+## Related information
 
 [SumIndexField Technology \(SIFT\)](devenv-sift-technology.md)  
 [SIFT and SQL Server](devenv-sift-and-sql-server.md)  

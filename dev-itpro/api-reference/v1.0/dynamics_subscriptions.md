@@ -2,21 +2,23 @@
 title: (v1.0) Working with Webhooks
 description: (v1.0) Overview of how to manage subscriptions to Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Working with Webhooks in Dynamics 365 Business Central  (v1.0)
 
 Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short](../../includes/prod_short.md)]. For general information about webhooks, see [Push notifications via webhooks](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#15-push-notifications-via-webhooks) in Microsoft REST API Guidelines.
 
-
 In the following replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](endpoints-apis-for-dynamics.md).
+
+## Custom APIs
+
+If you're subscribing to a custom API page, both the URL you send the subscription HTTP request to and the resource path you wish to subscribe to must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements equivalent to: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, part of the URL will contain these elements `api/pub/grp/v1.0/subscriptions`.
 
 ## Register a webhook subscription
 Using webhooks requires the client/subscriber to perform a handshake with [!INCLUDE[prod_short](../../includes/prod_short.md)] to register the webhook subscription.
@@ -161,7 +163,7 @@ Custom APIs are also webhook-enabled and will be listed in **webhookSupportedRes
 
 By default, a subscription lives for 3 days if it is not renewed. The value is specified in the CustomSettings.config file under the ApiSubscriptionExpiration entry. There is a maximum number of subscriptions specified in the ApiSubscriptionMaxNumberOfSubscriptions in the CustomSettings.config file.
 
-## See also
+## Related information
 
 [Subscription Resource Type](resources/dynamics_subscription.md)  
 [Get subscriptions](api/dynamics_subscription_get.md)  

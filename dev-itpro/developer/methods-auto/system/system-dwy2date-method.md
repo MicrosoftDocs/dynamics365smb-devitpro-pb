@@ -2,13 +2,10 @@
 title: "System.DWY2Date(Integer [, Integer] [, Integer]) Method"
 description: "Gets a Date that is based on a week day, a week, and a year."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -133,7 +130,7 @@ end;
   
  On January 1, 2016, the current week is the week that starts on December 28, 2015 and ends on January 3, 2016. This week has four days in 2015 so the year of the current week is 2015. The first day of the first week of 2015 is 12/29/14.  
 
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -8,9 +8,10 @@ metadata:
   description: AL programming language for Business Central developer documentation
   author: SusanneWindfeldPedersen
   ms.author: solsen
-  ms.date: 05/16/2023
+  ms.date: 05/24/2024
   ms.topic: landing-page
   ms.custom: bap-template
+  ms.collection: get-started
 
 # linkListType: concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
 
@@ -42,7 +43,7 @@ landingContent:
             url: https://stackoverflow.com/questions/tagged/dynamics-al
           - text: AL on Discord
             url: https://t.co/XubV3r9gYp
-          - text: AL on Twitter
+          - text: AL on X
             url: https://twitter.com/search?q=%23bcalhelp&src=typed_query
 
   - title: Understand building blocks
@@ -88,7 +89,7 @@ landingContent:
           - text: Extension lifecycle
             url: devenv-ext-dev-lifecycle-overview.md
           - text: Base and system application reference
-            url: https://learn.microsoft.com/en-us/dynamics365/business-central/application/
+            url: https://learn.microsoft.com/dynamics365/business-central/application/
       - linkListType: concept
         links:
           - text: Data types
@@ -117,12 +118,12 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links: 
+          - text: What's new in 2024 release wave 1
+            url: https://learn.microsoft.com/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/development
           - text: What's new in 2023 release wave 2 
             url: https://learn.microsoft.com/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/development
           - text: What's new in 2023 release wave 1
             url: https://learn.microsoft.com/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/development
-          - text: What's new in 2022 release wave 2
-            url: https://learn.microsoft.com/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/development
       - linkListType: reference
         links:
           - text: AL language changelog

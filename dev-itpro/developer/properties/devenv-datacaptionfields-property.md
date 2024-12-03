@@ -1,14 +1,11 @@
 ---
-title: "DataCaptionFields Property"
+title: "DataCaptionFields property"
 description: "Sets the fields that appear to the left of the caption on pages that display the contents of this table."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -57,6 +54,6 @@ If you view the Customer Ledger Entry page with a filter applied, the customer n
   
 The important point is that the DataCaptionFields property on a page does not directly put any caption on the page, but only works when used with appropriate settings of DataCaptionFields at the table level.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

@@ -2,13 +2,10 @@
 title: "Page.SetBackgroundTaskResult(Dictionary of [Text, Text]) Method"
 description: "Sets the page background task result as a dictionary."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -68,7 +65,7 @@ codeunit 50100 PBTWaitCodeunit
 
 ```
 
-## See Also
+## Related information
 
 [Page Background Tasks](../../devenv-page-background-tasks.md)  
 [Page Data Type](page-data-type.md)  

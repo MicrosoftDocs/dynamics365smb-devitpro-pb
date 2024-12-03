@@ -1,10 +1,6 @@
 ---
 title: "GetRecIdFromKey"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # GetRecIdFromKey
@@ -42,5 +38,5 @@ string id = service.GetRecIdFromKey(cust.No);
 cust = service.ReadByRecId(id.ToUpper());  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

@@ -2,13 +2,11 @@
 title: Create documentAttachments
 description: Creates a document attachment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/08/2023
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create documentAttachments
@@ -29,7 +27,6 @@ POST businesscentralPrefix/companies({id})/documentAttachments({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **documentAttachment**, the **documentAttachment** will not be updated. |
 
 ## Request body
 
@@ -84,7 +81,7 @@ Content-type: application/json
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [documentAttachment](../resources/dynamics_documentAttachment.md)  

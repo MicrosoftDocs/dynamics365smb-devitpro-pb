@@ -1,10 +1,7 @@
 ---
 title: "Handling Merge Conflicts"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ---
 # Handling Merge Conflicts
@@ -41,7 +38,7 @@ END;
 
 In this example, the ApplicationBuild function is different in all three versions of codeunit 1 that you tried to merge. If you import this file into the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], it will not compile. To resolve the issue, removed the unwanted code, including all brackets {}. You can do this, for example, in Notepad, a three-way merge tool, or in the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)]. Use the source files in the subfolders in the RESULT folder to learn how to resolve the conflict.  
 
-## See Also  
+## Related information  
  [Merge Application Changes](merge-application-changes.md)   
  [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md)   
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)

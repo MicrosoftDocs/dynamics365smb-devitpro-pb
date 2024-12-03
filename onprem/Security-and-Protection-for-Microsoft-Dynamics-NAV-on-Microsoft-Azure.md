@@ -1,12 +1,7 @@
 ---
 title: "Security and Protection for Microsoft Dynamics NAV on Microsoft Azure"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 13049d00-80d4-4835-897b-396ac5aedede
 caps.latest.revision: 7
 ---

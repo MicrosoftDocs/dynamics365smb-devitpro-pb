@@ -1,14 +1,11 @@
 ---
-title: "SumIndexFields Property"
+title: "SumIndexFields property"
 description: "Specify which fields should be the aggregation fields in a **SumIndexField Technology (SIFT)** index, if applicable."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,7 +16,7 @@ author: SusanneWindfeldPedersen
 Specify which fields should be the "aggregation fields" in a **SumIndexField Technology (SIFT)** index, if applicable.  
 
 ## Applies to
--   Table Key
+-   Table key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -78,7 +75,7 @@ The fields must be of a numeric datatype \(Decimal, Integer, BigInteger, or Dura
   
 Changing existing keys may affect the behavior of the application since other parts of your application may depend on the existence of certain keys.  
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [MaintainSIFTIndex Property](devenv-maintainsiftindex-property.md)   

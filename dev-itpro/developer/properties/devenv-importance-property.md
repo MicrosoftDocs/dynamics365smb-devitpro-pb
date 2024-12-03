@@ -1,14 +1,11 @@
 ---
-title: "Importance Property"
+title: "Importance property"
 description: "Sets the amount of information that is visible in a window or dialog box."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -22,13 +19,13 @@ Sets the amount of information that is visible in a window or dialog box.
 -   Page Label
 -   Page Field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Standard**|runtime version 1.0|Displays the field on the page by default.|
-|**Promoted**|runtime version 1.0|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
-|**Additional**|runtime version 1.0|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
+|**Standard**|runtime version 3.2|Displays the field on the page by default.|
+|**Promoted**|runtime version 3.2|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
+|**Additional**|runtime version 3.2|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -42,8 +39,11 @@ Importance = Additional;
 
 You use this property to control the amount of information that is visible on a page. It is useful on pages that have a large number of fields, where you can display the most important fields by default, but users have the option to show more as needed.  
 
-As a developer, the **Importance** property can also be set also by using Designer (see [Using Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
+As a developer, the `Importance` property can also be set also by Use Designer (see [Use Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 
-## See Also
+> [!NOTE]
+> In version 24 (runtime 14) and earlier, the `Importance` property is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. The field also can't be promoted in the header of a collapsed FastTab. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
+
+## Related information
 
 [Properties](devenv-properties.md)

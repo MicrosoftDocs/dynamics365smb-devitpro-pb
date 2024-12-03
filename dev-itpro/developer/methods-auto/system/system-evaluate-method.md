@@ -2,13 +2,10 @@
 title: "System.Evaluate(var Any, Text [, Integer]) Method"
 description: "Evaluates a string representation of a value into its typical representation."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -87,7 +84,7 @@ The message window displays the following:
   
 **VarDuration = 2 days 4 hours 3 seconds 717 milliseconds. The return code is: Yes.**  
   
-This example shows that although Value \('010196'\) can be interpreted as both an integer and a date expression, it cannot be interpreted as a Boolean expression. This causes an error, shown in the return code Ok3 \(=False\).  
+This example shows that although Value \('19960101'\) can be interpreted as both an integer and a date expression, it cannot be interpreted as a Boolean expression. This causes an error, shown in the return code Ok3 \(=False\).  
   
 This example also shows that when you evaluate a string as a duration data type, you can use certain words in the string to describe the duration. The following words or abbreviations are supported:  
   
@@ -103,7 +100,7 @@ This example also shows that when you evaluate a string as a duration data type,
   
 You can include decimal values in the string that you evaluate as a duration, except for milliseconds, which must be a whole number.  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

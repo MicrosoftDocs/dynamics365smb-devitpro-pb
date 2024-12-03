@@ -1,12 +1,7 @@
 ---
 title: "Business Areas and Granules"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 17868265-734d-448c-bc02-5aa9047f1dee
 caps.latest.revision: 9
 ---

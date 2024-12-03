@@ -2,13 +2,10 @@
 title: "APIVersion Property (Query)"
 description: "Sets the versions of the API endpoint that the query is exposed in."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/23/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
  
 # APIVersion Property (Query)
@@ -30,7 +27,7 @@ APIVersion = 'beta', 'v1.0';
 For a full example, see [API Query Type](../devenv-api-querytype.md).
 
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)   
 [Query Object](../devenv-query-object.md)  
 [APIVersion Property (Page)](devenv-apiversion-page-property.md)  

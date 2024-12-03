@@ -1,14 +1,11 @@
 ---
-title: "DefaultLayout Property"
-description: "Specifies whether the report uses the built-in Excel, Word, or RDL report layout by default."
+title: "DefaultLayout property"
+description: "Specifies whether the report uses the built-in RDL or Word report layout by default."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/11/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +18,7 @@ Specifies whether the report uses the built-in RDL or Word report layout by defa
 ## Applies to
 -   Report
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -51,7 +48,7 @@ A report object can include a built-in layout of either an Excel type, Word type
 
 [!INCLUDE[single_layouts](../includes/include-single-layout-obsolete.md)]
 
-## See also
+## Related information
 
 [Developing reports](../devenv-reports.md)  
 [Defining multiple report layouts](../devenv-multiple-report-layouts.md)  

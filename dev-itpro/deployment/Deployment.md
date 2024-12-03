@@ -2,13 +2,10 @@
 title: Deployment overview for Business Central
 description: Get an overview of your options for deploying Dynamics 365 Business Central
 author: jswymer
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 # Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
@@ -68,7 +65,7 @@ For more information about administering on-premises deployments, see [Administr
 
 Part of your configuration is to specify where to look up the Help for the solution. For on-premises deployments, you can choose to install the legacy Help Server, for example. For more information, see [Configuring the Help Experience](configure-help.md).  
 
-## See Also  
+## Related information  
 
 [Administration of Business Central Online](../administration/tenant-administration.md)  
 [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  

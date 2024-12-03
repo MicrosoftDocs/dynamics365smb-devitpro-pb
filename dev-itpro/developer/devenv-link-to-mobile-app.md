@@ -1,14 +1,11 @@
 ---
 title: "Linking to the Dynamics 365 Business Central App"
 description: Learn how you can construct a URL for starting the Dynamics 365 Business Central app on a device, such as a phone or tablet. You can then distribute this URL by e-mail or from a Web page to the users.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Linking to the Dynamics 365 Business Central App
 
@@ -118,6 +115,6 @@ The *ms-businesscentral or ms-dynamicsnav * scheme only translates to a secure s
 
 -->
   
-## See Also  
+## Related information  
  [Web Client URL](devenv-web-client-urls.md)    
 [Introducing the Business Central Mobile App](devenv-introducing-business-central-mobile-app.md)

@@ -1,14 +1,12 @@
 ---
 title: "Upgrading Version 15 Base Application to Version 17"
 description: Describes how to upgrade an unmodified Business Central 15 application to version 17
-ms.custom: na
-ms.date: 04/15/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Upgrading Version 15 Base Application to Version 17
@@ -453,7 +451,7 @@ Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance unti
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

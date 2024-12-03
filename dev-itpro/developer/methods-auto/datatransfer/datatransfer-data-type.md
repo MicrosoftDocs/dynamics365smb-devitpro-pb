@@ -1,25 +1,23 @@
 ---
-title: "DataTransfer Data Type"
+title: "DataTransfer data type"
 description: "A structure building bulk transfer of data between tables."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/06/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# DataTransfer Data Type
+# DataTransfer Data type
 > **Version**: _Available or changed with runtime version 10.0._
 
 A structure building bulk transfer of data between tables.
 
 
 
+## Instance methods
 The following methods are available on instances of the DataTransfer data type.
 
 |Method name|Description|
@@ -35,7 +33,7 @@ The following methods are available on instances of the DataTransfer data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## See Also
+## Related information
 
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

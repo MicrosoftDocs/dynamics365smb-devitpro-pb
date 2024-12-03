@@ -2,10 +2,8 @@
 title: "Extending pages previously based on the Date virtual table"
 description: "How to extend pages that previously had the Date virtual table as their source table."
 author: blrobl
-ms.custom: na
 ms.reviewer: solsen
 ms.date: 04/01/2021
-ms.suite: na
 ms.topic: conceptual
 ---
 
@@ -84,7 +82,7 @@ codeunit 50001 GLAccountBalanceLinesExt
 }
 ```
 
-## See Also
+## Related information
 
 [Page Extension object](devenv-page-ext-object.md)  
 [Page object](devenv-page-object.md)  

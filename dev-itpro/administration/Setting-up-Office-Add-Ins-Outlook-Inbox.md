@@ -1,11 +1,10 @@
 ---
 title: "Set up the add-ins for Outlook integration with Business Central on-premises"
 description: Learn how to configure your Business Central on-premises solution so that users can work with Business Central data in Outlook.
-ms.custom: na
+ms.custom: bap-template
 ms.date: 04/22/2022
 ms.reviewer: jswymer
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
@@ -63,7 +62,7 @@ The steps you'll need to go through to prepare for deploying the add-in will dep
 1. Prepare Microsoft 365
 
     - Assign users a Microsoft 365 license.
-    - Make sure your Microsoft 365 account has the Global Administrator or Exchange Administrator role.
+    - Make sure your Microsoft 365 account has at least the **Exchange Administrator** role.
 
 2. Prepare Business Central
 
@@ -200,7 +199,7 @@ With this deployment option, users install the Business Central add-in for Outlo
 
 After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. For more information, see [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#onprem).
 
-## See Also  
+## Related information  
 
 [Deploying Business Central](../deployment/deployment.md)  
 [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook?toc=/dynamics365/business-central/dev-itpro/toc.json)  

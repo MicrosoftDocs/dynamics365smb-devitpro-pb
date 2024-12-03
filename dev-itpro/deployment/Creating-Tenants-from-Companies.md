@@ -1,14 +1,13 @@
 ---
-title: "Creating Tenants from Companies"
+title: Creating Tenants from Companies
+description: Learn how to create tenants from companies in Business Central.
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
-# Creating Tenants from Companies in Business Central
+
+# Creating tenants from companies in Business Central
+
 If your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution includes multiple companies in one database, you can choose to migrate to multitenancy where the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] companies become tenants of your application database.  
 
 ## Companies in multitenancy deployments
@@ -46,7 +45,7 @@ MoveCompanyToTenant -ServerInstance 'BC' -FromDatabase 'Demo Database NAV (13-0)
 
  The script uses the **sqlcmd** utility to create the database, assign database permissions to the service account, and move the data. This utility is part of SQL Server. The script creates four temporary tables in the original database to handle user-specific data, company-specific data, tables that will not be moved, and user IDs. You must modify the MoveCompanyToTenant.sql script to change the default values.  
 
-## See Also  
+## Related information  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md)   
 

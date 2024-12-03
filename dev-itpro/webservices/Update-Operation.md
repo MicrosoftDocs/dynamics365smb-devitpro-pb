@@ -1,10 +1,6 @@
 ---
 title: "Update Operation"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Update Operation
@@ -46,5 +42,5 @@ cust.Name = cust.Name + "Updated";
 service.Update(ref cust);  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

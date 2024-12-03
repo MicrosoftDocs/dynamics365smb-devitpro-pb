@@ -1,24 +1,22 @@
 ---
-title: "Query Data Type"
+title: "Query data type"
 description: "Enables you to retrieve data from multiple tables and combine the data in single dataset."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Query Data Type
+# Query Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Enables you to retrieve data from multiple tables and combine the data in single dataset.
 
 
+## Static methods
 The following methods are available on the Query data type.
 
 
@@ -26,9 +24,11 @@ The following methods are available on the Query data type.
 |-----------|-----------|
 |[SaveAsCsv(Integer, Text [, Integer] [, Text])](query-saveascsv-integer-string-integer-string-method.md)|Saves the resulting data set of a query as a comma-separated values (CSV) file.|
 |[SaveAsCsv(Integer, OutStream [, Integer] [, Text])](query-saveascsv-integer-outstream-integer-string-method.md)|Saves the resulting data set of a query as a comma separated values (CSV) file.|
+|[SaveAsJson(Integer, OutStream)](query-saveasjson-method.md)|Saves the resulting data set of a query as an .json file.|
 |[SaveAsXml(Integer, Text)](query-saveasxml-integer-string-method.md)|Saves the resulting data set of a query as an .xml file.|
 |[SaveAsXml(Integer, OutStream)](query-saveasxml-integer-outstream-method.md)|Saves the resulting data set of a query as an .xml file.|
 
+## Instance methods
 The following methods are available on instances of the Query data type.
 
 |Method name|Description|
@@ -43,6 +43,7 @@ The following methods are available on instances of the Query data type.
 |[Read()](queryinstance-read-method.md)|Reads data from a row in the resulting data set of a query.|
 |[SaveAsCsv(Text [, Integer] [, Text])](queryinstance-saveascsv-string-integer-string-method.md)|Saves the resulting data set of a query as comma separated values (CSV)|
 |[SaveAsCsv(OutStream [, Integer] [, Text])](queryinstance-saveascsv-outstream-integer-string-method.md)|Saves the resulting data set of a query as comma separated values (CSV)|
+|[SaveAsJson(OutStream)](queryinstance-saveasjson-method.md)|Saves the resulting data set of a query as Json|
 |[SaveAsXml(Text)](queryinstance-saveasxml-string-method.md)|Saves the resulting data set of a query as XML|
 |[SaveAsXml(OutStream)](queryinstance-saveasxml-outstream-method.md)|Saves the resulting data set of a query as XML|
 |[SecurityFiltering([SecurityFilter])](queryinstance-securityfiltering-method.md)|Gets or sets how security filters are applied to the query.|
@@ -51,6 +52,6 @@ The following methods are available on instances of the Query data type.
 |[TopNumberOfRows([Integer])](queryinstance-topnumberofrows-method.md)|Specifies the maximum number of rows to include in the resulting data set of a query.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

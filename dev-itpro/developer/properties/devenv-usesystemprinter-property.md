@@ -1,14 +1,11 @@
 ---
-title: "UseSystemPrinter Property"
+title: "UseSystemPrinter property"
 description: "Sets which printer is suggested when the report is run."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -40,6 +37,6 @@ The user will be able to select another printer at runtime if the [UseRequestPag
   
 If the UseSystemPrinter property is set to **false**, but there is no specific printer defined for the User/Report combination, the system default printer will be suggested.  
   
-## See Also  
+## Related information  
 
 [UseRequestPage Property](devenv-userequestpage-property.md)

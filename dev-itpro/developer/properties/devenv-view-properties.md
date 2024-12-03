@@ -3,13 +3,10 @@ title: "View Properties"
 description: "This topic lists properties that apply to views."
 
 author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # View Properties
@@ -25,7 +22,7 @@ The following topic lists properties that apply to [Views](../devenv-views.md) s
 |[OrderBy](devenv-orderby-property.md) | Views |
 |[SharedLayout](devenv-sharedlayout-property.md)| Views |
 
-## See also
+## Related information
 
 [Codeunit Properties](devenv-codeunit-properties.md)  
 [Page Properties](devenv-page-property-overview.md)  

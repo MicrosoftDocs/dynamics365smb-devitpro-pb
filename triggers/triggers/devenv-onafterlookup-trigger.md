@@ -1,11 +1,8 @@
 ---
 title: "OnAfterLookup Trigger"
 description: "OnAfterLookup trigger in AL for Business Central."
-ms.custom: na
 ms.date: 04/15/2021
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: solsen
 author: SusanneWindfeldPedersen
@@ -109,7 +106,6 @@ page 46 "Sales Order Subform"
         }
     }
 }
-
 ```
 
 ## See Also  

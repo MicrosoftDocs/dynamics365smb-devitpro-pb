@@ -3,11 +3,11 @@ title:  Analyzing Environment Lifecycle Trace Telemetry
 description: Learn about the environment lifecycle telemetry in Business Central.
 author: KennieNP
 ms.author: kepontop
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.date: 02/21/2023
 ms.custom: bap-template
-ms.service: dynamics365-business-central
+
 ---
 # Analyzing Environment Lifecycle Trace Telemetry
 
@@ -21,7 +21,7 @@ Environment lifecycle telemetry gathers data about the success or failure of the
 - Start/stop/restart an environment
 - Copy an environment
 - Point-in-time restore an environment
-- Move an environment to a difference Microsoft Entra tenant
+- Transfer an environment to a different Microsoft Entra tenant
 - Cancel a session from the Business Central admin center
 - Export the environment database
 - Change the environment configuration 
@@ -213,6 +213,7 @@ Occurs when the update was started for the environment.
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
 |eventId|**LC0105**|
+|reason|[!INCLUDE[reason](../includes/include-telemetry-dimension-reason.md)]|
 |ignoreUpdateWindow|[!INCLUDE[ignoreUpdateWindow](../includes/include-telemetry-dimension-ignore-update-window.md)]|
 |initiatedFrom|[!INCLUDE[initiatedFrom](../includes/include-telemetry-dimension-initiated-from.md)]|
 |registeredForUpdateOnOrAfterDateUtc|[!INCLUDE[registeredForUpdateOnOrAfterDateUtc](../includes/include-telemetry-dimension-registered-for-update-on-or-after-date.md)]|
@@ -1018,15 +1019,15 @@ traces
 ```
 
 
-## Environment move to different AAD tenant operation scheduled
+## Environment transfer to different Entra tenant operation scheduled
 
-Occurs when the environment is scheduled to be moved to a different Microsoft Entra tenant.
+Occurs when the environment is scheduled to be transferred to a different Microsoft Entra tenant, after a transfer is accepted on the destination tenant.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment move to {destinationAadTenantId} AAD tenant operation scheduled to run at {registeredForMoveDateUtc}: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the AAD tenant that the environment should be moved to. <br /><br /> `{registeredForMoveDateUtc}` indicates the date and time that have been registered for the move.|
+|message|**Environment move to {destinationAadTenantId} AAD tenant operation scheduled to run at {registeredForMoveDateUtc}: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the destination Entra tenant. <br /><br /> `{registeredForMoveDateUtc}` indicates the date and time that have been registered for the move.|
 
 ### Custom dimensions
 
@@ -1042,15 +1043,15 @@ Occurs when the environment is scheduled to be moved to a different Microsoft En
 |sourceEnvironmentName|[!INCLUDE[sourceEnvironmentName](../includes/include-telemetry-dimension-source-environment-name.md)]|
 |sourceAadTenantId|[!INCLUDE[sourceAadTenantId](../includes/include-telemetry-dimension-source-aadtenantid.md)]|
 
-## Environment move to different AAD tenant operation scheduling failed
+## Environment transfer to different Entra tenant operation scheduling failed
 
-Occurs when the operation to schedule a move of an environment to a different Microsoft Entra) tenant failed.
+Occurs when the operation to schedule a transfer of an environment to a different Microsoft Entra tenant failed, after a transfer is accepted on the destination tenant.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment move to {destinationAadTenantId} AAD tenant operation scheduling failed: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the AAD tenant that the environment should be moved to.|
+|message|**Environment move to {destinationAadTenantId} AAD tenant operation scheduling failed: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the destination Entra tenant.|
 
 ### Custom dimensions
 
@@ -1093,15 +1094,15 @@ traces
 , failureReason = customDimensions.failureReason
 ```
 
-## Environment move to different AAD tenant operation started
+## Environment transfer to different Entra tenant operation started
 
-Occurs when the operation to move the environment to a different AAD tenant started.
+Occurs when the operation to move the environment to a different Entra tenant started.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment move to {destinationAadTenantId} AAD tenant operation operation started: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the AAD tenant that the environment should be moved to.|
+|message|**Environment move to {destinationAadTenantId} AAD tenant operation operation started: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment to be moved.<br /><br /> `{destinationAadTenantId}` indicates the destination Entra tenant.|
 
 ### Custom dimensions
 
@@ -1116,15 +1117,15 @@ Occurs when the operation to move the environment to a different AAD tenant star
 |sourceEnvironmentName|[!INCLUDE[sourceEnvironmentName](../includes/include-telemetry-dimension-source-environment-name.md)]|
 |sourceAadTenantId|[!INCLUDE[sourceAadTenantId](../includes/include-telemetry-dimension-source-aadtenantid.md)]|
 
-## Environment moved successfully to different AAD tenant
+## Environment transferred successfully to different Entra tenant
 
-Occurs when the operation to move the environment to a different AAD tenant completed successfully.
+Occurs when the operation to transfer the environment to a different Entra tenant completed successfully.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment moved to {destinationAadTenantId} AAD tenant successfully: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment that was moved.<br /><br /> `{destinationAadTenantId}` indicates the AAD tenant that the environment was moved to.|
+|message|**Environment moved to {destinationAadTenantId} AAD tenant successfully: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment that was moved.<br /><br /> `{destinationAadTenantId}` indicates the Entra tenant that the environment was transferred to.|
 
 ### Custom dimensions
 
@@ -1140,15 +1141,15 @@ Occurs when the operation to move the environment to a different AAD tenant comp
 |sourceAadTenantId|[!INCLUDE[sourceAadTenantId](../includes/include-telemetry-dimension-source-aadtenantid.md)]|
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 
-## Environment move to different AAD tenant failed
+## Environment transfer to different Entra tenant failed
 
-Occurs when the operation to move the environment to a different AAD tenant failed.
+Occurs when the operation to transfer the environment to a different Entra tenant failed.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment move to {destinationAadTenantId} AAD tenant operation failed: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment that was to be moved.<br /><br /> `{destinationAadTenantId}` indicates the AAD tenant that the environment was to be moved to.|
+|message|**Environment move to {destinationAadTenantId} AAD tenant operation failed: {sourceEnvironmentName}** <br /><br /> `{sourceEnvironmentName}` indicates the name of the environment that was to be moved.<br /><br /> `{destinationAadTenantId}` indicates the destination Entra tenant.|
 
 ### Custom dimensions
 
@@ -2259,7 +2260,7 @@ traces
 ```
 
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

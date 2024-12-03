@@ -1,15 +1,12 @@
 ---
 title: Configure Localization App Location of Translated Base App Help
 description: 
-ms.custom: na
 ms.date: 10/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 robots: NOINDEX
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Configure Localization App Location of Translated Base App Help
@@ -23,7 +20,7 @@ AL extensions that are approved localization apps can override the default help 
 
 In the `app.json` file, two properties control the Help URL and the supported locale of the Help. Learn more at [Localization apps](../help/context-sensitive-help.md#localization-apps) and [JSON Files](devenv-json-files.md).
 
-## See Also
+## Related information
 
 [Add Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  

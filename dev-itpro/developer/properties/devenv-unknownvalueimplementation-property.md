@@ -1,14 +1,11 @@
 ---
-title: "UnknownValueImplementation Property"
+title: "UnknownValueImplementation property"
 description: "Specifies the implementers used for ordinal values that are not included in the defined list of enum values."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -60,7 +57,7 @@ pageextension 50130 CustListExt extends "Customer List"
 
 interface IFoo
 {
-    procedure Foo();
+    procedure Foo()
 }
 
 codeunit 50145 ErrorFooImpl implements IFoo
@@ -102,7 +99,6 @@ enum 50135 SomeEnum implements IFoo
         // Nothing specified. Using defaults
     }
 }
-
 ```
 
 ## Remarks
@@ -112,7 +108,7 @@ The `UnknownValueImplementation` property applies to enums. Uninstalling enum ex
 Related to `UnknownValueImplementation` is the `DefaultImplementation` property, used for fallback to a default value when no enum value is provided. For more information, see [DefaultImplementation Property](devenv-defaultimplementation-property.md).
 
 
-## See Also
+## Related information
 
 [DefaultImplementation Property](devenv-defaultimplementation-property.md)  
 [Get Started with AL](../devenv-get-started.md)  

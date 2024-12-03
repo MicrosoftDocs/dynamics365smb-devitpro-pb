@@ -1,14 +1,11 @@
 ---
-title: "Caption Property"
+title: "Caption property"
 description: "Sets the string that is used to identify a control or other object in the user interface."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/04/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,7 +17,7 @@ Sets the string that is used to identify a control or other object in the user i
 
 ## Applies to
 -   Table
--   Table Field
+-   Table field
 -   Page Field
 -   Field Group
 -   Page
@@ -40,6 +37,8 @@ Sets the string that is used to identify a control or other object in the user i
 -   Report Column
 -   Enum Value
 -   Page Custom Action
+-   Page System Action
+-   Page File Upload Action
 -   Page View
 -   Report Layout
 -   Profile
@@ -81,7 +80,7 @@ A caption is the text used to show the identity of a control. For example, in th
 > [!NOTE]  
 > For query columns, when you run the query from Object Designer, the About This Query window that opens in the [!INCLUDE[rtc](../includes/rtc_md.md)] displays the value for the [Name Property](./devenv-properties.md) of the query column, not the Caption property or CaptionML Property.  
 
-## See Also
+## Related information
 
 [ShowCaption Property](devenv-showcaption-property.md)  
 [Working with Translation Files](../devenv-work-with-translation-files.md)

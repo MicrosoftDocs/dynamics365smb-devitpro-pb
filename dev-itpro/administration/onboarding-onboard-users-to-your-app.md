@@ -25,19 +25,27 @@ Example:
 ```al
 codeunit 50100 "My App Setup"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Guided Experience", 'OnRegisterAssistedSetup', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::System.Environment.Configuration."Guided Experience", OnRegisterAssistedSetup, '', true, true)]
     local procedure InsertIntoAssistedSetupOnRegisterAssistedSetup()
     var
-        GuidedExperience: Codeunit "Guided Experience";
-        AssistedSetupGroup: Enum "Assisted Setup Group";
-        VideoCategory: Enum "Video Category";
-        SetupShortTitle: text[50];
-        SetupTitle: text[50];
-        SetupDescription: text[50];
-        IsPrimarySetup: boolean; 
+        GuidedExperience: Codeunit System.Environment.Configuration."Guided Experience";
+        IsPrimarySetup: Boolean;
+        AssistedSetupGroup: Enum System.Environment.Configuration."Assisted Setup Group";
+        VideoCategory: Enum System.Media."Video Category";
+        ExpectedDuration: Integer;
+        SetupShortTitle: Text[50];
+        HelpUrl, VideoUrl : Text[250];
+        SetupDescription: Text[1024];
+        SetupTitle: Text[2048];
     begin
         IsPrimarySetup := true;
-        GuidedExperience.InsertAssistedSetup(SetupTitle, SetupShortTitle, SetupDescription, 5, ObjectType::Page, Page::"My App Setup Wizard", AssistedSetupGroup::ReadyForBusiness, '', VideoCategory::ReadyForBusiness, '', IsPrimarySetup);
+        SetupTitle := '<My Setup Title>';
+        SetupShortTitle := '<My Setup Short Title>';
+        SetupDescription := '<My Setup Description>';
+        HelpUrl := '<URL to get help>';
+        VideoUrl := '<Video Url>';
+        ExpectedDuration := 5;
+        GuidedExperience.InsertAssistedSetup(SetupTitle, SetupShortTitle, SetupDescription, ExpectedDuration, ObjectType::Page, Page::"My App Setup Wizard", AssistedSetupGroup::ReadyForBusiness, VideoUrl, VideoCategory::ReadyForBusiness, HelpUrl, IsPrimarySetup);
     end;
 }
 ```
@@ -87,6 +95,6 @@ Consider which of your app's objects are relevant for being added to a user's Ge
 
 Make sure you provide the best possible help to unblock users when needed. You do this by ensuring proper user of the contextSensitive properties for your app and your pages. This will ensure the user can find links to your documentation in the Help pane. To learn more, see [Dynamics 365 Business Central User Assistance Model](../user-assistance.md).
 
-## See also
+## Related information
 
 [Onboarding experiences in Business Central](onboarding-experiences.md)  

@@ -1,17 +1,14 @@
 ---
-title: "RecordId Method (Record)"
-description: "The RecordId method in AL for Business Central"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: RecordId method (Record)
+description: The RecordId method in AL for Business Central.
+ms.date: 04/26/2024
 ms.topic: reference
 author: jswymer
 ---
 
-# RecordId Method (Record)
-Gets the RecordId of the record that is currently selected in the table. If no table is selected, an error is generated.  
+# RecordId method (Record)
+
+Gets the `RecordId` of the record that is currently selected in the table. If no table is selected, an error is generated.  
   
 ## Syntax  
   
@@ -19,14 +16,16 @@ Gets the RecordId of the record that is currently selected in the table. If no t
 RecordId := Record.RecordId;  
 ```  
   
-### Parameters  
- *Record*  
- Type: Record  
+### Parameters 
+
+*Record*  
+Type: Record  
   
- The record whose RecordId you want to get.  
+The record whose RecordId you want to get.  
   
 ## Return value  
- Type: RecordId  
+
+Type: RecordId  
   
 ## Remarks  
 
@@ -34,9 +33,9 @@ You can show strings that include RecordId in the user interface by using the [F
   
 |Standard Format|Renders as|  
 |---------------------|----------------|  
-|FORMAT\(Customer.RecordId,0,0\)|Customer: 1212121|  
-|FORMAT\(Customer.RecordId,0,1\)|Kunde: 1212121|  
-|FORMAT\(Customer.RecordId,0,9\)|Customer: 1212121|  
+|Format\(Customer.RecordId,0,0\)|Customer: 1212121|  
+|Format\(Customer.RecordId,0,1\)|Kunde: 1212121|  
+|Format\(Customer.RecordId,0,9\)|Customer: 1212121|  
   
 When you use standard format 1, the caption of the record is returned. When you use other standard formats, the name of the record is returned, which is usually English \(US\). For more information, see [Format Property](../properties/devenv-format-property.md).  
   
@@ -56,11 +55,11 @@ The following example opens table 18 \(Customer\) as a Record variable that is n
 ```AL
 MyRecord.FindLast;  
 RecID := MyRecord.RecordId;  
-MESSAGE(MyTextConst, RecID);  
+Message(MyTextConst, RecID);  
 ```  
   
-## See Also  
+## Related information  
 
-[AL Method Reference](../methods-auto/library.md)  
-[Record Data Type](../methods-auto/library.md)  
-[Format Property](../properties/devenv-format-property.md)
+[AL method reference](../methods-auto/library.md)  
+[Record data type](../methods-auto/library.md)  
+[Format property](../properties/devenv-format-property.md)

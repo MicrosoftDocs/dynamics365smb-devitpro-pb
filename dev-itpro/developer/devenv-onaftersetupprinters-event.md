@@ -1,11 +1,7 @@
 ---
 title: "OnAfterSetupPrinters Event"
 description: Describe the OnAfterSetupPrinters Event in Business Central. 
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -34,12 +30,12 @@ The OnAfterSetupPrinters event is raised when you:
 <!--
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterSetupPrinters', '', true, true)]
-procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
+procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject])
 ```
 -->
 ```AL
 [IntegrationEvent(false, false)]
-local procedure OnAfterSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
+local procedure OnAfterSetupPrinters(var Printers: Dictionary of [Text[250], JsonObject])
 ```
 
 ## Parameters
@@ -197,7 +193,7 @@ If the value is less than 1, an error like the following error occurs:
 
 Specifies whether landscape orientation is supported. `true` specifies landscape orientation is supported; otherwise `false`.
 
-## See Also
+## Related information
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
 [Developing Printer Extensions Overview](devenv-reports-printing.md)  

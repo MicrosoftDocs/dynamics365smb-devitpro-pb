@@ -1,14 +1,10 @@
 ---
-title: "AVS Error AVS0001"
+title: AVS Error AVS0001
 description: "The 'app.json' could not be found in the specified package."
 ms.author: thpeder
-ms.custom: na
-ms.date: 02/05/2022
-ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 02/26/2024
+ms.reviewer: jswymer
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: thpeder
 ---
 
@@ -22,7 +18,7 @@ The 'app.json' could not be found in the specified package.
 
 Rebuild the app either from Visual Studio Code or by using the alc.exe tool.
 
-## See Also
+## Related information
 
-[Get Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Get started with AL](../devenv-get-started.md)  
+[Developing extensions](../devenv-dev-overview.md)  

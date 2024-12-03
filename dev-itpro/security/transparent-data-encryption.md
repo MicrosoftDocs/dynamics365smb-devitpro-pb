@@ -1,14 +1,11 @@
 ---
 title: "Data Encryption at Rest, Transparent Data Encryption (TDE) and BitLocker"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: kepontop
 author: jswymer
 description: Learn how to secure your data at rest using Transparent Data Encryption (TDE) and BitLocker on Business Central. Protect your SQL Server and Azure SQL Database files.
+ms.reviewer: jswymer
 ---
 
 # Data Encryption at Rest
@@ -57,7 +54,7 @@ TDE has an estimated performance impact around 3-5% and can be much lower if mos
 
 BitLocker Drive Encryption has a single-digit percentage performance impact as explained [here](/windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq#is-there-a-noticeable-performance-impact-when-bitlocker-is-enabled-on-a-computer).
 
-## See Also  
+## Related information  
  [Classifying Data](../developer/devenv-classifying-data.md)   
  [Data Security](data-security.md)  
  [Enhancing Business Server Security](enhancing-server-instance-security.md)   

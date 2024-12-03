@@ -1,14 +1,11 @@
 ---
-title: "ReplicateData Property"
+title: "ReplicateData property"
 description: "Specifies if the table should be replicated."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -34,7 +31,11 @@ Specifies if the table should be replicated.
 ReplicateData = false;
 ```
 
-## See Also  
+## Remarks
+
+The `ReplicateData` property is used when migrating data from a Business Central on-premises environment to an online environment. The property specifies whether the data in the on-premises table is replicated to a table in the cloud service as part of cloud migration. When set to `true`, the table's data is included in the replication process for migrating to the cloud. Learn more in [Determine what data to migrate to the cloud](../../administration/cloud-migration-plan-prepare.md#extension-data).
+
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Table Properties](devenv-table-properties.md)  

@@ -3,11 +3,10 @@ title: itemVariant resource type
 description: An item variant object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # itemVariant resource type
@@ -46,6 +45,7 @@ Represents an item variant in [!INCLUDE[prod_short](../../../includes/prod_short
 |itemNumber|string|The name of the item in the item variant.|
 |code|string|The code of the item variant.|
 |description|string|Specifies the description of the item variant.|
+|lastModifiedDateTime|datetime|The last datetime the item variant was modified. Read-Only.|
 
 ## JSON representation
 
@@ -58,14 +58,15 @@ Here is a JSON representation of the itemVariant resource.
     "itemId": "GUID",
     "itemNumber": "string",
     "code": "string",
-    "description": "string"
+    "description": "string",
+    "lastModifiedDateTime": "datetime"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 
 
-## See Also
+## Related information
 [GET itemVariant](../api/dynamics_itemVariant_Get.md)  
 [DELETE itemVariant](../api/dynamics_itemVariant_Delete.md)  
 [POST itemVariant](../api/dynamics_itemVariant_Create.md)  

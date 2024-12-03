@@ -1,18 +1,17 @@
 ---
-title: Get extensionUpload
+title: (automation API) Get extensionUpload
 description: Gets an extension upload object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get extensionUpload
+# (automation API) Get extensionUpload
 
 Retrieves the properties and relationships of an extension upload object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
@@ -62,7 +61,7 @@ Here is an example of the response.
 Schedule in the body can be "Current version", "Next minor version", or "Next major version".
 Schema Sync Mode in the body can be "Add" or "Force Sync".
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [extensionUpload](../resources/dynamics_extensionUpload.md)

@@ -2,7 +2,6 @@
 title: "How to create an effective sales landing page"
 description: "Guideline on creating an effective Sales Landing page for your app"
 author: a-emniel
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
@@ -102,7 +101,7 @@ If you need help with formulating a positioning statement, try the value proposi
 |-| The more specific and concrete your promise of value is, the better.|
 |-| Abstract concepts such as “more efficiency, more productivity, transform your business” aren't emotionally impactful or convincing and don't compel a prospect to act.
 
-Target market - If you support multiple countries or languages, this is a key selling feature. • Find a way to show this visually. <!--	./media/image49.jpg -->
+Target market - If you support multiple countries/regions or languages, this is a key selling feature. • Find a way to show this visually. <!--	./media/image49.jpg -->
 
 | Element                                | Description                             | Example |
 |--------------------------------------|------------------|-----------------------------------|
@@ -186,7 +185,7 @@ Transparency is the key to building trust.
 - Give them a compelling offer they can't refuse. Offer a time-limited trial or special pricing discount if they buy in 30 days.
 - Use scarcity to compel action. Offer a 100% money-back guarantee.
 
-We recommend providing three offerings, optimized for three different customer segments. For more recommendations on pricing, see the pricing guide located at https://mbspartner.microsoft.com/BFI/Topic/64
+We recommend providing three offerings, optimized for three different customer segments. For more recommendations on pricing, see the [pricing and licensing guide](https://dynamicspartners.transform.microsoft.com/download/protected?assetname=assets/Microsoft%20presents%20-%20Pricing%20and%20licensing.pdf&download=1&protected=1). <!-- https://mbspartner.microsoft.com/BFI/Topic/64-->
 
 | Element       | Description |
 |---------------|-------------|

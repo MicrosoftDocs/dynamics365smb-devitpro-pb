@@ -4,11 +4,11 @@ description: Learn how to control the cost of Business Central provides telemetr
 author: kennieNP
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/13/2022
+ms.date: 12/05/2023
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
-ms.custom: bac-template
+
+ms.custom: bap-template
 ---
 # Controlling Telemetry Cost
 
@@ -21,12 +21,20 @@ ms.custom: bac-template
 [!INCLUDE[telemetryControlCost](../includes/include-telemetry-control-cost.md)]
 
 ### Data ingestion cost strategies
-To control data ingestion cost, consider the following practice when setting up telemetry
+
+To control data ingestion cost, consider the following practice when setting up telemetry:
+
 1. Set a daily cap on how much data that can be ingested (and what you are willing to pay for)
 2. Set up an alert when daily cap is reached (so that you know that you do not get all data)
 3. Use sampling or Data Collection Rules to adjust data ingestion
 
 For more information, see [Cost optimization in Azure Monitor](/azure/azure-monitor/best-practices-cost) and [Set daily cap on Log Analytics workspace](/azure/azure-monitor/logs/daily-cap).
+
+#### Video guidance
+
+The following video shows how to enable cost control strategies for telemetry.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fxZ7]
 
 ### Calculating the cost of data ingestion
 
@@ -96,7 +104,7 @@ To reduce data retention cost, you can
 - use the default retention for [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources (currently 90 days). Different retention periods can be selected for each Application Insights resource. The full set of available retention periods is 30, 60, 90, 120, 180, 270, 365, 550, or 730 days.
 - purge data from your Application Insights resource using a set of user-defined filters. See [Components - Purge](/rest/api/application-insights/components/purge#examples) for examples.
 
-## See also
+## Related information
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  

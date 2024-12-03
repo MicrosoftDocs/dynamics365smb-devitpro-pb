@@ -1,14 +1,11 @@
 ---
-title: "AllowInCustomizations Property"
+title: "AllowInCustomizations property"
 description: "Specifies whether this table field can be used as source expression for new page fields in page customizations."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/25/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,14 +16,14 @@ author: SusanneWindfeldPedersen
 Specifies whether this table field can be used as source expression for new page fields in page customizations.
 
 ## Applies to
--   Table Field
+-   Table field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Always**|runtime version 1.0|The field can be used as source expression for new page fields in page customizations.|
-|**Never**|runtime version 1.0|The field cannot be used as source expression for new page fields in page customizations.|
+|**Always**|runtime version 12.0|The field can be used as source expression for new page fields in page customizations.|
+|**Never**|runtime version 12.0|The field cannot be used as source expression for new page fields in page customizations.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -51,6 +48,6 @@ tableextension 50100 MyExtension extends Customer
 }
 ```
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

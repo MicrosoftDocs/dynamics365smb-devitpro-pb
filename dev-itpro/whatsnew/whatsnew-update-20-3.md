@@ -2,14 +2,11 @@
 title: "Update 20.3 for Microsoft Dynamics 365 Business Central 2022 Release Wave 1"
 description: Get an overview of new and changed capabilities in the 20.3 update of Business Central online, which is part of 2022 release wave 1.
 ms.author: jswymer
-ms.custom: na
-ms.date: 07/08/2022
-ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 04/01/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
-author: EmmaNielsson
+author: jswymer
+ms.custom: evergreen
 ---
 
 # Update 20.3 for Microsoft Dynamics 365 Business Central online 2022 release wave 1
@@ -32,7 +29,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|W1 | Extended text functionality for VAT clauses | In some situations and countries, VAT Clauses can take more than allowed number of characters. Because of that Extended Texts logic is implemented in the VAT Clauses and this extended text can be shown on the sales invoice. |
+|W1 | Extended text functionality for VAT clauses | In some situations and countries/regions, VAT Clauses can take more than allowed number of characters. Because of that Extended Texts logic is implemented in the VAT Clauses and this extended text can be shown on the sales invoice. |
 | Germany | Enhancements to Business Data Export file (GDPdU / GoDB) | Export file will use table and field names instead of captions. Also table and field names won't be limited to 20 characters and it will show full name, with blanks, dots, etc.|
 
 ## Release Plan  

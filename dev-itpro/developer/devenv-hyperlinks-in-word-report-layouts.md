@@ -4,10 +4,10 @@ description: Learn how to create links from text and pictures fields in Word rep
 ms.author: jswymer
 ms.date: 11/22/2021
 ms.topic: conceptual
-ms.tgt_pltfrm: na
+ms.reviewer: jswymer
 ---
 
-# Setting up Hyperlinks in Word Report Layouts
+# Using Hyperlinks in Word Layouts
 
 In a Word report layout, you can set up hyperlinks on text and picture fields. Suppose you want to add a link on invoice reports that targets the URL of a payment service. To make the link, you add a field to the Customer table for storing payments URLs. Then, you modify the report dataset and layout to include a link to payment services URL. You can set up the following types of links:  
   
@@ -63,6 +63,6 @@ Follow these guidelines:
   
 3. In the Word report layout, add a picture control for the picture source column.  
   
-## See Also  
+## Related information  
 
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  

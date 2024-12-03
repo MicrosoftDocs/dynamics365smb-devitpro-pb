@@ -3,13 +3,12 @@ title: (v1.0) Update item defaultDimensions
 description: (v1.0) Updates the item default dimensions in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Update item defaultDimensions (v1.0)
@@ -82,7 +81,7 @@ Here is an example of the response.
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Items](../resources/dynamics_item.md)  

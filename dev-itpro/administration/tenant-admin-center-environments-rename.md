@@ -3,24 +3,16 @@ title: Rename Environments in the Admin Center
 description: Use the Business Central administration center to rename environments. 
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, rename
 ms.date: 04/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Rename Environments in the Admin Center
 
-**APPLIES TO:** Business Central 2020 release wave 2 and later
-
-> [!NOTE]
-> This feature is in preview. It might change or be removed in the future updates.
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
-You can change the name of any environment. The name uniquely identifies the environment from your other environments. Before you change a name, you must consider that the name also is part of the environment's URL. The URL is used in links to the environment in various ways. So changing the name can have significant impact.
+You can change the name of an environment. The name uniquely identifies the environment from your other environments. Before you change a name, you must consider that the name also is part of the environment's URL. The URL is used in links to the environment in various ways. So changing the name can have significant impact.
 
 The renaming of an environment is logged and shown in the [operations log](tenant-admin-center-environments.md#opslog).
 
@@ -68,7 +60,7 @@ Here are some areas where the environment name is used, which will be affected w
   - CI/CD pipelines for test and deployment could be impacted by environment renames.
 - Azure Application Insights logs and metrics
 
-## See also
+## Related information
 
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Managing Apps](tenant-admin-center-manage-apps.md)  

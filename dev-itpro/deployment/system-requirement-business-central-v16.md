@@ -1,9 +1,6 @@
 ---
 title: System Requirements for Business Central 2020 Release Wave 1
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central 2020 Release Wave 1 on-premises.
-ms.custom: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.date: 04/01/2021
 author: jswymer
@@ -170,7 +167,7 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 |Supported operating systems|<ul><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>|  
 |Additional software|<ul><li>SharePoint 2013 Service Pack 1.</li><li>SharePoint Online.</li></ul>|  
 
-## See Also
+## Related information
 
 [Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  

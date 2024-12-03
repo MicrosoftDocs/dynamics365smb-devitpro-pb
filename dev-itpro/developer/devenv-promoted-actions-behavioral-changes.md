@@ -1,11 +1,7 @@
 ---
 title: "Behavioral Changes for Promoted Actions"
 description: The promoted action framework has been redesigned with Dynamics 365 Business Central 2022 release wave 2. 
-ms.custom: na
 ms.date: 10/01/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 --- 
@@ -27,7 +23,7 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, we int
 |If a hidden group contains actions with dynamic visibility and the visibility evaluates to `true` without the parent, then the actions will be ghosted during design mode even if the visibility has never been modified.| Actions with dynamic visibility were initially visible. Then, if the parent was hidden and because their visibility was never modified, they would disappear from the page.|
 
 
-## See also
+## Related information
 
 [Promoted Actions](devenv-promoted-actions.md)  
 [Actions in AL](devenv-actions-overview.md)  

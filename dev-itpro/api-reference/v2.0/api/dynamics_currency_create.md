@@ -3,11 +3,10 @@ title: CREATE currencies
 description: Creates a currency object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create currencies
@@ -28,7 +27,6 @@ POST businesscentralPrefix/companies({id})/currencies
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **currency**, the **currency** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **currencies** object.
@@ -84,7 +82,7 @@ Content-type: application/json
 Here is an example of the response. 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [currency](../resources/dynamics_currency.md)    
 [Get currency](dynamics_currency_Get.md)    

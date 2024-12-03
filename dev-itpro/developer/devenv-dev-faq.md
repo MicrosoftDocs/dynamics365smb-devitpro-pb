@@ -1,17 +1,17 @@
 ---
-title: "FAQ for Developing in AL"
-description: "Overview of frequently asked questions for development using the AL language."
+title: FAQ for Developing in AL
+description: Overview of frequently asked questions for development using the AL language.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 10/14/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/01/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
+ms.reviewer: solsen
 ---
 
-# FAQ for Developing in AL
+# FAQ for developing in AL
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 This topic contains a number of frequently asked questions and answers to these questions. 
 
@@ -43,7 +43,8 @@ When submitting an app for AppSource, you must make sure that it validates again
 
 To read about app identity and why it is important to keep certain settings for an app unchanged, see [App Identity](devenv-app-identity.md).
 
-## File APIs are not available in Extensions V2. What do I do?
+<!--
+## File APIs aren't available in Extensions V2. What do I do?
 
 Code that relies on temporary files must be rewritten to rely on `InStream` and `OutStream` types. Code that relies on permanent files must be rewritten to use another form of permanent storage.
 
@@ -53,13 +54,17 @@ For cloud solutions .NET interop is not available due to safety issues in runnin
 
 With the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you can find AL types that replace the most typical usages of .NET like HTTP, JSON, XML, StringBuilder, Dictionaries, and Lists. Many .NET usages can be replaced directly by the AL types resulting in much cleaner code. For more information, see [HTTP, JSON, TextBuilder, and XML API Overview](devenv-restapi-overview.md).
 
-For things that are not possible to achieve in AL code, the recommendation is to use Azure Functions to host the DLL or C# code previously embedded and call that service from AL.
+For things that are not possible to achieve in AL code, the recommendation is to use Azure Functions to host the DLL or C# code previously embedded and call that service from AL. -->
 
-## Extensions published from Visual Studio Code or created using Designer have disappeared from a sandbox environment. Why?
+## Extensions published from Visual Studio Code or created Use Designer have disappeared from a sandbox environment. Why?
 
-Extensions that have been published to a sandbox environment from Visual Studio Code or created using Designer are removed when the sandbox environment is updated or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available.
+Extensions that have been published to a sandbox environment from Visual Studio Code or created Use Designer are removed when the sandbox environment is updated or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available.
 
 If you have per-tenant extensions (PTEs) installed that depend on extensions published from Visual Studio Code, the per-tenant extensions will be removed too.
+
+If you have partner telemetry enabled, search for event id `LC0105`, which includes a short description of the reason for your environment update or relocation.
+
+In order to enable partner telemetry in your extension, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about this property, see [JSON files](devenv-json-files.md).
 
 For more information, see [Sandbox Environments](../administration/environment-types.md).
 
@@ -74,14 +79,15 @@ The first purpose can be achieved in Extensions by using the new properties adde
 
 The second purpose can be achieved by extending the Navigation Pane page and/or by adding Actions to other existing pages that can serve as a navigation starting point. For more information, see [Adding Menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md).
 
+<!--
 ## How do I upgrade Extensions V1 to Extensions V2?
 
 For information on upgrading, see the following topics:
-[Upgrading Extensions v2](devenv-upgrading-extensions.md) and [Converting from Extensions v1 to Extensions v2](devenv-upgrade-v1-to-v2-overview.md).
+[Upgrading Extensions v2](devenv-upgrading-extensions.md) and [Converting from Extensions v1 to Extensions v2](devenv-upgrade-v1-to-v2-overview.md). -->
 
 
-## See Also
+## Related information
 
-[Get Started with AL](devenv-get-started.md)  
-[Keyboard Shortcuts](devenv-keyboard-shortcuts.md)    
-[AL Development Environment](devenv-reference-overview.md)
+[Get started with AL](devenv-get-started.md)  
+[Keyboard shortcuts](devenv-keyboard-shortcuts.md)    
+[AL development environment](devenv-reference-overview.md)

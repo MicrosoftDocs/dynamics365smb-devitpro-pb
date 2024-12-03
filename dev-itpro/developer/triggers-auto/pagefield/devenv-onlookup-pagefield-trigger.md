@@ -1,20 +1,17 @@
 ---
-title: "OnLookup (Page Field) Trigger"
+title: "OnLookup (Page Field) trigger"
 description: "Runs in place of the normal lookup features for the current page."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/20/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnLookup (Page Field) Trigger
+# OnLookup (Page Field) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs in place of the normal lookup features for the current page.
@@ -65,7 +62,7 @@ You can use this trigger to write to the database.
 > [!NOTE]  
 > When a lookup is requested, the page field's **OnLookup** trigger is executed if it is defined. If no page field lookup trigger is defined, the [OnLookup (Field) Trigger](../field/devenv-onlookup-field-trigger.md) trigger on the table (if defined) replaces the system default lookup.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnLookup (Field) Trigger](../field/devenv-onlookup-field-trigger.md)  

@@ -1,10 +1,6 @@
 ---
 title: "XMLport Properties"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 1c8d76d0-27e6-409a-b7ec-057763c9d2c7
 author: SusanneWindfeldPedersen
@@ -222,7 +218,7 @@ C:\GitHub\dynamics365smb-devitpro\dev-itpro\developer\includes\properties_note.m
 
 --> 
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Table and Table Extension Properties](devenv-table-properties.md)  

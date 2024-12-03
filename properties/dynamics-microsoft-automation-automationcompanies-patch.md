@@ -6,7 +6,6 @@ author: henrikwh
 
 ms.topic: reference
 ms.devlang: na
-ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2020
 ms.author: solsen
@@ -40,14 +39,13 @@ If successful, this method returns a ```200 OK``` response code and a **automati
 **Request**
 
 Here is an example of the request.
-```json
+```http
 PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({id})/automationCompanies
 Content-type: application/json
 If-Match:*
 {
     "displayName": "My Company",
 }
-
 ```
 
 **Response**

@@ -1,14 +1,11 @@
 ---
-title: "Permissions Property"
+title: "Permissions property"
 description: "Sets whether an object has additional permission required to perform some operations on one or more tables."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 11/25/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -34,11 +31,13 @@ Sets whether an object has additional permission required to perform some operat
 
 ## Syntax
 
+The Permissions property allows you to set permissions for one or more objects.
+
 ```AL
-Permissions = TableData 1221 = rimd;
+Permissions = ObjectType ObjectIdentifier = PermissionValues [, ObjectType ObjectIdentifier = PermissionValues] ;
 ```
 
-## Values
+## Property values
 
 | Values   |Represents  |Description   |
 |----------|------------|---------------------------------------------|
@@ -47,6 +46,20 @@ Permissions = TableData 1221 = rimd;
 |M or m    |Modify      |Specifies direct (M) or indirect (m) modify permission.|
 |D or d    |Delete      |Specifies direct (D) or indirect (d) delete permission.|
 |X or x    |Execute     |Specifies direct (X) or indirect (x) execute permission.|
+
+
+## Example 
+
+The following AL code sets permissions to read/insert/modify/delete data in the table **MyTable** as well as permission to run the codeunit **MyCodeUnit**, open the page **MyPage**, and run the report **MyReport**.
+
+
+```AL
+Permissions = 
+     tabledata MyTable = RIMD,
+     codeunit MyCodeUnit = X,
+     page MyPage = X,
+     report MyReport = X
+```
 
   
 ## Remarks  
@@ -120,8 +133,8 @@ codeunit 50113 CreateCustomer
 > 
 > Do not use the **Permissions** property to give extra permissions to an object that you would like your users to be able to modify. These users might not have direct permission to perform these operations. This is why you should be careful when you use the **Permissions** property for tables and pages.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
-[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)  
-[Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions)
+[Create users according to licenses](/dynamics365/business-central/ui-how-users-permissions)  
+[Assign permissions to users and groups](/dynamics365/business-central/ui-define-granular-permissions)

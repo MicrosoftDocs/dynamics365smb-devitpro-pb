@@ -3,11 +3,10 @@ title: taxGroup resource type
 description: A tax group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # taxGroup resource type
@@ -60,7 +59,7 @@ Here is a JSON representation of the taxGroup resource.
 
 
 
-## See Also
+## Related information
 [GET taxGroup](../api/dynamics_taxGroup_Get.md)  
 [DELETE taxGroup](../api/dynamics_taxGroup_Delete.md)  
 [POST taxGroup](../api/dynamics_taxGroup_Create.md)  

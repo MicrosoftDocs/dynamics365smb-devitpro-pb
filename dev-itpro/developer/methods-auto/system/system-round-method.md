@@ -2,13 +2,10 @@
 title: "System.Round(Decimal [, Decimal] [, Text]) Method"
 description: "Rounds the value of a numeric variable."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -81,11 +78,15 @@ The following table displays some additional Round examples.
 |Number|Precision|Direction|Rounded number|  
 |------------|---------------|---------------|--------------------|  
 |1234.56789|100|=|1200|  
+|1234.56789|10|=|1230|  
+|1234.56789|1|=|1234|  
 |1234.56789|0.1|=|1234.6|  
 |1234.56789|0.001|=|1234.568|  
 |1234.56789|0.001|\<|1234.567|  
 |1234.56789|0.001|>|1234.568|  
 |-1234.56789|100|=|-1200|  
+|-1234.56789|10|=|-1230|  
+|-1234.56789|1|=|-1234|  
 |-1234.56789|0.1|=|-1234.6|  
 |-1234.56789|0.001|=|-1234.568|  
 |-1234.56789|0.001|\<|-1234.567|  
@@ -96,7 +97,7 @@ When you round down \('\<'\) a negative number, such as -1234.56789, it is round
 When you round up \('>'\) a negative number, such as -1234.56789, it is rounded up to -1234.568. However, -1234.568 is a mathematically smaller value than -1234.56789.  
 
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -1,14 +1,15 @@
 ---
-title: "Introducing the Dynamics 365 Business Central Mobile App"
-ms.custom: na
+title: Introducing the Dynamics 365 Business Central Mobile App
+description: Learn about the Dynamics 365 Business Central Mobile App and how it can help you access data from a tablet or a phone.
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviwer: solsen
 ---
+
 # Introducing the Dynamics 365 Business Central Mobile App
+
 The app displaying the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] is targeted at users in small and medium sized businesses that want to access data from a tablet or a phone. The main advantages of this offering are portability and flexibility, which allows end users to perform tasks when they are away from their desk. Having a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] solution that runs on a smaller device also brings it in the hands of many more users and your app is easy to distribute. 
 
 <!-- Some of the advantages of offering this solution are portability and flexibility, when the user is away from the desk, on the train, between meetings, passing time and so on.  
@@ -43,6 +44,6 @@ If you have existing page objects that you want to make available on [!INCLUDE[n
 ## Supported credential types  
 [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] support the same credential types as [!INCLUDE[nav_web](includes/nav_web_md.md)]. For more information, see [Authentication and Credential Types](../administration/users-credential-types.md).  
   
-## See Also  
+## Related information  
 [Getting Started Developing for the Dynamics 365 Business Central Mobile App](devenv-Getting-Started-Developing-business-central-mobile-App.md)   
 [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)

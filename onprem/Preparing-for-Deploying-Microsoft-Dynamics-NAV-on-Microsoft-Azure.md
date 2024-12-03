@@ -1,13 +1,8 @@
 ---
 title: "Preparing for Deploying Microsoft Dynamics NAV on Microsoft Azure"
 author: jswymer
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 71c910f8-2b3c-4dca-961a-832a5a8b60a3
 ms.author: jswymer
 ---

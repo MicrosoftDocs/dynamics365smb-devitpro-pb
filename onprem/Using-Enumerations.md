@@ -1,12 +1,7 @@
 ---
 title: "Using Enumerations"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: c959e566-734a-4966-a668-a1f813ff3488
 caps.latest.revision: 12
 ---
@@ -25,11 +20,10 @@ namespace Microsoft.Dynamics.Nav.EnumSample
       Blue,  
     }  
   }  
-}  
-
+}
 ```  
 
- .NET Framework interoperability supports symbolic names in enumerations. In C/AL code, enumerations are handled like static fields on the .NET Framework type.  
+.NET Framework interoperability supports symbolic names in enumerations. In C/AL code, enumerations are handled like static fields on the .NET Framework type.  
 
 ## Creating and Calling DotNet Variables for Enumerations in C/AL  
  You create DotNet variables for enumerations similar to other .NET Framework types. When you create a DotNet variable for an enumeration in the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], the enumeration name in the **.NET Type List** is preceded by a plus sign. The following illustration shows the **.NET Type List** for the enumeration in the previous code example.  

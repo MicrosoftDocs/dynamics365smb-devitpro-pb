@@ -2,13 +2,10 @@
 title: "Notification.Send() Method"
 description: "Sends the notification to the client, where it will display in the UI."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +20,6 @@ Sends the notification to the client, where it will display in the UI.
 ```AL
 [Ok := ]  Notification.Send()
 ```
-
 ## Parameters
 *Notification*  
 &emsp;Type: [Notification](notification-data-type.md)  
@@ -51,7 +47,7 @@ MyNotification.Scope := NotificationScope::LocalScope;
 MyNotification.Send;
 ```
 
-## See Also
+## Related information
 [Notification Data Type](notification-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

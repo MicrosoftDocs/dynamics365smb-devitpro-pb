@@ -3,7 +3,6 @@ title: Using Table Partitioning and Data Compression
 description: Learn how to use table partitioning and data compression to improve data access performance in Business Central online.
 ms.custom: bap-template
 ms.date: 06/14/2023
-ms.service: "dynamics365-business-central"
 ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer
 ms.author: jswymer
@@ -88,15 +87,15 @@ The following steps will partition the table on the**Posting Date** field, with 
 
 5. In the Transact-SQL Editor, partition table **My Ledger Entry** by using the previously defined partition scheme.
 
-    For illustration purposes, the extension ID in this example is `$11111111-aaaa-2222-bbbb-333333333333`.
+    For illustration purposes, the extension ID in this example is `$00001111-aaaa-2222-bbbb-3333cccc4444`.
     
     ```sql
-    ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333]  
-    DROP CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333$Key1]
+    ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$00001111-aaaa-2222-bbbb-3333cccc4444]  
+    DROP CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$00001111-aaaa-2222-bbbb-3333cccc4444$Key1]
     GO
     
-    ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333]
-    ADD CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333$Key1] PRIMARY KEY CLUSTERED
+    ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$00001111-aaaa-2222-bbbb-3333cccc4444]
+    ADD CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$00001111-aaaa-2222-bbbb-3333cccc4444$Key1] PRIMARY KEY CLUSTERED
     (
     -- Include all fields that are in the clustered index definition. Don't add or omit any fields.
     [Entry No_], [Posting Date]
@@ -117,6 +116,9 @@ However, extra CPU resources are required on the database server to compress and
 
 With the **CompressionType** property, you can configure row or page type compression or configure the table not to use compression. With these compression settings, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] table synchronization process will make changes to the SQL Server table, overwriting the current compression type, if any. You can choose to control data compression directly on SQL Server by setting the **CompressionType** property to **Unspecified**, in which case table synchronization process won't control the data compression.
 
+> [!NOTE]
+> In the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], tables are compressed with **CompressionType** set to **Page**.
+
 To evaluate whether a table is a good candidate to compress, you can use the stored procedure `sp_estimate_data_compression_savings` in SQL Server. For more information, see [sp_estimate_data_compression_savings (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql).
 
 Because SQL Server supports data compression on the partition level, you can combine SQL Server data compression with table partitioning to achieve flexible data archiving on historical parts of a large table, without having the CPU overhead on the active part of the table.
@@ -136,7 +138,7 @@ ALTER TABLE ADD CONSTRAINT constraint_name DEFAULT default_value FOR field_name
 
 The name of the default constraint isn't important, as long as it isn't used by another column in the database.
 
-## See Also
+## Related information
 
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)  
 [Table Keys](../developer/devenv-table-keys.md)  

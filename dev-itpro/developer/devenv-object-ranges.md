@@ -2,12 +2,11 @@
 title: Object ranges
 description: Description of the object ranges used for licensing in Business Central.
 author: SusanneWindfeldPedersen
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
-ms.date: 05/23/2022
+ms.date: 07/08/2024
+ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Object ranges in [!INCLUDE[prod_short](includes/prod_short.md)]
@@ -22,11 +21,11 @@ The following sections describe the different object ranges that you can find in
 
 ## 0-49,999
 
-This range is assigned to [!INCLUDE[prod_short](includes/prod_short.md)] base app functionality and must not be used in extensions or customizations.
+This range is assigned to [!INCLUDE[prod_short](includes/prod_short.md)] base app functionality and mustn't be used in extensions or customizations.
 
 ## 50,000-99,999
 
-This range is for customizations, and for test purposes. For [!INCLUDE [prod_short](includes/prod_short.md)] online, a partner can develop an extension tailored to the individual tenant to fit the needs. The partner will develop the extension either by using a sandbox tenant or by obtaining a Docker image. Once the development is done, the extension can be deployed to the individual tenant.
+This range is for customizations, and for test purposes. For [!INCLUDE [prod_short](includes/prod_short.md)] online, a partner can develop an extension tailored to the individual tenant to fit the needs. The partner develops the extension either by using a sandbox tenant or by obtaining a Docker image. Once the development is done, the extension can be deployed to the individual tenant.
 
 Also, use this range as part of training and similar, such as if you're using a sandbox tenant or a build of [!INCLUDE[prod_short](includes/prod_short.md)] on Docker.
 
@@ -44,10 +43,10 @@ Partners can obtain IDs in this range for extensions for [!INCLUDE[prod_short](i
 
 For more information, see [Get Started with Building Apps](readiness/get-started.md).
 
-Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [here](https://go.microsoft.com/fwlink/?LinkId=871590&clcid=0x409).
+Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [here](https://www.microsoft.com/licensing/docs/view/Licensing-Guides).
 
-## See Also
+## Related information
 
-[Get Started with Building Apps](readiness/get-started.md)  
-[Get Started with AL](devenv-get-started.md)  
-[Blog Post](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/17/which-object-ranges-can-we-use-with-microsoft-dynamics-365-business-central)
+[Get started with building apps](readiness/get-started.md)  
+[Get started with AL](devenv-get-started.md)  
+[Blog post](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/17/which-object-ranges-can-we-use-with-microsoft-dynamics-365-business-central)  

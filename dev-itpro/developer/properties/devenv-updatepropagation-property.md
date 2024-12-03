@@ -1,14 +1,11 @@
 ---
-title: "UpdatePropagation Property"
+title: "UpdatePropagation property"
 description: "Sets a value that specifies what happens when a main page with a subpage is updated."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +20,7 @@ Sets a value that specifies what happens when a main page with a subpage is upda
 -   Page System Part
 -   Page Chart Part
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -43,6 +40,6 @@ Sets a value that specifies what happens when a main page with a subpage is upda
 
 Use the **UpdatePropagation** property to update a main page total, when the amount on the subpage lines is updated. Add a `CurrPage.Update();` call, for example, in the OnValidate trigger on the subpage to have the **UpdatePropagation** property take effect.
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md) 

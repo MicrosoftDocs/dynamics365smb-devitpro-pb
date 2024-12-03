@@ -2,13 +2,10 @@
 title: "APIGroup Property (Page)"
 description: "Sets the group of the API endpoint that the page is exposed in."
 ms.author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # APIGroup Property (Page)
@@ -31,7 +28,7 @@ APIGroup = 'app1';
 > [!NOTE]  
 > The property **APIGroup** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](../devenv-api-pagetype.md).
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [Page Object](../devenv-page-object.md)  

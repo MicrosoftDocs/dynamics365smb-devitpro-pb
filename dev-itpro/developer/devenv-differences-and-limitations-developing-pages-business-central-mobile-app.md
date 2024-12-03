@@ -1,18 +1,19 @@
 ---
-title: "Differences and Limitations When Developing Pages for Mobile App"
+title: Differences and limitations when developing pages for the mobile app
 description: Describes differences and limitations when developing pages for the Dynamics 365 Business Central Mobile App for tablets and phones.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: solsen
-ms.suite: na
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: blrobl
 ms.author: brobledodiaz
 ---
-# Differences and Limitations When Developing Pages for the Business Central Mobile App
+
+# Differences and limitations when developing pages for the Business Central mobile app
+
 Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] is similar to developing for the [!INCLUDE[webclient](includes/webclient.md)]. However, there some natural limitations on tablets and phones, such as not having a physical keyboard and mouse, as well as a smaller screen.
 
-## Differences and limitations overview  
+## Differences and limitations overview
+
 The following table describes some of the most common differences and limitations that you might experience when developing for [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)].  
 
 |Concept|On Tablet|On Phone|Example|Recommendation/Remarks|  
@@ -36,9 +37,10 @@ The following table describes some of the most common differences and limitation
 |Scope of actions|Available.|Available, but there are some behavioral differences regarding the [Scope Property](properties/devenv-scope-action-property.md). Also, see [Defining Action Scope for Business Central Pages](devenv-defining-action-scope-for-pages.md). |||  
 |Automatic input focus on first editable field of a page|Not available. |Not available.|`Customer Card` page.<BR /><BR />In the Web client, focus will automatically be on the first editable field (such as the `Name` field), enabling you to change the value right away.<BR /><BR />In the Tablet or Phone client, this field will not be in focus; instead, you will have to manually select the field first in order to make changes.| The reason for this behavior is to prevent the in-app keyboard from initially displaying and occupying screen space.|   
 
-## See Also  
- [Displaying Data as Tiles](devenv-lists-as-tiles.md)   
- [Implementing the Camera in AL](devenv-implement-camera-al.md)     
- [Implementing the Location in AL](devenv-implement-location-al.md)  
- [Role Center Behaviors](devenv-role-center-behaviors.md)   
- [Defining Action Scope for Business Central Pages](devenv-defining-action-scope-for-pages.md)
+## Related information
+
+[Displaying data as tiles](devenv-lists-as-tiles.md)   
+[Implementing the camera in AL](devenv-implement-camera-al.md)     
+[Implementing the location in AL](devenv-implement-location-al.md)  
+[Role center behaviors](devenv-role-center-behaviors.md)   
+[Defining action scope for Business Central pages](devenv-defining-action-scope-for-pages.md)

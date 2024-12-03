@@ -4,12 +4,11 @@ description: Learn about how an internal admin and a delegated admin can get not
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, notifications
 ms.date: 04/12/2023
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Manage Tenant-Specific Notifications
@@ -61,7 +60,7 @@ Learn more about alerts on telemetry events [here](telemetry-overview.md).
 
 ##### Example: Grouped notification for available updates
 
-This Logic App runs every number of days (specified in deployment) and lists all updates made available to environments that emit telemetry to the specified Application Insights resource for the specified period. Administrators can use this to replace the many email notifications they would receive for each individual enviroment when set up as notification recipient.
+This Logic App runs every number of days (specified in deployment) and lists all updates made available to environments that emit telemetry to the specified Application Insights resource for the specified period. Administrators can use this to replace the many email notifications they would receive for each individual environment when set up as notification recipient.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FAvailableUpdatesNotification.json)
 
@@ -168,7 +167,7 @@ For more information about updates, see [Major Updates and Minor Updates for Bus
 
 If you end the relationship with a customer where you have set up your email address as a notification recipient, you must remove the email address while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
-## See also
+## Related information
 
 [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

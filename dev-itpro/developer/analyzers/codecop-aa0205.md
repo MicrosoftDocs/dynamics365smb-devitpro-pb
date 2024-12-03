@@ -2,13 +2,10 @@
 title: "CodeCop Warning AA0205"
 description: "Always initialize a variable before usage."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -30,14 +27,14 @@ var
     x: Integer;
     z: Integer;
 
-procedure Proc1();
+procedure Proc1()
 var
 begin
     Proc2(z);
     x := z;
 end;
 
-procedure Proc2(z: Integer);
+procedure Proc2(z: Integer)
 var
 begin
     z := 10;
@@ -50,14 +47,14 @@ var
     x: Integer;
     z: Integer;
 
-procedure Proc1();
+procedure Proc1()
 var
 begin
     Proc2(z);
     x := z;
 end;
 
-procedure Proc2(var z: Integer);
+procedure Proc2(var z: Integer)
 var
 begin
     z := 10;
@@ -96,7 +93,7 @@ Some variables need special initialization, for example, `List` is initialized u
 
 Initialization is possible using evaluate, for, `foreach` statements. If a variable is passed in a method through `var`, the rule considers it initialized in the method.
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

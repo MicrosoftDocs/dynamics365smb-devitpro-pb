@@ -3,11 +3,10 @@ title: companyInformation resource type
 description: A company information object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # companyInformation resource type
@@ -82,6 +81,6 @@ Here is a JSON representation of the companyInformation resource.
 
 
 
-## See Also
+## Related information
 [GET companyInformation](../api/dynamics_companyInformation_Get.md)  
 [PATCH companyInformation](../api/dynamics_companyInformation_Update.md)

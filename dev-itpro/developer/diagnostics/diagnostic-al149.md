@@ -2,13 +2,10 @@
 title: "Compiler Error AL0149"
 description: "There is an 'ELSE' statement without an 'IF' in property {0}."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,10 +16,11 @@ author: SusanneWindfeldPedersen
 
 There is an 'ELSE' statement without an 'IF' in property {0}.
 
+
 ## Description
 An 'ELSE' statement must be preceeded by an 'IF'.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

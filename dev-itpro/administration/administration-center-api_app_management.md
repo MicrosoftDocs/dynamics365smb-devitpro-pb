@@ -3,15 +3,13 @@ title: Business Central Admin Center API - App Management
 description: Learn about using the Business Central admin center API to manage apps.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# App Management
+# Business Central Admin Center API - App Management
 
 [!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
@@ -56,7 +54,7 @@ Installs an app on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
 ```
 
 ### Route Parameters
@@ -85,7 +83,7 @@ POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName
 > [!IMPORTANT]
 > By setting the `acceptIsvEula` property to `true`, you not only agree with ISV's end-user license terms (EULA) but also with these terms:
 >
-> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of AppSource is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://privacy.microsoft.com/privacystatement).** 
+> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of AppSource is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://go.microsoft.com/fwlink/?LinkId=521839) <!--(https://privacy.microsoft.com/privacystatement)-->.**
 
 <sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on AppSource. Links to these documents are typically under **Details + Support** > **Legal**. Or, if you can't find this information, contact the provider.
 
@@ -114,7 +112,7 @@ Example `400 Bad Request` response when dependent apps need to be installed firs
   "data": { // Any additional data for the error. For example, when "installOrUpdateNeededDependencies" in the request body was set to false, and there are dependencies that must be first installed or updated. 
     "requirements": [ // List of requirements you need to fulfil before you can run the request 
       { 
-        "appId": "1ed76016-b288-401c-92e1-75b2d47ff223", 
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888", 
         "name": "Contoso App", 
         "publisher": "Contoso", 
         "version": "16.0.32.0", 
@@ -133,7 +131,7 @@ Uninstalls an app from an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
 ```
 
 ### Route Parameters
@@ -179,7 +177,7 @@ Example `400 Bad Request` response when dependent apps need to be uninstalled fi
   "data": { // Any additional data for the error. For example, when "uninstallDependents" in the request body was set to false, and there are existing dependent apps that need to be uninstalled first. The list of requirements is all apps that depend on app 35601559-224a-47d5-8089-86ac88b2b995. 
     "requirements": [ // List of requirements you need to fulfil before you can run the request 
       { 
-        "appId": "1ed76016-b288-401c-92e1-75b2d47ff223", 
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888", 
         "name": "Contoso App", 
         "publisher": "Contoso", 
         "version": "16.0.32.0", 
@@ -195,7 +193,7 @@ Example `400 Bad Request` response when dependent apps need to be uninstalled fi
 Get information about apps that are installed on the environment.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps
 ```
 
 ### Route Parameters
@@ -229,7 +227,7 @@ Returns information about the apps installed on the environment.
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
 ### Route Parameters
@@ -270,7 +268,7 @@ Updates an app using an existing endpoint, but when new parameters in the reques
 
 ```
 Content-Type: application/json
-POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
 ### Route Parameters
@@ -304,7 +302,9 @@ POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName
   "targetAppVersion": "1.2.3.4", // Target version of the app on the tenant that will be installed during update.
   "status": "scheduled", // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped"
   "createdOn": "2021-03-22T15:44:57.9067589Z", // Date and time the request was created
-  "errorMessage": "" // Error message for failed operations
+  "errorMessage": "", // Error message for failed operations
+  "createdBy": "", // Email address if authenticated as user, App ID if authenticated as app
+  "canceledBy: "" // Empty value
 }
 ```
   
@@ -317,7 +317,7 @@ Example `400 Bad Request` response when dependent apps need to be updated first:
   "data": { // Any additional data for the error. For example, when when "installOrUpdateNeededDependencies" in the request body was set to false, and dependencies need to be installed or updated.  
     "requirements": [ // List of requirements you need to fulfil before you can run the request 
       { 
-        "appId": "1ed76016-b288-401c-92e1-75b2d47ff223", 
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888", 
         "name": "Contoso App", 
         "publisher": "Contoso", 
         "version": "16.0.32.0", 
@@ -328,12 +328,55 @@ Example `400 Bad Request` response when dependent apps need to be updated first:
 }
 ```
 
+## Cancel a scheduled app update
+
+Cancels an app update in scheduled state.
+
+```
+Content-Type: application/json
+POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update/cancel
+```
+
+### Route Parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment.
+
+`appId` - ID of the targeted app.
+
+### Body
+
+```
+{ 
+  "ScheduledOperationId": guid // Obtained when scheduling an update or by getting app operations for the environment
+}
+```
+
+### Responses (app operation) 
+
+200 OK, with Body, example:
+
+```
+{ 
+  "id": "35601559-224a-47d5-8089-86ac88b2b995", // ID of the operation used for tracking the update request
+  "type": "update", // Type of the operation. For this endpoint, it's "update".
+  "sourceAppVersion": "1.2.3.0", // Current version of app on the tenant.
+  "targetAppVersion": "1.2.3.4", // Target version of the app on the tenant that will be installed during update.
+  "status": "canceled", // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped"
+  "createdOn": "2021-03-22T15:44:57.9067589Z", // Date and time the request was created
+  "errorMessage": "", // Error message for failed operations
+  "createdBy": "", // Email address if authenticated as user, App ID if authenticated as app
+  "canceledBy: "" // Email address if authenticated as user, App ID if authenticated as app
+}
+```
+
 ## Get App Operations
 
 Gets information about app install, uninstall, and update operations for the specified app.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
 ```
 
 ### Route Parameters
@@ -419,7 +462,7 @@ You'll need the following information about Business Central and your Teams serv
     2. Select the resource for the Teams API connection to open it.
     3. Select **Edit API connection** > **Authorize**, then sign in with your credentials.
 
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

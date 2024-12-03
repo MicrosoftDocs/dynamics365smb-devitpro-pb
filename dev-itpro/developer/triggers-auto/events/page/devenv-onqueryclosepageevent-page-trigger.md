@@ -1,20 +1,17 @@
 ---
-title: "OnQueryClosePageEvent (Page) Trigger Event"
+title: "OnQueryClosePageEvent (Page) trigger event"
 description: "Executed after the OnQueryClosePage trigger, which is called as a page closes and before the OnClosePage trigger executes."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/20/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnQueryClosePageEvent (Page) Trigger Event
+# OnQueryClosePageEvent (Page) trigger event
 > **Version**: _Available or changed with runtime version 1.0._
 
 Executed after the OnQueryClosePage trigger, which is called as a page closes and before the OnClosePage trigger executes.
@@ -42,6 +39,6 @@ Specifies whether to the page can close. If this parameter is true, the code wil
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../../devenv-get-started.md)  
 [Developing Extensions](../../../devenv-dev-overview.md)   

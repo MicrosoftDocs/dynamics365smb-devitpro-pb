@@ -3,12 +3,9 @@ title: Assign a User to a Profile
 description: Use the User Personalization page to assign a user to a profile, and then fill in the User ID, Profile ID, Language ID, and Company fields.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
+ms.reviewer: solsen
 ---
 
 # Assign a User to a Profile
@@ -31,7 +28,7 @@ When you have created a profile, you can use the **User Personalization** page t
 > [!NOTE]  
 > The **Language ID** and **Company** values are overwritten by any user values when the user starts a session. 
   
-## See Also
+## Related information
 
 [Profile Object](devenv-profile-object.md)  
 [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)  

@@ -1,20 +1,17 @@
 ---
-title: "OnClosePage (Request Page Extension) Trigger"
+title: "OnClosePage (Request Page Extension) trigger"
 description: "Runs when a request page closes after the OnQueryClosePage trigger is run."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/05/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnClosePage (Request Page Extension) Trigger
+# OnClosePage (Request Page Extension) trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
 Runs when a request page closes after the OnQueryClosePage trigger is run.
@@ -41,7 +38,7 @@ This trigger is initiated by a user action, such as when the user chooses the **
 
 You can write to the database from this trigger.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnClosePage (Page) Trigger](../page/devenv-onclosepage-page-trigger.md)  

@@ -1,20 +1,17 @@
 ---
-title: "OnBeforePostDataItem (Report Extension Data Set Modify) Trigger"
+title: "OnBeforePostDataItem (Report Extension Data Set Modify) trigger"
 description: "Runs before the OnPostDataItem trigger of the base data item."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnBeforePostDataItem (Report Extension Data Set Modify) Trigger
+# OnBeforePostDataItem (Report Extension Data Set Modify) trigger
 > **Version**: _Available or changed with runtime version 7.1._
 
 Runs before the OnPostDataItem trigger of the base data item.
@@ -54,6 +51,6 @@ reportextension 50111 MyExtension extends "Customer - List"
 
 This trigger runs before the base object trigger [OnPostDataItem (Report Data Item) Trigger](../reportdataitem/devenv-onpostdataitem-reportdataitem-trigger.md).
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

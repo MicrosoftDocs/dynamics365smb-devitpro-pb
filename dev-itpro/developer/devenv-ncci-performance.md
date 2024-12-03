@@ -1,11 +1,7 @@
 ---
 title: "Nonclustered Columnstore Indexes (NCCI) and Performance"
 description: This article looks at the factors you must take into consideration when you deal with nonclustered columnstore indexes and performance. 
-ms.custom: na
 ms.date: 01/28/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -23,7 +19,7 @@ The factors that you must take into consideration when you deal with any perform
 > [!IMPORTANT]  
 > Remember to perform tests every time you make any changes to the NCCI structure. You must ensure that the changes that you have made don't cause problems in any other areas of the application. You must also ensure that your changes don't have a negative effect on performance.
   
-## See Also
+## Related information
 
 [NCCI Overview)](devenv-ncci-overview.md)  
 [NCCI and SQL Server](devenv-ncci-and-sql-server.md)  

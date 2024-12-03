@@ -1,12 +1,7 @@
 ---
 title: "How to: Open Databases"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ---
 # Open a Database
 In order to work in the application, you must always open a database and a company, in that order. After you have done this once, or if the choices are on the command line that starts the program, this will happen automatically when you choose a company. Therefore, you will only need to follow this procedure to open a different database than the one currently open.  

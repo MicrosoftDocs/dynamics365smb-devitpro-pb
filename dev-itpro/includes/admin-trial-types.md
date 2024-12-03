@@ -1,8 +1,9 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
 ms.date: 05/25/2022
-ms.author: edupont
+ms.author: jswymer
+ms.reviewer: jswymer
 ---
 Some types of trials can be extended beyond 30 days. The following table outlines the types of trials that you can offer prospects:
 

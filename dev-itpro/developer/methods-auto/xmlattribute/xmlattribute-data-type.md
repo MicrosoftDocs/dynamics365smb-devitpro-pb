@@ -1,24 +1,22 @@
 ---
-title: "XmlAttribute Data Type"
+title: "XmlAttribute data type"
 description: "Represents an XML attribute."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlAttribute Data Type
+# XmlAttribute Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents an XML attribute.
 
 
+## Static methods
 The following methods are available on the XmlAttribute data type.
 
 
@@ -28,6 +26,7 @@ The following methods are available on the XmlAttribute data type.
 |[Create(Text, Text, Text)](xmlattribute-create-string-string-string-method.md)|Creates an XmlAttribute node.|
 |[CreateNamespaceDeclaration(Text, Text)](xmlattribute-createnamespacedeclaration-method.md)|Creates an attribute that represents a namespace declaration.|
 
+## Instance methods
 The following methods are available on instances of the XmlAttribute data type.
 
 |Method name|Description|
@@ -55,6 +54,6 @@ The following methods are available on instances of the XmlAttribute data type.
 |[WriteTo(XmlWriteOptions, var Text)](xmlattribute-writeto-xmlwriteoptions-text-method.md)|Serializes and saves the current node to the given variable.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

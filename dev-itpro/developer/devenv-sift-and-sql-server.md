@@ -1,11 +1,7 @@
 ---
 title: "SIFT and SQL Server"
 description: Explains how SIFT in Business Central tables work with SQL Server.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -55,7 +51,7 @@ AND PostingDate>=?
 AND PostingDate<=?  
 ```  
 
-## See Also
+## Related information
 [SumIndexField Technology \(SIFT\)](devenv-sift-technology.md)  
 [Tuning and Tracing](devenv-sift-Tuning-and-Tracing.md)   
 [SIFT and Performance](devenv-SIFT-Performance.md)

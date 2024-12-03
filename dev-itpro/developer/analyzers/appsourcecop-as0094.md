@@ -2,13 +2,10 @@
 title: "AppSourceCop Warning AS0094"
 description: "Permission sets should not be defined in XML."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -53,7 +50,6 @@ permissionset 50130 MyPermissionSet
     Permissions = 
         tabledata "Floor Manager" = RIMD;
 } 
-
 ```
 
 The `RIMD` access allows access to **R**ead, **I**nsert, **M**odify, and **D**elete entries in the table. This can be modified by adding and removing letters corresponding to the first letter of the permission that you want to (dis)allow. This permission set can then be assigned to users/roles.
@@ -61,7 +57,7 @@ The `RIMD` access allows access to **R**ead, **I**nsert, **M**odify, and **D**el
 ## How to fix this diagnostic?
 You can convert XML permission sets to AL objects. For more information, see [Upgrading Permissions Sets and Permissions](../../upgrade/upgrade-permissions.md).
 
-## See Also
+## Related information
 [PermissionSet Object](../devenv-permissionset-object.md)
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  

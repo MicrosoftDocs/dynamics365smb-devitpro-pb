@@ -1,11 +1,7 @@
 ---
 title: AL reference guide
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 09/29/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 description: Explore the comprehensive AL Reference Guide for Dynamics 365 Business Central, detailing methods, method attributes, data types, properties, diagnostics, and triggers.
 ---
@@ -32,7 +28,7 @@ For more information about the [!INCLUDE[d365_dev_long_md](includes/d365_dev_lon
 - [Triggers](triggers-auto/devenv-triggers.md)  
 - [Diagnostics](diagnostics/diagnostics-overview.md)
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [AL Methods Overview](devenv-al-methods.md)  

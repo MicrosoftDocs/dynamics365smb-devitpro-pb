@@ -1,26 +1,23 @@
 ---
-title: "Scope Attribute"
+title: "Scope attribute"
 description: "Specifies the scope of a method."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# Scope Attribute
+# Scope attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
 Specifies the scope of a method.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -71,7 +68,7 @@ procedure MyProcedureForOnPrem()
 
 ```
   
-## See Also
+## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)  

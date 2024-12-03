@@ -1,17 +1,16 @@
 ---
-title: "Best Practices for AL code"
-description: "Best Practices for writing AL code for Business Central."
+title: Best practices for AL code
+description: Best practices for writing AL code for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/11/2023
-ms.reviewer: na
+ms.date: 11/07/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Best Practices for AL  
+# Best practices for AL  
 
-This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additional to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
+This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additive to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
 
 > [!TIP]  
 > Check out the great work that is going on at [https://alguidelines.dev/](https://alguidelines.dev/). New design patterns and best practices are being established, so join the discussions, and contribute through [GitHub](https://github.com/microsoft/alguidelines).
@@ -27,7 +26,7 @@ Each file name has object names with only characters [A-Za-z0-9], object type, a
 The CodeCop analyzer suggests that the object name is part of the file name, which is encouraged as a best practice. Adding any affixes to the file names is voluntary.
 
 > [!NOTE]  
-> If you are submitting an app to AppSource, you must follow the guidance in the [Technical Validation Checklist](../developer/devenv-checklist-submission.md).
+> If you're submitting an app to AppSource, you must follow the guidance in the [Technical validation checklist](../developer/devenv-checklist-submission.md).
 
 ### File naming notation
 
@@ -79,19 +78,19 @@ For the listed objects in the table, these examples show how to name the files.
 
 #### Table
 
-```
+```al
 table 70000000 MyPrefixSalesperson
 ```
 
 #### Page
 
-```
+```al
 page 70000000 MyPrefixSalesperson
 ```
 
 #### Action
 
-```
+```al
 actions
 {
     addafter(ApprovalEntries)
@@ -101,21 +100,47 @@ actions
 
 #### Codeunit
 
-```
+```al
 codeunit 70000000 MyPrefixSalesperson
+```
+
+## Copilot and action names
+
+Trailing whitespaces are allowed in action names, meaning that you won't get a compiler error. For example these names are accepted:
+
+```al
+group("CopilotActionGroup  ")
+{
+    action("Suggest Sales Lines   ")
+    {
+        // Code that generates sales lines suggestions
+    }
+}
+```
+
+However, these trailing whitespaces are trimmed internally and won't be recognized by Copilot. To ensure that Copilot works correctly with your feature, you must *avoid trailing spaces* in action names. Instead, write the code like this:
+
+```al
+group("CopilotActionGroup")
+{
+    action("Suggest Sales Lines")
+    {
+        // Code that generates sales lines suggestions
+    }
+}
 ```
 
 ## Formatting
 
 We recommend keeping your AL code properly formatted as follows:
 
-- Use all lowercase letters for reserved language keywords. Built-in methods and types are not included in this rule because they're written using Pascal case. 
+- Use all lowercase letters for reserved language keywords. Built-in methods and types aren't included in this rule because they're written using Pascal case. 
 - Use four spaces for indentation. 
 - Curly brackets are always on a new line. If there's one property, put it on a single line. 
 
 The following example illustrates these formatting rules. 
 
-```
+```al
 page 123 PageName
 {
     actions
@@ -145,7 +170,7 @@ page 123 PageName
 
 ```
 
-The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to automatically format their source code. For more information on how to use it, see [AL Formatter](../developer/devenv-al-formatter.md).
+The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to automatically format their source code. Learn more in [AL Formatter](../developer/devenv-al-formatter.md).
 
 ## Line length
 
@@ -159,7 +184,7 @@ Object names are prefixed. They start with the feature/group name, followed by t
 - `codeunit 123 "IntrastatDK Validation"`
 
 > [!NOTE]  
-> The "MS - " prefix is not required. 
+> The "MS - " prefix isn't required. 
 
 ## File structure
 
@@ -182,7 +207,7 @@ In AL, objects are referenced by their object name, not by their ID.
 
 ### Example
 
-```
+```al
 Page.RunModal(Page::"Customer Card", ...)
  
 var
@@ -200,13 +225,13 @@ For variables they must:
 Furthermore:
 
 - Field and variable names shouldn't include wildcard symbols, such as `%` and `&`. This might break features such as export using Excel or RapidStart. 
-- Name fields using aA-zZ and 0-9 and use Caption and xliff files to display the field appropriately. For more information, see [Working with Translation Files](../developer/devenv-work-with-translation-files.md).
+- Name fields using aA-zZ and 0-9 and use Caption and xliff files to display the field appropriately. For more information, see [Working with translation files](../developer/devenv-work-with-translation-files.md).
 - Using English as the language for naming improves the ability to troubleshoot issues that may arise. 
 
 
 ### Example
 
-```
+```al
 TempCustomer: Record Customer temporary;
 Vendor: Record Vendor; 
 ```
@@ -222,7 +247,7 @@ To declare a method, follow these guidelines:
 
 ### Example
  
-```
+```al
 local procedure MyProcedure(Customer: Record Customer; Int: Integer)
 begin
 end;
@@ -241,7 +266,7 @@ When calling a method, include one space after each command if you're passing mu
 
 ### Example
 
-```
+```al
 MyProcedure();
 MyProcedure(1);
 MyProcedure(1, 2); 
@@ -251,15 +276,15 @@ MyProcedure(1, 2);
 
 When you declare a variable or a parameter, the name of that variable or parameter must be immediately followed by a colon, then a single space, and then the type of the variable/parameter as illustrated in the example.
 
-```
+```al
 var
     Number: Integer;
 
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
 ```
 
-## See Also
+## Related information
 
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-[Rules and Guidelines for AL Code](apptest-overview.md)  
-[Using the Code Analysis Tool](../developer/devenv-using-code-analysis-tool.md)
+[Checklist for submitting your app](../developer/devenv-checklist-submission.md)  
+[Rules and guidelines for AL code](apptest-overview.md)  
+[Using the code analysis tool](../developer/devenv-using-code-analysis-tool.md)

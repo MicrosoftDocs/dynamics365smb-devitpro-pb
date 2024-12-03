@@ -1,11 +1,7 @@
 ---
 title: "Promoted (Action) Property"
 description: "Sets the value that indicates whether the selected action is elevated to a promoted category in the action bar."
-ms.custom: na
 ms.date: 07/08/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -72,7 +68,7 @@ For more information about the Promoted property used together with the Scope pr
 > [!NOTE] 
 > On [!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)] and [!INCLUDE[d365fin_phone_md](../includes/d365fin_phone_md.md)], only promoted actions are displayed.  
   
-## See Also  
+## Related information  
 
 [PromotedIsBig Property](devenv-promotedisbig-property.md)  
 [PromotedOnly Property](devenv-promotedonly-property.md)  

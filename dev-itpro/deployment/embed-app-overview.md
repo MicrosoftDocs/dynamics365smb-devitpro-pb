@@ -2,13 +2,10 @@
 title: "Embed app overview"
 author: jswymer
 description: Provides an overview of Embed App in Business Central
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Embed App Overview
@@ -53,7 +50,7 @@ The [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will promote the par
 - Name, image, and icon on the provisioning page of the Fixed Client Endpoint  
 - Splash screen of the client  
 - Title bar of the browser tab (for example, "Fabrikam Apples")  
-- A dedicated product tile, icon, and short marketing description in the Dynamics shell ([https://home.dynamics.com](https://home.dynamics.com))  
+- A dedicated product tile, icon, and short marketing description in the Dynamics shell ([https://www.microsoft365.com/](https://www.microsoft365.com/))  
 - In-product messages (such as pop-up errors, warnings, notifications)  
 
 ![Tiles with Embed App apps.](../media/embed-app-apps.png "Embed App apps")  
@@ -102,7 +99,7 @@ When a partner deploys a solution through the LCS portal, they can pick from the
 
 Any existing deployments, running on platform versions that are older than 3 updates, will enter a grace period of 30 days. And after that, if the deployment is not upgraded, it will be moved out of the standard SLA.  
 
-## See Also
+## Related information
 
 [Microsoft Responsibilities](microsoft-responsibilities.md)  
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  

@@ -1,14 +1,11 @@
 ---
-title: "CaptionClass Property"
+title: "CaptionClass property"
 description: "Controls the caption that is used in the label of a field in a database table or in the label of a control on a page."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/22/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,7 +16,7 @@ author: SusanneWindfeldPedersen
 Controls the caption that is used in the label of a field in a database table or in the label of a control on a page.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Label
 -   Page Field
 
@@ -40,7 +37,7 @@ When you set the **CaptionClass property** on a field, users can configure the c
 
 > [!NOTE]
 > `<Caption Area>` is the location of the caption you want to use. The `<Caption Area>` can be '50000', '50140', and so on. Or, it can be a code from among 1, 2, and 3, which are handled by the base application layer and have a special meaning.
-> - 1 is for using a Dimension as caption. 
+> - 1 is for using a Dimension as caption.
 > - 2 is for captions of fields that can include or not VAT. For example, if `CaptionClass = '2,0,Invoice Amount';`  the resulting caption in the UI will be **Invoice Amount Excl. VAT**. If `CaptionClass = '2,1,Invoice Amount';`  the resulting caption in the UI will be **Invoice Amount Incl. VAT**.
 > - 3 returns the `<Caption Expression>` string. In the example in the above section, "3" returns the `<Caption Expression>` that is **My awesome caption**.
 
@@ -51,9 +48,9 @@ When you set the **CaptionClass property** on a field, users can configure the c
 
 The `Caption Class` (codeunit 42) in the system application exposes two events; the `OnResolveCaptionClass` and the `OnAfterCaptionClassResolve` event.
 
-For more information, see the system [Caption Class](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md).
+For more information, see the system [Caption Class](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Caption%20Class).
 
-The Caption Class raises an `OnResolveCaptionClass` event for any other value of `<Caption Area>`. 
+The Caption Class raises an `OnResolveCaptionClass` event for any other value of `<Caption Area>`.
 
 ```al
 [IntegrationEvent(false, false)]
@@ -97,8 +94,8 @@ codeunit 50000 "MyCaptionClassMgmt"
 }
 ```
 
-## See Also
+## Related information
 
-[CaptionML Property](devenv-captionml-property.md)   
+[CaptionML Property](devenv-captionml-property.md)  
 [Caption Property](devenv-caption-property.md)  
-[CaptionClassTranslate Method](../methods-auto/system/system-captionclasstranslate-method.md) 
+[CaptionClassTranslate Method](../methods-auto/system/system-captionclasstranslate-method.md)  

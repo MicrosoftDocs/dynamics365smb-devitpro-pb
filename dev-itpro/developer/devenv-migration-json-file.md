@@ -2,13 +2,10 @@
 title: "Migration JSON file"
 description: "Description of the JSON file for data migration for AL in Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/22/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Migration JSON file
@@ -38,7 +35,7 @@ In the extension `app.json` file, ensure that `"target": "OnPrem"`. For more inf
 
 You now have the migration file in place for the data migration from one app project to another. The migration file will be used for performing the data migration steps. For more information, see [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md).
 
-## See Also
+## Related information
 
 [JSON Files](devenv-json-files.md)  
 [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md) 

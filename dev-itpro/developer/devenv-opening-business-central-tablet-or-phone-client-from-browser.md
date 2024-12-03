@@ -1,10 +1,7 @@
 ---
 title: "Opening the Business Central Tablet or Phone Client from a Browser"
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: blrobl
 ---
@@ -46,5 +43,5 @@ The steps in this article illustrates how you can open the [!INCLUDE[nav_tablet]
 
     -   **ProfileID** with the ID that is assigned to the profile in [!INCLUDE[d365_bus_cent_short](includes/d365_bus_cent_short_md.md)].  
 
-## See Also  
+## Related information  
  [Introducing the Dynamics 365 Business Central Mobile App](devenv-Introducing-business-central-Mobile-App.md)   

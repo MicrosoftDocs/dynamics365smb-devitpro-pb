@@ -1,19 +1,16 @@
 ---
-title: "Debugger Data Type"
+title: "Debugger data type"
 description: "Enables communication with a debugger."
 ms.author: solsen
-ms.custom: na
-ms.date: 05/11/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Debugger Data Type
+# Debugger Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Enables communication with a debugger.
@@ -21,6 +18,7 @@ Enables communication with a debugger.
 > [!NOTE]
 > This data type is supported only in Business Central on-premises.
 
+## Static methods
 The following methods are available on the Debugger data type.
 
 
@@ -52,6 +50,6 @@ The following methods are available on the Debugger data type.
 > [!NOTE]  
 > The Dynamics 365 Business Central Debugger is an example of a debugger application that is built using tables, pages, codeunits, and the AL debugger methods.
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

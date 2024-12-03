@@ -3,11 +3,10 @@ title: timeRegistrationEntry resource type
 description: A time registration entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # timeRegistrationEntry resource type
@@ -36,8 +35,6 @@ Represents a time registration entry in [!INCLUDE[prod_short](../../../includes/
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[employee](dynamics_employee.md)|employee |Gets the employee of the timeRegistrationEntry.|
-|[project](dynamics_project.md)|project |Gets the project of the timeRegistrationEntry.|
-|[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the timeRegistrationEntry.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the timeRegistrationEntry.|
 
 ## Properties
@@ -86,7 +83,7 @@ Here is a JSON representation of the timeRegistrationEntry resource.
 
 
 
-## See Also
+## Related information
 [GET timeRegistrationEntry](../api/dynamics_timeRegistrationEntry_Get.md)  
 [DELETE timeRegistrationEntry](../api/dynamics_timeRegistrationEntry_Delete.md)  
 [POST timeRegistrationEntry](../api/dynamics_timeRegistrationEntry_Create.md)  

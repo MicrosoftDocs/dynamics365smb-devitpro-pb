@@ -2,19 +2,16 @@
 title: "Report.WordLayout(Integer, InStream) Method"
 description: "Gets the Word report layout that is used on a report and returns it as a data stream."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/11/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/07/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.WordLayout(Integer, InStream) Method
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0 until version 14.0 where it was deprecated for the following reason: "Replace with layout selection and 'Report Layout List' lookup. See https://go.microsoft.com/fwlink/?linkid=2284102&clcid=0x409 for more information."_
 
 Gets the Word report layout that is used on a report and returns it as a data stream.
 
@@ -55,16 +52,34 @@ var
     result: Boolean;
 begin
     result := Report.WordLayout(ObjectId, layoutAsStream);
-    if result then begin
+    if result then
         // use the layout that now is available in the stream
-    end
     else
         // handle that no object exists with that id or that no Excel layout exists for that report
     ;
 end;
 ```
 
-## See Also
+If the report is known when you write the code, the safest way to avoid runtime errors is to use the scope (::) operator to reference the report object. This way you'll get a compile time error if the report doesn't exist. The example illustrates how to call WordLayout on the report MyReport using this technique:
+
+```AL
+var
+    layoutAsStream: InStream;
+    result: Boolean;
+begin
+    // if MyReport does not exist, then Report::MyReport will fail at compile time
+    result := Report.WordLayout(Report::MyReport, layoutAsStream);
+
+    if result then
+        // use the layout that now is available in the stream
+    else
+        // handle that no Excel layout exists for that report
+    ;
+end;
+```
+
+
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

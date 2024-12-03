@@ -2,13 +2,10 @@
 title: "Database.CurrentTransactionType([TransactionType]) Method"
 description: "Gets the current transaction type and sets a new type to be assigned."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -37,7 +34,6 @@ The type of transaction to be set for the next transaction.
 *[Optional] TransactionType*  
 &emsp;Type: [TransactionType](../transactiontype/transactiontype-option.md)  
 The type of transaction for the next transaction.
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -60,7 +56,7 @@ Using CurrentTransactionType to set a transaction type from within a currently a
 
 In Example 1, CurrentTransactionType is used to set the required behavior of the next transaction in the database.  
   
-```  
+```al
 //Example 1  
 CurrentTransactionType := TransactionType::UpdateNoLocks;  
 ```  
@@ -69,7 +65,7 @@ CurrentTransactionType := TransactionType::UpdateNoLocks;
 
  In Example 2, CurrentTransactionType is used to return the transaction type setting for the current transaction.  
   
-```  
+```al 
 //Example 2  
 if CurrentTransactionType = TransactionType::UpdateNoLocks then...  
 ```  
@@ -130,7 +126,7 @@ Report 2
 CurrentTransactionType := TransactionType::Update;  
 ```  
 
-## See Also
+## Related information
 
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

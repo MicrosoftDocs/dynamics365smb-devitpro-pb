@@ -1,14 +1,12 @@
 ---
 title: "Upgrading Version 15, 16, or 17 Base Application to Version 18"
 description: Describes how to upgrade an unmodified Business Central 15, 16, or 17 application to version 18
-ms.custom: na
+ms.custom: evergreen
 ms.date: 04/15/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Upgrading Microsoft System and Base Application to Version 18
@@ -507,7 +505,7 @@ Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance unti
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

@@ -1,14 +1,12 @@
 ---
-title: dimensionSetEntry resource type
-description: A dimension set entry object in Dynamics 365 Business Central.
+title: dimensionSetEntry resource type (Beta)
+description: A dimension set entry object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/11/2022
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # dimensionSetEntry resource type (Beta)
@@ -65,5 +63,5 @@ Here is a JSON representation of the dimensionSetEntry resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET dimensionSetEntry](../api/dynamics_dimensionsetentry_get.md)

@@ -4,7 +4,7 @@ description: Provides an overview of Business Central 2023 Release Wave 2 upgrad
 ms.custom: bap-template
 ms.date: 08/14/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+ms.service: dynamics-365-op
 ms.topic: overview
 ms.author: jswymer
 author: jswymer
@@ -56,7 +56,7 @@ From these articles, use the links in the table of contents to view more depreca
 
 For information about migrating an on-premises solution to online, see [Migrate to Business Central Online from Business Central On-premises](/dynamics365/business-central/dev-itpro/administration/migrate-business-central-on-premises).
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

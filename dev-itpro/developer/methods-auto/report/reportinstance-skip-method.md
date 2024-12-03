@@ -2,13 +2,10 @@
 title: "Report.Skip() Method"
 description: "Skips the current iteration of the current report or XmlPort."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -33,14 +30,17 @@ An instance of the [Report](report-data-type.md) data type.
 
 ## Remarks 
  
- The Skip method allows you to conditionally skip processing of the current report or XMLport. If the processing occurs inside a loop, the processing continues with the next record after the Skip method is called.  
+The Skip method allows you to conditionally skip processing of the current report or XMLport. If the processing occurs inside a loop, the processing continues with the next record after the Skip method is called.  
 
- A typical situation in which you will use SKIP is when you want to retrieve records from a related table by using values in the current record for forming a filter. If the values in the current record already indicate that no records from the related table will be retrieved, there is no need to perform this processing and you can use SKIP to avoid the processing.  
+A typical situation in which you will use SKIP is when you want to retrieve records from a related table by using values in the current record for forming a filter. If the values in the current record already indicate that no records from the related table will be retrieved, there is no need to perform this processing and you can use SKIP to avoid the processing.
+
+> [!NOTE]
+> The Skip method still calls remaining triggers for the current record, but the record is omitted from the dataset.
 
 ## Example  
- The following example shows how to use the Skip method to skip processing the current record if the balance field of the record is zero. Processing of records will continue until a record that has a balance of 0 is encountered.
+The following example shows how to use the Skip method to skip processing the current record if the balance field of the record is zero. Processing of records will continue until a record that has a balance of 0 is encountered.
 
-```  
+```al
 var
     Balance: Decimal;
 begin
@@ -51,7 +51,7 @@ begin
 end;
 ```  
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

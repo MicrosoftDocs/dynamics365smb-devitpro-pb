@@ -1,17 +1,14 @@
 ---
-title: Simple List Page Example
+title: Simple list page example
 description: "Provides AL code for a simple list type page"
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
-# Simple List Page Code Example
+# Simple list page code example
 
 The AL code in this article creates a simple list page that displays records from an existing table.
 
@@ -117,13 +114,13 @@ page 50111 SampleCustomerList
         }
     }
 }
-
 ```
 
-## See Also
+## Related information
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
-[Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md)  
+[Add pages and reports to Tell me](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  

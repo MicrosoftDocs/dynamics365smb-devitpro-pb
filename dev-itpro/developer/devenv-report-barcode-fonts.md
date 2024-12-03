@@ -2,13 +2,10 @@
 title: "Barcode Fonts with Business Central Online"
 description: "Describes the barcode fonts available with Business Central Online."
 author: jswymer
-ms.custom: na
 ms.date: 10/29/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Barcode Fonts with Business Central Online
@@ -57,7 +54,7 @@ IDAutomation also provides evaluation (demo) fonts for trial and test purposes. 
 
 When you're applying barocode font in the report layout for a Business Central online production environment, be sure to use the purchased font name; not the evaluation font name. If you use the evaluation font name, the barcode won't render. Refer to font specifications linked above to see a list of purchased font names.
 
-## See Also
+## Related information
 
 [Adding Barcodes to Reports](devenv-report-add-barcodes.md)  
 [Request Pages](devenv-request-pages.md)  

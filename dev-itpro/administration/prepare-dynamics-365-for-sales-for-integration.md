@@ -1,13 +1,12 @@
 ---
-title: "Preparing for Dynamics 365 for Sales for Integration"
-ms.custom: na
+title: Preparing for Dynamics 365 for Sales for Integration
+description: Learn how to set up and configure Dynamics 365 Sales for integrating with Business Central.
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
+ms.reviewer: solsen
 ---
+
 # Preparing Dynamics 365 Sales for Integration
 
 This article describes how to set up and configure [!INCLUDE[crm_md](../developer/includes/crm_md.md)] for integrating with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Complete the following tasks:  
@@ -83,5 +82,5 @@ For more information, see [System Requirements for Business Central](../deployme
 
 -->
 
-## See Also  
+## Related information  
 [Connecting On-Premises Versions](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#connecting-on-premises-versions)

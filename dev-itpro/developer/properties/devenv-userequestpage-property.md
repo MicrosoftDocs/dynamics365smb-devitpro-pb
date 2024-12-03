@@ -1,14 +1,11 @@
 ---
-title: "UseRequestPage Property"
+title: "UseRequestPage property"
 description: "Sets whether a request page is presented to the user."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,6 +38,6 @@ If `UseRequestPage` is **false**, then a request page is not shown. The user can
   
 You can override the setting of the `UseRequestPage` property at runtime by setting the *ReqWindow* parameter of the [Run (Report) Method](../methods-auto/report/report-run-method.md), [RunModal (Report) Method](../methods-auto/report/report-runmodal-method.md), or [Run (XMLport) Method](../methods-auto/xmlport/xmlport-run-method.md).
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  

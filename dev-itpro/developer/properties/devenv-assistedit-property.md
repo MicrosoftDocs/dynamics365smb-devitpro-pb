@@ -1,14 +1,11 @@
 ---
-title: "AssistEdit Property"
+title: "AssistEdit property"
 description: "Sets assist-edit capabilities for a text box."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -36,6 +33,6 @@ AssistEdit = true;
 ## Remarks  
  You can add AL code in the [OnAssistEdit Trigger](../triggers-auto/pagefield/devenv-onassistedit-pagefield-trigger.md) to change the default assist-edit behavior.  
 
-## See Also  
+## Related information  
  [Lookup Property](devenv-lookup-property.md)   
  [DrillDown Property](devenv-drilldown-property.md)

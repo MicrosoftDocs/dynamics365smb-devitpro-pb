@@ -1,25 +1,23 @@
 ---
-title: "BigText Data Type"
+title: "BigText data type"
 description: "Handles large text documents."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# BigText Data Type
+# BigText Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Handles large text documents.
 
 
 
+## Instance methods
 The following methods are available on instances of the BigText data type.
 
 |Method name|Description|
@@ -39,7 +37,7 @@ The following methods are available on instances of the BigText data type.
 
 This data type cannot be shown in a message window or be seen in the Debugger. The maximum length of a BigText variable is 2,147,483,647 characters and this corresponds to 2 GB. You can use the BigText methods to manipulate a BigText variable, for example to extract part of a BigText variable or to add a text string to a BigText variable. The normal string methods cannot be used with a BigText variable.  
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

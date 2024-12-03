@@ -1,14 +1,11 @@
 ---
-title: "ValidateTableRelation Property"
+title: "ValidateTableRelation property"
 description: "Sets whether to validate a table relationship."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets whether to validate a table relationship.
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -46,8 +43,8 @@ If you set the ValidateTableRelation property to **false**, then you should also
 
 Whether the property is set to **true** or **false**, as a user types data in the field, a lookup opens and shows a filtered list of entries that match what was typed. The difference is how the lookup behaves:
 
-- When **true**, the entry that best matches what the user has typed is automatically selected in the lookup. Pressing the Tab or Enter key will save the selected entry. If there's no entry that matches what the user has typed, the empty lookup stays open. Pressing Tab or Enter when there's no match causes a validation error.
-- When **false**, no entry is automatically selected in the lookup - focus stays on the field. Pressing Tab or Enter will save whatever value the user has entered so far, letting the user enter free text. If there's no entry that matches what the user has typed, the lookup closes. To select an entry in the lookup, the user has to do it manually, for example, by pressing the down arrow to move focus into the lookup.
+- When **true**, the entry that best matches what the user has typed is automatically selected in the lookup. Selecting the <kbd>Tab</kbd> or <kbd>Enter</kbd> key will save the selected entry. If there's no entry that matches what the user has typed, the empty lookup stays open. Selecting <kbd>Tab</kbd> or <kbd>Enter</kbd> when there's no match causes a validation error.
+- When **false**, no entry is automatically selected in the lookup - focus stays on the field. Selecting <kbd>Tab</kbd> or <kbd>Enter</kbd> will save whatever value the user has entered so far, letting the user enter free text. If there's no entry that matches what the user has typed, the lookup closes. To select an entry in the lookup, the user has to do it manually, for example, by selecting the down arrow to move focus into the lookup.
 
 > [!NOTE]
 > The behavior of the lookup when the ValidateTableRelation property is set to **false** was changed in Business Central 2020 release wave 1 (runtime 9.0). In earlier versions, the lookup has a slightly different behavior. When typing in the field, focus switches to an entry in the lookup. Also, the lookup stays open even if there's no match to what is typed in the field.
@@ -55,6 +52,6 @@ Whether the property is set to **true** or **false**, as a user types data in th
 > [!TIP]
 > If the field isn't part of a key, using the [OnAfterLookup (page field) trigger](../triggers-auto/pagefield/devenv-onafterlookup-pagefield-trigger.md) can be useful way to resolve the right record when a user picks something from a lookup that's not a key.
 
-## See Also  
+## Related information  
 
 [TestTableRelation Property](devenv-testtablerelation-property.md)

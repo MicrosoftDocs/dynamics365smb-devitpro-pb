@@ -1,17 +1,14 @@
 ---
-title: Testing the advanced sample extension
+title: Test the advanced sample extension
 description: Includes test code for the advanced example extension.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 12/03/2024
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Testing the advanced sample extension
+# Test the advanced sample extension
 
 This walkthrough builds on the advanced sample extension, which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample CustomerRewards extension.
 
@@ -26,7 +23,7 @@ For more information, see [Get started with the Container Sandbox Development En
 - [Visual Studio Code](https://code.visualstudio.com/Download)   
 - The [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al) for Visual Studio Code
 
-## Identifying the areas of the extension that need to be tested 
+## Identify the areas of the extension that need to be tested 
 
 Before writing tests for your extension, you need to identify all the areas of the extension that need to be tested.  
 
@@ -53,7 +50,7 @@ In the sample test, we consider the following:
 
 - Each test also verifies that the extension works for a user that doesn't have SUPER permissions. 
 
-## Writing the tests
+## Write the tests
 
 We first create a new project (CustomerRewardsTest) for the tests. You're required to separate the CustomerRewards extension and the tests into separate projects.  
 
@@ -70,7 +67,7 @@ Our CustomerRewardsTest project is referencing objects from the CustomerRewards 
   ...  
   "dependencies": [ 
     { 
-      "appId": "c228bdcf-7112-480b-a832-da81971b6feb", 
+      "appId": "00001111-aaaa-2222-bbbb-3333cccc4444", 
       "name": "CustomerRewards", 
       "publisher": "Microsoft", 
       "version": "1.0.0.0" 
@@ -111,7 +108,7 @@ In order to install the Application Test Toolkit:
 1. Open the BCContainerHelper prompt found on the Desktop. You see a list of functions that you can run on the container.
 2. Run the `Import-TestToolkitToBCContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
 
-```
+```powershell
 Import-TestToolkitToBCContainer -containerName <name-of-container> 
 ```
 
@@ -123,7 +120,8 @@ Without further configuration, the Import-TestToolkitToBCContainer and New-BCCon
 
 - `-includeTestLibrariesOnly` installs the Test Framework and the Test Libraries only. Beside the Test Framework, this option includes functionality that is shared between base application tests.
 
-## Describing your tests 
+## Describe your tests
+
 To help you design the relevant tests for your functionality, you can write scenarios that outline what you want to test, and you can write test criteria in the GIVEN-WHEN-THEN format. By adding comments based on feature, scenario, and GIVEN-WHEN-THEN, you add structure to your test code and make tests readable. 
 
 The following sections provide an overview of the tags that we recommend you to use. 
@@ -179,7 +177,7 @@ codeunit 50102 MockCustomerRewardsExtMgt
 
     // Mocks the response text for testing success and failure scenarios 
 
-    procedure MockActivationResponse(Success: Boolean); 
+    procedure MockActivationResponse(Success: Boolean)
     begin 
         if Success then 
             DummyResponseTxt := DummySuccessResponseTxt 
@@ -191,7 +189,7 @@ codeunit 50102 MockCustomerRewardsExtMgt
     // OnGetActivationCodeStatusFromServerSubscriber in Customer Rewards Ext. Mgt from handling 
     // the OnGetActivationCodeStatusFromServer event when it is raised  
 
-    procedure Setup(); 
+    procedure Setup()
     var 
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 
     begin 
@@ -204,7 +202,7 @@ codeunit 50102 MockCustomerRewardsExtMgt
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Customer Rewards Ext. Mgt.", 'OnGetActivationCodeStatusFromServer', '', false, false)] 
 
-    local procedure MockOnGetActivationCodeStatusFromServerSubscriber(ActivationCode: Text); 
+    local procedure MockOnGetActivationCodeStatusFromServerSubscriber(ActivationCode: Text)
     var 
         ActivationCodeInfo: Record "Activation Code Information"; 
         ResponseText: Text; 
@@ -230,7 +228,7 @@ codeunit 50102 MockCustomerRewardsExtMgt
 
     // Mocks making calls to external service 
 
-    local procedure MockGetHttpResponse(ActivationCode: Text; var ResponseText: Text): Boolean; 
+    local procedure MockGetHttpResponse(ActivationCode: Text; var ResponseText: Text): Boolean
     begin 
         if ActivationCode = '' then 
             exit(false); 
@@ -256,13 +254,13 @@ To create tests that can be automated, you must handle cases when user interacti
 
 |Function Type|Syntax example|Purpose|
 |-------------|-------|-------|
-|MessageHandler |<br>`[MessageHandler]` </br> `procedure MessageHandler(Msg : Text[1024]);`|This handler is called when a message function is invoked in the code. The parameter type, **Text**,  contains the text of the function.|
-|ConfirmHandler |<br>`[ConfirmHandler]` </br> `procedure ConfirmHandlerNo(Question: Text[1024]; var Reply: Boolean);`|This handler is called when a confirm function is invoked in the code. The parameter type, **Text**,  contains the text of the function and the parameter **Reply** if the response to confirm is *yes* or *no*.|
-|StrMenuHandler |<br>`[StrMenuHandler]` </br> `procedure StrMenuHandler(Option: Text[1024]; var Choice: Integer; Instruction: Text[1024]);`|This handler is called when a StrMenu function is invoked in code. The parameter type, **Text**,  contains the text of the function and **Choice** is the option chosen in the StrMenu. **Options** is the list of the different option values and **Instruction** is the leading text.|
-|PageHandler |<br>`[PageHandler]` </br> `procedure MappingPageHandler(var MappingPage: TestPage 1214);`|This handler is called when a nonmodal page is invoked in the code. **TestPage** is the specific page in this case.|
-|ModalPageHandler |<br>`[ModalPageHandler]` </br> `procedure DevSelectedObjectPageHandler(var DevSelectedObjects: TestPage 89015);`|This handler is called when a modal page is invoked in the code. **TestPage** is the specific page in this case.|
-|ReportHandler |<br>`[ReportHandler]` </br> `procedure VendorListReportHandler(var VendorList: Report 301);`|This handler is called when a report is invoked in the code. **Report** is the specific report in this case.| 
-|RequestPageHandler |<br>`[RequestPageHandler]` </br> `procedure SalesInvoiceReportRequestPageHandler(var SalesInvoice: TestRequestPage 206);`|This handler is called when a report is invoked in the code.  **TestRequestPage** refers to the specific report ID.| 
+|MessageHandler |<br>`[MessageHandler]` </br> `procedure MessageHandler(Msg : Text[1024])`|This handler is called when a message function is invoked in the code. The parameter type, **Text**,  contains the text of the function.|
+|ConfirmHandler |<br>`[ConfirmHandler]` </br> `procedure ConfirmHandlerNo(Question: Text[1024]; var Reply: Boolean)`|This handler is called when a confirm function is invoked in the code. The parameter type, **Text**,  contains the text of the function and the parameter **Reply** if the response to confirm is *yes* or *no*.|
+|StrMenuHandler |<br>`[StrMenuHandler]` </br> `procedure StrMenuHandler(Option: Text[1024]; var Choice: Integer; Instruction: Text[1024])`|This handler is called when a StrMenu function is invoked in code. The parameter type, **Text**,  contains the text of the function and **Choice** is the option chosen in the StrMenu. **Options** is the list of the different option values and **Instruction** is the leading text.|
+|PageHandler |<br>`[PageHandler]` </br> `procedure MappingPageHandler(var MappingPage: TestPage 1214)`|This handler is called when a nonmodal page is invoked in the code. **TestPage** is the specific page in this case.|
+|ModalPageHandler |<br>`[ModalPageHandler]` </br> `procedure DevSelectedObjectPageHandler(var DevSelectedObjects: TestPage 89015)`|This handler is called when a modal page is invoked in the code. **TestPage** is the specific page in this case.|
+|ReportHandler |<br>`[ReportHandler]` </br> `procedure VendorListReportHandler(var VendorList: Report 301)`|This handler is called when a report is invoked in the code. **Report** is the specific report in this case.| 
+|RequestPageHandler |<br>`[RequestPageHandler]` </br> `procedure SalesInvoiceReportRequestPageHandler(var SalesInvoice: TestRequestPage 206)`|This handler is called when a report is invoked in the code.  **TestRequestPage** refers to the specific report ID.| 
 
 You must create a specific handler for each page that you want to handle. Any unhandled UI in the test methods of the test codeunit causes a failure of the test.  
 
@@ -313,8 +311,7 @@ Finally, to verify that the customer got the correct reward points and level, we
 There are many more areas that we look at in the sample test. See the full codeunit below for the rest of the tests. 
 
 ```AL
-codeunit 50103 "Customer Rewards Test" 
-
+codeunit 50103 "Customer Rewards Test"
 { 
     // [FEATURE] [Customer Rewards] 
 
@@ -335,7 +332,7 @@ codeunit 50103 "Customer Rewards Test"
 
     [Test] 
 
-    procedure TestOnInstallLogic(); 
+    procedure TestOnInstallLogic()
     var 
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 
         CustomerRewardsInstallLogic: Codeunit "Customer Rewards Install Logic"; 
@@ -360,7 +357,7 @@ codeunit 50103 "Customer Rewards Test"
 
     [Test] 
 
-    procedure TestCustomerRewardsWizardTermsPage(); 
+    procedure TestCustomerRewardsWizardTermsPage()
     var 
         CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard"; 
 
@@ -391,7 +388,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerRewardsWizardActivationPageErrorsWhenNoActivationCodeEntered(); 
+    procedure TestCustomerRewardsWizardActivationPageErrorsWhenNoActivationCodeEntered()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
         CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard"; 
@@ -418,7 +415,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerRewardsWizardActivationPageErrorsWhenShorterActivationCodeEntered(); 
+    procedure TestCustomerRewardsWizardActivationPageErrorsWhenShorterActivationCodeEntered()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
         CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard"; 
@@ -444,7 +441,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerRewardsWizardActivationPageErrorsWhenLongerActivationCodeEntered(); 
+    procedure TestCustomerRewardsWizardActivationPageErrorsWhenLongerActivationCodeEntered()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
         CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard"; 
@@ -470,7 +467,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerRewardsWizardActivationPageErrorsWhenInvalidActivationCodeEntered(); 
+    procedure TestCustomerRewardsWizardActivationPageErrorsWhenInvalidActivationCodeEntered()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
         CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard"; 
@@ -497,7 +494,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerRewardsWizardActivationPageDoesNotErrorWhenValidActivationCodeEntered(); 
+    procedure TestCustomerRewardsWizardActivationPageDoesNotErrorWhenValidActivationCodeEntered()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
         CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard"; 
@@ -524,7 +521,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestRewardsLevelListPageDoesNotOpenWhenNotActivated(); 
+    procedure TestRewardsLevelListPageDoesNotOpenWhenNotActivated()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
         RewardLevelListTestPage: TestPage "Rewards Level List"; 
@@ -546,7 +543,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestRewardsLevelListPageOpensWhenActivated(); 
+    procedure TestRewardsLevelListPageOpensWhenActivated()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
         RewardLevelListTestPage: TestPage "Rewards Level List"; 
@@ -569,7 +566,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestRewardLevelsActionExistsOnCustomerListPage(); 
+    procedure TestRewardLevelsActionExistsOnCustomerListPage()
     var 
         CustomerListTestPage: TestPage "Customer List"; 
 
@@ -590,7 +587,7 @@ codeunit 50103 "Customer Rewards Test"
 
     [HandlerFunctions('CustomerRewardsWizardModalPageHandler')] 
 
-    procedure TestRewardLevelsActionOnCustomerListPageOpensCustomerRewardsWizardWhenNotActivated(); 
+    procedure TestRewardLevelsActionOnCustomerListPageOpensCustomerRewardsWizardWhenNotActivated()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
         CustomerListTestPage: TestPage "Customer List"; 
@@ -615,7 +612,7 @@ codeunit 50103 "Customer Rewards Test"
     [Test] 
 
     [HandlerFunctions('RewardsLevelListlPageHandler')] 
-    procedure TestRewardLevelsActionOnCustomerListPageOpensRewardsLevelListPageWhenActivated(); 
+    procedure TestRewardLevelsActionOnCustomerListPageOpensRewardsLevelListPageWhenActivated()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
         CustomerListTestPage: TestPage "Customer List"; 
@@ -640,7 +637,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerCardPageHasRewardsFields(); 
+    procedure TestCustomerCardPageHasRewardsFields()
     var 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
         CustomerCardTestPage: TestPage "Customer Card"; 
@@ -663,7 +660,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestNewCustomerHasZeroRewardPointsAndNoRewardLevel(); 
+    procedure TestNewCustomerHasZeroRewardPointsAndNoRewardLevel()
     var 
         Customer: Record Customer; 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
@@ -692,7 +689,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerHasCorrectRewardPointsAfterPostedSalesOrders(); 
+    procedure TestCustomerHasCorrectRewardPointsAfterPostedSalesOrders()
     var 
         Customer: Record Customer; 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
@@ -724,7 +721,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerHasNoRewardLevelAfterPostedSalesOrders(); 
+    procedure TestCustomerHasNoRewardLevelAfterPostedSalesOrders()
     var 
         Customer: Record Customer; 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
@@ -761,7 +758,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerHasBronzeRewardLevelAfterPostedSalesOrders(); 
+    procedure TestCustomerHasBronzeRewardLevelAfterPostedSalesOrders()
     var 
         Customer: Record Customer; 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
@@ -794,7 +791,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerHasSilverRewardLevelAfterPostedSalesOrders(); 
+    procedure TestCustomerHasSilverRewardLevelAfterPostedSalesOrders()
     var 
         Customer: Record Customer; 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
@@ -836,7 +833,7 @@ codeunit 50103 "Customer Rewards Test"
     end; 
 
     [Test] 
-    procedure TestCustomerHasGoldRewardLevelAfterPostedSalesOrders(); 
+    procedure TestCustomerHasGoldRewardLevelAfterPostedSalesOrders()
     var 
         Customer: Record Customer; 
         CustomerRewardsExtMgt: Codeunit "Customer Rewards Ext. Mgt."; 
@@ -880,14 +877,14 @@ codeunit 50103 "Customer Rewards Test"
         VerifyCustomerRewardLevel(CustomerCardTestPage.RewardLevel.Value, GoldLevelTxt); 
     end; 
 
-    local procedure OpenCustomerRewardsWizardActivationPage(VAR CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard"); 
+    local procedure OpenCustomerRewardsWizardActivationPage(VAR CustomerRewardsWizardTestPage: TestPage "Customer Rewards Wizard")
     begin 
         CustomerRewardsWizardTestPage.OpenView; 
         CustomerRewardsWizardTestPage.EnableFeature.SetValue(true); 
         CustomerRewardsWizardTestPage.ActionNext.Invoke; 
     end; 
 
-    local procedure Initialize(); 
+    local procedure Initialize()
     var 
         ActivationCodeInfo: Record "Activation Code Information"; 
         RewardLevel: Record "Reward Level"; 
@@ -902,7 +899,7 @@ codeunit 50103 "Customer Rewards Test"
         MockCustomerRewardsExtMgt.Setup; 
     end; 
 
-    local procedure ActivateCustomerRewards(); 
+    local procedure ActivateCustomerRewards()
     var 
         ActivationCodeInfo: Record "Activation Code Information"; 
 
@@ -914,7 +911,7 @@ codeunit 50103 "Customer Rewards Test"
         ActivationCodeInfo.Insert; 
     end; 
 
-    local procedure CreateAndPostSalesOrder(SellToCustomerNo: Code[20]); 
+    local procedure CreateAndPostSalesOrder(SellToCustomerNo: Code[20])
     var 
         SalesHeader: Record "Sales Header"; 
         SalesLine: Record "Sales Line"; 
@@ -929,7 +926,7 @@ codeunit 50103 "Customer Rewards Test"
         LibrarySales.PostSalesDocument(SalesHeader, true, true); 
     end; 
 
-    local procedure AddRewardLevel(Level: Text; MinPoints: Integer); 
+    local procedure AddRewardLevel(Level: Text; MinPoints: Integer)
     var 
         RewardLevel: Record "Reward Level"; 
 
@@ -945,30 +942,29 @@ codeunit 50103 "Customer Rewards Test"
         end; 
     end; 
 
-    local procedure VerifyCustomerRewardLevel(ExpectedLevel: Text; ActualLevel: Text); 
+    local procedure VerifyCustomerRewardLevel(ExpectedLevel: Text; ActualLevel: Text)
     begin 
         Assert.AreEqual(ExpectedLevel, ActualLevel, 'Reward Level should be the same.'); 
     end; 
  
-    local procedure VerifyCustomerRewardPoints(ExpectedPoints: Integer; ActualPoints: Integer); 
+    local procedure VerifyCustomerRewardPoints(ExpectedPoints: Integer; ActualPoints: Integer)
     begin 
         Assert.AreEqual(ExpectedPoints, ActualPoints, 'Reward Points should be the same.'); 
     end; 
 
     [ModalPageHandler] 
-    procedure CustomerRewardsWizardModalPageHandler(var CustomerRewardsWizard: TestPage "Customer Rewards Wizard"); 
+    procedure CustomerRewardsWizardModalPageHandler(var CustomerRewardsWizard: TestPage "Customer Rewards Wizard")
     begin 
     end; 
 
     [PageHandler] 
-    procedure RewardsLevelListlPageHandler(var RewardsLevelList: TestPage "Rewards Level List"); 
+    procedure RewardsLevelListlPageHandler(var RewardsLevelList: TestPage "Rewards Level List")
     begin 
     end; 
 } 
-
 ``` 
 
-At this point you can publish and run your tests on your tenant by pressing Ctrl+F5. 
+At this point you can publish and run your tests on your tenant by selecting <kbd>Ctrl</kbd>+<kbd>F5</kbd>. 
 
 ## Run the tests
 
@@ -989,7 +985,7 @@ You can now see all the test methods from your test codeunits.
 Let us look at what to do if you have a failing test. To create a failing test, we'll modify the **SetDefaultCustomerRewardsExtMgtCodeunit** method in codeunit 50100 **Customer Rewards Install Logic** to the following: 
 
 ```AL
-procedure SetDefaultCustomerRewardsExtMgtCodeunit(); 
+procedure SetDefaultCustomerRewardsExtMgtCodeunit()
     var 
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 
 
@@ -1006,7 +1002,7 @@ procedure SetDefaultCustomerRewardsExtMgtCodeunit();
 ``` 
 Now, anytime the **SetDefaultCustomerRewardsExtMgtCodeunit** method in the install codeunit is run, the **Customer Rewards Ext. Mgt. Codeunit ID** in the **Customer Rewards Mgt. Setup** table is set to 0. 
 
-Press Ctrl+F5 to publish the updated tests to your tenant and then run them.
+  Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to publish the updated tests to your tenant and then run them.
 ![Publish Test.](media/PublishTest.png)
 
 The test TestOnInstallLogic should now have a Failure result with the error message:  
@@ -1034,7 +1030,7 @@ When you go into the SetDefaultCustomerRewardsExtMgtCodeunit method, codeunit 50
 ### Conclusion
 At this point, the Customer Rewards sample extension can be published and installed on your sandbox. 
 
-## See Also  
+## Related information  
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  

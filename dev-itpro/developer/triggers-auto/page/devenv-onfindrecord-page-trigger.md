@@ -1,20 +1,17 @@
 ---
-title: "OnFindRecord (Page) Trigger"
+title: "OnFindRecord (Page) trigger"
 description: "Overrides the default page behavior and enables you to specify which record you want to display when the page opens."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnFindRecord (Page) Trigger
+# OnFindRecord (Page) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Overrides the default page behavior and enables you to specify which record you want to display when the page opens.
@@ -50,7 +47,7 @@ Text or code value with the following options:
 
 By default, open pages display the last record shown when the user exited the page. Use this trigger to override the default behavior and display the first record, last record, or a specific record as defined in the `Rec` variable.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnFindRecord (Request Page) Trigger](../requestpage/devenv-onfindrecord-requestpage-trigger.md)

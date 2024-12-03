@@ -2,13 +2,10 @@
 title: "Dialog.Open(Text [, var Any,...]) Method"
 description: "Opens a dialog window."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,6 +41,9 @@ Use these optional parameters to specify variables for field1, field2, and so on
 
 ## Remarks
   
+> [!NOTE]  
+> The use of a backslash (`\`) to initiate a new line is not applicable to progress dialogs that are displayed during the Generation or Regeneration process of a PromptDialog page. For more information, see [The PromptDialog page type](../../devenv-page-type-promptdialog.md).
+
 Dialog windows that are opened by an object are closed when the object terminates.  
   
  Dialog windows are automatically sized to hold the longest line of text and the total number of lines.  
@@ -110,7 +110,7 @@ end;
   
 The dialog window opens and displays the progress indicator and percentage.  
 
-## See Also
+## Related information
 [Dialog Data Type](dialog-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

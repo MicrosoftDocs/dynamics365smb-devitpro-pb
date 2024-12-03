@@ -1,24 +1,22 @@
 ---
-title: "MediaSet Data Type"
+title: "MediaSet data type"
 description: "Encapsulates media, such as images, in application database tables."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/06/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# MediaSet Data Type
+# MediaSet Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Encapsulates media, such as images, in application database tables.
 
 
+## Static methods
 The following methods are available on the MediaSet data type.
 
 
@@ -26,6 +24,7 @@ The following methods are available on the MediaSet data type.
 |-----------|-----------|
 |[FindOrphans()](mediaset-findorphans-method.md)|Discovers all orphaned media sets. Orphaned media sets are media sets that are not referenced by any other table.|
 
+## Instance methods
 The following methods are available on instances of the MediaSet data type.
 
 |Method name|Description|
@@ -41,7 +40,7 @@ The following methods are available on instances of the MediaSet data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

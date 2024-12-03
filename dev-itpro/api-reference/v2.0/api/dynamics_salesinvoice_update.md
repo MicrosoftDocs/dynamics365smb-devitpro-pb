@@ -5,11 +5,10 @@ description: Updates a sales invoice object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Update salesInvoices
@@ -119,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesinvoice](../resources/dynamics_salesinvoice.md)    
 [Get salesinvoice](dynamics_salesinvoice_Get.md)    

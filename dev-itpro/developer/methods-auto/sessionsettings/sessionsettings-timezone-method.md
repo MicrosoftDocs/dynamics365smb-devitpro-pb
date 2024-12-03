@@ -2,13 +2,10 @@
 title: "SessionSettings.TimeZone([Text]) Method"
 description: "Gets or sets the time zone property in a SessionSettings object."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -39,7 +36,6 @@ Specifies the time zone property in the SessionsSettings object. The value must 
 *[Optional] TimeZone*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The time zone set in the SessionSettings object.
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -63,7 +59,7 @@ end;
 ```  
 
 
-## See Also
+## Related information
 
 [SessionSettings Data Type](sessionsettings-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

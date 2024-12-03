@@ -2,13 +2,10 @@
 title: "AppSourceCop Error AS0018"
 description: "A procedure that belongs to the public API cannot be removed, because it will break dependent extensions calling this procedure."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -148,7 +145,7 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the public procedure `MyProcedure` has been renamed to `MyRenamedProcedure`. This is not a breaking change because this procedure couldn't be referenced by other extensions.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

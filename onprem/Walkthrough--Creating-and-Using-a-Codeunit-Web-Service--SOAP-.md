@@ -1,10 +1,6 @@
 ---
 title: "Creating and Using a Codeunit Web Service (SOAP)"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ---
 # Creating and Using a Codeunit Web Service (SOAP)
@@ -31,7 +27,7 @@ codeunit 50110 Letters
 
     end;
 
-    procedure Capitilize(inputstring: Text[250]) outputstring: Text[250];
+    procedure Capitilize(inputstring: Text[250]) outputstring: Text[250]
     var
         myInt: Integer;
     begin
@@ -41,7 +37,6 @@ codeunit 50110 Letters
     var
         myInt: Integer;
 }
-
 ```
 
   

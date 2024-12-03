@@ -1,11 +1,7 @@
 ---
 title: Azure Key Vaults with Business Central
 description: Provides an overview of Azure key vaults with Business Central extensions.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 author: jswymer
 ---
@@ -46,9 +42,9 @@ The app key vault secret process has two operations: *initialization* and *retri
 
 For more information, see [App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md).
 
-## See Also  
+## Related information  
 
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
 [Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
 [App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md)  
-[Configuring Business Central Server - Azure Key Vault Extensions](../administration/configure-server-instance.md#keyvault)  
+[Configuring Business Central Server - Azure Key Vault Extensions](../administration/configure-server-instance.md#azure-key-vault-client-identity-and-extension-settings)  

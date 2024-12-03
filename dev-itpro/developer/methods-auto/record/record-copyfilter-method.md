@@ -2,13 +2,10 @@
 title: "Record.CopyFilter(Any, Any) Method"
 description: "Copies the filter that has been set for one field and applies it to another field."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,7 +41,7 @@ The field from which the filter will be copied.
 The filter is copied and remains in the assigned group number. For example: `Rec.CopyFilter(FromRec);`
 disregards the current filter group on both `Rec` and `FromRec`, and copies the filter in `FromRec` (regardless of group number) into the same filter group assignment on `Rec`.
 
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

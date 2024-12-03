@@ -3,13 +3,10 @@ title: "Profile Properties"
 description: "This topic lists properties that apply to profiles specifically."
 
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Profile Properties
@@ -27,7 +24,7 @@ The following article lists properties that apply to [Profiles](../devenv-profil
 |[Customizations](devenv-customizations-property.md) | Profiles |
 |[Caption](devenv-caption-property.md) | Profiles |
 
-## See also
+## Related information
 
 [Codeunit Properties](devenv-codeunit-properties.md)  
 [Page Properties](devenv-page-property-overview.md)  

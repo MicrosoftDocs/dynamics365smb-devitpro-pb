@@ -2,13 +2,10 @@
 title: "System.ApplicationPath() Method"
 description: "Returns the path of the directory where the executable file for the product is installed."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -46,7 +43,7 @@ The string cannot contain more than 255 characters.
 
 If this method is called from an application that is running on a [!INCLUDE[d365_bus_central_md](../../includes/d365_bus_central_md.md)] Application Server, it returns the path of the directory where the [!INCLUDE[d365_bus_central_md](../../includes/d365_bus_central_md.md)] Application Server is installed.
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

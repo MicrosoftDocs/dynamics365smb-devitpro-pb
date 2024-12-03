@@ -1,20 +1,17 @@
 ---
-title: "OnAfterGetRecord (Request Page Extension) Trigger"
+title: "OnAfterGetRecord (Request Page Extension) trigger"
 description: "Runs after a record is retrieved from a table but before it is displayed to the user."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterGetRecord (Request Page Extension) Trigger
+# OnAfterGetRecord (Request Page Extension) trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
 Runs after a record is retrieved from a table but before it is displayed to the user.
@@ -42,7 +39,7 @@ Within the trigger, the `Rec` variable will refer to the record just read.
   
 If there is an error in the trigger code, then the page is closed.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAfterGetRecord (Page) Trigger](../page/devenv-onaftergetrecord-page-trigger.md)  

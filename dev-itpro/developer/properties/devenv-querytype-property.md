@@ -1,14 +1,11 @@
 ---
-title: "QueryType Property"
+title: "QueryType property"
 description: "Sets the type of query to create."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +18,7 @@ Sets the type of query to create.
 ## Applies to
 -   Query
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -37,7 +34,7 @@ Sets the type of query to create.
 QueryType = API;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Query Object](../devenv-query-object.md)

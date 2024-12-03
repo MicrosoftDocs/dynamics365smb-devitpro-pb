@@ -1,11 +1,7 @@
 ---
 title: "Using OData with Queries That are Set with a Top Number of Rows"
 description: Learn about using queries that are set with a top number of rows.
-ms.custom: na
 ms.date: 05/26/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Using OData with Queries That are Set with a Top Number of Rows
@@ -21,6 +17,6 @@ Typically, the **TopNumberOfRows** property or **TopNumberOfRows** method are us
 
 For information about how to change the **Max Page Size** setting, see [Configuring Business Central Server](../administration/configure-server-instance.md) and [Server-Driven Paging in OData Web Services](Server-Driven-Paging-in-OData-Web-Services.md).
 
-## See Also
+## Related information
 
 [Basic Page Operations](Basic-Page-Operations.md)

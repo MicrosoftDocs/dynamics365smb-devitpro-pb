@@ -1,14 +1,11 @@
 ---
-title: "PreviewMode Property"
+title: "PreviewMode property"
 description: "Specifies how the report opens when you preview it."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +18,7 @@ Specifies how the report opens when you preview it.
 ## Applies to
 -   Report
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -43,6 +40,6 @@ In the **Report – Properties** window, in the **PreviewMode** field, specify h
 
 Regardless of your choice, users can change the display mode in the **Print Preview** window. For example, if you choose the default mode, users can choose the **Print Layout** button. However, if the AL code for the report uses the PREVIEW function to disable printing from the preview, then users cannot change the display mode to print layout.  
 
-## See Also  
+## Related information  
 
 [Preview Method (Report)](../methods-auto/report/reportinstance-preview-method.md)

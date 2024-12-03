@@ -1,14 +1,11 @@
 ---
-title: "PasteIsValid Property"
+title: "PasteIsValid property"
 description: "Sets whether inserting records into this table using the paste command is enabled."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -40,7 +37,7 @@ If records are usually inserted in the table through an external code unit funct
   
 The [OnInsert Trigger](../triggers-auto/table/devenv-oninsert-table-trigger.md) of the table is executed when a record is inserted by pasting.  
   
-## See Also  
+## Related information  
 
 [OnInsert Trigger](../triggers-auto/table/devenv-oninsert-table-trigger.md)
 [Properties](devenv-properties.md)

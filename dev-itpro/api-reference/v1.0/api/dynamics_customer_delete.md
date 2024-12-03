@@ -3,13 +3,12 @@ title: (v1.0) Delete customers
 description: (v1.0) Deletes a customers object from Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete customers (v1.0)
@@ -54,7 +53,7 @@ HTTP/1.1 204 No Content
 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 

@@ -2,13 +2,11 @@
 title: AL code navigation
 description: This article describes how to use the Go To Definition feature when debugging the AL code in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 05/23/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/01/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # AL code navigation
@@ -31,13 +29,13 @@ From runtime 5.2 and onwards, **Go to Definition** will resolve sources from the
 
 The following conditions still apply:
 
-- **Go to Definition** is forward only. It's due to how Visual Studio Code handles preview documents (DAL files). There's no backward navigation support for preview files within Visual Studio Code. This means that if you navigate from your AL file to the `Customer` DAL source, and from there to the `Customer List` DAL source, and you issue a backward navigation (**Alt+Left arrow**), you'll get back to the AL file and not what you would have expected; the `Customer` DAL source.
+- **Go to Definition** is forward only. It's due to how Visual Studio Code handles preview documents (DAL files). There's no backward navigation support for preview files within Visual Studio Code. This means that if you navigate from your AL file to the `Customer` DAL source, and from there to the `Customer List` DAL source, and you issue a backward navigation (<kbd>Alt</kbd>+Left arrow), you'll get back to the AL file and not what you would have expected; the `Customer` DAL source.
 
 - Transitive references can only be resolved if the symbol app that defines the reference is a dependency on the project that contains the entry point for the **Go to Definition** symbol. For example, assume that you are in `HelloWorld.al` and want to **Go to Definition** on the `Car` table defined in the `Car.app`, which is a dependency on your app. Then navigation will open the `CarTable.dal` preview file. And assume that from here you want to **Go to Definition** on `CarDistributor` table defined in the `CarDistributor.app`, which is a dependency on `Car.app`, but *not* a dependency on the `HelloWorld.app`. In this case, the source code **Go to Definition** won't work.
 
 For more information about code navigation in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved).
 
-## See also  
+## Related information  
 
 [Developing extensions in AL](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  

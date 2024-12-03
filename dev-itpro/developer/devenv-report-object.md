@@ -1,17 +1,15 @@
 ---
-title: "Report Object"
-description: "The report object in AL for Business Central allows to create a new report."
+title: Report object
+description: The report object in AL for Business Central allows to create a new report.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 09/04/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-template
+ms.date: 09/16/2024
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Report Object
+# Report object
 
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.
 
@@ -28,6 +26,46 @@ If you want to modify an existing report, for example, add new columns, add to t
 
 [!INCLUDE[intelli_shortcut](includes/query_as_a_report_datasource.md)]
 
+## Report syntax
+
+A report object consists of properties, a dataset section, and optionally sections for request page, layouts, and code. The order in which the sections appear matters. The following example illustrates the ordering:
+
+```AL
+report ObjectId ReportName
+{
+    // report properties such as 
+    UsageCategory = ReportsAndAnalysis;
+    ApplicationArea = All;
+
+    dataset {}
+   
+    // requestpage section is optional  
+    requestpage {} 
+
+    // rendering section is optional, but recommended for reports that have a layout
+    rendering {} 
+    
+    // optionally, add AL code here
+}
+```
+
+## Snippet support
+
+Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
+[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+## Report properties
+You can control the way the AL runtime and client work on the report by setting properties on the report object. Some popular properties are:
+
+- [AdditionalSearchTerms](properties/devenv-additionalsearchterms-property.md) - helps users when searching for the report in Tell Me search. 
+- [Caption](properties/devenv-caption-property.md) - specifies the report title as shown on request pages, Tell-me search, report/role explorer, and when users bookmark the report to their role centers.
+- [UsageCategory](properties/devenv-usagecategory-property.md) - determines how the report is shown in report/role explorer. 
+- [AllowScheduling](properties/devenv-allowscheduling-property.md) - allows the report to be run in the background.  
+- [DataAccessIntent](properties/devenv-dataaccessintent-property.md) - allows the AL runtime to read data from a secondary database, if present.
+
+For a list of all properties that you can set on the report object, see the AL language reference article [Report, Report Fields, and Report Extension Properties](properties/devenv-report-property-overview.md).
+
 ## Report layouts
 You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word and are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery. One report can contain multiple report layout definitions. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
 
@@ -39,12 +77,30 @@ In the following, you can read about properties of the different layout types.
 | RDL | Pro-developer layout experience (not for end-users.) <br> Mostly needed for document reports. Use this layout type when you need pixel-perfect outputs for printing. <br> Supports printing from the request page. | 
 | Word | Low-code layout experience. Some expert end-users can work with XML and tags. <br> Mostly needed for document reports. <br> Supports printing from the request page.  | 
 
+## Report labels
 
-## Snippet support
+Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
 
-Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+For texts that are present as captions on table fields in dataset columns, use the [IncludeCaption](properties/devenv-includecaption-property.md) property to include them in the dataset. For more information, see [IncludeCaption property](properties/devenv-includecaption-property.md). 
 
-[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+You define report labels for static texts that are not present as captions in dataset columns inside the `labels` control of a report object, as shown in the following code sample.
+
+```AL
+labels
+{
+  LabelName1 = 'Label Text1', Comment='Foo', MaxLength=999, Locked=true;
+  LabelName2 = 'Label Text2', Comment='Foo', Locked=false;
+} 
+```
+
+All of the different layout types (Excel, Word, or RDL) support using label data. For more information, see:
+- [Report labels in Excel layouts](./devenv-howto-excel-report-layout.md#report-labels-in-excel-layouts).
+- [Report labels in Word layouts](./devenv-howto-report-layout.md#report-labels-in-word-layouts).
+- [Report labels in RDL layouts](./devenv-howto-rdl-report-layout.md#report-labels-in-rdl-layouts).
+
+For a code example on how to use report labels for an RDL layout, see [Walkthrough: Designing a Report from Multiple Tables](devenv-walktrough-designing-reports-multiple-tables.md).
+
+For more information about labels, see [Working with labels](devenv-using-labels.md).
 
 ## Report example
 
@@ -53,9 +109,11 @@ The following example is a report that prints the list of customers. The report 
 ```AL
 report 50103 "Customer List"
 {
-  CaptionML=ENU='Customer List';
-  DefaultLayout = RDLC; // if Word use WordLayout property
-  RDLCLayout = 'MyRDLReport.rdl';
+  Caption = 'Customer List';
+  AdditionalSearchTerms = 'Sales, Sold';
+  UsageCategory = ReportsAndAnalysis;
+  AllowScheduling = true;
+  DataAccessIntent = ReadOnly;
 
   dataset
   {
@@ -219,8 +277,28 @@ report 50103 "Customer List"
 
   labels
   {
-      LabelName = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
+      Label1 = 'Label Text', Comment = 'Foo', MaxLength = 999, Locked = true;
   }
+
+  rendering 
+  {
+    layout(LayoutExcelPivot)
+    {
+      Type = Excel;
+      Caption = 'Customer list (analyze)';
+      Summary = 'Customer list for analysis in Excel';
+      LayoutFile = 'CustomerListExcel.xlsx';
+    }
+
+    layout(CustomerListPrintLayout)
+    {
+      Type = RDLC;
+      Caption = 'Customer list (print)';
+      Summary = 'Customer list in print layout';
+      LayoutFile = 'CustomerListRDL.rdl';
+    }
+  } 
+
 
   trigger OnPreReport();
   var
@@ -251,14 +329,31 @@ report 50103 "Customer List"
 
 It's possible to schedule a report to run at your desired date and time by using **AllowScheduling** property. By setting the property to *true*, you'll get the **Schedule** action button to set the date and time for your report. To learn more about scheduling a report, see [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md) and [Schedule a report](/dynamics365/business-central/ui-work-report#ScheduleReport).
 
-## See also
+## Report limits 
+
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. Examples of limits are: 
+- The maximum number of rows that can be processed in a report.
+- The maximum number of documents that can be merged in a report using a Word layout.
+- The maximum execution time that it can take to generate a report.
+
+If any of these limits are reached, then the report is cancelled. If a report gets cancelled, you get an event in telemetry. For more information, see [Telemetry for report generation cancelled](../administration/telemetry-reports-trace.md#cancellation-report-generation).
+
+For more information on report limits in [!INCLUDE[prod_short](includes/prod_short.md)] and how they are configured in the online service, see [Report limits in Business Central](../administration/operational-limits-online.md#Reports).
+
+For more information on how to configure report limits in [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, see [Server settings for reports](../administration/configure-server-instance.md#Reports).
+
+> [!NOTE]
+> For Excel layouts and the ability to get report data in Excel without a layout, you also need to take Excel limits into consideration. Learn more in [Excel limits](../administration/operational-limits-online.md#Excel).
+
+## Related information
 
 [Report Extension Object](devenv-report-ext-object.md)  
 [Using request pages with reports](devenv-request-pages-for-reports.md)  
-[Report datatype](methods-auto/report/report-data-type.md)  
+[Report datatype (AL reference)](methods-auto/report/report-data-type.md)  
 [Report Properties](properties/devenv-report-properties.md)  
 [How users can schedule a report](/dynamics365/business-central/ui-work-report#ScheduleReport.md)  
 [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md)   
+[IncludeCaption property](properties/devenv-includecaption-property.md)   
 [Defining a Report Dataset](devenv-report-dataset.md)  
 [Request Pages](devenv-request-pages.md)  
 [Adding Help Links from Reports](devenv-adding-help-links-from-pages-tables-xmlports.md)  

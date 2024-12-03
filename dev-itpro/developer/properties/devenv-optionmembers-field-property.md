@@ -1,12 +1,9 @@
 ---
 title: "OptionMembers Property (Table field)"
-ms.custom: na
 ms.date: 12/29/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # OptionMembers Property (Table field)
@@ -31,7 +28,7 @@ field(2; OptionField; option)
 
 Setting the `OptionMembers` property is necessary to enable the `OptionCaptionML` property. For more information, see [OptionCaptionML Property](devenv-optioncaptionml-property.md).
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Report Object](../devenv-report-object.md)     

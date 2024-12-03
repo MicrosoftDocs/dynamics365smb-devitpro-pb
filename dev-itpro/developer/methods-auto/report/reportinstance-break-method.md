@@ -2,13 +2,10 @@
 title: "Report.Break() Method"
 description: "Exits from a loop or a trigger in a data item trigger of a report or XmlPort."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -36,12 +33,15 @@ An instance of the [Report](report-data-type.md) data type.
 
  Compare this with the [QUIT Method \(Report, XMLport\)](../report/reportinstance-quit-method.md).  
 
+> [!NOTE]
+> BREAK still calls remaining triggers for the current record, but the record is omitted from the dataset.
+
 > [!TIP]  
->  You can also use the [AL BREAK Statement](../../devenv-al-control-statements.md) to exit an iteration or loop. The difference is that the BREAK statement does not terminate the trigger. It just exits the loop.  
+> You can also use the [AL BREAK Statement](../../devenv-al-control-statements.md) to exit an iteration or loop. The difference is that the BREAK statement does not terminate the trigger. It just exits the loop.  
 
 ## Example  
 
-```  
+```al
 var
     MyVar: Integer;
     Text000: Label "The variable is now %1.";
@@ -59,7 +59,7 @@ end;
 
  When you run the previous code, the loop will end when MyVar is 5 and the execution of the current trigger ends. Statements after the loop are not executed. 
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

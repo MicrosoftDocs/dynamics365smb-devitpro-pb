@@ -2,13 +2,10 @@
 title: Running C/SIDE and AL side-by-side
 description: Description of how you can run both the C/SIDE and the AL development environments side-by-side.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/03/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Run C/SIDE and AL side-by-side
@@ -75,5 +72,5 @@ In addition to the symbol generation setting you have chosen above, you must ena
 > [!IMPORTANT]  
 > This setting must be enabled to allow any symbol generation. If the setting is not enabled, the `generatesymbolreference` setting doesn't have any effect.
 
-## See Also
+## Related information
 [Developing Extensions](devenv-dev-overview.md)  

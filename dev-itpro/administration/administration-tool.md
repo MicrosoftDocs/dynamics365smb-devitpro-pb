@@ -2,13 +2,14 @@
 title: "Microsoft Dynamics 365 Business Central Administration Center Tool"
 description: Read about the MMC snap-in for creating and managing Business Central Server instances for on-premises deployments.
 author: jswymer
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 08/31/2022
+ms.date: 04/14/2024
+ms.service: dynamics-365-op
 ---
 
 # [!INCLUDE[admintool](../developer/includes/admintool.md)]
@@ -76,6 +77,6 @@ You can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to con
     > [!TIP]  
     >  When you close MMC, you are prompted to save your settings to a Microsoft Management Console \(.msc\) file. If you save your settings, then you can use this file to open MMC with your [!INCLUDE[server](../developer/includes/server.md)] computers already listed  
 
-## See Also
+## Related information
 [Configuring Business Central Server Instances](configure-server-instance.md)  
 [Administration Center API](administration-center-api.md)  

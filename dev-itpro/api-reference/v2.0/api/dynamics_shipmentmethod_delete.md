@@ -3,11 +3,10 @@ title: DELETE shipmentMethods
 description: Deletes shipmentMethod  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete shipmentMethods
@@ -51,7 +50,7 @@ No Content.
 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [shipmentmethod](../resources/dynamics_shipmentmethod.md)    
 [Get shipmentmethod](dynamics_shipmentmethod_Get.md)    

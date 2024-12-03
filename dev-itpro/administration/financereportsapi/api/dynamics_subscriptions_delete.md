@@ -1,14 +1,12 @@
 ---
-title: Delete subscriptions
-description: Deletes a subscriptions object in Dynamics 365 Business Central.
+title: Delete subscriptions (Beta)
+description: Deletes a subscriptions object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/11/2022
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
@@ -59,7 +57,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [subscriptions](../resources/dynamics_subscriptions.md)  

@@ -2,13 +2,10 @@
 title: "AppSourceCop Info AS0099"
 description: "The member ID should be within the allowed range and outside the range allocated to per-tenant customizations."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -51,7 +48,7 @@ For detailed examples, see [AS0013](appsourcecop-as0013.md).
 > [!IMPORTANT]  
 > Changing the ID of an enum value has an impact on the data stored in the database. You must carefully assess the impact of your changes before changing the ID of an enum value. This implies writing upgrade code for your app and for the dependent extensions storing this enum value in their own tables.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -2,13 +2,10 @@
 title: "Type (Report) Property"
 description: "Sets the format type of the report layout."
 ms.author: solsen
-ms.custom: na
 ms.date: 02/04/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 <!-- this topic is manually created, parent node is devenv-type-property.md -->
@@ -31,7 +28,7 @@ Sets the format type of the report layout.
 |**Custom**|Specifies that the format of this report layout is a user-defined custom type. This requires the MimeType property to be set.|
 
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

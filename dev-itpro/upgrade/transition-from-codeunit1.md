@@ -1,11 +1,8 @@
 ---
 title: "Transitioning from Codeunit 1"
 description: "Learn how to convert your code as part of the upgrade to version 14 of Business Central."
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 author: jswymer
 ---
@@ -143,6 +140,6 @@ Move custom logic from the old codeunit 1 to the management codeunits and method
 
 After you convert the old database to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform, import and compile the replacement codeunit 1 object. You get the replacement object from [Codeunit 1 Replacement](codeunit1-replacement.md).
 
-## See Also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)  
  

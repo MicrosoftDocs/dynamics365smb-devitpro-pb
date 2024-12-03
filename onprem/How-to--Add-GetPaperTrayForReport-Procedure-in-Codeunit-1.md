@@ -1,13 +1,8 @@
 ---
 title: Add GetPaperTrayForReport Procedure in Codeunit 1
 description: Print a report using different paper trays for different letterheads by adding the GetPaperTrayForReport procedure in codeunit 1 application management.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 7668292c-a5e0-4f68-bba5-1dd63a23a22d
 caps.latest.revision: 6
 ---

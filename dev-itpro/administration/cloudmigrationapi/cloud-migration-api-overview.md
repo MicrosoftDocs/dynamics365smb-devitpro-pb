@@ -1,17 +1,14 @@
 ---
-title: "Cloud Migration API Overview"
-description: 
+title: Cloud Migration API Overview
+description: Learn how to use Cloud Migration APIs to automate the cloud migration process end-to-end.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/31/2024
 ms.topic: overview
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Cloud Migration APIs Overview (v1.0)
+# Cloud Migration APIs overview (v1.0)
 
 [!INCLUDE[2022_releasewave1](../../includes/2022_releasewave1.md)]
 
@@ -35,7 +32,6 @@ Body:
    "sqlServerType":"{SqlServerType}",
    "sqlConnectionString":"{SqlConnectionString}"
 }
-
 ```
 
 In the JSON example above, `productId` can be one of following values:  
@@ -111,7 +107,7 @@ The response will be like this for each of the companies:
 
 To include the company into the cloud migration you should issue following request:
 
-```json
+```http
 PATCH  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies ({CompanyId})
 Authorization: Bearer {token}
 Content-type: application/json
@@ -119,14 +115,13 @@ If-Match: etag
  {
       "replicate": true
 }
-
 ```
 
 To exclude the company, issue the same request with a false value.
 
 Once the companies are marked for replication you can create them by running the following request:
 
-```json
+```http
 POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies({AnyCompanyId}) /Microsoft.NAV.createCompaniesMarkedForReplication
 
 Authorization: Bearer {token}
@@ -192,6 +187,6 @@ Authorization: Bearer {token}
 
 ```
 
-## See also
+## Related information
 
 [Endpoints for the APIs](../../api-reference/v2.0/endpoints-apis-for-dynamics.md).

@@ -2,10 +2,10 @@
 title: "Updates for the Business Central 2020 Release Wave 2 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2020 Release Wave 2 on-premises deployments."
 author: jswymer
-ms.custom: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2022
+ms.reviewer: jswymer
 ---
 
 # Dynamics 365 Business Central On-Premises 2020 Release Wave 2 Updates
@@ -44,7 +44,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 |[4583554](https://support.microsoft.com/help/4583554)|Update 17.2 |December 2020|Application Build 17.2.19367.19396</br>Platform Build 17.0.19353.19391|
 |[4583515](https://support.microsoft.com/help/4583515)|Update 17.1 |November 2020|Application Build 17.1.18256.18792</br>Platform Build 17.0.18204.18738|
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v15.md)  
@@ -55,5 +55,5 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Countries/regions and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
-[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
+[Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)

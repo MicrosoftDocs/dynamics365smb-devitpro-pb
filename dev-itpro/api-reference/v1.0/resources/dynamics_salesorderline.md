@@ -3,13 +3,12 @@ title: (v1.0) salesOrderLines resource type
 description: (v1.0) A sales order line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesOrderLines resource type (v1.0)
@@ -112,7 +111,7 @@ Here is a JSON representation of the resource.
   ]
 ```
 
-## See also
+## Related information
 
 [Get Sales Order Line](../api/dynamics_salesorderline_get.md)  
 [Create Sales Order Line](../api/dynamics_create_salesorderline.md)  

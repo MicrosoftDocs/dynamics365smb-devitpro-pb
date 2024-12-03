@@ -1,14 +1,11 @@
 ---
-title: "ApplicationArea Property"
+title: "ApplicationArea property"
 description: "Sets the application areas that apply to the control."
 ms.author: solsen
-ms.custom: na
-ms.date: 02/24/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -26,6 +23,7 @@ Sets the application areas that apply to the control. Standard values are All, B
 -   Page Chart Part
 -   Page Action
 -   Page Custom Action
+-   Page File Upload Action
 -   Page User Control
 -   Page
 -   Report
@@ -71,7 +69,7 @@ You can also add new application areas, see [Extending Application Areas](../dev
 
 The **UsageCategory** property is a required setting used together with the **ApplicationArea** property. This enables a page or a report to be available in Search for the navigation support. For more information about navigation support, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).  
    
-## See Also  
+## Related information  
 
 [ApplicationArea Method](../methods-auto/session/session-applicationarea-method.md)  
 [Extending Application Areas](../devenv-extending-application-areas.md)  

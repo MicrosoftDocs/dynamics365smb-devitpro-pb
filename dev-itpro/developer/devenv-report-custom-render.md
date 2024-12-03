@@ -1,13 +1,9 @@
 ---
 title: "Developing a Custom Report Render"
 description: Describe the custom report render logic.
-ms.custom: na
 ms.date: 04/01/2022
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: nhsejth
 ---
 
@@ -128,7 +124,7 @@ The simplest possible custom document render can be implemented as in the follow
     end;
 ```
 
-## See Also
+## Related information
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
 [OnCustomDocumentMergerEx Event](devenv-oncustomdocumentmergerEx-event.md)  

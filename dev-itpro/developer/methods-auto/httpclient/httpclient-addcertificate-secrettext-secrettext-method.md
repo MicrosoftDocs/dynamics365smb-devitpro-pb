@@ -2,13 +2,10 @@
 title: "HttpClient.AddCertificate(SecretText [, SecretText]) Method"
 description: "Adds a certificate as a SecretText to the HttpClient class."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -39,7 +36,18 @@ The certificate password.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+
+
+## Example
+[!INCLUDE[httpclient_cert_example](../../includes/include-http-cert-example.md)]
+
+## Remarks
+[!INCLUDE[httpclient_cert_remarks](../../includes/include-http-cert-remarks.md)]
+
+[!INCLUDE[httpclient_cert_note](../../includes/include-http-cert-note.md)]
+
+## Related information
+
 [HttpClient Data Type](httpclient-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

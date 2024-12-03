@@ -1,10 +1,7 @@
 ---
 title: "Merge Application Changes"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 author: jswymer
 ---
@@ -106,7 +103,7 @@ author: jswymer
 > [!TIP]  
 >  The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] product media contains a folder with [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] sample scripts that illustrate how you can use the Merge-NAVApplicationObject cmdlet and other [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md).  
 
-## See Also  
+## Related information  
  [Handling Merge Conflicts](Handling-Merge-Conflicts.md)   
  [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md)   
  [Compare and Update Application Object Source Files](compare-update-application-object-source-files.md)   

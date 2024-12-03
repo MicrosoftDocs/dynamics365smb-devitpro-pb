@@ -1,14 +1,11 @@
 ---
-title: "App Management for ISVs"
+title: App Management for ISVs
 description: The App Management API can help you manage your apps running in different customer Business Central environments.
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # App Management for ISVs
@@ -21,7 +18,7 @@ As an authorized ISV, you can deliver your functionality or your services as app
 
 ## About the App Management API
 
-The App Management API is a REST-based API. It requires that you're an authorized ISV and your apps have been registered by Microsoft. Once registered, you access the API by using this global endpoint: [https://apps.businesscentral.dynamics.com](https://apps.businesscentral.dynamics.com). 
+The App Management API is a REST-based API. It requires that you're an authorized ISV and your apps have been registered by Microsoft. Once registered, you access the API by using this global endpoint: `https://apps.businesscentral.dynamics.com`. 
 
 You can use the API for the following operations:
 
@@ -48,6 +45,6 @@ The apps that are stored in the App Repository are governed by the Microsoft Pub
 
 The App Management API is governed by Microsoft APIs Terms of Use. For more information, see [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use)  
 
-## See Also
+## Related information
 
 [Manage Apps in the Business Central Administration Center](../tenant-admin-center-manage-apps.md)   

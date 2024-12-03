@@ -3,7 +3,6 @@ title: Preparing your network for the Excel Add-In
 description: This article includes information that helps administrators configure advanced device and network settings for the Excel add-in for Business Central.
 author: mikebcMSFT
 ms.topic: conceptual
-ms.workload: na
 ms.reviewer: jswymer
 ms.search.keywords: configure, port, firewall, proxy
 ms.date: 04/01/2021
@@ -26,7 +25,7 @@ The Excel add-in must have access to [!INCLUDE[prod_short](../includes/prod_shor
 > [!NOTE]
 > Your API endpoint URL can be different from these default values. For example, if your environment is based on a vertical solution by Fabrikam, your API endpoint is `https://fabrikam.api.bc.dynamics.com`. These vertical solutions have API endpoints that are based on the format of *`ApplicationName`.api.bc.dynamics.com*. You can check if an environment uses such a URL in the [Business Central Administration Center](tenant-admin-center.md).
 
-## See also
+## Related information
 
 [Setting up the Excel Add-In for Editing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Data](configuring-excel-addin.md)  
 [Administration of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](tenant-administration.md)  

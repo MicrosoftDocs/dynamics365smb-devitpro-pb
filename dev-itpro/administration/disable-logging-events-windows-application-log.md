@@ -1,11 +1,14 @@
 ---
 title: "Disable Logging Events to the Windows Application Log"
 description: For Business Central on-premises, you can configure the event logs. 
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
+ms.reviewer: jswymer
 ms.topic: conceptual
-author: SusanneWindfeldPedersen
+author: jswymer
+ms.service: dynamics-365-op
 ---
 
 # Disable Logging Events to the Windows Application Log
@@ -18,6 +21,8 @@ Because the [!INCLUDE[server](../developer/includes/server.md)] events are alway
 To disable logging to the Windows Applications Log, you can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or modify the [!INCLUDE[server](../developer/includes/server.md)] configuration file \(CustomSettings.config\).  
   
 ## To configure custom telemetry logging to the Windows Application log by using the [!INCLUDE[admintool](../developer/includes/admintool.md)]  
+
+[!INCLUDE[admin_tool_deprecated](../developer/includes/admin_tool_deprecated.md)]
   
 1. To start the [!INCLUDE[admintool](../developer/includes/admintool.md)], choose **Start**, and in the **Search programs and files** box, type **[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration**, and then choose the related link.  
   
@@ -47,7 +52,7 @@ To disable logging to the Windows Applications Log, you can use the [!INCLUDE[ad
   
 3. Save the file, and then restart the [!INCLUDE[server](../developer/includes/server.md)] 
   
-## See Also
+## Related information
 
 [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)  
 [Monitoring Business Central Server Events](monitor-server-events.md) 

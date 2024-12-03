@@ -1,13 +1,9 @@
 ---
 title: "OnAfterDocumentReady Event"
 description: Describe the OnAfterDocumentReady Event in Business Central.
-ms.custom: na
 ms.date: 03/13/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: nhsejth
 ---
 
@@ -126,7 +122,7 @@ end;
 
 ```
 
-## See Also
+## Related information
 <!-- [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)   -->
 <!-- [Developing Printer Extensions Overview](devenv-reports-printing.md)   -->
 <!-- [Creating a Printer Extension](devenv-reports-create-printer-extension.md)   -->

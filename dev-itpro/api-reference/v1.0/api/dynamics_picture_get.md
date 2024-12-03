@@ -1,15 +1,12 @@
 ---
 title: (v1.0) Get picture
 description: (v1.0) A picture object in Dynamics 365 Business Central. 
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get picture (v1.0)
@@ -74,7 +71,7 @@ GET https://{businesscentralPrefix}/api/v1.0/companies(companyId)/items(itemId)/
 Body is the raw image data. 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 

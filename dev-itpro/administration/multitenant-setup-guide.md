@@ -1,11 +1,12 @@
 ---
 title: "Manage Application and Tenant Databases in a Multitenant Deployment"
 description: Learn about the tasks for managing application and tenant databases for a multitenant deployment
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 04/14/2024
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
 ---
 # Multitenant Deployment Setup Guide
@@ -85,6 +86,6 @@ The tenant database includes tables for storing customer data that's accessible 
 > [!TIP]
 > For more detailed steps, see [Create a Tenant Database](../deployment/devenv-create-databases.md).
 
-## See Also  
+## Related information  
 [Multitenant Deployment Overview Architecture](../deployment/Multitenant-Deployment-Architecture.md)  
 [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md)  

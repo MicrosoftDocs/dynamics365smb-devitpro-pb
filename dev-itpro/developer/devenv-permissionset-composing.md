@@ -2,13 +2,10 @@
 title: "Composing Permission Sets from Other Permission Sets"
 description: "Learn how to create a permission set from one or more existing permission sets in AL code for Business Central."
 author: jswymer
-ms.custom: na
 ms.date: 09/23/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Composing Permission Sets
 
@@ -144,7 +141,7 @@ The following table shows how the permissions are determined on a single object 
 > [!TIP]
 > When including and excluding multiple permission sets, it can be difficult to get an overview of what the resultant permissions will be. To help, use the **View all permissions** action from the the permission set in the client.
 
-## See Also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

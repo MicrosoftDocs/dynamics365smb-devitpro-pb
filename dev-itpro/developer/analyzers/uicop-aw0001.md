@@ -2,13 +2,10 @@
 title: "UICop Warning AW0001"
 description: "The Web client does not support displaying the Request page of XMLPorts."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -24,7 +21,7 @@ The Web client does not support displaying the Request page of XMLPorts.
 
 This rule applies only to [!INCLUDE[prod_short](../../includes/prod_short.md)] Spring 2019 and earlier versions. Request pages for XMLPorts are supported as of [!INCLUDE[prod_short](../../includes/prod_short.md)] 2019 release wave 2.
 
-## See Also  
+## Related information  
 [UICop Analyzer](uicop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

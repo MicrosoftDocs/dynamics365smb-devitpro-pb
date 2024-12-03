@@ -1,18 +1,17 @@
 ---
-title: Update userGroupPermission
+title: (automation API) Update userGroupPermission
 description: Updates a user group permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/05/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Update userGroupPermission
+# (automation API) Update userGroupPermission
 
 Updates the properties of a user group permission object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
@@ -68,14 +67,13 @@ Here is an example of the response.
     "userGroupCode": "D365 COMPANY HUB",
     "roleId": "D365 COMPANY HUB",
     "displayName": "D365 COMPANY HUB",
-    "appID": "00000000-0000-0000-0000-000000000000",
+    "appID": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "scope": "System",
     "extensionName": ""
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [userGroupPermission](../resources/dynamics_usergrouppermission.md)  
-

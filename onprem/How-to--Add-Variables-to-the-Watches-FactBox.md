@@ -1,13 +1,8 @@
 ---
 title: Add Variables to Watches FactBox
 description: The values of the variables can be viewed using Watches FactBox, and displayed until they are deleted, even if they go out of scope in the currently executing code.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: adb2feaa-d2ff-4112-a8ab-d14afeafcc62
 caps.latest.revision: 10
 ---

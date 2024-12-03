@@ -1,10 +1,6 @@
 ---
 title: "SubType Property"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -17,7 +13,7 @@ The SubType property is applicable to the following types:
 - [Subtype Property (BLOB)](devenv-subtype-blob-property.md)  
 - [SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)   
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Codeunit Properties](devenv-codeunit-properties.md)  

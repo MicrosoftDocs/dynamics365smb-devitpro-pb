@@ -2,13 +2,10 @@
 title: "Debugger.Continue() Method"
 description: "Executes code until the next breakpoint or until execution ends."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -24,7 +21,6 @@ Executes code until the next breakpoint or until execution ends.
 [Ok := ]  Debugger.Continue()
 ```
 
-
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -35,7 +31,7 @@ Executes code until the next breakpoint or until execution ends.
 
 If you omit this optional return value and if the break is not set successfully, then a run-time error occurs. If you include the return value, then you must handle any errors.
 
-## See Also
+## Related information
 [Debugger Data Type](debugger-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

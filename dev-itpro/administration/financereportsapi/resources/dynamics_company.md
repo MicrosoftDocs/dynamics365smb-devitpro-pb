@@ -1,14 +1,12 @@
 ---
-title: company resource type
-description: A company object in Dynamics 365 Business Central.
+title: company resource type (Beta)
+description: A company object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/11/2022
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # company resource type (Beta)
@@ -82,5 +80,5 @@ Here is a JSON representation of the company resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET company](../api/dynamics_company_get.md)

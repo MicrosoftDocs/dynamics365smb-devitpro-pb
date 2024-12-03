@@ -3,12 +3,11 @@ title: Telemetry area overview
 description: Get an overview of available telemetry areas in Business Central
 author: jswymer
 ms.topic: overview
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 07/09/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Available telemetry areas
@@ -18,6 +17,6 @@ Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers te
 
 [!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
     
-## See also
+## Related information
 [Telemetry Event IDs](telemetry-event-ids.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

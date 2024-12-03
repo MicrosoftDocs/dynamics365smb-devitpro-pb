@@ -1,19 +1,16 @@
 ---
-title: "DotNet Data Type"
+title: "DotNet data type"
 description: "Represents an unspecified .NET type."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/13/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# DotNet Data Type
+# DotNet Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents an unspecified .NET type.
@@ -22,6 +19,6 @@ Represents an unspecified .NET type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

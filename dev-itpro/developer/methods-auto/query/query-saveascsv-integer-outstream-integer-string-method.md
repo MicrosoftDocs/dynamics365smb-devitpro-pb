@@ -2,13 +2,10 @@
 title: "Query.SaveAsCsv(Integer, OutStream [, Integer] [, Text]) Method"
 description: "Saves the resulting data set of a query as a comma separated values (CSV) file."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,7 +41,7 @@ You set the FormatArgument parameter based on the setting of the Format paramete
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+**true** if the SaveAsCsv succeeded, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -118,7 +115,7 @@ No       Name                          City
 If for some reason the file cannot be saved, then the message **Query was not saved.** appears.
 
 
-## See Also
+## Related information
 [Query Data Type](query-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

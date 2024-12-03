@@ -2,9 +2,8 @@
 title: "FAQ about Testing your Business Central App"
 description: "Get answers to some of your questions about testing when you build an app for Dynamics 365 Business Central"
 author: freddyk
-ms.custom: na
 ms.date: 08/15/2022
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: freddyk
 ---
@@ -37,7 +36,7 @@ You should always test with 100% coverage, or at least as close to 100% as you c
 
 ## Do I have to test on every country that I intend to support with my app?
 
-Yes. If you support multiple countries, test your app on every country. Each country's code base is slightly different from both the base application and other countries. It's critical to make sure that the app publishes, syncs, and installs on every country you support. Because an app installs fine on one country doesn’t mean it will publish/install fine on another. We have seen many times where it passes on one but fails on another during our validation.
+Yes. If you support multiple countries/regions, test your app on every country. Each country's code base is slightly different from both the base application and other countries/regions. It's critical to make sure that the app publishes, syncs, and installs on every country you support. Because an app installs fine on one country doesn’t mean it will publish/install fine on another. We have seen many times where it passes on one but fails on another during our validation.
 
 ## Do you have recommendations on maintenance testing of our apps?
 
@@ -59,7 +58,7 @@ Test the upgrade with extensive app data included. Many of the upgrade failures 
 
 No. It's important you test from various previous versions of your app. This is because we don't automatically upgrade apps for minor releases. You could have a tenant back on version 1.0.0.0 of your app and have to jump all the way to version 1.0.0.5. We don’t guarantee direct upgrades of apps from their most previous version.
 
-## See also
+## Related information
 
 [FAQ about Updating your Business Central App](app-faq-update.md)  
 [FAQ about Library & Dependency Apps in Business Central](app-faq-dependencies-libraries.md)  

@@ -3,13 +3,12 @@ title: (v1.0) currencies resource type
 description: (v1.0) A currency object in Dynamics 365 Business Central 
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # currencies resource type (v1.0)
@@ -63,7 +62,7 @@ Here is a JSON representation of the currencies.
 }
 ```
 
-## See also
+## Related information
   
 [Get Currencies](../api/dynamics_currencies_get.md)  
 [Post Currencies](../api/dynamics_create_currencies.md)  

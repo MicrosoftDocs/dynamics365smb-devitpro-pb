@@ -1,20 +1,17 @@
 ---
-title: "OnLookup (Field) Trigger"
+title: "OnLookup (Field) trigger"
 description: "Runs when a lookup page is displayed."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/23/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnLookup (Field) Trigger
+# OnLookup (Field) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs when a lookup page is displayed.
@@ -59,7 +56,7 @@ When using this trigger, follow this approach:
 > [!NOTE]  
 > The lookup for a non-editable field is not rendered. You can use the [OnDrillDown Trigger](../pagefield/devenv-ondrilldown-pagefield-trigger.md) instead.
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnLookup (Page Field) Trigger](../pagefield/devenv-onlookup-pagefield-trigger.md)  

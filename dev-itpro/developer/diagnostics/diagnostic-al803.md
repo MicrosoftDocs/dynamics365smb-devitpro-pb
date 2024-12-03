@@ -1,29 +1,29 @@
 ---
-title: "Compiler Error AL0803"
-description: "The parameter '{0}' cannot be used when the property '{1}' has the value '{2}'."
+title: "Compiler Warning (Future Error) AL0803"
+description: "The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0803
+# Compiler Warning (Future Error) AL0803
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The parameter '{0}' cannot be used when the property '{1}' has the value '{2}'.
+The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Choose another name for one of them. Otherwise, this might cause runtime issues.
 
+
+> [!IMPORTANT]
+> This warning will become an error with Business Central 2025 release wave 1.  
 
 ## Description
-The given property cannot be used in conjunction with a specific value of another property.  
+White spaces in names are internally replaced with an underscore during compilation, so that two different names can collide. This diagnostic is specific to event and event subscriber methods.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

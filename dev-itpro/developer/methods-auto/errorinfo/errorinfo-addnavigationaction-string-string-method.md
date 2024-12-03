@@ -2,13 +2,10 @@
 title: "ErrorInfo.AddNavigationAction([Text] [, Text]) Method"
 description: "Adds a navigation action for the error."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -39,7 +36,16 @@ The text that appears as the tooltip of the action in the error UI.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+
+## Remarks
+
+The semantics of this method is the same as the version without a Description parameter. For more information, see [ErrorInfo.AddNavigationAction([Text])](./errorinfo-addnavigationaction-string-method.md).
+
+## Related information
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Actionable errors](../../devenv-actionable-errors.md)  
+[User experience guidelines for errors](../../devenv-error-handling-guidelines.md)  
+[Error handling](../../devenv-al-error-handling.md)   
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

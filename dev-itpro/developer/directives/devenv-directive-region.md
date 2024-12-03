@@ -1,16 +1,14 @@
 ---
-title: "Region Directive in AL"
-description: "The region directive in AL for Business Central"
+title: Region directive in AL
+description: The region directive in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 05/21/2021
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/19/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Region Directive in AL
+# Region directive in AL
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
@@ -51,10 +49,10 @@ In this example, the `#region` directive makes a code block that is up for refac
 #endregion
 ```
 
-## See Also
+## Related information
 
 [Development in AL](../devenv-dev-overview.md)  
-[AL Development Environment](../devenv-reference-overview.md)  
-[Pragma Directive in AL](devenv-directive-pragma.md)  
+[AL development environment](../devenv-reference-overview.md)  
+[Pragma directive in AL](devenv-directive-pragma.md)  
 [Conditional directives](devenv-directives-in-al.md#conditional-directives)  
-[Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md)
+[Deprecating explicit and implicit with statements](../devenv-deprecating-with-statements-overview.md)

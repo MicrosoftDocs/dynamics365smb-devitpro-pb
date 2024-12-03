@@ -1,14 +1,11 @@
 ---
-title: "ErrorBehavior System Option"
+title: "ErrorBehavior system option"
 description: "Specifies whether errors will be collected within the scope of the method."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/05/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,9 +18,9 @@ Specifies whether errors will be collected within the scope of the method.
 ## Members
 |  Member  |  Description  |
 |----------------|---------------|
-|Collect|Collectible errors will be gathered and code execution will be continued until the end of the ErrorBehvior scope. If errors are left unhandled at the nd of the ErrorBehavior scope, execution will stop with an aggregated error.|
+|Collect|Collectable errors will be gathered and code execution will be continued until the end of the ErrorBehavior scope. If errors are left unhandled at the end of the ErrorBehavior scope, execution will stop with an aggregated error.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

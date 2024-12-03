@@ -2,13 +2,10 @@
 title: "ErrorInfo.PageNo([Integer]) Method"
 description: "Specifies the page number that the error relates to."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/24/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -42,9 +39,33 @@ The current page number of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
 
-[Collecting Errors](../../devenv-error-collection.md)  
+## Remark 
+
+You use the `PageNo` property when also using a show-it action with the `AddNavigationAction` property. The `PageNo` then specifies where the action takes the user when activated.
+
+## Example (set the PageNo property)
+
+```AL
+
+var 
+    MyErrorInfo: ErrorInfo;
+    TheCustomDimensions: Dictionary of [Text, Text];
+begin
+    // setup the error info object: Define Message, DetailedMessage etc.
+
+    // setup show-it action(s) for the error info object
+    ChangeNotAllowedErrorInfo.PageNo(PAGE::"MyPage");
+    ChangeNotAllowedErrorInfo.AddNavigationAction('Some caption');
+
+    Error(MyErrorInfo);
+end
+```
+
+## Related information
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
+[Actionable errors](../../devenv-actionable-errors.md)  
+[Error handling](../../devenv-al-error-handling.md)   
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

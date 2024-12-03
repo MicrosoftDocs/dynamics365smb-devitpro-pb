@@ -1,13 +1,8 @@
 ---
 title: "Testing With Permission Sets"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics-nav-2018"
 ---
 # Testing With Permission Sets
 You can write application tests in C/AL that use specific permission sets when the test is run. The permission sets define the access rights (such as read, write, and execute ) on tables, reports, functions, and other objects in the database.
@@ -105,8 +100,8 @@ OBJECT Codeunit 90000 MyTestPermissionsTestRunner
     END.
   }
 }
-
 ```
+
 ## See Also  
 [OnBeforeTestRun](trigger-onbeforetestrun.md)  
 [OnAfterTestRun](trigger-onaftertestrun.md)  

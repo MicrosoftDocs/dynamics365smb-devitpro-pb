@@ -1,16 +1,13 @@
 ---
 title: List of deprecated tables
 description: Specifies list of deprecated tables
-
 author: v-debapd
-
 ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: India, local, IN, English
 ms.date: 09/13/2021
-ms.author: v-debapd
+ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 
@@ -162,6 +159,6 @@ ms.author: v-debapd
 |16598|Capitalize CWIP Line|
 |16599|Posted Capitalize CWIP Header|
    
-## See Also
+## Related information
 
 [Upgrading [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](upgrading-to-business-central.md)  

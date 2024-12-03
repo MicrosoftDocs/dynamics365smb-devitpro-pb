@@ -1,13 +1,12 @@
 ---
-title: "Views"
-description: "Description of what views are and how they're defined in Business Central."
-ms.reviewer: jswymer
+title: Views
+description: Description of what views are and how they're defined in Business Central.
+ms.reviewer: solsen
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 12/08/2022
+ms.date: 01/25/2024
 ms.topic: conceptual
 ms.author: solsen
-ms.service: dynamics365-business-central
 ---
 
 # Views
@@ -23,24 +22,45 @@ A view offers:
 Views are defined directly in code, on the list page that they modify. The defined view or views are available to the user through **Filter Pane** on a page and appear in the sequence that they're defined in code.
 
 > [!NOTE]  
-> `allowDebugging` does not apply to views. Views defined in an extension with `allowDebugging` set to `false` can still be copied using Designer.
+> `allowDebugging` doesn't apply to views. Views defined in an extension with `allowDebugging` set to `false` can still be copied using Designer.
+
+## Syntax
+
+The following code snippet shows the syntax for defining a view on a page extension object. This view filters the `Approved` field to only show records that have been approved in a list. The code sets the [Caption property](properties/devenv-caption-property.md) to **Approved** and the [Filters property](properties/devenv-filters-property.md) to filter on the `Approved` field. The `Filters` property uses the `where` keyword to define the filter.
+
+```al
+...
+views
+{
+    view(OnlyApproved)
+    {
+        Caption = 'Approved';
+        Filters = where(Approved = const(true));
+    }
+}
+...
+```
 
 ## Snippet support
 
-Typing the shortcut `tview` will create the basic layout for a view when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `tview` creates the basic layout for a view when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Filtering and sorting
 
 You can filter on the data in a view by using the `Filters` property. The following code is an example of the syntax:
+
 ```AL
 Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*'));
 ```
+
 For more information, see [Filters](properties/devenv-filters-property.md).
 
 You can sort on the data in a view by using the `OrderBy` property. The following code is an example of the syntax:
+
 ```AL
 OrderBy = ascending ("Balance (LCY)", Name);
 ```
+
 For more information, see [OrderBy](properties/devenv-orderby-property.md).
 
 > [!NOTE]
@@ -48,7 +68,7 @@ For more information, see [OrderBy](properties/devenv-orderby-property.md).
 
 ## Layout changes
 
-By default, a view will have the same field layout as the page's **All** view, which means it will show the same columns, in the same order, with the same widths. The layout will also have the same freeze column. This behavior is a basic experience in the case where defining a specific layout for the view isn't important. It's controlled by the [SharedLayout property](properties/devenv-sharedlayout-property.md) on the page view, which in this case is set to `true`. This layout is referred to as a *shared layout view*. The following example code illustrates a *shared layout view*:
+By default, a view has same field layout as the page's **All** view, which means it shows the same columns, in the same order, with the same widths. The layout also has the same freeze column. This behavior is a basic experience in the case where defining a specific layout for the view isn't important. It's controlled by the [SharedLayout property](properties/devenv-sharedlayout-property.md) on the page view, which in this case is set to `true`. This layout is referred to as a *shared layout view*. The following example code illustrates a *shared layout view*:
 
 ```al
 view(SharedLayoutView) 
@@ -68,8 +88,8 @@ view(UniqueView)
 {
     Caption = 'View With Unique Layout';
     Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*')); 
-    // By settings this property to false, the view gets its own independent layout.
-    // User personalization are not applied on this view.
+    // By setting this property to false, the view gets its own independent layout.
+    // User personalization aren't applied on this view.
     // Instead, the layout defined below is applied.
     SharedLayout = false;
     
@@ -88,7 +108,7 @@ view(UniqueView)
 The following example shows a page customization of the **Customer List** page, which is available for a specific role center only; the **My Role Center**. Change the role center view under **My Settings**. The definition of the view adds a caption that's displayed on the left side in the UI. The view sorts the customer balance in ascending mode and the view modifies the layout by moving the customer balance first and adding a freeze column after it.
 
 > [!IMPORTANT]  
-> The definition of the `view` section must come after any definition of layout and actions, otherwise you will get a [compiler error AL0577](diagnostics/diagnostic-al577.md).
+> The definition of the `view` section must come after any definition of layout and actions, otherwise you get a [compiler error AL0577](diagnostics/diagnostic-al577.md).
 
 ```AL
 profile MyProfile
@@ -143,17 +163,14 @@ pagecustomization MyCustomization customizes "Customer List"
 In general, views can in several ways be compared to page customizations. Here are the limitations of views:
 
 - For views, you can modify the same control properties as for page customization objects independently of where the view has been defined (page, page extension, or page customization level). This condition is validated by the compiler. 
-- It isn't possible to use variables or methods in a view. When writing client-side expressions for properties like **Visibility**, it will only be possible to use constant values or table field references. This condition is validated by the compiler.
+- It isn't possible to use variables or methods in a view. When writing client-side expressions for properties like **Visibility**, it is only possible to use constant values or table field references. This condition is validated by the compiler.
 - It isn't possible to create new controls for a page from a view.
 
-
-
-
-## See Also
+## Related information
   
-[AL Development Environment](devenv-reference-overview.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[Page Object](devenv-page-object.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Page Customization Object](devenv-page-customization-object.md)  
-[SharedLayout Property](properties/devenv-sharedlayout-property.md)
+[AL development environment](devenv-reference-overview.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[Page object](devenv-page-object.md)  
+[Page extension object](devenv-page-ext-object.md)  
+[Page customization object](devenv-page-customization-object.md)  
+[SharedLayout property](properties/devenv-sharedlayout-property.md)

@@ -2,16 +2,15 @@
 title: Configure the Help experience
 description: Learn how to give your customers access to the right Help content for Business Central online and on-premises.
 author: solsen
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
 ms.date: 04/12/2023
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
-The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [learn.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the **Learn More** links in all tooltips. Each extension that you add will include its own tooltips and links to Help that can be accessed through the Learn More links and the Ctrl+F1 keyboard shortcut.
+The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [learn.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the **Learn More** links in all tooltips. Each extension that you add will include its own tooltips and links to Help that can be accessed through the Learn More links and the <kbd>Ctrl</kbd>+<kbd>F1</kbd> keyboard shortcut.
 
 But what if you want to deploy [!INCLUDE[prod_short](../developer/includes/prod_short.md)] locally? Or if you have a vertical solution and want to refer your customers to your own website for Help? Or if you have a legacy Help collection based on the Dynamics NAV Help Server? These and other scenarios are also supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
@@ -130,12 +129,12 @@ We suggest that your website clearly indicates what is under Microsoft's copyrig
 
 If you want to customize or extend the Microsoft Help, you can fork our public repo for the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs). For more information, see [Contribute to the Help](../help/contributor-guide.md).  
 
-## See Also
+## Related information
 
 [User Assistance Model](../user-assistance.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
-[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../developer/devenv-extension-example.md)  
+[Build your first sample extension with extension objects, install code, and upgrade code](../developer/devenv-extension-example.md)  
 [Building an Advanced Sample Extension](../developer/devenv-extension-advanced-example.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [Resources for Help and Support](../help-and-support.md)  

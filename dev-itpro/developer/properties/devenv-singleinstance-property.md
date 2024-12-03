@@ -1,14 +1,11 @@
 ---
-title: "SingleInstance Property"
+title: "SingleInstance property"
 description: "Sets whether a single instance of the codeunit and codeunit variables are instantiated."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -54,6 +51,6 @@ On Page2:
   
 The SingleInstance property in Codeunit1 is set to **true**. Page1 calls a function on Codeunit1 and sets the parameter to 100. Codeunit1 saves this parameter in a local variable. Page2 is now able to get the parameter value \(=100\) from Codeunit1. A message is displayed.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

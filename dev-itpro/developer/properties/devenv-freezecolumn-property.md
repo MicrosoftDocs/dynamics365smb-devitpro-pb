@@ -1,14 +1,11 @@
 ---
-title: "FreezeColumn Property"
+title: "FreezeColumn property"
 description: "Specifies the columns in a list that remain in view on a page, even when you scroll right."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -33,7 +30,7 @@ FreezeColumn = GroupCompanyDisplayName;
 
 The property is useful when you have a list that has many columns that extend beyond the control’s boundaries, which require that you scroll right to see all columns. This property lets you specify columns that always remain in view, even when you scroll through the remaining columns. To set the property, you select a column. The column that you select and *all columns before it* remain in view on the page.
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Page object](../devenv-page-object.md)  

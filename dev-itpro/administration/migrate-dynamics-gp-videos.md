@@ -1,14 +1,12 @@
 ---
-title: Compare Work in Dynamics GP to Business Central (contains videos)
+title: Compare Work in Dynamics GP to Business Central
 description: Get some tips and tricks for how to do things in Business Central online that you currently do in Dynamics GP.
 author: jswymer
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: jswymer
-ms. search.keywords: cloud, edge, gp, migration, video
+ms.search.keywords: cloud, edge, gp, migration, video
 ms.date: 07/06/2022
 ms.author: jswymer
 ---
@@ -110,7 +108,7 @@ This video compares the process of using posting accounts in Dynamics GP and [!I
 
 > [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4ZZAy]
 
-## See also
+## Related information
 
 [Migrate Dynamics GP Data to the Cloud](migrate-dynamics-gp.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  

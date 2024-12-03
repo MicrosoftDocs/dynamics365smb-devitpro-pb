@@ -1,24 +1,22 @@
 ---
-title: "Page Data Type"
+title: "Page data type"
 description: "Contains a number of simpler elements called controls."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page Data Type
+# Page Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Contains a number of simpler elements called controls. Controls are used to display information to the user or receive information from the user.
 
 
+## Static methods
 The following methods are available on the Page data type.
 
 
@@ -32,6 +30,7 @@ The following methods are available on the Page data type.
 |[RunModal(Integer, Record, FieldRef)](page-runmodal-integer-table-fieldref-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[SetBackgroundTaskResult(Dictionary of [Text, Text])](page-setbackgroundtaskresult-method.md)|Sets the page background task result as a dictionary. When the task is completed, the OnPageBackgroundCompleted trigger will be invoked on the page with this result dictionary.|
 
+## Instance methods
 The following methods are available on instances of the Page data type.
 
 |Method name|Description|
@@ -45,6 +44,7 @@ The following methods are available on instances of the Page data type.
 |[GetRecord(var Record)](page-getrecord-method.md)|Gets the current record of the page.|
 |[LookupMode([Boolean])](page-lookupmode-method.md)|Gets or sets the default lookup mode for the page.|
 |[ObjectId([Boolean])](page-objectid-method.md)|Returns a string in the "Page xxx" format, where xxx is the caption or ID of the application object.|
+|[PromptMode([PromptMode])](page-promptmode-method.md)|The mode of a PromptDialog page that prompts the user for input and shows the output of a copilot interaction.|
 |[Run()](page-run--method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
 |[RunModal()](page-runmodal--method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[SaveRecord()](page-saverecord-method.md)|Saves the current record as if performed by the client. If the record does not exist it is inserted, otherwise it is modified.|
@@ -54,6 +54,6 @@ The following methods are available on instances of the Page data type.
 |[Update([Boolean])](page-update-method.md)|Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

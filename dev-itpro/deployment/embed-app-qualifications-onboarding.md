@@ -1,17 +1,14 @@
 ---
-title: "Embed App Qualification and Onboarding of partners"
+title: Embed App Qualification and Onboarding of partners
+description: Learn about the qualification and onboarding of partners to the Embed App program.
 author: jswymer
-
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
-# Qualification and Onboarding of Partners to the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] Program
+# Qualification and onboarding of partners to the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] program
 
 If you as a software development partner are interested in developing an app that meets the description of [!INCLUDE[embedapp](../developer/includes/embedapp.md)] in [Embed App Overview](embed-app-overview.md), your app must meet qualification requirements. The main criteria for [!INCLUDE[embedapp](../developer/includes/embedapp.md)] onboarding at this point are:
 
@@ -34,7 +31,7 @@ When an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is qualified for
 
 The rest of the information will be included with the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] package that the partner deploys through LifeCycle Services.
 
-## See Also
+## Related information
 
 [Embed App Overview](embed-app-overview.md)  
 [Microsoft Responsibilities](microsoft-responsibilities.md)  

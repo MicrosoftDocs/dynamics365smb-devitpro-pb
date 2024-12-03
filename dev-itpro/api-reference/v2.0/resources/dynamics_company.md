@@ -3,11 +3,10 @@ title: company resource type
 description: A company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # company resource type
@@ -39,10 +38,11 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[pictures](dynamics_picture.md)|pictures |Gets the pictures of the company.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the company.|
 |[itemVariants](dynamics_itemvariant.md)|itemVariants |Gets the itemvariants of the company.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the company.|
 |[customers](dynamics_customer.md)|customers |Gets the customers of the company.|
 |[customerFinancialDetails](dynamics_customerfinancialdetail.md)|customerFinancialDetails |Gets the customerfinancialdetails of the company.|
 |[agedAccountsReceivables](dynamics_agedaccountsreceivable.md)|agedAccountsReceivables |Gets the agedaccountsreceivables of the company.|
-|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactsinformation of the company.|
+|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactinformation of the company.|
 |[contacts](dynamics_contact.md)|contacts |Gets the contacts of the company.|
 |[vendors](dynamics_vendor.md)|vendors |Gets the vendors of the company.|
 |[agedAccountsPayables](dynamics_agedaccountspayable.md)|agedAccountsPayables |Gets the agedaccountspayables of the company.|
@@ -98,6 +98,14 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[itemLedgerEntries](dynamics_itemledgerentry.md)|itemLedgerEntries |Gets the itemledgerentries of the company.|
 |[opportunities](dynamics_opportunity.md)|opportunities |Gets the opportunities of the company.|
 |[customerReturnReasons](dynamics_customerreturnreason.md)|customerReturnReasons |Gets the customerreturnreasons of the company.|
+|[purchaseCreditMemos](dynamics_purchasecreditmemo.md)|purchaseCreditMemos |Gets the purchasecreditmemos of the company.|
+|[purchaseCreditMemoLines](dynamics_purchasecreditmemoline.md)|purchaseCreditMemoLines |Gets the purchasecreditmemolines of the company.|
+|[currencyExchangeRates](dynamics_currencyexchangerate.md)|currencyExchangeRates |Gets the currencyexchangerates of the company.|
+|[accountingPeriods](dynamics_accountingperiod.md)|accountingPeriods |Gets the accountingperiods of the company.|
+|[generalLedgerSetup](dynamics_generalledgersetup.md)|generalLedgerSetup |Gets the generalledgersetup of the company.|
+|[disputeStatus](dynamics_disputestatus.md)|disputeStatus |Gets the disputestatus of the company.|
+|[fixedAssetLocations](dynamics_fixedassetlocation.md)|fixedAssetLocations |Gets the fixedassetlocations of the company.|
+|[fixedAssets](dynamics_fixedasset.md)|fixedAssets |Gets the fixedassets of the company.|
 |[customerSales](dynamics_customersale.md)|customerSales |Gets the customersales of the company.|
 |[vendorPurchases](dynamics_vendorpurchase.md)|vendorPurchases |Gets the vendorpurchases of the company.|
 
@@ -139,5 +147,5 @@ Here is a JSON representation of the company resource.
 
 
 
-## See Also
+## Related information
 [GET company](../api/dynamics_company_Get.md)

@@ -3,11 +3,10 @@ title: purchaseInvoice resource type
 description: A purchase invoice object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # purchaseInvoice resource type
@@ -43,14 +42,13 @@ The response has no content; the response code is 204.
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[vendor](dynamics_vendor.md)|vendor |Gets the vendor of the purchaseInvoice.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the purchaseInvoice.|
 |[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the purchaseInvoice.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the purchaseInvoice.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseInvoice.|
 |[purchaseInvoiceLines](dynamics_purchaseinvoiceline.md)|purchaseInvoiceLines |Gets the purchaseinvoicelines of the purchaseInvoice.|
 |[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the purchaseInvoice.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the purchaseInvoice.|
-|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseInvoice.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the purchaseInvoice.|
 
 ## Properties
 
@@ -58,9 +56,9 @@ The response has no content; the response code is 204.
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the purchase invoice. Non-editable.|
 |number|string|Specifies the number of the purchase invoice.|
-|invoiceDate|date|The invoice date .|
 |postingDate|date|The date that the purchase invoice   is posted.|
-|dueDate|date|The date the purchase invoice is due.|
+|invoiceDate|date|The invoice date .|
+|dueDate|date|T he date the purchase invoice is due.|
 |vendorInvoiceNumber|string|The vendor sales order reference for the purchase invoice.|
 |vendorId|GUID|The unique ID of vendor.|
 |vendorNumber|string|Specifies vendor's number.|
@@ -74,9 +72,9 @@ The response has no content; the response code is 204.
 |buyFromAddressLine1|string|Buy from address line 1.|
 |buyFromAddressLine2|string|Buy from address line 2.|
 |buyFromCity|string|Buy from city.|
-|buyFromCountry|string|Buy from country.|
+|buyFromCountry|string|Buy from state.|
 |buyFromState|string|Buy from state.|
-|buyFromPostCode|string|Buy from post code.|
+|buyFromPostCode|string|Buy from country.|
 |shipToAddressLine1|string|Ship to address line 1.|
 |shipToAddressLine2|string|Ship to address line 2.|
 |shipToCity|string|Ship to city.|
@@ -95,6 +93,7 @@ The response has no content; the response code is 204.
 |currencyCode|string|The default currency code for the purchase invoice.|
 |orderId|GUID|The id of the order to which the purchase invoice is associated to. Read-Only.|
 |orderNumber|string|The number of the order to which the purchase invoice is associated to. Read-Only.|
+|purchaser|string|The purchaser in the purchase invoice.|
 |pricesIncludeTax|boolean|Specifies whether the prices include Tax or not. Read-Only.|
 |discountAmount|decimal|The purchase invoice discount amount.|
 |discountAppliedBeforeTax|boolean|Specifies whether the discount is applied before tax.|
@@ -113,8 +112,8 @@ Here is a JSON representation of the purchaseInvoice resource.
 {
     "id": "GUID",
     "number": "string",
-    "invoiceDate": "date",
     "postingDate": "date",
+    "invoiceDate": "date",
     "dueDate": "date",
     "vendorInvoiceNumber": "string",
     "vendorId": "GUID",
@@ -150,6 +149,7 @@ Here is a JSON representation of the purchaseInvoice resource.
     "currencyCode": "string",
     "orderId": "GUID",
     "orderNumber": "string",
+    "purchaser": "string",
     "pricesIncludeTax": "boolean",
     "discountAmount": "decimal",
     "discountAppliedBeforeTax": "boolean",
@@ -160,11 +160,11 @@ Here is a JSON representation of the purchaseInvoice resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+> [!NOTE]  
+> The `id` property value in this API resource might be different than the `systemId` of the corresponding record because the `systemId` of the unposted invoices are carried to posted invoices in the API, but not to the record. Use the `https://{businesscentralPrefix}/microsoft/automate/v1.0/companies({id})/postedPurchaseInvoices({systemId})` route and extract the `apiId` property to map the `systemId` of a posted purchase invoice record to the `purchaseInvoice` API resource.
 
-
-## See Also
+## Related information
 [GET purchaseInvoice](../api/dynamics_purchaseInvoice_Get.md)  
 [DELETE purchaseInvoice](../api/dynamics_purchaseInvoice_Delete.md)  
 [POST purchaseInvoice](../api/dynamics_purchaseInvoice_Create.md)  

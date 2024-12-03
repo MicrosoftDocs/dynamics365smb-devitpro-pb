@@ -3,16 +3,20 @@ title: Troubleshooting the Cloud Migration
 description: Learn how to troubleshoot problems that you may experience with the cloud migration.
 author: dmc-dk
 ms.topic: troubleshooting
-ms. search.keywords: cloud, edge
-ms.date: 02/18/2022
+ms.search.keywords: cloud, edge
+ms.date: 05/27/2024
 ms.author: dmitrych
-ms.review: jswymer
-ms.service: dynamics365-business-central
+ms.reviewer: jswymer
 ---
-
 # Troubleshooting Cloud Migration
 
-In this article, you learn how to troubleshoot problems that you may experience with the cloud migration of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For the cloud migration to work properly, there are certain requirements that must be met on the online and on-premises databases. The following sections talk about these requirements, how you can check them, and correct them as needed.
+In this article, you learn how to troubleshoot problems that you might experience with the cloud migration of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For the cloud migration to work properly, there are certain requirements that must be met on the online and on-premises databases. The following sections talk about these requirements, how you can check them, and correct them as needed.
+
+## Cloud migration setup and data replication troubleshooting articles
+
+For a collection of troubleshooting articles related cloud migration setup and data replication, refer to [Cloud migration troubleshooting for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) in Microsoft troubleshooting documentation.
+
+The sections that follow provide guidance for general error that you might experience during cloud migration.
 
 ## SQL Server compatibility level
 
@@ -195,7 +199,7 @@ When you've completed the migration, disable cloud migration by using the **Disa
 > [!IMPORTANT]
 > Just uninstalling the cloud migration apps, even with the option to remove the data, won't disable the migration in the same way. If you don't disable **Cloud Migration**, users will experience permission-related errors when they try to modify records in the migrated companies.
 
-## See also
+## Related information
 
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  

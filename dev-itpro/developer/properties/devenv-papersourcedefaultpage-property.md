@@ -1,14 +1,11 @@
 ---
-title: "PaperSourceDefaultPage Property"
+title: "PaperSourceDefaultPage property"
 description: "Specifies the default paper source to use when printing the report."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +18,7 @@ Specifies the default paper source to use when printing the report.
 ## Applies to
 -   Report
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -64,7 +61,7 @@ Specifies the default paper source to use when printing the report.
 PaperSourceDefaultPage = AutomaticFeed;
 ```
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

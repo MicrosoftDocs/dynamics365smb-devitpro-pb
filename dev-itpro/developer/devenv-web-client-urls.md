@@ -1,16 +1,12 @@
 ---
-title: "Web Client URL"
-description: Learn about the URL for opening the Web client. 
-ms.custom: na
-ms.date: 08/30/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Web client URL
+description: Learn about the URL for opening the Business Central web client. 
+ms.date: 06/24/2024
 ms.topic: conceptual
 author: jswymer
 ---
 
-# Web Client URL
+# Web client URL
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -32,7 +28,7 @@ This article describes how you can construct URLs. A well-constructed URL can be
 > Certain data in the URL, such as filters, could be considered sensitive information. Use discretion if you distribute URLs that contain filters, or if it's possible, exclude this information from the address.  
 
 
-##  <a name="Syntax"></a> URL Syntax
+##  <a name="Syntax"></a> URL syntax
 
 The [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL has the following syntax:
 
@@ -48,7 +44,7 @@ https://<hostname>[/<aad>][/sandbox]/?[company=<companyname>]&[page|report|table
 
 The URL consists of two parts; the hostname part and the query string. The hostname part includes the protocol (https) and the hostname. The query string part includes everything after `<hostname>`. The query string determines what content to target.
 
-### Syntax Key
+### Syntax key
 
 The following table describes the notation that is used to indicate the syntax.
 
@@ -80,7 +76,7 @@ Use the following guidelines to write URL syntax and create a URL:
 
 -   Enclose values in single quotation marks (`''`) if they're unescaped.
 
-##  <a name="Paramters"></a> URL Parameters
+##  <a name="Paramters"></a> URL parameters
 
 The following table describes the parameters of the URL for displaying a page.
 
@@ -105,8 +101,8 @@ The following table describes the parameters of the URL for displaying a page.
 |`showribbon`|Specifies whether to show the action bar on pages when they open. To show the action bar, omit this parameter or use `showribbon=1`. To hide the action bar, use `showribbon=0`.<br /><br />When you hide the action bar, it will remain hidden as you move to different pages, until you refresh or reload the browser or use `showribbon=1` in the URL. Once you move to another page, the parameter is no longer shown in the URL, even though it's still in effect.|
 |`shownavigation`|Specifies whether to show the navigation bar when the specified page opens. To show the navigation bar, omit this parameter or use `shownavigation=1`. To hide the navigation bar, use `shownavigation=0`.<br /><br />When you hide the navigation bar, it will remain hidden as you move to different pages, until you refresh or reload the browser or set `shownavigation=1` in the URL. Once you move to another page, the parameter is no longer shown in the URL, even though it's still in effect.|
 |`showuiparts`|Specifies whether to show UI parts when the specified page opens. To show parts, omit this parameter or use `showuiparts=1`. To hide parts, use `showuiparts=0`. <br /><br />This parameter only affects parts that are shown in FactBoxes. Once you move to another page, the parameter is cleared.|
-|`showheader`|Specifies whether to show the **Dynamics 365 Business Central** header and its functionality. (This was introduced in Business Central 2020 release wave 1, update 16.2.) <br /><br >The header is the bar at the top of pages. It gives access to the general functionality like **Tell Me**, **Notifications**, **My Settings**, and more. To show the header, omit this parameter or use `showheader=1`. To hide the header, use `showheader=0`.<br /><br >When hidden, functionality that has a keyboard shortcut, like **Tell Me**, is still accessible by the shortcut. The parameter is preserved when you move to other pages and if you refresh or reload the browser. <br /><br >**Note:** The [help pane](/dynamics365/business-central/product-help-and-support#help-pane) isn't available when the header is hidden. Pressing Ctrl+F1 opens a Business Central help article on [Microsoft Docs](/dynamics365/business-central/) instead of the help pane. |
-|`isembedded`|Specifies to open the [!INCLUDE[nav_web](includes/nav_web_md.md)] in the embedded mode. To set the embedded mode, use `isembedded=1`. <br /><br /> This parameter is intended for use when [!INCLUDE[nav_web](includes/nav_web_md.md)] is embedded in another web application, like SharePoint. The embedded mode hides the **Dynamics 365 Business Central** header and adjusts how navigation works to suit the web application. For more information, see [Embedding Business Central Web Client in Other Websites](devenv-embed-web-client-pages-in-websites.md).<br /><br >**Note:** The [help pane (Ctrl+F1)](/dynamics365/business-central/product-help-and-support#help-pane) and [company switcher (Ctrl+O)](/dynamics365/business-central/ui-organization-switch#use-the-company-switcher) aren't available in the embedded mode. Pressing Ctrl+F1 opens a Business Central help article on [Microsoft Docs](/dynamics365/business-central/) instead of the help pane. |  
+|`showheader`|Specifies whether to show the **Dynamics 365 Business Central** header and its functionality. (This was introduced in Business Central 2020 release wave 1, update 16.2.) <br /><br >The header is the bar at the top of pages. It gives access to the general functionality like **Tell Me**, **Notifications**, **My Settings**, and more. To show the header, omit this parameter or use `showheader=1`. To hide the header, use `showheader=0`.<br /><br >When hidden, functionality that has a keyboard shortcut, like **Tell Me**, is still accessible by the shortcut. The parameter is preserved when you move to other pages and if you refresh or reload the browser. <br /><br >**Note:** The [help pane](/dynamics365/business-central/product-help-and-support#help-pane) isn't available when the header is hidden. Selecting <kbd>Ctrl</kbd>+<kbd>F1</kbd> opens a Business Central help article on [Microsoft Docs](/dynamics365/business-central/) instead of the help pane. |
+|`isembedded`|Specifies to open the [!INCLUDE[nav_web](includes/nav_web_md.md)] in the embedded mode. To set the embedded mode, use `isembedded=1`. <br /><br /> This parameter is intended for use when [!INCLUDE[nav_web](includes/nav_web_md.md)] is embedded in another web application, like SharePoint. The embedded mode hides the **Dynamics 365 Business Central** header and adjusts how navigation works to suit the web application. For more information, see [Embedding Business Central Web Client in Other Websites](devenv-embed-web-client-pages-in-websites.md).<br /><br >**Note:** The [help pane (<kbd>Ctrl</kbd>+<kbd>F1</kbd>)](/dynamics365/business-central/product-help-and-support#help-pane) and [company switcher (Ctrl+O)](/dynamics365/business-central/ui-organization-switch#use-the-company-switcher) aren't available in the embedded mode. Selecting <kbd>Ctrl</kbd>+<kbd>F1</kbd> opens a Business Central help article on [Microsoft Docs](/dynamics365/business-central/) instead of the help pane. |  
 |`pagesize`|Specifies the number of lines to display in a list. For example, `pagesize=10` specifies that 10 lines will be displayed. The default value, if the parameter isn't specified, is `20`<br /><br /> The parameter applies only to pages that contain a `repeater` control.  It's intended for use when [!INCLUDE[nav_web](includes/nav_web_md.md)] is embedded in another web application, like SharePoint. For more information, see [Embedding Business Central Web Client in Other Websites](devenv-embed-web-client-pages-in-websites.md).|  
 |`redirect`|Specifies whether users are presented with an option to download the [!INCLUDE[d365fin_uni_app_md](includes/d365fin_uni_app_md.md)] when they open the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] in a mobile browser to improve the user experience.<br /><br />If you don't want to give users this option, set the value to `0`, such as `redirect=0`.<br /><br />|
 |`extension`|Specifies the unique identifier (ID) of an extension that is deployed on the environment. This parameter is typically used during the development of the specified extension in a non-production environment. When this parameter is set, only the specified extension is available in the client, and the client opens in Designer. All other extensions are ignored and not visible. This parameter enables you to isolate and focus on the behavior of the specified extension only.<br /><br />An extension ID is a 32-digit GUID, such as `72CC5E27-BD97-4271-AF55-F77E4471E493`. You set this parameter using the format `extension={GUID}`, for example:<br /><br />`&extension={72CC5E27-BD97-4271-AF55-F77E4471E493}`<br /><br />You can determine an extension ID by opening the extension in Visual Studio Code and looking in the app.json file. Or, you can run the [Get-NAVAppManifest cmdlet](/powershell/module/microsoft.dynamics.nav.apps.tools/Get-NAVAppManifest) on the extension package.|
@@ -117,7 +113,7 @@ The following table describes the parameters of the URL for displaying a page.
 
 <!-- For more information about framing the Web client, see [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md).-->
 
-## <a name="Filtering"></a> Filtering Data on the Page
+## <a name="Filtering"></a> Filtering data on the page
 
 You can filter the data that is displayed in the page by using the filter parameter. The filter parameter let you display specific records from the underlying table of the page.
 
@@ -129,7 +125,7 @@ You can filter the data that is displayed in the page by using the filter parame
 https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.&page=9305&filter='Sell-to Customer No.' IS '10000' AND 'Location Code' IS 'BLUE'  
 ```
 
-### Filter Syntax
+### Filter syntax
 
 The filter has the following syntax.
 
@@ -144,7 +140,7 @@ Include a space or `%20` before and after the `IS`and `AND` operators. You can a
 >  The filter syntax for a page in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] is the same as a page in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], which you can see by choosing the **Copy Link to Page** action on the **Application** menu in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].
 -->
 
-### Filter Parameters
+### Filter parameters
 
 The following table describes the filter parameters.
 
@@ -155,5 +151,6 @@ The following table describes the filter parameters.
 |`value`|The value of the table field on which to filter.|
 |` AND `|Use this parameter to specify more than one filter. It specifies an "and" operator for adding additional filters. Place ` AND ` between each additional filter.<br /><br /> To be included in the page data, the table record must match values for all fields in the filter.|
 
-## See Also
+## Related information
+
 [Viewing Table Data](devenv-view-table-data.md)  

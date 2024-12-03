@@ -5,11 +5,10 @@ description: Deletes a journal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete journals
@@ -57,7 +56,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [journal](../resources/dynamics_journal.md)    
 [Get journal](dynamics_journal_Get.md)    

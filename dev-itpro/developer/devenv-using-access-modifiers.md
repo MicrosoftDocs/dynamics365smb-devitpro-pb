@@ -2,13 +2,10 @@
 title: "Using Access Modifiers in AL"
 description: "Describes how the AL access modifiers can be used in code."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 09/27/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Using Access Modifiers in AL
@@ -36,7 +33,7 @@ Setting access to `internal` is linked to the [JSON Files](devenv-json-files.md)
 > [!IMPORTANT]  
 > Access modifiers are only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` can't be used from other modules that don't have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection-based mechanisms such as `RecordRef`, or `TransferFields`. And the `OnRun` trigger can be run on `internal` codeunits by using `Codeunit.Run`. Setting the object accessibility level as `Access = Internal;` *cannot* be used as a security boundary. Also see [JSON Files](devenv-json-files.md#appjson-file).
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Access Property](properties/devenv-access-property.md)

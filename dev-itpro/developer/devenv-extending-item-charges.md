@@ -2,13 +2,10 @@
 title: "Extending Item Charges Distribution Methods"
 description: "How you extend item charges in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: grobyns
+ms.reviewer: jswymer
 ---
 
 # Extending Item Charge Distribution Methods 
@@ -73,7 +70,7 @@ codeunit 50100 "Item Ch. Assign by Fairy Dust"
 In the new codeunit, add functions to distribute the charges over the item lines.
 
 ```AL
-    local procedure AssignByFairyDust(var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal);
+    local procedure AssignByFairyDust(var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal)
     var
         TempItemChargeAssgntPurch: Record "Item Charge Assignment (Purch)" temporary;
         LineArray: array[2] OF Decimal;
@@ -122,7 +119,7 @@ In the new codeunit, add functions to distribute the charges over the item lines
         TempItemChargeAssgntPurch.DeleteAll(false);
     end;
 
-    procedure GetItemValues(TempItemChargeAssgntPurch: Record "Item Charge Assignment (Purch)" temporary; var DecimalArray: Array[2] OF Decimal);
+    procedure GetItemValues(TempItemChargeAssgntPurch: Record "Item Charge Assignment (Purch)" temporary; var DecimalArray: Array[2] of Decimal)
     var
         PurchaseLine: Record "Purchase Line";
         PurchRcptLine: Record "Purch. Rcpt. Line";
@@ -184,7 +181,7 @@ In the new codeunit, add a subscriber to the **OnAssignItemCharges** event.
 
 ```AL
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Charge Assgnt. (Purch.)", 'OnAssignItemCharges', '', false, false)]
-    local procedure AssignByFairyDustOnAssignItemCharges(SelectionTxt: Text; var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; PurchaseHeader: Record "Purchase Header"; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal; VAR ItemChargesAssigned: Boolean);
+    local procedure AssignByFairyDustOnAssignItemCharges(SelectionTxt: Text; var ItemChargeAssignmentPurch: Record "Item Charge Assignment (Purch)"; Currency: Record Currency; PurchaseHeader: Record "Purchase Header"; TotalQtyToAssign: Decimal; TotalAmtToAssign: Decimal; var ItemChargesAssigned: Boolean)
     begin
         // if item charges are already assigned, exit
         if ItemChargesAssigned then
@@ -200,8 +197,8 @@ In the new codeunit, add a subscriber to the **OnAssignItemCharges** event.
 ```
 
 
-## See Also
+## Related information
 
-[Extending Application Areas](devenv-extending-application-areas.md)  
-[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)  
-[Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  
+[Extending Application Areas](devenv-extending-application-areas.md)    
+[Module System Application](/dynamics365/business-central/application/system-application/module/system-application)    
+[Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)  

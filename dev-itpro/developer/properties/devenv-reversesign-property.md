@@ -1,14 +1,11 @@
 ---
-title: "ReverseSign Property"
+title: "ReverseSign property"
 description: "Changes negative values into positive values and positive values into negative values in a column of a resulting query data set."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -41,7 +38,7 @@ ReverseSign = true;
 
 Field values in a database table can be negative numbers, as well as positive. For example, credits are typically stored as negative values to deduct them from the overall balance due. However, for displaying purposes, such as in spreadsheets and charts, you might want these quantities to appear as a positive numbers.  
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [AL Data Types](../methods-auto/library.md)

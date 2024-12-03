@@ -1,14 +1,11 @@
 ---
-title: "TransactionType System Option"
+title: "TransactionType system option"
 description: "Represents a transaction type."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/23/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -28,6 +25,6 @@ Represents a transaction type.
 |Report|Report option maps to one of the basic options. This enables a report to use the most concurrent read-only form of data access for the connected server. When you use Dynamics 365 Business Central database server, it maps to Snapshot and when you use SQL Server, it maps to Browse.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

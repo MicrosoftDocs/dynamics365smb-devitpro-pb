@@ -5,11 +5,10 @@ description: Creates a sales order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create salesOrders
@@ -31,7 +30,6 @@ POST businesscentralPrefix/companies({id})/salesOrders
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **salesOrder**, the **salesOrder** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **salesOrders** object.
@@ -103,11 +101,20 @@ Content-type: application/json
     "status": "Draft",
     "lastModifiedDateTime": "2023-09-02T17:38:08.537Z",
     "phoneNumber": "",
-    "email": "robert.townes@contoso.com"
+    "email": "robert.townes@contoso.com",
+    "documentLines": [
+       {
+          "lineType": "Item",
+          "lineNo": 1000,
+          "itemNo": "ITEM001",
+          "quantity": 10,
+          "unitOfMeasureCode": "EA"
+       }
+    ]
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Sales Order](../resources/dynamics_salesorder.md)  

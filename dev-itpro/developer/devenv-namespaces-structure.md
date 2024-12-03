@@ -5,9 +5,8 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
 ms.date: 09/22/2023
-ms.reviewer: na
-ms.service: dynamics365-business-central
 ms.topic: conceptual
+ms.reviewer: solsen
 ---
 
 # Structuring namespaces in AL
@@ -50,7 +49,7 @@ param
     [string] $BasePath,
     [ValidateSet("Add","Ignore")]
     [string] $License = "Ignore",
-    [char] $Delimiter = ";"
+    [char] $Delimiter = ","
 )
 
 $files = Import-Csv $CsvMappingFile -Delimiter $Delimiter
@@ -92,7 +91,7 @@ foreach ($file in $files) {
 
 You're now ready to open Visual Studio Code and use the AL code actions to apply all the missing `using` statements.
 
-## See also
+## Related information
 
 [Namespaces in AL](devenv-namespaces-overview.md)  
 [Programming in AL](devenv-programming-in-al.md)  

@@ -1,10 +1,6 @@
 ---
 title: "Codeunit Properties"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -30,7 +26,7 @@ This article lists properties that apply to the Codeunit object.
 |[TableNo Property](devenv-tableno-property.md)|<ul><li>Codeunit Object</li></ul>|
 |[TestIsolation Property](devenv-testisolation-property.md)|<ul><li>Codeunit Object</li></ul>|
 
-## See Also
+## Related information
 
 [Developing Extensions](../devenv-dev-overview.md)  
 [AL Development Environment](../devenv-reference-overview.md)  

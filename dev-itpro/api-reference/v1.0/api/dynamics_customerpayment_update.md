@@ -3,13 +3,12 @@ title: (v1.0) Update customerPayments
 description: (v1.0) Updates a customer payment object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Update customerPayments (v1.0)
@@ -78,7 +77,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 

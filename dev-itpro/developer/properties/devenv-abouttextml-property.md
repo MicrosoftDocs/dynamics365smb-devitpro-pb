@@ -1,14 +1,11 @@
 ---
-title: "AboutTextML Property"
+title: "AboutTextML property"
 description: "Sets the body of text that appears in a teaching tip in the UI."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,6 +17,7 @@ Sets the body of text that appears in a teaching tip in the UI.
 
 ## Applies to
 -   Page Custom Action
+-   Page File Upload Action
 -   Query
 -   Page
 -   Page Action
@@ -47,7 +45,7 @@ For more information, see the [AboutText Property](devenv-abouttext-property.md)
 
 [!INCLUDE[aboutTeachingTips](../includes/include-about-teaching-tips.md)]
 
-## See Also  
+## Related information  
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -6,7 +6,6 @@ author: henrikwh
 
 ms.topic: reference
 ms.devlang: na
-ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2020
 ms.author: solsen
@@ -36,7 +35,6 @@ Here is a JSON representation of the userGroup.
     "defaultProfileID": "ACCOUNTANT PORTAL",
     "assignToAllNewUsers": false
 }
-
 ```
 
 ## See Also 

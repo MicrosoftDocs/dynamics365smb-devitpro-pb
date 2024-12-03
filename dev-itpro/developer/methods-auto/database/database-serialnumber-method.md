@@ -2,13 +2,10 @@
 title: "Database.SerialNumber() Method"
 description: "Gets a string that contains the serial number of the license file for your system."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -57,7 +54,7 @@ The output of this example is as follows:
 > [!NOTE]  
 > The serial number depends on your licensed version of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. The serial number shown here is an example.
 
-## See Also
+## Related information
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -3,11 +3,9 @@ title: "Organizing Promoted Actions"
 description: "Guidelines for which actions to promote in the action bar for Dynamics 365 Business Central"
 author: jacobwj
 ms.author: solsen
-ms.reviewer: 
-ms.service: "dynamics365-business-central"
 ms.topic: conceptual
 ms.date: 11/03/2022
-ms.custom: na
+ms.reviewer: solsen
 ---
 
 # Organizing Promoted Actions
@@ -58,7 +56,7 @@ Use subgroups within a group when the total number of actions in a group is more
 |-| B) The page that opens has the same information regardless of current record/row in the page. | Action should be placed in the common Navigate action group. |
 | Is an action that runs a report, either directly or via an intermediate dialog page (request page). | (no variation) | Place report actions in the common action group Reports. |
 
-## See also
+## Related information
 
 [Actions in AL](devenv-actions-overview.md)  
 [Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  

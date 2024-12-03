@@ -1,14 +1,11 @@
 ---
-title: "QuickEntry Property"
+title: "QuickEntry property"
 description: "Specifies if the page control should have input focus."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -28,7 +25,7 @@ Specifying an expression as the value of the property is not supported.
 
 ## Property Value
  
-**true** specifies that the field has input focus when users move through fields by pressing Enter; **false** specifies the field to be skipped. The default is **true**.
+**true** specifies that the field has input focus when users move through fields by selecting <kbd>Enter</kbd>; **false** specifies the field to be skipped. The default is **true**.
 
 
 > [!NOTE]  
@@ -36,9 +33,9 @@ Specifying an expression as the value of the property is not supported.
 
 ## Remarks  
 
-This property helps accelerate data entry, when using the keyboard, by only focusing on those fields a user typically fills in; skipping those that are rarely filled in. The **QuickEntry** property is respected when users press the Enter key. This behavior differs from using the Tab key, which will sequentially give input focus to all page controls. By using this property, you define a path for entering data, which is beneficial for repetitive data entry tasks.
+This property helps accelerate data entry, when using the keyboard, by only focusing on those fields a user typically fills in; skipping those that are rarely filled in. The **QuickEntry** property is respected when users select the <kbd>Enter</kbd> key. This behavior differs from using the <kbd>Tab</kbd> key, which will sequentially give input focus to all page controls. By using this property, you define a path for entering data, which is beneficial for repetitive data entry tasks.
 
-As a developer, the **QuickEntry** property can also be set by using Designer (see [Using Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)).
+As a developer, the **QuickEntry** property can also be set by Use Designer (see [Use Designer](../devenv-inclient-designer.md)). In the client, users can change the setting for their workspace by using personalization (see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)).
 
 ## Example 1
 
@@ -77,6 +74,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 Now, when a user enables **Allow Invoice Disc.** on the customer card, the **Credit Limit (LCY)** field gets focus when the user presses Enter. Without this modification, focus skips over the field when the user presses Enter.
 
 
-## See Also
+## Related information
   
 [Properties](devenv-properties.md)

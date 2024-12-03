@@ -1,14 +1,12 @@
 ---
 title: "Technical Upgrade From Version 14 to Version 17"
 description: Describes how to do a technical upgrade from Business Central 14 to 17
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Technical Upgrade From Version 14 to Version 17
 
@@ -356,7 +354,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
 
-## See Also
+## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central 14.X to 15.X compatibility matrix](upgrade-v14-v15-compatibility.md)

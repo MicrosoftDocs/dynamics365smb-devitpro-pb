@@ -1,11 +1,7 @@
 ---
 title: Develop for multiple platform versions
 description: The AL language extension is compatible with multiple platform versions for developing solutions in marketplace.
-ms.custom: na
-ms.date: 06/22/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/15/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -40,7 +36,7 @@ In the app.json file, set the extension **runtime** version lower than the platf
 
 3. A best-effort compilation is made when you publish an extension compiled with a lower runtime version. This is allowed in order to avoid recompilation of the extension package every time you upgrade the platform. 
 
-## See also
+## Related information
 
 [Debugging in AL](devenv-debugging.md)  
 [Developing Extensions](devenv-dev-overview.md)  

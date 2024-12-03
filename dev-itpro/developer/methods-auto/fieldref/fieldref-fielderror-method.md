@@ -2,13 +2,10 @@
 title: "FieldRef.FieldError([String]) Method"
 description: "Stops the execution of the code, causing a run-time error, and creates an error message for a field."
 ms.author: solsen
-ms.custom: na
 ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,7 +44,7 @@ This method is like the FieldError Method for the Record data type. For examples
 
 The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The CustomerName variable is initialized with a blank text. `CustomerRecref.Field` creates a FieldRef that is named MyFieldRef for field1 \(No.\) and selects record 30000. Field 2 \(Name\) is then selected for record 30000. If the CustomerName variable is a blank text, then `MyFieldRef.FieldError` is executed and an error message is displayed. The text in Text000 text constant is inserted into the error message that is displayed by [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. 
 
-```
+```al
 var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
@@ -82,7 +79,7 @@ We recommend the following guidelines for error messages:
 For more information, see [Progress Windows, Message, Error, and Confirm Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md). 
 
  
-## See Also
+## Related information
 [FieldRef Data Type](fieldref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

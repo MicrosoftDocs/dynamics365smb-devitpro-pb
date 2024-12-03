@@ -1,10 +1,6 @@
 ---
 title: "OptionMembers Property"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ---
 
@@ -16,7 +12,7 @@ The OptionMembers property is applicable to the following types:
 - [OptionMembers Property (Report)](devenv-optionmembers-report-property.md)
 
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)   
 [Report Object](../devenv-report-object.md)   
 [OptionMembers Property (Table field)](devenv-optionmembers-field-property.md)   

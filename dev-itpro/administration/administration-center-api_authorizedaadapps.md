@@ -3,26 +3,25 @@ title: Business Central Admin Center API - Authorized AAD Apps
 description: Learn about the Business Central administration center API for authorizing Microsoft Entra apps.
 author: jobulsin
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# Authorized Microsoft Entra apps 
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+# Business Central Admin Center API - Authorized Microsoft Entra apps 
 
 Authorized Apps are Microsoft Entra apps authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
+
+> [!NOTE]
+> Endpoints on this page cannot be used when authenticated as an app.
 
 ## Get Authorized Microsoft Entra apps
 
 Returns the Microsoft Entra apps that are authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant.
 
 ```
-GET /admin/v2.18/authorizedAadApps
+GET /admin/v2.21/authorizedAadApps
 ```
 
 ### Response
@@ -45,7 +44,7 @@ GET /admin/v2.18/authorizedAadApps
 Authorizes a Microsoft Entra app to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant. This does not grant admin consent or assign permission sets in environments to the Microsoft Entra app.
 
 ```
-PUT /admin/v2.18/authorizedAadApps/<appClientId>
+PUT /admin/v2.21/authorizedAadApps/<appClientId>
 ```
 
 ### Response
@@ -60,10 +59,10 @@ PUT /admin/v2.18/authorizedAadApps/<appClientId>
 Removes a Microsoft Entra app authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant. This does not revoke admin consent in Microsoft Entra ID nor remove permission sets assigned to the Microsoft Entra app in environments.
 
 ```
-DELETE /admin/v2.18/authorizedAadApps/<appClientId>
+DELETE /admin/v2.21/authorizedAadApps/<appClientId>
 ```
 
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

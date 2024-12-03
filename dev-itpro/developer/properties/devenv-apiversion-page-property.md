@@ -2,13 +2,10 @@
 title: "APIVersion Property (Page)"
 description: "Sets the versions of the API endpoint that the page is exposed in."
 ms.author: solsen
-ms.custom: na
 ms.date: 06/23/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
  
 # APIVersion Property (Page)
@@ -32,7 +29,7 @@ APIVersion = 'beta', 'v1.0';
 > The property **APIVersion** can only be set if the [PageType Property](devenv-pagetype-property.md) is set to **API**. For more information, see [API Page Type](../devenv-api-pagetype.md).
 
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)   
 [Page Object](../devenv-page-object.md)  
 [APIVersion Property (Query)](devenv-apiversion-query-property.md) 

@@ -1,14 +1,11 @@
 ---
-title: "Occurrence Property"
+title: "Occurrence property"
 description: "Sets a value that specifies whether an attribute must occur in the data that is being imported or exported."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -22,7 +19,7 @@ Sets a value that specifies whether an attribute must occur in the data that is 
 -   Xml Port Field Attribute
 -   Xml Port Text Attribute
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -42,6 +39,6 @@ Occurrence = Optional;
 
 This property is primarily used to ensure that the XML data that you are importing conforms to the data structure in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].  
   
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

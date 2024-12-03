@@ -1,14 +1,12 @@
 ---
 title: "Upgrade to Business Central 2020 Wave 2"
 description: Provides an overview of Business Central 2020 release wave 2 upgrade
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: overview
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2020 Release Wave 2
 
@@ -59,7 +57,7 @@ Before you upgrade, review the following articles to get an overview of features
 For information about migrating an on-premises solution to online, see [Migrate to Business Central Online from Business Central On-premises](../administration/migrate-business-central-on-premises.md).
 
   
-## See Also  
+## Related information  
  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

@@ -2,13 +2,10 @@
 title: "Work with multiple AL project folders within one workspace"
 description: "Handling solutions in the AL language that contain multiple projects."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 11/30/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Work with multiple AL project folders within one workspace
@@ -41,7 +38,7 @@ The `al.packageCachePath` setting allows you to specify the path to a folder tha
 > When working in a project or workspace, some operations require that you run a **Reload Window** command (**Ctrl+R**) for your project or workspace to ensure that it’s updated correctly. Examples are; source control operations like Git Pull, changes made to the `app.json` file, or updating User or Workspace settings for AL.
 
 
-## See also
+## Related information
 
 [Development in AL](devenv-dev-overview.md)  
 [Best Practices for AL](../compliance/apptest-bestpracticesforalcode.md)  

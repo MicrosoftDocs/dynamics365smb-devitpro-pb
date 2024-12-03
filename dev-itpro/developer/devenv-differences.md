@@ -2,13 +2,10 @@
 title: Differences in the development environments
 description: Describes the various differences between the C/SIDE and AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 05/23/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Differences in the development environments
@@ -16,7 +13,7 @@ ms.author: solsen
 Coming from the Dynamics NAV development environment and C/SIDE, it's good to know about some differences and optimizations between them. The following sections go through some of these changes, but it isn't an exhaustive list.
 
 > [!TIP]  
-> A very useful tool working in Visual Studio Code is IntelliSense, which gives you a list of options in the current context. To activate IntelliSense from anywhere in the code, press **Ctrl+Space**.
+> A very useful tool working in Visual Studio Code is IntelliSense, which gives you a list of options in the current context. To activate IntelliSense from anywhere in the code, select <kbd>Ctrl</kbd>+<kbd>Space</kbd>.
 
 ## General development approach
 
@@ -100,7 +97,7 @@ For some properties to work, they require you to set another property. An exampl
 
 The `InitValue` property of type `Duration` isn't allowed in the AL Language development environment. The `InitValue` of type `DateTime` is only allowed for the value `0DT`.  
 
-## See Also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)   
 [Get Started with AL](devenv-get-started.md)  

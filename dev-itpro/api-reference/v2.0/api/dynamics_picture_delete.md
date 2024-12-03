@@ -3,11 +3,10 @@ title: Delete picture
 description: Deletes a picture object in Dynamics 365 Business Central. 
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete picture
@@ -54,7 +53,7 @@ DELETE https://api.businesscentral.dynamics-tie.com/v2.0/api/v2.0/companies(comp
 
 No content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [picture](../resources/dynamics_picture.md)    
 [Get picture](dynamics_picture_Get.md)    

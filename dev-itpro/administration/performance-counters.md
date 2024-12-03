@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Dynamics 365 Business Central Performance Counters"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Microsoft Dynamics 365 Business Central Performance Counters
+description: Describes the performance counters that are available for monitoring instances.
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.assetid: 5c13ad00-234e-4307-8159-deef62da9b90
-caps.latest.revision: 28
 author: jswymer
 ---
 # Business Central Performance Counters
@@ -115,7 +115,7 @@ These pertain to tasks that are run by Task Scheduler.
 
 For more information about task scheduler, see [Task Scheduler](../developer/devenv-task-scheduler.md).
 
-## See Also  
+## Related information  
  [Set up Performance Counters in Windows Performance Monitor](set-up-performance-counters-performance-monitor.md)   
  [Create a Data Collector Set From Template](monitor-create-data-collector-set-from-template.md)   
  [Optimizing SQL Server Performance with Business Central](Optimize-SQL-Server-Performance.md)

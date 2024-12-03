@@ -2,13 +2,10 @@
 title: "MediaSet.Item(Integer) Method"
 description: "Gets the unique identifier (GUID) of a media object that is assigned to a MediaSet on a record."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -44,7 +41,7 @@ The unique identifier (GUID) of the media object.
 ## Example  
 For an example of using the Item method, see this [example](../../methods-auto/mediaset/mediaset-insert-method.md).
 
-## See Also
+## Related information
 [MediaSet Data Type](mediaset-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

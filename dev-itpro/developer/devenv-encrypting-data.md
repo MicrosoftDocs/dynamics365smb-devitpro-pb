@@ -1,11 +1,7 @@
 ---
 title: "Encrypting Data in Dynamics 365 for Business Central"
 description: Learn about encrypting data in Business Central.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -43,7 +39,7 @@ Each tenant supports having a single encryption key. To use the encryption meth
 ### ENCRYPTIONKEYEXISTS versus ENCRYPTIONENABLED  
   The encryption key is stored in a file in a directory that the [!INCLUDE[d365fin_server](includes/d365fin_server_md.md)] has access to. When a key is created or imported, data is recorded in the tenant table registering that encryption has now been enabled. Any subsequent calls to **ENCRYPTIONENABLED** will return true after the tenant table has been updated with this information. However, if the encryption file is deleted, then **ENCRYPTIONENABLED** will continue to return true. Use the **ENCRYPTIONKEYEXISTS** method to perform a file system check to see whether the key is present.  
 
-## See Also  
+## Related information  
 
 [Application Security in Business Central](../security/security-application.md)  
 [Data Encryption](devenv-encrypting-data.md)  

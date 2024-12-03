@@ -1,11 +1,7 @@
 ---
 title: Create Data Collector Set Using Template
 description: Use the template to create user-defined Data collector Set for monitoring all Server instances on the computer that is running Business Cenytral Server. 
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: d1c5bdd0-a254-4cd9-8784-3590918398a3
 caps.latest.revision: 11
@@ -40,7 +36,7 @@ author: SusanneWindfeldPedersen
   
  For information about how to start the Data Collector Set, see [To start and stop a Data Collector Set](create-data-collector-performance-counters.md#StartDataCollectorSet).  
   
-## See Also  
+## Related information  
  [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)   
  [Business Central Performance Counters](performance-counters.md)   
  [View Performance Counter Data for a Data Collector Set](monitor-view-performance-counter-data-for-data-collector-set.md)   

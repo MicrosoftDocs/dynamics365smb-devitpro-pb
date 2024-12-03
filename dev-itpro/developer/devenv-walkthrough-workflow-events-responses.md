@@ -2,10 +2,10 @@
 title: "Walkthrough: Implementing New Workflow Events and Responses"
 description: Learn how you can extend the native workflows by adding workflow events and responses in code to support additional business scenarios.
 author: solsen
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
 ms.date: 02/11/2022
+ms.reviewer: solsen
 ---
 
 # Walkthrough: Implementing New Workflow Events and Responses
@@ -82,7 +82,7 @@ Your MyWorkflowEvents.codeunit.al file now looks like this:
 ```AL
 codeunit 50101 MyWorkflowEvents
 {
-    procedure MyWorkflowEventCode(): code[128];
+    procedure MyWorkflowEventCode(): code[128]
     begin
     end;
 }
@@ -206,7 +206,7 @@ Create a new .al file, such as MyWorkflowResponses.codeunit.al, with code to ide
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Workflow Response Handling", 'OnAddWorkflowResponsesToLibrary', '', true, true)]
     local procedure AddMyWorkflowResponsesToLibrary()
     var
-        WorkflowEventHandling: codeunit "Workflow Event Handling";
+        WorkflowResponseHandling: Codeunit "Workflow Response Handling";
     begin
         WorkflowResponseHandling.AddResponseToLibrary(MyWorkflowResponseCode, Database::"Purchase Header", 'Send a notification.', 'GROUP 0');
         End
@@ -221,7 +221,7 @@ The codeunit now looks something like this:
 ```AL
 codeunit 50103 MyWorkflowResponses
 {
-    procedure MyWorkflowResponseCode(): code[128];
+    procedure MyWorkflowResponseCode(): code[128]
     begin
     end;
 
@@ -458,7 +458,7 @@ Add a FactBox to relevant pages so that users can view when and how the new work
 -->
 You have now enabled a new workflow scenario by implementing the required workflow event and response in the application code. The workflow administrator can now select the workflow event and workflow response from the **Workflow** page to define new or edit existing workflows. For more information, see [Set Up Workflows](/dynamics365/business-central/across-set-up-workflows) in the business functionality content.
 
-## See Also
+## Related information
 
 [Workflows in Dynamics 365 Business Central](/dynamics365/business-central/across-workflow)  
 [Set Up Workflows](/dynamics365/business-central/across-set-up-workflows)  

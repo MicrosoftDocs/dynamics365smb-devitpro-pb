@@ -1,19 +1,17 @@
 ---
-title: "Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen"
+title: Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen
 description: Describes how to replace OnBeforeCompanyOpen and OnAfterCompanyOpen events.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/11/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/01/2024
 ms.topic: conceptual
+ms.custom: evergreen
 ms.author: freddyk
+ms.reviewer: jswymer
 ---
 
 # Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen
 
-To improve the login time for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], extensions should no longer use the **OnBeforeCompanyOpen** and **OnAfterCompanyOpen** events. Following are some recommended patterns to use in place of these events.
+To improve the login time for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], extensions should no longer use the **OnBeforeCompanyOpen** and **OnAfterCompanyOpen** events. Following are some recommended patterns to use in place of these events.
 
 - Move the code to the actual usage of the extension.
 - Code written on the subscribers that are called from these triggers must be safe. Every **Get**, **Modify**, **Delete**, and **Insert** operation must be written with `if...then`, to avoid raising conditions that could prevent user from signing in.
@@ -27,7 +25,7 @@ To improve the login time for [!INCLUDE[d365fin_long_md](../includes/d365fin_lon
 
 - If you're inserting data for a newly created company, we recommend subscribing to **OnCompanyInitialize** from Codeunit 2 instead. Use Installation or Upgrade code for the extension, or to set up on the first usage and if this isn't possible only then **OnCompanyInitialize** should be used to populate data for new companies, since this runs after every upgrade.
 
-## See Also
+## Related information
 
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-[Rules and Guidelines for AL Code](apptest-overview.md)  
+[Checklist for submitting your app](../developer/devenv-checklist-submission.md)  
+[Rules and guidelines for AL code](apptest-overview.md)  

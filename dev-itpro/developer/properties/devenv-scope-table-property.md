@@ -1,11 +1,7 @@
 ---
 title: "Scope (Table) Property"
 description: The scope property for tables sets whether the scope is cloud or on-prem in AL.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -42,7 +38,7 @@ table 50105 "Retention Period"
 }
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Scope Property](devenv-scope-property.md)  

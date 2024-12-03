@@ -1,14 +1,10 @@
 ---
-title: "AVS Error AVS0002"
+title: AVS Error AVS0002
 description: "The runtime version '{0}' of the extension is too recent for the release of Business Central being validated. The latest supported runtime version is '{1}'."
 ms.author: thpeder
-ms.custom: na
-ms.date: 02/05/2022
-ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 04/26/2024
+ms.reviewer: jswymer
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: thpeder
 ---
 
@@ -22,7 +18,7 @@ The runtime version '{0}' of the extension is too recent for the release of [!IN
 
 In the app.json file of the app you must specify the latest supported runtime version or lower. For more information, see [app.json file](../devenv-json-files.md#appjson-file) and [Choosing Runtime Version in AL](../devenv-choosing-runtime.md).
 
-## See Also
+## Related information
 
-[Get Started with AL](../devenv-get-started.md)  
+[Get started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

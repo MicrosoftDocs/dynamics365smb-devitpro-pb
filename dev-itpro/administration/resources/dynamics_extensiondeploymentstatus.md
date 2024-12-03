@@ -1,13 +1,12 @@
 ---
-title: extensionDeploymentStatus resource type | Microsoft Docs
+title: extensionDeploymentStatus resource type
 description: An extension deployment status object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # extensionDeploymentStatus resource type
@@ -59,5 +58,5 @@ Here is a JSON representation of the extensionDeploymentStatus resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET extensionDeploymentStatus](../api/dynamics_extensiondeploymentstatus_get.md)  

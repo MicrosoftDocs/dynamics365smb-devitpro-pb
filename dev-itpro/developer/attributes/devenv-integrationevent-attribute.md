@@ -1,26 +1,23 @@
 ---
-title: "IntegrationEvent Attribute"
+title: "IntegrationEvent attribute"
 description: "Specifies that the method is published as an integration type event."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# IntegrationEvent Attribute
+# IntegrationEvent attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
 Specifies that the method is published as an integration type event.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -94,7 +91,7 @@ codeunit 50103 MySubscribingCodeunit
 }
 ```
 
-## See Also  
+## Related information  
 [AL Method Reference](../methods-auto/library.md)  
 [Events in AL](../devenv-events-in-al.md)  
 [Publishing Events](../devenv-publishing-events.md)   

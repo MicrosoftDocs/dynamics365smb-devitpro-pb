@@ -1,12 +1,10 @@
 ---
 title: "Publish a Web Service"
 description: Explains how to publish page, query, and codeunits as web services.
-ms.custom: na
+ms.custom: bap-template
 author: jswymer
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 01/26/2024
+ms.reviewer: jswyme
 ms.topic: conceptual
 translation.priority.ht: 
   - da-dk
@@ -96,22 +94,30 @@ You can verify the availability of that web service by using a browser. Or choos
     |Web service type|Syntax|Example|  
     |----------------------|------------|-------------|  
     |API| See [Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online](../api-reference/v2.0/endpoints-apis-for-dynamics.md)| 
-    |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\('*CompanyName*'\)|https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/OData/Company\('CRONUS International Ltd.'\)|  
+    |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\('*CompanyName*'\)|https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/ODataV4/Company\('CRONUS International Ltd.'\)|  
+    |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\(Id=guid\) | https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/ODataV4/Company\(Id=a4bc6898-4591-4cf7-9990-293a0a0d66b7\)|  
     |SOAP|https://*Server*:*SOAPWebServicePort*/*ServerInstance*/WS/*CompanyName*/services/|https://localhost:7047/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/WS/CRONUS International Ltd./services/| 
 
-     The company name is case-sensitive.  
-
+     The company name is case-sensitive. For OData, it is recommended to use the *Company(Id=guid)* syntax as the company ID is immutable, whereas the company name can be changed by an administrator.
   
 2.  Review the information that is displayed in the browser. Verify that you can see the name of the web service that you've created.  
   
-When you access a web service, and you want to write data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must specify the company name. You can specify the company as part of the URI as shown in the examples. Or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service and are both valid URIs.  
+When you access a web service, and you want to write data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must specify the company name or company id. You can specify the company as part of the URI as shown in the examples. Or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service endpoint and are all valid URIs.  
+
+Recommended syntax:
+
+``` 
+https://localhost:7048/<serverinstance>/ODataV4/Company(Id=a4bc6898-4591-4cf7-9990-293a0a0d66b7)/Customer  
+```  
+
+Alternative syntax (also supported):
+
+```  
+https://localhost:7048/<serverinstance>/ODataV4/Company('CRONUS International Ltd.')/Customer  
+```  
   
 ```  
-https://localhost:7048/<serverinstance>/OData/Company('CRONUS International Ltd.')/Customer  
-```  
-  
-```  
-https://localhost:7048/<serverinstance>/OData/Customer?company='CRONUS International Ltd.'  
+https://localhost:7048/<serverinstance>/ODataV4/Customer?company='CRONUS International Ltd.'  
 ```  
 
 ## Unpublishing an OData or SOAP web service
@@ -121,8 +127,22 @@ To unpublish a webs service, clear the **Published** check box. This step will m
 > [!IMPORTANT]
 > When you unpublish a web service that is marked for **All Tenants**, other web services that use the same object will be automatically unpublished, even though the **Published** check box is still selected for these web services.
 
-## See Also
+## Tips for UI pages exposed as OData or SOAP web services
 
-[Web Services](web-services.md)
+### Use API pages/queries instead
 
+Avoid using standard UI pages to expose as web service endpoints. Many things, such as fact boxes, aren't returned in web service results, but use resources to prepare. Instead, define and use API pages/queries for your web service integrations. 
+
+For more information, see [Web services performance](web-service-performance.md).
+
+### Need a unique row identifier?
+
+Should you need a unique row identifier in your OData or SOAP web service endpoint, then consider adding the SystemId field to the page. The SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. 
+
+For more information, see [System Fields](../developer/devenv-table-system-fields.md).
+
+
+## Related information
+
+[Web Services](web-services.md)   
 [Web Service Publish Failure Telemetry](web-service-telemetry.md#web-service-publish-failure-telemetry)

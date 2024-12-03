@@ -1,18 +1,17 @@
 ---
 title:  Azure Function Integration Telemetry
-description: Learn about telemetry on Azure Function integrations with Business Central  
+description: Learn about telemetry on Azure Function integrations with Business Central
 author: KennieNP
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, telemetry
 ms.date: 08/16/2022
 ms.author: kepontop
+ms.reviewer: jswymer
 ---
 # Analyzing Azure Function Integration Telemetry
 
-Azure Function integration telemetry gathers data about the success or failure of calls from Business Central to Azure Functions using the [Azure Function module](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20Function/readme.md) in the System Application.
+Azure Function integration telemetry gathers data about the success or failure of calls from Business Central to Azure Functions using the [Azure Function module](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function) in the System Application.
 
 Failed operations result in a trace log entry that includes a reason for the failure.
 
@@ -32,7 +31,6 @@ The following dimensions are available in all events described below and not inc
 |companyName|[!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)]|
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
-
 
 ## Request sent to Azure function succeeded
 
@@ -73,7 +71,7 @@ Occurs when a request to an Azure function hosted from the URL {alFunctionHost} 
 |alStatusCode| The HTTP status code for the request. |
 
 
-### Sample KQL code 
+### Sample KQL code
 This KQL code can help you get started analyzing and alerting on request failures to Azure functions:
 
 ```kql
@@ -113,7 +111,7 @@ Occurs when the environment was scheduled to be updated, but it wasn't possible 
 |eventId|**AL0000I75**|
 |alErrorText|The reason for the failure.|
 
-### Sample KQL code 
+### Sample KQL code
 This KQL code can help you get started analyzing and alerting on failures to authorize to Azure functions:
 
 ```kql
@@ -136,10 +134,10 @@ traces
 
 -->
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[Alert on Telemetry](telemetry-alert.md)   
-[Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)   
-[Overview of the System Application](../developer/devenv-system-application-overview.md)   
+[Alert on Telemetry](telemetry-alert.md)  
+[Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)  
+[Overview of the Application](../developer/devenv-system-application-overview.md)  

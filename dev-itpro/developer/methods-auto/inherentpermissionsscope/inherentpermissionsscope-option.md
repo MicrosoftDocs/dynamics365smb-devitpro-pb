@@ -1,14 +1,11 @@
 ---
-title: "InherentPermissionsScope System Option"
+title: "InherentPermissionsScope system option"
 description: "The different types of scope that the InherentPermissions attribute can apply to."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/06/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -29,7 +26,10 @@ The different types of scope that the InherentPermissions attribute can apply to
 
 ## Remarks
 
-*InherentPermissionScope* is used as a parameter with InherentPermissions attribute, which can override the entitlements. It's an optional method and the default value for InherentPermissionScope is *Both* that includes permissions and entitlements. To learn more about syntax and usage of InherentPermissions attribute, see [InherentPermissions Attribute](../../attributes/devenv-inherentpermissions-attribute.md). 
+*InherentPermissionScope* is used as a parameter with InherentPermissions attribute, which can override the entitlements. It's an optional method and the default value for InherentPermissionScope is *Both* that includes permissions and entitlements. To learn more about syntax and usage of InherentPermissions attribute, see [InherentPermissions Attribute](../../attributes/devenv-inherentpermissions-attribute.md).
+
+> [!NOTE]
+> You can use inherent permissions only for objects within the same extension.
 
 ## Example
 
@@ -41,7 +41,7 @@ The different types of scope that the InherentPermissions attribute can apply to
 [InherentPermissions(PermissionObjectType:Table, Database:MyTable, 'x', InherentPermissionScope:Both)]
 ```
 
-## See Also  
+## Related information  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Inherent Permissions](../../devenv-inherent-permissions.md)  

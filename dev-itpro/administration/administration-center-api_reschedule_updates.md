@@ -3,15 +3,13 @@ title: Business Central Admin Center API - Reschedule Updates
 description: Learn about the Business Central administration center API for rescheduling updates.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# Reschedule Updates
+# Business Central Admin Center API - Reschedule Updates
 
 Allows for the management of scheduled updates such as rescheduling the update to a run on or after a specific date within a provided range.
 
@@ -20,7 +18,7 @@ Allows for the management of scheduled updates such as rescheduling the update t
 Get information about updates that have already been scheduled for a specific environment.
 
 ```
-GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/upgrade
+GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 ### Route Parameters
@@ -64,7 +62,7 @@ Reschedule an update, if able.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/upgrade
+PUT /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 ### Route Parameters
@@ -97,7 +95,7 @@ PUT /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}
    - target: {applicationFamily}/{environmentName}
 
 
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

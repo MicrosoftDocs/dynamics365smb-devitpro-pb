@@ -3,13 +3,10 @@ title: Granting permissions to manage databases
 description: Learn how to set database owner and security admin permissions in SQL Server for your Business Central solution.
 author: jswymer
 
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/01/2021
+ms.date: 10/26/2024
+ms.reviewer: jswymer
 ---
 # Granting Permissions to Manage [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases in SQL Server
 
@@ -17,24 +14,24 @@ Special permissions are required in SQL Server to create and manage [!INCLUDE[pr
 
 ## Permissions for using and creating databases
   
-The administrator who installs [!INCLUDE[prod_short](../developer/includes/prod_short.md)] automatically has access to the database. To give another user permission to create new databases, grant that user the **sysadmin** Server Role for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] SQL Server instance in SQL Server Management Studio.  
+The administrator who installs [!INCLUDE[prod_short](../developer/includes/prod_short.md)] automatically has access to the database. To give another user permission to create new databases, grant that user the **dbcreator** Server Role for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] SQL Server instance in SQL Server Management Studio.  
   
 > [!NOTE]  
 > The administrator must also have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] developer's license to use the development environment, and be assigned the SUPER permission set.  
   
 In the Object Explorer pane in SQL Server Management Studio, follow these steps after connecting to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] SQL Server instance:  
   
-1.  Expand the **Security** node, right-click **Logins**, and choose **New Login**.  
+1. Expand the **Security** node, right-click **Logins**, and select **New Login**.  
   
-     If the administrator already has a login, right-click the user and choose **Properties**. Then go to step 4.  
+   If the administrator already has a login, right-click the user and select **Properties**. Then go to step 4.  
   
-2.  In the **Login – New** dialog box, select **Search**.  
+1. In the **Login – New** dialog box, select **Search**.  
   
-3.  In the **Select User or Group** dialog box, select a valid Active Directory user.  
+1. In the **Select User or Group** dialog box, select a valid Active Directory user.  
   
-4.  In the **Login – New** dialog box, under **Select a Page**, choose **Server Roles**. Select the **sysadmin** check box.  
+1. In the **Login – New** dialog box, under **Select a Page**, select **Server Roles**. Select the **dbcreator** check box.  
   
-5.  Choose the **OK** button to close the **Login – New** dialog box.  
+1. Select the **OK** button to close the **Login – New** dialog box.  
   
 When administrators create [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases, the account running [!INCLUDE[server](../developer/includes/server.md)] is automatically granted the db\_owner database role for these databases.  
   
@@ -46,26 +43,22 @@ To grant permission to manage companies, objects, and licenses to additional adm
   
 To grant the db_owner role on a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server Management Studio, follow these steps:  
   
-1.  If the administrator is not already a SQL Server login, add the administrator as a login by following the first three steps in the procedure above.  
+1. If the administrator is not already a SQL Server login, add the administrator as a login by following the first three steps in the procedure above.  
+1. Select the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, then **Security**, then right-click **Users** and select **New User**.  
   
-2.  Select the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, then **Security**, then right-click **Users** and choose **New User**.  
+   Select the button at the right of the **Login Name** field to open the **Select Login** dialog box.  
   
-     Choose the button at the right of the **Login Name** field to open the **Select Login** dialog box.  
+1. Select the **Browse** button, select the check box for the relevant login, and then select the **OK** button.  
+1. Select the **OK** button to exit the **Select Login** dialog box.  
+1. Enter a **User name** for the user.  
   
-3.  Choose the **Browse** button, select the check box for the relevant login, and then choose the **OK** button.  
+   This value can be the same as the login name.  
   
-4.  Choose the **OK** button to exit the **Select Login** dialog box.  
+1. In the **Database User - New** dialog box, under **Select a Page**, select In the **Database role membership**.  
+1. Select the **db_owner** check box.  
+1. Select the **OK** button to exit the **Database User – New** dialog box.  
   
-5.  Enter a **User name** for the user.  
+## Related information
   
-     This can be the same as the login name.  
-  
-6.  In the **Database User - New** dialog box, under **Select a Page**, choose In the **Database role membership**.  
-  
-7.  Select the **db_owner** check box.  
-  
-8.  Choose the **OK** button to exit the **Database User – New** dialog box.  
-  
-## See Also  
-[Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
-[Security and Protection](security-and-protection.md)  
+[Installation considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
+[Security and protection](security-and-protection.md)  

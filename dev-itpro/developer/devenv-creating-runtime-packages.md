@@ -2,13 +2,10 @@
 title: Create runtime packages for Business Central on-premises
 description: Describes how you can create runtime packages used for distribution of extensions for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/03/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create runtime packages for Business Central on-premises
@@ -19,12 +16,11 @@ When the runtime package is generated on the server, the developer license is ch
 
 ## Start using runtime packages
 
-The first step in using runtime packages is to have an extension developed and published to an on-premise instance.
-Next, use the following PowerShell command to connect to the server, find the extension, and download the runtime package.
+The first step in using runtime packages is to have an extension developed and published to an on-premise instance. Next, use the following PowerShell command to connect to the server, find the extension, and download the runtime package.
 
 `Get-NavAppRuntimePackage`
 
-For more information about this cmdlet, see [Get-NAVAppRuntimePackage cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/Get-NAVAppRuntimePackage?view=businesscentral-ps).
+Learn more about this cmdlet in [Get-NAVAppRuntimePackage cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/Get-NAVAppRuntimePackage?view=businesscentral-ps).
 
 The following example gets the NAV App runtime package with the provided name and version.
 
@@ -51,7 +47,7 @@ The Repair-NAVApp cmdlet requires that the runtime package includes the source c
 
 ## Limitations
 
-The limitation of runtime packages is that they only work for on-premise installations, so you can't submit them to AppSource. For more information about the extension requirements for AppSource, see [Technical Validation Checklist](devenv-checklist-submission.md). Moreover, debugging into an extension to view the source code isn't allowed by default; the `allowDebugging` flag is by default set to `false`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
+The limitation of runtime packages is that they only work for on-premise installations, so you can't submit them to AppSource. Learn more about the extension requirements for AppSource in[Technical validation checklist](devenv-checklist-submission.md). Moreover, debugging into an extension to view the source code isn't allowed by default; the `allowDebugging` flag is by default set to `false`. Learn more in [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
 > [!NOTE]  
 > Runtime packages are guaranteed to work only if published to a platform with the same version as the one where they were produced.
@@ -59,7 +55,7 @@ The limitation of runtime packages is that they only work for on-premise install
 > [!NOTE]  
 > If you set the `showMyCode` flag to `true` when running the `Get-NavAppRuntimePackage` cmdlet, you can enable debugging and thereby also allow viewing the source code.
 
-## See Also
+## Related information
 
 [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp)  
 [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)

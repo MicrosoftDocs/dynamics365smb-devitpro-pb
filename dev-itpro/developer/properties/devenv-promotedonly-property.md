@@ -1,14 +1,11 @@
 ---
-title: "PromotedOnly Property"
+title: "PromotedOnly property"
 description: "Specifies whether the selected action is promoted only, which means that it will appear only on the Home tab in the ribbon and not on the tab (ActionContainer control) where it is defined."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -46,7 +43,7 @@ This property is only applicable when the [Promoted Property](devenv-promoted-pr
   
 This property in not relevant on the tablet and phone because only promoted actions are displayed on these clients.  
   
-## See Also  
+## Related information  
 
 [Actions Overview](../devenv-actions-overview.md)  
 [PromotedOnly Property](devenv-promotedonly-property.md)  

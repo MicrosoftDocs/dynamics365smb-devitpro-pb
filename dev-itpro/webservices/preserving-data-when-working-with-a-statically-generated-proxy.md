@@ -1,10 +1,6 @@
 ---
 title: "Preserving Data When Working with a Statically Generated Proxy"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Preserving Data When Working with a Statically Generated Proxy
@@ -38,5 +34,5 @@ Spotsmeyer's Furnishings
   
  Finally, switch back to the console application without updating the web reference and run the code. Instead of getting an error message that indicates that the web request does not match the web service description, you do not get an error message, and `Console.WriteLine` shows an empty line.  
   
-## See Also  
+## Related information  
  [Web Services Overview](web-services.md)

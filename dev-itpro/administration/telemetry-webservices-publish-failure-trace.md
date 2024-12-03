@@ -7,7 +7,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 06/21/2023
 ms.author: kepontop
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
+
 ms-custom: bap-template
 ---
 
@@ -177,7 +177,7 @@ traces
 
 [!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
-## See also
+## Related information
 
 [Telemetry overview](telemetry-overview.md)  
 [Enable sending telemetry to Application Insights](telemetry-enable-application-insights.md)  

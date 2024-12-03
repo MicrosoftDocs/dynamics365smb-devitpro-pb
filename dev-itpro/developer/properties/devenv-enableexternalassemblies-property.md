@@ -1,14 +1,11 @@
 ---
-title: "EnableExternalAssemblies Property"
+title: "EnableExternalAssemblies property"
 description: "Sets whether external Microsoft .NET assemblies can be used on a report."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,6 +44,6 @@ For more information about referencing assemblies, see [Adding Custom Code to a 
 
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] cannot verify assemblies and protect against malicious sources that may be harmful to your computer. You should set the EnableExternalAssemblies property to **true** only if you can ensure that assemblies on the report come from a trusted source.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

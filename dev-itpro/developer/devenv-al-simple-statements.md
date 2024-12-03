@@ -1,17 +1,17 @@
 ---
-title: "AL simple statements"
+title: AL simple statements
 description: Describes the simple, single-line statements in AL for Business Central with examples
-ms.custom: na
-ms.date: 09/21/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/01/2024
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
+ms.collection: get-started
+ms.reviewer: solsen
 ---
 
-# AL Simple Statements
+# AL simple statements
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 AL simple statements are single-line statements that are executed sequentially and don't alter the flow of code execution. This article explains some of the simple statements in AL.
 
@@ -91,6 +91,7 @@ String += "World";
 ```
 
 ## Method statements
+
 You use method statements to run either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 
 
 ## AssertError statements
@@ -108,6 +109,7 @@ An error was expected inside an AssertError statement.
 ```  
 
 ### Example
+
 To create a test method to test the result of a failure of a `CheckDate` method that you've defined, you can use the following code. This example requires that you create a method called `CheckDate` to check whether the date is valid for the customized application.  
 
 ```AL  
@@ -217,9 +219,9 @@ with CustLedgEntry do begin
 end;  
 ```  
 
-## See Also
+## Related information
 
-[Control Statements](devenv-al-control-statements.md)  
+[Control statements](devenv-al-control-statements.md)  
 [Methods](devenv-al-methods.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
-[AL Essential Methods](devenv-essential-al-methods.md)
+[AL essential methods](devenv-essential-al-methods.md)

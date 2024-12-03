@@ -1,36 +1,60 @@
 ---
-title: "Launch JSON file"
-description: "Description of the settings of the launch JSON file for AL in Business Central."
+title: Launch JSON file
+description: Description of the settings of the launch JSON file for AL in Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 08/30/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/05/2024
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Launch JSON file
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-The `launch.json` file contains information about the server that the extension launches on. The `launch.json` file has multiple configuration options available, for example, for snapshot debugging and attach debugging. In Visual Studio Code, you can choose to add a new configuration to the `launch.json` file, by selecting the **Add Configuration** button. The following configuration options are available:
+The `launch.json` file contains information about the server that the extension launches on. The `launch.json` file has multiple configuration options available, for example, for snapshot debugging and attach debugging. In Visual Studio Code, you can choose to add a new configuration to the `launch.json` file, by selecting the **Add Configuration** button. 
 
-- [Publish to Microsoft cloud sandbox](devenv-json-launch-file.md#publish-to-cloud-settings)
-- [Publish to your own server](devenv-json-launch-file.md#publish-to-local-server-settings)
-- [Attach to the client on the cloud sandbox or on your own server](devenv-json-launch-file.md#attach-configuration-settings)
-- [Initialize a snapshot debugging session on cloud or on your own server](devenv-json-launch-file.md#initialize-snapshot-debugging-settings)
+:::image type="content" source="media/launch-configuration.png" alt-text="Shows the different configurations available in the lauch.json file for the Business Central development environment" lightbox="media/launch-configuration.png":::
 
-In the following sections, you can find a description of the parameters that are available for each of the configurations. You'll also find a description of how to create a [global or workspace launch configuration file](devenv-json-launch-file.md#global-and-workspace-launch-configuration).
+The following configuration options are available:
 
-## Publishing settings for cloud and local server
+- [Attach to the client on the cloud sandbox](devenv-json-launch-file.md#attach-to-client-on-cloud-sandbox-settings-launchjson)
+- [Attach to the client on your own server](devenv-json-launch-file.md#attach-to-client-on-your-own-server-launchjson)
+- [Initialize a snapshot debugging session on cloud sandbox](devenv-json-launch-file.md#initialize-a-snapshot-debugging-session-on-a-cloud-production-environment-launchjson)
+- [Initialize a snapshot debugging session on your own server](devenv-json-launch-file.md#initialize-a-snapshot-debugging-session-on-your-own-server-launchjson)
+- [Publish to Microsoft cloud sandbox](devenv-json-launch-file.md#publish-to-cloud-settings-launchjson)
+- [Publish to your own server](devenv-json-launch-file.md#publish-to-local-server-settings-launchjson)
 
-The following table describes the settings in the `launch.json` file. The `launch.json` file has two configurations depending on whether the extension is published to a local server or to the cloud.
+In the following sections, you can find a description of the parameters that are available for each of the configurations. You'll also find a description of how to create a [user or workspace launch configuration file](devenv-json-launch-file.md#user-and-workspace-launch-configuration).
 
-### Publish to local server settings
 
-The settings for publishing to a local server are described in the following table.
+## Publish to local server settings (launch.json)
+
+Here's an example of a configuration file for publishing to a local server.
+
+``` json
+{
+    "name": "Publish: Your own server",        // maybe change the configuration name
+    "type": "al",
+    "request": "launch",
+    "environmentType": "OnPrem",
+    "server": "http://bcserver",               // change this to point to your instance URI
+    "serverInstance": "BC",                    // change this to point to your instance
+    "authentication": "UserPassword",          // change this to your auth setup
+    "startupObjectId": 22,                     // change this to your choice of startup object
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
+    "launchBrowser": true,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500, 
+    "numberOfSqlStatements": 10,
+    "tenant": "default",                       // change this to point to your tenant
+    "usePublicURLFromServer": true
+}
+```
+
+The following table describes the settings in the `launch.json` file for publishing to a local server.
 
 <!-- NEW -->
 |Setting|Mandatory|Value|
@@ -99,9 +123,29 @@ The settings for publishing to a local server are described in the following tab
 |usePublicURLFromServer|No|Specifies whether to override the NST setting and instead use the host provided in the `launch.json` server property. When set to `false`, the `PublicWebBaseURL` server (NST) setting will be overridden with the server parameter of the `launch.json` when launching the browser using that specific launch configuration. <br>**Note:**<br>This option only affects launching debug sessions to on-premise servers.<br> When set to `true`, the `PublicWebBaseURL` server setting will be used.|
 -->
 
-### Publish to cloud settings
+## Publish to cloud settings (launch.json)
 
-The settings for publishing to a cloud sandbox are described in the following table.
+Here's an example of a configuration file for publishing to a cloud sandbox.
+
+``` json
+{
+    "name": "Publish: Microsoft cloud sandbox", // maybe change the configuration name
+    "type": "al",
+    "request": "launch",
+    "environmentType": "Sandbox",
+    "environmentName": "sandbox",               // change this to point to your sandbox environment
+    "startupObjectId": 22,                      // change this to your choice of startup object
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
+    "launchBrowser": true,
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10
+}
+```
+
+The following table describes the settings in the `launch.json` file for publishing to a cloud sandbox.
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
@@ -125,13 +169,32 @@ The settings for publishing to a cloud sandbox are described in the following ta
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps aren't part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
 
-## Attach configuration settings
 
-The following tables describe the settings in the `launch.json` file for attach configuration settings. The attach configuration is used for specific debugging scenarios where you don't want to publish and invoke functionality to debug it. For more information, see [Attach and debug next](devenv-attach-debug-next.md).
+## Attach to client on cloud sandbox settings (launch.json)
 
-### Attach to client on cloud sandbox settings
+The attach configuration is used for specific debugging scenarios where you don't want to publish and invoke functionality to debug it. For more information, see [Attach and debug next](devenv-attach-debug-next.md).
 
-The settings for attaching to a client on a cloud sandbox are described in the following table.
+Here's an example of a configuration file for attaching to a client on a cloud sandbox.
+
+``` json
+{
+    "name": "Attach: Microsoft cloud sandbox",  // maybe change the configuration name
+    "type": "al",
+    "request": "attach",
+    "environmentType": "Sandbox",
+    "environmentName": "sandbox",               // change this to point to your sandbox environment
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "WebServiceClient"
+}
+```
+
+The following table describes the settings in the `launch.json` file for attaching to a client on a cloud sandbox.
+
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
@@ -149,7 +212,34 @@ The settings for attaching to a client on a cloud sandbox are described in the f
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 
 
-### Attach to client on your own server
+## Attach to client on your own server (launch.json)
+
+The attach configuration is used for specific debugging scenarios where you don't want to publish and invoke functionality to debug it. For more information, see [Attach and debug next](devenv-attach-debug-next.md).
+
+Here's an example of a configuration file for attaching to a client on your own server.
+
+``` json
+{
+    "name": "Publish: Your own server",        // maybe change the configuration name
+    "type": "al",
+    "request": "attach",
+    "environmentType": "OnPrem",
+    "server": "http://bcserver",               // change this to point to your instance URI
+    "serverInstance": "BC",                    // change this to point to your instance
+    "authentication": "UserPassword",          // change this to your auth setup
+    "breakOnError": "All",
+    "breakOnRecordWrite": "None",
+    "enableSqlInformationDebugger": true,
+    "enableLongRunningSqlStatements": true,
+    "longRunningSqlStatementsThreshold": 500,  
+    "numberOfSqlStatements": 10,
+    "breakOnNext": "WebServiceClient",
+    "tenant": "default",                       // change this to point to your tenant
+}
+```
+
+The following table describes the settings in the `launch.json` file for attaching to a client on your own server.
+
 
 The settings for attaching to a client on your own server are described in the following table.
 
@@ -172,13 +262,25 @@ The settings for attaching to a client on your own server are described in the f
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |tenant|Yes|For an on-premise server, this parameter must contain a tenant name, for example: MyTenant.|
 
-## Initialize snapshot debugging settings
+## Initialize a snapshot debugging session on a cloud production environment (launch.json)
 
-The following tables describe the settings in the `launch.json` file for snapshot configuration settings. Snapshot debugging allows you to record AL code that runs on the server, and when it has completed, you can debug the recorded *snapshot* in Visual Studio Code. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
+Snapshot debugging allows you to record AL code that runs on the server, and when it has completed, you can debug the recorded *snapshot* in Visual Studio Code. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
 
-### Initialize a snapshot debugging session on a cloud production environment
+Here's an example of a configuration file for snapshot debugging on a cloud production environment.
 
-The settings for snapshot debugging on a cloud production environment are described in the following table.
+``` json
+{
+    "name": "snapshotInitialize: Microsoft production cloud",  // maybe change the configuration name
+    "type": "al",
+    "request": "snapshotInitialize",
+    "environmentType": "Production",                           // change this if you want to debug a sandbox environment 
+    "environmentName": "production",                           // change this to point to your online environment
+    "breakOnNext": "WebClient",
+    "executionContext": "DebugAndProfile"
+}
+```
+
+The following table describes the settings in the `launch.json` file for snapshot debugging on a cloud production environment.
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
@@ -195,9 +297,28 @@ The settings for snapshot debugging on a cloud production environment are descri
 |profilingType|Yes|Specifies the profiling type to be used. There are two options: <br> `Instrumentation`, which means that if profiling is enabled then all frames executed will be measured for their total time <br>`Sampling`, which means that if profiling is enabled then frames will be collected and aggregated based on a sample interval. This option can only be used with the `executionContext` set to `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md|
 |profileSamplingInterval|No| Specifies the sampling interval in milliseconds when the `Sampling` profiling type is specified. The default value is 100ms. Options are `50`, `100`, or `150` ms.|
 
-### Initialize a snapshot debugging session on your own server
+## Initialize a snapshot debugging session on your own server (launch.json)
 
-The settings for snapshot debugging on your own server are described in the following table.
+Snapshot debugging allows you to record AL code that runs on the server, and when it has completed, you can debug the recorded *snapshot* in Visual Studio Code. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
+
+Here's an example of a configuration file for snapshot debugging on your own server
+
+``` json
+{
+    "name": "snapshotInitialize: Your own server",  // maybe change the configuration name
+    "type": "al",
+    "request": "snapshotInitialize",
+    "environmentType": "OnPrem",
+    "server": "http://bcserver",                    // change this to point to your instance URI
+    "serverInstance": "BC",                         // change this to point to your instance
+    "authentication": "UserPassword",               // change this to your auth setup
+    "breakOnNext": "WebClient",
+    "executionContext": "DebugAndProfile"
+}
+```
+
+The following table describes the settings in the `launch.json` file for snapshot debugging on your own server.
+
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
@@ -218,20 +339,20 @@ The settings for snapshot debugging on your own server are described in the foll
 |profilingType|Yes|Specifies the profiling type to be used. There are two options: <br> `Instrumentation`, which means that if profiling is enabled then all frames executed will be measured for their total time <br>`Sampling`, which means that if profiling is enabled then frames will be collected and aggregated based on a sample interval. This option can only be used with the `executionContext` set to `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md).|
 |profileSamplingInterval|No| Specifies the sampling interval in milliseconds when the `Sampling` profiling type is specified. The default value is 100ms. Options are `50`, `100`, or `150` ms.|
 
-## Global and workspace launch configuration
+## User and workspace launch configuration
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. This allows for a centralized configuration of projects. A local `launch.json` file overrides the workspace and global configuration. A workspace launch configuration overrides the launch configuration specified in the global `settings.json` file.
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. This allows for a centralized configuration of projects. A local `launch.json` file overrides the workspace and user configuration. A workspace launch configuration overrides the launch configuration specified in the user `settings.json` file.
 
 > [!NOTE]  
-> If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the global `settings.json` file won't be able to override it.
+> If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the user `settings.json` file won't be able to override it.
 
-## See Also
+## Related information
 
 [JSON files](devenv-json-files.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[App Identity](devenv-app-identity.md)  
+[AL development environment](devenv-reference-overview.md)  
+[App identity](devenv-app-identity.md)  
 [Debugging in AL](devenv-debugging.md)  
-[Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+[Resource exposure policy setting](devenv-security-settings-and-ip-protection.md)  
+[AL Language extension configuration](devenv-al-extension-configuration.md)  
+[Configure context-sensitive help](../help/context-sensitive-help.md)  
 [App Key Vaults](devenv-app-key-vault-overview.md)

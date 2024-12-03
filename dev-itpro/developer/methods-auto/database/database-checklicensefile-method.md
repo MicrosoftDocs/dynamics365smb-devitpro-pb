@@ -2,13 +2,10 @@
 title: "Database.CheckLicenseFile(Integer) Method"
 description: "Checks a key in the license file of the system."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/05/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,7 +40,7 @@ The license file turns on or off different system capabilities. Use this method 
 If you omit this method, the user will have the ability to continue regardless of whether the appropriate license file is open. 
 
 
-## See Also
+## Related information
 
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

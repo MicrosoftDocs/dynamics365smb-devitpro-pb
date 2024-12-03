@@ -2,22 +2,21 @@
 title: Authoring guide for Business Central
 description: Tips and tricks for authoring in MarkDown files when you extend or customize the Help for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.reviewer: na
 ms.topic: conceptual
-ms.date: 09/09/2021
+ms.date: 06/10/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Authoring Guide for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+# Authoring guide for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
-If you're contributing to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Help, or if you're customizing and extending the Microsoft content for your own solution, you'll probably want to use the same tools, processes, and style guide that Microsoft uses.  
+If you're contributing to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] help, or if you're customizing and extending the Microsoft content for your own solution, you probably want to use the same tools, processes, and style guide that Microsoft uses.  
 
 ## Resources
 
 - The [Microsoft Style Guide](/style-guide/welcome/) is published online
   
-  The content on the learn.microsoft.com site generally follows the Microsoft Style Guide. The content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] varies in certain ways, partly with product-specific terminology, and a more conservative approach to contractions, for example. Also, since navigation in the [!INCLUDE [prod_short](../includes/prod_short.md)] user interface is different from that of other Dynamics 365 apps, our guidance for steps that describe such navigation is slightly different. For more information, see the [Write for accessibility](#write-for-accessibility) section.  
+  The content on the learn.microsoft.com site generally follows the Microsoft Style Guide. The content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] varies in certain ways, partly with product-specific terminology, and a more conservative approach to contractions, for example. Also, since navigation in the [!INCLUDE [prod_short](../includes/prod_short.md)] user interface is different from that of other Dynamics 365 apps, our guidance for steps that describe such navigation is slightly different. Learn more in the [Write for accessibility](#write-for-accessibility) section.  
 - [Contribute to the Help](contributor-guide.md) shows you the basics of collaborating on content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
 - The [Docs Contributor Guide](/contribute/) has many tips and tricks for authoring in MarkDown
@@ -26,11 +25,11 @@ If you're contributing to the [!INCLUDE [prod_short](../developer/includes/prod_
 
 ## Write for accessibility
 
-At Microsoft, we write for accessibility, which also means that the same content applies to interactions with the software across devices, regardless of input method, for example. For more information, see [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) in the Microsoft Style Guide. The product-specific guidance is found in the [Navigation in the product](#navigation-in-the-product) section.  
+At Microsoft, we write for accessibility, which also means that the same content applies to interactions with the software across devices, regardless of input method, for example. Learn more in [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) in the Microsoft Style Guide. The product-specific guidance is found in the [Navigation in the product](#navigation-in-the-product) section.  
 
 ### Accessible illustrations
 
-The accessibility requirements also impact metadata for illustrations, such as the following:
+The accessibility requirements also affect metadata for illustrations, such as the following:
 
 ```markdown
 :::image type="content" source="media/illustration.png" alt-text="Text used by screen readers.":::
@@ -42,15 +41,15 @@ Most of Microsoft's articles use a different MarkDown formatting for illustratio
 ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do")
 ```
 
-Both formats are valid MarkDown, and both formats are supported by DocFx.exe. For more information, see [Images](/contribute/markdown-reference#images) in the Docs Contributor Guide.  
+Both formats are valid MarkDown, and both formats are supported by DocFx.exe. Learn more in [Images](/contribute/markdown-reference#images) in the Docs Contributor Guide.  
 
 ### Navigation in the product
 
 The [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) article in the Microsoft Style Guide also applies to [!INCLUDE [prod_short](../includes/prod_short.md)] content. However, the navigation in [!INCLUDE [prod_short](../includes/prod_short.md)] is different from many other Microsoft products, and users can even pin actions and personalize  their workspace in other ways that change the navigation path.  
 
-As a result, we often choose to be not specific about how to find a given action. We write *Choose the Register Payments action*, rather than try to predict if the user will find that action pinned to their action bar or hidden away under **More options**, for example.  
+As a result, we often choose to be not specific about how to find a given action. We write *Choose the Register Payments action*, rather than try to predict if the user finds that action pinned to their action bar or hidden away under **More options**, for example.  
 
-But we also have written something like this: *To map text on the vendor invoice to a specific debit account, on the Actions tab, in the General group, choose Map Text to Account, and then fill the Text-to-Account Mapping Worksheet page.*. In this example, the guidance is now outdated - the actual action is, in the default configuration of the CRONUS demonstration company, easily discoverable in the **Process** part of the action bar, which is the first place people tend to look for things. In other words, the instructions *Choose the Map Text to Account action* would have made it easier for users to find the action.  
+But we also write something like this: *To map text on the vendor invoice to a specific debit account, on the Actions tab, in the General group, choose Map Text to Account, and then fill the Text-to-Account Mapping Worksheet page.*. In this example, the guidance is now outdated - the actual action is, in the default configuration of the CRONUS demonstration company, easily discoverable in the **Process** part of the action bar, which is the first place people tend to look for things. In other words, the instructions *Choose the Map Text to Account action* would have made it easier for users to find the action.  
 
 The following table provides examples of how to write about the user interface in a helpful but future proof way, with accessibility in mind.
 
@@ -63,7 +62,7 @@ The following table provides examples of how to write about the user interface i
 
 ## Authoring in MarkDown
 
-The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content is styled using a MarkDown syntax as described in the next sections. Extended guidance is available in the [MarkDown Reference](/contribute/markdown-reference) section in the Docs Contributor Guide.
+The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content is styled using a MarkDown syntax as described in the next sections. Extended guidance is available in the [MarkDown reference](/contribute/markdown-reference) section in the Docs Contributor Guide.
 
 ### Headings
 
@@ -82,7 +81,7 @@ However, some metadata is recommended as a best practice as outlined in the foll
 |title |Used by search engines. Recommended length of 60-70 characters, including spaces. We recommend that the title metadata is the same as the first heading in the article.|
 |description|Used by search engines. Recommended length of 100-160 characters, including spaces. |
 |author     |GitHub account of the main contributor to the article. |
-|ROBOTS|Apply this tag if you customize one of Microsoft's articles and deploy that to your website. By applying the metadata `ROBOTS: NOINDEX, NOFOLLOW`, you help make sure that search engines will find the original article rather than your customized version. Users of your Help will still be able to find the customized article through context-sensitive Help links and other links.  |
+|ROBOTS|Apply this tag if you customize one of Microsoft's articles and deploy that to your website. By applying the metadata `ROBOTS: NOINDEX, NOFOLLOW`, you help make sure that search engines find the original article rather than your customized version. Users of your help are still able to find the customized article through context-sensitive help links and other links.  |
 
 ### Bulleted lists
 
@@ -132,7 +131,7 @@ MarkDown syntax for nested tables is limited, so we recommend using HTML-syntax 
 
 ### Placeholders
 
-Rather than repeating text in two or more articles, use *includes*. For more information, see [Included Markdown files](/contribute/markdown-reference#included-markdown-files).  
+Rather than repeating text in two or more articles, use *includes*. Learn more in [Included Markdown files](/contribute/markdown-reference#included-markdown-files).  
 
 For [!INCLUDE [prod_short](../includes/prod_short.md)], we use includes for boilerplate text, for content that is repeated in more than one article, and for the product name. That way, we can make changes in just one location - and so can you.  
 
@@ -166,7 +165,7 @@ These links have the format ```[link text](filename.md)```.
 Example:
 ```[Managing Payables](payables-manage-payables.md)```
 
-### Link to a article in a subfolder of the source article
+### Link to an article in a subfolder of the source article
 
 These links have the format ```[link text](subfolder/filename.md)```.
 
@@ -180,7 +179,7 @@ For example, you want to link to payables-manage-payables.md from ui-work-genera
 Here's the link:
 ```[Manage Payables](ManagePayables/payables-manage-payables.md)```
 
-### Link to a article in a different folder than source article
+### Link to an article in a different folder than source article
 
 These links have the format ```[link text](../folder/filename.md)```.
 
@@ -202,7 +201,7 @@ From within an article, you can create a link to a specific heading in the same 
 
 ```[link text](#target-heading)```
 
-target-heading is the text of the heading that you want to link to, except it's all lowercase and spaces between words are replaced with hyphens. For example, here's the link:
+*target-heading* is the text of the heading that you want to link to, except it's all lowercase and spaces between words are replaced with hyphens. For example, here's the link:
 ```[How Autoscaling Works](#how-autoscaling-works)```
 
 To the heading:
@@ -228,9 +227,9 @@ For example, to link to the heading "How autoscaling works" in the article Autos
 
 In the editor, add two blank spaces at the end of the sentence and hit return. This is used in the See Also list. (See Also must be heading 2.)
 
-### Continue steps after a non-step para
+### Continue steps after a nonstep para
 
-Enter four spaces in front of the non-step para. Otherwise, the non-step para will restart the step sequence.
+Enter four spaces in front of the nonstep para. Otherwise, the nonstep para restarts the step sequence.
 
 ### TOC
 
@@ -250,21 +249,21 @@ All fields in Business Central have tooltips; therefore, don't document fields i
 
 > "Choose a field to read a short description of the field or link to more information."
 
-For more information, see [Business Central User Assistance Model](../user-assistance.md).
+Learn more in [Business Central user assistance model](../user-assistance.md).
 
 ### Recycle content
 
-Rather than copy-pasting content that you want to surface in two or more places, use *includes*. For more information, see [Included Markdown files](/contribute/markdown-reference#included-markdown-files) in the Docs Contributor Guide.  
+Rather than copy-pasting content that you want to surface in two or more places, use *includes*. Learn more in [Included Markdown files](/contribute/markdown-reference#included-markdown-files) in the Docs Contributor Guide.  
 
 ### Article titles
 
 - Use imperative verb form for step-based articles ("Pay vendors").
-- Use gerund verb form for conceptual, non-step articles. ("Paying Vendors")
+- Use gerund verb form for conceptual, nonstep articles. ("Paying Vendors")
 - Use nouns for highest-level articles. ("Sales")
 
 ### File naming
 
-In this section, we describe best practices for file names of MarkDown files that will publish to a website. The guidelines make the files easier to work with and better for search engines to index.
+In this section, we describe best practices for file names of MarkDown files that publish to a website. The guidelines make the files easier to work with and better for search engines to index.
 
 #### Rules
 
@@ -273,7 +272,7 @@ In this section, we describe best practices for file names of MarkDown files tha
 - No more than 80 characters - this is a publishing system limit
 - Use action verbs that are specific such as develop, buy, build, troubleshoot. No -ing words.
 - No small words - don't include a, and, the, in, or, etc.
-- All files must be in markdown and use the .md file extension.
+- All files must be in Markdown and use the .md file extension.
 
     New FAQ files must use YAML format. For an example, see the `https://github.com/MicrosoftDocs/dynamics365smb-docs/blob/live/business-central/faq-copy-paste.yml` file.
 
@@ -293,7 +292,7 @@ In this section, we describe best practices for file names of MarkDown files tha
 
 ### Country-specific content
 
-To simplify content localization and translation, country-specific articles live in country-specific folders. The TOC entries live under the "Local Functionality" parent node.  
+To simplify content localization and translation, country-specific articles live in country-specific folders. Their equivalent TOC entries live under the "Local Functionality" parent node.  
 
 ## User interface text
 
@@ -327,22 +326,22 @@ Messages that users see when they work in [!INCLUDE [prod_short](../developer/in
 
     Write out all static captions, where the value is always known.  
 
-- All placeholders complicate translation, also valid ones, even when they are preceded by code comments.  
+- All placeholders complicate translation, also valid ones, even when they're preceded by code comments.  
 
-    A typical challenge is to determine the gender of the noun that a placeholder represents. This is problematic for target languages such as French, German, and Russian.
+    A typical challenge is to determine the gender of the noun that a placeholder represents, which is problematic for target languages such as French, German, and Russian.
 
     |Use|Instead of  |
     |---------|---------|
     |The document has been posted. | The %1 has been posted. (Translators can't determine the gender.) |
     |The Unit Cost field is updated. | The %1 field is updated. (Where %1 always represents "Unit Cost".)|
     |Document %1 contains invalid characters. (Where %1 represents a given document ID.) ||
-    |Option %1 is not supported. (Where %1 represents one of more options.) ||
+    |Option %1 isn't supported. (Where %1 represents one of more options.) ||
 
 - Don't place quotation marks around placeholders.
 
     However, if the placeholder represents free-text user input that is hard to distinguish, such as a payment comment on a bank transaction. The quotation marks then helps to distinguish the user input from other parts of the message.  
 
-    Example: *The payment line with transaction text '%1' is not applied.*, where %1 = `Hi - here is my payment of invoice 1223344`.  
+    Example: *The payment line with transaction text '%1' isn't applied.*, where %1 = `Hi - here is my payment of invoice 1223344`.  
 
 ### Teaching tips
 
@@ -350,14 +349,14 @@ Messages that users see when they work in [!INCLUDE [prod_short](../developer/in
 
 [!INCLUDE [ua-teaching-tips](../includes/ua-teaching-tips.md)]
 
-## See also
+## Related information
 
-[Business Central User Assistance Model](../user-assistance.md)  
-[Contribute to the Help](contributor-guide.md)  
-[Configuring the Help Experience](../deployment/configure-help.md)  
+[Business Central user assistance model](../user-assistance.md)  
+[Contribute to the help](contributor-guide.md)  
+[Configuring the help experience](../deployment/configure-help.md)  
 [Generating help with the ALDoc tool](help-aldoc-generate-help.md)  
-[Docs Contributor Guide](/contribute/)  
-[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
+[Docs contributor guide](/contribute/)  
+[Docs authoring pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)  
 [Visual Studio Code](https://code.visualstudio.com/)  
 [Atom](https://atom.io/)  

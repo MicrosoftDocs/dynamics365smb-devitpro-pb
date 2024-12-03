@@ -1,14 +1,11 @@
 ---
-title: "TestTableRelation Property"
+title: "TestTableRelation property"
 description: "Sets whether to include this field when evaluating field relations between primary and secondary indexes."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets whether to include this field when evaluating field relations between primary and secondary indexes.
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -42,7 +39,7 @@ This test is available from the **Database** option on the **File** menu. You ca
   
 If you set the ValidateTableRelation property to **false**, then you should also set the TestTableRelation property to **false**. Otherwise, a database test on the field relations in a database may fail.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [TestTableRelation](devenv-testtablerelation-property.md)   

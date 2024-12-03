@@ -2,13 +2,10 @@
 title: "Record.Init() Method"
 description: "Initializes a record in a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/02/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +20,6 @@ Initializes a record in a table.
 ```AL
  Record.Init()
 ```
-
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
@@ -67,7 +63,7 @@ The method works in the same way as the [Init Method (RecordRef)](../recordref/r
 > [!NOTE]  
 > You aren't required to call the `Init()` method every time you intend to insert a record as, the fields are already populated, either with default values or the values set by the `InitValue` property. For the use cases, where the values need to be refreshed with each iteration in a loop or if they are inserted through a parameter, you should use the `Init()` method to make sure that the record aligns with the other data in the table.
 
-## See Also
+## Related information
 
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

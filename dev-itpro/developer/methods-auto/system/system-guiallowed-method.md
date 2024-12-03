@@ -2,13 +2,10 @@
 title: "System.GuiAllowed() Method"
 description: "Checks whether the AL code can show any information on the screen."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -28,7 +25,6 @@ Ok :=   System.GuiAllowed()
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 
-
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -39,31 +35,53 @@ Ok :=   System.GuiAllowed()
 
 ## Remarks
 
-User Portal Application Server accepts GuiAllowed.  
+The `System.GuiAllowed` method returns true if the session where your AL code is running allows you to use methods that interact with the user, such as [Dialog.Open](../dialog/dialog-open-method.md), [Dialog.Update](../dialog/dialog-update-method.md), or [Dialog.Close](../dialog/dialog-close-method.md).
+
+If the same codeunit needs to run both in the UI but also in the background (in a scheduled task or with a job queue entry) or in a web service call (SOAP/OData/API), then use `if GuiAllowed() then` calls to encapsulate AL code that interact with the user.
 
 ## Example  
 
 This example shows how to use the GuiAllowed method.  
 
-```al
-var
-    Text000: Label 'Code is running on a client.';
-begin
-    if GuiAllowed then  
-     Message(Text000);  
-end;
+```AL
+if GuiAllowed then  
+    Message('Code is running on a client.');  
 ```  
 
  If the code runs on a client, which means that the user interface is available, a message box will appear with the following message.  
 
  **Code is running on a client**  
 
- If the code runs on Microsoft Dynamics NAV Application Server, then the message will not be displayed.  
+If the code runs in a web service call or in the background, then the message will not be displayed.  
 
-> [!NOTE]  
-> If the [Message Method \(Dialog\)](../../methods-auto/dialog/dialog-message-method.md) or the [Error Method \(Dialog\)](../dialog/dialog-error-string-joker-method.md) is called when the code is running on Microsoft Dynamics NAV Application Server, then the message is written to the event log of the operating system. 
+## Example (Shopify integration)
 
-## See Also
+This example shows how the Shopify integration use GuiAllowed to provide feedback to the user when the code is running in the client, while allowing the business logic to also run in the background or being called from a web service.
+
+```AL
+procedure AddItemToShopify(Item: Record Item; ShopifyShop: Record "Shpfy Shop")
+var
+    ProgressDialog: Dialog;
+begin
+    if GuiAllowed then begin
+        ProgressDialog.Open(DialogMsg);
+        ProgressDialog.Update(1, SyncInformationProgressLbl);
+    end;
+
+    // business logic code here
+
+    if ShopifyShop."Sync Item Images" = ShopifyShop."Sync Item Images"::"To Shopify" then begin
+        if GuiAllowed then
+            ProgressDialog.Update(1, FinishSyncProgressLbl);
+        // business logic code here
+    end;
+
+    // some more business logic
+end;
+```  
+
+
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

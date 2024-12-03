@@ -1,14 +1,11 @@
 ---
 title: "Moving between extension scopes"
 description: "Describes how an extension in one scope can be moved into another scope in Business Central."
-ms.custom: na
 ms.author: solsen
 ms.date: 02/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Moving between extension scopes
@@ -76,6 +73,9 @@ For a definition of the different extension types and their scope, see [Extensio
 
 Publishing an AppSource app to a sandbox environment as a DEV extension is a common scenario when you want to show a preview of your app to a customer or during active development.
 
+> [!NOTE]  
+> From [!INCLUDE[prod_short](../includes/prod_short.md)] 2023 release wave 2, it's possible to install a preview of AppSource apps on customer environments without publishing them as DEV extensions. For more information, see [Technical Validation FAQ](../developer/devenv-checklist-submission-faq.md#questions-about-appsource-app-previews).
+
 ### Identity requirements for publishing an AppSource app as a DEV extension
 
 - DEV extensions should have a different app `id` because there might be other global apps published to your service and they'll collide. If you don't change the app `id`, the app that you've published from Visual Studio Code to a developer sandbox will be automatically unpublished from your environment if another user tries to install the AppSource app in their environment.
@@ -135,7 +135,7 @@ You can find the full list of requirements for PTE in the documentation for the 
 - All dependent extensions will have to be updated to use the new app `id` in their `app.json` file and to reference the objects defined in the extension by their new name and object ID.
 
 
-## See also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  

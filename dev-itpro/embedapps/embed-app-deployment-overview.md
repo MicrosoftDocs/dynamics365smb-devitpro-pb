@@ -2,13 +2,10 @@
 title: "Deploying an Embed app"
 description: Get an overview of the tasks required to deploy a Business Central Embed app to the Online service
 author: jswymer
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Embed Apps Deployment
@@ -21,7 +18,7 @@ This article provides an overview of the process for deploying an Embed App to t
 |Upload your apps to the App Repository|The apps are the individual extensions that make up your application. Apps are delivered as .app files. You upload your apps into the App Repository by using the App Management API.|[App Management API](../administration/appmanagement/app-management-overview.md)|
 |Upload the deployment package to Microsoft Lifecycle Services (LCS)|Once you have the deployment package, and your apps have been uploaded, you can deploy your package to an LCS project.|[Managing Embed Apps in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md)|
 
-## See Also
+## Related information
 
 [Embed App Overview](../deployment/embed-app-overview.md)  
 [Qualification and Onboarding](../deployment/embed-app-qualifications-onboarding.md)  

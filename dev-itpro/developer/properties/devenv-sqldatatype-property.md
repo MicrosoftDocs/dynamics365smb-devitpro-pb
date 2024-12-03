@@ -1,14 +1,11 @@
 ---
-title: "SqlDataType Property"
+title: "SqlDataType property"
 description: "Sets the data type that you want to allow in a code field."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,9 +16,9 @@ author: SusanneWindfeldPedersen
 Sets the data type that you want to allow in a code field.
 
 ## Applies to
--   Table Field
+-   Table field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -75,7 +72,7 @@ If you set SQL Data Type to Integer, then the following are true:
   > [!NOTE]  
   >  You can change the SQL Data Type of a code field from Varchar or Integer to Variant and the data in the column is changed accordingly. You cannot change the SQL Data Type of a code field from Variant to Varchar or Integer, unless there are no rows in the table or unless the field contains only an empty string in every row.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Integer Data Type](../methods-auto/library.md)  

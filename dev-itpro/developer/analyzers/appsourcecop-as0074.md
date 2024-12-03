@@ -2,13 +2,10 @@
 title: "AppSourceCop Hidden AS0074"
 description: "The Obsolete Tag must be the same across branches."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,6 +17,8 @@ The Obsolete Tag must be the same across branches.
 The Obsolete Tag must be the same across branches. This rule is only relevant only if the Major.Minor format is set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
 
 This rule verifies that the version specified as obsolete tag for objects that do not change obsolete state (not obsolete, obsolete pending, or obsolete removed) with the current version has not changed.
 
@@ -197,7 +196,7 @@ codeunit 50100 MyCodeunit
 
 The codeunit was marked as obsolete pending in the baseline without an obsolete tag. The new version of the extension specifies an obsolete version which is higher than the `obsoleteTagVersion`. This change is allowed by rule AS0074 in order to enable specifying tags without fixing the baselines. However, a diagnostic will be reported by [AS0072](appsourcecop-as0072.md).
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

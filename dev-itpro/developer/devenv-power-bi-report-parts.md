@@ -2,13 +2,12 @@
 title: Embed Power BI reports in pages
 description: Explains how to display Power BI reports on pages in Business Central
 ms.custom: bap-template
-ms.date: 09/19/2023
-ms.reviewer: na
+ms.date: 06/20/2024
 ms.topic: how-to
 ms.search.keywords: Power BI, reports, faq, errors
 author: jswymer
 ms.author: jswymer
-ms.service: dynamics365-business-central
+ms.reviewer: jswymer
 ---
 # Embed Power BI reports, scorecards, dashboards in pages
 
@@ -53,7 +52,7 @@ The following table outlines the most common objects used when adding Power BI e
 
 Learn more about the Power BI embed framework in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PowerBi/). This BCTech repo is a Microsoft open source repo that includes detailed code examples and guidelines that supplement this article.
 
-To get an overview of all Power BI objects in the base application, visit [Base-Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/base-application/) and search for *Power BI*.
+To get an overview of all Power BI objects in the base application, visit [Base-Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/base-application/module/base-application) and search for *Power BI*.
 
 
 ## Embed Power BI reports in page parts
@@ -153,7 +152,7 @@ pageextension 50100 SalesInvoicesListPwrBiExt extends "Sales Invoice List"
 }
 ```
 
-### Add multiple Power BI Report parts
+### Add multiple Power BI report parts
 
 If you want to add more than one Power BI Report part to a page, where each part can display different reports, you have to assign each part a context keyword. There are two ways to assign a context keyword, depending on the page type. 
 
@@ -273,7 +272,7 @@ pageextension 50100 SalesInvoicesListPwrBiExt extends "Sales Invoice List"
 
 ### Display same set of Power BI reports on different pages
 
-Suppose you want set up **Power BI Report** parts on different pages, where the parts have the following behavior:
+Suppose you want setup **Power BI Report** parts on different pages, where the parts have the following behavior:
 
 - They show the same report selected by the user on all pages. When the user switches to another report on one page, it switches on all pages.
 - When a report is enabled or disabled in the **Power BI Report** part on one page, it's also enabled or disabled in the parts on other pages.
@@ -332,9 +331,9 @@ pageextension 50101 SalesOrdersPwrBiExt extends "Sales Orders"
 }
 ```
 
-## Pin a specific Power Bi element to page part
+## Pin a specific Power BI element to page part
 
-The framework enables you to display a specific report, report visual, scorecard, dashboard, or dashboard tile, preventing users from switching to other elements or modifying visuals. For example, you can add a part that displays a single report visual, like the one shown in the following figure. Notice that the menu doesn't include the **Select reports**, **Next**, and **Previous** actions, which helps prevent users from accessing other reports:
+The framework enables you to display a specific report, report visual, scorecard, dashboard, or dashboard tile, preventing users from switching to other elements or modifying visuals. For example, you can add a part that displays a single report visual, like the one shown in the following figure. Notice that the menu doesn't include the **Select reports**, **Next**, and **Previous** actions, which help prevent users from accessing other reports:
 
 :::image type="content" source="../developer/media/pwr-bi-part-report-visual.svg" alt-text="Shows the action menu on a Power BI report part.":::
 
@@ -399,7 +398,7 @@ pageextension 50127 SalesInvoicesListPwrBiExt extends "Sales Invoice List"
 
 From the Power BI Embedded Report Part, users can select the **Expand** action to open the report expanded in a separate page. You can provide a similar experience by using AL code to add an action on page that opens a specific element in the expanded mode. To achieve this, you use the **Power BI Displayed Element** and **Power BI Context Settings** tables, just like when pinning a specific element to a page part. However, instead of using the **Power BI Embedded Report Part**, you embed the element in the **Power BI Element Card** page.
 
-For detailed code examples that demonstrate this scenario for all element types, go to [https://github.com/microsoft/BCTech/blob/master/samples/PowerBi/PBI23samples/PowerBi/PBI23samples/AddActionToOpenReportExpanded.PageExt.al](https://github.com/microsoft/BCTech/blob/master/samples/PowerBi/PBI23samples/PowerBi/PBI23samples/AddActionToOpenReportExpanded.PageExt.al). 
+For detailed code examples that demonstrate this scenario for all element types, go to [https://github.com/microsoft/BCTech/tree/master/samples/PowerBi/PBI23samples](https://github.com/microsoft/BCTech/tree/master/samples/PowerBi/PBI23samples). 
 
 ## Getting information about element types
 
@@ -409,7 +408,7 @@ To display a specific Power BI element, such as a report, visual, or dashboard, 
 
    - [Get reports](/rest/api/power-bi/reports/get-reports) - Typically, the embedURL has the format `https://app.powerbi.com/reportEmbed?reportId=<id>&config=<config>`. 
    - [Get dashboards](/rest/api/power-bi/dashboards/get-dashboards) - Typically, the embedURL has the format `https://app.powerbi.com/dashboardEmbed?dashboardId=<id>&config=<config`. 
-   - [Get scorecards](/rest/api/power-bi/scorecards_(preview)/get)
+   - [Get scorecards](/rest/api/power-bi/scorecards(preview)/get)
 
 - For report visuals, you also need the page name and the visual name.
 
@@ -428,10 +427,10 @@ To display a specific Power BI element, such as a report, visual, or dashboard, 
 - Dynamically changing the context (for example, by calling `SetPageContext` in the `OnAfterGetCurrRecord`) isn't recommended and could lead to unexpected results.
 - Role center pages have no triggers, which means there's no way to call the `SetPageContext` method. As a consequence, any Power BI part in the role center would have the same context: the current user's profile/role.
 
-## See also
+## Related information
 
-[Get Started with AL](devenv-get-started.md)  
-[Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  
-[Pages Overview](devenv-pages-overview.md)  
-[Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
+[Get Started with AL](devenv-get-started.md)    
+[Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)    
+[Pages Overview](devenv-pages-overview.md)    
+[Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)    
 [Extract data from Business Central](devenv-extract-data.md)   

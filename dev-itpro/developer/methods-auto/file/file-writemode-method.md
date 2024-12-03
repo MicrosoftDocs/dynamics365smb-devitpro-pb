@@ -2,13 +2,10 @@
 title: "File.WriteMode([Boolean]) Method"
 description: "Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/05/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -65,8 +62,8 @@ An instance of the [File](file-data-type.md) data type.
 ## Example  
  The following example determines whether the specified file exists. If it exists, the [WriteMode Method \(File\)](file-writemode-method.md) allows the file to be open for writing. The [Open Method \(File\)](file-open-method.md) opens the file, the [Write Method \(File\)](file-writemode-method.md) writes the text “Hello World” to the file and then the [Close Method \(File\)](file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt.
   
-```
- var
+```al
+var
     FileName: Text;
     TestFile: File;
 begin
@@ -82,7 +79,7 @@ end;
 ```  
   
 
-## See Also
+## Related information
 [File Data Type](file-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

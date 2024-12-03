@@ -2,13 +2,10 @@
 title: "JsonValue.AsTime() Method"
 description: "Converts the value in a JsonValue to a Time data type."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -23,7 +20,6 @@ Converts the value in a JsonValue to a Time data type.
 ```AL
 Result :=   JsonValue.AsTime()
 ```
-
 ## Parameters
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  
@@ -38,7 +34,7 @@ If the JsonValue does not contain a string of the format "HH:mm:ss.FFFFFFF" ( se
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## See Also
+## Related information
 [JsonValue Data Type](jsonvalue-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

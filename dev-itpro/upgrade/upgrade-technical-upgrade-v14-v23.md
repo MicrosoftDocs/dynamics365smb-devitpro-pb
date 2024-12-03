@@ -4,7 +4,6 @@ description: Describes how to do a technical upgrade from Business Central 14 to
 ms.custom: bap-template
 ms.date: 08/14/2023
 ms.reviewer: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -353,7 +352,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
 
-## See Also
+## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central 14.X to 15.X compatibility matrix](upgrade-v14-v15-compatibility.md)

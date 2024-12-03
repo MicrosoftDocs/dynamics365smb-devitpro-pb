@@ -1,10 +1,6 @@
 ---
 title: "DataItemLink Property (Reports)"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -45,7 +41,7 @@ You now have a filter on the records in the child data item. This filter only di
 SetRange("Sell-to Customer No.",Customer."No.");  
 ```  
   
-## See Also
+## Related information
 
 [OnPreDataItem Trigger](../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)   
 [DataItemLinkReference Property](./devenv-dataitemlinkreference-property.md)   

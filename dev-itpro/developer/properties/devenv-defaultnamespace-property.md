@@ -1,14 +1,11 @@
 ---
-title: "DefaultNamespace Property"
+title: "DefaultNamespace property"
 description: "Specifies the default namespace for both the IMPORT function (XmlPort) and EXPORT function (XmlPort) functions."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,7 +35,7 @@ This property specifies the default namespace for both import and export. A defa
   
 For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Namespaces Property](devenv-namespaces-property.md)   

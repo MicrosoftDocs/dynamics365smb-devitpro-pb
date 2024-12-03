@@ -2,13 +2,10 @@
 title: "System.ClearAll() Method"
 description: "Clears all internal variables (except REC variables), keys, and filters in the object and in any associated objects, such as reports, pages, codeunits, and so on that contain AL code."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -27,7 +24,6 @@ Clears all internal variables (except REC variables), keys, and filters in the o
 > This method can be invoked without specifying the data type name.
 
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
@@ -41,7 +37,7 @@ When a method is called repeatedly in the same transaction, the system retains a
 For information about the initial values of cleared variables, see the [Clear Method](../../methods-auto/system/system-clear-joker-method.md). Take into consideration that fields in a record will be initialized with the [InitValue Property](../../properties/devenv-initvalue-property.md) of the field.  
 
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

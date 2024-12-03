@@ -2,13 +2,10 @@
 title: "Page.SetSelectionFilter(var Record) Method"
 description: "Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to marked only."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/13/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -57,7 +54,7 @@ If more than one record is selected on the page, then SetSelectionFilter does th
 
 The following example shows how to use the **SetSelectionFilter** method to update the record or records from the `Contact` table that the user has selected on the current page.
 
-```
+```al
 var
     Contact: Record Contact;
     CRMIntegrationManagement: Codeunit "CRM Integration Management";
@@ -71,10 +68,11 @@ begin
     else begin
         ContactRecordRef.GetTable(Contact);
         CRMIntegrationManagement.UpdateMultipleNow(ContactRecordRef);
+    end;
 end;
 ```
 
-## See Also
+## Related information
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

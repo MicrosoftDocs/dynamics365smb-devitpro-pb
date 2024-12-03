@@ -2,13 +2,10 @@
 title: "System.HasCollectedErrors() Method"
 description: "Gets a value indicating whether errors have been collected in the current error collection scope."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/24/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -28,7 +25,6 @@ Ok :=   System.HasCollectedErrors()
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 
-
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -36,7 +32,7 @@ Ok :=   System.HasCollectedErrors()
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 
 [Collecting Errors](../../devenv-error-collection.md)  
 [System Data Type](system-data-type.md)

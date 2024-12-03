@@ -1,11 +1,7 @@
 ---
 title: How to Alter Databases
 description: Modify the Database property settings by using the Alter Database window, which gives you access to the same settings as the New Database window.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---
@@ -140,6 +136,6 @@ Follow these steps if one or more extensions are installed on the tenant. If the
     Sync-NAVTenant -ServerInstance <server instance>
     ```
 
-## See Also  
+## Related information  
 [Creating and Altering a  Database](cside-create-databases.md)  
 [Synchronizing the Tenant Database with the Application Database](../administration/synchronize-tenant-database-and-application-database.md)

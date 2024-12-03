@@ -2,11 +2,7 @@
 title: "NonDebuggable Attribute"
 description: "The NonDebuggable attribute in AL for Business Central"
 ms.author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -35,10 +31,10 @@ codeunit 50142 NoDebuggingOfMethod
         //Make something happen
     end;
 }
-
 ```
 
 Setting the attribute on variables. Each variable must be marked as `[NonDebuggable]`.
+
 ```AL
 codeunit 50143 NoDebuggingOfVar 
 {
@@ -50,7 +46,6 @@ codeunit 50143 NoDebuggingOfVar
         //Make something happen
     end;
 }
-
 ```
   
 ## See Also  

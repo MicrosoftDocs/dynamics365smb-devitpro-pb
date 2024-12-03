@@ -1,27 +1,24 @@
 ---
-title: "Publishing a Code-Customized Base Application"
-description: "Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem"
+title: Publishing a code-customized Base Application
+description: Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Publishing a Code-Customized Base Application for Business Central On-Prem
+# Publishing a code-customized Base Application for Business Central on-prem
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-This topic describes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-premises and publish the code-customized Base Application to the local server. 
+This article describes the steps and development environment configuration settings that are needed in order to customize the Base Application code in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on-premises and publish the code-customized Base Application to the local server. 
 
 > [!IMPORTANT]  
-> Instead of code-customizing the Base Application, it is *strongly* recommended to create extensions whenever possible.
+> Instead of code-customizing the Base Application, it's *strongly* recommended to create extensions whenever possible.
 
 > [!NOTE]  
-> The steps in this topic are not validated against a Docker environment. If you are running the on-premises installation and development from Docker, there can be dependencies and other steps that you need to take into consideration.
+> The steps in this topic aren't validated against a Docker environment. If you are running the on-premises installation and development from Docker, there can be dependencies and other steps that you need to take into consideration.
 
 ## Prerequisites
 
@@ -103,7 +100,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     But if there are dependencies on the Base Application this will give an error. To solve this, you must unpublish all the applications with dependencies on the Base Application. This is easier to do using a script that recursively removes the dependencies. Use Windows PowerShell ISE to create a new script with the following lines of code:
 
-    ```
+    ```powershell
     function UnpublishAppAndDependencies($ServerInstance, $ApplicationName)
     {
          Get-NAVAppInfo -ServerInstance $ServerInstance | Where-Object { 
@@ -133,15 +130,15 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 14. Import a license with rights to publish the extension. For example:
 
-    ```
+    ```powershell
     Import-NAVServerLicense -ServerInstance BC -LicenseFile "C:\Users\mylicense.BCLicense"
     ```
 
-15. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
+15.   Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to publish the modified Base Application as an extension from Visual Studio Code.
 
 The Base Application is now published with the small customization of bolding the text in the **Name** field on the **Customer Card** page.
 
-## See Also
+## Related information
 
 [Unpublishing and Uninstalling Extensions](devenv-unpublish-and-uninstall-extension-v2.md)  
 [Developing Extensions](devenv-dev-overview.md)

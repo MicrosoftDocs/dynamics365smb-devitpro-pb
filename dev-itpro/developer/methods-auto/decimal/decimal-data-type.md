@@ -1,19 +1,16 @@
 ---
-title: "Decimal Data Type"
+title: "Decimal data type"
 description: "Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/13/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Decimal Data Type
+# Decimal Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99.
@@ -59,6 +56,6 @@ The maximum safe value that will work on all Business Central versions of is +/-
 
 It is possible to assign to a variable the maximum value that can be formatted and then multiply that variable by a large positive number, thereby generating a greater value. However, we do not recommend doing this. If you do, you will get errors if you attempt to format this variable to a text variable or assign the variable to a field variable in a record.
  
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

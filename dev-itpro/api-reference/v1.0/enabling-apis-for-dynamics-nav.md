@@ -1,14 +1,12 @@
 ---
-title: (v1.0) "Enabling APIs for Microsoft Dynamics NAV"
-description: (v1.0) "Describing the steps you must go through to enable access to the APIs."
+title: (v1.0) Enabling APIs for Microsoft Dynamics NAV
+description: (v1.0) Describing the steps you must go through to enable access to the APIs.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 04/01/2019
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 05/01/2024
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Enabling the APIs for Dynamics 365 Business Central (v1.0)
@@ -19,6 +17,7 @@ ms.author: solsen
 > REST programming is not natively supported in C/SIDE. In order to run the APIs you must add the REST dependent types manually. Existing W1 objects can compile and load, but some .NET types cannot be loaded into the C/SIDE Development environment variable editor due to missing server dependencies.
 
 ## Enable access to the APIs
+
 1. Open the [Business Central Administration tool](../../administration/administration-tool.md).
 1. Expand the **OData Services** tab, and select the **Enable OData Services** checkbox first, then select the **Enable API Services** checkbox.
 1. Check that the values for the **OData Base URL** and **Port** are entered correctly.  
@@ -29,8 +28,10 @@ ms.author: solsen
 
 Depending on where you want to access the APIs from, you must specify the correct endpoint. For more information, see [Endpoints for APIs](endpoints-apis-for-dynamics.md).
 
-## See Also
+[!INCLUDE[on-prem-ws-off-405-note](../../includes/include-on-prem-ws-off-405-note.md)]
 
-[Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
-[Microsoft Web Services Overview](../../webservices/web-services.md)  
-[OpenAPI Specification](dynamics-open-api.md)  
+## Related information
+
+[Developing connect apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
+[Microsoft web services overview](../../webservices/web-services.md)  
+[OpenAPI specification](dynamics-open-api.md)  

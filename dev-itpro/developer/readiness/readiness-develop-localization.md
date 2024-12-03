@@ -2,7 +2,6 @@
 title: "Development of a Localization Solution"
 description: "Comply with regulatory requirements in Dynamics 365 Business Central."
 author: sorenfriisalexandersen
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
@@ -33,7 +32,7 @@ Good and consistent tooltips and documentation will help users adopt your featur
 
 An important part of your localization app will be setup data for the production company that will help users get up and running quickly and with minimum effort.-->
 
-## Service availability in other countries
+## Service availability in other countries/regions
 
 Follow [this page](../../compliance/apptest-countries-and-translations.md) for information about planned country and regional expansions of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].
 
@@ -74,7 +73,7 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 * It's recommended to logically break down the full local functionality set, at a minimum within the above categories. This approach provides optimal flexibility for customers to choose what they really need in terms of local functionality. And it makes sure that critical pieces of local functionality don't break upgrade processes nor are upgrade heavy.
 * Most customers in the local market will need most of the local regulatory features. In the category of local regulatory features there will be some features that, even though they're legally required, apply to companies of a certain size, revenue threshold etc. Such situations are opportunities to further logically breakdown localization apps into smaller focused-functionality sets.
 * Consider separating localization functionality by the frequency of changes to smaller localization apps. If for example, your local feature contains one part that is stable and one part that is frequently changed based on regulation changes, make sure to keep the stable part as one app and the changing part a separate localization app. This approach ensures better test coverage, faster response to changes and fewer upgrade issues.
-* Use worldwide frameworks available in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (W1) when building features for, such as VAT reports, banking formats, data exchange, and others where most functionality is common to all countries but there are some local rules or business formats that are extensions of global frameworks or formats. Make sure to familiarize yourself with such frameworks to reduce effort, reuse code, and properly utilize extensibility points and integration events. If you notice opportunities for improvements in such frameworks or [missing extensibility points](https://github.com/Microsoft/ALAppExtensions/issues), make sure to [contact us](mailto:d365bcloc@microsoft.com) to work together in improving this.
+* Use worldwide frameworks available in [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (W1) when building features for, such as VAT reports, banking formats, data exchange, and others where most functionality is common to all countries/regions but there are some local rules or business formats that are extensions of global frameworks or formats. Make sure to familiarize yourself with such frameworks to reduce effort, reuse code, and properly utilize extensibility points and integration events. If you notice opportunities for improvements in such frameworks or [missing extensibility points](https://github.com/Microsoft/ALAppExtensions/issues), make sure to [contact us](mailto:d365bcloc@microsoft.com) to work together in improving this.
 * Consider rethinking local reports by categorizing the reports that you want to include in your localization app(s) in following categories: reports printing lists could be converted to list pages and offer more functionality using [Excel add-in](/dynamics365/business-central/about-export-data), reports providing insights or aggregating data could be converted to [Power BI reports and dashboards](/dynamics365/business-central/across-how-use-financials-data-source-powerbi), frequently customized reports (local document reports like invoices, credit memos...) could utilize [Word document layouts](../devenv-howto-report-layout.md) so customer's power users can easily customize them, for all others fall back to [RDLC reports](../devenv-howto-rdl-report-layout.md)  
 * Prepare a setup data RapidStart package for the production company and translate to local language(s).
 * Consider preparing a local demo data RapidStart package for the evaluation company and translate it to local language(s).
@@ -82,7 +81,7 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 * Fork the [Dynamics 365 Business Central documentation from public GitHub repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). Such an approach to documentation can help when other partners or ISVs take dependency on your localization app. For more information, see [Configuring the Help Experience](../../deployment/configure-help.md).
 * Consider converting field-based documentation to task-based documentation using tooltips and [Dynamics 365 Business Central documentation GitHub repository](https://github.com/MicrosoftDocs/dynamics365smb-docs). [Rulesets](../devenv-rule-set-syntax-for-code-analysis-tools.md) can help you ensure, for example, that no fields or actions are missing [tooltips](../../user-assistance.md#guidelines-for-tooltip-text).
 * If your localization app(s) are extending Business Central data model with new tables and/or fields, you must set the  DataClassification property correctly. Localization apps with fields having the DataClassification property set to ToBeClassified will be rejected. Read more on [Classifying Data in Business Central here](../devenv-classifying-data.md).
-* If you're converting an existing localization (developed in C/AL) to localization apps (check this [video](https://mbspartner.microsoft.com/D365/Videos/101769)(requires PartnerSource access)), as described in technical checklist for your app, you'll need to set the ApplicationArea property on UI elements that you want to make visible in Business Central. To help you with that use [NAVApplicationAreaHelper PowerShell command let](https://blogs.msdn.microsoft.com/nav/2018/06/06/navapplicationareahelper/) to do this in bulk.  
+* If you're converting an existing localization (developed in C/AL) to localization apps<!-- link not valid (check this [video](https://mbspartner.microsoft.com/D365/Videos/101769)(requires PartnerSource access))-->, as described in technical checklist for your app, you'll need to set the ApplicationArea property on UI elements that you want to make visible in Business Central. To help you with this task, see [Change multiple Application Area tags with PowerShell](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2018/06/06/navapplicationareahelper/?source=nav) to do this in bulk.  
 
 > [!NOTE]  
 > You can also create an integration if you find it beneficial to have some functionality placed outside the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] environment and instead connect to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] using for example APIs or Web services.
@@ -90,10 +89,10 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 > [!NOTE]  
 > If you have questions for building localization apps, please contact the [Microsoft localization team](mailto:d365bcloc@microsoft.com).
 
-## See Also
+## Related information
 
 [Get Started with Building Apps](get-started.md)  
 [The SMB Opportunity for App Publishers](opportunity-app-publisher.md)  
 [Get Started as a Reseller of Business Central Online](../../administration/get-started-online.md)  
 [Countries and Translations Supported](../../compliance/apptest-countries-and-translations.md)  
-[Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog)
+[Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)  

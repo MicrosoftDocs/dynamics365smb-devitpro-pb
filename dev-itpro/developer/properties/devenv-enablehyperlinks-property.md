@@ -1,14 +1,11 @@
 ---
-title: "EnableHyperlinks Property"
+title: "EnableHyperlinks property"
 description: "Sets whether hyperlinks to URLs are allowed on reports."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,6 +44,6 @@ When you use the Visual Studio Report Designer for creating reports for the Role
 
 [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] cannot verify URLs and protect against malicious sites that may be harmful to your computer. You should set the EnableHyperlinks property to **true** only if you can ensure that hyperlinks on the report target trusted sites.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

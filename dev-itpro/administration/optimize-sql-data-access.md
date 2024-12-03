@@ -1,11 +1,7 @@
 ---
 title: "Data Access"
 description: Learn how to improve data access performance in Business Central.
-ms.custom: na
 ms.date: 03/03/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer
@@ -105,7 +101,7 @@ The name of the default constraint isn't important, as long as it isn't used by 
 > [!NOTE]
 > Blobs don't get default constraints, but they are allowed to be null.
 
-## See Also
+## Related information
 
 [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)  
 [GetBySystemId(Guid)](../developer/methods-auto/record/record-getbysystemid-method.md)  

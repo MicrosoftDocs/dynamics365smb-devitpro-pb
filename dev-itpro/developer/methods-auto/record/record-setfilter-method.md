@@ -2,13 +2,10 @@
 title: "Record.SetFilter(Any, Text [, Any,...]) Method"
 description: "Assigns a filter to a field that you specify."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -51,7 +48,7 @@ This method is like the SetFilter Method (FieldRef) method. For more information
   
 The filter set by the [SetFilter Method (Record)](record-setfilter-method.md) or the [SetRange Method (Record)](record-setrange-method.md) apply to the currently selected filter group. For more information see [FilterGroup Method (Record)](record-filtergroup-method.md).
 
-## See Also
+## Related information
 
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

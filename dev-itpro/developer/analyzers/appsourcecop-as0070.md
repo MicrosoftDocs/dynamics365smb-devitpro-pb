@@ -2,13 +2,11 @@
 title: "AppSourceCop Error AS0070"
 description: "An enum field replacing an option field should preserve the member names."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
+ai-usage: ai-assisted
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,7 +18,21 @@ An enum field replacing an option field should preserve the member names.
 An enum field replacing an option field should preserve the member names. Renaming members might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## Remarks
+
+This error ensures that when you replace an option field with an enum field, the new enum field must include all the values that were present in the original option field. This is crucial because reducing the number of values can lead to data loss or corruption during the upgrade process. Additionally, dependent extensions that rely on the original option values may fail if those values are not present in the new enum field.
+
+## How to fix this diagnostic?
+
+To resolve this error, follow these steps:
+
+1. Locate the enum field in your code that is replacing an option field.
+2. Ensure that the enum field has at least the same number of members as the option field it replaces.
+3. If the enum field has fewer members, add the missing members to match the original option field.
+
+## Related information  
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -3,12 +3,11 @@ title: Analyzing Web Service Access Key Telemetry | Microsoft Docs
 description: Learn about the web service access key telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 04/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing Web Service Access Key Telemetry
@@ -104,7 +103,7 @@ The following code snippet is a CustomDimensions example:
 {"component":"Dynamics 365 Business Central Server","category":"Api","AadTenantId":"common","environmentType":"Production","Component":"Dynamics 365 Business Central Server","AL Object Id":"0","alObjectId":"0","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","authenticationType":"NavUserPassword","componentVersion":"17.0.15855.0","Component version":"17.0.15855.0","eventId":"RT0020","endpoint":"BC170/ODataV4/Company()/purchaseDocumentLines","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"common","Environment type":"Production","authenticationStatus":"Succeeded"}
 `
  
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

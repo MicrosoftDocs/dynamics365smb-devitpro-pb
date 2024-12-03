@@ -1,14 +1,14 @@
 ---
 title: Create Data Collector for Performance Counters
 description: This topic describes how to create a Data Collector Set in Performance Monitor that contains Microsoft Dynamics365 Business Central performance counters.
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
+ms.reviewer: jswymer
+ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.assetid: 2b2c8383-8e5a-47ea-bfd0-8621021a697a
-caps.latest.revision: 9
+author: jswymer
 ---
 # Creating a Data Collector for Business Central Performance Counters
 This topic describes how to create a Data Collector Set in Performance Monitor that contains [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance counters.  
@@ -51,7 +51,7 @@ This topic describes how to create a Data Collector Set in Performance Monitor t
   
  For information about how to view the data that is collected by the Data Collector Set, see [View Performance Counter Data for a Data Collector Set](monitor-view-performance-counter-data-for-data-collector-set.md).  
   
-## See Also  
+## Related information  
  [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)   
  [Create a Data Collector Set From Template](monitor-create-data-collector-set-from-template.md)   
  [Business Central Performance Counters](performance-counters.md)

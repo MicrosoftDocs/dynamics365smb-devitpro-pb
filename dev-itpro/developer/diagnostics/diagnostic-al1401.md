@@ -2,13 +2,10 @@
 title: "Compiler Designer Customization Warning AL1401"
 description: "Reference '{0}' in application object '{1}' does not exist."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 05/14/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,10 +16,11 @@ author: SusanneWindfeldPedersen
 
 Reference '{0}' in application object '{1}' does not exist.
 
+
 ## Description
 Cannot resolve the type of the referenced element.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -1,16 +1,15 @@
 ---
 title: AL control statements
 description: Compound, conditional, and repetitive control statements in AL for Business Central.
-ms.custom: na
-ms.date: 03/15/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 03/01/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.collection: get-started
 ---
 
 # AL control statements
+
+[!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
 AL code consists of one or more statements, which are executed sequentially in a top-down order. However, you'll often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do so, you use control structures.  
 
@@ -194,8 +193,8 @@ case <Expression> of
 
     <Value set n>:  
         <Statement n>;  
-[else  
-    <Statement n+1>]  
+    [else  
+        <Statement n+1>]  
 end;  
 ```  
 
@@ -256,8 +255,8 @@ case Number of
         message('1, 2, or 9.');  
     10..100:  
         message('In the range from 10 to 100.');  
-else  
-    message('Neither 1, 2, 9, nor in the range from 10 to 100.');  
+    else  
+        message('Neither 1, 2, 9, nor in the range from 10 to 100.');  
 end;  
 ```
 
@@ -272,8 +271,8 @@ case MyCode of
         message('This message is not displayed.');   
     'def':  
         message('This message is not displayed.');  
-else  
-    message('The value set does not match the expression.');
+    else  
+        message('The value set does not match the expression.');
 end;
 ```
 
@@ -379,7 +378,7 @@ The *`<List>`* variable must be of the List, XmlNodeList, XmlAttributeCollection
 
 The following code example iterates through a list of customer names and returns each customer name in a message.
 ```AL  
-procedure PrintCustomerNames(customerNames : List of [Text]);
+procedure PrintCustomerNames(customerNames : List of [Text])
 var
     customerName : Text;
 begin
@@ -563,9 +562,9 @@ var
     I : integer
 ```
 
-## See Also
+## Related information
 
 [Programming in AL](devenv-programming-in-al.md)  
-[AL Simple Statements](devenv-al-simple-statements.md)  
+[AL simple statements](devenv-al-simple-statements.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
-[AL Essential Methods](devenv-essential-al-methods.md)
+[AL essential methods](devenv-essential-al-methods.md)

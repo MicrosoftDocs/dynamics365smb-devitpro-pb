@@ -1,16 +1,13 @@
 ---
-title: Troubleshooting the Business Central Mobile App On-Premises
+title: Troubleshooting the Business Central mobile app on-premises
 description: Learn how to fix issues related to the Business Central on-premises mobile app.
-ms.custom: na
-ms.date: 04/01/2021
+ms.date: 01/02/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: troubleshooting
 author: blrobl
 ---
 
-# Troubleshooting the Business Central Mobile App On-Premises
+# Troubleshooting the Business Central mobile app on-premises
 
 This section contains information to help you resolve problems using the [!INCLUDE[nav_web](includes/nav_web_md.md)], the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)], and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] when working on-premises.
 
@@ -22,14 +19,14 @@ The first thing to do is to check that the environment meets the prerequisites f
   
  [Troubleshooting: The File that You Are Trying to Use Is Too Large](Troubleshooting--The-File-that-You-Are-Trying-to-Use-Is-Too-Large.md) -->  
   
- [Troubleshooting: Icon Font Not Loaded](devenv-troubleshooting-icon-font-not-loaded.md)  
+ [Troubleshooting: Icon Font Not Loaded](/troubleshoot/dynamics-365/business-central/client/client-user-personalization)  
   
  [Troubleshooting: Device Date is Causing Connection Issues](devenv-troubleshooting-device-date-is-causing-connection-issues.md)  
   
- [Troubleshooting: Client Returns Wrong CLIENTTYPE](devenv-troubleshooting-client-returns-wrong-clienttype.md)  
+ [Troubleshooting: Client Returns Wrong CLIENTTYPE](/troubleshoot/dynamics-365/business-central/client/client-returns-wrong-clienttype)  
   
  <!-- [Troubleshooting: The Server Is Not Compatible](Troubleshooting--The-Server-Is-Not-Compatible.md) -->
 
-## See Also
+## Related information
 
 [Getting Started Developing for the Business Central Mobile App](devenv-getting-started-developing-business-central-mobile-app.md)  

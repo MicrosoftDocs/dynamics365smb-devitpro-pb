@@ -1,11 +1,7 @@
 ---
 title: "Module Architecture"
 description: "Learn about the internal components of modules in the System Application."
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ---
@@ -111,7 +107,7 @@ Public functions must have a summary, a parameter description, and a return valu
 /// <param name="ipsum ">The CaptionClass expression to resolve</param>
 /// <returns> Fusce in tristique massa, tincidunt tempor libero.</returns>
 ```
-## See Also
+## Related information
 [Getting Started with Modules](devenv-getting-started.md)  
 [Create a New Module in the System Application](devenv-new-module.md)  
 [Module Architecture](devenv-blueprint.md)  

@@ -1,14 +1,11 @@
 ---
-title: "AutoUpdate Property"
+title: "AutoUpdate property"
 description: "Sets whether a record in the database with the same primary key as the record in the imported XmlPort is updated with values from the imported record."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -40,6 +37,6 @@ Set **AutoUpdate** to **true** when you import a file with partial information. 
 > [!WARNING]  
 > If this property is set to **true**, then the [AutoReplace Property](devenv-autoreplace-property.md) has no effect.  
 
-## See Also  
+## Related information  
 [AutoReplace Property](devenv-autoReplace-property.md)   
 [AutoSave Property](devenv-autosave-property.md)

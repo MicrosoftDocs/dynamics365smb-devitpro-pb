@@ -1,14 +1,11 @@
 ---
-title: "CaptionML Property"
-description: "Sets the string string that displays with the object, control, or other element in user interface for the current language."
+title: "CaptionML property"
+description: "Sets the text string that displays with the object, control, or other element in user interface for the current language."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/04/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/02/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,11 +13,11 @@ author: SusanneWindfeldPedersen
 # CaptionML Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets the string string that displays with the object, control, or other element in user interface for the current language.
+Sets the text string that displays with the object, control, or other element in user interface for the current language.
 
 ## Applies to
 -   Table
--   Table Field
+-   Table field
 -   Page Field
 -   Field Group
 -   Page
@@ -40,6 +37,8 @@ Sets the string string that displays with the object, control, or other element 
 -   Report Column
 -   Enum Value
 -   Page Custom Action
+-   Page System Action
+-   Page File Upload Action
 -   Page View
 -   Report Layout
 -   Profile
@@ -80,7 +79,7 @@ In this example, values are set for Danish (DAN), German Standard (DEU), Spanish
 
 When the CaptionML property does not include an entry for the language used in the client at runtime, then a default value for the caption string will be used according to the following: 
 
-1. If there is an `ENU` entry, then it's caption string is used. 
+1. If there is an `ENU` entry, then its caption string is used. 
 2. If there are no language entries in CaptionML property, then the caption string is determined according to the following table:
 
     |Object, control, or other element|Default caption|  
@@ -95,6 +94,6 @@ When the CaptionML property does not include an entry for the language used in t
     |Query objects|Name property|  
     |Query columns|CaptionML property of the underlying table field for the column|  
 
-## See Also  
+## Related information  
  [Caption Property](devenv-caption-property.md)   
  [Name Property](./devenv-properties.md)

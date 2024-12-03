@@ -1,13 +1,12 @@
 ---
-title: CREATE subscriptions  
+title: Create subscriptions  
 description: Creates a subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 11/20/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create subscription
@@ -16,19 +15,23 @@ ms.author: solsen
 
 Creates a webhook subscription for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. Will be created only if handshake is successful.
 
+## Custom APIs
+
+If you're subscribing to a custom API page, both the URL you send the subscription HTTP request to and the resource path you wish to subscribe to must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements equivalent to: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, part of the URL will contain these elements `api/pub/grp/v1.0/subscriptions`.
+
 ## HTTP request
+
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../endpoints-apis-for-dynamics.md).
+
 ```
 POST businesscentralPrefix/subscriptions
 ```
-
 ## Request headers
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **subscriptions**, the **subscriptions** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of subscription object.
@@ -88,7 +91,8 @@ Here is an example of the response.
 > Handshake is mandatory when [creating a subscription](dynamics_subscriptions_create.md) and [renewing a subscription](dynamics_subscriptions_update.md). See [Working with Webhooks](../dynamics-subscriptions.md).  
 
 
-## See also
+## Related information
+
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Subscriptions](../resources/dynamics_subscriptions.md)  
 [Get subscriptions](dynamics_subscriptions_Get.md)  

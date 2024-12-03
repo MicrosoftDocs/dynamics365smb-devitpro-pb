@@ -2,11 +2,10 @@
 title: "Using request pages with XMLports"
 description: "Introducing how to work with request pages for Business Central XMLports."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 08/31/2023
-ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Using request pages with XMLports
@@ -151,7 +150,7 @@ Starting with Business Central 2023 release wave 1 (version 22), you can set the
 
 For more information about configuring context-sensitive help, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md). 
 
-## See Also
+## Related information
 
 [XMLport Object](devenv-XMLport-object.md)  
 [RunRequestPage Method](methods-auto/report/reportinstance-runrequestpage-method.md)  

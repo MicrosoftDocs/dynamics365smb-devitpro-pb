@@ -1,11 +1,7 @@
 ---
 title: "Setting SQL Compatibility Level to Optimize Database Performance"
 description: Enable query optimizer features in a database by setting the compatibility level
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -34,6 +30,10 @@ You change the compatibility level of the database by using SQL Server Managemen
 > [!NOTE]  
 > The compatibility level for Azure SQL Database is subject to change. Refer to Azure SQL Database documentation for latest compatibility level.
 
-## See Also  
+## Integrating directly on SQL Server objects
+[!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
+
+
+## Related information  
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)    
 [Microsoft SQL Server documentation](/sql/sql-server/)'

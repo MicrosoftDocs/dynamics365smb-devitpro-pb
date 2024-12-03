@@ -3,11 +3,10 @@ title: opportunity resource type
 description: An opportunity object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 08/24/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # opportunity resource type
@@ -82,7 +81,7 @@ Here is a JSON representation of the opportunity resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET opportunity](../api/dynamics_opportunity_get.md)  
 [DELETE opportunity](../api/dynamics_opportunity_delete.md)  
 [POST opportunity](../api/dynamics_opportunity_create.md)  

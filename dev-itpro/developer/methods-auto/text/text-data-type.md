@@ -1,24 +1,22 @@
 ---
-title: "Text Data Type"
+title: "Text data type"
 description: "Denotes a text string."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/06/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text Data Type
+# Text Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes a text string.
 
 
+## Static methods
 The following methods are available on the Text data type.
 
 
@@ -41,6 +39,7 @@ The following methods are available on the Text data type.
 |[StrSubstNo(Text [, Any,...])](text-strsubstno-method.md)|Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you provide as optional parameters.|
 |[UpperCase(Text)](text-uppercase-method.md)|Converts all letters in a string to uppercase.|
 
+## Instance methods
 The following methods are available on instances of the Text data type.
 
 |Method name|Description|
@@ -72,9 +71,13 @@ The following methods are available on instances of the Text data type.
 
 The **Text** data type is a value type, such that every time you use a method on it, you create a new string object in memory. This requires a new allocation of space. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a **Text** data type can be costly.  
 
+> [!NOTE]  
+> The **Text** data type in AL uses the same encoding as .NET strings. For more information, see [String class (.NET)](/dotnet/api/system.string?view=net-8.0&preserve-view=true).
+
 The [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md) is a reference type, which holds a pointer elsewhere in memory. For performance reasons, we recommend you to use it when you want to modify a string without creating a new object. For example, using [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md)  can boost performance when concatenating many strings together in a loop.
 
-## See Also  
+## Related information
+
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md)

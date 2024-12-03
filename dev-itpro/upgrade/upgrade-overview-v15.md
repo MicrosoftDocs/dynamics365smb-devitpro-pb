@@ -1,14 +1,12 @@
 ---
 title: Upgrade to Business Central 2019 Wave 2
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: evergreen
+ms.date: 04/18/2024
 ms.topic: overview
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2
 
@@ -387,7 +385,7 @@ CALTestRunner.fob
 2. Configure the server instance for migrating the custom base application extension and the test application (if you have one).
 
     ```
-    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"TestToolKit2", "publisher": "Default publisher"}]'
     ```
 
     This will configure the server instance to automatically install the base application and test application on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
@@ -587,7 +585,7 @@ Now, you can publish the Microsoft and 3rd-party extensions that were published 
     ** Set the Server**
 
     ```
-    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"TestToolKit2", "publisher": "Default publisher"}]'
     ```
 25. Publish and sync the test app extension to support Microsoft extension:
 
@@ -664,10 +662,12 @@ In version 14.0, with the base application being C/AL, there are three types of 
 
 In version 15, with the move to AL, the only symbols required are the system symbols, which are still provided on the version 15.0 installation media (DVD).
 
+<!--  Symbols in AL extensions are essentially the definitions of the objects and elements (such as fields, data types, and methods) that are used in the AL code to create the extension. They are used by the AL compiler to understand the structure and dependencies of the code.-->
+
 ### Customization extensions
 Customization extensions are AL extensions that add functionality to the base application or system application. These extensions can be Microsoft (1st party) or 3rd party extensions. 3rd party extensions are extensions that your organization provides or extensions that are provided by others, such as from ISVs or from App Source.
   
-## See Also  
+## Related information  
 
 [Upgrade of an Unmodified Application](upgrade-unmodified-application.md)  
 [Technical Upgrade of Customized Application](upgrade-technical-upgrade-v14-v15.md)  

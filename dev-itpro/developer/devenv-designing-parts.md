@@ -2,11 +2,8 @@
 title: Page Parts Overview
 description: "Provides and overview of the parts concept."
 author: mikebcMSFT
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: jswymer
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: mikebc
 ---
@@ -87,7 +84,7 @@ Like other page types, you can design a part page to use one or more page backgr
 - Parts aren't intended to be displayed on their own without a hosting page.
 
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  
@@ -98,5 +95,5 @@ Like other page types, you can design a part page to use one or more page backgr
 [Power BI Report Parts](devenv-power-bi-report-parts.md)
 [Page Extension Object](devenv-page-ext-object.md)   
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)  
+[Use Designer](devenv-inclient-designer.md)  
 <!-- [Designing pages with multiple lists](devenv-designing-multilist-pages.md) -->

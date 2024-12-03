@@ -1,10 +1,7 @@
 ---
 title: "Permissions Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 99eb343f-7bff-4956-ad1b-605440b7858c
 caps.latest.revision: 9
@@ -93,7 +90,6 @@ codeunit 50113 CreateCustomer
         CustLedgerEntry.Insert();
     end;
 }
-
 ```
 
 > [!NOTE]  

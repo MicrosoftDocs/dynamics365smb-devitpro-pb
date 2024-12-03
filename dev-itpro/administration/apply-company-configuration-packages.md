@@ -3,13 +3,11 @@ title: Apply Company Configuration Packages
 description: Streamline your implementation process by using configuration packages with standard settings and to migrate customer data.
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.form: 1799, 1807, 8632, 1800, 1340, 8610, 8614, 8615, 8620, 8632
 ms.date: 04/07/2022
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 # Apply Company Configuration Packages
 
@@ -114,7 +112,7 @@ You have now configured setup with the customer’s business information and rul
 > [!IMPORTANT]
 > Specifically for opening balances for bank accounts, do not follow the steps in this article to post directly to the G/L accounts that are associated with the relevant bank accounts. For more information, see [Set Up Bank Accounts](/dynamics365/business-central/bank-how-setup-bank-accounts).  
 
-## See Also
+## Related information
 
 [Set Up Company Configuration Packages](set-up-standard-company-configuration-packages.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  

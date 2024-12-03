@@ -3,11 +3,10 @@ title: itemCategory resource type
 description: An item category object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/01/2021
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # itemCategory resource type
@@ -58,7 +57,7 @@ Here is a JSON representation of the itemCategory resource.
 
 
 
-## See Also
+## Related information
 [GET itemCategory](../api/dynamics_itemCategory_Get.md)  
 [DELETE itemCategory](../api/dynamics_itemCategory_Delete.md)  
 [POST itemCategory](../api/dynamics_itemCategory_Create.md)  

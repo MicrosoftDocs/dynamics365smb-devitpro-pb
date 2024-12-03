@@ -1,11 +1,7 @@
 ---
 title: Data Security in Business Central
 description: Learn about the four different levels of data security in Business Central. Also learn how you control access to data. 
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
@@ -29,7 +25,10 @@ There are four different levels of security:
   
 - Record  
   
-Graphically, these can be represented as the layers, where the central layer is the records in the database.  
+Graphically, these can be represented as the layers, where the central layer is the records in the database. 
+
+![Security overview.](../developer/media/security-overview.png "Security overview")
+
 
 ## [Database-level security](#tab/database-level)
 
@@ -123,7 +122,7 @@ Record-level security filters are handled by SQL Server just like other filters 
 
 ---
 
-## See Also  
+## Related information  
 
 [Users and Credential Types](../administration/users-credential-types.md)  
 [Security Considerations](Security-Considerations.md)  

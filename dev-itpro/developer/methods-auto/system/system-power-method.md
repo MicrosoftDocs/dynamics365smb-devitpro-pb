@@ -2,13 +2,10 @@
 title: "System.Power(Decimal, Decimal) Method"
 description: "Raises a number to a power."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -29,6 +26,7 @@ NewNumber :=   System.Power(Number: Decimal, Power: Decimal)
 *Number*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 The number you want to raise exponentially. This number is the base in the exponential method.  
+
 *Power*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 The exponent in the exponential method.  
@@ -144,7 +142,7 @@ The second message window displays the following:
   
 **The amount after 20 years = $14889.04.**  
  
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -3,13 +3,12 @@ title: (v1.0) paymentMethods resource type
 description: (v1.0) A payment method object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # paymentMethods resource type (v1.0)
@@ -57,7 +56,7 @@ Here is a JSON representation of the paymentMethods.
 }
 ```
 
-## See also
+## Related information
 
 [Get Payment Methods](../api/dynamics_paymentmethods_get.md)  
 [Create Payment Methods](../api/dynamics_create_paymentmethods.md)  

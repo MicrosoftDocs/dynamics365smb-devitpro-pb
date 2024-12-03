@@ -1,26 +1,23 @@
 ---
-title: "Obsolete Attribute"
+title: "Obsolete attribute"
 description: "Specifies that the annotated symbol will be deprecated."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# Obsolete Attribute
+# Obsolete attribute
 > **Version**: _Available or changed with runtime version 4.0._
 
 Specifies that the annotated symbol will be deprecated.
 
 
-## Applies To
+## Applies to
 
 - Method
 - DeclareMethod
@@ -66,7 +63,7 @@ codeunit 50143 SoonObsolete
     
 ```
      
-## See Also
+## Related information
 
 [AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-obsolete-attribute.md)  

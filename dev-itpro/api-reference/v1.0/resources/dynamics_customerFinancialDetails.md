@@ -3,13 +3,12 @@ title: (v1.0) customerFinancialDetails resource type
 description: (v1.0) An customerFinancialDetails entity in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # customerFinancialDetails resource type (v1.0)
@@ -55,5 +54,5 @@ Here is a JSON representation of the resource.
     "overdueAmount": "decimal"
 }
 ```
-## See also
+## Related information
 [Get customerFinancialDetails](../api/dynamics_customerFinancialDetails_get.md)  

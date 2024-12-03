@@ -3,12 +3,11 @@ title:  Extension Update Trace Telemetry | Microsoft Docs
 description: Learn about the extension upgrade telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 04/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Analyzing Extension Update Telemetry
 
@@ -141,7 +140,7 @@ Occurs when the `SetUpgradeTag` method in Codeunit **9999 Upgrade Tag** is calle
 
 -->
 
-## See also
+## Related information
 
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

@@ -4,10 +4,8 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: ZdenekBicek
 
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms. search.keywords: deprecated, Czech, local functionality
+ms.devlang: al
+ms.search.keywords: deprecated, Czech, local functionality
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.author: v-zdbice
@@ -357,7 +355,7 @@ The following list shows additional fields that are deleted as a result of the f
 
 [!INCLUDE [fields-obsolete-cz](../includes/fields-obsolete-cz.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

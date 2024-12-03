@@ -2,13 +2,10 @@
 title: "AppSourceCop Error AS0025"
 description: "Parameters cannot be modified, renamed, or removed from Business type and Integration type events, because it will break dependent extensions."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -137,7 +134,7 @@ codeunit 50100 MyCodeunit
 In version 2.0, the signature of the event has changed. However, it does not break dependent extensions because event subscribers do not have to use all the parameters defined in the event.
 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

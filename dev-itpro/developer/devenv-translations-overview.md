@@ -1,11 +1,7 @@
 ---
 title: "Translations Overview"
 description: "An overview of the translation layers of Business Central and the extension model"
-ms.custom: na
 ms.date: 06/15/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
 ---
@@ -77,7 +73,7 @@ The illustration shows examples of how translations for a page caption, a contro
 > For **Enum Caption** an additional search marked with *) in the above illustration is added with [!INCLUDE[prod_short](../includes/prod_short.md)] version 18.3.
 
 
-## See Also
+## Related information
 
 [Working with Translation Files](devenv-work-with-translation-files.md)  
 [CaptionML Property](properties/devenv-captionml-property.md)  

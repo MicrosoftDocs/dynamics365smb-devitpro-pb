@@ -1,14 +1,11 @@
 ---
 title: "System.Hyperlink(Text) Method"
-description: "Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer."
+description: "Passes a URL as an argument to an Internet browser, such as Microsoft Edge."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/07/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -16,7 +13,7 @@ author: SusanneWindfeldPedersen
 # System.Hyperlink(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer.
+Passes a URL as an argument to an Internet browser, such as Microsoft Edge.
 
 
 ## Syntax
@@ -62,7 +59,7 @@ HyperLink(Rec.UrlField);
 
 ```  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

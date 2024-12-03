@@ -2,13 +2,10 @@
 title: "AppSourceCop Error AS0021"
 description: "An argument in an event attribute cannot be changed to false."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -100,6 +97,7 @@ codeunit 50100 MyCodeunit
 In the newer version, the global variables exposed by `MyEvent` are not accessible to subscribers anymore. If a dependent extension relies on global variables, this will lead to a compilation error similar to `The member referenced by event subscriber 'MyProcedure' parameter 'myGlobalVariable' is not found (AL0282)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
+
 ```AL
 codeunit 50120 AnotherCodeunit
 {
@@ -109,7 +107,6 @@ codeunit 50120 AnotherCodeunit
         // Subscriber logic
     end;
 }
-
 ```
 
 ## Code examples not triggering the rule
@@ -166,7 +163,7 @@ codeunit 50100 MyCodeunit
 
 In the newer version of the extension, the sender becomes exposed through the business type event. 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

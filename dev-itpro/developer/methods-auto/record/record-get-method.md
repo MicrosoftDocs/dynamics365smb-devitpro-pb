@@ -2,13 +2,10 @@
 title: "Record.Get([Any,...]) Method"
 description: "Gets a record based on values stored in primary key fields."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/31/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -36,20 +33,23 @@ An instance of the [Record](record-data-type.md) data type.
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur. 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
-This method always uses the primary key for the table. It ignores any filters that are set, except security filters. Security filters are applied or ignored based on the Security Filter Mode. The current key and filters are not changed after you call this method. <!-- For more information, see Security Filter Modes.-->
+This method always uses the primary key for the table. It ignores any filters that are set, except security filters. Security filters are applied or ignored based on the Security Filter Mode. The current key and filters aren't changed after you call this method. <!-- For more information, see Security Filter Modes.-->
 
 > [!NOTE]  
-> **Get** does not require specifying all fields of the key in the call; any omitted field is treated as default value (for example, ‘’ for text/code, false for boolean). You can only omit from the end of the key, not a field in the middle of a key. If a record with a blank/default value exists that is the one being returned, otherwise it will fail with a record does not exist error.
+> **Get** doesn't require specifying all fields of the key in the call; any omitted field is treated as default value (for example, ‘’ for text/code, false for boolean). You can only omit from the end of the key, not a field in the middle of a key. If a record with a blank/default value exists that is the one being returned, otherwise it will fail with a record doesn't exist error.
 
 > [!NOTE]  
-> You cannot use the **Get** method to retrieve a record in a table by its primary key value if the primary key field in the table has the data type [RecordID](../recordid/recordid-data-type.md). This is because **RecordId** already is the primary key itself and not one of the fields that forms it, as the method expects. In this case, you can retrieve the record by using the [SetRange Method](record-setrange-method.md).
+> You can't use the **Get** method to retrieve a record in a table by its primary key value if the primary key field in the table has the data type [RecordID](../recordid/recordid-data-type.md). This is because **RecordId** already is the primary key itself and not one of the fields that forms it, as the method expects. In this case, you can retrieve the record by using the [SetRange Method](record-setrange-method.md).
+
+> [!NOTE]  
+> If the retrieval of the record fails for other reasons than it not existing a runtime error will still occur, even if you're using the return value.
 
 <!--
 ## Example
@@ -75,7 +75,7 @@ ELSE
   Message(Text001);  
 
 -->
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -3,9 +3,9 @@ title: Operational challenges with many companies per environment
 description: Learn about limitations on environment operations when the environment includes many companies.
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer 
-ms.service: dynamics365-business-central
-ms.date: 01/12/2023
+ms.reviewer: jswymer
+ms.topic: conceptual
+ms.date: 05/30/2024
 ms.custom: bap-template
 ---
 # Operational challenges with many companies per environment

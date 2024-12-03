@@ -2,11 +2,10 @@
 title: "Keeping Database Size Under the Limit"
 description: Learn about the best ways to reduce data stored in Business Central databases.
 author: jswymer
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
+ms.reviewer: jswymer
 ---
 
 # Reducing Data Stored in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases 
@@ -75,7 +74,7 @@ There are two ways to enable or change data compression in [!INCLUDE[prod_short]
 
 For more information about data compression, see [Using table partitioning and data compression](using-sql-partitioning-and-compression.md).
 
-## See Also
+## Related information
 
 [Managing Capacity](tenant-admin-center-capacity.md)  
 [Creating Databases in Business Central](../deployment/devenv-create-databases.md)  

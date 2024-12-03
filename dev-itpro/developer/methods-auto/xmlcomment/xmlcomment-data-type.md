@@ -1,24 +1,22 @@
 ---
-title: "XmlComment Data Type"
+title: "XmlComment data type"
 description: "Represents an XML comment."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlComment Data Type
+# XmlComment Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents an XML comment.
 
 
+## Static methods
 The following methods are available on the XmlComment data type.
 
 
@@ -26,6 +24,7 @@ The following methods are available on the XmlComment data type.
 |-----------|-----------|
 |[Create(Text)](xmlcomment-create-method.md)|Creates an XmlComment node.|
 
+## Instance methods
 The following methods are available on instances of the XmlComment data type.
 
 |Method name|Description|
@@ -48,6 +47,6 @@ The following methods are available on instances of the XmlComment data type.
 |[WriteTo(XmlWriteOptions, var Text)](xmlcomment-writeto-xmlwriteoptions-text-method.md)|Serializes and saves the current node to the given variable.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -1,11 +1,8 @@
 ---
 title: Role Center Behaviors
 description: This section describes in which areas the Role Center pages have a different behavior in the tablet client and the phone client from the web client.
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: blrobl
 ---
@@ -23,5 +20,5 @@ This section describes in which areas the Role Center pages have a different beh
 |Actions|- In the action pane, if the current profile has no configuration for the specific page, for example, if this was deleted, only promoted actions will be shown. If there are no promoted actions, any actions under **Creation** will be shown. If there are no **Creation** actions, an empty pane will be shown.<br />-   If a page configuration exists, the **Creation** will be shown, together with any new groups that were created. Actions, even if they were renamed, which remain in their original group will not show until you move them to a custom group. This behavior differs from [!INCLUDE[nav_web](includes/nav_web_md.md)] which will always show them.<br />-   When you add actions to the **Home** tab, it corresponds to setting the actions to **Promoted**. However, you can only do this with the configuration tooling if there is at least one **Promoted** action. Otherwise, the **Home** tab will never be available for customization.|  
 |Parts|Available on the tablet.<br /><br /> On the phone, there is a limit to a total number of 5 parts that can be displayed. If you have multiple parts that contain cues, these are currently displayed as one part.<br /><br /> When building Role Centers it is recommended to avoid using the **Group** type to group the parts that make up the Role Center, and instead create all parts directly underneath the **Container** type. This will optimize the layout to dynamically switch from a 1 to 2 to 3 column layout and thereby fit more display targets.|  
   
-## See Also  
+## Related information  
 [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  

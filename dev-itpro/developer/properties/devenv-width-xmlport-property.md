@@ -1,10 +1,6 @@
 ---
 title: "Width Property (XMLport)"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: de3d7d92-255f-4d76-ade2-3eb8e23e7d61
 caps.latest.revision: 8
@@ -36,6 +32,6 @@ This property is used only if the [Format Property \(XMLports\)](devenv-format-p
   
 The value is an integer that defines the number of characters in the field.  
  
-## See Also  
+## Related information  
 
 [XMLport Properties](devenv-xmlport-properties.md)

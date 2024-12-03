@@ -2,11 +2,7 @@
 title: "Deploying a Business Central Demonstration Environment"
 author: jswymer
 description: Learn about deploying demos for Business Central on-premises. 
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Deploying a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Demonstration Environment
@@ -96,6 +92,6 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
   http://localhost:8080/BC210 
   ```
 
-## See Also  
+## Related information  
 [Business Central Web Server Overview](web-server-overview.md) 
  

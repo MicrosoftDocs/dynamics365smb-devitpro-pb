@@ -1,18 +1,20 @@
 ---
-title: Delete userGroup
+title: (automation API) Delete userGroup
 description: Deletes a user group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/05/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Delete userGroup
+# (automation API) Delete userGroup
+
+> [!NOTE]  
+> User groups are replaced with [security groups](../../upgrade/deprecated-features-user-groups.md) and will be deprecated in version 25. For more information, see [security group APIs](../resources/dynamics_securitygroup.md) and [Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups).
 
 Deletes a user group from [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
@@ -56,7 +58,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [userGroup](../resources/dynamics_usergroup.md)  

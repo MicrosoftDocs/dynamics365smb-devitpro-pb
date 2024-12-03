@@ -1,14 +1,11 @@
 ---
-title: "ToolTip Property"
+title: "ToolTip property"
 description: "Sets the string used for the tooltip of an action, a field, a FactBox, or an activity button."
 ms.author: solsen
-ms.custom: na
-ms.date: 08/04/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +14,7 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the string used for the tooltip of an action, a field, a FactBox, or an activity button.
-	
+
 In the client, tooltips appear when you point to the caption of the control.
 
 ## Applies to
@@ -30,6 +27,10 @@ In the client, tooltips appear when you point to the caption of the control.
 -   Page Action
 -   Page Action Group
 -   Page Custom Action
+-   Page System Action
+-   Page File Upload Action
+-   Query Column
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -59,7 +60,15 @@ Sets the maximum length of the specific ToolTip.
 
 ## Remarks
 
-The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply tooltips to controls on pages. Tooltips can be up to 1024 characters long, exceeding this does not throw an error, but the rest of the tooltip is truncated `...`. The best practice is to not exceed 200 characters. For more information, see [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text).
+The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply tooltips to controls on pages. Tooltips can be up to 1024 characters long, exceeding this doesn't throw an error, but the rest of the tooltip is truncated `...`. The best practice is to not exceed 200 characters. For more information, see [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text).
+
+With the `Locked` parameter, you can specify that the tooltip shouldn't be translated. This is useful when the tooltip is a technical term or a proper name, for example. The `Comment` parameter is used to provide additional information about the tooltip, for example, to explain why the tooltip shouldn't be translated. The `MaxLength` parameter is used to specify the maximum length of the tooltip. If the tooltip exceeds the maximum length, the rest of the tooltip is truncated `...`.
+
+> [!NOTE]  
+> With runtime version 14.0, the `ToolTip` property is available for query columns.
+
+> [!NOTE]  
+> With runtime version 13.0, the `ToolTip` property is available for table fields. A table field tooltip will, like the caption, be applied on page controls that reference the table field. This allows you to specify the tooltip in one place and have it applied to all controls that reference the table field. With runtime 13.0, there's a new code action to help move the tooltip from page controls to table fields or clean them up from the page in case of duplicates. For more information, see [AL code actions](../devenv-code-actions.md).
 
 The following example illustrates how you can apply tooltips in an app:  
 
@@ -82,11 +91,11 @@ field("Reward ID";"Reward ID")
 }
 ```
 
-## See Also
+## Related information
 
-[User Assistance Model](../../user-assistance.md)  
+[User assistance model](../../user-assistance.md)  
 [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  
-[Configuring the Help Experience](../../deployment/configure-help.md)  
-[ToolTipML Property](devenv-tooltipml-property.md)  
-[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../devenv-extension-example.md)  
-[Multilanguage Development](../devenv-work-with-translation-files.md)
+[Configuring the help experience](../../deployment/configure-help.md)  
+[ToolTipML property](devenv-tooltipml-property.md)  
+[Build your first sample extension with extension objects, install code, and upgrade code](../devenv-extension-example.md)  
+[Multilanguage development](../devenv-work-with-translation-files.md)

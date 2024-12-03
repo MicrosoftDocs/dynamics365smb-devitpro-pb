@@ -1,18 +1,17 @@
 ---
-title: Delete userGroupMember
+title: (automation API) Delete userGroupMember
 description: Deletes an user group member object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Delete userGroupMember
+# (automation API) Delete userGroupMember
 
 Deletes an user group member from [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
@@ -60,7 +59,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [userGroupMember](../resources/dynamics_userGroupMember.md)

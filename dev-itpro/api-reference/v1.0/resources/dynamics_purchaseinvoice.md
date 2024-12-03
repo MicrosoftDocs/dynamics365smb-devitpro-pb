@@ -3,13 +3,12 @@ title: (v1.0) purchaseInvoices resource type
 description: (v1.0) A purchase invoice object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
+ms.devlang: al
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # purchaseInvoices resource type (v1.0)
@@ -111,7 +110,7 @@ Here is a JSON representation of the resource.
       "lastModifiedDateTime": "DateTime"
 }
 ```
-## See also
+## Related information
 
 [Purchase Invoice](../resources/dynamics_purchaseinvoice.md)  
 [Get Purchase Invoice](../api/dynamics_purchaseinvoice_get.md)  

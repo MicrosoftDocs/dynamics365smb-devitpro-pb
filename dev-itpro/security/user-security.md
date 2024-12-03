@@ -1,11 +1,7 @@
 ---
 title: User Permissions and Security in Business Central
 description: Provides information about managing user access to the database based on permissions and the different levels of security.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -53,7 +49,7 @@ Passwords in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] do not 
   
  You can specify which printer that each individual user can use. In the client, search for the **Printer Selections** page.  
   
-## See Also  
+## Related information  
 
 [Security and Protection](security-and-protection.md)  
 [Data Security](data-security.md)  

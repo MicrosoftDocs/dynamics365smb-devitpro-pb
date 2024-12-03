@@ -1,25 +1,23 @@
 ---
-title: "RequestPage Data Type"
+title: "RequestPage data type"
 description: "Is a page that is run before the report starts to execute."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RequestPage Data Type
+# RequestPage Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is a page that is run before the report starts to execute. Request pages enable end-users to specify options and filters for a report.
 
 
 
+## Instance methods
 The following methods are available on instances of the RequestPage data type.
 
 |Method name|Description|
@@ -35,6 +33,6 @@ The following methods are available on instances of the RequestPage data type.
 |[Update([Boolean])](requestpage-update-method.md)|Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

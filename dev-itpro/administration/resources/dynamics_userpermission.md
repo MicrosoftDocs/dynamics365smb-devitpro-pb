@@ -1,13 +1,12 @@
 ---
-title: userPermission resource type | Microsoft Docs
+title: userPermission resource type
 description: An user permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2021
+ms.devlang: al
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # userPermission resource type
@@ -70,7 +69,7 @@ Here is a JSON representation of the userPermission resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET userPermission](../api/dynamics_userpermission_get.md)  
 [DELETE userPermission](../api/dynamics_userpermission_delete.md)  
 [POST userPermission](../api/dynamics_userpermission_create.md)  

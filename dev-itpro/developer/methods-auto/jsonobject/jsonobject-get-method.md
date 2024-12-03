@@ -2,13 +2,10 @@
 title: "JsonObject.Get(Text, var JsonToken) Method"
 description: "Retrieves the value of a property with a given key from a JsonObject."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -30,8 +27,7 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 *Key*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-
-        
+  
 
 *Result*  
 &emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  
@@ -49,7 +45,7 @@ A variable of type JsonToken that will contain the result if the operation is su
 ## Remarks 
 The operation will fail if the object does not contain a property with the given Key.
 
-## See Also
+## Related information
 [JsonObject Data Type](jsonobject-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

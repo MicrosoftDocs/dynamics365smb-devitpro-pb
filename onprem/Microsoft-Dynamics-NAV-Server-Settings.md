@@ -1,12 +1,7 @@
 ---
 title: "Microsoft Dynamics NAV Server Settings"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: c6728883-e7a0-4965-9d4d-c8f323335c9a
 caps.latest.revision: 13
 ---

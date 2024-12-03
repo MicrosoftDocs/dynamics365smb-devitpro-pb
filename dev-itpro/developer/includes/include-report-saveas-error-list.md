@@ -1,0 +1,3 @@
+- If the destination folder specified in *FileName* does not exist,
+- If the file specified in *FileName* is being used, or
+- If the [!INCLUDE[prod_short](../../includes/prod_short.md)] server process does not have permission to write to the file specified in *FileName*.

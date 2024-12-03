@@ -1,11 +1,7 @@
 ---
 title: "Layered security model in Business Central"
 description: Helps you understand and improve the security of your Business Central application regardless of where it's hosted.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
@@ -28,9 +24,11 @@ Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod
 
 <!-- [User Authentication](user-security.md#user-authentication)  -->
 
-[Authentication and Credential Types](../administration/users-credential-types.md)
+[Set up Business Central Access with Microsoft 365 Licenses](/dynamics365/business-central/admin-access-with-m365-license)
 
-[Multifactor Authentication](multifactor-authentication.md)<!--note from editor: "Multifactor" is never hyphenated, via Microsoft Writing Style Guide.-->
+[Authentication and Credential Types (on-premises only)](../administration/users-credential-types.md)
+
+[Set up Multifactor Authentication (MFA)](multifactor-authentication.md)<!--note from editor: "Multifactor" is never hyphenated, via Microsoft Writing Style Guide.-->
 
 The authentication method configured for Business Central Server is also used to access web services. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md).
 
@@ -52,18 +50,6 @@ After a user is authenticated, authorization determines which areas the user can
 
 [Using OAuth to Authorize Business Central Web Services](../webservices/authenticate-web-services-using-oauth.md)
 
-## Auditing
-
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes several auditing features that help you track information about who is signing in, what their permissions are, what data they've changed, and more. For more information, see the following articles:
-
-[Authorization Assessment](/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
-  
-[Data Auditing](/dynamics365/business-central/across-log-changes)
-  
-[Security Auditing](security-auditing.md)
-
-[Data Classification](/dynamics365/business-central/admin-classifying-data-sensitivity)
-
 ## Data encryption
 
 You can encrypt data on the Business Central server by generating new encryption keys&mdash;or importing existing ones&mdash;that you enable on the Business Central server instance that connects to the database. For more information, see [Encrypting Data in Dynamics 365 Business Central](../developer/devenv-encrypting-data.md).
@@ -74,7 +60,7 @@ You can encrypt data on the Business Central server by generating new encryption
 
 The Microsoft Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. For more information, see [Security Development Lifecycle](https://www.microsoft.com/sdl).  
 
-## See Also  
+## Related information  
 
 [Security and Protection](security-and-protection.md)  
 [Security Tips for Business Users](security-users.md)  

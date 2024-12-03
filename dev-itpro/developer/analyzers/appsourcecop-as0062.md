@@ -2,13 +2,10 @@
 title: "AppSourceCop Error AS0062"
 description: "Page controls and actions must use the ApplicationArea property to be visible to users."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/26/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -127,7 +124,7 @@ page 50100 MyPage
 > [!NOTE]
 > This inheritance does not apply to members defined in extension objects like page extensions or report extensions.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

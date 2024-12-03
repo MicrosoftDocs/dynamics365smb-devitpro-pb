@@ -2,13 +2,10 @@
 title: "AppSourceCop Error AS0096"
 description: "The name of an extension cannot be changed for extensions targeting a runtime version lower than '8.0' in their app.json file."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -88,7 +85,7 @@ Version 2.0 of the extension:
 
 In version 2.0, the extension has been renamed from `Extension Name` to `New Extension Name` and the runtime version has been changed to 8.0. The rename is allowed.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

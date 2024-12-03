@@ -2,13 +2,10 @@
 title: "Record.Insert(Boolean, Boolean) Method"
 description: "Inserts a record into a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -47,7 +44,7 @@ If this parameter is true, the SystemId field of the record is given a value tha
 
 ## Remarks
 
-The inserted record will automatically get assigned a SystemId by the platform. To assign a specific SystemId instead of the one assigned by the platform, use [Insert(Boolean, Boolean)](record-insert-boolean-boolean-method.md) instead.
+The inserted record will automatically get assigned a SystemId by the platform. To assign a specific SystemId instead of the one assigned by the platform, use [Insert(Boolean, Boolean)](record-insert-boolean-method.md) instead.
 
 ## Example
   
@@ -71,7 +68,7 @@ end;
 
 No run-time error occurs if customer 1120 already exists.
 
-## See Also
+## Related information
 
 [SystemId Field](../../devenv-table-system-fields.md#systemid)  
 [Record Data Type](record-data-type.md)  

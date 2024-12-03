@@ -1,14 +1,11 @@
 ---
-title: "PromotedIsBig Property"
+title: "PromotedIsBig property"
 description: "Sets the action to appear before other promoted actions in the action bar, regardless of its position in the AL code of the page."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -75,7 +72,7 @@ actions
     }
 ```
 
-## See Also  
+## Related information  
 
 [Promoted Property](devenv-promoted-property.md)   
 [Promoted Actions](../devenv-promoted-actions.md)  

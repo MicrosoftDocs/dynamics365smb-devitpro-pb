@@ -2,13 +2,10 @@
 title: "Discontinuing an AppSource app"
 description: "Description of how to discontinue an app that is available on AppSource."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/10/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Discontinuing an AppSource app
@@ -50,7 +47,7 @@ The app will not be automatically uninstalled from customer environments. If the
 
 Even after you removed your offer from the AppSource marketplace, the apps are still stored in Business Central because there can still be customers using them.
 
-## See Also
+## Related information
 
 [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md)  
 [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md)  

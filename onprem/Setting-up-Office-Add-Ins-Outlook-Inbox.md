@@ -1,12 +1,7 @@
 ---
 title: "Setting Up the Office Add-Ins for Outlook Inbox Integration"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Setting Up the Office Add-Ins for Outlook Integration with [!INCLUDE[navnow](includes/navnow_md.md)]

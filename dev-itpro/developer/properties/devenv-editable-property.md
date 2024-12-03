@@ -1,14 +1,11 @@
 ---
-title: "Editable Property"
+title: "Editable property"
 description: "Sets a value that indicates whether a field, page, or control can be edited through the UI."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/15/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,7 +16,7 @@ author: SusanneWindfeldPedersen
 Sets a value that indicates whether a field, page, or control can be edited through the UI.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page
 -   Request Page
 -   Page Label
@@ -64,10 +61,9 @@ Editable = "Balance Due (LCY)" > "Credit Limit (LCY)"
 > Do not use `CurrPage.Editable` to prevent users from deleting entries. We recommend that you use permissions to control which users can delete data.  
 
 > [!NOTE]  
-> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Editable** property, it must be set as a global page variable and the [InDataSet Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute) must be defined on the variable. Also, note that the dynamic Boolean variables and the Booleans set by the InDataSet attribute aren't supported in tables. 
+> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Editable** property, it must be set as a global page variable.  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Page Properties](./devenv-properties.md)  
-[InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute)

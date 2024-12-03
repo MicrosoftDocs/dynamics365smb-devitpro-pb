@@ -3,11 +3,9 @@ title: "Pages with Action Bar Improvements"
 description: "Overview of pages in Dynamics 365 Business Central that contain the action bar improvements"
 author: jacobwj
 ms.author: solsen
-ms.reviewer: 
-ms.service: "dynamics365-business-central"
 ms.topic: conceptual
 ms.date: 11/03/2022
-ms.custom: na
+ms.reviewer: solsen
 ---
 
 # Pages with Action Bar Improvements
@@ -199,7 +197,7 @@ This table provides an overview of all the pages in [!INCLUDE [prod_short](inclu
 | 99000883  | Sales Order Planning  | List  |
 | 99000886  | Subcontracting Worksheet  | Worksheet  |
 
-## See also
+## Related information
 
 [Actions in AL](devenv-actions-overview.md)  
 [Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  

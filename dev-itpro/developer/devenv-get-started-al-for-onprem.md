@@ -2,13 +2,12 @@
 title: Get started with C/SIDE and AL side-by-side for on-premises
 description: Description of how to get started with the new development environment along with C/SIDE.
 author: SusanneWindfeldPedersen
-ms.date: 06/03/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 01/04/2024
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
+ms.service: dynamics-365-op
 ---
 
 # Get started with C/SIDE and AL for on-premises
@@ -21,7 +20,7 @@ To get started with a mixed development environment of C/SIDE and AL, you must f
 2. Download [Visual Studio Code](https://code.visualstudio.com/Download).  
 3. From Visual Studio Code, locate **Extensions** in the left navigation bar, and then choose **Install from vsix**. 
 4. Browse to the equivalent folder of `C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment` and then choose **Install**.
-5. Now, press **Alt+A, Alt+L** to trigger the **AL Go!** command, choose a project, the target platform, and then choose **Your own server**.  
+5. Now, select <kbd>Alt</kbd>+<kbd>A</kbd>, <kbd>Alt</kbd>+<kbd>L</kbd> to trigger the **AL Go!** command, choose a project, the target platform, and then choose **Your own server**.  
 6. Authenticate with the credentials you use for signing into [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises.  
 7. In the launch.json file, update the `"server": "https://localhost"` setting with the URL for server running [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises and save the file.
 8. In the app.json file, add the `"target": "OnPrem"` setting.
@@ -37,6 +36,7 @@ To get started with a mixed development environment of C/SIDE and AL, you must f
 > [!NOTE]  
 > Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
 
-## See Also 
-[AL Development Environment](devenv-reference-overview.md)  
-[FAQ for Developing in AL](devenv-dev-faq.md)  
+## Related information
+
+[AL development environment](devenv-reference-overview.md)    
+[FAQ for developing in AL](devenv-dev-faq.md)  
