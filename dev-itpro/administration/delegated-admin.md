@@ -49,6 +49,8 @@ The following tasks aren't available to the delegated administrator:
 
     Instead, a licensed user who is assigned the SUPER permission set in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can run the assisted setup guide.-->
 
+can you please add something here about how delegated admins are no longer in v25 able to install app source apps? (or maybe you are rethinking this design and will re-instate this ability?)
+
 ## Managing delegated permissions as an internal administrator
 
 As a Microsoft customer organization, you can have multiple partners registered as your resellers. It isn't unusual for a single organization to use one partner as the delegated admin for their Microsoft 365 subscription and another for their [!INCLUDE [prod_short](../developer/includes/prod_short.md)] subscription, for example. The services each partner can administer are determined by the Entra roles that are included in the GDAP relationship. For partners managing [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the [Dynamics 365 Business Central Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-business-central-administrator) role is recommended as the [least-privileged](/partner-center/gdap-least-privileged-roles-by-task) role that allows for administration of and access to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments.
