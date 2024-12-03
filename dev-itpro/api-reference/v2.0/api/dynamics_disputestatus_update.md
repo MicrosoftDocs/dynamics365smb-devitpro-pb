@@ -52,8 +52,7 @@ Here is an example of the request.
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/disputeStatus({id})
 Content-type: application/json
 {
-    "id" : ,
-    "code" :
+    "displayName": "Disputed invoices due to quality"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
@@ -66,9 +65,9 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id" : ,
-    "code" : ,
-    "displayName" :
+    "id": "c7748e9f-8401-ef11-9f8f-6045bde9b6de",
+    "code": "QUALITY",
+    "displayName": "Disputed invoices due to quality"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED-->

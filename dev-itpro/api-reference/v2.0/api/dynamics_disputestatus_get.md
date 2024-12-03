@@ -57,9 +57,9 @@ Here is an example of the response.
 <!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "id" : "",
-    "code" : "",
-    "displayName" : ""
+    "id" : "c7748e9f-8401-ef11-9f8f-6045bde9b6de",
+    "code": "QUALITY",
+    "displayName": "A disputed invoice due to quality"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
