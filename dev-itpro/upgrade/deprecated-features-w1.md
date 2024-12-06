@@ -27,21 +27,15 @@ The following features will be removed in 2026 release wave 1.
 |-----------------------------|-----|
 |Replaced| With [!INCLUDE[prod_short](../includes/prod_short.md)] you can create Connect apps. Connect apps establish a point-to-point connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and a 3rd party solution or service using the standard REST API to interchange data. <br><br>In 2020 release wave 2 we introduced a new improved API where all complex properties are replaced with first-level properties or navigation properties. This change significantly improves API performance, as complex fields were previously calculated at runtime. In API v2.0, all multipart keys and non-GUID keys are replaced with unique GUID keys, and entities can be retrieved using the SystemId, which is immutable, platform-enforced, and indexed. This change improves auditing and API reading performance.<br><br>The API (v1.0) will be removed in 2026 release wave 1.<br><br>The API v2.0 contains all the functionality from API v1.0, so migration should be possible. If this isn't the case, reach out to us via [https://github.com/microsoft/ALAppExtensions](https://github.com/microsoft/ALAppExtensions).<br><br>To learn about the replacement feature, go to [Transitioning from API v1.0 to API v2.0](../api-reference/v2.0/transition-to-api-v2.0.md). |
 
-### Excel reports on the Business Manager and Accountant role centres (removed)
-
-|Moved, Removed, or Replaced? |    Why?|
-|-----------------------------|-----|
-|Replaced| While useful to some organizations, the Excel reports Balance Sheet, Income Statement, Statement of Cash Flows, Statement of Retained Earnings, Sales Taxes Collected, Customer Statements, Aged Accounts Payable, and Aged Accounts Receivable that is currently available from a menu on the Business Manager and Accountant role centres are hard to change for customers as they require technical skills in AL and VBA programming. Analytics in the Finance module have been enhanced in each release wave over the last three years, where we have added data analysis capabilities on ledger tables, reports with Excel layouts that allow users to change the layout as they see fit, and Power BI reports for finance. <br><br>To learn about the replacement features, go to [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
-
 ## Changes in 2025 release wave 1
 
 The following features are marked as `obsolete:pending` in 2025 release wave 1.
 
-### Excel reports on the Business Manager and Accountant role centres (warning)
+### Excel reports on the Business Manager and Accountant role centres
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| While useful to some organizations, the Excel reports Balance Sheet, Income Statement, Statement of Cash Flows, Statement of Retained Earnings, Sales Taxes Collected, Customer Statements, Aged Accounts Payable, and Aged Accounts Receivable that is currently available from a menu on the Business Manager and Accountant role centres are hard to change for customers as they require technical skills in AL and VBA programming. Analytics in the Finance module have been enhanced in each release wave over the last three years, where we have added data analysis capabilities on ledger tables, reports with Excel layouts that allow users to change the layout as they see fit, and Power BI reports for finance. <br><br>To learn about the replacement features, go to [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
+|Replaced| While useful to some organizations, the Balance Sheet, Income Statement, Statement of Cash Flow, Statement of Retained Earnings, Sales Taxes Collected, Customer Statements, Aged Accounts Payable, and Aged Accounts Receivable Excel reports that are currently available on the Business Manager and Accountant Role Centres are hard to change. To change them requires technical skills in AL and VBA programming. We've enhanced analytics capabilities in finance in each release wave over the last three years. For example, we've added data analysis capabilities on ledger tables, reports with Excel layouts that allow users to change the layout as they see fit, and Power BI reports for finance. <br><br>To learn about the replacement features, go to [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
 
 ## Changes in 2024 release wave 2
 
