@@ -1,8 +1,8 @@
 ---
-title: Update 25.1 for Microsoft Dynamics 365 Business Central 2024 release wave 2
-description: Get an overview of new and changed capabilities in the 25.1 update of Business Central online, which is part of 2024 release wave 2.
+title: Update 25.2 for Microsoft Dynamics 365 Business Central 2024 release wave 2
+description: Get an overview of new and changed capabilities in the 25.2 update of Business Central online, which is part of 2024 release wave 2.
 ms.author: jswymer
-ms.date: 10/29/2024
+ms.date: 12/09/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -10,13 +10,13 @@ ms.custom:
     - bap-template
 ---
 
-# Update 25.1 for Microsoft Dynamics 365 Business Central online 2024 release wave 2
+# Update 25.2 for Microsoft Dynamics 365 Business Central online 2024 release wave 2
 
-Would you like to know what changes are in update 25.1? Below you find an overview and relevant links to what was done on hotfixes and regulatory features in this update. In addition, we gathered some good to know information and links that you might find interesting.
+Would you like to know what changes are in update 25.2? Below you find an overview and relevant links to what was done on hotfixes and regulatory features in this update. In addition, we gathered some good to know information and links that you might find interesting.
 
 ## Hotfixes
 
-Learn about the hotfixes on Microsoft Support at [Update 25.1 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5047904). Download the on-premises files from the Microsoft Download Center at [Update 25.1 for Business Central](https://www.microsoft.com/en-us/download/details.aspx?id=106299)<!--(https://aka.ms/BCDownload)-->.
+Learn about the hotfixes on Microsoft Support at [Update 25.2 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5047904). Download the on-premises files from the Microsoft Download Center at [Update 25.2 for Business Central](https://www.microsoft.com/en-us/download/details.aspx?id=106299)<!--(https://aka.ms/BCDownload)-->.
 
 ## Feature changes
 
@@ -27,15 +27,15 @@ Learn about the hotfixes on Microsoft Support at [Update 25.1 for Business Centr
 
 ## Localization updates
 
-No localization updates for 25.1.
+No localization updates for 25.2.
 
 ## Release plan
 
 Do you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2024 release wave 2 (release from October 2024 through March 2025)? Learn more at [Plan and prepare for Dynamics 365 Business Central in 2024 release wave 2](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/)<!--(https://aka.ms/BCReleasePlan)-->.
 
-## Upgrade to 25.1
+## Upgrade to 25.2
 
-New customers automatically get the latest builds of Business Central (25.1). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
+New customers automatically get the latest builds of Business Central (25.2). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
 
 ## Good to know
 
