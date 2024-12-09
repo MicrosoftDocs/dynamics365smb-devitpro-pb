@@ -20,10 +20,11 @@ Learn about the hotfixes on Microsoft Support at [Update 25.2 for Business Centr
 
 ## Feature changes
 
-- [Change the data search method in lists (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/change-data-search-method-lists)
-- [Report sustainability entries with financial reports (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/reporting-sustainability-entries-financial-reports)
-- [VAT Return feature now available - Czechia (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/vat-return-czechia)
-- [Use new service providers in the e-documents framework (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-new-service-providers-e-documents-framework)
+- [Do ad hoc analysis on fixed assets, projects, and services (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/do-ad-hoc-analysis-fixed-assets-projects-services)
+- [E-file IRS 1099 forms without integration (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/e-file-irs-1099-forms-without-integration)
+- [Start using E-Documents framework localized for Germany (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/start-using-e-documents-framework-localized-germany)
+- [Use embedded Power BI reports out of the box (general availability)](use-embedded-power-bi-reports-out-box)
+- [Use the e-documents framework in the Spanish version (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-e-documents-framework-spanish-version)
 
 ## Localization updates
 
@@ -39,14 +40,6 @@ New customers automatically get the latest builds of Business Central (25.2). If
 
 ## Good to know
 
-### Enhancements to chat with Copilot coming in November
-
-During November, we'll be releasing the [Experience enhancements to chat with Copilot](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/experience-enhancements-chat-copilot) feature.
-
-### Business Central Launch Event videos on YouTube
-
-The Business Central Launch Event for the 2024 release wave 2 took place on October 18, 2024. This online event aimed to provide information about the new features and enhancements in the 2024 release wave 2 to resellers, partners, ISVs, and consultants. You can find over 40 videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE).
-
 ### Sales Order Agent in Business Central announcements
 
 In October, the upcoming **Sales Order Agent** was announced in the Dynamics 365 blog post [Transform work with autonomous agents across your business processes](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes) and at the Microsoft Business Application Launch Event. This agent automates routine sales order tasks, allowing sales teams to focus more on customer engagement while improving order accuracy and speed.
@@ -55,11 +48,15 @@ To learn more, you can watch the [Business Application Launch Event video](https
 
 Follow the release plan at [Use Copilot with agent capabilities to automate sales order-taking](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
-### Directions EMEA 2024
+### Online service updates this month
 
-Directions EMEA 2024 will take place from November 6-8 in Vienna. Directions EMEA is the premier event for Dynamics partners to gather and share insights on the future of the industry. The conference focuses on helping the SMB market unlock its full potential in technical, business development and strategy with ERP, CRM, and Cloud solutions, including Microsoft Dynamics 365 Business Central. Learn more and register at
+- [Get list of manageable environments for Microsoft Entra apps (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/get-list-manageable-environments-entra-apps)
 
-To learn more about this event and to register, visit [Directions EMEA 2024](https://www.directionsforpartners.com/conferences-and-events/directions/emea-2024).
+
+### Business Central Launch Event videos on YouTube
+
+The Business Central Launch Event for the 2024 release wave 2 took place on October 18, 2024. This online event aimed to provide information about the new features and enhancements in the 2024 release wave 2 to resellers, partners, ISVs, and consultants. You can find over 40 videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE).
+
 
 ### Features becoming mandatory soon
 
