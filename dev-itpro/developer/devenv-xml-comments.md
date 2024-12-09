@@ -2,19 +2,19 @@
 title: XML comments in code
 description: Learn about adding documentation to AL code by including XML elements in a special syntax.
 ms.author: solsen
-ms.date: 03/14/2024
+ms.date: 12/09/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---
 
-# XML comments in code
+# Documenting your code with XML comments
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation directly in your source code by including XML elements in special comment fields before the block of code that the comment refers to. The documentation comment must immediately precede a user-defined type that it annotates, for example a codeunit, table, interface, or a member such as a field or method. The syntax for adding XML comments in your code is triple slashes `///` followed by one of the supported XML tags. There's IntelliSense support for writing documentation comments that also provides a template comment on entering the third slash in the triple slash.
 
-Documentation comments are visible when you hover over source symbols, in completion lists, and in signature help. By adding XML comments in code, you can improve readability, add useful information about the implementation, and help others take over code that you wrote. With XML comments, you also enable IntelliSense in Visual Studio Code on the AL objects that you add in the code as a help to other developers, working with or extending your code. When your code is documented using XML comments, it means that when you've built an extension and someone extends this code, they'll get inline documentation when they call the given object. Finally, XML comments are used to generate help files for your extension by using the ALDoc tool, see more in the [Auto-generating documentation](#auto-generating-documentation) section below.
+Documentation comments are visible when you hover over source symbols, in completion lists, and in signature help. By adding XML comments in code, you can improve readability, add useful information about the implementation, and help others take over code that you wrote. With XML comments, you also enable IntelliSense in Visual Studio Code on the AL objects that you add in the code as a help to other developers, working with or extending your code. When your code is documented using XML comments, it means that when you've built an extension and someone extends this code, they get inline documentation when they call the given object. Finally, XML comments are used to generate help files for your extension by using the ALDoc tool, learn more in the [Autogenerating documentation](#auto-generating-documentation) section below.
 
 > [!NOTE]  
 > If you have the `allowDownloadingSource` setting in the app.json file set to `false` and you then download an app package; the app package won't contain any XML comments.
@@ -113,9 +113,9 @@ Code comments improve the readability of the code that you've developed and they
 
 For more examples, see [https://stackoverflow.com/questions/3143324/what-are-best-practices-for-documenting-c-sharp-code-with-xml-comments](https://stackoverflow.com/questions/3143324/what-are-best-practices-for-documenting-c-sharp-code-with-xml-comments).
 
-## Auto-generating documentation
+## Autogenerating documentation
 
-You can use the ALDoc tool, which comes with the AL Language extension for Visual Studio Code to generate documentation from your XML comments. For more information, see [Generating help with the ALDoc tool](../help/help-aldoc-generate-help.md).
+You can use the ALDoc tool, which comes with the AL Language extension for Visual Studio Code to generate documentation from your XML comments. Learn more in [Generating help with the ALDoc tool](../help/help-aldoc-generate-help.md).
 
 ## Related information  
 
