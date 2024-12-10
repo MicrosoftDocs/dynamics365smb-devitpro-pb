@@ -42,6 +42,12 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service i
 
 Microsoft weighs the relative risk and disruption to customer operations in choosing cipher suites to support. The RSA-CBC cipher suites haven't been broken yet. We've enabled them to ensure consistency across our services and products, and to support all customer configurations. However, they're at the bottom of the priority list. We'll deprecate these ciphers at the right time, based on the Microsoft Crypto Board's continuous assessment.
 
+### How do you handle security incidents?
+
+This page describes the definitions of a security incident and our customer notification SLAs: [Security incident management overview](/compliance/assurance/assurance-sim-post-incident-activity). 
+
+Here you can learn about the Post Incident Review process: [Microsoft security incident management: Post-incident activity](/compliance/assurance/assurance-sim-post-incident-activity)
+
 
 
 ## Related information  
