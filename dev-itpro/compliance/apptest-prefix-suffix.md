@@ -25,7 +25,7 @@ Environments that have extensions with name collisions can experience issues whe
 - If a conflict arises, the one who registered the prefix/suffix always wins
 - For your own objects and extension objects, you can either use a namespace of at least two levels or you must set the prefix/suffix at the top object level
 - For pages/tables/enums/reports/permissionsets in the base application or other apps that you extend, you must set the prefix/suffix at the control/field/action/procedure/values/dataitem/column level
-- For extension objects that extend objects from the same publisher as your app, affixes are not needed at the control/field/action/procedure/values/dataitem/column level
+- For extension objects that extend objects from the same publisher as your app, affixes aren't needed at the control/field/action/procedure/values/dataitem/column level
 - Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks that the analyzer does. For prefix/suffix detection, refer to the Configuration section. It explains how to set your affixes in the AppSourceCop.json file.
 
 ## Affixes requirements for extensions
