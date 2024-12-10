@@ -26,11 +26,6 @@ The latest penetration tests and security assessments can be found on the [Micro
 > To access some of the resources on the Service Trust Portal, you must sign in as an authenticated user with your Microsoft cloud services account (Microsoft Entra organization account) and review and accept the Microsoft non-disclosure agreement for compliance materials.
 
 
-## Does [!INCLUDE[prod_short](../developer/includes/prod_short.md)] detect jailbroken iOS devices and rooted Android devices to help with protecting organizational data?
-
-We recommend you use Microsoft Intune. Intune is a mobile device management solution. It can help protect organizational data by requiring users and devices to meet certain requirements. For more information, see [Intune's compliance policy settings](/mem/intune/protect/device-compliance-get-started#compliance-policy-settings).
-
-
 ## Why does Business Central still support RSA-CBC ciphers (TLS_ECDHE_RSA_with AES_128_CBC_SHA256 (0xC027) and TLS_ECDHE_RSA_with_AES_256_CBC_SHA384 (0xC028)), which are considered weaker?
 
 Microsoft weighs the relative risk and disruption to customer operations in choosing cipher suites to support. The RSA-CBC cipher suites haven't been broken yet. We've enabled them to ensure consistency across our services and products, and to support all customer configurations. However, they're at the bottom of the priority list. We'll deprecate these ciphers at the right time, based on the Microsoft Crypto Board's continuous assessment.
