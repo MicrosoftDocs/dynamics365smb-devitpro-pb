@@ -56,7 +56,7 @@ Per-tenant extensions aren't required to use a prefix or suffix, but we strongly
 > [!NOTE]
 > If your per-tenant extension causes a conflict with a new object in the base application or an updated AppSource app, then the per-tenant extension will be required to make the change.
 
-## Examples of objects with affixes
+## Examples of objects with affixes or namespaces
 
 Use a two-level namespace for your top-level objects to avoid needing affixes. Otherwise, declare your objects with a prefix or suffix as shown in the following examples.
 
