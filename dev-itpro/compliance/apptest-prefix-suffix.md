@@ -23,8 +23,9 @@ Environments that have extensions with name collisions can experience issues whe
 - The prefix/suffix must be at least three characters
 - The object/field name must start or end with the prefix/suffix
 - If a conflict arises, the one who registered the prefix/suffix always wins
-- For your own objects, you must set the prefix/suffix at the top object level
-- For pages/tables/enums/reports/permissionsets in the base application or other apps that you extend, you must set the prefix/suffix at the top object level and also at the control/field/action/procedure/values/dataitem/column level
+- For your own objects and extension objects, you can either use a namespace of at least two levels or you must set the prefix/suffix at the top object level
+- For pages/tables/enums/reports/permissionsets in the base application or other apps that you extend, you must set the prefix/suffix at the control/field/action/procedure/values/dataitem/column level
+- For extension objects that extend objects from the same publisher as your app, affixes are not needed at the control/field/action/procedure/values/dataitem/column level
 - Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks that the analyzer does. For prefix/suffix detection, refer to the Configuration section. It explains how to set your affixes in the AppSourceCop.json file.
 
 ## Affixes requirements for extensions
@@ -57,9 +58,18 @@ Per-tenant extensions aren't required to use a prefix or suffix, but we strongly
 
 ## Examples of objects with affixes
 
-Declare your objects with a prefix or suffix as shown in the following examples.
+Use a two-level namespace for your top-level objects to avoid needing affixes. Otherwise, declare your objects with a prefix or suffix as shown in the following examples.
 
 ### Table
+
+```AL
+namespace MyUniquePublisherName.Sales;
+
+table 70000000 Salesperson
+{
+    Caption = 'Sales Person';
+}
+```
 
 ```AL
 table 70000000 MyPrefixSalesperson
@@ -78,6 +88,15 @@ table 70000001 SalespersonMySuffix
 ### Page
 
 ```AL
+namespace MyUniquePublisherName.Sales;
+
+page 70000000 Salesperson
+{
+    Caption = 'Sales Person';
+}
+```
+
+```AL
 page 70000000 MyPrefixSalesperson
 {
     Caption = 'Sales Person';
@@ -92,6 +111,8 @@ page 70000001 SalespersonMySuffix
 ```
 
 ### Page extension objects
+
+For extension objects which are extending other publishers' objects, affixes are required.
 
 ```AL
 actions
@@ -120,6 +141,11 @@ actions
 ```
 
 ### Codeunit
+```AL
+namespace MyUniquePublisherName.Sales;
+
+codeunit 70000000 Salesperson
+```
 
 ```AL
 codeunit 70000000 MyPrefixSalesperson
