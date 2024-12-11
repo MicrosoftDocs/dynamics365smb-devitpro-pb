@@ -40,10 +40,9 @@ For more information, see [Troubleshooting OData/API calls](dynamics-error-codes
 
 ## Troubleshooting web service errors in OData/SOAP web services on pages, queries, and codeunits
 
-The [!INCLUDE[prod_short](../includes/prod_short.md)] application evolves over time and changes happen to the user interface as part of this. This means that the page structure and fields might also change when interacting with the page from a web service client and it is not something you can depend on being stable over time. 
+The [!INCLUDE[prod_short](../includes/prod_short.md)] application evolves over time and changes happen to the user interface as part of this. This means that the page structure and fields might also change when interacting with the page from a web service client and it's not something you can depend on being stable over time. 
 
-For information about errors in OData/SOAP web services on pages, queries, and codeunits, see
-[Troubleshooting errors on OData/SOAP web services on pages, queries, and codeunits](web-service-troubleshooting-soap-odata-ui-pages.md)
+Learn more about OData/SOAP web services on pages, queries, and codeunits in [Troubleshooting errors on OData/SOAP web services on pages, queries, and codeunits](web-service-troubleshooting-soap-odata-ui-pages.md)
 
 ## Debugging code called from a web service endpoint
 
