@@ -75,7 +75,7 @@ Similarly, page parts placed within a FastTab are distributed evenly between the
 
 Using the GridLayout or FixedLayout controls, you can arrange fields in multiple rows and columns in a grid-like format. These controls define a static layout that doesn't automatically adapt to the available space on the screen. It's recommended to use these controls only when you're sure your users will access them on larger screens. For more information, see [Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md).
 
-## See Also
+## Related information
 [Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md)  
 [Pages Overview](devenv-pages-overview.md)  
 [Use Designer](devenv-inclient-designer.md)  

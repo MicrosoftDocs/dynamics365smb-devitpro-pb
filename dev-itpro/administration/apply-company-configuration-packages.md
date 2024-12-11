@@ -112,7 +112,7 @@ You have now configured setup with the customer’s business information and rul
 > [!IMPORTANT]
 > Specifically for opening balances for bank accounts, do not follow the steps in this article to post directly to the G/L accounts that are associated with the relevant bank accounts. For more information, see [Set Up Bank Accounts](/dynamics365/business-central/bank-how-setup-bank-accounts).  
 
-## See Also
+## Related information
 
 [Set Up Company Configuration Packages](set-up-standard-company-configuration-packages.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  

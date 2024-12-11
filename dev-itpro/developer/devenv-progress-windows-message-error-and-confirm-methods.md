@@ -115,7 +115,7 @@ end;
 
 The `false` parameter in the `confirm` statement means that `No` is the default.
 
-## See Also  
+## Related information  
 
 [Error handling overview](devenv-al-error-handling.md)   
 [Dialog data type](methods-auto/dialog/dialog-data-type.md)  

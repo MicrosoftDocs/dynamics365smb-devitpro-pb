@@ -225,7 +225,7 @@ Occurs when a new profile was created successfully.
 |[See common custom dimensions](#other)||
 
 <!--
-{"component":"Dynamics 365 Business Central Server","environmentType":"Production","eventId":"LC0052","telemetrySchemaVersion":"0.1","componentVersion":"21.0.45947.0","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","profileAppId":"00000000-0000-0000-0000-000000000000","profileId":"MY-NEW-PROFILE"}
+{"component":"Dynamics 365 Business Central Server","environmentType":"Production","eventId":"LC0052","telemetrySchemaVersion":"0.1","componentVersion":"21.0.45947.0","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","profileAppId":"00000000-0000-0000-0000-000000000000","profileId":"MY-NEW-PROFILE"}
 
 -->
 
@@ -308,7 +308,7 @@ Occurs when a page customization was converted successfully.
 
 Use this telemetry data to determine how the users are working with the profiles that you provide in extensions. Then, make changes to better suit the users needs as you see fit.
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

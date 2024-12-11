@@ -21,7 +21,7 @@ Opens a new browser window which navigates to the specified URL. The benefit of 
 |url      |Type: String <br /><br /> A string that contains the URL for the new browser window to navigate to.|  
   
   
-## See also
+## Related information
 
 [AL method reference](../methods-auto/library.md)  
 [GetEnvironment method](devenv-getenvironment-method.md)  

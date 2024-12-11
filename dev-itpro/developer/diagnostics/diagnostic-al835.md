@@ -21,6 +21,6 @@ The LayoutFile '{0}' is already being used. To avoid build issues, a layout file
 To avoid build issues, a layout file shouldn't be updated by different layouts. Each layout file should only be used in a single layout.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

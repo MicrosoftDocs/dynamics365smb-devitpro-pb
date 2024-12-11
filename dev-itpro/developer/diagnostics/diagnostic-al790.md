@@ -21,6 +21,6 @@ The using directive for '{0}' appeared previously in this namespace declaration.
 The namespace in the using directive is already included in the namespace declaration.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

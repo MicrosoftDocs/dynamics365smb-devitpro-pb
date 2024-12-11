@@ -145,7 +145,7 @@ We recommend the following best practices for designing your application tests:
 
 
 <!-- TO DO: Add articles for the links below-->
-## See Also
+## Related information
  <!--[Application Test Automation](Application-Test-Automation.md)   -->
 [Test pages](devenv-Testing-Pages.md)  
 <!--[Testing with Permission Sets](devenv-testing-with-permission-sets.md) -->  

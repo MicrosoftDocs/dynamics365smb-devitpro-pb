@@ -199,7 +199,7 @@ When you've completed the migration, disable cloud migration by using the **Disa
 > [!IMPORTANT]
 > Just uninstalling the cloud migration apps, even with the option to remove the data, won't disable the migration in the same way. If you don't disable **Cloud Migration**, users will experience permission-related errors when they try to modify records in the migrated companies.
 
-## See also
+## Related information
 
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  

@@ -63,7 +63,7 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Aged Accounts Receivable](../resources/dynamics_agedaccountsreceivable.md)  
 [Get Aged Accounts Payable](../api/dynamics_agedaccountspayable_get.md)  

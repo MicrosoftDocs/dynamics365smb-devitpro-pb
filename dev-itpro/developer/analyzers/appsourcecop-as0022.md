@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0022"
 description: "An external scope cannot be removed."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -156,7 +156,7 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the procedure `MyOnPremProcedure` becomes available for both `OnPrem` and `Cloud` development. Any dependent extension can now call this procedure, regardless of the compilation target specified in their app.json. The default Scope of a procedure is `Cloud`. Removing the attribute is then also allowed.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

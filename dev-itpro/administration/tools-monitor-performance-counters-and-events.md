@@ -1,13 +1,14 @@
 ---
-title: "Tools for Monitoring Performance Counters and Events"
+title: Tools for Monitoring Performance Counters and Events
+description: Learn about the tools that you can use to monitor Business Central Server performance counters and events.
 ms.date: 04/01/2021
 ms.topic: conceptual
-ms.assetid: 9093c5f4-a594-4b70-90f3-2be0e1c13abd
-caps.latest.revision: 14
 author: SusanneWindfeldPedersen
 ---
-# Tools for Monitoring Performance Counters and Events
-This topic lists some of the tools that you can use to monitor [!INCLUDE[server](../developer/includes/server.md)].  
+
+# Tools for monitoring performance counters and events
+
+This article lists some of the tools that you can use to monitor [!INCLUDE[server](../developer/includes/server.md)].  
 
 <!-- remove temporarily until we determine support for this ## Microsoft System Center Operations Manager  
  Microsoft System Center Operations Manager, which is a component of Microsoft System Center 2012, enables you to monitor services and operations on multiple computers from a single console. The System Center Monitoring Pack for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extends Operations Manager for monitoring computers that are running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] components and services, including [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Microsoft Dynamics NAV  Management Pack for System Center Operations Manager](https://go.microsoft.com/fwlink/?LinkID=722863).  -->
@@ -30,5 +31,5 @@ You can also log ETW events using the Microsoft TraceEvent Library, which includ
 ## PerfView  
 PerfView is a performance-analysis tool that focuses on Event Tracing for Windows information. PerfView can help you isolate performance issues that are related to [!INCLUDE[server](../developer/includes/server.md)]. To download and install PerfView, see [https://go.microsoft.com/fwlink/?LinkID=313428](https://go.microsoft.com/fwlink/?LinkID=313428).
 
-## See Also
+## Related information
 [Monitoring Business Central Server Events](monitor-server-events.md)

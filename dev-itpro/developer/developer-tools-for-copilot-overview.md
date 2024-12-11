@@ -8,7 +8,7 @@ ms.topic: overview
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 12/07/2023
+ms.date: 11/11/2024
 ms.custom: bap-template 
 ---
 
@@ -16,9 +16,10 @@ ms.custom: bap-template
 
 Azure OpenAI Service offers robust, generative AI models that our partners can now utilize to foster a rich ecosystem of AI-powered extensions for Business Central. Developer tools for Copilot make up a specialized toolkit that allows AL developers to easily integrate Azure OpenAI Service into AL code. This toolkit enables developers to enrich their extensions and solutions with generative AI, creating a seamless integration into the Business Central user experience, and allowing for a straightforward implementation into their add-ons or customizations.
 
-## Benefits 
+## Benefits
 
 The advantages of using this toolkit include:
+
 - Designing solutions that adhere to Responsible AI principles.
 - Creating a unified Copilot experience.
 - Accelerating time to market.
@@ -28,7 +29,7 @@ With Business Central's flexible development platform, developers can implement 
 |Stakeholder|Benefits|
 |-|-|
 |Partners|<ul><li>Quicker path to delivering generative AI to your customers in production.</li><li>Attractive visual design with signature Microsoft Copilot experience that is seamless in Business Central's UI. </li><li>Build upon Microsoft's expertise in responsible AI to improve the safety of your features. </li><li>Reduced time and effort to bring your idea to market, resulting in new monetization and compete opportunities.</li><li>Rapidly build prototypes to validate ideas within your team or with customers.</li></ul>|
-|Customers|<ul><li>Seamlessness and consistency of experience across Copilot capabilities from different software vendors.</li><li>Safer Business Central capabilities, developed responsibly  </li><li>Centralized place to discover and control generative AI features from Microsoft and partners. </li></ul>|
+|Customers|<ul><li>Seamlessness and consistency of experience across Copilot capabilities from different software vendors.</li><li>Safer Business Central capabilities, developed responsibly</li><li>Centralized place to discover and control generative AI features from Microsoft and partners. </li></ul>|
 
 ## Intent
 

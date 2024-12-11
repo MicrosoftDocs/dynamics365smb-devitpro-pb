@@ -21,6 +21,6 @@ The input cannot be longer than {0}.
 A date formula value cannot exceed 32 characters.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -21,6 +21,6 @@ Field {0} cannot be converted to type {1}.
 The type of the result of a calculation formula must match the type of the FlowField associated with that CalcFormula.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -458,7 +458,7 @@ Add a FactBox to relevant pages so that users can view when and how the new work
 -->
 You have now enabled a new workflow scenario by implementing the required workflow event and response in the application code. The workflow administrator can now select the workflow event and workflow response from the **Workflow** page to define new or edit existing workflows. For more information, see [Set Up Workflows](/dynamics365/business-central/across-set-up-workflows) in the business functionality content.
 
-## See Also
+## Related information
 
 [Workflows in Dynamics 365 Business Central](/dynamics365/business-central/across-workflow)  
 [Set Up Workflows](/dynamics365/business-central/across-set-up-workflows)  

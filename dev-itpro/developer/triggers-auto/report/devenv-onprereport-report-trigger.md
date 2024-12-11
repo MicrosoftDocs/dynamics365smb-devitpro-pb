@@ -1,8 +1,8 @@
 ---
-title: "OnPreReport (Report) Trigger"
+title: "OnPreReport (Report) trigger"
 description: "Runs before a report is run."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnPreReport (Report) Trigger
+# OnPreReport (Report) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs before a report is run.
@@ -39,7 +39,7 @@ ReportFilter := SomeRecord.GetFilters;
   
 Use the ReportFilter text string as the source expression for a control in a section of the report.  
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -162,7 +162,7 @@ If you're deployment is enabled for it, you can also view data about deadlocks i
 - [Enabling Application Insights for Tenant Telemetry](telemetry-enable-application-insights.md)
 - [Analyzing Database Deadlock Trace Telemetry](telemetry-database-deadlocks-trace.md)
 
-## See Also
+## Related information
 
 [Monitoring Business Central Server Events](monitor-server-events.md)  
 [Monitoring SQL Database Locks](monitor-database-locks.md)  

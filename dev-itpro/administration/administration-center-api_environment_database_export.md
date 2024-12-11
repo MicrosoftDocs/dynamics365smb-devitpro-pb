@@ -153,7 +153,7 @@ Returns a detailed list of the database exports that occurred within the provide
 
 - sandbox
 
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)
 [Manage Apps](tenant-admin-center-manage-apps.md)

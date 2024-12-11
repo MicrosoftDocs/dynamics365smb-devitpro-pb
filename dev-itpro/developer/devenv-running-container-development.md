@@ -114,7 +114,7 @@ Publish-BcContainerApp -appFile <full path to file> -tenant <tenant name> -insta
 
 Use `help Publish-BcContainerApp -detailed` to get a full list of parameters and functionality.
 
-## See also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)  
 [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md)  

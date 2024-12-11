@@ -56,7 +56,7 @@ There are several areas to consider, which can reduce the number of calls from a
 
     Deep insert can also be performed in Batch calls.
 
-## See also
+## Related information
 
 [Current API Limits](dynamics-current-limits.md)  
 [Best practices on transient errors](/azure/architecture/best-practices/transient-faults)  

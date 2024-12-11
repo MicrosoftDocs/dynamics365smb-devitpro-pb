@@ -18,6 +18,6 @@ The data type on the '{0}' control is not valid for this ExtendedDataType value.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -1,9 +1,9 @@
 ---
-title: "SourceTableView Property (Pages)"
-ms.date: 04/01/2021
+title: SourceTableView Property (Pages)
+description: Sets the key, sort order, and filter you want to use to determine the view of the source table presented to the user.
+ms.date: 11/13/2024
 ms.topic: reference
-ms.assetid: 3b99a282-bc11-471c-928c-3b305d94a900
-caps.latest.revision: 8
+ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
 
@@ -41,12 +41,12 @@ page 50101 MyCustomers
 }
 ```
 
-For more information on how you can scan, find, and limit records in a list, see [Sorting, Searching, and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters).
+Learn more about how you can scan, find, and limit records in a list in [Sorting, searching, and filtering lists](/dynamics365/business-central/ui-enter-criteria-filters).
 
 ## Remarks  
  
 When you combine a descending sort order on SourceTableView with overriding the OnFindRecord, you may experience that the page displays the last record instead of the first when the page opens. You can resolve this condition by adding `Rec.FindFirst` in the OnOpenPage trigger, or using `Find(-)` in the OnFindRecord trigger.
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

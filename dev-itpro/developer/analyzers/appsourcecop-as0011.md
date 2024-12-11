@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0011"
 description: "An affix is required."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -117,7 +117,7 @@ Once all dependent extensions have been updated to use the codeunit `Foo_MyCodeu
 > [!NOTE]  
 > When new objects are added to this rule, the transition can be made gradually because new objects are caught by the AS0011 rule, whereas the AS0098 rule catches existing or modified objects. The warning with the same behavior is described here: [AS0098](appsourcecop-as0098.md).
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

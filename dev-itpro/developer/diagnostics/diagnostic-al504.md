@@ -21,6 +21,6 @@ The enum '{0}' is not extensible.
 The referenced enum is not extensible. Enums are not extensible by default, you must set the **Extensible** property to **true*.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

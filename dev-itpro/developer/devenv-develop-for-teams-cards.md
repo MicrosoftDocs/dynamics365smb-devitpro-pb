@@ -351,7 +351,7 @@ end;
 
 In the code, the **Vendor Role Name** field is defined in a table extension object that extends the **Vendor** table.
 
-## See Also
+## Related information
 
 [FAQ for Teams Integration](devenv-dev-faq-teams.md)  
 [Field Groups](devenv-field-groups.md)  

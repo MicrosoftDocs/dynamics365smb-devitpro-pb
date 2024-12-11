@@ -562,7 +562,7 @@ Restart-NAVServerInstance -ServerInstance <server instance name>
 ```
 
 
-## See Also
+## Related information
 
 [Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-17.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  

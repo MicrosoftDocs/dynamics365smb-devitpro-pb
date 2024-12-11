@@ -50,7 +50,7 @@ The articles in this section describe the key concepts and techniques for using 
 |Learn how to send custom events from your app/extension to the Windows event log (on-premises only). | [Creating custom events for Windows event log (on-premises only)](devenv-instrument-application-for-telemetry-event-log.md) |
 
 
-## See Also
+## Related information
 
 [Telemetry FAQ](../administration/telemetry-faq.md)  
 [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md)  

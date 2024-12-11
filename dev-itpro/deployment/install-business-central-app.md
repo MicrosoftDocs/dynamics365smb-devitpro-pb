@@ -71,7 +71,7 @@ To install a working [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
     When completed, the Business Central App will open.
 
-## See also
+## Related information
 
 [Troubleshooting the Business Central Mobile App on-premises](../developer/devenv-troubleshooting-the-mobile-app.md)  
 [Installing Business Central Using Setup](install-using-setup.md)  

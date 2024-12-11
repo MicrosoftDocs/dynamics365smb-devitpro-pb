@@ -18,6 +18,6 @@ Dependency '{0}' is referenced in the property '{1}' and as an explicit dependen
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

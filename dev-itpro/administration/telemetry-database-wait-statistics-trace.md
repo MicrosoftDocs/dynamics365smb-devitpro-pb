@@ -80,7 +80,7 @@ Occurs when a query has to wait because of a resource, queue, or external event 
 |[See common custom dimensions](#other)||
 
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

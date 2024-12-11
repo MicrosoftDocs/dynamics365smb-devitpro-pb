@@ -2,8 +2,8 @@
 title: Actionable errors
 description: Learn how to write AL code that returns error dialogs where users might unblock themselves.
 ms.custom: bap-template
-ms.date: 12/21/2023
-ms.reviewer: jswymer
+ms.date: 11/11/2024
+ms.reviewer: solsen
 ms.topic: conceptual
 author: samirdal
 ms.author: samirdal
@@ -172,6 +172,7 @@ field(59; "Gen. Prod. Posting Group"; Code[20])
     var
         CheckIfFieldIsEmpty: Boolean;
         FieldEmptyErrorInfo: ErrorInfo;
+        ChangeNotAllowedErrorInfo: ErrorInfo;
     begin
         CheckIfFieldIsEmpty := // calculate if true or false        
 
@@ -314,7 +315,7 @@ If the user experience the error they see the following error dialog
 :::image type="content" source="media/error-dialog-nosolution.png" alt-text="Error dialog with no solution":::
 
 
-## See Also  
+## Related information  
 
 [Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
 [User experience guidelines for errors](devenv-error-handling-guidelines.md)  

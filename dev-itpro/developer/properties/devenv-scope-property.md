@@ -14,6 +14,6 @@ The Scope property is applicable to the following types:
 - [Scope Property (Action)](devenv-scope-action-property.md)
 - [Scope Property (Table)](devenv-scope-table-property.md)
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

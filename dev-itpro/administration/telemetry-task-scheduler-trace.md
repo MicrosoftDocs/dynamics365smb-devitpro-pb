@@ -39,7 +39,7 @@ The following table explains the general dimensions of this trace.
 ### Custom dimensions
 
 <!--
-{"telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","environmentType":"Production","failureCodeunitObjectId":"50206","aadTenantId":"common","companyName":"CRONUS International Ltd.","codeunitObjectId":"50205","component":"Dynamics 365 Business Central Server","eventId":"LC0030","languageId":"1033","notBefore":"2021-08-17T08:28:01.5480000Z","formatId":"1033","isReady":"True","timeout":"12:00:00","taskId":"63d1f8bc-9f75-4c6e-8646-339c796210f0"}
+{"telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","environmentType":"Production","failureCodeunitObjectId":"50206","aadTenantId":"common","companyName":"CRONUS International Ltd.","codeunitObjectId":"50205","component":"Dynamics 365 Business Central Server","eventId":"LC0030","languageId":"1033","notBefore":"2021-08-17T08:28:01.5480000Z","formatId":"1033","isReady":"True","timeout":"12:00:00","taskId":"a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1"}
 -->
 
 |Dimension|Description or value|
@@ -83,7 +83,7 @@ The following table explains the general dimensions of this trace.
 ### Custom dimensions
 
 <!--
-{"component":"Dynamics 365 Business Central Server","telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","environmentType":"Production","failureCodeunitObjectId":"50206","aadTenantId":"common","companyName":"CRONUS International Ltd.","codeunitObjectId":"50205","eventId":"LC0031","languageId":"1033","notBefore":"2021-08-16T09:49:24.4300000Z","formatId":"1033","timeout":"12:00:00","isReady":"True","taskId":"b648d856-bc54-4568-9011-12bdd2837b09"}
+{"component":"Dynamics 365 Business Central Server","telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","environmentType":"Production","failureCodeunitObjectId":"50206","aadTenantId":"common","companyName":"CRONUS International Ltd.","codeunitObjectId":"50205","eventId":"LC0031","languageId":"1033","notBefore":"2021-08-16T09:49:24.4300000Z","formatId":"1033","timeout":"12:00:00","isReady":"True","taskId":"a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1"}
 
 -->
 
@@ -98,7 +98,7 @@ The following table explains the general dimensions of this trace.
 |timeout|Specifies the timeout that was set on the task. If a task takes longer to complete than the specified time, it's canceled. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
 
-<!--Task b648d856-bc54-4568-9011-12bdd2837b09 ready: 50205 set ready to run after 2021-08-16 09:49:24Z.-->
+<!--Task a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1 ready: 50205 set ready to run after 2021-08-16 09:49:24Z.-->
 
 ## Task removed
 
@@ -116,7 +116,7 @@ The following table explains the general dimensions of this trace.
 ### Custom dimensions
 
 <!--
-{"telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","failureCodeunitObjectId":"450","environmentType":"Production","aadTenantId":"common","companyName":"CRONUS ÆØÅ Company","codeunitObjectId":"448","component":"Dynamics 365 Business Central Server","eventId":"LC0032","languageId":"1033","notBefore":"2021-08-17T09:38:25.9970000Z","formatId":"1033","timeout":"12:00:00","isReady":"True","taskId":"caefe853-186c-4fc1-a875-70e8c22a90b8"}
+{"telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","failureCodeunitObjectId":"450","environmentType":"Production","aadTenantId":"common","companyName":"CRONUS ÆØÅ Company","codeunitObjectId":"448","component":"Dynamics 365 Business Central Server","eventId":"LC0032","languageId":"1033","notBefore":"2021-08-17T09:38:25.9970000Z","formatId":"1033","timeout":"12:00:00","isReady":"True","taskId":"a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1"}
 -->
 
 |Dimension|Description or value|
@@ -153,7 +153,7 @@ The following table explains the general dimensions of this trace.
 ### Custom dimensions
 
 <!--
-{"component":"Dynamics 365 Business Central Server","result":"Canceled","telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","environmentType":"Production","serverExecutionTime":"00:00:30.2988571","failureCodeunitObjectId":"50204","companyName":"CRONUS International Ltd.","aadTenantId":"common","codeunitObjectId":"50203","sqlExecutes":"8","sqlRowsRead":"5","eventId":"LC0034","totalTime":"00:00:30.2988571","languageId":"1033","notBefore":"2021-08-16T07:28:53.7400000Z","formatId":"1033","attemptNumber":"0","sessionId":"21","timeout":"00:00:30","isReady":"True","taskId":"6e78429a-cd58-4496-8595-b525f1bb9f27","cancelReasonMessage":"The operation was canceled because it took longer to complete than the specified threshold (00:00:30).","cancelReason":"MaxTimeExceeded"}
+{"component":"Dynamics 365 Business Central Server","result":"Canceled","telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","environmentType":"Production","serverExecutionTime":"00:00:30.2988571","failureCodeunitObjectId":"50204","companyName":"CRONUS International Ltd.","aadTenantId":"common","codeunitObjectId":"50203","sqlExecutes":"8","sqlRowsRead":"5","eventId":"LC0034","totalTime":"00:00:30.2988571","languageId":"1033","notBefore":"2021-08-16T07:28:53.7400000Z","formatId":"1033","attemptNumber":"0","sessionId":"21","timeout":"00:00:30","isReady":"True","taskId":"a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1","cancelReasonMessage":"The operation was canceled because it took longer to complete than the specified threshold (00:00:30).","cancelReason":"MaxTimeExceeded"}
 
 -->
 
@@ -193,7 +193,7 @@ The following table explains the general dimensions of this trace.
 ### Custom dimensions
 
 <!--
-{"telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","environmentType":"Production","serverExecutionTime":"00:00:00.0688227","failureCodeunitObjectId":"50206","aadTenantId":"common","companyName":"CRONUS International Ltd.","codeunitObjectId":"50205","component":"Dynamics 365 Business Central Server","sqlRowsRead":"5","sqlExecutes":"8","eventId":"LC0035","totalTime":"00:00:00.0688227","languageId":"1033","notBefore":"2021-08-17T09:29:22.5230000Z","formatId":"1033","result":"Failure","isReady":"True","timeout":"12:00:00","attemptNumber":"0","taskId":"54904eef-e20a-41f7-bba1-d451480ac4bf","sessionId":"2634","failureReason":"NavNCLDialogException"}
+{"telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","environmentType":"Production","serverExecutionTime":"00:00:00.0688227","failureCodeunitObjectId":"50206","aadTenantId":"common","companyName":"CRONUS International Ltd.","codeunitObjectId":"50205","component":"Dynamics 365 Business Central Server","sqlRowsRead":"5","sqlExecutes":"8","eventId":"LC0035","totalTime":"00:00:00.0688227","languageId":"1033","notBefore":"2021-08-17T09:29:22.5230000Z","formatId":"1033","result":"Failure","isReady":"True","timeout":"12:00:00","attemptNumber":"0","taskId":"a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1","sessionId":"2634","failureReason":"NavNCLDialogException"}
 
 -->
 
@@ -268,7 +268,7 @@ The following table explains the general dimensions of this trace.
 ### Custom dimensions
 
 <!--
-{"telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","environmentType":"Production","serverExecutionTime":"00:00:00.0506101","failureCodeunitObjectId":"50206","aadTenantId":"common","companyName":"CRONUS International Ltd.","codeunitObjectId":"50205","component":"Dynamics 365 Business Central Server","sqlExecutes":"13","sqlRowsRead":"7","eventId":"LC0033","totalTime":"00:00:00.0506101","languageId":"1033","notBefore":"2021-08-17T08:28:01.5470000Z","formatId":"1033","result":"Success","isReady":"True","timeout":"12:00:00","attemptNumber":"0","taskId":"63d1f8bc-9f75-4c6e-8646-339c796210f0","sessionId":"2452"}
+{"telemetrySchemaVersion":"0.1","componentVersion":"18.0.29040.0","environmentType":"Production","serverExecutionTime":"00:00:00.0506101","failureCodeunitObjectId":"50206","aadTenantId":"common","companyName":"CRONUS International Ltd.","codeunitObjectId":"50205","component":"Dynamics 365 Business Central Server","sqlExecutes":"13","sqlRowsRead":"7","eventId":"LC0033","totalTime":"00:00:00.0506101","languageId":"1033","notBefore":"2021-08-17T08:28:01.5470000Z","formatId":"1033","result":"Success","isReady":"True","timeout":"12:00:00","attemptNumber":"0","taskId":"a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1","sessionId":"2452"}
 -->
 
 |Dimension|Description or value|
@@ -333,7 +333,7 @@ The following table explains the general dimensions of this trace.
 [!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
 
 
-## See also
+## Related information
 [Task Scheduler](../developer/devenv-task-scheduler.md)   
 [Telemetry overview](telemetry-overview.md)  
 [Enabling Telemetry](telemetry-enable-application-insights.md)  

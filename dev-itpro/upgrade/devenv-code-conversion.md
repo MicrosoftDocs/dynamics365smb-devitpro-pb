@@ -9,12 +9,9 @@ ms.reviewer: jswymer
 ---
 # Code Conversion from C/AL to AL
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 This article explains how to convert a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (version 14) C/AL code-customized on-premises solution to AL code.
 
-You'll use this procedure as part of the upgrade process when going from version 14 to a later version, from 18 to 20.
-
+You'll use this procedure as part of the upgrade process when going from version 14 to a later version.
 
 ## Before you start
 
@@ -55,8 +52,8 @@ For example, do the following steps:
 1. Export the custom base application objects.
     1. Create a folder for storing the exported base application objects to TXT files (for example, c:\export2al\baseapplication).
     2. Run the following commands to export tha application objects, but omitting the system objects and test library objects.
-    
-        ```
+
+        ```ps
         Export-NAVApplicationObject -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "c:\export2al\baseapplication\exportedbc14app-part1.txt" -Filter 'Id=1..129999'
         ```
     
@@ -252,7 +249,7 @@ In this task, you'll create an AL project in Visual Studio code that you'll use 
 
     ```json
     {
-        "id": "11111111-aaaa-2222-bbbb-333333333333",
+        "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
         "name": "My Base Application",
         "publisher": "Microsoft",
         "version": "14.13.0.0",
@@ -484,7 +481,7 @@ If you converted the test library form C/AL to AL, you'll now create and build a
 
     ```json
     {
-        "id": "44444444-aaaa-5555-bbbb-666666666666",
+        "id": "44445555-eeee-6666-ffff-7777aaaa8888",
         "name": "Test Library",
         "publisher": "Default Publisher",
         "version": "14.13.0.0",
@@ -560,7 +557,7 @@ We recently released a Docker AL Preview image as part of the Insider program, c
 
     - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with <kbd>Ctrl</kbd>+<kbd>F5</kbd> . 
 -->
-## See Also
+## Related information
 [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md)  
 [Developing Extensions](../developer/devenv-dev-overview.md)  
 [AL Development Environment](../developer/devenv-reference-overview.md)  

@@ -73,7 +73,7 @@ articles will explain how to subscribe to and use the events:
 
 [Handling Print Action with the OnAfterSetupPrinters Event](devenv-reports-handle-print-action.md)-->
 
-## See also  
+## Related information  
 
 <!--[Troubleshooting Email Printing](devenv-report-troubleshooting-printing.md)  -->
  [Events in AL](devenv-events-in-al.md)  

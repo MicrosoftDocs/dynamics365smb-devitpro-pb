@@ -4,7 +4,7 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 07/01/2024
+ms.date: 10/29/2024
 ms.custom: bap-template
 ms.topic: whats-new 
 ---
@@ -15,8 +15,8 @@ Wondering about upcoming and recently released capabilities in Dynamics 365 Busi
 
 See the release plans for what's coming. Choose the following links to learn about the latest versions of Business Central.
 
+- [2024 release wave 2](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/planned-features)
 - [2024 release wave 1](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/planned-features)
-- [2023 release wave 2](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/planned-features)
 
 Keep track of changes on the [Dynamics 365 Business Central release planner](https://experience.dynamics.com/releaseplans/?app=Business+Central) site, or download the release plan as a single PDF.  
 
@@ -28,10 +28,9 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
-|24.3|Application Build 24.3 Platform Build 24.0|July 2024|[Update 24.3 for Microsoft Dynamics 365 Business Central online 2024 release wave 1](whatsnew-update-24-3.md)|
-|24.2|Application Build 24.2 Platform Build 24.0|June 2024|[Update 24.2 for Microsoft Dynamics 365 Business Central online 2024 release wave 1](whatsnew-update-24-2.md)|
-|24.1|Application Build 24.1 Platform Build 24.0|May 2024|[Update 24.1 for Microsoft Dynamics 365 Business Central online 2024 release wave 1](whatsnew-update-24-1.md)|
-|23.5|Application Build 23.5 Platform Build 23.0|March 2024|[Update 23.5 for Microsoft Dynamics 365 Business Central online 2023 release wave 2](whatsnew-update-23-5.md)|
+|25.1|Application Build 25.0 Platform Build 25.0|November 2024|[Update 25.1 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-1.md)|
+|24.5|Application Build 24.5 Platform Build 24.0|September 2024|[Update 24.5 for Microsoft Dynamics 365 Business Central online 2024 release wave 1](whatsnew-update-24-5.md)|
+|24.4|Application Build 24.4 Platform Build 24.0|August 2024|[Update 24.4 for Microsoft Dynamics 365 Business Central online 2024 release wave 1](whatsnew-update-24-4.md)|
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
 
 For earlier versions, see the archived release plans at [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/archived-plans).  <!--required section-->
@@ -40,6 +39,6 @@ For earlier versions, see the archived release plans at [Release plans for Dynam
 
 New customers automatically get the latest version. If you're an existing partner/customer, check your email for notifications about updates. <!-- standard wording for apps with auto-update. If the app has an article with instruction for admins to apply an update, then link to that -->
 
-Learn more at [Manage updates in the admin center](../administration/tenant-admin-center-update-management.md). Learn more about updates at [Major updates and minor updates](../administration/update-rollout-timeline.md).  
+Learn more in [Manage updates in the admin center](../administration/tenant-admin-center-update-management.md). Learn more about updates in [Major updates and minor updates](../administration/update-rollout-timeline.md).  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

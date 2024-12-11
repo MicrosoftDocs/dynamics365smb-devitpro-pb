@@ -72,5 +72,5 @@ In this procedure, you create and publish a web service from the **Item Card** p
   
      This indicates that there are 27 ATHENS Mobile Pedestals on sales orders designated for the GREEN location.  
   
-## See Also  
+## Related information  
  [OData Web Services](OData-Web-Services.md)

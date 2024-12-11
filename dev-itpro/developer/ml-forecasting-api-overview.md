@@ -4,7 +4,7 @@ description: Integrate with the Azure Machine Learning web service through the f
 author: AndreiPanko
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 06/13/2024
+ms.date: 09/13/2024
 ms.custom: bap-template
 ms.collection:
   - get-started
@@ -79,6 +79,9 @@ begin
   TimeSeriesManagement.Initialize(URITxt, KeyTxt, 0, false);
  
 ```
+
+> [!NOTE]
+> You can always switch back to resources managed by Microsoft by removing values from API URL and API Key fields.
 
 If you pass empty strings, the system uses the default end-point, but that only works for [!INCLUDE [prod_short](includes/prod_short.md)] online: 
 
@@ -301,7 +304,7 @@ What about always using ALL? That’s a good option, however with its own drawba
  
 For more information, see the source code of the [Sales and Inventory Forecast extension](https://github.com/microsoft/ALAppExtensions/tree/master/AddOns/SalesAndInventoryForecast). Alternatively, you can also take a closer look at the Cash Flow Forecast feature, which is part of the Base Application extension.
 
-## See also
+## Related information
 
 [Prediction API overview](ml-forecasting-api-overview.md)  
 [The Sales and Inventory Forecast Extension](/dynamics365/business-central/ui-extensions-sales-forecast)  

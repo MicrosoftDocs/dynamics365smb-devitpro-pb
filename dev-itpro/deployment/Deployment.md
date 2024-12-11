@@ -65,7 +65,7 @@ For more information about administering on-premises deployments, see [Administr
 
 Part of your configuration is to specify where to look up the Help for the solution. For on-premises deployments, you can choose to install the legacy Help Server, for example. For more information, see [Configuring the Help Experience](configure-help.md).  
 
-## See Also  
+## Related information  
 
 [Administration of Business Central Online](../administration/tenant-administration.md)  
 [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  

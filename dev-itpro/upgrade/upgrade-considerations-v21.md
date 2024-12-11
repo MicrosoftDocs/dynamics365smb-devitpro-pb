@@ -74,7 +74,7 @@ If a company name includes a special character, an error may display during the 
 
 If you are going to upgrade a database where one or more company name includes a special character, we recommend that you rename the company before you start the upgrade process. After the upgrade is successfully finished, you can rename the company again.  -->
 
-## See Also  
+## Related information  
 
 [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
 [Upgrading the Data](Upgrading-the-Data.md)   

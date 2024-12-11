@@ -105,12 +105,6 @@ Occurs when a record is deleted by a retention policy.
 |alTableNo|Specifies the ID of the table from which the records were deleted.|
 |[See common custom dimensions](#other)||
 
-<!--
-{
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"18.0.24530.0","componentVersion":"18.0.24530.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","extensionPublisher":"Microsoft","Extension version":"18.1.24582.0","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","extensionVersion":"18.1.24582.0","aadTenantId":"common","AadTenantId":"common","Extension name":"System Application","extensionName":"System Application","alObjectType":"CodeUnit","alObjectName":"Reten. Policy Telemetry Impl.","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","alObjectId":"3912","eventId":"AL0000D6H","alDataClassification":"SystemMetadata","alCompanyName":"CRONUS International Ltd.","alTableName":"Retention Policy Log Entry","alTableNo":"3905","alRecordsDeleted":"0","alManualRun":"true"}
-
-}
--->
 
 ## <a name="first"></a>First retention policy enabled on company
 
@@ -134,12 +128,6 @@ Occurs when the first retention policy is enabled in a company.
 |alTableNo|Specifies the ID of the table that the retention policy was enabled on.|
 |[See common custom dimensions](#other)||
 
-<!--
-{
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"18.0.24530.0","extensionPublisher":"Microsoft","componentVersion":"18.0.24530.0","Environment type":"Production","Extension version":"18.1.24582.0","environmentType":"Production","extensionVersion":"18.1.24582.0","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension name":"System Application","extensionName":"System Application","aadTenantId":"common","AadTenantId":"common","alObjectType":"CodeUnit","alObjectName":"Reten. Policy Telemetry Impl.","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","alObjectId":"3912","eventId":"AL0000D6I","alDataClassification":"SystemMetadata","alCompanyName":"CRONUS International Ltd.","alTableName":"Change Log Entry","alTableNo":"405"}
-
-}
--->
 
 ## <a name="last"></a>Last retention policy disabled on company
 
@@ -167,7 +155,7 @@ Occurs when the last retention policy is disabled in a company.
 {"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","extensionPublisher":"Microsoft","Component version":"18.0.24530.0","Extension version":"18.1.24582.0","componentVersion":"18.0.24530.0","Environment type":"Production","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","extensionVersion":"18.1.24582.0","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension name":"System Application","extensionName":"System Application","alObjectName":"Reten. Policy Telemetry Impl.","alObjectType":"CodeUnit","AadTenantId":"common","aadTenantId":"common","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","alObjectId":"3912","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","eventId":"AL0000D6J","alDataClassification":"SystemMetadata","alCompanyName":"CRONUS International Ltd.","alTableNo":"405","alTableName":"Change Log Entry"}
 
 -->
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

@@ -70,7 +70,7 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the primary way to 
 |Work with other data sources, including Microsoft Excel and Oracle databases.|[Accessing Objects in Other Databases or on Linked Servers](Accessing-Objects-in-Other-Databases-or-on-Linked-Servers.md)|  
   
   -->
-## See also  
+## Related information  
 
 [Developing extensions in AL](devenv-dev-overview.md)  
 [Get started with AL](devenv-get-started.md)  

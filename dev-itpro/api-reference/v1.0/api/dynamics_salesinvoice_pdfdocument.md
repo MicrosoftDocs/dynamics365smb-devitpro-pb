@@ -96,6 +96,6 @@ GET https://{businesscentralPrefix}/api/v1.0/companies({companyid})/salesInvoice
 **Response** 
 The PDF document in binary format.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)   
 [Error Codes](../dynamics_error_codes.md)  

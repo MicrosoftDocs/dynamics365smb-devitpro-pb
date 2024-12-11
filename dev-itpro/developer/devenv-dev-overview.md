@@ -83,12 +83,12 @@ Extensions are compiled as .app package files. The .app package file can be depl
 
 After development and testing are done, you can submit your extension package to AppSource. Before you submit the extension package, we encourage you to read the checklist to facilitate the validation process. For more information, see [Checklist for submitting your app](devenv-checklist-submission.md). To get code validation helping you to bring your extension package to AppSource, you can enable the AppSourceCop code analyzer. For more information, see [Using the code analysis tool](devenv-using-code-analysis-tool.md).
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)  
 [Get started developing Connect apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Keyboard shortcuts](devenv-keyboard-shortcuts.md)  
 [AL development environment](devenv-reference-overview.md)  
-[XML comments in code](devenv-xml-comments.md)  
+[Documenting your code with XML comments](devenv-xml-comments.md)  
 [FAQ for developing in AL](devenv-dev-faq.md)  
 [Sending extension telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  

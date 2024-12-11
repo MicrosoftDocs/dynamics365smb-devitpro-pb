@@ -48,7 +48,7 @@ We save a detailed history of adjustments in the new **Exch. Rate. Adjmt. Ledger
 
 When you turn on the new feature, [!INCLUDE [prod_short](includes/prod_short.md)] checks whether you have extensions that subscribe to the legacy events. It also checks whether there are subscribers to the new implementation in the same extension. If there are subscribers to the earlier implementation, but aren't subscribers to the new, you can't enable the feature.
 
-## See also
+## Related information
 
 [Extending Application Areas](devenv-extending-application-areas.md)    
 [Module System Application](/dynamics365/business-central/application/system-application/module/system-application)    

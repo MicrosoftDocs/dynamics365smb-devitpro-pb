@@ -5,20 +5,23 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 06/03/2024
+ms.date: 08/26/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
 # Managing updates in the Business Central admin center
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are updated according to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/) with two major updates in April and October each year, and monthly, minor updates. For more information, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md) and the [Dynamics 365 Release Plans](/dynamics365/release-plans/).
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are updated according to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/), with two major updates a year, one in April and another in October, and minor updates in every month except April and October. Learn more in [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md) and the [Dynamics 365 Release Plans](/dynamics365/release-plans/).
 
-Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify the timing of updates for each environment and who receives [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. For more information, see [Major Updates and Minor Updates](update-rollout-timeline.md).  
+Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify the timing of updates for each environment and who receives [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. Learn more in [Major Updates and Minor Updates](update-rollout-timeline.md).  
 
 ## Set the update window for each environment
 
-The update window for an environment defines the hours during the day for the selected time zone in which the environment can be updated. When an update is rolling out&mdash;monthly or major update&mdash;it will be applied to an environment within the time frame that the update window defines.
+The update window for an environment defines the hours during the day for the selected time zone in which the environment can be updated. When an update is rolling out it will be applied to an environment within the time frame that the update window defines.
+
+> [!IMPORTANT]
+> Updates always start during the update window specified for the environment, but not necessarily right at the start of the update window. Updates that fail to complete before the end of the update window are cancelled to ensure the environment is operational during business hours; the update is automatically rescheduled seven days later for a new attempt and [notification recipients](#notify) are informed.
 
 This window helps ensure updates are applied outside of the normal business hours of the organization. Every environment has a default update window that's between 8:00 PM and 6:00 AM local time for the environment's country/region. In countries/regions that have multiple time zones, the system sets a time zone that's close to the geographic center of the country/region as default.
 
@@ -43,7 +46,7 @@ Once an update is available, you can choose a specific date that each environmen
 
 [!INCLUDE [admin-set-update-date](../includes/admin-set-update-date.md)]
 
-For more information, see [Schedule updates](update-rollout-timeline.md#schedule-updates).  
+Learn more in [Schedule updates](update-rollout-timeline.md#schedule-updates).  
 
 To schedule an update date:
 
@@ -60,7 +63,7 @@ If an administrator hasn't picked a date for an update, then the update is appli
 
 ## <a name="notify"></a>Get notified of updates
 
-For updates that tenant administrators can schedule, a notification is sent to all notification recipients that are listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](tenant-admin-center-notifications.md).
+For updates that tenant administrators can schedule, a notification is sent to all notification recipients that are listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Learn more in [Managing Tenant Notifications](tenant-admin-center-notifications.md).
 
 > [!IMPORTANT]
 > [!INCLUDE [admin-notifications](../includes/admin-notifications.md)]
@@ -73,7 +76,7 @@ Sometimes an environment can't get the new update. For example, a per-tenant ext
 
 For more information, see [Failed updates and rescheduling](update-rollout-timeline.md#failed-updates-and-rescheduling).  
 
-## See also
+## Related information
 
 [What's new or changed in Business Central](../whatsnew/overview.md)  
 [Major Updates of Business Central Online](update-rollout-timeline.md)  

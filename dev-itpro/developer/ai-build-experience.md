@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.collection:
   - get-started
   - bap-ai-Copilot
-ms.date: 02/17/2024
+ms.date: 11/14/2024
 ms.custom: bap-template
 ---
 # Build Copilot user experience
@@ -21,7 +21,7 @@ The fundamental component of Copilot from the UI perspective is the [PromptDialo
 
 |Start Copilot >|Provide input (prompt) >|AOAI generates results >|Show results (content)|
 |-|-|-|-|
-|[![Shows a flow of a Copilot with the palog page type](media/Copilot-launch.png)](media/Copilot-launch.png#lightbox)|[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.png)](media/promptdialog-prompt-mode-prompt-area-no-callout.png#lightbox)|[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode-small.png)](media/promptdialog-generate-mode.png#lightbox)|[![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)](media/promptdialog-content-mode.svg#lightbox)|
+|[![Shows a prompt dialog page type](media/Copilot-launch.png)](media/Copilot-launch.png#lightbox)|[![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.svg)](media/promptdialog-prompt-mode-prompt-area-no-callout.svg#lightbox)|[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.svg)](media/promptdialog-generate-mode.svg#lightbox)|[![Shows a screenshot of the content mode of the PromptDialog type page](media/promptdialog-content-mode.svg)](media/promptdialog-content-mode.svg#lightbox)|
 
 <!--
 > [!VIDEO media/Copilot-UI.mp4]-->
@@ -46,7 +46,7 @@ The following table gives an overview of the typical flow from the user's perspe
 
 |Phase|In UI|In AL code|Learn more|
 |-|-|-|-|
-|1|User starts the Copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](Copilot-launch-experience.md)|
+|1|User starts the Copilot experience by selecting an action on a page.|An `action` control on a page runs the PromptDialog type page|[Launch experience](devenv-page-prompting-floating-actionbar.md)|
 |2|The PromptDialog page opens in the prompt mode, where users can provide input.|The PromptDialog page is defined by setting the PageType property to `PromptDialog`.|[Create PromptDialog type page](Copilot-create-promptdialog.md) |
 |3|User enters information that Copilot uses to generate results. |The `prompt` area of the PromptDialog page defines what the user can input, which typically consists of one or more fields.|[Design the prompt mode](Copilot-design-prompt-mode.md)|
 |4|User selects a button to start generating content with AI|The system action `Generate` calls the procedure that starts the AI generation process.|[Add the generate action](Copilot-design-prompt-mode.md#add-a-generate-action)|
@@ -158,7 +158,7 @@ System actions order on promptdialog in Content mode is always: OK, Regenerate, 
 
 [Create PromptDialog page](Copilot-create-promptdialog.md).
 
-## See also
+## Related information
 
 [Integrating AI using developer tools for Copilot](ai-integration-landing-page.yml)  
 

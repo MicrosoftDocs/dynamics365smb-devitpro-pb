@@ -21,6 +21,6 @@ The call is ambiguous between the method '{0}' defined in {1} '{2}' by the exten
 The method call is ambiguous between two methods.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

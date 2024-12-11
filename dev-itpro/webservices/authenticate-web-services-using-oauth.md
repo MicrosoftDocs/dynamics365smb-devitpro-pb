@@ -96,7 +96,7 @@ To obtain new access token when the current access token expires, one can use to
 
 The lifetime of both these tokens is configurable. For more information about how to configure and manage these tokens for your installation, see [Configurable token lifetimes in Microsoft Entra ID](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
-## See also
+## Related information
   
 [Web services authentication](web-services-authentication.md)  
 [OData web services](OData-Web-Services.md)  

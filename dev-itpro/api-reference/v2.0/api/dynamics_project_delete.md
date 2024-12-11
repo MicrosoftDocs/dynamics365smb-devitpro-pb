@@ -55,7 +55,7 @@ HTTP/1.1 204 No Content
 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [project](../resources/dynamics_project.md)    
 [Get project](dynamics_project_Get.md)    

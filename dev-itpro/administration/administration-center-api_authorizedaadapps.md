@@ -62,7 +62,7 @@ Removes a Microsoft Entra app authorized to call the [!INCLUDE[prodadmincenter](
 DELETE /admin/v2.21/authorizedAadApps/<appClientId>
 ```
 
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

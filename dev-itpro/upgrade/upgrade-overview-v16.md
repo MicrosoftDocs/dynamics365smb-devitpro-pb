@@ -84,7 +84,7 @@ For information about migrating an on-premises solution to online, see [Migrate 
 
 
   
-## See Also  
+## Related information  
  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

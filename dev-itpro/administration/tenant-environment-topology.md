@@ -4,7 +4,7 @@ description: Learn about how environments in Business Central online reflect the
 author: jswymer
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 06/10/2024
+ms.date: 08/21/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -41,7 +41,7 @@ Each environment can be divided into multiple companies, where each company defi
 
 Let's review a scenario for an organization that is based in Denmark but has a subsidiary in Germany. They have three business units in Denmark and two in Germany. The following diagram illustrates how this fictitious company has set up their [!INCLUDE [prod_short](../includes/prod_short.md)]:  
 
-:::image type="content" source="../media/admin_contoso_org-bc.png" alt-text="Chart that shows one Microsoft Entra tenant using two Business Central production environments and one sandbox with three and two companies, respectively.":::
+:::image type="content" source="../media/admin_contoso_org-bc.svg" alt-text="Chart that shows one Microsoft Entra tenant using two Business Central production environments and one sandbox with three and two companies, respectively." lightbox="../media/admin_contoso_org-bc.svg":::
 
 In this example, the production environment that is based on the Danish localization of [!INCLUDE [prod_short](../includes/prod_short.md)] is part of the default assignment as described earlier. This production environment has three companies to represent the following business units, all located in central Jutland:
 
@@ -59,7 +59,7 @@ Alternatively, the organization could have chosen to use a separate Microsoft En
 
 The following diagram illustrates how things would look for Contoso if they wanted to use two different license types:  
 
-:::image type="content" source="../media/admin_contoso_org-bc2.png" alt-text="Chart that shows two Microsoft Entra tenants with each one production environment and one sandbox.":::
+:::image type="content" source="../media/admin_contoso_org-bc2.svg" alt-text="Chart that shows two Microsoft Entra tenants with each one production environment and one sandbox." lightbox="../media/admin_contoso_org-bc2.svg":::
 
 In this type of configuration, users from the Danish Microsoft Entra tenant cannot access the German environments. However, [!INCLUDE [prod_short](../includes/prod_short.md)] supports [consolidation of financial data from different companies](/dynamics365/business-central/finance-consolidated-company-reporting) so that Contoso's HQ can still get a complete overview of the business.  
 
@@ -71,7 +71,7 @@ Contoso is just an example to illustrate how the Microsoft Entra tenant both aff
 > [!TIP]
 > For information about how to find out which Azure region a [!INCLUDE [prod_short](../includes/prod_short.md)] environment is deployed to, see the overview at [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md).
 
-## See also
+## Related information
 
 [Administration of Business Central Online](tenant-administration.md)  
 [Production and Sandbox Environments](environment-types.md)  

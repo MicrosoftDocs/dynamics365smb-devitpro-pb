@@ -21,6 +21,6 @@ A DataItem with name '{0}' could not be found in the target {1}.
 The referenced DataItem could not be found in the target report.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

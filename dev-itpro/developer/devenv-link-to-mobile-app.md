@@ -115,6 +115,6 @@ The *ms-businesscentral or ms-dynamicsnav * scheme only translates to a secure s
 
 -->
   
-## See Also  
+## Related information  
  [Web Client URL](devenv-web-client-urls.md)    
 [Introducing the Business Central Mobile App](devenv-introducing-business-central-mobile-app.md)

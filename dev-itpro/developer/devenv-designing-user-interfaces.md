@@ -110,7 +110,7 @@ If you want to test how your app/extension renders on the mobile app or the desk
 - [Getting Business Central on your mobile device](/dynamics365/business-central/install-mobile-app?toc=/dynamics365/business-central/dev-itpro/toc.json).
 - [Get Business Central Desktop App](/dynamics365/business-central/install-desktop-app?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
-## See Also
+## Related information
 
 [Designing role centers](devenv-designing-role-centers.md)  
 [Pages overview](devenv-pages-overview.md)   

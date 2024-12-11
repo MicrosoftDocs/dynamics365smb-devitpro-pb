@@ -96,7 +96,7 @@ pageextension 50101 MyPageExt extends MyPage
 }
 ```
 
-## See also
+## Related information
 
 [AL method reference](./methods-auto/library.md)   
 [Properties](properties/devenv-properties.md)  

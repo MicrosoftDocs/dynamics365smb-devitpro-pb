@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: conceptual
-ms.date: 02/15/2024
+ms.date: 11/11/2024
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot
@@ -73,7 +73,6 @@ However, these features are only optional for a while. The period in which they'
 |Feature  |Description  |
 |---------|---------|
 |[Feature update: Enable using SIE Audit Files Exports](/dynamics365/business-central/localfunctionality/sweden/how-to-use-sie-audit-files-export)|You can import and export general ledger data according to the standard import export (SIE) format. By specifying SIE dimensions and file types, you can define the level of detail that's covered by import or export transactions.|
-
 
 ## Features becoming generally available in 2023 release wave 2
 
@@ -187,7 +186,7 @@ The change to making these features mandatory is postponed. They aren't turned o
 |[New Microsoft Word report rendering platform](/dynamics365/business-central/dev-itpro/developer/devenv-howto-report-layout)     | 2024 release wave 1        |
 |[Replace Multiple Interest Rate CZ with Finance Charge Interest Rate](/dynamics365/business-central/receivables-collect-outstanding-balances)| 2025 release wave 2 |
 
-## See Also
+## Related information
 
 [Enabling Upcoming Features Ahead of Time](feature-management.md)  
 [Deprecated Features in the Base App](../upgrade/deprecated-features-w1.md)

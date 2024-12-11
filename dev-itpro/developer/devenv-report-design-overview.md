@@ -67,7 +67,7 @@ You can control the way the AL runtime and client work on the report by setting 
 With report triggers, you can control how the reporting feature works in [!INCLUDE[prod_short](includes/prod_short.md)], for example to control post-processing or printing of report documents. For more information, see [Report Triggers and Runtime Operations](devenv-report-triggers.md).
 
 
-## See Also  
+## Related information  
 
 [Reports](devenv-reports.md)  
 [Report object](devenv-report-object.md)  

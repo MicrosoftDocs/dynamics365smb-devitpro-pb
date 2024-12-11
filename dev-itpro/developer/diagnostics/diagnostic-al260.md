@@ -18,6 +18,6 @@ The key '{0}' on table '{1}' cannot start with the fields defined for the primar
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

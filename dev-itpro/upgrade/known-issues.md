@@ -599,6 +599,6 @@ Alternatively, you could grant the required Namespace Reservation permissions ma
 netsh http add urlacl url=http://+:<PORT NUMBER>/<BC SERVICE NAME>/ user="<BC SERVICE ACCOUNT>"
 ```
 
-## See Also
+## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  

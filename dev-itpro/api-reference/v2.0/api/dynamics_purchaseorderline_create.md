@@ -32,7 +32,6 @@ POST businesscentralPrefix/companies({id})/purchaseOrderLines
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **purchaseOrderLine**, the **purchaseOrderLine** will not be updated. |
 
 ## Request body
 
@@ -117,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [purchaseOrderLine](../resources/dynamics_purchaseOrderLine.md)  

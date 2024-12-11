@@ -61,7 +61,7 @@ Here is an example of the response.
 Schedule in the body can be "Current version", "Next minor version", or "Next major version".
 Schema Sync Mode in the body can be "Add" or "Force Sync".
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [extensionUpload](../resources/dynamics_extensionUpload.md)

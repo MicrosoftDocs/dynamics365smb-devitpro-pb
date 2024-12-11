@@ -85,7 +85,7 @@ label(BeforeSetupCloseMessage)
 }
 ```
 
-## See also
+## Related information
 
 [Working with labels](devenv-using-labels.md)    
 [Working with translation files](devenv-work-with-translation-files.md)  

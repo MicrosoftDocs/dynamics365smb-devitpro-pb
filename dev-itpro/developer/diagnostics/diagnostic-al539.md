@@ -21,6 +21,6 @@ The field '{0}' cannot be used multiple times when defining the order of the pag
 The same field cannot be reference multiple times when defining the order of the page view.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

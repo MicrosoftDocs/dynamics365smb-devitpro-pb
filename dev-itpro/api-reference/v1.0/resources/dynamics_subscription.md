@@ -17,6 +17,10 @@ ms.reviewer: solsen
 
 Represents a webhook subscription object in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. Requests issued against the subscription entity, manages webhook subscriptions for a tenant.
 
+## Custom APIs
+
+If you're subscribing to a custom API page, both the URL you send the subscription HTTP request to and the resource path you wish to subscribe to must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements equivalent to: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, part of the URL will contain these elements `api/pub/grp/v1.0/subscriptions`.
+
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -58,7 +62,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
 
 
 
