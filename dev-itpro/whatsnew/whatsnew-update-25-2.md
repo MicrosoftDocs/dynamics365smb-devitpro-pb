@@ -22,7 +22,7 @@ Learn about the hotfixes and download on-premises files on Microsoft Support at 
 
 - [Do ad hoc analysis on fixed assets, projects, and services (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/do-ad-hoc-analysis-fixed-assets-projects-services)
 - [E-file IRS 1099 forms without integration (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/e-file-irs-1099-forms-without-integration)
-- Migrate to the cloud from Dynamics SL
+- [Migrate to the cloud from Dynamics SL (general availability)](../administration/migrate-sl-overview.md)
 - [Start using E-Documents framework localized for Germany (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/start-using-e-documents-framework-localized-germany)
 - [Use embedded Power BI reports out of the box (general availability)](use-embedded-power-bi-reports-out-box)
 - [Use the e-documents framework in the Spanish version (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-e-documents-framework-spanish-version)
