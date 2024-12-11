@@ -3,10 +3,10 @@ title: Troubleshooting errors in OData/SOAP web services on pages, queries, and 
 description: Learn about how to troubleshoot Business Central web service errors on OData/SOAP endpoints on pages, queries, and codeunits.
 author: KennieNP
 ms.custom: bap-template
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: kepontop
-ms.date: 03/11/2024
+ms.date: 12/11/2024
 ---
 
 # Troubleshooting errors in OData/SOAP web services on pages, queries, and codeunits.
@@ -22,7 +22,7 @@ For errors occurring in the web service client or in the network, please see the
 In this article, you can learn more about different methods and tools that you can use for troubleshooting web service errors on OData/SOAP web services on pages, queries, and codeunits.
 
 
-## Do not use Microsoft pages as SOAP/OData APIs
+## Don't use Microsoft pages as SOAP/OData APIs
 
 The [!INCLUDE[prod_short](../includes/prod_short.md)] application evolves over time and changes happen to the user interface as part of this. This means that the page structure and fields might also change when interacting with the page from a web service client and it is not something you can depend on being stable over time. 
 
@@ -39,13 +39,11 @@ Cards are bad: in UI one record, in WS many -> can be bad for perf
 Use REST APIs instead -->
 
 
+## Related information
 
-
-## See also
-
-[Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)  
-[Web Services Best Practices](Web-Services-Best-Practices.md)  
+[Handling UI interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)  
+[Web Services best practices](Web-Services-Best-Practices.md)  
 [Troubleshoot web service errors](web-service-troubleshooting.md)
 [Web service telemetry](web-service-telemetry.md)   
 [Debugging web services](../developer/devenv-debugging.md#debugging-web-services)  
-[Web Services Overview](web-services.md)  
+[Web services overview](web-services.md)  
