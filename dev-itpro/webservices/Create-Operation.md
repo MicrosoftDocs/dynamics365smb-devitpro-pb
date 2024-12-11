@@ -37,5 +37,5 @@ cust.Name = "Customer Name";
 service.Create(ref cust);  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

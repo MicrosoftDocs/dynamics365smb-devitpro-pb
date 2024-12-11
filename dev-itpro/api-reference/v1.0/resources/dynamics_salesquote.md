@@ -121,7 +121,7 @@ Here is a JSON representation of the resource.
       "lastModifiedDateTime": "DateTime"
 }
 ```
-## See also
+## Related information
 
 [Get Sales Quote](../api/dynamics_salesquote_get.md)  
 [Create Sales Quote](../api/dynamics_create_salesquote.md)  

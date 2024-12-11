@@ -44,5 +44,5 @@ for (int i = 0; i < custArray.Length; i++)
 service.CreateMultiple(ref custArray);  
 ```  
   
-## See also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

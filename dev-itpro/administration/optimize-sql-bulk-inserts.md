@@ -76,7 +76,7 @@ COMMIT;
 ## Disabling Bulk Inserts  
  Disabling bulk inserts can be helpful when you are troubleshooting failures that occur when inserting records. To disable bulk inserts, you set the *BufferedInsertEnabled* parameter in the CustomSettings.config file of the [!INCLUDE[server](../developer/includes/server.md)] to **FALSE**. For more information, see [Configuring Business Central Server](configure-server-instance.md).  
 
-## See Also  
+## Related information  
  [Data Access](optimize-sql-data-access.md)   
  [Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
  [AL Database Methods and Performance on SQL Server](optimize-sql-al-database-methods-and-performance-on-server.md)   

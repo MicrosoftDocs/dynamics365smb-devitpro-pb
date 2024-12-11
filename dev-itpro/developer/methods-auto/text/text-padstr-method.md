@@ -2,7 +2,7 @@
 title: "Text.PadStr(Text, Integer [, Text]) Method"
 description: "Changes the length of a string to a specified length."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -93,7 +93,7 @@ end;
   
  **>Fourwwwwwwwwwww\< has the length 15**  
 
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

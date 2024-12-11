@@ -14,7 +14,7 @@ author: thpeder
 
 The extension '{0}' by '{1}' (version '{2}') has already been uploaded to [!INCLUDE [prod_short](../includes/prod_short.md)] for the country/region '{3}' with different content. Remove this extension from your submission, use the same .app file as the one that has already been uploaded to [!INCLUDE [prod_short](../includes/prod_short.md)], or increase the version in the `app.json` file. For more information, see [Technical Validation FAQ](../devenv-checklist-submission-faq.md).
 
-## See also
+## Related information
 
 [Technical Validation](../devenv-checklist-submission.md)
 [Get started with AL](../devenv-get-started.md)  

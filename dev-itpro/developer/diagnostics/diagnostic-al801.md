@@ -21,6 +21,6 @@ ms.reviewer: solsen
 The referenced object has been marked as obsolete pending move. That is, the owner of the extension that defines it will move it in a future version.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -107,7 +107,7 @@ Public functions must have a summary, a parameter description, and a return valu
 /// <param name="ipsum ">The CaptionClass expression to resolve</param>
 /// <returns> Fusce in tristique massa, tincidunt tempor libero.</returns>
 ```
-## See Also
+## Related information
 [Getting Started with Modules](devenv-getting-started.md)  
 [Create a New Module in the System Application](devenv-new-module.md)  
 [Module Architecture](devenv-blueprint.md)  

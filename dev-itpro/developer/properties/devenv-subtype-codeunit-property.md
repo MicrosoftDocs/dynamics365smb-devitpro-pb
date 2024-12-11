@@ -50,7 +50,7 @@ When developing a new extension version, you can use upgrade codeunits to upgrad
 
 For more information on how to use install codeunits to write extension install code, see [Writing Extension Install Code](../devenv-extension-install-code.md). 
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Codeunit Properties](devenv-codeunit-properties.md)  

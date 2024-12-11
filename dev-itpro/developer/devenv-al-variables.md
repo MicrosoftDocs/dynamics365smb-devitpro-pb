@@ -141,7 +141,7 @@ This table shows the string data types.
 > [!NOTE]  
 > You can assign a `BigText` variable using the `BigText` methods. For more information, see [BigText Data Type](methods-auto/bigtext/bigtext-data-type.md).
 
-## See also
+## Related information
 
 [System-defined variables](devenv-system-defined-variables.md)  
 [AL method reference](methods-auto/library.md)  

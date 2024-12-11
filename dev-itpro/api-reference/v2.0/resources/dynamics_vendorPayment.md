@@ -85,7 +85,7 @@ Here is a JSON representation of the vendorPayment resource.
 }
 ```
 
-## See also
+## Related information
 
 [GET vendorPayment](../api/dynamics_vendorPayment_Get.md)  
 [DELETE vendorPayment](../api/dynamics_vendorPayment_Delete.md)  

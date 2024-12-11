@@ -89,7 +89,7 @@ To simulate moving to different items on a list page or to different records on 
 - [FindNextField Method \(TestPage\)](methods-auto/testpage/testpage-findnextfield-method.md)  
 - [FindPreviousField Method \(TestPage\)](methods-auto/testpage/testpage-findpreviousfield-method.md)  
   
-## See Also
+## Related information
 
 [Testing the Application](devenv-testing-pages.md)  
 [Test the advanced sample extension](devenv-extension-advanced-example-test.md)

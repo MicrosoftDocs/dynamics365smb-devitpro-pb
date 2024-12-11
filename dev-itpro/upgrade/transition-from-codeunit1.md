@@ -140,6 +140,6 @@ Move custom logic from the old codeunit 1 to the management codeunits and method
 
 After you convert the old database to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform, import and compile the replacement codeunit 1 object. You get the replacement object from [Codeunit 1 Replacement](codeunit1-replacement.md).
 
-## See Also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)  
  

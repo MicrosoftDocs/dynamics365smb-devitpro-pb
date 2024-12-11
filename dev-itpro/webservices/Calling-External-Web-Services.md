@@ -41,5 +41,5 @@ salesOrderService.ClientCredentials.Windows.AllowedImpersonationLevel := 4;
 salesOrder := salesOrderService.Read('10000');  
   
 ```
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

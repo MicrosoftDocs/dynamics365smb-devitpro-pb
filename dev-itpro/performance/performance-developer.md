@@ -293,10 +293,11 @@ Read more here:
 ### How to reduce database locking
 Sometimes, performance issues aren't due to resource starvation, but due to processes waiting for other processes to release locks on shared objects. When AL code needs to update data, it's customary to take a database lock on it to ensure that other processes don't change the data at the same time. 
 
-Using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent calls to the database until the transaction is committed, not only on the table that the record variable is defined on, but on all calls to the database. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
+Using the `Record.LockTable` method applies the `WITH (updlock)` hint on all subsequent read calls to the database against the table of the record called on, until the transaction is committed. For example, if `Record.LockTable` is called on an `Item` record, all reads against that table will be done with the `UPDLOCK` hint, not just the variable it was called on. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
 
 Some tips for avoiding locking:
 
+- Enable [tri-state locking](../developer/devenv-tri-state-locking.md) to avoid reads-after-writes taking locks.
 -	Read setup information before starting write transactions
 -	If possible, limit the time you hold locks
 -	If possible, limit transaction size (divide into smaller operations that can be committed)
@@ -388,16 +389,16 @@ The following articles can be of help in troubleshooting performance issues:
 The following articles explain what you can do as a developer to tune your development environment for better performance:
 
 - [Optimizing Visual Studio Code for AL Development](../developer/devenv-optimize-visual-studio-code.md)  
-- [Code Analysis on large projects](../developer/devenv-using-code-analysis-tool.md#largeprojects)
+- [Code Analysis on large projects](../developer/devenv-using-code-analysis-tool.md#enable-code-analysis-on-large-projects)
 
-## See Also
+## Related information
 
-[Performance Overview](performance-overview.md)  
-[How Application Configurations Affect Performance](performance-application.md)  
-[Performance Online](performance-online.md)  
-[Performance of On-Premises Installations](performance-onprem.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md)  
+[Performance overview](performance-overview.md)  
+[How application configurations affect performance](performance-application.md)  
+[Performance online](performance-online.md)  
+[Performance of on-premises installations](performance-onprem.md)  
+[How to work with a performance problem](performance-work-perf-problem.md)  
 [Performance tips for business users](performance-users.md)  
-[Database Missing Indexes](../administration/database-missing-indexes.md)  
-[AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)
+[Database missing indexes](../administration/database-missing-indexes.md)  
+[AL database methods and performance on SQL server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)
 

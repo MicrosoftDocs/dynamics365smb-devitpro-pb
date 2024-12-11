@@ -57,7 +57,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [tableMapping](../resources/dynamics_tableMapping.md)  

@@ -18,6 +18,6 @@ Dependency '{0}' must be referenced in the property '{1}' rather than as an expl
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

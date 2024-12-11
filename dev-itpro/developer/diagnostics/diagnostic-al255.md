@@ -18,6 +18,6 @@ Property '{0}' requires an application object reference for the 'RunObject' prop
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

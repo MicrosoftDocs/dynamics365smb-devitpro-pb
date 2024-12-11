@@ -2,7 +2,7 @@
 title: "HttpResponseMessage.HttpStatusCode() Method"
 description: "Gets the status code of the HTTP response."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -40,7 +40,7 @@ The status code of the HTTP response.
 [!INCLUDE[httpStatusCodes](../../../includes/include-http-status-codes.md)]
 
 
-## See Also
+## Related information
 [HttpResponseMessage Data Type](httpresponsemessage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

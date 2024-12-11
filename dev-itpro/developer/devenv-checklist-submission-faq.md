@@ -396,6 +396,6 @@ When you have questions on developing and maintaining AppSource apps, on automat
 
 You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. 
 
-## See also
+## Related information
 
 [Technical Validation Checklist](devenv-checklist-submission.md)

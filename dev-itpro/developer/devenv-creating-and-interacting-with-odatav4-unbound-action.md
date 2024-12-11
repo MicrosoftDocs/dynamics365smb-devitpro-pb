@@ -89,7 +89,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [Creating and interacting with an OData V4 bound action](devenv-creating-and-interacting-with-odatav4-bound-action.md)  

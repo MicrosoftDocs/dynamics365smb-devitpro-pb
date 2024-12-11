@@ -2,7 +2,7 @@
 title: "List.LastIndexOf(T) Method"
 description: "Searches for the specified value and returns the one-based index of the last occurrence within the entire List."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -42,7 +42,7 @@ The one-based index at which the value is found or 0 if the value does not exist
 
 The type `T` is a dynamic type. When `List` is of type `Text` then `T` will change to `Text`. When `List` is of type `Integer`, then `T` will change to `Integer`.
 
-## See Also
+## Related information
 [List Data Type](list-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

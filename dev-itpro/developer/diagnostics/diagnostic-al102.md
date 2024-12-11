@@ -20,6 +20,6 @@ Constant value '3000000000000000000000L' is outside the range for a BigInteger
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

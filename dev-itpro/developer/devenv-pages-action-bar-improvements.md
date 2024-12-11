@@ -197,7 +197,7 @@ This table provides an overview of all the pages in [!INCLUDE [prod_short](inclu
 | 99000883  | Sales Order Planning  | List  |
 | 99000886  | Subcontracting Worksheet  | Worksheet  |
 
-## See also
+## Related information
 
 [Actions in AL](devenv-actions-overview.md)  
 [Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  

@@ -21,6 +21,6 @@ Field '{0}' cannot be moved to {1} '{2}' because '{2}' is marked as Moved.
 A field cannot be moved to a symbol that is already marked as Moved.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

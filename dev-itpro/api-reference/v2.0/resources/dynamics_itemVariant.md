@@ -66,7 +66,7 @@ Here is a JSON representation of the itemVariant resource.
 
 
 
-## See Also
+## Related information
 [GET itemVariant](../api/dynamics_itemVariant_Get.md)  
 [DELETE itemVariant](../api/dynamics_itemVariant_Delete.md)  
 [POST itemVariant](../api/dynamics_itemVariant_Create.md)  

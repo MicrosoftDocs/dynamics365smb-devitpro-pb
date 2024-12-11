@@ -21,6 +21,6 @@ The variable '{0}' is not allowed to be of type 'SecretText' because it is decla
 Protected variables cannot be of type 'SecretText' as that could lead to the accidental exposure of the secret value to an extension.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

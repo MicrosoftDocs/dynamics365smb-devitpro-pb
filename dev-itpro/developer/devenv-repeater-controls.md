@@ -132,7 +132,7 @@ pagecustomization MyCustomization customizes "Customer List"
 }
 ```
 
-## See also
+## Related information
 
 [Pages Overview](devenv-pages-overview.md)  
 [Designing List Pages](devenv-designing-list-pages.md)  

@@ -20,7 +20,7 @@ A suffix is required.
 > [!NOTE]
 > With the next major release this rule will be removed in favor of [AS0011 - Identifiers must have an affix](appsourcecop-as0011.md).
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

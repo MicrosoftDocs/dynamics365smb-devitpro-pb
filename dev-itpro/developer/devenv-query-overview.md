@@ -59,7 +59,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [Query Object](devenv-query-object.md)  
 [Linking and Joining Data Items](devenv-query-links-joins.md)  
 [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  

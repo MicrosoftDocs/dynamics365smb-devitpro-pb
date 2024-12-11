@@ -66,7 +66,7 @@ table 50100 SalesIntegration
 }
 ```
 
-## See Also
+## Related information
 
 [Table Properties](properties/devenv-table-properties.md)  
 [TableType Property](properties/devenv-tabletype-property.md)  

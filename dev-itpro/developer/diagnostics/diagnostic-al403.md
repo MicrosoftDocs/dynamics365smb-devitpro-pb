@@ -21,6 +21,6 @@ To modify '{0}' you must add at least one property or trigger.
 To modify a field, you must add at least one property or trigger inside the `modify` control.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

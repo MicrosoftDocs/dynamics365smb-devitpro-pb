@@ -52,7 +52,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [paymentmethod](../resources/dynamics_paymentmethod.md)    
 [Get paymentmethod](dynamics_paymentmethod_Get.md)    

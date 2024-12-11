@@ -49,6 +49,6 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance has several con
 ## Known Limitations with Business Central OData
 The Open Data Protocol \(OData\) implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not implement all features in the OData specification. For more information, see [Known OData Limitations](odata-known-limitations.md).
 
-## See Also  
+## Related information  
 
 [SOAP Web Services](SOAP-Web-Services.md)

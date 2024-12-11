@@ -73,6 +73,6 @@ Here is a JSON representation of the cloudMigrationCompany resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET cloudMigrationCompany](../api/dynamics_cloudmigrationcompany_get.md)  
 [PATCH cloudMigrationCompany](../api/dynamics_cloudmigrationcompany_update.md)

@@ -58,7 +58,7 @@ Test the upgrade with extensive app data included. Many of the upgrade failures 
 
 No. It's important you test from various previous versions of your app. This is because we don't automatically upgrade apps for minor releases. You could have a tenant back on version 1.0.0.0 of your app and have to jump all the way to version 1.0.0.5. We don’t guarantee direct upgrades of apps from their most previous version.
 
-## See also
+## Related information
 
 [FAQ about Updating your Business Central App](app-faq-update.md)  
 [FAQ about Library & Dependency Apps in Business Central](app-faq-dependencies-libraries.md)  

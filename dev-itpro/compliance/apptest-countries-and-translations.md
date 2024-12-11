@@ -2,10 +2,11 @@
 title: Country/regional availability and supported languages
 description: Overview of availability and supported languages.
 author: sorenfriisalexandersen
-ms.date: 01/25/2024
+ms.date: 09/16/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: altotovi
+ms.custom: references_regions
 ---
 
 # Country/regional availability and supported languages
@@ -39,7 +40,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Bahrain|Partner|W1|Available|BH|
 |Bangladesh|Partner|W1|Available|BD|
 |Belgium|Microsoft|BE|Available|BE|
-|Belize|Partner|W1|Planned for June 2024|BZ *3)*|
+|Belize|Partner|W1|Available|BZ *3)*|
 |Bermuda|Partner|W1|Available|BM|
 |Bolivia|Partner|W1|Available|BO|
 |Bosnia and Herzegovina|Partner|W1|Available|BA|
@@ -48,7 +49,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Brunei|Partner|W1|Available|BN|
 |Brazil|Partner|W1|Available|BR|
 |Bulgaria|Partner|W1|Available|BG|
-|Burkina Faso|Partner|W1|Planned for June 2024|BF *3)*|
+|Burkina Faso|Partner|W1|Available|BF *3)*|
 |Cambodia|Partner|W1|Available|KH|
 |Cameroon|Partner|W1|Available|CM|
 |Canada|Microsoft|NA|Available|CA|
@@ -76,13 +77,13 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Fiji|Partner|W1|Available|FJ|
 |Finland|Microsoft|FI|Available|FI|
 |France|Microsoft|FR|Available|FR|
-|French Polynesia|Partner|W1|Planned for June 2024|PF *3)*|
-|Gabon|Partner|W1|Planned for June 2024|GA *3)*|
-|Gambia|Partner|W1|Planned for June 2024|GM *3)*|
+|French Polynesia|Partner|W1|Available|PF *3)*|
+|Gabon|Partner|W1|Available|GA *3)*|
+|Gambia|Partner|W1|Available|GM *3)*|
 |Georgia|Partner|W1|Available|GE|
 |Germany|Microsoft|DE|Available|DE|
 |Ghana|Partner|W1|Available|GH|
-|Gibraltar|Partner|W1|Planned for June 2024|GI *3)*|
+|Gibraltar|Partner|W1|Available|GI *3)*|
 |Greece|Partner|W1|Available|GR|
 |Greenland (Denmark)|Microsoft|W1|Available|DK|
 |Grenada|Partner|W1|Available|GD|
@@ -110,7 +111,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Kenya|Partner|W1|Available|KE|
 |Kosovo|Partner|W1|Available|XK|
 |Kuwait|Partner|W1|Available|KW|
-|Laos|Partner|W1|Planned for June 2024|LA *3)*|
+|Laos|Partner|W1|Available|LA *3)*|
 |Latvia|Partner|W1|Available|LV|
 |Lebanon|Partner|W1|Available|LB|
 |Liechtenstein|Partner|CH|Available|LI|
@@ -121,16 +122,16 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Malawi|Partner|W1|Available|MW|
 |Malaysia|Partner|W1|Available|MY|
 |Maldives|Partner|W1|Available|MV|
-|Mali|Partner|W1|Planned for June 2024|ML *3)*|
+|Mali|Partner|W1|Available|ML *3)*|
 |Malta|Partner|W1|Available|MT|
-|Marshall Islands|Partner|W1|Planned for June 2024|MH *3)*|
+|Marshall Islands|Partner|W1|Available|MH *3)*|
 |Mauritius|Partner|W1|Available|MU|
 |Mexico|Microsoft|NA|Available|MX|
 |Micronesia|Partner|W1|Available|FM|
-|Moldova|Partner|W1|Planned for June 2024|MD *3)*|
+|Moldova|Partner|W1|Available|MD *3)*|
 |Monaco|Partner|FR|Available|MC|
 |Mongolia|Partner|W1|Available|MN|
-|Montserrat|Partner|W1|Planned for June 2024|MS *3)*|
+|Montserrat|Partner|W1|Available|MS *3)*|
 |Montenegro|Partner|W1|Available|ME|
 |Morocco|Partner|W1|Available|MA|
 |Mozambique|Partner|W1|Available|MZ|
@@ -147,7 +148,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Pakistan|Partner|W1|Available|PK|
 |Palau|Partner|W1|Available|PW|
 |Panama|Partner|W1|Available|PA|
-|Papua New Guinea|Partner|W1|Available|PG|
+|Papua New Guinea|Partner|AU|Available|PG|
 |Paraguay|Partner|W1|Available|PY|
 |Peru|Partner|W1|Available|PE|
 |Philippines|Partner|W1|Available|PH|
@@ -157,9 +158,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Qatar|Partner|W1|Available|QA|
 |Romania|Partner|W1|Available|RO|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|
-|Saint Kitts and Nevis|Partner|W1|Planned for June 2024|KN *3)*|
-|Saint Lucia|Partner|W1|Planned for June 2024|LC *3)*|
-|Saint Vincent and the Grenadines|Partner|W1|Planned for June 2024|VC *3)*|
+|Saint Kitts and Nevis|Partner|W1|Available|KN *3)*|
+|Saint Lucia|Partner|W1|Available|LC *3)*|
+|Saint Vincent and the Grenadines|Partner|W1|Available|VC *3)*|
 |Samoa|Partner|W1|Available|WS|
 |San Marino|Partner|IT|Available|SM|
 |Sao Tome & Principe|Partner|W1|Available|SM|
@@ -183,31 +184,30 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Trinidad and Tobago|Partner|W1|Available|TT|
 |Tunisia|Partner|W1|Available|TN|
 |Türkiye|Partner|W1|Available|TR|
-|Turks and Caicos Islands|Partner|W1|Planned for June 2024|TC *3)*|
+|Turks and Caicos Islands|Partner|W1|Available|TC *3)*|
 |Uganda|Partner|W1|Available|UG|
 |Ukraine|Partner|W1|Available|UA|
 |United Arab Emirates|Partner|W1|Available|AE|
 |United Kingdom|Microsoft|GB|Available|GB|
 |United States|Microsoft|NA|Available|US|
-|U.S. Virgin Islands|Partner|W1|Planned for June 2024|VI *3)*|
+|U.S. Virgin Islands|Partner|W1|Available|VI *3)*|
 |Uruguay|Partner|W1|Available|UY|
-|Uzbekistan|Partner|W1|Planned for June 2024|UZ *3)*|
+|Uzbekistan|Partner|W1|Available|UZ *3)*|
 |Vanuatu|Partner|W1|Available|VU|
-|Vatican City|Partner|IT|Planned for June 2024|VA *3)*|
+|Vatican City|Partner|IT|Available|VA *3)*|
 |Vietnam|Partner|W1|Available|VN|
-|Yemen|Partner|W1|Planned for June 2024|YE *3)*|
+|Yemen|Partner|W1|Available|YE *3)*|
 |Zambia|Partner|W1|Available|ZM|
 |Zimbabwe|Partner|W1|Available|ZW|
 
 > [!NOTE]
 > *1) BaseApp for Iceland has been migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2 (23.3). Current localization features will be available as apps. Existing users can enable new features through the **Feature Management**.*
+> 
 > *2) BaseApp for Sweden has been migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1. Current localization features will be available as apps. Existing users can enable new features through the **Feature Management**.*
+> 
 > *3) This country is available for deployment and transactions, but marketplace availability has been postponed. Therefore, ISV solutions from AppSource will not be accessible until further notice.*
 
-> [!NOTE]  
-> Microsoft will announce new planned countries for [!INCLUDE [prod_short](../includes/prod_short.md)] 2024 release wave 2 at October.
-
-For a list of the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available, go to [Geographical availability for Dynamics 365](https://dynamics.microsoft.com/en-us/availability-reports/georeport/) report and select [!INCLUDE [prod_long](../developer/includes/prod_long.md)] in the **Product** list.
+Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
 
 Administrators can use the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] admin center to find the Azure region that their environments are in.
 
@@ -229,7 +229,7 @@ This table gives an overview of supported platform and application languages, an
 |-----------|---------|--------|--------|----| 
 |Albanian (Albania)|sq-AL|-|Partner, Available on AppSource||
 |Bosnian (Bosnia and Herzegovina)|bs-BA|-|Partner, Available on AppSource|| 
-|Catalan (Spain)|ca-ES|-|Partner, Available on AppSource||
+|Catalan|ca-ES|-|Partner, Available on AppSource||
 |Bulgarian (Bulgaria)|bg-BG|Available|Partner, Available on AppSource||
 |Chinese (Simplified, China)|zh-CN|Available|Partner, Available on AppSource||
 |Chinese (Traditional, Hong Kong SAR)|zh-HK|Available|Partner, Available on AppSource|| 
@@ -284,9 +284,9 @@ This table gives an overview of supported platform and application languages, an
 |Vietnamese (Vietnam)|vi-VN|Available|Partner, Available on AppSource|| 
 
 > [!NOTE]  
-> Application translations provided by Microsoft cover features in the international version (W1). Local functionality is not translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
+> Application translations provided by Microsoft cover features in the international version (W1). Local functionality isn't translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
 
-## See also
+## Related information
 
 [Rules and guidelines for AL code](apptest-overview.md)  
 [Checklist for submitting your app](../developer/devenv-checklist-submission.md)

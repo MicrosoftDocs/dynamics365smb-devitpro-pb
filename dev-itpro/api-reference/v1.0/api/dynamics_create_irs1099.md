@@ -70,7 +70,7 @@ Content-type: application/json
 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
   
 [IRS 1099](../resources/dynamics_irs1099.md)  

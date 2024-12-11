@@ -70,7 +70,7 @@ You can also get to the administration center by using the URL of a tenant, as d
 In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can [specify support information](../technical-support.md#configuring-the-support-experience), create and remove [environments](tenant-admin-center-environments.md), and you can access your customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments.
 
 > [!NOTE]
-> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).
+> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Administration as a partner](tenant-administration.md#administration-as-a-partner).
 
 ### Cleaning up settings
 
@@ -100,7 +100,7 @@ If your organization decides to switch to another partner, you must make sure th
 When you establish a relationship with a new partner, they fill in these fields again.
 
 
-## See also
+## Related information
 
 [Production and Sandbox Environments](environment-types.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

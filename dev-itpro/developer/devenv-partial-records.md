@@ -166,7 +166,7 @@ Partial records are automatically applied based on the page’s metadata for Lis
 
 Lookups that are based on table relations and not explicit lookup pages will automatically generate the set of fields to load by using the same logic as for determining which fields to shown. Because these lookups don't have a defined page, it isn’t possible, or necessary, to overrule the set of fields.
 
-## See Also
+## Related information
 
 [FAQ for Partial Records](devenv-partial-records-faq.md)  
 [Performance Articles For Developers](../performance/performance-developer.md)  

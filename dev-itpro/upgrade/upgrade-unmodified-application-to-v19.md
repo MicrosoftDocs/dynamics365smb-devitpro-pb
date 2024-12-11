@@ -519,7 +519,7 @@ Set-NAVServerConfiguration -ServerInstance $NewBcServerInstance -KeyName Solutio
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

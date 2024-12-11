@@ -21,6 +21,6 @@ ms.reviewer: solsen
 The referenced object is moved to another extension.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

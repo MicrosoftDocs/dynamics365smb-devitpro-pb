@@ -78,7 +78,7 @@ Set-NAVWebServerInstanceConfiguration -KeyName UseLegacyAcsAuthentication -KeyVa
 
 For the complete setup, see [Configure Microsoft Entra authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
 
-## See Also  
+## Related information  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
 [Troubleshooting: SAML2 token errors with Microsoft Entra ID/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  

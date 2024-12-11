@@ -52,5 +52,5 @@ Here is a JSON representation of the scheduledJob resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET scheduledJob](../api/dynamics_scheduledjob_get.md)  

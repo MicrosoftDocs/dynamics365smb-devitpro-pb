@@ -27,7 +27,6 @@ POST businesscentralPrefix/companies({id})/unitsOfMeasure
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **unitOfMeasure**, the **unitOfMeasure** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **unitsOfMeasure** object.
@@ -74,7 +73,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [unitofmeasure](../resources/dynamics_unitofmeasure.md)    
 [Get unitofmeasure](dynamics_unitofmeasure_Get.md)    

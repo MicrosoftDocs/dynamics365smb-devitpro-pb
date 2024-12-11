@@ -21,6 +21,6 @@ The return value must be used for the method '{0}'.
 The return value of a method must be used.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

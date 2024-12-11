@@ -104,7 +104,7 @@ When publishing, the server recompiles your code and tries to resolve all the re
 
 The server searches the global assembly cache (GAC), the **Add-ins** folder, and the **Add-in** table. You must manually install any custom assembly in one of these locations.
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)  
 [.NET control add-ins](devenv-dotnet-controladdins.md)        

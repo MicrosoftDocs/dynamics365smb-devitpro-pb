@@ -21,6 +21,6 @@ There is no argument given that corresponds to the required formal parameter '{0
 The referenced element is missing an argument for a required parameter.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

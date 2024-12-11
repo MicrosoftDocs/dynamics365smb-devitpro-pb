@@ -76,7 +76,7 @@ It's **very** important that you compile the database to get the right result in
 > You can use the Dynamics NAV Development Shell cmdlet `Export-NAVApplicationObject` with the `-ExportToNewSyntax` flag set instead of using finsql. From the command prompt in the Dynamics NAV Development Shell, run `Get-Help Export-NAVApplicationObject -full` to see the full syntax.
 
 
-## See also
+## Related information
 
 [Developing extensions](devenv-dev-overview.md)  
 [AL development environment](devenv-reference-overview.md)  

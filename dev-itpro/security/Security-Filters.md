@@ -131,7 +131,7 @@ If security filters are not set, then setting the **SecurityFiltering** property
 > [!NOTE]  
 > We recommend that you change commonly used record variables from the default value of **Validated** to either **Filtered** or **Ignored** to improve performance.  
 
-## See Also  
+## Related information  
 
 [Record-Level Security](data-security.md)   
 

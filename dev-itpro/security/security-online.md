@@ -16,7 +16,9 @@ This section helps you understand and improve the security of your [!INCLUDE[pro
 
 ## Authentication
  
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses Microsoft Entra ID as the authentication method, which is automatically set up and managed for you.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses Microsoft Entra ID as the authentication method, which is automatically set up and managed for you. It is possible to configure Microsoft Entra ID to allow or deny authentications to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only if certain additional conditions are met using Conditional Access to further improve security of your environments. For more information, see [Conditional Access](/entra/identity/conditional-access/overview).
+
+Access can be controlled per [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment for internal users, delegated administrators, and multitenant applications. For more information, see [Manage Access to Environments](../administration/tenant-admin-center-manage-access.md).
 
 ## Data isolation and encryption
 
@@ -40,7 +42,7 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 
 Customer Lockbox for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is administered in the Power Platform Admin Center and requires the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to be [linked to a Power Platform environment](../administration/tenant-admin-center-environments.md#linked-power-platform-environment). Learn more about administering Customer Lockbox in the Power Platform Admin Center [here](/power-platform/admin/about-lockbox). If the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is linked to a Power Platform for which Lockbox is enabled, Lockbox will automatically also be enabled for the linked [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. Lockbox requests for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can only be approved or rejected in the Power Platform Admin Center by users with at least the [Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) role.
 
-## See also  
+## Related information  
 
 [Microsoft Trust Center (what we do to make the service secure)](https://www.microsoft.com/trustcenter/security/default.aspx)  
 [Microsoft Dynamics 365 Cloud Services Compliance](https://aka.ms/d365-compliance-list)  

@@ -1,8 +1,8 @@
 ---
-title: "LinkTable Property"
+title: "LinkTable property"
 description: "Sets the table that this XML item should be linked to."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -72,6 +72,6 @@ After the sales header information has been processed, the last of the customer 
   
 If the customer number already exists, you will receive an error. This means that you will probably have to insert the data into a temporary table, modify it, and then insert it into the correct tables.  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

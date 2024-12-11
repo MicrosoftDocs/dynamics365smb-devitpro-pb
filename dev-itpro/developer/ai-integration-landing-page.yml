@@ -16,10 +16,11 @@ metadata:
   description: Build AL extensions that include copilot and generative AI experiences.
   author: jswymer
   ms.author: jswymer
-  ms.date: 03/27/2024
+  ms.date: 11/20/2024
   ms.topic: landing-page # DON'T CHANGE
   ms.service: dynamics-365-business-central
   ms.custom: bap-template #Required; don't change.
+  ms.reviewer: solsen
 
 # linkListType: concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
 
@@ -65,6 +66,8 @@ landingContent:
         url: devenv-page-promptguide.md
       - text: Prompting using a floating action bar
         url: devenv-page-prompting-floating-actionbar.md
+      - text: Error handling in prompt dialogs
+        url: devenv-page-prompt-error-handling.md
       - text: PromptMode property
         url: properties/devenv-promptmode-property.md      
       - text: Token counting in AI
@@ -78,8 +81,8 @@ landingContent:
     linkLists:
     - linkListType: video
       links:
-      - text: Designing and developing generative AI experiences
-        url: https://go.microsoft.com/fwlink/?linkid=2251051
+      - text: Extending Copilot in Business Central
+        url: https://go.microsoft.com/fwlink/?linkid=2297642
     - linkListType: sample
       links:
       - text: Sample extension in BCTech GitHub repo  
@@ -107,5 +110,3 @@ landingContent:
         url: /dynamics365/business-central/ai-overview
       - text: Bank account reconciliation assist
         url: /dynamics365/business-central/bank-reconciliation-with-copilot
-
-

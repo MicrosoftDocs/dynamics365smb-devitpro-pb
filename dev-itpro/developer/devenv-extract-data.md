@@ -84,6 +84,6 @@ It's also possible to use Power BI dataflows for your extract pipelines. With Po
 
 Another (unsupported) option is to use the _bc2adls_ code sample to transfer data from the [!INCLUDE[server](includes/server.md)] directly to an Azure Data Lake Storage (ADLS) data lake. For more information about bc2adls, see [About bc2adls](https://github.com/microsoft/bc2adls) on GitHub.com.
 
-## See also
+## Related information
 
 [Adding Power BI Report parts to pages](devenv-power-bi-report-parts.md)
