@@ -16,19 +16,24 @@ Would you like to know what changes are in update 25.2? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes on Microsoft Support at [Update 25.2 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5047904). Download the on-premises files from the Microsoft Download Center at [Update 25.2 for Business Central](https://www.microsoft.com/en-us/download/details.aspx?id=106299)<!--(https://aka.ms/BCDownload)-->.
+Learn about the hotfixes and download on-premises files on Microsoft Support at [Update 25.2 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5047904). <!--Download the on-premises files from the Microsoft Download Center at [Update 25.2 for Business Central](https://www.microsoft.com/en-us/download/details.aspx?id=106299)<!--(https://aka.ms/BCDownload)-->.
 
 ## Feature changes
 
 - [Do ad hoc analysis on fixed assets, projects, and services (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/do-ad-hoc-analysis-fixed-assets-projects-services)
 - [E-file IRS 1099 forms without integration (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/e-file-irs-1099-forms-without-integration)
+- Migrate to the cloud from Dynamics SL
 - [Start using E-Documents framework localized for Germany (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/start-using-e-documents-framework-localized-germany)
 - [Use embedded Power BI reports out of the box (general availability)](use-embedded-power-bi-reports-out-box)
 - [Use the e-documents framework in the Spanish version (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-e-documents-framework-spanish-version)
 
 ## Localization updates
 
-No localization updates for 25.2.
+| Country| Feature  |Description|
+|-------------|--------------|--------------|
+| Czech Republic| Copy Document Action Added to Sales and Purchase Advice Letters | The Copy Document action is now available on Sales and Purchase Advance Letters, allowing users to copy details from previously created documents, eliminating the need for manual re-entry each month. On the request page of the action, the only document types available to choose from are Sales or Purchase Advance Letters. |
+| Norway | SAF-T 1.3 mapping update | Starting 1/1/2025, the new SAF-T form 1.30 is required but can be used immediately. It isn't fully backward compatible due to significant changes. The old form 1.20 remains valid for FY2024 and earlier. Users can now select the SAF-T version in the SAF-T Setup, which will generate different XML content based on the chosen version. |
+| Spain | Adding new period type to the SII | In the new version, we've added a "Tax Period" option to the SII Setup, defaulting to Monthly. Companies required to submit the SII will have a Monthly Tax Period, while those voluntarily enrolled can choose Quarterly. Selecting Quarterly ensures the XML message reflects the correct value. |
 
 ## Release plan
 
@@ -40,23 +45,15 @@ New customers automatically get the latest builds of Business Central (25.2). If
 
 ## Good to know
 
-### Sales Order Agent in Business Central announcements
+### Sales Order Agent in Business Central - EARLY ACCESS PROGRAM (US only)
 
-In October, the upcoming **Sales Order Agent** was announced in the Dynamics 365 blog post [Transform work with autonomous agents across your business processes](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes) and at the Microsoft Business Application Launch Event. This agent automates routine sales order tasks, allowing sales teams to focus more on customer engagement while improving order accuracy and speed.
+We've recently announced the Early Access Program for the Business Central Sales Order Agent. Spaces are limited, so sign up here: [https://aka.ms/bcAgentsEarlyAccess](https://aka.ms/bcAgentsEarlyAccess).
 
-To learn more, you can watch the [Business Application Launch Event video](https://vshow.on24.com/vshow/BALE?regPageId=21469#exhibits/Home1) (registration required) or read the highlights in the Dynamics 365 blog [2024 release wave 2 launches with hundreds of Copilot capabilities](https://aka.ms/BALE102924). Also, check out this short [video](https://www.youtube.com/watch?v=6icbmbLc_Og) on YouTube for a quick overview.
-
-Follow the release plan at [Use Copilot with agent capabilities to automate sales order-taking](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
-
-### Online service updates this month
-
-- [Get list of manageable environments for Microsoft Entra apps (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/get-list-manageable-environments-entra-apps)
-
+Learn more about the Sales Order Agent at [Use Copilot with agent capabilities to automate sales order-taking](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
 ### Business Central Launch Event videos on YouTube
 
 The Business Central Launch Event for the 2024 release wave 2 took place on October 18, 2024. This online event aimed to provide information about the new features and enhancements in the 2024 release wave 2 to resellers, partners, ISVs, and consultants. You can find over 40 videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE).
-
 
 ### Features becoming mandatory soon
 
