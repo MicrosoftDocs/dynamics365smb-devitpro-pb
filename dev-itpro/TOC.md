@@ -554,7 +554,7 @@
 ##### [Control statements](developer/devenv-al-control-statements.md)
 #### [Access modifiers](developer/devenv-using-access-modifiers.md)
 #### [AL operators](developer/devenv-al-operators.md)
-#### [Comments](developer/devenv-xml-comments.md)
+#### [Documenting your code with XML comments](developer/devenv-xml-comments.md)
 
 ### Language elements
 #### Data types
