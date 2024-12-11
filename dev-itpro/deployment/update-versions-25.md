@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 11/01/2024
+ms.date: 12/11/2024
 ms.custom: bap-template
 ---
 
@@ -28,6 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5049396](https://support.microsoft.com/help/5049396)|Update 25.2 |December 2024|Application Build 25.2</br>Platform Build 25.0|
 |[5047904](https://support.microsoft.com/help/5047904)|Update 25.1 |November 2024|Application Build 25.1.25900</br>Platform Build 25.0.25866|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]

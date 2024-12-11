@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 11/01/2024
+ms.date: 12/11/2024
 ms.custom: bap-template
 ---
 
@@ -30,7 +30,8 @@ The following table lists the Business Central 23 versions and the minimum versi
 |-|-|
 |24.0 to 24.5|[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|
 |[24.6](https://support.microsoft.com/help/5046146)|[25.1](https://support.microsoft.com/help/5047904)|
-|[24.7](https://support.microsoft.com/help/5047903)<sup>[\[1\]](#1)</sup>|25.2|
+|[24.7](https://support.microsoft.com/help/5047903)|[25.2](https://support.microsoft.com/help/5049396)|
+|[24.8](https://support.microsoft.com/help/5049395)<sup>[\[1\]](#1)</sup>|25.3|
 
 ## Version 23 compatibility
 
@@ -46,7 +47,8 @@ The following table lists the Business Central 23 update versions and the minimu
 |[23.10](https://support.microsoft.com/help/5042529)|[24.5](https://support.microsoft.com/help/5043981)|25.0|
 |[23.11](https://support.microsoft.com/help/5043980)|[24.6](https://support.microsoft.com/help/5046146)|25.0|
 |[23.12](https://support.microsoft.com/help/5046145)|[24.7](https://support.microsoft.com/help/5047903)|[25.1](https://support.microsoft.com/help/5047904)|
-|[23.13](https://support.microsoft.com/help/5047902)<sup>[\[1\]](#1)</sup> |24.8|25.2|
+|[23.13](https://support.microsoft.com/help/5047902)|[24.8](https://support.microsoft.com/help/5049395)|[25.2](https://support.microsoft.com/help/5049396)|
+|[23.14](https://support.microsoft.com/help/5049394)<sup>[\[1\]](#1)</sup>|24.9|25.3|
 
 Get a list of all available updates for Business Central 2023 Release Wave 2 at [Released Updates for Microsoft Dynamics 365 Business Central 2023 Release Wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d).
 
