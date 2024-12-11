@@ -21,6 +21,6 @@ The property '{0}' can only be set on elements of type Option.
 The properties **OptionCaption**, **OptionMembers**, **OptionCaptionML** and **OptionOrdinalValues** cna only be set on elements of the type Option.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

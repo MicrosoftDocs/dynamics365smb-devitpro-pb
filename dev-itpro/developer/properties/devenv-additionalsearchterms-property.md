@@ -1,8 +1,8 @@
 ---
-title: "AdditionalSearchTerms Property"
+title: "AdditionalSearchTerms property"
 description: "Specifies search terms (words and phrases) for the page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -76,7 +76,7 @@ page 50100 MyItems
 }
 ```
 
-## See Also
+## Related information
 
 [Add pages and reports to Tell me](../devenv-al-menusuite-functionality.md)  
 [Properties](devenv-properties.md)   

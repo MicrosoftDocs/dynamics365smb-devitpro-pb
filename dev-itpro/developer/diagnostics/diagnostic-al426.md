@@ -21,6 +21,6 @@ The APIVersion {0} is specified multiple times.
 The APIVersion property has been specified multiple times on the same object.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

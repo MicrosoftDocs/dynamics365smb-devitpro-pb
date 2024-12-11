@@ -157,7 +157,7 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 |Supported operating systems|<ul><li>Windows Server 2019 Standard, Essentials, or Datacenter.</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>|  
 |Additional software|<ul><li>SharePoint 2013 Service Pack 1.</li><li>SharePoint Online.</li></ul>|  
 
-## See also
+## Related information
 
 [Welcome to the Developer and IT-Pro Help for Business Central](../index.md)    
 [Product and Architecture Overview](product-and-architecture-overview.md)    

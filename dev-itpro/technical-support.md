@@ -85,7 +85,7 @@ On occasion, as a partner, you will run into questions that are not directly rel
 
 [!INCLUDE [nonprodsupport](includes/nonprodsupport.md)]
 
-## See also
+## Related information
 
 [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)  
 [The Business Central Administration Center](administration/tenant-admin-center.md)  

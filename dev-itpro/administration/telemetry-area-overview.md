@@ -17,6 +17,6 @@ Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers te
 
 [!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
     
-## See also
+## Related information
 [Telemetry Event IDs](telemetry-event-ids.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

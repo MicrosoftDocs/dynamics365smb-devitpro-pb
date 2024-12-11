@@ -21,6 +21,6 @@ An application object of type '{0}' with name '{1}' is already declared by the e
 Multiple application objects with the same name are defined.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

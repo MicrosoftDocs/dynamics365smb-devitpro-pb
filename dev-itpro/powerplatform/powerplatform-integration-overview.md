@@ -65,7 +65,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 
 For more information, see [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md).
 
-## See also
+## Related information
 
 [Business Central connector for Power Platform](/connectors/dynamicssmbsaas)   
 [Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)  

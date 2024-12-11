@@ -113,7 +113,7 @@ For more information, see [FAQ about Migrating to Business Central Online from O
 During the data migration process, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't migrate most system tables, users, and permissions.  
 
 > [!NOTE]
-> Currently, record links are not migrated because the links are associated with a user ID, and we do not migrate users from the on-premises environment to the online tenant. You can choose to [upvote this feature suggestion](https://experience.dynamics.com/ideas/idea/?ideaid=b515c246-801d-ea11-b265-0003ff68f605).
+> Currently, record links are not migrated because the links are associated with a user ID, and we do not migrate users from the on-premises environment to the online tenant.
 
 ### Upgrading to a new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
@@ -233,7 +233,7 @@ Users that are reassigned to the *Intelligent Cloud* <!--user group--> permissio
 > [!WARNING]
 > If you grant insert, modify or delete permissions to any resource in the application that was set to read-only, it could have a negative impact on the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you may have to clear all your data and rerun a full migration to correct this.
 
-## See also
+## Related information
 
 [Migrate on-premises data to Business Central online introduction](migrate-data.md)  
 [Intelligent Insights with Business Central Online](/dynamics365/business-central/about-intelligent-cloud)  

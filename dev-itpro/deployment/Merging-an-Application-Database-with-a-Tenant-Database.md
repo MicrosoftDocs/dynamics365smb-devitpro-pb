@@ -135,7 +135,7 @@ Write-Host "Operation complete." -foregroundcolor cyan
 ### Step 4: Post-migration clean-Up  
  In the first scenario where you move a tenant from multitenancy to single-tenancy, you must update the [!INCLUDE[server](../developer/includes/server.md)] account and database permissions. Also, any tenant-specific files that have been saved to the original server location must be moved to the relevant location on the new server.  
   
-## See Also  
+## Related information  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
 [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview)

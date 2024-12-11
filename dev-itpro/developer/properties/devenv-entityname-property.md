@@ -1,8 +1,8 @@
 ---
-title: "EntityName Property"
+title: "EntityName property"
 description: "Sets the singular entity name with which the page is exposed in the API endpoint."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,6 +33,6 @@ EntityName = 'Customer';
 > [!NOTE]
 > The value `EntityMetadata` is reserved and using it for the **EntityName Property** will result in a compiler error.
   
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -20,7 +20,7 @@ AL extensions that are approved localization apps can override the default help 
 
 In the `app.json` file, two properties control the Help URL and the supported locale of the Help. Learn more at [Localization apps](../help/context-sensitive-help.md#localization-apps) and [JSON Files](devenv-json-files.md).
 
-## See Also
+## Related information
 
 [Add Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  

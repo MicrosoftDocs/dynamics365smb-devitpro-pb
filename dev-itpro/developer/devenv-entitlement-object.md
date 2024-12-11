@@ -217,7 +217,7 @@ entitlement BC_ApplicationWithAutomationScope
 }
 ```
 
-## See also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

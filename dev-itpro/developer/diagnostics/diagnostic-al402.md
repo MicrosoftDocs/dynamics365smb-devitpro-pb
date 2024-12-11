@@ -21,6 +21,6 @@ Expression {0} cannot be specified more than once in a 'case' statement.
 Duplicate expression in a 'case' statement. Expressions in a 'case' statement must be unique.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

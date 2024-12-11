@@ -4,7 +4,7 @@ description: Learn what to do when you want to use Business Central on-premises 
 author: jswymer
 ms.author: jswymer
 ms.custom: bap-template
-ms.date: 06/10/2024
+ms.date: 10/27/2024
 ms.topic: how-to
 ms.reviewer: jswymer
 ---
@@ -72,7 +72,7 @@ The first task is to use Azure portal to register an application for Business Ce
     |Feature|API | Permission name|Type|Description|
     |----|----|----------------|----|-----------|
     |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
-    |[Business Central add-in for Excel](/dynamics365/business-central/admin-deploy-excel-addin)|[Business Central app registration name]|[Business Central app permission name]|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
+    |[Business Central add-in for Excel](/dynamics365/business-central/admin-deploy-excel-addin)|The exposed API of the registered app used for authenticating Business Central users. Select this API from the **APIs may organization uses tab**. |Select the Business Central app permission name under **Permisssions**|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
     |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
     |[Exchange Contact Sync](/dynamics365/business-central/admin-synchronize-outlook-contacts)|Office 365 Exchange Online| Contacts.ReadWrite|Delegated|Allows the app to create, read, update, and delete user contacts.<br><br> **TIP** To find Office 365 Exchange Online, type it the search box on the **APIs my organization uses** tab.|
     ||| EWS.AccessAsUser.All|Delegated|Allows the app to have the same access to mailboxes as the signed-in user via Exchange Web Services.|
@@ -141,7 +141,7 @@ This issue indicates there's a problem with the configuration of the Azure regis
 
 While consenting to the services for the initial connection, you keep getting prompted to consent instead of connecting, there may be a problem with the reply URL that used in the **Set up your Microsoft Entra accounts** assisted setup guide. The first part of the reply URL, before `OAuthLanding.htm`, should exactly match what appears in your browser URL when you open the Business Central web client. For example, if the browser URL is `https://localhost/BC240` on your computer, then the reply URL you provide must be `https://localhost/BC240/OAuthLanding.htm`. The reply URL must also be included in the app you registered in Microsoft Entra ID previously in this article. 
  
-## See Also
+## Related information
 
 [Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 [FAQ about Migrating to the Cloud from On-Premises Solutions](faq-migrate-data.md)  

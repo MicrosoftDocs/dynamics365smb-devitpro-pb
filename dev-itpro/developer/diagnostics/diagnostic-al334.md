@@ -18,6 +18,6 @@ The extension object '{0}' cannot be declared. Another extension for target '{1}
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

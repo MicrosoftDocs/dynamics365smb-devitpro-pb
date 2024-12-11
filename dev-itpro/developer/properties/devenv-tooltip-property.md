@@ -1,8 +1,8 @@
 ---
-title: "ToolTip Property"
+title: "ToolTip property"
 description: "Sets the string used for the tooltip of an action, a field, a FactBox, or an activity button."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -29,7 +29,8 @@ In the client, tooltips appear when you point to the caption of the control.
 -   Page Custom Action
 -   Page System Action
 -   Page File Upload Action
--   Table Field
+-   Query Column
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -64,8 +65,10 @@ The default is an empty string, which means there will be no tooltip. According 
 With the `Locked` parameter, you can specify that the tooltip shouldn't be translated. This is useful when the tooltip is a technical term or a proper name, for example. The `Comment` parameter is used to provide additional information about the tooltip, for example, to explain why the tooltip shouldn't be translated. The `MaxLength` parameter is used to specify the maximum length of the tooltip. If the tooltip exceeds the maximum length, the rest of the tooltip is truncated `...`.
 
 > [!NOTE]  
-> With runtime version 13.0, the `ToolTip` property is available also for table fields. A table field tooltip will, like the caption, be applied on page controls that reference the table field. This allows you to specify the tooltip in one place and have it applied to all controls that reference the table field. With runtime 13.0, there's a new code action to help move the tooltip from page controls to table fields or clean them up from the page in case of duplicates. For more information, see [AL code actions](../devenv-code-actions.md).
+> With runtime version 14.0, the `ToolTip` property is available for query columns.
 
+> [!NOTE]  
+> With runtime version 13.0, the `ToolTip` property is available for table fields. A table field tooltip will, like the caption, be applied on page controls that reference the table field. This allows you to specify the tooltip in one place and have it applied to all controls that reference the table field. With runtime 13.0, there's a new code action to help move the tooltip from page controls to table fields or clean them up from the page in case of duplicates. For more information, see [AL code actions](../devenv-code-actions.md).
 
 The following example illustrates how you can apply tooltips in an app:  
 
@@ -88,7 +91,7 @@ field("Reward ID";"Reward ID")
 }
 ```
 
-## See also
+## Related information
 
 [User assistance model](../../user-assistance.md)  
 [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  

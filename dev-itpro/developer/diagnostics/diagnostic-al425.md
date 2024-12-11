@@ -18,6 +18,6 @@ The '{0}' trigger can only be used on codeunits that have the Subtype property s
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

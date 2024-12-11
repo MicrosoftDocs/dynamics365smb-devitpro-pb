@@ -15,7 +15,7 @@ When data is inserted, updated, or deleted in a table, the SIFT keys that are de
   
 With an NCCI, only one index structure exists and needs to be maintained. So there's no need to consider which query scenarios should be indexed.
 
-## See Also
+## Related information
 
 [NCCI Overview)](devenv-ncci-overview.md)  
 [NCCI and SQL Server](devenv-ncci-and-sql-server.md)  

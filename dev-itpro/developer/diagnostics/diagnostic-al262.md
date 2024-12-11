@@ -21,6 +21,6 @@ The clustered key '{0}' has already been defined for table '{1}'.
 A clustered key can only be defined once in the same table.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

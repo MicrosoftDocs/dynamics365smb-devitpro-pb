@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 06/21/2024
 ms.author: jswymer
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ---
 
 # Administration of Business Central Online
 
-Administrators that can manage [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenants are either an internal administrator, who is an employee of the company that bought the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] subscription, or an administrator from the reselling partner company. Some of the tools are the same, and some tools are available to partners only. Here you can learn which tools are available to you as an administrator.  
+Administrators that can manage [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenants are either an internal administrator, who is an employee of the company that bought the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] subscription, or a delegated administrator, who is an employee of the reselling partner company. Some of the tools are the same, and some tools are available to delegated administrators only. Here you can learn which tools are available to you as an administrator.  
 
 ## Administration as an internal administrator
 
-Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned at least the **Dynamics 365 Administrator** or **Dynamics 365 Business Central Administrator** role in the Microsoft 365 admin center. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
+Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned a role allowing for the administration of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] in the Microsoft 365 admin center. **Dynamics 365 Business Central Administrator** is recommended as least-privileged role allowing for the administration of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but **Dynamics 365 Administrator** and **Global Administrator** are supported as well. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.
 
 ### Administration in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
@@ -40,7 +40,7 @@ To manage the subscription and assign or remove licenses in the Microsoft 365 ad
 
 ### Collaboration with reselling partners
 
-When your organization subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you have a relationship with [an authorized partner of Microsoft](/microsoft-365/admin/misc/add-partner). The partner company assists with licensing, configuration, and other tasks. They can also help you get [telemetry](telemetry-overview.md) about your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. Authorized partners can gain access to your tenant and its [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments by setting up a granular delegated administrative privileges (GDAP) relationship. It's recommended the **Dynamics 365 Business Central Administrator** role in GDAP relationships as this role limits access for partner users to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] only. The **Dynamics 365 administrator** role is also supported for partners to administer and access [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments in the customer tenant, but also provide access to services other than [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
+When your organization subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you have a relationship with [an authorized partner of Microsoft](/microsoft-365/admin/misc/add-partner). The partner company assists with licensing, configuration, and other tasks. They can also help you get [telemetry](telemetry-overview.md) about your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. Authorized partners can gain access to your tenant and its [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments by setting up a granular delegated administrative privileges (GDAP) relationship. It's recommended the **Dynamics 365 Business Central Administrator** role in GDAP relationships as this role limits access for partner users to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] only. The **Dynamics 365 Administrator** and **Global Administrator** roles are also supported for partners to administer and access [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments in the customer tenant, but also provide access to services other than [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
 
 If your organization decides to switch to another partner, you must take the following steps:
 
@@ -63,11 +63,11 @@ If your organization decides to switch to another partner, you must take the fol
 
 If the organization decides not to continue with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can then cancel the subscription.  
 
-In the Microsoft 365 admin portal, you can remove licenses from users. As the administrator, you can remove a trial subscription from your company's account. But to cancel a paid subscription, you must contact your reselling partner, and they can [cancel the relevant subscription](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center. For more information, see the [Data and access when a trial or subscription ends](#expire) section.  
+In the Microsoft 365 admin portal, you can remove licenses from users. As the administrator, you can remove a trial subscription from your company's account. But to cancel a paid subscription, you must contact your reselling partner, and they can [cancel the relevant subscription](/partner-center/create-a-new-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center. For more information, see the [Data and access when a trial or subscription ends](#expire) section. 
 
 ## Administration as a partner
 
-As a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reselling partner, you're the administrator of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants of your customers. You have access to the administration tools of their Microsoft 365 account and their [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] where you can specify update windows. You can also log into their [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as a *delegated administrator* if you want to reproduce errors.  
+As a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reselling partner, you're the administrator of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments of your customers. You have access to the administration tools of their Microsoft 365 account and their [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] where you administer your customers' environments. You can also log into their [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments as a *delegated administrator*, for example to set up and maintain the environment or to troubleshoot any issues.  
 
 [!INCLUDE [admin-partner-mpn](../developer/includes/admin-partner-mpn.md)]
 [!INCLUDE [csp-get-started](../developer/includes/csp-get-started.md)]
@@ -76,10 +76,6 @@ As a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reselling partn
 ### Connect with customers
 
 [!INCLUDE [csp-connect-customer](../developer/includes/csp-connect-customer.md)]
-
-### Acting as a delegated administrator
-
-As a reselling partner, you have delegated administration access to their [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and other services. For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md).  
 
 ### Manage technical support
 
@@ -99,7 +95,7 @@ Trials can expire, and so can a paid subscription, such as if the organization d
 
 If you're migrating from an on-premises solution, understanding the infrastructure of [!INCLUDE [prod_short](../includes/prod_short.md)] online can help you make good choices for how to set up environments and companies. For more information and an example, see [Understanding the infrastructure of Business Central online](tenant-environment-topology.md).  
 
-## See Also
+## Related information
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [The Business Central Administration Center API](administration-center-api.md)  

@@ -52,7 +52,7 @@ DELETE https://api.businesscentral.dynamics-tie.com/v1.0/api/v1.0/companies(comp
 
 No content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 

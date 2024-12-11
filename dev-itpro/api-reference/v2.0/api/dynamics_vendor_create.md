@@ -29,7 +29,6 @@ POST businesscentralPrefix/companies({id})/vendors
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **vendor**, the **vendor** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **vendors** object.
@@ -108,7 +107,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [vendor](../resources/dynamics_vendor.md)    
 [Get vendor](dynamics_vendor_Get.md)    

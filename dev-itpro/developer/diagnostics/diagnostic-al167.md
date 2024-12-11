@@ -18,6 +18,6 @@ The {0} '{1}' can only be used if the property '{2}' is set with any of the valu
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

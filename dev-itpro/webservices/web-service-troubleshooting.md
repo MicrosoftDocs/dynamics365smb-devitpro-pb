@@ -70,7 +70,7 @@ The environment for a web service endpoint can change how it works. If you see a
 - (Only for on-premises) Are API/OData/SOAP enabled the same way in both environments?
 
 
-## See also
+## Related information
 
 [Handling UI Interaction in web service endpoints](handling-ui-interaction-when-working-with-web-Services.md)  
 [Web Services Best Practices](Web-Services-Best-Practices.md)  

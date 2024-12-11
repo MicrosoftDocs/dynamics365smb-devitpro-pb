@@ -184,7 +184,7 @@ if confirm('Are you sure you want to call this codeunit?', true) then begin
 end;         
 ```  
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions in AL](devenv-dev-overview.md)  

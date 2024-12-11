@@ -69,5 +69,5 @@ Here is a JSON representation of the trialBalance resource.
 
 
 
-## See Also
+## Related information
 [GET trialBalance](../api/dynamics_trialBalance_Get.md)

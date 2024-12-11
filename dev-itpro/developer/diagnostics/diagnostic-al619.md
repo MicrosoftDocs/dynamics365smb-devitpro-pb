@@ -21,6 +21,6 @@ The attribute '{0}' on procedure '{1}' is not allowed. Add attribute 'ServiceEna
 The Caption attribute is not allowed. Add attribute 'ServiceEnabled' to the procedure or move it into an application object of type API.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

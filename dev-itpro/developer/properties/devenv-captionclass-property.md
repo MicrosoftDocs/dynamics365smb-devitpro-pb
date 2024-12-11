@@ -1,8 +1,8 @@
 ---
-title: "CaptionClass Property"
+title: "CaptionClass property"
 description: "Controls the caption that is used in the label of a field in a database table or in the label of a control on a page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Controls the caption that is used in the label of a field in a database table or in the label of a control on a page.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Label
 -   Page Field
 
@@ -94,7 +94,7 @@ codeunit 50000 "MyCaptionClassMgmt"
 }
 ```
 
-## See Also
+## Related information
 
 [CaptionML Property](devenv-captionml-property.md)  
 [Caption Property](devenv-caption-property.md)  

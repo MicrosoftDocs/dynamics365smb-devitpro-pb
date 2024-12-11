@@ -1,8 +1,8 @@
 ---
-title: "DataCaptionExpression Property"
+title: "DataCaptionExpression property"
 description: "Sets an AL expression that is evaluated and displayed to the left of the page caption."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -31,7 +31,7 @@ DataCaptionExpression = Description;
 
 The expression is evaluated each time the user switches from one record to another or when one of the fields in the record changes.  
   
-## See Also  
+## Related information  
 
 [Page Object](../devenv-page-object.md)  
 [Properties](devenv-properties.md)

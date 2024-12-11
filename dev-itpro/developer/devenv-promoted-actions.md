@@ -9,9 +9,9 @@ ms.reviewer: solsen
 
 # Promoted actions
 
-You can promote actions that are used more often than others and thereby ensure quick access to them. This type of actions is called *promoted actions*. Promoted actions are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. You can, however, choose to hide them on the Actions, Navigate, or Report menus and only show them on the Home tab. 
+You can promote actions that are used more often than others and thereby ensure quick access to them. This type of actions is called *promoted actions*. Promoted actions are either placed in the Home menu or in suitable menus and groups named so users know what to expect in each.  
 
-Promoted actions can be used on Card, Document, List, ListPlus, and Worksheet pages to provide quick access to common tasks that appear under the Home tab. 
+Promoted actions can be used on Card, Document, List, ListPlus, and Worksheet pages to provide quick access to common tasks.
 
 ## Promoting actions using the actionref syntax
 
@@ -238,7 +238,7 @@ page 50103 Customers
 
 For more examples of how to use actions, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
 
-## See also
+## Related information
 
 [Actions overview](devenv-actions-overview.md)  
 [Adding actions to a page](devenv-adding-actions-to-a-page.md)  

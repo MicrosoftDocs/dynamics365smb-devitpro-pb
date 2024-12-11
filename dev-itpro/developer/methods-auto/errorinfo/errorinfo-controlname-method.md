@@ -2,7 +2,7 @@
 title: "ErrorInfo.ControlName([Text]) Method"
 description: "Specifies the control name that the error relates to."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,7 +41,7 @@ The current control name of the ErrorInfo.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## See Also
+## Related information
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

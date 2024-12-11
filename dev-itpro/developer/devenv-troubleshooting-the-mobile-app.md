@@ -27,6 +27,6 @@ The first thing to do is to check that the environment meets the prerequisites f
   
  <!-- [Troubleshooting: The Server Is Not Compatible](Troubleshooting--The-Server-Is-Not-Compatible.md) -->
 
-## See also
+## Related information
 
 [Getting Started Developing for the Business Central Mobile App](devenv-getting-started-developing-business-central-mobile-app.md)  

@@ -154,7 +154,7 @@ To use a direct reference without the base64 conversion, change `<Value></Value>
 <Value>=Fields!CompanyInfo2Picture.Value</Value>
 ```
 
-## See Also
+## Related information
 
 [BLOB Data Type](methods-auto/blob/blob-data-type.md)  
 [Media Data Type](methods-auto/media/media-data-type.md)  

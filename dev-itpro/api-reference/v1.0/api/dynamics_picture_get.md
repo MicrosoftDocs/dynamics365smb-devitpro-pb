@@ -71,7 +71,7 @@ GET https://{businesscentralPrefix}/api/v1.0/companies(companyId)/items(itemId)/
 Body is the raw image data. 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 

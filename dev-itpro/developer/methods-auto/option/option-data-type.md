@@ -1,8 +1,8 @@
 ---
-title: "Option Data Type"
+title: "Option data type"
 description: "Denotes an option value."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Option Data Type
+# Option Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes an option value. In the code snippet below, you can see how the Option data type is declared.
@@ -64,7 +64,7 @@ This example shows how you can use the value of an option field as a constant in
 PurchHeaderRec."Document Type" := PurchHeaderRec."Document Type"::Invoice;   
 ```
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

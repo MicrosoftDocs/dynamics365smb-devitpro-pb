@@ -29,7 +29,7 @@ For [!INCLUDE[prod_short.md](../developer/includes/prod_short.md)] on-premises, 
 ## Integrating directly on SQL Server objects
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
 
-## See also
+## Related information
 
 [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  
 [Optimizing SQL Server Performance](../administration/optimize-sql-server-performance.md)  

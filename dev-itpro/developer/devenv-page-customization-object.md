@@ -100,7 +100,7 @@ pagecustomization MyPageCust customizes MyPage
 To specify if a table field can be used as a source expression for page fields that are created in page customizations, use the [AllowInCustomizations](properties/devenv-allowincustomizations-property.md). Default is that a table field can be used in such a way.
 
 
-## See Also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

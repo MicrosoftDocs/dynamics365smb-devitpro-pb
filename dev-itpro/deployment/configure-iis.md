@@ -47,5 +47,5 @@ On the server farm in IIS, add or edit a routing rule to include a server variab
 |  Name  |  Value  |  Replace  |
 |--------|---------|-----------|
 |`HTTP_X_FORWARDED_PROTO`|`http` or `https`|`true`|
-## See Also  
+## Related information  
  [Business Central Web Server Overview](web-server-overview.md)   

@@ -1,16 +1,16 @@
 ---
-title: "Choosing runtime version in AL"
-description: "How to choose runtime in AL for Business Central."
+title: Choose runtime version in AL
+description: How to choose runtime in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 03/14/2024
+ms.date: 09/04/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Choosing runtime version in AL
+# Choose runtime version in AL
 
-The capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)] are determined by the runtime version. The runtime version can be specified in the `app.json` file for a project. It's expressed with the following syntax, for example: `"runtime": "12.0"`. Specifying the runtime version is mostly interesting for scenarios where you develop for on-prem or a mix of on-prem and SaaS. For SaaS only development, you will most likely be interested in using the current runtime. If the runtime setting is not specified, the compiler will detect the runtime that matches the server.
+The runtime version determines the capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)]. The runtime version can be specified in the `app.json` file for a project. It's expressed with the following syntax, for example: `"runtime": "12.0"`. Specifying the runtime version is mostly interesting for scenarios where you develop for on-premises or a mix of on-premises and SaaS. For SaaS only development, you'll most likely be interested in using the current runtime. If the runtime setting isn't specified, the compiler detects the runtime that matches the server.
 
 The runtime version specified in the `app.json` file determines which runtime the project is targeting. An extension can be published to a server with the same or a later runtime version as the runtime version specified in the `app.json` file of the extension.
 
@@ -41,14 +41,15 @@ The available options for setting the `runtime` in AL are:
 |`11.0`         |Business Central 2023 release wave 1|22.0|
 |`12.0`         |Business Central 2023 release wave 2|23.0|
 |`13.0`         |Business Central 2024 release wave 1|24.0|
+|`14.0`         |Business Central 2024 release wave 2|25.0|
 
 ## Setting the runtime version
 
-Selecting the runtime depends on the circumstances. If you, for example, have customers that run on older versions, you should set the runtime to be the minimum version that works to ensure compatibility. This will prevent you from inadvertently using features that are not supported on the older server.
+Selecting the runtime depends on the circumstances. If you, for example, have customers that run on older versions, you should set the runtime to be the minimum version that works to ensure compatibility. This prevents you from inadvertently using features that aren't supported on the older server.
 
-If an earlier runtime is picked, it can be good idea to have a daily or weekly build that tests the extension against the latest version of the runtime. Testing against the latest runtime can detect new diagnostics, such as warnings or errors, that are introduced in the compiler or changes in the platform runtime. Though it may not be possible to refactor code for a future runtime, while using an older runtime, staying on top of these changes may help making design decisions early on.
+If an earlier runtime is picked, it can be good idea to have a daily or weekly build that tests the extension against the latest version of the runtime. Testing against the latest runtime can detect new diagnostics, such as warnings or errors, that are introduced in the compiler or changes in the platform runtime. Though it might not be possible to refactor code for a future runtime, while using an older runtime, staying on top of these changes may help making design decisions early on.
 
-## See Also
+## Related information
 
-[JSON Files](devenv-json-files.md)  
+[JSON files](devenv-json-files.md)  
 [Launch JSON file](devenv-json-launch-file.md)

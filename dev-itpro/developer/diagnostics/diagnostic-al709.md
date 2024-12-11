@@ -18,6 +18,6 @@ The layout file at path '{0}' specified in layout '{1}' in {2} {3} does not exis
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -62,7 +62,7 @@ Here's some important information about deleted environments and their recovery:
    For more information about setting the update date, go to [Schedule an update date](tenant-admin-center-update-management.md#schedule).
 4. When ready to recover the environment, select **Recover**.
 
-## See also
+## Related information
 
 [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md)  
 [Managing Capacity](tenant-admin-center-capacity.md)  

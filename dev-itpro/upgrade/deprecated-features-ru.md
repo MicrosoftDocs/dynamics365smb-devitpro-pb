@@ -45,7 +45,7 @@ Russian legislation requires companies to record and track the customs declarati
 
 [!INCLUDE [fields-obsolete-ru](../includes/fields-obsolete-ru.md)]
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

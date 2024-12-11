@@ -44,6 +44,6 @@ For example:
 1. Copy the code to a text editor, and save it as a .txt file type.
 2. Use the Microsoft Dynamics NAV Development Environment to import the file and compile the object, which replaces the existing page.
 
-## See also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)  
  [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)  

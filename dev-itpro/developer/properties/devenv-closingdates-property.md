@@ -1,8 +1,8 @@
 ---
-title: "ClosingDates Property"
+title: "ClosingDates property"
 description: "Sets a value that determines whether users can enter a closing date in this field."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets a value that determines whether users can enter a closing date in this field. The default value is False.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -35,6 +35,6 @@ ClosingDates = true;
 
 All dates have a corresponding closing date. A closing date is a period following the given date, but before the next date. Closing dates are sorted immediately after the corresponding date but before the next date.  
   
-## See Also  
+## Related information  
 
 [Date and Time Methods](../methods-auto/library.md)

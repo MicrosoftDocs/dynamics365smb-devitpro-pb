@@ -131,7 +131,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 <!-- [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)   -->
 <!-- [Developing Printer Extensions Overview](devenv-reports-printing.md)   -->

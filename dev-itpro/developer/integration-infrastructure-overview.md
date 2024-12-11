@@ -55,7 +55,7 @@ For more information, see [Set up Universal Print printers](/dynamics365/busines
 
 <!-- Purview goes here when live in docs -->
 
-## See also
+## Related information
 
 [Manage users and licenses with Microsoft Entra](/dynamics365/business-central/ui-how-users-permissions#manage-users-and-licenses-in-online-tenants)  
 [Set up multi-factor authentication (MFA) with Microsoft Entra](../security/multifactor-authentication.md)  

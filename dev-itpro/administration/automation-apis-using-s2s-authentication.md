@@ -260,7 +260,7 @@ Delete {{companyUrl}}/{{entityName}}({{entityId}})
 Authorization: {{accessHeader}}
 ```
 
-## See Also
+## Related information
 [OAuth2 and Microsoft Entra ID](/azure/active-directory/develop/active-directory-v2-protocols)  
 [Client Credentials flow/S2S using MSAL library](/azure/active-directory/develop/scenario-daemon-overview)  
 [C# samples using Client Credentials flow](https://github.com/Azure-Samples/active-directory-dotnetcore-daemon-v2)  

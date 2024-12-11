@@ -1,14 +1,18 @@
 ---
 title: Resources for partners
-description: Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
+description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 06/20/2024
-ms.reviewer: jswymer
+ms.date: 11/13/2024
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: jswymer
 ---
 
-# Welcome to Business Central | Resources for Partners
+# Welcome to Business Central resources for partners
+
+> [!NOTE]
+> The 2024 release wave 2 launch event for [!INCLUDE [prod_short](../includes/prod_short.md)] was kicked off on October 8, 2024.
+> You can now access over 40 on-demand sessions at [aka.ms/BCYouTube](https://aka.ms/BCYouTube).
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
@@ -55,6 +59,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
 - Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
 - The AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
+- The Microsoft coordinated #BCTalent offerings help partners with recruiting, training, and coaching services: [aka.ms/BCTalent](https://aka.ms/BCTalent) 
 
 ## Go to market
 
@@ -80,18 +85,19 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ### Copilot in Business Central 101
 
-- Copilot in Business Central playlist on YouTube: [aka.ms/BC-Copilot-Videos​](https://aka.ms/BC-Copilot-Videos)
+- Pitch deck for Copilot in Business Central: [aka.ms/bcCopilotPitchDeck](https://aka.ms/bcCopilotPitchDeck)
+- Learn how to get your free demo environment at [aka.ms/CDX](https://aka.ms/CDX), or showcase Copilot using prebuilt, click-through demos at [aka.ms/bcSalesTools](https://aka.ms/bcSalesTools)
 - Copilot in Business Central - showcase video: [aka.ms/BC-AI-Sizzle](https://aka.ms/BC-AI-Sizzle)
-- Business Central pitch deck: [aka.ms/BC-GTM](https://aka.ms/BC-GTM)
+- Copilot in Business Central playlist on YouTube: [aka.ms/BC-Copilot-Videos​](https://aka.ms/BC-Copilot-Videos)
 - Copilot in Business Central blog: [aka.ms/bc-ai​](https://aka.ms/bc-ai)
-- Copilot in Business Central Q&A : [About Copilot](/dynamics365/business-central/copilot-overview)
+- Sales Order Agent preview video: [aka.ms/bcagents](https://aka.ms/bcagents)
+- Copilot in Business Central FAQ: [About Copilot](/dynamics365/business-central/copilot-overview)
 - Dynamics Communities interview with Mike Morton: [dynamicscommunities.com](https://dynamicscommunities.com/ug/copilot-ug/microsofts-mike-morton-explains-new-copilot-capabilities-inside-business-central/)
-- Learn about Copilot for Dynamics 365: [Copilot for Dynamics 365](/microsoft-cloud/dev/copilot/copilot-for-dynamics365)
 
 ### Copilot in Business Central for developers
 
-- How-to guide for developing AI/Copilot solutions for Business Central: [Developing generative AI experiences​](../ai-build-experience-overview.md)
-- Developer resources for Copilot in Business Central: [aka.ms/BCStartCodingWithAILearn](https://aka.ms/BCStartCodingWithAILearn)
+- Extend Copilot in Business Central: [aka.ms/bcAIdevDocs](https://aka.ms/bcAIdevDocs)
+- How-to guide for extending Copilot in Business Central: [Developing generative AI experiences​](../ai-build-experience-overview.md)
 - Business Central under the hood episode 1 - Developing AI: [Business Central under the hood series (on YouTube)​](https://www.youtube.com/watch?v=jdevJbGgB-k&t=792s)
 
 ## Reporting and business intelligence  
@@ -124,7 +130,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/BCPublisher)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] technology samples: [aka.ms/BCTech](https://aka.ms/BCTech)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] open source sample apps: [aka.ms/BCSamples](https://aka.ms/BCSamples)
-- Maintain your app(s): [Maintain Your App](../app-maintain.md)
+- Maintain your apps: [Maintain Your App](../app-maintain.md)
 - Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues)
 - Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
 - Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))

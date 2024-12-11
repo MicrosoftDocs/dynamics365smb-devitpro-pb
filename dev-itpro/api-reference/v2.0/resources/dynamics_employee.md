@@ -103,7 +103,7 @@ Here is a JSON representation of the employee resource.
 
 
 
-## See Also
+## Related information
 [GET employee](../api/dynamics_employee_Get.md)  
 [DELETE employee](../api/dynamics_employee_Delete.md)  
 [POST employee](../api/dynamics_employee_Create.md)  

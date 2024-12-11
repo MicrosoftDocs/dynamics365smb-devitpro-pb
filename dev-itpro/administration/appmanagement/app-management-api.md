@@ -67,9 +67,9 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=storageLocation 
 {
     "value": [
         {
-            "id": "36d697e1-1982-43a5-9927-7f8f2a3eb361",
+            "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
             "publisher": "Contoso",
-            "publisherAadTenantId": "49cf52d4-fc10-41af-91ab-2d7cd011db47",
+            "publisherAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
             "publisherContactEmail": "publisher@contoso.com",
             "storageLocation": "West Europe",
             "_etag": "5c47bfb0-d80c-4780-99ed-c3a3d38ac539"
@@ -109,7 +109,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries
 ```
 
 #### Example Response
@@ -119,11 +119,11 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
     "value": [
         {
             "countryCode": "US",
-            "_etag": "f6039211-0dea-481a-80a5-38498dcea011"
+            "_etag": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1"
         },
         {
             "countryCode": "DK",
-            "_etag": "bb8f8166-a6cc-4562-b135-0b13257b032f"
+            "_etag": "b1b1b1b1-cccc-dddd-eeee-f2f2f2f2f2f2"
         }
     ]
 }
@@ -145,7 +145,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US
 ```
 
 #### Example Response
@@ -153,7 +153,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```json
 {
     "countryCode": "US",
-    "_etag": "f6039211-0dea-481a-80a5-38498dcea011"
+    "_etag": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1"
 }
 ```
 
@@ -176,7 +176,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 #### Example Request
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/AT
+PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/AT
 
 {
     "countryCode": "AT"
@@ -188,7 +188,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 ```json
 {
     "countryCode": "AT",
-    "_etag": "584915f0-6319-4aab-a23c-743c0c4d9aeb"
+    "_etag": "cccccccc-dddd-eeee-3333-444444444444"
 }
 ```
 
@@ -226,7 +226,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals?$filt
 
 #### Example Request
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/principals?$filter=type eq 'User' and 'Owner' in roles
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals?$filter=type eq 'User' and 'Owner' in roles
 ```
 
 #### Example Response
@@ -234,9 +234,9 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 {
     "value": [
         {
-            "id": "c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d",
+            "id": "cccccccc-dddd-eeee-3333-444444444444",
             "type": "User",
-            "aadTenantId": "0c1cbce0-b823-4acf-be2f-1ac3a4e81c21",
+            "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
             "roles": [
                 "Owner"
             ],
@@ -262,16 +262,16 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id}
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/principals/c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals/cccccccc-dddd-eeee-3333-444444444444
 ```
 
 #### Example Response
 
 ```json
 {
-    "id": "c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d",
+    "id": "cccccccc-dddd-eeee-3333-444444444444",
     "type": "User",
-    "aadTenantId": "0c1cbce0-b823-4acf-be2f-1ac3a4e81c21",
+    "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "roles": [
         "Owner"
     ],
@@ -295,7 +295,7 @@ DELETE https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{i
 #### Example Request
 
 ```
-DELETE https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/principals/c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d
+DELETE https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals/cccccccc-dddd-eeee-3333-444444444444
 ```
 
 ### Add or update principal
@@ -319,10 +319,10 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id
 #### Example Request
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/principals/c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d
+PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals/cccccccc-dddd-eeee-3333-444444444444
 
 {
-    "aadTenantId":  "20ba9ed9-d37b-4db0-ade4-f64322ad7c02",
+    "aadTenantId":  "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "Type":  "User",
     "roles":  [
                   "Reader"
@@ -336,13 +336,13 @@ When using `Type:"Application"`, the `aadTenantId` must not be used.
 
 ```json
 {
-    "id": "c07b7af3-8c9a-4bb1-9a0b-03692ba98d6d",
+    "id": "cccccccc-dddd-eeee-3333-444444444444",
     "type": "User",
-    "aadTenantId": "0c1cbce0-b823-4acf-be2f-1ac3a4e81c21",
+    "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "roles": [
         "Reader"
     ],
-    "_etag": "a98992bf-d7f6-460b-83bb-1498459a6a75"
+    "_etag": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1"
 }
 ```
 
@@ -403,7 +403,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions?$filter=MajorVersion eq 16 and MinorVersion eq 0
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions?$filter=MajorVersion eq 16 and MinorVersion eq 0
 ```
 
 #### Example Response
@@ -413,9 +413,9 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
     "value": [
         {
             "version": "16.0.1.2",
-            "appId": "41a68924-7fcf-4fd0-9200-f10f36a2e213",
+            "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
             "countryCode": "US",
-            "packageId": "01d39741-8ab1-4fcc-b353-d9208ba475e3",
+            "packageId": "ffffffff-5555-6666-7777-aaaaaaaaaaaa",
             "publisher": "Example Publisher",
             "name": "ExampleApp",
             "uploadedOn": "2019-07-09T11:54:45.5414576Z",
@@ -423,7 +423,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
             "status": "Uploaded",
             "dependencies": [
                 {
-                    "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+                    "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
                     "name": "Example Dependency",
                     "publisher": "Other Publisher",
                     "version": "1.0.0.0"
@@ -433,7 +433,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
             "minorVersion": 0,
             "buildVersion": 1,
             "revisionVersion": 2,
-            "_etag": "50fec40a-99b6-4743-bbe7-42e95cde2cfa"
+            "_etag": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3"
         }
     ]
 }
@@ -471,7 +471,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 #### Example Request
 
 ```
-POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions
+POST https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions
 
 {
     "initialAvailability": "Preview",
@@ -484,9 +484,9 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
 ```json
 {
     "version": "16.0.1.2",
-    "appId": "41a68924-7fcf-4fd0-9200-f10f36a2e213",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
-    "packageId": "01d39741-8ab1-4fcc-b353-d9208ba475e3",
+    "packageId": "ffffffff-5555-6666-7777-aaaaaaaaaaaa",
     "publisher": "Example Publisher",
     "name": "ExampleApp",
     "uploadedOn": "2019-07-09T11:54:45.5414576Z",
@@ -494,7 +494,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
     "status": "Uploaded",
     "dependencies": [
         {
-            "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+            "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
             "name": "Example Dependency",
             "publisher": "Other Publisher",
             "version": "1.0.0.0"
@@ -504,7 +504,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
     "minorVersion": 0,
     "buildVersion": 1,
     "revisionVersion": 2,
-    "_etag": "50fec40a-99b6-4743-bbe7-42e95cde2cfa"
+    "_etag": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3"
 }
 ```
 
@@ -529,7 +529,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 Downloads an app file.
 
 ```
-POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2/getPackageContents -OutFile "C:\temp\ExampleApp-16.0.1.2.app"
+POST https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2/getPackageContents -OutFile "C:\temp\ExampleApp-16.0.1.2.app"
 ```
 
 
@@ -552,7 +552,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2 
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2 
 ```
 
 #### Example Response
@@ -560,9 +560,9 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 ```json
 {
     "version": "16.0.1.2",
-    "appId": "41a68924-7fcf-4fd0-9200-f10f36a2e213",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
-    "packageId": "01d39741-8ab1-4fcc-b353-d9208ba475e3",
+    "packageId": "ffffffff-5555-6666-7777-aaaaaaaaaaaa",
     "publisher": "Example Publisher",
     "name": "ExampleApp",
     "uploadedOn": "2019-07-09T11:54:45.5414576Z",
@@ -570,7 +570,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
     "status": "Uploaded",
     "dependencies": [
         {
-            "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+            "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
             "name": "Example Dependency",
             "publisher": "Other Publisher",
             "version": "1.0.0.0"
@@ -580,7 +580,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
     "minorVersion": 0,
     "buildVersion": 1,
     "revisionVersion": 2,
-    "_etag": "50fec40a-99b6-4743-bbe7-42e95cde2cfa"
+    "_etag": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3"
 }
 ```
 
@@ -606,7 +606,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 Marking an app version as deprecated.
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2 
+PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2 
 
 {
     "availability": "Deprecated"
@@ -617,7 +617,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 Marks older versions of your app as incompatible with a dependency app, starting with a specific version. In such cases, make sure you upload another version of your app that is compatible with the new version of the dependency app. 
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2
+PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2
 
 {
     "dependencies": [
@@ -634,9 +634,9 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 ```json
 {
     "version": "16.0.1.2",
-    "appId": "41a68924-7fcf-4fd0-9200-f10f36a2e213",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
-    "packageId": "01d39741-8ab1-4fcc-b353-d9208ba475e3",
+    "packageId": "ffffffff-5555-6666-7777-aaaaaaaaaaaa",
     "publisher": "Example Publisher",
     "name": "ExampleApp",
     "uploadedOn": "2019-07-09T11:54:45.5414576Z",
@@ -644,7 +644,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
     "status": "Uploaded",
     "dependencies": [
         {
-            "appId": "1914cafc-93b9-46fd-b825-707f1743caee",
+            "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
             "name": "Example Dependency",
             "publisher": "Other Publisher",
             "version": "1.0.0.0"
@@ -654,7 +654,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
     "minorVersion": 0,
     "buildVersion": 1,
     "revisionVersion": 2,
-    "_etag": "3c0f1fd2-266e-491b-82e3-74f09a975267"
+    "_etag": "c2c2c2c2-dddd-eeee-ffff-a3a3a3a3a3a3"
 }
 ```
 
@@ -693,7 +693,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environments?$filter=version eq '16.0.1.2'
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environments?$filter=version eq '16.0.1.2'
 ```
 
 #### Example Response
@@ -702,9 +702,9 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 {
     "value": [
         {
-            "aadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+            "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
             "version": "16.0.1.2",
-            "appId": "41a68924-7fcf-4fd0-9200-f10f36a2e213",
+            "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
             "countryCode": "US",
             "applicationFamily": "Business Central",
             "locationName": "West Europe",
@@ -763,7 +763,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environmentHotfixes?$filter=targetAppVersion eq '16.0.1.2'
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes?$filter=targetAppVersion eq '16.0.1.2'
 ```
 
 #### Example Response
@@ -772,14 +772,14 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 {
     "value": [
         {
-            "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
-            "environmentAadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+            "id": "dddddddd-3333-4444-5555-eeeeeeeeeeee", 
+            "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
             "sourceAppVersion": "16.0.0.5",
             "targetAppVersion": "16.0.1.2",
             "status": "Scheduled",
             "createdOn": "2020-03-05T15:41:20.6468128Z",
             "runAfter": "2020-03-05T17:30:00.0000000Z",
-            "appId": "41a68924-7fcf-4fd0-9200-f10f36a2e213",
+            "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
             "countryCode": "US",
             "environmentApplicationFamily": "Business Central",
             "environmentName": "MyCustomer",
@@ -808,21 +808,21 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environmentHotfixes/db311b6a-062e-4756-b17e-73aeb89c45cc
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes/dddddddd-3333-4444-5555-eeeeeeeeeeee
 ```
 
 #### Example Response
 
 ```json
 {
-    "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
-    "environmentAadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+    "id": "dddddddd-3333-4444-5555-eeeeeeeeeeee", 
+    "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "sourceAppVersion": "16.0.0.5",
     "targetAppVersion": "16.0.1.2",
     "status": "Scheduled",
     "createdOn": "2020-03-05T15:41:20.6468128Z",
     "runAfter": "2020-03-05T17:30:00.0000000Z",
-    "appId": "41a68924-7fcf-4fd0-9200-f10f36a2e213",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
     "environmentApplicationFamily": "Business Central",
     "environmentName": "MyCustomer",
@@ -850,10 +850,10 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 #### Example Request
 
 ```
-POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environmentHotfixes
+POST https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes
 
 {
-    "environmentAadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+    "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "targetAppVersion": "16.0.1.2",
     "runAfter": "2020-03-05T17:30:00.0000000Z",
     "environmentApplicationFamily": "Business Central",
@@ -866,14 +866,14 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
 
 ```json
 {
-    "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
-    "environmentAadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+    "id": "dddddddd-3333-4444-5555-eeeeeeeeeeee", 
+    "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "sourceAppVersion": "16.0.0.5",
     "targetAppVersion": "16.0.1.2",
     "status": "Scheduled",
     "createdOn": "2020-03-05T15:41:20.6468128Z",
     "runAfter": "2020-03-05T17:30:00.0000000Z",
-    "appId": "41a68924-7fcf-4fd0-9200-f10f36a2e213",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
     "environmentApplicationFamily": "Business Central",
     "environmentName": "MyCustomer",
@@ -902,7 +902,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 #### Example Request
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/environmentHotfixes/db311b6a-062e-4756-b17e-73aeb89c45cc
+PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes/dddddddd-3333-4444-5555-eeeeeeeeeeee
 
 {
     "status": "Canceled"
@@ -914,14 +914,14 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-920
 
 ```json
 {
-    "id": "db311b6a-062e-4756-b17e-73aeb89c45cc", 
-    "environmentAadTenantId": "539a833c-4e6a-42d8-a081-27fa9d810424",
+    "id": "dddddddd-3333-4444-5555-eeeeeeeeeeee", 
+    "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "sourceAppVersion": "16.0.0.5",
     "targetAppVersion": "16.0.1.2",
     "status": "Canceled",
     "createdOn": "2020-03-05T15:41:20.6468128Z",
     "runAfter": "2020-03-05T17:30:00.0000000Z",
-    "appId": "41a68924-7fcf-4fd0-9200-f10f36a2e213",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "countryCode": "US",
     "environmentApplicationFamily": "Business Central",
     "environmentName": "MyCustomer",
@@ -998,6 +998,6 @@ catch [System.Net.WebException]
 ```
 Please make sure you provide full output in textual format when reporting the issues to Microsoft. 
 
-## See Also
+## Related information
 
 [App Management for ISVs](app-management-overview.md)  

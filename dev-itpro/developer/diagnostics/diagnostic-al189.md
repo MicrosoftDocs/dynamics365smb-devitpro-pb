@@ -21,6 +21,6 @@ Attribute '{0}' cannot be specified, because '{1}' is already specified.
 Mutually exclusive attributes have been specified on the same variable or method. This is the case for handler attributes and event attributes, where only one attribute of each kind can be set on the same procedure.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

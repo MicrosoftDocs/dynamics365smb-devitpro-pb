@@ -21,6 +21,6 @@ Field '{0}' is moved and cannot be used in an active key.
 A moved field cannot be used in a key.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

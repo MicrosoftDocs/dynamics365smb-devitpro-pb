@@ -21,7 +21,7 @@ Customers using kiosks, where multiple users sign in to [!INCLUDE[prod_short](..
 - Each user should use private or guest browsing modes so that any data cached by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is discarded when the browser is closed. Users should be made aware that private or guest browsing can degrade some [!INCLUDE[prod_short](../developer/includes/prod_short.md)] features and performance optimizations that are only available when the browser provides access to its storage mechanisms.
 
 
-## See Also  
+## Related information  
 
 [Security and Protection](security-and-protection.md)  
 [Application Security](security-application.md)  

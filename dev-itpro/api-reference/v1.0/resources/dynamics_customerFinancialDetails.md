@@ -54,5 +54,5 @@ Here is a JSON representation of the resource.
     "overdueAmount": "decimal"
 }
 ```
-## See also
+## Related information
 [Get customerFinancialDetails](../api/dynamics_customerFinancialDetails_get.md)  

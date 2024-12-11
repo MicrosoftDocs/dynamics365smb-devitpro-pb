@@ -18,6 +18,6 @@ The type '{0}' of the {1} field '{2}' has 'Internal' accessibility. The field wi
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

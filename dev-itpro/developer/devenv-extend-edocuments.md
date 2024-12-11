@@ -708,7 +708,7 @@ procedure Create(EDocumentService: Record "E-Document Service"; var EDocument: R
 
 Do you believe that there are any essential features that could make the development of an e-document solution easier? If so, create the idea on aka.ms/BCIdeas, or start the article on [aka.ms/BCYammer](https://aka.ms/BCYammer), and we'll get back to you.
 
-## See also
+## Related information
 
 [How to set up e-documents in Business Central](/dynamics365/business-central/finance-how-setup-edocuments)  
 [How to use e-documents in Business Central](/dynamics365/business-central/finance-how-use-edocuments)  

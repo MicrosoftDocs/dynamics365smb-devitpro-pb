@@ -29,15 +29,11 @@ table 50102 MyTable
     fields
     {
         field(1; MyField; Integer)
-        {
-            DataClassification = CustomerContent;
+        {           
             ToolTip = 'Field number one is always the best!';
         }
 
-        field(2; MySecondField; Integer)
-        {
-            DataClassification = CustomerContent;
-        }
+        field(2; MySecondField; Integer) {  }
     }
 }
 ```
@@ -66,14 +62,12 @@ page 50103 MyPage
             group(GroupName)
             {
                 field(First; Rec.MyField)
-                {
-                    ApplicationArea = All;
+                {                   
                     ToolTip = 'This tooltip overwrites the tooltip defined on the table field.'
                 }
 
                 field(Second; Rec.MySecondField)
-                {
-                    ApplicationArea = All;
+                {    
                     ToolTip = 'Tooltip on page field (it was never defined on the table)'
                 }
             }
@@ -90,7 +84,7 @@ In [!INCLUDE[prod_short](includes/prod_short.md)] 2023 release wave 2 or earlier
 
 In case you need to display a table field in multiple pages (for example, on a card and a list), then you need to duplicate the code for the definition of the tooltip.
 
-## See also
+## Related information
 
 [Help users get unblocked (by providing tooltips)](../user-assistance.md#help-users-get-unblocked)  
 [Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md)  

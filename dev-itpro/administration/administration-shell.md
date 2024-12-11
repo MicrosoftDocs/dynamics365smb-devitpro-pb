@@ -64,7 +64,7 @@ For more information about [!INCLUDE[adminshell](../developer/includes/adminshel
 
 For more information about Windows PowerShell, see [Windows PowerShell Getting Started Guide](https://go.microsoft.com/fwlink/?LinkID=252252).  
 
-## See Also
+## Related information
 
 [Configuring Business Central Server Instances](configure-server-instance.md)  
 [Configuring Business Central Web Server Instances](configure-web-server.md)  

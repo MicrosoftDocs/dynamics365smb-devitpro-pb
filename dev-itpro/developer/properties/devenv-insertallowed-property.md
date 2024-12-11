@@ -1,8 +1,8 @@
 ---
-title: "InsertAllowed Property"
+title: "InsertAllowed property"
 description: "Sets a value to specify whether users can add records while using a page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -31,6 +31,6 @@ Sets a value to specify whether users can add records while using a page.
 InsertAllowed = false;
 ```
  
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

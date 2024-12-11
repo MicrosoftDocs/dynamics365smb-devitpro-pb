@@ -51,7 +51,7 @@ The following list is a noncomprehensive list of the snippets that you can use i
 |`twhile`| While structure|
 |`txmlport`| XMLport object structure|
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)   
 [Developing extensions in AL](devenv-dev-overview.md)

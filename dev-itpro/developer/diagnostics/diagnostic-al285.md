@@ -21,6 +21,6 @@ The event '{0}' must not have a parameter name 'sender' when it specifies to inc
 An event publisher must not have a parameter name 'sender' when it specifies to include sender.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

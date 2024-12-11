@@ -529,7 +529,7 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 [!INCLUDE[upgrade-web-server-instances](../developer/includes/upgrade-web-server-instances.md)]
 
-## See also
+## Related information
 
 [Dynamics 365 Business Central On-Premises 2023 Release Wave 1 Updates](../deployment/update-versions-22.md)   
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)   

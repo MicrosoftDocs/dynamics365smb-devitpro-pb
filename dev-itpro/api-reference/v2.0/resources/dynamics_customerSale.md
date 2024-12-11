@@ -56,5 +56,5 @@ Here is a JSON representation of the customerSale resource.
 
 
 
-## See Also
+## Related information
 [GET customerSale](../api/dynamics_customerSale_Get.md)

@@ -15,7 +15,7 @@ This section describes the properties that are available to developers in [!INCL
 > [!TIP]  
 > If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
 
-There are different properties for various the AL object types. Some properties can be set on the object-level, and others pertain to specific controls of the object. Properties are added at the beginning of the code for the object or control, after the its definition, by using the syntax: `Property_name = value;`. For example:
+There are different properties for various AL object types. Some properties can be set on the object-level, and others pertain to specific controls of the object. Properties are added at the beginning of the code for the object or control, after the its definition, by using the syntax: `Property_name = value;`. For example:
 
 ```al
 page 50100 MyPage
@@ -45,7 +45,7 @@ page 50100 MyPage
 > [!TIP]
 > Use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to trigger IntelliSense and get assistance on selecting a property and help on its syntax.
 
-## See also
+## Related information
 
 [Methods](../methods-auto/library.md)  
 [Triggers](../triggers-auto/devenv-triggers.md)  

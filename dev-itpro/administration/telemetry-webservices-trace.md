@@ -316,7 +316,7 @@ If you want to analyze web service call telemetry from the usage of the Microsof
 [MicrosoftConnectorUsage.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/HelperQueries/MicrosoftConnectorUsage.kql) might be useful.
  
 
-## See also
+## Related information
 
 [Web service performance](../webservices/web-service-performance.md)  
 [Troubleshoot web service errors](../webservices/web-service-troubleshooting.md)  

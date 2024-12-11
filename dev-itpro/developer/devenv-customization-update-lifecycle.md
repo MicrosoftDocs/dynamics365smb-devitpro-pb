@@ -36,9 +36,9 @@ The notification is similar to that provided by the automated extension validati
 
 ## Automatic Extension Removal
 
-The publisher of an extension must maintain compatibility with the new release of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. An extension that is not compatible with the update within 90 days of the first notification of incompatibility will be removed, and then the environment will be updated.
+The publisher of an extension must maintain compatibility with the new release of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information about automatic removal of incompatible extensions, see [Maintain AppSource apps and PTEs in Business Central online](app-maintain.md).
 
-## See Also
+## Related information
 
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  
 [Upgrading Extensions](devenv-upgrading-extensions.md)  

@@ -168,7 +168,7 @@ codeunit 50101 SerializationSample
 
 The line that contains assignment of the **ServerObject** to the **ClientObject** causes the serialization process to run. When completed, the message **Server data has been serialized to the client object** appears, which verifies that the server object has been transferred to the client object.  
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)    
 [Getting started with Microsoft .NET interoperability from AL](devenv-get-started-call-dotnet-from-al.md)

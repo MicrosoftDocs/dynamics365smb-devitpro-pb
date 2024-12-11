@@ -54,7 +54,7 @@ TDE has an estimated performance impact around 3-5% and can be much lower if mos
 
 BitLocker Drive Encryption has a single-digit percentage performance impact as explained [here](/windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq#is-there-a-noticeable-performance-impact-when-bitlocker-is-enabled-on-a-computer).
 
-## See Also  
+## Related information  
  [Classifying Data](../developer/devenv-classifying-data.md)   
  [Data Security](data-security.md)  
  [Enhancing Business Server Security](enhancing-server-instance-security.md)   

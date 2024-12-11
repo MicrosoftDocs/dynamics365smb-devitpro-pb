@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 09/18/2024
 ms.custom: evergreen
 ms.collection: get-started
 ---
@@ -20,6 +20,8 @@ The following table shows the valid operators in AL.
 
 These operators are used to perform various operations such as arithmetic, comparison, and logical operations.
 
+### General operators
+
 |AL general operator | Meaning |
 |:---|:---|
 |`.`|Fields in records, controls on pages, and reports|
@@ -30,7 +32,8 @@ These operators are used to perform various operations such as arithmetic, compa
 |`..`|Range|
 |`@`|Case-insensitive|
 
-<br>
+### Arithmetic operators
+
 Arithmetic operators are used to perform arithmetic operations on numeric operands. The result of an arithmetic operation is a numeric value.
 
 |AL arithmetic operator | Meaning |
@@ -42,7 +45,8 @@ Arithmetic operators are used to perform arithmetic operations on numeric operan
 |`div`|Integer division|
 |`mod`|Modulus|
 
-<br>
+### Comparison operators
+
 Comparison operators are used to compare two values. The result of a comparison is a Boolean value, that is, `true` or `false`.
 
 |AL comparison operator | Meaning |
@@ -54,7 +58,8 @@ Comparison operators are used to compare two values. The result of a comparison 
 |`=`|Equal to|
 |`<>`|Not equal to|
 
-<br>
+### Logical operators
+
 The logical operators are used on Boolean expressions
 
 |AL logical operator | Meaning |
@@ -64,7 +69,18 @@ The logical operators are used on Boolean expressions
 |`not`|Logical negation|
 |`xor`|Exclusive logical disjunction|
 
-<br>
+### Conditional operators
+
+Conditional operators can be used to test if a condition is met.
+
+[!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
+
+|AL conditional operator | Meaning |
+|:---|:---|
+|`? :`| Assign one of two values to a variable, depending on the condition of an expression.|
+
+### Compound operators
+
 Compound assignment operators perform an arithmetic operation and assign the result to the same variable.
 
 |AL compound assignment operator| Meaning|
@@ -106,6 +122,31 @@ In this example, the `+` operator is used as a unary operator to indicate sign.
 +34545  
 ```
 
+### Example 4
+
+[!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
+
+In this example, the `? :` operator is used to replace a if-then-else clause.
+
+```al
+codeunit 50122 TernaryOperator
+{
+    procedure Example()
+    var
+        myExpression: Boolean;
+        myVar: Text;
+    begin
+
+        if myExpression then
+            myVar := 'True';
+        else
+            myVar := 'False';
+
+        myVar := myExpression ? 'True' : 'False';
+    end;
+}
+```
+
 ## Operator hierarchy
 
 Operators are organized in a hierarchy that determines the order in which the operands in a given expression are evaluated. The following list shows the order of precedence of the AL operators:
@@ -136,7 +177,7 @@ This expression evaluates to 14.
 ```
 This expression evaluates to 20.
 
-## See also
+## Related information
 
 [Arithmetic operators](devenv-al-arithmetic-operators.md)  
 [Boolean operators](devenv-al-boolean-operators.md)  

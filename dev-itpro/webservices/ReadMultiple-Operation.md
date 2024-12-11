@@ -82,5 +82,5 @@ foreach (Customer customer in customerList)
 }  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

@@ -38,7 +38,7 @@ table 50105 "Retention Period"
 }
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Scope Property](devenv-scope-property.md)  

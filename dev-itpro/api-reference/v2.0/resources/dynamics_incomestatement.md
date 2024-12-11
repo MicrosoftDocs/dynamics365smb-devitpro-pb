@@ -60,5 +60,5 @@ Here is a JSON representation of the incomeStatement resource.
 
 
 
-## See Also
+## Related information
 [GET incomeStatement](../api/dynamics_incomeStatement_Get.md)

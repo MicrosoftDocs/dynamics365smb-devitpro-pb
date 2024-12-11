@@ -21,6 +21,6 @@ There is an 'ELSE' statement without an 'IF' in property {0}.
 An 'ELSE' statement must be preceeded by an 'IF'.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

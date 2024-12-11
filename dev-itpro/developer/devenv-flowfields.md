@@ -58,7 +58,7 @@ Correspondingly, the **Any Entries** field, which indicates whether any entries 
 Exist("Customer Entries" where(CustNo=field(CustNo)))  
 ```
 
-## See also
+## Related information
 
 [CalcFields method (Record)](methods-auto/record/record-calcfields-method.md)  
 [FlowFilters overview](devenv-flowfilter-overview.md)  

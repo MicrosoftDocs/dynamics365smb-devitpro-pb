@@ -21,6 +21,6 @@ Length of the argument '{0}' cannot exceed {1} characters.
 The length of the given argument exceeds the maximum length permitted for its type.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -51,6 +51,6 @@ In this section, you can find API documentation for Microsoft Graph.
 |purchaseInvoiceLine resource type|[purchaseInvoiceLine](../resources/dynamics_purchaseinvoiceline.md)|
 |generalLedgerEntries resource type|[generalLedgerEntries](../resources/dynamics_generalLedgerEntry.md)|
 
-## See also
+## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  

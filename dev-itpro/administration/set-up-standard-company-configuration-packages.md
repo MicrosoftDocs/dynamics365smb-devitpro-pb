@@ -67,8 +67,13 @@ The XML processor that generates the .rapidstart files accepts only some special
 
 The process of creating and importing a configuration package involves the following effective permissions for all tables in the package:  
 
-- The user who exports data for the configuration package must have **Read** effective permissions.
-- The user who imports the configuration package must have **Insert** and **Modify** effective permissions.
+- The user who exports data for the configuration package must have **Direct Read** effective permissions.
+- The user who imports the configuration package must have **Direct Insert** and **Direct Modify** effective permissions.
+
+> [!NOTE]
+> The user must have direct effective permissions to the tables that are imported or exported. Indirect permissions aren't sufficient.
+>
+> Also, some tables don't support direct read, insert, or modify permissions. You can't include such tables in configuration packages.
 
 ### Database schema
 
@@ -148,7 +153,7 @@ You can import a configuration package that has been exported from a database th
 
 The next time you're going to set up [!INCLUDE [prod_short](../includes/prod_short.md)] for a new customer, you can apply your configuration packages and get started fast. For more information, see [Apply Company Configuration Packages](apply-company-configuration-packages.md).  
 
-## See also
+## Related information
 
 [Apply Company Configuration Packages](apply-company-configuration-packages.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  

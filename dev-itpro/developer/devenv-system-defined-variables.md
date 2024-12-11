@@ -34,7 +34,10 @@ In some situations, the user should be able to change the customer number, and i
 You can use the `Rec` and `xRec` variables to design your application in the following way:  
 
 - When validating the customer number field, check whether the order has shipped.  
-- If the order has shipped, compare the customer number fields in the Rec and xRec records. If they differ, reject the change.  
+- If the order has shipped, compare the customer number fields in the Rec and xRec records. If they differ, reject the change.
+
+> [!NOTE]
+> Avoid modifications to the xRec variable because the record might share some of the underlying state with the Rec variable for performance and compatibility reasons and changes can unexpectedly propagate to the Rec variable.
 
 ## Using `CurrPage`
 
@@ -48,7 +51,7 @@ You can access properties of a report through the `CurrReport` variable and set 
 
 You can access properties of the request page through the RequestOptionsPage variable and set them dynamically. 
 
-## See also
+## Related information
 
 [AL variables](devenv-al-variables.md)  
 [AL method reference](methods-auto/library.md)  

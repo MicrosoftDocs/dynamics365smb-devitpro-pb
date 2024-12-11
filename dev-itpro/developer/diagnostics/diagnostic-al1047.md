@@ -21,6 +21,6 @@ The application ID range {0} is not valid.
 A correct application ID range [startID..endID] must respect that startID > 0, endID > 0 and startID <= endID.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -14,7 +14,7 @@ author: thpeder
 
 The submission must target at least one existing country/region of [!INCLUDE [prod_short](../includes/prod_short.md)]. Verify that at least one country/region is marked as 'Available' at [aka.ms/bccountries](https://aka.ms/bccountries). For more information, see the [Technical Validation FAQ](../devenv-checklist-submission-faq.md).
 
-## See also
+## Related information
 
 [Technical Validation FAQ](../devenv-checklist-submission-faq.md)
 [Get started with AL](../devenv-get-started.md)  

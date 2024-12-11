@@ -24,6 +24,6 @@ EXIT(PageMetadata.GET(PageID) AND (PageMetadata.SourceTable = TableID));
 ```
 
 
-## See also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)  
  [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)  

@@ -80,7 +80,7 @@ This Logic App queries Application Insights every number of minutes (specified i
 
 
 
-## See also
+## Related information
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  
