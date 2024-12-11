@@ -1491,6 +1491,7 @@
 
 ### Publishing pages and codeunits as OData/SOAP web service endpoints
 #### [Publishing a web service](webservices/publish-web-service.md)
+#### [Troubleshooting errors on OData/SOAP web services on pages, queries, and codeunits](webservices/web-service-troubleshooting-soap-odata-ui-pages.md)
 #### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
 #### [Creating and interacting with an OData V4 bound action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 
