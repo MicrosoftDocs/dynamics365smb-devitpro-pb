@@ -1335,9 +1335,10 @@
 
 ## [AL Language reference](developer/index.md)
 <!-- end AL -->
-<!-- begin security -->
 
+<!-- begin Security, privacy, and compliance -->
 # Security, privacy, and compliance
+
 ## Security
 ### [Security overview](security/security-and-protection.md)
 ### [Tips for business users](security/security-users.md)
@@ -1347,6 +1348,7 @@
 ### [On-premises](security/security-onpremises.md)
 ### [Data security](security/data-security.md)
 ### [Azure security service tags](security/security-service-tags.md)
+### [Security FAQ](security/security-faq.md)
 <!--
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)
@@ -1355,13 +1357,15 @@
 ### [Enhancing Server Security](security/enhancing-server-instance-security.md)
 ### [Using Security Certificates](deployment/implement-security-certificates-production-environment.md)
 ### [Configuring SSL to Secure Web Client Connection](deployment/configure-ssl-web-client-connection.md)
-### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
+### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)
+-->
 ## Privacy
 ### [Privacy FAQ](security/PrivacyFAQ.md)
 ### [Privacy (microsoft.com)](https://www.microsoft.com/trust-center/privacy)
+
 ## Compliance
 ### [Compliance overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-<!-- end security -->
+
 ## Service overview
 ### [Service overview](service-overview.md)
 ### [Service scalability](service-scalability.md)
@@ -1373,6 +1377,7 @@
 ### [Security auditing](security/security-auditing.md)
 ### [Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes?toc=/dynamics365/business-central/dev-itpro/toc.json#analyze-data-in-the-change-log) 
 ### [Auditing in Purview](auditing/audit-events-in-purview.md)
+<!-- end Security, privacy, and compliance -->
 
 <!-- begin performance -->
 # Performance
