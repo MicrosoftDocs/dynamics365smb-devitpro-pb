@@ -3,7 +3,7 @@ title: Deprecated Features in the Base App
 description: Describes the features that have been moved, removed, or replaced in the W1 version.
 author: brentholtorf
 ms.author: bholtorf
-ms.date: 09/16/2024
+ms.date: 12/11/2024
 ms.reviewer: bholtorf
 ms.topic: conceptual
 ms.custom: bap-template
@@ -28,7 +28,7 @@ The following features will be removed in 2026 release wave 1.
 |Replaced| With [!INCLUDE[prod_short](../includes/prod_short.md)] you can create Connect apps. Connect apps establish a point-to-point connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and a 3rd party solution or service using the standard REST API to interchange data. <br><br>In 2020 release wave 2 we introduced a new improved API where all complex properties are replaced with first-level properties or navigation properties. This change significantly improves API performance, as complex fields were previously calculated at runtime. In API v2.0, all multipart keys and non-GUID keys are replaced with unique GUID keys, and entities can be retrieved using the SystemId, which is immutable, platform-enforced, and indexed. This change improves auditing and API reading performance.<br><br>The API (v1.0) will be removed in 2026 release wave 1.<br><br>The API v2.0 contains all the functionality from API v1.0, so migration should be possible. If this isn't the case, reach out to us via [https://github.com/microsoft/ALAppExtensions](https://github.com/microsoft/ALAppExtensions).<br><br>To learn about the replacement feature, go to [Transitioning from API v1.0 to API v2.0](../api-reference/v2.0/transition-to-api-v2.0.md). |
 
 
-### Legacy Power BI apps on AppSource
+### Legacy Power BI apps on AppSource (removed)
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
@@ -45,7 +45,7 @@ The following features are marked as `obsolete:pending` in 2025 release wave 1.
 |-----------------------------|-----|
 |Replaced| While useful to some organizations, the Balance Sheet, Income Statement, Statement of Cash Flow, Statement of Retained Earnings, Sales Taxes Collected, Customer Statements, Aged Accounts Payable, and Aged Accounts Receivable Excel reports that are currently available on the Business Manager and Accountant Role Centres are hard to change. To change them requires technical skills in AL and VBA programming. We've enhanced analytics capabilities in finance in each release wave over the last three years. For example, we've added data analysis capabilities on ledger tables, reports with Excel layouts that allow users to change the layout as they see fit, and Power BI reports for finance. <br><br>To learn about the replacement features, go to [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
 
-### Legacy Power BI apps on AppSource
+### Legacy Power BI apps on AppSource (warning)
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
@@ -82,6 +82,7 @@ The following features are marked as `obsolete:pending` in 2024 release wave 1.
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced| The Excel reports (Balance Sheet, Income Statement, Statement of Cash Flows, Statement of Retained Earnings, VAT Collected, Customer Statements, Aged Accounts Payable, and Aged Accounts Receivable) that are available from the Business Manager and Accountant role centers are being replaced by new reports. The new reports use Excel layouts that allow power users to modify the layouts with Excel and upload the new layouts to [!INCLUDE[prod_short](../includes/prod_short.md)]. The deprecated reports will be hidden from the role centers in 2025 release wave 1 and will be completely removed from [!INCLUDE[prod_short](../includes/prod_short.md)] in 2026 release wave 1.|
+
 ### API (v1.0) for Business Central (warning)
 
 |Moved, Removed, or Replaced? |    Why?|
