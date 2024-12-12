@@ -23,7 +23,7 @@ Next, follow the [Get Started with AL](devenv-get-started.md) to set up the tool
 
 ## Which version of the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] should I use?
 
-For [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] cloud sandboxes you *must* use the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offcial release available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
+For [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] cloud sandboxes you *must* use the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] official release available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
 
 For the latest developer preview releases, you can use the latest pre-release available in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode) or the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], which is available in the *next major* artifact through the "Ready! for Dynamics 365 Business Central" program on [Microsoft Collaborate](https://aka.ms/collaborate).
 
