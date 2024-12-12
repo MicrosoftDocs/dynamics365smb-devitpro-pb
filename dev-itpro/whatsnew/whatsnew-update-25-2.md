@@ -45,7 +45,7 @@ New customers automatically get the latest builds of Business Central (25.2). If
 
 ## Good to know
 
-### Sales Order Agent in Business Central - EARLY ACCESS PROGRAM (US only)
+### Sales Order Agent in Business Central - Early Access Program (US only)
 
 We've recently announced the Early Access Program for the Business Central Sales Order Agent. Spaces are limited, so sign up here: [https://aka.ms/bcAgentsEarlyAccess](https://aka.ms/bcAgentsEarlyAccess).
 
