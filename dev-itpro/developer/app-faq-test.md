@@ -40,7 +40,7 @@ Yes. If you support multiple countries/regions, test your app on every country. 
 
 ## Do you have recommendations on maintenance testing of our apps?
 
-Yes. You should be testing your apps against our various build branches. Through Docker, you have access to our latest public sandbox builds and through the "Ready! for Dynamics 365 Business Central" program on [Microsoft Collaborate](https://aka.ms/collaborate) you can also get access to *Next Minor* and *Next Major* builds. Test often, especially against the *Next Minor* build. This allows you to catch any bugs that may arise from core changes in the product.
+Yes. You should be testing your apps against our various build branches. Through Docker, you have access to our latest sandbox builds and our latest next major and next minor insider builds - all are public. Test often, especially against the Next Minor build. This allows you to catch any bugs that may arise from core changes in the product.
 
 ## I only made minor code changes in my updated app. Can I test just these changes?
 
