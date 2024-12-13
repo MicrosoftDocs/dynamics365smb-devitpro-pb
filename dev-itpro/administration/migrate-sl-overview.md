@@ -106,7 +106,7 @@ This section outlines the general process or phases you go through to migrate da
 
    To get started, refer to [Set up cloud migration](migration-setup-overview.md).
 
-1. Configure Dynamics SL company migration
+1. **Configure Dynamics SL company migration**
 
    The step is part of the setup phase in which you select the companies and data that you want to migrate.
 
