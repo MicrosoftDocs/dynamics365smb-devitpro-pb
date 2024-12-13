@@ -5,7 +5,7 @@ author: lcontreras
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
-ms.date: 11/14/2024
+ms.date: 12/13/2024
 ms.custom: bap-template
 ---
 # Run cloud migration setup for Dynamics SL migration
@@ -39,8 +39,8 @@ Any user running the cloud migration setup flow as delegated administrator must 
 1. [Sign in to the Microsoft 365 tenant](https://admin.microsoft.com) used by [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
    The person who sets up and runs the cloud migration must be signed in as an administrator of the Microsoft Entra (Microsoft 365) tenant and [!INCLUDE [prod_short](../includes/prod_short.md)] online.
-1. [Sign in to Business Central online](https://businesscentral.dynamics.com) and open the environment to which you are migrating the data.
-1. From the **Settings** page,select the **Assisted Setup** option.
+1. [Sign in to Business Central online](https://businesscentral.dynamics.com) and open the environment to which you're migrating the data.
+1. From the **Settings** page, select the **Assisted Setup** option.
 1. From the **Assisted Setup** page, select **Set up Cloud Migration**.
 1. Read the information on the page and provided links. If you consent, switch on **I accept warning & privacy notice**, then select **Next**.
 1. Set **Product** option to the version that matches the on-premises product that you're migrating, then select **Next**.
@@ -73,11 +73,11 @@ There are some scenarios where it might be necessary for you to run the cloud mi
 > [!TIP]
 > We recommend that you take a backup of the target environment so that you can easily restore the environment to a specific state and time, should you want to do so.
 
-A common scenario is when you want to add tenants to an existing runtime service. If you're a hosting partner, you might have multiple tenants running on the same integration runtime service. Each tenant is isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the **Microsoft Integration Runtime Manager**. For more information, see [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime) in the Azure docs.
+A common scenario is when you want to add tenants to an existing runtime service. If you're a hosting partner, you might have multiple tenants running on the same integration runtime service. Each tenant is isolated in their own data pipeline. To add tenants to an existing integration runtime service, enter the name of the existing integration runtime service into this field. The integration runtime name can be found in the **Microsoft Integration Runtime Manager**. Learn more in [Create and configure a self-hosted integration runtime](/azure/data-factory/create-self-hosted-integration-runtime) in the Azure docs.
 
 In this scenario, you're making updates to an existing runtime service. When you get to the point of the assisted setup guide where you can specify an existing runtime service name, open the Microsoft Integration Runtime Service Manager. Then enter the runtime name in the field; you aren't allowed to copy and paste. The runtime service identifies that you're making updates to an existing service and doesn't create a new one.  
 
-Complete the steps in the wizard to update the runtime service. If the change is related to adding tenants to an existing service, a new data pipeline is created for that tenant. Regenerating an Azure Data Factory (ADF) key might be done using the **Cloud Migration Management** page in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, see [Run the assisted setup guide](migration-setup-SL.md#rerunning-cloud-migration-setup-guide).  
+Complete the steps in the wizard to update the runtime service. If the change is related to adding tenants to an existing service, a new data pipeline is created for that tenant. Regenerating an Azure Data Factory (ADF) key might be done using the **Cloud Migration Management** page in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. Learn more in [Run the assisted setup guide](migration-setup-SL.md#rerunning-cloud-migration-setup-guide).  
 
 ## Troubleshoot and fix problems
 
@@ -87,7 +87,7 @@ If you run into problems with the setup, go to [Cloud migration troubleshooting 
 
 [Run data replication](migration-data-replication.md).
 
-## See also
+## Related information
 
 [Dynamics SL migration to Business Central online: End-to-end overview](migrate-SL-overview.md)  
 [Compare work in Dynamics SL to Business Central](migrate-dynamics-SL-videos.md)  

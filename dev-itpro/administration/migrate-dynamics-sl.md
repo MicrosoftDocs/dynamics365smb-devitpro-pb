@@ -101,7 +101,7 @@ The **SL Historical Snapshot** will run as a background process after the migrat
 - [Run data upgrade](migration-data-upgrade-SL.md)
 - [Complete cloud migration](migration-finish-SL.md)  
 
-## See also
+## Related information
 
 [Dynamics SL migration to Business Central online: End-to-end overview](migrate-SL-overview.md)  
 [Compare Work in Dynamics SL to Business Central](migrate-dynamics-SL-videos.md)  

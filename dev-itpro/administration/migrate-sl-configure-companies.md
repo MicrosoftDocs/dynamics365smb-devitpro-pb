@@ -16,7 +16,7 @@ The Business Central cloud migration tools for Dynamics SL include the **SL Comp
 Complete this task after you set up cloud migration and before you replicate data.
 
 For an overview of the full end-to-end process for Dynamics SL cloud migration, go [here](migrate-sl-overview.md#end-to-end-process).
-
+ 
 ## Prerequisites
 
 [Run cloud migration setup](migration-setup-SL.md).
@@ -37,7 +37,7 @@ The steps in this section configure the data migration globally for all companie
 
 1. **Set the dimensions**.
 
-   To assign default dimensions for the companies you're migrating, select the **Dimension 1** and **Dimension2** values in the **Per Company**for each company you are migrating. You must go to the **Per Company** section of the page and set the dimensions manually for these companies. **Dimension 1** and **Dimension2** are selected from the Dynamics SL subaccount segments. that you want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions.  [Learn more about Dimensions](/../../../../../BC/docs-bc/main/business-central/finance-dimensions.md)
+   To assign default dimensions for the companies you're migrating, select the **Dimension 1** and **Dimension2** values in the **Per Company** for each company you're migrating. You must go to the **Per Company** section of the page and set the dimensions manually for these companies. **Dimension 1** and **Dimension2** are selected from the Dynamics SL subaccount segments. that you want to use as the global dimensions in Business Central. The remaining segments are automatically set up as shortcut dimensions.  [Learn more about Dimensions](/../../../../../BC/docs-bc/main/business-central/finance-dimensions.md)
 
 1. **Modules**: Choose the modules to migrate.
 

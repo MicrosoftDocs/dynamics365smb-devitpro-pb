@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003
-ms.date: 12/1/2024
+ms.date: 12/13/2024
 ms.author: jswymer
 ms.custom: bap-template
 ---
@@ -29,7 +29,7 @@ The following figure illustrates the main components involved in the data migrat
 |Component|Description|
 |-|-|
 |**On-premises database**|This database is the on-premises SQL Server database that stores business data for the companies to migrate to the cloud. |
-|**Azure Data Factory**|A key component of the data migration is [Azure Data Factory](/azure/data-factory/introduction). Azure Data Factory is a managed cloud service that's built for migrating large amounts raw data across data sources and controlling data integration projects. Azure Data Factory migrates the data between on-premises and online directly. In other words, it doesn't look at any permissions within the applications you're transferring data between&mdash;only SQL permissions.|
+|**Azure Data Factory**|A key component of the data migration is [Azure Data Factory](/azure/data-factory/introduction). Azure Data Factory is a managed cloud service that's built for migrating large amounts of raw data across data sources and controlling data integration projects. Azure Data Factory migrates the data between on-premises and online directly. In other words, it doesn't look at any permissions within the applications you're transferring data between&mdash;only SQL permissions.|
 |**Pipelines**|Pipelines are the main elements of Azure Data Factory. Pipelines are groupings of activities that copy, move, and transform data, and also orchestrate its flow.|
 |Integration Runtime|The Integration Runtime component is the compute infrastructure of Azure Data Factory. There are two Integration Runtime instances in the end-to-end process. The first instance securely copies data from on-premises to the cloud, where the pipelines are created. If the on-premises database is an SQL Server database, you use a self-hosted integration runtime. This runtime is installed locally on the on-premises network and registered in Azure Data Factory.|
 |**Online database**|This database is the Azure SQL Database of the Business Central environment to which you're migrating data.|
@@ -38,7 +38,7 @@ The following figure illustrates the main components involved in the data migrat
 
 In general, the cloud migration tool migrates the following data:
 
-- System and company setup, accounting periods (Dynamics SL Fiscal periods), tax areas, (Dynamics SL Tax Groups), and locations (Dynamics SL Inventory Sites)
+- System and company setup, accounting periods (Dynamics SL Fiscal periods), tax areas (Dynamics SL Tax Groups), and locations (Dynamics SL Inventory Sites)
 - Master data for accounts, customers, vendors, and items
 - Open Document amounts for customers and vendors
 - Account balances by period
@@ -61,12 +61,12 @@ This section outlines the general process or phases you go through to migrate da
 
 1. **Migration Assessment**
 
-   Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. To help you, we offer the Analysis and Repair tools delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs and detects potential migration issues based on your Dynamics SL system structure.  The Dynamics SL Analysis and Dynamics SL Repair tools are available to download and complete from GitHub.  Here is the URL: 
+   Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. To help you, we offer the Analysis and Repair tools delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs and detects potential migration issues based on your Dynamics SL system structure.  The Dynamics SL Analysis and Dynamics SL Repair tools are available to download and complete from GitHub. Here's the URL: 
 
    [BCTech/Samples/DynamicsSLMigrationTools/Analysis and Repair Tool at master · microsoft/BC Tech](https://github.com/microsoft/BCTech/tree/master/samples/DynamicsSLMigrationTools/Analysis%20and%20Repair%20Tool)
 
    - The **Analysis Tool** connects to a Microsoft Dynamics SL database and generates an analysis report text file.
-   - The report outlines and provides an overview of the modules in use and examines the data that can be migrated to D365 BC.
+   - The report outlines and provides an overview of the modules in use and examines the data that can be migrated to Business Central.
    - Analysis Report information example:
      - Microsoft Dynamics SL version
      - Microsoft SQL version
@@ -76,7 +76,7 @@ This section outlines the general process or phases you go through to migrate da
        - Records in transaction tables
 
    - The **Repair Tool** connects to a Microsoft Dynamics SL database.
-     - The Repair tool is used to validate Microsoft Dynamics SL data to identify any issues that require repair before using the online D365 BC tool to migrate Microsoft Dynamics SL data to Microsoft Dynamics Business Central.
+     - The Repair tool is used to validate Microsoft Dynamics SL data to identify any issues that require repair before using the online Business Central tool to migrate Microsoft Dynamics SL data to Microsoft Dynamics Business Central.
      - Repair Tool:
        - Includes automated fixes to the Microsoft Dynamics SL data.
        - Includes repair items that need to be addressed.
@@ -162,7 +162,7 @@ If you don't want data in [!INCLUDE[prod_short](../developer/includes/prod_short
 
 Once the cloud migration is set up and underway, the data that you can enter in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant is limited to data that isn't included in data migration from on-premises. Otherwise, any data that was written to the tenant database would be continuously overwritten during the migration process.  
 
-To make setting up this read-only tenant more efficient, we created the <!--*Intelligent Cloud* user group and the-->*Intelligent Cloud* Permission Set. Once the cloud migration environment is configured, existing users in the online tenant who don't have SUPER permissions are automatically assigned to the *Intelligent Cloud* <!--user group--> Permission Set. Only users with SUPER permissions will be allowed to make modifications to the system at this point. If you add any online users later, make sure you assign themthe *Intelligent Cloud* Permission Set. They're not assigned automatically.
+To make setting up this read-only tenant more efficient, we created the <!--*Intelligent Cloud* user group and the-->*Intelligent Cloud* Permission Set. Once the cloud migration environment is configured, existing users in the online tenant who don't have SUPER permissions are automatically assigned to the *Intelligent Cloud* <!--user group--> Permission Set. Only users with SUPER permissions will be allowed to make modifications to the system at this point. If you add any online users later, make sure you assign them the *Intelligent Cloud* Permission Set. They're not assigned automatically.
 
 > [!NOTE]  
 > Before you configure a connection from on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, make sure that at least one user in each company is assigned SUPER permissions.  
@@ -172,7 +172,7 @@ Users that are reassigned to the *Intelligent Cloud* <!--user group--> Permissio
 > [!WARNING]
 > If you grant insert, modify or delete permissions to any resource in the application that was set to read-only, it could have a negative impact on the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you may have to clear all your data and rerun a full migration to correct this.
 
-## See also
+## Related information
 
 [FAQ about Migrating to the Cloud from on-premises Solutions](faq-migrate-data.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  

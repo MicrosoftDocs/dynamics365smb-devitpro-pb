@@ -5,7 +5,7 @@ author: lcontreras
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: conceptual 
-ms.date: 11/14/2024
+ms.date: 12/13/2024
 ms.custom: bap-template 
 ---
 # Upgrade data for Dynamics SL cloud migration
@@ -22,7 +22,7 @@ You ran data replication on the company or companies that you're migrating to th
 
 ## Prepare
 
-Once you start the data upgrade on an environment, all client connections are terminated. You can't reconnect until the upgrade process has completed. Also, hotfixes can't be applied and scheduled tasks can't be run. This behavior means data upgrade is the only process running on the environment, which helps prevent potentials database locks and errors.
+Once you start the data upgrade on an environment, all client connections are terminated. You can't reconnect until the upgrade process completes. Also, hotfixes can't be applied and scheduled tasks can't be run. This behavior means data upgrade is the only process running on the environment, which helps prevent potentials database locks and errors.
 
 Inform any active Business Central online users to finish what they're doing and sign out.
 
@@ -40,7 +40,7 @@ Inform any active Business Central online users to finish what they're doing and
 
 [Complete cloud migration](migration-finish-SL.md).  
 
-## See also
+## Related information
 
 [Dynamics SL migration to Business Central online: End-to-end overview](migrate-SL-overview.md)  
 [Compare Work in Dynamics SL to Business Central](migrate-dynamics-SL-videos.md)  

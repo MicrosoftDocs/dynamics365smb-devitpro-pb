@@ -1,5 +1,5 @@
 ---
-title: for Dynamics SL cloud migration
+title: Run and manage data replication for Dynamics SL cloud migration
 description: This article explains how to run data replication to move data from Dynamics SL on-premises database to Business Central on line.
 author: lcontreras
 ms.author: jswymer
@@ -28,7 +28,7 @@ Follow these steps to replicate data to the online tenant.
 1. Search for and open the **Cloud Migration Management** page.
 2. On the **Cloud Migration Management** page, select one of the following actions:
 
-   - **Run data replication** > **Yes** if you're migrating from Dynamics SL on-premise.
+   - **Run data replication** > **Yes** if you're migrating from Dynamics SL on-premises.
    - This step starts replicating data to the online tenant.
 3. If the data replication starts, you get a message that the cloud migration was successfully started. Select **OK** to continue.
 4. Monitor the progress on the **Cloud Migration Management** page by following entries in the **Migration Log** list and changes in the status fields at the top of the page.
@@ -45,7 +45,7 @@ The **Cloud Migration Management** page gives you access to details about the da
 
 ## Troubleshoot and fix problems
 
-If errors occur during data replication, fix them then rerun the data replication. For more information about some common errors, refer to the [Cloud migration troubleshooting documentation for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) in Microsoft troubleshooting documentation.
+If errors occur during data replication, fix them then rerun the data replication. Learn more about some common errors at [Cloud migration troubleshooting documentation for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central) in Microsoft troubleshooting documentation.
 
 When you're ready to run the data replication again, select **Run data replication**. In general, only data changed since the last replication is replicated. To learn more, go to [Rerunning data replication](migration-data-replication.md#rerunning-data-replication).
 
@@ -53,7 +53,7 @@ When you're ready to run the data replication again, select **Run data replicati
 
 You can stop the data replication before it finishes. When stopped, any data that has been migrated remains in the online database.  
 
-To stop the currently running data replication, select the **Abandon migration** or **Pause migration**, enter reason, then select **Finish**.  The process can't be stopped while in the middle of replicating a table, so the action waits until the current table has been replicated, then it stops the process.
+To stop the currently running data replication, select the **Abandon migration** or **Pause migration**, enter reason, then select **Finish**. The process can't be stopped while in the middle of replicating a table, so the action waits until the current table has been replicated, then it stops the process.
 
 ## Next steps
 
@@ -67,7 +67,7 @@ For Dynamics SL migration:
 - [Run data upgrade for Dynamics SL](migration-data-upgrade-SL.md)
 - [Complete Dynamics SLcloud migration](migration-finish-SL.md)
 
-## See also
+## Related information
 
 [Dynamics SL migration to Business Central online: End-to-end overview](migrate-SL-overview.md)  
 [FAQ about migrating to Business Central online from on-premises solutions](faq-migrate-data.md)

@@ -5,7 +5,7 @@ author: lcontreras
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 02/19/2024
+ms.date: 12/13/2024
 ms.custom: bap-template 
 ---
 # Prepare and plan for cloud migration from Dynamics SL
@@ -15,14 +15,14 @@ This article provides recommendations to help you define your cloud migration st
 ## Run migration assessment tool
 
 The **Migration Assessment Tool** delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs, and detects potential migration issues based on your Dynamics SL system structure.
-The Dynamics SL Analysis and Dynamics SL Repair tools are available to download and complete from GitHub. Here is the URL:
+The Dynamics SL Analysis and Dynamics SL Repair tools are available to download and complete from GitHub. Here's the URL:
 
 [BCTech/Samples/DynamicsSLMigrationTools/Analysis and Repair Tool at master · microsoft/BC Tech ](https://github.com/microsoft/BCTech/tree/master/samples/DynamicsSLMigrationTools/Analysis%20and%20Repair%20Tool)
 
 The details on how to compile and use the files are included in GitHub.
 
 - The **Analysis Tool** connects to a Microsoft Dynamics SL database and generates an analysis report text file.
-  - The report outlines and provides an overview of the modules in use and examines the data that can be migrated to D365 BC.
+  - The report outlines and provides an overview of the modules in use and examines the data that can be migrated to Business Central.
   - Analysis Report information example:
     - Microsoft Dynamics SL version
     - Microsoft SQL version
@@ -32,7 +32,7 @@ The details on how to compile and use the files are included in GitHub.
       - Records in transaction tables
 
   - The **Repair Tool** connects to a Microsoft Dynamics SL database.
-    - The Repair tool is used to validate Microsoft Dynamics SL data to identify any issues that require repair before using the online D365 BC tool to migrate Microsoft Dynamics SL data to Microsoft Dynamics Business Central.
+    - The Repair tool is used to validate Microsoft Dynamics SL data to identify any issues that require repair before using the online Business Central tool to migrate Microsoft Dynamics SL data to Microsoft Dynamics Business Central.
     - Repair Tool:
       - Includes automated fixes to the Microsoft Dynamics SL data.
       - Includes repair items that need to be addressed.

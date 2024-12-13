@@ -34,12 +34,12 @@ The **Cloud Migration Management** page in the web client is a central hub for m
 |Action   |Description|
 |---------|---------|
 |**Configure SL Migration**|Configure migration settings for migrating company data in Dynamics SL. [Learn more](migrate-SL-configure-companies.md)|
-|**Run data replication**|Choose this action to start the data migration manually. The migration can also be used for subsequent runs after the initial migration. On subsequent runs, the migration tool only migrates changes that happened since the previous migration was run. Change tracking is used to identify what data should be moved in those |
+|**Run data replication**|Choose this action to start the data migration manually. The migration can also be used for subsequent runs after the initial migration. On subsequent runs, the migration tool only migrates changes that happened since the previous migration was run. Change tracking is used to identify what data should be moved in those tables. |
 |**Run Data Upgrade Now**|Choose this action to upgrade data. [Learn more](migration-data-upgrade-sl.md)|
 |**Refresh Status** |If a migration run is in progress, you can choose to refresh status to update the page. If the run is complete, the status updates using the refresh status action without having to close the window and reopen it.|
 |**Complete migration menu - Complete migration**| Completes cloud migration setup.|
 |**Pause migration**| Pauses cloud migration. Use this action if you want to continue cloud migration in the future.|
-|**Abandon migration**| Abandons cloud migration. Use this action if you do not want to restart the cloud migration in the future.|
+|**Abandon migration**| Abandons cloud migration. Use this action if you don't want to restart the cloud migration in the future.|
 |**Manage custom tables**| Open the **Migration Table Mapping** page. Displays the source table name from Dynamics SL and the Business Central table name.|
 |**Actions** |The **Actions** menu gives you access to action options related to the Dynamics SL Migration process.|
 
@@ -51,7 +51,7 @@ The **Cloud Migration Management** page in the web client is a central hub for m
 - [Run data upgrade](migration-data-upgrade-SL.md)
 - [Complete cloud migration](migration-finish-SL.md)  
 
-## See also
+## Related information
 
 [Dynamics SL migration to Business Central online: End-to-end overview](migrate-SL-overview.md)  
-[FAQ about migrating to Business Central online from on-premise solutions](faq-migrate-data.md)  
+[FAQ about migrating to Business Central online from on-premises solutions](faq-migrate-data.md)  
