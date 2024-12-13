@@ -103,7 +103,7 @@ When this step is completed, you can continue to update your Business Central so
 
 [!INCLUDE[upgrade-copy-configuration-files](../developer/includes/upgrade-copy-configuration-files.md)]
 
-## Task 1: Prepare existing databases
+### Prepare existing databases
 
 1. Back up your databases.
 
@@ -157,7 +157,7 @@ When this step is completed, you can continue to update your Business Central so
     Dismount-NAVTenant -ServerInstance $BcServerInstance -Tenant $TenantId
     ```
 
-## Task 2: Install Business Central components
+## Task 1: Install Business Central components
 
 From the installation media (DVD), run setup.exe to uninstall the current Business Central components and install the Business Central components included in the update. 
 
@@ -192,7 +192,7 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 3: Convert existing database to new platform
+## Task 1: Convert existing database to new platform
 
 Follow the next few tasks to convert your database to the new platform of the update. A multitenant deployment includes the application and tenant databases. Running the database conversion will:
 
@@ -243,7 +243,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     >
     > You'll see this message if you ran the cmdlet without the `-Force` parameter. Run the cmdlet again, but be sure to include `-Force` parameter.
 
-## Task 4: Connect server instance to database
+## Task 3: Connect server instance to database
 
 1. (Multitenant only) Enable the server instance as a multitenant instance:
 
@@ -265,7 +265,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     Restart-NAVServerInstance -ServerInstance $BcServerInstance
     ```
 
-## <a name="UploadLicense"></a>Task 5: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+## <a name="UploadLicense"></a>Task 4: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
 To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
 
@@ -364,7 +364,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Restart-NAVServerInstance -ServerInstance $BcServerInstance
     ```
 
-## Task 7: Synchronize tenant
+## Task 5: Synchronize tenant
 
 Synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -435,7 +435,7 @@ Synchronize the tenant's database schema with any schema changes in the applicat
     Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "<extension name>" -Version <extension version>
     ```
 
-## Task 8: Upgrade data
+## Task 6: Upgrade data
 
 In this task, you run a data upgrade for extensions.
 
@@ -708,7 +708,7 @@ If the old solution used third-party extensions, and you still want to use them,
 
 As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.-->
 
-## Task 9: Post upgrade
+## Task 7: Post upgrade
 
 ### <a name="controladdins"></a>Upgrade control add-ins
 
