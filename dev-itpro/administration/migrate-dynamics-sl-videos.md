@@ -2,12 +2,11 @@
 title: Compare Work in Dynamics SL to Business Central
 description: Get some tips and tricks for how to do things in Business Central online that you currently do in Dynamics SL.
 author: lcontreras
-
 ms.topic: conceptual
 ms.devlang: al
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge, SL, migration, video
-ms.date: 11/14/2024
+ms.date: 12/13/2024
 ms.author: jswymer
 ---
 
@@ -108,7 +107,7 @@ This video compares the process of using posting accounts and posting groups in 
 
 > [!Video https://www.youtube.com/embed/XJ0JHHQ7GzA?si=kXqiVn_lqw90GHq5]
 
-## See also
+## Related information
 
-[Migrate Dynamics SL Data to the Cloud](migrate-dynamics-SL.md)  
-[Migrate On-Premises Data to Business Central Online](migrate-data.md)
+[Migrate Dynamics SL data to the Cloud](migrate-dynamics-SL.md)  
+[Migrate on-premises data to Business Central Online](migrate-data.md)
