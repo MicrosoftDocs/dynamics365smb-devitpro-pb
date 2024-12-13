@@ -429,6 +429,27 @@
 ##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
 #### Finish cloud migration
 ##### [Complete cloud migration](administration/migration-finish-gp.md)
+### Migrate from Dynamics SL
+#### Overview
+##### [End-to-end process](administration/migrate-sl-overview.md)
+##### [Dynamics SL data migrated to Business Central](administration/migrate-dynamics-sl.md)
+##### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-sl-videos.md)
+##### [Managing cloud migration](administration/migration-manage-sl.md)
+#### Prepare
+##### [Plan cloud migration](administration/cloud-migration-plan-prepare-sl.md)
+##### [Prerequisites](administration/cloud-migration-prerequisites-sl.md)
+#### Set up cloud migration
+##### [Cloud migration setup overview](administration/migration-setup-overview.md)
+##### [Retain permissions (optional)](administration/migration-retain-permissions-sl.md)
+##### [Run cloud migration setup](administration/migration-setup-sl.md)
+##### [Configure Dynamics SL company migration](administration/migrate-sl-configure-companies.md)
+#### Replicate data
+##### [Data replication overview](administration/migration-data-replication.md)
+##### [Run data replication](administration/migrate-data-replication-run-sl.md)
+#### Upgrade data
+##### [Run data upgrade](administration/migration-data-upgrade-sl.md)
+#### Finish cloud migration
+##### [Complete cloud migration](administration/migration-finish-sl.md)
 ### [FAQ](administration/faq-migrate-data.md)
 ### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->
