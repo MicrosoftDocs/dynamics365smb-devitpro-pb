@@ -1,21 +1,19 @@
 ---
-title: Run and manage data replication
-description: This article explains how to run data replication to move data from Business Central on-premises database to on line.
+title: for Dynamics SL cloud migration
+description: This article explains how to run data replication to move data from Dynamics SL on-premises database to Business Central on line.
 author: lcontreras
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
-ms.date: 11/14/2024
+ms.date: 12/13/2024
 ms.custom: bap-template 
 ---
 
-# Run and manage data replication
+# Run and manage data replication for Dynamics SL cloud migration
 
 This article explains how to run data replication to move data from on-premises database to your online environment. To learn more about the mechanics behind data replication, go to [Data replication overview](migration-data-replication.md).
 
-[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process.md)]
-
-[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-SL    .md)]
+[!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-SL.md)]
 
 ## Prerequisites
 
