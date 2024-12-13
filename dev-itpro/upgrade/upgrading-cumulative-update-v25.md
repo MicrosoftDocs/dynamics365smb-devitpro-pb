@@ -107,9 +107,9 @@ When this step is completed, you can continue to update your Business Central so
 
 1. Back up your databases.
 
-2. Run the [!INCLUDE[admin shell](../developer/includes/adminshell.md)] as an administrator.
+1. Run the [!INCLUDE[admin shell](../developer/includes/adminshell.md)] as an administrator.
 
-3. (Single-tenant only) Uninstall all extensions from the all tenants.
+1. (Single-tenant only) Uninstall all extensions from the all tenants.
 
     In this step, you uninstall the Base Application, System Application (if used), and any other extensions that are currently installed on the database.
 
@@ -123,7 +123,7 @@ When this step is completed, you can continue to update your Business Central so
         Get-NAVAppInfo -ServerInstance $BcServerInstance
         ``` 
 
-    2. Uninstall the extensions.
+    1. Uninstall the extensions.
 
         To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.
 
@@ -139,7 +139,7 @@ When this step is completed, you can continue to update your Business Central so
         Get-NAVAppInfo -ServerInstance $BcServerInstance -Tenant $TenantId | % { Uninstall-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name $_.Name -Version $_.Version -Force}
         ```
 
-4. Unpublish the existing system symbols.
+1. Unpublish the existing system symbols.
 
     To unpublish the system symbols, use the [Unpublish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp) as follows:
 
@@ -149,7 +149,7 @@ When this step is completed, you can continue to update your Business Central so
 
     [What are symbols?](upgrade-overview-v15.md#Symbols).
 
-5. (Multitenant only) Dismount the tenants from the application database.
+1. (Multitenant only) Dismount the tenants from the application database.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
@@ -192,7 +192,7 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## PLATFORM UPDATE
+## Convert existing database to new platform
 
 Follow the next few tasks to convert your database to the new platform of the update. A multitenant deployment includes the application and tenant databases. Running the database conversion will:
 
@@ -202,13 +202,11 @@ Follow the next few tasks to convert your database to the new platform of the up
 
 Also, to ensure that the existing published extensions work on the new platform, you'll recompile the extensions.
 
-## Convert existing database to new platform
-
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
    [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
-   
-2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the database conversion to the new platform.
+
+1. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the database conversion to the new platform.
 
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $TenantDatabase|$ApplicationDatabase -Force
@@ -253,7 +251,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     Set-NAVServerConfiguration -ServerInstance $BcServerInstance -KeyName Multitenant -KeyValue true
     ```
 
-2. Connect the server instance to connect to the database.
+1. Connect the server instance to connect to the database.
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance $BcServerInstance -KeyName DatabaseName -KeyValue $ApplicationDatabase
@@ -261,7 +259,7 @@ Also, to ensure that the existing published extensions work on the new platform,
 
     In a multitenant deployment, the database is the application database. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-3. Restart the server instance.
+1. Restart the server instance.
 
     ```powershell
     Restart-NAVServerInstance -ServerInstance $BcServerInstance
@@ -278,26 +276,89 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## <a name="repair"></a>Recompile published extensions
+## Publish new extensions
 
-Compile all published extensions against the new platform.
+In this task, you publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
 
-> [!NOTE]
-> If you plan on updating the application you can skip this step for extensions for which you have new versions built on the new platform. For example, this includes Microsoft extensions that are on the DVD.  
+Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
-1. To compile an extension, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 25 that you started in the previous task.
 
-    ```powershell  
-    Repair-NAVApp -ServerInstance $BcServerInstance -Name $ExtName -Version $ExtVersion
+1. Publish the **System Application** extension (Microsoft_System Application.app).
+
+    You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $BcServerInstance -Path $SystemAppPath
     ```
 
-    To compile all published extensions at once, you can use this command:
+    [What is the System Application?](upgrade-overview-v15.md#SystemApplication)
+1. Publish the Business Foundation extension (Microsoft_Business Foundation.app).
 
-    ```powershell  
-    Get-NAVAppInfo -ServerInstance $BcServerInstance | Repair-NAVApp  
+    You find the Microsoft_Business Foundation.app in the **Applications\BusinessFoundation\Source** folder of installation media (DVD).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $BcServerInstance -Path $BusFoundAppPath
     ```
 
-2. Restart the server instance.
+1. Publish the Business Central base application extension (Microsoft_Base Application.app).
+
+    The **Base Application** extension contains the application business objects. You find the (Microsoft_Base Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $BcServerInstance -Path $BaseAppPath
+    ```
+
+1. Publish the Microsoft_Application extension.
+
+    For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $BcServerInstance -Path $ApplicationAppPath
+    ```
+
+1. Publish the new versions of Microsoft extensions.
+
+    In this step, you publish new versions of Microsoft extensions that were used on your old deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $BcServerInstance -Path "<path to Microsoft extension>"
+    ```
+
+    For example:
+
+    ```powershell
+    Publish-NAVApp -ServerInstance BC250 -Path "C:\W1DVD\Applications\ReportLayouts\Source\Microsoft__Exclude_ReportLayouts.app"
+    ```
+
+    > [!NOTE]
+    > A new extension for report layouts, called **_Exclude_ReportLayouts**, was added in version 20. If you're coming from a version earlier than version 20, make sure to publish and install this extension to get the latest report layout features described at [Get Started Creating Report Layouts](/dynamics365/business-central/ui-get-started-layouts).
+
+1. Publish new versions of non-Microsoft extensions. Be sure to include new extensions that contain custom permission sets as AL objects.
+
+    If you have new versions of these extensions, built on the Business Central version 25, then publish the new versions.  
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $BcServerInstance -Path "<path to extension>"
+    ```
+
+1. Recompile extensions not built on version 25.2
+
+    [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
+
+    Do this step for any published extension versions that aren't built on version 25, and you want to reinstall on tenants. These extensions must be recompiled to work with version 25. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
+
+    ```powershell  
+    Repair-NAVApp -ServerInstance $BcServerInstance -Name <extension name> -Version <extension name>
+    ```
+
+    For example, to recompile all non-Microsoft extensions, you can run the following command:
+
+    ```powershell  
+    Get-NAVAppInfo -ServerInstance $BcServerInstance | Where-Object {$_.Publisher -notlike 'Microsoft'} | Repair-NAVApp
+    ```
+
+    Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
 
     ```powershell
     Restart-NAVServerInstance -ServerInstance $BcServerInstance
@@ -305,26 +366,129 @@ Compile all published extensions against the new platform.
 
 ## Synchronize tenant
 
-1. (Multitenant only) Mount the tenant to the new Business Central Server instance.
+Synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
 
-    You'll have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
+1. (Multitenant only) Mount the tenant to the version 20 server instance.
 
-    ```powershell  
-    Mount-NAVTenant -ServerInstance $BCServerInstanceName -DatabaseName $TenantDatabase -Tenant $TenantId 
+    To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
+
+    ```powershell
+    Mount-NAVTenant -ServerInstance $BcServerInstance -DatabaseName $TenantDatabase -DatabaseServer $DatabaseServer -Tenant $TenantId -AllowAppDatabaseWrite
     ```
 
-2. Synchronize the tenant.
-  
+    > [!IMPORTANT]
+    > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you'll get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
+    >
+    > For upgrade, set the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
+
+    At this stage, the tenant state is OperationalWithSyncPending.
+1. Synchronize the tenant with the application database.
+
     Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
 
     ```powershell  
-    Sync-NAVTenant -ServerInstance $BcServerInstance -Tenant $TenantId -Mode Sync
+    Sync-NAVTenant -ServerInstance $BcServerInstance -Mode Sync -Tenant $TenantId
     ```
 
     For a single-tenant deployment, you can either set the `$TenantId` to `default` or omit the `-Tenant $TenantId` parameter. For more information about syncing, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
-> [!NOTE]
-> At this point, if you want to update the application, you can skip the next step and proceed [APPLICATION](#Application).
+1. Synchronize the tenant with the **System Application** extension. 
+
+    Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "System Application" -Version $NewBCVersion
+    ```
+
+    Replace `$NewBCVersion` with the exact version of the published System Application. To get the version, you can use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
+
+1. Synchronize the tenant with the Business Foundation extension.
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Business Foundation" -Version $NewBCVersion
+    ```
+
+   Replace `$NewBCVersion` with the exact version of the published Base Application.
+
+1. Synchronize the tenant with the Business Central Base Application extension.
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Base Application" -Version $NewBCVersion
+    ```
+
+   Replace `$NewBCVersion` with the exact version of the published Base Application.
+
+   > [!IMPORTANT]
+   > If you're upgrading a Czech (CZ) language version, you must use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. For more information, go to [Removed table fields in base application cause sync errors](known-issues.md#removed-table-fields-in-the-czech-cz-base-application-cause-sync-errors).
+
+1. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension.
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "Application" -Version $NewBCVersion
+    ```
+
+1. Synchronize the tenant with Microsoft and non-Microsoft extensions.
+
+    For each extension, run the Sync-NAVApp cmdlet:
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "<extension name>" -Version <extension version>
+    ```
+
+## Upgrade data
+
+In this task, you run a data upgrade for extensions.
+
+#### Single tenant
+
+Run the data upgrade/installation on extensions in order of dependency: System Application, Business Foundation, Base Application, Application.
+
+1. Run the data upgrade for the System Application.
+
+    To run the data upgrade, use the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
+
+    ```powershell
+    Start-NAVAppDataUpgrade -ServerInstance $BcServerInstance -Name "System Application" -Version $NewBCVersion
+    ```
+
+    This step automatically installs the new system application on the tenant.
+1. Install the Business Foundation extension. The Base Application has a dependency on this app, so it must be installed before you can upgrade the Base Application. 
+
+   To install the  Business Foundation extension, use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) cmdlet:
+
+    ```powershell
+    Install-NAVApp -ServerInstance $BcServerInstance -Name "Business Foundation" -Version $NewBCVersion
+    ```
+
+1. Run the data upgrade for the Base Application, followed by Application extension.
+
+    ```powershell
+    Start-NAVAppDataUpgrade -ServerInstance $BcServerInstance -Name "Base Application" -Version $NewBCVersion
+    ```
+
+    ```powershell
+    Start-NAVAppDataUpgrade -ServerInstance $BcServerInstance -Name "Application" -Version $NewBCVersion
+    ```
+
+    This step automatically installs the new versions of these extensions on the tenant.
+
+1. Upgrade the new versions of Microsoft extensions and non-Microsoft extensions.
+
+    Upgrade any Microsoft and non-Microsoft extensions that are used in the old deployment to new versions found on the installation media. The new versions are in the **Application** folder of the DVD. There's a folder for each extension. The extension package (.app file) is in the **Source** folder.
+
+    For each extension, run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade). First, run the data upgrade for the Application extension, then run it for other Microsoft and non-Microsoft extensions. 
+
+    This step also automatically installs the new extension version on the tenant.
+
+#### Multitenant
+
+On each tenant, run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:
+
+```powershell
+Start-NAVDataUpgrade -ServerInstance $BcServerInstance -Tenant $TenantId -FunctionExecutionMode Serial -SkipAppVersionCheck
+```
+
+This command upgrades and installs the extensions on the tenant.
 
 ## (Single-tenant only) Reinstall extensions
 
@@ -340,7 +504,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
 
     Replace `$ExtVersion` with the exact version of the published System Application.
 
-2. Install the Base Application.
+1. Install the Base Application.
 
     ```powershell
     Install-NAVApp -ServerInstance $BcServerInstance -Name "Base Application" -Version $ExtVersion
@@ -348,7 +512,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
 
     Replace `$ExtVersion` with the exact version of the published Base Application.
 
-3. Install the Application extension as needed.
+1. Install the Application extension as needed.
 
     ```powershell
     Install-NAVApp -ServerInstance $BcServerInstance -Name "Application" -Version $ExtVersion
@@ -356,7 +520,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
 
     Replace `$ExtVersion` with the exact version of the published Application extension.
 
-4. Install other extensions, including Microsoft and third-party extensions.
+1. Install other extensions, including Microsoft and third-party extensions.
 
     ```powershell
     Install-NAVApp -ServerInstance $BcServerInstance -Name $ExtName -Version $ExtVersion
@@ -377,6 +541,7 @@ You publish the System Application extension only if it was used in old solution
 > [!NOTE]
 > If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).-->
 
+<!--
 ## Upgrade System Application
 
 Follow these steps if your existing solution uses the Microsoft System Application. Otherwise, you can skip this procedure.
@@ -539,7 +704,7 @@ Complete these steps for each Microsoft extension that you want to upgrade.
 
 If the old solution used third-party extensions, and you still want to use them, they must be compiled to work on the new platform. For more information, see [Recompile published extensions](#repair). You then reinstall the extensions on tenants using the Install-NAVApp cmdlet.
 
-As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.
+As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.-->
 
 ## Post upgrade
 
