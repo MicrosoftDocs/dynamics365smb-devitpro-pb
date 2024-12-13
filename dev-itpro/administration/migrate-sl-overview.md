@@ -119,7 +119,7 @@ This section outlines the general process or phases you go through to migrate da
 
    At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. Once the data replicates to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-   To get started, go to [Replicate data](migration-data-replication-SL.md).
+   To get started, go to [Replicate data](migration-data-replication-SL.md). <!--broken-->
 
 1. **Data upgrade**
 

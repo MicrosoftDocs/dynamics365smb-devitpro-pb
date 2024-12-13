@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: overview 
 ms.collection: 
-ms.date: 11/14/2024
+ms.date: 12/13/2024
 ms.custom: bap-template
 ---
 
@@ -24,7 +24,7 @@ The **Cloud Migration Management** page in the web client is a central hub for m
 - Above the **Migration Log**, fields provide details the number of successfully migrated tables. By selecting a field, you can drill down to view more details and guidance on how to correct any errors.
 - The **Migration Information** tiles, as illustrated in the following figure, show the number of migrated tables and the number of tables that didn't migrate due to warnings or errors. Select a tile to drill into more details and guidance to correct any errors. There's also a tile that shows tables that aren't migrated due to problems with the data. For example, tables with permissions aren't migrated from on-premises solutions because permissions work differently between online and on-premises.
 
-   ![Shows the flow for cloud migration setup ](../developer/media/SL-migration-management.png)
+   ![Shows the flow for cloud migration setup ](../media/SL-migration-management.png)
 
 ## Available actions
 
