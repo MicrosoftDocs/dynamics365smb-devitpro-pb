@@ -7,8 +7,8 @@ ms.devlang: al
 ms.reviewer: 
 ms.search.keywords: cloud, edge, SL, migration
 ms.search.form: 4003
-ms.date: 11/14/2024
-ms.author: 
+ms.date: 12/14/2024
+ms.author: jswymer
 ---
 # Dynamics SL data migrated to Business Central online
 
@@ -24,7 +24,7 @@ The account number in Business Central is mapped from the account in Dynamics SL
 
 Let us look at an example of an account from Dynamics SL, using the year 2022 as an example:
 
-:::image type="content" source="images/SL_Data_migration_Fiscal_Info-01.png" alt-text="Chart of Accounts master records":::
+:::image type="content" source="../media/SL_Data_migration_Fiscal_Info-01.png" alt-text="Chart of Accounts master records":::
 
 The migration creates two accounts in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], number 1100 and number 4000. New dimensions are also added with the names 00, and 01. General journal transactions are created as follows:
 
