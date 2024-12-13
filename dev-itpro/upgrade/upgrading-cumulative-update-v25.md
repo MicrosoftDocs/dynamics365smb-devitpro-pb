@@ -56,6 +56,9 @@ The application includes AL extensions that define the objects and code that mak
 
 A platform update doesn't change the application. It involves converting your databases to the new platform and recompiling the existing extensions to ensure that they're compatible with the new platform.
 
+> [!IMPORTANT]
+> A platfrom update from 25.1 or 25.0 to later versions isn't supported.
+
 An application update involves:
 
 - Publishing new versions of extensions that include the latest application modifications
@@ -276,9 +279,9 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## Task 6: Publish new extensions
+## Task 6: Publish new extension versions (application upgrade only)
 
-In this task, you publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
+In this task, you publish the new extension versions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -342,27 +345,29 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance $BcServerInstance -Path "<path to extension>"
     ```
 
-1. Recompile extensions not built on version 25.2
+## Task 5: Recompile extensions not built on new update version
 
-    [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
+Complete this task when you have extensions that aren't built on the Business Central version you're upgrading to. This step is required if you're doing a plaform update only. Otherwise, you can skip it.
 
-    Do this step for any published extension versions that aren't built on version 25, and you want to reinstall on tenants. These extensions must be recompiled to work with version 25. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
+[!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
 
-    ```powershell  
-    Repair-NAVApp -ServerInstance $BcServerInstance -Name <extension name> -Version <extension name>
-    ```
+Do this step for any published extension versions that aren't built on version 25, and you want to reinstall on tenants. These extensions must be recompiled to work with version 25. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
-    For example, to recompile all non-Microsoft extensions, you can run the following command:
+```powershell  
+Repair-NAVApp -ServerInstance $BcServerInstance -Name <extension name> -Version <extension name>
+```
 
-    ```powershell  
-    Get-NAVAppInfo -ServerInstance $BcServerInstance | Where-Object {$_.Publisher -notlike 'Microsoft'} | Repair-NAVApp
-    ```
+For example, to recompile all non-Microsoft extensions, you can run the following command:
 
-    Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
+```powershell  
+Get-NAVAppInfo -ServerInstance $BcServerInstance | Where-Object {$_.Publisher -notlike 'Microsoft'} | Repair-NAVApp
+```
 
-    ```powershell
-    Restart-NAVServerInstance -ServerInstance $BcServerInstance
-    ```
+Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
+
+```powershell
+Restart-NAVServerInstance -ServerInstance $BcServerInstance
+```
 
 ## Task 5: Synchronize tenant
 
@@ -492,7 +497,7 @@ This command upgrades and installs the extensions on the tenant.
 
 ---
 
-## (Single-tenant only) Reinstall extensions
+## Reinstall existing extensions (Single-tenant, platfrom update only)
 
 In this task, you reinstall the same extensions that were installed on the tenant before. If you're planning on updating the application, then skip this step.
 
