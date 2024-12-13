@@ -1,16 +1,16 @@
 ---
-title: Retain permissions
-description: Learn how to keep the permissions assigned to existing online users so they can continue to work as usual during cloud migration.
+title: Retain permissions during Dynamics SL cloud migration
+description: Learn how to keep the permissions assigned to existing online users so they can continue to work as usual during Dynamics SLcloud migration.
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 02/29/2024
+ms.date: 12/13/2024
 ms.custom: bap-template
 ---
-# Retain permissions during cloud migration
+# Retain permissions during Dynamics SL cloud migration
 
-By default, once you set up cloud migration, the migration engine removes all permission sets assigned to existing online users, except users with the SUPER permission set, and reassigns users to the Intelligent Cloud permission set. This change is done to prevent users, other than SUPER users, from making any data modifications.
+By default, once you set up cloud migration, the migration engine removes all permission sets assigned to existing online users, except users with the SUPER permis sion set, and reassigns users to the Intelligent Cloud permission set. This change is done to prevent users, other than SUPER users, from making any data modifications.
 
 However, you might want some users to keep their original permissions, for various reasons. For example, you want them to continue working on your data while it's being replicated, or you want to use service-to-service apps that require specific permissions.
 
