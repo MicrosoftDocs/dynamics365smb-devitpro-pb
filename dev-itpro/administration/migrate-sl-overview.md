@@ -31,7 +31,7 @@ The following figure illustrates the main components involved in the data migrat
 |**On-premises database**|This database is the on-premises SQL Server database that stores business data for the companies to migrate to the cloud. |
 |**Azure Data Factory**|A key component of the data migration is [Azure Data Factory](/azure/data-factory/introduction). Azure Data Factory is a managed cloud service that's built for migrating large amounts of raw data across data sources and controlling data integration projects. Azure Data Factory migrates the data between on-premises and online directly. In other words, it doesn't look at any permissions within the applications you're transferring data between&mdash;only SQL permissions.|
 |**Pipelines**|Pipelines are the main elements of Azure Data Factory. Pipelines are groupings of activities that copy, move, and transform data, and also orchestrate its flow.|
-|Integration Runtime|The Integration Runtime component is the compute infrastructure of Azure Data Factory. There are two Integration Runtime instances in the end-to-end process. The first instance securely copies data from on-premises to the cloud, where the pipelines are created. If the on-premises database is an SQL Server database, you use a self-hosted integration runtime. This runtime is installed locally on the on-premises network and registered in Azure Data Factory.|
+|**Integration Runtime**|The Integration Runtime component is the compute infrastructure of Azure Data Factory. There are two Integration Runtime instances in the end-to-end process. The first instance securely copies data from on-premises to the cloud, where the pipelines are created. If the on-premises database is an SQL Server database, you use a self-hosted integration runtime. This runtime is installed locally on the on-premises network and registered in Azure Data Factory.|
 |**Online database**|This database is the Azure SQL Database of the Business Central environment to which you're migrating data.|
 
 ### What data is migrated
@@ -44,7 +44,7 @@ In general, the cloud migration tool migrates the following data:
 - Account balances by period
 - Historical data
 
-The company data that is migrated is configurable as part of the cloud migration setup. To learn more, see [Configure Dynamics SL company migration](migrate-dynamics-SL.md).
+The company data that is migrated is configurable as part of the cloud migration setup. Learn more in [Configure Dynamics SL company migration](migrate-dynamics-SL.md).
 
 ### How data is migrated
 
@@ -61,7 +61,7 @@ This section outlines the general process or phases you go through to migrate da
 
 1. **Migration Assessment**
 
-   Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. To help you, we offer the Analysis and Repair tools delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs and detects potential migration issues based on your Dynamics SL system structure.  The Dynamics SL Analysis and Dynamics SL Repair tools are available to download and complete from GitHub. Here's the URL: 
+   Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. To help you, we offer the Dynamics SL Analysis and Dynamics SL Repair tools that deliver valuable insight into your overall readiness to migrate. The tools provide migration options based on your needs and detect potential migration issues based on your Dynamics SL system structure. The Dynamics SL Analysis and Dynamics SL Repair tools are available to download and complete from GitHub. Here's the URL: 
 
    [BCTech/Samples/DynamicsSLMigrationTools/Analysis and Repair Tool at master · microsoft/BC Tech](https://github.com/microsoft/BCTech/tree/master/samples/DynamicsSLMigrationTools/Analysis%20and%20Repair%20Tool)
 
@@ -80,7 +80,6 @@ This section outlines the general process or phases you go through to migrate da
      - Repair Tool:
        - Includes automated fixes to the Microsoft Dynamics SL data.
        - Includes repair items that need to be addressed.
- 
 
 1. **Preparation**
 
@@ -105,13 +104,13 @@ This section outlines the general process or phases you go through to migrate da
 
    The phase doesn't migrate any data, but it gets the environment ready for migration by establishing the connection and pipeline between the on-premises database and the online tenant database. You also specify which companies to migrate. This phase starts when you run the **Set up Cloud Migration** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
-   To get started, go to [Set up cloud migration](migration-setup-overview.md).
+   To get started, refer to [Set up cloud migration](migration-setup-overview.md).
 
 1. Configure Dynamics SL company migration
 
    The step is part of the setup phase in which you select the companies and data that you want to migrate.
 
-   To get started, go to [Configure Dynamics SL company migration](migrate-SL-configure-companies.md).
+   To get started, refer to [Configure Dynamics SL company migration](migrate-SL-configure-companies.md).
 
 1. **Data replication**
 
@@ -119,7 +118,7 @@ This section outlines the general process or phases you go through to migrate da
 
    At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. Once the data replicates to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-   To get started, go to [Replicate data](migration-data-replication.md). <!--broken migration-data-replication-SL.md-->
+   To get started, refer to [Replicate data](migration-data-replication.md). <!--broken migration-data-replication-SL.md-->
 
 1. **Data upgrade**
 
