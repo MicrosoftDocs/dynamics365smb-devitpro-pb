@@ -13,4 +13,5 @@ You can use the built-in migration tools to migrate data to [!INCLUDE [prod_shor
 - Dynamics NAV
 
   [!INCLUDE [bc-cloud-nav](../includes/bc-cloud-nav.md)]
-- Dynamics GP 2015 and later versions  - Dynamics GP 2015 and later versions  
+- Dynamics GP 2015 and later versions  - Dynamics GP 2015 and later versions 
+- Dynamics SL 2015 and later versions
