@@ -439,7 +439,7 @@ Synchronize the tenant's database schema with any schema changes in the applicat
 
 In this task, you run a data upgrade for extensions.
 
-#### Single tenant
+# [Single tenant](#tab/singletenant)
 
 Run the data upgrade/installation on extensions in order of dependency: System Application, Business Foundation, Base Application, Application.
 
@@ -480,7 +480,7 @@ Run the data upgrade/installation on extensions in order of dependency: System A
 
     This step also automatically installs the new extension version on the tenant.
 
-#### Multitenant
+# [Multitenant-tenant](#tab/multitenant)
 
 On each tenant, run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:
 
@@ -489,6 +489,8 @@ Start-NAVDataUpgrade -ServerInstance $BcServerInstance -Tenant $TenantId -Functi
 ```
 
 This command upgrades and installs the extensions on the tenant.
+
+---
 
 ## (Single-tenant only) Reinstall extensions
 
@@ -531,13 +533,13 @@ At this point, your solution has been updated to the latest platform.
 > [!IMPORTANT]
 > If your solution uses any Microsoft control add-ins, you must upgrade the add-ins to the latest version. Go to [Upgrade control add-ins](#controladdins) under **Post Upgrade** section.
 
-## <a name="Application"></a> APPLICATION UPDATE
+<!--## <a name="Application"></a> APPLICATION UPDATE
 
 Follow the next tasks to update the application code to the new features and hotfixes. The tasks include publishing new versions of the System Application, Base Application, and add-on extensions.
 
 You publish the System Application extension only if it was used in old solution. Add-on extensions include Microsoft and third- party extensions that were used in the old solution.
 
-<!--
+
 > [!NOTE]
 > If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).-->
 
