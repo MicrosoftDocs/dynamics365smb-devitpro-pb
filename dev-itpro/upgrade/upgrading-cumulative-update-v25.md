@@ -64,9 +64,9 @@ An application update involves:
 
 The installation media (DVD) includes new versions of Microsoft's Base Application, System Application, and extensions. The DVD also includes the AL source code for the Microsoft Base Application. This code useful if you have a custom base application. You can use the code to compare and merge updates into your application. You'll only have to recompile third-party extensions that you don't have a new version to publish.
 
-## PREPARATION
+## Preparation
 
-## PowerShell variables used in tasks
+### PowerShell variables used in tasks
 
 Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the `" "` with the correct values for your environment.
 
@@ -89,7 +89,7 @@ $PartnerLicense= "The file path and name of the partner license"
 $CustomerLicense= "The file path and name of the customer license"
 ```
 
-## Download update package
+### Download update package
 
 The first thing to do is to download the update package that matches your Business Central solution.
 
@@ -103,7 +103,7 @@ When this step is completed, you can continue to update your Business Central so
 
 [!INCLUDE[upgrade-copy-configuration-files](../developer/includes/upgrade-copy-configuration-files.md)]
 
-## Prepare existing databases
+## Task 1: Prepare existing databases
 
 1. Back up your databases.
 
@@ -157,7 +157,7 @@ When this step is completed, you can continue to update your Business Central so
     Dismount-NAVTenant -ServerInstance $BcServerInstance -Tenant $TenantId
     ```
 
-## Install Business Central components
+## Task 2: Install Business Central components
 
 From the installation media (DVD), run setup.exe to uninstall the current Business Central components and install the Business Central components included in the update. 
 
@@ -192,7 +192,7 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Convert existing database to new platform
+## Task 3: Convert existing database to new platform
 
 Follow the next few tasks to convert your database to the new platform of the update. A multitenant deployment includes the application and tenant databases. Running the database conversion will:
 
@@ -243,7 +243,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     >
     > You'll see this message if you ran the cmdlet without the `-Force` parameter. Run the cmdlet again, but be sure to include `-Force` parameter.
 
-## Connect server instance to database
+## Task 4: Connect server instance to database
 
 1. (Multitenant only) Enable the server instance as a multitenant instance:
 
@@ -265,7 +265,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     Restart-NAVServerInstance -ServerInstance $BcServerInstance
     ```
 
-## <a name="UploadLicense"></a>Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+## <a name="UploadLicense"></a>Task 5: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
 To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
 
@@ -276,7 +276,7 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## Publish new extensions
+## Task 6: Publish new extensions
 
 In this task, you publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
 
@@ -364,7 +364,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Restart-NAVServerInstance -ServerInstance $BcServerInstance
     ```
 
-## Synchronize tenant
+## Task 7: Synchronize tenant
 
 Synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -435,7 +435,7 @@ Synchronize the tenant's database schema with any schema changes in the applicat
     Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "<extension name>" -Version <extension version>
     ```
 
-## Upgrade data
+## Task 8: Upgrade data
 
 In this task, you run a data upgrade for extensions.
 
@@ -708,7 +708,7 @@ If the old solution used third-party extensions, and you still want to use them,
 
 As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.-->
 
-## Post upgrade
+## Task 9: Post upgrade
 
 ### <a name="controladdins"></a>Upgrade control add-ins
 
