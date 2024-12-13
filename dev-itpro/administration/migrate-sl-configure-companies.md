@@ -25,7 +25,7 @@ For an overview of the full end-to-end process for Dynamics SL cloud migration, 
 
 The **SL Company Migration Configuration** page opens automatically when you complete the **Cloud Migration Setup** assisted setup. You can also open the page by searching for and opening the **Cloud Migration Management** page and then selecting the **SL Company Migration Configuration** action.
 
-![Shows SL company migration configuration page](../media/SL-Company-migration-Configuration.jpg")
+![Shows SL company migration configuration page](../media/SL-Company-migration-Configuration.jpg)
 
 Once you have the **SL Company Migration Configuration** open, you can start to configure what data to migrate by using the different sections of the page. The page enables you to configure the migration globally for all companies that you choose to migrate (using the upper sections of the page) or on a per-company basis using the **Per Company** section.
 

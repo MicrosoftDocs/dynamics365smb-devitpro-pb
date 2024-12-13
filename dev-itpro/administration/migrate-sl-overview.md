@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003
-ms.date: 11/14/2024
+ms.date: 12/1/2024
 ms.author: jswymer
 ms.custom: bap-template
 ---
@@ -23,7 +23,8 @@ Data migration is the process of securely migrating data from an on-premises SQL
 
 The following figure illustrates the main components involved in the data migration process.
 
-![Shows components of cloud migration](../developer/media/cloud-migration-overview-SL.svg)
+![Shows components of cloud migration](../developer/media/cloud-migration-overview-gp.svg)
+<!-- no sl version-->
 
 |Component|Description|
 |-|-|
