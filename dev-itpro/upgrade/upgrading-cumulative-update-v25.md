@@ -2,7 +2,7 @@
 title: Install a version 25 update
 description: This article describes the tasks required for getting the monthly version 25 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 09/04/2024
+ms.date: 12/13/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -281,11 +281,11 @@ For more information, see [Uploading a License File for a Specific Database](../
 
 ## Task 6: Publish new extension versions (application upgrade only)
 
-In this task, you publish the new extension versions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
+Skip this task if you're only doing a platform update. In this task, you publish the new extension versions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
-The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 25 that you started in the previous task.
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] that you started in the previous task.
 
 1. Publish the **System Application** extension (Microsoft_System Application.app).
 
@@ -347,11 +347,11 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 ## Task 5: Recompile extensions not built on new update version
 
-Complete this task when you have extensions that aren't built on the Business Central version you're upgrading to. This step is required if you're doing a plaform update only. Otherwise, you can skip it.
+Complete this task for existing published extensions that aren't built on the Business Central version you're upgrading to and that you want to reintsall. This task is required if you're doing a plaform update only. 
 
 [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
 
-Do this step for any published extension versions that aren't built on version 25, and you want to reinstall on tenants. These extensions must be recompiled to work with version 25. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
+These extensions must be recompiled to work with update. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
 ```powershell  
 Repair-NAVApp -ServerInstance $BcServerInstance -Name <extension name> -Version <extension name>
@@ -369,7 +369,7 @@ Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
 Restart-NAVServerInstance -ServerInstance $BcServerInstance
 ```
 
-## Task 5: Synchronize tenant
+## Task 6: Synchronize tenant
 
 Synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -440,7 +440,7 @@ Synchronize the tenant's database schema with any schema changes in the applicat
     Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "<extension name>" -Version <extension version>
     ```
 
-## Task 6: Upgrade data
+## Task 7: Upgrade data
 
 In this task, you run a data upgrade for extensions.
 
@@ -497,7 +497,7 @@ This command upgrades and installs the extensions on the tenant.
 
 ---
 
-## Reinstall existing extensions (Single-tenant, platfrom update only)
+## Task 8: Reinstall existing extensions (Single-tenant, platform update only)
 
 In this task, you reinstall the same extensions that were installed on the tenant before. If you're planning on updating the application, then skip this step.
 
@@ -713,7 +713,7 @@ If the old solution used third-party extensions, and you still want to use them,
 
 As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.-->
 
-## Task 7: Post upgrade
+## Task 9: Post upgrade
 
 ### <a name="controladdins"></a>Upgrade control add-ins
 
