@@ -17,7 +17,7 @@ If the product you selected requires an SQL connection, the **Define your SQL da
 
   You must specify the connection string to your SQL Server, including the name of the server that SQL Server is running on, and the name of the instance, the database, and the relevant user account.  
 
-  For example, `Server=MyServer\BCDEMO;Database=BC210;User Id=MySQLAccount;Password=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](prod_short.md)] on-premises.  
+  For example, `Server=MyServer\BCDEMO;Database=BC210;User Id=MySQLAccount;Password=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises.  
 
   The following snippets illustrate a couple of connection strings with different formats for an SQL Server database:  
 
@@ -38,7 +38,7 @@ If the product you selected requires an SQL connection, the **Define your SQL da
 
 - **Integration runtime name**
 
-  When the **SQL connection** is set to **SQL Server**, you must specify the self-hosted Microsoft integration runtime instance to use to replicate the data from the defined source to [!INCLUDE [prod_short](prod_short.md)] online. The integration runtime must be running on the machine that holds the SQL Server database.
+  When the **SQL connection** is set to **SQL Server**, you must specify the self-hosted Microsoft integration runtime instance to use to replicate the data from the defined source to [!INCLUDE [prod_short](../includes/prod_short.md)] online. The integration runtime must be running on the machine that holds the SQL Server database.
 
   - If you already have an integration runtime service instance, you can use the instance by entering its name in the **Integration Runtime Name** box. Then, select **Next** to continue **Cloud Migration Setup** assisted setup.
 
