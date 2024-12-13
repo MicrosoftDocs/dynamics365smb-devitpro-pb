@@ -16,7 +16,7 @@ This article explains the process for running the data upgrade as part of cloud 
 
 ## Prerequisites
 
-You ran data replication on the company or companies that you're migrating to the online environment. For more information, go to [Run data replication](migrate-data-replication-run.md).
+You ran data replication on the company or companies that you're migrating to the online environment. Learn more in [Run data replication](migrate-data-replication-run.md).
 
 [!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
 

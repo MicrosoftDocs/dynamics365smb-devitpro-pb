@@ -5,7 +5,7 @@ author: lcontreras
 ms.author: jswymer 
 ms.reviewer: jswymer
 ms.topic: how-to 
-ms.date: 11/14/2024
+ms.date: 12/13/2024
 ms.custom: bap-template 
 ---
 
@@ -40,11 +40,11 @@ User accounts and permissions in Business Central on-premises aren't migrated to
 
 1. An account in the Microsoft 365 tenant with a Business Central license.
 
-   For more information, go to [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users).
+   Learn more in [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users).
 
-1. An account in Business Central that's associated with their Microsoft 365 account email and assigned the proper permissions to data in Business Central.
+1. An account in Business Central associated with their Microsoft 365 account email and assigned the proper permissions to data in Business Central.
 
-   For more information, go to [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions). 
+   Learn more in [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions). 
 
    > [!TIP]
    > You can go directly to setting up permission sets from the **Cloud Ready Checklist** page by selecting **Permission Sets**.

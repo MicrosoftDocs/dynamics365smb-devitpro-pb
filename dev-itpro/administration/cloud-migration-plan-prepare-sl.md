@@ -48,18 +48,18 @@ You can choose to migrate data for all companies or only specific companies. It'
 
 ## Determine your migration approach
 
-It's important to have a solid migration strategy in place to ensure a smooth transition. Most migrations can run from the on-premises production database with minimal downtime for end users. However, for especially large migrations, it might be better to run migration from a backup of the on-premises database<!--deployed as Azure SQL Database-->. Doing migrations this way improves migration speeds and minimizes performance loss and downtime on the on-premises production database. The following steps outline a typical migration approach.
+It's important to have a solid migration strategy in place to ensure a smooth transition. Most migrations can run from the on-premises production database with minimal downtime for end users. However, for especially large migrations, it might be better to run migration from a backup of the on-premises database. Doing migrations this way improves migration speeds and minimizes performance loss and downtime on the on-premises production database. The following steps outline a typical migration approach.
 
 1. [Create a full backup](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server) of the on-premises production database. Differential or partial backups aren't supported as they don't include Change Tracking data required for replication runs.
 1. Complete the usual preparation steps on the backup on-premises database and address any issues that arise.
 1. Complete the cloud migration setup, including choosing the companies to migrate.
 1. Run the [replication](migrate-data-replication-run-SL.md) and address any issues that arise.
-1. Stop the usage of the on-premises environment ahead of the final backup of the on-premises production database. 
+1. Stop the usage of the on-premises environment ahead of the final backup of the on-premises production database.
 1. Run [Data Upgrade](migration-data-upgrade-SL.md) on the cloud environment.
 1. [Complete the migration](migration-finish-SL.md) and go live on the cloud environment.
 
 > [!IMPORTANT]
-> Ensure the on-premises and cloud environments remain on the same <!--Business Central version--> they were when the cloud migration was set up. Do not update the on-premises environment and [reschedule updates](update-rollout-timeline.md#schedule-updates) to the cloud environment to a date after the cloud migration is completed.
+> Ensure the on-premises and cloud environments remain on the same version they were when the cloud migration was set up. Don't update the on-premises environment and [reschedule updates](update-rollout-timeline.md#schedule-updates) to the cloud environment to a date after the cloud migration is completed.
 >
 > Avoid modifying the environment after the replication has been enabled. If you need to install or uninstall extensions or delete companies, disable the cloud migration, make the changes, and then enable it again.
 

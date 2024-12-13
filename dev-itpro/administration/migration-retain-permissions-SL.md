@@ -40,10 +40,10 @@ end
 
 ## Next steps
 
-[Run data migration setup](migration-setup.md).
+[Run data migration setup](migration-setup-gp.md).
 
 ## Related information
 
-[Dynamics GP migration to Business Central online: End-to-end overview](migrate-sl-overview.md)  
+[Dynamics SL migration to Business Central online: End-to-end overview](migrate-sl-overview.md)  
 [Compare work in Dynamics SL to Business Central](migrate-dynamics-sl-videos.md)  
 [FAQ about migrating to Business Central online from on-premises solutions](faq-migrate-data.md)

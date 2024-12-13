@@ -79,7 +79,7 @@ Complete the steps in the wizard to update the runtime service. If the change is
 
 ## Troubleshoot and fix problems
 
-If you run into problems with the setup, go to [Cloud migration troubleshooting for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central).
+If you run into problems with the setup, refer to [Cloud migration troubleshooting for Business Central](/troubleshoot/dynamics-365/business-central/welcome-business-central).
 
 ## Next steps
 

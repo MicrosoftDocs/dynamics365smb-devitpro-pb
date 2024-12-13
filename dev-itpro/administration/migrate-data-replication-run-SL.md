@@ -17,7 +17,7 @@ This article explains how to run data replication to move data from on-premises 
 
 ## Prerequisites
 
-- You set up cloud migration. For more information, go to [Set up cloud migration](migration-setup-sl.md).
+- You set up cloud migration. Learn more in [Run cloud migration setup for Dynamics SL migration](migration-setup-sl.md).
 
 ## Run data replication
 
@@ -57,15 +57,8 @@ To stop the currently running data replication, select the **Abandon migration**
 
 ## Next steps
 
-For Business Central on-premises migration:
-
-- [Run data upgrade for Business Central on-premises](migration-data-upgrade-SL.md)
-- [Complete  Business Central on-premises cloud migration](migration-finish-SL.md)  
-
-For Dynamics SL migration:
-
 - [Run data upgrade for Dynamics SL](migration-data-upgrade-SL.md)
-- [Complete Dynamics SLcloud migration](migration-finish-SL.md)
+- [Complete Dynamics SL cloud migration](migration-finish-SL.md)
 
 ## Related information
 

@@ -124,7 +124,7 @@ This section outlines the general process or phases you go through to migrate da
 
    After data replication is complete, the cloud migration might have the status *Upgrade Pending* on the **Cloud Migration Management** page. This step starts when you choose the **Run Data Upgrade Now** action in the **Cloud Migration Management** page in [!INCLUDE [prod_short](../includes/prod_short.md)] online for the specific environment.
 
-   To get started, go to [Upgrade data](migration-data-upgrade-SL.md).
+   To get started, refer to [Upgrade data](migration-data-upgrade-SL.md).
 
    [!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
 
@@ -137,15 +137,13 @@ This section outlines the general process or phases you go through to migrate da
       Configure the system to meet your business needs. This task might include setting up security, customizing forms and reports, and integrating with other systems. By taking the time to optimize your new environment, you can ensure that it meets your specific requirements and works seamlessly with your existing systems.
    1. **Set up user access**
 
-      Grant access to your n**ew Business Central online system for all relevant users**
-
-      This task includes creating new user accounts, setting up permissions, and defining roles and responsibilities.
+      Grant access to your new Business Central online system for all relevant users. This task includes creating new user accounts, setting up permissions, and defining roles and responsibilities.
 
 1. **Go live**
 
       Once you're satisfied that your new environment is set up correctly, it's time to switch over to the new Business Central online system. This task involves decommissioning the on-premises deployment and ensuring that all users are using the new system.
 
-   To get started, go to [Complete cloud migration](migration-finish-SL.md).
+   To get started, refer to [Complete cloud migration](migration-finish-SL.md).
 
 By completing these tasks, you can ensure a successful migration to the cloud-based Business Central solution.
 
@@ -173,7 +171,6 @@ Users that are reassigned to the *Intelligent Cloud* <!--user group--> Permissio
 
 ## Related information
 
-[FAQ about Migrating to the Cloud from on-premises Solutions](faq-migrate-data.md)  
-[Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate Dynamics SL Data to the Cloud](migrate-dynamics-SL.md)  
+[FAQ about Migrating to the Cloud from on-premises Solutions](faq-migrate-data.md)  
 [Managing Capacity](tenant-admin-center-capacity.md)  
