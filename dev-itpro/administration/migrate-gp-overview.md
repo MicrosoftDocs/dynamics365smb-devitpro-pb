@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003
-ms.date: 02/28/2024
+ms.date: 12/13/2024
 ms.author: jswymer
 ms.custom: bap-template
 ---
