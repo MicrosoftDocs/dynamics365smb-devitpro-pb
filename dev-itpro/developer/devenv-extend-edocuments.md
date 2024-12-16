@@ -615,4 +615,4 @@ If you believe there are any essential features that could enhance the ease of d
 [Deprecated E-Document interface](devenv-extend-edocuments-old.md)
 [How to set up e-documents in Business Central](/dynamics365/business-central/finance-how-setup-edocuments)  
 [How to use e-documents in Business Central](/dynamics365/business-central/finance-how-use-edocuments)  
-[Work with [!INCLUDE[prod_short](includes/prod_short.md)]](/dynamics365/business-central/ui-work-product)
+[Work with [!INCLUDE[prod_short](includes/prod_short.md)]](/dynamics365/business-central/ui-work-product)  
