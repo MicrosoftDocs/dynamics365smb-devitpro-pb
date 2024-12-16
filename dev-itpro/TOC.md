@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
 ### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 ### Updates for earlier major versions
 #### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
@@ -558,6 +559,7 @@
 #### [Choosing runtime version in AL](developer/devenv-choosing-runtime.md)
 #### [FAQ about library and dependency apps in Business Central](developer/app-faq-dependencies-libraries.md)
 #### [Adding data for extensions](developer/devenv-export-data-for-extension.md)
+#### [Adding and accessing resources](developer/devenv-app-resources.md)
 
 ### Other tools
 #### [The Txt2Al conversion tool](developer/devenv-txt2al-tool.md)
