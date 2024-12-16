@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
 ### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 ### Updates for earlier major versions
 #### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
@@ -429,6 +430,27 @@
 ##### [Run data upgrade](administration/migration-data-upgrade-gp.md)
 #### Finish cloud migration
 ##### [Complete cloud migration](administration/migration-finish-gp.md)
+### Migrate from Dynamics SL
+#### Overview
+##### [End-to-end process](administration/migrate-sl-overview.md)
+##### [Dynamics SL data migrated to Business Central](administration/migrate-dynamics-sl.md)
+##### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-sl-videos.md)
+##### [Managing cloud migration](administration/migration-manage-sl.md)
+#### Prepare
+##### [Plan cloud migration](administration/cloud-migration-plan-prepare-sl.md)
+##### [Prerequisites](administration/cloud-migration-prerequisites-sl.md)
+#### Set up cloud migration
+##### [Cloud migration setup overview](administration/migration-setup-overview.md)
+##### [Retain permissions (optional)](administration/migration-retain-permissions-sl.md)
+##### [Run cloud migration setup](administration/migration-setup-sl.md)
+##### [Configure Dynamics SL company migration](administration/migrate-sl-configure-companies.md)
+#### Replicate data
+##### [Data replication overview](administration/migration-data-replication.md)
+##### [Run data replication](administration/migrate-data-replication-run-sl.md)
+#### Upgrade data
+##### [Run data upgrade](administration/migration-data-upgrade-sl.md)
+#### Finish cloud migration
+##### [Complete cloud migration](administration/migration-finish-sl.md)
 ### [FAQ](administration/faq-migrate-data.md)
 ### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->
@@ -537,6 +559,7 @@
 #### [Choosing runtime version in AL](developer/devenv-choosing-runtime.md)
 #### [FAQ about library and dependency apps in Business Central](developer/app-faq-dependencies-libraries.md)
 #### [Adding data for extensions](developer/devenv-export-data-for-extension.md)
+#### [Adding and accessing resources](developer/devenv-app-resources.md)
 
 ### Other tools
 #### [The Txt2Al conversion tool](developer/devenv-txt2al-tool.md)
