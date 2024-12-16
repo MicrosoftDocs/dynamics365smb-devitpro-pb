@@ -13,17 +13,17 @@ ms.author: altotovi
 
 # Extending the e-documents functionality
 
-The **E-Documents Core** module is created as an extension and built as a framework. Therefore, by default, there's just a few **Document Formats** (based on localization you're using). This detail, and others, are mostly components of localization apps, which cater to specific local requirements. This framework is intended to cover most requirements for the process of communication with electronic documents (e-documents). However, some parts are left for localization apps. The information in this article helps you add value to this module and use it for your own localization.  
+The **E-Documents Core** module is created as an extension and built as a framework. Therefore, by default, there are just a few **Document Formats**, which are based on the localization you're using. This detail, and others, are mostly components of localization apps, which cater to specific local requirements. This framework is intended to cover most requirements for the process of communication with electronic documents (e-documents). However, some parts are left for localization apps. The information in this article helps you add value to this module and use it for your own localization.  
 
-Additionally, when you explore the **Service Integration** option, you find several choices available. However, if you feel the need to add your own service, whether it's a local connector or another global or regional connector, you can extend this app by adding new services based on your requirements. This can be done as part of localization or as a new ISV app.
+Additionally, when you explore the **Service Integration** option, you find several choices available. However, if there's a need to add your own service, whether it's a local connector or another global or regional connector, you can extend this app by adding new services based on your requirements. This can be done as part of localization or as a new ISV app.
 
-## Develop E-Documents extension  
+## Develop an E-Documents extension  
 
-In order to implement your localization or other extension on top of **E-Document Core** application, you should undertake the following steps.  
+In order to implement your localization or other extension on top of the **E-Document Core** application, you should go through the following steps.  
 
-### Create and set up new extension   
+### Create and set up a new extension
 
-Create a new extension and add dependency to "E-Document Core" application In your app.json file, add dependency on **E-Document Core** extension:  
+Create a new extension and add a dependency to the "E-Document Core" application in your `app.json` file:  
 
 ```json
 "dependencies": [
@@ -36,14 +36,13 @@ Create a new extension and add dependency to "E-Document Core" application In yo
 ]
 ```
 
-### Implement the document Interface   
+### Implement the E-Document interface
 
-The E-Document interface comprises a collection of methods designed to streamline the export of Business Central documents (such as Sales Invoices) into E-Document blobs based on predefined format specifications. Furthermore, it facilitates the reverse process by enabling the import of documents from blobs back into Business Central. 
+The E-Document interface comprises a collection of methods designed to streamline the export of [!INCLUDE [prod_short](../includes/prod_short.md)] documents (such as Sales Invoices) into E-Document BLOBs based on the predefined format specifications. Furthermore, it facilitates the reverse process by enabling the import of documents from BLOBs back into [!INCLUDE [prod_short](../includes/prod_short.md)]. 
 
-First, you'll need to extend the enum and associate it with your implementation codeunit:  
+First, you must extend the enum and associate it with your implementation codeunit:  
 
-```AL
-
+```al
 enumextension 50100 "EDocument Format Ext" extends "E-Document Format"
 {
     value(50100; "PEPPOL 3.x")
@@ -55,7 +54,7 @@ enumextension 50100 "EDocument Format Ext" extends "E-Document Format"
 
 The document interface has been divided into two sections:
 
-- Create an E-Document from a Business Central document that can be sent to a designated endpoint: **Check**, **Create**, **CreateBatch**.
+- Create an E-Document from a [!INCLUDE [prod_short](../includes/prod_short.md)] document that can be sent to a designated endpoint: **Check**, **Create**, **CreateBatch**.
 - Receive a document from the endpoint: **GetBasicInfo**, **PrepareDocument**.
 
 Here's an example of how you could implement each of the methods within the interface:
@@ -104,10 +103,10 @@ You also have the option to perform distinct checks depending on document proces
     end;
  ```
 
-- **Create**: Use it to create a blob representing the posted document. At this point, the core extension has created an "E-Document" record with initial information like the document type, and automatically determined the type of the document, that you can find in **Document Type** field.  
+- **Create**: Use it to create a BLOB that represents the posted document. At this point, the core extension has created an "E-Document" record with initial information like the document type, and automatically determined the type of the document, that you can find in **Document Type** field.  
 
 > [!NOTE]
-> The document type is automatically identified by the core extension based on the source document. In case you have introduced your custom document type, you will need to extend the **E-Document Type** enum and populate the **E-Document Type** field accordingly.  
+> The document type is automatically identified by the core extension based on the source document. In case you have introduced your custom document type, you must extend the **E-Document Type** enum and populate the **E-Document Type** field accordingly.  
 
 ```AL
 procedure Create(EDocumentService: Record "E-Document Service"; var EDocument: Record "E-Document"; var SourceDocumentHeader: RecordRef; var SourceDocumentLines: RecordRef; var TempBlob: Codeunit "Temp Blob")
@@ -125,7 +124,7 @@ procedure Create(EDocumentService: Record "E-Document Service"; var EDocument: R
     end;
 ```
 
-- **CreateBatch**: use it to create a blob representing a batch of posted documents. Similar to create method, this functionality permits you to iterate through a collection of E-Documents and generate a singular blob that collectively represents them.  
+- **CreateBatch**: use it to create a BLOB that represents a batch of posted documents. Similar to create method, this functionality permits you to iterate through a collection of E-Documents and generate a singular BLOB that collectively represents them.  
 
 ```AL
 procedure CreateBatch(EDocumentService: Record "E-Document Service"; var EDocuments: Record "E-Document"; var SourceDocumentHeaders: RecordRef; var SourceDocumentsLines: RecordRef; var TempBlob: Codeunit "Temp Blob")
