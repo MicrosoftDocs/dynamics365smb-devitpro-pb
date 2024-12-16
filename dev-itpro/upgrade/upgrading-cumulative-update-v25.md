@@ -57,7 +57,7 @@ The application includes AL extensions that define the objects and code that mak
 A platform update doesn't change the application. It involves converting your databases to the new platform and recompiling the existing extensions to ensure that they're compatible with the new platform.
 
 > [!IMPORTANT]
-> A platfrom update from 25.1 or 25.0 to later versions isn't supported.
+> A platfrom update from 25.0 or 25.1 to 25.2 and later isn't supported.
 
 An application update involves:
 
