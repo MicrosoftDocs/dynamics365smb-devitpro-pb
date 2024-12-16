@@ -78,7 +78,7 @@ Here's an example of how you could implement each of the methods within the inte
 
 You also have the option to perform distinct checks depending on document processing phase.
 
- ```AL
+```AL
     procedure Check(var SourceDocumentHeader: RecordRef; EDocumentService: Record "E-Document Service"; EDocumentProcessingPhase: Enum "E-Document Processing Phase")
     var
         SalesHeader: Record "Sales Header";
