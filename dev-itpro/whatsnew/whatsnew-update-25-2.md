@@ -16,7 +16,7 @@ Would you like to know what changes are in update 25.2? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes and download on-premises files on Microsoft Support at [Update 25.2 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5047904).
+Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 25.2 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5049396).
 
 ## Feature changes
 
@@ -24,16 +24,16 @@ Learn about the hotfixes and download on-premises files on Microsoft Support at 
 - [E-file IRS 1099 forms without integration (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/e-file-irs-1099-forms-without-integration)
 - [Migrate to the cloud from Dynamics SL (general availability)](../administration/migrate-sl-overview.md)
 - [Start using E-Documents framework localized for Germany (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/start-using-e-documents-framework-localized-germany)
-- [Use embedded Power BI reports out of the box (general availability)](use-embedded-power-bi-reports-out-box)
+- [Use embedded Power BI reports out of the box (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-embedded-power-bi-reports-out-box)
 - [Use the e-documents framework in the Spanish version (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-e-documents-framework-spanish-version)
 
 ## Localization updates
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| Czech Republic| Copy Document Action Added to Sales and Purchase Advice Letters | The Copy Document action is now available on Sales and Purchase Advance Letters, allowing users to copy details from previously created documents, eliminating the need for manual re-entry each month. On the request page of the action, the only document types available to choose from are Sales or Purchase Advance Letters. |
-| Norway | SAF-T 1.3 mapping update | Starting 1/1/2025, the new SAF-T form 1.30 is required but can be used immediately. It isn't fully backward compatible due to significant changes. The old form 1.20 remains valid for FY2024 and earlier. Users can now select the SAF-T version in the SAF-T Setup, which will generate different XML content based on the chosen version. |
-| Spain | Adding new period type to the SII | In the new version, we've added a "Tax Period" option to the SII Setup, defaulting to Monthly. Companies required to submit the SII will have a Monthly Tax Period, while those voluntarily enrolled can choose Quarterly. Selecting Quarterly ensures the XML message reflects the correct value. |
+| Czech Republic| Copy Document action added to sales and purchase advice etters | The **Copy Document** action is now available on sales and purchase advance letters, allowing users to copy details from previously created documents, eliminating the need for manual re-entry each month. On the request page of the action, the only document types available to choose from are Sales or Purchase Advance Letters. |
+| Norway | SAF-T 1.3 mapping update | Starting 01/01/2025, the new SAF-T form 1.30 is required but can be used immediately. It isn't fully backward compatible due to significant changes. The old form 1.20 remains valid for FY2024 and earlier. Users can now select the SAF-T version in the SAF-T Setup, which will generate different XML content based on the chosen version. |
+| Spain | Adding new period type to the SII | In the new version, we've added a **Tax Period** option to the SII Setup, defaulting to **Monthly**. Companies required to submit the SII will have a **Monthly** tax period, while those voluntarily enrolled can choose **Quarterly**. Selecting **Quarterly** ensures the XML message reflects the correct value. |
 
 ## Release plan
 
@@ -47,7 +47,7 @@ New customers automatically get the latest builds of Business Central (25.2). If
 
 ### Sales Order Agent in Business Central - Early Access Program (US only)
 
-We've recently announced the Early Access Program for the Business Central Sales Order Agent. Spaces are limited, so sign up here: [https://aka.ms/bcAgentsEarlyAccess](https://aka.ms/bcAgentsEarlyAccess).
+We've recently announced the [Early Access Program for the Business Central Sales Order Agent](https://www.yammer.com/dynamicsnavdev/#/Threads/show?threadId=3092919011729408&search_origin=global&scoring=linear1Y-prankie-group-private-higher&match=any-exact&search_sort=relevance&page=1&search=sales%20order%20agent)&mdash;the very first AI agent in Business Central, built to automate the entire sales requests capturing process. Spaces are limited, so sign up here: [https://aka.ms/bcAgentsEarlyAccess](https://aka.ms/bcAgentsEarlyAccess) (US region only at this time).
 
 Learn more about the Sales Order Agent at [Use Copilot with agent capabilities to automate sales order-taking](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
