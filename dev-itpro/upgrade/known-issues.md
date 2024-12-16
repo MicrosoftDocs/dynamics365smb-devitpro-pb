@@ -16,6 +16,33 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
+
+## Synchronizating tenant fails
+
+
+```powershell
+PS C:\Windows\system32> Sync-NAVTenant -ServerInstance $BCServerInstanceName -Mode Sync
+Sync-NAVTenant : [31;1mSync-NAVTenant: [0m
+[31;1m[36;1mLine |[0m
+[31;1m[36;1m[36;1m  15 | [0m     $output = [36;1mSync-NAVTenant @cmdletArgs[0m;[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mThe schema synchronization may result in deleted data. The following destructive changes were detected:[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable: 2000000259, Agent Access Control Data[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mField: 3, Access: Data type changed[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mExamples of code to migrate data:[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mDataUpgradeMgt.SetTableSyncSetup(DATABASE::"Agent Access Control Data",[Upgrade Table Id],TableSynchSetup.Mode::[Mode]);[0m
+At line:1 char:1
++ Sync-NAVTenant -ServerInstance $BCServerInstanceName -Mode Sync -Forc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: ([31;1mSync-NAV...:[Mode]);[0m
+:String) [Sync-NAVTenant], InvalidOperationException
+    + FullyQualifiedErrorId : navId,Microsoft.Dynamics.Nav.Management.SyncNAVTenant
+
+```
+
 ## Installation fails because PowerShell 7 is already installed
 
 > Applies to: Installation of version 24.0 or 24.1
