@@ -16,7 +16,7 @@ Would you like to know what changes are in update 25.2? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes and download on-premises files on Microsoft Support at [Update 25.2 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5047904).
+Learn about the hotfixes and download on-premises files on Microsoft Support at [Update 25.2 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5049396).
 
 ## Feature changes
 
@@ -31,9 +31,9 @@ Learn about the hotfixes and download on-premises files on Microsoft Support at 
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| Czech Republic| Copy Document Action Added to Sales and Purchase Advice Letters | The Copy Document action is now available on Sales and Purchase Advance Letters, allowing users to copy details from previously created documents, eliminating the need for manual re-entry each month. On the request page of the action, the only document types available to choose from are Sales or Purchase Advance Letters. |
-| Norway | SAF-T 1.3 mapping update | Starting 1/1/2025, the new SAF-T form 1.30 is required but can be used immediately. It isn't fully backward compatible due to significant changes. The old form 1.20 remains valid for FY2024 and earlier. Users can now select the SAF-T version in the SAF-T Setup, which will generate different XML content based on the chosen version. |
-| Spain | Adding new period type to the SII | In the new version, we've added a "Tax Period" option to the SII Setup, defaulting to Monthly. Companies required to submit the SII will have a Monthly Tax Period, while those voluntarily enrolled can choose Quarterly. Selecting Quarterly ensures the XML message reflects the correct value. |
+| Czech Republic| Copy Document action added to sales and purchase advice etters | The **Copy Document** action is now available on sales and purchase advance letters, allowing users to copy details from previously created documents, eliminating the need for manual re-entry each month. On the request page of the action, the only document types available to choose from are Sales or Purchase Advance Letters. |
+| Norway | SAF-T 1.3 mapping update | Starting 01/01/2025, the new SAF-T form 1.30 is required but can be used immediately. It isn't fully backward compatible due to significant changes. The old form 1.20 remains valid for FY2024 and earlier. Users can now select the SAF-T version in the SAF-T Setup, which will generate different XML content based on the chosen version. |
+| Spain | Adding new period type to the SII | In the new version, we've added a **Tax Period** option to the SII Setup, defaulting to **Monthly**. Companies required to submit the SII will have a **Monthly** tax period, while those voluntarily enrolled can choose **Quarterly**. Selecting **Quarterly** ensures the XML message reflects the correct value. |
 
 ## Release plan
 
