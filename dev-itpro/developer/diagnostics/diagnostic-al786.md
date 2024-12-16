@@ -18,6 +18,6 @@ The property '{0}' cannot be specified on the control '{1}' in the page customiz
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

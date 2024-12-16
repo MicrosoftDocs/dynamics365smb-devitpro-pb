@@ -181,7 +181,7 @@ You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry 
 
 [!INCLUDE[httpclientPerformance](../includes/performance-outgoing-http.md)]
 
-## See also
+## Related information
 
 [Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md)  
 [How-to restrict network access from/to Business Central](../security/security-service-tags.md)  

@@ -18,6 +18,6 @@ Length of the table field name '{0}' must not exceed {1} characters. Longer fiel
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -35,7 +35,7 @@ In the extension `app.json` file, ensure that `"target": "OnPrem"`. For more inf
 
 You now have the migration file in place for the data migration from one app project to another. The migration file will be used for performing the data migration steps. For more information, see [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md).
 
-## See Also
+## Related information
 
 [JSON Files](devenv-json-files.md)  
 [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md) 

@@ -60,7 +60,7 @@ You can encrypt data on the Business Central server by generating new encryption
 
 The Microsoft Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. For more information, see [Security Development Lifecycle](https://www.microsoft.com/sdl).  
 
-## See Also  
+## Related information  
 
 [Security and Protection](security-and-protection.md)  
 [Security Tips for Business Users](security-users.md)  

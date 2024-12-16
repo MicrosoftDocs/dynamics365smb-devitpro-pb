@@ -161,7 +161,7 @@ The following table describes the standard formats that are available for the **
 |4|\<Integer>\<Decimals>\<Point or Comma>\<Sign>|76543,21-|76543.21-|  
 |9|XML format|-76543.21|-76543.21|  
   
-## See Also  
+## Related information  
 
 [AutoFormatType Property](properties/devenv-AutoFormatType-Property.md)   
 [AutoFormatExpression Property](properties/devenv-AutoFormatExpression-Property.md)   

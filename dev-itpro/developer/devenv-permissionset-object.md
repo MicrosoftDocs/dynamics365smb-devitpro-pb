@@ -75,7 +75,7 @@ permissionset 50135 MyPermissionSet
 
 You can also use the [ExludedPermissionSets property](properties/devenv-excludedpermissionsets-property.md) to exclude permissions defined in other permission sets. To learn more, see [Composing permission sets From other permission sets](devenv-permissionset-composing.md).
 
-## See also
+## Related information
 
 [Developing extensions](devenv-dev-overview.md)  
 [AL development environment](devenv-reference-overview.md)  

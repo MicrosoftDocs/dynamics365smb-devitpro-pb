@@ -153,7 +153,7 @@ You can import a configuration package that has been exported from a database th
 
 The next time you're going to set up [!INCLUDE [prod_short](../includes/prod_short.md)] for a new customer, you can apply your configuration packages and get started fast. For more information, see [Apply Company Configuration Packages](apply-company-configuration-packages.md).  
 
-## See also
+## Related information
 
 [Apply Company Configuration Packages](apply-company-configuration-packages.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  

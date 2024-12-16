@@ -18,6 +18,6 @@ Could not determine a suitable default primary key for table '{0}'. Please speci
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

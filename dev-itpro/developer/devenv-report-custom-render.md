@@ -124,7 +124,7 @@ The simplest possible custom document render can be implemented as in the follow
     end;
 ```
 
-## See Also
+## Related information
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
 [OnCustomDocumentMergerEx Event](devenv-oncustomdocumentmergerEx-event.md)  

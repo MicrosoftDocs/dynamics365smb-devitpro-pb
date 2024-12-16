@@ -21,6 +21,6 @@ The length for the type '{0}' must be positive.
 The length specified for a data type must be possitve.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

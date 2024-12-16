@@ -95,6 +95,6 @@ Consider which of your app's objects are relevant for being added to a user's Ge
 
 Make sure you provide the best possible help to unblock users when needed. You do this by ensuring proper user of the contextSensitive properties for your app and your pages. This will ensure the user can find links to your documentation in the Help pane. To learn more, see [Dynamics 365 Business Central User Assistance Model](../user-assistance.md).
 
-## See also
+## Related information
 
 [Onboarding experiences in Business Central](onboarding-experiences.md)  

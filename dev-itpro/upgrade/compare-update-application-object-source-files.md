@@ -95,7 +95,7 @@ You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to comp
   
  You can now import the merged objects into a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. For more information, see [Merge Application Changes](merge-application-changes.md).  
   
-## See also  
+## Related information  
  [Merge Application Changes](merge-application-changes.md)   
  [Handling Merge Conflicts](Handling-Merge-Conflicts.md)   
  [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md)   

@@ -15,7 +15,7 @@ The lifecycle is the cyclical software development process that typically involv
 
 ![The application lifecycle.](../media/application-lifecycle.png "The application lifecycle") 
 
-## See Also
+## Related information
 
 [Extension Data Migration Overview](devenv-migrate-table-fields.md)  
 [Extension Translation Overview](devenv-translations-overview.md)  

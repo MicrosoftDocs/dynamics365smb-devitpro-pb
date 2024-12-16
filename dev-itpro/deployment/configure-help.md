@@ -129,7 +129,7 @@ We suggest that your website clearly indicates what is under Microsoft's copyrig
 
 If you want to customize or extend the Microsoft Help, you can fork our public repo for the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs). For more information, see [Contribute to the Help](../help/contributor-guide.md).  
 
-## See Also
+## Related information
 
 [User Assistance Model](../user-assistance.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  

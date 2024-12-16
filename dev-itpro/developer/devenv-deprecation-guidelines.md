@@ -127,7 +127,7 @@ If an action or other code element points to a now removed object, then the guid
   - If code points to an obsoleted method, then use directives to put in the fixed code.
   - If code points to an obsoleted table/field, then use directives to put in the fixed code.
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  

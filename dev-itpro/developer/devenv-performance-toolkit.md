@@ -526,7 +526,7 @@ Visit the [BCPT video page](https://github.com/microsoft/BCTech/blob/master/samp
 Visit the [BCPT blogs page](https://github.com/microsoft/BCTech/blob/master/samples/BCPT/BLOGS.md) for learning resources published as blogs.
 
 
-## See also
+## Related information
 
 [Testing the Application Overview](devenv-testing-application.md)  
 [Performance toolkit telemetry](../administration/telemetry-performance-toolkit-trace.md)   

@@ -122,6 +122,6 @@ Yes, if a telemetry ID is assigned to the user. Learn more at [KQL example - fol
 
 [!INCLUDE[telemetrySamples](../includes/include-telemetry-samples.md)]
 
-## See also
+## Related information
 
 [Telemetry overview](telemetry-overview.md)  

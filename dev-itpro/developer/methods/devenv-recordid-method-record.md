@@ -58,7 +58,7 @@ RecID := MyRecord.RecordId;
 Message(MyTextConst, RecID);  
 ```  
   
-## See also  
+## Related information  
 
 [AL method reference](../methods-auto/library.md)  
 [Record data type](../methods-auto/library.md)  

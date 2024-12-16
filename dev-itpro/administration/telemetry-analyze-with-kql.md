@@ -436,7 +436,7 @@ traces
 | take 10
 ```
 
-## See also
+## Related information
 
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  

@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003
-ms.date: 02/28/2024
+ms.date: 12/13/2024
 ms.author: jswymer
 ms.custom: bap-template
 ---
@@ -152,7 +152,7 @@ Users that are reassigned to the *Intelligent Cloud* <!--user group--> permissio
 > [!WARNING]
 > If you grant insert, modify or delete permissions to any resource in the application that was set to read-only, it could have a negative impact on the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you may have to clear all your data and rerun a full migration to correct this.
 
-## See also
+## Related information
 
 [FAQ about Migrating to the Cloud from on-premises Solutions](faq-migrate-data.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  

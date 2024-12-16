@@ -655,7 +655,7 @@ end;
 
 After we publish the extension, we can update the mappings by running the **CDS Connection Setup** page and choosing **Use Default Synchronization Setup**.  
 
-## See Also
+## Related information
 
 [Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Overview - Integrate with Microsoft Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)  

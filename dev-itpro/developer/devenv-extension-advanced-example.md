@@ -904,7 +904,7 @@ codeunit 50101 "Customer Rewards Ext. Mgt."
 ### Conclusion
 At this point, the Customer Rewards sample extension can be published and installed on your sandbox. To continue writing tests for the sample extension, see [Test the advanced sample extension](devenv-extension-advanced-example-test.md). 
 
-## See Also  
+## Related information  
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  

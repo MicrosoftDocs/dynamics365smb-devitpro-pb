@@ -18,6 +18,6 @@ The text with a length of {0} is longer than the MaxLength of {1} which means th
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

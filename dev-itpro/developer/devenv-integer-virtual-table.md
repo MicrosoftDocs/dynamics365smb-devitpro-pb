@@ -20,7 +20,7 @@ The `Integer` virtual table (ID 2000000026) includes integers in the range –1,
 
 By applying a filter to the `Integer` virtual table, you can easily get a subset or range of numbers that can be used to control looping in reports.
 
-## See also
+## Related information
 
 [Virtual tables](devenv-virtual-tables.md)  
 [Date virtual table](devenv-date-virtual-table.md)

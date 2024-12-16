@@ -73,5 +73,5 @@ Here is a JSON representation of the company resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET company](../api/dynamics_company_get.md)

@@ -178,7 +178,7 @@ $.ajax({
 });
 ```
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions](devenv-dev-overview.md)  

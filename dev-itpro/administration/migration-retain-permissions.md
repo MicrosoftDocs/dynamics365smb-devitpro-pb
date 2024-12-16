@@ -42,7 +42,7 @@ end
 
 [Run data migration setup](migration-setup.md).
 
-## See also
+## Related information
 
 [Dynamics GP migration to Business Central online: End-to-end overview](migrate-gp-overview.md)  
 [Compare work in Dynamics GP to Business Central](migrate-dynamics-gp-videos.md)  

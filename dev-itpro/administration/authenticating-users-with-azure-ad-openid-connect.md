@@ -433,7 +433,7 @@ Single sign-on means that users are still signed in to Microsoft Entra ID when t
 
 We recommend that you provide guidance to your users for signing out of their account when they're done. Doing so will help you keep your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment more secure.  
 
-## See Also  
+## Related information  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
 [Troubleshooting: SAML2 token errors with Microsoft Entra ID/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  

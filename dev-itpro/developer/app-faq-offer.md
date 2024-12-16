@@ -29,7 +29,7 @@ No. If you don't change your app in a submission, we skip technical validation.
 [!INCLUDE[appsource-appinsights](includes/appsource-appinsights.md)].
 
 
-## See also
+## Related information
 
 [FAQ about Updating your Business Central App](app-faq-update.md)  
 [FAQ about Library & Dependency Apps in Business Central](app-faq-dependencies-libraries.md)  

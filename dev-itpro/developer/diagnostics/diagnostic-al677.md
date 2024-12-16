@@ -21,6 +21,6 @@ The member '{0}' in object '{1}' cannot be declared as protected in object type 
 > This warning will become an error with Business Central 2022 release wave 2.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

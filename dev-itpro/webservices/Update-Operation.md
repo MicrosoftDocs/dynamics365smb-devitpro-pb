@@ -42,5 +42,5 @@ cust.Name = cust.Name + "Updated";
 service.Update(ref cust);  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

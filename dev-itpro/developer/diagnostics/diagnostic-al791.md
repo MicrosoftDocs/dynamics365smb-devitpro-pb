@@ -21,6 +21,6 @@ The namespace '{0}' is unknown.
 The namespace is not declared in the scope of the current compilation.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

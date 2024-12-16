@@ -45,7 +45,7 @@ Visual Studio Code has built-in Git integration that makes it easy to manage you
 
 The Command Palette allows you to search for and run commands in Visual Studio Code. To open the **Command Palette**, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>.
 
-## See also
+## Related information
 
 [JSON files](devenv-json-files.md)  
 [Launch JSON file](devenv-json-launch-file.md)  

@@ -21,6 +21,6 @@ The name '{0}' is an Area type. Using an Area type name will limit extensibility
 Reusing the Area type as the name of a control, action, or variable might lead to extensibility limitations.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

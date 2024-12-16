@@ -136,6 +136,6 @@ Follow these steps if one or more extensions are installed on the tenant. If the
     Sync-NAVTenant -ServerInstance <server instance>
     ```
 
-## See Also  
+## Related information  
 [Creating and Altering a  Database](cside-create-databases.md)  
 [Synchronizing the Tenant Database with the Application Database](../administration/synchronize-tenant-database-and-application-database.md)

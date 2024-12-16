@@ -20,6 +20,6 @@ author: SusanneWindfeldPedersen
 The identifier {0} has become a keyword in version {1}.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

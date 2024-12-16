@@ -124,7 +124,7 @@ page 50101 SimpleCustomerCard
 }
 ```
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [Views](devenv-views.md)  

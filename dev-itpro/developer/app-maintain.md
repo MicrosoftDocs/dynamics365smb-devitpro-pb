@@ -109,7 +109,7 @@ It's crucial for you to keep contact details correctly up to date. We advise you
 
     The mail addresses specified in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)], which could be both a customer and a partner user.  
 
-## See also
+## Related information
 
 [The Lifecycle of Apps and Extensions](devenv-app-life-cycle.md)  
 [Update Lifecycle for Customizations](devenv-customization-update-lifecycle.md)  

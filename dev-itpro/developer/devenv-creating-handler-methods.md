@@ -60,7 +60,7 @@ begin
 end;
 ```
  
-## See Also  
+## Related information  
 
 [Testing the Application](devenv-testing-application.md)   
 [AL Methods](methods-auto/library.md)

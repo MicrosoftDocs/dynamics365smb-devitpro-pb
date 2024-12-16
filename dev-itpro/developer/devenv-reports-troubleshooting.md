@@ -95,7 +95,7 @@ The different exceptions in the table are grouped by the following severities:
 
 For more information, see [Report performance](devenv-report-performance.md).
 
-## See also
+## Related information
 
 [Testing a report](devenv-testing-reports.md)   
 [Report performance](devenv-report-performance.md)   

@@ -95,7 +95,7 @@ The administrator of your [!INCLUDE[prod_short](../includes/prod_short.md)] and 
 
 If you're migrating from an on-premises solution, understanding the infrastructure of [!INCLUDE [prod_short](../includes/prod_short.md)] online can help you make good choices for how to set up environments and companies. For more information and an example, see [Understanding the infrastructure of Business Central online](tenant-environment-topology.md).  
 
-## See also
+## Related information
 
 [Sign up for a free Dynamics 365 Business Central trial](/dynamics365/business-central/trial-signup)  
 [Dynamics 365 Business Central trial FAQ](/dynamics365/business-central/trial-faq)  

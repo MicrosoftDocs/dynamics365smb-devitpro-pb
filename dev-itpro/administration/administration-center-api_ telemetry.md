@@ -63,7 +63,7 @@ Returns the telemetry logs and with data column headers.
 
    - target: {logCategory} - the provided log category isn't a valid value
 
-## See also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

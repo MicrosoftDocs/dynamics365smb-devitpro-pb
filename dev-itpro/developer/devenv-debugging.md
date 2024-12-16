@@ -175,7 +175,7 @@ To be able to debug an online environment with an Embed app published in it, mak
 To be able to debug sessions in an on-premises environment, make sure to specify the `usePublicURLFromServer` parameter in your launch.json file. For more information, see [Publish to local server settings (launch.json)](devenv-json-launch-file.md#publish-to-local-server-settings-launchjson)
 
 
-## See also
+## Related information
 
 [Attach and debug next](devenv-attach-debug-next.md)  
 [Snapshot debugging](devenv-snapshot-debugging.md)  

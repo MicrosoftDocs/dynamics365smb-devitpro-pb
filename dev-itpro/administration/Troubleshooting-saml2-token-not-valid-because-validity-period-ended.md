@@ -43,7 +43,7 @@ The Windows client times out when it has been connected for 9 hours or more. The
 
 Close and reopen the Windows client.
 
-## See Also
+## Related information
 
 [Authenticating Business Central Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md)  
 [Configuring Business Central Server](Configure-server-instance.md)

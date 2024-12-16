@@ -185,7 +185,7 @@ When comparing the performance of Azure SQL database and a SQL Server deployed t
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
 
 
-## See Also
+## Related information
 
 [Installation Considerations for Microsoft SQL Server](installation-considerations-for-microsoft-sql-server.md)  
 [Optimizing SQL Server Performance](../administration/optimize-sql-server-performance.md)  

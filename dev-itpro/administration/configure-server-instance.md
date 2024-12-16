@@ -451,7 +451,7 @@ Set-NAVServerConfiguration -ServerInstanceMyInstance -KeyName MaxStreamReadSize 
 
 For more information about running the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Microsoft Dynamics NAV Windows PowerShell Cmdlets](/powershell/business-central/overview).  
 
-## See also
+## Related information
 
 [Configuring Business Central Web Server Instances](configure-web-server.md)  
 [Business Central Server Administration Tool](administration-tool.md)   

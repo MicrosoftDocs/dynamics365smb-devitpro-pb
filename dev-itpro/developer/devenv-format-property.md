@@ -249,7 +249,7 @@ For Chars, all formats should resemble the following: <Char/Number>.
   
 For Text and Code, all formats should resemble the following: \<Text>.  
   
-## See Also
+## Related information
 
 [DecimalPlaces property](properties/devenv-decimalplaces-property.md)  
 [About dates in Business Central](devenv-about-dates.md)

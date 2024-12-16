@@ -73,7 +73,7 @@ After you publish and synchronize an extension, you can install it on tenants. T
 1. Review and accept the license agreement.  
 1. Select the **Install** button to install the extension.
 
-## See also
+## Related information
 
 [Unpublishing and Uninstalling Extensions](devenv-unpublish-and-uninstall-extension-v2.md)  
 [Developing Extensions](devenv-dev-overview.md)  

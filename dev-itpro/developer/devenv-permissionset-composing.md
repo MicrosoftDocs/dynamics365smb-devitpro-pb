@@ -141,7 +141,7 @@ The following table shows how the permissions are determined on a single object 
 > [!TIP]
 > When including and excluding multiple permission sets, it can be difficult to get an overview of what the resultant permissions will be. To help, use the **View all permissions** action from the the permission set in the client.
 
-## See Also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

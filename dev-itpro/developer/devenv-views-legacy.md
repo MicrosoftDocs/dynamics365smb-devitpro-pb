@@ -166,7 +166,7 @@ Benefits for end-users:
 * Users receive a consistent choice of views no matter how they navigate to the list page: from the Role Center navigation menu, by searching for the page, through a browser favorite or shared link, or on other form factors.
 * Customers benefit from future enhancements to working with views.
 
-## See also
+## Related information
 
 [List Views FAQ](/dynamics365/business-central/ui-views-faq)  
 [Business Central April '19 release plans - List Views](/business-applications-release-notes/April19/dynamics365-business-central/list-views)  

@@ -76,7 +76,7 @@ The following articles explain how to secure client, web service, and Power BI c
 
 [Connect to Business Central with Power BI](/power-bi/service-connect-to-microsoft-dynamics-nav)
 
-## See Also  
+## Related information  
 
 [Security and Protection](security-and-protection.md)  
 [Data Security](data-security.md)  

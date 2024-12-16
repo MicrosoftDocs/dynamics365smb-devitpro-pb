@@ -94,7 +94,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 ### Local versions included
 
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Cumulative Update](../upgrade/upgrading-cumulative-update.md)  

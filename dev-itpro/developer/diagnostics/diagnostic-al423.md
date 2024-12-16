@@ -21,6 +21,6 @@ The property '{0}' can only be set if the specified fields are from the same tab
 A property can only be used on keys with fields from the same table.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

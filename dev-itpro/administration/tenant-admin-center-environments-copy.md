@@ -31,7 +31,7 @@ When the process starts, you can go to the list of your environments and see the
 
 [!INCLUDE [admin-env-sandbox-precautions](../developer/includes/admin-env-sandbox-precautions.md)]
 
-## See also
+## Related information
 
 [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  

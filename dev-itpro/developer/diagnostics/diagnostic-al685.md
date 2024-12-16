@@ -18,6 +18,6 @@ The length '{0}' of the calculation formula's target field '{1}' is greater than
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

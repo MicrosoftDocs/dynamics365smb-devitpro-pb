@@ -101,7 +101,7 @@ To support optimized text search in Business Central on-premises, the SQL Server
 
 [!INCLUDE[upgrade-install-full-text-serach-sql](includes/upgrade-install-full-text-search-sql.md)]
 
-## See also
+## Related information
 
 [OptimizeForTextSearch property](properties/devenv-optimizefortextsearch-property.md)  
 [IsOptimizeForTextSearch method](methods-auto/fieldref/fieldref-isoptimizedfortextsearch-method.md)

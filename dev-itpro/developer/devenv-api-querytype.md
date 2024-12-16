@@ -68,7 +68,7 @@ query 20000 "APIV1 - Customer Sales"
 }
 ```
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [API page Type](devenv-api-pagetype.md)  

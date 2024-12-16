@@ -74,7 +74,7 @@ When an extensions gets uninstalled, these tables do not get removed. Therefore,
 
 For more information, see [When apps or PTEs cannot be updated by Microsoft](app-maintain.md#when-microsoft-cant-update-apps-or-ptes).  
 
-## See also
+## Related information
 
 [Publishing and installing an extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  

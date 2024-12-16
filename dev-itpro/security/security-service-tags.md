@@ -36,6 +36,6 @@ The group of IP addresses making up the service tag are available through the [A
 
 Learn more about service tags [Virtual network service tags](/azure/virtual-network/service-tags-overview).
 
-## See also
+## Related information
 
 [Security and protection](Security-and-Protection.md)  

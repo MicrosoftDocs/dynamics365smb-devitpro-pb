@@ -459,7 +459,7 @@ traces
 
 [!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
-## See also
+## Related information
 
 [Telemetry overview](telemetry-overview.md)   
 [Sending App Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)   

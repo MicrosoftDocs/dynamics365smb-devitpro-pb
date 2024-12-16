@@ -21,6 +21,6 @@ Length of the identifier '{0}' cannot exceed {1} characters.
 The length of an identifier cannot exceed 120 characters.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

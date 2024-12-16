@@ -155,7 +155,7 @@ At Microsoft, we are in process of simplifying and unifying our style guides. To
 
 [!INCLUDE [ua-rss](includes/ua-rss.md)]
 
-## See also
+## Related information
 
 [Configure the help experience](deployment/configure-help.md)  
 [Adding help links from pages, reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  

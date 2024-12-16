@@ -116,7 +116,7 @@ page 50111 SampleCustomerList
 }
 ```
 
-## See also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  

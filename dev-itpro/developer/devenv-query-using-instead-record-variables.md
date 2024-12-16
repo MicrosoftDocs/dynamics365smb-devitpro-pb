@@ -105,7 +105,7 @@ The `ItemMovements.TOPNUMBEROFROWS(5);` statement will include only the first 5 
 
 The `OutputData` method performs the same operations as the `OutputData` method in the record variable example.  
 
-## See Also
+## Related information
 
 [Query Object](devenv-query-object.md)  
 [Linking and Joining Data Items](devenv-query-links-joins.md)  

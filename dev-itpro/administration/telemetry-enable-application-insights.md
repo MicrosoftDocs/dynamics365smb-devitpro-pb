@@ -171,7 +171,7 @@ If the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource i
 
 It's good practice to change all user telemetry IDs at the end of the relationship with the customer. This practice removes traceability to users for all data in the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
 
-## See also
+## Related information
 
 [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  

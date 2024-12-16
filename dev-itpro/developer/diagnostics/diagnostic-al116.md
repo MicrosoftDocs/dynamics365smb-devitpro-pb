@@ -23,6 +23,6 @@ Invalid value for 'PageType'. Allowed values are 'Card,List,RoleCenter,CardPart,
 The value defined for the property is not valid. Refer to the property's documentation to see the allowed values.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

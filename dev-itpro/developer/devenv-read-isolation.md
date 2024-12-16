@@ -141,6 +141,6 @@ begin
 end;
 ```
 
-## See also
+## Related information
 
 [LockTable](methods-auto/record/record-locktable-method.md) 

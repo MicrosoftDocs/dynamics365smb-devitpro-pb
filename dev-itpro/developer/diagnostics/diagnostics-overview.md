@@ -842,6 +842,6 @@ ms.reviewer: solsen
 |[AL1425](diagnostic-al1425.md)|The field with ID '{0}' and name '{1}' cannot be used as source expression in the page customization '{2}' targeting page '{3}'. Ignoring the page field.|Designer Customization Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -21,6 +21,6 @@ The type '{0}' cannot be used as a type argument in this context.
 > This warning will become an error with Business Central 2025 release wave 1.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

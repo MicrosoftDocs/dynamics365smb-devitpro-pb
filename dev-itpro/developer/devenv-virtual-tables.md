@@ -31,6 +31,6 @@ The virtual tables provide such information as:
 Because virtual tables aren't stored in the database, you can't view them directly. To view a virtual table, you must create a list page based on the virtual table.
 
 
-## See also
+## Related information
 
 [Date virtual table](devenv-date-virtual-table.md)

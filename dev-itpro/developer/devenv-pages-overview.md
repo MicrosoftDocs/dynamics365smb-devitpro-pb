@@ -178,7 +178,7 @@ We recommend that you simplify the user experience by reducing what users see by
 - Add a target Help file for context-sensitive Help for the feature that the page object supports
 
 
-## See also
+## Related information
 
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  

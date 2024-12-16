@@ -91,7 +91,7 @@ This topic describes how to set up an environment for developing a module in the
    > If you copy the script, remember to update the path to the license file ($licenseFile). Also, if you are using a demo license, remove the **-includeTestToolkit** and **-includeTestLibrariesOnly** options.
 5. Run the script to create the Docker container. This can take some time if you are running it for the first time.
 
-## See Also
+## Related information
 [Getting Started with Modules](devenv-getting-started.md)  
 [Create a New Module in the System Application](devenv-new-module.md)  
 [Module Architecture](devenv-blueprint.md)  

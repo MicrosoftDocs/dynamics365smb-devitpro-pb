@@ -116,7 +116,7 @@ You can always add more breakpoints while debugging.
 8. Stop the attach debugging session by selecting **Detach** in the Visual Studio Code toolbar.
 
 
-## See Also  
+## Related information  
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  

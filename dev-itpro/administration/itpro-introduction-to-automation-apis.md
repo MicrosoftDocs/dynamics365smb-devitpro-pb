@@ -230,7 +230,7 @@ To view ongoing extension installation status, issue [GET extensionDeploymentSta
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionDeploymentStatus
 ```
 
-## See also
+## Related information
 
 [Automation company](resources/dynamics_automationcompany.md)  
 [Company](resources/dynamics_company.md)  

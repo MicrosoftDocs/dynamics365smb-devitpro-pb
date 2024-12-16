@@ -3,7 +3,7 @@ title: Developing a custom API
 description: Learn how to develop a custom API page by using an AL extension and accessing it to retrieve responses and make updates through the API.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 03/14/2024
+ms.date: 11/28/2024
 ms.topic: conceptual
 ms.reviewer: solsen
 ---
@@ -449,7 +449,7 @@ Which results in following response:
 3. Use Enumerations.
 4. Make sure to localize your custom API pages:
     - Use `EntityCaption` and `EntitySetCaption` properties
-    - Use captions for fields
+    - Use captions for fields if they're different than the source table
     - Use captions for enums
     - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
 

@@ -219,7 +219,7 @@ with CustLedgEntry do begin
 end;  
 ```  
 
-## See also
+## Related information
 
 [Control statements](devenv-al-control-statements.md)  
 [Methods](devenv-al-methods.md)  

@@ -141,7 +141,7 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps and ext
 
 For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
 
-## See also
+## Related information
 
 [Web services overview](../webservices/web-services.md)  
 [Developing Connect apps](../developer/devenv-develop-connect-apps.md)   

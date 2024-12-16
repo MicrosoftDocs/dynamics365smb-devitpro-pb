@@ -2,7 +2,7 @@
 title: Upgrading Unmodified C/AL Application to version 25
 description: Describes how to upgrade an unmodified Business Central 14 application to version 25
 ms.custom: bap-template
-ms.date: 09/04/2024
+ms.date: 11/20/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -267,7 +267,7 @@ Sync-NAVTenant : [31;1mSync-NAVTenant: [0m
 [31;1m[36;1mLine |[0m
 [31;1m[36;1m[36;1m  15 | [0m     $output = [36;1mSync-NAVTenant @cmdletArgs[0m;[0m
 [31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mMissing appid on table extension metadata for table extension Hybrid Activites Cue (part of extension 58623bfa-0559-4bc2-ae1c-0979c29fd9e0) on table 
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mMissing appid on table extension metadata for table extension Hybrid Activites Cue (part of extension) on table 
 Activities Cue[0m
 At line:1 char:1
 + Sync-NAVTenant -ServerInstance $NewBcServerInstance -Tenant $TenantId ...

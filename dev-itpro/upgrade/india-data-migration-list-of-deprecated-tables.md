@@ -159,6 +159,6 @@ ms.reviewer: jswymer
 |16598|Capitalize CWIP Line|
 |16599|Posted Capitalize CWIP Header|
    
-## See Also
+## Related information
 
 [Upgrading [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](upgrading-to-business-central.md)  

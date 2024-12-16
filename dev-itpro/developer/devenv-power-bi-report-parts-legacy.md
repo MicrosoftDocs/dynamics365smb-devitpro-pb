@@ -252,7 +252,7 @@ pageextension 50101 TeamMemberRCPwrBiExt extends "Team Member Role Center"
 ```
 
 
-## See Also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)  
 [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  

@@ -51,6 +51,6 @@ You must use the **Recommended Apps** codeunit to build collections. The followi
 
 When your collection is ready, you can deploy it to customer tenants. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md). Afterward, the **Recommended Apps** page will display the apps and your customer can install them. Customers can choose the app in the list to learn more about it, and the details include a link to install the app from AppSource.
 
-## See Also
+## Related information
 
 [Onboarding experiences in Business Central](onboarding-experiences.md)  

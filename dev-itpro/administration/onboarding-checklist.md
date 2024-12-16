@@ -153,7 +153,7 @@ Don't:
 > [!IMPORTANT]
 > The expected duration of a checklist task is always minutes, keep this in mind when creating your Guided Experience Items.
 
-## See also
+## Related information
 
 [Teaching tips and in-app tours for onboarding users](onboarding-teaching-tips-tours.md)  
 [Onboarding experiences in Business Central](onboarding-experiences.md)  

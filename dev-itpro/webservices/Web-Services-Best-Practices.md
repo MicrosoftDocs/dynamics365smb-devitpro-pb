@@ -23,7 +23,7 @@ This article provides recommendations that you can implement to make your web se
 
 [!INCLUDE[gui_allowed](../developer/includes/include-gui-allowed.md)]
 
-## See also
+## Related information
 
 [Web Services Overview](web-services.md)  
 [Writing fast Web Services](../performance/performance-developer.md)

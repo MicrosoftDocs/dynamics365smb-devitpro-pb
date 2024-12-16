@@ -427,7 +427,7 @@ To display a specific Power BI element, such as a report, visual, or dashboard, 
 - Dynamically changing the context (for example, by calling `SetPageContext` in the `OnAfterGetCurrRecord`) isn't recommended and could lead to unexpected results.
 - Role center pages have no triggers, which means there's no way to call the `SetPageContext` method. As a consequence, any Power BI part in the role center would have the same context: the current user's profile/role.
 
-## See also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)    
 [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)    

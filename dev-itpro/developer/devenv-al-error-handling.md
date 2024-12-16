@@ -90,7 +90,7 @@ You can emit your own telemetry about error situations by using the Telemetry AL
 For more information, see [Telemetry.LogError](../administration/telemetry-feature-telemetry.md#LogError).
 
 
-## See also
+## Related information
 
 [Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
 [Understanding the error dialog](devenv-error-dialog.md)   

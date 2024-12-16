@@ -129,7 +129,7 @@ You can deploy a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] dat
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
 
 
-## See Also  
+## Related information  
  [Data Access](../administration/optimize-sql-data-access.md)    
  [Troubleshooting: SQL Server Connection Problems](../administration/Troubleshooting-SQL-Server-Connection-Problems.md)   
  [Deployment](Deployment.md)

@@ -308,7 +308,7 @@ Occurs when a page customization was converted successfully.
 
 Use this telemetry data to determine how the users are working with the profiles that you provide in extensions. Then, make changes to better suit the users needs as you see fit.
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

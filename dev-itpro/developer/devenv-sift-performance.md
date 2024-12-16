@@ -37,7 +37,7 @@ This topic looks at the factors you must take into consideration when you deal w
 > [!IMPORTANT]  
 >  It is important that you remember to perform tests every time you make any changes to the SIFT structures. You must ensure that the changes that you have made do not cause problems in any other areas of the application. You must also ensure that your changes do not have a negative effect on performance.  
   
-## See Also
+## Related information
 
 [SumIndexField Technology \(SIFT\)](devenv-sift-technology.md)  
 [SIFT and SQL Server](devenv-sift-and-sql-server.md)  

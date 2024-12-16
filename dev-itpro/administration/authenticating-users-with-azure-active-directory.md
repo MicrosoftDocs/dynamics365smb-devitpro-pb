@@ -575,7 +575,7 @@ When you mount a tenant, you can give the tenant an additional ID by setting the
 
 If you are connecting to your solution from Visual Studio Code, then you must also specify the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server config parameter `ValidAudiences` and set it to `https://api.businesscentral.dynamics.com`. If you do not do this, you will get the error `securitytokeninvalidaudienceexception` in the application log when trying to download symbols.
 
-## See Also  
+## Related information  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
 [Troubleshooting: SAML2 token errors with Microsoft Entra ID/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  

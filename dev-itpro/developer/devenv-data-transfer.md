@@ -235,6 +235,6 @@ end;
 
 As with CopyFields, CopyRows is a bulk operation. It provides performant execution by doing only a single SQL statement for the entire operation, instead of doing multiple per-row operations. Measurements have shown an ~50x performance improvement with a DataTransfer solution compared with a record API solution.
 
-## See Also
+## Related information
 
 [Upgrading Extensions](devenv-upgrading-extensions.md)  

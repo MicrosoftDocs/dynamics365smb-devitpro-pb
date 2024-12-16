@@ -197,7 +197,7 @@ codeunit 50102 EnableAdvancedApplicationArea
 
 If you decide to code application areas as an extension, there are some aspects that must be considered. Application areas enable hiding entire business scenarios and you can have the same code base, which makes it possible to quickly modify the UI for different business scenarios or audiences. However, tagging errors as missing tags or incorrect tags occur and every single control must be tagged. 
 
-## See Also
+## Related information
 
 [Module System Application](/dynamics365/business-central/application/system-application/module/system-application/)    
 [Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)    

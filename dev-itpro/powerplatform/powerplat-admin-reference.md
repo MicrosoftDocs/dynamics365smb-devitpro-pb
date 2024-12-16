@@ -81,7 +81,7 @@ From the development tooling, existing elements such as forms can be modified fo
 
 When the solution is exported, it will contain hard dependencies on the virtual table generated in the **MicrosoftBusinessCentralVE** solution.
 
-## See Also
+## Related information
 
 [Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  

@@ -240,7 +240,7 @@ https://github.com/MSOpenTech/azure-activedirectory-library-for-ios
 https://github.com/MSOpenTech/azure-activedirectory-library-for-android
 
 
-## See Also
+## Related information
   
 [Web Services Authentication](web-services-authentication.md)  
 [OData Web Services](OData-Web-Services.md)  

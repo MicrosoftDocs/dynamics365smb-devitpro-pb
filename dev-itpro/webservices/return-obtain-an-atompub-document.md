@@ -83,5 +83,5 @@ With a filtered data feed, you use special syntax in the URI to define a query o
     https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/Customer?$filter=City-eq-'Birmingham'  
     ```  
   
-## See Also  
+## Related information  
  [OData Web Services](OData-Web-Services.md)

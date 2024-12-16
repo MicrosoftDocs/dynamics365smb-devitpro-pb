@@ -819,7 +819,7 @@ Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance unti
         > [!NOTE]
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
-## See also  
+## Related information  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)    
 [Upgrading to Business Central](upgrading-to-business-central.md)    

@@ -54,7 +54,7 @@ Occurs when a user gets a permissions-related error message in [!INCLUDE[prod_sh
 {"errorMessage":"You do not have the following permission: Allow Action Automate","aadTenantId":"common","component":"Dynamics 365 Business Central Server","environmentType":"Production","telemetrySchemaVersion":"1.0","eventId":"RT0031","componentVersion":"21.0.42152.0","companyName":"CRONUS International Ltd.","clientType":"WebClient","alObjectId":"0","alObjectType":"System","permissionType":"Execute","permissionArea":"System"}
 -->
 
-## See also
+## Related information
 
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

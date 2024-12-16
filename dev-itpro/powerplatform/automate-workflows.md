@@ -225,7 +225,7 @@ The **Find records (V3)** action finds records in the same way as [filter expres
    > [!NOTE]
    > All the actions and triggers in the connector (except the ones related to approvals) support Business Central APIs coming from AppSource extensions or from other extensions installed in your Business Central environment, provided that they follow the API best practices. Learn more at [Developing a Custom API](/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api).
 
-## See also
+## Related information
 
 [Manage Power Automate Flows](manage-power-automate-flows.md)  
 [Set Up Instant Flows](instant-flows.md)  

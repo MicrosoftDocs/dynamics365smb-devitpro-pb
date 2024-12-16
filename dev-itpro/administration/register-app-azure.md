@@ -141,7 +141,7 @@ This issue indicates there's a problem with the configuration of the Azure regis
 
 While consenting to the services for the initial connection, you keep getting prompted to consent instead of connecting, there may be a problem with the reply URL that used in the **Set up your Microsoft Entra accounts** assisted setup guide. The first part of the reply URL, before `OAuthLanding.htm`, should exactly match what appears in your browser URL when you open the Business Central web client. For example, if the browser URL is `https://localhost/BC240` on your computer, then the reply URL you provide must be `https://localhost/BC240/OAuthLanding.htm`. The reply URL must also be included in the app you registered in Microsoft Entra ID previously in this article. 
  
-## See Also
+## Related information
 
 [Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 [FAQ about Migrating to the Cloud from On-Premises Solutions](faq-migrate-data.md)  

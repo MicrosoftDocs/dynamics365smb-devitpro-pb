@@ -85,7 +85,7 @@ The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] won't detect when th
 
 <!-- - In the project settings file, make changes to one of the settings, such as **al.ruleSetPath**, and save it. You can then undo the changes. -->
 
-## See also
+## Related information
 
 [Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  

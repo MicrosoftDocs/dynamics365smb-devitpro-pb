@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 10/30/2024
+ms.date: 11/21/2024
 ms.custom: bap-template 
 ---
 
@@ -26,6 +26,7 @@ You can use the page scripting on any Business Central environment type, includi
 ## What is captured?
 
 The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool. For example, it can't automate control add-ins, embedded Power BI reports, or anything outside of the Business Central web client experience.
+
 
 ## Prerequisites
 
@@ -208,17 +209,18 @@ You can save the recording as YAML file that can be downloaded, shared, edited, 
 
 You can share a recording or a playback as a link (URL) that you can share with others. The link includes the full recording along with the results that occurred during playback. To share a recording as a link, select **Share** ![share recording](media/page-scripting-share-recording-button.png) > **Copy Link** in the control bar.
 
-## Best practices and tips
+## Best practices, tips, and considerations
 
-- Start recording from a well-known place, like the role center. Playback always starts from the current page.
-- When you select a value in a grid, filter it so that the desired value is the first one.
-- Create new entities to use in a test whenever possible. For example, create a new customer to use in the new sales order test.
-- Avoid dependencies on data that might not be available during playback.
-- Break down recording to small parts for easier maintenance, for example:
+- Start recording from a familiar place: Begin recording from a well-known location, such as the role center. Remember, the playback always starts from the current page.
+- Filter grid selections: When you're selecting a value in a grid, filter it so that the desired value appears first.
+- Create new entities: Whenever possible, create new entities to use in a test. For example, create a new customer for the new sales order test.
+- Avoid dependencies on data: Try not to depend on data that might not be available during playback.
+- Break down recordings: Divide recordings into smaller parts for easier maintenance. For example:
   - Recording 1: setup user.
   - Recording 2: create customer.
   - Recording 3: create sales order.
   - Recording 4: post sales order.
+- Avoid multiple line selections: Multiple line selections aren't recorded as expected. If you select multiple records in a list during a recording, only the last line selection is recorded and played back.
 
 ## Run page scripts in pipelines
 

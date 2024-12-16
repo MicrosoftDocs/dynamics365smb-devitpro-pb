@@ -177,7 +177,7 @@ traces
 
 [!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
-## See also
+## Related information
 
 [Telemetry overview](telemetry-overview.md)  
 [Enable sending telemetry to Application Insights](telemetry-enable-application-insights.md)  

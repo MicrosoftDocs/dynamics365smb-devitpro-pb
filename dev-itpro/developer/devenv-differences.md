@@ -97,7 +97,7 @@ For some properties to work, they require you to set another property. An exampl
 
 The `InitValue` property of type `Duration` isn't allowed in the AL Language development environment. The `InitValue` of type `DateTime` is only allowed for the value `0DT`.  
 
-## See Also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)   
 [Get Started with AL](devenv-get-started.md)  

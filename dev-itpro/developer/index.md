@@ -12,6 +12,6 @@ ms.reviewer: solsen
 
 This section contains reference articles for AL for [!INCLUDE [prod_short](includes/prod_short.md)]. You'll find the documentation divided into groups; diagnostics, AVS diagnostics, data types and methods, method attributes, properties, and triggers. Use **Filter by title** in the upper left corner to search, if you already know the name of a method, trigger, or have a diagnostics error number.
 
-## See also
+## Related information
 
 [Get started with AL](devenv-getting-started.md)

@@ -37,7 +37,7 @@ While most users are confident with split buttons, and likely know the concept f
 
 The Legacy Action Bar toggle is available in users' **My settings** page and reverts the action bar for individual users to the earlier appearance before the modern action bar. We recommend using the modern action bar for the best productivity and that future releases of [!INCLUDE [prod_short](includes/prod_short.md)] might not provide the legacy action bar option.
 
-## See also
+## Related information
 
 [Actions in AL](devenv-actions-overview.md)  
 [Adding actions to a page](devenv-adding-actions-to-a-page.md)  

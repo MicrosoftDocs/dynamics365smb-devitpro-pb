@@ -68,7 +68,7 @@ GET /admin/v2.21/applications/{applicationFamily}/Countries/{countryCode}/Rings/
 }
 ```
 
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

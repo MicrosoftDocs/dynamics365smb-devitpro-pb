@@ -175,7 +175,7 @@ The following table describes the settings that are available in the navsettings
 |PrivacyLink|Specifies the URL to the privacy information for the application. This link also appears in the sign-in page.<br /><br />Default value: https://go.microsoft.com/fwlink/?LinkId=837448|
 -->
 
-## See Also  
+## Related information  
 [Setting up Multiple Business Central Web Server Instances](../deployment/configure-multiple-web-server-instances.md)   
 [Install Business Central Components](../deployment/install-using-setup.md)  
 [Business Central Web Server Overview](../deployment/web-server-overview.md)  

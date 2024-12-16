@@ -161,7 +161,7 @@ page 50100 MyListPage
 }
 ```
 
-## See Also
+## Related information
 
 [Designing List Pages](devenv-designing-list-pages.md)  
 [Working With Media on Records](devenv-working-with-media-on-records.md)  

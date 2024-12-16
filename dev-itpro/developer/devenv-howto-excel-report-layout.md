@@ -339,7 +339,7 @@ Excel now opens and you should see the dataset of the Contact List. **Note** tha
 
 It's possible to specify multiple layouts for a report. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
 
-## See also
+## Related information
 
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)

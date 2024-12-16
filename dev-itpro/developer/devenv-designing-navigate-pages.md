@@ -682,5 +682,5 @@ enumextension 50100 MyEnumExtension extends "Assisted Setup Group"
 }
 ```
   
-## See Also  
+## Related information  
 

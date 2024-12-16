@@ -153,7 +153,7 @@ The following diagram illustrates the main trigger and operation sequence relate
 
 For a more detailed discussion on these concepts, see [Report triggers and operations](devenv-report-triggers.md#requestpage)
 
-## See Also
+## Related information
 
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  

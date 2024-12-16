@@ -323,7 +323,7 @@ Don't add keys that are fields of the base table. // still true
 
 When you invoke IntelliSense for table fields, the primary key members are marked with a `(PKx)` in the IntelliSense list, where `x` is a sequential number, which indicates the order of the field in the key. This allows you to identify the table fields that make up the primary key and the sequency of these fields in the key.
 
-## See also
+## Related information
 
 [Key properties](properties/devenv-key-properties.md)
 [Tables overview](devenv-tables-overview.md)  

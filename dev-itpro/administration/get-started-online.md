@@ -93,7 +93,7 @@ As a Business Central reselling partner, you are the administrator of the Busine
 
 For more information, see [Administration of Business Central Online](tenant-administration.md) and [The Business Central Administration Center](tenant-admin-center.md).  
 
-## See also
+## Related information
 
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)] on-premises](../deployment/Deployment.md)  

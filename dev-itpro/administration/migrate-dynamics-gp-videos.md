@@ -108,7 +108,7 @@ This video compares the process of using posting accounts in Dynamics GP and [!I
 
 > [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE4ZZAy]
 
-## See also
+## Related information
 
 [Migrate Dynamics GP Data to the Cloud](migrate-dynamics-gp.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  

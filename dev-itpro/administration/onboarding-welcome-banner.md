@@ -37,7 +37,7 @@ For more information, see the [Get Users Started with the Checklist](onboarding-
 You can modify the banner texts dynamically from code. This is done by subscribing to the event **OnBeforeUpdateBannerLabels**.
 Here you can set the banner texts dynamically. This is especially useful if you have profiled the customer/prospect before signing them into [!INCLUDE [prod_short](../includes/prod_short.md)]. This is done using the sign-up context, where you can get more information about the prospect before sign-up and pass that information into [!INCLUDE [prod_short](../includes/prod_short.md)] and react on that information on the welcome banner and in the checklist. For more information about pivoting the experience to become more customer-centric, see [Create customer-centric onboarding experiences using SignupContext](onboarding-signupcontext.md). The welcome banner and the checklist are great stages on which you can greet the prospect/customer according to their expectation. For example, if you have profiled the prospect to be interested in a given business area, consider setting text on the welcome banner and provide checklist content that revolves around that area.
 
-## See also
+## Related information
 
 [Get Users Started with the Checklist](onboarding-checklist.md)  
 [Teaching tips and in-app tours for onboarding users](onboarding-teaching-tips-tours.md)  

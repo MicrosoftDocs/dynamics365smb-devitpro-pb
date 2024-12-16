@@ -74,7 +74,7 @@ The following example starts the process for creating a new integration table in
 
 Users are required to register a Microsoft Entra application and provide its client ID and redirect URI as arguments when running the tool. To register an application, sign in to the Microsoft Entra admin center as a Cloud Application Administrator. The application must have the **user_impersonation** permission for Dynamics CRM API. The Redirect URI type must be **Public client/native (mobile & desktop).
 
-## See also
+## Related information
 
 [Overview - integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Custom integration with Microsoft Dataverse](../administration/administration-custom-cds-integration.md)  

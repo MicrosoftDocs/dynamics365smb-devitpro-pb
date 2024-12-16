@@ -199,7 +199,7 @@ Giving prospects access to a pre-configured trial of [!INCLUDE[prod_short](inclu
 
 Learn more at [Preparing Demonstration Environments](administration/demo-environment.md).  
 
-## See also
+## Related information
 
 [Technical Support](technical-support.md)  
 [Configuring the Help Experience](deployment/configure-help.md)  

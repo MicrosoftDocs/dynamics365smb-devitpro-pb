@@ -50,7 +50,7 @@ Yes. Here's the order of calls:
 2. All the existing logic on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] table and backing tables is invoked. This logic includes default value entry that might change values.
 3. [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] sends another Retrieve (single) message to get the latest copy of the data, including any columns that default values were entered for.
 
-## See Also
+## Related information
 
 [Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  

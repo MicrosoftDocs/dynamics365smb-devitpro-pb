@@ -109,7 +109,7 @@ Temporary tables are useful on reports when the column data isn't mapped directl
 
 For XMLPorts, if the data that you're importing has a different structure than the table in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] that you want to insert it into, you can import the data into a temporary table. You can then modify the data before inserting it into the database.
 
-## See Also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)  
 [Table Object](devenv-table-object.md)  

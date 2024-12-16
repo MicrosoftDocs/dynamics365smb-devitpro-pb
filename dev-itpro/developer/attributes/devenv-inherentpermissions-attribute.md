@@ -50,7 +50,7 @@ Specifies the scope of the permissions that are assigned (Entitlements, Permissi
 
 ## Remarks
 
-For information about the `<permission value>` syntax, refer to [permissions values](../properties/devenv-permissions-property.md#values) or [permissions on objects](../devenv-permissions-on-database-objects.md#permissions-on-objects).
+For information about the `<permission value>` syntax, refer to [permissions values](../properties/devenv-permissions-property.md#property-values) or [permissions on objects](../devenv-permissions-on-database-objects.md#permissions-on-objects).
 
 ## Example 
 

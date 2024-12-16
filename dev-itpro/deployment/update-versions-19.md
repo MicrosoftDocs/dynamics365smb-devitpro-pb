@@ -49,7 +49,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 |[5009178](https://support.microsoft.com/help/5009178)|Update 19.2 |December 2021|Application Build 19.2.33504</br>Platform Build 19.0.33475|
 |[5007779](https://support.microsoft.com/help/5007779)|Update 19.1 |November 2021|Application Build 19.1.32186</br>Platform Build 19.0.32155|
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v19.md)  

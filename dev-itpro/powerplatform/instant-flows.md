@@ -242,7 +242,7 @@ The following table includes the most common problems that prevent instant flows
 - Run the flow from [!INCLUDE[prod_short](../includes/prod_short.md)]. For more information, see [Run Instant Flows](/dynamics365/business-central/across-how-use-financials-data-source-flow#run-instant-flows).
 - Promote the flow action to more prominent locations on the page. Learn more at [Run Power Automate flows from page actions](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
 
-## See also
+## Related information
 
 [Manage Power Automate Flows](manage-power-automate-flows.md)  
 [Troubleshoot Your Business Central Automated Workflows](/dynamics365/business-central/across-flow-troubleshoot)  

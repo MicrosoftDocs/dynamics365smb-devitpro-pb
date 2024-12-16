@@ -89,7 +89,7 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 > [!NOTE]  
 > If you have questions for building localization apps, please contact the [Microsoft localization team](mailto:d365bcloc@microsoft.com).
 
-## See Also
+## Related information
 
 [Get Started with Building Apps](get-started.md)  
 [The SMB Opportunity for App Publishers](opportunity-app-publisher.md)  

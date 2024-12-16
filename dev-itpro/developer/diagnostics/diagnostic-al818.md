@@ -21,6 +21,6 @@ The {0} '{1}' already defines an event called '{2}' with the same parameter type
 > This warning will become an error with Business Central 2025 release wave 1.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

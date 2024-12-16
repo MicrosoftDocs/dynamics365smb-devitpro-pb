@@ -302,7 +302,7 @@ The following table lists the objects we've introduced to make it easier for you
 |Legacy User Groups|codeunit|Check whether user groups are enabled in the environment.|
 |User Groups Migration Guide|page|A guide that can help you convert user groups to permission sets. To learn more, go to [Optional: Convert user groups to permission sets](/dynamics365/business-central/ui-security-groups#optional-convert-user-groups-to-permission-sets). |
   
-## See also
+## Related information
 
 [Deprecated Features in the Base App](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1)  
 [Best Practices for Deprecation of AL Code](/dynamics365/business-central/dev-itpro/developer/devenv-deprecation-guidelines)  

@@ -38,7 +38,7 @@ If a web service couldn't be published or a published web service isn't working,
 
 For more information, go to [Analyzing Web Service Publish Failure Telemetry](../administration/telemetry-webservices-publish-failure-trace.md).
 
-## See also
+## Related information
 
 [Web Services Overview](web-services.md)  
 [Web Services Best Practices](Web-Services-Best-Practices.md)  

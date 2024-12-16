@@ -21,6 +21,6 @@ Duplicate package dependency with application ID '{0}', and name '{1}'. Remove d
 Multiple package dependencies with the same application ID and name have been defined.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -265,7 +265,7 @@ GROUP BY Customer."No.", Customer.Name
 * [Teddy Herryanto](https://www.linkedin.com/in/teddyherryanto/) | [!INCLUDE[prod_short](includes/prod_short.md)] Techno Functional Consultant
 
 
-## See Also
+## Related information
 
 [Method Property](properties/devenv-Method-Property.md)  
  [Query Object](devenv-query-object.md)  

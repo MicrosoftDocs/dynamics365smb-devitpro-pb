@@ -28,7 +28,7 @@ To format a range, in an already opened project, open the document that you want
 
 ![Format Selection.](media/format-selection.gif)
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [AL outline view](devenv-al-outline-view.md)  

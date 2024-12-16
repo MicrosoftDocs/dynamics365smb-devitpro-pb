@@ -28,7 +28,7 @@ For more information about the [!INCLUDE[d365_dev_long_md](includes/d365_dev_lon
 - [Triggers](triggers-auto/devenv-triggers.md)  
 - [Diagnostics](diagnostics/diagnostics-overview.md)
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [AL Methods Overview](devenv-al-methods.md)  

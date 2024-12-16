@@ -33,7 +33,7 @@ In the following sections you find descriptions of components you can use when a
 
   For information, see [Create customer centric onboarding experiences](onboarding-signupcontext.md).
 
-## See also
+## Related information
 
 [Get Users Started with the Checklist](onboarding-checklist.md)  
 [Onboard New Users with the Welcome Banner](onboarding-welcome-banner.md)  

@@ -83,7 +83,7 @@ For Dynamics GP migration:
 - [Run data upgrade for Dynamics GP](migration-data-upgrade-gp.md)
 - [Complete Dynamics GPcloud migration](migration-finish-gp.md)
 
-## See also
+## Related information
 
 [Dynamics GP migration to Business Central online: End-to-end overview](migrate-gp-overview.md)  
 [FAQ about migrating to Business Central online from on-premises solutions](faq-migrate-data.md)  

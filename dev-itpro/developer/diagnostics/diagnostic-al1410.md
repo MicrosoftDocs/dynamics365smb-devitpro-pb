@@ -21,6 +21,6 @@ The target {0} '{1}' for the extension object is not found.
 Cannot resolve the referenced target of a page customization or the target of a profile extension.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

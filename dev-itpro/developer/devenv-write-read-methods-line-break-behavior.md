@@ -199,7 +199,7 @@ codeunit 50111 MyCodeunit
 ```
 -->
 
-## See Also
+## Related information
 
 [Write and WriteText Methods](methods-auto/outstream/outstream-data-type.md)  
 [Read and ReadText Methods](methods-auto/instream/instream-data-type.md)  

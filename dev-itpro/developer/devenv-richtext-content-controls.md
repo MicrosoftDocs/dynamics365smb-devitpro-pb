@@ -124,7 +124,7 @@ page 50100 MyPage
 - The Rich Text Editor must specify `MultiLine = true`.
 - The placement of the Rich Text Editor must be on a root-level group on the page (that is, a FastTab group), and it must be the only control in that group.
 
-## See also
+## Related information
 
 [Blob data type](methods-auto/blob/blob-data-type.md)  
 [BigText data type](methods-auto/bigtext/bigtext-data-type.md)  

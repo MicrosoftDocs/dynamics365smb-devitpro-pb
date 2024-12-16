@@ -18,6 +18,6 @@ The field '{0}' is not of field class 'Normal' and thus cannot be part of the {1
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -42,7 +42,7 @@ The following integration capabilities of the [!include[prod_short](../developer
 |[Integration with Dynamics 365 Sales](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection)| Available|
 |[Microsoft Graph](/graph/overview)  | Currently under evaluation        |
 
-## See also
+## Related information
 
 [Microsoft Responsibilities](microsoft-responsibilities.md)  
 [[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md)  

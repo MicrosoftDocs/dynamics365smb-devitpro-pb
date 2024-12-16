@@ -275,7 +275,7 @@ You can set up a Cue to link to a page that displays details about the transacti
 
  -->
   
-## See Also  
+## Related information  
 [FlowFields](devenv-flowfields.md)  
 [Page Object](devenv-page-object.md)  
 [Pages Overview](devenv-pages-overview.md)  

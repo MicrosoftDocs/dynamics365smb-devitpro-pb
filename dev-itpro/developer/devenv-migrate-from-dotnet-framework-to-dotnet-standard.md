@@ -75,7 +75,7 @@ To analyze dependencies, do the following step:
 
   When the command finished, you have a DGML file that can be opened in Visual Studio. Directed Graph Markup Language (DGML) describes information used for visualization and complexity analysis. It's the format used to persist code maps in Visual Studio.
 
-## See Also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)  
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)  

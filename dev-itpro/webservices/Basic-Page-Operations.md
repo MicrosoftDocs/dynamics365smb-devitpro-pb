@@ -37,7 +37,7 @@ All basic page operations are atomic, which means that either all relevant recor
 
 [!INCLUDE[soap_deprecation](../includes/soap_deprecation_note.md)]
 
-## See also  
+## Related information  
 
 [Web service performance](web-service-performance.md)   
 [Troubleshoot web service errors](web-service-troubleshooting.md)   

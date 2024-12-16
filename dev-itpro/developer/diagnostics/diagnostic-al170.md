@@ -21,6 +21,6 @@ An '=' is expected for property {0}.
 An '=' is expected between a property and its value. The correct syntax is `Property_name = value;`.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

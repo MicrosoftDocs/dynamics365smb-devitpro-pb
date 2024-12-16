@@ -1,9 +1,10 @@
 ---
 title: AL control statements
 description: Compound, conditional, and repetitive control statements in AL for Business Central.
-ms.date: 03/01/2024
+ms.date: 12/02/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.collection: get-started
 ---
 
@@ -41,7 +42,7 @@ The individual statements are separated by a semicolon. In AL, a semicolon is us
 
 The begin-end structure is also called a *block*. Blocks can be useful to refer to the other control structures in AL.  
 
-When begin follows, then, else, or do should be on the same line and preceded by one space character.  
+When `begin` follows, `then`, `else`, or `do` should be on the same line and preceded by one space character.  
 
 ### Example 1
 
@@ -562,7 +563,7 @@ var
     I : integer
 ```
 
-## See also
+## Related information
 
 [Programming in AL](devenv-programming-in-al.md)  
 [AL simple statements](devenv-al-simple-statements.md)  

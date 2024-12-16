@@ -66,7 +66,7 @@ UserName, NavUserPassword, and AccessControlService credential types require tha
 - If you want to set up Microsoft Entra authentication, go to [Authenticating Users with Microsoft Entra ID](authenticating-users-with-azure-ad-overview.md).
 - If you want to set up NavUserPassword authentication, go to [Authenticating Users with NavUserPassword](authenticating-users-with-navuserpassword.md).
 
-## See also  
+## Related information  
 
 [Understanding Users, Profiles, and Role Centers](/dynamics365/business-central/admin-users-profiles-roles)  
 [Configuring Business Central Server](configure-server-instance.md)  
