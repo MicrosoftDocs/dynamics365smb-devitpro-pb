@@ -64,7 +64,7 @@ When a company is created in [!INCLUDE [prod_short](../developer/includes/prod_s
 
 ## Rerunning data replication
 
-> **APPLIES TO: Migration from Business Central on-premises only
+> **APPLIES TO:** Migration from Business Central on-premises only
 
 The first time you run the data replication, all on-premises tables are replicated to the online tenant database. This run is referred to as a full replication. On subsequent runs, the process uses SQL change tracking versions to replicate only data that has changed since the last replication, making the process faster.
 
