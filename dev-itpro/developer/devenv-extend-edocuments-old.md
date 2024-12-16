@@ -1,17 +1,20 @@
 ---
 title: Extending e-documents functionality (deprecated interface)
-description: Learn how to extend e-documents functionality with specific requirements.
+description: Learn how to extend e-documents functionality with specific requirements (deprecated interface).
 author: altotovi
 ms.topic: conceptual
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.devlang: al
 ms.search.keywords: electronic document, electronic invoice, e-document, e-invoice, customization, development, extend, deprecate, obsolete
 ms.search.form: 6103, 6133
-ms.date: 01/30/2024
+ms.date: 12/16/2024
 ms.author: altotovi
 ---
 
 # Extending e-documents functionality (deprecated)
+
+> [!NOTE]
+> The interface described in this article is deprecated. We recommend using the new interface for extending the e-documents framework. Learn more [here](devenv-extend-edocuments.md).
 
 The **E-Documents Core** module is created as an extension and built as a framework. Therefore, by default, there's just a few **Document Formats** or **Service Integration** option. These details, and others, are components of localization apps, which cater to specific local requirements. This framework is intended to cover most requirements for the process of communication with electronic documents (e-documents). However, some parts are left for localization apps. The information in this article helps you add value to this module and use it for your own localization.
 
