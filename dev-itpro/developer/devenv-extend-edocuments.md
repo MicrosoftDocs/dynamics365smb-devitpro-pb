@@ -11,7 +11,7 @@ ms.date: 12/16/2024
 ms.author: altotovi
 ---
 
-# Extending the e-documents functionality
+# Extending the E-Documents functionality
 
 The **E-Documents Core** module is created as an extension and built as a framework. Therefore, by default, there are just a few **Document Formats**, which are based on the localization you're using. This detail, and others, are mostly components of localization apps, which cater to specific local requirements. This framework is intended to cover most requirements for the process of communication with electronic documents (e-documents). However, some parts are left for localization apps. The information in this article helps you add value to this module and use it for your own localization.  
 
@@ -201,13 +201,13 @@ Here's an example of how you could implement each of the methods within the IDoc
 
 The **IDocumentSender** interface defines methods for sending E-Documents to an external service. By implementing this interface, you enable integration between an application and external E-Document services. This interface is part of the **Microsoft.eServices.EDocument.Integration.Interfaces** namespace and facilitates asynchronous and batch operations while ensuring proper logging of communication details. 
 
-##### Key features
+##### Key features of the IDocumentSender interface
 
 - **Async Sending**: Supports asynchronous sending of E-Documents.
 - **Batch Processing**: Enables sending multiple E-Documents using filters.  
 - **Automatic Logging**: Automatically logs HTTP request content and headers when provided in **SendContext**. 
 
-##### How to implement   
+##### How to implement the IDocumentSender interface 
 
 To implement the **IDocumentSender** interface, you need to provide logic for the **Send** procedure, which handles sending E-Documents. Below is a detailed guide and example implementations. 
 
@@ -219,7 +219,7 @@ The **Send** method is responsible for sending an E-Document to an external serv
 - **EDocumentService**: The record containing service configuration details such as the URL and access tokens.
 - **SendContext**: A codeunit that provides context and resources for the send operation.
 
-##### Example implementation 
+##### Example implementation of the Send method
 
 Here's an example implementation of the **Send** method:
 
@@ -255,7 +255,9 @@ begin
 end;
 ```
 
-##### Notes for the implementation  
+##### Notes for the implementation
+
+When implementing the **IDocumentSender** interface, consider the following best practices:
 
 1. **Asynchronous Sending**: To support asynchronous sending, ensure that the implementation also includes the **IDocumentResponseHandler** interface. This enables the processing of responses for async requests. 
 2. **Batch Support**: When handling multiple E-Documents in batch operations, the **EDocument** record is populated using filters.  
@@ -268,14 +270,14 @@ The IDocumentResponseHandler interface provides a standardized method for retrie
 
 The primary purpose of the **IDocumentResponseHandler** is to retrieve the status of a previously sent E-Document from the external service and appropriately update the E-Document Service Status based on the response. It also logs relevant HTTP response details automatically for better traceability. 
 
-##### Key features
+##### Key features of the IDocumentResponseHandler interface
 
 - **Asynchronous Response Handling**: Supports retrieving responses for asynchronously sent E-Documents.
 - **Status Updates**: Automatically updates the E-Document status based on the external service's response.
 - **Error Management**: Handles errors gracefully, including logging error details.
 - **Automatic Logging**: Automatically logs HTTP request and response details when using **SendContext**.
 
-##### How to implement
+##### How to implement the IDocumentResponseHandler interface
 
 To implement the **IDocumentResponseHandler** interface, you need to provide logic for the GetResponse procedure, which handles retrieving the status of an E-Document. Below is a detailed guide and example implementation.  
 
@@ -287,7 +289,7 @@ The **GetResponse** method retrieves the response from the external service for 
 - **EDocumentService**: The record containing service configuration details such as the URL and access tokens.
 - **SendContext**: A codeunit that provides context and resources for the get-response operation.
 
-##### Example implementation
+##### Example implementation of the GetResponse method
 
 Here's an example implementation of the **GetResponse** method:
 
@@ -332,14 +334,14 @@ end;
 
 The **IDocumentReceiver** interface provides a standardized method for receiving and downloading electronic documents (E-Documents) from external API services. If your system requires integration with an E-Document service, implement this interface to handle document retrieval and data download operations efficiently.
 
-##### Key features
+##### Key features of the IDocumentReceiver interface
 
 - **Document Retrieval**: Fetch one or more E-Documents from an external API and store their metadata in temporary BLOBs for processing.  
 - **Content Download**: Download the specific content (for example, XML, PDF) of a document using its metadata. 
 - **Error Handling**: Log and handle errors gracefully during the retrieval and download processes.
 - **Context Management**: Utilize **ReceiveContext** for managing HTTP requests and responses.
 
-##### How to implement
+##### How to implement the IDocumentReceiver interface
 
 To implement the **IDocumentReceiver** interface, you need to provide logic for the **ReceiveDocuments** and **DownloadDocument** methods. Below are detailed explanations and example implementations.  
 
@@ -347,13 +349,13 @@ To implement the **IDocumentReceiver** interface, you need to provide logic for 
 
 The **ReceiveDocuments** method retrieves one or more documents from the external API and stores their metadata in temporary BLOBs for further processing.
 
-##### Parameters  
+##### Parameters of the ReceiveDocuments method
 
 - **EDocumentService**: Record representing the E-Document Service configuration, including the API endpoint.  
 - **DocumentsMetadata**: Temporary BLOB list for storing retrieved document metadata.
 - **ReceiveContext**: A codeunit providing context and resources for the receive operation.  
 
-##### Example implementation
+##### Example implementation of the ReceiveDocuments method
 
 ```AL
 procedure ReceiveDocuments(var EDocumentService: Record "E-Document Service"; DocumentsMetadata: Codeunit "Temp Blob List"; ReceiveContext: Codeunit ReceiveContext)
@@ -388,14 +390,14 @@ end;
 
 The **DownloadDocument** method downloads the content of a specific document (for example, XML, PDF) using the document metadata.
 
-##### Parameters
+##### Parameters of the DownloadDocument method
 
 - **EDocument**: Record representing the specific E-Document.
 - **EDocumentService**: Record containing service configuration details such as the URL and authentication tokens.
 - **DocumentMetadata**: Temporary BLOB containing the metadata for the document.
 - **ReceiveContext**: A codeunit providing context and resources for the download operation.
 
-##### Example implementation 
+##### Example implementation of the DownloadDocument method
 
 ```AL
 procedure DownloadDocument(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; DocumentMetadata: Codeunit "Temp Blob"; ReceiveContext: Codeunit ReceiveContext)
@@ -438,7 +440,7 @@ end;
 
 The **ISentDocumentActions** interface provides a set of default actions for managing outgoing E-Documents through integration with external APIs. This interface simplifies the process of communicating with external services to manage document statuses effectively. Developers can use the provided methods to handle approval and cancellation processes seamlessly, ensuring accurate status updates within the system.  
 
-##### Key features
+##### Key features of the ISentDocumentActions interface
 
 These actions allow you to:  
 
@@ -446,19 +448,19 @@ These actions allow you to:
 - **Check Cancellation Status**: Determine whether a sent E-Document has been successfully canceled by the external service.  
 - **Streamline Integration**: Standardize HTTP request handling for approval and cancellation workflows.   
 
-##### How to implement
+##### How to implement the ISentDocumentActions interface
 
 To use the **ISentDocumentActions** interface, you need to implement the **GetApprovalStatus** and **GetCancellationStatus** methods. Each method interacts with the external API to manage the status of E-Documents.  
 
 #### **GetApprovalStatus** method  
 
-##### Parameters
+##### Parameters of the GetApprovalStatus method
 
 - **EDocument**: Record of type "E-Document" representing the document to be approved.
 - **EDocumentService**: Record of type "E-Document Service" for interacting with the external API.
 - **ActionContext**: Codeunit **ActionContext** for managing HTTP requests and responses.
 
-##### Example implementation 
+##### Example implementation of the GetApprovalStatus method
 
 ```AL
 procedure GetApprovalStatus(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionContext: Codeunit ActionContext): Boolean
@@ -490,13 +492,13 @@ end;
 
 #### **GetCancellationStatus** method 
 
-##### Parameters
+##### Parameters of the GetCancellationStatus method
 
 - **EDocument**: Record of type "E-Document" representing the document to be canceled. 
 - **EDocumentService**: Record of type "E-Document Service" for interacting with the external API. 
 - **ActionContext**: Codeunit **ActionContext** for managing HTTP requests and responses.  
 
-##### Example implementation
+##### Example implementation of the GetCancellationStatus method
 
 ```AL
 procedure GetCancellationStatus(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionContext: Codeunit ActionContext): Boolean
@@ -525,7 +527,7 @@ end;
 
 #### Document action  
 
-##### Key features
+##### Key features of the IDocumentAction interface
 
 The **IDocumentAction** interface defines a general-purpose method for performing various actions on E-Documents. It allows developers to:
 
@@ -534,19 +536,19 @@ The **IDocumentAction** interface defines a general-purpose method for performin
 - **Streamline Workflows**: Centralize action execution logic for consistent and maintainable integration.   
 - **Handles Logging and Error Handling**: When using an action using the interface, you get all the logging and error handling for free. All built directly in the framework. 
 
-##### How to implement  
+##### How to implement the IDocumentAction interface
 
 To use the **IDocumentAction** interface, implement the **InvokeAction** method. This method executes a specified action by interacting with the external API and updates the E-Document status accordingly. Then extend the actions enum and call the **procedure InvokeAction(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionType: Enum "Integration Action Type"; ActionContext: Codeunit ActionContext)** in the **Integration Management** codeunit to run the action. You can call this from your own action.  
 
 #### InvokeAction method  
 
-##### Parameters
+##### Parameters of the InvokeAction method
 
 - EDocument: Record of type "E-Document" representing the document on which the action is performed.  
 - EDocumentService: Record of type "E-Document Service" for interacting with the external API.   
 - ActionContext: Codeunit ActionContext for managing HTTP requests and responses.    
 
-##### Example implementation 
+##### Example implementation of the InvokeAction method
 
 ```AL
 procedure InvokeAction(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionContext: Codeunit ActionContext): Boolean
