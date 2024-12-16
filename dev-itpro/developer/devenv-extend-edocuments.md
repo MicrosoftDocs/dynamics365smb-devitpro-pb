@@ -1,27 +1,27 @@
 ---
-title: Extending e-documents functionality
+title: Extending the e-documents functionality
 description: Learn how to extend e-documents functionality with specific requirements.
 author: altotovi
 ms.topic: conceptual
-ms.reviewer: 
+ms.reviewer: solsen
 ms.devlang: al
 ms.search.keywords: electronic document, electronic invoice, e-documents, e-invoice, customization, development, extend
 ms.search.form: 6103, 6133
-ms.date: 12/13/2024
+ms.date: 12/16/2024
 ms.author: altotovi
 ---
 
-# Extending e-documents functionality   
+# Extending the e-documents functionality
 
-The **E-Documents Core** module is created as an extension and built as a framework. Therefore, by default, there's just a few **Document Formats** (based on localization you are using). This detail, and others, are mostly components of localization apps, which cater to specific local requirements. This framework is intended to cover most requirements for the process of communication with electronic documents (e-documents). However, some parts are left for localization apps. The information in this article helps you add value to this module and use it for your own localization.  
+The **E-Documents Core** module is created as an extension and built as a framework. Therefore, by default, there's just a few **Document Formats** (based on localization you're using). This detail, and others, are mostly components of localization apps, which cater to specific local requirements. This framework is intended to cover most requirements for the process of communication with electronic documents (e-documents). However, some parts are left for localization apps. The information in this article helps you add value to this module and use it for your own localization.  
 
-Additionally, when you explore the **Service Integration** option, you'll find several choices available. However, if you feel the need to add your own service, whether it's a local connector or another global or regional connector, you can extend this app by adding new services based on your requirements. This can be done as part of localization or as a new ISV app.    
+Additionally, when you explore the **Service Integration** option, you find several choices available. However, if you feel the need to add your own service, whether it's a local connector or another global or regional connector, you can extend this app by adding new services based on your requirements. This can be done as part of localization or as a new ISV app.
 
 ## Develop E-Documents extension  
 
 In order to implement your localization or other extension on top of **E-Document Core** application, you should undertake the following steps.  
 
-### Create and setup new extension   
+### Create and set up new extension   
 
 Create a new extension and add dependency to "E-Document Core" application In your app.json file, add dependency on **E-Document Core** extension:  
 
@@ -40,7 +40,7 @@ Create a new extension and add dependency to "E-Document Core" application In yo
 
 The E-Document interface comprises a collection of methods designed to streamline the export of Business Central documents (such as Sales Invoices) into E-Document blobs based on predefined format specifications. Furthermore, it facilitates the reverse process by enabling the import of documents from blobs back into Business Central. 
 
-First, you will need to extend the enum and associate it with your implementation codeunit:  
+First, you'll need to extend the enum and associate it with your implementation codeunit:  
 
 ```AL
 
@@ -104,7 +104,7 @@ You also have the option to perform distinct checks depending on document proces
     end;
  ```
 
-- **Create**: Use it to create a blob representing the posted document. At this point, the core extension has created an "E-Document" record with initial information like the document type , and automatically determined the type of the document, that you can find in **Document Type** field.  
+- **Create**: Use it to create a blob representing the posted document. At this point, the core extension has created an "E-Document" record with initial information like the document type, and automatically determined the type of the document, that you can find in **Document Type** field.  
 
 > [!NOTE]
 > The document type is automatically identified by the core extension based on the source document. In case you have introduced your custom document type, you will need to extend the **E-Document Type** enum and populate the **E-Document Type** field accordingly.  
@@ -184,7 +184,7 @@ procedure PrepareDocument(var EDocument: Record "E-Document"; var CreatedDocumen
 
 The E-Document integration interface comprises a collection of methods designed to streamline the process of integrating with endpoints for submitting electronic documents.  
 
-First, you will need to extend the enum and associate it with your implementation codeunit:  
+First, you'll need to extend the enum and associate it with your implementation codeunit:  
 
 ```AL
 enumextension 50100 Integration extends "Service Integration"
@@ -222,7 +222,7 @@ The **Send** method is responsible for sending an E-Document to an external serv
 
 ##### Example Implementation 
 
-Here is an example implementation of the **Send** method:
+Here's an example implementation of the **Send** method:
 
 ```AL
 procedure Send(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; SendContext: Codeunit SendContext)
@@ -336,7 +336,7 @@ The **IDocumentReceiver** interface provides a standardized method for receiving
 ##### Key Features 
 
 - **Document Retrieval**: Fetch one or more E-Documents from an external API and store their metadata in temporary blobs for processing.  
-- **Content Download**: Download the specific content (e.g., XML, PDF) of a document using its metadata. 
+- **Content Download**: Download the specific content (for example, XML, PDF) of a document using its metadata. 
 - **Error Handling**: Log and handle errors gracefully during the retrieval and download processes.    
 - **Context Management**: Utilize **ReceiveContext** for managing HTTP requests and responses.   
 
@@ -387,7 +387,7 @@ end;
 
 #### **DownloadDocument** Method  
 
-The **DownloadDocument** method downloads the content of a specific document (e.g., XML, PDF) using the document metadata.    
+The **DownloadDocument** method downloads the content of a specific document (for example, XML, PDF) using the document metadata.    
 
 ##### Parameters   
 
@@ -576,7 +576,7 @@ end;
 
 ## Helper Procedures   
 
-There is a set of EDocument Helper codeunit that consists of collection of utility methods that are highly recommended for building your localization app. These methods can assist you in various tasks, such as effortlessly logging any encountered error messages.  
+There's a set of EDocument Helper codeunit that consists of collection of utility methods that are highly recommended for building your localization app. These methods can assist you in various tasks, such as effortlessly logging any encountered error messages.  
 
 Codeunit list:
 
@@ -606,7 +606,7 @@ procedure Create(EDocumentService: Record "E-Document Service"; var EDocument: R
 
 ## Missing a feature  
 
-If you believe there are any essential features that could enhance the ease of developing an e-document solution, kindly get in touch by generating an issue in this repository titled "E-document: < details >" or start the article on [aka.ms/BCYammer](https://aka.ms/BCYammer), and we will get back to you.
+If you believe there are any essential features that could enhance the ease of developing an e-document solution, kindly get in touch by generating an issue in this repository titled "E-document: < details >" or start the article on [aka.ms/BCYammer](https://aka.ms/BCYammer), and we'll get back to you.
 
 
 ## Related information
