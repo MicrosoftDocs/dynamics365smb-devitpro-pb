@@ -47,7 +47,7 @@ New customers automatically get the latest builds of Business Central (25.2). If
 
 ### Sales Order Agent in Business Central - Early Access Program (US only)
 
-We've recently announced the [Early Access Program for the Business Central Sales Order Agent](https://www.yammer.com/dynamicsnavdev/#/Threads/show?threadId=3092919011729408&search_origin=global&scoring=linear1Y-prankie-group-private-higher&match=any-exact&search_sort=relevance&page=1&search=sales%20order%20agent). Spaces are limited, so sign up here: [https://aka.ms/bcAgentsEarlyAccess](https://aka.ms/bcAgentsEarlyAccess).
+We've recently announced the [Early Access Program for the Business Central Sales Order Agent](https://www.yammer.com/dynamicsnavdev/#/Threads/show?threadId=3092919011729408&search_origin=global&scoring=linear1Y-prankie-group-private-higher&match=any-exact&search_sort=relevance&page=1&search=sales%20order%20agent)&mdash;the very first AI agent in Business Central, built to automate the entire sales requests capturing process. Spaces are limited, so sign up here: [https://aka.ms/bcAgentsEarlyAccess](https://aka.ms/bcAgentsEarlyAccess) (US region only at this time).
 
 Learn more about the Sales Order Agent at [Use Copilot with agent capabilities to automate sales order-taking](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
