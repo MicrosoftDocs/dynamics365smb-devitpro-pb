@@ -9,7 +9,8 @@ ms.reviewer: solsen
 
 # Adding and accessing resources in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions
 
-[!INCLUDE[2024_releasewave2_24.2](../includes/2024-releasewave2_24.2.md)]
+[!INCLUDE[2025_releasewave1_25.2](../includes/2025-releasewave1_25.2.md)]
+
 
 This article describes how to package and use resources with your extensions. Resources are arbitrary files that can be included with your extension and accessed at runtime. For example, you can include sample data, images, or any other file that are used by your extension. Resources can only be accessed within the extension that includes them; it isn't possible for extensions to access resources that are packaged with other extensions.
 
