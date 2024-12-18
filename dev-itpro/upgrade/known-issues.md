@@ -16,14 +16,12 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
-
 ## Synchronizating tenant fails
 
 
 ```powershell
 PS C:\Windows\system32> Sync-NAVTenant -ServerInstance $BCServerInstanceName -Mode Sync
-Sync-NAVTenant : [31;1mSync-NAVTenant: [0m
-[31;1m[36;1mLine |[0m
+Sync-NAVTenant : [31;1mSync-NAVTenant: [0m [31;1m[36;1mLine |[0m
 [31;1m[36;1m[36;1m  15 | [0m     $output = [36;1mSync-NAVTenant @cmdletArgs[0m;[0m
 [31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 [31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mThe schema synchronization may result in deleted data. The following destructive changes were detected:[0m
