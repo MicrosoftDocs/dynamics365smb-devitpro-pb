@@ -56,6 +56,24 @@ This table shows table names for [!INCLUDE[prod_short](../developer/includes/pro
 | traces    | AppTraces |
 | pageViews | AppPageViews |
 
+## KQL example - finding the start time of an event
+
+All telemetry events have a **timestamp** column that contains the time for which the event was emitted. But for events such as report execution, database lock timeouts, long running SQL query, or long running AL operation, the start time of the event is very likely different from this timestamp. Fortunately, for many event types, you have a way to compute the start time. 
+
+Use this KQL code such as this to query the start time for a long running event:
+
+```kql
+// Long running SQL queries (get start time for events)
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions has 'RT0005'
+| extend executionTimeInMS = toint(totimespan(customDimensions.executionTime))/10000 //the datatype for executionTime is timespan 
+| project start_time = datetime_add('millisecond', -executionTimeInMS, timestamp)
+, executionTimeInMS
+, end_time=timestamp
+// add more data as needed 
+```
+
 ## KQL example - following telemetry events for a session
 
 In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24 and later, the server and the browser components align on the globally unique identifiers (GUIDs) logged to the `session_Id` column in the **traces** and **pageViews** tables. This behavior allows you to do advanced troubleshooting such as following what happens within a session.
