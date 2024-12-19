@@ -54,9 +54,6 @@ The application includes AL extensions that define the objects and code that mak
 
 A platform update doesn't change the application. It involves converting your databases to the new platform and recompiling the existing extensions to ensure that they're compatible with the new platform.
 
-> [!IMPORTANT]
-> A platform-only update from 25.0 or 25.1 to 25.2 and later isn't supported because  changes 
-
 An application update involves:
 
 - Publishing new versions of extensions that include the latest application modifications
@@ -66,8 +63,6 @@ An application update involves:
 The installation media (DVD) includes new versions of Microsoft's Base Application, System Application, and extensions. The DVD also includes the AL source code for the Microsoft Base Application. This code useful if you have a custom base application. You can use the code to compare and merge updates into your application. You'll only have to recompile third-party extensions that you don't have a new version to publish.
 
 ## Preparation
-
-[!INCLUDE[25-2-minor-update](../includes/25-2-minor-update.md)]
 
 ### PowerShell variables used in tasks
 
@@ -163,6 +158,8 @@ When this step is completed, you can continue to update your Business Central so
     ```
 
 ## Task 1: Install Business Central components
+
+[!INCLUDE[25-2-minor-update](../includes/25-2-minor-update.md)]
 
 From the installation media (DVD), run setup.exe to uninstall the current Business Central components and install the Business Central components included in the update. 
 
