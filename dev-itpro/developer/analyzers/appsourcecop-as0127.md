@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0127"
 description: "Objects should be placed in a namespace with at least two levels of nesting."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 12/19/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
