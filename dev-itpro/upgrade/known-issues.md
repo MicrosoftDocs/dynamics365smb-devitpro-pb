@@ -16,7 +16,7 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
-## Different installation path in 25.2 and later
+## Different installation path in 25.2
 
 > Applies to: 25.2
 
