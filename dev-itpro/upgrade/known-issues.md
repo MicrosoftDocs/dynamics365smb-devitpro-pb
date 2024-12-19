@@ -1,7 +1,7 @@
 ---
 title: Some Known Issues in Business Central On-premises
 description: Provides an overview of the known issues in Business Central versions
-ms.date: 05/08/2024
+ms.date: 12/19/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -20,28 +20,14 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 > Applies to: Minor upgrade from 25.0 or 25.1 to 25.2 or later
 
+[!INCLUDE[25-2-minor-update](../includes/25-2-minor-update.md)]
 
+If you try to synchronize the database during a platform-only upgrade, you will get an similar to the following:
 
 ```powershell
-PS C:\Windows\system32> Sync-NAVTenant -ServerInstance $BCServerInstanceName -Mode Sync
-Sync-NAVTenant : [31;1mSync-NAVTenant: [0m [31;1m[36;1mLine |[0m
-[31;1m[36;1m[36;1m  15 | [0m     $output = [36;1mSync-NAVTenant @cmdletArgs[0m;[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mThe schema synchronization may result in deleted data. The following destructive changes were detected:[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable: 2000000259, Agent Access Control Data[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mField: 3, Access: Data type changed[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mExamples of code to migrate data:[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mDataUpgradeMgt.SetTableSyncSetup(DATABASE::"Agent Access Control Data",[Upgrade Table Id],TableSynchSetup.Mode::[Mode]);[0m
-At line:1 char:1
-+ Sync-NAVTenant -ServerInstance $BCServerInstanceName -Mode Sync -Forc ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidData: ([31;1mSync-NAV...:[Mode]);[0m
-:String) [Sync-NAVTenant], InvalidOperationException
-    + FullyQualifiedErrorId : navId,Microsoft.Dynamics.Nav.Management.SyncNAVTenant
-
+The schema synchronization may result in deleted data. The following destructive changes were detected:
+Table: 2000000259, Agent Access Control Data
+Field: 3, Access: Data type changed
 ```
 
 ## Installation fails because PowerShell 7 is already installed
