@@ -20,7 +20,7 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 > Applies to: 25.2
 
-25.2 includes database internal schema changes with the following consequences:
+25.2 includes internal database schema changes with the following consequences:
 
 - New platform version 25.2 instead of 25.0.
 - Different installation path than 25.0 and 25.1. Instead of using folder '250', components are installed in folder '252', for example: `C:\Program Files\Microsoft Dynamics 365 Business Central\252`.
