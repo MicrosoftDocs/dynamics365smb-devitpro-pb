@@ -6,7 +6,7 @@ ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 12/19/2024
 ms.author: jswymer
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.custom: bap-template
 ---
 # Analyze and monitor telemetry with KQL
@@ -58,7 +58,7 @@ This table shows table names for [!INCLUDE[prod_short](../includes/prod_short.md
 
 ## KQL example - dealing with timezones
 
-All telemetry events have a **timestamp** column that contains the time for which the event was emitted. The [!INCLUDE[prod_short](../includes/prod_short.md)] server always emit the timestamp in UTC timezone. In case your environment is located in a different timezone, you can use a Kusto function to convert timestamps to reflect that.
+All telemetry events have a **timestamp** column that contains the time for which the event was emitted. The [!INCLUDE[prod_short](../includes/prod_short.md)] server always emits the timestamp in UTC timezone. In case your environment is located in a different timezone, you can use a Kusto function to convert timestamps to reflect that.
 
 Use this KQL code to convert timestamps to another timezone:
 
@@ -75,7 +75,7 @@ To learn more, go to [datetime_utc_to_local()](/kusto/query/datetime-utc-to-loca
 
 ## KQL example - finding the start time of an event
 
-All telemetry events have a **timestamp** column that contains the time for which the event was emitted. But for events such as report execution, database lock timeouts, long running SQL query, or long running AL operation, the start time of the event is very likely different from this timestamp. Fortunately, for many event types, you have a way to compute the start time. 
+All telemetry events have a **timestamp** column that contains the time for which the event was emitted. But for events such as report execution, database lock timeouts, long running SQL query, or long running AL operation, the start time of the event is likely different from this timestamp. Fortunately, for many event types, you have a way to compute the start time. 
 
 Use this KQL code to query the start time for a long running event:
 
