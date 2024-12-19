@@ -4,14 +4,14 @@ description: Learn how to query Business Central telemetry with KQL.
 author: kennienp
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/23/2024
+ms.date: 12/19/2024
 ms.author: jswymer
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.custom: bap-template
 ---
 # Analyze and monitor telemetry with KQL
 
-Telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is stored in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] in the tables *traces* and *pageViews*. The language used to query data in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] is _Kusto Query Language_ (KQL). This article has information and links to resources to get started learning about the KQL language.
+Telemetry from [!INCLUDE[prod_short](../includes/prod_short.md)] is stored in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] in the tables *traces* and *pageViews*. The language used to query data in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] is _Kusto Query Language_ (KQL). This article has information and links to resources to get started learning about the KQL language.
 
 As a simple example, follow these steps:
   
@@ -49,16 +49,51 @@ You can use Kusto queries as the data source in many places. For example:
 
 With workspace-based resources, [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] sends telemetry to a common [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] workspace, providing full access to all the features of [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] while keeping your application, infrastructure, and platform logs in a single consolidated location. This integration allows for common Azure role-based access control across your resources and eliminates the need for cross-app/workspace queries.
 
-This table shows table names for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry when queried from [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] and from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]:
+This table shows table names for [!INCLUDE[prod_short](../includes/prod_short.md)] telemetry when queried from [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] and from [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)]:
 
 | Table name in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] | Table name in [!INCLUDE[loganalytics](../includes/azure-loganalytics-name.md)] | 
 | --------- | ------------| 
 | traces    | AppTraces |
 | pageViews | AppPageViews |
 
+## KQL example - dealing with timezones
+
+All telemetry events have a **timestamp** column that contains the time for which the event was emitted. The [!INCLUDE[prod_short](../includes/prod_short.md)] server always emits the timestamp in UTC timezone. In case your environment is located in a different timezone, you can use a Kusto function to convert timestamps to reflect that.
+
+Use this KQL code to convert timestamps to another timezone:
+
+```kql
+traces
+| where timestamp > ago(30d) // adjust as needed
+// more where clauses here ...
+| extend timestamp_in_local_timezone = datetime_utc_to_local(timestamp, 'America/North_Dakota/Center')
+// project clause here
+```
+
+To learn more, go to [datetime_utc_to_local()](/kusto/query/datetime-utc-to-local-function)
+
+
+## KQL example - finding the start time of an event
+
+All telemetry events have a **timestamp** column that contains the time for which the event was emitted. But for events such as report execution, database lock timeouts, long running SQL query, or long running AL operation, the start time of the event is likely different from this timestamp. Fortunately, for many event types, you have a way to compute the start time. 
+
+Use this KQL code to query the start time for a long running event:
+
+```kql
+// Long running SQL queries (get start time for events)
+traces
+| where timestamp > ago(30d) // adjust as needed
+| where customDimensions has 'RT0005'
+| extend executionTimeInMS = toint(totimespan(customDimensions.executionTime))/10000 //the datatype for executionTime is timespan 
+| project start_time = datetime_add('millisecond', -executionTimeInMS, timestamp)
+, executionTimeInMS
+, end_time=timestamp
+// add more data as needed 
+```
+
 ## KQL example - following telemetry events for a session
 
-In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24 and later, the server and the browser components align on the globally unique identifiers (GUIDs) logged to the `session_Id` column in the **traces** and **pageViews** tables. This behavior allows you to do advanced troubleshooting such as following what happens within a session.
+In [!INCLUDE[prod_short](../includes/prod_short.md)] version 24 and later, the server and the browser components align on the globally unique identifiers (GUIDs) logged to the `session_Id` column in the **traces** and **pageViews** tables. This behavior allows you to do advanced troubleshooting such as following what happens within a session.
 
 Use this KQL code to query what happens in a single session:
 
@@ -82,7 +117,7 @@ union pv, tra
 
 ## KQL example - following telemetry events for a user
 
-In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24 and later, the server and the browser components align on the GUIDs logged to the `user_Id` column in the `traces` and `pageViews` tables. This behavior allows you to do advanced troubleshooting such as following what a user does. To see which user corresponds to the guid logged in the `user_Id` column, see [Assign a telemetry ID to users](./telemetry-enable-application-insights.md#assign-a-telemetry-id-to-users).
+In [!INCLUDE[prod_short](../includes/prod_short.md)] version 24 and later, the server and the browser components align on the GUIDs logged to the `user_Id` column in the `traces` and `pageViews` tables. This behavior allows you to do advanced troubleshooting such as following what a user does. To see which user corresponds to the guid logged in the `user_Id` column, see [Assign a telemetry ID to users](./telemetry-enable-application-insights.md#assign-a-telemetry-id-to-users).
 
 Use this KQL code to query what a user does across sessions:
 
@@ -127,7 +162,7 @@ This walkthrough covers the following tasks:
 To complete this walkthrough, you need:
 
 - An [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
-- Report telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] emitted to Application Insights.
+- Report telemetry from [!INCLUDE[prod_short](../includes/prod_short.md)] emitted to Application Insights.
 - A query tool for KQL, either the **Logs** part of the **Monitoring** menu in Application Insights in the Azure portal, or the Kusto. Explorer (see [Kusto.Explorer installation and user interface](/azure/data-explorer/kusto/tools/kusto-explorer)).
 
 ### Understand report usage with telemetry and KQL
