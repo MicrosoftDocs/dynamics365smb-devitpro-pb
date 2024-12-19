@@ -12,9 +12,9 @@ author: jswymer
 
 This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that are released for Business Central.
 
-You can choose to update only the platform or both the platform and application code. The installation guidelines are separated into PLATFORM tasks and APPLICATION tasks.
+You can choose to update only the platform or both the platform and application code. Learn more in [Platform versus application upgrade](#platform-versus-application-upgrade).
 
-The following figure provides a high-level representation of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution and the components that are involved in the installation of an update.
+The following figure shows a high-level representation of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution and the components involved in the installation of an update.
 
 ![Business Central application stack.](../developer/media/bcv25-architecture-overview.svg "Business Central application stack")  
 
@@ -22,11 +22,11 @@ The databases store the application metadata and business data. If you have a si
 
 ### Application stack
 
-The application includes AL extensions that define the objects and code that makes up the business logic. For example, objects include tables, report, pages, codeunits, and more. Each extension is compiled and delivered as an .app file, which is published to the Business Central Server instance.
+The application includes AL extensions that define the objects and code that make up the business logic. For example, objects include tables, report, pages, codeunits, and more. Each extension is compiled and delivered as an .app file, which is published to the Business Central Server instance.
 
 - System Application extension
 
-    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When the solution uses the Microsoft Base Application, it must also use the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
+    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When the solution uses the Microsoft Base Application, it must also use the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, skip any steps in this article related to the System Application.
 
 - Business Foundation extension
 
@@ -66,7 +66,7 @@ The installation media (DVD) includes new versions of Microsoft's Base Applicati
 
 ### PowerShell variables used in tasks
 
-Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the `" "` with the correct values for your environment.
+Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the quotation marks with the correct values for your environment.
 
 ```powershell
 $BcServerInstance = "The name of the Business Central server instance, for example: BC250"
@@ -89,13 +89,13 @@ $CustomerLicense= "The file path and name of the customer license"
 
 ### Download update package
 
-The first thing to do is to download the update package that matches your Business Central solution.
+First, download the update package that matches your Business Central solution.
 
 1. Go to the [list of available updates](../deployment/update-versions-25.md) for your on-premises version of Business Central. Then, choose the update that you want.
 2. From the update page, under the **Resolution** section, select the link for downloading the update, and follow the instructions.
-3. On the computer where you downloaded the update .zip file, extract the all the files to a selected location. 
+3. On the computer where you downloaded the update .zip file, extract all the files to a selected location.
 
-    When extracted, the update includes the DVD folder. This folder contains the full Business Central product. For example, the folder includes the Business Central installation program (setup.exe), tools for upgrading to the platform, and the Microsoft extensions.
+    When extracted, the update includes the DVD folder, which contains the full Business Central product. For example, the folder includes the Business Central installation program (setup.exe), tools for upgrading to the platform, and the Microsoft extensions.
 
 When this step is completed, you can continue to update your Business Central solution to the new platform and application.
 
@@ -121,7 +121,7 @@ When this step is completed, you can continue to update your Business Central so
 
         ```powershell 
         Get-NAVAppInfo -ServerInstance $BcServerInstance
-        ``` 
+        ```
 
     1. Uninstall the extensions.
 
