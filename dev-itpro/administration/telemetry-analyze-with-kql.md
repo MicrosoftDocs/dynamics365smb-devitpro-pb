@@ -60,7 +60,7 @@ This table shows table names for [!INCLUDE[prod_short](../includes/prod_short.md
 
 All telemetry events have a **timestamp** column that contains the time for which the event was emitted. The [!INCLUDE[prod_short](../includes/prod_short.md)] server always emit the timestamp in UTC timezone. In case your environment is located in a different timezone, you can use a Kusto function to convert timestamps to reflect that.
 
-Use this KQL code to convert event timezones to another timezone:
+Use this KQL code to convert timestamps to another timezone:
 
 ```kql
 traces
