@@ -51,6 +51,15 @@ We've recently announced the [Early Access Program for the Business Central Sale
 
 Learn more about the Sales Order Agent at [Use Copilot with agent capabilities to automate sales order-taking](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
+### Database schema changes in 25.2
+
+25.2 includes database schema changes with the following consequences:
+
+- New platform version 25.2 instead of 25.0.
+- Different installation path than 25.0 and 25.1. Instead of using folder `250`, components are installed in folder `252`, for example: `C:\Program Files\Microsoft Dynamics 365 Business Central\252`.
+- Platform-only upgrade isn't supported. You must do a full platform and application upgrade.
+- Future updates like 25.3 and 25.4 will also use platform number 25.2 and installation folder `252`.
+
 ### Business Central Launch Event videos on YouTube
 
 The Business Central Launch Event for the 2024 release wave 2 took place on October 18, 2024. This online event aimed to provide information about the new features and enhancements in the 2024 release wave 2 to resellers, partners, ISVs, and consultants. You can find over 40 videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE).
