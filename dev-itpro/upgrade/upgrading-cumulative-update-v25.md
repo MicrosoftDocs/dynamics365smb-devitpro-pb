@@ -278,7 +278,9 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## Task 5: Publish new extension versions (application upgrade only)
+## Task 5: Publish new extension versions
+
+> APPLIES TO: Application upgrade only
 
 Skip this task if you're only doing a platform-only update. In this task, you publish the new extension versions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
 
@@ -441,6 +443,8 @@ Synchronize the tenant's database schema with any schema changes in the applicat
 
 ## Task 8: Upgrade data
 
+> APPLIES TO: Application upgrade only
+
 In this task, you run a data upgrade for extensions.
 
 # [Single tenant](#tab/singletenant)
@@ -496,9 +500,11 @@ This command upgrades and installs the extensions on the tenant.
 
 ---
 
-## Task 9: Reinstall existing extensions (Single-tenant, platform update only)
+## Task 9: Reinstall existing extensions
 
-In this task, you reinstall the same extensions that were installed on the tenant before. If you're planning on updating the application, then skip this step.
+> APPLIES to: Single-tenant, platform update only
+
+In this task, you reinstall the same extensions that were installed on the tenant before.
 
 To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp).
 
