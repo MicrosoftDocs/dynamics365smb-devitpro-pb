@@ -16,19 +16,17 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
-## Minor upgrade from 25.0 or 25.1
+## Different installation path in 25.2 and later
 
 > Applies to: Minor upgrade from 25.0 or 25.1 to 25.2 or later
 
-[!INCLUDE[25-2-minor-update](../includes/25-2-minor-update.md)]
+25.2 includes database schema changes with the following consequences:
 
-If you try to synchronize the database during a platform-only upgrade, you will get an similar to the following:
+- New platform version 25.2 instead of 25.0.
+- Different installation path than 25.0 and 25.1. Instead of using folder '250', components are installed in folder '252', for example: `C:\Program Files\Microsoft Dynamics 365 Business Central\252`.
+<!-- - Platform-only upgrade isn't supported. You must do a full platform and application upgrade.-->
 
-```powershell
-The schema synchronization may result in deleted data. The following destructive changes were detected:
-Table: 2000000259, Agent Access Control Data
-Field: 3, Access: Data type changed
-```
+Future updates like 25.3 and 25.4 will also use platform number '25.2' and installation folder '252'.
 
 ## Installation fails because PowerShell 7 is already installed
 
