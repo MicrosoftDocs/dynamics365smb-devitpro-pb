@@ -10,9 +10,18 @@ author: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2024 release wave 2 update
 
-This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
+This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that are released for Business Central.
 
 You can choose to update only the platform or both the platform and application code. The installation guidelines are separated into PLATFORM tasks and APPLICATION tasks.
+
+> [!IMPORTANT]
+> 25.2 includes database schema changes that have the following consequences:
+>
+> - It has a new platform version 25.2 instead 25.0.
+> - It has a different installation path than 25.0 and 25.1. Instead of using folder `250`, components are installed in folder `252` folder, for example: `C:\Program Files\Microsoft Dynamics 365 Business Central\252`.
+> - A platform-only upgrade isn't supported. You must do a full platform and application upgrade.
+>
+> It's currently planned that upcoming v25 updates, like 25.3 and 25.4, will also use platform number 25.2 and installation folder `252`.
 
 ## Overview
 
@@ -28,7 +37,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - System Application extension
 
-    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When using the Microsoft Base Application, your solution uses the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
+    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When the solution uses the Microsoft Base Application, it must also use the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, you can skip any steps in this article related to the System Application.
 
 - Business Foundation extension
 
@@ -57,7 +66,7 @@ The application includes AL extensions that define the objects and code that mak
 A platform update doesn't change the application. It involves converting your databases to the new platform and recompiling the existing extensions to ensure that they're compatible with the new platform.
 
 > [!IMPORTANT]
-> A platfrom update from 25.0 or 25.1 to 25.2 and later isn't supported.
+> A platform-only update from 25.0 or 25.1 to 25.2 and later isn't supported because  changes 
 
 An application update involves:
 
@@ -197,7 +206,7 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 1: Convert existing database to new platform
+## Task 2: Convert existing database to new platform
 
 Follow the next few tasks to convert your database to the new platform of the update. A multitenant deployment includes the application and tenant databases. Running the database conversion will:
 
@@ -281,9 +290,9 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## Task 6: Publish new extension versions (application upgrade only)
+## Task 5: Publish new extension versions (application upgrade only)
 
-Skip this task if you're only doing a platform update. In this task, you publish the new extension versions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
+Skip this task if you're only doing a platform-only update. In this task, you publish the new extension versions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -347,9 +356,9 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance $BcServerInstance -Path "<path to extension>"
     ```
 
-## Task 5: Recompile extensions not built on new update version
+## Task 6: Recompile extensions not built on new update version
 
-Complete this task for existing published extensions that aren't built on the Business Central version you're upgrading to and that you want to reintsall. This task is required if you're doing a plaform update only. 
+Complete this task for existing published extensions that aren't built on the Business Central version you're upgrading to and that you want to reintsall. This task is required if you're doing a plaform-only update. 
 
 [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
 
@@ -371,11 +380,11 @@ Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
 Restart-NAVServerInstance -ServerInstance $BcServerInstance
 ```
 
-## Task 6: Synchronize tenant
+## Task 7: Synchronize tenant
 
 Synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 20 server instance.
+1. (Multitenant only) Mount the tenant to the version 25 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
 
@@ -442,7 +451,7 @@ Synchronize the tenant's database schema with any schema changes in the applicat
     Sync-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name "<extension name>" -Version <extension version>
     ```
 
-## Task 7: Upgrade data
+## Task 8: Upgrade data
 
 In this task, you run a data upgrade for extensions.
 
@@ -499,7 +508,7 @@ This command upgrades and installs the extensions on the tenant.
 
 ---
 
-## Task 8: Reinstall existing extensions (Single-tenant, platform update only)
+## Task 9: Reinstall existing extensions (Single-tenant, platform update only)
 
 In this task, you reinstall the same extensions that were installed on the tenant before. If you're planning on updating the application, then skip this step.
 
@@ -715,7 +724,7 @@ If the old solution used third-party extensions, and you still want to use them,
 
 As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.-->
 
-## Task 9: Post upgrade
+## Task 10: Post upgrade
 
 ### <a name="controladdins"></a>Upgrade control add-ins
 
