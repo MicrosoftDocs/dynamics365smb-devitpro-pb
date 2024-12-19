@@ -101,6 +101,8 @@ The first thing to do is to download the update package that matches your Busine
 
 When this step is completed, you can continue to update your Business Central solution to the new platform and application.
 
+## Save copies of server configuration files
+
 [!INCLUDE[upgrade-copy-configuration-files](../developer/includes/upgrade-copy-configuration-files.md)]
 
 ## Prepare existing databases
