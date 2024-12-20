@@ -52,7 +52,7 @@ Result := DoWork();     // Will not fail, but return false
 if DoWork() then        // Will not work, but return false 
 ```
 
-Arguments for a try function are evaluated inside the try function:
+Arguments for a try function are evaluated inside the try function. 
 
 ```AL
 [TryFunction]
@@ -64,7 +64,7 @@ DoWork(DoInsert(Rec));            // Allowed as the DoWork return value isn't us
 Result := DoWork(DoInsert(Rec));  // Not allowed as the DoInsert calls insert and is evaluated inside 
                                   // the try function. Move the DoInsert(Rec) outside the try function.
 
-If (DoWork(DoInsert(Rec)) then    // Not allowed as above.
+If DoWork(DoInsert(Rec)) then    // Not allowed as above.
 ```
 
 ### Getting details about errors
