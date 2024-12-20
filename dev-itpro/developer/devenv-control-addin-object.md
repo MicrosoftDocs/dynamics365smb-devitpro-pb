@@ -173,7 +173,7 @@ $.ajax({
      xhrFields: {
           withCredentials: true
     }
-)).done(function(data) {
+}).done(function(data) {
     $("#controlAddIn").text(data);
 });
 ```
