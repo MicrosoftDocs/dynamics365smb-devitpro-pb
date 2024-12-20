@@ -1,20 +1,23 @@
 ---
 title: Handling errors using try methods
 description: Try methods in AL enable you to handle errors that occur in the application during code execution.
-ms.date: 11/12/2024
+ms.date: 12/20/2024
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
+
 # Handling errors using try methods
 
-Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than errors thrown by the system.  
+Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than errors thrown by the system.
 
 > [!NOTE]
-> Try Methods are available from runtime version 2.0.
+> Try methods are available from runtime version 2.0.
 
 ## Behavior and usage
 
-The main purpose of try methods is to catch errors/exceptions thrown by the [!INCLUDE[prod_short](includes/prod_short.md)] AL platform. For on-premises, they can catch exceptions thrown during .NET Framework interoperability operations. Try methods catch errors similar to a conditional Codeunit. Except for the try method, the Run method call doesn't require that write transactions are committed to the database, and changes to the database that are made with a try method aren't rolled back.
+The main purpose of try methods is to catch errors/exceptions thrown by the [!INCLUDE[prod_short](includes/prod_short.md)] AL platform. For on-premises, they can catch exceptions thrown during .NET Framework interoperability operations. Try methods catch errors similar to a conditional codeunit. Except for the try method, the `Run` method call doesn't require that write transactions are committed to the database, and changes to the database that are made with a try method aren't rolled back.
 
 ### <a name="DbWriteTransactions"></a>Database write transactions in try methods
 
@@ -24,11 +27,45 @@ Because changes made to the database by a try method aren't rolled back, you sho
 
 A method that is designated as a try method has a Boolean return value (**true** or **false**), and has the construction `OK:= MyTrymethod`. A try method can't have a user-defined return value.
 
-- If a try method call doesn't use the return value, the try method operates like an ordinary method, and errors are exposed as usual.  
+- If a try method call doesn't use the return value, the try method operates like an ordinary method, and errors are exposed as usual. Learn more in the [Try method calls that don't use the return value](#try-method-calls-that-dont-use-the-return-value) section below.
 - If a try method call uses the return value in an `OK:=` statement or a conditional statement such as `if-then`, errors are caught. The try method returns `true` if no error occurs; `false` if an error occurs. 
 
 > [!NOTE]  
 > The return value isn't accessible within the try method itself.  
+
+#### Try method calls that don't use the return value
+
+If the return variable for a call to a function, which is attributed with [TryFunction] isn't used, then the call isn't considered a try function call. When the call isn't considered a try function call, you can perform database transactions inside the function.
+
+The following examples illustrates this behavior:
+
+```AL
+[TryFunction]
+procedure DoWork() 
+    begin 
+        Error(''); 
+    end;
+
+DoWork();               // Fails, the call isn't a try function
+
+Result := DoWork();     // Will not fail, but return false
+if DoWork() then        // Will not work, but return false 
+```
+
+Arguments for a try function are evaluated inside the try function:
+
+```AL
+[TryFunction]
+DoInsert(Rec: RecordRef)
+Begin
+  Rec.Insert
+End;
+DoWork(DoInsert(Rec));            // Allowed as the DoWork return value isn't used so it's not a try function
+Result := DoWork(DoInsert(Rec));  // Not allowed as the DoInsert calls insert and is evaluated inside 
+                                  // the try function. Move the DoInsert(Rec) outside the try function.
+
+If (DoWork(DoInsert(Rec)) then    // Not allowed as above.
+```
 
 ### Getting details about errors
 
