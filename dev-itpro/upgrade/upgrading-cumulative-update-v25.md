@@ -52,7 +52,7 @@ The application includes AL extensions that define the objects and code that mak
 
 ### Platform versus application upgrade
 
-A platform upgrade doesn't change the application. It involves converting your databases to the new platform and recompiling the existing extensions to ensure that they're compatible with the new platform ans reinstalling them on the tenant.
+A platform upgrade doesn't change the application. It involves converting your databases to the new platform and recompiling the existing extensions to ensure that they're compatible with the new platform and reinstalling them on the tenant.
 
 An application update involves:
 
@@ -348,7 +348,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 ## Task 6: Recompile extensions not built on new update
 
-Complete this task for existing published extensions that aren't built on the Business Central version you're upgrading to and that you want to reintsall. This task is required if you're doing a plaform-only update.
+Complete this task for existing published extensions that aren't built on the Business Central version you're upgrading to and that you want to reinstall. This task is required if you're doing a plaform-only update.
 
 [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
 
@@ -506,7 +506,7 @@ This command upgrades and installs the extensions on the tenant.
 
 > APPLIES TO: Single tenant only
 
-Reinstall the extensions that you recompiled in task 6. These are extensions that you haven't published new versions for, but you still want them on the tenant after upgrade. This task is required in a platform upgrade.
+Reinstall the extensions that you recompiled in task 6. These extensions are ones that you haven't published new versions for, but you still want installed on the tenant after upgrade. This task is required in a platform upgrade.
 
 To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp).
 
