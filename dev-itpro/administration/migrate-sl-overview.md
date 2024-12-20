@@ -61,9 +61,7 @@ This section outlines the general process or phases you go through to migrate da
 
 1. **Migration Assessment**
 
-   Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. To help you, we offer the Dynamics SL Analysis and Dynamics SL Repair tools that deliver valuable insight into your overall readiness to migrate. The tools provide migration options based on your needs and detect potential migration issues based on your Dynamics SL system structure. The Dynamics SL Analysis and Dynamics SL Repair tools are available to download and complete from GitHub. Here's the URL: 
-
-   [BCTech/Samples/DynamicsSLMigrationTools/Analysis and Repair Tool at master · microsoft/BC Tech](https://github.com/microsoft/BCTech/tree/master/samples/DynamicsSLMigrationTools/Analysis%20and%20Repair%20Tool)
+   Before migrating your on-premises deployment to the cloud, evaluate its readiness using the Dynamics SL Analysis and Dynamics SL Repair tools. These tools provide migration options based on your needs and detect potential migration issues based on your Dynamics SL system structure. Download the tools from GitHub at [BCTech/Samples/DynamicsSLMigrationTools/Analysis and Repair Tool at master · microsoft/BC Tech](https://github.com/microsoft/BCTech/tree/master/samples/DynamicsSLMigrationTools/Analysis%20and%20Repair%20Tool).
 
    - The **Analysis Tool** connects to a Microsoft Dynamics SL database and generates an analysis report text file.
    - The report outlines and provides an overview of the modules in use and examines the data that can be migrated to Business Central.
