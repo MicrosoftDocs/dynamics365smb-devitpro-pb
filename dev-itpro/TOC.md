@@ -446,7 +446,7 @@
 ##### [Configure Dynamics SL company migration](administration/migrate-sl-configure-companies.md)
 #### Replicate data
 ##### [Data replication overview](administration/migration-data-replication.md)
-##### [Run data replication](administration/migrate-data-replication-run-sl.md)
+##### [Run data replication](administration/migrate-data-replication-run.md)
 #### Upgrade data
 ##### [Run data upgrade](administration/migration-data-upgrade-sl.md)
 #### Finish cloud migration

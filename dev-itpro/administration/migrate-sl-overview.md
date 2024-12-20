@@ -1,5 +1,5 @@
 ---
-title: Migrate on-premises SL data to Business Central online overview
+title: Dynamics SL migration to Business Central online End-to-end overview
 description: This article provides an overview of how the migration works and the necessary tasks for completing the migration from Dynamics SL on-premises.
 author: lcontreras
 ms.topic: conceptual
@@ -13,15 +13,15 @@ ms.custom: bap-template
 
 # Dynamics SL migration to Business Central online: End-to-end overview
 
-This article provides an overview of how the migration works and the necessary tasks for completing the migration from Dynamics SL on-premises. By gaining an understanding of the data migration basics, you're able to plan and execute a smooth transition to the cloud. 
+This article gives an overview of how to migrate from Dynamics SL on-premises to Business Central online. Understanding the data migration basics helps you plan and execute a smooth transition to the cloud.
 
 ## Understanding cloud migration
 
-Data migration is the process of securely migrating data from an on-premises SQL Server instance to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. You manage cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] online through a connection to the on-premises database and various components that establish a pipeline for replicating data. The on-premises solution remains the operative environment until you complete the cloud migration. <!--[!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]-->  
+Data migration securely moves data from an on-premises SQL Server instance to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. You manage cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] online through a connection to the on-premises database and various components that establish a pipeline for replicating data. The on-premises solution remains the operative environment until you complete the cloud migration.
 
 ### Components involved
 
-The following figure illustrates the main components involved in the data migration process.
+The following figure shows the main components involved in the data migration process.
 
 ![Shows components of cloud migration](../developer/media/cloud-migration-overview-gp.svg)
 <!-- no sl version-->
@@ -83,19 +83,19 @@ This section outlines the general process or phases you go through to migrate da
 
 1. **Preparation**
 
-   The preparation phase helps ensure the migration runs as fast and problem-free. Preparation typically includes these tasks:
+   The preparation phase ensures a fast and problem-free migration. It typically includes these tasks:
 
    1. **Plan**
 
-      Develop a migration plan that includes a detailed timeline, resource requirements, and migration approach. A well-crafted plan can help minimize downtime and prevent users from losing work. You should plan to run cloud migration between environment updates.
+      Create a migration plan with a detailed timeline, resource requirements, and approach. A well-crafted plan minimizes downtime and prevents users from losing work. Plan to run cloud migration between environment updates.
 
-      To get started, go to [Plan](cloud-migration-plan-prepare-SL.md).
+      Learn more in [Prepare and plan for cloud migration from Dynamics SL](cloud-migration-plan-prepare-SL.md).
   
    1. **Verify prerequisites**
 
       Prepare your on-premises environment for migration, which includes ensuring that it meets the prerequisites for migration, such as using SL 2015 or later. This step is crucial in ensuring that your environment is ready for the migration process.
 
-      To get started, go to [Prerequisites](cloud-migration-prerequisites-SL.md).
+      Learn more in [Cloud migration prerequisites for Dynamics SL](cloud-migration-prerequisites-SL.md).
    1. Verify that data is in the best state possible to complete the migration:
 
       This step involves reviewing your data to ensure that it's clean, accurate, and in the best possible state for migration.
@@ -124,13 +124,13 @@ This section outlines the general process or phases you go through to migrate da
 
    After data replication is complete, the cloud migration might have the status *Upgrade Pending* on the **Cloud Migration Management** page. This step starts when you choose the **Run Data Upgrade Now** action in the **Cloud Migration Management** page in [!INCLUDE [prod_short](../includes/prod_short.md)] online for the specific environment.
 
-   To get started, refer to [Upgrade data](migration-data-upgrade-SL.md).
+   Learn more in [Upgrade data for Dynamics SL cloud migration](migration-data-upgrade-SL.md).
 
    [!INCLUDE [cloud-migration-telemetry](../includes/bc-cloud-migrate-replicate-all-before-upgrade.md)]
 
 1. **Completion and follow-up**
 
-   Completion and follow-up are crucial steps in the cloud migration process, as they involve setting up and optimizing your new Business Central online environment. Here are some essential tasks to consider:
+   Completion and follow-up are crucial steps in the cloud migration process. They involve setting up and optimizing your new Business Central online environment. Consider these essential tasks:
 
    1. **Optimize your Business Central online environment**
 
@@ -141,9 +141,9 @@ This section outlines the general process or phases you go through to migrate da
 
 1. **Go live**
 
-      Once you're satisfied that your new environment is set up correctly, it's time to switch over to the new Business Central online system. This task involves decommissioning the on-premises deployment and ensuring that all users are using the new system.
+   Once you're satisfied with the new environment setup, switch to the new Business Central online system. This task involves decommissioning the on-premises deployment and ensuring all users use the new system.
 
-   To get started, refer to [Complete cloud migration](migration-finish-SL.md).
+   Learn more in [Complete Dynamics SL cloud migration](migration-finish-SL.md).
 
 By completing these tasks, you can ensure a successful migration to the cloud-based Business Central solution.
 
@@ -159,15 +159,15 @@ If you don't want data in [!INCLUDE[prod_short](../developer/includes/prod_short
 
 Once the cloud migration is set up and underway, the data that you can enter in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant is limited to data that isn't included in data migration from on-premises. Otherwise, any data that was written to the tenant database would be continuously overwritten during the migration process.  
 
-To make setting up this read-only tenant more efficient, we created the <!--*Intelligent Cloud* user group and the-->*Intelligent Cloud* Permission Set. Once the cloud migration environment is configured, existing users in the online tenant who don't have SUPER permissions are automatically assigned to the *Intelligent Cloud* <!--user group--> Permission Set. Only users with SUPER permissions will be allowed to make modifications to the system at this point. If you add any online users later, make sure you assign them the *Intelligent Cloud* Permission Set. They're not assigned automatically.
+To make setting up this read-only tenant more efficient, we created the *Intelligent Cloud* permission set. Once the cloud migration environment is configured, existing users in the online tenant without SUPER permissions are automatically assigned to the *Intelligent Cloud* Permission Set. Only users with SUPER permissions can make modifications to the system at this point. If you add any online users later, assign them the *Intelligent Cloud* permission set. They're not assigned automatically.
 
 > [!NOTE]  
 > Before you configure a connection from on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, make sure that at least one user in each company is assigned SUPER permissions.  
 
-Users that are reassigned to the *Intelligent Cloud* <!--user group--> Permission Set have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user can create new user groups and Permission Sets and assign users accordingly. It's highly recommended to create any new Permission Sets from a copy of the *Intelligent Cloud* Permission Set and then take away permissions you don't want users to have.  
+Users that are reassigned to the *Intelligent Cloud* <!--user group--> Permission Set have access to read ALL data by default. If you need to further restrict what data a user can read, the SUPER user can create new user groups and permission sets and assign users accordingly. It's highly recommended to create any new Permission Sets from a copy of the *Intelligent Cloud* Permission Set and then take away permissions you don't want users to have.  
 
 > [!WARNING]
-> If you grant insert, modify or delete permissions to any resource in the application that was set to read-only, it could have a negative impact on the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you may have to clear all your data and rerun a full migration to correct this.
+> If you grant insert, modify, or delete permissions to any resource set to read-only, it could negatively impact the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you may need to clear all your data and rerun a full migration to correct it.
 
 ## Related information
 
