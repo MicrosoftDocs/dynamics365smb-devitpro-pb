@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ---
 ## Define SQL database connection and integration runtime 
 
-If the product you selected requires an SQL connection, the **Define your SQL database connection** page appears as part of the **Cloud Migration Setup**. Other source applications may require different connection information. The **Define your SQL database connection** page displays the connection information based on the product that you specified in the **Choose your product** page of the **Cloud Migration Setup**. The information is determined from the installed extensions for the product you've selected. The following list provides more details about the fields in this part of the assisted setup guide.  
+If your product requires an SQL connection, the **Define your SQL database connection** page appears during the **Cloud Migration Setup**. Other source applications might need different connection information. The **Define your SQL database connection** page shows the connection information based on the product you specified on the **Choose your product** page. The information comes from the installed extensions for the selected product. The following list provides more details about the fields in this part of the setup guide.
 
 - **SQL connection**
 
@@ -15,10 +15,9 @@ If the product you selected requires an SQL connection, the **Define your SQL da
 
 - **SQL connection string**
 
-  You must specify the connection string to your SQL Server, including the name of the server that SQL Server is running on, and the name of the instance, the database, and the relevant user account.  
+  Enter the connection string to your SQL Server, including the server name, instance name, database name, and user account.
 
-  For example, `Server=MyServer\BCDEMO;Database=BC210;User Id=MySQLAccount;Password=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises.  
-
+  For example, `Server=MyServer\BCDEMO;Database=GpDb;User Id=MySQLAccount;Password=MyPassWord;`.
   The following snippets illustrate a couple of connection strings with different formats for an SQL Server database:  
 
     `Server={Server Name\Instance Name};Initial Catalog={Database Name};UserID={SQL Authenticated UserName};Password={SQL Authenticated Password};`  
@@ -38,7 +37,7 @@ If the product you selected requires an SQL connection, the **Define your SQL da
 
 - **Integration runtime name**
 
-  When the **SQL connection** is set to **SQL Server**, you must specify the self-hosted Microsoft integration runtime instance to use to replicate the data from the defined source to [!INCLUDE [prod_short](../includes/prod_short.md)] online. The integration runtime must be running on the machine that holds the SQL Server database.
+  When the **SQL connection** is set to **SQL Server**, specify the self-hosted Microsoft integration runtime instance to replicate the data from the defined source to [!INCLUDE [prod_short](../includes/prod_short.md)] online. The integration runtime must run on the machine that holds the SQL Server database.
 
   - If you already have an integration runtime service instance, you can use the instance by entering its name in the **Integration Runtime Name** box. Then, select **Next** to continue **Cloud Migration Setup** assisted setup.
 
@@ -60,4 +59,4 @@ A new page appears from where you can download the self-hosted integration runti
 5. Go back to the **Register Integration Runtime (Self-Hosted)** page and paste the key value in authentication key box, then select **Finish**. 
 6. Go back to **Cloud Migration Setup** and select **Next**.
 
-Once you choose **Next**, a new pipeline is created in the Azure service. This operation takes less than a minute to complete, in most cases. If you want to test your SQL string, open the **Microsoft Integration Runtime Configuration Manager**, and then choose the **Diagnostics** menu option. From there, you can test to see if the connection is good.  
+After you select **Next**, a new pipeline is created in the Azure service. This operation usually takes less than a minute. To test your SQL string, open the **Microsoft Integration Runtime Configuration Manager** and select the **Diagnostics** menu option. From there, you can test the connection.
