@@ -42,9 +42,9 @@ The following examples illustrates this behavior:
 ```AL
 [TryFunction]
 procedure DoWork() 
-    begin 
-        Error(''); 
-    end;
+begin 
+  Error(''); 
+end;
 
 DoWork();               // Fails, the call isn't a try function
 
@@ -58,7 +58,7 @@ Arguments for a try function are evaluated inside the try function.
 [TryFunction]
 DoInsert(Rec: RecordRef)
 Begin
-  Rec.Insert
+  Rec.Insert()
 End;
 DoWork(DoInsert(Rec));            // Allowed as the DoWork return value isn't used so it's not a try function
 Result := DoWork(DoInsert(Rec));  // Not allowed as the DoInsert calls insert and is evaluated inside 
