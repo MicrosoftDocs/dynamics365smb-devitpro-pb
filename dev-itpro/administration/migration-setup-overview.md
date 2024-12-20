@@ -10,13 +10,11 @@ ms.custom: bap-template
 ---
 # Cloud migration setup overview
 
-The first phase of cloud migration of on-premises data is the setup, which is done by running the **Cloud Migration Setup** assisted setup from the destination Business Central online environment. This task doesn't migrate any data, but it establishes the connection and pipeline between the on-premises database and online tenant database used for migrating the data. <!--the **Cloud Migration Setup** you'll specify the database connection string to your on-premises database and install the Microsoft Runtime Integration for . The following diagram illustrates what happens during the setup.-->
+The first phase of cloud migration is the setup, done by running the **Cloud Migration Setup** from the destination Business Central online environment. This task doesn't migrate data but establishes the connection and pipeline between the on-premises and online tenant databases.
 
 ## Detailed flow
 
 The following figure illustrates the flow of the cloud migration setup:
-
-<!--[![Shows the flow for cloud migration setup ](../developer/media/cloud-migration-setup-process.svg)](../developer/media/cloud-migration-setup-process.svg#lightbox)-->
 
 ![Shows the flow for cloud migration setup ](../developer/media/cloud-migration-setup-process.png)
 
