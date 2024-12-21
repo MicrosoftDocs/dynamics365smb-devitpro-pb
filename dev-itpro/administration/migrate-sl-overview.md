@@ -102,13 +102,13 @@ This section outlines the general process or phases you go through to migrate da
 
    The phase doesn't migrate any data, but it gets the environment ready for migration by establishing the connection and pipeline between the on-premises database and the online tenant database. You also specify which companies to migrate. This phase starts when you run the **Set up Cloud Migration** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
-   To get started, refer to [Set up cloud migration](migration-setup-overview.md).
+   Learn more in [Set up cloud migration](migration-setup-overview.md).
 
 1. **Configure Dynamics SL company migration**
 
    The step is part of the setup phase in which you select the companies and data that you want to migrate.
 
-   To get started, refer to [Configure Dynamics SL company migration](migrate-SL-configure-companies.md).
+   Learn more in [Configure Dynamics SL company migration](migrate-SL-configure-companies.md).
 
 1. **Data replication**
 
@@ -116,7 +116,7 @@ This section outlines the general process or phases you go through to migrate da
 
    At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. Once the data replicates to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-   To get started, refer to [Replicate data](migration-data-replication.md). <!--broken migration-data-replication-SL.md-->
+   Learn more in [Replicate data](migration-data-replication.md). <!--broken migration-data-replication-SL.md-->
 
 1. **Data upgrade**
 
