@@ -27,6 +27,10 @@ landingContent:
             url: https://aka.ms/BCOfficeHours
           - text: aka.ms/BCOfficeHoursRecordings
             url: https://aka.ms/BCOfficeHoursRecordings
+        - linkListType: Just for fun
+        links:
+          - text: aka.ms/BCSong
+            url: https://aka.ms/bcsong
 
   - title: Stay up to date
     linkLists:
