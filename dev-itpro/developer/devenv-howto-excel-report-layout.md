@@ -1,6 +1,6 @@
 ---
 title: Creating an Excel layout report
-description: Describes the steps involved in creating a report that uses an Excel layout.
+description: Describes the steps involved in creating a report that uses an Excel layout
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 09/09/2024
