@@ -29,9 +29,9 @@ When designing an Excel layout, you need to know the following information:
 Every Excel layout file must have a worksheet called _Data_. This worksheet has one purpose: defining which metadata fields from the the dataset definition of the report object the layout uses, which is sometimes also called the _data contract_ between the layout file and the report dataset definition. The data contract consists of the following rules:
 
 1. Metadata fields must be written in the first row of the _Data_ worksheet, one in each cell.
-2. All metadata fields in the _Data_ worksheet must exist as metadata fields in the dataset definition of the report object.
-3. You can't rename fields in the _Data_ worksheet. They must match metadata fields in the dataset definition.
-4. You don't have to use all metadata fields in the dataset definition in the _Data_ worksheet.
+1. All metadata fields in the _Data_ worksheet must exist as metadata fields in the dataset definition of the report object.
+1. You can't rename fields in the _Data_ worksheet. They must match metadata fields in the dataset definition.
+1. You don't have to use all metadata fields in the dataset definition in the _Data_ worksheet.
 
 > [!TIP]  
 > When developing Excel layouts, you can add demo data to the _Data_ worksheet to make it easier to see the end result when the report is rendered with the layout. The data is removed when importing it to [!INCLUDE[prod_short](../includes/prod_short.md)] but if you include Excel layouts in an app/extension, you might want to keep the demo data there for easier troubleshooting later.
@@ -186,18 +186,18 @@ Worksheet references with translation tags are updated in cell formulas as well 
 When importing an Excel layout as part of an app or when a user uploads an Excel layout file, [!INCLUDE[server](includes/server.md)] does the following operations:
  
 1. Loads the Excel layout file and validates whether the file is indeed an Excel file (.xlsx) and that it isn't password protected. If the file isn't a valid Excel file, [!INCLUDE[server](includes/server.md)] rejects the layout.
-2. Reads the metadata fields present in the *Data* worksheet (the content of the data contract). If no _Data_ worksheet exists, [!INCLUDE[server](includes/server.md)] rejects the layout.
-3. Removes any other data present in the *Data* worksheet.
-4. Validates whether the metadata fields present in the *Data* worksheet are all present as metadata fields in the dataset definition of the report object. In other words, [!INCLUDE[server](includes/server.md)] checks that the data contract is valid. If it isn't, [!INCLUDE[server](includes/server.md)] rejects the layout.
+1. Reads the metadata fields present in the *Data* worksheet (the content of the data contract). If no _Data_ worksheet exists, [!INCLUDE[server](includes/server.md)] rejects the layout.
+1. Removes any other data present in the *Data* worksheet.
+1. Validates whether the metadata fields present in the *Data* worksheet are all present as metadata fields in the dataset definition of the report object. In other words, [!INCLUDE[server](includes/server.md)] checks that the data contract is valid. If it isn't, [!INCLUDE[server](includes/server.md)] rejects the layout.
 
 ### Running a report with an Excel layout
 
 When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)] does the following operations:
 
 1. Generates the dataset as specified in the dataset definition in the report object and modified by the filters and options from the request page.
-2. Loads the Excel layout file.
-3. Inserts the data into the *Data* table in the *Data* worksheet in the Excel layout file.
-4. Provides the merged Excel workbook to the user for download or view in Excel online if enabled by the tenant administrator. For more information about viewing Excel outputs in Excel online, visit [Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive).
+1. Loads the Excel layout file.
+1. Inserts the data into the *Data* table in the *Data* worksheet in the Excel layout file.
+1. Provides the merged Excel workbook to the user for download or view in Excel online if enabled by the tenant administrator. For more information about viewing Excel outputs in Excel online, visit [Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive).
 
 ### Changing the data contract after adding new columns to the report dataset
 
