@@ -559,6 +559,17 @@ In implementation projects, a common specification for document layouts is to de
 
 1. Follow the step-by-step guide in the section [How to convert an RDL layout to a Word layout](#how-to-convert-an-rdl-layout-to-a-word-layout), skipping the step *Get a version of the report RDL layout rendered as a Word document*.
 
+## How to compare two versions of a Word layout
+
+If you need to compare two versions of a Word layout, then do as follows:
+
+1. Open Word.
+1. On the **Review** menu, select **Compare Documents**.
+1. In the **Original document** list, select the original document.
+1. In the **Revised document** list, browse to the other version of the document, and then select **OK**.
+
+Learn more in [Compare and merge two versions of a Word document](https://support.microsoft.com/en-us/office/compare-and-merge-two-versions-of-a-document-f5059749-a797-4db7-a8fb-b3b27eb8b87e) (use <kbd>Ctrl</kbd>+click to open in a new tab).
+
 ## Related information
 
 [Using hyperlinks in Word layouts](devenv-hyperlinks-in-word-report-layouts.md)  
