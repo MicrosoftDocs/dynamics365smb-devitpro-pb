@@ -3,7 +3,7 @@ title: Creating a Word layout report
 description: Describes the steps involved in creating a report that uses a Word layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 10/01/2024
+ms.date: 12/30/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
@@ -568,7 +568,7 @@ If you need to compare two versions of a Word layout, then do as follows:
 1. In the **Original document** list, select the original document.
 1. In the **Revised document** list, browse to the other version of the document, and then select **OK**.
 
-Learn more in [Compare and merge two versions of a Word document](https://support.microsoft.com/en-us/office/compare-and-merge-two-versions-of-a-document-f5059749-a797-4db7-a8fb-b3b27eb8b87e) (use <kbd>Ctrl</kbd>+click to open in a new tab).
+Learn more in [Compare and merge two versions of a Word document](https://support.microsoft.com/office/compare-and-merge-two-versions-of-a-document-f5059749-a797-4db7-a8fb-b3b27eb8b87e).
 
 ## Related information
 
