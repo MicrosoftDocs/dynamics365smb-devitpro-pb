@@ -84,12 +84,15 @@ The next task is to grant the key vault reader application permission to read se
 Once your key vault is created there are few steps that you should perform. Feel free to skip the first couple of them if you are just linking new App to an existing Azure key vault.
 1. Create **AllowedBusinessCentralAppIds** secret in your key vault. You can learn how to create a secret following this [guide](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal).
 2. Add your AppId or AppIds as content of the secret. If you are adding multiple appIds separate them by comma or semicolumn.
-3. If you are linking new app to the existing Azure key vault just append the AppId to the existing **AllowedBusinessCentralAppIds** secret.
+Your secret creation screen should look similar to this:
+ ![Create new key vault secret.](../developer/media/setup-app-key-vault-secret-creation.png "Creating AllowedBusinessCentralAppIds secret.")  
+3. If you are linking new app to the existing Azure key vault you will have to create a new version of the **AllowedBusinessCentralAppIds** secret. When creating the new version make sure to correctly append the new appId. In order to do so you will have to get the value of the secret from the existing version by clicking on the secret name then on **Current version** and then on **Show secret value**, copy this value and upon creating the new verion modify the secret value to be the existing value + ", [new appId]".
 
 ## Extra information
 1. The key vault URLs added to your `app.json` file should belong to the same Entra Tenant.
 2. Microsoft registers the link between your AppSource App and Azure key vault upon subsmission of new AppSource App version. Once this link is established it cannot be removed as this is considered breaking changes and it might break existing installations of your AppSource App.
-3. Upon facing issues that are generic and don't give you actionable error messages, please contact the AppSource Marketplace support.
+3. Even if the value of the **AllowedBusinessCentralAppIds** is deleted or some of the appIds are removed from the secret, this won't "deregister" the access to the key vault from this specific AppSource App. Once the registration is done it is irrevertible.
+4. Upon facing issues that are generic and don't give you actionable error messages, please contact the AppSource Marketplace support.
 
 ## Related information  
 
