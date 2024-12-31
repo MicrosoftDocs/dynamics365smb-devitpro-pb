@@ -1,8 +1,7 @@
 ---
 title: Delegated admin access to Business Central online
-description: As the reselling partner, help customers manage their Business Central online, and provide them with technical support.  
+description: Learn how to help customers easily manage their Business Central online and get the technical support they need as their reselling partner.  
 author: jswymer
-
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 11/01/2024
