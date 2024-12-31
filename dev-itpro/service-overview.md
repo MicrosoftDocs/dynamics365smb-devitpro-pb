@@ -1,6 +1,6 @@
 ---
 title: Service overview for Business Central online
-description: Find links to information about the underlying service's maintenance schedule, and the systems that make Business Central online a reliable platform for your business
+description: Find links to information about the underlying service's maintenance schedule, and the systems that make Business Central online a reliable platform for your business.
 author: jswymer
 ms.reviewer: jswymer
 ms.topic: overview
@@ -12,17 +12,15 @@ ms.date: 12/02/2024
 
 # Service overview for Business Central online
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 <!--[!INCLUDE [prod_long](includes/prod_long.md)] is a complete enterprise resource planning (ERP) software solution for mid-sized organizations that is fast to implement, easy to configure, and simple to use, both on-premises and online. [Sign up for a trial](/dynamics365/business-central/across-preview) before you decide to move to the cloud. Read this article to learn about the systems that make [!INCLUDE [prod_short](includes/prod_short.md)] online run as a service that you can bet your business on.  -->
 
 In the rapidly evolving landscape of technology-driven businesses, finding a business management solution that seamlessly adapts to your organization's growth is paramount. Modern small and medium businesses (SMBs) are looking for a solution that doesn't just meet but anticipates the evolving needs of businesses in today's dynamic marketplace. 
 
-[!INCLUDE [prod_long](includes/prod_long.md)] online is a cloud-based ERP software solution for small and mid-sized organizations. It was launched in April 2018 and has since onboarded more than 40,000 customers working in professional services, consumer goods, manufacturing, retail, health, hospitality, transport and logistics, finance, and dozens more industries. It has become a mature, battle-tested solution that understands the intricacies of modern business operations in the areas of security, scalability, performance, resilience, and high availability. 
+[!INCLUDE [prod_long](includes/prod_long.md)] online is a cloud-based ERP software solution for small and mid-sized organizations. It was launched in April 2018 and has since onboarded more than 40,000 customers working in professional services, consumer goods, manufacturing, retail, health, hospitality, transport and logistics, and finance. It has become a mature, battle-tested solution that understands the intricacies of modern business operations in the areas of security, scalability, performance, resilience, and high availability. 
 
 The team that develops the Business Central product itself is the same team responsible for running and managing the Business Central online service. It has first-hand knowledge of all its components.
 
-The service is built from the ground up as a multitenant service, comprised of multiple microservices running on the Microsoft Azure cloud ecosystem. It's built on leading technologies such as React, TypeScript, .NET Core, Azure OpenAI, Microsoft Entra, Azure Functions, Containers, Load Balancer, Virtual Machine Scale Sets, Azure Cosmos DB, Key Vault, Service Bus, Traffic Manager, Azure SignalR Service, WebSockets, and many more.
+The service is built from the ground up as a multitenant service, comprised of multiple microservices running on the Microsoft Azure cloud ecosystem. It's built on leading technologies such as React, TypeScript, .NET Core, Azure OpenAI, Microsoft Entra, Azure Functions, Containers, Load Balancer, Virtual Machine Scale Sets, Azure Cosmos DB, Key Vault, Service Bus, Traffic Manager, Azure SignalR Service, and WebSockets.
 
 ![Diagram depicting scalability elements of Business Central service.](developer/media/scalability.png)
 
@@ -60,7 +58,7 @@ Administrators can use the [!INCLUDE [prod_short](includes/prod_short.md)] admin
 
 [!INCLUDE [prod_short](includes/prod_short.md)] uses Azure SQL Database as the database technology for its environments.
 
-Azure SQL Database, Microsoft's cloud-based relational database service, is used as the best-of-breed service for transactional workloads of Business Central. Azure SQL Database is always running on the latest stable version of the SQL Server database engine and patched OS, with 99.99% availability. Azure SQL Database works behind the scenes to provide Business Central with the following benefits and more: 
+Azure SQL Database, Microsoft's cloud-based relational database service, is used as the best-of-breed service for transactional workloads of Business Central. Azure SQL Database is always running on the latest stable version of the SQL Server database engine and patched OS, with 99.99% availability. Azure SQL Database works behind the scenes to provide Business Central with the following benefits: 
 
 - High availability 
 - Rich business continuity and disaster recovery options 
