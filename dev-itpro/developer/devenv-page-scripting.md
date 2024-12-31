@@ -1,6 +1,6 @@
 ---
 title: Use page scripting tool for acceptance testing (preview)
-description: Learn how to use the page scripting tool in the Business Central web client to record and replay your interaction with the user interface (UI).
+description: Learn how to use the page scripting tool in the Business Central web client to record and replay your interaction with the user interface (UI)
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
