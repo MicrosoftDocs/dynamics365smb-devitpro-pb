@@ -7,7 +7,7 @@ ms.devlang: al
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge, gp, migration
 ms.search.form: 4003
-ms.date: 02/28/2024
+ms.date: 01/2/2025
 ms.author: jswymer
 ---
 # Dynamics GP data migrated to Business Central online
@@ -84,6 +84,12 @@ You can also bring over Open Purchase Orders. When we migrate purchase orders, w
 Inventory is imported with the cost valuation method that is set in GP at the time the migration is run. Location information and the quantity on hand for each time is migrated. If serial or lot information is tracked on an item, that information is also migrated.  
 
 In the **GP Company Migration Configuration** page, you can choose to migrate posting accounts on item classes. If you choose this option, posting accounts that are defined on *item classes* in Dynamics GP are migrated to Business Central as *inventory posting groups*. If an item is assigned to an item class in Dynamics GP, the item will be assigned to the corresponding inventory posting group after migrating. If you only want to migrate active items, you can choose to exclude inactive items in the **GP Company Migration Configuration** page.  Also, you can choose if you don't want to migrate discontinued items.  
+
+**Inventory Unit of Measure**
+In Business Central, there isn't a direct equivalent to the "Unit of Measure Schedules" table (IV40201) found in Dynamics GP. Schedules are not actually units of measure; they are an ID in Dynamics GP that holds a group of Units of Measure.  Business Central does not have UofM Schedules, it only stores Units of Measure that would be in the GP table IV40202.  However, Business Central does allow you to set up and manage multiple units of measure for items.
+
+You can define a base unit of measure for each item and then create alternate units of measure for purchasing, production, or sales. These alternate units of measure can be used to specify how many units of the base unit of measure are handled in different processes.
+[Set up item units of measure - Business Central | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-setup-units-of-measure)
 
 ## Checkbook transaction and master data 
 
