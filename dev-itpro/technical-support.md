@@ -4,22 +4,22 @@ description: Learn about how to support your Business Central customers, online 
 author: SusanneWindfeldPedersen
 ms.topic: overview
 ms.author: solsen
-ms.date: 06/20/2024
+ms.date: 12/30/2024
 ms.reviewer: solsen
 ---
 
 # Technical support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]
 
-Each customer of [!INCLUDE [prod_short](developer/includes/prod_short.md)] has a partner who assists with technical support. As a [!INCLUDE[prod_short](developer/includes/prod_short.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prod_short](developer/includes/prod_short.md)] tenants, and you are the first line of support. You will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft.  
+Each customer of [!INCLUDE [prod_short](developer/includes/prod_short.md)] has a partner who assists with technical support. As a [!INCLUDE[prod_short](developer/includes/prod_short.md)] reselling partner, you're an administrator of your customers' [!INCLUDE[prod_short](developer/includes/prod_short.md)] tenants, and you're the first line of support. You get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft.  
 
-In this section, you can learn about the tools that are available to you to help you troubleshoot your customers' [!INCLUDE [prod_short](developer/includes/prod_short.md)].  
+In this section, learn about the tools that are available to you to help you troubleshoot your customers' [!INCLUDE [prod_short](developer/includes/prod_short.md)].  
 
 ## Configuring the support experience
 
-Because you are the first line of support for your customers, you must make it easy for them to contact you. They can find your contact information in the [Help and Support](/dynamics365/business-central/product-help-and-support?toc=/dynamics365/business-central/dev-itpro/toc.json) page.  
+Because you're the first line of support for your customers, you must make it easy for them to contact you. They can find your contact information in the [Help and Support](/dynamics365/business-central/product-help-and-support?toc=/dynamics365/business-central/dev-itpro/toc.json) page.  
 
 > [!IMPORTANT]
-> You must have set up users in your own tenant in Partner Center as either *Admin agent* or *Helpdesk agent*, and they must have *delegated administration* privileges in your customer's [!INCLUDE [prod_short](developer/includes/prod_short.md)] to support the customer. For more information, see [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md).
+> You must have set up users in your own tenant in Partner Center as either *Admin agent* or *Helpdesk agent*, and they must have *delegated administration* privileges in your customer's [!INCLUDE [prod_short](developer/includes/prod_short.md)] to support the customer. Learn more in [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md).
 
 ### To supply your support contact information in the administration center
 
@@ -27,11 +27,11 @@ Because you are the first line of support for your customers, you must make it e
 2. Fill in the **Name**, **Email address**, and the **Website** fields, so that your users know how to contact you for technical support.
 3. Optionally, choose the **Apply to all environments** checkbox if you want to add the same details to all related environments for this tenant.
 
-Your customer can now contact you if they experience problems and need help. If you also cannot resolve a reported issue, escalate the issue to Microsoft. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
+Your customer can now contact you if they experience problems and need help. If you also can't resolve a reported issue, escalate the issue to Microsoft. Learn more in [Managing Technical Support](administration/manage-technical-support.md).  
 
 ### On-premises deployments
 
-In on-premises deployments of [!INCLUDE[prod_short](developer/includes/prod_short.md)], the **Help and Support** page does not contain the section for contacting technical support. Instead, you can enter an agreement with your customer's administrator about how and when to contact you.  
+In on-premises deployments of [!INCLUDE[prod_short](developer/includes/prod_short.md)], the **Help and Support** page doesn't contain the section for contacting technical support. Instead, you can enter an agreement with your customer's administrator about how and when to contact you.  
 
 There are two other links in the **Help and Support** page that you can customize:
 
@@ -44,12 +44,8 @@ There are two other links in the **Help and Support** page that you can customiz
 
 If you choose to not modify these settings, then the links go to Microsoft's blog and release notes.
 
-For more information, see [Configuring [!INCLUDE[webserver](developer/includes/webserver.md)] Instances](administration/configure-web-server.md).
+Learn more in [Configuring [!INCLUDE[webserver](developer/includes/webserver.md)] Instances](administration/configure-web-server.md).
 
-<!--
-> [!NOTE]
-> The **Help and Support** page is available only in the browser.  
--->
 
 ## Getting support for extension issues
 
@@ -64,7 +60,7 @@ As a partner, you must identify if the issue is caused by application logic or p
 
 The [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)] is your primary tool to support your customers. However, you can also sign in to the customer's [!INCLUDE [prod_short](developer/includes/prod_short.md)] as the delegated admin for troubleshooting.  
 
-For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
+Learn more in [Managing Technical Support](administration/manage-technical-support.md).  
 
 ## Monitor service health
 
@@ -81,7 +77,7 @@ As a partner, you have different support channels depending on what type of issu
 
 #### Non-product related questions
 
-On occasion, as a partner, you will run into questions that are not directly related to the product. The following list outlines how to get answers to those questions.
+On occasion, as a partner, you'll run into questions that aren't directly related to the product. The following list outlines how to get answers to those questions.
 
 [!INCLUDE [nonprodsupport](includes/nonprodsupport.md)]
 
@@ -95,6 +91,5 @@ On occasion, as a partner, you will run into questions that are not directly rel
 [Administration of Business Central on-premises](administration/Administration.md)  
 [Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
 [Providing support to your customers (Microsoft Partner Center)](/partner-center/customer-support)  
-
  
 [!INCLUDE [footer-banner](includes/footer-banner.md)]
