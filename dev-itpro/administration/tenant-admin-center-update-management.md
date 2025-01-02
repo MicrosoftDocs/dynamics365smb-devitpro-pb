@@ -12,7 +12,7 @@ ms.reviewer: jswymer
 
 # Managing updates in the Business Central admin center
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are updated according to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/), with two major updates a year, one in April and another in October, and minor updates in every month except April and October. Learn more in [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md) and the [Dynamics 365 Release Plans](/dynamics365/release-plans/).
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments follow a structured update schedule based on the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/). There are two major updates a year, in April and October, with minor updates rolled out every month except during those two months. Learn more in [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md) and the [Dynamics 365 Release Plans](/dynamics365/release-plans/).
 
 Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify the timing of updates for each environment and who receives [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. Learn more in [Major Updates and Minor Updates](update-rollout-timeline.md).  
 
