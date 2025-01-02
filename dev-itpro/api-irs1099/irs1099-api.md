@@ -82,7 +82,7 @@ Represents the 1099 form report in [!INCLUDE[prod_short](../includes/prod_short.
 
 ## Related information
 
-[How to set up the IRS 1099 forms](/dynamics365/business-central/set-up-use-irs1099-form-v24)  
-[How to use the IRS 1099 forms](/dynamics365/business-central/how-to-1099-use)  
-[How to submit and report the IRS 1099](/dynamics365/business-central/set-up-use-irs1099-form-v24#to-print-report-configuration)  
+[How to set up the IRS 1099 forms](/dynamics365/business-central/LocalFunctionality/UnitedStates/set-up-use-irs1099-form-v24)  
+[How to use the IRS 1099 forms](/dynamics365/business-central/LocalFunctionality/UnitedStates/how-to-1099-use)  
+[How to submit and report the IRS 1099](/dynamics365/business-central/LocalFunctionality/UnitedStates/set-up-use-irs1099-form-v24#to-print-report-configuration)  
 [Work with [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/ui-work-product)  
