@@ -1,5 +1,5 @@
 ---
-title: IRS1099 APIs
+title: IRS 1099 APIs
 description: Learn how to use IRS1099 APIs related to local functionality in the United States version of Business Central.
 author: altotovi
 ms.topic: reference
@@ -8,7 +8,7 @@ ms.author: altotovi
 ms.reviewer: solsen
 ---
 
-# IRS 1099 API
+# IRS 1099 API (United States)
 
 With the IRS 1099 feature in [!INCLUDE [prod_short](../includes/prod_short.md)], you can create connected apps that establish a point-to-point connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and third-party solutions or services for taxes or communication. To do so, you can typically create those connections using the standard REST API to interchange data. Once you have the API access enabled, you can write code that integrates your web service or SaaS solution with the IRS 1099 features in the United States local version [!INCLUDE[prod_short](../includes/prod_short.md)].  
 
