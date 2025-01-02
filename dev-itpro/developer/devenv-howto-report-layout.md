@@ -3,7 +3,7 @@ title: Creating a Word layout report
 description: Describes the steps involved in creating a report that uses a Word layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 10/01/2024
+ms.date: 12/30/2024
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
@@ -558,6 +558,17 @@ In implementation projects, a common specification for document layouts is to de
    1. If the PDF document is read-only, the resulting Word document is also read-only. In this case, mark all content by selecting <kbd>Ctrl</kbd>+<kbd>a</kbd>, copy to clipboard, create a new Word document, and paste the content in the new Word document.
 
 1. Follow the step-by-step guide in the section [How to convert an RDL layout to a Word layout](#how-to-convert-an-rdl-layout-to-a-word-layout), skipping the step *Get a version of the report RDL layout rendered as a Word document*.
+
+## How to compare two versions of a Word layout
+
+If you need to compare two versions of a Word layout, then do as follows:
+
+1. Open Word.
+1. On the **Review** menu, select **Compare Documents**.
+1. In the **Original document** list, select the original document.
+1. In the **Revised document** list, browse to the other version of the document, and then select **OK**.
+
+Learn more in [Compare and merge two versions of a Word document](https://support.microsoft.com/office/compare-and-merge-two-versions-of-a-document-f5059749-a797-4db7-a8fb-b3b27eb8b87e).
 
 ## Related information
 
