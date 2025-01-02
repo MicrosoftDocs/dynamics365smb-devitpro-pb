@@ -1488,6 +1488,7 @@
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 #### [Sustainability API](api-sustainability/sustainability-api.md)
+#### [IRS 1099 API (United States)](api-sustainability/sustainability-api.md)
 
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
 #### [Admin Center API](administration/administration-center-api.md)

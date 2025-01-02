@@ -29,7 +29,7 @@ Represents the **IRS 1099 Form Doc. Header** in [!INCLUDE[prod_short](../include
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
-| Id | guid | The unique ID of the Irs1099documents. Noneditable. |
+| id | guid | The unique ID of the Irs1099documents. Noneditable. |
 | vendorNo | string | The code of vendor. |
 | vendorName | string | The name of vendor. |
 | docId | integer | The id of document. |
@@ -53,7 +53,7 @@ Represents the **IRS 1099 Form Doc. Line** in [!INCLUDE[prod_short](../includes/
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
-| Id | guid | The unique ID of the Irs1099documentlines. Noneditable. |
+| id | guid | The unique ID of the Irs1099documentlines. Noneditable. |
 | lineNo | integer | Specifies the line of the document. |
 | formBoxNo | string | Specifies the number of the 1099 form box. |
 | amount | decimal | Specifies the amount of the document line. |
@@ -75,7 +75,7 @@ Represents the 1099 form report in [!INCLUDE[prod_short](../includes/prod_short.
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
-| Id | guid | The unique ID of the Irs1099formreports. Noneditable. |
+| id | guid | The unique ID of the Irs1099formreports. Noneditable. |
 | reportType | string | Specifies the report type. |
 | fileContent | binary | Specifies the content of the file. |
 
