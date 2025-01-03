@@ -21,7 +21,7 @@ Microsoft manages updates for the base application and platform. As an internal 
 The update window for an environment defines the hours during the day for the selected time zone in which the environment can be updated. When an update is rolling out, it's applied to an environment within the time frame that the update window defines.
 
 > [!IMPORTANT]
-> Updates always start during the update window specified for the environment, but not necessarily right at the start of the update window. Updates that fail to complete before the end of the update window are canceled to ensure the environment is operational during business hours; the update is automatically rescheduled seven days later for a new attempt and [notification recipients](#notify) are informed.
+> Updates always start during the update window specified for the environment, but not necessarily right at the start of the update window. Updates that fail to complete before the end of the update window are canceled to ensure the environment is operational during business hours. The update is automatically rescheduled seven days later and [notification recipients](#notify) are informed.
 
 This window helps ensure updates are applied outside of the normal business hours of the organization. Every environment has a default update window that's between 8:00 PM and 6:00 AM local time for the environment's country/region. In countries/regions that have multiple time zones, the system sets a time zone that's close to the geographic center of the country/region as default.
 
@@ -51,15 +51,15 @@ Learn more in [Schedule updates](update-rollout-timeline.md#schedule-updates).
 To schedule an update date:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
-2. Choose the **Update Settings** action, and then choose the **Set update date** action.
-3. In the **Schedule Environment Update** pane, specify the update date.
+1. Choose the **Update Settings** action, and then choose the **Set update date** action.
+1. In the **Schedule Environment Update** pane, specify the update date.
 
     > [!NOTE]  
-    > You can choose to ignore the environment's update window when scheduling a specific update by switching **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and it lets large upgrades run for longer than 24 hours if required. Updates that run in this mode won't be automatically canceled at the end of the update window, so it's not recommended to use this setting for updates on environments that must be available for users again by a certain time.
+    > You can choose to ignore the environment's update window when scheduling a specific update by switching **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and lets large upgrades run for longer than 24 hours if necessary. Updates running in this mode aren't automatically canceled when the update window ends. Using this setting for environments that need to be available for users by a certain time isn't recommended.
 
-4. Choose **Schedule Update**.
+1. Choose **Schedule Update**.
 
-If an administrator hasn't picked a date for an update, then the update is applied automatically within a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications. You can then choose to override that with a custom date by following the steps that are provided above. Not selecting an update date doesn't prevent the environment from being updated.
+If the administrator is unable to pick a date for the update, then the update is applied automatically within a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications. You can choose to override the default date range with a custom date by following the steps that are provided in **To schedule an update**. 
 
 ## <a name="notify"></a>Get notified of updates
 
@@ -74,7 +74,7 @@ Sometimes an environment can't get the new update. For example, a per-tenant ext
 
 [!INCLUDE [admin-update-pte](../includes/admin-update-pte.md)]
 
-For more information, see [Failed updates and rescheduling](update-rollout-timeline.md#failed-updates-and-rescheduling).  
+Learn more in [Failed updates and rescheduling](update-rollout-timeline.md#failed-updates-and-rescheduling).  
 
 ## Related information
 
