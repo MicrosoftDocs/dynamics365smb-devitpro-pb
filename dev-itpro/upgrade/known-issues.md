@@ -1,7 +1,7 @@
 ---
 title: Some Known Issues in Business Central On-premises
 description: Provides an overview of the known issues in Business Central versions
-ms.date: 05/08/2024
+ms.date: 12/19/2024
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -9,39 +9,24 @@ author: jswymer
 ms.custom: bap-template 
 ---
 
-# Some Known Issues in Business Central On-premises
+# Some Known issues in Business Central on-premises
 
 This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions. These issues can affect installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prod_short.md)] on-premises.
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
+## Different installation path in 25.2
 
-## Synchronizating tenant fails
+> Applies to: 25.2
 
+25.2 includes internal database schema changes with the following consequences:
 
-```powershell
-PS C:\Windows\system32> Sync-NAVTenant -ServerInstance $BCServerInstanceName -Mode Sync
-Sync-NAVTenant : [31;1mSync-NAVTenant: [0m
-[31;1m[36;1mLine |[0m
-[31;1m[36;1m[36;1m  15 | [0m     $output = [36;1mSync-NAVTenant @cmdletArgs[0m;[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mThe schema synchronization may result in deleted data. The following destructive changes were detected:[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable: 2000000259, Agent Access Control Data[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mField: 3, Access: Data type changed[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mExamples of code to migrate data:[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mDataUpgradeMgt.SetTableSyncSetup(DATABASE::"Agent Access Control Data",[Upgrade Table Id],TableSynchSetup.Mode::[Mode]);[0m
-At line:1 char:1
-+ Sync-NAVTenant -ServerInstance $BCServerInstanceName -Mode Sync -Forc ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidData: ([31;1mSync-NAV...:[Mode]);[0m
-:String) [Sync-NAVTenant], InvalidOperationException
-    + FullyQualifiedErrorId : navId,Microsoft.Dynamics.Nav.Management.SyncNAVTenant
+- New platform version 25.2 instead of 25.0.
+- Different installation path than 25.0 and 25.1. Instead of using folder '250', components are installed in folder '252', for example: `C:\Program Files\Microsoft Dynamics 365 Business Central\252`.
+<!-- - Platform-only upgrade isn't supported. You must do a full platform and application upgrade.-->
 
-```
+Future updates like 25.3 and 25.4 will also use platform number '25.2' and installation folder '252'.
 
 ## Installation fails because PowerShell 7 is already installed
 

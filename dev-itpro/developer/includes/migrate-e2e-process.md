@@ -5,4 +5,4 @@ ms.date: 07/23/2023
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-For an overview of the full end-to-end process for Business Central on-premises cloud migration, go [here](../../administration/migrate-business-central-on-premises.md#end-to-end-process).
+Learn more in [Business Central on-premises to Business Central online: End-to-end overview](../../administration/migrate-business-central-on-premises.md#end-to-end-process).
