@@ -24,7 +24,7 @@ The name of the moved symbol in the source and the destination application is di
 
 ## Remarks
 
-The name of a moved symbol in the source application is different from the name in the destination application. This is important to fix because maintaining consistent naming for symbols when they are moved ensures that dependent extensions and applications can continue to function correctly. Changing the name of a symbol during a move can lead to broken references and functionality issues in dependent extensions.
+The name of a moved symbol in the source application is different from the name in the destination application. This is important because maintaining consistent naming for symbols when they are moved ensures that dependent extensions and applications can continue to function correctly. Changing the name of a symbol during a move can lead to broken references and functionality issues in dependent extensions.
 
 ## How to fix this diagnostic?
 
