@@ -55,17 +55,17 @@ landingContent:
       links:
         - text: aka.ms/BCAI
           url: https://aka.ms/BCAI
-        - text: aka.ms/bcCopilotPitchDeck
+        - text: aka.ms/BCCopilotPitchDeck
           url: https://aka.ms/bcCopilotPitchDeck
         - text: aka.ms/BC-AI-Sizzle
           url: https://aka.ms/BC-AI-Sizzle
-        - text: aka.ms/bcAgents
+        - text: aka.ms/BCAgents
           url: https://aka.ms/bcAgents
     - linkListType: how-to-guide
       links:
-        - text: aaka.ms/bcAIdevDocs
+        - text: aaka.ms/BCAIdevDocs
           url: https://aka.ms/bcAIdevDocs
-        - text: aka.ms/aka.ms/BCStartCodingWithAI
+        - text: aka.ms/BCStartCodingWithAI
           url: https://aka.ms/BCStartCodingWithAI
       
   - title: Partner readiness and go to market
