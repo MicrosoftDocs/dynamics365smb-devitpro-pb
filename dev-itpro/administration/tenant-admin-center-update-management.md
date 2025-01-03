@@ -14,14 +14,14 @@ ms.reviewer: jswymer
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments follow a structured update schedule based on the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/). There are two major updates a year, in April and October, with minor updates rolled out every month except during those two months. Learn more in [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md) and the [Dynamics 365 Release Plans](/dynamics365/release-plans/).
 
-Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify the timing of updates for each environment and who receives [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. Learn more in [Major Updates and Minor Updates](update-rollout-timeline.md).  
+Microsoft manages updates for the base application and platform. As an internal administrator or as a partner, you use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify the timing of updates for each environment and who receives [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. Learn more in [Major Updates and Minor Updates](update-rollout-timeline.md).  
 
 ## Set the update window for each environment
 
-The update window for an environment defines the hours during the day for the selected time zone in which the environment can be updated. When an update is rolling out it will be applied to an environment within the time frame that the update window defines.
+The update window for an environment defines the hours during the day for the selected time zone in which the environment can be updated. When an update is rolling out, it's applied to an environment within the time frame that the update window defines.
 
 > [!IMPORTANT]
-> Updates always start during the update window specified for the environment, but not necessarily right at the start of the update window. Updates that fail to complete before the end of the update window are cancelled to ensure the environment is operational during business hours; the update is automatically rescheduled seven days later for a new attempt and [notification recipients](#notify) are informed.
+> Updates always start during the update window specified for the environment, but not necessarily right at the start of the update window. Updates that fail to complete before the end of the update window are canceled to ensure the environment is operational during business hours; the update is automatically rescheduled seven days later for a new attempt and [notification recipients](#notify) are informed.
 
 This window helps ensure updates are applied outside of the normal business hours of the organization. Every environment has a default update window that's between 8:00 PM and 6:00 AM local time for the environment's country/region. In countries/regions that have multiple time zones, the system sets a time zone that's close to the geographic center of the country/region as default.
 
@@ -29,7 +29,7 @@ This window helps ensure updates are applied outside of the normal business hour
  The default time zone is set based on the environment localization and may differ from the administrator's time zone in countries that span multiple time zones.
 -->
 > [!NOTE]
-> Desktop users who are signed in during the update will receive an alert in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] before the update starts.
+> Desktop users who are signed in during the update receive an alert in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] before the update starts.
 
 To change the update window for an environment:
 
@@ -38,7 +38,7 @@ To change the update window for an environment:
 3. In the **Set update window** pane, specify the time zone, start time, and end time, for the update window for the environment. The update window must be a minimum of six hours.
 4. Choose **Save**.
 
-This timeslot now becomes the default window when updates will be applied to this environment.
+This timeslot now becomes the default window when updates are applied to this environment.
 
 ## <a name="schedule"></a>Schedule an update date
 
@@ -55,7 +55,7 @@ To schedule an update date:
 3. In the **Schedule Environment Update** pane, specify the update date.
 
     > [!NOTE]  
-    > You can choose to ignore the environment's update window when scheduling a specific update by switching **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and it lets large upgrades run for longer than 24 hours if required. Updates that run in this mode won't be automatically cancelled at the end of the update window, so it's not recommended to use this setting for updates on environments that must be available for users again by a certain time.
+    > You can choose to ignore the environment's update window when scheduling a specific update by switching **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and it lets large upgrades run for longer than 24 hours if required. Updates that run in this mode won't be automatically canceled at the end of the update window, so it's not recommended to use this setting for updates on environments that must be available for users again by a certain time.
 
 4. Choose **Schedule Update**.
 
