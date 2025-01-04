@@ -653,7 +653,7 @@ codeunit 50110 "Shpfy Product Metafields"
             ItemSubstitution.Init();
             ItemSubstitution."No." := Item."No.";
             ItemSubstitution."Substitute Type" := ItemSubstitution."Substitute Type"::Item;
-            ItemSubstitution.Validate("Substitute No.",SubstituteItem."No.");
+            ItemSubstitution.Validate("Substitute No.",Metafield.Value);
             ItemSubstitution.Insert(true);
         end;
     end;
