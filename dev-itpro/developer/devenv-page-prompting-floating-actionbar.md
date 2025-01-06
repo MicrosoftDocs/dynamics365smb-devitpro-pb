@@ -1,6 +1,6 @@
 ---
 title: Prompting using a floating action bar
-description: Learn how to create prompt actions to promote AI capabilities in Business Central.
+description: Learn how to create prompt actions to promote AI capabilities in Business Central
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
@@ -24,14 +24,14 @@ A prompt action is an action that appears in a highly visible area of the page. 
 
 On `List` and  `Worksheet` page types, prompt actions appear under the ![Shows the Copilot action icon on list pages](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** icon in the page's action bar and also in a floating action bar as illustrated in the following figure for a `List` page. Users can hide the floating action bar by selecting Hide and bring it back by selecting Show in page.
 
-:::image type="content" source="media/copilot-prompt-actions-callouts.svg" alt-text="Example of a floating action bar for Copilot feature on list page":::
+:::image type="content" source="media/copilot-prompt-actions-callouts.svg" alt-text="Screenshot of a floating action bar for Copilot feature on list page":::
 
 The following table describes the prompt actions in the UI for other page types.
 
 |Card, Document, ListPlus|ListPart|StandardDialog|
 |-|-|-|
 |Prompt actions appear with the ![Shows the Copilot action icon](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon in the upper-right corner of the page.|Prompt actions appear in the ![Shows the Copilot action icon on listpart pages](media/promptdialog-copilot-action-icon.png) **Start a Copilot prompt action** menu in part's action bar.|Prompt actions appear with the ![Shows the Copilot action icon on standard dialogs.](media/copilot-icon-rainbow.png) **Here's what Copilot can do on this page** icon at the bottom of the page.|
-|:::image type="content" source="media/copilot-prompt-actions-card.svg" alt-text="Example of a prompt action bar for Copilot feature on card page":::|:::image type="content" source="media/copilot-prompt-actions-listpart.svg" alt-text="Example of a pompt action for Copilot feature on list part page":::|:::image type="content" source="media/copilot-prompt-actions-standarddialog.svg" alt-text="Example of a prompt action for Copilot feature on standard dialog page":::|
+|:::image type="content" source="media/copilot-prompt-actions-card.svg" alt-text="Screenshot of a prompt action bar for Copilot feature on card page":::|:::image type="content" source="media/copilot-prompt-actions-listpart.svg" alt-text="Screenshot of a pompt action for Copilot feature on list part page":::|:::image type="content" source="media/copilot-prompt-actions-standarddialog.svg" alt-text="Screenshot of a prompt action for Copilot feature on standard dialog page":::|
 
 ### Create a prompt action
 
@@ -204,7 +204,7 @@ actions
 
 ## Add a standard action that runs the prompt dialog page
 
-If your Copilot feature will be reached from a page that doesn't yet support Copilot prompt actions, you can use a standard action. This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot feature. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
+If your Copilot feature is reached from a page that doesn't yet support Copilot prompt actions, you can use a standard action. This task is done similar to the way you add an action that opens any page. Except in this case, you target the prompt dialog page for your Copilot feature. You also apply a specific image so that users can easily recognize that the action is related to a Copilot feature.
 
 The following code illustrates how to add an action that opens the prompt dialog page for Copilot feature:  
 
