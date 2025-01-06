@@ -6,6 +6,10 @@ ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
+ai-usage: ai-assisted
+ms.custom:
+ - ai-gen-docs-bap
+ - ai-seo-date: 01/02/2025
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,7 +21,22 @@ Source application for the moved symbol cannot be found.
 The source application for this moved symbol cannot be found.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## Related information  
+
+## Remarks
+
+The source application for a moved symbol can't be found. This is important because when a symbol is moved from one application to another, it is crucial to maintain a reference to the source application to ensure that dependent extensions can locate and use the symbol correctly. If the source application can't be found, it can lead to broken references and functionality issues in dependent extensions.
+
+## How to fix this diagnostic?
+
+Ensure that the source application for the moved symbol is correctly referenced and available. Here are the steps to fix this diagnostic:
+
+1. Identify the symbol that has been moved and is causing the AS0116 warning.
+2. Verify that the source application containing the original symbol is correctly referenced in your extension.
+3. Ensure that the source application is available and accessible.
+4. Update the `MovedFrom` property in the destination application to correctly reference the source application.
+
+## Related information
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
