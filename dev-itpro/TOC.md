@@ -1488,6 +1488,7 @@
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 #### [Sustainability API](api-sustainability/sustainability-api.md)
+#### [IRS 1099 API (United States)](api-irs1099/irs1099-api.md)
 
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
 #### [Admin Center API](administration/administration-center-api.md)
@@ -1571,6 +1572,7 @@
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
 ### [Transparency note: Machine Learning APIs](developer/ml-transparency-note.md)
 
+<!-- Office apps and Microsoft 365 start -->
 ## Integrating Business Central with Office apps and Microsoft 365
 ### [Overview](developer/m365-integration-overview.md)
 ### Integrating with Microsoft Excel
@@ -1595,9 +1597,9 @@
 #### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 ### Integrating with Microsoft Word
-#### [Using Word templates for Bulk Communication](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
-#### [Using Word for Document Report Layouts](/dynamics365/business-central/ui-mail-merge)  
-
+#### [Using Word templates for Bulk Communication](/dynamics365/business-central/ui-mail-merge)  
+#### [Using Word for Document Report Layouts](/dynamics365/business-central/ui-how-add-fields-word-report-layout)  
+<!-- Office apps and Microsoft 365 end -->
 
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
@@ -1661,7 +1663,7 @@
 ##### [Power BI integration overview](/dynamics365/business-central/admin-powerbi-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Enable Power BI integration](/dynamics365/business-central/admin-powerbi-setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### Report creator
-##### [Get started: Build Power BI reports](/dynamics365/business-central/#across-how-use-financials-data-source-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Get started: Build Power BI reports](/dynamics365/business-central/across-how-use-financials-data-source-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Create Power BI reports to display list data](/dynamics365/business-central/across-how-use-powerbi-reports-factbox?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
 #### [Extract data from Business Central](developer/devenv-extract-data.md)

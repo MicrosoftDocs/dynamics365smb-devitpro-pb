@@ -52,7 +52,7 @@ Alternatively, you can access the administration center from the URL, use the fo
 
 ## Delegated administrators (Partner users)
 
-Partner organizations can set up a (Granular Delegated Administration Privileges (GDAP))[/partner-center/gdap-introduction] relationship including at least one of the Microsoft Entra roles that grant access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to access their customers' administration centers. [Learn how to set up a GDAP relationship](/partner-center/gdap-obtain-admin-permissions-to-manage-customer).
+Partner organizations can set up a [Granular Delegated Administration Privileges (GDAP)](/partner-center/gdap-introduction) relationship including at least one of the Microsoft Entra roles that grant access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to access their customers' administration centers. [Learn how to set up a GDAP relationship](/partner-center/gdap-obtain-admin-permissions-to-manage-customer).
 
 After the relationship is set up, users in the partner tenant can access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] for the customer's tenant. However, the users must be in a security group assigned to at least one of the required roles in the active GDAP relationship, which is done by completing these steps:
 
