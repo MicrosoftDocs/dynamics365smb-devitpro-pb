@@ -23,19 +23,19 @@ Use different disks or disk partitions for:
 - Log files for system and user databases.
 - Data and log files for the TempDB database.
 
-For optimal read/write performance, make sure that disks that are used for SQL Server data files are formatted using 64-KB block size.
+For optimal read/write performance, format disks used for SQL Server data files with a 64-KB block size.
 
 ### Virus scanning
 
-We recommend that you use antivirus software to help protect the computers running Microsoft SQL Server in your environment. Learn more in [Configure antivirus software to work with SQL Server](https://aka.ms/chooseantivirussoftwareforsqlserver).
+Use antivirus software to protect computers running Microsoft SQL Server. Learn more in [Configure antivirus software to work with SQL Server](https://aka.ms/chooseantivirussoftwareforsqlserver).
 
 ### Memory
 
-For optimal read performance, maximize the available memory on the server according to the version and edition of SQL Server used. Refer to the SQL Server documentation for maximum values.
+Maximize available memory on the server for optimal read performance, based on the SQL Server version and edition. Refer to the SQL Server documentation for maximum values.
 
 ### SQL Server components
   
-When you're installing Microsoft SQL Server for use with [!INCLUDE[prod_short](../developer/includes/prod_short.md)], install the following components as a minimum:
+When installing Microsoft SQL Server for use with [!INCLUDE[prod_short](../developer/includes/prod_short.md)], install at least the following components:
   
 - Database Engine Services  
 - Client Tools Connectivity  
@@ -59,11 +59,11 @@ For servers with fewer than eight cores, create as many data files for the TempD
 
 Make sure that all data files for the TempDB database are of the same size.
 
-Consider putting data and log files for TempDB on a local SSD drive if you're using SAN storage.
+Consider placing TempDB data and log files on a local SSD if using SAN storage.
 
 #### Data file and log file configuration
 
-Autogrowth of the database and/or transaction log files in production can degrade performance as all transaction must queue up and wait for SQL Server to grow the file before it can begin to process transactions again. This can create bottlenecks. We strongly recommend growing data and log files during off-peak periods and by 10% to 25% of the current size. We don't recommend disabling autogrow. In an emergency,  it's better that to have SQL Server autogrow files than run out of disk space and bring the database down.
+Autogrowth of the database or transaction log files in production can degrade performance because transactions must queue up and wait for SQL Server to grow the file before it can begin to process transactions again. This behavior can create bottlenecks. We strongly recommend growing data and log files during off-peak periods and by 10% to 25% of the current size. We don't recommend disabling autogrow. In an emergency, it's better that to have SQL Server autogrow files than run out of disk space and bring the database down.
 
 #### Max degree of parallelism (MAXDOP)
 
@@ -92,7 +92,7 @@ Enable trace flags 1117 and 1118 as startup options. These trace flags are incor
 
 We recommend using dedicated domain user accounts for the Windows services running your [!INCLUDE[server](../developer/includes/server.md)] instances and your SQL Server instances instead of a Local System account or the Network Service account.  
 
-The [!INCLUDE[server](../developer/includes/server.md)] account must have privileges on the SQL Server instances and on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database(s). See [Provisioning the Server Service Account](provision-server-account.md) for details.
+The [!INCLUDE[server](../developer/includes/server.md)] account must have privileges on the SQL Server instances and on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases. Learn more in [Provisioning the Server Service Account](provision-server-account.md).
 
 Consider adding the service account for the SQL Server engine to the **Perform Volume Maintenance Tasks** security policy.
 
@@ -102,23 +102,23 @@ After [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is installed, 
 
 #### Statistics
 
-The AUTO_CREATE_STATISTICS and AUTO_UPDATE_STATISTICS options on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases should be set to ON, which is the default setting.
+Set the AUTO_CREATE_STATISTICS and AUTO_UPDATE_STATISTICS options on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases to ON, the default setting.
 
-SQL Server uses a threshold that adjusts according to the number of rows in the table. With this change, statistics on large tables will be updated more often.
+SQL Server uses a threshold that adjusts according to the number of rows in the table. With this change, statistics on large tables are updated more often.
 
-Even with AUTO_UPDATE_STATISTICS on, we strongly recommend running a periodic SQL Agent job to update statistics because  AUTO_UPDATE_STATISTICS is triggered only according to the rules described above. On large tables with tens of millions of records (such as Value Entry, Item Ledger Entry and G/L Entry), a small percentage of data in a given statistic such as [Entry No.] can change and have a material effect on the overall data distribution in that statistic. This can cause inefficient query plans, resulting in degraded query performance until any threshold is reached. We recommend using the T-SQL procedure "sp_updatestats" to update statistics, as it will only update statistics where data has been changed. We recommend creating a SQL Agent Job that runs daily or weekly (depending on transaction volume) during off-peak hours to update all statistics where data has changed.
+Even with AUTO_UPDATE_STATISTICS on, we strongly recommend running a periodic SQL Agent job to update statistics because AUTO_UPDATE_STATISTICS is triggered only according to the rules described above. On large tables with tens of millions of records (such as Value Entry, Item Ledger Entry, and G/L Entry), a small percentage of data in a given statistic such as [Entry No.] can change and have a material effect on the overall data distribution in that statistic. This behavior can cause inefficient query plans, resulting in degraded query performance until any threshold is reached. We recommend using the T-SQL procedure "sp_updatestats" to update statistics because it only update statistics for data that changes. We recommend creating a SQL Agent Job that runs daily or weekly (depending on transaction volume) during off-peak hours to update all statistics for changed data.
 
 #### Index fragmentation
 
-Another important administration task that helps to reduce data size and improve performance is to reduce fragmentation for tables and non-clustered indexes. This article in the SQL Server documentation is a good starting point to learn more: [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
+Another important administration task that helps to reduce data size and improve performance is to reduce fragmentation for tables and nonclustered indexes. This article in the SQL Server documentation is a good starting point to learn more: [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
 
 #### Other database options
 
-We recommend to set the database option PAGE_VERIFY to the value CHECKSUM for all databases (including TEMPDB) as this is the most robust method of detecting physical database corruption. This is the default setting for new installations.
+We recommend setting the database option PAGE_VERIFY to the value CHECKSUM for all databases (including TEMPDB) because it provides the most robust method of detecting physical database corruption. CHECKSUM is the default setting for new installations.
 
 ### Backup
 
-Remember to setup backup of both system and user databases. Remember also to test restore procedures regularly.
+Set up backups for both system and user databases. Regularly test restore procedures.
 
 ## Using Microsoft Azure SQL Database
   
@@ -128,11 +128,11 @@ To optimize performance, we recommend that the [!INCLUDE[server](../developer/in
 
 For development and maintenance work on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] applications, if the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is installed on the same virtual machine in Azure as the [!INCLUDE[server](../developer/includes/server.md)], then you can connect to the Azure SQL database from the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].  
 
-For more information, see [Deploying a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md).  
+Learn more in [Deploying a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md).  
 
 ## Data Encryption between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server
 
-When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](/previous-versions/sql/sql-server-2008-r2/ms189067(v=sql.105)), which is part of SQL Server 2008 Books Online in MSDN library.  
+When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] run on different computers, secure the data channel by encrypting the connection with IPSec. Other encryption options aren't supported. Learn more at [Encrypting Connections to SQL Server](/previous-versions/sql/sql-server-2008-r2/ms189067(v=sql.105)).  
 
 ## Integrating directly on SQL Server objects
 
