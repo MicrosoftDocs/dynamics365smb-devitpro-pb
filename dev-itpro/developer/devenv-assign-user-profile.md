@@ -1,14 +1,14 @@
 ---
-title: Assign a User to a Profile
+title: Assign a user to a profile
 description: Use the User Personalization page to assign a user to a profile, and then fill in the User ID, Profile ID, Language ID, and Company fields.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 04/01/2021
+ms.date: 01/07/2025
 ms.topic: conceptual
 ms.reviewer: solsen
 ---
 
-# Assign a User to a Profile
+# Assign a user to a profile
 
 When you have created a profile, you can use the **User Personalization** page to assign a user to a profile.  
   
@@ -20,7 +20,7 @@ When you have created a profile, you can use the **User Personalization** page t
   
 |Field    |Description|  
 |---------|---------------------------------------|  
-|**User ID**|Choose the **AssistEdit** button to view all available user logins, select the relevant user, and then choose the **OK** button.<br /><br /> For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).|  
+|**User ID**|Choose the **AssistEdit** button to view all available user logins, select the relevant user, and then choose the **OK** button.<br /><br /> Learn more in [Managing users and permissions](/dynamics365/business-central/ui-how-users-permissions).|  
 |**Profile ID**|Select a profile ID that you have already created. Choose the **AssistEdit** button to view all available profiles.|  
 |**Language ID**|Select the appropriate language ID, or leave this field blank.|  
 |**Company**|Select a company from the **Companies** window.|  
@@ -30,5 +30,5 @@ When you have created a profile, you can use the **User Personalization** page t
   
 ## Related information
 
-[Profile Object](devenv-profile-object.md)  
-[Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)  
+[Profile object](devenv-profile-object.md)  
+[Managing users and permissions](/dynamics365/business-central/ui-how-users-permissions)  
