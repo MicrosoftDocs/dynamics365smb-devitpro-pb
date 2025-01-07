@@ -102,15 +102,13 @@ After [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is installed, 
 
 #### Statistics
 
-Set the AUTO_CREATE_STATISTICS and AUTO_UPDATE_STATISTICS options on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases to ON, the default setting.
+Set the AUTO_CREATE_STATISTICS and AUTO_UPDATE_STATISTICS options on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases to ON, the default setting. SQL Server uses a threshold that adjusts according to the number of rows in the table. With this change, statistics on large tables are updated more often. Learn more at [Statistics options](/sql/relational-databases/statistics/statistics#statistics-options).
 
-SQL Server uses a threshold that adjusts according to the number of rows in the table. With this change, statistics on large tables are updated more often.
-
-Even with AUTO_UPDATE_STATISTICS on, we strongly recommend running a periodic SQL Agent job to update statistics because AUTO_UPDATE_STATISTICS is triggered only according to the rules described above. On large tables with tens of millions of records (such as Value Entry, Item Ledger Entry, and G/L Entry), a small percentage of data in a given statistic such as [Entry No.] can change and have a material effect on the overall data distribution in that statistic. This behavior can cause inefficient query plans, resulting in degraded query performance until any threshold is reached. We recommend using the T-SQL procedure "sp_updatestats" to update statistics because it only update statistics for data that changes. We recommend creating a SQL Agent Job that runs daily or weekly (depending on transaction volume) during off-peak hours to update all statistics for changed data.
+Even with AUTO_UPDATE_STATISTICS on, we recommend running a periodic SQL Agent job to update statistics because AUTO_UPDATE_STATISTICS is triggered according to the row thresholds. On large tables with tens of millions of records (such as Value Entry, Item Ledger Entry, and G/L Entry), a small percentage of data in a given statistic such as [Entry No.] can change and have a material effect on the overall data distribution in that statistic. This behavior can cause inefficient query plans, resulting in degraded query performance until any threshold is reached. We recommend using the T-SQL procedure "sp_updatestats" to update statistics because it only update statistics for data that changes. We recommend creating a SQL Agent Job that runs daily or weekly (depending on transaction volume) during off-peak hours to update all statistics for changed data.
 
 #### Index fragmentation
 
-Another important administration task that helps to reduce data size and improve performance is to reduce fragmentation for tables and nonclustered indexes. This article in the SQL Server documentation is a good starting point to learn more: [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
+Another important administration task that helps to reduce data size and improve performance is to reduce fragmentation for tables and nonclustered indexes. Learn more in at [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
 
 #### Other database options
 
