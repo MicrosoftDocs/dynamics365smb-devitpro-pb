@@ -4,7 +4,7 @@ description: Learn about the guidelines for organizing actions when creating, ex
 author: jacobwj
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 11/03/2022
+ms.date: 01/07/2025
 ms.reviewer: solsen
 ---
 
@@ -22,7 +22,7 @@ With the desktop user interface to [!INCLUDE [prod_short](includes/prod_short.md
 
 ### Page-level actions
 
-Page-level actions are the actions in a page whose scope and effect the user understands in relation to what the whole page stands for. For example, with a document page that is a sales invoice, the scope of the Post action is the whole document, making that a page-level action. A page-level action may allow or expect the user to make a selection in the page that sets or limits the scope of the action, such as when the Post action in a list assumes the user has selected an invoice to Post. 
+Page-level actions are the actions in a page whose scope and effect the user understands in relation to what the whole page stands for. For example, with a document page that is a sales invoice, the scope of the Post action is the whole document, making that a page-level action. A page-level action might allow or expect the user to make a selection in the page that sets or limits the scope of the action, such as when the Post action in a list assumes the user has selected an invoice to Post. 
 
 ### Part-level actions 
 
@@ -70,12 +70,12 @@ For more information about split button groups, see [Split buttons for actions](
 
 ## Related information
 
-[Page Types and Layouts](devenv-page-types-and-layouts.md)  
+[Page types and layouts](devenv-page-types-and-layouts.md)  
 [Actions in AL](devenv-actions-overview.md)  
-[Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  
-[How to Promote Actions](devenv-promoted-actions.md)  
-[Organizing Promoted Actions](devenv-organizing-promoted-actions.md)  
-[Common Promoted Action Groups](devenv-common-promoted-action-groups.md)  
-[Action Bar Improvements](devenv-action-bar-improvements.md)  
-[Behavioral Changes for Promoted Actions](devenv-promoted-actions-behavioral-changes.md)  
-[Pages with Action Bar Improvements](devenv-pages-action-bar-improvements.md)  
+[Adding actions to a page](devenv-adding-actions-to-a-page.md)  
+[How to promote actions](devenv-promoted-actions.md)  
+[Organizing promoted actions](devenv-organizing-promoted-actions.md)  
+[Common promoted action groups](devenv-common-promoted-action-groups.md)  
+[Action bar improvements](devenv-action-bar-improvements.md)  
+[Behavioral changes for promoted actions](devenv-promoted-actions-behavioral-changes.md)  
+[Pages with action bar improvements](devenv-pages-action-bar-improvements.md)  
