@@ -66,6 +66,9 @@ end;
  **>the entries are sorted by name.\<**  
   
 
+### Remarks
+Because the Text.LowerCase method is culture-variant, its behavior may vary across different locales. For example, certain characters in languages such as Turkish or Greek may be transformed differently based on regional linguistic rules.
+
 ## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
