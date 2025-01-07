@@ -11,19 +11,19 @@ ms.date: 12/16/2024
 ms.author: altotovi
 ---
 
-# Extending the E-Documents functionality
+# Extending the e-documents functionality
 
-The **E-Documents Core** module is created as an extension and built as a framework. Therefore, by default, there are just a few **Document Formats**, which are based on the localization you're using. This detail, and others, are mostly components of localization apps, which cater to specific local requirements. This framework is intended to cover most requirements for the process of communication with electronic documents (e-documents). However, some parts are left for localization apps. The information in this article helps you add value to this module and use it for your own localization.  
+The **E-Document Core** module is created as an extension and built as a framework. Therefore, by default, there are just a few **Document Formats**, which are based on the localization you're using. This detail, and others, are mostly components of localization apps, which cater to specific local requirements. This framework is intended to cover most requirements for the process of communication with electronic documents (e-documents). However, some parts are left for localization apps. The information in this article helps you add value to this module and use it for your own localization.  
 
 Additionally, when you explore the **Service Integration** option, you find several choices available. However, if there's a need to add your own service, whether it's a local connector or another global or regional connector, you can extend this app by adding new services based on your requirements. This can be done as part of localization or as a new ISV app.
 
 ## Develop an E-Documents extension  
 
-In order to implement your localization or other extension on top of the **E-Document Core** application, you should go through the following steps.  
+In order to implement your localization or other extension on top of the **E-Document Core** application, you should perform the following procedures.  
 
 ### Create and set up a new extension
 
-Create a new extension and add a dependency to the "E-Document Core" application in your `app.json` file:  
+Create a new extension and add a dependency to the **E-Document Core** application in your `app.json` file:  
 
 ```json
 "dependencies": [
@@ -38,7 +38,7 @@ Create a new extension and add a dependency to the "E-Document Core" application
 
 ### Implement the document interface
 
-The E-Document interface comprises a collection of methods designed to streamline the export of [!INCLUDE [prod_short](../includes/prod_short.md)] documents (such as Sales Invoices) into E-Document BLOBs based on the predefined format specifications. Furthermore, it facilitates the reverse process by enabling the import of documents from BLOBs back into [!INCLUDE [prod_short](../includes/prod_short.md)]. 
+The e-document interface comprises a collection of methods designed to streamline the export of [!INCLUDE [prod_short](../includes/prod_short.md)] documents (such as sales invoices) into e-document blobs based on the predefined format specifications. Furthermore, it facilitates the reverse process by enabling the import of documents from blobs back into [!INCLUDE [prod_short](../includes/prod_short.md)]. 
 
 First, you must extend the enum and associate it with your implementation codeunit:  
 
@@ -54,12 +54,12 @@ enumextension 50100 "EDocument Format Ext" extends "E-Document Format"
 
 The document interface has been divided into two sections:
 
-- Create an E-Document from a [!INCLUDE [prod_short](../includes/prod_short.md)] document that can be sent to a designated endpoint: **Check**, **Create**, **CreateBatch**.
+- Create an e-document from a [!INCLUDE [prod_short](../includes/prod_short.md)] document that can be sent to a designated endpoint: **Check**, **Create**, **CreateBatch**.
 - Receive a document from the endpoint: **GetBasicInfo**, **PrepareDocument**.
 
 Here's an example of how you could implement each of the methods within the interface:
 
-- **Check**: use it to run check on release/post action of a document to make sure all necessary fields to submit the document are available.
+- **Check**: Use it to run a check on the release/post action of a document to make sure all necessary fields to submit the document are available.
 
     ```AL
     procedure Check(var SourceDocumentHeader: RecordRef; EDocumentService: Record "E-Document Service"; EDocumentProcessingPhase: Enum "E-Document Processing Phase")
@@ -76,7 +76,7 @@ Here's an example of how you could implement each of the methods within the inte
         End;
     ```
 
-You also have the option to perform distinct checks depending on document processing phase.
+You also have the option to perform distinct checks depending on the document processing phase.
 
 ```AL
     procedure Check(var SourceDocumentHeader: RecordRef; EDocumentService: Record "E-Document Service"; EDocumentProcessingPhase: Enum "E-Document Processing Phase")
@@ -103,7 +103,7 @@ You also have the option to perform distinct checks depending on document proces
     end;
  ```
 
-- **Create**: Use it to create a BLOB that represents the posted document. At this point, the core extension has created an "E-Document" record with initial information like the document type, and automatically determined the type of the document, that you can find in **Document Type** field.  
+- **Create**: Use it to create a blob that represents the posted document. At this point, the core extension has created an e-document record with initial information like the document type, and automatically determined the type of the document, that you can find in the **Document Type** field.  
 
 > [!NOTE]
 > The document type is automatically identified by the core extension based on the source document. In case you have introduced your custom document type, you must extend the **E-Document Type** enum and populate the **E-Document Type** field accordingly.  
@@ -124,7 +124,7 @@ procedure Create(EDocumentService: Record "E-Document Service"; var EDocument: R
     end;
 ```
 
-- **CreateBatch**: use it to create a BLOB that represents a batch of posted documents. Similar to create method, this functionality permits you to iterate through a collection of E-Documents and generate a singular BLOB that collectively represents them.  
+- **CreateBatch**: Use it to create a blob that represents a batch of posted documents. Similar to the create method, this functionality permits you to iterate through a collection of e-documents and generate a singular blob that collectively represents them.  
 
 ```AL
 procedure CreateBatch(EDocumentService: Record "E-Document Service"; var EDocuments: Record "E-Document"; var SourceDocumentHeaders: RecordRef; var SourceDocumentsLines: RecordRef; var TempBlob: Codeunit "Temp Blob")
@@ -139,7 +139,7 @@ procedure CreateBatch(EDocumentService: Record "E-Document Service"; var EDocume
     end;
 ```
 
-- **GetBasicInfo**: use it to get the basic information of an E-Document from received BLOB.
+- **GetBasicInfo**: Use it to get the basic information of an e-document from a received blob.
 
 ```AL
 procedure GetBasicInfo(var EDocument: Record "E-Document"; var TempBlob: Codeunit "Temp Blob")
@@ -160,7 +160,7 @@ procedure GetBasicInfo(var EDocument: Record "E-Document"; var TempBlob: Codeuni
     end;
 ```
 
-- **PrepareDocument**: Use it to create a document from imported blob.    
+- **PrepareDocument**: Use it to create a document from an imported blob.    
 
 ```AL
 procedure PrepareDocument(var EDocument: Record "E-Document"; var CreatedDocumentHeader: RecordRef; var CreatedDocumentLines: RecordRef; var TempBlob: Codeunit "Temp Blob")
@@ -170,7 +170,7 @@ procedure PrepareDocument(var EDocument: Record "E-Document"; var CreatedDocumen
 ```
 
 > [!NOTE]
-> The **Create** and **CreateBatch** methods will generate a BLOB, which is stored in the log table. When a user exports it, the **E-Document Core** will export it without a predefined file extension. If you wish to specify the file extension, you can utilize the following event subscriber:
+> The **Create** and **CreateBatch** methods will generate a blob, which is stored in the log table. When a user exports it, the **E-Document Core** will export it without a predefined file extension. If you want to specify the file extension, you can use the following event subscriber:
 >
 > ```AL
 >    [EventSubscriber(ObjectType::Table, Database::"E-Document Log", 'OnBeforeExportDataStorage', '', false, false)]
@@ -181,7 +181,7 @@ procedure PrepareDocument(var EDocument: Record "E-Document"; var CreatedDocumen
 
 ### Implement the integration interface   
 
-The E-Document integration interface comprises a collection of methods designed to streamline the process of integrating with endpoints for submitting electronic documents.  
+The e-document integration interface comprises a collection of methods designed to streamline the process of integrating with endpoints for submitting electronic documents.  
 
 First, you must extend the enum and associate it with your implementation codeunit:  
 
@@ -197,9 +197,12 @@ enumextension 50100 Integration extends "Service Integration"
 
 #### Sending
 
+
+
+
 Here's an example of how you could implement each of the methods within the IDocumentSender interface:  
 
-The **IDocumentSender** interface defines methods for sending E-Documents to an external service. By implementing this interface, you enable integration between an application and external E-Document services. This interface is part of the **Microsoft.eServices.EDocument.Integration.Interfaces** namespace and facilitates asynchronous and batch operations while ensuring proper logging of communication details. 
+The **IDocumentSender** interface defines methods for sending e-documents to an external service. By implementing this interface, you enable integration between an application and external e-document services. This interface is part of the **Microsoft.eServices.EDocument.Integration.Interfaces** namespace and facilitates asynchronous and batch operations while ensuring proper logging of communication details. 
 
 ##### Key features of the IDocumentSender interface
 
