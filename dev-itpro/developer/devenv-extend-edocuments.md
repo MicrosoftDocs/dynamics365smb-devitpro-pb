@@ -259,9 +259,9 @@ end;
 
 When implementing the **IDocumentSender** interface, consider the following best practices:
 
-- **Asynchronous Sending**: To support asynchronous sending, ensure that the implementation also includes the **IDocumentResponseHandler** interface. This enables the processing of responses for async requests. 
-- **Batch Support**: When handling multiple e-documents in batch operations, the **EDocument** record is populated using filters.  
-- **Error Handling**: Properly handle HTTP response errors and log necessary details for debugging and monitoring.
+- **Asynchronous sending**: To support asynchronous sending, ensure that the implementation also includes the **IDocumentResponseHandler** interface. This enables the processing of responses for async requests. 
+- **Batch support**: When handling multiple e-documents in batch operations, the **EDocument** record is populated using filters.  
+- **Error handling**: Properly handle HTTP response errors and log necessary details for debugging and monitoring.
 - **Logging**: Use the **SendContext** to log HTTP request details for traceability.
 
 #### Sending async
@@ -444,9 +444,9 @@ The **ISentDocumentActions** interface provides a set of default actions for man
 
 These actions allow you to:  
 
-- **Check Approval Status**: Verify whether a sent e-document has been approved by the external service.   
-- **Check Cancellation Status**: Determine whether a sent e-document has been successfully canceled by the external service.  
-- **Streamline Integration**: Standardize HTTP request handling for approval and cancellation workflows.   
+- **Check approval status**: Verify whether a sent e-document has been approved by the external service.   
+- **Check cancellation status**: Determine whether a sent e-document has been successfully canceled by the external service.  
+- **Streamline integration**: Standardize HTTP request handling for approval and cancellation workflows.   
 
 ##### How to implement the ISentDocumentActions interface
 
@@ -527,31 +527,26 @@ end;
 
 #### Document action  
 
-
-
-
-
-
 ##### Key features of the IDocumentAction interface
 
-The **IDocumentAction** interface defines a general-purpose method for performing various actions on E-Documents. It allows developers to:
+The **IDocumentAction** interface defines a general-purpose method for performing various actions on e-documents. It allows developers to:
 
-- **Perform Custom Actions**: Execute specified actions, such as resetting or updating the status of an E-Document.  
-- **Flexibly Integrate**: Use this interface to handle API requests and responses tailored to the specific action type. 
-- **Streamline Workflows**: Centralize action execution logic for consistent and maintainable integration.   
-- **Handles Logging and Error Handling**: When using an action using the interface, you get all the logging and error handling for free. All built directly in the framework. 
+- **Perform custom actions**: Execute specified actions, such as resetting or updating the status of an e-document.  
+- **Flexibly integrate**: Use this interface to handle API requests and responses tailored to the specific action type. 
+- **Streamline workflows**: Centralize action execution logic for consistent and maintainable integration.   
+- **Get logging and error handling**: When using an action using the interface, you get all the logging and error handling for free, all built directly in the framework. 
 
 ##### How to implement the IDocumentAction interface
 
-To use the **IDocumentAction** interface, implement the **InvokeAction** method. This method executes a specified action by interacting with the external API and updates the E-Document status accordingly. Then extend the actions enum and call the **procedure InvokeAction(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionType: Enum "Integration Action Type"; ActionContext: Codeunit ActionContext)** in the **Integration Management** codeunit to run the action. You can call this from your own action.  
+To use the **IDocumentAction** interface, implement the **InvokeAction** method. This method executes a specified action by interacting with the external API and updates the e-document status accordingly. Then extend the action's enum and call the **procedure InvokeAction(var EDocument: Record "E-Document"; var EDocumentService: Record "E-Document Service"; ActionType: Enum "Integration Action Type"; ActionContext: Codeunit ActionContext)** in the **Integration Management** codeunit to run the action. You can call this from your own action.  
 
 #### InvokeAction method  
 
 ##### Parameters of the InvokeAction method
 
-- EDocument: Record of type "E-Document" representing the document on which the action is performed.  
-- EDocumentService: Record of type "E-Document Service" for interacting with the external API.   
-- ActionContext: Codeunit ActionContext for managing HTTP requests and responses.    
+- **EDocument**: Record of type "E-Document" representing the document on which the action is performed.  
+- **EDocumentService**: Record of type "E-Document Service" for interacting with the external API.   
+- **ActionContext**: Codeunit ActionContext for managing HTTP requests and responses.    
 
 ##### Example implementation of the InvokeAction method
 
@@ -582,7 +577,7 @@ end;
 
 ## Helper procedures
 
-There's a set of E-Document Helper codeunit that consists of collection of utility methods that are highly recommended for building your localization app. These methods can assist you in various tasks, such as effortlessly logging any encountered error messages.  
+The E-Document Helper codeunit consists of a collection of utility methods that are highly recommended for building your localization app. These methods can assist you in various tasks, such as effortlessly logging any encountered error messages.  
 
 Codeunit list:
 
@@ -610,14 +605,14 @@ procedure Create(EDocumentService: Record "E-Document Service"; var EDocument: R
     end;
 ```
 
-## Missing a feature  
+## Missing a feature?  
 
-If you believe there are any essential features that could enhance the ease of developing an E-Document solution, kindly get in touch by generating an issue in this repository titled "E-document: < details >" or start the article on [aka.ms/BCYammer](https://aka.ms/BCYammer), and we'll get back to you.
+If you think there are any essential features that could enhance the ease of developing an e-document solution, let us know by generating an issue in this repository titled "E-document: < details >" or start the article on [aka.ms/BCYammer](https://aka.ms/BCYammer), and we'll get back to you.
 
 
 ## Related information
 
-- [Deprecated E-Document interface](devenv-extend-edocuments-old.md)
-- [How to set up e-documents in Business Central](/dynamics365/business-central/finance-how-setup-edocuments)  
-- [How to use e-documents in Business Central](/dynamics365/business-central/finance-how-use-edocuments)  
+- [Extending e-documents functionality (deprecated)](devenv-extend-edocuments-old.md)
+- [Set up e-documents in Business Central](/dynamics365/business-central/finance-how-setup-edocuments)  
+- [Use e-documents in the sales process](/dynamics365/business-central/finance-how-use-edocuments)  
 - [Work with [!INCLUDE[prod_short](includes/prod_short.md)]](/dynamics365/business-central/ui-work-product)  
