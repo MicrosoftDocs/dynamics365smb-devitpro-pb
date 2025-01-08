@@ -6,6 +6,7 @@ ms.author: solsen
 ms.topic: conceptual
 ms.date: 01/08/2025
 ms.reviewer: solsen
+ms.custom: evergreen
 ---
 
 # Date virtual table
