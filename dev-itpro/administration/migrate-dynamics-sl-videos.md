@@ -1,5 +1,5 @@
 ---
-title: Compare Work in Dynamics SL to Business Central
+title: Compare Work Processes in Dynamics SL to Business Central
 description: Get some tips and tricks for how to do things in Business Central online that you currently do in Dynamics SL.
 author: lcontreras
 ms.topic: conceptual
@@ -12,10 +12,10 @@ ms.author: jswymer
 
 # Compare Work Processes in Dynamics SL to Business Central
 
-Moving to [!INCLUDE [prod_short](../includes/prod_short.md)] from Dynamics SL can seem daunting, even for experienced users. To help people quickly become productive, we're producing videos that demystify the experience by explaining the differences and similarities in work processes.
+Moving to [!INCLUDE [prod_short](../includes/prod_short.md)] from Dynamics SL can seem daunting, even for experienced users. To help you quickly become productive, we’re producing videos that explain the differences and similarities in work processes.
 
 > [!TIP]
-> The videos in this article probably seem a little small. To get a closer look, switch the video player to full screen view.
+> If the videos in this article seem small, switch the video player to full screen view.
 
 ## Enter receivables transactions
 
@@ -55,7 +55,7 @@ This video compares the process of setting up subaccount segments and dimensions
 
 <br><br>
 
-> [!Video https://www.youtube.com/embed/4EnvGMwbuBY?si=qDgal31b79agLbLz]
+> [!VIDEO https://www.youtube.com/embed/4EnvGMwbuBY?si=qDgal31b79agLbLz]
 
 
 ## Create dimension transactions and reports
@@ -64,7 +64,7 @@ This video compares the process of creating transactions for dimensions and usin
 
 <br><br>
 
-> [!Video https://www.youtube.com/embed/BC82BSrtng0?si=D4d9tXRCtswasIIM]
+> [!VIDEO https://www.youtube.com/embed/BC82BSrtng0?si=D4d9tXRCtswasIIM]
 
 
 ## Use classes and templates
@@ -81,7 +81,7 @@ This video compares the process of using general journals in Dynamics SL and [!I
 
 <br><br>
 
-> [!Video https://www.youtube.com/embed/NkYNL_5Zfoc?si=n7Ochf2FNlHLJYp4]
+> [!VIDEO https://www.youtube.com/embed/NkYNL_5Zfoc?si=n7Ochf2FNlHLJYp4]
 
 ## Correct and reverse entries
 
@@ -89,7 +89,7 @@ This video compares the process of correcting and reversing entries in Dynamics 
 
 <br><br>
 
-> [!Video https://www.youtube.com/embed/r8HWIk5E0c0?si=Bm-GzK3ktlA_mJhU]
+> [!VIDEO https://www.youtube.com/embed/r8HWIk5E0c0?si=Bm-GzK3ktlA_mJhU]
 
 ## Run trial balance and aging reports
 
@@ -105,7 +105,7 @@ This video compares the process of using posting accounts and posting groups in 
 
 <br><br>
 
-> [!Video https://www.youtube.com/embed/XJ0JHHQ7GzA?si=kXqiVn_lqw90GHq5]
+> [!VIDEO https://www.youtube.com/embed/XJ0JHHQ7GzA?si=kXqiVn_lqw90GHq5]
 
 ## Related information
 

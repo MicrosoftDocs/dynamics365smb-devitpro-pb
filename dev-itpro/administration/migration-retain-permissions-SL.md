@@ -10,11 +10,11 @@ ms.custom: bap-template
 ---
 # Retain permissions during Dynamics SL cloud migration
 
-By default, once you set up cloud migration, the migration engine removes all permission sets assigned to existing online users, except users with the SUPER permission set, and reassigns users to the Intelligent Cloud permission set. This change is done to prevent users, other than SUPER users, from making any data modifications.
+By default, when you set up cloud migration, the migration engine removes all permission sets from existing online users, except users with the SUPER permission set, and reassigns them to the Intelligent Cloud permission set. This change prevents users, other than SUPER users, from making data modifications.
 
-However, you might want some users to keep their original permissions, for various reasons. For example, you want them to continue working on your data while it's being replicated, or you want to use service-to-service apps that require specific permissions.
+However, you might want some users to keep their original permissions. For example, they might need to continue working on your data during replication, or you might use service-to-service apps that require specific permissions.
 
-If you want users to keep their permissions during cloud migration, you have the following options:
+To keep users' permissions during cloud migration, you have the following options:
 
 ## Option 1: Use the Cloud Migration Management page in the client
 
@@ -22,8 +22,8 @@ If you want users to keep their permissions during cloud migration, you have the
 1. Search for and open the **Cloud Migration Management** page.
 1. In the action bar, select **...** (Show the rest) > **More options** > **Actions** > **Enable/Disable Removing Permissions from Users**.
 
-   - If the message **Setting for Keeping user permissions was set to: Yes.** appears, then permission sets remain. Select **OK**.
-   - If the message **Setting for Keeping user permissions was set to: No.** appears, then users' permission sets are removed and replaced by the **Intelligent Cloud** permission set. Select **OK** and repeat this step to change to **Yes**.
+   - If the message **Setting for Keeping user permissions was set to: Yes.** appears, permission sets remain. Select **OK**.
+   - If the message **Setting for Keeping user permissions was set to: No.** appears, users' permission sets are removed and replaced by the **Intelligent Cloud** permission set. Select **OK** and repeat this step to change to **Yes**.
 
 ## Option 2: Use a custom extension
 
@@ -40,7 +40,7 @@ end
 
 ## Next steps
 
-[Run data migration setup](migration-setup-gp.md).
+[Run data migration setup](migration-setup-sl.md).
 
 ## Related information
 

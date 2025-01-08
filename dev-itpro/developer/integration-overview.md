@@ -8,7 +8,7 @@ ms.author: kepontop
 ms.date: 10/25/2024
 ---
 
-# Integration overview for Business Central
+# Integration overview for Business Central (for architects and developers)
 
 This article is intended to help architects and developers make sound design decisions when they implement integration scenarios to and from [!INCLUDE[prod_short](../includes/prod_short.md)].
 

@@ -10,7 +10,7 @@ ms.date: 02/19/2024
 
 # Integrating Business Central with Microsoft Power Platform
 
-Integrating [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform, offers a solution that enhances business productivity and efficiency. It provides a set of tools that enable you to analyze data, build solutions, automate processes, and create virtual agents. By integrating Microsoft Power Platform with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can apply the data and business logic of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and benefit from the analytical and automation capabilities of Microsoft Power Platform. This article explains you can integrate [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform.
+Integrating [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform offers a solution that enhances business productivity and efficiency. It provides a set of tools that enable you to analyze data, build solutions, automate processes, and create virtual agents. By integrating Microsoft Power Platform with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can apply the data and business logic of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and benefit from the analytical and automation capabilities of Microsoft Power Platform. This article explains you can integrate [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform.
 
 ## Business Central connector for Power Platform
 
