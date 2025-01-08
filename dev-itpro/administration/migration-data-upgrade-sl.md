@@ -22,23 +22,23 @@ You ran data replication on the company or companies that you're migrating to th
 
 ## Prepare
 
-Once you start the data upgrade on an environment, all client connections are terminated. You can't reconnect until the upgrade process completes. Also, hotfixes can't be applied and scheduled tasks can't be run. This behavior means data upgrade is the only process running on the environment, which helps prevent potentials database locks and errors.
+When you start the data upgrade, all client connections are terminated, and you can't reconnect until the upgrade completes. Hotfixes and scheduled tasks can't run during this time. This behavior ensures the data upgrade is the only process running, preventing potential database locks and errors.
 
-Inform any active Business Central online users to finish what they're doing and sign out.
+Ask active Business Central online users to finish their tasks and sign out.
 
 ## Run data upgrade
 
 1. Search for and open the **Cloud Migration Management** page.
 2. Select **Run data upgrade** > **Yes** > **OK** to schedule the data upgrade.
 
-   The data upgrade process starts. To check whether the migration succeeded or failed. go to the **Cloud Migration Management** page. If the upgrade fails, go to **Migration Errors** FactBox where you can drill down to view the errors.
+   The data upgrade process starts. To check whether the migration succeeded or failed. To check if the migration succeeded or failed, go to the **Cloud Migration Management** page. If the upgrade fails, go to the **Migration Errors** FactBox to view the errors.
 
 > [!TIP]
-> [!INCLUDE [cloud-migration-telemetry](../developer/includes/cloud-migration-telemetry.md)]. You can also track the status of the data upgrade on the **Operations** page in the admin center (see [Operations log](tenant-admin-center-environments.md#opslog)).
+> [!INCLUDE [cloud-migration-telemetry](../developer/includes/cloud-migration-telemetry.md)]. You can also track the status of the data upgrade on the **Operations** page in the admin center. Learn more in [Operations log](tenant-admin-center-environments.md#opslog).
 
 ## Next steps
 
-[Complete cloud migration](migration-finish-SL.md).  
+[Complete cloud migration](migration-finish-SL.md)  
 
 ## Related information
 
