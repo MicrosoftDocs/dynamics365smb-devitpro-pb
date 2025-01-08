@@ -14,12 +14,11 @@ This article provides recommendations to help you define your cloud migration st
 
 ## Run migration assessment tool
 
-The **Migration Assessment Tool** delivers valuable insight into your overall readiness to migrate. It provides migration options based on your needs, and detects potential migration issues based on your Dynamics SL system structure.
-The Dynamics SL Analysis and Dynamics SL Repair tools are available to download and complete from GitHub. Here's the URL:
+The **Migration Assessment Tool** provides insight into your readiness to migrate. It offers migration options based on your needs and detects potential issues with your Dynamics SL system.
 
-[BCTech/Samples/DynamicsSLMigrationTools/Analysis and Repair Tool at master · microsoft/BC Tech ](https://github.com/microsoft/BCTech/tree/master/samples/DynamicsSLMigrationTools/Analysis%20and%20Repair%20Tool)
+The Dynamics SL Analysis and Dynamics SL Repair tools are available to download and complete from GitHub at [BCTech/Samples/DynamicsSLMigrationTools/Analysis and Repair Tool at master · microsoft/BC Tech ](https://github.com/microsoft/BCTech/tree/master/samples/DynamicsSLMigrationTools/Analysis%20and%20Repair%20Tool).
 
-The details on how to compile and use the files are included in GitHub.
+Details on compiling and using the files are included on GitHub.
 
 - The **Analysis Tool** connects to a Microsoft Dynamics SL database and generates an analysis report text file.
   - The report outlines and provides an overview of the modules in use and examines the data that can be migrated to Business Central.
@@ -36,7 +35,6 @@ The details on how to compile and use the files are included in GitHub.
     - Repair Tool:
       - Includes automated fixes to the Microsoft Dynamics SL data.
       - Includes repair items that need to be addressed.
- 
 
 ## Determine what data to migrate
 
@@ -48,7 +46,7 @@ You can choose to migrate data for all companies or only specific companies. It'
 
 ## Determine your migration approach
 
-It's important to have a solid migration strategy in place to ensure a smooth transition. Most migrations can run from the on-premises production database with minimal downtime for end users. However, for especially large migrations, it might be better to run migration from a backup of the on-premises database. Doing migrations this way improves migration speeds and minimizes performance loss and downtime on the on-premises production database. The following steps outline a typical migration approach.
+Ensure you have a solid migration strategy for a smooth transition. Most migrations can run from the on-premises production database with minimal downtime for end users. For large migrations, consider running the migration from a backup of the on-premises database. Doing migrations this way improves migration speeds and minimizes performance loss and downtime on the on-premises production database. The following steps outline a typical migration approach.
 
 1. [Create a full backup](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server) of the on-premises production database. Differential or partial backups aren't supported as they don't include Change Tracking data required for replication runs.
 1. Complete the usual preparation steps on the backup on-premises database and address any issues that arise.
@@ -67,16 +65,16 @@ Keep in mind that the migration process can be complex, and issues might arise t
 
 ## Schedule
 
-- Plan the switch to use [!INCLUDE [prod_short](../includes/prod_short.md)] online for production carefully to not start until the migration is complete  
+- Plan the switch to use [!INCLUDE [prod_short](../includes/prod_short.md)] online for production only after the migration is complete.
 
   [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]  
 
-- Schedule the migration to not conflict with an update of [!INCLUDE [prod_short](../includes/prod_short.md)] online
+- Schedule the migration to avoid conflicts with updates to [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
   [!INCLUDE [bc-cloud-migrate-upgrade](../includes/bc-cloud-migrate-upgrade.md)]
 
 ## Next steps
 
 - [Check prerequisites](cloud-migration-prerequisites-SL.md)  
-- [Optimizing cloud migration performance](migration-optimize-replication.md)  
+- [Optimize cloud migration performance](migration-optimize-replication.md)  
 - [Run data migration setup](migration-setup-SL.md)

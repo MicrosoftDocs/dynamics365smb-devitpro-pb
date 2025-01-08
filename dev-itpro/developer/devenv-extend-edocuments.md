@@ -67,13 +67,13 @@ Here's an example of how you could implement each of the methods within the inte
         SalesHeader: Record "Sales Header";
     begin
 
-        Case SourceDocumentHeader.Number of
+        case SourceDocumentHeader.Number of
             Database::"Sales Header":
                 begin
                     SourceDocumentHeader.Field(SalesHeader.FieldNo("Customer Posting Group")).TestField();
                     SourceDocumentHeader.Field(SalesHeader.FieldNo("Posting Date")).TestField();
                 end;
-        End;
+        end;
     ```
 
   You also have the option to perform distinct checks depending on the document processing phase.
@@ -84,7 +84,7 @@ Here's an example of how you could implement each of the methods within the inte
         SalesHeader: Record "Sales Header";
     begin
 
-        Case SourceDocumentHeader.Number of
+        case SourceDocumentHeader.Number of
             Database::"Sales Header":
                 case EDocumentProcessingPhase of
                     EDocumentProcessingPhase::Release:
@@ -99,7 +99,7 @@ Here's an example of how you could implement each of the methods within the inte
                             SourceDocumentHeader.Field(SalesHeader.FieldNo("Bill-to Name")).TestField();
                         end;
                 end;
-        End;
+        end;
     end;
  ```
 
