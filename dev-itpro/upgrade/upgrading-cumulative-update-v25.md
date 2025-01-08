@@ -510,7 +510,7 @@ This command upgrades and installs the extensions on the tenant.
 
 > APPLIES TO: Single tenant only
 
-Reinstall the extensions that you recompiled in task 6. These extensions are ones that you haven't published new versions for, but you still want installed on the tenant after upgrade. This task is required in a platform upgrade.
+Reinstall the extensions that you recompiled in task 7. These extensions are ones that you haven't published new versions for, but you still want installed on the tenant after upgrade. This task is required in a platform upgrade.
 
 To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp).
 
