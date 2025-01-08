@@ -577,7 +577,7 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 [Dynamics 365 Business Central On-Premises 2024 Release Wave 1 Updates](../deployment/update-versions-24.md)  
 [Dynamics 365 Business Central On-Premises 2023 Release Wave 2 Updates](../deployment/update-versions-23.md)  
-[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)   
+[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
 [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
