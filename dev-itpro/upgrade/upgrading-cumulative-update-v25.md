@@ -306,6 +306,29 @@ Synchronize the tenant database with the platform changes in the application dat
 
     For a single-tenant deployment, you can either set the `$TenantId` to `default` or omit the `-Tenant $TenantId` parameter. For more information about syncing, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
+## Task 7: Recompile existing extentions that won't be upgraded
+
+Complete this task for existing published extensions that don't have a new version built on the Business Central update but you want to reinstall after upgrade. This task is required for a plaform-only update.
+
+[!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
+
+These extensions must be recompiled to work with the new update . To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
+
+```powershell  
+Repair-NAVApp -ServerInstance $BcServerInstance -Name <extension name> -Version <extension name>
+```
+
+For example, to recompile all non-Microsoft extensions, you can run the following command:
+
+```powershell  
+Get-NAVAppInfo -ServerInstance $BcServerInstance | Where-Object {$_.Publisher -notlike 'Microsoft'} | Repair-NAVApp
+```
+
+Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
+
+```powershell
+Restart-NAVServerInstance -ServerInstance $BcServerInstance
+```
 ## Task 6: Publish new extension versions
 
 > APPLIES TO: Application upgrade only
@@ -374,31 +397,9 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance $BcServerInstance -Path "<path to extension>"
     ```
 
-## Task 7: Recompile extensions not built on new update
-
-Complete this task for existing published extensions that aren't built on the Business Central version you're upgrading to and that you want to reinstall. This task is required if you're doing a plaform-only update.
-
-[!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
-
-These extensions must be recompiled to work with update. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
-
-```powershell  
-Repair-NAVApp -ServerInstance $BcServerInstance -Name <extension name> -Version <extension name>
-```
-
-For example, to recompile all non-Microsoft extensions, you can run the following command:
-
-```powershell  
-Get-NAVAppInfo -ServerInstance $BcServerInstance | Where-Object {$_.Publisher -notlike 'Microsoft'} | Repair-NAVApp
-```
-
-Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
-
-```powershell
-Restart-NAVServerInstance -ServerInstance $BcServerInstance
-```
-
 ## Task 8: Synchronize extensions
+
+> APPLIES TO: Application upgrade only
 
 Synchronize the tenant's database schema with any schema changes in the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
 
