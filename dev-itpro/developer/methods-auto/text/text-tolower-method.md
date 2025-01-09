@@ -37,7 +37,7 @@ A copy of this string converted to lowercase.
 
 ## Remarks
 
-The Text.LowerCase method performs a culture-invariant transformation to lowercase. This guarantees consistent results regardless of the application's cultural context, which is particularly useful in scenarios requiring predictable string manipulation.
+The Text.ToLower method performs a culture-invariant transformation to lowercase. This guarantees consistent results regardless of the application's cultural context, which is particularly useful in scenarios requiring predictable string manipulation.
 For culture-variant method check [Text.LowerCase(Text)](./text-lowercase-method.md)
 
 ## Related information
