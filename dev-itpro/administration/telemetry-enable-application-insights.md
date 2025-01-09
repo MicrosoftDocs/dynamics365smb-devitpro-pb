@@ -51,7 +51,7 @@ This article describes how to set up sending telemetry data to [!INCLUDE[appinsi
 
 The following video summarizes how to store [!INCLUDE [prod_short](../includes/prod_short.md)] telemetry in Azure Application Insights.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fAB5]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=46f6d63d-2375-4348-96f1-1fd1b7b37ddc]
 
 ## Turn on telemetry on environments
 
@@ -67,7 +67,7 @@ For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can turn on t
 
 The following video shows how to turn on telemetry for online environments.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fAB2]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e6f5a26f-7c60-4be4-9afd-6b53c7518da6]
 
 #### From the admin center
 
