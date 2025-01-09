@@ -24,14 +24,13 @@ A key cannot be declared as clustered on an existing table.
 
 ## Remarks
 
-Changing the clustering of a key on an existing table can have significant performance implications and may disrupt the behavior of dependent extensions. Clustered keys determine the physical order of data in a table, and altering them can lead to unexpected results and degraded performance.
+It's not possible for a table to have more than one clustered key, a different key can't be declared as clustered after the table has been created. When no key has been declared as clustered, the first key or the first field that can be part of a key implicitly becomes the clustered key.
 
 ## How to fix this diagnostic?
 
-To address the AS0123 error, avoid declaring a key as clustered on an existing table. If you need to introduce a clustered key, consider creating a new table with the desired clustered key instead of modifying the existing one. Here are the steps to fix this diagnostic:
+To address the AS0123 error, avoid declaring a key as clustered on an existing table. If you need to introduce a clustered key, create a new table with the desired clustered key instead of modifying the existing one. Here are the steps to fix this diagnostic:
 
 1. Identify the table and key that you intend to declare as clustered.
-2. Evaluate whether the change is necessary or if you can achieve your goal without modifying the existing table.
 3. If the change is necessary, create a new table with the desired clustered key.
 4. Update your extensions to use the new table instead of modifying the existing one.
 
