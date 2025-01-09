@@ -24,16 +24,11 @@ Changes affecting the XLIFF translation ID of an object or object member that ha
 
 ## Remarks
 
-Altering the XLIFF translation ID can break the translations provided by dependent extensions for your extension. XLIFF translation IDs are used to map text strings to their translations, and any changes to these IDs can result in missing or incorrect translations in dependent extensions.
+Altering the XLIFF translation ID can break the translations provided by dependent extensions for your extension. XLIFF translation IDs are used to map text strings to their translations, and any changes to these IDs can result in missing or incorrect translations in dependent extensions. This diagnostic is raised if you're trying to move objects to one app to a propagated dependency, for example, when moving a table. Or when renaming something.
 
 ## How to fix this diagnostic?
 
-To address the AS0125 info message, avoid making changes to the XLIFF translation IDs of published objects or object members. If you need to update translations, consider adding new translation entries rather than modifying existing ones. Here are the steps to fix this diagnostic:
-
-1. Identify the object or object member with the XLIFF translation ID that you intend to change.
-2. Evaluate whether the change is necessary or if you can achieve your goal without modifying the existing translation ID.
-3. If the change is necessary, add a new translation entry with a unique XLIFF translation ID instead of modifying the existing one.
-4. Ensure that the original translation ID remains unchanged to avoid breaking translations in dependent extensions.
+Revert the rename of the object, field, or action, or revert the move to another app.
 
 ## Related information
 
