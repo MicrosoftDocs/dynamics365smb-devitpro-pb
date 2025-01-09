@@ -33,7 +33,7 @@ To address the AS0126 warning, ensure that the `InternalsVisibleTo` attribute sp
 1. Identify the `InternalsVisibleTo` attribute in your extension's configuration.
 2. Ensure that the publisher name specified in the `InternalsVisibleTo` attribute matches the publisher name of your extension.
 3. If access needs to be granted to another publisher, evaluate whether it can be done through public APIs or other access control mechanisms.
-4. Update the `InternalsVisibleTo` attribute to reflect the correct publisher name or remove it if it's not necessary.
+4. Update the `InternalsVisibleTo` attribute to reflect the correct publisher name or remove the attribute if it's not necessary.
 
 ## Related information  
 
