@@ -35,6 +35,8 @@ To address the AS0129 error, avoid modifying the list of extended interfaces on 
 3. If the new functionality is necessary, create a new interface that includes the required extended interfaces.
 4. Update your extensions to implement the new interface instead of modifying the existing one.
 
+Learn about how you can extend interfaces in [Extending interfaces in AL](../devenv-interfaces-in-al-extend.md)
+
 ## Related information  
 
 [AppSourceCop Analyzer](appsourcecop.md)  

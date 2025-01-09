@@ -28,14 +28,14 @@ Removing an extended interface from a published interface can break dependent ex
 
 ## How to fix this diagnostic?
 
-To address the AS0128 error, avoid modifying the list of extended interfaces on an interface that has already been published. If you need to deprecate functionality, consider marking the interface as obsolete instead of removing it. Here are the steps to fix this diagnostic:
+To address the AS0128 error, avoid modifying the list of extended interfaces on an interface that has already been published. If you need to deprecate functionality, mark the interface as obsolete before removing it. Here are the steps to fix this diagnostic:
 
 1. Identify the interface that has been published and is causing the AS0128 error.
 2. Evaluate whether the functionality can be deprecated without modifying the existing interface.
-3. If the functionality needs to be deprecated, mark the interface as obsolete using the `ObsoleteState` and `ObsoleteReason` attributes.
-4. Update your documentation and notify dependent extension developers about the deprecation.
+3. If the functionality needs to be deprecated, mark the interface as obsolete using the `ObsoleteState` and `ObsoleteReason` properties.
 
-## Related information  
+## Related information
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
