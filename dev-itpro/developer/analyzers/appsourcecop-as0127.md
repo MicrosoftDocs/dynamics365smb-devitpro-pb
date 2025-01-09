@@ -30,10 +30,18 @@ The AS0127 warning indicates that objects should be placed in a namespace with a
 
 To address the AS0127 warning, organize your objects into namespaces with at least two levels of nesting. This involves creating a hierarchical structure for your namespaces, which can help in managing and categorizing your objects more effectively. Here are the steps to fix this diagnostic:
 
+If the object *doesn't* have a namespace, you should do the following:
+
 1. Identify the objects that aren't placed in a namespace with at least two levels of nesting.
 2. Create a hierarchical namespace structure that includes at least two levels.
 3. Move the identified objects into the appropriate namespaces within the new structure.
 4. Update any references to the moved objects to reflect their new namespaces.
+
+If the object *already* has a namespace, you should do the following:
+
+1. Identify the objects that aren't placed in a namespace with at least two levels of nesting.
+1. Obsolete the objects that aren't placed in a namespace with at least two levels of nesting.
+1. Create new objects with the same functionality in a namespace with at least two levels of nesting.
 
 ## Related information
 
