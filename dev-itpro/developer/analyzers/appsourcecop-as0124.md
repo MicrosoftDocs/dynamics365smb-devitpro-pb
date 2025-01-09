@@ -33,7 +33,8 @@ To address the AS0124 error, avoid changing the target of an extension object th
 1. Identify the extension object with the target that you intend to change.
 2. Evaluate whether the change is necessary or if you can achieve your goal without modifying the existing target.
 3. If the change is necessary, create a new extension object with the desired target.
-4. Update your extensions to use the new extension object instead of modifying the existing one.
+1. Update your extensions to use the new extension object instead of modifying the existing one. 
+1. Deprecate the extension object if it's a page extension or page customization and/or all its members.
 
 ## Related information
 
