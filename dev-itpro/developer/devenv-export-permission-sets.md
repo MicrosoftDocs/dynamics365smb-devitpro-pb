@@ -1,36 +1,35 @@
 ---
-title: "Exporting Permission Sets to XML"
-description: Export permission sets to XML for Dynamics 365 for Business Central.
+title: Export Permission Sets to XML
+description: Learn more about exporting permission sets to XML in Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 01/10/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Exporting Permission Sets to XML
+# Export permission sets to XML
 
-Permission sets that exist in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can be exported and packaged for your extension directly from the client, instead of defining XML by hand. These permission sets are also known as *tenant* permissions, and are shown in the UI as **Extension** permissions. The underlying functionality of permissions has changed with the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
+Permission sets that exist in [!INCLUDE [prod_short](includes/prod_short.md)] can be exported and packaged for your extension directly from the client, instead of defining XML by hand. These permission sets are also known as *tenant* permissions, and are shown in the UI as **Extension** permissions. The underlying functionality of permissions has changed with the latest version of [!INCLUDE [prod_short](includes/prod_short.md)].
 
 > [!IMPORTANT]  
-> With the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] permissions are no longer defined as data in the application database. Permissions that can be created by using AL objects are called *system* permissions. For more information, see [Entitlements and Permission Sets Overview](devenv-entitlements-and-permissionsets-overview.md).
+> With the latest version of [!INCLUDE [prod_short](includes/prod_short.md)] permissions are no longer defined as data in the application database. Permissions that can be created by using AL objects are called *system* permissions. Learn more in [Entitlements and permission sets overview](devenv-entitlements-and-permissionsets-overview.md).
 
-## To export permission sets from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
+## To export permission sets from [!INCLUDE [prod_short](includes/prod_short.md)]
 
-1. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], search for **Permission Sets**, and then choose the relevant link.
-2. On the **Permission Sets** page, choose the permissions that you want to export, and then choose **Export Selected Permissions**.
-3. In the **Export Permission Sets** dialog, choose to export permission sets only for the application, only for the tenant, or for both.
-4. Save the file to your extension folder.
-5. Delete the permission sets from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
+1. In [!INCLUDE [prod_short](includes/prod_short.md)], search for **Permission Sets**, and then choose the relevant link.
+2. On the **Permission Sets** page, choose the permissions that you want to export, and then choose **Export Permission Sets**.
+3. Save the file to your extension folder.
+4. Delete the permission sets from [!INCLUDE [prod_short](includes/prod_short.md)]. 
 
-You can generate a permission set file which contains permissions to all the files in your extension. This will make it easier to start setting up permissions for your app. You can do this by simply creating an extension with some objects as described below. 
+You can generate a permission set file which contains permissions to all the files in your extension. This makes it easier to start setting up permissions for your app. You can do this by simply creating an extension with some objects as described below.
 
 ## To export permission sets using Visual Studio Code
 
 1. In Visual Studio Code, open your extension with objects; pages, reports, tables, queries, codeunits, and/or XMLports.  
-2. Open the command palette using the `Ctrl+Shift+P` keys and select the **AL: Generate permission set containing current extension objects** command.  
+2. Open the command palette using the `Ctrl+Shift+P` keys and select the **AL: Generate permission set as XML file containing current extension objects** command.  
     > [!NOTE]  
-    > If you do this repeatedly, Visual Studio Code will probe for overwriting the file, there is no support for merging manual corrections into newly generated content.
+    > If you do this repeatedly, Visual Studio Code will probe for overwriting the file, there's no support for merging manual corrections into newly generated content.
 3. Publish the app. 
 
 Now, you have the XML file with default permissions to all your objects.
@@ -93,10 +92,9 @@ The mapping of object types in the XML such as `<ObjectType>0</ObjectType>` gene
 |Profile          |  18  |
 |ProfileExtension |  19  |
 
-
 ## Related information
 
-[Entitlements and Permission Sets Overview](devenv-entitlements-and-permissionsets-overview.md)  
-[Permissions on Database Objects](devenv-permissions-on-database-objects.md)  
-[Permissions Property](properties/devenv-permissions-property.md)  
-[TestPermissions Property](properties/devenv-testpermissions-property.md)  
+[Entitlements and permission sets overview](devenv-entitlements-and-permissionsets-overview.md)  
+[Permissions on database objects](devenv-permissions-on-database-objects.md)  
+[Permissions property](properties/devenv-permissions-property.md)  
+[TestPermissions property](properties/devenv-testpermissions-property.md)  
