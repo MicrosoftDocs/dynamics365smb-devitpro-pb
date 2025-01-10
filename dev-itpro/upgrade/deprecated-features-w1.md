@@ -34,6 +34,13 @@ The following features will be removed in 2026 release wave 1.
 |-----------------------------|-----|
 |Replaced| While useful to show the Power BI embed capabilities in [!INCLUDE[prod_short](../includes/prod_short.md)], the legacy Power BI apps on AppSource: <br>Dynamics 365 Business Central - CRM<br>Dynamics 365 Business Central - Finance<br>Dynamics 365 Business Central - Sales<br> have now been superseeded by the 7 Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing that were released in the 25.1 version. <br><br>To learn about the replacement features, go to [aka.ms/bcAnalytics](https://aka.ms/bcAnalytics). |
 
+### Intelligent Cloud Insights (removed)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| While useful to show some KPIs and insights, the legacy Intelligent Cloud Insights feature have now been superseeded by the 7 Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing that were released in the 25.1 version. <br><br>To learn about the replacement features, go to [aka.ms/bcAnalytics](https://aka.ms/bcAnalytics). |
+
+
 
 ## Changes in 2025 release wave 1
 
@@ -50,6 +57,13 @@ The following features are marked as `obsolete:pending` in 2025 release wave 1.
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced| While useful to show the Power BI embed capabilities in BC, the legacy Power BI apps on AppSource: <br>Dynamics 365 Business Central - CRM<br>Dynamics 365 Business Central - Finance<br>Dynamics 365 Business Central - Sales<br>have now been superseeded by the 7 Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing that were released in the 25.1 version. <br><br>To learn about the replacement features, go to [aka.ms/bcAnalytics](https://aka.ms/bcAnalytics). |
+
+
+### Intelligent Cloud Insights (warning)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| While useful to show some KPIs and insights, the legacy Intelligent Cloud Insights feature have now been superseeded by the 7 Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing that were released in the 25.1 version. <br><br>To learn about the replacement features, go to [aka.ms/bcAnalytics](https://aka.ms/bcAnalytics). |
 
 
 ## Changes in 2024 release wave 2
