@@ -2,7 +2,7 @@
 title: Install a version 25 update
 description: This article describes the tasks required for getting the monthly version 25 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 12/13/2024
+ms.date: 01/10/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -26,7 +26,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - System Application extension
 
-    The Microsoft System Application extension includes functionality that isn't directly related the business logic. For more information, see [Overview of the System Application](../developer/devenv-system-application-overview.md). When the solution uses the Microsoft Base Application, it must also use the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, skip any steps in this article related to the System Application.
+    The Microsoft System Application extension includes functionality that isn't directly related the business logic. Learn more in [Overview of the System Application](../developer/devenv-system-application-overview.md). When the solution uses the Microsoft Base Application, it must also use the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, skip any steps in this article related to the System Application.
 
 - Business Foundation extension
 
@@ -38,11 +38,11 @@ The application includes AL extensions that define the objects and code that mak
 
 - Application extension
 
-    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `25.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required for Microsoft extensions, but is optional for third-party extensions. For more information, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `25.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required for Microsoft extensions, but is optional for non-Microsoft extensions. Learn more in [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
 - Customization extensions
 
-    Customization extensions add functionality and features to the Base Application or System Application. Extensions can be either Microsoft extensions or third-party extensions. Microsoft extensions are available on the DVD. Third-party extensions are extensions developed by your organization or by another organization, like an ISV.
+    Customization extensions add functionality and features to the Base Application or System Application. Extensions can be either Microsoft extensions or non-Microsoft extensions. Microsoft extensions are available on the DVD. Non-Microsoft extensions are extensions developed by your organization or by another organization, like an ISV.
 
 ### Single-tenant and multitenant deployments
 
@@ -60,7 +60,7 @@ An application update involves:
 - Synchronizing the databases with any schema change introduced by the new extensions
 - Updating affected data.
 
-The installation media (DVD) includes new versions of Microsoft's Base Application, System Application, and extensions. The DVD also includes the AL source code for the Microsoft Base Application. This code useful if you have a custom base application. You can use the code to compare and merge updates into your application. You'll only have to recompile third-party extensions that you don't have a new version to publish.
+The installation media (DVD) includes new versions of Microsoft's Base Application, System Application, and extensions. The DVD also includes the AL source code for the Microsoft Base Application. This code useful if you have a custom base application. You can use the code to compare and merge updates into your application. You only have to recompile non-Microsoft extensions that you don't have a new version to publish.
 
 ## Preparation
 
@@ -182,17 +182,17 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
         - Web Server Components.
 
           > [!NOTE]
-          > When install the Web Server Components, a [!INCLUDE[webserverinstance](../developer/includes/webserverinstance.md)] instance with the same name that you define for the [!INCLUDE[server](../developer/includes/server.md)] instance will be created on Internet Information Services (IIS). If you're existing deployment has multiple web server instances that you want to reuse, you'll have to upgrade these instances later in this article.
+          > When you install the Web Server Components, a [!INCLUDE[webserverinstance](../developer/includes/webserverinstance.md)] instance with the same name that you define for the [!INCLUDE[server](../developer/includes/server.md)] instance is created on Internet Information Services (IIS). If you're existing deployment has multiple web server instances that you want to reuse, you have to upgrade these instances later in this article.
 
     1. Select **Next**.
     1. On the **Specify parameters** page, set the fields as needed.
 
         > [!IMPORTANT]
-        > Clear the **SQL Database** field so that it is blank. At this time, do not set this to the database that you want to update; otherwise, the installation of the [!INCLUDE[server](../developer/includes/server.md)] will fail. You will connect the database to the [!INCLUDE[server](../developer/includes/server.md)] later after it is converted to the new platform.
+        > Clear the **SQL Database** field so that it's blank. At this time, don't set this field to the database that you want to update; otherwise, the [!INCLUDE[server](../developer/includes/server.md)] installation fails. You connect the database to the [!INCLUDE[server](../developer/includes/server.md)] later after it's converted to the new platform.
 
     1. Select **Apply** to complete the installation.
 
-For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+Learn more in [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 ## Task 2: Convert existing database to new platform
 
@@ -202,7 +202,7 @@ Follow the next few tasks to convert your database to the new platform of the up
 - Provide the latest platform features and performance enhancements
 - Automatically publish the system symbols for the new platform
 
-Also, to ensure that the existing published extensions work on the new platform, you'll recompile the extensions.
+Also, to ensure that the existing published extensions work on the new platform, recompile the extensions.
 
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
@@ -237,13 +237,13 @@ Also, to ensure that the existing published extensions work on the new platform,
     ```
 
     > [!NOTE]
-    > Depending on the update that you're installing, you might get a message similar to the following:
+    > Depending on the update that you're installing, you might get a message similar to the following text:
     >
     > `Invoke-NAVApplicationDatabaseConversion : A technical upgrade of database <database name> on server '.\<database instance>' cannot be run, because the database's application version 'NNNNNN' is greater than or equal to the platform version 'NNNNNN'`
     >
-    > This isn't an error. This message is recorded as a warning in the event log as well. This message indicates that the application database is already compatible with the new platform, which happens when the update does not make any schema changes to the system tables.
+    > This condition isn't an error. This message is recorded as a warning in the event log as well. This message indicates that the application database is already compatible with the new platform, which happens when the update doesn't make any schema changes to the system tables.
     >
-    > You'll see this message if you ran the cmdlet without the `-Force` parameter. Run the cmdlet again, but be sure to include `-Force` parameter.
+    > A message appears if you ran the cmdlet without the `-Force` parameter. Run the cmdlet again, but include `-Force` parameter.
 
 ## Task 3: Connect server instance to database
 
@@ -259,7 +259,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     Set-NAVServerConfiguration -ServerInstance $BcServerInstance -KeyName DatabaseName -KeyValue $ApplicationDatabase
     ```
 
-    In a multitenant deployment, the database is the application database. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    In a multitenant deployment, the database is the application database. Learn more in [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
 1. Restart the server instance.
 
@@ -269,14 +269,14 @@ Also, to ensure that the existing published extensions work on the new platform,
 
 ## <a name="UploadLicense"></a>Task 4: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
-To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
+To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). Restart the server instance afterwards:
 
 ```powershell
 Import-NAVServerLicense -ServerInstance $BcServerInstance -LicenseFile $PartnerLicense
 Restart-NAVServerInstance -ServerInstance $BcServerInstance
 ```
 
-For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
+Learn more in [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
 ## Task 5: Synchronize tenant
 
@@ -291,7 +291,7 @@ Synchronize the tenant database with the platform changes in the application dat
     ```
 
     > [!IMPORTANT]
-    > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you'll get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
+    > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
     >
     > For upgrade, set the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
 
@@ -374,13 +374,13 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance $BcServerInstance -Path "<path to extension>"
     ```
 
-## Task 7: Recompile existing extentions that won't be upgraded
+## Task 7: Recompile existing extensions not being upgraded
 
 This task is required for a plaform-only update. When you're doing an application upgrade, complete this task only for published non-Microsoft extensions that don't have a new version to upgrade to. Skip this task for extensions that you no longer want to install on the tenant. 
 
 [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
 
-These extensions must be recompiled to work with the new update . To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
+These extensions must be recompiled to work with the new update. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
 ```powershell  
 Repair-NAVApp -ServerInstance $BcServerInstance -Name <extension name> -Version <extension name>
@@ -510,11 +510,11 @@ This command upgrades and installs the extensions on the tenant.
 
 ---
 
-## Task 10: Reinstall existing extensions
+## Task 10: Reinstall existing extensions not upgraded
 
 > APPLIES TO: Single tenant only
 
-Reinstall the extensions that you recompiled in task 7. This task is required in a platform upgrade. Wehn doing an application upgrade, these are non-Microsoft extensions that you haven't published new versions for, but you still want installed on the tenant after upgrade.
+Reinstall the extensions that you recompiled in task 7. This task is required in a platform upgrade. With an application upgrade, these extensions are non-Microsoft extensions that you didn't publish new versions for but you still want installed on the tenant.
 
 To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp).
 
@@ -542,13 +542,11 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
 
     Replace `$ExtVersion` with the exact version of the published Application extension.
 
-1. Install other extensions, including Microsoft and third-party extensions.
+1. Install other extensions, including Microsoft and non-Microsoft extensions.
 
     ```powershell
     Install-NAVApp -ServerInstance $BcServerInstance -Name $ExtName -Version $ExtVersion
     ```
-
-At this point, your solution has been updated to the latest platform.
 
 > [!IMPORTANT]
 > If your solution uses any Microsoft control add-ins, you must upgrade the add-ins to the latest version. Go to [Upgrade control add-ins](#controladdins) under **Post Upgrade** section.
@@ -565,7 +563,7 @@ At this point, your solution has been updated to the latest platform.
 
 ### Import the customer license
 
-Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You'll have to restart the server instance afterwards.
+Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. Restart the server instance afterwards.
 
 ```powershell
 Import-NAVServerLicense -ServerInstance $BcServerInstance -LicenseFile $CustomerLicense
@@ -579,11 +577,10 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 ## Related information
 
-[Dynamics 365 Business Central On-Premises 2024 Release Wave 1 Updates](../deployment/update-versions-24.md)  
-[Dynamics 365 Business Central On-Premises 2023 Release Wave 2 Updates](../deployment/update-versions-23.md)  
-[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  
+[Dynamics 365 Business Central on-premises 2024 release wave 2 Updates](../deployment/update-versions-25.md)    
+[Upgrading to Dynamics 365 Business Central 2024 release wave 2](upgrade-overview-v25.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
-[Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
+[Publish and install an extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Getting Started in AL](../developer/devenv-get-started.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
