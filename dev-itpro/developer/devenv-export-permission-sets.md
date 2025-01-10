@@ -30,7 +30,6 @@ You can generate a permission set file which contains permissions to all the fil
 2. Open the command palette using the `Ctrl+Shift+P` keys and select the **AL: Generate permission set as XML file containing current extension objects** command.  
     > [!NOTE]  
     > If you do this repeatedly, Visual Studio Code will probe for overwriting the file, there's no support for merging manual corrections into newly generated content.
-3. Publish the app. 
 
 Now, you have the XML file with default permissions to all your objects.
 
