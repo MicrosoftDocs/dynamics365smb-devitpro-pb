@@ -24,7 +24,7 @@ The source application for this moved symbol cannot be found.
 
 ## Remarks
 
-The source application for a moved symbol can't be found. This is important because when a symbol is moved from one application to another, it is crucial to maintain a reference to the source application to ensure that dependent extensions can locate and use the symbol correctly. If the source application can't be found, it can lead to broken references and functionality issues in dependent extensions.
+The source application for a moved symbol can't be found. This is important because when a symbol is moved from one application to another, it is crucial to maintain a reference to the source application to ensure that dependent extensions can locate and use the symbol correctly. If the source application can't be found, it might be considered an unwanted take over of a symbol that is not being released for moving.
 
 ## How to fix this diagnostic?
 
