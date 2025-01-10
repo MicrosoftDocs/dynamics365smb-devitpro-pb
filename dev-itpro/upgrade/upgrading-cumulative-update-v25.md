@@ -398,7 +398,7 @@ Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
 Restart-NAVServerInstance -ServerInstance $BcServerInstance
 ```
 
-If you're doing a platfrom-only upgrade, continue on [task 10](#task-10-reinstall-existing-extensions).
+If you're doing a platfrom-only upgrade, continue on [task 10](#task-10-reinstall-existing-extensions-not-upgraded).
 
 ## Task 8: Synchronize extensions
 
