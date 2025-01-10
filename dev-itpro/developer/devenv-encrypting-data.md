@@ -7,9 +7,9 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ---
 
-# Encrypting data in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
+# Encrypting data in [!INCLUDE [prod_short](includes/prod_short.md)]
 
-This article gives an overview of data encryption and how to use it to add security [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
+This article gives an overview of data encryption and how to use it to add security [!INCLUDE [prod_short](includes/prod_short.md)].
 
 > [!Note]
 > [!INCLUDE[on_prem_only](includes/on_prem_only.md)]
@@ -29,19 +29,19 @@ The process of encrypting and decrypting data requires a key. An encryption key
 Each tenant supports having a single encryption key. To use the encryption methods, a key must be created. There are two ways of doing this; either by importing a key or by creating a key. The [System.CreateEncryptionKey method](methods-auto/system/system-createencryptionkey-method.md) creates an encryption key in a system that doesn't have a key present. Alternatively, if a key exists, you can use the [System.ImportEncryptionKey method](methods-auto/system/system-importencryptionkey-method.md) to introduce a key to a keyless system.  
 
  > [!WARNING]  
- > **CREATEENCRYPTIONKEY** fails if the key already exists, you must then call **DELETEENCRYPTIONKEY** to clear the state. **IMPORTENCRYPTIONKEY** throws a warning if a key already exists, regardless of if the key is present on the system or not.  
+ > `CreateEncryptionKey` fails if the key already exists, you must then call [System.DeleteEncryptionKey method](methods-auto/system/system-deleteencryptionkey-method.md) to clear the state. [System.ImportEncryptionKey method](methods-auto/system/system-importencryptionkey-method.md) throws a warning if a key already exists, regardless of if the key is present on the system or not.  
 
 ## Best practices
 
 These are some best practices we recommend that you follow:  
 
-- Make sure to always back up your key and store it securely. Use the **EXPORTENCRYPTIONKEY** method and keep the output file in a secure location.  
-- Use the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] permission system to restrict access to encryption key logic.  
-- Be aware of the difference between the **ENCRYPTIONKEYEXISTS** and **ENCRYPTIONENABLED** methods.
+- Make sure to always back up your key and store it securely. Use the [System.ExportEncryptionKey method](methods-auto/system/system-exportencryptionkey-method.md) and keep the output file in a secure location.  
+- Use the [!INCLUDE [prod_short](includes/prod_short.md)] permission system to restrict access to encryption key logic.  
+- Be aware of the difference between the [System.EncryptionKeyExists method](methods-auto/system/system-encryptionkeyexists-method.md) and [System.EncryptionKeyEnabled method](methods-auto/system/system-encryptionkeyenabled-method.md).
 
-### ENCRYPTIONKEYEXISTS versus ENCRYPTIONENABLED
+### EncryptionKeyExists versus EncryptionKeyEnabled
 
-The encryption key is stored in a file in a directory that the [!INCLUDE[d365fin_server](includes/d365fin_server_md.md)] has access to. When a key is created or imported, data is recorded in the tenant table registering that encryption has now been enabled. Any subsequent calls to **ENCRYPTIONENABLED** will return true after the tenant table has been updated with this information. However, if the encryption file is deleted, then **ENCRYPTIONENABLED** continues to return true. Use the **ENCRYPTIONKEYEXISTS** method to perform a file system check to see whether the key is present.  
+The encryption key is stored in a file in a directory that the [!INCLUDE[d365fin_server](includes/d365fin_server_md.md)] has access to. When a key is created or imported, data is recorded in the tenant table registering that encryption has now been enabled. Any subsequent calls to `EncryptionKeyEnabled` return `true` after the tenant table is updated with this information. However, if the encryption file is deleted, then `EncryptionKeyEnabled` continues to return `true`. Use the `EncryptionKeyExists` method to perform a file system check to see whether the key is present.  
 
 ## Related information  
 
