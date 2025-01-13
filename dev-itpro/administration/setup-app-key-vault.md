@@ -86,7 +86,7 @@ The next task is to grant the key vault reader application permission to read se
 
 Once your key vault is created, there are few steps that you should perform. Feel free to skip the first couple of them if you're just linking new App to an existing Azure key vault.
 
-1. Create **AllowedBusinessCentralAppIds** secret in your key vault. You can learn how to create a secret following this [guide](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal).
+1. Create **AllowedBusinessCentralAppIds** secret in your key vault. You can learn how to create a secret following this [guide](/azure/key-vault/secrets/quick-create-portal).
 2. Add your AppId or AppIds as content of the secret. If you're adding multiple appIds separate them by comma or semicolumn.
 Your secret creation screen should look similar to this:
  ![Create new key vault secret.](../developer/media/setup-app-key-vault-secret-creation.png "Creating AllowedBusinessCentralAppIds secret.")  
