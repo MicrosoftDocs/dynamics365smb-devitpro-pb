@@ -13,13 +13,13 @@ ms.custom: evergreen
 
 The following methods perform various actions on fields:  
 
-- CalcFields
-- CalcSums
-- FieldError
-- FieldName
-- Init  
-- TestField
-- Validate 
+- [CalcFields](methods-auto/record/record-calcfields-method.md)
+- [CalcSums](methods-auto/record/record-calcsums-method.md)
+- [FieldError](methods-auto/fieldref/fieldref-fielderror-string-method.md)
+- [FieldName](methods-auto/record/record-fieldname-method.md)
+- [Init](methods-auto/record/record-init-method.md)
+- [TestField](methods-auto/record/record-testfield-joker-method.md)
+- [Validate](methods-auto/record/record-validate-method.md)
 
 ## CalcFields method
 
@@ -33,13 +33,12 @@ CalcFields has the following syntax.
 
 When you use FlowFields in AL methods, you must use the CalcFields method to update them.  
 
-In the following example, the SETRANGE method sets a filter and then the CalcFields method calculates the Balance and Balance Due fields by using the current filter and performing the calculations that are defined as the CalcFormula properties of the FlowFields. This example requires that you create the following variable.  
-
-|Variable|Data type|Subtype|  
-|--------------|---------------|-------------|  
-|Customer|Record|Customer|  
+In the following example, the SETRANGE method sets a filter and then the CalcFields method calculates the Balance and Balance Due fields by using the current filter and performing the calculations that are defined as the CalcFormula properties of the FlowFields.
 
 ```AL  
+var  
+  Customer: Record Customer;
+
 Customer.Get('01454545');  
 Customer.SetRange("Date Filter",0D,TODAY);  
 Customer.CalcFields(Balance,"Balance Due");  
