@@ -1,16 +1,18 @@
 ---
-title: "Field Arrangement on FastTabs"
+title: Field Arrangement on FastTabs
 description: FastTabs in Dynamics 365 Business Central allow users to find key information on a page displayed in separate groups.
-ms.date: 04/01/2021
+ms.date: 01/14/2025
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
+ms.author: solsen
 ---
 
-# Field Arrangement on FastTabs
+# Field arrangement on FastTabs
 
-FastTabs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allow users to find key information on a page by displaying the data in separate groups. This article describes how individual fields are arranged on a FastTab and ways that you can change the layout. 
+FastTabs in [!INCLUDE [prod_short](includes/prod_short.md)] allow users to find key information on a page by displaying the data in separate groups. This article describes how individual fields are arranged on a FastTab and ways that you can change the layout. 
 
-Organizing data using FastTabs helps users to find key information quickly, while at the same time giving an overview of areas that otherwise would remain hidden. For example, the customer card page displays customer information in the following categories: General, Communication, Invoicing, Payments, Shipping, and Foreign Trade. Each category is a separate FastTab that can be expanded or collapsed, making it easier for users to focus on one subject at a time. On task pages, a FastTab typically represents a single step in a task.  
+Organizing data using FastTabs helps users to find key information quickly, while at the same time giving an overview of areas that otherwise would remain hidden. For example, the customer card page displays customer information in the following categories: General, Address & Contact, Invoicing, Payments, Shipping, and Statistics. Each category is a separate FastTab that can be expanded or collapsed, making it easier for users to focus on one subject at a time. On task pages, a FastTab typically represents a single step in a task.  
 
 ## How fields are arranged on a FastTab of a page
 
@@ -20,10 +22,9 @@ By default, a FastTab is divided into two columns for containing fields. Fields 
 
 Pages automatically adjust to the available space on the screen. If horizontal space is reduced, a FastTab will adapt and distribute fields into a single column. Similarly, a FastTab will automatically distribute fields into more than two columns to take advantage of wider screens.  
 
-
 ## FastTab example
 
-Creating a FastTab is easy. A FastTab is a group control directly within the `content` area of a card, document, or task page. The following example shows how you can create a FastTab containing a pair of fields.
+Creating a FastTab is easy. A FastTab is a group control directly within the `content` area of a card, document, or task page. The following example shows how you can create a FastTab that contains a couple of fields.
 
 ```AL
 page 50101 SimpleCustomerCard
@@ -55,7 +56,7 @@ page 50101 SimpleCustomerCard
 
 ## Collapsed or Expanded FastTabs
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically determines whether FastTabs are initially displayed as expanded or collapsed. For example, when a document page is opened the first time, the first two parts or FastTabs are automatically expanded. All other parts or FastTabs are shown as collapsed to provide an optimal starting experience. Users can change the state of a FastTab to be expanded or collapsed directly within the user interface, but developers can't specify the starting state.  
+[!INCLUDE [prod_short](includes/prod_short.md)] automatically determines whether FastTabs are initially displayed as expanded or collapsed. For example, when a document page is opened the first time, the first two parts or FastTabs are automatically expanded. All other parts or FastTabs are shown as collapsed to provide an optimal starting experience. Users can change the state of a FastTab to be expanded or collapsed directly within the user interface, but developers can't specify the starting state.  
 
 ## Choosing how to show fields in a FastTab
 
@@ -66,17 +67,17 @@ If a FastTab is expanded, you see all the fields. If it's collapsed, you just se
 
 ## Organizing compound content in a FastTab
 
-By using a Group control within a FastTab, you can group fields by similarity. This pattern also gives you control over how fields are distributed between the left and right columns. When you group fields on a FastTab, the groups are distributed evenly between the left and right columns. Fields aren't.
+By using a Group control in a FastTab, you can group fields by similarity. This pattern also gives you control over how fields are distributed between the left and right columns. When you group fields on a FastTab, the groups are distributed evenly between the left and right columns. Fields aren't.
 
 Similarly, page parts placed within a FastTab are distributed evenly between the columns. For example, a FastTab containing two ListParts may be used to display two lists side by side for easier comparison. Learn more about [Page parts](devenv-designing-parts.md).  
-
   
 ## Manually arranging fields in multiple rows and columns  
 
-Using the GridLayout or FixedLayout controls, you can arrange fields in multiple rows and columns in a grid-like format. These controls define a static layout that doesn't automatically adapt to the available space on the screen. It's recommended to use these controls only when you're sure your users will access them on larger screens. For more information, see [Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md).
+Using the GridLayout or FixedLayout controls, you can arrange fields in multiple rows and columns in a grid-like format. These controls define a static layout that doesn't automatically adapt to the available space on the screen. It's recommended to use these controls only when you're sure your users access them on larger screens. Learn more in [Arranging fields using grid and fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md).
 
 ## Related information
-[Arranging Fields Using Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md)  
-[Pages Overview](devenv-pages-overview.md)  
+
+[Arranging fields using grid and fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md)  
+[Pages overview](devenv-pages-overview.md)  
 [Use Designer](devenv-inclient-designer.md)  
-[Table in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]](devenv-tables-overview.md)  
+[Table in [!INCLUDE [prod_short](includes/prod_short.md)]](devenv-tables-overview.md)  
