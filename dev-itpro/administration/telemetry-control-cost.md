@@ -34,7 +34,7 @@ For more information, see [Cost optimization in Azure Monitor](/azure/azure-moni
 
 The following video shows how to enable cost control strategies for telemetry.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fxZ7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=38a5cd44-3817-487d-818c-2bc2317f5d8f]
 
 ### Calculating the cost of data ingestion
 
