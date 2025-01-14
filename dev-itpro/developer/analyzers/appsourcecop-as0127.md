@@ -41,7 +41,7 @@ If the object *already* has a namespace, you should do the following:
 
 1. Identify the objects that aren't placed in a namespace with at least two levels of nesting.
 1. Obsolete the objects that aren't placed in a namespace with at least two levels of nesting.
-1. Create new objects with the same functionality in a namespace with at least two levels of nesting.
+1. In the next version of the extension, update the namespace to use at least two levels of nesting and remove the obsolete properties.
 
 ## Related information
 
