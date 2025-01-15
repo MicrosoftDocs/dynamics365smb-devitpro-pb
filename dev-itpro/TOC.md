@@ -434,7 +434,7 @@
 #### Overview
 ##### [End-to-end process](administration/migrate-sl-overview.md)
 ##### [Dynamics SL data migrated to Business Central](administration/migrate-dynamics-sl.md)
-##### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-sl-videos.md)
+##### [Compare work in Dynamics SL to Business Central](administration/migrate-dynamics-sl-videos.md)
 ##### [Managing cloud migration](administration/migration-manage-sl.md)
 #### Prepare
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare-sl.md)
