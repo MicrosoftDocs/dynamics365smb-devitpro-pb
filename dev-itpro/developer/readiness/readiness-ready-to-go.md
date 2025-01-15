@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 01/06/2025
+ms.date: 01/15/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: jswymer
@@ -18,7 +18,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Hot topics right now
 
-- Register for the next [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Event or watch vidoes from the last event: [aka.ms/BCLE](https://aka.ms/BCLE)
+- Register for the next [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Event or watch videos from the last event: [aka.ms/BCLE](https://aka.ms/BCLE)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 - AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
 
