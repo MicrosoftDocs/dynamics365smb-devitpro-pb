@@ -20,20 +20,11 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-- [Do ad hoc analysis on fixed assets, projects, and services (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/do-ad-hoc-analysis-fixed-assets-projects-services)
-- [E-file IRS 1099 forms without integration (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/e-file-irs-1099-forms-without-integration)
-- [Migrate to the cloud from Dynamics SL (general availability)](../administration/migrate-sl-overview.md)
-- [Start using E-Documents framework localized for Germany (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/start-using-e-documents-framework-localized-germany)
-- [Use embedded Power BI reports out of the box (general availability)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-embedded-power-bi-reports-out-box)
-- [Use the e-documents framework in the Spanish version (public preview)](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-e-documents-framework-spanish-version)
+No new features for 25.3
 
 ## Localization updates
 
-| Country| Feature  |Description|
-|-------------|--------------|--------------|
-| Czech Republic| Copy Document action added to sales and purchase advice etters | The **Copy Document** action is now available on sales and purchase advance letters, allowing users to copy details from previously created documents, eliminating the need for manual re-entry each month. On the request page of the action, the only document types available to choose from are Sales or Purchase Advance Letters. |
-| Norway | SAF-T 1.3 mapping update | Starting 01/01/2025, the new SAF-T form 1.30 is required but can be used immediately. It isn't fully backward compatible due to significant changes. The old form 1.20 remains valid for FY2024 and earlier. Users can now select the SAF-T version in the SAF-T Setup, which will generate different XML content based on the chosen version. |
-| Spain | Adding new period type to the SII | In the new version, we've added a **Tax Period** option to the SII Setup, defaulting to **Monthly**. Companies required to submit the SII will have a **Monthly** tax period, while those voluntarily enrolled can choose **Quarterly**. Selecting **Quarterly** ensures the XML message reflects the correct value. |
+No localization updates for 25.3
 
 ## Release plan
 
@@ -45,27 +36,29 @@ New customers automatically get the latest builds of Business Central (25.3). If
 
 ## Good to know
 
-
 ### Configuration packages for setup and evaluation data
 
-We've changed the way we prepare databases for new evaluation and production companies. Instead of using configuration packages to add demo and setup data, you now use the Contoso Coffee demo data app.
+We changed the way we prepare databases for new evaluation and production companies. Instead of using configuration packages to add demo and setup data, you now use the Contoso Coffee demo data app.
 
-We shipped the Contoso Coffee demo data app in an earlier release to cover gaps in our demo and setup data, such as Manufacturing, Service, and Warehouse. Because the app is easy to use and now provides the comprehensive setup and demo data that was previously available in configuration packages, we're removing the configuration packages earlier available from the Configuration Packages page.
+We shipped the Contoso Coffee demo data app in an earlier release to cover gaps in our demo and setup data, such as Manufacturing, Service, and Warehouse. Because the app is easy to use and now provides the comprehensive setup and demo data that was previously available in configuration packages, we're removing the configuration packages earlier available from the **Configuration Packages** page.
 
-Starting with 25.3, when you launch the **Create New Company** assisted setup guide to initialize new companies with data it will check if Contoso Coffee demo data is installed and then displays a page that allows you to select specific demo and setup data.
+Starting with 25.3, when you launch the **Create New Company** assisted setup guide to initialize new companies with data, it checks whether Contoso Coffee demo data is installed and then displays a page that allows you to select specific demo and setup data.
 
 ![Shows the Create New Compay page in Business Central](../media/createnewcompanies.png)
 
+#### For environment admins
 
-In addition to making it easier to install rich demo data, this change also enables another improvement. We're loosening up the relatively rigid update policies for major and minor updates that were in place. We're giving administrators extended update periods. For major updates, we're offering five-month update periods to give more time to test and prepare. For example, partners can spread out the workload of updating customer environments, and developers can verify that all apps are compatible. We've also given administrators the ability to opt out of minor updates during a grace period. To learn more, go to Manage environment updates more flexibly.
- 
-For developers:
-Our changes might affect your extensions, as we changed logic of Create New Company assist setup guide. For details about what has changed, see https://learn.microsoft.com//dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#configuration-packages-for-setup-and-evaluation-data 
-We continue to generate configuration packages for container and on-premises distribution media as before because it is used by some partners to run tests for their apps. This is a temporary solution to give partners time to switch to demo data generated by Contoso Coffee Demo data app or make sure that the tests are data agnostic and can generate needed data on the fly using available test libraries.
+In addition to making it easier to install rich demo data, this change also enables another improvement: flexible update policies for major and minor updates. Administrators now have extended update periods on environments. For major updates, there's a five-month period to test and prepare. For example, partners can spread out the workload of updating customer environments, and developers can verify app compatibility. Administrators can also opt out of minor updates during a grace period. Learn more at [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly).
+
+#### For developers
+
+These changes might affect your extensions because we changed the logic of the **Create New Company** assist setup guide. Learn more in [Deprecated Features in the Base App: Configuration packages for setup and evaluation data](../upgrade/deprecated-features-w1.md#configuration-packages-for-setup-and-evaluation-data).
+
+We continue to generate configuration packages for container and on-premises distribution media because some partners use them to run tests for their apps. This capability is a temporary solution to give partners time to switch to demo data generated by the Contoso Coffee Demo data app. It also allows partners to ensure that the tests are data agnostic and can generate needed data on the fly using available test libraries.
 
 ### Sales Order Agent in Business Central - Early Access Program (US only)
 
-We've recently announced the [Early Access Program for the Business Central Sales Order Agent](https://www.yammer.com/dynamicsnavdev/#/Threads/show?threadId=3092919011729408&search_origin=global&scoring=linear1Y-prankie-group-private-higher&match=any-exact&search_sort=relevance&page=1&search=sales%20order%20agent)&mdash;the very first AI agent in Business Central, built to automate the entire sales requests capturing process. Spaces are limited, so sign up here: [https://aka.ms/bcAgentsEarlyAccess](https://aka.ms/bcAgentsEarlyAccess) (US region only at this time).
+We recently announced the [Early Access Program for the Business Central Sales Order Agent](https://www.yammer.com/dynamicsnavdev/#/Threads/show?threadId=3092919011729408&search_origin=global&scoring=linear1Y-prankie-group-private-higher&match=any-exact&search_sort=relevance&page=1&search=sales%20order%20agent)&mdash;the first AI agent in Business Central, built to automate the entire sales requests capturing process. Spaces are limited, so sign up here: [https://aka.ms/bcAgentsEarlyAccess](https://aka.ms/bcAgentsEarlyAccess) (US region only at this time).
 
 Learn more about the Sales Order Agent at [Use Copilot with agent capabilities to automate sales order-taking](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
