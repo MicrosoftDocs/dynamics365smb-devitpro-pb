@@ -62,14 +62,14 @@ We recently announced the [Early Access Program for the Business Central Sales O
 
 Learn more about the Sales Order Agent at [Use Copilot with agent capabilities to automate sales order-taking](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
-### New installation path starting in 25.2
+### New installation path started in 25.2
 
 25.2 included internal database schema changes with the following consequences:
 
 - New platform version 25.2 instead of 25.0.
 - Different installation path than 25.0 and 25.1. Instead of using folder '250', components are installed in folder '252', for example: `C:\Program Files\Microsoft Dynamics 365 Business Central\252`.
 
-Future 25 updates like 25.4 and 25.5 will also use platform number '25.2' and installation folder '252'.
+Update 25.3 and future updates will also use platform number '25.2' and installation folder '252'.
 
 ### Business Central Launch Event videos on YouTube
 
