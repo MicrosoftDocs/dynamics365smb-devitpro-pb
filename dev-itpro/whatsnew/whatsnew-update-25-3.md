@@ -58,7 +58,7 @@ We shipped the Contoso Coffee demo data app in an earlier release to cover gaps 
 
 Starting with 25.3, when you launch the **Create New Company** assisted setup guide to initialize new companies with data, it checks whether Contoso Coffee demo data is installed and then displays a page that allows you to select specific demo and setup data.
 
-![Shows the Create New Compay page in Business Central](../media/createnewcompanies.png)
+![Shows the Create New Compay page in Business Central](../media/CreateNewCompanies.png)
 
 #### For environment admins
 
