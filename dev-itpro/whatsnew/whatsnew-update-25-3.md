@@ -2,7 +2,7 @@
 title: Update 25.3 for Microsoft Dynamics 365 Business Central 2024 release wave 2
 description: Get an overview of new and changed capabilities in the 25.3 update of Business Central online, which is part of 2024 release wave 2.
 ms.author: jswymer
-ms.date: 12/09/2024
+ms.date: 01/17/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -20,7 +20,19 @@ Learn about the hotfixes at [Update 25.3 for Business Central 2024 release wave 
 
 ## Feature changes
 
-No new features for 25.3
+- Chat with Copilot
+
+  We've expanded the public preview to more countries and regions, including: Albania, Andorra, Armenia, Austria, Belgium, Bosnia & Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Faroe Islands (Denmark), Finland, Georgia, Gibraltar, Greece, Greenland (Denmark), Hungary, Iceland, Ireland, Italy, Jamaica, Kazakhstan, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Mexico, Moldova, Montenegro, Netherlands, North Macedonia, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United States, and Vatican City.
+
+  [!INCLUDE [copilot-language-support-en-only](includes/copilot-language-support-en-only.md)]
+
+- Improvements to Copilot & AI capabilities page
+
+  The page now displays revised instructions and a link where administrators can learn about what data is processed by the Azure OpenAI Service. The page also gives more transparency to EU customers, indicating that their data never leaves the EU Data Boundary.
+
+- Improved security for Outlook add-in
+
+  As part of our continual efforts to harden security of our online services, the Outlook add-in is silently switching to Nested App Authentication (NAA). No action is required from administrators or end-users.
 
 ## Localization updates
 
