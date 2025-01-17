@@ -26,11 +26,11 @@ Learn about the hotfixes at [Update 25.3 for Business Central 2024 release wave 
 
   This feature is supported in English. While it can be used in other languages, it might not function as intended. Language quality might vary based on the user's interaction or system settings, which might impact accuracy and the user experience.
 
-  Learn more about geographic and language availability at [Copilot international availability](https://aka.ms/bapcopilot-intl-report-external).
+  Learn more in [Chat with Copilot](/dynamics365/business-central/chat-with-copilot) and check geographic and language availability at [Copilot international availability](https://aka.ms/bapcopilot-intl-report-external).
 
-- Improvements to Copilot & AI capabilities page
+- Improvements to the **Copilot & AI capabilities** page
 
-  The page now displays revised instructions and a link where administrators can learn about what data is processed by the Azure OpenAI Service. The page also gives more transparency to EU customers, indicating that their data never leaves the EU Data Boundary.
+  The page now displays revised instructions and a link to the article [Azure OpenAI Service and Business Central data](https://go.microsoft.com/fwlink/?linkid=2298232) where administrators can learn about what data is processed by the Azure OpenAI Service. The article also provides transparency to EU customers, indicating that their data never leaves the EU Data Boundary.
 
 - Improved security for Outlook add-in
 
