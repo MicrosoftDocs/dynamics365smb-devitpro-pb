@@ -89,7 +89,7 @@ The NavCSideRecordNotFoundException error typically occurs when the server tries
 Here are some potential solutions:<br> Check the data: Make sure the data the report is trying to access actually exists in the database.<br> Check the report code: There might be an issue with how the report is trying to access the data. You might need to modify the report code to correctly handle cases where a record doesn’t exist.<br><br>
 
 ### <a name=NavCSideSQLLockTimeoutException></a>NavCSideSQLLockTimeoutException
-The report code tried to get a lock on data, but another process had a lock on the same data. After 30 seconds, the report proces had to timeout and give up getting a lock on the data.
+The report code tried to get a lock on data, but another process had a lock on the same data. After 30 seconds, the report process had to timeout and give up getting a lock on the data.
 
 **Suggested solution**<br>
 The user should retry running the report. If the issue persists, then the administrator might need to look into telemetry for lock timeouts to find which process is locking data.<br><br>
@@ -154,7 +154,7 @@ This happens when a developer is debugging a report
 Not an error<br><br>
 
 ### <a name=NavNCLDialogException></a>NavNCLDialogException
-The NavNCLDialogException error happens when a error funtion has been called in the report. 
+The NavNCLDialogException error happens when a error function has been called in the report. 
 
 **Suggested solution**<br>
 The error messages will in most cases provide the necessary information to mitigate the problem. If not, you need a developer to debug the report or the code running the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
@@ -196,7 +196,7 @@ This typically happens in processing-only reports
 First check the parameters on the request page. Could be a missing file name in field that does not have a proper field validation. You might need a developer to debug the report code or the code running the report<br><br>
 
 ### <a name=NavNCLRecordNotOpenedException></a>NavNCLRecordNotOpenedException
-AL runtime error caused by programming errror when the code does not open a record reference before use.
+AL runtime error caused by programming error when the code does not open a record reference before use.
 
 **Suggested solution**<br>
 You need a developer to debug the report or the code running the report. If the report was supplied by Microsoft or an ISV, then create a support request.<br><br>
