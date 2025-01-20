@@ -72,6 +72,6 @@ Creating layouts in Excel, RDL, or Word is further described in the articles sho
 ## Related information
 
 [About report layouts](/dynamics365/business-central/ui-manage-report-layouts?toc=%2Fdynamics365%2Fbusiness-central%2Fdev-itpro%2Ftoc.json)  
-[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
-[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-[Creating a Word Layout Report](devenv-howto-report-layout.md)  
+[Creating an Excel layout report](devenv-howto-excel-report-layout.md)  
+[Creating an RDL layout report](devenv-howto-rdl-report-layout.md)  
+[Creating a Word layout report](devenv-howto-report-layout.md)  
