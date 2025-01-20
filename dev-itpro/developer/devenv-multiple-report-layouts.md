@@ -8,7 +8,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Defining multiple report ayouts
+# Defining multiple report layouts
 
 In AL, you have the option of defining multiple layouts for one report in code. This means that you can offer multiple versions of a layout for different purposes. Defining multiple layouts applies to both report objects, and report extension objects. The layouts can be of different types, meaning that you can have, for example, a Word layout and an Excel layout for one report, or multiple Excel layouts for one report. This enables creating report extensions that only add layouts to an existing report and packaging it as an extension .al file.
 
@@ -71,6 +71,7 @@ Creating layouts in Excel, RDL, or Word is further described in the articles sho
 
 ## Related information
 
+[About report layouts](/dynamics365/business-central/ui-manage-report-layouts?toc=%2Fdynamics365%2Fbusiness-central%2Fdev-itpro%2Ftoc.json)  
 [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
