@@ -4,7 +4,6 @@ description: Understand how files are handled and text is encoded in Business Ce
 ms.custom: bap-template
 ms.date: 12/21/2023
 ms.reviewer: solsen
-
 ms.author: solsen
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
@@ -12,17 +11,17 @@ author: SusanneWindfeldPedersen
 
 # File handling and text encoding
 
-There are several AL methods that you can use to open files, import and export files to and from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and more. For a list of methods, see [File Data Type](./methods-auto/file/file-data-type.md).
+There are several AL methods that you can use to open files, import and export files to and from [!INCLUDE [prod_short](includes/prod_short.md)], and more. Handling files in [!INCLUDE [prod_short](includes/prod_short.md)] is done through the **File** data type, which provides methods to open, read, write, and close files. Learn more about the various methods in [File data type](./methods-auto/file/file-data-type.md).
 
-The following are recommended best practices for working with files:
+A couple of best practices for working with files are:
 
 - Use fully qualified paths to eliminate ambiguity.
-
-- Be aware of operating system file access restrictions when designing applications that use files. Consider which users have access to files and directories and what Access Control List (ACL) that you need to apply to file directories. 
+- Make sure to handle file exceptions and errors properly.
+- Be aware of operating system file access restrictions when designing applications that use files. Consider which users have access to files and directories and what Access Control List (ACL) that you need to apply to file directories.
 
 ## Text encoding
 
-Text encoding is the process of transforming bytes of data into readable characters for users of a system or program. When you import a file as text or as a stream, the text encoding format ensures that all the language-specific characters are represented correctly in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. When you export a file as text or as a stream, the text encoding format ensures that all the language-specific characters are represented correctly in the system or program that will read the exported file.  
+Text encoding is the process of transforming bytes of data into readable characters for users of a system or program. When you import a file as text or as a stream, the text encoding format ensures that all the language-specific characters are represented correctly in [!INCLUDE [prod_short](includes/prod_short.md)]. When you export a file as text or as a stream, the text encoding format ensures that all the language-specific characters are represented correctly in the system or program that will read the exported file.  
   
 ## Encoding formats
 
