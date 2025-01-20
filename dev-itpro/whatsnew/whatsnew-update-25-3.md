@@ -20,7 +20,7 @@ Learn about the hotfixes at [Update 25.3 for Business Central 2024 release wave 
 
 ## Feature changes
 
-- Chat with Copilot
+- Chat with Copilot in more countries and regions
 
   We've expanded the public preview to more countries and regions, including: Albania, Andorra, Armenia, Austria, Belgium, Bosnia & Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Faroe Islands (Denmark), Finland, Georgia, Gibraltar, Greece, Greenland (Denmark), Hungary, Iceland, Ireland, Italy, Jamaica, Kazakhstan, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Mexico, Moldova, Montenegro, Netherlands, North Macedonia, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United States, and Vatican City.
 
