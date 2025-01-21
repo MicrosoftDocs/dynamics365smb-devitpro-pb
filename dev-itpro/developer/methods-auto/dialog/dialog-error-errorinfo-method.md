@@ -1,6 +1,6 @@
 ---
 title: "Dialog.Error(ErrorInfo) Method"
-description: "Displays an error message and ends the execution of AL code."
+description: "Displays an error message and ends the execution of AL code. Allows for multiple configurations of actions and appearance."
 ms.author: solsen
 ms.date: 08/26/2024
 ms.topic: reference
