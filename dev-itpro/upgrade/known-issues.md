@@ -1,7 +1,7 @@
 ---
 title: Some Known Issues in Business Central On-premises
 description: Provides an overview of the known issues in Business Central versions
-ms.date: 12/19/2024
+ms.date: 01/21/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
