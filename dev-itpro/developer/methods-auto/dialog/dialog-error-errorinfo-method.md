@@ -60,6 +60,7 @@ begin
     if IsBlocked then
     begin
         // Setup ErrorInfo object
+        DoNotBlockErrorInfo.Title('Could not block the account.');
         DoNotBlockErrorInfo.Message('Finance Account 1230 must not be blocked.');
         DoNotBlockErrorInfo.DetailedMessage('Some additional information that can help the person troubleshooting this issue.');
         // Add more properties for ErrorInfo depending on the scenario
@@ -76,7 +77,10 @@ end;
 
 The error window displays the following:  
 
-**Finance Account 1230 must not be blocked.**  
+**Could not block the account**
+
+Finance Account 1230 must not be blocked.
+
 
 The `Error` method causes execution of AL code to stop. [Message Method](../../methods-auto/dialog/dialog-message-method.md) is never executed.  
 
