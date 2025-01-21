@@ -78,7 +78,6 @@ end;
 The error window displays the following:  
 
 **Could not block the account**
-
 Finance Account 1230 must not be blocked.
 
 
