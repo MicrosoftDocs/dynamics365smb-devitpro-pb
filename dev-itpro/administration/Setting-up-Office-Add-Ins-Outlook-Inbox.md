@@ -1,8 +1,8 @@
 ---
-title: "Set up the add-ins for Outlook integration with Business Central on-premises"
+title: Set up the add-ins for Outlook integration with Business Central on-premises
 description: Learn how to configure your Business Central on-premises solution so that users can work with Business Central data in Outlook.
 ms.custom: bap-template
-ms.date: 04/22/2022
+ms.date: 01/21/2025
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
@@ -36,7 +36,7 @@ For more information about what you do with the add-ins, see [Using Business Cen
 
 The processes for deploying the add-ins are different for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises, though the add-ins are the same. This article describes how to get the add-ins for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises. For information about [!INCLUDE [prod_short](../includes/prod_short.md)] online, see [Get the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook) in the business functionality content.
 
-For on-premises environments, there are different options for deploying the add-ins. The option that you choose will depend on your organizations security policies, the Business Central environment, and how much control over installing the add-in that you want to give users. For example, you can choose to install the add-ins automatically for all users in your organization or targeted users only. Or, you can allow users to install the add-ins themselves. For more information about each deployment option, see [Centralized Deployment](#centralized-deployment), [Automated Individual Deployment](#automated-individual-deployment), and [Manual Individual Deployment](#manual-individual-deployment) in this article. 
+For on-premises environments, there are different options for deploying the add-ins. The option that you choose will depend on your organizations security policies, the Business Central environment, and how much control over installing the add-in that you want to give users. For example, you can choose to install the add-ins automatically for all users in your organization or targeted users only. Or, you can allow users to install the add-ins themselves. For more information about each deployment option, see [Centralized Deployment](#centralized-deployment), [Automated Individual Deployment](#automated-individual-deployment), and [Manual Individual Deployment](#manual-individual-deployment) in this article.
 
 > [!IMPORTANT]
 > Working with multiple environments? The Business Central add-in for Outlook is designed to work with a single Business Central environment. When the add-in is installed, the name of the environment is included in the add-in's manifest. This configuration means that the add-in will only connect to the environment that it was installed from. To use the add-in with a different environment, you'll have to open the environment and install the add-in again.
@@ -68,16 +68,16 @@ The steps you'll need to go through to prepare for deploying the add-in will dep
 
     - Set up Microsoft Entra authentication.
 
-       For more information, see [Authenticating Business Central Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
+       Learn more in [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
     - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
 
-      For more information, see [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
+      Learn more in [Configure SSL to secure the connection to web client](../deployment/configure-ssl-web-client-connection.md).
     - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
-      For more information, see [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
+      Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
     - Set the authentication email on user accounts to the user's Microsoft 365 email address.
 
-      For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality help.
+      Learn more in [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality help.
 
 ### [Deploying to Exchange Server?](#tab/exchange)
 
