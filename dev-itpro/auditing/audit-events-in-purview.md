@@ -1328,6 +1328,8 @@ You can audit the activities in the table below by filtering to the `Administere
 
 ## Related information
 
+[Analyze sign-ins with the Microsoft Entra sign-in log](/entra/identity/monitoring-health/quickstart-analyze-sign-in)  
+[Turn auditing on or off for Microsoft Purview](/purview/audit-log-enable-disable)  
 [Auditing in Business Central](auditing-overview.md)  
 [Auditing changes](/dynamics365/business-central/across-log-changes)  
 [Security Auditing in Business Central](../security/security-auditing.md)  
