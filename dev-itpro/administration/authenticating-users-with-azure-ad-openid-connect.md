@@ -2,7 +2,7 @@
 title: Configure Microsoft Entra authentication with OpenID Connect
 description: Learn how to authentication Business Central users by using Microsoft Entra ID with OpenID Connect.
 ms.custom: bap-template
-ms.date: 06/13/2024
+ms.date: 01/21/2025
 ms.reviewer: jswymer
 ms.author: jswymer
 ms.topic: how-to
@@ -64,7 +64,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
 
 2. Follow the guidelines [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app?tabs=certificate#register-an-application) to register an application for Business Central.
 
-    When you add an application to a Microsoft Entra tenant, specify the following information. The configuration differs slightly for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] single-tenant and multitenant deployments.
+    Use the following tables to specify settings for registering an application for Business Central. The configuration differs slightly for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] single-tenant and multitenant deployments.
 
     # [Single-tenant](#tab/singletenant)
 

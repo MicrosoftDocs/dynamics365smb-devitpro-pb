@@ -41,9 +41,9 @@ The first task is to use Azure portal to register an application for Business Ce
 > [!TIP]
 > The following steps describe how to register a new application. However, if you're using Microsoft Entra authentication, you already have a registered application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it based on the information in the steps that follow.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) or [Azure portal](https://portal.azure.com) and register an application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises in Microsoft Entra tenant.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) and register an application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises in Microsoft Entra tenant.
 
-    1. Follow the general guidelines at [Register your application with your Microsoft Entra tenant](/azure/active-directory/active-directory-app-registration).
+    1. Follow the general guidelines in [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app?tabs=certificate#register-an-application).
 
         When you add an application to a Microsoft Entra tenant, you must specify the following information:
 
