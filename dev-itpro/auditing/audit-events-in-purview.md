@@ -1,6 +1,6 @@
 ---
-title: Auditing events in Purview
-description: Get an overview of the signals Business Central emits to Purview.
+title: Auditing events in Microsoft Purview
+description: Get an overview of the signals Business Central emits to Microsoft Purview.
 author: jobulsin
 ms.reviewer: solsen
 ms.topic: conceptual
@@ -8,10 +8,10 @@ ms.date: 10/21/2024
 ms.author: jobulsin
 ---
 
-# Auditing in Purview
+# Auditing in Microsoft Purview
 
 > [!NOTE]
-> Purview auditing solutions for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is in Preview. Please register any feedback and requests for additional events to be auditable on [aka.ms/bcideas][https://aka.ms/bcideas].
+> Microsoft Purview auditing solutions for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is in Preview. Please register any feedback and requests for additional events to be auditable on [aka.ms/bcideas][https://aka.ms/bcideas].
 
 Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit auditable events to [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. For [!INCLUDE[prod_short](../developer/includes/prod_short.md)], this means that Create, Update, and Delete events that require administrator privileges are emitted to Purview's unified audit log, aiding security, legal, and compliance investigation across all Microsoft services used in your organization.
 
@@ -20,7 +20,7 @@ Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments au
 > 
 > If you want to track, monitor, or alert on successful and failed login attempts against Microsoft Entra ID, configure integration to Azure Monitor on Microsoft Entra and analyze further with KQL. For more information, see [Integrate Microsoft Entra logs with Azure Monitor](/entra/identity/monitoring-health/howto-access-activity-logs#integrate-logs-with-azure-monitor-logs).
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit all events listed below to Microsoft Purview auditing solutions, and Purview is enabled by default on every tenant. Learn more about enabling or disabling Purview auditing solutions on your tenant [here](/purview/audit-log-enable-disable).
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit all events listed below to Microsoft Purview auditing solutions, and Purview is enabled by default on every tenant. Learn more about enabling or disabling Purview auditing solutions on your tenant [here](/purview/audit-log-enable-disable) in the Microsoft Purview documentation.
 
 ## Schema overview
 
