@@ -1399,7 +1399,7 @@
 ### [Auditing data changes](/dynamics365/business-central/across-log-changes)
 ### [Security auditing](security/security-auditing.md)
 ### [Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes?toc=/dynamics365/business-central/dev-itpro/toc.json#analyze-data-in-the-change-log) 
-### [Auditing in Purview](auditing/audit-events-in-purview.md)
+### [Auditing in Microsoft Purview](auditing/audit-events-in-purview.md)
 <!-- end Security, privacy, and compliance -->
 
 <!-- begin performance -->
