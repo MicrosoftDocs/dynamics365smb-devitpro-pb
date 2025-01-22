@@ -9,6 +9,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: bap-template
 ---
+
 # Configure Business Central Server
 
 **APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 (version 21) and later. For later versions, see [Configuring Business Central Server in outdated versions](configure-server-instance-archived.md).
@@ -110,6 +111,7 @@ The following table describes general settings for the server.
 |PTESymbolReferenceCacheTTLInHours|Specifies the lifespan, in hours, of entries in the PTEn symbol reference cache.<br /><br /> The default value is the recommended value for deployments, so you typically won't change this setting.<br /><br />Default: 24|
 |XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
 |DisableWriteInsideTryFunctions|Specifies whether database writes are allowed inside the scope of try methods. `true` prevents database writes; `false` allows database writes. Learn more in [Handling errors using try methods](../developer/devenv-handling-errors-using-try-methods.md)<br><br>Default: `true`<br />Dynamically updatable: No|
+|EnableSqlMultiSubnetFailover| Enables faster failover for all Availability Groups (AGs) and/or Failover Cluster Instances (FCIs) in SQL Server 2012 or later, and it significantly reduces failover time for single and multi-subnet Always On topologies. When this is set to `true`, MultiSubnetFailover is enabled on the connections from the server to the database.|
 
 ##  <a name="Database"></a> Database settings
   
