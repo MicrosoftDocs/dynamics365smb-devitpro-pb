@@ -3,10 +3,9 @@ title: User experience guidelines for errors
 description: Describes how to handle error dialogs in AL code.
 author: samirdal
 ms.author: samirdal
-ms.reviewer: jswymer
-
+ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 12/21/2023
+ms.date: 01/21/2025
 ms.custom: bap-template
 ---
 
@@ -146,13 +145,13 @@ For more guidelines on how to communicate to the user in a way they understand, 
 ## Error message formatting
 
 As the designer of an error dialog, you have two elements where you can communicate to the user:
+
 1. The (optional) title
 1. The visible error message text
 
-As described in the section [Error message best practices - what to say?](#error-message-best-practices-error-dialogs) above, you can use a title to communicate *What went wrong* in a short format. To learn more, see [Visual elements of the error dialog](devenv-error-dialog.md#visual-elements-of-the-error-dialog-2023-release-wave-1-and-later).
+As described in the section [Error message best practices - what to say?](#error-message-best-practices-error-dialogs) above, you can use a title to communicate *What went wrong* in a short format. Learn more in [Visual elements of the error dialog](devenv-error-dialog.md#visual-elements-of-the-error-dialog-2023-release-wave-1-and-later).
 
-If needed, you can format the error message text into multiple lines by separating words with the backslash character "\\". A rule of thumb is to add extra line breaks when the dialog text ends with a question, e.g. "Are you sure you want to cancel the operation?" When the error dialog is short and ends with an OK button, you usually shouldn't break it up.
-
+If needed, you can format the error message text into multiple lines by separating words with the backslash character "\\". A rule of thumb is to add extra line breaks when the dialog text ends with a question, for example, "Are you sure you want to cancel the operation?" When the error dialog is short and ends with an **OK** button, you usually shouldn't break it up.
 
 ## Related information
 
