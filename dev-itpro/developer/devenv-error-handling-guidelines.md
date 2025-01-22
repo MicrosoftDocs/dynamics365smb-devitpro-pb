@@ -70,7 +70,6 @@ Validation errors should answer the following questions:
 **Body content:** [How to fix it]  
 **Button label:** [Clear action]  
 
-
 ## Error message voice guidelines – how to say it?
 
 Use the following guidelines to remove friction for the users and positively affect the user experience, even when an error occurs. 
@@ -151,7 +150,7 @@ As the designer of an error dialog, you have two elements where you can communic
 
 As described in the section [Error message best practices - what to say?](#error-message-best-practices-error-dialogs) above, you can use a title to communicate *What went wrong* in a short format. Learn more in [Visual elements of the error dialog](devenv-error-dialog.md#visual-elements-of-the-error-dialog-2023-release-wave-1-and-later).
 
-If needed, you can format the error message text into multiple lines by separating words with the backslash character "\\". A rule of thumb is to add extra line breaks when the dialog text ends with a question, for example, "Are you sure you want to cancel the operation?" When the error dialog is short and ends with an **OK** button, you usually shouldn't break it up.
+If needed, you can format the error message text into multiple lines by separating words with the backslash character `\\`. A rule of thumb is to add extra line breaks when the dialog text ends with a question, for example, "Are you sure you want to cancel the operation?" When the error dialog is short and ends with an **OK** button, you usually shouldn't break it up.
 
 ## Related information
 
