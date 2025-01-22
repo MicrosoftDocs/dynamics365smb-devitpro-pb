@@ -386,6 +386,7 @@
 ##### [Managing cloud migration](administration/migration-manage.md)
 #### Prepare
 ##### [Upgrade to Business Central v14](upgrade/Upgrade-Considerations.md#online)
+##### [Migrating Business Central on-premises companies to live tenants](administration/migrate-companies-live-tenant)
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare.md)
 ##### [Estimate data size in online tenant](administration/cloud-migration-estimate-compressed-data-size.md)
 ##### [Prerequisites for cloud migration](administration/cloud-migration-prerequisites.md)
