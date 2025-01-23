@@ -392,7 +392,7 @@
 ##### [Align SQL table definitions](administration/migration-align-table-definitions.md)
 ##### [Clean data for cloud migration](administration/migration-clean-data.md)
 ##### [Optimize cloud migration performance](administration/migration-optimize-replication.md)
-##### [Migrating on-premises companies to live tenants](administration/migrate-companies-live-tenant)
+##### [Migrating on-premises companies to live tenants](administration/migrate-companies-live-tenant.md)
 #### Set up cloud migration
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
 ##### [Define migration table mappings](administration/migration-table-mapping.md)
