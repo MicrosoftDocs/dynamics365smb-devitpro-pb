@@ -393,6 +393,7 @@
 ##### [Align SQL table definitions](administration/migration-align-table-definitions.md)
 ##### [Clean data for cloud migration](administration/migration-clean-data.md)
 ##### [Optimize cloud migration performance](administration/migration-optimize-replication.md)
+##### [Migrating on-premises companies to live tenants](administration/migrate-companies-live-tenant)
 #### Set up cloud migration
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
 ##### [Define migration table mappings](administration/migration-table-mapping.md)
@@ -1400,7 +1401,7 @@
 ### [Auditing data changes](/dynamics365/business-central/across-log-changes)
 ### [Security auditing](security/security-auditing.md)
 ### [Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes?toc=/dynamics365/business-central/dev-itpro/toc.json#analyze-data-in-the-change-log) 
-### [Auditing in Purview](auditing/audit-events-in-purview.md)
+### [Auditing in Microsoft Purview](auditing/audit-events-in-purview.md)
 <!-- end Security, privacy, and compliance -->
 
 <!-- begin performance -->
