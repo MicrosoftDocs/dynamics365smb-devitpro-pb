@@ -92,17 +92,20 @@ String += "World";
 
 ## Method statements
 
-You use method statements to run either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 
+You use method statements to run either built-in system methods or user-defined (custom) methods. Method calls might include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 
 
 ## AssertError statements
 
-You use AssertError statements in test methods to test how your application behaves under failing conditions. The `AssertError` keyword specifies that an error is expected at run time in the statement that follows the `AssertError` keyword.  
+You use AssertError statements in test methods to test how your application behaves under failing conditions. The `AssertError` keyword specifies that an error is expected at runtime in the statement that follows the `AssertError` keyword. 
+
+> [!NOTE]
+> `AssertError` expects any type of error including UI error messages.
 
 If a simple or compound statement that follows the AssertError keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GetLastErrorText method](./methods-auto/library.md).  
 
-If a statement that follows the AssertError keyword doesn't cause an error, then the AssertError statement causes the following error and the test method that is running produces a FAILURE result:  
+If a statement that follows the `AssertError` keyword doesn't cause an error, then the `AssertError` statement causes the following error and the test method that is running produces a FAILURE result:  
 
-```AL
+```
 TestAsserterrorFail: FAILURE
 
 An error was expected inside an AssertError statement.
@@ -113,27 +116,23 @@ An error was expected inside an AssertError statement.
 To create a test method to test the result of a failure of a `CheckDate` method that you've defined, you can use the following code. This example requires that you create a method called `CheckDate` to check whether the date is valid for the customized application.  
 
 ```AL  
-InvalidDate := 19000101D;  
-InvalidDateErrorMessage := Text001;  
-AssertError CheckDate(InvalidDate);  
-
-IF GetLastErrorText <> InvalidDateErrorMessage then
-  Error('Unexpected error: %1', GetLastErrorText);  
-```  
-
-This example requires the following variables.
-
-```AL  
 var
     InvalidDate : Date;
     InvalidDateErrorMessage : Text; 
     Text001 : Label 'The date is outside the valid date range.';
+
+InvalidDate := 19000101D;  
+InvalidDateErrorMessage := Text001;  
+AssertError CheckDate(InvalidDate);  
+
+if GetLastErrorText <> InvalidDateErrorMessage then
+  Error('Unexpected error: %1', GetLastErrorText);  
 ```  
 
 ## With statements (to be deprecated)
 
 > [!IMPORTANT]  
-> Using the `with` statement is being deprecated with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2020, release wave 2. With this release it is a warning, which will become an error in a future release. <br>Using `with` statements introduces possible uniqueness collisions when multiple extensions contribute to the same objects because it allows working with members using just simple names instead of qualifying them. To avoid this going forward, we are marking the use of `with`, be it implicit or explicit as warnings. With this release, you can use a quick action to fix these files, as well as suppress obsolete warnings for now. Code that contains `with` statements will, however, need to be refactored before `with` statements are compiled with errors. For more information, see [Deprecating Explicit and Implicit With Statements](devenv-deprecating-with-statements-overview.md). For information about using directives in code, see [Directives in AL](directives/devenv-directives-in-al.md) and [Pragma ImplicitWith Directive in AL](directives/devenv-directive-pragma-implicitwith.md).
+> Using the `with` statement is being deprecated with [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2020, release wave 2. With this release it's a warning, which will become an error in a future release. <br>Using `with` statements introduces possible uniqueness collisions when multiple extensions contribute to the same objects because it allows working with members using simple names instead of qualifying them. To avoid this going forward, we're marking the use of `with`, be it implicit or explicit as warnings. With this release, you can use a quick action to fix these files, and suppress obsolete warnings for now. Code that contains `with` statements will, however, need to be refactored before `with` statements are compiled with errors. For more information, see [Deprecating Explicit and Implicit With Statements](devenv-deprecating-with-statements-overview.md). For information about using directives in code, see [Directives in AL](directives/devenv-directives-in-al.md) and [Pragma ImplicitWith Directive in AL](directives/devenv-directive-pragma-implicitwith.md).
 
 The following syntax shows a with-do statement.  
 
