@@ -37,7 +37,7 @@ These are some best practices we recommend that you follow:
 
 - Make sure to always back up your key and store it securely. Use the [System.ExportEncryptionKey method](methods-auto/system/system-exportencryptionkey-method.md) and keep the output file in a secure location.  
 - Use the [!INCLUDE [prod_short](includes/prod_short.md)] permission system to restrict access to encryption key logic.  
-- Be aware of the difference between the [System.EncryptionKeyExists method](methods-auto/system/system-encryptionkeyexists-method.md) and [System.EncryptionKeyEnabled method](methods-auto/system/system-encryptionkeyenabled-method.md).
+- Be aware of the difference between the [System.EncryptionKeyExists method](methods-auto/system/system-encryptionkeyexists-method.md) and [System.EncryptionKeyEnabled method](methods-auto/system/system-encryptionenabled-method.md).
 
 ### EncryptionKeyExists versus EncryptionKeyEnabled
 
