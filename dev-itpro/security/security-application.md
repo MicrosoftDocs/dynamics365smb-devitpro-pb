@@ -22,6 +22,8 @@ Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod
 
 [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)
 
+[Audit user administration events in Microsoft Purview](../auditing/audit-events-in-purview.md#administered-user-activities)
+
 <!-- [User Authentication](user-security.md#user-authentication)  -->
 
 [Set up Business Central Access with Microsoft 365 Licenses](/dynamics365/business-central/admin-access-with-m365-license)
@@ -37,6 +39,8 @@ The authentication method configured for Business Central Server is also used to
 After a user is authenticated, authorization determines which areas the user can access, such as the pages and reports they can open and the permissions they have on associated data. For more information, see the following articles:
 
 [User Permissions in the Application](user-security.md#user-permissions-in-the-application)
+
+[Audit permission administration events in Microsoft Purview](../auditing/audit-events-in-purview.md#administered-user-activities)
 
 [Analyzing Permission Changes Trace Telemetry](../administration/telemetry-permission-changes-trace.md)
 
