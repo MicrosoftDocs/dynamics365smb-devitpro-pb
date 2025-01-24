@@ -1,5 +1,6 @@
 ---
 title: DataItemLink Property (Query)
+description: Sets a reference between one or more fields of the data item table and data item or data items above it.
 ms.date: 01/08/2025
 ms.topic: reference
 author: jswymer

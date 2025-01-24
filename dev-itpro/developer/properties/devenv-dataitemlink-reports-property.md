@@ -1,5 +1,6 @@
 ---
 title: DataItemLink Property (Reports)
+description: Sets the corresponding fields from two data items that are linked by the DataItemLinkReference property. The link is defined as a property of the child data item.
 ms.date: 01/08/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
