@@ -5,7 +5,6 @@ ms.date: 01/08/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 author: blrobl
-author: SusanneWindfeldPedersen
 ---
 
 # Create handler methods
