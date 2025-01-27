@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Deleted objects in 2025 release wave 1  
 
-Microsoft is doing some housekeeping in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and will introduce a significant change in April with 2025 release wave 1 (v26). The tables and fields in this article been in the **Obsolete::Removed** state for more than one major release, and will be permanently deleted. This sweeping clean-up will affect the Base Application and all first-party apps. Over 150 tables have been removed to optimize and clean up the application code.
+Microsoft is doing some housekeeping in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and will introduce a significant change in April with 2025 release wave 1 (v26). The tables and fields in this article have been in the **Obsolete::Removed** state for more than one major release, and will be permanently deleted. This sweeping clean-up will affect the Base Application and all first-party apps. Over 150 tables have been removed to optimize and clean up the application code.
 
 To ensure a smooth transition, Microsoft will adopt a clean-up cycle every fifth major release. This article describes what you need to know about these changes and how to prepare your applications.
 
