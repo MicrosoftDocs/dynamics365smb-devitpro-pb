@@ -18,7 +18,7 @@ The **E-Document Core** module is created as an extension and built as a framewo
 Additionally, when you explore the **Service Integration** option, you find several choices available. However, if there's a need to add your own service, whether it's a local connector or another global or regional connector, you can extend this app by adding new services based on your requirements. This can be done as part of localization or as a new ISV app.
 
 > [!NOTE]
-> The updated interface will be available starting with the 2025 release wave 1 (v26.0).
+> The updated interface will be available from Business Central 2025 release wave 1 (v26.0).
 
 ## Develop an e-documents extension  
 
