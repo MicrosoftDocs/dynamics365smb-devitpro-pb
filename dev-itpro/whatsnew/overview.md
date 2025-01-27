@@ -28,7 +28,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
-|25.3|Application Build 25.3 Platform Build 25.2|December 2024|[Update 25.2 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-3.md)|
+|25.3|Application Build 25.3 Platform Build 25.2|December 2024|[Update 25.3 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-3.md)|
 |25.2|Application Build 25.2 Platform Build 25.2|December 2024|[Update 25.2 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-2.md)|
 |25.1|Application Build 25.1 Platform Build 25.0|November 2024|[Update 25.1 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-1.md)|
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
