@@ -1870,9 +1870,9 @@ To explore the list of deleted objects in the W1 Base Aapp, go to [Obsoletions f
 
 ### Deleted fields from table extension objects in the BCApps GitHub repo 
 
-|Table Extension ID |Table Extension Name | Source Table Name | Field ID |Field Name |
+| Table Extension ID | Table Extension Name | Source Table Name | Field ID | Field Name |
 |-------|--------------------------------|---------------|---------------|------------------------------| 
-|	308	|	NoSeriesObsolete	|	308	|	"No. Series"	|	11790	|	Mask	|
+|	308	|	NoSeriesObsolete	|	308	|	"No. Series"	|	11790	|	Mask	|                           |  
 |	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	11200	|	"Inward Registration"	|
 |	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	11760	|	"Purchase VAT Delay"	|
 |	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	11761	|	"Sales VAT Delay"	|
@@ -1885,7 +1885,7 @@ To explore the list of deleted objects in the W1 Base Aapp, go to [Obsoletions f
 |	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	31041	|	"Maintenance Adjustment"	|
 |	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	31050	|	Credit	|
 |	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	5005350	|	"Phys. Invt. Order"	|
-|	230	|	ObsoleteSourceCodeExt	|	230	|	"Source Code"	|	10620	|	"SAFT Source Code"	|
+|	230	|	ObsoleteSourceCodeExt	    |	230	|	"Source Code"	    |	10620	|	"SAFT Source Code"	|
 
 
 ## Related information
