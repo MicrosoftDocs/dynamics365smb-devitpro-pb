@@ -1716,6 +1716,7 @@
 ### [Overview of deprecated features in the platform](upgrade/deprecated-features-platform.md)
 ## Application
 ### [Overview of deprecated features in the base app](upgrade/deprecated-features-w1.md)
+### [Deleted objects in 2025 release wave 1](upgrade/deleted-objects-25w1.md)
 ### Examples of how to uptake deprecations
 #### [Migrate from User Groups to Permission Sets or Security Groups](upgrade/deprecated-features-user-groups.md)
 #### [Migrating from legacy views to modern views](developer/devenv-views-legacy.md)
