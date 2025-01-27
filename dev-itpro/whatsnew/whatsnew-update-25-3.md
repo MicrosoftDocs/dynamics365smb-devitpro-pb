@@ -2,7 +2,7 @@
 title: Update 25.3 for Microsoft Dynamics 365 Business Central 2024 release wave 2
 description: Get an overview of new and changed capabilities in the 25.3 update of Business Central online, which is part of 2024 release wave 2.
 ms.author: jswymer
-ms.date: 01/17/2025
+ms.date: 01/27/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -16,7 +16,7 @@ Would you like to know what changes are in update 25.3? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes at [Update 25.3 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5050249). Expect the download files for on-premises by **January 24, 2025**.
+Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 25.3 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5050249).
 
 ## Feature changes
 
