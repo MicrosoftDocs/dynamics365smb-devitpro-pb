@@ -28,7 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|[5050247](https://support.microsoft.com/help/5050247)|Update 23.15 |January 2025|Application Build 23.15</br>Platform Build 23.0.|
+|[5050247](https://support.microsoft.com/help/5050247)|Update 23.15 |January 2025|Application Build 23.15.29402</br>Platform Build 23.0.29370|
 |[5049394](https://support.microsoft.com/help/5049394)|Update 23.14 |December 2024|Application Build 23.14.27722</br>Platform Build 23.0.27674|
 |[5047902](https://support.microsoft.com/help/5047902)|Update 23.13 |November 2024|Application Build 23.13.25917</br>Platform Build 23.0.25896|
 |[5046145](https://support.microsoft.com/help/5046145)|Update 23.12 |October 2024|Application Build 23.12.24784</br>Platform Build 23.0.24742|
