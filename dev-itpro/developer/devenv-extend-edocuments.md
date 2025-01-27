@@ -7,7 +7,7 @@ ms.reviewer: solsen
 ms.devlang: al
 ms.search.keywords: electronic document, electronic invoice, e-documents, e-invoice, customization, development, extend
 ms.search.form: 6103, 6133
-ms.date: 12/16/2024
+ms.date: 01/27/2025
 ms.author: altotovi
 ---
 
