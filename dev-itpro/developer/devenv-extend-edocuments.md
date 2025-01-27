@@ -7,7 +7,7 @@ ms.reviewer: solsen
 ms.devlang: al
 ms.search.keywords: electronic document, electronic invoice, e-documents, e-invoice, customization, development, extend
 ms.search.form: 6103, 6133
-ms.date: 12/16/2024
+ms.date: 01/27/2025
 ms.author: altotovi
 ---
 
@@ -16,6 +16,9 @@ ms.author: altotovi
 The **E-Document Core** module is created as an extension and built as a framework. Therefore, by default, there are just a few **Document Formats**, which are based on the localization you're using. This detail, and others, are mostly components of localization apps, which cater to specific local requirements. This framework is intended to cover most requirements for the process of communication with electronic documents (e-documents). However, some parts are left for localization apps. The information in this article helps you add value to this module and use it for your own localization.  
 
 Additionally, when you explore the **Service Integration** option, you find several choices available. However, if there's a need to add your own service, whether it's a local connector or another global or regional connector, you can extend this app by adding new services based on your requirements. This can be done as part of localization or as a new ISV app.
+
+> [!NOTE]
+> The updated interface will be available from Business Central 2025 release wave 1 (v26.0).
 
 ## Develop an e-documents extension  
 
