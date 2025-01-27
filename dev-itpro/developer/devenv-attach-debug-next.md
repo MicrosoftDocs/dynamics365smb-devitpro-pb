@@ -1,6 +1,6 @@
 ---
-title: "Attach and debug next"
-description: "Attach to a session on a specified server and debug for Web API sessions."
+title: Attach and debug next
+description: Attach to a session on a specified server and debug for Web API sessions.
 ms.custom: bap-template
 ms.date: 01/10/2024
 ms.reviewer: solsen
