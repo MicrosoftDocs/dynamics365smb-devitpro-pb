@@ -1871,22 +1871,21 @@ To explore the list of deleted objects in the W1 Base Aapp, go to [Obsoletions f
 ### Deleted fields from table extension objects in the BCApps GitHub repo 
 
 | Table Extension ID | Table Extension Name | Source Table Name | Field ID | Field Name |
-|-------|--------------------------------|---------------|---------------|------------------------------| 
-|	308	|	NoSeriesObsolete	|	308	|	"No. Series"	|	11790	|	Mask	|                           |  
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	11200	|	"Inward Registration"	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	11760	|	"Purchase VAT Delay"	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	11761	|	"Sales VAT Delay"	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	11762	|	"VAT Coefficient"	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	11764	|	"Close Balance Sheet"	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	11765	|	"Open Balance Sheet"	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	11766	|	"Cash Desk"	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	12450	|	"Item Receipt"	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	12451	|	"Item Shipment"	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	31041	|	"Maintenance Adjustment"	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	31050	|	Credit	|
-|	242	|	ObsoleteSourceCodeSetupExt	|	242	|	"Source Code Setup"	|	5005350	|	"Phys. Invt. Order"	|
-|	230	|	ObsoleteSourceCodeExt	    |	230	|	"Source Code"	    |	10620	|	"SAFT Source Code"	|
-
+|-------|-------------------------------|-----------------------|-----------|---------------------------| 
+|	308	|	NoSeriesObsolete	        |	"No. Series"        |   11790	|    Mask                   |                             
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	11200	|	"Inward Registration"	|
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	11760	|	"Purchase VAT Delay"	|
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	11761	|	"Sales VAT Delay"	    |
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	11762	|	"VAT Coefficient"	    |
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	11764	|	"Close Balance Sheet"	|
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	11765	|	"Open Balance Sheet"	|
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	11766	|	"Cash Desk"	            |
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	12450	|	"Item Receipt"	        |
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	12451	|	"Item Shipment"	        |
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	31041	|	"Maintenance Adjustment" |
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	31050	|	Credit	                |
+|	242	|	ObsoleteSourceCodeSetupExt	|	"Source Code Setup"	|	5005350	|	"Phys. Invt. Order"	    |
+|	230	|	ObsoleteSourceCodeExt	    |	"Source Code"	    |	10620	|	"SAFT Source Code"	    |
 
 ## Related information
 
