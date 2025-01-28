@@ -32,13 +32,13 @@ The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits 
 - The maximum number of documents that can be merged in a report using a Word layout.
 - The maximum execution time that it can take to generate a report.
 
-Learn more in [Report limits](devenv-report-object.md#report-limits)
+Learn more in [Report limits](devenv-report-object.md#report-limits).
 
 ## Fonts don't show in the PDF/print
 
 If a report renders correctly with fonts in an on-premises environment or a local sandbox but renders without the font in [!INCLUDE[prod_short](includes/prod_short.md)] online, the layout might use an unsupported font.
 
-Learn more in [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json)
+Learn more in [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json).
 
 ## Troubleshooting report datasets and layouts
 
