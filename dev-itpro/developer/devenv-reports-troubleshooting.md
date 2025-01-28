@@ -17,7 +17,7 @@ If reports fail to generate or take too long time to generate, you might need to
 
 As described in the [Report Object](devenv-report-object.md) article, a report has code for its dataset, typically a layout used for rendering a document (Excel, Word, or PDF) and a request page. When the report runs, your AL code might call methods on the report object (static or on the report instance) and/or run code in triggers/event subscribers on report events.
 
-A report in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can fail in either of these phases:
+A report in [!INCLUDE[prod_short](includes/prod_short.md)] can fail in either of these phases:
 
 - In the request page
 - When generating the report dataset
@@ -32,6 +32,12 @@ The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits 
 - The maximum execution time that it can take to generate a report.
 
 For more information on report limits, see [Report limits](devenv-report-object.md#report-limits)
+
+## Fonts
+
+If a report renders OK with fonts in an on-premises environment or on a local sandbox, but renders without the font in [!INCLUDE[prod_short](includes/prod_short.md)] online, it might be that the layout is using an unsupported font. 
+
+For more information on report limits, see [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
 ## Troubleshooting report datasets and layouts
 
