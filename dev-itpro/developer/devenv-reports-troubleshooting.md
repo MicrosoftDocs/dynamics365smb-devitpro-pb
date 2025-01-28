@@ -33,7 +33,7 @@ The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits 
 
 For more information on report limits, see [Report limits](devenv-report-object.md#report-limits)
 
-## Fonts
+## Fonts do not show in the PDF/print
 
 If a report renders OK with fonts in an on-premises environment or on a local sandbox, but renders without the font in [!INCLUDE[prod_short](includes/prod_short.md)] online, it might be that the layout is using an unsupported font. 
 
