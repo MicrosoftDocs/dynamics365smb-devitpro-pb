@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses can only be purchased through CSP. Microsoft offers several types of paid licenses for business users:
 
-- Essential  
+- Essentials  
 - Premium  
 - Team Member  
 - External Accountant  
@@ -28,7 +28,7 @@ Prospects and customers can also subscribe for an evaluation version by using se
 
 Behind the scenes, the **Entitlements** table defines license permissions per object. Entitlements are grouped in the **Entitlement Set** table, and then each entitlement set is associated with one of the four Microsoft Entra ID service plans.  
 
-This condition means that when a user purchases, for example, an Essential license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essential) from Microsoft Entra ID. Then, we load the corresponding entitlements as license permissions.  
+This condition means that when a user purchases, for example, an Essentials license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essentials) from Microsoft Entra ID. Then, we load the corresponding entitlements as license permissions.  
 
 > [!NOTE]
 > For more information about the different types of licenses and how licensing works in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], see the Dynamics 365

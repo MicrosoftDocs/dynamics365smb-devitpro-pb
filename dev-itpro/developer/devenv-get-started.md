@@ -100,4 +100,4 @@ Now that you have the tools and the `HelloWorld` example up and running, you mig
 [Syntax](devenv-syntax.md)  
 [Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md)  
 [AL Language extension configuration](devenv-al-extension-configuration.md)  
-[XML comments in code](devenv-xml-comments.md)
+[Documenting your code with XML comments](devenv-xml-comments.md)

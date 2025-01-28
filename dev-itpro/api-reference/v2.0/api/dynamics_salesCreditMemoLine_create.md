@@ -29,7 +29,6 @@ POST businesscentralPrefix/companies({id})/salesCreditMemoLines({salesCreditMemo
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **salesCreditMemoLine**, the **salesCreditMemoLine** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **salesCreditMemoLines** object.

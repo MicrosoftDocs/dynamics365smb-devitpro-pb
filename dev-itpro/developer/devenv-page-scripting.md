@@ -1,6 +1,6 @@
 ---
 title: Use page scripting tool for acceptance testing (preview)
-description: Learn how to use the page scripting tool in the Business Central web client to record and replay your interaction with the user interface (UI).
+description: Learn how to use the page scripting tool in the Business Central web client to record and replay your interaction with the user interface (UI)
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The page scripting tool in the Business Central web client lets you record your interactions with the user interface (UI), such as opening pages, selecting actions, filling in fields, and so on. You can then replay the recording to automatically replicate the exact same actions in the UI that were done during recording. As the recording is replayed, you receive real-time status feedback on whether an action succeeds or fails.
+The page scripting tool in the Business Central web client lets you record your interactions with the user interface (UI), such as opening pages, selecting actions, and filling in fields. You can then replay the recording to automatically replicate the exact same actions in the UI that were done during recording. As the recording is replayed, you receive real-time status feedback on whether an action succeeds or fails.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
@@ -21,7 +21,7 @@ The page scripting tool in the Business Central web client lets you record your 
 
 A primary use of the page scripting tool is testing business processes and scenarios in the application and validating they continue to work as expected after changes or updates to the application. This testing is often referred to as user acceptance testing (UAT). The page scripting tool makes the testing easier and faster because it eliminates the need to manually go through each scenario in the UI.
 
-You can use the page scripting on any Business Central environment type, including on-premises, online (production and sandbox), and docker.
+You can use the page scripting on any Business Central environment type, including on-premises, online (production and sandbox), and Docker.
 
 ## What is captured?
 
@@ -39,7 +39,7 @@ You can start the page scripting tool from the role central or any page. In the 
 
 The **Page Scripting** pane opens on the right side, as illustrated in the following figure:
 
-:::image type="content" source="media/page-scripting-2.svg" alt-text="Shows the page scripting pane in Business Central.":::
+:::image type="content" source="media/page-scripting-2.svg" alt-text="Screenshot of the page scripting pane in Business Central.":::
 
 Now you're ready to start a new recording or play an existing recording. 
 
@@ -65,19 +65,19 @@ The sections that follow explain other capabilities of the page scripting tool f
 
 ## Record
 
-This section outlines the basic steps to making a recording with the page scripting tool. Sections that follow explain specific details and aspects about recording. 
+This section outlines the basic steps to make a recording with the page scripting tool. Sections that follow explain specific details and aspects about recording. 
   
 1. Open the page where you want to start recording.
 
-1. In the **Page Scripting** pane, select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) button in the control bar at the top.
+1. Select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) button in the control bar at the top of the **Page Scripting** pane.
 
    The **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar turns red to indicate that you're recording.
 
 1. Go back to the page and run through the task that you want to record.
 
-   As you interact with the application, your interactions actions and the resulting actions done by the application itself are added in sequence as steps in the **Page Scripting** pane.
+   As you use the application, your actions and the application’s responses are added in sequence as steps in the **Page Scripting** pane.
 
-1. At any time during recording, you can do the following actions.
+1. At any time during recording, you can perform the following actions:
 
    - To pause recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button in the control bar.
    - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar.
@@ -211,16 +211,16 @@ You can share a recording or a playback as a link (URL) that you can share with 
 
 ## Best practices, tips, and considerations
 
-- Start recording from a familiar place: Begin recording from a well-known location, such as the role center. Remember, the playback always starts from the current page.
-- Filter grid selections: When you're selecting a value in a grid, filter it so that the desired value appears first.
-- Create new entities: Whenever possible, create new entities to use in a test. For example, create a new customer for the new sales order test.
-- Avoid dependencies on data: Try not to depend on data that might not be available during playback.
-- Break down recordings: Divide recordings into smaller parts for easier maintenance. For example:
+- Begin recording from a well-known location, such as the role center. Remember, the playback always starts from the current page.
+- When you're selecting a value in a grid, filter it so that the desired value appears first.
+- Whenever possible, create new entities to use in a test. For example, create a new customer for the new sales order test.
+- Try not to depend on data that might not be available during playback.
+- Divide recordings into smaller parts for easier maintenance. For example:
   - Recording 1: setup user.
   - Recording 2: create customer.
   - Recording 3: create sales order.
   - Recording 4: post sales order.
-- Avoid multiple line selections: Multiple line selections aren't recorded as expected. If you select multiple records in a list during a recording, only the last line selection is recorded and played back.
+- Multiple line selections aren't recorded as expected. If you select multiple records in a list during a recording, only the last line selection is recorded and played back.
 
 ## Run page scripts in pipelines
 

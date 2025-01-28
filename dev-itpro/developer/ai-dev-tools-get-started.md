@@ -26,14 +26,14 @@ This article explains the tasks that must be completed so that you can start int
    Learn more at [Role-based access control for Azure OpenAI Service](/azure/ai-services/openai/how-to/role-based-access-control).
 1. Create Azure OpenAI Service resource and deploy a model.
 
-   This task is done using [Azure portal](https://portal.azure.com) and [Azure AI Studio](https://oai.azure.com/). Learn more at [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource).
+   This task is done using [Azure portal](https://portal.azure.com) and [Azure AI Foundry portal](https://oai.azure.com/). Learn more at [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource).
 
    After you complete this step, you can start to develop your Copilot experience, which requires the following information about the resource and deployed model:
 
    |What|Where to find it|
    |-|-|
    |Azure OpenAI API key and endpoint (URL)|**Keys and Endpoint** page for the resource in the Azure portal.|
-   |Deployment name for the model|**Deployments** page in Azure AI Studio.|
+   |Deployment name for the model|**Deployments** page in Azure AI Foundry portal.|
 
 ## Next steps
 

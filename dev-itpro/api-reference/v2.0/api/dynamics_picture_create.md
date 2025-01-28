@@ -29,7 +29,6 @@ PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/pictu
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **picture**, the **picture** will not be updated. |
 
 
 ## Request body

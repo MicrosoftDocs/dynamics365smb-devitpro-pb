@@ -95,7 +95,7 @@ landingContent:
       links:
       - text: Microsoft responsible AI 
         url: https://aka.ms/RAI
-      - text: Azure AI Studio for quick experimentation 
+      - text: Azure AI Foundry portal for quick experimentation 
         url: https://aka.ms/OAIstudio
       - text: Microsoft Azure learning courses on responsible AI
         url: /ai/

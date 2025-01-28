@@ -1,5 +1,3 @@
-## Save copies of server configuration files
-
 It's a good idea to save copies of the configuration files for the [!INCLUDE[server](server.md)] instance (CustomSettings.config) and [!INCLUDE[webserverinstance](webserverinstance.md)] instances (navsettings.json and web.config). Having copies will help you configure the components after upgrade to match the setup you had before upgrade.
 
 - For the [!INCLUDE[server](server.md)] instance, the default location of the CustomSettings.config file is C:\Program Files\Microsoft Dynamics 365 Business Central\NNN\Service.

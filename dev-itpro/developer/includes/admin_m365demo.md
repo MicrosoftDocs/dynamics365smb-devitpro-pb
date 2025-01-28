@@ -10,7 +10,7 @@ ms.author: jswymer
 1. As the type, select **Quick Tenant**.
 1. As the period, select **90 days**. You can't select **1 year**.
 
-    Your account in CDX has access to a limited quota of tenants that can last three months (90 days) or a full year. Learn more at [CDX FAQ](https://cdx.transform.microsoft.com/help/faq).  
+    Your account in CDX has access to a limited quota of tenants that can last three months (90 days). Learn more at [CDX FAQ](https://cdx.transform.microsoft.com/help/faq).  
 1. As the location, choose the region that is closest to your location.
 
     This setting determines the location in which the tenant is deployed, but you can add [!INCLUDE [prod_short](prod_short.md)] environments to it for any country/region afterwards.  
