@@ -43,43 +43,54 @@ For on-premises environments, there are different options for deploying the add-
 
 ### Mail server
 
-The add-in deployment works with Exchange Online, Exchange Online as part of Microsoft 365, and Exchange Server 2019. The add-in uses Exchange Web Services (EWS) to access mailbox data from Exchange Online or Exchange Server.
+The add-in deployment works with Exchange Online, Exchange Online as part of Microsoft 365, and Exchange Server 2019. The add-in uses Exchange Web Services (EWS) to access mailbox data from Exchange Server, while Microsoft Entra Identity Provider and Microsoft Graph are used to access data from Exchange Online.
+
+The add-in uses Exchange Web Services (EWS) to access mailbox data from Exchange Online or Exchange Server.
 
 ### Authentication and authorization
 
-The authentication and authorization that can be used will depend on whether you're using Exchange Online or Exchange Server.
+The authentication and authorization that can be used depends on whether you're using Exchange Online or Exchange Server.
 
-- In Exchange Online, standalone or as part of Microsoft 365, EWS uses OAuth2 as an authorization protocol. OAuth2 doesn't share password data but instead uses authorization tokens to prove an identity between consumers and service providers. It allows users to approve one application interacting with another on their behalf without giving away your password. The Business Central add-in for Outlook supports multi-factor authentication if that has been configured in Microsoft 365. With Exchange Online, Business Central must be configured to use Microsoft Entra authentication.
+#### [Exchange Online](#tab/exchangeonline)
 
-- With Exchange Server, EWS and Autodiscover will try to find the local Exchange Server. In this case, Business Central can be configured to use either NavUserPassword or Microsoft Entra authentication.
+To use Exchange Online, configure Business Central to use Microsoft Entra authentication. The Business Central add-in uses NAA (Nested App Authentication) for a secure, single sign-on experience with Outlook and your users' Entra ID account. It also supports multi-factor authentication if configured in Microsoft 365.
+
+#### [Exchange Server](#tab/exchangeserver)
+
+With Exchange Server, EWS and Autodiscover try to find the local Exchange Server. Business Central can be configured to use either NavUserPassword or Microsoft Entra authentication.
+
+---
 
 ## Prepare for deployment
 
-The steps you'll need to go through to prepare for deploying the add-in will depend on whether you intend on deploying to Microsoft 365 or Exchange Server.
+The steps to prepare for deploying the add-in depend on whether you plan to deploy to Exchange Online or Exchange Server.
 
-### [Deploying to Microsoft 365?](#tab/m356)
+### [Deploying to Exchange Online](#tab/m356)
 
 1. Prepare Microsoft 365
 
-    - Assign users a Microsoft 365 license.
-    - Make sure your Microsoft 365 account has at least the **Exchange Administrator** role.
+   - Assign users a Microsoft 365 license.
+   - Make sure your Microsoft 365 account has at least the **Exchange Administrator** role.
 
 2. Prepare Business Central
 
-    - Set up Microsoft Entra authentication.
+   - Set up Microsoft Entra authentication.
 
-       Learn more in [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
-    - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
+      Learn more in [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
+
+   - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
 
       Learn more in [Configure SSL to secure the connection to web client](../deployment/configure-ssl-web-client-connection.md).
-    - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
+
+   - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
       Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
-    - Set the authentication email on user accounts to the user's Microsoft 365 email address.
+
+   - Set the authentication email on user accounts to the user's Microsoft 365 email address.
 
       Learn more in [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality help.
 
-### [Deploying to Exchange Server?](#tab/exchange)
+### [Deploying to Exchange Server](#tab/exchange)
 
 1. Prepare Exchange Server
 
@@ -90,13 +101,17 @@ The steps you'll need to go through to prepare for deploying the add-in will dep
 
     - Set up Microsoft Entra authentication or NavUserPassword.
 
-      For more information, see [Authenticating Business Central Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
+      Learn more in [Authenticating issers with Microsoft Entra ID](authenticating-users-with-azure-ad-openid-connect.md) or [Authenticating users with NavUserPassword](authenticating-users-with-navuserpassword.md)
+
     - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
 
-      For more information, see [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
+      Learn more in [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
     - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
-      For more information, see [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
+      Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
+    - Configure the Business Central web server instance to work with Exchange Online 
+
+      Learn more in <link to further below>.
 
 ---
 
