@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
 ### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
 ### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 ### Updates for earlier major versions
@@ -1716,6 +1717,7 @@
 ### [Overview of deprecated features in the platform](upgrade/deprecated-features-platform.md)
 ## Application
 ### [Overview of deprecated features in the base app](upgrade/deprecated-features-w1.md)
+### [Deleted objects in 2025 release wave 1](upgrade/deleted-objects-25w1.md)
 ### Examples of how to uptake deprecations
 #### [Migrate from User Groups to Permission Sets or Security Groups](upgrade/deprecated-features-user-groups.md)
 #### [Migrating from legacy views to modern views](developer/devenv-views-legacy.md)
