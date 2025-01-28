@@ -34,18 +34,18 @@ For more information about what you do with the add-ins, see [Using Business Cen
 
 ### About deployment
 
-The processes for deploying the add-ins are different for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises, though the add-ins are the same. This article describes how to get the add-ins for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises. For information about [!INCLUDE [prod_short](../includes/prod_short.md)] online, see [Get the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook) in the business functionality content.
+The processes for deploying the add-ins are different for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises, though the add-ins are the same. This article describes how to get the add-ins for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises. Learn about [!INCLUDE [prod_short](../includes/prod_short.md)] online deployment in [Get the Business Central add-in for Outlook](/dynamics365/business-central/admin-outlook).
 
-For on-premises environments, there are different options for deploying the add-ins. The option that you choose will depend on your organizations security policies, the Business Central environment, and how much control over installing the add-in that you want to give users. For example, you can choose to install the add-ins automatically for all users in your organization or targeted users only. Or, you can allow users to install the add-ins themselves. For more information about each deployment option, see [Centralized Deployment](#centralized-deployment), [Automated Individual Deployment](#automated-individual-deployment), and [Manual Individual Deployment](#manual-individual-deployment) in this article.
+There are different options for deploying the add-ins. The option you choose depends on your organization's security policies, the Business Central environment, and how much control over installing the add-in you want to give users. For example, you can install the add-ins automatically for all users in your organization or targeted users only. Or, you can allow users to install the add-ins themselves.
+
+For more information about each deployment option, see [Centralized Deployment](#centralized-deployment), [Automated Individual Deployment](#automated-individual-deployment), and [Manual Individual Deployment](#manual-individual-deployment) in this article.
 
 > [!IMPORTANT]
-> Working with multiple environments? The Business Central add-in for Outlook is designed to work with a single Business Central environment. When the add-in is installed, the name of the environment is included in the add-in's manifest. This configuration means that the add-in will only connect to the environment that it was installed from. To use the add-in with a different environment, you'll have to open the environment and install the add-in again.
+> Working with multiple environments? The Business Central add-in for Outlook works with a single Business Central environment. When installed, the environment name is included in the add-in's manifest. This configuration means the add-in will only connect to the environment it was installed from. To use the add-in with a different environment, open the environment and install the add-in again.
 
 ### Mail server
 
 The add-in deployment works with Exchange Online, Exchange Online as part of Microsoft 365, and Exchange Server 2019. The add-in uses Exchange Web Services (EWS) to access mailbox data from Exchange Server, while Microsoft Entra Identity Provider and Microsoft Graph are used to access data from Exchange Online.
-
-The add-in uses Exchange Web Services (EWS) to access mailbox data from Exchange Online or Exchange Server.
 
 ### Authentication and authorization
 
@@ -160,12 +160,23 @@ Use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamic
 
 ## Configure the Business Central web server instance to work with Exchange Online
 
-Use the [Set-NAVWebServerInstanceConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navwebserverinstanceconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] the to set the following settings on the web server instance:
+For this task, use the [Set-NAVWebServerInstanceConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navwebserverinstanceconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+
+Before you start, get the application (client) ID of the registered application used for Business Central in Microsost Entra. 
+
+to set the following settings on the web server instance:
 
 |KeyName|KeyValue|Example|
 |-|-|-|
-|ExchangeOnlineAppId|Specify the app ID for the Entra app you registered to connect Business Central to Outlook |01010101-1111-1111-1111-010101010101  |
-|ExchangeOnlineAppScope |<BC OnPrem app id>/<scope> |01010101-0101-0101-0101-010101010101/BusinessCentralOnPrem.Access |
+|ExchangeOnlineAppId|Specify the app ID for the Entra app you registered to connect Business Central to Outlook |00001111-aaaa-2222-bbbb-3333cccc4444  |
+|ExchangeOnlineAppScope |Specicy the Exchange Online app scope in the format: \<BC OnPrem app ID>\/\<scope\> |00001111-aaaa-2222-bbbb-3333cccc4444/BusinessCentralOnPrem.Access |
+
+Run the cmdlet for each setting using the following syntax:
+
+```powershell
+Set-NAVWebServerInstanceConfiguration -ServerInstance <BC server instance> -Tenant <tenant_ID> -KeyName <KeyName> -KeyValue <KeyValue> 
+```
+
 
 For more information on  
 
