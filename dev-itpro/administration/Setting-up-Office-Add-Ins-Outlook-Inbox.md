@@ -86,6 +86,10 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
       Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
 
+   - Configure the Business Central web server instance to work with Exchange Online 
+
+      Learn more in <link to further below>.
+
    - Set the authentication email on user accounts to the user's Microsoft 365 email address.
 
       Learn more in [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality help.
@@ -109,37 +113,37 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
     - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
       Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
-    - Configure the Business Central web server instance to work with Exchange Online 
-
-      Learn more in <link to further below>.
 
 ---
 
 #### <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins
 
-You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the **Set-NAVServerConfiguration** cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+You use either **Set-NAVServerConfiguration** cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
-1. In the [!INCLUDE[admintool](../developer/includes/admintool.md)], in the **Client Services** section, set the **Exchange Auth. Metadata Location** setting to the URL for the Exchange authentication metadata document of the authority that is allowed to sign the Exchange identity token.
+Use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
-    If you're using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) and set the `ExchangeAuthenticationMetadataLocation` key.
+1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+1. Run the `Set-NAVServerConfiguration` cmdlet to set the `ExchangeAuthenticationMetadataLocation` key.
 
-    ```powershell
-    Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname ExchangeAuthenticationMetadataLocation -Keyvalue <metadata document URL>
-    ```
+   ```powershell
+   Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname ExchangeAuthenticationMetadataLocation -Keyvalue <metadata document URL>
+   ```
 
-    This setting is used to confirm the identity of the signing authority when using Exchange authentication. In part, the value includes the URL of the Exchange mail server. The field accepts a wild-card URL. So for example, if the URL of the Exchange mail server is `https://mail.cronus.com`, then you can set the field to `https://mail.cronus.com*`. The default value is `https://outlook.office365.com/`.
+   This setting is used to confirm the identity of the signing authority when using Exchange authentication. In part, the value includes the URL of the Exchange mail server. The field accepts a wild-card URL. So for example, if the URL of the Exchange mail server is `https://mail.cronus.com`, then you can set the field to `https://mail.cronus.com*`. The default value is `https://outlook.office365.com/`.
 
-2. Set the **Web Client Base URL** setting to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
+1. Run the Set-NAVServerConfiguration cmdlet to set the `PublicWebBaseUrl` key to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
-   The base URL the public URL that can be used by Outlook clients to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The base URL is the root portion of all URLs that are used to access pages in the web client. It must have the format `https://[hostname:port]/[instance]`, such as `https://MyNavWebServer:443/BC130`.
-
-   With the Set-NAVServerConfiguration cmdlet, set the `PublicWebBaseUrl` key.
+   The base URL is the public URL that Outlook clients use to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The base URL is the root portion of all URLs that are used to access pages in the web client. It must have the format `https://[hostname:port]/[instance]`, such as `https://MyNavWebServer:443/BC130`.
 
     ```powershell
     Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname PublicWebBaseUrl -Keyvalue <web client URL>
     ```
 
-3. Set the **Valid Audiences** setting for Microsoft Entra ID to include the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], which is the web client base URL *without* the port number and server instance, like `https://MyNavWebServer`.
+1. Run the Set-NAVServerConfiguration cmdlet to set the `ValidAudiences` key to the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. The value is the web client base URL *without* the port number and server instance, like `https://MyNavWebServer`.
+
+    ```powershell
+    Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname ValidAudiences -Keyvalue <host name>
+    ```
 
    If you have a multitenant deployment that uses different host names for tenants, like `https://tenant1.cronusinternational.com`, you'll also have to register each host name as a valid audience. There are two ways you can do this:
 
@@ -153,6 +157,19 @@ You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)]
 
    > [!NOTE]
    > If there's more than one host name, separate each host name with a semi-colon. You can specify the host names on the server-level, tenant-level, or a combination of both.  
+
+## Configure the Business Central web server instance to work with Exchange Online
+
+Use the [Set-NAVWebServerInstanceConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navwebserverinstanceconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] the to set the following settings on the web server instance:
+
+|KeyName|KeyValue|Example|
+|-|-|-|
+|ExchangeOnlineAppId|Specify the app ID for the Entra app you registered to connect Business Central to Outlook |01010101-1111-1111-1111-010101010101  |
+|ExchangeOnlineAppScope |<BC OnPrem app id>/<scope> |01010101-0101-0101-0101-010101010101/BusinessCentralOnPrem.Access |
+
+For more information on  
+
+Restart the web server instance 
 
 ## <a name="centralized-deployment"></a>Centralized Deployment
 
