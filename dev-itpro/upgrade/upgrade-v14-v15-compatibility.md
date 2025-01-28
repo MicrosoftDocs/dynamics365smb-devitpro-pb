@@ -24,7 +24,7 @@ Before you choose the target version for your upgrade, read the [Some Known Issu
 
 ## Version 24 compatibility
 
-The following table lists the Business Central 23 versions and the minimum version of later releases that are compatible for upgrade.
+The following table lists the Business Central 24 versions and the minimum version of later releases that are compatible for upgrade.
 
 |V24 update|V25 update|
 |-|-|
