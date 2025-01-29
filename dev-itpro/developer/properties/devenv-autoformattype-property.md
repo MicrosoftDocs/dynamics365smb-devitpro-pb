@@ -23,18 +23,30 @@ Sets a value that determines how data is formatted, together with the AL express
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
+
 ```AL
 AutoFormatExpression = '<Currency Code>';
 AutoFormatType = 2;
 ```
 
-## Property Value  
+## Property value  
 
 `1`, `2`, `3`, `10`, or `11`. For an explanation of these values and examples, see [Formatting Decimal Values in Fields](../devenv-format-field-data.md).  
   
 
-## Remarks  
-These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios.  
+## Remarks
+
+The `AutoFormatType` and `AutoFormatExpression` properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios. The settings for the `AutoFormatType` property and the `AutoFormatExpr` property depend on the type of data in the field that you need to format. There are three categories of data: amount, unit amount, and other types of data.
+
+- **Amount** - `AutoFormatType` must be `1` and `AutoFormatExpr` must return a currency code for data to be formatted as amount data.
+- **Unit amount** - `AutoFormatType` must be `2` and `AutoFormatExpr` must return a currency code for data to be formatted as unit amount data.
+- **Other** - `AutoFormatType` must be `0` and `AutoFormatExpr` must be blank for the data to be formatted using the default settings (Standard Format 0).
+
+|AutoFormatType|Data to format| Value| Meaning|
+|--------------|--------------|------|--------|
+|AutoformatType |Other types of data| 0 | Use default settings for formatting (Standard format 0). Means: Use this rounding for quantities or other non-currency values|
+|AutoformatType |Amount             | 1 | Format as amount data. Means: Round as Line Amount in the provided Currency (normaly used for line amounts, document totals, or any accounting values)|
+|AutoformatType |Unit amount        |2  | Format as unit amount data. Means: Round as an allowed Unit Price in the provided Currency (normaly used for unit prices)|
 
 ## Example 1
 
@@ -45,8 +57,7 @@ AutoFormatExpression = 'USD';
 AutoFormatType = 1;
 ```
 
-For example, this will result in a value like 7,564.00.
-
+For example, this results in a value like `7,564.00`.
 
 Changing the **AutoFormatExpression** property to `IRD` sets the format of decimal values to IDR \(Indonesian rupiah\).
 
@@ -54,7 +65,8 @@ Changing the **AutoFormatExpression** property to `IRD` sets the format of decim
 AutoFormatExpression = 'IRD';
 AutoFormatType = 1;
 ```
-For example, this will result in a value like 7,564.
+
+For example, this results in a value like `7,564`.
 
 ## Example 2
 
@@ -65,11 +77,11 @@ AutoFormatExpression = '1,USD';
 AutoFormatType = 10;
 ```
 
-For example, this will result in a value like $7,564.00.
+For example, this results in a value like `$7,564.00`.
 
 ## Example 3
 
-This example prefixes the decimal value with a $, includes a thousand separator, and has a maximum of two decimal places, such as $76,453.21:
+This example prefixes the decimal value with a `$`, includes a thousand separator, and has a maximum of two decimal places, such as `$76,453.21`:
 
 ```AL
 AutoFormatType = 1;
@@ -77,7 +89,8 @@ AutoFormatExpression = '$<precision, 2:2><standard format, 0>';
 ```
 
 ## Example 4
-This example sets the decimal precision to a minimum of 1 decimal and a maximum of 3.
+
+This example sets the decimal precision to a minimum of `1` decimal and a maximum of `3`.
 
 ```AL
 AutoFormatType = 0;
@@ -86,4 +99,4 @@ DecimalPlaces = 1 : 3;
     
 ## Related information
 
-[AutoFormatExpression Property](devenv-autoformatexpression-property.md)
+[AutoFormatExpression property](devenv-autoformatexpression-property.md)
