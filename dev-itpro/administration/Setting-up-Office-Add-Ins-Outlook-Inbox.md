@@ -144,9 +144,9 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
 #### Register an app that connects Outlook and Business Central
 
-> APPLIES TO: Exchange Online
+> APPLIES TO: Exchange Online, Exchange Server
 
-Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) and create a new app registration on your tenant. Create a new registration and specify the following:
+Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) and create a new app registration on your tenant. Create a new registration with the following settings:
 
 |Setting|Value|Example|
 |-|-|-|
@@ -155,7 +155,7 @@ Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) and c
 |Redirect URI - Select a platform box|**Single-Page application (SPA)**||
 |Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client |`https://MyBCWebServer` |
 
-Add API the new registered app:
+Add the following API permissions the new registered app:
 
 With the new registered app open, select **API permissions** > **Add a permission**.
 
@@ -165,36 +165,42 @@ With the new registered app open, select **API permissions** > **Add a permissio
 
 Select **Add permissions** to save the changes.
 
+Learn more in [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis) of the Azure documentation.
+
 #### <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins
 
-> APPLIES TO: Exchange Online, Exchang Server
+> APPLIES TO: Exchange Online, Exchange Server
 
 For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 1. Run the Set-NAVServerConfiguration cmdlet to set the `PublicWebBaseUrl` key to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
-   The base URL is the public URL that Outlook clients use to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The base URL is the root portion of all URLs that are used to access pages in the web client. It must have the format `https://[hostname:port]/[instance]`, such as `https://MyNavWebServer:443/BC130`.
+   The base URL is the public URL that Outlook clients use to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The base URL is the root portion of all URLs that are used to access pages in the web client. It must have the format `https://[hostname:port]/[instance]`, such as `https://MyBCWebServer:443/BC252`.
 
     ```powershell
-    Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname PublicWebBaseUrl -Keyvalue <web client URL>
+    Set-NavServerConfiguration -ServerInstance <BC server instance> -KeyName PublicWebBaseUrl -Keyvalue <web client URL>
     ```
 
 1. Run the Set-NAVServerConfiguration cmdlet to set the `ValidAudiences` key to the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. The value is the web client base URL *without* the port number and server instance, like `https://MyBCWebServer`.
 
     ```powershell
-    Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname ValidAudiences -Keyvalue <host name>
+    Set-NavServerConfiguration -ServerInstance <BC server instance> -KeyName ValidAudiences -Keyvalue <host name>
     ```
 
-   If you have a multitenant deployment that uses different host names for tenants, like `https://tenant1.cronusinternational.com`, you'll also have to register each host name as a valid audience. There are two ways you can do this:
+   If you have a multitenant deployment that uses different host names for tenants, like `https://tenant1.cronusinternational.com`, you have to register each host name as a valid audience. There are two ways you can do this:
 
-   - On the server-level, add each host name to **Valid Audiences** setting of the [!INCLUDE[server](../developer/includes/server.md)] instance.
+   - On the server-level, use the Set-NavServerConfiguration cmdlet to add each host name to **Valid Audiences** setting of the [!INCLUDE[server](../developer/includes/server.md)] instance. separate each host name with a semi-colon.
+
+     ```powershell
+     Set-NavServerConfiguration -ServerInstance <BC server instance> -KeyName ValidAudiences -Keyvalue "<host name 1>;<host name 1>"
+     ```
   
-   - On the tenant-level, add the host names to the **Valid Audiences** setting when you mount the tenant, by using either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
+   - On the tenant-level, add the host names to the **Valid Audiences** setting when you mount the tenant by using the [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
 
-    ```powershell
-    Mount-NavTenant -ServerInstance <BC server instance> -Tenant <tenant_ID> Mount-NAVTenant BC -Id 'Test' -DatabaseName <database name> -ValidAudiences <host names>  
-    ```
+     ```powershell
+     Mount-NavTenant -ServerInstance <BC server instance> -Tenant <tenant_ID> -ValidAudiences <host name 1>  
+     ```
 
    > [!NOTE]
    > If there's more than one host name, separate each host name with a semi-colon. You can specify the host names on the server-level, tenant-level, or a combination of both.  
@@ -202,18 +208,18 @@ For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/mi
 1. (Optional) Run the `Set-NAVServerConfiguration` cmdlet to set the `ExchangeAuthenticationMetadataLocation` key.
 
    ```powershell
-   Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname ExchangeAuthenticationMetadataLocation -Keyvalue <metadata document URL>
+   Set-NavServerConfiguration -ServerInstance <BC server instance> -KeyName ExchangeAuthenticationMetadataLocation -Keyvalue <metadata document URL>
    ```
 
-   This setting is used to confirm the identity of the signing authority when using Exchange authentication. In part, the value includes the URL of the Exchange mail server. The field accepts a wild-card URL. So for example, if the URL of the Exchange mail server is `https://mail.cronus.com`, then you can set the field to `https://mail.cronus.com*`. The default value is `https://outlook.office365.com/`. Complete this step only of you want to use a value other than the default.
+   This setting is used to confirm the identity of the signing authority when using Exchange authentication. In part, the value includes the URL of the Exchange mail server. The field accepts a wild-card URL. So for example, if the URL of the Exchange mail server is `https://mail.cronus.com`, then you can set the field to `https://mail.cronus.com*`. The default value is `https://outlook.office365.com/`. Complete this step only if you want to use a value other than the default.
 
 ## Configure the Business Central web server instance to work with Exchange Online
 
 > APPLIES TO: Exchange Online
 
-This task is only required when working with Exchange Online. To complete this task, you need the application (client) ID of the registered application used for Business Central.authentication in Microsost Entra.
+This task is only required when working with Exchange Online. To complete this task, you need the application (client) ID of the registered application used for Business Central authentication in Microsost Entra.
 
-Use the [Set-NAVWebServerInstanceConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navwebserverinstanceconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to set the following keys on the web server instance:
+Use the [Set-NAVWebServerInstanceConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navwebserverinstanceconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to configure the following web server instance settings:
 
 |KeyName|KeyValue|Example|
 |-|-|-|
@@ -226,38 +232,51 @@ Run the cmdlet for each setting using the following syntax:
 Set-NAVWebServerInstanceConfiguration -ServerInstance <BC server instance> -Tenant <tenant_ID> -KeyName <KeyName> -KeyValue <KeyValue> 
 ```
 
+For example:
+
+```powershell
+Set-NAVWebServerInstanceConfiguration -ServerInstance BC252 -Tenant default -KeyName ExchangeOnlineAppId -KeyValue "00001111-aaaa-2222-bbbb-3333cccc4444" 
+Set-NAVWebServerInstanceConfiguration -ServerInstance BC252 -Tenant default -KeyName ExchangeOnlineAppScope -KeyValue "11112222-bbbb-3333-cccc-4444dddd5555/BusinessCentralOnPrem.Access" 
+```
+
 Restart the web server instance when you're done.
+
+```powershell
+iireset
+```
 
 ## <a name="centralized-deployment"></a>Centralized Deployment
 
-Centralized Deployment is a feature in Microsoft 365 admin center and Exchange admin center that lets you automatically install add-ins in users' Office apps, like Outlook. It's the recommended way for admins to deploy for Office add-ins to users and groups within your organization. For more information about Centralized Deployment, see [Centralized Deployment FAQ](/microsoft-365/admin/manage/centralized-deployment-faq).
+Centralized Deployment is a feature in Microsoft 365 admin center and Exchange admin center that lets you automatically install add-ins in users' Office apps, like Outlook. It's the recommended way for admins to deploy for Office add-ins to users and groups within your organization. Learn more in [Centralized Deployment FAQ](/microsoft-365/admin/manage/centralized-deployment-faq).
+
+Complete the following steps:
 
 1. Verify that Centralized Deployment works for your organization.
 
    Learn more in [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
-2. In Business Central, choose the ![Lightbulb that opens the Tell Me feature.](../developer/media/search_small.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
-3. Choose **Outlook Add-in Centralized Deployment** > **Next**.
-4. In the **Deploy** column, select the check box for the add-ins that you want to deploy, then choose **Download and Continue**.
+1. In Business Central, choose the ![Lightbulb that opens the Tell Me feature.](../developer/media/search_small.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
+1. Choose **Outlook Add-in Centralized Deployment** > **Next**.
+1. In the **Deploy** column, select the check box for the add-ins that you want to deploy, then choose **Download and Continue**.
 
     A file named OutlookAddins.zip is downloaded to your device.
-5. On the **Where do you want to deploy to?** page, set **Deploy Add-in to** to either **Microsoft 365** or **Exchange Server**, then choose **Next**.
-6. At this point, you're finished with the work you need to do in Business Central, so you can choose **Done**.
+1. On the **Where do you want to deploy to?** page, set **Deploy Add-in to** to either **Microsoft 365** or **Exchange Server**, then choose **Next**.
+1. At this point, you're finished with the work you need to do in Business Central, so you can choose **Done**.
 
    >[!TIP]
    > Before you choose **Next**, select the **Go to Microsoft 365 (opens in a new window)** or **Learn more about the add-in for Outlook in Exchange Server** link to open or get help on the admin center you'll use to complete the setup.
-7. Go the folder where the OutlookAddins.zip file was downloaded, and extract the **Content Insights.xml** and **Document View.xml** files from the .zip to a folder of your choice.
+1. Go the folder where the OutlookAddins.zip file was downloaded, and extract the **Content Insights.xml** and **Document View.xml** files from the .zip to a folder of your choice.
 
     Learn more in [Zip and Unzip files and folders](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5).
 
-8. For Microsoft 365 deployment, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2163967). For Exchange Server deployment, sign in to Exchange admin center.<!--https://admin.microsoft.com/#/Settings/AddIns-->
+1. For Microsoft 365 deployment, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2163967). For Exchange Server deployment, sign in to Exchange admin center.<!--https://admin.microsoft.com/#/Settings/AddIns-->
 
-9. Upload the add-in files as custom add-ins in the admin center you're working with:
+1. Upload the add-in files as custom add-ins in the admin center you're working with:
 
-    - For Microsoft 365 admin center, follow the steps at [Deploy add-ins in the admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins).
-    - For Exchange admin center, follow the steps at [Install or remove add-ins for Outlook for your Exchange organization](/exchange/install-or-remove-outlook-add-ins-2013-help).
+   - For Microsoft 365 admin center, follow the steps at [Deploy add-ins in the admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins).
+   - For Exchange admin center, follow the steps at [Install or remove add-ins for Outlook for your Exchange organization](/exchange/install-or-remove-outlook-add-ins-2013-help).
     <!--Go to the **Settings** > **Add-ins** page. If you don't see the **Add-in** Page, go to the **Settings** > **Integrated apps** > **Add-ins** page.-->
 
-    In this step, you assign users and deploy the add-ins.
+    This step assigns users and deploys the add-ins.
 
 > [!IMPORTANT]
 > An add-in can take up to 24 hours before users see the add-in in Outlook app.
@@ -274,7 +293,7 @@ If you've prepared for deployment as described earlier, then as an admin, the on
 
 In the Azure portal, add an application registration for Business Central in your Microsoft Entra tenant. Give the registered app delegated permission to Exchange web service (EWS). After you've added the registered app in Microsoft Entra ID, set up Business Central to use it by using the **Set up your Microsoft Entra accounts** assisted setup.
 
-For more information about how to complete this step, see [Registering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises in Microsoft Entra ID for Integrating with Other Services](register-app-azure.md).
+Learn more in [Registering Business Central on-premises in Microsoft Entra ID](register-app-azure.md).
 
 ### Get the add-in (users)
 
