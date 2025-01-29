@@ -16,7 +16,7 @@ ms.reviewer: solsen
 
 In [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, errors and messages that are thrown by the code logic in Copilot prompt dialogs now appear directly inside the dialog instead of in a separate popup dialog. This improves the user experience. The `Dialog.Error()`, `Dialog.Message()`, and `ErrorInfo` error patterns are supported. When you use the `ErrorInfo` type, both title and description are shown inside the dialog.
 
-If the code throws more than one message, only the last message will be shown, but the user is informed about the total number of issues. If an error is thrown, any subsequent message is suppressed. If the error or message contains line breaks, these line breaks are ignored, as opposed to when they're rendered in dialogs.
+If the code throws more than one message, only the last message is shown, but the user is informed about the total number of issues. If an error is thrown, any subsequent message is suppressed. If the error or message contains line breaks, these line breaks are ignored, as opposed to when they're rendered in dialogs.
 
 ## Example 1: Rendering multiple messages thrown by `Message()` in the prompt dialog
 
