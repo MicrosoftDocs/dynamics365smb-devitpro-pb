@@ -17,9 +17,9 @@ To ensure a smooth transition, Microsoft will adopt a clean-up cycle every fifth
 
 The 2025 release wave 1 (v26) clean-up effort isn’t just about reducing database size, it’s part of a broader vision:
 
-1. **Improved database performance**: Removing unused schema elements optimizes performance and reduces technical debt.  
-2. **Unified Base Applications**: Multiple countries (such as, Sweden, Denmark, Czechia, India, and Iceland) and partner-localized regions will move towards a unified Base Application. The goal is to have all countries using the same codebase.  
-3. **Streamlined codebase**: Cleaner code results in fewer errors and easier maintenance for developers.
+- **Improved database performance**: Removing unused schema elements optimizes performance and reduces technical debt.  
+- **Unified Base Applications**: Multiple countries (such as, Sweden, Denmark, Czechia, India, and Iceland) and partner-localized regions will move towards a unified Base Application. The goal is to have all countries using the same codebase.  
+- **Streamlined codebase**: Cleaner code results in fewer errors and easier maintenance for developers.
 
 > [!NOTE]
 > 2025 release wave 1 (v26) introduces platform-level support for dropping tables and fields that have been in the **Obsolete::Removed** state for more than one major release. This ensures that the clean-up process is automated and consistent, and aligns with Microsoft's ongoing breaking changes process and optimization strategy.  
@@ -33,9 +33,329 @@ This article provides a list of all deleted objects across all W1 and country-ba
 
 This section lists the table and field objects that are deleted in the Base Apps.
 
+> [!TIP]
+> To explore the list of objects that are marked as obsolete in the W1 Base App and will be deleted in a future release, go to [Obsoletions for 25.0](/dynamics365/business-central/application/base-application/obsoletion/obsolete_by_25.0).
+
 ### W1 Base App
 
-To explore the list of deleted objects in the W1 Base Aapp, go to [Obsoletions for 25.0](/dynamics365/business-central/application/base-application/obsoletion/obsolete_by_25.0).
+|Table ID |Table Name |Field ID |Field Name |
+|-------|---------------------------------|---------------|------------------------------| 
+|	472	|	"Job Queue Entry"	|	51	|	"On Hold Due to Inactivity"	|
+|	472	|	"Job Queue Entry"	|	42	|	"Timeout (sec.)"	|
+|	472	|	"Job Queue Entry"	|	37	|	"Error Message 4"	|
+|	472	|	"Job Queue Entry"	|	36	|	"Error Message 3"	|
+|	472	|	"Job Queue Entry"	|	35	|	"Error Message 2"	|
+|	472	|	"Job Queue Entry"	|	14	|	Priority	|
+|	474	|	"Job Queue Log Entry"	|	16	|	"Processed by User ID"	|
+|	474	|	"Job Queue Log Entry"	|	14	|	"Error Message 4"	|
+|	474	|	"Job Queue Log Entry"	|	13	|	"Error Message 3"	|
+|	474	|	"Job Queue Log Entry"	|	12	|	"Error Message 2"	|
+|	1262	|	"Isolated Certificate"	|	3	|	Password	|
+|	1511	|	"Notification Entry"	|	17	|	"Error Message 4"	|
+|	1511	|	"Notification Entry"	|	16	|	"Error Message 3"	|
+|	1511	|	"Notification Entry"	|	15	|	"Error Message 2"	|
+|	1512	|	"Notification Setup"	|	6	|	"Display Target"	|
+|	6301	|	"Power BI Report Configuration	|	4	|	EmbedUrl	|
+|	6302	|	"Power BI Report Buffer"	|	3	|	EmbedUrl	|
+|	6307	|	"Power BI Report Uploads"	|	7	|	"Embed Url"	|
+|	9062	|	"User Security Status"	|	21	|	"Users - Without Subscriptions"	|
+|	9062	|	"User Security Status"	|	14	|	"Belongs To Subscription Plan"	|
+|	9500	|	"Email Item"	|	33	|	"Source Table"	|
+|	9500	|	"Email Item"	|	34	|	"Source System Id"	|
+|	1235	|	"XML Buffer"	|	8	|	"Is Parent"	|
+|	1235	|	"XML Buffer"	|	10	|	"Code"	|
+|	1235	|	"XML Buffer"	|	11	|	"Node Name"	|
+|	1235	|	"XML Buffer"	|	12	|	"Has Attributes"	|
+|	9176	|	"Experience Tier Setup"	|	40	|	Invoicing	|
+|	9178	|	"Application Area Setup"	|	40	|	Invoicing	|
+|	2020	|	"Image Analysis Setup"	|	2	|	"Period start date"	|
+|	2020	|	"Image Analysis Setup"	|	3	|	"Number of calls"	|
+|	2020	|	"Image Analysis Setup"	|	6	|	"Limit value"	|
+|	2020	|	"Image Analysis Setup"	|	7	|	"Limit type"	|
+|	5991	|	"Service Shipment Line"	|	5712	|	"Product Group Code"	|
+|	5993	|	"Service Invoice Line"	|	5712	|	"Product Group Code"	|
+|	5995	|	"Service Cr.Memo Line"	|	5712	|	"Product Group Code"	|
+|	5902	|	"Service Line"	|	5712	|	"Product Group Code"	|
+|	311	|	"Sales & Receivables Setup"	|	37	|	"Archive Quotes and Orders"	|
+|	311	|	"Sales & Receivables Setup"	|	170	|	"Insert Std. Sales Lines Mode"	|
+|	311	|	"Sales & Receivables Setup"	|	171	|	"Insert Std. Lines on Quotes"	|
+|	311	|	"Sales & Receivables Setup"	|	172	|	"Insert Std. Lines on Orders"	|
+|	311	|	"Sales & Receivables Setup"	|	173	|	"Insert Std. Lines on Invoices"	|
+|	311	|	"Sales & Receivables Setup"	|	174	|	"Insert Std. Lines on Cr. Memos"	|
+|	111	|	"Sales Shipment Line"	|	5705	|	"Cross-Reference No."	|
+|	111	|	"Sales Shipment Line"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	111	|	"Sales Shipment Line"	|	5707	|	"Cross-Reference Type"	|
+|	111	|	"Sales Shipment Line"	|	5708	|	"Cross-Reference Type No."	|
+|	111	|	"Sales Shipment Line"	|	5712	|	"Product Group Code"	|
+|	113	|	"Sales Invoice Line"	|	5705	|	"Cross-Reference No."	|
+|	113	|	"Sales Invoice Line"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	113	|	"Sales Invoice Line"	|	5707	|	"Cross-Reference Type"	|
+|	113	|	"Sales Invoice Line"	|	5708	|	"Cross-Reference Type No."	|
+|	113	|	"Sales Invoice Line"	|	5712	|	"Product Group Code"	|
+|	112	|	"Sales Invoice Header"	|	176	|	"Payment Instructions"	|
+|	112	|	"Sales Invoice Header"	|	177	|	"Payment Instructions Name"	|
+|	112	|	"Sales Invoice Header"	|	8000	|	Id	|
+|	115	|	"Sales Cr.Memo Line"	|	5705	|	"Cross-Reference No."	|
+|	115	|	"Sales Cr.Memo Line"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	115	|	"Sales Cr.Memo Line"	|	5707	|	"Cross-Reference Type"	|
+|	115	|	"Sales Cr.Memo Line"	|	5708	|	"Cross-Reference Type No."	|
+|	115	|	"Sales Cr.Memo Line"	|	5712	|	"Product Group Code"	|
+|	114	|	"Sales Cr.Memo Header"	|	8000	|	Id	|
+|	6661	|	"Return Receipt Line"	|	5705	|	"Cross-Reference No."	|
+|	6661	|	"Return Receipt Line"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	6661	|	"Return Receipt Line"	|	5707	|	"Cross-Reference Type"	|
+|	6661	|	"Return Receipt Line"	|	5708	|	"Cross-Reference Type No."	|
+|	6661	|	"Return Receipt Line"	|	5712	|	"Product Group Code"	|
+|	37	|	"Sales Line"	|	5705	|	"Cross-Reference No."	|
+|	37	|	"Sales Line"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	37	|	"Sales Line"	|	5707	|	"Cross-Reference Type"	|
+|	37	|	"Sales Line"	|	5708	|	"Cross-Reference Type No."	|
+|	37	|	"Sales Line"	|	5712	|	"Product Group Code"	|
+|	36	|	"Sales Header"	|	175	|	"Payment Instructions Id"	|
+|	36	|	"Sales Header"	|	5051	|	"Sell-to Customer Template Code"	|
+|	36	|	"Sales Header"	|	5054	|	"Bill-to Customer Template Code"	|
+|	36	|	"Sales Header"	|	8000	|	Id	|
+|	18	|	Customer	|	89	|	Picture	|
+|	18	|	Customer	|	8000	|	Id	|
+|	18	|	Customer	|	9004	|	"Tax Area Display Name"	|
+|	5108	|	"Sales Line Archive"	|	5705	|	"Cross-Reference No."	|
+|	5108	|	"Sales Line Archive"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	5108	|	"Sales Line Archive"	|	5707	|	"Cross-Reference Type"	|
+|	5108	|	"Sales Line Archive"	|	5708	|	"Cross-Reference Type No."	|
+|	5108	|	"Sales Line Archive"	|	5712	|	"Product Group Code"	|
+|	5107	|	"Sales Header Archive"	|	827	|	"Credit Card No."	|
+|	5107	|	"Sales Header Archive"	|	5051	|	"Sell-to Customer Template Code"	|
+|	9060	|	"SB Owner Cue"	|	7	|	"SOs Shipped Not Invoiced"	|
+|	23	|	Vendor	|	89	|	Picture	|
+|	23	|	Vendor	|	8000	|	Id	|
+|	312	|	"Purchases & Payables Setup"	|	37	|	"Archive Quotes and Orders"	|
+|	312	|	"Purchases & Payables Setup"	|	170	|	"Insert Std. Purch. Lines Mode"	|
+|	312	|	"Purchases & Payables Setup"	|	171	|	"Insert Std. Lines on Quotes"	|
+|	312	|	"Purchases & Payables Setup"	|	172	|	"Insert Std. Lines on Orders"	|
+|	312	|	"Purchases & Payables Setup"	|	173	|	"Insert Std. Lines on Invoices"	|
+|	312	|	"Purchases & Payables Setup"	|	174	|	"Insert Std. Lines on Cr. Memos"	|
+|	6651	|	"Return Shipment Line"	|	5705	|	"Cross-Reference No."	|
+|	6651	|	"Return Shipment Line"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	6651	|	"Return Shipment Line"	|	5707	|	"Cross-Reference Type"	|
+|	6651	|	"Return Shipment Line"	|	5708	|	"Cross-Reference Type No."	|
+|	6651	|	"Return Shipment Line"	|	5712	|	"Product Group Code"	|
+|	121	|	"Purch. Rcpt. Line"	|	5705	|	"Cross-Reference No."	|
+|	121	|	"Purch. Rcpt. Line"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	121	|	"Purch. Rcpt. Line"	|	5707	|	"Cross-Reference Type"	|
+|	121	|	"Purch. Rcpt. Line"	|	5708	|	"Cross-Reference Type No."	|
+|	121	|	"Purch. Rcpt. Line"	|	5712	|	"Product Group Code"	|
+|	121	|	"Purch. Rcpt. Line"	|	8510	|	"Over-Receipt Code"	|
+|	123	|	"Purch. Inv. Line"	|	5705	|	"Cross-Reference No."	|
+|	123	|	"Purch. Inv. Line"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	123	|	"Purch. Inv. Line"	|	5707	|	"Cross-Reference Type"	|
+|	123	|	"Purch. Inv. Line"	|	5708	|	"Cross-Reference Type No."	|
+|	123	|	"Purch. Inv. Line"	|	5712	|	"Product Group Code"	|
+|	122	|	"Purch. Inv. Header"	|	8000	|	Id	|
+|	125	|	"Purch. Cr. Memo Line"	|	5705	|	"Cross-Reference No."	|
+|	125	|	"Purch. Cr. Memo Line"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	125	|	"Purch. Cr. Memo Line"	|	5707	|	"Cross-Reference Type"	|
+|	125	|	"Purch. Cr. Memo Line"	|	5708	|	"Cross-Reference Type No."	|
+|	125	|	"Purch. Cr. Memo Line"	|	5712	|	"Product Group Code"	|
+|	39	|	"Purchase Line"	|	5705	|	"Cross-Reference No."	|
+|	39	|	"Purchase Line"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	39	|	"Purchase Line"	|	5707	|	"Cross-Reference Type"	|
+|	39	|	"Purchase Line"	|	5708	|	"Cross-Reference Type No."	|
+|	39	|	"Purchase Line"	|	5712	|	"Product Group Code"	|
+|	38	|	"Purchase Header"	|	8000	|	Id	|
+|	5110	|	"Purchase Line Archive"	|	5705	|	"Cross-Reference No."	|
+|	5110	|	"Purchase Line Archive"	|	5706	|	"Unit of Measure (Cross Ref.)"	|
+|	5110	|	"Purchase Line Archive"	|	5707	|	"Cross-Reference Type"	|
+|	5110	|	"Purchase Line Archive"	|	5708	|	"Cross-Reference Type No."	|
+|	5110	|	"Purchase Line Archive"	|	5712	|	"Product Group Code"	|
+|	952	|	"Time Sheet Detail"	|	8000	|	Id	|
+|	156	|	Resource	|	52	|	Picture	|
+|	167	|	Job	|	57	|	Picture	|
+|	167	|	Job	|	8000	|	Id	|
+|	6702	|	"Booking Sync"	|	10	|	"Customer Template Code"	|
+|	1307	|	"O365 Device Setup Instructions"	|	10	|	"Setup URL"	|
+|	5745	|	"Transfer Shipment Line"	|	5707	|	"Product Group Code"	|
+|	5747	|	"Transfer Receipt Line"	|	5707	|	"Product Group Code"	|
+|	5741	|	"Transfer Line"	|	5707	|	"Product Group Code"	|
+|	313	|	"Inventory Setup"	|	5725	|	"Use Item References"	|
+|	246	|	"Requisition Line"	|	5705	|	"Product Group Code"	|
+|	32	|	"Item Ledger Entry"	|	5700	|	"Cross-Reference No."	|
+|	32	|	"Item Ledger Entry"	|	5707	|	"Product Group Code"	|
+|	753	|	"Standard Item Journal Line"	|	5707	|	"Product Group Code"	|
+|	83	|	"Item Journal Line"	|	5700	|	"Cross-Reference No."	|
+|	5722	|	"Item Category"	|	8000	|	Id	|
+|	27	|	Item	|	5704	|	"Product Group Code"	|
+|	27	|	Item	|	8000	|	Id	|
+|	5718	|	"Nonstock Item"	|	12	|	"Item Template Code"	|
+|	5778	|	"Nonstock Item"	|	13	|	"Product Group Code"	|
+|	5777	|	"Item Reference"	|	8	|	"Discontinue Bar Code"	|
+|	247	|	"Intrastat Setup"	|	8	|	"Use Advanced Checklist"	|
+|	407	|	"Graph Mail Setup"	|	*	|	*	|
+|	5505	|	"Sales Quote Entity Buffer"	|	167	|	"Last Email Sent Status"	|
+|	5475	|	"Sales Invoice Entity Aggregate"	|	167	|	"Last Email Sent Status"	|
+|	5331	|	"CRM Integration Record"	|	12	|	"Option Mapping Failure"	|
+|	5374	|	"CRM Synch. Conflict Buffer"	|	15	|	"Deleted On"	|
+|	5353	|	"CRM Salesorder"	|	27	|	ShippingMethodCode	|
+|	5353	|	"CRM Salesorder"	|	28	|	PaymentTermsCode	|
+|	5353	|	"CRM Salesorder"	|	29	|	FreightTermsCode	|
+|	5351	|	"CRM Quote"	|	26	|	ShippingMethodCode	|
+|	5351	|	"CRM Quote"	|	27	|	PaymentTermsCode	|
+|	5351	|	"CRM Quote"	|	28	|	FreightTermsCode	|
+|	5355	|	"CRM Invoice"	|	23	|	ShippingMethodCode	|
+|	5355	|	"CRM Invoice"	|	24	|	PaymentTermsCode	|
+|	5360	|	"CRM Customeraddress"	|	22	|	ShippingMethodCode	|
+|	5342	|	"CRM Contact"	|	9	|	PaymentTermsCode	|
+|	5342	|	"CRM Contact"	|	93	|	Address1_FreightTermsCode	|
+|	5342	|	"CRM Contact"	|	98	|	Address1_ShippingMethodCode	|
+|	5330	|	"CRM Connection Setup"	|	5	|	"Last Update Invoice Entry No."	|
+|	5341	|	"CRM Account"	|	15	|	PaymentTermsCode	|
+|	5341	|	"CRM Account"	|	75	|	Address1_FreightTermsCode	|
+|	5341	|	"CRM Account"	|	80	|	Address1_ShippingMethodCode	|
+|	5200	|	Employee	|	19	|	Picture	|
+|	5200	|	Employee	|	8000	|	Id	|
+|	204	|	"Unit of Measure"	|	8000	|	Id	|
+|	10	|	"Shipment Method"	|	8000	|	Id	|
+|	3	|	"Payment Terms"	|	8000	|	Id	|
+|	79	|	"Company Information"	|	7602	|	"Show Chart On RoleCenter"	|
+|	79	|	"Company Information"	|	7603	|	"Sync with O365 Bus. profile"	|
+|	79	|	"Company Information"	|	8000	|	Id	|
+|	9	|	"Country/Region"	|	8000	|	Id	|
+|	5600	|	"Fixed Asset"	|	22	|	Picture	|
+|	324	|	"VAT Product Posting Group"	|	8000	|	Id	|
+|	323	|	"VAT Business Posting Group"	|	8000	|	Id	|
+|	742	|	"VAT Statement Report Line"	|	4800	|	RepresentativeAmount	|
+|	742	|	"VAT Statement Report Line"	|	4801	|	GroupAmount	|
+|	743	|	"VAT Report Setup"	|	22	|	"Period Reminder Time"	|
+|	743	|	"VAT Report Setup"	|	4800	|	"VATGroup Role"	|
+|	743	|	"VAT Report Setup"	|	4801	|	ApprovedMembers	|
+|	743	|	"VAT Report Setup"	|	4802	|	"GroupMember ID"	|
+|	743	|	"VAT Report Setup"	|	4803	|	"GroupRepresentative API URL"	|
+|	743	|	"VAT Report Setup"	|	4804	|	AuthenticationType	|
+|	743	|	"VAT Report Setup"	|	4805	|	"UserName Key"	|
+|	743	|	"VAT Report Setup"	|	4806	|	"WebService Access Key Key"	|
+|	743	|	"VAT Report Setup"	|	4807	|	"GroupRepresentative Company"	|
+|	743	|	"VAT Report Setup"	|	4808	|	"ClientID Key"	|
+|	743	|	"VAT Report Setup"	|	4809	|	"ClientSecret Key"	|
+|	743	|	"VAT Report Setup"	|	4810	|	AuthorityURL	|
+|	743	|	"VAT Report Setup"	|	4811	|	ResourceURL	|
+|	743	|	"VAT Report Setup"	|	4812	|	RedirectURL	|
+|	743	|	"VAT Report Setup"	|	4814	|	"GroupSettlement Account"	|
+|	743	|	"VAT Report Setup"	|	4815	|	"VATSettlement Account"	|
+|	743	|	"VAT Report Setup"	|	4816	|	"VATDue Box No."	|
+|	743	|	"VAT Report Setup"	|	4817	|	"GroupSettle. Gen. Jnl. Templ."	|
+|	743	|	"VAT Report Setup"	|	4818	|	"VATGroup BC Version"	|
+|	740	|	"VAT Report Header"	|	4800	|	"VATGroup Return"	|
+|	740	|	"VAT Report Header"	|	4801	|	"VATGroup Status"	|
+|	740	|	"VAT Report Header"	|	4802	|	"VATGroup Settlement Posted"	|
+|	560	|	"VAT Clause"	|	8000	|	Id	|
+|	321	|	"Tax Group"	|	8000	|	Id	|
+|	318	|	"Tax Area"	|	8000	|	Id	|
+|	98	|	"General Ledger Setup"	|	152	|	"Use Legacy G/L Entry Locking"	|
+|	98	|	"General Ledger Setup"	|	161	|	"VAT Reg. No. Validation URL"	|
+|	81	|	"Gen. Journal Line"	|	827	|	"Credit Card No."	|
+|	81	|	"Gen. Journal Line"	|	8000	|	Id	|
+|	232	|	"Gen. Journal Batch"	|	8000	|	Id	|
+|	9153	|	"My Account"	|	4	|	Balance	|
+|	15	|	"G/L Account"	|	8000	|	Id	|
+|	348	|	Dimension	|	8000	|	Id	|
+|	4	|	Currency	|	8000	|	Id	|
+|	133	|	"Incoming Document Attachment"	|	8000	|	Id	|
+|	130	|	"Incoming Document"	|	19	|	URL1	|
+|	130	|	"Incoming Document"	|	20	|	URL2	|
+|	130	|	"Incoming Document"	|	21	|	URL3	|
+|	130	|	"Incoming Document"	|	22	|	URL4	|
+|	5079	|	"Marketing Setup"	|	74	|	"Sync with Microsoft Graph"	|
+|	5050	|	Contact	|	89	|	Picture	|
+|	5050	|	Contact	|	5075	|	"Business Relation"	|
+|	843	|	"Cash Flow Setup"	|	31	|	"Cortana Intelligence Enabled"	|
+|	843	|	"Cash Flow Setup"	|	32	|	"Show Cortana Notification"	|
+|	289	|	"Payment Method"	|	9	|	"Bank Data Conversion Pmt. Type"	|
+|	289	|	"Payment Method"	|	8000	|	Id	|
+|	277	|	"Bank Account Posting Group"	|	2	|	"G/L Bank Account No."	|
+|	270	|	"Bank Account"	|	89	|	Picture	|
+|	270	|	"Bank Account"	|	1213	|	"Bank Name - Data Conversion"	|
+|	349	|	"Dimension Value"	|	8000	|	Id	|
+|	1602	|	"Exchange Object"	|	14	|	        VendorNo	|
+|	 232	|	"Gen. Journal Batch"	|	9000	|	 "Background Error Check"	|
+|	 79 	|	"Company Information"	|	41	|	 "IC Partner Code"	|
+|	 79 	|	"Company Information"	|	42	|	 "IC Inbox Type"	|
+|	 79 	|	"Company Information"	|	43	|	 "IC Inbox Details"	|
+|	 79 	|	"Company Information"	|	44	|	 "Auto. Send Transactions"	|
+|	 5330 	|	"CRM Connection Setup"	|	70	|	 "Dynamics NAV OData URL"	|
+|	 5330 	|	"CRM Connection Setup"	|	71	|	 "Dynamics NAV OData Username"	|
+|	 5330 	|	"CRM Connection Setup"	|	72	|	 "Dynamics NAV OData Accesskey"	|
+|	 5460 	|	"Graph Business Setting"	|	0	|	 *	|
+|	 5455 	|	"Graph Subscription"	|	0	|	 *	|
+|	 729 	|	"Copy Item Buffer"	|	27	|	 "Item Cross References"	|
+|	 728 	|	"Copy Item Parameters"	|	27	|	 "Item Cross References"	|
+|	 99000765 	|	"Manufacturing Setup"	|	3687	|	 "Optimize low-level code calc."	|
+|	 312 	|	"Purchases & Payables Setup"	|	810	|	 "Invoice Posting Setup"	|
+|	 396 	|	"XBRL Comment Line"	|	0	|	 *	|
+|	 397 	|	"XBRL G/L Map Line"	|	0	|	 *	|
+|	 408 	|	"XBRL Line Constant"	|	0	|	 *	|
+|	 400 	|	"XBRL Linkbase"	|	0	|	 *	|
+|	 398 	|	"XBRL Rollup Line"	|	0	|	 *	|
+|	 399 	|	"XBRL Schema"	|	0	|	 *	|
+|	 394 	|	"XBRL Taxonomy"	|	0	|	 *	|
+|	 401 	|	"XBRL Taxonomy Label"	|	0	|	 *	|
+|	 395 	|	"XBRL Taxonomy Line"	|	0	|	 *	|
+|	 2850 	|	"Native - API Tax Setup"	|	0	|	 *	|
+|	 2822 	|	"Native - Export Invoices"	|	0	|	 *	|
+|	 2840 	|	"Native - Gen. Settings Buffer"	|	0	|	 *	|
+|	 2831 	|	"Native - Payment"	|	0	|	 *	|
+|	 5107 	|	"Sales Header Archive"	|	180	|	 "Rcvd-from Country/Region Code"	|
+|	 36 	|	"Sales Header"	|	180	|	 "Rcvd-from Country/Region Code"	|
+|	 6660 	|	"Return Receipt Header"	|	180	|	 "Rcvd-from Country/Region Code"	|
+|	 114 	|	"Sales Cr.Memo Header"	|	180	|	 "Rcvd-from Country/Region Code"	|
+|	 311 	|	"Sales & Receivables Setup"	|	60	|	 "Batch Archiving Quotes"	|
+|	 311 	|	"Sales & Receivables Setup"	|	810	|	 "Invoice Posting Setup"	|
+|	 5911 	|	"Service Mgt. Setup"	|	810	|	 "Invoice Posting Setup"	|
+|	 9178 	|	"Application Area Setup"	|	2700	|	 XBRL	|
+|	 1225 	|	"Data Exch. Field Mapping"	|	13	|	 "Target Field Caption"	|
+|	 472 	|	"Job Queue Entry"	|	55	|	 "Recovery Task Id"	|
+|	 474 	|	"Job Queue Log Entry"	|	16	|	 "Processed by User ID"	|
+|	 485 	|	"Business Chart Buffer"	|	4	|	 XML	|
+|	 9006 	|	"Plan Permission Set"	|	0	|	 *	|
+|	 62 	|	"Record Export Buffer"	|	3	|	 ServerFilePath	|
+|	 289 	|	"Payment Method"	|	10	|	 "Use for Invoicing"	|
+|	 273 	|	"Bank Acc. Reconciliation"	|	27	|	 "Total Applied Amount Payments"	|
+|	 273 	|	"Bank Acc. Reconciliation"	|	31	|	 "Total Positive Difference"	|
+|	 273 	|	"Bank Acc. Reconciliation"	|	32	|	 "Total Negative Difference"	|
+|	 274 	|	"Bank Acc. Reconciliation Line"	|	10	|	 Type	|
+|	 98 	|	"General Ledger Setup"	|	96	|	 "Adapt Main Menu to Permissions"	|
+|	 5400 	|	"Unit Group"	|	4	|	 "Code"	|
+|	 5400 	|	"Unit Group"	|	5	|	 "Source Name"	|
+|	 5341 	|	"CRM Account"	|	201	|	 AccountStatiticsName	|
+|	 407 	|	"Graph Mail Setup"	|	0	|	 *	|
+|	 2162 	|	"O365 C2Graph Event Settings"	|	0	|	 *	|
+|	 2190 	|	"O365 Sales Graph"	|	0	|	 *	|
+|	 2152 	|	"O365 Country/Region"	|	0	|	 *	|
+|	 2115 	|	"O365 Coupon Claim"	|	0	|	 *	|
+|	 2116 	|	"O365 Coupon Claim Doc. Link"	|	0	|	 *	|
+|	 2113 	|	"O365 Cust. Invoice Discount"	|	0	|	 *	|
+|	 2107 	|	"O365 Customer"	|	0	|	 *	|
+|	 2170 	|	"O365 Default Email Message"	|	0	|	 *	|
+|	 2158 	|	"O365 Document Sent History"	|	0	|	 *	|
+|	 2118 	|	"O365 Email Setup"	|	0	|	 *	|
+|	 2112 	|	"O365 Field Excel Mapping"	|	0	|	 *	|
+|	 2101 	|	"O365 Item Basket Entry"	|	0	|	 *	|
+|	 2105 	|	"O365 Payment History Buffer"	|	0	|	 *	|
+|	 2156 	|	"O365 Payment Instr. Transl."	|	0	|	 *	|
+|	 2155 	|	"O365 Payment Instructions"	|	0	|	 *	|
+|	 2154 	|	"O365 Payment Method"	|	0	|	 *	|
+|	 2153 	|	"O365 Payment Terms"	|	0	|	 *	|
+|	 2117 	|	"O365 Posted Coupon Claim"	|	0	|	 *	|
+|	 9069 	|	"O365 Sales Cue"	|	0	|	 *	|
+|	 2103 	|	"O365 Sales Document"	|	0	|	 *	|
+|	 2163 	|	"O365 Sales Event"	|	0	|	 *	|
+|	 2110 	|	"O365 Sales Initial Setup"	|	0	|	 *	|
+|	 2200 	|	"O365 Sales Invoice Document"	|	0	|	 *	|
+|	 2132 	|	"O365 Settings Menu"	|	0	|	 *	|
+|	 2122 	|	"O365 Social Network"	|	0	|	 *	|
+|	 6303 	|	"Azure AD Mgt. Setup"	|	4	|	 "PBI Service Mgt. Codeunit ID"	|
+|	 9800 	|	"Table Permission Buffer"	|	0	|	 *	|
+|	 6304 	|	"Power BI User Configuration"	|	4	|	 "Report Visibility"	|
+|	 6311 	|	"Power BI User License"	|	0	|	 *	|
+|	5105	|	Customer Template	|	0	|	 *	|
 
 ### AT Base App
 
