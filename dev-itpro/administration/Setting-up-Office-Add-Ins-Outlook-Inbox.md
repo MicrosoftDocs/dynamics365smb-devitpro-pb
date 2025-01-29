@@ -82,6 +82,24 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
       Learn more in [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
+      In the app registration, expose the Business Central API with a scope requiring admin and user consent:
+
+      1. Select **Expose an API**.
+      1. If there's no value for **Application ID URI**, slect **Add** > **Save**. Make note of the Application ID URI for later.
+      1. On the **Expose an API** page, select **Add a Scope**, and then  the following:
+
+         |Setting|Value|Example|
+         |-|-|-|
+         |Scope name|Specify a meaningful name of a permission scope |BusinessCentralOnPrem.Access |
+         |Consent|Choose **Admins and users** ||
+         |Admin consent display name|Specify a meaningful name for admin consent.|Access Business Central as the signed-in user|
+         |Admin consent description |Specify a meaningful, accompanying description |Business Central is a comprehensive business management solution that organizations work smarter, adapt faster, and perform better. |
+         |User consent display name|Specify a meaningful name that for user consent.|Have full access to Business Central|
+         |User consent description|Specify a meaningful, accompanying description. 
+         |Allow the application full access to Dynamics 365 on your behalf.|
+
+      Learn more in [Configure an application to expose a web API](/entra/identity-platform/quickstart-configure-app-expose-web-apis#add-a-scope)
+
    - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
 
       Learn more in [Configure SSL to secure the connection to web client](../deployment/configure-ssl-web-client-connection.md).
@@ -90,7 +108,11 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
       Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
 
-   - Configure the Business Central web server instance to work with Exchange Online 
+   - Register an application in Mirosoft Entra ID for connecting Outlook and Business Central
+   
+     Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
+
+   - Configure the Business Central web server instance to work with Exchange Online
 
       Learn more in [Configure the web server instance to work with the Office Add-ins](#configure-the-includeserver-instance-to-work-with-the-office-add-ins).
 
@@ -120,11 +142,30 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
 ---
 
+#### Register an app that connects Outlook and Business Central
+
+Sign in to the Azure portal and go to the App registrations screen. 
+
+Create a new registration and specify the following: 
+
+|Setting|Value|Example||
+||||
+|Name|Specify a meaningful name for the app |Business Central on-prem Outlook Add-in Connector |
+|Redirect URI |Choose **Single-Page application (SPA)**||
+|URI |Enter the base URL for your Business Central on-premises web client |https://MyBCWebServer. |
+|Supported account types |Use the default or **Multitenant options** ||
+ 
+With your new app selected, go to API permissions for that app. 
+
+Choose Add a permission, then Microsoft Graph, and Delegated permissions. From the list of available permissions, select User.Read and Mail.ReadWrite and then choose Add permissions. 
+
+Add another permission from the tab named APIs my organization uses. Search for the name of the app that authenticates Microsoft Entra ID users with Business Central (this is not the app you registered to connect Outlook and Business Central), and add the scope you created earlier. 
+
 #### <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins
 
-You use either **Set-NAVServerConfiguration** cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+> APPLIES TO: Exchange Online deployment, Exchang Server deployment
 
-Use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 1. Run the Set-NAVServerConfiguration cmdlet to set the `PublicWebBaseUrl` key to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
@@ -164,7 +205,9 @@ Use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamic
 
 ## Configure the Business Central web server instance to work with Exchange Online
 
-This task is only required when working with Exchange Online. To complete this tas, you need the application (client) ID of the registered application used for Business Central.authentication in Microsost Entra.
+> APPLIES TO: Exchange Online deployment
+
+This task is only required when working with Exchange Online. To complete this task, you need the application (client) ID of the registered application used for Business Central.authentication in Microsost Entra.
 
 Use the [Set-NAVWebServerInstanceConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navwebserverinstanceconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to set the following keys on the web server instance:
 
