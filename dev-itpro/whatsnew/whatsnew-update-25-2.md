@@ -19,7 +19,10 @@ Would you like to know what changes are in update 25.2? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 25.2 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5049396).
+Learn about the hotfixes on Microsoft Support at [Update 25.2 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5049396).
+
+> [!IMPORTANT]
+> The download packages for on-premises are no longer available because of a known issue. Please download and upgrade to [25.3](whatsnew-update-25-3.md) or later instead.
 
 ## Feature changes
 
