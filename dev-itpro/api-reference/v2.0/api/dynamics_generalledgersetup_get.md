@@ -1,5 +1,5 @@
 ---
-title: Get generalLedgerSetups
+title: Get generalLedgerSetup
 description: Gets a general ledger setup object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: dynamics-365-business-central
@@ -7,14 +7,14 @@ ms.topic: reference
 ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/31/2024
+ms.date: 01/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get generalLedgerSetups
+# Get generalLedgerSetup
 
 Retrieves the properties and relationships of a general ledger setup object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
@@ -23,7 +23,7 @@ Retrieves the properties and relationships of a general ledger setup object for 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```
-GET businesscentralPrefix/companies({id})/generalLedgerSetups({id})
+GET businesscentralPrefix/companies({id})/generalLedgerSetup({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
