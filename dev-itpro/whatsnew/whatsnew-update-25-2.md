@@ -2,7 +2,7 @@
 title: Update 25.2 for Microsoft Dynamics 365 Business Central 2024 release wave 2
 description: Get an overview of new and changed capabilities in the 25.2 update of Business Central online, which is part of 2024 release wave 2.
 ms.author: jswymer
-ms.date: 01/21/2025
+ms.date: 01/29/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -15,14 +15,11 @@ ms.custom:
 Would you like to know what changes are in update 25.2? Below you find an overview and relevant links to what was done on hotfixes and regulatory features in this update. In addition, we gathered some good to know information and links that you might find interesting.
 
 > [!IMPORTANT]
-> Number series creation doesn't work in Business Central 25.2 on-premises. Skip update 25.2 and install or upgrade to 25.3 or later. Learn more in [Some Known issues in Business Central on-premises](../upgrade/known-issues.md).
+> The download packages for on-premises are no longer available because of an [issue with number series](../upgrade/known-issues.md). Download and upgrade to [25.3](whatsnew-update-25-3.md) or later instead.
 
 ## Hotfixes
 
 Learn about the hotfixes on Microsoft Support at [Update 25.2 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5049396).
-
-> [!IMPORTANT]
-> The download packages for on-premises are no longer available because of a known issue. Please download and upgrade to [25.3](whatsnew-update-25-3.md) or later instead.
 
 ## Feature changes
 
