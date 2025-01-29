@@ -36,11 +36,11 @@ Learn more about using the add-ins in [Using Business Central as your Business I
 
 The processes for deploying the add-ins are different for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises, though the add-ins are the same. This article describes how to get the add-ins for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises. Learn about [!INCLUDE [prod_short](../includes/prod_short.md)] online deployment in [Get the Business Central add-in for Outlook](/dynamics365/business-central/admin-outlook).
 
-There are different options for deploying the add-ins. The option you choose depends on your organization's security policies, the Business Central environment, and how much control over installing the add-in you want to give users. For example, you can install the add-ins automatically for all users in your organization or targeted users only. Or, you can allow users to install the add-ins themselves. Learn more in:
+There are different options for deploying the add-ins. The option you choose depends on your organization's security policies, the Business Central environment, and how much control over installing the add-in you want to give users. For example, you can install the add-ins automatically for all users in your organization or targeted users only. Or, you can allow users to install the add-ins themselves. Learn more in the following sections of this article:
 
 - [Centralized Deployment](#centralized-deployment)
 - [Automated Individual Deployment](#automated-individual-deployment)
-- [Manual Individual Deployment](#manual-individual-deployment) in this article.
+- [Manual Individual Deployment](#manual-individual-deployment)
 
 > [!IMPORTANT]
 > Working with multiple environments? The Business Central add-in for Outlook works with a single Business Central environment. When installed, the environment name is included in the add-in's manifest. This configuration means the add-in will only connect to the environment it was installed from. To use the add-in with a different environment, open the environment and install the add-in again.
@@ -85,7 +85,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
       In the app registration, expose the Business Central API with a scope requiring admin and user consent:
 
       1. Select **Expose an API**.
-      1. If there's no value for **Application ID URI**, slect **Add** > **Save**. Make note of the Application ID URI for later.
+      1. If there's no value for **Application ID URI**, select **Add** > **Save**. Make note of the Application ID URI for later.
       1. On the **Expose an API** page, select **Add a Scope**, and then  the following:
 
          |Setting|Value|Example|
@@ -124,7 +124,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
 1. Prepare Exchange Server
 
-    - Enable access to EWS. For more information, see [Control access to EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)
+    - Enable access to EWS. Learn more in [Control access to EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)
     - Make sure your Exchange account has the Organization Management role or the Org Apps admin role
 
 2. Business Central
@@ -146,16 +146,14 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
 > APPLIES TO: Exchange Online
 
-Sign in to the Azure portal to the App registrations screen.
-
-Create a new registration and specify the following:
+Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) and create a new app registration on your tenant. Create a new registration and specify the following:
 
 |Setting|Value|Example|
 |-|-|-|
 |Name|Specify a meaningful name for the app |Business Central on-prem Outlook Add-in Connector |
-|Redirect URI |Choose **Single-Page application (SPA)**||
-|URI |Enter the base URL for your Business Central on-premises web client |https://MyBCWebServer. |
-|Supported account types |Use the default or **Multitenant options** ||
+|Supported account types |Use the default or select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)** ||
+|Redirect URI - Select a platform box|**Single-Page application (SPA)**||
+|Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client |`https://MyBCWebServer/250` |
 
 Add API the new registered app:
 
@@ -220,7 +218,7 @@ Use the [Set-NAVWebServerInstanceConfiguration](/powershell/module/microsoft.dyn
 |KeyName|KeyValue|Example|
 |-|-|-|
 |ExchangeOnlineAppId|Use the Application (client) ID for the application you registered that connects Outlook and Business Central. |00001111-aaaa-2222-bbbb-3333cccc4444  |
-|ExchangeOnlineAppScope |Use the Scope from the application you registered that authenticates Microsoft Entra ID users with Business Central. The value has the format: \<BC OnPrem app ID>\/\<scope\> |00001111-aaaa-2222-bbbb-3333cccc4444/BusinessCentralOnPrem.Access |
+|ExchangeOnlineAppScope |Use the Scope from the application you registered that authenticates Microsoft Entra ID users with Business Central. The value has the format: \<BC OnPrem app ID>\/\<scope\> |11112222-bbbb-3333-cccc-4444dddd5555/BusinessCentralOnPrem.Access |
 
 Run the cmdlet for each setting using the following syntax:
 
@@ -236,7 +234,7 @@ Centralized Deployment is a feature in Microsoft 365 admin center and Exchange a
 
 1. Verify that Centralized Deployment works for your organization.
 
-   For more information, see [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
+   Learn more in [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 2. In Business Central, choose the ![Lightbulb that opens the Tell Me feature.](../developer/media/search_small.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
 3. Choose **Outlook Add-in Centralized Deployment** > **Next**.
 4. In the **Deploy** column, select the check box for the add-ins that you want to deploy, then choose **Download and Continue**.
@@ -249,7 +247,7 @@ Centralized Deployment is a feature in Microsoft 365 admin center and Exchange a
    > Before you choose **Next**, select the **Go to Microsoft 365 (opens in a new window)** or **Learn more about the add-in for Outlook in Exchange Server** link to open or get help on the admin center you'll use to complete the setup.
 7. Go the folder where the OutlookAddins.zip file was downloaded, and extract the **Content Insights.xml** and **Document View.xml** files from the .zip to a folder of your choice.
 
-    For more information, see [Zip and Unzip files and folders](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5).
+    Learn more in [Zip and Unzip files and folders](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5).
 
 8. For Microsoft 365 deployment, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2163967). For Exchange Server deployment, sign in to Exchange admin center.<!--https://admin.microsoft.com/#/Settings/AddIns-->
 
@@ -280,7 +278,7 @@ For more information about how to complete this step, see [Registering [!INCLUDE
 
 ### Get the add-in (users)
 
-After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. For more information, see [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#onprem).
+After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. Learn more in [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#onprem).
 
 ## <a name="manual-individual-deployment"></a>Manual individual deployment
 
@@ -288,7 +286,7 @@ With this deployment option, users install the Business Central add-in for Outlo
 
 ### Get the add-in (users)
 
-After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. For more information, see [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#onprem).
+After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. Learn more in [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#onprem).
 
 ## Related information  
 
