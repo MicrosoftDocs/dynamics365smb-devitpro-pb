@@ -139,6 +139,9 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
     - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
       Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
+    -  (optional) Register an application in Mirosoft Entra ID for connecting Outlook and Business Central
+
+      This step only applies when using Microsoft Entra authentication. Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
 
 ---
 
@@ -179,13 +182,13 @@ For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/mi
    The base URL is the public URL that Outlook clients use to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The base URL is the root portion of all URLs that are used to access pages in the web client. It must have the format `https://[hostname:port]/[instance]`, such as `https://MyBCWebServer:443/BC252`.
 
     ```powershell
-    Set-NavServerConfiguration -ServerInstance <BC server instance> -KeyName PublicWebBaseUrl -Keyvalue <web client URL>
+    Set-NavServerConfiguration -ServerInstance BC252 -KeyName PublicWebBaseUrl -Keyvalue "https://MyBCWebServer:443/BC252"
     ```
 
 1. Run the Set-NAVServerConfiguration cmdlet to set the `ValidAudiences` key to the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. The value is the web client base URL *without* the port number and server instance, like `https://MyBCWebServer`.
 
     ```powershell
-    Set-NavServerConfiguration -ServerInstance <BC server instance> -KeyName ValidAudiences -Keyvalue <host name>
+    Set-NavServerConfiguration -ServerInstance BC252 -KeyName ValidAudiences -Keyvalue "https://MyBCWebServer"
     ```
 
    If you have a multitenant deployment that uses different host names for tenants, like `https://tenant1.cronusinternational.com`, you have to register each host name as a valid audience. There are two ways you can do this:
@@ -193,13 +196,13 @@ For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/mi
    - On the server-level, use the Set-NavServerConfiguration cmdlet to add each host name to **Valid Audiences** setting of the [!INCLUDE[server](../developer/includes/server.md)] instance. separate each host name with a semi-colon.
 
      ```powershell
-     Set-NavServerConfiguration -ServerInstance <BC server instance> -KeyName ValidAudiences -Keyvalue "<host name 1>;<host name 1>"
+     Set-NavServerConfiguration -ServerInstance BC -KeyName ValidAudiences -Keyvalue "<host name 1>;<host name 1>"
      ```
   
    - On the tenant-level, add the host names to the **Valid Audiences** setting when you mount the tenant by using the [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
 
      ```powershell
-     Mount-NavTenant -ServerInstance <BC server instance> -Tenant <tenant_ID> -ValidAudiences <host name 1>  
+     Mount-NavTenant -ServerInstance <BC server instance> -Tenant <tenant_ID> -ValidAudiences "<host name 1>"
      ```
 
    > [!NOTE]
