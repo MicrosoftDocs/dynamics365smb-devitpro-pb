@@ -38,15 +38,11 @@ AutoFormatType = 2;
 
 The `AutoFormatType` and `AutoFormatExpression` properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios. The settings for the `AutoFormatType` property and the `AutoFormatExpr` property depend on the type of data in the field that you need to format. There are three categories of data: amount, unit amount, and other types of data.
 
-- **Amount** - `AutoFormatType` must be `1` and `AutoFormatExpr` must return a currency code for data to be formatted as amount data.
-- **Unit amount** - `AutoFormatType` must be `2` and `AutoFormatExpr` must return a currency code for data to be formatted as unit amount data.
-- **Other** - `AutoFormatType` must be `0` and `AutoFormatExpr` must be blank for the data to be formatted using the default settings (Standard Format 0).
-
-|AutoFormatType|Data to format| Value| Meaning|
-|--------------|--------------|------|--------|
-|AutoformatType |Other types of data| 0 | Use default settings for formatting (Standard format 0). Means: Use this rounding for quantities or other non-currency values|
-|AutoformatType |Amount             | 1 | Format as amount data. Means: Round as Line Amount in the provided Currency (normaly used for line amounts, document totals, or any accounting values)|
-|AutoformatType |Unit amount        |2  | Format as unit amount data. Means: Round as an allowed Unit Price in the provided Currency (normaly used for unit prices)|
+|Type of data| Value| Meaning|
+|------------|-------------|------------|
+|Other types of data|`AutoFormatType` must be `0` and `AutoFormatExpr` must be blank | Use default settings for formatting (Standard format 0).|
+|Amount      | `AutoFormatType` must be `1` and `AutoFormatExpr` must return a currency code | Format as amount data, for example used for line amounts, document totals, or any accounting values.|
+|Unit amount | `AutoFormatType` must be `2` and `AutoFormatExpr` must return a currency code | Format as unit amount data, for example used for unit prices.|
 
 ## Example 1
 
