@@ -1,12 +1,12 @@
 ---
 title: Error handling in prompt dialogs
-description: Learn how errors are handled in pages of the PromptDialog type in Business Central.
+description: Discover how to manage errors directly within Copilot prompt dialogs in Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 01/07/2025
+ms.date: 01/29/2025
 ms.reviewer: solsen
 ---
 
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE [2024-releasewave2-changed](../includes/2024-releasewave2-changed.md)]
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, errors and messages that are thrown by the code logic in Copilot prompt dialogs surface directly inside the dialog instead of in a separate popup dialog. The `Dialog.Error()`, `Dialog.Message()`, and `ErrorInfo` error patterns are all supported. When you use the `ErrorInfo` type, both the title and description will be shown inside the dialog.
+In [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, errors and messages that are thrown by the code logic in Copilot prompt dialogs now appear directly inside the dialog instead of in a separate popup dialog. This improves the user experience. The `Dialog.Error()`, `Dialog.Message()`, and `ErrorInfo` error patterns are supported. When you use the `ErrorInfo` type, both title and description are shown inside the dialog.
 
 If the code throws more than one message, only the last message will be shown, but the user is informed about the total number of issues. If an error is thrown, any subsequent message is suppressed. If the error or message contains line breaks, these line breaks are ignored, as opposed to when they're rendered in dialogs.
 
@@ -47,7 +47,7 @@ page 50110 PromptDialog
 }
 ```
 
-As a result, when invoking the **Generate** action in the Copilot prompt dialog, the last message is rendered inline in the Copilot prompt dialog, along with an indication that there were more messages.
+When you select the **Generate** action in the Copilot prompt dialog, the last message appears inline in the Copilot prompt dialog, along with an indication that there were more messages.
 
 :::image type="content" source="media/rendering-message-prompt-dialog-s.png" alt-text="Example of rendering a message in the prompt dialog":::
 
@@ -80,7 +80,7 @@ page 50110 PromptDialog
 }
 ```
 
-In this case, the error is rendered inline.
+Here, the error appears inline.
 
 :::image type="content" source="media/rendering-error-prompt-dialog-s2.png" alt-text="Example of rendering error thrown in prompt dialog":::
 
@@ -118,7 +118,7 @@ page 50110 PromptDialog
 }
 ```
 
-In this case, the `ErrorInfo` message part is rendered inline, and the title part is used for the tooltip. The detailed message is ignored. 
+Here, the `ErrorInfo` message appears inline, and the title is used as a tooltip. The detailed message is ignored. 
 
 :::image type="content" source="../media/prompt-dialog-error-info-s.png" alt-text="Example of rendering an errorinfo message in the prompt dialog":::
 
