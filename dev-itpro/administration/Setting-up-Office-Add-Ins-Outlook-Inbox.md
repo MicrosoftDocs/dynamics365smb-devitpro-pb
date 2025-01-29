@@ -153,7 +153,7 @@ Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) and c
 |Name|Specify a meaningful name for the app |Business Central on-prem Outlook Add-in Connector |
 |Supported account types |Use the default or select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)** ||
 |Redirect URI - Select a platform box|**Single-Page application (SPA)**||
-|Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client |`https://MyBCWebServer/250` |
+|Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client |`https://MyBCWebServer` |
 
 Add API the new registered app:
 
@@ -180,7 +180,7 @@ For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/mi
     Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname PublicWebBaseUrl -Keyvalue <web client URL>
     ```
 
-1. Run the Set-NAVServerConfiguration cmdlet to set the `ValidAudiences` key to the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. The value is the web client base URL *without* the port number and server instance, like `https://MyNavWebServer`.
+1. Run the Set-NAVServerConfiguration cmdlet to set the `ValidAudiences` key to the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. The value is the web client base URL *without* the port number and server instance, like `https://MyBCWebServer`.
 
     ```powershell
     Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname ValidAudiences -Keyvalue <host name>
