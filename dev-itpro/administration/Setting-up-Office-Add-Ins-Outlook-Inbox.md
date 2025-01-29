@@ -14,6 +14,8 @@ author: jswymer
 
 If your organization uses Exchange Server or Exchange Online (alone or as part of a Microsoft 365 subscription), [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises supports integration with Outlook that enables users to complete [!INCLUDE[prod_short](../developer/includes/prod_short.md)] business tasks from their Outlook inbox. As the admin, you can configure [!INCLUDE [prod_short](../includes/prod_short.md)] so that users can connect to [!INCLUDE [prod_short](../includes/prod_short.md)] data from Outlook.
 
+This article describes how to get the add-ins for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises. Learn about [!INCLUDE [prod_short](../includes/prod_short.md)] online deployment in [Get the Business Central add-in for Outlook](/dynamics365/business-central/admin-outlook).
+
 ## Overview
 
 ### About the add-in
@@ -33,8 +35,6 @@ Each add-in is provided as an XML manifest file, which must be installed in Outl
 Learn more about using the add-ins in [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin).
 
 ### About deployment
-
-The processes for deploying the add-ins are different for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises, though the add-ins are the same. This article describes how to get the add-ins for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises. Learn about [!INCLUDE [prod_short](../includes/prod_short.md)] online deployment in [Get the Business Central add-in for Outlook](/dynamics365/business-central/admin-outlook).
 
 There are different options for deploying the add-ins. The option you choose depends on your organization's security policies, the Business Central environment, and how much control over installing the add-in you want to give users. For example, you can install the add-ins automatically for all users in your organization or targeted users only. Or, you can allow users to install the add-ins themselves. Learn more in the following sections of this article:
 
