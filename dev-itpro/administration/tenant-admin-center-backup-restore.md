@@ -33,6 +33,7 @@ For more information about permissions sets and user groups, see [Assign Permiss
 
 - Environments can only be restored if the customer has a paid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription.
 - Each environment can be restored up to 10 times in a calendar month.
+- An environment can be restored to any time up to 28 days ago. It is not possible to restore an environment to a time more than 28 days ago.
 - An environment can only be restored within the same Azure region and country/region ([!INCLUDE[prod_short](../developer/includes/prod_short.md)] localization) as the original environment.
 - A production environment can be restored to an environment of type **Production** or **Sandbox**. A sandbox environment can only be restored to a **Sandbox** environment.
 - When you restore a sandbox environment, all development extensions (that is, extensions published directly from Visual Studio Code) aren't available in the restored environment&mdash;even if they were present at the point-in-time you're restoring to). Additionally, any per-tenant extensions that depend on such development extensions are also not available.
