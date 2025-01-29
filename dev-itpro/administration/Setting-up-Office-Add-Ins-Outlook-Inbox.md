@@ -30,7 +30,7 @@ If your organization uses Exchange Server or Exchange Online (alone or as part o
 
 Each add-in is provided as an XML manifest file, which must be installed in Outlook client of any user that wants this functionality. These files describe how to activate the add-ins and connect to Business Central when they're used in Outlook.
 
-For more information about what you do with the add-ins, see [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin).
+Learn more about using the add-ins in [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin).
 
 ### About deployment
 
@@ -55,7 +55,9 @@ The authentication and authorization that can be used depends on whether you're 
 
 #### [Exchange Online](#tab/exchangeonline)
 
-To use Exchange Online, configure Business Central to use Microsoft Entra authentication. The Business Central add-in uses NAA (Nested App Authentication) for a secure, single sign-on experience with Outlook and your users' Entra ID account. It also supports multi-factor authentication if configured in Microsoft 365.
+To use Exchange Online, configure Business Central to use Microsoft Entra authentication. Learn more in [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
+
+The Business Central add-in uses NAA (Nested App Authentication) for a secure, single sign-on experience with Outlook and your users' Entra ID account. It also supports multi-factor authentication if configured in Microsoft 365.
 
 #### [Exchange Server](#tab/exchangeserver)
 
@@ -168,8 +170,8 @@ Use the [Set-NAVWebServerInstanceConfiguration](/powershell/module/microsoft.dyn
 
 |KeyName|KeyValue|Example|
 |-|-|-|
-|ExchangeOnlineAppId|Specify the app ID for the Entra app you registered to connect Business Central to Outlook |00001111-aaaa-2222-bbbb-3333cccc4444  |
-|ExchangeOnlineAppScope |Specify the Exchange Online app scope in the format: \<BC OnPrem app ID>\/\<scope\> |00001111-aaaa-2222-bbbb-3333cccc4444/BusinessCentralOnPrem.Access |
+|ExchangeOnlineAppId|Use the Application (client) ID for the application you registered that connects Outlook and Business Central. |00001111-aaaa-2222-bbbb-3333cccc4444  |
+|ExchangeOnlineAppScope |Use the Scope from the application you registered that authenticates Microsoft Entra ID users with Business Central. The value has the format: \<BC OnPrem app ID>\/\<scope\> |00001111-aaaa-2222-bbbb-3333cccc4444/BusinessCentralOnPrem.Access |
 
 Run the cmdlet for each setting using the following syntax:
 
