@@ -109,7 +109,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
       Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
 
    - Register an application in Mirosoft Entra ID for connecting Outlook and Business Central
-   
+
      Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
 
    - Configure the Business Central web server instance to work with Exchange Online
@@ -144,26 +144,32 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
 #### Register an app that connects Outlook and Business Central
 
-Sign in to the Azure portal and go to the App registrations screen. 
+> APPLIES TO: Exchange Online
 
-Create a new registration and specify the following: 
+Sign in to the Azure portal to the App registrations screen.
 
-|Setting|Value|Example||
-||||
+Create a new registration and specify the following:
+
+|Setting|Value|Example|
+|-|-|-|
 |Name|Specify a meaningful name for the app |Business Central on-prem Outlook Add-in Connector |
 |Redirect URI |Choose **Single-Page application (SPA)**||
 |URI |Enter the base URL for your Business Central on-premises web client |https://MyBCWebServer. |
 |Supported account types |Use the default or **Multitenant options** ||
- 
-With your new app selected, go to API permissions for that app. 
 
-Choose Add a permission, then Microsoft Graph, and Delegated permissions. From the list of available permissions, select User.Read and Mail.ReadWrite and then choose Add permissions. 
+Add API the new registered app:
 
-Add another permission from the tab named APIs my organization uses. Search for the name of the app that authenticates Microsoft Entra ID users with Business Central (this is not the app you registered to connect Outlook and Business Central), and add the scope you created earlier. 
+With the new registered app open, select **API permissions** > **Add a permission**.
+
+- In the **Microsoft APIs** tab, select **Microsoft Graph**, and **Delegated permissions**. From the list of available permissions, select **User.Read** and **Mail.ReadWrite** and then select **Add permissions**.
+
+- In the **APIs my organization uses** tab, search for the name of the app that authenticates Microsoft Entra ID users with Business Central (this is not the app you registered to connect Outlook and Business Central), and add the scope you created earlier.
+
+Select **Add permissions** to save the changes.
 
 #### <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins
 
-> APPLIES TO: Exchange Online deployment, Exchang Server deployment
+> APPLIES TO: Exchange Online, Exchang Server
 
 For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
@@ -205,7 +211,7 @@ For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/mi
 
 ## Configure the Business Central web server instance to work with Exchange Online
 
-> APPLIES TO: Exchange Online deployment
+> APPLIES TO: Exchange Online
 
 This task is only required when working with Exchange Online. To complete this task, you need the application (client) ID of the registered application used for Business Central.authentication in Microsost Entra.
 
