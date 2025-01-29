@@ -2,7 +2,7 @@
 title: "AutoFormatType property"
 description: "Sets a value that determines how data is formatted, together with the AL expression in the AutoFormatExpression Property."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 01/29/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -31,7 +31,7 @@ AutoFormatType = 2;
 
 ## Property value  
 
-`1`, `2`, `3`, `10`, or `11`. For an explanation of these values and examples, see [Formatting Decimal Values in Fields](../devenv-format-field-data.md).  
+`0`, `1`, `2`, `3`, `10`, or `11`. For an explanation of all of these values, see [Formatting decimal values in fields](../devenv-format-field-data.md). In the following table, the values for formatting decimal values `0`, `1`, and `2` are explained.
   
 
 ## Remarks
@@ -66,7 +66,7 @@ For example, this results in a value like `7,564`.
 
 ## Example 2
 
-The following example is similar to the previous example, except it adds a $ sign before the amount.
+The following example is similar to the previous example, except it adds a `$` sign before the amount.
 
 ```AL
 AutoFormatExpression = '1,USD';
