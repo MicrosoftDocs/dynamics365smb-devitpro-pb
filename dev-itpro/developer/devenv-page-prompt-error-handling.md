@@ -38,7 +38,7 @@ page 50110 PromptDialog
             {
                 trigger OnAction()
                 begin
-                    Message('First message, which isn't shown in the prompt dialog');
+                    Message('First message, which isn''t shown in the prompt dialog');
                     Message('Last message, which is shown in the prompt dialog');
                 end;
             }
