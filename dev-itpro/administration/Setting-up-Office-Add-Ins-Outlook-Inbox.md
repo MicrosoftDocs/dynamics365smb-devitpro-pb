@@ -95,7 +95,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
       |User consent display name|Specify a meaningful name for user consent.|Have full access to Business Central|
       |User consent description|Specify a meaningful description.|Allow the application full access to Dynamics 365 on your behalf.|
 
-   Learn more in [Configure an application to expose a web API](/entra/identity-platform/quickstart-configure-app-expose-web-apis#add-a-scope)
+   Learn more in [Configure an application to expose a web API](/entra/identity-platform/quickstart-configure-app-expose-web-apis#add-a-scope).
 
 1. Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
 
@@ -103,11 +103,11 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
 1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
-   Learn more in [Configure the server instance to work with the add-ins](#configure-the-includeserver-instance-to-work-with-add-ins)
+   Learn more in [Configure the server instance to work with the add-ins](#configure-the-includeserver-instance-to-work-with-add-ins).
 
 1. Register an application in Microsoft Entra ID for connecting Outlook and Business Central
 
-   Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
+   Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central).
 
 1. Configure the Business Central web server instance to work with Exchange Online
 
@@ -174,7 +174,6 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
    ---
    Learn more in [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
-
 
 ### <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with add-ins
 
