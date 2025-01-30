@@ -10,11 +10,9 @@ author: jswymer
 ---
 # Set Up the Business Central Add-In for Outlook with Business Central On-premises
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+> **APPLIES TO:** Business Central on-premises. For Business Central online, learn more in [Get the add-in for Outlook](/dynamics365/business-central/admin-outlook)
 
 If your organization uses Exchange Server or Exchange Online (alone or as part of a Microsoft 365 subscription), [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises supports integration with Outlook that enables users to complete [!INCLUDE[prod_short](../developer/includes/prod_short.md)] business tasks from their Outlook inbox. As the admin, you can configure [!INCLUDE [prod_short](../includes/prod_short.md)] so that users can connect to [!INCLUDE [prod_short](../includes/prod_short.md)] data from Outlook.
-
-This article describes how to get the add-ins for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises. Learn about [!INCLUDE [prod_short](../includes/prod_short.md)] online deployment in [Get the Business Central add-in for Outlook](/dynamics365/business-central/admin-outlook).
 
 ## Overview
 
@@ -64,6 +62,8 @@ The Business Central add-in uses NAA (Nested App Authentication) for a secure, s
 With Exchange Server, EWS and Autodiscover try to find the local Exchange Server. Business Central can be configured to use either NavUserPassword or Microsoft Entra authentication.
 
 ---
+
+[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 ## Prepare for deployment
 
