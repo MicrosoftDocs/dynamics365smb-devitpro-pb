@@ -149,28 +149,39 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
 > APPLIES TO: Connecting to Exchange Online and Exchange Server
 
-Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) and create a new app registration on your tenant. Create a new registration with the following settings:
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Create a new app registration on your tenant with the following settings:
 
-|Setting|Value|Example|
-|-|-|-|
-|Name|Specify a meaningful name for the app |Business Central on-premises Outlook Add-in Connector |
-|Supported account types |Use the default or select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)** ||
-|Redirect URI - Select a platform box|**Single-Page application (SPA)**||
-|Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client |`https://MyBCWebServer` |
+    |Setting|Value|Example|
+    |-|-|-|
+    |Name|Specify a meaningful name for the app |Business Central on-premises Outlook Add-in Connector |
+    |Supported account types |Use the default or select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)** ||
+    |Redirect URI - Select a platform box|**Single-Page application (SPA)**||
+    |Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client |`https://MyBCWebServer` |
 
-Add the following API permissions the new registered app:
+   Learn more in [](register-app-azure.md#register-an-application-in-microsoft-entra-id).
 
-With the new registered app open, select **API permissions** > **Add a permission**.
+1. Add the following API permissions the new registered app.
 
-- In the **Microsoft APIs** tab, select **Microsoft Graph**, and **Delegated permissions**. From the list of available permissions, select **User.Read** and **Mail.ReadWrite** and then select **Add permissions**.
+   With the new registered app open, select **API permissions** > **Add a permission**. The required permissions are different for connecting to Exchange Online and Exchange Server:
 
-- In the **APIs my organization uses** tab, search for the name of the registered app that authenticates Microsoft Entra ID users with Business Central and add the scope you created earlier. This app isn't the app you registered to connect Outlook and Business Central.
+   #### [Permissions for Exchange Online](#tab/exchange-onl-perms)
 
-Select **Add permissions** to save the changes.
+   - In the **Microsoft APIs** tab, select **Microsoft Graph**, and **Delegated permissions**. From the list of available permissions, select **User.Read** and **Mail.ReadWrite**.
 
-Learn more in [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis) of the Azure documentation.
+   - In the **APIs my organization uses** tab, search for the name of the registered app that authenticates Microsoft Entra ID users with Business Central and add the scope you created earlier. This app isn't the app you registered to connect Outlook and Business Central.
 
-#### <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins
+   Select **Add permissions** to save the changes.
+
+   #### [Permissions for Exchange Server](#tab/exchange-srv-perms)
+
+   In the **Microsoft APIs** tab, select **Microsoft Graph** > **Delegated permissions**. From the list of available permissions, select **EWS.AccessAsUser.All**. Select **Add permissions** to save changes.
+
+   ---
+
+   Learn more in [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
+
+### <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with add-ins
 
 > APPLIES TO: Connecting to Exchange Online and Exchange Server
 
