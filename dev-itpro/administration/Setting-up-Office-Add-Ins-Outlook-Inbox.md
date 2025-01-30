@@ -76,71 +76,67 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
    - Assign users a Microsoft 365 license.
    - Make sure your Microsoft 365 account has at least the **Exchange Administrator** role.
 
-2. Prepare Business Central
+1. Set up Business Central for Microsoft Entra authentication.
 
-   - Set up Microsoft Entra authentication.
+   Learn more in [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
-      Learn more in [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
+   In the app registration, expose the Business Central API with a scope requiring admin and user consent:
 
-      In the app registration, expose the Business Central API with a scope requiring admin and user consent:
+   1. Select **Expose an API**.
+   1. If there's no value for **Application ID URI**, select **Add** > **Save**. Make note of the Application ID URI for later.
+   1. On the **Expose an API** page, select **Add a scope** and configure these settings:
 
-      1. Select **Expose an API**.
-      1. If there's no value for **Application ID URI**, select **Add** > **Save**. Make note of the Application ID URI for later.
-      1. On the **Expose an API** page, select **Add a scope** and configure these settings:
+      |Setting|Value|Example|
+      |-|-|-|
+      |Scope name|Specify a meaningful name for a permission scope.|BusinessCentralOnPrem.Access|
+      |Consent|Choose **Admins and users**.||
+      |Admin consent display name|Specify a meaningful name for admin consent.|Access Business Central as the signed-in user|
+      |Admin consent description|Specify a meaningful description.|Business Central is a business management solution that helps organizations work smarter, adapt faster, and perform better.|
+      |User consent display name|Specify a meaningful name for user consent.|Have full access to Business Central|
+      |User consent description|Specify a meaningful description.|Allow the application full access to Dynamics 365 on your behalf.|
 
-         |Setting|Value|Example|
-         |-|-|-|
-         |Scope name|Specify a meaningful name for a permission scope.|BusinessCentralOnPrem.Access|
-         |Consent|Choose **Admins and users**.||
-         |Admin consent display name|Specify a meaningful name for admin consent.|Access Business Central as the signed-in user|
-         |Admin consent description|Specify a meaningful description.|Business Central is a business management solution that helps organizations work smarter, adapt faster, and perform better.|
-         |User consent display name|Specify a meaningful name for user consent.|Have full access to Business Central|
-         |User consent description|Specify a meaningful description.|Allow the application full access to Dynamics 365 on your behalf.|
+   Learn more in [Configure an application to expose a web API](/entra/identity-platform/quickstart-configure-app-expose-web-apis#add-a-scope)
 
-      Learn more in [Configure an application to expose a web API](/entra/identity-platform/quickstart-configure-app-expose-web-apis#add-a-scope)
+1. Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
 
-   - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
+   Learn more in [Configure SSL to secure the connection to web client](../deployment/configure-ssl-web-client-connection.md).
 
-      Learn more in [Configure SSL to secure the connection to web client](../deployment/configure-ssl-web-client-connection.md).
+1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
-   - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
+   Learn more in [Configure the server instance to work with the add-ins](#configure-the-includeserver-instance-to-work-with-add-ins)
 
-      Learn more in [Configure the server instance to work with the add-ins](#configure-the-includeserver-instance-to-work-with-add-ins)
+1. Register an application in Microsoft Entra ID for connecting Outlook and Business Central
 
-   - Register an application in Microsoft Entra ID for connecting Outlook and Business Central
+   Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
 
-     Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
+1. Configure the Business Central web server instance to work with Exchange Online
 
-   - Configure the Business Central web server instance to work with Exchange Online
+   Learn more in [Configure the Business Central web server instance to work with Exchange Online](#configure-the-business-central-web-server-instance-to-work-with-exchange-online).
 
-      Learn more in [Configure the Business Central web server instance to work with Exchange Online](#configure-the-business-central-web-server-instance-to-work-with-exchange-online).
+1. Set the authentication email on user accounts to the user's Microsoft 365 email address.
 
-   - Set the authentication email on user accounts to the user's Microsoft 365 email address.
-
-      Learn more in [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality help.
+   Learn more in [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality help.
 
 ### [Deploying to Exchange Server](#tab/exchange)
 
 1. Prepare Exchange Server
 
-    - Enable access to EWS. Learn more in [Control access to EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)
-    - Make sure your Exchange account has the Organization Management role or the Org Apps admin role
+   - Enable access to EWS. Learn more in [Control access to EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)
+   - Make sure your Exchange account has the Organization Management role or the Org Apps admin role
 
-1. Prepare Business Central
+1. Set up Business Central for Microsoft Entra authentication or NavUserPassword.
 
-    - Set up Microsoft Entra authentication or NavUserPassword.
+   Learn more in [Authenticating users with Microsoft Entra ID](authenticating-users-with-azure-ad-openid-connect.md) or [Authenticating users with NavUserPassword](authenticating-users-with-navuserpassword.md)
 
-      Learn more in [Authenticating users with Microsoft Entra ID](authenticating-users-with-azure-ad-openid-connect.md) or [Authenticating users with NavUserPassword](authenticating-users-with-navuserpassword.md)
+1. Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
 
-    - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
+   Learn more in [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
+1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
-      Learn more in [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
-    - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
+   Learn more in [Configure the server instance to work with the Office Add-ins](#configure-the-includeserver-instance-to-work-with-add-ins)
+1. (optional) Register an application in Microsoft Entra ID for connecting Outlook and Business Central
 
-      Learn more in [Configure the server instance to work with the Office Add-ins](#configure-the-includeserver-instance-to-work-with-add-ins)
-    - (optional) Register an application in Microsoft Entra ID for connecting Outlook and Business Central
-
-      This step only applies when using Microsoft Entra authentication. Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
+   This step only applies when using Microsoft Entra authentication. Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
 
 ---
 
