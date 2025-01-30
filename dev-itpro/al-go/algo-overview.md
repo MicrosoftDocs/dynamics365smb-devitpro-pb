@@ -1,9 +1,9 @@
 ---
 title: Overview of AL-Go
-description: Overview of how to use AL-Go for Business Central.
+description: Overview of how to use AL-Go templates and actions to streamline and automate DevOps processes for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 10/11/2023
+ms.date: 01/30/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
