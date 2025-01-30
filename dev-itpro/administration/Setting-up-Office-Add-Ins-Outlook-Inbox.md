@@ -95,8 +95,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
          |Admin consent display name|Specify a meaningful name for admin consent.|Access Business Central as the signed-in user|
          |Admin consent description |Specify a meaningful, accompanying description |Business Central is a comprehensive business management solution that organizations work smarter, adapt faster, and perform better. |
          |User consent display name|Specify a meaningful name that for user consent.|Have full access to Business Central|
-         |User consent description|Specify a meaningful, accompanying description. 
-         |Allow the application full access to Dynamics 365 on your behalf.|
+         |User consent description|Specify a meaningful, accompanying description.|Allow the application full access to Dynamics 365 on your behalf.|
 
       Learn more in [Configure an application to expose a web API](/entra/identity-platform/quickstart-configure-app-expose-web-apis#add-a-scope)
 
@@ -127,7 +126,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
     - Enable access to EWS. Learn more in [Control access to EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)
     - Make sure your Exchange account has the Organization Management role or the Org Apps admin role
 
-2. Prepare Business Central
+1. Prepare Business Central
 
     - Set up Microsoft Entra authentication or NavUserPassword.
 
