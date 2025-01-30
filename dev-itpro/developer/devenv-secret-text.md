@@ -18,7 +18,7 @@ The [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) is d
 ## The lifetime of a credential
 
 When a credential isn't protected by the `NonDebuggable` attribute on a procedure scope or in the variable it's contained in, it's vulnerable to being exposed
-in a debugging session or a snapshot for its entire lifetime in AL code. This lifetime can be split into three distinct phases.
+in a debugging session or a snapshot for its entire lifetime in AL code. This lifetime can be split into three distinct phases; retrieval, transit, and consumption. Read more about the three phases in the next sections.
 
 ### Retrieval
 
@@ -65,7 +65,7 @@ A credential transits through AL code to reach the points where it's consumed. T
 
 1. Assignment to variables
 2. Use as a parameter to call a procedure/trigger
-3. Becoming the return value of a function call
+3. Becoming the return value of a method call
 
 The [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) guarantees that the value remains nondebuggable by preventing any assignment from itself to any debuggable type. This constraint includes the `Variant` data type. As a result, the `NonDebuggable` attribute is only required during retrieval
 and can be omitted for the rest of the lifetime of a credential, as all intermediate destinations are automatically protected.
@@ -97,7 +97,7 @@ end;
 
 ### Consumption
 
-The credential is consumed when it's used to perform an operation. A common example is communicating with an external web service via the AL HttpClient
+Finally, the credential is consumed when it's used to perform an operation. A common example is communicating with an external web service via the AL HttpClient
 where the following steps might be required:
 
 1. Creating an authentication header for the request with the credential.
@@ -156,18 +156,15 @@ procedure SendAuthenticatedRequestToApi(UriTemplate: Text; BearerToken: SecretTe
 
 ## Built-in methods
 
+The `SecretText` data type provides a set of built-in methods that allow for working with the values in a secure way. The following sections describe the most important methods.
+
 ### The Unwrap method
 
-The `Unwrap` method allows the value to be extracted from a `SecretText` to a textual destination for compatibility reasons.
-It's only permitted when building applications for the 'OnPrem' scope and its use produces a warning unless it's called
-inside a procedure with the `NonDebuggable` attribute. It's not recommended to use this method for any other use except .NET
-interoperability.
+The `Unwrap` method allows the value to be extracted from a `SecretText` to a textual destination for compatibility reasons. It's only permitted when building applications for the 'OnPrem' scope and its use produces a warning unless it's called inside a procedure with the `NonDebuggable` attribute. It's not recommended to use this method for any other use except .NET interoperability.
 
 ### The SecretStrSubstNo method
 
-The `SecretStrSubstNo` method allows for composing different values of type `SecretText` without revealing their values.
-Its behavior is identical to the `StrSubstNo` method on `Text` values with the important difference that its parameters and return value
-are of type `SecretText`.
+The `SecretStrSubstNo` method allows for composing different values of type `SecretText` without revealing their values. Its behavior is identical to the `StrSubstNo` method on `Text` values with the important difference that its parameters and return value are of type `SecretText`.
 
 Some examples are demonstrated in the following snippet:
 
@@ -192,5 +189,5 @@ end;
 ## Related information
 
 [SecretText data type](methods-auto/secrettext/secrettext-data-type.md)  
-[NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md)  
-[Http Client](methods-auto/httpclient/httpclient-data-type.md)
+[NonDebuggable attribute](methods/devenv-nondebuggable-attribute.md)  
+[HttpClient](methods-auto/httpclient/httpclient-data-type.md)
