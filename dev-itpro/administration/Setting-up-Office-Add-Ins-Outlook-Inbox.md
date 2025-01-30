@@ -158,7 +158,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
     |Redirect URI - Select a platform box|**Single-Page application (SPA)**||
     |Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client |`https://MyBCWebServer` |
 
-   Learn more in [](register-app-azure.md#register-an-application-in-microsoft-entra-id).
+   Learn more in [Register an application in Microsoft Entra ID](register-app-azure.md#register-an-application-in-microsoft-entra-id).
 
 1. Add the following API permissions the new registered app.
 
@@ -177,8 +177,8 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
    In the **Microsoft APIs** tab, select **Microsoft Graph** > **Delegated permissions**. From the list of available permissions, select **EWS.AccessAsUser.All**. Select **Add permissions** to save changes.
 
    ---
-
    Learn more in [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
+
 
 ### <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with add-ins
 
