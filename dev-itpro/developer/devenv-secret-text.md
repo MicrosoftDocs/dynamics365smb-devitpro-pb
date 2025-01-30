@@ -1,20 +1,19 @@
 ---
-title: "Protecting sensitive values with the SecretText data type"
+title: Protecting sensitive values with the SecretText data type
 description: The SecretText data type is designed to protect sensitive values from being exposed when debugging.
 author: SusanneWindfeldPedersen
 ms.author: sodragon
 ms.custom: bap-template
-ms.date: 12/20/2023
-
+ms.date: 01/30/2025
 ms.topic: conceptual
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ---
 
 # Protecting sensitive values with the SecretText data type
 
 [!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
-[SecretText data type](methods-auto/secrettext/secrettext-data-type.md) is designed to protect sensitive values from being exposed through the AL debugger when doing regular or snapshot debugging. Its use is recommended for applications that need to handle any kind of credentials like API keys, custom licensing tokens, or similar.
+The [SecretText data type](methods-auto/secrettext/secrettext-data-type.md) is designed to protect sensitive values from being exposed through the AL debugger when doing regular or snapshot debugging. Its use is recommended for applications that need to handle any kind of credentials like API keys, custom licensing tokens, or similar.
 
 ## The lifetime of a credential
 
@@ -99,13 +98,13 @@ end;
 ### Consumption
 
 The credential is consumed when it's used to perform an operation. A common example is communicating with an external web service via the AL HttpClient
-where the following steps may be required:
+where the following steps might be required:
 
 1. Creating an authentication header for the request with the credential.
-2. Adding the credential to the body of a request for the initial log-in.
+2. Adding the credential to the body of a request for the initial sign in.
 3. Adding an API key to the parameters of a request
 
-The AL HttpClient and all the intermediate types required to make a request support method, which accept the `SecretText` data type, so that the values can be passed directly to the AL runtime without being revealed to the debugger.
+The AL HttpClient and all the intermediate types required to make a request support method, which accepts the `SecretText` data type, so that the values can be passed directly to the AL runtime without being revealed to the debugger.
 
 The following code snippet demonstrates how all the before mentioned scenarios can be implemented through these methods.
 
