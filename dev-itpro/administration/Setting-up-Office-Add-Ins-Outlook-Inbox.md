@@ -106,7 +106,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
    - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
-      Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
+      Learn more in [Configure the server instance to work with the add-ins](#configure-the-includeserver-instance-to-work-with-add-ins)
 
    - Register an application in Microsoft Entra ID for connecting Outlook and Business Central
 
@@ -114,7 +114,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
    - Configure the Business Central web server instance to work with Exchange Online
 
-      Learn more in [Configure the web server instance to work with the Office Add-ins](#configure-the-includeserver-instance-to-work-with-the-office-add-ins).
+      Learn more in [Configure the Business Central web server instance to work with Exchange Online](#configure-the-business-central-web-server-instance-to-work-with-exchange-online).
 
    - Set the authentication email on user accounts to the user's Microsoft 365 email address.
 
@@ -138,7 +138,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
       Learn more in [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
     - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
-      Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
+      Learn more in [Configure the server instance to work with the Office Add-ins](#configure-the-includeserver-instance-to-work-with-add-ins)
     - (optional) Register an application in Microsoft Entra ID for connecting Outlook and Business Central
 
       This step only applies when using Microsoft Entra authentication. Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
