@@ -1,33 +1,43 @@
 ---
 title: Working with labels
-description: Labels syntax and usage in Business Central.
-ms.reviewer: jswymer
-ms.date: 09/20/2023
+description: Learn how to work with translatable string constants displayed in the Business Central client.
+ms.reviewer: solsen
+ms.date: 01/30/2025
 ms.topic: conceptual
 ms.author: brobledodiaz
 author: blrobl
 ms.collection: get-started
+ms.custom: evergreen
 ---
 
 # Working with labels
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
-Labels are string constants displayed in the [!INCLUDE[prod_short](includes/prod_short.md)] client that can be translated into multiple languages, such as captions, descriptions, or messages. This way, the user interface can be displayed in different languages. For more information on how translation is carried out in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Multilanguage development](devenv-work-with-translation-files.md).
+Labels are string constants displayed in the [!INCLUDE[prod_short](includes/prod_short.md)] client that can be translated into multiple languages, such as captions, descriptions, or messages. This way, the user interface can be displayed in different languages.
+
+Learn more about how translation works in [!INCLUDE[prod_short](includes/prod_short.md)] in [Multilanguage development](devenv-work-with-translation-files.md).
 
 ## Label syntax
 
-Labels have a specific syntax defined by a text constant followed by three optional parameters. They must be comma-separated, but the order of the parameters isn't enforced. The parameters that you can set are described in the following table.
+Labels have a specific syntax defined by a text constant followed by three optional parameters. They must be comma-separated, but the order of the parameters isn't enforced. The parameters that you can set are; `Comment`, `Locked`, and `MaxLength` and described in the following table.
 
 | Parameter   | Type  | Description|
 |-------------|-------|--------------|
-|**Comment**  |Text   | Used for general comments about the label, specifically about the placeholders in that label.|
-|**Locked**   |Boolean| When Locked is set to **true**, the label shouldn't be translated. The default value is **false**.|
-|**MaxLength**|Integer| Determines how much of the label is used. If no maximum length is specified, the string can be any length.|
+|`Comment`  |Text   | Used for general comments about the label, specifically about the placeholders in that label.|
+|`Locked`   |Boolean| When `Locked` is set to `true`, the label shouldn't be translated. The default value is `false`.|
+|`MaxLength`|Integer| Determines long the label can be. If no maximum length is specified, the string can be any length.|
 
 ## Using labels
 
-A label can take the form of four different AL structures. It can be the property value of certain page and report properties, the label data type variable, and a report or a page label. The different possibilities are explained in more detail in the following section.
+A label can take be defined in four different AL structures. It can be:
+
+- The property value of certain page and report properties
+- The label data type variable
+- A report label
+- A page label
+
+The different possibilities are explained in more detail in the following section.
 
 ### Properties
 
