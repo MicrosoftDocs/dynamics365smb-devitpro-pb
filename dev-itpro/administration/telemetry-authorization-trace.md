@@ -165,14 +165,14 @@ Occurs when the company has opened successfully. This data is emitted both for o
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**RT0004**|
-| guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26)] |
+| guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)] |
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the server to open the company. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the report executed.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements**.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to open the company**. The time has the format hh:mm:ss.sssssss.|
-| userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26)] |
+| userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)] |
 
 
 ** From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
@@ -208,8 +208,8 @@ Occurs when a company has failed to open. This data is emitted both for online a
 |companyId|Specifies the ID of the company that the user tried to open. This dimension is available from version 25 (and was backported to versions 22, 23, and 24, where it is available in the latest CU.) |
 |failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#opencompanyfailures) section for details.|
 |eventId|**RT0002**|
-| guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26)] |
-| userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26)]|
+| guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)] |
+| userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)]|
 
 
 ## <a name="opencompanyfailures"></a>Troubleshooting (Open Company) authorization failures
