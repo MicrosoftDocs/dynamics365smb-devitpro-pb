@@ -1,5 +1,5 @@
 ---
-title: Set up the add-ins for Outlook integration with Business Central on-premises
+title: Set up the add-ins for Outlook in Business Central on-premises
 description: Learn how to configure your Business Central on-premises solution so that users can work with Business Central data in Outlook.
 ms.custom: bap-template
 ms.date: 01/21/2025
@@ -8,7 +8,7 @@ ms.service: dynamics-365-op
 ms.topic: conceptual
 author: jswymer
 ---
-# Set Up the Business Central Add-In for Outlook with Business Central On-premises
+# Set up the add-ins for Outlook in Business Central on-premises
 
 > **APPLIES TO:** Business Central on-premises. For Business Central online, learn more in [Get the add-in for Outlook](/dynamics365/business-central/admin-outlook)
 
@@ -41,7 +41,7 @@ There are different options for deploying the add-ins. The option you choose dep
 - [Manual Individual Deployment](#manual-individual-deployment)
 
 > [!IMPORTANT]
-> Working with multiple environments? The Business Central add-in for Outlook works with a single Business Central environment. When installed, the environment name is included in the add-in's manifest. This configuration means the add-in will only connect to the environment it was installed from. To use the add-in with a different environment, open the environment and install the add-in again.
+> Working with multiple environments? The Business Central add-in for Outlook works with a single Business Central environment. When installed, the environment name is included in the add-in's manifest. With this configuration, the add-in only connects to the environment it was installed from. To use the add-in with a different environment, open the environment and install the add-in again.
 
 ### Mail server
 
@@ -55,7 +55,7 @@ The authentication and authorization that can be used depends on whether you're 
 
 To use Exchange Online, configure Business Central to use Microsoft Entra authentication. Learn more in [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
-The Business Central add-in uses NAA (Nested App Authentication) for a secure, single sign-on experience with Outlook and your users' Entra ID account. It also supports multi-factor authentication if configured in Microsoft 365.
+The Business Central add-in uses NAA (Nested App Authentication) for secure single sign-on with Outlook and Microsoft Entra ID accounts. It also supports multifactor authentication if configured in Microsoft 365.
 
 #### [Exchange Server](#tab/exchangeserver)
 
@@ -108,7 +108,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
       Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
 
-   - Register an application in Mirosoft Entra ID for connecting Outlook and Business Central
+   - Register an application in Microsoft Entra ID for connecting Outlook and Business Central
 
      Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
 
@@ -127,11 +127,11 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
     - Enable access to EWS. Learn more in [Control access to EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)
     - Make sure your Exchange account has the Organization Management role or the Org Apps admin role
 
-2. Business Central
+2. Prepare Business Central
 
     - Set up Microsoft Entra authentication or NavUserPassword.
 
-      Learn more in [Authenticating issers with Microsoft Entra ID](authenticating-users-with-azure-ad-openid-connect.md) or [Authenticating users with NavUserPassword](authenticating-users-with-navuserpassword.md)
+      Learn more in [Authenticating users with Microsoft Entra ID](authenticating-users-with-azure-ad-openid-connect.md) or [Authenticating users with NavUserPassword](authenticating-users-with-navuserpassword.md)
 
     - Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
 
@@ -139,21 +139,21 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
     - Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
       Learn more in [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
-    -  (optional) Register an application in Mirosoft Entra ID for connecting Outlook and Business Central
+    - (optional) Register an application in Microsoft Entra ID for connecting Outlook and Business Central
 
       This step only applies when using Microsoft Entra authentication. Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
 
 ---
 
-#### Register an app that connects Outlook and Business Central
+### Register an app that connects Outlook and Business Central
 
-> APPLIES TO: Exchange Online, Exchange Server
+> APPLIES TO: Connecting to Exchange Online and Exchange Server
 
 Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) and create a new app registration on your tenant. Create a new registration with the following settings:
 
 |Setting|Value|Example|
 |-|-|-|
-|Name|Specify a meaningful name for the app |Business Central on-prem Outlook Add-in Connector |
+|Name|Specify a meaningful name for the app |Business Central on-premises Outlook Add-in Connector |
 |Supported account types |Use the default or select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)** ||
 |Redirect URI - Select a platform box|**Single-Page application (SPA)**||
 |Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client |`https://MyBCWebServer` |
@@ -164,7 +164,7 @@ With the new registered app open, select **API permissions** > **Add a permissio
 
 - In the **Microsoft APIs** tab, select **Microsoft Graph**, and **Delegated permissions**. From the list of available permissions, select **User.Read** and **Mail.ReadWrite** and then select **Add permissions**.
 
-- In the **APIs my organization uses** tab, search for the name of the app that authenticates Microsoft Entra ID users with Business Central (this is not the app you registered to connect Outlook and Business Central), and add the scope you created earlier.
+- In the **APIs my organization uses** tab, search for the name of the registered app that authenticates Microsoft Entra ID users with Business Central and add the scope you created earlier. This app isn't the app you registered to connect Outlook and Business Central.
 
 Select **Add permissions** to save the changes.
 
@@ -172,7 +172,7 @@ Learn more in [Add permissions to access web APIs](/azure/active-directory/devel
 
 #### <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins
 
-> APPLIES TO: Exchange Online, Exchange Server
+> APPLIES TO: Connecting to Exchange Online and Exchange Server
 
 For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
@@ -191,7 +191,7 @@ For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/mi
     Set-NavServerConfiguration -ServerInstance BC252 -KeyName ValidAudiences -Keyvalue "https://MyBCWebServer"
     ```
 
-   If you have a multitenant deployment that uses different host names for tenants, like `https://tenant1.cronusinternational.com`, you have to register each host name as a valid audience. There are two ways you can do this:
+   If you have a multitenant deployment with different host names for tenants, like `https://tenant1.cronusinternational.com`, register each host name as a valid audience. You can do this task in two ways:
 
    - On the server-level, use the Set-NavServerConfiguration cmdlet to add each host name to **Valid Audiences** setting of the [!INCLUDE[server](../developer/includes/server.md)] instance. separate each host name with a semi-colon.
 
@@ -206,7 +206,7 @@ For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/mi
      ```
 
    > [!NOTE]
-   > If there's more than one host name, separate each host name with a semi-colon. You can specify the host names on the server-level, tenant-level, or a combination of both.  
+   > If there's more than one host name, separate each host name with a semicolon. Specify the host names at the server level, tenant level, or both.
 
 1. (Optional) Run the `Set-NAVServerConfiguration` cmdlet to set the `ExchangeAuthenticationMetadataLocation` key.
 
@@ -216,11 +216,11 @@ For this task, use the [Set-NAVServerConfiguration cmdlet](/powershell/module/mi
 
    This setting is used to confirm the identity of the signing authority when using Exchange authentication. In part, the value includes the URL of the Exchange mail server. The field accepts a wild-card URL. So for example, if the URL of the Exchange mail server is `https://mail.cronus.com`, then you can set the field to `https://mail.cronus.com*`. The default value is `https://outlook.office365.com/`. Complete this step only if you want to use a value other than the default.
 
-## Configure the Business Central web server instance to work with Exchange Online
+### Configure the Business Central web server instance to work with Exchange Online
 
-> APPLIES TO: Exchange Online
+> APPLIES TO: Connecting to Exchange Online
 
-This task is only required when working with Exchange Online. To complete this task, you need the application (client) ID of the registered application used for Business Central authentication in Microsost Entra.
+This task is only required when working with Exchange Online. To complete this task, you need the application (client) ID of the registered application used for Business Central authentication in Microsoft Entra.
 
 Use the [Set-NAVWebServerInstanceConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navwebserverinstanceconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to configure the following web server instance settings:
 
@@ -266,7 +266,7 @@ Complete the following steps:
 1. At this point, you're finished with the work you need to do in Business Central, so you can choose **Done**.
 
    >[!TIP]
-   > Before you choose **Next**, select the **Go to Microsoft 365 (opens in a new window)** or **Learn more about the add-in for Outlook in Exchange Server** link to open or get help on the admin center you'll use to complete the setup.
+   > Before you choose **Next**, select the **Go to Microsoft 365 (opens in a new window)** or **Learn more about the add-in for Outlook in Exchange Server** link to open or get help on the admin center.
 1. Go the folder where the OutlookAddins.zip file was downloaded, and extract the **Content Insights.xml** and **Document View.xml** files from the .zip to a folder of your choice.
 
     Learn more in [Zip and Unzip files and folders](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5).
@@ -288,13 +288,13 @@ After you finish, you can always change the deployment in admin center, like ass
 
 ## <a name="automated-individual-deployment"></a>Automated individual deployment
 
-With this deployment option, users install the Business Central add-in for Outlook for themselves only. This deployment option uses a registered application in Microsoft Entra ID with Exchange web service permission, so users don't have to upload the add-ins manually in Outlook. When using the add-in, users don't have to sign in the Business Central because authentication against the Exchange or Microsoft 365 is done using an authentication token.
+With this deployment option, users install the Business Central add-in for Outlook themselves. This option uses a registered application in Microsoft Entra ID with Exchange web service permission, so users don't have to upload the add-ins manually in Outlook. Users don't have to sign in to Business Central to use the add-ins, because authentication against Exchange or Microsoft 365 is done using an authentication token.
 
-If you've prepared for deployment as described earlier, then as an admin, the only remaining task is to set up an application registration in Microsoft Entra ID. Then, users can start to install the add-in in Outlook.
+If you prepared for deployment as described earlier, as an admin, the only remaining task is to set up an application registration in Microsoft Entra ID. Then, users can install the add-in in Outlook.
 
 ### Register an application in Microsoft Entra ID
 
-In the Azure portal, add an application registration for Business Central in your Microsoft Entra tenant. Give the registered app delegated permission to Exchange web service (EWS). After you've added the registered app in Microsoft Entra ID, set up Business Central to use it by using the **Set up your Microsoft Entra accounts** assisted setup.
+In the Azure portal, add an application registration for Business Central in your Microsoft Entra tenant. Give the registered app delegated permission to Exchange web service (EWS). After you add the registered app in Microsoft Entra ID, set up Business Central to use it by using the **Set up your Microsoft Entra accounts** assisted setup.
 
 Learn more in [Registering Business Central on-premises in Microsoft Entra ID](register-app-azure.md).
 
@@ -304,7 +304,7 @@ After you complete the Business Central setup, users deploy the add-in by using 
 
 ## <a name="manual-individual-deployment"></a>Manual individual deployment
 
-With this deployment option, users install the Business Central add-in for Outlook for themselves only. Unlike the individual acquisition (automated) deployment option, users will have to download the add-in files from Business Central, then manually add them in Outlook. If you've prepared your deployment as described earlier, the only step remaining is for users to get the add-in.  
+With this deployment option, users install the Business Central add-in for Outlook for themselves only. Unlike the individual acquisition (automated) deployment option, users have to download the add-in files from Business Central, then manually add them in Outlook. If you prepared your deployment as described earlier, the only step remaining is for users to get the add-in.  
 
 ### Get the add-in (users)
 
