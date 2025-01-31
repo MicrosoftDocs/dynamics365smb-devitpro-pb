@@ -15,7 +15,8 @@ author: jswymer
 If your organization uses Exchange Server or Exchange Online (alone or as part of a Microsoft 365 subscription), [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises supports integration with Outlook that enables users to complete [!INCLUDE[prod_short](../developer/includes/prod_short.md)] business tasks from their Outlook inbox. As the admin, you can configure [!INCLUDE [prod_short](../includes/prod_short.md)] so that users can connect to [!INCLUDE [prod_short](../includes/prod_short.md)] data from Outlook.
 
 > [!IMPORTANT]
-> From February 1, 2025, Microsoft Exchange Online requires all Outlook add-ins to use Nested App Authentication (NAA). If you have an existing setup for the Outlook add-in, you have to modify it to ensure it continues to work. Learn more in [Modify existing Outlook add-in setup to support Nested App Authentication (NAA)](outlook-addins-setup-naa-modification.md). 
+> From February 1, 2025, Microsoft Exchange Online requires all Outlook add-ins to use Nested App Authentication (NAA). If you have an existing setup for the Outlook add-in, you have to modify it to ensure it continues to work. Learn more in [Modify existing Outlook add-in setup to support Nested App Authentication (NAA)](outlook-addins-setup-naa-modification.md).
+
 ## Overview
 
 ### About the add-in
