@@ -20,8 +20,9 @@ Complete these steps to continue using the Business Central add-in for Outlook a
 
 1. Upgrade Business Central to at least version [25.3](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-2-a8fc49a4-610e-4123-8bcd-a0aa5f3c9776), [24.9](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65), or [23.15](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d) depending on your current version.
 
-1. Verify 
-1. Find your app registration in the Microsoft Azure portal that you have already set up to authenticate Microsoft Entra users with Business Central, and take note of the Display name, and also the Scope from the Expose an API screen. 
+1. Expose the API of the registered app in the Microsoft Azure portal used to authenticate Microsoft Entra users with Business Central.
+
+    Open the app registration in [Microsoft Entr admin center](https://entra.microsoft.com). Selet Expose the API with a scope find  app registration in the Microsoft Azure portal that you have already set up to authenticate Microsoft Entra users with Business Central, and take note of the Display name, and also the Scope from the Expose an API screen. 
 1. Create a new app registration specifically for connecting Outlook with Business Central:
 
    - Set the Redirect URI platform to **Single-page application (SPA)** and enter the root URI to your Business Central Web server instance, such as `https://MyBCWebServer`.
