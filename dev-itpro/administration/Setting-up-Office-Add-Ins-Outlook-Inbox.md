@@ -152,8 +152,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
     |Name|Specify a meaningful name for the app |Business Central on-premises Outlook Add-in Connector |
     |Supported account types |Use the default or select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)** ||
     |Redirect URI - Select a platform box|**Single-Page application (SPA)**||
-    |Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client |`https://MyBCWebServer` |
-
+    |Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client. For Exchange Online, the URL has the format `brk-multihub://<web server hostname>` <br /> For Exchange Server - `https://<web server hostname>`"|Exchange Online: `brk-multihub://MyBCWebServer`<br /> Exchange Server: `https://MyBCWebServer`|
    Learn more in [Register an application in Microsoft Entra ID](register-app-azure.md#register-an-application-in-microsoft-entra-id).
 
 1. Add the following API permissions the new registered app.
