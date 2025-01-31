@@ -10,7 +10,7 @@ ms.author: soalex
 
 # Onboard new users with the Welcome banner
 
-When a user signs in to a new company for the first time, [!INCLUDE [prod_short](../includes/prod_short.md)] shows a welcome banner that provides a clear call-to-action.  
+When a user signs into a new company for the first time, [!INCLUDE [prod_short](../includes/prod_short.md)] shows a welcome banner that provides a clear call-to-action.  
 
 :::image type="content" source="../media/onboarding-banner.png" alt-text="illustration of Business Central with welcome banner with a clear call-to-action for where to get started.":::
 
@@ -24,8 +24,8 @@ In a CRONUS evaluation company, the banner serves the purpose of highlighting co
 
 > [!IMPORTANT]
 > The *Business Manager Evaluation* role was created specifically for the design of the CRONUS evaluation experience. The experience that is tied to this role through page customization or other directly impacted experiences *may change* from release to release, unlike other code-related changes that are governed by our breaking change rules.
-> 
->  We recommend that you build your own evaluation and demo experiences on another role if you want to make sure that your scenarios aren't impacted by these changes. For example, elements on the Business Manager Role Center have been hidden for the *Business Manager Evaluation* role through page customization that is saved to the *Business Manager Evaluation* role. More changes for the Role Center or other pages may come in the future for the *Business Manager Evaluation* role based on Microsoft's need to pivot the CRONUS evaluation experience from the My Company experience.
+>
+> We recommend that you build your own evaluation and demo experiences on another role if you want to make sure that your scenarios aren't impacted by these changes. For example, elements on the Business Manager Role Center have been hidden for the *Business Manager Evaluation* role through page customization that is saved to the *Business Manager Evaluation* role. More changes for the Role Center or other pages may come in the future for the *Business Manager Evaluation* role based on Microsoft's need to pivot the CRONUS evaluation experience from the My Company experience.
 
 ## The welcome banner in My Company and other non-evaluation companies
 
