@@ -16,23 +16,23 @@ Starting February 1, 2025, Microsoft Exchange Online requires all Outlook add-in
 
 ## Modify the existing Outlook add-in setup
 
-Complete these steps to continue using the Business Central add-in for Outlook after 1st February 2025.
+Complete these steps to continue using the Business Central add-in for Outlook after February 01, 2025.
 
 1. Upgrade Business Central to at least version [25.3](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-2-a8fc49a4-610e-4123-8bcd-a0aa5f3c9776), [24.9](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65), or [23.15](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d) depending on your current version.
 
 1. Expose the API of the registered app in the Microsoft Azure portal used to authenticate Microsoft Entra users with Business Central.
 
-    Open the app registration in [Microsoft Entr admin center](https://entra.microsoft.com). Selest Expose the API with a scope find  app registration in the Microsoft Azure portal that you have already set up to authenticate Microsoft Entra users with Business Central, and take note of the Display name, and also the Scope from the Expose an API screen. 
+   [!INCLUDE[webserver](../developer/includes/includes_expose_api.md)]
+
 1. Create a new app registration specifically for connecting Outlook with Business Central:
 
-   - Set the Redirect URI platform to **Single-page application (SPA)** and enter the root URI to your Business Central Web server instance, such as `https://MyBCWebServer`.
+   Follow the instructions in [Register an app that connects Outlook and Business Central](Setting-up-Office-Add-Ins-Outlook-Inbox.md#register-an-app-that-connects-outlook-and-business-central).
 
-   - Under **API permissions**, add the Microsoft Graph permissions **User.Read** and **Mail.ReadWrite**, and add the permission from your authentication app registration in step 2 by looking up the app display name. Take note of the Application (client) ID of your new Outlook connector app.
-1. Run the Set-NAVWebServerInstanceConfiguration cmdlet to configure the Business Central Web server with the following settings, then restart the web server instance. 
-Set ExchangeOnlineAppId to the application (client) ID from step 3.
-Set ExchangeOnlineAppScope to the Scope from step 2.
+1. Configure the Business Central web server instance to work with Exchange Online
 
-Learn more details aboout these step in [Set up the add-ins for Outlook in Business Central on-premises](Setting-up-Office-Add-Ins-Outlook-Inbox.md).
+   Learn more in [Configure the Business Central web server instance to work with Exchange Online](Setting-up-Office-Add-Ins-Outlook-Inbox.md#configure-the-business-central-web-server-instance-to-work-with-exchange-online).
+
+Learn more details about these steps in [Set up the add-ins for Outlook in Business Central on-premises](Setting-up-Office-Add-Ins-Outlook-Inbox.md).
 
 ## Why is this action needed?
 
@@ -46,5 +46,4 @@ To continue using legacy Exchange Online tokens and delay the automatic switch
 [Installing a minor update for version 24](upgrade/upgrading-cumulative-update-v24.md)  
 [Installing a minor update for version 23](upgrade/upgrading-cumulative-update-v23.md)
 [Set up the add-ins for Outlook in Business Central on-premises](Setting-up-Office-Add-Ins-Outlook-Inbox.md)  
-[Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin)  
-[]
+[Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin)
