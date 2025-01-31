@@ -22,7 +22,7 @@ Complete these steps to continue using the Business Central add-in for Outlook a
 
 1. Expose the API of the registered app in the Microsoft Azure portal used to authenticate Microsoft Entra users with Business Central.
 
-    Open the app registration in [Microsoft Entr admin center](https://entra.microsoft.com). Selet Expose the API with a scope find  app registration in the Microsoft Azure portal that you have already set up to authenticate Microsoft Entra users with Business Central, and take note of the Display name, and also the Scope from the Expose an API screen. 
+    Open the app registration in [Microsoft Entr admin center](https://entra.microsoft.com). Selest Expose the API with a scope find  app registration in the Microsoft Azure portal that you have already set up to authenticate Microsoft Entra users with Business Central, and take note of the Display name, and also the Scope from the Expose an API screen. 
 1. Create a new app registration specifically for connecting Outlook with Business Central:
 
    - Set the Redirect URI platform to **Single-page application (SPA)** and enter the root URI to your Business Central Web server instance, such as `https://MyBCWebServer`.
