@@ -1,16 +1,15 @@
 ---
-title: How-to topic template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.topic: how-to #Required; don't change.
-ms.collection: get-started #Required; If this isn't a getting started article, don't remove the attribute, but leave the value blank. The values for this attribute will be updated over time.
+title: Modifying Outlook add-in setup for Nested App Authentication (NAA).
+description: Learn how to modify your Outlook add-in setup in Business Central to support  Nested App Authentication (NAA).
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: how-to
 ms.date: 01/30/2025
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 
-# Modifying Outlook add-in setup to support Nested App Authentication (NAA)
+# Modifying Outlook add-in setup for Nested App Authentication (NAA)
 
 Starting February 1, 2025, Microsoft Exchange Online requires all Outlook add-ins to use Nested App Authentication (NAA).
 
@@ -42,8 +41,8 @@ To continue using legacy Exchange Online tokens and delay the automatic switch
 
 ## Related information
 
-[Installing a minor update for version 25](upgrade/upgrading-cumulative-update-v25.md)  
-[Installing a minor update for version 24](upgrade/upgrading-cumulative-update-v24.md)  
-[Installing a minor update for version 23](upgrade/upgrading-cumulative-update-v23.md)
+[Install minor update for version 25](../upgrade/upgrading-cumulative-update-v25.md)  
+[Install minor update for version 24](../upgrade/upgrading-cumulative-update-v24.md)  
+[Install minor update for version 23](../upgrade/upgrading-cumulative-update-v23.md)
 [Set up the add-ins for Outlook in Business Central on-premises](Setting-up-Office-Add-Ins-Outlook-Inbox.md)  
-[Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin)
+[Use Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin)

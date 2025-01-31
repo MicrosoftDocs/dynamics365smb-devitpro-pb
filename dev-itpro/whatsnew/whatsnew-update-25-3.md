@@ -34,7 +34,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 - Improved security for Outlook add-in
 
-  As part of our continual efforts to harden security of our online services, the Outlook add-in is silently switching to Nested App Authentication (NAA). No action is required from administrators or end-users.
+  As part of our continual efforts to harden security of our online services, the Outlook add-in is silently switching to Nested App Authentication (NAA). For Business Central online, no action is required from admins or end-users. For on-premises, admins must update the setup to ensure the add-in works after February 1, 2025. Learn more in  [Modify existing Outlook add-in setup to support Nested App Authentication (NAA)](../administration/outlook-addins-setup-naa-modification.md).
 
 ## Localization updates
 
