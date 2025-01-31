@@ -21,7 +21,7 @@ Complete these steps to continue using the Business Central add-in for Outlook a
 
 1. Expose the API of the registered app in the Microsoft Entra ID used to authenticate users with Business Central.
 
-   If your deployment is currntly set up for the Outlook add-in, you already have an app registration in the Microsoft Entra admin center for authenticating Business Central users with Microsoft Entra ID. You might be using this same app registration for connecting Business Central to Outlook, or you might be using a separate app registration. This step applies to the app registration used for user authentication.
+   If your deployment is set up for the Outlook add-in, you already have an app registration in the Microsoft Entra admin center for authenticating Business Central users with Microsoft Entra ID. You might be using this same app registration for connecting Business Central to Outlook, or you might be using a separate app registration. This step applies to the app registration used for user authentication.
 
    [!INCLUDE[webserver](../developer/includes/includes_expose_api.md)]
 
