@@ -26,12 +26,11 @@ Complete these steps to continue using the Business Central add-in for Outlook a
 
 1. Create a new app registration specifically for connecting Outlook with Business Central:
 
-   - Set the Redirect URI platform to **Single-page application (SPA)** and enter the root URI to your Business Central Web server instance, such as `https://MyBCWebServer`.
+   Follow the instructions in [Register an app that connects Outlook and Business Central](Setting-up-Office-Add-Ins-Outlook-Inbox.md#register-an-app-that-connects-outlook-and-business-central).
 
-   - Under **API permissions**, add the Microsoft Graph permissions **User.Read** and **Mail.ReadWrite**, and add the permission from your authentication app registration in step 2 by looking up the app display name. Take note of the Application (client) ID of your new Outlook connector app.
-1. Run the Set-NAVWebServerInstanceConfiguration cmdlet to configure the Business Central Web server with the following settings, then restart the web server instance. 
-Set ExchangeOnlineAppId to the application (client) ID from step 3.
-Set ExchangeOnlineAppScope to the Scope from step 2.
+1. Configure the Business Central web server instance to work with Exchange Online
+
+   Learn more in [Configure the Business Central web server instance to work with Exchange Online](Setting-up-Office-Add-Ins-Outlook-Inbox.md#configure-the-business-central-web-server-instance-to-work-with-exchange-online).
 
 Learn more details aboout these step in [Set up the add-ins for Outlook in Business Central on-premises](Setting-up-Office-Add-Ins-Outlook-Inbox.md).
 
