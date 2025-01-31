@@ -53,7 +53,7 @@ codeunit 50100 "My App Setup"
 In this example, the page **My App Setup Page** is added to ****Guided Experience Item**** as the primary setup object for the app.  
 
 > [!NOTE]  
-> "The Boolean parameter utilized by the IsPrimarySetup variable in the previous example becomes available in 2022 release wave 2. Start preparing already now.
+> The Boolean parameter utilized by the `IsPrimarySetup` variable in the previous example becomes available in 2022 release wave 2. Start preparing already now.
 
 You can insert as many setup objects to **Guided Experience Item** as you like. Everything that is part of setting up the app should be added. If no special steps are required to set up the app before using it, nothing needs to be added.
 
