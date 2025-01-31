@@ -16,7 +16,7 @@ Starting February 1, 2025, Microsoft Exchange Online requires all Outlook add-in
 
 ## Modify the existing Outlook add-in setup
 
-Complete these steps to continue using the Business Central add-in for Outlook after 1st February 2025.
+Complete these steps to continue using the Business Central add-in for Outlook after February 01, 2025.
 
 1. Upgrade Business Central to at least version [25.3](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-2-a8fc49a4-610e-4123-8bcd-a0aa5f3c9776), [24.9](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65), or [23.15](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d) depending on your current version.
 
@@ -32,7 +32,7 @@ Complete these steps to continue using the Business Central add-in for Outlook a
 
    Learn more in [Configure the Business Central web server instance to work with Exchange Online](Setting-up-Office-Add-Ins-Outlook-Inbox.md#configure-the-business-central-web-server-instance-to-work-with-exchange-online).
 
-Learn more details aboout these step in [Set up the add-ins for Outlook in Business Central on-premises](Setting-up-Office-Add-Ins-Outlook-Inbox.md).
+Learn more details about these steps in [Set up the add-ins for Outlook in Business Central on-premises](Setting-up-Office-Add-Ins-Outlook-Inbox.md).
 
 ## Why is this action needed?
 
@@ -46,5 +46,4 @@ To continue using legacy Exchange Online tokens and delay the automatic switch
 [Installing a minor update for version 24](upgrade/upgrading-cumulative-update-v24.md)  
 [Installing a minor update for version 23](upgrade/upgrading-cumulative-update-v23.md)
 [Set up the add-ins for Outlook in Business Central on-premises](Setting-up-Office-Add-Ins-Outlook-Inbox.md)  
-[Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin)  
-[]
+[Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin)
