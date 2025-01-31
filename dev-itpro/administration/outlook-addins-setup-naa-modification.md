@@ -45,6 +45,6 @@ To continue using legacy Exchange Online tokens and delay the automatic switch
 
 [Install minor update for version 25](../upgrade/upgrading-cumulative-update-v25.md)  
 [Install minor update for version 24](../upgrade/upgrading-cumulative-update-v24.md)  
-[Install minor update for version 23](../upgrade/upgrading-cumulative-update-v23.md)
+[Install minor update for version 23](../upgrade/upgrading-cumulative-update-v23.md)  
 [Set up the add-ins for Outlook in Business Central on-premises](Setting-up-Office-Add-Ins-Outlook-Inbox.md)  
 [Use Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin)
