@@ -15,7 +15,8 @@ author: jswymer
 If your organization uses Exchange Server or Exchange Online (alone or as part of a Microsoft 365 subscription), [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises supports integration with Outlook that enables users to complete [!INCLUDE[prod_short](../developer/includes/prod_short.md)] business tasks from their Outlook inbox. As the admin, you can configure [!INCLUDE [prod_short](../includes/prod_short.md)] so that users can connect to [!INCLUDE [prod_short](../includes/prod_short.md)] data from Outlook.
 
 > [!IMPORTANT]
-> From February 1, 2025, Microsoft Exchange Online requires all Outlook add-ins to use Nested App Authentication (NAA). If you have an existing setup for the Outlook add-in, you have to modify it to ensure it continues to work. Learn more in [Modify existing Outlook add-in setup to support Nested App Authentication (NAA)](outlook-addins-setup-naa-modification.md). 
+> From February 1, 2025, Microsoft Exchange Online requires all Outlook add-ins to use Nested App Authentication (NAA). If you have an existing setup for the Outlook add-in, you have to modify it to ensure it continues to work. Learn more in [Modify existing Outlook add-in setup to support Nested App Authentication (NAA)](outlook-addins-setup-naa-modification.md).
+
 ## Overview
 
 ### About the add-in
@@ -90,7 +91,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
 1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
-   Learn more in [Configure the server instance to work with the add-ins](#configure-the-includeserver-instance-to-work-with-add-ins).
+   Learn more in [Configure the server instance to work with the add-ins](#configure-the-business-central-server-instance-to-work-with-add-ins).
 
 1. Register an application in Microsoft Entra ID for connecting Outlook and Business Central
 
@@ -120,7 +121,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
    Learn more in [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
 1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
-   Learn more in [Configure the server instance to work with the Office Add-ins](#configure-the-includeserver-instance-to-work-with-add-ins)
+   Learn more in [Configure the server instance to work with the Office Add-ins](#configure-the-business-central-server-instance-to-work-with-add-ins)
 1. (optional) Register an application in Microsoft Entra ID for connecting Outlook and Business Central
 
    This step only applies when using Microsoft Entra authentication. Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
@@ -162,7 +163,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
    ---
    Learn more in [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
-### <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with add-ins
+### Configure the Business Central server instance to work with add-ins
 
 > APPLIES TO: Connecting to Exchange Online and Exchange Server
 

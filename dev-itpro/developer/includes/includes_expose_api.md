@@ -1,6 +1,6 @@
 In the app registration, expose the Business Central API with a scope requiring admin and user consent:
 
-1. Sign in to [Microsoft Entra admin center](https://entra.microsoft.com) and open the app rgistration.
+1. Sign in to [Microsoft Entra admin center](https://entra.microsoft.com) and open the app registration.
 1. Select **Expose an API**.
 1. If there's no value for **Application ID URI**, select **Add** > **Save**. Make note of the Application ID URI for later.
 1. On the **Expose an API** page, select **Add a scope** and configure these settings:
