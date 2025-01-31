@@ -162,7 +162,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
    ---
    Learn more in [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
-### <a name="server"></a>Configure the Business Central server instance to work with add-ins
+### Configure the Business Central server instance to work with add-ins
 
 > APPLIES TO: Connecting to Exchange Online and Exchange Server
 
