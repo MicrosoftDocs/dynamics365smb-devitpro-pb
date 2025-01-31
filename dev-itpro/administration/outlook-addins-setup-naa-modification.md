@@ -20,7 +20,9 @@ Complete these steps to continue using the Business Central add-in for Outlook a
 
 1. Upgrade Business Central to at least version [25.3](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-2-a8fc49a4-610e-4123-8bcd-a0aa5f3c9776), [24.9](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65), or [23.15](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d) depending on your current version.
 
-1. Expose the API of the registered app in the Microsoft Azure portal used to authenticate Microsoft Entra users with Business Central.
+1. Expose the API of the registered app in the Microsoft Entra ID used to authenticate users with Business Central.
+
+   If your deployment is currntly set up for the Outlook add-in, you already have an app registration in the Microsoft Entra admin center for authenticating Business Central users with Microsoft Entra ID. You might be using this same app registration for connecting Business Central to Outlook, or you might be using a separate app registration. This step applies to the app registration used for user authentication.
 
    [!INCLUDE[webserver](../developer/includes/includes_expose_api.md)]
 
