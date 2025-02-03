@@ -29,13 +29,13 @@ AutoFormatExpression = '<Currency Code>';
 AutoFormatType = 2;
 ```
 
-
 ## Remarks
+
 It applies to fields or columns of the decimal data type.
 
-The AL expression is evaluated when the expression performs updates. Together with the [AutoFormatType Property](devenv-autoformattype-property.md), this property determines how data is formatted. These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currencies or ratios.
+The AL expression is evaluated when the expression performs updates. Together with the [AutoFormatType property](devenv-autoformattype-property.md), this property determines how data is formatted. These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios.
 
-For more information, see [Formatting Decimal Values in Fields](../devenv-format-field-data.md).
+Learn more in [Formatting decimal values in fields](../devenv-format-field-data.md).
 
 ## Example 1
 
@@ -46,8 +46,7 @@ AutoFormatExpression = 'USD';
 AutoFormatType = 1;
 ```
 
-For example, this will result in a value like 7,564.00.
-
+This example results in a value like `7,564.00`.
 
 Changing the **AutoFormatExpression** property to `ÌRD` sets the format of decimal values to IDR \(Indonesian rupiah\).
 
@@ -55,7 +54,8 @@ Changing the **AutoFormatExpression** property to `ÌRD` sets the format of deci
 AutoFormatExpression = 'IRD';
 AutoFormatType = 1;
 ```
-For example, this will result in a value like 7,564.
+
+This example results in a value like `7,564`.
 
 ## Example 2
 
@@ -66,11 +66,11 @@ AutoFormatExpression = '1,USD';
 AutoFormatType = 10;
 ```
 
-For example, this will result in a value like $7,564.00.
+This example results in a value like `$7,564.00`.
 
 ## Example 3
 
-This example prefixes the decimal value with a $, includes a thousand separator, and has a maximum of two decimal places, such as $76,453.21:
+This example prefixes the decimal value with a `$`, includes a thousand separator, and has a maximum of two decimal places, such as `$76,453.21`:
 
 ```AL
 AutoFormatType = 1;
@@ -79,16 +79,18 @@ AutoFormatExpression = '$<precision, 2:2><standard format, 0>';
 
 ## Example 4
 
-This example writes the number with 2 decimals, encloses the number in parenthesis if negative and 'Zero' if the value is 0.
-This uses the standard .NET numeric formatting system https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings.
+> [!NOTE]
+> [!INCLUDE [2025rw1_and_later](../includes/2025rw1_and_later.md)]
+
+This example writes the number with two decimals, encloses the number in parenthesis if negative and 'Zero' if the value is `0`.
+This uses the standard .NET numeric formatting system. Learn more in [Custom numeric format strings](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ```AL
 AutoFormatType = 1;
 AutoFormatExpression = '<FormatString>#,##0.00;(#,##0.00);Zero';
 ```
 
-
 ## Related information
 
-[AutoFormatType Property](devenv-autoformattype-property.md)  
-[DecimalPlaces Property](devenv-decimalplaces-property.md)
+[AutoFormatType property](devenv-autoformattype-property.md)  
+[DecimalPlaces property](devenv-decimalplaces-property.md)
