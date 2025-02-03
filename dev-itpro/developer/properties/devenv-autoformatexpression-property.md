@@ -2,7 +2,7 @@
 title: "AutoFormatExpression property"
 description: "Sets an AL expression that specifies how to format data."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 01/29/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,6 +24,7 @@ Sets an AL expression that specifies how to format data.
 
 
 ## Syntax
+
 ```AL
 AutoFormatExpression = '<Currency Code>';
 AutoFormatType = 2;
@@ -31,15 +32,15 @@ AutoFormatType = 2;
 
 ## Remarks
 
-It applies to fields or columns of the decimal data type.
+Applies to fields or columns of the decimal data type.
 
-The AL expression is evaluated when the expression performs updates. Together with the [AutoFormatType property](devenv-autoformattype-property.md), this property determines how data is formatted. These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currency or ratios.
+The AL expression is evaluated when the expression performs updates. Together with the [AutoFormatType property](devenv-autoformattype-property.md), this property determines how data is formatted. These two properties are only used to format decimal data types, such as amounts that can be stated in a foreign currencies or ratios.
 
 Learn more in [Formatting decimal values in fields](../devenv-format-field-data.md).
 
 ## Example 1
 
-The following example uses **AutoFormatExpression** property to set the format of decimal values to USD.
+The following example uses `AutoFormatExpression` property to set the format of decimal values to USD.
 
 ```AL
 AutoFormatExpression = 'USD';
@@ -48,7 +49,7 @@ AutoFormatType = 1;
 
 This example results in a value like `7,564.00`.
 
-Changing the **AutoFormatExpression** property to `ÌRD` sets the format of decimal values to IDR \(Indonesian rupiah\).
+Changing the `AutoFormatExpression` property to `ÌRD` sets the format of decimal values to IDR \(Indonesian rupiah\).
 
 ```AL
 AutoFormatExpression = 'IRD';
@@ -59,7 +60,7 @@ This example results in a value like `7,564`.
 
 ## Example 2
 
-The following example is similar to the previous example, except it adds a $ sign before the amount.
+The following example is similar to the previous example, except it adds a `$` sign before the amount.
 
 ```AL
 AutoFormatExpression = '1,USD';
