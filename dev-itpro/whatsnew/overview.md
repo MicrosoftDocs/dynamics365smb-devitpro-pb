@@ -4,7 +4,7 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 01/15/2025
+ms.date: 02/03/2025
 ms.custom: bap-template
 ms.topic: whats-new 
 ---
@@ -28,6 +28,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|25.4|Application Build 25.4 Platform Build 25.2|February 2025|[Update 25.4 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-4.md)|
 |25.3|Application Build 25.3 Platform Build 25.2|January 2025|[Update 25.3 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-3.md)|
 |25.2|Application Build 25.2 Platform Build 25.2|December 2024|[Update 25.2 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-2.md)|
 |25.1|Application Build 25.1 Platform Build 25.0|November 2024|[Update 25.1 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-1.md)|
