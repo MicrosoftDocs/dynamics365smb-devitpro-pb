@@ -77,6 +77,17 @@ AutoFormatType = 1;
 AutoFormatExpression = '$<precision, 2:2><standard format, 0>';
 ```
 
+## Example 4
+
+This example writes the number with 2 decimals, encloses the number in parenthesis if negative and 'Zero' if the value is 0.
+This uses the standard .NET numeric formatting system https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings.
+
+```AL
+AutoFormatType = 1;
+AutoFormatExpression = '<FormatString>#,##0.00;(#,##0.00);Zero';
+```
+
+
 ## Related information
 
 [AutoFormatType Property](devenv-autoformattype-property.md)  
