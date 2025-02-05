@@ -160,7 +160,7 @@ Add-on extensions, which are already published to the tenant can be installed an
 
 ### Installing and uninstalling published add-on extensions
 
-There are four bound actions available on the **extensions** endpoint: `Microsoft.NAV.install`, `Microsoft.NAV.uninstall`, `Microsoft.NAV.uninstallAndDeleteExtensionData`, and `Microsoft.NAV.unpublish`.
+There are three bound actions available on the **extensions** endpoint: `Microsoft.NAV.install`, `Microsoft.NAV.uninstall`, and `Microsoft.NAV.uninstallAndDeleteExtensionData`.
 
 Issue a POST extension using the bound actions. See the example below, use the same syntax for the other bound actions.
 
@@ -170,20 +170,20 @@ POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micros
 Authorization: Bearer {token}
 ```
 
-> [!NOTE]
-> The `Microsoft.NAV.unpublish` bound action is introduced in version 25.4. It's used for unpublishing an app, which isn't installed. You can choose to either uninstall and then unpublish the app, or you can install a new version of the app, which leaves the old app uninstalled, and then you can unpublish the app to remove it from the extensions list.
-
 ### Unpublishing an uninstalled app
 
-There are one bound action available on the **extensions** endpoint: `Microsoft.NAV.install`, `Microsoft.NAV.uninstall` and `Microsoft.NAV.uninstallAndDeleteExtensionData`.
+On the **extensions** endpoint, the `Microsoft.NAV.unpublish` is available to unpublish an uninstalled app.
 
-Issue a POST extension using the bound actions. See the example below.
+Issue a POST extension using the bound action. See the example below.
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.install
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.unpublish
 
 Authorization: Bearer {token}
 ```
+
+> [!NOTE]
+> The `Microsoft.NAV.unpublish` bound action is introduced in version 25.4. It's used for unpublishing an app, which isn't installed. You can choose to either uninstall and then unpublish the app, or you can install a new version of the app, which leaves the old app uninstalled, and then you can unpublish the app to remove it from the extensions list.
 
 
 ### Upload and install a per-tenant extension
