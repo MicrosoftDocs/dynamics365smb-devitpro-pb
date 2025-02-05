@@ -17,6 +17,15 @@ This article describes the features that are up for removal or that have been re
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
+## Changes in 2027 release wave 1 (version 30.0)
+
+### <a name="odata-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a OData endpoint (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+
+
 ## Changes in 2025 release wave 1 (version 26.0)
 
 ### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (removal)
@@ -39,6 +48,13 @@ This article describes the features that are up for removal or that have been re
 |Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 26, it's no longer possible to expose a Microsoft page as a SOAP endpoint. If you need to have SOAP integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
 
 [!INCLUDE[soap_deprecacation](../includes/soap_deprecation_note.md)]
+
+### <a name="odata-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a OData endpoint (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+
 
 ### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
 
