@@ -1,8 +1,8 @@
 ---
 title: Introduction to automation APIs
 description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
-author: henrikwh
-ms.date: 01/20/2025
+author: SusanneWindfeldPedersen
+ms.date: 02/04/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -160,7 +160,22 @@ Add-on extensions, which are already published to the tenant can be installed an
 
 ### Installing and uninstalling published add-on extensions
 
-There are three bound actions available on the **extensions** endpoint: `Microsoft.NAV.install`, `Microsoft.NAV.uninstall` and `Microsoft.NAV.uninstallAndDeleteExtensionData`.
+There are four bound actions available on the **extensions** endpoint: `Microsoft.NAV.install`, `Microsoft.NAV.uninstall`, `Microsoft.NAV.uninstallAndDeleteExtensionData`, and `Microsoft.NAV.unpublish`.
+
+Issue a POST extension using the bound actions. See the example below, use the same syntax for the other bound actions.
+
+```json
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.install
+
+Authorization: Bearer {token}
+```
+
+> [!NOTE]
+> The `Microsoft.NAV.unpublish` bound action is introduced in version 25.4. It's used for unpublishing an app, which isn't installed. You can choose to either uninstall and then unpublish the app, or you can install a new version of the app, which leaves the old app uninstalled, and then you can unpublish the app to remove it from the extensions list.
+
+### Unpublishing an uninstalled app
+
+There are one bound action available on the **extensions** endpoint: `Microsoft.NAV.install`, `Microsoft.NAV.uninstall` and `Microsoft.NAV.uninstallAndDeleteExtensionData`.
 
 Issue a POST extension using the bound actions. See the example below.
 
@@ -169,6 +184,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micros
 
 Authorization: Bearer {token}
 ```
+
 
 ### Upload and install a per-tenant extension
 
