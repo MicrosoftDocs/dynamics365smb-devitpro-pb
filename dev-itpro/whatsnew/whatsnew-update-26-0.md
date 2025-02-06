@@ -21,79 +21,79 @@ The following table provides an overview of the new features in 26.0. For a comp
 | Product Area (L2)             | Feature Name                                                               |
 |-------------------------------|----------------------------------------------------------------------------|
 | Application                   | Integrate Field Service with service management                            |
-| Application                   | View item availability in Field Service work orders                        |
-| commerce                      | Delete incorrect e-documents and avoid duplicates                          |
-| commerce                      | Activate sales channels in Shopify Connector                               |
-| commerce                      | Send e-documents via a service and email simultaneously                    |
-| commerce                      | Import and export more data using Shopify metafields                       |
-| commerce                      | Use payments with the E-Document framework                                 |
-| commerce                      | Troubleshoot export issues on Shopify Skipped Records page                 |
-| commerce                      | Generate multiple incoming e-documents for multiple attachments            |
-| commerce                      | Automate embedded attachments in PEPPOL                                    |
-| commerce                      | Use Logiq as a service provider for e-documents                            |
-| commerce                      | Create e-documents from posted sales invoices                              |
-| commerce                      | Process e-documents in two steps                                           |
-| commerce                      | Use the latest update for the Shopify connector                            |
-| commerce                      | Preview incoming e-invoices prior to processing                            |
-| commerce                      | Use e-documents to fix unposted purchase documents                         |
+|                               | View item availability in Field Service work orders                        |
+| Commerce                      | Delete incorrect e-documents and avoid duplicates                          |
+|                       | Activate sales channels in Shopify Connector                               |
+|                       | Send e-documents via a service and email simultaneously                    |
+|                       | Import and export more data using Shopify metafields                       |
+|                       | Use payments with the E-Document framework                                 |
+|                       | Troubleshoot export issues on Shopify Skipped Records page                 |
+|                       | Generate multiple incoming e-documents for multiple attachments            |
+|                       | Automate embedded attachments in PEPPOL                                    |
+|                       | Use Logiq as a service provider for e-documents                            |
+|                       | Create e-documents from posted sales invoices                              |
+|                       | Process e-documents in two steps                                           |
+|                       | Use the latest update for the Shopify connector                            |
+|                       | Preview incoming e-invoices prior to processing                            |
+|                       | Use e-documents to fix unposted purchase documents                         |
 | Copilot and AI                | Enhance purchase order line matching with Copilot                          |
 | Country and regional          | Posting cash documents to projects in Czech localization                   |
-| Country and regional          | Extended text on cash documents in Czech localization                      |
-| Country and regional          | Calculate and post VAT settlement by Activity Code - Italy                 |
-| Country and regional          | Use Peppol PINT A-NZ format in E-documents in Australia and New Zealand    |
-| Country and regional          | Calculate GST on recurring journals for India                              |
-| Country and regional          | Define allowed languages per environment                                   |
-| Country and regional          | Use new Contoso Coffee Demo Dataset CZ in Czechia                          |
-| Country and regional          | Use the payment times reporting in Australia                               |
-| Country and regional          | Use Functional Currency in Czech localization to support to the VAT return |
-| Country and regional          | Use modern search in Czech applications                                    |
-| Country and regional          | Hide rows with zero quantity in Czech document reports                     |
+|           | Extended text on cash documents in Czech localization                      |
+|           | Calculate and post VAT settlement by Activity Code - Italy                 |
+|           | Use Peppol PINT A-NZ format in E-documents in Australia and New Zealand    |
+|           | Calculate GST on recurring journals for India                              |
+|           | Define allowed languages per environment                                   |
+|           | Use new Contoso Coffee Demo Dataset CZ in Czechia                          |
+|           | Use the payment times reporting in Australia                               |
+|           | Use Functional Currency in Czech localization to support to the VAT return |
+|           | Use modern search in Czech applications                                    |
+|           | Hide rows with zero quantity in Czech document reports                     |
 | Development                   | Move tables and fields with data across extensions as part of refactoring  |
-| Development                   | Select extensions to open in Visual Studio Code from the web client        |
-| Development                   | Troubleshoot clients, apps, and add-ins with telemetry                     |
-| Development                   | Mock outbound HttpClient web service calls during testing                  |
-| Development                   | View build metadata in Extension Management page                           |
-| Development                   | Use new properties on a report layout                                      |
-| Development                   | Embed Power BI content in web client with new page type                    |
-| Development                   | Generate launch json from web client                                       |
+|                    | Select extensions to open in Visual Studio Code from the web client        |
+|                    | Troubleshoot clients, apps, and add-ins with telemetry                     |
+|                    | Mock outbound HttpClient web service calls during testing                  |
+|                    | View build metadata in Extension Management page                           |
+|                    | Use new properties on a report layout                                      |
+|                    | Embed Power BI content in web client with new page type                    |
+|                    | Generate launch json from web client                                       |
 | Financial Management          | Analyze subscription billing data with Power BI reports                    |
-| Financial Management          | Require people to set Intrastat classifications on documents               |
-| Financial Management          | Check total purchase amounts on documents                                  |
+|           | Require people to set Intrastat classifications on documents               |
+|           | Check total purchase amounts on documents                                  |
 | Governance and administration | Add support for MultiSubnetFailover                                        |
-| Governance and administration | Support IPv6 for enhanced security and scalability                         |
+|  | Support IPv6 for enhanced security and scalability                         |
 | Reporting and data analysis   | Enhance reports with PDF post-processing capabilities                      |
-| Reporting and data analysis   | Use enhanced analytics for manufacturing                                   |
-| Reporting and data analysis   | Access report and request metadata in Word layouts                         |
-| Reporting and data analysis   | Use enhanced Financial Reporting capabilities                              |
-| Reporting and data analysis   | Use new templates for financial reporting                                  |
+|    | Use enhanced analytics for manufacturing                                   |
+|    | Access report and request metadata in Word layouts                         |
+|    | Use enhanced Financial Reporting capabilities                              |
+|    | Use new templates for financial reporting                                  |
 | Service and platform          | Calculate values only for visible FlowFields                               |
 | Supply chain management       | Use enhanced customer document layout for service management               |
-| Supply chain management       | Cancel production order that have consumption                              |
-| Supply chain management       | Add more columns to various pages to gain more insight                     |
-| Supply chain management       | Allow multiple people to post inventory at the same time                   |
-| Supply chain management       | Experience improved usability in manufacturing                             |
-| Supply chain management       | Receive project items with receipts or put-aways                           |
-| Supply chain management       | Block items or variants from production output                             |
-| Supply chain management       | Avoid document number errors when you post project journals                |
-| Supply chain management       | Handle production output with warehouse put-aways                          |
-| Supply chain management       | Reopen finished production orders                                          |
-| Supply chain management       | Use streamlined product design tools in manufacturing                      |
-| Supply chain management       | Print barcodes from production order                                       |
-| Supply chain management       | Manage document attachments in manufacturing                               |
-| Supply chain management       | Edit item tracked items in Excel on output, consumption, and item journals |
+|        | Cancel production order that have consumption                              |
+|        | Add more columns to various pages to gain more insight                     |
+|        | Allow multiple people to post inventory at the same time                   |
+|        | Experience improved usability in manufacturing                             |
+|        | Receive project items with receipts or put-aways                           |
+|        | Block items or variants from production output                             |
+|        | Avoid document number errors when you post project journals                |
+|        | Handle production output with warehouse put-aways                          |
+|        | Reopen finished production orders                                          |
+|        | Use streamlined product design tools in manufacturing                      |
+|        | Print barcodes from production order                                       |
+|        | Manage document attachments in manufacturing                               |
+|        | Edit item tracked items in Excel on output, consumption, and item journals |
 | Sustainability Management     | Specify default sustainability values for various entities                 |
-| Sustainability Management     | Use enhanced analytics for Sustainability                                  |
-| Sustainability Management     | Capture sustainability data with general journals                          |
-| Sustainability Management     | Use water and waste management with sustainability                         |
-| Sustainability Management     | Enable sustainability Scope 3 value chain for assembly and transfers       |
-| Sustainability Management     | Provide carbon equivalent data for sales based on Scope 3 automation       |
-| Sustainability Management     | Start value chain in purchase process for Scope 3 in sustainability        |
-| Sustainability Management     | Use sustainability Scope 3 value chain in manufacturing                    |
-| Sustainability Management     | Use the new Out of scope emission category                                 |
+|      | Use enhanced analytics for Sustainability                                  |
+|      | Capture sustainability data with general journals                          |
+|      | Use water and waste management with sustainability                         |
+|      | Enable sustainability Scope 3 value chain for assembly and transfers       |
+|      | Provide carbon equivalent data for sales based on Scope 3 automation       |
+|      | Start value chain in purchase process for Scope 3 in sustainability        |
+|      | Use sustainability Scope 3 value chain in manufacturing                    |
+|      | Use the new Out of scope emission category                                 |
 | User experiences              | Preview PDF attachments directly in web client                             |
-| User experiences              | Optimize screen estate usage on the web                                    |
-| User experiences              | Allow adjusting the width of the FactBox pane                              |
-| User experiences              | Use user interface enhancements for better experience                      |
+|               | Optimize screen estate usage on the web                                    |
+|               | Allow adjusting the width of the FactBox pane                              |
+|               | Use user interface enhancements for better experience                      |
 
 ## Upgrade to 26.0
 
