@@ -12,11 +12,11 @@ ms.custom:
 
 # Update 26.0 for Microsoft Dynamics 365 Business Central online 2025 release wave 1
 
-Would you like to know what changes are in update 26.0? Below you find an overview and relevant links to what was done on hotfixes and regulatory features in this update. In addition, we gathered some good to know information and links that you might find interesting.
+This article provides an overvew of new features and general information about update 26.0
 
 ## Features
 
-The following table provides an overview of the new features in 26.0. For a comprehensive list and details of features, consult [Plan and prepare for Dynamics 365 Business Central in 2024 release wave 2](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/).<!--(https://aka.ms/BCReleasePlan)-->
+The following table provides an overview of the new features in 26.0. For a comprehensive list and details of features, consult [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).<!--(https://aka.ms/BCReleasePlan)-->
 
 | Product Area (L2)             | Feature Name                                                               |
 |-------------------------------|----------------------------------------------------------------------------|
@@ -107,7 +107,7 @@ Download on-premises files from Microsoft Support at [Update 26.0 for Business C
 
 ### Business Central Launch Event videos on YouTube
 
-You can find over videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE).
+Visit [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### Discover all partner related resources
 
