@@ -1,0 +1,118 @@
+---
+title: Update 26.0 for Microsoft Dynamics 365 Business Central 2025 release wave 1
+description: Get an overview of new and changed capabilities in the 26.0 update of Business Central online, which is part of 2025 release wave 1.
+ms.author: jswymer
+ms.date: 01/27/2025
+ms.reviewer: jswymer
+ms.topic: conceptual
+author: jswymer
+ms.custom: 
+    - bap-template
+---
+
+# Update 26.0 for Microsoft Dynamics 365 Business Central online 2025 release wave 1
+
+Would you like to know what changes are in update 26.0? Below you find an overview and relevant links to what was done on hotfixes and regulatory features in this update. In addition, we gathered some good to know information and links that you might find interesting.
+
+## Features
+
+The following table provides an overview of the new features in 26.0. For a comprehensive list, consult [Plan and prepare for Dynamics 365 Business Central in 2024 release wave 2](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/).<!--(https://aka.ms/BCReleasePlan)-->
+
+| Product Area (L2)             | Feature Name                                                               |
+|-------------------------------|----------------------------------------------------------------------------|
+| Application                   | Integrate Field Service with service management                            |
+| Application                   | View item availability in Field Service work orders                        |
+| commerce                      | Delete incorrect e-documents and avoid duplicates                          |
+| commerce                      | Activate sales channels in Shopify Connector                               |
+| commerce                      | Send e-documents via a service and email simultaneously                    |
+| commerce                      | Import and export more data using Shopify metafields                       |
+| commerce                      | Use payments with the E-Document framework                                 |
+| commerce                      | Troubleshoot export issues on Shopify Skipped Records page                 |
+| commerce                      | Generate multiple incoming e-documents for multiple attachments            |
+| commerce                      | Automate embedded attachments in PEPPOL                                    |
+| commerce                      | Use Logiq as a service provider for e-documents                            |
+| commerce                      | Create e-documents from posted sales invoices                              |
+| commerce                      | Process e-documents in two steps                                           |
+| commerce                      | Use the latest update for the Shopify connector                            |
+| commerce                      | Preview incoming e-invoices prior to processing                            |
+| commerce                      | Use e-documents to fix unposted purchase documents                         |
+| Copilot and AI                | Enhance purchase order line matching with Copilot                          |
+| Country and regional          | Posting cash documents to projects in Czech localization                   |
+| Country and regional          | Extended text on cash documents in Czech localization                      |
+| Country and regional          | Calculate and post VAT settlement by Activity Code - Italy                 |
+| Country and regional          | Use Peppol PINT A-NZ format in E-documents in Australia and New Zealand    |
+| Country and regional          | Calculate GST on recurring journals for India                              |
+| Country and regional          | Define allowed languages per environment                                   |
+| Country and regional          | Use new Contoso Coffee Demo Dataset CZ in Czechia                          |
+| Country and regional          | Use the payment times reporting in Australia                               |
+| Country and regional          | Use Functional Currency in Czech localization to support to the VAT return |
+| Country and regional          | Use modern search in Czech applications                                    |
+| Country and regional          | Hide rows with zero quantity in Czech document reports                     |
+| Development                   | Move tables and fields with data across extensions as part of refactoring  |
+| Development                   | Select extensions to open in Visual Studio Code from the web client        |
+| Development                   | Troubleshoot clients, apps, and add-ins with telemetry                     |
+| Development                   | Mock outbound HttpClient web service calls during testing                  |
+| Development                   | View build metadata in Extension Management page                           |
+| Development                   | Use new properties on a report layout                                      |
+| Development                   | Embed Power BI content in web client with new page type                    |
+| Development                   | Generate launch json from web client                                       |
+| Financial Management          | Analyze subscription billing data with Power BI reports                    |
+| Financial Management          | Require people to set Intrastat classifications on documents               |
+| Financial Management          | Check total purchase amounts on documents                                  |
+| Governance and administration | Add support for MultiSubnetFailover                                        |
+| Governance and administration | Support IPv6 for enhanced security and scalability                         |
+| Reporting and data analysis   | Enhance reports with PDF post-processing capabilities                      |
+| Reporting and data analysis   | Use enhanced analytics for manufacturing                                   |
+| Reporting and data analysis   | Access report and request metadata in Word layouts                         |
+| Reporting and data analysis   | Use enhanced Financial Reporting capabilities                              |
+| Reporting and data analysis   | Use new templates for financial reporting                                  |
+| Service and platform          | Calculate values only for visible FlowFields                               |
+| Supply chain management       | Use enhanced customer document layout for service management               |
+| Supply chain management       | Cancel production order that have consumption                              |
+| Supply chain management       | Add more columns to various pages to gain more insight                     |
+| Supply chain management       | Allow multiple people to post inventory at the same time                   |
+| Supply chain management       | Experience improved usability in manufacturing                             |
+| Supply chain management       | Receive project items with receipts or put-aways                           |
+| Supply chain management       | Block items or variants from production output                             |
+| Supply chain management       | Avoid document number errors when you post project journals                |
+| Supply chain management       | Handle production output with warehouse put-aways                          |
+| Supply chain management       | Reopen finished production orders                                          |
+| Supply chain management       | Use streamlined product design tools in manufacturing                      |
+| Supply chain management       | Print barcodes from production order                                       |
+| Supply chain management       | Manage document attachments in manufacturing                               |
+| Supply chain management       | Edit item tracked items in Excel on output, consumption, and item journals |
+| Sustainability Management     | Specify default sustainability values for various entities                 |
+| Sustainability Management     | Use enhanced analytics for Sustainability                                  |
+| Sustainability Management     | Capture sustainability data with general journals                          |
+| Sustainability Management     | Use water and waste management with sustainability                         |
+| Sustainability Management     | Enable sustainability Scope 3 value chain for assembly and transfers       |
+| Sustainability Management     | Provide carbon equivalent data for sales based on Scope 3 automation       |
+| Sustainability Management     | Start value chain in purchase process for Scope 3 in sustainability        |
+| Sustainability Management     | Use sustainability Scope 3 value chain in manufacturing                    |
+| Sustainability Management     | Use the new Out of scope emission category                                 |
+| User experiences              | Preview PDF attachments directly in web client                             |
+| User experiences              | Optimize screen estate usage on the web                                    |
+| User experiences              | Allow adjusting the width of the FactBox pane                              |
+| User experiences              | Use user interface enhancements for better experience                      |
+
+## Upgrade to 26.0
+
+New customers automatically get the latest builds of Business Central (26.0). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
+
+## On-premises download packages
+
+Download on-premises files from Microsoft Support at [Update 26.0 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5050249).
+
+## Good to know
+
+### Business Central Launch Event videos on YouTube
+
+You can find over videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE).
+
+### Discover all partner related resources
+
+Are you a partner who wants a list of relevant resources? Learn more in [Resources for Partners](https://aka.ms/BCAll).
+
+### Discover all user related resources
+
+Are you a user who wants a list of relevant resources? Learn more in [Resources for users](https://aka.ms/BCUsers).  
