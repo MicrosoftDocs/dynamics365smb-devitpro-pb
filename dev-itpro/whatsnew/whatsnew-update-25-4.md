@@ -20,7 +20,18 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-- tbd
+- Chat with Copilot from anywhere
+
+  Update 25.4 extends the public preview of Copilot Chat to all Business Central countries and regions. 
+
+  Customers upgrading to this version of Business Central must first enable Chat with Copilot from the Feature Management page. 
+
+  This feature is supported in English. While it can be used in other languages, it might not function as intended. Language quality might vary based on the user's interaction or system settings, which might impact accuracy and the user experience.
+
+  Learn more in [Chat with Copilot](/dynamics365/business-central/chat-with-copilot).
+- [Encrypt data at-rest with customer-managed encryption key](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/encrypt-data-at-rest-customer-managed-encryption-key)
+- [Get list of manageable environments for Microsoft Entra apps](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/get-list-manageable-environments-entra-apps)
+- [Package resources in extensions and access from AL](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/package-resources-extensions-access-al)
 
 ## Localization updates
 
