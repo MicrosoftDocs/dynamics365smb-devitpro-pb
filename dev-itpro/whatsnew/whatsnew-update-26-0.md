@@ -12,7 +12,7 @@ ms.custom:
 
 # Update 26.0 for Microsoft Dynamics 365 Business Central online 2025 release wave 1
 
-This article provides an overvew of new features and general information about update 26.0
+This article provides an overvew of new features and general information about update 26.0.
 
 ## Features
 
@@ -101,7 +101,7 @@ New customers automatically get the latest builds of Business Central (26.0). If
 
 ## On-premises download packages
 
-Download on-premises files from Microsoft Support at [Update 26.0 for Business Central 2024 release wave 2](https://support.microsoft.com/help/5050249).
+Download on-premises files from Microsoft Support at [Update 26.0 for Business Central 2025 release wave 1]([24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)).
 
 ## Good to know
 
