@@ -12,11 +12,11 @@ ms.custom:
 
 # Update 26.0 for Microsoft Dynamics 365 Business Central online 2025 release wave 1
 
-This article provides an overvew of new features and general information about update 26.0.
+This article provides an overview of new features and general information about update 26.0.
 
 ## Features
 
-The following table provides a list of the new features planned for 26.0. For a comprehensive feature list and details, consult [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).<!--(https://aka.ms/BCReleasePlan)-->
+The following table lists the new features planned for 26.0. For a comprehensive feature list and details, see [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).
 
 | Product area             | Feature name                                                               |
 |-------------------------------|----------------------------------------------------------------------------|
@@ -95,13 +95,14 @@ The following table provides a list of the new features planned for 26.0. For a 
 |               | Allow adjusting the width of the FactBox pane                              |
 |               | Use user interface enhancements for better experience                      |
 
+
 ## Upgrade to 26.0
 
-New customers automatically get the latest builds of Business Central (26.0). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
+New customers automatically get the latest builds of Business Central (26.0). Existing partners and customers receive an email notification when their environment is upgraded.
 
 ## On-premises download packages
 
-Download on-premises files from Microsoft Support at [Update 26.0 for Business Central 2025 release wave 1]([24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)).
+Download on-premises files from Microsoft Support at [Update 26.0 for Business Central 2025 release wave 1](https://www.microsoft.com/en-us/download/details.aspx?id=106000).
 
 ## Good to know
 
