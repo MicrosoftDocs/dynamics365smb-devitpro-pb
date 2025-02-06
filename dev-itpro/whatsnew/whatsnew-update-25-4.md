@@ -35,7 +35,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Localization updates
 
-- tbd
+No localization updates for 25.4
 
 ## Release plan
 
