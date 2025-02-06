@@ -18,7 +18,7 @@ This article provides an overview of new features and general information about 
 
 The following table lists the new features planned for 26.0. For a comprehensive feature list and details, see [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).
 
-| Product area             | Feature name                                                               |
+| Product area             | Feature                                                               |
 |-------------------------------|----------------------------------------------------------------------------|
 | Application                   | Integrate Field Service with service management                            |
 |                               | View item availability in Field Service work orders                        |
@@ -139,6 +139,7 @@ The following table lists the new features planned for 26.0. For a comprehensive
 |           | Check total purchase amounts on documents                                  | [Check total purchase amounts on documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/check-total-purchase-amounts-documents) |
 | Governance and administration | Add support for MultiSubnetFailover                                        | [Add support for MultiSubnetFailover](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-support-multisubnetfailover) |
 |  | Support IPv6 for enhanced security and scalability                         | [Support IPv6 for enhanced security and scalability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/support-ipv6-enhanced-security-scalability) |
+
 ## Upgrade to 26.0
 
 New customers automatically get the latest builds of Business Central (26.0). Existing partners and customers receive an email notification when their environment is upgraded.
