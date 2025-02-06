@@ -16,7 +16,7 @@ Would you like to know what changes are in update 26.0? Below you find an overvi
 
 ## Features
 
-The following table provides an overview of the new features in 26.0. For a comprehensive list, consult [Plan and prepare for Dynamics 365 Business Central in 2024 release wave 2](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/).<!--(https://aka.ms/BCReleasePlan)-->
+The following table provides an overview of the new features in 26.0. For a comprehensive list and details of features, consult [Plan and prepare for Dynamics 365 Business Central in 2024 release wave 2](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/).<!--(https://aka.ms/BCReleasePlan)-->
 
 | Product Area (L2)             | Feature Name                                                               |
 |-------------------------------|----------------------------------------------------------------------------|
