@@ -16,7 +16,7 @@ This article provides an overvew of new features and general information about u
 
 ## Features
 
-The following table provides a list of thenew features planned for 26.0. For a comprehensive feature list and details, consult [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).<!--(https://aka.ms/BCReleasePlan)-->
+The following table provides a list of the new features planned for 26.0. For a comprehensive feature list and details, consult [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).<!--(https://aka.ms/BCReleasePlan)-->
 
 | Product area             | Feature name                                                               |
 |-------------------------------|----------------------------------------------------------------------------|
