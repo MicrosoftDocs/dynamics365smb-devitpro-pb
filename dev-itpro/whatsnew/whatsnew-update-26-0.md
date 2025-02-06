@@ -16,9 +16,9 @@ This article provides an overvew of new features and general information about u
 
 ## Features
 
-The following table provides an overview of the new features in 26.0. For a comprehensive list and details of features, consult [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).<!--(https://aka.ms/BCReleasePlan)-->
+The following table provides a list of the expected new features in 26.0. For a comprehensive feature list and details, consult [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).<!--(https://aka.ms/BCReleasePlan)-->
 
-| Product Area (L2)             | Feature Name                                                               |
+| Product area             | Feature name                                                               |
 |-------------------------------|----------------------------------------------------------------------------|
 | Application                   | Integrate Field Service with service management                            |
 |                               | View item availability in Field Service work orders                        |
