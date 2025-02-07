@@ -2,7 +2,7 @@
 title: Set up the add-ins for Outlook in Business Central on-premises
 description: Learn how to configure your Business Central on-premises solution so that users can work with Business Central data in Outlook.
 ms.custom: bap-template
-ms.date: 01/21/2025
+ms.date: 02/07/2025
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
@@ -150,7 +150,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 
    #### [Permissions for Exchange Online](#tab/exchange-onl-perms)
 
-   - In the **Microsoft APIs** tab, select **Microsoft Graph**, and **Delegated permissions**. From the list of available permissions, select **User.Read** and **Mail.ReadWrite**.
+   - In the **Microsoft APIs** tab, select **Microsoft Graph**, and **Delegated permissions**. From the list of available permissions, select **User.Read**, **Mail.ReadWrite**, and **EWS.AccessAsUser.All**.
 
    - In the **APIs my organization uses** tab, search for the name of the registered app that authenticates Microsoft Entra ID users with Business Central and add the scope you created earlier. This app isn't the app you registered to connect Outlook and Business Central.
 
