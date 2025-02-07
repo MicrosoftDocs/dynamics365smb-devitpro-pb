@@ -18,7 +18,27 @@ This article provides an overview of new features and general information about 
 
 The following table lists the new features planned for 26.0. For a comprehensive feature list and details, see [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).
 
-<!--
+
+
+<!-- Generate table:
+
+1. In successHub, filter on releas plns similar to https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entitylist&etn=rn_releasenote&viewid=9d407e0c-72e4-ef11-a731-7c1e520c4fd1&viewType=4230&lid=1738859869588
+2. Export to Excel
+3. Install excel to markdown extension in VScode:
+4. Open Excel file
+5. Sort product area column in ascending orders
+1. Copy rows and columns
+1. In VS Code, press Shift Alt V
+
+Add links:
+
+1. Start Copilot Chat
+1. Slect table you just cretaed.
+1. Copy thi spormpt in chat:
+
+    In the table, replace each feature name in the "Feature" column, with the corresponding feature link found on URL https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/planned-features.
+
+
 | Product area             | Feature                                                               |
 |-------------------------------|----------------------------------------------------------------------------|
 | Application                   | Integrate Field Service with service management                            |
@@ -95,7 +115,8 @@ The following table lists the new features planned for 26.0. For a comprehensive
 |               | Optimize screen estate usage on the web                                    |
 |               | Allow adjusting the width of the FactBox pane                              |
 |               | Use user interface enhancements for better experience                      |
-|               | test|-->
+-->
+
 | Product area             | Feature                                                               |
 |-------------------------------|----------------------------------------------------------------------------|
 | Application                   | [Integrate Field Service with service management](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/integrate-field-service-service-management)                            |
