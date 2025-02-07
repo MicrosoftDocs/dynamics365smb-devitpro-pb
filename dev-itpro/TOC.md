@@ -1886,9 +1886,9 @@
 #### [Upgrade permission sets](upgrade/upgrade-permissions.md)
 #### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
 #### Upgrade application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v26.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v26.md)
-##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v26.md)
+##### [From v14 unmodified C/AL application to v15](upgrade/upgrade-unmodified-application-v14-v25.md)
+##### [From v14 customized C/AL application to v15](upgrade/upgrade-to-microsoft-base-app-v25.md)
+##### [From v15 and later](upgrade/upgrade-unmodified-application-to-v26.md)
 #### Related articles
 ##### [Convert to AL](upgrade/devenv-code-conversion.md)
 ##### Migrating tables and fields between extensions
