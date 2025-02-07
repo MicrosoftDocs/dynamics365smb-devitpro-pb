@@ -29,8 +29,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
   This feature is supported in English. While it can be used in other languages, it might not function as intended. Language quality might vary based on the user's interaction or system settings, which might impact accuracy and the user experience.
 
   Learn more in [Chat with Copilot](/dynamics365/business-central/chat-with-copilot).
-- [Encrypt data at-rest with customer-managed encryption key](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/encrypt-data-at-rest-customer-managed-encryption-key)
-- [Get list of manageable environments for Microsoft Entra apps](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/get-list-manageable-environments-entra-apps)
+
 - [Package resources in extensions and access from AL](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/package-resources-extensions-access-al)
 
 ## Localization updates
@@ -59,6 +58,13 @@ Update 25.4 and future version 25 updates will also use platform number '25.2' a
 ### Business Central Launch Event videos on YouTube
 
 The Business Central Launch Event for the 2024 release wave 2 took place on October 18, 2024. This online event aimed to provide information about the new features and enhancements in the 2024 release wave 2 to resellers, partners, ISVs, and consultants. You can find over 40 videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE).
+
+### Upcoming service features
+
+The following Business Central online service features are expected to roll out in February or March 2025:
+
+- [Encrypt data at-rest with customer-managed encryption key](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/encrypt-data-at-rest-customer-managed-encryption-key)
+- [Get list of manageable environments for Microsoft Entra apps](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/get-list-manageable-environments-entra-apps)
 
 ### Features becoming mandatory soon
 
