@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: jswymer
 author: jswymer
 ---
-# Upgrading to Dynamics 365 Business Central 2024 release wave 1
+# Upgrading to Dynamics 365 Business Central 2025 release wave 1
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1 (version 26) is the 11th major release that is fully AL-based. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) marked the release in which C/AL was replaced by AL. The classic development environment, known as C/SIDE, was deprecated. From an application perspective, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is now extension-based only. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application is delivered as an AL extension. Also, application functionality that isn't related to the business logic has moved into separate modules. These modules are combined into an extension known as the System Application. This change influences how you do the upgrade compared to earlier releases.
 
