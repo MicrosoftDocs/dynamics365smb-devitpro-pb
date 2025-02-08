@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 This article explains how to run the **Cloud Migration Setup** guide to configure the components and connection for migrating data from a Business Central on-premises database to a Business Central online environment. Learn more in [Cloud migration setup overview](migration-setup-overview.md).
 
-This article explains how to run the **Cloud Migration Setup** guide to configure the components and connection for migrating data from a Business Central on-premises database to a Business Central online environment. For more details, see [Cloud migration setup overview](migration-setup-overview.md).
+This article explains how to run the **Cloud Migration Setup** guide to configure the components and connection for migrating data from a Business Central on-premises database to a Business Central online environment. For more information about the setup, go to [Cloud migration setup overview](migration-setup-overview.md).
 
 [!INCLUDE [migrate-e2e-process](../developer/includes/migrate-e2e-process-SL.md)]
 
@@ -22,17 +22,17 @@ Any user running the cloud migration setup flow as a delegated administrator mus
 
 ## Prepare
 
-- Review [Check Prerequisites](cloud-migration-prerequisites-SL.md) and make sure the environments meet the requirements.
+- Review [Check prerequisites](cloud-migration-prerequisites-SL.md) and make sure the environments meet the requirements.
 
    > [!IMPORTANT]
    > [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]
 
-- If there are users already in your Business Central online environment and you want them to work as usual during cloud migration, learn more in [Retain permissions](migration-retain-permissions-SL.md).
+- Review [Retain permissions](migration-retain-permissions-SL.md) if you have users already in your Business Central online environment and want them to continue working as usual during cloud migration.
 
 > [!TIP]
-> We recommend that you start the migration by running the assisted setup from a company other than the company to which you are migrating data. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company.
+> We recommend that you start the migration by running the assisted setup from a company other than the company to which you're migrating data. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company.
 >
-> Be aware of the storage capacity of your online tenant. If you need more than the default 80 GB, you can buy additional environments or storage capacity. Storage capacity is determined as 80GB + allowances per licensed Essential/Premium user + any storage capacity licenses. Learn more in [Managing Capacity](../administration/tenant-admin-center-capacity.md).
+> Be aware of the storage capacity of your online tenant. If you need more than the default 80 GB, you can buy additional environments or storage capacity. Storage capacity is determined as 80 GB + allowances per licensed Essential/Premium user + any storage capacity licenses. Learn more in [Managing Capacity](../administration/tenant-admin-center-capacity.md).
 
 ## Run the cloud migration setup
 
@@ -46,7 +46,7 @@ Any user running the cloud migration setup flow as a delegated administrator mus
 1. Set **Product** option to the version that matches the on-premises product that you're migrating, then select **Next**.
 1. On the **Define your SQL database connection** page, fill in the information about the SQL database connection and integration runtime.
 
-   For more information about this step, see [Define your SQL database connection](#define-sql-database-connection-and-integration-runtime).
+   For more information about this step, go to [Define your SQL database connection](#define-sql-database-connection-and-integration-runtime).
 
    Select **Next** when done. Once you choose **Next**, a new pipeline is created in the Azure service.
 
@@ -56,7 +56,7 @@ Any user running the cloud migration setup flow as a delegated administrator mus
 
    Select the companies that you want to migrate and then select **Next**.
 
-   If you want to add or remove companies later, you can return to this page. For more information about using this page, see [Configure Dynamics SL company data migration](migrate-SL-configure-companies.md).
+   If you want to add or remove companies later, you can return to this page. For more information about using this page, go to [Configure Dynamics SL company data migration](migrate-SL-configure-companies.md).
 
 1. Select **Finish** to complete the cloud migration setup.
 
@@ -85,7 +85,7 @@ If you encounter problems with the setup, learn more in [Cloud migration trouble
 
 ## Next steps
 
-[Run data replication](migration-data-replication.md).
+[Run data replication](migration-data-replication.md)
 
 ## Related information
 

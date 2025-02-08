@@ -31,7 +31,7 @@ If your product requires an SQL connection, the **Define your SQL database conne
 
     `Server=tcp:{ServerName}.database.windows.net,1433;Initial Catalog={DatabaseName};Persist Security Info=False;User ID={SQLUserName};Password={SQLUserPassword};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;`
 
-  For more information about connection strings, see [the SQL Server blog](/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string).  
+  For more information about connection strings, go to [the SQL Server blog](/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string).  
 
   The SQL connection string is passed to Azure Data Factory (ADF). From there, it's encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data migration process.  
 
