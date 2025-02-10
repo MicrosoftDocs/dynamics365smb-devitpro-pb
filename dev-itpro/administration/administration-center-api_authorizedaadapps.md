@@ -13,10 +13,36 @@ ms.date: 02/24/2023
 
 Authorized Apps are Microsoft Entra apps authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
+## Get Manageable Tenants for App
+
 > [!NOTE]
-> Endpoints on this page cannot be used when authenticated as an app.
+> This endpoint can only be used when authenticated as app to any tenant where the app is authorized in the Admin Center and has admin consent for the AdminCenter.ReadWrite.All permission.
+
+Returns the tenants for which the app that is authenticating the call has permissions to administer environments.
+
+```
+GET /admin/v2.24/authorizedAadApps/manageableTenants
+```
+
+### Response
+
+```
+{
+    "value": [
+        {
+            "entraTenantId": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+            "entraTenantId": "11111111-1111-1111-1111-111111111111"
+        }
+    ]
+}
+```
 
 ## Get Authorized Microsoft Entra apps
+
+> [!NOTE]
+> This endpoint cannot be used when authenticated as an app.
 
 Returns the Microsoft Entra apps that are authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant.
 
@@ -40,6 +66,9 @@ GET /admin/v2.21/authorizedAadApps
 ```
 
 ## Authorize Microsoft Entra app
+
+> [!NOTE]
+> This endpoint cannot be used when authenticated as an app.
 
 Authorizes a Microsoft Entra app to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Microsoft Entra tenant. This does not grant admin consent or assign permission sets in environments to the Microsoft Entra app.
 
