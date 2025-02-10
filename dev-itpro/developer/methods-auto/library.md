@@ -142,7 +142,7 @@ The following data types are available as part of the AL language. Each data typ
 |[SecurityOperationResult](securityoperationresult/securityoperationresult-option.md)|Represents security audit operation result.|
 |[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)|Use variables of this data type to specify the type of connection to an external database.|
 |[TelemetryScope](telemetryscope/telemetryscope-option.md)|Represents the emission scope of the telemetry signal.|
-|[TestPermissions](testpermissions/testpermissions-option.md)|Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.|
+|[TestPermissions](testpermissions/testpermissions-option.md)|Specifies a value that can be used to determine which permission sets are used on tests that are run by test codeunits or test functions.|
 |[TextEncoding](textencoding/textencoding-option.md)|Represents a file encoding.|
 |[TransactionModel](transactionmodel/transactionmodel-option.md)|Represents a test transaction model.|
 |[TransactionType](transactiontype/transactiontype-option.md)|Represents a transaction type.|
