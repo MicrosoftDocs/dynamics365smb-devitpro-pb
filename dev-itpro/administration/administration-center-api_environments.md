@@ -65,6 +65,13 @@ Returns a wrapped array of environments.
       "HardDeletePendingOn": datetime // The time at which the environment will be permanently deleted
       "DeleteReason": string // The reason why the environment was deleted
       "AppSourceAppsUpdateCadence": string // The cadence at which installed AppSource Apps are automatically updated with environment updates
+      "versionDetails":
+        {
+          "platformVersion": string, // The platform version the environment is on
+          "applicationVersion": string, // The application version the environment is on
+          "gracePeriodStartDate": datetime, // The date at which the grace period to update to the next major starts
+          "enforcedUpdateStartDate": datetime // The date at which the enforced update period to update to the next major starts
+        }
     }
   ]
 }
@@ -110,6 +117,13 @@ Returns a single environment if exists.
   "HardDeletePendingOn": datetime // The time at which the environment will be permanently deleted
   "DeleteReason": string // The reason why the environment was deleted
   "AppSourceAppsUpdateCadence": string // The cadence at which installed AppSource Apps are automatically updated with environment updates
+  "versionDetails":
+    {
+      "platformVersion": string, // The platform version the environment is on
+      "applicationVersion": string, // The application version the environment is on
+      "gracePeriodStartDate": datetime, // The date at which the grace period to update to the next major starts
+      "enforcedUpdateStartDate": datetime // The date at which the enforced update period to update to the next major starts
+    }
 }
 ```
 
