@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 02/11/2025
 ---
 
 # Business Central Admin Center API - App Management
@@ -39,7 +39,7 @@ By setting this parameter to `true`, you accept the following terms:
 To use the `install` and `uninstall` endpoints, you must have the *Exten. Mgt. - Admin permission set* assigned to your Business Central user account or authorized Microsoft Entra app.
 
 > [!NOTE]
-> These permissions sets are the same permission sets that allow you to use **Extension** Management page in tenant. Other  App management endpoints, like `update` or `availableupdates`, don't require these permission sets. 
+> These permissions sets are the same permission sets that allow you to use **Extension Management** page in your tenant. Other app management endpoints, such as `update` or `availableupdates`, don't require these permission sets.
 
 ## Install an App
 
