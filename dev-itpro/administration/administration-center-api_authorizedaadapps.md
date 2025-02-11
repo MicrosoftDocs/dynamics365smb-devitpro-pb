@@ -15,6 +15,8 @@ Authorized Apps are Microsoft Entra apps authorized to call the [!INCLUDE[prodad
 
 ## Get Manageable Tenants for App
 
+**Introduced in:** API version 2.24
+
 > [!NOTE]
 > This endpoint can only be used when authenticated as app to any tenant where the app is authorized in the Admin Center and has admin consent for the AdminCenter.ReadWrite.All permission.
 
