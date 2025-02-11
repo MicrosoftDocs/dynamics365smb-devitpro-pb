@@ -95,6 +95,7 @@ Returns information about the scheduled update for that environment.
   "updateStatus": string, // The current status of the environment's update. (enum | "Scheduled" or "Running")
   "ignoreUpgradeWindow": boolean, // Indicates if the environment's update window will be ignored.
   "isActive": boolean, // Indicates if the update is activated and is scheduled to occur.
+  "upgradeJobStatus": enum // Indicates the rollout status of the update, i.e. "Available", "UnderMaintenance", or "Postponed"
 }
 ```
 
