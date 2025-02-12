@@ -2,7 +2,7 @@
 title: Update 25.4 for Microsoft Dynamics 365 Business Central 2024 release wave 2
 description: Get an overview of new and changed capabilities in the 25.4 update of Business Central online, which is part of 2024 release wave 2.
 ms.author: jswymer
-ms.date: 02/07/2025
+ms.date: 02/12/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -34,7 +34,9 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Localization updates
 
-No localization updates for 25.4
+|Country|Feature|Description|
+|-|-|-|
+|Czech Republic|New VAT Statement and Report for Czech Republic|The VAT return now includes two additional lines for corrections when the obligation arises within the correction period for someone who is no longer a taxpayer.  If the new lines are unnecessary, use the existing export. If the customer needs the new lines, you must:<ul><li>Add new codes to the VAT Attribute Codes table.</li><li>Add new lines to the VAT report.</li><li>Define a new XML format for the report name.</li></ul>.|
 
 ## Release plan
 
