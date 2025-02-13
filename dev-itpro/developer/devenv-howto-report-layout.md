@@ -570,19 +570,7 @@ There are now two types of metadata available in Word layouts available from the
 
 :::image type="content" source="media/word-xml-part.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
 
-
-- ReportMetadata - Provides information from the report object, such as the object ID and report name. This information is always available in the same format and location in the data picker area.
-- ReportRequest: Contains information about the report request, such as company name, user name, and the date/time of the request.
-
-
-The *Aggregated metadata* worksheet contains data from the report AL metadata, request metadata, request page options, and filters. Each type of data is available in its own Excel table:
-
-- ReportMetadataValues
-- ReportRequestValues
-- ReportRequestPageValues
-- ReportFilterValues
-
-##### ReportMetadataValues table
+##### ReportMetadata
 
 The *ReportMetadata* node contains metadata elements that provide information from the report object, such as the object ID and report name. This information is always available in the same format and location in the data picker area.
 
@@ -598,7 +586,7 @@ The *ReportMetadata* node contains metadata elements that provide information fr
 |AboutThisReportText | The *about this report text* as declared in the Request Page setup in the AL report. |
 |ReportHelpLink | Help link (if setup) in the extension and report object.|
 
-##### ReportRequestValues table
+##### ReportRequest
 
 The *ReportRequest* node contains metadata elements that provide information from the report request page when the report request was issued.
 
