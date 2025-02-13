@@ -281,7 +281,7 @@ Report labels are used by report layouts as, for example, the heading for a fiel
 
 Report labels defined in the *Labels* section of the report object and captions included on dataitem columns using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available as in the `Labels` part of the XML Mapping pane in Word:
 
-![Clip of the XML Mapping pane in Word.](/dynamics365/business-central/media/nav_reportlayout_xmlmappingpane.png "NAV_ReportLayout_XMLMappingPane")
+![Clip of the XML Mapping pane in Word.](/dynamics365/business-central/media/nav_reportlayout_xmlmappingpane-v2.png "NAV_ReportLayout_XMLMappingPane")
 
 Learn more about labels in [Report labels](./devenv-report-object.md#report-labels).
 
