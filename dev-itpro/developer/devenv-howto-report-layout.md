@@ -562,46 +562,46 @@ If you need to compare two versions of a Word layout, then do as follows:
 
 Learn more in [Compare and merge two versions of a Word document](https://support.microsoft.com/office/compare-and-merge-two-versions-of-a-document-f5059749-a797-4db7-a8fb-b3b27eb8b87e).
 
-#### Aggregated metadata sheet definition (multiple tables)
+#### Access report and request metadata
 
-Similar to Excel layouts, you can now access report and request metadata in a Word layout. As a layout designer, his information can help you better understand a report dataset. You can add also add the metatdata as controls on the Word Layouts so its available to users who run the the report. 
+Similar to Excel layouts, you can access report and request metadata in a Word layout. As a layout designer, this information helps you understand a report dataset better. You can also add the metadata as controls on the Word layouts, making it available to users who run the report.
 
-There are now two types of metadata available in Word layouts available from the XML Mapping pane in Word: ReportMetadata and ReportRequest
+Two types of metadata are now available in Word layouts from the XML Mapping pane: ReportMetadata and ReportRequest.
 
 :::image type="content" source="media/word-xml-part.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
 
 ##### ReportMetadata
 
-The *ReportMetadata* node contains metadata elements that provide information from the report object, such as the object ID and report name. This information is always available in the same format and location in the data picker area.
+The *ReportMetadata* node includes metadata elements that provide information from the report object.
 
-|Element              | Description |
+|Metadata              | Description |
 |----------------------- | ----------- |
-|ExtensionID | The unique ID (GUID) of the app/extension for the report. |
-|ExtensionName | The name of the app/extension for the report. |
-|ExtensionPublisher | The name of the publisher of the app/extension for the report. |
-|ExtensionVersion | The version of the app/extension for the report.|
+|ExtensionID | The unique ID (GUID) of the app or extension for the report. |
+|ExtensionName | The name of the app or extension for the report. |
+|ExtensionPublisher | The name of the publisher of the app or extension for the report. |
+|ExtensionVersion | The version of the app or extension for the report.|
 |ReportID | The object ID of the report. |
 |ReportName | The object name of the report.|
 |AboutThisReportTitle | The *about this report title* as declared in the Request Page setup in the AL report. |
 |AboutThisReportText | The *about this report text* as declared in the Request Page setup in the AL report. |
-|ReportHelpLink | Help link (if setup) in the extension and report object.|
+|ReportHelpLink | Help link (if set up) in the extension and report object.|
 
 ##### ReportRequest
 
-The *ReportRequest* node contains metadata elements that provide information from the report request page when the report request was issued.
+The *ReportRequest* node includes metadata elements from the report request page when the report request was issued.
 
-| Column Key              | Description |
+|Metadata              | Description |
 |----------------------- | ----------- |
-| TenantId | Contains the Entra/AAD tenant ID of the environment. |
+| TenantId | The Entra/AAD tenant ID of the environment. |
 | EnvironmentName | The name of the environment. Might be empty for on-premises installations. |
 | EnvironmentType | The environment type (Production or sandbox). Might be empty for on-premises installations. |
-| CompanyName | The company name that the user was operating in when running the report. |
-| CompanyId | The Company ID (GUID). |
+| CompanyName | The company name the user was operating in when running the report. |
+| CompanyId | The company ID (GUID). |
 | UserName | The user who ran the report. |
-| UserId | The user ID associated to 'User name'. |
-| DateAndTime | The data and time of the report invocation. |
+| UserId | The user ID associated with 'User name'. |
+| DateAndTime | The date and time of the report invocation. |
 | Language | The application language identified (LCID, Windows language identifier).|
-| FormatRegion | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
+| FormatRegion | The format region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
 
 ## Related information
 
