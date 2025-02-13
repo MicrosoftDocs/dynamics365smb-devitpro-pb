@@ -562,6 +562,74 @@ If you need to compare two versions of a Word layout, then do as follows:
 
 Learn more in [Compare and merge two versions of a Word document](https://support.microsoft.com/office/compare-and-merge-two-versions-of-a-document-f5059749-a797-4db7-a8fb-b3b27eb8b87e).
 
+#### Aggregated metadata sheet definition (multiple tables)
+
+Similar to Excel layouts, you can now access report and request metadata in a Word layout. As a layout designer, his information can help you better understand a report dataset. You can add also add the metatdata as controls on the Word Layouts so its available to users who run the the report. 
+
+There are now two types of metadata available in Word layouts: ReportMetadata and ReportRequest
+
+- ReportMetadata - Provides information from the report object, such as the object ID and report name. This information is always available in the same format and location in the data picker area.
+- ReportRequest: Contains information about the report request, such as company name, user name, and the date/time of the request.
+
+:::image type="content" source="media/word-xml-part.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
+
+The *Aggregated metadata* worksheet contains data from the report AL metadata, request metadata, request page options, and filters. Each type of data is available in its own Excel table:
+
+- ReportMetadataValues
+- ReportRequestValues
+- ReportRequestPageValues
+- ReportFilterValues
+
+##### ReportMetadataValues table
+
+The *ReportMetadataValues* table contains metadata from the report object.
+
+| Column Key              | Description |
+|----------------------- | ----------- |
+|Extension ID | The unique ID (GUID) of the app/extension for the report. |
+|Extension Name | The name of the app/extension for the report. |
+|Extension Publisher | The name of the publisher of the app/extension for the report. |
+|Extension Version | The version of the app/extension for the report.|
+|Object ID | The object ID of the report. |
+|Object Name | The object name of the report.|
+|About This Report Title | The *about this report title* as declared in the Request Page setup in the AL report. |
+|About This Report Text | The *about this report text* as declared in the Request Page setup in the AL report. |
+|Report help link | Help link (if setup) in the extension and report object.|
+
+##### ReportRequestValues table
+
+The *ReportRequestValues* table contains metadata from the report request (the report invocation that created the document).
+
+| Column Key              | Description |
+|----------------------- | ----------- |
+| Tenant Id | Contains the Entra/AAD tenant ID of the environment. |
+| Environment name | The name of the environment. Might be empty for on-premises installations. |
+| Environment type | The environment type (Production or sandbox). Might be empty for on-premises installations. |
+| Company name | The company name that the user was operating in when running the report. |
+| Company Id | The Company ID (GUID). |
+| User name | The user who ran the report. |
+| User Id | The user ID associated to 'User name'. |
+| Date | The data and time of the report invocation. |
+| Language | The application language identified (LCID, Windows language identifier).|
+| Format Region | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
+
+##### ReportRequestPageValues table
+
+The *ReportRequestPageValues* table contains metadata from the report request page when the report request was issued.
+
+The table has two columns **Request Page Option** and **Request Page Option Value**. It contains all Key-Value pairs of entries from request page options.
+
+##### ReportFilterValues table
+
+The *ReportFilterValues* table contains metadata from the report request page when the report request was issued.
+
+The table has two columns **Filter** and **Filter Value**. It contains all Key-Value pairs of filters from the request page.
+
+The actual filter format is '\<DataItemName\>::\<Source Table Caption\>::\<FilterGroup\>::\<Field Caption\>'. 
+
+There is one row for each active filter defined on the request page.
+
+
 ## Related information
 
 [Using hyperlinks in Word layouts](devenv-hyperlinks-in-word-report-layouts.md)  
