@@ -566,12 +566,14 @@ Learn more in [Compare and merge two versions of a Word document](https://suppor
 
 Similar to Excel layouts, you can now access report and request metadata in a Word layout. As a layout designer, his information can help you better understand a report dataset. You can add also add the metatdata as controls on the Word Layouts so its available to users who run the the report. 
 
-There are now two types of metadata available in Word layouts: ReportMetadata and ReportRequest
+There are now two types of metadata available in Word layouts available from the XML Mapping pane in Word: ReportMetadata and ReportRequest
+
+:::image type="content" source="media/word-xml-part.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
+
 
 - ReportMetadata - Provides information from the report object, such as the object ID and report name. This information is always available in the same format and location in the data picker area.
 - ReportRequest: Contains information about the report request, such as company name, user name, and the date/time of the request.
 
-:::image type="content" source="media/word_layout_metadata.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
 
 The *Aggregated metadata* worksheet contains data from the report AL metadata, request metadata, request page options, and filters. Each type of data is available in its own Excel table:
 
@@ -582,53 +584,36 @@ The *Aggregated metadata* worksheet contains data from the report AL metadata, r
 
 ##### ReportMetadataValues table
 
-The *ReportMetadataValues* table contains metadata from the report object.
+The *ReportMetadata* node contains metadata elements that provide information from the report object, such as the object ID and report name. This information is always available in the same format and location in the data picker area.
 
-| Column Key              | Description |
+|Element              | Description |
 |----------------------- | ----------- |
-|Extension ID | The unique ID (GUID) of the app/extension for the report. |
-|Extension Name | The name of the app/extension for the report. |
-|Extension Publisher | The name of the publisher of the app/extension for the report. |
-|Extension Version | The version of the app/extension for the report.|
-|Object ID | The object ID of the report. |
-|Object Name | The object name of the report.|
-|About This Report Title | The *about this report title* as declared in the Request Page setup in the AL report. |
-|About This Report Text | The *about this report text* as declared in the Request Page setup in the AL report. |
-|Report help link | Help link (if setup) in the extension and report object.|
+|ExtensionID | The unique ID (GUID) of the app/extension for the report. |
+|ExtensionName | The name of the app/extension for the report. |
+|ExtensionPublisher | The name of the publisher of the app/extension for the report. |
+|ExtensionVersion | The version of the app/extension for the report.|
+|ReportID | The object ID of the report. |
+|ReportName | The object name of the report.|
+|AboutThisReportTitle | The *about this report title* as declared in the Request Page setup in the AL report. |
+|AboutThisReportText | The *about this report text* as declared in the Request Page setup in the AL report. |
+|ReportHelpLink | Help link (if setup) in the extension and report object.|
 
 ##### ReportRequestValues table
 
-The *ReportRequestValues* table contains metadata from the report request (the report invocation that created the document).
+The *ReportRequest* node contains metadata elements that provide information from the report request page when the report request was issued.
 
 | Column Key              | Description |
 |----------------------- | ----------- |
-| Tenant Id | Contains the Entra/AAD tenant ID of the environment. |
-| Environment name | The name of the environment. Might be empty for on-premises installations. |
-| Environment type | The environment type (Production or sandbox). Might be empty for on-premises installations. |
-| Company name | The company name that the user was operating in when running the report. |
-| Company Id | The Company ID (GUID). |
-| User name | The user who ran the report. |
-| User Id | The user ID associated to 'User name'. |
-| Date | The data and time of the report invocation. |
+| TenantId | Contains the Entra/AAD tenant ID of the environment. |
+| EnvironmentName | The name of the environment. Might be empty for on-premises installations. |
+| EnvironmentType | The environment type (Production or sandbox). Might be empty for on-premises installations. |
+| CompanyName | The company name that the user was operating in when running the report. |
+| CompanyId | The Company ID (GUID). |
+| UserName | The user who ran the report. |
+| UserId | The user ID associated to 'User name'. |
+| DateAndTime | The data and time of the report invocation. |
 | Language | The application language identified (LCID, Windows language identifier).|
-| Format Region | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
-
-##### ReportRequestPageValues table
-
-The *ReportRequestPageValues* table contains metadata from the report request page when the report request was issued.
-
-The table has two columns **Request Page Option** and **Request Page Option Value**. It contains all Key-Value pairs of entries from request page options.
-
-##### ReportFilterValues table
-
-The *ReportFilterValues* table contains metadata from the report request page when the report request was issued.
-
-The table has two columns **Filter** and **Filter Value**. It contains all Key-Value pairs of filters from the request page.
-
-The actual filter format is '\<DataItemName\>::\<Source Table Caption\>::\<FilterGroup\>::\<Field Caption\>'. 
-
-There is one row for each active filter defined on the request page.
-
+| FormatRegion | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
 
 ## Related information
 
