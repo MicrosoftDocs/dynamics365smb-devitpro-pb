@@ -571,7 +571,7 @@ There are now two types of metadata available in Word layouts: ReportMetadata an
 - ReportMetadata - Provides information from the report object, such as the object ID and report name. This information is always available in the same format and location in the data picker area.
 - ReportRequest: Contains information about the report request, such as company name, user name, and the date/time of the request.
 
-:::image type="content" source="media/word-xml-part.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
+:::image type="content" source="media/word_layout_metadata.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
 
 The *Aggregated metadata* worksheet contains data from the report AL metadata, request metadata, request page options, and filters. Each type of data is available in its own Excel table:
 
