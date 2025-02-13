@@ -63,7 +63,6 @@ All three system worksheets are hidden by default and the data in these workshee
 > [!NOTE]  
 > Excel report layout workbooks include named formulas for easier lookups. For more information, go to [Named formulas](#named-formulas).
 
-
 #### TranslationData worksheet definition (table TranslationData)
 
 The *TranslationData* worksheet contains data that you can use in your layouts to provide multi-language strings that don't exist as captions in the report object. When the [!INCLUDE[prod_short](../includes/prod_short.md)] server generates the Excel report, it can use data from the *TranslationData* table as part of translating strings to the user's language.
