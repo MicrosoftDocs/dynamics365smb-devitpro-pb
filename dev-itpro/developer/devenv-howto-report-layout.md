@@ -3,7 +3,7 @@ title: Creating a Word layout report
 description: Describes the steps involved in creating a report that uses a Word layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 12/30/2024
+ms.date: 02/13/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen
@@ -26,7 +26,7 @@ If you want to create a new Word layout from Visual Studio Code, do the followin
 
 ## How to lay out your report with Word layouts
 
-With Word layouts, you use Word as the editor for the report. Microsoft Word offers various features to help you format and layout your document reports. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that matches your organization. 
+With Word layouts, you use Word as the editor for the report. Microsoft Word offers various features to help you format and layout your document reports. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that matches your organization.
 
 In the Word report layout, you specify the fields of the report dataset to include on report and how the fields are arranged. You also define the general format of the report, such as text font and size, margins, and background images. You typically arrange the content of the report by adding tables to the layout. To make general formatting and layout changes, such as changing text font, adding and modifying a table, or removing a data field, use the basic editing features of Word, like you do with any Word document.
 
@@ -73,7 +73,7 @@ Using tables, you can design layouts with lines that have text aligned to both t
 There are at least two things you should consider when adding pictures to your Word layout:
 
 1. Control how they fit into the layout (don't overflow).
-2. Reduce report file size by compressing the pictures.
+1. Reduce report file size by compressing the pictures.
 
 #### Control how pictures fit into the layouts
 
@@ -82,8 +82,8 @@ When inserting a picture, ensure that it doesn't take up space according to its 
 To control the picture size using a table, do as follows:
 
 1. Mark the cell.
-2. Under *Layout*, Set *Height* and *Width* in the Cell size menu.
-3. In the *Table* menu, click *Properties*. On the *Table* tab, click *Positioning* and then uncheck the *Automatically resize to fit contents* option.
+1. Under *Layout*, Set *Height* and *Width* in the Cell size menu.
+1. In the *Table* menu, click *Properties*. On the *Table* tab, click *Positioning* and then uncheck the *Automatically resize to fit contents* option.
 
 Controlling how pictures fit into the layouts is important both for static files in the layout and for pictures inserted from the report dataset.
 
@@ -94,7 +94,7 @@ When adding pictures directly to your layout file, such as background images or 
 To compress pictures that are part of the layout file, do as follows:
 
 1. When you have inserted your pictures into Word, select the picture or pictures that you want to compress.
-2. Under *Picture Tools*, on the *Format* tab, in the *Adjust* group, select *Compress picture*. Then choose what and how you want to compress and select OK.
+1. Under *Picture Tools*, on the *Format* tab, in the *Adjust* group, select *Compress picture*. Then choose what and how you want to compress and select OK.
 
 Learn more at [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
 
@@ -105,15 +105,11 @@ For pictures that are part of the report dataset, you need to adjust the size in
 If you want to add a table to the report layout where data in each row comes from a dataitem from the report dataset, do as follows:
 
 1. Create a table with two rows and a column for each field that you want displayed.
+1. In the first row, add text for the headers, either as static text or from the `Labels` part of the XML Mapping pane. This row is the header for the table.
+1. The second row is the placeholder for the repeating rows with data fields. Select the entire row.  
+1. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.   
+1. Add the repeating fields to the row as follows:  
 
-2. In the first row, add text for the headers, either as static text or from the `Labels` part of the XML Mapping pane. This row is the header for the table.
-
-3. The second row is the placeholder for the repeating rows with data fields. Select the entire row.  
-  
-4. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.  
-  
-5. Add the repeating fields to the row as follows:  
- 
     1. Place your pointer in a cell.  
     1. In the **XML Mapping** pane, right-click the field that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
     1. For each field, repeat steps a and b.  
@@ -132,14 +128,11 @@ Learn more at [Supporting repeating content](/office/client-developer/word/conte
 
 If you want to add a bulleted or numbered list to the report layout where data in each row comes from a dataitem from the report dataset, do as follows:
 
-1. Place the cursor on the place where you want the list to be displayed.
-  
-2. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.  
+1. Place the cursor on the place where you want the list to be displayed. 
+1. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.  
+1. Inside the content control of the repeater, start the bulleted or numbered list (from *Home* > *Paragraph*). This adds a single entry in the list.
+1. Now add the repeating fields to the list entry as follows:  
 
-3. Inside the content control of the repeater, start the bulleted or numbered list (from *Home* > *Paragraph*). This adds a single entry in the list.
-
-4. Now add the repeating fields to the list entry as follows:  
- 
    1. Place your pointer on the list line.  
    1. In the **XML Mapping** pane, right-click the control that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
    1. For each field, repeat steps a and b.  
@@ -193,10 +186,10 @@ If your document layout contains multiple tables, consider using table styles to
 To set a default table style, do as follows:
 
 1. Mark the table.
-2. Navigate to the **Table Design** menu.
-3. For the table style you want to use as default, right-click it. 
-4. In the menu that appears, select **Set as Default**. A dialog box appears.
-5. Select **This document only**, and then choose **OK**.
+1. Navigate to the **Table Design** menu.
+1. For the table style you want to use as default, right-click it. 
+1. In the menu that appears, select **Set as Default**. A dialog box appears.
+1. Select **This document only**, and then choose **OK**.
 
 ### Using hyperlinks in Word layouts
 
@@ -236,9 +229,9 @@ The internal data model in Word only allows one watermark for the entire documen
 In case you want to apply different watermarks to different sections, this work-around might work:
 
 1. On the **Home** tab, click **Select** > **Selection Pane**. The Selection pane is used to manage objects in your document: reorder them, show or hide them, and group or ungroup them.
-2. Within the first section, open the header or footer and insert the watermark you want to use. Just use the normal approach. In the Selection pane, the watermark now shows as "PowerPlusWaterMarkObject" for a text object or "WordPictureWaterMark" for a picture object (each name followed by an identifier). Double-click on the name to make it editable and change it to something else (maybe to the watermark text, such as 'Customer copy' or 'Original'). Now Word won't treat the object as a (global) watermark.
-3. Within each subsequent section, repeat step number 2.
-4. On the **Home** tab, choose **Select** > **Selection Pane** to turn off the Selection pane again.
+1. Within the first section, open the header or footer and insert the watermark you want to use. Just use the normal approach. In the Selection pane, the watermark now shows as "PowerPlusWaterMarkObject" for a text object or "WordPictureWaterMark" for a picture object (each name followed by an identifier). Double-click on the name to make it editable and change it to something else (maybe to the watermark text, such as 'Customer copy' or 'Original'). Now Word won't treat the object as a (global) watermark.
+1. Within each subsequent section, repeat step number 2.
+1. On the **Home** tab, choose **Select** > **Selection Pane** to turn off the Selection pane again.
 
 ### Using fonts in Word layouts
 
@@ -260,8 +253,8 @@ To apply a theme to your Word layout, use the standard styles for text and heade
 For tables, for the table header be respect theme changes, you need to do this:
 
 1. Mark the header row.
-2. In the *Table Design* menu, expand the *Shading* menu in *Table Styles*.
-3. Now pick a theme color.
+1. In the *Table Design* menu, expand the *Shading* menu in *Table Styles*.
+1. Now pick a theme color.
 
 If you use the prebuilt Table Styles, you must manually change the color in the Shading menu for the header color to respect theme changes.
 
@@ -526,7 +519,6 @@ The **Report layouts** page in the client, helps you update a layout with the la
     The updated layout file is downloaded to your computer.
 1. Open the updated layout file in Word. Then make changes and save the file.
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], import the updated layout either as a new layout, by using the **New** action, or as a replacement to the existing layout, by the **Replace Layout** action.
-
 
 ## How to convert an RDL layout to a Word layout
 
