@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 FlowFields display the result of the calculation described in the [CalcFormula property](properties/devenv-calcformula-property.md). For example, the **Account Balance** field in the General Ledger Account table shows the balance of the account and is calculated as the sum of the NetAmount fields for all General Journal entries in the account.  
   
-FlowFields increase performance in activities such as calculating the balance of your customers. In traditional database systems, this operation involves a series of accesses and calculations before a result is available. By using FlowFields, the result is immediately available. You can further optimize the performance of FlowFields by enabling or disabling SIFT. For more information, see [SumIndexField Technology (SIFT)](devenv-sift-technology.md).
+FlowFields increase performance in activities such as calculating the balance of your customers. In traditional database systems, this operation involves a series of accesses and calculations before a result is available. By using FlowFields, the result is immediately available. You can further optimize the performance of FlowFields by enabling or disabling SIFT. Learn more in [SumIndexField Technology (SIFT)](devenv-sift-technology.md).
   
 FlowFields aren't physical fields that are stored in the database. They're a description of a calculation and a location for the result to be displayed. Because the information in FlowFields exists only at run time, values in FlowFields are automatically initialized to 0 (zero).
 
