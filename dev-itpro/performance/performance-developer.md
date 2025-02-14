@@ -103,7 +103,7 @@ The fastest (and least disruptive) way to get a historical load from [!INCLUDE[p
 
 The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
 
-For more information, see [Extract data from Business Central](../developer/devenv-extract-data.md).
+Learn more in [Extract data from Business Central](../developer/devenv-extract-data.md).
 
 ## AL performance patterns
 
@@ -117,11 +117,11 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you're familiar with them to make your AL code as efficient as possible.  
 
-When working with strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. General guidance is to use a `Text` data type if you concatenate fewer than five strings (here the internal allocation of a `TextBuilder` and the final `ToText` invocation is more expensive). If you need to concatenate five strings or more or concatenate strings in a loop, then `TextBuilder` is faster. Also, use a `TextBuilder` data type instead of `BigText` when possible. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). 
+When working with strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. General guidance is to use a `Text` data type if you concatenate fewer than five strings (here the internal allocation of a `TextBuilder` and the final `ToText` invocation is more expensive). If you need to concatenate five strings or more or concatenate strings in a loop, then `TextBuilder` is faster. Also, use a `TextBuilder` data type instead of `BigText` when possible. Learn more in [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). 
 
-If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. For more information, see [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
+If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. Learn more in [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
-Use a `List` data type if you need an unbound "array" (where you would previously create a temporary table object). For more information, see [List Data Type](../developer/methods-auto/list/list-data-type.md).
+Use a `List` data type if you need an unbound "array" (where you would previously create a temporary table object). Learn more in [List Data Type](../developer/methods-auto/list/list-data-type.md).
 
 Use the `Media` or `Mediaset` data types instead of the `Blob` data type. The `Media` and `MediaSet` data types have a couple advantages over the `Blob` data type when working with images. First of all, a thumbnail version of the image is generated when you save the data. You can use the thumbnail when loading a page and then load the larger image asynchronously using a page background task. Second, data for `Media` and `MediaSet` data types is cached on the client. Data for the `Blob` data type is never cached on the server. It's always fetched from the database.
 
@@ -171,7 +171,7 @@ Partial records improve performance in two major ways. First, they limit the fie
 
 The performance gains compound when looping over many records, because both effects scale with the number of rows loaded.
 
-For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
+Learn more in [Using Partial Records](../developer/devenv-partial-records.md).
 
 ### Table extension impact on performance (for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2023 release wave 1 and earlier)
 
@@ -274,7 +274,7 @@ When you add a FlowField to a page or page extension with the [Visible property]
 
 Learn more about enabling features in [Enabling upcoming features ahead of time](../administration/feature-management.md).
 
-### How AL relates to SQL 
+### How AL relates to SQL
 
 The AL programming language, to some degree, hides how data is read and written to the database. To effectively code for performance, you need to know how AL statements translate to the equivalent SQL statements.
 
@@ -295,6 +295,7 @@ Read more here:
 - [Telemetry on Long Running SQL Queries](../administration/monitor-long-running-sql-queries-event-log.md)
 
 ### How to reduce database locking
+
 Sometimes, performance issues aren't due to resource starvation, but due to processes waiting for other processes to release locks on shared objects. When AL code needs to update data, it's customary to take a database lock on it to ensure that other processes don't change the data at the same time. 
 
 Using the `Record.LockTable` method applies the `WITH (updlock)` hint on all subsequent read calls to the database against the table of the record called on, until the transaction is committed. For example, if `Record.LockTable` is called on an `Item` record, all reads against that table will be done with the `UPDLOCK` hint, not just the variable it was called on. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
@@ -314,12 +315,14 @@ Some tips for avoiding locking:
 Don't insert child records belonging to the same parent record in parallel. This condition causes locks on both the parent table and the integration record table because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use OData `$batch`, which will make sure calls get run one after another.
 
 #### Non-blocking number sequences
+
 If you need a fast, non-blocking number sequence that can be used from AL, refer to the number sequence object type. Use a number sequence object if you: 
 
 - Don't want to use a number series 
 - Can accept holes in the number range
 
-For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
+Learn more in [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
+
 
 #### Analyzing database locks
 
@@ -330,6 +333,7 @@ The **Database Locks** page gives a snapshot of all current database locks in SQ
 Database lock timeout telemetry gathers information about database locks that have timed out. The telemetry data allows you to troubleshoot what caused these locks.
 
 Read more here:
+
 - [Viewing Database Locks](/dynamics365/business-central/admin-view-database-locks)
 - [Monitoring SQL Database Locks](../administration/monitor-database-locks.md)
 - [Analyzing Database Lock Timeout Trace Telemetry](../administration/telemetry-database-locks-trace.md)
@@ -340,9 +344,9 @@ Read more here:
 
 **Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup   essentially isolates them from the main read-write workload so that they won't affect the performance of business processes.
 
-As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessIntent property](../developer/properties/devenv-dataaccessintent-property.md). For more information, see [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
+As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessIntent property](../developer/properties/devenv-dataaccessintent-property.md). Learn more in [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
 
-## Testing and validating performance 
+## Testing and validating performance
 
 It's imperative to test and validate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] project before deploying it to production. In this section, you find resources on how to analyze and troubleshoot performance issues and guidance on how to validate performance of a system. 
 
@@ -350,7 +354,7 @@ It's imperative to test and validate a [!INCLUDE[prod_short](../developer/includ
 
 You can use the `SessionInformation` data type in unit tests that track the number of SQL statements or rows read. Use it  before and after the code to be tested. Then, have assert statements that check for normal behavior.
 
-For more information, see [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
+Learn more in [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
 
 ### Performance Scenario and Regression Testing
 
@@ -358,7 +362,7 @@ Use the Performance Toolkit to simulate the amount of resources that customers u
 
 The Performance Toolkit helps answer questions such as, "Does my solution for Business Central support X number of users doing this, that, and the other thing at the same time?" 
 
-For more information, see [The Performance Toolkit Extension](../developer/devenv-performance-toolkit.md).
+Learn more in [The Performance Toolkit Extension](../developer/devenv-performance-toolkit.md).
 
 > [!NOTE]  
 > To test insert/update performance, make sure to un-install the test framework first. If the test framework is installed, then no insert/update statements can utilize bulk mode and will instead run row-by-row. 
@@ -378,7 +382,7 @@ The following performance telemetry is available in Azure Application Insights (
 - Sessions started
 - Web Service Requests
 
-For more information, see the [Analyzing performance issues using telemetry](performance-work-perf-problem.md#analyzing-performance-issues-using-telemetry) section.
+Learn more in the [Analyzing performance issues using telemetry](performance-work-perf-problem.md#analyzing-performance-issues-using-telemetry) section.
 
 ### Troubleshooting
 
