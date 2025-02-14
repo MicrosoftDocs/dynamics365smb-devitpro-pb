@@ -266,6 +266,10 @@ Read more about SIFT here:
 
 Learn how to find missing SIFT indexes on FlowFields in [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md).
 
+
+### detelet
+
+
 ### Set up the environment to calculate visible FlowFields only on pages
 
 When you add a FlowField to a page or page extension with the [Visible property](../developer/properties/devenv-visible-property.md) set to `false`, the FlowField doesn't appear on the page. However, its value is still calculated, leading to unnecessary computations and performance issues. As an admin, you can change this behavior by enabling the **Calculate only visible FlowFields** feature in the **Feature Management** page. When enabled, the AL runtime calculates values only for FlowFields that are visible on pages.
