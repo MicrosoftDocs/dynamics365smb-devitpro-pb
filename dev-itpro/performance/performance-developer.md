@@ -2,7 +2,7 @@
 title: Performance article for developers
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: bap-template
-ms.date: 10/11/2023
+ms.date: 02/14/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: KennieNP
@@ -193,8 +193,6 @@ Here are the pros and cons of the two data models:
 |Table extension | Fields can be added to lists and are searchable. <br> Always loaded with the base table. <br> Expensive at runtime but easy to use. <br> Use only for critical fields. |
 | Related tables | Need to set up table relations. <br> Dedicated page for editing. <br> Requires flow field to be shown in lists. <br> Doesn't affect performance of base table. <br> Excellent for FactBoxes. | 
 
-
-
 ### Limit your event subscriptions
 
 The following are best practices for getting performant events:
@@ -218,8 +216,8 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 
 ## Efficient data access 
 
-Many performance issues are related to how data is defined, accessed, and modified. It's important to know how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
-  
+Many performance issues are related to how data is defined, accessed, and modified. It's important to know how concepts in AL metadata and the AL language translate to their counterparts in SQL.
+
 ### Tables and keys 
 
 Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code will access data. 
@@ -269,6 +267,12 @@ Read more about SIFT here:
 The following article can help you find missing SIFT indexes on FlowFields:
 
 [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md).
+
+### Set up the environment to calculate visible FlowFields only on pages
+
+When you add a FlowField to a page or page extension with the [Visible property](../developer/properties/devenv-visible-property.md) set to `false`, the FlowField doesn't appear on the page. However, its value is still calculated, leading to unnecessary computations and performance issues. As an admin, you can change this behavior by enabling the **Calculate only visible FlowFields** feature in the **Feature Management** page. When enabled, the AL runtime calculates values only for FlowFields that are visible on pages.
+
+Learn more about enabling features in [Enabling upcoming features ahead of time](../administration/feature-management.md).
 
 ### How AL relates to SQL 
 

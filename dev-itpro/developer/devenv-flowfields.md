@@ -58,6 +58,12 @@ Correspondingly, the **Any Entries** field, which indicates whether any entries 
 Exist("Customer Entries" where(CustNo=field(CustNo)))  
 ```
 
+## When are FlowFields calculated
+
+When you add a FlowField to a page or page extension with the [Visible property](../developer/properties/devenv-visible-property.md) set to `false`, the FlowField doesn't appear on the page. However, its value is still calculated, leading to unnecessary computations and performance issues. As an admin, you can change this behavior by enabling the **Calculate only visible FlowFields** feature in the **Feature Management** page. When enabled, the AL runtime calculates values only for FlowFields that are visible on pages.
+
+Learn more about enabling features in [Enabling upcoming features ahead of time](../administration/feature-management.md).
+  
 ## Related information
 
 [CalcFields method (Record)](methods-auto/record/record-calcfields-method.md)  
