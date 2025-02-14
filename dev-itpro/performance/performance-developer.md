@@ -264,9 +264,7 @@ Read more about SIFT here:
 - [Tuning and Tracing](../developer/devenv-sift-tuning-and-tracing.md)  
 - [SIFT and SQL Server](../developer/devenv-sift-and-sql-server.md)  
 
-The following article can help you find missing SIFT indexes on FlowFields:
-
-[Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md).
+Learn how to find missing SIFT indexes on FlowFields in [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md).
 
 ### Set up the environment to calculate visible FlowFields only on pages
 
