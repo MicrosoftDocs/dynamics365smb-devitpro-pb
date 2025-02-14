@@ -26,7 +26,7 @@ FlowFields in Business Central are calculated dynamically at runtime in these si
 
   By default, the calculation happens even if the FlowField isn't visible on the page, such as when the [Visible property](../developer/properties/devenv-visible-property.md) is set to `false`. This behavior can lead to unnecessary computations and performance issues. Starting in version 26.0, you can change this behavior by enabling the **Calculate only visible FlowFields** feature in **Feature Management**. When enabled, the AL runtime calculates values only for FlowFields that are visible on pages. Learn more about enabling features in [Enabling upcoming features ahead of time](../administration/feature-management.md).
 
-- The `CalcFields` method is used.
+- The [CalcFields method](../developer/methods-auto/record/record-calcfields-method.md) is used.
 
   Calculate a FlowField by using the `CalcFields` method in AL code. This method updates the FlowField with the current value based on its calculation formula.
 
