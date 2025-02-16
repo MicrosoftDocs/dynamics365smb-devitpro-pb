@@ -3,7 +3,7 @@ title: Creating an Excel layout report
 description: Learn how to create a report using an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 09/09/2024
+ms.date: 02/16/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
@@ -36,17 +36,17 @@ Every Excel layout file must have a worksheet called _Data_. This worksheet has 
 > [!TIP]  
 > When developing Excel layouts, you can add demo data to the _Data_ worksheet to make it easier to see the end result when the report is rendered with the layout. The data is removed when importing it to [!INCLUDE[prod_short](../includes/prod_short.md)] but if you include Excel layouts in an app/extension, you might want to keep the demo data there for easier troubleshooting later.
 
-For more information about the data contract, go to [Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts).
+Learn more in [Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts).
 
 ### Excel layout data contract in 2023 release wave 2 and later versions
 
 [!INCLUDE[2023_releasewave2](../includes/2023_releasewave2.md)]
 
-The [ExcelLayoutMultipleDataSheets property](properties/devenv-excellayoutmultipledatasheets-property.md) allows you to work with reports that render multiple worksheets for the report data when the dataset has multiple data items. By setting the property to `true`, the AL runtime generates an Excel worksheet for each data item and places its data there. Otherwise, if the property is `false`, which is the default, a single sheet is used for all data (as described in the previous section).
+The [ExcelLayoutMultipleDataSheets property](properties/devenv-excellayoutmultipledatasheets-property.md) on the report object allows you to work with reports that render multiple worksheets for the report data when the dataset has multiple data items. By setting the property to `true`, the AL runtime generates an Excel worksheet for each data item and places its data there. Otherwise, if the property is `false`, which is the default, a single sheet is used for all data (as described in the previous section).
 
 Each of the multiple sheets is named #DataItemName, where DataItemName is the name given to the dataitem in the report design. When new empty Excel layouts are added to the report, the property is used to determine the sheet structure.
 
-With data in multiple worksheets, the report layout can now easily include data models defined with the PowerPivot feature in Excel.
+With data in multiple worksheets, the report layout can now easily include data models defined with the PowerPivot feature in Excel. Starting in 2025 release wave 1 (runtime 14), the `ExcelLayoutMultipleDataSheets` property is available on individual report layouts in a report object. This lets you override the global property defined on the report object in the layout context. For reports where the global property `ExcelLayoutMultipleDataSheets` wasn't set (interpreted as `false`), you can add Excel layouts that use the `ExcelLayoutMultipleDataSheets` feature without the risk of breaking existing Excel layouts that users added.
 
 ### System Excel sheets
 
@@ -62,7 +62,6 @@ All three system worksheets are hidden by default and the data in these workshee
 
 > [!NOTE]  
 > Excel report layout workbooks include named formulas for easier lookups. For more information, go to [Named formulas](#named-formulas).
-
 
 #### TranslationData worksheet definition (table TranslationData)
 
