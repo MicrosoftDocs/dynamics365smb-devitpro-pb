@@ -46,7 +46,9 @@ The [ExcelLayoutMultipleDataSheets property](properties/devenv-excellayoutmultip
 
 Each of the multiple sheets is named #DataItemName, where DataItemName is the name given to the dataitem in the report design. When new empty Excel layouts are added to the report, the property is used to determine the sheet structure.
 
-With data in multiple worksheets, the report layout can now easily include data models defined with the PowerPivot feature in Excel. Starting in 2025 release wave 1 (runtime 14), the `ExcelLayoutMultipleDataSheets` property is available on individual report layouts in a report object. This lets you override the global property defined on the report object in the layout context. For reports where the global property `ExcelLayoutMultipleDataSheets` wasn't set (interpreted as `false`), you can add Excel layouts that use the `ExcelLayoutMultipleDataSheets` feature without the risk of breaking existing Excel layouts that users added.
+With data in multiple worksheets, the report layout can now easily include data models defined with the PowerPivot feature in Excel.
+
+Starting in 2025 release wave 1 (runtime 14), the `ExcelLayoutMultipleDataSheets` property is available on individual report layouts in a report object. This lets you override the global property defined on the report object in the layout context. For reports where the global property `ExcelLayoutMultipleDataSheets` wasn't set (interpreted as `false`), you can add Excel layouts that use the `ExcelLayoutMultipleDataSheets` feature without the risk of breaking existing Excel layouts that users added.
 
 ### System Excel sheets
 
