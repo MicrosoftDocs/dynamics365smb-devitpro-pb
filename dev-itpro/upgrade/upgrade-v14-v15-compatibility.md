@@ -218,7 +218,7 @@ The following table lists the Business Central 16 versions and the minimum versi
 
 |Version 16|Version 17|Version 18|Version 19|Version 20 and later|
 |----------|----------|----------|----------|-|
-|16.0 to 16.5|17.0|18.0|19.0|Any update |Any update |
+|16.0 to 16.5|17.0|18.0|19.0|Any update |
 |[16.6](https://support.microsoft.com/help/4583501)|[17.1](https://support.microsoft.com/help/4583515)|18.0|19.0|Any update |
 |[16.7](https://support.microsoft.com/help/4583513)|[17.2](https://support.microsoft.com/help/4583554)|18.0|19.0|Any update |
 |[16.8](https://support.microsoft.com/help/4583553)|[17.3](https://support.microsoft.com/help/4595152)|18.0|19.0|Any update |
