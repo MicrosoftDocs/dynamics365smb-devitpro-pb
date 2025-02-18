@@ -1195,6 +1195,8 @@
 ##### [Extending Currency Exchange Rate Adjustments](developer/devenv-extend-exchange-rates.md)
 ##### [Extending e-documents functionality](developer/devenv-extend-edocuments.md)
 ##### [Extending error messages with recommendations](developer/devenv-extension-errors-recommendations.md)
+### [Contribute your extensibility scenarios](developer/devenv-contribute-extensibility.md)
+#### [Guidelines for extensibility requests](developer/devenv-guidelines-extensibility.md)
 <!-- ##### [Add drop zones for uploading multiple files](developer/devenv-extending-drop-zones.md) -->
 
 ### Using events
