@@ -23,6 +23,6 @@ Open your `settings.json` file in the project (or global settings if you prefer 
 
 - Add the build folder to the exclusion list for [Windows Defender](https://support.microsoft.com/help/4028485/windows-10-add-an-exclusion-to-windows-security).
 
-## See also 
+## Related information 
 [Development in AL](devenv-dev-overview.md)   
 [Best Practices for AL](../compliance/apptest-bestpracticesforalcode.md)

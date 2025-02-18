@@ -21,6 +21,6 @@ Attribute {0} is specified multiple times.
 The same attribute has been specified multiple times on the same element.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

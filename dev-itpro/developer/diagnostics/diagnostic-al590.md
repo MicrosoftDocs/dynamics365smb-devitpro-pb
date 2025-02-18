@@ -21,6 +21,6 @@ The property {0} is only supported on {1}.
 The referenced property is not supported on the element is was set on. For more information on the elements the property applies to, refer to the property's documentation.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

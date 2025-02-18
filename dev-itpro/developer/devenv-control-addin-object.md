@@ -173,12 +173,12 @@ $.ajax({
      xhrFields: {
           withCredentials: true
     }
-)).done(function(data) {
+}).done(function(data) {
     $("#controlAddIn").text(data);
 });
 ```
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions](devenv-dev-overview.md)  

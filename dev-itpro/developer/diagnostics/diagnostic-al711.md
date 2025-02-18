@@ -21,6 +21,6 @@ A member of type {0} with name '{1}' is already defined in {2} '{3}' by the exte
 > This warning will become an error with Business Central 2023 release wave 1.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

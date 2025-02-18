@@ -35,7 +35,7 @@ For an overview of the system application reference documentation, see [Module S
 ## Have an issue?
 Open an [issue](https://github.com/microsoft/BCApps/issues/new).
 
-## See also
+## Related information
 
 [Module architecture](devenv-blueprint.md)  
 [Create a module](devenv-new-module.md)

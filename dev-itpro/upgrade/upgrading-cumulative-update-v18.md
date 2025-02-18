@@ -545,7 +545,7 @@ Import-NAVServerLicense -ServerInstance $BcServerInstance -LicenseFile $Customer
 Restart-NAVServerInstance -ServerInstance $BcServerInstance
 ```
 
-## See also
+## Related information
 
 [Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-17.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  

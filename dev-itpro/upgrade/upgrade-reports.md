@@ -474,7 +474,7 @@ if the application has customizations in this area, it's possible to switch to b
 
   By subscribing this event, the application selects the rendering engine based on the selected report ID and layout name.
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

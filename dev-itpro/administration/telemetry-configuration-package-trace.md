@@ -200,7 +200,7 @@ Occurs when a configuration package is deleted successfully.
 |[See common custom dimensions](#other)||
 
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

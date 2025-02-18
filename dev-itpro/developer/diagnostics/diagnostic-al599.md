@@ -21,6 +21,6 @@ A control add-in with the same internal name '{0}' is already defined.
 Multiple control add-ins with the same metadata name are defined.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

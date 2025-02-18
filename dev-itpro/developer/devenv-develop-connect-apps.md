@@ -3,7 +3,7 @@ title: Get started developing Connect apps for Dynamics 365 Business Central
 description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 07/14/2023
+ms.date: 11/13/2024
 ms.topic: conceptual
 ms.collection: get-started
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ A Connect app establishes a point-to-point connection between [!INCLUDE [prod_lo
 
 [![Shows the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
 
-To explore and develop against REST APIs in [!INCLUDE [prod_long](includes/prod_long.md)], you must first sign up for a trial tenant, and then you must connect and authenticate. To do that, follow the steps below.
+To explore and develop against REST APIs in [!INCLUDE [prod_long](includes/prod_long.md)], you must first sign up for a trial tenant, and then you must connect and authenticate. To do that, follow these steps:
 
 1. Sign up for [Dynamics 365 Business Central](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1).  
 When you have your tenant, you can sign into the UI to explore the product and the [APIs](/dynamics-nav/api-reference/v2.0)

@@ -23,5 +23,5 @@ A *Data Collector Set* organizes data collection points, such as performance cou
   
  For general information about Data Collector Sets, see [Creating Data Collector Sets](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749337(v=ws.11)).  
   
-## See also  
+## Related information  
  [Business Central Performance Counters](performance-counters.md)

@@ -621,7 +621,7 @@ Users can now manually synchronize industry group records in [!INCLUDE[prod_shor
 > To learn how to schedule the synchronization by using a job queue entry, explore the code on the **RecreateJobQueueEntryFromIntTableMapping** method in codeunit **CDS Setup Defaults** (ID 7204). The code shows how it's called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
 
 
-## See Also
+## Related information
 
 [Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Overview - Integrate with Microsoft Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)  

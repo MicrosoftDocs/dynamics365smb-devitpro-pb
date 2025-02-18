@@ -122,7 +122,7 @@ Record-level security filters are handled by SQL Server just like other filters 
 
 ---
 
-## See Also  
+## Related information  
 
 [Users and Credential Types](../administration/users-credential-types.md)  
 [Security Considerations](Security-Considerations.md)  

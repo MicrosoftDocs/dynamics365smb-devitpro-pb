@@ -229,7 +229,7 @@ For more information about tooltips, see [Help users get unblocked](../user-assi
 
 - If you can't find anything to say, maybe reevaluate if this teaching tip is needed.
 
-## See also
+## Related information
 
 [Get Users Started with the Checklist](onboarding-checklist.md)  
 [Guidelines for tooltip text](../user-assistance.md#guidelines-for-tooltip-text)  

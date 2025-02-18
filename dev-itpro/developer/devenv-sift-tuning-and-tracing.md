@@ -30,7 +30,7 @@ As a result of using indexed views, SIFT keys are exposed to SQL Server tracing 
   
  When you set the [MaintainSIFTIndex Property](properties/devenv-maintainsiftindex-property.md) of a key to **True**, this will be the SIFT key and create the indexed view to support it. However, disabling the SIFT key by setting [MaintainSIFTIndex Property](properties/devenv-maintainsiftindex-property.md)  to **False** can improve performance in certain circumstances. Setting this property to **False** means that the SIFT functionality must be implemented by calculating the totals online instead of using the precalculated sums that are maintained by SIFT.  
   
-## See Also
+## Related information
 
 [SumIndexField Technology \(SIFT\)](devenv-sift-technology.md)  
 [SIFT and SQL Server](devenv-sift-and-sql-server.md)  

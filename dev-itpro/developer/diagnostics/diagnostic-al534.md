@@ -21,6 +21,6 @@ Length of the table key name '{0}' must not exceed {1} characters. Longer key na
 The length of a table key name must not exceed 28 characters. Longer key names are prone to cause SQL errors.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

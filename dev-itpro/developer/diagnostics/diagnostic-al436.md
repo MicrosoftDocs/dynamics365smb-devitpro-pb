@@ -21,6 +21,6 @@ The value of the property '{0}' cannot be empty.
 The value of a property cannot be left empty, it must be specified.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

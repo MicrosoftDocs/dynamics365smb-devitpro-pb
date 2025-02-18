@@ -25,7 +25,7 @@ The **AL Home** view shows news related to developing in AL for [!INCLUDE [prod_
 
 You can choose when to show the **AL Home** view as you start up Visual Studio Code, the default is that **AL Home** is shown when it's updated. To change the default, go to user or workspace settings, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration**, change the **Show Home at startup** to a different value. For more information, see [AL Language extension configuration](devenv-al-extension-configuration.md).
 
-## See also
+## Related information
 
 [AL Explorer](devenv-al-explorer.md)  
 [Developing extensions in AL](devenv-dev-overview.md)

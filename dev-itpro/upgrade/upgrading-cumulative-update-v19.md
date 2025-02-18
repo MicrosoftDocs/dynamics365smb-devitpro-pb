@@ -96,6 +96,8 @@ The first thing to do is to download the update package that matches your Busine
 
 When this step is completed, you can continue to update your Business Central solution to the new platform and application.
 
+## Save copies of server configuration files
+
 [!INCLUDE[upgrade-copy-configuration-files](../developer/includes/upgrade-copy-configuration-files.md)]
 
 ## Prepare existing databases
@@ -536,7 +538,7 @@ Client version: 21.0.46384.47110
 Server version: 21.0.51393.51456-->
 
 
-## See Also
+## Related information
 
 [Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-17.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  

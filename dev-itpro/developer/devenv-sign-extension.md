@@ -130,7 +130,7 @@ If you publish the extension as an app on AppSource, the app package file must b
 
 You can check the validity of your code signing by transferring your signed app file to a Windows device, which didn't sign it. Right-click on the file and go to **Properties**,**Digital Signatures**, and then choose **Details**. In this pop-up, choose **View Certificate** and finally go to **Certification Path**. If the Certification Path has only one entry, then the file isn't signed correctly and is rejected by AppSource technical validation.
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)  
 [Keyboard shortcuts](devenv-keyboard-shortcuts.md)

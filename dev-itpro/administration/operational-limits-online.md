@@ -1,12 +1,12 @@
 ---
 title: Operation Limits in Dynamics 365 Business Central
 description: Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments.
-author: swinarko
+author: jswymer
 ms.custom: bap-template
-ms.date: 09/16/2024
+ms.date: 01/29/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.author: sawinark
+ms.author: jswymer
 ---
 
 # Operational limits for Business Central online
@@ -55,6 +55,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|Value|  
 |---------|--------------------------------------------------------------------------------|------|
+|Total data size (TB) | The total amount of data stored in the environment database. | 3 TB|
 |Search timeout|The time (in seconds) that a search operation on lists in the client continues before it's stopped. When the limit is reached, the following message displays in the client: **Searching for rows took long and was stopped. Try to search or filter using different criteria.**|10 seconds|
 |SQL command timeout|The contextual time-out for a SQL command.|30 minutes|
 |SQL connection idle timeout|The time that a SQL connection can remain idle before being closed.|5 minutes|
@@ -196,7 +197,7 @@ Your OData or SOAP requests will be throttled if they exceed the current per-use
 
 If your integration is using a single user or service principal to perform a large number of operations, or if it's an interactive client application that uses a single user or service principal to send all OData or SOAP requests to Business Central online, the per-user operational limits can be reached fairly quickly. You can help prevent this situation and maintain or increase your throughput by distributing or spreading your workload in smaller batches across multiple users or service principals.  A standard technique is to distribute your requests in a round-robin fashion or rotation through a list of users or service principals.
 
-## See also
+## Related information
 
 [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md)  
 [Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use)

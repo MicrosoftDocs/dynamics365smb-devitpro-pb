@@ -25,7 +25,7 @@ As the following table shows, the `not` operator is a unary prefix operator. Thi
 |`or`|Logical or|bool1 or bool2|Boolean|  
 |`xor`|Exclusive logical or|bool1 xor bool2|Boolean|  
 
-## See also
+## Related information
 
 [AL operators](devenv-al-operators.md)  
 [Arithmetic operators](devenv-al-arithmetic-operators.md)  

@@ -21,6 +21,6 @@ The data type on the {0} field is not valid because the ExtendedDatatype propert
 If a field has the **ExtendedDatatype** property is set to **PhoneNo**, **URL** or **Email**, then the field can only be of the type Code or Text.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -198,7 +198,7 @@ traces
 
 [!INCLUDE[change_logging_performance](../includes/change_logging_performance.md)]
 
-## See also
+## Related information
 [Auditing Changes in Business Central](/dynamics365/business-central/across-log-changes)  
 [Field monitoring telemetry](telemetry-field-monitoring-trace.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)   

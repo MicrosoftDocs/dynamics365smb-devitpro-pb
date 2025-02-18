@@ -21,6 +21,6 @@ The referenced page '{0}' should be a list part or a card part.
 A page used as a page part should be a list part or a card part.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

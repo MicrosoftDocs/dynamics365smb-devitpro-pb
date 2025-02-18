@@ -166,7 +166,7 @@ In general, views can in several ways be compared to page customizations. Here a
 - It isn't possible to use variables or methods in a view. When writing client-side expressions for properties like **Visibility**, it is only possible to use constant values or table field references. This condition is validated by the compiler.
 - It isn't possible to create new controls for a page from a view.
 
-## See also
+## Related information
   
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions](devenv-dev-overview.md)  

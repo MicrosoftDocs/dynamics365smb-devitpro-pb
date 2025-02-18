@@ -73,7 +73,7 @@ Previously, [Customizing an Integration with Microsoft Dataverse](../administrat
 
 These events are no longer used and you can delete them from your Dataverse integration apps.
 
-## See also
+## Related information
 
 [Deprecated features in the platform - clients, server, and database](../upgrade/deprecated-features-platform.md)  
 [System fields](devenv-table-system-fields.md)

@@ -86,7 +86,7 @@ report 50000 "Standard Report Layout"
 }
 ```
 
-## See Also
+## Related information
 
 [Multiple Report Layouts](devenv-multiple-report-layouts.md)
 [Default Rendering Layout Property](properties/devenv-defaultrenderinglayout-property.md)

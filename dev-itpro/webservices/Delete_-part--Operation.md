@@ -70,5 +70,5 @@ namespace Delete_SalesLinesSample
 }  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

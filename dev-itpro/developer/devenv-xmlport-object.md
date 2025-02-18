@@ -1,21 +1,23 @@
 ---
-title: "XMLport Object"
-description: "Description of the XMLport object."
+title: XMLport object
+description: XMLport objects are used to export and import data between an external source and Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 11/13/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
 --- 
 
-# XMLport Object
-XMLports are used to export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Sharing data between different computer systems is seamless when it is shared in an XML format. Working with XML files can be tedious so the details of how the XML file is handled are encapsulated in XMLports.
+# XMLport object
+
+XMLports are used to export and import data between an external source and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Sharing data between different computer systems is seamless when it's shared in an XML format. Working with XML files can be tedious so the details of how the XML file is handled are encapsulated in XMLports.
 
 To use an XMLport to import or export data, you first create an XMLport object. Once created, you can run the XMLport from a page or codeunit object.
 
-You can design XMLports to include a request page, which is a dialog box that enables the user to set a filter on the data, sort the data, or choose whether to export or import the data. For more information about request pages, see [Request Pages](devenv-request-pages.md).
+You can design XMLports to include a request page, which is a dialog box that enables the user to set a filter on the data, sort the data, or choose whether to export or import the data. Learn more about request pages in [Request pages](devenv-request-pages.md).
 
 ## XMLport example
+
 The following example shows a page extension of the **Permission Sets** page that adds an action to the specified page calling the XMLport **ExportPermissionSet**. The XMLport exports the permission set data to an XML file. 
 
 ```AL
@@ -142,10 +144,11 @@ xmlport 50112 ExportPermissionSet
 }
 ```
 
-## See Also
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[XMLport Overview](devenv-xmlport-overview.md)  
-[Using Namespaces with XMLports](devenv-using-namespaces-with-xmlports.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Report Object](devenv-report-object.md)  
+## Related information
+
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[XMLport overview](devenv-xmlport-overview.md)  
+[Using namespaces with XMLports](devenv-using-namespaces-with-xmlports.md)  
+[Page extension object](devenv-page-ext-object.md)  
+[Report object](devenv-report-object.md)  

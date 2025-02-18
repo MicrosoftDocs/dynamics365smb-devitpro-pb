@@ -178,7 +178,7 @@ The last method that you call is the `Predict` method, which sends the model and
 Now, you can loop through the updated buffer table and read the label and confidence for each record used in the prediction. 
 For more information, see the source code of the [Late Payment Prediction extension](https://github.com/microsoft/ALAppExtensions/tree/master/AddOns/LatePaymentPredictor).
 
-## See also
+## Related information
 
 [Forecasting API overview](ml-forecasting-api-overview.md)  
 [The Late Payment Prediction Extension](/dynamics365/business-central/ui-extensions-late-payment-prediction)

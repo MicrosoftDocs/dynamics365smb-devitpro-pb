@@ -21,6 +21,6 @@ The keys '{0}' and '{1}' have an identical list of fields.
 Multiple keys have specified the same list of fields.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -21,6 +21,6 @@ The RunObject property value of actions defined in the '{0}' area must only refe
 The **RunObject** property value must only reference objects of type 'Codeunit', 'Page', 'Report', or 'XmlPort'.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

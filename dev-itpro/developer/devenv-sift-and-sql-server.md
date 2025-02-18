@@ -51,7 +51,7 @@ AND PostingDate>=?
 AND PostingDate<=?  
 ```  
 
-## See Also
+## Related information
 [SumIndexField Technology \(SIFT\)](devenv-sift-technology.md)  
 [Tuning and Tracing](devenv-sift-Tuning-and-Tracing.md)   
 [SIFT and Performance](devenv-SIFT-Performance.md)

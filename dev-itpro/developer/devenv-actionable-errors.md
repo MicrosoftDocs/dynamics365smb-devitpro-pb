@@ -315,7 +315,7 @@ If the user experience the error they see the following error dialog
 :::image type="content" source="media/error-dialog-nosolution.png" alt-text="Error dialog with no solution":::
 
 
-## See Also  
+## Related information  
 
 [Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
 [User experience guidelines for errors](devenv-error-handling-guidelines.md)  

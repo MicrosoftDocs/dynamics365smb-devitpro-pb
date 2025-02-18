@@ -21,6 +21,6 @@ Reference '{0}' in application object '{1}' is ambiguous.
 Ambiguous reference to an application object.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

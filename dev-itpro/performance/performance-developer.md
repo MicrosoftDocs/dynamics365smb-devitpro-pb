@@ -389,16 +389,16 @@ The following articles can be of help in troubleshooting performance issues:
 The following articles explain what you can do as a developer to tune your development environment for better performance:
 
 - [Optimizing Visual Studio Code for AL Development](../developer/devenv-optimize-visual-studio-code.md)  
-- [Code Analysis on large projects](../developer/devenv-using-code-analysis-tool.md#largeprojects)
+- [Code Analysis on large projects](../developer/devenv-using-code-analysis-tool.md#enable-code-analysis-on-large-projects)
 
-## See Also
+## Related information
 
-[Performance Overview](performance-overview.md)  
-[How Application Configurations Affect Performance](performance-application.md)  
-[Performance Online](performance-online.md)  
-[Performance of On-Premises Installations](performance-onprem.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md)  
+[Performance overview](performance-overview.md)  
+[How application configurations affect performance](performance-application.md)  
+[Performance online](performance-online.md)  
+[Performance of on-premises installations](performance-onprem.md)  
+[How to work with a performance problem](performance-work-perf-problem.md)  
 [Performance tips for business users](performance-users.md)  
-[Database Missing Indexes](../administration/database-missing-indexes.md)  
-[AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)
+[Database missing indexes](../administration/database-missing-indexes.md)  
+[AL database methods and performance on SQL server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)
 

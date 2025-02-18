@@ -119,7 +119,7 @@ By default, the [!INCLUDE[server](../developer/includes/server.md)] logs contain
   
  The **Admin** log displays only errors that occurred in the last 24 hours on tenant *Tenant1* and [!INCLUDE[server](../developer/includes/server.md)] instance *MyNavServerInstance1*. The applied filter can be removed. Alternatively, you can save it as a custom view. For more information about filtering in Event Viewer in [Filter Displayed Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc722058(v=ws.11)) and [Advanced XML filtering in the Windows Event Viewer](/archive/blogs/askds/advanced-xml-filtering-in-the-windows-event-viewer).  
   
-## See Also  
+## Related information  
  [Monitoring Business Central Server Events](monitor-server-events.md)    
  [Business Central Server Trace Events](server-trace-events.md)   
  [Monitoring Business Central Server](monitor-server.md)   

@@ -3,10 +3,8 @@ title: Virtual tables
 description: Virtual tables are system tables in AL for Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.author: solsen
-
 ms.topic: conceptual
-ms.date: 03/17/2023
-ms.custom: bap-template
+ms.date: 01/08/2025
 ms.reviewer: solsen
 ---
 
@@ -16,7 +14,7 @@ A virtual table contains system information. You can't change the data in virtua
 
 ## Using virtual tables
 
-You can use the same methods to access information in virtual tables as you use when you are working with ordinary tables. For example, you can use filters to get subsets or ranges of integers or dates from the `Integer` virtual table or the `Date` virtual table.
+You can use the same methods to access information in virtual tables as you use when you're working with ordinary tables. For example, you can use filters to get subsets or ranges of integers or dates from the `Integer` virtual table or the `Date` virtual table.
 
 A system administrator usually uses these virtual tables. These tables give the system administrator information about the users who are currently connected to the database and the current state of the system.
 
@@ -30,7 +28,6 @@ The virtual tables provide such information as:
 
 Because virtual tables aren't stored in the database, you can't view them directly. To view a virtual table, you must create a list page based on the virtual table.
 
-
-## See also
+## Related information
 
 [Date virtual table](devenv-date-virtual-table.md)

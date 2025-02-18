@@ -1,28 +1,28 @@
 ---
-title: Auditing events in Purview
-description: Get an overview of the signals Business Central emits to Purview.
+title: Auditing events in Microsoft Purview
+description: Get an overview of the signals Business Central emits to Microsoft Purview.
 author: jobulsin
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 10/21/2024
+ms.date: 01/22/2025
 ms.author: jobulsin
 ---
 
-# Auditing in Purview
+# Auditing in Microsoft Purview
 
 > [!NOTE]
-> Purview auditing solutions for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is in Preview. Please register any feedback and requests for additional events to be auditable on [aka.ms/bcideas][https://aka.ms/bcideas].
+> Microsoft Purview auditing solutions for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is in Preview. Register any feedback and requests for other events to be auditable on [aka.ms/bcideas](https://aka.ms/bcideas).
 
 Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit auditable events to [Microsoft Purview auditing solutions](/purview/audit-solutions-overview). Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. For [!INCLUDE[prod_short](../developer/includes/prod_short.md)], this means that Create, Update, and Delete events that require administrator privileges are emitted to Purview's unified audit log, aiding security, legal, and compliance investigation across all Microsoft services used in your organization.
 
 > [!TIP]  
-> Before [!INCLUDE[prod_short](../includes/prod_short.md)] online logs authorization attempts to telemetry, a successful authentication (login) must happen against Microsoft Entra ID (formerly Azure Active Directory). With the information in the Microsoft Entra sign-in log, you can figure out what happened if a user sign-in failed. For more information, see [Analyze sign-ins with the Microsoft Entra sign-in log](/entra/identity/monitoring-health/quickstart-analyze-sign-in).
+> Before [!INCLUDE[prod_short](../includes/prod_short.md)] online logs authorization attempts to telemetry, a successful authentication (sign in) must happen against Microsoft Entra ID (formerly Azure Active Directory). With the information in the Microsoft Entra sign-in log, you can figure out what happened if a user sign-in failed. Learn more in [Analyze sign-ins with the Microsoft Entra sign-in log](/entra/identity/monitoring-health/quickstart-analyze-sign-in).
 > 
-> If you want to track, monitor, or alert on successful and failed login attempts against Microsoft Entra ID, configure integration to Azure Monitor on Microsoft Entra and analyze further with KQL. For more information, see [Integrate Microsoft Entra logs with Azure Monitor](/entra/identity/monitoring-health/howto-access-activity-logs#integrate-logs-with-azure-monitor-logs).
+> If you want to track, monitor, or alert on successful and failed sign in attempts against Microsoft Entra ID, configure integration to Azure Monitor on Microsoft Entra and analyze further with KQL. Learn more in [Integrate Microsoft Entra logs with Azure Monitor](/entra/identity/monitoring-health/howto-access-activity-logs#integrate-logs-with-azure-monitor-logs).
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit all events listed below to Microsoft Purview auditing solutions, and Purview is enabled by default on every tenant. Learn more about enabling or disabling Purview auditing solutions on your tenant [here](/purview/audit-log-enable-disable).
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments automatically emit all events listed below to Microsoft Purview auditing solutions, and Purview is enabled by default on every tenant. Learn more about enabling or disabling Purview auditing solutions on your tenant in  [Turn auditing on or off](/purview/audit-log-enable-disable) in the Microsoft Purview documentation.
 
-## Schema
+## Schema overview
 
 Every event emitted to Purview auditing solutions uses the [common schema](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema). Events related to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments can be found under the `Dynamics365BusinessCentralLog` AuditLogRecordType. For events with this AuditLogRecordType, the following fields are added to the common schema to contain details specific to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments.
 
@@ -36,18 +36,18 @@ Every event emitted to Purview auditing solutions uses the [common schema](/offi
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] events emitted to Purview are categorized as events and activities; events are high-level and are parents to the more specific activities.
 
-|Event name|Description|
-|---|---|
-|Administered environment|Activities that create, update, or delete environments|
-|Configured extension|Activities that configure extensions|
-|Administered user|Activities that create, update, or delete users|
-|Administered company|Activities that create, update, or delete companies|
-|Configured integration|Activities that configure integrations|
-|Configured Copilot|Activities that configure Copilot|
-|Configured cloud migration|Activities that configure cloud migration|
-|Administered report|Activities that create, update, or delete reports|
+|Event name|Description|Learn more| 
+|----------|-----------|--------- | 
+|Administered environment|Activities that create, update, or delete environments| [Administered environment activities](#administered-environment-activities) |
+|Configured extension|Activities that configure extensions| [Configured extension activities](#configured-extension-activities) |
+|Administered user|Activities that create, update, or delete users| [Administered user activities](#administered-user-activities) |
+|Administered company|Activities that create, update, or delete companies| [Administered company activities](#administered-company-activities) |
+|Configured integration|Activities that configure integrations| [Configured integration activities](#configured-integration-activities) |
+|Configured Copilot|Activities that configure Copilot| [Configured Copilot activities](#configured-copilot-activities) |
+|Configured cloud migration|Activities that configure cloud migration| [Configured cloud migration activities](#configured-cloud-migration-activities) |
+|Administered report|Activities that create, update, or delete reports| [Administered report activities](#administered-report-activities) |
 
-### Administered environment activities
+## Administered environment activities
 
 Activities listed in the table below can be audited by filtering to the `Administered environment` event.
 
@@ -329,7 +329,7 @@ Activities listed in the table below can be audited by filtering to the `Adminis
     </tbody>
 </table>
 
-### Configured extension activities
+## Configured extension activities
 
 Activities listed in the table below can be audited by filtering to the `Configured extension` event.
 
@@ -569,7 +569,7 @@ Activities listed in the table below can be audited by filtering to the `Configu
     </tbody>
 </table>
 
-### Administered user activities
+## Administered user activities
 
 You can audit the activities in the table below by filtering to the `Administered user` event.
 
@@ -829,7 +829,7 @@ You can audit the activities in the table below by filtering to the `Administere
     </tbody>
 </table>
 
-### Administered company activities
+## Administered company activities
 
 You can audit the activities in the table below by filtering to the `Administered company` event.
 
@@ -994,7 +994,7 @@ Events in the table below are emitted with message parameters.
 </table>
 
 
-### Configured integration activities
+## Configured integration activities
 
 You can audit the activities in the table below by filtering to the `Configured integration` event.
 
@@ -1217,7 +1217,7 @@ Events in the table below are emitted with message parameters.
     </tbody>
 </table>
 
-### Configured Copilot activities
+## Configured Copilot activities
 
 You can audit the activities in the table below by filtering to the `Configured Copilot` event.
 
@@ -1247,11 +1247,11 @@ You can audit the activities in the table below by filtering to the `Configured 
 </table>
 
 
-### Configured cloud migration activities
+## Configured cloud migration activities
 
 Coming soon.
 
-### Administered report activities
+## Administered report activities
 
 You can audit the activities in the table below by filtering to the `Administered report` event.
 
@@ -1326,8 +1326,10 @@ You can audit the activities in the table below by filtering to the `Administere
     </tbody>
 </table>
 
-## See also
+## Related information
 
+[Analyze sign-ins with the Microsoft Entra sign-in log](/entra/identity/monitoring-health/quickstart-analyze-sign-in)  
+[Turn auditing on or off for Microsoft Purview](/purview/audit-log-enable-disable)  
 [Auditing in Business Central](auditing-overview.md)  
 [Auditing changes](/dynamics365/business-central/across-log-changes)  
 [Security Auditing in Business Central](../security/security-auditing.md)  

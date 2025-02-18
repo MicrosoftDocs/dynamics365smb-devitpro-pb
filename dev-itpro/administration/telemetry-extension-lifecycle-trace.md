@@ -1192,7 +1192,7 @@ Occurs when scheduling the uninstallation of an extension/app has failed.
 
 -->
 
-## See also
+## Related information
 
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

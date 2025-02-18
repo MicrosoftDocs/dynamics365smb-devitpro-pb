@@ -49,7 +49,7 @@ In this example, the `#region` directive makes a code block that is up for refac
 #endregion
 ```
 
-## See also
+## Related information
 
 [Development in AL](../devenv-dev-overview.md)  
 [AL development environment](../devenv-reference-overview.md)  

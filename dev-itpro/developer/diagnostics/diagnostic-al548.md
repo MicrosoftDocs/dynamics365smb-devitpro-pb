@@ -21,6 +21,6 @@ Cannot move symbol '{0}' from '{1}' area to '{2}' area.
 Cannot move a symbol between areas.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

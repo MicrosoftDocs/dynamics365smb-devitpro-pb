@@ -86,6 +86,6 @@ The tenant database includes tables for storing customer data that's accessible 
 > [!TIP]
 > For more detailed steps, see [Create a Tenant Database](../deployment/devenv-create-databases.md).
 
-## See Also  
+## Related information  
 [Multitenant Deployment Overview Architecture](../deployment/Multitenant-Deployment-Architecture.md)  
 [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md)  

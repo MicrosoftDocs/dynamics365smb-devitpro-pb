@@ -36,7 +36,7 @@ As a developer of an extension/app, you need to provide the intended data classi
 > You can enable the AppSourceCop rule **AS00016** (Data Classification property should be different from "ToBeClassified") to find tables and fields that have not been classified yet. For more information, see [AppSourceCop Error AS0016](../developer/analyzers/appsourcecop-as0016.md).
 
 
-## See also  
+## Related information  
 
 [AppSourceCop Error AS0016](../developer/analyzers/appsourcecop-as0016.md)  
 [Classifying data sensitivity fields (for tenant admins)](/dynamics365/business-central/admin-classifying-data-sensitivity)  

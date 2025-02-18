@@ -450,7 +450,7 @@ Complete this task only if you created a new version of the base application in 
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## See Also
+## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central Compatibility matrix](upgrade-v14-v15-compatibility.md)

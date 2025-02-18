@@ -448,7 +448,7 @@ SELECT "Salesperson/Purchaser".Name, "Sales Header"."No.", "Sales Header"."Sell-
 FROM "Salesperson/Purchaser", "Sales Header"  
 ```
 
-## See Also
+## Related information
 
  [Query Object](devenv-query-object.md)  
  [Filtering Queries](devenv-query-filters.md)  

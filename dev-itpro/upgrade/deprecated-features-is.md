@@ -25,7 +25,7 @@ The local tax regulation of conditional discounts feature enables you to issue a
 
 [!INCLUDE [fields-obsolete-is](../includes/fields-obsolete-is.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

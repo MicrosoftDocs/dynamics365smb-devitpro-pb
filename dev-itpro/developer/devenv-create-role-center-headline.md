@@ -276,7 +276,7 @@ pageextension 50100 BCLEHeadlines extends "Headline RC Business Manager"
 
 ```
 
-## See also
+## Related information
 
 [Pages overview](devenv-pages-overview.md)  
 [Page object](devenv-page-object.md)

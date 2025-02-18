@@ -71,7 +71,7 @@ Here is a JSON representation of the tableMapping resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET tableMapping](../api/dynamics_tablemapping_get.md)  
 [DELETE tableMapping](../api/dynamics_tablemapping_delete.md)  
 [POST tableMapping](../api/dynamics_tablemapping_create.md)  

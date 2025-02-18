@@ -18,6 +18,6 @@ The field '{0}' with ID '{1}' can't be moved because it is part of the table's p
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

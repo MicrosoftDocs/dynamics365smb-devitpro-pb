@@ -21,7 +21,7 @@ An environment transfer is initiated by an internal administrator in the [!INCLU
 > [!IMPORTANT]
 > All environment transfer operations must be executed by internal administrators; this feature cannot be used by delegated administrators.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1htxY ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=714cc34d-b904-427d-9231-afc074cace10 ]
 
 ## Create transfer on source tenant
 
@@ -87,7 +87,7 @@ Telemetry signals for the environment transfer operation are emitted to the Appl
 - Environment settings are carried over from the source to the destination tenant. Depending on the nature of the environment transfer settings such as the Application Insights Connection String or Partner Access set up on the environment may need to be changed or removed.
 - Environments that are [linked](tenant-admin-center-environments.md#linked-power-platform-environment) to a Power Platform environment cannot be transferred. Unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment before creating a transfer on the source tenant.
 
-## See also
+## Related information
 
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)
 [Managing Apps](tenant-admin-center-manage-apps.md)

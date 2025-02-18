@@ -21,6 +21,6 @@ The {0} '{1}' is using the '{2}' property. This will be automatically converted 
 Code referencing the Promoted properties should be replaced by actionref syntax.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

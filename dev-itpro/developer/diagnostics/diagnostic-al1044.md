@@ -21,6 +21,6 @@ The value for the manifest property '{0}' is not valid. Expected type: {1}.
 Wrong type for a manifest property. For more information about manifest properties and their type, see [App.json file](../devenv-json-files.md#appjson-file).  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

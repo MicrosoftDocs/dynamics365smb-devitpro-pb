@@ -15,7 +15,7 @@ ms.reviewer: jswymer
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-This article describes how to set up [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, like Cortana Intelligence and Power BI. Before using the services, you have to register Business Central on-premises in Microsoft Entra ID and give it access to the services. For example, the [Sales and Inventory Forecast](/dynamics365/business-central/ui-extensions-sales-forecast) extension requires that you specify an API key and API URI. Other services require similar information.
+This article describes how to set up [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises to use services that are based on Microsoft Azure. There are several services that you can integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, like Universal Print and Power BI. Before using the services, you have to register Business Central on-premises in Microsoft Entra ID and give it access to the services. For example, the [Sales and Inventory Forecast](/dynamics365/business-central/ui-extensions-sales-forecast) extension requires that you specify an API key and API URI. Other services require similar information.
 
 > [!NOTE]
 > In [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version earlier than 16.4, the **Set up Microsoft Entra ID** wizard has an **Auto register** action. Previously, you could use this action to automatically register [!INCLUDE [prod_short](../developer/includes/prod_short.md)] in Microsoft Entra ID. The auto-register functionality has since been removed. Now, you must register the application manually, regardless of your version. The wizard in earlier versions still includes the **Auto register** link. But the link now opens this article, which guides you through the manual registration.
@@ -24,11 +24,11 @@ This article describes how to set up [!INCLUDE [prod_short](../developer/include
 
 - A Microsoft Entra tenant.
 
-   You need a tenant on Microsoft Entra ID that has at least one user. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant).
+   You need a tenant on Microsoft Entra ID that has at least one user. Learn more in [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant).
 
    If the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] deployment is using Microsoft Entra authentication, then you already have a tenant with users. See [Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Microsoft Entra ID](authenticating-users-with-azure-active-directory.md).
 
-   If your deployment uses NavUserPassword authentication, you need the credentials (sign in email and password) of a user account later in this article.
+   If your deployment uses NavUserPassword authentication, you need the credentials (sign in email and password) of a user account later in this article. Some integrations don't support NavUserPassword.
 
 - An Azure portal account
 
@@ -41,9 +41,9 @@ The first task is to use Azure portal to register an application for Business Ce
 > [!TIP]
 > The following steps describe how to register a new application. However, if you're using Microsoft Entra authentication, you already have a registered application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it based on the information in the steps that follow.
 
-1. Sign in to the [Azure portal](https://portal.azure.com) and register an application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises in Microsoft Entra tenant.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) and register an application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises in Microsoft Entra tenant.
 
-    1. Follow the general guidelines at [Register your application with your Microsoft Entra tenant](/azure/active-directory/active-directory-app-registration).
+    1. Follow the general guidelines in [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app?tabs=certificate#register-an-application).
 
         When you add an application to a Microsoft Entra tenant, you must specify the following information:
 
@@ -51,7 +51,8 @@ The first task is to use Azure portal to register an application for Business Ce
         |-------|-----------|
         |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Azure Services for Business Central on-premises*. |
         |Supported account types| Select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)**<br /><br />**Note:** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] doesn't require the organization to be multitenant, not even if this field is set to multitenant. |
-        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://localhost/BC240/OAuthLanding.htm` `https://MyServer/BC240/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC240/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address of the computer you're working on. For example, even though the actual URL might be `https://MyServer:443/BC240/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
+        |Redirect URI|For Outlook add-in:</br></br> Set the **Select a platform** box to **Single-Page application (SPA)**. Seet the URL box to the base URL for your Business Central on-premises web client, like `https://MyBCWebServer/BC250`.|
+        ||For other integrations:</br></br>Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://localhost/BC250/OAuthLanding.htm` `https://MyServer/BC250/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC250/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address of the computer you're working on. For example, even though the actual URL might be `https://MyServer:443/BC250/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
         When completed, an **Overview** displays in the portal for the new application.
 
@@ -65,15 +66,18 @@ The first task is to use Azure portal to register an application for Business Ce
 
 3. Grant the registered application delegated permission to access the required service APIs, like Power BI.
 
-    From the registered application's overview page, select **API permissions** > **Add a permission**. Then, use the **Request API permissions** pane to locate the API and add permissions. For more information, see [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis) in the Azure documentation.
+    From the registered application's overview page, select **API permissions** > **Add a permission**. Then, use the **Request API permissions** pane to locate the API and add permissions. Learn more in [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis) in the Azure documentation.
 
     Use the following table to help you set the minimum permissions:
 
     |Feature|API | Permission name|Type|Description|
     |----|----|----------------|----|-----------|
     |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
-    |[Business Central add-in for Excel](/dynamics365/business-central/admin-deploy-excel-addin)|The exposed API of the registered app used for authenticating Business Central users. Select this API from the **APIs may organization uses tab**. |Select the Business Central app permission name under **Permisssions**|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
-    |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
+    |[Business Central add-in for Excel](/dynamics365/business-central/admin-deploy-excel-addin)|The exposed API of the registered app used for authenticating Business Central users. Select this API from the **APIs my organization uses tab**. |Select the Business Central app permission name under **Permissions**|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
+    |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md) with Exchange Server|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Exchange Server.|
+    |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md) with Exchange Online|Microsoft Graph | Mail.ReadWrite|Delegated|Read and write access to user mail|
+    |||EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Exchange.|
+    ||The exposed API of the registered app used for authenticating Business Central users. Learn more in [Deploying to Exchange Online](Setting-up-Office-Add-Ins-Outlook-Inbox.md#prepare-for-deployment). Search for this API in the **APIs my organization uses tab**.|Select the Business Central app permission name under **Permissions**, for example, `BusinessCentralOnPrem.Access`.|Delegated|Gives the add-in access to Business Central data.|
     |[Exchange Contact Sync](/dynamics365/business-central/admin-synchronize-outlook-contacts)|Office 365 Exchange Online| Contacts.ReadWrite|Delegated|Allows the app to create, read, update, and delete user contacts.<br><br> **TIP** To find Office 365 Exchange Online, type it the search box on the **APIs my organization uses** tab.|
     ||| EWS.AccessAsUser.All|Delegated|Allows the app to have the same access to mailboxes as the signed-in user via Exchange Web Services.|
     |[OneDrive Integration](/dynamics365/business-central/admin-onedrive-integration)<sup>[\[1\]](#1)</sup>|SharePoint|AllSites.FullControl |Delegated|Have full control of all site collections|
@@ -141,7 +145,7 @@ This issue indicates there's a problem with the configuration of the Azure regis
 
 While consenting to the services for the initial connection, you keep getting prompted to consent instead of connecting, there may be a problem with the reply URL that used in the **Set up your Microsoft Entra accounts** assisted setup guide. The first part of the reply URL, before `OAuthLanding.htm`, should exactly match what appears in your browser URL when you open the Business Central web client. For example, if the browser URL is `https://localhost/BC240` on your computer, then the reply URL you provide must be `https://localhost/BC240/OAuthLanding.htm`. The reply URL must also be included in the app you registered in Microsoft Entra ID previously in this article. 
  
-## See Also
+## Related information
 
 [Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 [FAQ about Migrating to the Cloud from On-Premises Solutions](faq-migrate-data.md)  

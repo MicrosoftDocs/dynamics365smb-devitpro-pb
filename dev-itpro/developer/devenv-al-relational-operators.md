@@ -51,7 +51,7 @@ A valid use of the relational operators is, for example, text compared with text
 |Text||||||||Boolean|Boolean|  
 |Code||||||||Boolean|Boolean|  
 
-## See also
+## Related information
 
 [AL operators](devenv-al-operators.md)  
 [Arithmetic operators](devenv-al-arithmetic-operators.md)  

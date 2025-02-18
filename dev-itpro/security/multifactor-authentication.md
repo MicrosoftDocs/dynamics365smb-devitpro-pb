@@ -33,7 +33,7 @@ Conditional Access in Microsoft Entra ID provides a more granular control of MFA
 For more information about creating policies, see [Conditional Access: Cloud apps, actions, and authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps).
 
 
-## See Also
+## Related information
 
 [Security and Protection](security-and-protection.md)  
 [On-Premises Security](security-onpremises.md)  

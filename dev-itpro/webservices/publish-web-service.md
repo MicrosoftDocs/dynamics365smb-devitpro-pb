@@ -142,7 +142,7 @@ Should you need a unique row identifier in your OData or SOAP web service endpoi
 For more information, see [System Fields](../developer/devenv-table-system-fields.md).
 
 
-## See Also
+## Related information
 
 [Web Services](web-services.md)   
 [Web Service Publish Failure Telemetry](web-service-telemetry.md#web-service-publish-failure-telemetry)

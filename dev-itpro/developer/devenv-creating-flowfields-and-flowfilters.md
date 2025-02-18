@@ -114,7 +114,7 @@ table 50123 MyTable
 }
 ```
 
-## See also
+## Related information
 
 [FlowFields overview](devenv-flowfields.md)  
 [FlowFilter overview](devenv-flowfilter-overview.md)  

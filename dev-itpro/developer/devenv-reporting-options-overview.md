@@ -97,7 +97,7 @@ The following table sums up some of the main differences between the three types
 |Curated data stories    |Yes       |No            |Yes          | Yes                      |
 
 
-## See also
+## Related information
 
 [Embed Power BI reports in pages](devenv-power-bi-report-parts.md)  
 [Analyze Data on Lists and Queries](/dynamics365/business-central/analysis-mode)  

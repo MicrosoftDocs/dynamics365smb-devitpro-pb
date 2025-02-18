@@ -1,14 +1,15 @@
 ---
-title: "Formatting the data in a field"
-description: "Learn how to format data in a field, either on the table level or on the page/report level."
-ms.date: 12/01/2023
+title: Formatting the data in a field
+description: Learn how to format data in a field, either on the table level or on the page/report level.
+ms.date: 01/29/2025
 ms.topic: conceptual
 author: jswymer
+ms.reviewer: solsen
 ---
 
 # Formatting decimal values in fields
 
-This article describes how you can format the decimal values that appear in fields on table, pages and reports. For example, you can change how the data appears in a Cue on the Role Center page. To format data, you use a combination of the [AutoFormatType Property](properties/devenv-AutoFormatType-Property.md), [AutoFormatExpression Property](properties/devenv-AutoFormatExpression-Property.md), and [DecimalPlaces Property](properties/devenv-DecimalPlaces-Property.md) of the field. These properties work together to enable you to specify the following:  
+This article describes how you can format the decimal values that appear in fields on table, pages, and reports. For example, you can change how the data appears in a Cue on the Role Center page. To format data, you use a combination of the [AutoFormatType Property](properties/devenv-AutoFormatType-Property.md), [AutoFormatExpression Property](properties/devenv-AutoFormatExpression-Property.md), and [DecimalPlaces Property](properties/devenv-DecimalPlaces-Property.md) of the field. These properties work together to enable you to specify the following:  
   
 - Display amounts and unit amounts in another currency.  
 - Specify the number of decimal places.   
@@ -161,9 +162,8 @@ The following table describes the standard formats that are available for the **
 |4|\<Integer>\<Decimals>\<Point or Comma>\<Sign>|76543,21-|76543.21-|  
 |9|XML format|-76543.21|-76543.21|  
   
-## See Also  
+## Related information  
 
-[AutoFormatType Property](properties/devenv-AutoFormatType-Property.md)   
-[AutoFormatExpression Property](properties/devenv-AutoFormatExpression-Property.md)   
-[DecimalPlaces Property](properties/devenv-DecimalPlaces-Property.md)   
-
+[AutoFormatType property](properties/devenv-autoformattype-property.md)  
+[AutoFormatExpression property](properties/devenv-autoformatexpression-property.md)  
+[DecimalPlaces property](properties/devenv-decimalplaces-property.md)  

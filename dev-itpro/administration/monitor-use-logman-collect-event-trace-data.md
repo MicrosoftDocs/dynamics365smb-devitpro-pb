@@ -88,7 +88,7 @@ tracerpt c:\perflogs\MyTelemetryTraceData_000001.etl -o c:\perflogs\MyTelemetry-
 
 You can also use PerView. Learn more in [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).
   
-## See Also  
+## Related information  
  [Monitoring Business Central Server Events](monitor-server-events.md)   
  [Business Central Server Trace Events](server-trace-events.md)  
  [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md)  

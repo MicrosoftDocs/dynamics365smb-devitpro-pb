@@ -17,6 +17,6 @@ Typically, the **TopNumberOfRows** property or **TopNumberOfRows** method are us
 
 For information about how to change the **Max Page Size** setting, see [Configuring Business Central Server](../administration/configure-server-instance.md) and [Server-Driven Paging in OData Web Services](Server-Driven-Paging-in-OData-Web-Services.md).
 
-## See Also
+## Related information
 
 [Basic Page Operations](Basic-Page-Operations.md)

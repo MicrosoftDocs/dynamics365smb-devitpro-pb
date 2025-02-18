@@ -21,6 +21,6 @@ A list must end with a member; not a separator {0}.
 A list cannot end with a separator.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -18,6 +18,6 @@ Parameter '{0}' has no matching param tag in the XML comment for '{1}' (but othe
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

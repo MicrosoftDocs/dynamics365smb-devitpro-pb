@@ -2,7 +2,7 @@
 title: Customize the user interface for user roles
 description: Description of how to customize the User Interface in Business Central by using user roles.
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 01/08/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -10,29 +10,27 @@ ms.reviewer: solsen
 
 # Customize the user interface for user roles
 
-The strength of [!INCLUDE[prod_short](includes/prod_short.md)] is its role-tailored experience that helps users focus on the work that is important to them. [!INCLUDE[prod_short](includes/prod_short.md)] offers several features for developers, application administrators, and end-users, that can be used to customize the the pages that users work with in the client. These features customize the pages on different layers, as illustrated in the following figure. Some customization is done in AL extensions, while others can be done from the client.
+The strength of [!INCLUDE[prod_short](includes/prod_short.md)] is its role-tailored experience that helps users focus on the work that's important to them. [!INCLUDE[prod_short](includes/prod_short.md)] offers several features for developers, application administrators, and end-users, that can be used to customize the pages that users work with in the client. These features customize the pages on different layers, as illustrated in the following figure. Some customization is done in AL extensions, while others can be done from the client.
 
-![Role customization overview.](media/role-customization.png "Role customization overview")
+![Role customization overview](media/role-customization.png "Role customization overview")
 
 ## Role Centers
 
-The Role Center is first layer of customization. The Role Center is the user's entry point and home page for [!INCLUDE[prod_short](includes/prod_short.md)], displaying information that is pertinent to the user's role in the company and enabling them to easily navigate to relevant pages for viewing data and performing tasks. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users.
+The Role Center is the first layer of customization. The Role Center is the user's entry point and home page for [!INCLUDE[prod_short](includes/prod_short.md)], displaying information that is pertinent to the user's role in the company. The Role Center enables users to easily navigate to relevant pages for viewing data and performing tasks. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users.
 
-A Role Center is created in AL by the `rolecenter` page type. 
+A Role Center is created in AL by using the `rolecenter` page type. Learn more in [Designing Role Centers](devenv-designing-role-centers.md).
 
-For more information, see [Designing Role Centers](devenv-designing-role-centers.md).
+## Page extensions and Designer
 
-## Page extensions and designer
-
-A [page extension object](devenv-page-ext-object.md) extends a page object by adding, moving or hiding UI elements that are defined in the page's source code. Page extensions can be created in Visual Studio Code or from the client using [Designer](devenv-inclient-designer.md). Changes made by page extensions affect the UI for all users, regardless of which profile they belong to.
+A [page extension object](devenv-page-ext-object.md) extends a page object by adding, moving, or hiding UI elements that are defined in the page's source code. Page extensions can be created in Visual Studio Code or from the client using [Designer](devenv-inclient-designer.md). Changes made by page extensions affect the UI for all users, regardless of which profile they belong to.
 
 ## Profiles and page customizations 
 
-A *profile* is the mechanism that makes a Role Center and its associated pages available to users in the client and enables you to build an individual experience for the specific user role. In the client, profiles are referred to as **Roles**. Users sign in to the client under a specific role, which they can switch from the **My Settings** page. Different profiles can use the same Role Center. Profiles can be created as part of an extension by writing AL code or they can be created from the client by a user who has the proper permissions, typically an administrator or consultant.
+A *profile* is the mechanism that makes a Role Center and its associated pages available to users in the client and enables you to build an individual experience for the specific user role. In the client, profiles are referred to as **Roles**. Users sign in to the client under a specific role, which they can switch from the **My Settings** page. Different profiles can use the same Role Center. Profiles can be created as part of an extension by writing AL code or they can be created from the client by a user who has the proper permissions, typically an administrator, or consultant.
 
-On top of the profile are *page customizations*. Page customizations modify the layout of elements on specific pages. For example, you can move or hide actions, fields, columns on list, or entire parts; exactly the same modifications that can be done using personalization. The page customizations will be seen by all users of the profile. Like profiles, page customizations can be made in AL as part of an extension or from the client by modifying the profile. Customizations that are made from the client will take precedence over the customizations in AL. <!--Page customizations are substractive between layers. This means, for example, if an element such as an action or part is removed at by an extension, it cannot be added by customizing the profile in the client or by personalization.-->
+On top of the profile are *page customizations*. Page customizations modify the layout of elements on specific pages. For example, you can move or hide actions, fields, columns on list, or entire parts; exactly the same modifications that can be done using personalization. The page customizations will be seen by all users of the profile. Like profiles, page customizations can be made in AL as part of an extension or from the client by modifying the profile. Customizations that are made from the client takes precedence over the customizations in AL. <!--Page customizations are substractive between layers. This means, for example, if an element such as an action or part is removed at by an extension, it cannot be added by customizing the profile in the client or by personalization.-->
 
-For more information about profiles and page customization in AL, see [Designing Profiles](devenv-design-profiles.md). For information about using the client, [Customizing the Workspace for Profiles (Roles)](/dynamics365/business-central/ui-personalization-manage?) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
+Learn more about profiles and page customization in AL in [Designing profiles](devenv-design-profiles.md). Learn more about using the client in [Customizing the workspace for profiles (roles)](/dynamics365/business-central/ui-personalization-manage?).
 
 <!--
 
@@ -49,7 +47,7 @@ For more information about profiles and page customization in AL, see [Designing
 -->
 ## Personalization
 
-The last layer of customization is personalization. This is done strictly in the client by end-users for customizing their own workspaces. The changes that users make take precedent over page customizations made on the profile. The changes will only be seen by the user; not other users.  For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
+The last layer of customization is personalization. This is done strictly in the client by end-users for customizing their own workspaces. The changes that users make take precedence over page customizations made on the profile. The changes will only be seen by the user; not other users. Learn more in [Personalizing your workspace](/dynamics365/business-central/ui-personalization-user).
 
 <!--
 ## Using the client to create AL profiles and page customizations
@@ -145,10 +143,10 @@ pagecustomization Configuration3 customizes "Customer List"
 > Currently, the `profileextension` object and profiles.json are only used internally for managing profiles from the client. You cannot develop and compile these in AL with Visual Studio Code. This will be be supported in a future release.  
 -->
 
-## See also
+## Related information
 
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Page Object](devenv-page-object.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Page Extension Properties](properties/devenv-page-property-overview.md)   
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Page object](devenv-page-object.md)  
+[Page extension object](devenv-page-ext-object.md)  
+[Page extension properties](properties/devenv-page-property-overview.md)   

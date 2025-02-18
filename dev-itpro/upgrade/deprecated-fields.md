@@ -141,7 +141,7 @@ The functionality for payments and reconciliation in the Danish version (FIK) ha
 |1250|Bank Statement Matching Buffer|13601|13652|Match Status|MatchStatus|
 |1250|Bank Statement Matching Buffer|13600|13653|Description|DescriptionBankStatement|
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

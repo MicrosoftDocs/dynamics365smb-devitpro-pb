@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 02/17/2024
+ms.date: 11/14/2024
 ms.custom: bap-template
 ---
 
@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 In this article, you learn how to change the caption shown in the UI when Copilot is retrieving generated results from the Azure Open AI service. The UI is defined by the generate mode of the prompt dialog page. Its purpose is to give users feedback about what's happening with Copilot. The caption functions as a kind of progress bar for the user. By default, the caption of PromptDialog page when it's in the generate mode is **Generating**, as illustrated in the following figure:
 
-[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.png)](media/promptdialog-generate-mode.png#lightbox)
+[![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.svg)](media/promptdialog-generate-mode.svg#lightbox)
 
 Customizing the caption enables you to give users more specific feedback about what Copilot is doing or how it's progressing. This feedback is especially useful if the Copilot consists of multiple steps or takes a long time.
 
@@ -58,9 +58,9 @@ systemaction(Regenerate)
 
 The following figures illustrate the customized captions in the UI:
 
-[![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.png)](media/promptdialog-generate-mode-custom.png#lightbox)
+[![Shows a screenshot of the custom caption of generate mode in the UI](media/promptdialog-generate-mode-custom.svg)](media/promptdialog-generate-mode-custom.svg#lightbox)
 
-[![Shows a screenshot of the revising custom caption of generate mode in the UI](media/generate-mode-caption-revising.png)](media/generate-mode-caption-revising.png#lightbox)
+[![Shows a screenshot of the revising custom caption of generate mode in the UI](media/generate-mode-caption-revising.svg)](media/generate-mode-caption-revising.svg#lightbox)
 
 ## Example: From the RunGeneration() procedure
 
@@ -109,4 +109,4 @@ For a more comprehensive example, go to [Advanced_SuggestJob sample on GitHub](h
 
 - [Design Copilot prompt mode](copilot-design-prompt-mode.md)
 - [Design Copilot content mode](copilot-design-content-mode.md)
-- [Launch Copilot](copilot-launch-experience.md) 
+- [Launch Copilot prompt dialog page](devenv-page-prompting-floating-actionbar.md)

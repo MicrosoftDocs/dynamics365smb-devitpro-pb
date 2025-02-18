@@ -18,6 +18,6 @@ The field with ID '{0}' and name '{1}' cannot be used as source expression in th
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

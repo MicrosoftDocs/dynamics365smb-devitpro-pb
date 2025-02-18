@@ -21,6 +21,6 @@ Member is not allowed in this context.
 Procedures or variables are not allowed in this context.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

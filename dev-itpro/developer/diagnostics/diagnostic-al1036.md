@@ -21,6 +21,6 @@ The locale '{0}' is not valid.
 A translation locale culture specified in the manifest must follow the format languageCode-CountryCode, such as en-US.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

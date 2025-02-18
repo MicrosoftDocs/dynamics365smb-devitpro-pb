@@ -21,6 +21,6 @@ Groups defined in the action area '{0}' should only contain actions or groups.
 Groups defined in an action area should only contain actions or groups.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -54,7 +54,7 @@ In other words, if you see a version number such as `20.1.23456.26323`, then it 
 
 The same version numbers are used to identify versions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, including when you deploy containers on Docker.  
 
-## See also
+## Related information
 
 [Managing technical support](manage-technical-support.md)  
 [Installing a cumulative update](../upgrade/upgrading-cumulative-update.md)  

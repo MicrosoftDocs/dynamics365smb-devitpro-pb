@@ -176,7 +176,7 @@ Accessing Designer is controlled on a user or user group basis by the **EXTEN. M
    > [!TIP]
    > You can hide the **Automation** item from users, but not Use Designer. Learn more at [Set Up Power Automate Integration](../powerplatform/power-automate-setup.md).
 
-## See also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  

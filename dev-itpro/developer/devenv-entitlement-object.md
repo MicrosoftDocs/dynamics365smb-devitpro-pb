@@ -1,8 +1,8 @@
 ---
 title: Entitlement object
-description: Description of the entitlement object in AL for Business Central.
+description: Discover how to define and use entitlement objects in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 09/27/2023
+ms.date: 01/13/2024
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
@@ -16,13 +16,13 @@ ms.reviewer: solsen
 
 The entitlement object in [!INCLUDE [prod_short](includes/prod_short.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in Microsoft Entra ID.
 
-An entitlement consists of a number of [PermissionSet objects](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitlement can only include permission set objects, which reference the objects that are included within the same app. This is to ensure that the entitlements included with one app can't alter or redefine the entitlements included with another app. Being entitled defines the maximum permissions a user is entitled to. Actual permissions are the intersection between the permissions the user is entitled to and the permissions the user is assigned.
+An entitlement consists of many [PermissionSet objects](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitlement can only include permission set objects, which reference the objects that are included within the same app. This is to ensure that the entitlements included with one app can't alter or redefine the entitlements included with another app. Being entitled defines the maximum permissions a user is entitled to. Actual permissions are the intersection between the permissions the user is entitled to and the permissions the user is assigned.
 
 Entitlements can only be used with the online version of [!INCLUDE [prod_short](includes/prod_short.md)].
 
 ## Supporting transactability for AppSource apps
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements can be used to support transactability for AppSource apps by binding entitlements to offers. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements can be used to support transactability for AppSource apps by binding entitlements to offers. Learn more in [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 <!--
 > [!NOTE]  
@@ -42,44 +42,30 @@ This example illustrates a simple entitlement object with the [Type property](pr
 ```al
 
 entitlement "Delegated Admin agent - Partner"
-
 {
     Type = Role;
-
     RoleType = Delegated;
-
     Id = '00000000-0000-0000-0000-000000000007';
 
     ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
-
 }
 
 entitlement "Delegated Helpdesk agent - Partner"
-
 {
-
     Type = Role;
-
     RoleType = Delegated;
-
     Id = '00000000-0000-0000-0000-000000000008';
 
     ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
-
 }
 
 entitlement "Dynamics 365 Admin - Partner"
-
 {
-
     Type = Role;
-
     RoleType = Delegated;
-
     Id = '00000000-0000-0000-0000-000000000009';
 
     ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
-
 }
 ```
 
@@ -107,7 +93,6 @@ entitlement BC_Unlicensed
     Type = Unlicensed;
     ObjectEntitlements = "Custom license";
 }
-
 ```
 
 In the following code example, you can see how to check for entitlements in code.
@@ -192,6 +177,7 @@ entitlement BC_Group
 ```
 
 ## Entitlement example - Microsoft Entra application access
+
 An example of an entitlement where `Type` is `Application`. This supports scenarios when a vendor has to have access to the AppSource app with transact support and no need to buy a license. The `id` property is the client ID of the Microsoft Entra application. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
@@ -217,10 +203,10 @@ entitlement BC_ApplicationWithAutomationScope
 }
 ```
 
-## See also
+## Related information
 
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  
-[Permission Set Extension Object](devenv-permissionset-ext-object.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Entitlements and permission set overview](devenv-entitlements-and-permissionsets-overview.md)  
+[Permission set extension object](devenv-permissionset-ext-object.md)  
 [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md)  

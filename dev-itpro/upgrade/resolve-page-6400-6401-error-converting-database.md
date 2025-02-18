@@ -68,6 +68,6 @@ The resolution requires that you make changes to codeunit 6400, and pages 6400 a
     
 
 
-## See also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)  
  [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)  

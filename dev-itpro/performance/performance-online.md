@@ -48,7 +48,7 @@ Large-scale cloud services use shared resources to achieve the best possible use
 Without limits, one tenant could use many more resources than other tenants. Other tenants running on the same resources might experience slower performance. Although you can't change these limits, it's useful to be aware of them. For more information about the limits, see [Operational Limits for Business Central Online](../administration/operational-limits-online.md).
 
 
-## See Also
+## Related information
 
 [Performance overview](performance-overview.md)  
 [Performance articles For developers](performance-developer.md)  

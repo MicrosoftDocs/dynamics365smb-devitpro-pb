@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 
 **Hang in there! This content is coming soon.**
 
-## See also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)    
 [Page Types and Layouts](devenv-page-types-and-layouts.md)    

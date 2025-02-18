@@ -21,6 +21,6 @@ Cannot add {0} '{1}' with the same name multiple times.
 An element with the same name cannot be added multiple times.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

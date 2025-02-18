@@ -20,6 +20,6 @@ The {0} '{1}' is already being used. The EntityName and EntityNames property val
 > This warning will become an error with Business Central 2025 release wave 1.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

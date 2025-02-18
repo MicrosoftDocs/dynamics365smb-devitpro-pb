@@ -76,7 +76,7 @@ Use the appropriate notation for different data types with filter expressions.
 
 Nested function calls in filter clauses are supported in `$schemaversion=2.1` and later. Nested function calls aren't supported in earlier schema versions, which means that filter clause expressions like `contains(tolower(field), 'some')` don't return the expected results. In this case, a partial case-insensitive text search - but instead either throws an error or returns an undefined result.
 
-## See also
+## Related information
 
 [OData Web Services](OData-Web-Services.md)  
 [Microsoft OData Docs - Query options overview](/odata/concepts/queryoptions-overview)  

@@ -17,7 +17,7 @@ Allows for the management of support settings, such as changing the contact, for
 Get information about the support contact for a specified environment.
 
 ```
-GET /admin/v2.21/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+GET /admin/v2.24/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route parameters
@@ -56,7 +56,7 @@ Sets the support contact information for a specified environment
 
 ```
 Content-Type: application/json
-PUT /admin/v2.21/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+PUT /admin/v2.24/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route parameters
@@ -101,7 +101,7 @@ Returns the newly updated support contact information.
 `businessCentralCommunicationException` - an unhandled error occurred when communicating with the targeted environment's API
 
 
-## See also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

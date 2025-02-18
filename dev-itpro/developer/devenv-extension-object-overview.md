@@ -29,7 +29,7 @@ The following table lists the different extension objects that you can create in
 
 [!INCLUDE [extension-obj-same-app](includes/extension-obj-same-app.md)]
 
-## See also
+## Related information
 
 [Extensibility overview](devenv-extensibility-overview.md)
 [Table extension](devenv-table-ext-object.md)  

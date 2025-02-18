@@ -21,6 +21,6 @@ You cannot set the '{0}' property to '{1}' for {2} '{3}' in the page customizati
 You cannot reference an element defined in a page customization outside the page customization declaring it.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

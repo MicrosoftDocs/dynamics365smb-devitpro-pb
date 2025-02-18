@@ -128,7 +128,7 @@ Occurs when a field has been added to or removed from monitoring. This dimension
 {"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","extensionPublisher":"Microsoft","Component version":"18.0.24800.0","Extension version":"18.1.24822.0","extensionVersion":"18.1.24822.0","componentVersion":"18.0.24800.0","Environment type":"Production","Extension App Id":"437dbf0e-84ff-417a-965d-ed2bb9650972","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension name":"Base Application","extensionName":"Base Application","alObjectName":"Monitor Sensitive Field Data","alObjectType":"CodeUnit","aadTenantId":"common","AadTenantId":"common","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","alObjectId":"1367","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000EMW","alDataClassification":"SystemMetadata","alFieldCaption":"Name 2","alTableCaption":"Vendor","alFieldNumber":"4","alTableNumber":"23"}
 
 -->
-## See also
+## Related information
 [Changelog configuration telemetry](telemetry-changelog-configuration-trace.md)
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

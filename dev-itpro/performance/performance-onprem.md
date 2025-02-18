@@ -141,7 +141,7 @@ The following resources describe ways that you measure and monitor performance i
 - [Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central](../administration/troubleshoot-long-running-queries-using-event-log.md)  
 - [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](../administration/troubleshoot-query-performance-using-query-store.md)
 
-## See Also
+## Related information
 
 [Performance Overview](performance-overview.md)  
 [Performance Topics For Developers](performance-developer.md)  

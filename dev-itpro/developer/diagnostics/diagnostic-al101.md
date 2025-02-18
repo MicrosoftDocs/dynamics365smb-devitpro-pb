@@ -20,6 +20,6 @@ Constant value '11212211221234123465676343434435435343232.12' is outside the ran
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

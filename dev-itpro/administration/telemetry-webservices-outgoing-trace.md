@@ -117,7 +117,7 @@ traces
 [!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
 
-## See also
+## Related information
 
 [HttpClient data type](../developer/methods-auto/httpclient/httpclient-data-type.md)  
 [Telemetry overview](telemetry-overview.md)  

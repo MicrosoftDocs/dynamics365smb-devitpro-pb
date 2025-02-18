@@ -63,7 +63,7 @@ Permissions =
 ...
 ```
 
-## See Also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)  
 [Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  

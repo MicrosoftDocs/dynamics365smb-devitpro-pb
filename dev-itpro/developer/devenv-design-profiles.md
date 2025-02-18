@@ -99,7 +99,7 @@ For example, the following code is the content of an XLIFF file for translating 
 </xliff>
 ```
 
-## See Also
+## Related information
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Object](devenv-page-object.md)  

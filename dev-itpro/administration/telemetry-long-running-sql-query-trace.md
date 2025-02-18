@@ -100,7 +100,7 @@ The following code snippet shows an example of the CustomDimensions.
 
 `{"extensionVersion":"16.0.10962.0","telemetrySchemaVersion":"0.3","componentVersion":"15.0.40494.0","environmentType":"Production","environmentName":"Production","extensionName":"Base Application","alObjectType":"Report","alObjectName":"Suggest Worksheet Lines","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 840\r\n AL CallStack: \"Suggest Worksheet Lines\"(Report 840).DeleteEntries line 10 - Base Application by Microsoft\r\n\"Suggest Worksheet Lines\"(Report 840).\"Cash Flow Forecast - OnPostDataItem\"(Trigger) line 5 - Base Application by Microsoft\r\n\"Cash Flow Management\"(CodeUnit 841).UpdateCashFlowForecast line 32 - Base Application by Microsoft\r\n\"Cash Flow Forecast Update\"(CodeUnit 842).OnRun(Trigger) line 18 - Base Application by Microsoft\r\n\"Job Queue Start Codeunit\"(CodeUnit 449).OnRun(Trigger) line 11 - Base Application by Microsoft\r\n\"Job Queue Dispatcher\"(CodeUnit 448).HandleRequest line 30 - Base Application by Microsoft\r\n\"Job Queue Dispatcher\"(CodeUnit 448).OnRun(Trigger) line 19 - Base Application by Microsoft","companyName":"CRONUS USA, Inc.","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","clientType":"Background","alObjectId":"840","component":"Dynamics 365 Business Central Server","executionTime":"00:00:05.7470000","sqlStatement":"DELETE FROM \"SQLDATABASE\".dbo.\"CURRENTCOMPANY$Cash Flow Forecast Entry$437dbf0e-84ff-417a-965d-ed2bb9650972\" WHERE (\"Cash Flow Forecast No_\"=@0)"}`
  
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

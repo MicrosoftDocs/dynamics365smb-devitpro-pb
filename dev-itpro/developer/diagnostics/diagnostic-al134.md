@@ -21,6 +21,6 @@ ms.reviewer: solsen
 Unknown type. For more information about the data types available as part of the AL Language, see [Data Types and Methods in AL](/dynamics365/business-central/dev-itpro/developer/methods-auto/library).  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -21,6 +21,6 @@ The action '{0}' is not found in the target '{1}'.
 Cannot resolve a reference to an action in a page extension or page customization.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

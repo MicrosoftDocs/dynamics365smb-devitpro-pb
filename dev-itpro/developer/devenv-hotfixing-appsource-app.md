@@ -279,6 +279,6 @@ Version 2.1.0.0 of your app is defined without MyCodeunitFromV1.
 If you submit a new version 1.5.0.0, it's validated for breaking changes with version 1.0.0.0 and version 2.1.0.0.
 Independently of your changes, since MyCodeunitFromV1 was removed from version 2.1.0.0, it must now be marked as ObsoletePending in version 1.5.0.0.
 
-## See also
+## Related information
 
 [Technical Validation FAQ](devenv-checklist-submission-faq.md) 

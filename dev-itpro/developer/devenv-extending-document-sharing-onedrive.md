@@ -225,7 +225,7 @@ Yes, when you set record on the Document Sharing temporary table. But we'll prov
 ### I use environments with identical company names, so that dumps files in the same folder. Can I introduce environment name in the folder structure?
 -->
 
-## See Also
+## Related information
 
 [Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview)    
 [Overview of the Application](devenv-system-application-overview.md)    

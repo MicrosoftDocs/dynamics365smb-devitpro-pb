@@ -96,7 +96,7 @@ With application access management enabled, the typical process for getting cust
 
     `https://[application family].bc.dynamics.com/[Customer Microsoft Entra tenant ID]/Production`
 
-## See also
+## Related information
 
 [Application Access Management API](embed-app-application-access-management-api.md)    
 [Using Application Family](../deployment/embed-app-using-application-family.md)  

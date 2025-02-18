@@ -998,6 +998,6 @@ catch [System.Net.WebException]
 ```
 Please make sure you provide full output in textual format when reporting the issues to Microsoft. 
 
-## See Also
+## Related information
 
 [App Management for ISVs](app-management-overview.md)  

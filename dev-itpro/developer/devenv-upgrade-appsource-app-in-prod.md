@@ -26,7 +26,7 @@ Follow the steps below to update a tenant to the latest version of any AppSource
 > [!NOTE]  
 > An alternative, is to use the Admin Center, where you can also manage the upgrade, given that you have the right permissions. For more information, see [Managing Apps](../administration/tenant-admin-center-manage-apps.md).
 
-## See Also  
+## Related information  
 
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  

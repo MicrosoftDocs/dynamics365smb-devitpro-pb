@@ -118,6 +118,6 @@ Signals that partners add are emitted with the 0000EIV event ID.
 > [!NOTE]
 > Onboarding criteria aren't relevant for non-production scenarios. Evaluation companies and sandboxes are not included when registering onboarding signals or emitting them.
 
-## See also
+## Related information
 
 [Onboarding experiences in Business Central](onboarding-experiences.md)  

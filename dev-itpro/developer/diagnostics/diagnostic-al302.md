@@ -21,6 +21,6 @@ Cannot use '{0}' in {1} '{2}' before it is declared.
 Cannot use an element before it is declared.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -70,7 +70,7 @@ You can also find the connection information for the [!INCLUDE[prod_short](../in
 > [!NOTE]
 > **Flow entries** shows the list of records upon which the flow is acting. Such as a record of a user to whom the flow sent an approval request, indicating the request status and other details of the record. 
 
-## See also
+## Related information
 
 [Set up Automated Flows](automate-workflows.md)  
 [Set up Instant Flows](instant-flows.md)  

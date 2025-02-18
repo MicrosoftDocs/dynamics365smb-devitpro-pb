@@ -103,7 +103,7 @@ Occurs when an index was removed from the base table by table extension object.
 {"extensionVersion":"1.0.0.0","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","extensionPublisher":"Default publisher","Component version":"18.0.22893.23353","Extension version":"1.0.0.0","Environment type":"Production","componentVersion":"18.0.22893.23353","Extension App Id":"00001111-aaaa-2222-bbbb-3333cccc4444","environmentType":"Production","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension name":"bc-index5","extensionName":"bc-index5","alObjectName":"MyBaseTable","aadTenantId":"common","AadTenantId":"common","extensionId":"aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb","Component":"Dynamics 365 Business Central Server","alObjectId":"50120","component":"Dynamics 365 Business Central Server","eventId":"LC0025","keyMaintainSIFTIndex":"False","keyMaintainSQLIndex":"True","keyFields":"MyBaseField1, MyBaseField2","keyName":"Key2"}
 
 -->
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

@@ -80,7 +80,7 @@ codeunit 10 StringifierWithOverloads
 } 
 ```
 
-## See also
+## Related information
 
 [AL method reference](../methods-auto/library.md)  
 [AL development environment](../devenv-reference-overview.md)  

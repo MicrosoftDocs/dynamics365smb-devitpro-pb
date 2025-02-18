@@ -505,7 +505,7 @@ For more information about running the [!INCLUDE[adminshell](../developer/includ
 
 
 
-## See Also
+## Related information
 [Configuring Business Central Web Server Instances](configure-web-server.md)  
 [Business Central Server Administration Tool](administration-tool.md)   
 [Enhancing Business Central Server Security](../security/enhancing-server-instance-security.md)   

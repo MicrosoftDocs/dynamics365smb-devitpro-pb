@@ -74,6 +74,6 @@ Here are a few examples of consultancy services provided by publishers:
 
 Learn more about [Consultancy Services](https://appsource.microsoft.com/partners).
 
-## See also
+## Related information
 
 [Get Started with Building Apps](get-started.md)

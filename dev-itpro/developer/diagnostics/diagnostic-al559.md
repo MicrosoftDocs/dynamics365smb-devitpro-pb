@@ -21,6 +21,6 @@ A Part type page cannot contain other parts.
 > This warning will become an error with Business Central 2020 release wave 1.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

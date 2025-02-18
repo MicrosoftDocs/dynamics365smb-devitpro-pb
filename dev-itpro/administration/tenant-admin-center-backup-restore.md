@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 06/21/2024
+ms.date: 01/30/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -33,6 +33,7 @@ For more information about permissions sets and user groups, see [Assign Permiss
 
 - Environments can only be restored if the customer has a paid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription.
 - Each environment can be restored up to 10 times in a calendar month.
+- An environment can be restored to any time up to 28 days ago. It's not possible to restore an environment to a time more than 28 days ago.
 - An environment can only be restored within the same Azure region and country/region ([!INCLUDE[prod_short](../developer/includes/prod_short.md)] localization) as the original environment.
 - A production environment can be restored to an environment of type **Production** or **Sandbox**. A sandbox environment can only be restored to a **Sandbox** environment.
 - When you restore a sandbox environment, all development extensions (that is, extensions published directly from Visual Studio Code) aren't available in the restored environment&mdash;even if they were present at the point-in-time you're restoring to). Additionally, any per-tenant extensions that depend on such development extensions are also not available.
@@ -104,7 +105,7 @@ The original environment remains available and isn't affected by the restore ope
 
 When you're satisfied with the data in the restored database, enable the users, start the job queues, and let your organization know that the restore process is now completed and they can again use the environment.
 
-## See also
+## Related information
 
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Managing Apps](tenant-admin-center-manage-apps.md)  

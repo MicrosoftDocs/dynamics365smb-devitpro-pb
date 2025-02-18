@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.topic: faq
 ms.collection:
   - bap-ai-copilot 
-ms.date: 11/11/2023
+ms.date: 11/14/2024
 ms.custom: bap-template
 ---
 

@@ -538,7 +538,7 @@ This walkthrough showed how an extension can be developed. The main AL objects a
 > [!TIP]  
 > To try building a more advanced Customer Rewards sample extension, see [Building an advanced sample extension](devenv-extension-advanced-example.md).
 
-## See also
+## Related information
 
 [Developing extensions](devenv-dev-overview.md)  
 [Get started with AL](devenv-get-started.md)  

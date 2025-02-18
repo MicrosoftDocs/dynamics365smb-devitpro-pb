@@ -2,7 +2,7 @@
 title: "Permissions property"
 description: "Sets whether an object has additional permission required to perform some operations on one or more tables."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 11/25/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -31,11 +31,13 @@ Sets whether an object has additional permission required to perform some operat
 
 ## Syntax
 
+The Permissions property allows you to set permissions for one or more objects.
+
 ```AL
-Permissions = TableData 1221 = rimd;
+Permissions = ObjectType ObjectIdentifier = PermissionValues [, ObjectType ObjectIdentifier = PermissionValues] ;
 ```
 
-## Values
+## Property values
 
 | Values   |Represents  |Description   |
 |----------|------------|---------------------------------------------|
@@ -44,6 +46,20 @@ Permissions = TableData 1221 = rimd;
 |M or m    |Modify      |Specifies direct (M) or indirect (m) modify permission.|
 |D or d    |Delete      |Specifies direct (D) or indirect (d) delete permission.|
 |X or x    |Execute     |Specifies direct (X) or indirect (x) execute permission.|
+
+
+## Example 
+
+The following AL code sets permissions to read/insert/modify/delete data in the table **MyTable** as well as permission to run the codeunit **MyCodeUnit**, open the page **MyPage**, and run the report **MyReport**.
+
+
+```AL
+Permissions = 
+     tabledata MyTable = RIMD,
+     codeunit MyCodeUnit = X,
+     page MyPage = X,
+     report MyReport = X
+```
 
   
 ## Remarks  
@@ -120,5 +136,5 @@ codeunit 50113 CreateCustomer
 ## Related information
 
 [Properties](devenv-properties.md)  
-[Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions)  
-[Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions)
+[Create users according to licenses](/dynamics365/business-central/ui-how-users-permissions)  
+[Assign permissions to users and groups](/dynamics365/business-central/ui-define-granular-permissions)

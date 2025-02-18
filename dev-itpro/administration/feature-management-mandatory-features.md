@@ -186,7 +186,7 @@ The change to making these features mandatory is postponed. They aren't turned o
 |[New Microsoft Word report rendering platform](/dynamics365/business-central/dev-itpro/developer/devenv-howto-report-layout)     | 2024 release wave 1        |
 |[Replace Multiple Interest Rate CZ with Finance Charge Interest Rate](/dynamics365/business-central/receivables-collect-outstanding-balances)| 2025 release wave 2 |
 
-## See Also
+## Related information
 
 [Enabling Upcoming Features Ahead of Time](feature-management.md)  
 [Deprecated Features in the Base App](../upgrade/deprecated-features-w1.md)

@@ -36,7 +36,7 @@ It might happen that a [!INCLUDE [prod_short](../includes/prod_short.md)] online
 
 <!-- TODO: How to manage your customers' support issues -->
 
-## See Also
+## Related information
 
 [Report Customer Outages](report-outage.md)  
 [Managing Technical Support](manage-technical-support.md)  

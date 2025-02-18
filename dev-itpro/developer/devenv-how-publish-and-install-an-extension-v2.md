@@ -1,11 +1,11 @@
 ---
 title: Publishing and Installing an Extension
-description: "Description of the process of publishing and installing an extension"
+description: Description of the process of publishing and installing an extension.
 author: jswymer
-ms.date: 06/10/2024
+ms.date: 02/05/2025
 ms.topic: conceptual
 ms.author: jswymer
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ---
 
 # Publishing and installing an extension
@@ -14,6 +14,9 @@ To make your extension available to tenant users requires three basic tasks: pub
 
 > [!NOTE]  
 > This article describes how to publish and install the first version of an extension. If you want to publish an install newer version of an extension, see [Upgrading Extensions](devenv-upgrading-extensions.md).  
+
+> [!NOTE]
+> To be able to publish apps for Business Central on-premises, you must have a developer license. Learn more in [Get started building apps](readiness/get-started.md).
 
 ## Publish and synchronize an extension
 
@@ -73,7 +76,7 @@ After you publish and synchronize an extension, you can install it on tenants. T
 1. Review and accept the license agreement.  
 1. Select the **Install** button to install the extension.
 
-## See also
+## Related information
 
 [Unpublishing and Uninstalling Extensions](devenv-unpublish-and-uninstall-extension-v2.md)  
 [Developing Extensions](devenv-dev-overview.md)  

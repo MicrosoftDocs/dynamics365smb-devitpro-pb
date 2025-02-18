@@ -81,6 +81,6 @@ When the rightmost subexpression is converted, the expression can be evaluated, 
 text + text = text
 ```
 
-## See also
+## Related information
 
 [AL variables](devenv-al-variables.md#assignment-and-type-conversion)  

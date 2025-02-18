@@ -88,7 +88,7 @@ codeunit 50101 MyTestPermissionsTestRunner
 }
 ```
 
-## See Also  
+## Related information  
 [OnBeforeTestRun](triggers-auto/codeunit/devenv-onbeforetestrun-codeunit-trigger.md)  
 [OnAfterTestRun](triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
 [Testing the Application](devenv-Testing-Application.md)  

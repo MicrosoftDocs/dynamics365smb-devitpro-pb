@@ -24,6 +24,9 @@ Include the field in the optimized text search index to allow faster search in t
 
 The default value of `OptimizeForTextSearch` is false.
 
+> [!NOTE]
+> This property only works for normal fields, and not for FlowFields, FlowFilters, and CalcFields.
+
 ## Related information
 
 [Getting Started with AL](../devenv-get-started.md)  

@@ -9,7 +9,7 @@ author: jswymer
 
 Nonclustered columnstore indexes \(NCCIs\) let you quickly calculate the sums of numeric data type \(Decimal, Integer, BigInteger, and Duration\) columns in tables. Calculations can be done in tables with millions of records. NCCIs optimize the performance of FlowFields and query results in a Business Central application. The articles in this section describe how NCCIs are implemented in Business Central.  
   
-## See Also  
+## Related information  
 
 [NCCI and SQL Server](devenv-ncci-and-sql-server.md)  
 [NCCI Tuning and Tracing](devenv-ncci-tuning-and-tracing.md)  
