@@ -1,8 +1,8 @@
 ---
-title: "AppSourceCop Warning AS0119"
+title: "AppSourceCop Error AS0119"
 description: "The source symbol's MovedTo property value does not match the destination AppId."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Warning AS0119
+# AppSourceCop Error AS0119
 The value of the MovedTo property in the source symbol does not match the destination AppId.
 
 ## Description
