@@ -2,7 +2,7 @@
 title: "BigInteger data type"
 description: "Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,223,372,036,854,775,807."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,6 +17,12 @@ Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,
 
 
 
+## Instance methods
+The following methods are available on instances of the BigInteger data type.
+
+|Method name|Description|
+|-----------|-----------|
+|[ToText()](biginteger-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

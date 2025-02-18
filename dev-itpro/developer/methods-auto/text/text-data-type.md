@@ -2,7 +2,7 @@
 title: "Text data type"
 description: "Denotes a text string."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -26,7 +26,8 @@ The following methods are available on the Text data type.
 |[CopyStr(Text, Integer [, Integer])](text-copystr-method.md)|Copies a substring of any length from a specific position in a string (text or code) to a new string.|
 |[DelChr(Text [, Text] [, Text])](text-delchr-method.md)|Deletes chars contained in the which parameter in a string based on the contents on the where parameter. If the where parameter contains an equal-sign, then all occurrences of characters in which is deleted from the current value. If the where parameter contains a less-than, then the characters are only deleted when they are first in the string. If the where parameter contains a greater-than, then the characters are only deleted when they are the last in the string. If the where parameter contains any other char, an exception is thrown. If the where parameter or the which parameter is empty, the source is returned unmodified. The which parameter is to be considered as an array of chars to delete where the order does not matter.|
 |[DelStr(Text, Integer [, Integer])](text-delstr-method.md)|Deletes a substring inside a string (text or code).|
-|[IncStr(Text)](text-incstr-method.md)|Increases a positive number or decrease a negative number inside a string by one (1).|
+|[IncStr(Text)](text-incstr-string-method.md)|Increases the last positive number or decreases the last negative number inside a string by one (1).|
+|[IncStr(Text, BigInteger)](text-incstr-string-biginteger-method.md)|Increases the last positive number or decreases the last negative number inside a string by the provided positive increment.|
 |[InsStr(Text, Text, Integer)](text-insstr-method.md)|Inserts a substring into a string.|
 |[LowerCase(Text)](text-lowercase-method.md)|Converts all letters in a string to lowercase.|
 |[MaxStrLen(Text)](text-maxstrlen-string-method.md)|Gets the maximum defined length of a string variable.|

@@ -2,7 +2,7 @@
 title: "System data type"
 description: "Is a complex data type."
 ms.author: solsen
-ms.date: 10/07/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -73,6 +73,8 @@ The following methods are available on the System data type.
 |[GetLastErrorText(Boolean)](system-getlasterrortext-boolean-method.md)|Gets the last error that occurred in the debugger.|
 |[GetUrl(ClientType [, Text] [, ObjectType] [, Integer] [, Record] [, Boolean])](system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GetUrl(ClientType, Text, ObjectType, Integer, RecordRef [, Boolean])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
+|[GetUrl(ClientType [, Text] [, ObjectType] [, Integer] [, Record] [, Boolean] [, Text])](system-geturl-clienttype-string-objecttype-integer-table-boolean-string-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
+|[GetUrl(ClientType, Text, ObjectType, Integer, RecordRef [, Boolean] [, Text])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-string-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GlobalLanguage([Integer])](system-globallanguage-method.md)|Gets and sets the current global language setting.|
 |[GuiAllowed()](system-guiallowed-method.md)|Checks whether the AL code can show any information on the screen.|
 |[HasCollectedErrors()](system-hascollectederrors-method.md)|Gets a value indicating whether errors have been collected in the current error collection scope.|

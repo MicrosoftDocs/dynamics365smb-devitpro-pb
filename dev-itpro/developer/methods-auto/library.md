@@ -2,7 +2,7 @@
 title: "Data types and methods in AL"
 description: ""
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -88,6 +88,8 @@ The following data types are available as part of the AL language. Each data typ
 |[TestField](testfield/testfield-data-type.md)|Represents a testable field on a page.|
 |[TestFilter](testfilter/testfilter-data-type.md)|Represents a test filter on a page.|
 |[TestFilterField](testfilterfield/testfilterfield-data-type.md)|Represents the type of a field filter in a test filter on a page or on a request page.|
+|[TestHttpRequestMessage](testhttprequestmessage/testhttprequestmessage-data-type.md)|Represents a test HTTP request message.|
+|[TestHttpResponseMessage](testhttpresponsemessage/testhttpresponsemessage-data-type.md)|Represents a test HTTP response message including the status code and data.|
 |[TestPage](testpage/testpage-data-type.md)|Represents a variable type that can be used to test Page Application Objects.|
 |[TestPart](testpart/testpart-data-type.md)|Represents a variable type that can be used to test Page Application Objects of type Part.|
 |[TestRequestPage](testrequestpage/testrequestpage-data-type.md)|Stores test request pages. A test request page part is a logical representation of a request page on a report. A test request page does not display a user interface (UI). The subtype of a test request page is the report whose request page you want to test.|
@@ -128,6 +130,7 @@ The following data types are available as part of the AL language. Each data typ
 |[ExecutionMode](executionmode/executionmode-option.md)|The execution mode of the current session.|
 |[FieldClass](fieldclass/fieldclass-option.md)|Represents the type of a field class.|
 |[FieldType](fieldtype/fieldtype-option.md)|Represents the type of a table field.|
+|[HttpRequestType](httprequesttype/httprequesttype-option.md)|The different types of HTTP Requests that can be intercepted by a handler|
 |[InherentPermissionsScope](inherentpermissionsscope/inherentpermissionsscope-option.md)|The different types of scope that the InherentPermissions attribute can apply to.|
 |[IsolationLevel](isolationlevel/isolationlevel-option.md)|The isolation level applied for this record.|
 |[NotificationScope](notificationscope/notificationscope-option.md)|Specifies the context in which the notification appears in the client.|
