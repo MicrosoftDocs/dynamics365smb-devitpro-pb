@@ -15,7 +15,7 @@ Our AL codebase contains many scenarios that you can extend that cover a diverse
 Our business application is open source, and the code can be accessed in three different places:
 - [BCApps](https://github.com/microsoft/BCapps) This repository contains modules for the System Application and the Business Foundation.
 - [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) This repository contains the rest of the 1st party applications.
-- [BaseApp](https://askjesperTODO) This repository 
+- [BaseApp](https://askjesperTODO) This repository contains the Base Application of Business Central.
 
 ## Contribute to BCApps
  
