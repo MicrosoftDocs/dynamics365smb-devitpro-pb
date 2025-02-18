@@ -3345,9 +3345,11 @@
 #### [OnInitReport trigger](triggers-auto/report/devenv-oninitreport-report-trigger.md)
 #### [OnPreReport trigger](triggers-auto/report/devenv-onprereport-report-trigger.md)
 #### [OnPostReport trigger](triggers-auto/report/devenv-onpostreport-report-trigger.md)
+#### [OnPreRendering trigger](triggers-auto/report/devenv-onprerendering-report-trigger.md)
 ### Report Extension triggers
 #### [OnPreReport trigger](triggers-auto/reportextension/devenv-onprereport-reportextension-trigger.md)
 #### [OnPostReport trigger](triggers-auto/reportextension/devenv-onpostreport-reportextension-trigger.md)
+#### [OnPreRendering trigger](triggers-auto/reportextension/devenv-onprerendering-reportextension-trigger.md)
 ### Report Data Item triggers
 #### [OnPreDataItem trigger](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)
 #### [OnAfterGetRecord trigger](triggers-auto/reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md)
