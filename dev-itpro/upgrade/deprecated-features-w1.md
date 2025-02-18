@@ -21,29 +21,43 @@ This article describes the features that have been moved, removed, or replaced i
 
 The following features will be removed in 2026 release wave 1.
 
-### API (v1.0) for Business Central
+### API (v1.0) for Business Central (removal)
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced| With [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can create Connect apps. Connect apps establish a point-to-point connection between [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and third-party solutions or services using the standard REST API to interchange data. </br></br>In 2020 release wave 2, we introduced an improved API where all complex properties are replaced with first-level properties or navigation properties. This change significantly improves API performance because the complex fields were previously calculated at runtime. In API v2.0, all multipart keys and non-GUID keys are replaced with unique GUID keys. Entities can be retrieved using the SystemId, which is immutable, platform-enforced, and indexed. This change improves auditing and API reading performance.</br></br>The API v2.0 contains all the functionality from API v1.0, so migration should be possible. If this isn't the case, reach out to us via [https://github.com/microsoft/ALAppExtensions](https://github.com/microsoft/ALAppExtensions).</br></br>To learn about the replacement feature, go to [Transitioning from API v1.0 to API v2.0](../api-reference/v2.0/transition-to-api-v2.0.md). |
 
-### Legacy Power BI apps on AppSource
+### Legacy Power BI apps on AppSource (removal)
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced| While useful to show the Power BI embed capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the following Power BI apps on AppSource are replaced: </br></br>* Dynamics 365 Business Central - CRM</br>* Dynamics 365 Business Central - Finance</br>* Dynamics 365 Business Central - Sales</br></br> The apps are replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The apps were released in version 25.1. </br></br>To learn about the replacement features, go to [aka.ms/bcAnalytics](https://aka.ms/bcAnalytics). |
 
-### Intelligent Cloud Insights
+### Intelligent Cloud Insights (removal)
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced| The Intelligent Cloud Insights feature showed KPIs and insights. It's now replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The apps were released in version 25.1. <br><br>To learn about the replacement features, go to [aka.ms/bcAnalytics](https://aka.ms/bcAnalytics). |
 
+### Excel reports on the Business Manager and Accountant Role Centers (removal)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| While useful to some organizations, the Balance Sheet, Income Statement, Statement of Cash Flow, Statement of Retained Earnings, Sales Taxes Collected, Customer Statements, Aged Accounts Payable, and Aged Accounts Receivable Excel reports that are currently available on the Business Manager and Accountant Role Centers are hard to change. To change them requires technical skills in AL and VBA programming. We've enhanced analytics capabilities in finance in each release wave over the last three years. For example, we've added data analysis capabilities on ledger tables, reports with Excel layouts that allow you to change the layout as you see fit, and Power BI reports for finance. </br></br>To learn about the replacement features, go to [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
+
+### Legacy reports (Removal)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| While useful to some organizations, many legacy reports in Business Central are hard to change for end users and  requires technical skills in AL and RDLC programming. Therefore, the following reports in the application have now been deprecated and will completely removed from [!INCLUDE[prod_short](../includes/prod_short.md)] in 2026 release wave 1:</br> **Finance reports** </br> [Aged Accounts Receivables (Legacy)](reports/report-120.md) </br> [Aged Accounts Payable (legacy)](reports/report-322.md) 
+ </br> [Trial Balance (legacy)](reports/report-6.md) </br> [Trial Balance/Budget (legacy)](reports/report-9.md) </br> **Fixed ssets reports**  </br> [Fixed Asset Analysis (legacy)](reports/report-5600.md) </br> [Fixed Asset Details (legacy)](reports/report-5604.md) </br> [Fixed Asset Projected Value (legacy)](reports/report-5607.md) </br> **Manufacturing reports**  </br> [Work Center List (legacy)](reports/report-99000759.md)  </br> [Machine Center List (legacy)](reports/report-99000760.md)  </br> **Sales reports**  </br> [Customer - Top 10 List (legacy)](reports/report-111.md) </br> **Purchasing reports**  </br> [Vendor - List (legacy)](reports/report-301.md) </br> [Vendor - Summary Aging (legacy)](reports/report-305.md) </br></br>We've enhanced analytics capabilities in the application in each release wave over the last three years. For example, we've added data analysis capabilities on list pages and queries, reports with Excel layouts that allow you to change the layout as you see fit, and Power BI reports for most functional areas in the application. </br></br>To learn about the replacement features, go to [aka.ms/bcAnalytics](https://aka.ms/bcAnalytics). |
+
+
 ## Changes in 2025 release wave 1
 
 The following features are marked as `obsolete:pending` in 2025 release wave 1.
 
-### Excel reports on the Business Manager and Accountant Role Centers
+### Excel reports on the Business Manager and Accountant Role Centers (warning)
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
@@ -60,6 +74,14 @@ The following features are marked as `obsolete:pending` in 2025 release wave 1.
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced| While useful for showing KPIs and insights, the legacy Intelligent Cloud Insights feature is replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The apps were released in version 25.1. </br></br>To learn about the replacement features, go to [aka.ms/bcAnalytics](https://aka.ms/bcAnalytics). |
+
+### Legacy reports (warning)
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced| While useful to some organizations, many legacy reports in Business Central are hard to change for end users and  requires technical skills in AL and RDLC programming. Therefore, the following reports in the application have now been deprecated and will completely removed from [!INCLUDE[prod_short](../includes/prod_short.md)] in 2026 release wave 1:</br> **Finance reports** </br> [Aged Accounts Receivables (Legacy)](reports/report-120.md) </br> [Aged Accounts Payable (legacy)](reports/report-322.md) 
+ </br> [Trial Balance (legacy)](reports/report-6.md) </br> [Trial Balance/Budget (legacy)](reports/report-9.md) </br> **Fixed ssets reports**  </br> [Fixed Asset Analysis (legacy)](reports/report-5600.md) </br> [Fixed Asset Details (legacy)](reports/report-5604.md) </br> [Fixed Asset Projected Value (legacy)](reports/report-5607.md) </br> **Manufacturing reports**  </br> [Work Center List (legacy)](reports/report-99000759.md)  </br> [Machine Center List (legacy)](reports/report-99000760.md)  </br> **Sales reports**  </br> [Customer - Top 10 List (legacy)](reports/report-111.md) </br> **Purchasing reports**  </br> [Vendor - List (legacy)](reports/report-301.md) </br> [Vendor - Summary Aging (legacy)](reports/report-305.md) </br></br>We've enhanced analytics capabilities in the application in each release wave over the last three years. For example, we've added data analysis capabilities on list pages and queries, reports with Excel layouts that allow you to change the layout as you see fit, and Power BI reports for most functional areas in the application. </br></br>To learn about the replacement features, go to [aka.ms/bcAnalytics](https://aka.ms/bcAnalytics). |
+
 
 ## Changes in 2024 release wave 2
 
