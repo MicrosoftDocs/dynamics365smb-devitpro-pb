@@ -2867,6 +2867,7 @@
 ### [ExternalBusinessEvent attribute](attributes/devenv-externalbusinessevent-attribute.md)
 ### [FilterPageHandler attribute](attributes/devenv-filterpagehandler-attribute.md)
 ### [HandlerFunctions attribute](attributes/devenv-handlerfunctions-attribute.md)
+### [HttpClientHandler attribute](attributes/devenv-httpclienthandler-attribute.md)
 ### [HyperlinkHandler attribute](attributes/devenv-hyperlinkhandler-attribute.md)
 ### [InDataSet attribute](attributes/devenv-indataset-attribute.md)
 ### [InherentPermissions attribute](attributes/devenv-inherentpermissions-attribute.md)
