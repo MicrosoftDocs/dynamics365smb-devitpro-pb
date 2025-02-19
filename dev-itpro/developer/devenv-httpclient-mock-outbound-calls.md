@@ -13,8 +13,8 @@ ms.author: solsen
 
 > [!NOTE]
 > This feature is only supported in [!INCLUDE [prod_short](includes/prod_short.md)] on-premises.
->
-> This feature is available in [!INCLUDE [prod_short](includes/prod_short.md)] version 26.0 and later.
+
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
 To enhance testability of AL code that interacts with outbound web services, it's useful to be able to test functions that call external services without setting up a third-party service. Mocking calls is particularly useful when you test Copilot and AI features, because it enables developers to write unit tests without connecting to the Azure OpenAI Service, which saves tokens. To mock the outbound web service calls, you can define an HttpClient handler function that intercepts and processes the request and returns a mocked response. 
 
