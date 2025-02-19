@@ -16,9 +16,11 @@ ms.author: solsen
 >
 > This feature is available in [!INCLUDE [prod_short](includes/prod_short.md)] version 26.0 and later.
 
-To enhance testability of AL code that interacts with outbound web services, it's useful to be able to mock these outbound calls. Mocking calls is particularly useful when you test Copilot and AI features, because it enables developers to write unit tests without connecting to the Azure OpenAI Service, which saves tokens. When you write your test, you can hardcode the return values for the outbound web service calls by using the HttpClient handler method that intercepts these calls.
+To enhance testability of AL code that interacts with outbound web services, it's useful to be able to test functions that call external services without setting up a third-party service. Mocking calls is particularly useful when you test Copilot and AI features, because it enables developers to write unit tests without connecting to the Azure OpenAI Service, which saves tokens. To mock the outbound web service calls, you can define an HttpClient handler function that intercepts and processes the request and returns a mocked response. 
 
-When you add an [HttpClientHandler](attributes/devenv-httpclient-handler-attribute.md) attribute to a test method, every HTTP request during the test execution is intercepted and routed to the handler. The handler method signature must be as follows: it receives a `TestHttpRequestMessage` that contains information about the HTTP request, as well as a `TestHttpResponseMessage` that contains the mocked HTTP response values that should be updated by the handler. The Boolean return value indicates whether to issue the original HTTP request; `true` or use the mocked response; `false`.
+A handler function is a test method, which is marked with the [HttpClientHandler](attributes/devenv-httpclient-handler-attribute.md) attribute. For this type of test method, any HTTP request within the test body is routed to the client handler instead of to the external endpoint. The handler then receives the request and can mock the response.
+
+The handler method signature must be as follows: it receives a `TestHttpRequestMessage` that contains information about the HTTP request, as well as a `TestHttpResponseMessage` that contains the mocked HTTP response values that should be updated by the handler. The Boolean return value indicates whether to issue the original HTTP request; `true` or use the mocked response; `false`.
 
 ## Handling the test execution
 
@@ -32,6 +34,24 @@ The following shows an example of a codeunit making an external web service call
 
 <!-- code example -->
 
+<!--
+Security Limitations: the request object received by the handler is limited for security reasons. It excludes headers, content, and cookies to ensure that sensitive information is not exposed during testing.
+
+Available Data: The limited request object includes the path, query parameters, and request type (e.g., GET, POST). This limitation is in place because app teams do not currently use the excluded data for testing, and it simplifies the code by avoiding security concerns.
+
+Populating Response: populate the response object based on the request received by the handler. The handler can mock the response or send the request to the external endpoint, depending on the test requirements.
+
+Mocking Responses: handler returns a "not found" response if the document is empty or a "200 OK" response if the ID is correct. This allows for testing different scenarios based on the request data.
+
+Sending Requests: The handler can decide to send the request to the external endpoint instead of mocking the response. This is useful for scenarios where the handler cannot mock certain parts of the request, such as authorization tokens.
+
+Outbound Request Blocking: 
+
+Blocking outbound requests during testing to prevent unintended external calls. This can be controlled using properties that specify whether requests are allowed, allowed only from handlers, or completely blocked.
+
+	Blocking Requests: blocking outbound requests during testing to prevent unintended external calls. This can be controlled using properties that specify whether requests are allowed, allowed only from handlers, or completely blocked.
+	Property Options: "Allow all outbound requests" (no limitations), "Allow outbound from handler" (requests must have a handler), and "Block everything" (no outbound requests allowed).
+	
 ## Related information
 
 [Call external services with the HttpClient data type](devenv-httpclient-mock-outbound-calls.md)  
