@@ -2,8 +2,8 @@
 title: AVS Error AVS0003
 description: "The file '{0}' could not be added to the file system because a file with the same name already exists."
 ms.author: thpeder
-ms.date: 04/26/2024
-ms.reviewer: jswymer
+ms.date: 01/30/2025
+ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
 ---

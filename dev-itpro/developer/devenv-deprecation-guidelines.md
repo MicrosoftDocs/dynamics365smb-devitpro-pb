@@ -3,14 +3,14 @@ title: Best Practices for Deprecation of AL Code
 description: Description of best practices and guidelines for deprecating code in the Base App for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 04/30/2024
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: grobyns
 ---
 
 # Best practices for deprecation of AL code
 
-This article provides guidelines that describe how code in the Base App is obsoleted. The article describes some best practices that Microsoft is using for obsoleting code, and is meant as a nonenforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. For more information, see [Directives in AL](directives/devenv-directives-in-al.md).
+This article provides guidelines that describe how code in the Base App is obsoleted. The article describes some best practices that Microsoft is using for obsoleting code, and is meant as a nonenforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. Learn more in [Directives in AL](directives/devenv-directives-in-al.md).
 
 ## Obsoleting code
 
@@ -109,7 +109,7 @@ When we obsolete code, we:
         #endif
         ```
 
-In order to have the compiler take the new ‘clean’ code path, symbols must be defined. The symbols are defined in the `app.json` file with the following setting. For more information, see [JSON Files](devenv-json-files.md).
+In order to have the compiler take the new ‘clean’ code path, symbols must be defined. The symbols are defined in the `app.json` file with the following setting. Learn more in [JSON files](devenv-json-files.md).
 
 ```al
 "preprocessorSymbols": [ "CLEAN15", "CLEAN16", "CLEAN17", "CLEAN18" ]
