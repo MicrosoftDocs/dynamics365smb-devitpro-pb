@@ -2,7 +2,7 @@
 title: Technical validation FAQ
 description: Describes the most common questions when submitting your app to AppSource for Business Central.
 author: qutreson
-ms.date: 03/30/2025
+ms.date: 02/19/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: qutreson
