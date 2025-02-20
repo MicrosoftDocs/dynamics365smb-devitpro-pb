@@ -26,19 +26,19 @@ The `HttpClientHandler` function signature receives a `TestHttpRequestMessage` t
 
 ## Handling the test execution
 
-Blocking outbound requests during testing prevents unintended external calls. You can control this by using properties that specify whether requests are allowed, allowed only from handlers, or blocked.
+In addition to defining the handler, you can control how outbound HTTP requests are treated during test execution by using the [TestHttpRequestPolicy](properties/devenv-testhttprequestpolicy-property.md) property. Blocking outbound requests during testing prevents unintended external calls. You can control this by using properties that specify whether requests are allowed, allowed only from handlers, or blocked.
 
-The [TestHttpRequestPolicy property](properties/devenv-testhttprequestpolicy-property.md) allows you to control how outbound HTTP requests are treated during test execution. The property has the following possible values:
+The property has the following possible values:
 
-- `BlockOutboundRequests`: Any HTTP request issued during the test execution that isn't caught and handled by an HTTP client handler raises an exception.
-- `AllowOutboundFromHandler`: All HTTP requests issued during the test execution are required to be caught by an HTTP client handler. The handler is allowed to explicitly fall through to issue the original request to the external endpoint.
-- `AllowAllOutboundRequests`: All outbound HTTP requests issued during the test execution are allowed.
-
-The following shows an example of a codeunit making an external web service call, and a test codeunit that intercepts and mocks this. Notice the use of the `HttpClientHandler` attribute in the test codeunit.
+|Value|Description|
+|------|----------|
+|`BlockOutboundRequests`|Any HTTP request issued during the test execution that isn't caught and handled by an HTTP client handler raises an exception.|
+|`AllowOutboundFromHandler`| All HTTP requests issued during the test execution are required to be caught by an HTTP client handler. The handler is allowed to explicitly fall through to issue the original request to the external endpoint.|
+|`AllowAllOutboundRequests`| All outbound HTTP requests issued during the test execution are allowed.|
 
 ## Example 
 
-In the following example the codeunit makes an external web service call, and the test codeunit intercepts and mocks this. Notice the use of the HttpClientHandler in the test codeunit.
+In the following example the `MyCodeunit` codeunit makes an external web service call, and the `MyCodeunitTests` codeunit intercepts and mocks this. Notice the use of the `HttpClientHandler` in the test codeunit.
 
 ```al
 codeunit 50100 MyCodeunit
@@ -48,14 +48,14 @@ codeunit 50100 MyCodeunit
         Client: HttpClient;
         Response: HttpResponseMessage;
     begin
-        Client.Get('http://example.com', Response);
+        Client.Get('http://example.com', Response); // Store response in Response variable
     end;
 }
 
 codeunit 50111 MyCodeunitTests
 {
-    Subtype = Test;
-    TestHttpRequestPolicy = AllowOutboundFromHandler;
+    Subtype = Test; // Test codeunit
+    TestHttpRequestPolicy = AllowOutboundFromHandler; // Allow outbound requests from handler
 
     [Test]
     [HandlerFunctions(`HttpClientHandler`)]
@@ -67,7 +67,6 @@ codeunit 50111 MyCodeunitTests
     end;
 
     [HttpClientHandler]
-
     procedure HttpClientHandler(request: TestHttpRequestMessage; var response: TestHttpResponseMessage): Boolean
     begin
         // Mock a ´401 Unauthorized´ response for the `GET http://example.com` request
@@ -76,23 +75,16 @@ codeunit 50111 MyCodeunitTests
             response.ReasonPhrase := 'Unauthorized';
             exit(false); // Use the mocked response
         end;
-
-        // fall through and issue the original request in case of other requests
-        exit(true);
+            exit(true); // fall through and issue the original request in case of other requests
     end;
 }
 ```
-
 
 ### Security limitations
 
 The request object, which is received by the handler is limited for security reasons. It excludes headers, content, and cookies to ensure that sensitive information isn't exposed during testing. The request object includes path, query parameters, and request type, such as `GET` and `POST`.
 
-Populating Response: populate the response object based on the request received by the handler. The handler can mock the response or send the request to the external endpoint, depending on the test requirements.
-
-Mocking Responses: handler returns a "not found" response if the document is empty or a "200 OK" response if the ID is correct. This allows for testing different scenarios based on the request data.
-
-Sending Requests: The handler can decide to send the request to the external endpoint instead of mocking the response. This is useful for scenarios where the handler can't mock certain parts of the request, such as authorization tokens.
+The handler can decide to send the request to the external endpoint instead of mocking the response. This is useful for scenarios where the handler can't mock certain parts of the request, such as authorization tokens.
 	
 ## Related information
 
