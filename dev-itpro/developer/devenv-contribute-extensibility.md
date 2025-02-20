@@ -26,7 +26,7 @@ The BCApps repository is used directly in our builds. It's our first truly open 
 
 ## Contribute to ALAppExtensions
 
-The ALAppExtensions repository isn't used directly in our builds. We have a process to accept pull requests made to the master <!--Is it still "master" or is it now "main?"--> branch of this repository. You can provide contributions to Microsoft apps for all of our localizations. To explore some examples of contributions, go to [ALAppExtensions](https://github.com/microsoft/ALAppExtensions/pulls?q=is%3Apr+is%3Aclosed+is%3Amerged).
+The ALAppExtensions repository isn't used directly in our builds. We have a process to accept pull requests made to the main branch of this repository. You can provide contributions to Microsoft apps for all of our localizations. To explore some examples of contributions, go to [ALAppExtensions](https://github.com/microsoft/ALAppExtensions/pulls?q=is%3Apr+is%3Aclosed+is%3Amerged).
 
 ## Contribute to BusinessCentralApps
 
@@ -38,7 +38,7 @@ To contribute to change to the Base Application, you can request access to our c
 
 We encourage you to help us improve [!INCLUDE [prod_short](includes/prod_short.md)]. However, it's possible that your extensibility scenario is outside of our repositories. For example, contributions to localizations of BaseApp that aren't in BusinessCentralApps. For those scenarios, we allow extensibility requests.
 
-If the extensibility scenario you're missing is for an AL application in BCApps, the best way to request changes is through a direct contribution to the GitHub repository. However, if your extensibility scenario targets AL applications in the ALAppExtensions or BusinessCentralApps repositories, we can help by creating an extensibility request. <!--this sounds like we create the request, but don't they need to do it?-->
+If the extensibility scenario you're missing is for an AL application in BCApps, the best way to request changes is through a direct contribution to the GitHub repository. However, if your extensibility scenario targets AL applications in the ALAppExtensions or BusinessCentralApps repositories, you can create an extensibility request for us to review.
 
 > [!NOTE]
 > Extensibility requests that we process manually might take longer to complete. Therefore, if possible, we recommend that you contribute directly using a pull request.
@@ -48,7 +48,7 @@ We track extensibility requests as issues in the [ALAppExtensions](https://githu
 > [!NOTE]
 >
 > * We're adding new events in main and the latest release branch. At the time of this writing, the latest release branch is 25.x. In most cases, we make other types of requests, again, only in the main branch, available in upcoming major releases.
-> * If anything in the request is marked as `Obsolete` or surrounded by `CLEAN` tags, we won't add or update the events. <!--Is this specific to events, or should we make it generic and say something like "we won't approve the request."-->
+> * If anything in the request is marked as `Obsolete` or surrounded by `CLEAN` tags, we won't accept the request.
 
 ### Guidelines for an extensibility request
 
