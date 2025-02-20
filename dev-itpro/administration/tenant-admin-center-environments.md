@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 11/19/2024
+ms.date: 11/20/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -143,3 +143,4 @@ The operations are kept for 180 days, after which they're deleted.
 [Move an Environment to another Microsoft Entra organization](tenant-admin-center-environments-move.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
 [The Business Central Administration Center](tenant-admin-center.md)  
+02
