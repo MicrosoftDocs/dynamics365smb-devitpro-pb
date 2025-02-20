@@ -31,11 +31,11 @@ A move is defined by a source and destination extension. The source extension mu
 |Move up| The destination extension is a *dependent* of the source.|
 |Lateral move| The destination extension *isn't a dependent or a dependency* of the source.|
 
-Each scenario requires slightly different steps in each of the steps of the development process. In the following sections, the steps are described in detail for each scenario.
+Each scenario requires slightly different substeps in each of the steps of the development process. In the following sections, these steps are described in detail for each scenario.
 
 ## Move down
 
-### Extension structure
+### Extension structure - move down
 
 It's possible to move a table or a field to an existing or to a new dependency.
 
@@ -90,6 +90,8 @@ table 50100 MyTable
 }
 ```
 
+The `app.json` file should look like this:
+
 ```json
 {
     "dependencies": [
@@ -106,9 +108,11 @@ table 50100 MyTable
 
 ### Changes to `Dependency`
 
-1. Create `MyTable` in Dependency with the same ID and structure as it had in Extension Dependent. Nonbreaking changes can be added between moves (for example, adding a field).
+1. Create `MyTable` in Dependency with the same ID and structure as it had in **Extension Dependent**. Nonbreaking changes can be added between moves (for example, adding a field).
 2. Set the `MovedFrom` property to point towards `Dependent`.
 3. Bump the version to '2.0.0.0'
+
+The code for `MyTable` in `Dependency` should look like this:
 
 ```al
 table 50100 MyTable
@@ -118,20 +122,20 @@ table 50100 MyTable
 }
 ```
 
-### Full Publishing Order
+### Full publishing order
 
-For every extension, set `dependencyPublishingOption` to `Ignore` in the relevant`launch.json` configuration file.
+For each extension, set the `dependencyPublishingOption` to `Ignore` in the relevant `launch.json` configuration file.
 
-1. `Dependent` and `Dependency` version '1.0.0.0', if not already published
-3. `Dependent` with version '1.5.0.0'
-4. `Dependency` with version '2.0.0.0' (Takes over the table)
-5. `Dependent` with version '2.0.0.0'
+1. Set both `Dependent` and `Dependency` to version '1.0.0.0', if not already published.
+2. Update `Dependent` with version '1.5.0.0'.
+3. Update `Dependency` with version '2.0.0.0' (Takes over the table).
+4. Update `Dependent` with version '2.0.0.0'.
 
 ## Move Up
 
-### Extension Structure
+### Extension structure - move up
 
-It's possible to move a table or a field to an existing or new dependent extension. We assume an extension `Dependency` with the table `MyTable` and an extension which is a dependent named `Dependent`. We also assume both start with a version of '1.0.0.0'.
+It's possible to move a table or a field to an existing or new dependent extension. We assume an extension `Dependency` with the table `MyTable` and an extension which is a dependent named `Dependent`. We also assume both start with a version of '1.0.0.0'. Graphically, the extensions look like this:
 
 ```
    ┌───────────────────────┐
@@ -144,12 +148,16 @@ It's possible to move a table or a field to an existing or new dependent extensi
    └────────────────┘
 ```
 
-### Extension `Dependency` - Avoiding Breaking Changes
+In the next sections, we will go through how to move `MyTable` from `Dependency` to `Dependent`.
+
+### Extension `Dependency` - avoid breaking changes
 
 1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `PendingMove` and the `ObsoleteReason` property to indicate the move.
-2. Set the `MovedTo` property to the new location in Dependent.
+2. Set the `MovedTo` property to the new location in `Dependent`.
 3. Bump the version to '1.5.0.0'.
-4. Publish the extension to the environment via Visual Studio Code.
+4. Publish the extension to the environment in Visual Studio Code.
+
+The code for `MyTable` in `Dependency` should look like this:
 
 ```al
 table 50100 MyTable
@@ -161,7 +169,7 @@ table 50100 MyTable
 }
 ```
 
-### Changes to Extension `Dependency`
+### Changes to extension `Dependency`
 
 1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `Moved` and the `ObsoleteReason` property to indicate the move.
 3. Bump the version to `2.0.0.0`
