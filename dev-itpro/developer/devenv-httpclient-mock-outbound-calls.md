@@ -17,7 +17,26 @@ ms.author: solsen
 
 To enhance testability of AL code that interacts with outbound web services, it's useful to be able to test functions that call external services without having to actually set up that external service. Mocking outbound web calls is useful when testing Copilot and AI features, because it enables developers to write unit tests without connecting to the Azure OpenAI Service, which saves tokens. To mock the outbound web service calls, you define an `HttpClientHandler` function that intercepts and processes the request and returns a mocked response. The handler is a test function, which is marked with the [HttpClientHandler](attributes/devenv-httpclient-handler-attribute.md) attribute. For this type of test method, any HTTP request within the test body is routed to the client handler instead of to the external endpoint. The handler then receives the request and can mock the response.
 
-The handler method signature receives a `TestHttpRequestMessage` that contains information about the HTTP request, and a `TestHttpResponseMessage` that contains the mocked HTTP response values that should be updated by the handler. The boolean return value indicates whether to issue the original HTTP request; `true` or use the mocked response; `false`.
+## Defining the handler
+
+The `HttpClientHandler` function signature receives a `TestHttpRequestMessage` that contains information about the HTTP request, and a `TestHttpResponseMessage` that contains the mocked HTTP response values that should be updated by the handler. The boolean return value indicates whether to issue the original HTTP request; `true` or use the mocked response; `false`.
+
+> [!NOTE]
+> The `HttpClientHandler`function returns a "not found" response if the document is empty or is a "200 OK" response if the ID is correct. This allows for testing different scenarios based on the request data.
+
+## Handling the test execution
+
+Blocking outbound requests during testing prevents unintended external calls. You can control this by using properties that specify whether requests are allowed, allowed only from handlers, or blocked.
+
+The [TestHttpRequestPolicy property](properties/devenv-testhttprequestpolicy-property.md) allows you to control how outbound HTTP requests are treated during test execution. The property has the following possible values:
+
+- `BlockOutboundRequests`: Any HTTP request issued during the test execution that isn't caught and handled by an HTTP client handler raises an exception.
+- `AllowOutboundFromHandler`: All HTTP requests issued during the test execution are required to be caught by an HTTP client handler. The handler is allowed to explicitly fall through to issue the original request to the external endpoint.
+- `AllowAllOutboundRequests`: All outbound HTTP requests issued during the test execution are allowed.
+
+The following shows an example of a codeunit making an external web service call, and a test codeunit that intercepts and mocks this. Notice the use of the `HttpClientHandler` attribute in the test codeunit.
+
+## Example 
 
 In the following example the codeunit makes an external web service call, and the test codeunit intercepts and mocks this. Notice the use of the HttpClientHandler in the test codeunit.
 
@@ -64,24 +83,6 @@ codeunit 50111 MyCodeunitTests
 }
 ```
 
-
-### Populating and mocking responses
-
-Populate the response object based on the request received by the handler. The handler can mock the response or send the request to the external endpoint, depending on the test requirements.
-
-The handler returns a "not found" response if the document is empty or is a "200 OK" response if the ID is correct. This allows for testing different scenarios based on the request data.
-
-## Handling the test execution
-
-Blocking outbound requests during testing prevents unintended external calls. You can control this by using properties that specify whether requests are allowed, allowed only from handlers, or blocked.
-
-The [TestHttpRequestPolicy property](properties/devenv-testhttprequestpolicy-property.md) allows you to control how outbound HTTP requests are treated during test execution. The property has the following possible values:
-
-- `BlockOutboundRequests`: Any HTTP request issued during the test execution that isn't caught and handled by an HTTP client handler raises an exception.
-- `AllowOutboundFromHandler`: All HTTP requests issued during the test execution are required to be caught by an HTTP client handler. The handler is allowed to explicitly fall through to issue the original request to the external endpoint.
-- `AllowAllOutboundRequests`: All outbound HTTP requests issued during the test execution are allowed.
-
-The following shows an example of a codeunit making an external web service call, and a test codeunit that intercepts and mocks this. Notice the use of the `HttpClientHandler` attribute in the test codeunit.
 
 ### Security limitations
 
