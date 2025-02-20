@@ -5,22 +5,24 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 04/23/2024
+ms.date: 02/20/2025
 ---
 
 # Moving tables and fields between extensions
 
 As extensions mature or as a consequence of an extension initially created as a large monolith, the need to break down the extension and transfer the ownership of tables or fields, including data, becomes apparent. Moving tables and fields between extensions improves maintainability, flexibility, and scalability of the extension. This feature introduces a controlled process for releasing and taking ownership of tables as part of the extension upgrade process.
 
+> [!NOTE]
+> This feature is available for [!INCLUDE [prod_short](includes/prod_short.md)] on-premises and AppSource apps starting from 2025 release wave 1. It's also enabled for development.
+>
+> It's not allowed for PTEs.
+
+
 ## Moving tables between extensions
 
 To prepare to move a table, both the source and destination must contain the implementation of the specific table. Furthermore, the table must have the same schema and public methods in the source and destination extension. The tables must be identical in both extensions, including the table ID, fields, keys, and triggers. Additive changes to the destination are allowed. for example, adding a new field to the table, but all the existing fields must be identical. Then, the table must be moved in a staged process to avoid breaking changes.
 
 In the source table definition, you must add the `MovedTo` property, making sure that it points to the app ID of the destination extension. Likewise, in the destination extension, you must add the `MovedFrom` property, which should point to the app ID of the source extension. When the extensions are published, installed, synched, or upgraded, the platform handles moving the data ownership for the table from the source to the destination extension.
-
-## Availability of the feature
-
-This feature is available to OnPrem and AppSource apps starting from 2025 release wave 1. It is also enabled for development. It is not allowed for PTEs.
 
 ## Considerations before moving
 
