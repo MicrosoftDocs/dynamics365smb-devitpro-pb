@@ -1560,6 +1560,8 @@
 ### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
+### [Token counting in AI](developer/ai-system-app-token-counting.md)
+### [Function calling in AI](developer/ai-system-app-function-calling.md)
 ### Extend Copilot in Business Central 
 #### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
@@ -1570,6 +1572,7 @@
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
