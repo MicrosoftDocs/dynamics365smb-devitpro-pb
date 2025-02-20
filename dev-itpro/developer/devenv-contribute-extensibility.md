@@ -4,29 +4,29 @@ description: Learn about how to contribute to the different repositories that co
 author: 
 ms.topic: conceptual
 ms.author: 
-ms.date: 18/02/2025
-ms.reviewer: 
+ms.date: 02/18/2025
+ms.reviewer: bholtorf
 ---
 
 # Contribute your extensibility scenarios
 
-Our AL codebase contains many scenarios that you can extend that cover a diverse set of needs for several kinds of businesses. However, if you have found a scenario that is not covered in our extensibility offerings, either by missing events or interfaces, you can contribute yourself to our codebase.
+Our AL codebase contains many scenarios that you can extend to cover the diverse needs of different businesses. However, you might have a business scenario that isn't covered by our extensibility offerings. For example, because we're missing the events or interfaces you need. In that case, rather than wait for us, we encourage you to unblock yourself by contributing to our codebase.
 
-Our business application is open source, and the code can be accessed in three different places:
-* [BCApps](https://github.com/microsoft/BCapps) This repository contains modules for the System Application and the Business Foundation.
-* [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) This repository contains the rest of the 1st party applications.
-* [BusinessCentralApps](https://github.com/microsoft/BusinessCentralApps) This repository contains the Base Application of Business Central. It requires access through the contribution program.
+Our business application is open source, and you can access the code in three places:
 
-Your contribution can be part of the next release of our product. All your contributions have to meet our quality standards to be incorporated into future releases, we will review the pull request and get back to you with feedback or merge it into the next release of Business Central.
+* [BCApps](https://github.com/microsoft/BCapps): This repository contains modules for the System Application and the Business Foundation.
+* [ALAppExtensions](https://github.com/microsoft/ALAppExtensions): This repository contains the rest of the Microsoft modules for [!INCLUDE [prod_short](includes/prod_short.md)].
+* [BusinessCentralApps](https://github.com/microsoft/BusinessCentralApps): This repository contains the Base Application of Business Central. It requires access through the contribution program. To learn more, go to [Contribute to BusinessCentralApps](#contribute-to-businesscentralapps).
+
+Your contributions can be part of the next release of our product if they meet our quality standards. We'll review your pull request and get back to you with feedback, or merge it into the next release of [!INCLUDE [prod_short](includes/prod_short.md)].
 
 ## Contribute to BCApps
- 
-The BCApps repository is being used directly in our builds, it is our first truly open source component in the Business Central's AL codebase. Read the guidelines to contribute in [https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md.](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md.).
 
+The BCApps repository is used directly in our builds. It's our first truly open source component in Business Central's AL codebase. To learn more about the guidelines for contributing, go to [https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md.](https://github.com/microsoft/BCApps/blob/main/CONTRIBUTING.md.).
 
 ## Contribute to ALAppExtensions
 
-The ALAppExtensions repository is not being used directly in our builds, but we have a process to accept pull requests made to the master branch of this repository. You can provide contributions to first party apps for all of our localizations. You can see some examples of contributions [here](https://github.com/microsoft/ALAppExtensions/pulls?q=is%3Apr+is%3Aclosed+is%3Amerged).
+The ALAppExtensions repository isn't used directly in our builds. We have a process to accept pull requests made to the master <!--Is it still "master" or is it now "main?"--> branch of this repository. You can provide contributions to Microsoft apps for all of our localizations. To explore some examples of contributions, go to [ALAppExtensions](https://github.com/microsoft/ALAppExtensions/pulls?q=is%3Apr+is%3Aclosed+is%3Amerged).
 
 ## Contribute to BusinessCentralApps
 
@@ -34,47 +34,47 @@ To contribute to change to the Base Application, you can request access to our c
 
  JESPER PLEASE HELP HERE :D
 
+### Extensibility requests
 
-# Extensibility requests
+We encourage you to help us improve [!INCLUDE [prod_short](includes/prod_short.md)]. However, it's possible that your extensibility scenario is outside of our repositories. For example, contributions to localizations of BaseApp that aren't in BusinessCentralApps. For those scenarios, we allow extensibility requests.
 
-We encourage improving the product directly. However, it's possible that your extensibility scenario is outside of the repositories listed above. For example, contributions to localizations of BaseApp which can't be found in BusinessCentralApps. For such scenarios, we also allow extensibility requests. 
+If the extensibility scenario you're missing is for an AL application in BCApps, the best way to request changes is through a direct contribution to the GitHub repository. However, if your extensibility scenario targets AL applications in the ALAppExtensions or BusinessCentralApps repositories, we can help by creating an extensibility request. <!--this sounds like we create the request, but don't they need to do it?-->
 
-If the extensibility scenario you are missing is for an AL application in BCApps, the only supported way of requesting changes is through direct contributions in the GitHub repository. If your extensibility scenario is targeting AL applications in the ALAppExtensions or BusinessCentralApps repositories, we can help with your extensibility scenario by creating a extensibility request.
+> [!NOTE]
+> Extensibility requests that we process manually might take longer to complete. Therefore, if possible, we recommend that you contribute directly using a pull request.
 
-Be aware that extensibility requests processed manually may have longer processing times, so we greatly encourage you to contribute directly as pull requests if possible.
-
-Extensibility requests are tracked as issues in the [ALAppExtensions](https://github.com/microsoft/ALAppExtensions/issues) repository. You can see more guidance in [here](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#extensibility-requests).
+We track extensibility requests as issues in the [ALAppExtensions](https://github.com/microsoft/ALAppExtensions/issues) repository. To learn more about extensibility requests, go to [ALAppExtensions ReadMe](https://github.com/microsoft/ALAppExtensions/blob/main/README.md#extensibility-requests).
 
 > [!NOTE]
 >
-> * We're adding new events in main and the latest release branch. At the time of this writing, the latest release branch is 25.x. In most cases, we'll make other types of requests, again, only in the main branch, available in upcoming major releases.
-> * If the procedure, field, object or any part of it are marked as `Obsolete` or surrounded by `CLEAN` tags, we won't add or update the events.
+> * We're adding new events in main and the latest release branch. At the time of this writing, the latest release branch is 25.x. In most cases, we make other types of requests, again, only in the main branch, available in upcoming major releases.
+> * If anything in the request is marked as `Obsolete` or surrounded by `CLEAN` tags, we won't add or update the events. <!--Is this specific to events, or should we make it generic and say something like "we won't approve the request."-->
 
-## Guidelines for an extensibility request
+### Guidelines for an extensibility request
 
-Each request should at least contain the following information:
+Each request should contain the following information:
 
-* Title
+* A clear title.
 * A description of why the change is needed.
-* A description of the request
+* A description of the request.
 
-### Write a clear title
+#### Write a clear title
 
-The title should contain information about the specific objects to change. For example "**[Country Code] [Application] [Missing Scenario]**". 
+The title should contain information about the specific objects to change. For example, **[Country Code] [Application] [Missing Scenario]**.
 
 Examples:
+
 * [W1][BaseApp][Sales Posting scenarios]
 * [DK][DKCore][Changes in Nemhandle]
 
+#### Describe why the change is needed
 
-### Describe why the change is needed
-
-Provide a brief description of why you need us to change the app, and what the change allows you to do. Good explanations help us make the changes without contacting you with additional questions, which decreases the time to complete the request.
+Provide a brief description of why you need us to change the app, and what the change allows you to do. Good explanations help us make the changes without contacting you with questions, which means our review cycle goes faster.
 
 > [!TIP]
 > Be specific. Don't be vague. Provide enough information to help us understand your need. For example, avoid sentences such as:
 >
-> * *"We would like to use our function instead of standard."*
+> * *"We would like to use our function instead of the standard one."*
 >
 > Instead, explain why. For example, maybe it makes sense to change our standard code because many of you have the same process.
 >
@@ -82,6 +82,11 @@ Provide a brief description of why you need us to change the app, and what the c
 >
 > Explain why. Maybe something can be done differently. It might cause an issue in a part of the system that you aren't aware of. Maybe it makes sense to remove it in general.
 
-### Describe the requests
+#### Describe the requests
 
-Explain the scenarios that you can't solve with our current extensibility offerings. If you already have in mind a specific implementation that would solve your scenario add it so that we can process your request faster. Good contributions will help not only a single scenario but hopefully enable other users with a similar extensibility requirement to hook to the events or interfaces you provide. Think of this when designing and requesting for changes in our extensibility model.
+Explain the scenarios that you can't solve with our current extensibility offerings. If you have a specific implementation in mind that solves your scenario, add it so that we can process your request faster. Good contributions not only help a single scenario, but hopefully enable other users with a similar requirement to use the events or interfaces you provide. Keep that in mind when you design and request changes in our extensibility model.
+
+## Related information
+
+[Extensibility overview](devenv-extensibility-overview.md)  
+[Extension objects overview](devenv-extension-object-overview.md)  
