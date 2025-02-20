@@ -1,9 +1,9 @@
 ---
 title: Contribute your extensibility scenarios
 description: Learn about how to contribute to the different repositories that contain the business application.
-author: 
+author: diegojoshuam
 ms.topic: conceptual
-ms.author: 
+ms.author: diegojoshuam
 ms.date: 02/18/2025
 ms.reviewer: bholtorf
 ---
