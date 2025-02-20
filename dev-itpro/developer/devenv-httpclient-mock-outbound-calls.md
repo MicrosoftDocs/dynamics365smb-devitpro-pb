@@ -1,6 +1,6 @@
 ---
 title: Mock outbound HttpClient web service calls during testing
-description: Learn about how to mock call external services using the HttpClient datatype.
+description: Learn about how to test calling external services without having to set up a third-party service using the HttpClient datatype.
 ms.date: 02/19/2025
 ms.reviewer: solsen
 ms.topic: conceptual
