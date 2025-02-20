@@ -10,38 +10,36 @@ ms.date: 02/03/2025
 
 # The development process for moving tables or fields
 
-This article provides a step-by-step process for moving tables or fields between extensions in [!INCLUDE [prod_short](includes/prod_short.md)]. It covers various scenarios, including moving tables or fields down to a dependency, up to a dependent, or laterally to a non-dependent extension. The article includes instructions on handling dependencies and publishing extensions to AppSource, ensuring a smooth transition without breaking changes. Learn more about the concepts and prerequisites in [Move tables and fields between extensions](devenv-move-table-fields-between-extensions.md).
+This article provides a step-by-step process for moving tables or fields between extensions in [!INCLUDE [prod_short](includes/prod_short.md)]. It covers various scenarios, including moving tables or fields down to a dependency, up to a dependent, or to a non-dependent extension. The article includes instructions on handling dependencies and publishing extensions to AppSource, ensuring a smooth transition without breaking changes. Learn more about the concepts and prerequisites in [Move tables and fields between extensions](devenv-move-table-fields-between-extensions.md).
+
 
 ## Overview
 
-To move tables or fields between extensions, the following steps should be followed:
+Moving tables or fields between extensions is a process that consists of three main steps:
 
 1. The source and destination apps are modified or created to specify the moves.
-2. The move is performed on an [!INCLUDE [prod_short](includes/prod_short.md)] on-premises instance or a sandbox by a series of lifecycle operations.
+2. The move is performed on a [!INCLUDE [prod_short](includes/prod_short.md)] on-premises instance or a sandbox by a series of lifecycle operations.
 3. The extensions are submitted to AppSource, so that they can be installed to customers.
 
 ## Move scenarios
 
-A move is defined by a source and destination extension. The source extension has to declare a table or field as moved out and the destination extension takes it over.
-
-Depending on the relationship between the source and destination, the following three scenarios can be defined:
+A move is defined by a source and destination extension. The source extension must declare a table or field as *moved out* and the destination extension takes it over. Depending on the relationship between the source and destination, the following three scenarios can be defined:
 
 |Scenario| Description|
 |--------|------------|
-|Move down| The destination extension is a dependency of the source.|
-|Move up| The destination extension is a dependent of the source.|
-|Lateral move| The destination extension isn't a dependent or a dependency of the source.|
+|Move down| The destination extension is a *dependency* of the source.|
+|Move up| The destination extension is a *dependent* of the source.|
+|Lateral move| The destination extension *isn't a dependent or a dependency* of the source.|
 
-Each scenario requires slightly different steps in each of the steps of the development process.
+Each scenario requires slightly different steps in each of the steps of the development process. In the following sections, the steps are described in detail for each scenario.
 
 ## Move down
 
-
 ### Extension structure
 
-It's possible to move a table or a field to an existing or new dependency.
+It's possible to move a table or a field to an existing or to a new dependency.
 
-We assume an extension `Dependent` with the table `MyTable` and an extension which is a dependency named `Dependency`. We also assume both start with a version of '1.0.0.0'
+We assume an extension `Dependent` with the table `MyTable` and an extension, which is a dependency named `Dependency`. We also assume that they both start with a version of '1.0.0.0'. Graphically, the extensions look like this:
 
 ```
    ┌───────────────────────┐
@@ -54,15 +52,18 @@ We assume an extension `Dependent` with the table `MyTable` and an extension whi
    └────────────────┘
 ```
 
-### Extension `Dependent` - Avoiding Breaking Changes
+In the next sections, we will go through how to move `MyTable` from `Dependent` to `Dependency`.
 
-This step can be skipped if `Dependency` is a direct dependency and the 
-`propagateDependencies` property is true on the source extension.
+### Extension `Dependent` - avoid breaking changes
+
+> [!NOTE]
+> This step can be skipped if `Dependency` is a direct dependency and the `propagateDependencies` property is `true` on the source extension.
 
 1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `PendingMove` and the `ObsoleteReason` property to indicate the move.
-2. Set the `MovedTo` property to the new location in Dependency.
+2. Set the `MovedTo` property to the new location in `Dependency`.
 3. Bump the version to '1.5.0.0'.
-4. Publish the extension to the environment via Visual Studio Code.
+4. Publish the extension to the environment in Visual Studio Code.
+
 
 ```al
 table 50100 MyTable
@@ -74,10 +75,10 @@ table 50100 MyTable
 }
 ```
 
-### Changes to Extension `Dependent`
+### Changes to extension `Dependent`
 
 1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `Moved` and the `ObsoleteReason` property to indicate the move.
-2. Update the `app.json` file to include Dependency with version `2.0.0.0` as a dependency.
+2. Update the `app.json` file to include `Dependency` with version `2.0.0.0` as a dependency.
 3. Bump the version to '2.0.0.0'
 
 ```al
