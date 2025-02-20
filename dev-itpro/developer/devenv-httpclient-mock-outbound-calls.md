@@ -38,7 +38,7 @@ The property has the following possible values:
 
 ## Example 
 
-In the following example the `MyCodeunit` codeunit makes an external web service call, and the `MyCodeunitTests` codeunit intercepts and mocks this. Notice the use of the `HttpClientHandler` in the test codeunit.
+In the following example the `MyCodeunit` codeunit makes an external web service call, and the `MyCodeunitTests` test codeunit intercepts the call and using the `HttpClientHandler` function it mocks the HTTP responses.
 
 ```al
 codeunit 50100 MyCodeunit
