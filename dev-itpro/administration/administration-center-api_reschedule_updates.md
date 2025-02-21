@@ -13,23 +13,137 @@ ms.date: 02/24/2023
 
 Allows for the management of scheduled updates such as rescheduling the update to a run on or after a specific date within a provided range.
 
-## Get Scheduled Update
+## Flexible Update Management
+The endpoints documented below are shipping when Flexible Update Management becomes generally available. Prepare any integrations using the Admin Center API to use these endpoints to use the new scheduling features once Flexible Update Management features are available on your environments.
 
-Get information about updates that have already been scheduled for a specific environment.
+### Get Updates
+
+Get information about update target versions and their status for a specific environment.
 
 ```
-GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/upgrade
+GET /admin/vX.XX/applications/{applicationFamily}/environments/{environmentName}/updates
 ```
 
-### Route Parameters
+#### Route Parameters
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
-### Response
+#### Response
 
-Returns information about the scheduled update for that environment.
+Returns information about updates available for the specified environment.
+
+```
+{
+  "value": [
+    {
+      // Example for a target version that has been released and has been selected as next update for the specified environment
+      "targetVersion": "26.1",
+      "available": true, // Indicates whether the target version has been released
+      "selected": true, // Indicates whether the next selected update is for this target version
+      "scheduleDetails":
+      {
+        "latestSelectableDate": "YYYY-MM-DD", // Indicates the last date for which the update to this target version can be scheduled
+        "selectedDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the datetime for which the update to this target version has been scheduled
+        "ignoreUpdateWindow": false, // Indicates whether the update window for the environment may be ignored when running this update
+        "rolloutStatus": "Active" // Indicates the rollout status of updates to this target version, e.g. "Active", "UnderMaintenance", or "Postponed"
+      }      
+    },
+    { 
+      // Example for a target version that has been released but has not been selected as next update for the specified environment
+      "targetVersion": "26.2",
+      "available": true,
+      "selected": false,  
+      "scheduleDetails":
+      {        
+        "latestSelectableDate": "YYYY-MM-DD",
+        "selectedDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Specifies the date for which this update will be scheduled if Microsoft services select this as next update for the environment, null if no date has been specified by an environment administrator
+        "ignoreUpdateWindow": false,
+        "rolloutStatus": "Active"
+      } 
+    },
+    {     
+      // Example for a target version that has not yet been released but has been selected as next update for the specified environment
+      "targetVersion": "26.3", 
+      "available": false,
+      "selected": true,
+      "expectedAvailablity":
+        "month": 8, // Indicates the number of the month in which the target version is expected to be released
+        "year": 2025 // Indicates the year in which the target version is expected to be released
+      }
+    },
+    {
+      // Example for a target version that has not yet been released and has not been selected as next update for the specified environment
+      "targetVersion": "26.4",
+      "available": false,
+      "selected": false,
+      "expectedAvailablity": {
+        "month": 9,
+        "year": 2025
+      }
+    }
+  ]
+}
+```
+
+### Select target version for next environment update
+
+Select a target version and update date for the next update on an environment.
+
+```
+PATCH /admin/vX.XX/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
+```
+
+#### Route Parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
+`targetVersion` - Version number of the target version to be selected as next update
+
+
+#### Body
+
+Example for selecting a target version that is available.
+
+```
+{
+  "selected": boolean, // Must be true to select target version. Setting this to false returns an error
+  "selectedDateTime": datetime // Specifies the datetime at which the environment update should start. If selected time is outside the environment update window, the update will start during the next update window
+  "ignoreUpdateWindow": boolean // Specifies whether the update window set for the environment may be ignored for this update
+}
+```
+
+Example for selecting a target version that is not yet available.
+
+```
+{
+  "selected": boolean, // Must be true to select target version. Setting this to false returns an error
+}
+```
+
+## Legacy
+The legacy endpoints documented below are backwards compatible with the new endpoints introduced as part of Flexible Update Management, but do not offer all scheduling options the new endpoints offer. It is recommended to update your integrations to use the Flexible Update Management endpoints documented above.
+
+### Get Scheduled Update
+
+Get information about the next update that is scheduled for a specific environment.
+
+```
+GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/upgrade
+```
+
+#### Route Parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
+#### Response
+
+Returns information about the scheduled update for the specified environment.
 
 ```
 {
@@ -48,7 +162,7 @@ Returns information about the scheduled update for that environment.
 }
 ```
 
-### Expected Error Codes
+#### Expected Error Codes
 
 `applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
@@ -58,20 +172,20 @@ Returns information about the scheduled update for that environment.
 
 ## Reschedule Update
 
-Reschedule an update, if able.
+Reschedule the next update on the environment. It is not possible to specify a target version using this legacy endpoint.
 
 ```
 Content-Type: application/json
 PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
-### Route Parameters
+#### Route Parameters
 
 `applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
-### Body
+#### Body
 
 ```
 {
@@ -80,7 +194,7 @@ PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 }
 ```
 
-### Expected Error Codes
+#### Expected Error Codes
 
 `applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
