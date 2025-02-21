@@ -131,11 +131,11 @@ If an action or other code element points to a now removed object, then the guid
 
 If you plan to deprecate reports in your Appsource apps or per-tenant extensions, you might want to communicate this to other developers and to your users prior to just removing the report from the app/extension.
 
-To learn more, go to [Deprecating reports](developer/devenv-reports-deprecation.md)
+To learn more, go to [Deprecating reports](devenv-reports-deprecation.md)
 
 ## Related information
 
-[Deprecating reports](developer/devenv-reports-deprecation.md)  
+[Deprecating reports](devenv-reports-deprecation.md)  
 [AL development environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
 [Microsoft timeline for deprecating code in Business Central](devenv-deprecation-timeline.md)  
