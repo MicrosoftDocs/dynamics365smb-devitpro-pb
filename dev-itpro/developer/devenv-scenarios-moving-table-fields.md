@@ -12,7 +12,6 @@ ms.date: 02/03/2025
 
 This article provides a step-by-step process for moving tables or fields between extensions in [!INCLUDE [prod_short](includes/prod_short.md)]. It covers various scenarios, including moving tables or fields down to a dependency, up to a dependent, or to a non-dependent extension. The article includes instructions on handling dependencies and publishing extensions to AppSource, ensuring a smooth transition without breaking changes. Learn more about the concepts and prerequisites in [Move tables and fields between extensions](devenv-move-table-fields-between-extensions.md).
 
-
 ## Overview
 
 Moving tables or fields between extensions is a process that consists of three main steps:
@@ -33,12 +32,15 @@ Each scenario requires slightly different substeps in each of the steps of the d
 
 ## Move down
 
-### Extension structure - move down
-
 It's possible to move a table or a field to an existing or to a new dependency.
+
+### Extension structure - move down
 
 We assume an extension `Dependent` with the table `MyTable` and an extension, which is a dependency named `Dependency`. We also assume that they both start with a version of '1.0.0.0'. Graphically, the extensions look like this:
 
+:::image type="content" source="media/move-table-fields-dependency-1.png" alt-text="Moving a table or field down":::
+
+<!--
 ```
    ┌───────────────────────┐
    │  Extension Dependent  │
@@ -49,6 +51,7 @@ We assume an extension `Dependent` with the table `MyTable` and an extension, wh
    │  Dependency    │
    └────────────────┘
 ```
+-->
 
 In the next sections, we will go through how to move `MyTable` from `Dependent` to `Dependency`.
 
@@ -61,7 +64,6 @@ In the next sections, we will go through how to move `MyTable` from `Dependent` 
 2. Set the `MovedTo` property to the new location in `Dependency`.
 3. Bump the version to '1.5.0.0'.
 4. Publish the extension to the environment in Visual Studio Code.
-
 
 ```al
 table 50100 MyTable
@@ -106,7 +108,7 @@ The `app.json` file should look like this:
 
 ### Changes to `Dependency`
 
-1. Create `MyTable` in Dependency with the same ID and structure as it had in **Extension Dependent**. Nonbreaking changes can be added between moves (for example, adding a field).
+1. Create `MyTable` in `Dependency` with the same ID and structure as it had in **Extension Dependent**. Nonbreaking changes can be added between moves (for example, adding a field).
 2. Set the `MovedFrom` property to point towards `Dependent`.
 3. Bump the version to '2.0.0.0'
 
@@ -129,12 +131,17 @@ For each extension, set the `dependencyPublishingOption` to `Ignore` in the rele
 3. Update `Dependency` with version '2.0.0.0' (Takes over the table).
 4. Update `Dependent` with version '2.0.0.0'.
 
-## Move Up
+## Move up
+
+It's possible to move a table or a field to an existing or new dependent extension.
 
 ### Extension structure - move up
 
-It's possible to move a table or a field to an existing or new dependent extension. We assume an extension `Dependency` with the table `MyTable` and an extension which is a dependent named `Dependent`. We also assume both start with a version of '1.0.0.0'. Graphically, the extensions look like this:
+We assume an extension `Dependency` with the table `MyTable` and an extension which is a dependent named `Dependent`. We also assume both start with a version of '1.0.0.0'. Graphically, the extensions look like this:
 
+:::image type="content" source="media/move-table-fields-dependency-2.png" alt-text="move table or field up":::
+
+<!--
 ```
    ┌───────────────────────┐
    │  Extension Dependent  │
@@ -145,6 +152,7 @@ It's possible to move a table or a field to an existing or new dependent extensi
    │    (MyTable)   │ 
    └────────────────┘
 ```
+-->
 
 In the next sections, we will go through how to move `MyTable` from `Dependency` to `Dependent`.
 
@@ -273,6 +281,9 @@ For the example above:
 3. In the next version of the source extension, add the dependency to `Common Dependency`, delete the enum and set the table as `ObsoleteState= Moved`.
 4. In the next version of the destination extension, add the dependency to `Common Dependency`.
 
+:::image type="content" source="media/move-tables-fields-dependency-3.png" alt-text="handling dependent objects":::
+
+<!--
 ```
          ┌─────────────────────────┐         ┌─────────────────────────┐
          │      Source             │         │     Destination         │
@@ -288,7 +299,7 @@ For the example above:
                      │    (Contains MyEnum)    │
                      └─────────────────────────┘
 ```
-
+-->
 
 ## Handling the definitions of moved out tables or fields
 
