@@ -212,7 +212,7 @@ table 50100 MyTable
 }
 ```
 
-### Publishing Order
+### Publishing order
 
 For every extension, set `dependencyPublishingOption` to `Ignore` in the relevant`launch.json` configuration file.
 
@@ -221,30 +221,27 @@ For every extension, set `dependencyPublishingOption` to `Ignore` in the relevan
 4. `Dependency` with version '2.0.0.0' - Gives up the table
 5. `Dependent` with version '2.0.0.0' - Takes over the table
 
-## Lateral Move
+## Lateral move
 
-A lateral move requires the same process as [Move Up](#move-up). However, further changes might be required to deal with objects that the table or field that is being moved depends on, for example, enums used as types of fields. That's because after a lateral move, it must be possible to resolve the moved table or field in both the source and destination extensions. Learn more in [Handling dependencies of moved tables or fields](#handling-dependencies-of-moved-tables-or-fields).
+A lateral move requires the same process as you can read about in [Move up](#move-up). However, further changes might be required to deal with objects that the table or field that's being moved depends on, for example, enums used as types of fields. That's because after a lateral move, it must be possible to resolve the moved table or field in both the source and destination extensions. Learn more in [Handling dependencies of moved tables or fields](#handling-dependencies-of-moved-tables-or-fields).
 
 ## Publishing to AppSource
 
 ### Validation sign in
 
-Extensions which move out table or fields are validated to not cause a breaking change without proper obsoletion. On extensions which take over, a full validation happens to ensure that the source extensions exist, that they move out everything to the correct destination, and that there are no schema breaking changes.
+Extensions that move out table or fields are validated to not cause a breaking change without proper obsoletion. On extensions that take over, a full validation happens to ensure that the source extensions exist, that they move out everything to the correct destination, and that there are no schema breaking changes.
 
 ### Order of submissions
 
-The rule of thumb when publishing extensions that perform a move to AppSource is to first submit the source extension and then the destination extension.  The publish orders from previous sections can also be used as the submission order for submitting to AppSource. Moves are allowed within a single submission or across submissions. For example, in a move down scenario it's possible to submit the source extension which moves a table and the destination dependency as a library app. It's also possible to submit them in two separate submissions.
+The rule of thumb when publishing extensions that perform a move to AppSource, is to first submit the source extension and then submit the destination extension. The publishing orders from previous sections can also be used as the submission order for submitting to AppSource. Moves are allowed within a single submission or across submissions. For example, in a *move down* scenario it's possible to submit the source extension, which moves a table and the destination dependency as a library app. It's also possible to submit them in two separate submissions.
 
 ### Validation across target releases
 
-When you submit an extension with any move, its validity is checked across all the possible releases of Business Central where this extension could be installed. For example, if the `application` property in the
-extension is '24.0.0.0' and the latest release of Business Central is '26.0.0.0', then the move needs to be valid across all of these releases.
+When you submit an extension with any move, its validity is checked across all the possible releases of [!INCLUDE [prod_short](includes/prod_short.md)] where this extension could be installed. For example, if the `application` property in the extension is '24.0.0.0' and the latest release of [!INCLUDE [prod_short](includes/prod_short.md)] is '26.0.0.0', then the move needs to be valid across all of these releases.
 
 ## Handling dependencies of moved tables or fields
 
-### Problem Overview
-
-When you move a table or a field, they might depend on other objects which need to be moved in tandem. In the example below, it isn't possible to move the table using the lateral scenario without also moving the enum as then it would be impossible to resolve the type of its field.
+When you move a table or a field, they might depend on other objects which need to be moved in tandem. In the example below, it isn't possible to move the table using the lateral scenario without also moving the enum because then it would be impossible to resolve the type of its field.
 
 ```al
 enum 50100 MyEnum
@@ -269,14 +266,14 @@ table 50100 MyTable
 
 ### Handling dependent objects
 
-In order for the move to be successful, the enum needs to be resolvable in both the source and destination extensions. This can be achieved by creating a common dependency extension for both the source and destination, and then moving the dependent objects to that extension.
+In order for the move to be successful, `MyEnum` needs to be resolvable in both the source and destination extensions. This can be achieved by creating a common dependency extension for both the source and destination, and then moving the dependent objects to that extension.
 
 For the example above:
 
-1. In version '1.5.0.0' of the source extension, the enum to `ObsoleteState = Pending` and describe that it will be moved in the `ObsoleteReason`
-2. Create a new extension `Common Dependency` where we move our enum
-3. In the next version of the source extension, add the dependency to `Common Dependency`, delete the enum and set the table as `ObsoleteState= Moved`
-4. In the next version of the destination extension, add the dependency to `Common Dependency`
+1. In version '1.5.0.0' of the source extension, set the enum to `ObsoleteState = Pending` and describe that it'll be moved in the `ObsoleteReason` property.
+2. Create a new extension `Common Dependency` where you move the enum.
+3. In the next version of the source extension, add the dependency to `Common Dependency`, delete the enum and set the table as `ObsoleteState= Moved`.
+4. In the next version of the destination extension, add the dependency to `Common Dependency`.
 
 ```
          ┌─────────────────────────┐         ┌─────────────────────────┐
@@ -297,7 +294,7 @@ For the example above:
 
 ## Handling the definitions of moved out tables or fields
 
-The AL source code of moved elements needs to be kept in the source destinations in order to validate the validity of moves. Some recommendations for managing this code are given below.
+The AL source code of moved elements must be kept in the source destinations in order to validate the moves. Some recommendations for managing this code are given in the next sections.
 
 ### Moving a table
 
