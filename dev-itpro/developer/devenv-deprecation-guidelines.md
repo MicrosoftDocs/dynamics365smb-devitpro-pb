@@ -135,7 +135,7 @@ To learn more, go to [Deprecating reports](devenv-reports-deprecation.md)
 
 ## Related information
 
-[Deprecating reports](devenv-reports-deprecation.md)  
+[Obsoleting reports](devenv-reports-obsoletion.md)
 [AL development environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
 [Microsoft timeline for deprecating code in Business Central](devenv-deprecation-timeline.md)  
