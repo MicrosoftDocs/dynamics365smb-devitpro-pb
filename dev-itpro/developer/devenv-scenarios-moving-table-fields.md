@@ -25,11 +25,9 @@ Moving tables or fields between extensions is a process that consists of three m
 
 A move is defined by a source and destination extension. The source extension must declare a table or field as *moved out* and the destination extension takes it over. Depending on the relationship between the source and destination, the following three scenarios can be defined:
 
-|Scenario| Description|
-|--------|------------|
-|Move down| The destination extension is a *dependency* of the source.|
-|Move up| The destination extension is a *dependent* of the source.|
-|Lateral move| The destination extension *isn't a dependent or a dependency* of the source.|
+- [Move down](#move-down) - The destination extension is a *dependency* of the source.
+- [Move up](#move-up) - The destination extension is a *dependent* of the source.
+- [Lateral move](#lateral-move) - The destination extension *isn't a dependent or a dependency* of the source.
 
 Each scenario requires slightly different substeps in each of the steps of the development process. In the following sections, these steps are described in detail for each scenario.
 
