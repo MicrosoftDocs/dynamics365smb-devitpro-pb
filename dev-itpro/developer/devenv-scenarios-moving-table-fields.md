@@ -10,33 +10,33 @@ ms.date: 02/03/2025
 
 # The development process for moving tables or fields
 
-This article provides a step-by-step process for moving tables or fields between extensions in [!INCLUDE [prod_short](includes/prod_short.md)]. It covers various scenarios, including moving tables or fields down to a dependency, up to a dependent, or to a non-dependent extension. The article includes instructions on handling dependencies and publishing extensions to AppSource, ensuring a smooth transition without breaking changes. Learn more about the concepts and prerequisites in [Move tables and fields between extensions](devenv-move-table-fields-between-extensions.md).
+This article provides a step-by-step process for moving tables or fields between extensions in [!INCLUDE [prod_short](includes/prod_short.md)]. It covers various scenarios, including moving tables or fields *down to a dependency*, *up to a dependent*, or *to a non-dependent* extension. The article includes instructions on handling dependencies and publishing extensions to AppSource, ensuring a smooth transition without breaking changes. Learn more about the concepts and prerequisites behind this in [Move tables and fields between extensions](devenv-move-table-fields-between-extensions.md).
 
-## Overview
+## Overview of the process of moving tables or fields
 
 Moving tables or fields between extensions is a process that consists of three main steps:
 
-1. The source and destination apps are modified or created to specify the moves.
+1. The source and destination extensions are modified or created to specify the moves.
 2. The move is performed on a [!INCLUDE [prod_short](includes/prod_short.md)] on-premises instance or a sandbox by a series of lifecycle operations.
 3. The extensions are submitted to AppSource, so that they can be installed to customers.
 
 ## Move scenarios
 
-A move is defined by a source and destination extension. The source extension must declare a table or field as *moved out* and the destination extension takes it over. Depending on the relationship between the source and destination, the following three scenarios can be defined:
+A move is defined by a source and destination extension. The source extension must declare a table or field as *moved out* and the destination extension then takes it over. The relationship between the source and destination extensions can be defined with the following three scenarios:
 
 - [Move down](#move-down) - The destination extension is a *dependency* of the source.
 - [Move up](#move-up) - The destination extension is a *dependent* of the source.
-- [Lateral move](#lateral-move) - The destination extension *isn't a dependent or a dependency* of the source.
+- [Lateral move](#lateral-move) - The destination extension *isn't a dependent nor a dependency* of the source.
 
-Each scenario requires slightly different substeps in each of the steps of the development process. In the following sections, these steps are described in detail for each scenario.
+Each scenario requires slightly different substeps in each of the steps of the development process. In the following sections, each scenario is described in detail.
 
 ## Move down
 
-It's possible to move a table or a field to an existing or to a new dependency.
+It's possible to move a table or a field to an existing or to a new dependency. Let's look at the scenario where the destination extension is a dependency.
 
 ### Extension structure - move down
 
-We assume an extension `Dependent` with the table `MyTable` and an extension, which is a dependency named `Dependency`. We also assume that they both start with a version of '1.0.0.0'. Graphically, the extensions look like this:
+We assume an extension `Dependent` with the table `MyTable` and an extension, which is a dependency named `Dependency`. We also assume that they both start with a version of '1.0.0.0'. Graphically, the extension relationship looks like this:
 
 :::image type="content" source="media/move-table-fields-dependency-1.png" alt-text="Moving a table or field down":::
 
@@ -133,11 +133,11 @@ Publishing the extensions requires a certain order. In both the `Dependent` and 
 
 ## Move up
 
-It's possible to move a table or a field to an existing or new dependent extension.
+It's possible to move a table or a field to an existing or new dependent extension. Let's look at the scenario where the destination extension is a dependent.
 
 ### Extension structure - move up
 
-We assume an extension `Dependency` with the table `MyTable` and an extension which is a dependent named `Dependent`. We also assume both start with a version of '1.0.0.0'. Graphically, the extensions look like this:
+We assume an extension `Dependency` with the table `MyTable` and an extension which is a dependent named `Dependent`. We also assume both start with a version of '1.0.0.0'. Graphically, the extension relationship looks like this:
 
 :::image type="content" source="media/move-table-fields-dependency-2.png" alt-text="move table or field up":::
 
@@ -232,6 +232,8 @@ Now, we'll look at the order in which, you must publish the extensions. In both 
 Having looked at the two previous scenarios *move down* and *move up*, the last scenario is a *lateral move*. A lateral move requires the same process as you can read about in [Move up](#move-up). However, further changes might be required to deal with objects that the table or field that's being moved depends on, for example, enums used as types of fields. That's because after a lateral move, it must be possible to resolve the moved table or field in both the source and destination extensions. Learn more in [Handling dependencies of moved tables or fields](#handling-dependencies-of-moved-tables-or-fields).
 
 ## Publishing to AppSource
+
+
 
 ### Validation sign in
 
