@@ -249,7 +249,7 @@ When you submit an extension with any move, its validity is checked across all t
 
 ## Handling dependencies of moved tables or fields
 
-When you move a table or a field, they might depend on other objects which need to be moved in tandem. In the example below, it isn't possible to move the table using the lateral scenario without also moving the enum because then it would be impossible to resolve the type of its field.
+Consider when you move a table or a field, that they might depend on other objects, which need to be moved in tandem. In the following example, it isn't possible to move the table using the lateral scenario without also moving the enum because then it would be impossible to resolve the type of its field.
 
 ```al
 enum 50100 MyEnum
@@ -274,14 +274,14 @@ table 50100 MyTable
 
 ### Handling dependent objects
 
-In order for the move to be successful, `MyEnum` needs to be resolvable in both the source and destination extensions. This can be achieved by creating a common dependency extension for both the source and destination, and then moving the dependent objects to that extension.
+If we look at the code example in the previous section, in order for the move to be successful, `MyEnum` needs to be resolvable in both the source and destination extensions. This can be achieved by creating a common dependency extension for both the source and destination, and then move the dependent objects to that extension.
 
-For the example above:
+For the example above, the following steps are required:
 
-1. In version '1.5.0.0' of the source extension, set the enum to `ObsoleteState = Pending` and describe that it'll be moved in the `ObsoleteReason` property.
-2. Create a new extension `Common Dependency` where you move the enum.
-3. In the next version of the source extension, add the dependency to `Common Dependency`, delete the enum and set the table as `ObsoleteState= Moved`.
-4. In the next version of the destination extension, add the dependency to `Common Dependency`.
+1. In version '1.5.0.0' of `Source extension`, set the enum to `ObsoleteState = Pending` and describe that it'll be moved in the `ObsoleteReason` property.
+2. Create a new extension `Common Dependency` where you move the enum to.
+3. In the next version of `Source extension`, add the dependency to `Common Dependency`, then delete the enum and set the table as `ObsoleteState = Moved`.
+4. In the next version of `Destination extension`, add the dependency to the `Common Dependency` extension.
 
 :::image type="content" source="media/move-tables-fields-dependency-3.png" alt-text="handling dependent objects":::
 
@@ -309,7 +309,7 @@ The AL source code of moved elements must be kept in the source destinations in 
 
 ### Moving a table
 
-When tables are moved out, their files can be moved to a directory of moved objects and keeping them there. It isn't yet possible to remove these definitions, but grouping them together will allow for this in the future.
+When tables are moved out, their files can be moved to a directory of moved objects and keept there. It isn't yet possible to remove these definitions, but grouping them together will allow for this in the future.
 
 ### Moving a field
 
