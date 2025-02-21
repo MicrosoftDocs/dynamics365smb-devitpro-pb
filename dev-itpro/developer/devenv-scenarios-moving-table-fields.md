@@ -124,12 +124,12 @@ table 50100 MyTable
 
 ### Full publishing order
 
-For each extension, set the `dependencyPublishingOption` to `Ignore` in the relevant `launch.json` configuration file.
+Publishing the extensions requires a certain order. In both the `Dependent` and the `Dependency` extensions, set the `dependencyPublishingOption` to `Ignore` in the relevant `launch.json` configuration file. Then perform the following steps:
 
-1. Set both `Dependent` and `Dependency` to version '1.0.0.0', if not already published.
-2. Update `Dependent` with version '1.5.0.0'.
-3. Update `Dependency` with version '2.0.0.0' (Takes over the table).
-4. Update `Dependent` with version '2.0.0.0'.
+1. Publish the extensions `Dependent` and `Dependency` version '1.0.0.0', if they're not already published.
+2. Then, increment the `Dependent` extension to version '1.5.0.0' and publish it.
+3. Now, increment the `Dependency` extension to version '2.0.0.0', and publish it. This takes over the `MyTable`.
+4. And finally, increment the `Dependent` extension to version '2.0.0.0', and publish it. This gives up the `MyTable`.
 
 ## Move up
 
@@ -220,16 +220,16 @@ table 50100 MyTable
 
 ### Publishing order
 
-For every extension, set `dependencyPublishingOption` to `Ignore` in the relevant`launch.json` configuration file.
+Now, we'll look at the order in which, you must publish the extensions. In both the `Dependent` and the `Dependency` extensions, set `dependencyPublishingOption` to `Ignore` in the relevant `launch.json` configuration file. Then perform the following steps:
 
-1. `Dependent` and `Dependency` version '1.0.0.0', if not already published
-3. `Dependency` with version '1.5.0.0'
-4. `Dependency` with version '2.0.0.0' - Gives up the table
-5. `Dependent` with version '2.0.0.0' - Takes over the table
+1. Publish the extensions `Dependent` and `Dependency` version '1.0.0.0', if they're not already published.
+2. Then, increment the `Dependency` extension to version '1.5.0.0' and publish it.
+3. Now, increment the `Dependency` extension to version '2.0.0.0', and publish it. This gives up the `MyTable`.
+4. And finally, increment the `Dependent` extension to version '2.0.0.0', and publish it. This takes over the `MyTable`.
 
 ## Lateral move
 
-A lateral move requires the same process as you can read about in [Move up](#move-up). However, further changes might be required to deal with objects that the table or field that's being moved depends on, for example, enums used as types of fields. That's because after a lateral move, it must be possible to resolve the moved table or field in both the source and destination extensions. Learn more in [Handling dependencies of moved tables or fields](#handling-dependencies-of-moved-tables-or-fields).
+Having looked at the two previous scenarios *move down* and *move up*, the last scenario is a *lateral move*. A lateral move requires the same process as you can read about in [Move up](#move-up). However, further changes might be required to deal with objects that the table or field that's being moved depends on, for example, enums used as types of fields. That's because after a lateral move, it must be possible to resolve the moved table or field in both the source and destination extensions. Learn more in [Handling dependencies of moved tables or fields](#handling-dependencies-of-moved-tables-or-fields).
 
 ## Publishing to AppSource
 
