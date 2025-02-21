@@ -959,7 +959,7 @@
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
 #### [Troubleshooting report errors](developer/devenv-reports-troubleshooting.md)
-#### [Deprecating reports](developer/devenv-reports-deprecation.md)
+#### [Obsoleting reports](developer/devenv-reports-obsoletion.md)
 #### [Report telemetry](administration/telemetry-reports-trace.md)
 #### How users work with reports
 ##### [Run and print reports](/dynamics365/business-central/ui-work-report?toc=/dynamics365/business-central/dev-itpro/toc.json)

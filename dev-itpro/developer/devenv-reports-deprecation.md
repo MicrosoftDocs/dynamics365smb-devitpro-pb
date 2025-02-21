@@ -1,6 +1,6 @@
 ---
-title: Deprecating reports
-description: Learn about how to deprecate Business Central reports
+title: Obsoleting reports
+description: Learn about how to obsolete Business Central reports
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
@@ -9,14 +9,14 @@ ms.author: kepontop
 ms.date: 02/21/2025
 ---
 
-# Deprecating reports
+# Obsoleting reports
 
-If you plan to deprecate reports in your Appsource apps or per-tenant extensions, you might want to communicate this to other developers and to your users prior to just removing the report from the app/extension.
+If you plan to obsolete reports in your Appsource apps or per-tenant extensions, you might want to communicate this to other developers and to your users prior to just removing the report from the app/extension.
 
 > [!NOTE]  
 > The article describes some best practices that Microsoft is using for obsoleting reports and layouts, and is meant as a non-enforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for deprecating your own reports.
 
-## Communicate report deprecation to developers
+## Communicate report obsoletion to developers
 
 The report object supports the obsoletion properties 
 - ObsoleteReason,
@@ -44,7 +44,7 @@ report 50100 MyReport
 To learn more, go to [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md).
 
 
-## Communicate report deprecation to users: Tell-me search results
+## Communicate report obsoletion to users: Tell-me search results
 
 The Tell-me search in [!INCLUDE[prod_short](../includes/prod_short.md)] uses the report caption and additional search terms defined in the report object for finding reports that match search criteria from users. Furthermore, the report caption is shown when displaying the search results to the user. You can therefore utilize this for communicating the upcoming change to users that use Tell-me.
 
@@ -80,7 +80,7 @@ report 50100 MyReport
 }
 ```
 
-## Communicate report deprecation to users: The request page
+## Communicate report obsoletion to users: The request page
 
 The request page in [!INCLUDE[prod_short](../includes/prod_short.md)] displays the the following report elements from the report object:
 - Report Caption,
@@ -127,7 +127,7 @@ report 50100 MyReport
 }
 ```
 
-## Communicate report deprecation to users: The help pane for the request page 
+## Communicate report obsoletion to users: The help pane for the request page 
 
 The help pane for the request page in [!INCLUDE[prod_short](../includes/prod_short.md)] displays the the following report elements from the report object:
 - AboutTitle,
@@ -165,7 +165,7 @@ report 50100 MyReport
 ```
 
 
-## Communicate report deprecation to users: The Report Layouts page 
+## Communicate report obsoletion to users: The Report Layouts page 
 
 The Report Layouts page in [!INCLUDE[prod_short](../includes/prod_short.md)] displays the the following report elements from the report object:
 - Report Caption,
