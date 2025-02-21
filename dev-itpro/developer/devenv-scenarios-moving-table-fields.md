@@ -1,18 +1,18 @@
 ---
-title: The development process for moving tables or fields
+title: Development process for moving tables and fields between extensions
 description: A step-by-step guide on how to implement different scenarios for moving tables or fields
 author: SusanneWindfeldPedersen
 ms.author: sodragon
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 02/03/2025
+ms.date: 02/21/2025
 ---
 
-# The development process for moving tables or fields
+# Development process for moving tables and fields between extensions
 
 This article provides a step-by-step process for moving tables or fields between extensions in [!INCLUDE [prod_short](includes/prod_short.md)]. It covers various scenarios, including moving tables or fields *down to a dependency*, *up to a dependent*, or *to a non-dependent* extension. The article includes instructions on handling dependencies and publishing extensions to AppSource, ensuring a smooth transition without breaking changes. Learn more about the concepts and prerequisites behind this in [Move tables and fields between extensions](devenv-move-table-fields-between-extensions.md).
 
-## Overview of the process of moving tables or fields
+## Steps in the development process
 
 Moving tables or fields between extensions is a process that consists of three main steps:
 
