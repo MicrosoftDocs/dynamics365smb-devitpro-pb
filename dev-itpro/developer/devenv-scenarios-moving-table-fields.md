@@ -58,7 +58,7 @@ In the next sections, we'll go through how to move `MyTable` from `Dependent` to
 ### Extension `Dependent` - avoid breaking changes
 
 > [!NOTE]
-> This step can be skipped if `Dependency` is a direct dependency and the `propagateDependencies` property is `true` on the source extension.
+> This section can be skipped if `Dependency` is a direct dependency and the `propagateDependencies` property is `true` on the source extension.
 
 1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `PendingMove` and the `ObsoleteReason` property to indicate the move.
 2. Set the `MovedTo` property to the new location in `Dependency`.
@@ -79,7 +79,7 @@ table 50100 MyTable
 
 1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `Moved` and the `ObsoleteReason` property to indicate the move.
 2. Update the `app.json` file to include `Dependency` with version `2.0.0.0` as a dependency.
-3. Bump the version to '2.0.0.0'
+3. Increment the version to '2.0.0.0'.
 
 ```al
 table 50100 MyTable
@@ -108,9 +108,9 @@ The `app.json` file should look like this:
 
 ### Changes to `Dependency`
 
-1. Create `MyTable` in `Dependency` with the same ID and structure as it had in **Extension Dependent**. Nonbreaking changes can be added between moves (for example, adding a field).
+1. Create `MyTable` in `Dependency` with the same ID and structure as it had in `Dependent`. Nonbreaking changes can be added between moves (for example, adding a field).
 2. Set the `MovedFrom` property to point towards `Dependent`.
-3. Bump the version to '2.0.0.0'
+3. Increment the version to '2.0.0.0'.
 
 The code for `MyTable` in `Dependency` should look like this:
 
@@ -118,13 +118,13 @@ The code for `MyTable` in `Dependency` should look like this:
 table 50100 MyTable
 {
     MovedFrom = 'app ID of Dependent';
-    // Table definition as it was in Extension Dependent
+    // Table definition as it was in extension Dependent
 }
 ```
 
 ### Full publishing order
 
-Publishing the extensions requires a certain order. In both the `Dependent` and the `Dependency` extensions, set the `dependencyPublishingOption` to `Ignore` in the relevant `launch.json` configuration file. Then perform the following steps:
+Publishing the extensions requires a certain order. In both the `Dependent` and the `Dependency` extensions, set the `dependencyPublishingOption` to `Ignore` in the `launch.json` configuration file.
 
 1. Publish the extensions `Dependent` and `Dependency` version '1.0.0.0', if they're not already published.
 2. Then, increment the `Dependent` extension to version '1.5.0.0' and publish it.
@@ -137,7 +137,7 @@ It's possible to move a table or a field to an existing or new dependent extensi
 
 ### Extension structure - move up
 
-We assume an extension `Dependency` with the table `MyTable` and an extension which is a dependent named `Dependent`. We also assume both start with a version of '1.0.0.0'. Graphically, the extension relationship looks like this:
+We assume an extension `Dependency` with the table `MyTable` and an extension which is a dependent named `Dependent`. We also assume that they both start with a version of '1.0.0.0'. Graphically, the extension relationship looks like this:
 
 :::image type="content" source="media/move-table-fields-dependency-2.png" alt-text="move table or field up":::
 
@@ -160,7 +160,7 @@ In the next sections, we'll go through how to move `MyTable` from `Dependency` t
 
 1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `PendingMove` and the `ObsoleteReason` property to indicate the move.
 2. Set the `MovedTo` property to the new location in `Dependent`.
-3. Bump the version to '1.5.0.0'.
+3. Increment the version to '1.5.0.0'.
 4. Publish the extension to the environment in Visual Studio Code.
 
 The code for `MyTable` in `Dependency` should look like this:
@@ -178,7 +178,7 @@ table 50100 MyTable
 ### Changes to extension `Dependency`
 
 1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `Moved` and the `ObsoleteReason` property to indicate the move.
-3. Bump the version to `2.0.0.0`
+3. Increment the version to `2.0.0.0`
 
 ```al
 table 50100 MyTable
@@ -195,7 +195,7 @@ table 50100 MyTable
 1. Create `MyTable` in `Dependent` with the same ID and structure as it had in `Dependency`. Nonbreaking changes can be added between moves (for example, adding a field).
 2. Set the `MovedFrom` property to point towards `Dependency`.
 3. Update the `app.json` file to include `Dependency` as a dependency if not already present.
-4. Bump the version to '2.0.0.0'.
+4. Increment the version to '2.0.0.0'.
 
 ```al
 table 50100 MyTable
@@ -204,6 +204,7 @@ table 50100 MyTable
     // Table definition as it was in Extension Dependent
 }
 ```
+
 ```json
 {
     "dependencies": [
@@ -220,7 +221,7 @@ table 50100 MyTable
 
 ### Publishing order
 
-Now, we'll look at the order in which, you must publish the extensions. In both the `Dependent` and the `Dependency` extensions, set `dependencyPublishingOption` to `Ignore` in the relevant `launch.json` configuration file. Then perform the following steps:
+In summary, we'll look at the order in the extensions must be published. In both the `Dependent` and the `Dependency` extensions, set `dependencyPublishingOption` to `Ignore` in the relevant `launch.json` configuration file. 
 
 1. Publish the extensions `Dependent` and `Dependency` version '1.0.0.0', if they're not already published.
 2. Then, increment the `Dependency` extension to version '1.5.0.0' and publish it.
