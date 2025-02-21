@@ -53,7 +53,7 @@ We assume an extension `Dependent` with the table `MyTable` and an extension, wh
 ```
 -->
 
-In the next sections, we will go through how to move `MyTable` from `Dependent` to `Dependency`.
+In the next sections, we'll go through how to move `MyTable` from `Dependent` to `Dependency`.
 
 ### Extension `Dependent` - avoid breaking changes
 
@@ -154,7 +154,7 @@ We assume an extension `Dependency` with the table `MyTable` and an extension wh
 ```
 -->
 
-In the next sections, we will go through how to move `MyTable` from `Dependency` to `Dependent`.
+In the next sections, we'll go through how to move `MyTable` from `Dependency` to `Dependent`.
 
 ### Extension `Dependency` - avoid breaking changes
 
@@ -233,7 +233,7 @@ Having looked at the two previous scenarios *move down* and *move up*, the last 
 
 ## Publishing to AppSource
 
-
+When you publish extensions to AppSource, there are some specific things to be aware of. The next sections describe these. Also, learn more in [Considerations before moving](devenv-move-table-fields-between-extensions.md#considerations-before-moving).
 
 ### Validation sign in
 
