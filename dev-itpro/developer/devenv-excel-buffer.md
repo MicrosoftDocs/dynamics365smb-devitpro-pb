@@ -3,7 +3,7 @@ title: Exporting data to Excel using ExcelBuffer
 description: Learn about the ExcelBuffer functionality and how to use it to copy data from AL to Excel.
 author: kennieNP
 ms.topic: conceptual
-ms.author: jkepontop
+ms.author: kepontop
 ms.date: 02/24/2023
 ms.reviewer: jswymer
 ---
