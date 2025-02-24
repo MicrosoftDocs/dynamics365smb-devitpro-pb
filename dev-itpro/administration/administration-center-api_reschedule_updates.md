@@ -101,7 +101,7 @@ PATCH /admin/vX.XX/applications/{applicationFamily}/environments/{environmentNam
 
 `environmentName` - Name of the targeted environment
 
-`targetVersion` - Version number of the target version to be selected as next update
+`targetVersion` - Version number of the target version to be selected as next update, must match the value returned by the `GET /admin/vX.XX/applications/{applicationFamily}/environments/{environmentName}/updates` request.
 
 
 #### Body
@@ -110,7 +110,7 @@ Example for selecting a target version that is available.
 
 ```
 {
-  "selected": boolean, // Must be true to select target version. Setting this to false returns an error
+  "selected": true, // Must be true to select target version. Setting this to false returns an error
   "selectedDateTime": datetime // Specifies the datetime at which the environment update should start. If selected time is outside the environment update window, the update will start during the next update window
   "ignoreUpdateWindow": boolean // Specifies whether the update window set for the environment may be ignored for this update
 }
@@ -120,9 +120,15 @@ Example for selecting a target version that is not yet available.
 
 ```
 {
-  "selected": boolean, // Must be true to select target version. Setting this to false returns an error
+  "selected": true, // Must be true to select target version. Setting this to false returns an error
 }
 ```
+
+#### Expected Error Codes
+
+`applicationTypeDoesNotExist` - the provided value for the application family wasn't found
+
+`environmentNotFound` - the targeted environment couldn't be found
 
 ## Legacy
 The legacy endpoints documented below are backwards compatible with the new endpoints introduced as part of Flexible Update Management, but do not offer all scheduling options the new endpoints offer. It is recommended to update your integrations to use the Flexible Update Management endpoints documented above.
@@ -167,8 +173,6 @@ Returns information about the scheduled update for the specified environment.
 `applicationTypeDoesNotExist` - the provided value for the application family wasn't found
 
 `environmentNotFound` - the targeted environment couldn't be found
-
-   - target: {applicationFamily}/{environmentName}
 
 ## Reschedule Update
 
