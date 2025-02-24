@@ -2,7 +2,7 @@
 title: Notifications
 description: Learn how to use notifications in the development environment to send nonintrusive information to the user interface in Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 11/18/2024
+ms.date: 01/21/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -118,7 +118,7 @@ This simple example illustrates how notifications work and provides some insight
 - The code compares a customer's balance with their credit limit. If the balance exceeds the credit limit, a notification is sent to the client.
 - The notification includes an action, which has the caption **Change credit limit**, that opens page **21 Customer Card**. This enables the user to increase the credit limit.
 
-To complete the example, follow these steps:
+To complete the example, follow these steps by first creating the ActionHandler codeunit and then creating a page extension object that extends page **42 Sales Order**.
 
 <!--
 
@@ -170,7 +170,37 @@ To complete the example, follow these steps:
     ```
 -->
 
-1. Create a page extension object that extends page **42 Sales Order**, and add the notification code on the **OnOpenPage** trigger.
+1. Create a codeunit called **ActionHandler** for handling the notification action. Add a global method called **OpenCustomer** that has a **Notification** data type parameter called **CreditBalanceNotification** for receiving the Notification object, and include the following code on the method:
+
+    ```AL
+    codeunit 50100 ActionHandler
+    {
+        trigger OnRun()
+        begin
+    
+        end;
+    
+        procedure OpenCustomer(CreditBalanceNotification: Notification)
+        var
+            CustNumber: Text;
+            CustNo: Text;
+            CustRec: Record Customer;
+            CustPage: Page "Customer Card";
+        begin
+            //Get the customer number data from the SetData() call.
+            CustNo := CreditBalanceNotification.GetData('CustNumber');
+            // Open the Customer Card page for the customer.
+            if CustRec.Get(CustNo) then begin
+                CustPage.SetRecord(CustRec);
+                CustPage.Run();
+            end else begin
+                Error('Could not find Customer: ' + CustNo);
+            end;
+        end;
+    }
+    ```
+
+2. Next, create a page extension object that extends page **42 Sales Order**, and add the notification code on the **OnOpenPage** trigger.
 
     ```AL
     pageextension 50100 CreditBalanceNotification extends "Sales Order"
@@ -200,35 +230,6 @@ To complete the example, follow these steps:
     }
     ```
 
-2. Create a codeunit called **ActionHandler** for handling the notification action. Add a global method called **OpenCustomer** that has a **Notification** data type parameter called **CreditBalanceNotification** for receiving the Notification object, and include the following code on the method:
-
-    ```AL
-    codeunit 50100 ActionHandler
-    {
-        trigger OnRun()
-        begin
-    
-        end;
-    
-        procedure OpenCustomer(CreditBalanceNotification: Notification)
-        var
-            CustNumber: Text;
-            CustNo: Text;
-            CustRec: Record Customer;
-            CustPage: Page "Customer Card";
-        begin
-            //Get the customer number data from the SetData() call.
-            CustNo := CreditBalanceNotification.GetData('CustNumber');
-            // Open the Customer Card page for the customer.
-            if CustRec.Get(CustNo) then begin
-                CustPage.SetRecord(CustRec);
-                CustPage.Run();
-            end else begin
-                Error('Could not find Customer: ' + CustNo);
-            end;
-        end;
-    }
-    ```
 
 ## Related information
 

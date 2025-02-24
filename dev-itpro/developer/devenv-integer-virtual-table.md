@@ -3,11 +3,10 @@ title: Integer virtual table
 description: The integer virtual table in AL for Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.author: solsen
-
 ms.topic: conceptual
-ms.date: 03/17/2023
-ms.custom: bap-template
+ms.date: 01/08/2025
 ms.reviewer: solsen
+ms.custom: evergreen
 ---
 
 # Integer virtual table

@@ -4,7 +4,7 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 12/09/2024
+ms.date: 02/07/2025
 ms.custom: bap-template
 ms.topic: whats-new 
 ---
@@ -15,8 +15,8 @@ Wondering about upcoming and recently released capabilities in Dynamics 365 Busi
 
 See the release plans for what's coming. Choose the following links to learn about the latest versions of Business Central.
 
+- [2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/planned-features)
 - [2024 release wave 2](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/planned-features)
-- [2024 release wave 1](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/planned-features)
 
 Keep track of changes on the [Dynamics 365 Business Central release planner](https://experience.dynamics.com/releaseplans/?app=Business+Central) site, or download the release plan as a single PDF.  
 
@@ -28,7 +28,9 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
-|25.2|Application Build 25.2 Platform Build 25.0|December 2024|[Update 25.2 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-2.md)|
+|25.4|Application Build 25.4 Platform Build 25.2|February 2025|[Update 25.4 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-4.md)|
+|25.3|Application Build 25.3 Platform Build 25.2|January 2025|[Update 25.3 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-3.md)|
+|25.2|Application Build 25.2 Platform Build 25.2|December 2024|[Update 25.2 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-2.md)|
 |25.1|Application Build 25.1 Platform Build 25.0|November 2024|[Update 25.1 for Microsoft Dynamics 365 Business Central online 2024 release wave 2](whatsnew-update-25-1.md)|
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
 
