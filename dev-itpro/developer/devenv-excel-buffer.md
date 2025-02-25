@@ -40,6 +40,17 @@ begin
 
 ## Add data 
 
+You can insert data directy into the Excel buffer or use built-in methods that can help you implement different data manipulation scenarios.
+
+### Add data to a cell in the current worksheet
+
+If you want to read or insert into Excel, e.g. cell *C4* you simply read/create a record in the Excel buffer with **Row No.**=4 and **Column No.**=3 and then read or assign the value to *Cell Value as Text*. 
+
+You can also call this method that does it all for you:
+```AL
+procedure EnterCell(var ExcelBuffer: Record "Excel Buffer"; RowNo: Integer; ColumnNo: Integer; Value: Variant; IsBold: Boolean; IsItalics: Boolean; IsUnderline: Boolean)
+```
+
 ### Add a new row to the current worksheet
 
 To add a new row to the current worksheet in the Excel buffer, you can use the *NewRow* method followed by calls to the *AddColumn* method to add cells in the row. This use of the *NewRow* and *AddColumn* methods are typically used to fill in data to Excel while iterating over some table data.
@@ -56,16 +67,6 @@ begin
 ```
 
 The *AddColumn* has many parameters for controlling things such as appearence (bold face, italics, or underline), number format, or data type.
-
-### Add data to a cell in the current worksheet
-
-If you want to read or insert into Excel, e.g. cell *C4* you simply read/create a record in the Excel buffer with **Row No.**=4 and **Column No.**=3 and then read or assign the value to *Cell Value as Text*. 
-
-You can also call this method that does it all for you:
-```AL
-procedure EnterCell(var ExcelBuffer: Record "Excel Buffer"; RowNo: Integer; ColumnNo: Integer; Value: Variant; IsBold: Boolean; IsItalics: Boolean; IsUnderline: Boolean)
-```
-
 
 ## Write the Excel workbook as a temporary file 
 
