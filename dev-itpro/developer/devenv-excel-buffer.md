@@ -10,14 +10,17 @@ ms.reviewer: jswymer
 
 # Exporting data to Excel using Excel Buffer
 
-The Excel Buffer is functionality in AL that supports creating and updating Excel workbooks from AL code. Excel Buffer is not a native AL datatype such as XMLPort or JsonObject. Instead, it is a temporary table with API methods for manipulating concepts in Excel, such as worksheets, rows, and cells.
+The Excel Buffer is functionality in AL that supports creating and updating Excel workbooks from AL code. Excel Buffer is not a native AL datatype such as XMLPort or JsonObject. Instead, it is a temporary table with API methods for manipulating concepts in Excel, such as worksheets, rows, and cells. 
+
+An entry in an Excel Buffer corresponds to a cell in Excel, and the table is indexed by fields **Row No.** and **Column No.**. 
+
 
 ## Overall steps when working with Excel Buffer
 
 When working with Excel Buffer, you typically go through the following steps
 
-1. Initialize the buffer
-1. Add data rows
+1. (Optionally) initialize the buffer
+1. Add data
 1. Write the Excel workbook as a temporary file 
 1. Consume the Excel workbook (download to the user or get as a stream)
 
@@ -35,9 +38,11 @@ begin
     TempExcelBuffer.DeleteAll();
 ```
 
-## Add data rows
+## Add data 
 
-To add a new row to the current worksheet in the Excel buffer, you use the *NewRow* method followed by calls to the *AddColumn* method to add  cells in the row.
+### Add a new row to the current worksheet
+
+To add a new row to the current worksheet in the Excel buffer, you can use the *NewRow* method followed by calls to the *AddColumn* method to add cells in the row. This use of the *NewRow* and *AddColumn* methods are typically used to fill in data to Excel while iterating over some table data.
 
 ```AL
 var
@@ -51,6 +56,16 @@ begin
 ```
 
 The *AddColumn* has many parameters for controlling things such as appearence (bold face, italics, or underline), number format, or data type.
+
+### Add data to a cell in the current worksheet
+
+If you want to read or insert into Excel, e.g. cell *C4* you simply read/create a record in the Excel buffer with **Row No.**=4 and **Column No.**=3 and then read or assign the value to *Cell Value as Text*. 
+
+You can also call this method that does it all for you:
+```AL
+procedure EnterCell(var ExcelBuffer: Record "Excel Buffer"; RowNo: Integer; ColumnNo: Integer; Value: Variant; IsBold: Boolean; IsItalics: Boolean; IsUnderline: Boolean)
+```
+
 
 ## Write the Excel workbook as a temporary file 
 
