@@ -44,7 +44,7 @@ Returns information about updates available for the specified environment.
       "selected": true, // Indicates whether the next selected update is for this target version
       "scheduleDetails":
       {
-        "latestSelectableDate": "YYYY-MM-DD", // Indicates the last date for which the update to this target version can be scheduled
+        "latestSelectableDate": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the last date for which the update to this target version can be scheduled
         "selectedDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the datetime for which the update to this target version has been scheduled
         "ignoreUpdateWindow": false, // Indicates whether the update window for the environment may be ignored when running this update
         "rolloutStatus": "Active" // Indicates the rollout status of updates to this target version, e.g. "Active", "UnderMaintenance", or "Postponed"
@@ -57,7 +57,7 @@ Returns information about updates available for the specified environment.
       "selected": false,  
       "scheduleDetails":
       {        
-        "latestSelectableDate": "YYYY-MM-DD",
+        "latestSelectableDate": "YYYY-MM-DDTHH:MM:SSZ",
         "selectedDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Specifies the date for which this update will be scheduled if Microsoft services select this as next update for the environment, null if no date has been specified by an environment administrator
         "ignoreUpdateWindow": false,
         "rolloutStatus": "Active"
@@ -89,7 +89,7 @@ Returns information about updates available for the specified environment.
 
 ### Select target version for next environment update
 
-Select a target version and update date for the next update on an environment.
+Select a target version and update date for the next update on an environment. Only one target version can be selected per environment at a time; selecting a new target version for the next environment updates automatically unselects the previous target version.
 
 ```
 PATCH /admin/vX.XX/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
@@ -110,9 +110,11 @@ Example for selecting a target version that is available.
 
 ```
 {
-  "selected": true, // Must be true to select target version. Setting this to false returns an error
-  "selectedDateTime": datetime // Specifies the datetime at which the environment update should start. If selected time is outside the environment update window, the update will start during the next update window
-  "ignoreUpdateWindow": boolean // Specifies whether the update window set for the environment may be ignored for this update
+  "selected": true, // Optional. Must be true to select target version; setting this to false returns an error. Omitting it from the body changes scheduleDetails properties for the targetVersion without selecting it or for a targetVersion that is already selected
+  "scheduleDetails": {
+    "selectedDateTime": datetime // Specifies the datetime at which the environment update should start. If selected time is outside the environment update window, the update will start during the next update window
+    "ignoreUpdateWindow": boolean // Specifies whether the update window set for the environment may be ignored for this update
+  }
 }
 ```
 
@@ -120,7 +122,7 @@ Example for selecting a target version that is not yet available.
 
 ```
 {
-  "selected": true, // Must be true to select target version. Setting this to false returns an error
+  "selected": true, // Required. Must be true to select target version. Setting this to false returns an error
 }
 ```
 
