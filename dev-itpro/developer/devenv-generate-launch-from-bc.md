@@ -27,9 +27,9 @@ Or, you can generate launch.json files from the **Extension Management** page.
 
 1. In [!INCLUDE [prod_short](includes/prod_short.md)], go to the **Extension Management** page
 1. Choose the extension that you want to generate launch configurations for.
-1. Then choose the **Develop in VS Code** action group, and then the **Generate launch configurations** action.
+1. Now, choose the **Develop in VS Code** action group, and then the **Generate launch configurations** action.
 
-Visual Studio Code then generates launch configurations for deploy, attach, and snapshot configurations matching the specific environment, including the user session.
+Visual Studio Code then generates launch configurations for deploy, attach, and snapshot configurations matching the specific environment, including the user session information.
 
 ## Related information
 
