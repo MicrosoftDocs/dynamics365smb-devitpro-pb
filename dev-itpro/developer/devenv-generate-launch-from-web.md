@@ -16,7 +16,7 @@ ms.custom:
 
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2025 release wave 1, you can generate launch.json files directly from the web client. Instead of manually creating the launch.json file in Visual Studio Code, you can generate it directly from the Business Central web client for a specific environment. This is especially useful for troubleshooting and debugging scenarios, as it allows you to quickly set up the necessary configurations without having to switch between different tools or environments.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2025 release wave 1, you can generate launch.json files directly from the web client. Instead of manually creating the launch.json file in Visual Studio Code, you can generate it directly from the [!INCLUDE [prod_short](includes/prod_short.md)] web client for a specific environment. This is especially useful for troubleshooting and debugging scenarios, as it allows you to quickly set up the necessary configurations without having to switch between different tools or environments.
 
 You can generate launch.json files from the **Help & Support** page in [!INCLUDE [prod_short](includes/prod_short.md)]. To do this, follow these steps:
 
@@ -25,11 +25,11 @@ You can generate launch.json files from the **Help & Support** page in [!INCLUDE
 
 Or, you can generate launch.json files from the **Extension Management** page. 
 
-1. In [!INCLUDE [prod_short](includes/prod_short.md)], go to the **Extension Management** page
+1. In [!INCLUDE [prod_short](includes/prod_short.md)], go to the **Extension Management** page.
 1. Choose the extension that you want to generate launch configurations for.
 1. Now, choose the **Develop in VS Code** action group, and then the **Generate launch configurations** action.
 
-Visual Studio Code then generates launch configurations for deploy, attach, and snapshot configurations matching the specific environment, including the user session information.
+Visual Studio Code then generates launch configurations for deploy, attach, and snapshot configurations matching the specific environment, including the user session information. Learn more about troubleshooting directly from the web client in [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md).
 
 ## Related information
 
