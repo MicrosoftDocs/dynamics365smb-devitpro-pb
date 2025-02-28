@@ -74,3 +74,7 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
 View usage and billing information for pay-as-you-go and prepaid capacity in the Power Platform admin center. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
 
 For pay-as-you-go, view aggregated billing information in the Azure portal. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+
+## Related information
+
+[Linked Power Platform Enviroments](administration/tenant-admin-center-environments.md#linked-power-platform-environment)
