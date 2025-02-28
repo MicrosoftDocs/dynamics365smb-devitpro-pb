@@ -9,10 +9,9 @@ ms.date: 02/26/2025
 ms.author: jobulsin
 ms.reviewer: jswymer
 ---
-
 # Manage consumption-based billing
 
-This article explains how to set up a Business Central tenant with a payment model for Copilot and agent capabilities. 
+This article explains how to set up a Business Central enviroment with a payment model for Copilot and agent capabilities.
 
 ## Overview
 
