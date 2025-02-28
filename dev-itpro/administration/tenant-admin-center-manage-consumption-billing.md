@@ -57,7 +57,7 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
 
 1. Set up pay-as-you-go on the Power Platform tenant:
 
-   To set up pay-as-you-go billing, you first need an active Azure subscription. Then, you link the subscription to your Power Platform environment using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or withing [Power Apps](https://make.powerapps.com/).
+   To set up pay-as-you-go billing, you first need an active Azure subscription. Then, you link the subscription to your Power Platform environment using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/).
 
    Learn more in [Set up pay-as-you-go](/power-platform/admin/pay-as-you-go-set-up).
 2. Link the Business Central environment to the Power Platform environment:
