@@ -11,7 +11,7 @@ ms.reviewer: jswymer
 ---
 # Manage consumption-based billing
 
-This article explains how to set up a Business Central environment with a billing model for Copilot and agent capabilities.
+This article explains how to set up a Business Central environment for billing Copilot and agent capabilities.
 
 ## Overview
 
