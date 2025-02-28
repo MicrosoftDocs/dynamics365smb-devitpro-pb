@@ -11,20 +11,20 @@ ms.reviewer: jswymer
 ---
 # Manage consumption-based billing
 
-This article explains how to set up a Business Central environment with a payment model for Copilot and agent capabilities.
+This article explains how to set up a Business Central environment with a billing model for Copilot and agent capabilities.
 
 ## Overview
 
-Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use a consumption-based billing model, charging for usage. These capabilities use Microsoft Copilot Studio for AI interactions and tasks (events), like retrieving information and responding to prompts. *Messages* are the unit of measure of these events used for billing consumption. The number of messages per event depends on its complexity. Learn more about messages in [Message scenarios](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
+Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use consumption-based billing, charging for usage. These capabilities use Microsoft Copilot Studio for AI interactions and tasks (events), like retrieving information and responding to prompts. *Messages* are the unit of measure of these events used for billing consumption. The number of messages per event depends on its complexity. Learn more about messages in [Message scenarios](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
 
 Learn more about billing and rates in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-## Set up payment model 
+## Set up billing model 
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] supports two payment models: pay-as-you-go and prepaid capacity. Both models require that you link your Business Central environment to a Power Platform environment.
+[!INCLUDE [prod_short](../includes/prod_short.md)] supports two billing models: pay-as-you-go and prepaid capacity. Both models require that you link your Business Central environment to a Power Platform environment.
 
 > [!NOTE]
-> - You can use both payment models on the Business Central environment. In this case, the prepaid capacity is consumed first.
+> - You can use both billing models on the Business Central environment. In this case, the prepaid capacity is consumed first.
 > - Message capacity on the Power Platform environment is consumed by Business Central environments and other Microsoft services in use on the Power Platform tenant.
 
 ### Set up prepaid capacity
