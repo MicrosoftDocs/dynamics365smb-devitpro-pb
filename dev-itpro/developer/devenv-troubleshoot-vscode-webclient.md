@@ -18,6 +18,8 @@ From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can ope
 
 - Open a page from the [Page Inspector](devenv-troubleshoot-vscode-webclient.md#open-a-page-from-the-page-inspector)
 - Troubleshoot the current session from within [Help and Support](devenv-troubleshoot-vscode-webclient.md#troubleshoot-from-the-help-and-support-page)
+- Generate launch.json files directly from the web client [](devenv-troubleshoot-vscode-webclient.md#generate-launch-configuration-files-directly-from-the-web-client)
+- Open source code in Visual Studio Code [](devenv-troubleshoot-vscode-webclient.md#open-source-code-in-visual-studio-code)
 
 ## Open a page from the Page Inspector
 
@@ -88,6 +90,35 @@ Follow these steps:
 - If reusing a project and the source files aren't up to date with the version on the server, the breakpoints won't be hit correctly when debugging. Learn more in [Snapshot debugging](devenv-snapshot-debugging.md).
 - When you choose to generate new projects, remember to delete the projects occasionally to not accumulate many unused projects.
 - Running the web client in a browser, you're typically not running the browser as an administrator, which means that Visual Studio Code also doesn't open in administrator mode. So, for example, if Visual Studio Code prompts you for an update, and you choose yes, you get an error, because you don't have permissions to update. It's then recommended to shut down Visual Studio Code, and reopen it as an administrator and update it. Then, you can continue debugging.
+
+## Generate launch configuration files directly from the web client
+
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+
+You can generate launch.json files directly from the web client. Instead of manually creating the launch.json file in Visual Studio Code, you can generate it directly from the [!INCLUDE [prod_short](includes/prod_short.md)] web client for a specific environment. This is especially useful for troubleshooting and debugging scenarios, as it allows you to quickly set up the necessary configurations without having to switch between different tools or environments.
+
+You can generate launch.json files from the **Help & Support** page in [!INCLUDE [prod_short](includes/prod_short.md)]. To do this, follow these steps:
+
+1. In [!INCLUDE [prod_short](includes/prod_short.md)], go to the **Help & Support** page.
+1. Under **Troubleshooting**, choose the **Generate launch configurations for this environment** link.
+
+Or, you can generate launch.json files from the **Extension Management** page. 
+
+1. In [!INCLUDE [prod_short](includes/prod_short.md)], go to the **Extension Management** page.
+1. Choose the extension that you want to generate launch configurations for.
+1. Now, choose the **Develop in VS Code** action group, and then the **Generate launch configurations** action.
+
+Visual Studio Code then generates launch configurations for deploy, attach, and snapshot configurations matching the specific environment, including the user session information.
+
+## Generate extension dependencies directly from the web client
+
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+
+You can generate extension dependencies directly from the web client. Instead of manually creating the dependencies file in Visual Studio Code, you can generate it directly from the [!INCLUDE [prod_short](includes/prod_short.md)] web client for a specific environment. There are two options for generating the dependencies; you can either **Download in VS Code** or **Show and copy** as illustrated in the image below.
+
+:::image type="content" source="media/develop-in-vs-code-dependencies.png" alt-text="Options for generating extension dependencies directly":::
+
+
 
 ## Related information
 
