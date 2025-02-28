@@ -537,9 +537,7 @@
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 #### [Sign an app package file](developer/devenv-sign-extension.md)
 #### [Using Microsoft Entra authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
-#### Work with extensions directly from the web client
-##### [Troubleshoot in VS Code directly from the web client](developer/devenv-troubleshoot-vscode-webclient.md)
-##### [Generate launch configuration files directly from the web client](developer/devenv-generate-launch-from-web.md)
+#### [Troubleshoot in VS Code directly from the web client](developer/devenv-troubleshoot-vscode-webclient.md)
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)

@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: overview
-ms.date: 09/17/2024
+ms.date: 02/28/2025
 ---
 
 # Troubleshoot in Visual Studio Code directly from the web client
@@ -81,16 +81,6 @@ Follow these steps:
   If you choose to create a new branch, you must give it a name.
 4. With access to the source code on your local computer, you can, for example, use the Page Inspector to help you navigate to the source code by using the **Explore page in Visual Studio Code** functionality. Learn more in [Open a page from Page Inspector](#open-a-page-from-the-page-inspector).
 
-
-## Good to know
-
-- If Visual Studio Code is already open, the last active session is used; otherwise, a new Visual Studio Code session opens. If the AL Language extension isn't installed, the user is asked to install it, and the process ends.
-- When invoked, a new project is created, and a matching launch configuration is created, depending on the current environment being a production or sandbox environment.
-- If the user chooses to debug, Visual Studio Code attaches to the web client process, which it was invoked from and awaits breaking on error.
-- If reusing a project and the source files aren't up to date with the version on the server, the breakpoints won't be hit correctly when debugging. Learn more in [Snapshot debugging](devenv-snapshot-debugging.md).
-- When you choose to generate new projects, remember to delete the projects occasionally to not accumulate many unused projects.
-- Running the web client in a browser, you're typically not running the browser as an administrator, which means that Visual Studio Code also doesn't open in administrator mode. So, for example, if Visual Studio Code prompts you for an update, and you choose yes, you get an error, because you don't have permissions to update. It's then recommended to shut down Visual Studio Code, and reopen it as an administrator and update it. Then, you can continue debugging.
-
 ## Generate launch configuration files directly from the web client
 
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
@@ -118,7 +108,14 @@ You can generate extension dependencies directly from the web client. Instead of
 
 :::image type="content" source="media/develop-in-vs-code-dependencies.png" alt-text="Options for generating extension dependencies directly":::
 
+## Good to know
 
+- If Visual Studio Code is already open, the last active session is used; otherwise, a new Visual Studio Code session opens. If the AL Language extension isn't installed, the user is asked to install it, and the process ends.
+- When invoked, a new project is created, and a matching launch configuration is created, depending on the current environment being a production or sandbox environment.
+- If the user chooses to debug, Visual Studio Code attaches to the web client process, which it was invoked from and awaits breaking on error.
+- If reusing a project and the source files aren't up to date with the version on the server, the breakpoints won't be hit correctly when debugging. Learn more in [Snapshot debugging](devenv-snapshot-debugging.md).
+- When you choose to generate new projects, remember to delete the projects occasionally to not accumulate many unused projects.
+- Running the web client in a browser, you're typically not running the browser as an administrator, which means that Visual Studio Code also doesn't open in administrator mode. So, for example, if Visual Studio Code prompts you for an update, and you choose yes, you get an error, because you don't have permissions to update. It's then recommended to shut down Visual Studio Code, and reopen it as an administrator and update it. Then, you can continue debugging.
 
 ## Related information
 
