@@ -19,7 +19,7 @@ Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/pr
 
 Learn more about billing and rates in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-## Set up payment
+## Set up payment model 
 
 [!INCLUDE [prod_short](../includes/prod_short.md)] supports two payment models: pay-as-you-go and prepaid capacity. Both models require that you link your Business Central environment to a Power Platform environment.
 
@@ -27,7 +27,7 @@ Learn more about billing and rates in [Dynamics 365 Licensing Guide](https://go.
 > - You can use both payment models on the Business Central environment. In this case, the prepaid capacity is consumed first.
 > - Message capacity on the Power Platform environment is consumed by Business Central environments and other Microsoft services in use on the Power Platform tenant.
 
-## Set up prepaid capacity
+### Set up prepaid capacity
 
 Complete these tasks to set up the Business Central environment for prepaid capacity.
 
@@ -68,7 +68,7 @@ Complete these tasks to set up the Business Central environment for prepaid capa
    1. In the **Linked Power Platform Environment** on environment page, select the **Link** under **Environment** or **Modify** if you want to change to another Power Platform environment.
    1. In the **Link** pane, select the Power Platform environment, and then select **Link**.  
 
-## Set up pay-as-you-go
+### Set up pay-as-you-go
 
 Complete these tasks to set up the Business Central environment for pay-as-you-go.
 
