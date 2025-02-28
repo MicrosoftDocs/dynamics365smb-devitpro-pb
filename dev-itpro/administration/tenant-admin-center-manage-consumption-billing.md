@@ -11,7 +11,7 @@ ms.reviewer: jswymer
 ---
 # Manage consumption-based billing
 
-This article explains how to set up a Business Central enviroment with a payment model for Copilot and agent capabilities.
+This article explains how to set up a Business Central environment with a payment model for Copilot and agent capabilities.
 
 ## Overview
 
@@ -21,7 +21,7 @@ Learn more about billing and rates in [Dynamics 365 Licensing Guide](https://go.
 
 ## Set up payment
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] supports two payment models: pay-as-you-go and prepaid capacity. Both models require that you link your Business Central environmet to a Power Platform enviroment.
+[!INCLUDE [prod_short](../includes/prod_short.md)] supports two payment models: pay-as-you-go and prepaid capacity. Both models require that you link your Business Central environment to a Power Platform environment.
 
 > [!NOTE]
 > - You can use both payment models on the Business Central environment. In this case, the prepaid capacity is consumed first.
@@ -29,7 +29,7 @@ Learn more about billing and rates in [Dynamics 365 Licensing Guide](https://go.
 
 ## Set up prepaid capacity
 
-Complete these tasks to set up the Business Central enviroment for prpeaid capacity.
+Complete these tasks to set up the Business Central environment for prepaid capacity.
 
 1. Purchase a Copilot message pack.
 
@@ -64,13 +64,13 @@ Complete these tasks to set up the Business Central enviroment for prpeaid capac
 -->
 1. Link the Business Central environment to the Power Platform environment:
 
-   1. Sign in to Business Central admin center, and then open enviroment.
-   1. In the **Linked Power Platform Environment** on enviroment page, select the **Link** under **Enviroment** or **Modify** if you want to change to another Power Platform environment.
+   1. Sign in to Business Central admin center, and then open environment.
+   1. In the **Linked Power Platform Environment** on environment page, select the **Link** under **Environment** or **Modify** if you want to change to another Power Platform environment.
    1. In the **Link** pane, select the Power Platform environment, and then select **Link**.  
 
 ## Set up pay-as-you-go
 
-Complete these tasks to set up the Business Central enviroment for pay-as-you-go.
+Complete these tasks to set up the Business Central environment for pay-as-you-go.
 
 1. Set up pay-as-you-go on the Power Platform tenant:
 
@@ -79,12 +79,12 @@ Complete these tasks to set up the Business Central enviroment for pay-as-you-go
    Learn more in [Set up pay-as-you-go](/power-platform/admin/pay-as-you-go-set-up).
 2. Link the Business Central environment to the Power Platform environment:
 
-   1. Sign in to Business Central admin center, and then open enviroment.
-   1. In the **Linked Power Platform Environment** on enviroment page, select the **Link** under **Enviroment** or **Modify** if you want to change to another Power Platform environment.
+   1. Sign in to Business Central admin center, and then open environment.
+   1. In the **Linked Power Platform Environment** on environment page, select the **Link** under **Environment** or **Modify** if you want to change to another Power Platform environment.
    1. In the **Link** pane, select the Power Platform environment, and then select **Link**.  
 
 ## View usage and billing information
 
 You can view usage and billing information for pay-as-you-go and prepaid capacity in the Power Platform admin center. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
 
-With pay-as-you-go, you can alsso view aggregated billing information in the Azure portal. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+With pay-as-you-go, you can also view aggregated billing information in the Azure portal. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
