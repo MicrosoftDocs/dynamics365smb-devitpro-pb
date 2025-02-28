@@ -21,25 +21,27 @@ Learn more about billing and rates in [Dynamics 365 Licensing Guide](https://go.
 
 ## Set up billing model 
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] supports two billing models: pay-as-you-go and prepaid capacity. Both models require that you link your Business Central environment to a Power Platform environment.
+[!INCLUDE [prod_short](../includes/prod_short.md)] supports two billing models: pay-as-you-go and prepaid capacity. The pay-as-you-go model charges for the actual number of messages consumed by agents during the month. The prepaid capacity model uses Copilot message pack subscriptions, which are a licensing option for Microsoft Copilot Studio that you purchase in advance. Learn more in [Copilot licensing](/microsoft-copilot-studio/billing-licensing?branch=main).
+
+Both models require that you link your Business Central environment to a Power Platform environment.
 
 > [!NOTE]
-> - You can use both billing models on the Business Central environment. In this case, the prepaid capacity is consumed first.
-> - Message capacity on the Power Platform environment is consumed by Business Central environments and other Microsoft services in use on the Power Platform tenant.
+> - Both billing models can be used on the Business Central environment. Prepaid capacity is consumed first.
+> - Message capacity on the Power Platform environment is consumed by Business Central environments and other Microsoft services on the Power Platform tenant.
 
 ### Set up prepaid capacity
 
 Complete these tasks to set up the Business Central environment for prepaid capacity.
 
-1. Purchase a Copilot message pack.
+1. Purchase a Copilot message pack using the Microsoft 365 admin center.
 
    The first time you purchase a message pack, use Microsoft 365 admin center. To purchase more capacity later, you can use the Power Platform admin center.
 
    1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
    1. On the navigation pane, select **Marketplace**
    1. Search for Microsoft Copilot Studio.
-   1. Select the message package.
-   1. Follow the prompts to complete the purchase.
+
+    Learn more in [Buy a Copilot Studio license](/microsoft-copilot-studio/requirements-licensing?branch=main&tabs=web).
 
 1. Assign prepaid capacity to the Power Platform environment using the Power Platform admin center.
 
