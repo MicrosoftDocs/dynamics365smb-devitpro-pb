@@ -12,30 +12,38 @@ ms.reviewer: jswymer
 
 # Manage consumption-based billing
 
-This article explains how to connect your Business Central tenant with a payment method for Copilot and agent capabilities.
+This article explains how to set up a Business Central tenant with a payment model for Copilot and agent capabilities. 
 
 ## Overview
 
-Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use a consumption-based billing model, chanring  that charges charging for usage . These capablities use Microsoft Copilot Studio for handling interactions and tasks.
+Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use a consumption-based billing model, charging for usage. These capabilities use Microsoft Copilot Studio for AI interactions and tasks (events), like retrieving information and responding to prompts. *Messages* are the unit of measure these event. The number of messages per event depends on its complexity. Learn more about messages in [Manage message capacity](/microsoft-copilot-studio/requirements-messages-management#message-scenarios)
 
-*Messages* are the common currency of Copilot Studio and the unit that measures agent usage. There are different merates for . Learn more in [Microsoft Copilot Studio messages](/microsoft-copilot-studio/billing-licensing).
-
-Events have different [billing rates](/microsoft-copilot-studio/requirements-messages-management) depending on the type of Copilot feature
-
-
-
-
-the common currency of [Microsoft Copilot Studio messages](/microsoft-copilot-studio/billing-licensing) per event.
+Learn more about about agent billing and rates in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## Set up payment
 
+[!INCLUDE [prod_short](../includes/prod_short.md)] supports two payment models: pay-as-you-go and prepaid capacity. Both models require that you link your Business Central environmet to a Power Platform enviroment.
 
-Set up pay as 
-Events have different [billing rates](/microsoft-copilot-studio/requirements-messages-management) depending on the type of Copilot feature. Messages are available in prepaid capacities and pay-as-you-go billing policies, and are consumed by [!INCLUDE [prod_short](../includes/prod_short.md)] environments alongside other Microsoft services in use on your tenant.
+> [!NOTE]
+> You can use both payment models on the Business Central environment. In this case, the prepaid capacity is consumed first.
 
-You manage prepaid capacities and [pay-as-you-go billing policies](/power-platform/admin/pay-as-you-go-overview) in the Power Platform Admin Center. To use messages in a [!INCLUDE [prod_short](../includes/prod_short.md)] environment, [link it to a Power Platform environment](tenant-admin-center-environments.md#linked-power-platform-environment). Any prepaid capacities and pay-as-you-go billing policies assigned to the linked Power Platform environment automatically apply to the [!INCLUDE [prod_short](../includes/prod_short.md)] environment.
+## Set up pay-as-you-go
 
-To use Copilot features with consumption-based billing beyond a limited monthly allowance, link the [!INCLUDE [prod_short](../includes/prod_short.md)] environment to a Power Platform environment with sufficient prepaid capacity or a pay-as-you-go billing policy. Settings [managing capacity and overages](/power-platform/admin/manage-copilot-studio-messages-capacity) applied to the linked environment in the Power Platform are inherited on the [!INCLUDE [prod_short](../includes/prod_short.md)] environment.
+Complete these tasks to set up the Business Central enviroment for pay-as-you-go.
+
+1. Set up pay-as-you-go on the Power Platform tenant:
+
+   To set up pay-as-you-go billing, you first need an active Azure subscription. Then, you link the subscription to your Power Platform environment using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or withing [Power Apps](https://make.powerapps.com/).
+
+   Learn more in [Set up pay-as-you-go](/power-platform/admin/pay-as-you-go-set-up).
+2. Link the Business Central environment to the Power Platform environment:
+
+   1. Sign in to Business Central admin center, and then open enviroment.
+   1. In the **Linked Power Platform Environment** on enviroment page, select the **Link** under **Enviroment** or **Modify** if you want to change to another Power Platform environment.
+   1. In the **Link** pane, select the Power Platform environment, and then select **Link**.  
+
+   ![NOTE]
+   > , and are consumed by [!INCLUDE [prod_short](../includes/prod_short.md)] environments alongside other Microsoft services in use on your tenant.
 
 
 ## View usage
