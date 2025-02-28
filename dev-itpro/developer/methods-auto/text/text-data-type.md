@@ -76,6 +76,27 @@ The **Text** data type is a value type, such that every time you use a method on
 
 The [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md) is a reference type, which holds a pointer elsewhere in memory. For performance reasons, we recommend you to use it when you want to modify a string without creating a new object. For example, using [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md)  can boost performance when concatenating many strings together in a loop.
 
+### Multiline strings
+
+[!INCLUDE [2025rw1_and_later](../../includes/2025rw1_and_later.md)]
+
+You can use the **Text** data type to create multiline strings. To create a multiline string, use the `@` character before and after the string. This allows more structured content, such as JSON content, to be created in a readable way. The following illustrates a simple syntax example:
+
+```AL
+var
+    t: Text;
+begin
+    t := @'This is
+a
+multiline
+string
+';
+end;
+```
+
+> [!NOTE]
+> Any added white space, such as line indentation, becomes part of the string, and is therefore not recommended.
+
 ## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
