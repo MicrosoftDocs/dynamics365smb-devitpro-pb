@@ -48,7 +48,7 @@ Complete these tasks to set up the Business Central environment for prepaid capa
 1. Link the Business Central environment to the Power Platform environment:
 
    1. Sign in to Business Central admin center, and then open environment.
-   1. In the **Linked Power Platform Environment** on environment page, select the **Link** under **Environment** or **Modify** if you want to change to another Power Platform environment.
+   1. In the **Linked Power Platform Environment** section on environment page, select the **Link** under **Environment** or **Modify** if you want to change to another Power Platform environment.
    1. In the **Link** pane, select the Power Platform environment, and then select **Link**.  
 
 ### Set up pay-as-you-go
@@ -63,7 +63,7 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
 2. Link the Business Central environment to the Power Platform environment:
 
    1. Sign in to Business Central admin center, and then open environment.
-   1. In the **Linked Power Platform Environment** on environment page, select the **Link** under **Environment** or **Modify** if you want to change to another Power Platform environment.
+   1. In the **Linked Power Platform Environment** section on environment page, select the **Link** under **Environment** or **Modify** if you want to change to another Power Platform environment.
    1. In the **Link** pane, select the Power Platform environment, and then select **Link**.  
 
 ## View usage and billing information
