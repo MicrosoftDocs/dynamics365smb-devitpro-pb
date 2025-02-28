@@ -15,7 +15,7 @@ This article explains how to set up a Business Central enviroment with a payment
 
 ## Overview
 
-Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use a consumption-based billing model, charging for usage. These capabilities use Microsoft Copilot Studio for AI interactions and tasks (events), like retrieving information and responding to prompts. *Messages* are the unit of measure of these events used for billing consumption. The number of messages per event depends on its complexity. Learn more about messages in [Manage message capacity](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
+Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use a consumption-based billing model, charging for usage. These capabilities use Microsoft Copilot Studio for AI interactions and tasks (events), like retrieving information and responding to prompts. *Messages* are the unit of measure of these events used for billing consumption. The number of messages per event depends on its complexity. Learn more about messages in [Message scenarios](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
 
 Learn more about billing and rates in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
@@ -83,8 +83,8 @@ Complete these tasks to set up the Business Central enviroment for pay-as-you-go
    1. In the **Linked Power Platform Environment** on enviroment page, select the **Link** under **Enviroment** or **Modify** if you want to change to another Power Platform environment.
    1. In the **Link** pane, select the Power Platform environment, and then select **Link**.  
 
-## View usage
+## View usage and billing information
 
-View 
+You can view usage and billing information for pay-as-you-go and prepaid capacity in the Power Platform admin center. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
 
-https://review.learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-usage-costs?branch=main
+With pay-as-you-go, you can alsso view aggregated billing information in the Azure portal. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
