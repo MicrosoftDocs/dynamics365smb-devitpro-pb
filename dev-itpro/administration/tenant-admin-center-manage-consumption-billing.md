@@ -24,7 +24,49 @@ Learn more about about agent billing and rates in [Dynamics 365 Licensing Guide]
 [!INCLUDE [prod_short](../includes/prod_short.md)] supports two payment models: pay-as-you-go and prepaid capacity. Both models require that you link your Business Central environmet to a Power Platform enviroment.
 
 > [!NOTE]
-> You can use both payment models on the Business Central environment. In this case, the prepaid capacity is consumed first.
+> - You can use both payment models on the Business Central environment. In this case, the prepaid capacity is consumed first.
+> - Message capacity on the Power Platform environment is consumed by Business Central environments and other Microsoft services in use on the Power Platform tenant.
+
+## Set up prepaid capacity
+
+Complete these tasks to set up the Business Central enviroment for prpeaid capacity.
+
+1. Purchase a Copilot message pack.
+
+   The first time you purchase a message pack, use Microsoft 365 admin center. To purchase more capacity later, you can use the Power Platform admin center.
+
+<!--# [Microsoft 365 admin center](#tab/m365) -->
+
+   1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
+   1. On the navigation pane, select **Marketplace**
+   1. Search for Microsoft Copilot Studio.
+   1. Select the message package.
+   1. Follow the prompts to complete the purchase.
+<!--
+   # [Power Platform admin center](#tab/ppac)
+
+   1. Sign in to the [Power Platform dmin center](https://admin.powerplatform.microsoft.com/).
+   1. On the navigation pane, select **Licensing**.
+   1. Under **Summaries**, select Copilot Studio.
+   1. Look for the **Message Pack** card.
+   1. Click on the link provided to manage and purchase new message packs.
+   1. Follow the prompts to complete your purchase.-->
+
+1. Assign prepaid capacity to the Power Platform environment using the Power Platform admin center.
+
+   Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity?tabs=new#manage-capacity).
+
+<!-- 
+   1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+   1. On the navigation pane, select **Licensing**.
+   1. Under **Summaries**, select **Copilot Studio**.
+   1. Look for the **Message Pack** card.
+-->
+1. Link the Business Central environment to the Power Platform environment:
+
+   1. Sign in to Business Central admin center, and then open enviroment.
+   1. In the **Linked Power Platform Environment** on enviroment page, select the **Link** under **Enviroment** or **Modify** if you want to change to another Power Platform environment.
+   1. In the **Link** pane, select the Power Platform environment, and then select **Link**.  
 
 ## Set up pay-as-you-go
 
@@ -40,10 +82,6 @@ Complete these tasks to set up the Business Central enviroment for pay-as-you-go
    1. Sign in to Business Central admin center, and then open enviroment.
    1. In the **Linked Power Platform Environment** on enviroment page, select the **Link** under **Enviroment** or **Modify** if you want to change to another Power Platform environment.
    1. In the **Link** pane, select the Power Platform environment, and then select **Link**.  
-
-   ![NOTE]
-   > , and are consumed by [!INCLUDE [prod_short](../includes/prod_short.md)] environments alongside other Microsoft services in use on your tenant.
-
 
 ## View usage
 
