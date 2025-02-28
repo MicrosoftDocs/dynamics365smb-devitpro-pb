@@ -62,7 +62,7 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
    To set up pay-as-you-go billing, you first need an active Azure subscription. Then, you link the subscription to your Power Platform environment using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/).
 
    Learn more in [Set up pay-as-you-go](/power-platform/admin/pay-as-you-go-set-up).
-2. Link the Business Central environment to the Power Platform environment:
+1. Link the Business Central environment to the Power Platform environment:
 
    1. Sign in to Business Central admin center and open environment.
    1. In the **Linked Power Platform Environment** section on environment page, select the **Link** under **Environment** or **Modify** to change to another Power Platform environment.
@@ -70,6 +70,6 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
 
 ## View usage and billing information
 
-You can view usage and billing information for pay-as-you-go and prepaid capacity in the Power Platform admin center. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
+View usage and billing information for pay-as-you-go and prepaid capacity in the Power Platform admin center. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
 
-With pay-as-you-go, you can also view aggregated billing information in the Azure portal. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+For pay-as-you-go, view aggregated billing information in the Azure portal. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
