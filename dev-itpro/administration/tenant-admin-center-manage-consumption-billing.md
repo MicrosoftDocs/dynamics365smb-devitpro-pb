@@ -33,13 +33,9 @@ Both models require that you link your Business Central environment to a Power P
 
 Complete these tasks to set up the Business Central environment for prepaid capacity.
 
-1. Purchase a Copilot message pack using the Microsoft 365 admin center.
+1. Purchase a Copilot message pack subscription using the Microsoft 365 admin center.
 
-   1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-   1. On the navigation pane, select **Marketplace**
-   1. Search for Microsoft Copilot Studio.
-
-   Learn more in [Buy a Copilot Studio license](/microsoft-copilot-studio/requirements-licensing?branch=main&tabs=web).
+   Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
    > [!TIP]
    > After the first time you purchase a message pack you can use the Power Platform admin center to purchase more capacity later.
