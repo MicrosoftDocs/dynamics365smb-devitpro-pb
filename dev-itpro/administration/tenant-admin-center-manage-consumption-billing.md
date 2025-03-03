@@ -26,6 +26,7 @@ Learn more about billing and rates in [Power Platform Licensing Guide](https://g
 Both models require that you link your Business Central environment to a Power Platform environment.
 
 > [!NOTE]
+>
 > - Both billing models can be used on the Business Central environment. Prepaid capacity is consumed first.
 > - Message capacity on the Power Platform environment is consumed by Business Central environments and other Microsoft services on the Power Platform tenant.
 
@@ -33,15 +34,15 @@ Both models require that you link your Business Central environment to a Power P
 
 Complete these tasks to set up the Business Central environment for prepaid capacity.
 
-1. Purchase a Copilot message pack subscription using the Microsoft 365 admin center or .
+1. Purchase a Copilot message pack subscription using the Microsoft 365 admin center (customer) or Partner Center (reseller).
 
    Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-1. Assign prepaid capacity to the Power Platform environment using the Power Platform admin center.
+1. Assign prepaid capacity to the Power Platform environment using the Power Platform admin center (customer or reseller).
 
    Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity?tabs=new#manage-capacity).
 
-1. Link the Business Central environment to the Power Platform environment:
+1. Link the Business Central environment to the Power Platform environment (internal or delagated admins)::
 
    1. Sign in to Business Central admin center and open environment.
    1. In the **Linked Power Platform Environment** section on environment page, select the **Link** under **Environment** or **Modify** to change to another Power Platform environment.
@@ -51,12 +52,12 @@ Complete these tasks to set up the Business Central environment for prepaid capa
 
 Complete these tasks to set up the Business Central environment for pay-as-you-go.
 
-1. Set up pay-as-you-go on the Power Platform tenant:
+1. Set up pay-as-you-go on the Power Platform tenant (reseller):
 
    To set up pay-as-you-go billing, you first need an active Azure subscription. Then, you link the subscription to your Power Platform environment using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/).
 
    Learn more in [Set up pay-as-you-go](/power-platform/admin/pay-as-you-go-set-up).
-1. Link the Business Central environment to the Power Platform environment:
+1. Link the Business Central environment to the Power Platform environment (internal or delagated admins):
 
    1. Sign in to Business Central admin center and open environment.
    1. In the **Linked Power Platform Environment** section on environment page, select the **Link** under **Environment** or **Modify** to change to another Power Platform environment.
@@ -70,10 +71,9 @@ For pay-as-you-go, view aggregated billing information in the Azure portal. Lear
 
 ## Notifications and consequences for low or depleted quota
 
-If your organization's quota is low or depleted, you'll receive in-app notifications about the status and necessary actions. Once the quota is depleted, the AI capability stops working until quota is available again.
+If your organization's quota is low or depleted, users receive in-app notifications about the status and necessary actions. Once the quota is depleted, the AI capability doesn't work until more prepoaid capacity quota is made available.
 
-To add more quota, 
-
+Purchase 
 
 ## Related information
 
