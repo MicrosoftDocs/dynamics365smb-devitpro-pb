@@ -207,7 +207,7 @@ codeunit 50102 Square implements IShape
 
 codeunit 50103 ShapeListDemo
 {
-    procedure Run()
+    trigger OnRun()
     var
         ShapeList: List of [Interface "IShape"];
         Shape: Interface "IShape";
