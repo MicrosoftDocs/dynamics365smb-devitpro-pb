@@ -17,7 +17,7 @@ This article explains how to set up a Business Central environment for billing C
 
 Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use consumption-based billing, charging per use. These capabilities use Microsoft Copilot Studio messages for AI interactions and tasks, like retrieving information and responding to prompts. *Messages* are the billing units that measure usage. The number of messages per event depends on its complexity. Learn more about messages in [Message scenarios](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
 
-Learn more about billing and rates in [Power Platform Licensing Guide ](https://go.microsoft.com/fwlink/?LinkId=2085130). <!--[Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).-->
+Learn more about billing and rates in [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130). <!--[Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).-->
 
 ## Set up billing model
 
@@ -33,12 +33,9 @@ Both models require that you link your Business Central environment to a Power P
 
 Complete these tasks to set up the Business Central environment for prepaid capacity.
 
-1. Purchase a Copilot message pack subscription using the Microsoft 365 admin center.
+1. Purchase a Copilot message pack subscription using the Microsoft 365 admin center or .
 
    Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
-
-   > [!TIP]
-   > After the first time you purchase a message pack you can use the Power Platform admin center to purchase more capacity later.
 
 1. Assign prepaid capacity to the Power Platform environment using the Power Platform admin center.
 
@@ -71,9 +68,11 @@ View usage and billing information for pay-as-you-go and prepaid capacity in the
 
 For pay-as-you-go, view aggregated billing information in the Azure portal. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
-## Take action on AI quota alerts and notifications
+## Notifications and consequences for low or depleted quota
 
+If your organization's quota is low or depleted, you'll receive in-app notifications about the status and necessary actions. Once the quota is depleted, the AI capability stops working until quota is available again.
 
+To add more quota, 
 
 
 ## Related information
