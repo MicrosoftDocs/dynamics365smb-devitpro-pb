@@ -1,5 +1,5 @@
 ---
-title: Need a new AL object for your app? Contribute your extensibility scenarios
+title: Need a new AL object for your app? Contribute it yourself
 description: Learn about how to contribute to the different repositories that contain the business application.
 author: diegojoshuam
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 02/18/2025
 ms.reviewer: bholtorf
 ---
 
-# Need a new AL object for your app? Contribute your extensibility scenarios
+# Need a new AL object for your app? Contribute it yourself
 
 Our AL codebase contains many scenarios that you can extend to cover the diverse needs of different businesses. However, you might have a business scenario that our extensibility offerings don't cover. For example, we might not have the events or interfaces you need. In that case, rather than wait for us, we encourage you to unblock yourself by contributing to our codebase.
 
