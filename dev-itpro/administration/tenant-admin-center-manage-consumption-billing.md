@@ -21,14 +21,14 @@ Learn more about billing and rates in [Power Platform Licensing Guide](https://g
 
 ## Set up billing model
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] supports two billing models: prepaid capacity and pay-as-you-go. The prepaid capacity model uses Copilot message pack subscriptions, which are a licensing option for Microsoft Copilot Studio that you purchase in advance. The pay-as-you-go model charges for the actual number of messages consumed by agents during the month. Learn more in [Copilot licensing](/microsoft-copilot-studio/billing-licensing?branch=main).
+[!INCLUDE [prod_short](../includes/prod_short.md)] supports two billing models: prepaid capacity and pay-as-you-go. The prepaid capacity model uses Copilot Studio message pack subscriptions, which are a licensing option for Microsoft Copilot Studio that you purchase in advance. The pay-as-you-go model charges for the actual number of messages consumed by agents during the month. Learn more in [Copilot licensing](/microsoft-copilot-studio/billing-licensing?branch=main).
 
 Both models require that you link your Business Central environment to a Power Platform environment.
 
 > [!NOTE]
 >
 > - Both billing models can be used on the Business Central environment. Prepaid capacity is consumed first.
-> - Message capacity on the Power Platform environment is consumed by Business Central environments and other Microsoft services on the Power Platform tenant.
+> - Message capacity on the Power Platform environment is consumed by Business Central environments and other Microsoft services on the tenant.
 
 ### Set up prepaid capacity
 
@@ -63,17 +63,16 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
    1. In the **Linked Power Platform Environment** section on environment page, select the **Link** under **Environment** or **Modify** to change to another Power Platform environment.
    1. In the **Link** pane, select the Power Platform environment, and then select **Link**.  
 
-## Monitor usage and billing information
+## Manage capacity and usage
 
-View usage and billing information for pay-as-you-go and prepaid capacity in the Power Platform admin center. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
+You can view Copilot Studio message capacity and usage for prepaid capacity and pay-as-you-go in the Power Platform admin center. Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity).
 
-For pay-as-you-go, view aggregated billing information in the Azure portal. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+For prepaid capacity, you can also use the admin center to allocate more capacity to the environment from the total capacity available on the tenant. If your organization's available prepaid capacity (quota) is low or depleted, users receive in-app notifications about the status and necessary actions. It's important to take timely action on these notifications by reallocating existing capacity or purchasing more capacity.
 
-## Notifications and consequences for low or depleted quota
+> [!IMPORTANT)
+> Once the quota is depleted, the AI capability doesn't work until more capacity is available.
 
-If your organization's quota is low or depleted, users receive in-app notifications about the status and necessary actions. Once the quota is depleted, the AI capability doesn't work until more prepoaid capacity quota is made available.
-
-Purchase 
+For pay-as-you-go, use Azure Cost Management in the Azure portal to view detailed usage and billing charges, and manage costs by setting spending limits and alerts. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
 ## Related information
 
