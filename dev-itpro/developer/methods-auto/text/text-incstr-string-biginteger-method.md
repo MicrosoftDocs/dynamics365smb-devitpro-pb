@@ -39,6 +39,29 @@ The incremented string.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The `Text.IncStr` method increases the last positive number or decreases the last negative number inside a string by the provided positive increment. The method returns a new string with the incremented or decremented value. When decreasing a positive number, you should use a `try` function to catch cases where the string can't be decreased further. When decreasing, leading zeros will be added as applicable.
+
+### Example
+
+```al
+codeunit 50111 MyAccountCodeunit
+{
+    procedure MyIncStr()
+    var
+        Account: Text[60];
+        ResultAccount: Text[60];
+        AText: TextConst ENU = 'Account No. 99 doesn''t balance.';
+    begin
+        Account := AText;
+        ResultAccount := IncStr(Account, 10);
+    end;
+}
+```
+
+
 ## See Also
 [Text data type](text-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
