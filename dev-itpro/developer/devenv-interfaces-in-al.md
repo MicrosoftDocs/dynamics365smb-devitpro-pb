@@ -157,13 +157,7 @@ page 50200 MyAddressPage
 
 With [!INCLUDE [2025-releasewave1](../includes/2025-releasewave1.md)] you can create lists or dictionaries of interfaces.
 
-The [Dictionary](methods-auto/dictionary/dictionary-data-type.md) and [List](methods-auto/list/list-data-type.md) data types offer efficient lookup of key-value pairs and ordered collections, and allow managing collections of data dynamically. The syntax is as follows for simple types:
-
-The following syntax illustrates how to create a List of interfaces:
-
-```AL
-List of [Interface IFoo]
-```
+The [Dictionary](methods-auto/dictionary/dictionary-data-type.md) and [List](methods-auto/list/list-data-type.md) data types offer efficient lookup of key-value pairs and ordered collections, and allow managing collections of data dynamically.
 
 The following example illustrates how to create a Dictionary of interfaces:
 
@@ -181,8 +175,58 @@ codeunit 50120 MyDictionaryCodeunit
 }
 ```
 
-In the System Application, you can find the complete examples of using a list of interfaces in the [Telemetry Logger](https://github.com/search?q=repo%3Amicrosoft%2FBCApps+%22List+of+%5BInterface%22&type=code).
+The following example illustrates how to create a List of interfaces:
 
+```AL
+interface "IShape"
+{
+    procedure GetArea(): Decimal;
+}
+
+codeunit 50101 Circle implements IShape
+{
+    procedure GetArea(): Decimal
+    var
+        Radius: Decimal;
+    begin
+        Radius := 5; // Example radius
+        exit(3.14 * Radius * Radius); // Area of a circle: πr²
+    end;
+}
+
+codeunit 50102 Square implements IShape
+{
+    procedure GetArea(): Decimal
+    var
+        SideLength: Decimal;
+    begin
+        SideLength := 4; // Example side length
+        exit(SideLength * SideLength); // Area of a square: side²
+    end;
+}
+
+codeunit 50103 ShapeListDemo
+{
+    procedure Run()
+    var
+        ShapeList: List of [Interface "IShape"];
+        Shape: Interface "IShape";
+        CircleShape: Codeunit "Circle";
+        SquareShape: Codeunit "Square";
+    begin
+        // Add instances of Circle and Square to the list
+        ShapeList.Add(CircleShape);
+        ShapeList.Add(SquareShape);
+
+        // Iterate through the list and display the area of each shape
+        foreach Shape in ShapeList do begin
+            Message('The area of the shape is: %1', Shape.GetArea());
+        end;
+    end;
+}
+```
+
+In the System Application, you can find the complete examples of using a list of interfaces in the [Telemetry Logger](https://github.com/search?q=repo%3Amicrosoft%2FBCApps+%22List+of+%5BInterface%22&type=code).
 
 ## Related information
 
