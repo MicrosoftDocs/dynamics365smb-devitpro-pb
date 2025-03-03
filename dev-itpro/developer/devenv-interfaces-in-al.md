@@ -155,7 +155,7 @@ page 50200 MyAddressPage
 
 ## Create List and Dictionary of an interface
 
-With [!INCLUDE [2025-releasewave1](../includes/2025-releasewave1.md)] you can create lists or dictionaries of interfaces.
+With [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)] you can create lists or dictionaries of interfaces.
 
 The [Dictionary](methods-auto/dictionary/dictionary-data-type.md) and [List](methods-auto/list/list-data-type.md) data types offer efficient lookup of key-value pairs and ordered collections, and allow managing collections of data dynamically.
 
