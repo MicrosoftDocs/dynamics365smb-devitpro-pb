@@ -42,7 +42,7 @@ Complete these tasks to set up the Business Central environment for prepaid capa
 
    Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity?tabs=new#manage-capacity).
 
-1. Link the Business Central environment to the Power Platform environment (internal or delagated admins)::
+1. Link the Business Central environment to the Power Platform environment (internal or delegated admins):
 
    1. Sign in to Business Central admin center and open environment.
    1. In the **Linked Power Platform Environment** section on environment page, select the **Link** under **Environment** or **Modify** to change to another Power Platform environment.
@@ -57,7 +57,7 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
    To set up pay-as-you-go billing, you first need an active Azure subscription. Then, you link the subscription to your Power Platform environment using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/).
 
    Learn more in [Set up pay-as-you-go](/power-platform/admin/pay-as-you-go-set-up).
-1. Link the Business Central environment to the Power Platform environment (internal or delagated admins):
+1. Link the Business Central environment to the Power Platform environment (internal or delegated admins):
 
    1. Sign in to Business Central admin center and open environment.
    1. In the **Linked Power Platform Environment** section on environment page, select the **Link** under **Environment** or **Modify** to change to another Power Platform environment.
@@ -69,11 +69,11 @@ You can view Copilot Studio message capacity and usage for prepaid capacity and 
 
 For prepaid capacity, you can also use the admin center to allocate more capacity to the environment from the total capacity available on the tenant. If your organization's available prepaid capacity (quota) is low or depleted, users receive in-app notifications about the status and necessary actions. It's important to take timely action on these notifications by reallocating existing capacity or purchasing more capacity.
 
-> [!IMPORTANT)
+> [!IMPORTANT]
 > Once the quota is depleted, the AI capability doesn't work until more capacity is available.
 
-For pay-as-you-go, use Azure Cost Management in the Azure portal to view detailed usage and billing charges, and manage costs by setting spending limits and alerts. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+For pay-as-you-go, use Microsoft Cost Management in the Azure portal to view detailed usage and billing charges, and manage costs by setting spending limits and alerts. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
 ## Related information
 
-[Linked Power Platform Enviroments](administration/tenant-admin-center-environments.md#linked-power-platform-environment)
+[Linked Power Platform Environments](administration/tenant-admin-center-environments.md#linked-power-platform-environment)
