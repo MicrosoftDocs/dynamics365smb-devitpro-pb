@@ -177,8 +177,8 @@ codeunit 50120 MyDictionaryCodeunit
 
 The following example illustrates how to create a List of interfaces:
 
-```AL
-interface "IShape"
+```al
+interface IShape
 {
     procedure GetArea(): Decimal;
 }
@@ -209,16 +209,17 @@ codeunit 50103 ShapeListDemo
 {
     trigger OnRun()
     var
-        ShapeList: List of [Interface "IShape"];
-        Shape: Interface "IShape";
-        CircleShape: Codeunit "Circle";
-        SquareShape: Codeunit "Square";
+        ShapeList: List of [Interface IShape];
+        Shape: Interface IShape;
+        CircleShape: Codeunit Circle;
+        SquareShape: Codeunit Square;
     begin
         // Add instances of Circle and Square to the list
         ShapeList.Add(CircleShape);
         ShapeList.Add(SquareShape);
 
         // Iterate through the list and display the area of each shape
+
         foreach Shape in ShapeList do begin
             Message('The area of the shape is: %1', Shape.GetArea());
         end;
