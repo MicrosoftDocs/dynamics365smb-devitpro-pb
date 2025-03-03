@@ -48,9 +48,9 @@ Each request should contain the following information:
 
 ### Write a clear title
 
-The title should contain information about the specific objects to change. For example, **[Country Code] [Application] [Missing Scenario]**.
+The title should contain information about the specific repo and objects to change. For example, **[Country Code] [Application] [Missing Scenario]**.
 
-Examples:
+The following are examples of titles that help us:
 
 * [W1][BaseApp][Sales Posting scenarios]
 * [DK][DKCore][Changes in Nemhandle]
