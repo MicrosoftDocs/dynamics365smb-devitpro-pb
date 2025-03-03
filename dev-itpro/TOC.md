@@ -1196,7 +1196,6 @@
 ##### [Extending Currency Exchange Rate Adjustments](developer/devenv-extend-exchange-rates.md)
 ##### [Extending e-documents functionality](developer/devenv-extend-edocuments.md)
 ##### [Extending error messages with recommendations](developer/devenv-extension-errors-recommendations.md)
-### [Need a new AL object for your app?](developer/devenv-contribute-extensibility.md)
 <!-- ##### [Add drop zones for uploading multiple files](developer/devenv-extending-drop-zones.md) -->
 
 ### Using events
@@ -1216,7 +1215,7 @@
 ### Embedding Power BI
 #### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
-
+### [Need a new AL object for your app?](developer/devenv-contribute-extensibility.md)
 <!-- end Testing the application -->
 
 <!-- Rules and Guidelines -->
