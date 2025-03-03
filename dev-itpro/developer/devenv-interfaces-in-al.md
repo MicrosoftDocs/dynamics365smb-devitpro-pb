@@ -153,6 +153,37 @@ page 50200 MyAddressPage
 }
 ```
 
+## Create List and Dictionary of an interface
+
+With [!INCLUDE [2025-releasewave1](../includes/2025-releasewave1.md)] you can create lists or dictionaries of interfaces.
+
+The [Dictionary](methods-auto/dictionary/dictionary-data-type.md) and [List](methods-auto/list/list-data-type.md) data types offer efficient lookup of key-value pairs and ordered collections, and allow managing collections of data dynamically. The syntax is as follows for simple types:
+
+The following syntax illustrates how to create a List of interfaces:
+
+```AL
+List of [Interface IFoo]
+```
+
+The following example illustrates how to create a Dictionary of interfaces:
+
+```AL
+codeunit 50120 MyDictionaryCodeunit
+{
+    procedure MyProcedure(): Dictionary of [Integer, Interface "Barcode Font Provider"]
+    var
+        localDict: Dictionary of [Integer, Interface "Barcode Font Provider"];
+        IProvider: Interface "Barcode Font Provider";
+    begin
+        localDict.Add(2, IProvider);
+        exit(localDict);
+    end;
+}
+```
+
+In the System Application, you can find the complete examples of using a list of interfaces in the [Telemetry Logger](https://github.com/search?q=repo%3Amicrosoft%2FBCApps+%22List+of+%5BInterface%22&type=code).
+
+
 ## Related information
 
 [Codeunit object](devenv-codeunit-object.md)  
