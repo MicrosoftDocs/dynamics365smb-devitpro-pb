@@ -15,13 +15,13 @@ This article explains how to set up a Business Central environment for billing C
 
 ## Overview
 
-Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use consumption-based billing, charging per usage. These capabilities use Microsoft Copilot Studio messages for AI interactions and tasks, like retrieving information and responding to prompts. *Messages* are the unit of measure for billing consumption. The number of messages per event depends on its complexity. Learn more about messages in [Message scenarios](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
+Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use consumption-based billing, charging per use. These capabilities use Microsoft Copilot Studio messages for AI interactions and tasks, like retrieving information and responding to prompts. *Messages* are the billing units that measure usage. The number of messages per event depends on its complexity. Learn more about messages in [Message scenarios](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
 
 Learn more about billing and rates in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-## Set up billing model 
+## Set up billing model
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] supports two billing models: pay-as-you-go and prepaid capacity. The pay-as-you-go model charges for the actual number of messages consumed by agents during the month. The prepaid capacity model uses Copilot message pack subscriptions, which are a licensing option for Microsoft Copilot Studio that you purchase in advance. Learn more in [Copilot licensing](/microsoft-copilot-studio/billing-licensing?branch=main).
+[!INCLUDE [prod_short](../includes/prod_short.md)] supports two billing models: prepaid capacity and pay-as-you-go. The prepaid capacity model uses Copilot message pack subscriptions, which are a licensing option for Microsoft Copilot Studio that you purchase in advance. The pay-as-you-go model charges for the actual number of messages consumed by agents during the month. learn more in [Copilot licensing](/microsoft-copilot-studio/billing-licensing?branch=main).
 
 Both models require that you link your Business Central environment to a Power Platform environment.
 
