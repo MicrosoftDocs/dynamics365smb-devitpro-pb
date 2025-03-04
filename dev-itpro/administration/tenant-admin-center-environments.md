@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 11/19/2024
+ms.date: 03/04/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -34,7 +34,7 @@ When a link exists between a [!INCLUDE[prod_short](../developer/includes/prod_sh
 
 ### Link Business Central environment to Power Platform environment
 
-Only internal administrators that have permissions allowing them to update the properties of the targeted Power Platform environment can link a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to it.
+To complete this task, you need to be an internal Business Central admin with permissions to update the properties of the targeted Power Platform environment.
 
 1. Sign in to the Business Central admin center and open the environment.
 1. In the **Linked Power Platform Environment** section on the environment page, select **Link** under **Environment** or **Modify** to change to another Power Platform environment.
@@ -102,7 +102,7 @@ You can create new environments that are either production environments or sandb
    The new environment isn't accessible until the **State** becomes **Active**.
 
 > [!NOTE]
-> The new environment has a default update window that guarantees future updates won't run between 8:00 PM and 6:00 AM local time for the environment country. This update window can be changed after the environment has been created. Learn more in [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).
+> The new environment has a default update window that guarantees future updates don't run between 8:00 PM and 6:00 AM local time for the environment country. This update window can be changed after the environment is created. Learn more in [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).
 
 To delete an environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then choose **Delete** on the action ribbon.
 
