@@ -47,7 +47,7 @@ Only internal administrators that have permissions allowing them to update the p
 
 You can unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from the Power Platform environment. Unlinking an environment disables any settings the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherits from the Power Platform environment but doesn't disable any integrations set up between the two environments. Examples include Power Automate flows created from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment or data integration with Dynamics 365 Sales or Dynamics 365 Field Service.
 
-Unlinked environments can be [relinked to the same or different environments](#link-business-central-enviroment-to-power-platform-environment).
+Unlinked environments can be [relinked to the same or different environments](#link-business-central-environment-to-power-platform-environment).
 
 ## Types of environments
 
