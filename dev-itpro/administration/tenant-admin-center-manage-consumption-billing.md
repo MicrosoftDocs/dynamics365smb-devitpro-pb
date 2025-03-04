@@ -76,4 +76,5 @@ For pay-as-you-go, use Microsoft Cost Management in the Azure portal to view det
 
 ## Related information
 
+[Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview)  
 [Linked Power Platform Environments](administration/tenant-admin-center-environments.md#linked-power-platform-environment)
