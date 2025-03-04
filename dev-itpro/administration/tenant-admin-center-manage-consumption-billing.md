@@ -74,4 +74,4 @@ Business Central regularly checks the available capacity (quota) of Copilot Stud
 ## Related information
 
 [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview)  
-[Linked Power Platform Environments](administration/tenant-admin-center-environments.md#linked-power-platform-environment)
+[Linked Power Platform Environments](administration/tenant-admin-center-environments.md#linked-power-platform-environment)  
