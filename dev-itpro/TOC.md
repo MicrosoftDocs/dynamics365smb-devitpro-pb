@@ -959,6 +959,7 @@
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
 #### [Troubleshooting report errors](developer/devenv-reports-troubleshooting.md)
+#### [Obsoleting reports](developer/devenv-reports-obsoletion.md)
 #### [Report telemetry](administration/telemetry-reports-trace.md)
 #### How users work with reports
 ##### [Run and print reports](/dynamics365/business-central/ui-work-report?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -1560,6 +1561,8 @@
 ### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
+### [Token counting in AI](developer/ai-system-app-token-counting.md)
+### [Function calling in AI](developer/ai-system-app-function-calling.md)
 ### Extend Copilot in Business Central 
 #### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
@@ -1570,6 +1573,7 @@
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
