@@ -45,13 +45,9 @@ Only internal administrators that have permissions allowing them to update the p
 
 ### Unlink Business Central environment from the Power Platform environment
 
-You can unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from the Power Platform environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Unlinking an environment disables any settings the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherits from the Power Platform environment but doesn't disable any integrations set up between the two environments. Examples include Power Automate flows created from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment or data integration with Dynamics 365 Sales or Dynamics 365 Field Service.
+You can unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from the Power Platform environment. Unlinking an environment disables any settings the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherits from the Power Platform environment but doesn't disable any integrations set up between the two environments. Examples include Power Automate flows created from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment or data integration with Dynamics 365 Sales or Dynamics 365 Field Service.
 
-1. Sign in to the Business Central admin center and open the environment.
-1. 
-
-
- Unlinked environments can be [relinked to the same or different environments](#link-business-central-enviroment-to-power-platform-environment).
+Unlinked environments can be [relinked to the same or different environments](#link-business-central-enviroment-to-power-platform-environment).
 
 ## Types of environments
 
