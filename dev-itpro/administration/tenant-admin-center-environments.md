@@ -32,21 +32,23 @@ A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can li
 
 When a link exists between a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and a Power Platform environment, several environment lifecycle operations are blocked on the Power Platform environment. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can't be deleted if it's linked to a Power Platform environment. For environment lifecycle operations on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment that create a new environment, such as [Copy](tenant-admin-center-environments-copy.md) and [Restore](tenant-admin-center-backup-restore.md), the target environment isn't linked to a Power Platform environment as part of the operation. The target environment can be linked to a different Power Platform environment after the operation that creates the environment completes.
 
-### Link Business Central enviroment to Power Platform environment
+### Link Business Central environment to Power Platform environment
 
 Only internal administrators that have permissions allowing them to update the properties of the targeted Power Platform environment can link a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to it.
 
 1. Sign in to the Business Central admin center and open the environment.
 1. In the **Linked Power Platform Environment** section on the environment page, select **Link** under **Environment** or **Modify** to change to another Power Platform environment.
 
-   ![Screenshot showing the Limked Power Platform setting on the environment in the Business Central admin center](../developer/media/admin/environment-linked-power-platform.png)
-   
+   ![Screenshot showing the Linked Power Platform setting on the environment in the Business Central admin center](../developer/media/admin/environment-linked-power-platform.png)
+
 1. In the **Link** pane, select the Power Platform environment, and then select **Link**.
 
-### Unlink Business Central enviroment from the Power Platform environment
+### Unlink Business Central environment from the Power Platform environment
 
-You can unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from the Power Platform environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Unlinking an environment disables any settings the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherits from the Power Platform environment but doesn't disable any integrations set up between the two environments (for example, Power Automate flows created from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment or data integration with Dynamics 365 Sales or Dynamics 365 Field Service).
+You can unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from the Power Platform environment in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. Unlinking an environment disables any settings the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherits from the Power Platform environment but doesn't disable any integrations set up between the two environments. Examples include Power Automate flows created from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment or data integration with Dynamics 365 Sales or Dynamics 365 Field Service.
 
+1. Sign in to the Business Central admin center and open the environment.
+1. 
 
 
  Unlinked environments can be [relinked to the same or different environments](#link-business-central-enviroment-to-power-platform-environment).
