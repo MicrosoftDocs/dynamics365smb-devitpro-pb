@@ -69,7 +69,7 @@ Business Central regularly checks the available capacity (quota) of Copilot Stud
 - For pay-as-you-go, use Microsoft Cost Management in the Azure portal to view detailed usage and adjust spending limits (budgets) to free up more capacity. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs). If there's no quantity to allocate, purchase more.
 
 > [!IMPORTANT]
-> Once the quota is depleted, the AI capability doesn't work until more capacity is available.
+> When the quota is depleted, the AI capability is unavailable until more capacity is added.
 
 ## Related information
 
