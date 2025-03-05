@@ -1,10 +1,10 @@
 ---
 title: The UserControlHost page type
-description: The PromptDialog page type allows you to integrate copilot capabilities into your custom scenarios.
+description: Learn how to use the UserControlHost page type in Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
-ms.date: 11/14/2024
+ms.date: 03/05/2025
 ms.reviewer: solsen
 ---
 
@@ -19,7 +19,7 @@ The `UserControlHost` page type can **only** have a single control of type `user
 ```al
 ```
 
-
 ## Related information
 
 [Page types and layouts](devenv-page-types-and-layouts.md)  
+[Prompt dialog page type](devenv-page-type-promptdialog.md)
