@@ -34,7 +34,10 @@ When a link exists between a [!INCLUDE[prod_short](../developer/includes/prod_sh
 
 ### Link Business Central environment to Power Platform environment
 
-To complete this task, you need to be an internal Business Central admin with permissions to update the properties of the targeted Power Platform environment.
+To complete this task, you need to be an internal admin with a role that grants access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and permissions to update the properties of the targeted Power Platform environment, such as environment administrator.
+
+> [!IMPORTANT]
+> Users with an admin Entra role assigned may not automatically gain the environment administrator role on the Power Platform environment. If the Power Platform environment does not show up as available to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to, verify that you are an Environment Admin for the Power Platform environment. For more information, see [Role-based security roles](/power-platform/admin/database-security).
 
 1. Sign in to the Business Central admin center and open the environment.
 1. In the **Linked Power Platform Environment** section on the environment page, select **Link** under **Environment** or **Modify** to change to another Power Platform environment.
