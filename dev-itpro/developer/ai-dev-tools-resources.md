@@ -86,3 +86,6 @@ If not EnvironmentInformation.IsSaaSInfrastructure() then
 else
     AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions",AzureOpenAIAccountName,AzureOpenAIApiKey,AOAIDeployments.GetGPT4oLatest());
 ```
+
+## Samples
+You can find further AL code examples on using and calling LLM resources in the samples on https://aka.ms/BCTech, under samples > AzureOpenAI.
