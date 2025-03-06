@@ -26,6 +26,11 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 Learn more about billing in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing). <!--[Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130)-->
 
+### Billable agent capabilities
+
+- Sales Order Agent
+- D
+
 ## Set up billing model
 
 [!INCLUDE [prod_short](../includes/prod_short.md)] supports two billing models: prepaid capacity and pay-as-you-go. The prepaid capacity model uses Copilot Studio message pack subscriptions, which are a licensing option for Microsoft Copilot Studio that you purchase in advance. The pay-as-you-go model charges for the actual number of messages consumed by agents during the month. Learn more in [Copilot licensing](/microsoft-copilot-studio/billing-licensing?branch=main).
@@ -75,8 +80,10 @@ Business Central regularly checks the available capacity (quota) of Copilot Stud
 - For prepaid capacity, use the Power Platform admin center to allocate more capacity to the environment from the total available on the tenant. Learn more in [Manage capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
 
   If there's no quantity to allocate, purchase capacity. Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users). You can do this yourself or contact your reseller.
-- For pay-as-you-go, use Microsoft Cost Management in the Azure portal to view detailed usage and adjust spending limits (budgets) to free up more capacity. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs). If there's no quantity to allocate, purchase more. This task can only be done be a reseller. If you're a customer contact your reseller.
-- For pay-as-you-go, use Microsoft Cost Management in the Azure portal to view detailed usage and adjust spending limits (budgets) to free up more capacity. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs). If there's no quantity to allocate, purchase more. This task is done by a reseller. If you're a customer, contact your reseller.
+
+- For pay-as-you-go, use Microsoft Cost Management in the Azure portal to view detailed usage and adjust spending limits (budgets) to free up more capacity. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
+
+  If there's no quantity to allocate, purchase more. This task is done by a reseller. If you're a customer, contact your reseller.
 
 > [!IMPORTANT]
 > When the quota is depleted, the AI capability is unavailable until more capacity is added.
