@@ -39,7 +39,7 @@ Both models require that you link your Business Central environment to a Power P
 
 ### Set up prepaid capacity
 
-Complete these tasks to set up the Business Central environment for prepaid capacity. 
+Complete these tasks to set up the Business Central environment for prepaid capacity. Tasks 1 and 2 can be done by a customer or a reseller. If you're a customer, contact your reseller if you prefer them to handle these tasks. Task 3 is done by the customer's internal admin for Business Central.
 
 1. Purchase a Copilot message pack subscription using the Microsoft 365 admin center (customer) or Partner Center (reseller).
 
