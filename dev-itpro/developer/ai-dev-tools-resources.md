@@ -33,13 +33,22 @@ This allows customers to:
 > It is important to note that this new AI consumption billing mechanism is not intended to replace the existing AppSource monetization pathway for Business Central apps. Instead, it serves as an additional option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their 
 IP.
 
-## Bringing your own subscription to customers
+## Use your own subscription with customers
 For the vast majority of ISVs, the default Business Central AI Dev Tools subscription will be enough, However, if you have special needs that are not fulfilled in the Business Central AI Dev Tools subscription, such as specific models incl fine-tuned ones, you can bring your own subscription (BYO) to customers. It that case, the ISV is responsible for the deployment, maintenance, scaling and security of the service - as well as billing of AI resources to customers.
 
-Major differences between the Business Central AI Dev Tools subscription and bring-your-own
+## Differences between toolkit ai resources and your own subscription
+By using the developer toolkit, partners can easily get access to AI resources when they extend Copilot in Business Central. While these AI resources are the same as what is being used for base application Copilot features, and are thus the ddefault and recommended approach, partners might have special requirements that require them to use their own or customer owned Azure OpenAI subscription when running the feature in production. Below provides an overview of the major differences between using the AI resources in the toolkit and using your own Azure OpenAI subscription and model deployment. 
+<br><br>
 
+|Area|Toolkit AI resources|Using your own subscription|
+   |-|-|-|
+   |Deployemnt|Microsoft manages the AI resources. <br><br>We ask you to have an active Azure OpenAI subscription for sign-up, but no model. | You must handle deploying models, keep them up to date, set up Azure subscriptions, calculate billing, split billing across customers that share the same subscription, manage spending limits, provide usage statistics, take care of geography and data residency, etc. <br><br>You are charged for deployed models even if they are not used|
+   |Models|Production-ready models available (today GPT4o and GPT4o mini, more in the future). <br><br> Get notified via dev telemetry when new models are coming, and old models are obsoleted. <br><br>Embeddings not yet available|All Azure OpenAI models available. <br><br>Follow Azure OpenAI model deprecation timelines. <br><br>Embeddings and fine tuning available depending on your model|
+   |Responsible AI|Azure OpenAI content filters (pre-defined by the Business Central team). <br><br>Microsoft additions to system prompts, same as first party|Azure OpenAI content filters. <br><br>Microsoft additions to system prompts, same as first party, in Saas; OnPrem you need to write your own|
+   |Environments|SaaS only|Can be used in SaaS, as well as for testing in OnPrem and containers|
+   |Billing|You charge the customer for your IP, Microsoft charges the customer when they use AI|-|
 
-## Bringing your own subscription for development
+## Use your own subscription for development
 The Business Central AI Dev Tools subscription can only be used in customer production environments. Thus it is recommended that ISVs create and use their own Azure OpenAI subscription(s) as part of non-customer usage, e.g., when prototyping, developing, testing and supporting AI capabilities. 
 
 > [!NOTE]  
