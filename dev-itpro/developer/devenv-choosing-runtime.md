@@ -2,7 +2,7 @@
 title: Choose runtime version in AL
 description: How to choose runtime in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 09/04/2024
+ms.date: 03/05/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -12,7 +12,7 @@ ms.reviewer: solsen
 
 The runtime version determines the capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)]. The runtime version can be specified in the `app.json` file for a project. It's expressed with the following syntax, for example: `"runtime": "12.0"`. Specifying the runtime version is mostly interesting for scenarios where you develop for on-premises or a mix of on-premises and SaaS. For SaaS only development, you'll most likely be interested in using the current runtime. If the runtime setting isn't specified, the compiler detects the runtime that matches the server.
 
-The runtime version specified in the `app.json` file determines which runtime the project is targeting. An extension can be published to a server with the same or a later runtime version as the runtime version specified in the `app.json` file of the extension. In an absense of runtime version specified the compiler will default to the latest major available version.
+The runtime version specified in the `app.json` file determines which runtime the project is targeting. An extension can be published to a server with the same or a later runtime version as the runtime version specified in the `app.json` file of the extension. In the absence of a specified runtime version, the compiler defaults to the latest major available version.
 
 ## Currently available runtime versions
 
