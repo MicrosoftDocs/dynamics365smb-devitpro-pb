@@ -9,7 +9,7 @@ ms.date: 02/26/2025
 ms.author: jobulsin
 ms.reviewer: jswymer
 ---
-# Manage consumption-based billing
+# Manage consumption-based billing (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
