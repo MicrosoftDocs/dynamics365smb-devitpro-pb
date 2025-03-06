@@ -44,6 +44,14 @@ To complete this task, you need to be an internal admin with a role that grants 
 
    ![Screenshot showing the Linked Power Platform setting on the environment in the Business Central admin center](../developer/media/admin/environment-linked-power-platform.png)
 
+   > [!NOTE]
+   > Only Power Platforms meeting the following conditions are available to link:
+   >
+   > - In the same Azure Geo
+   > - Same type (Production or Sandbox)
+   > - Not linked to another environment already
+
+
 1. In the **Link** pane, select the Power Platform environment, and then select **Link**.
 
 ### Unlink environments
