@@ -6,7 +6,7 @@ ms.custom: bap-template
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
-ms.date: 01/18/2024
+ms.date: 01/28/2025
 ---
 
 # Troubleshooting report errors
@@ -17,7 +17,7 @@ If reports fail to generate or take too long time to generate, you might need to
 
 As described in the [Report Object](devenv-report-object.md) article, a report has code for its dataset, typically a layout used for rendering a document (Excel, Word, or PDF) and a request page. When the report runs, your AL code might call methods on the report object (static or on the report instance) and/or run code in triggers/event subscribers on report events.
 
-A report in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can fail in either of these phases:
+A report in [!INCLUDE[prod_short](includes/prod_short.md)] can fail in either of these phases:
 
 - In the request page
 - When generating the report dataset
@@ -26,12 +26,19 @@ A report in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can fail
 
 ## Report limits
 
-The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. Examples of limits are: 
+The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits to protect the stability of the system from a single report consuming too many resources. Examples of limits are:
+
 - The maximum number of rows that can be processed in a report.
 - The maximum number of documents that can be merged in a report using a Word layout.
 - The maximum execution time that it can take to generate a report.
 
-For more information on report limits, see [Report limits](devenv-report-object.md#report-limits)
+Learn more in [Report limits](devenv-report-object.md#report-limits).
+
+## Fonts don't show in the PDF/print
+
+If a report renders correctly with fonts in an on-premises environment or a local sandbox but renders without the font in [!INCLUDE[prod_short](includes/prod_short.md)] online, the layout might use an unsupported font.
+
+Learn more in [Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts?toc=/dynamics365/business-central/dev-itpro/toc.json).
 
 ## Troubleshooting report datasets and layouts
 
@@ -39,7 +46,7 @@ If a report layout isn't working as expected, you might need to investigate whet
 
 ### Troubleshooting RDL report layouts
 
-When you're developing and debugging an RDL report layout, it can be useful to get a copy of the report dataset in the XML format used by the RDL engine. 
+When you're developing and debugging an RDL report layout, it can be useful to get a copy of the report dataset in the XML format used by the RDL engine.
 
 [!INCLUDE [send-report-xml](../developer/includes/send-report-xml.md)]
 
@@ -51,8 +58,6 @@ When you're developing and debugging an Excel/Word report layout, it can be usef
 
 
 If the user sees this error message when running a report with a Word layout: `You cannot run the report because the {0} layout contains section breaks that conflict with the sections in the report. Remove the section breaks from the report layout, and then run the report.` then see this section to learn more: [Using sections in a Word layout](./devenv-howto-report-layout.md#using-sections-in-a-word-layout)
-
-
 
 ## Troubleshooting report AL code
 
@@ -69,11 +74,11 @@ In the paragraphs that follow, you can read more about report error telemetry an
 
 [!INCLUDE[report_telemetry_intro](../includes/include-report-telemetry-intro.md)]
 
-When you run a report, either from the UI, in a background session, or from a web service call, it might fail. The failure can either be in the AL code of the report or in the layout. When a report fails to generate, you get an RT0006 event in telemetry and the `result` column in the `customDimensions` includes the title of the exception that was thrown by the service or the AL code. 
+When you run a report, either from the UI, in a background session, or from a web service call, it might fail. The failure can either be in the AL code of the report or in the layout. When a report fails to generate, you get an RT0006 event in telemetry and the `result` column in the `customDimensions` includes the title of the exception thrown by the service or the AL code. 
 
 [!INCLUDE[telemetry_error_kql](../includes/include-report-telemetry-error-kql.md)]
 
-For more information, see [Report telemetry](../administration/telemetry-reports-trace.md).
+Learn more in [Report telemetry](../administration/telemetry-reports-trace.md).
 
 ## Reporting exceptions
 
@@ -93,7 +98,7 @@ The different exceptions in the table are grouped by the following severities:
 
 [!INCLUDE[report_performance](../includes/include-report-performance.md)]
 
-For more information, see [Report performance](devenv-report-performance.md).
+Learn more in [Report performance](devenv-report-performance.md).
 
 ## Related information
 

@@ -19,6 +19,7 @@ From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], 
 - You can only request a database export if the customer has a paid Business Central subscription.
 - You must have explicit permission to export databases. For more information, see the [Users who can export databases](#users-who-can-export-databases) section.
 - You can't export your database to an Azure premium storage account. The steps in this article are only supported on Azure standard storage accounts.
+- You can export the database of an environment that is encrypted using a [customer-managed encryption key](../security/security-online.md#customer-managed-encryption-key), but the .bacpac file created in the storage account will be encrypted using the [encryption key applied to the storage account](/azure/storage/common/customer-managed-keys-overview) rather than the encryption key applied to the environment.
 
 > [!NOTE]
 > For each environment, you can export the database a maximum of 10 times per month. You can see the number of exports still remaining for the current month in the **Create Database Export** pane when creating the export file.

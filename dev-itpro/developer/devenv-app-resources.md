@@ -61,7 +61,7 @@ var
     resourceStream: Instream;
     content: Text;
 begin
-    NavApp.GetResource('Templates/Template1.txt', content, TextEncoding::UTF8);
+    NavApp.GetResource('Templates/Template1.txt', resourceStream, TextEncoding::UTF8);
     resourceStream.Read(content);
 end;
 ```

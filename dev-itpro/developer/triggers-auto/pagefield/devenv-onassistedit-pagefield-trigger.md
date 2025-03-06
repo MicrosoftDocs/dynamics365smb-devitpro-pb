@@ -34,13 +34,12 @@ end;
 
 ## Remarks
 
-The [AssistEdit Property](../../properties/devenv-assistedit-property.md) must be set to **True** to enable the assist-edit capabilities.
+The [AssistEdit Property](../../properties/devenv-assistedit-property.md) must be set to **true** to enable the assist-edit capabilities.
 
-If there is an error in the trigger code, then the page is closed.  
+If there's an error in the trigger code, then the page is closed. You can use this trigger to write to the database.  
 
-You can use this trigger to write to the database.  
+## Related information
 
-## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAssistEdit (Page Field Extension) Trigger](../pagefieldextension/devenv-onassistedit-pagefieldextension-trigger.md)
