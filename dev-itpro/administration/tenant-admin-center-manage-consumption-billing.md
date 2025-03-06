@@ -17,14 +17,14 @@ This article explains how to set up a Business Central environment for billing C
 
 > [!IMPORTANT]
 >
-> - This is a preview feature that's available with version 26.0 sandbox environments in Australia (AU), Canada (CA - English only), Great Britain (GB),New Zealand (NZ), and United States (US).
-> Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
+> - This is a preview feature that's available with version 26.0 sandbox environments in Great Britain (GB) and United States (US).
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Overview
 
-Selected Copilot and agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use consumption-based billing, charging per use. These capabilities use Microsoft Copilot Studio messages for AI interactions and tasks, like retrieving information and responding to prompts. *Messages* are the billing units that measure usage. The number of messages per event depends on its complexity. Learn more about messages in [Message scenarios](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
+Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)] use consumption-based billing, charging per use. These capabilities use Microsoft Copilot Studio messages for AI interactions and tasks, like retrieving information and responding to prompts. *Messages* are the billing units that measure usage. The number of messages per agent task depends on its complexity. Learn more about messages in [Message scenarios](/microsoft-copilot-studio/requirements-messages-management#message-scenarios).
 
-Learn more about billing and rates in [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130). <!--[Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).-->
+Learn more about billing in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing). <!--[Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130)-->
 
 ## Set up billing model
 
@@ -39,7 +39,7 @@ Both models require that you link your Business Central environment to a Power P
 
 ### Set up prepaid capacity
 
-Complete these tasks to set up the Business Central environment for prepaid capacity.
+Complete these tasks to set up the Business Central environment for prepaid capacity. 
 
 1. Purchase a Copilot message pack subscription using the Microsoft 365 admin center (customer) or Partner Center (reseller).
 
@@ -55,16 +55,16 @@ Complete these tasks to set up the Business Central environment for prepaid capa
 
 ### Set up pay-as-you-go
 
-Complete these tasks to set up the Business Central environment for pay-as-you-go.
+Complete these tasks to set up the Business Central environment for pay-as-you-go. 
 
 1. Set up pay-as-you-go on the Power Platform tenant (reseller):
 
-   To set up pay-as-you-go billing, you first need an active Azure subscription. Then, you link the subscription to your Power Platform environment using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/).
+   As a customer, contact your reseller. As a reseller, set up an Azure subscription for your customer and link it to their Power Platform environment using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or [Power Apps](https://make.powerapps.com/).
 
    Learn more in [Set up pay-as-you-go](/power-platform/admin/pay-as-you-go-set-up).
 1. Link the Business Central environment to the Power Platform environment (internal admin).
 
-   Learn more in [Linked Power Platform environments](tenant-admin-center-environments.md#linked-power-platform-environment).
+   As a reseller, contact the customer's internal admin. As an internal admin, use the Business Central admin center to link the Business Central environment to the Power Platform environment. Learn more in [Linked Power Platform environments](tenant-admin-center-environments.md#linked-power-platform-environment).
 
 ## Manage capacity and usage
 

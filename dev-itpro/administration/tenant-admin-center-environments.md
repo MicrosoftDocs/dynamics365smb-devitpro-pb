@@ -51,7 +51,6 @@ To complete this task, you need to be an internal admin with a role that grants 
    > - Same type (Production or Sandbox)
    > - Not linked to another environment already
 
-
 1. In the **Link** pane, select the Power Platform environment, and then select **Link**.
 
 ### Unlink environments
