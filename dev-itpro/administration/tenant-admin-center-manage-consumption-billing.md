@@ -28,8 +28,8 @@ Learn more about billing in [Copilot Studio licensing](/microsoft-copilot-studio
 
 ### Billable agent capabilities
 
-- Sales Order Agent
-- D
+- [Sales Order Agent](/dynamics365/business-central/sales-order-agent)
+- [AI features built with Development Tools for Copilot for Business Central](/dynamics365/business-central/dev-itpro/developer/ai-integration-landing-page).
 
 ## Set up billing model
 
