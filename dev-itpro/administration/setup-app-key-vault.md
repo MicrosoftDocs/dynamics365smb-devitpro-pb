@@ -90,7 +90,7 @@ Perhaps, if your key vault is using Azure Role-Based Access Control then the ste
 5. Select Members: Go to the Members tab, select **User, group, or service principal**, then click on **+ Select members**. In the pane on the right, search for either the application (client) ID 7e97dcfb-bcdd-426e-8f0a-96439602627a or the display name Dynamics 365 Business Central ISV key vault Reader.
 ## Introduce the special Azure key vault secret
 
-Once your key vault is created, there are few steps that you should perform. Feel free to skip the first couple of them if you're just linking new App to an existing Azure key vault.
+Once your key vault is created, there are few steps that you should perform. Feel free to skip the first couple of them if you're just linking new app to an existing Azure key vault.
 
 1. Create **AllowedBusinessCentralAppIds** secret in your key vault. You can learn how to create a secret following this [guide](/azure/key-vault/secrets/quick-create-portal).
 2. Add your AppId or AppIds as content of the secret. If you're adding multiple appIds separate them by comma or semicolumn.
