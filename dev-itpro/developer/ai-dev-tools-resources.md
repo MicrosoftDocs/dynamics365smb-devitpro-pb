@@ -29,11 +29,12 @@ This allows customers to:
 * Track AI consumption at a granular level, per ISV solution and AI capability.
 * Receive a consolidated invoice for AI consumption, expressed through a generic metric rather than LLM tokens.
  
-Note: It is important to note that this new AI consumption billing mechanism is not intended to replace the existing AppSource monetization pathway for Business Central apps. Instead, it serves as an additional option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their 
+> [!NOTE]  
+> It is important to note that this new AI consumption billing mechanism is not intended to replace the existing AppSource monetization pathway for Business Central apps. Instead, it serves as an additional option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their 
 IP.
 
 ## Bringing your own subscription to customers
-Fo the vast majority of ISVs, the default Business Central AI Dev Tools subscription will be enough, However, if you have special needs that are not fulfilled in the Business Central AI Dev Tools subscription, such as specific models incl fine-tuned ones, you can bring your own subscription (BYO) to customers. It that case, the ISV is responsible for the deployment, maintenance, scaling and security of the service - as well as billing of AI resources to customers.
+For the vast majority of ISVs, the default Business Central AI Dev Tools subscription will be enough, However, if you have special needs that are not fulfilled in the Business Central AI Dev Tools subscription, such as specific models incl fine-tuned ones, you can bring your own subscription (BYO) to customers. It that case, the ISV is responsible for the deployment, maintenance, scaling and security of the service - as well as billing of AI resources to customers.
 
 Major differences between the Business Central AI Dev Tools subscription and bring-your-own
 
@@ -41,7 +42,8 @@ Major differences between the Business Central AI Dev Tools subscription and bri
 ## Bringing your own subscription for development
 The Business Central AI Dev Tools subscription can only be used in customer production environments. Thus it is recommended that ISVs create and use their own Azure OpenAI subscription(s) as part of non-customer usage, e.g., when prototyping, developing, testing and supporting AI capabilities. 
 
-Note: To use the Business Central AI Dev Tools subscription in an app, the ISV must provide information about their own Azure OpenAI subscription for registration purposes.
+> [!NOTE]  
+> To use the Business Central AI Dev Tools subscription in an app, the ISV must provide information about their own Azure OpenAI subscription for registration purposes.
 
 The Business Central AI Dev Tools easily allows conditionally branching on the Azure OpenAI subscription used, e.g., using the Business Central AI Dev Tools subscription when running in customer environments and the ISVs own for the rest.
 
