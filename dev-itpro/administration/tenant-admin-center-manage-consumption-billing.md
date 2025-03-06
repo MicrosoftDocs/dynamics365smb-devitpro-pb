@@ -11,7 +11,14 @@ ms.reviewer: jswymer
 ---
 # Manage consumption-based billing
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 This article explains how to set up a Business Central environment for billing Copilot and agent capabilities.
+
+> [!IMPORTANT]
+>
+> - This is a preview feature that's available with version 26.0 sandbox environments in Australia (AU), Canada (CA - English only), Great Britain (GB),New Zealand (NZ), and United States (US).
+> Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Overview
 
