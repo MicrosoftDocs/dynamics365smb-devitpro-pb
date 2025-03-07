@@ -74,7 +74,7 @@ All error information is stored in the following properties.
 | details | JSON structure with more information, such as stack traces. |
 
 
-## Sample KQL code (client add-in exceptions)
+## Sample KQL code (control add-in exceptions)
 
 This KQL code can help you get started analyzing client add-in exceptions:
 
