@@ -21,9 +21,9 @@ Use the data to gather statistics about exceptions in client add-ins for trouble
 > In [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], telemetry about client add-in exceptions is logged to the **exceptions** table and not the **traces** table like other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] traces. This also means that you can use the built-in pages in the **Failures** page of the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for troubleshooting. For more information, see [Failures and Performance views](/azure/azure-monitor/app/failures-and-performance-views?tabs=failures-view).
 
 
-## Client action invoked
+## Exception raised inside a control add-in
 
-Occurs when an action on a page in the client was invoked.  
+Occurs when an exception was raised inside a control add-in.
 
 ### General dimensions
 
