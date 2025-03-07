@@ -79,10 +79,26 @@ Learn more in [Get Started with AL](../developer/devenv-get-started.md).
 
 The following table shows the minimum system requirements for [!INCLUDE[server](../developer/includes/server.md)].  
 
+<!-- Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2. 
+
+From version 25, Windows 10 will only support Version 22H2. 
+
+Windows 10, version 22H2 is the last feature update released for Windows 10 and will be serviced with monthly updates through October 14, 2025 after which it is no longer supported. So, we need to remove this for 2026w2.
+
+
+For Windows 11, https://learn.microsoft.com/en-gb/lifecycle/faq/windows#what-is-the-servicing-timeline-for-a-version--feature-update--of-windows-11-
+
+Windows 11 Enterprise, or Education: 36 months from release date
+Windows 11 Pro, or Education: 24 months from release date
+
+2025w1 <-> 22H1 (36 months)
+2025w1 <-> 23H1 (24 months)
+-->
+
 |Specification|Requirement|  
 |-----|-----|  
-|Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education \(64-bit edition, version 22H2 and later.\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition, versions 22H2\)</li><li>Windows Server 2025 (Datacenter, Standard)</li><li>Windows Server 2022 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).<!-- Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2. In version 25, Windows 10 will only support Version 22H2 -->|
-|Hardware resources|<ul><li>Hard disk space: 2 GB</li><li>Memory:<br /> 8 GB for running application only<br />16 GB for publishing small extensions (<1000 objects) to server<br />32-64 GB for publishing large extensions (>1000 objects) to server</li>**Note** The memory for publishing extensions is recommended to ensure extensions publish in a reasonable amount of time. Publishing extensions with less memory is possible but it takes longer.</ul>|  
+|Supported operating systems|<ul><li>Windows 11 Enterprise, or Education \(64-bit edition, version 22H1 and later.\)</li><li>Windows 11 Pro \(64-bit edition, version 23H1 and later.\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition, versions 22H2\)</li><li>Windows Server 2025 (Datacenter, Standard)</li><li>Windows Server 2022 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
+|Hardware resources|<ul><li>Hard disk space: 100 GB</li><li>Memory:<br /> 16 GB for running application only<br />16 GB for publishing small extensions (<1000 objects) to server<br />32-64 GB for publishing large extensions (>1000 objects) to server</li>**Note** The memory for publishing extensions is recommended to ensure extensions publish in a reasonable amount of time. Publishing extensions with less memory is possible but it takes longer.</ul>|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Foundation.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, refer to [Microsoft Dynamics 365 for Sales Integration Requirements](#CRM).|  
 |Additional software|<ul><li>Microsoft .NET 8.0</li><li>Microsoft .NET Framework 4.8 (required for report rendering and [!INCLUDE[adminshell](../developer/includes/adminshell.md)])</li></ul>.|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>Microsoft .NET Windows Server Hosting 6.0.15</li><li>Microsoft .NET 8.0</li><li>Microsoft .NET Framework 4.8</li><li>Windows Identity Foundation*.</li><li>Report Builder for SQL Server 2019.<br><br> If Report Builder for SQL Server 2016 is already installed, it will be updated to Report Builder for SQL Server 2019.</li></ul></li></ul>|  
@@ -90,6 +106,8 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 \* Starting with update 18.1, Windows Identity Foundation is added to the product by Nuget. It's not installed by Setup.  
 
 ## <a name="WebServer"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web server components
+
+<!-- For operating systems, see note above for the NST -->
 
 |Specification|Requirement|  
 |----|----|  
@@ -102,10 +120,12 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 
 The following table shows the minimum system requirements for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database components.  
 
+<!-- Compat level 150 (SQL Server 2019) has Mainstream End Date on Feb 28, 2025 (so we removed this compat level for 2025w1) -->
+
 |Specification|Requirement|  
 |----|-----|  
 |Hardware resources|Learn more at [Hardware and Software Requirements for Installing SQL Server](https://go.microsoft.com/fwlink/?LinkId=622999). From this page, you can also access requirements for other versions of SQL Server.|  
-|Database|<ul><li>Business Central supports database compatibility level 150 and 160 on SQL Server, Azure SQL Database, and Azure SQL Managed Instance. Learn more about  SQL Server Database compatibility levels at [ALTER DATABASE (Transact-SQL) Compatibility Level](/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-ver15&preserve-view=true).</li><li>If you use nonclustered column store (NCCI) indexes and deploy to Azure SQL Database, then the performance tier must be S3 or higher.</li><li>The **Full-text and Semantic Extractions for Search** feature is installed on the SQL Server instance.<!-- Compat level 150 (SQL Server 2019)  has Mainstream End Date on Feb 28, 2025 (so need to remove this compat level for 2025w1)-->|  
+|Database|<ul><li>Business Central supports database compatibility level 160 on SQL Server, Azure SQL Database, and Azure SQL Managed Instance. Learn more about  SQL Server Database compatibility levels at [ALTER DATABASE (Transact-SQL) Compatibility Level](/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-ver15&preserve-view=true).</li><li>If you use nonclustered column store (NCCI) indexes and deploy to Azure SQL Database, then the performance tier must be S3 or higher.</li><li>The **Full-text and Semantic Extractions for Search** feature is installed on the SQL Server instance.|  
 |Service Packs and Cumulative Updates| Unless explicitly stated, all released Service Packs and Cumulative Updates of the above Microsoft SQL Server versions are supported. it's recommended to always be on the latest released Service Pack and Cumulative Update.|
 |Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>SQL Server 2019 Express \(64-bit edition\) with **Full-text and Semantic Extractions for Search** feature.<br>If the operating system on the target computer doesn't support SQL Server 2019 Express, Setup displays a pre-requisite warning. In this case, you should exit Setup. Then, update the operating system on the computer to one that does support SQL Server 2019 Express and run Setup again.</li><li>Report Builder for SQL Server 2019.<br><br> If Report Builder for SQL Server 2016 is already installed, it will be updated to Report Builder for SQL Server 2019.</li></ul>|  
 
