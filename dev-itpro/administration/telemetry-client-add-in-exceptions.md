@@ -13,9 +13,9 @@ ms.reviewer: jswymer
 
 [!INCLUDE[prod_short](../developer/includes/introduced_in_2025rw1.md)]
 
-Client add-in exception telemetry gathers data about exceptions thrown in client add-ins. Each event tells you the type of exception, in which add-in it was triggered, information about the user's environment, and more.
+Client control add-in exception telemetry gathers data about exceptions thrown in control add-ins. Each event tells you the type of exception, in which add-in it was triggered, information about the user's environment, and more.
 
-Use the data to gather statistics about exceptions in client add-ins for troubleshooting and error mitigation.
+Use the data to gather statistics about exceptions in control add-ins for troubleshooting and error mitigation.
 
 > [!NOTE]
 > In [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], telemetry about client add-in exceptions is logged to the **exceptions** table and not the **traces** table like other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] traces. This also means that you can use the built-in pages in the **Failures** page of the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for troubleshooting. For more information, see [Failures and Performance views](/azure/azure-monitor/app/failures-and-performance-views?tabs=failures-view).
@@ -127,5 +127,6 @@ exceptions
 
 ## Related information
 
+[Control add-in object](../developer/devenv-control-addin-object.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

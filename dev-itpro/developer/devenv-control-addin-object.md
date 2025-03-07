@@ -178,8 +178,16 @@ $.ajax({
 });
 ```
 
+## Analyzing client control add-in exception telemetry
+
+If you enable telemetry, you can gather data about exceptions thrown in control add-ins. Each event tells you the type of exception, in which add-in it was triggered, information about the user's environment, and more.
+
+To learn more, go to [Analyzing client control add-in exception telemetry](../administration/telemetry-client-add-in-exceptions.md).
+
+
 ## Related information
 
+[Analyzing client control add-in exception telemetry](../administration/telemetry-client-add-in-exceptions.md)  
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions](devenv-dev-overview.md)  
 [Asynchronous considerations for control add-ins](devenv-control-addin-asynchronous-considerations.md)  
