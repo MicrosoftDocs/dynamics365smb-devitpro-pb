@@ -30,7 +30,7 @@ The following table explains custom dimensions that are common to all financial 
 |---------|-----|
 |aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |alReportDefinitionCode | Specifies the report definition code for the financial report. |
-|alRowDefinitionCode | Specifies the ros definition code for the financial report. |
+|alRowDefinitionCode | Specifies the row definition code for the financial report. |
 |alColumnDefinitionCode | Specifies the column definition code for the financial report. |
 |companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] |
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
