@@ -11,7 +11,9 @@ ms.author: solsen
 
 # HttpServerCertificateValidation feature key
 
-The `HttpServerCertificateValidation` feature key enabled by default, which means that validation is enabled. As you update your AL code, you can disable validation by using the  feature key to ensure not to break customers. 
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+
+The `HttpServerCertificateValidation` feature key is used to control the server certificate validation for HTTP requests in [!INCLUDE[prod_short](includes/prod_short.md)]. The feature key enabled by default, which means that validation is enabled. As you update your AL code, you can disable validation by using the  feature key to ensure not to break customers.
 
 The `HttpServerCertificateValidation` feature key will be removed in [!INCLUDE [prod_short](includes/prod_short.md)] version 27.0, when the server certificate validation will be enforced. At that point, the only way to disable it is through the [UseServerCertificateValidation](properties/devenv-useservercertificatevalidation-property.md) property.
 
