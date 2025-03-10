@@ -1,0 +1,20 @@
+---
+title: HttpServerCertificateValidation feature key
+description: Learn about the HttpServerCertificateValidation feature key.
+ms.custom: bap-template
+ms.date: 03/10/2025
+ms.reviewer: solsen
+ms.topic: conceptual
+author: SusanneWindfeldPedersen
+ms.author: solsen
+---
+
+# HttpServerCertificateValidation feature key
+
+The `HttpServerCertificateValidation` feature key enabled by default, which means that validation is enabled. As you update your AL code, you can disable validation by using the  feature key to ensure not to break customers. 
+
+The `HttpServerCertificateValidation` feature key will be removed in [!INCLUDE [prod_short](includes/prod_short.md)] version 27.0, when the server certificate validation will be enforced. At that point, the only way to disable it is through the [UseServerCertificateValidation](properties/devenv-useservercertificatevalidation-property.md) property.
+
+## Related information
+
+[HttpClient data type](httpclient-data-type.md)
