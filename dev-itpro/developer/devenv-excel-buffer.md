@@ -39,20 +39,21 @@ begin
 
 ## Add data 
 
-You can insert data directly into the Excel buffer or use built-in methods that can help you implement different data manipulation scenarios.
+You can insert data directly into the Excel Buffer or use built-in methods that can help you implement different data manipulation scenarios.
 
 ### Add data to a cell in the current worksheet
 
-If you want to read or insert into Excel, for example, cell *C4* you simply read/create a record in the Excel buffer with Row No.=4, and **Column No.**=3 and then read or assign the value to *Cell Value as Text*. 
+If you want to read or insert into Excel, for example, cell *C4* you simply read/create a record in the Excel Buffer with `Row No.=4`, and `Column No.=3`, and then read or assign the value to *Cell Value as Text*. 
 
-You can also call this method that does it all for you:
+You can also call the following method that does it all for you:
+
 ```AL
 procedure EnterCell(var ExcelBuffer: Record "Excel Buffer"; RowNo: Integer; ColumnNo: Integer; Value: Variant; IsBold: Boolean; IsItalics: Boolean; IsUnderline: Boolean)
 ```
 
 ### Add a new row to the current worksheet
 
-To add a new row to the current worksheet in the Excel buffer, you can use the *NewRow* method followed by calls to the *AddColumn* method to add cells in the row. This use of the *NewRow* and *AddColumn* methods are typically used to fill in data to Excel while iterating over some table data.
+To add a new row to the current worksheet in the Excel Buffer, you can use the `NewRow` method followed by calls to the `AddColumn` method to add cells in the row. This use of the `NewRow` and `AddColumn` methods are typically used to fill in data to Excel while iterating over some table data.
 
 ```AL
 var
@@ -65,11 +66,11 @@ begin
     TempExcelBuffer.AddColumn('myData 2', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
 ```
 
-The *AddColumn* has many parameters for controlling things such as appearance (bold face, italics, or underline), number format, or data type.
+The `AddColumn` method has many parameters for controlling things such as appearance (bold face, italics, or underline), number format, or data type.
 
 ## Write the Excel workbook as a temporary file 
 
-When you're done writing data to the Excel buffer, you can write it to an Excel workbook.
+When you're done writing data to the Excel Buffer, you can write it to an Excel workbook. The following example illustrates how:
 
 ```AL
 var
@@ -87,11 +88,11 @@ begin
 
 ## Consume the Excel workbook (download to the user or get as a stream)
 
-After writing the Excel buffer to an Excel workbook, the final step is to make it available to the user (or AL code for further processing). 
+After writing the Excel Buffer to an Excel workbook, the final step is to make it available to the user (or AL code for further processing). 
 
 ### Download the Excel workbook to the user 
 
-To download the Excel workbook to the user, call the *OpenExcel* method. 
+To download the Excel workbook to the user, call the `OpenExcel` method as illustrated in the following example. 
 
 ```AL
 var
@@ -109,7 +110,7 @@ begin
 
 ### Stream the Excel workbook to further processing in AL
 
-To stream the Excel workbook to further processing in AL, call the *OpenExcel* method. 
+To stream the Excel workbook to further processing in AL, call the `OpenExcel` method as illustrated in the next example. 
 
 ```AL
 var
@@ -126,7 +127,7 @@ begin
 
 ## Performance impact of using Excel Buffer
 
-When working with an instance of "Excel Buffer", the full object is present in memory. This has both an impact while working with the object at runtime and also when the operating system needs to garbage collect the memory after your code has completed. 
+When working with an instance of Excel Buffer, the full object is present in memory. This has both an impact while working with the object at runtime and also when the operating system needs to garbage collect the memory after your code has completed. 
 
 ## Online vs. on-premises usage
 
