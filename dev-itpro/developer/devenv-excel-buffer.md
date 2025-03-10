@@ -131,7 +131,7 @@ When working with an instance of Excel Buffer, the full object is present in mem
 
 ## Online vs. on-premises usage
 
-Some of the methods on the "Excel Buffer" table might not be available in the online version of [!INCLUDE [prod_short](../includes/prod_short.md)] as they access resources exposed there such as direct access to the file system. These methods are marked with *[Scope('OnPrem')]* in the AL code for the "Excel Buffer" table.
+Some of the methods on the "Excel Buffer" table might not be available in the online version of [!INCLUDE [prod_short](../includes/prod_short.md)] as they access resources exposed there, such as direct access to the file system. These methods are marked with `[Scope('OnPrem')]` in the AL code for the "Excel Buffer" table.
 
 ## Contributors
 
