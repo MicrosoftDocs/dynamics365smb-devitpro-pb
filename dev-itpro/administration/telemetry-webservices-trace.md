@@ -17,7 +17,7 @@ ms.custom: bap-template
 
 Web services telemetry gathers data about SOAP, OData, and REST API requests to the service. It provides information like the request's endpoint, time to complete, HTTP status codes, and more.  
 
-## General dimensions
+## General dimensions (Incoming Web Services Request)
 
 The following table explains the general dimensions included in an incoming **Web Services Call** trace. The table lists the dimensions that are specific to Business Central.
 
@@ -25,7 +25,7 @@ The following table explains the general dimensions included in an incoming **We
 |---------|-----|
 |message|<ul><li>**Web service called (API): {endpoint}**</li><li>**Web service called (ODataV4): {endpoint}**</li><li>**Web service called (ODataV3): {endpoint}**</li><li>**Web service called (SOAP): {endpoint}**</li></ul>|
 |severityLevel|**1**|
-|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)]. This dimension was introduced in Business Central 2024 release wave 1, version 24.2. |
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] <br/><br/>This dimension was introduced in Business Central 2024 release wave 1, version 24.2. |
 
 ### General dimensions (version 16.0 and earlier)
 
@@ -37,7 +37,7 @@ In versions 16.0 and earlier, the general dimensions look like this:
 |message| Before version 16.1:<ul><li>**Received a web service request of type API**</li><li>**Received a web service request of type ODataV4**</li><li>**Received a web service request of type ODataV3**</li><li>**Received a web service request of type SOAP**|
 
 
-## Custom dimensions
+## Custom dimensions (Incoming Web Services Request)
 
 The following table explains the custom dimensions included in a **Web Services Call** telemetry event.
 
@@ -257,7 +257,7 @@ For a full KQL example of all dimensions in web services telemetry, see [Sample 
 
 ## Sample KQL code
 
-This KQL code unfolds all information from the custom dimensions in your web service call telemetry. Use the code sample as a starting point for you analysis and comment out sections for details that you don'tt need.
+This KQL code unfolds all information from the custom dimensions in your web service call telemetry. Use the code sample as a starting point for your analysis and comment out sections for details that you don't need.
 
 ```kql
 // Incoming Web Service Requests
@@ -314,7 +314,71 @@ To make it easier to get started using [!INCLUDE[appinsights](../includes/azure-
 
 If you want to analyze web service call telemetry from the usage of the Microsoft connector (Power BI, Power Apps, ...), then the query 
 [MicrosoftConnectorUsage.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/HelperQueries/MicrosoftConnectorUsage.kql) might be useful.
- 
+
+
+## Deprecated endpoint called: {endpoint}
+
+[!INCLUDE[introduced_in_2025rw1](../includes/introduced_in_2025rw1.md)]
+
+Starting in version 26, it's no longer possible to expose a Microsoft page as a SOAP endpoint. Use the **Deprecated endpoint called** event to identify endpoints where you need to take action.
+
+To learn more, go to [Removed ability to expose a Microsoft page as a SOAP endpoint](../upgrade/deprecated-features-platform.md#soap-on-baseapp-pages).
+
+### General dimensions (Deprecated endpoint called)
+
+The following table explains the general dimensions included in a **Deprecated endpoint called** trace. The table lists the dimensions that are specific to Business Central.
+
+|Dimension|Description or value|
+|---------|-----|
+|message| Deprecated endpoint called: {endpoint} |
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
+### Custom dimensions (Deprecated endpoint called)
+
+The following table explains the custom dimensions included in a **Deprecated endpoint called** telemetry event.
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|alObjectId|Specifies the ID of the AL object that was run by the request.|
+|alObjectName|Specifies the name of the AL object that was run by the request.|
+|alObjectType|Specifies the type of the AL object that was run by the request.|
+|category|Specifies the web service type. Values include: **API**, **ODataV4**, **ODataV3**, and **SOAP**.|
+|companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] | 
+|endpoint|Specifies the endpoint for the request.|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|eventId|**RT0053**|
+|depricationMessage | Example is *SOAP webservice on UI page by Microsoft publisher*.  |
+
+
+### Sample KQL code (Deprecated endpoint called)
+
+This KQL code unfolds all information from the custom dimensions in a Deprecated endpoint called event. Use the code sample as a starting point for your analysis and comment out sections for details that you don't need.
+
+```kql
+// Deprecated endpoint called: {endpoint}
+// available from 26.0
+traces
+| where timestamp > ago(60d) // change as needed
+| where customDimensions has "RT0053"
+| where customDimensions.eventId == "RT0053"
+| project timestamp
+// in which environment did it happen
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+// in which object
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+// endpoint information
+, category = customDimensions.category // API, ODataV3, ODataV4, or SOAP
+, endpoint = customDimensions.endpoint // URI
+// what is the issue?
+, depricationMessage = customDimensions.depricationMessage 
+// example: SOAP webservice on UI page by Microsoft publisher
+```
 
 ## Related information
 
