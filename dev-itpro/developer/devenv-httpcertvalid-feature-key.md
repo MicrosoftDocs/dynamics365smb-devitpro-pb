@@ -17,6 +17,8 @@ The `HttpServerCertificateValidation` feature key is used to control the server 
 
 The `HttpServerCertificateValidation` feature key will be removed in [!INCLUDE [prod_short](includes/prod_short.md)] version 27.0, when the server certificate validation will be enforced. At that point, the only way to disable it is through the [UseServerCertificateValidation](properties/devenv-useservercertificatevalidation-property.md) property.
 
+Learn more in [Analyzing server certificate validation errors with telemetry](../administration/telemetry-webservices-outgoing-certificate-validation-errors.md)
+
 ## Related information
 
 [HttpClient data type](httpclient-data-type.md)  
