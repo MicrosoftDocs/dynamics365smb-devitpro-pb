@@ -10,25 +10,24 @@ ms.reviewer: solsen
 
 # Export data to Excel using Excel Buffer
 
-The Excel Buffer is functionality in AL that supports creating and updating Excel workbooks from AL code. Excel Buffer isn't a native AL datatype such as XMLPort or JsonObject. Instead, it's a temporary table with API methods for manipulating concepts in Excel, such as worksheets, rows, and cells. 
+The Excel Buffer is functionality in AL that supports creating and updating Excel workbooks from AL code. Excel Buffer isn't a native AL datatype such as an XMLPort or a JsonObject. Instead, it's a temporary table with API methods for manipulating concepts in Excel, such as worksheets, rows, and cells.
 
-An entry in an Excel Buffer corresponds to a cell in Excel, and the table is indexed by fields **Row No.** and **Column No.**. 
-
+An entry in the Excel Buffer corresponds to a cell in Excel, and the table is indexed by the fields **Row No.** and **Column No.**. 
 
 ## Overall steps when working with Excel Buffer
 
-When working with Excel Buffer, you typically go through the following steps
+When you work with the Excel Buffer, you typically go through the following steps:
 
-1. (Optionally) initialize the buffer
+1. Initialize the buffer (optional)
 1. Add data
-1. Write the Excel workbook as a temporary file 
+1. Write the Excel workbook as a temporary file
 1. Consume the Excel workbook (download to the user or get as a stream)
 
 In the following sections, you can learn more about each step and also see sample AL code that illustrates it.
 
 ## Initialize the buffer
 
-As an Excel buffer object could potentially be reused in your code, it's considered good practice to start by initializing the buffer. 
+As an Excel buffer object could potentially be reused in your code, it's considered good practice to start by initializing the buffer. This example illustrates how:
 
 ```AL
 var
