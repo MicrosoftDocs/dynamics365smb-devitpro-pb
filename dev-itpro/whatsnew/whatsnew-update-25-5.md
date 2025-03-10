@@ -19,7 +19,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-- TBD
+None 
 
 ## Localization updates
 
@@ -36,6 +36,10 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 New customers automatically get the latest builds of Business Central (25.4). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
 
 ## Good to know
+
+## Sales Order Agent in public preview 
+
+The public preview of the Sales Order Agent is now available in both the United States and the United Kingdom. [Read more on Viva Engage](https://www.yammer.com/dynamicsnavdev/threads/3227700787363840).
 
 ### New installation path started in 25.2
 
