@@ -2,7 +2,7 @@
 title: Update 25.5 for Microsoft Dynamics 365 Business Central 2024 release wave 2
 description: Get an overview of new and changed capabilities in the 25.5 update of Business Central online, which is part of 2024 release wave 2.
 ms.author: jswymer
-ms.date: 03/05/2025
+ms.date: 03/10/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -19,13 +19,11 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-None 
+No changes.
 
 ## Localization updates
 
-|Country|Feature|Description|
-|-|-|-|
-|TBD||
+No updates.
 
 ## Release plan
 
@@ -33,13 +31,14 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 
 ## Upgrade to 25.5
 
-New customers automatically get the latest builds of Business Central (25.4). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
+New customers automatically get the latest builds of Business Central (25.5). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
 
 ## Good to know
 
-## Sales Order Agent in public preview 
+<!--
+## Sales Order Agent available in version 26 public preview
 
-The public preview of the Sales Order Agent is now available in both the United States and the United Kingdom. [Read more on Viva Engage](https://www.yammer.com/dynamicsnavdev/threads/3227700787363840).
+The public preview of the Sales Order Agent is now available in version 26.0 online sandbox environments in the United States and the United Kingdom. [Read more on Viva Engage](https://www.yammer.com/dynamicsnavdev/threads/3227700787363840)-->
 
 ### New installation path started in 25.2
 
@@ -52,14 +51,7 @@ Update 25.5 and future version 25 updates will also use platform number '25.2' a
 
 ### Business Central Launch Event videos on YouTube
 
-The Business Central Launch Event for the 2024 release wave 2 took place on October 18, 2024. This online event aimed to provide information about the new features and enhancements in the 2024 release wave 2 to resellers, partners, ISVs, and consultants. You can find over 40 videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE).
-
-### Upcoming service features
-
-The following Business Central online service features are expected to roll out in February or March 2025:
-
-- [Encrypt data at-rest with customer-managed encryption key](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/encrypt-data-at-rest-customer-managed-encryption-key)
-- [Get list of manageable environments for Microsoft Entra apps](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/get-list-manageable-environments-entra-apps)
+The Business Central Launch Event for the 2024 release wave 2 took place on October 18, 2024. This online event aimed to provide information about the new features and enhancements in the 2024 release wave 2 to resellers, partners, ISVs, and consultants. You can find over 40 videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE)
 
 ### Features becoming mandatory soon
 
