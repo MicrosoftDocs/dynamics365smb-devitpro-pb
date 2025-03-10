@@ -33,13 +33,13 @@ NamespacePrefix = 'bc';
  
 ## Remarks
 
-You can only set the property to a prefix that is declared in the [Namespaces Property](devenv-namespaces-property.md) of the XMLport.  
+You can only set the property to a prefix that is declared in the [Namespaces property](devenv-namespaces-property.md) of the XMLport.  
 
-This property only applies to element node types and will be ignored if it is set in `textattribute` and `fieldattribute` nodes. 
+This property only applies to element node types and will be ignored if it is set in `textattribute` and `fieldattribute` nodes.
 
-For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
+Learn more about using namespaces with XMLports in  [Using namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
 
 ## Related information  
 
-[Get Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Get started with AL](../devenv-get-started.md)  
+[Developing extensions](../devenv-dev-overview.md)  

@@ -37,16 +37,16 @@ In the XML documents exported or imported by the XMLport, the namespaces declara
   
 `<Root xmlns:mybcprefix="mybcnamespace" xmlns="urn:bc:schema:all">`  
   
-To specify a default namespace, set the prefix to `""`. You can also specify a default namespace using the [DefaultNamespace Property](devenv-defaultnamespace-property.md) and setting the [UseDefaultNamespace Property](devenv-usedefaultnamespace-property.md) to **true**. 
+To specify a default namespace, set the prefix to `""`. You can also specify a default namespace using the [DefaultNamespace property](devenv-defaultnamespace-property.md) and setting the [UseDefaultNamespace property](devenv-usedefaultnamespace-property.md) to **true**. 
 
 > [!NOTE]
-> There can only be one default namespace. So if you specify a default namespace in the **Namespaces Property**, you must set the [UseDefaultNamespace Property](devenv-usedefaultnamespace-property.md) to **false**.  
+> There can only be one default namespace. So if you specify a default namespace in the **Namespaces Property**, you must set the [UseDefaultNamespace property](devenv-usedefaultnamespace-property.md) to **false**.  
 
-For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
+Learn more about using namespaces with XMLports in [Using namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
 
 ## Related information
 
 [Properties](devenv-properties.md)  
-[NamespacePrefix Property](devenv-namespaceprefix-property.md)  
-[DefaultNamespace Property](devenv-defaultnamespace-property.md)  
-[UseDefaultNamespace Property](devenv-usedefaultnamespace-property.md)  
+[NamespacePrefix property](devenv-namespaceprefix-property.md)  
+[DefaultNamespace property](devenv-defaultnamespace-property.md)  
+[UseDefaultNamespace property](devenv-usedefaultnamespace-property.md)  
