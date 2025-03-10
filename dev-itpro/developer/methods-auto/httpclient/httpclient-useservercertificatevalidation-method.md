@@ -39,7 +39,21 @@ Specifies whether the client validates the server certificate or not.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+
+## Remarks
+
+This property is enbled by default. It's controlled by a feature key so that you can disable the validation for the whole tenant and roll back to the previous behavior, which is the way it worked in previous versions.
+
+If you want to roll back to the previous behavior, we suggest you do the following:
+
+- Update your AL code to uptake the new `UseServerCertificateValidation`.
+- Disable the validation with the new feature key for now, but be aware that it will be removed in version 27.0.
+
+> [!NOTE]
+> The feature key will be removed in version 27.0. So they have to uptake the new property within version 26. The feature key is introduced to give them 6 months to transition to the new way without causing customer downtime.
+
+## Related information
+
 [HttpClient data type](httpclient-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)
