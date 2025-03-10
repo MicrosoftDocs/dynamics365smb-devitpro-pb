@@ -3,7 +3,7 @@ title: Creating an Excel layout report
 description: Learn how to create a report using an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 02/16/2025
+ms.date: 03/10/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
@@ -48,7 +48,7 @@ Each of the multiple sheets is named #DataItemName, where DataItemName is the na
 
 With data in multiple worksheets, the report layout can now easily include data models defined with the PowerPivot feature in Excel.
 
-Starting in 2025 release wave 1 (runtime 14), the `ExcelLayoutMultipleDataSheets` property is available on individual report layouts in a report object. This lets you override the global property defined on the report object in the layout context. For reports where the global property `ExcelLayoutMultipleDataSheets` wasn't set (interpreted as `false`), you can add Excel layouts that use the `ExcelLayoutMultipleDataSheets` feature without the risk of breaking existing Excel layouts that users added.
+Starting in 2025 release wave 1 (runtime 14), the `ExcelLayoutMultipleDataSheets` property is available on individual report layouts in a report object. This lets you override the global property defined on the report object in the layout context. For reports where the global `ExcelLayoutMultipleDataSheets` property wasn't set (interpreted as `false`), you can add Excel layouts that use the `ExcelLayoutMultipleDataSheets` feature without breaking existing Excel layouts that users added.
 
 ### System Excel sheets
 
