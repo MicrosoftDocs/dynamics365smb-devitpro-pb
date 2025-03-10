@@ -4,13 +4,13 @@ description: Learn about the ExcelBuffer functionality and how to use it to copy
 author: kennieNP
 ms.topic: conceptual
 ms.author: kepontop
-ms.date: 02/24/2023
-ms.reviewer: jswymer
+ms.date: 03/10/2025
+ms.reviewer: solsen
 ---
 
-# Exporting data to Excel using Excel Buffer
+# Export data to Excel using Excel Buffer
 
-The Excel Buffer is functionality in AL that supports creating and updating Excel workbooks from AL code. Excel Buffer is not a native AL datatype such as XMLPort or JsonObject. Instead, it is a temporary table with API methods for manipulating concepts in Excel, such as worksheets, rows, and cells. 
+The Excel Buffer is functionality in AL that supports creating and updating Excel workbooks from AL code. Excel Buffer isn't a native AL datatype such as XMLPort or JsonObject. Instead, it's a temporary table with API methods for manipulating concepts in Excel, such as worksheets, rows, and cells. 
 
 An entry in an Excel Buffer corresponds to a cell in Excel, and the table is indexed by fields **Row No.** and **Column No.**. 
 
@@ -24,11 +24,11 @@ When working with Excel Buffer, you typically go through the following steps
 1. Write the Excel workbook as a temporary file 
 1. Consume the Excel workbook (download to the user or get as a stream)
 
-In the sections below, you can learn more about each step and also see sample AL code that illustrates it.
+In the following sections, you can learn more about each step and also see sample AL code that illustrates it.
 
 ## Initialize the buffer
 
-As an Excel buffer object could potentially be reused in your code, it is considered good practice to start by initializing the buffer. 
+As an Excel buffer object could potentially be reused in your code, it's considered good practice to start by initializing the buffer. 
 
 ```AL
 var
@@ -40,11 +40,11 @@ begin
 
 ## Add data 
 
-You can insert data directy into the Excel buffer or use built-in methods that can help you implement different data manipulation scenarios.
+You can insert data directly into the Excel buffer or use built-in methods that can help you implement different data manipulation scenarios.
 
 ### Add data to a cell in the current worksheet
 
-If you want to read or insert into Excel, e.g. cell *C4* you simply read/create a record in the Excel buffer with **Row No.**=4 and **Column No.**=3 and then read or assign the value to *Cell Value as Text*. 
+If you want to read or insert into Excel, for example, cell *C4* you simply read/create a record in the Excel buffer with Row No.=4, and **Column No.**=3 and then read or assign the value to *Cell Value as Text*. 
 
 You can also call this method that does it all for you:
 ```AL
@@ -66,11 +66,11 @@ begin
     TempExcelBuffer.AddColumn('myData 2', false, '', false, false, false, '', TempExcelBuffer."Cell Type"::Text);
 ```
 
-The *AddColumn* has many parameters for controlling things such as appearence (bold face, italics, or underline), number format, or data type.
+The *AddColumn* has many parameters for controlling things such as appearance (bold face, italics, or underline), number format, or data type.
 
 ## Write the Excel workbook as a temporary file 
 
-When you are done writing data to the Excel buffer, you can write it to an Excel workbook.
+When you're done writing data to the Excel buffer, you can write it to an Excel workbook.
 
 ```AL
 var
