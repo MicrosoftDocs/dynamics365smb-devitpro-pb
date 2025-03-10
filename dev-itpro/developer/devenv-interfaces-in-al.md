@@ -36,7 +36,6 @@ Interfaces in AL can be extended to allow additional changes to interfaces witho
 
 Typing the shortcut `tinterface` creates the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-
 ## Interface example
 
 The following example defines an interface `IAddressProvider`, which has one method `getAddress` with a certain signature. The codeunits `CompanyAddressProvider` and `PrivateAddressProvider` both implement the `IAddressProvider` interface, and each define a different implementation of the `getAddress` method; in this case a simple variation of address value.
@@ -159,7 +158,7 @@ With [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)] you can creat
 
 The [Dictionary](methods-auto/dictionary/dictionary-data-type.md) and [List](methods-auto/list/list-data-type.md) data types offer efficient lookup of key-value pairs and ordered collections, and allow managing collections of data dynamically.
 
-The following example illustrates how to create a Dictionary of interfaces:
+The following example illustrates how to create a [Dictionary](methods-auto/dictionary/dictionary-data-type.md) of interfaces:
 
 ```AL
 codeunit 50120 MyDictionaryCodeunit
@@ -175,7 +174,7 @@ codeunit 50120 MyDictionaryCodeunit
 }
 ```
 
-The following example illustrates how to create a List of interfaces:
+The following example illustrates how to create a [List](methods-auto/list/list-data-type.md) of interfaces:
 
 ```al
 interface IShape
@@ -234,4 +233,6 @@ In the System Application, you can find the complete examples of using a list of
 [Codeunit object](devenv-codeunit-object.md)  
 [Extensible enums](devenv-extensible-enums.md)  
 [Extending interfaces in AL](devenv-interfaces-in-al-extend.md)  
-[Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md)
+[Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md)  
+[Dictionary data type](methods-auto/dictionary/dictionary-data-type.md)  
+[List data type](methods-auto/list/list-data-type.md)  
