@@ -120,16 +120,20 @@ The *ReportRequestValues* table contains metadata from the report request (the r
 
 | Column Key              | Description |
 |----------------------- | ----------- |
-| Tenant Id | Contains the Entra/AAD tenant ID of the environment. |
+| Tenant Entra Id | Contains the Entra/AAD tenant ID of the environment. |
+| Tenant Id | Contains the runtime tenant ID of the environment. |
 | Environment name | The name of the environment. Might be empty for on-premises installations. |
 | Environment type | The environment type (Production or sandbox). Might be empty for on-premises installations. |
 | Company name | The company name that the user was operating in when running the report. |
+| Company display name | The company display name that the user was operating in when running the report. Introduced in version 25.3. |
 | Company Id | The Company ID (GUID). |
 | User name | The user who ran the report. |
-| User Id | The user ID associated to 'User name'. |
-| Date | The data and time of the report invocation. |
-| Language | The application language identified (LCID, Windows language identifier).|
+| Date | The date and time of the report invocation. |
+| Language | The application language identified (LCID, Windows language identifier). |
 | Format Region | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
+| Layout name | The name of the layout being used for the current Excel Workbook. Introduced in version 26.0.|
+| Layout caption | The caption used for the layout being used for the current Excel Workbook. Introduced in version 26.0. |
+| Layout id | The runtime Id for the layout being used for the current Excel Workbook. Introduced in version 26.0. |
 
 ##### ReportRequestPageValues table
 
