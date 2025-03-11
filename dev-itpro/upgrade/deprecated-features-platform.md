@@ -35,7 +35,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension. Until version 29 is released, you can still expose a Microsoft page as a SOAP endpoint, but not by default. If needed, disable **Feature: Disable SOAP web services on Microsoft UI pages** in **Feature Management**.|
+|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension. Until version 29 is released, you can still expose a Microsoft page as a SOAP endpoint, but not by default. If needed, use the **Feature: Disable SOAP web services on Microsoft UI pages** key in **Feature Management** to enable it.|
 
 ### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
 
