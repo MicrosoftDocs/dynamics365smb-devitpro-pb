@@ -80,6 +80,17 @@ Both advanced server configuration options and database scoped configurations ca
   
 If you plan to install the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Demo database and want [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Setup to use an already installed version of SQL Server (and not install SQL Server Express), create a SQL Server instance named **BCDEMO** before you run Setup. Otherwise, Setup installs SQL Server Express automatically, even if there's a valid version of SQL Server already on the computer. If you don't plan to install the Demo database, or if you have no objection to using SQL Server Express, you're free to use the **default instance** and **Instance ID** on the **Instance Configuration** page, or to specify any instance name.  
 
+#### Using high availability setups
+
+[!INCLUDE [introduced_in_2025rw1](../includes/introduced_in_2025rw1.md)]
+
+The SQL Server Multi-Subnet Clustering feature enables faster failover for all Availability Groups (AGs) or Failover Cluster Instances (FCIs) in SQL Server 2012 or later and it significantly reduces failover time for single and multi-subnet Always On topologies.
+
+With the server setting **EnableSqlMultiSubnetFailover** set to true, MultiSubnetFailover is enabled on the connections from the server to the database.
+
+To learn more about Multi-Subnet Clustering, go to [SQL Server Multi-Subnet Clustering (SQL Server)](/sql/sql-server/failover-clusters/windows/sql-server-multi-subnet-clustering-sql-server).
+
+
 ### Database engine service
 
 A separate Windows service runs each SQL Server instance. The following two things are important to configure for these services
