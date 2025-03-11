@@ -49,7 +49,6 @@ The API stack is enabled by default in [!INCLUDE[prod_short](../developer/includ
 
 You can set up a SOAP or OData based web service in the client. You must then publish the web service so that it's available to service requests over the network. 
 
-
 The following steps explain how to create and publish a web service.  
   
 1. Open the client, such as a browser at [https://businesscentral.dynamics.com/?](https://businesscentral.dynamics.com/?).  
@@ -89,18 +88,18 @@ You can verify the availability of that web service by using a browser. Or choos
   
 ## Verify the availability of a web service  
   
-1.  In your browser, enter the relevant URL. The following table illustrates the types of URLs that you can enter. For SOAP web services, use the following format for your URI.  
+1. In your browser, enter the relevant URL. The following table illustrates the types of URLs that you can enter. For SOAP web services, use the following format for your URI.  
   
-    |Web service type|Syntax|Example|  
-    |----------------------|------------|-------------|  
-    |API| See [Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online](../api-reference/v2.0/endpoints-apis-for-dynamics.md)| 
-    |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\('*CompanyName*'\)|https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/ODataV4/Company\('CRONUS International Ltd.'\)|  
-    |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\(Id=guid\) | https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/ODataV4/Company\(Id=a4bc6898-4591-4cf7-9990-293a0a0d66b7\)|  
-    |SOAP|https://*Server*:*SOAPWebServicePort*/*ServerInstance*/WS/*CompanyName*/services/|https://localhost:7047/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/WS/CRONUS International Ltd./services/| 
+   |Web service type|Syntax|Example|  
+   |----------------------|------------|-------------|  
+   |API| See [Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online](../api-reference/v2.0/endpoints-apis-for-dynamics.md)| 
+   |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\('*CompanyName*'\)|https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/ODataV4/Company\('CRONUS International Ltd.'\)|  
+   |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\(Id=guid\) | https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/ODataV4/Company\(Id=a4bc6898-4591-4cf7-9990-293a0a0d66b7\)|  
+   |SOAP|https://*Server*:*SOAPWebServicePort*/*ServerInstance*/WS/*CompanyName*/services/|https://localhost:7047/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/WS/CRONUS International Ltd./services/|
 
-     The company name is case-sensitive. For OData, it is recommended to use the *Company(Id=guid)* syntax as the company ID is immutable, whereas the company name can be changed by an administrator.
+   The company name is case-sensitive. For OData, it is recommended to use the *Company(Id=guid)* syntax as the company ID is immutable, whereas the company name can be changed by an administrator.
   
-2.  Review the information that is displayed in the browser. Verify that you can see the name of the web service that you've created.  
+1. Review the information that is displayed in the browser. Verify that you can see the name of the web service that you've created.  
   
 When you access a web service, and you want to write data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must specify the company name or company id. You can specify the company as part of the URI as shown in the examples. Or you can specify the company as part of the query parameters. For example, the following URIs point to the same OData web service endpoint and are all valid URIs.  
 
