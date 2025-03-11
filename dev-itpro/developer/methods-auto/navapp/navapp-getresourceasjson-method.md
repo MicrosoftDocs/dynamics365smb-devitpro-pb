@@ -37,7 +37,7 @@ The encoding that will be used by the stream. The default encoding is MSDos.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [NavApp data type](navapp-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)

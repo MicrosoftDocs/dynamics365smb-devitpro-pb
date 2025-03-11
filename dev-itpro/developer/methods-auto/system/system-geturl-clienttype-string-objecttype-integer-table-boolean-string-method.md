@@ -59,7 +59,7 @@ Specifies the page layout to open the page in (Supported List, TallTiles, Tiles,
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [System data type](system-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)

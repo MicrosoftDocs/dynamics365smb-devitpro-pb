@@ -34,7 +34,7 @@ The path of the HTTP request if the request does not have a secret URI, otherwis
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [TestHttpRequestMessage data type](testhttprequestmessage-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)
