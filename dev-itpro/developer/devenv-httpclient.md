@@ -89,6 +89,18 @@ The following example shows how to call an external web service from AL. It also
 
 [!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
 
+### Server-side certificate validation
+
+[!INCLUDE [introduced_in_2025rw1](../includes/introduced_in_2025rw1.md)]
+
+To enhance security of HTTP calls from AL, the AL runtime validates all server certificates used when calling a web service endpoint from the HttpClient datatype. Certificate validation is enabled by default. A server certificate is installed on the endpoint side, it's not the certificate you attach to a request in AL.
+
+If an app or per-tenant extension needs to selectively disable certificate validation, a new property **TODO: add link to property article here** has been added to the HttpClient datatype that allows the AL code to disable server certificate validation for the outgoing web service call.
+
+If you need to debug failing HTTP calls due to server certificates that fail to be validated, telemetry is be emitted in case of certificate validation failures. To learn more, go to **TODO: add link to telemetry article here**
+
+The ability to disable certificate validation is controlled by the feature management key **TODO: add feature key name here** to allow app and per-tenant extension publishers to modify their code. In version 27, certificate validation will be enabled by default without the ability to switch it off.
+
 ### Supported HTTP methods
 
 [!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md )]
