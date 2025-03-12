@@ -1524,6 +1524,7 @@
 #### [Troubleshooting errors on OData/SOAP web services on pages, queries, and codeunits](webservices/web-service-troubleshooting-soap-odata-ui-pages.md)
 #### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
 #### [Creating and interacting with an OData V4 bound action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+#### [Disable SOAP web services on Microsoft UI pages feature key](developer/devenv-disable-soap-microsoft-pages-feature-key.md)
 
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
