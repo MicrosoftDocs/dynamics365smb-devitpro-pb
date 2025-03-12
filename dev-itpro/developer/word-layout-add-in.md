@@ -6,25 +6,21 @@ ms.author: kepontop
 ms.reviewer: jswymer
 ms.topic: conceptual 
 ms.collection: 
-ms.date: 10/01/2024
+ms.date: 03/12/2024
 ms.custom: bap-template
 ---
 # Use the Word add-in for report layouts
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-The Dynamics 365 Business Central Word add-in includes several controls that you can use to change the behavior of Word layouts for document reports. A comment control allows you to add a comment in the layout, which appears in Word while designing the layout but doesn't appear in the rendered report. Other controls let you encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
+The Dynamics 365 [!INCLUDE [prod_short](includes/prod_short.md)] Word add-in includes several controls that you can use to change the behavior of Word layouts for document reports. A comment control allows you to add a comment in the layout, which appears in Word while designing the layout but doesn't appear in the rendered report. Other controls let you encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data.
 
 ## Install the add-in
 
 1. On the **Home** tab, select **Get Add-ins**.
 2. In the **Search** field, enter *Dynamics 365 Business Central Word Add-in*, then select **Add** next to the add-in when it appears.
 
-    The **Business Central (preview)** tab appears in the ribbon.
+    The **Business Central** tab appears in the ribbon.
 
 ## Comment control
 
@@ -34,14 +30,14 @@ Use comments for tasks such as describing difficult parts of the layout or addin
 
 There are two ways to insert a comment:
 
-- Add your content as text and tables first, select the content and then **Business Central (preview)** > **Insert layout comment** to add the comment control. Clicking anywhere within the comment shows the **Hidden Comment** border.
-- Place your cursor where you want the comment, select **Business Central (preview)** > **Insert layout comment** to insert a comment control with the text `This text will not be printed in the final report`. Select inside the control and then  the comment.
+- Add your content as text and tables first, select the content and then **Business Central** > **Insert layout comment** to add the comment control. Clicking anywhere within the comment shows the **Hidden Comment** border.
+- Place your cursor where you want the comment, select **Business Central** > **Insert layout comment** to insert a comment control with the text `This text will not be printed in the final report`. Select inside the control and then  the comment.
 
 ### Exercise: Add a versioning table in a layout
 
-1. In Business Central, export a Word layout for a report:
+1. In [!INCLUDE [prod_short](includes/prod_short.md)], export a Word layout for a report:
 
-   1. Sign in to Business Central.
+   1. Sign in to [!INCLUDE [prod_short](includes/prod_short.md)].
    1. Search for and open the **Report Layouts** page.
    1. Choose a layout in the list that has the **Type** equal to **Word**.
    1. Select **Export Layout**.
@@ -53,11 +49,11 @@ There are two ways to insert a comment:
       |-|-|-|
       |This layout uses a comment| 1.0 | \<todays date\> |
 
-   1. Select the entire table, and then select the **Business Central (preview)** > **Insert layout comment**.
+   1. Select the entire table, and then select the **Business Central** > **Insert layout comment**.
 
    When you place your cursor somewhere in the table, the control displays a **Hidden Comment** label.
 
-1. In Business Central, import and run the layout:
+1. In [!INCLUDE [prod_short](includes/prod_short.md)], import and run the layout:
 
    1. In the **Report Layouts** page, select the report for the new layout, and then select **New**.
    1. In **Add New Layout for a Report** page, fill in the fields, making sure to set **Format Options** to **Word**.
@@ -71,7 +67,7 @@ In some reports, you might want to mimic the [BlankZero](properties/devenv-blank
 For this behavior, you can use the **Hide Field if Zero** control.
 
 1. In Word, select the field, which can be standalone field or included in a repeater.
-1. In the **Business Central (preview)** tab, select **Hide if empty** > **Hide Field if Zero**.
+1. In the **Business Central** tab, select **Hide if empty** > **Hide Field if Zero**.
 
 When the report is run, zero values to a blank string.
 
@@ -84,14 +80,14 @@ If you have a data item in the dataset that might or might not include data, you
   > [!IMPORTANT]
   > You must apply the **Hide Empty table** control to the table, not the repeater control.
 
-1. In the **Business Central (preview)** tab, select **Hide if empty** > **Hide Empty Table**.
+1. In the **Business Central** tab, select **Hide if empty** > **Hide Empty Table**.
 
 ## Hide Empty Table Row control
 
 If you have a data item in the dataset, where field should determine whether the row is shown, you can enclose that field in the repeater with the **Hide Empty Table Row** control. For rows in which this field has no value, the row isn't included in the rendered report at runtime.
 
 1. In Word, select the field.
-1. In the **Business Central (preview)** tab, select **Hide if empty** > **Hide Empty Table Row**.
+1. In the **Business Central** tab, select **Hide if empty** > **Hide Empty Table Row**.
 
 ## Hide Empty Table Column control
 
@@ -100,7 +96,7 @@ Suppose you have a data item in the dataset, where no table header and table col
 A use case for this layout control is discounts, where you want to remove the discount column from the invoice if no discount is applied.
 
 1. In Word, select the field in the table header.
-1. In the **Business Central (preview)** tab, select **Hide if empty** > **Hide Empty Table Column**.
+1. In the **Business Central** tab, select **Hide if empty** > **Hide Empty Table Column**.
 
 > [!TIP]
 > You can combine **Hide Empty Table Column** with **Hide Field if Zero** to hide columns with zero values. Add the **Hide Field if Zero** to the field in the repeater, and then use **Hide Empty Table Column** on the corresponding field in the table header.

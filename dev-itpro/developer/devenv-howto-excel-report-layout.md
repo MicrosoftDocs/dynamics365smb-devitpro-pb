@@ -3,7 +3,7 @@ title: Creating an Excel layout report
 description: Learn how to create a report using an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 09/09/2024
+ms.date: 03/12/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
@@ -126,7 +126,7 @@ The *ReportRequestValues* table contains metadata from the report request (the r
 | Company Id | The Company ID (GUID). |
 | User name | The user who ran the report. |
 | User Id | The user ID associated to 'User name'. |
-| Date | The data and time of the report invocation. |
+| Date | The date and time of the report invocation. |
 | Language | The application language identified (LCID, Windows language identifier).|
 | Format Region | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
 
