@@ -1,5 +1,5 @@
 ---
-title: Feature: Disable SOAP web services on Microsoft UI pages feature key
+title: Disable SOAP web services on Microsoft UI pages feature key
 description: Learn about the HttpServerCertificateValidation feature key.
 ms.custom: bap-template
 ms.date: 03/10/2025
