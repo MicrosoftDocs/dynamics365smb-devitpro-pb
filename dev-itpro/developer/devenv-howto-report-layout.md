@@ -275,6 +275,47 @@ For text boxes, you can control their absolute position on the page in the *Shap
 
 With Word layouts, Word is used as the editor for the report. The person designing the layout interacts with the labels, data items, and fields from the dataset from the XML Mapping Pane. If you want users to be able to change the layout, consider using friendly names for labels, data items, and fields. 
 
+## Access report and request metadata
+
+Similar to Excel layouts, you can access report and request metadata in a Word layout. As a layout designer, this information helps you understand a report dataset better. You can also add the metadata as controls on the Word layouts, making it available to users who run the report.
+
+Two types of metadata are now available in Word layouts from the XML Mapping pane: ReportMetadata and ReportRequest.
+
+:::image type="content" source="media/word-xml-part.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
+
+### ReportMetadata
+
+The *ReportMetadata* node includes metadata elements that provide information from the report object.
+
+|Metadata              | Description |
+|----------------------- | ----------- |
+|ExtensionID | The unique ID (GUID) of the app or extension for the report. |
+|ExtensionName | The name of the app or extension for the report. |
+|ExtensionPublisher | The name of the publisher of the app or extension for the report. |
+|ExtensionVersion | The version of the app or extension for the report.|
+|ReportID | The object ID of the report. |
+|ReportName | The object name of the report.|
+|AboutThisReportTitle | The *about this report title* as declared in the Request Page setup in the AL report. |
+|AboutThisReportText | The *about this report text* as declared in the Request Page setup in the AL report. |
+|ReportHelpLink | Help link (if set up) in the extension and report object.|
+
+### ReportRequest
+
+The *ReportRequest* node includes metadata elements from the report request page when the report request was issued.
+
+|Metadata              | Description |
+|----------------------- | ----------- |
+| TenantId | The Entra/AAD tenant ID of the environment. |
+| EnvironmentName | The name of the environment. Might be empty for on-premises installations. |
+| EnvironmentType | The environment type (Production or sandbox). Might be empty for on-premises installations. |
+| CompanyName | The company name the user was operating in when running the report. |
+| CompanyId | The company ID (GUID). |
+| UserName | The user who ran the report. |
+| UserId | The user ID associated with 'User name'. |
+| DateAndTime | The date and time of the report invocation. |
+| Language | The application language identified (LCID, Windows language identifier).|
+| FormatRegion | The format region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
+
 ## Report labels in Word layouts
 
 Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
@@ -561,47 +602,6 @@ If you need to compare two versions of a Word layout, then do as follows:
 1. In the **Revised document** list, browse to the other version of the document, and then select **OK**.
 
 Learn more in [Compare and merge two versions of a Word document](https://support.microsoft.com/office/compare-and-merge-two-versions-of-a-document-f5059749-a797-4db7-a8fb-b3b27eb8b87e).
-
-## Access report and request metadata
-
-Similar to Excel layouts, you can access report and request metadata in a Word layout. As a layout designer, this information helps you understand a report dataset better. You can also add the metadata as controls on the Word layouts, making it available to users who run the report.
-
-Two types of metadata are now available in Word layouts from the XML Mapping pane: ReportMetadata and ReportRequest.
-
-:::image type="content" source="media/word-xml-part.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
-
-### ReportMetadata
-
-The *ReportMetadata* node includes metadata elements that provide information from the report object.
-
-|Metadata              | Description |
-|----------------------- | ----------- |
-|ExtensionID | The unique ID (GUID) of the app or extension for the report. |
-|ExtensionName | The name of the app or extension for the report. |
-|ExtensionPublisher | The name of the publisher of the app or extension for the report. |
-|ExtensionVersion | The version of the app or extension for the report.|
-|ReportID | The object ID of the report. |
-|ReportName | The object name of the report.|
-|AboutThisReportTitle | The *about this report title* as declared in the Request Page setup in the AL report. |
-|AboutThisReportText | The *about this report text* as declared in the Request Page setup in the AL report. |
-|ReportHelpLink | Help link (if set up) in the extension and report object.|
-
-### ReportRequest
-
-The *ReportRequest* node includes metadata elements from the report request page when the report request was issued.
-
-|Metadata              | Description |
-|----------------------- | ----------- |
-| TenantId | The Entra/AAD tenant ID of the environment. |
-| EnvironmentName | The name of the environment. Might be empty for on-premises installations. |
-| EnvironmentType | The environment type (Production or sandbox). Might be empty for on-premises installations. |
-| CompanyName | The company name the user was operating in when running the report. |
-| CompanyId | The company ID (GUID). |
-| UserName | The user who ran the report. |
-| UserId | The user ID associated with 'User name'. |
-| DateAndTime | The date and time of the report invocation. |
-| Language | The application language identified (LCID, Windows language identifier).|
-| FormatRegion | The format region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
 
 ## Related information
 
