@@ -1,9 +1,11 @@
 ---
-title: "Installation Considerations"
-description: Describes the requirements for installing and configuring Microsoft SQL Server to work with Business Central.
-ms.date: 01/06/2025
+title: Installation Considerations
+description: Learn more about the requirements for installing and configuring Microsoft SQL Server to work with Business Central.
+ms.date: 03/12/2025
 ms.topic: conceptual
 author: jswymer
+ms.author: jswymer
+ms.reviewer: solsen
 ---
 
 # Installation considerations for Microsoft SQL Server and Business Central
@@ -82,13 +84,13 @@ If you plan to install the [!INCLUDE[prod_short](../developer/includes/prod_shor
 
 #### Using high availability setups
 
-[!INCLUDE [introduced_in_2025rw1](../includes/introduced_in_2025rw1.md)]
+[!INCLUDE [2025rw1_and_later](../developer/includes/2025rw1_and_later.md)]
 
 The SQL Server Multi-Subnet Clustering feature enables faster failover for all Availability Groups (AGs) or Failover Cluster Instances (FCIs) in SQL Server 2012 or later and it significantly reduces failover time for single and multi-subnet Always On topologies.
 
-With the server setting **EnableSqlMultiSubnetFailover** set to true, MultiSubnetFailover is enabled on the connections from the server to the database.
+With the server setting **EnableSqlMultiSubnetFailover** set to `true`, MultiSubnetFailover is enabled on the connections from the server to the database.
 
-To learn more about Multi-Subnet Clustering, go to [SQL Server Multi-Subnet Clustering (SQL Server)](/sql/sql-server/failover-clusters/windows/sql-server-multi-subnet-clustering-sql-server).
+Learn more about Multi-Subnet Clustering in [SQL Server Multi-Subnet Clustering (SQL Server)](/sql/sql-server/failover-clusters/windows/sql-server-multi-subnet-clustering-sql-server).
 
 
 ### Database engine service
