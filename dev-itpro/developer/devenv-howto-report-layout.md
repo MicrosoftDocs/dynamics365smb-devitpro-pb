@@ -308,17 +308,17 @@ The *ReportMetadata* dataitem includes metadata columns that provide information
 
 ### ReportRequest
 
-The *ReportRequest* dataitem includes metadata columns from the report request page when the report request was issued.
+The *ReportRequest* dataitem includes metadata columns from the report request (the report invocation that created the document).
 
 |Metadata column|Description|
 |-|-|
-| TenantId | The Entra/AAD tenant ID of the environment. |
+| TenantEntraId | The Entra/AAD tenant ID of the environment. |
 | EnvironmentName | The name of the environment. Might be empty for on-premises installations. |
 | EnvironmentType | The environment type (Production or sandbox). Might be empty for on-premises installations. |
 | CompanyName | The company name the user was operating in when running the report. |
+| CompanyDisplayName | The display name for the company that the user was operating in when running the report. |
 | CompanyId | The company ID (GUID). |
 | UserName | The user who ran the report. |
-| UserId | The user ID associated with 'User name'. |
 | DateAndTime | The date and time of the report invocation. |
 | Language | The application language identified (LCID, Windows language identifier).|
 | FormatRegion | The format region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
