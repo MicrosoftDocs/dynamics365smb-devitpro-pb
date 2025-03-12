@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: conceptual
-ms.date: 04/02/2024
+ms.date: 03/13/2025
 ms.custom: bap-template
 ---
 
@@ -16,6 +16,14 @@ ms.custom: bap-template
 This article describes the features that are up for removal or that have been removed or replaced in the platform that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses across languages and base app.
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
+
+## Changes in 2026 release wave 2 (version 29.0)
+
+### Expose a Microsoft page as a SOAP endpoint (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension.|
 
 ## Changes in 2025 release wave 1 (version 26.0)
 
