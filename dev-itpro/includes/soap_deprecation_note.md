@@ -4,4 +4,4 @@
 >
 >- Support for publishing Microsoft UI pages as SOAP web services will be removed in Business Central 2026 release wave 2 (version 29.0). Starting in version 26.0, Microsoft UI pages can't be published as SOAP web services unless the **Feature: Disable SOAP web services on Microsoft UI pages** key in **Feature Management** is turned off. Learn more [Disable SOAP web services on Microsoft UI pages feature key](../developer/devenv-disable-soap-microsoft-pages-feature-key.md).
 >
-> Learn more about the removal timeline in [Deprecated Features in the Platform - Clients, Server, and Database](../upgrade/deprecated-features-platform.md).
+> Learn more about the removal timelines in [Deprecated Features in the Platform - Clients, Server, and Database](../upgrade/deprecated-features-platform.md).
