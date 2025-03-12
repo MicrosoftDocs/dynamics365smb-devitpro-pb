@@ -562,7 +562,7 @@ If you need to compare two versions of a Word layout, then do as follows:
 
 Learn more in [Compare and merge two versions of a Word document](https://support.microsoft.com/office/compare-and-merge-two-versions-of-a-document-f5059749-a797-4db7-a8fb-b3b27eb8b87e).
 
-#### Access report and request metadata
+## Access report and request metadata
 
 Similar to Excel layouts, you can access report and request metadata in a Word layout. As a layout designer, this information helps you understand a report dataset better. You can also add the metadata as controls on the Word layouts, making it available to users who run the report.
 
@@ -570,7 +570,7 @@ Two types of metadata are now available in Word layouts from the XML Mapping pan
 
 :::image type="content" source="media/word-xml-part.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
 
-##### ReportMetadata
+### ReportMetadata
 
 The *ReportMetadata* node includes metadata elements that provide information from the report object.
 
@@ -586,7 +586,7 @@ The *ReportMetadata* node includes metadata elements that provide information fr
 |AboutThisReportText | The *about this report text* as declared in the Request Page setup in the AL report. |
 |ReportHelpLink | Help link (if set up) in the extension and report object.|
 
-##### ReportRequest
+### ReportRequest
 
 The *ReportRequest* node includes metadata elements from the report request page when the report request was issued.
 
