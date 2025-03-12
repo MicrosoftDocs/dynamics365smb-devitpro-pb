@@ -103,7 +103,7 @@ The ability to disable certificate validation is controlled by the [HttpServerCe
 
 ### Supported HTTP methods
 
-[!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md )]
+[!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md)]
 
 ## Parsing the result
 
