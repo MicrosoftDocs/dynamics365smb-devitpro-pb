@@ -42,7 +42,7 @@ Specifies whether the client validates the server certificate or not.
 
 ## Remarks
 
-This property is enbled by default. It's controlled by a feature key so that you can disable the validation for the whole tenant and roll back to the previous behavior, which is the way it worked in previous versions.
+This property is enabled by default. It's controlled by a feature key so that you can disable the validation for the whole tenant and roll back to the previous behavior, which is the way it worked in previous versions.
 
 If you want to roll back to the previous behavior, we suggest you do the following:
 
