@@ -1,7 +1,7 @@
 > [!NOTE]
 >
->- Support for the SOAP protocol is deprecated in [!INCLUDE[prod_short](prod_short.md)] and will be removed in the future. Start to move your solutions to use either ODataV4 or API pages/queries. API pages/queries are recommended.
+>- Support for the SOAP protocol/endpoints is deprecated in [!INCLUDE[prod_short](prod_short.md)] and will be removed in upcoming release. Start to move your solutions to use either ODataV4 or API pages/queries. API pages/queries are recommended.
 >
->- Support for exposing Microsoft UI pages as a SOAP endpoint will be removed in Business Central 2026 release wave 2 (version 29.0). We recommend using the provided built-in APIs. Learn more in [API overview](api-overview.md). If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension. Until version 29 is released, you can still expose a Microsoft page as a SOAP endpoint, but not by default. If needed, use the **Feature: Disable SOAP web services on Microsoft UI pages** key in **Feature Management** to enable it.  
+>- Support for publishing Microsoft UI pages as SOAP web services will be removed in Business Central 2026 release wave 2 (version 29.0). Starting in version 26.0, Microsoft UI pages can't be published as SOAP web services unless the **Feature: Disable SOAP web services on Microsoft UI pages** key in **Feature Management** is turned off. Learn more [Disable SOAP web services on Microsoft UI pages feature key](../developer/devenv-disable-soap-microsoft-pages-feature-key.md).
 >
 > Learn more about the removal timeline in [Deprecated Features in the Platform - Clients, Server, and Database](../upgrade/deprecated-features-platform.md).
