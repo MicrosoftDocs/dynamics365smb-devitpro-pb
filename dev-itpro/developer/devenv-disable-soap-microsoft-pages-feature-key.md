@@ -8,18 +8,17 @@ ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
 ---
-
 # Disable SOAP web services on Microsoft UI pages feature key
 
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
-The `Disable SOAP web services on Microsoft UI pages` feature key controls whether Microsoft pages can be published as SOAP web services. By default, this key is enabled for all users, preventing the publishing of Microsoft UI pages as SOAP web services. To enable this capability, disable the key for all users. Learn more about enabling and disabling features in [Enabling upcoming features ahead of time](../administration/feature-management.md).
+The `Disable SOAP web services on Microsoft UI pages` feature key controls whether Microsoft pages can be published as SOAP web services. By default, this key is enabled for all users, preventing the publishing of Microsoft UI pages as SOAP web services. To enable this capability, disable the key for all users. 
 
 ## Purpose
 
-Support for publishing Microsoft UI pages as SOAP web services will be removed in [!INCLUDE [prod_short](includes/prod_short.md)] version 29.0. This feature key lets integrations that rely on SOAP endpoints for Microsoft pages continue working while developers and partners transition solutions to one of these options:
+Support for publishing Microsoft UI pages as SOAP web services is deprecated will be removed in [!INCLUDE [prod_short](includes/prod_short.md)] version 29.0. Learn more in [Deprecated features in the platform](../upgrade/deprecated-features-platform.md#soap-on-baseapp-pages). This feature key lets integrations that rely on SOAP endpoints for Microsoft pages continue working while developers and partners transition solutions to one of these options:
 
-- Use the [!INCLUDE [prod_short](includes/prod_short.md)] built-in APIs
+- Use the [!INCLUDE [prod_short](includes/prod_short.md)] built-in APIs. Learn more in [REST API web services](../webservices/api-overview.md).
 - Use OData V4
 - Replicate the Microsoft UI pages as page objects in per-tenant extensions, and publish the extension pages as SOAP web services
 
@@ -30,4 +29,7 @@ The `Disable SOAP web services on Microsoft UI pages` feature key will be remove
 
 ## Related information
 
+[SOAP web services](../webservices/soap-web-services.md)  
+[OData web services](../webservices/OData-Web-Services.md)  
+[Publishing a Web Service ](../webservices/publish-web-service.md)  
 [Enabling upcoming features ahead of time](/dynamics365/business-central/dev-itpro/administration/feature-management)  
