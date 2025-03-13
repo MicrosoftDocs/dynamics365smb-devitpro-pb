@@ -58,8 +58,6 @@ The following features are marked as `obsolete:pending` in 2025 release wave 1.
 |-----------------------------|-----|
 |Replaced| The following Excel reports will be are removed on the **Business Manager** and **Accountant** role centers.<ul><li>Balance Sheet</li><li>Income Statement</li><li>Statement of Cash Flow</li><li>Statement of Retained Earnings</li><li>Sales Taxes Collected</li><li>Customer Statements</li><li>Aged Accounts Payable</li><li>Aged Accounts Receivable</li></ul>Although these reports are useful to some organizations, changing them requires technical skills in AL and VBA (Visual Basic for Applications) programming. We've enhanced analytics capabilities in finance in each release wave over the last years. For example, we've added data analysis capabilities on ledger tables, reports with Excel layouts that allow you to change the layout as you see fit, and Power BI reports for finance. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics). |
 
-While useful to some organizations, the balance sheet, income statement, statement of cash flow, statement of retained earnings, sales taxes collected, customer statements, aged accounts payable, and aged accounts receivable Excel reports available on the Business Manager and Accountant Role Centers are hard to change. Changing them requires technical skills in AL and VBA programming. We've enhanced analytics capabilities in finance in each release wave over the last three years. For example, we've added data analysis capabilities on ledger tables, reports with Excel layouts that you can change, and Power BI reports for finance.
-
 ### Legacy Power BI apps on AppSource (warning)
 
 > [!IMPORTANT]
