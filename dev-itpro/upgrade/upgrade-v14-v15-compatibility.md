@@ -53,7 +53,7 @@ Get a list of all available updates for Business Central 2024 release wave 1 at 
 The following table lists the Business Central 23 update versions and the minimum update versions of later releases that are compatible for upgrade.
 
 |Version 23 |Version 24 | Version 25|Version 26|
-|-|-|-|
+|-|-|-|-|
 |23.0 to 23.5|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000) |[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|26.0|
 |[23.6](https://support.microsoft.com/help/5037541)|[24.1](https://support.microsoft.com/help/5038531)|25.0|26.0|
 |[23.7](https://support.microsoft.com/help/5038530) |[24.2](https://support.microsoft.com/help/5040044)|25.0|26.0|
