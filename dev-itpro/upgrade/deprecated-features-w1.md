@@ -37,7 +37,7 @@ The following features will be removed in 2026 release wave 1 (update 28.0).
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| While useful to show the Power BI embed capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the following Power BI apps on AppSource are replaced: </br></br>* Dynamics 365 Business Central - CRM</br>* Dynamics 365 Business Central - Finance</br>* Dynamics 365 Business Central - Sales</br></br> The apps are replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The new Power BI apps were released in version 25.1. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics).  |
+|Replaced| While useful to show the Power BI embed capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the following Power BI apps on AppSource are replaced: <ul><li>Dynamics 365 Business Central - CRM</li><li>Dynamics 365 Business Central - Finance</li><li>Dynamics 365 Business Central - Sales</li></ul> The apps are replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The new Power BI apps were released in version 25.1. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics).  |
 
 ### Intelligent Cloud Insights (removal)
 
