@@ -70,6 +70,9 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
+### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
+### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
 ### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
 ### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 ### Updates for earlier major versions
@@ -392,6 +395,7 @@
 ##### [Align SQL table definitions](administration/migration-align-table-definitions.md)
 ##### [Clean data for cloud migration](administration/migration-clean-data.md)
 ##### [Optimize cloud migration performance](administration/migration-optimize-replication.md)
+##### [Migrating on-premises companies to live tenants](administration/migrate-companies-live-tenant.md)
 #### Set up cloud migration
 ##### [Cloud migration setup overview](administration/migration-setup-overview.md)
 ##### [Define migration table mappings](administration/migration-table-mapping.md)
@@ -434,7 +438,7 @@
 #### Overview
 ##### [End-to-end process](administration/migrate-sl-overview.md)
 ##### [Dynamics SL data migrated to Business Central](administration/migrate-dynamics-sl.md)
-##### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-sl-videos.md)
+##### [Compare work in Dynamics SL to Business Central](administration/migrate-dynamics-sl-videos.md)
 ##### [Managing cloud migration](administration/migration-manage-sl.md)
 #### Prepare
 ##### [Plan cloud migration](administration/cloud-migration-plan-prepare-sl.md)
@@ -793,11 +797,12 @@
 #### [Transferring data (during upgrade)](developer/devenv-data-transfer.md)
 
 #### Importing and exporting data
+##### [Exporting data to Excel using ExcelBuffer](developer/devenv-excel-buffer.md)
 ##### [XMLport overview](developer/devenv-xmlport-overview.md)
-##### [XMLport object](developer/devenv-xmlport-object.md)
-##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)
-##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
-##### [Using request pages with XMLports](developer/devenv-request-pages.md)
+###### [XMLport object](developer/devenv-xmlport-object.md)
+###### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)
+###### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
+###### [Using request pages with XMLports](developer/devenv-request-pages.md)
 
 
 ### Pages and the user interface
@@ -956,6 +961,7 @@
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
 #### [Troubleshooting report errors](developer/devenv-reports-troubleshooting.md)
+#### [Obsoleting reports](developer/devenv-reports-obsoletion.md)
 #### [Report telemetry](administration/telemetry-reports-trace.md)
 #### How users work with reports
 ##### [Run and print reports](/dynamics365/business-central/ui-work-report?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -1399,7 +1405,7 @@
 ### [Auditing data changes](/dynamics365/business-central/across-log-changes)
 ### [Security auditing](security/security-auditing.md)
 ### [Ad-hoc analysis of change log data](/dynamics365/business-central/across-log-changes?toc=/dynamics365/business-central/dev-itpro/toc.json#analyze-data-in-the-change-log) 
-### [Auditing in Purview](auditing/audit-events-in-purview.md)
+### [Auditing in Microsoft Purview](auditing/audit-events-in-purview.md)
 <!-- end Security, privacy, and compliance -->
 
 <!-- begin performance -->
@@ -1557,6 +1563,8 @@
 ### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
+### [Token counting in AI](developer/ai-system-app-token-counting.md)
+### [Function calling in AI](developer/ai-system-app-function-calling.md)
 ### Extend Copilot in Business Central 
 #### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
@@ -1567,6 +1575,7 @@
 ##### [Design content mode](developer/copilot-design-content-mode.md)
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
+##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
@@ -1715,6 +1724,7 @@
 ### [Overview of deprecated features in the platform](upgrade/deprecated-features-platform.md)
 ## Application
 ### [Overview of deprecated features in the base app](upgrade/deprecated-features-w1.md)
+### [Deleted objects in 2025 release wave 1](upgrade/deleted-objects-25w1.md)
 ### Examples of how to uptake deprecations
 #### [Migrate from User Groups to Permission Sets or Security Groups](upgrade/deprecated-features-user-groups.md)
 #### [Migrating from legacy views to modern views](developer/devenv-views-legacy.md)
@@ -1938,29 +1948,29 @@
 ##### [From version 20, 21, or 22](upgrade/upgrade-technical-upgrade-v23.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v23.md)
 ### Earlier versions
-### Business Central 2023 release wave 1
-#### [Overview](upgrade/upgrade-overview-v22.md)
-#### [Before you upgrade](upgrade/upgrade-considerations-v22.md)
-#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrading reports](upgrade/upgrade-reports.md)
-#### Application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v22.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v22.md)
-##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v22.md)
-##### Related articles
-###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating tables and fields between extensions
-####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-###### Data migration toolkit - India
-####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### Technical upgrade
-##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v22.md)
-##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v22.md)
-##### [From version 20 or 21](upgrade/upgrade-technical-upgrade-v22.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v22.md)
+#### Business Central 2023 release wave 1
+##### [Overview](upgrade/upgrade-overview-v22.md)
+##### [Before you upgrade](upgrade/upgrade-considerations-v22.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+##### [Upgrading reports](upgrade/upgrade-reports.md)
+##### Application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v22.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v22.md)
+###### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v22.md)
+###### Related articles
+####### [Convert to AL](upgrade/devenv-code-conversion.md)
+####### Migrating tables and fields between extensions
+######## [Overview](developer/devenv-migrate-table-fields.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+####### Data migration toolkit - India
+######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
+##### Technical upgrade
+###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v22.md)
+###### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v22.md)
+###### [From version 20 or 21](upgrade/upgrade-technical-upgrade-v22.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v22.md)
 #### Business Central 2022 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v21.md)
 ##### [Before you upgrade](upgrade/upgrade-considerations-v21.md)

@@ -193,7 +193,7 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 
 The following video shows how to connect Power BI telemetry apps to read your telemetry data.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fIjn]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=534b2e49-9dcc-4529-978f-660f3da07ee8]
 
 ## Install, share, and update apps
 
@@ -204,7 +204,7 @@ From time to time, the app is released in a new improved version via AppSource. 
 
 The following video shows how to change dataset properties for a Power BI telemetry app in Power BI.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fxZ6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6eb42dc4-e7ef-457d-afae-02edc6fb00b5]
 
 
 ## Share the app with coworkers and others
