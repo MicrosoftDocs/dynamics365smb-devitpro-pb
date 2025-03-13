@@ -65,7 +65,7 @@ The following features are marked as `obsolete:pending` in 2025 release wave 1.
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| While useful for showing the Power BI embed capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the following legacy Power BI apps on AppSource are replaced: </br></br>* Dynamics 365 Business Central - CRM</br>* Dynamics 365 Business Central - Finance</br>* Dynamics 365 Business Central - Sales</br></br>The apps are replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The new Power BI apps were released in version 25.1. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics).  |
+|Replaced| While useful for showing the Power BI embed capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the following legacy Power BI apps on AppSource are replaced: <ul><li>Dynamics 365 Business Central - CRM</li><li>Dynamics 365 Business Central - Finance</li><li>Dynamics 365 Business Central - Sales</li></ul> The apps are replaced by seven Power BI apps for finance, sales, purchasing, inventory, projects, and manufacturing. The new Power BI apps were released in version 25.1. </br></br>Learn more about the replacement features at [aka.ms/bcFinanceAnalytics](https://aka.ms/bcFinanceAnalytics).  |
 
 ### Intelligent Cloud Insights (warning)
 
