@@ -50,7 +50,7 @@ If you want to roll back to the previous behavior, we suggest you do the followi
 - Disable the validation with the new feature key for now, but be aware that it will be removed in version 27.0.
 
 > [!NOTE]
-> The feature key will be removed in version 27.0. So they have to uptake the new property within version 26. The feature key is introduced to give them 6 months to transition to the new way without causing customer downtime.
+> The feature key will be removed in version 27.0. This means that you must uptake the new property in version 26.0. With the feature key, you have a 6 month transition window to make the code changes without causing customer downtime.
 
 ## Related information
 
