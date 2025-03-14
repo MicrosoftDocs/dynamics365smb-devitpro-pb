@@ -346,7 +346,7 @@ The following table explains the custom dimensions included in a **Deprecated en
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**RT0053**|
-|depricationMessage | Example is *SOAP webservice on UI page by Microsoft publisher*.  |
+|deprecationMessage | Example: *SOAP webservice on UI page by Microsoft publisher*.  |
 
 ### Sample KQL code (deprecated endpoint called)
 
