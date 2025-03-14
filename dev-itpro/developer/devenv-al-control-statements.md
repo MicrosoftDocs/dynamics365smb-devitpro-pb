@@ -546,7 +546,7 @@ break;
 > The break statement is different than the [Break Method \(Report, XMLport\)](./methods-auto/library.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it's run.  
 
 ## Example  
- The following AL code increases the variable I by one for each iteration, and terminates the iteration when `I` equals 10.  
+ The following AL code increases the variable `Count` by one for each iteration, and terminates the iteration when `I` equals 10.  
 
 ```AL
 while Count < 1000 do
@@ -580,7 +580,7 @@ continue;
 > Due to backwards compatibility, the continue statement is designed to be backwards compatible with other elements like procedures and variables which have the same name. For example, if there is a procedure named `Continue` in scope, the statement `continue` will be interpreted as invoking that procedure. This backwards compatibility will be removed in the future, thus it's recommended to rename any conflicting elements.
 
 ## Example  
- The following AL code increases the variable I by one for each iteration, but skips all numbers divisible by 42. 
+ The following AL code increases the variable `Count` by one for each iteration, but skips all numbers divisible by 42. 
 
 ```AL
 while Count < 1000 do
