@@ -25,7 +25,7 @@ Sets a value that indicates the maximum number of times an element can occur.
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
 |**Once**|runtime version 1.0|The element can occur at most once.|
-|**Unbounded**|runtime version 1.0|There is no maximum number of occurences.|
+|**Unbounded**|runtime version 1.0|There is no maximum number of occurrences.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
