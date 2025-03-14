@@ -14,7 +14,7 @@ ms.custom:
 
 This article provides an overview of new features and general information about update 26.0.
 
-## Features
+## New features
 
 The following table lists the new features planned for 26.0. For a comprehensive feature list and details, see [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).
 
@@ -193,6 +193,45 @@ Add links:
 |               | [Optimize screen estate usage on the web](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)                                    |
 |               | [Allow adjusting the width of the FactBox pane](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allow-adjusting-width-factbox-pane)                              |
 |               | [Use user interface enhancements for better experience](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-user-interface-enhancements-better-experience)                      |
+
+## Feature management changes
+
+This section outlines changes to features controlled under Feature Managements in version 26.0.
+
+### Features now mandatory
+
+These features are no longer controlled by a feature key. They are always available in the product and can't be disabled:
+
+- Feature Update: Enable use of new extensible exchange rate adjustment, including posting review
+- Feature Update: Enable use of new extensible invoice posting engine
+- Feature Update: Replace the existing EU 3-Party Trade Purchase functionality with the new EU 3-Party Trade Purchase extension
+- Feature: Enable legacy locking scheme in AL
+- Feature: Enable using bulk operations for Shopify connector
+
+### Features now enabled by default
+
+These features are controlled by a feature key but are now enabled by default.
+
+- Feature Update: Enable multiple users to post warehouse entries at the same time
+
+### New features enabled by default
+
+These new features are enabled by default:
+
+- Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking. Upgrade the
+- Feature Update: Use new communication texts for reminder terms
+- Feature: Disable SOAP web services on Microsoft UI pages
+- Feature: Enable server certificate validation for Http requests
+
+### New features disabled by default
+
+These new features are disabled by default:
+
+- Feature Update: Enable multiple users to post item ledger entries and value entries at the same time
+- Feature Update: Enable multiple users to post job ledger entries at the same time
+- Feature Update: Enable multiple users to post resource ledger entries at the same time entries at the same time
+- Feature: Calculate only visible FlowFields
+- Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata.
 
 ## Upgrade to 26.0
 
