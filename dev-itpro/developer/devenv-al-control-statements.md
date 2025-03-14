@@ -1,10 +1,11 @@
 ---
 title: AL control statements
 description: Compound, conditional, and repetitive control statements in AL for Business Central.
-ms.date: 12/02/2024
+ms.date: 03/11/2025
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.author: solsen
+ms.reviewer: solsen
 ms.collection: get-started
 ---
 
@@ -295,8 +296,7 @@ A repetitive statement is also known as a loop. The following table shows the lo
 |for|Repeats the inner statement until a counter variable equals the maximum or minimum value specified.|  
 |foreach|Repeats the inner statement for each statement in a List, XmlNodeList, XmlAttributeCollection, or JsonArray.|
 |while|Repeats the inner statement as long as the specified condition is **true**. The statement in a loop of this kind is repeated zero or more times.|  
-|repeat|Repeats the inner statements until the specified conditions evaluate to **true**. The statements in a loop of this kind are always executed at least one time.|  
-
+|repeat - until|Repeats the inner statements until the specified conditions evaluate to **true**. The statements in a loop of this kind are always executed at least one time.|  
 
 ### For-to and for-downto control structure  
 
@@ -452,20 +452,23 @@ var
     I : integer
 ```
 
-### Repeat-until control structure  
+### Repeat-until control structure
+
 The following syntax shows the repeat-until statement.  
 
 ```AL
 repeat  
-    <Statements> until <Condition>  
+    <Statements> 
+until <Condition>  
 ```  
 
- *`<Statements>`* is executed repeatedly until *`<Condition>`* is true.  
+ *`<Statements>`* is executed repeatedly until *`<Condition>`* is true.
 
  The `repeat until` control structure resembles the while control structure. The difference is that because the `repeat until` statement is executed from left to right, the *`<Statements>`* is always executed at least one time, regardless of what the *`<Condition>`* is evaluated to. This contrasts with the `while` control structure, which performs the evaluation before the *`<Statement>`* is executed. In the `while` control structure, if the first evaluation of *`<Condition>`* returns false, then no statements are executed.  
 
-#### Programming conventions  
- Always put repeat on a separate line.  
+#### Programming conventions
+
+Always put repeat on a separate line.  
 
 #### Example  
 
@@ -475,19 +478,20 @@ if x < y then begin
         x := x + 1;  
         a := a - 1;  
     until x = y;  
-        b := x;  
+    b := x;  
 end;  
 ```  
 
-#### Example  
+#### Example
+
 This code uses a repeat-until loop to count the number of entries in the Customer table.
 
 ```AL
 Count := 0;  
-if Customer.find('-') then  
-repeat  
-    Count := Count + 1;  
-until Customer.next <= 0;  
+if Customer.find('-') then
+    repeat  
+        Count := Count + 1;  
+    until Customer.next <= 0;  
 message('The Customer table contains %1 records.',Count);  
 ```  
 
