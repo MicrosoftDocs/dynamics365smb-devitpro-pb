@@ -25,7 +25,7 @@ Support for publishing Microsoft UI pages as SOAP web services is deprecated wil
 The `Disable SOAP web services on Microsoft UI pages` feature key will be removed in [!INCLUDE [prod_short](includes/prod_short.md)] version 29.0, when support for exposing Microsoft UI pages as SOAP web services is removed.
 
 > [!TIP]
-> When the feature key is disabled, telemetry data for calls to SOAP endpoints is collected for monitoring purposes.s. Learn more in [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md).
+> If SOAP web services are allowed (feature key disabled), use incoming web services request telemetry to monitor calls to deprecated SOAP endpoints. Learn more in [Analyzing incoming web services request telemetry](../administration/telemetry-webservices-trace.md).
 
 ## Related information
 
