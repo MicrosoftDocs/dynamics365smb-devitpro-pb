@@ -26,7 +26,7 @@ The control structures in AL are divided into the following main groups, as desc
 
 ## AL compound statements
 
-In some cases, the AL syntax only lets you use a single statement. However, if you have to run more than one simple statements, the statements can be written as a compound statement by enclosing the them between the `begin` and `end` keywords.  
+In some cases, the AL syntax only lets you use a single statement. However, if you have to run more than one simple statement, the statements can be written as a compound statement by enclosing the them between the `begin` and `end` keywords.  
 
 ```AL
 begin  
@@ -363,7 +363,7 @@ var
 
 ### Foreach control structure
 
-You can use the foreach statement to iterate through List, XmlNodeList, XmlAttributeCollection, and JsonArray expressions.
+You can use the foreach statement to iterate through Text, Code, List, XmlNodeList, XmlAttributeCollection, and JsonArray expressions.
 
 > [!TIP]  
 > With [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1, you can use the `foreach` loop on `Text` variables as well, which allows you to detect, as well as remove or replace individual characters in strings.
@@ -540,7 +540,7 @@ You use the break statement to terminate the iterative statement in which it app
 break;  
 ```  
 
- You typically use the `break` statement in the repeating statements such as `for`, `while`, or `repeat` to stop an iteration or loop when certain conditions are met.  
+ You typically use the `break` statement in the repeating statements such as `for`, `while`, `foreach` or `repeat` to stop an iteration or loop when certain conditions are met.  
 
 > [!NOTE]  
 > The break statement is different than the [Break Method \(Report, XMLport\)](./methods-auto/library.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it's run.  
@@ -551,10 +551,45 @@ break;
 ```AL
 while Count < 1000 do
     begin
-    Count := Count + 1;
-    message(FORMAT(Count));
-    if Count = 10 then
-        break;
+        Count := Count + 1;
+        message(FORMAT(Count));
+        if Count = 10 then
+            break;
+        end; 
+end; 
+ 
+```  
+
+This example requires the following integer data type variable.  
+
+```AL
+var  
+    Count : integer
+```
+
+## Continue statement
+You use the continue statement to proceed to the next iteration of the iterative statement in which it appears.  
+
+```AL
+continue;  
+```  
+
+ You typically use the `continue` statement in the repeating statements such as `for`, `while`, `foreach` or `repeat` to proceed to the next iteration when certain conditions are met.  
+
+> [!NOTE]  
+> Due to backwards compatibility, the continue statement is designed to be backwards compatible with other elements like procedures and variables which have the same name. For example, if there is a procedure named `Continue` in scope, the statement `continue` will be interpreted as invoking that procedure. This backwards compatibility will be removed in the future, thus it's recommended to rename any conflicting elements.
+
+## Example  
+ The following AL code increases the variable I by one for each iteration, but skips all numbers divisible by 42. 
+
+```AL
+while Count < 1000 do
+    begin
+        Count := Count + 1;
+        if (Count MOD 42 = 0) then
+            continue;
+        
+        message(FORMAT(Count));
     end; 
 end; 
  
@@ -564,7 +599,7 @@ This example requires the following integer data type variable.
 
 ```AL
 var  
-    I : integer
+    Count : integer
 ```
 
 ## Related information
