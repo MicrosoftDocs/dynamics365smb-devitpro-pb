@@ -16,7 +16,7 @@ The `Disable SOAP web services on Microsoft UI pages` feature key controls wheth
 
 ## Purpose
 
-Support for publishing Microsoft UI pages as SOAP web services is deprecated will be removed in [!INCLUDE [prod_short](includes/prod_short.md)] version 29.0. Learn more in [Deprecated features in the platform](../upgrade/deprecated-features-platform.md#soap-on-baseapp-pages). This feature key lets integrations that rely on SOAP endpoints for Microsoft pages continue working while developers and partners transition solutions to one of these options:
+Support for publishing Microsoft UI pages as SOAP web services is deprecated and will be removed in [!INCLUDE [prod_short](includes/prod_short.md)] version 29.0. Learn more in [Deprecated features in the platform](../upgrade/deprecated-features-platform.md#soap-on-baseapp-pages). This feature key lets integrations that rely on SOAP endpoints for Microsoft pages continue working while developers and partners transition solutions to one of these options:
 
 - Use the [!INCLUDE [prod_short](includes/prod_short.md)] built-in APIs. Learn more in [REST API web services](../webservices/api-overview.md).
 - Use OData V4
