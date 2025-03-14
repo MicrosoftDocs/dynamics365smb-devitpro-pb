@@ -363,7 +363,7 @@ var
 
 ### Foreach control structure
 
-You can use the foreach statement to iterate through Text, Code, List, XmlNodeList, XmlAttributeCollection, and JsonArray expressions.
+You can use the foreach statement to iterate through List, XmlNodeList, XmlAttributeCollection, and JsonArray expressions.
 
 > [!TIP]  
 > With [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1, you can use the `foreach` loop on `Text` variables as well, which allows you to detect, as well as remove or replace individual characters in strings.
@@ -568,7 +568,7 @@ var
 ```
 
 ## Continue statement
-You use the continue statement to proceed to the next iteration of the iterative statement in which it appears.  
+With [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 1, you can use the the continue statement to proceed to the next iteration of the iterative statement in which it appears.  
 
 ```AL
 continue;  
