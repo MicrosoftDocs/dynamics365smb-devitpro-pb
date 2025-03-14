@@ -513,17 +513,18 @@ The exit statement is used to control the flow of the execution. The following s
 exit([<Value>])  
 ```  
 
- An exit statement is used to interrupt the execution of an AL trigger. The interruption occurs even when the code is executed inside a loop or a similar structure. The exit statement is also used when a local method should return a value.  
+An exit statement is used to interrupt the execution of an AL trigger. The interruption occurs even when the code is executed inside a loop or a similar structure. The exit statement is also used when a local method should return a value.  
 
- Using exit without a parameter in a local method corresponds to using the parameter value 0. The AL method will return the value 0 or '' (empty string).  
+Using exit without a parameter in a local method corresponds to using the parameter value 0. The AL method will return the value 0 or '' (empty string).  
 
- A compile-time error occurs if exit is called by using a return parameter from either:  
+A compile-time error occurs if exit is called by using a return parameter from either:  
 
 - System-defined triggers, or 
 - Local methods that don't return a value.  
 
-#### Example  
- The following example shows the use of the exit statement in a local method. Assume that the if statement is used to detect an error. If the error condition is met, then execution is stopped and the local method returns the error code 1.  
+#### Example
+
+The following example shows the use of the exit statement in a local method. Assume that the if statement is used to detect an error. If the error condition is met, then execution is stopped and the local method returns the error code 1.  
 
 ```AL
 for I := 1 to 1000 do begin  
@@ -534,19 +535,21 @@ end;
 ```  
 
 ## Break statement
+
 You use the break statement to terminate the iterative statement in which it appears.  
 
 ```AL
 break;  
 ```  
 
- You typically use the `break` statement in the repeating statements such as `for`, `while`, `foreach` or `repeat` to stop an iteration or loop when certain conditions are met.  
+You typically use the `break` statement in the repeating statements such as `for`, `while`, `foreach`, or `repeat` to stop an iteration or loop when certain conditions are met.  
 
 > [!NOTE]  
 > The break statement is different than the [Break Method \(Report, XMLport\)](./methods-auto/library.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it's run.  
 
-## Example  
- The following AL code increases the variable `Count` by one for each iteration, and terminates the iteration when `I` equals 10.  
+## Example
+
+The following AL code increases the variable `Count` by one for each iteration, and terminates the iteration when `Count` equals 10.  
 
 ```AL
 while Count < 1000 do
@@ -568,19 +571,21 @@ var
 ```
 
 ## Continue statement
-With [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 1, you can use the the continue statement to proceed to the next iteration of the iterative statement in which it appears.  
+
+With [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 1, you can use the the `continue` statement to proceed to the next iteration of the iterative statement in which it appears.  
 
 ```AL
 continue;  
 ```  
 
- You typically use the `continue` statement in the repeating statements such as `for`, `while`, `foreach` or `repeat` to proceed to the next iteration when certain conditions are met.  
+You typically use the `continue` statement in the repeating statements such as `for`, `while`, `foreach`, or `repeat` to proceed to the next iteration when certain conditions are met.
 
 > [!NOTE]  
-> Due to backwards compatibility, the continue statement is designed to be backwards compatible with other elements like procedures and variables which have the same name. For example, if there is a procedure named `Continue` in scope, the statement `continue` will be interpreted as invoking that procedure. This backwards compatibility will be removed in the future, thus it's recommended to rename any conflicting elements.
+> Due to backwards compatibility, the `continue` statement is designed to be backwards compatible with other elements like procedures and variables, which have the same name. For example, if there's a procedure named `Continue` in scope, the statement `continue` will be interpreted as invoking that procedure. This backwards compatibility will be removed in the future, therefore it's recommended to rename any conflicting elements.
 
-## Example  
- The following AL code increases the variable `Count` by one for each iteration, but skips all numbers divisible by 42. 
+## Example
+
+The following AL code increases the variable `Count` by one for each iteration, but skips all numbers divisible by 42. 
 
 ```AL
 while Count < 1000 do
