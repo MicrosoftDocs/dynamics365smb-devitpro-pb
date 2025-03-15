@@ -184,13 +184,13 @@ These new features are disabled by default:
 - Feature: Calculate only visible FlowFields
 - Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata.
 
-## Upgrade to 26.0
-
-New customers automatically get the latest builds of Business Central (26.0). Existing partners and customers receive an email notification when their environment is upgraded.
-
 ## On-premises download packages
 
 Download on-premises files from Microsoft Support at [Update 26.0 for Business Central 2025 release wave 1](https://www.microsoft.com/en-us/download/details.aspx?id=106000).
+
+## Upgrade to 26.0
+
+New customers automatically get the latest builds of Business Central (26.0). Existing partners and customers receive an email notification when their environment is upgraded.
 
 ## Good to know
 
