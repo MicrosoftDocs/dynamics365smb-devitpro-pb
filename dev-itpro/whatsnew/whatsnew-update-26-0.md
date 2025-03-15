@@ -169,7 +169,7 @@ These features are controlled by a feature key but are now enabled by default.
 
 These new features are enabled by default:
 
-- Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking. Upgrade the
+- Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking. Upgrade the existing records from 'Manual' to the 'Pick + Manual' flushing method.
 - Feature Update: Use new communication texts for reminder terms
 - Feature: Disable SOAP web services on Microsoft UI pages
 - Feature: Enable server certificate validation for Http requests
