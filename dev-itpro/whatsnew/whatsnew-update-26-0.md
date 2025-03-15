@@ -153,7 +153,7 @@ This section outlines changes to features and feature updates controlled by **Fe
 
 - Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking. Upgrade the existing records from 'Manual' to the 'Pick + Manual' flushing method. [Learn more](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods)
 - Feature: Disable SOAP web services on Microsoft UI pages [Learn more](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)<!-- missing rp-->
-- Feature: Enable server certificate validation for Http requests [Learn more](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)
+- Feature: Enable server certificate validation for HTTP requests [Learn more](../developer/devenv-httpcertvalid-feature-key.md)
 
 ### New features added and disabled by default
 
