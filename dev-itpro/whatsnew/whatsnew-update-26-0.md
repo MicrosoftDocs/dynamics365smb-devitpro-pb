@@ -72,7 +72,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Define allowed languages per environment](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/define-allowed-languages-per-environment) |
 | Development               | [Manage external files more easily through a unified API in the External File Storage module](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-external-files-unified-api-external-file-storage-module) |
 |                           | [Troubleshoot clients, apps, and add-ins with telemetry](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/troubleshoot-clients-apps-add-ins-telemetry) |
-|                           | [Validate certificates on external web service endpoints called from AL HttpClient](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/validating-certificates-external-web-service-endpoints-called-al-httpclient) |
+|                           | [Validate certificates on external web service endpoints called from AL HttpClient](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/validating-certificates-external-web-service-endpoints-called-al-httpclient) (enabled by Feature management)|
 |                           | [Use new properties on a report layout](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-properties-report-layout) |
 |                           | [Embed Power BI content in web client with new page type](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/embed-power-bi-content-web-client-new-page-type) |
 |                           | [Overloaded JsonObject data type GetValue method](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/overloaded-jsonobject-data-type-getvalue-method) |
@@ -107,7 +107,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Validate report layouts for errors as an admin](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/validate-report-layouts-errors-as-admin) |
 |                           | [Access report and request metadata in Word layouts](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/access-report-request-metadata-word-layouts) |
 |                           | [Use enhanced Financial Reporting capabilities](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-financial-reporting-capabilities) |
-| Service and platform          | [Calculate values only for visible FlowFields](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/calculate-values-only-visible-flowfields) |
+| Service and platform          | [Calculate values only for visible FlowFields](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/calculate-values-only-visible-flowfields) (enabled by Feature Management)|
 | Supply chain management       | [Reschedule production orders within a safety lead time](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reschedule-production-orders-within-safety-lead-time) |
 |                           | [Use enhanced customer document layout for service management](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-customer-document-layout-service-management) |
 |                           | [Cancel production orders that have consumption](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/cancel-production-orders-that-have-consumption) |
@@ -115,7 +115,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Experience improved usability in manufacturing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/experience-improved-usability-manufacturing) |
 |                           | [Enable overpicking for production orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enable-over-picking-production-orders) |
 |                           | [Achieve greater accuracy in manufacturing costing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/achieve-greater-accuracy-manufacturing-costing) |
-|                           | [Omit warehouse pick for manual flushing methods](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods) |
+|                           | [Omit warehouse pick for manual flushing methods](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods) (enabled by Feature Management)|
 |                           | [Receive project items with receipts or put-aways](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/receive-project-items-receipts-or-put-aways) |
 |                           | [Block items or variants from production output](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/block-items-or-variants-production-output) |
 |                           | [Avoid document number errors when you post project journals](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/avoid-document-number-errors-when-post-project-journals) |
@@ -126,7 +126,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Manage document attachments in manufacturing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-document-attachments-manufacturing) |
 |                           | [Use Edit in Excel on output, consumption, and item journals](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/edit-item-tracked-items-excel-output-consumption-item-journals) |
 |                           | [Combine service shipments on a single service invoice](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/combine-service-shipments-single-service-invoice) |
-|                           | [Allow multiple people to post inventory at the same time](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allow-multiple-people-post-inventory-at-same-time) |
+|                           | [Allow multiple people to post inventory at the same time](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allow-multiple-people-post-inventory-at-same-time) (enabled by Feature Management) |
 |                           | [Create demo data for Subscription Billing with demo data tool](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-demo-data-subscription-billing-contoso-demo-data-tool) |
 |                           | [Create subscription contract lines manually](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-subscription-contract-lines-manually) |
 |                           | [Add unit cost in subscription lines](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-unit-cost-subscription-lines) |
@@ -147,42 +147,33 @@ When all the links have been created, remove the "Release Plan URL" column from 
 
 ## Feature management changes
 
-This section outlines changes to features controlled under Feature Managements in version 26.0.
+This section outlines changes to features and feature updates controlled by **Feature management** in version 26.0.
 
-### Features now mandatory
+### New features added and enabled by default
 
-These features are no longer controlled by a feature key. They are always available in the product and can't be disabled:
+- Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking. Upgrade the existing records from 'Manual' to the 'Pick + Manual' flushing method. [Learn more](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods)
+- Feature: Disable SOAP web services on Microsoft UI pages [Learn more](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods)<!-- missing rp-->
+- Feature: Enable server certificate validation for Http requests
+
+### New features added and disabled by default
+
+- Feature Update: Enable multiple users to post item ledger entries and value entries at the same time 
+- Feature Update: Enable multiple users to post job ledger entries at the same time <!-- missing rp-->
+- Feature Update: Enable multiple users to post resource ledger entries at the same time entries at the same time <!-- missing rp-->
+- Feature: Calculate only visible FlowFields
+- Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata. <!-- missing rp-->
+
+### Existing features now enabled by default
+
+- Feature Update: Enable multiple users to post warehouse entries at the same time
+
+### Existing features removed and now mandatory
 
 - Feature Update: Enable use of new extensible exchange rate adjustment, including posting review
 - Feature Update: Enable use of new extensible invoice posting engine
 - Feature Update: Replace the existing EU 3-Party Trade Purchase functionality with the new EU 3-Party Trade Purchase extension
 - Feature: Enable legacy locking scheme in AL
 - Feature: Enable using bulk operations for Shopify connector
-
-### Features now enabled by default
-
-These features are controlled by a feature key but are now enabled by default.
-
-- Feature Update: Enable multiple users to post warehouse entries at the same time
-
-### New features enabled by default
-
-These new features are enabled by default:
-
-- Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking. Upgrade the existing records from 'Manual' to the 'Pick + Manual' flushing method.
-- Feature Update: Use new communication texts for reminder terms
-- Feature: Disable SOAP web services on Microsoft UI pages
-- Feature: Enable server certificate validation for Http requests
-
-### New features disabled by default
-
-These new features are disabled by default:
-
-- Feature Update: Enable multiple users to post item ledger entries and value entries at the same time
-- Feature Update: Enable multiple users to post job ledger entries at the same time
-- Feature Update: Enable multiple users to post resource ledger entries at the same time entries at the same time
-- Feature: Calculate only visible FlowFields
-- Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata.
 
 ## On-premises download packages
 
