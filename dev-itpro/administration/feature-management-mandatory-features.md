@@ -24,6 +24,24 @@ Some of the features or design improvements in major and minor updates are optio
 
 However, these features are only optional for a while. The period in which they're optional typically starts when the update they're made in becomes generally available. The period ends when the features become mandatory and are automatically enabled. The approximate date and service update when we expect to make each optional feature mandatory is shown in the **Automatically enabled from** field on the **Feature Management** page. After that date, the feature will no longer appear on the Feature Management page, and you can't turn it off. To learn more about the optional period, go to [Example timeline for an optional feature](feature-management.md#example-timeline-for-an-optional-feature).
 
+## Features becoming mandatory in 2024 release wave 2
+
+These features are now mandatory and can no longer be disabled.
+
+- [Feature Update: Use new customer and item templates in Shopify instead of the generic templates](https://go.microsoft.com/fwlink/?linkid=2224515)
+- [Feature: Convert user group permissions](https://go.microsoft.com/fwlink/?linkid=2220446)
+
+## Features enabled by default in 2024 release wave 2
+
+- [Feature Update: Enable multiple users to post warehouse entries at the same time](https://go.microsoft.com/fwlink/?linkid=2274007)
+- [Feature: Use optimized text search in lists](/dynamics365/business-central/ui-enter-criteria-filters#choose-between-modern-search-and-legacy-search)
+
+## Features geenerally avaialble in 2024 release wave 2
+
+The following features are generally available. However, they aren't turned on by default, so to use them your administrator must manually enable them.
+
+- [Feature: Enable legacy locking scheme in AL](https://go.microsoft.com/fwlink/?linkid=2244711). This key replaced the Feature: Enable Tri-State locking in AL key, whihc was enabled by default.
+
 ## Features becoming generally available in 2024 release wave 1
 
 |Feature  |Description  |
