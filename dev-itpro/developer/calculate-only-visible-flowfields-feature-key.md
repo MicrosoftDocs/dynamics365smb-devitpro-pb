@@ -8,7 +8,7 @@ ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
 ---
-# Feature: Calculate only visible FlowFields feature key
+# Calculate only visible FlowFields feature key
 
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
