@@ -12,11 +12,11 @@ ms.custom:
 
 # Update 26.0 for Microsoft Dynamics 365 Business Central online 2025 release wave 1
 
-This article provides an overview of new features and general information about update 26.0.
+This article provides an overview of new and changed features and general information about 2025 release wave 1 (version 26.0).
 
 ## New features
 
-The following table lists the new features planned for 26.0. For a comprehensive feature list and details, see [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/).
+This table lists the features in public preview or general availability for version 26.0 in April 2025. For a comprehensive feature list and details, see [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central).
 
 
 
@@ -179,7 +179,7 @@ This section outlines changes to features and feature updates controlled by **Fe
 
 Download on-premises files from Microsoft Support at [Update 26.0 for Business Central 2025 release wave 1](https://www.microsoft.com/en-us/download/details.aspx?id=106000).
 
-## Upgrade to 26.0
+## Upgrade to 26.0 for online customers
 
 New customers automatically get the latest builds of Business Central (26.0). Existing partners and customers receive an email notification when their environment is upgraded.
 
