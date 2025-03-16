@@ -54,7 +54,7 @@ These features are no longer controlled by a feature key in **Feature management
 |[Feature Update: Replace VAT Date CZ with VAT Reporting Date- Czechia](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/replace-vat-date-cz-vat-reporting-date--czechia)|Some countries require reporting for VAT statements and VAT returns by using a date that's different than the posting date. Sometimes, the date can be the document date, but even this date can differ from the requirement. For this reason, the VAT Date exists on all purchase and sales documents and on journals.|
 |[Feature update: Enable using SIE Audit Files Exports](/dynamics365/business-central/localfunctionality/sweden/how-to-use-sie-audit-files-export)|You can import and export general ledger data according to the standard import export (SIE) format. By specifying SIE dimensions and file types, you can define the level of detail that's covered by import or export transactions.|
 
-## Features generally avaialble in 2024 release wave 2
+## Features generally available in 2024 release wave 2
 
 The following features are generally available. However, they aren't turned on by default, so to use them your administrator must manually enable them.
 
