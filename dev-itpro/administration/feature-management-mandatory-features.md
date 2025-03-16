@@ -25,7 +25,7 @@ However, these features are only optional for a while. The period in which they'
 
 ## Features mandatory in 2024 release wave 2
 
-These features are now mandatory and can no longer be disabled.
+These features are no longer controlled in **Feature management**, so they can't be disabled.
 
 * [Feature Update: Use new customer and item templates in Shopify instead of the generic templates](https://go.microsoft.com/fwlink/?linkid=2224515)
 * [Feature: Convert user group permissions](https://go.microsoft.com/fwlink/?linkid=2220446)
@@ -37,7 +37,7 @@ These features are now mandatory and can no longer be disabled.
 
 ## Features mandatory in 2024 release wave 1
 
-These features are no longer controlled by a feature key in **Feature management**.
+These features are no longer controlled in **Feature management**, so they can't be disabled.
 
 |Feature  |Description  |
 |---------|---------|
@@ -72,7 +72,7 @@ The following features are generally available. However, they aren't turned on b
 
 ## Features mandatory in 2023 release wave 2
 
-These features are no longer controlled by a feature key in **Feature management** so they can no longer be disabled. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
+These features are no longer controlled in **Feature management**, so they can't be disabled.
 
 |Feature  |Description  |
 |---------|---------|
@@ -116,7 +116,7 @@ The change to making these features mandatory is postponed. They aren't turned o
 
 ## Features mandatory in 2023 release wave 1
 
-These features are no longer controlled by a feature key in **Feature management** so they can no longer be disabled. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
+These features are no longer controlled in **Feature management**, so they can't be disabled.
 
 |Feature  |Description  |
 |---------|---------|
@@ -141,7 +141,7 @@ These features are turned on by default for new customers, but you can still man
 
 ### Features generally available in 2023 release wave 1
 
-These features are now generally available. They aren't turned on by default and must be enabled manually. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
+These features are now generally available. They aren't turned on by default and must be enabled manually.
 
 * [Replace the existing Automatic Account Codes functionality with the new Automatic Account Codes extension](/dynamics-nav-app/localfunctionality/sweden/automatic-account-codes)
 * [Feature Update: Use new customer and item templates in Shopify instead of the generic templates](https://go.microsoft.com/fwlink/?linkid=2224515)
