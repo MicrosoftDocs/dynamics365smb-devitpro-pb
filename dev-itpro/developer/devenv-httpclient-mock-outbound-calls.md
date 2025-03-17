@@ -34,7 +34,7 @@ The property has the following possible values:
 |Value|Description|
 |------|----------|
 |`BlockOutboundRequests`|Any HTTP request issued during the test execution that isn't caught and handled by an HTTP client handler raises an exception.|
-|`AllowOutboundFromHandler`| All HTTP requests issued during the test execution are required to be caught by an HTTP client handler. The handler is allowed to explicitly fall through to issue the original request to the external endpoint.|
+|`AllowOutboundFromHandler`| All HTTP requests issued during the test execution are required to be caught by an HTTP client handler. The handler is allowed to explicitly fall through to issue the original request to the external endpoint. This ensures that no unintentional http requests are made.|
 |`AllowAllOutboundRequests`| All outbound HTTP requests issued during the test execution are allowed.|
 
 ## Example 
