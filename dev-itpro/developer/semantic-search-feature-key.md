@@ -8,7 +8,7 @@ ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
 ---
-# Use semantic search to find pages and reports
+# Use semantic search to find pages and reports with Copilot chat
 
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
