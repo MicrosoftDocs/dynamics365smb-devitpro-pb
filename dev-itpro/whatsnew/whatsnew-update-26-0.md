@@ -144,9 +144,9 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |              | [Adjust the FactBox pane width](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allow-adjusting-factbox-pane-width) |
 |              | [Use user interface enhancements for better experience](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-user-interface-enhancements-better-experience) |
 
-## Feature management changes
+## Changes to optional features in Feature Management
 
-This section outlines changes to features and feature updates controlled by **Feature management** in version 26.0.
+This section outlines changes to feature and feature update keys controlled by **Feature management** in version 26.0.
 
 ### New feature keys added and enabled by default
 
