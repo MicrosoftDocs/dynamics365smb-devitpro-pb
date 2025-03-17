@@ -23,4 +23,3 @@ This **Feature: Use semantic search to find pages and reports** feature key in f
 
 [Chat with Copilot](/dynamics365/business-central/chat-with-copilot)  
 [Enabling upcoming features ahead of time](/dynamics365/business-central/dev-itpro/administration/feature-management)  
-
