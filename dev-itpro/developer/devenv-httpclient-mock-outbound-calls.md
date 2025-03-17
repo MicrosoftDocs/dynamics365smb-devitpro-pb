@@ -27,14 +27,14 @@ The `HttpClientHandler` procedure receives a `TestHttpRequestMessage` that conta
 
 ## Handling the test execution
 
-In addition to defining the handler, you can control how outbound HTTP requests are treated during test execution by using the [TestHttpRequestPolicy](properties/devenv-testhttprequestpolicy-property.md) property. Blocking outbound requests during testing prevents unintended external calls. You can control this by using properties that specify whether requests are allowed, allowed only from handlers, or blocked.
+In addition to defining the handler, you can control how outbound HTTP requests are treated during test execution by using the [TestHttpRequestPolicy](properties/devenv-testhttprequestpolicy-property.md) property. By default, all outbound requests are allowed, but you can further restrict this behavior to only allow ones issued from a handler, or to block all unhandled outbound requests.
 
 The property has the following possible values:
 
 |Value|Description|
 |------|----------|
-|`BlockOutboundRequests`|Any HTTP request issued during the test execution that isn't caught and handled by an HTTP client handler raises an exception.|
-|`AllowOutboundFromHandler`| All HTTP requests issued during the test execution are required to be caught by an HTTP client handler. The handler is allowed to explicitly fall through to issue the original request to the external endpoint.|
+|`BlockOutboundRequests`|Any HTTP request issued during the test execution that isn't caught and handled by an HTTP client handler raises an exception. This can be very useful when you don’t want frequent test executions in CI/CD pipelines to hit the actual endpoint.|
+|`AllowOutboundFromHandler`| All HTTP requests issued during the test execution are required to be caught by an HTTP client handler. The handler is allowed to explicitly fall through to issue the original request to the external endpoint. This ensures that no unintentional http requests are made.|
 |`AllowAllOutboundRequests`| All outbound HTTP requests issued during the test execution are allowed.|
 
 ## Example 
