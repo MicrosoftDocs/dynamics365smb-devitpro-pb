@@ -16,7 +16,7 @@ This article provides an overview of new and changed features and general inform
 
 ## New features
 
-This table lists the features in public preview or general availability for version 26.0 in April 2025. For a comprehensive feature list and details, see [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central).
+This table lists the features in public preview or general availability for version 26.0. For a comprehensive feature list and details, refer to [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central).
 
 
 
