@@ -15,7 +15,7 @@ ms.collection:
 
 This article provides the following information about optional features, starting with 2023 release wave 1:
 
-* Features that are now mandatory and can't be disabled
+* Features that are now mandatory and can't be disabled. Feature keys are removed from moved from **Feature Management**.
 * Features that are turned on by default for new customers
 * Features that are now generally available
 
@@ -23,19 +23,25 @@ Some of the features or design improvements in major and minor updates are optio
 
 However, these features are only optional for a while. The period in which they're optional typically starts when the update they're made in becomes generally available. The period ends when the features become mandatory and are automatically enabled. The approximate date and service update when we expect to make each optional feature mandatory is shown in the **Automatically enabled from** field on the **Feature Management** page. After that date, the feature will no longer appear on the Feature Management page, and you can't turn it off. To learn more about the optional period, go to [Example timeline for an optional feature](feature-management.md#example-timeline-for-an-optional-feature).
 
-## Features mandatory in 2024 release wave 2
+## 2025 release wave 1 (version 26)
+
+## 2024 release wave 2 (version 25)
+
+### Features mandatory in version 25
 
 These features are no longer controlled in **Feature management**, so they can't be disabled.
 
 * [Feature Update: Use new customer and item templates in Shopify instead of the generic templates](https://go.microsoft.com/fwlink/?linkid=2224515)
 * [Feature: Convert user group permissions](https://go.microsoft.com/fwlink/?linkid=2220446)
 
-## Features enabled by default in 2024 release wave 2
+## Features enabled by default in version 25
 
 * [Feature Update: Enable multiple users to post warehouse entries at the same time](https://go.microsoft.com/fwlink/?linkid=2274007)
 * [Feature: Use optimized text search in lists](/dynamics365/business-central/ui-enter-criteria-filters#choose-between-modern-search-and-legacy-search)
 
-## Features mandatory in 2024 release wave 1
+## 2024 release wave 1 (version 24)
+
+### Features mandatory in version 24
 
 These features are no longer controlled in **Feature management**, so they can't be disabled.
 
@@ -54,23 +60,16 @@ These features are no longer controlled in **Feature management**, so they can't
 |[Feature Update: Replace VAT Date CZ with VAT Reporting Date- Czechia](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/replace-vat-date-cz-vat-reporting-date--czechia)|Some countries require reporting for VAT statements and VAT returns by using a date that's different than the posting date. Sometimes, the date can be the document date, but even this date can differ from the requirement. For this reason, the VAT Date exists on all purchase and sales documents and on journals.|
 |[Feature update: Enable using SIE Audit Files Exports](/dynamics365/business-central/localfunctionality/sweden/how-to-use-sie-audit-files-export)|You can import and export general ledger data according to the standard import export (SIE) format. By specifying SIE dimensions and file types, you can define the level of detail that's covered by import or export transactions.|
 
-## Features generally available in 2024 release wave 2
+## Features generally available in 24
 
 The following features are generally available. However, they aren't turned on by default, so to use them your administrator must manually enable them.
 
 * [Feature: Enable legacy locking scheme in AL](https://go.microsoft.com/fwlink/?linkid=2244711). This key replaced the **Feature: Enable Tri-State locking in AL** key, which was enabled by default.
 
-## Features generally available in 2023 release wave 2
+## 2023 release wave 2 (version 23)
 
-The following features are generally available. However, they aren't turned on by default, so to use them your administrator must manually enable them.
 
-|Feature  |Description  |
-|---------|---------|
-|[Feature Update: Enable use of new extensible invoice posting engine](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)  |Regulations in different countries/regions and industries, and customer business practices, might require a change to how general ledger entries are aggregated during posting. We remove the dependencies from the Invoice Posting Buffer table in the base application and build an invoice posting component with an interface and an extensible enum for the implementation setup. This refactoring makes the posting process for sales, purchase, and service transactions extensible.  |
-|[Feature Update: Enable use of new extensible exchange rate adjustment, including posting review](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/adjust-exchange-rates-easily-replace-built-in-batch-job)  |When companies operate in multiple countries or regions, it's important that they can do business and run financial reports in more than one currency. Because exchange rates often change, businesses must periodically update the rates in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. This feature update gives accountants additional control over how they adjust exchange rates. At the same time, it allows partners to extend and customize an exchange rate adjustment to meet the needs of specific industries or markets.  |
-|[Feature Update: Enable Tri-State locking in AL](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/performance-gain-reducing-locks-database)  |The tri-state locking feature is aimed at enhancing the performance and concurrency of database transactions. By enabling this feature, AL-based read operations that follow write operations are performed optimistically, rather than with strict consistency and low concurrency. Consequently, users can expect higher levels of concurrency and fewer blocked or failed operations while accessing data. [Learn more about tri-state locking](../developer/devenv-tri-state-locking.md).  |
-
-## Features mandatory in 2023 release wave 2
+### Features mandatory in version 23
 
 These features are no longer controlled in **Feature management**, so they can't be disabled.
 
@@ -80,6 +79,17 @@ These features are no longer controlled in **Feature management**, so they can't
 |[Feature: Enable using Form 1096 to transmit paper Tax Forms to the IRS in the United States](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/irs-1096-form-united-states)  |Form 1096 is used to transmit paper forms 1097, 1098, 1099, 3921, 3922, 5498, and W-2G to the IRS. You can now run the Form 1096 report and send it to the IRS if this is required for them. Because [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reports only Form 1099, the new Form 1096 is related only to any already transmitted 1099 paper forms.  |
 |[Feature: Enable using of Service Declaration (Intrastat for Services)](/dynamics365/business-central/finance-how-setup-use-service-declaration)  | In some EU countries/regions, authorities require that businesses report the export of services to other EU countries/regions. The Service Declaration extension lets you collect information about service trade in the EU and report it to the authorities. Although it's named Service Declaration, you can also use it as Intrastat for Services. This extension is available for all EU countries/regions as a W1 version, and it can be used as-is in Belgium.  |
 |[Feature Update: Standardized bank reconciliation and deposits.](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions?branch=main&branchFallbackFrom=pr-en-us-2746)|Bank reconciliation in the North American (NA) versions for the United States, Canada, and Mexico can be done either through the standard **Bank Reconciliation** page or with the **Bank Rec. Worksheet** page, which was missing some of the newer features that the **Bank Reconciliation** page offers. To standardize the bank reconciliation process, we have modified the **Bank Reconciliation** page, added a feature for deposits that is the same as we provide for the NA version today, and added capabilities to allow users to reconcile deposits.|
+
+### Features generally available in version 23
+
+The following features are generally available. However, they aren't turned on by default, so to use them your administrator must manually enable them.
+
+|Feature  |Description  |
+|---------|---------|
+|[Feature Update: Enable use of new extensible invoice posting engine](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)  |Regulations in different countries/regions and industries, and customer business practices, might require a change to how general ledger entries are aggregated during posting. We remove the dependencies from the Invoice Posting Buffer table in the base application and build an invoice posting component with an interface and an extensible enum for the implementation setup. This refactoring makes the posting process for sales, purchase, and service transactions extensible.  |
+|[Feature Update: Enable use of new extensible exchange rate adjustment, including posting review](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/adjust-exchange-rates-easily-replace-built-in-batch-job)  |When companies operate in multiple countries or regions, it's important that they can do business and run financial reports in more than one currency. Because exchange rates often change, businesses must periodically update the rates in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. This feature update gives accountants additional control over how they adjust exchange rates. At the same time, it allows partners to extend and customize an exchange rate adjustment to meet the needs of specific industries or markets.  |
+|[Feature Update: Enable Tri-State locking in AL](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/performance-gain-reducing-locks-database)  |The tri-state locking feature is aimed at enhancing the performance and concurrency of database transactions. By enabling this feature, AL-based read operations that follow write operations are performed optimistically, rather than with strict consistency and low concurrency. Consequently, users can expect higher levels of concurrency and fewer blocked or failed operations while accessing data. [Learn more about tri-state locking](../developer/devenv-tri-state-locking.md).  |
+
 <!--
 
 Coming soon...
@@ -114,7 +124,9 @@ The change to making these features mandatory is postponed. They aren't turned o
 |---------|---------|
 |[Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)     | 2025 release wave 1        | -->
 
-## Features mandatory in 2023 release wave 1
+## 2023 release wave 1 (version 22)
+
+### Features mandatory in version 22
 
 These features are no longer controlled in **Feature management**, so they can't be disabled.
 
@@ -130,7 +142,7 @@ These features are no longer controlled in **Feature management**, so they can't
 |[Report read-only data access](/dynamics365/business-central/admin-data-access-intent)     | You can set up [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to use read-only replicas of the primary (read-write) database. Using the database replica reduces the load on the primary database. In some cases, it will also improve the performance when viewing data in the client. Replicas benefit objects, like reports, queries, and API pages, that are used for viewing data only, not modifying data.        |
 |[Unlock time sheets in Business Central using assisted setup and data entry on mobile devices](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/unlock-time-sheets-business-central-using-assisted-setup-data-entry-mobile-devices)     | Getting to that first time sheet entry should be as painless as possible. Many employees use time sheets. As the time sheet administrator or manager, you want to make sure that [!INCLUDE [prod_short](../developer/includes/prod_short.md)] has you covered when you create time sheets for the first time, or you add an employee or resource to record the time spent on tasks.A busy professional on the road using mobile devices (Android or iOS) needs to be able to provide time sheet entries in an easy and productive way while on the go.        |
 
-### Features enabled by default in 2023 release wave 1
+### Features enabled by default in version 22
 
 These features are turned on by default for new customers, but you can still manually disable them. Use the links to learn more about them in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans.
 
@@ -139,7 +151,7 @@ These features are turned on by default for new customers, but you can still man
 |[Convert user group permissions](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/manage-user-permissions-using-security-groups)     | As businesses grow and change, managing permissions can become increasingly complex. Security groups can simplify the process by allowing administrators to group users by department, job function, or other criteria, and assign permissions to the group as a whole. Using security groups to manage permissions can save time and reduce the risk of human error. Security groups allow for easier management of access control, ensuring that users only have access to the resources they need. This can also streamline the process of onboarding new employees or contractors, as they can be quickly added to the appropriate security groups.        |
 |[New approval workflow experience with Power Automate templates](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/new-approval-workflow-experience-templates-power-automate)     | Advanced and flexible approval workflows don't need to be complex. Business owners or decision makers can choose from multiple templates when they set up approval workflows in [!INCLUDE [prod_short](../developer/includes/prod_short.md)].        |
 
-### Features generally available in 2023 release wave 1
+### Features generally available in version 22
 
 These features are now generally available. They aren't turned on by default and must be enabled manually.
 
