@@ -39,7 +39,7 @@ The property has the following possible values:
 
 ## Example 
 
-In the following example the `MyCodeunit` codeunit makes an external web service call, and the `MyCodeunitTests` test codeunit intercepts the call and using the `HttpClientHandler` function it mocks the HTTP responses.
+In the following example we have a procedure `GetDocumentContent` in the codeunit `DocumentService` that makes an external web service call. To verify that the `GetDocumentContent` works as expected, we can create a test in our `DocumentServiceTest` codeunit that makes an invocation to the `GetDocumentContents` and checks the content. Finally, we define an `HttpClientHandler` that simulates the desired `200 SUCCESS` response and attach it to the previously defined test. When the test is executed the handler will intercept the outbound request and mock the response.
 
 ```al
 codeunit 50100 MyCodeunit
