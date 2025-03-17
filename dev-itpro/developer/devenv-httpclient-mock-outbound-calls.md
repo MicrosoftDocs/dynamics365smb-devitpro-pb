@@ -1,7 +1,7 @@
 ---
 title: Mock outbound HttpClient web service calls during testing
 description: Learn about how to test HttpClient web calls to external services without invoking the live/actual/remote service.
-ms.date: 02/19/2025
+ms.date: 03/17/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
@@ -16,7 +16,7 @@ ms.author: solsen
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
 Testability of AL code that interacts with external web services is enhanced when the responses from these services can be simulated in AL, eliminating the need to configure actual endpoints. Mocking outbound web calls is useful when testing that your code is capable of handling a wide range of possible responses, and allowing you to track outbound traffic during the test executions.
-To mock outbound HttpClient calls, you start by defining an HttpClientHandler that intercepts and processes the requests and simulates a response. Such a handler can be created by declaring a procedure with the appropriate signature and marking it with the HttpClientHandler attribute. In the body of the procedure you can analyze the intercepted request and mock the response by populating the response object with the desired values. Finally, the handler can be attached to any test method in the codeunit using the HandlerFunctions attribute. When a handler is attached to a test then all HttpClient calls that occur during the execution of that test is routed to the handler instead of the actual endpoint. However, there can be scenarios where you might only want to handle certain requests while letting others through to the external endpoint. This can be achieved by setting the return value of the handler accordingly.
+To mock outbound HttpClient calls, you start by defining an HttpClientHandler that intercepts and processes the requests and simulates a response. Such a handler can be created by declaring a procedure with the appropriate signature and marking it with the [HttpClientHandler](attributes/devenv-httpclienthandler-attribute.md) attribute. In the body of the procedure you can analyze the intercepted request and mock the response by populating the response object with the desired values. Finally, the handler can be attached to any test method in the codeunit using the [HandlerFunctions](attributes/devenv-handlerfunctions-attribute.md) attribute. When a handler is attached to a test then all HttpClient calls that occur during the execution of that test is routed to the handler instead of the actual endpoint. However, there can be scenarios where you might only want to handle certain requests while letting others through to the external endpoint. This can be achieved by setting the return value of the handler accordingly.
 
 ## Defining the handler
 
