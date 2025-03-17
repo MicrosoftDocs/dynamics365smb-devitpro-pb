@@ -12,7 +12,7 @@ ms.custom:
 
 # What's new or changed in Business Central 2025 release wave 1 update 26.0
 
-This article provides an overview of new and changed features and general information about 2025 release wave 1 (version 26.0).
+This article provides an overview of new features, changed features, and general information about the 2025 release wave 1 (update 26.0).
 
 ## New features
 
@@ -34,7 +34,7 @@ Add links:
 
 1. Start Copilot Chat
 1. Slect table you just cretaed.
-1. Copy thi spormpt in chat:
+1. Copy thi prompt in chat:
 
 In the table, make each feature name in the Feature column a markdown link. Follow these steps for each row in the column:
  
