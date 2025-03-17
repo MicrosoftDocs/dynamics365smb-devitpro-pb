@@ -1,6 +1,6 @@
 ---
 title: Mock outbound HttpClient web service calls during testing
-description: Learn about how to test calling external services without having to set up a service using the HttpClient datatype.
+description: Learn about how to test HttpClient web calls to external services without invoking the live/actual/remote service.
 ms.date: 02/19/2025
 ms.reviewer: solsen
 ms.topic: conceptual
@@ -42,43 +42,63 @@ The property has the following possible values:
 In the following example we have a procedure `GetDocumentContent` in the codeunit `DocumentService` that makes an external web service call. To verify that the `GetDocumentContent` works as expected, we can create a test in our `DocumentServiceTest` codeunit that makes an invocation to the `GetDocumentContents` and checks the content. Finally, we define an `HttpClientHandler` that simulates the desired `200 SUCCESS` response and attach it to the previously defined test. When the test is executed the handler will intercept the outbound request and mock the response.
 
 ```al
-codeunit 50100 MyCodeunit
+
+codeunit 1 DocumentService
 {
-    procedure MethodWithHttpRequest()
+    procedure GetDocumentContent(DocumentId: Text): Text
     var
         Client: HttpClient;
         Response: HttpResponseMessage;
+        Success: Boolean;
+        Content: Text;
     begin
-        Client.Get('http://example.com', Response); // Store response in Response variable
+        Success := Client.Get('http://example.com/documents?DocumentId=' + DocumentId, Response);
+
+        if (not Success) or (not Response.IsSuccessStatusCode) then
+            Error('Unsuccessful request');
+
+        Response.Content.ReadAs(Content);
+
+        exit(Content);
     end;
 }
 
-codeunit 50111 MyCodeunitTests
+codeunit 2 DocumentServiceTest
 {
     Subtype = Test; // Test codeunit
     TestHttpRequestPolicy = AllowOutboundFromHandler; // Allow outbound requests from handler
 
     [Test]
-    [HandlerFunctions(`HttpClientHandler`)]
-    procedure TestUnauthorizedResponseHandled()
+    [HandlerFunctions('Handler')]
+    procedure TestGetDocumentContent()
     var
-        MyCodeUnit: Codeunit: "MyCodeunit";
+        DocService: Codeunit "DocumentService";
     begin
-        MyCodeUnit.MethodWithHttpRequest();
+        if (DocService.GetDocumentContent('EXAMPLE_ID') <> 'EXAMPLE CONTENT EXAMPLE_ID') then
+            Error('Unexpected document content');
     end;
 
     [HttpClientHandler]
-    procedure HttpClientHandler(request: TestHttpRequestMessage; var response: TestHttpResponseMessage): Boolean
+    procedure Handler(Request: TestHttpRequestMessage; var Response: TestHttpResponseMessage): Boolean
+    var
+        DocumentId: Text;
     begin
-        // Mock a ´401 Unauthorized´ response for the `GET http://example.com` request
-        if (request.RequestType = HttpRequestType::Get) and (request.Path = 'http://example.com') then begin
-            response.HttpStatusCode := 401;
-            response.ReasonPhrase := 'Unauthorized';
+        if (Request.RequestType = HttpRequestType::Get) and (Request.Path = 'http://example.com/documents') then begin
+            // Extract the DocumentId from the query parameters
+            Request.QueryParameters.Get('DocumentId', DocumentId);
+
+            // Populate the mocked response with the example content
+            Response.Content.WriteFrom('EXAMPLE CONTENT ' + DocumentId);
+            response.HttpStatusCode := 200;
+            response.ReasonPhrase := 'SUCCESS';
+
             exit(false); // Use the mocked response
         end;
-            exit(true); // fall through and issue the original request in case of other requests
+
+        exit(true); // fall through and issue the original request in case of other requests
     end;
 }
+
 ```
 
 ### Security limitations
