@@ -14,6 +14,8 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] runtime 15.0, you can add t
 
 The `UserControlHost` page type can **only** have a single control of type `usercontrol` within the layout `Content` area. Furthermore, you can't specify actions on this page type. Likewise, only a limited number of properties and triggers are available for it and the page type isn't extensible.
 
+The following example illustrates the differences between a standard page and a `UserControlHost` page. The example uses the `WebPageViewer` user control, which is a simple web browser control that can be used to display web pages in the client.
+
 ## Example
 
 ```al
@@ -30,7 +32,7 @@ page 50100 StandardPage
     PageType = Card;
     Caption = 'Standard Page';
     AboutTitle = 'About this page';
-    AboutText = 'Displays a single user control in a normal card page';
+    AboutText = 'Displays a single user control in a standard card page';
     ApplicationArea = All;
     UsageCategory = Documents;
 
@@ -81,9 +83,7 @@ page 50101 UserControlHost
 }
 ```
 
-
 ## Related information
 
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page object](devenv-page-object.md)  
-
