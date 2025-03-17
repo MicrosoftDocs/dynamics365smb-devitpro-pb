@@ -27,7 +27,7 @@ The `HttpClientHandler` procedure receives a `TestHttpRequestMessage` that conta
 
 ## Handling the test execution
 
-In addition to defining the handler, you can control how outbound HTTP requests are treated during test execution by using the [TestHttpRequestPolicy](properties/devenv-testhttprequestpolicy-property.md) property. Blocking outbound requests during testing prevents unintended external calls. You can control this by using properties that specify whether requests are allowed, allowed only from handlers, or blocked.
+In addition to defining the handler, you can control how outbound HTTP requests are treated during test execution by using the [TestHttpRequestPolicy](properties/devenv-testhttprequestpolicy-property.md) property. By default, all outbound requests are allowed, but you can further restrict this behavior to only allow ones issued from a handler, or to block all unhandled outbound requests.
 
 The property has the following possible values:
 
