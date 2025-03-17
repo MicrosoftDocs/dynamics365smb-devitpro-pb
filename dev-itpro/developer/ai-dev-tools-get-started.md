@@ -33,7 +33,7 @@ This article explains the tasks that must be completed so that you can start int
    |What|Where to find it|
    |-|-|
    |Azure OpenAI API key and endpoint (URL)|**Keys and Endpoint** page for the resource in the Azure portal.|
-   |Deployment name for the model|**Deployments** page in Azure AI Foundry portal.|
+   |Deployment name for the model|**Deployments** page in [Azure AI Foundry portal](https://ai.azure.com/).|
 
 ## Next steps
 
