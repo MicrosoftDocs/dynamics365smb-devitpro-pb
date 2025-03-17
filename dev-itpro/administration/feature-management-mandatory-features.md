@@ -34,7 +34,7 @@ These features are no longer controlled in **Feature management**, so they can't
 * [Feature Update: Use new customer and item templates in Shopify instead of the generic templates](https://go.microsoft.com/fwlink/?linkid=2224515)
 * [Feature: Convert user group permissions](https://go.microsoft.com/fwlink/?linkid=2220446)
 
-## Features enabled by default in version 25
+### Features enabled by default in version 25
 
 * [Feature Update: Enable multiple users to post warehouse entries at the same time](https://go.microsoft.com/fwlink/?linkid=2274007)
 * [Feature: Use optimized text search in lists](/dynamics365/business-central/ui-enter-criteria-filters#choose-between-modern-search-and-legacy-search)
@@ -60,14 +60,13 @@ These features are no longer controlled in **Feature management**, so they can't
 |[Feature Update: Replace VAT Date CZ with VAT Reporting Date- Czechia](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/replace-vat-date-cz-vat-reporting-date--czechia)|Some countries require reporting for VAT statements and VAT returns by using a date that's different than the posting date. Sometimes, the date can be the document date, but even this date can differ from the requirement. For this reason, the VAT Date exists on all purchase and sales documents and on journals.|
 |[Feature update: Enable using SIE Audit Files Exports](/dynamics365/business-central/localfunctionality/sweden/how-to-use-sie-audit-files-export)|You can import and export general ledger data according to the standard import export (SIE) format. By specifying SIE dimensions and file types, you can define the level of detail that's covered by import or export transactions.|
 
-## Features generally available in 24
+### Features generally available in 24
 
 The following features are generally available. However, they aren't turned on by default, so to use them your administrator must manually enable them.
 
 * [Feature: Enable legacy locking scheme in AL](https://go.microsoft.com/fwlink/?linkid=2244711). This key replaced the **Feature: Enable Tri-State locking in AL** key, which was enabled by default.
 
 ## 2023 release wave 2 (version 23)
-
 
 ### Features mandatory in version 23
 
