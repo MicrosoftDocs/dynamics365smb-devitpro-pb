@@ -1,5 +1,5 @@
 ---
-title: Update 26.0 for Microsoft Dynamics 365 Business Central 2025 release wave 1
+title: What's new or changed in Business Central 2025 release wave 1 update 26.0
 description: Get an overview of new and changed capabilities in the 26.0 update of Business Central online, which is part of 2025 release wave 1.
 ms.author: jswymer
 ms.date: 01/27/2025
@@ -10,7 +10,7 @@ ms.custom:
     - bap-template
 ---
 
-# Update 26.0 for Microsoft Dynamics 365 Business Central online 2025 release wave 1
+# What's new or changed in Business Central 2025 release wave 1 update 26.0
 
 This article provides an overview of new and changed features and general information about 2025 release wave 1 (version 26.0).
 
