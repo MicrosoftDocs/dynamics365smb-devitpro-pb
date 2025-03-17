@@ -1,8 +1,8 @@
 ---
-title: "Maintain AppSource apps and per-tenant extensions"
-description: "Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product."
+title: Maintain AppSource apps and per-tenant extensions
+description: Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product.
 author: solsen
-ms.date: 08/28/2024
+ms.date: 03/17/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: jswymer
