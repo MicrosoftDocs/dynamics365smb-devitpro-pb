@@ -25,6 +25,31 @@ However, these features are only optional for a while. The period in which they'
 
 ## 2025 release wave 1 (version 26)
 
+### Features mandatory in version 26
+
+These features are no longer controlled in **Feature management**, so they can't be disabled.
+
+
+- [Feature Update: Enable use of new extensible exchange rate adjustment, including posting review](https://go.microsoft.com/fwlink/?linkid=2187318)
+- [Feature Update: Enable use of new extensible invoice posting engine](https://go.microsoft.com/fwlink/?linkid=2187318)
+- [Feature Update: Replace the existing EU 3-Party Trade Purchase functionality with the new EU 3-Party Trade Purchase extension](https://go.microsoft.com/fwlink/?linkid=2235119)
+- [Feature: Enable legacy locking scheme in AL](https://go.microsoft.com/fwlink/?linkid=2244711)
+- [Feature: Enable using bulk operations for Shopify connector](https://go.microsoft.com/fwlink/?linkid=2242514)
+
+### Features added and enabled by default in version 26
+
+- [Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking.](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods)
+- [Feature: Disable SOAP web services on Microsoft UI pages](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)<!-- missing rp-->
+- [Feature: Enable server certificate validation for HTTP requests](../developer/devenv-httpcertvalid-feature-key.md)
+
+### Features added and disabled by default in version 26
+
+- [Feature Update: Enable multiple users to post item ledger entries and value entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833) 
+- [Feature Update: Enable multiple users to post job ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
+- [Feature Update: Enable multiple users to post resource ledger entries at the same time entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
+- [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
+- [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md)<!-- missing rp-->
+
 ## 2024 release wave 2 (version 25)
 
 ### Features mandatory in version 25
