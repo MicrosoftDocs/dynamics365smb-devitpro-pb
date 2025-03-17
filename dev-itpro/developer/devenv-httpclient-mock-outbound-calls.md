@@ -23,7 +23,7 @@ To mock outbound HttpClient calls you start by defining an HttpClientHandler tha
 The `HttpClientHandler` procedure receives a `TestHttpRequestMessage` that contains information about the HTTP request, and a `TestHttpResponseMessage` that contains the mocked HTTP response values that should be updated by the handler. The boolean return value indicates whether to issue the original HTTP request; `true` or use the mocked response; `false`.
 
 > [!NOTE]
-> The `HttpClientHandler`function returns a "not found" response if the document is empty or is a "200 OK" response if the ID is correct. This allows for testing different scenarios based on the request data.
+> The default return value of the `HttpClientHandler` procedure is `false`, ensuring that external service calls are only made intentionally. Therefore, an empty handler would still intercept the outbound request and mock a default response.
 
 ## Handling the test execution
 
