@@ -127,12 +127,17 @@ If an action or other code element points to a now removed object, then the guid
   - If code points to an obsoleted method, then use directives to put in the fixed code.
   - If code points to an obsoleted table/field, then use directives to put in the fixed code.
 
+## Obsoleting reports
+
+If you plan to deprecate reports in your AppSource apps or per-tenant extensions, you might want to inform other developers and your users before you remove the reports. To learn more, go to [Obsoleting reports](devenv-reports-obsoletion.md).
+
 ## Related information
 
+[Obsoleting reports](devenv-reports-obsoletion.md)  
 [AL development environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
 [Microsoft timeline for deprecating code in Business Central](devenv-deprecation-timeline.md)  
 [ObsoleteTag property](properties/devenv-obsoletetag-property.md)  
 [ObsoleteState property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason property](properties/devenv-obsoletereason-property.md)  
-[Obsolete attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute)
+[Obsolete attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute)  

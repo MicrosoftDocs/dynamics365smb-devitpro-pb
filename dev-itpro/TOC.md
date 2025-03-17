@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
 ### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
 ### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
 ### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
@@ -796,11 +797,12 @@
 #### [Transferring data (during upgrade)](developer/devenv-data-transfer.md)
 
 #### Importing and exporting data
+##### [Exporting data to Excel using ExcelBuffer](developer/devenv-excel-buffer.md)
 ##### [XMLport overview](developer/devenv-xmlport-overview.md)
-##### [XMLport object](developer/devenv-xmlport-object.md)
-##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)
-##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
-##### [Using request pages with XMLports](developer/devenv-request-pages.md)
+###### [XMLport object](developer/devenv-xmlport-object.md)
+###### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)
+###### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
+###### [Using request pages with XMLports](developer/devenv-request-pages.md)
 
 
 ### Pages and the user interface
@@ -959,6 +961,7 @@
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
 #### [Troubleshooting report errors](developer/devenv-reports-troubleshooting.md)
+#### [Obsoleting reports](developer/devenv-reports-obsoletion.md)
 #### [Report telemetry](administration/telemetry-reports-trace.md)
 #### How users work with reports
 ##### [Run and print reports](/dynamics365/business-central/ui-work-report?toc=/dynamics365/business-central/dev-itpro/toc.json)
