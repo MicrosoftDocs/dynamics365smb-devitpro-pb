@@ -4,7 +4,7 @@ description: This article provides the specifications of minimum hardware and so
 ms.custom: bap-template
 ms.service: dynamics-365-op
 ms.topic: overview
-ms.date: 01/07/2025
+ms.date: 03/18/2025
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -36,7 +36,7 @@ For the latest information, see the app in the App Store or Google Play.
 
 |Specification|Requirement|  
 |------|-----|
-|[!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)] version|<ul><li>3.7 or later</li></ul>|  
+|[!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)] version|<ul><li>4.0 or later</li></ul>|  
 |Supported operating systems|<ul><li>Android (tablet and phone): The latest three major versions and their updates.</li><li> iOS (iPad and iPhone): The latest three major versions and their updates.</li></ul>|  
 |Additional hardware|<ul><li>1-GB RAM for Android and Windows.</li></ul>|  
 |Additional information|<ul><li>Device diagonal screen size 7" for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4" for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>| 
