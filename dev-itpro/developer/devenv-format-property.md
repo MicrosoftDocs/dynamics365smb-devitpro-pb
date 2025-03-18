@@ -1,7 +1,7 @@
 ---
 title: Formatting values, dates, and time
 description: Learn how to format values, dates, and time in Business Central.
-ms.date: 03/17/2025
+ms.date: 03/18/2025
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
