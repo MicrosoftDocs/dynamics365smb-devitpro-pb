@@ -2,8 +2,8 @@
 title: AVS Error AVS0101
 description: "A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found."
 ms.author: thpeder
-ms.date: 04/26/2024
-ms.reviewer: jswymer
+ms.date: 01/30/2025
+ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
 ---

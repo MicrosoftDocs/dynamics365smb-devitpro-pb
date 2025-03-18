@@ -36,27 +36,27 @@ To avoid unnecessary recalculation of expensive results, consider caching the da
 
 Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. Any use of a query object always goes to the database. So, sometimes it's faster to not use a query object. 
 
-### Pattern - Do less
+### Pattern - do less
 
 One way to speed up things is to reduce the amount of work that the system must do. For example, to reduce slowness of role centers, consider how many page parts are needed for the user. Another benefit of a simple page with few UI elements can also be ease of use and navigation.
 
-Remove calculated fields from lists if they aren't needed, especially on larger tables. Setting the field's Enabled or Visible properties to false isn't enough. The field definition needs to be removed from the page or page extension definition. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
+Remove calculated fields from lists if they aren't needed, especially on larger tables. Setting the field's `Enabled` or `Visible` properties to false isn't enough. The field definition needs to be removed from the page or page extension definition. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
 
 Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages run all triggers and fact boxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
  
-### Pattern - Offloading the UI thread
+### Pattern - offloading the UI thread
 
 To get to a responsive UI fast, consider using Page Background Tasks for calculated values, for example, the values shown in cues.
 
-For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).
+Learn more about Page Background Tasks in [Page background tasks](../developer/devenv-page-background-tasks.md).
 
 ### Making Edit-in-Excel faster
 
 The **Edit in Excel** feature uses UI pages exposed through OData, which means that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server to Excel. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating fact boxes, avoid calculation, and avoid defaulting logic.
 
-## Writing efficient Web Services
+## Writing efficient web services
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports for web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). 
 
 ### Endpoint performance
 
@@ -82,7 +82,7 @@ The **Edit in Excel** feature uses UI pages exposed through OData, which means t
 
 [!INCLUDE[report_performance](../includes/include-report-performance.md)]
 
-For more information on how to use telemetry to analyze the performance of reports, see [Report performance](../developer/devenv-report-performance.md)
+Learn more about how to use telemetry to analyze the performance of reports in [Report performance](../developer/devenv-report-performance.md)
 
 ### Stop using report properties **DefaultLayout**, **ExcelLayout**, **RDLLayout**, and **WordLayout**
 
@@ -122,6 +122,11 @@ When working with strings, make sure to use the `TextBuilder` data type and not 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. Learn more in [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
 Use a `List` data type if you need an unbound "array" (where you would previously create a temporary table object). Learn more in [List Data Type](../developer/methods-auto/list/list-data-type.md).
+When working with strings, make sure to use the `TextBuilder` data type, and not repeated use of the `+=` operator on a `Text` variable. General guidance is to use a `Text` data type if you concatenate fewer than five strings (here the internal allocation of a `TextBuilder` and the final `ToText` invocation is more expensive). If you need to concatenate five strings or more or concatenate strings in a loop, then `TextBuilder` is faster. Also, use a `TextBuilder` data type instead of `BigText` when possible. Learn more in [TextBuilder data type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). 
+
+If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. Learn more in [Dictionary data type](../developer/methods-auto/dictionary/dictionary-data-type.md).
+
+Use a `List` data type if you need an unbound "array" (where you would previously create a temporary table object). Learn more in [List data type](../developer/methods-auto/list/list-data-type.md).
 
 Use the `Media` or `Mediaset` data types instead of the `Blob` data type. The `Media` and `MediaSet` data types have a couple advantages over the `Blob` data type when working with images. First of all, a thumbnail version of the image is generated when you save the data. You can use the thumbnail when loading a page and then load the larger image asynchronously using a page background task. Second, data for `Media` and `MediaSet` data types is cached on the client. Data for the `Blob` data type is never cached on the server. It's always fetched from the database.
 
@@ -134,7 +139,7 @@ Use the `Media` or `Mediaset` data types instead of the `Blob` data type. The `M
 The AL methods such as `FindSet`, `CalcFields`, `CalcSums`, and `SetAutoCalcFields` are examples of set-based operations that are faster than looping over a result set and do the calculation for each row.
 
 - [CalcFields, CalcSums, and Count](../administration/optimize-sql-al-database-methods-and-performance-on-server.md#calc) 
-- [FindSet Method](../developer/methods-auto/recordref/recordref-findset-method.md)
+- [FindSet method](../developer/methods-auto/recordref/recordref-findset-method.md)
 
 One common use of the `CalcSums` method is to efficiently calculate totals. 
 
@@ -154,11 +159,11 @@ Consider using a query object if you want to use a set-based coding paradigm. Th
 
 Read more about query objects here:
 
-- [Using Queries Instead of Record Variables](../developer/devenv-query-using-instead-record-variables.md)  
+- [Using queries instead of record variables](../developer/devenv-query-using-instead-record-variables.md)  
 - [Query object](../developer/devenv-query-object.md)  
 - [Query overview](../developer/devenv-query-overview.md)  
-- [TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
-- [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
+- [TopNumberOfRows property](../developer/properties/devenv-topnumberofrows-property.md)  
+- [Query objects and performance](../administration/optimize-sql-query-objects-and-performance.md)
 
 ### <a name="partialrecords"></a>Pattern - Use partial records when looping over data, in reports, or when table extension fields aren't needed
 
@@ -182,7 +187,7 @@ Table extensions are separate tables in the database and therefore need to be jo
 
 With central tables to the application, such as General Ledger Entry (G/L Entry), one should be extra cautious adding table extensions since these tables are frequently used throughout the application.
 
-The adverse affects of many table extensions can be mitigated with the application of partial records, see [Using Partial Records](../developer/devenv-partial-records.md). However, since the developer may not have ownership of all executed code, and therefore isn't able to apply partial records everywhere, the above recommendation still stands.
+The adverse affects of many table extensions can be mitigated with the application of partial records, learn more in [Using partial records](../developer/devenv-partial-records.md). However, since the developer may not have ownership of all executed code, and therefore isn't able to apply partial records everywhere, the above recommendation still stands.
 
 An alternative approach when doing data modeling for extending a table with new fields is to use a related table and define a FlowField on the base table.
 
@@ -211,7 +216,7 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 
 [!INCLUDE[httpclientPerformance](../includes/performance-outgoing-http.md)] 
 
-### Limit work done in login event subscribers
+### Limit work done in sign in event subscribers
 [!INCLUDE[login_performance](../includes/include-telemetry-login-performance.md)])
 
 ## Efficient data access 
@@ -220,14 +225,14 @@ Many performance issues are related to how data is defined, accessed, and modifi
 
 ### Tables and keys 
 
-Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code will access data. 
+Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code accesses data. 
 
 These articles on indexing are worth knowing as an AL developer:
 
-- [About Table Keys](../developer/devenv-table-keys.md)
-- [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
+- [About table keys](../developer/devenv-table-keys.md)
+- [Table keys and performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
 - [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described)
-- [Missing Indexes](../administration/database-missing-indexes.md)
+- [Missing indexes](../administration/database-missing-indexes.md)
 
 Indexes have a cost to update, so it's recommended to not add too many of them on a table. 
 
@@ -238,7 +243,7 @@ Every table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]) incl
 - `SystemCreatedAt`
 - `SystemModifiedAt`
 
-One example is to use the system field `SystemModifiedAt` to implement delta reads. For more information about system fields, see [System Fields](../developer/devenv-table-system-fields.md).  
+One example is to use the system field `SystemModifiedAt` to implement delta reads. Learn more about system fields in [System fields](../developer/devenv-table-system-fields.md).  
 
 ### Non-clustered Columnstore Indexes (NCCI)
 
@@ -260,9 +265,9 @@ Ensure appropriate SIFT indices for all FlowFields of type sum or count.
 Read more about SIFT here:
 
 - [SumIndexField Technology (SIFT)](../developer/devenv-sift-technology.md)  
-- [SIFT and Performance](../developer/devenv-sift-performance.md)  
-- [Tuning and Tracing](../developer/devenv-sift-tuning-and-tracing.md)  
-- [SIFT and SQL Server](../developer/devenv-sift-and-sql-server.md)  
+- [SIFT and performance](../developer/devenv-sift-performance.md)  
+- [Tuning and tracing](../developer/devenv-sift-tuning-and-tracing.md)  
+- [SIFT and SQL server](../developer/devenv-sift-and-sql-server.md)  
 
 Learn how to find missing SIFT indexes on FlowFields in [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md).
 
@@ -278,10 +283,10 @@ The AL programming language, to some degree, hides how data is read and written 
 
 The following articles cover how AL relates to SQL:
 
-- [AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)  
-- [Data Access](../administration/optimize-sql-data-access.md)  
+- [AL database methods and performance on SQL server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)  
+- [Data access](../administration/optimize-sql-data-access.md)  
 - [Data read/write performance](../administration/optimize-sql-data-access.md#readwrite)  
-- [Bulk Inserts](../administration/optimize-sql-bulk-inserts.md)  
+- [Bulk inserts](../administration/optimize-sql-bulk-inserts.md)  
 
 ### How to get insights into how AL translates to SQL 
 
@@ -290,23 +295,23 @@ If you want to track how [!INCLUDE[server](../developer/includes/server.md)] tra
 Read more here:
 
 - [About database statistics in the AL debugger](../developer/devenv-debugging.md#DebugSQL)
-- [Telemetry on Long Running SQL Queries](../administration/monitor-long-running-sql-queries-event-log.md)
+- [Telemetry on long running SQL queries](../administration/monitor-long-running-sql-queries-event-log.md)
 
 ### How to reduce database locking
 
 Sometimes, performance issues aren't due to resource starvation, but due to processes waiting for other processes to release locks on shared objects. When AL code needs to update data, it's customary to take a database lock on it to ensure that other processes don't change the data at the same time. 
 
-Using the `Record.LockTable` method applies the `WITH (updlock)` hint on all subsequent read calls to the database against the table of the record called on, until the transaction is committed. For example, if `Record.LockTable` is called on an `Item` record, all reads against that table will be done with the `UPDLOCK` hint, not just the variable it was called on. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
+Using the `Record.LockTable` method applies the `WITH (updlock)` hint on all subsequent read calls to the database against the table of the record called on, until the transaction is committed. For example, if `Record.LockTable` is called on an `Item` record, all reads against that table will be done with the `UPDLOCK` hint, not just the variable it was called on. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Learn more in [Record.LockTable method](../developer/methods-auto/record/record-locktable-method.md)
 
 Some tips for avoiding locking:
 
 - Enable [tri-state locking](../developer/devenv-tri-state-locking.md) to avoid reads-after-writes taking locks.
--	Read setup information before starting write transactions
--	If possible, limit the time you hold locks
--	If possible, limit transaction size (divide into smaller operations that can be committed)
--	Make sure you have indexes on ranges you update
--	Locking is much less of an issue if you have a logical separation across companies
--	Set record instance isolation level on transactions to isolate them from other transactions to prevent problems in concurrent situations. [Learn more about record instance isolation level](../developer/devenv-read-isolation.md).  
+- Read setup information before starting write transactions
+- If possible, limit the time, you hold locks
+- If possible, limit transaction size (divide into smaller operations that can be committed)
+- Make sure you have indexes on ranges you update
+- Locking is much less of an issue if you have a logical separation across companies
+- Set record instance isolation level on transactions to isolate them from other transactions to prevent problems in concurrent situations. [Learn more about record instance isolation level](../developer/devenv-read-isolation.md).  
 
 #### Database locking caused by web service calls
 
@@ -321,10 +326,9 @@ If you need a fast, non-blocking number sequence that can be used from AL, refer
 
 Learn more in [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
 
-
 #### Analyzing database locks
 
-There are two tools that you can use to analyze database locks happening in the environment: the **Database Locks** page, and database lock timeout telemetry.
+There are two tools that you can use to analyze database locks happening in the environment: the **Database Locks** page, and database lock time-out telemetry.
 
 The **Database Locks** page gives a snapshot of all current database locks in SQL Server. It provides information like the table and database resource affected by the lock, and sometimes also the AL object or method that ran the transaction that caused the lock. These details can help you better understand the locking condition.
 
@@ -348,13 +352,13 @@ As a developer, you control **Read Scale-Out** on report, API page, and query ob
 
 It's imperative to test and validate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] project before deploying it to production. In this section, you find resources on how to analyze and troubleshoot performance issues and guidance on how to validate performance of a system. 
 
-### Performance Unit Testing
+### Performance unit testing
 
 You can use the `SessionInformation` data type in unit tests that track the number of SQL statements or rows read. Use it  before and after the code to be tested. Then, have assert statements that check for normal behavior.
 
 Learn more in [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
 
-### Performance Scenario and Regression Testing
+### Performance scenario and regression testing
 
 Use the Performance Toolkit to simulate the amount of resources that customers use in realistic scenarios to compare performance between builds of their solutions.
 
@@ -365,20 +369,21 @@ Learn more in [The Performance Toolkit Extension](../developer/devenv-performanc
 > [!NOTE]  
 > To test insert/update performance, make sure to un-install the test framework first. If the test framework is installed, then no insert/update statements can utilize bulk mode and will instead run row-by-row. 
 
-### Performance Throughput Analysis
+### Performance throughput analysis
 
-The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational Limits for Business Central Online](../administration/operational-limits-online.md). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer whether the system can process the workload you intend.
+The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational limits for Business Central online](../administration/operational-limits-online.md). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer whether the system can process the workload you intend.
 
 ### Performance telemetry
 
-The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment): 
+The following performance telemetry is available in Azure Application Insights (if that has been configured for the environment):
+
 - Database locks
-- Long Running AL operations
-- Long Running SQL Queries
+- Long running AL operations
+- Long running SQL queries
 - Page views
 - Reports
 - Sessions started
-- Web Service Requests
+- Web service Requests
 
 Learn more in the [Analyzing performance issues using telemetry](performance-work-perf-problem.md#analyzing-performance-issues-using-telemetry) section.
 
@@ -386,16 +391,16 @@ Learn more in the [Analyzing performance issues using telemetry](performance-wor
 
 The following articles can be of help in troubleshooting performance issues:
 
-- [Find missing SIFT indexes for FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
+- [Find missing SIFT indexes for FlowFields by disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
 - [Use Page Inspection to find extensions participating on a page](../developer/devenv-inspecting-pages.md)
-- [Viewing Table Sizes](/dynamics365/business-central/admin-view-table-information)
+- [Viewing table sizes](/dynamics365/business-central/admin-view-table-information)
 
-## Tuning the Development Environment 
+## Tuning the development environment 
 
 The following articles explain what you can do as a developer to tune your development environment for better performance:
 
-- [Optimizing Visual Studio Code for AL Development](../developer/devenv-optimize-visual-studio-code.md)  
-- [Code Analysis on large projects](../developer/devenv-using-code-analysis-tool.md#enable-code-analysis-on-large-projects)
+- [Optimizing Visual Studio Code for AL development](../developer/devenv-optimize-visual-studio-code.md)  
+- [Code analysis on large projects](../developer/devenv-using-code-analysis-tool.md#enable-code-analysis-on-large-projects)
 
 ## Related information
 
@@ -406,5 +411,4 @@ The following articles explain what you can do as a developer to tune your devel
 [How to work with a performance problem](performance-work-perf-problem.md)  
 [Performance tips for business users](performance-users.md)  
 [Database missing indexes](../administration/database-missing-indexes.md)  
-[AL database methods and performance on SQL server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)
-
+[AL database methods and performance on SQL server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)  
