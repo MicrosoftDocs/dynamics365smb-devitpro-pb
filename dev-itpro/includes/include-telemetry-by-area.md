@@ -9,6 +9,7 @@
 |Cloud migration<sup>[\[8\]](#8)</sup>|Provides information about cloud migration setup, replication runs, and data upgrade|![check mark for feature.](../developer/media/check.png)|||[Learn more](../administration/telemetry-cloud-migration-trace.md)
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-company-lifecycle-trace.md) |
 |Configuration package lifecycle|Provides information about operations done on configuration packages, including exporting, importing, applying, and deleting. |![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-configuration-package-trace.md)|
+|Client control add-in exception<sup>[\[11\]](#11)</sup>||Provides information about operations done on configuration packages, including exporting, importing, applying, and deleting. |![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-client-add-in-exceptions.md)|
 |Database deadlocks<sup>[\[5\]](#5)</sup>|Provides information about database deadlocks that occur. |![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-database-deadlocks-trace.md)|
 |Database lock timeouts|Provides information about database locks that have timed out. |![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-database-locks-trace.md)|
 |Database wait statistics|Provides information about the wait categories and the wait times a query runs into.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-database-wait-statistics-trace.md)|
@@ -67,3 +68,4 @@
 
 <sup>10</sup><a name="10"></a>Introduced in Business Central 2024 release wave 2, version 25.1.
 
+<sup>11</sup><a name="11"></a>Introduced in Business Central 2025 release wave 1, version 26.0.

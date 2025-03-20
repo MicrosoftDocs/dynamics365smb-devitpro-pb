@@ -5,13 +5,13 @@ author: kennieNP
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/07/2025
+ms.date: 03/20/2025
 ms.author: kepontop
 ms.reviewer: jswymer
 ---
 # Analyzing client control add-in exception telemetry
 
-[!INCLUDE[prod_short](../developer/includes/introduced_in_2025rw1.md)]
+[!INCLUDE[2025rw1_and_later](../developer/includes/2025rw1_and_later.md)]
 
 Client control add-in exception telemetry gathers data about exceptions thrown in control add-ins. Each event tells you the type of exception, in which add-in it was triggered, information about the user's environment, and more.
 
@@ -19,7 +19,6 @@ Use the data to gather statistics about exceptions in control add-ins for troubl
 
 > [!NOTE]
 > In [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], telemetry about client add-in exceptions is logged to the **exceptions** table and not the **traces** table like other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] traces. This also means that you can use the built-in pages in the **Failures** page of the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for troubleshooting. For more information, see [Failures and Performance views](/azure/azure-monitor/app/failures-and-performance-views?tabs=failures-view).
-
 
 ## Exception raised inside a control add-in
 
@@ -32,7 +31,6 @@ The exceptions table is a built-in table in [!INCLUDE[appinsights](../includes/a
 |Field|Description or value|
 |---------|-----|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
-
 
 ### Custom dimensions
 
@@ -54,8 +52,7 @@ The exceptions table is a built-in table in [!INCLUDE[appinsights](../includes/a
 |eventId|**CL0005** |
 |hostType| [!INCLUDE[hostType](../includes/include-telemetry-dimension-host-type.md)]|
 
-
-All error information is stored in the following properties. 
+All error information is stored in the following properties:
 
 |Property|Description or value|
 |---------|-----|
@@ -72,7 +69,6 @@ All error information is stored in the following properties.
 | innermostAssembly | The inner most assembly on the stack trace. |
 | innermostMethod | The inner most method on the stack trace. |
 | details | JSON structure with more information, such as stack traces. |
-
 
 ## Sample KQL code (control add-in exceptions)
 
