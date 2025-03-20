@@ -1313,6 +1313,7 @@
 #### [Microsoft timeline for deprecating code in Business Central](developer/devenv-deprecation-timeline.md)
 #### [Best practices for deprecation of AL code](developer/devenv-deprecation-guidelines.md)
 #### [Deprecating explicit and implicit with statements](developer/devenv-deprecating-with-statements-overview.md)
+#### [Deprecation timeline for BCContainerHelper](developer/devenv-deprecating-bccontainerhelper.md)
 
 ## DevOps with AL-Go for GitHub
 ### [AL-Go overview](al-go/algo-overview.md)
