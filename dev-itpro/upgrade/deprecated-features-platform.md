@@ -23,7 +23,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | Microsoft will phase out the usage of `BcContainerHelper` in AL-Go for GitHub, with official support for `BcContainerHelper` ending on October 1, 2027. If you currently rely on `BcContainerHelper` for custom DevOps solutions, we recommend that you switch to [AL-Go for GitHub](https://github.com/microsoft/AL-Go) or another managed DevOps option to eliminate dependence on `BcContainerHelper`. Learn more in [Deprecating BCContainerHelper](../developer/devenv-deprecating-bccontainerhelper.md).|
+|Removed | Microsoft will phase out the usage of `BcContainerHelper` in AL-Go for GitHub, with official support for `BcContainerHelper` ending on October 1, 2027. If you currently rely on `BcContainerHelper` for custom DevOps solutions, we recommend that you switch to [AL-Go for GitHub](https://github.com/microsoft/AL-Go) or another managed DevOps option to eliminate dependence on `BcContainerHelper`. Learn more in [Deprecating BcContainerHelper](../developer/devenv-deprecating-bccontainerhelper.md).|
 
 ## Changes in 2025 release wave 1 (version 26.0)
 
