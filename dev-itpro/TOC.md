@@ -244,6 +244,7 @@
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 #### [Changelog configuration telemetry](administration/telemetry-changelog-configuration-trace.md)
 #### [Client action telemetry](administration/telemetry-client-action-trace.md)
+#### [Client control add-in exception telemetry](administration/telemetry-client-add-in-exceptions.md)
 #### [Cloud migration telemetry](administration/telemetry-cloud-migration-trace.md)
 #### [Company lifecycle telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Configuration package lifecycle telemetry](administration/telemetry-configuration-package-trace.md)
