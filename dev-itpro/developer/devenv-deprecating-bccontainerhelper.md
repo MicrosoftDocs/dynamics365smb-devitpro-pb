@@ -8,7 +8,7 @@ author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---
 
-# Deprecation timeline for BCContainerHelper
+# Deprecating BCContainerHelper
 
 `BcContainerHelper` is an open-source PowerShell module, which is available on the [PowerShell Gallery](https://powershellgallery.com/packages/BcContainerHelper). You can find the source code on [GitHub](https://github.com/microsoft/navcontainerhelper).
 
