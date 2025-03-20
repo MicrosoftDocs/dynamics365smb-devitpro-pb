@@ -175,7 +175,6 @@ traces
 , usertelemetryId = user_Id
 ```
 
-
 ## Financial report row definition imported: {Row Definition Code}
 
 Occurs when a user imports a financial report row definition.
@@ -293,7 +292,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Column Definition created: {Column Definition Code}
+## Financial report column definition created: {Column Definition Code}
 
 Occurs when a user creates a new financial report column definition.
 
@@ -301,7 +300,7 @@ Occurs when a user creates a new financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Column Definition created: {Column Definition Code}**|
+|message|**Financial report column definition created: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -315,7 +314,7 @@ Occurs when a user creates a new financial report column definition.
 This KQL code can help you get started analyzing creation of financial report column definitions.
 
 ```kql
-// Financial Report Column Definition created: {Column Definition Code}
+// Financial report column definition created: {Column Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000O85'
@@ -332,7 +331,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Column Definition modified: {Column Definition Code}
+## Financial report column definition modified: {Column Definition Code}
 
 Occurs when a user modifies a financial report column definition.
 
@@ -340,7 +339,7 @@ Occurs when a user modifies a financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Column Definition modified: {Column Definition Code}**|
+|message|**Financial report column definition modified: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -354,7 +353,7 @@ Occurs when a user modifies a financial report column definition.
 This KQL code can help you get started analyzing modifications to financial report column definitions.
 
 ```kql
-// Financial Report Column Definition modified: {Column Definition Code}
+// Financial report column definition modified: {Column Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000O86'
@@ -371,7 +370,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Column Definition copied: {Column Definition Code}
+## Financial report column definition copied: {Column Definition Code}
 
 Occurs when a user copies a financial report column definition.
 
@@ -379,7 +378,7 @@ Occurs when a user copies a financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Column Definition copied: {Column Definition Code}**|
+|message|**Financial report column definition copied: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -394,7 +393,7 @@ Occurs when a user copies a financial report column definition.
 This KQL code can help you get started analyzing copies taken on financial report column definitions.
 
 ```kql
-// Financial Report Column Definition copied: {Column Definition Code}
+// Financial report column definition copied: {Column Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000OKW'
@@ -412,7 +411,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Column Definition imported: {Column Definition Code}
+## Financial report column definition imported: {Column Definition Code}
 
 Occurs when a user imports a financial report column definition.
 
@@ -420,7 +419,7 @@ Occurs when a user imports a financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Column Definition imported: {Column Definition Code}**|
+|message|**Financial report column definition imported: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -434,7 +433,7 @@ Occurs when a user imports a financial report column definition.
 This KQL code can help you get started analyzing import actions of financial report column definitions.
 
 ```kql
-// Financial Report Column Definition imported: {Column Definition Code}
+// Financial report column definition imported: {Column Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000ONQ' // event id collision
@@ -451,7 +450,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Column Definition exported: {Column Definition Code}
+## Financial report column definition exported: {Column Definition Code}
 
 Occurs when a user exports a financial report column definition.
 
@@ -459,7 +458,7 @@ Occurs when a user exports a financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Column Definition exported: {Column Definition Code}**|
+|message|**Financial report column definition exported: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -473,7 +472,7 @@ Occurs when a user exports a financial report column definition.
 This KQL code can help you get started analyzing exports of financial report column definitions.
 
 ```kql
-// Financial Report Column Definition exported: {Column Definition Code}
+// Financial report column definition exported: {Column Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000ONQ' // event id collision
@@ -490,7 +489,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Column Definition deleted: {Column Definition Code}
+## Financial report column definition deleted: {Column Definition Code}
 
 Occurs when a user deletes a financial report column definition.
 
@@ -498,7 +497,7 @@ Occurs when a user deletes a financial report column definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Column Definition deleted: {Column Definition Code}**|
+|message|**Financial report column definition deleted: {Column Definition Code}**|
 
 ### Custom dimensions
 
@@ -512,7 +511,7 @@ Occurs when a user deletes a financial report column definition.
 This KQL code can help you get started analyzing deletions of financial report column definitions.
 
 ```kql
-// Financial Report Column Definition deleted: {Column Definition Code}
+// Financial report column definition deleted: {Column Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000O88'
@@ -529,7 +528,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Definition created: {Report Definition Code}
+## Financial report definition created: {Report Definition Code}
 
 Occurs when a user creates a new financial report definition.
 
@@ -537,7 +536,7 @@ Occurs when a user creates a new financial report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Definition created: {Report Definition Code}**|
+|message|**Financial report definition created: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -551,7 +550,7 @@ Occurs when a user creates a new financial report definition.
 This KQL code can help you get started analyzing creation of financial report definitions.
 
 ```kql
-// Financial Report Definition created: {Report Definition Code}
+// Financial report definition created: {Report Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000O77'
@@ -568,7 +567,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Definition copied: {Report Definition Code}
+## Financial report definition copied: {Report Definition Code}
 
 Occurs when a user takes a copy of a financial report definition.
 
@@ -576,7 +575,7 @@ Occurs when a user takes a copy of a financial report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Definition copied: {Report Definition Code}**|
+|message|**Financial report definition copied: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -591,7 +590,7 @@ Occurs when a user takes a copy of a financial report definition.
 This KQL code can help you get started analyzing financial report definitions being copied.
 
 ```kql
-// Financial Report Definition copied: {Report Definition Code}
+// Financial report definition copied: {Report Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000OKX'
@@ -609,7 +608,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Definition imported: {Report Definition Code}
+## Financial report definition imported: {Report Definition Code}
 
 Occurs when a user imports a financial report report definition.
 
@@ -617,7 +616,7 @@ Occurs when a user imports a financial report report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Definition imported: {Report Definition Code}**|
+|message|**Financial report definition imported: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -631,7 +630,7 @@ Occurs when a user imports a financial report report definition.
 This KQL code can help you get started analyzing imports of financial report definitions.
 
 ```kql
-// Financial Report Definition imported: {Report Definition Code}
+// Financial report definition imported: {Report Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000ONR' // event id collision
@@ -648,7 +647,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Definition exported: {Report Definition Code}
+## Financial report definition exported: {Report Definition Code}
 
 Occurs when a user exports a financial report report definition.
 
@@ -656,7 +655,7 @@ Occurs when a user exports a financial report report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Definition exported: {Report Definition Code}**|
+|message|**Financial report definition exported: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -670,7 +669,7 @@ Occurs when a user exports a financial report report definition.
 This KQL code can help you get started analyzing export actions of financial report definitions.
 
 ```kql
-// Financial Report Definition exported: {Report Definition Code}
+// Financial report definition exported: {Report Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000ONR' // event id collision
@@ -687,7 +686,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Definition modified: {Report Definition Code}
+## Financial report definition modified: {Report Definition Code}
 
 Occurs when a user modifies a financial report report definition.
 
@@ -695,7 +694,7 @@ Occurs when a user modifies a financial report report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Definition modified: {Report Definition Code}**|
+|message|**Financial report definition modified: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -709,7 +708,7 @@ Occurs when a user modifies a financial report report definition.
 This KQL code can help you get started analyzing modifications of financial report definitions.
 
 ```kql
-// Financial Report Definition modified: {Report Definition Code}
+// Financial report definition modified: {Report Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000O78'
@@ -726,7 +725,7 @@ traces
 , usertelemetryId = user_Id
 ```
 
-## Financial Report Definition deleted: {Report Definition Code}
+## Financial report definition deleted: {Report Definition Code}
 
 Occurs when a user deletes a financial report report definition.
 
@@ -734,7 +733,7 @@ Occurs when a user deletes a financial report report definition.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Financial Report Definition deleted: {Report Definition Code}**|
+|message|**Financial report definition deleted: {Report Definition Code}**|
 
 ### Custom dimensions
 
@@ -748,7 +747,7 @@ Occurs when a user deletes a financial report report definition.
 This KQL code can help you get started analyzing deletions of financial report definitions.
 
 ```kql
-// Financial Report Definition deleted: {Report Definition Code}
+// Financial report definition deleted: {Report Definition Code}
 traces
 | where timestamp > ago(5d) // adjust the time range as needed
 | where customDimensions has 'AL0000O80'
