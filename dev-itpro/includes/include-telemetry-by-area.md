@@ -23,6 +23,7 @@
 |Feature Management<sup>[\[7\]](#7)</sup>|Provides information about the state changes done on the Feature Management page.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-feature-management-trace.md) |
 |Feature telemetry|Provides information about the usage and errors of features.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-feature-telemetry.md)  |
 |Field monitoring trace|Provides information about the usage of the field monitoring feature.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-field-monitoring-trace.md) |
+|Financial report lifecycle<sup>[\[11\]](#11)</sup>|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-financial-report-lifecycle-trace.md)|
 |Job queue|Provides information about creating and running job queue entries.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[Learn more](../administration/telemetry-job-queue-lifecycle-trace.md) |
 |Long running AL method trace<sup>[\[3\]](#3)</sup>|Provides information about long running AL methods.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[Learn more](../administration/telemetry-al-method-trace.md) |
 |Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[Learn more](../administration/telemetry-long-running-sql-query-trace.md)|
@@ -46,7 +47,6 @@
 |Web service requests (incoming)|Provides information about the execution time of incoming web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[Learn more](../administration/telemetry-webservices-trace.md)|
 |Web service requests (outgoing ) |Provides information about the execution time of outgoing web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[Learn more](../administration/telemetry-webservices-outgoing-trace.md)|
 
-
 <sup>1</sup><a name="1"></a>This signal is only emitted to the Application Insights resource that's specified in the extension.
 
 <sup>2</sup><a name="2"></a>Introduced in Business Central 2020 release wave 1, version 16.3. For extension telemetry, this signal was introduced in 2020 release wave 2, version 17.1.
@@ -67,3 +67,4 @@
 
 <sup>10</sup><a name="10"></a>Introduced in Business Central 2024 release wave 2, version 25.1.
 
+<sup>11</sup><a name="11"></a>Introduced in Business Central 2025 release wave 1, version 26.0.
