@@ -1,6 +1,6 @@
 ---
 title: Deprecating BcContainerHelper
-description: Learn about the deprecation of BcContainerHelper and its replacement.
+description: Learn about the deprecation of BcContainerHelper and its replacement in AL-Go for GitHub.
 ms.date: 03/20/2025
 ms.reviewer: solsen
 ms.topic: overview
