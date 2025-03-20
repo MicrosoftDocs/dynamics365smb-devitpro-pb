@@ -34,8 +34,8 @@ The following table explains the custom dimensions included in a **server certif
 |alObjectName|Specifies the name of the AL object that made the request.|
 |alObjectType|Specifies the type of the AL object that made the request.|
 |certificateChain | Specifies an ordered list of certificates, including an SSL/TLS certificate and certificate authority (CA) certificates, which allows the receiver to verify the trustworthiness of the sender and all CAs.  |
-|certificateIssuerName |Specifies tha value of the issuer field of the certificate properties. |
-|certificateSubject | Specifies the value of the subject field of the certificate properties, which typically includes the Common Name (CN) attribute. |
+|certificateIssuerName |Specifies the value of the issuer field in the certificate properties.|
+|certificateSubject |  Specifies the value of the subject field in the certificate properties. This field typically includes the Common Name (CN) attribute.|
 |companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] |
 |endpoint|Specifies the endpoint for the request. The endpoint is cleaned to include only the base URI. |
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
@@ -45,7 +45,7 @@ The following table explains the custom dimensions included in a **server certif
 |extensionName|Specifies the name of the extension that made the request.|
 |extensionPublisher|Specifies the publisher of the extension that made the request.|
 |extensionVersion|Specifies the version of the extension that made the request.|
-|failureReason | TODO: Mirko to validate: A description of why the certificate failed to validate |
+|failureReason | Specifies why the certificate didn't validate. |
 |httpMethod| [!INCLUDE[httpMethod](../includes/include-telemetry-dimension-http-method.md)] |
 
 ## Sample KQL code
