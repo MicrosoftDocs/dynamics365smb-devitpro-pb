@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 Microsoft will phase out the usage of `BcContainerHelper` in AL-Go for GitHub, with official support for `BcContainerHelper` ending on October 1, 2027.
 
-If you currently rely on `BcContainerHelper` for custom DevOps solutions, we recommend that you switch to [AL-Go for GitHub](https://github.com/microsoft/AL-Go) or another managed DevOps option to eliminate dependence on `BcContainerHelper`.
+If you currently rely on `BcContainerHelper` for custom DevOps solutions, we recommend that you switch to [AL-Go for GitHub](https://github.com/microsoft/AL-Go) or another managed DevOps option to eliminate dependency on `BcContainerHelper`.
 
 For local development on Docker, equivalent functionality will likely become available in a new PowerShell module released as part of AL-Go for GitHub.
 
