@@ -5,7 +5,6 @@ ms.date: 03/20/2025
 ms.reviewer: solsen
 ms.topic: overview
 author: SusanneWindfeldPedersen
-ms.reviewer: solsen
 ---
 
 # Deprecating BcContainerHelper
@@ -18,9 +17,9 @@ If you currently rely on `BcContainerHelper` for custom DevOps solutions, we rec
 
 For local development on Docker, equivalent functionality will likely become available in a new PowerShell module released as part of AL-Go for GitHub.
 
-If you use `BcContainerHelper` for older Dynamics NAV or [!INCLUDE [prod_short](includes/prod_short.md)] versions, it might continue to work for a while after it's supported. The source code will remain on GitHub, and you may continue using it after October 1, 2027. However, as [!INCLUDE [prod_short](includes/prod_short.md)] evolves, `BcContainerHelper` will eventually become outdated and cease to function.
+If you use `BcContainerHelper` for older Dynamics NAV or [!INCLUDE [prod_short](../developer/includes/prod_short.md)] versions, it might continue to work for a while after it's supported. The source code will remain on GitHub, and you may continue using it after October 1, 2027. However, as [!INCLUDE [prod_short](../developer/includes/prod_short.md)] evolves, `BcContainerHelper` will eventually become outdated and cease to function.
 
 ## Related information
 
-[Microsoft timeline for deprecating code in Business Central](devenv-deprecation-timeline.md)  
-[AL development environment](devenv-reference-overview.md)
+[Microsoft timeline for deprecating code in Business Central](../developer/devenv-deprecation-timeline.md)  
+[AL development environment](../deployment/devenv-reference-overview.md)
