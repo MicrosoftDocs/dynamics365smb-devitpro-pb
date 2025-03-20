@@ -22,4 +22,4 @@ If you use `BcContainerHelper` for older Dynamics NAV or [!INCLUDE [prod_short](
 ## Related information
 
 [Microsoft timeline for deprecating code in Business Central](../developer/devenv-deprecation-timeline.md)  
-[AL development environment](../deployment/devenv-reference-overview.md)
+[AL development environment](../developer/devenv-reference-overview.md)
