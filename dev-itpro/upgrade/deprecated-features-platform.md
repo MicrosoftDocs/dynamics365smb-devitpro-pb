@@ -17,6 +17,14 @@ This article describes the features that are up for removal or that have been re
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
+## Changes in 2027 release wave 2 (version 31.0)
+
+### BcContainerHelper (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | Microsoft will phase out the usage of `BcContainerHelper` in AL-Go for GitHub, with official support for `BcContainerHelper` ending on October 1, 2027. If you currently rely on `BcContainerHelper` for custom DevOps solutions, we recommend that you switch to [AL-Go for GitHub](https://github.com/microsoft/AL-Go) or another managed DevOps option to eliminate dependence on `BcContainerHelper`. Learn more in [Deprecation timeline for BCContainerHelper](../developer/devenv-deprecating-bccontainerhelper.md).|
+
 ## Changes in 2025 release wave 1 (version 26.0)
 
 ### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (removal)
