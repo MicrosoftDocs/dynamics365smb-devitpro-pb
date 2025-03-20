@@ -58,7 +58,7 @@ end;
 
 ```AL
 if (xxx = yyyyyyyyyy) and   
-    (aaaaaaaaaa = bbb)  
+ <  (aaaaaaaaaa = bbb)  
 then begin  
     x := a;  
     x := y;  
@@ -84,7 +84,7 @@ if-then-else statements have the following syntax.
 if <Condition> then  
     <Statement1>  
 [else  
-    <Statement2>]  
+    <Statement2>];
 ```  
 
 If *`<Condition>`* is true, then *`<Statement1>`* is executed. If *`<Condition>`* is false, then *`<Statement2>`* is executed.  
@@ -98,7 +98,7 @@ if <Condition1> then
     if <Condition2> then   
         <Statement1>   
     else  
-        <Statement2>  
+        <Statement2>;
 ```  
 
 If *`<Condition1>`* is false, then nothing is executed. If *`<Condition1>`* and *`<Condition2>`* are both true, then *`<Statement1>`* is executed. If *`<Condition1>`* is true and *`<Condition2>`* is false, then *`<Statement2>`* is executed.  
@@ -131,7 +131,7 @@ else
 
 ```AL  
 if (xxxxxxxxxx = yyy) and   
-    (aaa = bbbbbbbbbb)  
+   (aaa = bbbbbbbbbb)  
 then  
     x := a  
 else  
@@ -170,17 +170,14 @@ if Amount < 1000 then
 The following example shows a nested if-then-else statement.  
 
 ```AL 
-...  
 if Amount < 1000 then begin  
     if I > J then  
         Max := I  
     else  
         Max := J;  
     Amount := Amount * Max;  
-    end;  
-else  
-...  
-
+end else
+   ...
 ```  
 
 ### Case statements  
@@ -196,7 +193,7 @@ case <Expression> of
     <Value set n>:  
         <Statement n>;  
     [else  
-        <Statement n+1>]  
+        <Statement n+1>;]  
 end;  
 ```  
 
@@ -237,7 +234,8 @@ case Field of
         end;  
     Field::B:  
         x := y;  
-    Field::C,Field::D:  
+    Field::C,
+    Field::D:  
         y := x;  
     else begin  
         y := x;  
@@ -253,9 +251,9 @@ The following AL code prints various messages depending on the value of *Number*
 
 ```AL 
 case Number of  
-    1,2,9:  
+    1, 2, 9:  
         message('1, 2, or 9.');  
-    10..100:  
+    10 .. 100:  
         message('In the range from 10 to 100.');  
     else  
         message('Neither 1, 2, 9, nor in the range from 10 to 100.');  
@@ -304,12 +302,12 @@ The following syntax shows the for-to and for-downto statement.
 
 ```AL  
 for <Control Variable> := <Start Number> to <End Number> do  
-    <Statement>  
+    <Statement>;
 ```  
 
 ```AL  
 for <Control Variable> := <Start Number> downto <End Number> do  
-    <Statement>  
+    <Statement>;
 ```  
 
  The data type of *`<Control Variable>`*, *`<Start Number>`*, and *`<End Number>`* must be Boolean, number, time, or date. 
@@ -351,7 +349,7 @@ When this statement is executed, then a run-time error occurs because the start,
 ```AL  
 for I := 1 to 5 do  
     for J := 1 to 7 do  
-        A[I,J] := 23;  
+        A[I, J] := 23;  
 ```  
 
 This example requires the following Integer data type variables.  
@@ -372,21 +370,20 @@ The foreach statement has the following syntax.
 
 ```AL  
 foreach <Element> in <List> do
-    <Statement>  
+    <Statement>;
 ```  
 
 The *`<List>`* variable must be of the List, XmlNodeList, XmlAttributeCollection, or JsonArray type. The *`<Element>`* variable must be a data type that is compatible with elements specified by the *`<List>`*.  
 
 The following code example iterates through a list of customer names and returns each customer name in a message.
 ```AL  
-procedure PrintCustomerNames(customerNames : List of [Text])
+procedure ShowCustomerNames(CustomerNames : List of [Text])
 var
-    customerName : Text;
+    CustomerName : Text;
 begin
-    foreach customerName in customerNames do
-        message(customerName);
+    foreach CustomerName in CustomerNames do
+        Message(CustomerName);
 end;
-
 ```  
 
 ### While-do control structure  
@@ -395,7 +392,7 @@ The following syntax shows the while-do statement.
 
 ```AL  
 while <Condition> do  
-    <Statement>  
+    <Statement>;
 ```  
 
 If *`<Condition>`* is true, then *`<Statement>`* is executed repeatedly until *`<Condition>`* becomes false. If *`<Condition>`* is false from the start, then *`<*Statement>`* is never executed.  
@@ -442,14 +439,14 @@ The following AL code increases the variable I until it equals 1000 and displays
 ```AL
 while I < 1000 do  
     I := I + 1;  
-message(format(I));  
+Message(Format(I));  
 ```  
 
 This example requires the following integer data type variable.  
 
 ```AL
 var  
-    I : integer
+    I: Integer
 ```
 
 ### Repeat-until control structure
@@ -488,29 +485,29 @@ This code uses a repeat-until loop to count the number of entries in the Custome
 
 ```AL
 Count := 0;  
-if Customer.find('-') then
+if Customer.FindSet() then
     repeat  
         Count := Count + 1;  
-    until Customer.next <= 0;  
-message('The Customer table contains %1 records.',Count);  
+    until Customer.Next() = 0;  
+Message('The Customer table contains %1 records.', Count);  
 ```  
 
 This example requires the following variables.
 
 ```AL
-var
-    Count : Integer;
-    Customer : Record Customer;  
+var    
+    Customer: Record Customer;
+    Count: Integer;
 ```
 
-The `find` method finds the first entry in the table. Each time NEXT is called, it steps one record forward. When NEXT equals 0, there are no more entries in the table. The loop is exited, and a message displays how many entries were found.  
+The `FindSet` method finds the first entry in the table. Each time `Next` is called, it steps one record forward. When `Next` equals 0, there are no more entries in the table. The loop is exited, and a message displays how many entries were found.  
 
 ### Exit statement  
 
 The exit statement is used to control the flow of the execution. The following syntax shows an exit statement.  
 
 ```AL
-exit([<Value>])  
+exit([<Value>])
 ```  
 
  An exit statement is used to interrupt the execution of an AL trigger. The interruption occurs even when the code is executed inside a loop or a similar structure. The exit statement is also used when a local method should return a value.  
@@ -546,25 +543,21 @@ break;
 > The break statement is different than the [Break Method \(Report, XMLport\)](./methods-auto/library.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it's run.  
 
 ## Example  
- The following AL code increases the variable I by one for each iteration, and terminates the iteration when `I` equals 10.  
+The following AL code increases the variable `Count` by one for each iteration, and terminates the iteration when `Count` equals 10.  
 
 ```AL
-while Count < 1000 do
-    begin
+while Count < 1000 do begin
     Count := Count + 1;
-    message(FORMAT(Count));
     if Count = 10 then
-        break;
-    end; 
-end; 
- 
+        break;    
+end;  
 ```  
 
 This example requires the following integer data type variable.  
 
 ```AL
 var  
-    I : integer
+    Count: Integer
 ```
 
 ## Related information
