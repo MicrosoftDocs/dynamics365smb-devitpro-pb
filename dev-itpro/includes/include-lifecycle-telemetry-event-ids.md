@@ -37,25 +37,24 @@
 |AL0000N0G|Report Layout Lifecycle|[Report layout replaced by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-replaced-by-user)|
 |AL0000N0H|Report Layout Lifecycle|[Report layout properties changed by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-properties-changed-by-user) |
 |AL0000N0I|Report Layout Lifecycle|[Report layout exported by user](../administration/telemetry-report-layout-lifecycle-trace.md#report-layout-exported-by-user)|
-|AL0000O82|Financial Report Lifecycle |[Financial report row definition modified](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-modified-row-definition-code)|
-|AL0000OKV|Financial Report Lifecycle |[Financial report row definition copied](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-copied-row-definition-code)|
-|AL0000ONP|Financial Report Lifecycle |[Financial report row definition imported](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-imported-row-definition-code)|
-|AL0000ONP|Financial Report Lifecycle |[Financial report row definition exported](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-exported-row-definition-code)|
-|AL0000O84|Financial Report Lifecycle |[Financial report row definition deleted](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-deleted-row-definition-code)|
-|AL0000O85|Financial Report Lifecycle |[Financial report row definition created](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-created-row-definition-code)|
-|AL0000O86|Financial Report Lifecycle |[Financial report column definition modified](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-modified-column-definition-code)|
-|AL0000OKW|Financial Report Lifecycle |[Financial report column definition copied](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-copied-column-definition-code)|
-|AL0000ONQ|Financial Report Lifecycle |[Financial report column definition imported](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-imported-column-definition-code)|
-|AL0000ONQ|Financial Report Lifecycle |[Financial report column definition exported](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-exported-column-definition-code)|
-|AL0000O88|Financial Report Lifecycle |[Financial report column definition deleted](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-deleted-column-definition-code)|
-|AL0000O77|Financial Report Lifecycle |[Financial report column definition created](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-created-column-definition-code)|
-|AL0000O86|Financial Report Lifecycle |[Financial report column definition modified](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-modified-column-definition-code)|
+|AL0000O77|Financial Report Lifecycle |[Financial report definition created](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-definition-copied-report-definition-code)|
+|AL0000O78|Financial Report Lifecycle |[Financial report definition modified](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-definition-modified-report-definition-code)|
+|AL0000O80|Financial Report Lifecycle |[Financial report definition deleted](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-definition-deleted-report-definition-code)|
 |AL0000OKX|Financial Report Lifecycle |[Financial report definition copied](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-definition-copied-report-definition-code)|
 |AL0000ONR|Financial Report Lifecycle |[Financial report definition imported](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-definition-imported-report-definition-code)|
 |AL0000ONR|Financial Report Lifecycle |[Financial report definition exported](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-definition-exported-report-definition-code)|
-|AL0000O78|Financial Report Lifecycle |[Financial report definition modified](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-definition-modified-report-definition-code)|
-|AL0000O80|Financial Report Lifecycle |[Financial report definition deleted](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-definition-deleted-report-definition-code)|
-|AL0000O80|Financial Report Lifecycle |[Financial report definition deleted](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-definition-deleted-report-definition-code)|
+|AL0000O81|Financial Report Lifecycle |[Financial report row definition created](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-created-row-definition-code)|
+|AL0000O82|Financial Report Lifecycle |[Financial report row definition modified](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-modified-row-definition-code)|
+|AL0000O84|Financial Report Lifecycle |[Financial report row definition deleted](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-deleted-row-definition-code)|
+|AL0000OKV|Financial Report Lifecycle |[Financial report row definition copied](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-copied-row-definition-code)|
+|AL0000ONP|Financial Report Lifecycle |[Financial report row definition imported](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-imported-row-definition-code)|
+|AL0000ONP|Financial Report Lifecycle |[Financial report row definition exported](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-row-definition-exported-row-definition-code)|
+|AL0000O85|Financial Report Lifecycle |[Financial report column definition created](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-created-column-definition-code)|
+|AL0000O86|Financial Report Lifecycle |[Financial report column definition modified](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-modified-column-definition-code)|
+|AL0000O88|Financial Report Lifecycle |[Financial report column definition deleted](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-deleted-column-definition-code)|
+|AL0000OKW|Financial Report Lifecycle |[Financial report column definition copied](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-copied-column-definition-code)|
+|AL0000ONQ|Financial Report Lifecycle |[Financial report column definition exported](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-exported-column-definition-code)|
+|AL0000ONQ|Financial Report Lifecycle |[Financial report column definition imported](../administration/telemetry-financial-report-lifecycle-trace.md#financial-report-column-definition-imported-column-definition-code)|
 | LC0001 | Company Lifecycle | [Company created: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-created) |
 | LC0002 | Company Lifecycle | [Company creation canceled: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-creation-canceled) |
 | LC0003 | Company Lifecycle | [Company creation failed: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-creation-failed) |
