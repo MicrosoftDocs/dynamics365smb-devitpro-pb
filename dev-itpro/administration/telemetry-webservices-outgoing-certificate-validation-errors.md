@@ -3,11 +3,9 @@ title: Server certificate validation errors for outgoing web service requests
 description: Learn about telemetry for server certificate validation errors for outgoing web service requests in Business Central  
 author: kennienp
 ms.topic: conceptual
-ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/20/2025
 ms.author: kepontop
 ms.reviewer: jswymer
-
 ms-custom: bap-template
 ---
 
@@ -35,9 +33,9 @@ The following table explains the custom dimensions included in a **server certif
 |alObjectId|Specifies the ID of the AL object that made the request.|
 |alObjectName|Specifies the name of the AL object that made the request.|
 |alObjectType|Specifies the type of the AL object that made the request.|
-|certificateChain | TODO: Mirko to validate: An ordered list of certificates, including an SSL/TLS Certificate and Certificate Authority (CA) Certificates, allows the receiver to verify the trustworthiness of the sender and all CAs.  |
-|certificateIssuerName | TODO: Mirko to validate: The name of the SSL certificate issuer.|
-|certificateSubject | TODO: Mirko to provide more details |
+|certificateChain | Specifies an ordered list of certificates, including an SSL/TLS certificate and certificate authority (CA) certificates, which allows the receiver to verify the trustworthiness of the sender and all CAs.  |
+|certificateIssuerName |Specifies tha value of the issuer field of the certificate properties. |
+|certificateSubject | Specifies the value of the subject field of the certificate properties, which typically includes the Common Name (CN) attribute. |
 |companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] |
 |endpoint|Specifies the endpoint for the request. The endpoint is cleaned to include only the base URI. |
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
