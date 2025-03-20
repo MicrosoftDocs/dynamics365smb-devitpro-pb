@@ -4,7 +4,7 @@ description: Learn about telemetry for server certificate validation errors for 
 author: kennienp
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 03/07/2023
+ms.date: 03/20/2025
 ms.author: kepontop
 ms.reviewer: jswymer
 
@@ -13,7 +13,7 @@ ms-custom: bap-template
 
 # Analyzing server certificate validation errors with telemetry
 
-[!INCLUDE[introduced_in_2025rw1](../includes/introduced_in_2025rw1.md)]
+[!INCLUDE[introduced_in_2025rw1](../developer/includes/2025rw1_and_later.md)]
 
 Server certificate validation error telemetry gathers data about errors in validating server certificates on the endpoint when doing outgoing web service requests using the AL HTTPClient module. Use the data to contact the owner of the endpoint and ask them to fix their certificate.
 
@@ -50,8 +50,7 @@ The following table explains the custom dimensions included in a **server certif
 |failureReason | TODO: Mirko to validate: A description of why the certificate failed to validate |
 |httpMethod| [!INCLUDE[httpMethod](../includes/include-telemetry-dimension-http-method.md)] |
 
-
-## Sample KQL code 
+## Sample KQL code
 
 This KQL code can help you get started analyzing server certificate validation errors
 
@@ -86,8 +85,6 @@ traces
 // why did it fail?
 , failureReason = customDimensions.failureReason
 ```
-
-
 
 ## Related information
 
