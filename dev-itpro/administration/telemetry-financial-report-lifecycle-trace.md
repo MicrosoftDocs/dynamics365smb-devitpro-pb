@@ -541,7 +541,7 @@ traces
 
 ## Financial Report Definition created: {Report Definition Code}
 
-Occurs when a user creates a new financial report report definition.
+Occurs when a user creates a new financial report definition.
 
 ### General dimensions
 
@@ -581,7 +581,7 @@ traces
 
 ## Financial Report Definition copied: {Report Definition Code}
 
-Occurs when a user takes a copy of a financial report report definition.
+Occurs when a user takes a copy of a financial report definition.
 
 ### General dimensions
 
@@ -740,7 +740,6 @@ traces
 , usertelemetryId = user_Id
 ```
 
-
 ## Financial Report Definition deleted: {Report Definition Code}
 
 Occurs when a user deletes a financial report report definition.
@@ -780,12 +779,11 @@ traces
 , usertelemetryId = user_Id
 ```
 
-
 ## Related information
 
-[Design your own financial reports](/dynamics365/business-central/bi-design-financial-reports)   
-[Row definitions in financial reporting](/dynamics365/business-central/bi-row-definitions)   
-[Column definitions in financial reporting](/dynamics365/business-central/bi-column-definitions)   
+[Design your own financial reports](/dynamics365/business-central/bi-design-financial-reports)  
+[Row definitions in financial reporting](/dynamics365/business-central/bi-row-definitions)  
+[Column definitions in financial reporting](/dynamics365/business-central/bi-column-definitions)  
 [Primary capabilities of financial reporting](/dynamics365/business-central/finance-financial-reporting-capabilities)  
 [Analyzing financial report usage trace telemetry](telemetry-financial-report-usage-trace.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
