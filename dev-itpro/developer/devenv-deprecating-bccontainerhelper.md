@@ -21,3 +21,6 @@ For local development on Docker, equivalent functionality will likely become ava
 If you use `BcContainerHelper` for older Dynamics NAV or [!INCLUDE [prod_short](includes/prod_short.md)] versions, it might continue to work for a while after it's supported. The source code will remain on GitHub, and you may continue using it after October 1, 2027. However, as [!INCLUDE [prod_short](includes/prod_short.md)] evolves, `BcContainerHelper` will eventually become outdated and cease to function.
 
 ## Related information
+
+[Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)  
+[AL Development Environment](devenv-reference-overview.md)
