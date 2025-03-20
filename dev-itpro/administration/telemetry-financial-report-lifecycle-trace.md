@@ -12,7 +12,7 @@ ms.reviewer: jswymer
 
 # Analyzing financial report lifecycle telemetry
 
-[!INCLUDE[introduced_in_2025rw1](../includes/introduced_in_2025rw1.md)]
+[!INCLUDE[introduced_in_2025rw1](../developer/includes/2025rw1_and_later.md)]
 
 Financial report lifecycle telemetry gathers data about the following lifecycle operations to definitions in financial reporting:
 
@@ -35,11 +35,11 @@ Financial report lifecycle telemetry gathers data about the following lifecycle 
 - Financial report definition imported
 - Financial report definition deleted
 
-For information about working with financial reporting, see [Primary capabilities of financial reporting](/dynamics365/business-central/finance-financial-reporting-capabilities) in the [!INCLUDE[prod_short](../includes/prod_short.md)] Application Help.
+Learn more about working with financial reporting in [Primary capabilities of financial reporting](/dynamics365/business-central/finance-financial-reporting-capabilities) of the [!INCLUDE[prod_short](../includes/prod_short.md)] Application Help.
 
 ## General dimensions for all financial report lifecycle events
 
-The following table explains general dimensions that are common to all financial report usage events. 
+The following table explains general dimensions that are common to all financial report usage events.
 
 |Dimension|Description or value|
 |---------|-----|
@@ -56,7 +56,6 @@ The following table explains custom dimensions that are common to all financial 
 |companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] |
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
-
 
 ## Financial Report Row Definition created: {Row Definition Code}
 
@@ -218,7 +217,6 @@ traces
 // which user did it
 , usertelemetryId = user_Id
 ```
-
 
 ## Financial Report Row Definition exported: {Row Definition Code}
 
