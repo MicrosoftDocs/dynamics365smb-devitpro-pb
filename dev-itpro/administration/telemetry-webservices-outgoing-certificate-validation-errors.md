@@ -9,7 +9,7 @@ ms.reviewer: jswymer
 ms-custom: bap-template
 ---
 
-# Analyzing server certificate validation errors with telemetry
+# Analyzing server certificate validation errors for outgoing web service requests telemetry
 
 [!INCLUDE[introduced_in_2025rw1](../developer/includes/2025rw1_and_later.md)]
 
