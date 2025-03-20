@@ -3,7 +3,7 @@ title: Control add-in object
 description: Description of the control add-in object type in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
-ms.date: 04/17/2024
+ms.date: 03/20/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -11,11 +11,11 @@ ms.reviewer: solsen
 
 # Control add-in object
 
-The control add-in object allows you to add custom functionality to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A control add-in is a custom control, or visual element, for displaying and modifying data within an iframe or a page. For example, a control add-in can display the content of a webpage, visualize data as a chart or on a map, or host a custom web application. Control add-ins can exchange data with the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] server on various data types and respond to user interaction to raise events that execute additional AL code.
+The control add-in object allows you to add custom functionality to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. A control add-in is a custom control, or visual element, for displaying and modifying data within an iframe or a page. For example, a control add-in can display the content of a webpage, visualize data as a chart or on a map, or host a custom web application. Control add-ins can exchange data with the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] server on various data types and respond to user interaction to raise events that execute more AL code.
 
 ## Control add-in properties
 
-In the control add-in definition, you must set the `Scripts` property to include scripts in the control add-in. The scripts could be local files in the package or references to external files using the HTTP or the HTTPS protocol. With the `StartupScript` property, you can call a special script that runs when the page you've implemented the control add-in on, is loaded. These settings initialize the control add-in. With the `Images` and `StyleSheet` properties, you can specify additional styling to the control add-in. For more information about some of the control add-in properties, see:
+In the control add-in definition, you must set the `Scripts` property to include scripts in the control add-in. The scripts could be local files in the package or references to external files using the HTTP or the HTTPS protocol. With the `StartupScript` property, you can call a special script that runs when the page you implemented the control add-in on is loaded. These settings initialize the control add-in. With the `Images` and `StyleSheet` properties, you can specify more styling to the control add-in. Learn more about some of the control add-in properties in:
 
 - [Images](properties/devenv-images-property.md)  
 - [Scripts](properties/devenv-scripts-property.md)  
@@ -67,16 +67,16 @@ Control add-ins can either have fixed dimensions or dynamically adapt to the ava
 
 ## Control add-in considerations and limitations
 
-Designing control add-ins that provide the best possible experience can require some additional planning, design, and implementation. The following considerations and limitations will help you design add-ins that look and feel seamlessly integrated with both [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] online and on-premises. 
+Designing control add-ins that provide the best possible experience can require some extra planning, design, and implementation. The following considerations and limitations help you design add-ins that look and feel seamlessly integrated with both [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] online and on-premises. 
 
 - Respond to touch events so that mobile users or users on devices supporting touch input can also use the add-in.
 - Design content that is responsive and can flow, resize, or reorganize naturally based on the available space.
 - Consider the accessibility needs of users, for example by implementing keyboard access and support for screen readers.
 - Use the Style guidelines to apply a choice of colors, typefaces, and font sizes that match that of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Control add-in style guide](devenv-control-addin-style.md).
 - Provide language translation and other localizations that match the current user language in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
-- In extensions for Business Central online, don't reference font files in stylesheets, because the fonts won't display in client. Instead, do one of the following:
+- Don't reference font files in stylesheets in extensions for Business Central online, because the fonts won't display in client. Instead, do one of the following:
 
-  - Reference the font files from some other source such as a public or private CDN.
+  - Reference the font files from some other source such as a public or private content delivery network (CDN).
   - Base64 encode the fonts and include the encoded fonts in the CSS file.
 
 For more information about writing efficient code for control add-ins, see [Control add-in best practices](devenv-control-addin-bestpractices.md).
@@ -157,7 +157,7 @@ page 50130 PageWithAddIn
 
 ## Loading static resources using AJAX requests
 
-You can design a control add-in to load static resources from the add-in package by using AJAX requests. For example, the control add-in could load HTML content and inject it into add-in's HTML structure. In this case, you must use the `withCrendentials` property set to `true` in the AJAX request. Otherwise, the request won't contain the necessary context and important cookies required by the [!INCLUDE[prod_short](includes/prod_short.md)] service, and it may fail in production. This concept is illustrated in the following examples.
+You can design a control add-in to load static resources from the add-in package by using AJAX requests. For example, the control add-in could load HTML content and inject it into add-in's HTML structure. In this case, you must use the `withCrendentials` property set to `true` in the AJAX request. Otherwise, the request doesn't contain the necessary context and important cookies required by the [!INCLUDE[prod_short](includes/prod_short.md)] service, and it might fail in production. This concept is illustrated in the following examples.
 
 **Wrong:**
 
@@ -183,7 +183,6 @@ $.ajax({
 If you enable telemetry, you can gather data about exceptions thrown in control add-ins. Each event tells you the type of exception, in which add-in it was triggered, information about the user's environment, and more.
 
 To learn more, go to [Analyzing client control add-in exception telemetry](../administration/telemetry-client-add-in-exceptions.md).
-
 
 ## Related information
 
