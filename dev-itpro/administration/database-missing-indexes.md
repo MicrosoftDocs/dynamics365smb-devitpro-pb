@@ -41,9 +41,9 @@ To get information on missing indexes, go to the **Database Missing Indexes** pa
 | **Index Include Columns**|These columns have a copy of associated data for fast retrieval of information, which is based on the columns suggested in `Index Equality Columns` and `Index Inequality Columns`. Include columns aren't indexed columns themselves but point to the additional information linked to the indexed columns. For example, they include the fields in the `Select` part.|
 | **Seeks**`\*|Number of seeks caused by queries that could have used the suggested index.|
 | **Scans**\*|Number of scans caused by queries that could have used the suggested index.|
-|**Average Total Costs**\*|Average cost of the queries that suggested index can reduce.|
-| **Average Impact**\*|Average percentage benefit for queries if the suggested index is added.|
-| **Estimated Benefit**\*|The estimated benefit of adding the suggested index.|
+|**Average Total Costs**\*|Average cost of the queries that would be reduced if the suggested index was added.|
+| **Average Impact**\*|Average percentage benefit for queries if the suggested index was added. The value means that the cost would drop on average by this percentage if the suggested index was added.|
+| **Estimated Benefit**\*|The estimated benefit of adding the suggested index, which calculated as: (seeks + scans) x (average total costs) x (average impact). For example, currently the query seeks 5 times and scans 10 times and the cost is now 10 but would drop 50% if the index is added, then benefit is (5 + 10) x 10 x 50. |
 
 \*Applies to 2025 release wave 1 (version 26.0) and later
 
