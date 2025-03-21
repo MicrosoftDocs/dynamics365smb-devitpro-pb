@@ -28,9 +28,9 @@ Learn about Dynamic Management Views (DMV) in [System Dynamic Management Views (
 
 Learn how AL plays a part in efficient data access with SQL components in [Efficient data access](../performance/performance-developer.md#efficient-data-access).
 
-## Database missing indexes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+### View missing indexes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-To get information on missing indexes, go to the **Database Missing Indexes** page in Business Central, and you view the data in the following columns:
+To get information on missing indexes, open to the **Database Missing Indexes** page in Business Central and view the data in the following columns:
 
 |Column|Description|
 |------|-----------|
@@ -43,7 +43,7 @@ To get information on missing indexes, go to the **Database Missing Indexes** pa
 | **Scans**\*|Number of scans caused by queries that could have used the suggested index.|
 |**Average Total Costs**\*|Average cost of the queries that would be reduced if the suggested index was added.|
 | **Average Impact**\*|Average percentage benefit for queries if the suggested index was added. The value means that the cost would drop on average by this percentage if the suggested index was added.|
-| **Estimated Benefit**\*|The estimated benefit of adding the suggested index, which calculated as: (seeks + scans) x (average total costs) x (average impact). For example, currently the query seeks 5 times and scans 10 times and the cost is now 10 but would drop 50% if the index is added, then benefit is (5 + 10) x 10 x 50. |
+| **Estimated Benefit**\*|The estimated benefit of adding the suggested index is calculated as: (seeks + scans) x (average total costs) x (average impact). For example, consider a query that seeks 5 times, scans 10 times, and currently costs 10. If the impact drops 50% by adding the suggested index, then the benefit is (5 + 10) x 10 x 50.|
 
 \*Applies to 2025 release wave 1 (version 26.0) and later
 
