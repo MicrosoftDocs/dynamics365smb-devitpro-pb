@@ -26,7 +26,7 @@ For starters, look at the following diagram that illustrates the general overall
 
 The following figure illustrates the general report trigger flow for Business Central version 20 and later.
  
-[![Report trigger flow for version 20 and later.](media/report-triggers-complete-flow-v20.png)](media/report-triggers-complete-flow-v20.png#lightbox)  
+[![Report trigger flow for version 26 and later.](media/report-triggers-complete-flow-v26.svg)](media/report-triggers-complete-flow-v26.svg)#lightbox)  
 
 ### [Legacy](#tab/legacy)
 
