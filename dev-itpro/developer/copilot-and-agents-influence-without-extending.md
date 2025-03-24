@@ -16,8 +16,7 @@ Some AI-powered features are directly extensible using AL and offer documented, 
 
 ## Approach to extensibility
 
-This table describes how each Copilot and agent capability offers direct
-or indirect extensibility.
+This table describes how each Copilot and agent capability offers direct or indirect extensibility.
 
 |Capability|Direct AL extensibility|Can work with your extensions|Details|
 |-|-|-|-|
