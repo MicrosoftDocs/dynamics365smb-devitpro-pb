@@ -49,6 +49,6 @@ Here are some practical examples to improve the quality of Copilot output:
 > [!NOTE]
 >
 > - Microsoft provides multiple layers of safety for all AI-powered features in Business Central. Some of these safeguards are designed to protect users from harmful content that can be output by generative AI features and might trigger in sensitive business domains such as medical, drugs, legal, or weapons. Customers might experience lower quality of output in these domains.
-> - When you use the developer tool for Copilot in Business Central, you can't extend a Prompt Dialog page. This reduces the chances of others overriding or negatively impacting the AI safeguards built into your experience.
+> - You can't extend a Prompt Dialog page When you use the developer tools for Copilot in Business Central. This behavior reduces the chances of others overriding or negatively impacting the AI safeguards built into your experience.
 
 ## Related information
