@@ -41,10 +41,21 @@ By improving how your functionality presents itself, you improve the experience 
 Here are some practical examples to improve the quality of Copilot output:
 
 - Ensure your captions, tooltips, and teaching tips are concise, informative, and unambiguous. Explain critical nuances such as any special meaning of a default value or the purpose of a page.
+
+  Learn more in [Add tooltips to table and page fields](devenv-adding-tooltips.md) and [Teaching tips and in-app tours for onboarding users](../administration/onboarding-teaching-tips-tours.md).
 - Define alternate keywords for your pages and reports that represent common or industry-specific terms.
+
+  Learn more in [AdditionalSearchTerms](properties/devenv-additionalsearchterms-property.md).
 - Use role-tailoring and other standard Business Central mechanisms to reduce unnecessary page content.
+
+  Learn more in [Customize the user interface for user roles](devenv-role-customization.md).
+
 - Define an appropriate brick field group for your tables to ensure records are represented in a compact form.
+
+  Learn more in [Display lists as tiles using brick field group](devenv-lists-as-tiles.md).
 - Apply access control using permissions so users, Copilot, and agents have a smaller data landscape to work with and only the minimum necessary to carry out their tasks.
+
+  Learn more in [Entitlements and permission sets overview](devenv-entitlements-and-permissionsets-overview.md).
 
 > [!NOTE]
 >
@@ -52,3 +63,9 @@ Here are some practical examples to improve the quality of Copilot output:
 > - You can't extend a Prompt Dialog page When you use the developer tools for Copilot in Business Central. This behavior reduces the chances of others overriding or negatively impacting the AI safeguards built into your experience.
 
 ## Related information
+
+[Teaching tips and in-app tours for onboarding users](../administration/onboarding-teaching-tips-tours.md)  
+[Add tooltips to table and page fields](devenv-adding-tooltips.md)
+[AdditionalSearchTerms](properties/devenv-additionalsearchterms-property.md)  
+[Display lists as tiles using brick field group](devenv-lists-as-tiles.md)  
+[Entitlements and permission sets overview](devenv-entitlements-and-permissionsets-overview.md)  
