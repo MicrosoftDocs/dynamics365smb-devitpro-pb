@@ -22,9 +22,9 @@ Tables and table extensions that have been published must not be deleted. This m
 
 This rule validates tables independently of their Accessibility or ObsoleteState, because tables are always used when synchronizing the schema defined in the extension to the database.
 
-This rule validates table extensions independently of the ObsoleteState of their target tables. Table extensions extending a table, which is marked with obsolete state Removed must be preserved, since they're still contributing to the database schema defined by the extension. If the target table of an extension has been deleted, then the table extension can be deleted as well.
+This rule validates table extensions independently of the ObsoleteState of their target tables. Table extensions extending a table, which is marked with obsolete state Removed must be preserved, since they're still contributing to the database schema defined by the extension. Only if the target table of an extension has been deleted, then the table extension can be deleted as well.
 
-From version 26 and later, there is an exception for table extensions targeting Microsoft tables which have either been deleted or marked with `ObsoleteState = Removed`. In this case, it is possible to remove the table extensions as long as the extension requires a runtime with version '13.0' and higher.
+There is an exception for table extensions targeting Microsoft tables which have either been deleted or marked with `ObsoleteState = Removed`. In this case, it is possible to remove the table extensions as long as the extension requires a runtime with version '13.0' and higher.
 
 ## How to fix this diagnostic?
 
