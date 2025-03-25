@@ -64,8 +64,6 @@ Here are some practical examples to improve the quality of Copilot output:
 
 ## Related information
 
-[Teaching tips and in-app tours for onboarding users](../administration/onboarding-teaching-tips-tours.md)  
-[Add tooltips to table and page fields](devenv-adding-tooltips.md)
-[AdditionalSearchTerms](properties/devenv-additionalsearchterms-property.md)  
-[Display lists as tiles using brick field group](devenv-lists-as-tiles.md)  
-[Entitlements and permission sets overview](devenv-entitlements-and-permissionsets-overview.md)  
+[Integrating AI using Developer Tools for Copilot](ai-integration-landing-page.yml)  
+[Developing generative AI experiences overview](ai-build-experience-overview.md)  
+[Build Copilot user experience](ai-build-experience.md)  
