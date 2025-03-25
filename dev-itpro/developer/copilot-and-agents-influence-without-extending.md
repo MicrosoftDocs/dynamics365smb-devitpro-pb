@@ -22,33 +22,33 @@ This table describes how each Copilot and agent capability offers direct or indi
 |-|-|-|-|
 |Analyze list|No |Yes |Copilot automatically works with fields you add to existing pages and new list or worksheet page objects in your extension. No action is required to enable this capability.|
 |Chat|No |Yes|Copilot can query new pages and tables in your extension. It can include, display, or filter on fields you add to existing pages. No action is required to enable this capability.<br><br>Copilot doesn't support the following field types: fields without a tooltip, fields with the AL property AllowInCustomizations set to false, and fields of type Blob, RecordId, InStream, OutStream, Media, MediaSet, Notification, JsonArray, JsonObject, JsonToken, JsonValue, Variant, and SecretText.<br><br>While in preview, Copilot can't provide guidance or answer questions based on documentation for your extensions. This functionality is coming in a later release update. Learn more in [Chat with Copilot to learn how to use installed add-on apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/chat-copilot-learn-use-installed-add-on-apps).|
-|Autofill|No|Yes |Copilot can autofill fields you add to existing pages, and fields in new card or document page objects from your extension. No action is required to enable this capability.<br><br>Learn more about limitations in [Autofill availability](/dynamics365/business-central/autofill-fields-with-copilots#availability).  |
+|Autofill|No|Yes |Copilot can autofill fields you add to existing pages, and fields in new card or document page objects from your extension. No action is required to enable this capability.<br><br>Learn more about limitations in [Autofill availability](/dynamics365/business-central/autofill-fields-with-copilots#availability).|
 |Summarize|No |Yes |Copilot generates record summaries that include fields, FactBoxes, and actions from your extension. The fields can be added to existing pages or new card and document page objects. Actions include those that use the RunObject to open other pages. No action is required to enable this capability.|
 |Sales Order Agent|No |Yes|Similar to other users, the Sales Order Agent interacts with Business Central using the UI and reacts to the presence of new fields and actions that are made available on pages.<br><br>The agent uses an out of the box profile (role) called **Sales Order Agent (Copilot)** that defines the UI elements the agent can interact with. Using profiles reduces the UI surface that is available to the users and agents alike. For example, if the **Purchase Orders** page isn't included with the profile, the agent can't navigate to it and can't modify the discounts on a sales order because these fields are hidden for this profile. If you want the agent to consider or interact with a field on the **Sales Order** page added by your extension, customize the **Sales Order Agent (Copilot)** profile so the field is visible to the agent.|
-|Bank account reconciliation|No |Yes |WWhen users ask Copilot to Post Difference to G/L Account, Copilot relies on data from the Text-to-Account Mapping table for a list of specific texts that don’t need to be matched using AI. You can add to this list to reduce cases processed by AI.|
+|Bank account reconciliation|No |Yes |When users ask Copilot to Post Difference to G/L Account, Copilot relies on data from the Text-to-Account Mapping table for a list of specific texts that don’t need to be matched using AI. You can add to this list to reduce cases processed by AI.|
 |Marketing text suggestions|No |No | |
 |No. Series Suggestions|No |Yes |Copilot can work with any No. Series setting fields added by your extension, if the field follows typical No. Series patterns. Copilot only looks for No. Series fields in Setup tables that include the term “Setup” in the table name. |
 |E-document matching assistance|No |No |  |
 |Sales lines suggestions|No |Yes |When users choose to keep any sales lines suggested by Copilot, the lines are copied to the sales document, where Business Central automatically triggers field validation and the Copy Document Codeunit. If your extension customizes validation or this codeunit using events, your logic will be executed to validate the inserted sales lines. |
 |Create product information|No |No | |
 
-## Improving Copilot and agent output for your extensions
+## Improve Copilot and agent output for your extensions
 
-In most cases, Copilot and agents use generative AI to view, learn and use Business Central as any user would. These rely on the quality of the
-text you display in Business Central in captions, notifications and messages, and the quality of your accompanying online documentation, to
-explain new concepts and business processes you bring to Business Central as part of your extensions.
+In most cases, Copilot and agents use generative AI to view, learn, and use Business Central like any user. These tasks rely on the quality of the text displayed in Business Central captions, notifications, and messages, and the quality of your online documentation to explain new concepts and business processes introduced in your Business Central extensions.
 
-By improving how your functionality presents itself, you improve the experience both for end-users and for these AI-powered features.
+By improving how your functionality presents itself, you improve the experience both for end users and for these AI-powered features.
 
-Below are a few practical examples that help improve quality of Copilot output:
+Here are some practical examples to improve the quality of Copilot output:
 
-- Ensure your captions, tooltips and teaching tips are concise, informative and unambiguous, explaining critical nuances such as any special meaning of a default value or the purpose of a page.
-- Define alternate keywords to your pages and reports, that may represent common or industry-specific terms.
-- Apply role-tailoring and other standard Business Central mechanisms to reduce page content that is not useful or required.
-- Define an appropriate brick field group for your tables, ensuring  records can be represented in a compact form.
-- Apply access control using permissions, so that users, Copilot and agents have a smaller data landscape to work with and only the minimum  necessary to carry out their tasks. 
+- Ensure your captions, tooltips, and teaching tips are concise, informative, and unambiguous. Explain critical nuances such as any special meaning of a default value or the purpose of a page.
+- Define alternate keywords for your pages and reports that represent common or industry-specific terms.
+- Use role-tailoring and other standard Business Central mechanisms to reduce unnecessary page content.
+- Define an appropriate brick field group for your tables to ensure records are represented in a compact form.
+- Apply access control using permissions so users, Copilot, and agents have a smaller data landscape to work with and only the minimum necessary to carry out their tasks.
 
 > [!NOTE]
-> Microsoft provides multiple layers of safety for all AI-powered features in Business Central. Some of these safeguards are designed to protect users from harmful content that can be output by generative AI features, and may trigger in sensitive business domains such as medical, drugs, legal or weapons. Customers may experience lower quality of output in these domains.
 >
-> When using the developer tool for Copilot in Business Central, you cannot extend a Prompt Dialog page at this time. This reduces the chances of others overriding or negatively impacting the AI safeguards that you have built into your experience. 
+> - Microsoft provides multiple layers of safety for all AI-powered features in Business Central. Some of these safeguards are designed to protect users from harmful content that can be output by generative AI features and might trigger in sensitive business domains such as medical, drugs, legal, or weapons. Customers might experience lower quality of output in these domains.
+> - When you use the developer tool for Copilot in Business Central, you can't extend a Prompt Dialog page. This reduces the chances of others overriding or negatively impacting the AI safeguards built into your experience.
+
+## Related information
