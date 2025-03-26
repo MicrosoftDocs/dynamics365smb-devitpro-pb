@@ -9,7 +9,7 @@ description: 'Learn how to use SOAP web services for operation-centric services 
 
 SOAP web services enable full flexibility for building operation-centric services. They provide industry-standard interoperability and channel and host pluggability.  
   
-You can use SOAP to interact with page or codeunit web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] .  
+You can use SOAP to interact with page or codeunit web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
 [!INCLUDE[soap_deprecation](../includes/soap_deprecation_note.md)]
 
