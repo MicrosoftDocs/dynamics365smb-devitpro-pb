@@ -51,7 +51,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 | Application               | [Integrate Field Service with service management](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/integrate-field-service-service-management) |
 |                           | [View item availability in Field Service work orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/view-item-availability-field-service-work-orders) |
 |                           | [Use improved troubleshooting options for cost adjustments](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/improved-performance-enhanced-troubleshooting-options-cost-adjustment-runs) |
-|                           | [Edit price lists in Excel](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/edit-price-lists-excel) |
+|                           | <!--[Edit price lists in Excel](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/edit-price-lists-excel)--> Edit price lists in Excel|
 | Commerce                  | [Import and export more data for Shopify B2B companies and company locations](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/import-export-more-data-shopify-b2b-companies-company-locations) |
 |                           | [Activate sales channels in Shopify Connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/activate-sales-channels-shopify-connector) |
 |                           | [Import and export more data using Shopify metafields](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/import-export-more-data-using-shopify-metafields) |
@@ -69,7 +69,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Use modern search to access data in Czech localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-modern-search-access-data-czech-localization) |
 |                           | [Hide lines with zero quantity in Czech document reports](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/hide-lines-zero-quantity-czech-document-reports) |
 |                           | [Define allowed languages per environment](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/define-allowed-languages-per-environment) |
-| Development               | [Manage external files more easily through a unified API in the External File Storage module](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-external-files-unified-api-external-file-storage-module) |
+| Development               | Manage external files more easily through a unified API in the External File Storage module <!--[Manage external files more easily through a unified API in the External File Storage module](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-external-files-unified-api-external-file-storage-module)--> |
 |                           | [Troubleshoot clients, apps, and add-ins with telemetry](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/troubleshoot-clients-apps-add-ins-telemetry) |
 |                           | [Validate certificates on external web service endpoints called from AL HttpClient](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/validating-certificates-external-web-service-endpoints-called-al-httpclient) (controlled by **Feature Management**)|
 |                           | [Use new properties on a report layout](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-properties-report-layout) |
@@ -100,8 +100,8 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Check total purchase amounts on documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/check-total-purchase-amounts-documents) |
 | Governance and administration | [Link to Power Platform to use Copilot Studio messages](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/link-power-platform-use-copilot-studio-messages) |
 |                           | [Add support for MultiSubnetFailover](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-support-multisubnetfailover) |
-|                           | [Enhanced index troubleshooting](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enhanced-index-troubleshooting) |
-| Reporting and data analysis   | [Use enhanced analytics for inventory](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-for-inventory) |
+|                           | Enhanced index troubleshooting <!-- [Enhanced index troubleshooting](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enhanced-index-troubleshooting)--> |
+| Reporting and data analysis   | Use enhanced analytics for inventory <!-- [Use enhanced analytics for inventory](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-for-inventory)--> |
 |                           | [Enhance reports with PDF post-processing capabilities](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enhance-reports-pdf-post-processing-capabilities) |
 |                           | [Validate report layouts for errors as an admin](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/validate-report-layouts-errors-as-admin) |
 |                           | [Access report and request metadata in Word layouts](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/access-report-request-metadata-word-layouts) |
