@@ -39,7 +39,14 @@ This timeslot now becomes the default window when updates are applied to this en
 
 ## <a name="schedule"></a>Schedule an update
 
-Administrators can schedule environment updates to any version higher than the current environment version within the environment's current and next major version from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], regardless of whether the chosen version has been made available already.
+Administrators can schedule environment updates to any version higher than the current environment version within the environment's current and next major version from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], regardless of whether the chosen version has been made available already. 
+
+[!INCLUDE [admin-set-update-date](../includes/admin-set-update-date.md)]
+
+When the scheduled update date arrives, the update runs automatically within the update window that you specified for this environment. All users are from this environment, and all attempts to sign in during the update are blocked with the message `Service is under maintenance`.  
+
+> [!IMPORTANT]
+> The update duration differs depending on the environment. We strongly recommend scheduling the update for a date when it would be acceptable for the environment to be inaccessible until the end of its update window.
 
 ### Schedule an update to an available version
 
@@ -54,10 +61,17 @@ To schedule an update:
 1. Under **Update Settings**, choose the **Modify** action for **Next Update**.
 1. In the **Schedule Environment Update** pane, choose an available target version and pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
 
-    > [!NOTE]  
-    > You can choose to ignore the environment's update window when scheduling a specific update by switching **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and lets large updates run for longer than 24 hours if necessary. Updates running in this mode aren't automatically canceled when the update window ends. Using this setting for environments that need to be available for users by a certain time isn't recommended.
+    > [!NOTE]
+    > When you select a current date for your update, but the update window defined for this environment has already passed, the update will start within that time window, but on the day after the one that you defined for your environment.
+    >
+    > For example, if you're changing the **Scheduled update date** to the current date at 6 PM, and your update window is set to 1 AM - 7 AM, the update will not start immediately, but after 1 AM on the next day.
+    >
+    > To start an update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and lets large updates run for longer than 24 hours if necessary. Updates running in this mode aren't automatically canceled when the update window ends. Using this setting for environments that need to be available for users by a certain time isn't recommended.
 
 1. Choose **Schedule Update**.
+
+> [!NOTE]
+> The chosen date for a target version is preserved for that version even if the target version and date for an environment's next update are changed later. If when an updates succeeds, the next update scheduled by Microsoft is for a target version that has a chosen date that is in the future already, this chosen date will be when the next update runs rather than the default seven days after completion of the previous update.
 
 ### Schedule an update to a planned version
 
