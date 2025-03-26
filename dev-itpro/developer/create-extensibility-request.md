@@ -24,7 +24,7 @@ Extensibility requests are optional. However, submitting structured requests mak
 
 > [!NOTE]
 >
-> * We're adding new events in main and the latest release branch. At the time of this writing, the latest release branch is 25.x. In most cases, we'll make other types of requests, again, only in the main branch, available in upcoming major releases.
+> * We're adding new events in main and the latest release branch. At the time of this writing, the latest release branch is 26.x. In most cases, we'll make other types of requests, again, only in the main branch, available in upcoming major releases.
 > * If the procedure, field, object or any part of it are marked as `Obsolete` or surrounded by `CLEAN` tags, we won't add or update the events.
 
 ## Minimum requirements
@@ -49,6 +49,8 @@ Examples:
 
 Provide a brief description of why you need us to change the app, and what the change allows you to do. Good explanations help us make the changes without contacting you with additional questions, which decreases the time to complete the request.
 
+Good contributions not only help a single scenario, but hopefully enable other users with a similar requirement to use the smae extensibility point. Keep that in mind when you design and request changes in our extensibility model.
+
 > [!TIP]
 > Be specific. Don't be vague. Provide enough information to help us understand your need. For example, avoid sentences such as:
 >
@@ -61,6 +63,8 @@ Provide a brief description of why you need us to change the app, and what the c
 > Explain why. Maybe something can be done differently. It might cause an issue in a part of the system that you aren't aware of. Maybe it makes sense to remove it in general.
 
 ## Describe the requests
+
+Explain the scenarios that you can't solve with our current extensibility offerings. If you have a specific implementation in mind that solves your scenario, add it so that we can process your request faster. 
 
 Create a separate extensibility request for every change you want us to make.
 
