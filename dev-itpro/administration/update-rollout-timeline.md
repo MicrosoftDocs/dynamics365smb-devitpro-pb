@@ -12,7 +12,7 @@ ms.reviewer: jswymer
 
 # Major updates and minor updates for Business Central online
 
-This article provides an overview of what you need to know about how a major or minor update for [!INCLUDE[prod short](../developer/includes/prod_short.md)] rolls out, and how the underlying service updates. It includes key dates, actions you need to take, and answers some common questions. To learn about new functionality and improvements in recent versions, see [What's new or changed](../whatsnew/overview.md).
+This article provides an overview of what you need to know about how a major or minor update for [!INCLUDE[prod short](../developer/includes/prod_short.md)] rolls out, and how the underlying service updates. It includes key dates, actions you need to take, and answers some common questions.
 
 [!INCLUDE [service-updates](../includes/service-updates.md)]
 
