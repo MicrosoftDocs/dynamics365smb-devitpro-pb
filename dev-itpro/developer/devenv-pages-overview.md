@@ -64,6 +64,7 @@ The following page types are available:
 |[HeadlinePart](devenv-create-role-center-headline.md)|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.|
 |[API](devenv-api-pagetype.md)|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. This page type should not be extended by creating a page extension object. Instead, create a new API by adding a page object.|
 |[PromptDialog](devenv-page-type-promptdialog.md) | Pages of this type are used to enable creating generative AI experiences with the copilot look and feel.|
+|[UserControlHost](devenv-page-type-usercontrolhost.md)| The `UserControlHost` page type can be used to only render a single user control in the client.|
 
 > [!NOTE]  
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
