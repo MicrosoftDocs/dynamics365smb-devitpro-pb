@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: overview
-ms.date: 03/10/2025
+ms.date: 03/26/2025
 ---
 
 # Troubleshoot in Visual Studio Code directly from the web client
@@ -36,7 +36,7 @@ To open and explore a page from the Page Inspector, follow these steps:
 1. Then, you must specify, if you want to create a new project, or use an existing project. You're only asked the first time, and from then on, the Visual Studio Code window that was last active is used.
 1. Next, you must decide if you want to download symbols.  
     > [!NOTE]  
-    > If you specify yes, the app.json file will be updated with the dependent extensions of the page, which are shown on the **Extensions** tab in the **Page Inspection** page, and the symbols will automatically be downloaded. You can specify no, if you're already working on the specific source code files.  
+    > If you specify yes, the app.json file is updated with the dependent extensions of the page, which are shown on the **Extensions** tab in the **Page Inspection** page, and the symbols are automatically downloaded. You can specify no, if you're already working on the specific source code files.  
     > If you say no, and don't have the right symbols downloaded, you won't be able to navigate to the object source code.
 1. Now, you're prompted whether to do a snapshot or regular debugging session, or not to debug, but just view the source code.  
     > [!NOTE]  
