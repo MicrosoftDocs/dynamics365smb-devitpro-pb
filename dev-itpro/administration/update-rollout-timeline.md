@@ -42,7 +42,7 @@ When a new version is available as update on the environment, [Notification reci
 
 ### Grace period
 
-The grace period starts when the update period ends and lasts for one month. It takes place every September for the update period that starts in April and every March for the update period that starts in October. During the grace period, it isn't possible to reschedule an update to a later date; Microsoft automatically reschedules environment updates that don't succeed to be reattempted seven days later. Administrators can only reschedule this new attempt to an earlier date. To ensure action is taken during the grace period to ensure the environment update succeeds, Microsoft alerts administrators in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and might send in-product notifications to end-users about the upcoming enforced update period. Learn more in [When Microsoft can't update apps or PTEs](../developer/app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
+The grace period starts when the update period ends and lasts for one month. It takes place every September for the update period that starts in April and every March for the update period that starts in October. During the grace period, it isn't possible to reschedule an update to a later date or to a target version within the environment's current major version; Microsoft automatically reschedules environment updates that don't succeed to be reattempted seven days later. Administrators can only reschedule this new attempt to an earlier date or to a different target version within the next major version. To ensure action is taken during the grace period to ensure the environment update succeeds, Microsoft alerts administrators in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and might send in-product notifications to end-users about the upcoming enforced update period. Learn more in [When Microsoft can't update apps or PTEs](../developer/app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
 
 > [!TIP]
 > We recommend that you keep any apps and per-tenant extensions ready to update at any given time, and that you actively test compatibility. Developers can get tips and guidance in the developer docs here: [Maintain AppSource Apps and Per-Tenant Extensions](../developer/app-maintain.md). Admins can install, update, and uninstall apps in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] as described here: [Managing Apps](tenant-admin-center-manage-apps.md).
@@ -59,29 +59,9 @@ Minor updates are released every month in which there's no major update release,
 
 Get an overview of the release plans at [Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/). For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans, select a release wave under **Dynamics 365**, then look under **SMB** in the table of contents. To learn about new functionality, bug fixes, and improvements shipped in recent versions, see [What's new or changed](../whatsnew/overview.md).
 
-## Schedule updates
+## Completed updates
 
-Administrators can schedule environment updates to any version higher than the current environment version within the environment's current and next major version from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], regardless of whether the chosen version has been made available already. 
-
-For target versions that are available, pick a date to schedule the update for. For target versions that are not yet available, the update will be scheduled automatically within a few days of the version becoming available with at least seven days notice. [Notification recipients](tenant-admin-center-notifications.md) receive an email when an update has been scheduled and can change the date for which the update is scheduled in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
-
-[!INCLUDE [admin-set-update-date](../includes/admin-set-update-date.md)]
-
-When the scheduled update date arrives, the update runs automatically within the update window that you specified for this environment. All users are from this environment, and all attempts to sign in during the update are blocked with the message `Service is under maintenance`.  
-
-> [!IMPORTANT]
-> The update duration differs depending on the environment. We strongly recommend scheduling the update for a date when it would be acceptable for the environment to be inaccessible until the end of its update window.
-
-For more information, see [Set the update window for each environment](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).  
-
-> [!NOTE]
-> When you select a current date for your update, but the update window defined for this environment has already passed, the update will start within that time window, but on the day after the one that you defined for your environment.
->
-> For example, if you're changing the **Scheduled update date** to the current date at 6 PM, and your update window is set to 1 AM - 7 AM, the update will not start immediately, but after 1 AM on the next day.
->
-> To start an update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**.
-
-## Failed updates and rescheduling
+Environment updates complete when the environment is updated successfully, when the environment update fails, or when the update is cancelled because the update window for the environment ended.
 
 An environment might fail to update for various reasons, such as:
 
@@ -89,12 +69,19 @@ An environment might fail to update for various reasons, such as:
 - AppSource app compatibility issues  
 - Internal update issues  
 
-Any environment that fails to update will be automatically restored to the original application version so that users can connect to it again. The environment is then automatically rescheduled for a new update attempt in seven days. If you consider the issue resolved and want to try the update again, change the update date to an earlier date or the current date.
+When an update fails or is cancelled, the environment is automatically restored to the original application version so that users can connect to it again. The environment is then automatically rescheduled for a new update attempt in seven days. If you consider the issue resolved and want to try the update again, change the update date to an earlier date or the current date.
 
 > [!IMPORTANT]
 > If the target version and update date for a failed update were selected by Microsoft services and not modified by an administrator, and the target version is not the latest available version, the next update may be rescheduled to update to the latest available version. Updates scheduled by administrators are not rescheduled to a different version, unless the update period for the chosen target version has ended.
 
 If Microsoft can't do the update on the selected date, you'll be notified by email that the environment update is rescheduled for seven days later. You can change that date in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to any other allowed date, including the current date.
+
+When an update succeeds, the next update is scheduled to the latest available version of [!INCLUDE[prod short](../developer/includes/prod_short.md)] to take place at least seven days later. If the successful update was to the latest available version of [!INCLUDE[prod short](../developer/includes/prod_short.md)], the version that is planned to become available next is picked for the next update, and will automatically be scheduled for a date when it becomes available.
+
+> [!NOTE]
+> The chosen date for a target version is preserved for that version even if the target version and date for an environment's next update are changed later. If when an updates succeeds, the next update scheduled by Microsoft is for a target version that has a chosen date that is in the future already, this chosen date will be when the next update runs rather than the default seven days after completion of the previous update.
+
+The target version and date for an environment's next update can be changed in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], see [Managing updates in the admin center](tenant-admin-center-update-management.md).
 
 ## <a name="postponed"></a>Postponed updates
 
