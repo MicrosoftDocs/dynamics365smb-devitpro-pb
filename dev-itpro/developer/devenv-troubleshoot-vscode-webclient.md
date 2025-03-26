@@ -18,8 +18,8 @@ From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can ope
 
 - Open a page from the [Page Inspector](devenv-troubleshoot-vscode-webclient.md#open-a-page-from-the-page-inspector)
 - Troubleshoot the current session from within [Help and Support](devenv-troubleshoot-vscode-webclient.md#troubleshoot-from-the-help-and-support-page)
-- Generate launch.json files directly from the web client [](devenv-troubleshoot-vscode-webclient.md#generate-launch-configuration-files-directly-from-the-web-client)
-- Generate dependencies directly fro the web client [](devenv-troubleshoot-vscode-webclient.md#generate-extension-dependencies-directly-from-the-web-client)
+- [Generate launch configuration files directly from the web client](devenv-troubleshoot-vscode-webclient.md#generate-launch-configuration-files-directly-from-the-web-client)
+- [Generate dependencies directly fro the web client](devenv-troubleshoot-vscode-webclient.md#generate-extension-dependencies-directly-from-the-web-client)
 
 ## Open a page from the Page Inspector
 
