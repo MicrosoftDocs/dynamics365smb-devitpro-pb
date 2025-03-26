@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
 ### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
 ### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
 ### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
@@ -796,11 +797,12 @@
 #### [Transferring data (during upgrade)](developer/devenv-data-transfer.md)
 
 #### Importing and exporting data
+##### [Exporting data to Excel using ExcelBuffer](developer/devenv-excel-buffer.md)
 ##### [XMLport overview](developer/devenv-xmlport-overview.md)
-##### [XMLport object](developer/devenv-xmlport-object.md)
-##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)
-##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
-##### [Using request pages with XMLports](developer/devenv-request-pages.md)
+###### [XMLport object](developer/devenv-xmlport-object.md)
+###### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)
+###### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
+###### [Using request pages with XMLports](developer/devenv-request-pages.md)
 
 
 ### Pages and the user interface
@@ -1522,6 +1524,7 @@
 #### [Troubleshooting errors on OData/SOAP web services on pages, queries, and codeunits](webservices/web-service-troubleshooting-soap-odata-ui-pages.md)
 #### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
 #### [Creating and interacting with an OData V4 bound action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+#### [Disable SOAP web services on Microsoft UI pages feature key](developer/devenv-disable-soap-microsoft-pages-feature-key.md)
 
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
@@ -1727,6 +1730,8 @@
 #### [Migrate from User Groups to Permission Sets or Security Groups](upgrade/deprecated-features-user-groups.md)
 #### [Migrating from legacy views to modern views](developer/devenv-views-legacy.md)
 #### [NA bank reconciliation and deposits are deprecated in the North American version](upgrade/deprecated-features-na-bank-rec.md)
+## AL-Go for GitHub
+### [Deprecating BcContainerHelper](al-go/algo-deprecating-bccontainerhelper.md)
 ## Local functionality
 ### [Deprecated fields, and fields marked as obsolete in local functionality](upgrade/deprecated-fields.md)
 ### [Deprecated features in the Austrian Version](upgrade/deprecated-features-at.md)
