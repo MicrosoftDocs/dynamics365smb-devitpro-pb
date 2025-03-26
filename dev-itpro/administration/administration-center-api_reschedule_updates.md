@@ -14,14 +14,14 @@ ms.date: 02/24/2023
 Allows for the management of scheduled updates such as rescheduling the update to a run on or after a specific date within a provided range.
 
 ## Flexible Update Management
-The endpoints documented below are shipping when Flexible Update Management becomes generally available. Prepare any integrations using the Admin Center API to use these endpoints to use the new scheduling features once Flexible Update Management features are available on your environments.
+The endpoints documented below are shipping when Flexible Update Management becomes generally available, and are only applicable to environments on version 25.5 or higher. Prepare any integrations using the Admin Center API to use these endpoints to use the new scheduling features once Flexible Update Management features are available on your environments.
 
 ### Get Updates
 
 Get information about update target versions and their status for a specific environment.
 
 ```
-GET /admin/vX.XX/applications/{applicationFamily}/environments/{environmentName}/updates
+GET /admin/v2.26/applications/{applicationFamily}/environments/{environmentName}/updates
 ```
 
 #### Route Parameters
@@ -92,7 +92,7 @@ Returns information about updates available for the specified environment.
 Select a target version and update date for the next update on an environment. Only one target version can be selected per environment at a time; selecting a new target version for the next environment updates automatically unselects the previous target version.
 
 ```
-PATCH /admin/vX.XX/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
+PATCH /admin/v2.26/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
 ```
 
 #### Route Parameters
@@ -133,7 +133,7 @@ Example for selecting a target version that is not yet available.
 `environmentNotFound` - the targeted environment couldn't be found
 
 ## Legacy
-The legacy endpoints documented below are backwards compatible with the new endpoints introduced as part of Flexible Update Management, but do not offer all scheduling options the new endpoints offer. It is recommended to update your integrations to use the Flexible Update Management endpoints documented above.
+The legacy endpoints documented below are backwards compatible with the new endpoints introduced as part of Flexible Update Management, but do not offer all scheduling options the new endpoints offer. It is recommended to update your integrations to use the Flexible Update Management endpoints documented above for environments on version 25.5 or higher.
 
 ### Get Scheduled Update
 
