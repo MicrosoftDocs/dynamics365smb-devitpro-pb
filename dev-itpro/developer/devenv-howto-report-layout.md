@@ -98,7 +98,7 @@ To compress pictures that are part of the layout file, do as follows:
 
 Learn more at [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
 
-For pictures that are part of the report dataset, you need to adjust the size in Business Central. You can use the codeunit 5080 "Image Handler Management" to scale images in AL (from version 24.1 also available in [!INCLUDE[prod_short](includes/prod_short.md)] online). Learn more at [Codeunit "Image Handler Management"](/dynamics365/business-central/application/base-application/codeunit/system.media.image-handler-management).
+For pictures that are part of the report dataset, you need to adjust the size in [!INCLUDE[prod_short](includes/prod_short.md)]. You can use the codeunit 5080 "Image Handler Management" to scale images in AL (from version 24.1 also available in [!INCLUDE[prod_short](includes/prod_short.md)] online). Learn more at [Codeunit "Image Handler Management"](/dynamics365/business-central/application/base-application/codeunit/system.media.image-handler-management).
 
 ### Using tables to display data from the report dataset (simple repeaters)
 
@@ -434,7 +434,7 @@ You now see the generated report in preview mode.
 
 > **APPLIES TO:** Business Central versions 20, 21, and 22
 
-The rendering of Word reports is controlled by an application feature key. Enabling the key `RenderWordReportsInPlatform` in the **Feature Management** page in Business Central switches the Microsoft Word report rendering to the new platform rendering, which supports multiple layouts and new triggers for **Save** and **Download** actions.
+The rendering of Word reports is controlled by an application feature key. Enabling the key `RenderWordReportsInPlatform` in the **Feature Management** page in [!INCLUDE[prod_short](includes/prod_short.md)] switches the Microsoft Word report rendering to the new platform rendering, which supports multiple layouts and new triggers for **Save** and **Download** actions.
 
 > [!NOTE]  
 > Application rendering is obsolete and will be deprecated in a future release. It's recommended to stay on the old platform if you have extensions that use custom Word layouts and therefore cannot use the new platform, for example, because of dependencies on the `OnBeforeMergeDocument` or `OnBeforeMergeWordDocument` events.
@@ -483,7 +483,7 @@ If you have access to the AL code for the report object, add a new layout in the
 
 The **Report layouts** page in the client includes the **Export report schema** action that allows you to download a report schema/dataset as a Microsoft Word custom XML file. You can then use the file to create a new Word layout. This file makes it easier to convert an RDL layout or a customer-supplied Word file into a Word layout for a report.
 
-1. Sign in to Business Central and open the **Report layouts** page.
+1. Sign in to [!INCLUDE[prod_short](includes/prod_short.md)] and open the **Report layouts** page.
 1. Select the report in the list that you want to export the XML and then select **Export report schema** to download an XML file with the custom XML.
 1. Open the Word document that you want to use for the report.
 
