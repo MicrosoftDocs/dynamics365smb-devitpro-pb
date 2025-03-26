@@ -36,7 +36,6 @@ Interfaces in AL can be extended to allow additional changes to interfaces witho
 
 Typing the shortcut `tinterface` creates the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-
 ## Interface example
 
 The following example defines an interface `IAddressProvider`, which has one method `getAddress` with a certain signature. The codeunits `CompanyAddressProvider` and `PrivateAddressProvider` both implement the `IAddressProvider` interface, and each define a different implementation of the `getAddress` method; in this case a simple variation of address value.
@@ -153,9 +152,87 @@ page 50200 MyAddressPage
 }
 ```
 
+## Create List and Dictionary of an interface
+
+With [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)] you can create lists or dictionaries of interfaces.
+
+The [Dictionary](methods-auto/dictionary/dictionary-data-type.md) and [List](methods-auto/list/list-data-type.md) data types offer efficient lookup of key-value pairs and ordered collections, and allow managing collections of data dynamically.
+
+The following example illustrates how to create a [Dictionary](methods-auto/dictionary/dictionary-data-type.md) of interfaces:
+
+```AL
+codeunit 50120 MyDictionaryCodeunit
+{
+    procedure MyProcedure(): Dictionary of [Integer, Interface "Barcode Font Provider"]
+    var
+        localDict: Dictionary of [Integer, Interface "Barcode Font Provider"];
+        IProvider: Interface "Barcode Font Provider";
+    begin
+        localDict.Add(2, IProvider);
+        exit(localDict);
+    end;
+}
+```
+
+The following example illustrates how to create a [List](methods-auto/list/list-data-type.md) of interfaces:
+
+```al
+interface IShape
+{
+    procedure GetArea(): Decimal;
+}
+
+codeunit 50101 Circle implements IShape
+{
+    procedure GetArea(): Decimal
+    var
+        Radius: Decimal;
+    begin
+        Radius := 5; // Example radius
+        exit(3.14 * Radius * Radius); // Area of a circle: πr²
+    end;
+}
+
+codeunit 50102 Square implements IShape
+{
+    procedure GetArea(): Decimal
+    var
+        SideLength: Decimal;
+    begin
+        SideLength := 4; // Example side length
+        exit(SideLength * SideLength); // Area of a square: side²
+    end;
+}
+
+codeunit 50103 ShapeListDemo
+{
+    trigger OnRun()
+    var
+        ShapeList: List of [Interface IShape];
+        Shape: Interface IShape;
+        CircleShape: Codeunit Circle;
+        SquareShape: Codeunit Square;
+    begin
+        // Add instances of Circle and Square to the list
+        ShapeList.Add(CircleShape);
+        ShapeList.Add(SquareShape);
+
+        // Iterate through the list and display the area of each shape
+
+        foreach Shape in ShapeList do begin
+            Message('The area of the shape is: %1', Shape.GetArea());
+        end;
+    end;
+}
+```
+
+In the System Application, you can find the complete examples of using a list of interfaces in the [Telemetry Logger](https://github.com/search?q=repo%3Amicrosoft%2FBCApps+%22List+of+%5BInterface%22&type=code).
+
 ## Related information
 
 [Codeunit object](devenv-codeunit-object.md)  
 [Extensible enums](devenv-extensible-enums.md)  
 [Extending interfaces in AL](devenv-interfaces-in-al-extend.md)  
-[Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md)
+[Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md)  
+[Dictionary data type](methods-auto/dictionary/dictionary-data-type.md)  
+[List data type](methods-auto/list/list-data-type.md)  
