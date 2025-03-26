@@ -86,7 +86,7 @@ You can create new environments that are either production environments or sandb
    For sandbox environments, [preview versions](preview-environments.md) may be available. Preview versions provide early access to new functionality, but environments on these versions are not updated once the version becomes available and will be deleted automatically when the preview ends.
 
    > [!IMPORTANT]
-   > Environments can be created on any available version. For version 25.x, version 25.0, 25.1, and 25.2 may not be available for every country for the entire 25.x [update period](update-rollout-timeline.md#update-period).
+   > Environments can be created on any available version. For major version 25.x, minor versions 25.0, 25.1, and 25.2 may not be available for every country for the entire 25.x [update period](update-rollout-timeline.md#update-period).
  
 1. Choose **Create**.  
 
