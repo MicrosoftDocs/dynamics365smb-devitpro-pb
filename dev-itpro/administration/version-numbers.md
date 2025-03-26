@@ -20,18 +20,16 @@ You can use the information about which version the tenant is on to help you tro
 |Platform \<major>.\<minor>.\<build>.\<revision>|20.0.12345.0 | Specifies the full platform version, which includes client and server components. |
 |Application \<major>.\<minor>.\<build>.\<revision>|20.1.23456.0| Specifies the full version number for the application, including the major version number and build number. |
 
-In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], the version information is rendered slightly differently:
-
-|Version  |Example      |Description                                 |
-|---------|-------------|--------------------------------------------|
-|Platform  \<major>.\<minor>|20.1 | Specifies the major and minor version of the platform, which includes client and server components. |
-|Application \<major>.\<minor>.\<build>.\<revision>|20.1.23456.0 | Specifies the full version number for the application. |
+> [!NOTE]
+> In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], only the \<major>.\<minor> version number for the application is used to administer environment updates.
 
 The numbers are updated based on Microsoft's builds. In the default version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, platform and application have the same major version number but different build numbers. If you perform a technical upgrade of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, then platform and application will have different versions.  
 
 The following list describes the meaning of each of the numbers in a full version number:
 
 - `major` is the major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+  - `26` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1 update in April 2025 and forward
+  - `25` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 2 update in October 2024 and forward
   - `24` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 1 update in April 2024 and forward
   - `23` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2 update in October 2023 and forward
   - `22` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1 update in April 2023 and forward
