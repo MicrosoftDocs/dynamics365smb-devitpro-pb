@@ -81,11 +81,14 @@ You can create new environments that are either production environments or sandb
    > [!TIP]
    > To create a sandbox environment that's based on the Business Central W1 (non-localized) version, choose a country that uses the W1 BaseApp, as indicated in the [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md) article.
 
-1. In the **Version** list, specify the relevant application version for the new environment if more than one version is available.
+1. In the **Version** list, specify the relevant application version for the new environment.
 
-   New production environments are based on the latest production version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. New sandboxes are based on the specified version.
+   For sandbox environments, [preview versions](preview-environments.md) may be available. Preview versions provide early access to new functionality, but environments on these versions are not updated once the version becomes available and will be deleted automatically when the preview ends.
+
+   > [!IMPORTANT]
+   > Environments can be created on any available version. For version 25.x, version 25.0, 25.1, and 25.2 may not be available for every country for the entire 25.x [update period](update-rollout-timeline.md#update-period).
  
-1. Choose the **Create** action.  
+1. Choose **Create**.  
 
    The new environment isn't accessible until the **State** becomes **Active**.
 
@@ -93,14 +96,6 @@ You can create new environments that are either production environments or sandb
 > The new environment has a default update window that guarantees future updates won't run between 8:00 PM and 6:00 AM local time for the environment country. This update window can be changed after the environment has been created. Learn more in [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).
 
 To delete an environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then choose **Delete** on the action ribbon.
-
-### Selecting a version for a new sandbox environment
-
-If you create a sandbox that isn't a copy of an existing environment, you must specify an application version for the new environment. The version list shows the latest *production* version, which is the version used for new production environments.
-
-The version list might also have one or more *preview* versions. Preview versions are early release candidates of upcoming releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that are made available specifically for sandbox environments. This list gives you access to review new functionality, validate extension compatibility, and other general testing of the upcoming release.
-
-When you create a sandbox environment on a preview version, the environment will automatically be updated to new preview versions when they become available. However, the environment won't be updated to the production version. Once a sandbox environment is on a preview version, it must stay on a preview version until it's deleted. The environment can also be deleted if an update between preview versions fails. We recommend that preview versions are used only for temporary testing of an upcoming release.
 
 ## <a name="opslog"></a>Log of administrative operations
 
