@@ -1,7 +1,7 @@
 ---
 title: AL control statements
 description: Compound, conditional, and repetitive control statements in AL for Business Central.
-ms.date: 03/11/2025
+ms.date: 03/26/2025
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -115,7 +115,7 @@ Reading several nested `if-then-else` statements can be confusing but generally,
 - When you write `if` expressions with `then` and `else` parts, write them so that the `then` result is more probable than the `else` one.  
 - If the last statement in the `then` part of an `if-then-else` statement is an `exit` or an `error`, don't continue with an `else` statement.  
 
-#### Example
+#### Example 3
 
 ```AL 
 if x = y then  
@@ -124,7 +124,7 @@ else
     x := -x - 1;  
 ```  
 
-#### Example
+#### Example 4
 
 ```AL  
 if (xxxxxxxxxx = yyy) and   
@@ -135,7 +135,7 @@ else
     y := b;  
 ```  
 
-#### Example
+#### Example 5
 
 ```AL 
 if x <> y then  
@@ -155,7 +155,7 @@ else begin
 end;  
 ```  
 
-#### Example
+#### Example 6
 
 The following example shows an `if-then statement` without the optional `else` statement.  
 
@@ -164,7 +164,7 @@ if Amount < 1000 then
     Total := Total + Amount;  
 ```  
 
-#### Example
+#### Example 7
 
 The following example shows a nested `if-then-else` statement.  
 
@@ -225,7 +225,7 @@ When you use a case statement, indent the value sets by four character spaces. I
 
 If there are more than two alternatives, use a `case` statement. Otherwise, use an `if-then-else` statement.  
 
-#### Example
+#### Example 8
 
 ```AL 
 case Field of  
@@ -245,7 +245,7 @@ case Field of
 end;  
 ```  
 
-#### Example
+#### Example 9
 
 The following AL code prints various messages depending on the value of *Number*. If the value of *Number* doesn't match any of the entries in the `case` structure, then the `else` entry is used as the default.  
  
@@ -261,7 +261,7 @@ case Number of
 end;  
 ```
 
-#### Example
+#### Example 10
 
 The following AL code shows how value sets in a `case` statement are evaluated if the expression is a `Code` data type.
 
@@ -325,7 +325,7 @@ for <Control Variable> := <Start Number> downto <End Number> do
 > [!NOTE]  
 > If the value of the *`<Control Variable>`* is changed inside the `for` loop, then the behavior isn't predictable. Furthermore, the value of the *`<Control Variable>`* is undefined outside the scope of the `for` loop.  
 
-#### Example 1
+#### Example 11
 
 The following code initiates a for loop that uses the integer control variable named Count.  
 
@@ -341,7 +341,7 @@ var
 
 When this statement is executed, then a runtime error occurs because the start, and end values are converted to the same data type as the `Count` control variable. `Count` has been declared as an integer variable. The end number `100000000000000` is outside the valid range for integers, and an error occurs.  
 
-#### Example 2
+#### Example 12
 
 The following example shows how to nest for statements.  
 
@@ -410,14 +410,14 @@ When there's only one condition, put `while` and `do` on the same line. Put the 
 
 When there are multiple conditions, put the conditions on separate lines, and indented by two spaces and put `do` on a separate line that's aligned with `while`.  
 
-#### Example  
+#### Example 13
 
 ```AL  
 while <expr> do  
     <Statement>;  
 ```  
 
-#### Example  
+#### Example 14
 
 ```AL  
 while <expr> do begin  
@@ -426,7 +426,7 @@ while <expr> do begin
 end;  
 ```  
 
-#### Example  
+#### Example 15
 
 ```AL
 while <expr> and   
@@ -438,7 +438,7 @@ do begin
 end;  
 ```  
 
-#### Example
+#### Example 16
 
 The following AL code increases the variable I until it equals 1000 and displays a message when it's finished.  
 
@@ -473,7 +473,7 @@ The `repeat until` control structure resembles the while control structure. The 
 
 Always put repeat on a separate line.  
 
-#### Example  
+#### Example 17
 
 ```AL
 if x < y then begin  
@@ -485,8 +485,7 @@ if x < y then begin
 end;  
 ```  
 
-#### Example
-
+#### Example 18
 This code uses a `repeat-until` loop to count the number of entries in the Customer table.
 
 ```AL
@@ -525,7 +524,7 @@ A compile-time error occurs if `exit` is called by using a return parameter from
 - System-defined triggers, or 
 - Local methods that don't return a value.  
 
-#### Example
+#### Example 19
 
 The following example shows the use of the `exit` statement in a local method. Assume that the `if` statement is used to detect an error. If the error condition is met, then execution is stopped and the local method returns the error code `1`.  
 
@@ -550,7 +549,7 @@ You typically use the `break` statement in the repeating statements such as `for
 > [!NOTE]  
 > The `break` statement is different than the [Break Method \(Report, XMLport\)](./methods-auto/library.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it's run.  
 
-## Example
+## Example 20
 
 The following AL code increases the variable `Count` by one for each iteration, and terminates the iteration when `Count` equals 10.  
 
@@ -586,7 +585,7 @@ You typically use the `continue` statement in the repeating statements such as `
 > [!NOTE]  
 > Due to backwards compatibility, the `continue` statement is designed to be backwards compatible with other elements like procedures and variables, which have the same name. For example, if there's a procedure named `Continue` in scope, the statement `continue` will be interpreted as invoking that procedure. This backwards compatibility will be removed in the future, therefore it's recommended to rename any conflicting elements.
 
-## Example
+## Example 21
 
 The following AL code increases the variable `Count` by one for each iteration, but skips all numbers divisible by 42. 
 
