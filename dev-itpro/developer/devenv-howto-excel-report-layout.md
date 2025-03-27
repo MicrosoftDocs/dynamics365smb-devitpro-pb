@@ -3,7 +3,7 @@ title: Creating an Excel layout report
 description: Learn how to create a report using an Excel layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 09/09/2024
+ms.date: 03/13/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: kepontop
@@ -127,7 +127,7 @@ The *ReportRequestValues* table contains metadata from the report request (the r
 | Company Id | The Company ID (GUID). |
 | User name | The user who ran the report. |
 | User Id | The user ID associated to 'User name'. |
-| Date | The data and time of the report invocation. |
+| Date | The date and time of the report invocation. |
 | Language | The application language identified (LCID, Windows language identifier).|
 | Format Region | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
 
@@ -147,8 +147,7 @@ The actual filter format is '\<DataItemName\>::\<Source Table Caption\>::\<Filte
 
 There is one row for each active filter defined on the request page.
 
-
-#### Named formulas 
+#### Named formulas
 
 In Business Central 2024 release wave 2 and later, when you create Excel report layout workbooks, either from VSCode or when you get a new template from the request page, Excel report layout workbooks include named formulas for easier lookups. Instead of having to write complicated VLOOKUP or XLOOKUP formulas, report authors can use named formulas, such as **ReportRequest.Date** or **ReportMetaData.ReportHelpLink**.
 
@@ -184,7 +183,7 @@ Worksheet references with translation tags are updated in cell formulas as well 
 ### Validating an Excel layout
 
 When importing an Excel layout as part of an app or when a user uploads an Excel layout file, [!INCLUDE[server](includes/server.md)] does the following operations:
- 
+
 1. Loads the Excel layout file and validates whether the file is indeed an Excel file (.xlsx) and that it isn't password protected. If the file isn't a valid Excel file, [!INCLUDE[server](includes/server.md)] rejects the layout.
 1. Reads the metadata fields present in the *Data* worksheet (the content of the data contract). If no _Data_ worksheet exists, [!INCLUDE[server](includes/server.md)] rejects the layout.
 1. Removes any other data present in the *Data* worksheet.

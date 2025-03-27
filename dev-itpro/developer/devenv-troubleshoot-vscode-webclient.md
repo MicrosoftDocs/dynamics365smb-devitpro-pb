@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: overview
-ms.date: 09/17/2024
+ms.date: 03/26/2025
 ---
 
 # Troubleshoot in Visual Studio Code directly from the web client
@@ -18,6 +18,8 @@ From the [!INCLUDE [prod_short](includes/prod_short.md)] web client, you can ope
 
 - Open a page from the [Page Inspector](devenv-troubleshoot-vscode-webclient.md#open-a-page-from-the-page-inspector)
 - Troubleshoot the current session from within [Help and Support](devenv-troubleshoot-vscode-webclient.md#troubleshoot-from-the-help-and-support-page)
+- [Generate launch configuration files directly from the web client](devenv-troubleshoot-vscode-webclient.md#generate-launch-configuration-files-directly-from-the-web-client)
+- [Generate dependencies directly fro the web client](devenv-troubleshoot-vscode-webclient.md#generate-extension-dependencies-directly-from-the-web-client)
 
 ## Open a page from the Page Inspector
 
@@ -34,7 +36,7 @@ To open and explore a page from the Page Inspector, follow these steps:
 1. Then, you must specify, if you want to create a new project, or use an existing project. You're only asked the first time, and from then on, the Visual Studio Code window that was last active is used.
 1. Next, you must decide if you want to download symbols.  
     > [!NOTE]  
-    > If you specify yes, the app.json file will be updated with the dependent extensions of the page, which are shown on the **Extensions** tab in the **Page Inspection** page, and the symbols will automatically be downloaded. You can specify no, if you're already working on the specific source code files.  
+    > If you specify yes, the app.json file is updated with the dependent extensions of the page, which are shown on the **Extensions** tab in the **Page Inspection** page, and the symbols are automatically downloaded. You can specify no, if you're already working on the specific source code files.  
     > If you say no, and don't have the right symbols downloaded, you won't be able to navigate to the object source code.
 1. Now, you're prompted whether to do a snapshot or regular debugging session, or not to debug, but just view the source code.  
     > [!NOTE]  
@@ -79,6 +81,32 @@ Follow these steps:
   If you choose to create a new branch, you must give it a name.
 4. With access to the source code on your local computer, you can, for example, use the Page Inspector to help you navigate to the source code by using the **Explore page in Visual Studio Code** functionality. Learn more in [Open a page from Page Inspector](#open-a-page-from-the-page-inspector).
 
+## Generate launch configuration files directly from the web client
+
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+
+You can generate and update launch.json files directly from the web client. Instead of manually creating the launch.json file in Visual Studio Code, you can generate it directly from the [!INCLUDE [prod_short](includes/prod_short.md)] web client for a specific environment. This is especially useful for troubleshooting and debugging scenarios, as it allows you to quickly set up the necessary configurations without having to switch between different tools or environments.
+
+You can generate and update launch.json files from the **Help & Support** page in [!INCLUDE [prod_short](includes/prod_short.md)]. To do this, follow these steps:
+
+1. In [!INCLUDE [prod_short](includes/prod_short.md)], go to the **Help & Support** page.
+1. Under **Troubleshooting**, choose the **Generate launch configurations for this environment** link.
+
+Or, you can generate launch.json files from the **Extension Management** page. 
+
+1. In [!INCLUDE [prod_short](includes/prod_short.md)], go to the **Extension Management** page.
+1. Choose the extension that you want to generate launch configurations for.
+1. Now, choose the **Develop in VS Code** action group, and then the **Generate launch configurations** action.
+
+Visual Studio Code then generates or updates launch configurations for deploy, attach, and snapshot configurations matching the specific environment, including the user session information.
+
+## Generate extension dependencies directly from the web client
+
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+
+You can generate extension dependencies directly from the web client. Instead of manually creating the dependencies file in Visual Studio Code, you can generate it directly from the [!INCLUDE [prod_short](includes/prod_short.md)] web client for a specific environment. There are two options for generating the dependencies; you can either **Download in VS Code** or **Show and copy** as illustrated in the image below.
+
+:::image type="content" source="media/develop-in-vs-code-dependencies.png" alt-text="Options for generating extension dependencies directly":::
 
 ## Good to know
 
