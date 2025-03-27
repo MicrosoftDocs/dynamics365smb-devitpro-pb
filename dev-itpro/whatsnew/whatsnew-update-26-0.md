@@ -146,7 +146,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 
 ## Changes to optional features in Feature Management
 
-This section outlines changes to feature and feature update keys controlled by **Feature management** in version 26.0.
+This section outlines changes to feature and feature updates controlled by **Feature management** in version 26.0.
 
 ### Features now mandatory and removed from feature management
 
@@ -172,7 +172,7 @@ This section outlines changes to feature and feature update keys controlled by *
 
 ## On-premises download packages
 
-Download on-premises files from Microsoft Support at [Update 26.0 for Business Central 2025 release wave 1](https://www.microsoft.com/en-us/download/details.aspx?id=106000).
+Download on-premises files from Microsoft Support at Update 26.0 for Business Central 2025 release wave 1 (link not yet available)
 
 ## Upgrade to 26.0 for online customers
 
@@ -180,9 +180,9 @@ New customers automatically get the latest builds of Business Central (26.0). Ex
 
 ## Good to know
 
-### Business Central Launch Event videos on YouTube
+### Business Central Launch Event
 
-Visit [aka.ms/BCLE](https://aka.ms/BCLE).
+The Business Central Launch Event for the Business Central 2025 release wave 1 is on April 1, 2025. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### Discover all partner related resources
 
