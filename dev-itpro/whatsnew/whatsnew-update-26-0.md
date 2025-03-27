@@ -178,7 +178,7 @@ Download on-premises files from Microsoft Support at Update 26.0 for Business Ce
 
 ## Upgrade to 26.0 for online customers
 
-New customers automatically get the latest builds of Business Central (26.0). Existing partners and customers receive an email notification when their environment is upgraded.
+New customers automatically get the latest version of Business Central (26.0). With the release of 26.0, flexible update management changes are available to all environments on version 25.5 or higher. The update period for this release wave runs until August 31, 2025. The ability to change the target version for an environment's next update in the Admin Center is available by the end of the month.
 
 ## Good to know
 
@@ -190,7 +190,7 @@ The Sales Order Agent automates capturing sales orders from customer emails. It 
 
 Watch a short video in the Dynamics Business Central channel on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
 
-Learn how to set up and use Sales Order agent in [Sales Order Agent overview](/dynamics365/business-central/sales-order-agent) or follow the release plan at [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
+Learn how to set up and use Sales Order agent in [Sales Order Agent overview](/dynamics365/business-central/sales-order-agent) or follow its release plan at [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
 ### Business Central Launch Event
 
