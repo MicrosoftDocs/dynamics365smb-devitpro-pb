@@ -146,7 +146,6 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |              | [Use user interface enhancements for better experience](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-user-interface-enhancements-better-experience) |
 ||[Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web) (controlled by **Feature Management**)|
 
-
 <!-- |                           | [Edit price lists in Excel](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/edit-price-lists-excel)|-->
 ## Changes to optional features in Feature Management
 
