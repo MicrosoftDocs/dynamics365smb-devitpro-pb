@@ -14,12 +14,12 @@ ms.custom:
 
 This article provides an overview of new features, changed features, and general information about the 2025 release wave 1 (update 26.0).
 
-> [!TIP]
-> Watch the short video in the Dynamics Business Central channel on YouTube at [Dynamics 365 Business Central 2025 Release Wave 1 Release Highlights](https://www.youtube.com/watch?v=D2KPQEbO40Q).
-
 ## New features
 
 This table lists the features in public preview or general availability for version 26.0. For a comprehensive feature list and details, refer to [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central).
+
+> [!TIP]
+> Watch the short video in the Dynamics Business Central channel on YouTube at [Dynamics 365 Business Central 2025 Release Wave 1 Release Highlights](https://www.youtube.com/watch?v=D2KPQEbO40Q).
 
 <!-- Generate table:
 
