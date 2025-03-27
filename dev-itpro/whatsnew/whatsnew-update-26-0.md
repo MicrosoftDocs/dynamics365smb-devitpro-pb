@@ -143,6 +143,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 | User experiences              | [Preview PDF attachments directly in web client](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/preview-pdf-attachments-directly-web-client) |
 |              | [Adjust the FactBox pane width](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allow-adjusting-factbox-pane-width) |
 |              | [Use user interface enhancements for better experience](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-user-interface-enhancements-better-experience) |
+||[Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)|
 
 
 <!-- |                           | [Edit price lists in Excel](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/edit-price-lists-excel)|-->
@@ -178,7 +179,9 @@ Download on-premises files from Microsoft Support at Update 26.0 for Business Ce
 
 ## Upgrade to 26.0 for online customers
 
-New customers automatically get the latest version of Business Central (26.0). With the release of 26.0, flexible update management changes are available to all environments on version 25.5 or higher. The update period for this release wave runs until August 31, 2025. The ability to change the target version for an environment's next update in the Admin Center is available by the end of the month.
+New customers get Business Central version 26.0 automatically. With the 26.0 release, the [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly) feature is generally available for environments using version 25.5 or higher. This feature lets you reschedule the major update to any date within the 5-month update period, which ends on August 31, 2025, for version 26.0. The option to set the target version for an environment's next update in the admin center is available by the end of April 2025.  
+
+Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline##major-updates).
 
 ## Good to know
 
