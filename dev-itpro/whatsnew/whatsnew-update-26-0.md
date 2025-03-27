@@ -165,7 +165,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking.](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods)
 - [Feature: Disable SOAP web services on Microsoft UI pages](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)<!-- missing rp-->
 - [Feature: Enable server certificate validation for HTTP requests](../developer/devenv-httpcertvalid-feature-key.md)
-- [Feature: Optimize screen esate usage for web](../developer/calculate-only-visible-flowfields-feature-key.md)
+- Feature: Optimize screen esate usage for web
 
 ### New features added and disabled by default
 
