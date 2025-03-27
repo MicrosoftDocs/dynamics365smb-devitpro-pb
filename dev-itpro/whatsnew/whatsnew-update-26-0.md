@@ -59,6 +59,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 | Copilot and AI            | [Enhance purchase order line matching with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enhance-purchase-order-line-matching-copilot) |
 |                           | [Summarize with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-record-copilot) |
 |                           | [Autofill fields with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot) |
+|                           | [Use Sales Order Agent to automate sales order-taking](#sales-order-agent-in-more-countriesregions) |
 | Country and regional      | [Post cash documents to projects in Czech localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/post-cash-documents-projects-czech-localization) |
 |                           | [Add more text in cash documents in Czech localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-more-text-cash-documents-czech-localization) |
 |                           | [Use Peppol PINT A-NZ format for e-documents in AU and NZ](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-peppol-a-nz-format-e-documents-australia-new-zealand) |
@@ -68,7 +69,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Use modern search to access data in Czech localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-modern-search-access-data-czech-localization) |
 |                           | [Hide lines with zero quantity in Czech document reports](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/hide-lines-zero-quantity-czech-document-reports) |
 |                           | [Define allowed languages per environment](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/define-allowed-languages-per-environment) |
-| Development               | Manage external files more easily through a unified API in the External File Storage module <!--[Manage external files more easily through a unified API in the External File Storage module](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-external-files-unified-api-external-file-storage-module)--> |
+| Development               | [Manage external files more easily through a unified API in the External File Storage module](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/External%20File%20Storage) <!--[Manage external files more easily through a unified API in the External File Storage module](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-external-files-unified-api-external-file-storage-module)--> |
 |                           | [Troubleshoot clients, apps, and add-ins with telemetry](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/troubleshoot-clients-apps-add-ins-telemetry) |
 |                           | [Validate certificates on external web service endpoints called from AL HttpClient](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/validating-certificates-external-web-service-endpoints-called-al-httpclient) (controlled by **Feature Management**)|
 |                           | [Use new properties on a report layout](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-properties-report-layout) |
@@ -99,7 +100,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Check total purchase amounts on documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/check-total-purchase-amounts-documents) |
 | Governance and administration | [Link to Power Platform to use Copilot Studio messages](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/link-power-platform-use-copilot-studio-messages) |
 |                           | [Add support for MultiSubnetFailover](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-support-multisubnetfailover) |
-|                           | Enhanced index troubleshooting <!-- [Enhanced index troubleshooting](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enhanced-index-troubleshooting)--> |
+|                           | [Enhanced index troubleshooting](../administration/database-missing-indexes.md) <!-- [Enhanced index troubleshooting](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enhanced-index-troubleshooting)--> |
 | Reporting and data analysis   | Use enhanced analytics for inventory <!-- [Use enhanced analytics for inventory](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-for-inventory)--> |
 |                           | [Enhance reports with PDF post-processing capabilities](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enhance-reports-pdf-post-processing-capabilities) |
 |                           | [Validate report layouts for errors as an admin](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/validate-report-layouts-errors-as-admin) |
@@ -180,6 +181,16 @@ Download on-premises files from Microsoft Support at Update 26.0 for Business Ce
 New customers automatically get the latest builds of Business Central (26.0). Existing partners and customers receive an email notification when their environment is upgraded.
 
 ## Good to know
+
+### Sales Order Agent in more countries/regions
+
+Sales Order Agent is now available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
+  
+The Sales Order Agent automates capturing sales orders from customer emails. It uses AI to analyze requests, locate customers in the system, and engage in email conversations to clarify details. The agent checks item availability, generates sales quotes and orders, and formats them as PDFs with all necessary details ready to send to the customer. Each step of a customer engagement is available in Business Central, letting users stay in the loop and get involved when needed.
+
+Watch a short video in the Dynamics Business Central channel on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
+
+Learn how to set up and use Sales Order agent in [Sales Order Agent overview](/dynamics365/business-central/sales-order-agent) or follow the release plan at [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
 ### Business Central Launch Event
 
