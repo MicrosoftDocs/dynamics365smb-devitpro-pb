@@ -51,7 +51,6 @@ When all the links have been created, remove the "Release Plan URL" column from 
 | Application               | [Integrate Field Service with service management](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/integrate-field-service-service-management) |
 |                           | [View item availability in Field Service work orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/view-item-availability-field-service-work-orders) |
 |                           | [Use improved troubleshooting options for cost adjustments](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/improved-performance-enhanced-troubleshooting-options-cost-adjustment-runs) |
-|                           | <!--[Edit price lists in Excel](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/edit-price-lists-excel)--> Edit price lists in Excel|
 | Commerce                  | [Import and export more data for Shopify B2B companies and company locations](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/import-export-more-data-shopify-b2b-companies-company-locations) |
 |                           | [Activate sales channels in Shopify Connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/activate-sales-channels-shopify-connector) |
 |                           | [Import and export more data using Shopify metafields](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/import-export-more-data-using-shopify-metafields) |
@@ -144,6 +143,8 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |              | [Adjust the FactBox pane width](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allow-adjusting-factbox-pane-width) |
 |              | [Use user interface enhancements for better experience](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-user-interface-enhancements-better-experience) |
 
+
+<!-- |                           | [Edit price lists in Excel](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/edit-price-lists-excel)|-->
 ## Changes to optional features in Feature Management
 
 This section outlines changes to feature and feature updates controlled by **Feature management** in version 26.0.
