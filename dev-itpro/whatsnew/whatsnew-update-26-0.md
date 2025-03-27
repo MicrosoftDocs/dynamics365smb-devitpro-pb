@@ -144,7 +144,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 | User experiences              | [Preview PDF attachments directly in web client](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/preview-pdf-attachments-directly-web-client) |
 |              | [Adjust the FactBox pane width](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allow-adjusting-factbox-pane-width) |
 |              | [Use user interface enhancements for better experience](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-user-interface-enhancements-better-experience) |
-||[Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)|
+||[Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web) (controlled by **Feature Management**)|
 
 
 <!-- |                           | [Edit price lists in Excel](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/edit-price-lists-excel)|-->
@@ -165,6 +165,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking.](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods)
 - [Feature: Disable SOAP web services on Microsoft UI pages](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)<!-- missing rp-->
 - [Feature: Enable server certificate validation for HTTP requests](../developer/devenv-httpcertvalid-feature-key.md)
+- [Feature: Optimize screen esate usage for web](../developer/calculate-only-visible-flowfields-feature-key.md)
 
 ### New features added and disabled by default
 
