@@ -8,7 +8,7 @@ metadata:
   description: AL programming language for Business Central developer documentation
   author: SusanneWindfeldPedersen
   ms.author: solsen
-  ms.date: 05/24/2024
+  ms.date: 03/12/2025
   ms.topic: landing-page
   ms.custom: bap-template
   ms.collection: get-started
@@ -118,12 +118,12 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links: 
+          - text: What's new in 2025 release wave 1
+            url: https://learn.microsoft.com/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/development
+          - text: What's new in 2024 release wave 2
+            url: https://learn.microsoft.com/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/development
           - text: What's new in 2024 release wave 1
             url: https://learn.microsoft.com/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/development
-          - text: What's new in 2023 release wave 2 
-            url: https://learn.microsoft.com/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/development
-          - text: What's new in 2023 release wave 1
-            url: https://learn.microsoft.com/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/development
       - linkListType: reference
         links:
           - text: AL language changelog
