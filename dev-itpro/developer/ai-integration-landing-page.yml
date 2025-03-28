@@ -41,6 +41,10 @@ landingContent:
       links:
       - text: Get set up with Azure OpenAI Service
         url: ai-dev-tools-get-started.md
+    - linkListType: concept
+      links:
+      - text: Influence Copilot and agents without extending them
+        url: copilot-and-agents-influence-without-extending.md
     - linkListType: reference
       links:
       - text: About Copilot in Business Central
