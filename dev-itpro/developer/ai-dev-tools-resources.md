@@ -24,7 +24,7 @@ Using the AI resources provides several benefits, including:
 - Enhanced security compliance: Built-in compliance measures and governance, including robust protection from malicious and harmful content, ensuring compliance with data residency requirements, reducing the burden of ensuring regulatory compliance for ISVs.
 - Streamlined experience for customers: customers experience a more seamless AI resource management process, avoiding the need to maintain different configurations for separate ISV solutions.
 
-## Consumption-based customer billing when using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources <!-- billing model? -->
+## Consumption-based customer billing when using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources
 
 Additionally, this capability delivers a cohesive AI consumption tracking and billing experience for [!INCLUDE [prod_short](includes/prod_short.md)] customers. Customers using AI resources across multiple AI-enabled solutions built with [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot benefit from a unified approach to AI consumption monitoring and invoicing, avoiding the need to reconcile multiple invoices or metrics from separate ISVs.
 
@@ -34,7 +34,7 @@ This allows customers to:
 - Receive a consolidated invoice for AI consumption.
  
 > [!NOTE]  
-> It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP). <!-- link to more info -->
+> It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP). <!-- link to more info? -->
 
 ## Use your own subscription with customers
 
