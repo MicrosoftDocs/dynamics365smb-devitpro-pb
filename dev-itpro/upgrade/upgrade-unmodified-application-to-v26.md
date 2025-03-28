@@ -2,7 +2,7 @@
 title: Upgrading Microsoft System and Base Application to Version 26
 description: Describes how to upgrade an unmodified Business Central version 15 through 25 to version 26
 ms.custom: bap-template
-ms.date: 09/04/2025
+ms.date: 03/28/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
