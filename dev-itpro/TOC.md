@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
 ### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
 ### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
 ### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
@@ -534,10 +535,10 @@
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
-#### [Troubleshoot in VS Code directly from the web client](developer/devenv-troubleshoot-vscode-webclient.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 #### [Sign an app package file](developer/devenv-sign-extension.md)
 #### [Using Microsoft Entra authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
+#### [Troubleshoot in VS Code directly from the web client](developer/devenv-troubleshoot-vscode-webclient.md)
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
@@ -796,11 +797,12 @@
 #### [Transferring data (during upgrade)](developer/devenv-data-transfer.md)
 
 #### Importing and exporting data
+##### [Exporting data to Excel using ExcelBuffer](developer/devenv-excel-buffer.md)
 ##### [XMLport overview](developer/devenv-xmlport-overview.md)
-##### [XMLport object](developer/devenv-xmlport-object.md)
-##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)
-##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
-##### [Using request pages with XMLports](developer/devenv-request-pages.md)
+###### [XMLport object](developer/devenv-xmlport-object.md)
+###### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)
+###### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
+###### [Using request pages with XMLports](developer/devenv-request-pages.md)
 
 
 ### Pages and the user interface
@@ -1266,7 +1268,9 @@
 ### [Overview](developer/devenv-ext-dev-lifecycle-overview.md)
 ### [Extension types and scope](developer/devenv-extension-types-and-scope.md)
 ### [Moving between extension scopes](developer/devenv-extension-moving-scope.md)
-### [Moving tables and fields between extensions](developer/devenv-move-table-fields-between-extensions.md)
+### Moving tables and fields between extensions (on-premises)
+#### [Moving tables and fields between extensions](developer/devenv-move-table-fields-between-extensions.md)
+#### [Development process for moving tables and fields between extensions](developer/devenv-scenarios-moving-table-fields.md)
 ### Migration
 #### [Generating delta files](developer/devenv-generating-delta-files.md)
 #### Migrating tables and fields between extensions (on-premises)
@@ -1522,6 +1526,7 @@
 #### [Troubleshooting errors on OData/SOAP web services on pages, queries, and codeunits](webservices/web-service-troubleshooting-soap-odata-ui-pages.md)
 #### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
 #### [Creating and interacting with an OData V4 bound action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+#### [Disable SOAP web services on Microsoft UI pages feature key](developer/devenv-disable-soap-microsoft-pages-feature-key.md)
 
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
@@ -1559,6 +1564,7 @@
 ### [Overview](developer/ai-integration-landing-page.yml)
 ### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
+### [Influence Copilot and agents without extending them](developer/copilot-and-agents-influence-without-extending.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### [Token counting in AI](developer/ai-system-app-token-counting.md)
@@ -1727,6 +1733,8 @@
 #### [Migrate from User Groups to Permission Sets or Security Groups](upgrade/deprecated-features-user-groups.md)
 #### [Migrating from legacy views to modern views](developer/devenv-views-legacy.md)
 #### [NA bank reconciliation and deposits are deprecated in the North American version](upgrade/deprecated-features-na-bank-rec.md)
+## AL-Go for GitHub
+### [Deprecating BcContainerHelper](al-go/algo-deprecating-bccontainerhelper.md)
 ## Local functionality
 ### [Deprecated fields, and fields marked as obsolete in local functionality](upgrade/deprecated-fields.md)
 ### [Deprecated features in the Austrian Version](upgrade/deprecated-features-at.md)
@@ -1885,6 +1893,25 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
+### Business Central 2025 release wave 1
+#### [Overview](upgrade/upgrade-overview-v26.md)
+#### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
+#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrade permission sets](upgrade/upgrade-permissions.md)
+#### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
+#### Upgrade application and data
+##### [From v14 unmodified C/AL application to v15](upgrade/upgrade-unmodified-application-v14-v25.md)
+##### [From v14 customized C/AL application to v15](upgrade/upgrade-to-microsoft-base-app-v25.md)
+##### [From v15 and later](upgrade/upgrade-unmodified-application-to-v26.md)
+#### Related articles
+##### [Convert to AL](upgrade/devenv-code-conversion.md)
+##### Migrating tables and fields between extensions
+###### [Overview](developer/devenv-migrate-table-fields.md)
+###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### Data migration toolkit - India
+###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v25.md)
 ### Business Central 2024 release wave 2
 #### [Overview](upgrade/upgrade-overview-v25.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
@@ -1923,30 +1950,30 @@
 ##### Data migration toolkit - India
 ###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v24.md)
-### Business Central 2023 release wave 2
-#### [Overview](upgrade/upgrade-overview-v23.md)
-#### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
-#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrading reports](upgrade/upgrade-reports.md)
-#### Application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v23.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v23.md)
-##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v23.md)
-##### Related articles
-###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating tables and fields between extensions
-####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-###### Data migration toolkit - India
-####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### Technical upgrade
-##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v23.md)
-##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v23.md)
-##### [From version 20, 21, or 22](upgrade/upgrade-technical-upgrade-v23.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v23.md)
 ### Earlier versions
+#### Business Central 2023 release wave 2
+##### [Overview](upgrade/upgrade-overview-v23.md)
+##### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+##### [Upgrading reports](upgrade/upgrade-reports.md)
+##### Application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v23.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v23.md)
+###### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v23.md)
+###### Related articles
+####### [Convert to AL](upgrade/devenv-code-conversion.md)
+####### Migrating tables and fields between extensions
+######## [Overview](developer/devenv-migrate-table-fields.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+####### Data migration toolkit - India
+######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
+##### Technical upgrade
+###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v23.md)
+###### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v23.md)
+###### [From version 20, 21, or 22](upgrade/upgrade-technical-upgrade-v23.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v23.md)
 #### Business Central 2023 release wave 1
 ##### [Overview](upgrade/upgrade-overview-v22.md)
 ##### [Before you upgrade](upgrade/upgrade-considerations-v22.md)
