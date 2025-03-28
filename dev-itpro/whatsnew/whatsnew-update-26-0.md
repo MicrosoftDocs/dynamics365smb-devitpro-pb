@@ -10,9 +10,9 @@ ms.custom:
     - bap-template
 ---
 
-# What's new or changed in Business Central 2025 release wave 1 update 26.0
+# Update 26.0 for Business Central 2025 release wave 1
 
-This article provides an overview of new features, changed features, and general information about the 2025 release wave 1 (update 26.0).
+This article provides an overview of new and changed features, along with general information about update 26.0, the start of the 2025 release wave 1.
 
 ## New features
 
@@ -52,11 +52,6 @@ When all the links have been created, remove the "Release Plan URL" column from 
 | Application               | [Integrate Field Service with service management](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/integrate-field-service-service-management) |
 |                           | [View item availability in Field Service work orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/view-item-availability-field-service-work-orders) |
 |                           | [Use improved troubleshooting options for cost adjustments](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/improved-performance-enhanced-troubleshooting-options-cost-adjustment-runs) |
-| Commerce                  | [Import and export more data for Shopify B2B companies and company locations](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/import-export-more-data-shopify-b2b-companies-company-locations) |
-|                           | [Activate sales channels in Shopify Connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/activate-sales-channels-shopify-connector) |
-|                           | [Import and export more data using Shopify metafields](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/import-export-more-data-using-shopify-metafields) |
-|                           | [Troubleshoot export issues on Shopify Skipped Records page](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/troubleshoot-export-issues-shopify-skipped-records-page) |
-|                           | [Use the latest update for the Shopify connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-latest-update-shopify-connector) |
 | Copilot and AI            | [Enhance purchase order line matching with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enhance-purchase-order-line-matching-copilot) |
 |                           | [Summarize with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-record-copilot) |
 |                           | [Autofill fields with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot) |
@@ -91,7 +86,12 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Create lists and dictionaries of interfaces in AL](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-list-dictionary-interfaces-al) |
 |                           | [Generate launch json file from the web client](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/generate-launchjson-file-web-clientjson-file-from-the-web-client) |
 |                           | [Running objects in actions defaults to UI descriptors on target object](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/running-objects-actions-defaults-caption-tooltip-abouttext-abouttitle-target-object) |
-| E-Documents                 | [Generate multiple incoming e-documents for multiple attachments](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/generate-multiple-incoming-e-documents-multiple-attachments) |
+| E-commerce                  | [Import and export more data for Shopify B2B companies and company locations](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/import-export-more-data-shopify-b2b-companies-company-locations) |
+|                           | [Activate sales channels in Shopify Connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/activate-sales-channels-shopify-connector) |
+|                           | [Import and export more data using Shopify metafields](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/import-export-more-data-using-shopify-metafields) |
+|                           | [Troubleshoot export issues on Shopify Skipped Records page](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/troubleshoot-export-issues-shopify-skipped-records-page) |
+|                           | [Use the latest update for the Shopify connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-latest-update-shopify-connector) |
+| E-documents                 | [Generate multiple incoming e-documents for multiple attachments](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/generate-multiple-incoming-e-documents-multiple-attachments) |
 |                           | [Automate embedded attachments in PEPPOL](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-embedded-attachments-peppol) |
 |                           | [Use Logiq as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-service-providers-e-documents-framework) |
 |                           | [Use ExFlow by SignUp connector for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-exflow-signup-connector-e-documents) |
@@ -108,30 +108,30 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |                           | [Access report and request metadata in Word layouts](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/access-report-request-metadata-word-layouts) |
 |                           | [Use enhanced Financial Reporting capabilities](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-financial-reporting-capabilities) |
 | Service and platform          | [Calculate values only for visible FlowFields](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/calculate-values-only-visible-flowfields) (controlled by **Feature Management**)|
-| Supply chain management       | [Reschedule production orders within a safety lead time](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reschedule-production-orders-within-safety-lead-time) |
-|                           | [Use enhanced customer document layout for service management](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-customer-document-layout-service-management) |
-|                           | [Cancel production orders that have consumption](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/cancel-production-orders-that-have-consumption) |
-|                           | [Add more columns to various pages to gain more insight](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-more-columns-various-pages-gain-more-insight) |
-|                           | [Experience improved usability in manufacturing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/experience-improved-usability-manufacturing) |
-|                           | [Enable overpicking for production orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enable-over-picking-production-orders) |
-|                           | [Achieve greater accuracy in manufacturing costing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/achieve-greater-accuracy-manufacturing-costing) |
-|                           | [Omit warehouse pick for manual flushing methods](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods) (controlled by **Feature Management**)|
-|                           | [Receive project items with receipts or put-aways](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/receive-project-items-receipts-or-put-aways) |
-|                           | [Block items or variants from production output](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/block-items-or-variants-production-output) |
+| Supply chain management       | [Receive project items with receipts or put-aways](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/receive-project-items-receipts-or-put-aways) |
 |                           | [Avoid document number errors when you post project journals](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/avoid-document-number-errors-when-post-project-journals) |
-|                           | [Handle production output with warehouse put-aways](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/handle-production-output-warehouse-put-aways) |
-|                           | [Reopen finished production orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reopen-finished-production-orders) |
+|                           | [Use enhanced customer document layout for service management](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-customer-document-layout-service-management) |
+|                           | [Combine service shipments on a single service invoice](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/combine-service-shipments-single-service-invoice) |
 |                           | [Use streamlined product design tools in manufacturing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-streamlined-product-design-tools-manufacturing) |
+|                           | [Block items or variants from production output](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/block-items-or-variants-production-output) |
+|                           | [Cancel production orders that have consumption](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/cancel-production-orders-that-have-consumption) |
+|                           | [Reopen finished production orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reopen-finished-production-orders) |
+|                           | [Achieve greater accuracy in manufacturing costing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/achieve-greater-accuracy-manufacturing-costing) |
+|                           | [Enable overpicking for production orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enable-over-picking-production-orders) |
+|                           | [Omit warehouse pick for manual flushing methods](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods) (controlled by **Feature Management**)|
+|                           | [Handle production output with warehouse put-aways](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/handle-production-output-warehouse-put-aways) |
+|                           | [Experience improved usability in manufacturing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/experience-improved-usability-manufacturing) |
 |                           | [Print barcodes from production orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/print-barcodes-production-orders) |
 |                           | [Manage document attachments in manufacturing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-document-attachments-manufacturing) |
 |                           | [Use Edit in Excel on output, consumption, and item journals](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/edit-item-tracked-items-excel-output-consumption-item-journals) |
-|                           | [Combine service shipments on a single service invoice](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/combine-service-shipments-single-service-invoice) |
+|      | [Reschedule production orders within a safety lead time](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reschedule-production-orders-within-safety-lead-time) |
 |                           | [Allow multiple people to post inventory at the same time](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allow-multiple-people-post-inventory-at-same-time) (controlled by **Feature Management**) |
 |                           | [Create demo data for Subscription Billing with demo data tool](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-demo-data-subscription-billing-contoso-demo-data-tool) |
 |                           | [Create subscription contract lines manually](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-subscription-contract-lines-manually) |
 |                           | [Add unit cost in subscription lines](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-unit-cost-subscription-lines) |
 |                           | [Track and rebill quantity changes in subscriptions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/track-rebill-quantity-changes-subscriptions) |
 |                           | [Align Subscription Billing with standard user experience and terminology](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/align-subscription-billing-standard-user-experience-terminology) |
+||[Add more columns to various pages to gain more insight](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-more-columns-various-pages-gain-more-insight)|
 | Sustainability Management     | [Specify default sustainability values for various entities](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/specify-default-sustainability-values-various-entities) |
 |                           | [Capture sustainability data with general journals](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/capture-sustainability-data-general-journals) |
 |                           | [Use water and waste management with sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-water-waste-management-sustainability) |
