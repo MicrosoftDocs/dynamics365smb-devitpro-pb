@@ -32,7 +32,13 @@ A new HttpContent is constructed with this value and headers from before.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The headers `Content-Type` and `Content-Length` are reset to their default values.
+
 ## Related information
+
 [HttpContent Data Type](httpcontent-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
