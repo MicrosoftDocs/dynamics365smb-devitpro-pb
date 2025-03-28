@@ -1215,7 +1215,7 @@
 ### Embedding Power BI
 #### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
-### [Need a new AL object for your app?](developer/devenv-contribute-extensibility.md)
+### [Improving our AL codebase](developer/devenv-contribute-extensibility.md)
 <!-- end Testing the application -->
 
 <!-- Rules and Guidelines -->
