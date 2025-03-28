@@ -2,7 +2,7 @@
 title: Call external services with the HttpClient data type
 description: Learn about how to call external services using the HttpClient datatype.
 ms.custom: bap-template
-ms.date: 02/07/2025
+ms.date: 03/12/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 author: kennienp
@@ -89,9 +89,21 @@ The following example shows how to call an external web service from AL. It also
 
 [!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
 
+### Server-side certificate validation
+
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+
+To enhance security of HTTP calls from AL, the AL runtime validates all server certificates used when calling a web service endpoint from the [HttpClient](methods-auto/httpclient/httpclient-data-type.md) datatype. Certificate validation is enabled by default. A server certificate is installed on the endpoint side, it's not the certificate you attach to a request in AL.
+
+If an app or per-tenant extension needs to selectively disable certificate validation, you can use the [HttpClient.UseServerCertificateValidation(Boolean) method](methods-auto/httpclient/httpclient-useservercertificatevalidation-method.md), which allows the AL code to disable server certificate validation for the outgoing web service call.
+
+If you need to debug failing HTTP calls due to server certificates that fail to be validated, telemetry is emitted if there are certificate validation failures. Learn more in [Analyzing server certificate validation errors with telemetry](../administration/telemetry-webservices-outgoing-certificate-validation-errors.md).
+
+The ability to disable certificate validation is controlled by the [HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md) to allow app and per-tenant extension publishers to modify their code. In version 27, certificate validation is enabled by default without the ability to switch it off.
+
 ### Supported HTTP methods
 
-[!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md )]
+[!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md)]
 
 ## Parsing the result
 
@@ -136,7 +148,7 @@ The following example illustrates the error handling you need to set up for hand
 
 ### Using cookies
 
-Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using `HttpClient`. This allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where third-party endpoints require cookie customization. With the `Cookie` datatype and AL methods for handling cookies, you can automatically re-use response cookies, handle cookies manually, or a mix of both. 
+Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using `HttpClient`. This allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where third-party endpoints require cookie customization. With the `Cookie` datatype and AL methods for handling cookies, you can automatically reuse response cookies, handle cookies manually, or a mix of both. 
 
 ### Using certificates
 
