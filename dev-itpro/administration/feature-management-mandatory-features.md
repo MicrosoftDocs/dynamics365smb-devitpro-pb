@@ -15,7 +15,7 @@ ms.collection:
 
 This article provides the following information about optional features, starting with 2023 release wave 1:
 
-* Features that are now mandatory and can't be disabled. Feature keys are removed from moved from **Feature Management**.
+* Features that are now mandatory and can't be disabled. Feature keys are removed from **Feature Management**.
 * Features that are turned on by default for new customers
 * Features that are now generally available
 
