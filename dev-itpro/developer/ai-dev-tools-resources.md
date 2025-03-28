@@ -12,7 +12,7 @@ ms.date: 03/27/2025
 
 A key feature of the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot is that [!INCLUDE [prod_short](includes/prod_short.md)] partners can use Large Language Models (LLMs) via Microsoft-managed Azure OpenAI resources. This approach eliminates the need to independently procure and manage Azure OpenAI subscriptions for customers.
 
-Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources is the default and recommended approach. However, some partners or customers might have special requirements that require them to use their own Azure OpenAI (AOAI) subscription, when running the feature in production, which is also supported in the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
+Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources is the default and recommended approach. However, some partners or customers might have special requirements that require them to use their own Azure OpenAI (AOAI) subscription, when running the feature in production, which is also supported in [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
  
 ## Benefits of relying on the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources
 
@@ -34,15 +34,15 @@ This allows customers to:
 - Receive a consolidated invoice for AI consumption.
  
 > [!NOTE]  
-> It's important to note that the AI billing mechanism isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP).
+> It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP). <!-- link to more info -->
 
 ## Use your own subscription with customers
 
-For most ISVs, the default [!INCLUDE [prod_short](includes/prod_short.md)] AI resources are enough, However, if you have needs that aren't fulfilled with the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, such as specific models including fine-tuned ones, you can bring your own (BYO) subscription to customers. If that's the case, the ISV is responsible for the deployment, maintenance, scaling, and security of the service - and billing of AI resources to customers.
+For most ISVs, the default [!INCLUDE [prod_short](includes/prod_short.md)] AI resources are enough, However, if you have needs that aren't fulfilled with the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, such as specific models including fine-tuned ones, you can bring your own (BYO) subscription to customers. If that's the case, the ISV is responsible for the deployment, maintenance, scaling, and security of the service - and the billing of AI resources to customers.
 
 ## Differences between [!INCLUDE [prod_short](includes/prod_short.md)] AI resources and custom Azure OpenAI subscriptions
 
-By using the developer tools for Copilot, partners can easily get access to AI resources when they extend Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. While these AI resources are the same as what is being used for base application Copilot features, and are the default and recommended approach, partners might have special requirements that require them to use their own or customer-owned Azure OpenAI (AOAI) subscription when running the feature in production. The section below provides an overview of the major differences between using the AI resources in the toolkit and using your own Azure OpenAI subscription and model deployment. 
+By using the developer tools for Copilot, partners can easily get access to AI resources when they extend Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. While these AI resources are the same as what's being used for base application Copilot features, and are the default and recommended approach, partners might have special requirements that require them to use their own or customer-owned Azure OpenAI (AOAI) subscription when running the feature in production. The following section provides an overview of the major differences between using the AI resources in the toolkit and using your own Azure OpenAI subscription and model deployment.
 <br><br>
 
 |Area|Business Central AI resources|Your own AOAI subscription|
