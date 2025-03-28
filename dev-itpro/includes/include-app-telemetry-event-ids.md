@@ -32,3 +32,5 @@
 |AL0000DGF|	Performance Toolkit |[Performance Toolkit - {BCPT Header code} - {BCPT Scenario code} - {BCPT Line status}](../administration/telemetry-performance-toolkit-trace.md#scenario)|
 |AL0000EIW|Onboarding|[Onboarding Started](../administration/telemetry-onboarding-trace.md#started)|
 |AL0000EIV|Onboarding|[Onboarding criteria completed: {Criteria}](../administration/telemetry-onboarding-trace.md#CriteriaCompleted)|
+|AL0000O76|Financial Reports |[Financial report run from request page: {report definition code}](../administration/telemetry-financial-report-usage-trace.md#financial-report-run-from-request-page-report-definition-code)|
+|AL0000OKU|Financial Reports |[Financial report run on-screen: {report definition code}](../administration/telemetry-financial-report-usage-trace.md#financial-report-run-on-screen-report-definition-code)|

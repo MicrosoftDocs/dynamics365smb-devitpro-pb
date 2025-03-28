@@ -12,7 +12,10 @@ ms.reviewer: jswymer
 
 This article describes how to upgrade a customized version 14 application to a version 25 solution that uses the Microsoft system and base applications.
 
-[![Shows the upgrade of an unmodified Business Central v25 application.](../developer/media/bc14-to-25-cal-upgrade-to-base-app.svg)](../developer/media/bc14-to-25-cal-upgrade-to-base-app.svg#lightbox) 
+[![Shows the upgrade of an unmodified Business Central v25 application.](../developer/media/bc14-to-25-cal-upgrade-to-base-app.svg)](../developer/media/bc14-to-25-cal-upgrade-to-base-app.svg#lightbox)
+
+> [!NOTE]
+> Starting in 2025 release wave 1 (v26), the direct upgrade from Business Central 2019 (v14) to the latest release won't be supported. The supported upgrade path will be through 2024 release wave 2 (v25). Learn more in [Deprecated features in the platform - clients, server, and database](deprecated-features-platform.md#changes-in-2025-release-wave-1-version-260).
 
 ## Overview
 
