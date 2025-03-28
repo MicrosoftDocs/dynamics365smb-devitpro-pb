@@ -104,7 +104,7 @@ Ask the user to re-run the report<br><br>
 A field table relation cannot be validated
 
 **Suggested solution**<br>
-Missing data in the related table or incorrect data in the current field that does not match the required fiels in the related table.<br><br>
+Missing data in the related table or incorrect data in the current field that does not match the required fields in the related table.<br><br>
 
 ### <a name=NavEntitlementPermissionException></a>NavEntitlementPermissionException
 The user running the report has a license that does not allow running the report. 
