@@ -24,6 +24,9 @@ The template repositories to use as starting point are:
 
 To get started with AL-Go, try out the [AL-Go for GitHub Workshop](https://github.com/microsoft/AL-Go/blob/main/Workshop/Index.md). All documentation for AL-Go for GitHub is maintained and updated in the repository. Go to [AL-Go for GitHub](https://github.com/microsoft/AL-Go/blob/main/README.md) to see the latest documentation.
 
+> [!NOTE]
+> Microsoft will phase out the usage of `BcContainerHelper` in AL-Go for GitHub, with official support for `BcContainerHelper` ending on October 1, 2027. Learn more in [Deprecating BcContainerHelper](algo-deprecating-bccontainerhelper.md).
+
 ## Related information
 
 [Developing extensions in AL](../developer/devenv-dev-overview.md)  
