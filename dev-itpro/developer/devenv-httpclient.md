@@ -2,9 +2,8 @@
 title: Call external services with the HttpClient data type
 description: Learn about how to call external services using the HttpClient datatype.
 ms.custom: bap-template
-ms.date: 01/08/2024
-ms.reviewer: jswymer
-
+ms.date: 03/12/2025
+ms.reviewer: solsen
 ms.topic: conceptual
 author: kennienp
 ms.author: kepontop
@@ -18,11 +17,11 @@ You can integrate [!INCLUDE[prod_short](includes/prod_short.md)] apps/extensions
 
 The [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md) is simply a wrapper on the .NET class HttpClient.  
 
-In this article, you learn how to make HTTP requests using the *HttpClient* data type and handle responses using the *HttpResponseMessage* data type. 
+In this article, you learn how to make HTTP requests using the *HttpClient* data type and handle responses using the *HttpResponseMessage* data type.
 
 ## Set up an external call
 
-The first thing you need to do is to define the HTTP request, that is, which URI to call, set request and content HTTP headers, and choose which HTTP method to use. You do this using the _HttpRequestMessage_ data type.
+The first thing you need to do is to define the HTTP request, that is, which URI to call, set request and content HTTP headers, and choose which HTTP method to use. You do this using the `HttpRequestMessage` data type.
 
 The following example illustrates ways to prepare the request.
 
@@ -57,7 +56,7 @@ The following example illustrates ways to prepare the request.
     end;
 ```
 
-For more information about content headers, see [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md).  
+Learn more about content headers in [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md).  
 
 ## Run the call
 
@@ -90,15 +89,27 @@ The following example shows how to call an external web service from AL. It also
 
 [!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
 
+### Server-side certificate validation
+
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+
+To enhance security of HTTP calls from AL, the AL runtime validates all server certificates used when calling a web service endpoint from the [HttpClient](methods-auto/httpclient/httpclient-data-type.md) datatype. Certificate validation is enabled by default. A server certificate is installed on the endpoint side, it's not the certificate you attach to a request in AL.
+
+If an app or per-tenant extension needs to selectively disable certificate validation, you can use the [HttpClient.UseServerCertificateValidation(Boolean) method](methods-auto/httpclient/httpclient-useservercertificatevalidation-method.md), which allows the AL code to disable server certificate validation for the outgoing web service call.
+
+If you need to debug failing HTTP calls due to server certificates that fail to be validated, telemetry is emitted if there are certificate validation failures. Learn more in [Analyzing server certificate validation errors with telemetry](../administration/telemetry-webservices-outgoing-certificate-validation-errors.md).
+
+The ability to disable certificate validation is controlled by the [HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md) to allow app and per-tenant extension publishers to modify their code. In version 27, certificate validation is enabled by default without the ability to switch it off.
+
 ### Supported HTTP methods
 
-[!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md )]
+[!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md)]
 
 ## Parsing the result
 
-If the HttpClient call succeeds, you get a response back from the service you called. The response is saved in the data type HttpResponseMessage, where you can parse it to use the information in your app. The service call itself might not succeed, so make sure that you check the HTTP status code in your AL code. 
+If the `HttpClient` call succeeds, you get a response back from the service you called. The response is saved in the data type `HttpResponseMessage`, where you can parse it to use the information in your app. The service call itself might not succeed, so make sure that you check the HTTP status code in your AL code.
 
-The following example illustrates the error handling you need to setup for handling errors from the service that you called.
+The following example illustrates the error handling you need to set up for handling errors from the service that you called.
 
 ```AL
     local procedure GetRequest() ResponseText: Text
@@ -137,32 +148,28 @@ The following example illustrates the error handling you need to setup for handl
 
 ### Using cookies
 
-Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using HttpClient This allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where third-party endpoints require cookie customization. With the Cookie datatype and AL methods for handling cookies, you can automatically re-use response cookies, handle cookies manually, or a mix of both. 
-
-<!-- Pending merge to main for 2024w1 content
-For more information about server-side cookies, see 
--->
-
+Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using `HttpClient`. This allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where third-party endpoints require cookie customization. With the `Cookie` datatype and AL methods for handling cookies, you can automatically reuse response cookies, handle cookies manually, or a mix of both. 
 
 ### Using certificates
 
-It's possible to include a certificate when calling an external service using HttpClient. 
+It's possible to include a certificate when calling an external service using `HttpClient`. 
 
 [!INCLUDE[httpclient_cert_example](includes/include-http-cert-example.md)]
 
 [!INCLUDE[httpclient_cert_note](includes/include-http-cert-note.md)]
 
-For more information about certificates, see
+Learn more about certificates in:
 
-- [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-string-string-method.md)  
+- [HttpClient.AddCertificate method](methods-auto/httpclient/httpclient-addcertificate-string-string-method.md)  
 - [Supported cipher suites in HTTPS](devenv-supported-cipher-suites.md).
 
 ### Which IP addresses or ranges does my environment use?
 
 When you exchange data through external services, you might have to safelist the IP addresses from where the [!INCLUDE[prod_short](includes/prod_short.md)] service is running. 
 
-For more information, see 
-- [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)
+Learn more in:
+ 
+- [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)  
 - [How-to restrict network access from/to Business Central](../security/security-service-tags.md).
 
 ## Monitor and troubleshoot
@@ -171,7 +178,7 @@ For more information, see
 
 ### Application Insights
 
-You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry traces to an Application Insights resource in Azure. Once set up, telemetry data is sent to the resource when web services are called using the HttpClient data type. For more information, see, [Analyzing outgoing web service request telemetry](../administration/telemetry-webservices-outgoing-trace.md).  
+You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry traces to an Application Insights resource in Azure. Once set up, telemetry data is sent to the resource when web services are called using the HttpClient data type. Learn more in [Analyzing outgoing web service request telemetry](../administration/telemetry-webservices-outgoing-trace.md).  
 
 ### Troubleshoot errors
 

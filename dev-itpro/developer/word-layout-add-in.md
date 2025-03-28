@@ -6,14 +6,14 @@ ms.author: kepontop
 ms.reviewer: jswymer
 ms.topic: conceptual 
 ms.collection: 
-ms.date: 03/12/2024
+ms.date: 03/12/2025
 ms.custom: bap-template
 ---
 # Use the Word add-in for report layouts
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-The Dynamics 365 [!INCLUDE [prod_short](includes/prod_short.md)] Word add-in includes several controls that you can use to change the behavior of Word layouts for document reports. A comment control allows you to add a comment in the layout, which appears in Word while designing the layout but doesn't appear in the rendered report. Other controls let you encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data.
+The Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)] Word add-in includes several controls that you can use to change the behavior of Word layouts for document reports. A comment control allows you to add a comment in the layout, which appears in Word while designing the layout but doesn't appear in the rendered report. Other controls let you encode a layout file with conditional visibility of fields, tables, table rows, and table columns based on data.
 
 ## Install the add-in
 
@@ -35,9 +35,9 @@ There are two ways to insert a comment:
 
 ### Exercise: Add a versioning table in a layout
 
-1. In [!INCLUDE [prod_short](includes/prod_short.md)], export a Word layout for a report:
+1. In [!INCLUDE[prod_short](includes/prod_short.md)], export a Word layout for a report:
 
-   1. Sign in to [!INCLUDE [prod_short](includes/prod_short.md)].
+   1. Sign in to [!INCLUDE[prod_short](includes/prod_short.md)].
    1. Search for and open the **Report Layouts** page.
    1. Choose a layout in the list that has the **Type** equal to **Word**.
    1. Select **Export Layout**.
@@ -53,7 +53,7 @@ There are two ways to insert a comment:
 
    When you place your cursor somewhere in the table, the control displays a **Hidden Comment** label.
 
-1. In [!INCLUDE [prod_short](includes/prod_short.md)], import and run the layout:
+1. In [!INCLUDE[prod_short](includes/prod_short.md)], import and run the layout:
 
    1. In the **Report Layouts** page, select the report for the new layout, and then select **New**.
    1. In **Add New Layout for a Report** page, fill in the fields, making sure to set **Format Options** to **Word**.

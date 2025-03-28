@@ -2,8 +2,8 @@
 title: AVS Error AVS0104
 description: "The extension '{0}' by '{1}' (version '{2}') is a runtime package, which is not allowed in Business Central online."
 ms.author: thpeder
-ms.date: 04/26/2024
-ms.reviewer: jswymer
+ms.date: 01/30/2025
+ms.reviewer: solsen
 ms.topic: reference
 author: thpeder
 ---
