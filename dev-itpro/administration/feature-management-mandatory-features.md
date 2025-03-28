@@ -38,7 +38,6 @@ These features are no longer controlled in **Feature management**, so they can't
 
 ### Features added and enabled by default in version 26
 
-- [Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking.](https://go.microsoft.com/fwlink/?linkid=2303767)
 - [Feature: Disable SOAP web services on Microsoft UI pages](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)<!-- missing rp-->
 - [Feature: Enable server certificate validation for HTTP requests](../developer/devenv-httpcertvalid-feature-key.md)
 
@@ -49,6 +48,7 @@ These features are no longer controlled in **Feature management**, so they can't
 - [Feature Update: Enable multiple users to post resource ledger entries at the same time entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
 - [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
 - [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md)<!-- missing rp-->
+- [Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking.](https://go.microsoft.com/fwlink/?linkid=2303767)
 
 ## 2024 release wave 2 (version 25)
 
