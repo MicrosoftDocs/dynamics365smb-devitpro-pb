@@ -2,10 +2,11 @@
 title: Entitlement object
 description: Discover how to define and use entitlement objects in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 01/13/2024
+ms.date: 03/19/2025
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
+ms.custom: evergreen
 ---
 
 # Entitlement object
@@ -22,7 +23,7 @@ Entitlements can only be used with the online version of [!INCLUDE [prod_short](
 
 ## Supporting transactability for AppSource apps
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements can be used to support transactability for AppSource apps by binding entitlements to offers. Learn more in [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements support transactability for AppSource apps by binding entitlements to offers. Learn more in [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 <!--
 > [!NOTE]  
@@ -37,7 +38,7 @@ Typing the shortcut `tentitlement` creates the basic layout for an entitlement o
 
 ## Entitlement example - delegated admin
 
-This example illustrates a simple entitlement object with the [Type property](properties/devenv-type-property.md) set to `Role`, which means that the entitlement is associated with a Microsoft Entra role. When `Type` is set to `Role`, the [RoleType property](properties/devenv-roletype-property.md) is used to distinguish between local and delegated assignments of the role, in this case it's `Delegated`. The [ObjectEntitlements property](properties/devenv-objectentitlements-property.md) defines the list of permissions that the entitlement includes.
+This example illustrates a simple entitlement object with the [Type property](properties/devenv-type-property.md) set to `Role`, which means that the entitlement is associated with a Microsoft Entra role. When `Type` is set to `Role`, the [RoleType property](properties/devenv-roletype-property.md) distinguishes between local and delegated assignments of the role. In this case, it's `Delegated`. The [ObjectEntitlements property](properties/devenv-objectentitlements-property.md) defines the list of permissions that the entitlement includes.
 
 ```al
 
@@ -165,7 +166,7 @@ procedure CheckingForEntitlementsUsingPermissions()
 
 ## Entitlement example - Microsoft Entra group
 
-An example of an entitlement where `Type` is `Group`. This supports scenarios when a user has to have access to the AppSource app with transact support and no need to buy a developer license. The `id` property is the object ID of the Microsoft Entra group. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+This example shows an entitlement where `Type` is `Group`. It supports scenarios where a user needs access to the AppSource app with transact support without buying a developer license. The `id` property is the object ID of the Microsoft Entra group. Learn more in [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_Group
@@ -178,7 +179,7 @@ entitlement BC_Group
 
 ## Entitlement example - Microsoft Entra application access
 
-An example of an entitlement where `Type` is `Application`. This supports scenarios when a vendor has to have access to the AppSource app with transact support and no need to buy a license. The `id` property is the client ID of the Microsoft Entra application. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+An example of an entitlement where `Type` is `Application`. It supports scenarios when a vendor needs access to the AppSource app with transact support and no need to buy a license. The `id` property is the client ID of the Microsoft Entra application. Learn more in [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_SpecificApplication
@@ -188,7 +189,7 @@ entitlement BC_SpecificApplication
 }
 ```
 
-An example of an entitlement where `Type` is `ApplicationScope`. This supports scenarios when it should be possible to have Microsoft Entra application access to the AppSource app with transact support and no need to buy a license. The `id` property is the scope assigned to the Microsoft Entra application. For more information, see [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md).
+An example of an entitlement where `Type` is `ApplicationScope`. It supports scenarios when Microsoft Entra application access to the AppSource app with transact support is needed and no license is required. The `id` property is the scope assigned to the Microsoft Entra application. Learn more in [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md).
 
 ```al
 entitlement BC_ApplicationWithAPIRWScope
