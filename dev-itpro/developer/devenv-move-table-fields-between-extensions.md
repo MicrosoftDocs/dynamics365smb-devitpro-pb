@@ -5,21 +5,34 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 04/23/2024
+ms.date: 02/20/2025
 ---
 
 # Moving tables and fields between extensions
 
 As extensions mature or as a consequence of an extension initially created as a large monolith, the need to break down the extension and transfer the ownership of tables or fields, including data, becomes apparent. Moving tables and fields between extensions improves maintainability, flexibility, and scalability of the extension. This feature introduces a controlled process for releasing and taking ownership of tables as part of the extension upgrade process.
 
-> [!IMPORTANT]
-> This feature is currently not available to partners, but will be with a future update. This documentation is provided to give an overview of the feature and how it works.
+> [!NOTE]
+> This feature is available for [!INCLUDE [prod_short](includes/prod_short.md)] on-premises and AppSource apps starting from 2025 release wave 1. It's also enabled for development.
+>
+> It's not allowed for PTEs.
 
 ## Moving tables between extensions
 
-To prepare to move a table, both the source and destination must contain the implementation of the specific table. Furthermore, the table must have the same schema and public methods in the source and destination extension. The tables must be identical in both extensions, including the table ID, fields, keys, and triggers. Additive changes to the destination are allowed. for example, adding a new field to the table, but all the existing fields must be identical. Then, the table must be moved in a staged process to avoid breaking changes.
+To prepare to move a table, both the source and destination must contain the implementation of the specific table. Furthermore, the table must have the same schema and public methods in the source and destination extension. The tables must be identical in both extensions, including the table ID, fields, keys, and triggers. Additive changes to the destination are allowed. For example, adding a new field to the table, but all the existing fields must be identical. Then, the table must be moved in a staged process to avoid breaking changes.
 
 In the source table definition, you must add the `MovedTo` property, making sure that it points to the app ID of the destination extension. Likewise, in the destination extension, you must add the `MovedFrom` property, which should point to the app ID of the source extension. When the extensions are published, installed, synched, or upgraded, the platform handles moving the data ownership for the table from the source to the destination extension.
+
+## Considerations before moving
+
+Moving a table or a field can be considered a breaking change. Keep the following things in mind to avoid disruption to customers and to ensure the move is the intended action.
+
+- **A move is a schema breaking change** - Once a move is completed; tables and columns in the database might have changed and data might have been transferred. This can't be reverted by removing the properties. **Especially in AppSource, an exception will be needed to remove the properties**. The exception requires that no environments have completed the move or that data loss via force sync is acceptable. 
+- **Tables and fields can only be moved once** - A table or a field can't be moved to a new destination after they have been moved once in AppSource apps. This is a limitation of the current implementation. Multiple moves can only be allowed as an exception, if all the environments have successfully completed the move.
+
+### Impact of a breaking change
+
+If a source extension with a move is installed, but no destination extension takes over, this is considered an incomplete move. On an environment, all extensions, which depend on the moved table or field will produce an error as they'll be unable to find them. This should be taken into account when designing for a move.
 
 ### Avoiding breaking changes
 
@@ -35,7 +48,7 @@ If a table is set to `Moved` that table isn't accessible anymore. The table data
 
 Additive changes can be applied to a table during a move, but any destructive change isn't allowed.
 
-Hostile take-over isn't allowed when moving a table, the latest published version of the current app must allow the move. Otherwise, this is considered a hostile takeover and sync of the destination app fails.
+When moving a table, the latest published version of the current app must allow the move. Otherwise, this is considered a hostile takeover and sync of the destination app fails.
 
 > [!NOTE]
 > The Name and ID of tables can't be changed during a move.
@@ -108,9 +121,6 @@ Each move needs changes in the source extension that owns the field and the dest
 In this case, the field is considered moved out and no other object can take a reference on this field because it's removed from the extension, the data, however, is preserved until this field is taken over. On the other side in the destination taking over the field, this is identified by adding the `MovedFrom` property. Where the value of this property is the app ID of the source extension, which means if this field already exists on the server, it will be taken over by the new extension. Taking over the field where the source doesn't allow the move is considered a hostile takeover and it's not allowed. In a case of hostile takeover, an error is created during the synchronization of the extension. To validate if a move of a field is valid, the latest version of the source must allow the field to be moved to the new destination.
 
 Moving a field can be combined with moving a table. For example, a table can be moved to a new extension and some of the fields extracted back to the previous owner of the table. To do so, you must first move the table. In the second step, you must search some of the fields to be moved to the new extension, which is the previous owner of the table. You must also create a new table extension object in the previous owner extension and move the fields to that table extension.
-
-> [!IMPORTANT]
-> This feature is only available to apps developed by Microsoft.
 
 ### Limitations
 
@@ -288,6 +298,8 @@ Moving a table or a field is a breaking change in most of the cases and should b
 
 ## Nonbreaking changes
 
-If a table is moved to one of its dependencies and it has the `PropagateDependency` setting in the manifest set to `true` then this isn't a breaking change. In this case the table or the fields are available to all the extensions that depended on the extension. Such a move can be done in one step and is seamless to all other extensions.
+If a table is moved from an extension to one of its direct dependencies and the source extension has the `PropagateDependencies` setting in the manifest set to `true` then this isn't a breaking change. In this case, the table or the fields are available to all the extensions that depended on the extension. Such a move can be done in one step and is seamless to all other extensions.
 
 ## Related information
+
+[Scenarios for moving tables and fields between extensions](devenv-scenarios-moving-table-fields.md)  
