@@ -154,7 +154,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 ### Features now mandatory and removed from feature management
 
 - [Feature Update: Enable use of new extensible exchange rate adjustment, including posting review](https://go.microsoft.com/fwlink/?linkid=2187318)
-- [Feature Update: Enable use of new extensible invoice posting engine](https://go.microsoft.com/fwlink/?linkid=2187318)
+- [Feature Update: Enable use of new extensible invoice posting engine](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations-invoice-post-buffer-refactoring)
 - [Feature Update: Replace the existing EU 3-Party Trade Purchase functionality with the new EU 3-Party Trade Purchase extension](https://go.microsoft.com/fwlink/?linkid=2235119)
 - [Feature: Enable legacy locking scheme in AL](https://go.microsoft.com/fwlink/?linkid=2244711)
 - [Feature: Enable using bulk operations for Shopify connector](https://go.microsoft.com/fwlink/?linkid=2242514)
