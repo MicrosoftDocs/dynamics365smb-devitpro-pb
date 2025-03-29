@@ -159,16 +159,16 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature: Enable legacy locking scheme in AL](https://go.microsoft.com/fwlink/?linkid=2244711)
 - [Feature: Enable using bulk operations for Shopify connector](https://go.microsoft.com/fwlink/?linkid=2242514)
 
-### Features postponed from becoming in update 26.0
+### Features delayed from becoming mandatory in update 26.0
 
 - [Feature: Enable using SAF-T Audit Files Exports](/dynamics365/business-central/localfunctionality/denmark/how-to-use-saft-audit-files-export)
 
-### New features added and enabled by default
+### New features enabled by default
 
 - [Feature: Disable SOAP web services on Microsoft UI pages](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)<!-- missing rp-->
 - [Feature: Enable server certificate validation for HTTP requests](../developer/devenv-httpcertvalid-feature-key.md)
 
-### New features added and disabled by default
+### New features disabled by default
 
 - [Feature Update: Enable multiple users to post item ledger entries and value entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833) 
 - [Feature Update: Enable multiple users to post job ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
