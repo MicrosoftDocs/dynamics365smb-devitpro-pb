@@ -17,13 +17,13 @@ This article provides an overview of new and changed features, along with genera
 ## Highlights
 
 > [!TIP]
-> Watch video on YouTube about a few of the features: [Dynamics 365 Business Central 2025 Release Wave 1 Release Highlights](https://www.youtube.com/watch?v=D2KPQEbO40Q).
+> Watch video on YouTube: [Dynamics 365 Business Central 2025 Release Wave 1 Release Highlights](https://www.youtube.com/watch?v=D2KPQEbO40Q).
 
 ### Sales Order Agent
 
 Sales Order Agent is now available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
   
-The Sales Order Agent automates capturing sales orders from customer emails. It uses AI to analyze requests, locate customers in the system, and engage in email conversations to clarify details. The agent checks item availability, generates sales quotes and orders, and formats them as PDFs with all necessary details ready to send to the customer. Each step of a customer engagement is available in Business Central, letting users stay in the loop and get involved when needed.
+The Sales Order Agent automates sales order processing from customer emails using AI. It identifies customers, clarifies details via email, checks item availability, creates quotes and orders, and generates PDF documents. All interactions are tracked in Business Central, keeping users informed and enabling involvement when necessary.
 
 Watch a short video in the Dynamics Business Central channel on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
 
@@ -212,7 +212,6 @@ New customers get Business Central version 26.0 automatically. With the 26.0 rel
 Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline##major-updates).
 
 ## Good to know
-
 
 ### Business Central Launch Event
 
