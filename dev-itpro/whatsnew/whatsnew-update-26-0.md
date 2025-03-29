@@ -21,25 +21,25 @@ This article provides an overview of new and changed features, along with genera
 
 ### Sales Order Agent
 
-Sales Order Agent is now available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
+Sales Order Agent is available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
   
 The Sales Order Agent automates sales order processing from customer emails using AI. It identifies customers, clarifies details via email, checks item availability, creates quotes and orders, and generates PDF documents. All interactions are tracked in Business Central, keeping users informed and enabling involvement when necessary.
 
-Watch a short video in the Dynamics Business Central channel on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
+Watch a short video on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
 
 Learn how to set up and use Sales Order agent in [Sales Order Agent overview](/dynamics365/business-central/sales-order-agent) or follow its release plan at [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
 ### Autofill fields
 
-Autofill with Copilot suggests values for editable fields on card and document pages based on your Business Central data, like frequently used values, recently used values, or AI-generated options. You can choose to keep or discard these suggestions.
+Autofill with Copilot suggests values for editable fields on card and document pages based on your Business Central data, like frequently used values, recently used values, or AI-generated options. You can choose to keep or discard these suggestions. Learn more in [Autofill fields with Copilot](/dynamics365/business-central/autofill-fields-with-copilot).
 
 ### Summarize records
 
-Summarize with Copilot generates a concise summary of a record, such as a customer, item, or sales order, directly in the page's FactBox pane. Summaries are tailored to your role in Business Central, providing insight into data on the page and related pages and drawing attention to important information. 
+Summarize with Copilot generates a concise summary of a record, such as a customer, item, or sales order, directly in the page's FactBox pane. Summaries are tailored to your role in Business Central, providing insight into data on the page and related pages and drawing attention to important information. Learn more in [Summarize records with Copilot](/dynamics365/business-central/summarize-with-copilot).
 
 ### Sustainability Scope 3 value chain tracking
 
-Scope 3 value chain processing automation is embedded in standard ERP processes. This feature calculates the carbon dioxide equivalent for finished goods, giving you the figures you need to report indirect emissions data across your upstream and downstream value chain.
+Scope 3 value chain processing automation is embedded in standard ERP processes. This feature calculates the carbon dioxide equivalent for finished goods, giving you the figures you need to report indirect emissions data across your upstream and downstream value chain. Learm more in [Sustainability value chain overview](/dynamics365/business-central/value-chain-howto-overview).
 
 ## New features
 
@@ -209,8 +209,6 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Deleted objects](../upgrade/deleted-objects-25w1)
 
 ## Other notable changes
-
-This section provides details about others changes and bug fixes
 
 - **Copilot & AI capabilities** page renamed to **Copilot & agent capabilities**
 - Chat with Copilot to ask about specific record fields.
