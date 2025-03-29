@@ -19,7 +19,7 @@ This article provides an overview of new and changed features, along with genera
 > [!TIP]
 > Watch video on YouTube about a few of the features: [Dynamics 365 Business Central 2025 Release Wave 1 Release Highlights](https://www.youtube.com/watch?v=D2KPQEbO40Q).
 
-### Sales Order Agent in more countries/regions
+### Sales Order Agent
 
 Sales Order Agent is now available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
   
@@ -35,7 +35,7 @@ Autofill with Copilot suggests values for editable fields on card and document p
 
 ### Summarize records
 
-Summarize with Copilot generates concise summaries of documents, emails, or other content, helping users quickly grasp key points and insights
+Summarize with Copilot generates a concise summary of a record, such as a customer, item, or sales order, directly in the page's FactBox pane. Summaries are tailored to your role in Business Central, providing insight into data on the page and related pages and drawing attention to important information. 
 
 ### Value chain tracking
 
