@@ -45,9 +45,6 @@ Scope 3 value chain processing automation is embedded in standard ERP processes.
 
 This table lists the features in public preview or general availability for version 26.0. For a comprehensive feature list and details, refer to [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central).
 
-> [!TIP]
-> Watch a video on YouTube about a few of the features: [Dynamics 365 Business Central 2025 Release Wave 1 Release Highlights](https://www.youtube.com/watch?v=D2KPQEbO40Q).
-
 <!-- Generate table:
 
 1. In successHub, filter on releas plns similar to https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entitylist&etn=rn_releasenote&viewid=9d407e0c-72e4-ef11-a731-7c1e520c4fd1&viewType=4230&lid=1738859869588
@@ -200,6 +197,8 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md)<!-- missing rp-->
 - [Feature: Optimize screen estate usage for web](https://go.microsoft.com/fwlink/?linkid=2304791)
 - [Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking.](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods)
+
+
 
 ## On-premises download packages
 
