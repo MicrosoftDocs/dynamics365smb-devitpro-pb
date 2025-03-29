@@ -40,7 +40,7 @@ Summarize with Copilot generates a concise summary of a record, such as a custom
 ### Sustainability Scope 3 value chain tracking
 
 Scope 3 value chain processing automation is embedded in standard ERP processes. This feature calculates the carbon dioxide equivalent for finished goods, giving you the figures you need to report indirect emissions data across your upstream and downstream value chain.
- 
+
 ## New features
 
 This table lists the features in public preview or general availability for version 26.0. For a comprehensive feature list and details, refer to [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central).
