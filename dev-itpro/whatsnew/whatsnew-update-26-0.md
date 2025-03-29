@@ -14,6 +14,33 @@ ms.custom:
 
 This article provides an overview of new and changed features, along with general information about update 26.0, the start of the 2025 release wave 1.
 
+## Highlights
+
+> [!TIP]
+> Watch video on YouTube about a few of the features: [Dynamics 365 Business Central 2025 Release Wave 1 Release Highlights](https://www.youtube.com/watch?v=D2KPQEbO40Q).
+
+### Sales Order Agent in more countries/regions
+
+Sales Order Agent is now available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
+  
+The Sales Order Agent automates capturing sales orders from customer emails. It uses AI to analyze requests, locate customers in the system, and engage in email conversations to clarify details. The agent checks item availability, generates sales quotes and orders, and formats them as PDFs with all necessary details ready to send to the customer. Each step of a customer engagement is available in Business Central, letting users stay in the loop and get involved when needed.
+
+Watch a short video in the Dynamics Business Central channel on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
+
+Learn how to set up and use Sales Order agent in [Sales Order Agent overview](/dynamics365/business-central/sales-order-agent) or follow its release plan at [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
+
+### Autofill fields
+
+Autofill with Copilot suggests values for editable fields on card and document pages based on your Business Central data, like frequently used values, recently used values, or AI-generated options. You can choose to keep or discard these suggestions.
+
+### Summarize records
+
+Summarize with Copilot generates concise summaries of documents, emails, or other content, helping users quickly grasp key points and insights
+
+### Value chain tracking
+
+
+
 ## New features
 
 This table lists the features in public preview or general availability for version 26.0. For a comprehensive feature list and details, refer to [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central).
@@ -186,15 +213,6 @@ Learn more in [Major updates and minor updates for Business Central online](../a
 
 ## Good to know
 
-### Sales Order Agent in more countries/regions
-
-Sales Order Agent is now available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
-  
-The Sales Order Agent automates capturing sales orders from customer emails. It uses AI to analyze requests, locate customers in the system, and engage in email conversations to clarify details. The agent checks item availability, generates sales quotes and orders, and formats them as PDFs with all necessary details ready to send to the customer. Each step of a customer engagement is available in Business Central, letting users stay in the loop and get involved when needed.
-
-Watch a short video in the Dynamics Business Central channel on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
-
-Learn how to set up and use Sales Order agent in [Sales Order Agent overview](/dynamics365/business-central/sales-order-agent) or follow its release plan at [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
 ### Business Central Launch Event
 
