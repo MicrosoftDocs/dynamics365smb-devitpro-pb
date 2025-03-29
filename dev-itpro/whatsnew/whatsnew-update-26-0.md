@@ -202,7 +202,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature: Optimize screen estate usage for web](https://go.microsoft.com/fwlink/?linkid=2304791)
 - [Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking.](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods)
 
-## Deprecated or removed features and objects
+## Deprecated or removed features
 
 - [Deprecated or removed features in the platform](../upgrade/deprecated-features-platform.md#changes-in-2025-release-wave-1-version-260)
 - [Deprecated or removed in the base app](../upgrade/deprecated-features-w1.md#changes-in-2025-release-wave-1)
