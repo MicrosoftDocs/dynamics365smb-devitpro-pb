@@ -61,7 +61,7 @@ Complete these tasks to set up the Business Central environment for prepaid capa
 
 ### Set up pay-as-you-go
 
-Complete these tasks to set up the Business Central environment for pay-as-you-go. 
+Complete these tasks to set up the Business Central environment for pay-as-you-go.
 
 1. Set up pay-as-you-go on the Power Platform tenant (reseller):
 
