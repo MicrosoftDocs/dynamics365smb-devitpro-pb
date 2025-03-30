@@ -21,6 +21,8 @@ This article provides an overview of the new and updated features and general in
 
 ### Sales Order Agent
 
+[!INCLUDE [online_only.md](../developer/includes/online_only.md)]
+
 Sales Order Agent is available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
   
 The Sales Order Agent automates sales order processing from customer emails using AI. It identifies customers, clarifies details via email, checks item availability, creates quotes and orders, and generates PDF documents. All interactions are tracked in Business Central, keeping users informed and enabling involvement when necessary.
@@ -31,9 +33,13 @@ Learn how to set up and use Sales Order agent in [Sales Order Agent overview](/d
 
 ### Autofill fields
 
+[!INCLUDE [online_only.md](../developer/includes/online_only.md)]
+
 Autofill with Copilot suggests values for editable fields on card and document pages based on your Business Central data, like frequently used values, recently used values, or AI-generated options. You can choose to keep or discard these suggestions. Learn more in [Autofill fields with Copilot](/dynamics365/business-central/autofill-fields-with-copilot).
 
 ### Summarize records
+
+[!INCLUDE [online_only.md](../developer/includes/online_only.md)]
 
 Summarize with Copilot generates a concise summary of a record, such as a customer, item, or sales order, directly in the page's FactBox pane. Summaries are tailored to your role in Business Central, providing insight into data on the page and related pages and drawing attention to important information. Learn more in [Summarize records with Copilot](/dynamics365/business-central/summarize-with-copilot).
 
