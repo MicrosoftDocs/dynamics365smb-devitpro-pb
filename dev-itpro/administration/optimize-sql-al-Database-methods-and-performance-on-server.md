@@ -66,6 +66,10 @@ In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], SIFT indexes can b
 ## SetAutoCalcFields  
 
 It is a common task to retrieve data and request calculation of associated FlowFields. The following example traverses customer records, calculates the balance, and marks the customer as blocked if the customer exceeds the maximum credit limit. **Note:** the Customer record and associated fields are *imaginary* in the following examples.  
+
+> [!NOTE]
+> Starting in [!INCLUDE[prod_short](../includes/prod_short.md)] [!INCLUDE[2025_releasewave1_name](../includes/2025_releasewave1_name.md)], the **SetAutoCalcFields** is also available on the **RecordRef** data type.
+
   
 ```AL  
 if Customer.FindSet() then 
