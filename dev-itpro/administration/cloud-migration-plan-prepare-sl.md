@@ -57,7 +57,7 @@ Ensure you have a solid migration strategy for a smooth transition. Most migrati
 1. [Complete the migration](migration-finish-SL.md) and go live on the cloud environment.
 
 > [!IMPORTANT]
-> Ensure the on-premises and cloud environments remain on the same version they were when the cloud migration was set up. Don't update the on-premises environment and [reschedule updates](update-rollout-timeline.md#schedule-updates) to the cloud environment to a date after the cloud migration is completed.
+> Ensure the on-premises and cloud environments remain on the same version they were when the cloud migration was set up. Don't update the on-premises environment and [reschedule updates](update-rollout-timeline.md) to the cloud environment to a date after the cloud migration is completed.
 >
 > Avoid modifying the environment after the replication has been enabled. If you need to install or uninstall extensions or delete companies, disable the cloud migration, make the changes, and then enable it again.
 
