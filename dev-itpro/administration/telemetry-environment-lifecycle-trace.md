@@ -48,7 +48,7 @@ The following dimensions are available in all events described below and aren't 
 |deprecatedKeys|[!INCLUDE[deprecatedKeys](../includes/include-telemetry-dimension-deprecated-keys.md)]|
 |telemetrySchemaVersion|[!INCLUDE[telemetrySchemaVersion](../includes/include-telemetry-dimension-telemetry-schema-version.md)]|
 
-## Environment update available for scheduling
+## Environment update available
 
 Occurs when a new update is available for the environment.
 
@@ -92,7 +92,7 @@ Occurs when the environment is scheduled to be updated.
 |aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
 |countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
-|canPartnerReschedule|A boolean value (true or false) that specifies whether a partner can reschedule the update in the Business Central admin center. Set to **true** if the partner can reschedule the update.|
+|canPartnerReschedule|A boolean value (true or false) that specifies whether an administrator can reschedule the update in the Business Central admin center. Set to **true** if administrators can reschedule the update.|
 |destinationVersion|[!INCLUDE[destinationVersion](../includes/include-telemetry-dimension-update-destination-version.md)]|
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
@@ -101,7 +101,7 @@ Occurs when the environment is scheduled to be updated.
 |ignoreUpdateWindow|[!INCLUDE[ignoreUpdateWindow](../includes/include-telemetry-dimension-ignore-update-window.md)]|
 |registeredForUpdateOnOrAfterDateUtc|[!INCLUDE[registeredForUpdateOnOrAfterDateUtc](../includes/include-telemetry-dimension-registered-for-update-on-or-after-date.md)]|
 |sourceVersion|[!INCLUDE[sourceVersion](../includes/include-telemetry-dimension-update-source-version.md)]|
-|updateDateSelectedByPartner|Boolean value (True or False). Set to True if the update date was chosen by the partner in the admin center.|
+|updateDateSelectedByPartner|Boolean value (True or False). Set to True if the update date was chosen by an administrator in the admin center.|
 |updatePeriodEndDateUtc|[!INCLUDE[updatePeriodEndDateUtc](../includes/include-telemetry-dimension-update-period-end-date.md)]|
 |updatePeriodStartDateUtc|[!INCLUDE[updatePeriodStartDateUtc](../includes/include-telemetry-dimension-update-period-start-date.md)]|
 |updateWindowEndTimeUtc|[!INCLUDE[updateWindowEndDateUtc](../includes/include-telemetry-dimension-update-window-end-date.md)]|
@@ -139,13 +139,13 @@ Occurs when the environment was scheduled to be updated, but it wasn't possible 
 
 ## Environment update postponed
 
-Occurs when updates for version that the environment is on has been set on hold.
+Occurs when updates to the version selected as the environment's next update have been postponed.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Environment update postponed: {environmentName} to version {destinationVersion}** <br /><br /> `{environmentName}` indicates the name of the environment.<br /><br /> `{destinationVersion}` indicates the new version that is available. |
+|message|**Environment update postponed: {environmentName} to version {destinationVersion}** <br /><br /> `{environmentName}` indicates the name of the environment.<br /><br /> `{destinationVersion}` indicates the new version for which updates are postponed. |
 
 ### Custom dimensions
 
@@ -164,7 +164,7 @@ Occurs when updates for version that the environment is on has been set on hold.
 
 ## Environment update resumed
 
-Occurs when an update for a version that the environment is running on has been started again after being stopped.
+Occurs when updates to the version selected as next update for an environment have resumed.
 
 ### General dimensions
 |Dimension|Description or value|
