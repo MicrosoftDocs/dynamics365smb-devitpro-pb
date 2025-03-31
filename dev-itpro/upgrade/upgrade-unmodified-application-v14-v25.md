@@ -14,6 +14,9 @@ Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod
 
 [![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-25-upgrade-unmodified-app.svg)](../developer/media/bc14-to-25-upgrade-unmodified-app.svg#lightbox)  
 
+> [!NOTE]
+> Starting in 2025 release wave 1 (v26), the direct upgrade from Business Central 2019 (v14) to the latest release won't be supported. The supported upgrade path will be through 2024 release wave 2 (v25). Learn more in [Deprecated features in the platform - clients, server, and database](deprecated-features-platform.md#changes-in-2025-release-wave-1-version-260).
+
 ## General information
 
 ### Single-tenant and multitenant deployments
