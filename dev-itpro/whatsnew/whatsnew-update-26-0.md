@@ -217,11 +217,12 @@ This section outlines changes to feature and feature updates controlled by **Fea
 ## Other notable changes
 
 - **Copilot & AI capabilities** page renamed to **Copilot & agent capabilities**
-- Chat with Copilot to ask about specific record fields.
+- Chat with Copilot can ask about specific record fields.
 
+<!--
 ## Bug fixes
 
-For a list of bug fixes included in this update, refer to [Bug fixes](26-0-bug-fixes.md).
+For a list of bug fixes included in this update, refer to [Bug fixes](26-0-bug-fixes.md).-->
 
 ## On-premises download packages
 
