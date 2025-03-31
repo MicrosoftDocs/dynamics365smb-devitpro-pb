@@ -46,11 +46,11 @@ Both models require that you link your Business Central environment to a Power P
 
 Complete these tasks to set up the Business Central environment for prepaid capacity. Tasks 1 and 2 can be done by a customer or a reseller. If you're a customer, contact your reseller if you prefer them to handle these tasks. Task 3 is done by the customer's internal admin for Business Central.
 
-1. Purchase a Copilot message pack subscription using the Microsoft 365 admin center (customer) or Partner Center (reseller).
+1. Purchase a Copilot Studio message pack subscription using the Microsoft 365 admin center (customer) or Partner Center (reseller).
 
    Learn more in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) or [Manage self-service purchases and trials (for admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-1. Assign prepaid capacity to the Power Platform environment using the Power Platform admin center (customer or reseller).
+1. Assign part or all of the Copilot Studio message pack as prepaid capacity to the Power Platform environment through the Power Platform admin center (for customers or resellers)
 
    Learn more in [Manage Capacity](/power-platform/admin/manage-copilot-studio-messages-capacity?tabs=new#manage-capacity).
 
