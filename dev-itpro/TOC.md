@@ -1058,6 +1058,7 @@
 #### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 #### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
+#### [Mock outbound HttpClient web service calls during testing](developer/devenv-httpclient-mock-outbound-calls.md)
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
