@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 02/20/2025
+ms.date: 03/31/2025
 ---
 
 # Moving tables and fields between extensions
@@ -38,17 +38,17 @@ If a source extension with a move is installed, but no destination extension tak
 
 Both the full table and the individual fields can be moved both up and down the dependency chain.
 
-A move can be a breaking change or a nonbreaking change. If a table is moved to one of its own dependencies (also known as moving a table down) and the `PropagateDependency` property is set in the manifest, the move isn't a breaking change and this kind of change can be done without preparation in one stage. This means that in one release, the `ObsoleteStage` property can be set to `Moved`.
+- A move can be a breaking change or a nonbreaking change. If a table is moved to one of its own dependencies (also known as moving a table down) and the `PropagateDependency` property is set in the manifest, the move isn't a breaking change and this kind of change can be done without preparation in one stage. This means that in one release, the `ObsoleteStage` property can be set to `Moved`.
 
-In other cases where a move can break any of the dependent extensions, the move of a table must be staged, which means that the `ObsoleteStage` property must be set to `PendingMoved` in the first version and can be set to `Moved` in a later version.
+- If a move can break any of the dependent extensions, the move of a table must be staged, which means that the `ObsoleteStage` property must be set to `PendingMoved` in the first version and can be set to `Moved` in a later version.
 
-A move is possible if the source (current owner) allows the move. It can be allowed by setting the `ObsoleteStage` property on the table to `Moved` and by setting the `MovedTo` property to the app ID of the destination extension.
+- A move is possible if the source (current owner) allows the move. It can be allowed by setting the `ObsoleteStage` property on the table to `Moved` and by setting the `MovedTo` property to the app ID of the destination extension.
 
-If a table is set to `Moved` that table isn't accessible anymore. The table data is preserved until the new destination takes over the table.
+- If a table is set to `Moved` that table isn't accessible anymore. The table data is preserved until the new destination takes over the table.
 
-Additive changes can be applied to a table during a move, but any destructive change isn't allowed.
+- Additive changes can be applied to a table during a move, but any destructive change isn't allowed.
 
-When moving a table, the latest published version of the current app must allow the move. Otherwise, this is considered a hostile takeover and sync of the destination app fails.
+- When moving a table, the latest published version of the current app must allow the move. Otherwise, this is considered a hostile takeover and sync of the destination app fails.
 
 > [!NOTE]
 > The Name and ID of tables can't be changed during a move.
