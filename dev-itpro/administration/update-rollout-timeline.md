@@ -85,11 +85,11 @@ The target version and date for an environment's next update can be changed in t
 
 ## <a name="postponed"></a>Postponed updates
 
-In critical circumstances, Microsoft can decide to postpone the rollout of the updates, such as if a critical issue is discovered in the upcoming major version. While Microsoft is working on addressing the issue, the updates will be postponed. For environments that have an update scheduled to the version for which updates are postponed, [notification recipients](tenant-admin-center-notifications.md) will receive an email notification and you'll see the notification displayed in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
+In critical circumstances, Microsoft might postpone the rollout of updates, for example, if a critical issue is discovered in an upcoming major version. While Microsoft addresses the issue, the updates are postponed. For environments scheduled for postponed update, [notification recipients](tenant-admin-center-notifications.md) receive an email notification, and the notification is displayed in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
-If we don't know the nature of the issue and the solution in advance, we can't predict when the updates will resume again. As a result, the email and the notification in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] won't contain the information about the expected resume date. In these cases, Microsoft actively works on resuming updates as a matter of highest priority once the issue is addressed. For environments that have an update scheduled to the version for which updates are postponed, [notification recipients](tenant-admin-center-notifications.md) receive another email notification when updates resume.
+If the nature of the issue and the solution aren't known in advance, it's impossible to predict when updates resume. As a result, the email and the notification in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] don't include information about the expected resume date. In these cases, Microsoft prioritizes resuming updates as soon as the issue is resolved. For environments that have an update scheduled to the version for which updates are postponed, [notification recipients](tenant-admin-center-notifications.md) receive another email notification when updates resume. For environments scheduled for postponed update, [notification recipients](tenant-admin-center-notifications.md) get another email when updates resume.  
 
-If it happens that you schedule the update of an environment for a date when the updates to the selected target version are postponed, the environment won't be updated. [Notification recipients](tenant-admin-center-notifications.md) will receive an email notification informing them that the scheduled update did not run and the update will automatically be rescheduled for another attempt seven days later. You can reschedule the update to a different date or target version, or you can wait until you receive an email notification that the updates resumed.
+If you schedule an environment update for a date when updates to the selected target version are postponed, the environment isn't updated. [Notification recipients](tenant-admin-center-notifications.md) get an email notification that the scheduled update didn't run. The update is automatically rescheduled for another attempt seven days later. You can reschedule the update to a different date or target version, or wait until you get an email notification that the updates resume.
 
 ## Prepare, test, and learn before a major update
 
@@ -114,9 +114,9 @@ Learn more in [Prepare for major updates with preview environments](preview-envi
 
 ### Prepare for major updates just before the production environment is updated
 
-As soon as you're notified that the new major update is available, you can test the new version with a copy of your current production data. Copy the production environment to a sandbox environment and schedule the update for the sandbox environment. To start the update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**.
+When you're notified that a new major update is available, test the new version using a copy of your current production data. Copy the production environment to a sandbox environment, and schedule the update for the sandbox environment. To start the update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**.  
 
-Microsoft monitors each update of an environment. If we detect any errors during the update, [notification recipients](tenant-admin-center-notifications.md) receive an email notification that describes the detected issues.  
+Microsoft monitors each update of an environment. If we detect any errors during the update, [notification recipients](tenant-admin-center-notifications.md) get an email that describes the detected issues.  
 
 ## Service updates
 
