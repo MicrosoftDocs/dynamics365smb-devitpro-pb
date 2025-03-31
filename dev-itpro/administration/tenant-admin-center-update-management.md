@@ -5,16 +5,16 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 08/26/2024
+ms.date: 03/31/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
 # Managing updates in the Business Central admin center
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments follow a set update schedule to deliver new functionality, improvements, and bug fixes to environments. There are two major update cycles a year, starting every April and October, with minor updates released in every other month. Learn more in [Major Updates and Minor Updates](update-rollout-timeline.md). You can always refer to the [release plan](/dynamics365/release-plans/) for an overview of new and upcoming functionality. To learn about new functionality, bug fixes, and improvements shipped in recent versions, see [What's new or changed](../whatsnew/overview.md).
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments follow a set update schedule to deliver new functionality, improvements, and bug fixes. There are two major update cycles each year, starting in April and October, with minor updates in other months. Learn more in [Major Updates and Minor Updates](update-rollout-timeline.md). Refer to the [release plan](/dynamics365/release-plans/) for an overview of new and upcoming functionality. To learn about new functionality, bug fixes, and improvements in recent versions, see [What's new or changed](../whatsnew/overview.md).
 
-Microsoft manages updates for the application and platform. As an internal administrator or as a partner, you use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify the timing of updates for each environment and who receives [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. Learn more in [Update Cycles](update-rollout-timeline.md).  
+Microsoft manages updates for the application and platform. As an internal admin or partner, use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify the timing of updates for each environment and identify who receives [notifications when an update is available](#notify). Prepare your solution and users by creating preview environments to get familiar with new product functionality. Learn more in [Update cycles](update-rollout-timeline.md).  
 
 ## Set the update window for each environment
 
@@ -30,62 +30,62 @@ This window helps ensure updates are applied outside of the normal business hour
 
 To change the update window for an environment:
 
-1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
-2. Choose the **Update Settings** action, and then choose the **Set update window** action.
+1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select the **Name** of the relevant environment to open the environment details.
+2. Select the **Update Settings** action, and then select the **Set update window** action.
 3. In the **Set update window** pane, specify the time zone, start time, and end time, for the update window for the environment. The update window must be a minimum of six hours.
-4. Choose **Save**.
+4. Select **Save**.
 
 This timeslot now becomes the default window when updates are applied to this environment.
 
 ## <a name="schedule"></a>Schedule an update
 
-Administrators can schedule environment updates to any version higher than the current environment version within the environment's current and next major version from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], regardless of whether the chosen version has been made available already. 
+Admins can schedule environment updates to any version higher than the current environment version within the environment's current or next major version from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], even if the chosen version isn't available yet.  
 
 [!INCLUDE [admin-set-update-date](../includes/admin-set-update-date.md)]
 
-When the scheduled update date arrives, the update runs automatically within the update window that you specified for this environment. All users are from this environment, and all attempts to sign in during the update are blocked with the message `Service is under maintenance`.  
+When the scheduled update date arrives, the update runs automatically within the update window you specify for this environment. During the update, all users and sign-in attempts to the environment are blocked with the message `Service is under maintenance`.
 
 > [!IMPORTANT]
-> The update duration differs depending on the environment. We strongly recommend scheduling the update for a date when it would be acceptable for the environment to be inaccessible until the end of its update window.
+> The update duration differs depending on the environment. We strongly recommend scheduling the update for a date when it's acceptable for the environment to be inaccessible until the update window ends.  
 
 ### Schedule an update to an available version
 
-Available versions are versions that have been released by Microsoft, and are ready for environments to be updated to. [Notification recipients](tenant-admin-center-notifications.md) receive an email notification whenever a new version becomes available.
+Available versions are versions released by Microsoft and ready for environments to update to. [Notification recipients](tenant-admin-center-notifications.md) get an email notification when a new version is available.  
 
 > [!IMPORTANT]
 > Choosing a target version for an environment's next update is expected to be available by the end of April 2025 for environments on version 25.5 or higher.
 
 To schedule an update:
 
-1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
-1. Under **Update Settings**, choose the **Modify** action for **Next Update**.
-1. In the **Schedule Environment Update** pane, choose an available target version and pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
+1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select the **Name** of the relevant environment to open the environment details.
+1. Under **Update Settings**, select the **Modify** action for **Next Update**.
+1. In the **Schedule Environment Update** pane, select an available target version and pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
 
     > [!NOTE]
-    > When you select a current date for your update, but the update window defined for this environment has already passed, the update will start within that time window, but on the day after the one that you defined for your environment.
+    > If you select a current date for your update, and the update window for the environment has already passed, the update starts during the next day's update window.
     >
-    > For example, if you're changing the **Scheduled update date** to the current date at 6 PM, and your update window is set to 1 AM - 7 AM, the update will not start immediately, but after 1 AM on the next day.
+    > For example, if you change the **Scheduled update date** to the current date at 6 PM, and the update window is set to 1 AM–7 AM, the update doesn't start immediately but starts after 1 AM the next day.
     >
-    > To start an update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and lets large updates run for longer than 24 hours if necessary. Updates running in this mode aren't automatically canceled when the update window ends. Using this setting for environments that need to be available for users by a certain time isn't recommended.
+    > To start an update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets the update start immediately and allows large updates to run for longer than 24 hours if needed. Updates running in this mode aren't automatically canceled when the update window ends. Avoid using this setting for environments that must be available for users by a specific time.  
 
-1. Choose **Schedule Update**.
+1. Select **Schedule Update**.
 
 > [!NOTE]
-> The chosen date for a target version is preserved for that version even if the target version and date for an environment's next update are changed later. If when an updates succeeds, the next update scheduled by Microsoft is for a target version for which a date was selected previously, this date will be when the next update runs rather than the default seven days after completion of the previous update.
+> <!--The chosen date for a target version is preserved for that version even if the target version and date for an environment's next update are changed later. If when an updates succeeds, the next update scheduled by Microsoft is for a target version for which a date was selected previously, this date will be when the next update runs rather than the default seven days after completion of the previous update.--> The chosen date for a target version remains the same even if the target version and date for an environment's next update change later. If an update succeeds and the next update scheduled by Microsoft is for a target version with a previously selected date, that date is used for the next update instead of the default seven days after the previous update finishes.  
 
 ### Schedule an update to a planned version
 
-Planned versions are versions that have not yet been released by Microsoft. Administrators can choose planned versions within the current and next major version of the environment as next update. This way, no updates will be scheduled on the environment by Microsoft until the chosen planned version becomes available. Within a few days after the chosen version becomes available, the update will be scheduled for a date at least seven days later automatically. [Notification recipients](tenant-admin-center-notifications.md) receive an email notification whenever a new version becomes available, and another when the update has been scheduled for the environment. Administrators can still change the date for the update after it has been scheduled by following instructions above, under **Schedule an update to an available version**.
+Planned versions are versions that aren't released by Microsoft yet. Administrators can select planned versions within the current and next major version of the environment as the next update. This way, Microsoft doesn't schedule updates on the environment until the chosen planned version is available. A few days after the chosen version is available, the update is scheduled for a date at least seven days later automatically. [Notification recipients](tenant-admin-center-notifications.md) receive an email notification when a new version is available and another when the update is scheduled for the environment. Administrators can change the update date after it's scheduled by following the instructions under **Schedule an update to an available version**.
 
 To schedule an update to a planned version:
 
-1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
-1. Under **Update Settings**, choose the **Modify** action for **Next Update**.
-1. In the **Schedule Environment Update** pane, choose planned target version. For each planned version, the month in which the version is expected to become available is indicated.
-1. Choose **Schedule Update**.
+1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select the **Name** of the relevant environment to open the environment details.
+1. Under **Update Settings**, select the **Modify** action for **Next Update**.
+1. In the **Schedule Environment Update** pane, select the planned target version. Each planned version indicates the month when the version is expected to be available.
+1. Select **Schedule Update**.
 
 > [!NOTE]  
-> Only versions that are planned to be released during the [update period](update-rollout-timeline.md#update-period) for the environment's current major version can be selected. For example, it is not possible to select planned version 26.5 for an environment on version 25.x as version 26.5 is planned to be released in September 2025 while the update period for 25.x ends in August 2025.
+> Only versions planned for release during the [update period](update-rollout-timeline.md#update-period) of the environment's current major version can be selected. For example, you can't select planned version 26.5 for an environment on version 25.x, because version 26.5 is planned for release in September 2025 and the update period for 25.x ends in August 2025.
 
 ## <a name="notify"></a>Get notified of updates
 
@@ -100,7 +100,7 @@ Sometimes an environment can't get the new update. For example, a per-tenant ext
 
 [!INCLUDE [admin-update-pte](../includes/admin-update-pte.md)]
 
-Learn more in [Failed updates and rescheduling](update-rollout-timeline.md#failed-updates-and-rescheduling).  
+Learn more in [Completed updates](update-rollout-timeline.md#completed-updates).  
 
 ## Related information
 

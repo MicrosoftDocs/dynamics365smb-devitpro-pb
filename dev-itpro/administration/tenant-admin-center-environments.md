@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 03/19/2025
+ms.date: 03/31/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -28,7 +28,7 @@ In the environments list, you can view more details by choosing the link in the 
 
 ### Linked Power Platform environment
 
-A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can be linked to a Power Platform environment of the same type (production or sandbox) in the same Azure Geo. Setting up a link to a Power Platform environment lets the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherit selected settings from the Power Platform environment. It also provides a default target environment when setting up features that integrate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Power Platform and other Dynamics 365 products. Links between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments and Power Platform environments are exclusive; it isn't possible to simultaneously link multiple [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments to a single Power Platform environment or vice versa. Only internal administrators that have permissions allowing them to update the properties of the targeted Power Platform environment can link a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to it. Delegated administrators cannot link environments.
+A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment can be linked to a Power Platform environment of the same type (production or sandbox) in the same Azure Geo. Setting up a link to a Power Platform environment lets the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment inherit selected settings from the Power Platform environment. It also provides a default target environment when setting up features that integrate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Power Platform and other Dynamics 365 products. Links between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments and Power Platform environments are exclusive; it isn't possible to simultaneously link multiple [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments to a single Power Platform environment or vice versa. Only internal administrators that have permissions allowing them to update the properties of the targeted Power Platform environment can link a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to it. Delegated administrators can't link environments.
 
 > [!NOTE]
 > Currently, the only setting administered in the Power Platform Admin Center that can be inherited on the linked [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is [Customer Lockbox](../security/security-online.md#customer-lockbox).
@@ -61,7 +61,7 @@ You can create environments of different types. Choose the type of environment b
 
 ## Create a new environment
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, you've been using a production environment for training purposes, and you've decided to start using [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to run the business. You can, in this case, delete the original production environment and then create a new production environment.  
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, you've been using a production environment for training purposes, and you decide to start using [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to run the business. You can, in this case, delete the original production environment and then create a new production environment.  
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
@@ -74,7 +74,7 @@ You can create new environments that are either production environments or sandb
 
 1. In the navigation pane on the left side of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, then select the **New** action on the action ribbon.
 1. In the **Create Environment** pane, specify a name for the new environment.
-1. In the **Environment Type** list, choose **Production** or **Sandbox**.
+1. In the **Environment Type** list, select **Production** or **Sandbox**.
 1. In the **Application family** field, specify the type of solution that this environment is based on if it isn't [!INCLUDE [prod_short](../includes/prod_short.md)].  
 1. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
 
@@ -83,19 +83,19 @@ You can create new environments that are either production environments or sandb
 
 1. In the **Version** list, specify the relevant application version for the new environment.
 
-   For sandbox environments, [preview versions](preview-environments.md) may be available. Preview versions provide early access to new functionality, but environments on these versions are not updated once the version becomes available and will be deleted automatically when the preview ends.
+   For sandbox environments, [preview versions](preview-environments.md) might be available. Preview versions provide early access to new functionality, but environments on these versions aren't updated once the version becomes available and are deleted automatically when the preview ends.  
 
    > [!IMPORTANT]
-   > Environments can be created on any available version. For major version 25.x, not all minor versions may be available for every country for the entire 25.x [update period](update-rollout-timeline.md#update-period). At least one minor version of 25.x will be available during the this period.
- 
-1. Choose **Create**.  
+   > You can create environments on any available version. For major version 25.x, not all minor versions might be available for every country during the entire 25.x [update period](update-rollout-timeline.md#update-period). At least one minor version of 25.x is available during this period.  
+
+1. Select **Create**.  
 
    The new environment isn't accessible until the **State** becomes **Active**.
 
 > [!NOTE]
-> The new environment has a default update window that guarantees future updates won't run between 8:00 PM and 6:00 AM local time for the environment country. This update window can be changed after the environment has been created. Learn more in [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).
+> The new environment has a default update window that guarantees future updates don't run between 8:00 PM and 6:00 AM local time for the environment country. This update window can be changed after the environment has been created. Learn more in [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).
 
-To delete an environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then choose **Delete** on the action ribbon.
+To delete an environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then select **Delete** on the action ribbon.
 
 ## <a name="opslog"></a>Log of administrative operations
 
@@ -120,7 +120,7 @@ Currently, the log includes the following operations:
 |Environment app hotfix|A hotfix was applied to the app by using the App Management API.||[See...](appmanagement/app-management-api.md#schedule-environment-hotfix)||
 |Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.||[See...](administration-center-api_app_management.md#install-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)|
 |Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.||[See...](administration-center-api_app_management.md#uninstall-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)|
-|Environment app update |App was updated either by the Admin Center or API update endpoint.|[See...](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)|[See...](administration-center-api_app_management.md#update-an-app)||
+|Environment app update |App was updated by the Admin Center or API update endpoint.|[See...](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)|[See...](administration-center-api_app_management.md#update-an-app)||
 
 ### Retention period
 

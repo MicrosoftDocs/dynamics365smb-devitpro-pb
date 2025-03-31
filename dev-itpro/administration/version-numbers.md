@@ -4,16 +4,16 @@ description: Learn how to read version numbers in Business Central and how to un
 author: jswymer
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/26/2024
+ms.date: 03/31/2025
 ms.custom: bap-template
 ms.reviewer: jswymer
 ---
 
 # Version numbers in Business Central
 
-[!INCLUDE [prod_short](../developer/includes/prod_short.md)] online and on-premises consists of different components that must work together. If you are an end-user, this doesn't matter in the course of your normal work day, however; if you are an administrator, knowing the version numbers is important for troubleshooting, development, and on-premises upgrade scenarios.  
+[!INCLUDE [prod_short](../developer/includes/prod_short.md)] online and on-premises consists of different components that must work together. If you're an end-user, version numbers don't matter in the course of your normal work day, however; if you're an administrator, knowing the version numbers is important for troubleshooting, development, and on-premises upgrade scenarios.  
 
-You can use the information about which version the tenant is on to help you troubleshoot an issue that a user has reported, for example. This information is listed in the **Troubleshooting** section of the **Help and Support** page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] in the following format:
+You can use the information about which version the tenant is on to help you troubleshoot an issue that a user reported, for example. This information is listed in the **Troubleshooting** section of the **Help and Support** page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] in the following format:
 
 |Version  |Example      |Description                                 |
 |---------|-------------|--------------------------------------------|
@@ -23,7 +23,7 @@ You can use the information about which version the tenant is on to help you tro
 > [!NOTE]
 > In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], only the \<major>.\<minor> version number for the application is used to administer environment updates.
 
-The numbers are updated based on Microsoft's builds. In the default version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, platform and application have the same major version number but different build numbers. If you perform a technical upgrade of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, then platform and application will have different versions.  
+The numbers are updated based on Microsoft's builds. In the default version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, platform and application have the same major version number but different build numbers. If you perform a technical upgrade of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, then platform and application have different versions.  
 
 The following list describes the meaning of each of the numbers in a full version number:
 
