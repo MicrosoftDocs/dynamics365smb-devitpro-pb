@@ -2,7 +2,7 @@
 title: Interfaces in AL
 description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method.
 author: SusanneWindfeldPedersen
-ms.date: 09/30/2024
+ms.date: 03/30/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -154,9 +154,9 @@ page 50200 MyAddressPage
 
 ## Create List and Dictionary of an interface
 
-With [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)] you can create lists or dictionaries of interfaces.
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
-The [Dictionary](methods-auto/dictionary/dictionary-data-type.md) and [List](methods-auto/list/list-data-type.md) data types offer efficient lookup of key-value pairs and ordered collections, and allow managing collections of data dynamically.
+The [Dictionary](methods-auto/dictionary/dictionary-data-type.md) and [List](methods-auto/list/list-data-type.md) data types offer efficient lookup of key-value pairs and ordered collections, and allow managing collections of data dynamically. From runtime 15.0, you can create lists or dictionaries of interfaces.
 
 The following example illustrates how to create a [Dictionary](methods-auto/dictionary/dictionary-data-type.md) of interfaces:
 
