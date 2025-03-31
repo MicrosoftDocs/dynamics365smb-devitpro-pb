@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 03/31/2025
 ---
 
 # Business Central Admin Center API - Reschedule Updates
@@ -14,7 +14,8 @@ ms.date: 02/24/2023
 Allows for the management of scheduled updates such as rescheduling the update to a run on or after a specific date within a provided range.
 
 ## Flexible Update Management
-The endpoints documented below are shipping when Flexible Update Management becomes generally available, and are only applicable to environments on version 25.5 or higher. Prepare any integrations using the Admin Center API to use these endpoints to use the new scheduling features once Flexible Update Management features are available on your environments.
+
+The endpoints documented below ship when flexible update management becomes generally available and apply only to environments on version 25.5 or higher. Prepare any integrations using the Admin Center API to use these endpoints to use the new scheduling features once Flexible Update Management features are available on your environments.
 
 ### Get Updates
 
