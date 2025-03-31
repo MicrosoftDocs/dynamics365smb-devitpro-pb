@@ -219,11 +219,6 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - **Copilot & AI capabilities** page renamed to **Copilot & agent capabilities**
 - Chat with Copilot can ask about specific record fields.
 
-<!--
-## Bug fixes
-
-For a list of bug fixes included in this update, refer to [Bug fixes](26-0-bug-fixes.md).-->
-
 ## On-premises download packages
 
 Download on-premises files from Microsoft Support at Update 26.0 for Business Central 2025 release wave 1 (link not yet available)
