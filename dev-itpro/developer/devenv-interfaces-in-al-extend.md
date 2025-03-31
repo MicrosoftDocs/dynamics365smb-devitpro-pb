@@ -13,7 +13,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
-An interface in AL is a syntactical contract that can be implemented by a nonabstract method. It defines the capabilities an object must have while allowing actual implementations to differ, as long as they comply with the defined interface. For more information, refer to [Interfaces in AL](devenv-interfaces-in-al.md).
+An interface in AL is a syntactical contract that can be implemented by a nonabstract method. It defines the capabilities an object must have while allowing actual implementations to differ, as long as they comply with the defined interface. Learn more in [Interfaces in AL](devenv-interfaces-in-al.md).
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, extensible interfaces in AL are supported. Extending interfaces lets you create flexible and adaptable extensions. You can add new functionality without altering the core system, which can save time and resources and reduce the risk of introducing errors into the existing codebase.
 
