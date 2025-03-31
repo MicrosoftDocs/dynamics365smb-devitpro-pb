@@ -21,6 +21,6 @@ Learn more in [Analyzing server certificate validation errors with telemetry](..
 
 ## Related information
 
-[HttpClient data type](httpclient-data-type.md)  
+[HttpClient data type](methods-auto/httpclient/httpclient-data-type.md)  
 [UseServerCertificateValidation](properties/devenv-useservercertificatevalidation-property.md)  
 [Enabling upcoming features ahead of time](/dynamics365/business-central/dev-itpro/administration/feature-management)  
