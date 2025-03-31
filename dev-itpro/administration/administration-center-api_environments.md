@@ -70,6 +70,41 @@ Returns a wrapped array of environments.
 }
 ```
 
+#### Flexible Update Management response
+
+A future version of the API will return the following response to include properties relevant to Flexible Update Management.
+
+```
+{
+  "value": 
+  [
+    {
+      "friendlyName": string, // Display name of the environment
+      "type": string, // Environment type (for example, "Sandbox", "Production")
+      "name": string, // Environment name, unique within an application family
+      "countryCode": string, // Country/Region that the environment is deployed in
+      "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
+      "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
+      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
+      "webClientLoginUrl": string, // Url to use to log into the environment,
+      "webServiceUrl": string, // Url to use to access the environment's service API
+      "locationName": string, // The Azure location where the environment's data is stored
+      "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
+      "appInsightsKey": string, // The environment's key for Azure Application Insights
+      "SoftDeletedOn": datetime, // The time at which the environment was soft deleted
+      "HardDeletePendingOn": datetime, // The time at which the environment will be permanently deleted
+      "DeleteReason": string, // The reason why the environment was deleted
+      "AppSourceAppsUpdateCadence": string, // The cadence at which installed AppSource Apps are automatically updated with environment updates
+      "versionDetails": {
+        "version": string, // The current version number of the environment, e.g. 26.0
+        "gracePeriodStartDate": datetime, // The date on which the grace period for the current major version of the environment starts
+        "enforcedUpdatePeriodStartDate": datetime // The date on which the enforced update period for the current major version of the environment starts
+      }
+    }
+  ]
+}
+```
+
 ### Expected Error Codes
 
 `applicationTypeDoesNotExist` - the provided value for the application family wasn't found
@@ -110,6 +145,41 @@ Returns a single environment if exists.
   "HardDeletePendingOn": datetime // The time at which the environment will be permanently deleted
   "DeleteReason": string // The reason why the environment was deleted
   "AppSourceAppsUpdateCadence": string // The cadence at which installed AppSource Apps are automatically updated with environment updates
+}
+```
+
+#### Flexible Update Management response
+
+A future version of the API will return the following response to include properties relevant to Flexible Update Management.
+
+```
+{
+  "value": 
+  [
+    {
+      "friendlyName": string, // Display name of the environment
+      "type": string, // Environment type (for example, "Sandbox", "Production")
+      "name": string, // Environment name, unique within an application family
+      "countryCode": string, // Country/Region that the environment is deployed in
+      "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
+      "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
+      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
+      "webClientLoginUrl": string, // Url to use to log into the environment,
+      "webServiceUrl": string, // Url to use to access the environment's service API
+      "locationName": string, // The Azure location where the environment's data is stored
+      "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
+      "appInsightsKey": string, // The environment's key for Azure Application Insights
+      "SoftDeletedOn": datetime, // The time at which the environment was soft deleted
+      "HardDeletePendingOn": datetime, // The time at which the environment will be permanently deleted
+      "DeleteReason": string, // The reason why the environment was deleted
+      "AppSourceAppsUpdateCadence": string, // The cadence at which installed AppSource Apps are automatically updated with environment updates
+      "versionDetails": {
+        "version": string, // The current version number of the environment, e.g. 26.0
+        "gracePeriodStartDate": datetime, // The date on which the grace period for the current major version of the environment starts
+        "enforcedUpdatePeriodStartDate": datetime // The date on which the enforced update period for the current major version of the environment starts
+      }
+    }
+  ]
 }
 ```
 
