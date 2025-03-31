@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: sodragon
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 02/21/2025
+ms.date: 03/31/2025
 ---
 
 # Development process for moving tables and fields between extensions
@@ -39,19 +39,6 @@ It's possible to move a table or a field to an existing or to a new dependency. 
 We assume an extension `Dependent` with the table `MyTable` and an extension, which is a dependency named `Dependency`. We also assume that they both start with a version of '1.0.0.0'. Graphically, the extension relationship looks like this:
 
 :::image type="content" source="media/move-table-fields-dependency-1.png" alt-text="Moving a table or field down":::
-
-<!--
-```
-   ┌───────────────────────┐
-   │  Extension Dependent  │
-   │      (MyTable)        │
-   └───────┬───────────────┘
-           │ depends on
-   ┌───────▼────────┐
-   │  Dependency    │
-   └────────────────┘
-```
--->
 
 In the next sections, we'll go through how to move `MyTable` from `Dependent` to `Dependency`.
 
@@ -140,19 +127,6 @@ It's possible to move a table or a field to an existing or new dependent extensi
 We assume an extension `Dependency` with the table `MyTable` and an extension which is a dependent named `Dependent`. We also assume that they both start with a version of '1.0.0.0'. Graphically, the extension relationship looks like this:
 
 :::image type="content" source="media/move-table-fields-dependency-2.png" alt-text="move table or field up":::
-
-<!--
-```
-   ┌───────────────────────┐
-   │  Extension Dependent  │
-   └───────┬───────────────┘
-           │ depends on
-   ┌───────▼────────┐
-   │   Dependency   │
-   │    (MyTable)   │ 
-   └────────────────┘
-```
--->
 
 In the next sections, we'll go through how to move `MyTable` from `Dependency` to `Dependent`.
 
@@ -285,24 +259,6 @@ For the example above, the following steps are required:
 4. In the next version of `Destination extension`, add the dependency to the `Common Dependency` extension.
 
 :::image type="content" source="media/move-tables-fields-dependency-3.png" alt-text="handling dependent objects":::
-
-<!--
-```
-         ┌─────────────────────────┐         ┌─────────────────────────┐
-         │      Source             │         │     Destination         │
-         │    Extension            │         │     Extension           │
-         │  (MyTable moved)        │         │   (Takes over MyTable)  │
-         └───────┬─────────────────┘         └──────────┬──────────────┘
-                 │                                      │
-                 └───────────────┬──────────────────────┘
-                                 │
-                                 ▼
-                     ┌─────────────────────────┐
-                     │   Common Dependency     │
-                     │    (Contains MyEnum)    │
-                     └─────────────────────────┘
-```
--->
 
 ## Handling the definitions of moved out tables or fields
 
