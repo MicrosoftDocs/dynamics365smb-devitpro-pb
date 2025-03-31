@@ -27,6 +27,11 @@ Specifies the behavior when encountering outgoing http requests in test executio
 |**AllowAllOutboundRequests**|runtime version 15.0|All outbound HTTP requests issued during the test execution are allowed.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## Related information  
+
+## Remarks
+
+With this property, you can control how outbound HTTP requests are treated during test execution. By default, all outbound requests are allowed, but you can further restrict this behavior to only allow ones issued from a handler, or to block all unhandled outbound requests. Learn more in [Mock outbound HttpClient web service calls during testing](../devenv-httpclient-mock-outbound-calls.md).
+
+## Related information
 [Getting started with AL](../devenv-get-started.md)  
 [Developing extensions](../devenv-dev-overview.md)  
