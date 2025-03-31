@@ -1,6 +1,6 @@
 ---
 title: Extend interfaces in AL 
-description: Learn how to extend interfaces in AL to create flexible and adaptable extensions, including syntax and operator usage.
+description: Learn how to extend interfaces in AL to create flexible and adaptable extensions.
 author: SusanneWindfeldPedersen
 ms.date: 09/27/2024
 ms.topic: conceptual
