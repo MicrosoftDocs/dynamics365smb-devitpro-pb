@@ -74,7 +74,7 @@ When an update fails or is canceled, the environment restores to the original ap
 > [!IMPORTANT]
 > If a failed update was scheduled by Microsoft services, not an admin, and the target version isn't the latest available, the next update might be rescheduled to use the latest available version. Updates scheduled by administrators aren't rescheduled unless the update period ends for the selected target version.
 
-If Microsoft can't do the update on the selected date, [notification recipients](tenant-admin-center-notifications.md) are notified by email that the environment update is rescheduled for seven days later. Administrators can change the date in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to any other allowed date, including the current date.
+If Microsoft can't do the update on the selected date, [notification recipients](tenant-admin-center-notifications.md) get an email that the environment update is rescheduled for seven days later. Administrators can change the date in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to any other allowed date, including the current date.
 
 When an update succeeds, the system schedules the next update to target the latest available version and occur at least seven days later. If the successful update targeted the latest available version, the system schedules the next update to target the version planned to become available next and occur automatically on a date when it becomes available. 
 
