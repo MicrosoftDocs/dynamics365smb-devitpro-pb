@@ -5,7 +5,7 @@ author: KennieNP
 ms.author: kepontop
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 02/21/2023
+ms.date: 03/31/2025
 ms.custom: bap-template
 
 ---
@@ -139,7 +139,7 @@ Occurs when the environment was scheduled to be updated, but it wasn't possible 
 
 ## Environment update postponed
 
-Occurs when updates to the version selected as the environment's next update have been postponed.
+Occurs when updates to the version selected as the environment's next update are postponed.
 
 ### General dimensions
 
@@ -161,10 +161,9 @@ Occurs when updates to the version selected as the environment's next update hav
 |eventId|**LC0103**|
 |sourceVersion|[!INCLUDE[sourceVersion](../includes/include-telemetry-dimension-update-source-version.md)]|
 
-
 ## Environment update resumed
 
-Occurs when updates to the version selected as next update for an environment have resumed.
+Occurs when updates to the version selected as next update for an environment resume.
 
 ### General dimensions
 |Dimension|Description or value|
@@ -189,7 +188,6 @@ Occurs when updates to the version selected as next update for an environment ha
 |updatePeriodStartDateUtc|[!INCLUDE[updatePeriodStartDateUtc](../includes/include-telemetry-dimension-update-period-start-date.md)]|
 |updateWindowEndTimeUtc|[!INCLUDE[updateWindowEndDateUtc](../includes/include-telemetry-dimension-update-window-end-date.md)]|
 |updateWindowStartTimeUtc|[!INCLUDE[updateWindowStartDateUtc](../includes/include-telemetry-dimension-update-window-start-date.md)]|
-
 
 ## Environment update started
 
@@ -255,7 +253,6 @@ Occurs when the environment was successfully updated.
 |updatePeriodStartDateUtc|[!INCLUDE[updatePeriodStartDateUtc](../includes/include-telemetry-dimension-update-period-start-date.md)]|
 |updateWindowEndTimeUtc|[!INCLUDE[updateWindowEndDateUtc](../includes/include-telemetry-dimension-update-window-end-date.md)]|
 |updateWindowStartTimeUtc|[!INCLUDE[updateWindowStartDateUtc](../includes/include-telemetry-dimension-update-window-start-date.md)]|
-
 
 ## Environment failed to update
 
