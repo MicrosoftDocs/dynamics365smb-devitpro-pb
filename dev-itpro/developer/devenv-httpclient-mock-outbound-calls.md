@@ -42,7 +42,6 @@ The property has the following possible values:
 In the following example we have a procedure `GetDocumentContent` in the codeunit `DocumentService` that makes an external web service call. To verify that the `GetDocumentContent` works as expected, we can create a test in our `DocumentServiceTest` codeunit that makes an invocation to the `GetDocumentContents` and checks the content. Finally, we define an `HttpClientHandler` that simulates the desired `200 SUCCESS` response and attach it to the previously defined test. When the test is executed the handler will intercept the outbound request and mock the response.
 
 ```al
-
 codeunit 1 DocumentService
 {
     procedure GetDocumentContent(DocumentId: Text): Text
@@ -103,10 +102,9 @@ codeunit 2 DocumentServiceTest
 
 ### Security limitations
 
-The request object, which is received by the handler contains limited information for security reasons. It excludes headers, content, and cookies to ensure that sensitive information isn't exposed during testing. The request object includes path, query parameters, and request type, such as `GET` and `POST`. Furthermore, if the URI of a request is set using a [SecretText](methods-auto/secrettext/secrettext-data-type.md), then neither the path nor the query parameters are available, to prevent leaking any secrets. You can filter for this case using the `HasSecretUri` property.
-The response object is subject to certain limitations as well, notably the inability to set cookies or specify redirection status codes (3**).
+The request object, which is received by the handler contains limited information for security reasons. It excludes headers, content, and cookies to ensure that sensitive information isn't exposed during testing. The request object includes path, query parameters, and request type, such as `GET` and `POST`. Furthermore, if the URI of a request is set using a [SecretText](methods-auto/secrettext/secrettext-data-type.md), then neither the path nor the query parameters are available, to prevent leaking any secrets. You can filter for this case using the `HasSecretUri` property. The response object is subject to certain limitations as well, notably the inability to set cookies or specify redirection status codes (3**).
 
-The handler can decide to send the request to the external endpoint instead of mocking the response. This is useful in scenarios where the request has a secret URI or where certain parts of the response - such as authorization tokens - can't be mocked.
+The handler can decide to send the request to the external endpoint instead of mocking the response. This is useful in scenarios where the request has a secret URI or where certain parts of the response, such as authorization tokens, can't be mocked.
 
 ## Related information
 
