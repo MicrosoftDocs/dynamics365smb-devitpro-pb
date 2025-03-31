@@ -59,6 +59,8 @@ The following code shows the source and destination tables and how to move a tab
 
 ### Source extension
 
+The following code shows the source extension with the table that is moved to another extension.
+
 ```al
 table 50150 BaseTable50150
 {
@@ -84,6 +86,8 @@ table 50150 BaseTable50150
 ```
 
 ### Destination extension
+
+The following code shows the destination extension with the table that is moved from another extension.
 
 ```al
 table 50150 BaseTable50150
