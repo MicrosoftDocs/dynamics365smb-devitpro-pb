@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 08/26/2024
+ms.date: 03/31/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -71,7 +71,7 @@ To schedule an update:
 1. Select **Schedule Update**.
 
 > [!NOTE]
-> <!--The chosen date for a target version is preserved for that version even if the target version and date for an environment's next update are changed later. If when an updates succeeds, the next update scheduled by Microsoft is for a target version for which a date was selected previously, this date will be when the next update runs rather than the default seven days after completion of the previous update.--> The chosen date for a target version stays the same even if the target version and date for an environment's next update change later. If an update succeeds and the next update scheduled by Microsoft is for a target version with a previously selected date, that date is used for the next update instead of the default seven days after the previous update finishes.  
+> <!--The chosen date for a target version is preserved for that version even if the target version and date for an environment's next update are changed later. If when an updates succeeds, the next update scheduled by Microsoft is for a target version for which a date was selected previously, this date will be when the next update runs rather than the default seven days after completion of the previous update.--> The chosen date for a target version remains the same even if the target version and date for an environment's next update change later. If an update succeeds and the next update scheduled by Microsoft is for a target version with a previously selected date, that date is used for the next update instead of the default seven days after the previous update finishes.  
 
 ### Schedule an update to a planned version
 
