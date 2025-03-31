@@ -12,14 +12,44 @@ ms.custom:
 
 # Update 26.0 for Business Central 2025 release wave 1
 
-This article provides an overview of new and changed features, along with general information about update 26.0, the start of the 2025 release wave 1.
+This article provides an overview of the new and updated features and general information about update 26.0, which starts the 2025 release wave 1.
+
+## Highlights
+
+> [!TIP]
+> Watch video on YouTube: [Dynamics 365 Business Central 2025 Release Wave 1 Release Highlights](https://www.youtube.com/watch?v=D2KPQEbO40Q).
+
+### Sales Order Agent
+
+[!INCLUDE [online_only.md](../developer/includes/online_only.md)]
+
+Sales Order Agent is available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
+  
+The Sales Order Agent automates sales order processing from customer emails using AI. It identifies customers, clarifies details via email, checks item availability, creates quotes and orders, and generates PDF documents. All interactions are tracked in Business Central, keeping users informed and enabling involvement when necessary.
+
+Watch a short video on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
+
+Learn how to set up and use Sales Order agent in [Sales Order Agent overview](/dynamics365/business-central/sales-order-agent) or follow its release plan at [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
+
+### Autofill fields
+
+[!INCLUDE [online_only.md](../developer/includes/online_only.md)]
+
+Autofill with Copilot suggests values for editable fields on card and document pages based on your Business Central data, like frequently used values, recently used values, or AI-generated options. You can choose to keep or discard these suggestions. Learn more in [Autofill fields with Copilot](/dynamics365/business-central/autofill-fields-with-copilot).
+
+### Summarize records
+
+[!INCLUDE [online_only.md](../developer/includes/online_only.md)]
+
+Summarize with Copilot generates a concise summary of a record, such as a customer, item, or sales order, directly in the page's FactBox pane. Summaries are tailored to your role in Business Central, providing insight into data on the page and related pages and drawing attention to important information. Learn more in [Summarize records with Copilot](/dynamics365/business-central/summarize-with-copilot).
+
+### Sustainability Scope 3 value chain tracking
+
+Scope 3 value chain processing automation is embedded in standard ERP processes. This feature calculates the carbon dioxide equivalent for finished goods, giving you the figures you need to report indirect emissions data across your upstream and downstream value chain. Learm more in [Sustainability value chain overview](/dynamics365/business-central/value-chain-howto-overview).
 
 ## New features
 
 This table lists the features in public preview or general availability for version 26.0. For a comprehensive feature list and details, refer to [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central).
-
-> [!TIP]
-> Watch a video on YouTube about a few of the features: [Dynamics 365 Business Central 2025 Release Wave 1 Release Highlights](https://www.youtube.com/watch?v=D2KPQEbO40Q).
 
 <!-- Generate table:
 
@@ -55,7 +85,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 | Copilot and AI            | [Enhance purchase order line matching with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enhance-purchase-order-line-matching-copilot) |
 |                           | [Summarize with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-record-copilot) |
 |                           | [Autofill fields with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot) |
-|                           | [Use Sales Order Agent to automate sales order-taking](#sales-order-agent-in-more-countriesregions) |
+|                           | [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process) |
 | Country and regional      | [Post cash documents to projects in Czech localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/post-cash-documents-projects-czech-localization) |
 |                           | [Add more text in cash documents in Czech localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-more-text-cash-documents-czech-localization) |
 |                           | [Use Peppol PINT A-NZ format for e-documents in AU and NZ](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-peppol-a-nz-format-e-documents-australia-new-zealand) |
@@ -178,6 +208,17 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Feature: Optimize screen estate usage for web](https://go.microsoft.com/fwlink/?linkid=2304791)
 - [Feature Update: Convert the manufacturing flushing method 'Manual', so that it no longer requires picking.](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/omit-warehouse-pick-manual-flushing-methods)
 
+## Deprecated and removed features
+
+- [Deprecated or removed features in the platform](../upgrade/deprecated-features-platform.md#changes-in-2025-release-wave-1-version-260)
+- [Deprecated or removed in the base app](../upgrade/deprecated-features-w1.md#changes-in-2025-release-wave-1)
+- [Deleted objects](../upgrade/deleted-objects-25w1.md)
+
+## Other notable changes
+
+- **Copilot & AI capabilities** page renamed to **Copilot & agent capabilities**
+- Chat with Copilot can ask about specific record fields.
+
 ## On-premises download packages
 
 Download on-premises files from Microsoft Support at Update 26.0 for Business Central 2025 release wave 1 (link not yet available)
@@ -186,19 +227,9 @@ Download on-premises files from Microsoft Support at Update 26.0 for Business Ce
 
 New customers get Business Central version 26.0 automatically. With the 26.0 release, the [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly) feature is generally available for environments using version 25.5 or higher. This feature lets you reschedule the major update to any date within the 5-month update period, which ends on August 31, 2025, for version 26.0. The option to set the target version for an environment's next update in the admin center is available by the end of April 2025.  
 
-Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline##major-updates).
+Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
 
 ## Good to know
-
-### Sales Order Agent in more countries/regions
-
-Sales Order Agent is now available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
-  
-The Sales Order Agent automates capturing sales orders from customer emails. It uses AI to analyze requests, locate customers in the system, and engage in email conversations to clarify details. The agent checks item availability, generates sales quotes and orders, and formats them as PDFs with all necessary details ready to send to the customer. Each step of a customer engagement is available in Business Central, letting users stay in the loop and get involved when needed.
-
-Watch a short video in the Dynamics Business Central channel on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
-
-Learn how to set up and use Sales Order agent in [Sales Order Agent overview](/dynamics365/business-central/sales-order-agent) or follow its release plan at [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
 ### Business Central Launch Event
 
