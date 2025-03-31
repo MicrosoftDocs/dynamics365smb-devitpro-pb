@@ -85,7 +85,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 | Copilot and AI            | [Enhance purchase order line matching with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enhance-purchase-order-line-matching-copilot) |
 |                           | [Summarize with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-record-copilot) |
 |                           | [Autofill fields with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot) |
-|                           | [Use Sales Order Agent to automate sales order-taking](#sales-order-agent-in-more-countriesregions) |
+|                           | [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process) |
 | Country and regional      | [Post cash documents to projects in Czech localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/post-cash-documents-projects-czech-localization) |
 |                           | [Add more text in cash documents in Czech localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-more-text-cash-documents-czech-localization) |
 |                           | [Use Peppol PINT A-NZ format for e-documents in AU and NZ](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-peppol-a-nz-format-e-documents-australia-new-zealand) |
@@ -212,7 +212,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 - [Deprecated or removed features in the platform](../upgrade/deprecated-features-platform.md#changes-in-2025-release-wave-1-version-260)
 - [Deprecated or removed in the base app](../upgrade/deprecated-features-w1.md#changes-in-2025-release-wave-1)
-- [Deleted objects](../upgrade/deleted-objects-25w1)
+- [Deleted objects](../upgrade/deleted-objects-25w1.md)
 
 ## Other notable changes
 
@@ -227,7 +227,7 @@ Download on-premises files from Microsoft Support at Update 26.0 for Business Ce
 
 New customers get Business Central version 26.0 automatically. With the 26.0 release, the [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly) feature is generally available for environments using version 25.5 or higher. This feature lets you reschedule the major update to any date within the 5-month update period, which ends on August 31, 2025, for version 26.0. The option to set the target version for an environment's next update in the admin center is available by the end of April 2025.  
 
-Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline##major-updates).
+Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
 
 ## Good to know
 
