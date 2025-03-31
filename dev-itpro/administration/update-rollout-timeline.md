@@ -36,9 +36,9 @@ The update period starts when a new major version is generally available (GA), t
 
 The update period lasts for five calendar months, ending in early September for update periods that start in April, and in early March for update periods that start in October. Administrators can reschedule the update to any date within the update period from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. Learn more in [Rescheduling updates](tenant-admin-center-update-management.md).
 
-Scheduled update attempts that don't succeed are automatically rescheduled for seven days later, and administrators can reschedule them to any other date within the update period. Learn more in the [failed updates and rescheduling](#failed-updates-and-rescheduling) section.
+Scheduled update attempts that don't succeed are automatically rescheduled for seven days later, and administrators can reschedule them to any other date within the update period. Learn more in the [Completed updates](#completed-updates) section.
 
-When a new version is available as update on the environment, [Notification recipients](tenant-admin-center-notifications.md) receive an email notification and environments [enabled with telemetry](telemetry-enable-application-insights.md) receive a signal with the [LC0100 tag](telemetry-environment-lifecycle-trace.md#environment-update-available-for-scheduling).
+When a new version is available as update on the environment, [Notification recipients](tenant-admin-center-notifications.md) receive an email notification and environments [enabled with telemetry](telemetry-enable-application-insights.md) receive a signal with the [LC0100 tag](telemetry-environment-lifecycle-trace.md#environment-update-available).
 
 ### Grace period
 

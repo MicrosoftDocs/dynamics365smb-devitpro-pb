@@ -100,7 +100,7 @@ Sometimes an environment can't get the new update. For example, a per-tenant ext
 
 [!INCLUDE [admin-update-pte](../includes/admin-update-pte.md)]
 
-Learn more in [Failed updates and rescheduling](update-rollout-timeline.md#failed-updates-and-rescheduling).  
+Learn more in [Completed updates](update-rollout-timeline.md#completed-updates).  
 
 ## Related information
 
