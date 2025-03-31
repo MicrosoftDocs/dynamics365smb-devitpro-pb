@@ -71,7 +71,7 @@ To schedule an update:
 1. Choose **Schedule Update**.
 
 > [!NOTE]
-> The chosen date for a target version is preserved for that version even if the target version and date for an environment's next update are changed later. If when an updates succeeds, the next update scheduled by Microsoft is for a target version that has a chosen date that is in the future already, this chosen date will be when the next update runs rather than the default seven days after completion of the previous update.
+> The chosen date for a target version is preserved for that version even if the target version and date for an environment's next update are changed later. If when an updates succeeds, the next update scheduled by Microsoft is for a target version for which a date was selected previously, this date will be when the next update runs rather than the default seven days after completion of the previous update.
 
 ### Schedule an update to a planned version
 
