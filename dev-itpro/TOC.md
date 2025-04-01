@@ -172,7 +172,7 @@
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)
 ### [Manage updates](administration/tenant-admin-center-update-management.md)
 ### [Manage sessions](administration/tenant-admin-center-manage-sessions.md)
-### [Manage consumption-based billing preview)](administration/tenant-admin-center-manage-consumption-billing.md)
+### [Manage consumption-based billing](administration/tenant-admin-center-manage-consumption-billing.md)
 ### [Copy a production or sandbox environment](administration/tenant-admin-center-environments-copy.md)
 ### [Rename environments](administration/tenant-admin-center-environments-rename.md)
 ### [Export databases](administration/tenant-admin-center-database-export.md)
