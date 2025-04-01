@@ -4,9 +4,9 @@ description: Configure and modify settings in the Setup or Installed Business Ce
 author: jswymer
 ms.topic: conceptual
 ms.service: dynamics-365-op
-ms.date: 11/06/2024
+ms.date: 03/12/2025
 ms.author: jswymer
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.custom: bap-template
 ---
 
@@ -132,7 +132,7 @@ The following table describes settings related to the database.
 |BufferedInsertEnabled|Specifies whether to buffer rows that are being inserted into a SQL Server database table.<br /><br /> When this parameter is enabled, up to 5 rows will be buffered in the table queue before they are inserted into the table.<br /><br /> To optimize performance in a production environment, you should enable this parameter. In a test environment, you can disable this parameter to help debug failures that occur when you insert rows in an SQL database table. Learn more in [Bulk Inserts](optimize-sql-bulk-inserts.md).<br /><br /> Default: Enabled<br />Dynamically updatable: No|  
 |EnableDeadlockMonitoring|Specifies whether the server will emit data about database deadlocks, which can then be collected in an Azure Application Insights resource. For more information about the telemetry, see [Analyzing Database Deadlock Trace Telemetry](telemetry-database-deadlocks-trace.md).<br /><br />The calculation of data adds load on the SQL database, so we recommend enabling this setting for diagnostic and troubleshooting purposes.<br /><br />Default: Disabled <br />Dynamically updatable: No|
 |EnableSqlConnectionEncryption|Specifies whether the SQL connect string should request encryption when connecting to SQL Server services.<br /><br /> Default: Not enabled<br />Dynamically updatable: No|
-|EnableSqlMultiSubnetFailover| Enables faster failover for all Availability Groups (AGs) and/or Failover Cluster Instances (FCIs) in SQL Server 2012 or later, and it significantly reduces failover time for single and multi-subnet Always On topologies. When this is set to `true`, MultiSubnetFailover is enabled on the connections from the server to the database.<br /><br />Default: Not enabled <br />Dynamically updatable: No|
+|EnableSqlMultiSubnetFailover| Enables faster failover for all Availability Groups (AGs) and/or Failover Cluster Instances (FCIs) in SQL Server 2012 or later, and it significantly reduces failover time for single and multi-subnet Always On topologies. When this is set to `true`, MultiSubnetFailover is enabled on the connections from the server to the database. Learn more in [Using high availability setups](../deployment/installation-considerations-for-microsoft-sql-server.md#using-high-availability-setups). <br /><br />Default: Not enabled <br />Dynamically updatable: No|
 |EnableLockTimeoutMonitoring|Specifies whether database lock timeout monitoring is enabled. When enabled, the server instance will emit telemetry about lock timeouts. The data can then be collected in an Azure Application Insights resource. For more information about the telemetry, see [Analyzing Database Lock Timeout Trace Telemetry](telemetry-database-locks-trace.md).<br /><br />The calculating the data adds load on the SQL database, so we recommend enabling this setting for diagnostic and troubleshooting purposes.<br /><br />Default: Disabled <br />Dynamically updatable: No|
 |EnableSqlReadOnlyReplicaSupport|Specifies whether the server instance is allowed to connect to an SQL Server secondary read-only replica of an Always On availability group.<br /><br />Using read-only replicas helps balance workloads and improve performance. To take advantage of this setting, the database must be set up with read-scale out support. Learn more in [Using Read Scale-Out for Better Performance](database-read-scale-out-overview.md)<br /><br /> Default: Not enabled<br />Dynamically updatable: No| 
 |EnableTriStateLocking|Specifies whether AL-based read operations following write operations are done optimistically, instead of being done with a strict consistency level and low levels of concurrency. [Learn more about Tri-state locking](../developer/devenv-tri-state-locking.md)<br /><br /> Default: Enabled (`true`)<br />Dynamically updatable: No| 
