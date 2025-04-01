@@ -1113,6 +1113,7 @@
 #### [AS0127](analyzers/appsourcecop-as0127.md)
 #### [AS0128](analyzers/appsourcecop-as0128.md)
 #### [AS0129](analyzers/appsourcecop-as0129.md)
+#### [AS0130](analyzers/appsourcecop-as0130.md)
 ### PerTenantExtensionCop Analyzer rules
 #### [PTE0001](analyzers/pertenantextensioncop-pte0001.md)
 #### [PTE0002](analyzers/pertenantextensioncop-pte0002.md)
@@ -1137,6 +1138,8 @@
 #### [PTE0021](analyzers/pertenantextensioncop-pte0021.md)
 #### [PTE0022](analyzers/pertenantextensioncop-pte0022.md)
 #### [PTE0023](analyzers/pertenantextensioncop-pte0023.md)
+#### [PTE0024](analyzers/pertenantextensioncop-pte0024.md)
+#### [PTE0025](analyzers/pertenantextensioncop-pte0025.md)
 ### UICop Analyzer rules
 #### [AW0001](analyzers/uicop-aw0001.md)
 #### [AW0002](analyzers/uicop-aw0002.md)
@@ -3381,9 +3384,11 @@
 #### [OnInitReport trigger](triggers-auto/report/devenv-oninitreport-report-trigger.md)
 #### [OnPreReport trigger](triggers-auto/report/devenv-onprereport-report-trigger.md)
 #### [OnPostReport trigger](triggers-auto/report/devenv-onpostreport-report-trigger.md)
+#### [OnPreRendering trigger](triggers-auto/report/devenv-onprerendering-report-trigger.md)
 ### Report Extension triggers
 #### [OnPreReport trigger](triggers-auto/reportextension/devenv-onprereport-reportextension-trigger.md)
 #### [OnPostReport trigger](triggers-auto/reportextension/devenv-onpostreport-reportextension-trigger.md)
+#### [OnPreRendering trigger](triggers-auto/reportextension/devenv-onprerendering-reportextension-trigger.md)
 ### Report Data Item triggers
 #### [OnPreDataItem trigger](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)
 #### [OnAfterGetRecord trigger](triggers-auto/reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md)
