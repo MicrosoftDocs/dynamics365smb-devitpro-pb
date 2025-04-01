@@ -47,8 +47,8 @@ In the next sections, we'll go through how to move `MyTable` from `Dependent` to
 > [!NOTE]
 > This section can be skipped if `Dependency` is a direct dependency and the `propagateDependencies` property is `true` on the source extension.
 
-1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `PendingMove` and the `ObsoleteReason` property to indicate the move.
-2. Set the `MovedTo` property to the new location in `Dependency`.
+1. Mark `MyTable` as moved by setting the [ObsoleteState](properties/devenv-obsoletestate-property.md) property to `PendingMove` and the [ObsoleteReason](properties/devenv-obsoletereason-property.md) property to indicate the move.
+2. Set the [MovedTo](properties/devenv-movedto-property.md) property to the new location in `Dependency`.
 3. Bump the version to '1.5.0.0'.
 4. Publish the extension to the environment in Visual Studio Code.
 
@@ -64,7 +64,7 @@ table 50100 MyTable
 
 ### Changes to extension `Dependent`
 
-1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `Moved` and the `ObsoleteReason` property to indicate the move.
+1. Mark `MyTable` as moved by setting the [ObsoleteState](properties/devenv-obsoletestate-property.md) property to `Moved` and the [ObsoleteReason](properties/devenv-obsoletereason-property.md) property to indicate the move.
 2. Update the `app.json` file to include `Dependency` with version `2.0.0.0` as a dependency.
 3. Increment the version to '2.0.0.0'.
 
@@ -96,7 +96,7 @@ The `app.json` file should look like this:
 ### Changes to `Dependency`
 
 1. Create `MyTable` in `Dependency` with the same ID and structure as it had in `Dependent`. Nonbreaking changes can be added between moves (for example, adding a field).
-2. Set the `MovedFrom` property to point towards `Dependent`.
+2. Set the [MovedFrom](properties/devenv-movedfrom-property.md) property to point towards `Dependent`.
 3. Increment the version to '2.0.0.0'.
 
 The code for `MyTable` in `Dependency` should look like this:
@@ -132,8 +132,8 @@ In the next sections, we'll go through how to move `MyTable` from `Dependency` t
 
 ### Extension `Dependency` - avoid breaking changes
 
-1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `PendingMove` and the `ObsoleteReason` property to indicate the move.
-2. Set the `MovedTo` property to the new location in `Dependent`.
+1. Mark `MyTable` as moved by setting the [ObsoleteState](properties/devenv-obsoletestate-property.md) property to `PendingMove` and the [ObsoleteReason](properties/devenv-obsoletereason-property.md) property to indicate the move.
+2. Set the [MovedTo](properties/devenv-movedto-property.md) property to the new location in `Dependent`.
 3. Increment the version to '1.5.0.0'.
 4. Publish the extension to the environment in Visual Studio Code.
 
@@ -151,8 +151,8 @@ table 50100 MyTable
 
 ### Changes to extension `Dependency`
 
-1. Mark `MyTable` as moved by setting the `ObsoleteState` property to `Moved` and the `ObsoleteReason` property to indicate the move.
-3. Increment the version to `2.0.0.0`
+1. Mark `MyTable` as moved by setting the [ObsoleteState](properties/devenv-obsoletestate-property.md) property to `Moved` and the [ObsoleteReason](properties/devenv-obsoletereason-property.md) property to indicate the move.
+2. Increment the version to `2.0.0.0`
 
 ```al
 table 50100 MyTable
@@ -253,7 +253,7 @@ If we look at the code example in the previous section, in order for the move to
 
 For the example above, the following steps are required:
 
-1. In version '1.5.0.0' of `Source extension`, set the enum to `ObsoleteState = Pending` and describe that it'll be moved in the `ObsoleteReason` property.
+1. In version '1.5.0.0' of `Source extension`, set the enum to `ObsoleteState = Pending` and describe that it'll be moved in the [ObsoleteReason](properties/devenv-obsoletereason-property.md) property.
 2. Create a new extension `Common Dependency` where you move the enum to.
 3. In the next version of `Source extension`, add the dependency to `Common Dependency`, then delete the enum and set the table as `ObsoleteState = Moved`.
 4. In the next version of `Destination extension`, add the dependency to the `Common Dependency` extension.
@@ -275,3 +275,5 @@ When fields are moved out, a new table extension can be created in the source ex
 ## Related information
 
 [Move tables and fields between extensions](devenv-move-table-fields-between-extensions.md)  
+[ObsoleteState property](properties/devenv-obsoletestate-property.md)  
+[ObsoleteReason property](properties/devenv-obsoletereason-property.md)
