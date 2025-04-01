@@ -750,7 +750,7 @@
 
 #### Reading data
 ##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
-##### [AL Database Methods and Performance on SQL Server](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
+##### [AL database methods and performance on SQL Server](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
 ##### [Record instance isolation level](developer/devenv-read-isolation.md)
 ##### [Using read scale-out for better performance](administration/database-read-scale-out-overview.md)
 ##### Partial records
