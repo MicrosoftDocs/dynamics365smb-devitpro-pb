@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 03/19/2025
+ms.date: 03/31/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -83,7 +83,7 @@ You can create environments of different types. Choose the type of environment b
 
 ## Create a new environment
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, you've been using a production environment for training purposes, and you've decided to start using [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to run the business. You can, in this case, delete the original production environment and then create a new production environment.  
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, you've been using a production environment for training purposes, and you decide to start using [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to run the business. You can, in this case, delete the original production environment and then create a new production environment.  
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
@@ -96,33 +96,28 @@ You can create new environments that are either production environments or sandb
 
 1. In the navigation pane on the left side of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, then select the **New** action on the action ribbon.
 1. In the **Create Environment** pane, specify a name for the new environment.
-1. In the **Environment Type** list, choose **Production** or **Sandbox**.
+1. In the **Environment Type** list, select **Production** or **Sandbox**.
 1. In the **Application family** field, specify the type of solution that this environment is based on if it isn't [!INCLUDE [prod_short](../includes/prod_short.md)].  
 1. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
 
    > [!TIP]
    > To create a sandbox environment that's based on the Business Central W1 (non-localized) version, choose a country that uses the W1 BaseApp, as indicated in the [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md) article.
 
-1. In the **Version** list, specify the relevant application version for the new environment if more than one version is available.
+1. In the **Version** list, specify the relevant application version for the new environment.
 
-   New production environments are based on the latest production version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. New sandboxes are based on the specified version.
- 
-1. Choose the **Create** action.  
+   For sandbox environments, [preview versions](preview-environments.md) might be available. Preview versions provide early access to new functionality, but environments on these versions aren't updated once the version becomes available and are deleted automatically when the preview ends.  
+
+   > [!IMPORTANT]
+   > You can create environments on any available version. For major version 25.x, not all minor versions might be available for every country during the entire 25.x [update period](update-rollout-timeline.md#update-period). At least one minor version of 25.x is available during this period.  
+
+1. Select **Create**.  
 
    The new environment isn't accessible until the **State** becomes **Active**.
 
 > [!NOTE]
 > The new environment has a default update window that guarantees future updates don't run between 8:00 PM and 6:00 AM local time for the environment country. This update window can be changed after the environment is created. Learn more in [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).
 
-To delete an environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then choose **Delete** on the action ribbon.
-
-### Selecting a version for a new sandbox environment
-
-If you create a sandbox that isn't a copy of an existing environment, you must specify an application version for the new environment. The version list shows the latest *production* version, which is the version used for new production environments.
-
-The version list might also have one or more *preview* versions. Preview versions are early release candidates of upcoming releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that are made available specifically for sandbox environments. This list gives you access to review new functionality, validate extension compatibility, and other general testing of the upcoming release.
-
-When you create a sandbox environment on a preview version, the environment will automatically be updated to new preview versions when they become available. However, the environment won't be updated to the production version. Once a sandbox environment is on a preview version, it must stay on a preview version until it's deleted. The environment can also be deleted if an update between preview versions fails. We recommend that preview versions are used only for temporary testing of an upcoming release.
+To delete an environment, choose the environment on the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and then select **Delete** on the action ribbon.
 
 ## <a name="opslog"></a>Log of administrative operations
 
@@ -147,7 +142,7 @@ Currently, the log includes the following operations:
 |Environment app hotfix|A hotfix was applied to the app by using the App Management API.||[See...](appmanagement/app-management-api.md#schedule-environment-hotfix)||
 |Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.||[See...](administration-center-api_app_management.md#install-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)|
 |Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.||[See...](administration-center-api_app_management.md#uninstall-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)|
-|Environment app update |App was updated either by the Admin Center or API update endpoint.|[See...](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)|[See...](administration-center-api_app_management.md#update-an-app)||
+|Environment app update |App was updated by the Admin Center or API update endpoint.|[See...](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)|[See...](administration-center-api_app_management.md#update-an-app)||
 
 ### Retention period
 
