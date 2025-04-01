@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.collection: bap-ai-copilot
-ms.date: 03/24/2025
+ms.date: 04/01/2025
 ms.custom: bap-template
 ---
 
@@ -14,7 +14,6 @@ ms.custom: bap-template
 
 Many Business Central features are directly extensible using AL and offer documented mechanisms to modify or enhance their behaviour and functionality. This article explains Copilot and agent capabilities that aren't directly extensible but can work with custom code and content from your extensions. All extensions installed in an environment can influence the output of Copilot and agents.
  
-
 ## Approach to extensibility
 
 This table describes how each Copilot and agent capability offers direct or indirect extensibility.
