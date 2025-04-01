@@ -1,8 +1,8 @@
 ---
-title: "AppSourceCop Warning AS0120"
+title: "AppSourceCop Error AS0120"
 description: "The destination symbol's MovedFrom property value does not match the source AppId."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.custom:
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Warning AS0120
+# AppSourceCop Error AS0120
 The value of the MovedFrom property in the destination object does not match the source AppId.
 
 ## Description
