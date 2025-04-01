@@ -1,8 +1,8 @@
 ---
-title: "NavApp.GetResource(Text, var InStream) Method"
-description: "Loads default, or starting, table data into the specified table of an extension during installation."
+title: "NavApp.GetResource(Text, var InStream [, TextEncoding]) Method"
+description: "Retrieves a resource that was packaged with this app and loads it into the specified InStream"
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,17 +10,15 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# NavApp.GetResource(Text, var InStream) Method
+# NavApp.GetResource(Text, var InStream [, TextEncoding]) Method
 > **Version**: _Available or changed with runtime version 14.0._
 
-Loads default, or starting, table data into the specified table of an extension during installation.
+Retrieves a resource that was packaged with this app and loads it into the specified InStream
 
-> [!NOTE]
-> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```AL
- NavApp.GetResource(ResourceName: Text, var ResourceStream: InStream)
+ NavApp.GetResource(ResourceName: Text, var ResourceStream: InStream [, Encoding: TextEncoding])
 ```
 ## Parameters
 *ResourceName*  
@@ -29,7 +27,11 @@ Name of the resource to retrieve
 
 *ResourceStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
-Name of the resource to retrieve  
+The InStream object type that has been created.  
+
+*[Optional] Encoding*  
+&emsp;Type: [TextEncoding](../textencoding/textencoding-option.md)  
+The encoding that will be used by the stream. The default encoding is MSDos.  
 
 
 
