@@ -222,7 +222,33 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 ## On-premises download packages
 
-Download on-premises files from Microsoft Support at Update 26.0 for Business Central 2025 release wave 1 (link not yet available)
+Select and download the package for the appropriate country or region version from Microsoft Support.
+
+|Country/region|Download package|
+|-|-|
+|AT - Austria||
+|AU - Australia||
+|BE - Belgium||
+|CA - Canada||
+|CH - Switzerland||
+|CZ- Czechia||
+|DE - Germany||
+|DK - Denmark||
+|ES - Spain||
+|FI - Finland||
+|FR - France||
+|GB - United Kingdom||
+|IN - India||
+|IS - Iceland||
+|IT - Italy||
+|MX - Mexico||
+|NL - Netherlands||
+|NO - Norway||
+|NZ - New Zealand||
+|RU - Russia||
+|SE - Sweden||
+|US - United States||
+|All other countries (W1)||
 
 ## Upgrade to 26.0 for online customers
 
