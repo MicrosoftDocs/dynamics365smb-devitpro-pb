@@ -2,7 +2,7 @@
 title: "ObsoleteTag property"
 description: "Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -19,6 +19,7 @@ Specifies a free-form text to support tracking of where and when the object was 
 -   Page Action Ref
 -   Page Custom Action
 -   Page File Upload Action
+-   Report Layout
 -   Table
 -   Table field
 -   Table key

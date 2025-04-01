@@ -2,7 +2,7 @@
 title: "Date data type"
 description: "Denotes a date ranging from January 1, 1753 to December 31, 9999."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -25,6 +25,7 @@ The following methods are available on instances of the Date data type.
 |[Day()](date-day-method.md)|Gets the day of month.|
 |[DayOfWeek()](date-dayofweek-method.md)|Gets the day of the week.|
 |[Month()](date-month-method.md)|Gets the month.|
+|[ToText([Boolean])](date-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
 |[WeekNo()](date-weekno-method.md)|Gets the week number.|
 |[Year()](date-year-method.md)|Gets the year.|
 

@@ -2,8 +2,8 @@
 title: Performance article for developers
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: bap-template
-ms.date: 02/07/2025
-ms.reviewer: solsen
+ms.date: 02/14/2025
+ms.reviewer: jswymer
 ms.topic: conceptual
 author: KennieNP
 ms.author: kepontop
@@ -117,6 +117,11 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you're familiar with them to make your AL code as efficient as possible.  
 
+When working with strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. General guidance is to use a `Text` data type if you concatenate fewer than five strings (here the internal allocation of a `TextBuilder` and the final `ToText` invocation is more expensive). If you need to concatenate five strings or more or concatenate strings in a loop, then `TextBuilder` is faster. Also, use a `TextBuilder` data type instead of `BigText` when possible. Learn more in [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). 
+
+If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. Learn more in [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
+
+Use a `List` data type if you need an unbound "array" (where you would previously create a temporary table object). Learn more in [List Data Type](../developer/methods-auto/list/list-data-type.md).
 When working with strings, make sure to use the `TextBuilder` data type, and not repeated use of the `+=` operator on a `Text` variable. General guidance is to use a `Text` data type if you concatenate fewer than five strings (here the internal allocation of a `TextBuilder` and the final `ToText` invocation is more expensive). If you need to concatenate five strings or more or concatenate strings in a loop, then `TextBuilder` is faster. Also, use a `TextBuilder` data type instead of `BigText` when possible. Learn more in [TextBuilder data type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). 
 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. Learn more in [Dictionary data type](../developer/methods-auto/dictionary/dictionary-data-type.md).
@@ -171,7 +176,7 @@ Partial records improve performance in two major ways. First, they limit the fie
 
 The performance gains compound when looping over many records, because both effects scale with the number of rows loaded.
 
-Learn more in [Using partial records](../developer/devenv-partial-records.md).
+Learn more in [Using Partial Records](../developer/devenv-partial-records.md).
 
 ### Table extension impact on performance (for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2023 release wave 1 and earlier)
 
@@ -191,7 +196,7 @@ Here are the pros and cons of the two data models:
 |Data model for extending a table | Properties |
 |---------------------------------|-------------|
 |Table extension | Fields can be added to lists and are searchable. <br> Always loaded with the base table. <br> Expensive at runtime but easy to use. <br> Use only for critical fields. |
-| Related tables | Need to set up table relations. <br> Dedicated page for editing. <br> Requires flow field to be shown in lists. <br> Doesn't affect performance of base table. <br> Excellent for FactBoxes. |
+| Related tables | Need to set up table relations. <br> Dedicated page for editing. <br> Requires flow field to be shown in lists. <br> Doesn't affect performance of base table. <br> Excellent for FactBoxes. | 
 
 ### Limit your event subscriptions
 
@@ -216,8 +221,8 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 
 ## Efficient data access 
 
-Many performance issues are related to how data is defined, accessed, and modified. It's important to know how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
-  
+Many performance issues are related to how data is defined, accessed, and modified. It's important to know how concepts in AL metadata and the AL language translate to their counterparts in SQL.
+
 ### Tables and keys 
 
 Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code accesses data. 
@@ -264,11 +269,15 @@ Read more about SIFT here:
 - [Tuning and tracing](../developer/devenv-sift-tuning-and-tracing.md)  
 - [SIFT and SQL server](../developer/devenv-sift-and-sql-server.md)  
 
-The following article can help you find missing SIFT indexes on FlowFields:
+Learn how to find missing SIFT indexes on FlowFields in [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md).
 
-[Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md).
+### Set up the environment to calculate visible FlowFields only on pages
 
-### How AL relates to SQL 
+When you add a FlowField to a page or page extension with the [Visible property](../developer/properties/devenv-visible-property.md) set to `false`, the FlowField doesn't appear on the page. However, its value is still calculated, leading to unnecessary computations and performance issues. As an admin, you can change this behavior by enabling the **Calculate only visible FlowFields** feature in the **Feature Management** page. When enabled, the AL runtime calculates values only for FlowFields that are visible on pages.
+
+Learn more in [FlowFields overview](../developer/devenv-flowfields.md) and [Enabling upcoming features in Feature Management](../administration/feature-management.md).
+
+### How AL relates to SQL
 
 The AL programming language, to some degree, hides how data is read and written to the database. To effectively code for performance, you need to know how AL statements translate to the equivalent SQL statements.
 
@@ -315,7 +324,7 @@ If you need a fast, non-blocking number sequence that can be used from AL, refer
 - Don't want to use a number series 
 - Can accept holes in the number range
 
-Learn more in [NumberSequence data type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
+Learn more in [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
 
 #### Analyzing database locks
 
@@ -327,9 +336,9 @@ Database lock timeout telemetry gathers information about database locks that ha
 
 Read more here:
 
-- [Viewing database locks](/dynamics365/business-central/admin-view-database-locks)
-- [Monitoring SQL database locks](../administration/monitor-database-locks.md)
-- [Analyzing database lock timeout trace telemetry](../administration/telemetry-database-locks-trace.md)
+- [Viewing Database Locks](/dynamics365/business-central/admin-view-database-locks)
+- [Monitoring SQL Database Locks](../administration/monitor-database-locks.md)
+- [Analyzing Database Lock Timeout Trace Telemetry](../administration/telemetry-database-locks-trace.md)
 
 ### Using Read-Scale Out
 
@@ -337,9 +346,9 @@ Read more here:
 
 **Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup   essentially isolates them from the main read-write workload so that they won't affect the performance of business processes.
 
-As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessIntent property](../developer/properties/devenv-dataaccessintent-property.md). Learn more in [Using Read Scale-Out for better performance](../administration/database-read-scale-out-overview.md).
+As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessIntent property](../developer/properties/devenv-dataaccessintent-property.md). Learn more in [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
 
-## Testing and validating performance 
+## Testing and validating performance
 
 It's imperative to test and validate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] project before deploying it to production. In this section, you find resources on how to analyze and troubleshoot performance issues and guidance on how to validate performance of a system. 
 
@@ -347,7 +356,7 @@ It's imperative to test and validate a [!INCLUDE[prod_short](../developer/includ
 
 You can use the `SessionInformation` data type in unit tests that track the number of SQL statements or rows read. Use it  before and after the code to be tested. Then, have assert statements that check for normal behavior.
 
-Learn more in [SessionInformation data type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
+Learn more in [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
 
 ### Performance scenario and regression testing
 
@@ -355,7 +364,7 @@ Use the Performance Toolkit to simulate the amount of resources that customers u
 
 The Performance Toolkit helps answer questions such as, "Does my solution for Business Central support X number of users doing this, that, and the other thing at the same time?" 
 
-Learn more in [The Performance Toolkit extension](../developer/devenv-performance-toolkit.md).
+Learn more in [The Performance Toolkit Extension](../developer/devenv-performance-toolkit.md).
 
 > [!NOTE]  
 > To test insert/update performance, make sure to un-install the test framework first. If the test framework is installed, then no insert/update statements can utilize bulk mode and will instead run row-by-row. 
@@ -376,7 +385,7 @@ The following performance telemetry is available in Azure Application Insights (
 - Sessions started
 - Web service Requests
 
-Learn more in [Analyzing performance issues using telemetry](performance-work-perf-problem.md#analyzing-performance-issues-using-telemetry) section.
+Learn more in the [Analyzing performance issues using telemetry](performance-work-perf-problem.md#analyzing-performance-issues-using-telemetry) section.
 
 ### Troubleshooting
 
