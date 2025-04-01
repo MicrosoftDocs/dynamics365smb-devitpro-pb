@@ -218,6 +218,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 - **Copilot & AI capabilities** page renamed to **Copilot & agent capabilities**
 - Chat with Copilot can ask about specific record fields.
+- [SetAutoCalcFields method](../developer/methods-auto/recordref/seta) is available on the RecordRef data type.
 
 ## On-premises download packages
 
