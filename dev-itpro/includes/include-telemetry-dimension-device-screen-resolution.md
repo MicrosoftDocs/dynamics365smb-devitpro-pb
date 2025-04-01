@@ -1,0 +1,1 @@
+Specifies the display resolution of the device that opened the page. The value is given as {width}×{height}, with the units in pixels. For example, **1024×768** means the width is 1024 pixels and the height is 768 pixels.
