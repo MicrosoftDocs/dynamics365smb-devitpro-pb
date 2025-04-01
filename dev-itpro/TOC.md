@@ -1909,7 +1909,7 @@
 #### Upgrade application and data
 ##### [From v14 unmodified C/AL application to v25](upgrade/upgrade-unmodified-application-v14-v25.md)
 ##### [From v14 customized C/AL application to v25](upgrade/upgrade-to-microsoft-base-app-v25.md)
-##### [From v15 and later](upgrade/upgrade-unmodified-application-to-v26.md)
+##### [From v15 and later to v26](upgrade/upgrade-unmodified-application-to-v26.md)
 #### Related articles
 ##### [Convert to AL](upgrade/devenv-code-conversion.md)
 ##### Migrating tables and fields between extensions
