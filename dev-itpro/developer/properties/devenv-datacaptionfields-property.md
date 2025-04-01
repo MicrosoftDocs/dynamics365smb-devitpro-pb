@@ -2,7 +2,7 @@
 title: "DataCaptionFields property"
 description: "Sets the fields that appear to the left of the caption on pages that display the contents of this table."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,8 +17,8 @@ Sets the fields that appear to the left of the caption on pages that display the
 
 ## Applies to
 -   Table
--   Page
 -   Request Page
+-   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

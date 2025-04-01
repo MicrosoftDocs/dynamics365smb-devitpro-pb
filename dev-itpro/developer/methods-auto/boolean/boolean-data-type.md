@@ -2,7 +2,7 @@
 title: "Boolean data type"
 description: "Indicates true or false."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,6 +17,12 @@ Indicates true or false.
 
 
 
+## Instance methods
+The following methods are available on instances of the Boolean data type.
+
+|Method name|Description|
+|-----------|-----------|
+|[ToText()](boolean-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

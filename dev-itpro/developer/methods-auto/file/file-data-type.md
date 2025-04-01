@@ -2,7 +2,7 @@
 title: "File data type"
 description: "Represents a file."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,6 +34,8 @@ The following methods are available on the File data type.
 |[Upload(Text, Text, Text, Text, var Text)](file-upload-method.md)|Sends a file from the client computer to the server computer. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.|
 |[UploadIntoStream(Text, Text, Text, var Text, var InStream)](file-uploadintostream-string-string-string-text-instream-method.md)|Sends a file from the client computer to the corresponding server. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.|
 |[UploadIntoStream(Text, var InStream)](file-uploadintostream-string-instream-method.md)|Sends a file from the client computer to the corresponding server. The client computer is the computer that is running a browser that accesses the web client.|
+|[View(Text [, Boolean])](file-view-method.md)|Opens a file from server computer on the client computer in preview mode. The client computer is the computer that is running the browser that accesses the web client.|
+|[ViewFromStream(InStream, Text [, Boolean])](file-viewfromstream-method.md)|Opens a file from the server on the client computer in preview mode. The client computer is defined as the machine running the browser accessing the web client.|
 
 ## Instance methods
 The following methods are available on instances of the File data type.

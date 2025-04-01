@@ -2,7 +2,7 @@
 title: "SessionInformation data type"
 description: "Is a complex data type for exposing Session information into AL."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -23,6 +23,7 @@ The following methods are available on the SessionInformation data type.
 |Method name|Description|
 |-----------|-----------|
 |[AITokensUsed()](sessioninformation-aitokensused-method.md)|Gets the total amount of AI tokens consumed on the session, since the session started.|
+|[Callstack()](sessioninformation-callstack-method.md)|Gets the current callstack.|
 |[SqlRowsRead()](sessioninformation-sqlrowsread-method.md)|Gets the amount of SQL rows read on the session, since the session started.|
 |[SqlStatementsExecuted()](sessioninformation-sqlstatementsexecuted-method.md)|Gets the amount of SQL statements executed on the session, since the session started.|
 

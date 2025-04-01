@@ -48,7 +48,6 @@ The method HttpClient.Send can fail and return false in the following ways:
 - The requestUri is not an absolute URI.
 - The chosen HTTP method is not supported.
 - The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.
-- The request failed due to timeout.
 
 [!INCLUDE[allowhttpclientnote](../../../includes/include-http-allowhttpclient-note.md)]
 
