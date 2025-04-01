@@ -173,7 +173,7 @@
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)
 ### [Manage updates](administration/tenant-admin-center-update-management.md)
 ### [Manage sessions](administration/tenant-admin-center-manage-sessions.md)
-### [Manage consumption-based billing preview)](administration/tenant-admin-center-manage-consumption-billing.md)
+### [Manage consumption-based billing](administration/tenant-admin-center-manage-consumption-billing.md)
 ### [Copy a production or sandbox environment](administration/tenant-admin-center-environments-copy.md)
 ### [Rename environments](administration/tenant-admin-center-environments-rename.md)
 ### [Export databases](administration/tenant-admin-center-database-export.md)
@@ -1908,9 +1908,9 @@
 #### [Upgrade permission sets](upgrade/upgrade-permissions.md)
 #### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
 #### Upgrade application and data
-##### [From v14 unmodified C/AL application to v15](upgrade/upgrade-unmodified-application-v14-v25.md)
-##### [From v14 customized C/AL application to v15](upgrade/upgrade-to-microsoft-base-app-v25.md)
-##### [From v15 and later](upgrade/upgrade-unmodified-application-to-v26.md)
+##### [From v14 unmodified C/AL application to v25](upgrade/upgrade-unmodified-application-v14-v25.md)
+##### [From v14 customized C/AL application to v25](upgrade/upgrade-to-microsoft-base-app-v25.md)
+##### [From v15 and later to v26](upgrade/upgrade-unmodified-application-to-v26.md)
 #### Related articles
 ##### [Convert to AL](upgrade/devenv-code-conversion.md)
 ##### Migrating tables and fields between extensions

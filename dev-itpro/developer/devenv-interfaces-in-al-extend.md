@@ -1,6 +1,6 @@
 ---
-title: Extending interfaces in AL
-description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method and extended for flexibility and adaptability.
+title: Extend interfaces in AL 
+description: Learn how to extend interfaces in AL to create flexible and adaptable extensions.
 author: SusanneWindfeldPedersen
 ms.date: 09/27/2024
 ms.topic: conceptual
@@ -9,15 +9,15 @@ ms.collection: get-started
 ms.reviewer: solsen
 ---
 
-# Extending interfaces in AL
+# Extend interfaces in AL
 
 [!INCLUDE[2024-releasewave2](../includes/2024-releasewave2.md)]
 
-An interface in AL is a syntactical contract that can be implemented by a nonabstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface. For more information, see [Interfaces in AL](devenv-interfaces-in-al.md).
+An interface in AL is a syntactical contract that can be implemented by a nonabstract method. It defines the capabilities an object must have while allowing actual implementations to differ, as long as they comply with the defined interface. Learn more in [Interfaces in AL](devenv-interfaces-in-al.md).
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, extensible interfaces in AL are supported. Extending interfaces enables you to create a flexible and adaptable extension. You can add new functionality without altering the core system, which can save time and resources and you reduce the risk of introducing errors into the existing codebase.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, extensible interfaces in AL are supported. Extending interfaces lets you create flexible and adaptable extensions. You can add new functionality without altering the core system, which can save time and resources and reduce the risk of introducing errors into the existing codebase.
 
-When you declare an interface, you can extend one or more existing interfaces. The new interface will inherit all the methods from the interfaces it extends. So, when you implement an interface that extends other interfaces, the implementing class or object must provide implementations for all the methods defined in the extended interfaces, in addition to any methods defined in the new interface itself. This ensures that the implementor adheres to the contract specified by all the interfaces involved.
+When you declare an interface, you can extend one or more existing interfaces. The new interface inherits all the methods from the interfaces it extends. When you implement an interface that extends other interfaces, the implementing class or object must provide implementations for all the methods defined in the extended interfaces as well as any methods defined in the new interface itself. This ensures that the implementor adheres to the contract specified by all the interfaces involved.
 
 ## Syntax
 
@@ -51,5 +51,5 @@ Extensible interfaces in AL also support the use of the testing and casting oper
 
 ## Related information
 
-[Interfaces in AL](devenv-interfaces-in-al.md)  
-[Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md)  
+- [Interfaces in AL](devenv-interfaces-in-al.md)  
+- [Type testing and casting operators for interfaces](devenv-interfaces-in-al-operators.md)  

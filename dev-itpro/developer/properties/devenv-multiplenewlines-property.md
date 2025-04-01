@@ -2,7 +2,7 @@
 title: "MultipleNewLines property"
 description: "Sets a value that determines whether users can add multiple new lines between records."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,8 +16,8 @@ ms.reviewer: solsen
 Sets a value that determines whether users can add multiple new lines between records.
 
 ## Applies to
--   Page
 -   Request Page
+-   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -2,7 +2,7 @@
 title: "Time data type"
 description: "Denotes a time ranging from 00:00:00.000 to 23:59:59.999."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -26,6 +26,7 @@ The following methods are available on instances of the Time data type.
 |[Millisecond()](time-millisecond-method.md)|Gets the milliseconds component of the time represented by this instance.|
 |[Minute()](time-minute-method.md)|Gets the minute component of the time represented by this instance.|
 |[Second()](time-second-method.md)|Gets the seconds component of the time represented by this instance.|
+|[ToText([Boolean])](time-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
