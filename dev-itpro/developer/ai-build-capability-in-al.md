@@ -30,7 +30,7 @@ The AI module can be used in any AL extension and provides the following capabil
 - Usage insights about your AI capability through telemetry.
 
 > [!NOTE]  
-> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as Copilot chat in [!INCLUDE [prod_short](includes/prod_short.md)]. Chat with Copilot feature isn't extensible and the AI module can't be used to influence chat. Learn about how to influence Copilot output as a developer in [Influencing Copilot and agents without extending them](copilot-and-agents-influence-without-extending.md).
+> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as chat with Copilot feature (preview) in [!INCLUDE [prod_short](includes/prod_short.md)]. In preview, chat with Copilot isn't extensible and the AI module can't be used to influence chat. Learn about how to influence Copilot output as a developer in [Influencing Copilot and agents without extending them](copilot-and-agents-influence-without-extending.md).
 
 > [!TIP]  
 > To see the AI module in action, try the example extension available at [BCTech on GitHub](https://aka.ms/BCStartCodingWithAI).
