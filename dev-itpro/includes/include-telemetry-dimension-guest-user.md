@@ -1,0 +1,1 @@
+**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.
