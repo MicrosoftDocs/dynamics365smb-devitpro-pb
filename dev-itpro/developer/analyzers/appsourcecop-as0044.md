@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0044"
 description: "Destructive field properties that have been published must not be modified."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -19,17 +19,6 @@ Property changes that cause destructive changes are not allowed
 
 ## Description
 Destructive field properties that have been published must not be modified.
-
-## Remarks
-
-This error occurs when an attempt is made to modify field properties that have already been published and are considered destructive. Destructive changes can lead to data loss, corruption, or other issues that can break the upgrade process for existing installations and dependent extensions.
-
-## How to fix this diagnostic?
-
-To resolve this error, you need to avoid modifying published field properties that are considered destructive. Here are the steps:
-
-1. Locate the field property in your code that is being removed.
-2. Restore the property to its original state.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
