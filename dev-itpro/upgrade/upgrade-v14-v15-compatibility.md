@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: conceptual
-ms.date: 03/05/2025
+ms.date: 03/13/2025
 ms.custom: bap-template
 ---
 
@@ -22,19 +22,29 @@ Learn more about the supported paths in [Supported Upgrade Paths](upgrade-paths.
 
 Before you choose the target version for your upgrade, read the [Some Known Issues](known-issues.md) article. This article describes issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions that affect upgrade.
 
+## Version 25 compatibility
+
+The following table lists the Business Central 24 versions and the minimum version of later releases that are compatible for upgrade.
+
+|Version 25 |Version 26|
+|-|-|
+|25.0 to 25.5|26.0|
+|25.6|26.1|
+
 ## Version 24 compatibility
 
 The following table lists the Business Central 24 versions and the minimum version of later releases that are compatible for upgrade.
 
-|Version 24 | Version 25|
-|-|-|
-|24.0 to 24.5|[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|
-|[24.6](https://support.microsoft.com/help/5046146)|[25.1](https://support.microsoft.com/help/5047904)|
-|[24.7](https://support.microsoft.com/help/5047903)|[25.2](https://support.microsoft.com/help/5049396)|
-|[24.8](https://support.microsoft.com/help/5049395)|[25.3](https://support.microsoft.com/help/5050249)|
-|[24.9](https://support.microsoft.com/help/5050248)|[25.4](https://support.microsoft.com/help/5052987)|
-|[24.10](https://support.microsoft.com/help/5052986)|[25.5](https://support.microsoft.com/help/5054448)|
-|[24.11](https://support.microsoft.com/help/5054447)<sup>[\[1\]](#1)</sup>|25.6|
+|Version 24 | Version 25| Version 26|
+|-|-|-|
+|24.0 to 24.5|[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|26.0|
+|[24.6](https://support.microsoft.com/help/5046146)|[25.1](https://support.microsoft.com/help/5047904)|26.0|
+|[24.7](https://support.microsoft.com/help/5047903)|[25.2](https://support.microsoft.com/help/5049396)|26.0|
+|[24.8](https://support.microsoft.com/help/5049395)|[25.3](https://support.microsoft.com/help/5050249)|26.0|
+|[24.9](https://support.microsoft.com/help/5050248)|[25.4](https://support.microsoft.com/help/5052987)|26.0|
+|[24.10](https://support.microsoft.com/help/5052986)|[25.5](https://support.microsoft.com/help/5054448)|26.0|
+|[24.11](https://support.microsoft.com/help/5054447)|25.6|26.0|
+|24.12<sup>[\[1\]](#1)</sup>|25.7|26.1|
 
 Get a list of all available updates for Business Central 2024 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2024 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65).
 
@@ -42,21 +52,22 @@ Get a list of all available updates for Business Central 2024 release wave 1 at 
 
 The following table lists the Business Central 23 update versions and the minimum update versions of later releases that are compatible for upgrade.
 
-|Version 23 |Version 24 | Version 25|
-|-|-|-|
-|23.0 to 23.5|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000) |[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|
-|[23.6](https://support.microsoft.com/help/5037541)|[24.1](https://support.microsoft.com/help/5038531)|25.0|
-|[23.7](https://support.microsoft.com/help/5038530) |[24.2](https://support.microsoft.com/help/5040044)|25.0|
-|[23.8](https://support.microsoft.com/help/5040043)|[24.3](https://support.microsoft.com/help/5041133)|25.0|
-|[23.9](https://support.microsoft.com/help/5041132) |[24.4](https://support.microsoft.com/help/5042530)|25.0|
-|[23.10](https://support.microsoft.com/help/5042529)|[24.5](https://support.microsoft.com/help/5043981)|25.0|
-|[23.11](https://support.microsoft.com/help/5043980)|[24.6](https://support.microsoft.com/help/5046146)|25.0|
-|[23.12](https://support.microsoft.com/help/5046145)|[24.7](https://support.microsoft.com/help/5047903)|[25.1](https://support.microsoft.com/help/5047904)|
-|[23.13](https://support.microsoft.com/help/5047902)|[24.8](https://support.microsoft.com/help/5049395)|[25.2](https://support.microsoft.com/help/5049396)|
-|[23.14](https://support.microsoft.com/help/5049394)|[24.9](https://support.microsoft.com/help/5050248)|[25.3](https://support.microsoft.com/help/5050249)|
-|[23.15](https://support.microsoft.com/help/5050247)|[24.10](https://support.microsoft.com/help/5052986)|[25.4](https://support.microsoft.com/help/5052987)|
-|[23.16](https://support.microsoft.com/help/5052985)|[24.11](https://support.microsoft.com/help/5054447)|[25.5](https://support.microsoft.com/help/5054448)|
-|[23.17](https://support.microsoft.com/help/5054446)<sup>[\[1\]](#1)</sup>|24.12|25.6|
+|Version 23 |Version 24 | Version 25|Version 26|
+|-|-|-|-|
+|23.0 to 23.5|[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000) |[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|26.0|
+|[23.6](https://support.microsoft.com/help/5037541)|[24.1](https://support.microsoft.com/help/5038531)|25.0|26.0|
+|[23.7](https://support.microsoft.com/help/5038530) |[24.2](https://support.microsoft.com/help/5040044)|25.0|26.0|
+|[23.8](https://support.microsoft.com/help/5040043)|[24.3](https://support.microsoft.com/help/5041133)|25.0|26.0|
+|[23.9](https://support.microsoft.com/help/5041132) |[24.4](https://support.microsoft.com/help/5042530)|25.0|26.0|
+|[23.10](https://support.microsoft.com/help/5042529)|[24.5](https://support.microsoft.com/help/5043981)|25.0|26.0|
+|[23.11](https://support.microsoft.com/help/5043980)|[24.6](https://support.microsoft.com/help/5046146)|25.0|26.0|
+|[23.12](https://support.microsoft.com/help/5046145)|[24.7](https://support.microsoft.com/help/5047903)|[25.1](https://support.microsoft.com/help/5047904)|26.0|
+|[23.13](https://support.microsoft.com/help/5047902)|[24.8](https://support.microsoft.com/help/5049395)|[25.2](https://support.microsoft.com/help/5049396)|26.0|
+|[23.14](https://support.microsoft.com/help/5049394)|[24.9](https://support.microsoft.com/help/5050248)|[25.3](https://support.microsoft.com/help/5050249)|26.0|
+|[23.15](https://support.microsoft.com/help/5050247)|[24.10](https://support.microsoft.com/help/5052986)|[25.4](https://support.microsoft.com/help/5052987)|26.0|
+|[23.16](https://support.microsoft.com/help/5052985)|[24.11](https://support.microsoft.com/help/5054447)|[25.5](https://support.microsoft.com/help/5054448)|26.0|
+|[23.17](https://support.microsoft.com/help/5054446)<sup>|24.12|25.6|26.0|
+|[23.17](https://support.microsoft.com/help/5054446)<sup>[\[1\]](#1)</sup>|24.13|25.7|26.1|
 
 Get a list of all available updates for Business Central 2023 release wave 2 at [Released Updates for Microsoft Dynamics 365 Business Central 2023 release wave 2 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d).
 
@@ -64,22 +75,22 @@ Get a list of all available updates for Business Central 2023 release wave 2 at 
 
 The following table lists the Business Central 22 update versions and the minimum update versions of later releases that are compatible for upgrade.
 
-|Version 22 |Version 23 |Version 24 | Version 25|
-|-|-|-|-|
-|22.0 to 22.5|[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)  |[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|
-|[22.6](https://support.microsoft.com/help/5031951) |[23.1](https://support.microsoft.com/help/5032755)|24.0|25.0|
-|[22.7](https://support.microsoft.com/help/5032754)|[23.2](https://support.microsoft.com/help/5033775)|24.0|25.0|
-|[22.8](https://support.microsoft.com/help/5033776) |[23.3](https://support.microsoft.com/help/5034720)|24.0|25.0|
-|[22.9](https://support.microsoft.com/help/5034719)|[23.4](https://support.microsoft.com/help/5035207)|24.0|25.0|
-|[22.10](https://support.microsoft.com/help/5035206)|[23.5](https://support.microsoft.com/help/5036474)|24.0|25.0|
-|[22.11](https://support.microsoft.com/help/5036473) |[23.6](https://support.microsoft.com/help/5037541) |24.0|25.0|
-|[22.12](https://support.microsoft.com/help/5037540)|[23.7](https://support.microsoft.com/help/5038530) |[24.1](https://support.microsoft.com/help/5038531)|25.0|
-|[22.13](https://support.microsoft.com/help/5038529)|[23.8](https://support.microsoft.com/help/5040043)|[24.2](https://support.microsoft.com/help/5040044)|25.0|
-|[22.14](https://support.microsoft.com/help/5040042) |[23.9](https://support.microsoft.com/help/5041132)|[24.3](https://support.microsoft.com/help/5041133)|25.0|
-|[22.15](https://support.microsoft.com/help/5041131) |[23.10](https://support.microsoft.com/help/5042529)|[24.4](https://support.microsoft.com/help/5042530)|25.0|
-|[22.16](https://support.microsoft.com/help/5042528) |[23.11](https://support.microsoft.com/help/5043980)|[24.5](https://support.microsoft.com/help/5043981)|25.0|
-|[22.17](https://support.microsoft.com/help/5043979)|[23.12](https://support.microsoft.com/help/5046145)|[24.6](https://support.microsoft.com/help/5046146)|25.0|
-|[22.18](https://support.microsoft.com/help/5046144)<sup>[\[1\]](#1)</sup> |[23.13](https://support.microsoft.com/help/5047902)|[24.7](https://support.microsoft.com/help/5047903)|[25.1](https://support.microsoft.com/help/5047904)|
+|Version 22 |Version 23 |Version 24 | Version 25| Version 26|
+|-|-|-|-|-|
+|22.0 to 22.5|[23.0](https://www.microsoft.com/en-us/download/details.aspx?id=105617)  |[24.0](https://www.microsoft.com/en-us/download/details.aspx?id=106000)|[25.0](https://www.microsoft.com/en-us/download/details.aspx?id=106256)|Any update |
+|[22.6](https://support.microsoft.com/help/5031951) |[23.1](https://support.microsoft.com/help/5032755)|24.0|25.0|Any update |
+|[22.7](https://support.microsoft.com/help/5032754)|[23.2](https://support.microsoft.com/help/5033775)|24.0|25.0|Any update |
+|[22.8](https://support.microsoft.com/help/5033776) |[23.3](https://support.microsoft.com/help/5034720)|24.0|25.0|Any update |
+|[22.9](https://support.microsoft.com/help/5034719)|[23.4](https://support.microsoft.com/help/5035207)|24.0|25.0|Any update |
+|[22.10](https://support.microsoft.com/help/5035206)|[23.5](https://support.microsoft.com/help/5036474)|24.0|25.0|Any update |
+|[22.11](https://support.microsoft.com/help/5036473) |[23.6](https://support.microsoft.com/help/5037541) |24.0|25.0|Any update |
+|[22.12](https://support.microsoft.com/help/5037540)|[23.7](https://support.microsoft.com/help/5038530) |[24.1](https://support.microsoft.com/help/5038531)|25.0|Any update |
+|[22.13](https://support.microsoft.com/help/5038529)|[23.8](https://support.microsoft.com/help/5040043)|[24.2](https://support.microsoft.com/help/5040044)|25.0|Any update |
+|[22.14](https://support.microsoft.com/help/5040042) |[23.9](https://support.microsoft.com/help/5041132)|[24.3](https://support.microsoft.com/help/5041133)|25.0|Any update |
+|[22.15](https://support.microsoft.com/help/5041131) |[23.10](https://support.microsoft.com/help/5042529)|[24.4](https://support.microsoft.com/help/5042530)|25.0|Any update |
+|[22.16](https://support.microsoft.com/help/5042528) |[23.11](https://support.microsoft.com/help/5043980)|[24.5](https://support.microsoft.com/help/5043981)|25.0|Any update |
+|[22.17](https://support.microsoft.com/help/5043979)|[23.12](https://support.microsoft.com/help/5046145)|[24.6](https://support.microsoft.com/help/5046146)|25.0|Any update |
+|[22.18](https://support.microsoft.com/help/5046144)<sup>[\[1\]](#1)</sup> |[23.13](https://support.microsoft.com/help/5047902)|[24.7](https://support.microsoft.com/help/5047903)|[25.1](https://support.microsoft.com/help/5047904)|Any update |
 
 Get a list of all available updates for Business Central 2023 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2023 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51).
 

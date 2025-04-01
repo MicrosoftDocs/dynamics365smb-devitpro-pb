@@ -44,12 +44,14 @@ reportextension 50102 EmpReportExt extends "Employee - List"
             Caption = 'ExcelPivot';
             Summary = 'Employee list shown in Pivot table in Excel';
             LayoutFile = 'EmpShownAsPivot.xlsx';
+            // Introduced in version 26 (runtime 15)
+            ExcelLayoutMultipleDataSheets = true;
         }
 
         layout(LayoutExcel)
         {
             Type = Excel;
-            Caption = 'ExcelColumns';
+            Caption = 'Excel layout for employee analysis';
             Summary = 'Employee list sorted by last name in Excel';
             LayoutFile = 'EmpSortedByLastName.xlsx';
         }
@@ -57,9 +59,22 @@ reportextension 50102 EmpReportExt extends "Employee - List"
         layout(LayoutWord)
         {
             Type = Word;
-            Caption = 'WordList';
-            Summary = 'Employee list sorted by last name in Word';
+            Caption = 'Word layout for printing the employee list';
+            Summary = 'Employee list sorted by last name. You can edit it with Word';
             LayoutFile = 'EmpSortedByLastName.docx';
+        }
+
+        layout(LayoutRDLC)
+        {
+            Type = RDLC;
+            Caption = 'Legacy layout for printing the employee list';
+            Summary = 'Legacy layout for employee list (will be removed in a later version)';
+            LayoutFile = 'MyLegacyLayout.rdlc';
+            // Introduced in version 26 (runtime 15)
+            ObsoleteReason = 'This layout is obsolete and will be removed in the v28 release';
+            ObsoleteState = Pending;
+            ObsoleteTag = 'myObsoleteLayoutTag';
+
         }
     }
 }
@@ -68,6 +83,16 @@ reportextension 50102 EmpReportExt extends "Employee - List"
 If one or more of the layouts don't exist, they're generated when selecting <kbd>Ctrl+</kbd>Shift</kbd>+<kbd>P</kbd>, and then choosing **AL: Package**. The layouts appear in your project in the right pane of Visual Studio Code. The generated reports contain the dataset from the report, and you can modify and model the reports in each of the layout types as you want.
 
 Creating layouts in Excel, RDL, or Word is further described in the articles shown under [Related information](devenv-multiple-report-layouts.md#related-information).
+
+## Obsoleting layouts
+
+[!INCLUDE[2025_releasewave1_name](includes/2025rw1_and_later.md)]
+
+Mark report layouts as obsolete using the [ObsoleteReason property](properties/devenv-obsoletereason-property.md), [ObsoleteState property](properties/devenv-obsoletestate-property.md), and [ObsoleteTag property](properties/devenv-obsoletetag-property.md).
+
+When these properties are set, the layout appears as deprecated on the **Report Layouts** page in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
+
+Learn more in [Obsoleting reports](devenv-reports-obsoletion.md).
 
 ## Related information
 
