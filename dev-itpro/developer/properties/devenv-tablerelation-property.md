@@ -2,7 +2,7 @@
 title: "TableRelation property"
 description: "Sets up a lookup into another table."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -19,11 +19,9 @@ The following syntax is valid for the TableRelation property:
 ```
 TableRelation = <TableName>[.<FieldName>] [WHERE(<TableFilters>)] |
 [IF(<Conditions>) <TableName>[.<FieldName>] [WHERE(<TableFilters>)] ELSE <TableRelation>]
-<Conditions> ::= <TableFilters>
-<TableFilters>::= <TableFilter> {,<TableFilter>}
-<TableFilter>::= <DestinationFieldName>=CONST(<FieldConst>) | FIELD(<SourceFieldName>)
+<Conditions> ::= <TableFilters> <TableFilters>::= <TableFilter> {,<TableFilter>} <TableFilter>::= <DestinationFieldName>=CONST(<FieldConst>) | FIELD(<SourceFieldName>)
 ```
-
+    
 
 ## Applies to
 -   Table field

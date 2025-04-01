@@ -2,7 +2,7 @@
 title: "PageType property"
 description: "Sets the type of page to create."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -40,6 +40,7 @@ Sets the type of page to create.
 |**HeadlinePart**|runtime version 1.0|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
 |**PromptDialog**|runtime version 12.1|Dialog that prompts the user for input and shows the output of a copilot interaction.|
 |**ConfigurationDialog**|runtime version 14.0|Dialog that asks the user for input to configure a process or automation.|
+|**UserControlHost**|runtime version 15.0|Page to host a single usercontrol.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
