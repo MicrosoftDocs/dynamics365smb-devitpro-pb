@@ -45,7 +45,7 @@ Before you can assign a Microsoft Entra group to an environment, the group must 
 
 ### Assign Essentials and Premium licenses across environments
 
-The customer cannot mix Essentials and Premium licenses in the same company in Business Central. However, it is possible to apply Essentials or Premium licenses to different environments. This way, your organization can consist of environments with Essentials companies and environments with Premium companies. In such scenarios, apply Premium licenses to all users who need to sign in to both types of companies.
+The customer cannot mix Essentials and Premium licenses in the same company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, it is possible to apply Essentials or Premium licenses to different environments. This way, your organization can consist of environments with Essentials companies and environments with Premium companies. In such scenarios, apply Premium licenses to all users who need to sign in to both types of companies.
 
 > [!NOTE]
 > A Premium license user can sign in to a company where the **User Experience** field is set to **Essentials** on the **Company Information** page. However, Premium users cannot use features only Premium licenses provide, like manufacturing or service. This does not work in the opposite direction. Users with an Essentials license cannot sign in to a company where the **User Experience** is set to **Premium** on the **Company Information** page.
