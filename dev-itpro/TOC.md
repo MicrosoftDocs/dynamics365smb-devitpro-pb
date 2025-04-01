@@ -558,6 +558,7 @@
 #### [The performance toolkit extension](developer/devenv-performance-toolkit.md)
 #### [Use page scripting for acceptance testing (preview)](developer/devenv-page-scripting.md)
 #### [FAQ about testing your Business Central app](developer/app-faq-test.md)
+#### [Mock outbound HttpClient web service calls during testing](developer/devenv-httpclient-mock-outbound-calls.md)
 
 ### Work in sandboxes
 #### [Sandbox environments for development](developer/devenv-sandbox-overview.md)
