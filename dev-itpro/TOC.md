@@ -155,7 +155,7 @@
 ### [Country/region availability and supported translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated administrator access to Business Central online](administration/delegated-admin.md)
 ### [Trials and subscriptions](administration/trials-subscriptions.md)
-### [Major updates and minor updates](administration/update-rollout-timeline.md)
+### [Major and minor update cycles](administration/update-rollout-timeline.md)
 ### [Version numbers in Business Central](administration/version-numbers.md)
 ### [Operational limits](administration/operational-limits-online.md)
 ### [Technical support of Business Central](technical-support.md)
@@ -173,6 +173,7 @@
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)
 ### [Manage updates](administration/tenant-admin-center-update-management.md)
 ### [Manage sessions](administration/tenant-admin-center-manage-sessions.md)
+### [Manage consumption-based billing preview)](administration/tenant-admin-center-manage-consumption-billing.md)
 ### [Copy a production or sandbox environment](administration/tenant-admin-center-environments-copy.md)
 ### [Rename environments](administration/tenant-admin-center-environments-rename.md)
 ### [Export databases](administration/tenant-admin-center-database-export.md)
@@ -751,6 +752,7 @@
 
 #### Reading data
 ##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
+##### [AL database methods and performance on SQL Server](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
 ##### [Record instance isolation level](developer/devenv-read-isolation.md)
 ##### [Using read scale-out for better performance](administration/database-read-scale-out-overview.md)
 ##### Partial records
