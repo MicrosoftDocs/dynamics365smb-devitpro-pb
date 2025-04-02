@@ -43,7 +43,7 @@ Here is a JSON representation of the userPermissions.
     "id": "D365 READ",
     "company": "CRONUS Danmark A/S",
     "scope": "System",
-    "appID": "00000000-0000-0000-0000-000000000000",
+    "appID": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "displayName": "Dyn. 365-læseadgang, alle",
     "extensionName": ""
 }

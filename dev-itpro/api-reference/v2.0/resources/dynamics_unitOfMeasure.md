@@ -4,7 +4,7 @@ description: An unit of measure object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -61,7 +61,7 @@ Here is a JSON representation of the unitOfMeasure resource.
 
 
 
-## See Also
+## Related information
 [GET unitOfMeasure](../api/dynamics_unitOfMeasure_Get.md)  
 [DELETE unitOfMeasure](../api/dynamics_unitOfMeasure_Delete.md)  
 [POST unitOfMeasure](../api/dynamics_unitOfMeasure_Create.md)  

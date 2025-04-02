@@ -30,7 +30,7 @@ Get-Help "NAV"
   
  For Help for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] cmdlet, type `Get-Help <cmd name>`. For Help for the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE, select <kbd>F1</kbd>, or choose the Help menu, and then choose [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE Help.  
   
-## See also  
+## Related information  
  [Business Central PowerShell Cmdlets](/powershell/business-central/overview)  
  [Merge Application Changes](merge-application-changes.md)   
  [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)  

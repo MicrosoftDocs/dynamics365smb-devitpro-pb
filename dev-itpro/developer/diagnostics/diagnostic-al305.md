@@ -44,6 +44,6 @@ permissionset 50112 NameExceeds20Characters
 }
 ```
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -75,6 +75,6 @@ Here is a JSON representation of the user resource.
 }
 ```
 
-## See Also
+## Related information
 [GET user](../api/dynamics_user_get.md)  
 [PATCH user](../api/dynamics_user_update.md)  

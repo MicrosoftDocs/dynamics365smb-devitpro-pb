@@ -54,7 +54,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
 
 [Get Tax Area](../api/dynamics_taxarea_get.md)  
 [Create Tax Area](../api/dynamics_create_taxarea.md)  

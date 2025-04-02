@@ -21,6 +21,6 @@ The maximum number of array dimensions is {0}.
 The number of dimensions for an array cannot exceed 10.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

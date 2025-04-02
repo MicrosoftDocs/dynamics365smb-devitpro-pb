@@ -4,7 +4,7 @@ description: A contact information object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -65,5 +65,5 @@ Here is a JSON representation of the contactInformation resource.
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
-## See Also
+## Related information
 [GET contactInformation](../api/dynamics_contactinformation_get.md)  

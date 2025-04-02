@@ -21,7 +21,7 @@ AL supports the following pragma instructions:
 - [Pragma ImplicitWith](devenv-directive-pragma-implicitwith.md)
 - [Pragma Warning](devenv-directive-pragma-warning.md)
 
-## See Also
+## Related information
 
 [Development in AL](../devenv-dev-overview.md)  
 [AL development environment](../devenv-reference-overview.md)  

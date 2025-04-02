@@ -557,7 +557,7 @@ We recently released a Docker AL Preview image as part of the Insider program, c
 
     - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with <kbd>Ctrl</kbd>+<kbd>F5</kbd> . 
 -->
-## See Also
+## Related information
 [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md)  
 [Developing Extensions](../developer/devenv-dev-overview.md)  
 [AL Development Environment](../developer/devenv-reference-overview.md)  

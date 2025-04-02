@@ -147,7 +147,7 @@ codeunit 50100 DoPost
 }
 ```
 
-## See Also  
+## Related information  
 
 [Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
 [AL error handling](devenv-al-error-handling.md)   

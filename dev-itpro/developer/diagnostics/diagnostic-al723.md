@@ -21,6 +21,6 @@ The {0} '{1}' cannot be used as target of the ActionRef '{2}'. ActionRefs can on
 0 - the action type (action, separator, area, group); 1 - the name of the target action; 2 - the name of the action ref  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

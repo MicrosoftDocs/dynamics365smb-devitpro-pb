@@ -21,6 +21,6 @@ An application object of type '{0}' with ID '{1}' is already declared by the ext
 Multiple application objects of the same type and with the same ID are defined.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

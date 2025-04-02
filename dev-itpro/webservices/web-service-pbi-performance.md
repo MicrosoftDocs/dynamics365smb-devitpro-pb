@@ -30,7 +30,7 @@ To make it easier to get started using Azure Application Insights with Business 
 
 For more information, see [Web service telemetry](web-service-telemetry.md).
 
-## See also
+## Related information
 
 [Web Services Overview](web-services.md)  
 [Web Services Best Practices](Web-Services-Best-Practices.md)  

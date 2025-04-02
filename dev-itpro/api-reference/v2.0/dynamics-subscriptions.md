@@ -16,7 +16,7 @@ Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short
 In the sections that follow, replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on the environment by following the [guideline](endpoints-apis-for-dynamics.md).
 
 > [!IMPORTANT]  
-> With [!INCLUDE[prod_short](../../includes/prod_short.md)] version 19, all webhook notifications sent from [!INCLUDE[prod_short](../../includes/prod_short.md)] will no longer contain the byte order mark (BOM), to align with RCF 7159, section 8.1.    
+> With [!INCLUDE[prod_short](../../includes/prod_short.md)] version 19, all webhook notifications sent from [!INCLUDE[prod_short](../../includes/prod_short.md)] will no longer contain the byte order mark (BOM), to align with RCF 7159, section 8.1.
 
 
 ## Register a webhook subscription
@@ -38,10 +38,15 @@ Once the `POST` is issued against the **subscription** API to create the subscri
 If [!INCLUDE[prod_short](../../includes/prod_short.md)] receives the response containing the `validationToken`, the subscription is registered and webhook notifications are sent to the `notificationUrl`.  
 
 > [!IMPORTANT]  
-> Handshake is mandatory when [creating a subscription](api/dynamics_subscriptions_create.md) and [renewing a subscription](api/dynamics_subscriptions_update.md).  In both cases the client has to return the `validationToken` in the body with response code `200 OK`.
+> Handshake is mandatory when [creating a subscription](api/dynamics_subscriptions_create.md) and [renewing a subscription](api/dynamics_subscriptions_update.md). In both cases the client has to return the `validationToken` in the body with response code `200 OK`.
 
 ### Client state
+
 Optionally clientState can be provided in the `POST` and `PATCH` requests bodies. clientState is included in the body of a webhook notification and can be used as an opaque token; a shared secret, enabling the subscriber to verify notifications.
+
+## Custom APIs
+
+If you're subscribing to a custom API page, both the URL you send the subscription HTTP request to and the resource path you wish to subscribe to must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements equivalent to: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, part of the URL will contain these elements `api/pub/grp/v1.0/subscriptions`.
 
 ## Renewing the subscription
 
@@ -101,11 +106,11 @@ Here's a sample notification payload:
 }
 ```
 
-The change type is indicated by the `"changeType"` parameter:
+The `"changeType"` parameter indicates the change type:
 
 - `created`, `updated`, and `deleted` identify the state change for the entity.
 
-- `collection` means [!INCLUDE[prod_short](../../includes/prod_short.md)] sends a notification that many records have been created or changed. A filter is applied to the resource, enabling the subscriber to request all entities satisfying the filter.
+- `collection` means [!INCLUDE[prod_short](../../includes/prod_short.md)] sends a notification that many records are created or changed. A filter is applied to the resource, enabling the subscriber to request all entities satisfying the filter.
 
   Notifications aren't sent immediately when the record changes. By delaying notifications, [!INCLUDE[prod_short](../../includes/prod_short.md)] can ensure that only one notification is sent, even though the entity might have changed several times within a few seconds. By default, the system waits 30 seconds after the first change to an entity before it sends the notification. During the 30-second delay, if more than a 1,000 records are changed, a single `collection` notification is sent&mdash;otherwise, a separate notification is sent for each change. With Business Central on-premises, this time delay and notification limit are configurable.  
 
@@ -173,7 +178,7 @@ For Document APIs, a notification is sent for the header if a change is made to 
 Custom APIs are also webhook-enabled and are listed in **webhookSupportedResources** if [!INCLUDE[prod_short](../../includes/prod_short.md)] is able to send notifications for the entity.
 
 > [!NOTE]
-> Webhooks are not supported for APIs in the following cases:  
+> Webhooks aren't supported for APIs in the following cases:  
 >  
 > * The source table for the API page is a temporary table (SourceTableTemporary = true).
 > * The API page has a composite key (for example, if ODataKeyFields consists of several fields or is missing, then the primary key for the source table consists of several fields).
@@ -194,7 +199,7 @@ The [!INCLUDE[server](../../developer/includes/server.md)] includes several conf
 
 ## Notes for Power Automate flows
 
-Webhook notifications are used to trigger Power Automate flows from events in Business Central. However, the Business Central connector for Power Automate can't process `collection` notifications for flows. With  Business Central online, this condition means that if an event creates or changes more than 1,000 records within 30 seconds, the associated flow isn't triggered. The same applies to Business Central on-premises although the limit on the records depend on the [!INCLUDE[server](../../developer/includes/server.md)] configuration.
+Webhook notifications are used to trigger Power Automate flows from events in Business Central. However, the Business Central connector for Power Automate can't process `collection` notifications for flows. With  Business Central online, this condition means that if an event creates or changes more than 1,000 records within 30 seconds, the associated flow isn't triggered. The same applies to Business Central on-premises although the limits on the records depend on the [!INCLUDE[server](../../developer/includes/server.md)] configuration.
 
 ## Related information
 

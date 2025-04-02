@@ -84,5 +84,5 @@ Here is a JSON representation of the generalLedgerEntry resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET generalLedgerEntry](../api/dynamics_generalledgerentry_get.md)

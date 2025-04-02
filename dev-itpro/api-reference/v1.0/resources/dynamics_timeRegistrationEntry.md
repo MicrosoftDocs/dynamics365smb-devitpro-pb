@@ -68,7 +68,7 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-## See also
+## Related information
 
 [Error Codes](../dynamics_error_codes.md)  
 [timeRegistrationEntries](../resources/dynamics_timeregistrationentry.md)  

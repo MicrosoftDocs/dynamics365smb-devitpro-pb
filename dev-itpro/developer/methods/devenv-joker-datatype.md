@@ -27,7 +27,7 @@ procedure SetFilter(Field: Joker, String: Text, [Value: Joker, ...])
 procedure SetAscending(Field: Joker, Ascending: Boolean)
 ```
 
-## See also
+## Related information
 
 [AL method reference](../methods-auto/library.md)  
 [AL development environment](../devenv-reference-overview.md)  

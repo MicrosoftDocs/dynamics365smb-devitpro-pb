@@ -1,1 +1,1 @@
-Specifies the name of the tenant environment. See [Managing Environments](../administration/tenant-admin-center-environments.md).
+Specifies the name of the tenant environment. Learn more in [Managing Environments](../administration/tenant-admin-center-environments.md).

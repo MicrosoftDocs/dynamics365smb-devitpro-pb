@@ -97,7 +97,7 @@ codeunit 50100 QueryColumnAccess
 }
 ```
 
-## See Also
+## Related information
 
 [Query Object](devenv-query-object.md)  
 [Filtering Queries](devenv-query-filters.md)  

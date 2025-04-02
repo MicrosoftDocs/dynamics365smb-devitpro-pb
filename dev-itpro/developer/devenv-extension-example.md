@@ -99,7 +99,7 @@ table 50100 Reward
 }
 ```
 
-For more information about table properties, see [Table properties](properties/devenv-table-properties.md).
+Learn more about table properties in [Table properties](properties/devenv-table-properties.md).
 
 ## Reward card page object
 
@@ -151,7 +151,7 @@ page 50101 "Reward Card"
 }
 ```
 
-For more information about the types of pages in AL, see [Pages overview](devenv-pages-overview.md).
+Learn more about the types of pages in AL in [Pages overview](devenv-pages-overview.md).
 
 ## Reward list page object
 
@@ -205,7 +205,7 @@ page 50102 "Reward List"
 After you've created the objects, update the `startupObjectId` in the `launch.json` file to `50102`, which is the ID of the **Reward List** page and select the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut to see the new page in your sandbox environment. You're asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you haven't already done so.  
 
 > [!TIP]  
-> Information about your sandbox environment and other environments is stored as configurations in the `launch.json` file. For more information, see [JSON files](devenv-json-files.md).  
+> Information about your sandbox environment and other environments is stored as configurations in the `launch.json` file. Learn more in [JSON files](devenv-json-files.md).  
 
 ## Designer
 
@@ -245,7 +245,7 @@ To add the same fields and customize the **Reward Card** page, follow the next s
 
 After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the <kbd>Alt</kbd>+<kbd>F6</kbd> key shortcut from Visual Studio Code. You can also uninstall the extension from the **Extension Management** page. You can find the **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon and typing the page name.
 
-For more information about Designer, see [Designer](devenv-inclient-designer.md).  
+Learn more about Designer in this article [Designer](devenv-inclient-designer.md).  
 
 ## Customer table extension object
 
@@ -538,7 +538,7 @@ This walkthrough showed how an extension can be developed. The main AL objects a
 > [!TIP]  
 > To try building a more advanced Customer Rewards sample extension, see [Building an advanced sample extension](devenv-extension-advanced-example.md).
 
-## See also
+## Related information
 
 [Developing extensions](devenv-dev-overview.md)  
 [Get started with AL](devenv-get-started.md)  

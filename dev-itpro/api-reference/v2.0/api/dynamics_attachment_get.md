@@ -64,7 +64,7 @@ Here is an example of the response.
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [attachment](../resources/dynamics_attachment.md)    
 [Delete attachment](dynamics_attachment_Delete.md)    

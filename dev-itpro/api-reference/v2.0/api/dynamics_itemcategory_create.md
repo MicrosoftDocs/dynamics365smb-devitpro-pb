@@ -29,7 +29,6 @@ POST businesscentralPrefix/companies({id})/items(id)/itemCategory({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **itemCategory**, the **itemCategory** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of an **itemCategories** object.
@@ -72,7 +71,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [itemcategory](../resources/dynamics_itemcategory.md)    
 [Get itemcategory](dynamics_itemcategory_Get.md)    

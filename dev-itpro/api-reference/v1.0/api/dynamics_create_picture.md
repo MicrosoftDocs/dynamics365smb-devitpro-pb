@@ -50,7 +50,7 @@ PATCH https://{businesscentralPrefix}/api/v1.0/companies(companyId)/items(itemId
 
 No content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [Error Codes](../dynamics_error_codes.md)    
 [Picture](../resources/dynamics_picture.md)    

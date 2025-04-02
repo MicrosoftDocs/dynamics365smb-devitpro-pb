@@ -34,6 +34,12 @@ A copy of this string converted to lowercase.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The Text.ToLower method performs a culture-invariant transformation to lowercase. This guarantees consistent results regardless of the application's cultural context, which is particularly useful in scenarios requiring predictable string manipulation.
+For culture-variant method check [Text.LowerCase(Text)](./text-lowercase-method.md)
+
 ## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -57,7 +57,7 @@ The following table includes links to help you get started with designing the re
 |Learn how to help users discover the report.|[Report discoverability overview](devenv-reports-discoverability.md) |
 
 
-## See also
+## Related information
 
 [Report object](devenv-report-object.md)  
 [Report extension object](devenv-report-ext-object.md)  

@@ -103,7 +103,7 @@ Here is a JSON representation of the resource.
   ]
 ```
 
-## See also
+## Related information
 
 [Get Sales Credit Memo Line](../api/dynamics_salescreditmemoline_get.md)  
 [Create Sales Credit Memo Line](../api/dynamics_create_salescreditmemoline.md)  

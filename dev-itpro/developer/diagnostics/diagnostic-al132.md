@@ -21,6 +21,6 @@ ms.reviewer: solsen
 The referenced element does not contain a definition for the referenced member.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

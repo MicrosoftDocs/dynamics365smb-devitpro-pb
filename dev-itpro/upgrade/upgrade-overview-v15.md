@@ -385,7 +385,7 @@ CALTestRunner.fob
 2. Configure the server instance for migrating the custom base application extension and the test application (if you have one).
 
     ```
-    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"TestToolKit2", "publisher": "Default publisher"}]'
     ```
 
     This will configure the server instance to automatically install the base application and test application on tenants after the data upgrade. Alternatively, you can omit this step, in which case you will have to manually install the extensions manually.
@@ -585,7 +585,7 @@ Now, you can publish the Microsoft and 3rd-party extensions that were published 
     ** Set the Server**
 
     ```
-    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    Set-NAVServerConfiguration BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"TestToolKit2", "publisher": "Default publisher"}]'
     ```
 25. Publish and sync the test app extension to support Microsoft extension:
 
@@ -667,7 +667,7 @@ In version 15, with the move to AL, the only symbols required are the system sym
 ### Customization extensions
 Customization extensions are AL extensions that add functionality to the base application or system application. These extensions can be Microsoft (1st party) or 3rd party extensions. 3rd party extensions are extensions that your organization provides or extensions that are provided by others, such as from ISVs or from App Source.
   
-## See Also  
+## Related information  
 
 [Upgrade of an Unmodified Application](upgrade-unmodified-application.md)  
 [Technical Upgrade of Customized Application](upgrade-technical-upgrade-v14-v15.md)  

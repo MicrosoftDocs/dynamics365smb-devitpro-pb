@@ -27,7 +27,6 @@ POST businesscentralPrefix/companies({id})/projects
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **project**, the **project** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **project** object.
@@ -66,7 +65,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [project](../resources/dynamics_project.md)    
 [Get project](dynamics_project_Get.md)    

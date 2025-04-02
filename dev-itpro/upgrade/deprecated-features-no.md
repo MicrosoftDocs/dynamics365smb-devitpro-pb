@@ -32,7 +32,7 @@ When printing Norwegian sales documents, you can set up different tray numbers a
 
 [!INCLUDE [fields-obsolete-no](../includes/fields-obsolete-no.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

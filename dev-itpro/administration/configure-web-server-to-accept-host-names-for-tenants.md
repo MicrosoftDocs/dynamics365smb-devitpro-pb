@@ -40,7 +40,7 @@ Host names for the [!INCLUDE[webserver](../developer/includes/webserver.md)] can
   
 If you create a non-tenant specific app for SharePoint that accesses the [!INCLUDE[webserver](../developer/includes/webserver.md)] by using Microsoft Microsoft Entra ID, the resulting URL includes a parameter that specifies a SharePoint host URL. This parameter represents the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] that you've specified in the app manifest. You must enable a URL rewrite rule to accept the URL.  
   
-## See Also
+## Related information
 
  [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md)   
  [Configuring the Business Central Web Server](configure-web-server.md)   

@@ -318,6 +318,6 @@ You perform these tasks on each tenant that you want to upgrade.
 
     For more information, see [Uploading the License File](../cside/cside-upload-license-file.md)
 
-## See Also  
+## Related information  
  [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
  [Upgrading to Business Central](upgrading-to-business-central.md)

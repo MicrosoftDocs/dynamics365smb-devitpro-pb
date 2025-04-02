@@ -18,6 +18,6 @@ A package that satisfies the dependency on app with ID {0} with name '{1}' and p
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

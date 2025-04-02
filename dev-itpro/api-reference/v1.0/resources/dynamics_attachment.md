@@ -58,7 +58,7 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-## See also
+## Related information
 
 [Get Attachments](../api/dynamics_attachment_get.md)  
 [Create Attachment](../api/dynamics_attachment_create.md)  

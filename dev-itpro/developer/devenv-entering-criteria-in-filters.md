@@ -51,7 +51,7 @@ You can also combine the various format expressions:
 > [!NOTE]  
 > It's important that you enter only meaningful filters. For example, it's possible to specify an interval that doesn't exist, and the system can't check this for you. In order to enter meaningful filters, you must know the sorting rules for the field you're filtering on.
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)  
 

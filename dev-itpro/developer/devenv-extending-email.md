@@ -375,7 +375,7 @@ pageextension 50110 "Importance On Sent" extends "Sent Emails"
 }
 ```
 
-## See Also
+## Related information
 
 [Overview of the Application](devenv-system-application-overview.md)    
 [Set Up Email](/dynamics365/business-central/admin-how-setup-email)    

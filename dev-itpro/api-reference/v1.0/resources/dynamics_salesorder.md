@@ -108,7 +108,7 @@ Here is a JSON representation of the resource.
       "lastModifiedDateTime": "DateTime"
 }
 ```
-## See also
+## Related information
 
 [Get Sales Order](../api/dynamics_salesorder_get.md)  
 [Create Sales Order](../api/dynamics_create_salesorder.md)  

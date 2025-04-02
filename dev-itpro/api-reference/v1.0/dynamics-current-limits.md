@@ -35,7 +35,7 @@ See operational limits for [OData](../../administration/operational-limits-onlin
 See operational limits for [OData](../../administration/operational-limits-online.md#ODataServices) and [SOAP](../../administration/operational-limits-online.md#SOAPServices) requests.
 
 
-## See also
+## Related information
 
 [Working with API rate limits](dynamics-rate-limits.md)  
 [Best practices on transient errors](/azure/architecture/best-practices/transient-faults)  

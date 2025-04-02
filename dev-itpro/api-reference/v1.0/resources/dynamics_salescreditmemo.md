@@ -113,7 +113,7 @@ Here is a JSON representation of the resource.
       "invoiceNumber" : "string"
 }
 ```
-## See also
+## Related information
 
 [Get Sales Credit Memo](../api/dynamics_salescreditmemo_get.md)  
 [Create Sales Credit Memo](../api/dynamics_create_salescreditmemo.md)  

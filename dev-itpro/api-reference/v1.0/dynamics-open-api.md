@@ -58,7 +58,7 @@ To run SwaggerUI locally, node.js can be used to serve the SwaggerUI, by followi
 6) Browse to `https://localhost:3000`.
 7) To use **Try it out** authorization in SwaggerUI, a Microsoft Entra app must be created. [Follow these steps to create a Microsoft Entra app, with access to Business Central](../../developer/devenv-develop-connect-apps.md#set-up-microsoft-entra-id-based-authentication). Copy and paste the client ID from the Microsoft Entra app into the authorization dialog of SwaggerUI.
 
-## See Also 
+## Related information 
 
 [Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
 

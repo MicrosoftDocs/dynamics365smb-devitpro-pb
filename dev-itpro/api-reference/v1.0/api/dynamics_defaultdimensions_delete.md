@@ -50,7 +50,7 @@ DELETE https://{businesscentralPrefix}/api/v1.0/companies({companyId})/items({it
 
 No Content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [defaultDimension resource](../resources/dynamics_defaultDimension.md)  

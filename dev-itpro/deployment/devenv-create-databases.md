@@ -168,7 +168,7 @@ Complete the following steps to get the application up and running on your tenan
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
 
 
-## See also
+## Related information
 
 [Changing Collation of Existing Database](../cside/cside-change-database-collation.md)  
 [Multitenant Deployment Architecture in Business Central](Multitenant-Deployment-Architecture.md)  

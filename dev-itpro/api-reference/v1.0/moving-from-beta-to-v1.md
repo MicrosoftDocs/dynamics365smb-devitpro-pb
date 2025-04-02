@@ -46,7 +46,7 @@ Using Basic Auth:
 GET https://api.businesscentral.dynamics.com/v2.0/{tenant Id}/{environment}/api/v1.0/$metadata
 ```
 
-## See Also
+## Related information
 
 [Welcome to the API(v1.0) for Dynamics 365 Business Central](index.md)  
 [Endpoints for the APIs](endpoints-apis-for-dynamics.md)  

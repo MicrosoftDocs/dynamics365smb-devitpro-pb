@@ -4,7 +4,7 @@ description: A job queue log entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/30/2024
+ms.date: 04/09/2024
 ms.author: solsen
 ---
 
@@ -72,5 +72,5 @@ Here is a JSON representation of the jobQueueLogEntry resource.
 }
 ```
 
-## See Also
+## Related information
 [GET jobQueueLogEntry](../api/dynamics_jobqueuelogentry_get.md)  

@@ -172,7 +172,7 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     ```
     <!-- with test
     ```
-    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"TestToolKit2", "publisher": "Default publisher"}]'
     ```-->
     This setting serves the following purposes:
     
@@ -232,7 +232,7 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     ```
     <!-- with test
     ```
-    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"TestToolKit2", "publisher": "Default publisher"}]'
+    Set-NAVServerConfiguration -ServerInstance BC150 -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"BaseApp", "publisher": "Microsoft"},{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"TestToolKit2", "publisher": "Default publisher"}]'
     ```
     This will configure the server instance to modify the manifest of extensions with a dependency on the base application and automatically install the base application <!--and test application-- on tenants after the data upgrade. Alternatively, you can omit this step, in which case you'll have to manually install the extensions manually.
 
@@ -538,6 +538,6 @@ For each extension, run the Install-NAVApp cmdlet:
     ```
 -->
 
-## See also  
+## Related information  
 [Upgrading the Data](Upgrading-the-Data.md)   
 [Upgrading to Business Central](upgrading-to-business-central.md)  

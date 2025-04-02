@@ -40,7 +40,7 @@ var
     CompName: Text[1024];
     Text000: Label 'The name is %1.';
 begin
-    CompName := CompanyName;  
+    CompName := CompanyName();  
     Message(Text000, CompName);  
 end;
 ```  

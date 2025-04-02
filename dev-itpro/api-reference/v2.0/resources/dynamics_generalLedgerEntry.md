@@ -79,5 +79,5 @@ Here is a JSON representation of the generalLedgerEntry resource.
 
 
 
-## See Also
+## Related information
 [GET generalLedgerEntry](../api/dynamics_generalLedgerEntry_Get.md)

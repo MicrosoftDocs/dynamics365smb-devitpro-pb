@@ -29,7 +29,6 @@ PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/pictu
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **picture**, the **picture** will not be updated. |
 
 
 ## Request body
@@ -53,7 +52,7 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId
 
 No content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)
 [picture](../resources/dynamics_picture.md)
 [Get picture](dynamics_picture_Get.md)

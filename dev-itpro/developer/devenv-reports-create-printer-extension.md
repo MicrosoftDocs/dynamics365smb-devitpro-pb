@@ -429,7 +429,7 @@ The report object payload is a JSON object that includes several parameters and 
 
 The parameters can be read but not modified at runtime. For more information about the report payload, see [Report Payload](devenv-onafterdocumentprintready-event.md#reportpayload).
 
-## See Also  
+## Related information  
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
 [Developing Printer Extensions Overview](devenv-reports-printing.md)  

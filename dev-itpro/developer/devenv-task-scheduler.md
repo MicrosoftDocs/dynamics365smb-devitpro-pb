@@ -142,7 +142,7 @@ The task runs in a background session, which means that there's no user interfac
 The session runs by using the same user/credentials that are used when calling AL code. The user must have appropriate permissions to the codeunit and any other objects that are associated with the operation of the codeunit.
 
 > [!NOTE]  
-> The *delegated admins* can't schedule tasks. They can test the job queues by making a copy of the job and running it once in the foreground, but not as a recurrent or scheduled task. Learn more about limitations for delegated admins in [Restricted access to Business Central as delegated administrators](../administration/delegated-admin.md#restricted-access-to-business-central-as-delegated-administrator).
+> The *delegated admins* can't schedule tasks. They can test the job queues by making a copy of the job and running it once in the foreground, but not as a recurrent or scheduled task. Learn more about limitations for delegated admins in [Limitations for delegated administrators](../administration/delegated-admin.md#limitations-for-delegated-administrators).
 
 ## Task scheduler and performance
 

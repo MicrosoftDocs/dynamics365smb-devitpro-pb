@@ -224,7 +224,7 @@ The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits 
 For more information on report limits, see [Report limits](devenv-report-object.md#report-limits).
 
 
-## See Also
+## Related information
 
 [IncludeCaption property](properties/devenv-includecaption-property.md)  
 [Report Object](devenv-report-object.md)  

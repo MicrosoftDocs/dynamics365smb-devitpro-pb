@@ -86,6 +86,6 @@ You can help secure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 
 
  For more information, see [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md).  
 
-## See Also  
+## Related information  
  [Configure Internet Information Services](configure-iis.md)  
  [Configuring-the Business Central Web Server](../administration/configure-web-server.md)  

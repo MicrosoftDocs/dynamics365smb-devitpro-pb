@@ -167,7 +167,7 @@ For more information about updates, see [Major Updates and Minor Updates for Bus
 
 If you end the relationship with a customer where you have set up your email address as a notification recipient, you must remove the email address while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
-## See also
+## Related information
 
 [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

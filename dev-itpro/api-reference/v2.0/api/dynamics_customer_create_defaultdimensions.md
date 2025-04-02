@@ -78,7 +78,7 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/customers({
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 
 [Customer](../resources/dynamics_customer.md)  

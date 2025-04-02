@@ -32,7 +32,7 @@ You must handle exceptions in client code that calls a [!INCLUDE[prod_short](../
 
 For more information about common HTTP status codes and how to deal with them in your client code, see [Troubleshooting web service errors](./web-service-troubleshooting.md).
   
-## See also
+## Related information
 
 [Troubleshooting web service errors](web-service-troubleshooting.md)   
 [Web Services Overview](web-services.md)   

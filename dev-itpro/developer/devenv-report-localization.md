@@ -38,7 +38,7 @@ If none of these settings have been applied, the report will be formatted accord
 - In RLDC-based reports, the `FormatRegion` settings will determine the formatting that takes place on RDLC system properties using date/time and decimal data types, and columns where the data set definition doesn't use AL format functions to convert values to strings. The system format methods in the RDLC engine can't use the application language settings and all period names will be printed using the `FormatRegion` settings.
 - The `Language` field on the **Report Limits and settings** page and on the request page is filtered to the languages currently supported by the tenant. The `FormatRegion` field supports all available languages.
 
-## See Also
+## Related information
 
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  

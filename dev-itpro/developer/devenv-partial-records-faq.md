@@ -55,7 +55,7 @@ Compared to the time it takes to fetch data, the overhead is insignificant.
 
 - With [!INCLUDE [prod_short](includes/prod_short.md)] online, you can call the SetLoadFields method with no fields. Calling an empty SetLoadFields method will revert the behavior to what it was before [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2.
 
-## See Also
+## Related information
 
 [Performance Articles For Developers](../performance/performance-developer.md)  
 [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)  

@@ -28,7 +28,6 @@ POST businesscentralPrefix/companies({id})/items({id})/itemVariants({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **itemVariant**, the **itemVariant** will not be updated. |
 
 
 ## Request body
@@ -73,7 +72,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [itemvariant](../resources/dynamics_itemvariant.md)    
 [Get itemvariant](dynamics_itemvariant_Get.md)    

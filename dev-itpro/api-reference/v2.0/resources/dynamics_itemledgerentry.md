@@ -72,5 +72,5 @@ Here is a JSON representation of the itemLedgerEntry resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET itemLedgerEntry](../api/dynamics_itemledgerentry_get.md)

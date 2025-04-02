@@ -144,7 +144,7 @@ If a user selects either **Yes** or **No**, a signal is emitted and recorded in 
 
 For more information, see [Analyzing Error Message Quality Telemetry](../administration/telemetry-error-message-voting-trace.md).
 
-## See also
+## Related information
 
 [Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
 [Error message quality telemetry](../administration/telemetry-error-message-voting-trace.md)   

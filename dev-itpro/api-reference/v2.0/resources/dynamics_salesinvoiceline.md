@@ -116,7 +116,7 @@ Here is a JSON representation of the salesInvoiceLine resource.
 
 
 
-## See Also
+## Related information
 [GET salesInvoiceLine](../api/dynamics_salesInvoiceLine_Get.md)  
 [DELETE salesInvoiceLine](../api/dynamics_salesInvoiceLine_Delete.md)  
 [POST salesInvoiceLine](../api/dynamics_salesInvoiceLine_Create.md)  

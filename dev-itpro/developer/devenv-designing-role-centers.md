@@ -125,7 +125,7 @@ Users who work across multiple roles can easily switch Role Centers to shift the
 
 As a developer or administrator, you can use Designer to customize a Role Center the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the Role Center. For more information, see [Use Designer](devenv-inclient-designer.md).
 
-## See also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  

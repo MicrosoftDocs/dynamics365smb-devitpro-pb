@@ -255,7 +255,7 @@ It's also possible to use `#pragma` to suppress individual warnings for one or m
 ```
 
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  

@@ -57,7 +57,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
 
 [Get Picture](../api/dynamics_picture_get.md)  
 [Create Picture](../api/dynamics_create_picture.md)  

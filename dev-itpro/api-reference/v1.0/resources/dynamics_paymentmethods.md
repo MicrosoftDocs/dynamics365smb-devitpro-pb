@@ -56,7 +56,7 @@ Here is a JSON representation of the paymentMethods.
 }
 ```
 
-## See also
+## Related information
 
 [Get Payment Methods](../api/dynamics_paymentmethods_get.md)  
 [Create Payment Methods](../api/dynamics_create_paymentmethods.md)  

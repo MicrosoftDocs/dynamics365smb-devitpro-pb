@@ -1,11 +1,11 @@
 ---
 title: Use page scripting tool for acceptance testing (preview)
-description: Learn how to use the page scripting tool in the Business Central web client to record and replay your interaction with the user interface (UI).
+description: Learn how to use the page scripting tool in the Business Central web client to record and replay your interaction with the user interface (UI)
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 09/10/2024
+ms.date: 11/21/2024
 ms.custom: bap-template 
 ---
 
@@ -13,13 +13,20 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The page scripting tool in the Business Central web client lets you record your interactions with the user interface (UI), such as opening pages, selecting actions, filling in fields, and so on. You can then replay the recording to automatically replicate the exact same actions in the UI that were done during recording. As the recording is replayed, you receive real-time status feedback on whether an action succeeds or fails. A primary use of the page scripting tool is testing business processes and scenarios in the application and validating they continue to work as expected after changes or updates to the application. This testing is often referred to as user acceptance testing (UAT). The page scripting tool makes the testing easier and faster because it eliminates the need to manually go through each scenario in the UI.
+The page scripting tool in the Business Central web client lets you record your interactions with the user interface (UI), such as opening pages, selecting actions, and filling in fields. You can then replay the recording to automatically replicate the exact same actions in the UI that were done during recording. As the recording is replayed, you receive real-time status feedback on whether an action succeeds or fails.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
+
+## Use of the tool
+
+A primary use of the page scripting tool is testing business processes and scenarios in the application and validating they continue to work as expected after changes or updates to the application. This testing is often referred to as user acceptance testing (UAT). The page scripting tool makes the testing easier and faster because it eliminates the need to manually go through each scenario in the UI.
+
+You can use the page scripting on any Business Central environment type, including on-premises, online (production and sandbox), and Docker.
 
 ## What is captured?
 
 The page scripting tool captures both the user interactions with the UI and the resulting actions done by the application by its underlying source code. The page scripting tool focuses on capturing actions coming from executing AL code. It's not a generic HTML automation tool. For example, it can't automate control add-ins, embedded Power BI reports, or anything outside of the Business Central web client experience.
+
 
 ## Prerequisites
 
@@ -32,7 +39,7 @@ You can start the page scripting tool from the role central or any page. In the 
 
 The **Page Scripting** pane opens on the right side, as illustrated in the following figure:
 
-:::image type="content" source="media/page-scripting-2.svg" alt-text="Shows the page scripting pane in Business Central.":::
+:::image type="content" source="media/page-scripting-2.svg" alt-text="Screenshot of the page scripting pane in Business Central.":::
 
 Now you're ready to start a new recording or play an existing recording. 
 
@@ -58,24 +65,24 @@ The sections that follow explain other capabilities of the page scripting tool f
 
 ## Record
 
-This section outlines the basic steps to making a recording with the page scripting tool. Sections that follow explain specific details and aspects about recording. 
+This section outlines the basic steps to make a recording with the page scripting tool. Sections that follow explain specific details and aspects about recording. 
   
 1. Open the page where you want to start recording.
 
-1. In the **Page Scripting** pane, select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) button in the control bar at the top.
+1. Select the **Start new** button or the **New recording** ![new recording](media/new-recording-icon.png) button in the control bar at the top of the **Page Scripting** pane.
 
    The **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar turns red to indicate that you're recording.
 
 1. Go back to the page and run through the task that you want to record.
 
-   As you interact with the application, your interactions actions and the resulting actions done by the application itself are added in sequence as steps in the **Page Scripting** pane.
+   As you use the application, your actions and the application’s responses are added in sequence as steps in the **Page Scripting** pane.
 
-1. At any time during recording, you can do the following actions.
+1. At any time during recording, you can perform the following actions:
 
    - To pause recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button in the control bar.
    - To resume recording and continue actions, select the **Start recording** ![start recording](media/page-scripting-start-button.png) button in the control bar.
    - To delete the last captured step, select **...** next to the step and then select **Delete**.
-   - To hide the page scripting pane, select the upper most ![Shows the X button that hides the page scripting pane](media/page-scripting-hide-button.png) in the top right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
+   - To hide the page scripting pane, select the uppermost ![Shows the X button that hides the page scripting pane](media/page-scripting-hide-button.png) in the top right corner. Recording continues. To show the page scripting tool again, select **Settings** ![cog wheel](media/settings_icon_small.png) > **Page Scripting**.
    - To cancel recording and exit the page scripting tool, select the **Close recording** ![Shows the X button that closes the page scripting pane](media/page-scripting-hide-button.png) button in the **Recording** bar.
 
 1. When you're done recording, select the **Stop** ![stop recording](media/page-scripting-stop-button.png) button.
@@ -202,17 +209,18 @@ You can save the recording as YAML file that can be downloaded, shared, edited, 
 
 You can share a recording or a playback as a link (URL) that you can share with others. The link includes the full recording along with the results that occurred during playback. To share a recording as a link, select **Share** ![share recording](media/page-scripting-share-recording-button.png) > **Copy Link** in the control bar.
 
-## Best practices and tips
+## Best practices, tips, and considerations
 
-- Start recording from a well-known place, like the role center. Playback always starts from the current page.
-- When you select a value in a grid, filter it so that the desired value is the first one.
-- Create new entities to use in a test whenever possible. For example, create a new customer to use in the new sales order test.
-- Avoid dependencies on data that might not be available during playback.
-- Break down recording to small parts for easier maintenance, for example:
+- Begin recording from a well-known location, such as the role center. Remember, the playback always starts from the current page.
+- When you're selecting a value in a grid, filter it so that the desired value appears first.
+- Whenever possible, create new entities to use in a test. For example, create a new customer for the new sales order test.
+- Try not to depend on data that might not be available during playback.
+- Divide recordings into smaller parts for easier maintenance. For example:
   - Recording 1: setup user.
   - Recording 2: create customer.
   - Recording 3: create sales order.
   - Recording 4: post sales order.
+- Multiple line selections aren't recorded as expected. If you select multiple records in a list during a recording, only the last line selection is recorded and played back.
 
 ## Run page scripts in pipelines
 
@@ -222,7 +230,7 @@ You can run page scripts in your own pipelines, using the stand-alone bc-replay 
 
 Your machine must meet the following requirements:
 
-- NodeJs version 16.14.0 or later. You can download install the latest version from [https://nodejs.org](https://nodejs.org/en/download/package-manager).
+- NodeJs version 16.14.0 or later. You can download and install the latest version from [https://nodejs.org](https://nodejs.org/en/download/package-manager).
 - Windows PowerShell 7 or later. Learn more about installing PowerShell at [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 
 ### Preparation
@@ -250,7 +258,7 @@ Create the following folders on your machine:
 
 ### Get started running scripts
 
-To run the scripts, you'll need to know URL of your Business Central web client, like `http://localhost:8080/bc250/`.
+To run the scripts, you need to know URL of your Business Central web client, like `http://localhost:8080/bc250/`.
 
 1. Save the scripts you want to run to the folder you created for storing the scripts (For example, `c:\bc-replay\recordings`.).
 1. Run Window PowerShell as an administrator.
@@ -260,7 +268,7 @@ To run the scripts, you'll need to know URL of your Business Central web client,
    cd bc-replay
    ```
 
-1. Run the command to run scripts.
+1. To run scripts, use the following command.
 
    Use the following command to run a specific script, for example, `recording-1.yml`: 
 
@@ -307,15 +315,15 @@ File glob pattern to select the tests recordings to run
 
 `-StartAddress`
 
-The URLto the deployed web client.
+The URL to the deployed web client.
 
 `-Authentication`
 
-The authentication to use against the web client: `Windows`, `AAD`, `UserPassword`. `Windows` is default. It doesn't support multi-factor authentication. Use an account that requires only a username and password to sign in for your tests.
+The authentication to use against the web client: `Windows`, `AAD`, `UserPassword`. `Windows` is default. It doesn't support multifactor authentication. Use an account that requires only a username and password to sign in for your tests.
 
 `-UserNameKey` and `-PasswordKey`
 
-When `-Authentication` is set to `AAD` or `UserPassword` then a username and password must be given. These must be transferred as environment variables and `-UserNameKey` and `-PasswordKey` are used to specify which environment variables contain them.
+When `-Authentication` is set to `AAD` or `UserPassword` then a username and password must be given. The values must be transferred as environment variables and `-UserNameKey` and `-PasswordKey` are used to specify which environment variables contain them.
 
 `-Headed`
 

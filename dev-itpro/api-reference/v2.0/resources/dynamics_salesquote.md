@@ -182,7 +182,7 @@ Here is a JSON representation of the salesQuote resource.
 
 
 
-## See Also
+## Related information
 [GET salesQuote](../api/dynamics_salesQuote_Get.md)  
 [DELETE salesQuote](../api/dynamics_salesQuote_Delete.md)  
 [POST salesQuote](../api/dynamics_salesQuote_Create.md)  

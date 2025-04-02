@@ -117,7 +117,7 @@ Here is a JSON representation of the customer resource.
 
 
 
-## See Also
+## Related information
 [GET customer](../api/dynamics_customer_Get.md)  
 [DELETE customer](../api/dynamics_customer_Delete.md)  
 [POST customer](../api/dynamics_customer_Create.md)  

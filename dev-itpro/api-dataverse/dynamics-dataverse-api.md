@@ -40,7 +40,7 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 }
 ```
 
-## See also
+## Related information
 
 [company resource type](resources/dynamics_company.md)  
 [dataverseEntityChange resource type](resources/dynamics_dataverseentitychange.md)  

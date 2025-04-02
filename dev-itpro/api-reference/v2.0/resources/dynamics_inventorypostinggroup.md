@@ -52,5 +52,5 @@ Here is a JSON representation of the inventoryPostingGroup resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET inventoryPostingGroup](../api/dynamics_inventorypostinggroup_get.md)

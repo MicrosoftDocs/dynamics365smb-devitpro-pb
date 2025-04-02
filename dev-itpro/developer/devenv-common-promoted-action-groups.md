@@ -1,6 +1,6 @@
 ---
-title: "Common Promoted Action Groups"
-description: "Guidelines for organizing actions in the action bar for Dynamics 365 Business Central"
+title: Common Promoted Action Groups
+description: Learn about the common promoted action groups in Business Central, their characteristics, and how to use them.
 author: jacobwj
 ms.author: solsen
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 11/03/2022
 ms.reviewer: solsen
 ---
 
-# Common Promoted Action Groups
+# Common promoted action groups
 
 [!INCLUDE [prod_short](includes/prod_short.md)] defines the following common action groups as part of the standard application functionality. The list isn't exhaustive, but shows the most common action groups, their typical use, and the recommended use of the split button capability.  
 
@@ -34,7 +34,7 @@ ms.reviewer: solsen
 | Synchronize | For actions that set up data coupling to other systems, and for synchronizing data based on the couplings.<br> Used in these page types: Card (6), Document (2), List (15). | No | 
 
 
-## See also
+## Related information
 
 [Actions in AL](devenv-actions-overview.md)  
 [Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  

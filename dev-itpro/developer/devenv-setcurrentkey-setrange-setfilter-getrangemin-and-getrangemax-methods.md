@@ -96,7 +96,7 @@ BottomValue := Customer.GetRangeMin("No.");
 Value := Record.GetRangeMax(Field)  
 ```
 
-## See also
+## Related information
 
 [SetRange method](methods-auto/record/record-setrange-method.md)  
 [SetFilter method](methods-auto/record/record-setfilter-method.md)    

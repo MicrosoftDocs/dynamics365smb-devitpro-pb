@@ -261,7 +261,7 @@ manifest.json
 
 Now, you can deploy your package to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online service. See [Managing Embed Apps in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md) for more information.
 
-## See Also
+## Related information
 
 [Embed App Overview](../deployment/embed-app-overview.md)
 [Qualification and Onboarding](../deployment/embed-app-qualifications-onboarding.md)

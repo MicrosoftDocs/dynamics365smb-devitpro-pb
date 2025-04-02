@@ -18,6 +18,6 @@ Layouts of type '{0}' must specify a LayoutFile with one of the following extens
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

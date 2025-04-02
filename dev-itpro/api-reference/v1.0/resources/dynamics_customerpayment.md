@@ -82,7 +82,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
   
 [Get Customer Payments](../api/dynamics_customerpayment_get.md)  
 [Post Customer Payments](../api/dynamics_create_customerpayment.md)  

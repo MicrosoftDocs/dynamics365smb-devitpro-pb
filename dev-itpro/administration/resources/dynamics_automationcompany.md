@@ -55,7 +55,7 @@ Here is a JSON representation of the automationCompany resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET automationCompany](../api/dynamics_automationcompany_get.md)  
 [DELETE automationCompany](../api/dynamics_automationcompany_delete.md)  
 [POST automationCompany](../api/dynamics_automationcompany_create.md)  

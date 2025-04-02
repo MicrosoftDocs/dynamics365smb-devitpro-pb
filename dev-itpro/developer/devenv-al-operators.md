@@ -177,7 +177,7 @@ This expression evaluates to 14.
 ```
 This expression evaluates to 20.
 
-## See also
+## Related information
 
 [Arithmetic operators](devenv-al-arithmetic-operators.md)  
 [Boolean operators](devenv-al-boolean-operators.md)  

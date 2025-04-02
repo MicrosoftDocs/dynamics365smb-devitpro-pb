@@ -56,7 +56,7 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [bankaccount](../resources/dynamics_bankaccount.md)    
 [Delete bankaccount](dynamics_bankaccount_Delete.md)    

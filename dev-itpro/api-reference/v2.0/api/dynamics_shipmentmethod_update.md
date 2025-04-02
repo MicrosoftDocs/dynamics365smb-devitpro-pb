@@ -69,7 +69,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [shipmentmethod](../resources/dynamics_shipmentmethod.md)    
 [Get shipmentmethod](dynamics_shipmentmethod_Get.md)    

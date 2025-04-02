@@ -172,7 +172,7 @@ Each browser has its own definition of whether a FactBox is considered within vi
 
 This applies to desktop, tablet, and phone clients.
 
-## See also 
+## Related information 
  
 [Pages overview](devenv-pages-overview.md)   
 [Page and page extension properties overview](properties/devenv-page-property-overview.md)  

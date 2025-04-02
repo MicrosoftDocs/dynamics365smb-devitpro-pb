@@ -1,6 +1,6 @@
 ---
-title: "Attach and debug next"
-description: "Attach to a session on a specified server and debug for Web API sessions."
+title: Attach and debug next
+description: Attach to a session on a specified server and debug for Web API sessions.
 ms.custom: bap-template
 ms.date: 01/10/2024
 ms.reviewer: solsen
@@ -116,7 +116,7 @@ You can always add more breakpoints while debugging.
 8. Stop the attach debugging session by selecting **Detach** in the Visual Studio Code toolbar.
 
 
-## See Also  
+## Related information  
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  

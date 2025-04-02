@@ -18,6 +18,6 @@ A package with publisher '{0}', name '{1}', and a version compatible with '{2}' 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

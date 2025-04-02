@@ -99,7 +99,7 @@ For example, you have a **Vendors** table with all your vendors and a **Currency
   
 Furthermore, if you change one of the currency codes in the **Currency Code** table, then the change is automatically propagated to all tables that refer to this code.  
   
-## See Also  
+## Related information  
 
 [Overview of Tables](devenv-tables-overview.md)  
 <!-- [How to: Synchronize Table and SQL Server Relationships](How-to--Synchronize-Table-and-SQL-Server-Relationships.md)  

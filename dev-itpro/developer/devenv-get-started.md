@@ -2,7 +2,7 @@
 title: Get started with AL
 description: Description of how to get started with the AL development environment.
 author: SusanneWindfeldPedersen
-ms.date: 05/28/2024
+ms.date: 02/25/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -20,7 +20,7 @@ To start writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long
 Go through the following steps to set up a sandbox environment. Having set up a sandbox environment, you get sample code that compiles and runs with just a few commands. 
 
 > [!NOTE]  
-> If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
+> If you want to create a container-based sandbox, see [Get started with the container sandbox development environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Sandbox environments for Dynamics 365 Business Central development](devenv-sandbox-overview.md).
 
 > [!IMPORTANT]  
 > It's not supported to publish an extension from Visual Studio Code with the same identifiers as an extension, which is already published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
@@ -76,7 +76,7 @@ To modify the telemetry setting, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P<
 
 ## Installing and publishing an extension
 
-To make your extension available to users, the package must be published to a specific [!INCLUDE[prod_short](includes/prod_short.md)] server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
+To make your extension available to users, the package must be published to a specific [!INCLUDE[prod_short](includes/prod_short.md)] server instance. The extension can be installed for one or more tenants. Learn more about how to install and publish an extension in [Publishing and installing an extension](devenv-how-publish-and-install-an-extension-v2.md). 
 
 ## Controlling user access to develop and publish extensions
 
@@ -89,15 +89,24 @@ To prohibit a user from publishing, just remove the user from the **EXTEN. MGT. 
 > [!NOTE]  
 > The **EXTEN. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
 
+## Switching between different versions of AL
+
+You can switch to a prerelease version of the AL Language extension directly within Visual Studio Code. This is useful if you want to test new features or bug fixes that aren't yet available in the release version. To switch to a prerelease version of the AL Language extension, follow these steps:
+
+1. Open Visual Studio Code and choose the **Extensions** icon in the Activity Bar on the side of the window.
+2. Search for the **AL Language** extension.
+3. On the **AL Language** extension, choose the **Switch to Pre-Release Version** button and your extension is updated to the prerelease version.
+4. Likewise, to go back choose the **Switch to Release Version** button.
+
 ## Next steps
 
 Now that you have the tools and the `HelloWorld` example up and running, you might want to create a small sample app in AL. This walkthrough guides you to create an app adding objects, code, and publishing the app to your tenant. For more information, see [Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md).
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [FAQ for developing in AL](devenv-dev-faq.md)  
 [Syntax](devenv-syntax.md)  
 [Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md)  
 [AL Language extension configuration](devenv-al-extension-configuration.md)  
-[XML comments in code](devenv-xml-comments.md)
+[Documenting your code with XML comments](devenv-xml-comments.md)

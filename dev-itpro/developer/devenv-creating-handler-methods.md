@@ -1,13 +1,13 @@
 ---
-title: Create Handler Methods
+title: Create handler methods
 description: Create test codeunits, test methods, and test pages to test your application. To automate tests, create special handler methods for UI interactions. 
-ms.date: 08/12/2022
+ms.date: 01/08/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 author: blrobl
 ---
 
-# Create Handler Methods
+# Create handler methods
 
 You can create test codeunits, test methods, and test pages to test your application. We recommend that you create tests that can be automated. To create automated tests, you must write code to handle all UI interactions so that the tests don't require user interaction when they're running. To do this, you create special handler methods. 
   
@@ -42,12 +42,12 @@ end;
 
 The parameters of the methods that are being handled are passed as parameters to the handler methods. For example, when **Message** is called in a test method, the parameter of the **Message** method is passed as the parameter of the **MessageHandler** method. For page and report handlers, the page, report, or request page is passed as the parameter of the **PageHandler**, **ModalPageHandler**, **ReportHandler**, or **RequestPageHandler**.
 
-You can call handler methods from methods that have the [Test Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-test-attribute) and then specify the handler methods that it will use in the [HandlerFunctions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute). The code inside the test method should simulate that the UI was actually raised and some values entered or some actions were taken. You can specify more than one handler method by separating the handler method names with a comma. 
+You can call handler methods from methods that have the [Test attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-test-attribute) and then specify the handler methods that it uses in the [HandlerFunctions attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute). The code inside the test method should simulate that the UI was raised and some values entered or some actions were taken. You can specify more than one handler method by separating the handler method names with a comma.
 
 > [!NOTE]
-> Every handler method that you enter in the [HandlerFunctions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute) of a test method must be called at least one time in the test method. If you run a test method that has a handler method listed that isn't called, then the test fails.
+> Every handler method that you enter in the [HandlerFunctions attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute) of a test method must be called at least one time in the test method. If you run a test method that has a handler method listed that isn't called, then the test fails.
 
-The following example shows a test method that uses the [HandlerFunctions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute) to call the **MessageHandler** method.
+The following example shows a test method that uses the [HandlerFunctions attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute) to call the **MessageHandler** method.
 
 ```AL
 [Test]
@@ -60,7 +60,7 @@ begin
 end;
 ```
  
-## See Also  
+## Related information  
 
-[Testing the Application](devenv-testing-application.md)   
-[AL Methods](methods-auto/library.md)
+[Testing the application](devenv-testing-application.md)  
+[AL methods](methods-auto/library.md)

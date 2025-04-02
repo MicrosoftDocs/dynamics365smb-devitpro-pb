@@ -28,7 +28,7 @@ Before you begin the upgrade process, see [Important Information and Considerati
 You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] scripts to help you upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. You can use automation to upgrade a single [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database as well as multiple [!INCLUDE[navnow](../developer/includes/navnow_md.md)] databases that use the same application. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] provides sample scripts that you can adapt for your deployment architecture.
 For more information, see[Automating the Upgrade Process using Sample Windows PowerShell Scripts]().-->  
 
-## See Also
+## Related information
 
 [Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](upgrading-to-business-central.md)  
 [Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Online](upgrading-to-business-central-online.md)  

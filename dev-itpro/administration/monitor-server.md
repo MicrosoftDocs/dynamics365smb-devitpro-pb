@@ -23,6 +23,6 @@ These articles describe the features for monitoring and troubleshooting [!INCLUD
 
 [Troubleshooting: Using Query Store to Monitor Query Performance](troubleshoot-query-performance-using-query-store.md)
 
-## See Also
+## Related information
 [Monitoring SQL Database Locks](monitor-database-locks.md)  
 

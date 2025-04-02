@@ -21,6 +21,6 @@ The field '{0}' is not found in the target '{1}'.
 The referenced field is missing.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

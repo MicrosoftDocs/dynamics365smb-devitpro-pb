@@ -37,6 +37,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`ListPart`|A page that is embedded in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below the repeater.|
 |`HeadlinePart`|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|Single entity|Single group of fields representing headlines.|
 |`PromptDialog`|A page that enables creating generative AI experiences with the copilot look and feel|Single or collection. Learn more in [PromptDialog page type](devenv-page-type-promptdialog.md).||
+|`UserControlHost`|The `UserControlHost` is used to render a single user control in the client. The layout is optimized by the client to maximize the available space for the user control. Learn more in [UserControlHost page type](devenv-page-type-usercontrolhost.md).|
 
 ### The two principal categories of page types
 
@@ -235,7 +236,7 @@ Given the size of the screen where the dialog appears, more or less of the page 
 >
 > In version 24 (runtime 14) and earlier, the [Importance property](properties/devenv-importance-property.md) is ignored on `StandardDialog` and `ConfirmationDialog` page types. This behavior means that a field can't be hidden under the **Show more** action even if the user tries to do so using personalization or designer. However, starting in version 25 (runtime 15), the property is fully respected in the client so it behaves the same as it does on any other page type. As a result, after upgrading to version 25, users might have a slightly different experience on some `StandardDialog` and `ConfirmationDialog` page types.
  
-## See also
+## Related information
 
 [Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  
 [PageType property](properties/devenv-pagetype-property.md)  

@@ -90,7 +90,7 @@ This will assign the Premium plan to the admin user in the database.
 > [!TIP]  
 > To set up test users, you can clone the [createtestusers](https://github.com/businesscentralapps/createtestusers) repository and modify the code to create the users on the `oninstall` trigger with the password that you want.
 
-## See also
+## Related information
 
 [Programming in AL](devenv-programming-in-al.md)    
 [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md)    

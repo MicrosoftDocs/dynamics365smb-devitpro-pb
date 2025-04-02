@@ -564,7 +564,7 @@ The following code snippet is a CustomDimensions example for a successful report
 -->
 
  
-## See also
+## Related information
 
 [Report performance](../developer/devenv-report-performance.md)   
 [Troubleshooting report errors](../developer/devenv-reports-troubleshooting.md)  

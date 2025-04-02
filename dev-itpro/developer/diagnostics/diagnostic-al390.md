@@ -21,6 +21,6 @@ The date formula '{0}' must include a time unit. Time units can be: D,WD,W,M,Q, 
 A date formula must include a time unit.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

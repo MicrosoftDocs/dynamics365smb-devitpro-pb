@@ -58,7 +58,7 @@ environment.OnClosed = function()
   
 ```  
   
-## See also 
+## Related information 
 
 [AL method reference](../methods-auto/library.md)  
 [GetImageResource method](devenv-getimageresource-method.md)   

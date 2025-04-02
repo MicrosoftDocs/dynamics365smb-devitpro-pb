@@ -160,7 +160,7 @@ To help you design shortcuts, keep the following information in mind:
   - If a shortcut's defined on the page in the focused part and the main page, the focused part's action is triggered. Shortcut's defined in the part take precedence. 
   - Be careful when defining shortcut keys that might already be defined in the context of the page being developed. If a duplicated shortcut is found, only the first defined shortcut will be respected, even if the action, which the shortcut is defined on, isn't enabled. If the action isn't visible, the visible action with the same shortcut key is triggered. This consideration is only relevant when defining duplicated shortcuts within the same main page or the same part, like when there is a shortcut defined in the main page and also defined in a part, the above behavior applies with focused parts.
 
-## See also  
+## Related information  
 
 [Actions overview](devenv-actions-overview.md)  
 [Pages overview](devenv-pages-overview.md)  

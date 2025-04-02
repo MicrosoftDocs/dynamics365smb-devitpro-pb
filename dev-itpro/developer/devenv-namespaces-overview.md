@@ -89,7 +89,7 @@ using MyNamespace.MyNestedNamespace
 > [!TIP]  
 > Use code actions to help add namespaces to existing source. For more information, see [Code actions](devenv-code-actions.md).
 
-## See also
+## Related information
 
 [Development in AL](devenv-dev-overview.md)  
 [Programming in AL](devenv-programming-in-al.md)  

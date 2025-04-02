@@ -21,6 +21,6 @@ Duplicate package dependency with publisher '{0}', and name '{1}'. Remove duplic
 Multiple package dependencies with the same publisher and name have been defined.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

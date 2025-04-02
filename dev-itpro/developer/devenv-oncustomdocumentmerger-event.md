@@ -136,7 +136,7 @@ The simplest possible custom document render can be implemented like the followi
     end;
 ```
 
-## See also
+## Related information
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)
 [Developing Report Custom Render Extensions Overview](devenv-report-custom-render.md)

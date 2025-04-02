@@ -101,7 +101,7 @@ Here is a JSON representation of the contact resource.
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
-## See Also
+## Related information
 [GET contact](../api/dynamics_contact_get.md)  
 [DELETE contact](../api/dynamics_contact_delete.md)  
 [POST contact](../api/dynamics_contact_create.md)  

@@ -12,7 +12,10 @@ ms.reviewer: jswymer
 
 This article describes how to upgrade a customized version 14 application to a version 25 solution that uses the Microsoft system and base applications.
 
-[![Shows the upgrade of an unmodified Business Central v25 application.](../developer/media/bc14-to-25-cal-upgrade-to-base-app.svg)](../developer/media/bc14-to-25-cal-upgrade-to-base-app.svg#lightbox) 
+> [!NOTE]
+> Starting in 2025 release wave 1 (v26), the direct upgrade from Business Central 2019 (v14) to the latest release isn't supported. The supported upgrade path is through 2024 release wave 2 (v25), then to v26. Learn more in [Deprecated features in the platform - clients, server, and database](deprecated-features-platform.md#changes-in-2025-release-wave-1-version-260).
+
+[![Shows the upgrade of an unmodified Business Central v25 application.](../developer/media/bc14-to-25-cal-upgrade-to-base-app.svg)](../developer/media/bc14-to-25-cal-upgrade-to-base-app.svg#lightbox)
 
 ## Overview
 
@@ -767,7 +770,11 @@ For more information, see [To export and import a permission set](/dynamics365/b
         > [!NOTE]
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
-## See Also  
+## Next steps
+
+To upgrade to version 26.0, follow the instructions in [Upgrading Microsoft System and Base Application to Version 26](upgrade-unmodified-application-to-v26).  
+
+## Related information  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

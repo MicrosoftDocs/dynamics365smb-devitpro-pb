@@ -54,7 +54,7 @@ Here is a JSON representation of the company.
 }
 ```
 
-## See Also
+## Related information
   
 [Get Companies](../api/dynamics_companies_get.md)  
 [Company Information](dynamics_companyinformation.md)  

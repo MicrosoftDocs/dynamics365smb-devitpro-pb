@@ -73,7 +73,7 @@ For more information, see [JSON Files](../devenv-json-files.md).
 
 ```
 
-## See also
+## Related information
 
 [Development in AL](../devenv-dev-overview.md)  
 [AL development environment](../devenv-reference-overview.md)  

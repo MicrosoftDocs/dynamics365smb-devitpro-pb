@@ -73,7 +73,7 @@ The illustration shows examples of how translations for a page caption, a contro
 > For **Enum Caption** an additional search marked with *) in the above illustration is added with [!INCLUDE[prod_short](../includes/prod_short.md)] version 18.3.
 
 
-## See Also
+## Related information
 
 [Working with Translation Files](devenv-work-with-translation-files.md)  
 [CaptionML Property](properties/devenv-captionml-property.md)  

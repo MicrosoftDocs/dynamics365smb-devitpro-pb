@@ -111,7 +111,7 @@ Here is an example of the response.
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesinvoice](../resources/dynamics_salesinvoice.md)    
 [Delete salesinvoice](dynamics_salesinvoice_Delete.md)    

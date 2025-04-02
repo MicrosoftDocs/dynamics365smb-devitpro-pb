@@ -1,49 +1,56 @@
 ---
-title: "Missing Indexes in Dynamics 365 Business Central"
-description: "Description about missing indexes and database missing indexes page"
+title: Missing Indexes in Business Central databases
+description: Description about missing indexes and database missing indexes page
 author: jswymer
-ms.date: 06/09/2022
+ms.date: 03/21/2025
 ms.topic: conceptual
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
-# Missing Indexes in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]
+# Missing indexes in Business Central databases
 
-This article gives an insight about missing indexes for administrators and developers. **Database Missing Indexes** will help administrators and developers to enhance the performance of their applications.
+This article gives an insight about missing indexes for administrators and developers. **Database Missing Indexes** help administrators and developers to enhance the performance of their applications.
 
 ## Indexes overview
 
 [!INCLUDE[indexes_overview_md](../includes/indexes_overview.md)]
 
-For more information on indexes and their types, see [Clustered and nonclustered indexes described](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described).
+Learn more about indexes and their types in [Clustered and nonclustered indexes described](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described).
 
 ## Missing indexes
 
-When you run a database query, the query optimizer, which is an important database component, analyzes and chooses the best possible plan to complete the instruction. In doing so, it provides additional information about the ongoing operation that the operation might perform well if the particular column (or columns) is indexed. The SQL server's Query optimizer gets this information from Dynamic Management Views (DMV), in our case, [sys.dm_db_missing_index_details](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql). *sys.dm_db_missing_index_details* returns details about missing indexes, which will help you in creating right indexes.
+When you run a database query, the query optimizer, which is an important database component, analyzes and chooses the best possible plan to complete the instruction. In doing so, it provides additional information about the ongoing operation that the operation might perform well if the particular column (or columns) is indexed. The SQL server's Query optimizer gets this information from Dynamic Management Views (DMV), in our case, [sys.dm_db_missing_index_details](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql). *sys.dm_db_missing_index_details* returns details about missing indexes, which help you in creating right indexes.
 
-To learn how to use missing index suggestions to effectively tune indexes and improve query performance, go to [Tune nonclustered indexes with missing index suggestions](/sql/relational-databases/indexes/tune-nonclustered-missing-index-suggestions)
+Learn how to use missing index suggestions to tune indexes and improve query performance in [Tune nonclustered indexes with missing index suggestions](/sql/relational-databases/indexes/tune-nonclustered-missing-index-suggestions)
 
-To know more about Dynamic Management Views (DMV), see [System Dynamic Management Views (Transact-SQL)](/sql/relational-databases/system-dynamic-management-views/system-dynamic-management-views).
+Learn about Dynamic Management Views (DMV) in [System Dynamic Management Views (Transact-SQL)](/sql/relational-databases/system-dynamic-management-views/system-dynamic-management-views).
 
-To understand how AL plays a part in efficient data access with SQL components, see [Efficient data access](../performance/performance-developer.md#efficient-data-access).
+Learn how AL plays a part in efficient data access with SQL components in [Efficient data access](../performance/performance-developer.md#efficient-data-access).
 
-## Database missing indexes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+### View missing indexes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-To get information on missing indexes, go to **Database Missing Indexes** in Business Central, and you'll see the data in the following columns:
+To get information on missing indexes, open to the **Database Missing Indexes** page in Business Central and view the data in the following columns:
 
 |Column|Description|
 |------|-----------|
 | **Table Name**|The name of the table on which the suggested columns are based.|
 | **Extension Id**|The ID of your application to which this data is related.|
 |**Index Equality Columns**|The data in these columns is based on equality queries. For example, “Select * from customer where id = 021”|
-| **Index Inequality Columns**|The data in these columns comes from queries, which aren't based on equality operations. For example, “Select * from customer where id < 200”|
-| **Index Include Columns**|These columns have a copy of associated data for fast retrieval of information, which is based on the columns suggested in *Index Equality Columns* and *Index Inequality Columns*. Include columns aren't indexed columns themselves but point to the additional information linked to the indexed columns. For example, they include the fields in the "Select" part.|
+| **Index Inequality Columns**|The data in these columns comes from queries, which aren't based on equality operations. For example, `Select * from customer where id < 200`|
+| **Index Include Columns**|These columns have a copy of associated data for fast retrieval of information, which is based on the columns suggested in `Index Equality Columns` and `Index Inequality Columns`. Include columns aren't indexed columns themselves but point to the additional information linked to the indexed columns. For example, they include the fields in the `Select` part.|
+| **Seeks**`\*|Number of seeks caused by queries that could have used the suggested index.|
+| **Scans**\*|Number of scans caused by queries that could have used the suggested index.|
+|**Average Total Costs**\*|Average cost of the queries that would be reduced if the suggested index was added.|
+| **Average Impact**\*|Average percentage benefit for queries if the suggested index was added. The value means that the cost would drop on average by this percentage if the suggested index was added.|
+| **Estimated Benefit**\*|The estimated benefit of adding the suggested index is calculated as: (seeks + scans) x (average total costs) x (average impact). For example, consider a query that seeks 5 times, scans 10 times, and currently costs 10. If the impact drops 50% by adding the suggested index, then the benefit is (5 + 10) x 10 x 50.|
 
-> [!Important]
-> The information provided on **Database Missing Indexes** page are the suggestions and must not be taken as mandatory actions. You need to analyze where and how many indexes are best suited for optimal performance of your application. Indexes also take storage space, can affect updates for the tables where insertions and deletions are more common, and therefore can be an expensive operation if you overdo it.
+\*Applies to 2025 release wave 1 (version 26.0) and later
 
-## See Also
+> [!IMPORTANT]
+> The information provided on the **Database Missing Indexes** page is a suggestion and isn't mandatory. Analyze where and how many indexes are best suited for optimal performance of your application. Indexes take storage space, can affect updates for tables with frequent insertions and deletions, and can be an expensive operation if overused.
+
+## Related information
 
 [Performance Article For Developers](../performance/performance-developer.md)  
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  

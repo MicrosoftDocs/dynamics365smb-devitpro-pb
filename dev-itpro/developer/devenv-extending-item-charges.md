@@ -197,7 +197,7 @@ In the new codeunit, add a subscriber to the **OnAssignItemCharges** event.
 ```
 
 
-## See Also
+## Related information
 
 [Extending Application Areas](devenv-extending-application-areas.md)    
 [Module System Application](/dynamics365/business-central/application/system-application/module/system-application)    

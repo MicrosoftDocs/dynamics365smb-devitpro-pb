@@ -31,7 +31,7 @@ For more information about the objects that you can create for your extension, s
 These objects are stored as code, known as AL code, and are saved in files with the `.al` file extension. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality, which allows you to work with multiple AL folders within one workspace. For more information on how to group a set of disparate project folders into one workspace, see [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md).
 
 > [!NOTE]  
-> A single .al file may contain multiple objects, however, it's a best practice to have one object per file.
+> A single .al file might contain multiple objects, however, it's a best practice to have one object per file.
 
 Table extension objects and page extension objects are used to add or override changes to table or page objects. For example, consider a business that sells organic food, and the business wants to add two extra fields; `Organic` and `Local Produce` in its existing item table. The business uses a table extension object to define those extra fields. The table extension makes the newly added fields available for use in the item table. You can store data in these fields and access them by code. You can then use the page extension object to display the fields in the UI.
 
@@ -53,7 +53,7 @@ Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md
 - Provides efficient publishing process. You can publish and see your code running by just selecting <kbd>Ctrl</kbd>+<kbd>F5</kbd>.
 
 > [!NOTE]
-> For some users the <kbd>Ctrl</kbd>+<kbd>F5</kbd>  shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** menu in Visual Studio Code.  
+> For some users the <kbd>Ctrl</kbd>+<kbd>F5</kbd>  shortcut key might not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** menu in Visual Studio Code.  
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
@@ -63,7 +63,7 @@ Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md
 
 ## Extending the functionality of Business Central
 
-You can extend the functionality of Business Central in several ways: you can extend tables, enumerations, application areas, pages, reports, code flows and the security model directly in AL. But you can also contribute directly to the base application in the open source projects for the system application modules.
+You can extend the functionality of Business Central in several ways: you can extend tables, enumerations, application areas, pages, reports, code flows, and the security model directly in AL. But you can also contribute directly to the base application in the open source projects for the system application modules.
 
 For more information on the extensibility options available to AL developers in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] including examples on how to extend various features, such as extending item charges, best price calculations, and data archiving, see [Extensibility overview](devenv-extensibility-overview.md).
 
@@ -83,12 +83,12 @@ Extensions are compiled as .app package files. The .app package file can be depl
 
 After development and testing are done, you can submit your extension package to AppSource. Before you submit the extension package, we encourage you to read the checklist to facilitate the validation process. For more information, see [Checklist for submitting your app](devenv-checklist-submission.md). To get code validation helping you to bring your extension package to AppSource, you can enable the AppSourceCop code analyzer. For more information, see [Using the code analysis tool](devenv-using-code-analysis-tool.md).
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)  
 [Get started developing Connect apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Keyboard shortcuts](devenv-keyboard-shortcuts.md)  
 [AL development environment](devenv-reference-overview.md)  
-[XML comments in code](devenv-xml-comments.md)  
+[Documenting your code with XML comments](devenv-xml-comments.md)  
 [FAQ for developing in AL](devenv-dev-faq.md)  
 [Sending extension telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  

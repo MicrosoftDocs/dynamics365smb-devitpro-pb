@@ -20,11 +20,12 @@ Environments that have extensions with name collisions can experience issues whe
 
 ## General rules
 
-- The prefix/suffix must be at least three characters
+- The prefix/suffix must be at exactly three characters
 - The object/field name must start or end with the prefix/suffix
 - If a conflict arises, the one who registered the prefix/suffix always wins
-- For your own objects, you must set the prefix/suffix at the top object level
-- For pages/tables/enums/reports/permissionsets in the base application or other apps that you extend, you must set the prefix/suffix at the top object level and also at the control/field/action/procedure/values/dataitem/column level
+- For your own objects and extension objects, you can either use a namespace of at least two levels or you must set the prefix/suffix at the top object level
+- For pages/tables/enums/reports/permissionsets in the base application or other apps that you extend, you must set the prefix/suffix at the control/field/action/procedure/values/dataitem/column level
+- For extension objects that extend objects from the same publisher as your app, affixes aren't needed at the control/field/action/procedure/values/dataitem/column level
 - Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks that the analyzer does. For prefix/suffix detection, refer to the Configuration section. It explains how to set your affixes in the AppSourceCop.json file.
 
 ## Affixes requirements for extensions
@@ -37,7 +38,7 @@ Environments that have extensions with name collisions can experience issues whe
 
 In order to meet the requirements for the AppSource technical validation, you must have a three letters affix registered for your extension publisher, and you must use the affix in your extension.
 
-If you don't have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) and provide us with the following information to reserve the prefix/suffix of your choosing:
+If you don't have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com?subject=Affix%20Registration%20Request&body=MPN%20ID%3A%20%3CMPN%20ID%20in%20Partner%20Center%3E%0APublisher%20Name%3A%20%3Cthe%20publisher%20name%20that%20you%20use%20in%20your%20extensions%20(in%20the%20app.json%20file)%3E%0AAffixes%3A%20%3Cfive%20affix%20suggestions%20(each%20exactly%20three%20characters%20long)%20in%20order%20of%20priority%3E) and provide us with the following information to reserve the prefix/suffix of your choosing:
 
 - Your MPN ID,
 - The publisher name that you use in your extensions (in the app.json file),
@@ -55,11 +56,20 @@ Per-tenant extensions aren't required to use a prefix or suffix, but we strongly
 > [!NOTE]
 > If your per-tenant extension causes a conflict with a new object in the base application or an updated AppSource app, then the per-tenant extension will be required to make the change.
 
-## Examples of objects with affixes
+## Examples of objects with affixes or namespaces
 
-Declare your objects with a prefix or suffix as shown in the following examples.
+Use a two-level namespace for your top-level objects to avoid needing affixes. Otherwise, declare your objects with a prefix or suffix as shown in the following examples.
 
 ### Table
+
+```AL
+namespace MyUniquePublisherName.Sales;
+
+table 70000000 Salesperson
+{
+    Caption = 'Sales Person';
+}
+```
 
 ```AL
 table 70000000 MyPrefixSalesperson
@@ -78,6 +88,15 @@ table 70000001 SalespersonMySuffix
 ### Page
 
 ```AL
+namespace MyUniquePublisherName.Sales;
+
+page 70000000 Salesperson
+{
+    Caption = 'Sales Person';
+}
+```
+
+```AL
 page 70000000 MyPrefixSalesperson
 {
     Caption = 'Sales Person';
@@ -92,6 +111,8 @@ page 70000001 SalespersonMySuffix
 ```
 
 ### Page extension objects
+
+For extension objects which are extending other publishers' objects, affixes are required.
 
 ```AL
 actions
@@ -120,6 +141,11 @@ actions
 ```
 
 ### Codeunit
+```AL
+namespace MyUniquePublisherName.Sales;
+
+codeunit 70000000 Salesperson
+```
 
 ```AL
 codeunit 70000000 MyPrefixSalesperson
@@ -168,7 +194,7 @@ At Fabrikam, another team is building another app, so you request a special affi
 
 In this scenario, your AppSourceCop.json file configuration specifies `fab-rentals` and `rentals-fab` as values for `mandatoryaffixes`, even though only *fab* was registered with Microsoft.
 
-## See Also
+## Related information
 
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-[Rules and Guidelines for AL Code](apptest-overview.md)  
+[Checklist for submitting your app](../developer/devenv-checklist-submission.md)  
+[Rules and guidelines for AL code](apptest-overview.md)  

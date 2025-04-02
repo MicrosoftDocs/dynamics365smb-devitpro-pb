@@ -106,7 +106,7 @@ codeunit 50101 MySubscribers
 }
 ```
 
-## See also
+## Related information
 
 [Publishing events](devenv-publishing-events.md)   
 [Raising events](devenv-raising-events.md)   

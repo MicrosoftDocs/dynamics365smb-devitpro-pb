@@ -1,8 +1,8 @@
 ---
-title: "Page customization object"
-description: "Description of the page customization object in AL for Business Central    ."
+title: Page customization object
+description: The page customization object in Business Central allows you to add changes to the layout and actions on page that are accessible for a profile.
 author: SusanneWindfeldPedersen
-ms.date: 08/21/2023
+ms.date: 01/30/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -10,21 +10,22 @@ ms.reviewer: solsen
 
 # Page customization object
 
-The page customization object in [!INCLUDE [prod_short](includes/prod_short.md)] allows you to add changes to the layout and actions on page that are accessible for a profile. See [Using keywords to place actions and controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls) for how to place actions and controls on a page customization object.
+The page customization object in [!INCLUDE [prod_short](includes/prod_short.md)] allows you to add changes to the layout and actions on page that are accessible for a profile. The page customization object has more restrictions than the [page extension object](devenv-page-ext-object.md); when you define a new page customization object, you can't add variables, procedures, or triggers. You can add actions, fields, and groups to the page customization object.
 
-The page customization object has more restrictions than the [page extension object](devenv-page-ext-object.md); when you define a new page customization object, you cannot add variables, procedures, or triggers. 
+Learn how to use specific keywords to change the page customization layout in [Using keywords to place actions and controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls).
+
 
 > [!NOTE]  
-> A single page customization can be used with multiple profiles within the same extension. Page customizations only apply to the RoleCenters they are specified for. In order to view or changes the RoleCenters in the client, go to **My Settings**, and then choose **Role Center**. 
+> A single page customization can be used with multiple profiles within the same extension. Page customizations only apply to the RoleCenters they're specified for. In order to view or changes the RoleCenters in the client, go to **My Settings**, and then choose **Role Center**. 
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!NOTE]  
-> Modifying actions in Cue groups on page extensions is not supported.
+> Modifying actions in Cue groups on page extensions isn't supported.
 
 > [!NOTE]  
-> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` doesn't apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied Use Designer. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
+> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` doesn't apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied using Designer. Learn more in [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
 
 ## Snippet support
@@ -35,7 +36,7 @@ Typing the shortcut `tpagecust` creates the basic layout for a page customizatio
 
 ## Views
 
-Views in [!INCLUDE [prod_short](includes/prod_short.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
+Views in [!INCLUDE [prod_short](includes/prod_short.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customizations](devenv-page-customization-object.md). Learn more in [Views](devenv-views.md).
 
 
 ## Page customization example
@@ -82,7 +83,7 @@ profile TheSalesman
 
 [!INCLUDE [2023-releasewave2](../includes/2023-releasewave2.md)]
 
-You can add groups and page fields using a table field as source expression in page customizations as illustrated in the following example:
+You can add groups and page fields using a table field as source expression in page customizations as illustrated in the following example. 
 
 ```al
 pagecustomization MyPageCust customizes MyPage
@@ -97,15 +98,15 @@ pagecustomization MyPageCust customizes MyPage
 }
 ```
 
-To specify if a table field can be used as a source expression for page fields that are created in page customizations, use the [AllowInCustomizations](properties/devenv-allowincustomizations-property.md). Default is that a table field can be used in such a way.
+To specify if a table field can be used as a source expression for page fields that are created in page customizations, use the [AllowInCustomizations](properties/devenv-allowincustomizations-property.md). The default behavior is that a table field *can* be used in such a way.
 
 
-## See Also
+## Related information
 
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Page Object](devenv-page-object.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Page object](devenv-page-object.md)  
+[Page extension object](devenv-page-ext-object.md)  
 [Views](devenv-views.md)  
-[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
+[Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  
 [AllowInCustomizations](properties/devenv-allowincustomizations-property.md)  

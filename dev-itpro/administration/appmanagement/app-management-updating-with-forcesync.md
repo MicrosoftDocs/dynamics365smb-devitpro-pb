@@ -51,7 +51,7 @@ You can always switch to the normal sync mode for an app issuing another PATCH r
 }
 ```
 
-## See Also
+## Related information
 
 [App Management API](app-management-api.md)  
 [Manage Apps in the Business Central Administration Center](../tenant-admin-center-manage-apps.md)   

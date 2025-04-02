@@ -345,7 +345,7 @@ For more information on how to configure report limits in [!INCLUDE[prod_short](
 > [!NOTE]
 > For Excel layouts and the ability to get report data in Excel without a layout, you also need to take Excel limits into consideration. Learn more in [Excel limits](../administration/operational-limits-online.md#Excel).
 
-## See also
+## Related information
 
 [Report Extension Object](devenv-report-ext-object.md)  
 [Using request pages with reports](devenv-request-pages-for-reports.md)  

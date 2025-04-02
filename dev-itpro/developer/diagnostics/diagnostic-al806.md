@@ -21,6 +21,6 @@ The object ID '{0}' should not be surrounded with quotes.
 Quoted identifiers should not be used to specify object IDs. Integer literals should be used instead.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

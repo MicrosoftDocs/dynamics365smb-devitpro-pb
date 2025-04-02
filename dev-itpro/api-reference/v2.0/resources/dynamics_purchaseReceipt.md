@@ -118,5 +118,5 @@ Here is a JSON representation of the purchaseReceipt resource.
 
 
 
-## See Also
+## Related information
 [GET purchaseReceipt](../api/dynamics_purchaseReceipt_Get.md)

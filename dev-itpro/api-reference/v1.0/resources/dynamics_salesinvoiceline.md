@@ -103,7 +103,7 @@ Here is a JSON representation of the resource.
   ]
 ```
 
-## See also
+## Related information
 
 [Get Sales Invoice Line](../api/dynamics_salesinvoiceline_get.md)  
 [Create Sales Invoice Line](../api/dynamics_create_salesinvoiceline.md)  

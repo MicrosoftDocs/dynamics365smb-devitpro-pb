@@ -27,7 +27,6 @@ POST businesscentralPrefix/companies({id})/bankAccounts
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **bankAccount**, the **bankAccount** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **bankAccounts** object.
@@ -67,7 +66,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [bankaccount](../resources/dynamics_bankaccount.md)    
 [Get bankaccount](dynamics_bankaccount_Get.md)    

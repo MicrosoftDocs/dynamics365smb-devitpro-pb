@@ -21,6 +21,6 @@ An incorrect value was used for the category. One of the values of the enum {0} 
 The enum provided for the category is wrong.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

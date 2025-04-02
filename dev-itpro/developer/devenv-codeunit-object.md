@@ -51,5 +51,5 @@ The `this` keyword can be used in codeunits in AL as a self-reference, and it al
 [Table extension object](devenv-table-ext-object.md)  
 [Page extension object](devenv-page-ext-object.md)  
 [AL development environment](devenv-reference-overview.md)  
-[XML comments in code](devenv-xml-comments.md)  
+[Documenting your code with XML comments](devenv-xml-comments.md)  
 [Use the this keyword for codeunit self-reference](devenv-al-this-keyword.md).

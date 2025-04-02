@@ -44,7 +44,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 |[4583554](https://support.microsoft.com/help/4583554)|Update 17.2 |December 2020|Application Build 17.2.19367.19396</br>Platform Build 17.0.19353.19391|
 |[4583515](https://support.microsoft.com/help/4583515)|Update 17.1 |November 2020|Application Build 17.1.18256.18792</br>Platform Build 17.0.18204.18738|
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v15.md)  

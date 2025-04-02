@@ -50,7 +50,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/vendors({
 
 No Content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Vendor](../resources/dynamics_vendor.md)  

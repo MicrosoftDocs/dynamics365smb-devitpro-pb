@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
 ms.collection:
-ms.date: 04/15/2024
+ms.date: 04/01/2025
 ms.custom: bap-template
 ---
 
@@ -44,7 +44,7 @@ The Copilot user interface is an essential component of any Copilot experience. 
 
 To learn more, go to [Design the Copilot user experience](ai-build-experience.md).
 
-## See also
+## Related information
 
 [Integrating AI using developer tools for Copilot](ai-integration-landing-page.yml)
 

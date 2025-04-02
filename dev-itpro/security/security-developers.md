@@ -83,6 +83,6 @@ The following table includes links to help you understand encryption in [!INCLUD
 | To safely store secrets for your app and retrieve them from AL. | [Using Azure Key Vault for app secrets](../developer/devenv-app-key-vault-overview.md) |
 
 
-## See also  
+## Related information  
 
 [General security overview](security-and-protection.md)  

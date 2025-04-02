@@ -44,6 +44,6 @@ Prefer: odata.maxpagesize=300
 > [!NOTE]
 > `odata.maxpagesize` can't be greater than the **ODataServicesMaxPageSize** server setting for on-premises and 20000 for online.
   
-## See Also
+## Related information
 
 [OData Web Services](OData-Web-Services.md)

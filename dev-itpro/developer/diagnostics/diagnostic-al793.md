@@ -21,6 +21,6 @@ The property '{0}' cannot be used on a multi-select action with '{1}' scope.
 Actions which operate on multiple rows at a time cannot have properties which would direct the action to navigate elsewhere in the product.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

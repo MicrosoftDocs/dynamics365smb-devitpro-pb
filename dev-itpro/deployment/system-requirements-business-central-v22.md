@@ -163,7 +163,7 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 |-|-|  
 |Supported SharePoint servers|<ul><li>SharePoint Server 2019</li><li>SharePoint Online.</li></ul>|  
 
-## See Also
+## Related information
 
 [Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  

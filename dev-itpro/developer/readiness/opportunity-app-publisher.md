@@ -33,7 +33,7 @@ As an AppSource publisher, you can focus on the following two scenarios with [!I
 
 Connect your existing online service with the [!INCLUDE[prod_short](../includes/prod_short.md)] through a powerful API. Following are some examples of existing connect apps that you can find on AppSource:  
 
-- [Square payments](https://go.microsoft.com/fwlink/?linkid=2286649&clcid=0x409), which allows you take payments with a Square terminal.  
+- Square payments, which allows you take payments with a Square terminal.  
 
 - [Certify](https://go.microsoft.com/fwlink/?linkid=2286557&clcid=0x409) which allows users to post expense reports using Certify.com  
 
@@ -74,6 +74,6 @@ Here are a few examples of consultancy services provided by publishers:
 
 Learn more about [Consultancy Services](https://appsource.microsoft.com/partners).
 
-## See also
+## Related information
 
 [Get Started with Building Apps](get-started.md)

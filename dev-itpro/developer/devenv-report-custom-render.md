@@ -1,17 +1,17 @@
 ---
-title: "Developing a Custom Report Render"
-description: Describe the custom report render logic.
-ms.date: 04/01/2022
+title: Developing a Custom Report Render
+description: Describe the custom report render logic and how to implement it in AL code.
+ms.date: 01/20/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 author: nhsejth
 ---
 
-# Developing a Custom Report Render
+# Developing a custom report render
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-This article describes the concept of a custom report render. The custom report render manages the rendering of a generated report dataset with a layout type specified by an extension. The actual rendering will take place in the application by using the `OnCustomDocumentMergerEx` event provided by the `ReportManagement` codeunit. The layout must be specified in the `rendering` section in the report definition.
+This article describes the concept of a custom report render. The custom report render manages the rendering of a generated report dataset with a layout type specified by an extension. The actual rendering takes place in the application by using the `OnCustomDocumentMergerEx` event provided by the `ReportManagement` codeunit. The layout must be specified in the `rendering` section in the report definition.
 
 ## History and context
 
@@ -40,7 +40,7 @@ report 50000 "Standard Report Layout"
 
 ## Sample AL code
 
-The simplest possible custom document render can be implemented as in the following sample. The example will use the existing application logic to render XML datasets into Microsoft Word or PDF documents using a given template (Word template).
+The simplest possible custom document render can be implemented as in the following sample. The example uses the existing application logic to render XML datasets into Microsoft Word or PDF documents using a given template (Word template).
 
 ```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnCustomDocumentMergerEx', '', true, true)]
@@ -124,11 +124,11 @@ The simplest possible custom document render can be implemented as in the follow
     end;
 ```
 
-## See Also
+## Related information
 
-[Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
-[OnCustomDocumentMergerEx Event](devenv-oncustomdocumentmergerEx-event.md)  
+[Working with and troubleshooting payloads](devenv-reports-troubleshoot-printing.md)  
+[OnCustomDocumentMergerEx event](devenv-oncustomdocumentmergerEx-event.md)  
 [Events in AL](devenv-events-in-al.md)  
-[Publishing Events](devenv-publishing-events.md)  
-[Raising Events](devenv-raising-events.md)  
-[Subscribing to Events](devenv-subscribing-to-events.md)  
+[Publishing events](devenv-publishing-events.md)  
+[Raising events](devenv-raising-events.md)  
+[Subscribing to events](devenv-subscribing-to-events.md)  

@@ -54,7 +54,7 @@ Here is a JSON representation of the disputeStatus resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET disputeStatus](../api/dynamics_disputestatus_get.md)
 [DELETE disputeStatus](../api/dynamics_disputestatus_delete.md)
 [POST disputeStatus](../api/dynamics_disputestatus_create.md)

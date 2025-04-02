@@ -154,7 +154,7 @@ table 50104 Address
 }
 ```
 
-## See also
+## Related information
 
 [Table overview](devenv-tables-overview.md)  
 [Table extension object](devenv-table-ext-object.md)  

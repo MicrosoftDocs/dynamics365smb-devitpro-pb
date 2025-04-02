@@ -268,7 +268,7 @@ With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, you'll have to 
 To install the fonts, follow the instructions from the font supplier or see [Add a Font](https://support.microsoft.com/en-us/office/add-a-font-b7c5f17c-4426-4b53-967f-455339c564c1). After you install the fonts, restart your computer.
 
 
-## See Also
+## Related information
 
 [Request Pages](devenv-request-pages.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  

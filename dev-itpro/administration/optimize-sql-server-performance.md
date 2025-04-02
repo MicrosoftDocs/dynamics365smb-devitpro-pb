@@ -43,7 +43,7 @@ Azure SQL Database and Azure SQL Managed Instance provide tools for collecting m
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
 
 
-## See Also  
+## Related information  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)   
 [Microsoft SQL Server documentation](/sql/sql-server/)  
 [SumIndexField Technology \(SIFT\)](../developer/devenv-sift-technology.md)

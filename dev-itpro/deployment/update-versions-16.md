@@ -44,7 +44,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 |[4549686](https://support.microsoft.com/help/4564072)|Update 16.2 |June 2020|Application Build 16.2.13779</br>Platform Build 16.0.13772|
 |[4549686](https://support.microsoft.com/help/4549686)|Update 16.1 |May 2020|Application Build 16.1.12805</br>Platform Build 16.0.12758|
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v15.md)  

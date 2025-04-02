@@ -18,6 +18,6 @@ Cannot specify {0} and {1} property at the same time. Use only the {1} property.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

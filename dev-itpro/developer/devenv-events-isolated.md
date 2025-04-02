@@ -102,7 +102,7 @@ codeunit 50145 IsolatedEventsSample
 }
 ```
 
-## See Also
+## Related information
 
 [Publishing Events](devenv-publishing-events.md)  
 [Raising Events](devenv-raising-events.md)  

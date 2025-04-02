@@ -59,7 +59,7 @@ Here is a JSON representation of the extensionUpload resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET extensionUpload](../api/dynamics_extensionupload_get.md)  
 [POST extensionUpload](../api/dynamics_extensionupload_create.md)  
 [PATCH extensionUpload](../api/dynamics_extensionupload_update.md)  

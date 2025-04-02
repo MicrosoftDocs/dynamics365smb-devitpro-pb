@@ -18,6 +18,6 @@ The method '{0}' is missing or does not have exactly one parameter of type {1}.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

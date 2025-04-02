@@ -58,7 +58,7 @@ Here is a JSON representation of the irs1099Codes.
 }
 ```
 
-## See also
+## Related information
 
 [Get IRS 1099](../api/dynamics_irs1099_get.md)  
 [Post IRS 1099](../api/dynamics_create_irs1099.md)  

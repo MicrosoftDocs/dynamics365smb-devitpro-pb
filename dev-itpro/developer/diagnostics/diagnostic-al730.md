@@ -21,6 +21,6 @@ The field '{0}' cannot be used in a sum index.
 The SystemRowVersion field cannot be used as a sum index field.   
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

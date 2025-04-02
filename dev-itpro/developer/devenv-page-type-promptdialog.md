@@ -6,7 +6,7 @@ ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 09/09/2024
+ms.date: 11/14/2024
 ms.reviewer: solsen
 ---
 

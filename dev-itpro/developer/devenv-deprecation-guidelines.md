@@ -3,14 +3,14 @@ title: Best Practices for Deprecation of AL Code
 description: Description of best practices and guidelines for deprecating code in the Base App for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 04/30/2024
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: grobyns
 ---
 
 # Best practices for deprecation of AL code
 
-This article provides guidelines that describe how code in the Base App is obsoleted. The article describes some best practices that Microsoft is using for obsoleting code, and is meant as a nonenforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. For more information, see [Directives in AL](directives/devenv-directives-in-al.md).
+This article provides guidelines that describe how code in the Base App is obsoleted. The article describes some best practices that Microsoft is using for obsoleting code, and is meant as a nonenforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. Learn more in [Directives in AL](directives/devenv-directives-in-al.md).
 
 ## Obsoleting code
 
@@ -109,7 +109,7 @@ When we obsolete code, we:
         #endif
         ```
 
-In order to have the compiler take the new ‘clean’ code path, symbols must be defined. The symbols are defined in the `app.json` file with the following setting. For more information, see [JSON Files](devenv-json-files.md).
+In order to have the compiler take the new ‘clean’ code path, symbols must be defined. The symbols are defined in the `app.json` file with the following setting. Learn more in [JSON files](devenv-json-files.md).
 
 ```al
 "preprocessorSymbols": [ "CLEAN15", "CLEAN16", "CLEAN17", "CLEAN18" ]
@@ -127,12 +127,17 @@ If an action or other code element points to a now removed object, then the guid
   - If code points to an obsoleted method, then use directives to put in the fixed code.
   - If code points to an obsoleted table/field, then use directives to put in the fixed code.
 
-## See also
+## Obsoleting reports
 
+If you plan to deprecate reports in your AppSource apps or per-tenant extensions, you might want to inform other developers and your users before you remove the reports. To learn more, go to [Obsoleting reports](devenv-reports-obsoletion.md).
+
+## Related information
+
+[Obsoleting reports](devenv-reports-obsoletion.md)  
 [AL development environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
 [Microsoft timeline for deprecating code in Business Central](devenv-deprecation-timeline.md)  
 [ObsoleteTag property](properties/devenv-obsoletetag-property.md)  
 [ObsoleteState property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason property](properties/devenv-obsoletereason-property.md)  
-[Obsolete attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute)
+[Obsolete attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute)  

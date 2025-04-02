@@ -21,6 +21,6 @@ The label's property is not valid. Possible properties are: {0}.
 Invalid parameter for the label data type. For more information about the valid parameters, see [Label Data Type](../methods-auto/label/label-data-type.md).  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

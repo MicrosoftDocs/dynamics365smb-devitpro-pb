@@ -53,5 +53,5 @@ for (int i = 0; i < custList.Length; i++)
 service.Update(ref custList)   
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

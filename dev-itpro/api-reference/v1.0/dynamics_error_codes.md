@@ -66,5 +66,5 @@ The error codes in the table below can be divided into the following categories 
 |NavInvalidCredentialException|The server has rejected the client credentials|Authentication_InvalidCredentials|
 |Any|Any|Unknown|
 
-## See also
+## Related information
 [Dynamics 365 Business Central in Graph](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta) 

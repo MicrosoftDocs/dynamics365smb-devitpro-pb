@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 07/23/2024
+ms.date: 11/01/2024
 ---
 
 # Business Central Admin Center API - Environments
@@ -26,13 +26,13 @@ Environments are the instances of the application that have been set up for the 
 Returns a list of all the environments for the tenant. 
 
 ```
-GET /admin/v2.21/applications/environments
+GET /admin/v2.24/applications/environments
 ```
 
 Returns a list of the environments for the specified application family.
 
 ```
-GET /admin/v2.21/applications/{applicationFamily}/environments
+GET /admin/v2.24/applications/{applicationFamily}/environments
 ```
 
 ### Route Parameters
@@ -70,6 +70,41 @@ Returns a wrapped array of environments.
 }
 ```
 
+#### Flexible Update Management response
+
+A future version of the API will return the following response to include properties relevant to Flexible Update Management.
+
+```
+{
+  "value": 
+  [
+    {
+      "friendlyName": string, // Display name of the environment
+      "type": string, // Environment type (for example, "Sandbox", "Production")
+      "name": string, // Environment name, unique within an application family
+      "countryCode": string, // Country/Region that the environment is deployed in
+      "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
+      "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
+      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
+      "webClientLoginUrl": string, // Url to use to log into the environment,
+      "webServiceUrl": string, // Url to use to access the environment's service API
+      "locationName": string, // The Azure location where the environment's data is stored
+      "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
+      "appInsightsKey": string, // The environment's key for Azure Application Insights
+      "SoftDeletedOn": datetime, // The time at which the environment was soft deleted
+      "HardDeletePendingOn": datetime, // The time at which the environment will be permanently deleted
+      "DeleteReason": string, // The reason why the environment was deleted
+      "AppSourceAppsUpdateCadence": string, // The cadence at which installed AppSource Apps are automatically updated with environment updates
+      "versionDetails": {
+        "version": string, // The current version number of the environment, e.g. 26.0
+        "gracePeriodStartDate": datetime, // The date on which the grace period for the current major version of the environment starts
+        "enforcedUpdatePeriodStartDate": datetime // The date on which the enforced update period for the current major version of the environment starts
+      }
+    }
+  ]
+}
+```
+
 ### Expected Error Codes
 
 `applicationTypeDoesNotExist` - the provided value for the application family wasn't found
@@ -78,7 +113,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}
+GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -113,6 +148,41 @@ Returns a single environment if exists.
 }
 ```
 
+#### Flexible Update Management response
+
+A future version of the API will return the following response to include properties relevant to Flexible Update Management.
+
+```
+{
+  "value": 
+  [
+    {
+      "friendlyName": string, // Display name of the environment
+      "type": string, // Environment type (for example, "Sandbox", "Production")
+      "name": string, // Environment name, unique within an application family
+      "countryCode": string, // Country/Region that the environment is deployed in
+      "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
+      "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
+      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
+      "webClientLoginUrl": string, // Url to use to log into the environment,
+      "webServiceUrl": string, // Url to use to access the environment's service API
+      "locationName": string, // The Azure location where the environment's data is stored
+      "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
+      "appInsightsKey": string, // The environment's key for Azure Application Insights
+      "SoftDeletedOn": datetime, // The time at which the environment was soft deleted
+      "HardDeletePendingOn": datetime, // The time at which the environment will be permanently deleted
+      "DeleteReason": string, // The reason why the environment was deleted
+      "AppSourceAppsUpdateCadence": string, // The cadence at which installed AppSource Apps are automatically updated with environment updates
+      "versionDetails": {
+        "version": string, // The current version number of the environment, e.g. 26.0
+        "gracePeriodStartDate": datetime, // The date on which the grace period for the current major version of the environment starts
+        "enforcedUpdatePeriodStartDate": datetime // The date on which the enforced update period for the current major version of the environment starts
+      }
+    }
+  ]
+}
+```
+
 ### Expected Error Codes
 
 `environmentNotFound` - the targeted environment couldn't be found
@@ -125,7 +195,7 @@ Creates a new environment with sample data.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}
+PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -250,14 +320,14 @@ Creates a new environment with a copy of another environment's data.
 
 ```
 Content-Type: application/json
-POST /admin/v2.21/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
+POST /admin/v2.24/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
 ```
 
 API v2.8 and earlier:
 
 ```
 Content-Type: application/json
-POST /admin/v2.21/applications/{applicationFamily}/environments/{sourceEnvironmentName}
+POST /admin/v2.24/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
 ### Route Parameters
@@ -384,7 +454,7 @@ Returns HTTP status code 201 (Created) with newly copied environment.
 Deletes the specified environment. This operation *soft deletes* the environment, which means it's retained for fourteen days during which time it can be recovered. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments). If the specified environment has the status `Creating Failed` or `Removing Failed`, the environment won't be retained and will be permanently deleted immediately (*hard delete*).
 
 ```
-DELETE /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -475,7 +545,7 @@ Returns empty HTTP status code 202 (Accepted).
 Recovers a soft-deleted environment. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments).
 
 ```
-POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/recover
+POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/recover
 ```
 
 ### Route Parameters
@@ -522,7 +592,7 @@ Schedules a rename operation on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/rename
+POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/rename
 ```
 
 ### Routing parameters
@@ -570,7 +640,7 @@ Schedules a restore operation an existing environment from a time in the past.
 
 ```
 Content-Type: application/json
-POST /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/restore
+POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/restore
 ```
 
 ### Routing parameters
@@ -662,7 +732,7 @@ Links the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environmen
 > This API endpoint is not supported for service-to-service authentication using Microsoft Entra apps.
 
 ```
-POST /admin/v2.21/bap/applications/{applicationFamily}/environments/{environmentName}/linkEnvironment?powerPlatformEnvironmentId={id} 
+POST /admin/v2.24/bap/applications/{applicationFamily}/environments/{environmentName}/linkEnvironment?powerPlatformEnvironmentId={id} 
 ```
 
 ### Routing parameters
@@ -690,7 +760,7 @@ Unlinks the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environm
 > This API endpoint is not supported for service-to-service authentication using Microsoft Entra apps.
 
 ```
-POST /admin/v2.21/bap/applications/{applicationFamily}/environments/{environmentName}/unlinkEnvironment?powerPlatformEnvironmentId={id} 
+POST /admin/v2.24/bap/applications/{applicationFamily}/environments/{environmentName}/unlinkEnvironment?powerPlatformEnvironmentId={id} 
 ```
 
 ### Routing parameters
@@ -712,7 +782,7 @@ POST /admin/v2.21/bap/applications/{applicationFamily}/environments/{environment
 Returns used storage properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.21/applications/{applicationFamily}/environments/{environmentName}/usedstorage
+GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/usedstorage
 ```
 
 ### Route Parameters
@@ -746,7 +816,7 @@ Returns used storage information of a single environment if exists.
 Returns a list of used storage objects for all the environments.
 
 ```
-GET /admin/v2.21/environments/usedstorage
+GET /admin/v2.24/environments/usedstorage
 ```
 
 ### Response
@@ -769,7 +839,7 @@ Returns a wrapped array of used storage objects.
 Returns different types of quotas and their limits.
 
 ```
-GET /admin/v2.21/environments/quotas
+GET /admin/v2.24/environments/quotas
 ```
 
 ### Response
@@ -798,7 +868,7 @@ Returns quotas object.
 Gets the following operations that occurred on an environment.
 
 ```
-GET /admin/v2.21/environments/{environmentName}/operations 
+GET /admin/v2.24/environments/{environmentName}/operations 
 ```
 
 ### Operation types
@@ -815,7 +885,7 @@ Data is returned for the following operation types:
 |EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api_app_management.md#install-an-app)|
 |EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api_app_management.md#uninstall-an-app)|
 |EnvironmentRename|Environment was renamed by using the Admin Center|[Rename an Environment](tenant-admin-center-environments-rename.md)<br><br>[Rename Endpoint](#rename-environment)|
-|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#put-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#put-appinsights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Microsoft Entra groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-using-microsoft-entra-groups)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
+|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#set-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#set-application-insights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Microsoft Entra groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-for-internal-users)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
 |MoveToAnotherAadTenant|An environment was moved to another Microsoft Entra organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)|
 |PitRestore|Environment was restored by using the Admin Center|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
 |Recover<sup>7</sup>|A deleted environment was recovered.|[Delete and Recover Environments in Admin Center](tenant-admin-center-environments-delete.md#recover-an-environment)<br><br>[Delete Endpoint](#recover-environment)|
@@ -910,7 +980,7 @@ Example `200 OK` response:
 Gets the operations that occurred on all environments.
 
 ```
-GET /admin/v2.21/applications/{applicationType}/environments/operations 
+GET /admin/v2.24/applications/{applicationType}/environments/operations 
 ```
 
 ### Operation types
@@ -970,7 +1040,7 @@ Example `200 OK` response:
   ] 
 }
 ```
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

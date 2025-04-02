@@ -7,6 +7,9 @@ ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ai-usage: ai-assisted
+ms.custom:
+ - ai-gen-docs-bap
+ - ai-seo-date: 10/01/2024
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

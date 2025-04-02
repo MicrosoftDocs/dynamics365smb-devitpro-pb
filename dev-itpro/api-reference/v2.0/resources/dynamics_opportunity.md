@@ -4,7 +4,7 @@ description: An opportunity object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/24/2021
+ms.date: 04/09/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -81,7 +81,7 @@ Here is a JSON representation of the opportunity resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET opportunity](../api/dynamics_opportunity_get.md)  
 [DELETE opportunity](../api/dynamics_opportunity_delete.md)  
 [POST opportunity](../api/dynamics_opportunity_create.md)  

@@ -86,7 +86,7 @@ For more information about profiling, see [AL Profiler Overview](devenv-al-profi
 |<kbd>-</kbd> (minus) | Collapse all nodes.|
 |<kbd>*</kbd> (star) | Expand one level for all nodes. Consecutive keystrokes expand to the next level.|
 
-## See also
+## Related information
 
 [Developing extensions](devenv-dev-overview.md)  
 [Get started with AL](devenv-get-started.md)  

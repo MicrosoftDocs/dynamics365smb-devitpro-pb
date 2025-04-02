@@ -76,5 +76,5 @@ Here is a JSON representation of the generalLedgerAccount resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET generalLedgerAccount](../api/dynamics_generalledgeraccount_get.md)

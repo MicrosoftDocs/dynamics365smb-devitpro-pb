@@ -1,23 +1,23 @@
 ---
-title: "Page Extension Object"
-description: "Description of the page extension object in AL for Business Central."
+title: Page extension object
+description: Extend page objects with page extension objects in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 01/08/2024
+ms.date: 11/13/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Page Extension Object
+# Page extension object
 
-The page extension object extends a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] page object and adds or overrides the functionality.
+The page extension object extends a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] page object and adds or overrides the functionality. 
 
 The structure of a page is hierarchical and breaks down into three sections. The first block contains metadata for the overall page; the type of the page and the source table it is showing data from. The next section; the layout, describes the visual parts on the page. The final section details the actions that are published on the page.
 
-For more information about the Page and Page Extension objects, see [Pages Overview](devenv-pages-overview.md).
+Learn more about Page and Page Extension objects in [Pages overview](devenv-pages-overview.md).
 
 > [!IMPORTANT]  
-> Only pages with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
+> Only pages with the [Extensible property](properties/devenv-extensible-property.md) set to **true** can be extended.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
@@ -29,19 +29,20 @@ For more information about the Page and Page Extension objects, see [Pages Overv
 > Modifying actions in Cue groups on page extensions isn't supported.
 
 ## Snippet support
+
 Typing the shortcut `tpageext` will create the basic layout for a page extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Views
 
-Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
+Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page extensions](devenv-page-ext-object.md), and [Page customizations](devenv-page-customization-object.md). Learn more in [Views](devenv-views.md).
 
 ## Add tooltips on page fields
 
 Starting in [!INCLUDE[prod_short](includes/prod_short.md)] 2024 release wave 1, you can define tooltips on table fields. When a tooltip is defined on a table field, any page that uses the field automatically inherits the tooltip. 
 
-For more information, see [Add tooltips to table and page fields](devenv-adding-tooltips.md).
+Learn more about adding tooltips in [Add tooltips to table and page fields](devenv-adding-tooltips.md).
 
 ## Using keywords to place actions and controls
 
@@ -61,7 +62,7 @@ You can use the following keywords in the `layout` section to place and move fie
 
 ### Example
 
-To modify the existing fields and groups on a page, you use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, the `actions` section creates a new group in the ribbon and places it last in the `Creation` group.  
+To modify the existing fields and groups on a page, use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, the `actions` section creates a new group in the ribbon and places it last in the `Creation` group. The group contains an action that displays a message when the user chooses it. The `layout` section adds a new field control `ShoeSize` to the `General` group on the page. The field control is added as the last control in the group using the `addlast` method. The example also illustrates how to modify the caption of an existing field on the page.
 
 ```AL
 pageextension 70000020 CustomerCardExtension extends "Customer Card"
@@ -255,11 +256,11 @@ pageextension 50114 AddCustomerReport extends "Customer List"
 }
 ```
 
-## See Also  
+## Related information
 
-[Page Object](devenv-page-object.md)  
+[Page object](devenv-page-object.md)  
 [Views](devenv-views.md)  
-[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
-[Extending Pages Previously Based on the Date Virtual Table](devenv-extend-pages-based-on-date-virtual-table.md)
-[Developing Extensions](devenv-dev-overview.md)  
-[AL Development Environment](devenv-reference-overview.md)  
+[Page, page fields, and page extension properties](properties/devenv-page-property-overview.md)  
+[Extending pages previously based on the Date Virtual Table](devenv-extend-pages-based-on-date-virtual-table.md)
+[Developing extensions](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  

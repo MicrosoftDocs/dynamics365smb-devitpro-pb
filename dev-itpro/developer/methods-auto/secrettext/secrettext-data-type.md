@@ -2,7 +2,7 @@
 title: "SecretText data type"
 description: "Denotes a secret text string, which is non-debuggable."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 11/01/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -29,7 +29,7 @@ The following methods are available on instances of the SecretText data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[IsEmpty()](secrettext-isempty-method.md)|Returns a value indicating whether the secret text contains any content.|
+|[IsEmpty()](secrettext-isempty-method.md)|Returns a value indicating whether the secret text does not contain any content.|
 |[Unwrap()](secrettext-unwrap-method.md)|Returns the text contained text inside the secret text as a plain text value. This method exists for compatibility reasons and its use is discouraged as it can lead to secret exposure.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

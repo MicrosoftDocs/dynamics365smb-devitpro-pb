@@ -21,6 +21,6 @@ The control '{0}' cannot be modified in a view context because views only suppor
 Views only support modifying controls defined in the Content area.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

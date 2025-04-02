@@ -62,7 +62,7 @@ Here is a JSON representation of the project resource.
 
 
 
-## See Also
+## Related information
 [GET project](../api/dynamics_project_Get.md)  
 [DELETE project](../api/dynamics_project_Delete.md)  
 [POST project](../api/dynamics_project_Create.md)  

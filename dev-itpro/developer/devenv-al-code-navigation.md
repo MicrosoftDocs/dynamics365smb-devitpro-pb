@@ -35,7 +35,7 @@ The following conditions still apply:
 
 For more information about code navigation in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved).
 
-## See also  
+## Related information  
 
 [Developing extensions in AL](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
