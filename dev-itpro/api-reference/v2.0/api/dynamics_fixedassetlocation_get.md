@@ -57,10 +57,10 @@ Here is an example of the response.
 <!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "id" : "",
-    "code" : "",
-    "displayName" : "",
-    "lastModifiedDateTime" : ""
+    "id": "c5adcedf-b501-ef11-b3c3-83fe9ccecec3",
+    "code": "ADM",
+    "displayName": "Administration, Building 1",
+    "lastModifiedDateTime": "2024-04-23T21:10:13.737Z"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->

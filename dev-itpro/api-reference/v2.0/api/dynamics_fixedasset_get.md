@@ -57,19 +57,19 @@ Here is an example of the response.
 <!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "id" : "",
-    "number" : "",
-    "displayName" : "",
-    "fixedAssetLocationCode" : "",
-    "fixedAssetLocationId" : "",
-    "classCode" : "",
-    "subclassCode" : "",
-    "blocked" : "",
-    "serialNumber" : "",
-    "employeeNumber" : "",
-    "employeeId" : "",
-    "underMaintenance" : "",
-    "lastModifiedDateTime" : ""
+    "id": "21ee6fc6-b401-ef11-b3c3-83fe9ccecec3",
+    "number": "FA000010",
+    "displayName": "Mercedes 300",
+    "fixedAssetLocationCode": "ADM",
+    "fixedAssetLocationId": "f3b225a4-8401-ef11-9f8f-6045bde9b6de",
+    "classCode": "TANGIBLE",
+    "subclassCode": "VEHICLES",
+    "blocked": false,
+    "serialNumber": "EA 12 394 Q",
+    "employeeNumber": "",
+    "employeeId": "00000000-0000-0000-0000-000000000000",
+    "underMaintenance": false,
+    "lastModifiedDateTime": "2024-04-23T21:02:50.15Z"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
