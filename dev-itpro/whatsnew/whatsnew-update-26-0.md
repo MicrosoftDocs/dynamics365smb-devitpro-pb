@@ -192,7 +192,8 @@ This section outlines changes to feature and feature updates controlled by **Fea
 ### Features delayed from becoming mandatory in update 26.0
 
 - [Feature: Enable using SAF-T Audit Files Exports](/dynamics365/business-central/localfunctionality/denmark/how-to-use-saft-audit-files-export)
-
+- [Feature Update Auto-save as you work](dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)
+- 
 ### New features enabled by default
 
 - [Feature: Disable SOAP web services on Microsoft UI pages](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)<!-- missing rp-->
@@ -242,8 +243,9 @@ Select and download the package for the appropriate country or region version fr
 |IS - Iceland|[Dynamics.365.BC.32481.IS.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.IS.DVD.zip)|
 |IT - Italy|[Dynamics.365.BC.32481.IT.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.IT.DVD.zip)|
 |MX - Mexico|[Dynamics.365.BC.32481.MX.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.MX.DVD.zip)|
-|NL - Netherlands|[Dynamics.365.BC.32481.NL.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.IT.DVD.zip)|
-|NZ - New Zealand|[Dynamics.365.BC.32481.NZ.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.NL.DVD.zip)|
+|NL - Netherlands|[Dynamics.365.BC.32481.NL.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.NL.DVD.zip)|
+|NO - Norway|[Dynamics.365.BC.32481.NO.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.NO.DVD.zip)|
+|NZ - New Zealand|[Dynamics.365.BC.32481.NZ.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.NZ.DVD.zip)|
 |RU - Russia|[Dynamics.365.BC.32481.RU.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.RU.DVD.zip)|
 |SE - Sweden|[Dynamics.365.BC.32481.SE.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.SE.DVD.zip)|
 |US - United States|[Dynamics.365.BC.32481.US.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.US.DVD.zip)|

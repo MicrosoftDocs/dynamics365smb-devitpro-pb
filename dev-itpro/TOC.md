@@ -558,6 +558,7 @@
 #### [The performance toolkit extension](developer/devenv-performance-toolkit.md)
 #### [Use page scripting for acceptance testing (preview)](developer/devenv-page-scripting.md)
 #### [FAQ about testing your Business Central app](developer/app-faq-test.md)
+#### [Mock outbound HttpClient web service calls during testing](developer/devenv-httpclient-mock-outbound-calls.md)
 
 ### Work in sandboxes
 #### [Sandbox environments for development](developer/devenv-sandbox-overview.md)
@@ -1176,6 +1177,9 @@
 ## Extensibility
 ### [Extensibility overview](developer/devenv-extensibility-overview.md)
 ### [Extension objects overview](developer/devenv-extension-object-overview.md)
+### Extensibility requests
+#### [Create an extensibility request](developer/create-extensibility-request.md)
+#### [Types of events for extensibility](developer/types-of-events-for-extensibility.md)
 ### Extending AL objects
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
 #### [Extending enumerations](developer/devenv-extensible-enums.md)
