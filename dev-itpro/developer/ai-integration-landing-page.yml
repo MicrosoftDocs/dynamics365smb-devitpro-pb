@@ -16,7 +16,7 @@ metadata:
   description: Build AL extensions that include copilot and generative AI experiences.
   author: jswymer
   ms.author: jswymer
-  ms.date: 11/20/2024
+  ms.date: 04/01/2025
   ms.topic: landing-page # DON'T CHANGE
   ms.service: dynamics-365-business-central
   ms.custom: bap-template #Required; don't change.
@@ -41,6 +41,10 @@ landingContent:
       links:
       - text: Get set up with Azure OpenAI Service
         url: ai-dev-tools-get-started.md
+    - linkListType: concept
+      links:
+      - text: Influence Copilot and agents without extending them
+        url: copilot-and-agents-influence-without-extending.md
     - linkListType: reference
       links:
       - text: About Copilot in Business Central

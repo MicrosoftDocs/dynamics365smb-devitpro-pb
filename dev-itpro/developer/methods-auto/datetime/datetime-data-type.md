@@ -2,7 +2,7 @@
 title: "DateTime data type"
 description: "Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,6 +24,7 @@ The following methods are available on instances of the DateTime data type.
 |-----------|-----------|
 |[Date()](datetime-date-method.md)|Gets the date part.|
 |[Time()](datetime-time-method.md)|Gets the time part.|
+|[ToText([Boolean])](datetime-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

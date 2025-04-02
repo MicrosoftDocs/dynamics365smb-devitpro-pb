@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 11/11/2024
+ms.date: 04/01/2025
 ms.custom: bap-template
 ---
 # Get set up with Azure OpenAI Service
@@ -33,7 +33,7 @@ This article explains the tasks that must be completed so that you can start int
    |What|Where to find it|
    |-|-|
    |Azure OpenAI API key and endpoint (URL)|**Keys and Endpoint** page for the resource in the Azure portal.|
-   |Deployment name for the model|**Deployments** page in Azure AI Foundry portal.|
+   |Deployment name for the model|**Deployments** page in [Azure AI Foundry portal](https://ai.azure.com/).|
 
 ## Next steps
 

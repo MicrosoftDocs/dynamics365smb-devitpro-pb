@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 01/15/2025
+ms.date: 03/28/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: jswymer
@@ -11,8 +11,7 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The 2024 release wave 2 launch event for [!INCLUDE [prod_short](../includes/prod_short.md)] was kicked off on October 8, 2024.
-> You can now access over 40 on-demand sessions at [aka.ms/BCYouTube](https://aka.ms/BCYouTube).
+> The 2025 release wave 1 launch event for [!INCLUDE [prod_short](../includes/prod_short.md)] is being kicked off on April 1, 2025 at 4PM CET. You can register at [aka.ms/BCLE](https://aka.ms/BCLE) to join the live opening.
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 

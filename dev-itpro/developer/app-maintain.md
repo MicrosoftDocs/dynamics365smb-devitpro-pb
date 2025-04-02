@@ -1,8 +1,8 @@
 ---
-title: "Maintain AppSource apps and per-tenant extensions"
-description: "Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product."
+title: Maintain AppSource apps and per-tenant extensions
+description: Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product.
 author: solsen
-ms.date: 08/28/2024
+ms.date: 03/31/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: jswymer
@@ -61,19 +61,12 @@ This section describes the processes that are initiated during [major update cyc
 A preview release is made available approximately one month before the announced release date for a major release. During this period, administrators can create sandbox environments on the preview version to test new functionality and app compatibility. [!INCLUDE [prod_short](includes/prod_short.md)] automatically tests PTEs running in production on technical incompatibility with the upcoming release and notify [notification recipients](../administration/tenant-admin-center-notifications.md) in case any incompatibilities are detected. For more information, see [prepare for major updates with preview environments](../administration/preview-environments.md).
 
 > [!IMPORTANT]
-> Microsoft tests code based on technical compatibility. As the publisher, you are still responsible for all functional and logical validation. For more information, see [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md).
+> Microsoft tests code based on technical compatibility. As the publisher, you're still responsible for all functional and logical validation. For more information, see [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md).
 
 > [!NOTE]  
-> If an app has been published through AppSource, it should not be tested, installed, or in other ways treated as a PTE since this will create conflicts.
+> If an app has been published through AppSource, it shouldn't be tested, installed, or in other ways treated as a PTE since this will create conflicts.
 
 ### Update period
-
-[This section is prerelease documentation and is subject to change.]
-
-> [!IMPORTANT]
->
-> - The 5-month update period is a production-ready preview feature that applies to [Microsoft-localized environments](../compliance/apptest-countries-and-translations.md). It doesn't apply to partner-localized environments, which have a 60-day update period that is expected to end in the first half of December 2024. Learn more about the preview feature at [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly).
-> - Production-ready previews are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520).
 
 The update period starts when a new major version is generally available, typically the first workday of every April and October, and lasts for five months. Administrators can schedule the update to run on any day during this period. Should a scheduled update fail due to technical incompatibilities with installed apps, [notification recipients](../administration/tenant-admin-center-notifications.md) will receive a notification with failure details and recommended actions.
 
@@ -81,9 +74,9 @@ Technical incompatibilities with AppSource apps installed on the environment mig
 
 ### Grace period
 
-The grace period starts when the update period ends and lasts for one month, which is September for the update period that starts in April and March for the update period that starts in October. During the grace period, the update can't be rescheduled to a later date and is run. Should a scheduled update fail due to technical incompatibilities with installed apps, [notification recipients](../administration/tenant-admin-center-notifications.md)  receive a notification with failure details and recommended actions. Although the publisher's code continues to run on an outdated version of [!INCLUDE [prod_short](includes/prod_short.md)] online, the customer must work with their reseller to resolve these issues immediately so that the environment can be updated. Next to messages in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)], all users in the customer's tenant might also get more active warnings about the incompatibilities when they use the product in the browser or their mobile device.
+The grace period starts when the update period ends and lasts for one month, which is September for the update period that starts in April and March for the update period that starts in October. During the grace period, the update can't be rescheduled to a later date. Should a scheduled update fail due to technical incompatibilities with installed apps, [notification recipients](../administration/tenant-admin-center-notifications.md) receive a notification with failure details and recommended actions. Although the publisher's code continues to run on an outdated version of [!INCLUDE [prod_short](includes/prod_short.md)] online, the customer must work with their reseller to resolve these issues immediately so that the environment can be updated. Next to messages in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)], all users in the customer's tenant might also get more active warnings about the incompatibilities when they use the product in the browser or their mobile device.
 
-For AppSource apps, if no appropriate action or follow-up was taken by the publisher since the release, the app is removed from AppSource. This situation means no new customers are able to install the app in a new tenant. It  ensures that new customers aren't affected by incompatibilities with the latest version of [!INCLUDE [prod_short](includes/prod_short.md)].  
+For AppSource apps, if no appropriate action or follow-up was taken by the publisher since the release, the app is removed from AppSource. This situation means no new customers are able to install the app in a new tenant. It ensures that new customers aren't affected by incompatibilities with the latest version of [!INCLUDE [prod_short](includes/prod_short.md)].  
 
 If the publisher wants to have their app available again, they must mitigate all existing incompatibility issues and go through the full validation process again. Once a compatible version of the app is published, the update to the app is automatically installed once environments are updated.
 

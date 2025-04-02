@@ -2,7 +2,7 @@
 title: "Guid data type"
 description: "Represents a 16 byte binary data type."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,6 +17,12 @@ Represents a 16 byte binary data type. This data type is used for the global ide
 
 
 
+## Instance methods
+The following methods are available on instances of the Guid data type.
+
+|Method name|Description|
+|-----------|-----------|
+|[ToText()](guid-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
