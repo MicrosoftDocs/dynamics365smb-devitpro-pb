@@ -1,8 +1,8 @@
 ---
-title: "AppSourceCop Warning AS0117"
+title: "AppSourceCop Error AS0117"
 description: "When an application object is moved we should first set the ObsoleteState to PendingMove in a previous version of the extension."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,7 +14,7 @@ ms.custom:
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Warning AS0117
+# AppSourceCop Error AS0117
 Application object is moved without the use of PendingMove.
 
 ## Description

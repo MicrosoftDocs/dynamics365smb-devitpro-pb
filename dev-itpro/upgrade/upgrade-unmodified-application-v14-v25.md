@@ -12,6 +12,9 @@ author: jswymer
 
 Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (non-Microsoft/3rd-party). With this upgrade, you replace the C/AL base application with the new Microsoft System and Base Application extensions. The result is a fully upgraded Business Central 2024 release wave 2 (version 25) application and platform.
 
+> [!NOTE]
+> Starting in 2025 release wave 1 (v26), the direct upgrade from Business Central 2019 (v14) to the latest release isn't supported. The supported upgrade path is through 2024 release wave 2 (v25), then to v26. Learn more in [Deprecated features in the platform - clients, server, and database](deprecated-features-platform.md#changes-in-2025-release-wave-1-version-260).
+
 [![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-25-upgrade-unmodified-app.svg)](../developer/media/bc14-to-25-upgrade-unmodified-app.svg#lightbox)  
 
 ## General information
@@ -634,6 +637,10 @@ Learn more in [To export and import a permission set](/dynamics365/business-cent
 
         > [!NOTE]
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
+
+## Next steps
+
+To upgrade to version 26.0, follow the instructions in [Upgrading Microsoft System and Base Application to Version 26](upgrade-unmodified-application-to-v26).  
 
 ## Related information also  
 
