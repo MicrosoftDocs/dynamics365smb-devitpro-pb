@@ -1179,6 +1179,7 @@
 ### Extensibility requests
 #### [Create an extensibility request](developer/create-extensibility-request.md)
 #### [Types of events for extensibility](developer/types-of-events-for-extensibility.md)
+#### [Contribute a change yourself](developer/devenv-contribute-extensibility.md)
 ### Extending AL objects
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
 #### [Extending enumerations](developer/devenv-extensible-enums.md)
