@@ -89,7 +89,7 @@ Global events are predefined system events that are automatically raised by vari
 |||OnBeforeOnDatabaseDelete|
 |||OnBeforeOnDatabaseRename|
 
-\* Codunit 42 **Caption Class** was introduced as a replacement for codeunit 42 **CaptionManagement**.  In previous versions, codeunit 42 **CaptionManagement** included the `OnAfterCaptionClassTranslate` event. For more information, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md#caption-class-module) in the legacy ALAppExtensions GitHub repo.
+\* Codeunit 42 **Caption Class** was introduced as a replacement for codeunit 42 **CaptionManagement**.  In previous versions, codeunit 42 **CaptionManagement** included the `OnAfterCaptionClassTranslate` event. For more information, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md#caption-class-module) in the legacy ALAppExtensions GitHub repo.
 
 ## Trigger events
 
