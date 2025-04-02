@@ -85,3 +85,4 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Outgoing Web Service Request Telemetry](../../../administration/telemetry-webservices-outgoing-trace.md)  
+[Mock outbound HttpClient web service calls during testing](../../devenv-httpclient-mock-outbound-calls.md)  
