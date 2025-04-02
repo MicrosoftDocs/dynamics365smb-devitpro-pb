@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 11/11/2024
+ms.date: 04/01/2025
 ms.custom: bap-template
 ---
 # Get set up with Azure OpenAI Service
