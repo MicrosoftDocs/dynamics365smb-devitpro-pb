@@ -2,7 +2,7 @@
 title: Get started with AL
 description: Description of how to get started with the AL development environment.
 author: SusanneWindfeldPedersen
-ms.date: 02/25/2025
+ms.date: 04/03/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -45,9 +45,9 @@ You now have a `HelloWorld` sample that compiles and runs. The JSON files in the
 
 ## Get started with Copilot templates
 
-With runtime 15.0, you can use the <kbd>Alt</kbd>+<kbd>A</kbd> <kbd>Alt</kbd>+<kbd>P</kbd> shortcut key to create a **Copilot** or a **Copilot test** project. The **Copilot** project template gives you a starting point for your Copilot project and includes sample pages and codeunits, which you can use to get started with your project.
+With runtime 15.0, you can use the <kbd>Alt</kbd>+<kbd>A</kbd> <kbd>Alt</kbd>+<kbd>P</kbd> shortcut key to create a **Copilot** or a **Copilot test** project. The **Copilot** project template gives you a starting point for your copilot project and includes sample pages and codeunits, which you can use to get started with your project.
 
-The **Copilot test** project template furthermore includes codeunits that you can use to test the Copilot functionality.
+The **Copilot test** project template furthermore includes codeunits that you can use to test the copilot functionality.
 
 Learn more getting started building copilot functionality in [Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md).
 
