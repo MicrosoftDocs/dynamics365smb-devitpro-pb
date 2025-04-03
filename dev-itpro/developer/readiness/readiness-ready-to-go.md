@@ -11,7 +11,7 @@ ms.author: jswymer
 # Welcome to Business Central resources for partners
 
 > [!NOTE]
-> The 2025 release wave 1 launch event for [!INCLUDE [prod_short](../includes/prod_short.md)] was kicked off on April 1, 2025. Find all 'What's new' sessions on [aka.ms/BCLE](https://aka.ms/BCLE) to join the live opening.
+> The 2025 release wave 1 launch event for [!INCLUDE [prod_short](../includes/prod_short.md)] was kicked off on April 1, 2025. Find all 'What's new' sessions on [aka.ms/BCLE](https://aka.ms/BCLE).
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
