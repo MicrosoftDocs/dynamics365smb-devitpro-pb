@@ -1178,6 +1178,7 @@
 ### [Extensibility overview](developer/devenv-extensibility-overview.md)
 ### [Extension objects overview](developer/devenv-extension-object-overview.md)
 ### Extensibility requests
+#### [Contribute a change yourself](developer/devenv-contribute-extensibility.md)
 #### [Create an extensibility request](developer/create-extensibility-request.md)
 #### [Types of events for extensibility](developer/types-of-events-for-extensibility.md)
 ### Extending AL objects
@@ -1229,7 +1230,6 @@
 ### Embedding Power BI
 #### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
-
 <!-- end Testing the application -->
 
 <!-- Rules and Guidelines -->
