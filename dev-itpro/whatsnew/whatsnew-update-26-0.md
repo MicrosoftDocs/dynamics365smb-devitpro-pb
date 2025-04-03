@@ -192,8 +192,8 @@ This section outlines changes to feature and feature updates controlled by **Fea
 ### Features delayed from becoming mandatory in update 26.0
 
 - [Feature: Enable using SAF-T Audit Files Exports](/dynamics365/business-central/localfunctionality/denmark/how-to-use-saft-audit-files-export)
-- [Feature Update Auto-save as you work](dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)
-- 
+- [Feature Update Auto-save as you work](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)
+
 ### New features enabled by default
 
 - [Feature: Disable SOAP web services on Microsoft UI pages](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)<!-- missing rp-->
