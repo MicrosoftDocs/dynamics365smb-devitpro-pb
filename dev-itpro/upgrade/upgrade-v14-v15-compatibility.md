@@ -29,7 +29,7 @@ The following table lists the Business Central 24 versions and the minimum versi
 |Version 25 |Version 26|
 |-|-|
 |25.0 to 25.5|[26.0](../whatsnew/whatsnew-update-26-0.md#on-premises-download-packages)|
-|25.6|26.1|
+|[25.6](https://support.microsoft.com/help/5056718)|26.1|
 
 ## Version 24 compatibility
 
