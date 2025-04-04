@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Constant value '{0}' is outside the range for a Time.
+Constant value '{0}' is outside the range for a Time. The syntax for defining Time format is `hhmmssT`, where `T` is a mandatory letter. For example, `134530T`, read as 13:45:30 or 1:45:30pm.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
