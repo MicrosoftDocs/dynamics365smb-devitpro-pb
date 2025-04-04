@@ -3,7 +3,7 @@ title: Development and administration for Business Central
 description: Learn how to extend, manage, and customize Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 04/17/2024
+ms.date: 04/03/2025
 ms.topic: article
 ms.reviewer: solsen
 ---
@@ -14,11 +14,11 @@ ms.reviewer: solsen
 
 ## Get started with development and administration documentation
 
-The content in this section of the learn.microsoft.com site is intended for people who are [!INCLUDE [prod_short](developer/includes/prod_short.md)] resellers, administrators, or developers, and people who want to get started with [!INCLUDE [prod_short](developer/includes/prod_short.md)] development or administration. If you are a functional consultant or user of [!INCLUDE [prod_short](developer/includes/prod_short.md)], check out the [Business Functionality Help](/dynamics365/business-central/index) instead.  
+The content in this section of the learn.microsoft.com site is intended for people who are [!INCLUDE [prod_short](developer/includes/prod_short.md)] resellers, administrators, or developers, and people who want to get started with [!INCLUDE [prod_short](developer/includes/prod_short.md)] development or administration. If you're a functional consultant or user of [!INCLUDE [prod_short](developer/includes/prod_short.md)], check out the [Business functionality help](/dynamics365/business-central/index) instead.  
 
 ## Resources for an administrator
 
-As a system administrator, IT professional, or superuser, you have tools available for you to configure, update, and maintain a [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. The tools and processes are somewhat different depending on whether [!INCLUDE [prod_short](developer/includes/prod_short.md)] is deployed online or on-premises. It also depends on whether you are an internal administrator, or you work for a partner.  
+As a system administrator, IT professional, or superuser, you have tools available for you to configure, update, and maintain a [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. The tools and processes are somewhat different depending on whether [!INCLUDE [prod_short](developer/includes/prod_short.md)] is deployed online or on-premises. It also depends on whether you're an internal administrator, or you work for a partner.  
 
 The following table outlines recommended content for you to get started:
 
@@ -30,8 +30,8 @@ The following table outlines recommended content for you to get started:
 |[The Business Central Administration Center](administration/tenant-admin-center.md)|Learn about the administration center and what you can do there.|
 |[Technical Support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]](technical-support.md)|Learn about the tools that are available to you to help you troubleshoot your customers' Business Central.|
 |[Managing Technical Support](administration/manage-technical-support.md)|Learn about how to handle support requests.|
-|[Administration of Business Central On-Premises](administration/Administration.md)|Learn about resources that are available to you as the system administrator, IT professional, or superuser of [!INCLUDE [prod_short](developer/includes/prod_short.md)] on-premises.|
-|[Configuring the Help Experience](deployment/configure-help.md)|Learn about your options for deploying Help for [!INCLUDE [prod_short](developer/includes/prod_short.md)].|
+|[Administration of Business Central on-premises](administration/Administration.md)|Learn about resources that are available to you as the system administrator, IT professional, or superuser of [!INCLUDE [prod_short](developer/includes/prod_short.md)] on-premises.|
+|[Configuring the help experience](deployment/configure-help.md)|Learn about your options for deploying Help for [!INCLUDE [prod_short](developer/includes/prod_short.md)].|
 
 ## Resources for a developer
 
@@ -49,7 +49,7 @@ The following table outlines recommended content for you to get started:
 
 ## Resources for a reseller
 
-As a reseller of [!INCLUDE [prod_short](includes/prod_short.md)] online, your route to get started depends on whether you are already familiar with [!INCLUDE [prod_short](includes/prod_short.md)] on-premises or its predecessor, [!INCLUDE [navnow_md](developer/includes/navnow_md.md)], or if you are already familiar with the Cloud Solution Provider program. The following table outlines recommended content for you to get started:
+As a reseller of [!INCLUDE [prod_short](includes/prod_short.md)] online, your route to get started depends on whether you're already familiar with [!INCLUDE [prod_short](includes/prod_short.md)] on-premises or its predecessor, [!INCLUDE [navnow_md](developer/includes/navnow_md.md)], or if you're already familiar with the Cloud Solution Provider program. The following table outlines recommended content for you to get started:
 
 | Link | Description |
 |--|--|
@@ -73,7 +73,7 @@ If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we
 
 ## Related information
 
-[[!INCLUDE[prod_long](includes/prod_long.md)] Business functionality Help](/dynamics365/business-central/index)  
+[[!INCLUDE[prod_long](includes/prod_long.md)] Business functionality help](/dynamics365/business-central/index)  
 [Dynamics 365 Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)  
 [FAQ for Dynamics 365 Business Central development and administration](faq.yml)  
 [Resources for help and support for [!INCLUDE[prod_long](includes/prod_long.md)]](help-and-support.md)  
