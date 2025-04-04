@@ -197,3 +197,5 @@ You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry 
 [Analyzing outgoing web service request telemetry](../administration/telemetry-webservices-outgoing-trace.md)  
 [Developing extensions](devenv-dev-overview.md)  
 [Get started with AL](devenv-get-started.md)  
+[Mock outbound HttpClient web service calls during testing](devenv-httpclient-mock-outbound-calls.md)  
+[HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md)

@@ -25,9 +25,9 @@ This article provides an overview of the new and updated features and general in
 
 Sales Order Agent is available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
   
-The Sales Order Agent automates sales order processing from customer emails using AI. It identifies customers, clarifies details via email, checks item availability, creates quotes and orders, and generates PDF documents. All interactions are tracked in Business Central, keeping users informed and enabling involvement when necessary.
+The Sales Order Agent automates sales order processing from customer emails using AI. It identifies customers, clarifies details via email, checks item availability, creates quotes and orders, and generates PDF documents. All interactions are tracked in Business Central, keeping users informed and enabling involvement when necessary. Watch a short video on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
 
-Watch a short video on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
+This update introduces billing for the agent. Charges are based on Microsoft Copilot Studio messages used for AI interactions and tasks. Learn more in [Manage consumption-based billing for agent capabilities](../administration/tenant-admin-center-manage-consumption-billing.md).  
 
 Learn how to set up and use Sales Order agent in [Sales Order Agent overview](/dynamics365/business-central/sales-order-agent) or follow its release plan at [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process).
 
@@ -192,6 +192,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 ### Features delayed from becoming mandatory in update 26.0
 
 - [Feature: Enable using SAF-T Audit Files Exports](/dynamics365/business-central/localfunctionality/denmark/how-to-use-saft-audit-files-export)
+- [Feature Update Auto-save as you work](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)
 
 ### New features enabled by default
 
@@ -200,9 +201,9 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 ### New features disabled by default
 
-- [Feature Update: Enable multiple users to post item ledger entries and value entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833) 
-- [Feature Update: Enable multiple users to post job ledger entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
-- [Feature Update: Enable multiple users to post resource ledger entries at the same time entries at the same time](https://go.microsoft.com/fwlink/?linkid=2299833)  <!-- missing rp-->
+- [Feature Update: Enable multiple users to post item ledger entries and value entries at the same time](/dynamics365/business-central/inventory-how-setup-general#allow-workers-to-post-transactions-at-the-same-time) 
+- [Feature Update: Enable multiple users to post job (now called project) ledger entries at the same time](/dynamics365/business-central/projects-how-setup-jobs?tabs=current-experience#allow-multiple-people-to-post-project-transactions-at-the-same-time)  <!-- missing rp-->
+- [Feature Update: Enable multiple users to post resource ledger entries at the same time](/dynamics365/business-central/projects-how-setup-resources#allow-multiple-people-to-post-resource-transactions-at-the-same-time)  <!-- missing rp-->
 - [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
 - [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md)<!-- missing rp-->
 - [Feature: Optimize screen estate usage for web](https://go.microsoft.com/fwlink/?linkid=2304791)
@@ -242,8 +243,9 @@ Select and download the package for the appropriate country or region version fr
 |IS - Iceland|[Dynamics.365.BC.32481.IS.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.IS.DVD.zip)|
 |IT - Italy|[Dynamics.365.BC.32481.IT.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.IT.DVD.zip)|
 |MX - Mexico|[Dynamics.365.BC.32481.MX.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.MX.DVD.zip)|
-|NL - Netherlands|[Dynamics.365.BC.32481.NL.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.IT.DVD.zip)|
-|NZ - New Zealand|[Dynamics.365.BC.32481.NZ.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.NL.DVD.zip)|
+|NL - Netherlands|[Dynamics.365.BC.32481.NL.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.NL.DVD.zip)|
+|NO - Norway|[Dynamics.365.BC.32481.NO.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.NO.DVD.zip)|
+|NZ - New Zealand|[Dynamics.365.BC.32481.NZ.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.NZ.DVD.zip)|
 |RU - Russia|[Dynamics.365.BC.32481.RU.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.RU.DVD.zip)|
 |SE - Sweden|[Dynamics.365.BC.32481.SE.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.SE.DVD.zip)|
 |US - United States|[Dynamics.365.BC.32481.US.DVD.zip](https://download.microsoft.com/download/840ce874-dbc3-430f-a17e-6ed5d9d465bf/Dynamics.365.BC.32481.US.DVD.zip)|
