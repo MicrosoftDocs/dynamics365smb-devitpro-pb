@@ -41,6 +41,22 @@ Whether to allow the user to download or print the file from the client or not.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+```al
+internal procedure ViewFile()
+var
+    TempBlob: Codeunit "Temp Blob";
+    FileInStream: InStream;
+begin
+    GetAsTempBlob(TempBlob);
+    TempBlob.CreateInStream(FileInStream);
+    File.ViewFromStream(FileInStream, Rec."File Name" + '.' + Rec."File Extension", true);
+end;
+
+```
+
 ## Related information
 [File data type](file-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
