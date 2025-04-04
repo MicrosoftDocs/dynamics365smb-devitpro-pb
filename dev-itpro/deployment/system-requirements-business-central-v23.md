@@ -4,7 +4,7 @@ description: This article provides the specifications of minimum hardware and so
 ms.custom: bap-template
 ms.service: dynamics-365-op
 ms.topic: overview
-ms.date: 12/04/2023
+ms.date: 03/18/2025
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -36,7 +36,7 @@ For the latest information, see the app in the App Store or Google Play.
 
 |Specification|Requirement|  
 |------|-----|
-|[!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)] version|<ul><li>3.7 or later</li></ul>|  
+|[!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)] version|<ul><li>4.0 or later</li></ul>|  
 |Supported operating systems|<ul><li>Android (tablet and phone): The latest three major versions and their updates.</li><li> iOS (iPad and iPhone): The latest three major versions and their updates.</li></ul>|  
 |Additional hardware|<ul><li>1-GB RAM for Android and Windows.</li></ul>|  
 |Additional information|<ul><li>Device diagonal screen size 7" for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4" for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>| 
@@ -67,7 +67,7 @@ The following table shows the minimum system requirements for customizing or ext
 
 |Specification|Requirement|
 |-----|-----|
-|Supported operating systems|<ul><li>Windows Server 2022</li><li>Windows Server 2019</li><li>Windows 11</li><li>Windows 10</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
+|Supported operating systems|<ul><li>Windows Server 2025</li><li>Windows Server 2022</li><li>Windows Server 2019</li><li>Windows 11</li><li>Windows 10</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL Language extension for Microsoft Dynamics 365 Business Central](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU: four cores minimum</li><li>Memory:<br />16 GB for development only. <br />16 GB for developing and locally deploying small extensions (<1000 objects).<br />32-64 GB for developing and locally deploying large extensions (>1000 objects).</li></ul>|
 |Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2019, or</li><li>Visual Studio 2019 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2019 or later</li></ul></li></ul>|  
@@ -82,7 +82,7 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 
 |Specification|Requirement|  
 |-----|-----|  
-|Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education \(64-bit edition, version 22H2 and later.\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\)</li><li>Windows Server 2022 (Datacenter, Standard)</li><li>Windows Server 2019 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).<!--Windows Server 2019 ends mainstream support Jan 9, 2024; remove this for 2024rw1. Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2.-->|
+|Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education \(64-bit edition, version 22H2 and later.\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition, version 22H2\)</li><li>Windows Server 2025 (Datacenter, Standard)</li><li>Windows Server 2022 (Datacenter, Standard)</li><li>Windows Server 2019 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).<!--Windows Server 2019 ends mainstream support Jan 9, 2024; remove this for 2024rw1. Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2.-->|
 |Hardware resources|<ul><li>Hard disk space: 2 GB</li><li>Memory:<br /> 8 GB for running application only<br />16 GB for publishing small extensions (<1000 objects) to server<br />32-64 GB for publishing large extensions (>1000 objects) to server</li>**Note** The memory for publishing extensions is recommended to ensure extensions publish in a reasonable amount of time. Publishing extensions with less memory is possible but it takes longer.</ul>|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Foundation.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](system-requirement-business-central.md#CRM).|  
 |Additional software|<ul><li>Microsoft .NET 6.0</li><li>Microsoft .NET Framework 4.8 (required for report rendering and [!INCLUDE[adminshell](../developer/includes/adminshell.md)])</li></ul>.|  
@@ -94,7 +94,7 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 
 |Specification|Requirement|  
 |----|----|  
-|Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education  \(64-bit edition, version 22H2 and later.\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition)</li><li>Windows Server 2022 (Datacenter, Standard)</li><li>Windows Server 2019 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).<!--Windows Server 2019 ends mainstream support Jan 9, 2024; remove this for 2024rw1. Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2.-->|    
+|Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education  \(64-bit edition, version 22H2 and later.\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition)</li><li>Windows Server 2025 (Datacenter, Standard)</li><li>Windows Server 2022 (Datacenter, Standard)</li><li>Windows Server 2019 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).<!--Windows Server 2019 ends mainstream support Jan 9, 2024; remove this for 2024rw1. Windows Server 2022 ends mainstream support Oct 13, 2026; so need remove this for 2026w2.-->|    
 |Web server|<ul><li>Internet Information Services 10.|   
 |Additional software|<ul><li>Microsoft .NET 6.0</li></ul>|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Windows Server Hosting 6.0.15.</li><li>Microsoft .NET 6.0</li><li>Internet Information Services 10 is installed with the required features enabled.</li></ul></li><li>For more information about configuring IIS, see [Configuring IIS](configure-iis.md)</li></ul>|  
