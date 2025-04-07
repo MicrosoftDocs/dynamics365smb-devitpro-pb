@@ -1,20 +1,20 @@
 ---
-title: General Information and Considerations When Upgrading to Business Central
+title: Important information and considerations when upgrading to Business Central
 description: This article provides tips and considerations to prepare a solution when you're planning to upgrade to Business Central 2023 release wave 2 and later.
 author: jswymer
 ms.custom: bap-template
 ms.topic: conceptual
-ms.date: 09//2025
+ms.date: 04/07/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Important Information and Considerations When Upgrading to Business Central
+# Important information and considerations when upgrading to Business Central
 
-This article provides important information and tips for things to consider when you prepare to upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2 (version 23), 2024 release wave 1 (version 24), or 2024 release wave 2 (version 25) The information that's relevant for you depends on which version you're upgrading from, and how much your solution differs from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application.
+This article provides important information and tips for things to consider when you prepare to upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release 1 (version 26) The information that's relevant for you depends on which version you're upgrading from, and how much your solution differs from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application.
 
 ## <a name="online"></a>Migrate to Business Central online
 
-You can upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online from supported versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, as long as extensions handle your application customizations. 
+You can upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online from supported versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, as long as extensions handle your application customizations.
 
 The process consists of two parts:
 
@@ -23,7 +23,7 @@ The process consists of two parts:
 
 ## New and changed application and platform features
 
-There are several new and changed application features available in version 23 and later for users, administrators, and developers. For an overview of these features, consult:
+There are several new and changed application features available in version 26 for users, administrators, and developers. For an overview of these features, consult:
 
 - [What's new and planned for Business Central 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/planned-features)
 
@@ -38,12 +38,13 @@ Learn more about the deprecated features in:
 - [Deprecated Features in Application](deprecated-features-w1.md)
 - [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)
 - [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)
+- [Deleted objects in 2025 release wave 1](deleted-objects-25w1.md)
 
 ## Important deployment-related changes
 
-This section includes important changes introduced in version 23.0 that you need to considr when upgrading from version 22 and earlier.
+This section includes important changes that you need to consider when upgrading from version 22 and earlier to version 26.0. These changes were introduced in version 23.0.
 
-- Starting with version 23.0, the default port for client services port for [!INCLUDE[server](../developer/includes/server.md)] changed to 7085 instead of 7046. You can still use 7046, but you have to change the port number in the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. Learn more in [Configuring Business Central Server](../administration/configure-server-instance.md).
+- The default port for client services port for [!INCLUDE[server](../developer/includes/server.md)] changed to 7085 instead of 7046. You can still use 7046, but you have to change the port number in the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. Learn more in [Configuring Business Central Server](../administration/configure-server-instance.md).
 - NET Core no longer supports Server principle names (SPN). This change affects the delegation from the [!INCLUDE[webserver](../developer/includes/webserver.md)] to the [!INCLUDE[server](../developer/includes/server.md)] when they're on different computers.
 
   The affected scenarios are described in [Deploying Business Central in a Two-Computer Topology](../deployment/deploy-two-computer-environment.md) and [Deploying Business Central in a Three-Computer Topology](../deployment/deploy-three-computer-environment.md).
@@ -59,21 +60,23 @@ This section includes important changes introduced in version 23.0 that you need
 
 ## Report platform
 
-Version 20 introduced a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made that affect upgrade from version 19 and earlier. If you're upgrading from version 20 or later, the solution should already include the necessary changes.
+Version 20 introduced a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made that affect upgrade from version 19 and earlier. If you're upgrading from version 20 or later, the solution already includes the necessary changes.
 
 Learn more in [Upgrading reports](upgrade-reports.md).
 
 ## Breaking schema changes in subscription billing extension
 
-Version 25.0 introduces the **Subscription & Recurring Billing** extension. In version 26, the extension is renamed to **Subscription Billing**. Several tables and fields in the extension are renamed, causing breaking changes when upgrading the extension from version 25.0 to 26.0 or later. To upgrade the extension, synchronize the extension's database schema with the tenant database schema using a force sync operation.
+Version 25.0 introduced the **Subscription & Recurring Billing** extension. In version 26, the extension is renamed to **Subscription Billing**. Several tables and fields in the extension are renamed, causing breaking changes when upgrading the extension from version 25.0 to 26.0 or later. To upgrade the extension, synchronize the extension's database schema with the tenant database schema using a force sync operation.
 
 Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading.
 
 ### Renamed tables and fields
 
-#### Table 8051 "Service Contract Setup" -> "Subscription Contract Setup":
+This section lists the new names for tables and fields. *(ff)* indicates a flow field.
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+#### Table 8051 "Service Contract Setup" → "Subscription Contract Setup"
+
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 2        | Customer Contract Nos.                 | Cust. Sub. Contract Nos.               |
 | 3        | Vendor Contract Nos.                   | Vend. Sub. Contract Nos.               |
@@ -81,8 +84,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 6        | Serv. Start Date for Inv. Pick         | Sub. Line Start Date Inv. Pick         |
 
 
-#### Table 8004 "Contract Price Update Line" -> "Sub. Contr. Price Update Line":
-| Field ID | Original Field Name                     | Updated Field Name                     |
+#### Table 8004 "Contract Price Update Line" → "Sub. Contr. Price Update Line"
+
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 2        | Service Object No.                     | Subscription Header No.                |
 | 3        | Service Commitment Entry No.           | Subscription Line Entry No.            |
@@ -94,9 +98,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 14       | Old Service Amount                     | Old Amount                             |
 | 15       | New Service Amount                     | New Amount                             |
 
-#### Table 8001 "Contract Renewal Line" -> "Sub. Contract Renewal Line":
+#### Table 8001 "Contract Renewal Line" → "Sub. Contract Renewal Line"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 1        | Service Object No.                     | Subscription Header No.                |
 | 2        | Service Commitment Entry No.           | Subscription Line Entry No.            |
@@ -113,9 +117,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | (ff) 108 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
 | 201      | Agreed Serv. Comm. Start Date          | Agreed Sub. Line Start Date            |
 
-#### Table 8002 "Planned Service Commitment" -> "Planned Subscription Line":
+#### Table 8002 "Planned Service Commitment" → "Planned Subscription Line"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 1        | Service Object No.                     | Subscription Header No.                |
 | 3        | Package Code                           | Subscription Package Code              |
@@ -126,9 +130,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 26       | Service Object Customer No.            | Subscription Customer No.              |
 | 27       | Contract Line No.                      | Subscription Contract Line No.         |
 
-#### Table 8019 "Contract Analysis Entry" -> "Sub. Contr. Analysis Entry":
+#### Table 8019 "Contract Analysis Entry" → "Sub. Contr. Analysis Entry"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 2        | Service Object No.                     | Subscription Header No.                |
 | 3        | Package Code                           | Subscription Package Code              |
@@ -144,9 +148,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 8008     | Service Object Source No.              | Sub. Header Source No.                 |
 | 8010     | Service Object Description             | Subscription Description               |
 
-#### Table 8062 "Customer Contract Line" -> "Cust. Sub. Contract Line":
+#### Table 8062 "Customer Contract Line" → "Cust. Sub. Contract Line"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 1        | Contract No.                           | Subscription Contract No.              |
 | 100      | Service Object No.                     | Subscription Header No.                |
@@ -156,11 +160,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | (ff) 109 | Service Obj. Quantity Decimal          | Service Object Quantity                |
 | (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
 
+#### Table 8065 "Vendor Contract Line" → "Vend. Sub. Contract Line"
 
-
-#### Table 8065 "Vendor Contract Line" -> "Vend. Sub. Contract Line":
-
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 1        | Contract No.                           | Subscription Contract No.              |
 | 100      | Service Object No.                     | Subscription Header No.                |
@@ -170,9 +172,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | (ff) 109 | Service Obj. Quantity Decimal          | Service Object Quantity                |
 | (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
 
-#### Table 8066 "Customer Contract Deferral" -> "Cust. Sub. Contract Deferral":
+#### Table 8066 "Customer Contract Deferral" → "Cust. Sub. Contract Deferral"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 2        | Contract No.                           | Subscription Contract No.              |
 | 5        | Contract Type                          | Subscription Contract Type             |
@@ -180,9 +182,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 23       | Service Object Description             | Subscription Description               |
 | 24       | Service Commitment Description         | Subscription Line Description          |
 
-#### Table 8072 "Vendor Contract Deferral" -> "Vend. Sub. Contract Deferral":
+#### Table 8072 "Vendor Contract Deferral" → "Vend. Sub. Contract Deferral"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 2        | Contract No.                           | Subscription Contract No.              |
 | 5        | Contract Type                          | Subscription Contract Type             |
@@ -190,24 +192,24 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 23       | Service Object Description             | Subscription Description               |
 | 24       | Service Commitment Description         | Subscription Line Description          |
 
-#### Table 8010 "Imported Customer Contract" -> "Imported Cust. Sub. Contract":
+#### Table 8010 "Imported Customer Contract" → "Imported Cust. Sub. Contract"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 2        | Contract No.                           | Subscription Contract No.              |
 | 7        | Contract Type                          | Subscription Contract Type             |
 
 
-#### Table 8008 "Imported Service Object" -> "Imported Subscription Header":
+#### Table 8008 "Imported Service Object" → "Imported Subscription Header"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 2        | Service Object No.                     | Subscription Header No.                |
 | 100      | Service Object created                 | Subscription Header created            |
 
-#### Table 8009 "Imported Service Commitment" -> "Imported Subscription Line":
+#### Table 8009 "Imported Service Commitment" → "Imported Subscription Line"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 2        | Service Object No.                     | Subscription Header No.                |
 | 3        | Service Commitment Entry No.           | Subscription Line Entry No.            |
@@ -223,9 +225,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 100      | Service Commitment created             | Subscription Line created              |
 | 104      | Contract Line created                  | Sub. Contract Line created             |
 
-#### Table 8007 "Overdue Service Commitments" -> "Overdue Subscription Line":
+#### Table 8007 "Overdue Service Commitments" → "Overdue Subscription Line"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 4        | Contract No.                           | Subscription Contract No.              |
 | 5        | Contract Description                   | Sub. Contract Description              |
@@ -238,10 +240,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 17       | Service Object Description             | Subscription Description               |
 | 19       | Quantity Decimal                       | Quantity                               |
 
+#### Table 8068 "Sales Service Commitment" → "Sales Subscription Line"
 
-#### Table 8068 "Sales Service Commitment" -> "Sales Subscription Line":
-
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 20       | Service Amount                         | Amount                                 |
 | 21       | Service Comm. Start Formula            | Sub. Line Start Formula                |
@@ -250,25 +251,25 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 50       | Service Object No.                     | Subscription Header No.                |
 | 51       | Service Commitment Entry No.           | Subscription Line Entry No.            |
 
-#### Table 8069 "Sales Service Comm. Archive" -> "Sales Sub. Line Archive":
+#### Table 8069 "Sales Service Comm. Archive" → "Sales Sub. Line Archive"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 20       | Service Amount                         | Amount                                 |
 | 21       | Service Comm. Start Formula            | Sub. Line Start Formula                |
 | 22       | Agreed Serv. Comm. Start Date          | Agreed Sub. Line Start Date            |
 
-#### Table 8057 "Service Object" -> "Subscription Header":
+#### Table 8057 "Service Object" → "Subscription Header"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 28       | Quantity Decimal                       | Quantity                               |
 | (ff) 95  | Archived Service Commitments           | Archived Sub. Lines exist              |
 | (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Lines exist               |
 
-#### Table 8059 "Service Commitment" -> "Subscription Line":
+#### Table 8059 "Service Commitment" → "Subscription Line"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 1        | Service Object No.                     | Subscription Header No.                |
 | 3        | Package Code                           | Subscription Package Code              |
@@ -285,7 +286,7 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 
 #### Table 8073: Service Commitment Archive → Subscription Line Archive
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 2        | Service Object No.                     | Subscription Header No.                |
 | 5        | Package Code                           | Subscription Package Code              |
@@ -300,16 +301,16 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 42       | Quantity Decimal (Service Ob.)         | Quantity (Sub. Header)                 |
 | 96       | Variant Code (Service Object)          | Variant Code (Sub. Header)             |
 
-#### Table "Service Comm. Package Line" -> "Subscription Package Line":
+#### Table "Service Comm. Package Line" → "Subscription Package Line"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 1        | Package Code                           | Subscription Package Code              |
 | 12       | Service Comm. Start Formula            | Sub. Line Start Formula                |
 
-#### Table 8016 "Usage Data Subscription" -> "Usage Data Supp. Subscription":
+#### Table 8016 "Usage Data Subscription" → "Usage Data Supp. Subscription"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 6        | Service Object No.                     | Subscription Header No.                |
 | 7        | Service Commitment Entry No.           | Subscription Line Entry No.            |
@@ -321,7 +322,7 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 
 #### Table 8070 "Subscription Billing Cue"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | (ff) 2   | Customer Contract Invoices             | Cust. Sub. Contr. Invoices             |
 | (ff) 3   | Customer Contract Credit Memos         | Cust. Sub. Contr. Credit Memos         |
@@ -330,9 +331,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | (ff) 6   | Serv. Comm. wo Cust. Contract          | Sub. L. wo Cust. Sub. Contract         |
 | (ff) 7   | Serv. Comm. wo Vend. Contract          | Sub. L. wo Vend. Sub. Contract         |
 
-#### Table 8061 "Billing Line":
+#### Table 8061 "Billing Line"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 20       | Contract No.                           | Subscription Contract No.              |
 | 21       | Contract Line No.                      | Subscription Contract Line No.         |
@@ -345,9 +346,9 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 39       | Service Obj. Quantity Decimal          | Service Object Quantity                |
 | 52       | Service Amount                         | Amount                                 |
 
-#### Table 8064 "Billing Line Archive":
+#### Table 8064 "Billing Line Archive"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no, | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 20       | Contract No.                           | Subscription Contract No.              |
 | 21       | Contract Line No.                      | Subscription Contract Line No.         |
@@ -360,23 +361,23 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 39       | Service Obj. Quantity Decimal          | Service Object Quantity                |
 | 52       | Service Amount                         | Amount                                 |
 
-#### Table 8003 "Price Update Template":
+#### Table 8003 "Price Update Template"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no, | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 4        | Contract Filter                        | Subscription Contract Filter           |
 | 5        | Service Commitment Filter              | Subscription Line Filter               |
 | 6        | Service Object Filter                  | Subscription Filter                    |
 
-#### Table 8017 "Generic Import Settings":
+#### Table 8017 "Generic Import Settings"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 4        | Create Subscriptions                   | Create Supplier Subscriptions          |
 
-#### Table 8006 "Usage Data Billing":
+#### Table 8006 "Usage Data Billing"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 5        | Contract No.                           | Subscription Contract No.              |
 | 6        | Contract Line No.                      | Subscription Contract Line No.         |
@@ -385,15 +386,15 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | 9        | Service Commitment Entry No.           | Subscription Line Entry No.            |
 | 10       | Service Commitment Description         | Subscription Line Description           |
 
-#### Table 8018 "Usage Data Generic Import":
+#### Table 8018 "Usage Data Generic Import"
 
-| Field ID | Original Field Name                     | Updated Field Name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 6        | Service Object No.                     | Subscription Header No.                |
 
 #### Only tables renamed
 
-| Original Table Name                     | Updated Table Name                     |
+| Original table name                     | New table name                     |
 |-----------------------------------------|----------------------------------------|
 | Contract Type                           | Subscription Contract Type             |
 | Customer Contract                       | Customer Subscription Contract         |
@@ -403,6 +404,46 @@ Force sync can cause data loss if custom code depends on the renamed tables and 
 | Service Commitment Template             | Sub. Package Line Template             |
 | Service Commitment Package              | Subscription Package                   |
 | Usage Data Customer                     | Usage Data Supp. Customer              |
+
+
+<!--
+ Sync-NAVApp : [31;1mSync-NAVApp: [0m
+[31;1m[36;1mLine |[0m
+[31;1m[36;1m[36;1m  15 | [0m     $output = [36;1mSync-NAVApp @cmdletArgs[0m;[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m               ~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mTable 8001 Contract Renewal Line :: The table 'Contract Renewal Line' cannot be located. Removing tables is not 
+allowed unless they are temporary or are being moved by migration to another app.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8002 Planned Service Commitment :: The table 'Planned Service Commitment' cannot be located. Removing tables is not 
+allowed unless they are temporary or are being moved by migration to another app.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8003 Price Update Template :: The field 'Contract Filter' cannot be located. Removing fields is not allowed.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8003 Price Update Template :: The field 'Service Commitment Filter' cannot be located. Removing fields is not 
+allowed.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8003 Price Update Template :: The field 'Service Object Filter' cannot be located. Removing fields is not allowed.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8004 Contract Price Update Line :: The table 'Contract Price Update Line' cannot be located. Removing tables is not 
+allowed unless they are temporary or are being moved by migration to another app.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8005 Item Templ. Serv. Comm. Pack. :: The table 'Item Templ. Serv. Comm. Pack.' cannot be located. Removing tables is 
+not allowed unless they are temporary or are being moved by migration to another app.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8006 Usage Data Billing :: The field 'Contract No.' cannot be located. Removing fields is not allowed.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8006 Usage Data Billing :: The field 'Contract Line No.' cannot be located. Removing fields is not allowed.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8006 Usage Data Billing :: The field 'Service Object No.' cannot be located. Removing fields is not allowed.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8006 Usage Data Billing :: The field 'Service Commitment Entry No.' cannot be located. Removing fields is not 
+allowed.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8006 Usage Data Billing :: The field 'Service Commitment Description' cannot be located. Removing fields is not 
+allowed.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8008 Imported Service Object :: The table 'Imported Service Object' cannot be located. Removing tables is not allowed 
+unless they are temporary or are being moved by migration to another app.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8009 Imported Service Commitment :: The table 'Imported Service Commitment' cannot be located. Removing tables is not 
+allowed unless they are temporary or are being moved by migration to another app.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8010 Imported Customer Contract :: The table 'Imported Customer Contract' cannot be located. Removing tables is not 
+allowed unless they are temporary or are being moved by migration to another app.[0m
+[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8012 Usage Data Customer :: The table 'Usage Data Customer' cannot be located. Removing tables is not allowed unless 
+they are temporary or are being moved by migration to another app.[0m
+At line:1 char:1
++ Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "Subscription  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: ([31;1mSync-NAV...ther app.[0m
+:String) [Sync-NAVApp], InvalidOperationException
+    + FullyQualifiedErrorId : navId,Microsoft.Dynamics.Nav.Management.SyncNAVApp-->
 
 ## Related information  
 

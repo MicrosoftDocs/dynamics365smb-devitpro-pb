@@ -1,7 +1,7 @@
 ---
 title: Some Known Issues in Business Central On-premises
 description: Provides an overview of the known issues in Business Central versions
-ms.date: 01/21/2025
+ms.date: 04/07/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -15,6 +15,29 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+
+## Renamed tables and fields in susbscription billing extension cause synch errors on upgrade
+
+> Applies to: Upgrade from 25.X
+
+### Problem
+
+Several tables and fields are renamed in the subscription billing extension for version 26. These changes prevent you from syncing the extension to the tenant database when upgrading to version 26.0 or later. When you try to sync the extension, you get errors like the following:  
+
+`Table 8001 Contract Renewal Line :: The table 'Contract Renewal Line' cannot be located. Removing tables is not allowed unless they are temporary or are being moved by migration to another app.`
+
+`Table 8003 Price Update Template :: The field 'Contract Filter' cannot be located. Removing fields is not allowed.`
+
+### Workaround
+
+Force sync the extension using the `-Mode ForceSync` parameter:
+
+```powershell
+Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "Subscription Billing" -version $NewVersion -Mode ForceSync
+```
+
+> [!IMPORTANT]
+> Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading. Learn more about this issue in [Breaking schema changes in subscription billing extension](upgrade-considerations-v26.md#breaking-schema-changes-in-subscription-billing-extension).
 
 ## Number series creation doesn't work in Business Central 25.2 on-premises
 
