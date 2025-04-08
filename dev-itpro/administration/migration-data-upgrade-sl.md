@@ -1,6 +1,6 @@
 ---
 title: Upgrade data for Dynamics SL cloud migration
-description: This article explains the process for running the data upgrade as part of Dynamics SL cloud migration. 
+description: Discover the process for running the data upgrade as part of Dynamics SL cloud migration. 
 author: lcontreras
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -22,14 +22,14 @@ You ran data replication on the company or companies that you're migrating to th
 
 ## Prepare
 
-When you start the data upgrade, all client connections are terminated, and you can't reconnect until the upgrade completes. Hotfixes and scheduled tasks can't run during this time. This behavior ensures the data upgrade is the only process running, preventing potential database locks and errors.
+When you start the data upgrade, all client connections are terminated, and you can't reconnect until the upgrade completes. Hotfixes and scheduled tasks can't run during this time. This behavior ensures the data upgrade is the only process running, preventing potential database locks, and errors.
 
 Ask active Business Central online users to finish their tasks and sign out.
 
 ## Run data upgrade
 
 1. Search for and open the **Cloud Migration Management** page.
-2. Select **Run data upgrade** > **Yes** > **OK** to schedule the data upgrade.
+1. Select **Run data upgrade** > **Yes** > **OK** to schedule the data upgrade.
 
    The data upgrade process starts. To check whether the migration succeeded or failed. To check if the migration succeeded or failed, go to the **Cloud Migration Management** page. If the upgrade fails, go to the **Migration Errors** FactBox to view the errors.
 

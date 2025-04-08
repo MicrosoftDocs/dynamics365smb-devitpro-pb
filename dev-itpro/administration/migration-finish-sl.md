@@ -1,6 +1,6 @@
 ---
 title: Complete cloud migration for Dynamics SL
-description: This article describes the task you do to complete the data migration from Dynamics SL to Business Central online. 
+description: Learn how to complete the data migration from Dynamics SL to Business Central online. 
 author: lcontreras
 ms.author: jswymer 
 ms.reviewer: jswymer
@@ -32,7 +32,7 @@ To disable cloud migration, follow these steps:
 1. Select **Disable Cloud Migration** > **Yes**.
 
 > [!NOTE]
-> The integration runtime remains installed on your on-premise machine. If it's not used for cloud migration within a couple of weeks, its cloud registration is automatically cleaned up. To migrate data again, you must go through the cloud migration setup and might need to reinstall the Self-hosted Integration Runtime.
+> The integration runtime remains installed on your on-premises machine. If not used for cloud migration within a couple of weeks, its cloud registration is automatically cleaned up. To migrate data again, you must go through the cloud migration setup and might need to reinstall the Self-hosted Integration Runtime.
 
 ## Step 2: Set up users and permissions
 
