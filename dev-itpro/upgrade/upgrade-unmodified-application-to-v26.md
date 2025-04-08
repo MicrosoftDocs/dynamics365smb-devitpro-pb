@@ -26,7 +26,7 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 - 2019 release wave 2 (version 15)
 
 > [!IMPORTANT]
-> See [Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md) to determine which update of version 26 is compatible with your current Business Central version.
+> Consult [Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md) to determine which update of version 26 is compatible with your current Business Central version.
 
 [![Upgrade on unmodified Business Central application.](../developer/media/bc26-upgrade-unmodified-app.svg)](../developer/media/bc26-upgrade-unmodified-app.svg#lightbox)  
 
