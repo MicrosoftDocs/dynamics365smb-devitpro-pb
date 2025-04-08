@@ -36,7 +36,7 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 ### Review upgrade considerations and known issues
 
-- Review [Important information and considerations when upgrading to Business Central](upgrade-considerations-v26.md).
+- Learn about key information and tips to prepare for an upgrade in [Important information and considerations when upgrading to Business Central](upgrade-considerations-v26.md).  
 - [!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
 
 ### Install the full-text search feature on the SQL server instance
