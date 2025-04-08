@@ -22,7 +22,7 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 ### Problem
 
-Several tables and fields are renamed in the subscription billing extension for version 26. These changes prevent you from syncing the extension to the tenant database when upgrading to version 26.0 or later. When you try to sync the extension, you get errors like the following:  
+Several tables and fields are [renamed](#renamed-tables-and-fields) in the subscription billing extension for version 26. These changes prevent you from syncing the extension to the tenant database when upgrading to version 26.0 or later. When you try to sync the extension, you get errors like the following:  
 
 `Table 8001 Contract Renewal Line :: The table 'Contract Renewal Line' cannot be located. Removing tables is not allowed unless they are temporary or are being moved by migration to another app.`
 
@@ -30,13 +30,13 @@ Several tables and fields are renamed in the subscription billing extension for 
 
 ### Workaround
 
-If there's no custom application code that depends on the renamed tables and fields, force sync extension using the `-Mode ForceSync` parameter:
+If no custom application code depends on the renamed tables and fields, force sync the extension using the `-Mode ForceSync` parameter:  
 
 ```powershell
 Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "Subscription Billing" -version $NewVersion -Mode ForceSync
 ```
 
-Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading. 
+Force sync might cause data loss if custom code depends on the renamed tables and fields in the extension. To prevent data loss, refactor the custom code to match the extension's latest database schema before upgrading.
 
 ### Renamed tables and fields
 
