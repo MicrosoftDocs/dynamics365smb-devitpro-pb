@@ -68,8 +68,9 @@ Learn more in [Upgrading reports](upgrade-reports.md).
 
 Version 25.0 introduced the **Subscription & Recurring Billing** extension. In version 26, the extension is renamed to **Subscription Billing**. Several tables and fields in the extension are renamed, causing breaking changes when upgrading the extension from version 25.0 to 26.0 or later. To upgrade the extension, synchronize the extension's database schema with the tenant database schema using a force sync operation.
 
-Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading.
+Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading. For a list of renamed tables and fields, see [Renamed tables and fields](known-issues.md#renamed-tables-and-fields-in-susbscription-billing-extension-cause-synch-errors-on-upgrade).
 
+<!--
 ### Renamed tables and fields
 
 This section lists the new names for tables and fields. *(ff)* indicates a flow field.
@@ -403,6 +404,8 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 | Service Commitment Template             | Sub. Package Line Template             |
 | Service Commitment Package              | Subscription Package                   |
 | Usage Data Customer                     | Usage Data Supp. Customer              |
+
+-->
 
 ## Related information  
 

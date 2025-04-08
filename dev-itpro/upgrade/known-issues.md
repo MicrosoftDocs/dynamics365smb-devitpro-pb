@@ -30,14 +30,352 @@ Several tables and fields are renamed in the subscription billing extension for 
 
 ### Workaround
 
-Force sync the extension using the `-Mode ForceSync` parameter:
+If there's no custom application code that depends on the renamed tables and fields, force sync extension using the `-Mode ForceSync` parameter:
 
 ```powershell
 Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "Subscription Billing" -version $NewVersion -Mode ForceSync
 ```
 
-> [!IMPORTANT]
-> Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading. Learn more about this issue in [Breaking schema changes in subscription billing extension](upgrade-considerations-v26.md#breaking-schema-changes-in-subscription-billing-extension).
+Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading. 
+
+### Renamed tables and fields
+
+This section lists the new names for tables and fields. *(ff)* indicates a flow field.
+
+#### Table 8051 "Service Contract Setup" → "Subscription Contract Setup"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Customer Contract Nos.                 | Cust. Sub. Contract Nos.               |
+| 3        | Vendor Contract Nos.                   | Vend. Sub. Contract Nos.               |
+| 4        | Service Object Nos.                    | Subscription Header No.                |
+| 6        | Serv. Start Date for Inv. Pick         | Sub. Line Start Date Inv. Pick         |
+
+#### Table 8004 "Contract Price Update Line" → "Sub. Contr. Price Update Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Service Object No.                     | Subscription Header No.                |
+| 3        | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 7        | Contract No.                           | Subscription Contract No.              |
+| 8        | Contract Description                   | Sub. Contract Description              |
+| 9        | Service Object Description             | Subscription Description               |
+| 10       | Service Commitment Description         | Subscription Line Description          |
+| 13       | Additional Service Amount              | Additional Amount                      |
+| 14       | Old Service Amount                     | Old Amount                             |
+| 15       | New Service Amount                     | New Amount                             |
+
+#### Table 8001 "Contract Renewal Line" → "Sub. Contract Renewal Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Service Object No.                     | Subscription Header No.                |
+| 2        | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 10       | Linked to Ser. Comm. Entry No.         | Linked to Sub. Line Entry No.          |
+| 11       | Linked to Contract No.                 | Linked to Sub. Contract No.            |
+| 12       | Linked to Contract Line No.            | Linked to Sub. Contr. Line No.         |
+| 13       | Contract No.                           | Subscription Contract No.              |
+| 14       | Contract Line No.                      | Subscription Contract Line No.         |
+| (ff) 101 | Service Object Description             | Subscription Description               |
+| (ff) 102 | Service Commitment Description         | Subscription Line Description          |
+| (ff) 103 | Service Start Date                     | Subscription Line Start Date           |
+| (ff) 104 | Service End Date                       | Subscription Line End Date             |
+| (ff) 106 | Service Amount                         | Amount                                 |
+| (ff) 108 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
+| 201      | Agreed Serv. Comm. Start Date          | Agreed Sub. Line Start Date            |
+
+#### Table 8002 "Planned Service Commitment" → "Planned Subscription Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Service Object No.                     | Subscription Header No.                |
+| 3        | Package Code                           | Subscription Package Code              |
+| 6        | Service Start Date                     | Subscription Line Start Date           |
+| 7        | Service End Date                       | Subscription Line End Date             |
+| 14       | Service Amount                         | Amount                                 |
+| 19       | Contract No.                           | Subscription Contract No.              |
+| 26       | Service Object Customer No.            | Subscription Customer No.              |
+| 27       | Contract Line No.                      | Subscription Contract Line No.         |
+
+#### Table 8019 "Contract Analysis Entry" → "Sub. Contr. Analysis Entry"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Service Object No.                     | Subscription Header No.                |
+| 3        | Package Code                           | Subscription Package Code              |
+| 6        | Service Start Date                     | Subscription Line Start Date           |
+| 7        | Service End Date                       | Subscription Line End Date             |
+| 14       | Service Amount                         | Amount                                 |
+| 19       | Contract No.                           | Subscription Contract No.              |
+| 27       | Contract Line No.                      | Subscription Contract Line No.         |
+| 33       | Service Amount (LCY)                   | Amount (LCY)                           |
+| 39       | Quantity Decimal                       | Quantity                               |
+| 1005     | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 8007     | Service Object Source Type             | Sub. Header Source Type                |
+| 8008     | Service Object Source No.              | Sub. Header Source No.                 |
+| 8010     | Service Object Description             | Subscription Description               |
+
+#### Table 8062 "Customer Contract Line" → "Cust. Sub. Contract Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Contract No.                           | Subscription Contract No.              |
+| 100      | Service Object No.                     | Subscription Header No.                |
+| 101      | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 102      | Service Object Description             | Subscription Description               |
+| 106      | Service Commitment Description         | Subscription Line Description          |
+| (ff) 109 | Service Obj. Quantity Decimal          | Service Object Quantity                |
+| (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
+
+#### Table 8065 "Vendor Contract Line" → "Vend. Sub. Contract Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Contract No.                           | Subscription Contract No.              |
+| 100      | Service Object No.                     | Subscription Header No.                |
+| 101      | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 102      | Service Object Description             | Subscription Description               |
+| 106      | Service Commitment Description         | Subscription Line Description          |
+| (ff) 109 | Service Obj. Quantity Decimal          | Service Object Quantity                |
+| (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
+
+#### Table 8066 "Customer Contract Deferral" → "Cust. Sub. Contract Deferral"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Contract No.                           | Subscription Contract No.              |
+| 5        | Contract Type                          | Subscription Contract Type             |
+| 22       | Contract Line No.                      | Subscription Contract Line No.         |
+| 23       | Service Object Description             | Subscription Description               |
+| 24       | Service Commitment Description         | Subscription Line Description          |
+
+#### Table 8072 "Vendor Contract Deferral" → "Vend. Sub. Contract Deferral"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Contract No.                           | Subscription Contract No.              |
+| 5        | Contract Type                          | Subscription Contract Type             |
+| 22       | Contract Line No.                      | Subscription Contract Line No.         |
+| 23       | Service Object Description             | Subscription Description               |
+| 24       | Service Commitment Description         | Subscription Line Description          |
+
+#### Table 8010 "Imported Customer Contract" → "Imported Cust. Sub. Contract"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Contract No.                           | Subscription Contract No.              |
+| 7        | Contract Type                          | Subscription Contract Type             |
+
+
+#### Table 8008 "Imported Service Object" → "Imported Subscription Header"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Service Object No.                     | Subscription Header No.                |
+| 100      | Service Object created                 | Subscription Header created            |
+
+#### Table 8009 "Imported Service Commitment" → "Imported Subscription Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Service Object No.                     | Subscription Header No.                |
+| 3        | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 5        | Contract No.                           | Subscription Contract No.              |
+| 6        | Contract Line No.                      | Subscription Contract Line No.         |
+| 7        | Contract Line Type                     | Sub. Contract Line Type                |
+| 8        | Package Code                           | Subscription Package Code              |
+| 11       | Service Start Date                     | Subscription Line Start Date           |
+| 12       | Service End Date                       | Subscription Line End Date             |
+| 19       | Service Amount                         | Amount                                 |
+| 28       | Service Amount (LCY)                   | Amount (LCY)                           |
+| (ff) 37  | Quantity Decimal                       | Quantity                               |
+| 100      | Service Commitment created             | Subscription Line created              |
+| 104      | Contract Line created                  | Sub. Contract Line created             |
+
+#### Table 8007 "Overdue Service Commitments" → "Overdue Subscription Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 4        | Contract No.                           | Subscription Contract No.              |
+| 5        | Contract Description                   | Sub. Contract Description              |
+| 6        | Service Commitment Description         | Subscription Line Description          |
+| 10       | Service Amount                         | Amount                                 |
+| 12       | Contract Type                          | Subscription Contract Type             |
+| 14       | Service Start Date                     | Subscription Line Start Date           |
+| 15       | Service End Date                       | Subscription Line End Date             |
+| 16       | Service Object No.                     | Subscription Header No.                |
+| 17       | Service Object Description             | Subscription Description               |
+| 19       | Quantity Decimal                       | Quantity                               |
+
+#### Table 8068 "Sales Service Commitment" → "Sales Subscription Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 20       | Service Amount                         | Amount                                 |
+| 21       | Service Comm. Start Formula            | Sub. Line Start Formula                |
+| 22       | Agreed Serv. Comm. Start Date          | Agreed Sub. Line Start Date            |
+| 31       | Package Code                           | Subscription Package Code              |
+| 50       | Service Object No.                     | Subscription Header No.                |
+| 51       | Service Commitment Entry No.           | Subscription Line Entry No.            |
+
+#### Table 8069 "Sales Service Comm. Archive" → "Sales Sub. Line Archive"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 20       | Service Amount                         | Amount                                 |
+| 21       | Service Comm. Start Formula            | Sub. Line Start Formula                |
+| 22       | Agreed Serv. Comm. Start Date          | Agreed Sub. Line Start Date            |
+
+#### Table 8057 "Service Object" → "Subscription Header"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 28       | Quantity Decimal                       | Quantity                               |
+| (ff) 95  | Archived Service Commitments           | Archived Sub. Lines exist              |
+| (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Lines exist               |
+
+#### Table 8059 "Service Commitment" → "Subscription Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Service Object No.                     | Subscription Header No.                |
+| 3        | Package Code                           | Subscription Package Code              |
+| 6        | Service Start Date                     | Subscription Line Start Date           |
+| 7        | Service End Date                       | Subscription Line End Date             |
+| 14       | Service Amount                         | Amount                                 |
+| 19       | Contract No.                           | Subscription Contract No.              |
+| (ff) 26  | Service Object Customer No.            | Sub. Header Customer No.               |
+| 27       | Contract Line No.                      | Subscription Contract Line No.         |
+| 33       | Service Amount (LCY)                   | Amount (LCY)                           |
+| (ff) 39  | Quantity Decimal                       | Quantity                               |
+| (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
+| (ff) 8010| Service Object Description             | Subscription Description               |
+
+#### Table 8073: Service Commitment Archive → Subscription Line Archive
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Service Object No.                     | Subscription Header No.                |
+| 5        | Package Code                           | Subscription Package Code              |
+| 8        | Service Start Date                     | Subscription Line Start Date           |
+| 9        | Service End Date                       | Subscription Line End Date             |
+| 16       | Service Amount                         | Amount                                 |
+| 21       | Contract No.                           | Subscription Contract No.              |
+| (ff) 28  | Service Object Customer No.            | Sub. Header Customer No.               |
+| 29       | Contract Line No.                      | Subscription Contract Line No.         |
+| 35       | Service Amount (LCY)                   | Amount (LCY)                           |
+| 41       | Serial No. (Service Object)            | Serial No. (Sub. Header)               |
+| 42       | Quantity Decimal (Service Ob.)         | Quantity (Sub. Header)                 |
+| 96       | Variant Code (Service Object)          | Variant Code (Sub. Header)             |
+
+#### Table "Service Comm. Package Line" → "Subscription Package Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Package Code                           | Subscription Package Code              |
+| 12       | Service Comm. Start Formula            | Sub. Line Start Formula                |
+
+#### Table 8016 "Usage Data Subscription" → "Usage Data Supp. Subscription"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 6        | Service Object No.                     | Subscription Header No.                |
+| 7        | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 21       | Connect to Service Object No.          | Connect to Sub. Header No.             |
+| 22       | Connect to SO Method                   | Connect to Sub. Header Method          |
+| 23       | Connect to SO at Date                  | Connect to Sub. Header at Date         |
+
+### Only fields renamed
+
+#### Table 8070 "Subscription Billing Cue"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| (ff) 2   | Customer Contract Invoices             | Cust. Sub. Contr. Invoices             |
+| (ff) 3   | Customer Contract Credit Memos         | Cust. Sub. Contr. Credit Memos         |
+| (ff) 4   | Vendor Contract Invoices               | Vend. Sub. Contr. Invoices             |
+| (ff) 5   | Vendor Contract Credit Memos           | Vend. Contr. Credit Memos              |
+| (ff) 6   | Serv. Comm. wo Cust. Contract          | Sub. L. wo Cust. Sub. Contract         |
+| (ff) 7   | Serv. Comm. wo Vend. Contract          | Sub. L. wo Vend. Sub. Contract         |
+
+#### Table 8061 "Billing Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 20       | Contract No.                           | Subscription Contract No.              |
+| 21       | Contract Line No.                      | Subscription Contract Line No.         |
+| 30       | Service Object No.                     | Subscription Header No.                |
+| 31       | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| (ff) 32  | Service Object Description             | Subscription Description               |
+| 33       | Service Commitment Description         | Subscription Line Description          |
+| 34       | Service Start Date                     | Subscription Line Start Date           |
+| 35       | Service End Date                       | Subscription Line End Date             |
+| 39       | Service Obj. Quantity Decimal          | Service Object Quantity                |
+| 52       | Service Amount                         | Amount                                 |
+
+#### Table 8064 "Billing Line Archive"
+
+| Field no, | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 20       | Contract No.                           | Subscription Contract No.              |
+| 21       | Contract Line No.                      | Subscription Contract Line No.         |
+| 30       | Service Object No.                     | Subscription Header No.                |
+| 31       | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| (ff) 32  | Service Object Description             | Subscription Description               |
+| 33       | Service Commitment Description         | Subscription Line Description           |
+| 34       | Service Start Date                     | Subscription Line Start Date           |
+| 35       | Service End Date                       | Subscription Line End Date             |
+| 39       | Service Obj. Quantity Decimal          | Service Object Quantity                |
+| 52       | Service Amount                         | Amount                                 |
+
+#### Table 8003 "Price Update Template"
+
+| Field no, | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 4        | Contract Filter                        | Subscription Contract Filter           |
+| 5        | Service Commitment Filter              | Subscription Line Filter               |
+| 6        | Service Object Filter                  | Subscription Filter                    |
+
+#### Table 8017 "Generic Import Settings"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 4        | Create Subscriptions                   | Create Supplier Subscriptions          |
+
+#### Table 8006 "Usage Data Billing"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 5        | Contract No.                           | Subscription Contract No.              |
+| 6        | Contract Line No.                      | Subscription Contract Line No.         |
+| 7        | Service Object No.                     | Subscription Header No.                |
+| (ff) 8   | Service Object Description             | Subscription Description               |
+| 9        | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 10       | Service Commitment Description         | Subscription Line Description           |
+
+#### Table 8018 "Usage Data Generic Import"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 6        | Service Object No.                     | Subscription Header No.                |
+
+#### Only tables renamed
+
+| Original table name                     | New table name                     |
+|-----------------------------------------|----------------------------------------|
+| Contract Type                           | Subscription Contract Type             |
+| Customer Contract                       | Customer Subscription Contract         |
+| Vendor Contract                         | Vendor Subscription Contract           |
+| Item Serv. Commitment Package           | Item Subscription Package              |
+| Item Templ. Serv. Comm. Pack.           | Item Templ. Sub. Package               |
+| Service Commitment Template             | Sub. Package Line Template             |
+| Service Commitment Package              | Subscription Package                   |
+| Usage Data Customer                     | Usage Data Supp. Customer              |
+
+
+Learn more about this issue in [Breaking schema changes in subscription billing extension](upgrade-considerations-v26.md#breaking-schema-changes-in-subscription-billing-extension).
+
+
 
 ## Number series creation doesn't work in Business Central 25.2 on-premises
 
