@@ -40,6 +40,12 @@ Learn more about the deprecated features in:
 - [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)
 - [Deleted objects in 2025 release wave 1](deleted-objects-25w1.md)
 
+## Schema changes in subscription billing extension
+
+Version 25.0 introduced the **Subscription & Recurring Billing** extension. In version 26, the extension is renamed to **Subscription Billing**. Several tables and fields in the extension are renamed, causing breaking changes when upgrading the extension from version 25.0 to 26.0 or later. To upgrade the extension, synchronize the extension's database schema with the tenant database schema using a force sync operation.
+
+Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading. For a list of renamed tables and fields, see [Renamed tables and fields](known-issues.md#renamed-tables-and-fields-in-susbscription-billing-extension-cause-synch-errors-on-upgrade).
+
 ## Important deployment-related changes
 
 This section includes important changes that you need to consider when upgrading from version 22 and earlier to version 26.0. These changes were introduced in version 23.0.
@@ -63,12 +69,6 @@ This section includes important changes that you need to consider when upgrading
 Version 20 introduced a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made that affect upgrade from version 19 and earlier. If you're upgrading from version 20 or later, the solution already includes the necessary changes.
 
 Learn more in [Upgrading reports](upgrade-reports.md).
-
-## Schema changes in subscription billing extension
-
-Version 25.0 introduced the **Subscription & Recurring Billing** extension. In version 26, the extension is renamed to **Subscription Billing**. Several tables and fields in the extension are renamed, causing breaking changes when upgrading the extension from version 25.0 to 26.0 or later. To upgrade the extension, synchronize the extension's database schema with the tenant database schema using a force sync operation.
-
-Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading. For a list of renamed tables and fields, see [Renamed tables and fields](known-issues.md#renamed-tables-and-fields-in-susbscription-billing-extension-cause-synch-errors-on-upgrade).
 
 <!--
 ### Renamed tables and fields
