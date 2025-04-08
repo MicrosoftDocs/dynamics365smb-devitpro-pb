@@ -34,13 +34,14 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 ## Before you begin
 
+### Review upgrade considerations and known issues
+
+- Review [Important information and considerations when upgrading to Business Central](upgrade-considerations-v26.md).
+- [!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
+
 ### Install the full-text search feature on the SQL server instance
 
 [!INCLUDE[upgrade-install-full-text-serach-sql](../developer/includes/upgrade-install-full-text-search-sql.md)]
-
-### Consider known issues
-
-[!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
 
 ### Prepare new runtime packages
 
