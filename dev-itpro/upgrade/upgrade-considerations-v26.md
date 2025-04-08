@@ -1,6 +1,6 @@
 ---
 title: Important information and considerations when upgrading to Business Central
-description: This article provides tips and considerations to prepare a solution when you're planning to upgrade to Business Central 2023 release wave 2 and later.
+description: This article provides tips and considerations to prepare a solution when you're planning to upgrade to Business Central 2025 release wave 1 and later.
 author: jswymer
 ms.custom: bap-template
 ms.topic: conceptual

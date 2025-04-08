@@ -373,9 +373,6 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 | Usage Data Customer                     | Usage Data Supp. Customer              |
 
 
-Learn more about this issue in [Breaking schema changes in subscription billing extension](upgrade-considerations-v26.md#breaking-schema-changes-in-subscription-billing-extension).
-
-
 
 ## Number series creation doesn't work in Business Central 25.2 on-premises
 
