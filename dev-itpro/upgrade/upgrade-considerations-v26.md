@@ -64,7 +64,7 @@ Version 20 introduced a new report rendering model. Previously, report rendering
 
 Learn more in [Upgrading reports](upgrade-reports.md).
 
-## Breaking schema changes in subscription billing extension
+## Schema changes in subscription billing extension
 
 Version 25.0 introduced the **Subscription & Recurring Billing** extension. In version 26, the extension is renamed to **Subscription Billing**. Several tables and fields in the extension are renamed, causing breaking changes when upgrading the extension from version 25.0 to 26.0 or later. To upgrade the extension, synchronize the extension's database schema with the tenant database schema using a force sync operation.
 
@@ -82,7 +82,6 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 | 3        | Vendor Contract Nos.                   | Vend. Sub. Contract Nos.               |
 | 4        | Service Object Nos.                    | Subscription Header No.                |
 | 6        | Serv. Start Date for Inv. Pick         | Sub. Line Start Date Inv. Pick         |
-
 
 #### Table 8004 "Contract Price Update Line" → "Sub. Contr. Price Update Line"
 
@@ -404,46 +403,6 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 | Service Commitment Template             | Sub. Package Line Template             |
 | Service Commitment Package              | Subscription Package                   |
 | Usage Data Customer                     | Usage Data Supp. Customer              |
-
-
-<!--
- Sync-NAVApp : [31;1mSync-NAVApp: [0m
-[31;1m[36;1mLine |[0m
-[31;1m[36;1m[36;1m  15 | [0m     $output = [36;1mSync-NAVApp @cmdletArgs[0m;[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m               ~~~~~~~~~~~~~~~~~~~~~~~[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mTable 8001 Contract Renewal Line :: The table 'Contract Renewal Line' cannot be located. Removing tables is not 
-allowed unless they are temporary or are being moved by migration to another app.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8002 Planned Service Commitment :: The table 'Planned Service Commitment' cannot be located. Removing tables is not 
-allowed unless they are temporary or are being moved by migration to another app.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8003 Price Update Template :: The field 'Contract Filter' cannot be located. Removing fields is not allowed.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8003 Price Update Template :: The field 'Service Commitment Filter' cannot be located. Removing fields is not 
-allowed.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8003 Price Update Template :: The field 'Service Object Filter' cannot be located. Removing fields is not allowed.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8004 Contract Price Update Line :: The table 'Contract Price Update Line' cannot be located. Removing tables is not 
-allowed unless they are temporary or are being moved by migration to another app.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8005 Item Templ. Serv. Comm. Pack. :: The table 'Item Templ. Serv. Comm. Pack.' cannot be located. Removing tables is 
-not allowed unless they are temporary or are being moved by migration to another app.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8006 Usage Data Billing :: The field 'Contract No.' cannot be located. Removing fields is not allowed.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8006 Usage Data Billing :: The field 'Contract Line No.' cannot be located. Removing fields is not allowed.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8006 Usage Data Billing :: The field 'Service Object No.' cannot be located. Removing fields is not allowed.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8006 Usage Data Billing :: The field 'Service Commitment Entry No.' cannot be located. Removing fields is not 
-allowed.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8006 Usage Data Billing :: The field 'Service Commitment Description' cannot be located. Removing fields is not 
-allowed.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8008 Imported Service Object :: The table 'Imported Service Object' cannot be located. Removing tables is not allowed 
-unless they are temporary or are being moved by migration to another app.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8009 Imported Service Commitment :: The table 'Imported Service Commitment' cannot be located. Removing tables is not 
-allowed unless they are temporary or are being moved by migration to another app.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8010 Imported Customer Contract :: The table 'Imported Customer Contract' cannot be located. Removing tables is not 
-allowed unless they are temporary or are being moved by migration to another app.[0m
-[31;1m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1mTable 8012 Usage Data Customer :: The table 'Usage Data Customer' cannot be located. Removing tables is not allowed unless 
-they are temporary or are being moved by migration to another app.[0m
-At line:1 char:1
-+ Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "Subscription  ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidData: ([31;1mSync-NAV...ther app.[0m
-:String) [Sync-NAVApp], InvalidOperationException
-    + FullyQualifiedErrorId : navId,Microsoft.Dynamics.Nav.Management.SyncNAVApp-->
 
 ## Related information  
 
