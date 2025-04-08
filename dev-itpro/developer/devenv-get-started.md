@@ -2,7 +2,7 @@
 title: Get started with AL
 description: Description of how to get started with the AL development environment.
 author: SusanneWindfeldPedersen
-ms.date: 05/28/2024
+ms.date: 04/03/2025
 ms.topic: conceptual
 ms.author: solsen
 ms.collection: get-started
@@ -20,7 +20,7 @@ To start writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long
 Go through the following steps to set up a sandbox environment. Having set up a sandbox environment, you get sample code that compiles and runs with just a few commands. 
 
 > [!NOTE]  
-> If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
+> If you want to create a container-based sandbox, see [Get started with the container sandbox development environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Sandbox environments for Dynamics 365 Business Central development](devenv-sandbox-overview.md).
 
 > [!IMPORTANT]  
 > It's not supported to publish an extension from Visual Studio Code with the same identifiers as an extension, which is already published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
@@ -30,8 +30,8 @@ Go through the following steps to set up a sandbox environment. Having set up a 
 3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 4) Select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the **User Settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
 5) Select <kbd>Alt</kbd>+<kbd>A</kbd>, and right after, <kbd>Alt</kbd>+<kbd>L</kbd> to trigger the **AL Go!** command, choose a path to a new empty folder and which version to run. Then choose **Microsoft cloud sandbox** as the server.  
-    > [!TIP]
-    > When no folders are opened, the primary side bar for the Visual Studio Code Explorer has a **Create AL Project** button. Clicking this button invokes the `AL:Go!` command to create a new project.
+  > [!TIP]
+  > When no folders are opened, the primary side bar for the Visual Studio Code Explorer has a **Create AL Project** button. Clicking this button invokes the `AL:Go!` command to create a new project.
 6) Enter the credentials that you provided for the sign-up.
 7) Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to deploy and run the extension on your online sandbox tenant.  
 
@@ -42,6 +42,14 @@ Go through the following steps to set up a sandbox environment. Having set up a 
 > If you want to change your configuration at a later point in time, you can do so in the launch.json file. Just choose the **Add Configuration** button on the bottom right side, and then choose one of the available options. You don't have a launch.json file until you have run the `AL:Go!` command.
 
 You now have a `HelloWorld` sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [JSON Files](devenv-json-files.md).
+
+## Get started with Copilot templates
+
+With runtime 15.0, you can use the <kbd>Alt</kbd>+<kbd>A</kbd> <kbd>Alt</kbd>+<kbd>P</kbd> shortcut key to create a **Copilot** or a **Copilot test** project. The **Copilot** project template gives you a starting point for your copilot project and includes sample pages and codeunits, which you can use to get started with your project.
+
+The **Copilot test** project template furthermore includes codeunits that you can use to test the copilot functionality.
+
+Learn more getting started building copilot functionality in [Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md).
 
 ## Tips and tricks
 
@@ -76,7 +84,7 @@ To modify the telemetry setting, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P<
 
 ## Installing and publishing an extension
 
-To make your extension available to users, the package must be published to a specific [!INCLUDE[prod_short](includes/prod_short.md)] server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
+To make your extension available to users, the package must be published to a specific [!INCLUDE[prod_short](includes/prod_short.md)] server instance. The extension can be installed for one or more tenants. Learn more about how to install and publish an extension in [Publishing and installing an extension](devenv-how-publish-and-install-an-extension-v2.md). 
 
 ## Controlling user access to develop and publish extensions
 
@@ -88,6 +96,15 @@ To prohibit a user from publishing, just remove the user from the **EXTEN. MGT. 
 
 > [!NOTE]  
 > The **EXTEN. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
+
+## Switching between different versions of AL
+
+You can switch to a prerelease version of the AL Language extension directly within Visual Studio Code. This is useful if you want to test new features or bug fixes that aren't yet available in the release version. To switch to a prerelease version of the AL Language extension, follow these steps:
+
+1. Open Visual Studio Code and choose the **Extensions** icon in the Activity Bar on the side of the window.
+2. Search for the **AL Language** extension.
+3. On the **AL Language** extension, choose the **Switch to Pre-Release Version** button and your extension is updated to the prerelease version.
+4. Likewise, to go back choose the **Switch to Release Version** button.
 
 ## Next steps
 

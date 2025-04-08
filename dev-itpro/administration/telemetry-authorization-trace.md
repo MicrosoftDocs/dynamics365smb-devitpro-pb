@@ -48,16 +48,17 @@ Occurs when a user has been successfully authorized. This data is not emitted fo
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Succeeded**|
-|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |entitlementSetIds |Specifies the entitlements that the user has in Business Central.|
 |eventId|**RT0003**|
-|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.|
+| guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
-|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).|
+| userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] |
+
 
 ### <a name="usertype"></a> UserType
 
@@ -100,20 +101,10 @@ Occurs when a user sign-in has failed authorization. This data is not emitted fo
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Failed**|
-|failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#authorizationfailures) section for details.|
-|guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.|
 |eventId|**RT0001**|
-|userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).|
-
-<!--
-|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prod_short.md)] telemetry schema. |
--->
+|failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#authorizationfailures) section for details.|
+| guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] |
+| userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] |
 
 ## <a name="authorizationfailures"></a> Troubleshooting (Pre Open Company) authorization failures
 
@@ -165,21 +156,24 @@ Occurs when the company has opened successfully. This data is emitted both for o
 |Dimension|Description or value|
 |---------|-----|
 |authorizationStatus|**Success**|
-|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
-|clientType|Specifies the type of client that opened the session, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|clientType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-client-type.md)]|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the session was created.|
 |companyId|Specifies the ID of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the session was created. This dimension is available from version 25 (and was backported to versions 22, 23, and 24, where it is available in the latest CU.) |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**RT0004**|
+| guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)] |
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the server to open the company. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the report executed.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements**.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to open the company**. The time has the format hh:mm:ss.sssssss.|
+| userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)] |
+
 
 ** From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 <!--
@@ -214,6 +208,8 @@ Occurs when a company has failed to open. This data is emitted both for online a
 |companyId|Specifies the ID of the company that the user tried to open. This dimension is available from version 25 (and was backported to versions 22, 23, and 24, where it is available in the latest CU.) |
 |failureReason|Specifies why the sign-in failed. See [Troubleshooting failures](#opencompanyfailures) section for details.|
 |eventId|**RT0002**|
+| guestUser | [!INCLUDE[guestUser](../includes/include-telemetry-dimension-guest-user.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)] |
+| userType | [!INCLUDE[userType](../includes/include-telemetry-dimension-user-type.md)] [!INCLUDE[dimensionAddedInv26](../includes/include-telemetry-dimension-added-in-v26.md)]|
 
 
 ## <a name="opencompanyfailures"></a>Troubleshooting (Open Company) authorization failures

@@ -1,8 +1,8 @@
 ---
 title: "Permissions property"
-description: "Sets whether an object has additional permission required to perform some operations on one or more tables."
+description: "Sets permissions required to perform operations on one or more objects."
 ms.author: solsen
-ms.date: 11/25/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 # Permissions Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets whether an object has additional permission required to perform some operations on one or more tables. The operations can be to read, insert, modify, and delete data.
+Sets permissions required to perform operations on one or more objects. For tables, operations can be set to read, insert, modify, and delete data. For other objects, permission can be set to allow execute on the object.
 
 ## Applies to
 -   Codeunit

@@ -47,8 +47,7 @@ AutoFormatExpression = 'USD';
 AutoFormatType = 1;
 ```
 
-For example, this results in a value like `7,564.00`.
-
+This example results in a value like `7,564.00`.
 
 Changing the `AutoFormatExpression` property to `ÌRD` sets the format of decimal values to IDR \(Indonesian rupiah\).
 
@@ -57,7 +56,7 @@ AutoFormatExpression = 'IRD';
 AutoFormatType = 1;
 ```
 
-For example, this results in a value like `7,564`.
+This example results in a value like `7,564`.
 
 ## Example 2
 
@@ -68,7 +67,7 @@ AutoFormatExpression = '1,USD';
 AutoFormatType = 10;
 ```
 
-For example, this results in a value like `$7,564.00`.
+This example results in a value like `$7,564.00`.
 
 ## Example 3
 
@@ -77,6 +76,19 @@ This example prefixes the decimal value with a `$`, includes a thousand separato
 ```AL
 AutoFormatType = 1;
 AutoFormatExpression = '$<precision, 2:2><standard format, 0>';
+```
+
+## Example 4
+
+> [!NOTE]
+> [!INCLUDE [2025rw1_and_later](../includes/2025rw1_and_later.md)]
+
+This example writes the number with two decimals, encloses the number in parenthesis if negative and 'Zero' if the value is `0`.
+This uses the standard .NET numeric formatting system. Learn more in [Custom numeric format strings](/dotnet/standard/base-types/custom-numeric-format-strings).
+
+```AL
+AutoFormatType = 1;
+AutoFormatExpression = '<FormatString>#,##0.00;(#,##0.00);Zero';
 ```
 
 ## Related information

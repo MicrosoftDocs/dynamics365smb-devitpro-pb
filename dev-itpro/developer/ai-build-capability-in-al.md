@@ -4,11 +4,11 @@ description: Integrate with Azure OpenAI Service through the AI module of Busine
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: conceptual
-ms.date: 11/14/2024
+ms.date: 04/01/2025
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ---
 
 # Build the Copilot capability in AL
@@ -25,12 +25,12 @@ The AI module can be used in any AL extension and provides the following capabil
 
 - Support for text completion, chat completion, and embeddings
 - Discoverability of your AI capability alongside other capabilities.
-- An enabler for AI transparency, control and data governance for customers.
+- An enabler for AI transparency, control, and data governance for customers.
 - Built-in prompt guard rails to build AI responsibly.
 - Usage insights about your AI capability through telemetry.
 
 > [!NOTE]  
-> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as Copilot chat in [!INCLUDE [prod_short](includes/prod_short.md)]. The upcoming preview of Chat with Copilot won't be extensible and the AI module can't be used to influence chat. Learn more in [Chat with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/chat-copilot).
+> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as chat with Copilot feature (preview) in [!INCLUDE [prod_short](includes/prod_short.md)]. In preview, chat with Copilot isn't extensible and the AI module can't be used to influence chat. Learn about how to influence Copilot output as a developer in [Influencing Copilot and agents without extending them](copilot-and-agents-influence-without-extending.md).
 
 > [!TIP]  
 > To see the AI module in action, try the example extension available at [BCTech on GitHub](https://aka.ms/BCStartCodingWithAI).
@@ -49,7 +49,7 @@ Learn more about how to obtain this in [aka.ms/oaiapply](https://aka.ms/oaiapply
 
 The System.AI namespace provides many objects that you can use to build the AI capability. The following tables list some of these objects and their purpose. 
 
-Under Copilot you find the following objects:
+Under Copilot, you find the following objects:
 
 |Object | Object type | Purpose |
 |-------|-------------|---------|
@@ -87,7 +87,7 @@ enumextension 54320 "Copilot Capability Extension" extends "Copilot Capability"
 }
 ```
 
-Next, you add a codeunit that registers the capability. Here the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a project plan. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information for customer administrators to learn more about the purpose and safety of your capability.
+Next, you add a codeunit that registers the capability. Here, the codeunit is of the type `Install`, which ensures that the capability is discoverable and ready to use at installation time. The codeunit could also be of the type `Upgrade`. The following example shows how to register the capability for drafting a project plan. The `RegisterCapability` procedure registers the capability if it isn't already registered and registers it as generally available. The `LearnMoreUrlTxt` parameter is optional and can be used to provide a link in the **Copilot & AI Capabilities** page in [!INCLUDE [prod_short](includes/prod_short.md)] to provide more information for customer administrators to learn more about the purpose and safety of your capability.
 
 ```al
 codeunit 54310 "Secrets And Capabilities Setup"
@@ -152,7 +152,7 @@ The `Generate` procedure takes a prompt as a parameter and returns the generated
 
 The `SetParameters` sets the parameters that define the max number of tokens that can be used for the generation and at which temperature the generation should be set. The temperature is a number between 0 and 2 that controls how creative the model is when generating text. Higher values are typically ideal for creative use cases, while lower values result in more deterministic and consistent completion. This example sets the temperature to 0, which outputs a well-defined answer. Learn more in [Azure OpenAI Service REST API reference](/azure/ai-services/openai/reference).
 
-The `SetCopilotCapability` call sets the capability for the generation. The `SetPrimarySystemMessage` call uses the `IsolatedStorage` object to get the metaprompt from the storage. The primary system message will be included in all chat histories unlike regular system messages. The metaprompt is a special message that tells the model what kind of text to generate. Learn more in [Metaprompt](ai-build-capability-in-al.md#metaprompt). 
+The `SetCopilotCapability` call sets the capability for the generation. The `SetPrimarySystemMessage` call uses the `IsolatedStorage` object to get the metaprompt from the storage. The primary system message is included in all chat histories unlike regular system messages. The metaprompt is a special message that tells the model what kind of text to generate. Learn more in [Metaprompt](ai-build-capability-in-al.md#metaprompt). 
 
 Then, the `AddUserMessage` call adds a user message to the chat history. The user message is what you want to generate text from. Next, the `GenerateChatCompletion` call generates the chat completion based on the user message and input parameters. It uses the `AzureOpenAI` object to call the service and get the response. The `IsSuccess` method checks if the operation was successful, and finally, the `GetLastMessage` call returns the last message from the chat history. The last message is the generated text that you want to use.
 
@@ -201,10 +201,11 @@ codeunit 54334 "CopilotJob"
 
 A *metaprompt* is a prompt used to define the model’s profile, capabilities, and limitations for the implementation of your scenario. It's used to improve the performance of language models and to provide a better user experience. The metaprompt defines the output format of the model and provides examples to demonstrate the intended behavior of the model. The metaprompt also provides other behavioral guardrails to ensure that the model doesn't generate undesirable content. Learn more in [System message framework and template recommendations for Large Language Models (LLMs)](/azure/ai-services/openai/concepts/system-message).
 
-
 ## Next steps
 
 When you've registered the AI capability, authorized through Azure OpenAI, and written code that generates text based on the metaprompt and the user input, you can now build the interface for handling the user input and generated output. For next steps, see [Design the user experience](ai-build-experience.md).
+
+To understand the cost of your request, see [Token counting in AI](ai-build-capability-in-al.md).
 
 ## Related information
 

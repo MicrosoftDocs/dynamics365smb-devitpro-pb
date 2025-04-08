@@ -1,8 +1,8 @@
 ---
 title: "Extensible property"
-description: "Sets whether the report can be extended."
+description: "Sets whether the Table can be extended or not."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,15 +11,15 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Extensible Property
-> **Version**: _Available or changed with runtime version 7.0._
+> **Version**: _Available or changed with runtime version 4.0._
 
-Sets whether the report can be extended.
+Sets whether the Table can be extended or not.
 
 ## Applies to
--   Report
--   Enum Type
 -   Table
 -   Page
+-   Report
+-   Enum Type
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

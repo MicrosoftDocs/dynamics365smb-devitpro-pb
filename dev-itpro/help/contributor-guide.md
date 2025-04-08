@@ -39,7 +39,7 @@ In the following, we use the *MicrosoftDocs/dynamics365smb-docs* repo as an exam
 
 2. Install GitHub Desktop (optional) and clone your forked MicrosoftDocs/dynamics365smb-docs repo.
 
-    GitHub Desktop makes is easy to work and collaborate with repos locally from your own desktop. Learn more at [GitHub Desktop](https://desktop.github.com/).  
+    GitHub Desktop makes it easy to work and collaborate with repos locally from your own desktop. Learn more at [GitHub Desktop](https://desktop.github.com/).  
 
 3. Get hold of your favorite Markdown editor, and start making changes.
 

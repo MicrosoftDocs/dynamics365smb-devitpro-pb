@@ -2,7 +2,7 @@
 title: "Compiler Error AL0326"
 description: "'{0}' is not a valid column type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -19,10 +19,6 @@ ms.reviewer: solsen
 
 ## Description
 The specified data type is not valid for columns. Valid data types are Boolean, Char, Integer, BigInteger, Decimal, Option, Enum, Text, Code, TextConst, Label, DateTime, Time, Date, DateFormula, Duration, Guid, RecordId, TableFilter, String, Blob, Media, Variant and MediaSet.  
-
-## Remarks
-> [!WARNING]
-> From Business Central 2021 release wave 1, report columns can no longer be of the type 'Variant'. For more information, see [Compiler Error AL0638](diagnostic-al638.md).
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
