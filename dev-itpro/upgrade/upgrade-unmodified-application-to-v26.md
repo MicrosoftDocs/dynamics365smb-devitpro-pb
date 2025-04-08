@@ -367,7 +367,7 @@ Synchronize the tenant's database schema with any schema changes in the new exte
    Replace `$NewBCVersion` with the exact version of the published Base Application.
 
    > [!IMPORTANT]
-   > If you're upgrading a Czech (CZ) language version, you must use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. For more information, go to [Removed table fields in base application cause sync errors](known-issues.md#removed-table-fields-in-the-czech-cz-base-application-cause-sync-errors).
+   > If you're upgrading a Czech (CZ) language version 22 or earlier, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Removed table fields in base application cause sync errors](known-issues.md#removed-table-fields-in-the-czech-cz-base-application-cause-sync-errors).
 
 1. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension.
 
@@ -382,6 +382,9 @@ Synchronize the tenant's database schema with any schema changes in the new exte
     ```powershell
     Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version <extension version>
     ```
+
+   > [!IMPORTANT]
+   > If you're upgrading the v25 subscription billing extension, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Renamed tables and fields in susbscription billing extension cause synch errors on upgrade](known-issues.md#renamed-tables-and-fields-in-susbscription-billing-extension-cause-synch-errors-on-upgrade).
 
 ## Task 10: Upgrade data
 
