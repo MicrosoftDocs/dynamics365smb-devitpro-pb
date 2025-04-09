@@ -2,7 +2,7 @@
 title: "DataCaptionFields property"
 description: "Sets the fields that appear to the left of the caption on pages that display the contents of this table."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 04/09/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,7 +32,7 @@ DataCaptionFields = "Customer Name", "Company Display Name";
   
 ## Card Pages
 
-Card pages display one record at a time. For this object, the value of the underlying table's DataCaptionFields property is used; the value of this property on the page is ignored. If the DataCaptionFields property is not defined on the table, the primary key is used.  
+Card pages display a single record at a time. For this page type, the value of the `DataCaptionFields` property is taken fromthe underlying table. Any value set for this property on the page itself is ignored. If the `DataCaptionFields` property isn't defined on the table, the primary key of the table is used as a fallback.  
   
 ## Tabular Pages  
 
