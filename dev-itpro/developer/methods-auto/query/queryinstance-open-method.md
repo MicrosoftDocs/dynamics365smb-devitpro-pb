@@ -33,12 +33,13 @@ An instance of the [Query](query-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- When the **Open** method is called, the query is executed and the *Query* variable is put in a state in which the resulting dataset can be read by the **Read** method. The **Open** method has the following behavior:  
+## Remarks
 
--   To apply filters for the **SetFilterS** method or **SetRange** method, you call the **SetFilterS** method or **SetRange** method before the **Open** method.  
+When the **Open** method is called, the query is executed and the *Query* variable is put in a state in which the resulting dataset can be read by the **Read** method. The **Open** method has the following behavior:  
 
--   To read a row from the dataset, you must call the **Open** method before the **Read** method, as shown in the following code example.  
+- To apply filters for the **SetFilterS** method or **SetRange** method, you call the **SetFilterS** method or **SetRange** method before the **Open** method.  
+
+- To read a row from the dataset, you must call the **Open** method before the **Read** method, as shown in the following snippet.  
 
     ```al
     Query.SetFilter(Column1, String);  
@@ -46,9 +47,9 @@ An instance of the [Query](query-data-type.md) data type.
     Query.Read;  
     ```  
 
--   To close an open query and return it to the initialized state, you can call the **Close** method. However, you can call the **Open** method multiple times without calling the **Close** method because the **Open** method implicitly calls the **Close** method if the query dataset is currently in an opened state.  
+- To close an open query and return it to the initialized state, you can call the **Close** method. However, you can call the **Open** method multiple times without calling the **Close** method because the **Open** method implicitly calls the **Close** method if the query dataset is currently in an opened state.  
 
--   If the **Open** method is called on a query that is already in the opened or in the reading state, then the query dataset is closed, and then the query is executed again. To continue to loop through the dataset, the **Read** method must be called again. The next **Read** method call returns the first row in the dataset, as shown in the following code example.  
+- If the **Open** method is called on a query that is already in the opened or in the reading state, then the query dataset is closed, and then the query is executed again. To continue to loop through the dataset, the **Read** method must be called again. The next **Read** method call returns the first row in the dataset, as shown in the following code example.  
 
     ```al
     // Opens the query and generates a dataset.  
@@ -60,7 +61,7 @@ An instance of the [Query](query-data-type.md) data type.
     Query.Read;  
     ```  
 
--  **Open** method does not clear any filters that were set by the **SetFilter** or **SetRange** methods on a previous **Open** call. If you want to clear the filters, then you must call the **Clear** method on the query variable.  
+-  **Open** method doesn't clear any filters that were set by the **SetFilter** or **SetRange** methods on a previous **Open** call. If you want to clear the filters, then you must call the **Clear** method on the query variable.  
 
     ```al
     Query.SetFilter(Column1, String);  
@@ -71,16 +72,15 @@ An instance of the [Query](query-data-type.md) data type.
     Query.Read;  
     ```  
 
--   You are required to call the **Open** method before the [SaveAsXML Method](../library.md) or [SaveAsCSV Method](../library.md). The **SaveAsXML** and **SaveAsCSV** methods automatically close the current query dataset and initialize a new instance of the query.  
+- You're required to call the **Open** method before the [SaveAsXML method](../library.md) or [SaveAsCSV method](../library.md). The **SaveAsXML** and **SaveAsCSV** methods automatically close the current query dataset and initialize a new instance of the query.  
 
-## Example  
- The following example demonstrates how to use the **Open** method on a query. The example code sets filters on the query, opens the query, and then reads the dataset. For each row in the dataset, a message box is displayed that contains the values of the columns in the row.  
+## Example
 
- This example requires that you create a query called **Customer\_SalesQuantity** that links table **18 Customer** with table  **37 Sales Lines** from the [!INCLUDE[demolong](../../includes/demolong_md.md)]. Include columns for the **Name** and **No.** fields from the Customer table and the **Quantity** field from Sales Lines table.  
+The following example demonstrates how to use the **Open** method on a query. The example code sets filters on the query, opens the query, and then reads the dataset. For each row in the dataset, a message box is displayed that contains the values of the columns in the row.  
 
-<!--NAV For step-by-step instructions for creating this query, see [Walkthrough: Creating a Query to Link Two Tables](Walkthrough--Creating-a-Query-to-Link-Two-Tables.md).-->  
+This example requires that you create a query called **Customer\_SalesQuantity** that links table **18 Customer** with table  **37 Sales Lines** from the [!INCLUDE[demolong](../../includes/demolong_md.md)]. Include columns for the **Name** and **No.** fields from the Customer table and the **Quantity** field from Sales Lines table.  
 
- The following AL code opens the query, reads each row of the dataset, and then displays a message that uses the content of the row. You can add the code to a codeunit, and then run the codeunit to see the results.  
+The following AL code opens the query, reads each row of the dataset, and then displays a message that uses the content of the row. You can add the code to a codeunit, and then run the codeunit to see the results.  
 
 ```al
 var
@@ -101,11 +101,12 @@ begin
 end;
 ```  
 
- When the code is run, a message that resembles the following appears for each row in the dataset:  
+When the code is run, a message that resembles the following appears for each row in the dataset:  
 
- **Customer name = The Device Shop, Quantity = 30**  
+**Customer name = The Device Shop, Quantity = 30**  
 
 ## Related information
-[Query Data Type](query-data-type.md)  
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+
+[Query data type](query-data-type.md)  
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)
