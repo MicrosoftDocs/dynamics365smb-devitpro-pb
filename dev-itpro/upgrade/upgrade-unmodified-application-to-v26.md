@@ -81,13 +81,13 @@ $AddinsFolder = "The file path to the Add-ins folder of version 26 server instal
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 3: Upgrade permission sets
+## Task 4: Upgrade permission sets
 
 Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
 
 For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).
 
-## Task 4: Prepare the existing databases
+## Task 5: Prepare the existing databases
 
 1. Make backup of the databases.
 2. Disable data encryption.
@@ -159,7 +159,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
 8. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
-## Task 5: Convert application database to version 26
+## Task 6: Convert application database to version 26
 
 This task runs a technical upgrade on the application database to convert it to the version 26 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. The conversion adds the system symbols for the version to the database, so you don't have to manually publish the Systems extension, as you had to do with early releases.
 
@@ -183,7 +183,7 @@ This task runs a technical upgrade on the application database to convert it to 
 
 [!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
-## Task 6: Configure version 26 server
+## Task 7: Configure version 26 server
 
 When you installed version 26 in **Task 1**, a version 26 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for upgrade and can be reverted after you complete the upgrade.
 
@@ -208,7 +208,7 @@ When you installed version 26 in **Task 1**, a version 26 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## Task 7: Import version 26 license
+## Task 8: Import version 26 license
 
 1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 26 license to the database. 
 
@@ -222,7 +222,7 @@ When you installed version 26 in **Task 1**, a version 26 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## Task 8: Synchronize tenant
+## Task 9: Synchronize tenant
 
 Synchronize the tenant database with the platform changes in the application database to get it ready for the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -251,7 +251,7 @@ Synchronize the tenant database with the platform changes in the application dat
 
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-## Task 9: Publish extensions
+## Task 10: Publish extensions
 
 In this task, you publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
 
@@ -335,7 +335,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
     Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
 
-## Task 10: Synchronize tenant with extensions
+## Task 11: Synchronize tenant with extensions
 
 Synchronize the tenant's database schema with any schema changes in the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -385,7 +385,7 @@ Synchronize the tenant's database schema with any schema changes in the new exte
    > [!IMPORTANT]
    > If you're upgrading the v25 subscription billing extension, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Renamed tables and fields in susbscription billing extension cause synch errors on upgrade](known-issues.md#renamed-tables-and-fields-in-susbscription-billing-extension-cause-synch-errors-on-upgrade).
 
-## Task 11: Upgrade data
+## Task 12: Upgrade data
 
 In this task, you run a data upgrade for extensions.
 
