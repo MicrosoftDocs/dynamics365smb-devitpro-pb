@@ -30,19 +30,17 @@ DataCaptionFields = "Customer Name", "Company Display Name";
 
 ## Remarks  
   
-## Card Pages
+## Card pages
 
 Card pages display a single record at a time. For this page type, the value of the `DataCaptionFields` property is taken fromthe underlying table. Any value set for this property on the page itself is ignored. If the `DataCaptionFields` property isn't defined on the table, the primary key of the table is used as a fallback.  
   
-## Tabular Pages  
+## Tabular pages  
 
-Tabular pages show multiple records at a time. The following data caption rules are applied:  
+Tabular pages display multiple records simultaneously. For these pages, a data caption is shown only if a filter applied to the fields defined in the `DataCaptionFields` property evaluates to a single value. Two situations can occur:  
   
-- A data caption is only displayed if a filter containing the fields defined in the DataCaptionFields property for the page evaluate to one value. In this case, two situations are possible:  
+- With a table relation: If a table relation exists (as defined by the [TableRelation Property](devenv-tablerelation-property.md)) the `DataCaptionFields` from the underlying table is used. If the related table doesn't define this property, the primary key is used.
   
-  - There is a table relation (as defined by the [TableRelation Property](devenv-tablerelation-property.md)) on one or more of the fields. In this case, the DataCaptionFields from the underlying table are used. If this table does not have a value for the DataCaptionFields property, the primary key for that table is used.  
-  
-  - There is no table relation. In this case, the (single) value that results from evaluating the filter is used directly.  
+- Without a table relation: If no table relation exists, the single value resulting from the filter is used directly.  
   
 ## Example of DataCaptionFields Use  
 
