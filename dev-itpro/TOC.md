@@ -1907,7 +1907,7 @@
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
 ### Business Central 2025 release wave 1
 #### [Overview](upgrade/upgrade-overview-v26.md)
-#### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
+#### [Before you upgrade](upgrade/upgrade-considerations-v26.md)
 #### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrade permission sets](upgrade/upgrade-permissions.md)
 #### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)

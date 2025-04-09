@@ -26,7 +26,7 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 - 2019 release wave 2 (version 15)
 
 > [!IMPORTANT]
-> See [Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md) to determine which update of version 26 is compatible with your current Business Central version.
+> Consult [Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md) to determine which update of version 26 is compatible with your current Business Central version.
 
 [![Upgrade on unmodified Business Central application.](../developer/media/bc26-upgrade-unmodified-app.svg)](../developer/media/bc26-upgrade-unmodified-app.svg#lightbox)  
 
@@ -34,13 +34,14 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 
 ## Before you begin
 
+### Review upgrade considerations and known issues
+
+- Learn about key information and tips to prepare for an upgrade in [Important information and considerations when upgrading to Business Central](upgrade-considerations-v26.md).  
+- [!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
+
 ### Install the full-text search feature on the SQL server instance
 
 [!INCLUDE[upgrade-install-full-text-serach-sql](../developer/includes/upgrade-install-full-text-search-sql.md)]
-
-### Consider known issues
-
-[!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
 
 ### Prepare new runtime packages
 
@@ -366,7 +367,7 @@ Synchronize the tenant's database schema with any schema changes in the new exte
    Replace `$NewBCVersion` with the exact version of the published Base Application.
 
    > [!IMPORTANT]
-   > If you're upgrading a Czech (CZ) language version, you must use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. For more information, go to [Removed table fields in base application cause sync errors](known-issues.md#removed-table-fields-in-the-czech-cz-base-application-cause-sync-errors).
+   > If you're upgrading a Czech (CZ) language version 22 or earlier, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Removed table fields in base application cause sync errors](known-issues.md#removed-table-fields-in-the-czech-cz-base-application-cause-sync-errors).
 
 1. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension.
 
@@ -381,6 +382,9 @@ Synchronize the tenant's database schema with any schema changes in the new exte
     ```powershell
     Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version <extension version>
     ```
+
+   > [!IMPORTANT]
+   > If you're upgrading the v25 subscription billing extension, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Renamed tables and fields in susbscription billing extension cause synch errors on upgrade](known-issues.md#renamed-tables-and-fields-in-susbscription-billing-extension-cause-synch-errors-on-upgrade).
 
 ## Task 10: Upgrade data
 
