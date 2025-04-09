@@ -19,9 +19,9 @@ Depending on your current version, a direct upgrade to version 26 isn't always p
 
 |  Source version  |  Path  |
 |------------|--------------|
-|<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)] (version 8)</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] (version 9)</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)] (version 10)</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] (version 11)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (version 13)</li></ul>|<ol><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 1 (version 24)</li></ol>This path requires you convert your application from C/AL to AL.|
-|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14)</li></ul>|<ol><li>Version 25</li><li>Version 26</li></ol>|
-|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (version 18)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (version 19)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version 20)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 (version 21)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1 (version 22)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2 (version 23)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 1 (version 24)</li></ul>|Direct to version 26|
+|<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)] (version 8)</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] (version 9)</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)] (version 10)</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] (version 11)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (version 13)</li></ul>|<ol><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 2 (version 25)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1 (version 26)</li></ol>This path requires you convert your application from C/AL to AL.|
+|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (version 18)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (version 19)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version 20)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 (version 21)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1 (version 22)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2 (version 23)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 1 (version 24)</li></ul>|<ol><li>Version 25</li><li>Version 26</li></ol>|
+|<ul><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2024 release wave 2 (version 25)</li></ul>|Direct to version 26|
 
 Your current version doesn't have to be the latest update for the version. However, for intermediate versions, use to the latest available update.
 
@@ -35,9 +35,9 @@ When upgrading your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 
 
 There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release wave 1. These changes affect users, administrators, and developers. Learn more at [Overview of Dynamics 365 Business Central 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/planned-features).
 
-### Business Foundation extension
+## Business Foundation extension
 
-This extension is introduced in version 26 and currently contains objects and logic for number series, which was previously part of the base application. It will contain more functionality in future releases. The base application now has a dependency on the business foundation extension in addition to the system application. This change affects the upgrade process because the business foundation extension needs to be published and installed on the tenant before the base application.
+This extension was introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application. It will contain more functionality in future releases. The base application now has a dependency on the business foundation extension in addition to the system application. This change affects the upgrade process because the business foundation extension needs to be published and installed on the tenant before the base application.
 
 ## Deprecated features
 
@@ -49,9 +49,16 @@ Before you upgrade, review the following articles to get an overview of features
 
 From these articles, use the links in the table of contents to view more deprecated features, like features specific to local versions.
 
-## Migrating from on-premises to online
+## <a name="online"></a>Migrate to Business Central online
 
-For information about migrating an on-premises solution to online, see [Migrate to Business Central Online from Business Central On-premises](/dynamics365/business-central/dev-itpro/administration/migrate-business-central-on-premises).
+You can upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online from supported versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, as long as extensions handle your application customizations.
+
+The process consists of two parts:
+
+- Convert nonstandard functionality and customizations to apps and per-tenant extensions. Learn more in [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).
+- Run the cloud migration tool, and then switch to use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online going forward.
+
+Learn more [Migrate on-premises data to Business Central online](../administration/migrate-data.md).
 
 ## Related information  
 
