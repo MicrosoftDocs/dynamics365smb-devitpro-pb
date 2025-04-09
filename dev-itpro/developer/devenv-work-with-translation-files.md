@@ -42,7 +42,6 @@ Now, when you run the build command (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kb
 > - [AboutTitleML](properties/devenv-abouttitleml-property.md)  
 > - [AboutTextML](properties/devenv-abouttextml-property.md)  
 > - [CaptionML](properties/devenv-captionml-property.md)
-> - [ConstValueML](./properties/devenv-properties.md)
 > - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
 > - [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
 > - [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)
