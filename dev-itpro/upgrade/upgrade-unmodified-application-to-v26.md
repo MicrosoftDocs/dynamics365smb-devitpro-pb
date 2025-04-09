@@ -442,7 +442,7 @@ This command upgrades and installs the extensions on the tenant.
 
 ## Task 12: Install new Microsoft or reinstall 3rd-party extensions
 
-Complete this task to install new first-time Microsoft extensions that you published in task 9 or any non-Microsoft extensions for which a new version wasn't published. For example, you would do this step for the  **_Exclude_ReportLayouts**  extension if you're upgrading from version 19 or earlier. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
+Complete this task to install new first-time Microsoft extensions that you published in task 10 or any non-Microsoft extensions for which a new version wasn't published. For example, you would do this step for the  **_Exclude_ReportLayouts**  extension if you're upgrading from version 19 or earlier. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
 ```powershell
 Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Version <extension version>
