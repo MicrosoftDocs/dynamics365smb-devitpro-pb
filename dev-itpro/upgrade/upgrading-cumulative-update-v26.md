@@ -2,7 +2,7 @@
 title: Install a version 25 update
 description: This article describes the tasks required for getting the monthly version 26 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 01/10/2025
+ms.date: 04/09/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
