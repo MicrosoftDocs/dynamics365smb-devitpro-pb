@@ -35,7 +35,7 @@ This change aligns with the cleanup cycle that occurs every fifth release. Learn
 Complete these tasks before upgrading to version 26:  
 
 1. Refactor custom code in non-Microsoft extensions, including upgrade code, to replace or remove references to these objects.  
-2. Upgrade versions 24, or earlier, to 25 before upgrading to version 26.  6.  
+2. Upgrade versions 24 or earlier to 25 before upgrading to version 26.0.  
 
 ## Schema changes in subscription billing extension
 
