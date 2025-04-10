@@ -12,7 +12,7 @@ ms.author: jswymer
 
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
-
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The **Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata.** key in **feature management** controls how the system finds pages and reports based on search terms entered by users:
 
@@ -21,6 +21,8 @@ The **Enables advanced navigation (not data) search capabilities by utilizing se
 
 > [!NOTE]
 > Semantic search is currently supported by chat with Copilot only.
+
+[!INCLUDE [preview-note-d365](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Related information
 
