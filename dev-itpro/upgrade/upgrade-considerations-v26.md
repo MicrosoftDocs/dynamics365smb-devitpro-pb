@@ -24,11 +24,16 @@ Learn more about the deprecated features in:
 - [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)
 - [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)
 
-## Objects deleted from base application
+## Deleted objects
 
-Several tables and fields are deleted from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application. The objects were in the **Obsolete::Removed** state for more than one major release. Learn more in the blog post [Essential Clean-Up Guide for Partners: 2025 Release Wave 1](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/02/06/essential-clean-up-guide-for-partners-2025-release-wave-1/) and [Deleted objects in 2025 release wave 1](deleted-objects-25w1.md).  
+Many tables and fields are deleted from the base application and other Microsoft extensions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. These objects were in the **Obsolete::Removed** state for more than one major release. For a complete list of the deleted objects, consult [Deleted objects in 2025 release wave 1](deleted-objects-25w1.md).  
 
-Because of this change, versions 24 and earlier must be upgraded to 25 before upgrading to version 26.
+This change aligns with the cleanup cycle that occurs every fifth release. Learn more in the blog post [Essential cleanup guide for partners: 2025 release wave 1](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/02/06/essential-clean-up-guide-for-partners-2025-release-wave-1/).
+
+### Implications on upgrade
+
+1. Refactor custom code in non-Microsoft extensions, including upgrade code, to replace or remove references to these objects.
+2. Upgrade versions 24 or earlier to 25 before upgrading to version 26.  
 
 ## Schema changes in subscription billing extension
 
