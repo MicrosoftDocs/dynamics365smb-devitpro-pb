@@ -15,6 +15,9 @@ ms.reviewer: solsen
 > [!TIP]
 > Optionally, use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) to get translations for your target languages. For more information, see [Translate user interface files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service).
 
+> [!IMPORTANT]
+> Dynamics 365 Translation Service support ends on June 30, 2025.
+
 For an overview of how translations are applied, see [Translations overview](devenv-translations-overview.md).
 
 ## Generating the XLIFF file
