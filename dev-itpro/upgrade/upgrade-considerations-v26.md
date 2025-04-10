@@ -22,7 +22,8 @@ Learn more about the deprecated features in:
 
 - [Deprecated Features in Application](deprecated-features-w1.md)
 - [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)
-- [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)
+- [Obsoleted types in system application](/dynamics365/business-central/application/system-application/obsoletion/obsolete_by_26.0)
+- [Obsoleted types in base application](/dynamics365/business-central/application/base-application/obsoletion/obsolete_by_26.0)
 
 ## Deleted objects
 
