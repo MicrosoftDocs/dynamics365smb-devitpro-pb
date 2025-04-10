@@ -383,7 +383,7 @@ Synchronize the tenant's database schema with any schema changes in the new exte
     ```
 
    > [!IMPORTANT]
-   > If you're upgrading the v25 subscription billing extension, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Renamed tables and fields in susbscription billing extension cause synch errors on upgrade](known-issues.md#renamed-tables-and-fields-in-susbscription-billing-extension-cause-synch-errors-on-upgrade).
+   > If you're upgrading the v25 subscription billing extension, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Renamed tables and fields in susbscription billing extension cause synch errors on upgrade](known-issues.md#renamed-tables-and-fields-in-subscription-billing-extension-cause-synch-errors-on-upgrade).
 
 ## Task 12: Upgrade data
 

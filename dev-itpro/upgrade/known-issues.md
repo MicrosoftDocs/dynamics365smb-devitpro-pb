@@ -16,7 +16,7 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
-## Renamed tables and fields in susbscription billing extension cause synch errors on upgrade
+## Renamed tables and fields in subscription billing extension cause synch errors on upgrade
 
 > Applies to: Upgrade from 25.X
 
