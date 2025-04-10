@@ -25,7 +25,7 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 - 2020 release wave 1 (version 16)
 - 2019 release wave 2 (version 15)
 
-You can't upgrade directly to version 26 from version 24 or earlier. Upgrade to version 25 first.
+You can't upgrade directly to version 26 from version 24 or earlier because version 26 deletes many objects. Upgrade to version 25 first. Learn more in [Deleted objects](upgrade-considerations-v26.md#deleted-objects).  
 
 [![Upgrade on unmodified Business Central application.](../developer/media/bc26-upgrade-unmodified-app.svg)](../developer/media/bc26-upgrade-unmodified-app.svg#lightbox)  
 
