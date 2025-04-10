@@ -30,10 +30,12 @@ Many tables and fields are deleted from the base application and other Microsoft
 
 This change aligns with the cleanup cycle that occurs every fifth release. Learn more in the blog post [Essential cleanup guide for partners: 2025 release wave 1](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/02/06/essential-clean-up-guide-for-partners-2025-release-wave-1/).
 
-### Implications on upgrade
+### Effect on upgrade
 
-1. Refactor custom code in non-Microsoft extensions, including upgrade code, to replace or remove references to these objects.
-2. Upgrade versions 24 or earlier to 25 before upgrading to version 26.  
+Complete these tasks before upgrading to version 26:  
+
+1. Refactor custom code in non-Microsoft extensions, including upgrade code, to replace or remove references to these objects.  
+2. Upgrade versions 24, or earlier, to 25 before upgrading to version 26.  6.  
 
 ## Schema changes in subscription billing extension
 
