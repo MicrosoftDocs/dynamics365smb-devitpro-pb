@@ -12,6 +12,8 @@ ms.author: jswymer
 
 [!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
 
+
+
 The **Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata.** key in **feature management** controls how the system finds pages and reports based on search terms entered by users:
 
 - When disabled, keyword-based search finds pages and reports by their matching metadata, like name and description. Users need to know the name of the page or report they're looking for.
