@@ -13,17 +13,13 @@ ms.reviewer: solsen
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
-To start writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you need a [!INCLUDE[prod_short](includes/prod_short.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you use for coding and debugging.
+AL (Application Language) is the foundation for developing extensions in [!INCLUDE[prod_short](includes/prod_short.md)]. This article walks you through setting up your development environment, creating your first AL project, and understanding the tools and resources available to streamline your development process.
+
+To get started writing extensions for [!INCLUDE[prod_short](includes/prod_short.md)], you need a [!INCLUDE[prod_short](includes/prod_short.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you use for coding and debugging.
 
 ## Steps to set up a sandbox environment and Visual Studio Code
 
-Go through the following steps to set up a sandbox environment. Having set up a sandbox environment, you get sample code that compiles and runs with just a few commands. 
-
-> [!NOTE]  
-> If you want to create a container-based sandbox, see [Get started with the container sandbox development environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Sandbox environments for Dynamics 365 Business Central development](devenv-sandbox-overview.md).
-
-> [!IMPORTANT]  
-> It's not supported to publish an extension from Visual Studio Code with the same identifiers as an extension, which is already published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
+Go through the following steps to set up a sandbox environment. Once you've set up a sandbox environment, you get sample code that compiles and runs with just a few commands.
 
 1) Sign up for a [Dynamics 365 Business Central sandbox](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1). 
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
@@ -35,13 +31,27 @@ Go through the following steps to set up a sandbox environment. Having set up a 
 6) Enter the credentials that you provided for the sign-up.
 7) Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to deploy and run the extension on your online sandbox tenant.  
 
-> [!NOTE]  
-> For some users the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut key might not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** dropdown in Visual Studio Code.
+You now have a `HelloWorld` sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. Learn more in [JSON files](devenv-json-files.md).
 
-> [!NOTE]  
-> If you want to change your configuration at a later point in time, you can do so in the launch.json file. Just choose the **Add Configuration** button on the bottom right side, and then choose one of the available options. You don't have a launch.json file until you have run the `AL:Go!` command.
+### Things to note
 
-You now have a `HelloWorld` sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [JSON Files](devenv-json-files.md).
+- If you want to create a container-based sandbox, see [Get started with the container sandbox development environment](devenv-get-started-container-sandbox.md). Learn more about which sandboxes you can choose in [Sandbox environments for Dynamics 365 Business Central development](devenv-sandbox-overview.md).
+
+- It's not supported to publish an extension from Visual Studio Code with the same identifiers as an extension, which is already published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
+
+- For some users the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut key might not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** dropdown in Visual Studio Code.
+
+- If you want to change your configuration at a later point in time, you can do so in the launch.json file. Just choose the **Add Configuration** button on the bottom right side, and then choose one of the available options. You don't have a launch.json file until you have run the `AL:Go!` command.
+
+## Tips and tricks
+
++ Use <kbd>Ctrl+Space</kbd> to activate IntelliSense at any place in the code, which helps you identify possible options.
++ Always use the `.al` extension on new files.
++ Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by typing `t` and choose the desired snippet from the list.
++ Create objects within the right object ranges, see [Object ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
++ Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
++ Use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
++ Use <kbd>F2</kbd> to rename objects, types etc. Learn more in [Keyboard shortcuts](devenv-keyboard-shortcuts.md#editing-in-visual-studio-code).
 
 ## Get started with Copilot templates
 
@@ -50,16 +60,6 @@ With runtime 15.0, you can use the <kbd>Alt</kbd>+<kbd>A</kbd> <kbd>Alt</kbd>+<k
 The **Copilot test** project template furthermore includes codeunits that you can use to test the copilot functionality.
 
 Learn more getting started building copilot functionality in [Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md).
-
-## Tips and tricks
-
-+ Use <kbd>Ctrl+Space</kbd> to activate IntelliSense at any place in the code, which helps you identify possible options.
-+ Always use the `.al` extension on new files.
-+ Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by typing `t` and choose the desired snippet from the list.
-+ Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
-+ Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
-+ Use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
-+ Use <kbd>F2</kbd> to rename objects, types etc. For more information, see [Keyboard Shortcuts](devenv-keyboard-shortcuts.md#editing-in-visual-studio-code).
 
 ## JSON file settings
 
