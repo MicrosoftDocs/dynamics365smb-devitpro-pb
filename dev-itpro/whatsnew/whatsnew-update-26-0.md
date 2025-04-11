@@ -14,6 +14,9 @@ ms.custom:
 
 This article provides an overview of the new and updated features and general information about update 26.0, which starts the 2025 release wave 1.
 
+> [!NOTE]
+> On-premises packages have been updated since the initial release. To download the latest packages, go to [On-premises download packages](#on-premises-download-packages).
+
 ## Highlights
 
 > [!TIP]
