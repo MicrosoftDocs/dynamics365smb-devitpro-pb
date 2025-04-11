@@ -47,7 +47,7 @@ If successful, this method returns a ```200 OK``` response code and a **generalL
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/generalLedgerSetups({id})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/generalLedgerSetup({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**
@@ -57,14 +57,14 @@ Here is an example of the response.
 <!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "id" : "",
-    "allowPostingFrom" : "",
-    "allowPostingTo" : "",
-    "additionalReportingCurrency" : "",
-    "localCurrencyCode" : "",
-    "localCurrencySymbol" : "",
-    "lastModifiedDateTime" : "",
-    "allowQueryFromConsolidation" : ""
+    "id": "35003d92-8401-ef11-9f8f-6045bde9b6de",
+    "allowPostingFrom": "0001-01-01",
+    "allowPostingTo": "0001-01-01",
+    "additionalReportingCurrency": "",
+    "localCurrencyCode": "USD",
+    "localCurrencySymbol": "$",
+    "lastModifiedDateTime": "2024-04-23T15:18:18.183Z",
+    "allowQueryFromConsolidation": false
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
