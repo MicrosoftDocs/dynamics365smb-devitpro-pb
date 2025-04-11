@@ -105,7 +105,7 @@ You can switch to a prerelease version of the AL Language extension directly wit
 
 ## Next steps
 
-Now that you have the tools and the `HelloWorld` example up and running, you might want to create a small sample app in AL. This walkthrough guides you to create an app adding objects, code, and publishing the app to your tenant. For more information, see [Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md).
+Now that you have the tools and the `HelloWorld` example up and running, you might want to create a small sample app in AL. This walkthrough guides you to create an app adding objects, code, and publishing the app to your tenant. Learn more in [Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md).
 
 ## Related information
 
