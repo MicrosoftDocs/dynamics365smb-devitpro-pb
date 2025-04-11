@@ -52,6 +52,7 @@ You now have a `HelloWorld` sample that compiles and runs. The JSON files in the
 + Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
 + Use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
 + Use <kbd>F2</kbd> to rename objects, types etc. Learn more in [Keyboard shortcuts](devenv-keyboard-shortcuts.md#editing-in-visual-studio-code).
++ The `settings.json` file contains user and workspace settings, these options can be modified to suit your preference. If you want to modify Visual Studio Code editor options and functional behavior settings, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
 ## Get started with Copilot templates
 
@@ -67,7 +68,7 @@ There are three JSON files in the project; the `app.json` file, the `launch.json
 
 ## AL configuration settings
 
-Use the AL configuration settings to specify general preferences for working with AL projects. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+Use the AL configuration settings to specify general preferences for working with AL projects. Learn more in [AL Language extension configuration](devenv-al-extension-configuration.md).
 
 ## Telemetry settings
 
@@ -78,9 +79,6 @@ To modify the telemetry setting, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P<
 ```AL
 "telemetry.enableTelemetry": false,
 ```
-
-> [!TIP]  
-> The `settings.json` file contains user and workspace settings, these options can be modified to suit your preference. If you want to modify Visual Studio Code editor options and functional behavior settings, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
 ## Installing and publishing an extension
 
