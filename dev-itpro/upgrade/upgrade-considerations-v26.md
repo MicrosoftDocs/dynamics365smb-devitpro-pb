@@ -38,6 +38,11 @@ Complete these tasks before upgrading to version 26:
 1. Refactor custom code in non-Microsoft extensions, including upgrade code, to replace or remove references to these objects.  
 2. Upgrade versions 24 or earlier to 25 before upgrading to version 26.0.  
 
+ 
+<!--
+We have updated the rules of the schema sync engine to support deleting tables & fields that have previously been synchronized with Obsolete State = Removed.
+Because we rely on the Obsolete State of the previously synchronized extension version, you need to upgrade through a version where the table was marked as Obsolete Removed, as we cannot validate this if you go directly from no obsolete state delete table. This capability allows for deleting fields and tables while still having some form of validating that you are not deleting important data. --> 
+
 ## Schema changes in subscription billing extension
 
 Version 25.0 introduced the **Subscription & Recurring Billing** extension. In version 26, the extension is renamed to **Subscription Billing**. Several tables and fields in the extension are renamed, causing breaking changes when upgrading the extension from version 25.0 to 26.0 or later.
