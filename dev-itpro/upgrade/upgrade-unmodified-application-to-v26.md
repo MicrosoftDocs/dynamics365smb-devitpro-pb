@@ -35,7 +35,7 @@ You can't upgrade directly to version 26 from version 24 or earlier because vers
 
 This task applies if you're upgrading from version 24 or earlier. Follow the instructions in [Upgrading Microsoft system and base application to version 25](upgrade-unmodified-application-to-v25.md).  
 
-## Task 2: Prepare for ugrade to version 26
+## Task 2: Prepare for upgrade to version 26
 
 ### Review upgrade considerations and known issues for version 26
 
