@@ -468,7 +468,7 @@ Complete this task if you are upgrading one of the following:
 - German (DE) version of Dynamics NAV or [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (Cumulative Update 2 or earlier)
 - India (IN) version of Dynamics NAV 2016
 
-With these language versions, some of the local functionality has been moved from the base application to extensions. These extensions will have to be published and installed to maintain the functionality. The extensions are avilable on the installation media (DVD). 
+With these language versions, some of the local functionality has been moved from the base application to extensions. These extensions will have to be published and installed to maintain the functionality. The extensions are available on the installation media (DVD). 
 
 If you are upgrading from a Denmark (DK) version, you must publish and install the following extensions to get the local functionality:
 
