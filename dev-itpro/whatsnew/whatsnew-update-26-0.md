@@ -2,7 +2,7 @@
 title: What's new or changed in Business Central 2025 release wave 1 update 26.0
 description: Get an overview of new and changed capabilities in the 26.0 update of Business Central online, which is part of 2025 release wave 1.
 ms.author: jswymer
-ms.date: 01/27/2025
+ms.date: 04/14/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -15,7 +15,7 @@ ms.custom:
 This article provides an overview of the new and updated features and general information about update 26.0, which starts the 2025 release wave 1.
 
 > [!NOTE]
-> New on-premises packages are available starting 14 April 2025 to fix issues in the build released on 1 April 2025. To download the latest packages, go to [On-premises download packages](#on-premises-download-packages).  
+> New on-premises packages are available starting April 14, 2025, to address issues in the build released on April 1, 2025. To download the latest packages, visit the [On-premises download packages](#on-premises-download-packages) section.  
 
 ## Highlights
 
