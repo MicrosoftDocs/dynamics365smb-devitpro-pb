@@ -38,11 +38,16 @@ Complete these tasks before upgrading to version 26:
 1. Refactor custom code in non-Microsoft extensions, including upgrade code, to replace or remove references to these objects.  
 2. Upgrade versions 24 or earlier to 25 before upgrading to version 26.0.  
 
+ 
+<!--
+We have updated the rules of the schema sync engine to support deleting tables & fields that have previously been synchronized with Obsolete State = Removed.
+Because we rely on the Obsolete State of the previously synchronized extension version, you need to upgrade through a version where the table was marked as Obsolete Removed, as we cannot validate this if you go directly from no obsolete state delete table. This capability allows for deleting fields and tables while still having some form of validating that you are not deleting important data. --> 
+
 ## Schema changes in subscription billing extension
 
 Version 25.0 introduced the **Subscription & Recurring Billing** extension. In version 26, the extension is renamed to **Subscription Billing**. Several tables and fields in the extension are renamed, causing breaking changes when upgrading the extension from version 25.0 to 26.0 or later.
 
-To upgrade the extension, you must synchronize the extension's database schema with the tenant database schema using a force sync operation. Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading. For a list of renamed tables and fields, see [Renamed tables and fields](known-issues.md#renamed-tables-and-fields-in-susbscription-billing-extension-cause-synch-errors-on-upgrade).
+To upgrade the extension, you must synchronize the extension's database schema with the tenant database schema using a force sync operation. Force sync can cause data loss if custom code depends on the renamed tables and fields in the extension. To avoid data loss, refactor the custom code to match the extension's latest database schema before upgrading. For a list of renamed tables and fields, see [Renamed tables and fields](known-issues.md#renamed-tables-and-fields-in-subscription-billing-extension-cause-synch-errors-on-upgrade).
 
 ## Important deployment-related changes
 

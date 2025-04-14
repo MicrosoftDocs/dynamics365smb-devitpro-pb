@@ -118,7 +118,7 @@ The `SignupContext` parameter string is stored in [!INCLUDE [prod_short](../incl
 ```AL
 enumextension 50100 ParnerXAppSignupContext extends "Signup Context"
 {
-    value(50100, PartnerXApp)
+    value(50100; PartnerXApp)
     {
         Caption = 'Partner X app';
     }
@@ -128,10 +128,10 @@ enumextension 50100 ParnerXAppSignupContext extends "Signup Context"
 ### Setting the Signup Context value in the Signup Context Values table
 
 ```AL
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"System Initialization", 'OnSetSignupContext', '', false, false)]
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"System Initialization", OnSetSignupContext, '', false, false)]
 local procedure SetPartnerXAppContextOnSetSignupContext(SignupContext: Record "Signup Context") 
-var SignupContextValues: Record "Signup Context Values";
-
+var
+    SignupContextValues: Record "Signup Context Values";
 begin        
     if not SignupContext.Get('name') then            
         exit;
@@ -155,12 +155,10 @@ When the `SignupContext` parameter has a value expected by the partner's, the ap
 ### Reacting to the SignupContext parameter
 
 ```AL
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"System Initialization", 'OnAfterLogin', '', false, false)]
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"System Initialization", OnAfterLogin, '', false, false)]
 local procedure InitializeChecklistOnAfterLogIn()
 var
-    Company: Record Company;
     SignupContextValues: Record "Signup Context Values";
-    Checklist: Codeunit Checklist;
 begin
     if not SignupContextValues.Get() then            
         exit;
