@@ -9,7 +9,6 @@ author: jswymer
 ms.custom: 
     - bap-template
 ---
-
 # Update 26.0 for Business Central 2025 release wave 1
 
 This article provides an overview of the new and updated features and general information about update 26.0, which starts the 2025 release wave 1.
