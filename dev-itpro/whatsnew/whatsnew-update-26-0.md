@@ -15,7 +15,7 @@ ms.custom:
 This article provides an overview of the new and updated features and general information about update 26.0, which starts the 2025 release wave 1.
 
 > [!NOTE]
-> New on-premises packages are available starting April 14, 2025, to resolve the issue discussed in Viva Engage conversation at (https://www.yammer.com/dynamicsnavdev/threads/3257990738239488). To download the latest packages, go to [On-premises download packages](#on-premises-download-packages).
+> New on-premises packages are available starting 14 April 2025 to fix issues in the packages released on 1 April 2025. To download the latest packages, go to [On-premises download packages](#on-premises-download-packages).  
 
 ## Highlights
 
