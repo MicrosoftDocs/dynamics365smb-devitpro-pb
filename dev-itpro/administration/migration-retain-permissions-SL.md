@@ -40,7 +40,7 @@ end
 
 ## Next steps
 
-[Run data migration setup](migration-setup-sl.md).
+[Run data migration setup](migration-setup-sl.md)
 
 ## Related information
 

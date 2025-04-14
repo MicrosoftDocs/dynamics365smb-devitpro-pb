@@ -1,6 +1,6 @@
 ---
 title: Prepare and plan for cloud migration from Dynamics SL
-description: This article provides recommendations to help you define your cloud migration strategy and get environments and users ready for Dynamics SL cloud migration.
+description: Learn how to define your cloud migration strategy and prepare environments and users for Dynamics SL cloud migration.
 author: lcontreras
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -38,9 +38,9 @@ Details on compiling and using the files are included on GitHub.
 
 ## Determine what data to migrate
 
-The data that's migrated is determined on a per-company basis. When a company is migrated, data in company-specific tables of the base application is migrated.
+The data migrated is determined on a per-company basis. When a company is migrated, data in company-specific tables of the base application is migrated.
 
-You can choose to migrate data for all companies or only specific companies. It's recommended to determine which companies to migrate upfront to save time and resources. Keep in mind that the more companies you replicate in a single operation, the longer the migration takes.
+You can choose to migrate data for all companies or only specific companies. Determining which companies to migrate upfront is recommended to save time and resources. Keep in mind that the more companies you replicate in a single operation, the longer the migration takes.
 
 [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]
 
@@ -59,7 +59,7 @@ Ensure you have a solid migration strategy for a smooth transition. Most migrati
 > [!IMPORTANT]
 > Ensure the on-premises and cloud environments remain on the same version they were when the cloud migration was set up. Don't update the on-premises environment and [reschedule updates](update-rollout-timeline.md) to the cloud environment to a date after the cloud migration is completed.
 >
-> Avoid modifying the environment after the replication has been enabled. If you need to install or uninstall extensions or delete companies, disable the cloud migration, make the changes, and then enable it again.
+> Avoid modifying the environment after the replication starts. If you need to install or uninstall extensions or delete companies, disable the cloud migration, make the changes, and then enable it again.
 
 Keep in mind that the migration process can be complex, and issues might arise that require more troubleshooting. It's important to stay flexible and be prepared to adjust your migration strategy as needed to address any problems that arise.
 

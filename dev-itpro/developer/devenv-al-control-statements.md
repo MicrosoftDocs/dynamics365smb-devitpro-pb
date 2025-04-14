@@ -58,7 +58,7 @@ end;
 
 ```AL
 if (xxx = yyyyyyyyyy) and   
- <  (aaaaaaaaaa = bbb)  
+   (aaaaaaaaaa = bbb)  
 then begin  
     x := a;  
     x := y;  
@@ -552,13 +552,11 @@ You typically use the `break` statement in the repeating statements such as `for
 The following AL code increases the variable `Count` by one for each iteration, and terminates the iteration when `Count` equals 10.  
 
 ```AL
-while Count < 1000 do
-    begin
-        Count := Count + 1;
-        message(FORMAT(Count));
-        if Count = 10 then
-            break;
-        end; 
+while Count < 1000 do begin
+    Count := Count + 1;
+    Message(Format(Count));
+    if Count = 10 then
+        break;
 end; 
  
 ```  
@@ -590,14 +588,12 @@ You typically use the `continue` statement in the repeating statements such as `
 The following AL code increases the variable `Count` by one for each iteration, but skips all numbers divisible by 42. 
 
 ```AL
-while Count < 1000 do
-    begin
-        Count := Count + 1;
-        if (Count MOD 42 = 0) then
-            continue;
+while Count < 1000 do begin
+    Count := Count + 1;
+    if (Count mod 42 = 0) then
+        continue;
         
-        message(FORMAT(Count));
-    end; 
+    Message(Format(Count));
 end; 
 ```  
 

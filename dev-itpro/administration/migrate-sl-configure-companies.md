@@ -29,7 +29,7 @@ The **SL Company Migration Configuration** page opens automatically when you com
 
 Once the **SL Company Migration Configuration** page is open, start configuring the data to migrate using the different sections of the page.
 
-The page enables you to configure the migration globally for all companies that you choose to migrate (using the upper sections of the page) or on a per-company basis using the **Per Company** section.
+The page allows you to configure the migration globally for all selected companies (using the upper sections of the page) or indivdually for each company using the **Per Company** section.
 
 You don't have to make changes on this page unless there's more than one subaccount segment in Dynamics SL. In that case, you must indicate which subaccount segment to use for the global dimensions.
 
@@ -37,7 +37,7 @@ As a best practice, specify how many years back to migrate data. Otherwise, the 
 
 ## Configure migration globally
 
-The steps in this section configure the data migration globally for all companies that you chose to migrate using the **Cloud Migration Setup**. If you're migrating more than one company, you can specify the [configuration on a per-company basis](#configure-migration-per-company).
+The steps in this section configure the data migration globally for all companies that you chose to migrate using the **Cloud Migration Setup**. If you're migrating more than one company, you can specify the [configuration on a per company basis](#configure-migration-per-company).
 
 1. **Set the dimensions**.
 
@@ -84,8 +84,8 @@ In the **Per Company** section, set the data migration settings separately for e
 
 Specify how far back in time to migrate general ledger (GL) account summary data and historical snapshots using the following fields:
 
-- **Oldest GL Year** - Select the year from which you want to migrate GL account summary transactions. If the **Oldest GL Year** field is empty, all years are migrated. Account summary transactions are generated and posted for open and history years set up in Dynamics SL. The summary amounts are created based on the fiscal periods set up in Dynamics SL. For example, if 2019, 2020, 2021, and 2022 are historical years in Dynamics SL, but you only want to migrate data from 2021 and later, set the **Oldest GL Year** to 2021. As a result, summary transactions for 2019 and 2020 aren't migrated to Business Central.
-- **Oldest Snapshot Year** - Select the year from which you want to migrate history snapshots. If the **Oldest GL Year** field is empty, history snapshots from all years are migrated.
+- **Oldest GL Year**: Select the year from which you want to migrate GL account summary transactions. If the **Oldest GL Year** field is empty, all years are migrated. Account summary transactions are generated and posted for open and history years set up in Dynamics SL. The summary amounts are created based on the fiscal periods set up in Dynamics SL. For example, if 2019, 2020, 2021, and 2022 are historical years in Dynamics SL, but you only want to migrate data from 2021 and later, set the **Oldest GL Year** to 2021. As a result, summary transactions for 2019 and 2020 aren't migrated to Business Central.
+- **Oldest Snapshot Year**: Select the year from which you want to migrate history snapshots. If the **Oldest GL Year** field is empty, history snapshots from all years are migrated.
 
 ## Next steps
 

@@ -11,7 +11,7 @@ author: jswymer
 
 # Upgrading Microsoft System and Base Application to Version 26
 
-Use this scenario if you have one of the following [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions that use the Microsoft System and Base applications.
+Use this scenario if you have one of the following [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions that use the Microsoft system and base applications.
 
 - 2024 release wave 2 (version 25)
 - 2024 release wave 1 (version 24)
@@ -25,22 +25,22 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 - 2020 release wave 1 (version 16)
 - 2019 release wave 2 (version 15)
 
-> [!IMPORTANT]
-> See [Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md) to determine which update of version 26 is compatible with your current Business Central version.
+You can't upgrade directly to version 26 from version 24 or earlier because version 26 deletes many objects. Upgrade to version 25 first. Learn more in [Deleted objects](upgrade-considerations-v26.md#deleted-objects).  
 
-[![Upgrade on unmodified Business Central application.](../developer/media/bc26-upgrade-unmodified-app.svg)](../developer/media/bc26-upgrade-unmodified-app.svg#lightbox)  
+[![Upgrade on unmodified Business Central application.](../developer/media/bc26-upgrade-unmodified-app.png)](../developer/media/bc26-upgrade-unmodified-app.png#lightbox)  
 
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
-## Before you begin
+## Task 1: Upgrade to version 25
 
-### Install the full-text search feature on the SQL server instance
+This task applies if you're upgrading from version 24 or earlier. Follow the instructions in [Upgrading Microsoft system and base application to version 25](upgrade-unmodified-application-to-v25.md).  
 
-[!INCLUDE[upgrade-install-full-text-serach-sql](../developer/includes/upgrade-install-full-text-search-sql.md)]
+## Task 2: Prepare for upgrade to version 26
 
-### Consider known issues
+### Review upgrade considerations and known issues for version 26
 
-[!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
+- Learn about key information and tips to prepare for an upgrade in [Important information and considerations when upgrading to Business Central](upgrade-considerations-v26.md).  
+- [!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
 
 ### Prepare new runtime packages
 
@@ -51,10 +51,10 @@ Use this scenario if you have one of the following [!INCLUDE[prod_short](../deve
 Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the `" "` with the correct values for your environment.
 
 ```powershell
-$OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC240"
+$OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC250"
 $NewBcServerInstance = "The name of the Business Central server instance for version 26, for example: BC260"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
-$TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (24-0)" 
+$TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (25-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB. In a single-tenant deployment, this is the same as the $TenantDatabase" 
 $DatabaseServer = "The SQL Server instance that hosts the databases. The value has the format server_name\instance_name, For example: localhost\BCDEMO"
 $SystemAppPath = "The file path and name of the System Application extension for the update, for example: C:\DVD\Applications\system application\Source\\Microsoft_System Application.app"
@@ -67,11 +67,11 @@ $CustomerLicense = "The file path and name of the customer license"
 $AddinsFolder = "The file path to the Add-ins folder of version 26 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\260\Service\Add-ins."
 ```
 
-## Task 1: Install version 26
+## Task 3: Install version 26
 
 1. Download the latest available update for Business Central 2025 release wave 1 (version 26) that is compatible with your current version.
 
-    For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+    Learn more in [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
 2. Before you install version 26, it can be useful to create a desktop shortcut the [!INCLUDE[admintool](../developer/includes/admintool.md)] for the current version. The reason is that the Start menu item for the current version is replaced with item for the [!INCLUDE[admintool](../developer/includes/admintool.md)] for version 26.
 
@@ -81,13 +81,13 @@ $AddinsFolder = "The file path to the Add-ins folder of version 26 server instal
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 2: Upgrade permission sets
+## Task 4: Upgrade permission sets
 
 Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you have to go through before and during upgrade.
 
 For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).
 
-## Task 3: Prepare the existing databases
+## Task 5: Prepare the existing databases
 
 1. Make backup of the databases.
 2. Disable data encryption.
@@ -159,7 +159,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
 8. [!INCLUDE[flf-license](../developer/includes/flf-license.md)] 
 
-## Task 4: Convert application database to version 26
+## Task 6: Convert application database to version 26
 
 This task runs a technical upgrade on the application database to convert it to the version 26 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. The conversion adds the system symbols for the version to the database, so you don't have to manually publish the Systems extension, as you had to do with early releases.
 
@@ -175,7 +175,7 @@ This task runs a technical upgrade on the application database to convert it to 
 
     ```ps
     DatabaseServer      : .\BCDEMO
-    DatabaseName        : Demo Database BC (24-0)
+    DatabaseName        : Demo Database BC (25-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
@@ -183,7 +183,7 @@ This task runs a technical upgrade on the application database to convert it to 
 
 [!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
-## Task 5: Configure version 26 server
+## Task 7: Configure version 26 server
 
 When you installed version 26 in **Task 1**, a version 26 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for upgrade and can be reverted after you complete the upgrade.
 
@@ -208,7 +208,7 @@ When you installed version 26 in **Task 1**, a version 26 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## Task 6: Import version 26 license
+## Task 8: Import version 26 license
 
 1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 26 license to the database. 
 
@@ -222,7 +222,7 @@ When you installed version 26 in **Task 1**, a version 26 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## Task 7: Synchronize tenant
+## Task 9: Synchronize tenant
 
 Synchronize the tenant database with the platform changes in the application database to get it ready for the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -251,7 +251,7 @@ Synchronize the tenant database with the platform changes in the application dat
 
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-## Task 8: Publish extensions
+## Task 10: Publish extensions
 
 In this task, you publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft and non-Microsoft extensions that were used on your old deployment.
 
@@ -335,7 +335,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
     Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
 
-## Task 9: Synchronize tenant with extensions
+## Task 11: Synchronize tenant with extensions
 
 Synchronize the tenant's database schema with any schema changes in the new extension versions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -366,7 +366,7 @@ Synchronize the tenant's database schema with any schema changes in the new exte
    Replace `$NewBCVersion` with the exact version of the published Base Application.
 
    > [!IMPORTANT]
-   > If you're upgrading a Czech (CZ) language version, you must use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. For more information, go to [Removed table fields in base application cause sync errors](known-issues.md#removed-table-fields-in-the-czech-cz-base-application-cause-sync-errors).
+   > If you're upgrading a Czech (CZ) language version 22 or earlier, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Removed table fields in base application cause sync errors](known-issues.md#removed-table-fields-in-the-czech-cz-base-application-cause-sync-errors).
 
 1. Synchronize the tenant with the [Application](../developer/devenv-application-app-file.md) extension.
 
@@ -382,7 +382,10 @@ Synchronize the tenant's database schema with any schema changes in the new exte
     Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version <extension version>
     ```
 
-## Task 10: Upgrade data
+   > [!IMPORTANT]
+   > If you're upgrading the v25 subscription billing extension, use the `-Mode ForceSync` parameter to force synchronize the base application; otherwise, synchronization errors occur. Learn more in [Renamed tables and fields in susbscription billing extension cause synch errors on upgrade](known-issues.md#renamed-tables-and-fields-in-susbscription-billing-extension-cause-synch-errors-on-upgrade).
+
+## Task 12: Upgrade data
 
 In this task, you run a data upgrade for extensions.
 
@@ -437,19 +440,19 @@ Start-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Fun
 
 This command upgrades and installs the extensions on the tenant.
 
-## Task 11: Install new Microsoft or reinstall 3rd-party extensions
+## Task 12: Install new Microsoft or reinstall 3rd-party extensions
 
-Complete this task to install new first-time Microsoft extensions that you published in task 8 or any non-Microsoft extensions for which a new version wasn't published. For example, you would do this step for the  **_Exclude_ReportLayouts**  extension if you're upgrading from version 19 or earlier. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
+Complete this task to install new first-time Microsoft extensions that you published in task 10 or any non-Microsoft extensions for which a new version wasn't published. For example, you would do this step for the  **_Exclude_ReportLayouts**  extension if you're upgrading from version 19 or earlier. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
 ```powershell
 Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Version <extension version>
 ```
 
-## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 13: <a name="JSaddins"></a>Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
-## Task 13: Install upgraded permissions sets
+## Task 14: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you decided to use permission sets as AL objects or as data.
 
@@ -474,7 +477,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-## Task 14: Change application version
+## Task 15: Change application version
 
 [!INCLUDE[upgrade-change-application-version](../developer/includes/upgrade-change-application-version.md)]
 
