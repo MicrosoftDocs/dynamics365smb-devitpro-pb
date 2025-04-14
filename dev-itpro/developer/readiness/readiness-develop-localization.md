@@ -2,7 +2,7 @@
 title: Development of a Localization Solution
 description: Comply with regulatory requirements in Dynamics 365 Business Central.
 author: sorenfriisalexandersen
-ms.date: 01/20/2025
+ms.date: 04/14/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: solsen

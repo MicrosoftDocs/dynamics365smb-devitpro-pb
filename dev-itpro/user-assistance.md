@@ -4,7 +4,7 @@ description: Learn about the user assistance model for Dynamics 365 Business Cen
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.topic: article
-ms.date: 12/30/2024
+ms.date: 04/14/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
