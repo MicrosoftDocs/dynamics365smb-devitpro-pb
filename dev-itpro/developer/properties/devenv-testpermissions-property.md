@@ -1,6 +1,6 @@
 ---
 title: "TestPermissions property"
-description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions."
+description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by test codeunits or test functions."
 ms.author: solsen
 ms.date: 08/26/2024
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 # TestPermissions Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.
+Specifies a value that can be used to determine which permission sets are used on tests that are run by test codeunits or test functions.
 
 ## Applies to
 -   Codeunit
@@ -22,7 +22,7 @@ Specifies a value that can be used to determine which permission sets are used o
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**InheritFromTestCodeunit**|runtime version 1.0|Is only relevant for test methods; not test codeunits. It specifies that a test method uses the TestPermissions property setting of the test codeunit to which it belongs. If you use this value on a test codunit, the property will resolve to Restrictive at runtime.|
+|**InheritFromTestCodeunit**|runtime version 1.0|Is only relevant for test methods; not test codeunits. It specifies that a test method uses the TestPermissions property setting of the test codeunit to which it belongs. If you use this value on a test codeunit, the property will resolve to Restrictive at runtime.|
 |**Restrictive**|runtime version 1.0|This is the default value. Setting the Restrictive value will cause the permission execution context of every test in the codeunit to be set by default to 'D365 Full Access’. It is required to lower the level of permissions within every test to any permission sets other than 'D365 Full Access’. Otherwise, it will result in a runtime error. The change of the permission execution context is supported by  Codeunit "Library - Lower Permissions".|
 |**NonRestrictive**|runtime version 1.0|Setting the NonRestrictive value will cause that the permission execution context of every test in the codeunit is set to 'D365 Full Access’. Opposite to Restrictive, setting the TestPermissions property to NonRestrictive does not require a change of permissions.|
 |**Disabled**|runtime version 1.0|Setting this value will exclude any change of the permission execution context and all tests will be executed using SUPER.|
