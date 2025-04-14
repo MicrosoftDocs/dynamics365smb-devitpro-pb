@@ -12,10 +12,10 @@ ms.reviewer: solsen
 
 [!INCLUDE [prod_short](includes/prod_short.md)] is multi-language enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE [prod_short](includes/prod_short.md)], this is done using XLIFF files, which is a standardized format used for computer-based translations.  
 
+[!INCLUDE [translation-services-deprecation](../includes/translation-services-deprecation.md)]
+
 > [!TIP]
 > Optionally, use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) to get translations for your target languages. For more information, see [Translate user interface files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service).
-
-[!INCLUDE [translation-services-deprecation](../includes/translation-services-deprecation.md)]
 
 For an overview of how translations are applied, see [Translations overview](devenv-translations-overview.md).
 
