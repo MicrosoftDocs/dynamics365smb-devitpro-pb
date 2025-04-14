@@ -24,7 +24,7 @@ Sets the minimum number of times that an element can occur.
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Zero**|runtime version 1.0|There is no minimum number of occurences.|
+|**Zero**|runtime version 1.0|There is no minimum number of occurrences.|
 |**Once**|runtime version 1.0|The element must occur at least once.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
