@@ -62,8 +62,7 @@ For tips and tricks about writing in markdown, go to the [Authoring Guide](writi
 
 ## Translate the content
 
-> [!IMPORTANT]
-> We are announcing the deprecation of the Dynamics Translation Service (DTS). DTS will reach end-of-support on October 15, 2025, and will no longer be available after this date. For more information go [here]().
+>[!INCLUDE [translation-services-deprecation](../includes/translation-services-deprecation.md)]
 
 You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) (DTS) to translate your content into other languages. The service is hosted in Lifecycle Services and currently supports translation of content in Word documents and HTML files. Learn more at [Translate documentation files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
 

@@ -61,8 +61,7 @@ The following list describes the top things to be explicit about:
 
 Apart from [fulfilling the technical checklist for your app](../devenv-checklist-submission.md), the minimum viable product scope for localization app is:
 
-> [!IMPORTANT]
-> We are announcing the deprecation of the Dynamics Translation Service (DTS). DTS will reach end-of-support on October 15, 2025, and will no longer be available after this date. For more information go [here]().
+[!INCLUDE [translation-services-deprecation](../includes/translation-services-deprecation.md)]
 
 - Local regulatory features.
 - [Tests for local regulatory features](../../compliance/apptest-testingyourextension.md).

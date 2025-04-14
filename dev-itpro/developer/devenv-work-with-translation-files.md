@@ -15,8 +15,7 @@ ms.reviewer: solsen
 > [!TIP]
 > Optionally, use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) to get translations for your target languages. For more information, see [Translate user interface files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service).
 
-> [!IMPORTANT]
-> We are announcing the deprecation of the Dynamics Translation Service (DTS). DTS will reach end-of-support on October 15, 2025, and will no longer be available after this date. For more information go [here]().
+[!INCLUDE [translation-services-deprecation](../includes/translation-services-deprecation.md)]
 
 For an overview of how translations are applied, see [Translations overview](devenv-translations-overview.md).
 
