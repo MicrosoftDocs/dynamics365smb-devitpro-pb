@@ -211,9 +211,18 @@ When you installed version 25 in **Task 1**, a version 25 [!INCLUDE[server](../d
 
 1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 25 license to the database. 
 
+    For on-premise SQL
+
     ```powershell
     Import-NAVServerLicense -ServerInstance $NewBcServerInstance -LicenseFile $PartnerLicense
     ```
+
+    For Azure SQL
+
+    ```powershell
+    Import-NAVServerLicense -ServerInstance $NewBcServerInstance -LicenseFile $PartnerLicense -Database NavDatabase
+    ```
+
 
 2. Restart the server instance.
 
