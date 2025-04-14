@@ -4,28 +4,13 @@ description: This article provides tips and considerations to prepare a solution
 author: jswymer
 ms.custom: bap-template
 ms.topic: conceptual
-ms.date: 04/07/2025
+ms.date: 04/09/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Important information and considerations when upgrading to Business Central
+# Important information and considerations when upgrading to Business Central version 26
 
 This article provides important information and tips for things to consider when you prepare to upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2025 release 1 (version 26) The information that's relevant for you depends on which version you're upgrading from, and how much your solution differs from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application.
-
-## <a name="online"></a>Migrate to Business Central online
-
-You can upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online from supported versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, as long as extensions handle your application customizations.
-
-The process consists of two parts:
-
-- Convert nonstandard functionality and customizations to apps and per-tenant extensions. Learn more in [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).
-- Run the cloud migration tool, and then switch to use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online going forward. Learn more [Migrate on-premises data to Business Central online](../administration/migrate-data.md).
-
-## New and changed application and platform features
-
-There are several new and changed application features available in version 26 for users, administrators, and developers. For an overview of these features, consult:
-
-- [What's new and planned for Business Central 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/planned-features)
 
 ## Deprecated or redesigned functionality
 
@@ -37,8 +22,26 @@ Learn more about the deprecated features in:
 
 - [Deprecated Features in Application](deprecated-features-w1.md)
 - [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)
-- [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)
-- [Deleted objects in 2025 release wave 1](deleted-objects-25w1.md)
+- [Obsoleted elements in system application](/dynamics365/business-central/application/system-application/obsoletion/obsolete_by_26.0)
+- [Obsoleted elements in base application](/dynamics365/business-central/application/base-application/obsoletion/obsolete_by_26.0)
+
+## Deleted objects
+
+Many tables and fields are deleted from the base application and other Microsoft extensions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. These objects were in the **Obsolete::Removed** state for more than one major release. For a complete list of the deleted objects, consult [Deleted objects in 2025 release wave 1](deleted-objects-25w1.md).  
+
+This change aligns with the cleanup cycle that occurs every fifth release. Learn more in the blog post [Essential cleanup guide for partners: 2025 release wave 1](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/02/06/essential-clean-up-guide-for-partners-2025-release-wave-1/).
+
+### Effect on upgrade
+
+Complete these tasks before upgrading to version 26:  
+
+1. Refactor custom code in non-Microsoft extensions, including upgrade code, to replace or remove references to these objects.  
+2. Upgrade versions 24 or earlier to 25 before upgrading to version 26.0.  
+
+ 
+<!--
+We have updated the rules of the schema sync engine to support deleting tables & fields that have previously been synchronized with Obsolete State = Removed.
+Because we rely on the Obsolete State of the previously synchronized extension version, you need to upgrade through a version where the table was marked as Obsolete Removed, as we cannot validate this if you go directly from no obsolete state delete table. This capability allows for deleting fields and tables while still having some form of validating that you are not deleting important data. --> 
 
 ## Schema changes in subscription billing extension
 
