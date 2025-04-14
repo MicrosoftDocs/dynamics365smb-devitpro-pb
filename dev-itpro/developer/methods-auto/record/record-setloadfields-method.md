@@ -46,6 +46,9 @@ It is not necessary to include the following fields, because they are always sel
 
 Depending on the runtime version, the runtime may require extra fields to be selected for loading. Which extra fields to specify depends on the state of the record and table or table extension definition. For example, fields that are filtered upon are always loaded.
 
+> [!NOTE]
+> You must not use the method SetLoadFields on fields with FieldClass FlowFilter or FlowField. Otherwise a runtime error will occur.
+
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
 ## Example
