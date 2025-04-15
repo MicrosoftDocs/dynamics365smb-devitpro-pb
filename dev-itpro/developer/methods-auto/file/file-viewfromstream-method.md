@@ -46,6 +46,8 @@ Whether to allow the user to download or print the file from the client or not.
 
 ## Remarks
 
+This method works only in Business Central on-premises environments and supports PDF files. For online environments, use [File.View](file-view-method.md).  
+
 ## Example
 
 This example shows how to use the `File.ViewFromStream` method to preview the **Customer - Top 10 List** report as a PDF file embedded in the client UI.
