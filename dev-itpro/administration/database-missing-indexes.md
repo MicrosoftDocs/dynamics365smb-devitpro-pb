@@ -1,11 +1,11 @@
 ---
-title: Missing Indexes in Business Central databases
-description: Description about missing indexes and database missing indexes page
+title: Missing indexes in Business Central databases
+description: Learn about missing indexes and the database missing indexes page.
 author: jswymer
 ms.date: 03/21/2025
 ms.topic: conceptual
 ms.author: jswymer
-ms.reviewer: jswymer
+ms.reviewer: jswymera
 ---
 
 # Missing indexes in Business Central databases
@@ -22,7 +22,7 @@ Learn more about indexes and their types in [Clustered and nonclustered indexes 
 
 When you run a database query, the query optimizer, which is an important database component, analyzes and chooses the best possible plan to complete the instruction. In doing so, it provides additional information about the ongoing operation that the operation might perform well if the particular column (or columns) is indexed. The SQL server's Query optimizer gets this information from Dynamic Management Views (DMV), in our case, [sys.dm_db_missing_index_details](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql). *sys.dm_db_missing_index_details* returns details about missing indexes, which help you in creating right indexes.
 
-Learn how to use missing index suggestions to tune indexes and improve query performance in [Tune nonclustered indexes with missing index suggestions](/sql/relational-databases/indexes/tune-nonclustered-missing-index-suggestions)
+Learn how to use missing index suggestions to tune indexes and improve query performance in [Tune nonclustered indexes with missing index suggestions](/sql/relational-databases/indexes/tune-nonclustered-missing-index-suggestions).
 
 Learn about Dynamic Management Views (DMV) in [System Dynamic Management Views (Transact-SQL)](/sql/relational-databases/system-dynamic-management-views/system-dynamic-management-views).
 
@@ -30,7 +30,7 @@ Learn how AL plays a part in efficient data access with SQL components in [Effic
 
 ### View missing indexes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-To get information on missing indexes, open to the **Database Missing Indexes** page in Business Central and view the data in the following columns:
+To get information on missing indexes, open the **Database Missing Indexes** page in Business Central and view the data in the following columns:
 
 |Column|Description|
 |------|-----------|
