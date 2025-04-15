@@ -83,7 +83,7 @@ end;
 ```
 
 > [!TIP]  
-> The base application uses this method in areas such as viewing PDF attachments on documents, including sales orders, customers, and items. Learn more in the [Microsoft.Foundation.Attachment reference](/dynamics365/business-central/application/base-application/table/microsoft.foundation.attachment.document-attachment).  
+> The base application uses this method to view PDF attachments on documents like sales orders, items, and more. Learn more in the [Microsoft.Foundation.Attachment reference](/dynamics365/business-central/application/base-application/table/microsoft.foundation.attachment.document-attachment).
 
 ## Related information
 [File data type](file-data-type.md)  
