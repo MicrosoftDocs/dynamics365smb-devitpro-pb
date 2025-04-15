@@ -2,7 +2,7 @@
 title: "File.ViewFromStream(InStream, Text [, Boolean]) Method"
 description: "Opens a file from the server on the client computer in preview mode."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 04/15/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -43,6 +43,48 @@ Whether to allow the user to download or print the file from the client or not.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This method works only in Business Central on-premises environments and supports PDF files. For online environments, use [File.View](file-view-method.md).  
+
+## Example
+
+This example shows how to use the `File.ViewFromStream` method to preview the **Customer - Top 10 List** report as a PDF file embedded in the client UI.
+
+```al
+procedure ShowTop10CustomersReport()
+var
+    TempBlob: Codeunit "Temp Blob";
+    MyInStream: InStream;
+    MyOutStream: OutStream;
+    FileName: Text;
+    Success: Boolean;
+    RecRef: RecordRef; // Declare a RecordRef variable
+begin
+    // Define the file name for the PDF
+    FileName := 'Top10Customers.pdf';
+
+    // Save the "Customer - Top 10 List" report as a PDF in the TempBlob
+    TempBlob.CreateOutStream(MyOutStream);
+    if not Report.SaveAs(Report::"Customer - Top 10 List", '', ReportFormat::Pdf, MyOutStream, RecRef) then
+        Error('Failed to generate the Top 10 Customers report.');
+
+    // Create an InStream from the TempBlob
+    TempBlob.CreateInStream(MyInStream);
+
+    // Display the PDF using File.ViewFromStream
+    Success := File.ViewFromStream(MyInStream, FileName, true);
+
+    // Handle the case where the PDF could not be displayed
+    if not Success then
+        Error('Failed to display the Top 10 Customers report.');
+end;
+```
+
+> [!TIP]  
+> The base application uses this method to view PDF attachments on documents like sales orders, items, and more. Learn more in the [Microsoft.Foundation.Attachment reference](/dynamics365/business-central/application/base-application/table/microsoft.foundation.attachment.document-attachment).
+
 ## Related information
 [File data type](file-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
