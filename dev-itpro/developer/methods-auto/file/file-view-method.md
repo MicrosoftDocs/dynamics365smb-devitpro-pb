@@ -42,14 +42,13 @@ Whether to allow the user to download or print the file from the client or not.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-
 ## Remarks
 
 This method works only in Business Central online environments and supports PDF files. For on-premises environments, use [File.ViewFromStream](file-viewfromstream-method.md).  
 
 ## Example
 
-This example shows how to use the `File.View` method to preview the **Customer - Top 10 List** report as a PDF file embedded in the client UI.
+This example shows how to use the `File.View` method to preview the **Customer - Top 10 List** report as a PDF file embedded in the client UI. 
 
 ```al
 procedure ShowTop10CustomersReport()
@@ -80,7 +79,9 @@ begin
 end;
 ```
 
-## Related information
+> [!TIP]  
+> The base application uses this method in areas such as viewing PDF attachments on documents, including sales orders, customers, and items. Learn more in the [Microsoft.Foundation.Attachment reference](/dynamics365/business-central/application/base-application/table/microsoft.foundation.attachment.document-attachment).  
+
 [File data type](file-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)
