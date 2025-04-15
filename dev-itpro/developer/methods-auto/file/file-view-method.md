@@ -2,7 +2,7 @@
 title: "File.View(Text [, Boolean]) Method"
 description: "Opens a file from server computer on the client computer in preview mode."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 04/15/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -42,19 +42,37 @@ Whether to allow the user to download or print the file from the client or not.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks
+## Example
+
+This example shows how to use the `File.View` method to preview the **Customer - Top 10 List** report as a PDF file embedded in the client UI.
 
 ```al
-internal procedure ViewFile()
+procedure ShowTop10CustomersReport()
 var
     TempBlob: Codeunit "Temp Blob";
-    FileInStream: InStream;
+    OutStream: OutStream;
+    InStream: InStream;
+    FileName: Text;
+    Success: Boolean;
 begin
-    GetAsTempBlob(TempBlob);
-    TempBlob.CreateInStream(FileInStream);
-    File.ViewFromStream(FileInStream, Rec."File Name" + '.' + Rec."File Extension", true);
-end;
+    // Define the file name for the PDF
+    FileName := 'Top10Customers.pdf';
 
+    // Save the "Customer - Top 10 List" report as a PDF in the TempBlob
+    TempBlob.CreateOutStream(OutStream);
+    if not Report.SaveAs(Report::"Customer - Top 10 List", '', ReportFormat::Pdf, OutStream) then
+        Error('Failed to generate the Top 10 Customers report.');
+
+    // Create an InStream from the TempBlob
+    TempBlob.CreateInStream(InStream);
+
+    // Display the PDF using File.ViewFromStream
+    Success := File.ViewFromStream(InStream, FileName, true);
+
+    // Handle the case where the PDF could not be displayed
+    if not Success then
+        Error('Failed to display the Top 10 Customers report.');
+end;
 ```
 
 ## Related information

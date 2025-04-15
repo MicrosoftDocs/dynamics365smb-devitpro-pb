@@ -2,7 +2,7 @@
 title: "File.ViewFromStream(InStream, Text [, Boolean]) Method"
 description: "Opens a file from the server on the client computer in preview mode."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 04/15/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -44,9 +44,11 @@ Whether to allow the user to download or print the file from the client or not.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
 ## Example
 
-The following example demonstrates how to use the `File.ViewFromStream` method to preview the **Customer - Top 10 List** report as a PDF file on the client computer.
+This example shows how to use the `File.ViewFromStream` method to preview the **Customer - Top 10 List** report as a PDF file embedded in the client UI.
 
 ```al
 procedure ShowTop10CustomersReport()
