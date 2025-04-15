@@ -43,6 +43,41 @@ Whether to allow the user to download or print the file from the client or not.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+The following example demonstrates how to use the `File.ViewFromStream` method to preview the **Customer - Top 10 List** report as a PDF file on the client computer.
+
+```al
+procedure ShowTop10CustomersReport()
+var
+    TempBlob: Codeunit "Temp Blob";
+    InStream: InStream;
+    OutStream: OutStream;
+    FileName: Text;
+    Success: Boolean;
+    RecRef: RecordRef; // Declare a RecordRef variable
+begin
+    // Define the file name for the PDF
+    FileName := 'Top10Customers.pdf';
+
+    // Save the "Customer - Top 10 List" report as a PDF in the TempBlob
+    TempBlob.CreateOutStream(OutStream);
+    if not Report.SaveAs(Report::"Customer - Top 10 List", '', ReportFormat::Pdf, OutStream, RecRef) then
+        Error('Failed to generate the Top 10 Customers report.');
+
+    // Create an InStream from the TempBlob
+    TempBlob.CreateInStream(InStream);
+
+    // Display the PDF using File.ViewFromStream
+    Success := File.ViewFromStream(InStream, FileName, true);
+
+    // Handle the case where the PDF could not be displayed
+    if not Success then
+        Error('Failed to display the Top 10 Customers report.');
+end;
+```
+
 ## Related information
 [File data type](file-data-type.md)  
 [Getting started with AL](../../devenv-get-started.md)  
