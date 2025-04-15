@@ -25,7 +25,7 @@ Use different disks or partitions for:
 - Log files for system and user databases
 - Data and log files for the TempDB database
 
-For optimal read/write performance, we recommend formatting disks used for SQL Server data files with a 64-KB block size.
+For optimal read/write performance, format disks used for SQL Server data files with a 64-KB block size.
 
 ### Virus scanning
 
