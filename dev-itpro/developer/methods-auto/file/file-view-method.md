@@ -50,8 +50,8 @@ This example shows how to use the `File.View` method to preview the **Customer -
 procedure ShowTop10CustomersReport()
 var
     TempBlob: Codeunit "Temp Blob";
-    OutStream: OutStream;
-    InStream: InStream;
+    MyOutStream: OutStream;
+    MyInStream: InStream;
     FileName: Text;
     Success: Boolean;
 begin
@@ -59,15 +59,15 @@ begin
     FileName := 'Top10Customers.pdf';
 
     // Save the "Customer - Top 10 List" report as a PDF in the TempBlob
-    TempBlob.CreateOutStream(OutStream);
-    if not Report.SaveAs(Report::"Customer - Top 10 List", '', ReportFormat::Pdf, OutStream) then
+    TempBlob.CreateOutStream(MyOutStream);
+    if not Report.SaveAs(Report::"Customer - Top 10 List", '', ReportFormat::Pdf, MyOutStream) then
         Error('Failed to generate the Top 10 Customers report.');
 
     // Create an InStream from the TempBlob
-    TempBlob.CreateInStream(InStream);
+    TempBlob.CreateInStream(MyInStream);
 
     // Display the PDF using File.ViewFromStream
-    Success := File.ViewFromStream(InStream, FileName, true);
+    Success := File.ViewFromStream(MyInStream, FileName, true);
 
     // Handle the case where the PDF could not be displayed
     if not Success then

@@ -54,8 +54,8 @@ This example shows how to use the `File.ViewFromStream` method to preview the **
 procedure ShowTop10CustomersReport()
 var
     TempBlob: Codeunit "Temp Blob";
-    InStream: InStream;
-    OutStream: OutStream;
+    MyInStream: InStream;
+    MyOutStream: OutStream;
     FileName: Text;
     Success: Boolean;
     RecRef: RecordRef; // Declare a RecordRef variable
@@ -64,15 +64,15 @@ begin
     FileName := 'Top10Customers.pdf';
 
     // Save the "Customer - Top 10 List" report as a PDF in the TempBlob
-    TempBlob.CreateOutStream(OutStream);
-    if not Report.SaveAs(Report::"Customer - Top 10 List", '', ReportFormat::Pdf, OutStream, RecRef) then
+    TempBlob.CreateOutStream(MyOutStream);
+    if not Report.SaveAs(Report::"Customer - Top 10 List", '', ReportFormat::Pdf, MyOutStream, RecRef) then
         Error('Failed to generate the Top 10 Customers report.');
 
     // Create an InStream from the TempBlob
-    TempBlob.CreateInStream(InStream);
+    TempBlob.CreateInStream(MyInStream);
 
     // Display the PDF using File.ViewFromStream
-    Success := File.ViewFromStream(InStream, FileName, true);
+    Success := File.ViewFromStream(MyInStream, FileName, true);
 
     // Handle the case where the PDF could not be displayed
     if not Success then
