@@ -4,7 +4,7 @@ description: Learn about the user assistance model for Dynamics 365 Business Cen
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.topic: article
-ms.date: 12/30/2024
+ms.date: 04/14/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -142,6 +142,8 @@ The [Learn Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-
 For other tips and tricks, see [Contribute to the Help](help/contributor-guide.md) and the blog post [Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
 
 ## Translate the Help
+
+[!INCLUDE [translation-services-deprecation](includes/translation-services-deprecation.md)]
 
 If you want to deliver a [localization app](developer/readiness/readiness-develop-localization.md), or if you want to deliver your functionality in more than one country/region, you'll want to translate the Help as well as the product. We suggest that you take a look at the [Microsoft Dynamics 365 Translation Service](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview), which is available as preview in Microsoft Dynamics Life Cycle Services. Learn more in [Translate documentation files](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
 
