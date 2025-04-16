@@ -45,7 +45,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/bankAccounts
 Content-type: application/json
 
 {
-    "id": "26049aad-bde4-ea11-bbf2-00155df3a615",
     "number": "NBL",
     "displayName": "New Bank of London"
 }

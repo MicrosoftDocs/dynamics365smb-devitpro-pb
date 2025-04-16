@@ -15,7 +15,6 @@ ms.reviewer: solsen
 
 Retrieve the properties and relationships of a bankAccount object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
 
-
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
@@ -55,8 +54,8 @@ Here is an example of the response.
 }
 ```
 
-
 ## Related information
+
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [bankaccount](../resources/dynamics_bankaccount.md)    
 [Delete bankaccount](dynamics_bankaccount_Delete.md)    
