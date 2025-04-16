@@ -80,7 +80,8 @@ entitlement "Delegated BC Admin agent - Partner"
     Type = Role;
     RoleType = Delegated;
     Id = '00000000-0000-0000-0000-000000000010';
-   ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
+
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 }
 ```
 
