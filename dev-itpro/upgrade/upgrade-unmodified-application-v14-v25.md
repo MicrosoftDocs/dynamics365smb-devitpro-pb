@@ -640,7 +640,7 @@ Learn more in [To export and import a permission set](/dynamics365/business-cent
 
 ## Next steps
 
-To upgrade to version 26.0, follow the instructions in [Upgrading Microsoft System and Base Application to Version 26](upgrade-unmodified-application-to-v26).  
+To upgrade to version 26.0, follow the instructions in [Upgrading Microsoft System and Base Application to Version 26](upgrade-unmodified-application-to-v26.md).  
 
 ## Related information also  
 
