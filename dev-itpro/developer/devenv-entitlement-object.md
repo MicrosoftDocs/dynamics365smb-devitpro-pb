@@ -38,7 +38,7 @@ Typing the shortcut `tentitlement` creates the basic layout for an entitlement o
 
 ## Entitlement examples
 
-The following sections illustrate examples of how to define entitlements in AL. For more inspiration, go to [BCApps](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Entitlements).
+The following sections illustrate examples of how to define entitlements in AL. For more inspiration, learn from examples in the System Application [BCApps](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Entitlements).
 
 Learn about how telemetry data can help you identify problems a user (or a service) might experience when signing in, in [Analyzing Authorization Trace Telemetry](/administration/telemetry-authorization-trace.md).
 
