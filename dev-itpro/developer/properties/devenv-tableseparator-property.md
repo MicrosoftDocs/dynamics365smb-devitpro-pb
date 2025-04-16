@@ -44,4 +44,4 @@ You can set the table separator in AL code so that the XMLport can import and ex
 ## Related information  
 
 [Properties](devenv-properties.md)  
-[XmlPort object](devenv-xmlport-object.md)  
+[XmlPort object](../devenv-xmlport-object.md)  
