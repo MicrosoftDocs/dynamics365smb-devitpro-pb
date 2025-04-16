@@ -46,7 +46,6 @@ POST https://{businesscentralPrefix}/api/v1.0/companies({id})/customerPaymentJou
 Content-type: application/json
 
 {
-    "id": "dc1b6a90-44e3-ea11-bb43-000d3a2feca1",
     "code": "GENERAL",
     "displayName": "GENERAL",
     "balancingAccountId": "00000000-0000-0000-0000-000000000000"

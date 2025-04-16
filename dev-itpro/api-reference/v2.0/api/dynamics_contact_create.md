@@ -51,7 +51,6 @@ Here is an example of the request.
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/contacts({id})
 Content-type: application/json
 {
-    "id" : "5d115c9c-44e3-ea11-bb43-000d3a2feca1",
     "number" : "108001",
     "type" : "Company",
     "displayName": "CRONUS USA, Inc.",

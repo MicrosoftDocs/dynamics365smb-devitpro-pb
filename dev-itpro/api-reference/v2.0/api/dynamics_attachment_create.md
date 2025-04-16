@@ -52,6 +52,7 @@ Content-type: application/json
     "fileName": "myPDF.pdf",
     "parentType": "Journal"
 }
+```
 
 ParentId is the Id of the entity, for which an attachment is being created.
 

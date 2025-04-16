@@ -48,7 +48,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/customerPayment
 Content-type: application/json
 
 {
-    "id": "17cce948-c6a5-4861-8ff5-30428ed83207",
     "lineNumber": 10000,
     "customerId": "customerId-value",
     "customerNumber": "10400",
