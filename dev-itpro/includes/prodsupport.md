@@ -14,4 +14,4 @@ ms.author: jswymer
 |Report bug in supported in-market versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises|The [Support for business](https://support.serviceshub.microsoft.com/supportforbusiness/productselection?sapId=93d37907-ad94-d591-22e9-593cfa09dd3f) site|
 
 > [!IMPORTANT]
-> To submit support requests on behalf of your customer, you must be a [delegated admin](../administration/delegated-admin.md) on the customer tenant. Your company must also have the *Advanced* or *Premier* [support plan](https://partner.microsoft.com/support/partnersupport). For more information, see the [Escalating support issues to Microsoft](../administration/manage-technical-support.md#submitsupportrequest) section.
+> To submit support requests on behalf of your customer, you must be a [delegated admin](../administration/delegated-admin.md) on the customer tenant. Your company must also have the *Advanced* or *Premier* [support plan](https://partner.microsoft.com/support/partnersupport). Learn more in [Escalating support issues to Microsoft](../administration/manage-technical-support.md#submitsupportrequest) section.
