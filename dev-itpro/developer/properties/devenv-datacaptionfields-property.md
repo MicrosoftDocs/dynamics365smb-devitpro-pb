@@ -2,7 +2,7 @@
 title: "DataCaptionFields property"
 description: "Sets the fields that appear to the left of the caption on pages that display the contents of this table."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 04/09/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -30,29 +30,31 @@ DataCaptionFields = "Customer Name", "Company Display Name";
 
 ## Remarks  
   
-## Card Pages
+## Card pages
 
-Card pages display one record at a time. For this object, the value of the underlying table's DataCaptionFields property is used; the value of this property on the page is ignored. If the DataCaptionFields property is not defined on the table, the primary key is used.  
+Card pages display a single record at a time. For this page type, the value of the `DataCaptionFields` property is taken from the underlying table. Any value set for this property on the page itself is ignored. If the `DataCaptionFields` property isn't defined on the table, the primary key of the table is used as a fallback.  
   
-## Tabular Pages  
+## Tabular pages  
 
-Tabular pages show multiple records at a time. The following data caption rules are applied:  
+Tabular pages display multiple records simultaneously. For these pages, a data caption is shown only if a filter applied to the fields defined in the `DataCaptionFields` property evaluates to a single value. Two situations can occur:  
   
-- A data caption is only displayed if a filter containing the fields defined in the DataCaptionFields property for the page evaluate to one value. In this case, two situations are possible:  
+- **With a table relation**: If a table relation exists (as defined by the [TableRelation Property](devenv-tablerelation-property.md)) the `DataCaptionFields` from the underlying table is used. If the related table doesn't define this property, the primary key is used.
   
-  - There is a table relation (as defined by the [TableRelation Property](devenv-tablerelation-property.md)) on one or more of the fields. In this case, the DataCaptionFields from the underlying table are used. If this table does not have a value for the DataCaptionFields property, the primary key for that table is used.  
+- **Without a table relation**: If no table relation exists, the single value resulting from the filter is used directly.  
   
-  - There is no table relation. In this case, the (single) value that results from evaluating the filter is used directly.  
-  
-## Example of DataCaptionFields Use  
+## Example of usage 
 
-The following is an example of how the DataCaptionFields property is used. The Customer Card page (21) is based on the Customer table (18). Using the **Navigate** menu on this page, users can open other pages, including the Customer Ledger Entry page (25).  
+The following example illustrates how the `DataCaptionFields` property is used. 
+
+The Customer Card page (ID 21) is based on the Customer table (ID 18). Using the **Navigate** menu on this page, users can open other pages, including the Customer Ledger Entry page (25).  
   
-In the Customer table, the DataCaptionFields property is set to **No., Name**. On the Customer Ledger Entry page, the DataCaptionFields property is set to **CustomerNo.**. When the Customer Ledger Entry page (25) is opened from the Customer Card page (21), a filter is set on Customer No. field of the Customer Ledger Entries table, selecting only those entries related to the currently displayed customer on the Customer Card. This relationship is accomplished by setting the **RunPageLink** property of the menu item that invokes the Customer Ledger Entry page to Customer No.=FIELD(No.).  
+In the Customer table, the `DataCaptionFields` property is set to **No., Name**. On the Customer Ledger Entry page, the `DataCaptionFields` property is set to **Customer No.**. When the Customer Ledger Entry page (ID 25) is opened from the Customer Card page (ID 21), a filter is set on the **Customer No.** field of the Customer Ledger Entries table, showing only entries related to the currently displayed customer on the Customer Card. This is achieved by setting the **RunPageLink** property of the menu item that invokes the Customer Ledger Entry page to `Customer No.=Field(No.)`.  
   
 If you view the Customer Ledger Entry page with a filter applied, the customer name and number appear to the left of the caption on the Customer Ledger Entry page. If you remove the filter, the caption disappears.  
-  
-The important point is that the DataCaptionFields property on a page does not directly put any caption on the page, but only works when used with appropriate settings of DataCaptionFields at the table level.  
+
+## Key takeaway
+
+The `DataCaptionFields` property doesn't directly add captions to a page. Instead, it works in conjunction with the table-level configuration and other properties, such as `RunPageLink` to provide meaningful captions in specific contexts.
   
 ## Related information  
 

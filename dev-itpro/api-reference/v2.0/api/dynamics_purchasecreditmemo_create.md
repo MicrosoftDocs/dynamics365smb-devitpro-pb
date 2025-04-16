@@ -47,111 +47,109 @@ If successful, this method returns ```201 Created``` response code and a **purch
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos({id})
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos
 Content-type: application/json
 {
-    "id" : "",
-    "number" : "",
-    "creditMemoDate" : "",
-    "postingDate" : "",
-    "dueDate" : "",
-    "vendorId" : "",
-    "vendorNumber" : "",
-    "vendorName" : "",
-    "payToVendorId" : "",
-    "payToVendorNumber" : "",
-    "payToName" : "",
-    "buyFromAddressLine1" : "",
-    "buyFromAddressLine2" : "",
-    "buyFromCity" : "",
-    "buyFromCountry" : "",
-    "buyFromState" : "",
-    "buyFromPostCode" : "",
-    "payToAddressLine1" : "",
-    "payToAddressLine2" : "",
-    "payToCity" : "",
-    "payToCountry" : "",
-    "payToState" : "",
-    "payToPostCode" : "",
-    "shortcutDimension1Code" : "",
-    "shortcutDimension2Code" : "",
-    "currencyId" : "",
-    "currencyCode" : "",
-    "paymentTermsId" : "",
-    "shipmentMethodId" : "",
-    "purchaser" : "",
-    "pricesIncludeTax" : "",
-    "discountAmount" : "",
-    "discountAppliedBeforeTax" : "",
-    "totalAmountExcludingTax" : "",
-    "totalTaxAmount" : "",
-    "totalAmountIncludingTax" : "",
-    "status" : "",
-    "lastModifiedDateTime" : "",
-    "invoiceId" : "",
-    "invoiceNumber" : "",
-    "vendorReturnReasonId" : ""
+    "number" : "PC1001",
+    "creditMemoDate" : "2025-04-01",
+    "postingDate" : "2025-04-01",
+    "dueDate" : "2025-04-15",
+    "vendorId" : "12345",
+    "vendorNumber" : "V001",
+    "vendorName" : "Contoso Supplies",
+    "payToVendorId" : "67890",
+    "payToVendorNumber" : "V002",
+    "payToName" : "Contoso Payables",
+    "buyFromAddressLine1" : "123 Elm Street",
+    "buyFromAddressLine2" : "Suite 100",
+    "buyFromCity" : "Redmond",
+    "buyFromCountry" : "US",
+    "buyFromState" : "WA",
+    "buyFromPostCode" : "98052",
+    "payToAddressLine1" : "456 Oak Avenue",
+    "payToAddressLine2" : "Building A",
+    "payToCity" : "Seattle",
+    "payToCountry" : "US",
+    "payToState" : "WA",
+    "payToPostCode" : "98101",
+    "shortcutDimension1Code" : "SALES",
+    "shortcutDimension2Code" : "REGION1",
+    "currencyId" : "USD",
+    "currencyCode" : "USD",
+    "paymentTermsId" : "NET30",
+    "shipmentMethodId" : "GROUND",
+    "purchaser" : "John Doe",
+    "pricesIncludeTax" : true,
+    "discountAmount" : 50.00,
+    "discountAppliedBeforeTax" : true,
+    "totalAmountExcludingTax" : 950.00,
+    "totalTaxAmount" : 95.00,
+    "totalAmountIncludingTax" : 1045.00,
+    "status" : "Open",
+    "lastModifiedDateTime" : "2025-04-01T10:00:00Z",
+    "invoiceId" : "INV12345",
+    "invoiceNumber" : "INV-2025-001",
+    "vendorReturnReasonId" : "DAMAGED"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here is an example of the response.
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
+
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
 {
-    "id" : "",
-    "number" : "",
-    "creditMemoDate" : "",
-    "postingDate" : "",
-    "dueDate" : "",
-    "vendorId" : "",
-    "vendorNumber" : "",
-    "vendorName" : "",
-    "payToVendorId" : "",
-    "payToVendorNumber" : "",
-    "payToName" : "",
-    "buyFromAddressLine1" : "",
-    "buyFromAddressLine2" : "",
-    "buyFromCity" : "",
-    "buyFromCountry" : "",
-    "buyFromState" : "",
-    "buyFromPostCode" : "",
-    "payToAddressLine1" : "",
-    "payToAddressLine2" : "",
-    "payToCity" : "",
-    "payToCountry" : "",
-    "payToState" : "",
-    "payToPostCode" : "",
-    "shortcutDimension1Code" : "",
-    "shortcutDimension2Code" : "",
-    "currencyId" : "",
-    "currencyCode" : "",
-    "paymentTermsId" : "",
-    "shipmentMethodId" : "",
-    "purchaser" : "",
-    "pricesIncludeTax" : "",
-    "discountAmount" : "",
-    "discountAppliedBeforeTax" : "",
-    "totalAmountExcludingTax" : "",
-    "totalTaxAmount" : "",
-    "totalAmountIncludingTax" : "",
-    "status" : "",
-    "lastModifiedDateTime" : "",
-    "invoiceId" : "",
-    "invoiceNumber" : "",
-    "vendorReturnReasonId" : ""
+    "id" : "PC1001-ID",
+    "number" : "PC1001",
+    "creditMemoDate" : "2025-04-01",
+    "postingDate" : "2025-04-01",
+    "dueDate" : "2025-04-15",
+    "vendorId" : "12345",
+    "vendorNumber" : "V001",
+    "vendorName" : "Contoso Supplies",
+    "payToVendorId" : "67890",
+    "payToVendorNumber" : "V002",
+    "payToName" : "Contoso Payables",
+    "buyFromAddressLine1" : "123 Elm Street",
+    "buyFromAddressLine2" : "Suite 100",
+    "buyFromCity" : "Redmond",
+    "buyFromCountry" : "US",
+    "buyFromState" : "WA",
+    "buyFromPostCode" : "98052",
+    "payToAddressLine1" : "456 Oak Avenue",
+    "payToAddressLine2" : "Building A",
+    "payToCity" : "Seattle",
+    "payToCountry" : "US",
+    "payToState" : "WA",
+    "payToPostCode" : "98101",
+    "shortcutDimension1Code" : "SALES",
+    "shortcutDimension2Code" : "REGION1",
+    "currencyId" : "USD",
+    "currencyCode" : "USD",
+    "paymentTermsId" : "NET30",
+    "shipmentMethodId" : "GROUND",
+    "purchaser" : "John Doe",
+    "pricesIncludeTax" : true,
+    "discountAmount" : 50.00,
+    "discountAppliedBeforeTax" : true,
+    "totalAmountExcludingTax" : 950.00,
+    "totalTaxAmount" : 95.00,
+    "totalAmountIncludingTax" : 1045.00,
+    "status" : "Open",
+    "lastModifiedDateTime" : "2025-04-01T10:00:00Z",
+    "invoiceId" : "INV12345",
+    "invoiceNumber" : "INV-2025-001",
+    "vendorReturnReasonId" : "DAMAGED"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [purchaseCreditMemo](../resources/dynamics_purchaseCreditMemo.md)  
 [GET purchaseCreditMemo](dynamics_purchasecreditmemo_get.md)  
 [DELETE purchaseCreditMemo](dynamics_purchasecreditmemo_delete.md)  
-[PATCH purchaseCreditMemo](dynamics_purchasecreditmemo_update.md)  
+[PATCH purchaseCreditMemo](dynamics_purchasecreditmemo_update.md)
