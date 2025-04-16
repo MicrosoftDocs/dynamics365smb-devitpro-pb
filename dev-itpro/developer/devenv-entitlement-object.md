@@ -36,7 +36,13 @@ Typing the shortcut `tentitlement` creates the basic layout for an entitlement o
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
-## Entitlement example - delegated admin
+## Entitlement examples
+
+The following sections illustrate examples of how to define entitlements in AL. For more inspiration, learn from examples in the System Application [BCApps](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Entitlements).
+
+Learn about how telemetry data can help you identify problems a user (or a service) might experience when signing in, in [Analyzing Authorization Trace Telemetry](../administration/telemetry-authorization-trace.md).
+
+### Entitlement example - delegated admin
 
 This example illustrates a simple entitlement object with the [Type property](properties/devenv-type-property.md) set to `Role`, which means that the entitlement is associated with a Microsoft Entra role. When `Type` is set to `Role`, the [RoleType property](properties/devenv-roletype-property.md) distinguishes between local and delegated assignments of the role. In this case, it's `Delegated`. The [ObjectEntitlements property](properties/devenv-objectentitlements-property.md) defines the list of permissions that the entitlement includes.
 
@@ -68,9 +74,18 @@ entitlement "Dynamics 365 Admin - Partner"
 
     ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
 }
+
+entitlement "Delegated BC Admin agent - Partner"
+{
+    Type = Role;
+    RoleType = Delegated;
+    Id = '00000000-0000-0000-0000-000000000010';
+
+    ObjectEntitlements = MyApp_PartnerFullAccessPermissionSet;
+}
 ```
 
-## Entitlement example - per-user plan
+### Entitlement example - per-user plan
 
 An example of an entitlement where `Type` is `PerUserOfferPlan`. This type is used to enable transactability for AppSource apps. The `Id` property is used to map the entitlement to the plan in Partner Center, and must contain the **Service ID** for the plan. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
@@ -84,7 +99,7 @@ entitlement BC_PerUserOfferPlan
 }
 ```
 
-## Entitlement example - unlicensed
+### Entitlement example - unlicensed
 
 For scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans, the `Unlicensed` type of entitlement is used. This type is used to enable custom licensing for an existing customer, or *side-by-side support*, for transactability-enabled apps on AppSource. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
@@ -98,7 +113,7 @@ entitlement BC_Unlicensed
 
 In the following code example, you can see how to check for entitlements in code.
 
-### Entitlement example - testing for entitlements in code
+#### Entitlement example - testing for entitlements in code
 
 ```al
 permissionset 50101 MyFreeLicensePermission
@@ -164,7 +179,7 @@ procedure CheckingForEntitlementsUsingPermissions()
 ...
 ```
 
-## Entitlement example - Microsoft Entra group
+### Entitlement example - Microsoft Entra group
 
 This example shows an entitlement where `Type` is `Group`. It supports scenarios where a user needs access to the AppSource app with transact support without buying a developer license. The `id` property is the object ID of the Microsoft Entra group. Learn more in [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
@@ -177,7 +192,7 @@ entitlement BC_Group
 
 ```
 
-## Entitlement example - Microsoft Entra application access
+### Entitlement example - Microsoft Entra application access
 
 An example of an entitlement where `Type` is `Application`. It supports scenarios when a vendor needs access to the AppSource app with transact support and no need to buy a license. The `id` property is the client ID of the Microsoft Entra application. Learn more in [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
