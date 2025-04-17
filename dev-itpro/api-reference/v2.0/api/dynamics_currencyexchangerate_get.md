@@ -57,13 +57,13 @@ Here is an example of the response.
 <!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "id" : "",
-    "currencyCode" : "",
-    "startingDate" : "",
-    "exchangeRateAmount" : "",
-    "relationalCurrencyCode" : "",
-    "relationalExchangeRateAmount" : "",
-    "lastModifiedDateTime" : ""
+    "id": "cfb425a4-8401-ef11-9f8f-6045bde9b6de",
+    "currencyCode": "EUR",
+    "startingDate": "2022-01-01",
+    "exchangeRateAmount": 1,
+    "relationalCurrencyCode": "",
+    "relationalExchangeRateAmount": 0.9952,
+    "lastModifiedDateTime": "2024-04-23T15:18:28.427Z"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
