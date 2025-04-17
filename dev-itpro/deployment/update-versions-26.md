@@ -42,7 +42,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements](system-requirements-business-central-v26.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
-[Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
+[Countries/Regions and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)
