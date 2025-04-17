@@ -52,8 +52,7 @@ Here is an example of the request.
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/fixedAssets({id})
 Content-type: application/json
 {
-    "id" : ,
-    "number" :
+    "blocked": true
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
@@ -66,19 +65,19 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id" : ,
-    "number" : ,
-    "displayName" : ,
-    "fixedAssetLocationCode" : ,
-    "fixedAssetLocationId" : ,
-    "classCode" : ,
-    "subclassCode" : ,
-    "blocked" : ,
-    "serialNumber" : ,
-    "employeeNumber" : ,
-    "employeeId" : ,
-    "underMaintenance" : ,
-    "lastModifiedDateTime" :
+    "id": "4326bf5b-7204-ef11-b3c5-a1596e55036b",
+    "number": "FA000100",
+    "displayName": "Mercedes 300",
+    "fixedAssetLocationCode": "ADM",
+    "fixedAssetLocationId": "c5adcedf-b501-ef11-b3c3-83fe9ccecec3",
+    "classCode": "TANGIBLE",
+    "subclassCode": "VEHICLES",
+    "blocked": true,
+    "serialNumber": "EA 12 394 Q",
+    "employeeNumber": "",
+    "employeeId": "00000000-0000-0000-0000-000000000000",
+    "underMaintenance": false,
+    "lastModifiedDateTime": "2024-04-27T08:46:13.087Z"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED-->
