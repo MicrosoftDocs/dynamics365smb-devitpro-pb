@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0100"
 description: "The 'application' property in the app.json file must be specified on apps targeting the AppSource marketplace."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -54,7 +54,7 @@ The `app.json` file of the extension:
 }
 ```
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

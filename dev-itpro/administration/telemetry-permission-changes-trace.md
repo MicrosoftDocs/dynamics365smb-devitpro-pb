@@ -494,7 +494,8 @@ traces
 
 
 
-## See also
+## Related information
 
+[Audit permission administration events in Microsoft Purview](../auditing/audit-events-in-purview.md#administered-user-activities)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

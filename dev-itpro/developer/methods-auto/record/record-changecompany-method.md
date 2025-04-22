@@ -2,7 +2,7 @@
 title: "Record.ChangeCompany([Text]) Method"
 description: "Redirects references to table data from one company to another."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -74,7 +74,7 @@ codeunit 50112 ChangeCompany
 }
 ```  
 
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

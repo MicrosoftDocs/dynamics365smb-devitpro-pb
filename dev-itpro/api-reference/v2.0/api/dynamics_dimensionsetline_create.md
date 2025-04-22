@@ -37,14 +37,12 @@ POST businesscentralPrefix/companies({id})/purchaseOrderLines({id})/dimensionSet
 
 ```
 
-
 ## Request headers
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **dimensionSetLine**, the **dimensionSetLine** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **dimensionSetLines** object.
@@ -96,7 +94,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [dimensionsetline](../resources/dynamics_dimensionsetline.md)    
 [Get dimensionsetline](dynamics_dimensionsetline_Get.md)    

@@ -23,6 +23,7 @@ Constant value '{0}' is outside the range for a Time.
 
 The syntax for defining Time format is `hhmmssT`, where `T` is a mandatory letter. For example, `134530T`, read as 13:45:30 or 1:45:30pm.
 
-## See Also  
+## Related information  
+
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

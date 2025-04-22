@@ -56,7 +56,7 @@ Use subgroups within a group when the total number of actions in a group is more
 |-| B) The page that opens has the same information regardless of current record/row in the page. | Action should be placed in the common Navigate action group. |
 | Is an action that runs a report, either directly or via an intermediate dialog page (request page). | (no variation) | Place report actions in the common action group Reports. |
 
-## See also
+## Related information
 
 [Actions in AL](devenv-actions-overview.md)  
 [Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  

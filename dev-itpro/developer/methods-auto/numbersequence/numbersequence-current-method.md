@@ -2,7 +2,7 @@
 title: "NumberSequence.Current(Text [, Boolean]) Method"
 description: "Gets the current value from the number sequence, without doing any increment."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -45,7 +45,7 @@ The following example gets the current value for the number sequence `MyNumberSe
 number := NumberSequence.Current('MyNumberSequence', false);
 ```
 
-## See Also
+## Related information
 [NumberSequence Data Type](numbersequence-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

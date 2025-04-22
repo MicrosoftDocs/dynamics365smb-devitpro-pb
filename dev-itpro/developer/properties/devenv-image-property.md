@@ -1,8 +1,8 @@
 ---
-title: "Image Property"
+title: "Image property"
 description: "Specifies the icon that you want to associate with a field in a CueGroup control."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -38,7 +38,7 @@ On **RoleCenter** type pages, the image property doesn't apply to actions that a
 
 [!INCLUDE[available_icons](../includes/include-available-icons.md)]
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Available icons](https://aka.ms/bcicons)   

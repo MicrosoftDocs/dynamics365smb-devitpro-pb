@@ -1,8 +1,8 @@
 ---
-title: "PreserveWhiteSpace Property"
+title: "PreserveWhiteSpace property"
 description: "Determines whether white space should be preserved in documents that are imported through an XmlPort."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -35,6 +35,6 @@ When this property is set to Yes, no normalizations are performed.
 PreserveWhiteSpace = true;
 ```
  
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

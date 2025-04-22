@@ -1,8 +1,8 @@
 ---
-title: "MinValue Property"
+title: "MinValue property"
 description: "Sets the minimum numeric value for a field."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets the minimum numeric value for a field.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -40,7 +40,7 @@ MinValue = 0;
 
 The field setting is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table directly. If a field is updated through application code, then the **MinValue** property is not validated.  
   
-## See Also  
+## Related information  
 
 [MaxValue Property](devenv-maxvalue-property.md)   
 [NotBlank Property](devenv-notblank-property.md)   

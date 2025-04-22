@@ -10,6 +10,6 @@ author: blrobl
 
 You might experience connect issues when trying to sign in to the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. The [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] only runs with https. Check if your device has the correct date set; this date is validated against the certificate. For more information, see [Using HTTPS and Certificates](devenv-Using-HTTPS-and-Certificates-mobile-app.md).  
   
-## See also
+## Related information
 
 [Troubleshooting the Business Central Mobile App](devenv-Troubleshooting-the-Mobile-App.md)

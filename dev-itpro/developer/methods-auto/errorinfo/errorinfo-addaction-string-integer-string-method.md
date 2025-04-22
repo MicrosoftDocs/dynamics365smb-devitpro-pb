@@ -2,7 +2,7 @@
 title: "ErrorInfo.AddAction(Text, Integer, Text) Method"
 description: "Specifies an action for the error."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -85,7 +85,7 @@ In the following example from the [!INCLUDE[prod_short](../../../includes/prod_s
 
 To see a different code example with an error dialog with a Fix-it action, see [Error messages with Show-it actions](../../devenv-actionable-errors.md#show-it-actions).
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Actionable errors](../../devenv-actionable-errors.md)  

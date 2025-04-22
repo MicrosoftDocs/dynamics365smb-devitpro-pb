@@ -2,7 +2,7 @@
 title: "FilterPageBuilder.AddRecordRef(Text, RecordRef) Method"
 description: "Adds a filter control for a table to a filter page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -68,7 +68,7 @@ begin
 end; 
 ```  
   
-## See Also
+## Related information
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
 [Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
 [Get Started with AL](../../devenv-get-started.md)  

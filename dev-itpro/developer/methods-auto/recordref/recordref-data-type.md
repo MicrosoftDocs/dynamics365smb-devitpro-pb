@@ -1,8 +1,8 @@
 ---
-title: "RecordRef Data Type"
+title: "RecordRef data type"
 description: "References a record in a table."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef Data Type
+# RecordRef Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 References a record in a table.
@@ -87,8 +87,9 @@ The following methods are available on instances of the RecordRef data type.
 |[RecordId()](recordref-recordid-method.md)|Gets the RecordID of the record that is currently selected in the table. If no table is selected, an error is generated.|
 |[RecordLevelLocking()](recordref-recordlevellocking-method.md)|Gets a value indicating whether record level locking is enabled.|
 |[Rename(Any [, Any,...])](recordref-rename-method.md)|Changes the value of a primary key in a table.|
-|[Reset()](recordref-reset-method.md)|Removes all filters, including any special filters set by the MarkedOnly method (Record), changes fields select for loading back to all, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition.|
+|[Reset()](recordref-reset-method.md)|Removes all filters, including any special filters set by the MarkedOnly method (Record), changes fields select for loading back to all, sets the read isolation level to the default value, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition.|
 |[SecurityFiltering([SecurityFilter])](recordref-securityfiltering-method.md)|Gets or sets how security filters are applied to the RecordRef.|
+|[SetAutoCalcFields([Integer,...])](recordref-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the RecordRef is retrieved from the database.|
 |[SetLoadFields([Integer,...])](recordref-setloadfields-method.md)|Sets the fields to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.|
 |[SetPermissionFilter()](recordref-setpermissionfilter-method.md)|Applies the user's security filter to the referenced record. The security filter is combined with any other filters that are placed on the record with SetFilter or SetRange. The combined filter will not include any records outside the range of the security filter and this will prevent a runtime permission error from occuring when the record is read. If the permission filter is not set, an error can occur if you attempt to read a record that is outside the range of the user's security filter.|
 |[SetPosition(Text)](recordref-setposition-method.md)|Sets the fields in a primary key on a record to the values specified in the String parameter. The remaining fields are not changed.|
@@ -112,6 +113,6 @@ Use the [Open method](recordref-open-method.md) to use the table number to selec
   
 If one `RecordRef` variable is assigned to another `RecordRef` variable, then they both refer to the same table instance. 
 
-## See also  
+## Related information  
 [Get started with AL](../../devenv-get-started.md)  
 [Developing extensions](../../devenv-dev-overview.md)  

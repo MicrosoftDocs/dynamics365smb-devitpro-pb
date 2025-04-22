@@ -1,8 +1,8 @@
 ---
-title: "TestPermissions System Option"
+title: "TestPermissions system option"
 description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,6 +24,6 @@ Specifies a value that can be used to determine which permission sets are used o
 |Disabled|Setting this value will exclude any change of the permission execution context and all tests will be executed using SUPER.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

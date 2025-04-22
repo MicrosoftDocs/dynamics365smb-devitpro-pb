@@ -1,6 +1,6 @@
 ---
-title: company resource type
-description: A company object in Dynamics 365 Business Central.
+title: (cloudMigration API) company resource type
+description: A company object in the cloudMigration API for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -9,7 +9,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# company resource type
+# (cloudMigration API) company resource type
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
@@ -73,5 +73,5 @@ Here is a JSON representation of the company resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET company](../api/dynamics_company_get.md)

@@ -2,7 +2,7 @@
 title: "PerTenantExtensionCop Error PTE0013"
 description: "Entitlements cannot be defined in an extension because their use is restricted to Microsoft only."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -21,7 +21,7 @@ Entitlements cannot be defined in an extension because their use is restricted t
 ## Remarks
 For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0093](appsourcecop-as0093.md).
 
-## See Also
+## Related information
 [Entitlements and Permissions Sets Overview](../devenv-entitlements-and-permissionsets-overview.md)  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  

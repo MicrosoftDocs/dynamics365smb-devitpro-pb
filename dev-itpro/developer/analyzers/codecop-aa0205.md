@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0205"
 description: "Always initialize a variable before usage."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -93,7 +93,7 @@ Some variables need special initialization, for example, `List` is initialized u
 
 Initialization is possible using evaluate, for, `foreach` statements. If a variable is passed in a method through `var`, the rule considers it initialized in the method.
 
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

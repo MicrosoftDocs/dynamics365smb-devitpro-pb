@@ -18,6 +18,6 @@ Controls of type '{0}' are not allowed in the '{1}' area for pages of type '{2}'
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

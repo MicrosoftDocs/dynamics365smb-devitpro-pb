@@ -84,7 +84,7 @@ As an ISV you can seamlessly license and resell your transactable apps through t
 - ISV resells through CSP: [Cloud Solution Provider - Microsoft commercial marketplace](/partner-center/marketplace/cloud-solution-providers).
 
 
-## See also
+## Related information
 
 [FAQ about the Microsoft commercial marketplace](/partner-center/marketplace/marketplace-faq-publisher-guide)  
 [Entitlement object](devenv-entitlement-object.md)  

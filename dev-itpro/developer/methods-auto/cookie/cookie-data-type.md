@@ -1,8 +1,8 @@
 ---
-title: "Cookie Data Type"
+title: "Cookie data type"
 description: "Provides a data structure to work with Http cookies."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Cookie Data Type
+# Cookie Data type
 > **Version**: _Available or changed with runtime version 13.0._
 
 Provides a data structure to work with Http cookies.
@@ -44,7 +44,7 @@ The following data types have methods that return or use the `Cookie` data type:
 - [HttpRequestMessage.GetCookie method](../httprequestmessage/httprequestmessage-getcookie-method.md)  
 - [HttpRequestMessage.GetCookieNames method](../httprequestmessage/httprequestmessage-getcookienames-method.md)  
 
-## See also
+## Related information
 
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

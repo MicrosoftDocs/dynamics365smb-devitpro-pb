@@ -4,7 +4,7 @@ description: Description of the object ranges used for licensing in Business Cen
 author: SusanneWindfeldPedersen
 ms.topic: conceptual
 ms.author: solsen
-ms.date: 03/01/2024
+ms.date: 07/08/2024
 ms.collection: get-started
 ms.reviewer: solsen
 ---
@@ -43,9 +43,9 @@ Partners can obtain IDs in this range for extensions for [!INCLUDE[prod_short](i
 
 For more information, see [Get Started with Building Apps](readiness/get-started.md).
 
-Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [here](https://go.microsoft.com/fwlink/?LinkId=871590&clcid=0x409).
+Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [here](https://www.microsoft.com/licensing/docs/view/Licensing-Guides).
 
-## See also
+## Related information
 
 [Get started with building apps](readiness/get-started.md)  
 [Get started with AL](devenv-get-started.md)  

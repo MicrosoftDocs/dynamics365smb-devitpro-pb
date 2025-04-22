@@ -2,7 +2,7 @@
 title: "File.Close() Method"
 description: "Closes a file that has been opened by the OPEN method (File)."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -55,7 +55,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 [File Data Type](file-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

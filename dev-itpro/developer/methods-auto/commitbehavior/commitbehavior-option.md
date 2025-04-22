@@ -1,8 +1,8 @@
 ---
-title: "CommitBehavior System Option"
+title: "CommitBehavior system option"
 description: "Specifies whether commit is allowed within the scope of the method."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -22,6 +22,6 @@ Specifies whether commit is allowed within the scope of the method.
 |Error|Throw an error when a commit is attempted within the scope of this method.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

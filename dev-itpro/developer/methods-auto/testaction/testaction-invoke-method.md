@@ -2,7 +2,7 @@
 title: "TestAction.Invoke() Method"
 description: "Invokes an action on a test page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -47,7 +47,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [TestAction Data Type](testaction-data-type.md)  
 [No Method](../testpage/testpage-no-method.md)
 [Get Started with AL](../../devenv-get-started.md)  

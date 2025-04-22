@@ -1,8 +1,8 @@
 ---
-title: "OnBeforeInsertRecord (Xml Port Table Element) Trigger"
+title: "OnBeforeInsertRecord (Xml Port Table Element) trigger"
 description: "Runs after a record has been loaded and before it is inserted into a database table."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnBeforeInsertRecord (Xml Port Table Element) Trigger
+# OnBeforeInsertRecord (Xml Port Table Element) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs after a record has been loaded and before it is inserted into a database table.
@@ -34,6 +34,6 @@ end;
   
  If the [AutoSave Property](../../properties/devenv-autosave-property.md) is **false**, then although the record is not inserted automatically, the OnBeforeInsertRecord trigger is still called before the insertion would have occurred.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -21,6 +21,6 @@ The profile name '{0}' is not valid because it contains leading or trailing spac
 The name for a progile must not contain leading or trailing spaces.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

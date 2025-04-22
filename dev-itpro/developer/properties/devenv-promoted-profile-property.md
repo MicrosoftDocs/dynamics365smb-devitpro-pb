@@ -37,7 +37,7 @@ profile MyProfile
 } 
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Promoted (Actions) Property](devenv-promoted-action-property.md) 

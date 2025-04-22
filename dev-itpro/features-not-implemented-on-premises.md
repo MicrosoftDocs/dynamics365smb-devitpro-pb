@@ -55,7 +55,7 @@ The following features aren't intended for use in on-premises deployments. There
 |Connect to Shopify|Online tenants can connect their Shopify store (or stores) with Business Central and maximize their business productivity. The Shopify connector is not supported for on-premises deployments. For more information, see [Get Started with the Shopify Connector](/dynamics365/business-central/shopify/get-started).|
 |Copilot|Copilot in Business Central is available exclusively for Business Central online. Copilot is the AI-powered assistant that helps people across your organization unlock their creativity and automate tedious tasks. For example, see [Marketing text suggestions](/dynamics365/business-central/ai-overview) and [Bank account reconciliation assist](/dynamics365/business-central/bank-reconciliation-with-copilot).|
 
-## See Also
+## Related information
 
 [System Requirements](deployment/system-requirement-business-central.md)  
 [How to: Create a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/toc.json)  

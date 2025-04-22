@@ -6,6 +6,7 @@ ms.topic: conceptual
 ms.date: 04/26/2024
 ms.author: solsen
 author: KennieNP
+ms.custom: evergreen
 ms.collection: get-started
 ---
 
@@ -50,7 +51,7 @@ A valid use of the relational operators is, for example, text compared with text
 |Text||||||||Boolean|Boolean|  
 |Code||||||||Boolean|Boolean|  
 
-## See also
+## Related information
 
 [AL operators](devenv-al-operators.md)  
 [Arithmetic operators](devenv-al-arithmetic-operators.md)  

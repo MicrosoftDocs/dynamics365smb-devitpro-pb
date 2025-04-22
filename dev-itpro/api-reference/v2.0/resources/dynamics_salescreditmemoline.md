@@ -116,7 +116,7 @@ Here is a JSON representation of the salesCreditMemoLine resource.
 
 
 
-## See Also
+## Related information
 [GET salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Get.md)  
 [DELETE salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Delete.md)  
 [POST salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Create.md)  

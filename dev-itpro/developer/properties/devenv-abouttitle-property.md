@@ -1,8 +1,8 @@
 ---
-title: "AboutTitle Property"
+title: "AboutTitle property"
 description: "Sets the large-font title that appears in a teaching tip in the UI."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -53,7 +53,7 @@ Sets the large-font title that appears in a teaching tip in the UI.
 AboutTitle = 'About sales invoices'; 
 ```
 
-## See Also  
+## Related information  
 [Teaching tips and in-app tours for onboarding users](../../administration/onboarding-teaching-tips-tours.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

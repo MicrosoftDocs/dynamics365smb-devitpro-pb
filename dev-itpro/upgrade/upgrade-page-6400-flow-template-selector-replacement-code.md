@@ -199,6 +199,6 @@ page 6400 "Flow Template Selector"
 }
 ```
 
-## See Also
+## Related information
 
 [Code Conversion from C/AL to AL](devenv-code-conversion.md)  

@@ -1,8 +1,8 @@
 ---
-title: "NotBlank Property"
+title: "NotBlank property"
 description: "Sets a value that specifies whether users must enter a value in the selected field or text box."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets a value that specifies whether users must enter a value in the selected field or text box.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -40,7 +40,7 @@ If the **NotBlank** property is used on other fields than primary fields, the be
   
 - If the field has been entered, and the user tries to enter a blank value, a validation error occurs.  
   
-## See Also
+## Related information
 
 [MinValue Property](devenv-minvalue-property.md)  
 [MaxValue Property](devenv-maxvalue-property.md)  

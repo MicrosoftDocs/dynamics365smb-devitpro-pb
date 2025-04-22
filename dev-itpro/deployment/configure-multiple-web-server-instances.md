@@ -1,19 +1,19 @@
 ---
 title: Set Up Multiple Business Central Web Server Instances using PowerShell
-description: Learn how to use Windows PowerShell to set up more than one web server instance on IIS for the Business Central web client.
+description: Learn how to use Windows PowerShell to set up more than one web server instance on Internet Information Service (IIS) for the Business Central web client.
 author: jswymer
 ms.author: jswymer
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 01/03/2023
+ms.date: 10/28/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
 ---
 # Setting Up Multiple [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell
 
-Although you can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] and create a single web server instance in IIS for client connection, there may be scenarios when you want to set up multiple instances. For example, you could set up a separate [!INCLUDE[webserver](../developer/includes/webserver.md)] instance for the different companies of a business. For this scenario, you can use the [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets, which are outlined in the following table.
+Although you can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] and create a single web server instance in IIS for client connection, there might be scenarios when you want to set up multiple instances. For example, you could set up a separate [!INCLUDE[webserver](../developer/includes/webserver.md)] instance for the different companies of a business. For this scenario, you can use the [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets, which are outlined in the following table.
 
 |Cmdlet|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|
 |------------|---------------------------------------|
@@ -30,7 +30,7 @@ The module is installed with the [!INCLUDE[server](../developer/includes/server.
 
 There are different ways to launch this module and start using the cmdlets:
 
-- If you are working on the computer where the [!INCLUDE[server](../developer/includes/server.md)] was installed, run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+- If you're working on the computer where the [!INCLUDE[server](../developer/includes/server.md)] was installed, run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
   For more information, see [Business Central PowerShell Cmdlets](/powershell/business-central/overview).
 
@@ -46,7 +46,7 @@ There are different ways to launch this module and start using the cmdlets:
   Import-Module -Name "C:\Program Files\Microsoft Dynamics 365 Business Central\NNN\Service\NAVWebClientManagement.psm1"
   ```
 
-  Replace `NNN` with the Business Central Server instance folder name, like 240. For more information, see [the Windows PowerShell docs](/powershell/scripting/overview).
+  Replace `NNN` with the Business Central Server instance folder name, like 240. Learn more about cmdlets at [the Windows PowerShell docs](/powershell/scripting/overview).
 
 ## Creating [!INCLUDE[webserver](../developer/includes/webserver.md)] instances
 
@@ -56,7 +56,7 @@ To create a new web server instance, you need access to the **WebPublish** folde
 
 - This folder is available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\NNN\Web Client\WebPublish". NNN indicates the Business Central version like 240 or 230.
 
-- If you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], this folder has the path "[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client\WebPublish".
+- This folder has the path "[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client\WebPublish" if you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].
 
 You can use either of these locations or you can copy the folder to more convenient location on your computer or network.
 
@@ -66,7 +66,7 @@ When you create a new [!INCLUDE[webserver](../developer/includes/webserver.md)] 
 
 #### RootSite
 
-A *RootSite* instance is a root-level web site that is complete with content files for serving the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. It is configured with its own set of bindings for accessing the site, such as protocol (http or https) and communication port. The structure in IIS looks like this:
+A *RootSite* instance is a root-level web site that is complete with content files for serving the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. It's configured with its own set of bindings for accessing the site, such as protocol (http or https) and communication port. The structure in IIS looks like this:
 
 ```
 - Sites
@@ -81,11 +81,11 @@ The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] URL for the RootSit
 
 `https://[WebserverComputerName]:[port]`
 
-For example: `https://localhost:8080`. 
+For example: `https://localhost:8080`.
 
 #### SubSite
 
-A *SubSite* instance is a web application that is under a container web site. The container web site is configured with a set of bindings, but the site itself has no content files. The content files are contained in the application (SubSite). The SubSite inherits the bindings from the container web site. This is the deployment type that is created when you install [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] in the Setup wizard. Using the New-NAVWebServerInstance cmdlet, you can add multiple SubSite instances in the container web site. The structure in IIS for two instances looks like this in IIS:
+A *SubSite* instance is a web application that is under a container web site. The container web site is configured with a set of bindings, but the site itself has no content files. The content files are contained in the application (SubSite). The SubSite inherits the bindings from the container web site. This deployment is the deployment type that is created when you install [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] in the Setup wizard. Using the New-NAVWebServerInstance cmdlet, you can add multiple SubSite instances in the container web site. The structure in IIS for two instances looks like this in IIS:
 
 ```
 - Sites
@@ -102,7 +102,7 @@ A *SubSite* instance is a web application that is under a container web site. Th
       ...
 ```
 
-The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] URL of a SubSite instance is generally longer than a RootSite because it also contains the application's alias (or virtual path) for the instance, which you define. The URL for a SubSite instance has the format:
+The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] URL of a SubSite instance is longer than a RootSite because it also contains the application's alias (or virtual path) for the instance, which you define. The URL for a SubSite instance has the format:
 
 `https://[WebserverComputerName]:[port]/[WebServerInstance]`
 
@@ -114,35 +114,36 @@ At the command prompt, run the New-NAVWebServerInstance cmdlet. The following ar
 
 RootSite example:
 
-```  
+```powershell  
 New-NAVWebServerInstance -WebServerInstance MyBCWebsite -Server MyBCServer -ServerInstance MyBCServerInstance -SiteDeploymentType RootSite -WebSitePort 8081 -PublishFolder "C:\Web Client\WebPublish"
 ```  
 
 SubSite example:
 
-```  
+```powershell  
 New-NAVWebServerInstance -WebServerInstance MyWebApp -Server MyBCServer -ServerInstance MyBCServerInstance -SiteDeploymentType Subsite -ContainerSiteName MySiteContainer -WebSitePort 8081 -PublishFolder "C:\WebClient\WebPublish"
 ```  
 
--  Susbtitute *MyBCWebsite* with the name that you want to give the web application in IIS for the web server instance. If you are creating a SubSite deployment type, this name will become part of the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] application, for example, https://MyWebServer:8081/MyWebApp.  
+- Substitute *MyBCWebsite* with the name that you want to give the web application in IIS for the web server instance. If you're creating a SubSite deployment type, this name becomes part of the URL for opening the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] application, for example, `https://MyWebServer:8081/MyWebApp`.  
   
-- Susbtitute *MyBCServer* to the name of the computer that is running the [!INCLUDE[server](../developer/includes/server.md)] to which you want to connect.  
+- Substitute *MyBCServer* to the name of the computer that is running the [!INCLUDE[server](../developer/includes/server.md)] to which you want to connect.  
   
-- Susbtitute *MyBCServerInstance* with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance to use.
+- Substitute *MyBCServerInstance* with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance to use.
 
-- Substitute *MySiteContainer* with name of the container web site under which you want to add the instance. If you specify a name that does not exist, then a new container web site will be created, which contains the new web server instance.
+- Substitute *MySiteContainer* with name of the container web site under which you want to add the instance. If you specify a name that doesn't exist, a new container web site containing the new web server instance is created.
 
-- Susbtitute *8081* with the port number that you want to bind the instance to. If you do not specify a port number, then port 80 is used. 
-    
-- Substitute *C:\WebClient\WebPublish* with the path to your WebPublish folder. By default, the cmdlet looks in the'[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client' folder. So if you are working on a computer where the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] are installed, you do not have to set this parameter.
+- Substitute *8081* with the port number that you want to bind the instance to. If you don't specify a port number, then port 80 is used. 
+
+- Substitute *C:\WebClient\WebPublish* with the path to your WebPublish folder. By default, the cmdlet uses in the '[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client' folder. So if you omit this parameter, make sure that default folder path includes the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] version that matches the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 > [!NOTE]  
->  This command only sets the required parameters of the New-NAVWebServerInstance cmdlet. The cmdlet has several other parameters that can use to configure the web server instance. For more information about the syntax and parameters, see [New-NAVWebServerInstance](/powershell/module/navwebclientmanagement/New-NAVWebServerInstance).  
+>  This command only sets the required parameters of the New-NAVWebServerInstance cmdlet. The cmdlet has several other parameters that can use to configure the web server instance. Learn more at [New-NAVWebServerInstance](/powershell/module/navwebclientmanagement/New-NAVWebServerInstance).  
 
 ## Modifying a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance
 
-After you create the web server instance, if you want to change its configuration, you can use the Set-NAVWebServerInstanceConfiguration cmdlet. Or, you can modify the configuration file (navsettings.json) of the instance directly. For more information, see [Configuring Web Server Instances](../administration/configure-web-server.md).  
+After you create the web server instance, if you want to change its configuration, you can use the Set-NAVWebServerInstanceConfiguration cmdlet. Or, you can modify the configuration file (navsettings.json) of the instance directly. Learn more in [Configuring Web Server Instances](../administration/configure-web-server.md).  
 
-## See Also  
-[Business Central Web Server Overview](../deployment/web-server-overview.md)     
+## Related information
+
+[Business Central Web Server Overview](../deployment/web-server-overview.md)  
 [Configuring Web Server Instances](../administration/configure-web-server.md)

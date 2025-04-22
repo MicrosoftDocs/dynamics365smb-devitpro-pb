@@ -268,7 +268,7 @@ page 6401 "Flow Selector"
 }
 ```
 
-## See Also
+## Related information
 
 [Code Conversion from C/AL to AL](devenv-code-conversion.md)  
 

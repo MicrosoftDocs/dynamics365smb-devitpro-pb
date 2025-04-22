@@ -4,7 +4,7 @@ description: A journal line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -94,7 +94,7 @@ Here is a JSON representation of the journalLine resource.
 
 
 
-## See Also
+## Related information
 [GET journalLine](../api/dynamics_journalLine_Get.md)  
 [DELETE journalLine](../api/dynamics_journalLine_Delete.md)  
 [POST journalLine](../api/dynamics_journalLine_Create.md)  

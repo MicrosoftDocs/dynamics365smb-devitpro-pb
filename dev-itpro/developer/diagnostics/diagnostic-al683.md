@@ -18,6 +18,6 @@ The permissionset '{0}' belongs to a different module and cannot be used when de
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

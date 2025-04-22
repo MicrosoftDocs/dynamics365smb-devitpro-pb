@@ -44,7 +44,7 @@ The receiving extension will contain the table and fields that you want to move.
 
 4. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
 
-    For purposes of the example, the ID is `11111111-aaaa-2222-bbbb-333333333333`.
+    For purposes of the example, the ID is `00001111-aaaa-2222-bbbb-3333cccc4444`.
 
 5. Compile the extension package.
 
@@ -56,7 +56,7 @@ The receiving extension will contain the table and fields that you want to move.
     { 
     "apprules": [ 
         { 
-            "id": "11111111-aaaa-2222-bbbb-333333333333"
+            "id": "00001111-aaaa-2222-bbbb-3333cccc4444"
         } 
     ] 
     } 
@@ -115,7 +115,7 @@ The receiving extension will contain the table and fields that you want to move.
 
     This step basically installs the new extension version. You run a data upgrade because an earlier version has been installed and is still published.
 
-## See Also
+## Related information
 
 [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md)  
 [Moving Tables and Fields to Extension Up the Dependency Graph](devenv-migrate-table-fields-up.md)  

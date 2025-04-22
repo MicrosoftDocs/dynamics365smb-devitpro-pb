@@ -2,7 +2,7 @@
 title: "Variant.IsTextConstant() Method"
 description: "Indicates whether an AL variant contains a Text constant."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -42,8 +42,8 @@ An instance of the [Variant](variant-data-type.md) data type.
 var
     MyVariant: Variant;
     varResult: Boolean;
-    Text000: Label 'This is some text.";
-    Text001: Label 'DOes the variant contain a text constant? %1.';
+    Text000: Label 'This is some text.';
+    Text001: Label 'Does the variant contain a text constant? %1.';
 begin
     MyVariant := Text000;  
     varResult := MyVariant.IsTextConstant;  
@@ -52,7 +52,7 @@ begin
 end;
 ```  
 
-## See Also
+## Related information
 [Variant Data Type](variant-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -44,7 +44,7 @@ All incoming calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)
 
 For more information, see [Web service telemetry](web-service-telemetry.md)
 
-## See also
+## Related information
 
 [Web Services Overview](web-services.md)  
 [Web Services Best Practices](Web-Services-Best-Practices.md)  

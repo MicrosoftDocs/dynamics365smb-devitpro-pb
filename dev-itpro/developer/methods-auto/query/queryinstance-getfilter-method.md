@@ -2,7 +2,7 @@
 title: "Query.GetFilter(Any) Method"
 description: "Returns the filters that are set on the field of a specified column in the query."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -96,7 +96,7 @@ end;
   
  **The filter is: Quantity > 10**
 
-## See Also
+## Related information
 [Query Data Type](query-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

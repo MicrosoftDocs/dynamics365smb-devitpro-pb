@@ -144,7 +144,7 @@ For easier troubleshooting, we recommend exporting the logs to a CSV file, using
 It's important to always review the logs before submitting any issues to Microsoft. When reporting issues, attach the relevant logs in TXT or CSV format, don't use screenshots. 
  
 
-## See Also
+## Related information
 
 [[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md)  
 [Licensing in Dynamics 365 Business Central](licensing.md)  

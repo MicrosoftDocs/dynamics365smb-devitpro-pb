@@ -18,6 +18,6 @@ The property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

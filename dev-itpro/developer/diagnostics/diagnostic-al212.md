@@ -21,6 +21,6 @@ An area of type '{0}' is already defined.
 There are multiple areas of the same type defined in the same object.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -332,7 +332,7 @@ traces
 , diagnosticCode = customDimensions.diagnosticCode
 ```
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

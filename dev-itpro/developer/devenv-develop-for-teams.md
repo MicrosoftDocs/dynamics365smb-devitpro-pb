@@ -90,7 +90,7 @@ For more information, go to [Create Business Central tabs for Teams](devenv-deve
 
 Developing for Teams integration is similar to other development activities in [!INCLUDE [prod_short](includes/prod_short.md)]. It requires Visual Studio Code, installed with the AL language extension, and knowledge of the AL language. However, because the [!INCLUDE [prod_short](includes/prod_short.md)] app for Teams only supports [!INCLUDE [prod_short](includes/prod_short.md)] online, you must deploy your extensions to an online sandbox to test the implementation. The sandbox must also be deployed to a Microsoft Entra tenant that has access to Microsoft Teams through one of the supported Microsoft 365 plans. For more information about sandboxes, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
 
-## See Also
+## Related information
 [FAQ for Teams Integration](devenv-dev-faq-teams.md)  
 [Field Groups](devenv-field-groups.md)  
 [Designing List Pages](devenv-designing-list-pages.md)  

@@ -18,6 +18,6 @@ The guid number '{0}' does not match the expected pattern: "^[0-9a-fA-F]{{8}}-[0
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

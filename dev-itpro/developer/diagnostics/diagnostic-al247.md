@@ -21,6 +21,6 @@ The target {0} '{1}' for the extension object is not found.
 The target for an extension object is not found.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

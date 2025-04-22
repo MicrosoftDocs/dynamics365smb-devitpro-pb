@@ -1,8 +1,8 @@
 ---
-title: "PdfFontEmbedding Property"
+title: "PdfFontEmbedding property"
 description: "Specifies whether fonts are embedded in PDF files that are generated for reports."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Specifies whether fonts are embedded in PDF files that are generated for reports
 ## Applies to
 -   Report
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -29,6 +29,6 @@ Specifies whether fonts are embedded in PDF files that are generated for reports
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -1,8 +1,8 @@
 ---
-title: "LinkedObject Property"
+title: "LinkedObject property"
 description: "Specifies a link to SQL Server objects."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,6 +34,6 @@ LinkedObject = true;
 
 When you set the LinkedObject property to **true**, the [LinkedInTransaction Property](devenv-linkedintransaction-property.md) becomes available.  
   
-## See Also
+## Related information
 
 [Table Properties](devenv-table-properties.md)

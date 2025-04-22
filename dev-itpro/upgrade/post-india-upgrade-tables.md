@@ -6,7 +6,7 @@ ms.topic: article
 ms.devlang: al
 ms.search.keywords: India, local, IN, English
 ms.date: 09/01/2021
-ms.author: v-debapd
+ms.author: jswymer
 ms.reviewer: jswymer
 ---
 # Publish, Synchronize and Install the ‘IndiaUpgradeTables’ extension
@@ -110,6 +110,6 @@ ms.reviewer: jswymer
 13.	Delete data - After the completion of ‘Start Data Migration’ activity, run the ‘Delete upgrade table data for each company. This will clean the data from the temporary tables created for migration purpose.
 
 
-## See Also 
+## Related information 
 [Upgrading to Business Central](Upgrading-to-business-central.md)
  

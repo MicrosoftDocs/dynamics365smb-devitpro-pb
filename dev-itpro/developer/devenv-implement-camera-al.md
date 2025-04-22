@@ -1,11 +1,15 @@
 ---
-title: "Implementing the Camera in AL"
+title: Implementing the Camera in AL
+description: Learn about how to implement the camera capability on a page in AL.
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: blrobl
+ms.author: brobledodiaz
+ms.reviewer: solsen
 ---
 
-# Implementing the Camera in AL
+# Implementing the camera in AL
+
 You can access the camera of a device from the [!INCLUDE[webclient](includes/webclient.md)] in the browser and from the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)]. This allows the user to take pictures and handle them directly from the same device, and in that way, improve accuracy of capturing data closest to the source, and reduce end-to-end time to perform tasks. 
 
 You can also add access to the camera to a specific page from the [!INCLUDE[d365_dev_short_md](includes/d365_dev_short_md.md)]. For a [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] existing implementation of this, see the `Picture` factbox on the `Item Card`, which lets you take a picture of a specific item and store it together with the item.  
@@ -148,7 +152,7 @@ dotnet
 
 For information about troubleshooting access to camera, see [Troubleshooting: Camera and Location](/dynamics365/business-central/ui-troubleshooting-camera-location).
 
-## See Also  
+## Related information  
 
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
 [Implementing Location in AL](devenv-implement-location-al.md)  

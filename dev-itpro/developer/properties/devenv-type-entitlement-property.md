@@ -66,7 +66,7 @@ entitlement MyEntitlement
 }
 ```
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Entitlement object](../devenv-entitlement-object.md)  

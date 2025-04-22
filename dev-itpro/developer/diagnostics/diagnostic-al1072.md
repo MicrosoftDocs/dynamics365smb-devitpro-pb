@@ -18,6 +18,6 @@ The name for the preprocessing symbol is not valid; '{0}' is not a valid identif
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

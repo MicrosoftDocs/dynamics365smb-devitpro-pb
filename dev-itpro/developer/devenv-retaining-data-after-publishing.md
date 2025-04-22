@@ -65,7 +65,7 @@ If you, during development, for example, discover that you no longer want field 
 
     Alternatively, if this is a development scenario, you can synchronize the extension using the ForceSync or Recreate mode.
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Upgrading Extensions](devenv-upgrading-extensions.md)  

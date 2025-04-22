@@ -47,7 +47,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies
 Here is an example of the response. 
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {
@@ -64,7 +64,7 @@ Here is an example of the response.
 }
 ```
 
+## Related information
 
-## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [company](../resources/dynamics_company.md)    

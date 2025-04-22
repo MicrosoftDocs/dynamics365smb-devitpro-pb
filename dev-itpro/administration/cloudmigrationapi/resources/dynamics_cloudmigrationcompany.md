@@ -1,5 +1,5 @@
 ---
-title: cloudMigrationCompany resource type
+title: (cloudMigration API) cloudMigrationCompany resource type
 description: A cloud migration company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -9,7 +9,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# cloudMigrationCompany resource type
+# (cloudMigration API) cloudMigrationCompany resource type
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
@@ -73,6 +73,6 @@ Here is a JSON representation of the cloudMigrationCompany resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET cloudMigrationCompany](../api/dynamics_cloudmigrationcompany_get.md)  
 [PATCH cloudMigrationCompany](../api/dynamics_cloudmigrationcompany_update.md)

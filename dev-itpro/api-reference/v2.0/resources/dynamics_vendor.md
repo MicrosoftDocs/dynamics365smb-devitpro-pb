@@ -40,7 +40,7 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[picture](dynamics_picture.md)|picture |Gets the picture of the vendor.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the vendor.|
 |[agedAccountsPayable](dynamics_agedaccountspayable.md)|agedAccountsPayable |Gets the agedaccountspayable of the vendor.|
-|[contactsInformation](dynamics_contactsinformation.md)|contactsInformation |Gets the contactsinformation of the vendor.|
+|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactsinformation of the vendor.|
 |[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the vendor.|
 
 ## Properties
@@ -105,7 +105,7 @@ Here is a JSON representation of the vendor resource.
 
 
 
-## See Also
+## Related information
 [GET vendor](../api/dynamics_vendor_Get.md)  
 [DELETE vendor](../api/dynamics_vendor_Delete.md)  
 [POST vendor](../api/dynamics_vendor_Create.md)  

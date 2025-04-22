@@ -79,7 +79,7 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [vendor](../resources/dynamics_vendor.md)    
 [Delete vendor](dynamics_vendor_Delete.md)    

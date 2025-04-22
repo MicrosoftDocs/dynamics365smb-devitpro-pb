@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0106"
 description: "A variable that belongs to the public API cannot be removed, because it will break dependent extensions referencing this variable."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ A variable belonging to the public API cannot be removed.
 A variable that belongs to the public API cannot be removed, because it will break dependent extensions referencing this variable.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

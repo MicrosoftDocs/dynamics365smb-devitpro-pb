@@ -1,9 +1,9 @@
 ---
 title: AL type conversion in expressions
 description: Description of how AL types can be converted.
-ms.reviewer: 
+ms.reviewer: solsen
 ms.topic: conceptual
-ms.date: 01/15/2024
+ms.date: 02/07/2025
 ms.custom: bap-template
 author: SusanneWindfeldPedersen
 ms.collection: get-started
@@ -25,12 +25,11 @@ Sum := charVar + integerVar;
 
 The last statement involves one or two type conversions. The rightmost statement involves the evaluation of the expression `CharVar + integerVar (char + integer)`. In order to evaluate this expression, the first operand (CharVar) must be converted from char to integer. The addition operator then returns an integer result.
 
-If the type of the leftmost variable is declared as, for example, decimal, the result must be converted from integer to decimal before its value can be assigned to `Sum`. For more information, see [Assignment and type conversion](devenv-al-variables.md#assignment-and-type-conversion).
+If the type of the leftmost variable is declared as, for example, decimal, the result must be converted from integer to decimal before its value can be assigned to `Sum`. Learn more in [Assignment and type conversion](devenv-al-variables.md#assignment-and-type-conversion).
 
 The following examples illustrate the type conversions, which can occur when expressions are evaluated. The following guidelines are used:
 
 - When asked to evaluate an expression of mixed data types, if it's possible, the system always converts at least one of the operands to a more general data type.
-
 - The data types in the two main groups, numbers and strings, can be ranked from "most general" to "least general."
 
   :::image type="content" source="../media/al-type-conversion.png" alt-text="Two main groups of data types":::
@@ -81,6 +80,6 @@ When the rightmost subexpression is converted, the expression can be evaluated, 
 text + text = text
 ```
 
-## See also
+## Related information
 
 [AL variables](devenv-al-variables.md#assignment-and-type-conversion)  

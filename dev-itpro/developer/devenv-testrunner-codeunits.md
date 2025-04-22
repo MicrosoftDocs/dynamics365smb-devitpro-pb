@@ -74,5 +74,5 @@ codeunit 50102 TestRunnerCodeunit
 }
 ```
 
-## See Also
+## Related information
 [Testing the Application](devenv-Testing-Application.md)

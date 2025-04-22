@@ -28,7 +28,7 @@ field(2; OptionField; option)
 
 Setting the `OptionMembers` property is necessary to enable the `OptionCaptionML` property. For more information, see [OptionCaptionML Property](devenv-optioncaptionml-property.md).
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Report Object](../devenv-report-object.md)     

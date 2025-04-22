@@ -29,7 +29,6 @@ POST businesscentralPrefix/companies({id})/employees
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **employee**, the **employee** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of an **employees** object.
@@ -110,7 +109,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [employee](../resources/dynamics_employee.md)    
 [Get employee](dynamics_employee_Get.md)    

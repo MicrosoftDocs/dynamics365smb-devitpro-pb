@@ -28,7 +28,7 @@ Use the following table to determine the procedures that you must complete for y
 > [!NOTE]
 > The concept of technical upgrades that you might have been used to in on-premises deployments is not supported in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.
 
-## See Also
+## Related information
 
 [Migrating On-Premises Data to Business Central Online](../administration/migrate-data.md)  
 [Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](upgrading-to-business-central.md)  

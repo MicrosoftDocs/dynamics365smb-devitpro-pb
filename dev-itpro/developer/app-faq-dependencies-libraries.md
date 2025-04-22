@@ -37,7 +37,7 @@ You can also uninstall and reinstall the library/dependency app to have it updat
 ## What are the validation requirements for library apps
 Library apps only get validated technically, but don't go through any type of marketing validation. The technical requirements are described [here](devenv-checklist-submission.md).  
 
-## See also
+## Related information
 
 [FAQ about Managing and Submitting your Business Central Offer](app-faq-offer.md)  
 [FAQ about Updating your Business Central App](app-faq-update.md)  

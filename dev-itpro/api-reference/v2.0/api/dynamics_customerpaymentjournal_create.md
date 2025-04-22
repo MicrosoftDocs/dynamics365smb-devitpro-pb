@@ -28,7 +28,6 @@ POST businesscentralPrefix/companies({id})/customerPaymentJournals({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **customerPaymentJournal**, the **customerPaymentJournal** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **customerPaymentJournals** object.
@@ -47,7 +46,6 @@ POST https://{businesscentralPrefix}/api/v1.0/companies({id})/customerPaymentJou
 Content-type: application/json
 
 {
-    "id": "dc1b6a90-44e3-ea11-bb43-000d3a2feca1",
     "code": "GENERAL",
     "displayName": "GENERAL",
     "balancingAccountId": "00000000-0000-0000-0000-000000000000"
@@ -71,7 +69,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [customerpaymentjournal](../resources/dynamics_customerpaymentjournal.md)    
 [Get customerpaymentjournal](dynamics_customerpaymentjournal_Get.md)    

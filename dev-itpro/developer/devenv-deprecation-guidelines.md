@@ -3,14 +3,14 @@ title: Best Practices for Deprecation of AL Code
 description: Description of best practices and guidelines for deprecating code in the Base App for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 04/30/2024
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: grobyns
 ---
 
 # Best practices for deprecation of AL code
 
-This article provides guidelines that describe how code in the Base App is obsoleted. The article describes some best practices that Microsoft is using for obsoleting code, and is meant as a nonenforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. For more information, see [Directives in AL](directives/devenv-directives-in-al.md).
+This article provides guidelines that describe how code in the Base App is obsoleted. The article describes some best practices that Microsoft is using for obsoleting code, and is meant as a nonenforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. Learn more in [Directives in AL](directives/devenv-directives-in-al.md).
 
 ## Obsoleting code
 
@@ -20,6 +20,7 @@ When we obsolete code, we:
 - Use one of the following preprocessor symbols, where the pattern is `CLEAN<Version>`, such as `CLEAN15`, `CLEAN16`, `CLEAN17`, and `CLEAN18`. 
     > [!NOTE]  
     > These symbols aren't shipped with the product.
+- For tables and fields, we also use `CLEANSCHEMA` in a second phase to delete the SQL schema.
 - The version to use in the symbol matches the `<major>` of the `ObsoleteTag`. For example:
 
     - If a method is to be removed, then we use `#if not`
@@ -56,34 +57,40 @@ When we obsolete code, we:
 
         ```al
 
+        #if not CLEANSCHEMA19
         table 1808 "Aggregated Assisted Setup"
         {
             Access = Internal;
             Caption = 'Aggregated Assisted Setup';
         #if CLEAN16
             ObsoleteState = Removed;
-            ObsoleteTag = '17.0';
+            ObsoleteTag = '19.0';
         #else
             ObsoleteState = Pending;
             ObsoleteTag = '16.0';
         #endif
             ObsoleteReason = 'Data available in Assisted Setup already- extensions also register in the same table.';
+        }
+        #endif
+
         ```        
 
         ```al
+        #if not CLEANSCHEMA20
         field(11701; "Bank Account No."; Text[30])
         {
             Caption = 'Bank Account No.';
             Editable = false;
-        #if CLEAN18
+        #if CLEAN17
             ObsoleteState = Removed;
-            ObsoleteTag = '18.0';
+            ObsoleteTag = '20.0';
         #else
             ObsoleteState = Pending;
             ObsoleteTag = '17.0';
         #endif
             ObsoleteReason = 'Moved to Core Localization Pack for Czech.';
         }
+        #endif
         ```
     - If a table is to be marked as `Temporary`, then we use `#if #else #endif`
 
@@ -102,7 +109,7 @@ When we obsolete code, we:
         #endif
         ```
 
-In order to have the compiler take the new ‘clean’ code path, symbols must be defined. The symbols are defined in the `app.json` file with the following setting. For more information, see [JSON Files](devenv-json-files.md).
+In order to have the compiler take the new ‘clean’ code path, symbols must be defined. The symbols are defined in the `app.json` file with the following setting. Learn more in [JSON files](devenv-json-files.md).
 
 ```al
 "preprocessorSymbols": [ "CLEAN15", "CLEAN16", "CLEAN17", "CLEAN18" ]
@@ -120,12 +127,17 @@ If an action or other code element points to a now removed object, then the guid
   - If code points to an obsoleted method, then use directives to put in the fixed code.
   - If code points to an obsoleted table/field, then use directives to put in the fixed code.
 
-## See also
+## Obsoleting reports
 
+If you plan to deprecate reports in your AppSource apps or per-tenant extensions, you might want to inform other developers and your users before you remove the reports. To learn more, go to [Obsoleting reports](devenv-reports-obsoletion.md).
+
+## Related information
+
+[Obsoleting reports](devenv-reports-obsoletion.md)  
 [AL development environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
 [Microsoft timeline for deprecating code in Business Central](devenv-deprecation-timeline.md)  
 [ObsoleteTag property](properties/devenv-obsoletetag-property.md)  
 [ObsoleteState property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason property](properties/devenv-obsoletereason-property.md)  
-[Obsolete attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute)
+[Obsolete attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute)  

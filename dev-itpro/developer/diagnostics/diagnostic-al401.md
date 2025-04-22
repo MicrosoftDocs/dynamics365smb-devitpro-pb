@@ -21,6 +21,6 @@ Multiple page customizations have been specified for the same page {0} within th
 Only one page customization per page is allowed within a profile.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

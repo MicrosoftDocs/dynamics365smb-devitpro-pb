@@ -105,7 +105,7 @@ If you're using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], yo
 
 After you change these properties by using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], before the changes take effect in the client, you must run **Build Object Search Index** from the **Tools** menu.
 
-## See also
+## Related information
 
 [Adding menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md)  
 [UsageCategory property](properties/devenv-usagecategory-property.md)  

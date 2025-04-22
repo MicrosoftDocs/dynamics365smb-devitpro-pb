@@ -25,7 +25,7 @@ For more information about configuring the [!INCLUDE[server](../developer/includ
 > [!IMPORTANT]
 > We recommend that you do not change the query hint settings from the default values unless you are certain that the change will better suit your scenario.
 
-## See Also
+## Related information
   
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  

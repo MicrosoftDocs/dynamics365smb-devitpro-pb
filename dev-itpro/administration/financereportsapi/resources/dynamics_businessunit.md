@@ -1,6 +1,6 @@
 ---
-title: businessUnit resource type
-description: A business unit object in Dynamics 365 Business Central.
+title: businessUnit resource type (Beta)
+description: A business unit object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -57,5 +57,5 @@ Here is a JSON representation of the businessUnit resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET businessUnit](../api/dynamics_businessunit_get.md)

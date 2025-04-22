@@ -73,7 +73,22 @@
         "security/*.md": "jswymer",
         "upgrade/*.md": "jswymer",
         "webservices/*.md": "jswymer",
-        "whatsnew/*.md": "SusanneWindfeldPedersen"
+        "whatsnew/*.md": "jswymer"
+      },
+      "ms.author": {
+        "administration/*.md": "jswymer",
+        "compliance/*.md": "solsen",
+        "cside/*.md": "jswymer",
+        "deployment/*.md": "jswymer",
+        "developer/**/*.md": "solsen",
+        "developer/*.md": "solsen",
+        "help/*.md": "jswymer",
+        "performance/*.md": "jswymer",
+        "powerplatform/*.md": "solsen",
+        "security/*.md": "jswymer",
+        "upgrade/*.md": "jswymer",
+        "webservices/*.md": "jswymer",
+        "whatsnew/*.md": "jswymer"
       },
       "ms.service": {
         "upgrade/*.md": "dynamics-365-op"

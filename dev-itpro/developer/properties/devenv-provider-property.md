@@ -1,8 +1,8 @@
 ---
-title: "Provider Property"
+title: "Provider property"
 description: "Sets the provider for a FactBox."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -29,7 +29,7 @@ Sets the provider for a FactBox. This property enables you to create a link from
 Provider = PartName;
 ```
 
-## See Also
+## Related information
 
 [Page Object](../devenv-page-object.md)
 [Properties](devenv-properties.md)

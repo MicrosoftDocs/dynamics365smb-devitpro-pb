@@ -556,15 +556,15 @@ The following code snippet is a CustomDimensions example for a successful report
 
 <!--
 
-{"telemetrySchemaVersion":"0.2","extensionVersion":"1.0.0.0","componentVersion":"16.0.11208.0","environmentType":"Production","companyName":"CRONUS International Ltd.","aadTenantId":"common","clientType":"WebClient","component":"Dynamics 365 Business Central Server","extensionName":"ALReportSample","Company name":"CRONUS International Ltd.","alObjectType":"Report","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 50101\r\n AL CallStack: \"Report Layout Selection\"(Page 9652).\"RunReport - OnAction\"(Trigger) line 2 - Base Application by Microsoft","alObjectName":"TestReportMultipleIndentNoDlg","extensionId":"9a5a538b-d041-4042-99c2-3268a8cb827a","alObjectId":"50101"}
+{"telemetrySchemaVersion":"0.2","extensionVersion":"1.0.0.0","componentVersion":"16.0.11208.0","environmentType":"Production","companyName":"CRONUS International Ltd.","aadTenantId":"common","clientType":"WebClient","component":"Dynamics 365 Business Central Server","extensionName":"ALReportSample","Company name":"CRONUS International Ltd.","alObjectType":"Report","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 50101\r\n AL CallStack: \"Report Layout Selection\"(Page 9652).\"RunReport - OnAction\"(Trigger) line 2 - Base Application by Microsoft","alObjectName":"TestReportMultipleIndentNoDlg","extensionId":"aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb","alObjectId":"50101"}
 
 
 
-{"telemetrySchemaVersion":"0.2","componentVersion":"16.0.11059.0","environmentType":"Production","aadTenantId":"common","companyName":"CRONUS International Ltd.","clientType":"WebClient","component":"Dynamics 365 Business Central Server","extensionVersion":"1.0.0.0","extensionName":"ALReportSample","Company name":"CRONUS International Ltd.","alObjectType":"Report","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 50102\r\n AL CallStack: \"Report Layout Selection\"(Page 9652).\"RunReport - OnAction\"(Trigger) line 2 - Base Application by Microsoft","alObjectName":"TestReportMultipleIndentOnOff","extensionId":"9a5a538b-d041-4042-99c2-3268a8cb827a","alObjectId":"50102"}
+{"telemetrySchemaVersion":"0.2","componentVersion":"16.0.11059.0","environmentType":"Production","aadTenantId":"common","companyName":"CRONUS International Ltd.","clientType":"WebClient","component":"Dynamics 365 Business Central Server","extensionVersion":"1.0.0.0","extensionName":"ALReportSample","Company name":"CRONUS International Ltd.","alObjectType":"Report","alStackTrace":"AppObjectType: Report\r\n AppObjectId: 50102\r\n AL CallStack: \"Report Layout Selection\"(Page 9652).\"RunReport - OnAction\"(Trigger) line 2 - Base Application by Microsoft","alObjectName":"TestReportMultipleIndentOnOff","extensionId":"aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb","alObjectId":"50102"}
 -->
 
  
-## See also
+## Related information
 
 [Report performance](../developer/devenv-report-performance.md)   
 [Troubleshooting report errors](../developer/devenv-reports-troubleshooting.md)  

@@ -1,8 +1,8 @@
 ---
-title: "OnAssistEdit (Page Field Extension) Trigger"
+title: "OnAssistEdit (Page Field Extension) trigger"
 description: "Runs in place of the AssistEdit property features that are provided in the application."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAssistEdit (Page Field Extension) Trigger
+# OnAssistEdit (Page Field Extension) trigger
 > **Version**: _Available or changed with runtime version 3.0._
 
 Runs in place of the AssistEdit property features that are provided in the application.
@@ -34,13 +34,12 @@ end;
 
 ## Remarks
 
-The [AssistEdit Property](../../properties/devenv-assistedit-property.md) must be set to **True** to enable the assist-edit capabilities.
+The [AssistEdit Property](../../properties/devenv-assistedit-property.md) must be set to **true** to enable the assist-edit capabilities.
 
-If there is an error in the trigger code, then the page is closed.  
+If there's an error in the trigger code, then the page is closed. You can use this trigger to write to the database.  
 
-You can use this trigger to write to the database.  
+## Related information
 
-## See Also  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAssistEdit (Page Field) Trigger](../pagefield/devenv-onassistedit-pagefield-trigger.md)

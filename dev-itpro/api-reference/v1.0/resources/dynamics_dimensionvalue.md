@@ -52,6 +52,6 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
   
 [Get Dimension Value](../api/dynamics_dimensionvalue_get.md)  

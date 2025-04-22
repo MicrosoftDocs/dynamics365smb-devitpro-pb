@@ -18,6 +18,6 @@ The property '{0}' is not valid for action '{1}' defined in control '{2}' of typ
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

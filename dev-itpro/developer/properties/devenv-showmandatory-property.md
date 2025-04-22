@@ -1,8 +1,8 @@
 ---
-title: "ShowMandatory Property"
+title: "ShowMandatory property"
 description: "Sets a value that specifies whether users must enter a value in the selected field or text box."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -46,7 +46,7 @@ The **ShowMandatory** property controls marking the page field with a red asteri
   
 The **NotBlank** property can be used to mark the UI on primary key fields with a red asterisk and to enforce a validation error. For more information, see [NotBlank Property](devenv-notblank-property.md).  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [NotBlank Property](devenv-notblank-property.md)

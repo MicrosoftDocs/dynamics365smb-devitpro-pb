@@ -2,7 +2,7 @@
 title: "RecordRef.GetPosition([Boolean]) Method"
 description: "Gets a string that contains the primary key of the current record."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -59,7 +59,7 @@ end;
 ```  
   
 
-## See Also
+## Related information
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

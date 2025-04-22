@@ -21,6 +21,6 @@ The language {0} must only be specified one time.
 The same language has been specified multiple times.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

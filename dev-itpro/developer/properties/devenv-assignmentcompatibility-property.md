@@ -1,8 +1,8 @@
 ---
-title: "AssignmentCompatibility Property"
+title: "AssignmentCompatibility property"
 description: "Sets whether an Enum can be assigned to from another Enum type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,5 +34,5 @@ AssignmentCompatibility = true;
 ```
 
 
-## See Also
+## Related information
 [Extensible Enums](../devenv-extensible-enums.md)  

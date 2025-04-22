@@ -6,8 +6,7 @@ ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 03/25/2024
-ms.custom: bap-template
+ms.date: 11/14/2024
 ms.reviewer: solsen
 ---
 
@@ -30,7 +29,7 @@ The `PromptDialog` page type has some specific properties that characterize the 
 |`IsPreview` | The `IsPreview` property adds a specific note in the UI to indicate that the feature is in preview. It's by default set to `false`.|
 |`Image`| To identify and ensure consistency in the UI for a generative AI experience, the `Image` property for the action invoking it, should be set to `Sparkle`. If there are multiple copilot options to choose from in the UI, the `Image` property can be set to `Image = SparkleFilled;` to make a specific action more prominent. To view a list of images, see [Available icons](https://aka.ms/bcicons). |
 
-To find links to the properties related to the `PromptDialog` page type, see the [See also](devenv-page-type-promptdialog.md#see-also) section in this article.
+To find links to the properties related to the `PromptDialog` page type, see the [Related information](devenv-page-type-promptdialog.md#related-information) section in this article.
 
 ## Areas of the PromptDialog page type
 
@@ -48,13 +47,12 @@ Unlike other page types, `PromptDialog` pages can only specify two action areas;
 
 |Action|Description|
 |------|-----------|
-|`SystemActions` | The `SystemActions` area only allow you to define a fixed set of actions called system actions, which are only supported by this page type. These system actions are `Generate`, `Regenerate`, `Attach`, `Ok` and `Cancel`.|
+|`SystemActions` | The `SystemActions` area only allows you to define a fixed set of actions called system actions, which are only supported by this page type. These system actions are `Generate`, `Regenerate`, `Attach`, `Ok` and `Cancel`.|
 |`PromptGuide` | The `PromptGuide` action area represents a list of predefined text prompt "guides", which users can select to use as input to generate content, rather than creating their own prompt from scratch. The prompt guide menu is only rendered in the web client when the `PromptMode` of the `PromptDialog` page is set to `Prompt`.|
 
 The following illustration shows an example of how the `PromptDialog` page with the `Prompt`, `Content`, `SystemActions`, and `PromptGuide` areas is implemented in [!INCLUDE [prod_short](includes/prod_short.md)] for the **Analyze Bank Account Reconciliation** prompt dialog. You identify the prompt guide by the ![Prompt guide icon that opens a prompt guide.](media/prompt-guide-icon.png "The prompt guide icon") icon of a prompt dialog page.
 
 :::image type="content" source="media/promptdialog-analyze-bank.png" alt-text="Analyze bank account prompt dialog":::
-
 
 ## Example
 
@@ -66,7 +64,7 @@ The page is divided into two main areas: `Prompt` and `Content`.
 
 - In the `Prompt` area, the field `ProjectDescriptionField` is bound to the variable `InputProjectDescription` and is a multiline text field where the user can describe the project they want to create with Copilot.
 
-- The `Content` area contains fields that display the job's short description, full details, and the customer's name. The `CustomerNameField` has two triggers: `OnAssistEdit` and `OnValidate`. The `OnAssistEdit` trigger is used to select a customer from the existing customer records. The `OnValidate` trigger is used to validate the customer name and number. There's also a part named `ProposalDetails` which is used to display the structure of the job proposal.
+- The `Content` area contains fields that display the job's short description, full details, and the customer's name. The `CustomerNameField` has two triggers: `OnAssistEdit` and `OnValidate`. The `OnAssistEdit` trigger is used to select a customer from the existing customer records. The `OnValidate` trigger is used to validate the customer name and number. There's also a part named `ProposalDetails`, which is used to display the structure of the job proposal.
 
 The `actions` section defines actions that the user can perform on this page. There are several actions defined under the `PromptGuide` area, such as `OrganizeCampaign`, `FurnishOffice`, `SetUpConferenceRooms`, and `OrganizeWorkshop`. Each action sets the `InputProjectDescription` to a predefined text. 
 
@@ -321,13 +319,15 @@ page 54320 "Copilot Job Proposal"
 }
 ```
 
-To see the `Copilot Job Proposal` code example in a complete implementation, go to [aka.ms/BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al). For more information on building an AI capability, see [Build the copilot capability in AL](ai-build-capability-in-al.md).
+To see the `Copilot Job Proposal` code example in a complete implementation, go to [aka.ms/BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AzureOpenAI/Advanced_SuggestJob/DescribeJob/CopilotJobProposal.Page.al). Learn more about building an AI capability in [Build the copilot capability in AL](ai-build-capability-in-al.md).
+
+Learn more about error handling in [Error handling in prompt dialogs](devenv-page-prompt-error-handling.md).
 
 ## Nudging users with prompt actions
 
-With the floating action bar, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered in a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features. For more information, see [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md).
+With the floating action bar, you can create prompt actions to promote AI capabilities in [!INCLUDE [prod_short](includes/prod_short.md)]. A prompt action is a standard action that is rendered in a floating action bar on your pages, and it nudges users to use relevant Copilot built-in features. Learn more in [Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md).
 
-## See also
+## Related information
 
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page object](devenv-page-object.md)  
@@ -338,4 +338,5 @@ With the floating action bar, you can create prompt actions to promote AI capabi
 [SourceTable property](properties/devenv-sourcetable-property.md)  
 [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md)  
 [Extensible property](properties/devenv-extensible-property.md)  
-[Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md)
+[Prompting using a floating action bar](devenv-page-prompting-floating-actionbar.md)  
+[Error handling in prompt dialogs](devenv-page-prompt-error-handling.md)

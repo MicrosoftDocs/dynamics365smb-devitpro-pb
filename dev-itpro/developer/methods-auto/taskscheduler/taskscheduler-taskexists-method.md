@@ -2,7 +2,7 @@
 title: "TaskScheduler.TaskExists(Guid) Method"
 description: "Checks whether a specific task exists."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,7 +39,7 @@ The unique identifier of the task. The unique identifier is returned by the Crea
 Scheduled tasks are shown in the **Scheduled Tasks** page in the client. The `TaskScheduler.TaskExists` method looks up if the task exists on the page (the implementation is different for the on-premises version compared to the online version of [!INCLUDE[prod_short](../../includes/prod_short.md)]).  
 
 > [!NOTE]  
-> It's also possible to use `ScheduledTask.Get` on a record instance of type `ScheduledTask` to query for existance of a task. This method requires the user to have Read access to the `ScheduledTask` table, whereas the `TaskScheduler.TaskExists` method doesn't require the user to have access to the `ScheduledTask` table.
+> It's also possible to use `ScheduledTask.Get` on a record instance of type `ScheduledTask` to query for existence of a task. This method requires the user to have Read access to the `ScheduledTask` table, whereas the `TaskScheduler.TaskExists` method doesn't require the user to have access to the `ScheduledTask` table.
 
 For more information about the task scheduler, see [Using the Task Scheduler](../../devenv-task-scheduler.md). 
 
@@ -60,7 +60,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Using the Task Scheduler](../../devenv-task-scheduler.md)   
 [Get Started with AL](../../devenv-get-started.md)  

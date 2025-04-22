@@ -55,7 +55,7 @@ Content-type: application/json
 Here is an example of the response. 
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 HTTP/1.1 200 OK
@@ -68,8 +68,8 @@ Content-type: application/json
 }
 ```
 
+## Related information
 
-## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [bankaccount](../resources/dynamics_bankaccount.md)    
 [Get bankaccount](dynamics_bankaccount_Get.md)    

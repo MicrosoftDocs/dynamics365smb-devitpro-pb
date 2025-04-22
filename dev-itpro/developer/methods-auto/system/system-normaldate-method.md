@@ -2,7 +2,7 @@
 title: "System.NormalDate(Date) Method"
 description: "Gets the regular date (instead of the closing date) for the argument Date."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -76,7 +76,7 @@ On a computer that has the regional format set to English \(United States\), the
   
 **The normal date for C04/04/14 is 04/04/14.**  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

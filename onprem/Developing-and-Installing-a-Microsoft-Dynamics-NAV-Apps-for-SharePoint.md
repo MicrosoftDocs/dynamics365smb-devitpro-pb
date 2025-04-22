@@ -33,7 +33,7 @@ For example, with the deployment scenario that is discussed in this guide, you w
 
     |[!INCLUDE[bp_tablefield](includes/bp_tablefield_md.md)]|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
     |---------------------------------|---------------------------------------|  
-    |**App Id**|A GUID, such as *2de23703-bbb9-4542-970d-84b6e5597f53*. This is also referred to as the client ID.<br /><br /> This is generated when you choose the **Generate** button.|  
+    |**App Id**|A GUID, such as *00001111-aaaa-2222-bbbb-3333cccc4444*. This is also referred to as the client ID.<br /><br /> This is generated when you choose the **Generate** button.|  
     |**App Secret**|A base-64 encoded string, such as *xvVpG0AgVIJfch6ldu4dLUlcZyysmGqBRbpFDu6AfJw=*. This is also referred to as the client secret.<br /><br /> This is generated when you choose the **Generate** button.|  
     |**Title**|The name of the app, which will be shown to users of your site, such as **Financial App by Solutions**.|  
     |**App Domain**|The host name for your [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], such as *www.solutions.com*. If you have deployed the [!INCLUDE[nav_web](includes/nav_web_md.md)] on a local machine, you can also enter the machine name.|  
@@ -103,7 +103,7 @@ After you create the app, you modify settings in the app manifest for the app, w
       </Properties>  
 
       <AppPrincipal>  
-        <RemoteWebApplication ClientId="2de23703-bbb9-4542-970d-84b6e5597f53"/>  
+        <RemoteWebApplication ClientId="00001111-aaaa-2222-bbbb-3333cccc4444"/>  
       </AppPrincipal>  
     </App>  
     ```  

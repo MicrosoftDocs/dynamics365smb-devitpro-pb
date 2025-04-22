@@ -21,6 +21,6 @@ Using directives are ignored if a namespace is not specified.
 Using directive are ignored if a namespace is not specified.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

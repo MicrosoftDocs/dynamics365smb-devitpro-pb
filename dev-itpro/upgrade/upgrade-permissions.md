@@ -7,7 +7,7 @@ ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
 ---
-# Upgrading Permissions Sets and Permissions
+# Upgrading permissions sets and permissions
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are defined only as data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created by using the `permissionset` and `permissionsetextension` objects in AL code, then packaged in extensions. See [Entitlements and Permissions](../developer/devenv-entitlements-and-permissionsets-overview.md) to learn more.
 
@@ -122,7 +122,7 @@ Your application can use permission sets from various sources, like Microsoft, p
     >  Restart the [!INCLUDE [server](../developer/includes/server.md)] instance.
 7. From the client, open the **Permissions Sets** page, and import the permission sets from the newly created XML file.
 
-## See Also  
+## Related information 
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

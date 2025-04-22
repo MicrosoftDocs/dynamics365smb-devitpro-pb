@@ -63,5 +63,5 @@ Here is a JSON representation of the customerFinancialDetail resource.
 
 
 
-## See Also
+## Related information
 [GET customerFinancialDetail](../api/dynamics_customerFinancialDetail_Get.md)

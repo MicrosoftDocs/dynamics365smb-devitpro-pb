@@ -50,7 +50,7 @@ The [ErrorBehavior](attributes/devenv-errorbehavior-attribute.md) specifies the 
 
 
 
-## See Also  
+## Related information  
 
 [ErrorInfo data type](methods-auto/errorinfo/errorinfo-data-type.md)   
 [ErrorBehavior attribute](attributes/devenv-errorbehavior-attribute.md)  

@@ -2,7 +2,7 @@
 title: "IsolatedStorage.Contains(Text [, DataScope], var Boolean) Method"
 description: "Determines whether the storage contains a value with the specified key."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,7 +41,7 @@ The scope in which to check for the existence of a value with the given key. If 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [IsolatedStorage Data Type](isolatedstorage-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

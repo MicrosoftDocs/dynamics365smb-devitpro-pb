@@ -1,8 +1,8 @@
 ---
-title: "OnPageBackgroundTaskError (Page) Trigger"
+title: "OnPageBackgroundTaskError (Page) trigger"
 description: "Runs when an error occurs in a page background task."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnPageBackgroundTaskError (Page) Trigger
+# OnPageBackgroundTaskError (Page) trigger
 > **Version**: _Available or changed with runtime version 4.0._
 
 Runs when an error occurs in a page background task.
@@ -74,7 +74,7 @@ begin
 end;
 ```
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnPageBackgroundTaskError (Page Extension) Trigger](../pageextension/devenv-onpagebackgroundtaskerror-pageextension-trigger.md)

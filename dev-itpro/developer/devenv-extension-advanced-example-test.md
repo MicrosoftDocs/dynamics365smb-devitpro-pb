@@ -2,7 +2,7 @@
 title: Test the advanced sample extension
 description: Includes test code for the advanced example extension.
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 12/03/2024
 ms.topic: conceptual
 ms.author: solsen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 
 # Test the advanced sample extension
 
-It's required to submit tests with your extension in order to pass validation. This walkthrough builds on the advanced sample extension, which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample CustomerRewards extension.
+This walkthrough builds on the advanced sample extension, which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample CustomerRewards extension.
 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
@@ -67,7 +67,7 @@ Our CustomerRewardsTest project is referencing objects from the CustomerRewards 
   ...  
   "dependencies": [ 
     { 
-      "appId": "c228bdcf-7112-480b-a832-da81971b6feb", 
+      "appId": "00001111-aaaa-2222-bbbb-3333cccc4444", 
       "name": "CustomerRewards", 
       "publisher": "Microsoft", 
       "version": "1.0.0.0" 
@@ -1030,7 +1030,7 @@ When you go into the SetDefaultCustomerRewardsExtMgtCodeunit method, codeunit 50
 ### Conclusion
 At this point, the Customer Rewards sample extension can be published and installed on your sandbox. 
 
-## See Also  
+## Related information  
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  

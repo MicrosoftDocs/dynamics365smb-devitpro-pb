@@ -1,8 +1,8 @@
 ---
-title: "RunObject Property"
+title: "RunObject property"
 description: "Sets the object you want to run immediately when the action is activated."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -31,13 +31,18 @@ RunObject = query "MyQuery";
 
 Use this property to select the object you want to run.  
 
-The following object types are supported: pages, reports, codeunits, and from version 23 also queries.
+The following object types are supported: pages, reports, codeunits, and from version 23.0 also queries.
 
 Use the following properties to set parameters for the object you want to run:  
   
-- [RunPageView Property](devenv-runpageview-property.md)  
-- [RunPageLink Property](devenv-runpagelink-property.md)  
+- [RunPageView property](devenv-runpageview-property.md)  
+- [RunPageLink property](devenv-runpagelink-property.md)  
 
-## See Also
+> [!NOTE]
+> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 1, actions that have the `RunObject` property specified, use the `Caption`, `ToolTip`, `AboutText`, and `AboutTitle` properties of the *targeted application object*, if none of these properties are specified on the action itself. This ensures consistency and reuse. You can override these values by specifically setting them on the action.
+
+## Related information
 
 [Properties](devenv-properties.md)  
+[RunPageView Property](devenv-runpageview-property.md)  
+[RunPageLink Property](devenv-runpagelink-property.md)  

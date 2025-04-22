@@ -1,6 +1,6 @@
 ---
-title: detailedCustomerLedgerEntry resource type
-description: A detailed customer ledger entry object in Dynamics 365 Business Central.
+title: detailedCustomerLedgerEntry resource type (Beta)
+description: A detailed customer ledger entry object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -70,5 +70,5 @@ Here is a JSON representation of the detailedCustomerLedgerEntry resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET detailedCustomerLedgerEntry](../api/dynamics_detailedcustomerledgerentry_get.md)

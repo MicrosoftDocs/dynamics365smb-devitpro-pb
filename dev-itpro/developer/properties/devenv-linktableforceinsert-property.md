@@ -1,8 +1,8 @@
 ---
-title: "LinkTableForceInsert Property"
+title: "LinkTableForceInsert property"
 description: "Sets whether data from the linked table is forcibly modified or inserted into a table to prevent an error from being generated."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -38,7 +38,7 @@ Setting this property to **true** will forcibly insert or modify data from the l
   
 This feature is useful if you have a header to line relationship in your XML document. The table and the header information must be inserted before you can insert the line information. As a result, you can use this property to ensure that the header information is inserted before the XMLport starts reading the line information.  
   
-## See Also
+## Related information
 
 [LinkFields Property](devenv-linkfields-property.md)   
 [LinkTable Property](devenv-linktable-Property.md)

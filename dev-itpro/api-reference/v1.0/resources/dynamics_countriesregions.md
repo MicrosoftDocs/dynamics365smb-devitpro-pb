@@ -58,7 +58,7 @@ Here is a JSON representation of the countriesRegions.
 }
 ```
 
-## See also
+## Related information
   
 [Get Countries Regions](../api/dynamics_countriesregions_get.md)  
 [Post Countries Regions](../api/dynamics_create_countriesregions.md)  

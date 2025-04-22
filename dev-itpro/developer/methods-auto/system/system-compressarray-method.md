@@ -2,7 +2,7 @@
 title: "System.CompressArray(Array of [Text]) Method"
 description: "Moves all non-empty strings (text) in an array to the beginning of the array."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -86,8 +86,7 @@ end;
   
  **After compression, the address is:**  
   
- **Joe Raybon**  
-  
+ **Joe Raybon**
  **One Meca Way**  
   
  **Atlanta**  
@@ -97,7 +96,7 @@ end;
 > [!NOTE]  
 > Empty lines are not printed if they occur on the first or last line in a message window.  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -37,7 +37,7 @@ Using a browser you can test how your application pages look on various device s
 When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge Developer Tools to emulate different screen sizes. For more information, see [Microsoft Edge Developer Tools](/microsoft-edge/devtools-guide-chromium).
 
 
-## See also  
+## Related information  
  [Deciding on Your Tablet and Phone Strategy](devenv-deciding-on-tablet-and-phone-strategy.md)   
  [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)    
  [Displaying Data as Tiles](devenv-lists-as-tiles.md)    

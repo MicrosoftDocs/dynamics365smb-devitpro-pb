@@ -1,8 +1,8 @@
 ---
-title: "ObsoleteTag Property"
+title: "ObsoleteTag property"
 description: "Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -19,9 +19,10 @@ Specifies a free-form text to support tracking of where and when the object was 
 -   Page Action Ref
 -   Page Custom Action
 -   Page File Upload Action
+-   Report Layout
 -   Table
--   Table Field
--   Table Key
+-   Table field
+-   Table key
 -   Codeunit
 -   Enum Type
 -   Enum Value
@@ -67,7 +68,7 @@ Use this property to add valuable information to developers about an object or e
 
 For an elaborate example of deprecating, see [Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md).
 
-## See Also  
+## Related information  
 
 [ObsoleteReason](devenv-obsoletereason-property.md)  
 [ObsoleteState](devenv-obsoletestate-property.md)  

@@ -31,5 +31,5 @@ The following table lists the compilation errors that might occur when you compi
 
 |Page|9623|Finish Up Design|OnInit|You have specified an unknown variable. GetDesignerExtensionName Define the variable under 'Global C/AL symbols'.||
 >
-## See Also  
+## Related information  
 [Converting a Database - Technical Upgrade](Converting-a-Database.md)  

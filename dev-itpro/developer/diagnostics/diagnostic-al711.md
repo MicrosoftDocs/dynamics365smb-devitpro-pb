@@ -1,8 +1,8 @@
 ---
-title: "Compiler Warning (Future Error) AL0711"
+title: "Compiler Warning (future error) AL0711"
 description: "A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL0711
+# Compiler Warning (future error) AL0711
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
@@ -21,6 +21,6 @@ A member of type {0} with name '{1}' is already defined in {2} '{3}' by the exte
 > This warning will become an error with Business Central 2023 release wave 1.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

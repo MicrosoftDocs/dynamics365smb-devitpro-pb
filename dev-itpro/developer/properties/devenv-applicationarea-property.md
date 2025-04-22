@@ -1,8 +1,8 @@
 ---
-title: "ApplicationArea Property"
+title: "ApplicationArea property"
 description: "Sets the application areas that apply to the control."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -69,7 +69,7 @@ You can also add new application areas, see [Extending Application Areas](../dev
 
 The **UsageCategory** property is a required setting used together with the **ApplicationArea** property. This enables a page or a report to be available in Search for the navigation support. For more information about navigation support, see [Adding Pages and Reports to Search](../devenv-al-menusuite-functionality.md).  
    
-## See Also  
+## Related information  
 
 [ApplicationArea Method](../methods-auto/session/session-applicationarea-method.md)  
 [Extending Application Areas](../devenv-extending-application-areas.md)  

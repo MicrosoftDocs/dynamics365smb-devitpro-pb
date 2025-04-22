@@ -1,5 +1,5 @@
 ---
-title: cloudMigrationStatus resource type
+title: (cloudMigration API) cloudMigrationStatus resource type
 description: A cloud migration status object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -9,7 +9,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# cloudMigrationStatus resource type
+# (cloudMigration API) cloudMigrationStatus resource type
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
@@ -103,6 +103,6 @@ Here is a JSON representation of the cloudMigrationStatus resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 
 [GET cloudMigrationStatus](../api/dynamics_cloudmigrationstatus_get.md)

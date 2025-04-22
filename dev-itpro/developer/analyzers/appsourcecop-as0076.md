@@ -2,7 +2,7 @@
 title: "AppSourceCop Hidden AS0076"
 description: "Obsolete Tag must have a specific format."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,6 +17,8 @@ Obsolete Tag format.
 Obsolete Tag must have a specific format.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
 
 The ObsoleteTag [property](../properties/devenv-obsoletetag-property.md) and [attribute parameter](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute) values are not validated by the AL compiler. However it is possible to setup the AppSourceCop to verify them using a Regex expression.
 
@@ -104,7 +106,7 @@ codeunit 50100 MyCodeunit
 > [!NOTE]  
 > The version to specify when using the default obsolete tag pattern is validated by the rules [AS0072](appsourcecop-as0072.md) and [AS0074](appsourcecop-as0074.md).
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

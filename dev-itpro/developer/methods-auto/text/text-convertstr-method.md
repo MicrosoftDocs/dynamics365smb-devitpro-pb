@@ -2,7 +2,7 @@
 title: "Text.ConvertStr(Text, Text, Text) Method"
 description: "Replaces all chars in source found in FromCharacters with the corresponding char in ToCharacters and returns the converted string."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -87,7 +87,7 @@ end;
  **Do you Want to Leave Without Saving?**  
   
 
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

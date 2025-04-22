@@ -13,7 +13,7 @@ The SubType property is applicable to the following types:
 - [Subtype Property (BLOB)](devenv-subtype-blob-property.md)  
 - [SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)   
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Codeunit Properties](devenv-codeunit-properties.md)  

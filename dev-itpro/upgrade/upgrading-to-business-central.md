@@ -1,24 +1,24 @@
 ---
-title: "Upgrading to Microsoft Dynamics 365 Business Central"
+title: Upgrading to Dynamics 365 Business Central
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.date: 04/01/2021
+ms.date: 02/07/2025
 description: Learn how to upgrade to Dynamics 365 Business Central with this comprehensive guide. Covers online and on-premises deployment options.
 ---
-# Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+# Upgrading to Dynamics 365 Business Central
 
 This section provides an overview of how to upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The upgrade process depends on different factors, including on your decision to deploy [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises or move your solution online.  
 
 > [!TIP]
 > Before you decide how to upgrade your solution, make sure that you read the upgrade considerations at [Important Information and Considerations for Before Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](Upgrade-Considerations.md).  
 
-Depending on your decision to upgrade to either [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online or on-premises, different scenarios are supported. Read the upgrade considerations, and then revise the supported scenarios in the respective sections. If you cannot find guidance for your migration scenario, you can check at the Ideas site if someone else has already suggested support for the same migration path. For more information, see [https://aka.ms/businesscentralideas](https://aka.ms/businesscentralideas).
+Depending on your decision to upgrade to either [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online or on-premises, different scenarios are supported. Read the upgrade considerations, and then revise the supported scenarios in the respective sections. If you cannot find guidance for your migration scenario, you can check at the Ideas site if someone else has already suggested support for the same migration path. Learn more in  [https://aka.ms/businesscentralideas](https://aka.ms/businesscentralideas).
 
-Depending on which version you are upgrading from, you may have to convert or migrate the existing Help for your solution. For more information, see [Migrate Legacy Help to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Format](migrate-help.md) and [User Assistance Model](../user-assistance.md).  
+Depending on which version you are upgrading from, you may have to convert or migrate the existing Help for your solution. Learn more in [Migrate Legacy Help to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Format](migrate-help.md) and [User Assistance Model](../user-assistance.md).  
 
-## See Also
+## Related information
 
 [Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Online](upgrading-to-business-central-online.md)  
 [Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] On-Premises](upgrading-to-business-central-on-premises.md)  

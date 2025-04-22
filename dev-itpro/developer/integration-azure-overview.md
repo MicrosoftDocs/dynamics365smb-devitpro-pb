@@ -22,7 +22,7 @@ Here are some supported integrations between [!INCLUDE[prod_short](../includes/p
 - [!INCLUDE[azure_functions](includes/azure-functions-name.md)]
 - [!INCLUDE[azure_key_vault](includes/azure-keyvault-name.md)]
 - [!INCLUDE[azure_virtual_network](includes/azure-virtual-network-name.md)]
-- Azure Open AI Service
+- Azure OpenAI Service
 
 
 ## [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]
@@ -76,11 +76,11 @@ Within the [!INCLUDE[azure_virtual_network](includes/azure-virtual-network-name.
 For more information, see [Use Azure security service tags to restrict network access from/to Business Central](../security/security-service-tags.md).
 
 
-## Azure Open AI Service
+## Azure OpenAI Service
 
-You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure Open AI Service to include copilot and generative AI experiences. For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
+You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] apps/extensions with the Azure OpenAI Service to include copilot and generative AI experiences. For more information, see [Integrating AI using Developer Tools for Copilot](../developer/ai-integration-landing-page.yml).
 
-## See also
+## Related information
 
 [Azure Blob Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Blob%20Services%20API)  
 [Azure File Services API](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20File%20Services%20API)  

@@ -14,14 +14,14 @@ A request page is a page that is run before the XMLport starts to execute. Reque
 
 |Property|Description|
 |--------|-----------|
-|[RequestFilterHeading Property](properties/devenv-requestfilterheading-property.md)|Sets a caption for the request page tab that is related to a report's data item or an XMLport's table element.|
-|[RequestFilterHeadingML Property](properties/devenv-requestfilterheadingml-property.md)|Sets the text used as a RequestFilterHeading Property for a request page tab.|
-|[RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)|Specifies which columns are automatically included on the tab of the request page that is related to a report's data item or an XMLport's table element. The user can set filters on these columns. |
-|[AboutTitle Property](properties/devenv-abouttitle-property.md)|Specifies the title for a teaching tip on the report. |
-|[AboutTitleML Property](properties/devenv-abouttitleml-property.md)|Specifies the multi-language version of the title for a teaching tip on the report. |
-|[AboutText Property](properties/devenv-abouttext-property.md)|Specifies the text for a teaching tip on the report. |
-|[AboutTextML Property](properties/devenv-abouttextml-property.md)|Specifies the multi-language version of the text for a teaching tip on the report. |
-|[ContextSensitiveHelpPage Property](properties/devenv-contextsensitivehelppage-property.md)| Specifies the help topic to show when the user presses Help in the UI. Note that the help server on which this help topic is located, must be defined in the app.json file. |
+|[RequestFilterHeading property](properties/devenv-requestfilterheading-property.md)|Sets a caption for the request page tab that is related to a report's data item or an XMLport's table element.|
+|[RequestFilterHeadingML property](properties/devenv-requestfilterheadingml-property.md)|Sets the text used as a RequestFilterHeading Property for a request page tab.|
+|[RequestFilterFields property](properties/devenv-requestfilterfields-property.md)|Specifies which columns are automatically included on the tab of the request page that is related to a report's data item or an XMLport's table element. The user can set filters on these columns. |
+|[AboutTitle property](properties/devenv-abouttitle-property.md)|Specifies the title for a teaching tip on the report. |
+|[AboutTitleML property](properties/devenv-abouttitleml-property.md)|Specifies the multi-language version of the title for a teaching tip on the report. |
+|[AboutText property](properties/devenv-abouttext-property.md)|Specifies the text for a teaching tip on the report. |
+|[AboutTextML property](properties/devenv-abouttextml-property.md)|Specifies the multi-language version of the text for a teaching tip on the report. |
+|[ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md)| Specifies the help topic to show when the user presses Help in the UI. Note that the help server on which this help topic is located, must be defined in the app.json file. |
 
 > [!NOTE]  
 > Request pages for XMLports aren't supported by the [!INCLUDE[webclient](includes/webclient.md)] in versions prior to [!INCLUDE[prod_long](includes/prod_long.md)] 2019 release wave 2. If you try to run an XMLport with a request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the [!INCLUDE[webclient](includes/nav_windows_md.md)].
@@ -150,7 +150,7 @@ Starting with Business Central 2023 release wave 1 (version 22), you can set the
 
 For more information about configuring context-sensitive help, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md). 
 
-## See Also
+## Related information
 
 [XMLport Object](devenv-XMLport-object.md)  
 [RunRequestPage Method](methods-auto/report/reportinstance-runrequestpage-method.md)  

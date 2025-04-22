@@ -1,5 +1,5 @@
 ---
-title: Get profile
+title: (automation API) Get profile
 description: Gets a profile object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get profile
+# (automation API) Get profile
 
 Retrieves the properties and relationships of a profile object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
@@ -57,7 +57,7 @@ Here is an example of the response.
 ```json
 {
     "scope": "Tenant",
-    "applicationId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+    "applicationId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "profileId": "BUSINESS MANAGER",
     "source": "Base Application",
     "displayName": "Business Manager",
@@ -65,7 +65,7 @@ Here is an example of the response.
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [profile](../resources/dynamics_profile.md)  

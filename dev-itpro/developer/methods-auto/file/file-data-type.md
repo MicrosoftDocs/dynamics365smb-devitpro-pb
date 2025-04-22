@@ -1,8 +1,8 @@
 ---
-title: "File Data Type"
+title: "File data type"
 description: "Represents a file."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File Data Type
+# File Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents a file.
@@ -34,6 +34,8 @@ The following methods are available on the File data type.
 |[Upload(Text, Text, Text, Text, var Text)](file-upload-method.md)|Sends a file from the client computer to the server computer. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.|
 |[UploadIntoStream(Text, Text, Text, var Text, var InStream)](file-uploadintostream-string-string-string-text-instream-method.md)|Sends a file from the client computer to the corresponding server. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.|
 |[UploadIntoStream(Text, var InStream)](file-uploadintostream-string-instream-method.md)|Sends a file from the client computer to the corresponding server. The client computer is the computer that is running a browser that accesses the web client.|
+|[View(Text [, Boolean])](file-view-method.md)|Opens a file from server computer on the client computer in preview mode. The client computer is the computer that is running the browser that accesses the web client.|
+|[ViewFromStream(InStream, Text [, Boolean])](file-viewfromstream-method.md)|Opens a file from the server on the client computer in preview mode. The client computer is defined as the machine running the browser accessing the web client.|
 
 ## Instance methods
 The following methods are available on instances of the File data type.
@@ -72,11 +74,10 @@ The following methods are available on instances of the File data type.
 |[Write(Option)](file-write-option-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(Record)](file-write-table-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(RecordId)](file-write-recordid-method.md)|Writes to an MS-DOS encoded file or binary file.|
-|[Write(Text)](file-write-string-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(Any)](file-write-joker-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[WriteMode([Boolean])](file-writemode-method.md)|Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

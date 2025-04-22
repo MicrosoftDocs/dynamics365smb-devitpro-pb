@@ -2,9 +2,10 @@
 title: "Session.LogAuditMessage(Text, SecurityOperationResult, AuditCategory, Integer, Integer [, Dictionary of [Text, Text]]) Method"
 description: "Logs a message to an audit account."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -62,7 +63,7 @@ Set of additional dimensions, specified as a dictionary, that will be emitted to
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Session Data Type](session-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

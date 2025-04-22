@@ -31,7 +31,6 @@ POST businesscentralPrefix/companies({id})/employees({id})/defaultDimensions({id
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **defaultDimension**, the **defaultDimension** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **defaultDimensions** object.
@@ -79,7 +78,7 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/customers({
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [defaultdimension](../resources/dynamics_defaultdimension.md)    
 [Get defaultdimension](dynamics_defaultdimension_Get.md)    

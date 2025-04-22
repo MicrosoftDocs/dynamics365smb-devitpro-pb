@@ -36,7 +36,7 @@ In the app.json file, set the extension **runtime** version lower than the platf
 
 3. A best-effort compilation is made when you publish an extension compiled with a lower runtime version. This is allowed in order to avoid recompilation of the extension package every time you upgrade the platform. 
 
-## See also
+## Related information
 
 [Debugging in AL](devenv-debugging.md)  
 [Developing Extensions](devenv-dev-overview.md)  

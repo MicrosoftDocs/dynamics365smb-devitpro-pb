@@ -155,7 +155,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
 ## Task 4: Convert application database to version 24
 
-This task runs a technical upgrade on the application database to convert it to the version 23 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. The conversion adds the system symbols for the version to the database, so you don't have to manually publish the Systems extension, as you had to do with early releases.
+This task runs a technical upgrade on the application database to convert it to the version 24 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. The conversion adds the system symbols for the version to the database, so you don't have to manually publish the Systems extension, as you had to do with early releases.
 
 1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 24 as an administrator.
 2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
@@ -491,7 +491,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

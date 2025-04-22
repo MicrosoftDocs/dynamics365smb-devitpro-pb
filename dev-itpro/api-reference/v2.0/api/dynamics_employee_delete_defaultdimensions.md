@@ -50,7 +50,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/employees
 
 No Content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Employee](../resources/dynamics_employee.md)  

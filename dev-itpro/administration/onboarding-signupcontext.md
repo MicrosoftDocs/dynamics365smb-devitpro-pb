@@ -1,11 +1,11 @@
 ---
 title: Create customer-centric onboarding experiences with the SignupContext parameter.
 description: Learn how you can use the SignupContext parameter to create customer-centric evaluation and onboarding experiences.
-ms.date: 01/25/2023
+ms.date: 01/30/2025
 ms.topic: conceptual
 author: sorenfriisalexandersen
 ms.author: soalex
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ---
 
 # Create customer-centric onboarding experiences using SignupContext
@@ -16,10 +16,10 @@ Microsoft partners can create customer-centric onboarding experiences to help cu
 
 Starting trials for customers is a multi-step task for partners:
 
-* Build a reseller relationship with the potential customer
-* Create [!INCLUDE [prod_short](../includes/prod_short.md)] environments
-* Apply the partner's app(s), 
-* Load demo data that's relevant for the prospect.
+- Build a reseller relationship with the potential customer
+- Create [!INCLUDE [prod_short](../includes/prod_short.md)] environments
+- Apply the partner's apps
+- Load demo data that's relevant for the prospect
 
 The `SignupContext` parameter lets partners create customer-centric trials without having to do the work manually. They can provide apps that cover the steps, and tailor the experience based on the customer's context. These trials are similar to trials that prospects start from Microsoft's *dynamics.microsoft.com* website. They're unmanaged in the sense that there isn't a CSP relationship between the prospect and the partner.
 
@@ -29,9 +29,9 @@ The `SignupContext` parameter can pass information about a prospect from your we
 
 The `SignupContext` parameter can include information about the origin of the sign-up, and other information you want to pass to [!INCLUDE [prod_short](../includes/prod_short.md)] from the sign-up process on your website. For example, your website might offer a questionnaire that asks the prospect for information that can help you understand the prospect's needs. The questions might gather the following information from prospects
 
-* Their industry
-* Number of users
-* How they intend to use a business management solution.
+- Their industry
+- Number of users
+- How they intend to use a business management solution.
 
 You can use the prospect's answers in the `SignupContext` parameter to prepare demo and onboarding experiences that match their needs.
 
@@ -47,8 +47,8 @@ The `SignupContext` parameter is a JSON string with key-value pairs that [!INCLU
 
 Let's explore an example where a sign-up is triggered by a user on Partner X's website. Imagine that the user was asked a single question on the partner website. Based on the answer to the question, you want to load a specific app with the trial and use the app to tailor the experience in [!INCLUDE [prod_short](../includes/prod_short.md)]. For example, the question and answer pair could be:
 
-* Question on website: "Which application are you currently using?"*
-* Answer from prospect: "Foo Accounting"
+- Question on website: "Which application are you currently using?"*
+- Answer from prospect: "Foo Accounting"
 
 This combination of question and answer could result in the following `SignupContext` parameter:
 
@@ -109,7 +109,7 @@ To pass the `SignupContext` parameter through the sign-up process to the [!INCLU
 
 [!INCLUDE [prod_short](../includes/prod_short.md)] examines the `SignupContext` parameter when it's provisioned through a viral trial sign-up. It checks the **countrycode** value and matches it with the country/region set for the Microsoft Entra tenant. The countries/regions must match because [!INCLUDE [prod_short](../includes/prod_short.md)] will provision a trial in the Microsoft Entra ID country/region by default. Using the **countrycode** value allows you to set the *intended* country/region, so partners can offer the experience on country/region-specific (locale) versions of their websites. The supported countries/regions of the app specified by the **appid** value are also checked for a match. If all three countries/regions don't match, trial provisioning stops and shows a message to the user.
 
-If countries/regions match, [!INCLUDE [prod_short](../includes/prod_short.md)] provisions the trial environment from the dynamics.microsoft.com website. When the provisioning is complete, the app specified by the **appid** value is installed from AppSource if the **eulaaccept** value is true. Partners can set the **eulaaccept** value to true when they have presented the End-User License Agreement (EULA) of their app to the user, and the user has accepted it. The partner is responsible for providing the opportunity to review and consent to the EULA on their website. If the value is true, [!INCLUDE [prod_short](../includes/prod_short.md)] assumes the user has accepted the EULA, which is a requirement for installing apps from AppSource. After the app is installed, [!INCLUDE [prod_short](../includes/prod_short.md)] is ready to load and sign the user in to their Role Center.
+If countries/regions match, [!INCLUDE [prod_short](../includes/prod_short.md)] provisions the trial environment from the dynamics.microsoft.com website. When the provisioning is complete, the app specified by the **appid** value is installed from AppSource if the **eulaaccept** value is true. Partners can set the **eulaaccept** value to true when they have presented the End-User License Agreement (EULA) of their app to the user, and the user has accepted it. The partner is responsible for providing the opportunity to review and consent to the EULA on their website. If the value is true, [!INCLUDE [prod_short](../includes/prod_short.md)] assumes the user has accepted the EULA, which is a requirement for installing apps from AppSource. After the app is installed, [!INCLUDE [prod_short](../includes/prod_short.md)] is ready to load and sign the user into their Role Center.
 
 The `SignupContext` parameter string is stored in [!INCLUDE [prod_short](../includes/prod_short.md)]. [!INCLUDE [prod_short](../includes/prod_short.md)] parses the key-value pairs and adds them to system **table 2000000255, Signup Context** so they're ready for an app to consume them. However, before a trial-provisioned app can consume these `SignupContext` parameter values, the correct sign-up context **name** must first be set for the application, which is stored in **table 150, Signup Context Values**. Subscribe to the `OnSetSignupContext` event. By subscribing to the event, an app can read the value for the **name** key stored in the **Signup Context** system table and set the **Signup Context** enum field in the **Signup Context Values** table. This enum must be extended with a new enum option that identifies the `SignupContext` parameter for the specific app. We recommend using an enum caption that reflects the chosen **name** value provided in the URL.
 
@@ -118,9 +118,9 @@ The `SignupContext` parameter string is stored in [!INCLUDE [prod_short](../incl
 ```AL
 enumextension 50100 ParnerXAppSignupContext extends "Signup Context"
 {
-    value(50100, PartnerXApp)
+    value(50100; PartnerXApp)
     {
-        Caption = 'Partner X app'    }
+        Caption = 'Partner X app';
     }
 }
 ```
@@ -128,10 +128,10 @@ enumextension 50100 ParnerXAppSignupContext extends "Signup Context"
 ### Setting the Signup Context value in the Signup Context Values table
 
 ```AL
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"System Initialization", 'OnSetSignupContext', '', false, false)]
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"System Initialization", OnSetSignupContext, '', false, false)]
 local procedure SetPartnerXAppContextOnSetSignupContext(SignupContext: Record "Signup Context") 
-var SignupContextValues: Record "Signup Context Values";
-
+var
+    SignupContextValues: Record "Signup Context Values";
 begin        
     if not SignupContext.Get('name') then            
         exit;
@@ -147,19 +147,18 @@ begin
     SignupContextValues.Insert();
 end;
 ```
+
 Setting the sign-up context causes [!INCLUDE [prod_short](../includes/prod_short.md)] to skip initialization of default checklist items for all roles. Partners must add checklist items for the relevant roles.
 
-When the `SignupContext` parameter has a value expected by the partner's, the app can add checklist items and other elements to the tailor the experience.
+When the `SignupContext` parameter has a value expected by the partner's, the app can add checklist items and other elements to tailor the experience.
 
 ### Reacting to the SignupContext parameter
 
 ```AL
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"System Initialization", 'OnAfterLogin', '', false, false)]
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"System Initialization", OnAfterLogin, '', false, false)]
 local procedure InitializeChecklistOnAfterLogIn()
 var
-    Company: Record Company;
     SignupContextValues: Record "Signup Context Values";
-    Checklist: Codeunit Checklist;
 begin
     if not SignupContextValues.Get() then            
         exit;
@@ -173,11 +172,11 @@ end;
 ```
 
 > [!NOTE]
-> The `SignupContext` parameter and the ability to create un-managed trials isn't intended for test-driving apps. These types of trials should only be used to create evaluation and onboarding experiences. Partners should make sure to create experiences that greet the prospect, demo the desired features, and take the prospect through a buying and onboarding experience. The goal is to convert the prospect to become a paying customer of [!INCLUDE [prod_short](../includes/prod_short.md)], and the job of the partner's app is to smoothen that transition to minimize the hands-on work from the partner. 
+> The `SignupContext` parameter and the ability to create unmanaged trials isn't intended for test-driving apps. These types of trials should only be used to create evaluation and onboarding experiences. Partners should make sure to create experiences that greet the prospect, demo the desired features, and take the prospect through a buying and onboarding experience. The goal is to convert the prospect to become a paying customer of [!INCLUDE [prod_short](../includes/prod_short.md)], and the job of the partner's app is to smoothen that transition to minimize the hands-on work from the partner. 
 
 > [!IMPORTANT]
 > Partners who load their apps when the trial is provisioned must give users the chance to review and agree to the EULA for their app before starting the trial. This also means that only the partner's own apps can be loaded. Therefore, partners should avoid having non-owned apps in the dependency list in the app manifest.
 
-## See also
+## Related information
 
 [Onboarding experiences in Business Central](onboarding-experiences.md)  

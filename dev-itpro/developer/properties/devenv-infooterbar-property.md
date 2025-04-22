@@ -1,8 +1,8 @@
 ---
-title: "InFooterBar Property"
+title: "InFooterBar property"
 description: "Sets whether an action should be viewed as an exit action in the lower part of the page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -31,6 +31,6 @@ Sets whether an action should be viewed as an exit action in the lower part of t
 InFooterBar = false;
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

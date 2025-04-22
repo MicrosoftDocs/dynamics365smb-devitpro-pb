@@ -63,6 +63,6 @@ Follow these guidelines:
   
 3. In the Word report layout, add a picture control for the picture source column.  
   
-## See Also  
+## Related information  
 
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  

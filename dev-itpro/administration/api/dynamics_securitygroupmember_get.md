@@ -1,5 +1,5 @@
 ---
-title: Get securityGroupMembers
+title: (automation API) Get securityGroupMembers
 description: Gets a security group member object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get securityGroupMembers
+# (automation API) Get securityGroupMembers
 
 Retrieves the properties and relationships of a security group member object for [!INCLUDE[prod_short](../../includes/prod_short.md)].
 
@@ -60,7 +60,7 @@ Here is an example of the response.
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [securityGroupMember](../resources/dynamics_securityGroupMember.md)  

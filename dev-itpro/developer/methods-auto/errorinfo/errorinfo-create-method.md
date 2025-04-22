@@ -57,7 +57,7 @@ Set of additional dimensions, specified as a dictionary. This parameter is optio
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 
 [Collecting Errors](../../devenv-error-collection.md)  
 [ErrorInfo Data Type](errorinfo-data-type.md)  

@@ -2,7 +2,7 @@
 title: "RecordRef.SetPosition(Text) Method"
 description: "Sets the fields in a primary key on a record to the values specified in the String parameter."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -72,7 +72,7 @@ end;
  **The vendor name after the primary key was changed is AR Day property Management.**  
   
 
-## See Also
+## Related information
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

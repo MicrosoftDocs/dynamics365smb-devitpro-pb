@@ -124,7 +124,7 @@ Here is a JSON representation of the salesOrderLine resource.
 
 
 
-## See Also
+## Related information
 [GET salesOrderLine](../api/dynamics_salesOrderLine_Get.md)  
 [DELETE salesOrderLine](../api/dynamics_salesOrderLine_Delete.md)  
 [POST salesOrderLine](../api/dynamics_salesOrderLine_Create.md)  

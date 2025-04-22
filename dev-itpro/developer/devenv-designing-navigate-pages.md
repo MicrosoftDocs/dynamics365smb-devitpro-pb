@@ -55,14 +55,14 @@ This section describes the basic tasks for creating an assisted setup. It gives 
             {
                 Caption = '';
                 InstructionalText = '';
-                Visibility = Step1Visible;
+                Visible = Step1Visible;
 
             }
             group(Step2)
             {
                 Caption = '';
                 InstructionalText = '';
-                Visibility = Step2Visible;
+                Visible = Step2Visible;
 
                 field(Field2; "Field2")
                 {
@@ -75,7 +75,7 @@ This section describes the basic tasks for creating an assisted setup. It gives 
             {
                 Caption = '';
                 InstructionalText = '';
-                Visibility = Step3Visible;
+                Visible = Step3Visible;
             }
         }
     }
@@ -682,5 +682,5 @@ enumextension 50100 MyEnumExtension extends "Assisted Setup Group"
 }
 ```
   
-## See Also  
+## Related information  
 

@@ -122,7 +122,7 @@ If you have access to an Application Insights resource in Microsoft Azure, you c
 -->
 
 
-## See Also
+## Related information
 
 [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md)  
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  

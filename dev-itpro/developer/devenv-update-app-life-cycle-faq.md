@@ -66,7 +66,7 @@ Yes, we have some valuable tips we would like to share. These are tips that can 
 > [!NOTE]  
 > The tips that we provide above are for your benefit to pass validation the first time through each submission. And to emphasize these points, think of the delays that can arise when you don't follow these tips. If you submit, it can take a couple days before we validate the app. Once we validate it, if all is good, it should pass quickly. If we find issues that lead us to fail the validation, we send the app back to you as you have to make fixes. It could then take you days to properly fix. Next time you submit, your app does not go to the front of the queue. It begins at the bottom again which means it could be another couple days before we validate it again. By following our tips above, you can avoid those delays. Spend a bit more time up front finding those issues yourself, leading to a quicker path to our service.
 
-## See also
+## Related information
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  
 [Checklist for Submitting Your App](devenv-checklist-submission.md)  
 [Upgrading Extensions](devenv-upgrading-extensions.md)  

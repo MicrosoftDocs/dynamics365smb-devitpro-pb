@@ -1,8 +1,8 @@
 ---
-title: "JsonObject Data Type"
+title: "JsonObject data type"
 description: "Is a container for any well-formed JSON object."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject Data Type
+# JsonObject Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is a container for any well-formed JSON object. A default JsonObject contains an empty JSON object.
@@ -42,10 +42,26 @@ The following methods are available on instances of the JsonObject data type.
 |[Clone()](jsonobject-clone-method.md)|Creates a deep-copy of the JsonToken value.|
 |[Contains(Text)](jsonobject-contains-method.md)|Verifies if a JsonObject contains a property with a given key.|
 |[Get(Text, var JsonToken)](jsonobject-get-method.md)|Retrieves the value of a property with a given key from a JsonObject.|
+|[GetArray(Text [, Boolean])](jsonobject-getarray-method.md)|Retrieves the value of a property with a given key from a JsonObject as a JsonArray.|
+|[GetBigInteger(Text [, Boolean])](jsonobject-getbiginteger-method.md)|Retrieves the value of a property with a given key from a JsonObject as a BigInteger.|
+|[GetBoolean(Text [, Boolean])](jsonobject-getboolean-method.md)|Retrieves the value of a property with a given key from a JsonObject as a Boolean.|
+|[GetByte(Text [, Boolean])](jsonobject-getbyte-method.md)|Retrieves the value of a property with a given key from a JsonObject as a Byte.|
+|[GetChar(Text [, Boolean])](jsonobject-getchar-method.md)|Retrieves the value of a property with a given key from a JsonObject as a Char.|
+|[GetDate(Text [, Boolean])](jsonobject-getdate-method.md)|Retrieves the value of a property with a given key from a JsonObject as a Date.|
+|[GetDateTime(Text [, Boolean])](jsonobject-getdatetime-method.md)|Retrieves the value of a property with a given key from a JsonObject as a DateTime.|
+|[GetDecimal(Text [, Boolean])](jsonobject-getdecimal-method.md)|Retrieves the value of a property with a given key from a JsonObject as an Decimal.|
+|[GetDuration(Text [, Boolean])](jsonobject-getduration-method.md)|Retrieves the value of a property with a given key from a JsonObject as a Duration.|
+|[GetInteger(Text [, Boolean])](jsonobject-getinteger-method.md)|Retrieves the value of a property with a given key from a JsonObject as an Integer.|
+|[GetObject(Text [, Boolean])](jsonobject-getobject-method.md)|Retrieves the value of a property with a given key from a JsonObject as a JsonObject.|
+|[GetOption(Text [, Boolean])](jsonobject-getoption-method.md)|Retrieves the value of a property with a given key from a JsonObject as an Option.|
+|[GetText(Text [, Boolean])](jsonobject-gettext-method.md)|Retrieves the value of a property with a given key from a JsonObject as Text.|
+|[GetTime(Text [, Boolean])](jsonobject-gettime-method.md)|Retrieves the value of a property with a given key from a JsonObject as a Time.|
 |[Keys()](jsonobject-keys-method.md)|Gets a set of keys of the JsonObject.|
 |[Path()](jsonobject-path-method.md)|Retrieves the JSON path of the object relative to the root of its containing tree.|
 |[ReadFrom(Text)](jsonobject-readfrom-string-method.md)|Reads the JSON data from the string into a JsonObject variable.|
 |[ReadFrom(InStream)](jsonobject-readfrom-instream-method.md)|Reads the JSON data from the stream into a JsonObject variable.|
+|[ReadFromYaml(Text)](jsonobject-readfromyaml-string-method.md)|Reads the YAML data from the string into a JsonObject variable.|
+|[ReadFromYaml(InStream)](jsonobject-readfromyaml-instream-method.md)|Reads the YAML data from the stream into a JsonObject variable.|
 |[Remove(Text)](jsonobject-remove-method.md)|Removes the property with the given key from the object.|
 |[Replace(Text, JsonToken)](jsonobject-replace-string-jsontoken-method.md)|Replaces the value of the property with the given key with the new value.|
 |[Replace(Text, JsonArray)](jsonobject-replace-string-jsonarray-method.md)|Replaces the value of the property with the given key with the new value.|
@@ -67,6 +83,8 @@ The following methods are available on instances of the JsonObject data type.
 |[Values()](jsonobject-values-method.md)|Gets a set of values of the JsonObject.|
 |[WriteTo(var Text)](jsonobject-writeto-text-method.md)|Serializes and writes the JSON data of the JsonObject to a given Text object.|
 |[WriteTo(OutStream)](jsonobject-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonObject to a given OutStream object.|
+|[WriteToYaml(var Text)](jsonobject-writetoyaml-text-method.md)|Serializes and writes the JsonObject as YAML to a given Text object.|
+|[WriteToYaml(OutStream)](jsonobject-writetoyaml-outstream-method.md)|Serializes and writes content the JsonObject as YAML text to a given OutStream object.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -80,6 +98,6 @@ An unitialized variable of JsonObject type represents an empty JSON object. Give
 jsonObject.Keys.Count =  0
 ```
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -112,7 +112,7 @@ Only promoted actions will display on mobile devices, so make sure you promote t
         Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md).
 
  
-## See also
+## Related information
 [AL development environment](devenv-reference-overview.md)  
 [Page types and layouts](devenv-page-types-and-layouts.md)  
 [Page extension object](devenv-page-ext-object.md)  

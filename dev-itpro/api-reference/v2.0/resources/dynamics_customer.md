@@ -42,7 +42,7 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[picture](dynamics_picture.md)|picture |Gets the picture of the customer.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the customer.|
 |[agedAccountsReceivable](dynamics_agedaccountsreceivable.md)|agedAccountsReceivable |Gets the agedaccountsreceivable of the customer.|
-|[contactsInformation](dynamics_contactsinformation.md)|contactsInformation |Gets the contactsinformation of the customer.|
+|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactsinformation of the customer.|
 |[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the customer.|
 
 ## Properties
@@ -117,7 +117,7 @@ Here is a JSON representation of the customer resource.
 
 
 
-## See Also
+## Related information
 [GET customer](../api/dynamics_customer_Get.md)  
 [DELETE customer](../api/dynamics_customer_Delete.md)  
 [POST customer](../api/dynamics_customer_Create.md)  

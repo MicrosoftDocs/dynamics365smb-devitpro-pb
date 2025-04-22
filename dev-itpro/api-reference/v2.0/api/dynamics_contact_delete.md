@@ -63,7 +63,7 @@ HTTP/1.1 204 No Content
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [contact](../resources/dynamics_contact.md)  

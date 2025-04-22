@@ -1,7 +1,7 @@
 ---
 title: Copyright and Trademarks
 description: Landing page for legal notices for Business Central on-premises.
-ms.date: 04/17/2024
+ms.date: 01/02/2025
 author: solsen
 ms.topic: article
 ms.author: solsen
@@ -18,7 +18,7 @@ Complying with all applicable copyright laws is the responsibility of the user. 
 
 Microsoft may have patents, patent applications, trademarks, copyrights, or other intellectual property rights covering subject matter in this document. Except as expressly provided in any written license agreement from Microsoft, the furnishing of this document does not give you any license to these patents, trademarks, trade dress, copyrights, or other intellectual property. Unless otherwise noted, the companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted in examples herein are fictitious. No association with any real company, organization, product, domain name, e-mail address, logo, person, place, or event is intended or should be inferred.  
 
- &copy; 2024 Microsoft. All rights reserved.  
+ &copy; 2025 Microsoft. All rights reserved.  
 
 ## Trademarks  
 

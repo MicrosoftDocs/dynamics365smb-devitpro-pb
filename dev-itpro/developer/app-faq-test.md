@@ -40,7 +40,7 @@ Yes. If you support multiple countries/regions, test your app on every country. 
 
 ## Do you have recommendations on maintenance testing of our apps?
 
-Yes. You should be testing your apps against our various build branches. Through Docker, you have access to our latest public sandbox builds and through the "Ready! for Dynamics 365 Business Central" program on [Microsoft Collaborate](https://aka.ms/collaborate) you can also get access to *Next Minor* and *Next Major* builds. Test often, especially against the *Next Minor* build. This allows you to catch any bugs that may arise from core changes in the product.
+Yes. You should be testing your apps against our various build branches. Through Docker, you have access to our latest sandbox builds and our latest next major and next minor insider builds - all are public. Test often, especially against the Next Minor build. This allows you to catch any bugs that may arise from core changes in the product.
 
 ## I only made minor code changes in my updated app. Can I test just these changes?
 
@@ -58,7 +58,7 @@ Test the upgrade with extensive app data included. Many of the upgrade failures 
 
 No. It's important you test from various previous versions of your app. This is because we don't automatically upgrade apps for minor releases. You could have a tenant back on version 1.0.0.0 of your app and have to jump all the way to version 1.0.0.5. We don’t guarantee direct upgrades of apps from their most previous version.
 
-## See also
+## Related information
 
 [FAQ about Updating your Business Central App](app-faq-update.md)  
 [FAQ about Library & Dependency Apps in Business Central](app-faq-dependencies-libraries.md)  

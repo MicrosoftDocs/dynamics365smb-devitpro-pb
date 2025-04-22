@@ -2,7 +2,7 @@
 title: "Record.SetAutoCalcFields([Any,...]) Method"
 description: "Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -42,7 +42,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 See [AL Database Methods and Performance on SQL Server - SetAutoCalcFields](../../../administration/optimize-sql-al-database-methods-and-performance-on-server.md#setautocalcfields).
 
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

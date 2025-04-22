@@ -18,6 +18,6 @@ Member '{0}' cannot be accessed with an instance reference; qualify it with '{1}
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

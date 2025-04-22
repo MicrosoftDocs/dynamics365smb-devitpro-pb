@@ -1,8 +1,8 @@
 ---
-title: "RDLCLayout Property"
+title: "RDLCLayout property"
 description: "Sets the RDL layout that is used on a report and returns it as a data stream."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -51,7 +51,7 @@ report 50123 MyRdlReport
 }
 ```
 
-## See also
+## Related information
 
 [Creating an RDL Layout Report](../devenv-howto-rdl-report-layout.md)   
 [ExcelLayout Property](devenv-excellayout-property.md)  

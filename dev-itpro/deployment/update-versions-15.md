@@ -45,7 +45,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 |[4533389](https://support.microsoft.com/help/4533389)|Update 15.2|December 2019|Application Build 15.2.39040</br>Platform Build 15.0.38951|
 |[4528699](https://support.microsoft.com/help/4528699) |Update 15.1 |November 2019|Application Build 15.1.38071</br>Platform Build 15.0.37898|
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v15.md)  

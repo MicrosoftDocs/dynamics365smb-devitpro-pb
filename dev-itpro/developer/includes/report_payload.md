@@ -34,7 +34,7 @@ The report payload contains metadata for the report object and a list of attribu
     "layoutmodel": "Rdlc",
     "layoutname": "RDLCLayout",
     "layoutmimetype": "Application/ReportLayout/Rdlc",
-    "layoutapplicationid": "f0f34810-9027-4288-9c6e-feddb557d057",
+    "layoutapplicationid": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "reportrunid": "6a3742c1-65ef-44a6-af58-3ef4a902932b"
 }
 
@@ -74,7 +74,7 @@ The report payload contains metadata for the report object and a list of attribu
     "layoutmodel": "Rdlc",
     "layoutname": "RDLCLayout",
     "layoutmimetype": "Application/ReportLayout/Rdlc",
-    "layoutapplicationid": "f0f34810-9027-4288-9c6e-feddb557d057",
+    "layoutapplicationid": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "reportrunid": "6a3742c1-65ef-44a6-af58-3ef4a902932b"
 }
 

@@ -46,7 +46,7 @@ As a Business Central reselling partner, you might want to have an environment t
 
 Specifically for partners that are in the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] program, signing up customers works differently. For more information, see [Onboarding customers and creating environments](embed-app-lifecycle-services.md#onboarding-customers-and-creating-environments).
 
-## See also
+## Related information
 
 [Onboarding experiences in Business Central](../administration/onboarding-experiences.md)  
 [Help your customers get started](../administration/get-started-online.md#step-4-help-your-customers-get-started)  

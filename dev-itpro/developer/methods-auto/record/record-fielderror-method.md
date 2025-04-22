@@ -106,7 +106,7 @@ The following message is displayed:
   
 **No. is not valid in Customer No.='NEW 3500'.**  
 
-## See Also
+## Related information
 
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

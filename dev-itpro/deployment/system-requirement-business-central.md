@@ -190,7 +190,7 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 
 --> 
 
-## See Also
+## Related information
 
 [Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  

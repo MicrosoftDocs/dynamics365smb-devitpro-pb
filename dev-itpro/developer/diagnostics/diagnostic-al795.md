@@ -21,6 +21,6 @@ The parameter '{0}' cannot be of type 'SecretText'.
 Parameters of type 'SecretText' are not allowed on events to prevent unintended leakage of confidential values.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

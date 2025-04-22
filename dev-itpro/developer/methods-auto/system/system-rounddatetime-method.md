@@ -2,7 +2,7 @@
 title: "System.RoundDateTime(DateTime [, BigInteger] [, Text]) Method"
 description: "Rounds a DateTime."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -77,7 +77,7 @@ The message window displays the following:
 
 **RoundDateTime\(11/27/08 09:35:24.567, 1000\) returns 11/27/08 09:35:25.000.**  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

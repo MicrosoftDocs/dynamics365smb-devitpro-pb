@@ -49,7 +49,7 @@ In the following table, you find examples of scenarios for each persona where th
 | Supporter | Analyze performance issues due to locking or deadlocks | Similar to the developer scenario for concurrency testing. If you're lucky, scenario codeunits are already available on GitHub. |
 
 > [!TIP]
-> Get started with [understanding busines processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
+> Get started with [understanding business processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
 
 ## How can I answer the question "Can Business Central handle a specific load for prospect customer"?
 
@@ -526,7 +526,7 @@ Visit the [BCPT video page](https://github.com/microsoft/BCTech/blob/master/samp
 Visit the [BCPT blogs page](https://github.com/microsoft/BCTech/blob/master/samples/BCPT/BLOGS.md) for learning resources published as blogs.
 
 
-## See also
+## Related information
 
 [Testing the Application Overview](devenv-testing-application.md)  
 [Performance toolkit telemetry](../administration/telemetry-performance-toolkit-trace.md)   

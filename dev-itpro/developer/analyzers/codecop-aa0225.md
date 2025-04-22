@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0225"
 description: "You must specify a caption in the Caption property for Fields that exist on page objects."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ You must specify a caption in the Caption property for Fields that exist on page
 You must specify a caption in the Caption property for Fields that exist on page objects.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

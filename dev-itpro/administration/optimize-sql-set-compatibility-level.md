@@ -34,6 +34,6 @@ You change the compatibility level of the database by using SQL Server Managemen
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
 
 
-## See Also  
+## Related information  
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)    
 [Microsoft SQL Server documentation](/sql/sql-server/)'

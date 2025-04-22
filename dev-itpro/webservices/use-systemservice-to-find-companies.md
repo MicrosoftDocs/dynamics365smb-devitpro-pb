@@ -71,6 +71,6 @@ You can use the SystemService service in a SOAP web service application to retri
   
      A list of all companies in the current database is presented in a command session.  
   
-## See Also  
+## Related information  
    
  [SOAP Web Services](SOAP-Web-Services.md)

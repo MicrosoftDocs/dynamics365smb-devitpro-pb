@@ -31,6 +31,6 @@ When the demo license is installed, you can:
 
 The demo license doesn't let you enter dates in months other than November, December, January, and February in any [!INCLUDE [prod_short](../includes/prod_short.md)] clients.
 
-## See Also
+## Related information
 
 [Deploying the Demonstration Environment](../../deployment/deploy-demonstration-environment.md)  

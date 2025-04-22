@@ -2,8 +2,8 @@
 title: Security overview
 description: Get an overview of the articles about security in Business Central, so that you can configure your solution.
 author: jswymer
-ms.topic: conceptual
-ms.date: 12/07/2022
+ms.topic: overview
+ms.date: 12/11/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -17,5 +17,7 @@ A business solution must have a built-in security system that helps protect your
 - [Security tips for business users](security-users.md)  
 - [Online security](security-online.md)  
 - [On-premises security](security-onpremises.md)  
+- [Data security](data-security.md)
+- [Security FAQ](security-faq.md)
 
 [!INCLUDE [admin-tlswarning](../developer/includes/admin-tlswarning.md)]

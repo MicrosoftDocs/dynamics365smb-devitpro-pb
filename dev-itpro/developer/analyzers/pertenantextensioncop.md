@@ -1,8 +1,8 @@
 ---
-title: "PerTenantExtensionCop Analyzer"
+title: "PerTenantExtensionCop analyzer"
 description: "PerTenantExtensionCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -15,7 +15,7 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[PTE0001](pertenantextensioncop-pte0001.md)|Object ID must be in free range.|Extensibility|Error|
 |[PTE0002](pertenantextensioncop-pte0002.md)|Field ID must be in free range.|Extensibility|Error|
@@ -38,11 +38,13 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |[PTE0019](pertenantextensioncop-pte0019.md)|Permission set extensions should not include wildcard permissions.|Extensibility|Warning|
 |[PTE0020](pertenantextensioncop-pte0020.md)|Use the 'application' property instead of specifying an explicit dependency on Base Application.|Extensibility|Warning|
 |[PTE0021](pertenantextensioncop-pte0021.md)|Defining reserved namespaces is not allowed.|Configuration|Error|
-|[PTE0022](pertenantextensioncop-pte0022.md)|The member ID should be within the allowed range|Extensibility|Warning|
+|[PTE0022](pertenantextensioncop-pte0022.md)|The member ID should be within the allowed range|Extensibility|Info|
 |[PTE0023](pertenantextensioncop-pte0023.md)|The enum ordinal value should be within the allowed range|Extensibility|Info|
+|[PTE0024](pertenantextensioncop-pte0024.md)|Moving tables or fields is not allowed on per-tenant extensions.|Extensibility|Error|
+|[PTE0025](pertenantextensioncop-pte0025.md)|Avoid using duplicate object names|Extensibility|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)

@@ -1,150 +1,95 @@
 ---
-title: Major updates and minor updates for Business Central online
-description: Learn about the timeline for how updates of Business Central online rollout. You can prepare for both major updates and minor updates with minimal disruption of your users' productivity.  
+title: Update cycles
+description: Learn about the timeline of Business Central online update rollouts. Prepare for both major updates and minor updates with minimal disruption in productivity.  
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 01/09/2024
+ms.date: 03/31/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
-# Major updates and minor updates for Business Central online
+# Update cycles 
 
-This article provides an overview of what you need to know about how a major or minor update for [!INCLUDE[prod short](../developer/includes/prod_short.md)] rolls out, and how the underlying service updates. It includes key dates, actions you need to take, and answers some common questions.  
+This article provides an overview of what you need to know about how a major or minor update for [!INCLUDE[prod short](../developer/includes/prod_short.md)] rolls out. It includes key dates, actions you need to take, and answers some common questions.
 
 [!INCLUDE [service-updates](../includes/service-updates.md)]
 
-Microsoft is committed to delivering predictable updates to the service. Updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. Administrators can set a maintenance window for each environment that determines when Microsoft is allowed to update that environment. For more information, see [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows.  
+Microsoft is committed to delivering predictable updates to the service. Updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. Administrators can set a maintenance window for each environment that determines when Microsoft is allowed to update that environment. For more information, see [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md). Scheduled minor and major updates, and unscheduled critical fixes, respect the maintenance window set on each environment.
 
-You are in control and manage how your organization receives these updates. Microsoft applies updates to each environment based on your configuration. The only exception is how Microsoft maintains the underlying platform with invisible updates during low traffic hours, for example. For more information, see the [Service updates](#service-updates) section.  
+You are in control and manage how your organization receives these updates. Microsoft applies updates to each environment based on your configuration. The only exception is how Microsoft maintains the underlying platform with invisible updates during low traffic hours, for example. For more information, see the [service updates](#service-updates) section.  
 
-Each new update is designed and developed by the Dynamics 365 team. Any new update is first validated by the feature team, then validated in combination with the full product. During this time, extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility.  
+The Dynamics 365 team designs and develops each new update. Any new update is first validated by the feature team, then validated in combination with the full product. During this time, extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility.  
 
-## Timelines for major updates
+## Major updates
 
-The following figure illustrates the key milestones and dates for rolling out a major update. The dates are loosely based on [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/) and [2021 release wave 2](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/). The same timeline applies to all other major updates, though dates will differ.
+There are two major update cycles per year, with major releases every April and October. Major updates introduce new features, enhancements, and platform improvements. For each major update cycle, the following periods apply.
 
-![Generic timeline for how updates roll out with sample dates for the two release waves each year.](../media/update-rollout-timeline.png)
+### Preview period
 
-> [!TIP]
-> Dates differ across countries and regions. Make sure that you have set up [notifications](tenant-admin-center-notifications.md) in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] so that you're notified when the next major update is available.  
+The preview period allows for testing of the new functionality before the version is made available as update to your environment. Administrators can create a Sandbox environment from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] on the new version, for example to try out new functionality or test compatibility of extensions in a cloud environment. This period typically starts a month before the release of the new major version, that is, every March and September. Learn more in [Preparing for major updates with preview environments](preview-environments.md).
 
-The following table describes the milestones with example dates for the two release waves in any given calendar year.
+### Update period
 
-|Milestone|Example date wave 1| Example date wave 2|Description|
-|---------|-------------------|--------------------|-----------|
-|Update is available|April 1 |October 1|The date when the new major version of Business Central becomes generally available.|
-|Update starts rolling out|April 8 |October 8|The default date when Microsoft starts upgrading your environments. Once the update is scheduled, you can change that date, within the allowed date range, to a date that suits you better.|
-|Last scheduled update date|June 1 |December 1|The last date you can choose to extend your upgrade date to. <!--</br>Starting with 2023 release wave 2, the update window is again 30 days after an update is available, which makes these two dates May 1 and November 1, respectively.-->|
+The update period starts when a new major version is generally available (GA), typically the first workday of April and October. After general availability, new environments are created on the new major version. The new major version is available as an update to existing environments about a week after general availability, though the exact timing might differ by environment.
 
-> [!IMPORTANT]
-> For 2024 release wave 1, the update window remains 60 days. Based on feedback, we're currently evaluating longer-term processes for major updates and update windows. New policies might be updated at a later stage, which can include a return to a update window that again is 30 days after an update is available.
->
->We recommend that you keep any apps and per-tenant extensions ready for upgrade at any given time, and that you actively test compatibility. We encourage everyone to use the time needed to get apps, per-tenant extensions, and processes ready for a shorter update window.
-  
+The update period lasts for five calendar months, ending in early September for update periods that start in April, and in early March for update periods that start in October. Administrators can reschedule the update to any date within the update period from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. Learn more in [Rescheduling updates](tenant-admin-center-update-management.md).
 
-> [!TIP]
-> There are many benefits to keeping code current and staying on top of updates. Microsoft and members of the community continue to provide more and more tools and best practices to help.
->
-> Developers can get tips and guidance in the developer docs here: [Maintain AppSource Apps and Per-Tenant Extensions](../developer/app-maintain.md).
->
-> Admins can install, update, and uninstall apps in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] as described here: [Managing Apps](tenant-admin-center-manage-apps.md).
+Scheduled update attempts that don't succeed are automatically rescheduled for seven days later, and administrators can reschedule them to any other date within the update period. Learn more in the [Completed updates](#completed-updates) section.
 
-## Timelines for minor updates
+When a new version is available as update on the environment, [Notification recipients](tenant-admin-center-notifications.md) receive an email notification and environments [enabled with telemetry](telemetry-enable-application-insights.md) receive a signal with the [LC0100 tag](telemetry-environment-lifecycle-trace.md#environment-update-available).
 
-The monthly minor updates contain both application and platform changes that are critical improvements to the service, including regulatory updates.  
+### Grace period
 
-A minor update will rollout across Azure regions over several days and weeks. When the update is available for a specific environment, admins can apply it manually from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. If the update hasn't been applied to an environment by the specified last update date, Microsoft will auto-apply the update. Microsoft takes into account the update window for the environment.  
-
-### Example release schedule
-
-The following figure illustrates the key milestones and dates for rolling out a minor update in any month.
-
-![Generic timeline for how minor updates roll out with sample dates for May.](../media/update-rollout-timeline-minor.png)
-
-The following table describes the milestones with example dates for a minor update in any given calendar year.
-
-| Milestone | Example date | Description |
-|--|--|--|
-| Update is available | May 07 | The date when the new minor version of Business Central is first available and admins can schedule the update. |
-| Update rolls out automatically | May 14 | The default date when Microsoft starts upgrading your environments, seven days after the first availability date. Once the update is scheduled, you can change that date, within the allowed date range, to a date that suits you better. |
-| Last scheduled update date | May 28 | The last date you can choose to extend your upgrade date to, 21 days after the update is available. |
+The grace period starts when the update period ends and lasts one month. It occurs every September for the update period starting in April and every March for the update period starting in October. During the grace period, you can't reschedule an update to a later date or to a target version within the environment's current major version. Microsoft automatically reschedules unsuccessful environment updates to be reattempted seven days later. Administrators can only reschedule this attempt to an earlier date or to a different target version within the next major version. To ensure the environment update succeeds during the grace period, Microsoft alerts administrators in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and might send in-product notifications to end users about the upcoming enforced update period. Learn more in [When Microsoft can't update apps or per-tenant extensions (PTEs)](../developer/app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
 
 > [!TIP]
-> The minor updates tend to become available on the first Friday of any given month, except the months when a major update becomes available. Microsoft aims to update the last environments 2-3 weeks later.
+> We recommend that you keep any apps and per-tenant extensions ready to update at any given time, and that you actively test compatibility. Developers can get tips and guidance in the developer docs here: [Maintain AppSource Apps and Per-Tenant Extensions](../developer/app-maintain.md). Admins can install, update, and uninstall apps in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] as described here: [Managing Apps](tenant-admin-center-manage-apps.md).
 
-## Update availability
+### Enforced update period
 
-The major updates are typically made available twice a year, in April and in October. Minor updates roll out every month. Get an overview of the release plans at [Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/). For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans, select a release wave under **Dynamics 365**, then look under **SMB** in the table of contents.
+The enforced period starts when the grace period ends. During this period, any extensions causing the update to the next major version to fail, for example, because of compatibility issues, might be automatically uninstalled from the environment so that the update succeeds. Data belonging to these uninstalled extensions isn't deleted from the environment and can be recovered by installing a compatible extension version after the update succeeds. Learn more in [When Microsoft can't update apps or PTEs](../developer/app-maintain.md#when-microsoft-cant-update-apps-or-ptes).
 
-On the release day for any update, all new sign-ups and all newly created environments (sandbox and production), are directed to the new version. For existing environments that run on the previous version, updates are made available gradually across the supported regions over the coming days and weeks as indicated earlier in this article. It's not possible to speed up this process for your environment through Microsoft Support.  
+## Minor updates
 
-## Schedule updates
+Minor updates are released every month in which there's no major update release, that is, every month except April and October. These updates contain application changes that are critical improvements to the service, including regulatory updates. Like major updates, minor updates are generally available at the start of each calendar month. After a minor update is general available, new environments use the new minor version by default. The new minor version becomes available as an update to environments on the previous version about a week after general availability. The exact timing can vary by environment.  
 
-When the update becomes available for your environment, a notification email is sent to all [notification recipients](tenant-admin-center-notifications.md) that you've registered in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. A notification about the update availability is also shown in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] itself.  
+## Release plans
 
-Starting this day, you can use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to [schedule the date](tenant-admin-center-update-management.md#schedule) when you prefer the update to happen.  
+Get an overview of the release plans at [Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/). For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans, select a release wave under **Dynamics 365**, then look under **SMB** in the table of contents. Learn about new functionality, bug fixes, and improvements shipped in recent versions in [What's new or changed](../whatsnew/overview.md).
 
-[!INCLUDE [admin-set-update-date](../includes/admin-set-update-date.md)]
+## Completed updates
 
-When the scheduled update date arrives, the update runs automatically within the update window that you've specified for this environment. All users will be disconnected from this environment, and all attempts to sign in during the update will be blocked with the message `Service is under maintenance`.  
+An environment update completes when it succeeds, fails, or is canceled because the update window ends.
 
-> [!IMPORTANT]
-> The update duration differs depending on the environment. We strongly recommend scheduling the update for a date when it would be acceptable for the environment to be inaccessible until the end of its update window.
-
-For more information, see [Set the update window for each environment](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).  
-
-> [!NOTE]
-> When you select a current date for your update, but the update window defined for this environment has already passed, the update will start within that time window, but on the day after the one that you defined for your environment.
->
-> For example, if you're changing the **Scheduled update date** to the current date at 6 PM, and your update window is set to 1 AM - 7 AM, the update will not start immediately, but after 1 AM on the next day.  
-
-### Delayed scheduling of updates
-
-In some cases, even after the update is available in your area, you're still not able to set the update date (schedule environment update). This condition can happen for one of the following reasons:  
-
-- Your environment hasn't yet updated to the latest minor update of the previous version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. All environments must be updated to the last available minor update of the previous version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] before they can be scheduled for the next major version. You can check the version information in the **Troubleshooting** section of the **Help and Support** page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and in the **Version Management** section in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Version numbers in Business Central](version-numbers.md).  
-
-    Microsoft actively works on updating all environments to the latest minor update as soon as possible. In most cases, your environment will be scheduled for the major update soon. You'll get a chance to change the date to the one that fits you better. In the unlikely situation that your environment is updated to the last minor update around or even after the last selectable update date, you'll still get at least seven days to schedule the update.  
-
-- You've just created a new sandbox environment as a copy of your production environment. In this case, the sandbox environment is created on the same version as the production environment it was copied from. If your newly created sandbox environment is running on the last minor update of the previous version, Microsoft will schedule it for update automatically within one hour.  
-
-    You'll receive email notification and will see the notification in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] when it happens. The scheduled update date for this environment will be set to seven days from the current date. This gives you enough time to change the date to one that fits you better, including the current date.  
-
-- Your per-tenant extensions aren't compatible with the next major update.  
-
-    [!INCLUDE [admin-update-pte](../includes/admin-update-pte.md)]
-
-- The AppSource apps that are installed in your environment aren't yet available for the next major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
-
-    While most AppSource apps are kept up to date by the app providers, a particular app might need more time to prepare for the next major update and isn't yet available for it. In this situation, contact the app owner to understand their availability plans.  
-
-> [!TIP]
-> Make sure every tenant has the right contacts set up to get email notification. For more information, see [Managing Tenant-Specific Notifications](tenant-admin-center-notifications.md).
-
-## Failed updates and rescheduling
-
-An environment may fail to update for various reasons, such as the following:
+An environment might fail to update for various reasons, such as:
 
 - Per-tenant extension compatibility issues  
 - AppSource app compatibility issues  
 - Internal update issues  
 
-Any environment that fails to update will be automatically restored to the original application version so that users can connect to it again. The environment is then automatically rescheduled for a new update attempt in seven days. If you consider the issue resolved and want to try the update again, change the update date to an earlier date or the current date.  
+When an update fails or is canceled, the environment restores to the original application version so users can connect to it again. The environment is rescheduled for a new update attempt in seven days. To resolve the issue and retry the update, change the update date to an earlier or current date.
 
-If Microsoft can't do the update on the selected date, you'll be notified by email that the environment update is rescheduled for seven days later. You can change that date in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to any other allowed date, including the current date.
+> [!IMPORTANT]
+> If a failed update was scheduled by Microsoft services, not an admin, and the target version isn't the latest available, the next update might be rescheduled to use the latest available version. Updates scheduled by administrators aren't rescheduled unless the update period ends for the selected target version.
+
+If Microsoft can't do the update on the selected date, [notification recipients](tenant-admin-center-notifications.md) get an email that the environment update is rescheduled for seven days later. Administrators can change the date in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to any other allowed date, including the current date.
+
+When an update succeeds, the system schedules the next update to target the latest available version and occur at least seven days later. If the successful update targeted the latest available version, the system schedules the next update to target the version planned to become available next and occur automatically on a date when it becomes available.
+
+> [!NOTE]
+> <!--The chosen date for a target version is preserved for that version even if the target version and date for an environment's next update are changed later. If when an updates succeeds, the next update scheduled by Microsoft is for a target version that has a chosen date that is in the future already, this chosen date will be when the next update runs rather than the default seven days after completion of the previous update.--> The chosen date for a target version remains the same even if the target version and date for an environment's next update change later. If an update succeeds, and the next update scheduled by Microsoft is for a target version with a date in the future, the future date is used for the next update instead of the default seven days after the previous update finishes.  
+
+The target version and date for an environment's next update can be changed in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. Learn more in [Managing updates in the admin center](tenant-admin-center-update-management.md).
 
 ## <a name="postponed"></a>Postponed updates
 
-In critical circumstances, Microsoft can decide to postpone the rollout of the updates, such as if a critical issue is discovered in the upcoming major version. While Microsoft is working on addressing the issue, the updates will be postponed. You'll receive email notification, and you'll see the notification displayed in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. The **Version Management** section for each environment will show the update rollout state as *Postponed*.  
+In critical circumstances, Microsoft might postpone the rollout of updates, for example, if a critical issue is discovered in an upcoming major version. While Microsoft addresses the issue, the updates are postponed. For environments scheduled for postponed update, [notification recipients](tenant-admin-center-notifications.md) receive an email notification, and the notification is displayed in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
-If we don't know the nature of the issue and the solution in advance, we can't predict when the updates will resume again. As a result, neither the email nor the notification in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] will contain the information about the expected resume date. In these extreme cases, Microsoft actively works on resuming updates as a matter of highest priority once the issue is addressed. You'll receive another email notification when updates have resumed. The last available date will be prolonged by the number of days that the update was postponed.  
+If the nature of the issue and the solution aren't known in advance, it's impossible to predict when updates resume. As a result, the email and the notification in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] don't include information about the expected resume date. In these cases, Microsoft prioritizes resuming updates as soon as the issue is resolved. For environments that have an update scheduled to the version for which updates are postponed, [notification recipients](tenant-admin-center-notifications.md) receive another email notification when updates resume. For environments scheduled for postponed update, [notification recipients](tenant-admin-center-notifications.md) get another email when updates resume.  
 
-If it happens that you schedule the update of an environment to a date when the updates are postponed, the environment won't be updated. Microsoft won't send a separate notification. You can reschedule the update to a later date, or you can wait until you have received the email notification that the updates have resumed. All environments that missed their scheduled update date will be rescheduled automatically to run the update within seven days from the date the updates were resumed. You can change that date to any other allowed date, including the current date.  
-
-If you didn't explicitly set a date for your environment update in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], this environment will be picked up for updating automatically, shortly after the updates have been resumed. The update will still be executed within the specified update time window.  
+If you schedule an environment update for a date when updates to the selected target version are postponed, the environment isn't updated. [Notification recipients](tenant-admin-center-notifications.md) get an email notification that the scheduled update didn't run. The update is automatically rescheduled for another attempt seven days later. You can reschedule the update to a different date or target version, or wait until you get an email notification that the updates resume.
 
 ## Prepare, test, and learn before a major update
 
@@ -159,41 +104,19 @@ Some new features can be switched on ahead of time on sandbox and production env
 
 When Microsoft releases features or feature design improvements as part of minor updates, some of these features are optional until the following major update. Administrators can turn these optional features on or off from the **Feature Management** page.
 
-For more information, see [Feature Management](feature-management.md).  
+Learn more in [Feature Management](feature-management.md).  
 
 ### Prepare for major updates with preview environments
 
 [!INCLUDE [admin-previews](../developer/includes/admin-previews.md)]
 
-For more information, see [Prepare for major updates with preview environments](preview-environments.md).  
+Learn more in [Prepare for major updates with preview environments](preview-environments.md).  
 
 ### Prepare for major updates just before the production environment is updated
 
-As soon as you're notified that the new major update is available, you can test the new version. Just create a sandbox environment that you then schedule to be updated. Start by copying your production environment into a sandbox on the same version as your production environment. All newly created environments are automatically included in the update process within one hour. You'll get notified that the update is available, and you'll be able to schedule the newly created sandbox for update within one hour after it was created. By default, the newly created environments are scheduled to run the update within seven days from the date they were created, but you can change that date to any other allowed date, including the current date.  
+When you're notified that a new major update is available, test the new version using a copy of your current production data. Copy the production environment to a sandbox environment, and schedule the update for the sandbox environment. To start the update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**.  
 
-If you change the update date to the current date, the update will start within the closest available update time window you specified for the environment. If you want to start the update of your sandbox environment immediately, you can set the update time window for this sandbox environment to be 24 hours.  
-
-Microsoft monitors each update of an environment. If we detect any errors during the update, you'll receive email notification that describes the detected issues.  
-
-Any environments that fail to update due to per-tenant extension compatibility issues or any other issues are automatically restored to the original application version. Within one hour, they're automatically rescheduled for another update attempt. The scheduled update date is automatically set to seven days in the future to give you time to resolve the issues. If you address the compatibility issues sooner, you can change the date to an earlier date, including the current date. This pattern repeats until the environment is updated successfully.  
-
-> [!IMPORTANT]
-> Changing date to an earlier date might be blocked up to 24 hours after the last failed attempt to update.
-
-### Overview of the timeline for preparing for the next major update
-
-The following figure illustrates the suggested steps for getting a preview of a major update with example dates for the two release waves in any given calendar year.  
-
-![Generic timeline for steps to get a preview of a major update with sample dates for the two release waves each year.](../media/update-rollout-timeline-preview.png)
-
-The following table provides more information for the suggested steps with example dates for the two release waves in any given calendar year.
-
-|Milestone|Example date wave 1|Example date wave 2|Description|
-|---------|-------------------|-------------------|-----------|
-|Previews are available|March 1 |September 1|You create a new sandbox environment based on the new preview for test purposes. For more information, see [Prepare for major updates with preview environments](preview-environments.md).|
-|A few days before you know that the update is announced|March 31 |September 30|You create a new sandbox environment based on your existing production environment (copy your production environment into a sandbox) and wait for it to be updated to the new version.|
-|Update available in your region|April 6 |October 5|The major update is made available. You're notified about it via e-mail. Go to the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and set the update date for your sandbox environment to the current date. The sandbox will be updated within the closest available update time window that you set for it. Now, you can test your existing extensions and your production data against the new version.</br></br>We recommend that you set the update date for your production environment a few days or weeks in the future, to help make sure that it doesn't get updated automatically before you had a chance to test the new version and your extensions in your sandbox environment.|
-|Preview sandboxes are deleted|May 1 |November 1|30 days after the new major update is announced, the preview sandboxes are deleted. There will be no option to keep these sandboxes or export data from them.|
+Microsoft monitors each update of an environment. If we detect any errors during the update, [notification recipients](tenant-admin-center-notifications.md) get an email that describes the detected issues.  
 
 ## Service updates
 
@@ -201,7 +124,7 @@ The service components apply to multiple environments, such as all tenants in a 
 
 These updates don't add or remove functionality, and they're transparent to business users.
 
-## See also
+## Related information
 
 [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md)  
 [Working with Administration Tools](administration.md)  

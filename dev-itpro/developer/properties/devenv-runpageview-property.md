@@ -1,8 +1,8 @@
 ---
-title: "RunPageView Property"
+title: "RunPageView property"
 description: "Sets a tableview for the page that will be launched for this action."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,14 +32,28 @@ The filters defined by this property are not visible in the UI and cannot be mod
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-
 ## Remarks  
 
-The table view is the view of the table that you present to the user. You determine what records the user can see by setting filters, determining the sorting order, and selecting the keys.  
+The table view is the view of the table that you present to the user. You determine what records the user can see by setting filters, determining the sorting order, and selecting the keys. You can use this property to indicate how information should be sorted.
+
+## Examples
+
+```al
+RunPageView = sorting("Item No.")     
+              order(descending);
+```
+
+```al
+RunPageView = where("Balance (LCY)" = filter(<> 0));
+```
+
+```al
+RunPageView = where("Object Type" = const(Report), "Object ID" = const(715));
+```
+
   
-You can use this property to indicate how information should be sorted.  
-  
-## See Also  
+
+## Related information  
 
 [RunObject Property](devenv-runobject-property.md)   
 [RunPageLink Property](devenv-runpagelink-property.md)

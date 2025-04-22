@@ -2,7 +2,7 @@
 title: "Debugger.Attach(Integer) Method"
 description: "Activates the debugger and attaches it to the specified session."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -45,7 +45,7 @@ The ID of the session that you want to attach the debugger to.The session can be
 The **Attach** method behaves like the **Debug** action on the **Sessions** page.
 You can call the **Attach** method to activate the debugger.
 
-## See Also
+## Related information
 
 [Debugger Data Type](debugger-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

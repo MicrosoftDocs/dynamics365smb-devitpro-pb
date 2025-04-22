@@ -74,7 +74,7 @@ Represents a salesQuote resource type in [!INCLUDE[prod_short](../../../includes
 |shipToContact   |string, maximum size 100   |Ship to contact|
 |sellingPostalAddress|Microsoft.NAV.postalAddressType| Selling postal address|
 |billingPostalAddress|Microsoft.NAV.postalAddressType| Billing postal address|
-|shippingPostalAddress|Microsoft.NAV.postalAddressType| Shipping postal adress|
+|shippingPostalAddress|Microsoft.NAV.postalAddressType| Shipping postal address|
 |lastModifiedDateTime|datetime|The last datetime the sales quote was modified. Read-Only.|
 
 
@@ -121,7 +121,7 @@ Here is a JSON representation of the resource.
       "lastModifiedDateTime": "DateTime"
 }
 ```
-## See also
+## Related information
 
 [Get Sales Quote](../api/dynamics_salesquote_get.md)  
 [Create Sales Quote](../api/dynamics_create_salesquote.md)  

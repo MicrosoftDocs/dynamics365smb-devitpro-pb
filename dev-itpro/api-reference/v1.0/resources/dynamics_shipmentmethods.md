@@ -55,7 +55,7 @@ Here is a JSON representation of the shipmentMethod.
 }
 ```
 
-## See also
+## Related information
 
 [Get Shipment Methods](../api/dynamics_shipmentmethods_get.md)  
 [Create Shipment Methods](../api/dynamics_create_shipmentmethods.md)  

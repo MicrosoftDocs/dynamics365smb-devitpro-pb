@@ -18,7 +18,7 @@ The APIGroup property is applicable to the following types:
 - [APIGroup Property (Query)](devenv-APIGroup-query-property.md)   
 
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)   
 [Page Object](../devenv-page-object.md)   
 [Query Object](../devenv-query-object.md)   

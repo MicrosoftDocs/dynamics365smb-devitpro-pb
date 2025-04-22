@@ -1,8 +1,8 @@
 ---
-title: "RequiredPermissions Attribute"
+title: "RequiredPermissions attribute"
 description: "Specifies the permissions required by the subscriber of an external event."
 ms.author: solsen
-ms.date: 03/20/2023
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,13 +11,13 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# RequiredPermissions Attribute
+# RequiredPermissions attribute
 > **Version**: _Available or changed with runtime version 11.0._
 
 Specifies the permissions required by the subscriber of an external event.
 
 
-## Applies To
+## Applies to
 
 - Method
 
@@ -42,6 +42,6 @@ Specifies the ID of the object that permissions are assigned to. You can specify
 Specifies the permission values. You can specify the permissions using the syntax `<permission value>`.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

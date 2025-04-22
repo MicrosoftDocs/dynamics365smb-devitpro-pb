@@ -194,7 +194,7 @@ procedure MyMethod(MyCustomer : Record Customer; var MyDimension : List of [Bool
 
 The `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference.
 
-## See also
+## Related information
 
 [Development overview](devenv-dev-overview.md)  
 [AL methods](methods-auto/library.md)  

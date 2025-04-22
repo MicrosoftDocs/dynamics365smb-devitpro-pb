@@ -2,7 +2,7 @@
 title: "System.CanLoadType(DotNet) Method"
 description: "Tests if the specified .NET Framework type can be loaded."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -50,7 +50,7 @@ if not CanLoadType(OObjLibrary) then
    Error(MyError);  
 ```  
 
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

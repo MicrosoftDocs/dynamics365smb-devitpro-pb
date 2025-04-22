@@ -12,11 +12,15 @@ ms.reviewer: jswymer
 
 A profile is the mechanism that makes a Role Center page and its associated pages and reports available to users in the client. It enables you to build an individual experience for users based on their role in the company by customizing the pages that they use to perform the daily tasks. In the client, profiles are referred to as **Roles**. When users sign in to [!INCLUDE[prod_short](includes/prod_short.md)], they are doing so under a specific role. Users can switch the role from the **My Settings** page.
 
-Creating profiles in AL involves two different object types: [profile object](devenv-profile-object.md) and [page customization object](devenv-page-customization-object.md).
+Creating profiles in AL involves three different object types: [profile object](devenv-profile-object.md), [profile extension object](devenv-profile-ext-object.md), and [page customization object](devenv-page-customization-object.md).
 
 ## Profile objects
 
 A profile object specifies an ID for the profile, a display name that appears in the client, a role center page, and the page customization objects that apply to the profile. Different profiles can use the same Role Center page.
+
+## Profile extension objects
+
+A profile extension object is used to override properties of a profile object defined in another AL extension, such as its caption or role center page, and can define additional page customization objects to apply to the profile.
 
 ## Page customization object
 
@@ -35,11 +39,11 @@ profile TheBoss
 {
     Description = 'This is the profile for the Boss';
     RoleCenter = "Business Manager";
-    Customizations = MyCustomization1, MyCustomization1;
+    Customizations = BusinessManagerCust, CustomerListCust;
     Caption = 'Boss';
 }
 
-pagecustomization Configuration1 customizes "Business Manager Role Center"
+pagecustomization BusinessManagerCust customizes "Business Manager Role Center"
 {
   actions
   {
@@ -51,7 +55,7 @@ pagecustomization Configuration1 customizes "Business Manager Role Center"
   }
 }
 
-pagecustomization MyCustomization customizes "Customer List"
+pagecustomization CustomerListCust customizes "Customer List"
 {
     layout
     {
@@ -63,9 +67,9 @@ pagecustomization MyCustomization customizes "Customer List"
 }
 ```
 
-## Using the client to create AL profiles and page customizations
+## Using the client to create AL profiles, profile extensions, and page customizations
 
-Creating profiles and page customizations can also be done from the client. This will typically be done by administrators or consultants to create new profiles or fine-tune the page customizations that are provided by extensions. However, as a developer, you can also leverage the client to make profiles and page customizations in AL extensions. For more information, see [Using the Client to Create Profiles and Page Customizations](devenv-design-profiles-using-client.md).
+Creating profiles, profile extensions, and page customizations can also be done from the client. This will typically be done by administrators or consultants to create new profiles or fine-tune the page customizations that are provided by extensions. However, as a developer, you can also leverage the client to make profiles, profile extensions, and page customizations in AL extensions. For more information, see [Using the Client to Create Profiles and Page Customizations](devenv-design-profiles-using-client.md).
 
 ## Translating profiles
 
@@ -95,7 +99,7 @@ For example, the following code is the content of an XLIFF file for translating 
 </xliff>
 ```
 
-## See Also
+## Related information
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Object](devenv-page-object.md)  

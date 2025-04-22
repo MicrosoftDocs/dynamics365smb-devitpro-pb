@@ -1,8 +1,8 @@
 ---
-title: "ProfileDescription Property"
+title: "ProfileDescription property"
 description: "Sets the description of the profile that users will see."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -27,7 +27,7 @@ Sets the description of the profile that users will see.
 ProfileDescription = 'This profile can be used for processing sales order on a daily basis.';
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [ProfileDescriptionML Property](devenv-profiledescriptionml-property.md)

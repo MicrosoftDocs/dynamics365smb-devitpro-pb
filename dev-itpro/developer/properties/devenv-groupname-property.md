@@ -1,8 +1,8 @@
 ---
-title: "GroupName Property"
+title: "GroupName property"
 description: "If the entitlement type is ConcurrentUserServicePlan, the GroupName determines which Microsoft Entra group that users with this entitlement should be members of."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,7 +24,7 @@ If the entitlement type is ConcurrentUserServicePlan, the GroupName determines w
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

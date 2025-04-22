@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0013"
 description: "The field identifier must be within the allowed range and outside the range allocated to per-tenant customizations."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -143,7 +143,7 @@ codeunit 1000000 MyNewCodeunit
 
 Once all dependent extensions have been updated to use the codeunit `MyNewCodeunit` instead of `MyCodeunit`, the codeunit `MyCodeunit` can be removed.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

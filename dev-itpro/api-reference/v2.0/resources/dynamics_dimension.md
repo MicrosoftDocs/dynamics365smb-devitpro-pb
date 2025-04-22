@@ -61,5 +61,5 @@ Here is a JSON representation of the dimension resource.
 
 
 
-## See Also
+## Related information
 [GET dimension](../api/dynamics_dimension_Get.md)

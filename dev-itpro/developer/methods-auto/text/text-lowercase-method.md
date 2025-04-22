@@ -2,7 +2,7 @@
 title: "Text.LowerCase(Text) Method"
 description: "Converts all letters in a string to lowercase."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -36,6 +36,11 @@ The string converted to lowercase.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+Because the Text.LowerCase method is culture-variant, its behavior may vary across different locales. For example, certain characters in languages such as Turkish or Greek may be transformed differently based on regional linguistic rules.
+For culture-invariant method check [Text.ToLower()](./text-tolower-method.md)
+
 ## Example  
 
 ```al
@@ -65,8 +70,7 @@ end;
   
  **>the entries are sorted by name.\<**  
   
-
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

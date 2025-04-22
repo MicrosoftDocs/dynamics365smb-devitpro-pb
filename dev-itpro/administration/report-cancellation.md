@@ -1,12 +1,14 @@
 ---
-title: Report Cancellation
+title: Report cancellation
+description: Learn about the process that occurs when a report is generated and how to cancel a report.
 ms.date: 04/01/2021
 ms.topic: conceptual
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ---
-# Report Generation and Cancellation Flow
+
+# Report generation and cancellation flow
 
 This following figure illustrates the process that occurs when a report is generated.
 
@@ -23,7 +25,7 @@ This flow means a report isn't necessarily canceled when a limit is exceeded. Fo
 > [!NOTE]
 > The report rendering is not included in the evaluate cancellation process and can't be canceled.
 
-## See Also
+## Related information
 
 [Configuring Business Central Server](configure-server-instance.md)  
 [Analyzing Report Telemetry](telemetry-reports-trace.md)  

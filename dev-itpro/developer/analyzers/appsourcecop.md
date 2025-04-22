@@ -1,8 +1,8 @@
 ---
-title: "AppSourceCop Analyzer"
+title: "AppSourceCop analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -15,7 +15,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[AS0001](appsourcecop-as0001.md)|Tables and table extensions that have been published must not be deleted.|Upgrade|Error|
 |[AS0002](appsourcecop-as0002.md)|Fields must not be deleted.|Upgrade|Error|
@@ -126,17 +126,21 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0113](appsourcecop-as0113.md)|Permission set extensions should not include wildcard permissions.|Extensibility|Warning|
 |[AS0114](appsourcecop-as0114.md)|The name of an external business event cannot be changed.|Upgrade|Error|
 |[AS0115](appsourcecop-as0115.md)|The obsolete state cannot change directly from 'No' to 'Removed'.|Upgrade|Error|
-|[AS0116](appsourcecop-as0116.md)|Source application for the moved symbol cannot be found.|Upgrade|Warning|
-|[AS0117](appsourcecop-as0117.md)|Application object is moved without the use of PendingMove.|Upgrade|Warning|
+|[AS0116](appsourcecop-as0116.md)|Source application for the moved symbol cannot be found.|Upgrade|Error|
+|[AS0117](appsourcecop-as0117.md)|Application object is moved without the use of PendingMove.|Upgrade|Error|
 |[AS0118](appsourcecop-as0118.md)|The length of a field part of the primary key cannot change.|Upgrade|Error|
-|[AS0119](appsourcecop-as0119.md)|The value of the MovedTo property in the source symbol does not match the destination AppId.|Upgrade|Warning|
-|[AS0120](appsourcecop-as0120.md)|The value of the MovedFrom property in the destination object does not match the source AppId.|Upgrade|Warning|
+|[AS0119](appsourcecop-as0119.md)|The value of the MovedTo property in the source symbol does not match the destination AppId.|Upgrade|Error|
+|[AS0120](appsourcecop-as0120.md)|The value of the MovedFrom property in the destination object does not match the source AppId.|Upgrade|Error|
 |[AS0121](appsourcecop-as0121.md)|When a symbol is moved the name must remain the same.|Upgrade|Error|
-|[AS0122](appsourcecop-as0122.md)|Source symbol for the moved symbol cannot be found in the package with the given AppId.|Upgrade|Warning|
+|[AS0122](appsourcecop-as0122.md)|Source symbol for the moved symbol cannot be found in the package with the given AppId.|Upgrade|Error|
 |[AS0123](appsourcecop-as0123.md)|A key cannot be declared as clustered on an existing table.|Upgrade|Error|
 |[AS0124](appsourcecop-as0124.md)|Changing an extension object's target is not allowed.|Upgrade|Error|
 |[AS0125](appsourcecop-as0125.md)|Changes the XLIFF translation ID are not allowed.|Upgrade|Info|
 |[AS0126](appsourcecop-as0126.md)|InternalsVisibleTo should not specifying a different publisher name than the one of this extension.|Extensibility|Warning|
+|[AS0127](appsourcecop-as0127.md)|Objects should be placed in a namespace with at least two levels.|Extensibility|Warning|
+|[AS0128](appsourcecop-as0128.md)|An interface must not be removed from the the list of extended interfaces on an interface that has been published.|Upgrade|Error|
+|[AS0129](appsourcecop-as0129.md)|An interface must not be added to the the list of extended interfaces on an interface that has been published.|Upgrade|Error|
+|[AS0130](appsourcecop-as0130.md)|Avoid using duplicate object names|Extensibility|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -166,6 +170,7 @@ The following table describes the settings in the `AppSourceCop.json` file:
 |obsoleteTagAllowedVersions|No|A comma-separated list of Major.Minor versions that will be allowed as ObsoleteTag values by [AS0072](appsourcecop-as0072.md). This is only relevant when the default obsoleteTagPattern '(\\d+)\\.(\\d+)' is used.|
 |baselinePackageCachePath|No|The path to the folder containing the baseline and its dependencies with which you want to compare the current package for breaking changes. By default, the package cache path for the current project is used (see 'al.packageCachePath' setting).|
 |obsoleteTagMinAllowedMajorMinor|No|The minimum version of ObsoleteTag (Major.Minor) allowed during compilation. Referencing an obsolete pending object with an obsolete tag lower than the specified version will trigger the rule [AS0105](appsourcecop-as0105.md). Note that enabling this setting has a performance impact.|
+|sourceMovedObjectsPackagesCachePath|No|The path to the folder containing the packages from which tables or fields are moved to the current application. It should also contain their dependencies. If empty, move validation is disabled.|
 
 The `name`, `publisher`, `version` properties are used for specifying a previous version of the current package. This package must be located in the baseline package cache folder of your extension. This cache can be specified using the `baselinePackageCachePath` property. If this property is not specified, the dependency package cache path of the extension will be used instead. The `al.packageCachePath` setting allows you to specify the path to the folder that will act as the cache for the dependencies symbol files used by your project. AppSourceCop will compare the previous version of your extension with its current version and will report any breaking changes introduced by the current package.
 
@@ -216,7 +221,7 @@ Prepending **Foo** to the name of the page extension object will fix this error 
 > [!NOTE]  
 > It is still possible to use the `mandatoryPrefix` and `mandatorySuffix` properties in the `AppSourceCop.json`. For more information see [AS0011](appsourcecop-as0011.md).
 
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)  

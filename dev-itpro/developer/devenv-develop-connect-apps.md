@@ -3,33 +3,33 @@ title: Get started developing Connect apps for Dynamics 365 Business Central
 description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 07/14/2023
+ms.date: 11/13/2024
 ms.topic: conceptual
 ms.collection: get-started
 ms.reviewer: solsen
 ---
 
-# Get started developing Connect apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
+# Get started developing Connect apps for [!INCLUDE [prod_long](includes/prod_long.md)]
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-A Connect app establishes a point-to-point connection between [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and a third party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. In the following section, you can read about how you get started exploring the available APIs for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
+A Connect app establishes a point-to-point connection between [!INCLUDE [prod_long](includes/prod_long.md)] and a third-party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. In the following section, you can read about how you get started exploring the available APIs for [!INCLUDE [prod_long](includes/prod_long.md)].
 
-[![Shows how the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
+[![Shows the API stack in Business Central](media/api-stack.svg)](media/api-stack.svg#lightbox)
 
-To explore and develop against REST APIs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you must first sign up for a trial tenant, and then you have to connect and authenticate. To do that, follow the steps below.
+To explore and develop against REST APIs in [!INCLUDE [prod_long](includes/prod_long.md)], you must first sign up for a trial tenant, and then you must connect and authenticate. To do that, follow these steps:
 
 1. Sign up for [Dynamics 365 Business Central](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1).  
-When you have your tenant, you can sign into the UI to play with the product, and [explore the APIs](/dynamics-nav/api-reference/v2.0)
+When you have your tenant, you can sign into the UI to explore the product and the [APIs](/dynamics-nav/api-reference/v2.0)
 2. There are two different ways to connect to and authenticate against the APIs.  
     - Use Microsoft Entra ID based authentication against the common API endpoint: `https://api.businesscentral.dynamics.com/v2.0/<environment name>/api/v2.0`
     - Use basic authentication with username and password (a so-called web service access key) against the common API endpoint that includes the user domain, for example `https://api.businesscentral.dynamics.com/v2.0/production/cronus.com/api/v2.0`.  
         > [!IMPORTANT]  
         > When going into production, you should use Microsoft Entra/OAuth v2 authentication and the common endpoint `https://api.businesscentral.dynamics.com/v2.0/production/api/v2.0`. For exploring and initial development, you can use basic authentication.
         > [!IMPORTANT]  
-        > Basic authentication is deprecated with Business Central 2022, release wave 1 for SaaS. For more information, see [Deprecated Features in the Platform - Clients, Server, and Database](../upgrade/deprecated-features-platform.md#accesskeys).
+        > Basic authentication is deprecated with Business Central 2022, release wave 1 for SaaS. Learn more in [Deprecated features in the platform - clients, server, and database](../upgrade/deprecated-features-platform.md#accesskeys).
 
-To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a List of Environments](../webservices/api-get-environments.md). OAuth required for this endpoint. 
+To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a list of environments](../webservices/api-get-environments.md). OAuth is required for this endpoint. 
 
 <!-- Learn more in the [Exploring the APIs with Postman and Microsoft Entra authentication](#explore-rest-apis-with-postman-and-microsoft-entra-authentication) section. -->
 
@@ -40,7 +40,7 @@ APIs can also be explored through the [OpenAPI specification for Business Centra
 
 ## Set up Microsoft Entra ID based authentication
 
-Sign in to the [Azure portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
+Sign in to the [Azure portal](https://portal.azure.com) to register [!INCLUDE [prod_long](includes/prod_long.md)] as an app and thereby provide access to [!INCLUDE [prod_long](includes/prod_long.md)] for users in the directory.
 
 1. Follow the instructions in the [Integrating applications with Microsoft Entra ID](/azure/active-directory/develop/quickstart-register-app) article. The next steps elaborate on some of the specific settings you must enable.
 2. On the **API permissions** page for your app, select the **Add a permission** button. 
@@ -48,15 +48,15 @@ Sign in to the [Azure portal](https://portal.azure.com) to register [!INCLUDE[d3
 4. Ensure that the right permission is checked: **Financials.ReadWrite.All**. Use the search box if necessary.
 5. Choose the **Add permissions** button.
     > [!NOTE]  
-    > If **Dynamics 365** does not show up in search, it's because the tenant does not have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] with a user from the directory. 
+    > If **Dynamics 365** doesn't show up in search, it's because the tenant doesn't have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for [!INCLUDE [prod_long](includes/prod_long.md)] with a user from the directory. 
 
 6. From the **Certificates & secrets** page, in the **Client secrets** section, choose **New client secret**:
     - Type a key description (of instance app secret),
-    - Select a key duration of either In 1 year, In 2 years, or Never Expires.
-    - When you select the Add button, the key value will be displayed, copy, and save the value in a safe location.
+    - Select a key duration of either **In 1 year**, **In 2 years**, or **Never Expires**.
+    - When you select the **Add** button, the key value is displayed, then copy, and save the value in a safe location.
 
     > [!NOTE]  
-    > You'll need this key later to configure the project in Visual Studio. This key value will not be displayed again, nor retrievable by any other means, so record it as soon as it is visible from the Azure portal.
+    > You'll need this key later to configure the project in Visual Studio. This key value won't be displayed again, nor is it retrievable by any other means, so record it as soon as it's visible from the Azure portal.
 
 You have now set up the Microsoft Entra ID based authentication. Next, you can go exploring the APIs. 
 
@@ -97,13 +97,6 @@ In this `Hello World` example, we're going over the basic steps required to retr
 5. Scroll down and choose **Use token** button.  
 An Authorization request header is now added containing the Bearer token.
 6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
-   > [!NOTE]  
-   > **For OAuth for testing purposes**, a multi-tenant Microsoft Entra app has been created. Admin consent is needed before the Microsoft Entra app can be used. Information is as follows:
-   > * Grant Type: Implicit
-   > * Callback URL: https://localhost 
-   > * Auth URL: https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.businesscentral.dynamics.com 
-   > * Client ID: 060af3ac-70c3-4c14-92bb-8a88230f3f38
-
 
 ## Explore APIs with Postman and basic authentication (only for on-premises)
 
@@ -130,7 +123,7 @@ Each resource is uniquely identified through an ID, see the following example of
         "@odata.context": "<endpoint>/$metadata#companies",
         "value": [
             {
-                "id": "bb6d48b6-c7b2-4a38-9a93-ad5506407f12",
+                "id": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
                 "systemVersion": "18453",
                 "name": "CRONUS USA, Inc.",
                 "displayName": "CRONUS USA, Inc.",
@@ -140,12 +133,12 @@ Each resource is uniquely identified through an ID, see the following example of
     }
 ```
 
-The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis `()` after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
+The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis `()` after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1)/`.
 
-All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore, it's a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the "CRONUS USA, Inc." company, we must call a GET on the URL `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`.
+All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/prodlong.md)] tenant. Therefore, it's a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the "CRONUS USA, Inc." company, we must call a GET on the URL `<endpoint>/companies(a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1)/customers`.
 -->
 
-## See also
+## Related information
 
 [API developer overview](devenv-api.md)
 [Using filtering with APIs](devenv-connect-apps-filtering.md)  

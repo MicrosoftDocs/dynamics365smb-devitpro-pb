@@ -87,7 +87,7 @@ Content-type: application/json
 
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [opportunity](../resources/dynamics_opportunity.md)  

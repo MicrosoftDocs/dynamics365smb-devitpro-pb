@@ -1,8 +1,8 @@
 ---
-title: "SqlIndex Property"
+title: "SqlIndex property"
 description: "Sets the actual fields that are used in the corresponding index on SQL Server."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets the actual fields that are used in the corresponding index on SQL Server.
 
 ## Applies to
--   Table Key
+-   Table key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -56,7 +56,7 @@ keys
 }
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Table Keys](../devenv-table-keys.md)   

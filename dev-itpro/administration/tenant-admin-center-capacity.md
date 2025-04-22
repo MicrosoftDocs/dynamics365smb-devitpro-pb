@@ -79,7 +79,7 @@ However, once the capacity limits are exceeded, the customers won't be able to c
 
 There are a few things that you can do to reduce the amount of data stored in a database to keep it under its current limit. For more information, see [Reducing Data Stored in Databases](database-reduce-data.md).
 
-## See also
+## Related information
  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

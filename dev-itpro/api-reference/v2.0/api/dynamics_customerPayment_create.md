@@ -29,7 +29,6 @@ POST businesscentralPrefix/companies({id})/customerPayments({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **customerPayment**, the **customerPayment** will not be updated. |
 
 
 ## Request body
@@ -49,7 +48,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/customerPayment
 Content-type: application/json
 
 {
-    "id": "17cce948-c6a5-4861-8ff5-30428ed83207",
     "lineNumber": 10000,
     "customerId": "customerId-value",
     "customerNumber": "10400",
@@ -89,7 +87,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [Customer Payments](../resources/dynamics_customerpayment.md)  
 [Get Customer Payments](dynamics_customerpayment_get.md)  

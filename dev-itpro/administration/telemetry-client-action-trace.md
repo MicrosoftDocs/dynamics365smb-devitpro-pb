@@ -52,7 +52,7 @@ The pageViews table is a built-in table in Application Insights. Here are some o
 |eventId|**CL0003** |
 
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

@@ -1,8 +1,8 @@
 ---
-title: "MovedFrom Property"
+title: "MovedFrom property"
 description: "Specifies the origin extension ID when a table is moved to a new extension."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,9 +17,15 @@ Specifies the origin extension ID when a table is moved to a new extension. If t
 
 ## Applies to
 -   Table
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## Remarks
+
+> [!NOTE]
+> This property is currently only for Microsoft use and will be available in a future release.
+
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

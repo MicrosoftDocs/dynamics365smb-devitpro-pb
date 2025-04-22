@@ -1,5 +1,5 @@
 ---
-title: Create setupCloudMigrations
+title: (cloudMigration API) Create setupCloudMigrations
 description: Creates a setup cloud migration object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Create setupCloudMigrations
+# (cloudMigration API) Create setupCloudMigrations
 
 Creates a setup cloud migration in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
@@ -76,7 +76,7 @@ Content-type: application/json
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [setupCloudMigration](../resources/dynamics_setupCloudMigration.md)  

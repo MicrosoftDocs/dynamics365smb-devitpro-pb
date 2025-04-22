@@ -67,7 +67,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
   
 [Get Dimension Line](../api/dynamics_dimensionline_get.md)  
 [Post Dimension Line](../api/dynamics_create_dimensionline.md)  

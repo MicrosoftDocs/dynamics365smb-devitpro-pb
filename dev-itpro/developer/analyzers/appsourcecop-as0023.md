@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0023"
 description: "A return type cannot be modified in external procedures."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -167,7 +167,7 @@ codeunit 50100 MyCodeunit
 
 In version 2.0, the procedure is now marked as a TryFunction. This means that this return type has implicitly been changed to Boolean. Similarly, it is possible to add a TryFunction attribute on a function that already returned a Boolean.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

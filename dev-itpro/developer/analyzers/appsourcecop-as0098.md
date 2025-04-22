@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0098"
 description: "An affix is needed."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -51,7 +51,7 @@ For detailed examples, see [AS0011](appsourcecop-as0011.md).
 > [!IMPORTANT]  
 > Introducing a new enum value can be a breaking change if this enum value is stored in the database. You must carefully assess the impact of your changes before introducing a new enum value. This implies writing upgrade code for your app and for the dependent extensions storing this enum value in their own tables.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

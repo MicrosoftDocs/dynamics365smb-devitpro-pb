@@ -1,6 +1,6 @@
 ---
-title: dimensionValue resource type
-description: A dimension value object in Dynamics 365 Business Central.
+title: dimensionValue resource type (Beta)
+description: A dimension value object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -69,5 +69,5 @@ Here is a JSON representation of the dimensionValue resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET dimensionValue](../api/dynamics_dimensionvalue_get.md)

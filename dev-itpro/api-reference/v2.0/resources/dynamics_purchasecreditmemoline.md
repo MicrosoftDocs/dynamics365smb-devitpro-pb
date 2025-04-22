@@ -111,7 +111,7 @@ Here is a JSON representation of the purchaseCreditMemoLine resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET purchaseCreditMemoLine](../api/dynamics_purchasecreditmemoline_get.md)
 [DELETE purchaseCreditMemoLine](../api/dynamics_purchasecreditmemoline_delete.md)
 [POST purchaseCreditMemoLine](../api/dynamics_purchasecreditmemoline_create.md)

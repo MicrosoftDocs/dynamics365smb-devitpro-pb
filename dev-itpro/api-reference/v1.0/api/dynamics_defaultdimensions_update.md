@@ -84,7 +84,7 @@ Here is an example of the response.
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [defaultDimension resource](../resources/dynamics_defaultDimension.md)  
 [Get defaultDimensions](../api/dynamics_defaultdimensions_get.md)  

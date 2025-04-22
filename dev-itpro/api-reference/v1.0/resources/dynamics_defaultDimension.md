@@ -86,7 +86,7 @@ Here is a JSON representation of the resource.
 ```
 
 
-## See also
+## Related information
 [Get defaultDimensions](../api/dynamics_defaultdimensions_get.md)  
 [Create defaultDimensions](../api/dynamics_defaultdimensions_create.md)  
 [Update defaultDimensions](../api/dynamics_defaultdimensions_update.md)  

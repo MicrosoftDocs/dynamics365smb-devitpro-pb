@@ -157,7 +157,7 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 |A snapshot debugger session with a [!INCLUDE[prod_short](includes/prod_short.md)] server will be closed if not attached to after 30 minutes.|
 |If a snapshot debugger session is started, it has to be finished after 10 minutes.|
  
-## See Also
+## Related information
 
 [Debugging](devenv-debugging.md)  
 [Attach and Debug Next](devenv-attach-debug-next.md)  

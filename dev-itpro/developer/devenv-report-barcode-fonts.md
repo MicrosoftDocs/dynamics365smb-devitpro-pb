@@ -54,7 +54,7 @@ IDAutomation also provides evaluation (demo) fonts for trial and test purposes. 
 
 When you're applying barocode font in the report layout for a Business Central online production environment, be sure to use the purchased font name; not the evaluation font name. If you use the evaluation font name, the barcode won't render. Refer to font specifications linked above to see a list of purchased font names.
 
-## See Also
+## Related information
 
 [Adding Barcodes to Reports](devenv-report-add-barcodes.md)  
 [Request Pages](devenv-request-pages.md)  

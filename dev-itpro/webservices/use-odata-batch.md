@@ -126,6 +126,6 @@ The following response includes successful responses for the first two inner req
 ```
   
   
-## See Also  
+## Related information  
  [OData Web Services](OData-Web-Services.md)   
  [Using OData to Return-Obtain a JSON Document](return-obtain-json-document.md)   

@@ -80,5 +80,5 @@ Here is a JSON representation of the salesShipmentLine resource.
 
 
 
-## See Also
+## Related information
 [GET salesShipmentLine](../api/dynamics_salesShipmentLine_Get.md)

@@ -63,7 +63,7 @@ Here is a JSON representation of the customerPaymentJournal resource.
 }
 ```
 
-## See also
+## Related information
 
 [GET customerPaymentJournal](../api/dynamics_customerPaymentJournal_Get.md)  
 [DELETE customerPaymentJournal](../api/dynamics_customerPaymentJournal_Delete.md)  

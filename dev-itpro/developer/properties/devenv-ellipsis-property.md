@@ -1,8 +1,8 @@
 ---
-title: "Ellipsis Property"
+title: "Ellipsis property"
 description: "Sets a value that specifies whether an ellipsis (...) is appended to the caption on a command button or menu item."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -31,6 +31,6 @@ Sets a value that specifies whether an ellipsis (...) is appended to the caption
 Ellipsis = true;
 ```
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

@@ -1,8 +1,8 @@
 ---
-title: "Unique Property"
+title: "Unique property"
 description: "Sets a value that indicates whether a SQL Server unique constraint that corresponds to the key should be created."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets a value that indicates whether a SQL Server unique constraint that corresponds to the key should be created.
 
 ## Applies to
--   Table Key
+-   Table key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -55,6 +55,6 @@ keys
 
 ```
 
-## See Also
+## Related information
 
 [Table Keys](../devenv-table-keys.md)  

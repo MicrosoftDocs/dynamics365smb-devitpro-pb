@@ -2,7 +2,7 @@
 title: "System.CalcDate(DateFormula [, Date]) Method"
 description: "Calculates a new date that is based on a date expression and a reference date."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -123,7 +123,7 @@ The message window displays the following text:
 **The expression: CM+30D returns 06/30/96**  
 
  
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

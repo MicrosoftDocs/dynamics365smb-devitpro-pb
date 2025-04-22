@@ -363,7 +363,7 @@ In the table below, you can read more about the scenarios and get sample KQL cod
 
 For more information about how to setup alerts on telemetry, see [Alert on Telemetry](telemetry-alert.md).
 
-## See also
+## Related information
 
 [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks)   
 [How the Job Queue works](../developer/devenv-job-queue.md)   

@@ -21,6 +21,6 @@ Field '{0}' is removed and cannot be used in an active key.
 An obsolete field cannot be used in a key.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

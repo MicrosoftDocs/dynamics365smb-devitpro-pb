@@ -21,6 +21,6 @@ The value assigned to the SystemPart type is not valid. Valid values are {0}.
 The value assigned to the SystemPart type must be Notes, Links, MyNotes or Outlook.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

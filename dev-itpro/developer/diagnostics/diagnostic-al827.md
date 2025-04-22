@@ -21,6 +21,6 @@ Argument {0}: The argument {0} of field class {1} is not supported. Allowed fiel
 For more information about field classes, refer to the property's documentation.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

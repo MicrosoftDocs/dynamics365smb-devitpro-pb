@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0021"
 description: "An argument in an event attribute cannot be changed to false."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -163,7 +163,7 @@ codeunit 50100 MyCodeunit
 
 In the newer version of the extension, the sender becomes exposed through the business type event. 
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

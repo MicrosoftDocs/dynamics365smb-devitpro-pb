@@ -1,8 +1,8 @@
 ---
-title: "DefaultLayout System Option"
+title: "DefaultLayout system option"
 description: "The default layout to be used by a report."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,6 +24,6 @@ The default layout to be used by a report.
 |Excel|The default layout is Excel.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

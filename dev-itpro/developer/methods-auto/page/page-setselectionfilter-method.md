@@ -2,7 +2,7 @@
 title: "Page.SetSelectionFilter(var Record) Method"
 description: "Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to marked only."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -35,7 +35,7 @@ An instance of the [Page](page-data-type.md) data type.
 
 ## Remarks
 
-If all records are selected, marks will not be used.  
+If all records are selected, marks won't be used.  
   
 If only the current record is selected on the page, then SetSelectionFilter does the following:  
   
@@ -61,7 +61,7 @@ var
     ContactRecordRef: RecordRef;
 begin
     CurrPage.SetSelectionFilter(Contact);
-    Contact.Next;
+    Contact.Next();
 
     if Contact.Count = 1 then
         CRMIntegrationManagement.UpdateOneNow(Contact.RecordId)
@@ -72,7 +72,8 @@ begin
 end;
 ```
 
-## See Also
+## Related information
+
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -23,6 +23,6 @@ When implementing camera access from AL, there are some options; `Microsoft.Dyna
 |`string EncodingType`|The encoding of the returned image file. Supported values are as follows: `JPEG`, `PNG`. Default is `JPEG`.|  
 |`bool AllowEdit`|A value indicating whether to enable simple editing of image before selection. Default is `FALSE`.|  
 
-## See also
+## Related information
 
 [Implementing the camera in AL](devenv-implement-camera-al.md)

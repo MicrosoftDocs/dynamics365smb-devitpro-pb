@@ -60,7 +60,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
 
 [Get Journal](../api/dynamics_journal_get.md)  
 [Create Journal](../api/dynamics_create_journal.md)  

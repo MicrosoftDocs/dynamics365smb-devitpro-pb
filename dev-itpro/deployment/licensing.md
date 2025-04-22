@@ -4,7 +4,7 @@ author: jswymer
 description: Provides an overview of the licensing in Business Central
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 05/30/2024
+ms.date: 08/08/2024
 ms.reviewer: solsen
 ---
 
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses can only be purchased through CSP. Microsoft offers several types of paid licenses for business users:
 
-- Essential  
+- Essentials  
 - Premium  
 - Team Member  
 - External Accountant  
@@ -28,7 +28,7 @@ Prospects and customers can also subscribe for an evaluation version by using se
 
 Behind the scenes, the **Entitlements** table defines license permissions per object. Entitlements are grouped in the **Entitlement Set** table, and then each entitlement set is associated with one of the four Microsoft Entra ID service plans.  
 
-This condition means that when a user purchases, for example, an Essential license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essential) from Microsoft Entra ID. Then, we load the corresponding entitlements as license permissions.  
+This condition means that when a user purchases, for example, an Essentials license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essentials) from Microsoft Entra ID. Then, we load the corresponding entitlements as license permissions.  
 
 > [!NOTE]
 > For more information about the different types of licenses and how licensing works in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], see the Dynamics 365
@@ -59,7 +59,7 @@ Now, you can explore such functionality by creating an evaluation company in eit
 
 ## Reassigning licenses
 
-The licensing terms in the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) document don't allow temporary assignment of a license that belongs to one user to another user.
+The licensing terms in the [Online Services Terms](https://go.microsoft.com/fwlink/?LinkId=2180986) <!--(https://www.microsoft.com/licensing/product-licensing/products)-->document don't allow temporary assignment of a license that belongs to one user to another user.
 
 Most, but not all, licenses can be reassigned. Except as permitted in this paragraph or in the Online Service-specific Terms, the customer can't reassign a license on a short-term basis, meaning within 90 days of the latest assignment. The customer can reassign a license on a short-term basis to cover a user's absence or the unavailability of a device that is out of service. Reassignment of a license for any other purpose must be permanent. When a customer reassigns a license from one device or user to another, they must block access and remove any related software from the former device or from the former user's device.
 
@@ -108,7 +108,7 @@ Microsoft 365 users can access [!INCLUDE [prod_short](../developer/includes/prod
 
 For a detailed overview of the use rights, minimum requirements and which Microsoft 365 plans are supported, see [Business Central Access with Microsoft 365 Licenses](/dynamics365/business-central/admin-access-with-m365-license).
 
-## See Also  
+## Related information  
 
 [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](Deployment.md)  

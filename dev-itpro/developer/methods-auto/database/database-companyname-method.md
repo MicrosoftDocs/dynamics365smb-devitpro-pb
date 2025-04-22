@@ -2,7 +2,7 @@
 title: "Database.CompanyName() Method"
 description: "Gets the current company name."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -40,12 +40,12 @@ var
     CompName: Text[1024];
     Text000: Label 'The name is %1.';
 begin
-    CompName := CompanyName;  
+    CompName := CompanyName();  
     Message(Text000, CompName);  
 end;
 ```  
 
-## See Also
+## Related information
 
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

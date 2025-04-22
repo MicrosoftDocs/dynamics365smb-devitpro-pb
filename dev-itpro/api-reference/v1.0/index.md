@@ -29,7 +29,7 @@ For information about enabling APIs for [!INCLUDE[prod_short](../../includes/pro
 
 [!INCLUDE[extending_APIs_is_not_supported](../../developer/includes/include-extending-APIs-is-not-supported.md)]
 
-## See Also
+## Related information
 
 [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use)   
 [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md)  

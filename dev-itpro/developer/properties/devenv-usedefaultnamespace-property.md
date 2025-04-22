@@ -1,8 +1,8 @@
 ---
-title: "UseDefaultNamespace Property"
+title: "UseDefaultNamespace property"
 description: "Specifies whether the value in default namespace should be used for both output and input XML documents."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ UseDefaultNamespace = true;
   
 For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Namespaces Property](devenv-namespaces-property.md)   

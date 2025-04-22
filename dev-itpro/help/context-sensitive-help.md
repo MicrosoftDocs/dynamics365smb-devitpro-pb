@@ -150,20 +150,20 @@ Once you've done this mapping, you can apply it to the **Page Documentation** ta
 
 You can find a couple of suggestions for how to go about this in our blog post, [Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/).
 
-## See also
+## Related information
 
-[User Assistance Model](../user-assistance.md)  
-[Resources for Help and Support for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../help-and-support.md)  
-[Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
-[Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)    
-[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../developer/devenv-extension-example.md)  
-[Building an Advanced Sample Extension](../developer/devenv-extension-advanced-example.md)  
-[Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
-[JSON Files](../developer/devenv-json-files.md)  
+[User assistance model](../user-assistance.md)  
+[Resources for help and support for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../help-and-support.md)  
+[Adding help links from pages, reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[Migrate legacy help to the Business Central format](../upgrade/migrate-help.md)    
+[Building your first sample extension with extension objects, install code, and upgrade code](../developer/devenv-extension-example.md) 
+[Building an advanced sample extension](../developer/devenv-extension-advanced-example.md)  
+[Development of a localization solution](../developer/readiness/readiness-develop-localization.md)  
+[JSON files](../developer/devenv-json-files.md)  
 [Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
 [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
 [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/)  
-[Docs Contributor Guide](/contribute/)  
-[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
+[Docs contributor guide](/contribute/)  
+[Docs authoring pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

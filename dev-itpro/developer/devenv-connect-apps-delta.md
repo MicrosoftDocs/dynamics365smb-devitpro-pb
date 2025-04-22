@@ -86,7 +86,7 @@ The response would return with the specified changes in the result, see the foll
 > [!NOTE]
 > Starting in Business Central 2023 release wave 2 (v23), delta links are deprecated and will be removed from the product in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
 
-## See Also
+## Related information
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
 [Tips for working with the APIs](devenv-connect-apps-tips.md)  

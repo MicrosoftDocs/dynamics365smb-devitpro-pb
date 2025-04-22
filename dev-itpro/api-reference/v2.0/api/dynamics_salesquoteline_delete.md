@@ -55,7 +55,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesquoteline](../resources/dynamics_salesquoteline.md)    
 [Get salesquoteline](dynamics_salesquoteline_Get.md)    

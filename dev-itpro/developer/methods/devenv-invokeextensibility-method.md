@@ -55,7 +55,7 @@ map.onLoadMap = function () {
 map.LoadMap(...);  
 ```
 
-## See also
+## Related information
 
 [AL method reference](../methods-auto/library.md)  
 [GetEnvironment method](devenv-getenvironment-method.md)   

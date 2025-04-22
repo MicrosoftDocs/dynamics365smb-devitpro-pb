@@ -2,7 +2,7 @@
 title: "Table System fields"
 description: Description of the table System fields.
 author: jswymer
-ms.date: 04/01/2021
+ms.date: 06/20/2024
 ms.topic: conceptual
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -209,7 +209,7 @@ FieldRef := RecordRef.Field(0);
 Message(Format(FieldRef.Value()));
 ```
 
-## See Also
+## Related information
 
 [Table Object](devenv-table-object.md)  
 [AL Development Environment](devenv-reference-overview.md)  

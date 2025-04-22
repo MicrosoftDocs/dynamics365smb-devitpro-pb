@@ -82,5 +82,5 @@ Here is a JSON representation of the extension resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET extension](../api/dynamics_extension_get.md)  

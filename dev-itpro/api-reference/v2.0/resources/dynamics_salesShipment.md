@@ -137,5 +137,5 @@ Here is a JSON representation of the salesShipment resource.
 
 
 
-## See Also
+## Related information
 [GET salesShipment](../api/dynamics_salesShipment_Get.md)

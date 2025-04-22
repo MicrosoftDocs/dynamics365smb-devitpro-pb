@@ -36,7 +36,7 @@ This topic describes how to use PerfView to view [!INCLUDE[server](../developer/
   
 5.  To view details about a trace event, double-click the trace event.  
   
-## See Also  
+## Related information  
  [Use PerfView to Collect Event Trace Data](monitor-use-perfview-collect-event-trace-data.md)   
  [Use Performance Monitor to Collect Event Trace Data](monitor-use-performance-monitor-collect-event-trace-data.md)   
  [Monitoring Business Central Server Events](monitor-server-events.md)   

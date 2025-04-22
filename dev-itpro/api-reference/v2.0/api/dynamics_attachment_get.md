@@ -51,7 +51,7 @@ GET https://{businesscentralPrefix}/api/v1.0/companies({id})/attachments?$filter
 Here is an example of the response. 
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {   
@@ -64,7 +64,7 @@ Here is an example of the response.
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [attachment](../resources/dynamics_attachment.md)    
 [Delete attachment](dynamics_attachment_Delete.md)    

@@ -2,7 +2,7 @@
 title: "HttpClient.Send(HttpRequestMessage, var HttpResponseMessage) Method"
 description: "Sends an HTTP request as an asynchronous operation."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -48,7 +48,6 @@ The method HttpClient.Send can fail and return false in the following ways:
 - The requestUri is not an absolute URI.
 - The chosen HTTP method is not supported.
 - The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.
-- The request failed due to timeout.
 
 [!INCLUDE[allowhttpclientnote](../../../includes/include-http-allowhttpclient-note.md)]
 
@@ -127,7 +126,7 @@ The preceding code:
 
 [!INCLUDE[SupportedHTTPmethods](../../../includes/include-http-methods.md )]
 
-## See Also
+## Related information
 [Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

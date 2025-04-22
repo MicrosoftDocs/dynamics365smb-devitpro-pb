@@ -2,7 +2,7 @@
 title: "TestPage.Yes() Method"
 description: "Gets the Yes system action."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -51,7 +51,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [TestPage Data Type](testpage-data-type.md)  
 [Invoke Method](../testaction/testaction-invoke-method.md)  
 [Get Started with AL](../../devenv-get-started.md)  

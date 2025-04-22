@@ -27,7 +27,6 @@ POST businesscentralPrefix/companies({id})/documentAttachments({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **documentAttachment**, the **documentAttachment** will not be updated. |
 
 ## Request body
 
@@ -82,7 +81,7 @@ Content-type: application/json
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [documentAttachment](../resources/dynamics_documentAttachment.md)  

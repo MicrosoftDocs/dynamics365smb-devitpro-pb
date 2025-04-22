@@ -58,6 +58,6 @@ Here is a JSON representation of the resource.
     "dateFilter": "date"
 }
 ```
-## See also
+## Related information
 
 [Get Trial Balance](../api/dynamics_trialbalance_get.md)  

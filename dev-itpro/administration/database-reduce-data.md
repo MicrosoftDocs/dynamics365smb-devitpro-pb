@@ -74,7 +74,7 @@ There are two ways to enable or change data compression in [!INCLUDE[prod_short]
 
 For more information about data compression, see [Using table partitioning and data compression](using-sql-partitioning-and-compression.md).
 
-## See Also
+## Related information
 
 [Managing Capacity](tenant-admin-center-capacity.md)  
 [Creating Databases in Business Central](../deployment/devenv-create-databases.md)  

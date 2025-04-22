@@ -15,7 +15,7 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1, we're 
 
 Users who have already been using the modern action bar notice a few extra optimizations in its newest version, such as a more compact representation of Search and Analysis Mode, and the introduction of Microsoft Copilot!
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1jUai]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4f83a746-e32c-41a2-923b-7447e7c26261]
 
 Users who *haven't* been using the modern action bar with earlier releases of [!INCLUDE [prod_short](includes/prod_short.md)] experience that the action bar looks different to what they were used to, and that some of their routines can need adjustment. The reason is that the modern action bar places some actions differently compared to the earlier action bar (now known as the **legacy action bar**) to give more prominence to important actions and reduce the numbers of clicks to access them.
 
@@ -37,7 +37,7 @@ While most users are confident with split buttons, and likely know the concept f
 
 The Legacy Action Bar toggle is available in users' **My settings** page and reverts the action bar for individual users to the earlier appearance before the modern action bar. We recommend using the modern action bar for the best productivity and that future releases of [!INCLUDE [prod_short](includes/prod_short.md)] might not provide the legacy action bar option.
 
-## See also
+## Related information
 
 [Actions in AL](devenv-actions-overview.md)  
 [Adding actions to a page](devenv-adding-actions-to-a-page.md)  

@@ -22,7 +22,7 @@ To ensure the availability and quality of [!INCLUDE[prod_short](includes/prod_sh
 For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises environments, you can control limits for operations related to sessions, such as how many child or background sessions, or scheduled tasks that can run at the same time. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 
-## See also
+## Related information
 
 [Job queue](devenv-job-queue.md)   
 [Page background tasks](devenv-page-background-tasks.md)  

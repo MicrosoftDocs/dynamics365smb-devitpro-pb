@@ -207,7 +207,7 @@ The following figure illustrates the flow associated with a Word report layout t
 
     If you have two methods with the same name, one defined in a report and the other in a table that is referenced by the report, you cannot invoke the method defined in the report directly. By default, a call to the method invokes the method that's defined in the table. This behavior occurs when the method is called from a source expression or a trigger.
 
-## See Also
+## Related information
 
 [Report Triggers](triggers-auto/report/devenv-oninitreport-report-trigger.md)   
 [Report Data Item Triggers](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)   

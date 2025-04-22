@@ -2,7 +2,7 @@
 title: "Xmlport.Export(Integer, var OutStream [, var Record]) Method"
 description: "Creates an XML data stream (XML document) and sends it to a chosen destination."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -41,7 +41,7 @@ The record to use in the XmlPort. Any filters attached to the record will be use
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Xmlport Data Type](xmlport-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

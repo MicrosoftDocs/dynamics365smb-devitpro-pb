@@ -37,7 +37,7 @@ If you often need to create sales and purchase lines with similar information, y
 
 [!INCLUDE [fields-obsolete-nl](../includes/fields-obsolete-nl.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

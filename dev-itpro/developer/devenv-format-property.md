@@ -1,22 +1,24 @@
 ---
 title: Formatting values, dates, and time
-description: Explains the Format functionality in Business Central.
-ms.date: 03/14/2024
+description: Learn how to format values, dates, and time in Business Central.
+ms.date: 03/18/2025
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
+ms.author: solsen
 ---
 
 # Formatting values, dates, and time
 
-With the `Format` method in Business Central, you can set the format of the source expression for various data types in AL.  
+The `Format` method in [!INCLUDE [prod_short](includes/prod_short.md)] sets the format of the source expression for various data types in AL.
   
 ## Remarks  
 
-You can choose to set `Format` to a predefined format, or you can build your own format. For more information, see [Format Method (Integer, Text)](methods-auto/system/system-format-joker-integer-string-method.md) and [Format Method (Any [, Integer] [, Integer])](methods-auto/system/system-format-joker-integer-integer-method.md). 
-  
+Set `Format` to a predefined format, or build your own format. Learn more in [Format method (Integer, Text)](methods-auto/system/system-format-joker-integer-string-method.md) and [Format method (Any [, Integer] [, Integer])](methods-auto/system/system-format-joker-integer-integer-method.md).
+
 ## Basic settings  
 
-To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* is one of the entries in the Value column of the following table.  
+To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* is one of the entries in the **Value** column of the following table.  
   
 |Value|Description|  
 |-----|---------------------------------------|  
@@ -25,21 +27,21 @@ To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* 
 |2|AL Code Constant Format|  
   
 > [!NOTE]  
-> You must enter the `<` and `>` angle brackets, such as `<Standard Format,2>`.  
-  
+> You must enter the `<` and `>` angle brackets, such as `<Standard Format,2>`. 
+
 ## Building formats  
 
-You can use `Format` to create your own formats. To create a format, use the following rules:  
+Use `Format` to create your own formats. Follow these rules to create a format:
   
 - A format property consists of zero or more chars, fields, or attributes.  
-- Fields and attributes are expressed by using an identifier enclosed in brackets (<>).  
-- Attributes must contain a comma (,) and a parameter after the identifier.  
-- Fields can optionally take a comma (,) and a FieldLen.  
+- Fields and attributes are expressed by using an identifier enclosed in brackets `<>`.  
+- Attributes must contain a comma `,` and a parameter after the identifier.  
+- Fields can optionally take a comma `,` and a FieldLen.  
   
 The following table shows the syntax.  
   
 |Syntax|Values|  
-|-|-|  
+|------|------|  
 |FormatProperty :=|\[\<Char> &#124; \<Field> &#124; \<Attribute>\]|  
 |\<Char> :=|character with ASCII value \[32..255\]|  
 |\<Field> :=|'\<' \<FieldName> \[',' \<FieldLen>\] '>'<br /><br /> \[, \<Attribute>\]|  
@@ -47,13 +49,18 @@ The following table shows the syntax.
 |\<FieldLen> :=|length of field \(0 or no entry means that the length is dynamic\)|  
 |\<Attribute> :=|\['\<' \<AttributeName> ',' \<Char> '>'\]|  
 |\<AttributeName> :=|\[Standard Format &#124; 1000Character &#124; Comma &#124; Overflow &#124; Filler Character &#124; Precision\]|  
-  
-The `1000Character` attribute specifies the character that separates the thousandths place digit from the hundredths place digit, the millionth place digit from the hundred thousandths place digit, and so on. The 1000Character attribute must be after the Integer or Integer Thousand field name and before the Decimals field name.  
-  
-The Comma attribute specifies the character that separates the integer from the decimals. The Comma attribute must be after the Decimals field name.  
-  
-Filler Character indicates the character that is used to fill empty spaces.  
-  
+
+### AttributeName values
+
+|AttributeName value|Description|
+|----------------|----------------------|
+|Standard Format| The `Standard Format` attribute specifies the standard format that you want to use. The Standard Format attribute must be the first attribute in the format expression.|
+|1000Character| The `1000Character` attribute specifies the character that separates the thousandths place digit from the hundredths place digit, the millionth place digit from the hundred thousandths place digit, and so on. The `1000Character` attribute must be after the `Integer` or `Integer Thousand` field name and before the Decimals field name.|
+|Comma| The `Comma` attribute specifies the character that separates the integer from the decimals. The `Comma` attribute must be after the `Decimals` field name.|
+|Filler Character | The `Filler Character` indicates the character that's used to fill empty spaces.|
+
+### FieldName values
+
 The FieldName is a component that you can use to build a format expression. Depending on the data type in the field, you can choose the appropriate FieldName from this list.  
   
 |Data type|FieldName values|  
@@ -69,32 +76,32 @@ The FieldName is a component that you can use to build a format expression. Depe
 |Char|Char/Number, Char, Number|  
 |Text|Text|  
   
-### Example  
+#### Example  
 
-The following examples demonstrate how to use `Format`:  
+These examples demonstrate how to use `Format`:
   
 - Choosing a standard format.  
   
-     Use the Standard Format attribute to select one of the standard formats (these are listed at the end of this topic).  
+     Use the Standard Format attribute to select one of the standard formats (these are listed at the end of this article).  
   
      For example, <Standard Format,5> selects Standard Format 5.  
   
 - Using a standard format with an attribute.  
   
-     <Precision,2:3><Standard Format,0> will use Standard Format 0 and will format the data with a minimum of 2 and a maximum of 3 decimal places. For more information, see [DecimalPlaces Property](properties/devenv-decimalplaces-property.md). If you do not specify a precision, then the page uses the precision that is specified in the [DecimalPlaces Property](properties/devenv-decimalplaces-property.md) of the corresponding field in the table.  
+     <Precision,2:3><Standard Format,0> will use Standard Format 0 and will format the data with a minimum of 2 and a maximum of 3 decimal places. Learn more in [DecimalPlaces property](properties/devenv-decimalplaces-property.md). If you don't specify a precision, then the page uses the precision that is specified in the [DecimalPlaces property](properties/devenv-decimalplaces-property.md) of the corresponding field in the table.  
   
 - Building a format.  
   
      You can create your own formats using Chars (which are displayed literally), Fields (to choose specific components of a value, for example the year-part of a date) and Attributes (for example to select which character to use as a filler).  
   
-     For example, a field that is based on a source expression of the Date data type can use the following format string:  
+     For example, a field that's based on a source expression of the Date data type can use the following format string:  
   
      \<Weekday Text>, \<Month Text> \<Day>   
   
      This expression displays the date as **Monday, April 15**.  
   
     > [!NOTE]  
-    > The settings that are specified under the Regional and Language Options in Windows determine how some separators are displayed. In the Business Central client, you can specify a **Region** under **Settings**, this determines how thousand and decimal separators are displayed.
+    > The settings that are specified under the Regional and Language Options in Windows determine how some separators are displayed. In the [!INCLUDE [prod_short](includes/prod_short.md)] client, you can specify a **Region** under **Settings**, this determines how thousand and decimal separators are displayed.
   
 ## Standard decimal formats
 
@@ -249,7 +256,7 @@ For Chars, all formats should resemble the following: <Char/Number>.
   
 For Text and Code, all formats should resemble the following: \<Text>.  
   
-## See Also
+## Related information
 
 [DecimalPlaces property](properties/devenv-decimalplaces-property.md)  
 [About dates in Business Central](devenv-about-dates.md)

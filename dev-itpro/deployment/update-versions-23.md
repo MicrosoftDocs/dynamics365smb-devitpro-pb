@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 05/31/2024
+ms.date: 04/04/2025
 ms.custom: bap-template
 ---
 
@@ -28,23 +28,33 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|[5040043](https://support.microsoft.com/help/5040043)|Update 23.8 |June 2024|Application Build 23.8</br>Platform Build 23.0| 
-|[5038530](https://support.microsoft.com/help/5038530)|Update 23.7 |May 2024|Application Build 23.7.18957</br>Platform Build 23.0.18933| 
-|[5037541](https://support.microsoft.com/help/5037541)|Update 23.6 |April 2024|Application Build 23.6.18013</br>Platform Build 23.0.17940| 
-|[5036474](https://support.microsoft.com/help/5036474)|Update 23.5 |March 2024|Application Build 23.5.16757</br>Platform Build 23.0.16502| 
-|[5035207](https://support.microsoft.com/help/5035207)|Update 23.4 |February 2024|Application Build 23.4.15715</br>Platform Build 23.0.15712| 
-|[5034720](https://support.microsoft.com/help/5034720)|Update 23.3 |January 2024|Application Build 23.3.15024</br>Platform Build 23.0.1496623| 
-|[5033775](https://support.microsoft.com/help/5033775)|Update 23.2 |December 2023|Application Build 23.2.14562 </br>Platform Build 23.0.14532| 
-|[5032755](https://support.microsoft.com/help/5032755)|Update 23.1 |November 2023|Application Build 23.1.13812 </br>Platform Build 23.0.13804| 
+|[5056716](https://support.microsoft.com/help/5056716)|Update 23.18 |April 2025|Application Build 23.18.32409</br>Platform Build 23.0.32309|
+|[5054446](https://support.microsoft.com/help/5054446)|Update 23.17 |March 2025|Application Build 23.17.30827</br>Platform Build 23.0.30792|
+|[5052985](https://support.microsoft.com/help/5052985)|Update 23.16 |February 2025|Application Build 23.16.29653</br>Platform Build 23.0.29620|
+|[5050247](https://support.microsoft.com/help/5050247)|Update 23.15 |January 2025|Application Build 23.15.29402</br>Platform Build 23.0.29370|
+|[5049394](https://support.microsoft.com/help/5049394)|Update 23.14 |December 2024|Application Build 23.14.27722</br>Platform Build 23.0.27674|
+|[5047902](https://support.microsoft.com/help/5047902)|Update 23.13 |November 2024|Application Build 23.13.25917</br>Platform Build 23.0.25896|
+|[5046145](https://support.microsoft.com/help/5046145)|Update 23.12 |October 2024|Application Build 23.12.24784</br>Platform Build 23.0.24742|
+|[5043980](https://support.microsoft.com/help/5043980)|Update 23.11 |September 2024|Application Build 23.11.23421</br>Platform Build 23.0.23293|
+|[5042529](https://support.microsoft.com/help/5042529)|Update 23.10 |August 2024|Application Build 23.10.22604</br>Platform Build 23.0.22561|
+|[5041132](https://support.microsoft.com/help/5041132)|Update 23.9 |July 2024|Application Build 23.9.21328</br>Platform Build 23.0.21274|
+|[5040043](https://support.microsoft.com/help/5040043)|Update 23.8 |June 2024|Application Build 23.8.20231</br>Platform Build 23.0.20134|
+|[5038530](https://support.microsoft.com/help/5038530)|Update 23.7 |May 2024|Application Build 23.7.18957</br>Platform Build 23.0.18933|
+|[5037541](https://support.microsoft.com/help/5037541)|Update 23.6 |April 2024|Application Build 23.6.18013</br>Platform Build 23.0.17940|
+|[5036474](https://support.microsoft.com/help/5036474)|Update 23.5 |March 2024|Application Build 23.5.16757</br>Platform Build 23.0.16502|
+|[5035207](https://support.microsoft.com/help/5035207)|Update 23.4 |February 2024|Application Build 23.4.15715</br>Platform Build 23.0.15712|
+|[5034720](https://support.microsoft.com/help/5034720)|Update 23.3 |January 2024|Application Build 23.3.15024</br>Platform Build 23.0.1496623|
+|[5033775](https://support.microsoft.com/help/5033775)|Update 23.2 |December 2023|Application Build 23.2.14562 </br>Platform Build 23.0.14532|
+|[5032755](https://support.microsoft.com/help/5032755)|Update 23.1 |November 2023|Application Build 23.1.13812 </br>Platform Build 23.0.13804|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
-## See also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v23.md)  
-[Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates](update-versions-22.md)  
-[Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates](update-versions-21.md)  
+[Dynamics 365 Business Central On-Premises 2024 Release Wave 1 Updates](update-versions-24.md)  
+[Dynamics 365 Business Central On-Premises 2024 Release Wave 2 Updates](update-versions-25.md)  
 [Dynamics 365 Business Central On-Premises Spring 2019 Updates](update-versions-14.md)  
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements](system-requirements-business-central-v23.md)  

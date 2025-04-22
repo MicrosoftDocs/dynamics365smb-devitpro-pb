@@ -1,6 +1,6 @@
 ---
-title: Get subscriptions
-description: Gets a subscriptions object in Dynamics 365 Business Central.
+title: (Business Central Dataverse API) Get subscriptions
+description: Gets a subscriptions object in Dataverse API for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get subscriptions
+# (Business Central Dataverse API) Get subscriptions
 
 Retrieves the properties and relationships of a subscriptions object for [!INCLUDE [prod_short](../../includes/prod_short.md)].
 
@@ -69,7 +69,7 @@ Here is an example of the response.
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [subscriptions](../resources/dynamics_subscriptions.md)  

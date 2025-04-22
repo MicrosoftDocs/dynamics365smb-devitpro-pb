@@ -1,8 +1,8 @@
 ---
-title: "IndentationColumn Property"
+title: "IndentationColumn property"
 description: "Sets the name of the hidden column that controls row indentation in a List page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -50,7 +50,7 @@ repeater(Control1)
 }
 ```
 
-## See Also
+## Related information
 
 [IndentationControl Property](devenv-indentationcontrols-property.md)  
 [ShowAsTree Property](devenv-showastree-property.md)  

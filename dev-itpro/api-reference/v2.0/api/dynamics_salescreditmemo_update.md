@@ -95,7 +95,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salescreditmemo](../resources/dynamics_salescreditmemo.md)    
 [Get salescreditmemo](dynamics_salescreditmemo_Get.md)    

@@ -63,7 +63,7 @@ You can set the properties of pages and reports manually (see [Adding Pages and 
     The pages and reports will not be searchable until you run **Build Object Search Index**. 
 
 
-## See Also
+## Related information
 [Converting a Database - Technical Upgrade](converting-a-database.md)  
 [Upgrading the Data](upgrading-the-data.md)  
 

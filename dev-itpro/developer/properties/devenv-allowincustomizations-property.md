@@ -1,8 +1,8 @@
 ---
-title: "AllowInCustomizations Property"
+title: "AllowInCustomizations property"
 description: "Specifies whether this table field can be used as source expression for new page fields in page customizations."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,9 +16,9 @@ ms.reviewer: solsen
 Specifies whether this table field can be used as source expression for new page fields in page customizations.
 
 ## Applies to
--   Table Field
+-   Table field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -48,6 +48,6 @@ tableextension 50100 MyExtension extends Customer
 }
 ```
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

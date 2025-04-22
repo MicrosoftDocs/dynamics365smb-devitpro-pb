@@ -18,6 +18,6 @@ The number of files found in '{0}' exceeds {1}. This may result in a slower comp
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

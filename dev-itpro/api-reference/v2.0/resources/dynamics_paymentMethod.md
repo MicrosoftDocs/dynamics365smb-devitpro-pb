@@ -4,7 +4,7 @@ description: A payment method object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -57,7 +57,7 @@ Here is a JSON representation of the paymentMethod resource.
 
 
 
-## See Also
+## Related information
 [GET paymentMethod](../api/dynamics_paymentMethod_Get.md)  
 [DELETE paymentMethod](../api/dynamics_paymentMethod_Delete.md)  
 [POST paymentMethod](../api/dynamics_paymentMethod_Create.md)  

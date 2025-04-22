@@ -22,7 +22,7 @@ The following topic lists properties that apply to [Views](../devenv-views.md) s
 |[OrderBy](devenv-orderby-property.md) | Views |
 |[SharedLayout](devenv-sharedlayout-property.md)| Views |
 
-## See also
+## Related information
 
 [Codeunit Properties](devenv-codeunit-properties.md)  
 [Page Properties](devenv-page-property-overview.md)  

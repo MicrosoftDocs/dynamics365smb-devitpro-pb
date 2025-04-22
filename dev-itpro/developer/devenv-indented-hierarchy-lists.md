@@ -256,7 +256,7 @@ When using an indented hierarchy, consider the following behavior:
 > [!NOTE]
 > Having more than 1000 nested rows under the root level row can cause performance issues in the web client.
 
-## See Also
+## Related information
 
 [IndentationColumn Property](properties/devenv-indentationcolumn-property.md)  
 [IndentationControls Property](properties/devenv-indentationcontrols-property.md)  

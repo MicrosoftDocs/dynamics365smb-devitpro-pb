@@ -18,6 +18,6 @@ The format of property '{0}' must be a timeout duration specified as '[d.]hh:mm:
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

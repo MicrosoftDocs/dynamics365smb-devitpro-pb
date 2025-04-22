@@ -1,6 +1,6 @@
 ---
-title: generalBudgetEntry resource type
-description: A general budget entry object in Dynamics 365 Business Central.
+title: generalBudgetEntry resource type (Beta)
+description: A general budget entry object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -76,5 +76,5 @@ Here is a JSON representation of the generalBudgetEntry resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET generalBudgetEntry](../api/dynamics_generalbudgetentry_get.md)

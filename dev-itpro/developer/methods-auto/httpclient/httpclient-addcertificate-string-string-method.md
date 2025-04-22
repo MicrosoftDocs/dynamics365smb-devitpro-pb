@@ -2,7 +2,7 @@
 title: "HttpClient.AddCertificate(Text [, Text]) Method"
 description: "Adds a certificate to the HttpClient class."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -45,7 +45,7 @@ The certificate password.
 
 [!INCLUDE[httpclient_cert_note](../../includes/include-http-cert-note.md)]
 
-## See Also
+## Related information
 
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

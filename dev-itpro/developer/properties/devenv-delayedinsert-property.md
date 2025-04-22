@@ -1,8 +1,8 @@
 ---
-title: "DelayedInsert Property"
+title: "DelayedInsert property"
 description: "Sets a value that specifies whether a user must leave a record before it is inserted into the database."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -30,6 +30,6 @@ Sets a value that specifies whether a user must leave a record before it is inse
 DelayedInsert = false;
 ```
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)
