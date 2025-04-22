@@ -76,7 +76,7 @@ Specify if the debugger breaks on record changes by using the `breakOnRecordWrit
 |Delete an existing record|[Delete method (Record)](methods-auto/record/record-delete-method.md), [DeleteAll method (Record)](methods-auto/record/record-deleteall-method.md)|  
 
 
-The default value of the `breakOnRecordWrite` property is **false**, which means that the debugger isn't set to break on record changes by default. To break on record changes, you can set the `breakOnRecordWrite` property to **true** in the `launch.json` file. Learn more in [JSON Files](devenv-json-files.md).
+The default value of the `breakOnRecordWrite` property is **false**, which means that the debugger isn't set to break on record changes by default. To break on record changes, you can set the `breakOnRecordWrite` property to **true** in the `launch.json` file. Learn more about the [Launch JSON File](devenv-json-launch-file.md).
 
 ## Debugging large size variable values
 
@@ -107,7 +107,7 @@ To use the Go To Definition on local server, it requires that the AL symbols are
 
 ## <a name="DebugSQL"></a>Debugging SQL behavior
 
-Traditionally, debugging AL has been about examining the behavior of the language runtime, for example, looking into the content of local variables at a breakpoint. As of [!INCLUDE[prod_short](includes/prod_short.md)] April 2019, the AL debugger also offers the capability to examine your AL code's effect on the [!INCLUDE[prod_short](includes/prod_short.md)] database. The `enableSQLInformationDebugger` setting enables this functionality. Learn more in [Launch JSON file](devenv-json-launch-file.md).
+Traditionally, debugging AL has been about examining the behavior of the language runtime, for example, looking into the content of local variables at a breakpoint. As of [!INCLUDE[prod_short](includes/prod_short.md)] April 2019, the AL debugger also offers the capability to examine your AL code's effect on the [!INCLUDE[prod_short](includes/prod_short.md)] database. The `enableSQLInformationDebugger` setting enables this functionality. Learn more about these properties in the [Launch JSON file](devenv-json-launch-file.md).
 
 ### View database statistics
 
