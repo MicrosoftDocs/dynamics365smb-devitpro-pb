@@ -32,6 +32,9 @@ The following table describes all the different event types:
 
 The process for implementing these events is slightly different. To learn about the different types, see [Event types](devenv-event-types.md).
 
+   > [!TIP]
+   > Business Central also supports External Business Events (preview), defined with the attribute `ExternalBusinessEvent`. These events are designed to notify external systems when high level business processes occur, and have a different behavior to other event types. Learn more in [Business events on Business Central (preview)](business-events-overview.md)
+
 ## How events work
 
 The basic principle is that you program events in the application to run customized behavior when they occur. Events in AL are modeled after Microsoft .NET Framework. There are three major participants involved in events: the *event*, a *publisher*, and a *subscriber*.  

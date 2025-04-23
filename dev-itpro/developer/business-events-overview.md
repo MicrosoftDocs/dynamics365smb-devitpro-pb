@@ -294,6 +294,9 @@ Only Business Central users who have been assigned the **Ext. Events – Subscr*
 
 ### Receive notifications of business events
 
+   > [!IMPORTANT]
+   > Business Events notifications are sent to external systems only once the current transaction is committed to the database. If the transactions runs for a long time, the notification to the external system will be delayed until the transaction is completed and committed to the database. If the transaction is rolled back (for example because of an AL Error raised in the code), the notification is never sent.
+
 When a business event occurs and a subscription exists for it, Business Central sends a request to the relevant notification URL:
 
 ```json
