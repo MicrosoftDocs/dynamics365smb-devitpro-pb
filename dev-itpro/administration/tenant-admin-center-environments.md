@@ -1,6 +1,6 @@
 ---
 title: Managing Production and Sandbox Environments
-description: Use Business Central admin center to manage tenant environments, both sandbox and production. Create new environments or restore point-in-time backups.
+description: Learn how to use Business Central admin center to manage tenant environments, both sandbox and production. 
 author: jswymer
 ms.topic: conceptual
 ms.devlang: al
@@ -14,7 +14,7 @@ ms.reviewer: jswymer
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
+The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production and sandbox environments for the tenant, and allows you to manage updates for each environment.
 
 > [!div class="mx-imgBorder"]
 > [ ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)](../developer/media/admin/business_central_admin_center.png)
@@ -37,7 +37,7 @@ When a link exists between a [!INCLUDE[prod_short](../developer/includes/prod_sh
 To complete this task, you need to be an internal admin with a role that grants access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and permissions to update the properties of the targeted Power Platform environment, such as environment administrator.
 
 > [!IMPORTANT]
-> Users with an admin Entra role assigned may not automatically gain the environment administrator role on the Power Platform environment. If the Power Platform environment does not show up as available to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to, verify that you are an Environment Admin for the Power Platform environment. For more information, see [Role-based security roles](/power-platform/admin/database-security).
+> Users with an admin Entra role assigned may not automatically gain the environment administrator role on the Power Platform environment. If the Power Platform environment does not show up as available to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to, verify that you are an Environment Admin for the Power Platform environment. For more information, go to [Role-based security roles](/power-platform/admin/database-security).
 
 1. Sign in to the Business Central admin center and open the environment.
 1. In the **Linked Power Platform Environment** section on the environment page, select **Link** under **Environment** or **Modify** to change to another Power Platform environment.
@@ -47,9 +47,9 @@ To complete this task, you need to be an internal admin with a role that grants 
    > [!NOTE]
    > Only Power Platforms meeting the following conditions are available to link:
    >
-   > - In the same Azure Geo
-   > - Same type (Production or Sandbox)
-   > - Not linked to another environment already
+   > - In the same Azure Geo.
+   > - Same type of environment (Production or Sandbox).
+   > - Not linked to another environment already.
 
 1. In the **Link** pane, select the Power Platform environment, and then select **Link**.
 
@@ -61,7 +61,7 @@ Unlinked environments can be [relinked to the same or different environments](#l
 
 ## Types of environments
 
-You can create environments of different types. Choose the type of environment based on what you need it for. Learn more in [Production and Sandbox Environments](environment-types.md).  
+You can create different types of environments. Choose the type of environment based on what you need it for. Learn more in [Production and Sandbox Environments](environment-types.md).  
 
 ### Production environments
 
@@ -108,7 +108,7 @@ You can create new environments that are either production environments or sandb
    For sandbox environments, [preview versions](preview-environments.md) might be available. Preview versions provide early access to new functionality, but environments on these versions aren't updated once the version becomes available and are deleted automatically when the preview ends.  
 
    > [!IMPORTANT]
-   > You can create environments on any available version. For major version 25.x, not all minor versions might be available for every country during the entire 25.x [update period](update-rollout-timeline.md#update-period). At least one minor version of 25.x is available during this period.  
+   > You can create environments on any available version. For major version 25.x, not all minor versions are available for every country during the entire 25.x [update period](update-rollout-timeline.md#update-period). At least one minor version of 25.x is available during this period.  
 
 1. Select **Create**.  
 
@@ -121,7 +121,7 @@ To delete an environment, choose the environment on the **Environments** tab of 
 
 ## <a name="opslog"></a>Log of administrative operations
 
-The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Use this log to see which operations were created and when. You can also access detailed error messages in this log, should any operation fail.
+The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Use this log to view which operations were created and when. You can also access detailed error messages in this log, should any operation fail.
 
 ### Operations
 
@@ -129,20 +129,20 @@ Currently, the log includes the following operations:
 
 |Type|Description|Admin center|API|Extension Management Page|
 |----|-----------|------------|---|-------------------------|
-|Copy environment|An environment was created from a copy of another environment.|[See...](tenant-admin-center-environments-copy.md)|[See...](administration-center-api_environments.md#copy-environment)||
-|Create environment |A new environment was created|[See...](#create-a-new-environment)|[See...](administration-center-api_environments.md#create-new-environment)||
-|Soft delete environment|An environment was soft deleted.|[See...](tenant-admin-center-environments-delete.md#delete-an-environment)|[See...](administration-center-api_environments.md#delete-environment)||
-|Recovered environment|A deleted environment was recovered.|[See...](tenant-admin-center-environments-delete.md#recover-an-environment)|[See...](administration-center-api_environments.md#recover-environment)||
-|Delete environment|An environment was permanently deleted.|[See...](tenant-admin-center-environments-delete.md)|[See...](administration-center-api_environments.md#delete-environment)||
-|Modify environment|One of the following operations was done on an environment: <ul><li>Set update window</li><li>Set Application Insights connection string</li><li>Set security group</li><li>Clear security group</li><li>Reschedule update </li><li>Set access with Microsoft 365 licenses.</li></ul>|[See update management...](tenant-admin-center-update-management.md)<br /><br />[See telemetry...](tenant-admin-center-telemetry.md)<br /><br />[See manage access...](tenant-admin-center-manage-access.md)|[See environment settings...](administration-center-api_environment_settings.md)||
-|Move environment|An environment was moved to another Microsoft Entra organization.|[See...](tenant-admin-center-environments-move.md)|||
-|Rename environment|Environment was renamed.|[See...](tenant-admin-center-environments-rename.md)|[See...](administration-center-api_environments.md#rename-environment)||
-|Restart environment|Environment was restarted|[See...](tenant-admin-center-manage-sessions.md#restart-environment)||
-|Update environment|An environment is updated to a newer version.|[See...](tenant-admin-center-update-management.md)|[See...](administration-center-api_environment_settings.md)|
-|Environment app hotfix|A hotfix was applied to the app by using the App Management API.||[See...](appmanagement/app-management-api.md#schedule-environment-hotfix)||
-|Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.||[See...](administration-center-api_app_management.md#install-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)|
-|Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.||[See...](administration-center-api_app_management.md#uninstall-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)|
-|Environment app update |App was updated by the Admin Center or API update endpoint.|[See...](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)|[See...](administration-center-api_app_management.md#update-an-app)||
+|Copy environment|An environment was created from a copy of another environment.|[Copy an environment](tenant-admin-center-environments-copy.md)|[Copy environment](administration-center-api_environments.md#copy-environment)||
+|Create environment |A new environment was created|[Create a new environment](#create-a-new-environment)|[Create a new environment](administration-center-api_environments.md#create-new-environment)||
+|Soft delete environment|An environment was soft deleted.|[Delete an environment](tenant-admin-center-environments-delete.md#delete-an-environment)|[Delete environment](administration-center-api_environments.md#delete-environment)||
+|Recovered environment|A deleted environment was recovered.|[Recover an environment](tenant-admin-center-environments-delete.md#recover-an-environment)|[Recover environment](administration-center-api_environments.md#recover-environment)||
+|Delete environment|An environment was permanently deleted.|[Delete and recover environments](tenant-admin-center-environments-delete.md)|[Delete environment](administration-center-api_environments.md#delete-environment)||
+|Modify environment|One of the following operations was done on an environment: <ul><li>Set update window</li><li>Set Application Insights connection string</li><li>Set security group</li><li>Clear security group</li><li>Reschedule update </li><li>Set access with Microsoft 365 licenses.</li></ul>|[Managing updates](tenant-admin-center-update-management.md)<br /><br />[Environment telemetry](tenant-admin-center-telemetry.md)<br /><br />[Business Central Admin Center API - Environment Settings](tenant-admin-center-manage-access.md)|[Manage access to environments](administration-center-api_environment_settings.md)||
+|Move environment|An environment was moved to another Microsoft Entra organization.|[Transfer environments](tenant-admin-center-environments-move.md)|||
+|Rename environment|Environment was renamed.|[Rename environments](tenant-admin-center-environments-rename.md)|[Rename environment](administration-center-api_environments.md#rename-environment)||
+|Restart environment|Environment was restarted|[Restart environment](tenant-admin-center-manage-sessions.md#restart-environment)||
+|Update environment|An environment is updated to a newer version.|[Managing updates](tenant-admin-center-update-management.md)|[Environment settings](administration-center-api_environment_settings.md)|
+|Environment app hotfix|A hotfix was applied to the app by using the App Management API.||[Schedule environment hotfix](appmanagement/app-management-api.md#schedule-environment-hotfix)||
+|Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.||[Install an app](administration-center-api_app_management.md#install-an-app)|[Install and uninstall extensions](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)|
+|Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.||[Uninstall an app](administration-center-api_app_management.md#uninstall-an-app)|[Install and uninstall extensions](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)|
+|Environment app update |App was updated by the Admin Center or API update endpoint.|[Install an app update](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)|[Update an app](administration-center-api_app_management.md#update-an-app)||
 
 ### Retention period
 
@@ -150,13 +150,14 @@ The operations are kept for 180 days, after which they're deleted.
 
 ## Related information
 
-[Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Managing Apps](tenant-admin-center-manage-apps.md)  
-[Updating Environments](tenant-admin-center-update-management.md)  
-[Managing Sessions](tenant-admin-center-manage-sessions.md)  
-[Copy a Production or Sandbox Environment](tenant-admin-center-environments-copy.md)  
-[Rename Environments](tenant-admin-center-environments-rename.md)  
-[Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Move an Environment to another Microsoft Entra organization](tenant-admin-center-environments-move.md)  
+[Manage tenant specific notifications](tenant-admin-center-notifications.md)  
+[Managing apps](tenant-admin-center-manage-apps.md)  
+[Managing updates in the Business Central admin center](tenant-admin-center-update-management.md)  
+[Managing sessions in the Admin Center](tenant-admin-center-manage-sessions.md)  
+[Copy a production or sandbox environment](tenant-admin-center-environments-copy.md)  
+[Rename environments in the Admin Center](tenant-admin-center-environments-rename.md)  
+[Restoring an environment in the admin center](tenant-admin-center-backup-restore.md)  
+[Transfer environments](tenant-admin-center-environments-move.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
+
 [The Business Central Administration Center](tenant-admin-center.md)  
