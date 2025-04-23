@@ -1,12 +1,12 @@
 ---
 title: Business events on Business Central (preview)
 description: Business events provide our partners and customers a mechanism for notifying and triggering their external systems when actions are done on Business Central
-author: swinarko
-ms.author: sawinark 
+author: jswymer
+ms.author: jswymer 
 ms.reviewer: jswymer
 ms.topic: overview
 ms.collection: 
-ms.date: 11/13/2023
+ms.date: 04/23/2025
 ms.custom: bap-template
 ---
 
@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-Integrating with Dataverse enables Business Central to interact with other apps in its ecosystem through business events. This article gives an introduction to the new business events feature, the prerequisites and step-by-step instructions to preview it, and its current limitations/future improvements.
+Integrating with Dataverse enables Business Central to interact with other apps in its ecosystem through business events. This article gives an introduction to the new business events feature, the prerequisites, and step-by-step instructions to preview it, and its current limitations/future improvements.
 
 ## Introduction
 
@@ -70,7 +70,7 @@ To preview the new feature of business events on Business Central, do the follow
 1. In Power Apps, create Power Automate flows with the **When an action is performed** trigger that query Business Central catalog, submit subscriptions, and receive notifications of business events on your Dataverse environment.
 
    For more information, go to [Query Business Central catalog business events on Dataverse](#query-business-central-catalog-of-business-events-in-dataverse) in this article.
-1. (Optional) Following our code, build and install your own AL extension that adds custom business events to Business Central catalog.
+1. (Optional) Follow our code to build and install your own AL extension that adds custom business events to Business Central catalog.
 
    For more information, go to [Build and install an extension for custom business events](#build-and-install-an-extension-for-custom-business-events) in this article.
 
@@ -240,7 +240,7 @@ For each business event, the response to your request contains the following dat
 - `name`: The name of this business event
 - `displayName`: The display name of this business event
 - `description`: The description of this business event
-- `payload`: The serialized text in JSON format that defines the payload parameters for this business event. Each payload parameter is defined by an array of objects in JSON format, for example: <!--this was tagged as yaml>
+- `payload`: The serialized text in JSON format that defines the payload parameters for this business event. Each payload parameter is defined by an array of objects in JSON format, for example: <!--this code was tagged as yaml>
 
    ```json
    {
@@ -290,12 +290,12 @@ For each business event, your request must contain the following data:
 - `notificationUrl`: The URL to post notifications of this business event 
 - `clientState`: The optional string associated with this business event subscription that can be used to validate any caller's posting to the notification URL
 
-Only Business Central users who have been assigned the **Ext. Events – Subscr** permissions set can subscribe to specific companies for their business events.  Subscribers must have READ access to the **ExternalBusinessEventDefinition** table in subscribed companies.  Additionally, they must have relevant access in the subscribed companies as defined by the optional `RequiredPermissions` attribute.
+Only Business Central users who have been assigned the **Ext. Events – Subscr** permissions set can subscribe to specific companies for their business events. Subscribers must have READ access to the **ExternalBusinessEventDefinition** table in subscribed companies. Additionally, they must have relevant access in the subscribed companies as defined by the optional `RequiredPermissions` attribute.
 
 ### Receive notifications of business events
 
-   > [!IMPORTANT]
-   > Business Events notifications are sent to external systems only once the current transaction is committed to the database. If the transactions runs for a long time, the notification to the external system will be delayed until the transaction is completed and committed to the database. If the transaction is rolled back (for example because of an AL Error raised in the code), the notification is never sent.
+> [!IMPORTANT]
+> Business Events notifications are sent to external systems only after the current transaction is committed to the database. If the transaction runs for a long time, the notification to the external system is delayed until the transaction is completed and committed to the database. If the transaction is rolled back (for example because of an AL Error raised in the code), the notification is never sent.
 
 When a business event occurs and a subscription exists for it, Business Central sends a request to the relevant notification URL:
 
@@ -329,7 +329,7 @@ This request contains the following data:
 - `appId`: The GUID of Business Central extension that implements this business event
 - `clientState`: The optional string associated with this business event subscription that can be used to validate any caller's posting to the notification URL
 
-Subscribers must still have READ access to the `ExternalBusinessEventDefinition` table in subscribed companies.  Additionally, they must still have relevant access in the subscribed companies as defined by the optional `RequiredPermissions` attribute.
+Subscribers must still have READ access to the `ExternalBusinessEventDefinition` table in subscribed companies. Additionally, they must still have relevant access in the subscribed companies as defined by the optional `RequiredPermissions` attribute.
 
 ## Current limitations and future improvements
 
