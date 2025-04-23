@@ -2,16 +2,17 @@
 title: Using Read Scale-Out for Better Performance 
 description: Learn how to use read scale-out in Business Central to improve performance
 ms.custom: bap-template
-ms.date: 04/01/2021
+ms.date: 04/23/2025
 ms.reviewer: jswymer
 ms.topic: overview
 author: jswymer
 ---
-# Using Read Scale-Out for Better Performance
+# Using read scale-out for better performance
 
 [!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
 The way [!INCLUDE[server](../developer/includes/server.md)] interacts with the database can broadly be categorized in two patterns:
+
 - Business processes that read and write data, such as codeunits that run from UI pages or web services.
 - Analytical workloads that only read data, such as queries, reports, or API pages.
 

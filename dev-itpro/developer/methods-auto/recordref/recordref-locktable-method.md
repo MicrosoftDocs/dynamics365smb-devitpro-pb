@@ -2,7 +2,7 @@
 title: "RecordRef.LockTable([Boolean] [, Boolean]) Method"
 description: "Starts locking on a table to protect it from write transactions that conflict with each other."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 04/23/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,24 +33,24 @@ Specifies what to do if the table is already locked. If this parameter is true a
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If this parameter is true, the version of the RecordRef will be checked. If this parameter is false, blank, or not used, the version will not be checked.  
 
-
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
-If the session is not using Read Scale-Out, then LockTable does the following:  
+Read scale-out lets the database offload read-only workloads to read-only replicas, isolating them from the main read-write workload to improve performance. Learn more in [Using read scale-out for better performance](../../../administration/database-read-scale-out-overview.md).
 
-1) Starts a transaction
-2) Makes sure that all subsequent statements that read data will apply an UPDLOCK on the database.
+LockTable behaves differently depending on whether read scale-out is used. If the session doesn't use read scale-out, LockTable does the following actions:
 
-If the session is using Read Scale-Out, then LockTable does the following:
+1. Starts a transaction
+2. Makes sure that all subsequent statements that read data will apply an UPDLOCK on the database.
 
-1) Makes sure that all subsequent statements that read data use REPEATABLEREAD on the database.
+If the session uses read scale-out, LockTable performs the following actions:  
+
+1. Makes sure that all subsequent statements that read data use REPEATABLEREAD on the database.
 
 Because all write operations automatically lock the table that is being used, LockTable would appear unnecessary. However, you could have a transaction in which an application wants to inspect data before possibly changing it, with a guarantee that the data being changed has not been modified by other applications since the read operation. The solution is to explicitly lock the table before the read operation. This makes sure that no other application makes changes between the read operation and the possible write operation. 
 
-The table lock is released (unlocked) when the transaction is committed. 
+The table lock is released (unlocked) when the transaction is committed.
   
 This method works the same as the [LockTable Method \(Record\)](../record/record-locktable-method.md).  
   
@@ -93,9 +93,9 @@ EndWriteTransaction // (5)
   
 If a data update depends on a prior read operation and there is a long time between the read operation and the write operation, you may not want to lock the table as you usually would during a transaction. This enables you to prevent other users from updating the table until your transaction is committed.  
   
-
 ## Related information
 
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
+[Using read scale-out for better performance](../../../administration/database-read-scale-out-overview.md)
