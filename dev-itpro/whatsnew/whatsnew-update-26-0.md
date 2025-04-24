@@ -14,7 +14,7 @@ ms.custom:
 This article provides an overview of the new and updated features and general information about update 26.0, which starts the 2025 release wave 1.
 
 > [!NOTE]
-> New on-premises packages are available starting April 24, 2025, to address issues in the build released on April 14, 2025. To download the latest packages, visit the [On-premises download packages](#on-premises-download-packages) section.  
+> New on-premises packages are available starting April 24, 2025, to address issues in version 26.0.30643.33973 released on April 14, 2025. Download the latest packages from the  [On-premises download packages](#on-premises-download-packages) section.
 
 ## Highlights
 
