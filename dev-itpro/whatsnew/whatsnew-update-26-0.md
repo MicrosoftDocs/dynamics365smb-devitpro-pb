@@ -1,8 +1,8 @@
 ---
-title: What's new or changed in Business Central 2025 release wave 1 update 26.0
+title: What's New or Changed in Business Central 2025 Release Wave 1 Update 26.0
 description: Get an overview of new and changed capabilities in the 26.0 update of Business Central online, which is part of 2025 release wave 1.
 ms.author: jswymer
-ms.date: 04/14/2025
+ms.date: 04/24/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -14,7 +14,7 @@ ms.custom:
 This article provides an overview of the new and updated features and general information about update 26.0, which starts the 2025 release wave 1.
 
 > [!NOTE]
-> New on-premises packages are available starting April 14, 2025, to address issues in the build released on April 1, 2025. To download the latest packages, visit the [On-premises download packages](#on-premises-download-packages) section.  
+> New on-premises packages are available starting April 24, 2025, to address issues in the build released on April 14, 2025. To download the latest packages, visit the [On-premises download packages](#on-premises-download-packages) section.  
 
 ## Highlights
 
@@ -229,29 +229,29 @@ Select and download the package for the appropriate country or region version fr
 
 |Country/region|Download package|
 |-|-|
-|AT - Austria|[Dynamics.365.BC.32973.AT.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.AT.DVD.zip)|
-|AU - Australia|[Dynamics.365.BC.32973.AU.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.AU.DVD.zip)|
-|BE - Belgium|[Dynamics.365.BC.32973.BE.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.BE.DVD.zip)|
-|CA - Canada|[Dynamics.365.BC.32973.CA.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.CA.DVD.zip)|
-|CH - Switzerland|[Dynamics.365.BC.32973.CH.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.CH.DVD.zip)|
-|CZ- Czechia|[Dynamics.365.BC.32973.CZ.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.CZ.DVD.zip)|
-|DE - Germany|[Dynamics.365.BC.32973.DE.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.DE.DVD.zip)|
-|DK - Denmark|[Dynamics.365.BC.32973.DK.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.DK.DVD.zip)|
-|ES - Spain|[Dynamics.365.BC.32973.ES.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.ES.DVD.zip)|
-|FI - Finland|[Dynamics.365.BC.32973.FI.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.FI.DVD.zip)|
-|FR - France|[Dynamics.365.BC.32973.FR.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.FR.DVD.zip)|
-|GB - United Kingdom|[Dynamics.365.BC.32973.GB.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.GB.DVD.zip)|
-|IN - India|[Dynamics.365.BC.32973.IN.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.IN.DVD.zip)|
-|IS - Iceland|[Dynamics.365.BC.32973.IS.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.IS.DVD.zip)|
-|IT - Italy|[Dynamics.365.BC.32973.IT.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.IT.DVD.zip)|
-|MX - Mexico|[Dynamics.365.BC.32973.MX.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.MX.DVD.zip)|
-|NL - Netherlands|[Dynamics.365.BC.32973.NL.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.NL.DVD.zip)|
-|NO - Norway|[Dynamics.365.BC.32973.NO.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.NO.DVD.zip)|
-|NZ - New Zealand|[Dynamics.365.BC.32973.NZ.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.NZ.DVD.zip)|
-|RU - Russia|[Dynamics.365.BC.32973.RU.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.RU.DVD.zip)|
-|SE - Sweden|[Dynamics.365.BC.32973.SE.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.SE.DVD.zip)|
-|US - United States|[Dynamics.365.BC.32973.US.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.US.DVD.zip)|
-|All other countries (W1)|[Dynamics.365.BC.32973.W1.DVD.zip](https://download.microsoft.com/download/58677b55-b230-428b-9cf6-6aecd90dbd3f/Dynamics.365.BC.32973.W1.DVD.zip)|
+|AT - Austria|[Dynamics.365.BC.33317.AT.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.AT.DVD.zip)|
+|AU - Australia|[Dynamics.365.BC.33317.AU.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.AU.DVD.zip)|
+|BE - Belgium|[Dynamics.365.BC.33317.BE.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.BE.DVD.zip)|
+|CA - Canada|[Dynamics.365.BC.33317.CA.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.CA.DVD.zip)|
+|CH - Switzerland|[Dynamics.365.BC.33317.CH.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.CH.DVD.zip)|
+|CZ- Czechia|[Dynamics.365.BC.33317.CZ.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.CZ.DVD.zip)|
+|DE - Germany|[Dynamics.365.BC.33317.DE.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.DE.DVD.zip)|
+|DK - Denmark|[Dynamics.365.BC.33317.DK.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.DK.DVD.zip)|
+|ES - Spain|[Dynamics.365.BC.33317.ES.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.ES.DVD.zip)|
+|FI - Finland|[Dynamics.365.BC.33317.FI.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.FI.DVD.zip)|
+|FR - France|[Dynamics.365.BC.33317.FR.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.FR.DVD.zip)|
+|GB - United Kingdom|[Dynamics.365.BC.33317.GB.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.GB.DVD.zip)|
+|IN - India|[Dynamics.365.BC.33317.IN.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.IN.DVD.zip)|
+|IS - Iceland|[Dynamics.365.BC.33317.IS.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.IS.DVD.zip)|
+|IT - Italy|[Dynamics.365.BC.33317.IT.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.IT.DVD.zip)|
+|MX - Mexico|[Dynamics.365.BC.33317.MX.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.MX.DVD.zip)|
+|NL - Netherlands|[Dynamics.365.BC.33317.NL.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.NL.DVD.zip)|
+|NO - Norway|[Dynamics.365.BC.33317.NO.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.NO.DVD.zip)|
+|NZ - New Zealand|[Dynamics.365.BC.33317.NZ.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.NZ.DVD.zip)|
+|RU - Russia|[Dynamics.365.BC.33317.RU.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.RU.DVD.zip)|
+|SE - Sweden|[Dynamics.365.BC.33317.SE.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.SE.DVD.zip)|
+|US - United States|[Dynamics.365.BC.33317.US.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.US.DVD.zip)|
+|All other countries (W1)|[Dynamics.365.BC.33317.W1.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.W1.DVD.zip)|
 
 ## Upgrade to 26.0 for online customers
 
