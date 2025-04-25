@@ -1,6 +1,6 @@
 ---
 title: Obsoleting reports
-description: Learn about how to obsolete Business Central reports
+description: Learn how to obsolete Business Central reports.
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer

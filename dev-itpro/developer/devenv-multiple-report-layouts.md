@@ -1,6 +1,6 @@
 ---
 title: Defining Multiple Report Layouts
-description: Learn how to define multiple layouts for one report in AL code. This enables creating report extensions that only add layouts to an existing report and packaging it as an extension .al file.
+description: Learn how to define multiple layouts for one report in AL code. This allows creating report extensions that only add layouts to an existing report and packaging it as an extension .al file.
 author: SusanneWindfeldPedersen
 ms.date: 01/20/2024
 ms.topic: conceptual

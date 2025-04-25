@@ -12,7 +12,7 @@ ms.author: kepontop
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-When you create a new report, there are two main tasks to consider. First, you define the report dataset of data items and columns. Then, you design the report layout. With the Excel report layout, you can create a basic report that prints a dataset and leaves it up to the end-user to further modify it by using the full palette of capabilities in Excel such as sliders, diagrams, charts, pivot tables, and PowerQuery to design the report. This offers flexibility and freedom for the end-user, being able to change the look and feel of a report, adding more views, filtering, and sorting on data. Such a layout designed by the end-user can be imported and used as a new layout. 
+When you create a new report, there are two main tasks to consider. First, define the report dataset of data items and columns. Then, design the report layout. With the Excel report layout, you can create a basic report that prints a dataset and leaves it up to the end-user to further modify it by using the full palette of capabilities in Excel such as sliders, diagrams, charts, pivot tables, and PowerQuery to design the report. This offers flexibility and freedom for the end-user, being able to change the look and feel of a report, adding more views, filtering, and sorting on data. Such a layout designed by the end-user can be imported and used as a new layout. 
 
 For more information about the report object, go to [Report Object](devenv-report-object.md) and for report extension objects, go to [Report Extension Object](devenv-report-ext-object.md).
 
