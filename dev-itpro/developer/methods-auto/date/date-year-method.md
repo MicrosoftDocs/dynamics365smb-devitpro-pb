@@ -34,6 +34,11 @@ The year.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Remarks
+Don't use this method to replace [`Date2DWY(Date, 3)`](../system/system-date2dwy-method.md).
+When the input date to the `Date2DWY` method is in a week that spans two years, the `Date2DWY` method computes the output year as the year that has the most days.
+The `Date.Year()` method, on the other hand, always returns the year of the date.
+
 ## Related information
 [Date Data Type](date-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
