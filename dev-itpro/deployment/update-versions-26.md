@@ -1,15 +1,14 @@
 ---
-title: Dynamics 365 Business Central on-premises 2025 release wave 1 updates
+title: Dynamics 365 Business Central On-premises 2025 Release Wave 1 Updates
 description: Learn about the updates for Dynamics 365 Business Central 2025 release wave 1 on-premises deployments.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: conceptual
-ms.date: 04/10/2025
+ms.date: 04/25/2025
 ms.custom: bap-template
 ---
-
 # Dynamics 365 Business Central on-premises 2025 release wave 1 updates
 
 This article lists updates released for the Microsoft Dynamics 365 Business Central 2025 release wave 1 for on-premises. An update is a set of files that includes all hotfixes and regulatory features released for Business Central. If you have customers using Business Central 2025 release wave 1 on-premises, apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, use the [Business Central Admin center](../administration/tenant-admin-center.md) to check whether the tenants have been updated.  
@@ -28,7 +27,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|*expected in May 2025*|Update 26.1 |May 2025|Application Build 26.1</br>Platform Build 26.0|
+|[26.1](https://support.microsoft.com/help/5059415)|Update 26.1 |May 2025|Application Build 26.1</br>Platform Build 26.0|
 
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
