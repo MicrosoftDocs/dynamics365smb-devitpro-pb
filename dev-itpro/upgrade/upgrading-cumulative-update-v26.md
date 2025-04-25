@@ -1,14 +1,14 @@
 ---
-title: Install a version 26 update
+title: Install a Business Central 2025 Release Wave 1 (version 26) update
 description: This article describes the tasks required for getting the monthly version 26 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 04/09/2025
+ms.date: 04/25/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2025 release wave 1 update
+# Install a Business Central 2025 release wave 1 update
 
 This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that are released for Business Central.
 
@@ -95,7 +95,7 @@ First, download the update package that matches your Business Central solution.
 2. From the update page, under the **Resolution** section, select the link for downloading the update, and follow the instructions.
 3. On the computer where you downloaded the update .zip file, extract all the files to a selected location.
 
-    When extracted, the update includes the DVD folder, which contains the full Business Central product. For example, the folder includes the Business Central installation program (setup.exe), tools for upgrading to the platform, and the Microsoft extensions.
+    When extracted, the update includes the DVD folder, which contains the full Business Central product. For example, the folder includes the Business Central installation program (setup.exe), tools for upgrading to the platform, and Microsoft extensions.
 
 When this step is completed, you can continue to update your Business Central solution to the new platform and application.
 
