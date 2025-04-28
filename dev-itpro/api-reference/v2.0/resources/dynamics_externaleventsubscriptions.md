@@ -2,19 +2,14 @@
 title: externaleventsubscriptions resource type
 description: An externaleventsubscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/28/2025
 ms.author: solsen
 ---
 
 # externaleventsubscriptions resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an externaleventsubscriptions in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,8 +23,6 @@ Represents an externaleventsubscriptions in [!INCLUDE[prod_short](../../../inclu
 |[DELETE externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_delete.md)|none|Deletes a externaleventsubscriptions object.|
 |[POST externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_create.md)|externaleventsubscriptions|Creates a externaleventsubscriptions object.|
 |[PATCH externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_update.md)|externaleventsubscriptions|Updates a externaleventsubscriptions object.|
-
-
 
 ## Properties
 
@@ -79,9 +72,9 @@ Here is a JSON representation of the externaleventsubscriptions resource.
     "systemModifiedBy": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
+
 [GET externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_get.md)
 [DELETE externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_delete.md)
 [POST externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_create.md)

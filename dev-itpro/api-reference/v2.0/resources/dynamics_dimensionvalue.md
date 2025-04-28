@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a dimension value in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -25,7 +23,6 @@ Represents a dimension value in [!INCLUDE[prod_short](../../../includes/prod_sho
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET dimensionValue](../api/dynamics_dimensionvalue_get.md)|dimensionValue|Gets a dimension value object.|
-
 
 ## Navigation
 
@@ -59,9 +56,7 @@ Here is a JSON representation of the dimensionValue resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET dimensionValue](../api/dynamics_dimensionValue_Get.md)

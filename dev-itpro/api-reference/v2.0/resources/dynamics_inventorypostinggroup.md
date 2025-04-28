@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an inventory posting group in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -25,8 +23,6 @@ Represents an inventory posting group in [!INCLUDE[prod_short](../../../includes
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET inventoryPostingGroup](../api/dynamics_inventorypostinggroup_get.md)|inventoryPostingGroup|Gets a inventory posting group object.|
-
-
 
 ## Properties
 
@@ -41,7 +37,6 @@ Represents an inventory posting group in [!INCLUDE[prod_short](../../../includes
 
 Here is a JSON representation of the inventoryPostingGroup resource.
 
-
 ```json
 {
     "id": "GUID",
@@ -50,7 +45,7 @@ Here is a JSON representation of the inventoryPostingGroup resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET inventoryPostingGroup](../api/dynamics_inventorypostinggroup_get.md)

@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an item ledger entry in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -25,8 +23,6 @@ Represents an item ledger entry in [!INCLUDE[prod_short](../../../includes/prod_
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET itemLedgerEntry](../api/dynamics_itemledgerentry_get.md)|itemLedgerEntry|Gets a item ledger entry object.|
-
-
 
 ## Properties
 
@@ -70,7 +66,7 @@ Here is a JSON representation of the itemLedgerEntry resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET itemLedgerEntry](../api/dynamics_itemledgerentry_get.md)

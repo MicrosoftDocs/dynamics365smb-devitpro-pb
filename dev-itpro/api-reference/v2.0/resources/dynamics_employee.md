@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an employee in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -105,11 +103,9 @@ Here is a JSON representation of the employee resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET employee](../api/dynamics_employee_Get.md)  
 [DELETE employee](../api/dynamics_employee_Delete.md)  
 [POST employee](../api/dynamics_employee_Create.md)  

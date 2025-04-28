@@ -2,11 +2,8 @@
 title: fixedAssetLocation resource type
 description: A fixed asset location object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
@@ -14,8 +11,6 @@ ms.reviewer: solsen
 
 # fixedAssetLocation resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a fixed asset location in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,8 +24,6 @@ Represents a fixed asset location in [!INCLUDE[prod_short](../../../includes/pro
 |[DELETE fixedAssetLocation](../api/dynamics_fixedassetlocation_delete.md)|none|Deletes a fixed asset location object.|
 |[POST fixedAssetLocation](../api/dynamics_fixedassetlocation_create.md)|fixedAssetLocation|Creates a fixed asset location object.|
 |[PATCH fixedAssetLocation](../api/dynamics_fixedassetlocation_update.md)|fixedAssetLocation|Updates a fixed asset location object.|
-
-
 
 ## Properties
 
@@ -54,9 +47,9 @@ Here is a JSON representation of the fixedAssetLocation resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET fixedAssetLocation](../api/dynamics_fixedassetlocation_get.md)
 [DELETE fixedAssetLocation](../api/dynamics_fixedassetlocation_delete.md)
 [POST fixedAssetLocation](../api/dynamics_fixedassetlocation_create.md)

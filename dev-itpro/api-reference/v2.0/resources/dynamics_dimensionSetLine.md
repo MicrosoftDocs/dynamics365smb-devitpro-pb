@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a dimension set line in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,7 +26,6 @@ Represents a dimension set line in [!INCLUDE[prod_short](../../../includes/prod_
 |[DELETE dimensionSetLine](../api/dynamics_dimensionsetline_delete.md)|none|Deletes a dimension set line object.|
 |[POST dimensionSetLine](../api/dynamics_dimensionsetline_create.md)|dimensionSetLine|Creates a dimension set line object.|
 |[PATCH dimensionSetLine](../api/dynamics_dimensionsetline_update.md)|dimensionSetLine|Updates a dimension set line object.|
-
 
 ## Navigation
 
@@ -92,11 +89,9 @@ Here is a JSON representation of the dimensionSetLine resource.
     "valueDisplayName": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET dimensionSetLine](../api/dynamics_dimensionSetLine_Get.md)  
 [DELETE dimensionSetLine](../api/dynamics_dimensionSetLine_Delete.md)  
 [POST dimensionSetLine](../api/dynamics_dimensionSetLine_Create.md)  

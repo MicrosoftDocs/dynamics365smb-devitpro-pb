@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an item category in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,8 +26,6 @@ Represents an item category in [!INCLUDE[prod_short](../../../includes/prod_shor
 |[DELETE itemCategory](../api/dynamics_itemcategory_delete.md)|none|Deletes a item category object.|
 |[POST itemCategory](../api/dynamics_itemcategory_create.md)|itemCategory|Creates a item category object.|
 |[PATCH itemCategory](../api/dynamics_itemcategory_update.md)|itemCategory|Updates a item category object.|
-
-
 
 ## Properties
 
@@ -53,11 +49,9 @@ Here is a JSON representation of the itemCategory resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET itemCategory](../api/dynamics_itemCategory_Get.md)  
 [DELETE itemCategory](../api/dynamics_itemCategory_Delete.md)  
 [POST itemCategory](../api/dynamics_itemCategory_Create.md)  

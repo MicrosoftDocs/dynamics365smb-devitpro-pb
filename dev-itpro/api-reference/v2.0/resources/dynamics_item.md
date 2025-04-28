@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,7 +26,6 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[DELETE item](../api/dynamics_item_delete.md)|none|Deletes a item object.|
 |[POST item](../api/dynamics_item_create.md)|item|Creates a item object.|
 |[PATCH item](../api/dynamics_item_update.md)|item|Updates a item object.|
-
 
 ## Navigation
 
@@ -101,11 +98,9 @@ Here is a JSON representation of the item resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET item](../api/dynamics_item_Get.md)  
 [DELETE item](../api/dynamics_item_Delete.md)  
 [POST item](../api/dynamics_item_Create.md)  

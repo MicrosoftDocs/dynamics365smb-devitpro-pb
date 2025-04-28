@@ -2,11 +2,8 @@
 title: disputeStatus resource type
 description: A dispute status object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
@@ -14,8 +11,6 @@ ms.reviewer: solsen
 
 # disputeStatus resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a dispute status in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,8 +24,6 @@ Represents a dispute status in [!INCLUDE[prod_short](../../../includes/prod_shor
 |[DELETE disputeStatus](../api/dynamics_disputestatus_delete.md)|none|Deletes a dispute status object.|
 |[POST disputeStatus](../api/dynamics_disputestatus_create.md)|disputeStatus|Creates a dispute status object.|
 |[PATCH disputeStatus](../api/dynamics_disputestatus_update.md)|disputeStatus|Updates a dispute status object.|
-
-
 
 ## Properties
 
@@ -52,9 +45,9 @@ Here is a JSON representation of the disputeStatus resource.
     "displayName": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET disputeStatus](../api/dynamics_disputestatus_get.md)
 [DELETE disputeStatus](../api/dynamics_disputestatus_delete.md)
 [POST disputeStatus](../api/dynamics_disputestatus_create.md)
