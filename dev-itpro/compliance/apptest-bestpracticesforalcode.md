@@ -17,11 +17,11 @@ This page defines some of the best practices to follow when writing AL code for 
 
 ## Extension structure
 
-An extension is fully contained in a single folder. This folder often contains multiple files, such as `app.json` and `launch.json` files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension doesn't need to follow a flat structure, which means that, depending on the number of application files, extra folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.
+An extension is fully contained in a single folder. This folder often contains multiple files, such as `app.json` and `launch.json` files, perhaps an image file representing the extension's logo, various folders for source; `\src`, other resources; `\res`, and a test folder; `\test` folder. The extension doesn't need to follow a flat structure, which means that, depending on the number of application files, extra folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large AL project easier.
 
 ## File naming 
 
-Each file name has object names with only characters [A-Za-z0-9], object type, and dot al, for file type. In your extension, the name of each new application object (table, page, codeunit), can contain a prefix or suffix. 
+Each file name should contain the object name (using only characters A–Z, a–z, and 0–9), the object type, and the `.al` file extension. In your extension, the name of each new application object (table, page, codeunit), can contain a prefix or suffix.
 
 The CodeCop analyzer suggests that the object name is part of the file name, which is encouraged as a best practice. Adding any affixes to the file names is voluntary.
 
@@ -136,7 +136,7 @@ We recommend keeping your AL code properly formatted as follows:
 
 - Use all lowercase letters for reserved language keywords. Built-in methods and types aren't included in this rule because they're written using Pascal case. 
 - Use four spaces for indentation. 
-- Curly brackets are always on a new line. If there's one property, put it on a single line. 
+- Curly brackets should always start on a new line. If there's only one property, it can be placed on a single line.​
 
 The following example illustrates these formatting rules. 
 
@@ -178,7 +178,7 @@ In general, there's no restriction on line length, but lengthy lines can make th
 
 ## Object naming
 
-Object names are prefixed. They start with the feature/group name, followed by the logical name as in these two examples: 
+Object names should be prefixed, starting with the feature or group name, followed by the logical name, as illustrated in the following examples: 
 
 - `Intrastat extension validation codeunit for Denmark`
 - `codeunit 123 "IntrastatDK Validation"`
@@ -225,7 +225,7 @@ For variables they must:
 Furthermore:
 
 - Field and variable names shouldn't include wildcard symbols, such as `%` and `&`. This might break features such as export using Excel or RapidStart. 
-- Name fields using aA-zZ and 0-9 and use Caption and xliff files to display the field appropriately. For more information, see [Working with translation files](../developer/devenv-work-with-translation-files.md).
+- Name fields using A–Z, a–z, and 0–9 and use Caption and xliff files to display the field appropriately. For more information, see [Working with translation files](../developer/devenv-work-with-translation-files.md).
 - Using English as the language for naming improves the ability to troubleshoot issues that may arise. 
 
 
@@ -242,7 +242,7 @@ To declare a method, follow these guidelines:
 
 - Include a space after a semicolon when declaring multiple arguments. 
 - Semicolons can be used at the end of the signature/method header. If you use a snippet, the semicolons aren't automatically added.
-- Methods are named as variables using Pascal case. However, this isn't a mandatory rule. 
+- Methods should be named using PascalCase, like variables. However, this is not a mandatory rule.
 - There must be a blank line between method declarations. If you format your code using the [AL Formatter](../developer/devenv-al-formatter.md) tool, the autoformatter sets the blank line between procedures. 
 
 ### Example
@@ -252,7 +252,7 @@ local procedure MyProcedure(Customer: Record Customer; Int: Integer)
 begin
 end;
 
-// space
+// Blank line between methods
 
 local procedure MyProcedure2(Customer: Record Customer; Int: Integer)
 begin
