@@ -105,6 +105,7 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[accountingPeriods](dynamics_accountingperiod.md)|accountingPeriods |Gets the accountingperiods of the company.|
 |[generalLedgerSetup](dynamics_generalledgersetup.md)|generalLedgerSetup |Gets the generalledgersetup of the company.|
 |[disputeStatus](dynamics_disputestatus.md)|disputeStatus |Gets the disputestatus of the company.|
+|[customerContacts](dynamics_customercontact.md)|customerContacts |Gets the customercontacts of the company.|
 |[jobQueueLogEntries](dynamics_jobqueuelogentry.md)|jobQueueLogEntries |Gets the jobqueuelogentries of the company.|
 |[jobQueueEntries](dynamics_jobqueueentry.md)|jobQueueEntries |Gets the jobqueueentries of the company.|
 |[fixedAssetLocations](dynamics_fixedassetlocation.md)|fixedAssetLocations |Gets the fixedassetlocations of the company.|

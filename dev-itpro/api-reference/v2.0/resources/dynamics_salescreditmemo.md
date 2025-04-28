@@ -43,9 +43,9 @@ This is illustrated in the following example:
 
 The response has no content; the response code is 204.
 
-The salesCreditMemo resource type offers a bound action called `postAndSend` which post and sends the corresponding salesCreditMemo batch.
+The salesCreditMemo resource type offers a bound action called `cancelAndSend` which cancel and sends the corresponding salesCreditMemo batch.
 This is illustrated in the following example:
-`POSTANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesCreditMemos({id})/Microsoft.NAV.postAndSend`
+`CANCELANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesCreditMemos({id})/Microsoft.NAV.cancelAndSend`
 
 The response has no content; the response code is 204.
 

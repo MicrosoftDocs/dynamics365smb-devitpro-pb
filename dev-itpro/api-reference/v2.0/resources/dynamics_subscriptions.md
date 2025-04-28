@@ -34,6 +34,8 @@ If you're subscribing to a custom API page, both the URL you send the subscripti
 |[POST subscriptions](../api/dynamics_subscriptions_create.md)|subscriptions|Creates a subscriptions object.|
 |[PATCH subscriptions](../api/dynamics_subscriptions_update.md)|subscriptions|Updates a subscriptions object.|
 
+
+
 ## Properties
 
 | Property           | Type   |Description     |
