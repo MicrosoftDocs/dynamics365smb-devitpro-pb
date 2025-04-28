@@ -14,8 +14,6 @@ ms.reviewer: solsen
 
 # currencyExchangeRate resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a currency exchange rate in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -26,8 +24,6 @@ Represents a currency exchange rate in [!INCLUDE[prod_short](../../../includes/p
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET currencyExchangeRate](../api/dynamics_currencyexchangerate_get.md)|currencyExchangeRate|Gets a currency exchange rate object.|
-
-
 
 ## Properties
 
@@ -45,7 +41,6 @@ Represents a currency exchange rate in [!INCLUDE[prod_short](../../../includes/p
 
 Here is a JSON representation of the currencyExchangeRate resource.
 
-
 ```json
 {
     "id": "GUID",
@@ -57,7 +52,7 @@ Here is a JSON representation of the currencyExchangeRate resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET currencyExchangeRate](../api/dynamics_currencyexchangerate_get.md)

@@ -11,8 +11,6 @@ ms.reviewer: solsen
 
 # contactInformation resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a contact information in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -23,7 +21,6 @@ Represents a contact information in [!INCLUDE[prod_short](../../../includes/prod
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET contactInformation](../api/dynamics_contactinformation_get.md)|contactInformation|Gets a contact information object.|
-
 
 ## Navigation
 
@@ -59,11 +56,11 @@ Here is a JSON representation of the contactInformation resource.
     "relatedType": "NAV.contactBusinessRelationLinkToTable"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Remarks
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
 ## Related information
+
 [GET contactInformation](../api/dynamics_contactinformation_get.md)  

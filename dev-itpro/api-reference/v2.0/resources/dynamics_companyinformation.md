@@ -13,9 +13,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents a company information in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Represents company information in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
@@ -26,8 +24,6 @@ Represents a company information in [!INCLUDE[prod_short](../../../includes/prod
 |:--------------------|:-----------|:-------------------------|
 |[GET companyInformation](../api/dynamics_companyinformation_get.md)|companyInformation|Gets a company information object.|
 |[PATCH companyInformation](../api/dynamics_companyinformation_update.md)|companyInformation|Updates a company information object.|
-
-
 
 ## Properties
 

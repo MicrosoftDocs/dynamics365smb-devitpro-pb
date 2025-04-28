@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a country/region in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,9 +26,6 @@ Represents a country/region in [!INCLUDE[prod_short](../../../includes/prod_shor
 |[DELETE countryRegion](../api/dynamics_countryregion_delete.md)|none|Deletes a country/region object.|
 |[POST countryRegion](../api/dynamics_countryregion_create.md)|countryRegion|Creates a country/region object.|
 |[PATCH countryRegion](../api/dynamics_countryregion_update.md)|countryRegion|Updates a country/region object.|
-|[GET countryRegion](../api/dynamics_countryregion_get.md)|countryRegion|Gets a country/region object.|
-
-
 
 ## Properties
 
@@ -56,11 +51,9 @@ Here is a JSON representation of the countryRegion resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET countryRegion](../api/dynamics_countryRegion_Get.md)  
 [DELETE countryRegion](../api/dynamics_countryRegion_Delete.md)  
 [POST countryRegion](../api/dynamics_countryRegion_Create.md)  

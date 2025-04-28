@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -25,7 +23,6 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET company](../api/dynamics_company_get.md)|company|Gets a company object.|
-
 
 ## Navigation
 
@@ -132,7 +129,6 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 Here is a JSON representation of the company resource.
 
-
 ```json
 {
     "id": "GUID",
@@ -147,9 +143,7 @@ Here is a JSON representation of the company resource.
     "systemModifiedBy": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET company](../api/dynamics_company_Get.md)

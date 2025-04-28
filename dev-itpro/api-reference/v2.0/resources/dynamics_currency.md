@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a currency in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,9 +26,6 @@ Represents a currency in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[DELETE currency](../api/dynamics_currency_delete.md)|none|Deletes a currency object.|
 |[POST currency](../api/dynamics_currency_create.md)|currency|Creates a currency object.|
 |[PATCH currency](../api/dynamics_currency_update.md)|currency|Updates a currency object.|
-|[GET currency](../api/dynamics_currency_get.md)|currency|Gets a currency object.|
-
-
 
 ## Properties
 
@@ -60,11 +55,9 @@ Here is a JSON representation of the currency resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET currency](../api/dynamics_currency_Get.md)  
 [DELETE currency](../api/dynamics_currency_Delete.md)  
 [POST currency](../api/dynamics_currency_Create.md)  

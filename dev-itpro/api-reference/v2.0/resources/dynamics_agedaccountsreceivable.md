@@ -23,7 +23,6 @@ Represents an aged accounts receivable in [!INCLUDE[prod_short](../../../include
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET agedAccountsReceivable](../api/dynamics_agedaccountsreceivable_get.md)|agedAccountsReceivable|Gets a aged accounts receivable object.|
-|[GET agedAccountsReceivable](../api/dynamics_agedaccountsreceivable_get.md)|agedAccountsReceivable|Gets a aged accounts receivable object.|
 
 ## Navigation
 

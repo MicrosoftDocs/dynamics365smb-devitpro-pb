@@ -2,7 +2,6 @@
 title: customerContact resource type
 description: A customer contact object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -13,8 +12,6 @@ ms.author: solsen
 
 # customerContact resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a customer contact in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -27,7 +24,6 @@ Represents a customer contact in [!INCLUDE[prod_short](../../../includes/prod_sh
 |[GET customerContact](../api/dynamics_customercontact_get.md)|customerContact|Gets a customer contact object.|
 |[DELETE customerContact](../api/dynamics_customercontact_delete.md)|none|Deletes a customer contact object.|
 |[PATCH customerContact](../api/dynamics_customercontact_update.md)|customerContact|Updates a customer contact object.|
-|[GET customerContact](../api/dynamics_customercontact_get.md)|customerContact|Gets a customer contact object.|
 
 
 ## Navigation
@@ -66,10 +62,9 @@ Here is a JSON representation of the customerContact resource.
     "primaryPhoneNumber": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
+
 [GET customerContact](../api/dynamics_customercontact_get.md)
 [DELETE customerContact](../api/dynamics_customercontact_delete.md)
-[PATCH customerContact](../api/dynamics_customercontact_update.md)
-[GET customerContact](../api/dynamics_customercontact_get.md)
+[PATCH customerContact](../api/dynamics_customercontact_update.md)  
