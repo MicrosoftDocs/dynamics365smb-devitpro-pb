@@ -4,7 +4,7 @@ description: A sales order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -48,6 +48,7 @@ The response has no content; the response code is 204.
 |[shipmentMethod](dynamics_shipmentmethod.md)|shipmentMethod |Gets the shipmentmethod of the salesOrder.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesOrder.|
 |[salesOrderLines](dynamics_salesorderline.md)|salesOrderLines |Gets the salesorderlines of the salesOrder.|
+|[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the salesOrder.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the salesOrder.|
 |[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the salesOrder.|
 

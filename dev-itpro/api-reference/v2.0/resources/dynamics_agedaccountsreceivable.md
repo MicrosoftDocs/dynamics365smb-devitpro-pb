@@ -4,7 +4,7 @@ description: An aged accounts receivable object in Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -25,6 +25,7 @@ Represents an aged accounts receivable in [!INCLUDE[prod_short](../../../include
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET agedAccountsReceivable](../api/dynamics_agedaccountsreceivable_get.md)|agedAccountsReceivable|Gets a aged accounts receivable object.|
+|[GET agedAccountsReceivable](../api/dynamics_agedaccountsreceivable_get.md)|agedAccountsReceivable|Gets a aged accounts receivable object.|
 
 
 ## Navigation
@@ -43,8 +44,11 @@ Represents an aged accounts receivable in [!INCLUDE[prod_short](../../../include
 |currencyCode|string|The default currency code for the aged accounts receivable.|
 |balanceDue|decimal|Specifies total balance due.|
 |currentAmount|decimal|Specifies the current balance.|
+|period1Label|string||
 |period1Amount|decimal|Specifies balance in the first aging period.|
+|period2Label|string||
 |period2Amount|decimal|Specifies balance in the second aging period.|
+|period3Label|string||
 |period3Amount|decimal|Specifies balance in the third aging period.|
 |agedAsOfDate|date|The period start date.|
 |periodLengthFilter|string|Specifies the length of the periods.|
@@ -62,8 +66,11 @@ Here is a JSON representation of the agedAccountsReceivable resource.
     "currencyCode": "string",
     "balanceDue": "decimal",
     "currentAmount": "decimal",
+    "period1Label": "string",
     "period1Amount": "decimal",
+    "period2Label": "string",
     "period2Amount": "decimal",
+    "period3Label": "string",
     "period3Amount": "decimal",
     "agedAsOfDate": "date",
     "periodLengthFilter": "string"

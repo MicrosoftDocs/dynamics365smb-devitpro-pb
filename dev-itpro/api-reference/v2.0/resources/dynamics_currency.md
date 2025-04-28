@@ -4,7 +4,7 @@ description: A currency object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -28,6 +28,7 @@ Represents a currency in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[DELETE currency](../api/dynamics_currency_delete.md)|none|Deletes a currency object.|
 |[POST currency](../api/dynamics_currency_create.md)|currency|Creates a currency object.|
 |[PATCH currency](../api/dynamics_currency_update.md)|currency|Updates a currency object.|
+|[GET currency](../api/dynamics_currency_get.md)|currency|Gets a currency object.|
 
 
 

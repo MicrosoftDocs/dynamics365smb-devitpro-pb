@@ -4,7 +4,7 @@ description: A sales credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -52,6 +52,12 @@ The response has no content; the response code is 204.
 The salesCreditMemo resource type offers a bound action called `post` which posts the corresponding salesCreditMemo batch.
 This is illustrated in the following example:
 `POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesCreditMemos({id})/Microsoft.NAV.post`
+
+The response has no content; the response code is 204.
+
+The salesCreditMemo resource type offers a bound action called `postAndSend` which post and sends the corresponding salesCreditMemo batch.
+This is illustrated in the following example:
+`POSTANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesCreditMemos({id})/Microsoft.NAV.postAndSend`
 
 The response has no content; the response code is 204.
 

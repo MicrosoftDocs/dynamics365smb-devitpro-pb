@@ -4,7 +4,7 @@ description: A customer object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -28,6 +28,7 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[DELETE customer](../api/dynamics_customer_delete.md)|none|Deletes a customer object.|
 |[POST customer](../api/dynamics_customer_create.md)|customer|Creates a customer object.|
 |[PATCH customer](../api/dynamics_customer_update.md)|customer|Updates a customer object.|
+|[GET customer](../api/dynamics_customer_get.md)|customer|Gets a customer object.|
 
 
 ## Navigation

@@ -4,7 +4,7 @@ description: A company information object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -27,6 +27,8 @@ Represents a company information in [!INCLUDE[prod_short](../../../includes/prod
 |[GET companyInformation](../api/dynamics_companyinformation_get.md)|companyInformation|Gets a company information object.|
 |[PATCH companyInformation](../api/dynamics_companyinformation_update.md)|companyInformation|Updates a company information object.|
 
+
+
 ## Properties
 
 | Property           | Type   |Description     |
@@ -48,6 +50,7 @@ Represents a company information in [!INCLUDE[prod_short](../../../includes/prod
 |currentFiscalYearStartDate|date|The company's current fiscal year start date. Read-Only.|
 |industry|string|The industry the company is part of.|
 |picture|stream|The company information's picture.|
+|experience|string||
 |lastModifiedDateTime|datetime|The last datetime the company information was modified. Read-Only.|
 
 ## JSON representation
@@ -74,6 +77,7 @@ Here is a JSON representation of the companyInformation resource.
     "currentFiscalYearStartDate": "date",
     "industry": "string",
     "picture": "stream",
+    "experience": "string",
     "lastModifiedDateTime": "datetime"
 }
 ```

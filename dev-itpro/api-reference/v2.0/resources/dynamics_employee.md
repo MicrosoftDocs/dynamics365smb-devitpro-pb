@@ -4,7 +4,7 @@ description: An employee object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -65,6 +65,9 @@ Represents an employee in [!INCLUDE[prod_short](../../../includes/prod_short.md)
 |status|NAV.employeeStatus|Specifies the status of the employee. It can be "Active", "Inactive" or "Terminated".|
 |birthDate|date|Specifies the employee's date of birth. |
 |statisticsGroupCode|string|The employee's statistics group code.|
+|bankBranchNumber|string||
+|bankAccountNumber|string||
+|iban|string||
 |lastModifiedDateTime|datetime|The last datetime the employee was modified. Read-Only.|
 
 ## JSON representation
@@ -96,6 +99,9 @@ Here is a JSON representation of the employee resource.
     "status": "NAV.employeeStatus",
     "birthDate": "date",
     "statisticsGroupCode": "string",
+    "bankBranchNumber": "string",
+    "bankAccountNumber": "string",
+    "iban": "string",
     "lastModifiedDateTime": "datetime"
 }
 ```

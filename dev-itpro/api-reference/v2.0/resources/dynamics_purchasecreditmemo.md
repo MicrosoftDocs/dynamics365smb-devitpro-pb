@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -72,6 +72,7 @@ The response has no content; the response code is 204.
 |vendorId|GUID|The unique ID of vendor.|
 |vendorNumber|string|Specifies vendor's number.|
 |vendorName|string|Specifies vendor's name.|
+|vendorCreditMemoNumber|string||
 |payToVendorId|GUID|Pay to vendor id.|
 |payToVendorNumber|string|Pay to vendor number.|
 |payToName|string|Pay to name of the purchase credit memo. |
@@ -121,6 +122,7 @@ Here is a JSON representation of the purchaseCreditMemo resource.
     "vendorId": "GUID",
     "vendorNumber": "string",
     "vendorName": "string",
+    "vendorCreditMemoNumber": "string",
     "payToVendorId": "GUID",
     "payToVendorNumber": "string",
     "payToName": "string",

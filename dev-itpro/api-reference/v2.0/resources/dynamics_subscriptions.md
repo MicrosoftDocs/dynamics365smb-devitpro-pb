@@ -1,12 +1,14 @@
 ---
-title: subscriptions resource type  
+title: subscriptions resource type
 description: A subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
+ms.service: "dynamics365-business-central"
 ms.topic: reference
-ms.devlang: al
-ms.date: 04/09/2024
+ms.devlang: na
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 04/28/2025
 ms.author: solsen
-ms.reviewer: solsen
 ---
 
 # subscriptions resource type
@@ -49,10 +51,10 @@ If you're subscribing to a custom API page, both the URL you send the subscripti
 |systemModifiedAt|datetime|The last datetime the subscriptions was modified.|
 |systemModifiedBy|GUID|The ID of the user who last modified the company.|
 
-
 ## JSON representation
 
 Here is a JSON representation of the subscriptions resource.
+
 
 ```json
 {
@@ -70,6 +72,7 @@ Here is a JSON representation of the subscriptions resource.
     "systemModifiedBy": "GUID"
 }
 ```
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
 

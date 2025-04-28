@@ -4,7 +4,7 @@ description: An opportunity object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -28,6 +28,8 @@ Represents an opportunity in [!INCLUDE[prod_short](../../../includes/prod_short.
 |[DELETE opportunity](../api/dynamics_opportunity_delete.md)|none|Deletes a opportunity object.|
 |[POST opportunity](../api/dynamics_opportunity_create.md)|opportunity|Creates a opportunity object.|
 |[PATCH opportunity](../api/dynamics_opportunity_update.md)|opportunity|Updates a opportunity object.|
+
+
 
 ## Properties
 

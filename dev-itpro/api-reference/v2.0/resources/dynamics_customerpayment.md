@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -31,6 +31,7 @@ Represents a customer payment in [!INCLUDE[prod_short](../../../includes/prod_sh
 |[DELETE customerPayment](../api/dynamics_customerpayment_delete.md)|none|Deletes a customer payment object.|
 |[POST customerPayment](../api/dynamics_customerpayment_create.md)|customerPayment|Creates a customer payment object.|
 |[PATCH customerPayment](../api/dynamics_customerpayment_update.md)|customerPayment|Updates a customer payment object.|
+|[GET customerPayment](../api/dynamics_customerpayment_get.md)|customerPayment|Gets a customer payment object.|
 
 
 ## Navigation

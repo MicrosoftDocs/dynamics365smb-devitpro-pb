@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -25,6 +25,7 @@ Represents a general ledger setup in [!INCLUDE[prod_short](../../../includes/pro
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
+|[GET generalLedgerSetup](../api/dynamics_generalledgersetup_get.md)|generalLedgerSetup|Gets a general ledger setup object.|
 |[GET generalLedgerSetup](../api/dynamics_generalledgersetup_get.md)|generalLedgerSetup|Gets a general ledger setup object.|
 
 
@@ -56,7 +57,15 @@ Here is a JSON representation of the generalLedgerSetup resource.
     "localCurrencyCode": "string",
     "localCurrencySymbol": "string",
     "lastModifiedDateTime": "datetime",
-    "allowQueryFromConsolidation": "boolean"
+    "allowQueryFromConsolidation": "boolean",
+    "shortcutDimension1Code": "string",
+    "shortcutDimension2Code": "string",
+    "shortcutDimension3Code": "string",
+    "shortcutDimension4Code": "string",
+    "shortcutDimension5Code": "string",
+    "shortcutDimension6Code": "string",
+    "shortcutDimension7Code": "string",
+    "shortcutDimension8Code": "string"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

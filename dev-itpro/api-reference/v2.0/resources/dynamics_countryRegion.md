@@ -4,7 +4,7 @@ description: A country/region object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -28,6 +28,7 @@ Represents a country/region in [!INCLUDE[prod_short](../../../includes/prod_shor
 |[DELETE countryRegion](../api/dynamics_countryregion_delete.md)|none|Deletes a country/region object.|
 |[POST countryRegion](../api/dynamics_countryregion_create.md)|countryRegion|Creates a country/region object.|
 |[PATCH countryRegion](../api/dynamics_countryregion_update.md)|countryRegion|Updates a country/region object.|
+|[GET countryRegion](../api/dynamics_countryregion_get.md)|countryRegion|Gets a country/region object.|
 
 
 
