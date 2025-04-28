@@ -28,7 +28,7 @@
 ### [Get aged accounts payable](api/dynamics_agedaccountspayable_get.md)
 ## [Aged accounts receivable](resources/dynamics_agedaccountsreceivable.md)
 ### [Get aged accounts receivable](api/dynamics_agedaccountsreceivable_get.md)
-## [Apicategoryroutes](resources/dynamics_apicategoryroutes.md)
+## [Api category routes](resources/dynamics_apicategoryroutes.md)
 ### [Get apicategoryroutes](api/dynamics_apicategoryroutes_get.md)
 ## [Apply vendor entry](resources/dynamics_applyvendorentry.md)
 ### [Get apply vendor entry](api/dynamics_applyvendorentry_get.md)

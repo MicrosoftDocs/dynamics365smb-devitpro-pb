@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an aged accounts receivable in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -26,7 +24,6 @@ Represents an aged accounts receivable in [!INCLUDE[prod_short](../../../include
 |:--------------------|:-----------|:-------------------------|
 |[GET agedAccountsReceivable](../api/dynamics_agedaccountsreceivable_get.md)|agedAccountsReceivable|Gets a aged accounts receivable object.|
 |[GET agedAccountsReceivable](../api/dynamics_agedaccountsreceivable_get.md)|agedAccountsReceivable|Gets a aged accounts receivable object.|
-
 
 ## Navigation
 
@@ -76,9 +73,6 @@ Here is a JSON representation of the agedAccountsReceivable resource.
     "periodLengthFilter": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
-
 ## Related information
+
 [GET agedAccountsReceivable](../api/dynamics_agedAccountsReceivable_Get.md)

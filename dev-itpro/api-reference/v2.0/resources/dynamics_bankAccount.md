@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a bank account in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,8 +26,6 @@ Represents a bank account in [!INCLUDE[prod_short](../../../includes/prod_short.
 |[DELETE bankAccount](../api/dynamics_bankaccount_delete.md)|none|Deletes a bank account object.|
 |[POST bankAccount](../api/dynamics_bankaccount_create.md)|bankAccount|Creates a bank account object.|
 |[PATCH bankAccount](../api/dynamics_bankaccount_update.md)|bankAccount|Updates a bank account object.|
-
-
 
 ## Properties
 
@@ -65,11 +61,9 @@ Here is a JSON representation of the bankAccount resource.
     "intercompanyEnabled": "boolean"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET bankAccount](../api/dynamics_bankAccount_Get.md)  
 [DELETE bankAccount](../api/dynamics_bankAccount_Delete.md)  
 [POST bankAccount](../api/dynamics_bankAccount_Create.md)  

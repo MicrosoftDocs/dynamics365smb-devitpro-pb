@@ -2,20 +2,16 @@
 title: apicategoryroutes resource type
 description: An apicategoryroutes object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
+ms.service: dynamics365-business-central
 ms.topic: reference
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.devlang: al
 ms.date: 04/28/2025
 ms.author: solsen
 ---
 
 # apicategoryroutes resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents an apicategoryroutes in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Represents an apicategoryroutes object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
@@ -25,8 +21,6 @@ Represents an apicategoryroutes in [!INCLUDE[prod_short](../../../includes/prod_
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET apicategoryroutes](../api/dynamics_apicategoryroutes_get.md)|apicategoryroutes|Gets a apicategoryroutes object.|
-
-
 
 ## Properties
 
@@ -41,7 +35,6 @@ Represents an apicategoryroutes in [!INCLUDE[prod_short](../../../includes/prod_
 
 Here is a JSON representation of the apicategoryroutes resource.
 
-
 ```json
 {
     "route": "string",
@@ -50,7 +43,7 @@ Here is a JSON representation of the apicategoryroutes resource.
     "version": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
+
 [GET apicategoryroutes](../api/dynamics_apicategoryroutes_get.md)

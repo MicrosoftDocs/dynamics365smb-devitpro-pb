@@ -14,8 +14,6 @@ ms.reviewer: solsen
 
 # accountingPeriod resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an accounting period in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -26,8 +24,6 @@ Represents an accounting period in [!INCLUDE[prod_short](../../../includes/prod_
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET accountingPeriod](../api/dynamics_accountingperiod_get.md)|accountingPeriod|Gets a accounting period object.|
-
-
 
 ## Properties
 
@@ -45,7 +41,6 @@ Represents an accounting period in [!INCLUDE[prod_short](../../../includes/prod_
 
 Here is a JSON representation of the accountingPeriod resource.
 
-
 ```json
 {
     "id": "GUID",
@@ -57,7 +52,7 @@ Here is a JSON representation of the accountingPeriod resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET accountingPeriod](../api/dynamics_accountingperiod_get.md)
