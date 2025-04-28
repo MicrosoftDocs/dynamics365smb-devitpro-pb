@@ -31,13 +31,13 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 
 ## Upgrade to 26.1
 
-- Online
+### On-premises customers
 
-  New customers automatically get the latest builds of Business Central (26.1). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
 
-- On-premises
+### Online customers
 
-  Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
+New customers automatically get the latest builds of Business Central (26.1). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
 
 ## Good to know
 
@@ -47,7 +47,7 @@ The Business Central Launch Event for the 2025 release wave 1 took place in Apri
 
 ### Features becoming mandatory soon
 
-Prepare for features expected to be mandatory in the next release wave (27.0). When these features become mandatory, they might disrupt extensions and apps you install in the future. Work with your partner to update installed extensions and apps before the features become mandatory. These features are optional and can be enabled on the **Feature Management** page in Business Central. Learn more in [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).  
+Prepare for features expected to be mandatory in the next release wave (27.0). When these features become mandatory, they might disrupt extensions and apps you install in the future. Work with your partner to update installed extensions and apps before the features are mandatory. These features are optional and can be enabled on the **Feature Management** page in Business Central. Learn more in [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
 
 - [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
 - [Feature Update: Enable multiple users to post warehouse entries at the same time](/dynamics365/business-central/design-details-warehouse-entries#creating-warehouse-transactions) <!--(/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/allow-more-than-one-user-post-warehouse-entries-at-time)-->
@@ -61,7 +61,7 @@ Prepare for features expected to be mandatory in the next release wave (27.0). W
 - [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md)
 - [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)
 
- For a list of features that became mandatory in update 26.0, go to [Optional features that are now mandatory](https://aka.ms/BCFeatureMgmt).
+For a list of features that became mandatory in update 26.0, go to [Optional features that are now mandatory](https://aka.ms/BCFeatureMgmt).
 
 ### Discover all partner related resources
 
