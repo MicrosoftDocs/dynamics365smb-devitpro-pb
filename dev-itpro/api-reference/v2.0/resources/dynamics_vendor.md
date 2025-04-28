@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,7 +26,6 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[DELETE vendor](../api/dynamics_vendor_delete.md)|none|Deletes a vendor object.|
 |[POST vendor](../api/dynamics_vendor_create.md)|vendor|Creates a vendor object.|
 |[PATCH vendor](../api/dynamics_vendor_update.md)|vendor|Updates a vendor object.|
-
 
 ## Navigation
 
@@ -101,11 +98,9 @@ Here is a JSON representation of the vendor resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET vendor](../api/dynamics_vendor_Get.md)  
 [DELETE vendor](../api/dynamics_vendor_Delete.md)  
 [POST vendor](../api/dynamics_vendor_Create.md)  

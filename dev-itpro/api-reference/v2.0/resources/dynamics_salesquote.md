@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales quote in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,9 +27,9 @@ Represents a sales quote in [!INCLUDE[prod_short](../../../includes/prod_short.m
 |[POST salesQuote](../api/dynamics_salesquote_create.md)|salesQuote|Creates a sales quote object.|
 |[PATCH salesQuote](../api/dynamics_salesquote_update.md)|salesQuote|Updates a sales quote object.|
 
-## Bound Actions
+## Bound actions
 
-The salesQuote resource type offers a bound action called `send` which sends the corresponding salesQuote batch.
+The salesQuote resource type offers a bound action called `send`, which sends the corresponding salesQuote batch.
 This is illustrated in the following example:
 `SEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesQuotes({id})/Microsoft.NAV.send`
 
@@ -178,11 +176,9 @@ Here is a JSON representation of the salesQuote resource.
     "email": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET salesQuote](../api/dynamics_salesQuote_Get.md)  
 [DELETE salesQuote](../api/dynamics_salesQuote_Delete.md)  
 [POST salesQuote](../api/dynamics_salesQuote_Create.md)  

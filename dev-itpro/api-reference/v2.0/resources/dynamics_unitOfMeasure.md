@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an unit of measure in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,8 +26,6 @@ Represents an unit of measure in [!INCLUDE[prod_short](../../../includes/prod_sh
 |[DELETE unitOfMeasure](../api/dynamics_unitofmeasure_delete.md)|none|Deletes a unit of measure object.|
 |[POST unitOfMeasure](../api/dynamics_unitofmeasure_create.md)|unitOfMeasure|Creates a unit of measure object.|
 |[PATCH unitOfMeasure](../api/dynamics_unitofmeasure_update.md)|unitOfMeasure|Updates a unit of measure object.|
-
-
 
 ## Properties
 
@@ -57,11 +53,9 @@ Here is a JSON representation of the unitOfMeasure resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET unitOfMeasure](../api/dynamics_unitOfMeasure_Get.md)  
 [DELETE unitOfMeasure](../api/dynamics_unitOfMeasure_Delete.md)  
 [POST unitOfMeasure](../api/dynamics_unitOfMeasure_Create.md)  

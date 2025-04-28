@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a tax group in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,8 +26,6 @@ Represents a tax group in [!INCLUDE[prod_short](../../../includes/prod_short.md)
 |[DELETE taxGroup](../api/dynamics_taxgroup_delete.md)|none|Deletes a tax group object.|
 |[POST taxGroup](../api/dynamics_taxgroup_create.md)|taxGroup|Creates a tax group object.|
 |[PATCH taxGroup](../api/dynamics_taxgroup_update.md)|taxGroup|Updates a tax group object.|
-
-
 
 ## Properties
 
@@ -55,11 +51,9 @@ Here is a JSON representation of the taxGroup resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET taxGroup](../api/dynamics_taxGroup_Get.md)  
 [DELETE taxGroup](../api/dynamics_taxGroup_Delete.md)  
 [POST taxGroup](../api/dynamics_taxGroup_Create.md)  

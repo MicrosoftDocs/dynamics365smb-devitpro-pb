@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a tax area in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,8 +26,6 @@ Represents a tax area in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[DELETE taxArea](../api/dynamics_taxarea_delete.md)|none|Deletes a tax area object.|
 |[POST taxArea](../api/dynamics_taxarea_create.md)|taxArea|Creates a tax area object.|
 |[PATCH taxArea](../api/dynamics_taxarea_update.md)|taxArea|Updates a tax area object.|
-
-
 
 ## Properties
 
@@ -55,11 +51,9 @@ Here is a JSON representation of the taxArea resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET taxArea](../api/dynamics_taxArea_Get.md)  
 [DELETE taxArea](../api/dynamics_taxArea_Delete.md)  
 [POST taxArea](../api/dynamics_taxArea_Create.md)  

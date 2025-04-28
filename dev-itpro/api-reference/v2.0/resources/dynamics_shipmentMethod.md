@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a shipment method in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,8 +26,6 @@ Represents a shipment method in [!INCLUDE[prod_short](../../../includes/prod_sho
 |[DELETE shipmentMethod](../api/dynamics_shipmentmethod_delete.md)|none|Deletes a shipment method object.|
 |[POST shipmentMethod](../api/dynamics_shipmentmethod_create.md)|shipmentMethod|Creates a shipment method object.|
 |[PATCH shipmentMethod](../api/dynamics_shipmentmethod_update.md)|shipmentMethod|Updates a shipment method object.|
-
-
 
 ## Properties
 
@@ -53,11 +49,9 @@ Here is a JSON representation of the shipmentMethod resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET shipmentMethod](../api/dynamics_shipmentMethod_Get.md)  
 [DELETE shipmentMethod](../api/dynamics_shipmentMethod_Delete.md)  
 [POST shipmentMethod](../api/dynamics_shipmentMethod_Create.md)  

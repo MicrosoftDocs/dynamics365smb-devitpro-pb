@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a time registration entry in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -79,11 +77,9 @@ Here is a JSON representation of the timeRegistrationEntry resource.
     "lastModfiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET timeRegistrationEntry](../api/dynamics_timeRegistrationEntry_Get.md)  
 [DELETE timeRegistrationEntry](../api/dynamics_timeRegistrationEntry_Delete.md)  
 [POST timeRegistrationEntry](../api/dynamics_timeRegistrationEntry_Create.md)  

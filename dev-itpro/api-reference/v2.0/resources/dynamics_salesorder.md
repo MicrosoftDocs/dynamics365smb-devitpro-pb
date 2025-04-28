@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales order in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -31,7 +29,7 @@ Represents a sales order in [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## Bound Actions
 
-The salesOrder resource type offers a bound action called `shipAndInvoice` which ship and invoices the corresponding salesOrder batch.
+The salesOrder resource type offers a bound action called `shipAndInvoice`, which ship and invoices the corresponding salesOrder batch.
 This is illustrated in the following example:
 `SHIPANDINVOICE https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesOrders({id})/Microsoft.NAV.shipAndInvoice`
 
@@ -168,11 +166,9 @@ Here is a JSON representation of the salesOrder resource.
     "email": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET salesOrder](../api/dynamics_salesOrder_Get.md)  
 [DELETE salesOrder](../api/dynamics_salesOrder_Delete.md)  
 [POST salesOrder](../api/dynamics_salesOrder_Create.md)  
