@@ -31,7 +31,13 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 
 ## Upgrade to 26.1
 
-New customers automatically get the latest builds of Business Central (26.1). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
+- Online
+
+  New customers automatically get the latest builds of Business Central (26.1). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
+
+- On-premises
+
+  Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
 
 ## Good to know
 
