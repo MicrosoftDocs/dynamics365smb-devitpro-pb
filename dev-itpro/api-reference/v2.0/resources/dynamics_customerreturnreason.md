@@ -11,8 +11,6 @@ ms.reviewer: solsen
 
 # customerReturnReason resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a customer return reason in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -26,8 +24,6 @@ Represents a customer return reason in [!INCLUDE[prod_short](../../../includes/p
 |[DELETE customerReturnReason](../api/dynamics_customerreturnreason_delete.md)|none|Deletes a customer return reason object.|
 |[POST customerReturnReason](../api/dynamics_customerreturnreason_create.md)|customerReturnReason|Creates a customer return reason object.|
 |[PATCH customerReturnReason](../api/dynamics_customerreturnreason_update.md)|customerReturnReason|Updates a customer return reason object.|
-
-
 
 ## Properties
 
@@ -51,9 +47,9 @@ Here is a JSON representation of the customerReturnReason resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET customerReturnReason](../api/dynamics_customerreturnreason_get.md)   
 [DELETE customerReturnReason](../api/dynamics_customerreturnreason_delete.md)  
 [POST customerReturnReason](../api/dynamics_customerreturnreason_create.md)  
