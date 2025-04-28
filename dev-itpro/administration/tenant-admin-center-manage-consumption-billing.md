@@ -1,6 +1,6 @@
 ---
 title: Manage consumption-based billing
-description: Learn about managing consumption-based billing for Business Central
+description: Learn about managing consumption-based billing for Business Central.
 author: jobulsin
 ms.topic: conceptual
 ms.devlang: al
@@ -39,7 +39,7 @@ Both models require that you link your Business Central environment to a Power P
 
 > [!NOTE]
 >
-> - Both billing models can be used on the Business Central environment. Prepaid capacity is consumed first.
+> - Both billing models can be used in the Business Central environment. Prepaid capacity is consumed first.
 > - Message capacity on the Power Platform environment is consumed by Business Central environments and other Microsoft services on the tenant.
 
 ### Set up prepaid capacity
