@@ -35,6 +35,15 @@ Represents a general ledger setup in [!INCLUDE[prod_short](../../../includes/pro
 |localCurrencySymbol|string||
 |lastModifiedDateTime|datetime|The last datetime the general ledger setup was modified. Read-Only.|
 |allowQueryFromConsolidation|boolean||
+|shortcutDimension1Code|string||
+|shortcutDimension2Code|string||
+|shortcutDimension3Code|string||
+|shortcutDimension4Code|string||
+|shortcutDimension5Code|string||
+|shortcutDimension6Code|string||
+|shortcutDimension7Code|string||
+|shortcutDimension8Code|string||
+
 
 ## JSON representation
 
