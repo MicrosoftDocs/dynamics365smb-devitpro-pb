@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a payment term in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,8 +26,6 @@ Represents a payment term in [!INCLUDE[prod_short](../../../includes/prod_short.
 |[DELETE paymentTerm](../api/dynamics_paymentterm_delete.md)|none|Deletes a payment term object.|
 |[POST paymentTerm](../api/dynamics_paymentterm_create.md)|paymentTerm|Creates a payment term object.|
 |[PATCH paymentTerm](../api/dynamics_paymentterm_update.md)|paymentTerm|Updates a payment term object.|
-
-
 
 ## Properties
 
@@ -61,11 +57,9 @@ Here is a JSON representation of the paymentTerm resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET paymentTerm](../api/dynamics_paymentTerm_Get.md)  
 [DELETE paymentTerm](../api/dynamics_paymentTerm_Delete.md)  
 [POST paymentTerm](../api/dynamics_paymentTerm_Create.md)  

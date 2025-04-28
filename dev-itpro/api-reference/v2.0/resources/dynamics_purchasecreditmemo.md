@@ -2,11 +2,8 @@
 title: purchaseCreditMemo resource type
 description: A purchase credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
@@ -14,8 +11,6 @@ ms.reviewer: solsen
 
 # purchaseCreditMemo resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a purchase credit memo in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -30,15 +25,15 @@ Represents a purchase credit memo in [!INCLUDE[prod_short](../../../includes/pro
 |[POST purchaseCreditMemo](../api/dynamics_purchasecreditmemo_create.md)|purchaseCreditMemo|Creates a purchase credit memo object.|
 |[PATCH purchaseCreditMemo](../api/dynamics_purchasecreditmemo_update.md)|purchaseCreditMemo|Updates a purchase credit memo object.|
 
-## Bound Actions
+## Bound actions
 
-The purchaseCreditMemo resource type offers a bound action called `cancel` which cancels the corresponding purchaseCreditMemo batch.
+The purchaseCreditMemo resource type offers a bound action called `cancel`, which cancels the corresponding purchaseCreditMemo batch.
 This is illustrated in the following example:
 `CANCEL https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/purchaseCreditMemos({id})/Microsoft.NAV.cancel`
 
 The response has no content; the response code is 204.
 
-The purchaseCreditMemo resource type offers a bound action called `post` which posts the corresponding purchaseCreditMemo batch.
+The purchaseCreditMemo resource type offers a bound action called `post`, which posts the corresponding purchaseCreditMemo batch.
 This is illustrated in the following example:
 `POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/purchaseCreditMemos({id})/Microsoft.NAV.post`
 
@@ -158,9 +153,9 @@ Here is a JSON representation of the purchaseCreditMemo resource.
     "vendorReturnReasonId": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET purchaseCreditMemo](../api/dynamics_purchasecreditmemo_get.md)
 [DELETE purchaseCreditMemo](../api/dynamics_purchasecreditmemo_delete.md)
 [POST purchaseCreditMemo](../api/dynamics_purchasecreditmemo_create.md)

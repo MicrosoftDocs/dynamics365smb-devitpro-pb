@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a purchase order in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,9 +27,9 @@ Represents a purchase order in [!INCLUDE[prod_short](../../../includes/prod_shor
 |[POST purchaseOrder](../api/dynamics_purchaseorder_create.md)|purchaseOrder|Creates a purchase order object.|
 |[PATCH purchaseOrder](../api/dynamics_purchaseorder_update.md)|purchaseOrder|Updates a purchase order object.|
 
-## Bound Actions
+## Bound actions
 
-The purchaseOrder resource type offers a bound action called `receiveAndInvoice` which receive and invoices the corresponding purchaseOrder batch.
+The purchaseOrder resource type offers a bound action called `receiveAndInvoice`, which receives and invoices the corresponding purchaseOrder batch.
 This is illustrated in the following example:
 `RECEIVEANDINVOICE https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/purchaseOrders({id})/Microsoft.NAV.receiveAndInvoice`
 
@@ -159,9 +157,9 @@ Here is a JSON representation of the purchaseOrder resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET purchaseOrder](../api/dynamics_purchaseorder_get.md)   
 [DELETE purchaseOrder](../api/dynamics_purchaseorder_delete.md)  
 [POST purchaseOrder](../api/dynamics_purchaseorder_create.md)  

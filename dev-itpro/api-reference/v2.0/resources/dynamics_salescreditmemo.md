@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales credit memo in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,39 +27,33 @@ Represents a sales credit memo in [!INCLUDE[prod_short](../../../includes/prod_s
 |[POST salesCreditMemo](../api/dynamics_salescreditmemo_create.md)|salesCreditMemo|Creates a sales credit memo object.|
 |[PATCH salesCreditMemo](../api/dynamics_salescreditmemo_update.md)|salesCreditMemo|Updates a sales credit memo object.|
 
-## Bound Actions
+## Bound actions
 
-The salesCreditMemo resource type offers a bound action called `cancelAndSend` which cancel and sends the corresponding salesCreditMemo batch.
+The salesCreditMemo resource type offers a bound action called `cancelAndSend`, which cancels and sends the corresponding salesCreditMemo batch.
 This is illustrated in the following example:
 `CANCELANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesCreditMemos({id})/Microsoft.NAV.cancelAndSend`
 
 The response has no content; the response code is 204.
 
-The salesCreditMemo resource type offers a bound action called `cancel` which cancels the corresponding salesCreditMemo batch.
+The salesCreditMemo resource type offers a bound action called `cancel`, which cancels the corresponding salesCreditMemo batch.
 This is illustrated in the following example:
 `CANCEL https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesCreditMemos({id})/Microsoft.NAV.cancel`
 
 The response has no content; the response code is 204.
 
-The salesCreditMemo resource type offers a bound action called `cancelAndSend` which cancel and sends the corresponding salesCreditMemo batch.
-This is illustrated in the following example:
-`CANCELANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesCreditMemos({id})/Microsoft.NAV.cancelAndSend`
-
-The response has no content; the response code is 204.
-
-The salesCreditMemo resource type offers a bound action called `post` which posts the corresponding salesCreditMemo batch.
+The salesCreditMemo resource type offers a bound action called `post`, which posts the corresponding salesCreditMemo batch.
 This is illustrated in the following example:
 `POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesCreditMemos({id})/Microsoft.NAV.post`
 
 The response has no content; the response code is 204.
 
-The salesCreditMemo resource type offers a bound action called `postAndSend` which post and sends the corresponding salesCreditMemo batch.
+The salesCreditMemo resource type offers a bound action called `postAndSend`, which posts and sends the corresponding salesCreditMemo batch.
 This is illustrated in the following example:
 `POSTANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesCreditMemos({id})/Microsoft.NAV.postAndSend`
 
 The response has no content; the response code is 204.
 
-The salesCreditMemo resource type offers a bound action called `send` which sends the corresponding salesCreditMemo batch.
+The salesCreditMemo resource type offers a bound action called `send`, which sends the corresponding salesCreditMemo batch.
 This is illustrated in the following example:
 `SEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesCreditMemos({id})/Microsoft.NAV.send`
 
@@ -185,11 +177,9 @@ Here is a JSON representation of the salesCreditMemo resource.
     "customerReturnReasonId": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET salesCreditMemo](../api/dynamics_salesCreditMemo_Get.md)  
 [DELETE salesCreditMemo](../api/dynamics_salesCreditMemo_Delete.md)  
 [POST salesCreditMemo](../api/dynamics_salesCreditMemo_Create.md)  

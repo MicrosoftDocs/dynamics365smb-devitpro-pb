@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a purchase order line in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -120,9 +118,9 @@ Here is a JSON representation of the purchaseOrderLine resource.
     "locationId": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET purchaseOrderLine](../api/dynamics_purchaseorderline_get.md)  
 [DELETE purchaseOrderLine](../api/dynamics_purchaseorderline_delete.md)  
 [POST purchaseOrderLine](../api/dynamics_purchaseorderline_create.md)  
