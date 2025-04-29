@@ -2,7 +2,6 @@
 title: Get employee defaultDimensions  
 description: Gets a employee default dimensions in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024

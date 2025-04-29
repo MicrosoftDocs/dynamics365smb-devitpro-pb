@@ -2,18 +2,13 @@
 title: Get fixedAssets
 description: Gets a fixed asset object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get fixedAssets
 
 Retrieves the properties and relationships of a fixed asset object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -21,11 +16,10 @@ Retrieves the properties and relationships of a fixed asset object for [!INCLUDE
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```
 GET businesscentralPrefix/companies({id})/fixedAssets({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
 
 |Header|Value|
@@ -45,38 +39,43 @@ If successful, this method returns a ```200 OK``` response code and a **fixedAss
 **Request**
 
 Here's an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/fixedAssets({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here's an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "id" : "",
-    "number" : "",
-    "displayName" : "",
-    "fixedAssetLocationCode" : "",
-    "fixedAssetLocationId" : "",
-    "classCode" : "",
-    "subclassCode" : "",
-    "blocked" : "",
-    "serialNumber" : "",
-    "employeeNumber" : "",
-    "employeeId" : "",
-    "underMaintenance" : "",
-    "lastModifiedDateTime" : ""
+    "id": "FA000012",
+    "number": "FA-1005",
+    "displayName": "Company Vehicle - Ford Escape",
+    "fixedAssetLocationCode": "MAIN",
+    "fixedAssetLocationId": "LOC0001",
+    "classCode": "VEHICLE",
+    "subclassCode": "COMPANY",
+    "blocked": false,
+    "serialNumber": "1FMCU0F74MUA12345",
+    "employeeNumber": "EM1042",
+    "employeeId": "e2a5738a-44e3-ea11-bb43-000d3a2feca1",
+    "underMaintenance": false,
+    "acquisitionDate": "2025-01-15",
+    "depreciationStartingDate": "2025-01-15",
+    "acquisitionCost": 32500.00,
+    "depreciationMethod": "Straight-Line",
+    "depreciationYears": 5,
+    "bookValue": 29037.50,
+    "lastModifiedDateTime": "2025-04-15T14:28:36Z"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [fixedAsset](../resources/dynamics_fixedAsset.md)  
 [DELETE fixedAsset](dynamics_fixedasset_delete.md)  
 [POST fixedAsset](dynamics_fixedasset_create.md)  
-[PATCH fixedAsset](dynamics_fixedasset_update.md)  
+[PATCH fixedAsset](dynamics_fixedasset_update.md)

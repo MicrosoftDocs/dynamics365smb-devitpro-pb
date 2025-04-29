@@ -2,17 +2,12 @@
 title: Update externaleventsubscriptions
 description: Updates an  externaleventsubscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/28/2025
 ms.author: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Update externaleventsubscriptions
 
 Updates the properties of an externaleventsubscriptions object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -20,11 +15,11 @@ Updates the properties of an externaleventsubscriptions object for [!INCLUDE[pro
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
+
 ```
 PATCH businesscentralPrefix/companies({id})/externaleventsubscriptions({id})
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Request headers
 
 |Header|Value|
@@ -46,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 **Request**
 
 Here's an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values) -->
+
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/externaleventsubscriptions({id})
 Content-type: application/json
@@ -55,12 +50,11 @@ Content-type: application/json
     "companyId" :
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here's an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -84,7 +78,7 @@ Content-type: application/json
     "systemModifiedBy" :
 }
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
