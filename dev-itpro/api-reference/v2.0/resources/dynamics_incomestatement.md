@@ -38,7 +38,7 @@ Represents an income statement in [!INCLUDE[prod_short](../../../includes/prod_s
 
 ## JSON representation
 
-Here is a JSON representation of the incomeStatement resource.
+Here's a JSON representation of the incomeStatement resource.
 
 
 ```json

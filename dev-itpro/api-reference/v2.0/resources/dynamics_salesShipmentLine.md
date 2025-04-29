@@ -52,7 +52,7 @@ Represents a sales shipment line in [!INCLUDE[prod_short](../../../includes/prod
 
 ## JSON representation
 
-Here is a JSON representation of the salesShipmentLine resource.
+Here's a JSON representation of the salesShipmentLine resource.
 
 
 ```json

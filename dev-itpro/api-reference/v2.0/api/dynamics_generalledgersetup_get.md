@@ -2,7 +2,7 @@
 title: Get generalLedgerSetup
 description: Gets a general ledger setup object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
+
 ms.topic: reference
 ms.devlang: al
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ GET businesscentralPrefix/companies({id})/generalLedgerSetup({id})
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -44,7 +44,7 @@ If successful, this method returns a ```200 OK``` response code and a **generalL
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/generalLedgerSetups({id})
@@ -52,7 +52,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({id})/generalLedgerSetups
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json

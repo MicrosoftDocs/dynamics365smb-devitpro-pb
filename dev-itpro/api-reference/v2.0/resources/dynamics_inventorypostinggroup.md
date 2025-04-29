@@ -35,7 +35,7 @@ Represents an inventory posting group in [!INCLUDE[prod_short](../../../includes
 
 ## JSON representation
 
-Here is a JSON representation of the inventoryPostingGroup resource.
+Here's a JSON representation of the inventoryPostingGroup resource.
 
 ```json
 {

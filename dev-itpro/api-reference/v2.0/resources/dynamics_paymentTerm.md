@@ -42,7 +42,7 @@ Represents a payment term in [!INCLUDE[prod_short](../../../includes/prod_short.
 
 ## JSON representation
 
-Here is a JSON representation of the paymentTerm resource.
+Here's a JSON representation of the paymentTerm resource.
 
 
 ```json

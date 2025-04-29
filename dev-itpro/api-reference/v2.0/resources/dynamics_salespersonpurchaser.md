@@ -43,7 +43,7 @@ Represents a salesperson purchaser in [!INCLUDE[prod_short](../../../includes/pr
 
 ## JSON representation
 
-Here is a JSON representation of the salespersonPurchaser resource.
+Here's a JSON representation of the salespersonPurchaser resource.
 
 
 ```json

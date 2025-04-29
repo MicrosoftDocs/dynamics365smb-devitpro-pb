@@ -74,7 +74,7 @@ Represents a sales credit memo line in [!INCLUDE[prod_short](../../../includes/p
 
 ## JSON representation
 
-Here is a JSON representation of the salesCreditMemoLine resource.
+Here's a JSON representation of the salesCreditMemoLine resource.
 
 
 ```json

@@ -36,7 +36,7 @@ DELETE businesscentralPrefix/companies({id})/purchaseOrderLines({purchaseOrderLi
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -46,7 +46,7 @@ If successful, this method returns ```204 No Content``` response code and delete
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseOrderLines({purchaseOrderLineId})
@@ -54,7 +54,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseOrderLin
 
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 204 No Content

@@ -51,7 +51,7 @@ Represents an account in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 
 ## JSON representation
 
-Here is a JSON representation of the account resource.
+Here's a JSON representation of the account resource.
 
 
 ```json

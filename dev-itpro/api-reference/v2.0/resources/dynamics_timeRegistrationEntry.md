@@ -56,7 +56,7 @@ Represents a time registration entry in [!INCLUDE[prod_short](../../../includes/
 
 ## JSON representation
 
-Here is a JSON representation of the timeRegistrationEntry resource.
+Here's a JSON representation of the timeRegistrationEntry resource.
 
 
 ```json

@@ -63,7 +63,7 @@ Represents a journal line in [!INCLUDE[prod_short](../../../includes/prod_short.
 
 ## JSON representation
 
-Here is a JSON representation of the journalLine resource.
+Here's a JSON representation of the journalLine resource.
 
 
 ```json

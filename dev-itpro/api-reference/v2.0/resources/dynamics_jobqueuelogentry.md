@@ -45,7 +45,7 @@ Represents a job queue log entry in [!INCLUDE[prod_short](../../../includes/prod
 
 ## JSON representation
 
-Here is a JSON representation of the jobQueueLogEntry resource.
+Here's a JSON representation of the jobQueueLogEntry resource.
 
 
 ```json

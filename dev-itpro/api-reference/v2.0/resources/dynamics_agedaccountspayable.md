@@ -48,7 +48,7 @@ Represents an aged accounts payable in [!INCLUDE[prod_short](../../../includes/p
 
 ## JSON representation
 
-Here is a JSON representation of the agedAccountsPayable resource.
+Here's a JSON representation of the agedAccountsPayable resource.
 
 
 ```json

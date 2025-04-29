@@ -36,7 +36,7 @@ Represents an accounting period in [!INCLUDE[prod_short](../../../includes/prod_
 
 ## JSON representation
 
-Here is a JSON representation of the accountingPeriod resource.
+Here's a JSON representation of the accountingPeriod resource.
 
 ```json
 {

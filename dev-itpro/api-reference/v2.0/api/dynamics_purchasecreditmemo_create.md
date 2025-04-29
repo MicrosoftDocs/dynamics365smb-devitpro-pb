@@ -2,7 +2,7 @@
 title: Create purchaseCreditMemos
 description: Creates a purchase credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
+
 ms.topic: reference
 ms.devlang: al
 ms.tgt_pltfrm: na
@@ -46,7 +46,7 @@ If successful, this method returns ```201 Created``` response code and a **purch
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos
 Content-type: application/json
@@ -96,7 +96,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 201 Created

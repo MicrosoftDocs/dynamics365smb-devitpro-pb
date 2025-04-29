@@ -39,7 +39,7 @@ Represents a country/region in [!INCLUDE[prod_short](../../../includes/prod_shor
 
 ## JSON representation
 
-Here is a JSON representation of the countryRegion resource.
+Here's a JSON representation of the countryRegion resource.
 
 
 ```json

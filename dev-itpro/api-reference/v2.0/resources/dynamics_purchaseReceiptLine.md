@@ -52,7 +52,7 @@ Represents a purchase receipt line in [!INCLUDE[prod_short](../../../includes/pr
 
 ## JSON representation
 
-Here is a JSON representation of the purchaseReceiptLine resource.
+Here's a JSON representation of the purchaseReceiptLine resource.
 
 
 ```json

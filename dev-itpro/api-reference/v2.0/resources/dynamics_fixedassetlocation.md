@@ -36,7 +36,7 @@ Represents a fixed asset location in [!INCLUDE[prod_short](../../../includes/pro
 
 ## JSON representation
 
-Here is a JSON representation of the fixedAssetLocation resource.
+Here's a JSON representation of the fixedAssetLocation resource.
 
 
 ```json

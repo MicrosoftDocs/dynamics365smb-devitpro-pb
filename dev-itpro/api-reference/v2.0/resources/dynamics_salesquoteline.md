@@ -73,7 +73,7 @@ Represents a sales quote line in [!INCLUDE[prod_short](../../../includes/prod_sh
 
 ## JSON representation
 
-Here is a JSON representation of the salesQuoteLine resource.
+Here's a JSON representation of the salesQuoteLine resource.
 
 
 ```json

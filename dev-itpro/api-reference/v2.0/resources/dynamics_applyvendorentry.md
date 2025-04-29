@@ -42,7 +42,7 @@ Represents an apply vendor entry in [!INCLUDE[prod_short](../../../includes/prod
 
 ## JSON representation
 
-Here is a JSON representation of the applyVendorEntry resource.
+Here's a JSON representation of the applyVendorEntry resource.
 
 
 ```json

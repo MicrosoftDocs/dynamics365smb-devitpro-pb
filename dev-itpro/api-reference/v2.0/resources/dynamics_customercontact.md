@@ -47,7 +47,7 @@ Represents a customer contact in [!INCLUDE[prod_short](../../../includes/prod_sh
 
 ## JSON representation
 
-Here is a JSON representation of the customerContact resource.
+Here's a JSON representation of the customerContact resource.
 
 
 ```json

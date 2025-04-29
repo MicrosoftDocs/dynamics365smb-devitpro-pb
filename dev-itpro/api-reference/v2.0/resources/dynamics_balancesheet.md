@@ -38,7 +38,7 @@ Represents a balance sheet in [!INCLUDE[prod_short](../../../includes/prod_short
 
 ## JSON representation
 
-Here is a JSON representation of the balanceSheet resource.
+Here's a JSON representation of the balanceSheet resource.
 
 ```json
 {

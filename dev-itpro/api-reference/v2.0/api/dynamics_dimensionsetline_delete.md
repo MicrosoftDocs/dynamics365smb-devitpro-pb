@@ -44,7 +44,7 @@ DELETE businesscentralPrefix/companies({id})/purchaseOrderLines({id})/dimensionS
 |If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **dimensionSetLine**, the **dimensionSetLine** will not be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```204 No Content``` response code and it deletes the dimensionSetLine .
@@ -53,7 +53,7 @@ If successful, this method returns a ```204 No Content``` response code and it d
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders({id})/dimensionSetLines({id})
@@ -61,7 +61,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders({id}
 
 **Response** 
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 HTTP/1.1 204 No Content

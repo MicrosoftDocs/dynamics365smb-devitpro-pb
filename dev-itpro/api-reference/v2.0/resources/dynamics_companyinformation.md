@@ -51,7 +51,7 @@ Represents company information in [!INCLUDE[prod_short](../../../includes/prod_s
 
 ## JSON representation
 
-Here is a JSON representation of the companyInformation resource.
+Here's a JSON representation of the companyInformation resource.
 
 
 ```json

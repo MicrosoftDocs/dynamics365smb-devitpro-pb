@@ -2,7 +2,7 @@
 title: Delete purchaseCreditMemos
 description: Deletes a purchase credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
+
 ms.topic: article
 ms.devlang: al
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ DELETE businesscentralPrefix/companies({id})/purchaseCreditMemos({id})
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -46,7 +46,7 @@ If successful, this method returns ```204 No Content``` response code and delete
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos({id})
@@ -54,7 +54,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMe
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 204 No Content

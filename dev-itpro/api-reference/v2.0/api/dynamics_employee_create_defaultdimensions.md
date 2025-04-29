@@ -39,7 +39,7 @@ If successful, this method returns ```201 Created``` response code and a **emplo
 ## Example
 
 **Request**
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/employees({employeeId})/defaultDimensions

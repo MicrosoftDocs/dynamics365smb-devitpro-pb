@@ -47,7 +47,7 @@ Represents a trial balance in [!INCLUDE[prod_short](../../../includes/prod_short
 
 ## JSON representation
 
-Here is a JSON representation of the trialBalance resource.
+Here's a JSON representation of the trialBalance resource.
 
 
 ```json

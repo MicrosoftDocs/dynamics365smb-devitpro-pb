@@ -47,7 +47,7 @@ Represents a general ledger setup in [!INCLUDE[prod_short](../../../includes/pro
 
 ## JSON representation
 
-Here is a JSON representation of the generalLedgerSetup resource.
+Here's a JSON representation of the generalLedgerSetup resource.
 
 
 ```json

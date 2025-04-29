@@ -32,7 +32,7 @@ Represents an apicategoryroutes object in [!INCLUDE[prod_short](../../../include
 
 ## JSON representation
 
-Here is a JSON representation of the apicategoryroutes resource.
+Here's a JSON representation of the apicategoryroutes resource.
 
 ```json
 {

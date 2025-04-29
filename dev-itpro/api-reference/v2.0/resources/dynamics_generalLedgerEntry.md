@@ -53,7 +53,7 @@ Represents a general ledger entry in [!INCLUDE[prod_short](../../../includes/pro
 
 ## JSON representation
 
-Here is a JSON representation of the generalLedgerEntry resource.
+Here's a JSON representation of the generalLedgerEntry resource.
 
 
 ```json

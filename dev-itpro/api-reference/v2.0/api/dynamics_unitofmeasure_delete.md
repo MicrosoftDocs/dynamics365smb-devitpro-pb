@@ -29,7 +29,7 @@ DELETE businesscentralPrefix/companies({id})/unitsOfMeasure({id})
 |If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **unitsOfMeasure**, the **unitsOfMeasure** will not be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.
@@ -38,7 +38,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/unitsOfMeasure({id})
@@ -46,7 +46,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/unitsOfMeasure({
 
 **Response** 
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 HTTP/1.1 204 No Content

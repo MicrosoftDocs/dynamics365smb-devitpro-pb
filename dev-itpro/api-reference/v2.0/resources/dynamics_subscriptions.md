@@ -49,7 +49,7 @@ If you're subscribing to a custom API page, both the URL you send the subscripti
 
 ## JSON representation
 
-Here is a JSON representation of the subscriptions resource.
+Here's a JSON representation of the subscriptions resource.
 
 
 ```json

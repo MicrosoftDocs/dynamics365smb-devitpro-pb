@@ -104,7 +104,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here is a JSON representation of the purchaseCreditMemo resource.
+Here's a JSON representation of the purchaseCreditMemo resource.
 
 
 ```json

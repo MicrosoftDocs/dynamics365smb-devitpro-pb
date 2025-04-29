@@ -35,7 +35,7 @@ DELETE businesscentralPrefix/companies({id})/salespersonPurchasers({id})
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -45,7 +45,7 @@ If successful, this method returns ```204 No Content``` response code and delete
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/salespersonPurchasers({id})
@@ -53,13 +53,13 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/salespersonPurch
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 204 No Content
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [salespersonPurchaser](../resources/dynamics_salespersonPurchaser.md)  

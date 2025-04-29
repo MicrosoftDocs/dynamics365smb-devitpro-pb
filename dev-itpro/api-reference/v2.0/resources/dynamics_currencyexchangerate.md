@@ -36,7 +36,7 @@ Represents a currency exchange rate in [!INCLUDE[prod_short](../../../includes/p
 
 ## JSON representation
 
-Here is a JSON representation of the currencyExchangeRate resource.
+Here's a JSON representation of the currencyExchangeRate resource.
 
 ```json
 {

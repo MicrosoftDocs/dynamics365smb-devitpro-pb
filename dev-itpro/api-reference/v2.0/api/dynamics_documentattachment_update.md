@@ -41,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/documentAttachments({id})
@@ -54,7 +54,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 
 ```json

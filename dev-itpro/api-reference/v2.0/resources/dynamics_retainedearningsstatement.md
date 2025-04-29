@@ -38,7 +38,7 @@ Represents a retained earnings statement in [!INCLUDE[prod_short](../../../inclu
 
 ## JSON representation
 
-Here is a JSON representation of the retainedEarningsStatement resource.
+Here's a JSON representation of the retainedEarningsStatement resource.
 
 
 ```json

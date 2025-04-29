@@ -30,7 +30,7 @@ DELETE businesscentralPrefix/companies({id})/purchaseInvoiceLines({purchaseInvoi
 |If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **purchaseInvoiceLines**, the **purchaseInvoiceLines** will not be deleted.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.
@@ -39,7 +39,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines({purchaseInvoiceLineId})
@@ -47,7 +47,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseInvoices
 
 **Response** 
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 HTTP/1.1 204 No Content

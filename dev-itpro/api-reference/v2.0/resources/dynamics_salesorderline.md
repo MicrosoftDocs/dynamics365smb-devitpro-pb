@@ -79,7 +79,7 @@ Represents a sales order line in [!INCLUDE[prod_short](../../../includes/prod_sh
 
 ## JSON representation
 
-Here is a JSON representation of the salesOrderLine resource.
+Here's a JSON representation of the salesOrderLine resource.
 
 
 ```json

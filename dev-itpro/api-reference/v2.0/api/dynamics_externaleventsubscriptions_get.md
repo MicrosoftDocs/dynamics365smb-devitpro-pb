@@ -33,7 +33,7 @@ GET businesscentralPrefix/companies({id})/externaleventsubscriptions({id})
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -43,7 +43,7 @@ If successful, this method returns a ```200 OK``` response code and an **externa
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/externaleventsubscriptions({id})
@@ -51,7 +51,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({id})/externaleventsubscr
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
@@ -76,7 +76,7 @@ Here is an example of the response.
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [externaleventsubscriptions](../resources/dynamics_externaleventsubscriptions.md)  

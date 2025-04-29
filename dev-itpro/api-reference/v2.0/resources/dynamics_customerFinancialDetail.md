@@ -44,7 +44,7 @@ Represents a customer financial detail in [!INCLUDE[prod_short](../../../include
 
 ## JSON representation
 
-Here is a JSON representation of the customerFinancialDetail resource.
+Here's a JSON representation of the customerFinancialDetail resource.
 
 
 ```json

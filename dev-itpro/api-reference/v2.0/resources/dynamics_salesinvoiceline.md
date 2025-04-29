@@ -75,7 +75,7 @@ Represents a sales invoice line in [!INCLUDE[prod_short](../../../includes/prod_
 
 ## JSON representation
 
-Here is a JSON representation of the salesInvoiceLine resource.
+Here's a JSON representation of the salesInvoiceLine resource.
 
 
 ```json

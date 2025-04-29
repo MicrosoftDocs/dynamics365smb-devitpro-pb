@@ -38,7 +38,7 @@ Represents a cash flow statement in [!INCLUDE[prod_short](../../../includes/prod
 
 ## JSON representation
 
-Here is a JSON representation of the cashFlowStatement resource.
+Here's a JSON representation of the cashFlowStatement resource.
 
 ```json
 {

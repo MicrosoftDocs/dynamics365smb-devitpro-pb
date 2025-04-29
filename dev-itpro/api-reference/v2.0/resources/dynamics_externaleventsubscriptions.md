@@ -48,7 +48,7 @@ Represents an externaleventsubscriptions in [!INCLUDE[prod_short](../../../inclu
 
 ## JSON representation
 
-Here is a JSON representation of the externaleventsubscriptions resource.
+Here's a JSON representation of the externaleventsubscriptions resource.
 
 
 ```json

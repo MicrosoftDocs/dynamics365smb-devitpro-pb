@@ -36,7 +36,7 @@ Represents a customer return reason in [!INCLUDE[prod_short](../../../includes/p
 
 ## JSON representation
 
-Here is a JSON representation of the customerReturnReason resource.
+Here's a JSON representation of the customerReturnReason resource.
 
 
 ```json

@@ -56,7 +56,7 @@ Represents an attachment in [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## JSON representation
 
-Here is a JSON representation of the attachment resource.
+Here's a JSON representation of the attachment resource.
 
 
 ```json

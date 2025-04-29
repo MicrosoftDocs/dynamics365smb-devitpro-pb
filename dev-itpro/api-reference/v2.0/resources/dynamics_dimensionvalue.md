@@ -43,7 +43,7 @@ Represents a dimension value in [!INCLUDE[prod_short](../../../includes/prod_sho
 
 ## JSON representation
 
-Here is a JSON representation of the dimensionValue resource.
+Here's a JSON representation of the dimensionValue resource.
 
 
 ```json

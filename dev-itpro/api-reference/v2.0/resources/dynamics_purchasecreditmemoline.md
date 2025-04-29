@@ -71,7 +71,7 @@ Represents a purchase credit memo line in [!INCLUDE[prod_short](../../../include
 
 ## JSON representation
 
-Here is a JSON representation of the purchaseCreditMemoLine resource.
+Here's a JSON representation of the purchaseCreditMemoLine resource.
 
 
 ```json

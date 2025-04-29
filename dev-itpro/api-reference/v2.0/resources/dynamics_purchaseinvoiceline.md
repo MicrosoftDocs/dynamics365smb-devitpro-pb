@@ -75,7 +75,7 @@ Represents a purchase invoice line in [!INCLUDE[prod_short](../../../includes/pr
 
 ## JSON representation
 
-Here is a JSON representation of the purchaseInvoiceLine resource.
+Here's a JSON representation of the purchaseInvoiceLine resource.
 
 
 ```json

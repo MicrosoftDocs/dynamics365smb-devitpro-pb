@@ -30,7 +30,7 @@ GET businesscentralPrefix/companies({companyId})/items({itemId})/defaultDimensio
 |Authorization| Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response 
 
@@ -44,7 +44,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({itemI
 ```
 
 **Response**  
-Here is an example of the response.
+Here's an example of the response.
 
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

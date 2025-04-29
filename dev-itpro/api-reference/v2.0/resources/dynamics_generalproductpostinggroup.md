@@ -37,7 +37,7 @@ Represents a general product posting group in [!INCLUDE[prod_short](../../../inc
 
 ## JSON representation
 
-Here is a JSON representation of the generalProductPostingGroup resource.
+Here's a JSON representation of the generalProductPostingGroup resource.
 
 
 ```json

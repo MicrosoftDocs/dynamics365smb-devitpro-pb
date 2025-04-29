@@ -48,7 +48,7 @@ Represents a location in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 
 ## JSON representation
 
-Here is a JSON representation of the location resource.
+Here's a JSON representation of the location resource.
 
 
 ```json
