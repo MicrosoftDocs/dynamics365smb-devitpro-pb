@@ -29,7 +29,7 @@ DELETE businesscentralPrefix/companies({id})/purchaseOrders({id})
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **purchaseOrder**, the **purchaseOrder** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **purchaseOrder**, the **purchaseOrder** won't be updated. |
 
 
 ## Request body
@@ -38,7 +38,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns ```204 No Content``` response code and deletes the purchaseOrder. It does not return anything in the response body.
+If successful, this method returns ```204 No Content``` response code and deletes the purchaseOrder. It doesn't return anything in the response body.
 
 ## Example
 

@@ -50,17 +50,17 @@ Here's an example of the response.
 
 ```json
 {
-    "id" : "",
-    "startingDate" : "",
-    "name" : "",
-    "newFiscalYear" : "",
-    "closed" : "",
-    "dateLocked" : "",
-    "lastModifiedDateTime" : ""
+    "id": "12345",
+    "startingDate": "2025-01-01",
+    "name": "Q1 2025",
+    "newFiscalYear": false,
+    "closed": false,
+    "dateLocked": "2025-03-31",
+    "lastModifiedDateTime": "2025-04-01T12:00:00Z"
 }
 ```
 
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[accountingPeriod](../resources/dynamics_accountingPeriod.md)  
+[accountingPeriod](../resources/dynamics_accountingPeriod.md)

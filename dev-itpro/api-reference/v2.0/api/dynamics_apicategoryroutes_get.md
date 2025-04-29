@@ -48,17 +48,16 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({id})/apicategoryroutes({
 
 Here's an example of the response.
 
-
 ```json
 {
-    "route" : "",
-    "publisher" : "",
-    "group" : "",
-    "version" : ""
+    "route": "salesInvoices",
+    "publisher": "Microsoft",
+    "group": "Sales",
+    "version": "v2.0"
 }
 ```
 
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[apicategoryroutes](../resources/dynamics_apicategoryroutes.md)  
+[apicategoryroutes](../resources/dynamics_apicategoryroutes.md)

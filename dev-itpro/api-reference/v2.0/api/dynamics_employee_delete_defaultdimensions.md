@@ -28,7 +28,7 @@ DELETE businesscentralPrefix/companies({companyId})/employees({employeeId})/defa
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **employees**, the **employees** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **employees**, the **employees** won't be updated. |
 
 ## Request body
 Don't supply a request body for this method.

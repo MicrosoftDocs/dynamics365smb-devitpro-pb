@@ -1,7 +1,6 @@
 ---
 title: Create customerPayments  
 description: Creates a customer payment object in Dynamics 365 Business Central.
-documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -18,6 +17,7 @@ Creates a customer payment object in [!INCLUDE[prod_short](../../../includes/pro
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+
 ```
 POST businesscentralPrefix/companies({id})/customerPaymentJournals({id})/customerPayment({id})
 POST businesscentralPrefix/companies({id})/customerPayments({id})

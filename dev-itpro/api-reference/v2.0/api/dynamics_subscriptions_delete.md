@@ -31,7 +31,7 @@ DELETE businesscentralPrefix/subscriptions({'id'})
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **subscription**, the **subscription** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **subscription**, the **subscription** won't be updated. |
 
 ## Request body
 Don't supply a request body for this method.

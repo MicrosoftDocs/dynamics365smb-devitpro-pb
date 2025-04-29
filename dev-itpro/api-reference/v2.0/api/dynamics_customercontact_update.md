@@ -2,17 +2,12 @@
 title: Update customerContacts
 description: Updates a  customer contact object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/28/2025
 ms.author: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Update customerContacts
 
 Updates the properties of a customer contact object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -20,22 +15,22 @@ Updates the properties of a customer contact object for [!INCLUDE[prod_short](..
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
+
 ```
 PATCH businesscentralPrefix/companies({id})/customerContacts({id})
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Request headers
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **customerContact**, the **customer contact** will not be updated. |
+|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **customerContact**, the **customer contact** won't be updated. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
 
@@ -46,40 +41,40 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 **Request**
 
 Here's an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values) -->
+
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/customerContacts({id})
 Content-type: application/json
 {
-    "id" : ,
-    "email" :
+    "id": "CONT00123",
+    "email": "john.smith@contoso.com",
+    "professionalTitle": "Senior Purchasing Manager"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here's an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id" : ,
-    "email" : ,
-    "firstName" : ,
-    "lastName" : ,
-    "professionalTitle" : ,
-    "customerId" : ,
-    "customerName" : ,
-    "primaryPhoneNumber" :
+    "id": "CONT00123",
+    "email": "john.smith@contoso.com",
+    "firstName": "John",
+    "lastName": "Smith",
+    "professionalTitle": "Senior Purchasing Manager",
+    "customerId": "CUST1042",
+    "customerName": "Contoso Ltd.",
+    "primaryPhoneNumber": "+1 425-555-0174"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [customerContact](../resources/dynamics_customerContact.md)  
 [GET customerContact](dynamics_customercontact_get.md)  
 [DELETE customerContact](dynamics_customercontact_delete.md)  
-[GET customerContact](dynamics_customercontact_get.md)  
+[GET customerContact](dynamics_customercontact_get.md)

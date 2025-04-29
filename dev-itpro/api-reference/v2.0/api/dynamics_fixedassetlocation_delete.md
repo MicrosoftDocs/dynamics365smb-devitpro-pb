@@ -31,7 +31,7 @@ DELETE businesscentralPrefix/companies({id})/fixedAssetLocations({id})
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **fixedAssetLocation**, the **fixedAssetLocation** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **fixedAssetLocation**, the **fixedAssetLocation** won't be updated. |
 
 
 ## Request body
@@ -40,7 +40,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns ```204 No Content``` response code and deletes the **fixedAssetLocation**. It does not return anything in the response body.
+If successful, this method returns ```204 No Content``` response code and deletes the **fixedAssetLocation**. It doesn't return anything in the response body.
 
 ## Example
 

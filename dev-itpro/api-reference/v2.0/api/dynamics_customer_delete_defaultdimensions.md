@@ -26,7 +26,7 @@ DELETE businesscentralPrefix/companies({companyId})/customers({customerId})/defa
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **customers**, the **customers** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **customers**, the **customers** won't be updated. |
 
 ## Request body
 Don't supply a request body for this method.
@@ -50,7 +50,6 @@ No Content.
 
 ## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-
 [Customer](../resources/dynamics_customer.md)  
 [Create customer defaultDimensions](dynamics_customer_create_defaultdimensions.md)  
 [Update customer defaultDimensions](dynamics_customer_update_defaultdimensions.md)  

@@ -27,11 +27,11 @@ PATCH businesscentralPrefix/companies({id})/documentAttachments({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **documentAttachment**, the **document attachment** will not be updated. |
+|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **documentAttachment**, the **document attachment** won't be updated. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
 
@@ -47,8 +47,8 @@ Here's an example of the request.
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/documentAttachments({id})
 Content-type: application/json
 {
-    "id" : ,
-    "fileName" :
+    "fileName": "Updated_Invoice_10542.pdf",
+    "documentFlowSales": true
 }
 ```
 
@@ -56,21 +56,20 @@ Content-type: application/json
 
 Here's an example of the response.
 
-
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id" : ,
-    "fileName" : ,
-    "byteSize" : ,
-    "attachmentContent" : ,
-    "parentType" : ,
-    "parentId" : ,
-    "lineNumber" : ,
-    "documentFlowSales" : ,
-    "documentFlowPurchase" : ,
-    "lastModifiedDateTime" :
+    "id": "ATT00089",
+    "fileName": "Updated_Invoice_10542.pdf",
+    "byteSize": 245823,
+    "attachmentContent": "JVBERi0xLjUKJeTl5OTlCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwo+PgplbmRvYmoKeHJlZgowIDMKMDAwMDAwMDAwMCiAgICAgIG4gCjAwMDAwMDAwMTAgMDAwMDAgbiAKMDAwMDAwMDA1MyAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9Sb290IDEgMCBSCi9TaXplIDMKPj4KJWlzQmluYXJ5Cg==",
+    "parentType": "Purchase Invoice",
+    "parentId": "INV-10542",
+    "lineNumber": 0,
+    "documentFlowSales": true,
+    "documentFlowPurchase": true,
+    "lastModifiedDateTime": "2025-04-29T17:48:22Z"
 }
 ```
 
@@ -80,4 +79,4 @@ Content-type: application/json
 [documentAttachment](../resources/dynamics_documentAttachment.md)  
 [GET documentAttachment](dynamics_documentattachment_get.md)  
 [DELETE documentAttachment](dynamics_documentattachment_delete.md)  
-[POST documentAttachment](dynamics_documentattachment_create.md)  
+[POST documentAttachment](dynamics_documentattachment_create.md)

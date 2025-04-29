@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Delete customerReturnReasons
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
@@ -20,17 +18,17 @@ Deletes a customer return reason from [!INCLUDE[prod_short](../../../includes/pr
 ## HTTP request
 
 Replaces the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+
 ```
 DELETE businesscentralPrefix/companies({id})/customerReturnReasons({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **customerReturnReason**, the **customerReturnReason** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **customerReturnReason**, the **customerReturnReason** won't be updated. |
 
 
 ## Request body
@@ -39,18 +37,18 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns ```204 No Content``` response code and deletes the **customerReturnReason**. It does not return anything in the response body.
+If successful, this method returns ```204 No Content``` response code and deletes the **customerReturnReason**. It doesn't return anything in the response body.
 
 ## Example
 
 **Request**
 
 Here's an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/customerReturnReasons({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here's an example of the response.

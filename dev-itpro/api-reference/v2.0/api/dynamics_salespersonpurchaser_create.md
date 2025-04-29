@@ -31,7 +31,7 @@ POST businesscentralPrefix/companies({id})/salespersonPurchasers({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **salespersonPurchaser**, the **salespersonPurchaser** will not be updated. |
+|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **salespersonPurchaser**, the **salespersonPurchaser** won't be updated. |
 
 ## Request body
 

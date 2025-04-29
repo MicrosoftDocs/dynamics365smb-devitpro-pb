@@ -26,7 +26,7 @@ DELETE businesscentralPrefix/companies({companyId})/attachments({attachmentId})
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **attachment**, the **attachment** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **attachment**, the **attachment** won't be updated. |
 
 
 ## Request body
