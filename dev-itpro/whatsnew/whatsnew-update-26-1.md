@@ -55,7 +55,7 @@ New customers automatically get Business Central version 26.1. If you're an exis
 
 ### On-premises customers
 
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26.1. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
 
 ## Good to know
 
