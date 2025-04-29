@@ -49,13 +49,13 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 
 ## Upgrade to 26.1
 
-### On-premises customers
-
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
-
 ### Online customers
 
 New customers automatically get Business Central version 26.1. If you're an existing customer or partner, you get an email notification when the update is available. You can choose when to update to the version. Learn more in [Schedule an update](../administration/tenant-admin-center-update-management#schedule-an-update).
+
+### On-premises customers
+
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
 
 ## Good to know
 
