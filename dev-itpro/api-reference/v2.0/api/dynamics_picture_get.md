@@ -44,11 +44,10 @@ If successful, this method returns a ```200 OK``` response code and a **picture*
 
 Here's an example of the request.
 
-**GET Metadata**
-
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture
 ```
+
 **Response**
 
 Here's an example of the response.
@@ -68,7 +67,7 @@ Here's an example of the response.
 }
 ```
 
-**GET Content**
+**Request**
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture(3ba68d90-3a48-ed11-bbb0-000d3a398903)/content
