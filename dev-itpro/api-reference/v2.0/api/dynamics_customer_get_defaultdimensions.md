@@ -2,7 +2,6 @@
 title: Get customer defaultDimensions  
 description: Gets a customer default dimensions in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -69,8 +68,8 @@ Here's an example of the response.
 ```
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Customers](../resources/dynamics_customer.md)  
 [Create customer defaultDimensions](dynamics_customer_create_defaultdimensions.md)  
 [Update customer defaultDimensions](dynamics_customer_update_defaultdimensions.md)  

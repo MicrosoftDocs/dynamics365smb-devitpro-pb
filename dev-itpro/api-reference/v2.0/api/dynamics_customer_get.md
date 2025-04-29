@@ -20,9 +20,10 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 ```
 GET businesscentralPrefix/companies({id})/customers({id})
 ```
+
 > [!NOTE]  
 > To include the financial details of a customer, expanding on customerFinancialDetails:
->```GET businesscentralPrefix/companies({id})/customers({id})?$expand=customerFinancialDetails```
+> ```GET businesscentralPrefix/companies({id})/customers({id})?$expand=customerFinancialDetails```
 
 ## Request headers
 

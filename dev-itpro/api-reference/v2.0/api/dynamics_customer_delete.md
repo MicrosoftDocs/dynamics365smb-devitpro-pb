@@ -1,9 +1,7 @@
 ---
 title: Delete customers  
 description: Deletes a customers object from Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -53,8 +51,6 @@ Here's an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-
-
 
 ## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    

@@ -49,7 +49,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({id})/accounts({id})
 Here's an example of the response. 
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {
@@ -65,7 +65,6 @@ Here's an example of the response.
     "lastModifiedDateTime": "2020-08-21T00:24:15.327Z"
 }
 ```
-
 
 ## Related information
 

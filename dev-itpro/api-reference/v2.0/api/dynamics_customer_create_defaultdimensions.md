@@ -1,9 +1,7 @@
 ---
 title: Create customer defaultDimensions  
 description: Creates a default dimensions of the customer object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -19,6 +17,7 @@ Creates the default dimensions of the customer in [!INCLUDE[prod_short](../../..
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+
 ```
 POST businesscentralPrefix/companies({companyId})/customers({customerId})/defaultDimensions
 ```
@@ -80,7 +79,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/customers({
 
 ## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-
 [Customer](../resources/dynamics_customer.md)  
 [Get customer defaultDimensions](dynamics_customer_get_defaultdimensions.md)  
 [Update customer defaultDimensions](dynamics_customer_update_defaultdimensions.md)  
