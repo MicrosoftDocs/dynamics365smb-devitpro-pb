@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get itemLedgerEntries
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
@@ -71,7 +69,7 @@ Here's an example of the response.
 "lastModifiedDateTime": "2021-08-17T11:57:21.73Z"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  

@@ -1,9 +1,7 @@
 ---
 title: Delete item picture  
 description: Deletes the picture of the item in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -19,6 +17,7 @@ Deletes the picture of the item in [!INCLUDE[prod_short](../../../includes/prod_
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+
 ```
 DELETE businesscentralPrefix/companies({companyId})/items({itemId})/picture
 ```
@@ -51,8 +50,8 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({it
 No Content.
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Item](../resources/dynamics_item.md)  
 [Create item defaultDimensions](dynamics_item_create_defaultdimensions.md)  
 [Update item defaultDimensions](dynamics_item_update_defaultdimensions.md)  

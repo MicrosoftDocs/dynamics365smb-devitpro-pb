@@ -1,9 +1,7 @@
 ---
 title: Update item picture  
 description: Updates the item picture in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -58,7 +56,7 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({ite
 Here's an example of the response. 
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 

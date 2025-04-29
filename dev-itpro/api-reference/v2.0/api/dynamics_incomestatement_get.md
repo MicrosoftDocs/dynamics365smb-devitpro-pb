@@ -17,6 +17,7 @@ Retrieve the properties and relationships of an income statement report object f
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+
 ```
 GET businesscentralPrefix/companies({id})/incomeStatements
 ```

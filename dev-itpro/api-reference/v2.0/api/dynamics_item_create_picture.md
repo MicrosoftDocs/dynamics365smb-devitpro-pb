@@ -1,9 +1,7 @@
 ---
 title: Create item picture 
 description: Creates a picture of the item object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -45,7 +43,7 @@ You will see two links in the response, `pictureContent@odata.mediaEditLink` and
 
 On a local instance, using PowerShell you can then do as in the following example:
 
-```
+```powershell
 function Upload-File
 (
 [string] $Etag = '*',
@@ -68,7 +66,7 @@ Invoke-RestMethod -Uri $Url -Method Patch -InFile $SourceFilePath -Headers $head
 
 And then run the function as follows:
 
-```
+```powershell
 $MyPic = "C:\Pictures\MyDog.png"
 $ItemUrl = 'My-PC:19048/.../pictureContent'
 Upload-File -Url $ItemUrl -SourceFilePath $MyPic

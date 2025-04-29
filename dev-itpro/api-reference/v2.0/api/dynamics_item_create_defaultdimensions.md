@@ -1,9 +1,7 @@
 ---
 title: Create item defaultDimensions  
 description: Creates a default dimensions of the item object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -19,6 +17,7 @@ Creates the default dimensions of the item in [!INCLUDE[prod_short](../../../inc
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+
 ```
 POST businesscentralPrefix/companies({companyId})/items({itemId})/defaultDimensions
 ```
@@ -58,6 +57,7 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({item
     "postingValidation":"Same Code"
 }
 ```
+
 **Response**
 
 ```json
@@ -79,8 +79,8 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({item
 ```
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Item](../resources/dynamics_item.md)  
 [Get item defaultDimensions](dynamics_item_get_defaultdimensions.md)  
 [Update item defaultDimensions](dynamics_item_update_defaultdimensions.md)  

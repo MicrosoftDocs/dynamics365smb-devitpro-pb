@@ -1,9 +1,7 @@
 ---
 title: Update items  
 description: Updates an item object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -56,7 +54,7 @@ Content-type: application/json
 Here's an example of the response. 
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 HTTP/1.1 200 OK
@@ -84,6 +82,7 @@ Content-type: application/json
 ```
 
 ## Related information
+
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [item](../resources/dynamics_item.md)    
 [Get item](dynamics_item_Get.md)    

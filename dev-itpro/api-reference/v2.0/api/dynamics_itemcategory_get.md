@@ -49,7 +49,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({id})/itemCategories({id}
 Here's an example of the response. 
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {

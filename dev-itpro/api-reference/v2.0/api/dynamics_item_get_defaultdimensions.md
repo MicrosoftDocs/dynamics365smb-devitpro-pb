@@ -2,7 +2,6 @@
 title: Get item defaultDimensions  
 description: Gets an item default dimensions in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -68,7 +67,6 @@ Here's an example of the response.
 
 ## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-
 [Items](../resources/dynamics_item.md)  
 [Create item defaultDimensions](dynamics_item_create_defaultdimensions.md)  
 [Update item defaultDimensions](dynamics_item_update_defaultdimensions.md)  

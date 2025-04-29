@@ -2,7 +2,6 @@
 title: Get item picture  
 description: Gets an item picture in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -23,6 +22,7 @@ The following example gets the default dimensions of the item entity in the resp
 ```
 GET businesscentralPrefix/companies({companyId})/items({itemId})/picture
 ```
+
 ## Request header
 
 |Header|Value|
@@ -49,8 +49,6 @@ Here's an example of the response.
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-
-
 ```json
 {
   "id": "d0e5d5da-795a-4924-b376-13665f794cdd",
@@ -63,8 +61,8 @@ Here's an example of the response.
 ```
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Items](../resources/dynamics_item.md)  
 [Create item picture](dynamics_item_create_picture.md)  
 [Update item picture](dynamics_item_update_picture.md)  
