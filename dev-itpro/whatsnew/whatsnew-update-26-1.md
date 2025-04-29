@@ -55,9 +55,9 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### Online customers
 
-New customers get Business Central version 26.1 automatically. Existing customers can choose The option to set the target version for an environment's next update in the admin center is available by the end of April 2025.  
+New customers automatically get Business Central version 26.1. If you're an existing customer or partner, you get an email notification when the update is available. You can choose when to update to the version.  
 
-Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
+Learn more in [Major updates and minor updates for Business Central online](../administration/tenant-admin-center-update-management#schedule-an-update).
 
 
 ## Good to know
