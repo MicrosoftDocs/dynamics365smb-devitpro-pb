@@ -2,11 +2,8 @@
 title: accountingPeriod resource type
 description: An accounting period object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/09/2024
 ms.author: solsen
 ms.reviewer: solsen
