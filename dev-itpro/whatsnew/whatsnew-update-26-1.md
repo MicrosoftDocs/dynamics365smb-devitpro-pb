@@ -19,25 +19,25 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-| Product Area (L2)             | Feature Name                                                                      | Owner (PM)         |
-|-------------------------------|-----------------------------------------------------------------------------------|--------------------|
-| Copilot and AI                | [Automate tests for your Copilot extensions with the Business Central Test Toolkit](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-tests-copilot-extensions-business-central-test-toolkit) | Peter Borring      |
-| Country and regional          | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) | Aleksandar Totovic |
-| Country and regional          | [Comply with Australian Payment Times Reporting bill](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/comply-australian-payment-time-reporting-bill) | Aleksandar Totovic |
-| Country and regional          | [Submit IRS 1099 forms electronically to IRIS in the US localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/submit-irs1099-forms-electronically-iris) | Aleksandar Totovic |
-| E-Documents                     | [Create e-documents from posted sales invoices](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-e-documents-posted-sales-invoices) | Aleksandar Totovic |
-| E-Documents                     | [Delete incorrect e-documents and avoid duplicates](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/delete-incorrect-e-documents-avoid-duplicates) | Aleksandar Totovic |
-| E-Documents                     | [Export reminders and finance charges as PEPPOL files](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/export-reminders-finance-charges-as-peppol-files) | Aleksandar Totovic |
-| E-Documents                     | [Preview incoming e-invoices prior to processing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/preview-incoming-e-invoices-prior-processing) | Aleksandar Totovic |
-| E-Documents                     | [Send e-documents via a service and email simultaneously](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/send-e-documents-via-service-email-simultaneously) | Aleksandar Totovic |
-| E-Documents                     | [Use Continia as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-continia-as-service-provider-e-documents) | Aleksandar Totovic |
-| E-Documents                     | [Use e-documents to fix unposted purchase documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-e-documents-fix-unposted-purchase-credit-memos) | Aleksandar Totovic |
-| E-Documents                     | [Use ExFlow by SignUp connector for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-exflow-signup-connector-e-documents) | Aleksandar Totovic |
-| E-Documents                     | [Use Logiq as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-service-providers-e-documents-framework) | Aleksandar Totovic |
-| Governance and administration | [Migrate record links and notes with cloud migration tooling](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/migrate-record-links-notes-cloud-migration-tooling) | Joost Bulsink      |
-| Sustainability Management     | [Use enhanced analytics for Sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-sustainability) | Aleksandar Totovic |
-| Sustainability Management     | [Use the new Out of Scope emission category](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-out-scope-emission-category) | Aleksandar Totovic |
-| Sustainability Management     | [Use water and waste management with sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-water-waste-management-sustainability) | Aleksandar Totovic |
+| Product Area (L2)             | Feature Name                                                                      |
+|-------------------------------|-----------------------------------------------------------------------------------|
+| Copilot and AI                | [Automate tests for your Copilot extensions with the Business Central Test Toolkit](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-tests-copilot-extensions-business-central-test-toolkit) |
+| Country and regional          | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) |
+| Country and regional          | [Comply with Australian Payment Times Reporting bill](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/comply-australian-payment-time-reporting-bill) |
+| Country and regional          | [Submit IRS 1099 forms electronically to IRIS in the US localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/submit-irs1099-forms-electronically-iris) |
+| E-Documents                     | [Create e-documents from posted sales invoices](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-e-documents-posted-sales-invoices) |
+| E-Documents                     | [Delete incorrect e-documents and avoid duplicates](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/delete-incorrect-e-documents-avoid-duplicates) |
+| E-Documents                     | [Export reminders and finance charges as PEPPOL files](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/export-reminders-finance-charges-as-peppol-files) |
+| E-Documents                     | [Preview incoming e-invoices prior to processing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/preview-incoming-e-invoices-prior-processing) |
+| E-Documents                     | [Send e-documents via a service and email simultaneously](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/send-e-documents-via-service-email-simultaneously) |
+| E-Documents                     | [Use Continia as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-continia-as-service-provider-e-documents) |
+| E-Documents                     | [Use e-documents to fix unposted purchase documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-e-documents-fix-unposted-purchase-credit-memos) |
+| E-Documents                     | [Use ExFlow by SignUp connector for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-exflow-signup-connector-e-documents) |
+| E-Documents                     | [Use Logiq as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-service-providers-e-documents-framework) |
+| Governance and administration | [Migrate record links and notes with cloud migration tooling](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/migrate-record-links-notes-cloud-migration-tooling) |
+| Sustainability Management     | [Use enhanced analytics for Sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-sustainability) |
+| Sustainability Management     | [Use the new Out of Scope emission category](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-out-scope-emission-category) |
+| Sustainability Management     | [Use water and waste management with sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-water-waste-management-sustainability) |
 
 ## Localization updates
 
@@ -69,7 +69,7 @@ The following features in the Business Central online service are now available.
 
 ### Business Central Launch Event videos on YouTube
 
-The Business Central Launch Event for the 2025 release wave 1 took place in April, 2025. This online event aimed to provide information about the new features and enhancements in the 2025 release wave 1 to resellers, partners, ISVs, and consultants. You can find over 40 videos of this event on YouTube by visiting [aka.ms/BCLE](https://aka.ms/BCLE)
+The Business Central launch event for the 2025 release wave 1 was held in April 2025. This online event provided information about the new features and enhancements in the 2025 release wave 1 for resellers, partners, ISVs, and consultants. Watch the event videos on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### Features becoming mandatory next release wave
 
