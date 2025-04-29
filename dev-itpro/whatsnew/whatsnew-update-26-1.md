@@ -19,7 +19,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-| Product Area (L2)             | Feature Name                                                                      |
+| Product area           | Feature aame                                                                      |
 |-------------------------------|-----------------------------------------------------------------------------------|
 | Copilot and AI                | [Automate tests for your Copilot extensions with the Business Central Test Toolkit](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-tests-copilot-extensions-business-central-test-toolkit) |
 | Country and regional          | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) |
@@ -55,7 +55,10 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### Online customers
 
-New customers automatically get the latest builds of Business Central (26.1). If you're an existing partner/customer, you receive an email notification as soon as your environment is upgraded.
+New customers get Business Central version 26.1 automatically. Existing customers can choose The option to set the target version for an environment's next update in the admin center is available by the end of April 2025.  
+
+Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
+
 
 ## Good to know
 
