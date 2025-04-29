@@ -22,15 +22,11 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | Product area           | Feature aame                                                                      |
 |-------------------------------|-----------------------------------------------------------------------------------|
 | Copilot and AI                | [Automate tests for your Copilot extensions with the Business Central Test Toolkit](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-tests-copilot-extensions-business-central-test-toolkit) |
-| Country and regional          | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) |
-| Country and regional          | [Comply with Australian Payment Times Reporting bill](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/comply-australian-payment-time-reporting-bill) |
-| Country and regional          | [Submit IRS 1099 forms electronically to IRIS in the US localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/submit-irs1099-forms-electronically-iris) |
 | E-Documents                     | [Create e-documents from posted sales invoices](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-e-documents-posted-sales-invoices) |
 | E-Documents                     | [Delete incorrect e-documents and avoid duplicates](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/delete-incorrect-e-documents-avoid-duplicates) |
 | E-Documents                     | [Export reminders and finance charges as PEPPOL files](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/export-reminders-finance-charges-as-peppol-files) |
 | E-Documents                     | [Preview incoming e-invoices prior to processing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/preview-incoming-e-invoices-prior-processing) |
 | E-Documents                     | [Send e-documents via a service and email simultaneously](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/send-e-documents-via-service-email-simultaneously) |
-| E-Documents                     | [Use Continia as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-continia-as-service-provider-e-documents) |
 | E-Documents                     | [Use e-documents to fix unposted purchase documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-e-documents-fix-unposted-purchase-credit-memos) |
 | E-Documents                     | [Use ExFlow by SignUp connector for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-exflow-signup-connector-e-documents) |
 | E-Documents                     | [Use Logiq as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-service-providers-e-documents-framework) |
@@ -38,10 +34,11 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | Sustainability Management     | [Use enhanced analytics for Sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-sustainability) |
 | Sustainability Management     | [Use the new Out of Scope emission category](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-new-out-scope-emission-category) |
 | Sustainability Management     | [Use water and waste management with sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-water-waste-management-sustainability) |
+|User experiences|[Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web) (controlled by **Feature Management**)|
 
 ## Localization updates
 
-tbd.
+No localization updates for 26.1.
 
 ## Release plan
 
@@ -59,13 +56,11 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-### Recent service features
-
-The following features in the Business Central online service are now available.
+### Recent and upcoming online service features
 
 - [Manage environment updates more flexibly](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-environment-updates-more-flexibly) (general availability)
 
-  This feature establishes a five-month update period for major updates and lets you opt in to minor updates. Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md).  
+  This feature establishes a five-month update period for major updates and allows you to opt in to minor updates by selecting a later version. The option to select the target version in the Business Central admin center is expected to be available around the same time as update 26. The Business Central admin center option for setting the target version is available with update 26.Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md).  
 
 ### Business Central Launch Event videos on YouTube
 
