@@ -80,7 +80,7 @@ Here's a JSON representation of the documentAttachment resource.
 
 ## Related information
 
-[GET documentAttachment](../api/dynamics_documentattachment_get.md)
-[DELETE documentAttachment](../api/dynamics_documentattachment_delete.md)
-[POST documentAttachment](../api/dynamics_documentattachment_create.md)
+[GET documentAttachment](../api/dynamics_documentattachment_get.md)  
+[DELETE documentAttachment](../api/dynamics_documentattachment_delete.md)  
+[POST documentAttachment](../api/dynamics_documentattachment_create.md)  
 [PATCH documentAttachment](../api/dynamics_documentattachment_update.md)

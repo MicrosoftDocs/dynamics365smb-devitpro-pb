@@ -74,6 +74,7 @@ Here's an example of the response.
 
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[companyinformation](../resources/dynamics_companyinformation.md)    
-[Update companyinformation](dynamics_companyinformation_Update.md)    
+
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[companyinformation](../resources/dynamics_companyinformation.md)  
+[Update companyinformation](dynamics_companyinformation_Update.md)  

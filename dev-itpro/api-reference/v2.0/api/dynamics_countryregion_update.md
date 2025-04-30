@@ -71,8 +71,9 @@ Content-type: application/json
 ```
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[countryregion](../resources/dynamics_countryregion.md)    
-[Get countryregion](dynamics_countryregion_Get.md)    
-[Delete countryregion](dynamics_countryregion_Delete.md)    
-[Create countryregion](dynamics_countryregion_Create.md)    
+
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[countryregion](../resources/dynamics_countryregion.md)  
+[Get countryregion](dynamics_countryregion_Get.md)  
+[Delete countryregion](dynamics_countryregion_Delete.md)  
+[Create countryregion](dynamics_countryregion_Create.md)  

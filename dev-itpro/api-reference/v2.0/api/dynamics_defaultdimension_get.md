@@ -66,6 +66,7 @@ Here's an example of the response.
 ```
 
 ## Related information
+
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [defaultdimension](../resources/dynamics_defaultdimension.md)    
 [Delete defaultdimension](dynamics_defaultdimension_Delete.md)    

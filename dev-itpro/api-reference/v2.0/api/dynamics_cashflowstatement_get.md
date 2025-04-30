@@ -64,4 +64,4 @@ Here's an example of the response.
 ## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-[cashflowstatement](../resources/dynamics_cashflowstatement.md)    
+[cashflowstatement](../resources/dynamics_cashflowstatement.md)  

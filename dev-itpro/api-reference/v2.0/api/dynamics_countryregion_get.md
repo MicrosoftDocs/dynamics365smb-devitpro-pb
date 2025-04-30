@@ -60,8 +60,9 @@ Here's an example of the response.
 ```
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[countryregion](../resources/dynamics_countryregion.md)    
-[Delete countryregion](dynamics_countryregion_Delete.md)    
-[Create countryregion](dynamics_countryregion_Create.md)    
-[Update countryregion](dynamics_countryregion_Update.md)    
+
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[countryregion](../resources/dynamics_countryregion.md)  
+[Delete countryregion](dynamics_countryregion_Delete.md)  
+[Create countryregion](dynamics_countryregion_Create.md)  
+[Update countryregion](dynamics_countryregion_Update.md)  

@@ -48,7 +48,7 @@ Here's a JSON representation of the disputeStatus resource.
 
 ## Related information
 
-[GET disputeStatus](../api/dynamics_disputestatus_get.md)
-[DELETE disputeStatus](../api/dynamics_disputestatus_delete.md)
-[POST disputeStatus](../api/dynamics_disputestatus_create.md)
+[GET disputeStatus](../api/dynamics_disputestatus_get.md)  
+[DELETE disputeStatus](../api/dynamics_disputestatus_delete.md)  
+[POST disputeStatus](../api/dynamics_disputestatus_create.md)  
 [PATCH disputeStatus](../api/dynamics_disputestatus_update.md)

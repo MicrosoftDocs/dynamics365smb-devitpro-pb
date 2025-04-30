@@ -86,6 +86,6 @@ Content-type: application/json
 
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[companyinformation](../resources/dynamics_companyinformation.md)    
-[Get companyinformation](dynamics_companyinformation_Get.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[companyinformation](../resources/dynamics_companyinformation.md)  
+[Get companyinformation](dynamics_companyinformation_Get.md)  
