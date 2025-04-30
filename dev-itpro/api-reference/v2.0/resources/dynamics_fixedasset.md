@@ -76,7 +76,7 @@ Here's a JSON representation of the fixedAsset resource.
 
 ## Related information
 
-[GET fixedAsset](../api/dynamics_fixedasset_get.md)
-[DELETE fixedAsset](../api/dynamics_fixedasset_delete.md)
-[POST fixedAsset](../api/dynamics_fixedasset_create.md)
+[GET fixedAsset](../api/dynamics_fixedasset_get.md)  
+[DELETE fixedAsset](../api/dynamics_fixedasset_delete.md)  
+[POST fixedAsset](../api/dynamics_fixedasset_create.md)  
 [PATCH fixedAsset](../api/dynamics_fixedasset_update.md)

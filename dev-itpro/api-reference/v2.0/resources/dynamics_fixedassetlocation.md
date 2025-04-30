@@ -50,7 +50,7 @@ Here's a JSON representation of the fixedAssetLocation resource.
 
 ## Related information
 
-[GET fixedAssetLocation](../api/dynamics_fixedassetlocation_get.md)
-[DELETE fixedAssetLocation](../api/dynamics_fixedassetlocation_delete.md)
-[POST fixedAssetLocation](../api/dynamics_fixedassetlocation_create.md)
+[GET fixedAssetLocation](../api/dynamics_fixedassetlocation_get.md)  
+[DELETE fixedAssetLocation](../api/dynamics_fixedassetlocation_delete.md)  
+[POST fixedAssetLocation](../api/dynamics_fixedassetlocation_create.md)  
 [PATCH fixedAssetLocation](../api/dynamics_fixedassetlocation_update.md)
