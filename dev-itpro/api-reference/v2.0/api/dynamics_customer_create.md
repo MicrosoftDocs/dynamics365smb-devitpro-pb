@@ -107,8 +107,8 @@ Content-type: application/json
 
 ## Related information
 
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[customer](../resources/dynamics_customer.md)    
-[Get customer](dynamics_customer_Get.md)    
-[Delete customer](dynamics_customer_Delete.md)    
-[Update customer](dynamics_customer_Update.md)    
+[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[customer](../resources/dynamics_customer.md)  
+[GET customer](dynamics_customer_get.md)  
+[DELETE customer](dynamics_customer_delete.md)  
+[PATCH customer](dynamics_customer_update.md)

@@ -68,4 +68,4 @@ Here's an example of the response.
 ## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-[agedaccountsreceivable](../resources/dynamics_agedaccountsreceivable.md)    
+[agedaccountsreceivable](../resources/dynamics_agedaccountsreceivable.md)

@@ -68,5 +68,5 @@ Here's an example of the response.
 
 ## Related information
 
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[agedaccountspayable](../resources/dynamics_agedaccountspayable.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[agedaccountspayable](../resources/dynamics_agedaccountspayable.md)

@@ -69,8 +69,8 @@ Content-type: application/json
 ```
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[attachment](../resources/dynamics_attachment.md)    
-[Get attachment](dynamics_attachment_Get.md)    
-[Delete attachment](dynamics_attachment_Delete.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[attachment](../resources/dynamics_attachment.md)  
+[Get attachment](dynamics_attachment_Get.md)  
+[Delete attachment](dynamics_attachment_Delete.md)  
 [Create attachment](dynamics_attachment_Create.md)

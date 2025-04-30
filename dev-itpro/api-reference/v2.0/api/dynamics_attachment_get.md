@@ -65,8 +65,9 @@ Here's an example of the response.
 ```
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[attachment](../resources/dynamics_attachment.md)    
-[Delete attachment](dynamics_attachment_Delete.md)    
-[Create attachment](dynamics_attachment_Create.md)    
-[Update attachment](dynamics_attachment_Update.md)    
+
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[attachment](../resources/dynamics_attachment.md)  
+[Delete attachment](dynamics_attachment_delete.md)  
+[Create attachment](dynamics_attachment_Create.md)  
+[Update attachment](dynamics_attachment_Update.md)
