@@ -54,8 +54,8 @@ Specify a unique code for the test suite and description. On the header level, s
 
 These steps make sure that the test suite is preconfigured whenever the test app is installed.
 
-1. Open the *AI Test Suites* page.
-1. Export the previously created test suite using the "Export" action.
+1. Open the **AI Test Suites** page.
+1. Export the previously created test suite using the **Export** action.
 1. In your test app, add the datasets and test suite to the /.resources folder.
 1. Create an install codeunit that imports the test suite and dataset when installed.
 
@@ -107,18 +107,18 @@ codeunit 50201 "Marketing Text Simple Install"
 
 ### Step 4 - run the test suite
 
-1. Open the *AI Test Suites* page.
+1. Open the **AI Test Suites** page.
 1. Open the previously created test suite.
-1. Run the AI Test Suite using the Start action. Alternatively, run them one line at a time using the Start action for each line. Each test method is executed for each dataset line.
+1. Run the AI Test Suite using the **Start** action. Alternatively, run them one line at a time using the Start action for each line. Each test method is executed for each dataset line.
 1. The tests doing the evaluation in AL either fail or succeed based on the condition.
 1. Test Output must be generated for all the tests which needs to be evaluated externally.
 
 ### Step 5 - inspect the results
 
 1. Open the AL Test Tool and switch to the created test suite to execute each test manually.
-1. Open *Log Entries* page to see the result of each execution.
+1. Open **Log Entries** page to see the result of each execution.
 1. Download the test output which generates the .jsonl file or export the logs to Excel.
-1. Open AL Test Tool and switch to the created test suite to execute each test manually.
+1. Open the AL Test Tool and switch to the created test suite to execute each test manually.
 
 
 > [!TIP]
