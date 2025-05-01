@@ -123,6 +123,6 @@ codeunit 50201 "Marketing Text Simple Install"
 
 
 > [!TIP]
-> You can also use the API (page 149038 "AIT Log Entry API") to get the result for a suite
+> You can also use the API (page 149038 "AIT Log Entry API") to get the result for a suite.
 
 ## Related information
