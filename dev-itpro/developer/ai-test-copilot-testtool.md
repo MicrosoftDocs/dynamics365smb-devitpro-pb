@@ -22,11 +22,11 @@ With the AI Test Tool, you can:
 - Implement automatic verification depending on your feature's use case.
 - Run tests as fully automated or semi-automated.
 
-## Step-by-step: Using the AI Test Tool
+## Step-by-step: using the AI Test Tool
 
 This goes over how to use the AI Test tool to set up a test suite, execute it, and view the results.
 
-**Prerequisite**: You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating datasets](02-datasets.md) and [Writing AI tests](03-tests.md).
+**Prerequisite**: You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating datasets](ai-test-copilot-datasets.md) and [Writing AI tests](ai-test-copilot-ai-tests.md).
 
 ### Step 1 - upload datasets
 
