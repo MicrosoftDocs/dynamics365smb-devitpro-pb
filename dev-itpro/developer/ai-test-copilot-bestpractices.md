@@ -1,5 +1,5 @@
 ---
-title: Best practices for testing the Copilot capability in AL
+title: Best Practices for Testing the Copilot Capability in AL
 description: Best practices for testing your integration of Azure OpenAI Service through the AI module of Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -12,6 +12,8 @@ ms.reviewer: solsen
 ---
 
 # Best practices for testing the Copilot capability
+
+The following best practices help you ensure that your Copilot features are accurate, safe, and reliable. These practices are based on the unique characteristics of LLMs and the specific requirements of your organization.
 
 ## Key considerations for LLM-based features
 
