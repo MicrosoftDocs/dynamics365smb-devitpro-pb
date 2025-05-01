@@ -94,7 +94,7 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[purchaseOrderLines](dynamics_purchaseorderline.md)|purchaseOrderLines |Gets the purchaseorderlines of the company.|
 |[itemLedgerEntries](dynamics_itemledgerentry.md)|itemLedgerEntries |Gets the itemledgerentries of the company.|
 |[opportunities](dynamics_opportunity.md)|opportunities |Gets the opportunities of the company.|
-|[salespeoplePurchasers](dynamics_salespeoplepurchaser.md)|salespeoplePurchasers |Gets the salespeoplepurchasers of the company.|
+|[salespersonPurchaser](dynamics_salespersonpurchaser.md)|salespersonPurchaser |Gets the salespersonpurchasers of the company.|
 |[customerReturnReasons](dynamics_customerreturnreason.md)|customerReturnReasons |Gets the customerreturnreasons of the company.|
 |[purchaseCreditMemos](dynamics_purchasecreditmemo.md)|purchaseCreditMemos |Gets the purchasecreditmemos of the company.|
 |[purchaseCreditMemoLines](dynamics_purchasecreditmemoline.md)|purchaseCreditMemoLines |Gets the purchasecreditmemolines of the company.|
