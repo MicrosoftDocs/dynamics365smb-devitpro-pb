@@ -1,6 +1,6 @@
 ---
 title: Get defaultDimensions for an entity  
-description: Gets an item default dimensions in Dynamics 365 Business Central.
+description: Gets an item default dimension in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
