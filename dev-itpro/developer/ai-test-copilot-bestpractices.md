@@ -26,17 +26,17 @@ Unlike deterministic systems, LLM-based features require new testing approaches.
 > [!NOTE]  
 > Always include human-in-the-loop evaluation for user-facing or high-impact scenarios, even if you have automated parts of the test pipeline.
 
-### Step 1 - measure accuracy at scale
+### Measure accuracy at scale
 
 To evaluate Copilot performance broadly:
 
-1. Use the **AI Test Tool** to automate testing and verify thousands of prompts automatically.
-2. Score outputs for **correctness**, **relevance**, and **completeness**.  
-3. Flag low-confidence responses for human review.
+- Use the **AI Test Tool** to automate testing and verify thousands of prompts automatically.
+- Score outputs for **correctness**, **relevance**, and **completeness**.  
+- Flag low-confidence responses for human review.
 
 The AI Test Toolkit allows automating AI Testing at scale.
 
-### Step 2 - create realistic test cases
+### Create realistic test cases
 
 Design tests that reflect actual usage:
 
@@ -46,7 +46,7 @@ Design tests that reflect actual usage:
 
 Build test suites that cover both common and edge-case user scenarios.
 
-### Step 3 - validate output safety and tone
+### Validate output safety and tone
 
 A Copilot feature must be accurate—but also safe, respectful, and aligned with your organization’s voice. Outputs that appear correct can still fail due to inappropriate tone or harmful implications.
 
@@ -68,17 +68,17 @@ Test to ensure your Copilot:
 > [!TIP]  
 > Integrate both quality and safety tests into your CI/CD pipeline using the AI Test Toolkit.
 
-### Step 4 - test for cross-language compatibility
+### Test for cross-language compatibility
 
 If your Copilot supports multiple languages:
 
-1. Validate input/output handling in each supported locale.  
-2. Involve native speakers to assess linguistic and cultural accuracy.  
-3. Avoid assuming that English test results apply globally.  
+- Validate input/output handling in each supported locale.  
+- Involve native speakers to assess linguistic and cultural accuracy.  
+- Avoid assuming that English test results apply globally.  
 
 Localizing your test approach is essential to ensure consistent user experience across regions.
 
-### Step 5 - track changes across model versions
+### Track changes across model versions
 
 LLMs evolve quickly—and updates can unintentionally affect feature behavior. Use regression testing to:
 
