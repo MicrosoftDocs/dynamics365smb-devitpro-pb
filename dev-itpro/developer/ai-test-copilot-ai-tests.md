@@ -27,7 +27,7 @@ Follow these steps to create an AI Test.
 An AI Test in Business Central is a standard AL test that uses the `AIT Test Context` codeunit to interact with datasets. 
 
 > [!NOTE]
-> AI Tests depend on datasets. Learn how to create one in the [Dataset](#) article.
+> AI Tests depend on datasets. Learn more about how to create one in the [Dataset](ai-test-copilot-datasets.md) article.
 
 Example of a basic test method:
 
