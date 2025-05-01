@@ -22,7 +22,7 @@ A **dataset** is the foundation of AI testing in [!INCLUDE [prod_short](includes
 
 AI tests in [!INCLUDE [prod_short](includes/prod_short.md)] rely on datasets defined in either **JSONL** or **YAML** format. These datasets contain both test input and expected data values used by the AI Test Tool.
 
-### Defining a JSONL dataset
+### Define a JSONL dataset
 
 While there's no rigid schema required, the AI Test Tool supports certain common elements like `test_setup` and `expected_data`. Using these keywords helps create a consistent structure.
 
@@ -36,7 +36,7 @@ Here's an example of a valid JSONL dataset:
 
 Each line represents a distinct test case with inputs and expected outputs.
 
-### Defining a YAML dataset
+### Define a YAML dataset
 
 You can also define the same dataset in YAML format for improved readability:
 
