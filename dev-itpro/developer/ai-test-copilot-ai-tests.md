@@ -15,21 +15,22 @@ ms.reviewer: solsen
 
 An **AI Test** is a procedure designed to evaluate the accuracy, reliability, and safety of a Copilot feature. These tests involve running the Copilot through a series of predefined scenarios defined by datasets, then comparing the outputs against expected results.
 
-## Step-by-Step: How to Write an AI test
+## Step-by-step: write an AI test
 
+<!--
 > [!TIP]
-> The full source code for the example used in this article can be found in the [Marketing Text Simple](#) demo project.
+> The full source code for the example used in this article can be found in the [Marketing text sample]() demo project. -->
 
-Follow these steps to create an AI Test.
+Follow these steps to create an AI test.
 
 ### Step 1 - define the test
 
-An AI Test in Business Central is a standard AL test that uses the `AIT Test Context` codeunit to interact with datasets. 
+An AI test in [!INCLUDE [prod_short](includes/prod_short.md)] is a standard AL test that uses the `AIT Test Context` codeunit to interact with datasets. 
 
 > [!NOTE]
-> AI Tests depend on datasets. Learn more about how to create one in the [Dataset](ai-test-copilot-datasets.md) article.
+> AI tests depend on datasets. Learn more about how to create one in the [Dataset](ai-test-copilot-datasets.md) article.
 
-Example of a basic test method:
+#### Example of a basic test method
 
 ```al
 [Test]
