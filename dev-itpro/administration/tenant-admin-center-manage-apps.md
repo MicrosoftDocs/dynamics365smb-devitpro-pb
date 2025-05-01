@@ -18,19 +18,17 @@ Updates are frequently made available for these apps by Microsoft, partners, and
 
 To help you manage app updates, the administration center includes the **Manage Apps** page. 
 
-Like other features in the administration center, this functionality can be used by the partner (delegated administrator) or a local customer admin.
-
 > [!Note]
 > In the current version, it's not possible to install new apps, either main apps or their dependencies (library apps), by using the **Manage Apps**. To install the apps, continue using the **Extension Management** page within your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment.
 
 ## Get an overview and check for updates
 
-Open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**.
+Open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**. Use the dropdown to select the app type (Global, Per-tenant Extension, or Dev Extension). Learn more about [app types and scopes](../developer/devenv-extension-types-and-scope.md).
 
 > [!div class="mx-imgBorder"]
 > ![Business Central Admin Center apps.](../developer/media/admin/business_central_admin_center_manage_apps.png)
 
-The **Manage Apps** lists all the apps installed on the environment and indicates whether updates are available. When first opened, the system will start checking for updates. Wait for this operation to complete.
+The **Manage Apps** lists all the apps installed on the environment and indicates whether updates are available. When first opened, the system will start checking for updates for Global apps. Wait for this operation to complete.
 
    > [!Important]
    > When an ISV [provides a new version of their AppSource app](appsource.md), Microsoft validates it against the latest, currently available version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] at the time. If the new app version passes validation, it's made available for the customers' environments that are running on that version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and greater. So if you're not seeing an AppSource app update in the list, your environment may not yet be running on the version the app was registered for.
@@ -120,6 +118,16 @@ Sometimes the update could fail because of a transient problem. Select **Retry**
 
    > [!TIP]
    > When reporting issues to Microsoft Support, always provide the **Operation ID** displayed in the error message. This will help expedite the investigations. 
+
+## Uninstall apps
+
+When an app is no longer needed, the app can be uninstalled from your environment. We recommend you always test an uninstall in a Sandbox environment copied from the Production environment first to ensure uninstalling an app won't disrupt operations or cause problems for environment users. 
+
+Installed apps can be uninstalled from the **Manage Apps** page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] by using the **Uninstall** action in the **Available Uninstall Action** column in the list of installed apps. For apps that cannot be uninstalled, like Base Application, there is no Uninstall action, and the Available Uninstall Action column displays "N/A".
+
+When uninstalling an app, it is possible to delete application data as well. This action deletes data in fields and tables created by the application you are uninstalling. If application data is deleted, the only way to recover it afterwards is by performing a [point-in-time restore](tenant-admin-center-backup-restore.md) of the environment. To retain a backup of to-be-deleted application data for longer than the 28-day point-in-time restore period, [export](tenant-admin-center-database-export.md) the environment database before uninstalling the application with deletion of application data.
+
+If other apps depend on the app that is being uninstalled, those dependent apps also have to be uninstalled. The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] will list dependent apps in the App Uninstall pane and ask to confirm that these will be uninstalled as well. 
 
 ## Preview versions of AppSource apps
 
