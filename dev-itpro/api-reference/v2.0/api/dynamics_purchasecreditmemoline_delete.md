@@ -2,8 +2,7 @@
 title: Delete purchaseCreditMemoLines
 description: Deletes a purchase credit memo line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
-ms.topic: article
+ms.topic: reference
 ms.devlang: al
 ms.tgt_pltfrm: na
 ms.workload: na

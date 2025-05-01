@@ -66,6 +66,6 @@ Here's an example of the response.
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Items](../resources/dynamics_item.md)  
-[Create item defaultDimensions](dynamics_item_create_defaultdimensions.md)  
-[Get item defaultDimensions](dynamics_item_get_defaultdimensions.md)  
-[Delete item defaultDimensions](dynamics_item_delete_defaultdimensions.md)  
+[Get defaultDimensions](dynamics_defaultdimensions_get.md)  
+[Update defaultDimensions](dynamics_defaultdimensions_update.md)  
+[Delete defaultDimensions](dynamics_defaultdimensions_create.md)  

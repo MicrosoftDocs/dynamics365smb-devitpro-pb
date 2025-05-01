@@ -2,7 +2,7 @@
 title: Delete fixedAssets
 description: Deletes a fixed asset object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
 ms.author: solsen

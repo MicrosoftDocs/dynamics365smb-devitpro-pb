@@ -88,6 +88,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({item
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Item](../resources/dynamics_item.md)  
-[Get item defaultDimensions](dynamics_item_get_defaultdimensions.md)  
-[Update item defaultDimensions](dynamics_item_update_defaultdimensions.md)  
-[Delete item defaultDimensions](dynamics_item_delete_defaultdimensions.md)  
+[Get defaultDimensions](dynamics_defaultdimensions_get.md)  
+[Update defaultDimensions](dynamics_defaultdimensions_update.md)  
+[Delete defaultDimensions](dynamics_defaultdimensions_create.md)  

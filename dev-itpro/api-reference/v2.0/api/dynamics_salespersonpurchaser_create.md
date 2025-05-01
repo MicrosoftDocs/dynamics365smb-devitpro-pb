@@ -2,17 +2,12 @@
 title: Create salespersonPurchasers
 description: Creates a salesperson purchaser object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/28/2025
 ms.author: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Create salespersonPurchasers
 
 Creates a salesperson purchaser in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -20,11 +15,11 @@ Creates a salesperson purchaser in [!INCLUDE[prod_short](../../../includes/prod_
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+
 ```
 POST businesscentralPrefix/companies({id})/salespersonPurchasers({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -47,7 +42,7 @@ If successful, this method returns ```201 Created``` response code and a **sales
 **Request**
 
 Here's an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
+
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salespersonPurchasers({id})
 Content-type: application/json
@@ -65,11 +60,11 @@ Content-type: application/json
     "lastModifiedDateTime" : ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here's an example of the response.
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
+
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -87,7 +82,7 @@ Content-type: application/json
     "lastModifiedDateTime" : ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
