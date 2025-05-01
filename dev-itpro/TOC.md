@@ -1592,7 +1592,7 @@
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
-#### Test toolkit for Copilot in AL
+#### Test Copilot capability in AL
 ##### [Test Copilot capability in AL](developer/ai-test-copilot.md)
 ##### [Datasets](developer/ai-test-copilot-datasets.md)
 ##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
