@@ -46,14 +46,19 @@ end;
 Use the `AIT Test Context` codeunit to retrieve inputs and expected values from your dataset.
 
 - To get the full input as JSON:
+  
   ```al
   AITTestContext.GetInput()
   ```
+
 - To get specific setup values:
+
   ```al
   AITTestContext.GetTestSetup().Element('element_name').ValueAsText()
   ```
+
 - To get expected result values:
+
   ```al
   AITTestContext.GetExpectedData().Element('element_name').ValueAsInteger()
   ```
@@ -61,7 +66,8 @@ Use the `AIT Test Context` codeunit to retrieve inputs and expected values from 
 > [!TIP]
 > Review the `AIT Test Context` codeunit for all supported procedures.
 
-Example:
+
+#### Example - access the dataset
 
 ```al
 [Test]
