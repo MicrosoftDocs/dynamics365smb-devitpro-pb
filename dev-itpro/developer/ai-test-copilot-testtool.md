@@ -1,6 +1,6 @@
 ---
 title: AI Test Tool
-description: Test your integration of Azure OpenAI Service through the AI module of Business Central.
+description: Learn how to use the AI Test Tool to test Copilot features in AL.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article

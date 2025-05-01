@@ -1,6 +1,6 @@
 ---
 title: Test the Copilot Capability in AL
-description: Test your integration of Azure OpenAI Service through the AI module of Business Central.
+description: Learn about testing the Copilot capability in AL.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article

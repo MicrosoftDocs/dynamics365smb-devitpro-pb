@@ -1,6 +1,6 @@
 ---
 title: Datasets
-description: Test your integration of Azure OpenAI Service through the AI module of Business Central.
+description: Learn how to create datasets for AI tests in Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article

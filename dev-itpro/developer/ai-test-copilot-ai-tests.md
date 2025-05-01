@@ -1,6 +1,6 @@
 ---
 title: Write AI Tests
-description: Test your integration of Azure OpenAI Service through the AI module of Business Central.
+description: Learn how to write AI tests in AL for Copilot features.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
