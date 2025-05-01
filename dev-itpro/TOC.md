@@ -1584,8 +1584,12 @@
 ### Extend Copilot in Business Central 
 #### [Introduction](developer/ai-build-experience-overview.md)
 #### [Build Copilot capability in AL](developer/ai-build-capability-in-al.md)
-<!--#### [Test toolkit for Copilot in AL]() -->
-<!-- ##### subnodes go here -->
+#### Test toolkit for Copilot in AL
+##### [Test toolkit for Copilot in AL](developer/ai-test-copilot.md)
+##### [Datasets](developer/ai-test-copilot-datasets.md)
+##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
+##### [AI test tool](developer/ai-test-copilot-testtool.md)
+##### [Best practices](developer/ai-test-copilot-bestpractices.md)
 #### Build Copilot user experience
 ##### [Overview](developer/ai-build-experience.md)
 ##### [Create prompt dialog page](developer/copilot-create-promptdialog.md)
