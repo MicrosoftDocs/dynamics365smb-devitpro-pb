@@ -46,8 +46,10 @@ Here's an example of the request.
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/salespersonPurchasers({id})
 Content-type: application/json
 {
-    "id" : ,
-    "code" :
+    "id": "f57a8943-92b5-ed11-94cc-000d3a2feca1",
+    "jobTitle": "Sales Manager",
+    "commisionPercent": 8.5,
+    "phoneNo": "+1 425-555-0198"
 }
 ```
 
@@ -55,22 +57,21 @@ Content-type: application/json
 
 Here's an example of the response.
 
-
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id" : ,
-    "code" : ,
-    "displayName" : ,
-    "email" : ,
-    "email2" : ,
-    "phoneNo" : ,
-    "jobTitle" : ,
-    "commisionPercent" : ,
-    "privacyBlocked" : ,
-    "blocked" : ,
-    "lastModifiedDateTime" :
+    "id": "f57a8943-92b5-ed11-94cc-000d3a2feca1",
+    "code": "JS",
+    "displayName": "Jennifer Smith",
+    "email": "jennifer.smith@contoso.com",
+    "email2": "js@contoso.onmicrosoft.com",
+    "phoneNo": "+1 425-555-0198",
+    "jobTitle": "Sales Manager",
+    "commisionPercent": 8.5,
+    "privacyBlocked": false,
+    "blocked": false,
+    "lastModifiedDateTime": "2025-04-29T16:18:45Z"
 }
 ```
 

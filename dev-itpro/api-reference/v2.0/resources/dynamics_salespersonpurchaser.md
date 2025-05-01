@@ -23,7 +23,6 @@ Represents a salesperson purchaser in [!INCLUDE[prod_short](../../../includes/pr
 |[DELETE salespersonPurchaser](../api/dynamics_salespersonpurchaser_delete.md)|none|Deletes a salesperson purchaser object.|
 |[POST salespersonPurchaser](../api/dynamics_salespersonpurchaser_create.md)|salespersonPurchaser|Creates a salesperson purchaser object.|
 |[PATCH salespersonPurchaser](../api/dynamics_salespersonpurchaser_update.md)|salespersonPurchaser|Updates a salesperson purchaser object.|
-|[GET salespersonPurchaser](../api/dynamics_salespersonpurchaser_get.md)|salespersonPurchaser|Gets a salesperson purchaser object.|
 
 ## Properties
 

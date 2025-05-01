@@ -50,17 +50,17 @@ Here's an example of the response.
 
 ```json
 {
-    "id" : "",
-    "code" : "",
-    "displayName" : "",
-    "email" : "",
-    "email2" : "",
-    "phoneNo" : "",
-    "jobTitle" : "",
-    "commisionPercent" : "",
-    "privacyBlocked" : "",
-    "blocked" : "",
-    "lastModifiedDateTime" : ""
+    "id": "f57a8943-92b5-ed11-94cc-000d3a2feca1",
+    "code": "JS",
+    "displayName": "Jennifer Smith",
+    "email": "jennifer.smith@contoso.com",
+    "email2": "js@contoso.onmicrosoft.com",
+    "phoneNo": "+1 425-555-0187",
+    "jobTitle": "Senior Sales Representative",
+    "commisionPercent": 7.5,
+    "privacyBlocked": false,
+    "blocked": false,
+    "lastModifiedDateTime": "2025-04-28T15:42:26Z"
 }
 ```
 
