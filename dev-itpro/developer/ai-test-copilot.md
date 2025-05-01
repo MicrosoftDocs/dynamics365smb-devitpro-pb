@@ -35,4 +35,4 @@ In the next articles, we’ll explore how to test Copilot features in Business C
 
 ## Related information
 
-[Build the Copilot capability in AL](ai-build-copilot-in-al.md)  
+[Build the Copilot capability in AL](ai-build-capability-in-al.md)  

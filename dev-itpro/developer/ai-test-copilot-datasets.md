@@ -99,7 +99,7 @@ When creating AI tests, the data you use is as important as the AI features you'
 
 ## Related information
 
-[Build the Copilot capability in AL](ai-build-copilot-in-al.md)  
+[Build the Copilot capability in AL](ai-build-capability-in-al.md)  
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [AI Test Tool](ai-test-copilot-testtool.md)  
 [Write AI tests](ai-test-copilot-ai-tests.md)  

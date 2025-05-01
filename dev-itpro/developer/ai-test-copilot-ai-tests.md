@@ -211,7 +211,7 @@ end;
 
 ## Related information
 
-[Build the Copilot capability in AL](ai-build-copilot-in-al.md)  
+[Build the Copilot capability in AL](ai-build-capability-in-al.md)  
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [Create datasets](ai-test-copilot-datasets.md)  
 [AI test tool](ai-test-copilot-testtool.md)  
