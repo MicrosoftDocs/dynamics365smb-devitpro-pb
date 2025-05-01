@@ -60,4 +60,3 @@ HTTP/1.1 204 No Content
 [GET salespersonPurchaser](dynamics_salespersonpurchaser_get.md)  
 [POST salespersonPurchaser](dynamics_salespersonpurchaser_create.md)  
 [PATCH salespersonPurchaser](dynamics_salespersonpurchaser_update.md)  
-[GET salespersonPurchaser](dynamics_salespersonpurchaser_get.md)  

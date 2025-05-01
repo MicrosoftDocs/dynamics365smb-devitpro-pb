@@ -88,4 +88,3 @@ Content-type: application/json
 [GET salespersonPurchaser](dynamics_salespersonpurchaser_get.md)  
 [DELETE salespersonPurchaser](dynamics_salespersonpurchaser_delete.md)  
 [PATCH salespersonPurchaser](dynamics_salespersonpurchaser_update.md)  
-[GET salespersonPurchaser](dynamics_salespersonpurchaser_get.md)  

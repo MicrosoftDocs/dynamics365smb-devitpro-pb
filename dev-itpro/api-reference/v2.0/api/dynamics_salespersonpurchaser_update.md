@@ -82,4 +82,4 @@ Content-type: application/json
 [GET salespersonPurchaser](dynamics_salespersonpurchaser_get.md)  
 [DELETE salespersonPurchaser](dynamics_salespersonpurchaser_delete.md)  
 [POST salespersonPurchaser](dynamics_salespersonpurchaser_create.md)  
-[GET salespersonPurchaser](dynamics_salespersonpurchaser_get.md)  
+
