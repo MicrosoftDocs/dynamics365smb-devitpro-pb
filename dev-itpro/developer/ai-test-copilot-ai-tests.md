@@ -148,7 +148,7 @@ end;
 
 ### Step 4b - evaluate externally
 
-For more complex validations (e.g., tone, relevance), it's often better to evaluate the results externally, using tools like Azure AI Foundry.
+For more complex validations (for example, tone, relevance), it's often better to evaluate the results externally, using tools like Azure AI Foundry.
 
 Use `SetTestOutput` to export output for external evaluation:
 

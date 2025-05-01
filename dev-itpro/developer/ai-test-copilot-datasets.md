@@ -66,15 +66,15 @@ tests:
 
 ## Get data for your tests
 
-When creating AI tests, the data you use is just as important as the AI features you're testing. Quality, consistency, and realism of data are critical for ensuring that your tests are comprehensive and meaningful.
+When creating AI tests, the data you use is as important as the AI features you're testing. Quality, consistency, and realism of data are critical for ensuring that your tests are comprehensive and meaningful.
 
 > [!TIP]
-> Learn more in [Best practices](ai-test-copilot-bestpractices.md) about additional considerations when creating datasets.
+> Learn more in [Best practices](ai-test-copilot-bestpractices.md) about other considerations when creating datasets.
 
 ### Sources of data for your tests
 
 1. **Public datasets**:
-   - There are many publicly available datasets that you can leverage for AI testing.
+   - There are many publicly available datasets that you can use for AI testing.
 
 2. **Synthetic data**:
    - In cases where real-world data is difficult to obtain or too sensitive, you can generate synthetic data. 
@@ -85,13 +85,13 @@ When creating AI tests, the data you use is just as important as the AI features
    - Ensure that the data is appropriately anonymized and that you comply with privacy regulations.
 
 4. **Crowdsourced data**:
-   - Certain platforms allow you to gather custom data by leveraging crowdsourcing. 
+   - Certain platforms allow you to gather custom data by using crowdsourcing. 
 
 5. **Simulated data from domain experts**:
    - In certain domains, domain experts can provide valuable insights into generating realistic and relevant test data.
-   - This approach is helpful when real-world data is not readily available or too sensitive to share.
+   - This approach is helpful when real-world data isn't readily available or too sensitive to share.
 
-### Additional tips for collecting test data
+### More tips for collecting test data
 
 - **Start with small datasets**: Especially when testing new AI features, begin with small, manageable datasets to avoid overwhelming your testing process.
 - **Incrementally increase complexity**: As you refine your tests, increase the complexity of the datasets to better simulate real-world scenarios.

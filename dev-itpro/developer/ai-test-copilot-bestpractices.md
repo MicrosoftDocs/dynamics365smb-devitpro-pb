@@ -19,12 +19,12 @@ The following best practices help you ensure that your Copilot features are accu
 
 Unlike deterministic systems, LLM-based features require new testing approaches. Consider the following:
 
-- **Non-determinism:** Identical prompts may produce different results.
+- **Non-determinism:** Identical prompts might produce different results.
 - **Context sensitivity:** Small changes in input phrasing can significantly affect output quality.
-- **Bias and safety:** Language models may reflect or amplify societal and cultural biases.
+- **Bias and safety:** Language models might reflect or amplify societal and cultural biases.
 
 > [!NOTE]  
-> Always include human-in-the-loop evaluation for user-facing or high-impact scenarios, even if you’ve automated parts of the test pipeline.
+> Always include human-in-the-loop evaluation for user-facing or high-impact scenarios, even if you have automated parts of the test pipeline.
 
 ### Step 1 - measure accuracy at scale
 
@@ -41,8 +41,8 @@ The AI Test Toolkit allows automating AI Testing at scale.
 Design tests that reflect actual usage:
 
 - Base cases on real-world tasks and intents.
-- Leverage anonymized user logs for representative prompts.
-- Include a variety of phrasing styles and complexity levels.  
+- Apply anonymized user logs for representative prompts.
+- Include various phrasing styles and complexity levels.  
 
 Build test suites that cover both common and edge-case user scenarios.
 
@@ -53,7 +53,7 @@ A Copilot feature must be accurate—but also safe, respectful, and aligned with
 Test to ensure your Copilot:
 
 - **Avoids bias and stereotyping:**  
-  - Uses inclusive, non-gendered language.  
+  - Uses inclusive, nongendered language.  
   - Resists reproducing cultural or societal biases.  
 - **Maintains professional tone:**  
   - Aligns with your brand’s voice.  
@@ -82,7 +82,7 @@ Localizing your test approach is essential to ensure consistent user experience 
 
 LLMs evolve quickly—and updates can unintentionally affect feature behavior. Use regression testing to:
 
-- Re-run existing test suites on updated models.  
+- Rerun existing test suites on updated models.  
 - Compare current vs. previous outputs side-by-side.  
 - Identify unexpected changes or regressions.  
 
