@@ -97,3 +97,9 @@ Maintain historical baselines for consistency across releases.
 | Run version comparisons| Track regressions from model updates       |
 
 ## Related information
+
+[Build the Copilot capability in AL](ai-build-copilot-in-al.md)  
+[Test the Copilot capability in AL](ai-test-copilot.md)  
+[Create datasets](ai-test-copilot-datasets.md)  
+[Write AI tests](ai-test-copilot-ai-tests.md)  
+[AI test tool](ai-test-copilot-testtool.md)

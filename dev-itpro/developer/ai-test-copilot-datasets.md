@@ -13,14 +13,14 @@ ms.reviewer: solsen
 
 # Datasets
 
-A **dataset** is the foundation of AI testing in Business Central. Since AI tests are inherently data-driven, datasets allow us to simulate various user scenarios and interactions. By using diverse and comprehensive datasets, we can thoroughly evaluate AI features to ensure they meet high standards for correctness, safety, and accuracy.
+A **dataset** is the foundation of AI testing in [!INCLUDE [prod_short](includes/prod_short.md)]. Since AI tests are inherently data-driven, datasets allow us to simulate various user scenarios and interactions. By using diverse and comprehensive datasets, we can thoroughly evaluate AI features to ensure they meet high standards for correctness, safety, and accuracy.
 
 ## Create a dataset
 
 > [!TIP]
 > The full source code for the example used in this article can be found in the [Marketing Text Simple](#) demo project.
 
-AI tests in Business Central rely on datasets defined in either **JSONL** or **YAML** format. These datasets contain both test input and expected data values used by the AI Test Tool.
+AI tests in [!INCLUDE [prod_short](includes/prod_short.md)] rely on datasets defined in either **JSONL** or **YAML** format. These datasets contain both test input and expected data values used by the AI Test Tool.
 
 ### Defining a JSONL dataset
 
@@ -69,7 +69,7 @@ tests:
 When creating AI tests, the data you use is just as important as the AI features you're testing. Quality, consistency, and realism of data are critical for ensuring that your tests are comprehensive and meaningful.
 
 > [!TIP]
-> See the [Best practices](#) section for additional considerations when creating datasets.
+> Learn more in [Best practices](ai-test-copilot-bestpractices.md) about additional considerations when creating datasets.
 
 ### Sources of data for your tests
 
@@ -98,3 +98,9 @@ When creating AI tests, the data you use is just as important as the AI features
 - **Document data sources**: Always document the origins of your test data, including any transformations made, to ensure traceability and transparency in your testing process.
 
 ## Related information
+
+[Build the Copilot capability in AL](ai-build-copilot-in-al.md)  
+[Test the Copilot capability in AL](ai-test-copilot.md)  
+[AI Test Tool](ai-test-copilot-testtool.md)  
+[Write AI tests](ai-test-copilot-ai-tests.md)  
+[Best practices](ai-test-copilot-bestpractices.md)  
