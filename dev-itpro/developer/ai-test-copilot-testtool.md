@@ -24,18 +24,17 @@ With the AI Test Tool, you can:
 
 ## Step-by-Step: Using the AI Test Tool
 
-This goes over how to use the AI Test tool to set up a test suite, execute it and view the results.
+This goes over how to use the AI Test tool to set up a test suite, execute it, and view the results.
 
-Prerequisite: You have created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating Datasets](02-datasets.md)
-and [Writing AI Tests](03-tests.md).
+**Prerequisite**: You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating Datasets](02-datasets.md) and [Writing AI Tests](03-tests.md).
 
-### Step 1 - upload dataset(s)
+### Step 1 - upload datasets
 
 1. Open the *AI Test Suite* page
 1. Open the *Test Input* page using the *"Input Datasets"* action
 1. Import the dataset using the *"Import data-driven test inputs"* action and uploading your dataset.
 
-Once the dataset is uploaded, you can open and view the dataset in Business Central. From here, you can also view the test input of each line by clicking the test input. You can also set the dataset to "Sensitive" by toggling the Sensitive toggle which will hide the test input and output by default, both in the dataset view and results view.
+Once the dataset is uploaded, you can open and view the dataset in Business Central. From here, you can also view the test input of each line by clicking the test input. You can also set the dataset to "Sensitive" by toggling the Sensitive toggle, which hides the test input and output by default, both in the dataset view and results view.
 
 ![Image of dataset in BC](img/dataset.png "Dataset")
 
