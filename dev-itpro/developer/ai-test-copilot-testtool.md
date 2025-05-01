@@ -13,7 +13,7 @@ ms.reviewer: solsen
 
 # AI Test Tool
 
-The AI Test Tool is an essential component of the developer tools for Copilot in Business Central. It focuses on data-driven test automation to ensure that AI systems are accurate with various inputs, maintain the trust and security of our customers and their data, and are resilient to changes in AI model versions.
+The AI Test Tool is an essential component of the developer tools for Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. It focuses on data-driven test automation to ensure that AI systems are accurate with various inputs, maintain the trust and security of our customers and their data, and are resilient to changes in AI model versions.
 
 With the AI Test Tool, you can:
 
@@ -22,19 +22,19 @@ With the AI Test Tool, you can:
 - Implement automatic verification depending on your feature's use case.
 - Run tests as fully automated or semi-automated.
 
-## Step-by-Step: Using the AI Test Tool
+## Step-by-step: Using the AI Test Tool
 
 This goes over how to use the AI Test tool to set up a test suite, execute it, and view the results.
 
-**Prerequisite**: You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating Datasets](02-datasets.md) and [Writing AI Tests](03-tests.md).
+**Prerequisite**: You already created and published test codeunits for your AI Tests and created the necessary datasets. See [Creating datasets](02-datasets.md) and [Writing AI tests](03-tests.md).
 
 ### Step 1 - upload datasets
 
-1. Open the *AI Test Suite* page.
-1. Open the *Test Input* page using the *"Input Datasets"* action.
-1. Import the dataset using the *"Import data-driven test inputs"* action and uploading your dataset.
+1. Open the **AI Test Suite** page.
+1. Open the **Test Input** page using the **Input Datasets** action.
+1. Import the dataset using the **Import data-driven test inputs** action and uploading your dataset.
 
-Once the dataset is uploaded, you can open and view the dataset in Business Central. From here, you can also view the test input of each line by clicking the test input. You can also set the dataset to "Sensitive" by toggling the Sensitive toggle, which hides the test input and output by default, both in the dataset view and results view.
+Once the dataset is uploaded, you can open and view the dataset in [!INCLUDE [prod_short](includes/prod_short.md)]. From here, you can also view the test input of each line by clicking the test input. You can also set the dataset to **Sensitive** by toggling the **Sensitive** toggle, which hides the test input and output by default, both in the dataset view and results view.
 
 ![Image of dataset in BC](img/dataset.png "Dataset")
 
