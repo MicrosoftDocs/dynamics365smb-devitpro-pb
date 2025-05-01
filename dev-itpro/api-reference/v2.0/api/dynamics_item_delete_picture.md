@@ -53,6 +53,7 @@ No Content.
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Item](../resources/dynamics_item.md)  
-[Get defaultDimensions](dynamics_defaultdimensions_get.md)  
-[Update defaultDimensions](dynamics_defaultdimensions_update.md)  
-[Delete defaultDimensions](dynamics_defaultdimensions_create.md)  
+[Create item picture](dynamics_item_create_picture.md)  
+[Update item picture](dynamics_item_update_picture.md)  
+[Get item picture](dynamics_item_get_picture.md)  
+

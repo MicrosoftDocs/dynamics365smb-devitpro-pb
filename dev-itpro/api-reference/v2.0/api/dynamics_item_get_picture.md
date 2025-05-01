@@ -66,5 +66,5 @@ Here's an example of the response.
 [Items](../resources/dynamics_item.md)  
 [Create item picture](dynamics_item_create_picture.md)  
 [Update item picture](dynamics_item_update_picture.md)  
-[Delete item picture](dynamics_item_delete_defaultdimensions.md)  
+[Delete item picture](dynamics_item_delete_picture.md)  
 

@@ -63,9 +63,10 @@ Here's an example of the response.
 ```
 
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Items](../resources/dynamics_item.md)  
-[Get defaultDimensions](dynamics_defaultdimensions_get.md)  
-[Update defaultDimensions](dynamics_defaultdimensions_update.md)  
-[Delete defaultDimensions](dynamics_defaultdimensions_create.md)  
+[Create item picture](dynamics_item_create_picture.md)  
+[Get item picture](dynamics_item_get_picture.md)  
+[Delete item picture](dynamics_item_delete_picture.md)  
+
