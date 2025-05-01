@@ -1,5 +1,5 @@
 ---
-title: Test the Copilot Capability in AL
+title: Datasets
 description: Test your integration of Azure OpenAI Service through the AI module of Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -10,3 +10,7 @@ ms.collection:
   - bap-ai-copilot
 ms.reviewer: solsen
 ---
+
+# Datasets
+
+## Related information
