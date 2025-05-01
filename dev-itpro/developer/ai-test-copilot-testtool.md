@@ -130,4 +130,4 @@ codeunit 50201 "Marketing Text Simple Install"
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [Create datasets](ai-test-copilot-datasets.md)  
 [Write AI tests](ai-test-copilot-ai-tests.md)  
-[Best practices](ai-test-copilot-bestpractices.md)  
+[Best practices for testing the Copilot capability](ai-test-copilot-bestpractices.md)  

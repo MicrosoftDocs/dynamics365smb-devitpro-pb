@@ -30,13 +30,9 @@ In the next articles, we’ll explore how to test Copilot features in Business C
 - [Create datasets](ai-test-copilot-datasets.md)  
 - [Write AI tests](ai-test-copilot-ai-tests.md)  
 - [AI test tool](ai-test-copilot-testtool.md)  
-- [Best practices](ai-test-copilot-bestpractices.md)  
+- [Best practices for testing the Copilot capability](ai-test-copilot-bestpractices.md)  
 
 
 ## Related information
 
 [Build the Copilot capability in AL](ai-build-copilot-in-al.md)  
-[Create datasets](ai-test-copilot-datasets.md)  
-[Write AI tests](ai-test-copilot-ai-tests.md)  
-[AI test tool](ai-test-copilot-testtool.md)  
-[Best practices](ai-test-copilot-bestpractices.md)  

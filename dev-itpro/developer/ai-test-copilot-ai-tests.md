@@ -215,4 +215,4 @@ end;
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [Create datasets](ai-test-copilot-datasets.md)  
 [AI test tool](ai-test-copilot-testtool.md)  
-[Best practices](ai-test-copilot-bestpractices.md)  
+[Best practices for testing the Copilot capability](ai-test-copilot-bestpractices.md)  

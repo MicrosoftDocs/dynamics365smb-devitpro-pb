@@ -11,7 +11,7 @@ ms.collection:
 ms.reviewer: solsen
 ---
 
-# Best practices
+# Best practices for testing the Copilot capability
 
 ## Key considerations for LLM-based features
 

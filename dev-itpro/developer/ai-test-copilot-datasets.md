@@ -103,4 +103,4 @@ When creating AI tests, the data you use is just as important as the AI features
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [AI Test Tool](ai-test-copilot-testtool.md)  
 [Write AI tests](ai-test-copilot-ai-tests.md)  
-[Best practices](ai-test-copilot-bestpractices.md)  
+[Best practices for testing the Copilot capability](ai-test-copilot-bestpractices.md)  
