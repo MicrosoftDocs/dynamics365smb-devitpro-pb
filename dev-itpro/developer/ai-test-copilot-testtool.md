@@ -30,8 +30,8 @@ This goes over how to use the AI Test tool to set up a test suite, execute it, a
 
 ### Step 1 - upload datasets
 
-1. Open the *AI Test Suite* page
-1. Open the *Test Input* page using the *"Input Datasets"* action
+1. Open the *AI Test Suite* page.
+1. Open the *Test Input* page using the *"Input Datasets"* action.
 1. Import the dataset using the *"Import data-driven test inputs"* action and uploading your dataset.
 
 Once the dataset is uploaded, you can open and view the dataset in Business Central. From here, you can also view the test input of each line by clicking the test input. You can also set the dataset to "Sensitive" by toggling the Sensitive toggle, which hides the test input and output by default, both in the dataset view and results view.
@@ -40,22 +40,22 @@ Once the dataset is uploaded, you can open and view the dataset in Business Cent
 
 ### Step 2 - set up the test suite
 
-1. Open the *AI Test Suite* page
-1. Upload the previously created datasets for the tests
-1. Create a test suite using the New action
-1. Open the newly created test suite
-1. Configure the test suite (see example below)
+1. Open the *AI Test Suite* page.
+1. Upload the previously created datasets for the tests.
+1. Create a test suite using the New action.
+1. Open the newly created test suite.
+1. Configure the test suite (see the following example).
 
 Specify a unique code for the test suite and description. On the header level, select the input dataset that was previously uploaded. On the test line, add the test codeunits previously created. Optionally, specify a line-specific input dataset for each line that requires a different input dataset than the header-level input dataset.
 
 ![Image of configurated test suite in BC](img/test-suite.png "Test Suite")
 
-### Step 3 - pre-configure the test app 
+### Step 3 - preconfigure the test app 
 
-These steps will make sure that the test suite is pre-configured whenever the test app is installed.
+These steps make sure that the test suite is preconfigured whenever the test app is installed.
 
-1. Open *AI Test Suites* page 
-1. Export the previously created test suite using the "Export" action
+1. Open the *AI Test Suites* page.
+1. Export the previously created test suite using the "Export" action.
 1. In your test app, add the datasets and test suite to the /.resources folder.
 1. Create an install codeunit that imports the test suite and dataset when installed.
 
@@ -107,18 +107,18 @@ codeunit 50201 "Marketing Text Simple Install"
 
 ### Step 4 - run the test suite
 
-1. Open *AI Test Suites* page 
-1. Open the previously created test suite
-1. Run the AI Test Suite using the Start action. Alternatively, run them one line at a time using the Start action for each line. Each test method will be executed for each dataset line
-1. The tests doing the evaluation in AL will either fail or succeed based on the condition
-2. Test Output must be generated for all the tests which needs to be evaluated externally.
+1. Open the *AI Test Suites* page.
+1. Open the previously created test suite.
+1. Run the AI Test Suite using the Start action. Alternatively, run them one line at a time using the Start action for each line. Each test method is executed for each dataset line.
+1. The tests doing the evaluation in AL either fail or succeed based on the condition.
+1. Test Output must be generated for all the tests which needs to be evaluated externally.
 
 ### Step 5 - inspect the results
 
-1. Open AL Test Tool and switch to the created test suite to execute each test manually
-1. Open *Log Entries* page to see the result of each execution
-1. Download the test output which generates the .jsonl file or export the logs to excel
-1. Open AL Test Tool and switch to the created test suite to execute each test manually
+1. Open the AL Test Tool and switch to the created test suite to execute each test manually.
+1. Open *Log Entries* page to see the result of each execution.
+1. Download the test output which generates the .jsonl file or export the logs to Excel.
+1. Open AL Test Tool and switch to the created test suite to execute each test manually.
 
 
 > [!TIP]
