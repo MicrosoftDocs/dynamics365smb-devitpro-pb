@@ -36,7 +36,7 @@ This goes over how to use the AI Test tool to set up a test suite, execute it, a
 
 Once the dataset is uploaded, you can open and view the dataset in [!INCLUDE [prod_short](includes/prod_short.md)]. From here, you can also view the test input of each line by clicking the test input. You can also set the dataset to **Sensitive** by toggling the **Sensitive** toggle, which hides the test input and output by default, both in the dataset view and results view.
 
-![Image of dataset in BC](img/dataset.png "Dataset")
+![Image of dataset in BC](media/dataset.png "Dataset")
 
 ### Step 2 - set up the test suite
 
@@ -48,7 +48,7 @@ Once the dataset is uploaded, you can open and view the dataset in [!INCLUDE [pr
 
 Specify a unique code for the test suite and description. On the header level, select the input dataset that was previously uploaded. On the test line, add the test codeunits previously created. Optionally, specify a line-specific input dataset for each line that requires a different input dataset than the header-level input dataset.
 
-![Image of configurated test suite in BC](img/test-suite.png "Test Suite")
+![Image of configurated test suite in BC](media/test-suite.png "Test Suite")
 
 ### Step 3 - preconfigure the test app 
 
