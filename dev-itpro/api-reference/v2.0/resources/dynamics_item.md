@@ -51,7 +51,7 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |type|NAV.itemType|Specifies the type of the item. It can be "Inventory", "Service" or "Non-Inventory".|
 |itemCategoryId|GUID|The ID of the item category in the item.|
 |itemCategoryCode|string|The code of the item category in the item.|
-|blocked|boolean|Specifies that entries cannot be posted to the item. **True** indicates account is blocked and posting is not allowed.|
+|blocked|boolean|Specifies that entries can't be posted to the item. **True** indicates account is blocked and posting is not allowed.|
 |gtin|string|This is the Global Trade Item Number. |
 |inventory|decimal|Specifies how many units, such as pieces, boxes, or cans, of the item are in inventory. Read-Only.|
 |unitPrice|decimal|Specifies the price for one unit of the item in the specified item.|

@@ -73,7 +73,7 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |paymentTermsId|GUID|Specifies which payment term the customer uses.|
 |shipmentMethodId|GUID|Specifies which shipment method the customer uses.|
 |paymentMethodId|GUID|Specifies which payment method the customer uses.|
-|blocked|NAV.customerBlocked|Specifies which transactions with the customer cannot be posted. It can be " ", "Ship", "Invoice" or "All".|
+|blocked|NAV.customerBlocked|Specifies which transactions with the customer can't be posted. It can be " ", "Ship", "Invoice" or "All".|
 |lastModifiedDateTime|datetime|The last datetime the customer was modified. Read-Only.|
 
 ## JSON representation

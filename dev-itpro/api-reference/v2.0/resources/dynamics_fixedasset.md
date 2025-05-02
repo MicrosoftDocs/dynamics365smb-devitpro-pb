@@ -44,7 +44,7 @@ Represents a fixed asset in [!INCLUDE[prod_short](../../../includes/prod_short.m
 |fixedAssetLocationId|GUID||
 |classCode|string||
 |subclassCode|string||
-|blocked|boolean|Specifies that entries cannot be posted to the fixed asset. **True** indicates account is blocked and posting is not allowed.|
+|blocked|boolean|Specifies that entries can't be posted to the fixed asset. **True** indicates account is blocked and posting is not allowed.|
 |serialNumber|string||
 |employeeNumber|string|The employee's number.|
 |employeeId|GUID|The unique ID of employee.|

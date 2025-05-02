@@ -37,7 +37,7 @@ Represents a salesperson purchaser in [!INCLUDE[prod_short](../../../includes/pr
 |jobTitle|string|The job title of the salesperson purchaser.|
 |commisionPercent|decimal||
 |privacyBlocked|boolean|Specifies whether the privacy of the salesperson purchaser is blocked.|
-|blocked|boolean|Specifies that entries cannot be posted to the salesperson purchaser. **True** indicates account is blocked and posting is not allowed.|
+|blocked|boolean|Specifies that entries can't be posted to the salesperson purchaser. **True** indicates account is blocked and posting is not allowed.|
 |lastModifiedDateTime|datetime|The last datetime the salesperson purchaser was modified. Read-Only.|
 
 ## JSON representation

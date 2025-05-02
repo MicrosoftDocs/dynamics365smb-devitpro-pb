@@ -36,7 +36,7 @@ Represents a bank account in [!INCLUDE[prod_short](../../../includes/prod_short.
 |displayName|string|Specifies the bank account's name. This name will appear on all sales documents for the bank account.|
 |lastModifiedDateTime|datetime|The last datetime the bank account was modified. Read-Only.|
 |bankAccountNumber|string||
-|blocked|boolean|Specifies that entries cannot be posted to the bank account. **True** indicates account is blocked and posting is not allowed.|
+|blocked|boolean|Specifies that entries can't be posted to the bank account. **True** indicates account is blocked and posting is not allowed.|
 |currencyCode|string|The default currency code for the bank account.|
 |currencyId|GUID|Specifies which currency the bank account uses.|
 |iban|string||

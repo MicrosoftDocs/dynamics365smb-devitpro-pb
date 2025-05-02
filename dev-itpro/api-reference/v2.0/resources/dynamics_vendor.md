@@ -63,7 +63,7 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |paymentTermsId|GUID|Specifies which payment term the vendor uses.|
 |paymentMethodId|GUID|Specifies which payment method the vendor uses.|
 |taxLiable|boolean|Specifies if the vendor or vendor is liable for sales tax. Set to **true** if the vendor is tax liable.|
-|blocked|NAV.vendorBlocked|Specifies which transactions with the customer cannot be posted. It can be <Member Name=" ", "Payment" or "All".|
+|blocked|NAV.vendorBlocked|Specifies which transactions with the customer can't be posted. It can be <Member Name=" ", "Payment" or "All".|
 |balance|decimal|Specifies vendor's total balance.|
 |lastModifiedDateTime|datetime|The last datetime the vendor was modified. Read-Only.|
 
