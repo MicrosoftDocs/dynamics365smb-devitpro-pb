@@ -42,14 +42,14 @@ If successful, this method returns a ```200 OK``` response code and an **pdfDocu
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/salesInvoices({id})/pdfDocument
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 {

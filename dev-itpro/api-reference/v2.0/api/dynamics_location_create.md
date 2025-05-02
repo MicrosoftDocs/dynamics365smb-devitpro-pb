@@ -44,7 +44,7 @@ If successful, this method returns ```201 Created``` response code and a **locat
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/locations
@@ -68,7 +68,7 @@ Content-type: application/json
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 <!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 HTTP/1.1 201 Created

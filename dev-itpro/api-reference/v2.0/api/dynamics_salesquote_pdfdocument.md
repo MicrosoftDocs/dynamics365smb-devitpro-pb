@@ -48,14 +48,14 @@ If successful, this method returns a ```200 OK``` response code and a link to th
 ## Example (v2.0)
 
 **Request**
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/salesQuotes({quoteId})/pdfDocument
 ```
 
 **Response**
-Here is an example of the response.
+Here's an example of the response.
 
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -95,7 +95,7 @@ If successful, this method returns a `200 OK` response code and the PDF document
 ## Example
 
 **Request**
-Here is an example of the request.
+Here's an example of the request.
 
 ```
 GET https://{businesscentralPrefix}/api/v2.0/companies({companyid})/salesQuotes({quoteId})/pdfDocument({id})/content

@@ -38,7 +38,7 @@ If successful, this method returns ```204,No Content``` response code. It does n
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v1.0/companies({id})/taxGroups({id})
@@ -46,7 +46,7 @@ DELETE https://{businesscentralPrefix}/api/v1.0/companies({id})/taxGroups({id})
 
 **Response** 
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 HTTP/1.1 204 No Content

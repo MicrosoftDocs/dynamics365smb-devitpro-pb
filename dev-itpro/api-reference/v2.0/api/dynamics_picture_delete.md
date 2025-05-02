@@ -43,7 +43,7 @@ The metadata will be updated on the same link.
 
 **Request**
 
-Here is an example of the request. 
+Here's an example of the request. 
 
 ```json
 DELETE https://api.businesscentral.dynamics-tie.com/v2.0/api/v2.0/companies(companyId)/customers(customerId)/picture(pictureId)

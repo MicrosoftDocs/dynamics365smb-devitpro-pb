@@ -43,7 +43,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture/pictureContent

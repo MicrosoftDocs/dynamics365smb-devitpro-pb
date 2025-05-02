@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **defau
 ## Example
 
 **Request**  
-Here is an example of a request.
+Here's an example of a request.
 
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

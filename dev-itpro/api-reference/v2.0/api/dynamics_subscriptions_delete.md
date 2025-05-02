@@ -43,7 +43,7 @@ If successful, this method returns a `204 No Content` response code.
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 DELETE https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'}) 
 ```
