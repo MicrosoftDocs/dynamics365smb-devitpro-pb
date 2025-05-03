@@ -172,6 +172,12 @@ Learn more in:
 - [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)  
 - [How-to restrict network access from/to Business Central](../security/security-service-tags.md).
 
+## Testing external calls
+
+Testability of AL code that interacts with external web services is enhanced when the responses from these services can be simulated in AL, eliminating the need to configure actual endpoints. Mocking outbound web calls is useful when testing that your code is capable of handling a wide range of possible responses, and allowing you to track outbound traffic during the test executions.
+
+To learn more, go to [Mock outbound HttpClient web service calls during testing](developer/devenv-httpclient-mock-outbound-calls.md).
+
 ## Monitor and troubleshoot
 
 [!INCLUDE[httpclientTelemetry](../includes/telemetry-outgoing-http.md)]
