@@ -40,7 +40,8 @@ The following table outlines the most common objects used when adding Power BI e
 |Object|Description|
 |-|-|
 |Page 6325 "Power BI Embedded Report Part"|Used to display Power BI elements in a page part.|
-|Page 6323 "Power BI Element Card"|Used to display Power BI elements in expanded mode on a separate page.|
+|Page 6323 "Power BI Element Card"|Used to display Power BI elements in expanded mode on a separate page. Obsolete starting with version 26.0. Use page 6324 "Power BI Element Addin Host" instead.|
+|Page 6324 "Power BI Element Addin Host"|Used to display Power BI elements in expanded mode on a separate page.|
 |Page 6327 "Power BI Embed Setup Wizard"|Assisted setup guide for enabling Power BI for the fírst time.|
 |Table 6312 "Power BI Displayed Element"|Stores information about Power BI elements to be displayed for a user in each specific context. This table was introduced in 2023 release wave 2 (version 23).|
 |Table 6314 "Power BI Context Settings"|Persists user settings for a specific Power BI context (like role center part, page FactBox, and so on) where the settings apply. Different parts in the same main page can have different contexts. This table was introduced in 2023 release wave 2 (version 23).|
