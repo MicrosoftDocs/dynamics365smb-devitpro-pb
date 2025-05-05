@@ -176,7 +176,7 @@ Learn more in:
 
 Testability of AL code that interacts with external web services is enhanced when the responses from these services can be simulated in AL, eliminating the need to configure actual endpoints. Mocking outbound web calls is useful when testing that your code is capable of handling a wide range of possible responses, and allowing you to track outbound traffic during the test executions.
 
-Learn more in [Mock outbound HttpClient web service calls during testing](developer/devenv-httpclient-mock-outbound-calls.md).
+Learn more in [Mock outbound HttpClient web service calls during testing](devenv-httpclient-mock-outbound-calls.md).
 
 ## Monitor and troubleshoot
 
