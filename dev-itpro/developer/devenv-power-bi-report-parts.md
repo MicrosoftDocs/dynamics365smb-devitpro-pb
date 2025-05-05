@@ -55,7 +55,6 @@ Learn more about the Power BI embed framework in the [BCTech repo](https://githu
 
 To get an overview of all Power BI objects in the base application, visit [Base-Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/base-application/module/base-application) and search for *Power BI*.
 
-
 ## Embed Power BI reports in page parts
 
 **Power BI Report** part is designed to display a Power BI element inside the hosting page, like in the page's FactBox area or field group. This part makes the connection to the Power BI Service, and lets users choose which report to display. Business Central comes equipped with several pages that already include the **Power BI Report** part. For a list of these pages, see [Power BI FAQ](/dynamics365/business-central/power-bi-faq?tabs=designer#which-pages-in-business-central-have-the-power-bi-report-part). The main object for displaying **Power BI Report** part on role centers and other pages is page 6325 "Power BI Embedded Report Part".
@@ -407,19 +406,19 @@ To display a specific Power BI element, such as a report, visual, or dashboard, 
 
 - For any element you want to display, you need its `embedUrl` and ID. You can get this information by using the Power BI REST API for the element and selecting **Try it**:
 
-   - [Get reports](/rest/api/power-bi/reports/get-reports) - Typically, the embedURL has the format `https://app.powerbi.com/reportEmbed?reportId=<id>&config=<config>`. 
-   - [Get dashboards](/rest/api/power-bi/dashboards/get-dashboards) - Typically, the embedURL has the format `https://app.powerbi.com/dashboardEmbed?dashboardId=<id>&config=<config`. 
-   - [Get scorecards](/rest/api/power-bi/scorecards(preview)/get)
+  - [Get reports](/rest/api/power-bi/reports/get-reports) - Typically, the embedURL has the format `https://app.powerbi.com/reportEmbed?reportId=<id>&config=<config>`. 
+  - [Get dashboards](/rest/api/power-bi/dashboards/get-dashboards) - Typically, the embedURL has the format `https://app.powerbi.com/dashboardEmbed?dashboardId=<id>&config=<config`. 
+  - [Get scorecards](/rest/api/power-bi/scorecards(preview)/get)
 
 - For report visuals, you also need the page name and the visual name.
 
    To get this information, open the report in Power BI. Hover over the visualization to reveal and select **More options** (...) > **Share** > **Link to visual** > **Copy**.  The link has the following format:
-   
+
    `https://app.powerbi.com/groups/me/reports/<reportID>/<page_name>?ctid=<ctid>&pbi_source=shareVisual&visual=<visual_name>&height=nnnn&width=nnnn&bookmarkGuid=<guid>`
 
 - For dashboard tiles, you also need the tile ID, which you can get with Power BI REST API.
 
-   - [Get tiles](/rest/api/power-bi/dashboards/get-tiles) - You need to provide the dashboard ID to run the request.
+  - [Get tiles](/rest/api/power-bi/dashboards/get-tiles) - You need to provide the dashboard ID to run the request.
 
 ## Limitations and behavior notes
 
@@ -430,8 +429,8 @@ To display a specific Power BI element, such as a report, visual, or dashboard, 
 
 ## Related information
 
-[Get Started with AL](devenv-get-started.md)    
-[Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)    
-[Pages Overview](devenv-pages-overview.md)    
-[Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)    
-[Extract data from Business Central](devenv-extract-data.md)   
+[Get Started with AL](devenv-get-started.md)  
+[Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  
+[Pages Overview](devenv-pages-overview.md)  
+[Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
+[Extract data from Business Central](devenv-extract-data.md)  
