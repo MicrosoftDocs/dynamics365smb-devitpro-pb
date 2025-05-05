@@ -4,7 +4,7 @@ description: "Lifecycle management for Microsoft Dataverse tables end-to-end sol
 ms.date: 11/13/2023
 ms.reviewer: solsen
 ms.topic: conceptual
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 
 # Application lifecycle management for solutions that use virtual tables

@@ -4,7 +4,7 @@ description: "Relational modeling between Microsoft Dataverse tables used in Bus
 ms.date: 11/13/2023
 ms.reviewer: solsen
 ms.topic: conceptual
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 
 # Table modeling for virtual tables

@@ -4,7 +4,7 @@ description: "Frequently asked questions for working with Business Central virtu
 ms.date: 11/13/2023
 ms.reviewer: solsen
 ms.topic: conceptual
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 
 # Business Central Virtual Tables FAQ
