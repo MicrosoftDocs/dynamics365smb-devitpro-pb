@@ -48,9 +48,12 @@ If more than one record is selected on the page, then SetSelectionFilter does th
 - Copies the current sort order from the table to the destination record  
 - Copies the current filters that are set in all filter groups  
 - Copies the current filter group  
-- Marks the selected records and sets the "marked only" filter 
+- Marks the selected records and sets the "marked only" filter
 
-## Example
+> [!IMPORTANT]
+> SetSelectionFilter is not directly supported on pages based on temporary source tables and therefore needs to be replaced with a custom page method (see Example 2 below).
+
+## Example 1
 
 The following example shows how to use the **SetSelectionFilter** method to update the record or records from the `Contact` table that the user has selected on the current page.
 
@@ -72,8 +75,20 @@ begin
 end;
 ```
 
+## Example 2 (temporary records)
+
+For retrieving selected records on pages with a temporary source table, the following example shows how to define a custom method on a page that is based on a temporary `Contact` table. Other objects need to call the custom method instead of the **SetSelectionFilter** method.
+
+```al
+procedure SetTempSelectionFilter(var TempContact: Record Contact temporary)
+begin
+    TempContact.Copy(Rec, true);
+    CurrPage.SetSelectionFilter(TempContact);
+end;
+```
+
 ## Related information
 
-[Page Data Type](page-data-type.md)  
+[Page Data Type](page-data-type.md)
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
