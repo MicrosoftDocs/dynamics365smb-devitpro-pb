@@ -3,7 +3,7 @@ title: "Application Testing Example: Testing Purchase Invoice Discounts"
 description: Example to demonstrate the application testing scenario.
 ms.date: 08/12/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: blrobl
 ---
 
