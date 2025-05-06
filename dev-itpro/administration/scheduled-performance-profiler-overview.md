@@ -4,7 +4,7 @@ description: Describes how to use the Profiler Schedules page in Business Centra
 ms.author: sodragon
 ms.date: 01/30/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: sodragon
 ---
 
