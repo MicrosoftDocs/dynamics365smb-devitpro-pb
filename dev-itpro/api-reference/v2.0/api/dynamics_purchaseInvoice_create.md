@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **purch
 
 **Request**
 
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseInvoices
@@ -80,7 +80,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 201 Created

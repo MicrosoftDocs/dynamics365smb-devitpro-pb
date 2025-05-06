@@ -4,7 +4,7 @@ description: A sales invoice object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales invoice in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,35 +27,35 @@ Represents a sales invoice in [!INCLUDE[prod_short](../../../includes/prod_short
 |[POST salesInvoice](../api/dynamics_salesinvoice_create.md)|salesInvoice|Creates a sales invoice object.|
 |[PATCH salesInvoice](../api/dynamics_salesinvoice_update.md)|salesInvoice|Updates a sales invoice object.|
 
-## Bound Actions
+## Bound actions
 
-The salesInvoice resource type offers a bound action called `cancelAndSend` which cancel and sends the corresponding salesInvoice batch.
-This is illustrated in the following example:
-`CANCELANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.cancelAndSend`
-
-The response has no content; the response code is 204.
-
-The salesInvoice resource type offers a bound action called `cancel` which cancels the corresponding salesInvoice batch.
+The salesInvoice resource type offers a bound action called `cancel`, which cancels the corresponding salesInvoice batch.
 This is illustrated in the following example:
 `CANCEL https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.cancel`
 
 The response has no content; the response code is 204.
 
-The salesInvoice resource type offers a bound action called `makeCorrectiveCreditMemo` which make corrective credit memos the corresponding salesInvoice batch.
+The salesInvoice resource type offers a bound action called `cancelAndSend`, which cancels and sends the corresponding salesInvoice batch.
+This is illustrated in the following example:
+`CANCELANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.cancelAndSend`
+
+The response has no content; the response code is 204.
+
+The salesInvoice resource type offers a bound action called `makeCorrectiveCreditMemo`, which makes corrective credit memos to the corresponding salesInvoice batch.
 This is illustrated in the following example:
 `MAKECORRECTIVECREDITMEMO https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.makeCorrectiveCreditMemo`
 
 The response has no content; the response code is 204.
 
-The salesInvoice resource type offers a bound action called `postAndSend` which post and sends the corresponding salesInvoice batch.
+The salesInvoice resource type offers a bound action called `post`, which posts the corresponding salesInvoice batch.
 This is illustrated in the following example:
-`POSTANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.postAndSend`
+`POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.post`
 
 The response has no content; the response code is 204.
 
-The salesInvoice resource type offers a bound action called `post` which posts the corresponding salesInvoice batch.
+The salesInvoice resource type offers a bound action called `postAndSend`, which posts and sends the corresponding salesInvoice batch.
 This is illustrated in the following example:
-`POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.post`
+`POSTANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.postAndSend`
 
 The response has no content; the response code is 204.
 
@@ -145,7 +143,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here is a JSON representation of the salesInvoice resource.
+Here's a JSON representation of the salesInvoice resource.
 
 
 ```json
@@ -213,6 +211,7 @@ Here is a JSON representation of the salesInvoice resource.
 > The `id` property value in this API resource might be different than the `systemId` of the corresponding record because the `systemId` of the unposted invoices are carried to posted invoices in the API, but not to the record. Use the `https://{businesscentralPrefix}/microsoft/automate/v1.0/companies({id})/postedSalesInvoices({systemId})` route and extract the `apiId` property to map the `systemId` of a posted sales invoice record to the `salesInvoice` API resource.
 
 ## Related information
+
 [GET salesInvoice](../api/dynamics_salesInvoice_Get.md)  
 [DELETE salesInvoice](../api/dynamics_salesInvoice_Delete.md)  
 [POST salesInvoice](../api/dynamics_salesInvoice_Create.md)  

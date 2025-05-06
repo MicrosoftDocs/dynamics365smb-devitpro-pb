@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Create contacts
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
@@ -45,7 +43,7 @@ If successful, this method returns ```201 Created``` response code and a **conta
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/contacts({id})
@@ -75,7 +73,7 @@ Content-type: application/json
 ```
 
 **Response**
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 201 Created
