@@ -2,7 +2,7 @@
 title: Table Keys and Performance
 description: AL code searches through a subset of the record in a table, consider what keys define the tables and write code that optimizes the keys.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: f64156c7-0319-40ef-adfa-2c1d4ee1b852
 caps.latest.revision: 15
 ---

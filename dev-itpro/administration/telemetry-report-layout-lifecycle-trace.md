@@ -2,7 +2,7 @@
 title: Analyzing report layout lifecycle telemetry
 description: Learn about report layout lifecycle telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 11/06/2024
 ms.author: jswymer

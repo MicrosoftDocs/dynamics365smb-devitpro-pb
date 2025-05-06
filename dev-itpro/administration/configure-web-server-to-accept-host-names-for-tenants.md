@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.date: 10/27/2021
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: eb87ee8c-be21-4fed-a5f7-2229c4101c61
 caps.latest.revision: 6
 author: jswymer

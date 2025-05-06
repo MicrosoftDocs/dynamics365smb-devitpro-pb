@@ -2,7 +2,7 @@
 title: Managing Sessions in the Admin Center
 description: Use the Business Central administration center to manage sessions in your tenant environments. 
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, sessions
 ms.date: 12/14/2021

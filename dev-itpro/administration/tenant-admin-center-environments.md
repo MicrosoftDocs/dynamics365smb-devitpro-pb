@@ -2,7 +2,7 @@
 title: Managing Production and Sandbox Environments
 description: Learn how to use Business Central admin center to manage tenant environments, both sandbox and production. 
 author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
 ms.date: 03/31/2025
