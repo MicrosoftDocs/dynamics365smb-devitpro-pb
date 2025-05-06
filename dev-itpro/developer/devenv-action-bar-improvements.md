@@ -4,7 +4,7 @@ description: Introducing the modern action bar in Dynamics 365 Business Central
 author: jacobwj
 ms.author: solsen
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/08/2024
 ms.custom: bap-template
 ---
