@@ -2,7 +2,7 @@
 title: Using Key Vault Secrets in Business Central Extensions 
 description: Describes how to use an Azure Key vault with Business Central extensions.
 ms.date: 08/20/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ms.reviewer: solsen
 ---

@@ -5,7 +5,7 @@ author: jswymer
 ms.service: dynamics-365-op
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: article
+ms.topic: reference
 ms.author: jswymer
 ms.date: 04/29/2025
 ---

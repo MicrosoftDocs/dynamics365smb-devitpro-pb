@@ -2,7 +2,7 @@
 title: "Updates for the Business Central 2021 Release Wave 1 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2021 Release Wave 1 on-premises deployments."
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.date: 09/01/2022
 ms.reviewer: jswymer

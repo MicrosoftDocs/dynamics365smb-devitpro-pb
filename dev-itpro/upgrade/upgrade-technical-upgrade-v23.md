@@ -4,7 +4,7 @@ description: Describes how to do a technical upgrade from Business Central V19, 
 ms.custom: bap-template
 ms.date: 11/27/2023
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ---

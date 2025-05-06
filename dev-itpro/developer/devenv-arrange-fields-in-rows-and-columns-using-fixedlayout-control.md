@@ -4,7 +4,7 @@ description: A fixed control is used to arrange page fields in rows and columns,
 ms.custom: bap-template
 ms.date: 02/06/2023
 
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
