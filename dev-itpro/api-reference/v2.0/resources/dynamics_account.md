@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an account in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -25,7 +23,6 @@ Represents an account in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET account](../api/dynamics_account_get.md)|account|Gets a account object.|
-
 
 ## Navigation
 
@@ -42,7 +39,7 @@ Represents an account in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |displayName|string|Specifies the account's name. This name will appear on all sales documents for the account.|
 |category|NAV.glAccountCategory|Specifies the category of the account. It can be " ", "Assets", "Liabilities", "Equity", "Income", "Cost of Goods Sold" or "Expense".|
 |subCategory|string|Specifies the subcategory of the account category of the G/L account.|
-|blocked|boolean|Specifies that entries cannot be posted to the account. **True** indicates account is blocked and posting is not allowed.|
+|blocked|boolean|Specifies that entries can't be posted to the account. **True** indicates account is blocked and posting is not allowed.|
 |accountType|NAV.glAccountType|The type of the account that the account is related to. It can be "Posting", "Heading", "Total", "Begin Total" or "End Total".|
 |directPosting|boolean|Specifies whether direct posting is enabled.|
 |netChange|decimal|The account net change. |
@@ -54,7 +51,7 @@ Represents an account in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 
 ## JSON representation
 
-Here is a JSON representation of the account resource.
+Here's a JSON representation of the account resource.
 
 
 ```json
@@ -75,9 +72,7 @@ Here is a JSON representation of the account resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET account](../api/dynamics_account_Get.md)

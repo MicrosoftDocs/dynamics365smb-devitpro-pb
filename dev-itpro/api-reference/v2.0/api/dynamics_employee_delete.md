@@ -1,9 +1,7 @@
 ---
 title: Delete employees  
 description: Deletes an employee object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -28,19 +26,19 @@ DELETE businesscentralPrefix/companies({id})/employees({id})
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **employees**, the **employees** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **employees**, the **employees** won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.
+If successful, this method returns ```204 No Content``` response code. It doesn't return anything in the response body.
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/employees({id})
@@ -48,7 +46,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/employees({id})
 
 **Response** 
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 HTTP/1.1 204 No Content

@@ -1,9 +1,7 @@
 ---
 title: Create employee defaultDimensions  
 description: Creates a default dimensions of the employee object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -39,7 +37,7 @@ If successful, this method returns ```201 Created``` response code and a **emplo
 ## Example
 
 **Request**
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/employees({employeeId})/defaultDimensions

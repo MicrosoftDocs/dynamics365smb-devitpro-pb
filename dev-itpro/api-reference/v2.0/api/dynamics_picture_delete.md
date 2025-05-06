@@ -29,13 +29,13 @@ DELETE businesscentralPrefix/companies({companyId})/customers({customerId})/pict
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match| When this request header is included and the eTag provided does not match the current tag on the picture, the picture will not be updated.|
+|If-Match| When this request header is included and the eTag provided doesn't match the current tag on the picture, the picture won't be updated.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 The metadata will be updated on the same link.
 
@@ -43,7 +43,7 @@ The metadata will be updated on the same link.
 
 **Request**
 
-Here is an example of the request. 
+Here's an example of the request. 
 
 ```json
 DELETE https://api.businesscentral.dynamics-tie.com/v2.0/api/v2.0/companies(companyId)/customers(customerId)/picture(pictureId)
