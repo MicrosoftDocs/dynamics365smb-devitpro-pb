@@ -149,7 +149,7 @@ Learn more in [selling Business Central apps through AppSource](../developer/dev
 
 The CSP program contains the so-called region availability. This means that based on your company's location, you’re part of one of the regions and can sell CSP offers (including [!INCLUDE [prod_short](../includes/prod_short.md)]) only within that region. For example, if your company's location is in Europe, you can sell to customers in Europe and cannot sell to customers in the United States.
 
-Learn more about [CSP regions](https://learn.microsoft.com/en-us/partner-center/enroll/regional-authorization-overview).
+Learn more about [CSP regions](/partner-center/enroll/regional-authorization-overview).
 
 ### AIM and Bridge to Cloud 2
 
