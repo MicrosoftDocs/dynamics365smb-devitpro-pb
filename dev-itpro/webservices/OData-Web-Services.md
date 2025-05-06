@@ -4,7 +4,7 @@ description: Learn about OData web services and how to create and maintain these
 ms.custom: bap-template
 ms.date: 02/28/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: kepontop
 author: kennieP
 ---
