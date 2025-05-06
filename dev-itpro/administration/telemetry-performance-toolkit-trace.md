@@ -2,7 +2,7 @@
 title: Analyzing Performance Toolkit Telemetry
 description: Learn about the telemetry for the Performance Toolkit in Business Central  
 author: bverbeek
-ms.topic: conceptual
+ms.topic: concept-article
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, BCPT, Performance Toolkit, performance
 ms.date: 03/22/2023
 ms.author: jswymer
