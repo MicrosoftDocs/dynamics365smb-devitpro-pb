@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.date: 12/28/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: bap-template
 ---
 
