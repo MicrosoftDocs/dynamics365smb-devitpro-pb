@@ -396,7 +396,10 @@ pageextension 50127 SalesInvoicesListPwrBiExt extends "Sales Invoice List"
 
 ## Open a Power BI element expanded in its own page 
 
-From the Power BI Embedded Report Part, users can select the **Expand** action to open the report expanded in a separate page. You can provide a similar experience by using AL code to add an action on page that opens a specific element in the expanded mode. To achieve this, you use the **Power BI Displayed Element** and **Power BI Context Settings** tables, just like when pinning a specific element to a page part. However, instead of using the **Power BI Embedded Report Part**, you embed the element in the **Power BI Element Card** page.
+From the Power BI Embedded Report Part, users can select the **Expand** action to open the report expanded in a separate page. You can provide a similar experience by using AL code to add an action on page that opens a specific element in the expanded mode.
+
+
+ To achieve this, you use the **Power BI Displayed Element** and **Power BI Context Settings** tables, just like when pinning a specific element to a page part. However, instead of using the **Power BI Embedded Report Part**, you embed the element in the **Power BI Element Card** page.
 
 For detailed code examples that demonstrate this scenario for all element types, go to [https://github.com/microsoft/BCTech/tree/master/samples/PowerBi/PBI23samples](https://github.com/microsoft/BCTech/tree/master/samples/PowerBi/PBI23samples). 
 
