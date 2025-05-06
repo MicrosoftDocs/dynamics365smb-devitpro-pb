@@ -113,7 +113,7 @@ Learn more about the [Cloud Solution Provider](/partner-center/csp-overview) (CS
 In [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, you use PartnerSource to order new licenses, renumber objects, and include add-ons. After each change, you need to generate a new license file and manually update the license in the customer database.
 In [!INCLUDE [prod_short](../includes/prod_short.md)] online, you place orders through your indirect provider's portal and manage customers in the Microsoft Partner Center. The process is more streamlined—you no longer need to generate license files or renumber objects. Subscriptions or additional users are available to your customers immediately after purchase; which means that no manual license installation is required. You also add apps using Microsoft AppSource.
 
-Learn more and see the [examples of what you can achieve on Partner Center](https://learn.microsoft.com/en-us/partner-center/customers/connect-with-your-customers?toc=%2Fdynamics365%2Fbusiness-central%2Fdev-itpro%2Ftoc.json).
+Learn more and see the [examples of what you can achieve on Partner Center](/partner-center/customers/connect-with-your-customers?toc=%2Fdynamics365%2Fbusiness-central%2Fdev-itpro%2Ftoc.json).
 
 ### Microsoft Entra tenants
 
