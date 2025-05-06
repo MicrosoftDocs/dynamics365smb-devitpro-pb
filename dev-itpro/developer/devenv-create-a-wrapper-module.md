@@ -2,7 +2,7 @@
 title: Create a .NET Wrapper Module
 description: This topic provides a description of how to contribute a .NET wrapper module.
 author: bholtorf
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: bholtorf
 ms.date: 04/01/2021
 ms.reviewer: bholtorf

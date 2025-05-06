@@ -4,7 +4,7 @@ description: Learn how to create a new module in the System Application.
 author: bholtorf
 ms.date: 11/23/2023
 ms.reviewer: bholtorf
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: bholtorf
 ---
 
