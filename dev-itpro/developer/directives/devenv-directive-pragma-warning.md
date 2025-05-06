@@ -3,7 +3,7 @@ title: Pragma Warning directive in AL
 description: The pragma warning instruction on the pragma directive in AL.
 author: SusanneWindfeldPedersen
 ms.date: 03/19/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
 ---

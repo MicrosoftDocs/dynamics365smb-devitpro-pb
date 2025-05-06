@@ -3,7 +3,7 @@ title: XMLport object
 description: XMLport objects are used to export and import data between an external source and Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 11/13/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
 --- 

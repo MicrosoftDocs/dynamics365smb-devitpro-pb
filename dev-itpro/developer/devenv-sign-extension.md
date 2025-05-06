@@ -3,7 +3,7 @@ title: Sign an app package file
 description: This article explains how to sign an AL app package file with a pfx file or with Azure Key Vault.
 author: SusanneWindfeldPedersen
 ms.date: 03/12/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

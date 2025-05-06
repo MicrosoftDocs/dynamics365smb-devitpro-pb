@@ -4,7 +4,7 @@ description: "Retaining table data after publishing an extension"
 
 author: SusanneWindfeldPedersen
 ms.date: 08/26/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---

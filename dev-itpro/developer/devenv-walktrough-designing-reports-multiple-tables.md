@@ -3,7 +3,7 @@ title: Walkthrough - Designing a report from multiple tables
 description: This walkthrough shows you how to design a report from multiple tables.
 ms.author: solsen
 ms.date: 12/05/2023
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---

@@ -2,7 +2,7 @@
 title: Delete subscriptions (Beta)
 description: Deletes a subscriptions object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: how-to
 ms.devlang: al
 ms.date: 05/31/2024
 ms.author: solsen

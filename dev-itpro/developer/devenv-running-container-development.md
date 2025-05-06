@@ -3,7 +3,7 @@ title: Running a container-based development environment"
 description: Overview of how to run a container-based development.
 author: SusanneWindfeldPedersen
 ms.date: 10/04/2023
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
