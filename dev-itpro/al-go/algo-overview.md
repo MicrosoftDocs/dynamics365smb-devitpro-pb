@@ -4,7 +4,7 @@ description: Overview of how to use AL-Go templates and actions to streamline an
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---

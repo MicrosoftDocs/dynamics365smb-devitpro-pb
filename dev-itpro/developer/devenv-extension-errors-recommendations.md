@@ -3,7 +3,7 @@ title: Extending error messages with recommendations
 description: Overview of how you can extend the error messages with recommendations framework to reduce friction for users of Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 10/03/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---

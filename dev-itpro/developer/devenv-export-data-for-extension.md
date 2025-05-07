@@ -3,7 +3,7 @@ title: "Adding data for Extensions"
 description: "How you can add data such as permisisons, web services, and table data for an extension."
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

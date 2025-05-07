@@ -7,7 +7,7 @@ ms.custom:
 ms.date: 10/26/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ---
 # Use PerfView to Collect Event Trace Data

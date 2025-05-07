@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.author: sodragon
 ms.custom: bap-template
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: solsen
 ---
 
