@@ -3,7 +3,7 @@ title: Auditing overview
 description: Get an overview of the articles about auditing in Business Central, so that you can configure your solution.
 author: jobulsin
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/21/2024
 ms.author: jswymer
 ---
