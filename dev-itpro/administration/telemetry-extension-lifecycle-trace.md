@@ -2,7 +2,7 @@
 title:  Extension Lifecycle Trace Telemetry | Microsoft Docs
 description: Learn about the extension lifecycle telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 05/12/2021

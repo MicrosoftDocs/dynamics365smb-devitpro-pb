@@ -3,7 +3,7 @@ title: Environment Telemetry
 description: Learn how the Business Central admin center provides telemetry for each environment.  
 author: jswymer
 
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 04/01/2021

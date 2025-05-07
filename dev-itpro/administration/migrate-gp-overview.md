@@ -2,7 +2,7 @@
 title: Migrate on-premises GP data to Business Central online overview
 description: This article provides an overview of how the migration works and the necessary tasks for completing the migration from Dynamics GP on-premises.
 author: jswymer
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003

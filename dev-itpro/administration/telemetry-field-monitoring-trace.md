@@ -2,7 +2,7 @@
 title: Analyzing Field Monitoring Telemetry
 description: Learn about the telemetry for monitoring changes to sensitive data in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 05/01/2021
