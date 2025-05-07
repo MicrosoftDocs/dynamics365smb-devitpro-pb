@@ -1,0 +1,2 @@
+> [!NOTE]
+> Only fields of `FieldClass = Normal` are supported as input values for the Fields parameter. If fields of `FieldClass = FlowFilter` or `FieldClass = FlowField` are passed, the return value will be `false` if observed; otherwise, a runtime error will occur.
