@@ -4,7 +4,7 @@ description: Get an overview of new and changed capabilities in the 18.5 update 
 ms.author: solsen
 ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ---
