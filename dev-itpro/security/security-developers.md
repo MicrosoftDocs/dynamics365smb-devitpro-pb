@@ -3,7 +3,7 @@ title: Business Central security for AL developers
 description: Understand and improve the security of your Business Central apps written in AL.
 ms.date: 02/23/2024
 ms.reviewer: solsne
-ms.topic: conceptual
+ms.topic: article
 author: kennienp
 ---
 

@@ -3,7 +3,7 @@ title: "How Application Configurations Affect Performance"
 description: Learn about tips and tricks for how to tweak your Business Central performance.
 ms.date: 02/14/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: KennieNP
 ---
 

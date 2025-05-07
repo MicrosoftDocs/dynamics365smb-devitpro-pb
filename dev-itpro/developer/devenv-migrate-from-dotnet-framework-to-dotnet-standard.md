@@ -5,7 +5,7 @@ author: kennienp
 ms.custom: bap-template
 ms.date: 04/18/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kepontop
 ---
 

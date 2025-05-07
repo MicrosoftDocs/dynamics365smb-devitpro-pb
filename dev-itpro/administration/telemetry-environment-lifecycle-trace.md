@@ -4,7 +4,7 @@ description: Learn about the environment lifecycle telemetry in Business Central
 author: KennieNP
 ms.author: kepontop
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/31/2025
 ms.custom: bap-template
 
