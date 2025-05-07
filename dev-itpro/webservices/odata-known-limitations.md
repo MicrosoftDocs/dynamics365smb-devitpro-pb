@@ -2,7 +2,7 @@
 title: "Known OData Limitations "
 description: Learn about known limitations with Business Central OData.
 ms.date: 04/01/2022
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Known Limitations with Business Central OData

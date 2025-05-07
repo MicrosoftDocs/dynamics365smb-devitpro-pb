@@ -1,7 +1,7 @@
 ---
 title: Upgrading Customized C/AL Application to Microsoft Base Application for version 23
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 23.
-ms.topic: article
+ms.topic: how-to
 author: jswymer
 ms.author: jswymer
 ms.date: 08/14/2023

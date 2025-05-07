@@ -4,7 +4,7 @@ description: Get an overview of new and changed capabilities in the 24.1 update 
 ms.author: jswymer
 ms.date: 05/15/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.custom: 
     - bap-template

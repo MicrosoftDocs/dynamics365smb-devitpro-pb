@@ -4,7 +4,7 @@ description: Learn how time zones work with web services
 ms.custom: bap-template
 ms.date: 01/05/2024
 ms.reviewer: jswtmer
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 

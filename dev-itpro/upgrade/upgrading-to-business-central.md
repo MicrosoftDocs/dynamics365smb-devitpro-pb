@@ -1,7 +1,7 @@
 ---
 title: Upgrading to Dynamics 365 Business Central
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 author: jswymer
 ms.date: 02/07/2025
