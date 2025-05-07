@@ -2,7 +2,7 @@
 title: "Page.SetSelectionFilter(var Record) Method"
 description: "Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to marked only."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 05/07/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -37,12 +37,12 @@ An instance of the [Page](page-data-type.md) data type.
 
 If all records are selected, marks won't be used.  
   
-If only the current record is selected on the page, then SetSelectionFilter does the following:  
+If only the current record is selected on the page, then `SetSelectionFilter` does the following:  
   
 - Sets the current filter group to `0` on the destination record  
 - Adds filters on the primary key fields that point to the current record of the page  
   
-If more than one record is selected on the page, then SetSelectionFilter does the following:  
+If more than one record is selected on the page, then `SetSelectionFilter` does the following:  
   
 - Copies the current key from the page source table to the destination record  
 - Copies the current sort order from the table to the destination record  
@@ -51,7 +51,7 @@ If more than one record is selected on the page, then SetSelectionFilter does th
 - Marks the selected records and sets the "marked only" filter
 
 > [!IMPORTANT]
-> SetSelectionFilter is not directly supported on pages based on temporary source tables and therefore needs to be replaced with a custom page method (see Example 2 below).
+> `SetSelectionFilter` isn't directly supported on pages based on temporary source tables and must therefore be replaced with a custom page method (see Example 2 in the following).
 
 ## Example 1
 
