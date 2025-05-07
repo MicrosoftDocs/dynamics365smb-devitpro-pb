@@ -4,7 +4,7 @@ description: Learn about Business Central's online ability to provide resource e
 author: dmc-dk
 ms.author: dmitrych 
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: article
 ms.collection: 
 ms.date: 02/22/2024
 ms.custom: bap-template
