@@ -3,7 +3,7 @@ title: "Adding barcodes to reports"
 description: "Learn how you can add barcodes to a report."
 author: jswymer
 ms.date: 04/06/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
 ---

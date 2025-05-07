@@ -1,7 +1,7 @@
 ---
 title: "Asynchronous considerations for control add-ins"
 ms.date: 12/29/2023
-ms.topic: conceptual
+ms.topic: article
 ms.assetid: 6c90376e-b86e-406d-880d-3cc905bf6527
 author: SusanneWindfeldPedersen
 description: Learn about asynchronous communication limitations in Dynamics 365 Business Central server and how to effectively write control add-ins for all display targets.

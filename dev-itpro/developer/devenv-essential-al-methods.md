@@ -2,7 +2,7 @@
 title: Essential AL Methods
 description: Learn AL programming with essential methods. Learn the most common methods, their uses, and how to add specialized functionality to your applications.
 ms.date: 04/26/2024
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen

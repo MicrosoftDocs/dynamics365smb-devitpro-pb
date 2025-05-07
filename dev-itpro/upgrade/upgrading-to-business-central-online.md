@@ -2,7 +2,7 @@
 title: "Upgrading to Microsoft Dynamics 365 Business Central Online"
 description: Describes how to upgrade to Business Central Online
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 author: jswymer
 ms.date: 04/01/2021

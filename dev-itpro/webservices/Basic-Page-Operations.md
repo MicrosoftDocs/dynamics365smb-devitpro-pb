@@ -2,7 +2,7 @@
 title: Basic page operations
 description: Learn how to use basic operations for SOAP web services.
 ms.date: 01/09/2024
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Basic operations (for SOAP web services)

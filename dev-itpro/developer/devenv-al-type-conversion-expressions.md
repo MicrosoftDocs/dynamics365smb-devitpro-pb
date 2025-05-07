@@ -2,7 +2,7 @@
 title: AL type conversion in expressions
 description: Description of how AL types can be converted.
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/07/2025
 ms.custom: bap-template
 author: SusanneWindfeldPedersen

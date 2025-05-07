@@ -28,7 +28,7 @@ GET businesscentralPrefix/companies({id})/vendorPaymentJournals({id})
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and an **vendorPaymentJournals** object in the response body.
@@ -37,14 +37,14 @@ If successful, this method returns a ```200 OK``` response code and an **vendorP
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/vendorPaymentJournals({id})
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 {

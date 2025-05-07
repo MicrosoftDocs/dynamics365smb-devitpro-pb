@@ -7,7 +7,7 @@ ms.custom:
 ms.date: 01/04/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ---
 # Working with Data Collector sets

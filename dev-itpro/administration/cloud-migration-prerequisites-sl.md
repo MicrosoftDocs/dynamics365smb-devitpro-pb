@@ -4,7 +4,7 @@ description: Learn about the requirements for cloud migration in Dynamics SL on-
 author: lcontreras 
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/13/2024
 ms.custom: bap-template
 ---

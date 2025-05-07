@@ -2,7 +2,7 @@
 title: How to Alter Databases
 description: Modify the Database property settings by using the Alter Database window, which gives you access to the same settings as the New Database window.
 ms.date: 04/01/2021
-ms.topic: article
+ms.topic: how-to
 author: jswymer
 ---
 # Change Collation of an Existing [!INCLUDE[prod_short](../developer/includes/prod_short.md)]

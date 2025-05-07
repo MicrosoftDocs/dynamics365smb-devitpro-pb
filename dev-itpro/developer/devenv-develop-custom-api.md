@@ -4,7 +4,7 @@ description: Learn how to develop a custom API page by using an AL extension and
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 11/28/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: solsen
 ---
 

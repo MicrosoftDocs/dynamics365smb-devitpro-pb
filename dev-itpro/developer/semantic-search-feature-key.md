@@ -4,7 +4,7 @@ description: Learn about the feature key to switch chat with copilot so that it 
 ms.custom: bap-template
 ms.date: 03/17/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.author: jswymer
 ---

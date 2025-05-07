@@ -4,7 +4,7 @@ description: How you can extend functionality in Dynamics 365 Business Central.
 ms.author: kepontop
 ms.date: 10/09/2023
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: KennieNP
 ---
 

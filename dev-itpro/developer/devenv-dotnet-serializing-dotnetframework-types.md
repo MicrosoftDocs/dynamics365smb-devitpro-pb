@@ -3,7 +3,7 @@ title: Serializing .NET framework types
 description: How to serialize .NET framework types
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

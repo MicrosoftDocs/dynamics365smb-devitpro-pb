@@ -4,7 +4,7 @@ description: Introducing how to make Business Central pages discoverable by user
 author: KennieNP
 ms.date: 04/22/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: kepontop
 ---
 

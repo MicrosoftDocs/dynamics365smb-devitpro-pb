@@ -4,7 +4,7 @@ description: Learn about how to obsolete Business Central reports
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: kepontop
 ms.date: 03/13/2025
 ---

@@ -2,7 +2,7 @@
 title: Analyze table index trace telemetry
 description: Learn about the telemetry for changes made to table indexes  
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, table keys, indexes, keys, indexes
 ms.date: 12/22/2023

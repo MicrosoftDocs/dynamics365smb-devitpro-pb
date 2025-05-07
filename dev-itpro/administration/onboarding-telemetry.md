@@ -2,7 +2,7 @@
 title: Measure onboarding progress using telemetry
 description: Learn how you can use onboarding telemetry to measure customers' progress with onboarding to Dynamics 365 Business Central.
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: how-to
 author: sorenfriisalexandersen
 ms.author: soalex
 ms.reviewer: solsen

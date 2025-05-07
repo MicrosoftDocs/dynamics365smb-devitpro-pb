@@ -3,8 +3,8 @@ title: "Business Central virtual tables FAQ"
 description: "Frequently asked questions for working with Business Central virtual tables"
 ms.date: 11/13/2023
 ms.reviewer: solsen
-ms.topic: conceptual
 author: SusanneWindfeldPedersen
+ms.topic: faq
 ---
 
 # Business Central Virtual Tables FAQ

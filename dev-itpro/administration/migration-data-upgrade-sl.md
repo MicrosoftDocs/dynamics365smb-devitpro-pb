@@ -4,7 +4,7 @@ description: Discover the process for running the data upgrade as part of Dynami
 author: lcontreras
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: upgrade-and-migration-article
 ms.date: 12/13/2024
 ms.custom: bap-template 
 ---

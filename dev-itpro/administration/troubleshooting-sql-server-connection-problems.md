@@ -2,7 +2,7 @@
 title: "Troubleshooting: SQL Server Connection Problems"
 description: Learn how to configure and troubleshoot SQL Server connections to Business Central.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 author: SusanneWindfeldPedersen
 ---
 # Configuring and troubleshooting SQL Server Connections

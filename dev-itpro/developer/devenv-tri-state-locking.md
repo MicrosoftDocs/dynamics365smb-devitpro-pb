@@ -4,7 +4,7 @@ description: Learn about the tri-state locking feature in Business Central.
 author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: article
 ms.collection: 
 ms.date: 09/04/2023
 ms.custom: bap-template

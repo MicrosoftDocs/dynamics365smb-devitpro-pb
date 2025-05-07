@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/08/2022
 ms.custom: bap-template
 

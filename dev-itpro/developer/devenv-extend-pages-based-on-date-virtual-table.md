@@ -4,7 +4,7 @@ description: "How to extend pages that previously had the Date virtual table as 
 author: blrobl
 ms.reviewer: solsen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Extending Pages Previously Based on the Date Virtual Table

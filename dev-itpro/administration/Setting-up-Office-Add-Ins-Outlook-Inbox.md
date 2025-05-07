@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.date: 02/07/2025
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Set up the add-ins for Outlook in Business Central on-premises

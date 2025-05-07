@@ -2,7 +2,7 @@
 title:  Analyzing client control add-in exception telemetry
 description: Learn about the telemetry from client add-in exceptions in Business Central  
 author: kennieNP
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/20/2025

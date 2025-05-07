@@ -2,7 +2,7 @@
 title: Requirements for connectivity apps
 description: Learn about connectivity apps, how they can increase business productivity, and how to get your app listed as a connectivity app.
 ms.date: 05/23/2023
-ms.topic: conceptual
+ms.topic: article
 author: sorenfriisalexandersen
 ms.author: soalex
 ms.reviewer: jswymer

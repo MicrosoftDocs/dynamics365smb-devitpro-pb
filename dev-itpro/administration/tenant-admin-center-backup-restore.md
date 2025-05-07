@@ -2,7 +2,7 @@
 title: Restoring an environment in the admin center
 description: Use the Business Central administration center to restore backups of environments. 
 author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
 ms.date: 01/30/2025

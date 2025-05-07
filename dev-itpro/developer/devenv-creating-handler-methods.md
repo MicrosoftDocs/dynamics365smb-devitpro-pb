@@ -3,7 +3,7 @@ title: Create handler methods
 description: Create test codeunits, test methods, and test pages to test your application. To automate tests, create special handler methods for UI interactions. 
 ms.date: 01/08/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: blrobl
 ---
 

@@ -28,7 +28,7 @@ GET businesscentralPrefix/companies({id})/retainedEarningsStatements
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and a **retainedEarningsStatement** object in the response body.
@@ -37,14 +37,14 @@ If successful, this method returns a ```200 OK``` response code and a **retained
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/retainedEarningsStatements?$orderby=lineNumber&$filter=dateFilter ge 2019-01-01 and dateFilter le 2020-12-31
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

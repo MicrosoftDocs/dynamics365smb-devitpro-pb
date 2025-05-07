@@ -2,7 +2,7 @@
 title: Analyzing financial report usage trace telemetry
 description: Learn about the telemetry for financial report usage telemetry in Azure Application Insights.  
 author: kennieNP
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/20/2025
