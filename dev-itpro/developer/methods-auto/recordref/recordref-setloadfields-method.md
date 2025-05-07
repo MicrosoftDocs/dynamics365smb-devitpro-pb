@@ -42,6 +42,8 @@ Calling SetLoadFields on a recordref without passing any fields will reset the f
 
 It is not necessary to include the following fields, because they are always selected for loading: Primary key, SystemId, and data audit fields (SystemCreatedAt, SystemCreatedBy, SystemModifiedAt, SystemModifiedBy).
 
+[!INCLUDE [partial-records-note](../../includes/partial-records-note.md)]
+
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
 ## Example
