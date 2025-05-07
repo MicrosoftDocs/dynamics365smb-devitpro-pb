@@ -2,7 +2,7 @@
 title: Configure the Help experience
 description: Learn how to give your customers access to the right Help content for Business Central online and on-premises.
 author: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/08/2025
 ms.author: solsen
 ms.reviewer: solsen
