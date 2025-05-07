@@ -2,7 +2,7 @@
 title: "Creating filter pages for filtering tables"
 description: "Using the FilterPageBuilder data type to create a filter page in AL for Business Central."
 ms.date: 03/31/2023
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 

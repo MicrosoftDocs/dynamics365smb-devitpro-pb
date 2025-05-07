@@ -2,7 +2,7 @@
 title: AL variables
 description: Description of AL user-defined and system-defined variables.
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/26/2024
 author: KennieNP
 ms.author: solsen

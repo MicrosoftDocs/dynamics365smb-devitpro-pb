@@ -4,7 +4,7 @@ description: This article outlines requirements on the Business Central on-premi
 author: jswymer 
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/16/2023
 ms.custom: bap-template
 ---

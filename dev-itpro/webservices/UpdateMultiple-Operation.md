@@ -1,7 +1,7 @@
 ---
 title: "UpdateMultiple Operation"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ---
 # UpdateMultiple Operation
 Updates a set of records. The updated array of records is passed as a reference and is updated with the latest version.  

@@ -4,7 +4,7 @@ description: Compare the features of REST APIs, SOAP, and OData web services and
 author: kenniep
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: reference
 ms.author: kepontop
 ms.date: 02/28/2024
 ---

@@ -2,7 +2,7 @@
 title: Troubleshooting REST API/OData calls
 description: Learn about how to troubleshoot Business Central web service errors of types REST API or OData.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.devlang: al
 ms.date: 02/06/2024
 ms.author: solsen

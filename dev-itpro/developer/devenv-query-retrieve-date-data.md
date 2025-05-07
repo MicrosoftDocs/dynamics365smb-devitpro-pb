@@ -1,7 +1,7 @@
 ---
 title: "Using the Date Method to Retrieve Day, Month, and Year Data"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 

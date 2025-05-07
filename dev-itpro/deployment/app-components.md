@@ -1,7 +1,7 @@
 ---
 title: Components and capabilities
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.date: 12/28/2023
 description: Discover Dynamics 365 Business Central App Components & Deployment Steps - Microsoft's Base Application, Platform Updates, & Ecosystem Integrations.

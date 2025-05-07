@@ -3,7 +3,7 @@ title: "Generating Delta files"
 description: "Description of how to generate delta files with the ExportToNewSyntax flag."
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---

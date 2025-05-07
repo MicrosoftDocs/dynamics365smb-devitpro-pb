@@ -3,7 +3,7 @@ title: Viewing table data
 description: View tables in browser for troubleshooting
 author: jswymer
 ms.date: 06/17/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---

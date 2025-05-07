@@ -2,7 +2,7 @@
 title: Swiss features that are moved, removed, or replaced | Microsoft Docs
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the features for Switzerland that we have moved, removed, or replaced.
 author: bholtorf
-ms.topic: conceptual
+ms.topic: reference
 ms.devlang: al
 ms.search.keywords: deprecated, Switzerland, local functionality
 ms.date: 12/19/2023

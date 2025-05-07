@@ -3,7 +3,7 @@ title: "Setting up Hyperlinks in Word Report Layouts"
 description: Learn how to create links from text and pictures fields in Word report layouts
 ms.author: jswymer
 ms.date: 11/22/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: jswymer
 ---
 

@@ -3,7 +3,7 @@ title: Creating Tenants from Companies
 description: Learn how to create tenants from companies in Business Central.
 author: jswymer
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Creating tenants from companies in Business Central

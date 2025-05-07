@@ -2,7 +2,7 @@
 title: Compiling objects
 description: Learn how to compile objects in C/SIDE in Business Central-
 ms.date: 04/01/2021
-ms.topic: article
+ms.topic: concept-article
 ---
 
 # Compiling objects

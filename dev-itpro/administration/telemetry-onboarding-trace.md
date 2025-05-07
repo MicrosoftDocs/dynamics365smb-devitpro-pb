@@ -2,7 +2,7 @@
 title: Analyzing onboarding telemetry 
 description: Learn about the onboarding telemetry in Business Central  
 author: brentholtorf
-ms.topic: conceptual
+ms.topic: concept-article
 ms.search.keywords: telemetry, onboarding
 ms.date: 12/21/2023
 ms.author: kepontop

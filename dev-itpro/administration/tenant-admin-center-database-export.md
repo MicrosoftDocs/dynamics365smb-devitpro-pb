@@ -2,7 +2,7 @@
 title: Exporting databases in the admin center
 description: Use the Business Central administration center to export tenant databases per environment.  
 author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
 ms.date: 06/21/2024

@@ -4,7 +4,7 @@ description: Introducing how to work with streams in Business Central AL code.
 author: KennieNP
 ms.date: 04/05/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kepontop
 ---
 
