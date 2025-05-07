@@ -3,7 +3,7 @@ title: Best practices for AL code
 description: Best practices for writing AL code for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 11/07/2024
-ms.topic: conceptual
+ms.topic: best-practice
 ms.author: solsen
 ms.reviewer: solsen
 ---

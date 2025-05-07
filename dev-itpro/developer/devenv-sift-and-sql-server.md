@@ -2,7 +2,7 @@
 title: "SIFT and SQL Server"
 description: Explains how SIFT in Business Central tables work with SQL Server.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # SIFT and SQL Server

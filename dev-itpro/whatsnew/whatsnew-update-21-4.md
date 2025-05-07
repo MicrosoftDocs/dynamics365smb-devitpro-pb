@@ -4,7 +4,7 @@ description: Get an overview of new and changed capabilities in the 21.4 update 
 ms.author: jswymer
 ms.date: 04/01/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.custom: evergreen
 ---

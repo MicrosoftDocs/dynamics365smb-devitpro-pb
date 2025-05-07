@@ -3,7 +3,7 @@ title: "Resolving My Settings Page After a Database Conversion"
 description: Explains how to resolve the problem with the My Settings page in the web client after you convert a Dynamics NAV 2016 database.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # Resolving My Settings Page Implementation After a Database Conversion
 When you convert a [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] database, the My Settings page in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] will not work properly. This article explains how to resolve the problem.

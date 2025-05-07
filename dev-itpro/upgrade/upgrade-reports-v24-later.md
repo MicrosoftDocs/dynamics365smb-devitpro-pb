@@ -4,7 +4,7 @@ description: Describes how to upgrade reports in Business Central.
 ms.custom: bap-template
 ms.date: 03/09/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 author: jswymer
 ---

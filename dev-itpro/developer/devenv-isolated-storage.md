@@ -2,7 +2,7 @@
 title: Isolated Storage
 description: Isolated Storage is a data storage that provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions.
 ms.date: 06/14/2024
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ---
 

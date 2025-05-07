@@ -4,7 +4,7 @@ description: "Guidelines to marketing artifacts including logos, screenshots, do
 author: a-emniel
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Supporting documents, offer logo, screenshots, and video

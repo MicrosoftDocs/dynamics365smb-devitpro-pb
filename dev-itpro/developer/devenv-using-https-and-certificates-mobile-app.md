@@ -1,7 +1,7 @@
 ---
 title: "Using HTTPS and Certificates in Business Central Mobile App"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ---
 # Using HTTPS and Certificates in Business Central Mobile App

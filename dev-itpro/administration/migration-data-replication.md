@@ -4,7 +4,7 @@ description: Learn how to replicate on-premises data to an online environment af
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/15/2023
 ms.custom: bap-template
 ---

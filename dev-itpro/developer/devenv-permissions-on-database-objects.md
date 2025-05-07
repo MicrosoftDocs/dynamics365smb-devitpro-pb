@@ -1,7 +1,7 @@
 ---
 title: "Permissions on Database Objects"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ---
 

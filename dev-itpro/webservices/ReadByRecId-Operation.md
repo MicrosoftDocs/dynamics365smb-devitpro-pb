@@ -1,7 +1,7 @@
 ---
 title: "ReadByRecId Operation"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ---
 # ReadByRecId Operation
 Reads the record that is identified by the record ID.  

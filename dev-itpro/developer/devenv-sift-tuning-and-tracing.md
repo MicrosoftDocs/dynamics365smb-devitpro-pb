@@ -2,7 +2,7 @@
 title: "Tuning and Tracing"
 description: Explains how to tune and trace SIFT indexes in Business Central.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # SIFT Tuning and Tracing

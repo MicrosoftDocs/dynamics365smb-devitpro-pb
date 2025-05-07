@@ -1,7 +1,7 @@
 ---
 title: "Update Operation"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ---
 # Update Operation
 Updates a single record. The updated record is passed as a reference and is updated with the latest version.  

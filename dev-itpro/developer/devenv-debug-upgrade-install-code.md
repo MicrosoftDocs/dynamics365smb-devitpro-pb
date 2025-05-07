@@ -3,7 +3,7 @@ title: Debug upgrade and install code
 description: Overview of debugging upgrade and install codeunits in AL for Business Central
 author: SusanneWindfeldPedersen
 ms.date: 08/01/2022
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.author: solsen
 ms.reviewer: solsen
 ---

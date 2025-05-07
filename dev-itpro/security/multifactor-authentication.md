@@ -4,7 +4,7 @@ description: This article explains how to add multifactor authentication (MFA) w
 author: jswymer
 ms.custom: bap-template
 
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 ms.date: 11/13/2023
 ms.reviewer: jswymer

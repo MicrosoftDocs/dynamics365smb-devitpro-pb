@@ -3,7 +3,7 @@ title: Role Center Behaviors
 description: This section describes in which areas the Role Center pages have a different behavior in the tablet client and the phone client from the web client.
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: blrobl
 ---
 

@@ -2,7 +2,7 @@
 title: Rename Environments in the Admin Center
 description: Use the Business Central administration center to rename environments. 
 author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, rename
 ms.date: 04/01/2021

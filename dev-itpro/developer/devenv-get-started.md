@@ -3,7 +3,7 @@ title: Get started with AL
 description: Description of how to get started with the AL development environment.
 author: SusanneWindfeldPedersen
 ms.date: 04/03/2025
-ms.topic: conceptual
+ms.topic: get-started
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen

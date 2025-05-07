@@ -3,7 +3,7 @@ title: Web Services Terms of Use
 description: Terms of Use for Business Central APIs
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ---

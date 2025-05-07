@@ -2,7 +2,7 @@
 title: Web client URL
 description: Learn about the URL for opening the Business Central web client. 
 ms.date: 06/24/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 

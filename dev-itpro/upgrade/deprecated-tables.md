@@ -2,7 +2,7 @@
 title: Deprecated Tables
 description: Shows the tables that have been marked as removed in the various versions of Business Central.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen

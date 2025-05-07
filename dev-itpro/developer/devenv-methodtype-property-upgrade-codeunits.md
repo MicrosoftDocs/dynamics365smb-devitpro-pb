@@ -2,7 +2,7 @@
 title: MethodType Property (Upgrade Codeunits)
 description: Sets the type of method in an upgrade codeunit.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.reviewer: solsen
 ms.author: solsen
 author: SusanneWindfeldPedersen
