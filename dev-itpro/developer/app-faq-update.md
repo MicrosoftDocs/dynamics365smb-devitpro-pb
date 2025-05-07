@@ -4,7 +4,7 @@ description: "Get answers to some of your questions about updating your app for 
 author: freddyk
 ms.date: 04/01/2021
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: faq
 ms.author: freddyk
 ---
 

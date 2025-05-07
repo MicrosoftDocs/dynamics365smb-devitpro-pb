@@ -1,7 +1,7 @@
 ---
 title: "Bulk Inserts"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 6bbe737c-305f-48d2-8cd3-857c7efb9866
 caps.latest.revision: 21
 description: Learn how to optimize SQL bulk inserts in Business Central for improved performance and scalability. Understand constraints and disabling bulk inserts.

@@ -7,7 +7,7 @@ ms.custom:
 ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # Business Central Performance Counters

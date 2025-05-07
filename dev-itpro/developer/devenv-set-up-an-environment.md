@@ -4,7 +4,7 @@ description: Learn how to set up the tools you need to build a module in the Sys
 ms.author: bholtorf
 ms.date: 07/29/2021
 ms.reviewer: bholtorf
-ms.topic: conceptual
+ms.topic: how-to
 author: bholtorf
 ---
 

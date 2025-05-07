@@ -3,7 +3,7 @@ author: SusanneWindfeldPedersen
 title: Building an Advanced Sample Extension
 description: Includes code for an advanced example extension using Business Central and AL in Visual Studio Code.
 ms.date: 12/29/2022
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---

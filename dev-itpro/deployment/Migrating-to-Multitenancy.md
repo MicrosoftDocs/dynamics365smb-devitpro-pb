@@ -1,7 +1,7 @@
 ---
 title: "Migrating to multitenancy"
 ms.date: 01/03/2023
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4e96a4ec-3880-400f-bf32-e50fefcf28bc
 caps.latest.revision: 11
 description: Learn how to migrate your Business Central solution to a multitenant deployment for easier maintenance across multiple customers. Step-by-step guide included.

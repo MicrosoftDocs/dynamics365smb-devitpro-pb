@@ -4,7 +4,7 @@ description: Learn about built-in permissions sets that carry special meaning in
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 11/13/2024
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Special permission sets

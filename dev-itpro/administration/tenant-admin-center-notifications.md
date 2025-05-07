@@ -3,7 +3,7 @@ title: Manage Tenant-Specific Notifications
 description: Learn about how an internal admin and a delegated admin can get notified of changes for Business Central tenants. 
 author: jswymer
 
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, notifications
 ms.date: 04/12/2023

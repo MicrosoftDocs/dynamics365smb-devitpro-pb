@@ -1,7 +1,7 @@
 ---
 title: "GetRecIdFromKey"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ---
 # GetRecIdFromKey
 Converts a key to a record ID. The key is always part of the page result.  

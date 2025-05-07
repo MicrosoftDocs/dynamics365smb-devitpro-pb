@@ -4,7 +4,7 @@ description: Introducing how to make Business Central reports discoverable by us
 author: KennieNP
 ms.date: 03/11/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: kepontop
 ---
 

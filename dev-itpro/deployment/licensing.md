@@ -2,7 +2,7 @@
 title: Licensing in Business Central
 author: jswymer
 description: Provides an overview of the licensing in Business Central
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.date: 08/08/2024
 ms.reviewer: solsen

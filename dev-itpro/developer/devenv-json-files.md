@@ -3,7 +3,7 @@ title: JSON files
 description: Description of the settings of the app JSON and other JSON files for AL in Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 03/13/2025
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen

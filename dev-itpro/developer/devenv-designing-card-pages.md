@@ -3,7 +3,7 @@ title: Designing card pages
 description: Provides and overview of card page design.
 author: jswymer
 ms.date: 04/26/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.reviewer: jswymer
 ms.author: jswymer
 ---

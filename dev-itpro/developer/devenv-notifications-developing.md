@@ -3,7 +3,7 @@ title: Notifications
 description: Learn how to use notifications in the development environment to send nonintrusive information to the user interface in Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 01/21/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

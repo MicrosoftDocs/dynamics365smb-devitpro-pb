@@ -5,7 +5,7 @@ author: jswymer
 ms.custom: bap-template
 ms.date: 04/08/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ---
 

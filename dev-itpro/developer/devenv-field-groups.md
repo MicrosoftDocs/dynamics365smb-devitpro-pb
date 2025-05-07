@@ -3,7 +3,7 @@ title: Field groups
 description: A field group defines the fields to display in a DropDown control in Dynamics 365 Business Central. 
 ms.author: solsen
 ms.date: 11/13/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---

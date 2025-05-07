@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 03/13/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kepontop
 ---
 # Creating an Excel layout report

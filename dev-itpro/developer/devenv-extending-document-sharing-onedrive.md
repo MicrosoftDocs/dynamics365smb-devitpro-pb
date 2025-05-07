@@ -1,7 +1,7 @@
 ---
 title: Extending Document Sharing and OneDrive for Business
 description: Learn how the document sharing capability is used with OneDrive for Business, and how you can extend it.
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ms.author: jswymer
 ms.date: 10/01/2021

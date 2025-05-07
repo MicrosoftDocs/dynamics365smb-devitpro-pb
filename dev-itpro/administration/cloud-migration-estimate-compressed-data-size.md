@@ -4,7 +4,7 @@ description: This article outlines how to estimate the data size in your Busines
 author: kennienp 
 ms.author: kepontop
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/06/2023
 ms.custom: bap-template
 ---

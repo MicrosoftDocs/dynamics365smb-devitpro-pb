@@ -4,7 +4,7 @@ description: Guidelines on supported products, keywords, and hide key
 author: a-emniel
 ms.date: 12/21/2023
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Supported products, keywords, markets, and hide key

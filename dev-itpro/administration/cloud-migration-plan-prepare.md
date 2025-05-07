@@ -4,7 +4,7 @@ description: This article provides recommendations to help you define your cloud
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/23/2024
 ms.custom: bap-template 
 ---

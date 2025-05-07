@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Configuring a [!INCLUDE[prod_short.md](../developer/includes/prod_short.md)] Database for Read Scale-Out

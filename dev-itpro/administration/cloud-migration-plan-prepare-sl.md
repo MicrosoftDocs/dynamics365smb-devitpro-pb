@@ -4,7 +4,7 @@ description: Learn how to define your cloud migration strategy and prepare envir
 author: lcontreras
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/13/2024
 ms.custom: bap-template 
 ---

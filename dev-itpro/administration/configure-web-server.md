@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.date: 11/11/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Configuring Business Central Web Server instances

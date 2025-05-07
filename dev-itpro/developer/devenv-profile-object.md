@@ -3,7 +3,7 @@ title: Profile object
 description: Description of the profile object, which allows you to build an individual experience for each user profile.
 author: SusanneWindfeldPedersen
 ms.date: 09/30/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
 ms.collection: get-started

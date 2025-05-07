@@ -3,7 +3,7 @@ title: "Technical Upgrade From Version 14 to Version 21"
 description: Describes how to do a technical upgrade from Business Central 14 to 21
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer

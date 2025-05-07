@@ -4,7 +4,7 @@ description: This article describes the tasks required for getting the monthly v
 ms.custom: bap-template
 ms.date: 07/24/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
 ---

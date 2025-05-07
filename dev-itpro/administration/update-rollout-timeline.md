@@ -2,7 +2,7 @@
 title: Update cycles
 description: Learn about the timeline of Business Central online update rollouts. Prepare for both major updates and minor updates with minimal disruption in productivity.  
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
 ms.date: 03/31/2025

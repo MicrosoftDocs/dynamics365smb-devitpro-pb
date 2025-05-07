@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.custom: bap-template
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/18/2024
 ms.reviewer: jswymer
 ---

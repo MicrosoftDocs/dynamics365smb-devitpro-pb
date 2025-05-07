@@ -2,7 +2,7 @@
 title: "How to: Import Objects"
 ms.date: 04/13/2021
 ms.reviewer: jswymer
-ms.topic: article
+ms.topic: how-to
 author: jswymer
 ---
 # Exporting and Importing Objects

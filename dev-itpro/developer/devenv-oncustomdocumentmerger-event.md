@@ -3,7 +3,7 @@ title: "OnCustomDocumentMerger event"
 description: Describe the OnCustomDocumentMerger Event in Business Central.
 ms.date: 12/20/2023
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 

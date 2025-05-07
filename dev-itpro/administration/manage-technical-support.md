@@ -2,7 +2,7 @@
 title: Managing technical support
 description: Learn about how to support your Business Central users, both online and on-premises, as the internal or delegated administrator.
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.date: 12/15/2023
 ms.author: jswymer

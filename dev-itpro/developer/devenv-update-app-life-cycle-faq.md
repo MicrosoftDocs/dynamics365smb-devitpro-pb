@@ -2,7 +2,7 @@
 title: "Lifecycle of apps and extensions FAQ"
 description: "Overview of the frequently asked questions about updating an app on AppSource."
 author: SusanneWindfeldPedersen
-ms.topic: conceptual
+ms.topic: faq
 ms.author: freddyk
 ms.date: 08/01/2021
 ms.reviewer: jswymer

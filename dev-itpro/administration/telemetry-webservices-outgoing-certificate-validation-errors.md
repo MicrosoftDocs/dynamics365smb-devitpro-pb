@@ -2,7 +2,7 @@
 title: Server certificate validation errors for outgoing web service requests
 description: Learn about telemetry for server certificate validation errors for outgoing web service requests in Business Central  
 author: kennienp
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/20/2025
 ms.author: kepontop
 ms.reviewer: jswymer

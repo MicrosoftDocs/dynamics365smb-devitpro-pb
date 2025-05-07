@@ -2,7 +2,7 @@
 title: Configure Business Central Server
 description: Configure and modify settings in the Setup or Installed Business Central Server using PowerShell Cmdlets.
 author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: dynamics-365-op
 ms.date: 03/12/2025
 ms.author: jswymer

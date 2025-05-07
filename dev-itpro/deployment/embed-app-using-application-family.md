@@ -2,7 +2,7 @@
 title: Using Application Family in Embed App
 description: Learn how to use the application family in [!INCLUDE[embed app](../developer/includes/embedapp.md)].
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 ms.date: 04/01/2021
 ms.reviewer: jswymer

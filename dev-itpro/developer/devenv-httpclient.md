@@ -4,7 +4,7 @@ description: Learn about how to call external services using the HttpClient data
 ms.custom: bap-template
 ms.date: 03/12/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: kennienp
 ms.author: kepontop
 ---

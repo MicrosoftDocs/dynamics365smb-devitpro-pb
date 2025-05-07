@@ -4,7 +4,7 @@ description: Description of the control add-in object type in AL for Business Ce
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.date: 03/20/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

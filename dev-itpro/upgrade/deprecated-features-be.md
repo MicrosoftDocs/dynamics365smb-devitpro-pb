@@ -3,7 +3,7 @@ title: Belgian Features that are Moved, Removed, or Replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Belgium that we have moved, removed, or replaced.
 author: sorenfriisalexandersen
 
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.search.keywords: deprecated, Belgium, local functionality
 ms.date: 04/01/2021

@@ -3,7 +3,7 @@ title: Designing Assisted Setup Guides
 description: Learn how to create wizards using the NavigatePage page type in Business Central"
 ms.custom: bap-template
 ms.date: 12/10/2022
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer

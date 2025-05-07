@@ -4,7 +4,7 @@ ms.author: solsen
 description: Find out what's changed with update 16.4.
 ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ---

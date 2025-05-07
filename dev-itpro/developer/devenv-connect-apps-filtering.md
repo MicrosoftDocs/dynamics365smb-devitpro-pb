@@ -4,7 +4,7 @@ description: Learn how to use filters with API calls to get targeted information
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 03/14/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.reviewer: solsen
 ---
 
