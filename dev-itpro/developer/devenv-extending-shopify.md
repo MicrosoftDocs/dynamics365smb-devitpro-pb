@@ -6,7 +6,7 @@ ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.custom: bap-template
 ms.date: 08/26/2024
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # Extend the Shopify Connector
 
