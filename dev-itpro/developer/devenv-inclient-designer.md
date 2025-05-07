@@ -4,7 +4,7 @@ description: Description of how Designer works and is integrated with the AL dev
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/01/2024
 ms.custom: bap-template
 ms.collection: get-started

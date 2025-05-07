@@ -2,7 +2,7 @@
 title: "SIFT and Performance"
 description: This article looks at the factors you must take into consideration when you deal with SIFT and performance. 
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # SIFT and Performance

@@ -2,7 +2,7 @@
 title: "Linking to the Dynamics 365 Business Central App"
 description: Learn how you can construct a URL for starting the Dynamics 365 Business Central app on a device, such as a phone or tablet. You can then distribute this URL by e-mail or from a Web page to the users.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer

@@ -3,7 +3,7 @@ title: Simple card page example
 description: Provides AL code for a simple card type page.
 author: jswymer
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---

@@ -2,7 +2,7 @@
 title: "OnAfterDocumentPrintReady Event"
 description: Describe the OnAfterDocumentPrintReady Event in Business Central.  
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # OnAfterDocumentPrintReady Event

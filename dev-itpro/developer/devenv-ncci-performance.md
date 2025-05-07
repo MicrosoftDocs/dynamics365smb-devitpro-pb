@@ -2,7 +2,7 @@
 title: "Nonclustered Columnstore Indexes (NCCI) and Performance"
 description: This article looks at the factors you must take into consideration when you deal with nonclustered columnstore indexes and performance. 
 ms.date: 01/28/2022
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # Nonclustered Columnstore Indexes and Performance

@@ -4,7 +4,7 @@ description: Learn how to influence Copilot and agents without extending them in
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.collection: bap-ai-copilot
 ms.date: 04/01/2025
 ms.custom: bap-template
