@@ -37,15 +37,8 @@ If `sessionId` isn't specified, but `userId` is, then the debugger will be attac
 > [!IMPORTANT]  
 > In case of `userId` being a different user than the user logged into Visual Studio Code, then the user logged into Visual Studio Code must be part of **D365 ATTACH DEBUG** permission set.
 
-The GUID of the user who initiated the process to start snapshot debugging. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the breakOnNext parameter.
-Note: Specifying userId doesn't work with Windows authentication: "authentication" : "Windows", in which case you can only choose sessionId or attach to the next session. For more information, see Launch JSON file.
-sessionId	No	A session ID for the user specified in userId.
-
-
-
 > [!NOTE]  
 > The debugger is able to connect to *background sessions*, and not *background tasks*.
-
 
 ## Example (attach to a web client session)
 
