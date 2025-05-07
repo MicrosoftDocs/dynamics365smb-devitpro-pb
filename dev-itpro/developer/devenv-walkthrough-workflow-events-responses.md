@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Implementing New Workflow Events and Responses"
 description: Learn how you can extend the native workflows by adding workflow events and responses in code to support additional business scenarios.
-author: solsen
+author: SusanneWindfeldPedersen
 ms.topic: article
 ms.author: solsen
 ms.date: 02/11/2022

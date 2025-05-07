@@ -4,7 +4,7 @@ description: Learn about integration of Power Platform with Business Central via
 ms.date: 11/13/2023
 ms.reviewer: solsen
 ms.topic: overview
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 
 # Microsoft Power Platform integration with Business Central via virtual tables

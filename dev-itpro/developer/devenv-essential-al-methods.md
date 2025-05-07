@@ -16,7 +16,7 @@ Although there are hundreds of methods in AL, there are several methods that you
 The articles in this section describe the most common AL methods. For more information about all of the AL methods, see [AL method reference](methods-auto/library.md).  
 
 - [Get, Find, and Next methods](devenv-get-find-and-next-methods.md)  
-- [SetCurrentKey, SetRange, SetFilter, GetRangeMin, and GetRangeMax methods](devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)  
+- [SetRange, SetFilter, GetRangeMin, and GetRangeMax methods](devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)  
 - [Insert, Modify, ModifyAll, Delete, and DeleteAll methods](devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)  
 - [LockTable method](methods-auto/record/record-locktable-method.md)  
 - [Field Calculation methods](devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)  

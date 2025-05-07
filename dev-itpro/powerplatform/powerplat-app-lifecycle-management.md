@@ -3,8 +3,9 @@ title: "Application lifecycle management for solutions that use virtual tables"
 description: "Lifecycle management for Microsoft Dataverse tables end-to-end solutions"
 ms.date: 11/13/2023
 ms.reviewer: solsen
+author: SusanneWindfeldPedersen
 ms.topic: article
-author: solsen
+ms.author: solsen
 ---
 
 # Application lifecycle management for solutions that use virtual tables
