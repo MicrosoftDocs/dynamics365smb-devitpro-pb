@@ -44,7 +44,7 @@ It is not necessary to include the following fields, because they are always sel
 
 [!INCLUDE [partial-records-note](../../includes/partial-records-note.md)]
 
-This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
+This method is part of the partial records capability for improving performance. Learn more in [Using partial records](../../devenv-partial-records.md).
 
 ## Example
 
