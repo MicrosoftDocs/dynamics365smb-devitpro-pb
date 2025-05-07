@@ -4,7 +4,7 @@ description: Learn about the extension upload validation telemetry in Business C
 author: KennieNP
 ms.author: kepontop
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/03/2023
 ms.custom: bap-template
 

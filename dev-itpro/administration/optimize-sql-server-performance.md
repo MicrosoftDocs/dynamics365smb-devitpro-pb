@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Optimizing SQL Server Performance with Business Central

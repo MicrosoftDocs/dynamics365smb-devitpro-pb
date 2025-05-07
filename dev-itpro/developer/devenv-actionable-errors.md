@@ -4,7 +4,7 @@ description: Learn how to write AL code that returns error dialogs where users m
 ms.custom: bap-template
 ms.date: 11/11/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: samirdal
 ms.author: samirdal
 ---

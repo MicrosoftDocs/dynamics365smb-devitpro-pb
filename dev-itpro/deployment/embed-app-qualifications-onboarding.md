@@ -2,7 +2,7 @@
 title: Embed App Qualification and Onboarding of partners
 description: Learn about the qualification and onboarding of partners to the Embed App program.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.date: 04/01/2021
 ms.reviewer: jswymer

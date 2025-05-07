@@ -2,7 +2,7 @@
 title: Delete purchaseCreditMemos
 description: Deletes a purchase credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: reference
+ms.topic: how-to
 ms.devlang: al
 ms.date: 05/31/2024
 ms.author: solsen

@@ -3,7 +3,7 @@ title: "OnAfterDocumentReady Event"
 description: Describe the OnAfterDocumentReady Event in Business Central.
 ms.date: 03/13/2023
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: nhsejth
 ---
 

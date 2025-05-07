@@ -2,7 +2,7 @@
 title: Extending the e-documents functionality
 description: Learn how to extend e-documents functionality with specific requirements.
 author: altotovi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.reviewer: solsen
 ms.devlang: al
 ms.search.keywords: electronic document, electronic invoice, e-documents, e-invoice, customization, development, extend

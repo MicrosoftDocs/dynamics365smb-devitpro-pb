@@ -4,7 +4,7 @@ description: This article describes various types of events for extensibility.
 author: brentholtorf
 ms.author: bholtorf 
 ms.reviewer: solsen
-ms.topic: conceptual 
+ms.topic: article
 ms.collection: 
 ms.date: 10/09/2024
 ms.custom: bap-template

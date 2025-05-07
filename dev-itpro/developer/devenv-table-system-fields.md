@@ -3,7 +3,7 @@ title: "Table System fields"
 description: Description of the table System fields.
 author: jswymer
 ms.date: 06/20/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
 --- 

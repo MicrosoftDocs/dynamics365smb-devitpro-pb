@@ -4,7 +4,7 @@ description: Describes the most common questions when submitting your app to App
 author: qutreson
 ms.date: 02/19/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: faq
 ms.author: qutreson
 ---
 

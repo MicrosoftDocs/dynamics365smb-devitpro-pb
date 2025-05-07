@@ -3,7 +3,7 @@ title: Missing indexes in Business Central databases
 description: Learn about missing indexes and the database missing indexes page.
 author: jswymer
 ms.date: 03/21/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 ms.reviewer: jswymera
 ---

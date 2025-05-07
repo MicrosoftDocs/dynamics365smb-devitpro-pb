@@ -4,7 +4,7 @@ description: Learn about the Calculate only visible FlowFields feature key.
 ms.custom: bap-template
 ms.date: 03/12/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.author: jswymer
 ---

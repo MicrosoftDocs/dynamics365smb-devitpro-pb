@@ -2,7 +2,7 @@
 title: Adding and Accessing Resources in Business Central extensions
 description: Describes how to package and use resources with Business Central extensions
 ms.date: 12/05/2024
-ms.topic: conceptual
+ms.topic: concept-article
 author: thloke
 ms.reviewer: solsen
 ---

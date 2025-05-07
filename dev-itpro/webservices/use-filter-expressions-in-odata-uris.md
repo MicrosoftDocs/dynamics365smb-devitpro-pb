@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.custom: bap-template
 ms.date: 06/14/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Using filter expressions in OData URIs
 

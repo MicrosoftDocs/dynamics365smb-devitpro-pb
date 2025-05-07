@@ -2,7 +2,7 @@
 title: "Add your App to AppSource"
 description: Read about how to get your app added to the Microsoft marketplace, AppSource.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.date: 01/20/2022
 ms.reviewer: jswymer

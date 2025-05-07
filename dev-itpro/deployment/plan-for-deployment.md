@@ -1,7 +1,7 @@
 ---
 title: Plan for Deployment
 description: Get an overview of things you should consider and decide on before deploying
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ms.date: 04/01/2021
 ---

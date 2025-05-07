@@ -5,7 +5,7 @@ author: altotovi
 ms.author: altotovi
 ms.date: 01/20/2025
 ms.reviewer: bholtorf
-ms.topic: conceptual
+ms.topic: article
 ms.custom: bap-template
 ---
 

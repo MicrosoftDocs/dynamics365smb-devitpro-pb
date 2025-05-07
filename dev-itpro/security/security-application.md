@@ -2,7 +2,7 @@
 title: "Layered security model in Business Central"
 description: Helps you understand and improve the security of your Business Central application regardless of where it's hosted.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 

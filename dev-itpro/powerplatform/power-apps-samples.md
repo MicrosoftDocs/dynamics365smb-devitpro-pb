@@ -4,7 +4,7 @@ description: Sample apps that give partners an easy way to get started with buil
 author: andersgMSFT
 ms.author: andersg
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 
 ms.date: 04/21/2023
 ms.custom: bap-template

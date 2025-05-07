@@ -4,7 +4,7 @@ description: Learn how to set up NAVUserPassword for authenticating users.
 ms.custom: bap-template
 ms.date: 06/24/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ms.service: dynamics-365-op
 ---

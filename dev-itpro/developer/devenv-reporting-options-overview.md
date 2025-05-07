@@ -4,7 +4,7 @@ description: Introducing the options you have for creating Business Central repo
 author: KennieNP
 ms.date: 02/14/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: kepontop
 ---
 

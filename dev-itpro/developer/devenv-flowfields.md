@@ -3,7 +3,7 @@ title: FlowFields overview
 description: Learn how FlowFields in Business Central enhance performance by dynamically calculating data at runtime. Discover types, examples, and optimization tips.
 ms.author: solsen
 ms.date: 02/14/2025
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---

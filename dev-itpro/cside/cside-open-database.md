@@ -1,7 +1,7 @@
 ---
 title: "How to: Open Databases"
 ms.date: 04/01/2021
-ms.topic: article
+ms.topic: how-to
 ---
 # Open a Database
 In order to work in the application, you must always open a database and a company, in that order. After you have done this once, or if the choices are on the command line that starts the program, this will happen automatically when you choose a company. Therefore, you will only need to follow this procedure to open a different database than the one currently open.  

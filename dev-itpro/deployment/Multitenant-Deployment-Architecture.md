@@ -2,7 +2,7 @@
 title: "Multitenant Deployment Architecture"
 description: Get an overview of a multitenant deployment
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # Multitenant Deployment Architecture in Business Central

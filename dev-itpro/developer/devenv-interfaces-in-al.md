@@ -3,7 +3,7 @@ title: Interfaces in AL
 description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method.
 author: SusanneWindfeldPedersen
 ms.date: 03/30/2025
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen

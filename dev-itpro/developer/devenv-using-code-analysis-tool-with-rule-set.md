@@ -3,7 +3,7 @@ title: "Using the code analysis tools with the ruleset"
 description: "Configuring and using a custom ruleset on an AL project."
 author: SusanneWindfeldPedersen
 ms.date: 03/07/2023
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

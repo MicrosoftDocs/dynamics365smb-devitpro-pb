@@ -3,7 +3,7 @@ title: AL Language reference overview
 description: Library of AL reference for developing for Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.date: 01/07/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---

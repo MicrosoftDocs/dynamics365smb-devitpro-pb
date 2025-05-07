@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/18/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: kepontop
 ---
 

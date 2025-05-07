@@ -2,7 +2,7 @@
 title: Outgoing Web Service Request Trace
 description: Learn about the outgoing web service request telemetry in Business Central  
 author: kennienp
-ms.topic: conceptual
+ms.topic: concept-article
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 06/01/2023
 ms.author: kepontop

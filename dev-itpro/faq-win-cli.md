@@ -2,7 +2,7 @@
 title: FAQ about Windows Client and Business Central
 description: Get answers to why the Windows client is no longer supported with Business Central.
 author: jswymer
-ms.topic: article
+ms.topic: faq
 ms.author: jswymer
 ms.date: 12/30/2024
 ms.reviewer: solsen
