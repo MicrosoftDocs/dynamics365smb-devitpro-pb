@@ -443,7 +443,8 @@ These enhancements apply to most Power BI reports in Business Central, ensuring 
 
 **Before**
 
-![Business Central Pwer BI embed old.](../developer/media/sales-rpt-v25.png)  
+![Business Central Pwer BI embed old.](../developer/media/sales-rpt-v25.png)
+
 **Now**
 
 ![Business Central Pwer BI embed new.](../developer/media/sales-rpt-v26.png)  
