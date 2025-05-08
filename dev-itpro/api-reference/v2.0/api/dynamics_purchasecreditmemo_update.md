@@ -2,7 +2,6 @@
 title: Update purchaseCreditMemos
 description: Updates a  purchase credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.tgt_pltfrm: na
@@ -12,8 +11,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Update purchaseCreditMemos
 
 Updates the properties of a purchase credit memo object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -21,11 +18,11 @@ Updates the properties of a purchase credit memo object for [!INCLUDE[prod_short
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
+
 ```
 PATCH businesscentralPrefix/companies({id})/purchaseCreditMemos({id})
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Request headers
 
 |Header|Value|
@@ -47,73 +44,72 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 **Request**
 
 Here's an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values) -->
+
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos({id})
 Content-type: application/json
 {
-    "id" : ,
-    "number" :
+    "id": "5d863f66-7de2-4d80-95a6-c2ec47e7b8b2",
+    "number": "PCM-00103"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here's an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id" : ,
-    "number" : ,
-    "creditMemoDate" : ,
-    "postingDate" : ,
-    "dueDate" : ,
-    "vendorId" : ,
-    "vendorNumber" : ,
-    "vendorName" : ,
-    "payToVendorId" : ,
-    "payToVendorNumber" : ,
-    "payToName" : ,
-    "buyFromAddressLine1" : ,
-    "buyFromAddressLine2" : ,
-    "buyFromCity" : ,
-    "buyFromCountry" : ,
-    "buyFromState" : ,
-    "buyFromPostCode" : ,
-    "payToAddressLine1" : ,
-    "payToAddressLine2" : ,
-    "payToCity" : ,
-    "payToCountry" : ,
-    "payToState" : ,
-    "payToPostCode" : ,
-    "shortcutDimension1Code" : ,
-    "shortcutDimension2Code" : ,
-    "currencyId" : ,
-    "currencyCode" : ,
-    "paymentTermsId" : ,
-    "shipmentMethodId" : ,
-    "purchaser" : ,
-    "pricesIncludeTax" : ,
-    "discountAmount" : ,
-    "discountAppliedBeforeTax" : ,
-    "totalAmountExcludingTax" : ,
-    "totalTaxAmount" : ,
-    "totalAmountIncludingTax" : ,
-    "status" : ,
-    "lastModifiedDateTime" : ,
-    "invoiceId" : ,
-    "invoiceNumber" : ,
-    "vendorReturnReasonId" :
+    "id": "5d863f66-7de2-4d80-95a6-c2ec47e7b8b2",
+    "number": "PCM-00103",
+    "creditMemoDate": "2023-08-15",
+    "postingDate": "2023-08-15",
+    "dueDate": "2023-09-14",
+    "vendorId": "b3f1f2ac-5af6-40e5-b9ec-0155873d2768",
+    "vendorNumber": "V00010",
+    "vendorName": "Contoso Office Supplies",
+    "payToVendorId": "b3f1f2ac-5af6-40e5-b9ec-0155873d2768",
+    "payToVendorNumber": "V00010",
+    "payToName": "Contoso Office Supplies",
+    "buyFromAddressLine1": "123 Vendor Street",
+    "buyFromAddressLine2": "Suite 400",
+    "buyFromCity": "Seattle",
+    "buyFromCountry": "US",
+    "buyFromState": "WA",
+    "buyFromPostCode": "98052",
+    "payToAddressLine1": "123 Vendor Street",
+    "payToAddressLine2": "Suite 400",
+    "payToCity": "Seattle",
+    "payToCountry": "US",
+    "payToState": "WA",
+    "payToPostCode": "98052",
+    "shortcutDimension1Code": "SALES",
+    "shortcutDimension2Code": "WEST",
+    "currencyId": "1f71830e-a4ea-47d5-992a-33535c05c773",
+    "currencyCode": "USD",
+    "paymentTermsId": "3ae2e784-5af7-49e1-a753-6912b14c3f44",
+    "shipmentMethodId": "7121d5f5-b64a-4d69-a598-1db41aeef722",
+    "purchaser": "John Doe",
+    "pricesIncludeTax": false,
+    "discountAmount": 25.00,
+    "discountAppliedBeforeTax": true,
+    "totalAmountExcludingTax": 475.00,
+    "totalTaxAmount": 38.00,
+    "totalAmountIncludingTax": 513.00,
+    "status": "Draft",
+    "lastModifiedDateTime": "2023-08-15T14:22:30Z",
+    "invoiceId": "a9d7ce3f-7b6e-4a8c-8c25-3daadbf6fc5d",
+    "invoiceNumber": "INV-00251",
+    "vendorReturnReasonId": "d8f4d778-8e9b-4c21-8af5-1b79f47fa261"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [purchaseCreditMemo](../resources/dynamics_purchaseCreditMemo.md)  
 [GET purchaseCreditMemo](dynamics_purchasecreditmemo_get.md)  
 [DELETE purchaseCreditMemo](dynamics_purchasecreditmemo_delete.md)  
-[POST purchaseCreditMemo](dynamics_purchasecreditmemo_create.md)  
+[POST purchaseCreditMemo](dynamics_purchasecreditmemo_create.md)
