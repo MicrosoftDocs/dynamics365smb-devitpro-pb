@@ -439,7 +439,14 @@ This release wave introduces a new page type that enhances the Power BI report e
 - Titles use less space.  
 - New zoom and fit-to-page controls are added. 
 
-These enhancements apply to most Power BI reports in Business Central, ensuring a consistent, improved experience across the platform. The following figures show the difference between the previous and new experiences for the Sales Report:  
+These enhancements apply to most Power BI reports in Business Central, ensuring a consistent, improved experience across the platform. The following figures show the difference between the previous and new experiences for the Sales Report:
+
+**Before**
+
+![Business Central Pwer BI embed old.](../developer/media/sales-rpt-v25.png)  
+**Now**
+
+![Business Central Pwer BI embed new.](../developer/media/sales-rpt-v26.png)  
 
 ### New usercontrolhost Page Type
 
