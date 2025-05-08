@@ -2,7 +2,7 @@
 title: Update 26.1 for Microsoft Dynamics 365 Business Central 2024 Release Wave 1
 description: Get an overview of new and changed capabilities in the 26.1 update of Business Central online, which is part of 2025 release wave 1
 ms.author: jswymer
-ms.date: 04/25/2025
+ms.date: 05/08/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -60,7 +60,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 - [Manage environment updates more flexibly](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-environment-updates-more-flexibly) (general availability)
 
-  This feature establishes a five-month update period for major updates and allows you to opt in to minor updates by selecting a later version. The option to select the target version in the Business Central admin center is expected to be available around the same time as update 26. The Business Central admin center option for setting the target version is available with update 26.Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md).  
+  This feature establishes a five-month update period for major updates and allows you to opt in to minor updates by selecting a later version. The option to select the target version in the Business Central admin center is expected to be available around the same time as update 26.1. Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md).  
 
 ### Business Central Launch Event videos on YouTube
 
