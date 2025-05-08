@@ -1,9 +1,9 @@
 ---
 title: Test reports
 description: How to validate if a report produces correct data
-author: solsen
+author: SusanneWindfeldPedersen
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.date: 04/01/2021
 ---

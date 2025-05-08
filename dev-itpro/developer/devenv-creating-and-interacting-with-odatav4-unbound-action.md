@@ -4,7 +4,7 @@ description: Describing how to create and interact with an OData V4 Unbound Acti
 author: ap3rus
 ms.date: 07/23/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: vlnagorn
 ---
 

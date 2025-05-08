@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 
 ms.date: 08/19/2021
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: freddyk
 ---
 

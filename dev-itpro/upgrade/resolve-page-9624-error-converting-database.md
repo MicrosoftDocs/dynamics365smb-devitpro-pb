@@ -3,7 +3,7 @@ title: "Resolving page 9624 compilation error on technical upgrade "
 description: "Explains how to resolve the compilation error that you get for Page 9624 when converting a database from Dynamics NAV to Business Central."
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 author: jswymer
 ---
 # Resolving page 9624 compilation error 

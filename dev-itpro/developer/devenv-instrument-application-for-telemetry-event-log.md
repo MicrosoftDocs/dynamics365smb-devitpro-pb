@@ -2,7 +2,7 @@
 title: Creating custom telemetry events for the Event Log
 description: This topic describes how to add code to application objects that enables you to gather telemetry.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Creating Custom Telemetry Events for Event Log Monitoring

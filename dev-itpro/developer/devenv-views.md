@@ -5,7 +5,7 @@ ms.reviewer: solsen
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/25/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ---
 

@@ -3,7 +3,7 @@ title: Task scheduler
 description: Learn about scheduled tasks and how the task scheduler works.
 ms.date: 09/09/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ms.author: jswymer
 ---

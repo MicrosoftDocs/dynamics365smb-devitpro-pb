@@ -2,7 +2,7 @@
 title: "OnAfterSetupPrinters Event"
 description: Describe the OnAfterSetupPrinters Event in Business Central. 
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # OnAfterSetupPrinters Event

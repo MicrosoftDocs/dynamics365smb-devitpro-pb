@@ -1,12 +1,12 @@
 ---
-title: pdfDocument resource type  
+title: pdfDocument resource type
 description: A pdf document object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/10/2025
+ms.date: 04/28/2025
+
 ms.author: solsen
-ms.reviewer: solsen
 ---
 
 # pdfDocument resource type
@@ -30,10 +30,12 @@ Represents a PDF document in [!INCLUDE[prod_short](../../../includes/prod_short.
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[salesInvoice](dynamics_salesinvoice.md)|salesInvoice |Gets the salesinvoice of the pdfDocument.|
+|[salesOrder](dynamics_salesorder.md)|salesOrder |Gets the salesorder of the pdfDocument.|
 |[salesQuote](dynamics_salesquote.md)|salesQuote |Gets the salesquote of the pdfDocument.|
 |[salesCreditMemo](dynamics_salescreditmemo.md)|salesCreditMemo |Gets the salescreditmemo of the pdfDocument.|
 |[purchaseInvoice](dynamics_purchaseinvoice.md)|purchaseInvoice |Gets the purchaseinvoice of the pdfDocument.|
 |[purchaseCreditMemo](dynamics_purchasecreditmemo.md)|purchaseCreditMemo |Gets the purchasecreditmemo of the pdfDocument.|
+|[customerContact](dynamics_customercontact.md)|customerContact |Gets the customercontact of the pdfDocument.|
 
 ## Properties
 
@@ -46,7 +48,7 @@ Represents a PDF document in [!INCLUDE[prod_short](../../../includes/prod_short.
 
 ## JSON representation
 
-Here is a JSON representation of the pdfDocument resource.
+Here's a JSON representation of the pdfDocument resource.
 
 
 ```json

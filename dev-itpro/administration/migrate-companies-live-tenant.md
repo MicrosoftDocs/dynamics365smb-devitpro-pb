@@ -4,7 +4,7 @@ description: Learn about the risks when moving companies to live online tenants.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.collection: 
 ms.date: 03/01/2024
 ms.custom: bap-template

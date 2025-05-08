@@ -4,7 +4,7 @@ description: Overview of availability and supported languages.
 author: sorenfriisalexandersen
 ms.date: 09/16/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: altotovi
 ms.custom: references_regions
 ---

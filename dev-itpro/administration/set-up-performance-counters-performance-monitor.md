@@ -7,7 +7,7 @@ ms.custom:
 ms.date: 01/08/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Set up performance counters in Windows Performance Monitor

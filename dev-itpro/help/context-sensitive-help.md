@@ -2,7 +2,7 @@
 title: Configure context-sensitive help
 description: Learn about how to add context-sensitive help to your Business Central solution, both as an app publisher, an administrator, and as a developer.
 author: SusanneWindfeldPedersen
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.date: 01/03/2024
 ms.reviewer: solsen

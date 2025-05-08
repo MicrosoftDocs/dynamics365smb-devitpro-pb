@@ -2,7 +2,7 @@
 title: "Setting SQL Compatibility Level to Optimize Database Performance"
 description: Enable query optimizer features in a database by setting the compatibility level
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Setting SQL Compatibility Level to Optimize Database Performance

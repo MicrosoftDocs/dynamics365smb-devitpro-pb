@@ -4,7 +4,7 @@ description: "Description of the timeline for deprecating code in Business Centr
 author: SusanneWindfeldPedersen
 ms.date: 09/26/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ---
 

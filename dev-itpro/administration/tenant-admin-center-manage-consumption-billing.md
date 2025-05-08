@@ -2,7 +2,7 @@
 title: Manage consumption-based billing
 description: Learn about managing consumption-based billing for Business Central.
 author: jobulsin
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, telemetry, billing
 ms.date: 02/26/2025
@@ -18,7 +18,7 @@ This article explains how to set up a Business Central environment for billing C
 <!--
 > [!IMPORTANT]
 >
-> - This is a preview feature that's available with version 26.0 sandbox environments in Great Britain (GB) and United States (US).
+> - This is a preview feature that's available with version 26.0 sandbox environments in the United Kingdom (UK) and United States (US).
 > - Preview features aren’t meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.-->
 
 ## Overview

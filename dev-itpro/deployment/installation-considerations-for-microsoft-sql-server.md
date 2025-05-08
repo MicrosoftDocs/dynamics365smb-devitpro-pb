@@ -2,7 +2,7 @@
 title: Installation considerations for Microsoft SQL Server and Business Central
 description: Learn about the requirements for installing and configuring Microsoft SQL Server to work with Business Central.
 ms.date: 03/12/2025
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.author: jswymer
 ms.reviewer: solsen

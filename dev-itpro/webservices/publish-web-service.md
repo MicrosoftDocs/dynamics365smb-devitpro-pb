@@ -5,7 +5,7 @@ ms.custom: bap-template
 author: jswymer
 ms.date: 03/13/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 translation.priority.ht: 
   - da-dk
   - de-at

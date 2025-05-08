@@ -4,7 +4,7 @@ description: A vendor object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,7 +26,6 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[DELETE vendor](../api/dynamics_vendor_delete.md)|none|Deletes a vendor object.|
 |[POST vendor](../api/dynamics_vendor_create.md)|vendor|Creates a vendor object.|
 |[PATCH vendor](../api/dynamics_vendor_update.md)|vendor|Updates a vendor object.|
-
 
 ## Navigation
 
@@ -66,13 +63,13 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |paymentTermsId|GUID|Specifies which payment term the vendor uses.|
 |paymentMethodId|GUID|Specifies which payment method the vendor uses.|
 |taxLiable|boolean|Specifies if the vendor or vendor is liable for sales tax. Set to **true** if the vendor is tax liable.|
-|blocked|NAV.vendorBlocked|Specifies which transactions with the customer cannot be posted. It can be <Member Name=" ", "Payment" or "All".|
+|blocked|NAV.vendorBlocked|Specifies which transactions with the customer can't be posted. It can be <Member Name=" ", "Payment" or "All".|
 |balance|decimal|Specifies vendor's total balance.|
 |lastModifiedDateTime|datetime|The last datetime the vendor was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the vendor resource.
+Here's a JSON representation of the vendor resource.
 
 
 ```json
@@ -101,11 +98,9 @@ Here is a JSON representation of the vendor resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET vendor](../api/dynamics_vendor_Get.md)  
 [DELETE vendor](../api/dynamics_vendor_Delete.md)  
 [POST vendor](../api/dynamics_vendor_Create.md)  

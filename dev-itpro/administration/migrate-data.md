@@ -2,7 +2,7 @@
 title: Migrate on-premises data to Business Central Online
 description: Learn to set up cloud data migration to Business Central online from supported Dynamics versions and Business Central on-premises, managed by Azure Data Factory.
 author: jswymer
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.reviewer: solsen
 ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003

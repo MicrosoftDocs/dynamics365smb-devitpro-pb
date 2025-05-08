@@ -2,7 +2,7 @@
 title: Analyzing Verbose Enable and Disable Telemetry | Microsoft Docs
 description: Learn about the verbose logging telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/23/2022

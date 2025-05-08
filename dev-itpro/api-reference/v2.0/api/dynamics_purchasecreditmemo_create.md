@@ -2,18 +2,13 @@
 title: Create purchaseCreditMemos
 description: Creates a purchase credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Create purchaseCreditMemos
 
 Creates a purchase credit memo in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -21,11 +16,11 @@ Creates a purchase credit memo in [!INCLUDE[prod_short](../../../includes/prod_s
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+
 ```
 POST businesscentralPrefix/companies({id})/purchaseCreditMemos({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -46,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **purch
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos
 Content-type: application/json
@@ -96,7 +91,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 201 Created

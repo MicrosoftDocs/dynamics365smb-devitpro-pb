@@ -4,7 +4,7 @@ description: Learn how to allow text search on table fields.
 author: kennieNP
 ms.reviewer: jswymer
 ms.date: 10/01/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kepontop
 ms.collection: get-started
 ---

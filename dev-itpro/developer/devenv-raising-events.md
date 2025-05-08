@@ -2,7 +2,7 @@
 title: "Raising Events"
 description: This article describes how to modify the application to raise an event in Dynamics 365 Business Central. 
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ---
 

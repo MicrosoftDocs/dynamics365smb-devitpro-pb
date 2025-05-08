@@ -5,7 +5,7 @@ author: altotovi
 ms.author: altotovi
 ms.date: 01/20/2025
 ms.reviewer: bholtorf
-ms.topic: conceptual
+ms.topic: article
 ms.custom: bap-template
 ---
 
@@ -18,7 +18,7 @@ To ensure a smooth transition, Microsoft will adopt a clean-up cycle every fifth
 The 2025 release wave 1 (v26) clean-up effort isn’t just about reducing database size, it’s part of a broader vision:
 
 - **Improved database performance**: Removing unused schema elements optimizes performance and reduces technical debt.  
-- **Unified Base Applications**: Multiple countries (such as, Sweden, Denmark, Czechia, India, and Iceland) and partner-localized regions will move towards a unified Base Application. The goal is to have all countries using the same codebase.  
+- **Unified Base Applications**: Multiple countries/regions (such as, Sweden, Denmark, Czechia, India, and Iceland) and partner-localized regions will move towards a unified Base Application. The goal is to have all countries/regions using the same codebase.  
 - **Streamlined codebase**: Cleaner code results in fewer errors and easier maintenance for developers.
 
 > [!NOTE]

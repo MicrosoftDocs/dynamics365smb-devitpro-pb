@@ -2,7 +2,7 @@
 title: AL control statements
 description: Compound, conditional, and repetitive control statements in AL for Business Central.
 ms.date: 03/26/2025
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen

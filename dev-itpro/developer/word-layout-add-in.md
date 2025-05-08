@@ -4,7 +4,7 @@ description: Learn about the Dynamics 365 Business Central add-in for Word.
 author: kennienp
 ms.author: kepontop 
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: how-to
 ms.collection: 
 ms.date: 03/12/2025
 ms.custom: bap-template

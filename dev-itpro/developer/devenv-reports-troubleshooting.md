@@ -4,7 +4,7 @@ description: Learn about how to troubleshoot Business Central reports
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.author: kepontop
 ms.date: 01/28/2025
 ---

@@ -2,7 +2,7 @@
 title: "Using Properties Indicate the Presence of a Value in a Field"
 description: "Using properties with Visual Studio to indicate the presence of a value in a field."
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Using Properties Indicate the Presence of a Value in a Field

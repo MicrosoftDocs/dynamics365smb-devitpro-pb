@@ -3,7 +3,7 @@ title: Defining Action Scope for Business Central Pages
 description: Learn how to define the action scope for Business Central pages.
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 author: blrobl
 ---
 

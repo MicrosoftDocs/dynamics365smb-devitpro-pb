@@ -1,12 +1,11 @@
 ---
-title: subscriptions resource type  
+title: subscriptions resource type
 description: A subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
-ms.reviewer: solsen
 ---
 
 # subscriptions resource type
@@ -21,7 +20,6 @@ Represents a subscriptions in [!INCLUDE[prod_short](../../../includes/prod_short
 ## Custom APIs
 
 If you're subscribing to a custom API page, both the URL you send the subscription HTTP request to and the resource path you wish to subscribe to must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements equivalent to: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, part of the URL will contain these elements `api/pub/grp/v1.0/subscriptions`.
-
 
 ## Methods
 
@@ -49,10 +47,10 @@ If you're subscribing to a custom API page, both the URL you send the subscripti
 |systemModifiedAt|datetime|The last datetime the subscriptions was modified.|
 |systemModifiedBy|GUID|The ID of the user who last modified the company.|
 
-
 ## JSON representation
 
-Here is a JSON representation of the subscriptions resource.
+Here's a JSON representation of the subscriptions resource.
+
 
 ```json
 {

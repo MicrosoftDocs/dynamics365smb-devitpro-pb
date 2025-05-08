@@ -2,7 +2,7 @@
 title:  Azure Function Integration Telemetry
 description: Learn about telemetry on Azure Function integrations with Business Central
 author: KennieNP
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, telemetry
 ms.date: 08/16/2022

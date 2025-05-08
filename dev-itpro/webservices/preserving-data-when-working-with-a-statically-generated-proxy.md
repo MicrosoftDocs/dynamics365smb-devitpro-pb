@@ -1,7 +1,7 @@
 ---
 title: "Preserving Data When Working with a Statically Generated Proxy"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Preserving Data When Working with a Statically Generated Proxy
 

@@ -2,7 +2,7 @@
 title: Version numbers in Business Central and what they mean
 description: Learn how to read version numbers in Business Central and how to understand them when you troubleshoot issues.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.date: 03/31/2025
 ms.custom: bap-template

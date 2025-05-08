@@ -2,7 +2,7 @@
 title: Create customer-centric onboarding experiences with the SignupContext parameter.
 description: Learn how you can use the SignupContext parameter to create customer-centric evaluation and onboarding experiences.
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: how-to
 author: sorenfriisalexandersen
 ms.author: soalex
 ms.reviewer: solsen

@@ -4,7 +4,7 @@ description: Get an overview of new and changed capabilities in the 26.0 update 
 ms.author: jswymer
 ms.date: 04/24/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: whats-new
 author: jswymer
 ms.custom: 
     - bap-template
@@ -25,7 +25,7 @@ This article provides an overview of the new and updated features and general in
 
 [!INCLUDE [online_only.md](../developer/includes/online_only.md)]
 
-Sales Order Agent is available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), Great Britain (GB), New Zealand (NZ), and the United States (US).
+Sales Order Agent is available as a production-ready preview in more countries and regions, including Australia (AU), Canada (CA), United Kingdom (UK), New Zealand (NZ), and the United States (US).
   
 The Sales Order Agent automates sales order processing from customer emails using AI. It identifies customers, clarifies details via email, checks item availability, creates quotes and orders, and generates PDF documents. All interactions are tracked in Business Central, keeping users informed and enabling involvement when necessary. Watch a short video on YouTube at [Get started with the Sales Order Agent for Dynamics 365 Business Central](https://www.youtube.com/watch?v=6icbmbLc_Og).
 
@@ -251,7 +251,7 @@ Select and download the package for the appropriate country or region version fr
 |RU - Russia|[Dynamics.365.BC.33317.RU.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.RU.DVD.zip)|
 |SE - Sweden|[Dynamics.365.BC.33317.SE.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.SE.DVD.zip)|
 |US - United States|[Dynamics.365.BC.33317.US.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.US.DVD.zip)|
-|All other countries (W1)|[Dynamics.365.BC.33317.W1.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.W1.DVD.zip)|
+|All other countries/regions (W1)|[Dynamics.365.BC.33317.W1.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.W1.DVD.zip)|
 
 ## Upgrade to 26.0
 

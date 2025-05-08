@@ -2,7 +2,7 @@
 title: Business Central Admin Center API - Support settings
 description: Learn about the Business Central administration center API for managing support settings.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry

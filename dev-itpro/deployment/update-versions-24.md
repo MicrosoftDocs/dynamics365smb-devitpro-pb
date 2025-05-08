@@ -5,8 +5,8 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
 ms.date: 04/25/2025
+ms.topic: article
 ms.custom: bap-template
 ---
 

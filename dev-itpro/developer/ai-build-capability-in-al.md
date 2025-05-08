@@ -3,7 +3,7 @@ title: Build the Copilot capability in AL
 description: Integrate with Azure OpenAI Service through the AI module of Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/01/2025
 ms.collection:
   - get-started
