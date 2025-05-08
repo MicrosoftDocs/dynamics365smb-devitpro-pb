@@ -64,7 +64,8 @@ Telemetry can be used for troubleshooting things after they happened and it is p
 - Use [KQL](../administration/telemetry-analyze-with-kql.md) to analyze errors and performance issues
 - [Use telemetry to investigate Performance Issues](../performance/performance-work-perf-problem.md)
 
-## Troubleshooting guides (TSGs)
+## Troubleshooting guides
+
 Apart from the troubleshooting tools described above, the following articles describe ways to troubleshoot various areas and features in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 Cloud migration:
