@@ -430,6 +430,97 @@ To display a specific Power BI element, such as a report, visual, or dashboard, 
 - Dynamically changing the context (for example, by calling `SetPageContext` in the `OnAfterGetCurrRecord`) isn't recommended and could lead to unexpected results.
 - Role center pages have no triggers, which means there's no way to call the `SetPageContext` method. As a consequence, any Power BI part in the role center would have the same context: the current user's profile/role.
 
+## Feature details
+
+This release wave introduces a new page type that enhances the Power BI report embedding experience. Power BI reports display in a slim, visually appealing, and user-friendly interface. Key improvements include:  
+
+- The interface removes irrelevant buttons like **Delete** and **Edit** for embedded reports.  
+- Margins and spacing around reports are refined and balanced.  
+- Titles use less space.  
+- New zoom and fit-to-page controls are added. 
+
+These enhancements apply to most Power BI reports in Business Central, ensuring a consistent, improved experience across the platform. The following figures show the difference between the previous and new experiences for the Sales Report:  
+
+### New usercontrolhost Page Type
+
+The `UserControlHost` page type in AL enables the new Power BI report embedded experience. The `UserControlHost` page type simplifies the embedding of custom controls, such as Power BI reports, compared to using a `Card` page type required in previous releases, by removing unnecessary complexities.
+
+ Key aspects of the page type include:
+
+- It excludes properties and triggers that are irrelevant for control add-ins, such as SourceTable property and OnAfterGetRecord trigger.
+- In the UI, the entire page space is dedicated to the embedded control, eliminating unnecessary actions or buttons.
+- Developers can easily adopt the page type in AL code.
+
+Consider this simplified code example of a page that shows a WebPageViewer control using the `Card` page type.  
+
+```al
+page 50100 UserControl
+{
+    PageType = Card;
+    ApplicationArea = All;
+    SourceTable = Customer;
+    InsertAllowed = false;
+    ModifyAllowed = false;
+    DeleteAllowed = false;
+    Editable = false;
+    Caption = 'UserControl Example';
+
+    layout
+    {
+        area(Content)
+        {
+            usercontrol(Webpageview; WebPageViewer)
+            {
+                ApplicationArea = All;
+
+                trigger ControlAddInReady(callback: text)
+                begin
+                    CurrPage.Webpageview.Navigate(HyperLinkTxt)
+                end;
+                trigger Refresh(CallbackUrl: Text)
+                begin
+                    CurrPage.Webpageview.Navigate(HyperLinkTxt)
+                end;
+            }
+        }
+    }
+}
+```
+
+The following code uses the `UserControlHost` page type. The `UserControlHost` page type doesn't allow the properties `SourceTable`, `InsertAllowed`, `ModifyAllowed`, and `DeleteAllowed`.  
+
+```al
+page 50122 UserControl
+{
+    PageType = UserControlHost;
+    ApplicationArea = All;
+    Editable = false;
+    Caption = 'UserControl Example';
+
+    layout
+    {
+        area(Content)
+        {
+            usercontrol(Webpageview; WebPageViewer)
+            {
+                ApplicationArea = All;
+
+                trigger ControlAddInReady(callback: text)
+                begin
+                    CurrPage.Webpageview.Navigate(HyperLinkTxt)
+                end;
+
+                trigger Refresh(CallbackUrl: Text)
+                begin
+                    CurrPage.Webpageview.Navigate(HyperLinkTxt)
+                end;
+            }
+        }
+    }
+}
+```
+
+
 ## Related information
 
 [Get Started with AL](devenv-get-started.md)  
