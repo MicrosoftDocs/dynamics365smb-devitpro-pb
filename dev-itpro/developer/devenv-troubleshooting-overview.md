@@ -2,7 +2,7 @@
 title: Troubleshooting overview
 description: An overview of tools and processes that help troubleshoot issues in Business Central.
 ms.custom: bap-template
-ms.date: 06/17/2024
+ms.date: 05/08/2025
 ms.reviewer: jswymer
 ms.topic: overview
 ms.author: solsen
@@ -11,9 +11,10 @@ author: SusanneWindfeldPedersen
 
 # Troubleshooting overview
 
-The following sections help you troubleshoot issues with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] so that you can *gather information* about a given problem, *identify the cause* of the problem, and eventually *implement a sustainable solution* that does not introduce new issues. Use the tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to gain insights on trends in application behavior, identify performance issues, database locks, and more. Use profiling combined with debugging in sandboxes, or snapshot debugging in production environments to pinpoint what causes a specific issue. And if you want to investigate and troubleshooting things after they happened, then use telemetry and the tools around that feature.
+The following sections help you troubleshoot issues with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] so that you can *gather information* about a given problem, *identify the cause* of the problem, and eventually *implement a sustainable solution* that doesn't introduce new issues. Use the tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to gain insights on trends in application behavior, identify performance issues, database locks, and more. Use profiling combined with debugging in sandboxes, or snapshot debugging in production environments to pinpoint what causes a specific issue. And if you want to investigate and troubleshooting things after they happened, then use telemetry and the tools around that feature.
 
 ## Troubleshooting articles
+
 For a large collection of troubleshooting articles, see the following site provided by Microsoft Support:
 
 - [Microsoft Dynamics 365 Business Central troubleshooting](/troubleshoot/dynamics-365/business-central/welcome-business-central)
@@ -38,7 +39,7 @@ These tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_sho
 - Check customization issues with [Customized Pages](/dynamics365/business-central/ui-personalization-manage)
 - Mitigate can't start profile configuration issues with [Troubleshooting profile configuration can't be started](/troubleshoot/dynamics-365/business-central/client/client-profile-configuration) in Microsoft troubleshooting documentation
 - Verify user permissions with [Effective Permissions](/dynamics365/business-central/ui-define-granular-permissions)
-- Investigate issues with [Mobile App On-Premises](devenv-troubleshooting-the-mobile-app.md)
+- Investigate issues with [Mobile App on-premises](devenv-troubleshooting-the-mobile-app.md)
 - Investigate issues with [Troubleshoot in Visual Studio Code directly from the web client](devenv-troubleshoot-vscode-webclient.md).
 
 ## Troubleshooting in AL
@@ -57,9 +58,9 @@ Use profiling combined with debugging in sandboxes, or snapshot debugging in pro
 
 Telemetry can be used for troubleshooting things after they happened and it is possible to analyze patterns across sessions.
 
-- Ask the user to enable additional logging, see [Resources for Help and Support - Troubleshooting](/dynamics365/business-central/product-help-and-support#troubleshooting)
+- Ask the user to enable more logging, see [Resources for Help and Support - Troubleshooting](/dynamics365/business-central/product-help-and-support#troubleshooting)
 - Enable telemetry and query telemetry data in [Azure Application Insights](../administration/telemetry-overview.md)
-- Find telemetry data on the type of issue you are troubleshooting in [Available telemetry](../administration/telemetry-available-telemetry.md) 
+- Find telemetry data on the type of issue you're troubleshooting in [Available telemetry](../administration/telemetry-available-telemetry.md) 
 - Use [Power BI](../administration/telemetry-power-bi-app.md) to analyze errors and performance issues
 - Use [KQL](../administration/telemetry-analyze-with-kql.md) to analyze errors and performance issues
 - [Use telemetry to investigate Performance Issues](../performance/performance-work-perf-problem.md)
