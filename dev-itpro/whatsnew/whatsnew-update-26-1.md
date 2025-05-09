@@ -46,7 +46,7 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 
 ### Online customers
 
-New customers automatically get Business Central version 26.1. If you're an existing customer or partner, you get an email notification when the update is available. You can choose when to update to the version. Learn more in [Schedule an update](../administration/tenant-admin-center-update-management#schedule-an-update).
+New customers automatically get Business Central version 26.1. If you're an existing customer or partner, you get an email notification when the update is available. You can choose when to update to the version. Learn more in [Schedule an update](../administration/tenant-admin-center-update-management.md#schedule-an-update).
 
 ### On-premises customers
 
