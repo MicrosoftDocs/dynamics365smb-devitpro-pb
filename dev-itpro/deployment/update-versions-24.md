@@ -1,12 +1,12 @@
 ---
-title: Dynamics 365 Business Central on-premises 2024 release wave 1 updates
+title: Dynamics 365 Business Central On-premises 2024 Release Wave 1 Updates
 description: Learn about the updates for Dynamics 365 Business Central 2024 Release Wave 1 on-premises deployments.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
+ms.date: 05/08/2025
 ms.topic: article
-ms.date: 04/04/2025
 ms.custom: bap-template
 ---
 
@@ -28,6 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5059413](https://support.microsoft.com/help/5059413)|Update 24.13 |May 2025|Application Build 24.13.33364</br>Platform Build 24.0.33226|
 |[5056717](https://support.microsoft.com/help/5056717)|Update 24.12 |April 2025|Application Build 24.12.32447</br>Platform Build 24.0.32305|
 |[5054447](https://support.microsoft.com/help/5054447)|Update 24.11 |March 2025|Application Build 24.11.30823</br>Platform Build 24.0.30734|
 |[5052986](https://support.microsoft.com/help/5052986)|Update 24.10 |February 2025|Application Build 24.10.29654</br>Platform Build 24.0.29618|

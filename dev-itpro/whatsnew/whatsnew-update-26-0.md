@@ -253,7 +253,13 @@ Select and download the package for the appropriate country or region version fr
 |US - United States|[Dynamics.365.BC.33317.US.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.US.DVD.zip)|
 |All other countries/regions (W1)|[Dynamics.365.BC.33317.W1.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.W1.DVD.zip)|
 
-## Upgrade to 26.0 for online customers
+## Upgrade to 26.0
+
+### On-premises customers
+
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
+
+### Online customers
 
 New customers get Business Central version 26.0 automatically. With the 26.0 release, the [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly) feature is generally available for environments using version 25.5 or higher. This feature lets you reschedule the major update to any date within the 5-month update period, which ends on August 31, 2025, for version 26.0. The option to set the target version for an environment's next update in the admin center is available by the end of April 2025.  
 
