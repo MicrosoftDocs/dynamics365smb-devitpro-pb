@@ -60,7 +60,7 @@ Change tracking must be enabled on the database. It should be enabled automatica
 To enable change tracking on your database, run the following query:
   
 ```sql
-ALTER DATABASE [YOUR DATABASE] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 2 DAYS, AUTO_CLEANUP = ON) 
+ALTER DATABASE [YOUR DATABASE] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 3 DAYS, AUTO_CLEANUP = ON) 
 ```
 
 To enable change tracking on specific tables, run the following query:
