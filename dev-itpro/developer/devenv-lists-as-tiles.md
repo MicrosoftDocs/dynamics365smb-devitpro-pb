@@ -1,7 +1,7 @@
 ---
 title: "Display Data as Tiles"
 description: Describes how to display a list as tiles
-ms.date: 04/01/2021
+ms.date: 05/12/2025
 ms.topic: conceptual
 author: jswymer
 ---
@@ -53,7 +53,7 @@ The order of the fields determines how they appear in the layout of the tile, no
 - A verbose field appears at the bottom of the tile, separated by a line.
 
 > [!NOTE]
-> The Tile view respects user permissions and visibility settings on fields, like the `Visible` property, `AccessByPermission` property, and personalization, and so on. For example, suppose you have a field defined in `fieldgroup(Brick; <...>)` but the field is only defined in the table object, not in the page object. This field doesn't display in the Tile view by default. Users can display the field by using personalization.
+> The Tile view respects user permissions and visibility settings on fields, like the `Visible` property, `AccessByPermission` property, personalization, and so on. For example, suppose you have a field defined in `fieldgroup(Brick; <...>)` but the field is only defined in the table object, not in the page object. This field doesn't display in the Tile view by default. Users can display the field by using personalization.
 
 
 ### Including images in tiles
