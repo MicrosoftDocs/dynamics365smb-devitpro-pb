@@ -39,12 +39,12 @@ The following table outlines the most common objects used when adding Power BI e
 
 |Object|Description|
 |-|-|
-|Page 6325 "Power BI Embedded Report Part"|Used to display Power BI elements in a page part.|
-|Page 6323 "Power BI Element Card"|Used to display Power BI elements in expanded mode on a separate page. Obsolete starting with version 26.0. Use page 6324 "Power BI Element Addin Host" instead.|
-|Page 6324 "Power BI Element Addin Host"|Used to display Power BI elements in expanded mode on a separate page. This page is a [UserControlHost page type](devenv-page-type-usercontrolhost.md) page type, which was introduced in 2025 release wave 1 (version 26). |
-|Page 6327 "Power BI Embed Setup Wizard"|Assisted setup guide for enabling Power BI for the fírst time.|
-|Table 6312 "Power BI Displayed Element"|Stores information about Power BI elements to be displayed for a user in each specific context. This table was introduced in 2023 release wave 2 (version 23).|
-|Table 6314 "Power BI Context Settings"|Persists user settings for a specific Power BI context (like role center part, page FactBox, and so on) where the settings apply. Different parts in the same main page can have different contexts. This table was introduced in 2023 release wave 2 (version 23).|
+|[Page 6325 "Power BI Embedded Report Part"](/dynamics365/business-central/application/base-application/page/system.integration.powerbi.power-bi-embedded-report-part)|Used to display Power BI elements in a page part.|
+|[Page 6323 "Power BI Element Card"](/dynamics365/business-central/application/base-application/page/system.integration.powerbi.power-bi-element-card)|Used to display Power BI elements in expanded mode on a separate page. Obsolete starting with version 26.0. Use page 6324 "Power BI Element Addin Host" instead.|
+|[Page 6324 "Power BI Element Addin Host"](/dynamics365/business-central/application/base-application/page/system.integration.powerbi.power-bi-element-addin-host)|Used to display Power BI elements in expanded mode on a separate page. This page is a [UserControlHost page type](devenv-page-type-usercontrolhost.md) page type, which was introduced in 2025 release wave 1 (version 26). |
+|[Page 6327 "Power BI Embed Setup Wizard"](/dynamics365/business-central/application/base-application/page/system.integration.powerbi.power-bi-embed-setup-wizard)|Assisted setup guide for enabling Power BI for the fírst time.|
+|[Table 6312 "Power BI Displayed Element"](/dynamics365/business-central/application/base-application/table/system.integration.powerbi.power-bi-displayed-element)|Stores information about Power BI elements to be displayed for a user in each specific context. This table was introduced in 2023 release wave 2 (version 23).|
+|[Table 6314 "Power BI Context Settings"](/dynamics365/business-central/application/base-application/table/system.integration.powerbi.power-bi-context-settings)|Persists user settings for a specific Power BI context (like role center part, page FactBox, and so on) where the settings apply. Different parts in the same main page can have different contexts. This table was introduced in 2023 release wave 2 (version 23).|
 
 > [!TIP]
 > If you're working with Business Central on-premises, you find these objects in the **Applications\BaseApp\Source\Base Application.Source.zip\Power BI framework** folder of the installation media (DVD).
