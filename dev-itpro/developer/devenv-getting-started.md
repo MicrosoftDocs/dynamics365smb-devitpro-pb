@@ -2,7 +2,7 @@
 title: Get started with modules
 description: Provides an overview of what you need to work with modules in the System Application.
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: get-started
 author: bholtorf
 ms.collection: get-started
 ---

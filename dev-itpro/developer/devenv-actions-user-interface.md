@@ -3,7 +3,7 @@ title: Actions in the user interface
 description: Learn about the guidelines for organizing actions when creating, extending, and customizing pages in Business Central.
 author: jacobwj
 ms.author: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/07/2025
 ms.reviewer: solsen
 ---

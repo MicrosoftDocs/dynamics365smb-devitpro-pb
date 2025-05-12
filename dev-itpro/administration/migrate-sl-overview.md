@@ -1,8 +1,8 @@
 ---
 title: Dynamics SL migration to Business Central online End-to-end overview
-description: This article provides an overview of how the migration works and the necessary tasks for completing the migration from Dynamics SL on-premises.
+description: Learn about the migration process and the necessary tasks for completing the migration from Dynamics SL on-premises.
 author: lcontreras
-ms.topic: conceptual
+ms.topic: article
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003
@@ -23,13 +23,13 @@ Data migration securely moves data from an on-premises SQL Server instance to [!
 
 The following figure shows the main components involved in the data migration process.
 
-![Shows components of cloud migration](../developer/media/cloud-migration-overview-gp.svg)
+![Screenshot of the main components of cloud migration](../developer/media/cloud-migration-overview-gp.svg)
 <!-- no sl version-->
 
 |Component|Description|
 |-|-|
 |**On-premises database**|This database is the on-premises SQL Server database that stores business data for the companies to migrate to the cloud. |
-|**Azure Data Factory**|A key component of the data migration is [Azure Data Factory](/azure/data-factory/introduction). Azure Data Factory is a managed cloud service that's built for migrating large amounts of raw data across data sources and controlling data integration projects. Azure Data Factory migrates the data between on-premises and online directly. In other words, it doesn't look at any permissions within the applications you're transferring data between&mdash;only SQL permissions.|
+|**Azure Data Factory**|A key component of the data migration is [Azure Data Factory](/azure/data-factory/introduction). Azure Data Factory is a managed cloud service built for migrating large amounts of raw data across data sources and controlling data integration projects. Azure Data Factory migrates the data between on-premises and online directly. In other words, it doesn't look at any permissions within the applications you're transferring data between&mdash;only SQL permissions.|
 |**Pipelines**|Pipelines are the main elements of Azure Data Factory. Pipelines are groupings of activities that copy, move, and transform data, and also orchestrate its flow.|
 |**Integration Runtime**|The Integration Runtime component is the compute infrastructure of Azure Data Factory. There are two Integration Runtime instances in the end-to-end process. The first instance securely copies data from on-premises to the cloud, where the pipelines are created. If the on-premises database is an SQL Server database, you use a self-hosted integration runtime. This runtime is installed locally on the on-premises network and registered in Azure Data Factory.|
 |**Online database**|This database is the Azure SQL Database of the Business Central environment to which you're migrating data.|
@@ -165,7 +165,7 @@ To make setting up this read-only tenant more efficient, we created the *Intelli
 Users that are reassigned to the *Intelligent Cloud* <!--user group--> Permission Set have access to read ALL data by default. If you need to further restrict what data a user can read, the SUPER user can create new user groups and permission sets and assign users accordingly. It's highly recommended to create any new Permission Sets from a copy of the *Intelligent Cloud* Permission Set and then take away permissions you don't want users to have.  
 
 > [!WARNING]
-> If you grant insert, modify, or delete permissions to any resource set to read-only, it could negatively impact the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you may need to clear all your data and rerun a full migration to correct it.
+> If you grant insert, modify, or delete permissions to any resource set to read-only, it could negatively impact the data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. If this occurs, you might need to clear all your data and rerun a full migration to correct it.
 
 ## Related information
 

@@ -1,9 +1,9 @@
 ---
 title: Table keys
 description: Learn about table keys in AL, including primary and secondary keys, and how to define keys in table objects and table extension objects.
-ms.date: 04/26/2024
+ms.date: 04/23/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 
@@ -289,7 +289,7 @@ For a more information about the different key properties, see [Key Properties](
 In table extension objects, you can define multiple keys, just like in a table object. However, the following limitations apply:
 
 - In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and earlier, keys in table extension objects can only include fields from the table extension object itself.
-- In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 and later, keys in table extension objects can include fields from the base table object and table extension object. However, a single key can't include fields from both the base table object and table extension object. In other words, each key must contain fields from either the base table object or the table extension object.
+- In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 and later, keys in table extension objects can include fields from the base table object and table extension object. However, a single key can't include fields from both the base table object and table extension object. In other words, each key must either contain only fields from the base table object or only fields from the table extension object in which the key is defined. It's also not possible to create keys for fields defined in another table extension.
 - You can use the same key name in the table extension, unless the key contains fields from the base table object.
 
 ### Total number of keys

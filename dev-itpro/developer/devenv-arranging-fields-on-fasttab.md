@@ -2,7 +2,7 @@
 title: Field Arrangement on FastTabs
 description: FastTabs in Dynamics 365 Business Central allow users to find key information on a page displayed in separate groups.
 ms.date: 01/14/2025
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ms.author: solsen

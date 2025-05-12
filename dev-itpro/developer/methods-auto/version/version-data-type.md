@@ -2,7 +2,7 @@
 title: "Version data type"
 description: "Represents a version matching the format: Major.Minor.Build.Revision ."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,6 +34,7 @@ The following methods are available on instances of the Version data type.
 |[Major()](version-major-method.md)|Gets the major number of the version.|
 |[Minor()](version-minor-method.md)|Gets the minor number of the version.|
 |[Revision()](version-revision-method.md)|Gets the revision number from the version.|
+|[ToText()](version-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  

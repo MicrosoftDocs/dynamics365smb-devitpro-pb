@@ -2,9 +2,9 @@
 title: Development of a Localization Solution
 description: Comply with regulatory requirements in Dynamics 365 Business Central.
 author: sorenfriisalexandersen
-ms.date: 01/20/2025
+ms.date: 04/14/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ---
 
@@ -60,6 +60,8 @@ The following list describes the top things to be explicit about:
 ## Product scope for localization apps
 
 Apart from [fulfilling the technical checklist for your app](../devenv-checklist-submission.md), the minimum viable product scope for localization app is:
+
+[!INCLUDE [translation-services-deprecation](../../includes/translation-services-deprecation.md)]
 
 - Local regulatory features.
 - [Tests for local regulatory features](../../compliance/apptest-testingyourextension.md).

@@ -2,7 +2,7 @@
 title: "AL error handling"
 description: Deal with unexpected situations that occur when code is run in AL for Business Central
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.collection: get-started
 ---
@@ -87,7 +87,7 @@ There are three types of telemetry data emitted about errors
 
 You can emit your own telemetry about error situations by using the Telemetry AL module. Using this module, you can simplify the way you monitor the health of your app and also monitor the uptake and usage of application features. 
 
-For more information, see [Telemetry.LogError](../administration/telemetry-feature-telemetry.md#LogError).
+Learn more in [Telemetry.LogError](../administration/telemetry-feature-telemetry.md#LogError).
 
 
 ## Related information

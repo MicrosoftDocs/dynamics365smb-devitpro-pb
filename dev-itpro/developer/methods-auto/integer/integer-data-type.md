@@ -2,7 +2,7 @@
 title: "Integer data type"
 description: "Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,6 +17,12 @@ Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647
 
 
 
+## Instance methods
+The following methods are available on instances of the Integer data type.
+
+|Method name|Description|
+|-----------|-----------|
+|[ToText()](integer-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

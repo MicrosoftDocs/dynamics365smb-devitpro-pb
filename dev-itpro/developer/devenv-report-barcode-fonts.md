@@ -3,7 +3,7 @@ title: "Barcode Fonts with Business Central Online"
 description: "Describes the barcode fonts available with Business Central Online."
 author: jswymer
 ms.date: 10/29/2021
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---

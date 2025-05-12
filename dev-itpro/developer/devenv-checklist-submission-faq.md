@@ -4,7 +4,7 @@ description: Describes the most common questions when submitting your app to App
 author: qutreson
 ms.date: 02/19/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: faq
 ms.author: qutreson
 ---
 
@@ -164,7 +164,7 @@ Where
 - `[AppID]` is the app ID defined in the manifest of the main extension for this offer, and 
 - `[PreviewKey]` is the key specified in Partner Center for your offer under `Availability > Preview Audience > Hide Key` at the time of submission.
 
-After the "Preview creation", a preview listing of the offer is available in the AppSource marketplace. This preview listing can be accessed from Partner Center by checking off the "App source preview" option at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing isn't supported and the above mentioned preview app install URL must be used instead.
+After the "Preview creation", a preview listing of the offer is available in the AppSource marketplace. This preview listing can be accessed from Partner Center by checking off the "AppSource preview" option at the "Publisher signoff" step of the submission flow. However, installing the corresponding preview version of the extension from the preview listing isn't supported and the above mentioned preview app install URL must be used instead.
 
 ### How can I install preview versions of my library apps for selected customers?
 

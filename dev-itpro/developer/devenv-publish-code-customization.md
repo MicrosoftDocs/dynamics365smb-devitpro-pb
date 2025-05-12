@@ -3,7 +3,7 @@ title: Publishing a code-customized Base Application
 description: Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem.
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

@@ -2,7 +2,7 @@
 title: Business Central on-premises to online migration End-to-end overview
 description: This article provides an overview of how the migration works from Business Central on-premises and the necessary tasks for completing the migration.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.reviewer: jswymer
 ms.search.keywords: cloud, migrate, saas, online
 ms.date: 06/11/2024

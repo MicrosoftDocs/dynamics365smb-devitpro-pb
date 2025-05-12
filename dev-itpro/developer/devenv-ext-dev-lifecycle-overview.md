@@ -2,7 +2,7 @@
 title: "Extension Development Lifecycle Overview"
 description: Explains the phases involved in the lifecycle of developing an extension.
 ms.date: 04/12/2022
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---

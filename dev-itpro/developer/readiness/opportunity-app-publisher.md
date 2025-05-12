@@ -2,7 +2,7 @@
 title: The SMB opportunity for app publishers 
 description: Learn about the business opportunity we see for software companies in the SMB space if you build your solution on Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/21/2024
 ms.author: kurtju
 ms.reviewer: jswymer
@@ -33,7 +33,7 @@ As an AppSource publisher, you can focus on the following two scenarios with [!I
 
 Connect your existing online service with the [!INCLUDE[prod_short](../includes/prod_short.md)] through a powerful API. Following are some examples of existing connect apps that you can find on AppSource:  
 
-- [Square payments](https://go.microsoft.com/fwlink/?linkid=2286649&clcid=0x409), which allows you take payments with a Square terminal.  
+- Square payments, which allows you take payments with a Square terminal.  
 
 - [Certify](https://go.microsoft.com/fwlink/?linkid=2286557&clcid=0x409) which allows users to post expense reports using Certify.com  
 

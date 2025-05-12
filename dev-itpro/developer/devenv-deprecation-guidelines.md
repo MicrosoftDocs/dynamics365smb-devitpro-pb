@@ -4,7 +4,7 @@ description: Description of best practices and guidelines for deprecating code i
 author: SusanneWindfeldPedersen
 ms.date: 04/30/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: best-practice
 ms.author: grobyns
 ---
 

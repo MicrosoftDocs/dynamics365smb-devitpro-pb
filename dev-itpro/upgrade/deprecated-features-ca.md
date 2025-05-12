@@ -3,7 +3,7 @@ title: Canadian Features that are Moved, Removed, or Replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Canada that we have moved, removed, or replaced.
 author: bholtorf
 
-ms.topic: conceptual
+ms.topic: reference
 ms.devlang: al
 ms.search.keywords: deprecated, Canada, local functionality
 ms.date: 04/01/2021

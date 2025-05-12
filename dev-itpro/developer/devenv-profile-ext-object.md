@@ -3,7 +3,7 @@ title: Profile extension object
 description: Description of the profile extension object, which allows you to modify an individual experience for each user profile.
 author: qutreson
 ms.date: 09/30/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
 ms.collection: get-started

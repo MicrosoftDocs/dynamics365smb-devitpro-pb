@@ -3,7 +3,7 @@ title: "How to Unpublish and Uninstall an Extension"
 description: "Description of the process of upublishing and uninstalling an extension"
 author: jswymer
 ms.date: 05/23/2022
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
 ---

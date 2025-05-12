@@ -4,7 +4,7 @@ description: "The marketing validation FAQ for Business Central apps"
 author: SusanneWindfeldPedersen
 ms.date: 09/26/2023
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: faq
 ms.author: solsen
 ---
 

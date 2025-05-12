@@ -2,9 +2,9 @@
 title: Call external services with the HttpClient data type
 description: Learn about how to call external services using the HttpClient datatype.
 ms.custom: bap-template
-ms.date: 02/07/2025
+ms.date: 03/12/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: kennienp
 ms.author: kepontop
 ---
@@ -89,9 +89,21 @@ The following example shows how to call an external web service from AL. It also
 
 [!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
 
+### Server-side certificate validation
+
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+
+To enhance security of HTTP calls from AL, the AL runtime validates all server certificates used when calling a web service endpoint from the [HttpClient](methods-auto/httpclient/httpclient-data-type.md) datatype. Certificate validation is enabled by default. A server certificate is installed on the endpoint side, it's not the certificate you attach to a request in AL.
+
+If an app or per-tenant extension needs to selectively disable certificate validation, you can use the [HttpClient.UseServerCertificateValidation(Boolean) method](methods-auto/httpclient/httpclient-useservercertificatevalidation-method.md), which allows the AL code to disable server certificate validation for the outgoing web service call.
+
+If you need to debug failing HTTP calls due to server certificates that fail to be validated, telemetry is emitted if there are certificate validation failures. Learn more in [Analyzing server certificate validation errors with telemetry](../administration/telemetry-webservices-outgoing-certificate-validation-errors.md).
+
+The ability to disable certificate validation is controlled by the [HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md) to allow app and per-tenant extension publishers to modify their code. In version 27, certificate validation is enabled by default without the ability to switch it off.
+
 ### Supported HTTP methods
 
-[!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md )]
+[!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md)]
 
 ## Parsing the result
 
@@ -136,7 +148,7 @@ The following example illustrates the error handling you need to set up for hand
 
 ### Using cookies
 
-Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using `HttpClient`. This allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where third-party endpoints require cookie customization. With the `Cookie` datatype and AL methods for handling cookies, you can automatically re-use response cookies, handle cookies manually, or a mix of both. 
+Starting from 2024 release wave 1, you can use server-side cookies when calling an external service using `HttpClient`. This allows you to efficiently send and receive cookies in HTTP requests, unblocking scenarios where third-party endpoints require cookie customization. With the `Cookie` datatype and AL methods for handling cookies, you can automatically reuse response cookies, handle cookies manually, or a mix of both. 
 
 ### Using certificates
 
@@ -159,6 +171,12 @@ Learn more in:
  
 - [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)  
 - [How-to restrict network access from/to Business Central](../security/security-service-tags.md).
+
+## Testing external calls
+
+Testability of AL code that interacts with external web services is enhanced when the responses from these services can be simulated in AL, eliminating the need to configure actual endpoints. Mocking outbound web calls is useful when testing that your code is capable of handling a wide range of possible responses, and allowing you to track outbound traffic during the test executions.
+
+Learn more in [Mock outbound HttpClient web service calls during testing](devenv-httpclient-mock-outbound-calls.md).
 
 ## Monitor and troubleshoot
 
@@ -185,3 +203,5 @@ You can set up [!INCLUDE[prod_short](includes/prod_short.md)] to send telemetry 
 [Analyzing outgoing web service request telemetry](../administration/telemetry-webservices-outgoing-trace.md)  
 [Developing extensions](devenv-dev-overview.md)  
 [Get started with AL](devenv-get-started.md)  
+[Mock outbound HttpClient web service calls during testing](devenv-httpclient-mock-outbound-calls.md)  
+[HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md)

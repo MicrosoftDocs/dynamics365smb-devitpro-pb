@@ -2,7 +2,7 @@
 title: "Report data type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
-ms.date: 10/07/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -78,6 +78,7 @@ The following methods are available on instances of the Report data type.
 |[ShowOutput()](reportinstance-showoutput--method.md)|Returns the current setting of whether a section should be printed, and changes this setting.|
 |[ShowOutput(Boolean)](reportinstance-showoutput-boolean-method.md)|Returns the current setting of whether a section should be printed, and changes this setting.|
 |[Skip()](reportinstance-skip-method.md)|Skips the current iteration of the current report or XmlPort.|
+|[TargetFormat()](reportinstance-targetformat-method.md)|Gets the current report's target format.|
 |[TotalsCausedBy()](reportinstance-totalscausedby-method.md)|Determines which field caused a group total to be calculated. This determines which field changed contents and thereby concluded a group.|
 |[UseRequestPage([Boolean])](reportinstance-userequestpage-method.md)|Gets or sets whether a request page is presented to the user.|
 |[ValidateAndPrepareLayout(InStream, var InStream, ReportLayoutType)](reportinstance-validateandpreparelayout-method.md)|Validates if the provided report layout is compatible with the specified report and performs the required modifications so that it can be used for rendering.|

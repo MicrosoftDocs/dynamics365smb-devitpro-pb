@@ -2,7 +2,7 @@
 title: Implementation tips for gestures
 description: Learn how to implement swipe gestures on the phone and when to use them in the user interface.
 ms.date: 12/21/2023
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen

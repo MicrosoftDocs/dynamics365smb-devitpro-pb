@@ -1,9 +1,9 @@
 ---
 title: Optimize Visual Studio code editing and building performance
-description: Explains how yo configure Visual Studio Code to get better performance when editing and building AL projects.
+description: Explains how you configure Visual Studio Code to get better performance when editing and building AL projects.
 author: jswymer
 ms.date: 06/22/2022
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---

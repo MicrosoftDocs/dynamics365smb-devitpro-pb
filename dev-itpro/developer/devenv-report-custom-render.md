@@ -3,7 +3,7 @@ title: Developing a Custom Report Render
 description: Describe the custom report render logic and how to implement it in AL code.
 ms.date: 01/20/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 author: nhsejth
 ---
 

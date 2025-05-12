@@ -4,7 +4,7 @@ description: Overview of how to use AL-Go templates and actions to streamline an
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -23,6 +23,9 @@ The template repositories to use as starting point are:
 **[https://github.com/microsoft/AL-Go-AppSource](https://github.com/microsoft/AL-Go-AppSource)** is the GitHub repository template for AppSource apps. 
 
 To get started with AL-Go, try out the [AL-Go for GitHub Workshop](https://github.com/microsoft/AL-Go/blob/main/Workshop/Index.md). All documentation for AL-Go for GitHub is maintained and updated in the repository. Go to [AL-Go for GitHub](https://github.com/microsoft/AL-Go/blob/main/README.md) to see the latest documentation.
+
+> [!NOTE]
+> Microsoft will phase out the usage of `BcContainerHelper` in AL-Go for GitHub, with official support for `BcContainerHelper` ending on October 1, 2027. Learn more in [Deprecating BcContainerHelper](algo-deprecating-bccontainerhelper.md).
 
 ## Related information
 

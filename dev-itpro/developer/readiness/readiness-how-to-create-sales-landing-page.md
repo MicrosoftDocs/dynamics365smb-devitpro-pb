@@ -4,7 +4,7 @@ description: "Guideline on creating an effective Sales Landing page for your app
 author: a-emniel
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Guideline on creating an effective sales landing page for your app

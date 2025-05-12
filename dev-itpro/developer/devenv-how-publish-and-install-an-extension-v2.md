@@ -3,7 +3,7 @@ title: Publishing and Installing an Extension
 description: Description of the process of publishing and installing an extension.
 author: jswymer
 ms.date: 02/05/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: solsen
 ---

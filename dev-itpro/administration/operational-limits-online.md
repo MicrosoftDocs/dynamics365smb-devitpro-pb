@@ -3,9 +3,9 @@ title: Operation Limits in Dynamics 365 Business Central
 description: Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments.
 author: jswymer
 ms.custom: bap-template
-ms.date: 02/26/2025
+ms.date: 04/08/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ---
 
@@ -14,7 +14,8 @@ ms.author: jswymer
 To ensure the availability and quality of [!INCLUDE [prod_short](../includes/prod_short.md)] services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them.
 
 > [!TIP]
-> Telemetry is gathered on some of the operations that have a limit. The telemetry provides insight into operations for which limits were exceeded. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md).
+> - Telemetry is gathered on some of the operations that have a limit. The telemetry provides insight into operations for which limits were exceeded. Learn more in [Monitoring and Analyzing Telemetry](telemetry-overview.md).
+> - Learn about the limits on production and sandbox environments for a tenant in [Production and sandbox environments](tenant-admin-center-environments.md#production-environments).
 
 <!--
 For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].
@@ -97,7 +98,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Default max rows|The maximum number of rows that can be processed in a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [MaximumDataSetSize property](../developer/properties/devenv-maximumdatasetsize-property.md) of a report. Client users can do the same when running a report from the report request page.|500,000|
 |Max rows | The maximum number of rows that can be processed in a report. If exceeded, the report will be canceled by the server.|10,000,000|
 
-For more information on report limits, see [Report limits](../developer/devenv-report-object.md#report-limits).
+Learn more in [Report limits](../developer/devenv-report-object.md#report-limits).
 
 ## <a name="Excel"></a>Excel limits
 
@@ -193,7 +194,7 @@ Yes, you can increase throughput by distributing or spreading your workload acro
 
 ### Why are my OData or SOAP requests throttled when the current per-user speed (rate) limits are much higher than the previous per-environment speed (rate) limits?
 
-Your OData or SOAP requests will be throttled if they exceed the current per-user speed (rate) limits that are strictly enforced. They might not have been throttled in the past even if they had exceeded the previous per-environment speed (rate) limits, because those limits weren't strictly enforced. They served as recommendations or warnings for you to implement a retry logic with cool-off period that should already be in place. For more information, see [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md). 
+Your OData or SOAP requests will be throttled if they exceed the current per-user speed (rate) limits that are strictly enforced. They might not have been throttled in the past even if they had exceeded the previous per-environment speed (rate) limits, because those limits weren't strictly enforced. They served as recommendations or warnings for you to implement a retry logic with cool-off period that should already be in place. Learn more in [Working with API Rate Limits](../api-reference/v2.0/dynamics-rate-limits.md). 
 
 If your integration is using a single user or service principal to perform a large number of operations, or if it's an interactive client application that uses a single user or service principal to send all OData or SOAP requests to Business Central online, the per-user operational limits can be reached fairly quickly. You can help prevent this situation and maintain or increase your throughput by distributing or spreading your workload in smaller batches across multiple users or service principals.  A standard technique is to distribute your requests in a round-robin fashion or rotation through a list of users or service principals.
 

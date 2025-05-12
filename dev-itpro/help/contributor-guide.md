@@ -2,8 +2,8 @@
 title: Contribute to the Help
 description: Tips and tricks for working with the GitHub repos and Markdown files for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: conceptual
-ms.date: 05/31/2024
+ms.topic: how-to
+ms.date: 04/14/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -39,7 +39,7 @@ In the following, we use the *MicrosoftDocs/dynamics365smb-docs* repo as an exam
 
 2. Install GitHub Desktop (optional) and clone your forked MicrosoftDocs/dynamics365smb-docs repo.
 
-    GitHub Desktop makes is easy to work and collaborate with repos locally from your own desktop. Learn more at [GitHub Desktop](https://desktop.github.com/).  
+    GitHub Desktop makes it easy to work and collaborate with repos locally from your own desktop. Learn more at [GitHub Desktop](https://desktop.github.com/).  
 
 3. Get hold of your favorite Markdown editor, and start making changes.
 
@@ -61,6 +61,8 @@ For inspiration for how to build your own help website, go to [Quick Start](http
 For tips and tricks about writing in markdown, go to the [Authoring Guide](writing-guide.md).  
 
 ## Translate the content
+
+[!INCLUDE [translation-services-deprecation](../includes/translation-services-deprecation.md)]
 
 You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) (DTS) to translate your content into other languages. The service is hosted in Lifecycle Services and currently supports translation of content in Word documents and HTML files. Learn more at [Translate documentation files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
 

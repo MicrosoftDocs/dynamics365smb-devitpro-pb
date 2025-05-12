@@ -4,7 +4,7 @@ description: Learn how to add bar code scanning capability to the Business Centr
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: get-started
 ms.date: 03/27/2024
 ms.custom: bap-template 

@@ -2,7 +2,7 @@
 title: Extending e-documents functionality (deprecated interface)
 description: Learn how to extend e-documents functionality with specific requirements (deprecated interface).
 author: altotovi
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: solsen
 ms.devlang: al
 ms.search.keywords: electronic document, electronic invoice, e-document, e-invoice, customization, development, extend, deprecate, obsolete

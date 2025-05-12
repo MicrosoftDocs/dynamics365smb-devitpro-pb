@@ -6,7 +6,7 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.date: 04/14/2024
 ms.service: dynamics-365-op
