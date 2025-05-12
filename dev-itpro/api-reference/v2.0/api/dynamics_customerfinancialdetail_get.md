@@ -31,7 +31,7 @@ GET businesscentralPrefix/companies({id})/customers({customerId})?$expand=custom
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and an **customerFinancialDetails** object in the response body.
@@ -40,28 +40,29 @@ If successful, this method returns a ```200 OK``` response code and an **custome
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/customerFinancialDetails
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
-    {
-        "id": "52f556f8-e0e4-ea11-9305-000d3a482952",
-        "number": "GL00000000",
-        "balance": 0,
-        "totalSalesExcludingTax": 0,
-        "overdueAmount": 0
-    }  
+{
+    "id": "52f556f8-e0e4-ea11-9305-000d3a482952",
+    "number": "GL00000000",
+    "balance": 0,
+    "totalSalesExcludingTax": 0,
+    "overdueAmount": 0
+}  
 ```
 
-## See also
+## Related information
+
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [customerfinancialdetail](../resources/dynamics_customerfinancialdetail.md)    

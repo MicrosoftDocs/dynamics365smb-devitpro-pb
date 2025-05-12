@@ -68,7 +68,7 @@ For more information about the Promoted property used together with the Scope pr
 > [!NOTE] 
 > On [!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)] and [!INCLUDE[d365fin_phone_md](../includes/d365fin_phone_md.md)], only promoted actions are displayed.  
   
-## See Also  
+## Related information  
 
 [PromotedIsBig Property](devenv-promotedisbig-property.md)  
 [PromotedOnly Property](devenv-promotedonly-property.md)  

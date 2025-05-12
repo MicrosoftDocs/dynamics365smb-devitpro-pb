@@ -3,7 +3,7 @@ title: Enabling upcoming features ahead of time
 description: Learn how to enable select features ahead of time as the administrator of Business Central online or on-premises. 
 author: mikebcMSFT
 
-ms.topic: conceptual
+ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
 ms.date: 10/26/2021
 ms.author: mikebc
@@ -152,7 +152,7 @@ In a future version, we hope to redesign feature management to better reflect lo
 
 Yes. You can turn optional features on or off in a similar way.
 
-## See also
+## Related information
 
 [New and planned features](/dynamics365-release-plan/2021wave1/)  
 [Administration of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](tenant-administration.md)  

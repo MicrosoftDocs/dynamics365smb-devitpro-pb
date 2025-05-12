@@ -18,6 +18,6 @@ The property '{0}' can only be used if the {1}'s type is '{2}'.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

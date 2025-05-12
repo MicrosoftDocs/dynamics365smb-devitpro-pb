@@ -2,7 +2,7 @@
 title: "Replacement for codeunit 1"
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # Codeunit 1 replacement
@@ -1010,7 +1010,7 @@ OBJECT Codeunit 1 ApplicationManagement
 
 ```
 
-## See also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)    
  [Resolving Compilation Errors When Converting a Dynamics NAV  Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)    
  [Exporting and Importing Objects](../cside/cside-import-objects.md)  

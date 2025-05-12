@@ -2,7 +2,7 @@
 title: Filtering in Query objects
 description: Specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table associated with the query.
 ms.date: 06/20/2024
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ms.reviewer: solsen
 ---
@@ -210,7 +210,7 @@ GROUP BY Customer."No."
 HAVING Qty  50  
 ```  
 
-## See also
+## Related information
 
 [Query object](devenv-query-object.md)  
 [Aggregating data](devenv-query-totals-grouping.md)  

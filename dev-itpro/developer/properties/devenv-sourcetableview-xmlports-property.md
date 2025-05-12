@@ -26,6 +26,6 @@ SourceTableView = SORTING(Code);
 
 To sort a set of table fields in the table view, use the **sorting** keyword. To sort the records in ascending or descending order, use the **order** keyword.  And, to apply a set of filters in the table view, use the **where** keyword.
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

@@ -1,8 +1,8 @@
 ---
-title: "FieldValidate Property"
+title: "FieldValidate property"
 description: "Sets a value that specifies whether the values in the source field are validated by the OnValidate (Fields) trigger for the field."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -19,7 +19,7 @@ Sets a value that specifies whether the values in the source field are validated
 -   Xml Port Field Attribute
 -   Xml Port Field Element
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -44,7 +44,7 @@ The DefaultFieldsValidation property sets the value for the FieldValidate XMLpor
   
 If you change the value of the FieldValidate property, the change does not affect the value of the DefaultFieldsValidation property. This means that FieldValidate can override DefaultFieldsValidation, but that it can also inherit the default value of DefaultFieldsValidation.  
   
-## See Also  
+## Related information  
 
 [DefaultFieldsValidation Property](devenv-defaultfieldsvalidation-property.md)   
 [OnValidate (Fields) Trigger](../triggers-auto/field/devenv-onvalidate-field-trigger.md)

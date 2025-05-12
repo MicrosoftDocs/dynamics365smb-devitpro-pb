@@ -2,7 +2,7 @@
 title: "Record.TransferFields(var Record, Boolean, Boolean) Method"
 description: "Copies all matching fields in one record to another record."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -56,7 +56,7 @@ The fields must have the *same data type* for the copying to succeed (text and c
 > [!NOTE]  
 > Fields are assigned, such as `DestinationRecord.Field := SourceRecord.Field`, which won't call the OnValidate trigger on the destination field. To assist with validation when using the `TransferFields` method, the `TypeHelper` codeunit contains a `TransferFieldsWithValidate` method.
 
-## See Also
+## Related information
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

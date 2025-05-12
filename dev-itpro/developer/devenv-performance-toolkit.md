@@ -7,7 +7,7 @@ ms.date: 02/21/2024
 ms.reviewer: bholtorf
 
 ms.search.form: 149000, 149001, 149003, 149004, 149005, 149006, 149007, 149008, 149009
-ms.topic: conceptual
+ms.topic: article
 ms.author: bholtorf
 ---
 
@@ -526,7 +526,7 @@ Visit the [BCPT video page](https://github.com/microsoft/BCTech/blob/master/samp
 Visit the [BCPT blogs page](https://github.com/microsoft/BCTech/blob/master/samples/BCPT/BLOGS.md) for learning resources published as blogs.
 
 
-## See also
+## Related information
 
 [Testing the Application Overview](devenv-testing-application.md)  
 [Performance toolkit telemetry](../administration/telemetry-performance-toolkit-trace.md)   

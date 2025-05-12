@@ -2,20 +2,15 @@
 title: documentAttachment resource type
 description: A document attachment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 # documentAttachment resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a document attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -65,7 +60,7 @@ Represents a document attachment in [!INCLUDE[prod_short](../../../includes/prod
 
 ## JSON representation
 
-Here is a JSON representation of the documentAttachment resource.
+Here's a JSON representation of the documentAttachment resource.
 
 
 ```json
@@ -82,10 +77,10 @@ Here is a JSON representation of the documentAttachment resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
-[GET documentAttachment](../api/dynamics_documentattachment_get.md)
-[DELETE documentAttachment](../api/dynamics_documentattachment_delete.md)
-[POST documentAttachment](../api/dynamics_documentattachment_create.md)
+## Related information
+
+[GET documentAttachment](../api/dynamics_documentattachment_get.md)  
+[DELETE documentAttachment](../api/dynamics_documentattachment_delete.md)  
+[POST documentAttachment](../api/dynamics_documentattachment_create.md)  
 [PATCH documentAttachment](../api/dynamics_documentattachment_update.md)

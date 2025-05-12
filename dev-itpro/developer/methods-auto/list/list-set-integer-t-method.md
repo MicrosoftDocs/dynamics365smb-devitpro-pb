@@ -2,7 +2,7 @@
 title: "List.Set(Integer, T) Method"
 description: "Sets the element at the specified index."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -46,7 +46,7 @@ The new value associated with the specified index.
 
 The type `T` is a dynamic type. When `List` is of type `Text` then `T` will change to `Text`. When `List` is of type `Integer`, then `T` will change to `Integer`.
 
-## See Also
+## Related information
 [List Data Type](list-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

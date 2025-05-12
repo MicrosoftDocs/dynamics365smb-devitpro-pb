@@ -2,7 +2,7 @@
 title: "Running a Business Central Database to Azure SQL Database"
 description: Learn how to deploy a Business Central database to Azure SQL Database
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Running a Business Central Database on Azure SQL Database
@@ -185,7 +185,7 @@ When comparing the performance of Azure SQL database and a SQL Server deployed t
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
 
 
-## See Also
+## Related information
 
 [Installation Considerations for Microsoft SQL Server](installation-considerations-for-microsoft-sql-server.md)  
 [Optimizing SQL Server Performance](../administration/optimize-sql-server-performance.md)  

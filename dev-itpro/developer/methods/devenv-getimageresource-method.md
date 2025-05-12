@@ -38,7 +38,7 @@ var imageUrl = Microsoft.Dynamics.NAV.GetImageResource('PushpinImage.png');
 pushpin.SetCustomIcon("<div><img src='" + imageUrl +"'/></div>");   
 ```  
 
-## See also
+## Related information
 
 [AL method reference](../methods-auto/library.md)  
 [GetEnvironment method](devenv-getenvironment-method.md)   

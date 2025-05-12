@@ -3,7 +3,7 @@ title: Test Codeunits and Test Methods
 description: This article describes how to create test codeunits and how to create test methods in the test codeunits. 
 ms.date: 08/12/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: blrobl
 ---
 
@@ -27,6 +27,6 @@ The methods in a test codeunit can be one of the following types:
 |Handler method|You use handler methods to automate tests by handling instances when user interaction is required by the code that is being tested by the test method. In these instances, the handler method is run instead of the requested user interface. The handler method should simulate the user interaction for the test case, such as validating messages, making selections, or entering values. You declare a handler type attribute on the method. For more information, see [Create Handler Methods](devenv-creating-handler-methods.md) |
 |Normal method|You use normal methods to structure the test code by using the same design practices and principles as methods in other codeunits of the application. You declare the [Normal Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-normal-attribute) on the method.|
 
-## See Also
+## Related information
 
 [Testing the Application](devenv-Testing-Application.md)

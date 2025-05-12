@@ -34,7 +34,7 @@ GET businesscentralPrefix/companies({id})/purchaseOrderLines({purchaseOrderLineI
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -44,14 +44,14 @@ If successful, this method returns a ```200 OK``` response code and a **purchase
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseOrderLines({purchaseOrderLineId})
 ```
 
 **Response**
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 {
@@ -88,7 +88,7 @@ Here is an example of the response.
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [purchaseOrderLine](../resources/dynamics_purchaseOrderLine.md)  

@@ -2,7 +2,7 @@
 title: "Publishing Events"
 description: This article describes how to create an event publisher method to publish business and integration events.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ---
 
@@ -79,7 +79,7 @@ codeunit 50100 MyPublishers
 ```
 The next step is to raise this event in the application. To see an example for how this event is raised, go to [Raising Event Example](devenv-raising-events.md#example).
 
-## See Also  
+## Related information  
 [Raising Events](devenv-raising-events.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)   
 [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)

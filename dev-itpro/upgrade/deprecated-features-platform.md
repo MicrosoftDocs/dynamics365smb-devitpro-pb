@@ -3,9 +3,9 @@ title: Deprecated features in the client, server, database
 description: Describes the features that have been removed or replaced in the platform components of Business Central.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: bholtorf
-ms.topic: conceptual
-ms.date: 04/02/2024
+ms.reviewer: solsen
+ms.topic: article
+ms.date: 03/28/2025
 ms.custom: bap-template
 ---
 
@@ -16,6 +16,22 @@ ms.custom: bap-template
 This article describes the features that are up for removal or that have been removed or replaced in the platform that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses across languages and base app.
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
+
+## Changes in 2027 release wave 1 (version 30.0)
+
+### <a name="odata-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a OData endpoint (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+
+## Changes in 2026 release wave 2 (version 29.0)
+
+### Expose a Microsoft page as a SOAP endpoint (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension.|
 
 ## Changes in 2025 release wave 1 (version 26.0)
 
@@ -31,14 +47,24 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Replaced | As part of our move to .NET Core, we've converted the following Business Central administration modules from PowerShell 5 to PowerShell 7: Microsoft.Dynamics.Nav.Management.dll, Microsoft.Dynamics.Nav.Apps.Management.dll, and Microsoft.Dynamics.Nav.Apps.Tools.dll. The PowerShell 7 modules are renamed with the prefix `Microsoft.BusinessCentral` instead of `Microsoft.Dynamics.Nav` and are located in the new **Admin** folder of the Business Central Server installation.<br><br> For those who aren't ready to use PowerShell 7, we've included a Windows PowerShell 5 compatibility layer module that consolidates the cmdlets/functions of all three modules into a single module that can run with PowerShell 5. The PowerShell 5 compatibility layer module is called Microsoft.Dynamics.Nav.Management.dll, and it's installed side-by-side with the new PowerShell 7 modules as a part of Business Central Server installation except in the **Management** folder. The PowerShell 5 compatibility layer module is using an approach similar to the [Windows PowerShell Compatibility functionality in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility?view=powershell-7.4).<br><br> We highly recommend that you use the PowerShell 7 modules instead PowerShell 5 compatibility module because they'll give you the best performance. If PowerShell 7 is installed on your device, the PowerShell 7 modules are used by default by selecting **Business Central Administration Shell** in the **Start** menu or by runnng the NavAdminTool.ps1 script.<br><br> The Windows PowerShell 5 compatibility layer module is planned for removal in version 26 and won't receive any new functionality added in the new PowerShell 7 modules in the meantime. |
 
-
-### <a name="soap-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a SOAP endpoint (removal)
+### <a name="soap-on-baseapp-pages"></a>Expose a Microsoft page as a SOAP endpoint (disabled by default)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 26, it's no longer possible to expose a Microsoft page as a SOAP endpoint. If you need to have SOAP integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension. Until version 29 is released, you can still expose a Microsoft page as a SOAP endpoint, but not by default. If needed, use the **Feature: Disable SOAP web services on Microsoft UI pages** key in **Feature Management** to enable this capability. Learn more in [Disable SOAP web services on Microsoft UI pages feature key](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)|
 
-[!INCLUDE[soap_deprecacation](../includes/soap_deprecation_note.md)]
+### <a name="odata-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a OData endpoint (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+
+
+### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 26, this is no longer possible. |
 
 ## Changes in 2024 release wave 2 (version 25.0)
 
@@ -74,19 +100,11 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Removed | For Business Central installations on-premises, it's possible to control many server settings. Two of these control the way the Business Central server add hints to SQL statements: DisableQueryHintForceOrder and DisableQueryHintLoopJoin. Starting in version 24, these server settings will no longer be available.|
 
-### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
+### <a name="soap-on-baseapp-pages"></a>Expose a Microsoft page as SOAP endpoint (warning)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 24, this is no longer possible. |
-
-### <a name="soap-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a SOAP endpoint (warning)
-
-|Removed or Replaced? |Why?|
-|---------|---------|
-|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 26, it's no longer possible to expose a Microsoft page as a SOAP endpoint. If you need to have SOAP integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
-
-[!INCLUDE[soap_deprecacation](../includes/soap_deprecation_note.md)]
+|Removed | A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension.|
 
 ### <a name="views"></a>Legacy views on list pages (removal)
 
@@ -437,7 +455,7 @@ When we move, remove, or replace an object, breaking changes can result in other
 <!--Should we include a section about this?-->
 Some features are available only under specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Austrian Version](deprecated-features-at.md)  

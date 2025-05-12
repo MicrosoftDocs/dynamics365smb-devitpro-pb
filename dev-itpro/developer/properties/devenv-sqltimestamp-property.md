@@ -1,8 +1,8 @@
 ---
-title: "SqlTimestamp Property"
+title: "SqlTimestamp property"
 description: "Specifies a field to be a timestamp field."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Specifies a field to be a timestamp field.
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -35,7 +35,7 @@ SQLTimestamp = true;
 
 Each table includes a hidden timestamp field. The timestamp field contains row version numbers for records as maintained in SQL Server. This property exposes the timestamp field in the table object, and enables you to write code against it. This property only applies to fields that have the data type `BigInteger`. For more information, see [Timestamp Field](../devenv-table-system-fields.md#timestamp).
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)   
 [Table and Table Extension Properties](devenv-table-properties.md)  

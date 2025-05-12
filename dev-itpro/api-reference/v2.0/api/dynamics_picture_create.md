@@ -29,7 +29,6 @@ PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/pictu
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **picture**, the **picture** will not be updated. |
 
 
 ## Request body
@@ -37,13 +36,13 @@ In the request body, supply a JSON representation of a **project** object.
 
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture/pictureContent
@@ -53,7 +52,7 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId
 
 No content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)
 [picture](../resources/dynamics_picture.md)
 [Get picture](dynamics_picture_Get.md)

@@ -2,7 +2,7 @@
 title: "Configuring Internet Information Services"
 description: Learn to configuration of Internet Information Service that is required for running the web client.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: 890e4a5b-2f43-4cb8-bc7a-18261eaf8139
 caps.latest.revision: 19
 author: jswymer
@@ -47,5 +47,5 @@ On the server farm in IIS, add or edit a routing rule to include a server variab
 |  Name  |  Value  |  Replace  |
 |--------|---------|-----------|
 |`HTTP_X_FORWARDED_PROTO`|`http` or `https`|`true`|
-## See Also  
+## Related information  
  [Business Central Web Server Overview](web-server-overview.md)   

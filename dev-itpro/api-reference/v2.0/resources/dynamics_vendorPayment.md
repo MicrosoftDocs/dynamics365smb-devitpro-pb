@@ -4,7 +4,7 @@ description: A vendor payment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a vendor payment in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,6 +26,7 @@ Represents a vendor payment in [!INCLUDE[prod_short](../../../includes/prod_shor
 |[DELETE vendorPayment](../api/dynamics_vendorpayment_delete.md)|none|Deletes a vendor payment object.|
 |[POST vendorPayment](../api/dynamics_vendorpayment_create.md)|vendorPayment|Creates a vendor payment object.|
 |[PATCH vendorPayment](../api/dynamics_vendorpayment_update.md)|vendorPayment|Updates a vendor payment object.|
+|[GET vendorPayment](../api/dynamics_vendorpayment_get.md)|vendorPayment|Gets a vendor payment object.|
 
 
 ## Navigation
@@ -62,7 +61,7 @@ Represents a vendor payment in [!INCLUDE[prod_short](../../../includes/prod_shor
 
 ## JSON representation
 
-Here is a JSON representation of the vendorPayment resource.
+Here's a JSON representation of the vendorPayment resource.
 
 
 ```json
@@ -85,7 +84,7 @@ Here is a JSON representation of the vendorPayment resource.
 }
 ```
 
-## See also
+## Related information
 
 [GET vendorPayment](../api/dynamics_vendorPayment_Get.md)  
 [DELETE vendorPayment](../api/dynamics_vendorPayment_Delete.md)  

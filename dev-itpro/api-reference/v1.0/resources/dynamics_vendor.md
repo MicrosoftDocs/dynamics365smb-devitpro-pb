@@ -95,7 +95,7 @@ Here is a JSON representation of the vendor.
 }
 ```
 
-## See also
+## Related information
 
 [Get Vendor](../api/dynamics_vendor_get.md)  
 [Create Vendor](../api/dynamics_create_vendor.md)  

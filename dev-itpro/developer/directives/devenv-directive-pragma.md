@@ -3,7 +3,7 @@ title: Pragma directive in AL
 description: Types of pragma directives supported in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 03/19/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -21,7 +21,7 @@ AL supports the following pragma instructions:
 - [Pragma ImplicitWith](devenv-directive-pragma-implicitwith.md)
 - [Pragma Warning](devenv-directive-pragma-warning.md)
 
-## See Also
+## Related information
 
 [Development in AL](../devenv-dev-overview.md)  
 [AL development environment](../devenv-reference-overview.md)  

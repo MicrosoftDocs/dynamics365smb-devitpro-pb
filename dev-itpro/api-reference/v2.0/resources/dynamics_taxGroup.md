@@ -4,7 +4,7 @@ description: A tax group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a tax group in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,8 +27,6 @@ Represents a tax group in [!INCLUDE[prod_short](../../../includes/prod_short.md)
 |[POST taxGroup](../api/dynamics_taxgroup_create.md)|taxGroup|Creates a tax group object.|
 |[PATCH taxGroup](../api/dynamics_taxgroup_update.md)|taxGroup|Updates a tax group object.|
 
-
-
 ## Properties
 
 | Property           | Type   |Description     |
@@ -43,7 +39,7 @@ Represents a tax group in [!INCLUDE[prod_short](../../../includes/prod_short.md)
 
 ## JSON representation
 
-Here is a JSON representation of the taxGroup resource.
+Here's a JSON representation of the taxGroup resource.
 
 
 ```json
@@ -55,11 +51,9 @@ Here is a JSON representation of the taxGroup resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET taxGroup](../api/dynamics_taxGroup_Get.md)  
 [DELETE taxGroup](../api/dynamics_taxGroup_Delete.md)  
 [POST taxGroup](../api/dynamics_taxGroup_Create.md)  

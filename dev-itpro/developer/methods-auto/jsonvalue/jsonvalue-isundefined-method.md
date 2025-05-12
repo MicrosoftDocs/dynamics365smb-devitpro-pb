@@ -2,7 +2,7 @@
 title: "JsonValue.IsUndefined() Method"
 description: "Indicates whether the JsonValue contains the JSON value of UNDEFINED."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -34,7 +34,7 @@ An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [JsonValue Data Type](jsonvalue-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

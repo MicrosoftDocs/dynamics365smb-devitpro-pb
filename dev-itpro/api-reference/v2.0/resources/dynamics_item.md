@@ -4,7 +4,7 @@ description: An item object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,7 +26,6 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[DELETE item](../api/dynamics_item_delete.md)|none|Deletes a item object.|
 |[POST item](../api/dynamics_item_create.md)|item|Creates a item object.|
 |[PATCH item](../api/dynamics_item_update.md)|item|Updates a item object.|
-
 
 ## Navigation
 
@@ -54,7 +51,7 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |type|NAV.itemType|Specifies the type of the item. It can be "Inventory", "Service" or "Non-Inventory".|
 |itemCategoryId|GUID|The ID of the item category in the item.|
 |itemCategoryCode|string|The code of the item category in the item.|
-|blocked|boolean|Specifies that entries cannot be posted to the item. **True** indicates account is blocked and posting is not allowed.|
+|blocked|boolean|Specifies that entries can't be posted to the item. **True** indicates account is blocked and posting is not allowed.|
 |gtin|string|This is the Global Trade Item Number. |
 |inventory|decimal|Specifies how many units, such as pieces, boxes, or cans, of the item are in inventory. Read-Only.|
 |unitPrice|decimal|Specifies the price for one unit of the item in the specified item.|
@@ -72,7 +69,7 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## JSON representation
 
-Here is a JSON representation of the item resource.
+Here's a JSON representation of the item resource.
 
 
 ```json
@@ -101,11 +98,9 @@ Here is a JSON representation of the item resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET item](../api/dynamics_item_Get.md)  
 [DELETE item](../api/dynamics_item_Delete.md)  
 [POST item](../api/dynamics_item_Create.md)  

@@ -2,7 +2,7 @@
 title: "Debugger.IsAttached() Method"
 description: "Specifies if the debugger is attached to a session."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -31,7 +31,7 @@ Ok :=   Debugger.IsAttached()
 
 **true** if the debugger is attached to a session; otherwise, **false**. 
 
-## See Also
+## Related information
 
 [Debugger Data Type](debugger-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

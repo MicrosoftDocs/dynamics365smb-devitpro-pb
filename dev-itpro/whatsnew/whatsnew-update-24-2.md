@@ -4,7 +4,7 @@ description: Get an overview of new and changed capabilities in the 24.2 update 
 ms.author: jswymer
 ms.date: 05/27/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.custom: 
     - bap-template
@@ -53,7 +53,7 @@ New customers automatically get the latest builds of Business Central (24.2). If
 
 ### New Copilot video and blog
 
-Watch the latest [video showcasing Copilot in Business Central](https://www.microsoft.com/videoplayer/embed/RW1l5SJ), and read the [blog post](https://aka.ms/bc-ai) by Mike Morton covering AI innovation.
+Watch the latest [video showcasing Copilot in Business Central](https://learn-video.azurefd.net/vod/player?id=f1d6482e-d492-4fa6-bbf7-817a97d503b4), and read the [blog post](https://aka.ms/bc-ai) by Mike Morton covering AI innovation.
 
 ### Recent service features
 

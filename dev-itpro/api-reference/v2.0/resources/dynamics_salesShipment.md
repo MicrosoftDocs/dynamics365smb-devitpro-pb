@@ -4,7 +4,7 @@ description: A sales shipment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales shipment in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -84,7 +82,7 @@ Represents a sales shipment in [!INCLUDE[prod_short](../../../includes/prod_shor
 
 ## JSON representation
 
-Here is a JSON representation of the salesShipment resource.
+Here's a JSON representation of the salesShipment resource.
 
 
 ```json
@@ -133,9 +131,7 @@ Here is a JSON representation of the salesShipment resource.
     "email": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET salesShipment](../api/dynamics_salesShipment_Get.md)

@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/18/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: kepontop
 ---
 
@@ -60,7 +60,7 @@ The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits 
 For more information on report limits, see [Report limits](devenv-report-object.md#report-limits).
 
 
-## See Also
+## Related information
 
 [Performance Overview](../performance/performance-overview.md)  
 [Performance Topics For Developers](../performance/performance-developer.md)  

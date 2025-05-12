@@ -2,7 +2,7 @@
 title: Feature telemetry
 description: Learn about the telemetry that you can emit from features in Business Central.
 author: bholtorf
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 07/13/2023
@@ -333,7 +333,7 @@ traces
 ```
 
 
-## See also
+## Related information
 
 [Error handling](../developer/devenv-al-error-handling.md)   
 [Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  

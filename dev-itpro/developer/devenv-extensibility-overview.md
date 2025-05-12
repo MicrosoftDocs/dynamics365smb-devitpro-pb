@@ -4,7 +4,7 @@ description: How you can extend functionality in Dynamics 365 Business Central.
 ms.author: kepontop
 ms.date: 10/09/2023
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: KennieNP
 ---
 
@@ -91,7 +91,7 @@ These resources provide a comprehensive overview of the extensibility options av
 * [Extending the Shopify Connector](devenv-extending-shopify.md)
 
 
-## See Also
+## Related information
 Extending AL objects and artifacts
 * [Extending application areas](devenv-extending-application-areas.md)
 * [Extending enumerations](devenv-extensible-enums.md)

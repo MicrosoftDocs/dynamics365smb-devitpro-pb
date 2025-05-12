@@ -4,7 +4,7 @@ description: Learn about the environment validation telemetry in Business Centra
 author: KennieNP
 ms.author: kepontop
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/27/2023
 ms.custom: bap-template
 
@@ -332,7 +332,7 @@ traces
 , diagnosticCode = customDimensions.diagnosticCode
 ```
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

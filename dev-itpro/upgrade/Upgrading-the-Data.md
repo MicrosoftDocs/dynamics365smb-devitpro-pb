@@ -3,7 +3,7 @@ title: Upgrading the Data to in Single-Tenant Deployment
 description: This article describes the tasks required for upgrade the data to version 14 when you have a single-tenant deployment. 
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -468,7 +468,7 @@ Complete this task if you are upgrading one of the following:
 - German (DE) version of Dynamics NAV or [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (Cumulative Update 2 or earlier)
 - India (IN) version of Dynamics NAV 2016
 
-With these language versions, some of the local functionality has been moved from the base application to extensions. These extensions will have to be published and installed to maintain the functionality. The extensions are avilable on the installation media (DVD). 
+With these language versions, some of the local functionality has been moved from the base application to extensions. These extensions will have to be published and installed to maintain the functionality. The extensions are available on the installation media (DVD). 
 
 If you are upgrading from a Denmark (DK) version, you must publish and install the following extensions to get the local functionality:
 
@@ -585,6 +585,6 @@ At this point, you have upgraded the database to [!INCLUDE[prod_short](../develo
 
 When you delete tables, on the **Delete** dialog box, set the **Synchronize Schema** option to **Force**.  
 
-## See Also  
+## Related information  
  [Upgrading the Application Code](Upgrading-the-Application-Code.md)   
  [Upgrading to Business Central](upgrading-to-business-central.md)

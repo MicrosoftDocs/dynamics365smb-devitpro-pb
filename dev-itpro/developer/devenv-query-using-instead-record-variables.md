@@ -1,7 +1,7 @@
 ---
 title: "Using Queries Instead of Record Variables"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Using Queries Instead of Record Variables
@@ -105,7 +105,7 @@ The `ItemMovements.TOPNUMBEROFROWS(5);` statement will include only the first 5 
 
 The `OutputData` method performs the same operations as the `OutputData` method in the record variable example.  
 
-## See Also
+## Related information
 
 [Query Object](devenv-query-object.md)  
 [Linking and Joining Data Items](devenv-query-links-joins.md)  

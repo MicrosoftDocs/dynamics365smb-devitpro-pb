@@ -2,7 +2,7 @@
 title: Business Central Admin Center| Microsoft Docs
 description: Learn about how a VAR or an internal administrator can set update windows and other admin tasks.  
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 05/31/2024
@@ -52,7 +52,7 @@ Alternatively, you can access the administration center from the URL, use the fo
 
 ## Delegated administrators (Partner users)
 
-Partner organizations can set up a (Granular Delegated Administration Privileges (GDAP))[/partner-center/gdap-introduction] relationship including at least one of the Microsoft Entra roles that grant access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to access their customers' administration centers. [Learn how to set up a GDAP relationship](/partner-center/gdap-obtain-admin-permissions-to-manage-customer).
+Partner organizations can set up a [Granular Delegated Administration Privileges (GDAP)](/partner-center/gdap-introduction) relationship including at least one of the Microsoft Entra roles that grant access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to access their customers' administration centers. [Learn how to set up a GDAP relationship](/partner-center/gdap-obtain-admin-permissions-to-manage-customer).
 
 After the relationship is set up, users in the partner tenant can access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] for the customer's tenant. However, the users must be in a security group assigned to at least one of the required roles in the active GDAP relationship, which is done by completing these steps:
 
@@ -70,7 +70,7 @@ You can also get to the administration center by using the URL of a tenant, as d
 In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can [specify support information](../technical-support.md#configuring-the-support-experience), create and remove [environments](tenant-admin-center-environments.md), and you can access your customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments.
 
 > [!NOTE]
-> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).
+> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Administration as a partner](tenant-administration.md#administration-as-a-partner).
 
 ### Cleaning up settings
 
@@ -100,7 +100,7 @@ If your organization decides to switch to another partner, you must make sure th
 When you establish a relationship with a new partner, they fill in these fields again.
 
 
-## See also
+## Related information
 
 [Production and Sandbox Environments](environment-types.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

@@ -2,20 +2,15 @@
 title: fixedAsset resource type
 description: A fixed asset object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 # fixedAsset resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a fixed asset in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -49,7 +44,7 @@ Represents a fixed asset in [!INCLUDE[prod_short](../../../includes/prod_short.m
 |fixedAssetLocationId|GUID||
 |classCode|string||
 |subclassCode|string||
-|blocked|boolean|Specifies that entries cannot be posted to the fixed asset. **True** indicates account is blocked and posting is not allowed.|
+|blocked|boolean|Specifies that entries can't be posted to the fixed asset. **True** indicates account is blocked and posting is not allowed.|
 |serialNumber|string||
 |employeeNumber|string|The employee's number.|
 |employeeId|GUID|The unique ID of employee.|
@@ -58,7 +53,7 @@ Represents a fixed asset in [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## JSON representation
 
-Here is a JSON representation of the fixedAsset resource.
+Here's a JSON representation of the fixedAsset resource.
 
 
 ```json
@@ -78,10 +73,10 @@ Here is a JSON representation of the fixedAsset resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
-[GET fixedAsset](../api/dynamics_fixedasset_get.md)
-[DELETE fixedAsset](../api/dynamics_fixedasset_delete.md)
-[POST fixedAsset](../api/dynamics_fixedasset_create.md)
+## Related information
+
+[GET fixedAsset](../api/dynamics_fixedasset_get.md)  
+[DELETE fixedAsset](../api/dynamics_fixedasset_delete.md)  
+[POST fixedAsset](../api/dynamics_fixedasset_create.md)  
 [PATCH fixedAsset](../api/dynamics_fixedasset_update.md)

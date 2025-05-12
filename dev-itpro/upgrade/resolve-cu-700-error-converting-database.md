@@ -3,7 +3,7 @@ title: "Resolving Coduenit 700 compilation error"
 description: Explains how to resolve the compilation error that you get for Codeunit 700 when converting a database from Dynamics NAV to Business Central.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Resolving Codeunit 700 compilation error 
@@ -24,6 +24,6 @@ EXIT(PageMetadata.GET(PageID) AND (PageMetadata.SourceTable = TableID));
 ```
 
 
-## See also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)  
  [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)  

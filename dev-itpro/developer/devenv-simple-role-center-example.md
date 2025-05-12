@@ -4,7 +4,7 @@ description: "Provides AL code for a simple role center"
 author: blrobl
 ms.date: 04/01/2021
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: brobledodiaz
 ---
 
@@ -146,7 +146,7 @@ profile MyProfile
 }
 ```
 
-## See also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  

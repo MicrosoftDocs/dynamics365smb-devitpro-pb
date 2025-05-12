@@ -1,6 +1,6 @@
 ---
 title: Delete defaultDimensions from an entity 
-description: Deletes the default dimensions of the item in Dynamics 365 Business Central.
+description: Deletes the default dimension of the item in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -30,10 +30,10 @@ DELETE businesscentralPrefix/companies({id})/employees({id})/defaultDimensions({
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the specific entity, the entity will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the specific entity, the entity won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```204 No Content``` response code and it deletes the default dimensions for the entity and corresponding dimension.
@@ -42,7 +42,7 @@ If successful, this method returns a ```204 No Content``` response code and it d
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({itemId})/defaultDimensions({itemId},{dimensionId})
@@ -52,7 +52,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({it
 
 No Content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [defaultdimension](../resources/dynamics_defaultdimension.md)    
 [Get defaultdimension](dynamics_defaultdimension_Get.md)    

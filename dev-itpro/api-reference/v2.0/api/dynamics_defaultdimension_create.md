@@ -1,6 +1,6 @@
 ---
 title: Create defaultDimensions for entities  
-description: Creates a default dimensions of the item object in Dynamics 365 Business Central.
+description: Creates a default dimension of the item object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -31,7 +31,6 @@ POST businesscentralPrefix/companies({id})/employees({id})/defaultDimensions({id
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **defaultDimension**, the **defaultDimension** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **defaultDimensions** object.
@@ -42,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **defau
 ## Example
 
 **Request**  
-Here is an example of a request.
+Here's an example of a request.
 
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -79,7 +78,7 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/customers({
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [defaultdimension](../resources/dynamics_defaultdimension.md)    
 [Get defaultdimension](dynamics_defaultdimension_Get.md)    

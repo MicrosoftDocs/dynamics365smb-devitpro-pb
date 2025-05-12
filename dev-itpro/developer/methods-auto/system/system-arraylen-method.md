@@ -2,7 +2,7 @@
 title: "System.ArrayLen(Array of [Any] [, Integer]) Method"
 description: "Returns the total number of elements in an array or the number of elements in a specific dimension."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -71,7 +71,7 @@ The following messages are displayed.
 **Array2, Total number of elements: 12**  
 
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

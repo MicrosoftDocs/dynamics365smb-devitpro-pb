@@ -1,8 +1,8 @@
 ---
-title: "CalcFormula Property"
+title: "CalcFormula property"
 description: "Sets the Calculation formula for a FlowField."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ FIELD(FILTER(<SourceFieldName>)) | FIELD(UPPERLIMIT(FILTER(<SourceFieldName>)))
 
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -58,7 +58,7 @@ Parts of the formula are described in the following table.
 
 You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and whether a record exists. For more information, see [Creating FlowFields and FlowFilters](../devenv-creating-flowfields-and-flowfilters.md), [FlowFields overview](../devenv-flowfields.md), and [FlowFilter overview](../devenv-flowfilter-overview.md).
 
-## See also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

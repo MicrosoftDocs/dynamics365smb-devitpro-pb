@@ -64,7 +64,7 @@ Here is an example of the response.
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [userGroupMember](../resources/dynamics_userGroupMember.md)

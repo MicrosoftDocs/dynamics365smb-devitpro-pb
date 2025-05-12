@@ -60,5 +60,5 @@ Here is a JSON representation of the generalLedgerBudgets resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET generalLedgerBudgets](../api/dynamics_generalledgerbudgets_get.md)

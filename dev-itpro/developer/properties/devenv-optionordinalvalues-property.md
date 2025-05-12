@@ -1,8 +1,8 @@
 ---
-title: "OptionOrdinalValues Property"
+title: "OptionOrdinalValues property"
 description: "Specifies the list of option values."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Specifies the list of option values. Can be set if the property ExternalType is set to Picklist.
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -35,7 +35,7 @@ OptionOrdinalValues = 1,2,3,4,5;
 
 This property is used when you specify **CDS** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] database.  
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Table Properties](devenv-table-properties.md)  

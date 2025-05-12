@@ -2,7 +2,7 @@
 title: "Technical upgrade from version 15 to version 16" 
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 description: Upgrade from Business Central 2019 (v15) to 2020 (v16) with our comprehensive guide. Learn about prerequisites, database preparation, and post-upgrade tasks.
@@ -282,7 +282,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
 
 
-## See also
+## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central 14.X to 15.X compatibility matrix](upgrade-v14-v15-compatibility.md)

@@ -4,7 +4,7 @@ description: Describes how to upgrade an unmodified Business Central versions 15
 ms.custom: bap-template
 ms.date: 01/18/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ---
@@ -460,7 +460,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  

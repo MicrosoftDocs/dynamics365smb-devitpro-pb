@@ -50,5 +50,5 @@ Here is a JSON representation of the apicategoryroutes resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET apicategoryroutes](../api/dynamics_apicategoryroutes_get.md)

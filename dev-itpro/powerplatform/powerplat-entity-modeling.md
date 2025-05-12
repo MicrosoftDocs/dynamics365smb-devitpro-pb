@@ -3,8 +3,9 @@ title: "Table modeling"
 description: "Relational modeling between Microsoft Dataverse tables used in Business Central"
 ms.date: 11/13/2023
 ms.reviewer: solsen
-ms.topic: conceptual
-author: solsen
+author: SusanneWindfeldPedersen
+ms.topic: how-to
+ms.author: solsen
 ---
 
 # Table modeling for virtual tables
@@ -197,7 +198,7 @@ Any runtime labels are returned in the language of the current user context. In 
 
 Calculated and unmapped fields in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables are also available in the corresponding virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
-## See Also
+## Related information
 
 [Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  

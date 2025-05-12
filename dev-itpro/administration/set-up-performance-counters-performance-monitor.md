@@ -7,7 +7,7 @@ ms.custom:
 ms.date: 01/08/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Set up performance counters in Windows Performance Monitor
@@ -37,7 +37,7 @@ This article describes how to use Windows Performance Monitor to collect and vie
   
  For more information about how to use Windows Performance Monitor, see [Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
   
-## See also  
+## Related information  
  [Business Central Performance Counters](performance-counters.md)   
  [Monitoring Business Central Server](monitor-server.md)   
  [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)

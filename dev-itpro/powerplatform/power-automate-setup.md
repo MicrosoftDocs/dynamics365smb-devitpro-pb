@@ -82,6 +82,6 @@ Get the telemetry app at [https://aka.ms/bctelemetryreport](https://aka.ms/bctel
 
 The next step is to set up flows. For more information, see [Create automated flows](automate-workflows.md) and [Create instant flows](instant-flows.md).
 
-## See also
+## Related information
 
 [Privacy Notices Status](/dynamics365/business-central/privacy-notices-status)  

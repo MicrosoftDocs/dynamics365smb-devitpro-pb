@@ -2,9 +2,9 @@
 title: Technical validation checklist
 description: Describes the steps you must go through to successfully submit your app to AppSource using AppSourceCop for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 03/04/2024
+ms.date: 01/30/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: checklist
 ms.author: freddyk
 ---
 
@@ -13,11 +13,11 @@ ms.author: freddyk
 Below you find a checklist of all requirements that you **must meet before submitting** an extension for validation. You also find a description of how the [!INCLUDE [prod_short](includes/prod_short.md)] Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
 
 > [!TIP]  
-> If you have questions around validation for your app, see [Technical Validation FAQ](devenv-checklist-submission-faq.md) for more information about who to contact.
+> If you have questions around validation for your app, learn more about who to contact in [Technical Validation FAQ](devenv-checklist-submission-faq.md).
 
 ## Technical Validation Checklist
 
-If you don't meet these mandatory requirements, your extension fails validation. To get code validation helping you bring your extension package to AppSource, you can enable the **AppSourceCop** code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
+If you don't meet these mandatory requirements, your extension fails validation. To get code validation helping you bring your extension package to AppSource, you can enable the **AppSourceCop** code analyzer. Learn more in [Using the code analysis tool](devenv-using-code-analysis-tool.md).
 
 |Requirement|Example/Guidance|
 |-----------|----------------|
@@ -28,7 +28,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |Only JavaScript based Web client add-ins are supported. The zipping process is handled automatically by the compiler. Include the new AL `controladdin` type, JavaScript sources, and build the app.|[Control Add-Ins](devenv-control-addin-object.md)|
 |The .app file must be digitally signed.|[Sign an APP Package File](devenv-sign-extension.md)|
 |Set the application areas that apply to your controls. Failure to do so will result in the control not appearing in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|[Application Area guidance](properties/devenv-applicationarea-property.md)|
-|Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Exporting Permission Sets](devenv-export-permission-sets.md)<br>[Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)|
+|Permission sets must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Exporting Permission Sets](devenv-export-permission-sets.md)<br>[Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)|
 |Before submitting for validation, ensure that you can publish/sync/install/uninstall/reinstall your extension. **This must be done in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] environment**.|[How to publish your app](devenv-how-publish-and-install-an-extension-v2.md)|
 |Thoroughly test your extension in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] environment.|[Testing Your Extension](../compliance/apptest-testingyourextension.md)|
 |Don't use `OnBeforeCompanyOpen` or `OnAfterCompanyOpen`|[Replacement Options](../compliance/apptest-onbeforecompanyopen.md)|
@@ -42,7 +42,7 @@ If you don't meet these mandatory requirements, your extension fails validation.
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
-|The extension submitted must specify the `Application` manifest property.|The `Application` manifest property is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#against-which-releases-of-business-central-is-your-submission-validated)|
+|The extension submitted must specify the `Application` manifest property.|The `Application` manifest property is required in order to compute the minimum release of Business Central targeted by your submission. Learn more in [Computation of releases for validation](#against-which-releases-of-business-central-is-your-submission-validated)|
 |The extension submitted should have a unique `AppId`.| Every extension should have a unique `AppId` and it's not allowed to submit PTEs and AppSource apps with the same `AppId`. Also see [Constraints on extension types](devenv-extension-types-and-scope.md#constraints-on-extension-types).
 
 ## Technical validation performed by the Business Central services
@@ -56,7 +56,7 @@ The technical validation is fully automated and validates the requirements defin
 
 1. The manifest of all extensions in the submission is validated. If any **mandatory properties or required property values are missing, the submission is rejected.**.
 2. The registration of affixes for the publisher name of all the extensions in the submission is validated. If **the publisher name does not have any registered affixes, the submission is rejected.**
-3. The signature of all extensions in the submission are validated. If any **extension is not signed or its signature is not valid, the submission is rejected.**
+3. The signature of all extensions in the submission is validated. If any **extension is not signed or its signature is not valid, the submission is rejected.**
 4. The consistency of the main extension information (name, publisher, version) is validated against the offer description. If any **differences are noticed, the submission is rejected.**
 5. The extensions in the submission are validated. If **any runtime packages are present, the submission is rejected.**
 
@@ -98,7 +98,7 @@ $validationResults = Run-AlValidation `
 $validationResults | Write-Host -ForegroundColor Red
 ```
 
-All array parameters can also be specified as a comma-separated string. For more information, you can also check this blog post [Run-AlValidation and Run-AlCops](https://freddysblog.com/2020/12/03/run-alvalidation-and-run-alcops/).
+All array parameters can also be specified as a comma-separated string. Learn more in this blog post [Run-AlValidation and Run-AlCops](https://freddysblog.com/2020/12/03/run-alvalidation-and-run-alcops/).
 
 Include app and all library apps in both previousApps and apps and also include all countries/regions on which you want to validate.
 
@@ -115,20 +115,20 @@ Include app and all library apps in both previousApps and apps and also include 
 > [!NOTE]  
 > It's recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
 >
-> You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for Github: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
+> You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for GitHub: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
 
 ## How to get more information on the technical validation failures?
 
-Detailed validation results are automatically logged to telemetry in the the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource specified in the manifest of the main extension in your submission.
+Detailed validation results are automatically logged to telemetry in the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource specified in the manifest of the main extension in your submission.
 
-In order to enable partner telemetry in your extension, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about this property, see [JSON files](devenv-json-files.md).
+In order to enable partner telemetry in your extension, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. Learn more about this property in [JSON files](devenv-json-files.md).
 
 In order to get started on analyzing your validation results, you can use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - AppSource Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
 
-For more information about the signals sent to telemetry during the technical validation, see [Analyzing AppSource Submission Validation Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+Learn more about the signals sent to telemetry during the technical validation in [Analyzing AppSource submission validation telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
 
 > [!NOTE]  
-> You can setup alerts on validation telemetry. For example, you can send a daily/weekly notification to Teams/email on all validation failures across all your apps. For more information, see [Alerting on Telemetry](../administration/telemetry-alert.md).
+> You can set up alerts on validation telemetry. For example, you can send a daily/weekly notification to Teams/email on all validation failures across all your apps. Learn more in [Alerting on telemetry](../administration/telemetry-alert.md).
 
 
 ## Against which releases of Business Central is your submission validated?
@@ -141,7 +141,7 @@ The minimum release for your submission is computed based on the `application` p
 > If multiple extensions are contained in your submission, the minimum release for the submission is the highest minimal release computed for each of the extensions in the submission.
 
 > [!NOTE]  
-> The telemetry sent during the technical validation contains details about validation success/failure against each release of Business Central specified above. For more information, see [Analyzing AppSource Submission Validation Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+> The telemetry sent during the technical validation contains details about validation success/failure against each release of Business Central specified above. Learn more in [Analyzing AppSource submission validation telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
 
 
 > [!Important]  
@@ -161,7 +161,7 @@ If your extension's manifest is defined as follows, the minimum release where yo
 
 The minimum release of the extension is then 18.0.
 
-For AppSource extensions, it's now required to use the `application` property instead of explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop).
+For AppSource extensions, it's now required to use the `application` property instead of explicit dependencies on the `Base Application` and `System Application`. Learn more in[The Microsoft_Application.app file](devenv-application-app-file.md) and [AS0085](/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop).
 
 <!-- ### How to specify a maximum release for your extension?
 
@@ -195,7 +195,7 @@ In this case, you can create a version 1.0.0.1 of your extension and submit it w
 
 -->
 
-## See Also
+## Related information
 
 [Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)
 [Analyzing AppSource Submission Validation Telemetry](../administration/telemetry-appsource-submission-validation-trace.md)

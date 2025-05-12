@@ -1,8 +1,8 @@
 ---
-title: "Lookup Property"
+title: "Lookup property"
 description: "Specifies if a page field has a lookup window."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -35,6 +35,6 @@ Lookup = true;
 
 By default, a lookup provides a list of records in the table. Using this list, users can select a record and retrieve information from it into this control.  
   
-## See Also
+## Related information
 
 [LookupPageID Property](devenv-lookuppageid-property.md)

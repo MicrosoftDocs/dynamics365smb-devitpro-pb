@@ -3,7 +3,7 @@ title: AL outline view
 description: Description of the outline view in Visual Studio Code.
 author: SusanneWindfeldPedersen
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -24,7 +24,7 @@ You manage the look and feel of the **Outline** view by defining settings that a
 + `outline.problems.badges` - Badges displayed for errors and warnings
 + `outline.problems.colors` - Colors used for errors and warnings
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [AL formatter](devenv-al-formatter.md)  

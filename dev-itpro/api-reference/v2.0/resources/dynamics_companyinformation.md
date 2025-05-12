@@ -4,7 +4,7 @@ description: A company information object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,9 +13,7 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents a company information in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Represents company information in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
@@ -48,11 +46,12 @@ Represents a company information in [!INCLUDE[prod_short](../../../includes/prod
 |currentFiscalYearStartDate|date|The company's current fiscal year start date. Read-Only.|
 |industry|string|The industry the company is part of.|
 |picture|stream|The company information's picture.|
+|experience|string||
 |lastModifiedDateTime|datetime|The last datetime the company information was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the companyInformation resource.
+Here's a JSON representation of the companyInformation resource.
 
 
 ```json
@@ -74,6 +73,7 @@ Here is a JSON representation of the companyInformation resource.
     "currentFiscalYearStartDate": "date",
     "industry": "string",
     "picture": "stream",
+    "experience": "string",
     "lastModifiedDateTime": "datetime"
 }
 ```
@@ -81,6 +81,6 @@ Here is a JSON representation of the companyInformation resource.
 
 
 
-## See Also
+## Related information
 [GET companyInformation](../api/dynamics_companyInformation_Get.md)  
 [PATCH companyInformation](../api/dynamics_companyInformation_Update.md)

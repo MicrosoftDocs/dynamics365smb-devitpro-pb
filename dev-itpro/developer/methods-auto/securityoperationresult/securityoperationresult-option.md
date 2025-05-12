@@ -1,8 +1,8 @@
 ---
-title: "SecurityOperationResult System Option"
+title: "SecurityOperationResult system option"
 description: "Represents security audit operation result."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,6 +24,6 @@ Represents security audit operation result.
 |Timeout|Identifies operation timeout.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

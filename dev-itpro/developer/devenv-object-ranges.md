@@ -2,7 +2,7 @@
 title: Object ranges
 description: Description of the object ranges used for licensing in Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: conceptual
+ms.topic: reference
 ms.author: solsen
 ms.date: 07/08/2024
 ms.collection: get-started
@@ -45,7 +45,7 @@ For more information, see [Get Started with Building Apps](readiness/get-started
 
 Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [here](https://www.microsoft.com/licensing/docs/view/Licensing-Guides).
 
-## See also
+## Related information
 
 [Get started with building apps](readiness/get-started.md)  
 [Get started with AL](devenv-get-started.md)  

@@ -3,7 +3,7 @@ title: Pragma ImplicitWith directive in AL
 description: The pragma implicitwith instruction on the pragma directive in AL.
 author: SusanneWindfeldPedersen
 ms.date: 03/19/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -36,7 +36,7 @@ In the `app.json` file, you can set the `NoImplicitWith` flag to disable implici
 
 For more background information and examples, see [Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md).
 
-## See also
+## Related information
 
 [Development in AL](../devenv-dev-overview.md)  
 [AL development environment](../devenv-reference-overview.md)  

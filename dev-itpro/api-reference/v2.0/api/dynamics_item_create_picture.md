@@ -1,9 +1,7 @@
 ---
 title: Create item picture 
 description: Creates a picture of the item object in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
@@ -45,7 +43,7 @@ You will see two links in the response, `pictureContent@odata.mediaEditLink` and
 
 On a local instance, using PowerShell you can then do as in the following example:
 
-```
+```powershell
 function Upload-File
 (
 [string] $Etag = '*',
@@ -68,7 +66,7 @@ Invoke-RestMethod -Uri $Url -Method Patch -InFile $SourceFilePath -Headers $head
 
 And then run the function as follows:
 
-```
+```powershell
 $MyPic = "C:\Pictures\MyDog.png"
 $ItemUrl = 'My-PC:19048/.../pictureContent'
 Upload-File -Url $ItemUrl -SourceFilePath $MyPic
@@ -77,7 +75,7 @@ Upload-File -Url $ItemUrl -SourceFilePath $MyPic
 ## Example
 
 **Request**  
-Here is an example of a request.
+Here's an example of a request.
 
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -86,10 +84,11 @@ Here is an example of a request.
 POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({itemId})/picture
 ```
 
-## See also
+## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Item](../resources/dynamics_item.md)  
-[Get item defaultDimensions](dynamics_item_get_defaultdimensions.md)  
-[Update item defaultDimensions](dynamics_item_update_defaultdimensions.md)  
-[Delete item defaultDimensions](dynamics_item_delete_defaultdimensions.md)  
+[Get item picture](dynamics_item_get_picture.md)  
+[Update item picture](dynamics_item_update_picture.md)  
+[Delete item picture](dynamics_item_delete_picture.md)  
+

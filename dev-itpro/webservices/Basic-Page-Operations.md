@@ -2,7 +2,7 @@
 title: Basic page operations
 description: Learn how to use basic operations for SOAP web services.
 ms.date: 01/09/2024
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Basic operations (for SOAP web services)
@@ -37,7 +37,7 @@ All basic page operations are atomic, which means that either all relevant recor
 
 [!INCLUDE[soap_deprecation](../includes/soap_deprecation_note.md)]
 
-## See also  
+## Related information  
 
 [Web service performance](web-service-performance.md)   
 [Troubleshoot web service errors](web-service-troubleshooting.md)   

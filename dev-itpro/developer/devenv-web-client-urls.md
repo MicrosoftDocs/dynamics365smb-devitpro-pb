@@ -2,7 +2,7 @@
 title: Web client URL
 description: Learn about the URL for opening the Business Central web client. 
 ms.date: 06/24/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 
@@ -151,6 +151,6 @@ The following table describes the filter parameters.
 |`value`|The value of the table field on which to filter.|
 |` AND `|Use this parameter to specify more than one filter. It specifies an "and" operator for adding additional filters. Place ` AND ` between each additional filter.<br /><br /> To be included in the page data, the table record must match values for all fields in the filter.|
 
-## See also
+## Related information
 
 [Viewing Table Data](devenv-view-table-data.md)  

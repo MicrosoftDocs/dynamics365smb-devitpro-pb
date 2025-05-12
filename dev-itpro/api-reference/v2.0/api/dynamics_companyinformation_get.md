@@ -28,7 +28,7 @@ GET businesscentralPrefix/companies({id})/companyInformation
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and a **companyInformation** object in the response body.
@@ -37,14 +37,14 @@ If successful, this method returns a ```200 OK``` response code and a **companyI
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/companyInformation
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -73,7 +73,8 @@ Here is an example of the response.
 ```
 
 
-## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[companyinformation](../resources/dynamics_companyinformation.md)    
-[Update companyinformation](dynamics_companyinformation_Update.md)    
+## Related information
+
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[companyinformation](../resources/dynamics_companyinformation.md)  
+[Update companyinformation](dynamics_companyinformation_Update.md)  

@@ -21,6 +21,6 @@ The application ID ranges {0} are overlapping.
 An application cannot use overlapping ID ranges.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

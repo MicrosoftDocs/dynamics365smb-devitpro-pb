@@ -4,7 +4,7 @@ description: Get an overview of new and changed capabilities in the 20.6 update 
 ms.author: jswymer
 ms.date: 04/01/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.custom: evergreen
 ---
@@ -41,7 +41,7 @@ The Partner Center team has now announced the timeline by which you need to migr
 
 To manage Dynamics 365 Business Central customers via GDAP we recommend requesting the Dynamics 365 Administrator role as the least-privileged role. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
 
-You can watch the GDAP Office Hours recording for Business Central [here](https://www.microsoft.com/en-us/videoplayer/embed/RE4VIqN).
+You can watch the GDAP Office Hours recording for Business Central [here](https://learn-video.azurefd.net/vod/player?id=cbacd031-f8db-43f4-aca5-815b3636c258).
 
 **Business Central newsletter for partners**  
 Yay! We're now doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).

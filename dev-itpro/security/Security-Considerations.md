@@ -2,7 +2,7 @@
 title: Security considerations in Business Central
 description: Learn about the some of the most important aspects to take into consideration when you configure security for your Business Central solution.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.date: 12/20/2023
 ms.custom: bap-template
@@ -18,6 +18,6 @@ The following list contains some important things to consider when setting up yo
   
 - In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], a table can contain a FlowField, which generates sums based on values that are stored in another table. When using a FlowField, a user must have permission to read both tables, or they won't be allowed to read the first table.  
   
-## See also
+## Related information
 
 [Security and Protection](Security-and-Protection.md)  

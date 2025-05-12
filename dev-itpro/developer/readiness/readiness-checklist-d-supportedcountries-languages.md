@@ -4,7 +4,7 @@ description: "Guidelines on categories, industries, and app version"
 author: a-emniel
 ms.date: 12/20/2023
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Categories, industries, and app version

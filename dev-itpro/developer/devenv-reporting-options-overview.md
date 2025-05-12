@@ -4,7 +4,7 @@ description: Introducing the options you have for creating Business Central repo
 author: KennieNP
 ms.date: 02/14/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: kepontop
 ---
 
@@ -97,7 +97,7 @@ The following table sums up some of the main differences between the three types
 |Curated data stories    |Yes       |No            |Yes          | Yes                      |
 
 
-## See also
+## Related information
 
 [Embed Power BI reports in pages](devenv-power-bi-report-parts.md)  
 [Analyze Data on Lists and Queries](/dynamics365/business-central/analysis-mode)  

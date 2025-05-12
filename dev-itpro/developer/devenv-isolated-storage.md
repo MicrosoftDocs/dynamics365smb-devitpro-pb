@@ -2,7 +2,7 @@
 title: Isolated Storage
 description: Isolated Storage is a data storage that provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions.
 ms.date: 06/14/2024
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ---
 
@@ -20,7 +20,7 @@ The methods supported for IsolatedStorage are:
 |Delete(String, [DataScope])|Deletes the value with the specified key from the isolated storage within the extension.|[IsolatedStorage.Delete Method](methods-auto/isolatedstorage/isolatedstorage-delete-method.md)|
 |SetEncrypted(String, String, [DataScope])|Encrypts and sets the value associated with the specified key. The input string cannot exceed a length of 215 plain characters; be aware that special characters take up more space.|[SetEncrypted(String, String, [DataScope]) Method](methods-auto/isolatedstorage/isolatedstorage-setencrypted-string-string-datascope-method.md)|
 
-## See Also
+## Related information
 
 [DataScope Option Type](methods-auto/datascope/datascope-option.md)  
 [IsolatedStorage Data Type](methods-auto/isolatedstorage/isolatedstorage-data-type.md)  

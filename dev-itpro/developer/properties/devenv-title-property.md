@@ -1,8 +1,8 @@
 ---
-title: "Title Property"
+title: "Title property"
 description: "Sets whether the first letter in each word the user types is capitalized."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -23,7 +23,7 @@ Sets whether the first letter in each word the user types is capitalized.
 > [!IMPORTANT]  
 > This property has been deprecated. Setting the property has no effect on the client. 
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/30/2024
 ms.custom:
   - bap-template
@@ -13,6 +13,8 @@ ms.custom:
 ---
 
 # Dynamics 365 Business Central On-Premises 2022 Release Wave 2 Updates
+
+[!INCLUDE [release-wave-no-longer-updated](../includes/release-wave-no-longer-updated.md)]
 
 This article lists updates released for the Microsoft Dynamics 365 Business Central 2022 release wave 2 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2022 release wave 2 on-premises, we recommend you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](../administration/tenant-admin-center.md) to see if the tenants have been updated.  
 
@@ -49,7 +51,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 |[5021672](https://support.microsoft.com/help/5021672)|Update 21.2| December 2022|Application Build 21.2.49990</br>Platform Build 21.0.49984 |
 |[5021004](https://support.microsoft.com/help/5021004)|Update 21.1| November 2022|Application Build 21.1.48638</br>Platform Build 21.0.48504 |
 
-## See Also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v21.md)  

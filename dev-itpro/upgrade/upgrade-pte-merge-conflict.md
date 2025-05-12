@@ -2,7 +2,7 @@
 title: Upgrading Per-Tenant Extensions that conflicts with other extensions
 description: This article describes how to upgrade a Per-Tenant Extension that contains table or a table field that conflicts with another extension in Dynamics 365 Business Central.
 ms.date: 10/25/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -103,6 +103,6 @@ This error message is raised because the system does not allow implicitly removi
 
 Once the sandbox environment has been successfully updated to the next release, steps 2-6 on the production environment must be replicated. Before doing so, ensure that the customer will not be impacted by the changes and clearly communicate a maintenance window in which the work will be performed.
 
-## See Also
+## Related information
 
 [Upgrading AppSource Apps in Production](../developer/devenv-upgrade-appsource-app-in-prod.md)

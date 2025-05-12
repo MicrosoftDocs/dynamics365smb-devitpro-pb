@@ -3,7 +3,7 @@ title: Install a cumulative update
 description: This article describes the tasks required for getting the monthly cumulative update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -20,7 +20,7 @@ The first thing to do is to download the Cumulative Update package that matches 
 
 1. Go to the relevant list of available updates for your on-premises version of Business Central. Then, choose the Cumulative Update you want.
 
-    For a list of supported versions of Business Central on-premises, see the [See Also](#see-also) section.
+    For a list of supported versions of Business Central on-premises, see the [Related information](#related-information) section.
 2. From the cumulative update page, under the **Resolution** section, select the link for downloading the update and follow the instructions.
 3. On the computer where you downloaded cumulative update, extract files from all .zip files.
 
@@ -207,7 +207,7 @@ The general steps for this task are listed below. For detailed steps, see [Publi
 
 Import the customer license as you did with the partner license. For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## See Also
+## Related information
 
 [Dynamics 365 Business Central On-Premises October'18 Updates](../deployment/update-versions-13.md)  
 [Dynamics 365 Business Central On-Premises April'19 Updates](../deployment/update-versions-14.md)  

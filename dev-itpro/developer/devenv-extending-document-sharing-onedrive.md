@@ -1,7 +1,7 @@
 ---
 title: Extending Document Sharing and OneDrive for Business
 description: Learn how the document sharing capability is used with OneDrive for Business, and how you can extend it.
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ms.author: jswymer
 ms.date: 10/01/2021
@@ -225,7 +225,7 @@ Yes, when you set record on the Document Sharing temporary table. But we'll prov
 ### I use environments with identical company names, so that dumps files in the same folder. Can I introduce environment name in the folder structure?
 -->
 
-## See Also
+## Related information
 
 [Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview)    
 [Overview of the Application](devenv-system-application-overview.md)    

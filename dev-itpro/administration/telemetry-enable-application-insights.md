@@ -2,7 +2,7 @@
 title: Turn sending telemetry to application insights on or off
 description: Learn how you can get richer telemetry by connecting your Business Central with Application Insights for telemetry. 
 ms.author: kepontop
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ms.date: 07/23/2024
 ms.custom: bap-template
@@ -51,7 +51,7 @@ This article describes how to set up sending telemetry data to [!INCLUDE[appinsi
 
 The following video summarizes how to store [!INCLUDE [prod_short](../includes/prod_short.md)] telemetry in Azure Application Insights.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fAB5]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=46f6d63d-2375-4348-96f1-1fd1b7b37ddc]
 
 ## Turn on telemetry on environments
 
@@ -61,13 +61,13 @@ The way you turn on [!INCLUDE[appinsights](../includes/azure-appinsights-name.md
 
 ### For online environments
 
-For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can turn on telemetry on environments either from the admin center or by using the admin center API. To use the admin center, complete the following steps. For information about using the admin center API, go to [Put AppInsights key](administration-center-api_environment_settings.md#put-appinsights-key).
+For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can turn on telemetry on environments either from the admin center or by using the admin center API. To use the admin center, complete the following steps. For information about using the admin center API, go to [Put AppInsights key](administration-center-api_environment_settings.md#set-application-insights-key).
 
 #### Video guidance
 
 The following video shows how to turn on telemetry for online environments.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fAB2]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e6f5a26f-7c60-4be4-9afd-6b53c7518da6]
 
 #### From the admin center
 
@@ -105,7 +105,7 @@ Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Databa
 Or
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -EnvironmentName 'MyEnvironmentName' -EnvironmentType Sandbox -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
+Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -EnvironmentName 'MyEnvironmentName' -EnvironmentType Sandbox -ApplicationInsightsKey aaaabbbb-0000-cccc-1111-dddd2222eeee
 ```
 
 If you use the same [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource for multiple environments, consider also using the parameters AadTenantId, EnvironmentName, and EnvironmentType to distinguish tenants in telemetry.
@@ -119,13 +119,13 @@ New-BcContainer `
     -accept_eula `
     -updateHosts `
     -artifactUrl (Get-BCArtifactUrl -country us) `
-    -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
+    -applicationInsightsKey "aaaabbbb-0000-cccc-1111-dddd2222eeee" 
 ```
 
 You can specify the same or another key when creating more tenants:
 
 ```powershell
-New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
+New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "aaaabbbb-0000-cccc-1111-dddd2222eeee" 
 ```
 
 ## Turn off telemetry on environments
@@ -171,7 +171,7 @@ If the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource i
 
 It's good practice to change all user telemetry IDs at the end of the relationship with the customer. This practice removes traceability to users for all data in the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource.
 
-## See also
+## Related information
 
 [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  

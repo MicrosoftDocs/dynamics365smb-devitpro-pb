@@ -1,8 +1,8 @@
 ---
-title: "ValidateTableRelation Property"
+title: "ValidateTableRelation property"
 description: "Sets whether to validate a table relationship."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets whether to validate a table relationship.
 
 ## Applies to
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -52,6 +52,6 @@ Whether the property is set to **true** or **false**, as a user types data in th
 > [!TIP]
 > If the field isn't part of a key, using the [OnAfterLookup (page field) trigger](../triggers-auto/pagefield/devenv-onafterlookup-pagefield-trigger.md) can be useful way to resolve the right record when a user picks something from a lookup that's not a key.
 
-## See Also  
+## Related information  
 
 [TestTableRelation Property](devenv-testtablerelation-property.md)

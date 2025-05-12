@@ -3,7 +3,7 @@ title: "Report Layout Definition"
 description: Report layout definitions in AL for Business Central.
 ms.date: 04/03/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: nhsejth
 ---
 
@@ -86,7 +86,7 @@ report 50000 "Standard Report Layout"
 }
 ```
 
-## See Also
+## Related information
 
 [Multiple Report Layouts](devenv-multiple-report-layouts.md)
 [Default Rendering Layout Property](properties/devenv-defaultrenderinglayout-property.md)

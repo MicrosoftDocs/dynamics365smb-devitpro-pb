@@ -30,7 +30,7 @@ POST businesscentralPrefix/companies({id})/taxAreas({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **taxArea**, the **taxArea** will not be updated. |
+
 ## Request body
 In the request body, supply a JSON representation of a **taxAreas** object.
 
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **taxAr
 
 **Request**
 
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/taxAreas
@@ -65,7 +65,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Tax Area](../resources/dynamics_taxarea.md)  

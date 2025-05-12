@@ -2,7 +2,7 @@
 title: "Text.CopyStr(Text, Integer [, Integer]) Method"
 description: "Copies a substring of any length from a specific position in a string (text or code) to a new string."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -81,7 +81,7 @@ end;
  **>the COPY\<**  
   
 
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

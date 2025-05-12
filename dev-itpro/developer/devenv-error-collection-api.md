@@ -3,7 +3,7 @@ title: "Collectible errors API"
 description: Master AL programming with collectible error handling
 ms.custom: bap-template
 ms.date: 12/25/2023
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -50,7 +50,7 @@ The [ErrorBehavior](attributes/devenv-errorbehavior-attribute.md) specifies the 
 
 
 
-## See Also  
+## Related information  
 
 [ErrorInfo data type](methods-auto/errorinfo/errorinfo-data-type.md)   
 [ErrorBehavior attribute](attributes/devenv-errorbehavior-attribute.md)  

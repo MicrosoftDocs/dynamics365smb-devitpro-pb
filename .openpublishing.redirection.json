@@ -7550,6 +7550,26 @@
     "redirect_document_id": false
    },
    { 
+    "source_path": "dev-itpro/administration/api/dynamics_item_update_defaultdimensions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/api/dynamics_item_delete_defaultdimensions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/api/dynamics_item_get_defaultdimensions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/api/dynamics_item_create_defaultdimensions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
+    "redirect_document_id": false
+   },
+   { 
     "source_path": "dev-itpro/administration/migration-data-replication-troubleshooting.md",
     "redirect_url": "/troubleshoot/dynamics-365/business-central/welcome-business-central",
     "redirect_document_id": false
@@ -7581,27 +7601,27 @@
    },
    {
     "source_path": "dev-itpro/developer/methods-auto/notification/notification-addaction-method.md",
-    "redirect_url": "/dev-itpro/developer/methods-auto/notification/notification-addaction-string-integer-string-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/notification/notification-addaction-string-integer-string-method",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/outstream/outstream-write-string-integer-method.md",
-    "redirect_url": "/dev-itpro/developer/methods-auto/outstream/outstream-write-text-integer-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/outstream/outstream-write-text-integer-method",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/record/record-testfield-joker-string-errorinfo-method.md",
-    "redirect_url": "/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-errorinfo-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-errorinfo-method",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/record/record-testfield-joker-string-method.md",
-    "redirect_url": "/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/record/record-testfield-joker-text-method",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/recordref/recordref-settable-method.md",
-    "redirect_url": "/dev-itpro/developer/methods-auto/recordref/recordref-settable-table-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/recordref/recordref-settable-table-method",
     "redirect_document_id": false
    },
    { 
@@ -7617,6 +7637,21 @@
    { 
     "source_path": "dev-itpro/terms/legal-universal-app.md",
     "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2182906",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods-auto/database/database-selectlatestversion--method.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/database/database-selectlatestversion-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/copilot-launch-experience.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-page-prompting-floating-actionbar",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-get-started-container-sandbox.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-running-container-development",
     "redirect_document_id": false
    }
   ] 

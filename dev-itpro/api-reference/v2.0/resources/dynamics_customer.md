@@ -4,7 +4,7 @@ description: A customer object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,6 +26,7 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[DELETE customer](../api/dynamics_customer_delete.md)|none|Deletes a customer object.|
 |[POST customer](../api/dynamics_customer_create.md)|customer|Creates a customer object.|
 |[PATCH customer](../api/dynamics_customer_update.md)|customer|Updates a customer object.|
+|[GET customer](../api/dynamics_customer_get.md)|customer|Gets a customer object.|
 
 
 ## Navigation
@@ -74,12 +73,12 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |paymentTermsId|GUID|Specifies which payment term the customer uses.|
 |shipmentMethodId|GUID|Specifies which shipment method the customer uses.|
 |paymentMethodId|GUID|Specifies which payment method the customer uses.|
-|blocked|NAV.customerBlocked|Specifies which transactions with the customer cannot be posted. It can be " ", "Ship", "Invoice" or "All".|
+|blocked|NAV.customerBlocked|Specifies which transactions with the customer can't be posted. It can be " ", "Ship", "Invoice" or "All".|
 |lastModifiedDateTime|datetime|The last datetime the customer was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the customer resource.
+Here's a JSON representation of the customer resource.
 
 
 ```json
@@ -113,11 +112,9 @@ Here is a JSON representation of the customer resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET customer](../api/dynamics_customer_Get.md)  
 [DELETE customer](../api/dynamics_customer_Delete.md)  
 [POST customer](../api/dynamics_customer_Create.md)  

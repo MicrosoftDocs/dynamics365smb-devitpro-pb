@@ -2,7 +2,7 @@
 title: "OnAfterSetupPrinters Event"
 description: Describe the OnAfterSetupPrinters Event in Business Central. 
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # OnAfterSetupPrinters Event
@@ -193,7 +193,7 @@ If the value is less than 1, an error like the following error occurs:
 
 Specifies whether landscape orientation is supported. `true` specifies landscape orientation is supported; otherwise `false`.
 
-## See Also
+## Related information
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
 [Developing Printer Extensions Overview](devenv-reports-printing.md)  

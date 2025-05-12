@@ -61,14 +61,14 @@ Here is an example of the response.
     "roleId": "SUPER",
     "company": "",
     "scope": "System",
-    "appId": "00000000-0000-0000-0000-000000000000",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "displayName": "This role has all permissions.",
     "extensionName": ""
 
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [userPermission](../resources/dynamics_userPermission.md)

@@ -1,8 +1,8 @@
 ---
-title: "UICop Analyzer"
+title: "UICop analyzer"
 description: "UICop is an analyzer that enforces rules that must be respected by extensions meant to customize the Web Client."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -15,7 +15,7 @@ UICop is an analyzer that enforces rules that must be respected by extensions me
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[AW0001](uicop-aw0001.md)|The Web client does not support displaying the Request page of XMLPorts.|WebClient|Warning|
 |[AW0002](uicop-aw0002.md)|The Web client does not support displaying both Actions and Fields in Cue Groups. Only Fields will be displayed.|WebClient|Warning|
@@ -35,7 +35,7 @@ UICop is an analyzer that enforces rules that must be respected by extensions me
 |[AW0016](uicop-aw0016.md)|Rich Text Editor fields are only allowed while alone in a FastTab group.|WebClient|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)

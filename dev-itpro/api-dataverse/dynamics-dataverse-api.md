@@ -16,7 +16,7 @@ The Dataverse API is most commonly used from a Power Automate flow, using the fo
 
 ## Examples
 
-In the following examples of a `POST` request and a `GET` request wit a response, the `entityName` is the name of the Dataverse entity for which the change happened. When you insert a row with a `POST` request, a corresponding job queue entry that does the entity synchronization will be rescheduled to run now. In this example it is the account entity.
+In the following examples of a `POST` request and a `GET` request with a response, the `entityName` is the name of the Dataverse entity for which the change happened. When you insert a row with a `POST` request, a corresponding job queue entry that does the entity synchronization will be rescheduled to run now. In this example it is the account entity.
 
 The following is an example of a POST request:
 
@@ -40,7 +40,7 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 }
 ```
 
-## See also
+## Related information
 
 [company resource type](resources/dynamics_company.md)  
 [dataverseEntityChange resource type](resources/dynamics_dataverseentitychange.md)  

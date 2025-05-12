@@ -4,7 +4,7 @@ description: Learn about the risks when moving companies to live online tenants.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.collection: 
 ms.date: 03/01/2024
 ms.custom: bap-template
@@ -54,7 +54,7 @@ Make sure that there are no changes done by installing extensions or copying/del
 
 After migration, be sure to configure the Dataverse mapping and API integrations on the migrated companies again.
 
-## See also
+## Related information
 
 [Prepare and plan for cloud migration](cloud-migration-plan-prepare.md)  
 [Run cloud migration setup](migration-setup.md)  

@@ -2,7 +2,7 @@
 title: Web services authentication"
 description: Learn about authenticating web services in Business Central.
 ms.date: 06/24/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 
@@ -87,7 +87,7 @@ Typically, you would create a user account strictly for web services. Then use t
     |--------|---------|  
     |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](/previous-versions/msp-n-p/ff649362(v=pandp.10))|
   
-## See also
+## Related information
 
  [Web Services Overview](web-services.md)  
  [SOAP Web Services](SOAP-Web-Services.md)  

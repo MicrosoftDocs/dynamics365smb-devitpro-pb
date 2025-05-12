@@ -2,7 +2,7 @@
 title: Publishing, Upgrading, and Installing Extensions During Upgrade
 description: This article describes the tasks required for publishing, upgrading, and installing extensions during upgrade to Dynamics 365 Business Central.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -143,7 +143,7 @@ This ensures that the extensions work on the new platform and application versio
     Install-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
     ```
 
-## See Also
+## Related information
   
 [Upgrading the Application Code](Upgrading-the-Application-Code.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

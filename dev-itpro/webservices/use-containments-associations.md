@@ -4,7 +4,7 @@ description: Learn how to use containments and associations with OData for creat
 ms.custom: bap-template
 ms.date: 01/28/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Using Containments and Associations
 Containments and associations are relationships between pages in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. OData web services support navigation between pages using containments and associations.  
@@ -93,5 +93,5 @@ https://localhost:7048/<server instance>/ODataV4/Company('CRONUS-International-L
 https://localhost:7048/<server instance>/ODataV4/CustomerList('30000')  
 ```  
   
-## See also  
+## Related information  
  [OData Web Services](OData-Web-Services.md)

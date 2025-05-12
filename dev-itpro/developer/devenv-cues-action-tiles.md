@@ -2,7 +2,7 @@
 title: "Creating and Customizing Cues"
 description: Get an overview of cues and action tiles and the tasks involved in customizing them on Role Centers.
 ms.date: 07/03/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 
@@ -275,7 +275,7 @@ You can set up a Cue to link to a page that displays details about the transacti
 
  -->
   
-## See Also  
+## Related information  
 [FlowFields](devenv-flowfields.md)  
 [Page Object](devenv-page-object.md)  
 [Pages Overview](devenv-pages-overview.md)  

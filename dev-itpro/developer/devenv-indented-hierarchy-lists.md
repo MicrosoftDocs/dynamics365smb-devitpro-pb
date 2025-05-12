@@ -2,7 +2,7 @@
 title: "Designing Indented Hierarchy Lists"
 description: This article explains how to indent rows in a repeater control to design hierarchical lists. You can nest records that users can navigate, expand, and collapse.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Designing Indented Hierarchy Lists
@@ -256,7 +256,7 @@ When using an indented hierarchy, consider the following behavior:
 > [!NOTE]
 > Having more than 1000 nested rows under the root level row can cause performance issues in the web client.
 
-## See Also
+## Related information
 
 [IndentationColumn Property](properties/devenv-indentationcolumn-property.md)  
 [IndentationControls Property](properties/devenv-indentationcontrols-property.md)  

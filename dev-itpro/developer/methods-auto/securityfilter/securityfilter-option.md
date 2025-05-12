@@ -1,8 +1,8 @@
 ---
-title: "SecurityFilter System Option"
+title: "SecurityFilter system option"
 description: "Specifies how security filters are applied to the record."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,6 +24,6 @@ Specifies how security filters are applied to the record.
 |Disallowed|Security filters are not allowed on the record. If any security filters are set, then you receive an error when you run the object that uses this instance of the record.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

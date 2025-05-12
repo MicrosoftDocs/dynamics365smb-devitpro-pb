@@ -18,6 +18,6 @@ Feature '{0}' can only be enabled, if feature '{1}' is also enabled.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

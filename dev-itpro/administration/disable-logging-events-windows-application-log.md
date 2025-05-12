@@ -6,7 +6,7 @@ ms.custom:
   - evergreen
 ms.date: 04/16/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ms.service: dynamics-365-op
 ---
@@ -52,7 +52,7 @@ To disable logging to the Windows Applications Log, you can use the [!INCLUDE[ad
   
 3. Save the file, and then restart the [!INCLUDE[server](../developer/includes/server.md)] 
   
-## See Also
+## Related information
 
 [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)  
 [Monitoring Business Central Server Events](monitor-server-events.md) 

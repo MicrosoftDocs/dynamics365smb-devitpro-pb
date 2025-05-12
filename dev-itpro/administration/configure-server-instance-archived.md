@@ -2,7 +2,7 @@
 title: Configuring Business Central Server for outdated versions
 description: Configure and modify settings in the Setup or Installed Business Central Server using the Administration Console and PowerShell Cmdlets.
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-op
 ms.date: 06/21/2024
 ms.author: jswymer
@@ -505,7 +505,7 @@ For more information about running the [!INCLUDE[adminshell](../developer/includ
 
 
 
-## See Also
+## Related information
 [Configuring Business Central Web Server Instances](configure-web-server.md)  
 [Business Central Server Administration Tool](administration-tool.md)   
 [Enhancing Business Central Server Security](../security/enhancing-server-instance-security.md)   

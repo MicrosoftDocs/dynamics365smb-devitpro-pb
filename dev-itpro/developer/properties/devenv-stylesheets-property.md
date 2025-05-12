@@ -1,8 +1,8 @@
 ---
-title: "StyleSheets Property"
+title: "StyleSheets property"
 description: "Specifies the list of stylesheets to include in the control add-in."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -45,7 +45,7 @@ Stylesheets = 'https://www.microsoft.com/stylesheets/colors.css',
               'styles/*.css;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)  
 [Control Add-In Object](../devenv-control-addin-object.md)  

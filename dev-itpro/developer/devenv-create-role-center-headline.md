@@ -2,7 +2,7 @@
 title: Create a Role Center headline
 description: You can provide information and insights as headlines on Role Centers.
 ms.date: 09/09/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ms.reviewer: solsen
 ---
@@ -276,7 +276,7 @@ pageextension 50100 BCLEHeadlines extends "Headline RC Business Manager"
 
 ```
 
-## See also
+## Related information
 
 [Pages overview](devenv-pages-overview.md)  
 [Page object](devenv-page-object.md)

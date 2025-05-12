@@ -2,7 +2,7 @@
 title: "Extending Price Calculations"
 description: "How you extend the price calculations in Dynamics 365 Business Central."
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: bholtorf
 ---
 
@@ -829,7 +829,7 @@ Now we'll create a sales order for customer 10000, and add a line for item 1900-
 
 :::image type="content" source="media/price-3.4-hierarchical-sales-order.png" alt-text="Hierarchical price on sales order.":::
 
-## See Also
+## Related information
 
 [Module System Application](/dynamics365/business-central/application/system-application/module/system-application)    
 [Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)    

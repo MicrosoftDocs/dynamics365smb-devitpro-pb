@@ -2,7 +2,7 @@
 title: Copy an environment
 description: Learn how to create an environment that is a copy of a production or sandbox environment.
 author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, copy
 ms.date: 01/19/2024
@@ -31,7 +31,7 @@ When the process starts, you can go to the list of your environments and see the
 
 [!INCLUDE [admin-env-sandbox-precautions](../developer/includes/admin-env-sandbox-precautions.md)]
 
-## See also
+## Related information
 
 [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  

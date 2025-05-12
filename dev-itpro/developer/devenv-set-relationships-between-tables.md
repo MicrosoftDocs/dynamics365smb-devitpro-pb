@@ -3,7 +3,7 @@ title: "Setting Relationships Between Tables"
 description: "Relationships between tables in relational database design for Business Central."
 ms.author: solsen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---
@@ -99,7 +99,7 @@ For example, you have a **Vendors** table with all your vendors and a **Currency
   
 Furthermore, if you change one of the currency codes in the **Currency Code** table, then the change is automatically propagated to all tables that refer to this code.  
   
-## See Also  
+## Related information  
 
 [Overview of Tables](devenv-tables-overview.md)  
 <!-- [How to: Synchronize Table and SQL Server Relationships](How-to--Synchronize-Table-and-SQL-Server-Relationships.md)  

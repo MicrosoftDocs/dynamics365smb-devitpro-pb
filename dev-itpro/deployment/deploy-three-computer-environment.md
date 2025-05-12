@@ -2,7 +2,7 @@
 title: "Deploying Business Central in a Three-Computer Topology"
 description: Learn how deploy Business Central components on three separate computers.
 ms.date: 09/27/2022
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in a Three-Computer Topology
@@ -57,7 +57,7 @@ The following table includes tasks that configure the [!INCLUDE[webservercompone
 |Set up multiple [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] applications on a website.|You can set up multiple web server instances for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] on the existing website. The web server instances will use the same address \(URL\) except with an alias that specifies the specific application.|[Creating and Managing [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell](configure-multiple-web-server-instances.md)|  
 |Configure web browsers on devices.|The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] supports several different web browsers. To access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], the web browser must be enabled on a device with cookies and JavaScript.|[Web Client Requirements](system-requirement-business-central.md#WebClient)|  
 
-## See Also
+## Related information
 
 [Business Central Web Server Overview](web-server-overview.md)   
 [Installing Business Central in a Single Computer Environment](deploy-single-computer-environment.md)   

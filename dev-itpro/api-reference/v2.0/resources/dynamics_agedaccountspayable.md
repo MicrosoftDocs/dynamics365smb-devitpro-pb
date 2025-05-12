@@ -4,7 +4,7 @@ description: An aged accounts payable object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an aged accounts payable in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -25,7 +23,6 @@ Represents an aged accounts payable in [!INCLUDE[prod_short](../../../includes/p
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET agedAccountsPayable](../api/dynamics_agedaccountspayable_get.md)|agedAccountsPayable|Gets a aged accounts payable object.|
-
 
 ## Navigation
 
@@ -51,7 +48,7 @@ Represents an aged accounts payable in [!INCLUDE[prod_short](../../../includes/p
 
 ## JSON representation
 
-Here is a JSON representation of the agedAccountsPayable resource.
+Here's a JSON representation of the agedAccountsPayable resource.
 
 
 ```json
@@ -69,9 +66,7 @@ Here is a JSON representation of the agedAccountsPayable resource.
     "periodLengthFilter": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET agedAccountsPayable](../api/dynamics_agedAccountsPayable_Get.md)

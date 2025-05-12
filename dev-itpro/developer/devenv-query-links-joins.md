@@ -2,7 +2,7 @@
 title: Data Item Links
 description: Using queries, retrieve records from one or more tables and combine the records into rows in a single dataset.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Linking and Joining Data Items to Define the Query Dataset
@@ -448,7 +448,7 @@ SELECT "Salesperson/Purchaser".Name, "Sales Header"."No.", "Sales Header"."Sell-
 FROM "Salesperson/Purchaser", "Sales Header"  
 ```
 
-## See Also
+## Related information
 
  [Query Object](devenv-query-object.md)  
  [Filtering Queries](devenv-query-filters.md)  

@@ -21,6 +21,6 @@ Argument {0}: cannot convert from '{1}' to '{2}'.
 The given argument has a type different from the one expected and cannot make the conversion.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

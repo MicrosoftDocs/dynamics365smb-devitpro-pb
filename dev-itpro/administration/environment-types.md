@@ -2,7 +2,7 @@
 title: Production and sandbox environments
 description: Learn about the differences between production and sandbox environments for Dynamics 365 Business Central. 
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox
 ms.date: 07/05/2024
@@ -85,7 +85,7 @@ The standard demonstration company in [!INCLUDE [prod_short](../developer/includ
 
 For more information, see [Creating New Companies in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](/dynamics365/business-central/about-new-company) in the business functionality content.
 
-## See also
+## Related information
 
 [Managing Environments in the Administration Center](tenant-admin-center-environments.md)  
 [Preparing Demonstration Environments](demo-environment.md)  

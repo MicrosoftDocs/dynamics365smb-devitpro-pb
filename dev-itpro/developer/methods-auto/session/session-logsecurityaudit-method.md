@@ -2,7 +2,7 @@
 title: "Session.LogSecurityAudit(Text, SecurityOperationResult, Text, AuditCategory [, Array of [Text]] [, Array of [Text]]) Method"
 description: "Logs an IfX audit message to a telemetry account."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -15,6 +15,8 @@ ms.reviewer: solsen
 
 Logs an IfX audit message to a telemetry account.
 
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```AL
@@ -50,7 +52,7 @@ The target name(s) of this audit message must correspond to target type(s).
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Session Data Type](session-data-type.md)
 [Get Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../../devenv-dev-overview.md)

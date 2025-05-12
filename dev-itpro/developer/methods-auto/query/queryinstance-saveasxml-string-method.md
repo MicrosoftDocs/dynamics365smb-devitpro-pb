@@ -1,8 +1,8 @@
 ---
 title: "Query.SaveAsXml(Text) Method"
-description: "Saves the resulting data set of a query instance as an .xml file."
+description: "Saves the resulting data set of a query as XML"
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -35,7 +35,7 @@ The path and name of the file that you want to save the query to.
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+**true** if the SaveAsXml succeeded, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -55,7 +55,7 @@ The **SaveAsXML** method can be called at any place in the code and does not req
 For example code on how to use Query.SaveAsXml to save XML directly to a file, see [Query.SaveAsXml(Integer, Text) Method) Method](./query-saveasxml-integer-string-method.md).
 
 
-## See Also
+## Related information
 
 [Query.SaveAsXml(Integer, Text) Method) Method](./query-saveasxml-integer-string-method.md)  
 [Query Data Type](query-data-type.md)  

@@ -3,7 +3,7 @@ title: Syntax and snippets
 description: Description of syntax and snippets available with the AL language for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -51,7 +51,7 @@ The following list is a noncomprehensive list of the snippets that you can use i
 |`twhile`| While structure|
 |`txmlport`| XMLport object structure|
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)   
 [Developing extensions in AL](devenv-dev-overview.md)

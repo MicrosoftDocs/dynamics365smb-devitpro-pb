@@ -3,7 +3,7 @@ title: "Upgrading Unmodified C/AL Application to Version 16"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 16 base application
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -465,7 +465,7 @@ At this point, the upgrade is complete, and you can open the client.
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-## See Also  
+## Related information  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

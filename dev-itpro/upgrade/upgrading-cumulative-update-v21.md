@@ -2,7 +2,7 @@
 title: Install a version 21 update
 description: This article describes the tasks required for getting the monthly version 21 update applied to your Dynamics 365 Business Central on-premises.
 ms.date: 01/04/2024
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -94,6 +94,8 @@ The first thing to do is to download the update package that matches your Busine
     When extracted, the update includes the DVD folder. This folder contains the full Business Central product. For example, the folder includes the Business Central installation program (setup.exe), tools for upgrading to the platform, and the Microsoft extensions.
 
 When this step is completed, you can continue to update your Business Central solution to the new platform and application.
+
+## Save copies of server configuration files
 
 [!INCLUDE[upgrade-copy-configuration-files](../developer/includes/upgrade-copy-configuration-files.md)]
 
@@ -528,7 +530,7 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 [!INCLUDE[upgrade-web-server-instances](../developer/includes/upgrade-web-server-instances.md)]
 
-## See also
+## Related information
 
 [Dynamics 365 Business Central on-premises 2022 Release Wave 1 Updates](../deployment/update-versions-20.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  

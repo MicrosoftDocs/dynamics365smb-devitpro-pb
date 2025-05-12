@@ -1,8 +1,8 @@
 ---
-title: "Implementation Property"
+title: "Implementation property"
 description: "Specifies the explicit interface implementer for an enum value."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,6 +24,6 @@ Specifies the explicit interface implementer for an enum value.
 
 For a code example, see [DefaultImplementation Property](devenv-defaultimplementation-property.md).
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

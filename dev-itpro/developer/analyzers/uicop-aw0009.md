@@ -2,7 +2,7 @@
 title: "UICop Warning AW0009"
 description: "Using a Blob with subtype Bitmap on a page field is deprecated."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ Using a Blob with subtype Bitmap on a page field is deprecated. Instead use the 
 Using a Blob with subtype Bitmap on a page field is deprecated. Instead use the Media/MediaSet data types.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [UICop Analyzer](uicop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

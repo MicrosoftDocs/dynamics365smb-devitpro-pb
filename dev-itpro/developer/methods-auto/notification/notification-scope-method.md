@@ -2,7 +2,7 @@
 title: "Notification.Scope([NotificationScope]) Method"
 description: "Specifies the context in which the notification appears in the client."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -81,7 +81,7 @@ MyNotification.GetData('Created');
 MyNotification.GetData('ID');''
 ```
 
-## See Also
+## Related information
 [Notification Data Type](notification-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)''

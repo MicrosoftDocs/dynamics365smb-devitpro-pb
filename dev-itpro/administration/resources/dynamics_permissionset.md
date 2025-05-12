@@ -53,5 +53,5 @@ Here is a JSON representation of the permissionSet resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET permissionSet](../api/dynamics_permissionset_get.md)  

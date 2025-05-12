@@ -2,7 +2,7 @@
 title: "AppSourceCop Warning AS0079"
 description: "An affix is required for procedures defined in extension objects, because it prevents breaking dependent extensions that reference it in case a procedure with the same signature is introduced by the base object or by another extension."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -121,7 +121,7 @@ When compiling the extension Bar, the AL compiler reports now a warning similar 
 
 When compiling the extension Foobar, the compilation fails because the AL compiler reports an error similar to `AL0196: The call is ambiguous between the method 'MyProcedure()' defined in TableExtension 'Bar_CustomerExtension' by the extension 'Bar' and the method 'MyProcedure()' defined in Table 'Foo_Table' by the extension 'Foo`.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

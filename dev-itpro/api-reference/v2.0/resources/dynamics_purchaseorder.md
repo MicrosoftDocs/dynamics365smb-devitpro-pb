@@ -4,7 +4,7 @@ description: A purchase order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a purchase order in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,9 +27,9 @@ Represents a purchase order in [!INCLUDE[prod_short](../../../includes/prod_shor
 |[POST purchaseOrder](../api/dynamics_purchaseorder_create.md)|purchaseOrder|Creates a purchase order object.|
 |[PATCH purchaseOrder](../api/dynamics_purchaseorder_update.md)|purchaseOrder|Updates a purchase order object.|
 
-## Bound Actions
+## Bound actions
 
-The purchaseOrder resource type offers a bound action called `receiveAndInvoice` which receive and invoices the corresponding purchaseOrder batch.
+The purchaseOrder resource type offers a bound action called `receiveAndInvoice`, which receives and invoices the corresponding purchaseOrder batch.
 This is illustrated in the following example:
 `RECEIVEANDINVOICE https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/purchaseOrders({id})/Microsoft.NAV.receiveAndInvoice`
 
@@ -105,7 +103,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here is a JSON representation of the purchaseOrder resource.
+Here's a JSON representation of the purchaseOrder resource.
 
 
 ```json
@@ -159,9 +157,9 @@ Here is a JSON representation of the purchaseOrder resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
+
 [GET purchaseOrder](../api/dynamics_purchaseorder_get.md)   
 [DELETE purchaseOrder](../api/dynamics_purchaseorder_delete.md)  
 [POST purchaseOrder](../api/dynamics_purchaseorder_create.md)  

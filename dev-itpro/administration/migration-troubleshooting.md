@@ -60,7 +60,7 @@ Change tracking must be enabled on the database. It should be enabled automatica
 To enable change tracking on your database, run the following query:
   
 ```sql
-ALTER DATABASE [YOUR DATABASE] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 2 DAYS, AUTO_CLEANUP = ON) 
+ALTER DATABASE [YOUR DATABASE] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 3 DAYS, AUTO_CLEANUP = ON) 
 ```
 
 To enable change tracking on specific tables, run the following query:
@@ -199,7 +199,7 @@ When you've completed the migration, disable cloud migration by using the **Disa
 > [!IMPORTANT]
 > Just uninstalling the cloud migration apps, even with the option to remove the data, won't disable the migration in the same way. If you don't disable **Cloud Migration**, users will experience permission-related errors when they try to modify records in the migrated companies.
 
-## See also
+## Related information
 
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  

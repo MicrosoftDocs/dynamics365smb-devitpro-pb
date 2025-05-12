@@ -21,6 +21,6 @@ The maximum number of array elements is {0}. Actual number is {1}.
 The number of elements in an array must not exceed 1000000.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

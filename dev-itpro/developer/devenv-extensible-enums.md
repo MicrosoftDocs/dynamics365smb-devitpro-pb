@@ -3,7 +3,7 @@ title: Extensible Enums
 description: Overview of the enumeration type and the concept of extending them.
 author: SusanneWindfeldPedersen
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -173,7 +173,7 @@ Conversion to and from `enum` is more strict than for `Options` in C/SIDE.
 
 For information about assignment compatibility, see [AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md).
 
-## See also
+## Related information
 
 [AL data types](./methods-auto/library.md)  
 [TableRelation property](properties/devenv-tablerelation-property.md)  

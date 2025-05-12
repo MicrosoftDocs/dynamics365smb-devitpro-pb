@@ -1,8 +1,8 @@
 ---
-title: "FieldRef Data Type"
+title: "FieldRef data type"
 description: "Identifies a field in a table and gives you access to this field."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldRef Data Type
+# FieldRef Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Identifies a field in a table and gives you access to this field.
@@ -39,6 +39,7 @@ The following methods are available on instances of the FieldRef data type.
 |[GetRangeMax()](fieldref-getrangemax-method.md)|Gets the maximum value in a range for a field.|
 |[GetRangeMin()](fieldref-getrangemin-method.md)|Gets the minimum value in a range for a field.|
 |[IsEnum()](fieldref-isenum-method.md)|Checks if the currently selected field is an enum.|
+|[IsOptimizedForTextSearch()](fieldref-isoptimizedfortextsearch-method.md)|Gets if the field is optimized for textual search.|
 |[Length()](fieldref-length-method.md)|Gets the maximum size of the field (the size specified in the DataLength property of the field). This method is usually used for finding the defined length of code and text fields.|
 |[Name()](fieldref-name-method.md)|Gets the name of a field as a string.|
 |[Number()](fieldref-number-method.md)|Gets the number of a field as an integer.|
@@ -67,10 +68,10 @@ The following methods are available on instances of the FieldRef data type.
 |[TestField(Decimal, ErrorInfo)](fieldref-testfield-decimal-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Guid)](fieldref-testfield-guid-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Guid, ErrorInfo)](fieldref-testfield-guid-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
+|[TestField(Text)](fieldref-testfield-string-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
+|[TestField(Text, ErrorInfo)](fieldref-testfield-string-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Label)](fieldref-testfield-label-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Label, ErrorInfo)](fieldref-testfield-label-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
-|[TestField(Text)](fieldref-testfield-text-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
-|[TestField(Text, ErrorInfo)](fieldref-testfield-text-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Code)](fieldref-testfield-code-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Code, ErrorInfo)](fieldref-testfield-code-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Date)](fieldref-testfield-date-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
@@ -90,6 +91,6 @@ The following methods are available on instances of the FieldRef data type.
 |[Value([Any])](fieldref-value-method.md)|Sets or gets the value of the field that is currently selected. This method returns an error if no field is selected.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

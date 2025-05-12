@@ -2,7 +2,7 @@
 title: "System.Power(Decimal, Decimal) Method"
 description: "Raises a number to a power."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -142,7 +142,7 @@ The second message window displays the following:
   
 **The amount after 20 years = $14889.04.**  
  
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -2,7 +2,7 @@
 title: Analyzing Cloud migration trace telemetry
 description: Learn about cloud migration telemetry for Dynamics 365 Business Central  
 author: jobulsin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, cloud migration
 ms.date: 05/12/2023
 ms.author: jobulsin
@@ -310,7 +310,7 @@ Occurs when cloud migration was disabled for a company.
 |environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**AL0000IGC**|
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

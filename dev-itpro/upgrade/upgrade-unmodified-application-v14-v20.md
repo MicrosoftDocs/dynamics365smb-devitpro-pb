@@ -3,7 +3,7 @@ title: "Upgrading unmodified C/AL application to version 20"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 20
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -589,7 +589,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
 
-## See also  
+## Related information  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

@@ -2,19 +2,19 @@
 title: Creating an RDL layout report
 description: Describes the steps involved in creating a report that uses an RDL layout.
 author: SusanneWindfeldPedersen
-ms.date: 12/01/2023
-ms.topic: conceptual
+ms.date: 01/08/2025
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
  
 # Creating an RDL layout report
 
-When you create a new report for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two things you have to consider; defining the report dataset of data items and columns, and then designing the report layout. These steps show you how to create a simple report based on an RDL layout. For more information about the report object, see [Report Object](devenv-report-object.md). And to learn how to extend an existing report, see [Report Extension Object](devenv-report-ext-object.md). 
+When you create a new report for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two things you have to consider; defining the report dataset of data items and columns, and then designing the report layout. These steps show you how to create a report based on an RDL layout. Learn more about the report object in [Report object](devenv-report-object.md). And to learn how to extend an existing report, see [Report extension object](devenv-report-ext-object.md). 
 
 [!INCLUDE[RDL_layout_performance](includes/include-rdl-performance.md)]
 
-To create and modify RDL report layouts, you use SQL Server Report Builder or Microsoft RDLC Report Designer. For information about required versions of these tools, see [System Requirements](../deployment/system-requirement-business-central.md).
+To create and modify RDL report layouts, you use SQL Server Report Builder or Microsoft RDLC Report Designer. For information about required versions of these tools, see [System requirements](../deployment/system-requirement-business-central.md).
 
 ## Create an RDL layout report
 
@@ -69,7 +69,7 @@ To facilitate testing your report layout, the following simple example extends t
 You'll now see the generated report in preview mode.
 
 > [!NOTE]  
-> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:
+> If the report layout isn't generated, open the `settings.json` from Visual Studio Code. Use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:
 
 >```json
 >"al.compilationOptions": {
@@ -83,7 +83,7 @@ You'll now see the generated report in preview mode.
 
 Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
 
-Report labels defined in the *Labels* section of the report object and captions included on dataitem columns using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available as parameters in RDL. 
+Report labels defined in the *Labels* section of the report object and captions included on data item columns using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available as parameters in RDL. 
 
 For more information about labels, see [Report labels](./devenv-report-object.md#report-labels).
 
@@ -111,14 +111,14 @@ There are limitations imposed by the SQL Reporting Engine as to what HTML markup
 
 - Hyperlinks
 - Fonts
-- Header, style and block elements
+- Header, style, and block elements
 - Text formatting (bold, italics, underline, strikethrough)
 - List handling
 
-Any other HTML markup tags will be ignored during report processing (for example, images and tables). If the HTML isn't well formed, the placeholder will be rendered as plain text. Unfortunately things like font colors and emojis aren't processed for your report layout. 
+Any other HTML markup tags are ignored during report processing (for example, images and tables). If the HTML isn't well formed, the placeholder is rendered as plain text. Unfortunately things like font colors and emojis aren't processed for your report layout. 
 
 > [!NOTE]
-> If the HTML exceeds the size of the page, it will not trigger a page break and continue onto the next page. This means your HTML will be truncated.
+> If the HTML exceeds the size of the page, it will not trigger a page break and continue onto the next page. This means your HTML is truncated.
 
 ## Contributors
 
@@ -126,10 +126,10 @@ Any other HTML markup tags will be ignored during report processing (for example
 
 * [Tonya Bricco-Meske](https://www.linkedin.com/in/tonyabriccomeske/) | Senior Developer
 
-## See also
+## Related information
 
-[Report Design Overview](devenv-report-design-overview.md)  
-[Report Object](devenv-report-object.md)  
-[Creating a Word Layout Report](devenv-howto-report-layout.md)  
-[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
-[Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)  
+[Report design overview](devenv-report-design-overview.md)  
+[Report object](devenv-report-object.md)  
+[Creating a Word layout report](devenv-howto-report-layout.md)  
+[Creating an Excel layout report](devenv-howto-excel-report-layout.md)  
+[Defining multiple report layouts](devenv-multiple-report-layouts.md)  

@@ -3,7 +3,7 @@ title: Business Central security for AL developers
 description: Understand and improve the security of your Business Central apps written in AL.
 ms.date: 02/23/2024
 ms.reviewer: solsne
-ms.topic: conceptual
+ms.topic: article
 author: kennienp
 ---
 
@@ -83,6 +83,6 @@ The following table includes links to help you understand encryption in [!INCLUD
 | To safely store secrets for your app and retrieve them from AL. | [Using Azure Key Vault for app secrets](../developer/devenv-app-key-vault-overview.md) |
 
 
-## See also  
+## Related information  
 
 [General security overview](security-and-protection.md)  

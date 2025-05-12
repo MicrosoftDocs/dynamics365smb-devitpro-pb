@@ -21,6 +21,6 @@ Currently, the Moved(To/From) property is exclusively accessible to Microsoft an
 Only First Party Apps can move symbols.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -2,7 +2,7 @@
 title: "Report.DefaultLayout() Method"
 description: "Gets the default built-in layout type that is used on a specified report."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 10/07/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.DefaultLayout() Method
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0 until version 14.0 where it was deprecated for the following reason: "Replace with layout selection and 'Report Layout List' lookup. See https://go.microsoft.com/fwlink/?linkid=2284102&clcid=0x409 for more information."_
 
 Gets the default built-in layout type that is used on a specified report.
 
@@ -36,7 +36,7 @@ The default built-in layout type that is used on a specified report.
 ## Remarks  
  The default layout for a report is specified by the report's [DefaultLayout Property](../../properties/devenv-defaultlayout-property.md).
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

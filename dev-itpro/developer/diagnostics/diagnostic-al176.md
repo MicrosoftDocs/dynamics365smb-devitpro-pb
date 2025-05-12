@@ -18,6 +18,6 @@ Expected one of the calculation formula methods (Average,Count,Exist,Min,Max,Loo
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

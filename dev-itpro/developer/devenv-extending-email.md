@@ -1,7 +1,7 @@
 ---
 title: Extending Email
 description: Learn how to extend the email capabilities in Business Central.
-ms.topic: conceptual
+ms.topic: how-to
 ms.search.form: 4500, 4503, 4504, 4511, 4512,
 author: brentholtorf
 ms.author: bholtorf
@@ -375,7 +375,7 @@ pageextension 50110 "Importance On Sent" extends "Sent Emails"
 }
 ```
 
-## See Also
+## Related information
 
 [Overview of the Application](devenv-system-application-overview.md)    
 [Set Up Email](/dynamics365/business-central/admin-how-setup-email)    

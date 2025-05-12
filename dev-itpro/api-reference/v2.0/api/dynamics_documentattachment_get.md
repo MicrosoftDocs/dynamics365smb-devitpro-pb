@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get documentAttachments
 
 Retrieves the properties and relationships of a document attachment object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -31,7 +29,7 @@ GET businesscentralPrefix/companies({id})/documentAttachments({id})
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -41,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and a **document
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/documentAttachments({id})
@@ -49,28 +47,27 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({id})/documentAttachments
 
 **Response**
 
-Here is an example of the response.
-
+Here's an example of the response.
 
 ```json
 {
-    "id" : "",
-    "fileName" : "",
-    "byteSize" : "",
-    "attachmentContent" : "",
-    "parentType" : "",
-    "parentId" : "",
-    "lineNumber" : "",
-    "documentFlowSales" : "",
-    "documentFlowPurchase" : "",
-    "lastModifiedDateTime" : ""
+    "id": "ATT00089",
+    "fileName": "Invoice_10542.pdf",
+    "byteSize": 245823,
+    "attachmentContent": "JVBERi0xLjUKJeTl5OTlCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwo+PgplbmRvYmoKeHJlZgowIDMKMDAwMDAwMDAwMCiAgICAgIG4gCjAwMDAwMDAwMTAgMDAwMDAgbiAKMDAwMDAwMDA1MyAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9Sb290IDEgMCBSCi9TaXplIDMKPj4KJWlzQmluYXJ5Cg==",
+    "parentType": "Purchase Invoice",
+    "parentId": "INV-10542",
+    "lineNumber": 0,
+    "documentFlowSales": false,
+    "documentFlowPurchase": true,
+    "lastModifiedDateTime": "2025-04-28T09:15:42Z"
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [documentAttachment](../resources/dynamics_documentAttachment.md)  
 [DELETE documentAttachment](dynamics_documentattachment_delete.md)  
 [POST documentAttachment](dynamics_documentattachment_create.md)  
-[PATCH documentAttachment](dynamics_documentattachment_update.md)  
+[PATCH documentAttachment](dynamics_documentattachment_update.md)

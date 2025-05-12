@@ -1,9 +1,9 @@
 ---
 title: "Subscribing to Events in a .NET Framework Type"
 description: "How to subscribe to event in a .NET Framework Type"
-author: solsen
+author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -58,7 +58,7 @@ pageextension 50101 CustomerListExt extends "Customer List"
 ```
 
 
-## See Also  
+## Related information  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)   
 [Migrating from .NET Framework to .NET Standard](devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)   

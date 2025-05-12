@@ -1,8 +1,8 @@
 ---
-title: "MovedTo Property"
+title: "MovedTo property"
 description: "Specifies the destination extension Id when a table is moved to another extension."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ Specifies the destination extension Id when a table is moved to another extensio
 
 ## Applies to
 -   Table
--   Table Field
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -26,6 +26,6 @@ Specifies the destination extension Id when a table is moved to another extensio
 > [!IMPORTANT]
 > This feature is currently not available to partners, but will be with a future update.
 
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

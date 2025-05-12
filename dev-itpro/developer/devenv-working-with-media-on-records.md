@@ -3,7 +3,7 @@ title: "Working With Media on Records"
 ms.author: solsen
 description: Learn how to upload media, such as an image, to the database for displaying with records in the client. 
 ms.date: 11/08/2021
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---
@@ -154,7 +154,7 @@ To use a direct reference without the base64 conversion, change `<Value></Value>
 <Value>=Fields!CompanyInfo2Picture.Value</Value>
 ```
 
-## See Also
+## Related information
 
 [BLOB Data Type](methods-auto/blob/blob-data-type.md)  
 [Media Data Type](methods-auto/media/media-data-type.md)  

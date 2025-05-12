@@ -1,10 +1,10 @@
 ---
-title: Using Security Certificates with Business Central On-Premises"
+title: Using Security Certificates with Business Central on-premises
 description: Learn how to use security certificates to help secure connections with Business Central.
 ms.custom:
   - bap-template
   - evergreen
-ms.date: 04/16/2024
+ms.date: 12/20/2024
 ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
@@ -33,7 +33,7 @@ The implementation in this section describes the chain trust configuration, whic
   
 ### Certificates for production
   
-In a production environment, you should obtain a certificate from a certification authority or trusted provider. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization.
+In a production environment, you should obtain a certificate from a certification authority or trusted provider. Some large organizations might have their own certification authorities, and other organizations can request a certificate from a third-party organization.
   
 ###  <a name="AboutProdCerts"></a> Obtaining certificates
 
@@ -46,11 +46,11 @@ Most enterprises and hosting providers have their own infrastructure for issuing
   
 ## Run the certificates snap-in for Microsoft Management Console
   
-Some of the following procedures use the Certificates snap-in for Microsoft Management Console \(MMC\). If you do not already have this snap-in installed, you can add it to the MMC. For information see [Add the Certificates Snap-in to an MMC](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).  
+Some of the following procedures use the Certificates snap-in for Microsoft Management Console \(MMC\). If you don't already have this snap-in installed, you can add it to the MMC. Learn more at [Add the Certificates Snap-in to an MMC](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).  
   
 ## Install and configure the certificates
   
-You install the security certificates on the computers running [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. The root CA certificate and the service certificate are used in the configuration, but client certificates are not.  
+You install the security certificates on the computers running [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. The root CA certificate and the service certificate are used in the configuration, but client certificates aren't.  
 
 ### Install certificates on components 
 
@@ -67,7 +67,7 @@ You install the security certificates on the computers running [!INCLUDE[server]
 
 ### Grant access to the [!INCLUDE[server](../developer/includes/server.md)] service account
 
-After you have installed the root CA and the service certificate on the computer running [!INCLUDE[server](../developer/includes/server.md)], you must grant access to the service account that is associated with the server so that the service account can access the service certificate’s private key.
+After you install the root CA and the service certificate on the [!INCLUDE[server](../developer/includes/server.md)] computer, grant access to the service account, so the account can access the service certificate's private key.
 
 1. In the left pane of MMC, expand the **Certificates \(Local Computer\)** node, expand the **Personal** node, and then select the **Certificates** subfolder.  
   
@@ -88,15 +88,15 @@ After you have installed the root CA and the service certificate on the computer
     For example, copy the hexadecimal characters to text editor, such as Notepad. Delete all spaces from the thumbprint string. If the thumbprint is `c0 d0 f2 70 95 b0 3d 43 17 e2 19 84 10 24 32 8c ef 24 87 79`, then change it to `c0d0f27095b03d4317e219841024328cef248779`.
 
     > [!TIP] 
-    >  It is important that the thumbprint does not contain any invisible extra characters; otherwise you will experience problems when using it later. To avoid this, see [Certificate thumbprint displayed in MMC certificate snap-in has extra invisible unicode character](https://support.microsoft.com/en-au/help/2023835/certificate-thumbprint-displayed-in-mmc-certificate-snap-in-has-extra). 
+    > It is important that the thumbprint does not contain any invisible extra characters; otherwise you will experience problems when using it later. Learn more at [Certificate thumbprint displayed in MMC certificate snap-in has extra invisible unicode character](https://support.microsoft.com/en-au/help/2023835/certificate-thumbprint-displayed-in-mmc-certificate-snap-in-has-extra). 
 
 ## Configure the [!INCLUDE[server](../developer/includes/server.md)] instance
   
-The [!INCLUDE[server](../developer/includes/server.md)] instance configuration includes several settings for certificates and enabling remote logins. You can modify a server instance by using [!INCLUDE[admintool](../developer/includes/admintool.md)] (version 20 and earlier only) or [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For details about how to modify a server instance, see [Configuring Business Central Server](../administration/configure-server-instance.md). 
+The [!INCLUDE[server](../developer/includes/server.md)] instance configuration includes several settings for certificates and enabling remote logins. You can modify a server instance by using [!INCLUDE[admintool](../developer/includes/admintool.md)] (version 20 and earlier only) or [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. Learn more about how to modify a server instance in [Configuring Business Central Server](../administration/configure-server-instance.md). 
 
 ### Using [!INCLUDE[adminshell](../developer/includes/adminshell.md)]
 
-1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator. For more information, see [Administration Shell](../administration/administration-shell.md).
+1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator. Learn more in [Administration Shell](../administration/administration-shell.md).
 2. At the prompt, run the following command to specify the certificate thumbprint:
 
     ```powershell
@@ -141,17 +141,17 @@ The [!INCLUDE[admintool](../developer/includes/admintool.md)] is only available 
   
 5. Restart the [!INCLUDE[server](../developer/includes/server.md)] instance.  
   
-    If there is a problem, see Windows Event Viewer.  
+    If there's a problem, see Windows Event Viewer.  
   
 ## Configure the [!INCLUDE[webserver](../developer/includes/webserver.md)]
 
-The chain trust configuration allows client users to log on to one or more instances of [!INCLUDE[server](../developer/includes/server.md)] as long as their login credentials have been associated with user accounts in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The client validates that the server certificate is signed with the root CA.  
+The chain trust configuration allows client users to sign in instances of [!INCLUDE[server](../developer/includes/server.md)] as long as their login credentials are associated with user accounts in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The client validates that the server certificate is signed with the root CA.  
   
-After you have installed the root CA on the computer running the [!INCLUDE[webserver](../developer/includes/webserver.md)], you must modify the client configuration file.
+After you install the root CA on the computer running the [!INCLUDE[webserver](../developer/includes/webserver.md)], modify the client configuration file.
   
 ### Modify the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] configuration file  
 
-To configure the [!INCLUDE[webserver](../developer/includes/webserver.md)], you'll need the subject name, also known as the common name \(CN\), of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].
+To configure the [!INCLUDE[webserver](../developer/includes/webserver.md)], you need the subject name, also known as the common name \(CN\), of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].
 
 You can configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] or changing the navsettings.json file manually.
 
@@ -161,7 +161,7 @@ You can configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] 
 2. At the prompt, run the following commands:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration -WebServerInstance <web server instance> -KeyName DnsIdentity -KeyValue true
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance <web server instance> -KeyName DnsIdentity -KeyValue <certificate subject name or common name>
     ```
 
     This following command is only required for version 21 and later:
@@ -181,7 +181,7 @@ You can configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] 
     |Key|New value|Description|  
     |---------|---------------|-----------------|  
     |ClientServicesCredentialType|`Windows`, `NavUserPassword`, `Username`, or `AccessControlService`|The default value is `Windows`. When you change it to `NavUserPassword`, `Username`, or `AccessControlService`, client users who connect to the server are prompted for user name and password credentials.|  
-    |DnsIdentity|The subject name of the service certificate|The default value is \<identity>. Replace this with the subject name or common name \(CN\) of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|
+    |DnsIdentity|The subject name of the service certificate|The default value is \<identity>. Replace this value with the subject name or common name \(CN\) of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|
     |ServerHttps|`true`|The default value is `false`. This key is only available in version 21 and later, so it doesn't need to be set in earlier versions.|   
 
 3. Save the navsettings.json configuration file.  
@@ -191,7 +191,7 @@ You can configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] 
 > [!NOTE]
 > This section only applies to Business Central Spring 2019, version 14. [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] isn't supported in later versions.
  
-After you have installed the root CA on the computer running the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], you must modify the client configuration file.
+After you install the root CA on the computer running the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], you must modify the client configuration file.
   
 ### Modify the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration file  
   
@@ -199,22 +199,22 @@ After you have installed the root CA on the computer running the [!INCLUDE[nav_w
   
      The location of this file is *Users\\\<*username*>\\AppData\\RoamingLocal\\Microsoft\\[!INCLUDE[prod_long](../developer/includes/prod_long.md)]\\\<version>*.
   
-     By default, this file is hidden. Therefore, you may have to change your folder options in Windows Explorer to view hidden files.  
+     By default, this file is hidden. Therefore, you might have to change your folder options in Windows Explorer to view hidden files.  
   
     > [!NOTE]  
-    >  If you want to change default [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] settings for all future users, edit the default ClientUserSettings.config file — that is, the one in [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Be sure that you run your text editor with Administrator privileges when you do so.  
+    >  If you want to change default [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] settings for all future users, edit the default ClientUserSettings.config file&mdash;that is, the one in [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Be sure that you run your text editor with Administrator privileges when you do so.  
   
 2. Modify the following settings.  
   
     |Key|New value|Description|  
     |---------|---------------|-----------------|  
     |ClientServicesCredentialType|`NavUserPassword`, `Username`, or `AccessControlService`|The default value is `Windows`. When you change it to `NavUserPassword`, `Username`, or `AccessControlService`, client users are prompted for user name and password credentials.|  
-    |DnsIdentity|The subject name of the service certificate.|The default value is \<identity>. Replace this with the subject name or common name \(CN\) of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|  
+    |DnsIdentity|The subject name of the service certificate.|The default value is \<identity>. Replace this value with the subject name or common name \(CN\) of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|  
   
 3. Save and close the ClientUserSettings.config file.  
   
-When starting the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], users are prompted for a valid user name and password.
+When users start the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], they're prompted for a valid user name and password.
 
-## See Also
+## Related information
 
 [Authentication and User Credential Types](../administration/users-credential-types.md)

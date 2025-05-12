@@ -1,8 +1,8 @@
 ---
-title: "Culture Property"
+title: "Culture property"
 description: "Specifies the culture of the .NET assembly."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -26,6 +26,6 @@ Specifies the culture of the .NET assembly.
 Culture = 'neutral';
 ```
 
-## See Also
+## Related information
 
 [Control Add-In Object](../devenv-control-addin-object.md)   

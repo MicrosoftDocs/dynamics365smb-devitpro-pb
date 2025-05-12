@@ -3,7 +3,7 @@ title: "Fix OnBeforeTestRun and OnAfterTestRun after database conversion"
 description: Explains how to resolve the problems with the OnBeforeTestRun and OnAfterTestRun triggers you convert a Dynamics NAV database.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 
@@ -29,5 +29,5 @@ OnAfterTestRun(CodeunitID : Integer;CodeunitName : Text[30];FunctionName : Text[
 ```
 If you don't change the signature, you get errors when you compile these objects.
 
-## See also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)  

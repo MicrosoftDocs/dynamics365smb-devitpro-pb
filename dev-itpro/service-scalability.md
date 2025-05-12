@@ -4,7 +4,7 @@ description: Learn about Business Central's online ability to provide resource e
 author: dmc-dk
 ms.author: dmitrych 
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: article
 ms.collection: 
 ms.date: 02/22/2024
 ms.custom: bap-template
@@ -146,7 +146,7 @@ In Business Central online, customers are provided with a default storage quota 
 
 [Learn more about storage](administration/tenant-admin-center-capacity.md).
 
-## See also
+## Related information
 
 - [Service overview](service-overview.md)
 - [Service operations](service-operations.md)

@@ -2,7 +2,7 @@
 title: Promoted actions
 description: Promoted actions are configured to display on the Home tab for accessing quick daily actions in Dynamics 365 Business Central. 
 ms.date: 07/09/2024
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 --- 
@@ -238,7 +238,7 @@ page 50103 Customers
 
 For more examples of how to use actions, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
 
-## See also
+## Related information
 
 [Actions overview](devenv-actions-overview.md)  
 [Adding actions to a page](devenv-adding-actions-to-a-page.md)  

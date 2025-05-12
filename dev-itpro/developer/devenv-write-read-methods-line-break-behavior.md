@@ -3,7 +3,7 @@ title: "Write, WriteText, Read, and ReadText Method Behavior"
 description: "Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators."
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -199,7 +199,7 @@ codeunit 50111 MyCodeunit
 ```
 -->
 
-## See Also
+## Related information
 
 [Write and WriteText Methods](methods-auto/outstream/outstream-data-type.md)  
 [Read and ReadText Methods](methods-auto/instream/instream-data-type.md)  

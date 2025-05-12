@@ -2,7 +2,7 @@
 title: "Blob.CreateOutStream(OutStream [, TextEncoding]) Method"
 description: "Creates an OutStream object for a binary large object (BLOB)."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -45,7 +45,7 @@ MyTable.MyBLOBfield.CreateOutStream(MyStream, TextEncoding::WINDOWS);
   
  For more information, see [File Handling and Text Encoding](../../devenv-file-handling-and-text-encoding.md).  
 
-## See Also
+## Related information
 [Blob Data Type](blob-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -2,7 +2,7 @@
 title: "Record.ReadIsolation([IsolationLevel]) Method"
 description: "Gets or sets the read isolation level."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -67,7 +67,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [Record instance isolation level](../../devenv-read-isolation.md)  
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

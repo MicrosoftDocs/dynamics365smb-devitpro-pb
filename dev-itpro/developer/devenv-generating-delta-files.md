@@ -3,7 +3,7 @@ title: "Generating Delta files"
 description: "Description of how to generate delta files with the ExportToNewSyntax flag."
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -35,7 +35,7 @@ Using the `ExportToNewSyntax` switch for the `Compare-NAVApplicationObject` cmdl
 Compare-NAVApplicationObject -OriginalPath "C:\PageWith2Controls.txt" -ModifiedPath "C:\PageWith3Controls.txt" -ExportToNewSyntax
 ```
 
-## See Also
+## Related information
 [The Txt2Al Conversion Tool](devenv-txt2al-tool.md)  
 [Developing Extensions](devenv-dev-overview.md)   
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  

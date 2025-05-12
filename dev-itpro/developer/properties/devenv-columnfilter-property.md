@@ -1,8 +1,8 @@
 ---
-title: "ColumnFilter Property"
+title: "ColumnFilter property"
 description: "Sets a filter on the column filter row of a query."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -51,7 +51,7 @@ Quantity=Filter(>20&<50);
 
 For a more detailed example, see [Filtering on columns and filter rows in query object](../../developer/devenv-query-filters.md#columns).
 
-## See Also
+## Related information
 
 [Queries in Business Central](../devenv-query-overview.md)  
 [Filtering in Query Objects](../devenv-query-filters.md)  

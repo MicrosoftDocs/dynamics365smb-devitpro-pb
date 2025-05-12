@@ -2,7 +2,7 @@
 title: "ProductName.Full() Method"
 description: "FULL returns a text string that contains the application's full name."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -37,7 +37,7 @@ This method is useful when you have to include the application name in UI text. 
 
 You define the different name variations for an application in the `navsettings.json` configuration file. For more information, see [Configuring Business Central Web Server Instances](../../../administration/configure-web-server.md).
 
-## See Also
+## Related information
 [ProductName Data Type](productname-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

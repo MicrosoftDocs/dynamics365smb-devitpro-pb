@@ -4,7 +4,7 @@ description: A time registration entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a time registration entry in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -58,7 +56,7 @@ Represents a time registration entry in [!INCLUDE[prod_short](../../../includes/
 
 ## JSON representation
 
-Here is a JSON representation of the timeRegistrationEntry resource.
+Here's a JSON representation of the timeRegistrationEntry resource.
 
 
 ```json
@@ -79,11 +77,9 @@ Here is a JSON representation of the timeRegistrationEntry resource.
     "lastModfiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET timeRegistrationEntry](../api/dynamics_timeRegistrationEntry_Get.md)  
 [DELETE timeRegistrationEntry](../api/dynamics_timeRegistrationEntry_Delete.md)  
 [POST timeRegistrationEntry](../api/dynamics_timeRegistrationEntry_Create.md)  

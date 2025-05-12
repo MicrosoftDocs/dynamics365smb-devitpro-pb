@@ -3,7 +3,7 @@ title: Working with API limits in Dynamics 365 Business Central (v1.0)
 description: Describes working with current API limits in Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 05/01/2024
-ms.topic: article
+ms.topic: how-to
 ms.author: solsen
 ms.custom: evergreen
 ms.reviewer: solsen
@@ -56,7 +56,7 @@ There are several areas to consider, which can reduce the number of calls from a
 
     Deep insert can also be performed in Batch calls.
 
-## See also
+## Related information
 
 [Current API Limits](dynamics-current-limits.md)  
 [Best practices on transient errors](/azure/architecture/best-practices/transient-faults)  

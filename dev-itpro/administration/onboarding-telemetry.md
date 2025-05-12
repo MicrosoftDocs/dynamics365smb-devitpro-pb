@@ -1,11 +1,11 @@
 ---
 title: Measure onboarding progress using telemetry
 description: Learn how you can use onboarding telemetry to measure customers' progress with onboarding to Dynamics 365 Business Central.
-ms.date: 02/23/2023
-ms.topic: conceptual
+ms.date: 01/30/2025
+ms.topic: how-to
 author: sorenfriisalexandersen
 ms.author: soalex
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ---
 
 # Measure onboarding progress using telemetry
@@ -14,23 +14,23 @@ ms.reviewer: jswymer
 
 ## Signals emitted automatically
 
-[!INCLUDE [prod_short](../includes/prod_short.md)] emits signals that are defined by Microsoft. The signals are generic enough to cover most types of businesses. Additional signals can be emitted by extending the onboarding signals functionality. Currently, the signals emitted automatically are based on these business processes:
+[!INCLUDE [prod_short](../includes/prod_short.md)] emits signals that are defined by Microsoft. The signals are generic enough to cover most types of businesses. More signals can be emitted by extending the onboarding signals functionality. Currently, the signals emitted automatically are based on these business processes:
 
-* Onboarding starts, which is when a company signs in for the first time (initialized).
-* Sales, which indicates that the company has set up everything needed to sell products or services.
-* Purchases, which indicates that the company has set up everything needed to buy products or services.
-* Customer payments, which indicates that sales process cycles have been completed, from sales to payment.
-* Vendor payments, which indicates that purchase process cycles have been completed, from ordering to payment.
+- Onboarding starts, which is when a company signs in for the first time (initialized).
+- Sales, which indicates that the company has set up everything needed to sell products or services.
+- Purchases, which indicate that the company has set up everything needed to buy products or services.
+- Customer payments, which indicate that sales process cycles have been completed, from sales to payment.
+- Vendor payments, which indicate that purchase process cycles have been completed, from ordering to payment.
 
 ## Criteria and timing for emitting the automatic signals
 
-* **Onboarding started**: When a company is signed into for the first time.
-* **Sales Invoice Signal**: When five posted sales invoices exist (Table 112, Sales Invoice Header).
-* **Purchase Invoice Signal**: When five posted purchase invoices exist (Table 122, Purch. Inv. Header)
-* **Customer Payment Signal**: When five posted customer payments exist (Table 21, Cust. Ledger Entry, Document Type = Payment)
-* **Vendor Payment Signal**: When five posted vendor payments exist (Table 25, Vendor Ledger Entry, Document Type = Payment)
+- **Onboarding started**: When a company is signed into for the first time.
+- **Sales Invoice Signal**: When five posted sales invoices exist (Table 112, Sales Invoice Header).
+- **Purchase Invoice Signal**: When five posted purchase invoices exist (Table 122, Purch. Inv. Header)
+- **Customer Payment Signal**: When five posted customer payments exist (Table 21, Cust. Ledger Entry, Document Type = Payment)
+- **Vendor Payment Signal**: When five posted vendor payments exist (Table 25, Vendor Ledger Entry, Document Type = Payment)
 
-A signal is emitted once for each of these processes when the criteria is met. A daily routine checks whether the criteria for each of the business processes are met. If the criteria is met, a signal is emitted to indicate that the company is onboard. The signal for a process is emitted one time.
+A signal is emitted once for each of these processes when the criteria are met. A daily routine checks whether the criteria for each of the business processes are met. If the criteria are met, a signal is emitted to indicate that the company is onboard. The signal for a process is emitted one time.
 
 ## Extend the onboarding telemetry signals
 
@@ -110,14 +110,14 @@ Partners can add more signals based on their own criteria. They can extend the O
 
 These event IDs are used when emitting onboarding signals.
 
-* Onboarding started: 0000EIW
-* Onboarding signal: 0000EIV
+- Onboarding started: 0000EIW
+- Onboarding signal: 0000EIV
 
 Signals that partners add are emitted with the 0000EIV event ID.
 
 > [!NOTE]
-> Onboarding criteria aren't relevant for non-production scenarios. Evaluation companies and sandboxes are not included when registering onboarding signals or emitting them.
+> Onboarding criteria aren't relevant for non-production scenarios. Evaluation companies and sandboxes aren't included when registering onboarding signals or emitting them.
 
-## See also
+## Related information
 
 [Onboarding experiences in Business Central](onboarding-experiences.md)  

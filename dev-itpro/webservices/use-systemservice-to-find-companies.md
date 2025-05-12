@@ -1,7 +1,7 @@
 ---
 title: "Use SystemService to Find Companies"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # Using SystemService to Find Companies
 You can use the SystemService service in a SOAP web service application to retrieve a list of companies available in a specific database. A company name is typically part of the URI when you access a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service, and the system service lets you retrieve names of available companies. If you do not specify a company name in a URI, then the default company is used.  
@@ -71,6 +71,6 @@ You can use the SystemService service in a SOAP web service application to retri
   
      A list of all companies in the current database is presented in a command session.  
   
-## See Also  
+## Related information  
    
  [SOAP Web Services](SOAP-Web-Services.md)

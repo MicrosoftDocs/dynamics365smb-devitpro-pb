@@ -2,7 +2,7 @@
 title: Essential AL Methods
 description: Learn AL programming with essential methods. Learn the most common methods, their uses, and how to add specialized functionality to your applications.
 ms.date: 04/26/2024
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
@@ -16,13 +16,13 @@ Although there are hundreds of methods in AL, there are several methods that you
 The articles in this section describe the most common AL methods. For more information about all of the AL methods, see [AL method reference](methods-auto/library.md).  
 
 - [Get, Find, and Next methods](devenv-get-find-and-next-methods.md)  
-- [SetCurrentKey, SetRange, SetFilter, GetRangeMin, and GetRangeMax methods](devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)  
+- [SetRange, SetFilter, GetRangeMin, and GetRangeMax methods](devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)  
 - [Insert, Modify, ModifyAll, Delete, and DeleteAll methods](devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)  
 - [LockTable method](methods-auto/record/record-locktable-method.md)  
 - [Field Calculation methods](devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)  
 - [Progress Windows, Message, Error, and Confirm methods](devenv-progress-windows-message-error-and-confirm-methods.md)  
 - [StrMenu method](methods-auto/dialog/dialog-strmenu-method.md)
 
-## See also
+## Related information
 
 [AL method reference](methods-auto/library.md)

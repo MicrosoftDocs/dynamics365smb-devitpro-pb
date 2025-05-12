@@ -21,6 +21,6 @@ The method '{0}' is not supported as the implementation for the interface method
 Try functions cannot be used as interface method implementations because this can lead to unexpected behavior from the runtime.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

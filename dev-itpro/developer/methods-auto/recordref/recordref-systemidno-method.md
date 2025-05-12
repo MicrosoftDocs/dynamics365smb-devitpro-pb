@@ -2,7 +2,7 @@
 title: "RecordRef.SystemIdNo() Method"
 description: "Gets the field number that is used by the SystemId field."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -52,7 +52,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 [SystemId Field](../../devenv-table-system-fields.md#systemid)  
 [RecordRef Data Type](recordref-data-type.md)  

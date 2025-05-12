@@ -2,7 +2,7 @@
 title: "XmlNamespaceManager.NameTable([XmlNameTable]) Method"
 description: "Gets or sets the XmlNameTable associated with this object."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,7 +39,7 @@ The XmlNameTable associated with this object.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [XmlNamespaceManager Data Type](xmlnamespacemanager-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

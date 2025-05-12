@@ -4,7 +4,7 @@ description: Overview of setting conditional breakpoints in AL.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 09/16/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -53,7 +53,7 @@ SalesInvoiceHeader."No." = '103007'
 
 When the code execution reaches the breakpoint, the condition is evaluated. If the condition is true, then the code execution breaks at the breakpoint. If the condition is false, then the code execution continues.
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)  
 [Debugging in AL](devenv-debugging.md)  

@@ -1,7 +1,7 @@
 ---
 title: "Create Operation"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ---
 # Create Operation
 Creates a single record. The supplied record object is overwritten with the version that is created by the page.  
@@ -37,5 +37,5 @@ cust.Name = "Customer Name";
 service.Create(ref cust);  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

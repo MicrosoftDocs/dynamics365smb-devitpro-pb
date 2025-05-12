@@ -27,7 +27,6 @@ POST businesscentralPrefix/companies({id})/paymentTerms
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **paymentTerm**, the **paymentTerm** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **paymentTerms** object.
@@ -39,7 +38,7 @@ If successful, this method returns ```201 Created``` response code and a **payme
 
 **Request**
 
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/paymentTerms
@@ -57,7 +56,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -79,7 +78,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [paymentterm](../resources/dynamics_paymentterm.md)    
 [Get paymentterm](dynamics_paymentterm_Get.md)    

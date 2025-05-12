@@ -3,7 +3,7 @@ title: "Report Extension Example"
 description: "Reports are used to print or display information from a database."
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: article
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -166,7 +166,7 @@ reportextension 50200 FoodExtension extends FoodReport
 
 The example code above illustrates how additive changes to tables that are used on reports can use report extension objects to reflect these changes.
 
-## See Also
+## Related information
 
 [Reports Overview](devenv-reports.md)  
 [Report Object](devenv-report-object.md)  

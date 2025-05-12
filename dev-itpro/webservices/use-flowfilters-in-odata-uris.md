@@ -4,7 +4,7 @@ description: Learn how to use FlowFilter expressions in OData URIs.
 ms.custom: bap-template
 ms.date: 01/28/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # Using FlowFilters in OData URIs
 
@@ -72,5 +72,5 @@ In this procedure, you create and publish a web service from the **Item Card** p
   
      This indicates that there are 27 ATHENS Mobile Pedestals on sales orders designated for the GREEN location.  
   
-## See Also  
+## Related information  
  [OData Web Services](OData-Web-Services.md)

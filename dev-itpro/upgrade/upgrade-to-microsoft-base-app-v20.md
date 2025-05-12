@@ -1,7 +1,7 @@
 ---
 title: Upgrading customized C/AL application to Microsoft Base Application for version 20
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 20.
-ms.topic: article
+ms.topic: how-to
 author: jswymer
 ms.author: jswymer
 ms.date: 01/03/2024
@@ -732,7 +732,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
         > [!NOTE]
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
-## See also  
+## Related information  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

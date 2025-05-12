@@ -26,10 +26,10 @@ DELETE businesscentralPrefix/companies({id})/shipmentMethods({id})
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **shipmentMethod**, the **shipmentMethod** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **shipmentMethod**, the **shipmentMethod** won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```204 No Content``` response code and it deletes the shipmentMethod .
@@ -38,7 +38,7 @@ If successful, this method returns a ```204 No Content``` response code and it d
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/shipmentMethods({id})
@@ -50,7 +50,7 @@ No Content.
 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [shipmentmethod](../resources/dynamics_shipmentmethod.md)    
 [Get shipmentmethod](dynamics_shipmentmethod_Get.md)    

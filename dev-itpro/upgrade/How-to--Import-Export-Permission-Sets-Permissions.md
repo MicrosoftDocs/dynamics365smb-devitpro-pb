@@ -2,7 +2,7 @@
 title: "How to: Export and Import Permission Sets and Permissions"
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -83,6 +83,6 @@ If there are no **System** permission sets for import, then file must have two b
 
      In the request page for the XMLport, in the **Direction** field, choose **Import**, choose the **OK** button, and then specify the permissions XML file. 
 
-## See Also  
+## Related information  
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  

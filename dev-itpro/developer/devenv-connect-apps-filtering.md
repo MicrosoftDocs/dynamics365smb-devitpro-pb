@@ -4,7 +4,7 @@ description: Learn how to use filters with API calls to get targeted information
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 03/14/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.reviewer: solsen
 ---
 
@@ -19,7 +19,7 @@ You can include filters for the delta links; which are typically based on the GE
 > [!NOTE]
 > There's a special filter, `journals.templateDisplayName`, which returns journals if a user hasn't defined the filter criteria.
 
-## See also
+## Related information
 
 [Developing connect apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Using deltas with APIs](devenv-connect-apps-delta.md)  

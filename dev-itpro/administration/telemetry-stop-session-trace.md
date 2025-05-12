@@ -2,7 +2,7 @@
 title: Analyzing Stopped Session Telemetry
 description: Learn about analyzing stop session telemetry in Business Central.  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 07/26/2022
@@ -76,7 +76,7 @@ The following table explains other custom dimensions os the trace.
 |telemetrySchemaVersion|The version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema|
 
  
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

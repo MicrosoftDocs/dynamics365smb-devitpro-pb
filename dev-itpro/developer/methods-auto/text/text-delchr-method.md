@@ -2,7 +2,7 @@
 title: "Text.DelChr(Text [, Text] [, Text]) Method"
 description: "Deletes chars contained in the which parameter in a string based on the contents on the where parameter."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -210,7 +210,7 @@ The message window displays the following:
 **> Windy West Solutions < is transformed to >WindyWestSolutions<**
 
 
-## See Also
+## Related information
 [Text Data Type](text-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

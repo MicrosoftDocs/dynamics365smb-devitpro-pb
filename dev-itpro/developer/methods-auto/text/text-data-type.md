@@ -1,8 +1,8 @@
 ---
-title: "Text Data Type"
+title: "Text data type"
 description: "Denotes a text string."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/28/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text Data Type
+# Text Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Denotes a text string.
@@ -26,7 +26,8 @@ The following methods are available on the Text data type.
 |[CopyStr(Text, Integer [, Integer])](text-copystr-method.md)|Copies a substring of any length from a specific position in a string (text or code) to a new string.|
 |[DelChr(Text [, Text] [, Text])](text-delchr-method.md)|Deletes chars contained in the which parameter in a string based on the contents on the where parameter. If the where parameter contains an equal-sign, then all occurrences of characters in which is deleted from the current value. If the where parameter contains a less-than, then the characters are only deleted when they are first in the string. If the where parameter contains a greater-than, then the characters are only deleted when they are the last in the string. If the where parameter contains any other char, an exception is thrown. If the where parameter or the which parameter is empty, the source is returned unmodified. The which parameter is to be considered as an array of chars to delete where the order does not matter.|
 |[DelStr(Text, Integer [, Integer])](text-delstr-method.md)|Deletes a substring inside a string (text or code).|
-|[IncStr(Text)](text-incstr-method.md)|Increases a positive number or decrease a negative number inside a string by one (1).|
+|[IncStr(Text)](text-incstr-string-method.md)|Increases the last positive number or decreases the last negative number inside a string by one (1).|
+|[IncStr(Text, BigInteger)](text-incstr-string-biginteger-method.md)|Increases the last positive number or decreases the last negative number inside a string by the provided positive increment.|
 |[InsStr(Text, Text, Integer)](text-insstr-method.md)|Inserts a substring into a string.|
 |[LowerCase(Text)](text-lowercase-method.md)|Converts all letters in a string to lowercase.|
 |[MaxStrLen(Text)](text-maxstrlen-string-method.md)|Gets the maximum defined length of a string variable.|
@@ -72,11 +73,32 @@ The following methods are available on instances of the Text data type.
 The **Text** data type is a value type, such that every time you use a method on it, you create a new string object in memory. This requires a new allocation of space. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a **Text** data type can be costly.  
 
 > [!NOTE]  
-> The **Text** data type in AL uses the same encoding as .NET strings. For more information, see [String class (.NET)](/dotnet/api/system.string?view=net-8.0&preserve-view=true).
+> The **Text** data type in AL uses the same encoding as .NET strings. Learn more in [String class (.NET)](/dotnet/api/system.string?view=net-8.0&preserve-view=true).
 
 The [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md) is a reference type, which holds a pointer elsewhere in memory. For performance reasons, we recommend you to use it when you want to modify a string without creating a new object. For example, using [TextBuilder Data Type](../textbuilder/textbuilder-data-type.md)  can boost performance when concatenating many strings together in a loop.
 
-## See Also
+### Multiline strings
+
+[!INCLUDE [2025rw1_and_later](../../includes/2025rw1_and_later.md)]
+
+You can use the `Text` data type to create multiline strings. To create a multiline string, use the `@` character before the string. This allows more structured content, such as JSON content, to be created in a readable way. The following illustrates a simple syntax example:
+
+```AL
+var
+    t: Text;
+begin
+    t := @'This is
+a
+multiline
+string
+';
+end;
+```
+
+> [!NOTE]
+> Any added white space, such as line indentation, becomes part of the string, and is therefore not recommended.
+
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

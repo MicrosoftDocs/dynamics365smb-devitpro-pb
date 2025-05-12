@@ -2,7 +2,7 @@
 title: "System.Decrypt(Text) Method"
 description: "Takes a string as input and returns the decrypted value of the string."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -53,7 +53,7 @@ if not EncryptionEnabled then
 
 ```  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

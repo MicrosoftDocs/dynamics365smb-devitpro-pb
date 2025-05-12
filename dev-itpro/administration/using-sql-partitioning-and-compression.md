@@ -7,7 +7,7 @@ ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # Using table partitioning and data compression
 
@@ -138,7 +138,7 @@ ALTER TABLE ADD CONSTRAINT constraint_name DEFAULT default_value FOR field_name
 
 The name of the default constraint isn't important, as long as it isn't used by another column in the database.
 
-## See Also
+## Related information
 
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)  
 [Table Keys](../developer/devenv-table-keys.md)  

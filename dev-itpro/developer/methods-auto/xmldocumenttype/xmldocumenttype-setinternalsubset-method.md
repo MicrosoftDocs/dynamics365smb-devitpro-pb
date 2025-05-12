@@ -2,7 +2,7 @@
 title: "XmlDocumentType.SetInternalSubset(Text) Method"
 description: "Sets the internal subset for this Document Type Definition (DTD)."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -37,7 +37,7 @@ A string that contains the new internal subset for this Document Type Definition
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [XmlDocumentType Data Type](xmldocumenttype-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

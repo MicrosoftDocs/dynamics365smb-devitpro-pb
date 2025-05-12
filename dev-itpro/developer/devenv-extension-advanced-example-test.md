@@ -2,15 +2,15 @@
 title: Test the advanced sample extension
 description: Includes test code for the advanced example extension.
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
-ms.topic: conceptual
+ms.date: 12/03/2024
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 # Test the advanced sample extension
 
-It's required to submit tests with your extension in order to pass validation. This walkthrough builds on the advanced sample extension, which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample CustomerRewards extension.
+This walkthrough builds on the advanced sample extension, which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample CustomerRewards extension.
 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
@@ -73,13 +73,13 @@ Our CustomerRewardsTest project is referencing objects from the CustomerRewards 
       "version": "1.0.0.0" 
     },
     {
-        "id":  "00001111-aaaa-2222-bbbb-3333cccc4444",
+        "id":  "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
         "name":  "Library Assert",
         "publisher":  "Microsoft",
         "version":  "19.0.0.0"
     },
     {
-        "id":  "00001111-aaaa-2222-bbbb-3333cccc4444",
+        "id":  "5d86850b-0d76-4eca-bd7b-951ad998e997",
         "name":  "Tests-TestLibraries",
         "publisher":  "Microsoft",
         "version":  "19.0.0.0"
@@ -1030,7 +1030,7 @@ When you go into the SetDefaultCustomerRewardsExtMgtCodeunit method, codeunit 50
 ### Conclusion
 At this point, the Customer Rewards sample extension can be published and installed on your sandbox. 
 
-## See Also  
+## Related information  
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  

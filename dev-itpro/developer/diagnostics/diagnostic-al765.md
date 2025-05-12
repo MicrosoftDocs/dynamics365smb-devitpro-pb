@@ -21,6 +21,6 @@ An argument of type {0} cannot be used in an External Business Event.
 An invalid argument type is used in the payload of an External Business Event.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

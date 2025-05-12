@@ -2,7 +2,7 @@
 title: "System.Today() Method"
 description: "Gets the current date set in the operating system."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -58,7 +58,7 @@ The message window could display the following:
 **The current date is: 05/27/08**  
   
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -3,7 +3,7 @@ title: Keyboard shortcuts for AL in Visual Studio Code
 description: List of keyboard shortcuts for the new development environment (Visual Studio Code).
 author: SusanneWindfeldPedersen
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -86,7 +86,7 @@ For more information about profiling, see [AL Profiler Overview](devenv-al-profi
 |<kbd>-</kbd> (minus) | Collapse all nodes.|
 |<kbd>*</kbd> (star) | Expand one level for all nodes. Consecutive keystrokes expand to the next level.|
 
-## See also
+## Related information
 
 [Developing extensions](devenv-dev-overview.md)  
 [Get started with AL](devenv-get-started.md)  

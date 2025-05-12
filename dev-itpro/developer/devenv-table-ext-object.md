@@ -3,7 +3,7 @@ title: Table extension object
 description: This article describes the table extension object in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 04/17/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -95,7 +95,7 @@ tableextension 50115 RetailWinterSportsStore extends Customer
 }
 ```
 
-## See also
+## Related information
 
 [AL development environment](devenv-reference-overview.md)  
 [Table overview](devenv-tables-overview.md)  

@@ -3,7 +3,7 @@ title: Designing List Pages for Business Central
 description: "Provides and overview of List page design"
 author: jswymer
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -113,7 +113,7 @@ Using the [Scope (Action)](properties/devenv-scope-action-property.md) property,
 
 Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface.
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  

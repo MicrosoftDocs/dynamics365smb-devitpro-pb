@@ -3,7 +3,7 @@ title: "Update the Excel add-in configuration"
 description: Learn about how to change the Excel add-in setup so that it works with the update in July 2022.
 author: jswymer
 ms.author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/29/2023
 ms.reviewer: jswymer
 ---
@@ -43,7 +43,7 @@ You'll have to change to the existing Microsoft Entra app registration that's se
 > [!IMPORTANT]
 > Your experience may vary if your Microsoft Entra app registration also includes redirect URIs for other services. Don't not change other redirect URIs for other services or for the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Web client as part of this change. To check if other services are affected by similar security hardening exercises and require re-configuration, contact the service provider.
 
-## See also
+## Related information
 
 [Setting up the Business Central Add-in for Excel in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises](configuring-excel-addin.md)  
 [Registering an application Microsoft Entra ID](/azure/active-directory/develop/quickstart-register-app)    

@@ -1,14 +1,14 @@
 ---
-title: "Resources for Help and Support"
+title: Resources for Help and Support
 description: Learn about resources for support and product Help for Business Central if you are reselling partner or a developer.
 author: jswymer
-ms.topic: article
+ms.topic: reference
 ms.author: jswymer
-ms.date: 06/20/2024
-ms.reviewer: jswymer
+ms.date: 04/16/2025
+ms.reviewer: solsen
 ---
 
-# Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]
+# Resources for help and support for [!INCLUDE[prod_long](includes/prod_long.md)]
 
 As a [!INCLUDE[prod_short](includes/prod_short.md)] partner, you have access to resources that can help you support your [!INCLUDE[prod_short](includes/prod_short.md)] customers, and you have access to resources that can help you be more productive as a partner.  
 
@@ -31,11 +31,11 @@ In the [Development in AL](developer/devenv-dev-overview.md) section, you find d
 The reference documentation of the AL language publishes under the [AL Programming](developer/devenv-programming-in-al.md) umbrella. This content is partly generated automatically from code, but some of the reference content is maintained by hand. Use the following landing pages to quickly find the reference content that you need:
 
 * Methods
-  * [Data Types and Methods in AL](developer/methods-auto/library.md)
+  * [Data types and methods in AL](developer/methods-auto/library.md)
 * Properties
-  * [Properties Overview](developer/properties/devenv-properties.md)
+  * [Properties overview](developer/properties/devenv-properties.md)
 * Triggers
-  * [Triggers Overview](developer/triggers-auto/devenv-triggers.md)
+  * [Triggers overview](developer/triggers-auto/devenv-triggers.md)
 * Objects
   * [Table object](developer/devenv-table-object.md)
   * [Table extension object](developer/devenv-table-ext-object.md)
@@ -49,7 +49,7 @@ The reference documentation of the AL language publishes under the [AL Programmi
   * [Profile object](developer/devenv-profile-object.md)
   * [Control add-in object](developer/devenv-control-addin-object.md)
 
-### Product versions and Help versions
+### Product versions and help versions
 
 In general, the [!INCLUDE [prod_short](developer/includes/prod_short.md)] content on the learn.microsoft.com site reflects the latest version of [!INCLUDE [prod_short](developer/includes/prod_short.md)] online with limited support for earlier versions.  
 
@@ -57,7 +57,7 @@ If you support [!INCLUDE [prod_short](developer/includes/prod_short.md)] on-prem
 
 [!INCLUDE [ua-github-releases](includes/ua-github-releases.md)]
 
-Learn more at the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the Help Experience](deployment/configure-help.md) article.
+Learn more at the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the help experience](deployment/configure-help.md) article.
 
 ### Customize and extend the user assistance
 
@@ -71,7 +71,7 @@ Microsoft also provides content that can help you get started as a consultant, a
 
 As a [!INCLUDE[prod_short](includes/prod_short.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prod_short](includes/prod_short.md)] tenants, and you are the first line of support. You can customize the support experience, and you have access to information that can help you troubleshoot any issues that your customers report.  
 
-Learn more at [Technical Support](technical-support.md).  
+Learn more at [Technical support](technical-support.md).  
 
 ## Training
 
@@ -98,7 +98,7 @@ This article provides information about the following types of resources:
 
 ### <a name="partner"></a>Get set up as a partner
 
-If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. Learn more at [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) and [Get Started with Building Apps](developer/readiness/get-started.md).  
+If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. Learn more at [Get started as a reseller of Business Central online](administration/get-started-online.md) and [Get started with building apps](developer/readiness/get-started.md).  
 
 <!--### <a name="ready2go"></a>Get started with the "Ready to Go" program
 
@@ -199,7 +199,7 @@ Giving prospects access to a pre-configured trial of [!INCLUDE[prod_short](inclu
 
 Learn more at [Preparing Demonstration Environments](administration/demo-environment.md).  
 
-## See also
+## Related information
 
 [Technical Support](technical-support.md)  
 [Configuring the Help Experience](deployment/configure-help.md)  

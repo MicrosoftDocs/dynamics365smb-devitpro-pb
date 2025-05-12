@@ -3,7 +3,7 @@ title: "Extending Item Charges Distribution Methods"
 description: "How you extend item charges in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: grobyns
 ms.reviewer: jswymer
 ---
@@ -197,7 +197,7 @@ In the new codeunit, add a subscriber to the **OnAssignItemCharges** event.
 ```
 
 
-## See Also
+## Related information
 
 [Extending Application Areas](devenv-extending-application-areas.md)    
 [Module System Application](/dynamics365/business-central/application/system-application/module/system-application)    

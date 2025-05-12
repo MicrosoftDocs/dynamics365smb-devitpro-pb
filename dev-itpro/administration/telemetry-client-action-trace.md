@@ -2,7 +2,7 @@
 title:  Analyzing client action telemetry
 description: Learn about the telemetry from client action in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/07/2023
@@ -52,7 +52,7 @@ The pageViews table is a built-in table in Application Insights. Here are some o
 |eventId|**CL0003** |
 
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

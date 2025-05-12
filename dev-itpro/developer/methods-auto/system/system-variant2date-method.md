@@ -2,7 +2,7 @@
 title: "System.Variant2Date(Variant) Method"
 description: "Gets a date from a variant."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -49,7 +49,7 @@ begin
 end;
 ```  
 
-## See Also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

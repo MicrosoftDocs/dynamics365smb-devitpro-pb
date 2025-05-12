@@ -21,6 +21,6 @@ The version number '{0}' for the argument '{1}' does not match the expected form
 The provided version is malformed.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

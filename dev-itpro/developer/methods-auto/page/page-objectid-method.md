@@ -2,7 +2,7 @@
 title: "Page.ObjectId([Boolean]) Method"
 description: "Returns a string in the Page xxx format, where xxx is the caption or ID of the application object."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -49,7 +49,7 @@ Message(CurrPage.ObjectId(true));
 
 CurrPage is a system-defined variable. For more information, see [System-Defined Variables](../../devenv-system-defined-variables.md). 
 
-## See Also
+## Related information
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

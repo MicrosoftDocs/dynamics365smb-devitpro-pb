@@ -53,5 +53,5 @@ Here is a JSON representation of the securityGroupMember resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET securityGroupMember](../api/dynamics_securitygroupmember_get.md)

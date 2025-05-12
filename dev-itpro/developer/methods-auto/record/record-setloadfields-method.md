@@ -2,7 +2,7 @@
 title: "Record.SetLoadFields([Any,...]) Method"
 description: "Sets the fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -46,7 +46,9 @@ It is not necessary to include the following fields, because they are always sel
 
 Depending on the runtime version, the runtime may require extra fields to be selected for loading. Which extra fields to specify depends on the state of the record and table or table extension definition. For example, fields that are filtered upon are always loaded.
 
-This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
+[!INCLUDE [partial-records-note](../../includes/partial-records-note.md)]
+
+This method is part of the partial records capability for improving performance. Learn more in [Using partial records](../../devenv-partial-records.md).
 
 ## Example
 
@@ -70,7 +72,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 [Using Partial Records](../../devenv-partial-records.md)  
 [Record Data Type](record-data-type.md)  

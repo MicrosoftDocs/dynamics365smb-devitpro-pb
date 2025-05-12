@@ -2,9 +2,10 @@
 title: "FileUpload.CreateInStream(InStream, TextEncoding) Method"
 description: "Creates an InStream object for a file."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -35,7 +36,7 @@ The encoding that will be used by the stream. The default encoding is MSDos.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [FileUpload Data Type](fileupload-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

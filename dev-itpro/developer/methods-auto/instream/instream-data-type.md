@@ -1,8 +1,8 @@
 ---
-title: "InStream Data Type"
+title: "InStream data type"
 description: "Is a generic stream object that you can use to read from or write to files and BLOBs."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# InStream Data Type
+# InStream Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is a generic stream object that you can use to read from or write to files and BLOBs. You can define the internal structure of a stream as a flat stream of bytes. You can assign one stream to another. Reading from and writing to a stream occurs sequentially.
@@ -38,6 +38,6 @@ The following methods are available on instances of the InStream data type.
 |[ResetPosition()](instream-resetposition-method.md)|Resets the stream position on an InStream object.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

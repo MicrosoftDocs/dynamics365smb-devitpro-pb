@@ -64,7 +64,7 @@ Here is a JSON representation of the userGroup resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET userGroup](../api/dynamics_usergroup_get.md)  
 [DELETE userGroup](../api/dynamics_usergroup_delete.md)  
 [POST userGroup](../api/dynamics_usergroup_create.md)   

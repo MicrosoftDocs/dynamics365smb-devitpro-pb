@@ -3,7 +3,7 @@ title: Adding a FactBox to a page
 description: A FactBox is located on the right-most side of a page. This area is used to display related facts about the current record including charts, data from related tables, Notes, and Links.
 author: SusanneWindfeldPedersen
 ms.date: 05/03/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -172,7 +172,7 @@ Each browser has its own definition of whether a FactBox is considered within vi
 
 This applies to desktop, tablet, and phone clients.
 
-## See also 
+## Related information 
  
 [Pages overview](devenv-pages-overview.md)   
 [Page and page extension properties overview](properties/devenv-page-property-overview.md)  

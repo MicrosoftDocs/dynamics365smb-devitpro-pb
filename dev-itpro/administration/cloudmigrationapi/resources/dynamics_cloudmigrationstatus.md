@@ -103,6 +103,6 @@ Here is a JSON representation of the cloudMigrationStatus resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 
 [GET cloudMigrationStatus](../api/dynamics_cloudmigrationstatus_get.md)

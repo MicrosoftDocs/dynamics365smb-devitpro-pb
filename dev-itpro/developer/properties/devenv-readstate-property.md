@@ -1,8 +1,8 @@
 ---
-title: "ReadState Property"
+title: "ReadState property"
 description: "Specifies which records are read and how they are locked when a query is executed."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Specifies which records are read and how they are locked when a query is execute
 ## Applies to
 -   Query
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -37,6 +37,6 @@ The ReadState property will overrule the current transaction type of the data as
   
 Each query will use the specified ReadState regardless of other queries that have already been executed. This means that you can read uncommitted data and committed data from the same tables in the same transaction. However, the strictest lock placed on a row will remain until the transaction is committed.
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  

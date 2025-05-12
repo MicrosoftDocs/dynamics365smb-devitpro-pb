@@ -2,8 +2,7 @@
 title: Transitioning from API v1.0 to API v2.0
 description: Reference content for transitioning Dynamics 365 Business Central v1.0 API to v2.0.
 author: OnatBuyukakkus
-ms.custom: bap-template
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: get-started
 ms.devlang: al
 ms.date: 01/20/2024
@@ -39,7 +38,7 @@ In v1.0, following resources didn’t use the SystemId as the primary key. Inste
 - trialBalance
 - vendorPurchase
 
-All multipart keys and non-GUID in v2.0 are replaced with unique GUID keys. API v2.0 entities can be retrieved with the `SystemId`. `SystemId` is immutable, platform-enforced and indexed. This change improves auditing and API reading performance. It's also possible to create a new record and provide the `SystemId` in API v2.0.
+All multipart keys and non-GUID in v2.0 are replaced with unique GUID keys. API v2.0 entities can be retrieved with the `SystemId`. `SystemId` is immutable, platform-enforced, and indexed. This change improves auditing and API reading performance. It's also possible to create a new record and provide the `SystemId` in API v2.0.
 
 ## Nested objects
 
@@ -170,7 +169,7 @@ All properties that were of type option in API v1.0 are converted into enums for
 
 This change allows integration utilizing [!INCLUDE [prod_short](../../developer/includes/prod_short.md)] API v2.0 to determine available values for enum properties, for example displaying dropdown values to the end user.
 
-## See also
+## Related information
 
 [API (v2.0) documentation](index.md)  
 [API (v1.0) documentation](../v1.0/index.md)  

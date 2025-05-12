@@ -1,40 +1,75 @@
 ---
-title: "Handling Errors by Using Try Methods"
+title: Handling errors using try methods
 description: Try methods in AL enable you to handle errors that occur in the application during code execution.
-ms.date: 09/28/2022
-ms.topic: conceptual
+ms.date: 12/20/2024
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# Handling Errors using Try Methods
+# Handling errors using try methods
 
-Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than those that are thrown by the system.  
+Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than errors thrown by the system.
 
 > [!NOTE]
-> Try Methods are available from runtime version 2.0.
+> Try methods are available from runtime version 2.0.
 
 ## Behavior and usage
 
-The main purpose of try methods is to catch errors/exceptions that are thrown by the [!INCLUDE[prod_short](includes/prod_short.md)] AL platform or exceptions that are thrown during .NET Framework interoperability operations (only for on-premises). Try methods catch errors similar to a conditional Codeunit. Except for the try method, the Run method call doesn't require that write transactions are committed to the database, and changes to the database that are made with a try method aren't rolled back.
+The main purpose of try methods is to catch errors/exceptions thrown by the [!INCLUDE[prod_short](includes/prod_short.md)] AL platform. For on-premises, they can catch exceptions thrown during .NET Framework interoperability operations. Try methods catch errors similar to a conditional codeunit. Except for the try method, the `Run` method call doesn't require that write transactions are committed to the database, and changes to the database that are made with a try method aren't rolled back.
 
 ### <a name="DbWriteTransactions"></a>Database write transactions in try methods
 
-Because changes made to the database by a try method aren't rolled back, you shouldn't include database write transactions within a try method. By default, the [!INCLUDE[server](includes/server.md)] configuration prevents you from doing this. If a try method contains a database write transaction, a runtime error occurs.
+Because changes made to the database by a try method aren't rolled back, you shouldn't include database write transactions within a try method. For [!INCLUDE[prod_short](includes/prod_short.md)] online, there are no restrictions on performing write transactions in try methods. For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] prevents database write transactions within try methods by default. If a try method contains a database write transaction, a runtime error occurs. You can allow write transactions by setting the `DisableWriteInsideTryFunctions` parameter in the [!INCLUDE[server](includes/server.md)] configuration to `false`. Learn more about configuring the server in [Configure Business Central Server](../administration/configure-server-instance.md). This behavior might change in an upcoming release.
 
 ### Handling errors with a return value
 
 A method that is designated as a try method has a Boolean return value (**true** or **false**), and has the construction `OK:= MyTrymethod`. A try method can't have a user-defined return value.
 
-- If a try method call doesn't use the return value, the try method operates like an ordinary method, and errors are exposed as usual.  
-
+- If a try method call doesn't use the return value, the try method operates like an ordinary method, and errors are exposed as usual. Learn more in the [Try method calls that don't use the return value](#try-method-calls-that-dont-use-the-return-value) section below.
 - If a try method call uses the return value in an `OK:=` statement or a conditional statement such as `if-then`, errors are caught. The try method returns `true` if no error occurs; `false` if an error occurs. 
 
 > [!NOTE]  
 > The return value isn't accessible within the try method itself.  
 
+#### Try method calls that don't use the return value
+
+If the return variable for a call to a function, which is attributed with [TryFunction] isn't used, then the call isn't considered a try function call. When the call isn't considered a try function call, you can perform database transactions inside the function.
+
+The following examples illustrates this behavior:
+
+```AL
+[TryFunction]
+procedure DoWork() 
+begin 
+  Error(''); 
+end;
+
+DoWork();               // Fails, the call isn't a try function
+
+Result := DoWork();     // Will not fail, but return false
+if DoWork() then        // Will not work, but return false 
+```
+
+Arguments for a try function are evaluated inside the try function. 
+
+```AL
+[TryFunction]
+DoInsert(Rec: RecordRef)
+Begin
+  Rec.Insert()
+End;
+DoWork(DoInsert(Rec));            // Allowed as the DoWork return value isn't used so it's not a try function
+Result := DoWork(DoInsert(Rec));  // Not allowed as the DoInsert calls insert and is evaluated inside 
+                                  // the try function. Move the DoInsert(Rec) outside the try function.
+
+If DoWork(DoInsert(Rec)) then    // Not allowed as above.
+```
+
 ### Getting details about errors
 
-You can use the [GetLastErrorText method](methods-auto/system/system-getlasterrortext--method.md) to obtain errors that are generated by [!INCLUDE[prod_short](includes/prod_short.md)]. To get details of exceptions that are generated by the AL platform or by .NET objects, you can use the [GetLastErrorObject method](methods-auto/system/system-getlasterrorobject-method.md) to inspect the `Exception.InnerException` property.
+You can use the [GetLastErrorText method](methods-auto/system/system-getlasterrortext--method.md) to obtain errors generated by [!INCLUDE[prod_short](includes/prod_short.md)]. To get details of exceptions generated by the AL platform or by .NET objects, you can use the [GetLastErrorObject method](methods-auto/system/system-getlasterrorobject-method.md) to inspect the `Exception.InnerException` property.
 
 <!--
 > [!TIP]  
@@ -87,7 +122,7 @@ begin
 end;
 ```
 
-When you run the codeunit, instead of stopping the execution of the `OnRun` trigger when the error occurs, the error is caught and the message `Something went wrong` is returned.
+When you run the codeunit, instead of stopping the execution of the `OnRun` trigger when the error occurs, the error is caught, and the message `Something went wrong` is returned.
 
 <!--
 ## Example 2 
@@ -157,8 +192,8 @@ END;
 ```  
 -->
 
-## See Also  
+## Related information  
 
 [Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
-[AL error handling](devenv-al-error-handling.md)   
+[AL error handling](devenv-al-error-handling.md)  
 [AL Simple Statements](devenv-al-simple-statements.md)

@@ -3,7 +3,7 @@ title: User scenario documentation
 description: Describing how to generate the required scenario document to get your app approved for AppSource.
 author: SusanneWindfeldPedersen
 ms.date: 04/11/2023
-ms.topic: conceptual
+ms.topic: article
 ms.author: freddyk
 ms.reviewer: jswymer
 ---
@@ -70,8 +70,8 @@ Here's an example of the level of detail we're looking for, based on running the
 
 12. Choose **Publish**
 
-## See Also
+## Related information
 
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-[Rules and Guidelines for AL Code](apptest-overview.md)  
+[Checklist for submitting your app](../developer/devenv-checklist-submission.md)  
+[Rules and guidelines for AL code](apptest-overview.md)  
 [User assistance model](../user-assistance.md)  

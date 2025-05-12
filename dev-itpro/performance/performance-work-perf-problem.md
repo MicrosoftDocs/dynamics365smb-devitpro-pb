@@ -3,7 +3,7 @@ title: How to work with a performance problem
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
 ms.date: 05/31/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: KennieNP
 ---
 
@@ -132,7 +132,7 @@ This example illustrates how you can use the performance tuning process and tele
 
 
 
-## See also
+## Related information
 
 [Performance overview](performance-overview.md)  
 [Performance topics For developers](performance-developer.md)  

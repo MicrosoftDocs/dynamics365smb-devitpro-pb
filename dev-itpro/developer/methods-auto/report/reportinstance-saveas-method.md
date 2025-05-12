@@ -2,7 +2,7 @@
 title: "Report.SaveAs(Text, ReportFormat, var OutStream [, RecordRef]) Method"
 description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -64,7 +64,7 @@ For a simple example that illustrates how to use the `SaveAs` method, see the ex
 The method can fail in the following ways:
 - If the string of request page parameters as XML specified in "*Parameters*" can't be parsed as valid request page data.
 
-## See also
+## Related information
 
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

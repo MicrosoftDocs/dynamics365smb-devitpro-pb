@@ -2,7 +2,7 @@
 title: Controlling Edit in Excel on list pages
 description: This article explains how to control the Edit in Excel system action on list pages.
 ms.date: 05/02/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.reviewer: jswymer
 ms.author: kepontop
 author: kennienp
@@ -30,6 +30,6 @@ The **Edit in Excel** action isn't enabled by default for on-premises (and Docke
 
 For more information on how to enable the action for on-premises (and Docker sandbox) environments, see [Setting up the Business Central add-in for Excel (on-premises)](../administration/configuring-excel-addin.md).
 
-## See also
+## Related information
 
 [Setting up the Business Central add-in for Excel (on-premises)](../administration/configuring-excel-addin.md)  

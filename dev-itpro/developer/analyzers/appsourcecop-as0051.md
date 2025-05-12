@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0051"
 description: "The manifest property must be specified and contain a meaningful value."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,9 +18,11 @@ The manifest property must be specified and contain a meaningful value. The valu
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-The list of properties which must be specified in the manifest of extensions targeting the AppSource marketplace can be found in [App.json file](../devenv-json-files.md#appjson-file).
+## Remarks 
 
-## See Also  
+The list of properties, which must be specified in the manifest of extensions targeting the AppSource marketplace can be found in [App.json file](../devenv-json-files.md#appjson-file).
+
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

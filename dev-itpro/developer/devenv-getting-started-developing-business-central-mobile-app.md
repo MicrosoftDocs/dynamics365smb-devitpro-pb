@@ -2,7 +2,7 @@
 title: Get started developing for the Dynamics 365 Business Central mobile app
 description: Learn how to develop for the Dynamics 365 Business Central Mobile App with this comprehensive guide. Includes design tips, best practices, and deployment steps.
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: get-started
 author: SusanneWindfeldPedersen
 ms.collection: get-started
 ---
@@ -33,7 +33,7 @@ To complete designing your [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] s
   
 The next steps are to consider how to deploy your solution and how to distribute it to your customers. After you complete your solution, you can send an e-mail to the users to let them know that they can download [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] from the relevant store and include the organization URL and sign-in information. For more information, see [Linking to the Dynamics 365 Business Central mobile app](devenv-link-to-mobile-app.md).  
   
-## See also
+## Related information
 
 [Deciding on your tablet and phone strategy](devenv-deciding-on-tablet-and-phone-strategy.md)  
 [Differences and limitations when developing pages for the Dynamics 365 Business Central mobile app](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  

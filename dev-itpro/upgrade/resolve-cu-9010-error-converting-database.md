@@ -3,7 +3,7 @@ title: "Resolving Codeunit 9010 Compilation Error"
 description: "Explains how to resolve the compilation error that you get for Codeunit 9010 when converting a database from Dynamics NAV 2018."
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Resolving Codeunit 9010 Compilation Error
@@ -665,6 +665,6 @@ OBJECT Codeunit 9010 Microsoft Entra ID User Management
 }
 ```
 
-## See Also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)  
  [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)  

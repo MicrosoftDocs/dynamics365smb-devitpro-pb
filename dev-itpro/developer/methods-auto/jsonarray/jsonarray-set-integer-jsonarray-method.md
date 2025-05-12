@@ -2,7 +2,7 @@
 title: "JsonArray.Set(Integer, JsonArray) Method"
 description: "Replaces the value at the given index with a new value."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -47,7 +47,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 > [!NOTE]  
 > The JsonArray is 0-based by design.
 
-## See Also
+## Related information
 [JsonArray Data Type](jsonarray-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

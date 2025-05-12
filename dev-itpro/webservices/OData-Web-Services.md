@@ -4,7 +4,7 @@ description: Learn about OData web services and how to create and maintain these
 ms.custom: bap-template
 ms.date: 02/28/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: kepontop
 author: kennieP
 ---
@@ -49,6 +49,6 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance has several con
 ## Known Limitations with Business Central OData
 The Open Data Protocol \(OData\) implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not implement all features in the OData specification. For more information, see [Known OData Limitations](odata-known-limitations.md).
 
-## See Also  
+## Related information  
 
 [SOAP Web Services](SOAP-Web-Services.md)

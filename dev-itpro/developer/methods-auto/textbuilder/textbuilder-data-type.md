@@ -1,8 +1,8 @@
 ---
-title: "TextBuilder Data Type"
+title: "TextBuilder data type"
 description: "Represents a lighweight wrapper for the .Net implementation of StringBuilder."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TextBuilder Data Type
+# TextBuilder Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Represents a lighweight wrapper for the .Net implementation of StringBuilder.
@@ -45,7 +45,7 @@ The [Text Data Type](..\text\text-data-type.md) is a value type, such that every
 
 The **TextBuilder** data type is a reference type, which holds a pointer elsewhere in memory. For performance reasons, we recommend you to use it when you want to modify a string without creating a new object. For example, using **TextBuilder** data type can boost performance when concatenating many strings together in a loop.
 
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Text Data Type](..\text\text-data-type.md) 

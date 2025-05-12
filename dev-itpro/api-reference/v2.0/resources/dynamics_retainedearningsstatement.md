@@ -4,7 +4,7 @@ description: A retained earnings statement object in Dynamics 365 Business Centr
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a retained earnings statement in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -25,8 +23,6 @@ Represents a retained earnings statement in [!INCLUDE[prod_short](../../../inclu
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET retainedEarningsStatement](../api/dynamics_retainedearningsstatement_get.md)|retainedEarningsStatement|Gets a retained earnings statement object.|
-
-
 
 ## Properties
 
@@ -42,7 +38,7 @@ Represents a retained earnings statement in [!INCLUDE[prod_short](../../../inclu
 
 ## JSON representation
 
-Here is a JSON representation of the retainedEarningsStatement resource.
+Here's a JSON representation of the retainedEarningsStatement resource.
 
 
 ```json
@@ -56,9 +52,7 @@ Here is a JSON representation of the retainedEarningsStatement resource.
     "dateFilter": "date"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET retainedEarningsStatement](../api/dynamics_retainedEarningsStatement_Get.md)

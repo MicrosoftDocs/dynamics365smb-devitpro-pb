@@ -3,7 +3,7 @@ title: Publishing a code-customized Base Application
 description: Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem.
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -138,7 +138,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
 The Base Application is now published with the small customization of bolding the text in the **Name** field on the **Customer Card** page.
 
-## See Also
+## Related information
 
 [Unpublishing and Uninstalling Extensions](devenv-unpublish-and-uninstall-extension-v2.md)  
 [Developing Extensions](devenv-dev-overview.md)

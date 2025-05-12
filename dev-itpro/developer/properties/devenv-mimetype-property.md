@@ -1,8 +1,8 @@
 ---
-title: "MimeType Property"
+title: "MimeType property"
 description: "Sets the mimetype that is associated with this custom report layout."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -24,7 +24,7 @@ Sets the mimetype that is associated with this custom report layout.
 
 To enable a custom report layout, the MimeType property must be set. The [Type (Report) Property](devenv-type-report-property.md) must then be set to **Custom**.
 
-## See Also
+## Related information
 
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

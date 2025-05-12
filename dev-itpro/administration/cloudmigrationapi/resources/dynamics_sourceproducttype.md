@@ -48,5 +48,5 @@ Here is a JSON representation of the sourceProductType resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 
-## See Also
+## Related information
 [GET sourceProductType](../api/dynamics_sourceproducttype_get.md)

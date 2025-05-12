@@ -52,5 +52,5 @@ In this section, you can find API documentation for Microsoft Graph.
 |generalLedgerEntries resource type|[generalLedgerEntries](../resources/dynamics_generalLedgerEntries.md)|
 |complex types JSON|[Complex Types JSON](../resources/dynamics_complextypes.md)|
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  

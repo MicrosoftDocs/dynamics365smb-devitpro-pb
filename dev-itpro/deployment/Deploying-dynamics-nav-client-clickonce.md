@@ -2,7 +2,7 @@
 title: Dynamics NAV client connected to Business Central using ClickOnce
 description: Learn how to deploy the Dynamics NAV Client connected to Business Central using ClickOnce
 ms.date: 06/20/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.search.keywords: NAV Windows client
 author: jswymer
 ms.custom: evergreen
@@ -303,6 +303,6 @@ The following are limitations of ClickOnce installed on the [!INCLUDE[nav_window
 - An end user can send a list page to Excel, but can't refresh data from the Excel application.  
 - Third-party applications can't start the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)].  
   
-## See also
+## Related information
 
 [Deployment](Deployment.md)  

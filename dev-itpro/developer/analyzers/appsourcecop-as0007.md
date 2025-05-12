@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0007"
 description: "Objects that have been published must not change namespace."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -26,7 +26,7 @@ This rule does not exist anymore and has been replaced by:
 - [AS0041 - For field property removal](appsourcecop-as0041.md)
 - [AS0042 - For key property removal](appsourcecop-as0042.md)
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

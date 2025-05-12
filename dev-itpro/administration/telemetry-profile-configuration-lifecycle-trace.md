@@ -4,7 +4,7 @@ description: Learn about the telemetry for configuration profiles using the in-c
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/18/2023
 ms.custom: bap-template
 ---
@@ -308,7 +308,7 @@ Occurs when a page customization was converted successfully.
 
 Use this telemetry data to determine how the users are working with the profiles that you provide in extensions. Then, make changes to better suit the users needs as you see fit.
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

@@ -2,7 +2,7 @@
 title: OData Web Services Data Modification
 description: Write to the database using an OData web service that exposes a writable page and implement it in on Microsoft SharePoint Online.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # Using OData Web Services to Modify Data
 You can write to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database using an OData web service that exposes a writable page. For example, you can expose a page as an OData web service and implement it in a portal that is based on Microsoft SharePoint Online. Users of the portal can then modify the data.  
@@ -43,7 +43,7 @@ PATCH operations require the 'If-Match' header to be set, either with a retrieve
   
  If no default company can be found based on the criteria, an error message appears.  
   
-## See Also  
+## Related information  
 
 [Known OData limitations](odata-known-limitations.md)   
 [OData Web Services](OData-Web-Services.md)   

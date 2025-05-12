@@ -21,6 +21,6 @@ The value for the property '{0}' for the language code '{1}' is not valid becaus
 The length of the value for any language code in a multilanguage property defined in a profile or profile extension should not exceed 100 characters.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

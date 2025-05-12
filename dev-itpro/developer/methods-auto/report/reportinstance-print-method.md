@@ -2,7 +2,7 @@
 title: "Report.Print(Text [, Text] [, RecordRef]) Method"
 description: "Prints a specified report without running the request page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -47,7 +47,7 @@ The RecordRef that refers to the table in which you want to find a record.
  You typically use this method together with the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method. The RunRequestPage method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the Print method to get the parameter string and print the report.  
 
  For a simple example that illustrates how to use the Print method, see example in the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method topic.  
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -2,7 +2,7 @@
 title: "Xmlport.Run(Integer [, Boolean] [, Boolean] [, var Record]) Method"
 description: "Loads and executes the XmlPort that you specify."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -40,7 +40,7 @@ The record to use in the XmlPort. The system will use any filters that are attac
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Xmlport Data Type](xmlport-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

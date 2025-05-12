@@ -21,6 +21,6 @@ The object {0} '{1}' is not extensible.
 API pages or objects with the **Extensible** property set to **false** cannot be extended.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -2,7 +2,7 @@
 title: "Page.Update([Boolean]) Method"
 description: "Saves the current record and then updates the controls on the page."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -37,7 +37,7 @@ Set this parameter to true if you want to save the current record. Set this para
 
 The `SaveRecord` default depends on whether SourceTable is specified or not. If SourceTable is not defined (== null), then the default value is `false`. If SourceTable is specified then the default value is `true`.
 
-## See Also
+## Related information
 
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

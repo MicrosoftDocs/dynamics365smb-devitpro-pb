@@ -70,5 +70,5 @@ Here is a JSON representation of the detailedCustomerLedgerEntry resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET detailedCustomerLedgerEntry](../api/dynamics_detailedcustomerledgerentry_get.md)

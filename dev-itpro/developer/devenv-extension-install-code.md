@@ -3,7 +3,7 @@ author: jswymer
 title: "Writing extensions installation code"
 description: "Describes how to add code to run to initialize data when an extension is installed."
 ms.date: 02/04/2022
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ---
 
 # Writing Extension Install Code
@@ -101,7 +101,7 @@ codeunit 50100 MyInstallCodeunit
 
 ```
 
-## See Also  
+## Related information  
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  

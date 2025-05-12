@@ -2,7 +2,7 @@
 title: Analyzing Verbose Enable and Disable Telemetry | Microsoft Docs
 description: Learn about the verbose logging telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/23/2022
@@ -86,7 +86,7 @@ The following table explains the custom dimensions included in the trace.
 
 -->
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

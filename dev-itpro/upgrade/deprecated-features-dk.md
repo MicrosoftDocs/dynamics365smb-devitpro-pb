@@ -3,7 +3,7 @@ title: Danish Features that are Moved, Removed, or Replaced
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Denmark that we have moved, removed, or replaced.
 author: bholtorf
 
-ms.topic: conceptual
+ms.topic: reference
 ms.devlang: al
 ms.search.keywords: deprecated, Denmark, local functionality
 ms.date: 04/01/2021
@@ -19,7 +19,7 @@ This topic lists and describes the local functionality for Denmark that has been
 
 [!INCLUDE [fields-obsolete-dk](../includes/fields-obsolete-dk.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

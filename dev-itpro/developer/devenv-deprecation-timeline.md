@@ -4,7 +4,7 @@ description: "Description of the timeline for deprecating code in Business Centr
 author: SusanneWindfeldPedersen
 ms.date: 09/26/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ---
 
@@ -24,7 +24,7 @@ When a major update of [!INCLUDE[prod_short](../includes/prod_short.md)] is rele
 
 If you want to validate that your extension doesn't reference objects that are pending obsoletion with an obsolete tag version lower than a given version, you can use the [AppSourceCop](analyzers/appsourcecop.md) by setting the `obsoleteTagMinAllowedMajorMinor` in the AppSourceCop.json. For more information, see [AS0105](analyzers/appsourcecop-as0105.md).
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  

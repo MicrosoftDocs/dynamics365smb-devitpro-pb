@@ -162,7 +162,7 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 
    Apart from required parameters, you can also control the following options:
 
-   - Microsoft Entra tenant mapping (define which customer names correspond to which Microsoft Entra tenant IDs). The format for this parameter is `{"map":[{ "AAD tenant id":"aaaabbbb-0000-cccc-1111-dddd2222eeee" , "Domain":"Contoso 1" },{ "AAD tenant id":"0140d8e7-ef60-4cc3-9a6b-b89042b3ea1f" , "Domain":"Contoso 2"}]}`
+   - Microsoft Entra tenant mapping (define which customer names correspond to which Microsoft Entra tenant IDs). The format for this parameter is `{"map":[{ "AAD tenant id":"aaaabbbb-0000-cccc-1111-dddd2222eeee" , "Domain":"Contoso 1" },{ "AAD tenant id":"aaaabbbb-0000-cccc-1111-dddd2222eeee" , "Domain":"Contoso 2"}]}`
    - Timezone (the Business Central platform emits telemetry in the UTC time zone. By setting a Timezone, all visuals that show telemetry by hour of day will adjust to show data in the configured time zone).
    - Whether the app should refresh data (the default is every night around midnight); this option is hidden under **Advanced**.
 
@@ -193,7 +193,7 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 
 The following video shows how to connect Power BI telemetry apps to read your telemetry data.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fIjn]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=534b2e49-9dcc-4529-978f-660f3da07ee8]
 
 ## Install, share, and update apps
 
@@ -204,7 +204,7 @@ From time to time, the app is released in a new improved version via AppSource. 
 
 The following video shows how to change dataset properties for a Power BI telemetry app in Power BI.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fxZ6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6eb42dc4-e7ef-457d-afae-02edc6fb00b5]
 
 
 ## Share the app with coworkers and others
@@ -269,10 +269,9 @@ If you don't see any data in any pages in the report (but the dataset refreshes 
 When configuring the app, please keep the **Authentication method** set to **OAuth2**. If you get the error *The OAuth authentication method isn't supported for this data source*, check if the application ID is correct; that's usually the root cause for that error.
 
 
-## See also
+## Related information
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  
 [Analyze Telemetry with KQL](telemetry-analyze-with-kql.md)
 [Telemetry FAQ](telemetry-faq.md)
-

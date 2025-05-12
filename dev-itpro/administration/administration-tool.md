@@ -6,7 +6,7 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.date: 04/14/2024
 ms.service: dynamics-365-op
@@ -77,6 +77,6 @@ You can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to con
     > [!TIP]  
     >  When you close MMC, you are prompted to save your settings to a Microsoft Management Console \(.msc\) file. If you save your settings, then you can use this file to open MMC with your [!INCLUDE[server](../developer/includes/server.md)] computers already listed  
 
-## See Also
+## Related information
 [Configuring Business Central Server Instances](configure-server-instance.md)  
 [Administration Center API](administration-center-api.md)  

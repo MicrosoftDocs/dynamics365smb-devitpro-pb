@@ -3,7 +3,7 @@ title: Viewing table data
 description: View tables in browser for troubleshooting
 author: jswymer
 ms.date: 06/17/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -147,7 +147,7 @@ You cannot view virtual tables or the following system tables:
 > [!NOTE]  
 > The tables marked with * in the table above changed names with Business Central 2020 release wave 1. For more information, see [Deprecated Tables](../upgrade/deprecated-tables.md).
 
-## See Also  
+## Related information  
 
 [Developing Extensions](devenv-dev-overview.md)  
 [Deprecated Tables](../upgrade/deprecated-tables.md)  

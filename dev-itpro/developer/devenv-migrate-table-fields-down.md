@@ -3,7 +3,7 @@ title: "Moving Tables and Fields to Extensions Down the Dependency Graph"
 description: Explains how to move tables and fields from an extension to another extension that is down the dependency graph.
 author: jswymer
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -115,7 +115,7 @@ The receiving extension will contain the table and fields that you want to move.
 
     This step basically installs the new extension version. You run a data upgrade because an earlier version has been installed and is still published.
 
-## See Also
+## Related information
 
 [Migrating Tables and Fields Between Extensions](devenv-migrate-table-fields.md)  
 [Moving Tables and Fields to Extension Up the Dependency Graph](devenv-migrate-table-fields-up.md)  

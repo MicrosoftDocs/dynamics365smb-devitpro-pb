@@ -1,8 +1,8 @@
 ---
 title: Lifecycle of apps and extensions
 description: Overview of the process of updating an app for Business Central.
-author: solsen
-ms.topic: conceptual
+author: SusanneWindfeldPedersen
+ms.topic: article
 ms.author: solsen
 ms.date: 04/17/2024
 ms.reviewer: solsen
@@ -74,7 +74,7 @@ When an extensions gets uninstalled, these tables do not get removed. Therefore,
 
 For more information, see [When apps or PTEs cannot be updated by Microsoft](app-maintain.md#when-microsoft-cant-update-apps-or-ptes).  
 
-## See also
+## Related information
 
 [Publishing and installing an extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  

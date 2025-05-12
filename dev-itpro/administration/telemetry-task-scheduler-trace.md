@@ -2,7 +2,7 @@
 title: Analyzing Task Scheduler Telemetry
 description: Learn about the task scheduler telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 12/15/2023
@@ -333,7 +333,7 @@ The following table explains the general dimensions of this trace.
 [!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
 
 
-## See also
+## Related information
 [Task Scheduler](../developer/devenv-task-scheduler.md)   
 [Telemetry overview](telemetry-overview.md)  
 [Enabling Telemetry](telemetry-enable-application-insights.md)  

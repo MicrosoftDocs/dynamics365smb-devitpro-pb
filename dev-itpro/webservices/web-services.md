@@ -4,7 +4,7 @@ description: Compare the features of REST APIs, SOAP, and OData web services and
 author: kenniep
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: reference
 ms.author: kepontop
 ms.date: 02/28/2024
 ---
@@ -176,7 +176,7 @@ https://localhost:7048/BC230/ODataV4/Company('CRONUS-International-Ltd.')/Custom
 
 For more information, see [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md).  
 
-## See also
+## Related information
 
 - [Web Service Telemetry](web-service-telemetry.md)  
 - [Web service performance](web-service-performance.md)  

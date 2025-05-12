@@ -7,7 +7,7 @@ ms.custom:
 ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Monitoring Business Central Server
@@ -23,6 +23,6 @@ These articles describe the features for monitoring and troubleshooting [!INCLUD
 
 [Troubleshooting: Using Query Store to Monitor Query Performance](troubleshoot-query-performance-using-query-store.md)
 
-## See Also
+## Related information
 [Monitoring SQL Database Locks](monitor-database-locks.md)  
 

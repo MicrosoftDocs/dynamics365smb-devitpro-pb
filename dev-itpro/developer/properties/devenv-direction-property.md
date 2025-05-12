@@ -1,8 +1,8 @@
 ---
-title: "Direction Property"
+title: "Direction property"
 description: "Sets the XmlPort to import, export, or import and export data in XML format."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -18,7 +18,7 @@ Sets the XmlPort to import, export, or import and export data in XML format.
 ## Applies to
 -   Xml Port
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -38,6 +38,6 @@ Sets the XmlPort to import, export, or import and export data in XML format.
 Direction = Import;
 ```
 
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

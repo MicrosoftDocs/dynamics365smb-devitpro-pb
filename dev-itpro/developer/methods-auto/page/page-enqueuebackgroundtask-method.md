@@ -2,7 +2,7 @@
 title: "Page.EnqueueBackgroundTask(var Integer, Integer [, var Dictionary of [Text, Text]] [, Integer] [, PageBackgroundTaskErrorLevel]) Method"
 description: "Creates and queues a background task that runs the specified codeunit (without a UI) in a read-only child session of the page session."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -130,7 +130,7 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
     end;
 ```
 
-## See Also
+## Related information
 
 [Page Background Tasks](../../devenv-page-background-tasks.md)  
 [Page Data Type](page-data-type.md)  

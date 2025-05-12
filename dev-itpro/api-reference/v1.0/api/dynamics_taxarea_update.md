@@ -69,6 +69,6 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Microsoft Graph Reference](../api/dynamics_graph_reference.md)  

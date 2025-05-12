@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get contacts
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
@@ -33,7 +31,7 @@ GET businesscentralPrefix/companies({id})/contacts({id})
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -43,14 +41,14 @@ If successful, this method returns a ```200 OK``` response code and a **contact*
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/contacts({id})
 ```
 
 **Response**
-Here is an example of the response.
+Here's an example of the response.
 
 
 ```json
@@ -83,7 +81,7 @@ Here is an example of the response.
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [contact](../resources/dynamics_contact.md)  

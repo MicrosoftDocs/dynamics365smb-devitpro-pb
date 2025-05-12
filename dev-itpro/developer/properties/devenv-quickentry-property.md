@@ -1,8 +1,8 @@
 ---
-title: "QuickEntry Property"
+title: "QuickEntry property"
 description: "Specifies if the page control should have input focus."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -74,6 +74,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 Now, when a user enables **Allow Invoice Disc.** on the customer card, the **Credit Limit (LCY)** field gets focus when the user presses Enter. Without this modification, focus skips over the field when the user presses Enter.
 
 
-## See Also
+## Related information
   
 [Properties](devenv-properties.md)

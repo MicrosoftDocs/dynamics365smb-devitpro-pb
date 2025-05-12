@@ -2,7 +2,7 @@
 title: Transferring data between tables using DataTransfer
 description: Learn about the DataTransfer object type and how to use it to move data between tables.
 author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.date: 03/07/2023
 ms.reviewer: jswymer
@@ -235,6 +235,6 @@ end;
 
 As with CopyFields, CopyRows is a bulk operation. It provides performant execution by doing only a single SQL statement for the entire operation, instead of doing multiple per-row operations. Measurements have shown an ~50x performance improvement with a DataTransfer solution compared with a record API solution.
 
-## See Also
+## Related information
 
 [Upgrading Extensions](devenv-upgrading-extensions.md)  

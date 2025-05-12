@@ -2,7 +2,7 @@
 title: Boolean operators
 description: Description of the Boolean operators in AL for Business Central.
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/01/2024
 ms.author: solsen
 author: KennieNP
@@ -25,7 +25,7 @@ As the following table shows, the `not` operator is a unary prefix operator. Thi
 |`or`|Logical or|bool1 or bool2|Boolean|  
 |`xor`|Exclusive logical or|bool1 xor bool2|Boolean|  
 
-## See also
+## Related information
 
 [AL operators](devenv-al-operators.md)  
 [Arithmetic operators](devenv-al-arithmetic-operators.md)  

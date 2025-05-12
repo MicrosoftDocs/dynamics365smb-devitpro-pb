@@ -4,7 +4,7 @@ description: Explains how to resolve the compilation errors that you get for Pag
 ms.custom: evergreen
 ms.date: 04/18/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Resolving Page 2500 Compilation Error
@@ -24,6 +24,6 @@ With:
 ```
 Designer.GenerateDesignerPackageZipStreamByVersion(NvOutStream,ID,VersionString);
 ```
-## See Also  
+## Related information  
  [Converting a Database](Converting-a-Database.md)  
  [Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database](Resolve-Compile-Errors-When-Converting-Dynamics-NAV-2018-Database.md)  

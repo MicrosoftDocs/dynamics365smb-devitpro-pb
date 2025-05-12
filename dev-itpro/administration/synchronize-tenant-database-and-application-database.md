@@ -7,7 +7,7 @@ ms.custom:
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Synchronizing the Tenant Database with the Application Database
@@ -53,7 +53,7 @@ This article describes how to synchronize the business data \(tenant\) database 
 
 3.  Select <kbd>Enter</kbd> to run the cmdlet.  
 
-## See Also  
+## Related information  
 [Converting a Database.md](../upgrade/Converting-a-Database.md)  
 [Upgrading the Database](../upgrade/Upgrading-the-Data.md)  
 [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md)   

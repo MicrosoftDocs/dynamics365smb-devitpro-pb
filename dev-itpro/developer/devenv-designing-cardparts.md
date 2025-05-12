@@ -2,7 +2,7 @@
 title: Working with Card Part
 description: Design and implementation tips for page part of type CardPart.
 ms.date: 06/06/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: brobledodiaz
 author: blrobl
 ms.reviewer: jswymer
@@ -103,7 +103,7 @@ page 50102 "Customer Card"
 }
 ```
 
-## See Also
+## Related information
 
 [Page Parts Overview](devenv-designing-parts.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  

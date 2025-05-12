@@ -2,7 +2,7 @@
 title: "Creating a Printer Extension"
 description: Describes how to create an extension that sets up cloud printers. 
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Creating a Printer Extension
@@ -429,7 +429,7 @@ The report object payload is a JSON object that includes several parameters and 
 
 The parameters can be read but not modified at runtime. For more information about the report payload, see [Report Payload](devenv-onafterdocumentprintready-event.md#reportpayload).
 
-## See Also  
+## Related information  
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
 [Developing Printer Extensions Overview](devenv-reports-printing.md)  

@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Setting up App Key Vaults for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises
@@ -177,7 +177,7 @@ At this point, you can run your extensions that use key vault secrets to read se
 > [!TIP]
 > If your on-premises solution uses the [ImportStreamWithUrlAccess](../developer/methods-auto/system/system-importstreamwithurlaccess-method.md) method, you must have set up an Azure blob storage account and stored the account name and account keys in the current subscription's Azure KeyVault using the identifiers TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. That way, your users can use the integration with Outlook.
 
-## See Also  
+## Related information  
 
 [Using App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault-overview.md)  
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  

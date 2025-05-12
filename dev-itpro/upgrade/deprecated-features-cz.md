@@ -3,7 +3,7 @@ title: Czech Features that are Moved, Removed, or Replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Czech that we have moved, removed, or replaced.
 author: ZdenekBicek
 
-ms.topic: conceptual
+ms.topic: reference
 ms.devlang: al
 ms.search.keywords: deprecated, Czech, local functionality
 ms.date: 04/01/2021
@@ -355,7 +355,7 @@ The following list shows additional fields that are deleted as a result of the f
 
 [!INCLUDE [fields-obsolete-cz](../includes/fields-obsolete-cz.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

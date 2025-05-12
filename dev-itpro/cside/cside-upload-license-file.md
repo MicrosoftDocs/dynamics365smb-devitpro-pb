@@ -7,7 +7,7 @@ ms.custom:
 ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: article
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ---
@@ -95,6 +95,6 @@ The following procedure uploads the license for all [!INCLUDE[prod_short](../dev
 
 3. Restart all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer to activate the license for other clients.  
 
-## See Also
+## Related information
 
 [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)  

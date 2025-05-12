@@ -1,16 +1,16 @@
 ---
-title: "Privacy FAQ"
-description: "Find useful links and other answers to frequently asked questions about Dynamics 365 Business Central."
+title: Privacy FAQ
+description: Find useful links and other answers to frequently asked questions about privacy in Dynamics 365 Business Central.
 author: jswymer
 ms.date: 08/12/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: faq
 ms.author: jswymer
 ---
 
-# Privacy FAQ for Business Central Customers 
+# Privacy FAQ for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Customers 
 
-Here you find links that can help you find answers to questions concerning privacy when you use Business Central.
+Here you find links that can help you find answers to questions concerning privacy when you use [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 <!--Please check this link for matters relating to customer content(https://microsoft.sharepoint.com/teams/CAI-Privacy/SitePages/C+AI-Data-Sharing-Process.aspx)-->
 - Privacy and personal data for Microsoft Dynamics 365: [Privacy and personal data for Microsoft Dynamics 365](/dynamics365/get-started/privacy/)
@@ -22,6 +22,6 @@ Here you find links that can help you find answers to questions concerning priva
 - Get the PDF file that shows the international availability of Dynamics 365:[International availability of Dynamics 365](/dynamics365/get-started/availability)
 - Business Central online uses Azure Front Door, which isn't in scope for the EU Data Boundary: [Services permanently excluded from the EU Data Boundary](/privacy/eudb/eu-data-boundary-permanent-transfers-from-services)
 
-## See also
+## Related information
 
-[Security and Protection in Business Central](security-and-protection.md)
+[Security overview](security-and-protection.md)

@@ -1,7 +1,8 @@
 ---
-title: "Using Application Family in Embed App"
+title: Using Application Family in Embed App
+description: Learn how to use the application family in [!INCLUDE[embed app](../developer/includes/embedapp.md)].
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 ms.date: 04/01/2021
 ms.reviewer: jswymer
@@ -32,7 +33,7 @@ The following table describes different aspects of using the application family 
 |Cloud Migration Tool|Supported|[Migrating On-Premises Data to Business Central Online](../administration/migrate-data.md)|
 
 
-## See Also
+## Related information
 
 [[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md)  
 [Licensing in Dynamics 365 Business Central](licensing.md)  

@@ -2,7 +2,7 @@
 title: (v1.0) Moving from beta to v1.0
 description: (v1.0) Changes from the beta version of the APIs to the v1.0 of the APIs in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: concept-article
 ms.devlang: al
 ms.date: 05/01/2024
 ms.author: solsen
@@ -46,7 +46,7 @@ Using Basic Auth:
 GET https://api.businesscentral.dynamics.com/v2.0/{tenant Id}/{environment}/api/v1.0/$metadata
 ```
 
-## See Also
+## Related information
 
 [Welcome to the API(v1.0) for Dynamics 365 Business Central](index.md)  
 [Endpoints for the APIs](endpoints-apis-for-dynamics.md)  

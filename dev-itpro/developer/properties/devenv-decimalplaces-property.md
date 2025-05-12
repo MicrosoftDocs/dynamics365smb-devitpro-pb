@@ -1,8 +1,8 @@
 ---
-title: "DecimalPlaces Property"
+title: "DecimalPlaces property"
 description: "Sets display and storage requirements for the Decimal Data Type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -16,7 +16,7 @@ ms.reviewer: solsen
 Sets display and storage requirements for the Decimal Data Type.
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 -   Report Column
 
@@ -54,6 +54,6 @@ When you create a new field of [Decimal Data Type](../methods-auto/library.md), 
 
 For more information about formatting decimal values, see [Formatting Decimal Values in Fields](../devenv-format-field-data.md).
   
-## See Also
+## Related information
 
 [Decimal Data Type](../methods-auto/library.md)

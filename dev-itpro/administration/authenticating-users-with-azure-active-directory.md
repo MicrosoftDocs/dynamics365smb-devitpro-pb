@@ -98,7 +98,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
 
     When you add an application to a Microsoft Entra tenant, you specify the following information. The configuration is slightly different in for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] single-tenant and multitenant deployment.
 
-    # [Single-tenant](#tab/singletenant)
+    ## [Single-tenant](#tab/singletenant)
 
     | Setting | Description |
     |--|--|
@@ -106,7 +106,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
     |Supported account types|Select Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)|
     |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC190/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC190/SignIn` or `https://MyBcWebServer/BC190/SignIn`. <br /> <br />**Important** The portion of the reply URL after the domain name (in this case `BC190/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
 
-    # [Multitenant-tenant](#tab/multitenant)
+    ## [Multitenant-tenant](#tab/multitenant)
     
     | Setting | Description |
     |--|--|
@@ -575,7 +575,7 @@ When you mount a tenant, you can give the tenant an additional ID by setting the
 
 If you are connecting to your solution from Visual Studio Code, then you must also specify the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server config parameter `ValidAudiences` and set it to `https://api.businesscentral.dynamics.com`. If you do not do this, you will get the error `securitytokeninvalidaudienceexception` in the application log when trying to download symbols.
 
-## See Also  
+## Related information  
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
 [Troubleshooting: SAML2 token errors with Microsoft Entra ID/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  

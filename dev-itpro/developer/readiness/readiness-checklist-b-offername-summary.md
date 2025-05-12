@@ -4,7 +4,7 @@ description: "Guidelines on offer name and offer summary"
 author: a-emniel
 ms.date: 01/02/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Offer name and offer summary

@@ -28,10 +28,10 @@ DELETE businesscentralPrefix/companies({companyId})/vendors({vendorId})/defaultD
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **vendors**, the **vendors** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **vendors**, the **vendors** won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```204 No Content``` response code and it deletes the default dimensions for the vendor and corresponding dimension.
@@ -40,7 +40,7 @@ If successful, this method returns a ```204 No Content``` response code and it d
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/vendors({vendorId})/defaultDimensions({vendorId},{dimensionId})
@@ -50,7 +50,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/vendors({
 
 No Content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Vendor](../resources/dynamics_vendor.md)  

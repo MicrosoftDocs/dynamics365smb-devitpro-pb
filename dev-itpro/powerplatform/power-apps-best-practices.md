@@ -4,7 +4,7 @@ description: Learn how to best develop Power Apps for Business Central
 author: andersgMSFT
 ms.author: andersg
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 04/24/2023
 ms.custom: bap-template
 ---
@@ -162,7 +162,7 @@ Using a uniform set of rules when building Power Apps makes the project more man
 - [Power Apps Community Call](https://www.youtube.com/watch?v=cJzomM29vNI&t=39s)
 - [Tips and best practices to improve performance of canvas apps](/power-apps/maker/canvas-apps/performance-tips)  
 
-## See also
+## Related information
 
 [Business Central and Power Apps](power-apps-overview.md)  
 [Application lifecycle management for Power Apps in Business Central](power-apps-alm.md)  

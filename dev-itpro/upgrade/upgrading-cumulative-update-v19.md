@@ -3,7 +3,7 @@ title: Install a version 19 update
 description: This article describes the tasks required for getting the monthly version 19 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -95,6 +95,8 @@ The first thing to do is to download the update package that matches your Busine
     When extracted, the update includes the DVD folder. This folder contains the full Business Central product. For example, the folder includes the Business Central installation program (setup.exe), tools for upgrading to the platform, and the Microsoft extensions.
 
 When this step is completed, you can continue to update your Business Central solution to the new platform and application.
+
+## Save copies of server configuration files
 
 [!INCLUDE[upgrade-copy-configuration-files](../developer/includes/upgrade-copy-configuration-files.md)]
 
@@ -536,7 +538,7 @@ Client version: 21.0.46384.47110
 Server version: 21.0.51393.51456-->
 
 
-## See Also
+## Related information
 
 [Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-17.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  

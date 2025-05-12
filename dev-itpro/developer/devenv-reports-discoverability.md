@@ -4,7 +4,7 @@ description: Introducing how to make Business Central reports discoverable by us
 author: KennieNP
 ms.date: 03/11/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: kepontop
 ---
 
@@ -64,7 +64,7 @@ Starting with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2023 
 
 For more information, see [Adding help links to your reports](devenv-request-pages-for-reports.md#adding-help-links-to-your-reports).
 
-## See also
+## Related information
 
 [Adding reports to Tell Me](devenv-al-menusuite-functionality.md)   
 [Adding links to the navigation menu on the role center](devenv-adding-menus-to-navigation-pane.md)   

@@ -2,7 +2,7 @@
 title: Aggregating data in query objects
 description: Do calculations on the fields of a column and return the calculated value in the dataset. Know the Dynamics NAV Total methods for running queries.
 ms.date: 05/03/2024
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 
@@ -265,7 +265,7 @@ GROUP BY Customer."No.", Customer.Name
 * [Teddy Herryanto](https://www.linkedin.com/in/teddyherryanto/) | [!INCLUDE[prod_short](includes/prod_short.md)] Techno Functional Consultant
 
 
-## See Also
+## Related information
 
 [Method Property](properties/devenv-Method-Property.md)  
  [Query Object](devenv-query-object.md)  

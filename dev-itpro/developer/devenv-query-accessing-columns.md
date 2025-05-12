@@ -1,7 +1,7 @@
 ---
 title: "Accessing Columns of a Query Dataset"
 ms.date: 04/29/2024
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Accessing Columns of a Query Dataset
@@ -97,7 +97,7 @@ codeunit 50100 QueryColumnAccess
 }
 ```
 
-## See Also
+## Related information
 
 [Query Object](devenv-query-object.md)  
 [Filtering Queries](devenv-query-filters.md)  

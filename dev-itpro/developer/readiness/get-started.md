@@ -2,7 +2,7 @@
 title: Get started building apps
 description: Learn how you can get started building apps for Dynamics 365 Business Central in six easy steps.
 author: SusanneWindfeldPedersen
-ms.topic: conceptual
+ms.topic: get-started
 ms.reviewer: solsen
 ms.author: kurtju
 ms.date: 05/07/2024
@@ -111,7 +111,7 @@ Once your app is ready for submission, you can list your app in the Microsoft co
 
 Before you submit, we recommend that you review the [technical validation checklist](../devenv-checklist-submission.md) and [marketing validation checklist](./readiness-checklist-marketing.md). The two articles list all requirements that you **must meet before you submit** an app for validation. If you don't meet these mandatory requirements, your extension fails validation.
 
-## See also
+## Related information
 
 [The SMB opportunity for app publishers](opportunity-app-publisher.md)  
 [The lifecycle of apps and extensions for [!INCLUDE [prod_short](../includes/prod_short.md)]](../devenv-app-life-cycle.md)  

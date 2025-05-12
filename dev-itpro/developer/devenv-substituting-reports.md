@@ -3,7 +3,7 @@ title: Substituting reports
 description: How to substitute reports for other reports.
 author: blrobl
 ms.date: 12/05/2023
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Substituting reports
@@ -76,7 +76,7 @@ For more information about raising events, see [Raising Events](devenv-raising-e
 > [!IMPORTANT]  
 > Make sure that if a report is called on code, you use a compatible report to replace it to avoid run time errors.
 
-## See Also
+## Related information
 
 [Report Data Type](methods-auto/report/report-data-type.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)   

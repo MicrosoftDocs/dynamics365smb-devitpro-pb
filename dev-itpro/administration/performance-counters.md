@@ -7,7 +7,7 @@ ms.custom:
 ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # Business Central Performance Counters
@@ -115,7 +115,7 @@ These pertain to tasks that are run by Task Scheduler.
 
 For more information about task scheduler, see [Task Scheduler](../developer/devenv-task-scheduler.md).
 
-## See Also  
+## Related information  
  [Set up Performance Counters in Windows Performance Monitor](set-up-performance-counters-performance-monitor.md)   
  [Create a Data Collector Set From Template](monitor-create-data-collector-set-from-template.md)   
  [Optimizing SQL Server Performance with Business Central](Optimize-SQL-Server-Performance.md)

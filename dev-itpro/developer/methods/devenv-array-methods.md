@@ -70,6 +70,6 @@ In this case, each element of the array contains a temporary Item record referen
 
 This is the same behavior as using [Copy(RecordRef [, Boolean])](../methods-auto/recordref/recordref-copy-recordref-boolean-method.md) with the `ShareTable` parameter set to `true`.
 
-## See Also  
+## Related information  
 
 [AL Method Reference](../methods-auto/library.md)  

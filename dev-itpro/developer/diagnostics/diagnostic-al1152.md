@@ -18,6 +18,6 @@ Dependency with ID '{0}' matches the current application ID. Remove this depende
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

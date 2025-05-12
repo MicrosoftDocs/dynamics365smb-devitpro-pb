@@ -5,12 +5,16 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
-ms.date: 09/09/2024
-ms.custom: bap-template
+ms.topic: article
+ms.date: 09/30/2024
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Dynamics 365 Business Central on-premises 2023 release wave 1 updates
+
+[!INCLUDE [release-wave-no-longer-updated](../includes/release-wave-no-longer-updated.md)]
 
 This article lists updates released for the Microsoft Dynamics 365 Business Central 2023 release wave 1 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2023 release wave 1 on-premises, we recommend you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](../administration/tenant-admin-center.md) to see if the tenants have been updated.  
 
@@ -28,6 +32,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5046144](https://support.microsoft.com/help/5046144)|Update 22.18| October 2024|Application Build 22.18.64804</br>Platform Build 22.0.64803 |
 |[5043979](https://support.microsoft.com/help/5043979)|Update 22.17| September 2024|Application Build 22.17.64765</br>Platform Build 22.0.64763 |
 |[5042528](https://support.microsoft.com/help/5042528)|Update 22.16| August 2024|Application Build 22.16.64731</br>Platform Build 22.0.64727  |
 |[5041131](https://support.microsoft.com/help/5041131)|Update 22.15| July 2024|Application Build 22.15.64637</br>Platform Build 22.0.64630  |
@@ -48,7 +53,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
-## See also
+## Related information
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v22.md)  

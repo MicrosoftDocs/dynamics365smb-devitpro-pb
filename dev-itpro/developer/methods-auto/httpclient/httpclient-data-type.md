@@ -1,8 +1,8 @@
 ---
-title: "HttpClient Data Type"
+title: "HttpClient data type"
 description: "Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpClient Data Type
+# HttpClient Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
@@ -29,6 +29,7 @@ The following methods are available on instances of the HttpClient data type.
 |[Delete(Text, var HttpResponseMessage)](httpclient-delete-method.md)|Sends a DELETE request to delete the resource identified by the request URL.|
 |[Get(Text, var HttpResponseMessage)](httpclient-get-method.md)|Sends a GET request to get the resource identified by the request URL.|
 |[GetBaseAddress()](httpclient-getbaseaddress-method.md)|Gets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.|
+|[Patch(Text, HttpContent, var HttpResponseMessage)](httpclient-patch-method.md)|Sends a PATCH request to the specified URI as an asynchronous operation.|
 |[Post(Text, HttpContent, var HttpResponseMessage)](httpclient-post-method.md)|Sends a POST request to the specified URI as an asynchronous operation.|
 |[Put(Text, HttpContent, var HttpResponseMessage)](httpclient-put-method.md)|Sends a PUT request to the specified URI as an asynchronous operation.|
 |[Send(HttpRequestMessage, var HttpResponseMessage)](httpclient-send-method.md)|Sends an HTTP request as an asynchronous operation.|
@@ -36,6 +37,7 @@ The following methods are available on instances of the HttpClient data type.
 |[Timeout([Duration])](httpclient-timeout-method.md)|Gets or sets the duration in milliseconds to wait before the request times out.|
 |[UseDefaultNetworkWindowsAuthentication()](httpclient-usedefaultnetworkwindowsauthentication-method.md)|Sets the HttpClient credentials to use the default network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
 |[UseResponseCookies(Boolean)](httpclient-useresponsecookies-method.md)|If true, the client automatically attaches cookies received in the response to all subsequent requests.|
+|[UseServerCertificateValidation(Boolean)](httpclient-useservercertificatevalidation-method.md)|If true, the client validates the server certificate for all HTTP requests. If false, it skips validation.|
 |[UseWindowsAuthentication(Text, Text [, Text])](httpclient-usewindowsauthentication-string-string-string-method.md)|Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
 |[UseWindowsAuthentication(SecretText, SecretText [, SecretText])](httpclient-usewindowsauthentication-secrettext-secrettext-secrettext-method.md)|Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
 
@@ -52,6 +54,9 @@ All of the methods HttpClient.Delete, HttpClient.Get, HttpClient.Post, HttpClien
 
 [!INCLUDE[allowhttpclientnote](../../../includes/include-http-allowhttpclient-note.md)]
 
+## Mock outbound HttpClient web service calls during testing
+
+Testability of AL code that interacts with external web services is enhanced when the responses from these services can be simulated in AL, eliminating the need to configure actual endpoints. Mocking outbound web calls is useful when testing that your code is capable of handling a wide range of possible responses, and allowing you to track outbound traffic during the test executions. Learn more in [Mock outbound HttpClient web service calls during testing](../../devenv-httpclient-mock-outbound-calls.md). 
 
 ## Telemetry
 
@@ -75,8 +80,9 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 [!INCLUDE[httpclientPerformance](../../../includes/performance-outgoing-http.md)]
 
 
-## See also
+## Related information
 [Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Outgoing Web Service Request Telemetry](../../../administration/telemetry-webservices-outgoing-trace.md)  
+[Mock outbound HttpClient web service calls during testing](../../devenv-httpclient-mock-outbound-calls.md)  

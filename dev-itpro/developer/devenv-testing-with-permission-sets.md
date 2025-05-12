@@ -2,7 +2,7 @@
 title: "Testing With Permission Sets"
 description: Learn how to run tests in Business Central using permission sets
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 author: blrobl
 ROBOTS: NOINDEX
@@ -88,7 +88,7 @@ codeunit 50101 MyTestPermissionsTestRunner
 }
 ```
 
-## See Also  
+## Related information  
 [OnBeforeTestRun](triggers-auto/codeunit/devenv-onbeforetestrun-codeunit-trigger.md)  
 [OnAfterTestRun](triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
 [Testing the Application](devenv-Testing-Application.md)  

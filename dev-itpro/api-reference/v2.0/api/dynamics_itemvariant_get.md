@@ -30,7 +30,7 @@ GET businesscentralPrefix/companies({id})/items({id})/itemVariants({id})
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and an **itemVariants** object in the response body.
@@ -39,14 +39,14 @@ If successful, this method returns a ```200 OK``` response code and an **itemVar
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/itemVariants({id})
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 {
@@ -59,7 +59,7 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [itemvariant](../resources/dynamics_itemvariant.md)    
 [Delete itemvariant](dynamics_itemvariant_Delete.md)    

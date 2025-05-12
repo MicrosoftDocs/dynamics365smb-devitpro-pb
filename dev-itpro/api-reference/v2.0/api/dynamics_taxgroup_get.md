@@ -29,7 +29,7 @@ GET businesscentralPrefix/companies({id})/taxGroups({id})
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and a **taxGroups** object in the response body.
@@ -38,14 +38,14 @@ If successful, this method returns a ```200 OK``` response code and a **taxGroup
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v1.0/companies({id})/taxGroups({id})
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -62,7 +62,7 @@ Here is an example of the response.
 
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [taxgroup](../resources/dynamics_taxgroup.md)    
 [Delete taxgroup](dynamics_taxgroup_Delete.md)    

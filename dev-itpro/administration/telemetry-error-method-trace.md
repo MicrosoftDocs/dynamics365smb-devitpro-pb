@@ -3,7 +3,7 @@ title:  Error method trace telemetry
 description: Learn about the Error method telemetry in Business Central  
 author: jswymer
 
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 12/21/2023
@@ -109,7 +109,7 @@ traces
 
 To effectively help users mitigate any issues they might encounter, you should learn more about the different parts of the error dialog, including how to interpret the AL stack trace. For more information, see [Understanding the error dialog](../developer/devenv-error-dialog.md).
 
-## See also
+## Related information
 
 [Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-errorinfo-method.md) 
 [Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-string-joker-method.md)  

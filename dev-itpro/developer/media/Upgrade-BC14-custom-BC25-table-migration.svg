@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="697.32745"
+   height="629.66223"
+   overflow="hidden"
+   version="1.1"
+   id="svg98"
+   sodipodi:docname="Upgrade-BC14-custom-BC24-table-migration.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs98">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath98">
+      <rect
+         style="fill:none"
+         id="rect99"
+         width="697.32745"
+         height="629.66223"
+         x="115.28145"
+         y="81.448853" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview98"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5960938"
+     inkscape:cx="524.71855"
+     inkscape:cy="278.49241"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg98" />
+  <g
+     id="g98"
+     clip-path="url(#clipPath98)"
+     transform="translate(-115.28145,-81.448853)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect1" />
+    <rect
+       x="343.5"
+       y="97.500099"
+       width="456"
+       height="153"
+       stroke="#f2f2f2"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#f2f2f2"
+       id="rect2" />
+    <rect
+       x="364.5"
+       y="356.5"
+       width="187"
+       height="99"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect3" />
+    <rect
+       x="600.5"
+       y="607.5"
+       width="174"
+       height="98"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect4" />
+    <rect
+       x="609.5"
+       y="626.5"
+       width="45"
+       height="65"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect5" />
+    <path
+       d="m 620.5,652.5 h 20.369"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path5" />
+    <path
+       d="m 620.5,666.5 h 20.369"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path6" />
+    <rect
+       x="664.5"
+       y="378.5"
+       width="46"
+       height="67"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect6" />
+    <path
+       d="m 676.5,405.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path7" />
+    <path
+       d="m 676.5,419.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path8" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(602.552,616)"
+       id="text8">BC system_application</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(703.052,616)"
+       id="text9">–</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(710.718,616)"
+       id="text10">v2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(720.885,616)"
+       id="text11">4</text>
+    <rect
+       x="600.5"
+       y="356.5"
+       width="176"
+       height="99"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect11" />
+    <path
+       d="m 676.5,431.5 h 20.631"
+       stroke="#00b0f0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path11" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(671.265,392)"
+       id="text12">TableB</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(616.013,636)"
+       id="text13">TableA</text>
+    <path
+       d="m 620.5,678.5 h 20.631"
+       stroke="#00b0f0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path13" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(722.18,301)"
+       id="text14">TableExtC</text>
+    <rect
+       x="721.5"
+       y="378.5"
+       width="46"
+       height="67"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect14" />
+    <path
+       d="m 732.5,405.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path14" />
+    <path
+       d="m 732.5,419.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(729.344,391)"
+       id="text15">TableC</text>
+    <path
+       d="m 733.5,431.5 h 20.631"
+       stroke="#00b0f0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path16" />
+    <path
+       d="m 686.833,455.5 v 19.533 h -0.666 V 455.5 Z m 3.667,18.2 -4,8 -4,-8 z"
+       fill="#a6a6a6"
+       id="path17" />
+    <rect
+       x="366.5"
+       y="117.5"
+       width="187"
+       height="125"
+       stroke="#00b0f0"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect17" />
+    <rect
+       x="382.5"
+       y="137.5"
+       width="46"
+       height="66"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect18" />
+    <path
+       d="m 394.5,163.5 h 20.369"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path18" />
+    <path
+       d="m 394.5,177.5 h 20.369"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19" />
+    <rect
+       x="439.5"
+       y="137.5"
+       width="46"
+       height="66"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect19" />
+    <path
+       d="m 451.5,164.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path20" />
+    <path
+       d="m 451.5,177.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path21" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(369.044,127)"
+       id="text21">table_migration_ext</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(462.211,127)"
+       id="text22">-</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(470.211,127)"
+       id="text23">v1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(389.02,149)"
+       id="text24">TableA</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(445.967,151)"
+       id="text25">TableB</text>
+    <rect
+       x="494.5"
+       y="138.5"
+       width="46"
+       height="65"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect25" />
+    <path
+       d="m 506.5,164.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path25" />
+    <path
+       d="m 506.5,177.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path26" />
+    <path
+       d="m 506.5,190.5 h 20.631"
+       stroke="#00b050"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path27" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(501.089,150)"
+       id="text27">TableC</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(603.311,232)"
+       id="text28">migration.json</text>
+    <path
+       d="M 0.316564,-0.104394 138.018,417.463 137.385,417.672 -0.316564,0.104394 Z M 141.084,415.05 l -1.294,8.85 -6.304,-6.344 z"
+       fill="#00b0f0"
+       transform="matrix(1,0,0,-1,221.5,601.4)"
+       id="path28" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(382.14,216)"
+       id="text29">Table</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(408.307,216)"
+       id="text30">objects</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(441.974,216)"
+       id="text31">only</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(462.974,216)"
+       id="text32">and</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(481.807,216)"
+       id="text33">without</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(518.307,216)"
+       id="text34">code</text>
+    <rect
+       x="600.5"
+       y="118.5"
+       width="175"
+       height="123"
+       stroke="#00b0f0"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect34" />
+    <rect
+       x="363.5"
+       y="606.5"
+       width="187"
+       height="98"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect35" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(368.435,618)"
+       id="text35">system_application</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(455.101,618)"
+       id="text36">–</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(462.768,618)"
+       id="text37">v1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(368.435,631)"
+       id="text38">Microsoft ID</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(368.435,669)"
+       id="text39">(</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(371.601,669)"
+       id="text40">empty</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(399.435,669)"
+       id="text41">)</text>
+    <text
+       fill="#a6a6a6"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(369.04,235)"
+       id="text42">destinationAppForMigration</text>
+    <text
+       fill="#a6a6a6"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(495.207,235)"
+       id="text43">server</text>
+    <text
+       fill="#a6a6a6"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(524.54,235)"
+       id="text44">config</text>
+    <rect
+       x="136.5"
+       y="604.5"
+       width="177"
+       height="100"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect44" />
+    <rect
+       x="144.5"
+       y="625.5"
+       width="46"
+       height="65"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect45" />
+    <path
+       d="m 156.5,651.5 h 20.369"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path45" />
+    <path
+       d="m 156.5,665.5 h 20.369"
+       stroke="#7030a0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path46" />
+    <rect
+       x="201.5"
+       y="625.5"
+       width="46"
+       height="66"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect46" />
+    <path
+       d="m 212.5,652.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path47" />
+    <path
+       d="m 212.5,665.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path48" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(140.16,614)"
+       id="text48">14 C/AL base</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(150.971,637)"
+       id="text49">TableA</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(207.88,639)"
+       id="text50">TableB</text>
+    <rect
+       x="259.5"
+       y="625.5"
+       width="46"
+       height="66"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect50" />
+    <path
+       d="m 270.5,651.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path50" />
+    <path
+       d="m 270.5,665.5 h 20.631"
+       stroke="#ffc000"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path51" />
+    <path
+       d="m 271.5,676.5 h 20.631"
+       stroke="#00b050"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path52" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(265.616,638)"
+       id="text52">TableC</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(369.887,369)"
+       id="text53">base_application</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(446.387,369)"
+       id="text54">–</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(454.054,369)"
+       id="text55">v1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(369.887,382)"
+       id="text56">Microsoft ID</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(369.887,420)"
+       id="text57">(</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(373.054,420)"
+       id="text58">empty</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(400.887,420)"
+       id="text59">)</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(606.863,131)"
+       id="text60">table</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(631.363,131)"
+       id="text61">migration</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(675.863,131)"
+       id="text62">extension</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(723.029,131)"
+       id="text63">-</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(731.029,131)"
+       id="text64">v2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(606.863,182)"
+       id="text65">(</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(610.029,182)"
+       id="text66">empty</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(637.863,182)"
+       id="text67">)</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(604.835,368)"
+       id="text68">BC base_application</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(695.168,368)"
+       id="text69">–</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(702.835,368)"
+       id="text70">v2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(713.001,368)"
+       id="text71">4</text>
+    <rect
+       x="601.5"
+       y="266.5"
+       width="175"
+       height="68"
+       stroke="#767171"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect71" />
+    <rect
+       x="720.5"
+       y="291.5"
+       width="48"
+       height="38"
+       stroke="#00b050"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect72" />
+    <path
+       d="m 733.5,312.5 h 20.631"
+       stroke="#00b050"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path72" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(608.386,277)"
+       id="text72">Customization extension</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(717.886,277)"
+       id="text73">–</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(725.553,277)"
+       id="text74">v2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(735.72,277)"
+       id="text75">4</text>
+    <path
+       d="M 1.04552e-6,-0.333333 26.8054,-0.333249 V 0.333417 L -1.04552e-6,0.333333 Z M 25.472,-3.99992 l 8,4.000024987 -8,3.999975013 z"
+       fill="#a6a6a6"
+       transform="matrix(-1,0,0,1,808.972,651.5)"
+       id="path75" />
+    <path
+       d="M 1.08238e-6,-0.333333 25.6655,-0.33325 V 0.333417 L -1.08238e-6,0.333333 Z M 24.3322,-3.99992 l 8,4.000024987 -8,3.999975013 z"
+       fill="#a6a6a6"
+       transform="matrix(-1,0,0,1,808.832,400.5)"
+       id="path76" />
+    <path
+       d="M 0,0 33.472,1.04987e-4"
+       stroke="#a6a6a6"
+       stroke-width="0.666667"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(-1,0,0,1,807.972,166.5)"
+       id="path77" />
+    <path
+       d="M 0,0 1.04987e-4,484.622"
+       stroke="#a6a6a6"
+       stroke-width="0.666667"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       transform="matrix(1,0,0,-1,808.5,651.122)"
+       id="path78" />
+    <path
+       d="m 686.833,333.5 v 14.604 h -0.666 V 333.5 Z m 3.667,13.271 -4,8 -4,-8 z"
+       fill="#a6a6a6"
+       id="path79" />
+    <rect
+       x="365.5"
+       y="265.5"
+       width="188"
+       height="69"
+       stroke="#767171"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect79" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(376.926,277)"
+       id="text79">Customization</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(441.593,277)"
+       id="text80">extension</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(486.426,277)"
+       id="text81">–</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(494.093,277)"
+       id="text82">v23</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(376.926,290)"
+       id="text83">(</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(380.093,290)"
+       id="text84">empty</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(407.926,290)"
+       id="text85">)</text>
+    <path
+       d="M 1.08238e-6,-0.333333 25.6655,-0.33325 V 0.333417 L -1.08238e-6,0.333333 Z M 24.3322,-3.99992 l 8,4.000024987 -8,3.999975013 z"
+       fill="#a6a6a6"
+       transform="matrix(-1,0,0,1,808.832,307.5)"
+       id="path85" />
+    <rect
+       x="364.5"
+       y="480.5"
+       width="187"
+       height="100"
+       stroke="#000000"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect85" />
+    <rect
+       x="600.5"
+       y="481.5"
+       width="176"
+       height="99"
+       stroke="#000000"
+       stroke-width="1.33333"
+       stroke-linecap="square"
+       stroke-miterlimit="8"
+       stroke-dasharray="4, 1.33333"
+       fill="none"
+       id="rect86" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(369.887,493)"
+       id="text86">BC business foundation ext</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(490.054,493)"
+       id="text87">–</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(497.721,493)"
+       id="text88">v1</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(369.887,506)"
+       id="text89">Microsoft ID</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(369.887,544)"
+       id="text90">(</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(373.054,544)"
+       id="text91">empty</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(400.887,544)"
+       id="text92">)</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(604.835,493)"
+       id="text93">BC</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(618.668,493)"
+       id="text94">business foundation ext</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(725.001,493)"
+       id="text95">–</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(732.668,493)"
+       id="text96">v2</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="11px"
+       transform="translate(742.835,493)"
+       id="text97">4</text>
+    <path
+       d="M 1.04552e-6,-0.333333 26.8054,-0.333249 V 0.333417 L -1.04552e-6,0.333333 Z M 25.472,-3.99992 l 8,4.000024987 -8,3.999975013 z"
+       fill="#a6a6a6"
+       transform="matrix(-1,0,0,1,807.972,528.5)"
+       id="path97" />
+    <path
+       d="m 686.833,579.5 v 20.427 h -0.666 V 579.5 Z m 3.667,19.094 -4,8 -4,-8 z"
+       fill="#a6a6a6"
+       id="path98" />
+  </g>
+</svg>

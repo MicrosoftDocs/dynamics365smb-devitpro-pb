@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 03/11/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ---
 
@@ -153,7 +153,7 @@ The following diagram illustrates the main trigger and operation sequence relate
 
 For a more detailed discussion on these concepts, see [Report triggers and operations](devenv-report-triggers.md#requestpage)
 
-## See Also
+## Related information
 
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  

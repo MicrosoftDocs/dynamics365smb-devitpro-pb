@@ -4,15 +4,13 @@ description: A contact object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 # contact resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a contact in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -26,7 +24,6 @@ Represents a contact in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[DELETE contact](../api/dynamics_contact_delete.md)|none|Deletes a contact object.|
 |[POST contact](../api/dynamics_contact_create.md)|contact|Creates a contact object.|
 |[PATCH contact](../api/dynamics_contact_update.md)|contact|Updates a contact object.|
-
 
 ## Navigation
 
@@ -65,7 +62,7 @@ Represents a contact in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## JSON representation
 
-Here is a JSON representation of the contact resource.
+Here's a JSON representation of the contact resource.
 
 
 ```json
@@ -95,13 +92,13 @@ Here is a JSON representation of the contact resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Remarks
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
-## See Also
+## Related information
+
 [GET contact](../api/dynamics_contact_get.md)  
 [DELETE contact](../api/dynamics_contact_delete.md)  
 [POST contact](../api/dynamics_contact_create.md)  

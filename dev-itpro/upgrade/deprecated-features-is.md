@@ -3,7 +3,7 @@ title: Iceland Features that are Moved, Removed, or Replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Iceland that we have moved, removed, or replaced.
 author: bholtorf
 
-ms.topic: conceptual
+ms.topic: reference
 ms.devlang: al
 ms.search.keywords: deprecated, Norway, local functionality
 ms.date: 04/01/2021
@@ -25,7 +25,7 @@ The local tax regulation of conditional discounts feature enables you to issue a
 
 [!INCLUDE [fields-obsolete-is](../includes/fields-obsolete-is.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

@@ -2,7 +2,7 @@
 title: "Event example"
 description: This article shows a simple example of how to use events in Business Central.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 
@@ -67,7 +67,7 @@ codeunit 50101 MySubscribers
 > This example binds the event subscriber automatically to the event. You can also bind the event subscriber manually, by setting the EventSubscriberInstance property. For more information, including an example, see [EventSubscriberInstance property](properties/devenv-eventsubscriberinstance-property.md#example).
 
 
-## See Also
+## Related information
 
 [Publishing Events](devenv-publishing-events.md)   
 [Raising Events](devenv-raising-events.md)   

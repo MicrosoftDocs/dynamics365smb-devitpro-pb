@@ -4,7 +4,7 @@ description: Describes how to use the Performance Profiler page in Business Cent
 ms.author: bholtorf
 ms.date: 08/12/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: bholtorf
 ---
 
@@ -70,8 +70,9 @@ To upload an existing performance profile, choose the **Upload** button on the *
 
 The in-client Performance Profiler described in this article, is a simplified version of the AL Profiler for AL in Visual Studio Code. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views and drill-down further into advanced data for the specific snapshot, as well as navigate to source code. For more information, see [AL Profiler overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
 
-## See also
+## Related information
 
+[Scheduled performance profiler overview](scheduled-performance-profiler-overview.md)  
 [Managing technical support](/dynamics365/business-central/dev-itpro/administration/manage-technical-support)  
 [Escalate support issues to Microsoft](/dynamics365/business-central/dev-itpro/administration/raise-support-case)  
 [Debugging](/dynamics365/business-central/dev-itpro/developer/devenv-debugging)  

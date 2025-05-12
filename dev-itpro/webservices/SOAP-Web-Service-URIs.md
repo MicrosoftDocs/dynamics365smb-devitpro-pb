@@ -2,7 +2,7 @@
 title: "SOAP Web Service URIs"
 description: Explains how SOAP URIs looks for on-premises Business Central installations.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # SOAP Web Service URIs
 
@@ -43,7 +43,7 @@ You can also use a URI for a codeunit web service, as shown in the following exa
 https://localhost:7047/BC130/WS/CRONUS%20International%20Ltd/Codeunit/Letters  
 ```  
   
-## See Also  
+## Related information  
 
 [Web service performance](web-service-performance.md)   
 [Troubleshoot web service errors](web-service-troubleshooting.md)   

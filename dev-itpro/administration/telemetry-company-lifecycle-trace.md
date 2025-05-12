@@ -2,7 +2,7 @@
 title: Company lifecycle trace | Microsoft Docs
 description: Learn about the company lifecycle telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 12/21/2023
@@ -312,7 +312,7 @@ Occurs when a company failed to be deleted.
 |totalTime|Specifies the amount of time used to delete the company before it failed. The time has the format hh:mm:ss.sssssss.|
 
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

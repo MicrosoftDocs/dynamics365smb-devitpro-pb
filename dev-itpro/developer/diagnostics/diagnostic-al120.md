@@ -21,6 +21,6 @@ A local or parameter named '{0}' cannot be declared in this scope because that n
 Cannot declare local or parameter in a scope if there already is a local or parameter with the same name used in an enclosing local scope.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

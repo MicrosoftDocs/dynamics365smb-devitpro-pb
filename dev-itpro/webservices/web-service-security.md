@@ -5,7 +5,7 @@ author: kennieNP
 ms.custom: bap-template
 ms.date: 02/02/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: kepontop
 ---
 
@@ -29,7 +29,7 @@ Here are some authentication options you can use:
 - [How to restrict network access from/to Business Central online](../security/security-service-tags.md): Use Azure security service tags to limit network access to and from [!INCLUDE[prod_short](../includes/prod_short.md)] online.
 - [Securing remote connections using certificates (on-premises)](../deployment/implement-security-certificates-production-environment.md): Learn how to use security certificates to help secure connections with [!INCLUDE[prod_short](../includes/prod_short.md)] (on-premises).
 
-## See also
+## Related information
 
 - [Security overview](../security/security-and-protection.md)  
 - [Web Services Overview](web-services.md)  

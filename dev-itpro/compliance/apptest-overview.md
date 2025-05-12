@@ -3,7 +3,7 @@ title: Rules and guidelines for AL code
 description: Describing the steps you must go through to successfully submit your Dynamics 365 Business Central app to AppSource.
 author: SusanneWindfeldPedersen
 ms.date: 04/11/2023
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: overview
 ms.author: freddyk
 ---
@@ -79,7 +79,7 @@ To help you save time, we're sharing a list of the top 15 common pitfalls that r
 
     There are many values in the app.json file that may not be mandatory to compile your app, but are mandatory for your app to be in AppSource. For example, your app can't be published to a production tenant if the **target** value is set to *OnPrem*. It must be set to *Cloud*. For information, see [JSON Files](../developer/devenv-json-files.md).
 
-## See Also
+## Related information
 
-[Best Practices for AL Code](apptest-bestpracticesforalcode.md)  
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
+[Best practices for AL code](apptest-bestpracticesforalcode.md)  
+[Checklist for submitting your app](../developer/devenv-checklist-submission.md)  

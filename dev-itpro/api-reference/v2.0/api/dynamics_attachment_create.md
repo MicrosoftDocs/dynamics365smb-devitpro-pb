@@ -28,7 +28,6 @@ POST businesscentralPrefix/companies({id})/attachments
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **attachment**, the **attachment** will not be updated. |
 
 
 ## Request body
@@ -41,7 +40,7 @@ If successful, this method returns ```201 Created``` response code and a **attac
 
 **Request**
 
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/attachments({id})
@@ -53,6 +52,7 @@ Content-type: application/json
     "fileName": "myPDF.pdf",
     "parentType": "Journal"
 }
+```
 
 ParentId is the Id of the entity, for which an attachment is being created.
 
@@ -72,9 +72,10 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [attachment](../resources/dynamics_attachment.md)    
 [Get attachment](dynamics_attachment_Get.md)    
 [Delete attachment](dynamics_attachment_Delete.md)    
 [Update attachment](dynamics_attachment_Update.md)    
+te.md)    

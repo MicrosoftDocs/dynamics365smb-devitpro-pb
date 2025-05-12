@@ -2,7 +2,7 @@
 title: Get started with modules
 description: Provides an overview of what you need to work with modules in the System Application.
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: get-started
 author: bholtorf
 ms.collection: get-started
 ---
@@ -35,7 +35,7 @@ For an overview of the system application reference documentation, see [Module S
 ## Have an issue?
 Open an [issue](https://github.com/microsoft/BCApps/issues/new).
 
-## See also
+## Related information
 
 [Module architecture](devenv-blueprint.md)  
 [Create a module](devenv-new-module.md)

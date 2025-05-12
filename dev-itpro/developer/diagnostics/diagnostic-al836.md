@@ -21,6 +21,6 @@ The {0} '{1}' contains a reference to the field '{2}' which is defined in anothe
 Fields from other object from the same app cannot be referenced as it would cause issues if you are splitting the objects to prepare a future move to another extension.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

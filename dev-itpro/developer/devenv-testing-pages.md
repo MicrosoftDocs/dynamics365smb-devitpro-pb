@@ -2,7 +2,7 @@
 title: Test pages
 description: This article explains the Test pages, their purpose and use.
 ms.date: 08/12/2022
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 7f7961ce-7256-43e9-9dc5-7fd93e65ee3a
 caps.latest.revision: 32
 author: jswymer
@@ -89,7 +89,7 @@ To simulate moving to different items on a list page or to different records on 
 - [FindNextField Method \(TestPage\)](methods-auto/testpage/testpage-findnextfield-method.md)  
 - [FindPreviousField Method \(TestPage\)](methods-auto/testpage/testpage-findpreviousfield-method.md)  
   
-## See Also
+## Related information
 
 [Testing the Application](devenv-testing-pages.md)  
 [Test the advanced sample extension](devenv-extension-advanced-example-test.md)

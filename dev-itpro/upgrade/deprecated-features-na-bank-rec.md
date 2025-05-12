@@ -4,7 +4,7 @@ description: If you're using the deprecated Bank Reconciliation Worksheet and De
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
-ms.topic: conceptual
+ms.topic: article
 ms.search.keywords: deprecated, Dutch, NL, Netherlands, local functionality
 ms.date: 09/26/2023
 ms.custom: bap-template
@@ -64,7 +64,7 @@ The following table lists the objects that are removed for the Deposits feature.
 |Codeunit |Codeunit 10141 "Deposit-Post (Yes/No)"         |
 |Report   |Report 10402 "Deposit Test Report"         |
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

@@ -2,7 +2,7 @@
 title: "AppSourceCop Error AS0097"
 description: "The publisher name of an extension cannot be changed for extensions targeting a runtime version lower than '8.0' in their app.json file."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -85,7 +85,7 @@ Version 2.0 of the extension:
 
 In version 2.0, the publisher has been renamed from `Publisher Name` to `New Publisher Name` and the runtime version has been changed to 8.0. The rename is allowed.
 
-## See Also  
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

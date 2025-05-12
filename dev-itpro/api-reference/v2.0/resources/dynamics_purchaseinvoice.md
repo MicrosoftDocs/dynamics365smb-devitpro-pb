@@ -4,7 +4,7 @@ description: A purchase invoice object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a purchase invoice in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,9 +27,9 @@ Represents a purchase invoice in [!INCLUDE[prod_short](../../../includes/prod_sh
 |[POST purchaseInvoice](../api/dynamics_purchaseinvoice_create.md)|purchaseInvoice|Creates a purchase invoice object.|
 |[PATCH purchaseInvoice](../api/dynamics_purchaseinvoice_update.md)|purchaseInvoice|Updates a purchase invoice object.|
 
-## Bound Actions
+## Bound actions
 
-The purchaseInvoice resource type offers a bound action called `post` which posts the corresponding purchaseInvoice batch.
+The purchaseInvoice resource type offers a bound action called `post`, which posts the corresponding purchaseInvoice batch.
 This is illustrated in the following example:
 `POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/purchaseInvoices({id})/Microsoft.NAV.post`
 
@@ -105,7 +103,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here is a JSON representation of the purchaseInvoice resource.
+Here's a JSON representation of the purchaseInvoice resource.
 
 
 ```json
@@ -164,7 +162,8 @@ Here is a JSON representation of the purchaseInvoice resource.
 > [!NOTE]  
 > The `id` property value in this API resource might be different than the `systemId` of the corresponding record because the `systemId` of the unposted invoices are carried to posted invoices in the API, but not to the record. Use the `https://{businesscentralPrefix}/microsoft/automate/v1.0/companies({id})/postedPurchaseInvoices({systemId})` route and extract the `apiId` property to map the `systemId` of a posted purchase invoice record to the `purchaseInvoice` API resource.
 
-## See also
+## Related information
+
 [GET purchaseInvoice](../api/dynamics_purchaseInvoice_Get.md)  
 [DELETE purchaseInvoice](../api/dynamics_purchaseInvoice_Delete.md)  
 [POST purchaseInvoice](../api/dynamics_purchaseInvoice_Create.md)  

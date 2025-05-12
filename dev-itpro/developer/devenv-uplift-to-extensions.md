@@ -3,7 +3,7 @@ title: "Moving Custom Fields From Base Application to Extensions"
 description: "DMoving Custom Fields From Base Application to Extensions"
 author: jswymer
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ROBOTS: NOINDEX
 ms.reviewer: jswymer
@@ -156,7 +156,7 @@ In this example, you will use the [VALIDATE method](methods-auto/record/record-v
     2. Build and publish the new version of the base application.
     3. Synchronize the base application extension using the `-Mode ForceSync` parameter.
 
-## See Also
+## Related information
 
 [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading Extensions](devenv-upgrading-extensions.md)

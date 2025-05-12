@@ -21,6 +21,6 @@ ms.reviewer: solsen
 Only cue actions can be defined directly under the actions control.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -1,8 +1,8 @@
 ---
-title: "RunOnClient Attribute"
+title: "RunOnClient attribute"
 description: "Sets whether a .NET object that is defined by a variable is run on the Business Central Web client or Dynamics 365 Business Central service."
 ms.author: solsen
-ms.date: 06/15/2022
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# RunOnClient Attribute
+# RunOnClient attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets whether a .NET object that is defined by a variable is run on the Business Central Web client or Dynamics 365 Business Central service.
@@ -19,7 +19,7 @@ Sets whether a .NET object that is defined by a variable is run on the Business 
 > [!NOTE]
 > This attribute is supported only in Business Central on-premises.
 
-## Applies To
+## Applies to
 
 - Variable
 
@@ -44,6 +44,6 @@ The **RunOnClient** property is part of .NET interoperability in [!INCLUDE[d365f
 
 For an example on how to use the **RunOnClient** attribute, see [Implementing the Camera in AL](../devenv-implement-camera-al.md#example).
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

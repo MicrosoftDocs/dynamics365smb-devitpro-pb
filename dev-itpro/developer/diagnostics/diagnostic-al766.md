@@ -21,6 +21,6 @@ An External Business Event with {0} {1} and version {2} is already declared.
 A duplication in the name or display name and the same version of an external business event is detected.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

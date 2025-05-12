@@ -3,7 +3,7 @@ author: jswymer
 title: "Upgrading Extensions"
 description: "Describes how to add code to upgrade data in a new extension version."
 ms.date: 09/17/2021
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Upgrading Extensions
@@ -352,7 +352,7 @@ To upgrade to the new extension version, you use the [Sync-NavApp](/powershell/m
     ```
     This step runs the upgrade logic that is defined by the upgrade codeunits in the extension. This step will uninstall the current extension version and enable the new version instead.
 
-## See Also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  

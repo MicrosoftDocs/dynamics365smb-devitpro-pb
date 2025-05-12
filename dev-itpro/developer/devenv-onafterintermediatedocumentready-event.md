@@ -3,7 +3,7 @@ title: "OnAfterIntermediateDocumentReady Event"
 description: Describe the OnAfterIntermediateDocumentReady Event in Business Central.
 ms.date: 03/10/2023
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: nhsejth
 ---
 
@@ -123,7 +123,7 @@ end;
 
 ```
 
-## See Also
+## Related information
 <!-- [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)   -->
 <!-- [Developing Printer Extensions Overview](devenv-reports-printing.md)   -->
 <!-- [Creating a Printer Extension](devenv-reports-create-printer-extension.md)   -->

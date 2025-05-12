@@ -1,8 +1,8 @@
 ---
-title: "Data Types and Methods in AL"
+title: "Data types and methods in AL"
 description: ""
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,9 +10,9 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Data Types and Methods in AL
+# Data types and methods in AL
 
-The following data types are available as part of the AL Language. Each data type has various methods that support it. For more information about a data type and its methods, select a link in the table.
+The following data types are available as part of the AL language. Each data type has various methods that support it. For more information about a data type and its methods, select a link in the table.
 
 |Type|Description|
 |-----------|-----------|
@@ -88,6 +88,8 @@ The following data types are available as part of the AL Language. Each data typ
 |[TestField](testfield/testfield-data-type.md)|Represents a testable field on a page.|
 |[TestFilter](testfilter/testfilter-data-type.md)|Represents a test filter on a page.|
 |[TestFilterField](testfilterfield/testfilterfield-data-type.md)|Represents the type of a field filter in a test filter on a page or on a request page.|
+|[TestHttpRequestMessage](testhttprequestmessage/testhttprequestmessage-data-type.md)|Represents a test HTTP request message.|
+|[TestHttpResponseMessage](testhttpresponsemessage/testhttpresponsemessage-data-type.md)|Represents a test HTTP response message including the status code and data.|
 |[TestPage](testpage/testpage-data-type.md)|Represents a variable type that can be used to test Page Application Objects.|
 |[TestPart](testpart/testpart-data-type.md)|Represents a variable type that can be used to test Page Application Objects of type Part.|
 |[TestRequestPage](testrequestpage/testrequestpage-data-type.md)|Stores test request pages. A test request page part is a logical representation of a request page on a report. A test request page does not display a user interface (UI). The subtype of a test request page is the report whose request page you want to test.|
@@ -128,11 +130,13 @@ The following data types are available as part of the AL Language. Each data typ
 |[ExecutionMode](executionmode/executionmode-option.md)|The execution mode of the current session.|
 |[FieldClass](fieldclass/fieldclass-option.md)|Represents the type of a field class.|
 |[FieldType](fieldtype/fieldtype-option.md)|Represents the type of a table field.|
+|[HttpRequestType](httprequesttype/httprequesttype-option.md)|The different types of HTTP Requests that can be intercepted by a handler|
 |[InherentPermissionsScope](inherentpermissionsscope/inherentpermissionsscope-option.md)|The different types of scope that the InherentPermissions attribute can apply to.|
 |[IsolationLevel](isolationlevel/isolationlevel-option.md)|The isolation level applied for this record.|
 |[NotificationScope](notificationscope/notificationscope-option.md)|Specifies the context in which the notification appears in the client.|
 |[ObjectType](objecttype/objecttype-option.md)|The different types of objects.|
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|
+|[PageStyle](pagestyle/pagestyle-option.md)|Represents the different kinds of styles that can be applied to page controls.|
 |[PermissionObjectType](permissionobjecttype/permissionobjecttype-option.md)|The different types of objects that can have different permissions assigned.|
 |[PromptMode](promptmode/promptmode-option.md)|Specifies the current mode of a PromptDialog page.|
 |[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
@@ -149,6 +153,6 @@ The following data types are available as part of the AL Language. Each data typ
 |[WebServiceActionResultCode](webserviceactionresultcode/webserviceactionresultcode-option.md)|Represents a web service action status code.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

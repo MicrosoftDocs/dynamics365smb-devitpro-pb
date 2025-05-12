@@ -2,7 +2,7 @@
 title: "System.Date2DWY(Date, Integer) Method"
 description: "Gets the day of the week, week number, or year of a Date Data Type."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -86,7 +86,7 @@ The message window displays the following information:
 This example shows that the date 01/01/14 is regarded as day number 4 \(Thursday\) in week number 1 in the year 2014.  
   
 
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

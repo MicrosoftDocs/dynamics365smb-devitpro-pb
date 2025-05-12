@@ -2,7 +2,7 @@
 title: Provisioning the Dynamics 365 Business Central Server Service Account
 description: The service account is used by Business Central clients to log on to the server instance. 
 ms.date: 10/19/2021
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Provisioning the [!INCLUDE[server](../developer/includes/server.md)] Service Account
@@ -313,7 +313,7 @@ ALTER ROLE bc_server_runtime ADD MEMBER [domain\accountname]
 GO
 ```  
 
-## See Also
+## Related information
 
 [Creating Databases](devenv-create-databases.md)  
 [Configuring Business Central Server](../administration/configure-server-instance.md)

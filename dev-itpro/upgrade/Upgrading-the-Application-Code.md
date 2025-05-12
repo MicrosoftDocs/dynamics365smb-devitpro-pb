@@ -3,7 +3,7 @@ title: Upgrade Application Code
 description: The article explains how to upgrade the application code to version 14 and how to merge code from different versions of the application.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -418,6 +418,6 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
     ```
 
-## See Also  
+## Related information  
 [Upgrading the Data](Upgrading-the-Data.md)   
 [Upgrading to Business Central](upgrading-to-business-central.md)

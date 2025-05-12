@@ -1,8 +1,8 @@
 ---
-title: "CodeCop Analyzer"
+title: "CodeCop analyzer"
 description: "CodeCop is an analyzer that enforces the official AL Coding Guidelines."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -15,7 +15,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 
 ## Rules
 
-|Id|Title|Category|Default Severity|
+|Id|Title|Category|Default severity|
 |--|-----------|--------|----------------|
 |[AA0001](codecop-aa0001.md)|There must be exactly one space character on each side of a binary operator such as := + - AND OR =.|Readability|Warning|
 |[AA0002](codecop-aa0002.md)|There must be no space character.|Readability|Warning|
@@ -70,7 +70,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0216](codecop-aa0216.md)|Use a text constant for passing user messages and errors without concatenations.|Localizability|Warning|
 |[AA0217](codecop-aa0217.md)|Use a text constant or label for format string in StrSubstNo.|Localizability|Warning|
 |[AA0218](codecop-aa0218.md)|You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects.|Localizability|Warning|
-|[AA0219](codecop-aa0219.md)|The Tooltip property of Fields must start with 'Specifies'.|Localizability|Warning|
+|[AA0219](codecop-aa0219.md)|The Tooltip property of Fields should start with 'Specifies'.|Localizability|Info|
 |[AA0220](codecop-aa0220.md)|The value of the Tooltip property of Fields must be filled.|Localizability|Warning|
 |[AA0221](codecop-aa0221.md)|You must specify a OptionCaption property for all fields which source expressions is not a table field.|Localizability|Warning|
 |[AA0222](codecop-aa0222.md)|SIFT index should not be used on primary or unique key.|Design|Warning|
@@ -84,7 +84,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0231](codecop-aa0231.md)|StrSubstNo or string concatenation must not be used as a parameter in the Error method.|Design|Warning|
 |[AA0232](codecop-aa0232.md)|The FlowField of a table should be indexed.|Design|Info|
 |[AA0233](codecop-aa0233.md)|Use Get(), FindFirst() and FindLast() without Next() method.|Design|Warning|
-|[AA0234](codecop-aa0234.md)|You must write a tooltip in the Tooltip property for all fields on table objects.|Localizability|Warning|
+|[AA0234](codecop-aa0234.md)|You should write a tooltip in the Tooltip property for all fields on table objects.|Localizability|Info|
 |[AA0235](codecop-aa0235.md)|When using 'OnInstallAppPerCompany' you should also add 'Company-Initialize'::'OnCompanyInitialize' event subscriber.|Design|Info|
 |[AA0237](codecop-aa0237.md)|The name of non-temporary variables must not be prefixed with Temp.|Readability|Warning|
 |[AA0240](codecop-aa0240.md)|Email and Phone No must not be present in any part of the source code.|Design|Warning|
@@ -101,7 +101,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0470](codecop-aa0470.md)|Placeholders should have a comment explaining their content.|Localizability|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  
 [Ruleset for the Code Analysis Tool](../devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools with the Ruleset](../devenv-using-code-analysis-tool-with-rule-set.md)

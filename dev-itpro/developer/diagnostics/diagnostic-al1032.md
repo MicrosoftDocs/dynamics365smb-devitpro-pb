@@ -21,6 +21,6 @@ Translation file '{0}' has the same target language as another translation file.
 There must be at most one translation file per language.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

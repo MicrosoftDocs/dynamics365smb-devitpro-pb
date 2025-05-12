@@ -39,7 +39,7 @@ permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
 }
 ```
 
-## See Also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

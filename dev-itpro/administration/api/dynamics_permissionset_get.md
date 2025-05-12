@@ -58,13 +58,13 @@ Here is an example of the response.
 {
     "id": "D365 ACC. PAYABLE",
     "scope": "System",
-    "appID": "00000000-0000-0000-0000-000000000000",
+    "appID": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "displayName": "Dynamics 365 Accounts payable",
     "extensionName": ""
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [permissionSet](../resources/dynamics_permissionSet.md)

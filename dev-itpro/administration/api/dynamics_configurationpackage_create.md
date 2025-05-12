@@ -121,7 +121,7 @@ Content-type: application/json
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [configurationPackage](../resources/dynamics_configurationPackage.md)

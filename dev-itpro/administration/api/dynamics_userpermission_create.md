@@ -68,13 +68,13 @@ Here is an example of the response.
     "roleId": "SECURITY",
     "company": "CRONUS",
     "scope": "System",
-    "appID": "00000000-0000-0000-0000-000000000000",
+    "appID": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "displayName": "",
     "extensionName": ""
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [userPermission](../resources/dynamics_userPermission.md)

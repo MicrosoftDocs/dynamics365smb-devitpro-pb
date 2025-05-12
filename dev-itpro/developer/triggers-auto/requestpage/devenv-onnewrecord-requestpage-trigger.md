@@ -1,16 +1,17 @@
 ---
-title: "OnNewRecord (Request Page) Trigger"
+title: "OnNewRecord (Request Page) trigger"
 description: "Runs after a new record is initialized, but before it is inserted as a record in the table."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnNewRecord (Request Page) Trigger
+# OnNewRecord (Request Page) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs after a new record is initialized, but before it is inserted as a record in the table.
@@ -46,7 +47,7 @@ If an error occurs in the trigger code a popup dialog shows an error message. Wh
 > [!NOTE]  
 > The **OnNewRecord** trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](Exposing-Methods-and-Properties-in-a-Windows-Client-Control-Add-in.md).  -->
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnNewRecord (Page) Trigger](../page/devenv-onnewrecord-page-trigger.md)  

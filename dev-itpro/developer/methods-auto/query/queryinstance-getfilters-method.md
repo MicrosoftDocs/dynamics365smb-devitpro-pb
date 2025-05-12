@@ -2,7 +2,7 @@
 title: "Query.GetFilters() Method"
 description: "Returns the filters that are applied to all columns in the query."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -94,7 +94,7 @@ end;
  **The filters are as follows: Quantity > 10, Name = Selangorian Ltd.**  
   
 
-## See Also
+## Related information
 [Query Data Type](query-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -4,7 +4,7 @@ description: "Get answers to some of your questions about updating your app for 
 author: freddyk
 ms.date: 04/01/2021
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: faq
 ms.author: freddyk
 ---
 
@@ -69,7 +69,7 @@ Your tenant is on an older version of [!INCLUDE[prod_short](includes/prod_short.
 [!INCLUDE[appsource-appinsights](includes/appsource-appinsights.md)].
 
 
-## See also
+## Related information
 
 [FAQ about Managing and Submitting your Business Central Offer](app-faq-offer.md)  
 [FAQ about Library & Dependency Apps in Business Central](app-faq-dependencies-libraries.md)  

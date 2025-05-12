@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Update opportunities
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
@@ -31,11 +29,11 @@ PATCH businesscentralPrefix/companies({id})/opportunities({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **opportunity**, the **opportunity** will not be updated. |
+|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **opportunity**, the **opportunity** won't be updated. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
 
@@ -45,7 +43,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/opportunities({id})
@@ -58,7 +56,7 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/opportunities({id
 
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 200 OK
@@ -87,7 +85,7 @@ Content-type: application/json
 
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [opportunity](../resources/dynamics_opportunity.md)  

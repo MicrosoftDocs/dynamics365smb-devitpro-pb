@@ -1,7 +1,7 @@
 ---
 title: "Calling External Web Services"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ms.assetid: ef7ae394-7cae-4eb4-a9a4-75b39ca1a2b6
 caps.latest.revision: 4
 ---
@@ -41,5 +41,5 @@ salesOrderService.ClientCredentials.Windows.AllowedImpersonationLevel := 4;
 salesOrder := salesOrderService.Read('10000');  
   
 ```
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

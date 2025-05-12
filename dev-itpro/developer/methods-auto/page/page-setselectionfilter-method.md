@@ -2,7 +2,7 @@
 title: "Page.SetSelectionFilter(var Record) Method"
 description: "Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to marked only."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 05/07/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -35,22 +35,25 @@ An instance of the [Page](page-data-type.md) data type.
 
 ## Remarks
 
-If all records are selected, marks will not be used.  
+If all records are selected, marks won't be used.  
   
-If only the current record is selected on the page, then SetSelectionFilter does the following:  
+If only the current record is selected on the page, then `SetSelectionFilter` does the following:  
   
 - Sets the current filter group to `0` on the destination record  
 - Adds filters on the primary key fields that point to the current record of the page  
   
-If more than one record is selected on the page, then SetSelectionFilter does the following:  
+If more than one record is selected on the page, then `SetSelectionFilter` does the following:  
   
 - Copies the current key from the page source table to the destination record  
 - Copies the current sort order from the table to the destination record  
 - Copies the current filters that are set in all filter groups  
 - Copies the current filter group  
-- Marks the selected records and sets the "marked only" filter 
+- Marks the selected records and sets the "marked only" filter
 
-## Example
+> [!IMPORTANT]
+> `SetSelectionFilter` isn't directly supported on pages based on temporary source tables and must therefore be replaced with a custom page method (see Example 2 in the following).
+
+## Example 1
 
 The following example shows how to use the **SetSelectionFilter** method to update the record or records from the `Contact` table that the user has selected on the current page.
 
@@ -61,7 +64,7 @@ var
     ContactRecordRef: RecordRef;
 begin
     CurrPage.SetSelectionFilter(Contact);
-    Contact.Next;
+    Contact.Next();
 
     if Contact.Count = 1 then
         CRMIntegrationManagement.UpdateOneNow(Contact.RecordId)
@@ -72,7 +75,20 @@ begin
 end;
 ```
 
-## See Also
-[Page Data Type](page-data-type.md)  
+## Example 2 (temporary records)
+
+For retrieving selected records on pages with a temporary source table, the following example shows how to define a custom method on a page that is based on a temporary `Contact` table. Other objects need to call the custom method instead of the **SetSelectionFilter** method.
+
+```al
+procedure SetTempSelectionFilter(var TempContact: Record Contact temporary)
+begin
+    TempContact.Copy(Rec, true);
+    CurrPage.SetSelectionFilter(TempContact);
+end;
+```
+
+## Related information
+
+[Page Data Type](page-data-type.md)
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

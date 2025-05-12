@@ -2,7 +2,7 @@
 title: "Xmlport.Break() Method"
 description: "Exits from a loop or a trigger in a data item trigger of a report or XmlPort."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -27,7 +27,7 @@ An instance of the [Xmlport](xmlport-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Xmlport Data Type](xmlport-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

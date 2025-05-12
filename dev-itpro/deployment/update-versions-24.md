@@ -1,12 +1,12 @@
 ---
-title: Dynamics 365 Business Central on-premises 2024 release wave 1 updates
+title: Dynamics 365 Business Central On-premises 2024 Release Wave 1 Updates
 description: Learn about the updates for Dynamics 365 Business Central 2024 Release Wave 1 on-premises deployments.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
-ms.date: 08/29/2024
+ms.date: 05/08/2025
+ms.topic: article
 ms.custom: bap-template
 ---
 
@@ -28,6 +28,14 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5059413](https://support.microsoft.com/help/5059413)|Update 24.13 |May 2025|Application Build 24.13.33364</br>Platform Build 24.0.33226|
+|[5056717](https://support.microsoft.com/help/5056717)|Update 24.12 |April 2025|Application Build 24.12.32447</br>Platform Build 24.0.32305|
+|[5054447](https://support.microsoft.com/help/5054447)|Update 24.11 |March 2025|Application Build 24.11.30823</br>Platform Build 24.0.30734|
+|[5052986](https://support.microsoft.com/help/5052986)|Update 24.10 |February 2025|Application Build 24.10.29654</br>Platform Build 24.0.29618|
+|[5050248](https://support.microsoft.com/help/5050248)|Update 24.9 |January 2025|Application Build 24.9.29403</br>Platform Build 24.0.29367|
+|[5049395](https://support.microsoft.com/help/5049395)|Update 24.8 |December 2024|Application Build 24.8.27723</br>Platform Build 24.0.2767|
+|[5047903](https://support.microsoft.com/help/5047903)|Update 24.7 |November 2024|Application Build 24.7.25890</br>Platform Build 24.0.25868|
+|[5046146](https://support.microsoft.com/help/5046146)|Update 24.6 |October 2024|Application Build 24.6.24785</br>Platform Build 24.0.24762|
 |[5043981](https://support.microsoft.com/help/5043981)|Update 24.5 |September 2024|Application Build 24.5.23968</br>Platform Build 24.0.23888|
 |[5042530](https://support.microsoft.com/help/5042530)|Update 24.4 |August 2024|Application Build 24.4.22925</br>Platform Build 24.0.22865|
 |[5041133](https://support.microsoft.com/help/5041133)|Update 24.3 |July 2024|Application Build 24.3.21517</br>Platform Build 24.0.21458|
@@ -40,8 +48,8 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
 [Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v24.md)  
+[Dynamics 365 Business Central On-Premises 2024 Release Wave 2 Updates](update-versions-25.md)  
 [Dynamics 365 Business Central On-Premises 2023 Release Wave 2 Updates](update-versions-23.md)  
-[Dynamics 365 Business Central On-Premises 2022 Release Wave 2 Updates](update-versions-22.md)  
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements](system-requirements-business-central-v24.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  

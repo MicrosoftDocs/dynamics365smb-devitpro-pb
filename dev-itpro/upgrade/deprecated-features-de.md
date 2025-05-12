@@ -2,7 +2,7 @@
 title: German features that are moved, removed, or replaced | Microsoft Docs
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the features for Germany that we have moved, removed, or replaced.
 author: bholtorf
-ms.topic: conceptual
+ms.topic: reference
 ms.devlang: al
 ms.search.keywords: deprecated, Germany, local functionality
 ms.date: 12/22/2023
@@ -45,7 +45,7 @@ You can archive and delete blanket sales and purchase orders. You can view docum
 
 [!INCLUDE [fields-obsolete-de](../includes/fields-obsolete-de.md)]
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

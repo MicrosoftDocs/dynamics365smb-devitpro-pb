@@ -2,7 +2,7 @@
 title: Get Report Parameters using Virtual Tables
 description: A virtual table allows you to generate report parameters, XML string without invoking the report request page. 
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ms.assetid: ddb133b9-e940-4db8-bf3a-e5f906600188
 caps.latest.revision: 24
 author: SusanneWindfeldPedersen
@@ -97,7 +97,7 @@ codeunit 50103 "Report Xml Parameters Builder"
 }
 ```
 
-## See Also
+## Related information
 [SAVEAS Method](./methods-auto/report/report-saveas-method.md)  
 [Debugging in AL](devenv-debugging.md)  
 [Developing Extensions](devenv-dev-overview.md)  

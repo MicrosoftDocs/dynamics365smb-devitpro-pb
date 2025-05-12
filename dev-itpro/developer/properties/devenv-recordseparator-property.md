@@ -1,8 +1,8 @@
 ---
-title: "RecordSeparator Property"
+title: "RecordSeparator property"
 description: "Sets the string that is to be used to separate records."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -38,6 +38,6 @@ You can set the record separator in AL code so that the XMLport can import and e
 > [!NOTE]
 > Do not use a semicolon in a quoted argument as other properties' value when you import a file through an XMLport. Even in a quoted argument, the semicolon is interpreted as a record separator.
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

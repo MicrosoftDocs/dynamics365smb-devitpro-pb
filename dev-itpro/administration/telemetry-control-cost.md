@@ -34,7 +34,7 @@ For more information, see [Cost optimization in Azure Monitor](/azure/azure-moni
 
 The following video shows how to enable cost control strategies for telemetry.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1fxZ7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=38a5cd44-3817-487d-818c-2bc2317f5d8f]
 
 ### Calculating the cost of data ingestion
 
@@ -104,7 +104,7 @@ To reduce data retention cost, you can
 - use the default retention for [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources (currently 90 days). Different retention periods can be selected for each Application Insights resource. The full set of available retention periods is 30, 60, 90, 120, 180, 270, 365, 550, or 730 days.
 - purge data from your Application Insights resource using a set of user-defined filters. See [Components - Purge](/rest/api/application-insights/components/purge#examples) for examples.
 
-## See also
+## Related information
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  

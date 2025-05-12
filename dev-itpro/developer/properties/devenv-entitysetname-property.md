@@ -1,8 +1,8 @@
 ---
-title: "EntitySetName Property"
+title: "EntitySetName property"
 description: "Sets the plural entity name with which the page is exposed in the API endpoint."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -33,7 +33,7 @@ EntitySetName = 'Customers';
 > [!NOTE]
 > The value `EntityDefinitions` is reserved and using it for the **EntitySetName Property** will result in a compiler error.
 
-## See Also
+## Related information
 
 [EntityName Property](devenv-entityname-property.md)  
 [Properties](devenv-properties.md)  

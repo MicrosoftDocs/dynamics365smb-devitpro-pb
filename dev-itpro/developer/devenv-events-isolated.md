@@ -4,7 +4,7 @@ description: Describes how isolated events work in Business Central.
 author: jswymer
 ms.author: jswymer
 ms.date: 11/11/2021
-ms.topic: conceptual
+ms.topic: article
 ms.reviewer: jswymer
 ---
 
@@ -102,7 +102,7 @@ codeunit 50145 IsolatedEventsSample
 }
 ```
 
-## See Also
+## Related information
 
 [Publishing Events](devenv-publishing-events.md)  
 [Raising Events](devenv-raising-events.md)  

@@ -21,6 +21,6 @@ Declaring views is only supported on pages of type {0}.
 Declaring views is only supported on pages, page extensions, and page customization of the type List.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -2,7 +2,7 @@
 title: "CodeCop Warning AA0136"
 description: "Do not write code that will never be hit."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,7 +17,7 @@ Do not write code that will never be hit.
 Do not write code that will never be hit.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [CodeCop Analyzer](codecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

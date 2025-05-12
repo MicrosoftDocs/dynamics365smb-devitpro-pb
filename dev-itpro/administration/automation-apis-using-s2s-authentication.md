@@ -3,7 +3,7 @@ title: Using Service to Service Authentication
 description: Service-to-service authentication enables external services to connect as an application, without impersonating normal users.
 author: jswymer
 ms.date: 06/03/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -260,7 +260,7 @@ Delete {{companyUrl}}/{{entityName}}({{entityId}})
 Authorization: {{accessHeader}}
 ```
 
-## See Also
+## Related information
 [OAuth2 and Microsoft Entra ID](/azure/active-directory/develop/active-directory-v2-protocols)  
 [Client Credentials flow/S2S using MSAL library](/azure/active-directory/develop/scenario-daemon-overview)  
 [C# samples using Client Credentials flow](https://github.com/Azure-Samples/active-directory-dotnetcore-daemon-v2)  

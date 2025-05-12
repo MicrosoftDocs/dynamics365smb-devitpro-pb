@@ -3,7 +3,7 @@ title: Preprocessor directives in AL
 description: The different types of preprocessor directives in AL; conditional, regions, and pragmas and preprocessorSymbols setting.
 author: SusanneWindfeldPedersen
 ms.date: 03/19/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -73,7 +73,7 @@ For more information, see [JSON Files](../devenv-json-files.md).
 
 ```
 
-## See also
+## Related information
 
 [Development in AL](../devenv-dev-overview.md)  
 [AL development environment](../devenv-reference-overview.md)  

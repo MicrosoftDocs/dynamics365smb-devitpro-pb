@@ -2,7 +2,7 @@
 title: Event types
 description: Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global, and trigger events.
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ---
 
@@ -89,7 +89,7 @@ Global events are predefined system events that are automatically raised by vari
 |||OnBeforeOnDatabaseDelete|
 |||OnBeforeOnDatabaseRename|
 
-\* Codunit 42 **Caption Class** was introduced as a replacement for codeunit 42 **CaptionManagement**.  In previous versions, codeunit 42 **CaptionManagement** included the `OnAfterCaptionClassTranslate` event. For more information, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md#caption-class-module) in the legacy ALAppExtensions GitHub repo.
+\* Codeunit 42 **Caption Class** was introduced as a replacement for codeunit 42 **CaptionManagement**.  In previous versions, codeunit 42 **CaptionManagement** included the `OnAfterCaptionClassTranslate` event. For more information, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md#caption-class-module) in the legacy ALAppExtensions GitHub repo.
 
 ## Trigger events
 
@@ -175,7 +175,7 @@ The following table describes the parameters of the trigger events:
 |*BelowxRec*|Boolean|Specifies whether the new record was inserted after the last record in the table \(xRec\).|
 |*AllowClose*|Boolean|Specifies whether to the page can close. If this parameter is true, the code will be executed. If this parameter is false, then the code is not executed.|
 
-## See also
+## Related information
 
 [Events in AL](devenv-events-in-al.md)  
 [Publishing events](devenv-publishing-events.md)  

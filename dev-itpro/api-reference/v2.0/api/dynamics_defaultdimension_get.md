@@ -1,6 +1,6 @@
 ---
 title: Get defaultDimensions for an entity  
-description: Gets an item default dimensions in Dynamics 365 Business Central.
+description: Gets an item default dimension in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
@@ -34,7 +34,7 @@ GET businesscentralPrefix/companies({id})/employees({id})/defaultDimensions({id}
 |Authorization| Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response 
 
@@ -48,7 +48,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({itemI
 ```
 
 **Response**  
-Here is an example of the response.
+Here's an example of the response.
 
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -65,7 +65,8 @@ Here is an example of the response.
 } 
 ```
 
-## See also
+## Related information
+
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [defaultdimension](../resources/dynamics_defaultdimension.md)    
 [Delete defaultdimension](dynamics_defaultdimension_Delete.md)    

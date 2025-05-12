@@ -71,7 +71,7 @@ Here is a JSON representation of the companyInformation
 }
 ```
 
-## See also
+## Related information
 
 [Get Company Information](../api/dynamics_companyinformation_get.md)  
 [Update Company Information](../api/dynamics_companyinformation_update.md)  

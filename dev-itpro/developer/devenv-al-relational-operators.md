@@ -2,7 +2,7 @@
 title: Relational operators
 description: Description of the relational operators in AL and how they are used to compare expressions, as well as valid uses of relational operators.
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/26/2024
 ms.author: solsen
 author: KennieNP
@@ -51,7 +51,7 @@ A valid use of the relational operators is, for example, text compared with text
 |Text||||||||Boolean|Boolean|  
 |Code||||||||Boolean|Boolean|  
 
-## See also
+## Related information
 
 [AL operators](devenv-al-operators.md)  
 [Arithmetic operators](devenv-al-arithmetic-operators.md)  

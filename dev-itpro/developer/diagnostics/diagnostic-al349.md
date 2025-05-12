@@ -21,6 +21,6 @@ Column '{0}' does not exist in application object '{1}'.
 The referenced column does not exist in the current application object.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

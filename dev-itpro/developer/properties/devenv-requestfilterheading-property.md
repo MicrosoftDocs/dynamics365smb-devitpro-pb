@@ -1,8 +1,8 @@
 ---
-title: "RequestFilterHeading Property"
+title: "RequestFilterHeading property"
 description: "Sets a caption for the request page tab that is related to this data item."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -52,7 +52,7 @@ Or, with parameters:
 RequestFilterHeading = 'Entry', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 20;
 ```
    
-## See Also
+## Related information
 
 [Request Pages](../devenv-request-pages.md)  
 [Working with Translation Files](../devenv-work-with-translation-files.md)

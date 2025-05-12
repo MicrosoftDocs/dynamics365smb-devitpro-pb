@@ -30,7 +30,6 @@ POST businesscentralPrefix/companies({id})/salesQuotes
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **salesQuote**, the **salesQuote** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **salesQuotes** object.
@@ -42,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **sales
 
 **Request**
 
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesQuotes
@@ -57,7 +56,7 @@ Content-type: application/json
   "paymentTermsId": "3bb5b4b6-ea4c-43ca-ba1c-3b69e29a6668"
 }
 ```
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Sales Quote](../resources/dynamics_salesquote.md)  

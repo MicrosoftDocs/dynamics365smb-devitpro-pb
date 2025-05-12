@@ -3,7 +3,7 @@ title: Developing telemetry into your Business Central application
 description: This article describes how to add code to application objects that enables you to gather telemetry.
 ms.date: 02/09/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 
@@ -50,7 +50,7 @@ The articles in this section describe the key concepts and techniques for using 
 |Learn how to send custom events from your app/extension to the Windows event log (on-premises only). | [Creating custom events for Windows event log (on-premises only)](devenv-instrument-application-for-telemetry-event-log.md) |
 
 
-## See Also
+## Related information
 
 [Telemetry FAQ](../administration/telemetry-faq.md)  
 [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md)  

@@ -3,7 +3,7 @@ title: Designing the User Interface
 description: "Provides an overview of the components available when designing a user interface in Business Central"
 author: kennieNP
 ms.date: 04/22/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: kepontop
 ms.reviewer: jswymer
 ---
@@ -110,7 +110,7 @@ If you want to test how your app/extension renders on the mobile app or the desk
 - [Getting Business Central on your mobile device](/dynamics365/business-central/install-mobile-app?toc=/dynamics365/business-central/dev-itpro/toc.json).
 - [Get Business Central Desktop App](/dynamics365/business-central/install-desktop-app?toc=/dynamics365/business-central/dev-itpro/toc.json)
 
-## See Also
+## Related information
 
 [Designing role centers](devenv-designing-role-centers.md)  
 [Pages overview](devenv-pages-overview.md)   

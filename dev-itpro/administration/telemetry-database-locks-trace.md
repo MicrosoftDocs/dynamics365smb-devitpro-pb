@@ -2,7 +2,7 @@
 title: Database Lock Timeout Trace Telemetry | Microsoft Docs
 description: Learn about the database lock timeout Trace Telemetry telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 04/01/2021
@@ -185,7 +185,7 @@ The telemetry you see for lock timeouts only represents the session that is the 
 You can combine data from different events by using *joins* in your Kusto queries. For an example, see [LockTimeouts.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/LockTimeouts.kql) in the **Microsoft/BCTech** repository on GitHub. For more general information about using joins, see [Joins in Azure Monitor log queries](/azure/azure-monitor/log-query/joins) in the Microsoft Azure documentation.
 
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

@@ -2,7 +2,7 @@
 title: Feature management telemetry
 description: Learn about the telemetry that is emitted from the Feature Management page in Business Central.
 author: kennienp
-ms.topic: conceptual
+ms.topic: article
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 12/22/2023
 ms.author: kepontop
@@ -55,7 +55,7 @@ traces
 , usertelemetryId = user_Id // who did it
 ```
 
-## See also
+## Related information
 
 [Telemetry Overview](telemetry-overview.md)  
 [Enable Telemetry in Business Central](telemetry-enable-application-insights.md)  

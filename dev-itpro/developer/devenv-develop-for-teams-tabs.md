@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/28/2023
 ms.custom: bap-template
 ---
@@ -210,6 +210,6 @@ The final step is to add a Business Central tab to the channel by using the [tab
 
 Change the recommended content for the tab. See [Add and Remove Recommended Content for Business Central Tabs](devenv-develop-for-teams-tab-content.md).
 
-## See also
+## Related information
 
 [Developing for Microsoft Teams Integration](devenv-develop-for-teams.md)  

@@ -3,7 +3,7 @@ title: Dutch Features that are Moved, Removed, or Replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for the Netherlands that we have moved, removed, or replaced.
 author: bholtorf
 
-ms.topic: conceptual
+ms.topic: reference
 ms.devlang: al
 ms.search.keywords: deprecated, Dutch, NL, Netherlands, local functionality
 ms.date: 04/01/2021
@@ -37,7 +37,7 @@ If you often need to create sales and purchase lines with similar information, y
 
 [!INCLUDE [fields-obsolete-nl](../includes/fields-obsolete-nl.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

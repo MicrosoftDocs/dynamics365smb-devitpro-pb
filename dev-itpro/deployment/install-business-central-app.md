@@ -2,7 +2,7 @@
 title: Install the Business Central Mobile app
 description: Learn about prerequisites for using Business Central on-premises on mobile devices.
 ms.date: 01/08/2024
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 caps.latest.revision: 24
 ms.author: jswymer
 author: jswymer
@@ -71,7 +71,7 @@ To install a working [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
     When completed, the Business Central App will open.
 
-## See also
+## Related information
 
 [Troubleshooting the Business Central Mobile App on-premises](../developer/devenv-troubleshooting-the-mobile-app.md)  
 [Installing Business Central Using Setup](install-using-setup.md)  

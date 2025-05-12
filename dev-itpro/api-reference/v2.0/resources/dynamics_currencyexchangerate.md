@@ -2,20 +2,15 @@
 title: currencyExchangeRate resource type
 description: A currency exchange rate object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 # currencyExchangeRate resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a currency exchange rate in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -26,8 +21,6 @@ Represents a currency exchange rate in [!INCLUDE[prod_short](../../../includes/p
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET currencyExchangeRate](../api/dynamics_currencyexchangerate_get.md)|currencyExchangeRate|Gets a currency exchange rate object.|
-
-
 
 ## Properties
 
@@ -43,8 +36,7 @@ Represents a currency exchange rate in [!INCLUDE[prod_short](../../../includes/p
 
 ## JSON representation
 
-Here is a JSON representation of the currencyExchangeRate resource.
-
+Here's a JSON representation of the currencyExchangeRate resource.
 
 ```json
 {
@@ -57,7 +49,7 @@ Here is a JSON representation of the currencyExchangeRate resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
+
 [GET currencyExchangeRate](../api/dynamics_currencyexchangerate_get.md)

@@ -2,7 +2,7 @@
 title: "Adding Power BI Report Parts to Pages (legacy)"
 description: Explains how to add a page on a page that displays Power BI reports in Business Central 2022 release wave 1 and ealier.
 ms.date: 05/12/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ms.search.keywords: Power BI, reports, faq, errors
 author: jswymer
 ---
@@ -252,7 +252,7 @@ pageextension 50101 TeamMemberRCPwrBiExt extends "Team Member Role Center"
 ```
 
 
-## See Also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)  
 [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  

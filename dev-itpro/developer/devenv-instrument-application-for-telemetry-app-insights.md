@@ -3,7 +3,7 @@ title: Creating custom telemetry events for Azure Application Insights
 description: This article describes how to add code to application objects that enables you to log  telemetry.
 ms.date: 02/09/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 
@@ -207,7 +207,7 @@ LogMessage('MyExt-0005', 'This is an verbose message', Verbosity::Verbose, DATAC
 ``` 
 -->
 
-## See also
+## Related information
 
 [Using feature telemetry](../administration/telemetry-feature-telemetry.md)
 [LogMessage method](methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md)  

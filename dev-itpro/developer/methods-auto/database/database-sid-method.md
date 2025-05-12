@@ -2,7 +2,7 @@
 title: "Database.SID([Text]) Method"
 description: "Retrieves the security identifier (SID) of a Windows user account."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -56,7 +56,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [Database Data Type](database-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

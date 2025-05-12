@@ -5,7 +5,7 @@ author: jswymer
 ms.custom: bap-template
 ms.date: 01/28/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: best-practice
 ms.author: jswymer
 ---
 
@@ -23,7 +23,7 @@ This article provides recommendations that you can implement to make your web se
 
 [!INCLUDE[gui_allowed](../developer/includes/include-gui-allowed.md)]
 
-## See also
+## Related information
 
 [Web Services Overview](web-services.md)  
 [Writing fast Web Services](../performance/performance-developer.md)

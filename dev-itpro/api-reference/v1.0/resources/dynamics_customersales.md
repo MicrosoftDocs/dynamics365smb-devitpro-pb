@@ -54,6 +54,6 @@ Here is a JSON representation of the resource.
     "dateFilter_FilterOnly": "date"
 }
 ```
-## See also
+## Related information
   
 [Get Customer Sales](../api/dynamics_customersales_get.md)  

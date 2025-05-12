@@ -62,7 +62,7 @@ Here is a JSON representation of the currencies.
 }
 ```
 
-## See also
+## Related information
   
 [Get Currencies](../api/dynamics_currencies_get.md)  
 [Post Currencies](../api/dynamics_create_currencies.md)  

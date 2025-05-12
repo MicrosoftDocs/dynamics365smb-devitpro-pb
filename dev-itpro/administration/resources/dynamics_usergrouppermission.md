@@ -67,7 +67,7 @@ Here is a JSON representation of the userGroupPermission resource.
 
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET userGroupPermission](../api/dynamics_usergrouppermission_get.md)  
 [DELETE userGroupPermission](../api/dynamics_usergrouppermission_delete.md)  
 [POST userGroupPermission](../api/dynamics_usergrouppermission_create.md)  

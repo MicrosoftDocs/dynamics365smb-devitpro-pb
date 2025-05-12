@@ -2,7 +2,7 @@
 title: "Xmlport.TextEncoding([TextEncoding]) Method"
 description: "Gets and sets the TextEncoding used when running, importing or exporting the XmlPort."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,7 +39,7 @@ The TextEncoding used when running, importing or exporting the XmlPort.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Xmlport Data Type](xmlport-data-type.md)  
 [TextEncoding Property \(XMLports\)](../../properties/devenv-textencoding-property.md)  
 [Get Started with AL](../../devenv-get-started.md)  

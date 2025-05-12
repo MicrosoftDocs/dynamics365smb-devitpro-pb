@@ -1,9 +1,9 @@
 ---
 title: Get started with Microsoft .NET Interoperability from AL
 description: Description of the process of referencing and using .NET types
-author: solsen
+author: SusanneWindfeldPedersen
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: get-started
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -104,7 +104,7 @@ When publishing, the server recompiles your code and tries to resolve all the re
 
 The server searches the global assembly cache (GAC), the **Add-ins** folder, and the **Add-in** table. You must manually install any custom assembly in one of these locations.
 
-## See also
+## Related information
 
 [Get started with AL](devenv-get-started.md)  
 [.NET control add-ins](devenv-dotnet-controladdins.md)        

@@ -2,7 +2,7 @@
 title: Business Central Administration Center API 
 description: Get introduced to the Business Central administration center API.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
@@ -202,7 +202,7 @@ If an error occurs during the execution of an API method, it will respond back w
 
 All unknown and unhandled errors that aren't covered by the lists above will use the error code: **Unknown**
 
-## See also
+## Related information
 
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

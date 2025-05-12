@@ -3,7 +3,7 @@ title: Prediction API overview
 description: Integrate with the Azure Machine Learning web service through the prediction API in Business Central.
 author: AndreiPanko
 ms.author: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/13/2024
 ms.custom: bap-template
 ms.collection:
@@ -178,7 +178,7 @@ The last method that you call is the `Predict` method, which sends the model and
 Now, you can loop through the updated buffer table and read the label and confidence for each record used in the prediction. 
 For more information, see the source code of the [Late Payment Prediction extension](https://github.com/microsoft/ALAppExtensions/tree/master/AddOns/LatePaymentPredictor).
 
-## See also
+## Related information
 
 [Forecasting API overview](ml-forecasting-api-overview.md)  
 [The Late Payment Prediction Extension](/dynamics365/business-central/ui-extensions-late-payment-prediction)

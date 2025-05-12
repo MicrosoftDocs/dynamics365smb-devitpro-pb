@@ -4,7 +4,7 @@ description: Overview of availability and supported languages.
 author: sorenfriisalexandersen
 ms.date: 09/16/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: altotovi
 ms.custom: references_regions
 ---
@@ -14,6 +14,9 @@ ms.custom: references_regions
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.  
 
 In countries/regions where Microsoft hasn't delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
+
+> [!NOTE]
+> There are countries/regions with more than one partner providing the translation and localization apps. Additionally, in some cases, the localization provided by the partner can consist of more than one app on AppSource.
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability. The table also specifies the abbreviation of the relevant country-specific environment that you see in the admin center. Finally, the table and states whether the localization is provided by Microsoft or partner(s).
 
@@ -207,10 +210,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 > 
 > *3) This country is available for deployment and transactions, but marketplace availability has been postponed. Therefore, ISV solutions from AppSource will not be accessible until further notice.*
 
-> [!NOTE]  
-> Microsoft will announce new planned countries for [!INCLUDE [prod_short](../includes/prod_short.md)] 2024 release wave 2 at October.
-
-Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available in [Copilot international availability](https://aka.ms/bapcopilot-intl-report-external/).
+Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
 
 Administrators can use the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] admin center to find the Azure region that their environments are in.
 
@@ -287,9 +287,9 @@ This table gives an overview of supported platform and application languages, an
 |Vietnamese (Vietnam)|vi-VN|Available|Partner, Available on AppSource|| 
 
 > [!NOTE]  
-> Application translations provided by Microsoft cover features in the international version (W1). Local functionality is not translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
+> Application translations provided by Microsoft cover features in the international version (W1). Local functionality isn't translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
 
-## See also
+## Related information
 
 [Rules and guidelines for AL code](apptest-overview.md)  
 [Checklist for submitting your app](../developer/devenv-checklist-submission.md)

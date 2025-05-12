@@ -3,7 +3,7 @@ title: AL complex types
 description: With AL complex types, you can return most types from procedures in AL for Business Central
 ms.date: 03/01/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: esbenk
 ms.collection: get-started
 ---
@@ -92,7 +92,7 @@ begin
 end;
 ```
 
-## See also
+## Related information
 
 [Programming in AL](devenv-programming-in-al.md)  
 [AL simple statements](devenv-al-simple-statements.md)  

@@ -4,7 +4,7 @@ description: An employee object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an employee in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -65,11 +63,14 @@ Represents an employee in [!INCLUDE[prod_short](../../../includes/prod_short.md)
 |status|NAV.employeeStatus|Specifies the status of the employee. It can be "Active", "Inactive" or "Terminated".|
 |birthDate|date|Specifies the employee's date of birth. |
 |statisticsGroupCode|string|The employee's statistics group code.|
+|bankBranchNumber|string||
+|bankAccountNumber|string||
+|iban|string||
 |lastModifiedDateTime|datetime|The last datetime the employee was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the employee resource.
+Here's a JSON representation of the employee resource.
 
 
 ```json
@@ -96,14 +97,15 @@ Here is a JSON representation of the employee resource.
     "status": "NAV.employeeStatus",
     "birthDate": "date",
     "statisticsGroupCode": "string",
+    "bankBranchNumber": "string",
+    "bankAccountNumber": "string",
+    "iban": "string",
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET employee](../api/dynamics_employee_Get.md)  
 [DELETE employee](../api/dynamics_employee_Delete.md)  
 [POST employee](../api/dynamics_employee_Create.md)  

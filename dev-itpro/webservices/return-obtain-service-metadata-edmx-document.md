@@ -4,7 +4,7 @@ description: "Using OData to return and obtain a Service Metadata (EDMX) Documen
 ms.custom: bap-template
 ms.date: 01/28/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Use OData to Return and Obtain a Service Metadata Document
@@ -39,5 +39,5 @@ The following guidelines have been implemented for EDM.
   
      ![EDMX metadata.](../developer/media/EDMX.JPG "EDMX")  
   
-## See Also  
+## Related information  
  [OData Web Services](OData-Web-Services.md)

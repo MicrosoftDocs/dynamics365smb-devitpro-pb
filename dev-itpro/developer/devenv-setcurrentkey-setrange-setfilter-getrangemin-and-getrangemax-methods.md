@@ -3,7 +3,7 @@ title: Filtering records with the SetRange, SetFilter, GetRangeMin, and GetRange
 description: Describes methods that set limits on the value of one or more specified fields, so that only a subset of the records are displayed, modified, deleted, and so on. 
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ---
 
@@ -96,7 +96,7 @@ BottomValue := Customer.GetRangeMin("No.");
 Value := Record.GetRangeMax(Field)  
 ```
 
-## See also
+## Related information
 
 [SetRange method](methods-auto/record/record-setrange-method.md)  
 [SetFilter method](methods-auto/record/record-setfilter-method.md)    

@@ -2,7 +2,7 @@
 title: "PerTenantExtensionCop Warning PTE0012"
 description: "The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -21,7 +21,7 @@ The InternalsVisibleTo setting will expose your internal objects to any extensio
 ## Remarks
 For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0081](appsourcecop-as0081.md).
 
-## See Also
+## Related information
 
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Get Started with AL](../devenv-get-started.md)  

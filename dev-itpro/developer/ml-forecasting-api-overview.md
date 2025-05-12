@@ -3,7 +3,7 @@ title: Forecasting API overview
 description: Integrate with the Azure Machine Learning web service through the forecasting API in Business Central.
 author: AndreiPanko
 ms.author: solsen
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/13/2024
 ms.custom: bap-template
 ms.collection:
@@ -304,7 +304,7 @@ What about always using ALL? That’s a good option, however with its own drawba
  
 For more information, see the source code of the [Sales and Inventory Forecast extension](https://github.com/microsoft/ALAppExtensions/tree/master/AddOns/SalesAndInventoryForecast). Alternatively, you can also take a closer look at the Cash Flow Forecast feature, which is part of the Base Application extension.
 
-## See also
+## Related information
 
 [Prediction API overview](ml-forecasting-api-overview.md)  
 [The Sales and Inventory Forecast Extension](/dynamics365/business-central/ui-extensions-sales-forecast)  

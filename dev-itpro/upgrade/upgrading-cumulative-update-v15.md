@@ -3,7 +3,7 @@ title: Install a version 15 update
 description: This article describes the tasks required for getting the monthly version 15 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -585,7 +585,7 @@ This step is not required for the application at runtime, but it will be needed 
     Publish-NAVApp -ServerInstance <server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
     ```
 -->
-## See also
+## Related information
 
 [Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-17.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  

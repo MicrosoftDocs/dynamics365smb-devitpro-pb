@@ -4,7 +4,7 @@ description: Introducing how to work with streams in Business Central AL code.
 author: KennieNP
 ms.date: 04/05/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kepontop
 ---
 
@@ -158,7 +158,7 @@ When streaming text data, you need to be aware of encodings, which typically is 
 Also, you might also want to learn more about the semantics of line endings and zero byte terminators. For more information, see [Write, WriteText, Read, and ReadText method behavior for line endings and zero terminators](devenv-write-read-methods-line-break-behavior.md)
 
 
-## See also
+## Related information
 
 [InStream datatype (AL reference documentation)](methods-auto/instream/instream-data-type.md)   
 [OutStream datatype (AL reference documentation)](methods-auto/outstream/outstream-data-type.md)   

@@ -29,7 +29,7 @@ GET businesscentralPrefix/companies({id})/unitsOfMeasure({id})
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and a **unitsOfMeasure** object in the response body.
@@ -38,14 +38,14 @@ If successful, this method returns a ```200 OK``` response code and a **unitsOfM
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v1.0/companies({id})/unitsOfMeasure({id})
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -61,7 +61,7 @@ Here is an example of the response.
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [unitofmeasure](../resources/dynamics_unitofmeasure.md)    
 [Delete unitofmeasure](dynamics_unitofmeasure_Delete.md)    

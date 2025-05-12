@@ -1,10 +1,10 @@
 ---
 title: "Set Up an Environment for Developing a Module"
-description: Learn how to set up the tools you need to build a module in the System Applicaton.
+description: Learn how to set up the tools you need to build a module in the System Application.
 ms.author: bholtorf
 ms.date: 07/29/2021
 ms.reviewer: bholtorf
-ms.topic: conceptual
+ms.topic: how-to
 author: bholtorf
 ---
 
@@ -91,7 +91,7 @@ This topic describes how to set up an environment for developing a module in the
    > If you copy the script, remember to update the path to the license file ($licenseFile). Also, if you are using a demo license, remove the **-includeTestToolkit** and **-includeTestLibrariesOnly** options.
 5. Run the script to create the Docker container. This can take some time if you are running it for the first time.
 
-## See Also
+## Related information
 [Getting Started with Modules](devenv-getting-started.md)  
 [Create a New Module in the System Application](devenv-new-module.md)  
 [Module Architecture](devenv-blueprint.md)  

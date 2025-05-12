@@ -1,7 +1,7 @@
 ---
 title: "SOAP Web Services"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 description: 'Learn how to use SOAP web services for operation-centric services in Business Central. Note: SOAP is being deprecated, consider OData or APIs.'
 ---
 
@@ -9,7 +9,7 @@ description: 'Learn how to use SOAP web services for operation-centric services 
 
 SOAP web services enable full flexibility for building operation-centric services. They provide industry-standard interoperability and channel and host pluggability.  
   
-You can use SOAP to interact with page or codeunit web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] .  
+You can use SOAP to interact with page or codeunit web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
 [!INCLUDE[soap_deprecation](../includes/soap_deprecation_note.md)]
 
@@ -22,7 +22,7 @@ You can use SOAP to interact with page or codeunit web services in [!INCLUDE[pro
 |Learn how to write code that provides a list of existing companies in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.|[Using SystemService to Find Companies](use-systemservice-to-find-companies.md)|  
 |Ensure that field values are updated from web services.|[Using Properties to Indicate Field Value Presence](use-properties-to-indicate-field-value.md)|
 
-## See Also  
+## Related information  
 
 [Web service performance](web-service-performance.md)   
 [Troubleshoot web service errors](web-service-troubleshooting.md)   

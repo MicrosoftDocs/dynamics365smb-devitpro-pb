@@ -1,16 +1,17 @@
 ---
-title: "OnAction (Action) Trigger"
+title: "OnAction (Action) trigger"
 description: "Runs when a user selects an action on a page."
 ms.author: solsen
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAction (Action) Trigger
+# OnAction (Action) trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs when a user selects an action on a page.
@@ -37,7 +38,7 @@ You typically use the [RunObject Property](../../properties/devenv-runobject-pro
 > [!NOTE]  
 > The **OnAction** trigger is not used on Role Center pages. If you add AL code to the trigger, the Role Center page will compile, but the AL code will be ignored at runtime.  
 
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [RunObject Property](../../properties/devenv-runobject-property.md)  

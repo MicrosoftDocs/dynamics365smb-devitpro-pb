@@ -4,7 +4,7 @@ description: Description of how you use AL to add tooltips to table and page fie
 author: kennieNP
 ms.reviewer: jswymer
 ms.date: 03/13/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kepontop
 ms.collection: get-started
 ---
@@ -84,7 +84,7 @@ In [!INCLUDE[prod_short](includes/prod_short.md)] 2023 release wave 2 or earlier
 
 In case you need to display a table field in multiple pages (for example, on a card and a list), then you need to duplicate the code for the definition of the tooltip.
 
-## See also
+## Related information
 
 [Help users get unblocked (by providing tooltips)](../user-assistance.md#help-users-get-unblocked)  
 [Build your first sample extension with extension objects, install code, and upgrade code](devenv-extension-example.md)  

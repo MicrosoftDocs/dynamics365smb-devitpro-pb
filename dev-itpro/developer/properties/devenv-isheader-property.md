@@ -1,8 +1,8 @@
 ---
-title: "IsHeader Property"
+title: "IsHeader property"
 description: "Specifies if the page action separator is a header."
 ms.author: solsen
-ms.date: 05/14/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,6 +32,6 @@ IsHeader = true;
 ```
  
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

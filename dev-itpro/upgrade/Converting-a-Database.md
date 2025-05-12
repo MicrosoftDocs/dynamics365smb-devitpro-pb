@@ -3,7 +3,7 @@ title: "Converting a Database to Dynamics 365 Business Central - Technical Upgra
 description: "Learn how to convert a database from one of the supported versions to Business Central version 14 as part of a technical upgrade."
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer
@@ -399,7 +399,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](/previous-versions/sql/sql-server-2008-r2/ms143503(v=sql.105)).  
 
-## See Also
+## Related information
   
 [Upgrading the Application Code](Upgrading-the-Application-Code.md) [Upgrading the Data](Upgrading-the-Data.md)  
 [Upgrading to Business Central](Upgrading-to-business-central.md)

@@ -2,7 +2,7 @@
 title: Analyzing Permission Changes Trace Telemetry
 description: Learn about the telemetry for permission changes made in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 04/01/2021
@@ -494,7 +494,8 @@ traces
 
 
 
-## See also
+## Related information
 
+[Audit permission administration events in Microsoft Purview](../auditing/audit-events-in-purview.md#administered-user-activities)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

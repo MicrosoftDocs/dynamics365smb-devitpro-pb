@@ -4,7 +4,7 @@ description: A sales credit memo line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales credit memo line in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,7 +26,6 @@ Represents a sales credit memo line in [!INCLUDE[prod_short](../../../includes/p
 |[DELETE salesCreditMemoLine](../api/dynamics_salescreditmemoline_delete.md)|none|Deletes a sales credit memo line object.|
 |[POST salesCreditMemoLine](../api/dynamics_salescreditmemoline_create.md)|salesCreditMemoLine|Creates a sales credit memo line object.|
 |[PATCH salesCreditMemoLine](../api/dynamics_salescreditmemoline_update.md)|salesCreditMemoLine|Updates a sales credit memo line object.|
-
 
 ## Navigation
 
@@ -77,7 +74,7 @@ Represents a sales credit memo line in [!INCLUDE[prod_short](../../../includes/p
 
 ## JSON representation
 
-Here is a JSON representation of the salesCreditMemoLine resource.
+Here's a JSON representation of the salesCreditMemoLine resource.
 
 
 ```json
@@ -112,11 +109,9 @@ Here is a JSON representation of the salesCreditMemoLine resource.
     "locationId": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Get.md)  
 [DELETE salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Delete.md)  
 [POST salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Create.md)  

@@ -147,7 +147,7 @@ This article lists properties of the report object.
 
 -->
 
-## See Also  
+## Related information  
 [Report datatype (AL language reference)](../methods-auto/report/report-data-type.md)   
 [Report, report data item, and report extension properties (AL language reference)](../properties/devenv-report-property-overview.md)   
 [Properties](devenv-properties.md)  

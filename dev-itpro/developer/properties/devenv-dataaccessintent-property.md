@@ -1,8 +1,8 @@
 ---
-title: "DataAccessIntent Property"
+title: "DataAccessIntent property"
 description: "Sets the data access intent of the page."
 ms.author: solsen
-ms.date: 07/01/2024
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -20,7 +20,7 @@ Sets the data access intent of the page.
 -   Report
 -   Query
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -57,7 +57,7 @@ When calling an API page or API query, the property value can be overwritten by 
 
 [!INCLUDE[database_access_intent_note](../../includes/include-database-access-intent-note.md)]
 
-## See Also  
+## Related information  
 
 [Using Read Scale-Out for Better Performance](../../administration/database-read-scale-out-overview.md)  
 [Optimizing SQL Server Performance](../../administration/optimize-sql-server-performance.md)  

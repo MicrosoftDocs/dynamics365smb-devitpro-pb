@@ -113,7 +113,7 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-## See also
+## Related information
   
 [Get Customers](../api/dynamics_customer_get.md)  
 [Post Customers](../api/dynamics_create_customer.md)  

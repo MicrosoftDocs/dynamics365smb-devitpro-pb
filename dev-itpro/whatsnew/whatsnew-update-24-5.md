@@ -4,10 +4,11 @@ description: Get an overview of new and changed capabilities in the 24.5 update 
 ms.author: jswymer
 ms.date: 09/04/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.custom: 
     - bap-template
+    - evergreen
 ---
 
 # Update 24.5 for Microsoft Dynamics 365 Business Central online 2024 release wave 1
@@ -16,7 +17,7 @@ Would you like to know what changes are in update 24.5? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes on Microsrosft Support at [Update 24.5 for Business Central 2024 Release Wave 1](https://support.microsoft.com/help/5043981). Download the on-premises files from the Microsoft Download Center at [Update 24.5 for Business Cenral](https://www.microsoft.com/en-us/download/details.aspx?id=106245)<!--(https://aka.ms/BCDownload)-->.
+Learn about the hotfixes on Microsoft Support at [Update 24.5 for Business Central 2024 Release Wave 1](https://support.microsoft.com/help/5043981). Download the on-premises files from the Microsoft Download Center at [Update 24.5 for Business Cenral](https://www.microsoft.com/en-us/download/details.aspx?id=106245)<!--(https://aka.ms/BCDownload)-->.
 
 ## Feature changes
 

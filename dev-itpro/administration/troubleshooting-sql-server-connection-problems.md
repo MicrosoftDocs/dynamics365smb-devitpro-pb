@@ -2,7 +2,7 @@
 title: "Troubleshooting: SQL Server Connection Problems"
 description: Learn how to configure and troubleshoot SQL Server connections to Business Central.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 author: SusanneWindfeldPedersen
 ---
 # Configuring and troubleshooting SQL Server Connections
@@ -67,6 +67,6 @@ When using a named database instance for [!INCLUDE[prod_short](../developer/incl
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
 
 
-## See Also  
+## Related information  
 
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)
