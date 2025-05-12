@@ -2,7 +2,7 @@
 title: Embed Power BI reports in pages
 description: Explains how to display Power BI reports on pages in Business Central
 ms.custom: bap-template
-ms.date: 06/20/2024
+ms.date: 05/12/2025
 ms.topic: how-to
 ms.search.keywords: Power BI, reports, faq, errors
 author: jswymer
@@ -13,7 +13,7 @@ ms.reviewer: jswymer
 
 > **APPLIES TO:** Business Central 2022 release wave (v21) and later. For earlier versions, see [Adding Power BI Report Parts to Pages (Legacy)](devenv-power-bi-report-parts-legacy.md).
 
-[!INCLUDE [prod_short](includes/prod_short.md)] integrates with Microsoft Power BI, enabling users to create Power BI reports, scorecards, and dashboards based on Business Central data. Users can view these from their Power BI workspaces, but also from the Business Central client. For an overview about Power BI integration, see [Business Central and Power BI](/dynamics365/business-central/admin-powerbi).
+[!INCLUDE [prod_short](includes/prod_short.md)] integrates with Microsoft Power BI, enabling users to create Power BI reports, scorecards, and dashboards based on Business Central data. Users can view these elements from their Power BI workspaces, but also from the Business Central client. Learn more about Power BI integration in [Business Central and Power BI](/dynamics365/business-central/admin-powerbi).
 
 The [!INCLUDE [prod_short](includes/prod_short.md)] base application includes several roles centers and pages that display Power BI reports. This article provides an introduction to how you customize the application to display even more reports, scorecards, dashboards by using the Power BI embed framework of Business Central.
 
@@ -41,7 +41,7 @@ The following table outlines the most common objects used when adding Power BI e
 |-|-|
 |Page 6325 "Power BI Embedded Report Part"|Used to display Power BI elements in a page part.|
 |Page 6323 "Power BI Element Card"|Used to display Power BI elements in expanded mode on a separate page. Obsolete starting with version 26.0. Use page 6324 "Power BI Element Addin Host" instead.|
-|Page 6324 "Power BI Element Addin Host"|Used to display Power BI elements in expanded mode on a separate page.|
+|Page 6324 "Power BI Element Addin Host"|Used to display Power BI elements in expanded mode on a separate page. This page is a `UserControlHost` page type, which was introduced in 2025 release wave 1 (version 26).|
 |Page 6327 "Power BI Embed Setup Wizard"|Assisted setup guide for enabling Power BI for the fírst time.|
 |Table 6312 "Power BI Displayed Element"|Stores information about Power BI elements to be displayed for a user in each specific context. This table was introduced in 2023 release wave 2 (version 23).|
 |Table 6314 "Power BI Context Settings"|Persists user settings for a specific Power BI context (like role center part, page FactBox, and so on) where the settings apply. Different parts in the same main page can have different contexts. This table was introduced in 2023 release wave 2 (version 23).|
@@ -272,10 +272,10 @@ pageextension 50100 SalesInvoicesListPwrBiExt extends "Sales Invoice List"
 
 ### Display same set of Power BI reports on different pages
 
-Suppose you want setup **Power BI Report** parts on different pages, where the parts have the following behavior:
+Suppose you want setup **Power BI Report** parts on different pages so the parts have the following behavior:
 
 - They show the same report selected by the user on all pages. When the user switches to another report on one page, it switches on all pages.
-- When a report is enabled or disabled in the **Power BI Report** part on one page, it's also enabled or disabled in the parts on other pages.
+- When the user enables or disables a report in the **Power BI Report** part on one page, it's also enabled or disabled in the parts on other pages.
 
 To configure this functionality, you give each **Power BI Report** part on the different pages the same context keyword. In other words, use the same values for the SubPageView property for the parts on all pages:
 
@@ -333,11 +333,12 @@ pageextension 50101 SalesOrdersPwrBiExt extends "Sales Orders"
 
 ## Pin a specific Power BI element to page part
 
-The framework enables you to display a specific report, report visual, scorecard, dashboard, or dashboard tile, preventing users from switching to other elements or modifying visuals. For example, you can add a part that displays a single report visual, like the one shown in the following figure. Notice that the menu doesn't include the **Select reports**, **Next**, and **Previous** actions, which help prevent users from accessing other reports:
+The framework lets you show a specific report, report visual, scorecard, dashboard, or dashboard tile. Users can't switch to other elements or change visuals. For example, add a part that shows a single report visual, like the one in the following figure. The menu doesn't include the **Select reports**, **Next**, and **Previous** actions, so users can't access other reports:
+
 
 :::image type="content" source="../developer/media/pwr-bi-part-report-visual.svg" alt-text="Shows the action menu on a Power BI report part.":::
 
-To implement this scenario, you'll need to use some key objects, such as the **Power BI Displayed Element** and **Power BI Context Settings** tables. The **Power BI Displayed Element** table stores information about the elements that you want to display for users in specific contexts, while the **Power BI Context Settings** table persists the user settings for a specific Power BI context.
+To implement this scenario, use key objects like the **Power BI Displayed Element** and **Power BI Context Settings** tables. The **Power BI Displayed Element** table stores information about the elements you display for users in specific contexts, and the **Power BI Context Settings** table saves user settings for a specific Power BI context.
 
 For a detailed code example that demonstrates how to pin a specific Power BI report to a page part in Business Central, go to [https://github.com/microsoft/BCTech/blob/master/samples/PowerBi/PBI23samples/AddCustomerCardLockedPart.PageExt.al](https://github.com/microsoft/BCTech/blob/master/samples/PowerBi/PBI23samples/AddCustomerCardLockedPart.PageExt.al). 
 
@@ -394,14 +395,14 @@ pageextension 50127 SalesInvoicesListPwrBiExt extends "Sales Invoice List"
 ```
 -->
 
-## Open a Power BI element expanded in its own page 
+## Open a Power BI element expanded in its own page
 
-From the Power BI Embedded Report Part, users can select the **Expand** action to open the report expanded in a separate page. You can provide a similar experience by using AL code to add an action on page that opens a specific element in the expanded mode.
+From the Power BI Embedded Report Part, users select the **Expand** action to open the report in a separate page. You can create a similar experience by using AL code to add an action on a page that opens a specific element in expanded mode.
 
+For this scenario, use the **Power BI Displayed Element** and **Power BI Context Settings** tables, just like when you pin a specific element to a page part. Instead of using the **Power BI Embedded Report Part** to show the element, use one of the following pages depending on your Business Central version:
 
- To achieve this, you use the **Power BI Displayed Element** and **Power BI Context Settings** tables, just like when pinning a specific element to a page part. However, instead of using the **Power BI Embedded Report Part**, you embed the element in the **Power BI Element Card** page.
-
-For detailed code examples that demonstrate this scenario for all element types, go to [https://github.com/microsoft/BCTech/tree/master/samples/PowerBi/PBI23samples](https://github.com/microsoft/BCTech/tree/master/samples/PowerBi/PBI23samples). 
+- For version 26 and later, use the **Power BI Element Addin Host** page. For detailed code examples, see [https://github.com/microsoft/BCTech/tree/master/samples/PowerBi/PBI23samples](https://github.com/microsoft/BCTech/tree/master/samples/PowerBi).
+- For version 25 and earlier, use the **Power BI Element Card** page. For detailed code examples, see [https://github.com/microsoft/BCTech/tree/master/samples/PowerBi/PBI23samples](https://github.com/microsoft/BCTech/tree/master/samples/PowerBi/PBI23samples).
 
 ## Getting information about element types
 
@@ -429,105 +430,6 @@ To display a specific Power BI element, such as a report, visual, or dashboard, 
 - If you use both the `SubPageView` property and the `SetPageContext` method for specifying a context at the same time, the `SetPageContext` value overwrites the value specified in the `SubPageView` property.
 - Dynamically changing the context (for example, by calling `SetPageContext` in the `OnAfterGetCurrRecord`) isn't recommended and could lead to unexpected results.
 - Role center pages have no triggers, which means there's no way to call the `SetPageContext` method. As a consequence, any Power BI part in the role center would have the same context: the current user's profile/role.
-
-## Feature details
-
-This release wave introduces a new page type that enhances the Power BI report embedding experience. Power BI reports display in a slim, visually appealing, and user-friendly interface. Key improvements include:  
-
-- The interface removes irrelevant buttons like **Delete** and **Edit** for embedded reports.  
-- Margins and spacing around reports are refined and balanced.  
-- Titles use less space.  
-- New zoom and fit-to-page controls are added. 
-
-These enhancements apply to most Power BI reports in Business Central, ensuring a consistent, improved experience across the platform. The following figures show the difference between the previous and new experiences for the Sales Report:
-
-**Before**
-
-![Business Central Pwer BI embed old.](../developer/media/sales-rpt-v25.png)
-
-**Now**
-
-![Business Central Pwer BI embed new.](../developer/media/sales-rpt-v26.png)  
-
-### New usercontrolhost Page Type
-
-The `UserControlHost` page type in AL enables the new Power BI report embedded experience. The `UserControlHost` page type simplifies the embedding of custom controls, such as Power BI reports, compared to using a `Card` page type required in previous releases, by removing unnecessary complexities.
-
- Key aspects of the page type include:
-
-- It excludes properties and triggers that are irrelevant for control add-ins, such as SourceTable property and OnAfterGetRecord trigger.
-- In the UI, the entire page space is dedicated to the embedded control, eliminating unnecessary actions or buttons.
-- Developers can easily adopt the page type in AL code.
-
-Consider this simplified code example of a page that shows a WebPageViewer control using the `Card` page type.  
-
-```al
-page 50100 UserControl
-{
-    PageType = Card;
-    ApplicationArea = All;
-    SourceTable = Customer;
-    InsertAllowed = false;
-    ModifyAllowed = false;
-    DeleteAllowed = false;
-    Editable = false;
-    Caption = 'UserControl Example';
-
-    layout
-    {
-        area(Content)
-        {
-            usercontrol(Webpageview; WebPageViewer)
-            {
-                ApplicationArea = All;
-
-                trigger ControlAddInReady(callback: text)
-                begin
-                    CurrPage.Webpageview.Navigate(HyperLinkTxt)
-                end;
-                trigger Refresh(CallbackUrl: Text)
-                begin
-                    CurrPage.Webpageview.Navigate(HyperLinkTxt)
-                end;
-            }
-        }
-    }
-}
-```
-
-The following code uses the `UserControlHost` page type. The `UserControlHost` page type doesn't allow the properties `SourceTable`, `InsertAllowed`, `ModifyAllowed`, and `DeleteAllowed`.  
-
-```al
-page 50122 UserControl
-{
-    PageType = UserControlHost;
-    ApplicationArea = All;
-    Editable = false;
-    Caption = 'UserControl Example';
-
-    layout
-    {
-        area(Content)
-        {
-            usercontrol(Webpageview; WebPageViewer)
-            {
-                ApplicationArea = All;
-
-                trigger ControlAddInReady(callback: text)
-                begin
-                    CurrPage.Webpageview.Navigate(HyperLinkTxt)
-                end;
-
-                trigger Refresh(CallbackUrl: Text)
-                begin
-                    CurrPage.Webpageview.Navigate(HyperLinkTxt)
-                end;
-            }
-        }
-    }
-}
-```
-
 
 ## Related information
 
