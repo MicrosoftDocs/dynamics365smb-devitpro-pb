@@ -2,7 +2,7 @@
 title: Programming in AL
 description: AL is the programming language used for manipulating data such as retrieving, inserting, and modifying records in a Business Central database. It controls the execution of the various application objects, such as pages, reports, or codeunits.
 ms.date: 01/16/2025
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.collection: get-started
 ms.custom: evergreen

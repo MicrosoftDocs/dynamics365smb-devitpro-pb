@@ -3,7 +3,7 @@ title: How to work with a performance problem
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
 ms.date: 05/31/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: KennieNP
 ---
 

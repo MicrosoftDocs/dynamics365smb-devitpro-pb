@@ -4,7 +4,7 @@ description: Get an overview of your options for setting up demos of Dynamics 36
 author: jswymer
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.search.form: 2500, 2502, 20350
 ms.author: jswymer
 ms.date: 11/22/2024

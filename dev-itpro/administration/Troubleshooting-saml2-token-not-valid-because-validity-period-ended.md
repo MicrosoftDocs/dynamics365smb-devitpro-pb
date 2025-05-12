@@ -3,7 +3,7 @@ title: "The SAML2 token is not valid because its validity period has ended."
 description: Troubleshooting guidelines for SAML2 token errors that can occur when using Microsoft Entra ID or Office authentication
 author: jswymer
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ---
 # Troubleshooting: SAML2 token errors with Microsoft Entra ID / Office 365 Authentication
 

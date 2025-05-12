@@ -4,14 +4,12 @@ description: A job queue log entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ---
 
 # jobQueueLogEntry resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a job queue log entry in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -47,7 +45,7 @@ Represents a job queue log entry in [!INCLUDE[prod_short](../../../includes/prod
 
 ## JSON representation
 
-Here is a JSON representation of the jobQueueLogEntry resource.
+Here's a JSON representation of the jobQueueLogEntry resource.
 
 
 ```json
@@ -73,4 +71,5 @@ Here is a JSON representation of the jobQueueLogEntry resource.
 ```
 
 ## Related information
+
 [GET jobQueueLogEntry](../api/dynamics_jobqueuelogentry_get.md)  

@@ -2,7 +2,7 @@
 title:  Analyzing client action telemetry
 description: Learn about the telemetry from client action in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/07/2023

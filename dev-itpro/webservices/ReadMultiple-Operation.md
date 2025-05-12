@@ -1,7 +1,7 @@
 ---
 title: "ReadMultiple Operation"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ---
 # ReadMultiple Operation
 Reads a filtered set of records. This operation returns an array of entities. The ReadMultiple operation allows the consumer of a web service to specify the number of records to be returned at one time. This can reduce load on the server.  

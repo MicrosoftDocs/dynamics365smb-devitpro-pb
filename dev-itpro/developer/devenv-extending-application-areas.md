@@ -2,7 +2,7 @@
 title: Extending Application Areas
 description: Learn about extending application areas in Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.date: 01/10/2025
 ms.reviewer: solsen

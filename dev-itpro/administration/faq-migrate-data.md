@@ -4,7 +4,7 @@ description: Get answers to your questions about migrating to the cloud from an 
 author: jswymer
 
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: faq
 ms.search.keywords: cloud, edge
 ms.date: 11/30/2022
 ms.author: jswymer

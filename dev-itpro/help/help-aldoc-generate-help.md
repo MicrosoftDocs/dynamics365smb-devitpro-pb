@@ -2,7 +2,7 @@
 title: Generating help with the ALDoc tool
 description: This article describes how to download and use the ALDoc tool to generate reference help for first party apps for Business Central. 
 author: SusanneWindfeldPedersen
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: solsen
 ms.date: 05/31/2024
 ms.author: solsen

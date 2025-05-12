@@ -9,8 +9,6 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Delete contacts
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
@@ -30,22 +28,22 @@ DELETE businesscentralPrefix/companies({id})/contacts({id})
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **contact**, the **contact** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **contact**, the **contact** won't be updated. |
 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns ```204 No Content``` response code and deletes the contact. It does not return anything in the response body.
+If successful, this method returns ```204 No Content``` response code and deletes the contact. It doesn't return anything in the response body.
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/contacts({id})
@@ -53,7 +51,7 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/contacts({id})
 
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 204 No Content

@@ -4,7 +4,7 @@ description: Describes how to handle error dialogs in AL code.
 author: samirdal
 ms.author: samirdal
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/21/2025
 ms.custom: bap-template
 ---

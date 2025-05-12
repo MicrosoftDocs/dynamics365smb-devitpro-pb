@@ -2,7 +2,7 @@
 title: Transferring data between tables using DataTransfer
 description: Learn about the DataTransfer object type and how to use it to move data between tables.
 author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.date: 03/07/2023
 ms.reviewer: jswymer

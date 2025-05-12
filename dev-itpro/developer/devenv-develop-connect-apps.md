@@ -4,7 +4,7 @@ description: Learn how to get started developing a Connect app
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 11/13/2024
-ms.topic: conceptual
+ms.topic: get-started
 ms.collection: get-started
 ms.reviewer: solsen
 ---

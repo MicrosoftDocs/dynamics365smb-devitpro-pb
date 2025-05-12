@@ -2,7 +2,7 @@
 title: Control Add-in Style Guide
 description: Learn about the style guide for control add-ins in Dynamics 365 Finance.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ms.author: jswymer
 ms.reviewer: solsen

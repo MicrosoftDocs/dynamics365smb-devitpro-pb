@@ -6,7 +6,7 @@ ms.custom: bap-template
 ms.date: 10/01/2024
 ms.reviewer: jswymer
 ms.author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Page types and layouts

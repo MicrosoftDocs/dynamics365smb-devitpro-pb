@@ -2,7 +2,7 @@
 title: Report Generation Telemetry | Microsoft Docs
 description: Learn about the report telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 01/04/2024
 ms.author: jswymer

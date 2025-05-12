@@ -3,7 +3,7 @@ title: "OnAfterIntermediateDocumentReady Event"
 description: Describe the OnAfterIntermediateDocumentReady Event in Business Central.
 ms.date: 03/10/2023
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: nhsejth
 ---
 

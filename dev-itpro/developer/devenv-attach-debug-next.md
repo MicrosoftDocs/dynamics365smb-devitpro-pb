@@ -4,7 +4,7 @@ description: Attach to a session on a specified server and debug for Web API ses
 ms.custom: bap-template
 ms.date: 01/10/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ---

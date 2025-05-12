@@ -4,7 +4,7 @@ description: Learn how to use FlowFilter expressions in OData URIs.
 ms.custom: bap-template
 ms.date: 01/28/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # Using FlowFilters in OData URIs
 

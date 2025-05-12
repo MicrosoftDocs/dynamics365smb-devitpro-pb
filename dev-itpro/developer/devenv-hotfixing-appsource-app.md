@@ -5,7 +5,7 @@ author: qutreson
 ms.author: solsen
 ms.reviewer: solsen
 
-ms.topic: conceptual
+ms.topic: article
 ms.date: 11/14/2023
 ms.custom: bap-template
 ---

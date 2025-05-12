@@ -70,13 +70,14 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 26.1](whatsnew/whatsnew-update-26-1.md)
 ### [Update 26.0](whatsnew/whatsnew-update-26-0.md)
-### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
-### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
-### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
-### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
-### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 ### Updates for earlier major versions
+#### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
+#### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
+#### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
+#### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
+#### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 #### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
 #### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
 #### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
@@ -1060,8 +1061,9 @@
 #### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
-#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
 #### [Mock outbound HttpClient web service calls during testing](developer/devenv-httpclient-mock-outbound-calls.md)
+#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
+#### [HttpClientHandler](developer/attributes/devenv-httpclienthandler-attribute.md)
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
@@ -1592,6 +1594,12 @@
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
+#### Test Copilot capability in AL
+##### [Test Copilot capability in AL](developer/ai-test-copilot.md)
+##### [Datasets](developer/ai-test-copilot-datasets.md)
+##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
+##### [AI test tool](developer/ai-test-copilot-testtool.md)
+##### [Best practices](developer/ai-test-copilot-bestpractices.md)
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)

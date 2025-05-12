@@ -2,7 +2,7 @@
 title: Manage consumption-based billing
 description: Learn about managing consumption-based billing for Business Central.
 author: jobulsin
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, telemetry, billing
 ms.date: 02/26/2025

@@ -3,7 +3,7 @@ title: "Using request pages with XMLports"
 description: "Introducing how to work with request pages for Business Central XMLports."
 author: SusanneWindfeldPedersen
 ms.date: 08/31/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---

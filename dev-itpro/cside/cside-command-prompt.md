@@ -3,7 +3,7 @@ title: Using the Development Environment from the Command Prompt
 description: Learn how to use the C/SIDE Development Environment from the command prompt.
 author: jswymer
 ms.date: 04/01/2021
-ms.topic: article
+ms.topic: concept-article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---

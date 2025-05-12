@@ -4,7 +4,7 @@ description: Gives an overview of what happens you set up cloud migration for Dy
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: install-set-up-deploy
 ms.date: 12/13/2024
 ms.custom: bap-template
 ---

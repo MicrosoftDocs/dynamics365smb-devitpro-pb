@@ -2,7 +2,7 @@
 title: Field calculation methods
 description: CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods in Business Central.
 ms.date: 01/14/2025
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen

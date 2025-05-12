@@ -2,7 +2,7 @@
 title: Working with Card Part
 description: Design and implementation tips for page part of type CardPart.
 ms.date: 06/06/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: brobledodiaz
 author: blrobl
 ms.reviewer: jswymer

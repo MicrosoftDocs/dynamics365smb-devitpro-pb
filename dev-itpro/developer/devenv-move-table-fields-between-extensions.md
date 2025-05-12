@@ -4,7 +4,7 @@ description: Learn how to move tables and fields between extensions in Business 
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/31/2025
 ---
 

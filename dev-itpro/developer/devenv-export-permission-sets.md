@@ -3,7 +3,7 @@ title: Export Permission Sets to XML
 description: Learn more about exporting permission sets to XML in Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 01/10/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

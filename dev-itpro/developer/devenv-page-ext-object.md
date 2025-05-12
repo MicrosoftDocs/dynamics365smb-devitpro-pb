@@ -3,7 +3,7 @@ title: Page extension object
 description: Extend page objects with page extension objects in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 11/13/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

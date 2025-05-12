@@ -2,7 +2,7 @@
 title: Introducing the Dynamics 365 Business Central Mobile App
 description: Learn about the Dynamics 365 Business Central Mobile App and how it can help you access data from a tablet or a phone.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviwer: solsen

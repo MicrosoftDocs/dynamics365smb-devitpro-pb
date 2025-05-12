@@ -4,7 +4,7 @@ description: Learn about the Disable SOAP web services on Microsoft UI pages fea
 ms.custom: bap-template
 ms.date: 03/26/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.author: jswymer
 ---

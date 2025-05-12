@@ -1,9 +1,9 @@
-﻿---
+---
 title: Onboarding experiences
 description: As a partner, you can get your customers up to speed in a hurry with the right onboarding story. Learn about checklists and teaching tips in the onboarding framework.
 author: sorenfriisalexandersen
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: concept-article
 ms.date: 01/30/2025
 ms.author: soalex
 ---

@@ -2,7 +2,7 @@
 title: Promoted actions
 description: Promoted actions are configured to display on the Home tab for accessing quick daily actions in Dynamics 365 Business Central. 
 ms.date: 07/09/2024
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 --- 

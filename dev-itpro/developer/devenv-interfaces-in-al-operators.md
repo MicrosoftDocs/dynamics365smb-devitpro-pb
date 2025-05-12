@@ -3,7 +3,7 @@ title: Type testing and casting operators for interfaces in AL
 description: Learn how to use the `is` and `as` operators for type testing and casting interfaces in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 09/30/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen

@@ -3,7 +3,7 @@ title: Enabling upcoming features ahead of time
 description: Learn how to enable select features ahead of time as the administrator of Business Central online or on-premises. 
 author: mikebcMSFT
 
-ms.topic: conceptual
+ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
 ms.date: 10/26/2021
 ms.author: mikebc

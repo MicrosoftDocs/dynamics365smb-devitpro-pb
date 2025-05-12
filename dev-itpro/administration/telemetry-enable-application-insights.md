@@ -2,7 +2,7 @@
 title: Turn sending telemetry to application insights on or off
 description: Learn how you can get richer telemetry by connecting your Business Central with Application Insights for telemetry. 
 ms.author: kepontop
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ms.date: 07/23/2024
 ms.custom: bap-template

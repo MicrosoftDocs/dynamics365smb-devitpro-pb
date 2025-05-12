@@ -4,7 +4,7 @@ description: Describes the codeunit object, which is a container for business lo
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
 ---

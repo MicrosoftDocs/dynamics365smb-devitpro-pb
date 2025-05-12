@@ -1,7 +1,7 @@
 ---
 title: "Delete Operation"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ---
 # Delete Operation
 Deletes a single record.  

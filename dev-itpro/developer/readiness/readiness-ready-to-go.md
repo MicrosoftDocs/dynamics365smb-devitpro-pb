@@ -4,7 +4,7 @@ description: Resources for partners contain a set of resources, services, and to
 author: jswymer
 ms.date: 04/03/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ---
 

@@ -4,7 +4,7 @@ description: Read about the PowerShell cmdlets managing Business Central Server 
 author: jswymer
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.date: 04/15/2025
 ms.service: dynamics-365-op
