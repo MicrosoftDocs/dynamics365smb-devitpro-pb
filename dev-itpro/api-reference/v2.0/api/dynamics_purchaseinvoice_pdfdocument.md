@@ -1,9 +1,7 @@
 ---
 title: Get purchaseInvoice pdfDocument  
 description: Gets a PDF document on a purchaseInvoice in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
 ms.date: 05/31/2024
