@@ -22,6 +22,7 @@ Profiling allows you to collect data about performance and analyze this data wit
 - When you want to validate performance improvements in your code.
 - When you need to identify, which parts of a complex process are consuming the most time.
 
+<!--
 ## Profiling types compared
 
 | Feature | Instrumentation Profiling | Sampling Profiling |
@@ -31,6 +32,7 @@ Profiling allows you to collect data about performance and analyze this data wit
 | Setup complexity | More complex | Simpler |
 | Best for | Detailed analysis of specific code paths | Quick overview of performance patterns |
 | File size | Larger | Smaller |
+-->
 
 ## Snapshot of the running code
 
