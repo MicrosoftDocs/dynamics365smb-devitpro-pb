@@ -173,7 +173,7 @@ The following table describes property keys of the json schema.
 |attachments\mimetype|The attachment mimetype. The alternative invoice must be of type text\xml|
 |attachments\filename|The filename that will point to the object to be attached (the server will delete the file when the operation is complete).|
 |additionalDocuments|List of pdf files to append to the resulting document.
-protection	Contains the optional document passwords.| 
+|protection|Contains the optional document passwords.| 
 |protection\user|Defines the user password that is required to open the document.|
 |protection\admin.|Defines the admin password that gives full access to the document. Notice that if this element is empty, the platform will apply the user password to this field|
 
