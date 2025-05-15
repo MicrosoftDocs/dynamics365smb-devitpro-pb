@@ -98,16 +98,6 @@ For sampling profiling, choose `Sampling` as the `profilingType` in the `launch.
         }
 ```
 
-## Common troubleshooting issues
-
-| Issue | Solution |
-|-------|----------|
-| Graph doesn't display | If running VS Code as administrator, launch with `--no-sandbox` flag |
-| Profile shows system calls only | Make sure debugging symbols are available for your extension |
-| Snapshot fails to initialize | Check if you're a delegated admin and your server configuration is correct |
-| Performance impact too high | Switch from instrumentation to sampling profiling for production scenarios |
-| Can't see AL CodeLens | Ensure `"editor.codeLens": true` and `"al.areProfileLensesSupported": true` are set |
-
 ## Getting a snapshot file
 
 When a configuration is defined and you've ensured that the `executionContext` parameter is either `DebugAndProfile` or `Profile` a snapshot debugging session can be initialized by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then selecting AL:Initialize Snapshot Debugging or by pressing <kbd>F7</kbd>.
