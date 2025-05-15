@@ -96,15 +96,6 @@ In addition to making a page or report searchable, you can control the access of
 
 The **AccessByPermission** property and **ApplicationArea** property are the optional settings, which can be applied with the **UsageCategory** property. These settings are used to set restrictions on an object when you enable the Search functionality.
 
-## Working in the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)]
-
-> [!NOTE]
-> [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
-
-If you're using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], you can also set **UsageCategory**, **AdditionalSearchTerms**, **AccessByPermission**, and **ApplicationArea** properties on pages and reports to control their search.
-
-After you change these properties by using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], before the changes take effect in the client, you must run **Build Object Search Index** from the **Tools** menu.
-
 ## Related information
 
 [Adding menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md)  
