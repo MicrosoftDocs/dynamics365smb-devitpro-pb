@@ -24,7 +24,7 @@ You get a fatal error when you install the Web Server components on a machine th
 
 ### Possible cause
 
-If the .NET 6 SDK or Core Runtime is installed before the IIS (Internet Information Services) feature is enabled on Windows, the system doesn't register the components needed to host ASP.NET Core applications in IIS correctly. Learn more in [Troubleshoot and debug ASP.NET Core projects](/aspnet/core/test/troubleshoot).
+If the .NET 6 SDK or Core Runtime is installed before the IIS (Internet Information Services) feature is enabled on Windows. The system doesn't register the components needed to host ASP.NET Core applications in IIS correctly. Learn more in [Troubleshoot and debug ASP.NET Core projects](/aspnet/core/test/troubleshoot).
 
 ### Workaround
 
