@@ -16,15 +16,15 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, consult [Resources for Help and Support](../help-and-support.md).
 
-## Web Server Components fatal error during installation because of .NET 6.0
+## Web Server Components fatal error during installation
 
 ### Problem
 
-You get a fatal error when you install the Web Server components on a machine that has the .NET 6.0 SDK or runtime.
+You get a fatal error when you install the Web Server components on a machine that has the .NET 6.0 SDK or Core Runtime.
 
 ### Possible cause
 
-The .NET 6.0 SDK or runtime is installed before you enable IIS (Internet Information Services). As a result, the required ASP.NET Core Hosting Bundle component can be missing or not registered correctly with IIS.
+If the .NET 6 SDK or Core Runtime is installed before the IIS (Internet Information Services) feature is enabled on Windows, the system doesn't register the components needed to host ASP.NET Core applications in IIS correctly.
 
 ### Workaround
 
