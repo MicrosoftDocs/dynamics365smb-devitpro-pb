@@ -30,7 +30,7 @@ Specify where the Help for your functionality is published in the *contextSensit
 
 In this example, when the user is using your app's functionality, the *contextSensitiveHelpUrl* property specifies that the links to Help will go to the *mysite.com* site. When the user is using functionality from the base application, then the Help calls will go to the *learn.microsoft.com* site.  
 
-If your app only supports a limited number of locales, you can specify that and shown in the following example:
+If your app only supports a limited number of locales, you can specify that, as shown in the following example:
 
 ```json
   "contextSensitiveHelpUrl": "https://mysite.com/{0}/documentation/",
