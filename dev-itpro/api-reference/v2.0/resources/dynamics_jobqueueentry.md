@@ -4,14 +4,12 @@ description: A job queue entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ---
 
 # jobQueueEntry resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a job queue entry in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -23,7 +21,7 @@ Represents a job queue entry in [!INCLUDE[prod_short](../../../includes/prod_sho
 |:--------------------|:-----------|:-------------------------|
 |[GET jobQueueEntry](../api/dynamics_jobqueueentry_get.md)|jobQueueEntry|Gets a job queue entry object.|
 
-## Bound Actions
+## Bound actions
 
 The jobQueueEntry resource type offers a bound action called `restart` which restarts the corresponding jobQueueEntry batch.
 This is illustrated in the following example:
@@ -90,7 +88,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here is a JSON representation of the jobQueueEntry resource.
+Here's a JSON representation of the jobQueueEntry resource.
 
 
 ```json
@@ -145,4 +143,5 @@ Here is a JSON representation of the jobQueueEntry resource.
 ```
 
 ## Related information
+
 [GET jobQueueEntry](../api/dynamics_jobqueueentry_get.md)  

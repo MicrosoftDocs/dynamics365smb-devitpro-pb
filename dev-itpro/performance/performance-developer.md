@@ -4,7 +4,7 @@ description: Provides information for developers to help improve performance in 
 ms.custom: bap-template
 ms.date: 02/14/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: KennieNP
 ms.author: kepontop
 ---

@@ -4,7 +4,7 @@ description: A step-by-step guide on how to implement different scenarios for mo
 author: SusanneWindfeldPedersen
 ms.author: sodragon
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/31/2025
 ---
 

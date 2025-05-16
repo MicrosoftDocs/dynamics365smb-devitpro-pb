@@ -1,7 +1,7 @@
 ---
 title: "Object Specifications and Limitations"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 description: Explore the specifications and limitations for database and application objects in Microsoft's Dynamics 365 Business Central. Learn about SQL Server 2017's maximum capacities.
 ---

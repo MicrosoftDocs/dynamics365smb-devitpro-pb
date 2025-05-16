@@ -6,7 +6,7 @@ ms.author: solsen
 ms.custom: bap-template
 ms.date: 06/16/2023
 
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: solsen
 ---
 

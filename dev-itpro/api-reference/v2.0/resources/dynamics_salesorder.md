@@ -4,7 +4,7 @@ description: A sales order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales order in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -31,7 +29,7 @@ Represents a sales order in [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## Bound Actions
 
-The salesOrder resource type offers a bound action called `shipAndInvoice` which ship and invoices the corresponding salesOrder batch.
+The salesOrder resource type offers a bound action called `shipAndInvoice`, which ship and invoices the corresponding salesOrder batch.
 This is illustrated in the following example:
 `SHIPANDINVOICE https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesOrders({id})/Microsoft.NAV.shipAndInvoice`
 
@@ -48,6 +46,7 @@ The response has no content; the response code is 204.
 |[shipmentMethod](dynamics_shipmentmethod.md)|shipmentMethod |Gets the shipmentmethod of the salesOrder.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesOrder.|
 |[salesOrderLines](dynamics_salesorderline.md)|salesOrderLines |Gets the salesorderlines of the salesOrder.|
+|[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the salesOrder.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the salesOrder.|
 |[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the salesOrder.|
 
@@ -109,7 +108,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here is a JSON representation of the salesOrder resource.
+Here's a JSON representation of the salesOrder resource.
 
 
 ```json
@@ -167,11 +166,9 @@ Here is a JSON representation of the salesOrder resource.
     "email": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET salesOrder](../api/dynamics_salesOrder_Get.md)  
 [DELETE salesOrder](../api/dynamics_salesOrder_Delete.md)  
 [POST salesOrder](../api/dynamics_salesOrder_Create.md)  

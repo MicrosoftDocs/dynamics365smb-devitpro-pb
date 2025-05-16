@@ -1,7 +1,7 @@
 ---
 title: "Read Operation"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ---
 # Read Operation
 Reads a single record.  

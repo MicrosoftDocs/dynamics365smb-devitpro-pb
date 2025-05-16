@@ -2,7 +2,7 @@
 title: "Replacement for codeunit 1"
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # Codeunit 1 replacement

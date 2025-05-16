@@ -3,7 +3,7 @@ title: Using namespaces with XMLports
 description: Learn how to use namespaces with XMLports in Dynamics 365 Business Central.
 author: blrobl
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: brobledodiaz
 ms.reviewer: solsen
 ---

@@ -2,7 +2,7 @@
 title: Develop for multiple platform versions
 description: The AL language extension is compatible with multiple platform versions for developing solutions in marketplace.
 ms.date: 03/15/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ---
 

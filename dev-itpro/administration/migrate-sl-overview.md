@@ -2,7 +2,7 @@
 title: Dynamics SL migration to Business Central online End-to-end overview
 description: Learn about the migration process and the necessary tasks for completing the migration from Dynamics SL on-premises.
 author: lcontreras
-ms.topic: conceptual
+ms.topic: article
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge
 ms.search.form: 2502, 4003

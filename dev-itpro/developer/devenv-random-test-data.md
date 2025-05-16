@@ -3,7 +3,7 @@ title: "Random Test Data"
 description: Describes how to generate random data for application tests in Business Central
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: blrobl
 ---
 

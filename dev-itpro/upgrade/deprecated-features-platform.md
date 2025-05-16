@@ -4,7 +4,7 @@ description: Describes the features that have been removed or replaced in the pl
 author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/28/2025
 ms.custom: bap-template
 ---

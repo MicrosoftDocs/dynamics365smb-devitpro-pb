@@ -2,7 +2,7 @@
 title: "Upgrading Permission Sets and Permissions"
 description: Describes how to upgrade permissions and permission sets 
 ms.date: 10/01/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer

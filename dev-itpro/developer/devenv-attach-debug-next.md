@@ -4,7 +4,7 @@ description: Attach to a session on a specified server and debug for Web API ses
 ms.custom: bap-template
 ms.date: 01/10/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ---
@@ -32,14 +32,13 @@ In the attach configuration, the `breakOnNext` setting specifies the next client
 
 Two other important properties are `sessionId` and `userId`. `sessionId` specifies an ongoing session of the specified type in `breakOnNext`. This session should belong to the user in `userId` property if specified.
 
-If `sessionId` isn't specified, but `userId` is, then the debugger will be attached to the next session of the type specified in `breakOnNext` for the given user.
+If `sessionId` isn't specified, but `userId` is, then the debugger will be attached to the next session of the type specified in `breakOnNext` for the given user. Learn more about the `userId` and `sessionId` properties in [Initialize a snapshot debugging session on a cloud production environment (launch.json)](devenv-json-launch-file#initialize-a-snapshot-debugging-session-on-a-cloud-production-environment-launchjson).
 
 > [!IMPORTANT]  
 > In case of `userId` being a different user than the user logged into Visual Studio Code, then the user logged into Visual Studio Code must be part of **D365 ATTACH DEBUG** permission set.
 
 > [!NOTE]  
 > The debugger is able to connect to *background sessions*, and not *background tasks*.
-
 
 ## Example (attach to a web client session)
 

@@ -3,7 +3,7 @@ title: Creating an RDL layout report
 description: Describes the steps involved in creating a report that uses an RDL layout.
 author: SusanneWindfeldPedersen
 ms.date: 01/08/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

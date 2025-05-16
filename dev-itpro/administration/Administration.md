@@ -3,7 +3,7 @@ title: Administration Tools for on-premises
 description: This article provides an overview of different tools for different administrative tasks in Microsoft Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.date: 04/14/2024
 ms.service: dynamics-365-op

@@ -2,7 +2,7 @@
 title: Business Central Admin Center API - App Management
 description: Learn about using the Business Central admin center API to manage apps.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry

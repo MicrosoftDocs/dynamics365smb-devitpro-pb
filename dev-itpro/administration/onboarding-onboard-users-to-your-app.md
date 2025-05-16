@@ -2,7 +2,7 @@
 title: Onboard users to your app
 description: Learn how to ensure users can onboard to your app in the easiest way.
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: article
 author: sorenfriisalexandersen
 ms.author: soalex
 ms.reviewer: solsen

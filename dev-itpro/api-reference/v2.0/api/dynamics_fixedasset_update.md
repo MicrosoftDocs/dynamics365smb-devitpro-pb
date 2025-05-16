@@ -1,19 +1,14 @@
 ---
 title: Update fixedAssets
-description: Updates a  fixed asset object in Dynamics 365 Business Central.
+description: Updates a fixed asset object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Update fixedAssets
 
 Updates the properties of a fixed asset object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -21,22 +16,22 @@ Updates the properties of a fixed asset object for [!INCLUDE[prod_short](../../.
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
+
 ```
 PATCH businesscentralPrefix/companies({id})/fixedAssets({id})
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Request headers
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **fixedAsset**, the **fixed asset** will not be updated. |
+|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **fixedAsset**, the **fixed asset** won't be updated. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
 
@@ -46,46 +41,55 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 **Request**
 
-Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values) -->
+Here's an example of the request.
+
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/fixedAssets({id})
 Content-type: application/json
 {
-    "id" : ,
-    "number" :
+    "id": "FA000012",
+    "employeeNumber": "EM2068",
+    "employeeId": "f3b6742a-44e3-ea11-bb43-000d3a2feca1",
+    "underMaintenance": true,
+    "fixedAssetLocationCode": "BRANCH",
+    "fixedAssetLocationId": "LOC0002"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id" : ,
-    "number" : ,
-    "displayName" : ,
-    "fixedAssetLocationCode" : ,
-    "fixedAssetLocationId" : ,
-    "classCode" : ,
-    "subclassCode" : ,
-    "blocked" : ,
-    "serialNumber" : ,
-    "employeeNumber" : ,
-    "employeeId" : ,
-    "underMaintenance" : ,
-    "lastModifiedDateTime" :
+    "id": "FA000012",
+    "number": "FA-1005",
+    "displayName": "Company Vehicle - Ford Escape",
+    "fixedAssetLocationCode": "BRANCH",
+    "fixedAssetLocationId": "LOC0002",
+    "classCode": "VEHICLE",
+    "subclassCode": "COMPANY",
+    "blocked": false,
+    "serialNumber": "1FMCU0F74MUA12345",
+    "employeeNumber": "EM2068",
+    "employeeId": "f3b6742a-44e3-ea11-bb43-000d3a2feca1",
+    "underMaintenance": true,
+    "acquisitionDate": "2025-01-15",
+    "depreciationStartingDate": "2025-01-15",
+    "acquisitionCost": 32500.00,
+    "depreciationMethod": "Straight-Line",
+    "depreciationYears": 5,
+    "bookValue": 29037.50,
+    "lastModifiedDateTime": "2025-04-29T15:42:18Z"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [fixedAsset](../resources/dynamics_fixedAsset.md)  
 [GET fixedAsset](dynamics_fixedasset_get.md)  
 [DELETE fixedAsset](dynamics_fixedasset_delete.md)  
-[POST fixedAsset](dynamics_fixedasset_create.md)  
+[POST fixedAsset](dynamics_fixedasset_create.md)

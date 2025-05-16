@@ -4,7 +4,7 @@ description: Get an overview of new and changed capabilities in the 25.3 update 
 ms.author: jswymer
 ms.date: 01/27/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.custom: 
     - bap-template

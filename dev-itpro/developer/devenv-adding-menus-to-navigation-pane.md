@@ -3,7 +3,7 @@ title: Adding Menus to the Navigation Area
 description: "Enable users to quickly navigate and perform actions by adding the menu items to the navigation area."
 author: jswymer
 ms.date: 08/08/2022
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---

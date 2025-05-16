@@ -2,18 +2,13 @@
 title: Get purchaseCreditMemos
 description: Gets a purchase credit memo object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 05/31/2024
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get purchaseCreditMemos
 
 Retrieves the properties and relationships of a purchase credit memo object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -21,11 +16,11 @@ Retrieves the properties and relationships of a purchase credit memo object for 
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```
 GET businesscentralPrefix/companies({id})/purchaseCreditMemos({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -34,7 +29,7 @@ GET businesscentralPrefix/companies({id})/purchaseCreditMemos({id})
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -44,67 +39,66 @@ If successful, this method returns a ```200 OK``` response code and a **purchase
 
 **Request**
 
-Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+Here's an example of the request.
+
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseCreditMemos({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "id" : "",
-    "number" : "",
-    "creditMemoDate" : "",
-    "postingDate" : "",
-    "dueDate" : "",
-    "vendorId" : "",
-    "vendorNumber" : "",
-    "vendorName" : "",
-    "payToVendorId" : "",
-    "payToVendorNumber" : "",
-    "payToName" : "",
-    "buyFromAddressLine1" : "",
-    "buyFromAddressLine2" : "",
-    "buyFromCity" : "",
-    "buyFromCountry" : "",
-    "buyFromState" : "",
-    "buyFromPostCode" : "",
-    "payToAddressLine1" : "",
-    "payToAddressLine2" : "",
-    "payToCity" : "",
-    "payToCountry" : "",
-    "payToState" : "",
-    "payToPostCode" : "",
-    "shortcutDimension1Code" : "",
-    "shortcutDimension2Code" : "",
-    "currencyId" : "",
-    "currencyCode" : "",
-    "paymentTermsId" : "",
-    "shipmentMethodId" : "",
-    "purchaser" : "",
-    "pricesIncludeTax" : "",
-    "discountAmount" : "",
-    "discountAppliedBeforeTax" : "",
-    "totalAmountExcludingTax" : "",
-    "totalTaxAmount" : "",
-    "totalAmountIncludingTax" : "",
-    "status" : "",
-    "lastModifiedDateTime" : "",
-    "invoiceId" : "",
-    "invoiceNumber" : "",
-    "vendorReturnReasonId" : ""
+    "id": "a6c93b42-89a1-ed11-94cc-000d3a2feca1",
+    "number": "PCM-00428",
+    "creditMemoDate": "2025-04-15",
+    "postingDate": "2025-04-15",
+    "dueDate": "2025-05-15",
+    "vendorId": "e8d93b42-89a1-ed11-94cc-000d3a2feca1",
+    "vendorNumber": "V-0452",
+    "vendorName": "Woodgrove Distribution",
+    "payToVendorId": "e8d93b42-89a1-ed11-94cc-000d3a2feca1",
+    "payToVendorNumber": "V-0452",
+    "payToName": "Woodgrove Distribution",
+    "buyFromAddressLine1": "7890 Commercial Way",
+    "buyFromAddressLine2": "Building 3",
+    "buyFromCity": "Seattle",
+    "buyFromCountry": "US",
+    "buyFromState": "WA",
+    "buyFromPostCode": "98052",
+    "payToAddressLine1": "PO Box 1234",
+    "payToAddressLine2": "",
+    "payToCity": "Seattle",
+    "payToCountry": "US",
+    "payToState": "WA",
+    "payToPostCode": "98055",
+    "shortcutDimension1Code": "SALES",
+    "shortcutDimension2Code": "WEST",
+    "currencyId": "d8d93b42-89a1-ed11-94cc-000d3a2feca1",
+    "currencyCode": "USD",
+    "paymentTermsId": "c8d93b42-89a1-ed11-94cc-000d3a2feca1",
+    "shipmentMethodId": "b8d93b42-89a1-ed11-94cc-000d3a2feca1",
+    "purchaser": "JS",
+    "pricesIncludeTax": false,
+    "discountAmount": 50.00,
+    "discountAppliedBeforeTax": true,
+    "totalAmountExcludingTax": 950.00,
+    "totalTaxAmount": 76.00,
+    "totalAmountIncludingTax": 1026.00,
+    "status": "Open",
+    "lastModifiedDateTime": "2025-04-15T14:22:18Z",
+    "invoiceId": "b6c93b42-89a1-ed11-94cc-000d3a2feca1",
+    "invoiceNumber": "INV-00892",
+    "vendorReturnReasonId": "a8d93b42-89a1-ed11-94cc-000d3a2feca1"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [purchaseCreditMemo](../resources/dynamics_purchaseCreditMemo.md)  
 [DELETE purchaseCreditMemo](dynamics_purchasecreditmemo_delete.md)  
 [POST purchaseCreditMemo](dynamics_purchasecreditmemo_create.md)  
-[PATCH purchaseCreditMemo](dynamics_purchasecreditmemo_update.md)  
+[PATCH purchaseCreditMemo](dynamics_purchasecreditmemo_update.md)

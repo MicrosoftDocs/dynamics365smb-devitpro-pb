@@ -4,7 +4,7 @@ description: "Guidelines on offer description"
 author: a-emniel
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Offer Description 

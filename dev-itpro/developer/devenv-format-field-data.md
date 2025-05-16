@@ -2,7 +2,7 @@
 title: Formatting the data in a field
 description: Learn how to format data in a field, either on the table level or on the page/report level.
 ms.date: 02/03/2025
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ms.reviewer: solsen
 ---

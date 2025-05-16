@@ -4,7 +4,7 @@ description: Describing the steps you must go through to enable access to the AP
 author: SusanneWindfeldPedersen
 ms.custom: how-to
 ms.date: 10/28/2024
-ms.topic: article
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

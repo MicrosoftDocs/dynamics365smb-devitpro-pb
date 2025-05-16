@@ -4,7 +4,7 @@ description: A journal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a journal in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,7 +27,7 @@ Represents a journal in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[POST journal](../api/dynamics_journal_create.md)|journal|Creates a journal object.|
 |[PATCH journal](../api/dynamics_journal_update.md)|journal|Updates a journal object.|
 
-## Bound Actions
+## Bound actions
 
 The journal resource type offers a bound action called `post` which posts the corresponding journal batch.
 This is illustrated in the following example:
@@ -57,7 +55,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here is a JSON representation of the journal resource.
+Here's a JSON representation of the journal resource.
 
 
 ```json
@@ -71,11 +69,9 @@ Here is a JSON representation of the journal resource.
     "balancingAccountNumber": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET journal](../api/dynamics_journal_Get.md)  
 [DELETE journal](../api/dynamics_journal_Delete.md)  
 [POST journal](../api/dynamics_journal_Create.md)  

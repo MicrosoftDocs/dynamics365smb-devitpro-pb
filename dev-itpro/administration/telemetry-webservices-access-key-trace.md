@@ -2,7 +2,7 @@
 title: Analyzing Web Service Access Key Telemetry | Microsoft Docs
 description: Learn about the web service access key telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 04/01/2021

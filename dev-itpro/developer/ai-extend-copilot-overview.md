@@ -4,7 +4,7 @@ description: Learn whether your AI idea or feature is a match for Copilot in Bus
 author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot

@@ -39,7 +39,7 @@ If successful, this method returns ```201 Created``` response code and a **custo
 
 **Request**
 
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v1.0/companies({id})/customerPaymentJournals
@@ -70,6 +70,7 @@ Content-type: application/json
 
 
 ## Related information
+
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [customerpaymentjournal](../resources/dynamics_customerpaymentjournal.md)    
 [Get customerpaymentjournal](dynamics_customerpaymentjournal_Get.md)    
