@@ -143,7 +143,7 @@ This example shows how to use FieldName together with FieldError.
 FieldError(Quantity,'must not be less than ' + FieldName("Quantity Shipped"));  
 ```  
 
-## Ini
+## Init
 
 Init initializes a record. It has the following syntax.  
 
