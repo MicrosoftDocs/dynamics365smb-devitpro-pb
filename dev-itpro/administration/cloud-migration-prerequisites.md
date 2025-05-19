@@ -64,8 +64,12 @@ This article outlines requirements on the Business Central on-premises and onlin
 
 - Business Central version 25.0 or later
 
-   If your solution uses an older version, upgrade to at least version 25.0 before you migrate to Business Central online. Learn more about supported migration paths in [Migrate on-premises data to Business Central online](migrate-data.md#supported-migration-paths).
+  If your solution uses an older version, upgrade to at least version 25.0 before you migrate to Business Central online. Learn more about supported migration paths in [Migrate on-premises data to Business Central online](migrate-data.md#supported-migration-paths).
 
+  > [IMPORTANT]
+  > During upgrade, change the application version in the database to match the upgraded version. Learn more in [Change the application version in the database](../upgrade/upgrade-unmodified-application-to-v25#change-the-application-version-in-the-database).
+
+  If the this requirement isn't met, the cloud migration fails to run properly. Learn more in [Troubleshooting cloud migration](migration-troubleshooting.md#product-version).
 - Database
 
   The database can be hosted on SQL Server or Azure SQL Database.  

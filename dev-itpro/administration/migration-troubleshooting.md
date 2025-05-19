@@ -1,7 +1,7 @@
 ---
-title: Troubleshooting the Cloud Migration
+title: Troubleshooting Cloud Migration
 description: Learn how to troubleshoot problems that you may experience with the cloud migration.
-author: dmc-dk
+author: jswymer
 ms.topic: troubleshooting
 ms.search.keywords: cloud, edge
 ms.date: 05/19/2025
@@ -30,7 +30,7 @@ To check the compatibility level run following query: 
 SELECT compatibility_level FROM sys.databases WHERE name = 'YourDatabaseName';  
 ```
 
-If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to meet the current SQL Server compatibility requirements. For more information, see [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true)
+If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to meet the current SQL Server compatibility requirements. Learn more in [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true)
 
 ```sql
 ALTER DATABASE YourDatabaseName SET COMPATIBILITY_LEVEL = 130; 
@@ -184,11 +184,11 @@ To fix this problem, go to the **Cloud Migration Management** page and run the *
 
   - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], reinstall the relevant apps in the on-premises environment. Reinstallation of an app populates the missing rows. If reinstallation is not possible, then try one of the following options:
 
-    - Unpublish the relevant apps and sync the on-premises tenant to update the SQL Server database. For more information, see [Windows PowerShell Cmdlets for Business Central Version 19](/powershell/business-central/overview?view=businesscentral-ps-19&preserve-view=true).  
+    - Unpublish the relevant apps and sync the on-premises tenant to update the SQL Server database. Learn more in [Windows PowerShell Cmdlets for Business Central Version 19](/powershell/business-central/overview?view=businesscentral-ps-19&preserve-view=true).  
 
     - Uninstall the relevant app from the online tenant, provided that they are no longer needed for working online. Use the [Business Central Administration Center API](administration-center-api_app_management.md) or AppSource.
 
-  - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. For more information, see the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  -->
+  - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. Learn more in the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  -->
 
 ## Disabling the cloud migration
 
