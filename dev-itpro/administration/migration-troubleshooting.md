@@ -4,11 +4,11 @@ description: Learn how to troubleshoot problems that you may experience with the
 author: dmc-dk
 ms.topic: troubleshooting
 ms.search.keywords: cloud, edge
-ms.date: 05/27/2024
-ms.author: dmitrych
+ms.date: 05/19/2025
+ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Troubleshooting Cloud Migration
+# Troubleshooting cloud migration
 
 In this article, you learn how to troubleshoot problems that you might experience with the cloud migration of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For the cloud migration to work properly, there are certain requirements that must be met on the online and on-premises databases. The following sections talk about these requirements, how you can check them, and correct them as needed.
 
@@ -135,9 +135,10 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
     |Option|When to use|
     |------|-----------|
-    |Dynamics 365 Business Central current version|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version.|
-    |Dynamics 365 Business Central earlier versions|Select this option if you're migrating from an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
-    |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.|
+    |Dynamics 365 Business Central current version|Select this option if the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises deployment uses the same major version as the target [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment.|
+    |Dynamics 365 Business Central earlier versions|Select this option if the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises deployment uses an earlier major version than the target [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment.|
+    |Dynamics GP|Select this option if you're migrating from Dynamics GP.|
+    |Dynamics SL|Select this option if you're migrating from Dynamics SL.|
 
 - When migrating data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
 
@@ -167,7 +168,6 @@ Change the company name, run the migration, and then, when migration is complete
 If cloud migration has completed successfully, but pages in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online aren't showing the expected data, or there are duplicate record exceptions thrown for setup tables, it's most likely due to table extensions missing records that are present in the base application.  
 
 [!INCLUDE [bc-cloud-migrate-tableext](../includes/bc-cloud-migrate-tableext.md)]
-
 
 To fix this problem, go to the **Cloud Migration Management** page and run the **Repair Companion Table Records** action to insert the missing table extension records.
 <!--
