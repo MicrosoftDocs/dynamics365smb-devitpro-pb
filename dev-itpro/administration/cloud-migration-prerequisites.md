@@ -5,22 +5,22 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: article
-ms.date: 01/16/2023
+ms.date: 05/19/2025
 ms.custom: bap-template
 ---
 # Cloud migration prerequisites for Business Central
 
 This article outlines requirements on the Business Central on-premises and online environments for cloud migration. Review this information before you start the cloud migration. 
 
-## Destination online environment
+## Destination online environment requirements
 
 - Customer has a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant  
 
 - At least one user has *SUPER* permissions in the target company in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
-  Users assigned with *SUPER* permissions are the only users who can make changes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online target company. Users who don't have *SUPER* permissions are automatically reassigned to the intelligent cloud user group, which limits them to read-only access to data. For more information, see [Working with environments during cloud migration](migrate-business-central-on-premises.md#working-with-environments-during-cloud-migration). 
+  Users assigned with *SUPER* permissions are the only users who can make changes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online target company. Users who don't have *SUPER* permissions are automatically reassigned to the intelligent cloud user group, which limits them to read-only access to data. Learn more in [Working with environments during cloud migration](migrate-business-central-on-premises.md#working-with-environments-during-cloud-migration). 
 
-  If you're the person setting up and running the cloud migration, you must have *SUPER* permissions in Business Central and admin role in Microsoft admin center. If you'll be running cloud migration as a delegated admin, a Business Central user with *SUPER* permissions has to grant you permission. The permission is granted when you try to run the **Cloud Migration Setup**. For more information, see [About delegated administrators](migration-setup.md#about-delegated-administrators).
+  If you're the person setting up and running the cloud migration, you must have *SUPER* permissions in Business Central and admin role in Microsoft admin center. If you'll be running cloud migration as a delegated admin, a Business Central user with *SUPER* permissions has to grant you permission. The permission is granted when you try to run the **Cloud Migration Setup**. Learn more in [About delegated administrators](migration-setup.md#about-delegated-administrators).
 
 - Install the Business Central migration apps 
 
@@ -37,7 +37,7 @@ This article outlines requirements on the Business Central on-premises and onlin
   - Business Central Cloud Migration – Previous Release  
   - Business Central Cloud Migration – Previous Release [code for your country-specific version]  <!-- what does this mean-->
 
-  Also, at the end of the upgrade, you must make sure that the `applicationVersion` field in the `ndo$tenantdatabaseproperty` table is set to the right version. If the field is blank, or if it's set to an older version than the migration tool supports, the migration can't run. For more information, see [Post-upgrade tasks](../upgrade/upgrade-unmodified-application-v14-v21.md#post-upgrade-tasks).  
+  Also, at the end of the upgrade, you must make sure that the `applicationVersion` field in the `ndo$tenantdatabaseproperty` table is set to the right version. If the field is blank, or if it's set to an older version than the migration tool supports, the migration can't run. Learn more in [Post-upgrade tasks](../upgrade/upgrade-unmodified-application-v14-v21.md#post-upgrade-tasks).  
 
 <!--
   If you're migrating from Dynamics GP, make sure that the following apps are installed and updated:
@@ -60,11 +60,11 @@ This article outlines requirements on the Business Central on-premises and onlin
 
   If the on-premises database includes data owned by an extension, and you want the data migrated, then install the extension on the online tenant. Also, make sure that each extension includes at least one permission set the gives at access.
 
-## Source on-premises environment
+## Source on-premises environment requirements
 
-- Business Central version is a supported migration path.
+- Business Central version 25.0 or later
 
-  If the solution is based on an older version of the on-premises product, upgrade to [supported version](migrate-data.md#supported-migration-paths). 
+   If your solution uses an older version, upgrade to at least version 25.0 before you migrate to Business Central online. Learn more about supported migration paths in [Migrate on-premises data to Business Central online](migrate-data.md#supported-migration-paths).
 
 - Database
 
@@ -73,13 +73,13 @@ This article outlines requirements on the Business Central on-premises and onlin
   An SQL Server database must meet the following requirements:
   - Uses SQL Server 2016 SP1 or later
   - Compatibility level set to 130 or higher
-  - TCP/IP is enabled. For more information, see [Enable or Disable a Server Network Protocol](/sql/database-engine/configure-windows/enable-or-disable-a-server-network-protocol) in the SQL Server documentation. 
+  - TCP/IP is enabled. Learn more in [Enable or Disable a Server Network Protocol](/sql/database-engine/configure-windows/enable-or-disable-a-server-network-protocol) in the SQL Server documentation. 
   - Configured for SQL Server authentication.
 
     > [!IMPORTANT]
     > The login account used for SQL server authentication must have the **sysadmin** role on the server level and **db_owner** role on the database level.
 
-    For more information, see [Configure SQL Server authentication on the database](configure-sql-server-authentication.md#configure-sql-server-authentication-on-the-database-in-sql-server).
+    Learn more in [Configure SQL Server authentication on the database](configure-sql-server-authentication.md#configure-sql-server-authentication-on-the-database-in-sql-server).
 <!--
 
   Although it's required, we recommend deploying the database on Azure SQL Database, especially if the customer wants to migrate large amounts of data.
@@ -89,7 +89,7 @@ This article outlines requirements on the Business Central on-premises and onlin
 
 <!-- * Statistics updated and indexes reorganized on all tables on the source database  
   
-    This prerequisite will ensure that the migration runs as fast as possible. For more information, see the documentation for [sp_updatestats (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-updatestats-transact-sql) and [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).-->
+    This prerequisite will ensure that the migration runs as fast as possible. Learn more in the documentation for [sp_updatestats (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-updatestats-transact-sql) and [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).-->
 
 ## Other
 

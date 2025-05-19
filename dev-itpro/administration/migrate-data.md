@@ -11,7 +11,7 @@ ms.author: jswymer
 ms.custom: bap-template
 ---
 
-# Migrate on-premises data to Business Central Online
+# Migrate on-premises data to Business Central online
 
 Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online. By moving to the cloud, users get the benefits of cloud scenarios such as Machine Learning, Power BI, and Power Automate to drive suggested actions.  
 
