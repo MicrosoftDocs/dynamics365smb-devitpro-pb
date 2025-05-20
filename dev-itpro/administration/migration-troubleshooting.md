@@ -154,7 +154,7 @@ This section explains how to avoid and fix errors caused by incompatible version
   - Verifies that you selected the right product version in the **Data Migration Setup** assisted setup, **Dynamics 365 Business Central current version** or **Dynamics 365 Business Central earlier versions**.
   - Determines which upgrade code is executed.
 
-    If that field is blank, the migration can't run.  
+    If that field is blank, the migration can't run.
 
 ## Company names
 
