@@ -131,7 +131,12 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
 > Database: online
 
-- When running the **Data Migration Setup** assisted setup, make sure to select the right product that you want to migrate from. Depending on which Cloud Migration apps you've installed, the assisted setup will let you choose from three options:
+
+Business Central on-premises must be on the same major version as the online instance. Check if the version was set correctly on the database.
+
+The version of the on-premises deployment does not match the requirements of Business Central online. Check if the version was set correctly on the database.
+
+- When running the **Cloud Migration Setup** assisted setup, make sure to select the right product that you want to migrate from. Depending on which Cloud Migration apps you've installed, the assisted setup will let you choose from three options:
 
     |Option|When to use|
     |------|-----------|
