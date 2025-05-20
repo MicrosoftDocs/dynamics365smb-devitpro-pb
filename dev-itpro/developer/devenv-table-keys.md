@@ -232,7 +232,7 @@ tableextension 50121 MyBaseTableExt extends MyBaseTable
     {
         key(ExtKey1; MyExtField1) //secondary key
         {
-            IncludeFields = MyExtField2,MyExtField3;
+            IncludedFields = MyExtField2,MyExtField3;
         }
         key(ExtKey2; MyBaseField1, MyBaseField2) //secondary key
         {
