@@ -4,7 +4,7 @@ description: Get an overview of your options for deploying Dynamics 365 Business
 author: jswymer
 ms.topic: overview
 ms.author: jswymer
-ms.date: 04/01/2021
+ms.date: 05/01/2021
 ms.reviewer: jswymer
 ---
 # Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
