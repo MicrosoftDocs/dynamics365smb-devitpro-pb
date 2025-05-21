@@ -1,14 +1,14 @@
 ---
-title: Troubleshooting the Cloud Migration
-description: Learn how to troubleshoot problems that you may experience with the cloud migration.
-author: dmc-dk
+title: Troubleshooting Cloud Migration
+description: Learn how to troubleshoot problems that you might experience with the cloud migration to Business Central online from on-premises.
+author: jswymer
 ms.topic: troubleshooting
 ms.search.keywords: cloud, edge
-ms.date: 05/27/2024
-ms.author: dmitrych
+ms.date: 05/19/2025
+ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# Troubleshooting Cloud Migration
+# Troubleshooting cloud migration
 
 In this article, you learn how to troubleshoot problems that you might experience with the cloud migration of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For the cloud migration to work properly, there are certain requirements that must be met on the online and on-premises databases. The following sections talk about these requirements, how you can check them, and correct them as needed.
 
@@ -30,14 +30,14 @@ To check the compatibility level run following query: 
 SELECT compatibility_level FROM sys.databases WHERE name = 'YourDatabaseName';  
 ```
 
-If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to meet the current SQL Server compatibility requirements. For more information, see [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true)
+If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to meet the current SQL Server compatibility requirements. Learn more in [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true)
 
 ```sql
 ALTER DATABASE YourDatabaseName SET COMPATIBILITY_LEVEL = 130; 
 ```
 
 > [!NOTE]
-> You may also get the following error when compatibility level isn't set to the expected value: *A database operation failed with the following error: Invalid length parameter passed to the LEFT or SUBSTRING function.*
+> You might also get the following error when compatibility level isn't set to the expected value: *A database operation failed with the following error: Invalid length parameter passed to the LEFT or SUBSTRING function.*
 
 ## Migration user
 
@@ -55,7 +55,7 @@ sqlcmd -S 'ServerName\ServerInstance' -d 'DatabaseName' -U 'UserID' -P 'Password
 
 > Database: on-premises
 
-Change tracking must be enabled on the database. It should be enabled automatically. However, if you see an error like **Change tracking is not enabled on table \<number\>** during migration, you'll have to enable it manually.
+Change tracking must be enabled on the database. It should be enabled automatically. However, if you see an error like **Change tracking is not enabled on table \<number\>** during migration, you have to enable it manually.
 
 To enable change tracking on your database, run the following query:
   
@@ -91,7 +91,7 @@ Running cloud migration requires SUPER permissions because the operation has to 
     When downloading and installing Integration Runtime, choose version 5 (IntegrationRuntime_5.x.x.x.msi) only if your machine runs .NET Framework Runtime 4.7.2. Otherwise, or if in doubt, choose version 4 (IntegrationRuntime_4.x.x.x.msi).
 
     > [!IMPORTANT]
-    > Running Integration Runtime v5 on a machine that doesn't have .NET Framework Runtime 4.7.2 can cause timeouts when connecting to the on-premise SQL Server, which will break the cloud migration setup.
+    > Running Integration Runtime v5 on a machine that doesn't have .NET Framework Runtime 4.7.2 can cause timeouts when connecting to the on-premises SQL Server, which breaks the cloud migration setup.
   
     Before you install a new Integration Runtime version, uninstall the old version. When you uninstall the old version, choose to delete the user data (such as authentication key and data source credentials) when prompted. Then, install the Integration Runtime again and connect it to the online environment using the new authentication key.  
 
@@ -101,7 +101,7 @@ Running cloud migration requires SUPER permissions because the operation has to 
 
 - Synchronization errors can sometimes occur because IR is installed on a laptop or desktop computer where the hibernate feature is turned on.
 
-    The computer where IR is installed ideally shouldn't be switched off, go to sleep, or hibernate. If these conditions happen, the IR may get into an error state. In this case, we recommend that you reinstall the IR and turn off sleep hibernate on the computer.  
+    The computer where IR is installed ideally shouldn't be switched off, go to sleep, or hibernate. If these conditions happen, the IR might get into an error state. In this case, we recommend that you reinstall the IR and turn off sleep hibernate on the computer.  
 
 - Make sure the machine, which you use for hosting IR has plenty of memory (RAM) available. Migration can be interrupted by your machine running out of memory, and you can find this issue described in the IR log. To prevent this situation, avoid running too many migrations simultaneously using the same IR. Every extra parallel migration slows down the overall progress considerably.
 
@@ -125,31 +125,40 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
 - Don't try to migrate data from several on-premises databases into the same online environment at the same time.  
 
-    For example, you may have two companies, where each company is in its own on-premises database. If you need to do this type of migration, the migrate data sequentially. First, migrate data from one database into the online environment and disable the migration. Then set up the migration in the same online environment, provide a new connection string to the next on-premises database. You can use the same Integration Runtime and Authorization key.  
+    For example, you might have two companies, where each company is in its own on-premises database. If you need to do this type of migration, the migrate data sequentially. First, migrate data from one database into the online environment and disable the migration. Then set up the migration in the same online environment, provide a new connection string to the next on-premises database. You can use the same Integration Runtime and Authorization key.  
 
 ## Product version
 
-> Database: online
+> Database: online and on-premises
 
-- When running the **Data Migration Setup** assisted setup, make sure to select the right product that you want to migrate from. Depending on which Cloud Migration apps you've installed, the assisted setup will let you choose from three options:
+This section explains how to avoid and fix errors caused by incompatible versions between on-premises and online databases that can cause the following errors:
+
+**Business Central on-premises must be on the same major version as the online instance. Check if the version was set correctly on the database.**
+
+**The version of the on-premises deployment does not match the requirements of Business Central online. Check if the version was set correctly on the database.**
+
+- When running the **Cloud Migration Setup** assisted setup, make sure to select the right product that you want to migrate from. Depending on which Cloud Migration apps are installed, the assisted setup lets you choose from three options:
 
     |Option|When to use|
     |------|-----------|
-    |Dynamics 365 Business Central current version|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version.|
-    |Dynamics 365 Business Central earlier versions|Select this option if you're migrating from an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
-    |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.|
+    |Dynamics 365 Business Central current version|Select this option if the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises deployment uses the same major version as the target [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment.|
+    |Dynamics 365 Business Central earlier versions|Select this option if the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises deployment uses an earlier major version than the target [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment.|
+    |Dynamics GP|Select this option if you're migrating from Dynamics GP.|
+    |Dynamics SL|Select this option if you're migrating from Dynamics SL.|
 
-- When migrating data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
+- You can't migrate directly from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 24 or earlier. Upgrade to at least version 25.0 before you start the cloud migration process.
+
+- Before migrating data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
 
   - Verifies that you're migrating from a supported version
-  - Verifies that you've selected the right product version in the **Data Migration Setup** assisted setup, **Dynamics 365 Business Central current version** or **Dynamics 365 Business Central earlier versions**.
-  - Determines which upgrade code will be executed.
+  - Verifies that you selected the right product version in the **Data Migration Setup** assisted setup, **Dynamics 365 Business Central current version** or **Dynamics 365 Business Central earlier versions**.
+  - Determines which upgrade code is executed.
 
-    If that field is blank, the migration can't run.  
+    If that field is blank, the migration can't run.
 
 ## Company names
 
-The cloud migration process can become difficult if the names of the companies in [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] include special characters or trailing spaces, for example. To test that the company names are valid, run a query in the on-premises database such as the following:
+The cloud migration process can become difficult if the names of the companies in [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] include special characters or trailing spaces, for example. To test that the company names are valid, run a query in the on-premises database such as the following example:
 
 ```sql
 SELECT *
@@ -168,7 +177,6 @@ If cloud migration has completed successfully, but pages in [!INCLUDE [prod_shor
 
 [!INCLUDE [bc-cloud-migrate-tableext](../includes/bc-cloud-migrate-tableext.md)]
 
-
 To fix this problem, go to the **Cloud Migration Management** page and run the **Repair Companion Table Records** action to insert the missing table extension records.
 <!--
 - Make sure the tables in your on-premises SQL Server database contain  the right data
@@ -184,11 +192,11 @@ To fix this problem, go to the **Cloud Migration Management** page and run the *
 
   - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], reinstall the relevant apps in the on-premises environment. Reinstallation of an app populates the missing rows. If reinstallation is not possible, then try one of the following options:
 
-    - Unpublish the relevant apps and sync the on-premises tenant to update the SQL Server database. For more information, see [Windows PowerShell Cmdlets for Business Central Version 19](/powershell/business-central/overview?view=businesscentral-ps-19&preserve-view=true).  
+    - Unpublish the relevant apps and sync the on-premises tenant to update the SQL Server database. Learn more in [Windows PowerShell Cmdlets for Business Central Version 19](/powershell/business-central/overview?view=businesscentral-ps-19&preserve-view=true).  
 
     - Uninstall the relevant app from the online tenant, provided that they are no longer needed for working online. Use the [Business Central Administration Center API](administration-center-api_app_management.md) or AppSource.
 
-  - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. For more information, see the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  -->
+  - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. Learn more in the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  -->
 
 ## Disabling the cloud migration
 
@@ -197,7 +205,7 @@ To fix this problem, go to the **Cloud Migration Management** page and run the *
 When you've completed the migration, disable cloud migration by using the **Disable Cloud Migration** action on the **Cloud Migration Management** page. This action properly disengages the synchronization and cleans up the Azure Data Factory resources deployed for this migration.
 
 > [!IMPORTANT]
-> Just uninstalling the cloud migration apps, even with the option to remove the data, won't disable the migration in the same way. If you don't disable **Cloud Migration**, users will experience permission-related errors when they try to modify records in the migrated companies.
+> Just uninstalling the cloud migration apps, even with the option to remove the data, doesn't disable the migration in the same way. If you don't disable **Cloud Migration**, users experience permission-related errors when they try to modify records in the migrated companies.
 
 ## Related information
 
