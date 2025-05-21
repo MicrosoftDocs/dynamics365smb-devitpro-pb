@@ -69,7 +69,7 @@ This article outlines requirements on the Business Central on-premises and onlin
   > [!IMPORTANT]
   > During upgrade, change the application version in the database to match the upgraded version. Learn more in [Change the application version in the database](../upgrade/upgrade-unmodified-application-to-v25.md#task-14-change-application-version).
 
-  If the this requirement isn't met, the cloud migration fails to run properly. Learn more in [Troubleshooting cloud migration](migration-troubleshooting.md#product-version).
+  If this requirement isn't met, the cloud migration fails to run properly. Learn more in [Troubleshooting cloud migration](migration-troubleshooting.md#product-version).
 - Database
 
   The database can be hosted on SQL Server or Azure SQL Database.  
