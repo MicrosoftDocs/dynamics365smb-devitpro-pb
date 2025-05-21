@@ -233,7 +233,7 @@ There are two ways of suppressing warnings to unclutter warnings while working o
 
 ### suppressWarnings setting
 
-Warnings can be suppressed globally in an extension by specifying the `suppressWarnings` in the `app.json` file. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md). The syntax is:
+Warnings can be suppressed globally in an extension by specifying the `suppressWarnings` in the `app.json` file. Learn more in [AL Language extension configuration](devenv-al-extension-configuration.md). The syntax is:
 
 ```json
 "suppressWarnings": [ "AL0606", "AL0604" ]
@@ -241,7 +241,7 @@ Warnings can be suppressed globally in an extension by specifying the `suppressW
 
 ### Pragmas
 
-It's also possible to use `#pragma` to suppress individual warnings for one or more lines of code. For more information, see [Pragma Warning](directives/devenv-directive-pragma-warning.md).
+It's also possible to use `#pragma` to suppress individual warnings for one or more lines of code. Learn more in [Pragma warning](directives/devenv-directive-pragma-warning.md).
 
 ```AL
 #pragma warning disable AL0606
@@ -258,12 +258,12 @@ It's also possible to use `#pragma` to suppress individual warnings for one or m
 
 ## Related information
 
-[AL Development Environment](devenv-reference-overview.md)  
-[Developing Extensions in AL](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Developing extensions in AL](devenv-dev-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
-[Pragma Directive](directives/devenv-directive-pragma.md)  
-[Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md)  
-[Pragma Warning](directives/devenv-directive-pragma-warning.md)  
-[Best Practices for Deprecation of Code in the Base App](devenv-deprecation-guidelines.md)  
-[Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)  
-[AL Simple Statements](devenv-al-simple-statements.md)
+[Pragma directive](directives/devenv-directive-pragma.md)  
+[Pragma implicitWith](directives/devenv-directive-pragma-implicitwith.md)  
+[Pragma warning](directives/devenv-directive-pragma-warning.md)  
+[Best practices for deprecation of dode in the Base App](devenv-deprecation-guidelines.md)  
+[Microsoft timeline for deprecating dode in Business Central](devenv-deprecation-timeline.md)  
+[AL simple statements](devenv-al-simple-statements.md)
