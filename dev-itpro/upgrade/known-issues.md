@@ -1,6 +1,6 @@
 ---
 title: Some Known Issues in Business Central On-premises
-description: Provides an overview of the known issues that can affect Busuness Central installation or upgrade.
+description: Provides an overview of the known issues that can affect Business Central installation or upgrade.
 ms.date: 05/15/2025
 ms.reviewer: jswymer
 ms.topic: troubleshooting-known-issue
