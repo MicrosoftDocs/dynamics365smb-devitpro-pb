@@ -1,10 +1,9 @@
 ---
 title: HttpServerCertificateValidation feature key
 description: Learn about the HttpServerCertificateValidation feature key.
-ms.custom: bap-template
 ms.date: 03/10/2025
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ---
