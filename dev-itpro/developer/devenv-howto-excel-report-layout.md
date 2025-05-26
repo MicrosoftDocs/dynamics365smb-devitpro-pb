@@ -112,6 +112,7 @@ The *ReportMetadataValues* table contains metadata from the report object.
 |Extension Version | The version of the app/extension for the report.|
 |Object ID | The object ID of the report. |
 |Object Name | The object name of the report.|
+|Object Caption | The object caption of the report.|
 |About This Report Title | The *about this report title* as declared in the Request Page setup in the AL report. |
 |About This Report Text | The *about this report text* as declared in the Request Page setup in the AL report. |
 |Report help link | Help link (if setup) in the extension and report object.|
@@ -132,6 +133,8 @@ The *ReportRequestValues* table contains metadata from the report request (the r
 | User Id | The user ID associated to 'User name'. |
 | User name | The user who ran the report. |
 | Date | The date and time of the report invocation. |
+| Date (Local) | The date and time when the report runs, using the local time zone. |
+| UTC Offset | The offest between UTC and local time, based on the time zone information in the user's profile. | 
 | Language | The application language identified (LCID, Windows language identifier).|
 | Format Region | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
 | Layout name | The name of the layout being used for the current Excel Workbook. Introduced in version 26.0.|

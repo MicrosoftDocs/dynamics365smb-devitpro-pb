@@ -154,12 +154,12 @@ RecRef.Open(Database::"My Table");
 if RecRef.FindSet() then
     repeat
         // ...
-        RecRef.Modify(); // or .Delete();
+        RecRef.Modify(true); // or .Delete();
     until RecRef.Next() = 0;
 ```
 
 ```AL
-if MyTable.FindSet() then
+if MyTable.FindSet(true) then
     repeat
         MyTable.Modify(); // or .Delete();
     until MyTable.Next() = 0;
