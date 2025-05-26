@@ -21,7 +21,9 @@ These capabilities are designed to support requirements such as e-invoicing and 
 
 ## How it works
 
-This functionality is enabled by the `OnPreRendering` trigger, which runs after the last data item trigger and before `OnPostReport`. The trigger is available on report and report extension objects and has the following syntax:
+This functionality is enabled by the `OnPreRendering` trigger, which runs after the last data item trigger and before `OnPostReport`. Learn where the trigger is with respect to other report trigger in [Report Triggers and Runtime Operations](devenv-report-triggers.md#overall-report-trigger-and-operations) in the report triggers.
+
+The `OnPreRendering` trigger is available on report and report extension objects and has the following syntax:
 
 ```al
 trigger OnPreRendering(var RenderingPayload: JsonObject)
@@ -42,7 +44,6 @@ The trigger collects report rendering data in a JSON payload, which the platform
 | Preview            |   -   |   X    |    -    |
 | Print (universal)  |   -   |   X    |    -    |
 | Print (browser)    |   -   |   X    |    X    |
-
 
 The collected data is returned to the platform, which applies the necessary actions based on the scenario:
 
@@ -94,180 +95,95 @@ This property will allow the AL developer to determine the current output format
 
 [ReportTriggers.vsdx](https://microsofteur-my.sharepoint.com/:u:/g/personal/nhsejth_microsoft_com/ESn6T_RL47xOipe9fZJmhBkBOzK7faQkQJh-9kzvZJa-jw)
 
-The full flowchart for the reporting runtime can be found in the ReportTriggers.vsdx file at the link above. The updated diagram is in the tab **OnPreRendering**
 
 ## Report rendering payload schema definition
 
 ```json
 {
-
   "\$schema": "http://json-schema.org/draft-04/schema#",
-
   "description": "",
-
   "type": "object",
-
   "properties": {
-
     "version": {
-
       "type": "string",
-
       "minLength": 1
-
     },
-
     "saveformat": {
-
       "type": "string",
-
       "enum": \[ "Default", "PdfA3B", "Einvoice" \]
-
     },
-
     "primaryDocument": {
-
       "type": "string",
-
       "minLength": 1
-
     },
-
     "attachments": {
-
       "type": "array",
-
       "uniqueItems": true,
-
       "minItems": 0,
-
       "items": {
-
         "required": \[
-
           "name",
-
           "description",
-
           "relationship",
-
           "mimetype",
-
           "filename"
-
         \],
-
         "properties": {
-
           "name": {
-
             "type": "string",
-
             "minLength": 1
-
           },
-
           "description": {
-
             "type": "string",
-
             "minLength": 1
-
           },
-
           "relationship": {
-
             "type": "string",
-
             "enum": \[ "Source", "Data", "Alternative", "Supplement",
 "Unspecified" \]
-
           },
-
           "mimetype": {
-
             "type": "string",
-
             "minLength": 1
-
           },
-
           "filename": {
-
             "type": "string",
-
             "minLength": 1
-
           }
-
         }
-
       }
-
     },
-
     "additionalDocuments": {
-
       "type": "array",
-
       "items": {
-
         "type": "string"
-
       }
-
     },
-
     "protection": {
-
       "type": "object",
-
       "properties": {
-
         "user": {
-
           "type": "string",
-
           "minLength": 0
-
         },
-
         "admin": {
-
           "type": "string",
-
           "minLength": 0
-
         }
-
       },
-
       "required": \[
-
         "user",
-
         "admin"
-
       \]
-
     }
-
   },
-
   "required": \[
-
     "version",
-
     "saveformat",
-
     "attachments",
-
     "additionalDocuments",
-
     "protection"
-
   \]
-
 }
 ```
 
