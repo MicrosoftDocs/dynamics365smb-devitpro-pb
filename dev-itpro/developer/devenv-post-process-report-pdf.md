@@ -1,27 +1,37 @@
 ---
-title: Creating a Word layout report
-description: Describes the steps involved in creating a report that uses a Word layout.
-author: SusanneWindfeldPedersen
+title: Attach Files, Append, and Protect Report PDFs with AL
+description: Learn to attach files, append PDFs, and password protect report PDFs in AL. Follow best practices for compliance and secure document handling.
+author: jswymer
 ms.custom: bap-template
-ms.date: 02/13/2025
-ms.reviewer: solsen
+ms.date: 05/26/2025
+ms.reviewer: jswymer
 ms.topic: how-to
-ms.author: solsen
+ms.author: jswymer
 ---
 
-# Modify and password protect report PDF files
+# Attach files, append, and protect report PDFs using AL
 
-This aricles explains how AL developers can enhance the PDF output when a report is saved/downloaed, previewed, or printed. You can:
+This aricles explains how AL developers can enhance the PDF output when a report is saved/downloaed, previewed, or printed. Using AL, you can make the following modifications to the report PDF output:
 
 - **Attach files:** Add files as attachments that are embedded in the report PDF output. The attachements show in the **Attachments** side panel in PDF reader. The attachments appear in the **Attachments** side panel in the PDF reader. You can attach different file formats like images, PDFs, Word documents, Excel spreadsheets, and multimedia files.
 - **Append with other PDF documents:** Add other PDF documents to the end of the report PDF to create a single PDF.
 - **Protect with passwords:** Protect the report PDF by setting user and admin passwords needed to open the file.
 
+These capabilities are designed to support requirements such as e-invoicing and regulatory requirements for embedded documents, additional files, and document protection.
+
 ## How it works
 
-This functionality is enabled by the `OnPreRendering` trigger, which runs after the last data item trigger and before `OnPostReport`. The trigger is available on report and report extension objects. The trigger is designed to support requirements such as e-invoicing and regulatory document embedding.
+This functionality is enabled by the `OnPreRendering` trigger, which runs after the last data item trigger and before `OnPostReport`. The trigger is available on report and report extension objects and has the following syntax:
 
-The trigger collects this information in a JSON payload, which the platform processes to apply the requested actions.
+```al
+trigger OnPreRendering(var RenderingPayload: JsonObject)
+begin
+    //Code to build the report payload json
+end;
+```
+
+The trigger collects report rendering data in a JSON payload, which the platform processes to apply the requested modifications to the report PDF output. The platform uses this payload to apply the requested modifications to the report PDF output. Add code to the trigger to specify the output modifications you want&mdash;attach, append, or password-protect&mdash;according to the [report rendering payload schema](#report-rendering-payload-schema-definition).
+
 
 ### Action Matrix
 
@@ -33,21 +43,15 @@ The trigger collects this information in a JSON payload, which the platform proc
 | Print (universal)  |   -   |   X    |    -    |
 | Print (browser)    |   -   |   X    |    X    |
 
-> **Note:** Printing a protected document requires the user password. Browser print does not support password-protected PDFs (see Bug 568351).
-
-The `OnPreRendering` trigger runs after the last data item trigger and before `OnPostReport`. It is designed to support REGF and E-invoicing requirements for embedded documents, additional files, and document protection.
-
-The trigger collects information for:
-
-- Attaching documents to PDF targets.
-- Appending additional documents to the output artifact.
-- Protecting the output artifact with user and admin passwords.
 
 The collected data is returned to the platform, which applies the necessary actions based on the scenario:
 
-- **Embed:** Applied when saving an artifact (using SaveAsXX). Embedding does not apply to print/preview scenarios, as embedded files do not appear in user-facing pages. If the JSON property `primaryDocument` is set and `saveformat` is **Einvoice**, this attachment is promoted to the alternative representation of the master PDF document and added to the XMP PDF metadata for identification in electronic payment systems. The relationship type is set according to the JSON properties (Alternative for the primary document, Data for others).
+- **Attach:** Applied when saving an artifact (using SaveAsXX). Embedding does not apply to print/preview scenarios, as embedded files do not appear in user-facing pages. If the JSON property `primaryDocument` is set and `saveformat` is **Einvoice**, this attachment is promoted to the alternative representation of the master PDF document and added to the XMP PDF metadata for identification in electronic payment systems. The relationship type is set according to the JSON properties (Alternative for the primary document, Data for others).
 - **Append:** Applied to actions that show user-facing versions of the artifact (print/preview), allowing users to print the completed document as they see it.
 - **Protect:** Applied to save and browser print scenarios. Documents scheduled for universal print are not protected by default, but will be protected if universal print fails and downloads to the web client for local print.
+
+   > [!NOTE]
+   > Printing a protected document requires the user password. Browser print does not support password-protected PDFs. 
 
 > Notice that printing a protected document requires that the user enters the given user password. This is needed as you can print to a “Print to Pdf” printer that will store the document locally. The Current PdfPrint support in the WebClient does not support password protected documents and will not render the print page (tracked by *[Bug 568351: W1 2025 - Bug Bash III: Browser print of a password protected pdf stream does not show a print window with password request](https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/568351).*)
 
@@ -61,18 +65,6 @@ The collected data is returned to the platform, which applies the necessary acti
 | **Print (universal)** | -         | X          | -           |
 | **Print (browser)**   | -         | X          | X           |
 
-## Trigger Scope
-
-| Object type      | Supported |
-|------------------|-----------|
-| Report           | X         |
-| Report Extension | X         |
-
-## AL Language extensions in the Reporting scope
-
-### Report object Trigger
-
-*trigger OnPreRendering(var RenderingPayload: JsonObject);*
 
 The rendering schema is defined in section Report Rendering Payload Schema Definition on page [2](#_Ref189494529).  
 OnPreRendering is a data collection trigger only, and will not invoke the processing instructions directly, but only build the Json object with a list of files to append or embed, and user/admin passwords. The platform will apply these values in the right context and ensure that files passed to the trigger are properly cleaned up afterwards.
@@ -94,13 +86,9 @@ This property will allow the AL developer to determine the current output format
 
 ##  Limitations and known issues
 
-### Attachment file size
-
-The maximum attachment file size is limited to 100 MB per attachment[^2].
-
-###  Pdf/A compliance
-
-Conversion to PDF/A is not fully functional due to problems in the third-party component that is being used. The file is converted but fails compliance validation due to lack of font substitution and internal data structure. The font substitution will be handled in an upcoming update and the internal data structures improvements must be done by a vendor update.
+- **Attachment file size:** The maximum attachment file size is limited to 100 MB per attachment[^2].
+- **Pdf/A compliance:** Conversion to PDF/A isn't fully functional because of problems in the Non-Microsoft component that it uses. The file is converted but fails compliance validation due to lack of font substitution and internal data structure.
+- Browser print doesn't support password-protected PDFs.
 
 ## Runtime flow chart snippet
 
@@ -108,7 +96,7 @@ Conversion to PDF/A is not fully functional due to problems in the third-party c
 
 The full flowchart for the reporting runtime can be found in the ReportTriggers.vsdx file at the link above. The updated diagram is in the tab **OnPreRendering**
 
-## Report Rendering Payload Schema Definition
+## Report rendering payload schema definition
 
 ```json
 {
