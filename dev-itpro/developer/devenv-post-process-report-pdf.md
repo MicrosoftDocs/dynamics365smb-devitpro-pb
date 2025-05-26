@@ -11,19 +11,21 @@ ms.author: jswymer
 
 # Attach files, append, and protect report PDFs using AL
 
-This article explains how AL developers can enhance the PDF output when a report is downloaded, previewed, or printed. Using AL, you can modify the report PDF output in the following ways:
+This article explains how AL developers can enhance the PDF output when a report is downloaded, previewed, or printed. Using AL, you can change the report PDF output in the following ways:
 
-- Attach files
+- Add attachments
 
-  Add files as attachments that are embedded in the report PDF output. The attachements show in the **Attachments** side panel in PDF reader. The attachments appear in the **Attachments** side panel in the PDF reader. You can attach different file formats like images, PDFs, Word documents, Excel spreadsheets, and multimedia files.
-- Append with other PDF documents
+  Attach files that are embedded in the report PDF output. The attachements show in the **Attachments** side panel in PDF reader. The attachments appear in the **Attachments** side panel in the PDF reader. You can attach different file formats like images, PDFs, Word documents, Excel spreadsheets, and multimedia files.
 
-  Add other PDF documents to the end of the report PDF to create a single PDF.
+- Add additional documents
+
+  Append other PDF documents to the end of the report PDF to create a single PDF.
+
 - Protect with passwords
 
-  Protect the report PDF by setting user and admin passwords needed to open the file.
+  Set user and admin passwords on the output that users must provide to open or print the PDF.
 
-These capabilities are designed to support requirements such as e-invoicing and regulatory requirements for embedded documents, additional files, and document protection.
+These options are designed to support requirements such as e-invoicing and regulatory requirements for embedded documents, additional files, and document protection.
 
 ## How it works
 
@@ -38,20 +40,52 @@ begin
 end;
 ```
 
-The trigger collects report rendering data in a JSON payload, which the platform processes to apply the requested modifications to the report PDF output. The platform uses this payload to apply the requested modifications to the report PDF output. Add code to the trigger to specify the output modifications you want&mdash;attach, append, or password-protect&mdash;according to the [report rendering payload schema](#report-rendering-payload-schema-definition).
+Add code to the trigger to specify the output modifications you want&mdash;attach, additional documents, or protect&mdash;according to the [report rendering payload schema](#report-rendering-payload-schema-definition).
 
-### Action Matrix
+The trigger collects report rendering data in a JSON payload. It doesn't invoke processing instructions directly. Instead, it builds the JSON object with a list of attached and appended files, and user or admin passwords. The platform uses this payload to apply the requested changes to the report PDF output.
 
+### 
 
-| Intent/Action      | Embed | Append | Protect |
+## JSON Payload Schema
+
+The payload sent from `OnPreRendering` follows this schema:
+
+```json
+{
+  "version": "1.0",
+  "saveformat": "Einvoice",
+  "primaryDocument": "factur-x.xml",
+  "attachments": [
+    {
+      "name": "Attachment1.pdf",
+      "description": "This is attachment 1",
+      "relationship": "Data",
+      "mimetype": "application/pdf",
+      "filename": "DIR\\Attachment1.pdf"
+    }
+  ],
+  "additionalDocuments": [
+    "DIR\\LegalDocumentToAppend1.pdf"
+  ],
+  "protection": {
+    "user": "userPassword",
+    "admin": "adminPassword"
+  }
+}
+```
+
+### Report action support for output options
+
+This table indicates the output options that each report action supports.
+
+| Action      | Attachments | Additional documents | Protect |
 |--------------------|:-----:|:------:|:-------:|
 | Send to PDF (SaveAs)|   ![check mark for feature](../developer/media/check.png)   |  ![check mark for feature](../developer/media/check.png)    |    ![check mark for feature](../developer/media/check.png)    |
 | Schedule           |   -   |   -    |    -    |
 | Preview            |   -   |   ![check mark for feature](../developer/media/check.png)    |    -    |
-| Print (universal)  |   -   |   ![check mark for feature](../developer/media/check.png)    |    ![check mark for feature](../developer/media/check.png)    |
-| Print (browser)    |   -   |   ![check mark for feature](../developer/media/check.png)    |    -    |
+| Print (universal)  |   -   |   ![check mark for feature](../developer/media/check.png)    |  - |
+| Print (browser)    |   -   |   ![check mark for feature](../developer/media/check.png)    |     ![check mark for feature](../developer/media/check.png)        |
 
-The collected data is returned to the platform, which applies the necessary actions based on the scenario:
 
 - **Attach:** Applied when saving an artifact (using SaveAsXX). Embedding does not apply to print/preview scenarios, as embedded files do not appear in user-facing pages. If the JSON property `primaryDocument` is set and `saveformat` is **Einvoice**, this attachment is promoted to the alternative representation of the master PDF document and added to the XMP PDF metadata for identification in electronic payment systems. The relationship type is set according to the JSON properties (Alternative for the primary document, Data for others).
 - **Append:** Applied to actions that show user-facing versions of the artifact (print/preview), allowing users to print the completed document as they see it.
@@ -62,35 +96,6 @@ The collected data is returned to the platform, which applies the necessary acti
 
 > Notice that printing a protected document requires that the user enters the given user password. This is needed as you can print to a “Print to Pdf” printer that will store the document locally. The Current PdfPrint support in the WebClient does not support password protected documents and will not render the print page (tracked by *[Bug 568351: W1 2025 - Bug Bash III: Browser print of a password protected pdf stream does not show a print window with password request](https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/568351).*)
 
-## Action Overview
-
-| **Intent/Action**     | **Embed** | **Append** | **Protect** |
-|-----------------------|-----------|------------|-------------|
-| **Save**              | X         | X          | X           |
-| **Schedule**          | -         | -          | -           |
-| **Preview**           | -         | X          | -           |
-| **Print (universal)** | -         | X          | -           |
-| **Print (browser)**   | -         | X          | X           |
-
-
-The rendering schema is defined in section Report Rendering Payload Schema Definition on page [2](#_Ref189494529).  
-OnPreRendering is a data collection trigger only, and will not invoke the processing instructions directly, but only build the Json object with a list of files to append or embed, and user/admin passwords. The platform will apply these values in the right context and ensure that files passed to the trigger are properly cleaned up afterwards.
-
-### Sample usage
-
-Code sample has been implemented in TestSuite.PdfAttachment that can be found in ‘Apps\Platform\Reporting[\TestSuite.PdfAttachments’](https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_git/Platform-Core?path=/Apps/Platform/Reporting/TestSuite.PdfAttachments) in the Platform-Core ADO repository.
-
-There is a standalone test report and a report extension on the Standard Sales Invoice.
-
-The sample code configures the ReportRenderingCompleteHandler[^1] codeunit in the OnPreReport and OnPreRendering triggers, and support append, attach and protect. The files that are embedded and appended are created on the fly by helper code.
-
-### Report Instance Properties
-
-*ReportTarget: ReportFormat,*
-
-where ReportFormat is the built-in type defining output file formats (pdf, Word,…)  
-This property will allow the AL developer to determine the current output format in any trigger following the request page (the last place the user can change).
-
 ##  Limitations and known issues
 
 - **Attachment file size:** The maximum attachment file size is limited to 100 MB per attachment[^2].
@@ -100,7 +105,6 @@ This property will allow the AL developer to determine the current output format
 ## Runtime flow chart snippet
 
 [ReportTriggers.vsdx](https://microsofteur-my.sharepoint.com/:u:/g/personal/nhsejth_microsoft_com/ESn6T_RL47xOipe9fZJmhBkBOzK7faQkQJh-9kzvZJa-jw)
-
 
 ## Report rendering payload schema definition
 
