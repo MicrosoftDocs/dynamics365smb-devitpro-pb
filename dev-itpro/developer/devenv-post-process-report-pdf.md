@@ -11,11 +11,17 @@ ms.author: jswymer
 
 # Attach files, append, and protect report PDFs using AL
 
-This aricles explains how AL developers can enhance the PDF output when a report is saved/downloaed, previewed, or printed. Using AL, you can make the following modifications to the report PDF output:
+This article explains how AL developers can enhance the PDF output when a report is downloaded, previewed, or printed. Using AL, you can modify the report PDF output in the following ways:
 
-- **Attach files:** Add files as attachments that are embedded in the report PDF output. The attachements show in the **Attachments** side panel in PDF reader. The attachments appear in the **Attachments** side panel in the PDF reader. You can attach different file formats like images, PDFs, Word documents, Excel spreadsheets, and multimedia files.
-- **Append with other PDF documents:** Add other PDF documents to the end of the report PDF to create a single PDF.
-- **Protect with passwords:** Protect the report PDF by setting user and admin passwords needed to open the file.
+- Attach files
+
+  Add files as attachments that are embedded in the report PDF output. The attachements show in the **Attachments** side panel in PDF reader. The attachments appear in the **Attachments** side panel in the PDF reader. You can attach different file formats like images, PDFs, Word documents, Excel spreadsheets, and multimedia files.
+- Append with other PDF documents
+
+  Add other PDF documents to the end of the report PDF to create a single PDF.
+- Protect with passwords
+
+  Protect the report PDF by setting user and admin passwords needed to open the file.
 
 These capabilities are designed to support requirements such as e-invoicing and regulatory requirements for embedded documents, additional files, and document protection.
 
@@ -39,11 +45,11 @@ The trigger collects report rendering data in a JSON payload, which the platform
 
 | Intent/Action      | Embed | Append | Protect |
 |--------------------|:-----:|:------:|:-------:|
-| Save               |   X   |   X    |    X    |
+| Send to PDF (SaveAs)|   ![check mark for feature](../developer/media/check.png)   |  ![check mark for feature](../developer/media/check.png)    |    ![check mark for feature](../developer/media/check.png)    |
 | Schedule           |   -   |   -    |    -    |
-| Preview            |   -   |   X    |    -    |
-| Print (universal)  |   -   |   X    |    -    |
-| Print (browser)    |   -   |   X    |    X    |
+| Preview            |   -   |   ![check mark for feature](../developer/media/check.png)    |    -    |
+| Print (universal)  |   -   |   ![check mark for feature](../developer/media/check.png)    |    ![check mark for feature](../developer/media/check.png)    |
+| Print (browser)    |   -   |   ![check mark for feature](../developer/media/check.png)    |    -    |
 
 The collected data is returned to the platform, which applies the necessary actions based on the scenario:
 
