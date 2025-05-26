@@ -34,8 +34,8 @@ end;
 
 The trigger collects report rendering data in a JSON payload, which the platform processes to apply the requested modifications to the report PDF output. The platform uses this payload to apply the requested modifications to the report PDF output. Add code to the trigger to specify the output modifications you want&mdash;attach, append, or password-protect&mdash;according to the [report rendering payload schema](#report-rendering-payload-schema-definition).
 
-
 ### Action Matrix
+
 
 | Intent/Action      | Embed | Append | Protect |
 |--------------------|:-----:|:------:|:-------:|
