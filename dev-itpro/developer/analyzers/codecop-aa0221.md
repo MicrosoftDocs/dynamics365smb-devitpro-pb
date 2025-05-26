@@ -1,6 +1,6 @@
 ---
 title: "CodeCop Warning AA0221"
-description: "You must specify a OptionCaption property for all fields which source expressions is not a table field."
+description: "You must specify an OptionCaption property for all fields which source expressions is not a table field."
 ms.author: solsen
 ms.date: 08/26/2024
 ms.topic: reference
@@ -11,10 +11,10 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Warning AA0221
-You must specify a OptionCaption property for all fields which source expressions is not a table field.
+You must specify an OptionCaption property for all fields which source expressions is not a table field.
 
 ## Description
-You must specify a OptionCaption property for all fields which source expressions is not a table field.
+You must specify an OptionCaption property for all fields which source expressions is not a table field.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  

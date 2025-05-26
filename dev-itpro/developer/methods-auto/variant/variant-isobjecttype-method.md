@@ -30,7 +30,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the AL variant contains a ObjectType variable, otherwise **false**.
+**true** if the AL variant contains an ObjectType variable, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

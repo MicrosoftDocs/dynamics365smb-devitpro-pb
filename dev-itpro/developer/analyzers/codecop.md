@@ -72,7 +72,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0218](codecop-aa0218.md)|You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects.|Localizability|Warning|
 |[AA0219](codecop-aa0219.md)|The Tooltip property of Fields should start with 'Specifies'.|Localizability|Info|
 |[AA0220](codecop-aa0220.md)|The value of the Tooltip property of Fields must be filled.|Localizability|Warning|
-|[AA0221](codecop-aa0221.md)|You must specify a OptionCaption property for all fields which source expressions is not a table field.|Localizability|Warning|
+|[AA0221](codecop-aa0221.md)|You must specify an OptionCaption property for all fields which source expressions is not a table field.|Localizability|Warning|
 |[AA0222](codecop-aa0222.md)|SIFT index should not be used on primary or unique key.|Design|Warning|
 |[AA0223](codecop-aa0223.md)|The value of the OptionCaption property of Fields must be filled in.|Localizability|Warning|
 |[AA0224](codecop-aa0224.md)|The count of option captions specified in the OptionCaption property is wrong.|Localizability|Warning|

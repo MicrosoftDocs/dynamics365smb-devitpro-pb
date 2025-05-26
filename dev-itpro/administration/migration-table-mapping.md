@@ -63,7 +63,7 @@ For example, suppose the Business Central on-premises table is named **My Custom
 
 The following figure illustrates an example of the **Migrate Table Mappings** page for an AL table:
 
-[![Shows the table mapping move for a AL table](../media/table-mapping-move-al.png)](../media/table-mapping-move-al.png#lightbox)
+[![Shows the table mapping move for an AL table](../media/table-mapping-move-al.png)](../media/table-mapping-move-al.png#lightbox)
 
 ## Move a set of fields out of the main table to another table or table extension
 

@@ -160,7 +160,7 @@ The following table lists the arguments that make up the data collected for trac
 |category|Specifies the category of the telemetry trace event.|Telemetry (TelemetryData)|  
 |connectionType|Specifies the [!INCLUDE[rtc](../developer/includes/rtc_md.md)] that has established the connection to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server instance. Values include [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] and [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].|Service calls (ServiceCall)|
 |dataclassification|Specifies the [!INCLUDE[rtc](../developer/includes/rtc_md.md)] that has established the connection to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server instance. Values include [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] and [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].|Service calls (ServiceCall)|    
-|failureMessage|Includes the error message that is returned when a AL function fails.|AL function trace events (ALTracing)|  
+|failureMessage|Includes the error message that is returned when an AL function fails.|AL function trace events (ALTracing)|  
 |functionName|Specifies the AL function that was executed.|AL function trace events (ALTracing)|
 |lineNumber|Specifies the line number of the statement in the AL code of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] object that was executed.|AL function trace events|  
 |message|Specifies the error, warning, or information message text that was issued for a trace event|Windows event log trace events (EventViewer)<br /><br />Telemetry (TelemetryData)|  

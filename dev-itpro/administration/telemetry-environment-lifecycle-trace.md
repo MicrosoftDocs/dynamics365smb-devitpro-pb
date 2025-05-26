@@ -1503,7 +1503,7 @@ Occurs when a configuration key for the environment failed to be deleted.
 
 ### Sample KQL code (environment configuration key failed to be deleted)
 
-This KQL code can help you get started analyzing failures when deletin a environment configuration key:
+This KQL code can help you get started analyzing failures when deleting an environment configuration key:
 
 ```kql
 traces
@@ -1551,7 +1551,7 @@ Occurs when the update window for the environment was successfully updated.
 
 ## Environment update window modification failed
 
-Occurs when a update window failed to be updated.
+Occurs when an update window failed to be updated.
 
 ### General dimensions
 
