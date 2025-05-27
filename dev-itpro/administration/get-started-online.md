@@ -4,10 +4,10 @@ description: Learn about how to get started as a reselling partner of Dynamics 3
 author: jswymer
 ms.topic: get-started
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 06/03/2022
+ms.date: 05/27/2025
 ms.author: jswymer
 ms.collection: get-started
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ---
 
 # Get started as a reseller of Business Central online
@@ -91,7 +91,81 @@ For more information, see [Technical Support for Business Central](../technical-
 
 As a Business Central reselling partner, you are the administrator of the Business Central tenants of your customers. You are expected to help your customers maintain their solution, including [setting the upgrade window](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment), [monitoring telemetry](tenant-admin-center-telemetry.md), [updating customizations](../developer/app-maintain.md), and [managing apps](tenant-admin-center-manage-apps.md).  
 
-For more information, see [Administration of Business Central Online](tenant-administration.md) and [The Business Central Administration Center](tenant-admin-center.md).  
+For more information, see [Administration of Business Central Online](tenant-administration.md) and [The Business Central Administration Center](tenant-admin-center.md).
+
+## Preparing for Business Central online
+
+If you’re a partner on [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises preparing to move to [!INCLUDE [prod_short](../includes/prod_short.md)] online, the following sections are some of the things to keep in mind. The sections describe the most important differences between [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises and online customers.
+
+> [!NOTE]
+> To start selling [!INCLUDE [prod_short](../includes/prod_short.md)] online, you must become familiar with several core Microsoft Cloud concepts like tenant, indirect reseller, CSP, MCA, and regions. These concepts aren’t unique to [!INCLUDE [prod_short](../includes/prod_short.md)] online—they are part of a common foundation used across Microsoft 365, Azure, and the Dynamics 365 product family. You’re not just preparing to sell one product by learning these standards; you’re equipping yourself with the skills and knowledge to support a broad range of Microsoft cloud solutions.
+
+### Indirect reseller
+
+In an on-premises setup, you order licenses for your customers directly from Microsoft. In the online model, in most cases, you become an indirect reseller and must sign an agreement with an indirect provider (under the CSP program). As an indirect reseller, you don’t order licenses from Microsoft directly—instead, you transact with your chosen indirect provider.
+
+![Dynamics 365 Business Central distributed through the CSP channel.](../media/business-central-csp.svg "Business Central distributed through the CSP channel")
+
+Learn more about the [Cloud Solution Provider](/partner-center/csp-overview) (CSP) program.
+
+### License ordering and customer management
+
+In [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, you use PartnerSource to order new licenses, renumber objects, and include add-ons. After each change, you need to generate a new license file and manually update the license in the customer database.
+In [!INCLUDE [prod_short](../includes/prod_short.md)] online, you place orders through your indirect provider's portal and manage customers in the Microsoft Partner Center. The process is more streamlined—you no longer need to generate license files or renumber objects. Subscriptions or additional users are available to your customers immediately after purchase; which means that no manual license installation is required. You also add apps using Microsoft AppSource.
+
+Learn more and see the [examples of what you can achieve on Partner Center](/partner-center/customers/connect-with-your-customers?toc=%2Fdynamics365%2Fbusiness-central%2Fdev-itpro%2Ftoc.json).
+
+### Microsoft Entra tenants
+
+[!INCLUDE [prod_short](../includes/prod_short.md)] online operates within the broader Microsoft cloud ecosystem. Most customers already have a tenant before they adapt [!INCLUDE [prod_short](../includes/prod_short.md)], so you must identify the customer's tenant when assigning new licenses. This way, [!INCLUDE [prod_short](../includes/prod_short.md)] integrates with many other apps the customer already uses, like Excel, Outlook, Power BI, or Dynamics 365 Sales.
+
+Learn more about tenants in [Infrastructure of Business Central online](tenant-environment-topology.md).
+
+### Delegated administration and administration center
+
+In [!INCLUDE [prod_short](../includes/prod_short.md)] online, it’s much easier to access and support the customers, mostly due to the two assets unavailable in the on-premises setup; the delegated administration and administration center.
+Delegated administration allows the partner to access the [!INCLUDE [prod_short](../includes/prod_short.md)] environment with the customer's approval. This doesn’t require any special configuration or separate [!INCLUDE [prod_short](../includes/prod_short.md)] licenses for your consultants. Administration Center is where you can manage customers' environments, updates, or telemetry.
+
+Learn more about [Delegated administration](delegated-admin.md) and [Administration center](tenant-admin-center.md).
+
+### Multiple licensing partners
+
+In an on-premises model, each customer has one partner who manages its license. The customer can designate additional partners who act as consultants. However, these partners have limited options. The setup in [!INCLUDE [prod_short](../includes/prod_short.md)] online is different. The CSP (Cloud Solution Provider) model allows many different Microsoft resellers to sell subscriptions to the same customer. This way, [!INCLUDE [prod_short](../includes/prod_short.md)] online customers can have multiple partners providing them with the licenses.
+
+Learn more about [trials and subscriptions in Business Central online](trials-subscriptions.md).
+
+### AppSource transactability
+
+Apps that extend [!INCLUDE [prod_short](../includes/prod_short.md)] online functionality are published on AppSource. Pay special attention to the AppSource transactability. This is the option to purchase the app directly through AppSource. An increasing number of apps have the transactability option enabled. They can be added to [!INCLUDE [prod_short](../includes/prod_short.md)] in two ways:
+
+* Customer purchases the app directly from the ISV.
+* Indirect reseller (you) purchases the app from the ISV through the indirect provider.
+
+Both ways are different from the on-premises model, where you act as a managing partner for the customer. In the on-premises model, you usually transact directly with the ISV and then add the application to the customer license on PartnerSource.
+
+Learn more in [selling Business Central apps through AppSource](../developer/devenv-sell-apps-appsource.md).
+
+### Regions
+
+The CSP program contains the so-called region availability. This means that based on your company's location, you’re part of one of the regions and can sell CSP offers (including [!INCLUDE [prod_short](../includes/prod_short.md)]) only within that region. For example, if your company's location is in Europe, you can sell to customers in Europe and cannot sell to customers in the United States.
+
+Learn more about [CSP regions](/partner-center/enroll/regional-authorization-overview).
+
+### AIM and Bridge to Cloud 2
+
+These are the default programs designed to assist in migrating on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online. Learn more in [AIM and Bridge to Cloud 2](https://dynamicspartners.transform.microsoft.com/program/aim-migration).
+
+### Microsoft Customer Agreement (MCA)
+
+[!INCLUDE [prod_long](../includes/prod_long.md)] on-premises customers are bound by the Microsoft Software License Terms specific to [!INCLUDE [prod_short](../includes/prod_short.md)]. Don’t look for special license terms for [!INCLUDE [prod_long](../includes/prod_long.md)] online. Customers are bound by the Microsoft Customer Agreement (MCA), which applies to all Microsoft cloud products and services, including Azure, Microsoft 365, and Dynamics 365.
+
+Learn more in the [Microsoft Customer Agreement](https://www.microsoft.com/licensing/docs/customeragreement).
+
+### Pricing model differences
+
+The core licensing model is similar in both on-premises and online deployments—customers are primarily charged based on the number of users, the licenses are: Essentials, Premium, Device, or Team Members. However, there are some important differences. In [!INCLUDE [prod_short](../includes/prod_short.md)] online, customers don’t pay for objects. In most cases, they don’t need additional licenses for their partners who provide support, because partners can access their environments with delegated admin permissions. Instead, they may incur costs for production environments (Additional Environment Addon) and storage (Database Capacity), which don’t apply to the on-premises model.
+
+Learn more in the [Microsoft Dynamics Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## Related information
 
