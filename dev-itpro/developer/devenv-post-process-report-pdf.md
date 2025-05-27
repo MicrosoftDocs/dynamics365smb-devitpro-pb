@@ -74,9 +74,9 @@ The payload sent from `OnPreRendering` follows this schema:
 }
 ```
 
-### Report action support for output options
+### Report actions that output options apply to
 
-This table indicates the output options that each report action supports.
+Not all output options apply to every report action. This table shows which output options apply to each report action.
 
 | Action      | Attachments | Additional documents | Protect |
 |--------------------|:-----:|:------:|:-------:|
@@ -96,15 +96,11 @@ This table indicates the output options that each report action supports.
 
 > Notice that printing a protected document requires that the user enters the given user password. This is needed as you can print to a “Print to Pdf” printer that will store the document locally. The Current PdfPrint support in the WebClient does not support password protected documents and will not render the print page (tracked by *[Bug 568351: W1 2025 - Bug Bash III: Browser print of a password protected pdf stream does not show a print window with password request](https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/568351).*)
 
-##  Limitations and known issues
+## Limitations and known issues
 
 - **Attachment file size:** The maximum attachment file size is limited to 100 MB per attachment[^2].
 - **Pdf/A compliance:** Conversion to PDF/A isn't fully functional because of problems in the Non-Microsoft component that it uses. The file is converted but fails compliance validation due to lack of font substitution and internal data structure.
-- Browser print doesn't support password-protected PDFs.
-
-## Runtime flow chart snippet
-
-[ReportTriggers.vsdx](https://microsofteur-my.sharepoint.com/:u:/g/personal/nhsejth_microsoft_com/ESn6T_RL47xOipe9fZJmhBkBOzK7faQkQJh-9kzvZJa-jw)
+- Browser printing doesn't support password-protected PDFs.
 
 ## Report rendering payload schema definition
 
