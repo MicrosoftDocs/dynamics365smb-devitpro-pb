@@ -17,7 +17,7 @@ This article explains how AL developers can enhance the PDF output when a report
 
   Attach files that are embedded in the report PDF output. The attachements show in the **Attachments** side panel in PDF reader. The attachments appear in the **Attachments** side panel in the PDF reader. You can attach different file formats like images, PDFs, Word documents, Excel spreadsheets, and multimedia files.
 
-- Add additional documents
+- Append additional documents
 
   Append other PDF documents to the end of the report PDF to create a single PDF.
 
@@ -46,8 +46,9 @@ The trigger collects report rendering data in a JSON payload. It doesn't invoke 
 
 ### Example
 
-The following AL code example attaches a XML file to the **Customer - List** report PDF output and appends it with the **Customer - Top 10 List** report.
+The following AL code example modifies the **Customer - List** report PDF output to include an attached file and append it with the **Customer - Top 10 List** report.
 
+For a detailed example covering different scenarios, refer to 
 
 ```AL
 reportextension 50136 MyCustRepExtension extends "Customer - List"
@@ -130,7 +131,7 @@ reportextension 50136 MyCustRepExtension extends "Customer - List"
 }
 ```
 
-## JSON payload schema 
+### Report rendering payload
 
 The payload sent from `OnPreRendering` for the example:
 
@@ -156,7 +157,7 @@ The payload sent from `OnPreRendering` for the example:
 }
 ```
 
-### Report actions that output options apply to
+### Report actions that apply output options
 
 Not all output options apply to every report action. This table shows which output options apply to each report action.
 
@@ -167,16 +168,6 @@ Not all output options apply to every report action. This table shows which outp
 | Preview            |   -   |   ![check mark for feature](../developer/media/check.png)    |    -    |
 | Print (universal)  |   -   |   ![check mark for feature](../developer/media/check.png)    |  - |
 | Print (browser)    |   -   |   ![check mark for feature](../developer/media/check.png)    |     ![check mark for feature](../developer/media/check.png)        |
-
-
-- **Attach:** Applied when saving an artifact (using SaveAsXX). Embedding does not apply to print/preview scenarios, as embedded files do not appear in user-facing pages. If the JSON property `primaryDocument` is set and `saveformat` is **Einvoice**, this attachment is promoted to the alternative representation of the master PDF document and added to the XMP PDF metadata for identification in electronic payment systems. The relationship type is set according to the JSON properties (Alternative for the primary document, Data for others).
-- **Append:** Applied to actions that show user-facing versions of the artifact (print/preview), allowing users to print the completed document as they see it.
-- **Protect:** Applied to save and browser print scenarios. Documents scheduled for universal print are not protected by default, but will be protected if universal print fails and downloads to the web client for local print.
-
-   > [!NOTE]
-   > Printing a protected document requires the user password. Browser print does not support password-protected PDFs. 
-
-> Notice that printing a protected document requires that the user enters the given user password. This is needed as you can print to a “Print to Pdf” printer that will store the document locally. The Current PdfPrint support in the WebClient does not support password protected documents and will not render the print page (tracked by *[Bug 568351: W1 2025 - Bug Bash III: Browser print of a password protected pdf stream does not show a print window with password request](https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/568351).*)
 
 ## Limitations and known issues
 
@@ -277,21 +268,21 @@ Not all output options apply to every report action. This table shows which outp
 
 ## Element definitions
 
-| Json element| Documentation|
-|-|-|
-| version| Json schema version using the standard version format X.X.X.X      |
-| saveformat               | Defines the final pdf file format to be one of the following values:<br>- Default (leave as is )<br>- PdfA3B – Convert to pure PDF/A-3B.<br>- Einvoice – Convert to PDF/A-3B and add the xmp metadata for CrossIndustryDocument/invoice compliance. |
-| primaryDocument          | The name of the document represents the alternative version of the user facing pdf (this is the invoicing xml document). This document will be added to the xmp metadata as the DocumentFileName|
-| attachments              | List of attachments as a json array              |
-| attachments\name         | Attachment name that will be stored in the pdf embedding.          |
-| attachments\description  | Descriptive text for this attachment.            |
-| attachments\relationship | Relationship type according to the Adobe Pdf standard (use the enum type given in the sample extension).                 |
-| attachments\mimetype     | The attachment mimetype. The alternative invoice must be of type text\xml            |
-| attachments\filename     | The filename that will point to the object to be attached (the server will delete the file when the operation is complete).                |
-| additionalDocuments      | List of pdf files to append to the resulting document.             |
-| protection               | Contains the optional document passwords.        |
-| protection\user          | Defines the user password that is required to open the document.   |
-| protection\admin         | Defines the admin password that gives full access to the document. Notice that if this element is empty, the platform will apply the user password to this field.           |
+| Element                  | Description |
+|--------------------------|-------------|
+| `version`                | JSON schema version in the format X.X.X.X. |
+| `saveformat`             | Sets the final PDF file format. Values include:<ul><li>`Default` – Leaves the format as is.</li><li>`PdfA3B` – Converts to PDF/A-3B.</li><li>`Einvoice` – Converts to PDF/A-3B and adds XMP metadata for CrossIndustryDocument/invoice compliance. The document is added to the XMP metadata as the `DocumentFileName`.</li></ul> |
+| `primaryDocument`        | Name of the document that represents the alternative version of the user-facing PDF, such as the invoicing XML document. This document is added to the XMP metadata as the `DocumentFileName` of the primary document.<br><br>When `primaryDocument` is set and `saveformat` is set to `Einvoice`, this attachment is promoted to the alternative representation of the main PDF document (invoice type) and added to the XMP PDF metadata for identification in electronic payment systems. The `relationship` is set based on the JSON properties defined for the attachment: use `Alternative` for the primary document and `Data` for others. |
+| `attachments`            | List of attachments as a JSON array. |
+| `attachments\name`       | Name of the attachment stored in the PDF. |
+| `attachments\description`| Description of the attachment. |
+| `attachments\relationship`| Relationship type as defined by the Adobe PDF standard. Use the enum type provided in the sample extension. |
+| `attachments\mimetype`   | Attachment MIME type. The alternative invoice must use `text/xml`. |
+| `attachments\filename`   | File name of the object to attach. Business Central deletes the file when the operation is complete. |
+| `additionalDocuments`    | List of PDF files to append to the resulting document. |
+| `protection`             | Optional document passwords. |
+| `protection\user`        | User password required to open the document. |
+| `protection\admin`       | Admin password that gives full access to the document. If empty, the platform uses the user password. |
 
 ## Data Type definitions
 
