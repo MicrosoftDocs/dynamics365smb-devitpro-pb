@@ -11,7 +11,11 @@ ms.author: jswymer
 
 # Attach files, append, and protect report PDFs using AL
 
-This article explains how AL developers can enhance the PDF output when a report is downloaded, previewed, or printed. Using AL, you can change the report PDF output in the following ways:
+This article explains how AL developers can enhance the PDF output when a report is downloaded, previewed, or printed. 
+
+## Overview
+
+Using AL, you can change the report PDF output in the following ways:
 
 - Add attachments
 
