@@ -40,36 +40,118 @@ begin
 end;
 ```
 
-Add code to the trigger to specify the output modifications you want&mdash;attach, additional documents, or protect&mdash;according to the [report rendering payload schema](#report-rendering-payload-schema-definition).
+You add code to the trigger to specify the output modifications you want&mdash;attach, additional documents, or protect&mdash;according to the [report rendering payload schema](#report-rendering-payload-schema-definition).
 
 The trigger collects report rendering data in a JSON payload. It doesn't invoke processing instructions directly. Instead, it builds the JSON object with a list of attached and appended files, and user or admin passwords. The platform uses this payload to apply the requested changes to the report PDF output.
 
-### 
+### Example
 
-## JSON Payload Schema
+The following AL code example attaches a XML file to the **Customer - List** report PDF output and appends it with the **Customer - Top 10 List** report.
 
-The payload sent from `OnPreRendering` follows this schema:
+
+```AL
+reportextension 50136 MyCustRepExtension extends "Customer - List"
+{
+    dataset
+    {
+    }
+
+    requestpage
+    {
+    }
+
+    rendering
+    {
+        layout(LayoutName)
+        {
+            Type = Word;
+            LayoutFile = 'mycustlayout.docx';
+        }
+    }
+
+    trigger OnPreRendering(var RenderingPayload: JsonObject)
+    var
+        Name: Text;
+        FileName: Text;
+        ProtectionObj: JsonObject;
+        AttachmentsArray: JsonArray;
+        AttachmentObj: JsonObject;
+        AdditionalDocumentsArray: JsonArray;
+        AdditionalDocObj: JsonObject;
+        Top10PdfFile: Text;
+    begin
+        RenderingPayload.Add('version', '1.0.0.0');
+
+        // Create a simple attachment object
+        Name := 'sample-attachment.xml';
+        FileName := CreateXmlFile(Name, 'This is a sample xml file');
+        AttachmentObj.Add('name', Name);
+        AttachmentObj.Add('filename', FileName);
+        AttachmentObj.Add('description', 'This is the sample xml document');
+        AttachmentObj.Add('relationship', 'Data');
+        AttachmentObj.Add('mimetype', 'text/xml');
+        // Add the attachment object to rendering payload
+        AttachmentsArray.Add(AttachmentObj);
+        RenderingPayload.Add('attachments', AttachmentsArray);
+
+        // Create PDF of Customer - Top 10 List report for appending 
+        Top10PdfFile := CreatePdfFile('CustomerTop10.pdf', '');
+        // Add PDF to rendering payload  
+        AdditionalDocumentsArray.Add(Top10PdfFile);
+        RenderingPayload.Add('additionalDocuments', AdditionalDocumentsArray);
+
+        // Create the protection object with user password
+        ProtectionObj.Add('user', 'UserPasswordHere');
+        // Add protection object to rendering payload
+        RenderingPayload.Add('protection', ProtectionObj);
+    end;
+
+    local procedure CreatePdfFile(Filename: Text; Content: Text) FilePath: Text
+    begin
+        FilePath := System.TemporaryPath + Filename;
+        Report.SaveAsPdf(Report::"Customer - Top 10 List", FilePath);
+    end;
+
+    local procedure CreateXmlFile(Filename: Text; Content: Text) FilePath: Text
+    var
+        FileObject: File;
+        OutStream: OutStream;
+    begin
+        FilePath := System.TemporaryPath + Filename;
+        FileObject.TextMode := true;
+        FileObject.Create(FilePath);
+        FileObject.CreateOutStream(OutStream);
+        OutStream.WriteText('<?xml version="1.0" encoding="utf-8" standalone="yes"?>');
+        OutStream.WriteText('<root><test>');
+        OutStream.WriteText(Content);
+        OutStream.WriteText('</test></root>');
+        FileObject.Close();
+    end;
+}
+```
+
+## JSON payload schema 
+
+The payload sent from `OnPreRendering` for the example:
 
 ```json
 {
-  "version": "1.0",
+  "version": "1.0.0.0.",
   "saveformat": "Einvoice",
-  "primaryDocument": "factur-x.xml",
   "attachments": [
     {
-      "name": "Attachment1.pdf",
-      "description": "This is attachment 1",
+      "name": "sample-attachemnt.xml",
+      "description": "This is the sample xml document",
       "relationship": "Data",
-      "mimetype": "application/pdf",
-      "filename": "DIR\\Attachment1.pdf"
+      "mimetype": "text/xml",
+      "filename": "sample-attachment.xml"
     }
   ],
   "additionalDocuments": [
-    "DIR\\LegalDocumentToAppend1.pdf"
+    "Top10PdfFile"
   ],
   "protection": {
-    "user": "userPassword",
-    "admin": "adminPassword"
+    "user": "UserPasswordHere"
   }
 }
 ```
