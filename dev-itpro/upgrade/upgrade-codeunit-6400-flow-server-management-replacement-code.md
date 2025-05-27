@@ -36,7 +36,7 @@ codeunit 6400 "Flow Service Management"
         FlowEnvironmentsProdApiTxt: Label 'https://management.azure.com/providers/Microsoft.ProcessSimple/environments?api-version=2016-11-01', Locked = true;
         FlowEnvironmentsTip1ApiTxt: Label 'https://tip1.api.powerapps.com/providers/Microsoft.PowerApps/environments?api-version=2016-11-01', Locked = true;
         FlowEnvironmentsTip2ApiTxt: Label 'https://tip2.api.powerapps.com/providers/Microsoft.PowerApps/environments?api-version=2016-11-01', Locked = true;
-        GenericErr: Label 'An error occured while trying to access the Flow service. Please try again or contact your system administrator if the error persists.';
+        GenericErr: Label 'An error occurred while trying to access the Flow service. Please try again or contact your system administrator if the error persists.';
         FlowResourceNameTxt: Label 'Flow Services';
         FlowTemplatePageSizeTxt: Label '4', Locked = true;
         FlowTemplateDestinationNewTxt: Label 'new', Locked = true;
@@ -392,3 +392,4 @@ codeunit 6400 "Flow Service Management"
 ## Related information
 
 [Code Conversion from C/AL to AL](devenv-code-conversion.md)  
+

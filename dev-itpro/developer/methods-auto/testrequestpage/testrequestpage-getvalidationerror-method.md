@@ -33,7 +33,7 @@ The index of the validation error that occurred on the test page.
 ## Return Value
 *Error*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The validation error that occured at the specified index.
+The validation error that occurred at the specified index.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
