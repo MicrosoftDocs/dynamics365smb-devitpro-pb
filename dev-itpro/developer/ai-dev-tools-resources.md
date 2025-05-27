@@ -35,7 +35,14 @@ This allows customers to:
 - Track AI consumption at a granular level, per Copilot feature.
 - Receive a consolidated invoice for AI consumption.
 
+[!INCLUDE [prod_short](includes/prod_short.md)] AI resources are billed in alignment with Copilot Studio message billing, and follows the AI Tools rates, that depends on the underlying language model of the Copilot feature prompts.
 
+|Business Central AI resources model|AI Tools rate|
+|--------------------------------------|-------------|
+|4o|Standard|
+|4o mini|Basic|
+
+You can read more about the rates under AI Tools in [Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management#message-scenarios)
  
 > [!NOTE]  
 > It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP). <!-- link to more info? -->
