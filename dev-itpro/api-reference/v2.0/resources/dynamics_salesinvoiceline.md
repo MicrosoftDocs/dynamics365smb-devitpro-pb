@@ -4,16 +4,15 @@ description: A sales invoice line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesInvoiceLine resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales invoice line in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -53,10 +52,11 @@ Represents a sales invoice line in [!INCLUDE[prod_short](../../../includes/prod_
 |lineType|NAV.invoiceLineAggLineType|The type of the sales invoice line. It can be "Comment", "Account", "Item", "Resource" Value", "Fixed Asset" or "Charge".|
 |lineObjectNumber|string|The number of the object (account or item) of the sales invoice line.|
 |description|string|Specifies the description of the sales invoice line.|
+|description2|string||
 |unitOfMeasureId|GUID|The ID of unit of measure for the sales invoice line.|
 |unitOfMeasureCode|string|The code of unit of measure for the sales invoice line.|
-|unitPrice|decimal|Specifies the price for one unit of the item in the specified sales invoice line.|
 |quantity|decimal|The quantity of the item in the sales invoice line.|
+|unitPrice|decimal|Specifies the price for one unit of the item in the specified sales invoice line.|
 |discountAmount|decimal|The sales invoice line discount amount.|
 |discountPercent|decimal|The line discount percent.    |
 |discountAppliedBeforeTax|boolean|Specifies whether the discount is applied before tax.|
@@ -75,7 +75,7 @@ Represents a sales invoice line in [!INCLUDE[prod_short](../../../includes/prod_
 
 ## JSON representation
 
-Here is a JSON representation of the salesInvoiceLine resource.
+Here's a JSON representation of the salesInvoiceLine resource.
 
 
 ```json
@@ -88,10 +88,11 @@ Here is a JSON representation of the salesInvoiceLine resource.
     "lineType": "NAV.invoiceLineAggLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureId": "GUID",
     "unitOfMeasureCode": "string",
-    "unitPrice": "decimal",
     "quantity": "decimal",
+    "unitPrice": "decimal",
     "discountAmount": "decimal",
     "discountPercent": "decimal",
     "discountAppliedBeforeTax": "boolean",
@@ -109,11 +110,9 @@ Here is a JSON representation of the salesInvoiceLine resource.
     "locationId": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET salesInvoiceLine](../api/dynamics_salesInvoiceLine_Get.md)  
 [DELETE salesInvoiceLine](../api/dynamics_salesInvoiceLine_Delete.md)  
 [POST salesInvoiceLine](../api/dynamics_salesInvoiceLine_Create.md)  

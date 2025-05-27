@@ -1,17 +1,16 @@
 ---
-title: "Record Data Type"
+title: "Record data type"
 description: "Is a complex data type."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record Data Type
+# Record Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is a complex data type.
@@ -88,7 +87,7 @@ The following methods are available on instances of the Record data type.
 |[RecordLevelLocking()](record-recordlevellocking-method.md)|Determines whether the table supports record-level locking.|
 |[Relation(Any)](record-relation-method.md)|Determines the table relationship of a given field.|
 |[Rename(Any [, Any,...])](record-rename-method.md)|Changes the value of a primary key in a table.|
-|[Reset()](record-reset-method.md)|Removes all filters, including any special filters set by MarkedOnly, changes fields select for loading back to all, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition.|
+|[Reset()](record-reset-method.md)|Removes all filters, including any special filters set by MarkedOnly, changes fields select for loading back to all, sets the read isolation level to the default value, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition.|
 |[SecurityFiltering([SecurityFilter])](record-securityfiltering-method.md)|Gets or sets how security filters are applied to the record.|
 |[SetAscending(Any, Boolean)](record-setascending-method.md)|Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
 |[SetAutoCalcFields([Any,...])](record-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database.|
@@ -123,8 +122,6 @@ The following methods are available on instances of the Record data type.
 |[TestField(Any, TextConst, ErrorInfo)](record-testfield-joker-textconst-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code)](record-testfield-joker-code-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code, ErrorInfo)](record-testfield-joker-code-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
-|[TestField(Any, Text)](record-testfield-joker-string-method.md)|Tests whether the contents of a field match a given value.|
-|[TestField(Any, Text, ErrorInfo)](record-testfield-joker-string-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum)](record-testfield-joker-anyenum-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum, ErrorInfo)](record-testfield-joker-anyenum-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Any)](record-testfield-joker-joker-method.md)|Tests whether the contents of a field match a given value.|
@@ -135,6 +132,6 @@ The following methods are available on instances of the Record data type.
 |[WritePermission()](record-writepermission-method.md)|Determines whether a user can write to a table. This method can test for both full write permission and partial write permission that has been granted with a security filter. A write permission consists of Insert, Delete, and Modify permissions.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -2,11 +2,7 @@
 title: "String Data Type"
 description: "Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value."
 ms.author: solsen
-ms.custom: na
 ms.date: 05/11/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---

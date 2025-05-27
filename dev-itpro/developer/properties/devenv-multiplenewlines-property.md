@@ -1,12 +1,11 @@
 ---
-title: "MultipleNewLines Property"
+title: "MultipleNewLines property"
 description: "Sets a value that determines whether users can add multiple new lines between records."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,8 +16,8 @@ author: SusanneWindfeldPedersen
 Sets a value that determines whether users can add multiple new lines between records.
 
 ## Applies to
--   Page
 -   Request Page
+-   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -32,6 +31,6 @@ Sets a value that determines whether users can add multiple new lines between re
 MultipleNewLines = true;
 ```
   
-## See Also
+## Related information
 
 [AutoSplitKey Property](devenv-autosplitkey-property.md)

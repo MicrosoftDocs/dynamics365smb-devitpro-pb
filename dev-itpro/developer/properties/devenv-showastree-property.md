@@ -1,12 +1,11 @@
 ---
-title: "ShowAsTree Property"
+title: "ShowAsTree property"
 description: "Sets the indentation of rows on a List Page to Tree View."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -33,7 +32,7 @@ To enable the tree view, you must also set the **IndentationColumn** property. T
 Optionally, you can set the **TreeInitialState** property to specify whether the list displays as collapsed or expanded when the list page opens in the client.
 
 > [!NOTE]  
-> When you set this property to **true**, the **IndentationControl** property is ignored and the first column on the page is indented.
+> When you set this property to **true**, the **IndentationControls** property is ignored and the first column on the page is indented.
 
 For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.md).
 
@@ -55,7 +54,7 @@ repeater(Control1)
 
 ```
 
-## See Also
+## Related information
 
 [IndentationColumn Property](devenv-indentationcolumn-property.md)  
 [TreeInitialState Property](devenv-treeinitialstate-property.md)  

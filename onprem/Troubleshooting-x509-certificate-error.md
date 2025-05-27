@@ -1,13 +1,8 @@
 ---
 title: X.509 certificate CN=accounts.accesscontrol.windows.net is not in the trusted people store
 description: The client cannot connect to the server instance and event log includes a warning event - X.509 certificate CN=accounts.accesscontrol.windows.net is not in the trusted people store.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Troubleshooting: The X.509 certificate CN=accounts.accesscontrol.windows.net is not in the trusted people store

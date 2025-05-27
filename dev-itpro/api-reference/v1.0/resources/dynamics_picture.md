@@ -3,11 +3,12 @@ title: (v1.0) picture resource type
 description: (v1.0) A picture object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Picture resource type (v1.0)
@@ -56,7 +57,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
 
 [Get Picture](../api/dynamics_picture_get.md)  
 [Create Picture](../api/dynamics_create_picture.md)  

@@ -1,9 +1,7 @@
 ---
 title: "Query Overview"
 description: "Description of the query object."
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: overview
 author: jswymer
 ---
@@ -61,7 +59,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [Query Object](devenv-query-object.md)  
 [Linking and Joining Data Items](devenv-query-links-joins.md)  
 [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  

@@ -1,19 +1,18 @@
 ---
 title: Introduction to automation APIs
 description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
-author: henrikwh
-ms.custom: na
-ms.date: 12/03/2023
-ms.reviewer: na
-ms.topic: conceptual
+author: SusanneWindfeldPedersen
+ms.date: 02/04/2025
+ms.topic: concept-article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Introduction to automation APIs
 
-Automation APIs provide capability for automating company setup through APIs. Once the tenants are created, the automation APIs can be used, in order to hydrate the tenant - to bring the tenant up to a desired state. Usually this involves creating a new company on the tenant, running RapidStart packages, installing extensions, assigning permission sets to users and managing security groups.
+Automation APIs provide capability for automating company setup through APIs. Once the tenants are created, the automation APIs can be used, in order to hydrate the tenant - to bring the tenant up to a desired state. Usually this involves creating a new company on the tenant, running RapidStart packages, installing extensions, assigning permission sets to users, and managing security groups.
 
-Delegated admin credentials and [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] users with permissions, can call the APIs.
+Delegated admin credentials and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] users with permissions, can call the APIs.
 
 [!INCLUDE [admin-azure-ad-preconsent](../developer/includes/admin-azure-ad-preconsent.md)]
 
@@ -21,7 +20,7 @@ Automation APIs are placed in the `microsoft/automation` API namespace. In all t
 
 ## Create a company
 
-To create a company, an automationCompany endpoint is available. To create a Company issue a [POST request](api/dynamics_automationCompany_create.md) as shown in the following example.
+To create a company, an automationCompany endpoint is available. To create a company, issue a [POST request](api/dynamics_automationCompany_create.md) as shown in the following example.
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/automationCompanies
@@ -39,11 +38,11 @@ The {companyId} must be the ID of a valid company on the tenant. Issue a [GET au
 > [!NOTE]  
 > The company, which is created won't be initialized.
 
-To rename a company, issue a [PATCH automationCompanies](/dynamics365/business-central/dev-itpro/administration/resources/dynamics_automationcompany).
+To rename a company, issue a [PATCH automationCompanies](resources/dynamics_automationcompany.md).
 
 ## Upload and apply a RapidStart package
 
-RapidStart is uploaded, installed, and applied using the APIs described below. RapidStart operations can be time consuming. To get the current status of the RapidStart packages and running operations issue a [GET configurationPackages](/dynamics365/business-central/dev-itpro/administration/resources/dynamics_configurationpackage) as shown in the following example.
+RapidStart is uploaded, installed, and applied using the APIs described below. RapidStart operations can be time consuming. To get the current status of the RapidStart packages and running operations issue a [GET configurationPackages](resources/dynamics_configurationpackage.md) as shown in the following example.
 
 ```json
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/configurationPackages
@@ -55,7 +54,7 @@ In the response, status for the import and apply status is shown, and informatio
 
 ### Insert RapidStart
 
-First step is to create the configuration package, by issuing a [POST configurationPackages](api/dynamics_configurationpackage_create.md) in the [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] tenant. Once the configuration package is created, the RapidStart package can be uploaded. See the example below.
+First step is to create the configuration package, by issuing a [POST configurationPackages](api/dynamics_configurationpackage_create.md) in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] tenant. Once the configuration package is created, the RapidStart package can be uploaded. See the example below.
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/configurationPackages
@@ -101,7 +100,7 @@ Authorization: Bearer {token}
 
 ## Managing users and permission sets
 
-The automation APIs enable users to be set up in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].
+The automation APIs enable users to be set up in [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
 
 ### Modifying user properties
 
@@ -122,7 +121,7 @@ If-Match:*
 ### Assign user permissions and user groups
 
 > [!NOTE]  
-> User groups are replaced with [Security groups](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/manage-user-permissions-using-security-groups) and will be deprecated in version 25. For more information, see [security group APIs](resources/dynamics_securitygroup.md).
+> User groups are replaced with [Security groups](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/manage-user-permissions-using-security-groups) and will be deprecated in version 25. Learn more in [security group APIs](resources/dynamics_securitygroup.md).
 
 To assign users to a user group, issue a [POST request](api/dynamics_usergroupmember_create.md) against the **userGroupMembers** entity. See the example below.
 
@@ -161,15 +160,31 @@ Add-on extensions, which are already published to the tenant can be installed an
 
 ### Installing and uninstalling published add-on extensions
 
-There are three bound actions available on the **extensions** endpoint: `Microsoft.NAV.install`, `Microsoft.NAV.uninstall` and `Microsoft.NAV.uninstallAndDeleteExtensionData`.
+There are three bound actions available on the **extensions** endpoint: `Microsoft.NAV.install`, `Microsoft.NAV.uninstall`, and `Microsoft.NAV.uninstallAndDeleteExtensionData`.
 
-Issue a POST extension using the bound actions. See the example below.
+Issue a POST extension using the bound actions. See the example below, use the same syntax for the other bound actions.
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.install
 
 Authorization: Bearer {token}
 ```
+
+### Unpublishing an uninstalled app
+
+On the **extensions** endpoint, the `Microsoft.NAV.unpublish` is available to unpublish an uninstalled app.
+
+Issue a POST extension using the bound action. See the example below.
+
+```json
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.unpublish
+
+Authorization: Bearer {token}
+```
+
+> [!NOTE]
+> The `Microsoft.NAV.unpublish` bound action is introduced in version 25.4. It's used for unpublishing an app, which isn't installed. You can choose to either uninstall and then unpublish the app, or you can install a new version of the app, which leaves the old app uninstalled, and then you can unpublish the app to remove it from the extensions list.
+
 
 ### Upload and install a per-tenant extension
 
@@ -180,7 +195,7 @@ Use **extensionUpload** endpoint to upload and install the extension.
 
 ### Insert extension upload
 
-First step is to create the configuration package, by issuing a [POST extensionUpload](api/dynamics_extensionupload_create.md) in the [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] tenant. Once the extension upload record is created, the extension can be uploaded. See the example below.
+First step is to create the configuration package, by issuing a [POST extensionUpload](api/dynamics_extensionupload_create.md) in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] tenant. Once the extension upload record is created, the extension can be uploaded. See the example below.
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload
@@ -192,6 +207,7 @@ Content-type: application/json
     "schemaSyncMode": "Add"
 }
 ```
+
 > [!NOTE]  
 > Schedule in the body can be "Current version", "Next minor version" or "Next major version".
 
@@ -231,7 +247,7 @@ To view ongoing extension installation status, issue [GET extensionDeploymentSta
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionDeploymentStatus
 ```
 
-## See also
+## Related information
 
 [Automation company](resources/dynamics_automationcompany.md)  
 [Company](resources/dynamics_company.md)  
@@ -247,4 +263,4 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 [User group member](resources/dynamics_usergroupmember.md)  
 [User group permission](resources/dynamics_usergrouppermission.md)  
 [User permission](resources/dynamics_userpermission.md)  
-[Control Access to Business Central Using Security Groups](/dynamics365/business-central/ui-security-groups)  
+[Control access to Business Central using security groups](/dynamics365/business-central/ui-security-groups)  

@@ -1,12 +1,7 @@
 ---
 title: "Walkthrough: Creating a Link from a Report to a Page"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: baafbe33-37a8-41e7-a8d8-dd1f90475984
 caps.latest.revision: 29
 ---

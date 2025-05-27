@@ -1,12 +1,11 @@
 ---
-title: "SourceTableTemporary Property"
+title: "SourceTableTemporary property"
 description: "Sets whether the source table is a temporary table."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,8 +16,8 @@ author: SusanneWindfeldPedersen
 Sets whether the source table is a temporary table.
 
 ## Applies to
--   Page
 -   Request Page
+-   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -33,6 +32,6 @@ Sets whether the source table is a temporary table.
 SourceTableTemporary = true;
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   

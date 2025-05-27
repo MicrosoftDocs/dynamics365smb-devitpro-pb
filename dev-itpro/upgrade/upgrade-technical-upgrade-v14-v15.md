@@ -1,12 +1,12 @@
 ---
 title: Technical Upgrade 
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.custom: evergreen
+ms.date: 04/18/2024
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Technical Upgrade to [!INCLUDE[prolong](../developer/includes/prod_long.md)] 2019 Wave 2
 
@@ -391,7 +391,7 @@ Now, your application is fully upgraded to the version 15 platform.
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
-## See Also
+## Related information
 
 [Upgrading the Data](Upgrading-the-Data.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

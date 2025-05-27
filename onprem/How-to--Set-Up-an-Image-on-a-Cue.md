@@ -1,12 +1,7 @@
 ---
 title: "How to: Set Up an Image on a Cue"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 77fb4f20-8b5a-43dd-aae5-948f3deb67d3
 caps.latest.revision: 8
 ---

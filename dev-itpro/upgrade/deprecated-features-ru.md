@@ -2,11 +2,12 @@
 title: Russian features that are moved, removed, or replaced
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the features for Russia that we have moved, removed, or replaced.
 author: AndreiPanko
-ms.topic: article
+ms.topic: reference
 ms.devlang: al
-ms. search.keywords: deprecated, Russia, local functionality
+ms.search.keywords: deprecated, Russia, local functionality
 ms.date: 12/19/2023
 ms.author: andreipa
+ms.reviewer: jswymer
 ---
 
 # Deprecated features in the Russian version of [!INCLUDE [prod_long](../includes/prod_long.md)]
@@ -44,7 +45,7 @@ Russian legislation requires companies to record and track the customs declarati
 
 [!INCLUDE [fields-obsolete-ru](../includes/fields-obsolete-ru.md)]
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

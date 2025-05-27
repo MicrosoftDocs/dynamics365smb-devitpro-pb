@@ -4,16 +4,15 @@ description: A currency object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # currency resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a currency in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -27,8 +26,6 @@ Represents a currency in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[DELETE currency](../api/dynamics_currency_delete.md)|none|Deletes a currency object.|
 |[POST currency](../api/dynamics_currency_create.md)|currency|Creates a currency object.|
 |[PATCH currency](../api/dynamics_currency_update.md)|currency|Updates a currency object.|
-
-
 
 ## Properties
 
@@ -44,7 +41,7 @@ Represents a currency in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 
 ## JSON representation
 
-Here is a JSON representation of the currency resource.
+Here's a JSON representation of the currency resource.
 
 
 ```json
@@ -58,11 +55,9 @@ Here is a JSON representation of the currency resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET currency](../api/dynamics_currency_Get.md)  
 [DELETE currency](../api/dynamics_currency_Delete.md)  
 [POST currency](../api/dynamics_currency_Create.md)  

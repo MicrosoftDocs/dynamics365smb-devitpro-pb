@@ -2,11 +2,10 @@
 title: "Report.Language([Integer]) Method"
 description: "Gets or sets the current language setting for the report."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/24/2024
-ms.reviewer: jswymer
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -88,7 +87,7 @@ var
 
 ```
 
-## See also
+## Related information
 [Windows Language Code Identifier (LCID) Reference](https://learn.microsoft.com/openspecs/windows_protocols/ms-lcid/70feba9f-294e-491e-b6eb-56532684c37f)   
 [Report.FormatRegion](./reportinstance-formatregion-method.md)   
 [Report Localization](../../devenv-report-localization.md)  

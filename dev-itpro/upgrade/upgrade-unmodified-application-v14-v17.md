@@ -1,12 +1,12 @@
 ---
 title: "Upgrading unmodified C/AL application to version 17"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 17
-ms.custom: na
-ms.date: 12/27/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.custom: evergreen
+ms.date: 04/18/2024
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading unmodified C/AL application to version 17
 
@@ -488,7 +488,7 @@ Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance unti
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-## See also  
+## Related information  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

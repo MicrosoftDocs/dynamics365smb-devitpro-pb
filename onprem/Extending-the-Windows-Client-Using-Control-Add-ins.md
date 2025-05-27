@@ -1,12 +1,7 @@
 ---
 title: "Extending the Windows Client Using Control Add-ins"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 26debaba-6559-4edb-b0b3-cb3d480b35c1
 caps.latest.revision: 21
 ---

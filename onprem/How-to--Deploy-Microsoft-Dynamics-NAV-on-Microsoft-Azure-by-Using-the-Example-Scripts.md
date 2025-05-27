@@ -1,12 +1,7 @@
 ---
 title: "How to: Deploy Microsoft Dynamics NAV on Microsoft Azure by Using the Example Scripts"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 64f54243-c168-4f02-8de2-a3f663a3b437
 caps.latest.revision: 13
 ---

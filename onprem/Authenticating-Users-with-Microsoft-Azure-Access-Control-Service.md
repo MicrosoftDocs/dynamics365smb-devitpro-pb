@@ -1,13 +1,8 @@
 ---
 title: User Authentication with Azure ACS
 description: Microsoft Azure Access Control service is a cloud service that provides user authentication and authorization for web applications and services.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 

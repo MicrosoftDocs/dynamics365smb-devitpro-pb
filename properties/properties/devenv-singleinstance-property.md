@@ -1,10 +1,8 @@
 ---
 title: "SingleInstance Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5b0f6ddb-2a7b-46b0-a07d-f5408d63a0e5
 caps.latest.revision: 7

@@ -1,12 +1,7 @@
 ---
 title: "Configuring Dynamics 365 Business Central Web Services to Use SSL (SOAP and OData)"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ---
 # Configuring [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Services to Use SSL 
 Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide security and data integrity for data communications over a network. By encrypting your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services using SSL, you make your data and the network more secure and more reliable.  
@@ -267,12 +262,12 @@ An access control list \(ACL\) is part of the Windows security infrastructure an
     |`ipaddress`|The IP address that can use the web service. Use `0.0.0.0` to include all IP addresses.|  
     |`port`|The port that is used by the web service.|  
     |`thumbprint`|The certificate thumbprint that you pasted to NotePad previously.|  
-    |`id`|A 32-digit hexadecimal number that identifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. The id must be in the format {NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN\). If you do not know the appid, then use any value, such as {00112233-4455-6677-8899-AABBCCDDEEFF}.|  
+    |`id`|A 32-digit hexadecimal number that identifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. The id must be in the format {NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN\). If you do not know the appid, then use any value, such as {00001111-aaaa-2222-bbbb-3333cccc4444}.|  
   
      For example, the following command binds a certificate that has the thumbprint c0d0f27095b03d4317e219841024328cef248779 to port 7047 for all IP addresses:  
   
     ```  
-    netsh http add sslcert ipport=0.0.0.0:7047 certhash=c0d0f27095b03d4317e219841024328cef248779 appid={00112233-4455-6677-8899-AABBCCDDEEFF}  
+    netsh http add sslcert ipport=0.0.0.0:7047 certhash=c0d0f27095b03d4317e219841024328cef248779 appid={00001111-aaaa-2222-bbbb-3333cccc4444}  
     ```  
   
 ##  <a name="Restart"></a> Restart the [!INCLUDE[admintool](../developer/includes/admintool.md)] Server Instance  

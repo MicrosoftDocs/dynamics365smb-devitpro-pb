@@ -1,10 +1,14 @@
 ---
-title: "How to: Set up performance counters in Windows Performance Monitor"
-ms.custom: bap-template
+title: Set up performance counters in Windows Performance Monitor
+description: This article describes how to use Windows Performance Monitor to collect and view data from the performance counters.
+ms.custom:
+  - bap-template
+  - evergreen
 ms.date: 01/08/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
+author: jswymer
 ---
 # Set up performance counters in Windows Performance Monitor
 This article describes how to use Windows Performance Monitor to collect and view data from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance counters. For a list of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance counters, see [Business Central Performance Counters](performance-counters.md).  
@@ -33,7 +37,7 @@ This article describes how to use Windows Performance Monitor to collect and vie
   
  For more information about how to use Windows Performance Monitor, see [Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
   
-## See also  
+## Related information  
  [Business Central Performance Counters](performance-counters.md)   
  [Monitoring Business Central Server](monitor-server.md)   
  [Working with Data Collector Sets](monitor-work-with-data-collector-sets.md)

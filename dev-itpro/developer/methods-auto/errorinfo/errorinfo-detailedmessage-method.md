@@ -2,11 +2,10 @@
 title: "ErrorInfo.DetailedMessage([Text]) Method"
 description: "Specifies a detailed error message."
 ms.author: solsen
-ms.custom: na
-ms.date: 01/03/2024
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -66,7 +65,7 @@ begin
 end
 ```
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Understanding the error dialog](../../devenv-error-dialog.md)  

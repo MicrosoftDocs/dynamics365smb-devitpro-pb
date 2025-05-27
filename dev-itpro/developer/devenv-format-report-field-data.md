@@ -2,11 +2,10 @@
 title: "Formatting field values in report datasets"
 description: "Learn how to format data in report datasets."
 author: KennieNP
-ms.custom: na
 ms.date: 12/01/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: kepontop
+ms.reviewer: jswymer
 ---
 
 # Formatting field values in report datasets
@@ -96,7 +95,7 @@ For more information on how to use the `FormatRegion` method on the report objec
 
 
 
-## See Also
+## Related information
 [Formatting decimal values in report fields](devenv-format-field-data.md)   
 [Localizing the report data formatting and caption strings](devenv-report-localization.md)   
 [Defining a report dataset](devenv-report-dataset.md)   

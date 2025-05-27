@@ -2,13 +2,12 @@
 title: Embed Power BI reports in pages
 description: Explains how to display Power BI reports on pages in Business Central
 ms.custom: bap-template
-ms.date: 01/04/2024
-ms.reviewer: na
+ms.date: 06/20/2024
 ms.topic: how-to
 ms.search.keywords: Power BI, reports, faq, errors
 author: jswymer
 ms.author: jswymer
-
+ms.reviewer: jswymer
 ---
 # Embed Power BI reports, scorecards, dashboards in pages
 
@@ -409,7 +408,7 @@ To display a specific Power BI element, such as a report, visual, or dashboard, 
 
    - [Get reports](/rest/api/power-bi/reports/get-reports) - Typically, the embedURL has the format `https://app.powerbi.com/reportEmbed?reportId=<id>&config=<config>`. 
    - [Get dashboards](/rest/api/power-bi/dashboards/get-dashboards) - Typically, the embedURL has the format `https://app.powerbi.com/dashboardEmbed?dashboardId=<id>&config=<config`. 
-   - [Get scorecards](/rest/api/power-bi/scorecards_(preview)/get)
+   - [Get scorecards](/rest/api/power-bi/scorecards(preview)/get)
 
 - For report visuals, you also need the page name and the visual name.
 
@@ -428,7 +427,7 @@ To display a specific Power BI element, such as a report, visual, or dashboard, 
 - Dynamically changing the context (for example, by calling `SetPageContext` in the `OnAfterGetCurrRecord`) isn't recommended and could lead to unexpected results.
 - Role center pages have no triggers, which means there's no way to call the `SetPageContext` method. As a consequence, any Power BI part in the role center would have the same context: the current user's profile/role.
 
-## See also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)    
 [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)    

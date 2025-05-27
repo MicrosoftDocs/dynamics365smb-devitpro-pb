@@ -7,7 +7,7 @@ ms.service: dynamics-365-op
 ms.topic: how-to
 author: jswymer
 ms.author: jswymer
-ms.custom: bac-template
+ms.custom: bap-template
 ---
 # Configure Business Central Database Authentication
 
@@ -174,7 +174,7 @@ To configure a SQL Server authentication on a [!INCLUDE [server](../developer/in
 ## Integrating directly on SQL Server objects
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
 
-## See Also
+## Related information
 
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
 [Deployment](../deployment/deployment.md)  

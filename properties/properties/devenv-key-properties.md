@@ -1,10 +1,7 @@
 ---
 title: "Key Properties"
-ms.custom: na
 ms.date: 11/10/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: SusanneWindfeldPedersen
 ---

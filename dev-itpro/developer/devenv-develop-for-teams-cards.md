@@ -1,10 +1,8 @@
 ---
 title: "Developing for Microsoft Teams Using Metadata"
 description: Explains how to use metadata to add custom fields to a Business Central card in Teams
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Extending Teams Cards
@@ -353,7 +351,7 @@ end;
 
 In the code, the **Vendor Role Name** field is defined in a table extension object that extends the **Vendor** table.
 
-## See Also
+## Related information
 
 [FAQ for Teams Integration](devenv-dev-faq-teams.md)  
 [Field Groups](devenv-field-groups.md)  

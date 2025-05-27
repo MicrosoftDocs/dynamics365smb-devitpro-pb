@@ -1,13 +1,8 @@
 ---
 title: Troubleshoot Outlook Integration and Synchronization
 description: Test multiple installations and configurations of the Dynamics NAV Synchronization Add-in to resolve the problems that can occur on the Outlook Add-in.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: e921e9d1-e22e-42e8-b827-e534f8fe98f3
 caps.latest.revision: 28
 ---

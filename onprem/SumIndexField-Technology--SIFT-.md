@@ -1,12 +1,7 @@
 ---
 title: "SumIndexField Technology (SIFT)"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: c2b6f5eb-ac99-4645-af48-75f106ddae89
 caps.latest.revision: 14
 ---

@@ -1,10 +1,8 @@
 ---
 title: "Locking down server communication"
 description: List the server configuration settings that you can use to help secure and limit communication with clients and the database.
-ms.custom: na
 ms.date: 12/22/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Locking down server communication
@@ -46,7 +44,7 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance include
 
 -->
 
-## See also  
+## Related information  
 
 [Security and Protection](security-and-protection.md)  
 [Data Security](data-security.md)  

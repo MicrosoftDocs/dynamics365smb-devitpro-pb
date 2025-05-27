@@ -4,7 +4,7 @@ description: Learn how time zones work with web services
 ms.custom: bap-template
 ms.date: 01/05/2024
 ms.reviewer: jswtmer
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 
@@ -42,7 +42,7 @@ For example, if the Services Default Time Zone setting is set to **UTC+3**, the 
 |01/01/2014 17:00 UTC+1|01/01/2014 17:00 UTC+1|01/01/2014 16:00 UTC|  
 |01/01/2014 17:00|01/01/2014 17:00 UTC+3|01/01/2014 14:00 UTC|  
 
-## See also  
+## Related information  
 
 [SessionSettings.TimeZone Method](../developer/methods-auto/sessionsettings/sessionsettings-timezone-method.md)  
 [Server Administration Tool](../administration/administration-tool.md)   

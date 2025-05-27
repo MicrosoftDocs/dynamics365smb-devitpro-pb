@@ -1,10 +1,9 @@
 ---
 title: Compare and update application object source files
 description: Compare the different set of Dynamics NAV application objects using Windows PowerShell cmdlets and apply all or some differences to the target solution.
-ms.custom: na
-ms.date: 12/21/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.custom: evergreen
+ms.date: 04/18/2024
+ms.topic: how-to
 author: jswymer
 ---
 # Compare and update application object source files
@@ -96,7 +95,7 @@ You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to comp
   
  You can now import the merged objects into a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. For more information, see [Merge Application Changes](merge-application-changes.md).  
   
-## See also  
+## Related information  
  [Merge Application Changes](merge-application-changes.md)   
  [Handling Merge Conflicts](Handling-Merge-Conflicts.md)   
  [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md)   

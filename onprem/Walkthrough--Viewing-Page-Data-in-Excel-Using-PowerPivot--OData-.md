@@ -1,12 +1,7 @@
 ---
 title: "Walkthrough: Viewing Page Data in Excel Using PowerPivot (OData)"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 050d7047-d95d-424a-97c1-c115000c679e
 caps.latest.revision: 25
 ---

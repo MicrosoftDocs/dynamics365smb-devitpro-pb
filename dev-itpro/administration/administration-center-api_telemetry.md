@@ -2,14 +2,14 @@
 title: Business Central Admin Center API - Telemetry
 description: Learn about the Business Central administration center API for logging telemetry.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 02/24/2023
 ---
 
-# Telemetry (API)
+# Business Central Admin Center API - Telemetry (API)
 
 Telemetry includes the top-level AL events and any returned errors logged from the service. These events can provide necessary information and errors that can be used to troubleshoot issues happening in the tenant's environment. 
 
@@ -18,7 +18,7 @@ Telemetry includes the top-level AL events and any returned errors logged from t
 Returns the telemetry information for the provided environment and filters. it's recommended that you provide start and end time parameters to return a manageable data set.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
+GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
 ```
 
 ### Route Parameters
@@ -63,7 +63,7 @@ Returns the telemetry logs and with data column headers.
 
    - target: {logCategory} - the provided log category isn't a valid value
 
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

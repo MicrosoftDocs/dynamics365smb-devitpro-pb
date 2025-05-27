@@ -2,11 +2,10 @@
 title: Adding Menus to the Navigation Area
 description: "Enable users to quickly navigate and perform actions by adding the menu items to the navigation area."
 author: jswymer
-ms.custom: na
 ms.date: 08/08/2022
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Adding Menus to the Navigation and Actions Area
 
@@ -158,7 +157,7 @@ addlast(Reporting)
 ```
   
 
-## See Also
+## Related information
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  

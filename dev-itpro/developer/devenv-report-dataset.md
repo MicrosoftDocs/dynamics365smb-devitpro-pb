@@ -4,8 +4,8 @@ description: The dataset determines the data extracted to print or display the i
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/18/2024
-ms.reviewer: jswymer
-ms.topic: conceptual
+ms.reviewer: solsen
+ms.topic: how-to
 ms.author: solsen
 ---
 
@@ -224,7 +224,7 @@ The [!INCLUDE[prod_short](includes/prod_short.md)] platform has built-in limits 
 For more information on report limits, see [Report limits](devenv-report-object.md#report-limits).
 
 
-## See Also
+## Related information
 
 [IncludeCaption property](properties/devenv-includecaption-property.md)  
 [Report Object](devenv-report-object.md)  

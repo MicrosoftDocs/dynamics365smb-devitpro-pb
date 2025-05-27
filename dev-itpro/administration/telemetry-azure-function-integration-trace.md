@@ -2,11 +2,12 @@
 title:  Azure Function Integration Telemetry
 description: Learn about telemetry on Azure Function integrations with Business Central
 author: KennieNP
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, telemetry
 ms.date: 08/16/2022
 ms.author: kepontop
+ms.reviewer: jswymer
 ---
 # Analyzing Azure Function Integration Telemetry
 
@@ -133,10 +134,10 @@ traces
 
 -->
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Alert on Telemetry](telemetry-alert.md)  
 [Connecting to Azure Functions](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Azure%20Function)  
-[Overview of the System Application](../developer/devenv-system-application-overview.md)  
+[Overview of the Application](../developer/devenv-system-application-overview.md)  

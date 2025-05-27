@@ -2,7 +2,7 @@
 title: Analyzing Long Running AL Methods Telemetry
 description: Learn about analyzing long running AL methods in Business Central.  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 
 ms.custom: bap-template
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
@@ -110,7 +110,7 @@ traces
 )
 ```
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

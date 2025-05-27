@@ -2,17 +2,16 @@
 title: "Debugger.EnableSqlTrace(Integer [, Boolean]) Method"
 description: "Enables or verifies SQL tracing."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Debugger.EnableSqlTrace(Integer [, Boolean]) Method
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0 until version 15.0 where it was deprecated._
 
 Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected.
 
@@ -45,7 +44,7 @@ You use Microsoft SQL Server Profiler to view traces. For more information, see 
   
 You can also enable and disable SQL tracing by using the **Start Full SQL Tracing** and **Stop Full SQL Tracing** buttons on the **Session List** page.  
 
-## See Also
+## Related information
 [Debugger Data Type](debugger-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

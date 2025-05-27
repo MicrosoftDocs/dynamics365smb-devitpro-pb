@@ -1,12 +1,12 @@
 ---
 title: Install a version 18 update
 description: This article describes the tasks required for getting the monthly version 18 update applied to your Dynamics 365 Business Central on-premises.
-ms.custom: na
-ms.date: 12/28/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.custom: evergreen
+ms.date: 04/18/2024
+ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2021 Release Wave 1 Update
 
@@ -545,7 +545,7 @@ Import-NAVServerLicense -ServerInstance $BcServerInstance -LicenseFile $Customer
 Restart-NAVServerInstance -ServerInstance $BcServerInstance
 ```
 
-## See also
+## Related information
 
 [Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-17.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  

@@ -1,13 +1,8 @@
 ---
 title: Add New Transaction Log Files
 description: Expland a transaction log by creating a new log file in the database; it contains the changes made to the database and used for database recovery.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 9e64e3b8-6702-4594-8fc4-ae74963c09e1
 caps.latest.revision: 8
 ---

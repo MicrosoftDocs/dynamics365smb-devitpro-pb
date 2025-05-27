@@ -3,11 +3,11 @@ title: Performance Toolkit extension
 description: Test your extensions for performance regressions during the development process for Business Central apps. 
 author: bholtorf
 ms.custom: bap-template
-ms.date: 11/17/2023
-ms.reviewer: jswymer
+ms.date: 02/21/2024
+ms.reviewer: bholtorf
 
 ms.search.form: 149000, 149001, 149003, 149004, 149005, 149006, 149007, 149008, 149009
-ms.topic: conceptual
+ms.topic: article
 ms.author: bholtorf
 ---
 
@@ -49,7 +49,7 @@ In the following table, you find examples of scenarios for each persona where th
 | Supporter | Analyze performance issues due to locking or deadlocks | Similar to the developer scenario for concurrency testing. If you're lucky, scenario codeunits are already available on GitHub. |
 
 > [!TIP]
-> Get started with [understanding busines processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
+> Get started with [understanding business processes here](/dynamics365/guidance/business-processes/overview), and learn about [roles in Dynamics 365 here](/dynamics365/guidance/roles/overview).
 
 ## How can I answer the question "Can Business Central handle a specific load for prospect customer"?
 
@@ -490,6 +490,10 @@ Yes, BCPT works on on-premises/local sandboxes and on online sandboxes.
 
 Yes, it's possible to run BCPT scenario runs in AL-Go for GitHub. See https://github.com/microsoft/AL-Go/blob/main/RELEASENOTES.md#new-workflow-create-new-performance-test-app:~:text=New%20workflow%3A%20Create%20new%20Performance%20Test%20App.
 
+### Can you set test isolation in BCPT codeunits?
+
+No, with BCPT you can't set the test isolation property. All data generated/modified by test codeunits is stored in the database. 
+
 ### Do you have sample code for scenarios?
 
 Yes, to get you started quickly, open source scenario code is available here: https://github.com/microsoft/ALAppExtensions/tree/main/Other/Tests/BCPT-SampleTests.
@@ -522,7 +526,7 @@ Visit the [BCPT video page](https://github.com/microsoft/BCTech/blob/master/samp
 Visit the [BCPT blogs page](https://github.com/microsoft/BCTech/blob/master/samples/BCPT/BLOGS.md) for learning resources published as blogs.
 
 
-## See also
+## Related information
 
 [Testing the Application Overview](devenv-testing-application.md)  
 [Performance toolkit telemetry](../administration/telemetry-performance-toolkit-trace.md)   

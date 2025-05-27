@@ -1,13 +1,8 @@
 ---
 title: Naming Conventions in Dynamics NAV
 description: This topic contains guidelines for naming objects, table fields, and variables, and know demo database rules for naming and abbreviating objects.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 59b6506d-8123-41b4-8fd4-288e70eea201
 caps.latest.revision: 19
 ---

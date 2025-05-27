@@ -7,7 +7,7 @@ metadata:
   title: Find all aka.ms links related to Business Central
   description: Here's list of most common of the Business Central aka.ms links
   ms.topic: landing-page # Required
-  ms.date: 01/10/2023
+  ms.date: 01/03/2025
 
 landingContent:
 # Card
@@ -55,10 +55,18 @@ landingContent:
       links:
         - text: aka.ms/BCAI
           url: https://aka.ms/BCAI
+        - text: aka.ms/BCCopilotPitchDeck
+          url: https://aka.ms/bcCopilotPitchDeck
+        - text: aka.ms/BC-AI-Sizzle
+          url: https://aka.ms/BC-AI-Sizzle
+        - text: aka.ms/BCAgents
+          url: https://aka.ms/bcAgents
     - linkListType: how-to-guide
       links:
-        - text: aka.ms/BCStartCodingWithAILearn
-          url: https://aka.ms/BCStartCodingWithAILearn
+        - text: aka.ms/BCAIdevDocs
+          url: https://aka.ms/bcAIdevDocs
+        - text: aka.ms/BCStartCodingWithAI
+          url: https://aka.ms/BCStartCodingWithAI
       
   - title: Partner readiness and go to market
     linkLists:

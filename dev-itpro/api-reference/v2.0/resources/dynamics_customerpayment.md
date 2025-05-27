@@ -1,11 +1,14 @@
 ---
-title: customerPayment resource type  
+title: customerPayment resource type
 description: A customer payment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # customerPayment resource type
@@ -25,7 +28,6 @@ Represents a customer payment in [!INCLUDE[prod_short](../../../includes/prod_sh
 |[DELETE customerPayment](../api/dynamics_customerpayment_delete.md)|none|Deletes a customer payment object.|
 |[POST customerPayment](../api/dynamics_customerpayment_create.md)|customerPayment|Creates a customer payment object.|
 |[PATCH customerPayment](../api/dynamics_customerpayment_update.md)|customerPayment|Updates a customer payment object.|
-
 
 ## Navigation
 
@@ -57,7 +59,7 @@ Represents a customer payment in [!INCLUDE[prod_short](../../../includes/prod_sh
 
 ## JSON representation
 
-Here is a JSON representation of the customerPayment resource.
+Here's a JSON representation of the customerPayment resource.
 
 
 ```json
@@ -80,9 +82,9 @@ Here is a JSON representation of the customerPayment resource.
 }
 ```
 
-## See also
+## Related information
 
-[GET customerPayment](../api/dynamics_customerPayment_Get.md)  
-[DELETE customerPayment](../api/dynamics_customerPayment_Delete.md)  
-[POST customerPayment](../api/dynamics_customerPayment_Create.md)  
-[PATCH customerPayment](../api/dynamics_customerPayment_Update.md)
+[GET customerPayment](../api/dynamics_customerpayment_get.md)
+[DELETE customerPayment](../api/dynamics_customerpayment_delete.md)
+[POST customerPayment](../api/dynamics_customerpayment_create.md)
+[PATCH customerPayment](../api/dynamics_customerpayment_update.md)

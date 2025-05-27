@@ -2,11 +2,14 @@
 title: "AppSourceCop Error AS0123"
 description: "A key cannot be declared as clustered on an existing table."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
+ai-usage: ai-assisted
+ms.custom:
+ - ai-gen-docs-bap
+ - ai-seo-date: 12/19/2024
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -18,7 +21,13 @@ A key cannot be declared as clustered on an existing table.
 A key cannot be declared as clustered on an existing table.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## Remarks
+
+It's not possible for a table to have more than one clustered key, a different key can't be declared as clustered after the table has been created. When no key has been declared as clustered, the first key or the first field that can be part of a key implicitly becomes the clustered key.
+
+## Related information
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

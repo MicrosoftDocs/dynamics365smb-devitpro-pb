@@ -1,13 +1,8 @@
 ---
 title: Remote Server Administration
 description: Use Server Administration tool to connect to other computers on your network where Dynamics NAV is installed and manage Server instances on those computers.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 11c18e22-79be-49d4-b068-c5d664665824
 caps.latest.revision: 10
 ---

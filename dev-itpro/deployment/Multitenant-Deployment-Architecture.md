@@ -1,10 +1,8 @@
 ---
 title: "Multitenant Deployment Architecture"
 description: Get an overview of a multitenant deployment
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # Multitenant Deployment Architecture in Business Central
@@ -76,7 +74,7 @@ https://localhost:7048/BC/OData/Company('CRONUS-International-Ltd.')/Customer?Te
 https://mytenant.myservice.com:7048/BC/OData/Company('CRONUS-International-Ltd.')/Customer  
 ```  
   
-## See Also  
+## Related information  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Microsoft Dynamics 365 Windows PowerShell Cmdlets](/powershell/business-central/overview)   
  [How to: Mount or Dismount a Tenant on a Microsoft Dynamics Server Instance](../administration/mount-dismount-tenant.md)

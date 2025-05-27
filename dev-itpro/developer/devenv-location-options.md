@@ -1,8 +1,6 @@
 ---
 title: "LocationOptions Overview"
-ms.custom: na
 ms.date: 12/18/2023
-ms.reviewer: na
 ms.topic: overview
 author: blrobl
 description: Discover Dynamics365 Business Central Location Options - EnableHighAccuracy, Timeout, MaximumAge & more. Enhance your AL implementation.
@@ -25,6 +23,6 @@ The maximum length of time \(milliseconds\) that is allowed to pass to a locatio
 `int MaximumAge`
 The maximum length of time \(milliseconds\) of a cached location. 
 
-## See also  
+## Related information  
 [Implementing Location in AL](devenv-implement-location-al.md)  
   

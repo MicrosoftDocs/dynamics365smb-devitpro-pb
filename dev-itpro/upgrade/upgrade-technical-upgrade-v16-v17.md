@@ -1,12 +1,12 @@
 ---
 title: "Technical Upgrade from Version 16 to Version 17"
 description: Describes how to do a technical upgrade from Business Central 16 to 17
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.custom: evergreen
+ms.date: 04/18/2024
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Technical Upgrade from Version 16 to Version 17
 
@@ -302,7 +302,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
-## See Also
+## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central Compatibility matrix](upgrade-v14-v15-compatibility.md)

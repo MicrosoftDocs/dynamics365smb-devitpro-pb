@@ -3,6 +3,7 @@ author: jswymer
 ms.topic: include
 ms.date: 09/28/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 In this code example, you copy the **PK** and **S3** fields in the **Source** table for all rows where **S2** equals *A* and add them as new rows in the **Destination** table. You use `AddConstantValue` method to give the field **D2** the value *X* in the inserted rows.
 

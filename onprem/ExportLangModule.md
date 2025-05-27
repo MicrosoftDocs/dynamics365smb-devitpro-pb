@@ -1,13 +1,8 @@
 ---
 title: "ExportLangModule"
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 73d232d6-4551-4faf-9914-570ba4c5301e
 caps.latest.revision: 6
 ---

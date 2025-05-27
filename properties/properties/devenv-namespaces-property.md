@@ -1,10 +1,7 @@
 ---
 title: "Namespaces Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cd6bcd37-7b5d-4d06-a551-5569555160dc
 caps.latest.revision: 7

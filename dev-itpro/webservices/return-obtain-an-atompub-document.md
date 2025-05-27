@@ -1,10 +1,8 @@
 ---
 title: "How to: Use OData to Return-Obtain an AtomPub Document"
 description: Learn how OData V3 clients can use Atom Publishing Protocol documents to interact with Business Central data
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Using OData V3 to Return-Obtain an AtomPub Document
@@ -85,5 +83,5 @@ With a filtered data feed, you use special syntax in the URI to define a query o
     https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/Customer?$filter=City-eq-'Birmingham'  
     ```  
   
-## See Also  
+## Related information  
  [OData Web Services](OData-Web-Services.md)

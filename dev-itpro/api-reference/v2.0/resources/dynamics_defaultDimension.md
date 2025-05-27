@@ -4,16 +4,15 @@ description: A default dimensions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # defaultDimension resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a default dimensions in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -53,10 +52,11 @@ Represents a default dimensions in [!INCLUDE[prod_short](../../../includes/prod_
 |dimensionValueId|GUID|The unique ID of the dimension value.|
 |dimensionValueCode|string|The dimension value code.  |
 |postingValidation|NAV.defaultDimensionValuePostingType|Specifies how default dimensions and their values must be used. It can be " ", "Code_Mandatory", "Same_Code" or "No_Code".|
+|lastModifiedDateTime|datetime|The last datetime the default dimensions was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the defaultDimension resource.
+Here's a JSON representation of the defaultDimension resource.
 
 
 ```json
@@ -68,14 +68,13 @@ Here is a JSON representation of the defaultDimension resource.
     "dimensionCode": "string",
     "dimensionValueId": "GUID",
     "dimensionValueCode": "string",
-    "postingValidation": "NAV.defaultDimensionValuePostingType"
+    "postingValidation": "NAV.defaultDimensionValuePostingType",
+    "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET defaultDimension](../api/dynamics_defaultDimension_Get.md)  
 [DELETE defaultDimension](../api/dynamics_defaultDimension_Delete.md)  
 [POST defaultDimension](../api/dynamics_defaultDimension_Create.md)  

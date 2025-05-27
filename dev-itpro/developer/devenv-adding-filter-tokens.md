@@ -1,10 +1,8 @@
 ---
 title: Adding Custom Filter Tokens
 description: Learn how to use filter tokens to save time when you filter data in lists.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: concept-article
 author: mikebcMSFT
 ---
 
@@ -82,6 +80,6 @@ Resolving tokens is intended to be fast, simple, and reliable. When implementing
  - Avoid displaying pages, dialogs or any other form of interactive UI.
 
 
-## See Also
+## Related information
 
 [Sorting, Searching and Filtering Lists](/dynamics365/business-central/ui-enter-criteria-filters)

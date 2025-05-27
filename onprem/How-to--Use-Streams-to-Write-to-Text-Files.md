@@ -1,12 +1,7 @@
 ---
 title: "How to: Use Streams to Write to Text Files"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 8a82791e-8eb6-4cde-9fee-fc99c0885093
 caps.latest.revision: 7
 ---

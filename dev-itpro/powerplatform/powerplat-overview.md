@@ -1,11 +1,10 @@
 ---
 title: Microsoft Power Platform integration with Business Central via virtual tables
 description: Learn about integration of Power Platform with Business Central via virtual tables.
-ms.custom: na
 ms.date: 11/13/2023
 ms.reviewer: solsen
 ms.topic: overview
-author: solsen
+author: SusanneWindfeldPedersen
 ---
 
 # Microsoft Power Platform integration with Business Central via virtual tables
@@ -49,7 +48,7 @@ There are known limitations with [!INCLUDE[prod_short](../developer/includes/pro
   * Combining **And** and **Or** groups across columns.
   * Filtering on related tables.
 
-## See also
+## Related information
 
 [Overview - Integrating Business Central with Microsoft Dataverse](../developer/dataverse-integration-overview.md)  
 [Table Modeling](powerplat-entity-modeling.md)  

@@ -2,10 +2,12 @@
 title: (v1.0) Create picture
 description: (v1.0) A picture object in Dynamics 365 Business Central. 
 author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create picture (v1.0)
@@ -48,7 +50,7 @@ PATCH https://{businesscentralPrefix}/api/v1.0/companies(companyId)/items(itemId
 
 No content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [Error Codes](../dynamics_error_codes.md)    
 [Picture](../resources/dynamics_picture.md)    

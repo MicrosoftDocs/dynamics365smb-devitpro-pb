@@ -1,10 +1,8 @@
 ---
 title: Job queue
 description: Learn about how the job queue works
-ms.custom: na
 ms.date: 12/18/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 
@@ -150,7 +148,7 @@ From the [!INCLUDE[prod_short](includes/prod_short.md)] web client, you can open
 [!INCLUDE[jobqueue-and-task-scheduler-characteristics](includes/include-jobqueue-and-task-scheduler-characteristics.md)]
 
 
-## See also
+## Related information
 
 [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks)   
 [Analyzing Job Queue Telemetry](../administration/telemetry-job-queue-lifecycle-trace.md)   

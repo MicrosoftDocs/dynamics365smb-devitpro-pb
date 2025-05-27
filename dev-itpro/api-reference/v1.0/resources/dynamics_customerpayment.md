@@ -3,11 +3,12 @@ title: (v1.0) customerPayments resource type
 description: (v1.0) A customer payments object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # customerPayments resource type (v1.0)
@@ -81,7 +82,7 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
+## Related information
   
 [Get Customer Payments](../api/dynamics_customerpayment_get.md)  
 [Post Customer Payments](../api/dynamics_create_customerpayment.md)  

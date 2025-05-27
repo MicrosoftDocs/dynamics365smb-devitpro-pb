@@ -3,7 +3,6 @@ title: Training scenarios for integrating with Shopify
 description: Various integration scenarios for demonstrating workflow between Shopify and Business Central.
 ms.date: 06/21/2022
 ms.topic: article
-ms.service: dynamics365-business-central
 ms.reviewer: solsen
 author: andreipa
 ms.author: andreipa

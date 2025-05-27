@@ -1,12 +1,7 @@
 ---
 title: "How to: Remove UI Elements Using the AccessByPermission Property"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 4bb3447d-246e-43c1-a83e-10424955b497
 caps.latest.revision: 21
 ---

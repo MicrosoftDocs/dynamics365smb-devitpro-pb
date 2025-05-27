@@ -4,16 +4,15 @@ description: An item variant object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # itemVariant resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an item variant in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -27,7 +26,6 @@ Represents an item variant in [!INCLUDE[prod_short](../../../includes/prod_short
 |[DELETE itemVariant](../api/dynamics_itemvariant_delete.md)|none|Deletes a item variant object.|
 |[POST itemVariant](../api/dynamics_itemvariant_create.md)|itemVariant|Creates a item variant object.|
 |[PATCH itemVariant](../api/dynamics_itemvariant_update.md)|itemVariant|Updates a item variant object.|
-
 
 ## Navigation
 
@@ -44,10 +42,11 @@ Represents an item variant in [!INCLUDE[prod_short](../../../includes/prod_short
 |itemNumber|string|The name of the item in the item variant.|
 |code|string|The code of the item variant.|
 |description|string|Specifies the description of the item variant.|
+|lastModifiedDateTime|datetime|The last datetime the item variant was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the itemVariant resource.
+Here's a JSON representation of the itemVariant resource.
 
 
 ```json
@@ -56,14 +55,13 @@ Here is a JSON representation of the itemVariant resource.
     "itemId": "GUID",
     "itemNumber": "string",
     "code": "string",
-    "description": "string"
+    "description": "string",
+    "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET itemVariant](../api/dynamics_itemVariant_Get.md)  
 [DELETE itemVariant](../api/dynamics_itemVariant_Delete.md)  
 [POST itemVariant](../api/dynamics_itemVariant_Create.md)  

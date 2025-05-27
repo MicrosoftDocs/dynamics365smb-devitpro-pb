@@ -1,20 +1,459 @@
 ---
 title: Some Known Issues in Business Central On-premises
-description: Provides an overview of the known issues in Business Central versions
-ms.date: 03/02/2023
+description: Provides an overview of the known issues that can affect Business Central installation or upgrade.
+ms.date: 05/15/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: troubleshooting-known-issue
 ms.author: jswymer
 author: jswymer
 ms.custom: bap-template 
 ---
 
-# Some Known Issues in Business Central On-premises
+# Some known issues in Business Central on-premises
 
-This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions. These issues can impact installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prod_short.md)] on-premises.
+This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions. These issues can affect installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prod_short.md)] on-premises.
 
 > [!NOTE]
-> The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+> The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, consult [Resources for Help and Support](../help-and-support.md).
+
+## Web server components installation fails because of missing .NET Core Hosting Bundle
+
+### Problem
+
+You get a fatal error when you install the Web Server components on a machine that has the .NET 6.0 SDK or Core Runtime.
+
+### Possible cause
+
+If the .NET 6.0 SDK or Core Runtime is installed before the IIS (Internet Information Services) feature is enabled on Windows. The system doesn't register the components needed to host ASP.NET Core applications in IIS correctly. Learn more in [Troubleshoot and debug ASP.NET Core projects](/aspnet/core/test/troubleshoot).
+
+### Workaround
+
+1. Uninstall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
+1. Download and install the .NET 6.0 Hosting Bundle from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/).
+1. Reintsall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
+
+## Renamed tables and fields in subscription billing extension cause synch errors on upgrade
+
+> Applies to: Upgrade from 25.X
+
+### Problem
+
+Several tables and fields are [renamed](#renamed-tables-and-fields) in the subscription billing extension for version 26. These changes prevent you from syncing the extension to the tenant database when upgrading to version 26.0 or later. When you try to sync the extension, you get errors like the following:  
+
+`Table 8001 Contract Renewal Line :: The table 'Contract Renewal Line' cannot be located. Removing tables is not allowed unless they are temporary or are being moved by migration to another app.`
+
+`Table 8003 Price Update Template :: The field 'Contract Filter' cannot be located. Removing fields is not allowed.`
+
+### Workaround
+
+If no custom application code depends on the renamed tables and fields, force sync the extension using the `-Mode ForceSync` parameter:  
+
+```powershell
+Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "Subscription Billing" -version $NewVersion -Mode ForceSync
+```
+
+Force sync might cause data loss if custom code depends on the renamed tables and fields in the extension. To prevent data loss, refactor the custom code to match the extension's latest database schema before upgrading.
+
+### Renamed tables and fields
+
+This section lists the new names for tables and fields. *(ff)* indicates a flow field.
+
+#### Table 8051 "Service Contract Setup" → "Subscription Contract Setup"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Customer Contract Nos.                 | Cust. Sub. Contract Nos.               |
+| 3        | Vendor Contract Nos.                   | Vend. Sub. Contract Nos.               |
+| 4        | Service Object Nos.                    | Subscription Header No.                |
+| 6        | Serv. Start Date for Inv. Pick         | Sub. Line Start Date Inv. Pick         |
+
+#### Table 8004 "Contract Price Update Line" → "Sub. Contr. Price Update Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Service Object No.                     | Subscription Header No.                |
+| 3        | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 7        | Contract No.                           | Subscription Contract No.              |
+| 8        | Contract Description                   | Sub. Contract Description              |
+| 9        | Service Object Description             | Subscription Description               |
+| 10       | Service Commitment Description         | Subscription Line Description          |
+| 13       | Additional Service Amount              | Additional Amount                      |
+| 14       | Old Service Amount                     | Old Amount                             |
+| 15       | New Service Amount                     | New Amount                             |
+
+#### Table 8001 "Contract Renewal Line" → "Sub. Contract Renewal Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Service Object No.                     | Subscription Header No.                |
+| 2        | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 10       | Linked to Ser. Comm. Entry No.         | Linked to Sub. Line Entry No.          |
+| 11       | Linked to Contract No.                 | Linked to Sub. Contract No.            |
+| 12       | Linked to Contract Line No.            | Linked to Sub. Contr. Line No.         |
+| 13       | Contract No.                           | Subscription Contract No.              |
+| 14       | Contract Line No.                      | Subscription Contract Line No.         |
+| (ff) 101 | Service Object Description             | Subscription Description               |
+| (ff) 102 | Service Commitment Description         | Subscription Line Description          |
+| (ff) 103 | Service Start Date                     | Subscription Line Start Date           |
+| (ff) 104 | Service End Date                       | Subscription Line End Date             |
+| (ff) 106 | Service Amount                         | Amount                                 |
+| (ff) 108 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
+| 201      | Agreed Serv. Comm. Start Date          | Agreed Sub. Line Start Date            |
+
+#### Table 8002 "Planned Service Commitment" → "Planned Subscription Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Service Object No.                     | Subscription Header No.                |
+| 3        | Package Code                           | Subscription Package Code              |
+| 6        | Service Start Date                     | Subscription Line Start Date           |
+| 7        | Service End Date                       | Subscription Line End Date             |
+| 14       | Service Amount                         | Amount                                 |
+| 19       | Contract No.                           | Subscription Contract No.              |
+| 26       | Service Object Customer No.            | Subscription Customer No.              |
+| 27       | Contract Line No.                      | Subscription Contract Line No.         |
+
+#### Table 8019 "Contract Analysis Entry" → "Sub. Contr. Analysis Entry"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Service Object No.                     | Subscription Header No.                |
+| 3        | Package Code                           | Subscription Package Code              |
+| 6        | Service Start Date                     | Subscription Line Start Date           |
+| 7        | Service End Date                       | Subscription Line End Date             |
+| 14       | Service Amount                         | Amount                                 |
+| 19       | Contract No.                           | Subscription Contract No.              |
+| 27       | Contract Line No.                      | Subscription Contract Line No.         |
+| 33       | Service Amount (LCY)                   | Amount (LCY)                           |
+| 39       | Quantity Decimal                       | Quantity                               |
+| 1005     | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 8007     | Service Object Source Type             | Sub. Header Source Type                |
+| 8008     | Service Object Source No.              | Sub. Header Source No.                 |
+| 8010     | Service Object Description             | Subscription Description               |
+
+#### Table 8062 "Customer Contract Line" → "Cust. Sub. Contract Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Contract No.                           | Subscription Contract No.              |
+| 100      | Service Object No.                     | Subscription Header No.                |
+| 101      | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 102      | Service Object Description             | Subscription Description               |
+| 106      | Service Commitment Description         | Subscription Line Description          |
+| (ff) 109 | Service Obj. Quantity Decimal          | Service Object Quantity                |
+| (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
+
+#### Table 8065 "Vendor Contract Line" → "Vend. Sub. Contract Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Contract No.                           | Subscription Contract No.              |
+| 100      | Service Object No.                     | Subscription Header No.                |
+| 101      | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 102      | Service Object Description             | Subscription Description               |
+| 106      | Service Commitment Description         | Subscription Line Description          |
+| (ff) 109 | Service Obj. Quantity Decimal          | Service Object Quantity                |
+| (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
+
+#### Table 8066 "Customer Contract Deferral" → "Cust. Sub. Contract Deferral"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Contract No.                           | Subscription Contract No.              |
+| 5        | Contract Type                          | Subscription Contract Type             |
+| 22       | Contract Line No.                      | Subscription Contract Line No.         |
+| 23       | Service Object Description             | Subscription Description               |
+| 24       | Service Commitment Description         | Subscription Line Description          |
+
+#### Table 8072 "Vendor Contract Deferral" → "Vend. Sub. Contract Deferral"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Contract No.                           | Subscription Contract No.              |
+| 5        | Contract Type                          | Subscription Contract Type             |
+| 22       | Contract Line No.                      | Subscription Contract Line No.         |
+| 23       | Service Object Description             | Subscription Description               |
+| 24       | Service Commitment Description         | Subscription Line Description          |
+
+#### Table 8010 "Imported Customer Contract" → "Imported Cust. Sub. Contract"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Contract No.                           | Subscription Contract No.              |
+| 7        | Contract Type                          | Subscription Contract Type             |
+
+
+#### Table 8008 "Imported Service Object" → "Imported Subscription Header"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Service Object No.                     | Subscription Header No.                |
+| 100      | Service Object created                 | Subscription Header created            |
+
+#### Table 8009 "Imported Service Commitment" → "Imported Subscription Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Service Object No.                     | Subscription Header No.                |
+| 3        | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 5        | Contract No.                           | Subscription Contract No.              |
+| 6        | Contract Line No.                      | Subscription Contract Line No.         |
+| 7        | Contract Line Type                     | Sub. Contract Line Type                |
+| 8        | Package Code                           | Subscription Package Code              |
+| 11       | Service Start Date                     | Subscription Line Start Date           |
+| 12       | Service End Date                       | Subscription Line End Date             |
+| 19       | Service Amount                         | Amount                                 |
+| 28       | Service Amount (LCY)                   | Amount (LCY)                           |
+| (ff) 37  | Quantity Decimal                       | Quantity                               |
+| 100      | Service Commitment created             | Subscription Line created              |
+| 104      | Contract Line created                  | Sub. Contract Line created             |
+
+#### Table 8007 "Overdue Service Commitments" → "Overdue Subscription Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 4        | Contract No.                           | Subscription Contract No.              |
+| 5        | Contract Description                   | Sub. Contract Description              |
+| 6        | Service Commitment Description         | Subscription Line Description          |
+| 10       | Service Amount                         | Amount                                 |
+| 12       | Contract Type                          | Subscription Contract Type             |
+| 14       | Service Start Date                     | Subscription Line Start Date           |
+| 15       | Service End Date                       | Subscription Line End Date             |
+| 16       | Service Object No.                     | Subscription Header No.                |
+| 17       | Service Object Description             | Subscription Description               |
+| 19       | Quantity Decimal                       | Quantity                               |
+
+#### Table 8068 "Sales Service Commitment" → "Sales Subscription Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 20       | Service Amount                         | Amount                                 |
+| 21       | Service Comm. Start Formula            | Sub. Line Start Formula                |
+| 22       | Agreed Serv. Comm. Start Date          | Agreed Sub. Line Start Date            |
+| 31       | Package Code                           | Subscription Package Code              |
+| 50       | Service Object No.                     | Subscription Header No.                |
+| 51       | Service Commitment Entry No.           | Subscription Line Entry No.            |
+
+#### Table 8069 "Sales Service Comm. Archive" → "Sales Sub. Line Archive"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 20       | Service Amount                         | Amount                                 |
+| 21       | Service Comm. Start Formula            | Sub. Line Start Formula                |
+| 22       | Agreed Serv. Comm. Start Date          | Agreed Sub. Line Start Date            |
+
+#### Table 8057 "Service Object" → "Subscription Header"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 28       | Quantity Decimal                       | Quantity                               |
+| (ff) 95  | Archived Service Commitments           | Archived Sub. Lines exist              |
+| (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Lines exist               |
+
+#### Table 8059 "Service Commitment" → "Subscription Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Service Object No.                     | Subscription Header No.                |
+| 3        | Package Code                           | Subscription Package Code              |
+| 6        | Service Start Date                     | Subscription Line Start Date           |
+| 7        | Service End Date                       | Subscription Line End Date             |
+| 14       | Service Amount                         | Amount                                 |
+| 19       | Contract No.                           | Subscription Contract No.              |
+| (ff) 26  | Service Object Customer No.            | Sub. Header Customer No.               |
+| 27       | Contract Line No.                      | Subscription Contract Line No.         |
+| 33       | Service Amount (LCY)                   | Amount (LCY)                           |
+| (ff) 39  | Quantity Decimal                       | Quantity                               |
+| (ff) 200 | Planned Serv. Comm. exists             | Planned Sub. Line exists               |
+| (ff) 8010| Service Object Description             | Subscription Description               |
+
+#### Table 8073: Service Commitment Archive → Subscription Line Archive
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 2        | Service Object No.                     | Subscription Header No.                |
+| 5        | Package Code                           | Subscription Package Code              |
+| 8        | Service Start Date                     | Subscription Line Start Date           |
+| 9        | Service End Date                       | Subscription Line End Date             |
+| 16       | Service Amount                         | Amount                                 |
+| 21       | Contract No.                           | Subscription Contract No.              |
+| (ff) 28  | Service Object Customer No.            | Sub. Header Customer No.               |
+| 29       | Contract Line No.                      | Subscription Contract Line No.         |
+| 35       | Service Amount (LCY)                   | Amount (LCY)                           |
+| 41       | Serial No. (Service Object)            | Serial No. (Sub. Header)               |
+| 42       | Quantity Decimal (Service Ob.)         | Quantity (Sub. Header)                 |
+| 96       | Variant Code (Service Object)          | Variant Code (Sub. Header)             |
+
+#### Table "Service Comm. Package Line" → "Subscription Package Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 1        | Package Code                           | Subscription Package Code              |
+| 12       | Service Comm. Start Formula            | Sub. Line Start Formula                |
+
+#### Table 8016 "Usage Data Subscription" → "Usage Data Supp. Subscription"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 6        | Service Object No.                     | Subscription Header No.                |
+| 7        | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 21       | Connect to Service Object No.          | Connect to Sub. Header No.             |
+| 22       | Connect to SO Method                   | Connect to Sub. Header Method          |
+| 23       | Connect to SO at Date                  | Connect to Sub. Header at Date         |
+
+### Only fields renamed
+
+#### Table 8070 "Subscription Billing Cue"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| (ff) 2   | Customer Contract Invoices             | Cust. Sub. Contr. Invoices             |
+| (ff) 3   | Customer Contract Credit Memos         | Cust. Sub. Contr. Credit Memos         |
+| (ff) 4   | Vendor Contract Invoices               | Vend. Sub. Contr. Invoices             |
+| (ff) 5   | Vendor Contract Credit Memos           | Vend. Contr. Credit Memos              |
+| (ff) 6   | Serv. Comm. wo Cust. Contract          | Sub. L. wo Cust. Sub. Contract         |
+| (ff) 7   | Serv. Comm. wo Vend. Contract          | Sub. L. wo Vend. Sub. Contract         |
+
+#### Table 8061 "Billing Line"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 20       | Contract No.                           | Subscription Contract No.              |
+| 21       | Contract Line No.                      | Subscription Contract Line No.         |
+| 30       | Service Object No.                     | Subscription Header No.                |
+| 31       | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| (ff) 32  | Service Object Description             | Subscription Description               |
+| 33       | Service Commitment Description         | Subscription Line Description          |
+| 34       | Service Start Date                     | Subscription Line Start Date           |
+| 35       | Service End Date                       | Subscription Line End Date             |
+| 39       | Service Obj. Quantity Decimal          | Service Object Quantity                |
+| 52       | Service Amount                         | Amount                                 |
+
+#### Table 8064 "Billing Line Archive"
+
+| Field no, | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 20       | Contract No.                           | Subscription Contract No.              |
+| 21       | Contract Line No.                      | Subscription Contract Line No.         |
+| 30       | Service Object No.                     | Subscription Header No.                |
+| 31       | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| (ff) 32  | Service Object Description             | Subscription Description               |
+| 33       | Service Commitment Description         | Subscription Line Description           |
+| 34       | Service Start Date                     | Subscription Line Start Date           |
+| 35       | Service End Date                       | Subscription Line End Date             |
+| 39       | Service Obj. Quantity Decimal          | Service Object Quantity                |
+| 52       | Service Amount                         | Amount                                 |
+
+#### Table 8003 "Price Update Template"
+
+| Field no, | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 4        | Contract Filter                        | Subscription Contract Filter           |
+| 5        | Service Commitment Filter              | Subscription Line Filter               |
+| 6        | Service Object Filter                  | Subscription Filter                    |
+
+#### Table 8017 "Generic Import Settings"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 4        | Create Subscriptions                   | Create Supplier Subscriptions          |
+
+#### Table 8006 "Usage Data Billing"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 5        | Contract No.                           | Subscription Contract No.              |
+| 6        | Contract Line No.                      | Subscription Contract Line No.         |
+| 7        | Service Object No.                     | Subscription Header No.                |
+| (ff) 8   | Service Object Description             | Subscription Description               |
+| 9        | Service Commitment Entry No.           | Subscription Line Entry No.            |
+| 10       | Service Commitment Description         | Subscription Line Description           |
+
+#### Table 8018 "Usage Data Generic Import"
+
+| Field no. | Original field name                     | New field name                     |
+|----------|-----------------------------------------|----------------------------------------|
+| 6        | Service Object No.                     | Subscription Header No.                |
+
+#### Only tables renamed
+
+| Original table name                     | New table name                     |
+|-----------------------------------------|----------------------------------------|
+| Contract Type                           | Subscription Contract Type             |
+| Customer Contract                       | Customer Subscription Contract         |
+| Vendor Contract                         | Vendor Subscription Contract           |
+| Item Serv. Commitment Package           | Item Subscription Package              |
+| Item Templ. Serv. Comm. Pack.           | Item Templ. Sub. Package               |
+| Service Commitment Template             | Sub. Package Line Template             |
+| Service Commitment Package              | Subscription Package                   |
+| Usage Data Customer                     | Usage Data Supp. Customer              |
+
+
+
+## Number series creation doesn't work in Business Central 25.2 on-premises
+
+> Applies to: 25.2
+
+### Problem
+
+If you try to create a number series, you get the following error:
+
+`The filter on Series Code was altered by an event subscriber. This is a programming error. Please contact your partner to resolve this issue.`
+
+### Workaround
+
+Upgrade to 25.3 or later.
+
+## Different installation path in 25.2
+
+> Applies to: 25.2
+
+25.2 includes internal database schema changes with the following consequences:
+
+- New platform version 25.2 instead of 25.0.
+- Different installation path than 25.0 and 25.1. Instead of using folder '250', components are installed in folder '252', for example: `C:\Program Files\Microsoft Dynamics 365 Business Central\252`.
+<!-- - Platform-only upgrade isn't supported. You must do a full platform and application upgrade.-->
+
+Future updates like 25.3 and 25.4 will also use platform number '25.2' and installation folder '252'.
+
+## Installation fails because PowerShell 7 is already installed
+
+> Applies to: Installation of version 24.0 or 24.1
+
+### Problem
+
+When you try to install the [!INCLUDE[server](../developer/includes/server.md)] using the setup.exe program of version 24.1, the installation fails with the following error:
+
+```
+Microsoft Dynamics 365 Business Central Build NNNNN
+Error Report
+
+Setup Components
+The component was rolled back.
+
+PowerShell 7
+PowerShell 7 for the commandlets
+Fatal error during installation.
+```
+
+In the installation log or Windows Event Viewer, you get an error message similar to `A newer version of PowerShell is already installed`.  
+
+### Possible cause
+
+Windows PowerShell 7.4.2 or later is already installed on the [!INCLUDE[server](../developer/includes/server.md)] machine. The [!INCLUDE[prod short](../developer/includes/prod_short.md)] setup.exe will automatically install PowerShell 7.4.2, but it should only do so if the machine doesn't have PowerShell installed or it has a version earlier than 7.4.2. In version 24.1, instead of skipping the PowerShell installation when it should, the setup.exe tries to install PowerShell but fails.
+
+> [!TIP]
+> To find out what PowerShell version is running on your machine, open PowerShell and enter the following prompt:
+>
+> ```powershell
+> PWSH.exe
+> ```
+
+### Workaround
+
+Uninstall PowerShell 7 from the [!INCLUDE[server](../developer/includes/server.md)] machine, then run setup.exe again.
+
+[Learn how to uninstall an app or program in Windows.](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98)
 
 ## Error importing control add-in files from the client
 
@@ -22,7 +461,7 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 ### Problem
 
-When you try to import an a control add-in file client from the **Control Add-ins** page in the client by using the **Control Add-in Resource** > **Import**, you get the follwoing error:
+When you try to import a control add-in file client from the **Control Add-ins** page in the client by using the **Control Add-in Resource** > **Import**, you get the following error:
 
 ```
 Can't open file`
@@ -30,14 +469,14 @@ Can't open file`
 [URL] can't open files in this folder because it cotains system files`
 ```
 
-`[URL]` is the URL of your Business Central web client, for example, `http://localhost:8080`.
+`[URL]` is the URL of your [!INCLUDE[prod short](../developer/includes/prod_short.md)] web client, for example, `http://localhost:8080`.
 
 ### Workaround
 
 You have two options to work around this issue:
 
-- Use the Set-NAVAddin cmdlet of the Business Central Administration Shell as described in [Upgrade control add-ins](upgrading-cumulative-update-v23.md#controladdins). 
-- If you want to use the Business Central web client, then copy the files to another folder on your PC, like Documents or Downloads, and try again.
+- Use the Set-NAVAddin cmdlet of the [!INCLUDE[prod short](../developer/includes/prod_short.md)] Administration Shell as described in [Upgrade control add-ins](upgrading-cumulative-update-v23.md#controladdins). 
+- If you want to use the [!INCLUDE[prod short](../developer/includes/prod_short.md)] web client, then copy the files to another folder on your PC, like Documents or Downloads, and try again.
 
 ## Removed table fields in the Czech (CZ) base application cause sync errors
 
@@ -45,7 +484,7 @@ You have two options to work around this issue:
 
 ### Problem
 
-As part of the delocalization process of the Czech (CZ) version of Business Central, Microsoft moved Czech-specific functionality into separate applications. As a result, the following fields have been removed and the primary keys modified in the Czech (CZ) base application, version 23:
+As part of the delocalization process of the Czech (CZ) version of [!INCLUDE[prod short](../developer/includes/prod_short.md)], Microsoft moved Czech-specific functionality into separate applications. As a result, the following fields have been removed and the primary keys modified in the Czech (CZ) base application, version 23:
 
 |Table|Field|
 |-|-|
@@ -87,7 +526,7 @@ Once you completed either of these tasks, upgrade to version 23 as usual. Don't 
 
 ### Problem
 
-When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] components using setup.exe on a Azure VM running Windows Server, the following error occurs:
+When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] components using setup.exe on an Azure VM running Windows Server, the following error occurs:
 
 **Web Server Components**
 
@@ -95,7 +534,7 @@ When you try to install the [!INCLUDE[webserver](../developer/includes/webserver
 
 ### Possible cause
 
-This error will typically occur on a VM where the [!INCLUDE[webserver](../developer/includes/webserver.md)] hasn't been installed before. It happens because setup is trying to install Windows Server Hosting and Microsoft .NET Core Runtime on the VM but they're already installed, causing a conflict. 
+This error typically occurs on a VM where the [!INCLUDE[webserver](../developer/includes/webserver.md)] hasn't been installed before. It happens because setup is trying to install Windows Server Hosting and Microsoft .NET Core Runtime on the VM but they're already installed, causing a conflict. 
 
 ### Workaround
 
@@ -109,7 +548,7 @@ Uninstall Windows Server Hosting and Microsoft .NET Core Runtime from the VM, th
 
 ### Problem
 
-If the [!INCLUDE[webserver](../developer/includes/webserver.md)] is configured for Windows authentication, users may not be able to sign in. In the event viewer, you'll see the following exception:
+If the [!INCLUDE[webserver](../developer/includes/webserver.md)] is configured for Windows authentication, users might not be able to sign in. In the event viewer, you see the following exception:
 
 ```
 System.PlatformNotSupportedException: Operation is not supported on this platform.
@@ -122,7 +561,7 @@ System.PlatformNotSupportedException: Operation is not supported on this platfor
 Set the `UnknownSpnHint` setting in the navsettings.json file of [!INCLUDE[webserver](../developer/includes/webserver.md)] by following the guidelines at in [Configuring Business Central Web Server instance](../administration/configure-web-server.md#spn).
 
 
-## <a name="temptables"></a>Tables changed to temporary may prevent synchronizing new base application version
+## <a name="temptables"></a>Tables changed to temporary might prevent synchronizing new base application version
 
 > Applies to: Upgrade from version 17.X or earlier to any later version
 
@@ -145,15 +584,15 @@ Starting in version 18, the following base application tables are now temporary 
 
 ### Impact
 
-With this change, these tables must be empty to complete the upgrade. If a table isn't empty, you can't synchronize the new version of the base application. In this case, you'll get an error stating that the table cannot be deleted from the database because it contains data, for example:
+With this change, these tables must be empty to complete the upgrade. If a table isn't empty, you can't synchronize the new version of the base application. In this case, you get an error stating that the table can't be deleted from the database because it contains data, for example:
 
 `Cannot delete the Document Entry table from the database because it contains data.`
 
-So if there are records in these tables, or the application includes custom code that stores non-temporary records to these tables, you'll have to make some changes before you can run the upgrade.
+So if there are records in these tables, or the application includes custom code that stores nontemporary records to these tables, you have to make some changes before you can run the upgrade.
 
 ### Workaround 
 
-Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code that's stores the non-temporary records in these base application tables to use other tables.
+Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code that's stores the nontemporary records in these base application tables to use other tables.
 
 ## NavUserPassword authentication doesn't work after upgrade to version 18
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/398164 -->
@@ -166,17 +605,17 @@ When you upgrade to version 18 from an earlier major version, authentication tha
 
 ### Impact
 
-When users try to sign in to Business Central, they'll get an error, similar to the following message:
+When users try to sign in to [!INCLUDE[prod short](../developer/includes/prod_short.md)], they get an error, similar to the following message:
 
 `The specified user name or password is not correct, or you do not have a valid user account in Dynamics 365 Business Central`
 
-In event viewer, you'll see the following error:
+In event viewer, you see the following error:
 
 `Your user name <name> or password is incorrect, or you do not have a valid account in Dynamics 365 Business Central.`
 
 ### <a name="legacy"></a>Workaround
 
-To workaround this issue, activate the `EnableLegacyIterationCount` feature switch by completing these steps.
+To work around this issue, activate the `EnableLegacyIterationCount` feature switch by completing these steps.
 
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
@@ -229,7 +668,7 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
 
 ### Problem
 
-When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a heavy authentication load, for example from multiple and repeated web service calls, the extra time may be significant.
+When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a heavy authentication load, for example from multiple and repeated web service calls, the extra time might be significant.
 
 ### Workaround
 
@@ -395,7 +834,7 @@ For each affected table object, do the following steps:
 The table migration feature fails to transfer data from a table object to a table extension object that introduces an enumeration.
 
 > [!NOTE]
-> The table migration feature was introduced in version 15.3. For more information, see [Migrating Tables and Fields Between Extensions](../developer/devenv-migrate-table-fields.md).
+> The table migration feature was introduced in version 15.3. Learn more in [Migrating Tables and Fields Between Extensions](../developer/devenv-migrate-table-fields.md).
 
 ### Impact
 
@@ -404,7 +843,7 @@ You'll experience this issue in the following scenarios:
 - Upgrading a customized version 14 solution to version 15 or 16
 - Migrating data from one extension to another.
 
-The issue occurs when synchronizing extensions. You'll get an error similar to one of the following messages:
+The issue occurs when synchronizing extensions. You get an error similar to one of the following messages:
 
 `Sync-NAVApp : The metadata object Enum <ID> was not found.`
 
@@ -442,13 +881,13 @@ Version 16.5 includes the wrong .NET 4.5 assemblies for connecting to external s
 
 ### Impact
 
-In the [!INCLUDE[prod short](../developer/includes/prod_short.md)] client, you can set up external service connections from the **Service Connections** page. When you try to set up a connection, it will fail because [!INCLUDE[prod short](../developer/includes/prod_short.md)] can't obtain an access token for connecting to the service.
+In the [!INCLUDE[prod short](../developer/includes/prod_short.md)] client, you can set up external service connections from the **Service Connections** page. When you try to set up a connection, it fails because [!INCLUDE[prod short](../developer/includes/prod_short.md)] can't obtain an access token for connecting to the service.
 
-In the client, you'll get an error similar to the following message:
+In the client, you get an error similar to the following message:
 
 `Failed to acquire authorization token for <service>.`
 
-In the event log, you'll see an error similar to the following message:
+In the event log, you see an error similar to the following message:
 
 `Could not load file or assembly 'Microsoft.Identity.Client, Version=4.14.0, Culture=neutral, PublicToken=0a613f4dd989e8e' or one of its dependencies. The located assembly's manifest location does not match the assembly reference.`
 
@@ -481,7 +920,7 @@ The installation media (DVD) is missing required HTML files for the Help Server.
 
 ### Impact
 
-The Help Server installation will fail.
+The Help Server installation fails.
 
 ### Workaround
 
@@ -560,6 +999,6 @@ Alternatively, you could grant the required Namespace Reservation permissions ma
 netsh http add urlacl url=http://+:<PORT NUMBER>/<BC SERVICE NAME>/ user="<BC SERVICE ACCOUNT>"
 ```
 
-## See Also
+## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  

@@ -1,12 +1,11 @@
 ---
-title: "Style Property"
+title: "Style property"
 description: "Sets a value that determines how text in a field on a page is formatted."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,7 +19,7 @@ Sets a value that determines how text in a field on a page is formatted. For fie
 -   Page Label
 -   Page Field
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -48,14 +47,15 @@ The **Style** property works together with the [StyleExpr Property](devenv-style
 
 By default, the **Style** property is not set.  
 
-This property is not supported if one of the following data types is used for the SourceExpr of the field:  
-
-- Code  
-- Boolean  
-- Binary  
-- BLOB  
-- GUID  
-- RecordID  
+> [!NOTE]
+> This property isn't supported if one of the following data types is used for the SourceExpr of the field:  
+>
+> - Code  
+> - Boolean  
+> - Binary  
+> - BLOB  
+> - GUID  
+> - RecordID  
 
 On pages, you use the **Style** property for group, part, field, and action controls. You can change the formatting of a control either statically by setting the [StyleExpr Property](devenv-styleexpr-property.md) to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”.  
 
@@ -71,6 +71,6 @@ field("Code"; Code)
     }
 ```
 
-## See Also  
+## Related information  
 <!-- [How to: Style Field Text on a Page](../devenv-How-to-Style-Field-Text-on-a-Page.md)   -->
 [Properties](devenv-properties.md)

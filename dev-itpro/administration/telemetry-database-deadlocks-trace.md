@@ -3,11 +3,12 @@ title: Database Deadlock Lock Trace Telemetry
 description: Learn about the database deadlock telemetry in Business Central  
 author: jswymer
 
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 04/01/2021
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing Database Deadlock Telemetry
@@ -67,7 +68,7 @@ Occurs when a deadlock occurs.
 |sqlStatement|Specifies the SQL statement that was the victim of in the deadlock. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Database Lock Timeout Telemetry](telemetry-database-locks-trace.md)  

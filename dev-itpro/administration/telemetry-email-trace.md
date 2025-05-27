@@ -2,7 +2,7 @@
 title: Analyze email trace telemetry 
 description: Learn about the email telemetry in Business Central  
 author: kennienp
-ms.topic: conceptual
+ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 01/02/2024
 ms.reviewer: jswymer
@@ -251,7 +251,7 @@ traces
 
 [!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)    
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)    

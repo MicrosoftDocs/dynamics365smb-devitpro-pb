@@ -6,8 +6,9 @@ author: SusanneWindfeldPedersen
 
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Update vendor defaultDimensions
@@ -31,10 +32,10 @@ PATCH businesscentralPrefix/companies({companyId})/vendors({vendorId})/defaultDi
 |Content-Type  |application/json         |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 > [!NOTE]  
-> You cannot modify parentId, dimensionId or dimensionCode fields, because these are key fields, and rename is not allowed in Default Dimension record.
+> You can't modify parentId, dimensionId or dimensionCode fields, because these are key fields, and rename is not allowed in Default Dimension record.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated default dimensions for the **vendor** in the response body. 
@@ -43,7 +44,7 @@ If successful, this method returns a `200 OK` response code and an updated defau
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({companyId})/vendors({vendorId})/defaultDimensions({vendorId},{dimensionId})
@@ -60,7 +61,7 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies({companyId})/vendors({v
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -83,7 +84,7 @@ Here is an example of the response.
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Vendors](../resources/dynamics_vendor.md)  

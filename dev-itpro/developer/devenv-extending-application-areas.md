@@ -1,16 +1,14 @@
 ---
-title: "Extending Application Areas"
-description: "Document the extension of Application Areas."
+title: Extending Application Areas
+description: Learn about extending application areas in Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.reviewer: na
-ms.topic: conceptual
-ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
+ms.topic: concept-article
 ms.author: solsen
-ms.date: 04/01/2021
+ms.date: 01/10/2025
+ms.reviewer: solsen
 ---
 
-# Extending Application Areas
+# Extending application areas
 
 Application areas represent a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences.
 
@@ -32,7 +30,7 @@ In this example you will:
 The following example extends the **Customer List** page. The field **ExampleField** is added and it's followed by a series of properties. The **ApplicationArea** property sets the application areas that apply to the control and in this code, **ExampleAppArea** is assigned to it.
 
 > [!IMPORTANT]
-> If your extension fails to use **ApplicationArea** in any controls or actions, they will not be visible when you use an experience tier.
+> If your extension fails to use **ApplicationArea** in any controls or actions, they won't be visible when you use an experience tier.
 
 The **OnOpenPage** trigger displays the message only if **ApplicationArea** is enabled.  
 
@@ -67,7 +65,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 
 To add an application area, the **Application Area Setup** table must be extended. A new boolean field is added and the name of this field is used in the attribute that you want to be tagged with this application area. This particular case, in the code example, is an exception, because space is used inside it. Usually, spaces are omitted in the application area attribute. At this point, the extension has an application area but it still needs to be enabled.
 
-> [!IMPORTANT]    
+> [!IMPORTANT]
 > An application area tag must have the format *name*, where *name* is the application area. The name can be any combination of letters (Aa-Zz) and numbers (0-9) without spaces.
 
 ```AL
@@ -108,7 +106,7 @@ codeunit 50101 "Install Example Extension"
 The registration of the application area inside an experience tier is made inside the **OnGetEssentialExperienceAppArea**. There are different versions of this event, one for each experience tier and in this case, Essential is chosen. This makes the extension visible inside the Essential experience and the event exposes an **Application Area Setup** temporary record; **TempApplicationAreaSetup**, to the **Application Area Setup** table. At this point, to enable the application area, this must be set to true.
 
 > [!NOTE]  
-> This event is important because it is called every single time an experience tier is reset, which can happen because of many reasons. 
+> This event is important because it's called every single time an experience tier is reset, which can happen because of many reasons. 
 
 Another thing that is possible inside these methods is to modify the experience tier. You can also modify other application areas, such as creating an extension that extends the Fixed Assets functionality. 
 By subscribing to **OnValidateApplicationAreas**, the application area inside an experience tier is validated. **OnValidateApplicationAreas** is guaranteed to be executed after the events in the **OnGet...ExperienceAppArea** family. The validation is necessary in the presence of extensions concurrently manipulating the same application areas.
@@ -158,10 +156,10 @@ codeunit 50100 "Enable Example Extension"
 
 If you're familiar with [!INCLUDE[navnow_md](includes/navnow_md.md)] you'll have noticed that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] isn't exposing all the controls/actions that you find in [!INCLUDE[navnow_md](includes/navnow_md.md)]. These controls have been hidden so far by using the application area **Advanced**, which isn't assigned to any experiences. For more information, see [FAQ](/dynamics365/business-central/across-faq).
 
-Most of these fields become available/visible soon, but until then you'll have to create an extension to get (almost) the same experience as you have in [!INCLUDE[navnow_md](includes/navnow_md.md)]. See the [example](#to-enable-advanced-in-an-extension) below.
+Most of these fields become available/visible soon, but until then you have to create an extension to get (almost) the same experience as you have in [!INCLUDE[navnow_md](includes/navnow_md.md)]. See the [example](#to-enable-advanced-in-an-extension) below.
 
 > [!IMPORTANT]  
-> Adding the application area **Advanced** to the experience will mean that you lose some of the simplification made to pages. For example, you will see more actions duplicated on many pages, compared to [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] where the experience is intended to be simpler than in [!INCLUDE[navnow_md](includes/navnow_md.md)]. You must also consider that we plan to re-tag the **Advanced** actions/controls and add them to the **Essentials** and/or **Premium** experiences in a future release.
+> Adding the application area **Advanced** to the experience means that you lose some of the simplification made to pages. For example, you see more actions duplicated on many pages, compared to [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)] where the experience is intended to be simpler than in [!INCLUDE[navnow_md](includes/navnow_md.md)]. You must also consider that we plan to re-tag the **Advanced** actions/controls and add them to the **Essentials** and/or **Premium** experiences in a future release.
 
 ### To enable Advanced in an extension
 
@@ -198,7 +196,7 @@ codeunit 50102 EnableAdvancedApplicationArea
 
 If you decide to code application areas as an extension, there are some aspects that must be considered. Application areas enable hiding entire business scenarios and you can have the same code base, which makes it possible to quickly modify the UI for different business scenarios or audiences. However, tagging errors as missing tags or incorrect tags occur and every single control must be tagged. 
 
-## See Also
+## Related information
 
 [Module System Application](/dynamics365/business-central/application/system-application/module/system-application/)    
 [Module Base Application](/dynamics365/business-central/application/base-application/module/base-application)    

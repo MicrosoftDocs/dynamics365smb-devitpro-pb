@@ -2,10 +2,9 @@
 title: "Privacy Policy and Terms of Use"
 description: "Guidelines on privacy policy and terms of use (license agreement) links"
 author: a-emniel
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Privacy policy and license agreement

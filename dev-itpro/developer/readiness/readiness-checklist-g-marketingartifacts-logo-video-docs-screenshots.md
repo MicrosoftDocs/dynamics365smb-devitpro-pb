@@ -2,10 +2,9 @@
 title: "Marketing Artifacts"
 description: "Guidelines to marketing artifacts including logos, screenshots, documents and videos"
 author: a-emniel
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Supporting documents, offer logo, screenshots, and video

@@ -1,10 +1,7 @@
 ---
 title: "LinkFields Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9171051b-358a-44ce-a8dc-1ebc6f74ef44
 caps.latest.revision: 9

@@ -4,7 +4,7 @@ description: This article provides recommendations to help you define your cloud
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/23/2024
 ms.custom: bap-template 
 ---
@@ -25,7 +25,9 @@ You can choose to migrate data for all companies or only specific companies. It'
 [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]
 
 > [!NOTE]
-> Per-database tables are always migrated, no matter which companies are selected for a migration run.
+> - Per-database tables are always migrated, no matter which companies are selected for a migration run.
+>
+> - We advise that you move all companies to the tenant before going live. Moving companies into a live tenant can lead to data loss in the live companies. [Learn more about migrating companies to live tenants](migrate-companies-live-tenant.md)].
 
 ### Extension data
 
@@ -65,6 +67,7 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 
 1. [Enable change tracking](/sql/relational-databases/track-changes/enable-and-disable-change-tracking-sql-server) on the on-premises production database for the expected number of days between the first backup for replication and the next time you'll back up and replicate. A minimum of three days is enforced. The number of days for which change tracking is enabled can't be changed later without resetting change tracking altogether.
 
+
    > [!NOTE]
    > - Long retention periods for change tracking data might cause database resource starvation when high volumes of data are changed on the database, which may lead to reduced database performance and/or loss of the change tracking data. Pick a change tracking period that strikes a balance between migration strategy needs and available resources on the on-premises database.
    > - Don't enable change tracking if you'll be running data upgrade on-premises, because it won't work.
@@ -87,7 +90,7 @@ It's important to have a solid migration strategy in place to ensure a smooth tr
 9. [Complete the migration](migration-finish.md) and go live on the cloud environment.
 
 > [!IMPORTANT]
-> Ensure the on-premises and cloud environments remain on the same Business Central version they were on when the cloud migration was set up. Do not update the on-premises environment and [reschedule updates](update-rollout-timeline.md#schedule-updates) to the cloud environment to a date after the cloud migration is completed.
+> Ensure the on-premises and cloud environments remain on the same Business Central version they were on when the cloud migration was set up. Do not update the on-premises environment and [reschedule updates](update-rollout-timeline.md) to the cloud environment to a date after the cloud migration is completed.
 >
 > Avoid modifying the environment after the replication has been enabled. If you need to install or uninstall extensions or delete companies, disable the cloud migration, make the changes, then enable it again.
 

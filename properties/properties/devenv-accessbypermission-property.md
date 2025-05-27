@@ -1,10 +1,6 @@
 ---
 title: "AccessByPermission Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 72602cd4-853f-4bca-8fd9-b33c206a593b
 caps.latest.revision: 12

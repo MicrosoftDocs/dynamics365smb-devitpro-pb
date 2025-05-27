@@ -1,8 +1,6 @@
 ---
 title: "SubType Property (BLOB)"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -32,7 +30,7 @@ Sets additional information about what will be contained in the field.
 SubType = Bitmap;
 ```
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [SubType Property (Codeunit)](devenv-subtype-codeunit-property.md)   

@@ -3,11 +3,12 @@ title: (v1.0) Create salesQuotes
 description: (v1.0) Creates a sales quote object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create salesQuotes (v1.0)
@@ -51,7 +52,7 @@ Content-type: application/json
   "paymentTermsId": "3bb5b4b6-ea4c-43ca-ba1c-3b69e29a6668"
 }
 ```
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Sales Quote](../resources/dynamics_salesquote.md)  

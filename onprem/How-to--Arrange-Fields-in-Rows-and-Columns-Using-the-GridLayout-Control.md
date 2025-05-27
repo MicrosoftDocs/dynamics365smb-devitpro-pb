@@ -1,13 +1,8 @@
 ---
 title: Arrange Fields Using GridLayout Control
 description: Fields in a FastTab are arranged automatically. Use GridLayout control to manually set up rows, columns, span fields across, and show or hide captions.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: b094eaa8-73a7-43f1-aaa2-a2735f1ddd09
 caps.latest.revision: 35
 ---

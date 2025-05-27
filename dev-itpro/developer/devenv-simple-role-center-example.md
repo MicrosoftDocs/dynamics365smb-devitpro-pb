@@ -2,10 +2,9 @@
 title: Simple Role Center example
 description: "Provides AL code for a simple role center"
 author: blrobl
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: solsen
-ms.topic: conceptual
+ms.reviewer: jswymer
+ms.topic: article
 ms.author: brobledodiaz
 ---
 
@@ -147,7 +146,7 @@ profile MyProfile
 }
 ```
 
-## See also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  

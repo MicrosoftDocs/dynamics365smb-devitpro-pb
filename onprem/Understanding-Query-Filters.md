@@ -1,13 +1,8 @@
 ---
 title: Filtering From Query Designer and C/AL Code
 description: Specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table associated with the query.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: e1f48251-4acd-4a4f-b017-8c6579eae7b8
 caps.latest.revision: 32
 ---

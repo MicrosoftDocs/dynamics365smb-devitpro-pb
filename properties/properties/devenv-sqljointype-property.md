@@ -1,10 +1,8 @@
 ---
 title: "SQLJoinType Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 87e3c92e-3651-45cb-9741-05ca8cde85bd
 caps.latest.revision: 7

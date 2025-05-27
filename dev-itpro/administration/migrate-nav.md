@@ -4,9 +4,9 @@ description: Migrate Dynamics NAV to Business Central online
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: upgrade-and-migration-article
 ms.collection: get-started
-ms.date: 10/05/2023
+ms.date: 05/19/2025
 ms.custom: bap-template
 ---
 

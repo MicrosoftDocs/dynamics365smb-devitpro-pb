@@ -1,10 +1,7 @@
 ---
 title: "PromotedOnly Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 516cecd6-1623-4c0a-9191-f88e626964d1
 caps.latest.revision: 3

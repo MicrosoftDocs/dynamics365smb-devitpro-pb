@@ -2,7 +2,7 @@
 title: Outgoing Web Service Request Trace
 description: Learn about the outgoing web service request telemetry in Business Central  
 author: kennienp
-ms.topic: conceptual
+ms.topic: concept-article
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 06/01/2023
 ms.author: kepontop
@@ -34,7 +34,7 @@ The following table explains the custom dimensions included in a **Web Services 
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Microsoft Entra tenant ID used for Microsoft Entra authentication. For on-premises, if you aren't using Microsoft Entra authentication, this value is **common**. |
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
 |alAuthenticationMethod|Specifies the user authentication used by the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service . Values include: Windows, UserName, NavUserPassword, AccessControlService. For more information about the authentication types, see [Authentication and Credential Types](users-credential-types.md).|
 |alHttpTimeout|Specifies the timeout defined for the request. The timeout is the time to wait before a request gets canceled. The value has the format hh:mm:ss. <br /><br />The timeout is defined either by the [NavHttpClientMaxTimeout](configure-server-instance.md#Development) setting on the [!INCLUDE[server](../developer/includes/server.md)] instance or by a [TimeOut method](../developer/methods-auto/httpclient/httpclient-timeout-method.md) call in extension code. The TimeOut method call takes precedence. |
 |alObjectId|Specifies the ID of the AL object that made the request.|
@@ -47,15 +47,15 @@ The following table explains the custom dimensions included in a **Web Services 
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |endpoint|Specifies the endpoint for the request. The endpoint is cleaned to include only the base URI. |
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**RT0019**|
 |extensionId|Specifies the appID of the extension that made the request.|
 |extensionName|Specifies the name of the extension that made the request.|
 |extensionPublisher|Specifies the publisher of the extension that made the request.|
 |extensionVersion|Specifies the version of the extension that made the request.|
 |httpHeaders|Specifies the http headers set in the request. </br></br>Introduced in version 17.2.|
-|httpMethod|Specifies the HTTP method used in the outgoing request. Values include: POST, GET, PUT, PATCH, or DELETE. |
+|httpMethod| [!INCLUDE[httpMethod](../includes/include-telemetry-dimension-http-method.md)] |
 |httpReturnCode | **Deprecated in version 17.2. Use the dimension httpStatusCode instead.**  Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**404**<br />Not found. The given endpoint wasn't valid.</li></li></ul>|
 |httpStatusCode |Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**404**<br />Not found. The given endpoint wasn't valid.</li></li></ul>In the case of a failure, the reason for the underlying issue could be network connectivity, DNS failure, server certificate validation or timeout. The Business Central Server does not know which if these it might be. |
 |serverExecutionTime|Specifies the amount of time it took the server to complete the request, including the time to open the company. The time has the format hh:mm:ss.sssssss.|
@@ -117,7 +117,7 @@ traces
 [!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
 
-## See also
+## Related information
 
 [HttpClient data type](../developer/methods-auto/httpclient/httpclient-data-type.md)  
 [Telemetry overview](telemetry-overview.md)  

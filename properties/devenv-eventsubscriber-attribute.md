@@ -1,11 +1,7 @@
 ---
 title: "EventSubscriber Attribute"
 description: "The EventSubscriber attribute in AL for Business Central"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -65,7 +61,7 @@ This example publishes an integration type event by using the OnAddressLineChang
 codeunit 50105 MyEventPublisher
 {
     [IntegrationEvent(false, false)]
-    procedure OnAddressLineChanged(line : Text[100]);
+    procedure OnAddressLineChanged(line : Text[100])
     begin
     end;
 }

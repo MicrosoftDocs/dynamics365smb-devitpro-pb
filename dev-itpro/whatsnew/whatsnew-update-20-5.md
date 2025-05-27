@@ -2,11 +2,11 @@
 title: "Update 20.5 for Microsoft Dynamics 365 Business Central 2022 Release Wave 1"
 description: Get an overview of new and changed capabilities in the 20.5 update of Business Central online, which is part of 2022 release wave 1.
 ms.author: jswymer
-ms.custom: na
-ms.date: 09/02/2022
-ms.reviewer: solsen
-ms.topic: conceptual
-author: EmmaNielsson
+ms.date: 04/01/2024
+ms.reviewer: jswymer
+ms.topic: article
+author: jswymer
+ms.custom: evergreen
 ---
 
 # Update 20.5 for Microsoft Dynamics 365 Business Central online 2022 release wave 1
@@ -34,7 +34,7 @@ The Partner Center team has now announced the timeline by which you need to migr
 
 To manage Dynamics 365 Business Central customers via GDAP we recommend requesting the Dynamics 365 Administrator role as the least-privileged role. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
 
-You can watch the GDAP Office Hours recording for Business Central [here](https://www.microsoft.com/en-us/videoplayer/embed/RE4VIqN).
+You can watch the GDAP Office Hours recording for Business Central [here](https://learn-video.azurefd.net/vod/player?id=cbacd031-f8db-43f4-aca5-815b3636c258).
 
 **Plan and prepare for Dynamics 365 Business Central 2022 release wave 2**  
 The preview of Dynamics 365 Business Central 2022 release wave 2 will go live on August 31. Use Microsoft Collaborate to submit your feedback or to report any potential issues that you discover in the preview. Discover how to do so here: [aka.ms/BCPreview](https://aka.ms/BCPreview). In addition, we have created a new subgroup on Yammer called [Public Preview 2022 release wave 2](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=118080200704&view=all), which can be used to share feedback directly with the Microsoft product team or ask questions related to the preview. 

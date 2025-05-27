@@ -4,8 +4,9 @@ description: Deletes project  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete projects
@@ -25,10 +26,10 @@ DELETE businesscentralPrefix/companies({id})/projects({id})
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **project**, the **project** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **project**, the **project** won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```204 No Content``` response code and it deletes the project .
@@ -37,7 +38,7 @@ If successful, this method returns a ```204 No Content``` response code and it d
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/projects({id})
@@ -46,15 +47,13 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/projects({id})
 **Response** 
 
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 HTTP/1.1 204 No Content
 ```
 
-
-
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [project](../resources/dynamics_project.md)    
 [Get project](dynamics_project_Get.md)    

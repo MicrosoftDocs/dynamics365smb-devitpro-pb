@@ -1,11 +1,11 @@
 ---
 title: "Multitenant Technical Upgrade Quick Reference"
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.custom: evergreen
+ms.date: 04/18/2024
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Business Central Multitenant Full Upgrade Quick Reference
 

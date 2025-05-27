@@ -4,12 +4,11 @@ description: Creates a customer return reason object in Dynamics 365 Business Ce
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/27/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Create customerReturnReasons
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
@@ -30,7 +29,6 @@ POST businesscentralPrefix/companies({id})/customerReturnReasons
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **customerReturnReason**, the **customerReturnReason** will not be updated. |
 
 ## Request body
 
@@ -44,7 +42,7 @@ If successful, this method returns ```201 Created``` response code and a **custo
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/customerReturnReasons
@@ -57,7 +55,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 201 Created
@@ -69,7 +67,7 @@ Content-type: application/json
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [customerReturnReason](../resources/dynamics_customerReturnReason.md)  

@@ -4,10 +4,10 @@ description: Learn how Business Central provides telemetry for each environment,
 author: jswymer
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 05/31/2023
+ms.date: 05/31/2024
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.custom: bac-template
+ms.custom: bap-template
 ---
 
 # Monitoring and Analyzing Telemetry
@@ -85,7 +85,7 @@ For more information, go to [Alert on Telemetry](telemetry-alert.md).
 ## [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry FAQ
 We have compiled a list of frequently asked questions (FAQ) on telemetry. See [Telemetry FAQ](telemetry-faq.md)
 
-## See also
+## Related information
 [Available signal in telemetry](telemetry-available-telemetry.md)  
 [Enable Telemetry](telemetry-enable-application-insights.md)  
 [Control Telemetry Cost](telemetry-control-cost.md)  

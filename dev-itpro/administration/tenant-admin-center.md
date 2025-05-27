@@ -2,17 +2,18 @@
 title: Business Central Admin Center| Microsoft Docs
 description: Learn about how a VAR or an internal administrator can set update windows and other admin tasks.  
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # The Business Central Administration Center
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to do administrative tasks for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Here, administrators can:
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to do administrative tasks for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Some of the tasks that administrators can do include:
 
 - [view and work with production and sandbox environments](tenant-admin-center-environments.md) on the tenant.
 - [set up notification recipients](tenant-admin-center-notifications.md).
@@ -24,17 +25,16 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 
 ## Supported Microsoft Entra roles for access
 
-Users with the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference) are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments:
+Users with at least the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference) are authorized to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments:
 
-- [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator)
 - [Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator)
-- Dynamics 365 Business Central Administrator
+- [Dynamics 365 Business Central Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-business-central-administrator)
 
 Although the following roles aren't required to access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] or its environments, they allow for administration of tools and resources that integrate with [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
 
 - [Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) - create and manage all aspects of Power Platform environments.
 - [Service Support Administrator](/entra/identity/role-based-access-control/permissions-reference#service-support-administrator) - create and manage support requests.
-- [Message Center Reader](/entra/identity/role-based-access-control/permissions-reference#message-center-reader) - read notifications in [Message Center](/microsoft-365/admin/manage/message-center?view=o365-worldwide) and sign up for email notifications.
+- [Message Center Reader](/entra/identity/role-based-access-control/permissions-reference#message-center-reader) - read notifications in [Message Center](/microsoft-365/admin/manage/message-center) and sign up for email notifications.
 - [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator) - create and manage all aspects of enterprise applications and application registration, for example to manage applications that interact with the Business Central and Admin Center APIs.
 - [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator) - manage conditional access settings, for example to specify access policies for authentications to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] application.
 - [License Administrator](/entra/identity/role-based-access-control/permissions-reference#license-administrator) - add, remove, and update license assignments on users and groups.
@@ -52,7 +52,7 @@ Alternatively, you can access the administration center from the URL, use the fo
 
 ## Delegated administrators (Partner users)
 
-Partner organizations can set up a (Granular Delegated Administration Privileges (GDAP))[/partner-center/gdap-introduction] relationship including at least one of the Microsoft Entra roles that grant access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to access their customers' administration centers. [Learn how to set up a GDAP relationship](/partner-center/gdap-obtain-admin-permissions-to-manage-customer).
+Partner organizations can set up a [Granular Delegated Administration Privileges (GDAP)](/partner-center/gdap-introduction) relationship including at least one of the Microsoft Entra roles that grant access to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to access their customers' administration centers. [Learn how to set up a GDAP relationship](/partner-center/gdap-obtain-admin-permissions-to-manage-customer).
 
 After the relationship is set up, users in the partner tenant can access the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] for the customer's tenant. However, the users must be in a security group assigned to at least one of the required roles in the active GDAP relationship, which is done by completing these steps:
 
@@ -70,7 +70,7 @@ You can also get to the administration center by using the URL of a tenant, as d
 In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can [specify support information](../technical-support.md#configuring-the-support-experience), create and remove [environments](tenant-admin-center-environments.md), and you can access your customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environments.
 
 > [!NOTE]
-> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).
+> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Administration as a partner](tenant-administration.md#administration-as-a-partner).
 
 ### Cleaning up settings
 
@@ -100,7 +100,7 @@ If your organization decides to switch to another partner, you must make sure th
 When you establish a relationship with a new partner, they fill in these fields again.
 
 
-## See also
+## Related information
 
 [Production and Sandbox Environments](environment-types.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

@@ -2,11 +2,10 @@
 title: "Inherent Permissions"
 description: "Description of how inherent permissions work and the InherentPermissions attribute in AL for Business Central."
 author: jswymer
-ms.custom: na
 ms.date: 02/27/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Inherent Permissions
@@ -67,7 +66,7 @@ Is the object only run through another object that you can control permissions f
 * Install and Upgrade codeunits where you can grant inherent Execute permissions.
 * Buffer tables where you can typically grant indirect Read, Insert, Modify, Delete, and Execute permissions and entitlements because they're only use to hold data in memory.
 
-## See also
+## Related information
 
 [Entitlements and Permission Sets Overview](../developer/devenv-entitlements-and-permissionsets-overview.md)  
 [Permission Set Object](../developer/devenv-permissionset-object.md)

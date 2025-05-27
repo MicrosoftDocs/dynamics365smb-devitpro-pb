@@ -1,13 +1,8 @@
 ---
 title: Design Report Layouts
 description: The report layout specifies which fields of the dataset are included and how they are arranged and formatted, such as font type and color, margin etc. 
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: c69b83d1-8a3d-482e-bff7-bdb9429fb9ff
 caps.latest.revision: 10
 ---

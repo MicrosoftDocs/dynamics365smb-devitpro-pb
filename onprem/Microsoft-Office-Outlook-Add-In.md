@@ -1,13 +1,8 @@
 ---
 title: Microsoft Office Outlook Integration
 description: Using Microsoft Office Outlook Add-In, synchronize data such as to-dos, contacts, and tasks between Microsoft Dynamics NAV and Outlook.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: f6b7668b-f925-4349-8729-46ea29210a94
 caps.latest.revision: 13
 ---

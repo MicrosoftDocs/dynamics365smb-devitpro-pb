@@ -1,1 +1,1 @@
-> **APPLIES TO:** Business Central On-Premises
+> **APPLIES TO:** Business Central on-premises

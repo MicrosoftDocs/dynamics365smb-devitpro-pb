@@ -2,12 +2,11 @@
 title: Moving from OnCompanyOpen
 description: Explains why you should use OnAfterLogin instead of OnCompanyOpen.
 author: jswymer
-ms.custom: na
 ms.date: 05/23/2022
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: concept-article
 
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # Moving from OnCompanyOpen
 
@@ -42,6 +41,6 @@ to:
 > [!NOTE]
 > Events that are emitted from within the OnCompanyOpen event will eventually be moved to the the `OnAfterLogin` event or the OnCompanyOpenCompleted event, or they'll be changed to isolated events.
 
-## See Also
+## Related information
 
 [Isolated Events](devenv-events-isolated.md)  

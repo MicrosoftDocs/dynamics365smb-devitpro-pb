@@ -1,12 +1,11 @@
 ---
 title: "TaskScheduler.CanCreateTask() Method"
-description: "Checks whether it is possible to schedule tasks in this session."
+description: "Checks whether it is possible to schedule tasks in this session (depends on the user/app entitlements)."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/15/2023
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -14,14 +13,13 @@ author: SusanneWindfeldPedersen
 # TaskScheduler.CanCreateTask() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Checks whether it is possible to schedule tasks in this session.
+Checks whether it is possible to schedule tasks in this session (depends on the user/app entitlements).
 
 
 ## Syntax
 ```AL
 Ok :=   TaskScheduler.CanCreateTask()
 ```
-
 
 ## Return Value
 *Ok*  
@@ -56,7 +54,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Using the Task Scheduler](../../devenv-task-scheduler.md)   

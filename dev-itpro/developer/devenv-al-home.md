@@ -4,9 +4,8 @@ description: Get an overview of the AL Home view for Business Central which shar
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
-
-ms.topic: conceptual
-ms.date: 03/29/2023
+ms.topic: article
+ms.date: 03/01/2024
 ms.custom: bap-template
 ms.collection: get-started
 ---
@@ -24,9 +23,9 @@ The **AL Home** view shows news related to developing in AL for [!INCLUDE [prod_
 
 ## Settings
 
-You can choose when to show the **AL Home** view as you start up Visual Studio Code, the default is that **AL Home** is shown when it's updated. To change the default, go to user or workspace settings, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration**, change the **Show Home at startup** to a different value. For more information, see [AL Language extension configuration](devenv-al-extension-configuration.md).
+You can choose when to show the **AL Home** view as you start up Visual Studio Code, the default is that **AL Home** is shown when it's updated. To change the default, go to user or workspace settings, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration**, change the **Show Home at startup** to a different value. Learn more in [AL Language extension configuration](devenv-al-extension-configuration.md).
 
-## See also
+## Related information
 
 [AL Explorer](devenv-al-explorer.md)  
-[Developing Extensions in AL](devenv-dev-overview.md)
+[Developing extensions in AL](devenv-dev-overview.md)

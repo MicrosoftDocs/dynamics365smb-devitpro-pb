@@ -4,8 +4,9 @@ description: Deletes currency  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete currencies
@@ -25,20 +26,19 @@ DELETE businesscentralPrefix/companies({id})/currencies({id})
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **currencies**, the **currencies** will not be
- updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **currencies**, the **currencies** won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns ```204 No Content``` response code and deletes the **currency**. It does not return anything in the response body.
+If successful, this method returns ```204 No Content``` response code and deletes the **currency**. It doesn't return anything in the response body.
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/currencies({id})
@@ -46,13 +46,13 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/currencies({id})
 
 **Response** 
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [currency](../resources/dynamics_currency.md)    
 [Get currency](dynamics_currency_Get.md)    

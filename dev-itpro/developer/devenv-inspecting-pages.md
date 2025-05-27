@@ -2,11 +2,10 @@
 title: Inspecting pages
 description: "Learn about the structure of a page and its' underlying data."
 author: jswymer
-ms.custom: na
 ms.date: 09/15/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Inspecting and troubleshooting pages
@@ -165,7 +164,7 @@ The following table describes the different filter types.
 
 ---
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  

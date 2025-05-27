@@ -4,16 +4,15 @@ description: A location object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/27/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # location resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a location in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -27,13 +26,6 @@ Represents a location in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[DELETE location](../api/dynamics_location_delete.md)|none|Deletes a location object.|
 |[POST location](../api/dynamics_location_create.md)|location|Creates a location object.|
 |[PATCH location](../api/dynamics_location_update.md)|location|Updates a location object.|
-
-
-## Navigation
-
-| Navigation |Return Type| Description |
-|:----------|:----------|:-----------------|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the location.|
 
 ## Properties
 
@@ -52,10 +44,11 @@ Represents a location in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |phoneNumber|string|Specifies the location's telephone number.|
 |email|string|Specifies the location's email address.|
 |website|string|Specifies the location's home page address.|
+|lastModifiedDateTime|datetime|The last datetime the location was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the location resource.
+Here's a JSON representation of the location resource.
 
 
 ```json
@@ -72,12 +65,13 @@ Here is a JSON representation of the location resource.
     "postalCode": "string",
     "phoneNumber": "string",
     "email": "string",
-    "website": "string"
+    "website": "string",
+    "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
+
 [GET location](../api/dynamics_location_get.md)   
 [DELETE location](../api/dynamics_location_delete.md)  
 [POST location](../api/dynamics_location_create.md)  

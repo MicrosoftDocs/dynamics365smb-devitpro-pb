@@ -1,11 +1,7 @@
 ---
 title: "Printing Reports"
 description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global and trigger events. 
-ms.custom: na
 ms.date: 10/01/2019
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---
@@ -24,7 +20,7 @@ This article describes how to use the OnAfterSetupPrinters event to set up diffe
     codeunit 50100 SetupPrinter
     {
         [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterSetupPrinters', '', true, true)]
-        procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
+        procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject])
             var
                 
             begin
@@ -77,7 +73,7 @@ The following example illustrates how to create a payload by using the Add metho
 codeunit 50100 SetupPrinter
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterSetupPrinters', '', true, true)]
-    procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
+    procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject])
     var
         Payload: JsonObject;
         PaperTrays: JsonArray;
@@ -117,7 +113,7 @@ The following example illustrates how to create a payload by using the ReadFrom 
 codeunit 50101 SetupPrinter2
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"ReportManagement", 'OnAfterSetupPrinters', '', true, true)]
-    procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject]);
+    procedure SetupPrinters(var Printers: Dictionary of [Text[250], JsonObject])
     var
         Payload: JsonObject;
     begin

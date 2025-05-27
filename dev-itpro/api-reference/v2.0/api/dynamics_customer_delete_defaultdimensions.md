@@ -1,13 +1,12 @@
 ---
 title: Delete customer defaultDimensions  
 description: Deletes the default dimensions of the customer in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete customer defaultDimensions
@@ -27,10 +26,10 @@ DELETE businesscentralPrefix/companies({companyId})/customers({customerId})/defa
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **customers**, the **customers** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **customers**, the **customers** won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```204 No Content``` response code and it deletes the default dimensions for the customer and corresponding dimension.
@@ -39,7 +38,7 @@ If successful, this method returns a ```204 No Content``` response code and it d
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/customers({customerId})/defaultDimensions({customerId},{dimensionId})
@@ -49,9 +48,8 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/customers
 
 No Content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-
 [Customer](../resources/dynamics_customer.md)  
 [Create customer defaultDimensions](dynamics_customer_create_defaultdimensions.md)  
 [Update customer defaultDimensions](dynamics_customer_update_defaultdimensions.md)  

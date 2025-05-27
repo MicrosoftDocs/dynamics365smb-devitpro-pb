@@ -4,14 +4,13 @@ description: A customer return reason object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/27/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # customerReturnReason resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a customer return reason in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -26,8 +25,6 @@ Represents a customer return reason in [!INCLUDE[prod_short](../../../includes/p
 |[POST customerReturnReason](../api/dynamics_customerreturnreason_create.md)|customerReturnReason|Creates a customer return reason object.|
 |[PATCH customerReturnReason](../api/dynamics_customerreturnreason_update.md)|customerReturnReason|Updates a customer return reason object.|
 
-
-
 ## Properties
 
 | Property           | Type   |Description     |
@@ -35,22 +32,24 @@ Represents a customer return reason in [!INCLUDE[prod_short](../../../includes/p
 |id|GUID|The unique ID of the customer return reason. Non-editable.|
 |code|string|The code of the customer return reason.|
 |description|string|Specifies the description of the customer return reason.|
+|lastModifiedDateTime|datetime|The last datetime the customer return reason was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the customerReturnReason resource.
+Here's a JSON representation of the customerReturnReason resource.
 
 
 ```json
 {
     "id": "GUID",
     "code": "string",
-    "description": "string"
+    "description": "string",
+    "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
+
 [GET customerReturnReason](../api/dynamics_customerreturnreason_get.md)   
 [DELETE customerReturnReason](../api/dynamics_customerreturnreason_delete.md)  
 [POST customerReturnReason](../api/dynamics_customerreturnreason_create.md)  

@@ -1,9 +1,7 @@
 ---
 title: "GetRecIdFromKey"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ---
 # GetRecIdFromKey
 Converts a key to a record ID. The key is always part of the page result.  
@@ -40,5 +38,5 @@ string id = service.GetRecIdFromKey(cust.No);
 cust = service.ReadByRecId(id.ToUpper());  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

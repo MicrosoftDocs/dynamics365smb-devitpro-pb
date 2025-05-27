@@ -1,12 +1,11 @@
 ---
-title: "ModifyAllowed Property"
+title: "ModifyAllowed property"
 description: "Sets the value to determine whether users can modify records while using this page."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,8 +16,8 @@ author: SusanneWindfeldPedersen
 Sets the value to determine whether users can modify records while using this page.
 
 ## Applies to
--   Page
 -   Request Page
+-   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -32,6 +31,6 @@ Sets the value to determine whether users can modify records while using this pa
 ModifyAllowed = false;
 ``` 
   
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

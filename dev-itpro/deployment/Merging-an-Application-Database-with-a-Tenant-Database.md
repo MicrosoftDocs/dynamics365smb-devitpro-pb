@@ -1,10 +1,8 @@
 ---
 title: "Migrating to Single-Tenancy From Multitenancy"
 description: Learn how to migrate from a single-tenant Business Central deployment to a multitenant deployment.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 39a81332-8db1-4e5d-acda-915bf9591880
 author: jswymer
 ---
@@ -137,7 +135,7 @@ Write-Host "Operation complete." -foregroundcolor cyan
 ### Step 4: Post-migration clean-Up  
  In the first scenario where you move a tenant from multitenancy to single-tenancy, you must update the [!INCLUDE[server](../developer/includes/server.md)] account and database permissions. Also, any tenant-specific files that have been saved to the original server location must be moved to the relevant location on the new server.  
   
-## See Also  
+## Related information  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
 [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview)

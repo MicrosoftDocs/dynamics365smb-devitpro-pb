@@ -3,11 +3,12 @@ title:  Error method trace telemetry
 description: Learn about the Error method telemetry in Business Central  
 author: jswymer
 
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 12/21/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing error method telemetry
@@ -37,7 +38,7 @@ Occurs when the `Error` method is called and displays a dialog to the user.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**RT0030**|
-|alErrorMessage|The error string defined in error method and displayed in the client.<br><br> If the error message wasn't a text constant, you get the message `Use ERROR with a text constant to improve telemetry details` instead of the actual message.<br><br> Some messages can contain customer data. As a precaution, Business Central only emits information that's classified as [SystemMetadata](../developer/devenv-classifying-data.md). Information that belongs to other data classifications, like customer data, isn't shown. Instead, the following message is shown: "Message not shown because the NavBaseException(string, Exception, bool) constructor was used."| 
+|alErrorMessage|The error string defined in the error method and displayed in the client.<br><br>The actual error string from AL code is shown in this dimension only if the string is a `Label` or `TextConst` data type. For all other data types, the string `Use ERROR with a text constant to improve telemetry details` is shown instead of the actual string.<br><br> Some messages can contain customer data. As a precaution, Business Central only emits information that's classified as [SystemMetadata](../developer/devenv-classifying-data.md). Information that belongs to other data classifications, like customer data, isn't shown. Instead, the following message is shown: "Message not shown because the NavBaseException(string, Exception, bool) constructor was used."| 
 |alEnglishLanguageDiagnosticsMessage|The error message in English (no matter which language the user had specified in the client).<br /><br />This dimension was introduced in Business Central 2023 release wave 1, version 22.0.  |
 |alObjectId|Specifies the ID of the AL object.|
 |alObjectType|Specifies the type of the AL object. |
@@ -108,7 +109,7 @@ traces
 
 To effectively help users mitigate any issues they might encounter, you should learn more about the different parts of the error dialog, including how to interpret the AL stack trace. For more information, see [Understanding the error dialog](../developer/devenv-error-dialog.md).
 
-## See also
+## Related information
 
 [Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-errorinfo-method.md) 
 [Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-string-joker-method.md)  

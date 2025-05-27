@@ -4,16 +4,15 @@ description: A journal line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # journalLine resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a journal line in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -64,7 +63,7 @@ Represents a journal line in [!INCLUDE[prod_short](../../../includes/prod_short.
 
 ## JSON representation
 
-Here is a JSON representation of the journalLine resource.
+Here's a JSON representation of the journalLine resource.
 
 
 ```json
@@ -89,11 +88,9 @@ Here is a JSON representation of the journalLine resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET journalLine](../api/dynamics_journalLine_Get.md)  
 [DELETE journalLine](../api/dynamics_journalLine_Delete.md)  
 [POST journalLine](../api/dynamics_journalLine_Create.md)  

@@ -2,11 +2,10 @@
 title: "RecordRef.SetLoadFields([Integer,...]) Method"
 description: "Sets the fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,7 +42,9 @@ Calling SetLoadFields on a recordref without passing any fields will reset the f
 
 It is not necessary to include the following fields, because they are always selected for loading: Primary key, SystemId, and data audit fields (SystemCreatedAt, SystemCreatedBy, SystemModifiedAt, SystemModifiedBy).
 
-This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
+[!INCLUDE [partial-records-note](../../includes/partial-records-note.md)]
+
+This method is part of the partial records capability for improving performance. Learn more in [Using partial records](../../devenv-partial-records.md).
 
 ## Example
 
@@ -66,7 +67,7 @@ begin
 end;
 ```
 
-## See Also
+## Related information
 [Using Partial Records](../../devenv-partial-records.md)  
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

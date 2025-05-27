@@ -1,12 +1,7 @@
 ---
 title: "Walkthrough: Creating a Query to Link Two Tables"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: f09cae5c-e977-4c9b-9780-440b958522d1
 caps.latest.revision: 30
 ---

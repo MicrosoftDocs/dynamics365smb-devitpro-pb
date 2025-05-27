@@ -1,10 +1,8 @@
 ---
 title: "Enabling Microsoft Dataverse Tables for Extension Development"
 description: "This topic explains how to enable Microsoft Dataverse tables for the extension development process."
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ---
 
@@ -68,7 +66,7 @@ table 50100 SalesIntegration
 }
 ```
 
-## See Also
+## Related information
 
 [Table Properties](properties/devenv-table-properties.md)  
 [TableType Property](properties/devenv-tabletype-property.md)  

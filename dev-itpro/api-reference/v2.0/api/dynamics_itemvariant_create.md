@@ -4,8 +4,9 @@ description: Creates a itemVariant object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create itemVariants
@@ -27,7 +28,6 @@ POST businesscentralPrefix/companies({id})/items({id})/itemVariants({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **itemVariant**, the **itemVariant** will not be updated. |
 
 
 ## Request body
@@ -40,7 +40,7 @@ If successful, this method returns ```201 Created``` response code and a **itemV
 
 **Request**
 
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/itemVariants
@@ -57,7 +57,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 HTTP/1.1 201 Created
@@ -72,7 +72,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [itemvariant](../resources/dynamics_itemvariant.md)    
 [Get itemvariant](dynamics_itemvariant_Get.md)    

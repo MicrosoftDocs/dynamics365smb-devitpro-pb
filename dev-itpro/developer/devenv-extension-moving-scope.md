@@ -1,12 +1,11 @@
 ---
 title: "Moving between extension scopes"
 description: "Describes how an extension in one scope can be moved into another scope in Business Central."
-ms.custom: na
 ms.author: solsen
 ms.date: 02/24/2022
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Moving between extension scopes
@@ -136,7 +135,7 @@ You can find the full list of requirements for PTE in the documentation for the 
 - All dependent extensions will have to be updated to use the new app `id` in their `app.json` file and to reference the objects defined in the extension by their new name and object ID.
 
 
-## See also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  

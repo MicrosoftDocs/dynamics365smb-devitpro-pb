@@ -2,11 +2,10 @@
 title: "HttpClient.Post(Text, HttpContent, var HttpResponseMessage) Method"
 description: "Sends a POST request to the specified URI as an asynchronous operation."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -48,11 +47,13 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Ways that HttpClient.Post calls can fail
-The method HttpClient.Post can fail and return false in the following ways:
+
+The method `HttpClient.Post` can fail and return false in the following ways:
 
 [!INCLUDE[httpclientFailureReasonsList](../../includes/include-http-call-failure-reasons.md)]
 
 ## Example (HTTP POST)
+
 A POST request sends data to the server for processing. The Content-Type header of the request signifies what MIME type the body is sending. To make an HTTP POST request, given an HttpClient and a Uri, use the HttpClient.Post method:
 
 ```AL
@@ -69,9 +70,6 @@ A POST request sends data to the server for processing. The Content-Type header 
 
         if ContentHeaders.Contains('Content-Type') then headers.Remove('Content-Type');
         ContentHeaders.Add('Content-Type', 'application/json');
-
-        if ContentHeaders.Contains('Content-Encoding') then headers.Remove('Content-Encoding');
-        ContentHeaders.Add('Content-Encoding', 'UTF8');
 
         // assume that the json parameter contains the following data
         //
@@ -108,19 +106,21 @@ A POST request sends data to the server for processing. The Content-Type header 
 ```
 
 The preceding code:
-- Prepares an HttpContent instance with the JSON body of the request (MIME type of "application/json" and using the character encoding UTF8).
+
+- Prepares an `HttpContent` instance with the JSON body of the request (MIME type of "application/json" and using the character encoding UTF8).
 - Makes a POST request to "https://jsonplaceholder.typicode.com/todos".
 - Ensures that the response is successful.
 - Reads the response body as a string.
 
-
 ## Example (How to upload a file using multipart/form-data)
+
 The Content-Type _multipart/form-data_ allows you to post multiple types of data in the same HTTP request and is commonly used for streaming data to an endpoint.
 
 To use multipart/form-data with Httpclient, you need to do the following:
-1. Create a _content payload_, including defining the boundary between data elements
-2. Add the file content and file name to the content payload
-3. Set up the HTTP content header multipart/form-data
+
+1. Create a *content payload*, including defining the boundary between data elements.
+2. Add the file content and file name to the content payload.
+3. Set up the HTTP content header multipart/form-data.
 
 After these steps, your AL code should follows usual practices for Httpclient POST requests.
 
@@ -173,6 +173,7 @@ The methods for adding file content to the content payload differs depending if 
 
 
 ### Example (How to upload a binary file using multipart/form-data)
+
 The main reason for the code example being different when dealing with binary data is that we need to preserve the encoding of the data. A conversion to text might change the encoding.
 
 ```AL
@@ -232,13 +233,12 @@ The main reason for the code example being different when dealing with binary da
 ```
 
 ### Example (How to upload large files using multipart/form-data)
-Some endpoints have restrictions on the size of files that can be uploaded and hence you might need to split and upload the file in chunks. The system application SharePoint module has an implementation for how to achieve this. For more information, see [Share Point module](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint).
 
+Some endpoints have restrictions on the size of files that can be uploaded and hence you might need to split and upload the file in chunks. The system application SharePoint module has an implementation for how to achieve this. For more information, see [Share Point module](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/SharePoint).
 
 ## Content headers
 
 [!INCLUDE[ContentHeaders](../../../includes/include-http-contentheaders.md )]
-
 
 ## Supported HTTP methods
 
@@ -248,11 +248,11 @@ Some endpoints have restrictions on the size of files that can be uploaded and h
 
 *This article is maintained by Microsoft. Parts of the examples were originally written by the following contributors.*
 
-* [Michael Megel](https://www.linkedin.com/in/michaelmegel/) | Microsoft MVP
-* [Nikolay Arhangelov](https://www.linkedin.com/in/nikolay-arhangelov/) | Technical Manager
+- [Michael Megel](https://www.linkedin.com/in/michaelmegel/) | Microsoft MVP
+- [Nikolay Arhangelov](https://www.linkedin.com/in/nikolay-arhangelov/) | Technical Manager
 
+## Related information
 
-## See Also
 [Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

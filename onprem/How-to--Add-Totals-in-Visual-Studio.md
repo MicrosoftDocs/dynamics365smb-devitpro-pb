@@ -1,13 +1,8 @@
 ---
 title: Add Totals in Visual Studio
 description: Reports can be created with Microsoft Dynamics NAV, and later designed using Visual Studio. Learn how to add totals to a report in Visual Studio. 
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: b300cdb1-0163-4c61-a7bf-e0fb460b2b70
 caps.latest.revision: 11
 ---

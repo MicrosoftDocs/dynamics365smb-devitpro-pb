@@ -4,8 +4,9 @@ description: Creates a dimensionSetLine object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create dimensionSetLines
@@ -36,14 +37,12 @@ POST businesscentralPrefix/companies({id})/purchaseOrderLines({id})/dimensionSet
 
 ```
 
-
 ## Request headers
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **dimensionSetLine**, the **dimensionSetLine** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **dimensionSetLines** object.
@@ -55,7 +54,7 @@ If successful, this method returns ```201 Created``` response code and a **dimen
 
 **Request**
 
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders({id})/dimensionSetLines({id})
@@ -75,7 +74,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 
 ```json
@@ -95,7 +94,7 @@ Content-type: application/json
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [dimensionsetline](../resources/dynamics_dimensionsetline.md)    
 [Get dimensionsetline](dynamics_dimensionsetline_Get.md)    

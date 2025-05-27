@@ -1,12 +1,7 @@
 ---
 title: "How to: View or Modify Properties on a Key"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 8bdd7ae0-7b7a-4eab-a683-fc4393682372
 caps.latest.revision: 6
 ---

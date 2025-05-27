@@ -4,8 +4,9 @@ description: Gets a trial balance object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get trialBalance
@@ -27,7 +28,7 @@ GET businesscentralPrefix/companies({id})/trialBalances({id})
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and a **trialBalances** object in the response body.
@@ -36,14 +37,14 @@ If successful, this method returns a ```200 OK``` response code and a **trialBal
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/trialBalances?$orderby number&$filter=dateFilter ge 2019-01-01 and dateFilter le 2019-12-31
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -61,6 +62,6 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [trialbalance](../resources/dynamics_trialbalance.md)    

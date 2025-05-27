@@ -2,11 +2,10 @@
 title: "FieldRef.SetFilter(Text [, Any,...]) Method"
 description: "Assigns a filter to a field that you specify."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -28,7 +27,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \<=, \>, \>=, \<\>, &, .., *, &#124; and @. You can use replacement fields (%1, %2, and so on) to insert values at runtime.  
+The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, , &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run time.  
 
 *[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -80,7 +79,7 @@ begin
 end;
 ```  
   
-## See Also
+## Related information
 [FieldRef Data Type](fieldref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

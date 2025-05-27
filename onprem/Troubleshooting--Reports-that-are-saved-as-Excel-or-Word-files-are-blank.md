@@ -1,12 +1,7 @@
 ---
 title: "Troubleshooting: Reports that are saved as Excel or Word files are blank"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 0d2dbceb-a1e1-44ff-8d6e-2d7bc102a998
 caps.latest.revision: 8
 ---

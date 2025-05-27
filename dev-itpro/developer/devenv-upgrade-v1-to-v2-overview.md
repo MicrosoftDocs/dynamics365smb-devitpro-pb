@@ -2,11 +2,10 @@
 title: "Converting Extensions V1 to V2 Overview"
 description: "Overview of the converting of extensions."
 author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: overview
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Converting Extensions V1 to Extensions V2
@@ -135,7 +134,7 @@ The steps use the [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)].
 ## Going forward
 The upgrade code unit becomes an integral part of the extension. The **NAVAPP** methods were mainly be used for the conversion from V1 to V2. After converting the extension, you should begin to write upgrade code as described in [Upgrading Extensions](devenv-upgrading-extensions.md).
 
-## See Also
+## Related information
 [Get Started with AL](devenv-get-started.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)    
 [AL Development Environment](devenv-reference-overview.md)

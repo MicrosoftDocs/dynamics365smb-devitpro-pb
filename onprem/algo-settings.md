@@ -2,7 +2,6 @@
 title: "Overview of AL-Go settings"
 description: "Overview of the settings for AL-Go for Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 05/27/2022
 ms.reviewer: 
 ms.topic: conceptual

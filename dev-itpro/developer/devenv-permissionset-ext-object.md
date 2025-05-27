@@ -2,11 +2,10 @@
 title: "Permission Set Extension Object"
 description: "Description of the permission set extension object in AL for Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 03/09/2023
-ms.reviewer: na
 ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Permission Set Extension Object
@@ -40,7 +39,7 @@ permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
 }
 ```
 
-## See Also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  

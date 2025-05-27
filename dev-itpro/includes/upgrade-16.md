@@ -1,8 +1,9 @@
 ---
-author: edupont04
+author: jswymer
 ms.topic: include
-ms.date: 12/01/2021
-ms.author: edupont
+ms.date: 04/25/2025
+ms.author: jswymer
+ms.reviewer: jswymer
 ---
 > [!NOTE]
-> As of October 2021, Business Central 2020 Release Wave 1 no longer gets updates.
+> Version 16.17 (published October 2021) is the last update for Business Central 2020 release wave 1.

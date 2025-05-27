@@ -1,14 +1,15 @@
 ---
-title: subscriptions resource type
-description: A subscriptions object in Dynamics 365 Business Central.
+title: (Business Central Dataverse API) subscriptions resource type
+description: A subscriptions object in the Dataverse API for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/25/2022
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# subscriptions resource type
+# (Business Central Dataverse API) subscriptions resource type
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
@@ -68,7 +69,7 @@ Here is a JSON representation of the subscriptions resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET subscriptions](../api/dynamics_subscriptions_get.md)
 [DELETE subscriptions](../api/dynamics_subscriptions_delete.md)
 [POST subscriptions](../api/dynamics_subscriptions_create.md)

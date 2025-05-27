@@ -4,8 +4,9 @@ description: Creates a journal line in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create journalLines
@@ -27,7 +28,6 @@ POST businesscentralPrefix/companies({id})/journals({id})/journalLines
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **journalLine**, the **journalLine** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **journalLines** object.
@@ -39,7 +39,7 @@ If successful, this method returns ```201 Created``` response code and **journal
 
 **Request**
 
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/journals({id})/journalLines
@@ -84,7 +84,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Graph Reference](dynamics_graph_reference.md)  
 [Journal Line](../resources/dynamics_journalline.md)  

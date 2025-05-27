@@ -6,8 +6,9 @@ author: SusanneWindfeldPedersen
 
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get salesCreditMemo pdfDocument
@@ -34,7 +35,7 @@ GET businesscentralPrefix/api/v2.0/companies({id})/salesCreditMemos({creditMemoI
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body (v2.0)
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response (v2.0)
 If successful, this method returns a ```200 OK``` response code and a link to the PDF document in the response body.
@@ -42,14 +43,14 @@ If successful, this method returns a ```200 OK``` response code and a link to th
 ## Example (v2.0)
 
 **Request**
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/salesCreditMemos({creditMemoId})/pdfDocument
 ```
 
 **Response**
-Here is an example of the response.
+Here's an example of the response.
 
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -84,7 +85,7 @@ The following example gets the actual PDF document:
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and the PDF document in the response body.
@@ -92,7 +93,7 @@ If successful, this method returns a `200 OK` response code and the PDF document
 ## Example
 
 **Request**
-Here is an example of the request.
+Here's an example of the request.
 
 ```
 GET https://{businesscentralPrefix}/api/v2.0/companies({companyid})/salesCreditMemos({creditMemoId})/pdfDocument({id})/content
@@ -101,7 +102,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({companyid})/salesCreditM
 **Response** 
 The PDF document in binary format.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salescreditmemo](../resources/dynamics_salescreditmemo.md)    
 [Get salescreditmemo](dynamics_salescreditmemo_Get.md)    

@@ -2,11 +2,9 @@
 title: "ContextSensitiveHelpPage Property"
 author: edupont04
 
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: edupont
 ---

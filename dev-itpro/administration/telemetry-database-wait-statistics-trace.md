@@ -2,11 +2,12 @@
 title: Analyzing Database Wait Statistics Telemetry
 description: Learn about the telemetry for database wait statics for Business Central in Azure Application Insights.  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 06/16/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing Database Wait Statistics Telemetry
@@ -79,7 +80,7 @@ Occurs when a query has to wait because of a resource, queue, or external event 
 |[See common custom dimensions](#other)||
 
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

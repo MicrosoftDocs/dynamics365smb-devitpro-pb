@@ -1,10 +1,8 @@
 ---
 title: "Extending G/L entry aggregations when posting invoices"
 description: Explore an example of how to extend the posting process for sales, purchase, and service documents.
-ms.custom: na
 ms.date: 01/03/2024
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 author: bholtorf
 ---
 
@@ -103,7 +101,7 @@ Typically, you'll only need to add fields to the Invoice Posting Buffer table.
 
 In more advanced scenarios, you can create your own implementation codeunit and use it instead of codeunit 815 Sales Post Invoice, implement interface methods, and add your values to the Sales Invoice Posting enum. You can then use any methods for aggregation of G/L entries.
 
-## See also
+## Related information
 [The Microsoft_Application.app File](devenv-application-app-file.md)  
 [Publishing a Code-Customized Base Application for Business Central on-premises](devenv-publish-code-customization.md)  
 [Extending Application Areas](devenv-extending-application-areas.md)  

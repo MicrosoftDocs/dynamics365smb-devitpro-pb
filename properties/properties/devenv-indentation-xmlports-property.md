@@ -1,10 +1,7 @@
 ---
 title: "Indentation Property (XMLports)"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5c2d7eb6-0839-462c-9034-19777012c2aa
 caps.latest.revision: 5

@@ -4,8 +4,9 @@ description: Gets a customerSale object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get customerSales
@@ -27,7 +28,7 @@ GET businesscentralPrefix/companies({id})/customerSales
 |Authorization|Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and a **customerSales** object in the response body.
@@ -36,7 +37,7 @@ If successful, this method returns a ```200 OK``` response code and a **customer
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/customerSales
@@ -44,7 +45,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({id})/customerSales
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -59,6 +60,6 @@ Here is an example of the response.
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [customersale](../resources/dynamics_customersale.md)    

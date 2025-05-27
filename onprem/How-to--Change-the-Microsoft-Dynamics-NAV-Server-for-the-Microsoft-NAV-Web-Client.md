@@ -1,13 +1,8 @@
 ---
 title: Change the Web Client Server
 description: Dynamics NAV Server configures the web client settings in the web.config file. Modify the web.config file to change the Server instance after installation.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Changing the Microsoft Dynamics NAV Server for the Microsoft NAV Web Client

@@ -1,10 +1,8 @@
 ---
 title: "Known OData Limitations "
 description: Learn about known limitations with Business Central OData.
-ms.custom: na
 ms.date: 04/01/2022
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Known Limitations with Business Central OData
@@ -36,6 +34,6 @@ If you use Web services that are based on UI pages, you must expect the same beh
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support deep patching. Multiple requests will need to be issued when patching nested entities.
 
-## See Also
+## Related information
 
 [OData Web Services overview](odata-web-services.md)   

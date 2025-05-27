@@ -1,12 +1,11 @@
 ---
-title: "PageType Property"
+title: "PageType property"
 description: "Sets the type of page to create."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,7 +18,7 @@ Sets the type of page to create.
 ## Applies to
 -   Page
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -40,6 +39,8 @@ Sets the type of page to create.
 |**XmlPort**|runtime version 1.0|XmlPort page.|
 |**HeadlinePart**|runtime version 1.0|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
 |**PromptDialog**|runtime version 12.1|Dialog that prompts the user for input and shows the output of a copilot interaction.|
+|**ConfigurationDialog**|runtime version 14.0|Dialog that asks the user for input to configure a process or automation.|
+|**UserControlHost**|runtime version 15.0|Page to host a single usercontrol.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -58,7 +59,7 @@ The exception is the value *API*. Pages of this type are used to generate web se
 
 When the **PageType** property is set to **PromptDialog**, you must also set the **PromptMode** property to specify the current mode of the page. For more information, see [PromptMode Property](devenv-promptmode-property.md). For more information about the **PromptDialog** page type, see [PromptDialog page type](../devenv-page-type-promptdialog.md).
 
-## See Also  
+## Related information  
 
 [Page Properties](./devenv-properties.md)  
 [Properties](devenv-properties.md)  

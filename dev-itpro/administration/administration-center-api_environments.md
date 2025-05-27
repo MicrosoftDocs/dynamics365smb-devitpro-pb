@@ -2,16 +2,14 @@
 title: Business Central Admin Center API - Environments
 description: Learn about the Business Central administration center API for managing environments.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 11/01/2024
 ---
 
-# Environments
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+# Business Central Admin Center API - Environments
 
 Environments are the instances of the application that have been set up for the tenant. An instance can be of either a production type or a sandbox type. The environment APIs can be used to:
 
@@ -20,21 +18,21 @@ Environments are the instances of the application that have been set up for the 
 - Create a new environment using sample data or as a sandbox copy of the production environment
 - Delete an environment.
 
-> [!NOTE]  
+> [!NOTE]
 > Special care should be taken when deleting a production environment as the data will not be recoverable
 
 ## Get environments and Get environments by application family
 
-Returns a list of all the environments for the tenant. 
+Returns a list of all the environments for the tenant.
 
 ```
-GET /admin/v2.19/applications/environments
+GET /admin/v2.24/applications/environments
 ```
 
 Returns a list of the environments for the specified application family.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments
+GET /admin/v2.24/applications/{applicationFamily}/environments
 ```
 
 ### Route Parameters
@@ -46,7 +44,7 @@ GET /admin/v2.19/applications/{applicationFamily}/environments
 Returns a wrapped array of environments.
 ```
 {
-  "value": 
+  "value":
   [
     {
       "friendlyName": string, // Display name of the environment
@@ -54,15 +52,54 @@ Returns a wrapped array of environments.
       "name": string, // Environment name, unique within an application family
       "countryCode": string, // Country/Region that the environment is deployed in
       "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-      "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
+      "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment
       "applicationVersion": string, // The version of the environment's application
       "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
       "webClientLoginUrl": string, // Url to use to log into the environment,
       "webServiceUrl": string, // Url to use to access the environment's service API
       "locationName": string, // The Azure location where the environment's data is stored
       "platformVersion": string, // The version of the environment's Business Central platform
-      "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
+      "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview)
       "appInsightsKey": string // The environment's key for Azure Application Insights
+      "SoftDeletedOn": datetime // The time at which the environment was soft deleted
+      "HardDeletePendingOn": datetime // The time at which the environment will be permanently deleted
+      "DeleteReason": string // The reason why the environment was deleted
+      "AppSourceAppsUpdateCadence": string // The cadence at which installed AppSource Apps are automatically updated with environment updates
+    }
+  ]
+}
+```
+
+#### Flexible Update Management response
+
+A future version of the API will return the following response to include properties relevant to Flexible Update Management.
+
+```
+{
+  "value":
+  [
+    {
+      "friendlyName": string, // Display name of the environment
+      "type": string, // Environment type (for example, "Sandbox", "Production")
+      "name": string, // Environment name, unique within an application family
+      "countryCode": string, // Country/Region that the environment is deployed in
+      "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
+      "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment
+      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
+      "webClientLoginUrl": string, // Url to use to log into the environment,
+      "webServiceUrl": string, // Url to use to access the environment's service API
+      "locationName": string, // The Azure location where the environment's data is stored
+      "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview)
+      "appInsightsKey": string, // The environment's key for Azure Application Insights
+      "SoftDeletedOn": datetime, // The time at which the environment was soft deleted
+      "HardDeletePendingOn": datetime, // The time at which the environment will be permanently deleted
+      "DeleteReason": string, // The reason why the environment was deleted
+      "AppSourceAppsUpdateCadence": string, // The cadence at which installed AppSource Apps are automatically updated with environment updates
+      "versionDetails": {
+        "version": string, // The current version number of the environment, e.g. 26.0
+        "gracePeriodStartDate": datetime, // The date on which the grace period for the current major version of the environment starts
+        "enforcedUpdatePeriodStartDate": datetime // The date on which the enforced update period for the current major version of the environment starts
+      }
     }
   ]
 }
@@ -76,7 +113,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
+GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -95,22 +132,61 @@ Returns a single environment if exists.
   "name": string, // Environment name, unique within an application family
   "countryCode": string, // Country/Region that the environment is deployed in
   "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-  "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
+  "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment
   "applicationVersion": string, // The version of the environment's application
   "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
   "webClientLoginUrl": string, // Url to use to log into the environment,
   "webServiceUrl": string, // Url to use to access the environment's service API
   "locationName": string, // The Azure location where the environment's data is stored
   "platformVersion": string, // The version of the environment's Business Central platform
-  "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
+  "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview)
   "appInsightsKey": string // The environment's key for Azure Application Insights
+  "SoftDeletedOn": datetime // The time at which the environment was soft deleted
+  "HardDeletePendingOn": datetime // The time at which the environment will be permanently deleted
+  "DeleteReason": string // The reason why the environment was deleted
+  "AppSourceAppsUpdateCadence": string // The cadence at which installed AppSource Apps are automatically updated with environment updates
+}
+```
+
+#### Flexible Update Management response
+
+A future version of the API will return the following response to include properties relevant to Flexible Update Management.
+
+```
+{
+  "value":
+  [
+    {
+      "friendlyName": string, // Display name of the environment
+      "type": string, // Environment type (for example, "Sandbox", "Production")
+      "name": string, // Environment name, unique within an application family
+      "countryCode": string, // Country/Region that the environment is deployed in
+      "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
+      "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment
+      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
+      "webClientLoginUrl": string, // Url to use to log into the environment,
+      "webServiceUrl": string, // Url to use to access the environment's service API
+      "locationName": string, // The Azure location where the environment's data is stored
+      "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview)
+      "appInsightsKey": string, // The environment's key for Azure Application Insights
+      "SoftDeletedOn": datetime, // The time at which the environment was soft deleted
+      "HardDeletePendingOn": datetime, // The time at which the environment will be permanently deleted
+      "DeleteReason": string, // The reason why the environment was deleted
+      "AppSourceAppsUpdateCadence": string, // The cadence at which installed AppSource Apps are automatically updated with environment updates
+      "versionDetails": {
+        "version": string, // The current version number of the environment, e.g. 26.0
+        "gracePeriodStartDate": datetime, // The date on which the grace period for the current major version of the environment starts
+        "enforcedUpdatePeriodStartDate": datetime // The date on which the enforced update period for the current major version of the environment starts
+      }
+    }
+  ]
 }
 ```
 
 ### Expected Error Codes
 
 `environmentNotFound` - the targeted environment couldn't be found
-   
+
    - `target: {applicationFamily}/{environmentName}`
 
 ## Create new environment
@@ -119,7 +195,7 @@ Creates a new environment with sample data.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
+PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -135,13 +211,13 @@ PUT /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
 ```
 {
   "environmentType": string, // The type of environment to create (enum | "Production", "Sandbox")
-  "countryCode": string, // The country to create the environment within 
+  "countryCode": string, // The country to create the environment within
   ("ringName": string), // Optional - The logical ring group to create the environment within. Currently only Sandbox type environments may be created in a 'Preview' ring. If not provided then the production ring will be used.
   ("applicationVersion": Version), // Optional - The version of the application the environment should be created on. If not provided then the latest available version will be used.
 }
 ```
 
-> [!NOTE]  
+> [!NOTE]
 > The values for the `countryCode`, `ringName`, and `applicationVersion` properties should be derived from the API endpoints described in the Available Applications section below.
 
 ### Response
@@ -152,7 +228,7 @@ EnvironmentOperation response with HTTP status code 202 (Accepted) with the foll
 
 ```
 {
-  "id": "11111111-aaaa-2222-bbbb-333333333333",
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "type": "create",
   "status": "scheduled", // Will eventually switch to running and then one between succeeded/failed
   "aadTenantId": "",
@@ -186,14 +262,14 @@ Returns HTTP status code 201 (Created) with newly created environment.
   "name": string, // Environment name, unique within an application family
   "countryCode": string, // Country/Region that the environment is deployed in
   "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-  "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
+  "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment
   "applicationVersion": string, // The version of the environment's application
   "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
   "webClientLoginUrl": string, // Url to use to log into the environment,
   "webServiceUrl": string, // Url to use to access the environment's service API
   "locationName": string, // The Azure location where the environment's data is stored
   "platformVersion": string, // The version of the environment's Business Central platform
-  "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
+  "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview)
   "appInsightsKey": string // The environment's key for Azure Application Insights
 }
 ```
@@ -207,13 +283,13 @@ Returns HTTP status code 201 (Created) with newly created environment.
 `invalidInput` - the targeted property is invalid in some way
 
    - target: {countryCode} - the country code property can't be null or whitespace
-    
+
    - target: {environmentName} - the environment name property can't be null or whitespace
-    
-   - target: {environmentType} - the environment type property can't be null or whitespace, and must be a valid value (Production or Sandbox)        
-    
+
+   - target: {environmentType} - the environment type property can't be null or whitespace, and must be a valid value (Production or Sandbox)
+
    - target: {ringName} - attempt to create a production environment on a non-production ring
-    
+
    - target: {applicationVersion} - the version property must be a valid version string (major.minor.build.revision)
 
 `requestBodyRequired` - the request body must be provided
@@ -244,14 +320,14 @@ Creates a new environment with a copy of another environment's data.
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
+POST /admin/v2.24/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
 ```
 
 API v2.8 and earlier:
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{sourceEnvironmentName}
+POST /admin/v2.24/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
 ### Route Parameters
@@ -267,7 +343,7 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{sourceEnvironme
 ```
 {
   "environmentName": string, // The name of the new environment.
-  "type": string // The type of environment to create. With API v2.8 and earlier, only the value "Sandbox" is supported.  
+  "type": string // The type of environment to create. With API v2.8 and earlier, only the value "Sandbox" is supported.
 }
 ```
 
@@ -279,7 +355,7 @@ EnvironmentOperation response with HTTP status code 202 (Accepted) with the foll
 
 ```
 {
-  "id": "11111111-aaaa-2222-bbbb-333333333333",
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "type": "copy",
   "status": "scheduled", // Will eventually switch to running and then one between succeeded/failed
   "aadTenantId": "",
@@ -313,14 +389,14 @@ Returns HTTP status code 201 (Created) with newly copied environment.
   "name": string, // Environment name, unique within an application family
   "countryCode": string, // Country/Region that the environment is deployed in
   "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-  "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment 
+  "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment
   "applicationVersion": string, // The version of the environment's application
   "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
   "webClientLoginUrl": string, // Url to use to log into the environment,
   "webServiceUrl": string, // Url to use to access the environment's service API
   "locationName": string, // The Azure location where the environment's data is stored
   "platformVersion": string, // The version of the environment's Business Central platform
-  "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview) 
+  "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview)
   "appInsightsKey": string // The environment's key for Azure Application Insights
 }
 ```
@@ -351,10 +427,10 @@ Returns HTTP status code 201 (Created) with newly copied environment.
 
 `tenantAlreadyProvisioning` - can't create a copy of an environment because another environment is currently in the process of being created.
 
-`conflictingDeveloperExtensions` - The source environment contains 'uploaded' extensions that are already published to the destination service as 'developer' extensions. This condition will cause conflicts. 
+`conflictingDeveloperExtensions` - The source environment contains 'uploaded' extensions that are already published to the destination service as 'developer' extensions. This condition will cause conflicts.
 
   ```
-  extensionData: 
+  extensionData:
   {
       "conflictingExtensions": [{
           "appId": guid, // The id of the conflicting extension
@@ -364,9 +440,9 @@ Returns HTTP status code 201 (Created) with newly copied environment.
           "developerEnvironmentName": string // The name of the environment if the conflicting extension exists in another environment owned by the tenant requesting the copy operation
       }],
       "sameAadTenant": bool, // Indicates if the conflicts occur on an environment that is owned by the same tenant that is requesting the copy operation
-  } 
+  }
   ```
-  
+
 `environmentReservationFailed` - another environment within the same application family already has the same name
 
 `maximumNumberOfEnvironmentsAllowedReached` - the limit on the number of allowed environments of the provided type has been reached
@@ -378,7 +454,7 @@ Returns HTTP status code 201 (Created) with newly copied environment.
 Deletes the specified environment. This operation *soft deletes* the environment, which means it's retained for fourteen days during which time it can be recovered. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments). If the specified environment has the status `Creating Failed` or `Removing Failed`, the environment won't be retained and will be permanently deleted immediately (*hard delete*).
 
 ```
-DELETE /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -469,7 +545,7 @@ Returns empty HTTP status code 202 (Accepted).
 Recovers a soft-deleted environment. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments).
 
 ```
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/recover
+POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/recover
 ```
 
 ### Route Parameters
@@ -512,11 +588,11 @@ EnvironmentOperation response with HTTP status code 202 (Accepted) with the foll
 
 **INTRODUCED IN:** API version 2.3
 
-Schedules a rename operation on an environment. 
+Schedules a rename operation on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/rename
+POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/rename
 ```
 
 ### Routing parameters
@@ -525,36 +601,36 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 
 `environmentName` - Name of the environment to rename.
 
-### Body 
+### Body
 
 ```
-{ 
-  "NewEnvironmentName": "sandbox" 
-} 
+{
+  "NewEnvironmentName": "sandbox"
+}
 ```
- 
-### Response 
 
-202 Accepted with body. Follows the general "Operations" format, but with specific operation parameters 
+### Response
+
+202 Accepted with body. Follows the general "Operations" format, but with specific operation parameters
 ```
-{ 
-  "id": "11111111-aaaa-2222-bbbb-333333333333", 
-  "type": "environmentRename", // Operation type 
-  "status": "scheduled", 
-  "aadTenantId": "44444444-aaaa-5555-bbbb-666666666666", 
-  "createdOn": "2021-04-22T12:29:06.668254Z", 
-  "createdBy": "greg.chapman@contoso.com", 
-  "errorMessage": "", 
-  "parameters": { // Operation-specific parameters 
-    "oldEnvironmentName": "prod-1", // The old name of the environment 
-    "newEnvironmentName": "prod-2"  // The new name of the environment (the target name) 
-  } 
-} 
+{
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "type": "environmentRename", // Operation type
+  "status": "scheduled",
+  "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
+  "createdOn": "2021-04-22T12:29:06.668254Z",
+  "createdBy": "greg.chapman@contoso.com",
+  "errorMessage": "",
+  "parameters": { // Operation-specific parameters
+    "oldEnvironmentName": "prod-1", // The old name of the environment
+    "newEnvironmentName": "prod-2"  // The new name of the environment (the target name)
+  }
+}
 ```
 
 ### Expected Error Codes
 
-Follows the general "Error response" format with no operation-specific error codes. 
+Follows the general "Error response" format with no operation-specific error codes.
 
 ## Restore environment
 
@@ -564,7 +640,7 @@ Schedules a restore operation an existing environment from a time in the past.
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/restore
+POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/restore
 ```
 
 ### Routing parameters
@@ -576,14 +652,14 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 ### Body
 
 ```
-{ 
-  "EnvironmentName": "x-restored", // Mandatory. The name of the new environment that will be created as the result of the resore operation. 
-  "EnvironmentType": "production", // Mandatory. The type of the new environment. 
-  "PointInTime": "2021-04-22T20:00:00Z", // Mandatory. The point in time to which to restore the environment. Must be in ISO 8601 format in UTC. 
+{
+  "EnvironmentName": "x-restored", // Mandatory. The name of the new environment that will be created as the result of the resore operation.
+  "EnvironmentType": "production", // Mandatory. The type of the new environment.
+  "PointInTime": "2021-04-22T20:00:00Z", // Mandatory. The point in time to which to restore the environment. Must be in ISO 8601 format in UTC.
   "SkipInstallingPTEs": true, // Optional, default is false. Used to uninstall PTEs on the environment created as part of the restore.
   "SkipInstallingThirdPartyGlobalApps": true, // Optional, default is false. Used to uninstall all third-party AppSource apps from the created environment as part of the restore.
   "SkipEnvironmentCleanup": true // Optional, default is false. Used to skip execution of codeunits that clear up selected tables and disable selected setups to avoid unexpected behavior of integrations with external systems.
-} 
+}
 ```
 
 ### Response
@@ -591,27 +667,27 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 202 Accepted with body. Follows the general "Operations" format, but with specific operation parameters.
 
 ```
-{ 
-  "id": "11111111-aaaa-2222-bbbb-333333333333", // Operation ID 
-  "type": "pitRestore",  // Operation type 
-  "status": "queued", // Status 
-  "aadTenantId": "44444444-aaaa-5555-bbbb-666666666666",         
-  "createdOn": "2021-04-23T09:41:28.8300669Z", 
-  "createdBy": "greg.chapman@contoso.com", 
-  "errorMessage": "", 
-  "parameters": { // Parameters mimic the same from the request body 
-    "environmentName": "x-restored",                        
-    "environmentType": "Production", 
-    "restorePointInTime": "2021-04-22T20:00:00Z" 
-  } 
-} 
+{
+  "id": "00001111-aaaa-2222-bbbb-3333cccc4444", // Operation ID
+  "type": "pitRestore",  // Operation type
+  "status": "queued", // Status
+  "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
+  "createdOn": "2021-04-23T09:41:28.8300669Z",
+  "createdBy": "greg.chapman@contoso.com",
+  "errorMessage": "",
+  "parameters": { // Parameters mimic the same from the request body
+    "environmentName": "x-restored",
+    "environmentType": "Production",
+    "restorePointInTime": "2021-04-22T20:00:00Z"
+  }
+}
 ```
 
 ### Expected Error Codes
 
-Follows the general "Error response" format, but with specific error codes. 
+Follows the general "Error response" format, but with specific error codes.
 
-Operation-specific error codes: 
+Operation-specific error codes:
 
 `PitRestoreFailed` - the restore operation failed
 
@@ -622,7 +698,7 @@ Operation-specific error codes:
 Returns an ordered list of available restore periods.
 
 ```
-GET applications/{applicationType}/environments/{environmentName}/availableRestorePeriods 
+GET applications/{applicationType}/environments/{environmentName}/availableRestorePeriods
 ```
 
 ### Response
@@ -630,28 +706,83 @@ GET applications/{applicationType}/environments/{environmentName}/availableResto
 200 OK with body. Body represents an ordered list of available restore periods that are non-overlapping and sorted in ascending order by period start date-time. If there are no available restore periods, the list will be empty. correspondingApplicationPackageVersion indicates the Application version that the environment will be restored to.
 
 ```
-{ 
-  "value": [ 
-    { 
-      "from": "2021-01-25T14:57:04.967Z", 
+{
+  "value": [
+    {
+      "from": "2021-01-25T14:57:04.967Z",
       "to": "2021-01-25T21:06:17.737Z",
       "correspondingApplicationPackageVersion": "21.4.0.0"
-    }, 
-    { 
-      "from": "2021-01-25T21:14:48Z", 
+    },
+    {
+      "from": "2021-01-25T21:14:48Z",
       "to": "2021-01-27T14:33:15.0007416Z",
       "correspondingApplicationPackageVersion": "21.5.0.0"
-    } 
-  ] 
-} 
+    }
+  ]
+}
 ```
+
+## Link Power Platform environment
+
+**INTRODUCED IN:** API version 2.21
+
+Links the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to a Power Platform environment. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment must be linked to a Power Platform environment of the same type (i.e. Production or Sandbox) and in the same Azure Geo.
+
+> [!NOTE]
+> This API endpoint is not supported for service-to-service authentication using Microsoft Entra apps.
+
+```
+POST /admin/v2.24/bap/applications/{applicationFamily}/environments/{environmentName}/linkEnvironment?powerPlatformEnvironmentId={id}
+```
+
+### Routing parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral").
+
+`environmentName` - Name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to link.
+
+`id` - ID of the Power Platform environment to link the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to.
+
+### Response
+200 OK.
+
+### Expected Error Codes
+`BadArgument` - Occurs when the environments can not be linked, for example when either environment is in an inactive state or already linked to another environment, when the environment type or Azure Geo do not match, or when the environment does not exist.
+`Forbidden` - Occurs when the user or application used to authenticate does not have the required permissions.
+
+## Unlink Power Platform environment
+
+**INTRODUCED IN:** API version 2.21
+
+Unlinks the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from a linked Power Platform environment.
+
+> [!NOTE]
+> This API endpoint is not supported for service-to-service authentication using Microsoft Entra apps.
+
+```
+POST /admin/v2.24/bap/applications/{applicationFamily}/environments/{environmentName}/unlinkEnvironment?powerPlatformEnvironmentId={id}
+```
+
+### Routing parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral").
+
+`environmentName` - Name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to unlink.
+
+`id` - ID of the Power Platform environment to unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment from.
+
+### Response
+200 OK.
+
+### Response
+`BadArgument` - Occurs when the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is not linked to a Power Platform environment.
 
 ## Get used storage of an environment by application family and name
 
 Returns used storage properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/usedstorage
+GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/usedstorage
 ```
 
 ### Route Parameters
@@ -668,24 +799,25 @@ Returns used storage information of a single environment if exists.
   "environmentType": string, // Environment type (for example, "Sandbox", "Production")
   "environmentName": string, // Environment name, unique within an application family
   "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-  "databaseStorageInKilobytes": int // Used database storage in kilobytes
+  "databaseStorageInKilobytes": long // Used database storage in kilobytes
 }
 ```
 
-> [!NOTE]  
-> If an error occurs when calculating database storage, the corresponding property will be -1.
+> [!NOTE]
+> - If an error occurs when calculating database storage, the corresponding property value will be -1.
+> - For API versions older than 2.26, the value of `databaseStorageInKilobytes` only supports 32-bit integers. If the database storage usage cannot be represented as a 32-bit integer, the property value will be -1. Consume version 2.26 or newer to correctly retrieve database storage usage for large databases and make sure your client supports 64-bit integers.
 
 ### Expected Error Codes
 
 `environmentNotFound` - the targeted environment couldn't be found
-   
+
    - `target: {applicationFamily}/{environmentName}`
-   
+
 ## Get used storage for all environments
 Returns a list of used storage objects for all the environments.
 
 ```
-GET /admin/v2.19/environments/usedstorage
+GET /admin/v2.24/environments/usedstorage
 ```
 
 ### Response
@@ -698,7 +830,7 @@ Returns a wrapped array of used storage objects.
        "environmentType": string, // Environment type (for example, "Sandbox", "Production")
        "environmentName": string, // Environment name, unique within an application family
        "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-       "databaseStorageInKilobytes": int // Used database storage in kilobytes
+       "databaseStorageInKilobytes": long // Used database storage in kilobytes
     }
   ]
 }
@@ -708,7 +840,7 @@ Returns a wrapped array of used storage objects.
 Returns different types of quotas and their limits.
 
 ```
-GET /admin/v2.19/environments/quotas
+GET /admin/v2.24/environments/quotas
 ```
 
 ### Response
@@ -737,7 +869,7 @@ Returns quotas object.
 Gets the following operations that occurred on an environment.
 
 ```
-GET /admin/v2.19/applications/{applicationType}/environments/{environmentName}/operations 
+GET /admin/v2.24/environments/{environmentName}/operations
 ```
 
 ### Operation types
@@ -754,7 +886,7 @@ Data is returned for the following operation types:
 |EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api_app_management.md#install-an-app)|
 |EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api_app_management.md#uninstall-an-app)|
 |EnvironmentRename|Environment was renamed by using the Admin Center|[Rename an Environment](tenant-admin-center-environments-rename.md)<br><br>[Rename Endpoint](#rename-environment)|
-|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#put-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#put-appinsights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Microsoft Entra groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-using-microsoft-entra-groups)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
+|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#set-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#set-application-insights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Microsoft Entra groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-for-internal-users)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
 |MoveToAnotherAadTenant|An environment was moved to another Microsoft Entra organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)|
 |PitRestore|Environment was restored by using the Admin Center|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
 |Recover<sup>7</sup>|A deleted environment was recovered.|[Delete and Recover Environments in Admin Center](tenant-admin-center-environments-delete.md#recover-an-environment)<br><br>[Delete Endpoint](#recover-environment)|
@@ -777,11 +909,11 @@ Data is returned for the following operation types:
 <sup>7</sup> These operations are only supported with API version 2.17 and later.
 
 <!--
-- EnvironmentRename 
-- PitRestore 
+- EnvironmentRename
+- PitRestore
 - MoveToAnotherAadTenant
-- EnvironmentAppHotfix 
-- EnvironmentAppInstall 
+- EnvironmentAppHotfix
+- EnvironmentAppInstall
 -->
 
 ### Route Parameters
@@ -795,53 +927,53 @@ Data is returned for the following operation types:
 Example `200 OK` response:
 
 ```
-{ 
+{
 
-  "value": [ 
-    { 
+  "value": [
+    {
       "id": "552d3cb2-144e-4195-9a92-1043c4f483e9", // Id of the operation used for tracking
-      "type": "environmentAppInstall", // Type of operation 
-      "status": "succeeded", // Status of operation (enum | "Queued", "Scheduled", "Running", "Succeeded", "Failed", "Canceled", "Skipped") 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", // AAD tenant ID for which the operation was executed 
-      "createdOn": "2021-03-22T15:45:46.537Z", // Date and time the request was created 
-      "errorMessage": "", // Error message for failed operations 
-      "parameters": { // Additional parameters for the operation, specific to every operation type 
-        "appId": "1bb96677-5112-4566-b742-12eebbb9a058", 
-        "targetAppVersion": "17.0.3.0", 
-        "countryCode": "US", 
-        "allowPreviewVersion": true, 
-        "ignoreUpgradeWindow": true, 
-        "acceptIsvEula": true, 
+      "type": "environmentAppInstall", // Type of operation
+      "status": "succeeded", // Status of operation (enum | "Queued", "Scheduled", "Running", "Succeeded", "Failed", "Canceled", "Skipped")
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", // AAD tenant ID for which the operation was executed
+      "createdOn": "2021-03-22T15:45:46.537Z", // Date and time the request was created
+      "errorMessage": "", // Error message for failed operations
+      "parameters": { // Additional parameters for the operation, specific to every operation type
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
+        "targetAppVersion": "17.0.3.0",
+        "countryCode": "US",
+        "allowPreviewVersion": true,
+        "ignoreUpgradeWindow": true,
+        "acceptIsvEula": true,
         "allowDependencyUpdate": true,
       "environmentName": "Production",
       "environmentType": "Production",
-      "productFamily": "BusinessCentral" 
-      } 
-    }, 
-    { 
-      "id": "5fe4ac38-a523-4c1f-80db-acd2cf848c09", 
-      "type": "environmentRename", 
-      "status": "succeeded", 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", 
-      "createdOn": "2021-03-16T18:57:36.223Z", 
-      "startedOn": "2021-03-16T18:57:39.053Z", 
-      "completedOn": "2021-03-16T18:57:47.867Z", 
-      "createdBy": "", 
-      "errorMessage": "", 
-      "parameters": { 
-        "oldEnvironmentName": "Production", 
+      "productFamily": "BusinessCentral"
+      }
+    },
+    {
+      "id": "5fe4ac38-a523-4c1f-80db-acd2cf848c09",
+      "type": "environmentRename",
+      "status": "succeeded",
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
+      "createdOn": "2021-03-16T18:57:36.223Z",
+      "startedOn": "2021-03-16T18:57:39.053Z",
+      "completedOn": "2021-03-16T18:57:47.867Z",
+      "createdBy": "",
+      "errorMessage": "",
+      "parameters": {
+        "oldEnvironmentName": "Production",
         "newEnvironmentName": "Production-deprecated",
       "environmentName": "Production",
       "environmentType": "Production",
-      "productFamily": "BusinessCentral" 
-      } 
-    } 
-  ] 
+      "productFamily": "BusinessCentral"
+      }
+    }
+  ]
 }
 ```
 
 `"environmentName"`, `"environmentType"`, and `"productFamily"` are only included in version 2.7 and later.
- 
+
 ## Get operations on all environments
 
 **INTRODUCED IN:** API version 2.7
@@ -849,7 +981,7 @@ Example `200 OK` response:
 Gets the operations that occurred on all environments.
 
 ```
-GET /admin/v2.19/applications/{applicationType}/environments/operations 
+GET /admin/v2.24/applications/{applicationType}/environments/operations
 ```
 
 ### Operation types
@@ -865,53 +997,53 @@ See [Operation Types](#operation-types).
 Example `200 OK` response:
 
 ```
-{ 
+{
 
-  "value": [ 
-    { 
+  "value": [
+    {
       "id": "552d3cb2-144e-4195-9a92-1043c4f483e9", // Id of the operation used for tracking
-      "type": "environmentAppInstall", // Type of operation 
-      "status": "succeeded", // Status of operation (enum | "Queued", "Scheduled", "Running", "Succeeded", "Failed", "Canceled", "Skipped") 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", // AAD tenant ID for which the operation was executed 
-      "createdOn": "2021-03-22T15:45:46.537Z", // Date and time the request was created 
-      "errorMessage": "", // Error message for failed operations 
-      "parameters": { // Additional parameters for the operation, specific to every operation type 
-        "appId": "1bb96677-5112-4566-b742-12eebbb9a058", 
-        "targetAppVersion": "17.0.3.0", 
-        "countryCode": "US", 
-        "allowPreviewVersion": true, 
-        "ignoreUpgradeWindow": true, 
-        "acceptIsvEula": true, 
+      "type": "environmentAppInstall", // Type of operation
+      "status": "succeeded", // Status of operation (enum | "Queued", "Scheduled", "Running", "Succeeded", "Failed", "Canceled", "Skipped")
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee", // AAD tenant ID for which the operation was executed
+      "createdOn": "2021-03-22T15:45:46.537Z", // Date and time the request was created
+      "errorMessage": "", // Error message for failed operations
+      "parameters": { // Additional parameters for the operation, specific to every operation type
+        "appId": "44445555-eeee-6666-ffff-7777aaaa8888",
+        "targetAppVersion": "17.0.3.0",
+        "countryCode": "US",
+        "allowPreviewVersion": true,
+        "ignoreUpgradeWindow": true,
+        "acceptIsvEula": true,
         "allowDependencyUpdate": true,
       "environmentName": "Sandbox",
       "environmentType": "Sandbox",
-      "productFamily": "BusinessCentral" 
-      } 
-    }, 
-    { 
-      "id": "5fe4ac38-a523-4c1f-80db-acd2cf848c09", 
-      "type": "environmentRename", 
-      "status": "succeeded", 
-      "aadTenantId": "5633d4a2-6d53-4254-868f-b8d70eefed7a", 
-      "createdOn": "2021-03-16T18:57:36.223Z", 
-      "startedOn": "2021-03-16T18:57:39.053Z", 
-      "completedOn": "2021-03-16T18:57:47.867Z", 
-      "createdBy": "", 
-      "errorMessage": "", 
-      "parameters": { 
-        "oldEnvironmentName": "Production", 
+      "productFamily": "BusinessCentral"
+      }
+    },
+    {
+      "id": "5fe4ac38-a523-4c1f-80db-acd2cf848c09",
+      "type": "environmentRename",
+      "status": "succeeded",
+      "aadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
+      "createdOn": "2021-03-16T18:57:36.223Z",
+      "startedOn": "2021-03-16T18:57:39.053Z",
+      "completedOn": "2021-03-16T18:57:47.867Z",
+      "createdBy": "",
+      "errorMessage": "",
+      "parameters": {
+        "oldEnvironmentName": "Production",
         "newEnvironmentName": "Production-deprecated",
       "environmentName": "Production",
       "environmentType": "Production",
-      "productFamily": "BusinessCentral"  
-      } 
-    } 
-  ] 
+      "productFamily": "BusinessCentral"
+      }
+    }
+  ]
 }
 ```
-## See Also
+## Related information
 
-[The Business Central Administration Center API](administration-center-api.md)  
-[Manage Apps](tenant-admin-center-manage-apps.md)  
-[Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md)  
-[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)  
+[The Business Central Administration Center API](administration-center-api.md)
+[Manage Apps](tenant-admin-center-manage-apps.md)
+[Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md)
+[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)

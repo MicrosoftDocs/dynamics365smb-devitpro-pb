@@ -3,10 +3,9 @@ title: "Page Background Tasks"
 description: Explains how to create page background tasks in Business Central.
 author: jswymer
 ms.author: jswymer
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
+ms.reviewer: jswymer
 ---
 
 # Page Background Tasks
@@ -527,7 +526,7 @@ In the event log, events that occur in the child session are recorded in the **S
 Parts are a special category of page designed to be embedded within another page. Part type pages include ListPart, CardPart, and HeadlinePart. Like other page types, you can design a part page to use one or more page background tasks. However, unlike other page types, a part page won't display any data until all page background tasks have completed. This condition applies to synchronous data that's not reliant on the background tasks. In the user-interface, dashes (-) appear for field values while the page background tasks run. To work around this behavior, separate the synchronous data into a separate page part.
 
 
-## See Also
+## Related information
 [Async processing overview](devenv-async-overview.md)   
 [Performance Articles for Developers](../performance/performance-developer.md)   
 [Configuring Business Central Server - Asynchronous Processing](../administration/configure-server-instance.md#PBT)  

@@ -1,11 +1,7 @@
 ---
 title: "Normal Attribute"
 description: "The Normal attribute in AL for Business Central"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: jswymer
 ---
@@ -21,7 +17,7 @@ AL methods on codeunits.
   
 ```AL
 [Normal]
-procedure Normal();
+procedure Normal()
 ```    
   
 ## Remarks

@@ -1,10 +1,6 @@
 ---
 title: "OptionString Property"
-ms.custom: na
 ms.date: 04/01/2020
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c77a75d8-8bff-42fd-8b1a-4eaf745be70f
 caps.latest.revision: 10

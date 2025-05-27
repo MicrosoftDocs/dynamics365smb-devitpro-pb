@@ -1,9 +1,7 @@
 ---
 title: "Update Operation"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ---
 # Update Operation
 Updates a single record. The updated record is passed as a reference and is updated with the latest version.  
@@ -44,5 +42,5 @@ cust.Name = cust.Name + "Updated";
 service.Update(ref cust);  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

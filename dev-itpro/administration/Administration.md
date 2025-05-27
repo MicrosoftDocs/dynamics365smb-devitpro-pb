@@ -3,9 +3,9 @@ title: Administration Tools for on-premises
 description: This article provides an overview of different tools for different administrative tasks in Microsoft Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
-ms.date: 04/01/2021
+ms.date: 04/14/2024
 ms.service: dynamics-365-op
 ---
 # Administration of Business Central On-Premises
@@ -20,7 +20,7 @@ ms.service: dynamics-365-op
 |Perform administration tasks with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Windows PowerShell cmdlets.|[Business Central PowerShell Cmdlets](/powershell/business-central/overview)|  
 |Optimize performance when accessing data from SQL Server.|[Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)|  
 
-## See Also
+## Related information
 
 [Administration of Business Central Online](tenant-administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

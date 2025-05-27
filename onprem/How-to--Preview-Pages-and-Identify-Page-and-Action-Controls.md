@@ -1,12 +1,7 @@
 ---
 title: "How to: Preview Pages and Identify Page and Action Controls"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: c93aac5c-b8d7-4b47-a02b-8f7ecef5a84b
 caps.latest.revision: 19
 ---

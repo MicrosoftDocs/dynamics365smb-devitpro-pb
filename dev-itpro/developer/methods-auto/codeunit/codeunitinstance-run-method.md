@@ -2,11 +2,10 @@
 title: "Codeunit.Run(var Record) Method"
 description: "Loads and executes the unit of AL code that you specify."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 04/15/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -38,7 +37,30 @@ A record from the table that is associated with the codeunit.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+
+## Transaction semantics
+
+For information about transaction and commit semantics for `Codeunit.Run`, see [Codeunit.Run(Integer [, var Record]) Method](codeunit-run-method.md).
+
+## Example
+
+This example runs two codeunits. The first uses a record parameter. The second is defined without a source table.
+
+```al
+var
+    FiscalYearCloseInstance: Codeunit "Fiscal Year-Close";
+    AppMgmtInstance: Codeunit ApplicationManagement;
+    AccountRecord: Record "Accounting Period";
+begin  
+    AccountRecord.Init;  
+    if not FiscalYearCloseInstance.Run(AccountRecord) then  
+      Error('Codeunit run failed (with record).');  
+    if not AppMgmtInstance.Run then  
+      Error('Codeunit run failed.');  
+end;
+```  
+
+## Related information
 [Codeunit Data Type](codeunit-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

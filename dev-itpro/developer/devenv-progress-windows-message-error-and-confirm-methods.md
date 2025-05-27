@@ -1,10 +1,9 @@
 ---
 title: "Progress Windows, Message, Error, and Confirm Methods"
 description: "Using specialized methods in AL for Business Central to display messages and gather input from the user."
-ms.custom: na
 ms.date: 12/20/2023
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ---
 
@@ -116,7 +115,7 @@ end;
 
 The `false` parameter in the `confirm` statement means that `No` is the default.
 
-## See Also  
+## Related information  
 
 [Error handling overview](devenv-al-error-handling.md)   
 [Dialog data type](methods-auto/dialog/dialog-data-type.md)  

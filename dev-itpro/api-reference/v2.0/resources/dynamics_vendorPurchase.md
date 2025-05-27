@@ -4,16 +4,15 @@ description: A vendor purchase object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # vendorPurchase resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a vendor purchase in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -24,7 +23,6 @@ Represents a vendor purchase in [!INCLUDE[prod_short](../../../includes/prod_sho
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET vendorPurchase](../api/dynamics_vendorpurchase_get.md)|vendorPurchase|Gets a vendor purchase object.|
-
 
 
 ## Properties
@@ -39,7 +37,7 @@ Represents a vendor purchase in [!INCLUDE[prod_short](../../../includes/prod_sho
 
 ## JSON representation
 
-Here is a JSON representation of the vendorPurchase resource.
+Here's a JSON representation of the vendorPurchase resource.
 
 
 ```json
@@ -51,9 +49,7 @@ Here is a JSON representation of the vendorPurchase resource.
     "dateFilter_FilterOnly": "date"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET vendorPurchase](../api/dynamics_vendorPurchase_Get.md)

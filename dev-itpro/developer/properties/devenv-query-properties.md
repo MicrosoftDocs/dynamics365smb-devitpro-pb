@@ -1,11 +1,10 @@
 ---
 title: "Query Properties"
 ms.author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 # Query Properties
 
@@ -108,7 +107,7 @@ This article lists properties that apply to the query object.
 
 -->
 
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)  
 [Query Object](../devenv-query-object.md)  
 [Table and Table Extension Properties](devenv-table-properties.md)  

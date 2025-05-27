@@ -1,15 +1,15 @@
 ---
-title: Multifactor authentication for Business Central
-description: This article explains how to add multifactor authentication when your solution uses Microsoft Entra ID as authentication mechanism.
+title: Multifactor authentication (MFA) for Business Central
+description: This article explains how to add multifactor authentication (MFA) when your solution uses Microsoft Entra ID as authentication mechanism.
 author: jswymer
 ms.custom: bap-template
-ms.reviewer: na
 
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: jswymer
 ms.date: 11/13/2023
+ms.reviewer: jswymer
 ---
-# Multifactor authentication for Business Central  
+# Setting up Multifactor Authentication (MFA) for Business Central  
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -33,7 +33,7 @@ Conditional Access in Microsoft Entra ID provides a more granular control of MFA
 For more information about creating policies, see [Conditional Access: Cloud apps, actions, and authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps).
 
 
-## See Also
+## Related information
 
 [Security and Protection](security-and-protection.md)  
 [On-Premises Security](security-onpremises.md)  

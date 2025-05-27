@@ -1,13 +1,8 @@
 ---
 title: Windows Firewall Inbound Rule for Web Client Port
 description: This topic describes how to modify Windows Firewall to allow inbound communication on the port that is used by the Web Client. 
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Creating an Inbound Rule in Windows Firewall for the Port of Microsoft Dynamics NAV Web Client

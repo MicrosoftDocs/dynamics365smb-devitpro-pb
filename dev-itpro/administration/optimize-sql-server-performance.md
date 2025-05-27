@@ -1,10 +1,11 @@
 ---
 title: "Optimizing SQL Server Performance with Business Central"
+description: Describes how to optimize performance when accessing data from the SQL Server database. 
 ms.custom: bap-template
-ms.date: 04/01/2021
+ms.date: 04/16/2024
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Optimizing SQL Server Performance with Business Central
@@ -42,7 +43,7 @@ Azure SQL Database and Azure SQL Managed Instance provide tools for collecting m
 [!INCLUDE[sql_integration_warning](../includes/include-sql-integrations.md)]
 
 
-## See Also  
+## Related information  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)   
 [Microsoft SQL Server documentation](/sql/sql-server/)  
 [SumIndexField Technology \(SIFT\)](../developer/devenv-sift-technology.md)

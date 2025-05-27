@@ -1,11 +1,7 @@
 ---
 title: "Developing Pages and Tables for Microsoft Teams Integration using Events"
 description: Explains how to use events to add custom fields to a Business Central card in Teams
-ms.custom: na
 ms.date: 10/08/2020
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---
@@ -45,7 +41,7 @@ The OnBeforeGetPageSummary event subscription has the following syntax:
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnBeforeGetPageSummary', '', false, false)]
-local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; Handled: Boolean);
+local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; Handled: Boolean)
 ```
 
 #### Parameters
@@ -111,7 +107,7 @@ The OnAfterGetSummaryFields event lets you add or remove from the set of fields 
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetSummaryFields', '', false, false)]
-local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer]);
+local procedure OnAfterGetSummaryFields(PageId: Integer; RecId: RecordId; var FieldList: List of [Integer])
 ```
 
 #### Parameters
@@ -173,7 +169,7 @@ This event allows you to modify, add, or remove fields included in the card thro
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetPageSummary', '', false, false)]
-local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray);
+local procedure OnAfterGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray)
 ```
 
 #### Parameters

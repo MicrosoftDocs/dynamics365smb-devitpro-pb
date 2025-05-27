@@ -1,12 +1,7 @@
 ---
 title: "Random test data"
-ms.custom: na
 ms.date: 01/03/2024
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 61228c16-7d4e-44a7-a3b3-bc3fc2a8b6f9
 caps.latest.revision: 2
 ---

@@ -1,11 +1,11 @@
 ---
 title: "Update 19.1 for Microsoft Dynamics 365 Business Central 2021 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 19.1 update of Business Central online, which is part of 2021 release wave 2.
-ms.custom: na
-ms.date: 11/22/2021
+ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.topic: conceptual
-author: EmmaNielsson
+ms.topic: article
+author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
 # Update 19.1 for Microsoft Dynamics 365 Business Central online 2021 release wave 2
@@ -17,7 +17,7 @@ Would you like to know what has changed in update 19.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://prod.support.services.microsoft.com/en-us/topic/update-19-1-for-microsoft-dynamics-365-business-central-on-premises-2021-release-wave-2-application-build-19-1-32186-platform-build-19-0-32155-2f3d72b9-2d1a-4a00-9093-06e24eb2aa15?preview=true).
+Find an overview of hotfixes in this [article](https://prod.support.services.microsoft.com).
 
 ## Feature changes
 

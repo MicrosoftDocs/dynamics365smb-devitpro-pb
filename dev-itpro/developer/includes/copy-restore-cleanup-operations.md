@@ -3,6 +3,7 @@ author: jobulsin
 ms.topic: include
 ms.date: 01/18/2022
 ms.author: jobulsin
+ms.reviewer: jswymer
 ---
 - The following setups are set to status disabled
   - Doc. Exch. Service Setup

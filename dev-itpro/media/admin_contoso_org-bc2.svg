@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1085.7985"
+   height="565.11053"
+   overflow="hidden"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="admin_contoso_org-bc2.SVG"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs54" />
+  <sodipodi:namedview
+     id="namedview54"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.54375"
+     inkscape:cx="491.00737"
+     inkscape:cy="277.73956"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="2869"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <g
+     id="g54"
+     transform="translate(-148.99263,-82.162163)">
+    <rect
+       x="148.99263"
+       y="82.162163"
+       width="1085.7985"
+       height="565.11053"
+       fill="#ffffff"
+       id="rect1"
+       style="stroke-width:0.815963" />
+    <path
+       d="m 800.5,301.5 v 163.073 h 74.271"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path1" />
+    <path
+       d="m 800.5,301.5 v 48.438 h 74.271"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path2" />
+    <path
+       d="m 702.5,186.5 v 16.953 h 97.682 v 16.953"
+       stroke="#30e5d0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path3" />
+    <path
+       d="m 604.5,301.5 v 163.073 h 74.271"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path4" />
+    <path
+       d="m 604.5,301.5 v 48.438 h 74.271"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path5" />
+    <path
+       d="m 702.182,186.5 v 16.953 H 604.5 v 16.953"
+       stroke="#30e5d0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path6" />
+    <path
+       d="m 409.5,301.5 v 163.073 h 74.271"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path7" />
+    <path
+       d="m 409.5,301.5 v 48.438 h 74.271"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path8" />
+    <path
+       d="m 311.5,186.5 v 16.953 h 97.682 v 16.953"
+       stroke="#30e5d0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path9" />
+    <path
+       d="m 214.5,301.5 v 277.708 h 74.271"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path10" />
+    <path
+       d="m 214.5,301.5 v 163.073 h 74.271"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path11" />
+    <path
+       d="m 214.5,301.5 v 48.438 h 74.271"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path12" />
+    <path
+       d="m 312.182,186.5 v 16.953 H 214.5 v 16.953"
+       stroke="#30e5d0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path13" />
+    <path
+       d="m 280.975,119.967 c 14.378,-17.134 39.923,-19.369 57.058,-4.992 1.806,1.516 3.476,3.186 4.992,4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path14" />
+    <path
+       d="m 343.025,172.033 c -14.378,17.134 -39.923,19.369 -57.058,4.992 -1.806,-1.516 -3.476,-3.186 -4.992,-4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path15" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(266.402,132)"
+       id="text15">Contoso Holding</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(251.022,152)"
+       id="text16">Microsoft 365 account:</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(264.722,167)"
+       id="text17">hq@contoso.com</text>
+    <path
+       d="m 182.975,234.967 c 14.378,-17.134 39.923,-19.369 57.058,-4.992 1.806,1.516 3.476,3.186 4.992,4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path17" />
+    <path
+       d="m 245.025,287.033 c -14.378,17.134 -39.923,19.369 -57.058,4.992 -1.806,-1.516 -3.476,-3.186 -4.992,-4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path18" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(177.023,257)"
+       id="text18">Contoso Corp</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(149.45,272)"
+       id="text19">Production environment</text>
+    <path
+       d="m 288.135,349.601 c 14.482,-16.835 40.041,-18.888 57.087,-4.585 1.671,1.402 3.224,2.936 4.643,4.585"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path19" />
+    <path
+       d="m 349.865,401.399 c -14.482,16.835 -40.041,18.888 -57.087,4.585 -1.671,-1.402 -3.224,-2.935 -4.643,-4.585"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path20" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(287.244,372)"
+       id="text20">Company 1:</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(292.031,387)"
+       id="text21">Corporate</text>
+    <path
+       d="m 287.975,463.967 c 14.378,-17.134 39.923,-19.369 57.058,-4.992 1.806,1.516 3.476,3.186 4.992,4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path21" />
+    <path
+       d="m 350.025,516.033 c -14.378,17.134 -39.923,19.369 -57.058,4.992 -1.806,-1.516 -3.476,-3.186 -4.992,-4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path22" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(287.244,486)"
+       id="text22">Company 2:</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(279.864,501)"
+       id="text23">Manufacturing</text>
+    <path
+       d="m 287.975,578.967 c 14.378,-17.134 39.923,-19.369 57.058,-4.992 1.806,1.516 3.476,3.186 4.992,4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path23" />
+    <path
+       d="m 350.025,631.033 c -14.378,17.134 -39.923,19.369 -57.058,4.992 -1.806,-1.516 -3.476,-3.186 -4.992,-4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path24" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(287.244,601)"
+       id="text24">Company 3:</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(295.991,616)"
+       id="text25">DK Sales</text>
+    <path
+       d="m 378.702,235.157 c 14.096,-17.222 39.312,-19.613 56.322,-5.34 1.919,1.61 3.684,3.398 5.274,5.34"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path25" />
+    <path
+       d="m 440.298,286.843 c -14.096,17.222 -39.312,19.613 -56.322,5.34 -1.918,-1.61 -3.684,-3.398 -5.274,-5.34"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path26" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(378.264,257)"
+       id="text26">DK Training</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(350.911,272)"
+       id="text27">Sandbox environment</text>
+    <path
+       d="m 483.858,349.789 c 14.2,-16.923 39.431,-19.131 56.354,-4.931 1.783,1.497 3.433,3.147 4.93,4.931"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path27" />
+    <path
+       d="m 545.142,401.212 c -14.2,16.923 -39.43,19.13 -56.353,4.93 -1.784,-1.497 -3.434,-3.147 -4.931,-4.93"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path28" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(500.685,379)"
+       id="text28">Sales</text>
+    <path
+       d="m 483.702,464.157 c 14.096,-17.222 39.312,-19.613 56.322,-5.34 1.919,1.61 3.684,3.398 5.274,5.34"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path29" />
+    <path
+       d="m 545.298,515.843 c -14.096,17.222 -39.312,19.613 -56.322,5.34 -1.918,-1.61 -3.684,-3.397 -5.274,-5.34"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path30" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(491.385,493)"
+       id="text30">Logistics</text>
+    <path
+       d="m 671.975,119.967 c 14.378,-17.134 39.923,-19.369 57.058,-4.992 1.806,1.516 3.476,3.186 4.992,4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path31" />
+    <path
+       d="m 734.025,172.033 c -14.378,17.134 -39.923,19.369 -57.058,4.992 -1.806,-1.516 -3.476,-3.186 -4.992,-4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path32" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(654.418,132)"
+       id="text32">Contoso Germany</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(641.751,152)"
+       id="text33">Microsoft 365 account:</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(660.491,167)"
+       id="text34">de@contoso.de</text>
+    <path
+       d="m 573.975,234.967 c 14.378,-17.134 39.923,-19.369 57.058,-4.992 1.806,1.516 3.476,3.186 4.992,4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path34" />
+    <path
+       d="m 636.025,287.033 c -14.378,17.134 -39.923,19.369 -57.058,4.992 -1.806,-1.516 -3.476,-3.186 -4.992,-4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path35" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(573.352,257)"
+       id="text35">Contoso DE</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(540.179,272)"
+       id="text36">Production environment</text>
+    <path
+       d="m 679.135,349.601 c 14.482,-16.835 40.041,-18.888 57.087,-4.585 1.671,1.402 3.224,2.936 4.643,4.585"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path36" />
+    <path
+       d="m 740.865,401.399 c -14.482,16.835 -40.041,18.888 -57.087,4.585 -1.671,-1.402 -3.223,-2.935 -4.643,-4.585"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path37" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(677.973,372)"
+       id="text37">Company 1:</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(687.167,387)"
+       id="text38">DE Sales</text>
+    <path
+       d="m 678.975,463.967 c 14.378,-17.134 39.923,-19.369 57.058,-4.992 1.806,1.516 3.476,3.186 4.992,4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path38" />
+    <path
+       d="m 741.025,516.033 c -14.378,17.134 -39.923,19.369 -57.058,4.992 -1.806,-1.516 -3.476,-3.186 -4.992,-4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path39" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(677.973,486)"
+       id="text39">Company 2:</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(670.667,501)"
+       id="text40">DE Warehouse</text>
+    <path
+       d="m 768.975,234.967 c 14.378,-17.134 39.923,-19.369 57.058,-4.992 1.806,1.516 3.476,3.186 4.992,4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path40" />
+    <path
+       d="m 831.025,287.033 c -14.378,17.134 -39.923,19.369 -57.058,4.992 -1.806,-1.516 -3.476,-3.186 -4.992,-4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path41" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(769.44,257)"
+       id="text41">DE Training</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(741.64,272)"
+       id="text42">Sandbox environment</text>
+    <path
+       d="m 874.135,349.601 c 14.482,-16.835 40.041,-18.888 57.087,-4.585 1.671,1.402 3.224,2.936 4.643,4.585"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path42" />
+    <path
+       d="m 935.865,401.399 c -14.482,16.835 -40.041,18.888 -57.087,4.585 -1.671,-1.402 -3.223,-2.935 -4.643,-4.585"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path43" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(882.528,379)"
+       id="text43">DE Sales</text>
+    <path
+       d="m 873.975,463.967 c 14.378,-17.134 39.923,-19.369 57.058,-4.992 1.806,1.516 3.476,3.186 4.992,4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path44" />
+    <path
+       d="m 936.025,516.033 c -14.378,17.134 -39.923,19.369 -57.058,4.992 -1.806,-1.516 -3.476,-3.186 -4.992,-4.992"
+       stroke="#a5a5a5"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path45" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="12px"
+       transform="translate(873.228,493)"
+       id="text45">DE Logistics</text>
+    <rect
+       x="1025.5"
+       y="204.5"
+       width="205"
+       height="78"
+       stroke="#30e5d0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect45" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1034.68,227)"
+       id="text46">Environments in</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1034.68,250)"
+       id="text47">Business Central</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1034.68,272)"
+       id="text48">online</text>
+    <path
+       d="m 963.5,186.5 c 16.016,0 29,2.164 29,4.833 v 41.29 c 0,2.669 12.98,4.833 29,4.833 -16.02,0 -29,2.164 -29,4.833 v 50.378 c 0,2.669 -12.984,4.833 -29,4.833 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path48" />
+    <path
+       d="m 963.5,186.5 c 16.016,0 29,2.164 29,4.833 v 41.29 c 0,2.669 12.98,4.833 29,4.833 -16.02,0 -29,2.164 -29,4.833 v 50.378 c 0,2.669 -12.984,4.833 -29,4.833"
+       stroke="#30e5d0"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path49" />
+    <rect
+       x="1075.5"
+       y="414.5"
+       width="155"
+       height="72"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect49" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1084.53,436)"
+       id="text49">Companies in</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1084.53,459)"
+       id="text50">Business Central</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1084.53,481)"
+       id="text51">environments</text>
+    <path
+       d="m 996.5,303.5 c 21.27,0 38.51,2.873 38.51,6.418 v 134.064 c 0,3.544 17.24,6.417 38.5,6.417 -21.26,0 -38.5,2.874 -38.5,6.418 v 160.266 c 0,3.544 -17.24,6.417 -38.51,6.417 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path51" />
+    <path
+       d="m 996.5,303.5 c 21.27,0 38.51,2.873 38.51,6.418 v 134.064 c 0,3.544 17.24,6.417 38.5,6.417 -21.26,0 -38.5,2.874 -38.5,6.418 v 160.266 c 0,3.544 -17.24,6.417 -38.51,6.417"
+       stroke="#00b7c3"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path52" />
+    <rect
+       x="978.5"
+       y="124.5"
+       width="252"
+       height="39"
+       stroke="#d9f0f2"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect52" />
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(988.048,146)"
+       id="text52">Microsoft Entra ID</text>
+    <text
+       font-family="'Segoe UI', 'Segoe UI_MSFontService', sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1142.47,146)"
+       id="text53">tenants</text>
+    <path
+       d="m 896.5,85.5001 c 22.091,0 40,2.9846 40,6.6664 v 47.8415 c 0,3.682 17.909,6.666 40,6.666 -22.091,0 -40,2.985 -40,6.667 v 35.493 c 0,3.681 -17.909,6.666 -40,6.666 z"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       id="path53" />
+    <path
+       d="m 896.5,85.5001 c 22.091,0 40,2.9846 40,6.6664 v 47.8415 c 0,3.682 17.909,6.666 40,6.666 -22.091,0 -40,2.985 -40,6.667 v 35.493 c 0,3.681 -17.909,6.666 -40,6.666"
+       stroke="#d9f0f2"
+       stroke-width="1.33333"
+       stroke-miterlimit="8"
+       fill="none"
+       fill-rule="evenodd"
+       id="path54" />
+  </g>
+</svg>

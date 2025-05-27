@@ -1,10 +1,6 @@
 ---
 title: "PartType Property"
-ms.custom: na
 ms.date: 04/01/2020
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 349c9d29-18c7-4544-8560-f4eabba8f3fb
 caps.latest.revision: 11

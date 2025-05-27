@@ -1,8 +1,6 @@
 ---
 title: "Type Property"
-ms.custom: na
 ms.date: 02/25/2022
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +14,6 @@ The Type property is applicable to the following types:
 - [Type (Entitlement) Property](devenv-type-entitlement-property.md)
 - [Type (Report) Property](devenv-type-report-property.md)
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

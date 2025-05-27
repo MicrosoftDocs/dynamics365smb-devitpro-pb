@@ -1,12 +1,7 @@
 ---
 title: "How to: Uninstall Language Modules"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 25734b06-5c44-47b1-ad76-b286fb0418c0
 caps.latest.revision: 11
 ---

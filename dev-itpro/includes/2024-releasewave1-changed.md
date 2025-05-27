@@ -1,0 +1,1 @@
+> **CHANGED IN:** Business Central 2024 release wave 1

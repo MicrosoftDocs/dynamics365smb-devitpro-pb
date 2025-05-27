@@ -2,7 +2,6 @@
 title: Deploy the Web Server Components
 description: Understand the network architecture, users, security, deployment phases for installing and configuring the Business Central Web Server Components.
 ms.date: 10/11/2021
-ms.reviewer: na
 ms.topic: overview
 author: jswymer
 ms.custom: bap-template 
@@ -87,6 +86,6 @@ You can help secure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 
 
  For more information, see [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md).  
 
-## See Also  
+## Related information  
  [Configure Internet Information Services](configure-iis.md)  
  [Configuring-the Business Central Web Server](../administration/configure-web-server.md)  

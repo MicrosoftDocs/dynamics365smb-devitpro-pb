@@ -1,10 +1,8 @@
 ---
 title: Configuring SSL to Secure the Web Client Connection
 description: Learn how to secure data that is transmitted over the internet by enabling Secure Sockets Layer on the connection to Web Client.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 8079f309-e5ca-4d23-a6b9-412892a565ad
 caps.latest.revision: 23
 author: jswymer
@@ -79,5 +77,5 @@ In a production environment, you should obtain an SSL certificate from a certifi
     ```  
 4.  Save the navsettings.json file.  
   
-## See Also  
+## Related information  
   [Business Central Web Server Overview](web-server-overview.md)

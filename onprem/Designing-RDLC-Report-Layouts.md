@@ -1,12 +1,7 @@
 ---
 title: "Designing RDLC Report Layouts"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 9677f4f9-1053-45b3-8837-d667324f16fb
 caps.latest.revision: 21
 ---

@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/28/2023
 ms.custom: bap-template
 ---
@@ -76,7 +76,7 @@ The request body also called the payload, follows the request URL and specifies 
 
 ## Example
 
-This example illustrates how you can add a team, channel, and Business Central tab. You add a tab in Teams that displays page 9305 **Sale Orders**. There are several tools that you can use, like AL code, PowerShell, Postman, and more. In this example, you use the Graph Explorer. For details about using Graph Explorer, see [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features).
+This example illustrates how you can add a team, channel, and Business Central tab. You add a tab in Teams that displays page 9305 **Sale Orders**. There are several tools that you can use, like AL code, PowerShell, API explorer tools, and more. In this example, you use the Graph Explorer. For details about using Graph Explorer, see [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features).
 
 ### Create team
 
@@ -210,6 +210,6 @@ The final step is to add a Business Central tab to the channel by using the [tab
 
 Change the recommended content for the tab. See [Add and Remove Recommended Content for Business Central Tabs](devenv-develop-for-teams-tab-content.md).
 
-## See also
+## Related information
 
 [Developing for Microsoft Teams Integration](devenv-develop-for-teams.md)  

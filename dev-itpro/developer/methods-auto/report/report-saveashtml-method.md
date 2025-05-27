@@ -2,11 +2,10 @@
 title: "Report.SaveAsHtml(Integer, Text [, var Record]) Method"
 description: "Saves a report as an HTML file."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/02/2023
-ms.reviewer: na
+ms.date: 10/07/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -14,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Report.SaveAsHtml(Integer, Text [, var Record]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.
+Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. This method is only supported when a report uses a Word report layout when it is run.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
@@ -90,7 +89,7 @@ end;
 [!INCLUDE[report_save_as_example](../../includes/include-report-saveas-example.md)]
 
 
-## See Also
+## Related information
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

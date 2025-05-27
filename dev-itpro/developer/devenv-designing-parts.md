@@ -2,7 +2,6 @@
 title: Page Parts Overview
 description: "Provides and overview of the parts concept."
 author: mikebcMSFT
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.topic: overview
@@ -85,7 +84,7 @@ Like other page types, you can design a part page to use one or more page backgr
 - Parts aren't intended to be displayed on their own without a hosting page.
 
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  

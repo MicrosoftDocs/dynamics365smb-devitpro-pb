@@ -1,10 +1,8 @@
 ---
 title: Events discoverability
 description: Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario.
-ms.custom: na
 ms.date: 01/08/2024
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ---
 
@@ -46,7 +44,7 @@ All the recorded events display in the order they were called. The Event Recorde
 
 You can identify the Event types, additionally, you can discover which object types and methods raised the events with the details like calling methods, object types, and object names. For more information about Events, see [Events in AL](devenv-events-in-al.md).
   
-## See also
+## Related information
 [Events in AL](devenv-events-in-al.md)  
 [Publishing Events](devenv-publishing-events.md)  
 [Raising Events](devenv-raising-events.md)  

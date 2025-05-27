@@ -2,11 +2,10 @@
 title: Create a .NET Wrapper Module
 description: This topic provides a description of how to contribute a .NET wrapper module.
 author: bholtorf
-ms.custom: na
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: bholtorf
 ms.date: 04/01/2021
+ms.reviewer: bholtorf
 ---
 
 # Create a .NET Wrapper Module
@@ -198,7 +197,7 @@ This temporary table makes it straightforward to add overloads to the facade. Fo
 
 ```
 
-## See Also
+## Related information
 [Module Architecture](devenv-blueprint.md)  
 [Getting Started with Modules in the System Application](devenv-getting-started.md)  
 [Set Up an Environment for Developing a Module](devenv-set-up-an-environment.md)  

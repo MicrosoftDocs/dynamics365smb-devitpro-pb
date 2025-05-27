@@ -4,16 +4,15 @@ description: A customer payment journal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # customerPaymentJournal resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a customer payment journal in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -33,7 +32,6 @@ Represents a customer payment journal in [!INCLUDE[prod_short](../../../includes
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[account](dynamics_account.md)|account |Gets the account of the customerPaymentJournal.|
 |[customerPayments](dynamics_customerpayment.md)|customerPayments |Gets the customerpayments of the customerPaymentJournal.|
 
 ## Properties
@@ -49,7 +47,7 @@ Represents a customer payment journal in [!INCLUDE[prod_short](../../../includes
 
 ## JSON representation
 
-Here is a JSON representation of the customerPaymentJournal resource.
+Here's a JSON representation of the customerPaymentJournal resource.
 
 
 ```json
@@ -63,7 +61,7 @@ Here is a JSON representation of the customerPaymentJournal resource.
 }
 ```
 
-## See also
+## Related information
 
 [GET customerPaymentJournal](../api/dynamics_customerPaymentJournal_Get.md)  
 [DELETE customerPaymentJournal](../api/dynamics_customerPaymentJournal_Delete.md)  

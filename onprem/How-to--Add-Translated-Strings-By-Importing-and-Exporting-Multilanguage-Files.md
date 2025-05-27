@@ -1,13 +1,8 @@
 ---
 title: Importing and Exporting Multilanguage Files
 description: Add string translations for UI elements in a country/region-specific version, and install a language module to support viewing in different languages.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 116f40e8-26fe-46d4-9da9-ae5830fbe509
 caps.latest.revision: 19
 ---

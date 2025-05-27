@@ -1,11 +1,12 @@
 ---
-title: customerLedgerEntry resource type
-description: A customer ledger entry object in Dynamics 365 Business Central.
+title: customerLedgerEntry resource type (Beta)
+description: A customer ledger entry object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/11/2022
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # customerLedgerEntry resource type (Beta)
@@ -79,5 +80,5 @@ Here is a JSON representation of the customerLedgerEntry resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET customerLedgerEntry](../api/dynamics_customerledgerentry_get.md)

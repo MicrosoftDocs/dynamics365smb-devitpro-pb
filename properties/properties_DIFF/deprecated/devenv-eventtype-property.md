@@ -1,10 +1,7 @@
 ---
 title: "EventType Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0d10d3d0-071f-4241-8f07-58a15a0ee1b4
 caps.latest.revision: 4

@@ -1,10 +1,7 @@
 ---
 title: "EnabledIfSelection Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6d15311a-94fa-40d8-873a-38342ccbfc6a
 caps.latest.revision: 4

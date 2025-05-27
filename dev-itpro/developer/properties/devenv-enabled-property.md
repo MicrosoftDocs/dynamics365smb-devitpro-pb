@@ -1,12 +1,11 @@
 ---
-title: "Enabled Property"
+title: "Enabled property"
 description: "Sets a value that indicates whether a field or key is enabled or disabled, or whether a control can respond to user-generated events."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,8 +16,8 @@ author: SusanneWindfeldPedersen
 Sets a value that indicates whether a field or key is enabled or disabled, or whether a control can respond to user-generated events.
 
 ## Applies to
--   Table Field
--   Table Key
+-   Table field
+-   Table key
 -   Page Label
 -   Page Field
 -   Page Group
@@ -29,6 +28,7 @@ Sets a value that indicates whether a field or key is enabled or disabled, or wh
 -   Page Action Group
 -   Page Custom Action
 -   Page System Action
+-   Page File Upload Action
 -   Profile
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -59,7 +59,7 @@ On pages, you use the **Enabled** property for group, part, field, and action co
 > [!NOTE]  
 > You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Enabled** property, it must be set as a global page variable.
 
-## See Also
+## Related information
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  

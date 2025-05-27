@@ -4,16 +4,15 @@ description: A purchase receipt object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # purchaseReceipt resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a purchase receipt in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -40,7 +39,7 @@ Represents a purchase receipt in [!INCLUDE[prod_short](../../../includes/prod_sh
 |id|GUID|The unique ID of the purchase receipt. Non-editable.|
 |number|string|Specifies the number of the purchase receipt.|
 |invoiceDate|date|The invoice date .|
-|postingDate|date|The date that the purchase receipt   is posted.|
+|postingDate|date|The date that the purchase receipt is posted.|
 |dueDate|date|The date the purchase receipt is due.|
 |vendorNumber|string|Specifies vendor's number.|
 |vendorName|string|Specifies vendor's name.|
@@ -73,7 +72,7 @@ Represents a purchase receipt in [!INCLUDE[prod_short](../../../includes/prod_sh
 
 ## JSON representation
 
-Here is a JSON representation of the purchaseReceipt resource.
+Here's a JSON representation of the purchaseReceipt resource.
 
 
 ```json
@@ -113,9 +112,7 @@ Here is a JSON representation of the purchaseReceipt resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET purchaseReceipt](../api/dynamics_purchaseReceipt_Get.md)

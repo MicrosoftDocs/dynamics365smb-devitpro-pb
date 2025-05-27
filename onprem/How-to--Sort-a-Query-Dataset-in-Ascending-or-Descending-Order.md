@@ -1,12 +1,7 @@
 ---
 title: "How to: Sort a Query Dataset in Ascending or Descending Order"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 16380cad-3f90-4ad2-90e7-9eca2795d84e
 caps.latest.revision: 7
 ---

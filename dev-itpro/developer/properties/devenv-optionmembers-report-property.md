@@ -1,8 +1,6 @@
 ---
 title: "OptionMembers Property (Report)"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ---
 
@@ -17,7 +15,7 @@ Gets the list of options that are available in the field that is currently selec
 - Report columns  
 
 
-## See Also
+## Related information
 
 [OptionMembers Property (Field)](devenv-optionmembers-field-property.md)   
 [Report Object](../devenv-report-object.md)   

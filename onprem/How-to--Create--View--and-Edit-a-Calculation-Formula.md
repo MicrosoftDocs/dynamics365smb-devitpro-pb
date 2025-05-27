@@ -1,13 +1,8 @@
 ---
 title: FlowField Calculation Formula
 description: This topic describes the steps to take to create and revise a calculation formula for a FlowField of a table for create, view, and edit operations.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: e10905e2-25ef-4e94-ada5-bfd16ba7ef80
 caps.latest.revision: 16
 ---

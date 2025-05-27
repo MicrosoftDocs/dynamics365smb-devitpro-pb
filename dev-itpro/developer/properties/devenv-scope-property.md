@@ -1,9 +1,7 @@
 ---
 title: "Scope Property"
 description: The scope property for AL has two functions, it can be defined for actions or for tables
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -16,6 +14,6 @@ The Scope property is applicable to the following types:
 - [Scope Property (Action)](devenv-scope-action-property.md)
 - [Scope Property (Table)](devenv-scope-table-property.md)
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)

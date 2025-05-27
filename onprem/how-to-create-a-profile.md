@@ -2,13 +2,8 @@
 title: Create a Profile
 description: Profile card is used to create profiles for end users – typically based on job titles in a company, and each profile is associated with a Role Center.
 ms.author: solsen
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: a70e92fa-2956-4895-a798-975ae0d1d475
 caps.latest.revision: 6
 ---

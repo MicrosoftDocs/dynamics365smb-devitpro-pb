@@ -1,10 +1,7 @@
 ---
 title: "ContainerType Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9765a761-62d2-4343-9e5c-73cb01b887b0
 caps.latest.revision: 8

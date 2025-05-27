@@ -4,16 +4,15 @@ description: A sales quote object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesQuote resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales quote in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,7 +27,13 @@ Represents a sales quote in [!INCLUDE[prod_short](../../../includes/prod_short.m
 |[POST salesQuote](../api/dynamics_salesquote_create.md)|salesQuote|Creates a sales quote object.|
 |[PATCH salesQuote](../api/dynamics_salesquote_update.md)|salesQuote|Updates a sales quote object.|
 
-## Bound Actions
+## Bound actions
+
+The salesQuote resource type offers a bound action called `send`, which sends the corresponding salesQuote batch.
+This is illustrated in the following example:
+`SEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesQuotes({id})/Microsoft.NAV.send`
+
+The response has no content; the response code is 204.
 
 The salesQuote resource type offers a bound action called `makeInvoice` which make invoices the corresponding salesQuote batch.
 This is illustrated in the following example:
@@ -42,26 +47,20 @@ This is illustrated in the following example:
 
 The response has no content; the response code is 204.
 
-The salesQuote resource type offers a bound action called `send` which sends the corresponding salesQuote batch.
-This is illustrated in the following example:
-`SEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesQuotes({id})/Microsoft.NAV.send`
-
-The response has no content; the response code is 204.
-
 ## Navigation
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[customer](dynamics_customer.md)|customer |Gets the customer of the salesQuote.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the salesQuote.|
 |[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the salesQuote.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the salesQuote.|
 |[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the salesQuote.|
 |[shipmentMethod](dynamics_shipmentmethod.md)|shipmentMethod |Gets the shipmentmethod of the salesQuote.|
+|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesQuote.|
 |[salesQuoteLines](dynamics_salesquoteline.md)|salesQuoteLines |Gets the salesquotelines of the salesQuote.|
 |[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the salesQuote.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the salesQuote.|
-|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesQuote.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the salesQuote.|
 
 ## Properties
 
@@ -72,7 +71,7 @@ The response has no content; the response code is 204.
 |externalDocumentNumber|string|Specifies an external document number for the sales quote.|
 |documentDate|date|The quote date.|
 |postingDate|date|The date that the sales quote   is posted.|
-|dueDate|date|The date the sales quote is due.|
+|dueDate|date|T he date the sales quote is due.|
 |customerId|GUID|The unique ID of customer.  |
 |customerNumber|string|The customer's number.|
 |customerName|string|The customer's name.|
@@ -120,7 +119,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here is a JSON representation of the salesQuote resource.
+Here's a JSON representation of the salesQuote resource.
 
 
 ```json
@@ -177,11 +176,9 @@ Here is a JSON representation of the salesQuote resource.
     "email": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET salesQuote](../api/dynamics_salesQuote_Get.md)  
 [DELETE salesQuote](../api/dynamics_salesQuote_Delete.md)  
 [POST salesQuote](../api/dynamics_salesQuote_Create.md)  

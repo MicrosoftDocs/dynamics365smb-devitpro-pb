@@ -1,12 +1,7 @@
 ---
 title: "Sizing a Control Add-in on a Page"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 4070244f-e203-4c2f-b157-628ce4f871a2
 caps.latest.revision: 13
 ---

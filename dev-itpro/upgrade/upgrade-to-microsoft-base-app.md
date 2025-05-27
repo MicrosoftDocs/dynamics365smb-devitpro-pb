@@ -1,12 +1,12 @@
 ---
 title:  "Upgrading Customized C/AL Application to Microsoft Base Application"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 16 Microsoft Base Application
-ms.custom: na
-ms.date: 04/15/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.custom: evergreen
+ms.date: 04/18/2024
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading Customized C/AL Application to Microsoft Base Application Version 16
 
@@ -179,7 +179,7 @@ You'll create two versions of this extension. The first version contains the tab
 
     ```
     {
-      "id": "11111111-aaaa-2222-bbbb-333333333333",
+      "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "name": "bc14tablesonly",
       "publisher": "My publisher",
       "version": "1.0.0.0",
@@ -641,7 +641,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
 
-## See Also  
+## Related information  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

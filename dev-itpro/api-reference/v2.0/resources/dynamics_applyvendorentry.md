@@ -4,14 +4,13 @@ description: An apply vendor entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # applyVendorEntry resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an apply vendor entry in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -23,13 +22,6 @@ Represents an apply vendor entry in [!INCLUDE[prod_short](../../../includes/prod
 |:--------------------|:-----------|:-------------------------|
 |[GET applyVendorEntry](../api/dynamics_applyvendorentry_get.md)|applyVendorEntry|Gets a apply vendor entry object.|
 |[PATCH applyVendorEntry](../api/dynamics_applyvendorentry_update.md)|applyVendorEntry|Updates a apply vendor entry object.|
-
-
-## Navigation
-
-| Navigation |Return Type| Description |
-|:----------|:----------|:-----------------|
-|[vendor](dynamics_vendor.md)|vendor |Gets the vendor of the applyVendorEntry.|
 
 ## Properties
 
@@ -46,10 +38,11 @@ Represents an apply vendor entry in [!INCLUDE[prod_short](../../../includes/prod
 |vendorName|string|Specifies vendor's name.|
 |description|string|Specifies the description of the apply vendor entry.|
 |remainingAmount|decimal|The amount including VAT.|
+|lastModifiedDateTime|datetime|The last datetime the apply vendor entry was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the applyVendorEntry resource.
+Here's a JSON representation of the applyVendorEntry resource.
 
 
 ```json
@@ -64,16 +57,16 @@ Here is a JSON representation of the applyVendorEntry resource.
     "vendorNumber": "string",
     "vendorName": "string",
     "description": "string",
-    "remainingAmount": "decimal"
+    "remainingAmount": "decimal",
+    "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Remarks
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
+## Related information
 
-## See Also
 [GET applyVendorEntry](../api/dynamics_applyvendorentry_get.md)  
 [PATCH applyVendorEntry](../api/dynamics_applyvendorentry_update.md)  

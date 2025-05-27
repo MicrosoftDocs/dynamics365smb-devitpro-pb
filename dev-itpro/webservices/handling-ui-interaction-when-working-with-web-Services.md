@@ -1,10 +1,8 @@
 ---
 title: Handling UI interaction when working with web services
 description: Describes how UI methods can make web service calls fail. 
-ms.custom: na
 ms.date: 12/18/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Handling UI interaction when working with web services
@@ -34,7 +32,7 @@ You must handle exceptions in client code that calls a [!INCLUDE[prod_short](../
 
 For more information about common HTTP status codes and how to deal with them in your client code, see [Troubleshooting web service errors](./web-service-troubleshooting.md).
   
-## See also
+## Related information
 
 [Troubleshooting web service errors](web-service-troubleshooting.md)   
 [Web Services Overview](web-services.md)   

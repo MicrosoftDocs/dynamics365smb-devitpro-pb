@@ -4,16 +4,15 @@ description: A general ledger entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # generalLedgerEntry resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a general ledger entry in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -48,11 +47,13 @@ Represents a general ledger entry in [!INCLUDE[prod_short](../../../includes/pro
 |description|string|Specifies the description of the general ledger entry.|
 |debitAmount|decimal|Specifies the debitAmount of the general ledger entry.|
 |creditAmount|decimal|Specifies the creditAmount of the general ledger entry.|
+|additionalCurrencyDebitAmount|decimal||
+|additionalCurrencyCreditAmount|decimal||
 |lastModifiedDateTime|datetime|The last datetime the general ledger entry was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the generalLedgerEntry resource.
+Here's a JSON representation of the generalLedgerEntry resource.
 
 
 ```json
@@ -67,12 +68,12 @@ Here is a JSON representation of the generalLedgerEntry resource.
     "description": "string",
     "debitAmount": "decimal",
     "creditAmount": "decimal",
+    "additionalCurrencyDebitAmount": "decimal",
+    "additionalCurrencyCreditAmount": "decimal",
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET generalLedgerEntry](../api/dynamics_generalLedgerEntry_Get.md)

@@ -1,8 +1,6 @@
 ---
 title: "Width Property"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ms.assetid: 59701d5d-65f8-42e8-9b1b-8c47709cf4bc
 caps.latest.revision: 22
@@ -62,7 +60,7 @@ The following example sets the column width of a field to 50 characters.
   
 <!-- For controls on the [!INCLUDE[rtc](includes/rtc_md.md)] you always have the option of resizing column width in the UI, but when running the [!INCLUDE[nav_web](includes/nav_web_md.md)] the **Width** property can be set to a fixed number to increase readability. -->
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Use Designer](../devenv-inclient-designer.md)  

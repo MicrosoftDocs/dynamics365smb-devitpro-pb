@@ -6,8 +6,9 @@ author: SusanneWindfeldPedersen
 
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create vendor defaultDimensions
@@ -38,7 +39,7 @@ If successful, this method returns ```201 Created``` response code and a **vendo
 ## Example
 
 **Request**  
-Here is an example of a request.
+Here's an example of a request.
 
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -77,7 +78,7 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/vendors({ve
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 
 [Vendor](../resources/dynamics_vendor.md)  

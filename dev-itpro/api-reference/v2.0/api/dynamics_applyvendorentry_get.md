@@ -4,12 +4,11 @@ description: Gets an apply vendor entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 02/01/2023
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get applyVendorEntries
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
@@ -32,7 +31,7 @@ GET businesscentralPrefix/companies({id})/vendorPaymentJournals({id})/vendorPaym
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -42,14 +41,14 @@ If successful, this method returns a ```200 OK``` response code and an **applyVe
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/applyVendorEntries({id})
 ```
 
 **Response**
-Here is an example of the response.
+Here's an example of the response.
 
 
 ```json
@@ -72,8 +71,7 @@ Here is an example of the response.
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
-## See Also
+## Related information
 
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-[applyVendorEntry](../resources/dynamics_applyVendorEntry.md)  
-[PATCH applyVendorEntry](dynamics_applyvendorentry_update.md)  
+[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[applyVendorEntry](../resources/dynamics_applyVendorEntry.md)

@@ -1,13 +1,12 @@
 ---
 title: Delete item picture  
 description: Deletes the picture of the item in Dynamics 365 Business Central.
- 
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete item picture
@@ -18,6 +17,7 @@ Deletes the picture of the item in [!INCLUDE[prod_short](../../../includes/prod_
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+
 ```
 DELETE businesscentralPrefix/companies({companyId})/items({itemId})/picture
 ```
@@ -27,10 +27,10 @@ DELETE businesscentralPrefix/companies({companyId})/items({itemId})/picture
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **items**, the **items** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **items**, the **items** won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```204 No Content``` response code and it deletes the default dimensions for the item and corresponding dimension.
@@ -39,7 +39,7 @@ If successful, this method returns a ```204 No Content``` response code and it d
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({itemId})/picture
@@ -49,10 +49,11 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({it
 
 No Content.
 
-## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+## Related information
 
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Item](../resources/dynamics_item.md)  
-[Create item defaultDimensions](dynamics_item_create_defaultdimensions.md)  
-[Update item defaultDimensions](dynamics_item_update_defaultdimensions.md)  
-[Get item defaultDimensions](dynamics_item_get_defaultdimensions.md)  
+[Create item picture](dynamics_item_create_picture.md)  
+[Update item picture](dynamics_item_update_picture.md)  
+[Get item picture](dynamics_item_get_picture.md)  
+

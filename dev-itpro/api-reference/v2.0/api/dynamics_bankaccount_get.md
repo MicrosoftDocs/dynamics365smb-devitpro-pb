@@ -4,8 +4,9 @@ description: Gets a bankAccount object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get bankAccounts
@@ -13,7 +14,6 @@ ms.author: solsen
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Retrieve the properties and relationships of a bankAccount object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
-
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
@@ -28,7 +28,7 @@ GET businesscentralPrefix/companies({id})/bankAccounts({id})
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and an **bankAccounts** object in the response body.
@@ -37,14 +37,14 @@ If successful, this method returns a ```200 OK``` response code and an **bankAcc
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/bankAccounts({id})
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 {
@@ -54,8 +54,8 @@ Here is an example of the response.
 }
 ```
 
+## Related information
 
-## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [bankaccount](../resources/dynamics_bankaccount.md)    
 [Delete bankaccount](dynamics_bankaccount_Delete.md)    

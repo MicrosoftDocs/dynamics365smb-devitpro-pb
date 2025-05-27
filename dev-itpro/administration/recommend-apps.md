@@ -1,8 +1,7 @@
 ---
 title: Recommend Apps
 description: Curate a collection of Dynamics 365 apps that your customers can choose from with the Recommended Apps extension. 
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ms.search.form: 4750, 4751, 
 author: bholtorf
 ms.date: 07/05/2021
@@ -52,6 +51,6 @@ You must use the **Recommended Apps** codeunit to build collections. The followi
 
 When your collection is ready, you can deploy it to customer tenants. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md). Afterward, the **Recommended Apps** page will display the apps and your customer can install them. Customers can choose the app in the list to learn more about it, and the details include a link to install the app from AppSource.
 
-## See Also
+## Related information
 
 [Onboarding experiences in Business Central](onboarding-experiences.md)  

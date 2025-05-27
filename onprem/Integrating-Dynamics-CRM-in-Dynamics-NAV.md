@@ -1,13 +1,8 @@
 ---
 title: "Integrating Dynamics 365 for Sales in Dynamics NAV"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2018"
 ---
 # Integrating Dynamics 365 for Sales in Dynamics NAV
 [!INCLUDE[navnow_md](includes/navnow_md.md)] enables seamless integration in the lead-to-cash process for customers who use [!INCLUDE[crm_md](includes/crm_md.md)] for customer engagement and [!INCLUDE[navnow_md](includes/navnow_md.md)] for order processing and financials. Tight integration with [!INCLUDE[crm_md](includes/crm_md.md)] provides the following capabilities:  

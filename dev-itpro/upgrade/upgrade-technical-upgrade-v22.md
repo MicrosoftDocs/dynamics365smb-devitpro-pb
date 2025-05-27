@@ -1,12 +1,11 @@
 ---
 title: "Technical Upgrade to Version 22"
 description: Describes how to do a technical upgrade from Business Central V19, V20, V21 to V22
-ms.custom: na
 ms.date: 11/27/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Technical Upgrade to Version 22
 
@@ -280,7 +279,7 @@ Compile all published extensions against the new platform.
 ## Task 9: Upgrade extensions
 
 > [!NOTE]
-> This task is only required if you've published new versions fo extensions, for example, as part of task 7. In this case, you'll run a data upgrade on the new versions.
+> This task is only required if you've published new versions for extensions, for example, as part of task 7. In this case, you'll run a data upgrade on the new versions.
 
 It's important to consider the extension dependency graph when upgrading. The general order is:
 
@@ -364,7 +363,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## See Also
+## Related information
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Business Central Compatibility matrix](upgrade-v14-v15-compatibility.md)

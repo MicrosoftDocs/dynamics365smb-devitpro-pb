@@ -2,11 +2,11 @@
 title: Add pages and reports to Tell me
 description: Description of how you use AL to add pages and reports so that they're discoverable through search in the client.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 12/05/2023
-ms.topic: conceptual
+ms.date: 03/01/2024
+ms.topic: how-to
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # Add pages and reports to Tell me
@@ -105,7 +105,7 @@ If you're using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], yo
 
 After you change these properties by using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], before the changes take effect in the client, you must run **Build Object Search Index** from the **Tools** menu.
 
-## See also
+## Related information
 
 [Adding menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md)  
 [UsageCategory property](properties/devenv-usagecategory-property.md)  

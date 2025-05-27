@@ -2,18 +2,14 @@
 title: Business Central Admin Center API - App Management
 description: Learn about using the Business Central admin center API to manage apps.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 02/11/2025
 ---
 
-# App Management
-
-[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
+# Business Central Admin Center API - App Management
 
 Manage the apps that are installed on the environment.
 
@@ -36,15 +32,10 @@ By setting this parameter to `true`, you accept the following terms:
 -->
 ### Required In-Product Permissions for Installing and Uninstalling Apps
 
-To use the `install` and `uninstall` endpoints, you must have the following permission sets assigned to your Business Central user account or authorized Microsoft Entra app:
-
-|Business Central version|Permission set|
-|------------------------|---------------|
-|version 18 and later|Exten. Mgt. - Admin|
-|version 17 and earlier|"D365 EXTENSION MGT" or "Exten. Mgt. - Admin"|
+To use the `install` and `uninstall` endpoints, you must have the *Exten. Mgt. - Admin permission set* assigned to your Business Central user account or authorized Microsoft Entra app.
 
 > [!NOTE]
-> These permissions sets are the same permission sets that allow you to use **Extension** Management page in tenant. Other  App management endpoints, like `update` or `availableupdates`, don't require these permission sets. 
+> These permissions sets are the same permission sets that allow you to use **Extension Management** page in your tenant. Other app management endpoints, such as `update` or `availableupdates`, don't require these permission sets.
 
 ## Install an App
 
@@ -54,7 +45,7 @@ Installs an app on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
+POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
 ```
 
 ### Route Parameters
@@ -69,12 +60,12 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 
 ```
 { 
-  "targetVersion": "1.2.3.4", // Optional. If not provided, latest version will be installed. Required if "allowPreviewVersion": true 
-  "useEnvironmentUpdateWindow": false/true, // If true, the operation will be executed only in the environment update window. It will appear as "scheduled" before it runs in the window. 
-  "allowPreviewVersion": false/true, // If "allowPreviewVersion": true, targetVersion is required 
-  "installOrUpdateNeededDependencies": false/true, // Value indicating whether any other app dependencies should be installed or updated; otherwise, information about missing app dependencies will be returned as error details 
-  "acceptIsvEula": false/true, // Must be true for installation to proceed. Setting this to true means you agree to the terms described in the acceptIsvEula section that follows.
-  "languageId": "en-US" // Optional. Specifies locale ID language code, for example, "en-US". This setting corresponds to what the user can set in Extension Management page in tenant.Full list of values can be found in /openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a under BCP 47 Code column 
+  "targetVersion": string, // Optional. If not provided, latest version will be installed. Required if "allowPreviewVersion": true 
+  "useEnvironmentUpdateWindow": boolean, // If true, the operation will be executed only in the environment update window. It will appear as "scheduled" before it runs in the window. 
+  "allowPreviewVersion": boolean, // If "allowPreviewVersion": true, targetVersion is required 
+  "installOrUpdateNeededDependencies": boolean, // Value indicating whether any other app dependencies should be installed or updated; otherwise, information about missing app dependencies will be returned as error details 
+  "acceptIsvEula": boolean, // Must be true for installation to proceed. Setting this to true means you agree to the terms described in the acceptIsvEula section that follows.
+  "languageId": string // Optional. Specifies locale ID language code, for example, "en-US". This setting corresponds to what the user can set in Extension Management page in tenant.Full list of values can be found in /openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a under BCP 47 Code column 
 } 
 ```
 
@@ -83,7 +74,7 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 > [!IMPORTANT]
 > By setting the `acceptIsvEula` property to `true`, you not only agree with ISV's end-user license terms (EULA) but also with these terms:
 >
-> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of AppSource is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://privacy.microsoft.com/privacystatement).** 
+> **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of AppSource is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://go.microsoft.com/fwlink/?LinkId=521839) <!--(https://privacy.microsoft.com/privacystatement)-->.**
 
 <sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on AppSource. Links to these documents are typically under **Details + Support** > **Legal**. Or, if you can't find this information, contact the provider.
 
@@ -93,13 +84,13 @@ Example `200 OK` response with body:
 
 ```
 { 
-  "id": "35601559-224a-47d5-8089-86ac88b2b995", // ID of the operation used for tracking the update request 
-  "type": "install", // Type of the operation, for this endpoint, it's "install" 
-  "sourceAppVersion": "", // Current version of app on the tenant. In case of Install, it is always empty as no version is installed 
-  "targetAppVersion": "1.2.3.4", // Version of app that will be installed. 
-  "status": "scheduled", // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped" 
-  "createdOn": "2021-03-22T15:44:57.9067589Z", // Date and time the request was created 
-  "errorMessage": "" // Error message for failed operations 
+  "id": guid, // ID of the operation used for tracking the update request 
+  "type": string, // Type of the operation, for this endpoint, it's "install" 
+  "sourceAppVersion": string, // Current version of app on the tenant. In case of Install, it is always empty as no version is installed 
+  "targetAppVersion": string, // Version of app that will be installed. 
+  "status": string, // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped" 
+  "createdOn": datetime, // Date and time the request was created 
+  "errorMessage": string // Error message for failed operations 
 } 
 ```
 
@@ -107,16 +98,16 @@ Example `400 Bad Request` response when dependent apps need to be installed firs
 
 ```
 { 
-  "code": "EntityValidationFailed", // Error code 
-  "message": "Error details", // Detailed error message 
+  "code": string, // Error code 
+  "message": string, // Detailed error message 
   "data": { // Any additional data for the error. For example, when "installOrUpdateNeededDependencies" in the request body was set to false, and there are dependencies that must be first installed or updated. 
     "requirements": [ // List of requirements you need to fulfil before you can run the request 
       { 
-        "appId": "1ed76016-b288-401c-92e1-75b2d47ff223", 
-        "name": "Contoso App", 
-        "publisher": "Contoso", 
-        "version": "16.0.32.0", 
-        "type": "install" // enum | "install", "update", "uninstall") 
+        "appId": guid, 
+        "name": string, 
+        "publisher": string, 
+        "version": string, 
+        "type": string // (enum | "install", "update", "uninstall") 
       } 
     ] 
   } 
@@ -131,7 +122,7 @@ Uninstalls an app from an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
+POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
 ```
 
 ### Route Parameters
@@ -146,9 +137,9 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 
 ```
 { 
-  "useEnvironmentUpdateWindow": false/true, // If set to true, the operation will be executed only in the environment update window. It will appear as "scheduled" before it runs in the window. 
-  "uninstallDependents": false/true // Value indicating whether any other dependent apps should be uninstalled, otherwise information about dependent apps will be returned in error details 
-  "deleteData": false/true // Deletes data and syncs clean the extension. Exactly the same as deleting data in Extension Management page in tenant. 
+  "useEnvironmentUpdateWindow": boolean, // If set to true, the operation will be executed only in the environment update window. It will appear as "scheduled" before it runs in the window. 
+  "uninstallDependents": boolean // Value indicating whether any other dependent apps should be uninstalled, otherwise information about dependent apps will be returned in error details 
+  "deleteData": boolean // Deletes data and syncs clean the extension. Exactly the same as deleting data in Extension Management page in tenant. 
 } 
 ```
 
@@ -158,13 +149,13 @@ Example `200 OK` response with body:
 
 ```
 {
-  "id": "35601559-224a-47d5-8089-86ac88b2b995", // ID of the operation used for tracking the update request 
-  "type": "uninstall", // Type of the operation. For this endpoint, it's "uninstall".
-  "sourceAppVersion": "1.2.3.4", // Current version of app on the tenant. 
-  "targetAppVersion": "", // Target version of the app on the tenant. For uninstall, it will be always empty. 
-  "status": "scheduled", // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped"  
-  "createdOn": "2021-03-22T15:44:57.9067589Z", // Date and time the request was created 
-  "errorMessage": ""  // Error message for failed operations 
+  "id": guid, // ID of the operation used for tracking the update request 
+  "type": string, // Type of the operation. For this endpoint, it's "uninstall".
+  "sourceAppVersion": string, // Current version of app on the tenant. 
+  "targetAppVersion": string, // Target version of the app on the tenant. For uninstall, it will be always empty. 
+  "status": string, // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped"  
+  "createdOn": datetime, // Date and time the request was created 
+  "errorMessage": string // Error message for failed operations 
 } 
 ```
 
@@ -172,19 +163,61 @@ Example `400 Bad Request` response when dependent apps need to be uninstalled fi
 
 ```
 { 
-  "code": "EntityValidationFailed", // Error Code 
-  "message": "Error details", // Detailed error message 
-  "data": { // Any additional data for the error. For example, when "uninstallDependents" in the request body was set to false, and there are existing dependent apps that need to be uninstalled first. The list of requirements is all apps that depend on app 35601559-224a-47d5-8089-86ac88b2b995. 
+  "code": string, // Error Code 
+  "message": string, // Detailed error message 
+  "data": { // Any additional data for the error. For example, when "uninstallDependents" in the request body was set to false, and there are existing dependent apps that need to be uninstalled first. The list of requirements is all apps that depend on the targeted app. 
     "requirements": [ // List of requirements you need to fulfil before you can run the request 
       { 
-        "appId": "1ed76016-b288-401c-92e1-75b2d47ff223", 
-        "name": "Contoso App", 
-        "publisher": "Contoso", 
-        "version": "16.0.32.0", 
-        "type": "uninstall" // (enum | "install", "update", "uninstall") 
+        "appId": guid, 
+        "name": string, 
+        "publisher": string, 
+        "version": string, 
+        "type": string // (enum | "install", "update", "uninstall") 
       } 
     ] 
   } 
+}
+```
+
+## Get uninstall requirements
+
+Lists dependent apps that need to be uninstalled in order to uninstall the targeted app.
+
+**INTRODUCED IN:** API version 2.25
+
+```
+Content-Type: application/json
+GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstallRequirements  
+```
+
+### Route Parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment.
+
+`appId` - ID of the targeted app.
+
+### Response
+
+Example `200 OK` response with body:
+
+```
+{
+  "value":
+  [
+    {
+      "id": guid, // ID of the dependent app
+      "name": string, // Name of the dependent app
+      "publisher": string, // Publisher of the dependent app
+      "version": string, // Version of the dependent app
+      "type": string, // (enum | "Global", "PTE", "DEV")
+      "EnvironmentAppOperationRequirementType": string // Defines the operation type for which the dependency applies
+    },
+    {
+      ...
+    }
+  ]
 }
 ```
 
@@ -193,7 +226,7 @@ Example `400 Bad Request` response when dependent apps need to be uninstalled fi
 Get information about apps that are installed on the environment.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps
+GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps
 ```
 
 ### Route Parameters
@@ -210,13 +243,17 @@ Returns information about the apps installed on the environment.
   "value":
   [
     { 
-      "id": Guid, // Id of the installed app 
+      "id": guid, // Id of the installed app 
       "name": string, // Name of the installed app 
       "publisher": string, // Publisher of the installed app 
       "version": string, // Version of the installed app
       "state": string, // (enum | "Installed", "UpdatePending", "Updating")
-      "lastOperationId": Guid, // Id of the last update operation that was performed for this app
+      "lastOperationId": guid, // Id of the last update operation that was performed for this app
       "lastUpdateAttemptResult": string // (enum | "Failed", "Succeeded", "Canceled", "Skipped")
+      "lastUninstallOperationId": guid // Id of the last uninstall operation that was performed for this app
+      "lastUninstallAttemptResult": string // (enum | "Failed", "Succeeded", "Canceled", "Skipped")
+      "appType": string // (enum | "Global", "PTE", "DEV")
+      "canBeUninstalled": boolean // Specifies whether the app can be uninstalled
     }
   ]
 }
@@ -227,7 +264,7 @@ Returns information about the apps installed on the environment.
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
+GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
 ### Route Parameters
@@ -243,14 +280,14 @@ GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}
   "value":
   [ 
     { 
-      "id": Guid, // Id of the app 
+      "id": guid, // Id of the app 
       "name": string, // Name of the app 
       "publisher": string, // Publisher of the app 
       "version": string, // New version available of the app
       "requirements": // List of other apps that need to be installed or updated before this app can be updated
       [
         { 
-          "id": Guid, // Id of the app
+          "id": guid, // Id of the app
           "name": string, // Name of the app 
           "publisher": string, // Publisher of the app 
           "version": string, // Version the required app needs to be updated to or installed
@@ -268,7 +305,7 @@ Updates an app using an existing endpoint, but when new parameters in the reques
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
+POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
 ### Route Parameters
@@ -283,10 +320,10 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 
 ```
 { 
-  "useEnvironmentUpdateWindow": false/true, // If set to true, the operation will be executed only in the environment update window. It will appear as "scheduled" before it runs in the window.
-  "targetVersion": "1.2.3.4", // Always required. There's no option to update to the latest. You have to first do a "availableAppUpdates", call then use the version here.
-  "allowPreviewVersion": false/true,  
-  "installOrUpdateNeededDependencies": false/true, // Value indicating whether any other app dependencies should be installed or updated; otherwise, information about missing app dependencies will be returned as error details
+  "useEnvironmentUpdateWindow": boolean, // If set to true, the operation will be executed only in the environment update window. It will appear as "scheduled" before it runs in the window.
+  "targetVersion": string, // Always required. There's no option to update to the latest. You have to first do a "availableAppUpdates", call then use the version here.
+  "allowPreviewVersion": boolean,  
+  "installOrUpdateNeededDependencies": boolean // Value indicating whether any other app dependencies should be installed or updated; otherwise, information about missing app dependencies will be returned as error details
 }
 ```
 
@@ -296,15 +333,15 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 
 ```
 { 
-  "id": "35601559-224a-47d5-8089-86ac88b2b995", // ID of the operation used for tracking the update request
-  "type": "update", // Type of the operation. For this endpoint, it's "update".
-  "sourceAppVersion": "1.2.3.0", // Current version of app on the tenant.
-  "targetAppVersion": "1.2.3.4", // Target version of the app on the tenant that will be installed during update.
-  "status": "scheduled", // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped"
-  "createdOn": "2021-03-22T15:44:57.9067589Z", // Date and time the request was created
-  "errorMessage": "", // Error message for failed operations
-  "createdBy": "", // Email address if authenticated as user, App ID if authenticated as app
-  "canceledBy: "" // Empty value
+  "id": guid, // ID of the operation used for tracking the update request
+  "type": string, // Type of the operation. For this endpoint, it's "update".
+  "sourceAppVersion": string, // Current version of app on the tenant.
+  "targetAppVersion": string, // Target version of the app on the tenant that will be installed during update.
+  "status": string, // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped"
+  "createdOn": datetime, // Date and time the request was created
+  "errorMessage": string, // Error message for failed operations
+  "createdBy": string, // Email address if authenticated as user, App ID if authenticated as app
+  "canceledBy: string // Empty value
 }
 ```
   
@@ -312,16 +349,16 @@ Example `400 Bad Request` response when dependent apps need to be updated first:
 
 ```
 { 
-  "code": "EntityValidationFailed", // Error Code 
-  "message": "Error details", // Detailed error message 
+  "code": string, // Error Code 
+  "message": string, // Detailed error message 
   "data": { // Any additional data for the error. For example, when when "installOrUpdateNeededDependencies" in the request body was set to false, and dependencies need to be installed or updated.  
     "requirements": [ // List of requirements you need to fulfil before you can run the request 
       { 
-        "appId": "1ed76016-b288-401c-92e1-75b2d47ff223", 
-        "name": "Contoso App", 
-        "publisher": "Contoso", 
-        "version": "16.0.32.0", 
-        "type": "install" // (enum | "install", "update", "uninstall") 
+        "appId": guid, 
+        "name": string, 
+        "publisher": string, 
+        "version": string, 
+        "type": string // (enum | "install", "update", "uninstall") 
       }
     ]
   }
@@ -334,7 +371,7 @@ Cancels an app update in scheduled state.
 
 ```
 Content-Type: application/json
-POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update/cancel
+POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update/cancel
 ```
 
 ### Route Parameters
@@ -359,15 +396,15 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 
 ```
 { 
-  "id": "35601559-224a-47d5-8089-86ac88b2b995", // ID of the operation used for tracking the update request
-  "type": "update", // Type of the operation. For this endpoint, it's "update".
-  "sourceAppVersion": "1.2.3.0", // Current version of app on the tenant.
-  "targetAppVersion": "1.2.3.4", // Target version of the app on the tenant that will be installed during update.
-  "status": "canceled", // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped"
-  "createdOn": "2021-03-22T15:44:57.9067589Z", // Date and time the request was created
-  "errorMessage": "", // Error message for failed operations
-  "createdBy": "", // Email address if authenticated as user, App ID if authenticated as app
-  "canceledBy: "" // Email address if authenticated as user, App ID if authenticated as app
+  "id": guid, // ID of the operation used for tracking the update request
+  "type": string, // Type of the operation. For this endpoint, it's "update".
+  "sourceAppVersion": string, // Current version of app on the tenant.
+  "targetAppVersion": string, // Target version of the app on the tenant that will be installed during update.
+  "status": string, // An enum that indicates the status. Values include: "scheduled", "running", "succeeded", "failed", "canceled", "skipped"
+  "createdOn": datetime, // Date and time the request was created
+  "errorMessage": string, // Error message for failed operations
+  "createdBy": string, // Email address if authenticated as user, App ID if authenticated as app
+  "canceledBy: string // Email address if authenticated as user, App ID if authenticated as app
 }
 ```
 
@@ -376,7 +413,7 @@ POST /admin/v2.19/applications/{applicationFamily}/environments/{environmentName
 Gets information about app install, uninstall, and update operations for the specified app.
 
 ```
-GET /admin/v2.19/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+GET /admin/v2.25/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
 ```
 
 ### Route Parameters
@@ -399,7 +436,7 @@ Returns the list of app update operations for the specified app.
   "value":
   [
     {
-      "id": Guid,  // Id of the operation
+      "id": guid,  // Id of the operation
       "createdOn": string, // Date and time the request was created
       "startedOn": string, // Date and time the installation process started
       "completedOn": string, // Date and time the installation process completed
@@ -462,7 +499,7 @@ You'll need the following information about Business Central and your Teams serv
     2. Select the resource for the Teams API connection to open it.
     3. Select **Edit API connection** > **Authorize**, then sign in with your credentials.
 
-## See Also
+## Related information
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  

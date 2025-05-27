@@ -1,13 +1,8 @@
 ---
 title: Create a Test Page
 description: Declare a test page variable and then write C/AL code to open the test page by using either OPENNEW, OPENEDIT or OPENVIEW function.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 4d5d9eb3-00e4-4ffb-9819-f93aae75d51c
 caps.latest.revision: 6
 ---

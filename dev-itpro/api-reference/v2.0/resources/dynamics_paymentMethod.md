@@ -4,16 +4,15 @@ description: A payment method object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # paymentMethod resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a payment method in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,8 +27,6 @@ Represents a payment method in [!INCLUDE[prod_short](../../../includes/prod_shor
 |[POST paymentMethod](../api/dynamics_paymentmethod_create.md)|paymentMethod|Creates a payment method object.|
 |[PATCH paymentMethod](../api/dynamics_paymentmethod_update.md)|paymentMethod|Updates a payment method object.|
 
-
-
 ## Properties
 
 | Property           | Type   |Description     |
@@ -41,7 +38,7 @@ Represents a payment method in [!INCLUDE[prod_short](../../../includes/prod_shor
 
 ## JSON representation
 
-Here is a JSON representation of the paymentMethod resource.
+Here's a JSON representation of the paymentMethod resource.
 
 
 ```json
@@ -52,11 +49,9 @@ Here is a JSON representation of the paymentMethod resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET paymentMethod](../api/dynamics_paymentMethod_Get.md)  
 [DELETE paymentMethod](../api/dynamics_paymentMethod_Delete.md)  
 [POST paymentMethod](../api/dynamics_paymentMethod_Create.md)  

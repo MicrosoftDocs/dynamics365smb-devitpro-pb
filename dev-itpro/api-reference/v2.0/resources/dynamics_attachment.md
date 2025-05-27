@@ -4,20 +4,19 @@ description: An attachments object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 09/01/2022
+ms.date: 04/09/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # attachment resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents an attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. An attachment in the [!INCLUDE[prod_short](../../../includes/prod_short.md)] API is defined as an Incoming Document (table 130).
+Represents an attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md). An attachment in the [!INCLUDE[prod_short](../../../includes/prod_short.md)] API is defined as an Incoming Document (table 130).
 
 ## Methods
 
@@ -41,6 +40,7 @@ Represents an attachment in [!INCLUDE[prod_short](../../../includes/prod_short.m
 |[salesCreditMemo](dynamics_salescreditmemo.md)|salesCreditMemo |Gets the salescreditmemo of the attachment.|
 |[purchaseInvoice](dynamics_purchaseinvoice.md)|purchaseInvoice |Gets the purchaseinvoice of the attachment.|
 |[purchaseOrder](dynamics_purchaseorder.md)|purchaseOrder |Gets the purchaseorder of the attachment.|
+|[purchaseCreditMemo](dynamics_purchasecreditmemo.md)|purchaseCreditMemo |Gets the purchasecreditmemo of the attachment.|
 
 ## Properties
 
@@ -56,7 +56,7 @@ Represents an attachment in [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## JSON representation
 
-Here is a JSON representation of the attachment resource.
+Here's a JSON representation of the attachment resource.
 
 
 ```json
@@ -74,7 +74,7 @@ Here is a JSON representation of the attachment resource.
 
 
 
-## See Also
+## Related information
 
 [GET attachment](../api/dynamics_attachment_Get.md)  
 [DELETE attachment](../api/dynamics_attachment_Delete.md)  

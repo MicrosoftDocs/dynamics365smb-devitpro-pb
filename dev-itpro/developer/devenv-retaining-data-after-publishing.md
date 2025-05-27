@@ -3,10 +3,10 @@ title: "Synchronizing extension test data"
 description: "Retaining table data after publishing an extension"
 
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 08/26/2021
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Retaining table data after publishing
@@ -65,7 +65,7 @@ If you, during development, for example, discover that you no longer want field 
 
     Alternatively, if this is a development scenario, you can synchronize the extension using the ForceSync or Recreate mode.
 
-## See Also
+## Related information
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Upgrading Extensions](devenv-upgrading-extensions.md)  

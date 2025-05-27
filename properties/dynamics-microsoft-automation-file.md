@@ -6,7 +6,6 @@ author: henrikwh
 
 ms.topic: reference
 ms.devlang: na
-ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/17/2021
 ms.author: solsen

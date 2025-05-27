@@ -2,7 +2,7 @@
 title: Web Service Publish Failure Trace
 description: Learn about the web service publish failure telemetry in Business Central  
 author: SVinchi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 06/21/2023
 ms.author: kepontop
@@ -177,7 +177,7 @@ traces
 
 [!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
-## See also
+## Related information
 
 [Telemetry overview](telemetry-overview.md)  
 [Enable sending telemetry to Application Insights](telemetry-enable-application-insights.md)  

@@ -2,10 +2,8 @@
 author: jswymer
 title: "Upgrading Extensions"
 description: "Describes how to add code to upgrade data in a new extension version."
-ms.custom: na
 ms.date: 09/17/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Upgrading Extensions
@@ -194,7 +192,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
     ```AL
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Upgrade Tag", 'OnGetPerCompanyUpgradeTags', '', false, false)]
-    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]]);
+    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]])
     begin
         PerCompanyUpgradeTags.Add(UpgradeTagValue);
     end;
@@ -286,7 +284,7 @@ codeunit 50101 "ABC Upgrade Tag Definitions"
 {
     // Register the new upgrade tag for new companies when they are created.
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Upgrade Tag", 'OnGetPerCompanyUpgradeTags', '', false, false)]
-    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]]);
+    local procedure OnGetPerCompanyTags(var PerCompanyUpgradeTags: List of [Code[250]])
     begin
         PerCompanyUpgradeTags.Add(GetABCShoeSizeUpgradeTag());
     end;
@@ -354,7 +352,7 @@ To upgrade to the new extension version, you use the [Sync-NavApp](/powershell/m
     ```
     This step runs the upgrade logic that is defined by the upgrade codeunits in the extension. This step will uninstall the current extension version and enable the new version instead.
 
-## See Also
+## Related information
 
 [Developing Extensions](devenv-dev-overview.md)  
 [Get Started with AL](devenv-get-started.md)  

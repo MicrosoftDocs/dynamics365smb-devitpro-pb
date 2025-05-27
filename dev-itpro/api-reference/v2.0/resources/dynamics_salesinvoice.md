@@ -4,16 +4,15 @@ description: A sales invoice object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesInvoice resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales invoice in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,35 +27,35 @@ Represents a sales invoice in [!INCLUDE[prod_short](../../../includes/prod_short
 |[POST salesInvoice](../api/dynamics_salesinvoice_create.md)|salesInvoice|Creates a sales invoice object.|
 |[PATCH salesInvoice](../api/dynamics_salesinvoice_update.md)|salesInvoice|Updates a sales invoice object.|
 
-## Bound Actions
+## Bound actions
 
-The salesInvoice resource type offers a bound action called `cancelAndSend` which cancels and sends the corresponding salesInvoice batch.
-This is illustrated in the following example:
-`CANCELANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.cancelAndSend`
-
-The response has no content; the response code is 204.
-
-The salesInvoice resource type offers a bound action called `cancel` which cancels the corresponding salesInvoice batch.
+The salesInvoice resource type offers a bound action called `cancel`, which cancels the corresponding salesInvoice batch.
 This is illustrated in the following example:
 `CANCEL https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.cancel`
 
 The response has no content; the response code is 204.
 
-The salesInvoice resource type offers a bound action called `makeCorrectiveCreditMemo` which make corrective credit memos the corresponding salesInvoice batch.
+The salesInvoice resource type offers a bound action called `cancelAndSend`, which cancels and sends the corresponding salesInvoice batch.
+This is illustrated in the following example:
+`CANCELANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.cancelAndSend`
+
+The response has no content; the response code is 204.
+
+The salesInvoice resource type offers a bound action called `makeCorrectiveCreditMemo`, which makes corrective credit memos to the corresponding salesInvoice batch.
 This is illustrated in the following example:
 `MAKECORRECTIVECREDITMEMO https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.makeCorrectiveCreditMemo`
 
 The response has no content; the response code is 204.
 
-The salesInvoice resource type offers a bound action called `postAndSend` which post and sends the corresponding salesInvoice batch.
+The salesInvoice resource type offers a bound action called `post`, which posts the corresponding salesInvoice batch.
 This is illustrated in the following example:
-`POSTANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.postAndSend`
+`POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.post`
 
 The response has no content; the response code is 204.
 
-The salesInvoice resource type offers a bound action called `post` which posts the corresponding salesInvoice batch.
+The salesInvoice resource type offers a bound action called `postAndSend`, which posts and sends the corresponding salesInvoice batch.
 This is illustrated in the following example:
-`POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.post`
+`POSTANDSEND https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesInvoices({id})/Microsoft.NAV.postAndSend`
 
 The response has no content; the response code is 204.
 
@@ -71,7 +70,6 @@ The response has no content; the response code is 204.
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[customer](dynamics_customer.md)|customer |Gets the customer of the salesInvoice.|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the salesInvoice.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the salesInvoice.|
 |[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the salesInvoice.|
 |[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the salesInvoice.|
@@ -80,7 +78,7 @@ The response has no content; the response code is 204.
 |[salesInvoiceLines](dynamics_salesinvoiceline.md)|salesInvoiceLines |Gets the salesinvoicelines of the salesInvoice.|
 |[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the salesInvoice.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the salesInvoice.|
-|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesInvoice.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the salesInvoice.|
 
 ## Properties
 
@@ -91,7 +89,8 @@ The response has no content; the response code is 204.
 |externalDocumentNumber|string|Specifies an external document number for the sales invoice.|
 |invoiceDate|date|The invoice date .|
 |postingDate|date|The date that the sales invoice   is posted.|
-|dueDate|date|The date the sales invoice is due.|
+|dueDate|date|T he date the sales invoice is due.|
+|promisedPayDate|date||
 |customerPurchaseOrderReference|string|The customer purchase order reference for the invoice.|
 |customerId|GUID|The unique ID of customer.  |
 |customerNumber|string|The customer's number.|
@@ -128,6 +127,8 @@ The response has no content; the response code is 204.
 |paymentTermsId|GUID|Specifies which payment term the sales invoice uses.|
 |shipmentMethodId|GUID|Specifies which shipment method the sales invoice uses.|
 |salesperson|string|The salesperson code for the sales invoice.|
+|disputeStatusId|GUID||
+|disputeStatus|string||
 |pricesIncludeTax|boolean|Specifies whether the prices include Tax or not. Read-Only.|
 |remainingAmount|decimal|The amount including VAT.|
 |discountAmount|decimal|The sales invoice discount amount.|
@@ -142,7 +143,7 @@ The response has no content; the response code is 204.
 
 ## JSON representation
 
-Here is a JSON representation of the salesInvoice resource.
+Here's a JSON representation of the salesInvoice resource.
 
 
 ```json
@@ -153,6 +154,7 @@ Here is a JSON representation of the salesInvoice resource.
     "invoiceDate": "date",
     "postingDate": "date",
     "dueDate": "date",
+    "promisedPayDate": "date",
     "customerPurchaseOrderReference": "string",
     "customerId": "GUID",
     "customerNumber": "string",
@@ -189,6 +191,8 @@ Here is a JSON representation of the salesInvoice resource.
     "paymentTermsId": "GUID",
     "shipmentMethodId": "GUID",
     "salesperson": "string",
+    "disputeStatusId": "GUID",
+    "disputeStatus": "string",
     "pricesIncludeTax": "boolean",
     "remainingAmount": "decimal",
     "discountAmount": "decimal",
@@ -206,7 +210,8 @@ Here is a JSON representation of the salesInvoice resource.
 > [!NOTE]  
 > The `id` property value in this API resource might be different than the `systemId` of the corresponding record because the `systemId` of the unposted invoices are carried to posted invoices in the API, but not to the record. Use the `https://{businesscentralPrefix}/microsoft/automate/v1.0/companies({id})/postedSalesInvoices({systemId})` route and extract the `apiId` property to map the `systemId` of a posted sales invoice record to the `salesInvoice` API resource.
 
-## See Also
+## Related information
+
 [GET salesInvoice](../api/dynamics_salesInvoice_Get.md)  
 [DELETE salesInvoice](../api/dynamics_salesInvoice_Delete.md)  
 [POST salesInvoice](../api/dynamics_salesInvoice_Create.md)  

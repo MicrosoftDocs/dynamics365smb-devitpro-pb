@@ -2,11 +2,10 @@
 title: "Compiler Error AL0494"
 description: "The action area '{0}' can only directly contain groups."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/10/2022
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,10 +16,11 @@ author: SusanneWindfeldPedersen
 
 The action area '{0}' can only directly contain groups.
 
+
 ## Description
-An action area con only diretly contain groups.  
+The action area can only directly contain groups.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

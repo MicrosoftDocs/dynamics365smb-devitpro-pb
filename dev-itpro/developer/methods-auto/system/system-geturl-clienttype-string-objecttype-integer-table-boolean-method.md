@@ -2,11 +2,10 @@
 title: "System.GetUrl(ClientType [, Text] [, ObjectType] [, Integer] [, Record] [, Boolean]) Method"
 description: "Generates a URL for the specified client target that is based on the configuration of the server instance."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/30/2023
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -34,7 +33,7 @@ Specifies the company that the URL must contain. If you do not specify a company
 
 *[Optional] ObjectType*  
 &emsp;Type: [ObjectType](../objecttype/objecttype-option.md)  
-Value: Table, Page, Report, Codeunit, Query, or XmlPort. Specifies the object type that the URL must open. If you specify an object type, you must also specify an object ID in the ObjectId parameter. Otherwise, the user will see a runtime error. If you set the ObjectType parameter to Page, you can also specify a record variable in the Record parameter.  
+Specifies the object type that the URL must open. Valid values are: Table, Page, Report, Codeunit, Query, or XmlPort. If you specify an object type, you must also specify an object ID in the ObjectId parameter. Otherwise, the user will see a runtime error. If you set the ObjectType parameter to Page, you can also specify a record variable in the Record parameter.  
 
 *[Optional] ObjectId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -56,7 +55,7 @@ Specifies whether to include filters that are defined on the object as a text st
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

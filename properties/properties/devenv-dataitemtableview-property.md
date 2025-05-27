@@ -1,11 +1,8 @@
 ---
 title: "DataItemTableView Property"
 
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: SusanneWindfeldPedersen
 ---
@@ -20,7 +17,7 @@ Data items on reports.
 
 ## Examples
 
-In the following example, the **DataItemView** property is used to sort a table view based on the `"Entry No."` field.
+In the following example, the **DataItemTableView** property is used to sort a table view based on the `"Entry No."` field.
 
 ```AL
 DataItemTableView = SORTING ("Entry No.");

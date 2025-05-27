@@ -1,12 +1,7 @@
 ---
 title: "Authenticating Users with Active Directory Federation Services"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2017"
 author: jswymer
 ---
 # Authenticating Users with Active Directory Federation Services

@@ -1,12 +1,7 @@
 ---
 title: "Properties of the Demo License"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: c77df30b-332a-4d7f-9754-a8fa131a3f9e
 caps.latest.revision: 17
 ---

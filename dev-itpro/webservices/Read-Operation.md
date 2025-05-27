@@ -1,9 +1,7 @@
 ---
 title: "Read Operation"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ---
 # Read Operation
 Reads a single record.  
@@ -40,5 +38,5 @@ service.Create(ref customer);
 customer = service.Read(customer.No);  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

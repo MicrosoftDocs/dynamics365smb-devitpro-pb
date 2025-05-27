@@ -1,10 +1,9 @@
 ---
 title: Test Runner Codeunits
 description: This article describes how to create test codeunits and how to create test runner codeunits. 
-ms.custom: na
 ms.date: 08/12/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: blrobl
 ---
 
@@ -75,5 +74,5 @@ codeunit 50102 TestRunnerCodeunit
 }
 ```
 
-## See Also
+## Related information
 [Testing the Application](devenv-Testing-Application.md)

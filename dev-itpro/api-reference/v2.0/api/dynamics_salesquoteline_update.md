@@ -4,8 +4,9 @@ description: Updates a sales quote line in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Update salesQuoteLines
@@ -28,10 +29,10 @@ PATCH businesscentralPrefix/companies({id})/salesQuoteLines({salesQuoteLineId})
 |------|-----|
 |Authorization |Bearer {token}. Required.|
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **salesQuoteLines**, the **salesQuoteLines** will not be updated. |
+|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **salesQuoteLines**, the **salesQuoteLines** won't be updated. |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and an updated **salesQuoteLines** object in the response body.
@@ -40,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/salesQuotes({id})/salesQuoteLines({salesQuoteLineId})
 Content-type: application/json
@@ -52,7 +53,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -89,7 +90,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesquoteline](../resources/dynamics_salesquoteline.md)    
 [Get salesquoteline](dynamics_salesquoteline_Get.md)    

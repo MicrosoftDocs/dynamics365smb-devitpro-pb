@@ -4,16 +4,15 @@ description: A trial balance object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # trialBalance resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a trial balance in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -38,7 +37,7 @@ Represents a trial balance in [!INCLUDE[prod_short](../../../includes/prod_short
 |:-------------------|:-------|:---------------|
 |accountId|GUID|The id of the account that the trial balance is related to. |
 |number|string|Specifies the number of the trial balance.|
-|accountType|NAV.glAccountType|The type of the account that the trial balance is related to. It can be "Posting", "Heading", "Total", "Begin Total" or "End Total". |
+|accountType|NAV.glAccountType|The type of the account that the trial balance is related to. It can be "Posting", "Heading", "Total", "Begin Total" or "End Total".|
 |display|string|The trial balance item display name.|
 |totalDebit|string|Represents total debit amount in G/L Account.|
 |totalCredit|string|Represents total credit amount in G/L Account.|
@@ -48,7 +47,7 @@ Represents a trial balance in [!INCLUDE[prod_short](../../../includes/prod_short
 
 ## JSON representation
 
-Here is a JSON representation of the trialBalance resource.
+Here's a JSON representation of the trialBalance resource.
 
 
 ```json
@@ -64,9 +63,7 @@ Here is a JSON representation of the trialBalance resource.
     "dateFilter": "date"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET trialBalance](../api/dynamics_trialBalance_Get.md)

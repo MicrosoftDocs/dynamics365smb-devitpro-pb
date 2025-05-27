@@ -2,11 +2,10 @@
 title: "Page.LookupMode([Boolean]) Method"
 description: "Gets or sets the default lookup mode for the page."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -40,7 +39,13 @@ The current default lookup mode for the page
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+
+## Remarks
+
+The `LookupMode` method gets or sets the default lookup mode for the page. The lookup mode determines how the page behaves when a user selects a record in a lookup. If the default lookup mode is `false`, the page opens the selected record in the same window. If the lookup mode is set to `true`, the page opens the selected record in a new window.
+
+## Related information
+
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

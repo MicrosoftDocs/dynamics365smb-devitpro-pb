@@ -1,11 +1,8 @@
 ---
 title: "AutoSave Property"
 ms.author: solsen
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7ed49a99-f761-4da3-bd68-18e15ea80c7b
 caps.latest.revision: 12

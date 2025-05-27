@@ -1,11 +1,8 @@
 ---
 title: "BackupKey Property"
 author: solsen
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7ad43e31-536a-41d8-a234-7972afd18037
 caps.latest.revision: 5

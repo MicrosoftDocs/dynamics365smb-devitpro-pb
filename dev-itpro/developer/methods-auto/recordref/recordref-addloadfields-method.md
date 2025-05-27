@@ -2,11 +2,10 @@
 title: "RecordRef.AddLoadFields([Integer,...]) Method"
 description: "Specifies additional fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -43,7 +42,9 @@ The FieldNo's of the fields to be loaded.
 
 Calling SetLoadFields on a record without passing any fields will reset the fields selected to load to the default, where all readable normal fields are selected for load.
 
-This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
+[!INCLUDE [partial-records-note](../../includes/partial-records-note.md)]
+
+This method is part of the partial records capability for improving performance. Learn more in [Using partial records](../../devenv-partial-records.md).
 
 ## Example
 
@@ -60,7 +61,7 @@ MyRecordRef.AddLoadFields(Currency.FieldNo(Currency."Currency Factor"));
 end;
 ```
 
-## See Also
+## Related information
 [Using Partial Records](../../devenv-partial-records.md)  
 [RecordRef Data Type](recordref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -1,8 +1,9 @@
 ---
 author: jswymer
 ms.topic: include
-ms.date: 09/30/2022
+ms.date: 04/25/2025
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 > [!NOTE]
-> As of October 2022, Business Central 2021 Release Wave 1 no longer gets updates.
+> Version 18.8 (published in October 2022) is the last update for Business Central 2021 release wave 1.

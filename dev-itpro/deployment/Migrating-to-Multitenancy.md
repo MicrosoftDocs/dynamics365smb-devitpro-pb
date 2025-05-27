@@ -1,9 +1,7 @@
 ---
 title: "Migrating to multitenancy"
-ms.custom: na
 ms.date: 01/03/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 4e96a4ec-3880-400f-bf32-e50fefcf28bc
 caps.latest.revision: 11
 description: Learn how to migrate your Business Central solution to a multitenant deployment for easier maintenance across multiple customers. Step-by-step guide included.
@@ -41,7 +39,7 @@ If you decide to move to a multitenant architecture, you must complete the follo
   
  If you want to move back to storing application tables and business data in a single database, you can use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Windows PowerShell cmdlets to merge the databases. For more information, see [Merging an Application Database with a Tenant Database](Merging-an-Application-Database-with-a-Tenant-Database.md).  
   
-## See also
+## Related information
   
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
  [Creating Tenants from Companies](Creating-Tenants-from-Companies.md)   

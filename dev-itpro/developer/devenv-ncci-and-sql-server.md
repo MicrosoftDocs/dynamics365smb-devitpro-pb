@@ -1,10 +1,8 @@
 ---
 title: "Nonclustered Columnstore Indexes (NCCIs) and SQL Server"
 description: Explains how nonclustered columnstore indexes in Business Central tables work with SQL Server.
-ms.custom: na
 ms.date: 01/28/2022
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # Nonclustered Columnstore Indexes and SQL Server
@@ -19,7 +17,7 @@ In contrast to SIFT keys, which rely on the indexed views feature in SQL Server,
 
 With SIFT keys, any insert, update, or delete operations to the underlying table will introduce some database locking because the indexed views must be updated as well. The more SIFT keys that are defined on the table, the more index maintenance is needed. This problem doesn't exist with a nonclustered columnstore index.  
 
-## See Also
+## Related information
 
 [NCCI Overview)](devenv-ncci-overview.md)  
 [NCCI Tuning and Tracing](devenv-ncci-tuning-and-tracing.md)  

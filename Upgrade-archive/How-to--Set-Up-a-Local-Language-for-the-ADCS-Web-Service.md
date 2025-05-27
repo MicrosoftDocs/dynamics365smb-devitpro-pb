@@ -1,10 +1,6 @@
 ---
 title: "How to: Set Up a Local Language for the ADCS Web Service"
-ms.custom: na
 ms.date: 10/01/2019
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---

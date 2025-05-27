@@ -4,16 +4,15 @@ description: A customer financial detail object in Dynamics 365 Business Central
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # customerFinancialDetail resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a customer financial detail in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -41,10 +40,11 @@ Represents a customer financial detail in [!INCLUDE[prod_short](../../../include
 |balance|decimal|Specifies customer financial detail's total balance.|
 |totalSalesExcludingTax|decimal|Total sales exluding tax.|
 |overdueAmount|decimal|Overdue amount for the customer financial detail.|
+|lastModifiedDateTime|datetime|The last datetime the customer financial detail was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the customerFinancialDetail resource.
+Here's a JSON representation of the customerFinancialDetail resource.
 
 
 ```json
@@ -53,12 +53,11 @@ Here is a JSON representation of the customerFinancialDetail resource.
     "number": "string",
     "balance": "decimal",
     "totalSalesExcludingTax": "decimal",
-    "overdueAmount": "decimal"
+    "overdueAmount": "decimal",
+    "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET customerFinancialDetail](../api/dynamics_customerFinancialDetail_Get.md)

@@ -2,11 +2,10 @@
 title: Ruleset for the code analysis tool
 description: Description of how to create custom rulesets for the code analysis tool in AL for Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 06/24/2022
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Ruleset for the code analysis tool 
@@ -81,7 +80,7 @@ The following example shows a project-specific ruleset that extends a company-wi
 }
 ```
 
-## See Also
+## Related information
 
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Using the Code Analysis Tools with the ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  

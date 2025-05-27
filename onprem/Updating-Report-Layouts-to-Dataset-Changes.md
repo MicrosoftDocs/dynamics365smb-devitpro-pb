@@ -1,13 +1,8 @@
 ---
 title: "Updating Report Layouts to Dataset Changes"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author:  jswymer
-ms.prod: "dynamics-nav-2018"
 ---
 # Updating Report Layouts to Dataset Changes
 When you make changes to the report dataset, the report layouts that are used on the report must to be updated to the changes. The process for updating report layouts is different for built-in layouts and custom layouts. For an explanation of built-in and custom layouts, see [Built-in and Custom Report Layouts](managing-report-layouts.md).  

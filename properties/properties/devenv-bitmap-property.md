@@ -1,10 +1,7 @@
 ---
 title: "Bitmap Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3c78cce8-d9a4-4b25-a576-1b6837a1460f
 caps.latest.revision: 16

@@ -2,13 +2,8 @@
 title: User Groups and Permissions
 description: Dynamics NAV is managed in user groups. Set up user groups, add and remove permissions, and apply changes to all or specific user groups.
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ---
 # Managing User Groups in Dynamics NAV
 Access to functionality in [!INCLUDE[navnow](includes/navnow_md.md)] is managed by permissions that are grouped in permission sets. Permission sets are granular, and it can be difficult to get an overview of which users can access which parts of the application. To help you manage permissions in [!INCLUDE[navnow](includes/navnow_md.md)] for your company, you can set up one or more user groups, add permissions sets to the groups, and then add users to the groups. You can add more than one permission set to a user group.

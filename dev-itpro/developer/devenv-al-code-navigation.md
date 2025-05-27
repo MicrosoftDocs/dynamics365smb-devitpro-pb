@@ -2,12 +2,11 @@
 title: AL code navigation
 description: This article describes how to use the Go To Definition feature when debugging the AL code in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 05/23/2022
-ms.reviewer: na
-ms.topic: conceptual
+ms.date: 03/01/2024
+ms.topic: article
 ms.author: solsen
 ms.collection: get-started
+ms.reviewer: solsen
 ---
 
 # AL code navigation
@@ -36,7 +35,7 @@ The following conditions still apply:
 
 For more information about code navigation in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved).
 
-## See also  
+## Related information  
 
 [Developing extensions in AL](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  

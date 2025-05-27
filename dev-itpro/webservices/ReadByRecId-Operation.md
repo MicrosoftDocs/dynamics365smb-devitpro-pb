@@ -1,9 +1,7 @@
 ---
 title: "ReadByRecId Operation"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ---
 # ReadByRecId Operation
 Reads the record that is identified by the record ID.  
@@ -38,5 +36,5 @@ public void ReadById(String id)
 }  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

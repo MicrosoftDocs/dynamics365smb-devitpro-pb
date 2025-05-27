@@ -1,12 +1,11 @@
 ---
-title: "PopulateAllFields Property"
+title: "PopulateAllFields property"
 description: "Sets whether fields are filled out automatically with a single filter value when a new record is inserted in a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,8 +16,8 @@ author: SusanneWindfeldPedersen
 Sets whether fields are filled out automatically with a single filter value when a new record is inserted in a table.
 
 ## Applies to
--   Page
 -   Request Page
+-   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -37,6 +36,6 @@ PopulateAllFields = true;
 
 Values are inserted in those fields where a currently active filter expression evaluates to exactly one value. Key fields are always populated.  
   
-## See Also  
+## Related information  
 
 [Properties](devenv-properties.md)

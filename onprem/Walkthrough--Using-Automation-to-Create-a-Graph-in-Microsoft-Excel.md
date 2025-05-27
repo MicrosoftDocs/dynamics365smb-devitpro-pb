@@ -1,12 +1,7 @@
 ---
 title: "Walkthrough: Using Automation to Create a Graph in Microsoft Excel"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: e95ed58f-036b-49f9-b9a7-8fe3958f77fd
 caps.latest.revision: 24
 ---

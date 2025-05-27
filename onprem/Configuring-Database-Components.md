@@ -2,13 +2,8 @@
 title: Configure SQL Server Database Components
 description: This article explains how to configure SQL Server Database Components and how to apply custom settings to the relevant components.
 author: edupont04
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 1b590d6f-c38e-40f1-8c9e-d1c8070e05a3
 caps.latest.revision: 19
 ---

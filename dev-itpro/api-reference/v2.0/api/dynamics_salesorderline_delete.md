@@ -6,8 +6,9 @@ author: SusanneWindfeldPedersen
 
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete salesOrderLines
@@ -28,19 +29,19 @@ DELETE businesscentralPrefix/companies({id})/salesOrderLines({salesOrderLineId})
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **salesOrderLines**, the **salesOrderLines** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **salesOrderLines**, the **salesOrderLines** won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.
+If successful, this method returns ```204 No Content``` response code. It doesn't return anything in the response body.
 
 ## Example
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders({id})/salesOrderLines({salesOrderLineId})
@@ -48,13 +49,13 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders({id}
 
 **Response** 
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 HTTP/1.1 204 No Content
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesorderline](../resources/dynamics_salesorderline.md)    
 [Get salesorderline](dynamics_salesorderline_Get.md)    

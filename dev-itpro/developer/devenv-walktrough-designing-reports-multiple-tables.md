@@ -1,12 +1,11 @@
 ---
 title: Walkthrough - Designing a report from multiple tables
 description: This walkthrough shows you how to design a report from multiple tables.
-ms.custom: na
 ms.author: solsen
 ms.date: 12/05/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 
 # Walkthrough: Designing an RDL report from multiple tables
@@ -674,7 +673,7 @@ Viktor can now add advanced features to the report such as displaying the compan
 
 To make the report fully discoverable for users, Victor might also add actions that run the report to pages such as the customer list and also add links to the report to appropriate role centers.
 
-## See also
+## Related information
 
 [Report Overview](devenv-reports.md)  
 [Defining a Report Dataset](devenv-report-dataset.md)  

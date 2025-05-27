@@ -3,10 +3,9 @@ title: Deprecated features in the client, server, database
 description: Describes the features that have been removed or replaced in the platform components of Business Central.
 author: brentholtorf
 ms.author: bholtorf
-ms.reviewer: jswymer
-
-ms.topic: conceptual
-ms.date: 01/09/2024
+ms.reviewer: solsen
+ms.topic: article
+ms.date: 03/28/2025
 ms.custom: bap-template
 ---
 
@@ -18,13 +17,54 @@ This article describes the features that are up for removal or that have been re
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
+## Changes in 2027 release wave 1 (version 30.0)
+
+### <a name="odata-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a OData endpoint (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+
+## Changes in 2026 release wave 2 (version 29.0)
+
+### Expose a Microsoft page as a SOAP endpoint (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension.|
+
 ## Changes in 2025 release wave 1 (version 26.0)
 
-### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (removed)
+### Direct cloud migration and data upgrade from version Dynamics Business Central 2019 (v.14.x) (removal)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed | Direct cloud migration and data upgrade from version Business Central 2019 (v.14.x) is no longer supported. In order to upgrade (or cloud-migrate) data to v.26 or higher, follow one of these paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26</li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26 </li></ul>`ObsoleteState = Removed` fields are regularly cleaned up with a cadence of once every five major releases (referred to as the *stepping-stone* release). So after v.25, the next stepping-stone release will be v.30, and so on. |
+
+### Support for PowerShell 5.0 (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | As part of our move to .NET Core, we've converted the following Business Central administration modules from PowerShell 5 to PowerShell 7: Microsoft.Dynamics.Nav.Management.dll, Microsoft.Dynamics.Nav.Apps.Management.dll, and Microsoft.Dynamics.Nav.Apps.Tools.dll. The PowerShell 7 modules are renamed with the prefix `Microsoft.BusinessCentral` instead of `Microsoft.Dynamics.Nav` and are located in the new **Admin** folder of the Business Central Server installation.<br><br> For those who aren't ready to use PowerShell 7, we've included a Windows PowerShell 5 compatibility layer module that consolidates the cmdlets/functions of all three modules into a single module that can run with PowerShell 5. The PowerShell 5 compatibility layer module is called Microsoft.Dynamics.Nav.Management.dll, and it's installed side-by-side with the new PowerShell 7 modules as a part of Business Central Server installation except in the **Management** folder. The PowerShell 5 compatibility layer module is using an approach similar to the [Windows PowerShell Compatibility functionality in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility?view=powershell-7.4).<br><br> We highly recommend that you use the PowerShell 7 modules instead PowerShell 5 compatibility module because they'll give you the best performance. If PowerShell 7 is installed on your device, the PowerShell 7 modules are used by default by selecting **Business Central Administration Shell** in the **Start** menu or by runnng the NavAdminTool.ps1 script.<br><br> The Windows PowerShell 5 compatibility layer module is planned for removal in version 26 and won't receive any new functionality added in the new PowerShell 7 modules in the meantime. |
+
+### <a name="soap-on-baseapp-pages"></a>Expose a Microsoft page as a SOAP endpoint (disabled by default)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed |A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension. Until version 29 is released, you can still expose a Microsoft page as a SOAP endpoint, but not by default. If needed, use the **Feature: Disable SOAP web services on Microsoft UI pages** key in **Feature Management** to enable this capability. Learn more in [Disable SOAP web services on Microsoft UI pages feature key](../developer/devenv-disable-soap-microsoft-pages-feature-key.md)|
+
+### <a name="odata-on-baseapp-pages"></a>Remove ability to expose a Microsoft page as a OData endpoint (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint. Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+
+
+### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 26, this is no longer possible. |
 
 ## Changes in 2024 release wave 2 (version 25.0)
 
@@ -35,6 +75,12 @@ This article describes the features that are up for removal or that have been re
 |Removed | Cloud migration tool and on-premises data upgrade toolkit support one-step upgrade path from any version starting from Dynamics Business Central 2019 (v.14) to the latest version of Business Central.<br><br>This is possible because none of the schema elements (tables and fields) deprecated over 11 major updates (from v.14 to v.25) were removed from the released databases to preserve backwards compatibility and enable more seamless transition for our customers to the latest versions on-premises and online. <br><br>Over these releases, we've accumulated a significant number of such obsolete schema elements, which increases complexity of working with the application code. This condition blocks the reuse of the long obsolete objects and field IDs, affecting our work of moving common functionality from local versions of Business Central to W1 version. <br><br>At the same time, much has changed in the area of upgradeability since v.14 like: the move to extensions, the transition to Universal Code, introduction of AL Go for GitHub for tracking apps compatibility and more. These improvements make it simpler to follow Business Central update cadence more closely.<br><br>So in the next release (that is, 2025 release wave 1 (v.26)), we're going to clean up all schemas that have been marked as `ObsoleteState = Removed` since Dynamics Business Central 2019 (v.14). <br><br>As a result, data upgrade or cloud migration to v.26 or higher will have to be done via v.25 (referred to as the *stepping-stone* release) following one of the paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26 </li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26</li></ul>`ObsoleteState = Removed` fields will then be regularly cleaned up with a cadence of once every five major releases. So after v.25, the next stepping-stone release will be v.30, and so on. |
 
 ## Changes in 2024 release wave 1 (version 24.0)
+
+### Support for PowerShell 5.0 (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | As part of our move to .NET Core, we've converted the following Business Central administration modules from PowerShell 5 to PowerShell 7: Microsoft.Dynamics.Nav.Management.dll, Microsoft.Dynamics.Nav.Apps.Management.dll, and Microsoft.Dynamics.Nav.Apps.Tools.dll. The PowerShell 7 modules are renamed with the prefix `Microsoft.BusinessCentral` instead of `Microsoft.Dynamics.Nav` and are located in the new **Admin** folder of the Business Central Server installation.<br><br> For those who aren't ready to use PowerShell 7, we've included a Windows PowerShell 5 compatibility layer module that consolidates the cmdlets/functions of all three modules into a single module that can run with PowerShell 5. The PowerShell 5 compatibility layer module is called Microsoft.Dynamics.Nav.Management.dll, and it's installed side-by-side with the new PowerShell 7 modules as a part of Business Central Server installation except in the **Management** folder. The PowerShell 5 compatibility layer module is using an approach similar to the [Windows PowerShell Compatibility functionality in PowerShell 7](/powershell/module/microsoft.powershell.core/about/about_windows_powershell_compatibility?view=powershell-7.4).<br><br> We highly recommend that you use the PowerShell 7 modules instead PowerShell 5 compatibility module because they'll give you the best performance. If PowerShell 7 is installed on your device, the PowerShell 7 modules are used by default by selecting **Business Central Administration Shell** in the **Start** menu or by runnng the NavAdminTool.ps1 script.<br><br> The Windows PowerShell 5 compatibility layer module is planned for removal in version 26 and won't receive any new functionality added in the new PowerShell 7 modules in the meantime. |
 
 ### <a name="schemaversion"></a>Schema version for custom APIs (changed default)
 
@@ -54,11 +100,17 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Removed | For Business Central installations on-premises, it's possible to control many server settings. Two of these control the way the Business Central server add hints to SQL statements: DisableQueryHintForceOrder and DisableQueryHintLoopJoin. Starting in version 24, these server settings will no longer be available.|
 
-### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
+### <a name="soap-on-baseapp-pages"></a>Expose a Microsoft page as SOAP endpoint (warning)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 24, this is no longer possible. |
+|Removed | A UI page isn't an API, so changes to them can happen in a release without being considered a breaking change. However, for customers who expose Microsoft UI pages as web service endpoints, a UI change can feel like a breaking change for an integration built on this endpoint. In version 29.0, exposing a Microsoft page as a SOAP endpoint will no longer be possible. If you need SOAP integrations for these pages, copy the source code for the page and host it in a per-tenant extension.|
+
+### <a name="views"></a>Legacy views on list pages (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Legacy views are list views that were created by developers in previous releases by placing them on the Role Center page object. In April 2019 release wave, we introduced a new, modern way of creating views. Starting in version 24, views must be created using the modern way. Legacy views will no longer be supported and won't display on list pages. Learn more at [Migrating from Legacy Views to Modern Views](../developer/devenv-views-legacy.md).|
 
 
 ## Changes in 2023 release wave 2 (version 23.0)
@@ -87,13 +139,6 @@ This article describes the features that are up for removal or that have been re
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it's possible to write to the app database tables from AL. Starting in version 24, this is no longer possible. |
-
-### <a name="views"></a>Legacy views on list pages (removal)
-
-|Removed or Replaced? |Why?|
-|---------|---------|
-|Replaced | Legacy views are list views that were created by developers in previous releases by placing them on the Role Center page object. In April 2019 release wave, we introduced a new, modern way of creating views. Starting in version 23, views must be created using the modern way. Legacy views will no longer be supported and won't display on list pages. Learn more at [Migrating from Legacy Views to Modern Views](../developer/devenv-views-legacy.md).|
-
 
 ### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (removal)
 
@@ -410,7 +455,7 @@ When we move, remove, or replace an object, breaking changes can result in other
 <!--Should we include a section about this?-->
 Some features are available only under specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Austrian Version](deprecated-features-at.md)  

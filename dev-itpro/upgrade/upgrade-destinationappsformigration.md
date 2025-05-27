@@ -1,12 +1,12 @@
 ---
 title: "DestinationAppsForMigration"
 author: jswymer
-ms.custom: na
-ms.date: 01/03/2024
-ms.reviewer: na
-ms.topic: conceptual
+ms.custom: evergreen
+ms.date: 04/18/2024
+ms.topic: article
 ms.author: jswymer
 description: Learn how to use the DestinationAppsForMigration setting in Business Central Server for upgrading from C/AL to AL extensions. Detailed guide and FAQs included.
+ms.reviewer: jswymer
 ---
 
 # DestinationAppsForMigration
@@ -54,7 +54,7 @@ Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "Dest
 For example, the following command specifies the Microsoft system and base applications and a custom extension named My Extension.
 
 ```
-Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"e3d1b010-7f32-4370-9d80-0cb7e304b6f0", "name":"My Extension", "publisher": "Me"}]'
+Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"},{"appId":"00001111-aaaa-2222-bbbb-3333cccc4444", "name":"My Extension", "publisher": "Me"}]'
 ```
 
 > [!IMPORTANT]
@@ -82,7 +82,7 @@ It depends. For the setting to have any effect, you also include the system and 
 
 As many as you like. There's no limit or performance impact.
 
-## See also
+## Related information
 
 [JSON Files](../developer/devenv-json-files.md)  
 [Migrating Tables and Fields Between Extensions](../developer/devenv-migrate-table-fields.md) 

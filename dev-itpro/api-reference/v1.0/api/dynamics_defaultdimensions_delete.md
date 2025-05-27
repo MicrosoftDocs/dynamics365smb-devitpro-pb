@@ -3,11 +3,12 @@ title: (v1.0) Delete defaultDimensions from an entity| Microsoft Docs
 description: (v1.0) Deletes the default dimensions of the item in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Delete defaultDimensions from entities (v1.0)
@@ -49,7 +50,7 @@ DELETE https://{businesscentralPrefix}/api/v1.0/companies({companyId})/items({it
 
 No Content.
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [defaultDimension resource](../resources/dynamics_defaultDimension.md)  

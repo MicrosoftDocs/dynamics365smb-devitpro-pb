@@ -2,11 +2,11 @@
 title: Get item picture  
 description: Gets an item picture in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get item picture
@@ -22,6 +22,7 @@ The following example gets the default dimensions of the item entity in the resp
 ```
 GET businesscentralPrefix/companies({companyId})/items({itemId})/picture
 ```
+
 ## Request header
 
 |Header|Value|
@@ -29,7 +30,7 @@ GET businesscentralPrefix/companies({companyId})/items({itemId})/picture
 |Authorization| Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response 
 
@@ -43,12 +44,10 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({itemI
 ```
 
 **Response**  
-Here is an example of the response.
+Here's an example of the response.
 
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-
 
 ```json
 {
@@ -61,11 +60,11 @@ Here is an example of the response.
 }
 ```
 
-## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+## Related information
 
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Items](../resources/dynamics_item.md)  
 [Create item picture](dynamics_item_create_picture.md)  
 [Update item picture](dynamics_item_update_picture.md)  
-[Delete item picture](dynamics_item_delete_defaultdimensions.md)  
+[Delete item picture](dynamics_item_delete_picture.md)  
 

@@ -1,11 +1,7 @@
 ---
 title: "Codeunit Triggers"
 description: "Triggers that apply to codeunits in AL for Business Central."
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 4f9e9ada-b39f-4f84-a535-21473b847495
 author: SusanneWindfeldPedersen

@@ -1,11 +1,11 @@
 ---
 title: Views
 description: Description of what views are and how they're defined in Business Central.
-ms.reviewer: jswymer
+ms.reviewer: solsen
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 01/25/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ---
 
@@ -166,7 +166,7 @@ In general, views can in several ways be compared to page customizations. Here a
 - It isn't possible to use variables or methods in a view. When writing client-side expressions for properties like **Visibility**, it is only possible to use constant values or table field references. This condition is validated by the compiler.
 - It isn't possible to create new controls for a page from a view.
 
-## See also
+## Related information
   
 [AL development environment](devenv-reference-overview.md)  
 [Developing extensions](devenv-dev-overview.md)  

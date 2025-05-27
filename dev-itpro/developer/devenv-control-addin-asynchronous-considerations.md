@@ -1,9 +1,7 @@
 ---
 title: "Asynchronous considerations for control add-ins"
-ms.custom: na
 ms.date: 12/29/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ms.assetid: 6c90376e-b86e-406d-880d-3cc905bf6527
 author: SusanneWindfeldPedersen
 description: Learn about asynchronous communication limitations in Dynamics 365 Business Central server and how to effectively write control add-ins for all display targets.
@@ -21,7 +19,7 @@ When writing control add-ins that work on all display targets, you have to consi
 The methods from the "See Also" section are not auto-generated as they come from the .NET assemblies in the platform. When the old methods folder will be deprecated, remember to not remove these methods. 
 -->
   
-## See also  
+## Related information  
 
 [InvokeExtensibilityMethod Method](methods/devenv-invokeextensibility-method.md)   
 [GetImageResource Method](methods/devenv-getimageresource-method.md)  

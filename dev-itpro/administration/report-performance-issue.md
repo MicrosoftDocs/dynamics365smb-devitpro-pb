@@ -2,7 +2,7 @@
 title: Report a performance issue
 description: Learn about how to report a performance issue on behalf of your Business Central online customers as the delegated administrator.
 author: kennienp
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/02/2024
 ms.author: kepontop
 
@@ -61,7 +61,7 @@ When creating the support request, provide this information:
 
 The following article takes you through creating a support request: [Escalate Support Issues to Microsoft](raise-support-case.md).
 
-## See also
+## Related information
 
 [Escalating Support Issues to Microsoft](raise-support-case.md)    
 [Managing Technical Support](manage-technical-support.md)    

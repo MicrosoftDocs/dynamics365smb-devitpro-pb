@@ -2,7 +2,7 @@
 title: Integrating with Microsoft Dataverse
 description: Learn how to integrate Business Central with Microsoft Dataverse
 author: kennienp
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
 ms.date: 02/02/2024
@@ -54,7 +54,7 @@ Business events provide a mechanism for notifying [!INCLUDE[dataverse_short](../
 For more information, see [Business events](../developer/business-events-overview.md).
 
 
-## See also
+## Related information
 
 [Integrate with Dataverse via data sync](/dynamics365/business-central/admin-common-data-service)  
 [Integrate with Microsoft Dataverse via virtual tables](../powerplatform/powerplat-overview.md)   

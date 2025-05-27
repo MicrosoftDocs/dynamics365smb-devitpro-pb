@@ -1,45 +1,44 @@
 ---
-title: "AL Database Methods and Performance on SQL Server"
+title: AL database methods and performance on SQL Server
 description: Read about the relationship between basic database methods in AL and SQL statements in Business Central.  
 author: jswymer
-ms.custom: na
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
-ms.date: 12/21/2021
+ms.date: 04/01/2025
+ms.reviewer: jswymer
 ---
 
-# AL Database Methods and Performance on SQL Server
+# AL database methods and performance on SQL Server
 
-This topic describes the relationship between basic database methods in AL and SQL statements.  
+This article describes the relationship between basic database methods in AL and SQL statements.  
   
 ## Get, Find, FindSet, and Next  
 
-The AL language offers several methods to retrieve record data. In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], records are retrieved using multiple active result sets (MARS). Generally, retrieving records with MARS is faster than with server-side cursors. Additionally, each function is optimized for a specific purpose. To achieve optimal performance you must use the method that is best suited for a given purpose.  
+The AL language offers several methods to retrieve record data. In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], records are retrieved using multiple active result sets (MARS). Generally, retrieving records with MARS is faster than with server-side cursors. Additionally, each function is optimized for a specific purpose. To achieve optimal performance, you must use the method that is best suited for a given purpose.  
   
 - **Record.Get** is optimized for getting a single record based on primary key values.  
   
-- **Record.Find** is optimized for getting a single record based on the primary keys in the record and any filter or range that has been set.  
+- **Record.Find** is optimized for getting a single record based on the primary keys in the record and any filter or range that is set.  
   
 - **Record.Find('-')** and **Record.Find('+')** are optimized for reading primarily from a single table when the application might not read all records. Find('-') is implemented by issuing a self-tuning TOP X call, where X can change over time, based on statistics of the number of rows read.  
   
      The following are examples of scenarios in which you should use the Find('-') function to achieve optimal performance:  
   
-    - Before you post a general journal batch, you must check all journal lines for validity and verify that all lines balance. After the first line when an error is found, you do not have to retrieve the rest of the rows.  
+    - Before you post a general journal batch, you must check all journal lines for validity and verify that all lines balance. After the first line when an error is found, you don't have to retrieve the rest of the rows.  
   
-    - if you want to fulfill multiple outstanding orders from a recent purchase but you do not know how many orders are covered by the purchase.  
+    - if you want to fulfill multiple outstanding orders from a recent purchase but you don't know how many orders are covered by the purchase.  
   
-- **Record.FindSet(ForUpdate, UpdateKey)** is optimized for reading the complete set of records in the specified filter and range. The *UpdateKey* parameter does not influence the efficiency of this method in [!INCLUDE[prod_long](../developer/includes/prod_long.md)], such as it did in [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)].  
+- **Record.FindSet(ForUpdate, UpdateKey)** is optimized for reading the complete set of records in the specified filter and range. The *UpdateKey* parameter doesn't influence the efficiency of this method in [!INCLUDE[prod_long](../developer/includes/prod_long.md)], such as it did in [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)].  
   
-     FindSet is not implemented by issuing a TOP X call.  
+     FindSet isn't implemented by issuing a TOP X call.  
   
 - **Record.FindFirst** and **Record.FindLast** are optimized for finding the single first or last record in the specified filter and range.  
   
-- **Record.Next** can be called at any time. However, if **Record.Next** is not called as part of retrieving a continuous result set, then [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls a separate SQL statement in order to Find the Next record.  
+- **Record.Next** can be called at any time. However, if **Record.Next** isn't called as part of retrieving a continuous result set, then [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calls a separate SQL statement in order to Find the Next record.  
   
 ### Dynamic result sets  
 
-Any result set that is returned from a call to the Find methods discussed in the previous section is dynamic. That means that the result set is guaranteed to contain any changes that you make further ahead in the result set. However, this feature comes at a cost. If any modifications are made to a table which is being traversed, then [!INCLUDE[prod_short](../developer/includes/prod_short.md)] might have to issue an extra SQL statement to guarantee that the result set is dynamic.  
+Any result set that is returned from a call to the Find methods discussed in the previous section is dynamic. That means that the result set is guaranteed to contain any changes that you make further ahead in the result set. However, this feature comes at a cost. If any modifications are made to a table being traversed, then [!INCLUDE[prod_short](../developer/includes/prod_short.md)] might have to issue an extra SQL statement to guarantee that the result set is dynamic.  
   
 The following code shows how records are most efficiently retrieved. **FindSet** is the most efficient method to use because this example reads all records.  
   
@@ -52,7 +51,7 @@ if FindSet() then
   
 ## <a name="calc"></a>CalcFields, CalcSums, and Count  
 
-Each call to **CalcFields**, **CalcField**, **CalcSum**, or **CalcSums** methods that calculates a sum requires a separate SQL statement unless the client has calculated the same sum or another sum that uses the same SumIndexFields or filters in a recent operation, and therefore, the result is cached.  
+Each call to the **CalcFields**, **CalcField**, **CalcSum**, or **CalcSums** methods requires a separate SQL statement unless the client calculates the same sum or another sum using the same SumIndexFields or filters in a recent operation. In that case, the result is cached.
   
 Each **CalcFields** or **CalcSums** request should be confined to use only one SIFT index. The SIFT index can only be used if:  
   
@@ -60,14 +59,17 @@ Each **CalcFields** or **CalcSums** request should be confined to use only one S
   
 - The filtered fields are part of the key fields specified in the SIFT index containing all the sum fields.  
   
-if neither of these requirements is fulfilled, then the sum will be calculated directly from the base table.  
-  
-In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], SIFT indexes can be used to count records in a filter provided that a SIFT index exists that contains all filtered fields in the key fields that are defined for the SIFT index.  
+If neither of these requirements is fulfilled, then the sum is calculated directly from the base table.  
+
+In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], SIFT indexes count records in a filter if a SIFT index contains all filtered fields in the key fields defined for the SIFT index.
   
 ## SetAutoCalcFields  
 
-It is a common task to retrieve data and request calculation of associated FlowFields. The following example traverses customer records, calculates the balance, and marks the customer as blocked if the customer exceeds the maximum credit limit. **Note:** the Customer record and associated fields are *imaginary* in the following examples.  
-  
+It's a common task to retrieve data and request calculation of associated FlowFields. The following example traverses customer records, calculates the balance, and marks the customer as blocked if the customer exceeds the maximum credit limit. **Note:** the Customer record and associated fields are *imaginary* in the following examples.  
+
+> [!NOTE]
+> Starting in [!INCLUDE[prod_short](../includes/prod_short.md)] [!INCLUDE[2025_releasewave1_name](../includes/2025_releasewave1_name.md)], the **SetAutoCalcFields** is also available on the **RecordRef** data type.
+
 ```AL  
 if Customer.FindSet() then 
     repeat  
@@ -83,7 +85,7 @@ if Customer.FindSet() then
     until Customer.Next() = 0;  
 ```  
   
-In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], you can do this much faster. First, we set a filter on the customer. This could also be done in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2009, but behind the scenes the same code as mentioned earlier would be executed. In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], setting a filter on a record is translated into a single SQL statement.  
+In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], you can do this operation faster. First, we set a filter on the customer. In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], setting a filter on a record is translated into a single SQL statement.  
   
 ```AL  
 Customer.SetFilter(Balance, '>%1' , LargeCredit);   
@@ -121,11 +123,11 @@ if Customer.FindSet() then
   
 ## Insert, Modify, Delete, and LockTable
 
-Each call to **Insert**, **Modify**, or **Delete** methods requires a separate SQL statement. If the table that you Modify contains SumIndexes, then the operations will be much slower. As a test, select a table that contains SumIndexes and execute one hundred **Insert**, **Modify**, or **Delete** operations to measure how long it takes to maintain the table and all its SumIndexes.  
+Each call to **Insert**, **Modify**, or **Delete** methods requires a separate SQL statement. If the table that you Modify contains SumIndexes, then the operations are slower. As a test, select a table that contains SumIndexes and execute 100 **Insert**, **Modify**, or **Delete** operations to measure how long it takes to maintain the table and all its SumIndexes.  
 
-Cloning a record before a **Modify** or **Delete** operation issues an extra SQL statement, since the SQL `SELECT` query is restarted every time the table is cloned. A record will be cloned when calling the [Copy Method](../developer/methods-auto/record/record-copy-method.md), when using a **RecordRef** or when the record is not passed with the `var` parameter within a function.
+Cloning a record before a **Modify** or **Delete** operation issues an extra SQL statement, since the SQL `SELECT` query is restarted every time the table is cloned. A record is cloned when calling the [Copy Method](../developer/methods-auto/record/record-copy-method.md), when using a **RecordRef** or when the record isn't passed with the `var` parameter within a function.
 
-The following code samples will lead to a bad performance, since they will issue an extra SQL statement per record in the table.
+The following code samples lead to a bad performance, since they'll issue an extra SQL statement per record in the table.
 
 ```AL
 if MyTable.FindSet() then
@@ -145,37 +147,37 @@ if MyTable.FindSet() then
     until MyTable.Next() = 0;
 ```
 
-Instead, you should do the following, which only requires an extra SQL statement:
+Instead, you should use the following code, which only requires an extra SQL statement:
 
 ```AL
 RecRef.Open(Database::"My Table");
 if RecRef.FindSet() then
     repeat
         // ...
-        RecRef.Modify(); // or .Delete();
+        RecRef.Modify(true); // or .Delete();
     until RecRef.Next() = 0;
 ```
 
 ```AL
-if MyTable.FindSet() then
+if MyTable.FindSet(true) then
     repeat
         MyTable.Modify(); // or .Delete();
     until MyTable.Next() = 0;
 ```
 
-The **LockTable** method does not require any separate SQL statements. It will cause any subsequent reading from any tables to be done with an update lock. For more information, see [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md). 
+The **LockTable** method doesn't require any separate SQL statements. It causes any subsequent reading from any tables to be done with an update lock. For more information, see [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md). 
 
 ## ModifyAll and DeleteAll
 
-Using **ModifyAll** and **DeleteAll** can improve performance by limiting the amount of SQL calls needed. However, be aware that  **ModifyAll** and **DeleteAll** will revert to individual calls if any of the following conditions exist:
+Using **ModifyAll** and **DeleteAll** can improve performance by limiting the amount of SQL calls needed. However, be aware that  **ModifyAll** and **DeleteAll** revert to individual calls if any of the following conditions exist:
 
-- There is trigger code on the table.
+- There's trigger code on the table.
 - There are event subscribers to the following events: OnBeforeModify, OnAfterModify, OnGlobalModify, OnBeforeDelete, OnAfterDelete, OnGlobalDelete, and OnDatabaseModify.
 - Security filtering is active.
 - The table contains `Media` or `MediaSet` data type fields.
 - There are fields that are added through companion tables.
   
-## See Also  
+## Related information  
 
 [Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
 [Bulk Inserts](optimize-sql-bulk-Inserts.md)   

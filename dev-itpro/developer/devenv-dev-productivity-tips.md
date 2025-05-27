@@ -3,22 +3,22 @@ title: Developer productivity tips
 description: Learn about productivity tips when programming in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.reviewer: 
-ms.topic: conceptual
+ms.topic: article
 ms.collection: 
 ms.custom: bap-template 
 ms.date: 01/29/2024
+ms.reviewer: solsen
 ---
 
 # Developer productivity tips
 
-Working in Visual Studio Code and programming in AL for Business Central can be a very productive experience. This article describes some of the productivity tips that can help you get more done when programming in AL.
+Working in Visual Studio Code and programming in AL for Business Central can be a productive experience. This article describes some of the productivity tips that can help you get more done when programming in AL.
 
 ## AL language tips
 
 ### AL snippets
 
-In addition to the inline help of IntelliSense, you have access to various snippets that'll give you a template for a specific object type. Use a code snippet from an .al file by start typing the snippet name. All snippets start with the letter `t`. For example, to get a template for a table, type `ttable` and press <kbd>Tab</kbd>.
+In addition to the inline help of IntelliSense, you have access to various snippets that will give you a template for a specific object type. Use a code snippet from an .al file by start typing the snippet name. All snippets start with the letter `t`. For example, to get a template for a table, type `ttable` and press <kbd>Tab</kbd>.
 
 ## Code actions
 
@@ -33,7 +33,7 @@ Code actions can help you fix issues in the code and give you possible correctiv
 Add a launch property to a code-workspace or in the settings.json file. This allows for a centralized configuration of projects. Any local `launch.json` file overrides the user and workspace configuration. And a workspace launch configuration overrides the launch configuration specified in the user `settings.json` file.
 
 > [!NOTE]  
-> If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the user `settings.json` file won't be able to override it.
+> If a local `launch.json` file doesn't contain a valid AL launch configuration, we try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the user `settings.json` file won't be able to override it.
 
 ## General Visual Studio Code tips
 
@@ -45,7 +45,7 @@ Visual Studio Code has built-in Git integration that makes it easy to manage you
 
 The Command Palette allows you to search for and run commands in Visual Studio Code. To open the **Command Palette**, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>.
 
-## See also
+## Related information
 
 [JSON files](devenv-json-files.md)  
 [Launch JSON file](devenv-json-launch-file.md)  

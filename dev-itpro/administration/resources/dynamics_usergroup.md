@@ -1,11 +1,12 @@
 ---
-title: userGroup resource type | Microsoft Docs
+title: userGroup resource type
 description: An user group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 12/03/2023
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # userGroup resource type
@@ -63,7 +64,7 @@ Here is a JSON representation of the userGroup resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET userGroup](../api/dynamics_usergroup_get.md)  
 [DELETE userGroup](../api/dynamics_usergroup_delete.md)  
 [POST userGroup](../api/dynamics_usergroup_create.md)   

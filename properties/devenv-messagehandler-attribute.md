@@ -1,11 +1,7 @@
 ---
 title: "MessageHandler Attribute"
 description: "The MessageHandler attribute in AL for Business Central"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: jswymer
 ---
@@ -21,7 +17,7 @@ AL test methods on test codeunits. A test method is a method that has the [Test 
   
 ```AL
 [MessageHandler]
-procedure MessageHandler(Message : Text[1024]);
+procedure MessageHandler(Message : Text[1024])
 ```    
 
 ## Remarks

@@ -1,17 +1,16 @@
 ---
-title: "JsonArray Data Type"
+title: "JsonArray data type"
 description: "Is a container for any well-formed JSON array."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonArray Data Type
+# JsonArray Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is a container for any well-formed JSON array. A default JsonArray contains an empty JSON array.
@@ -43,6 +42,20 @@ The following methods are available on instances of the JsonArray data type.
 |[Clone()](jsonarray-clone-method.md)|Creates a deep-copy of the JsonArray value.|
 |[Count()](jsonarray-count-method.md)|Gets the number of elements in the JsonArray.|
 |[Get(Integer, var JsonToken)](jsonarray-get-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetArray(Integer)](jsonarray-getarray-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetBigInteger(Integer)](jsonarray-getbiginteger-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetBoolean(Integer)](jsonarray-getboolean-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetByte(Integer)](jsonarray-getbyte-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetChar(Integer)](jsonarray-getchar-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetDate(Integer)](jsonarray-getdate-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetDateTime(Integer)](jsonarray-getdatetime-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetDecimal(Integer)](jsonarray-getdecimal-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetDuration(Integer)](jsonarray-getduration-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetInteger(Integer)](jsonarray-getinteger-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetObject(Integer)](jsonarray-getobject-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetOption(Integer)](jsonarray-getoption-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetText(Integer)](jsonarray-gettext-method.md)|Retrieves the value at the given index in the JsonArray.|
+|[GetTime(Integer)](jsonarray-gettime-method.md)|Retrieves the value at the given index in the JsonArray.|
 |[IndexOf(JsonToken)](jsonarray-indexof-jsontoken-method.md)|Determines the index of a specific value in the JsonArray.|
 |[IndexOf(JsonArray)](jsonarray-indexof-jsonarray-method.md)|Determines the index of a specific value in the JsonArray.|
 |[IndexOf(JsonObject)](jsonarray-indexof-jsonobject-method.md)|Determines the index of a specific value in the JsonArray.|
@@ -107,7 +120,7 @@ The following methods are available on instances of the JsonArray data type.
 > [!NOTE]  
 > The JsonArray is 0-based by design.
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

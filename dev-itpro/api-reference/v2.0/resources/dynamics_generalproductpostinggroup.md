@@ -4,16 +4,15 @@ description: A general product posting group object in Dynamics 365 Business Cen
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/24/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # generalProductPostingGroup resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a general product posting group in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -25,8 +24,6 @@ Represents a general product posting group in [!INCLUDE[prod_short](../../../inc
 |:--------------------|:-----------|:-------------------------|
 |[GET generalProductPostingGroup](../api/dynamics_generalproductpostinggroup_get.md)|generalProductPostingGroup|Gets a general product posting group object.|
 
-
-
 ## Properties
 
 | Property           | Type   |Description     |
@@ -36,10 +33,11 @@ Represents a general product posting group in [!INCLUDE[prod_short](../../../inc
 |description|string|Specifies the description of the general product posting group.|
 |defaultVATProductPostingGroup|string||
 |autoInsertDefault|boolean||
+|lastModifiedDateTime|datetime|The last datetime the general product posting group was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the generalProductPostingGroup resource.
+Here's a JSON representation of the generalProductPostingGroup resource.
 
 
 ```json
@@ -48,10 +46,11 @@ Here is a JSON representation of the generalProductPostingGroup resource.
     "code": "string",
     "description": "string",
     "defaultVATProductPostingGroup": "string",
-    "autoInsertDefault": "boolean"
+    "autoInsertDefault": "boolean",
+    "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
+
 [GET generalProductPostingGroup](../api/dynamics_generalproductpostinggroup_get.md)

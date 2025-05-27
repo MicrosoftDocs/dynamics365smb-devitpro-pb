@@ -1,10 +1,7 @@
 ---
 title: "PagePartID Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 891a324a-18a9-4ba6-9041-7561695b5ac2
 caps.latest.revision: 5

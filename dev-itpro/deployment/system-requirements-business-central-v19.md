@@ -1,10 +1,12 @@
 ---
 title: System Requirements for Business Central 2021 Release Wave 2
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central version 19 on-premises.
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ms.service: dynamics-365-op
 ms.topic: overview
-ms.date: 01/10/2022
+ms.date: 04/16/2024
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -174,7 +176,7 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 |-|-|  
 |Supported SharePoint servers|<ul><li>SharePoint Server 2019</li><li>SharePoint Online.</li></ul>|  
 
-## See Also
+## Related information
 
 [Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  

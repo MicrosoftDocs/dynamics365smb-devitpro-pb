@@ -2,11 +2,10 @@
 title: "Extending Customer, Vendor, and Item Templates"
 description: "How you extend templates in Dynamics 365 Business Central."
 author: bholtorf
-ms.custom: na
 ms.date: 10/14/2021
-ms.reviewer: na
-ms.topic: conceptual
-ms.author: romanz
+ms.topic: concept-article
+ms.author: bholtorf
+ms.reviewer: jswymer
 ---
 
 # Extending Customer, Vendor, and Item Templates
@@ -284,5 +283,5 @@ codeunit 50101 TemplateExtMgt
     end;
 }
 ```
-## See Also
+## Related information
 [Extending Application Areas](devenv-extending-application-areas.md)

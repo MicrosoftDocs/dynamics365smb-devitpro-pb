@@ -1,12 +1,11 @@
 ---
-title: "TestPermissions Property"
+title: "TestPermissions property"
 description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/08/2022
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -19,7 +18,7 @@ Specifies a value that can be used to determine which permission sets are used o
 ## Applies to
 -   Codeunit
 
-## Property Value
+## Property value
 
 |Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
@@ -48,7 +47,7 @@ For more information, see the open source test library [Permissions Mock](https:
 > [!NOTE]  
 > To specify the permission sets that are used by the tests run by a specific test method, use the [TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute).
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)  
 [TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute)  

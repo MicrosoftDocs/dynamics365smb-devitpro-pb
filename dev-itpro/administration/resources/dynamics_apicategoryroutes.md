@@ -4,8 +4,9 @@ description: An apicategoryroutes object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 12/04/2023
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # apicategoryroutes resource type
@@ -49,5 +50,5 @@ Here is a JSON representation of the apicategoryroutes resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET apicategoryroutes](../api/dynamics_apicategoryroutes_get.md)

@@ -4,16 +4,15 @@ description: A vendor object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # vendor resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,19 +27,18 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[POST vendor](../api/dynamics_vendor_create.md)|vendor|Creates a vendor object.|
 |[PATCH vendor](../api/dynamics_vendor_update.md)|vendor|Updates a vendor object.|
 
-
 ## Navigation
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the country region of the vendor.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the vendor.|
-|[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the payment term of the vendor.|
-|[paymentMethod](dynamics_paymentmethod.md)|paymentMethod |Gets the payment method of the vendor.|
+|[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the vendor.|
+|[paymentMethod](dynamics_paymentmethod.md)|paymentMethod |Gets the paymentmethod of the vendor.|
 |[picture](dynamics_picture.md)|picture |Gets the picture of the vendor.|
-|[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the default dimensions of the vendor.|
-|[agedAccountsPayable](dynamics_agedaccountspayable.md)|agedAccountsPayable |Gets the aged accounts payable of the vendor.|
-|[contactsInformation](dynamics_contactinformation.md)|contactInformation |Gets the contact information of the vendor.|
+|[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the vendor.|
+|[agedAccountsPayable](dynamics_agedaccountspayable.md)|agedAccountsPayable |Gets the agedaccountspayable of the vendor.|
+|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactsinformation of the vendor.|
+|[documentAttachments](dynamics_documentattachment.md)|documentAttachments |Gets the documentattachments of the vendor.|
 
 ## Properties
 
@@ -65,13 +63,13 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |paymentTermsId|GUID|Specifies which payment term the vendor uses.|
 |paymentMethodId|GUID|Specifies which payment method the vendor uses.|
 |taxLiable|boolean|Specifies if the vendor or vendor is liable for sales tax. Set to **true** if the vendor is tax liable.|
-|blocked|NAV.vendorBlocked|Specifies which transactions with the customer cannot be posted. It can be <Member Name=" ", "Payment" or "All".|
+|blocked|NAV.vendorBlocked|Specifies which transactions with the customer can't be posted. It can be <Member Name=" ", "Payment" or "All".|
 |balance|decimal|Specifies vendor's total balance.|
 |lastModifiedDateTime|datetime|The last datetime the vendor was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the vendor resource.
+Here's a JSON representation of the vendor resource.
 
 
 ```json
@@ -100,11 +98,9 @@ Here is a JSON representation of the vendor resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET vendor](../api/dynamics_vendor_Get.md)  
 [DELETE vendor](../api/dynamics_vendor_Delete.md)  
 [POST vendor](../api/dynamics_vendor_Create.md)  

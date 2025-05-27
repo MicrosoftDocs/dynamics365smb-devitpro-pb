@@ -1,16 +1,14 @@
 ---
-title: Transferring Data Between Tables using DataTransfer
+title: Transferring data between tables using DataTransfer
 description: Learn about the DataTransfer object type and how to use it to move data between tables.
 author: jswymer
-
-ms.custom: na
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.date: 03/07/2023
+ms.reviewer: jswymer
 ---
 
-# Transferring Data Between Tables using DataTransfer
+# Transferring data between tables using DataTransfer
 
 > **APPLIES TO:**  Business Central 2022 release wave 2 (version 21.0) and later.
 
@@ -168,7 +166,7 @@ begin
     dt.SetTables(Database::Destination, Database::Destination);
     dt.AddSourceFilter(dest.FieldNo("Field 1"), '=%1', 'A');
     dt.AddSourceFilter(dest.FieldNo("Field 2"), '%1..%2', 'B', 'C');
-    dt.AddConstValue(dest."Enum Field"::SomeValue, dest.FieldNo("Enum Field"));
+    dt.AddConstantValue(dest."Enum Field"::SomeValue, dest.FieldNo("Enum Field"));
     dt.CopyFields();
 end;
 ```
@@ -237,6 +235,6 @@ end;
 
 As with CopyFields, CopyRows is a bulk operation. It provides performant execution by doing only a single SQL statement for the entire operation, instead of doing multiple per-row operations. Measurements have shown an ~50x performance improvement with a DataTransfer solution compared with a record API solution.
 
-## See Also
+## Related information
 
 [Upgrading Extensions](devenv-upgrading-extensions.md)  

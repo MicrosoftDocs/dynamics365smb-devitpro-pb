@@ -46,7 +46,7 @@ Licensed customers must stay current with updates to the [!INCLUDE[prod_long](..
 > [!CAUTION]
 > Once a product version under fixed lifecycle is out of mainstream support, access to extended support requires Unified support status. Learn more about extended support [here](/lifecycle/policies/fixed), and learn more about Unified support [here](https://www.microsoft.com/unifiedsupport/overview).
 
-## See Also
+## Related information
 
 [Microsoft Lifecycle Policy for Business Central on-premises](/lifecycle/products/dynamics-365-business-central-onpremises-modern-policy)  
 [Configuring Technical Support](../technical-support.md)  

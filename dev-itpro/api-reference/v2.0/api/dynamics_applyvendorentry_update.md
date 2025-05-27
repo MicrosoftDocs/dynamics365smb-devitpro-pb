@@ -4,12 +4,11 @@ description: Updates an  apply vendor entry object in Dynamics 365 Business Cent
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 02/01/2023
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Update applyVendorEntries
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
@@ -30,11 +29,11 @@ PATCH businesscentralPrefix/companies({id})/vendorPaymentJournals({id})/vendorPa
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **applyVendorEntry**, the **apply vendor entry** will not be updated. |
+|If-Match      |Required. When this request header is included and the eTag provided doesn't match the current tag on the **applyVendorEntry**, the **apply vendor entry** won't be updated. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
 
@@ -44,7 +43,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/applyVendorEntries({id})
@@ -56,7 +55,7 @@ Content-type: application/json
 ```
 
 **Response**
-Here is an example of the response.
+Here's an example of the response.
 
 
 ```json
@@ -81,8 +80,7 @@ Content-type: application/json
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
-## See Also
+## Related information
 
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-[applyVendorEntry](../resources/dynamics_applyVendorEntry.md)  
-[GET applyVendorEntry](dynamics_applyvendorentry_get.md)  
+[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[applyVendorEntry](../resources/dynamics_applyVendorEntry.md)

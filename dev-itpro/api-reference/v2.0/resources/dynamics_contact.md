@@ -4,14 +4,13 @@ description: A contact object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # contact resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a contact in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -26,13 +25,11 @@ Represents a contact in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[POST contact](../api/dynamics_contact_create.md)|contact|Creates a contact object.|
 |[PATCH contact](../api/dynamics_contact_update.md)|contact|Updates a contact object.|
 
-
 ## Navigation
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[contactInformation](dynamics_contactinformation.md)|contactInformation |Gets the contactinformation of the contact.|
-|[contact](dynamics_contact.md)|NAV.contactBusinessRelation |Gets the contact of the contact.|
 |[picture](dynamics_picture.md)|picture |Gets the picture of the contact.|
 
 ## Properties
@@ -43,9 +40,10 @@ Represents a contact in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |number|string|Specifies the number of the contact.|
 |type|NAV.contactType|Specifies the type of contact, can be "Company" or "Person".|
 |displayName|string|Specifies the contact's name. This name will appear on all sales documents for the contact.|
+|jobTitle|string|The job title of the contact.|
 |companyNumber|string|The number of the company.|
 |companyName|string|The name of the company.|
-|contactBusinessRelation|NAV.contactBusinessRelation|The business relation with the contact.|
+|contactBusinessRelation|NAV.contactBusinessRelation||
 |addressLine1|string|Specifies the contact's address. This address will appear on all sales documents for the contact.|
 |addressLine2|string|Specifies the contact's address. This address will appear on all sales documents for the contact.|
 |city|string|Specifies the contact's city.|
@@ -64,7 +62,7 @@ Represents a contact in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## JSON representation
 
-Here is a JSON representation of the contact resource.
+Here's a JSON representation of the contact resource.
 
 
 ```json
@@ -73,6 +71,7 @@ Here is a JSON representation of the contact resource.
     "number": "string",
     "type": "NAV.contactType",
     "displayName": "string",
+    "jobTitle": "string",
     "companyNumber": "string",
     "companyName": "string",
     "contactBusinessRelation": "NAV.contactBusinessRelation",
@@ -93,13 +92,13 @@ Here is a JSON representation of the contact resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Remarks
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
-## See Also
+## Related information
+
 [GET contact](../api/dynamics_contact_get.md)  
 [DELETE contact](../api/dynamics_contact_delete.md)  
 [POST contact](../api/dynamics_contact_create.md)  

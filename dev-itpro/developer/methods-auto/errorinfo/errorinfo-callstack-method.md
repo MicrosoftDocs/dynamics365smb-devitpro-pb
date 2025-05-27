@@ -2,11 +2,10 @@
 title: "ErrorInfo.Callstack() Method"
 description: "Specifies a callstack where the ErrorInfo was collected."
 ms.author: solsen
-ms.custom: na
-ms.date: 03/24/2022
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -55,7 +54,7 @@ end
 
 For an elaborate example, see the ErrorMessageManagement codeunit in the system application.
 
-## See Also
+## Related information
 
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Collecting Errors](../../devenv-error-collection.md)  

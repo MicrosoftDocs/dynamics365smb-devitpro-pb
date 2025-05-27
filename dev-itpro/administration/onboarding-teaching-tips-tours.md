@@ -1,10 +1,10 @@
-﻿---
+---
 title: Teaching tips and in-app tours for onboarding users
 description: Learn about the teaching tips that you can apply to your Business Central to help users get started.
 author: sorenfriisalexandersen
-ms.reviewer: jswymer
-ms.topic: conceptual
-ms.date: 03/22/2022
+ms.reviewer: solsen
+ms.topic: how-to
+ms.date: 01/30/2025
 ms.author: soalex
 ---
 
@@ -19,26 +19,20 @@ Teaching tips can be defined at the page level, the *page teaching tip*, and be 
 - The primary purpose is to increase the user's chance of success with the page. So, the title and description of the page teaching tip should answer the following hypothetical user questions:
 
   - **AboutTitle**: *What is this page about*?
-
   - **AboutText**: *What can I do with this page?*
 
 - Teaching tips explain [!INCLUDE [prod_short](../includes/prod_short.md)] logic that is relevant to the page.
-
-- Teaching tips let users discover and initiate the related tour whenever they are ready for it.
-
+- Teaching tips let users discover and initiate the related tour whenever they're ready for it.
 - Allow users to get on with a task right away without blocking them.
-
 - A teaching tip can be defined for any page (including request pages for reports) in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], except the role centers, and dialogs.
-
-- After users dismiss a teaching tip and tour, they can choose or hover over the page title. This action will reopen the teaching tip, and the user can retake the tour, for example.
-
+- After users dismiss a teaching tip and tour, they can choose or hover over the page title. This action reopens the teaching tip, and the user can retake the tour, for example.
 - On a page that is opened from the checklist, the tour is considered an invited tour, and the page teaching tip has a **Go back** button that takes the user back to the checklist.
 
 The following illustration shows a page teaching tip that explains what the page is about and can invite the user to take a tour. The teaching tip renders in the lower left corner.  
 
 :::image type="content" source="../media/onboarding-teaching-tip-page.png" alt-text="A page in Business Central with a page teaching tip at the lower left corner.":::
 
-The following illustration shows how choosing the page title  will reopen the teaching tip so that the user can retake the tour.  
+The following illustration shows how choosing the page title reopens the teaching tip so that the user can retake the tour.  
 
 :::image type="content" source="../media/onboarding-teaching-tip-title.png" alt-text="Illustration of page with a teaching tip pointing to the page title.":::
 
@@ -58,9 +52,9 @@ There are different rules for teaching tips for lists versus cards and documents
 
 - The tour guides the user around the page.
 
-- Tours can be initiated from the page teaching tip
+- Tours can be initiated from the page teaching tip.
 
-- During a tour, a page with input fields will be in read mode.
+- During a tour, a page with input fields is in read mode.
 
 - Tours show where to find something, what it is, what it means, what you can do with it, and what it affects.
 
@@ -103,12 +97,12 @@ When adding teaching tips, consider the following limitations:
 
 ### How FactBox teaching tips fit into tours
 
-The teaching tips for FactBoxes become part of the tour on the hosting page. For more information, see [Teaching tips flow](#flow).
+The teaching tips for FactBoxes become part of the tour on the hosting page. Learn more in [Teaching tips flow](#flow).
 
 ## Teaching tips for reports
 You can add teaching tips for report request pages just like normal pages by using the **AboutTitle** and **AboutText** properties in AL.
 
-Reports must be documented because they help users take data-driven decisions and are therefore key for users to run their business processes. With teaching tips, you can help explain logic that is relevant to the report therefore allowing users to get on with their reporting task right away without blocking them. After users dismiss a teaching tip, they can choose or hover over the report title in the request page. This action will reopen the teaching tip.
+Reports must be documented because they help users take data-driven decisions and are therefore key for users to run their business processes. With teaching tips, you can help explain logic that is relevant to the report therefore allowing users to get on with their reporting task right away without blocking them. After users dismiss a teaching tip, they can choose or hover over the report title in the request page. This action reopens the teaching tip.
 
 The following illustration shows a report request page teaching tip that explains what the report is about. The teaching tip renders in the lower left corner.  
 
@@ -155,7 +149,7 @@ Bolded text can call out the most important points, such as
 
 - Consider the difference between a page name such as the `**Posted Sales Invoices**` list (bolded and capitalized page name) as opposed to what the list contains such as `the list of posted invoices` (not capitalized and not bolded).
 
-- If the feature is already mentioned in the title, consider if it's necessary to highlight the word again in the body text. Bolding a word once in a tip is usually enough.
+- If the feature is already mentioned in the title, consider if it's necessary to highlight the word again in the body text. Bolding a word once in a tip is enough.
 
   ![Example of Page Teaching Tip mentioning a page name highlighted with bold text ](../media/onboarding-teaching-tip-page-bold.png)
 
@@ -179,7 +173,7 @@ Adding links to page teaching tips can be relevant in the following cases:
 
 - Use links sparsely and use only in page teaching tips. It may be confusing to send users elsewhere.
 
-- Don't use links in tour teaching tips, as it will disrupt the tour experience.
+- Don't use links in tour teaching tips, as it disrupts the tour experience.
 
 The following illustration shows a page teaching tip with a link to guide users to a related page in [!INCLUDE [prod_short](../includes/prod_short.md)], such as the **Posted Sales Invoices** list, that users might be looking for in the **Sales Invoices** list.
 
@@ -195,47 +189,36 @@ The following illustration shows a page teaching tip with a link to guide users 
 
 [!INCLUDE [ua-tooltips-teachingtips](../includes/ua-tooltips-teachingtips.md)]
 
-For more information about tooltips, see [Help users get unblocked](../user-assistance.md#help-users-get-unblocked).  
+Learn more about tooltips in [Help users get unblocked](../user-assistance.md#help-users-get-unblocked).  
 
 ## Best practices for teaching tips and tours
 
 - Not all pages and reports in [!INCLUDE [prod_short](../includes/prod_short.md)] need teaching tips and tours. Use teaching tips where they provide value.
-
 - A teaching tip says *what can be done* (outcome), not *how to do it* (steps)
-
 - A teaching tip is short, and easily read. Usually just two or three short sentences.
 
 ### Do
 
-- Use easy to understand titles that are relevant to the element being pointed to.
-
+- Use titles that easy to understand and relevant to the element being pointed to.
 - Be concise with the information you provide in a teaching tip. Short sentences or sentence fragments are best.
-
 - Keep the tour as short as possible with 1-4 steps.
-
 - Titles with a question are OK to use, but use them sparingly.
-
 - Use positive cases, *don't tell what you can't do*.
-
 - Follow [Microsoft voice guidelines](/style-guide/welcome/)
 
 ### Don't
 
 - Don't provide how-to (steps) or instructional guidance in teaching tips. That content lives on learn.microsoft.com or in your own documentation.
-
 - Don't use large, unformatted blocks of text in a teaching tip.
-
 - Don't put obvious tip text, or text that simply repeats what is already on the screen.
-
 - If you can't find anything to say, maybe reevaluate if this teaching tip is needed.
 
-## See also
+## Related information
 
-[Get Users Started with the Checklist](onboarding-checklist.md)  
+[Get users started with the checklist](onboarding-checklist.md)  
 [Guidelines for tooltip text](../user-assistance.md#guidelines-for-tooltip-text)  
 [Onboarding experiences in Business Central](onboarding-experiences.md)  
-[AboutTitle Property](../developer/properties/devenv-abouttitle-property.md)  
-[AboutTitleML Property](../developer/properties/devenv-abouttitleml-property.md)   
-[AboutText Property](../developer/properties/devenv-abouttext-property.md)  
-[AboutTextML Property](../developer/properties/devenv-abouttextml-property.md)   
-
+[AboutTitle property](../developer/properties/devenv-abouttitle-property.md)  
+[AboutTitleML property](../developer/properties/devenv-abouttitleml-property.md)  
+[AboutText property](../developer/properties/devenv-abouttext-property.md)  
+[AboutTextML property](../developer/properties/devenv-abouttextml-property.md)  

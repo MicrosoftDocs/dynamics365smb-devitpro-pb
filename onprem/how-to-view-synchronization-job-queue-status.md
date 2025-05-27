@@ -1,13 +1,8 @@
 ---
 title: "Synchronizing Dynamics NAV and Dynamics 365 for Sales"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2018"
 ---
 # How to: View Synchronization Job Queue Status
 You can set up and run synchronization jobs when integrating [!INCLUDE[navnow_md](includes/navnow_md.md)] with [!INCLUDE[crm_md](includes/crm_md.md)] to ensure that data remains the same in both [!INCLUDE[navnow_md](includes/navnow_md.md)] and [!INCLUDE[crm_md](includes/crm_md.md)]. Viewing the [!INCLUDE[crm_md](includes/crm_md.md)] synchronization job status enables you to see whether any jobs have failed and the cause of the failure.  

@@ -1,9 +1,8 @@
 ---
 title: "Designing for different screen sizes on tablet and phone"
-ms.custom: na
 ms.date: 01/02/2024
-ms.reviewer: solsen
-ms.topic: conceptual
+ms.reviewer: jswymer
+ms.topic: concept-article
 author: blrobl
 ms.author: brobledodiaz
 description: Optimize your Business Central app design for various screen sizes. Learn best practices for tablet and phone clients, and how to test using a browser.
@@ -36,9 +35,9 @@ The following table provides a list of elements that fit in the page content or 
 Using a browser you can test how your application pages look on various device sizes. For more information, see [Opening the Business Central Tablet or Phone Client from a Browser](devenv-opening-business-central-tablet-or-phone-client-from-browser.md). 
  
 When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge Developer Tools to emulate different screen sizes. For more information, see [Microsoft Edge Developer Tools](/microsoft-edge/devtools-guide-chromium).
- <!--Also, for more information see [Troubleshooting: Client Returns Wrong CLIENTTYPE](devenv-troubleshooting-client-returns-wrong-clienttype.md).-->
 
-## See also  
+
+## Related information  
  [Deciding on Your Tablet and Phone Strategy](devenv-deciding-on-tablet-and-phone-strategy.md)   
  [Differences and Limitations When Developing Pages for the Dynamics 365 Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)    
  [Displaying Data as Tiles](devenv-lists-as-tiles.md)    

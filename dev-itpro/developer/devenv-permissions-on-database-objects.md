@@ -1,9 +1,7 @@
 ---
 title: "Permissions on Database Objects"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ---
 
@@ -65,7 +63,7 @@ Permissions =
 ...
 ```
 
-## See Also
+## Related information
 
 [Get Started with AL](devenv-get-started.md)  
 [Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  

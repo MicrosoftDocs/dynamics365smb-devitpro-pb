@@ -1,10 +1,7 @@
 ---
 title: "EventMethod Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ccfbe1a3-b0ac-4933-9036-ae499041ecd5
 caps.latest.revision: 4

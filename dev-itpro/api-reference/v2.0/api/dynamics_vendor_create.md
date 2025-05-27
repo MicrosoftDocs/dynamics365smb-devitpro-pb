@@ -6,8 +6,9 @@ author: SusanneWindfeldPedersen
 
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create vendors
@@ -28,7 +29,6 @@ POST businesscentralPrefix/companies({id})/vendors
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **vendor**, the **vendor** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **vendors** object.
@@ -40,7 +40,7 @@ If successful, this method returns ```201 Created``` response code and a **vendo
 
 **Request**
 
-Here is an example of a request.
+Here's an example of a request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/vendors
@@ -72,7 +72,7 @@ Content-type: application/json
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -107,7 +107,7 @@ Content-type: application/json
 }
 ```
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [vendor](../resources/dynamics_vendor.md)    
 [Get vendor](dynamics_vendor_Get.md)    

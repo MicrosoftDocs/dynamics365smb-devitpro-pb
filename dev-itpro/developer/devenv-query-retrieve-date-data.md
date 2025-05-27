@@ -1,9 +1,7 @@
 ---
 title: "Using the Date Method to Retrieve Day, Month, and Year Data"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 
@@ -131,7 +129,7 @@ The following table displays the resulting dataset for the sample query with the
   
  To avoid this condition, you should use the date method on fields that have a Date data type instead of a DateTime data type whenever possible. You can also return the DateTime value and implement post processing for the day, month, and year as needed.  
   
-## See Also  
+## Related information  
 
 [Query Objects](devenv-query-object.md)   
 [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  

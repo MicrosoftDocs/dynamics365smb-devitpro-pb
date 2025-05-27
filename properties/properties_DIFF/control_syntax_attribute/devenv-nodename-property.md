@@ -1,10 +1,7 @@
 ---
 title: "NodeName Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 93b5940e-cfea-430d-86a5-0fb924ed793c
 caps.latest.revision: 7

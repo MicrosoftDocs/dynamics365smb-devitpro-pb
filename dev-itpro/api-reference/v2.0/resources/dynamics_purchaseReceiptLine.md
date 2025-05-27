@@ -4,16 +4,15 @@ description: A purchase receipt line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # purchaseReceiptLine resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a purchase receipt line in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -31,7 +30,6 @@ Represents a purchase receipt line in [!INCLUDE[prod_short](../../../includes/pr
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[purchaseReceipt](dynamics_purchasereceipt.md)|purchaseReceipt |Gets the purchasereceipt of the purchaseReceiptLine.|
-|[account](dynamics_account.md)|account |Gets the account of the purchaseReceiptLine.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseReceiptLine.|
 
 ## Properties
@@ -44,6 +42,7 @@ Represents a purchase receipt line in [!INCLUDE[prod_short](../../../includes/pr
 |lineType|NAV.purchaseLineType|The type of the purchase receipt line. It can be " ", "G/L Account", "Item", "Resource", "Fixed Asset" or "Charge Item".|
 |lineObjectNumber|string|The number of the object (account or item) of the purchase receipt line.|
 |description|string|Specifies the description of the purchase receipt line.|
+|description2|string||
 |unitOfMeasureCode|string|The code of unit of measure for the purchase receipt line.|
 |unitCost|decimal|The unit cost of each individual item in the purchase receipt line.|
 |quantity|decimal|The quantity of the item in the purchase receipt line.|
@@ -53,7 +52,7 @@ Represents a purchase receipt line in [!INCLUDE[prod_short](../../../includes/pr
 
 ## JSON representation
 
-Here is a JSON representation of the purchaseReceiptLine resource.
+Here's a JSON representation of the purchaseReceiptLine resource.
 
 
 ```json
@@ -64,6 +63,7 @@ Here is a JSON representation of the purchaseReceiptLine resource.
     "lineType": "NAV.purchaseLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureCode": "string",
     "unitCost": "decimal",
     "quantity": "decimal",
@@ -72,9 +72,7 @@ Here is a JSON representation of the purchaseReceiptLine resource.
     "expectedReceiptDate": "date"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET purchaseReceiptLine](../api/dynamics_purchaseReceiptLine_Get.md)

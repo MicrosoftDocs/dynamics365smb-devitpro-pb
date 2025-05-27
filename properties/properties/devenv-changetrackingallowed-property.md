@@ -1,10 +1,7 @@
 ---
 title: "ChangeTrackingAllowed Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3e156138-d9c7-486e-b697-43da477d505a
 caps.latest.revision: 8

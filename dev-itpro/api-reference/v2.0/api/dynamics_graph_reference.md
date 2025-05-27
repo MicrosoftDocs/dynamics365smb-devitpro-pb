@@ -4,8 +4,9 @@ description: API documentation for integration with Microsoft Graph
 author: SusanneWindfeldPedersen
 ms.topic: get-started
 ms.devlang: al
-ms.date: 12/21/2023
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Microsoft Graph reference
@@ -50,6 +51,6 @@ In this section, you can find API documentation for Microsoft Graph.
 |purchaseInvoiceLine resource type|[purchaseInvoiceLine](../resources/dynamics_purchaseinvoiceline.md)|
 |generalLedgerEntries resource type|[generalLedgerEntries](../resources/dynamics_generalLedgerEntry.md)|
 
-## See also
+## Related information
 
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  

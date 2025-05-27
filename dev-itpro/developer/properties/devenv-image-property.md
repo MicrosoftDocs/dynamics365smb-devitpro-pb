@@ -1,12 +1,11 @@
 ---
-title: "Image Property"
+title: "Image property"
 description: "Specifies the icon that you want to associate with a field in a CueGroup control."
 ms.author: solsen
-ms.custom: na
-ms.date: 11/15/2023
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,6 +19,7 @@ Specifies the icon that you want to associate with a field in a CueGroup control
 -   Page Field
 -   Page Action
 -   Page Action Group
+-   Page File Upload Action
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -38,7 +38,7 @@ On **RoleCenter** type pages, the image property doesn't apply to actions that a
 
 [!INCLUDE[available_icons](../includes/include-available-icons.md)]
 
-## See Also
+## Related information
 
 [Properties](devenv-properties.md)   
 [Available icons](https://aka.ms/bcicons)   

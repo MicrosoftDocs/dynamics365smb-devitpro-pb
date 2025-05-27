@@ -1,10 +1,10 @@
 ---
-title: subscriptions resource type  
+title: subscriptions resource type
 description: A subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
 ---
 
@@ -12,12 +12,14 @@ ms.author: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a subscriptions in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+
+## Custom APIs
+
+If you're subscribing to a custom API page, both the URL you send the subscription HTTP request to and the resource path you wish to subscribe to must include the `<APIPublisher>`, `<APIGroup>`, and `<APIVersion>` elements equivalent to: `api/<APIPublisher>/<APIGroup>/<APIVersion>/subscriptions`. For example, if your API publisher is `pub`, your API group is `grp`, and the version is 1.0, part of the URL will contain these elements `api/pub/grp/v1.0/subscriptions`.
 
 ## Methods
 
@@ -27,8 +29,6 @@ Represents a subscriptions in [!INCLUDE[prod_short](../../../includes/prod_short
 |[DELETE subscriptions](../api/dynamics_subscriptions_delete.md)|none|Deletes a subscriptions object.|
 |[POST subscriptions](../api/dynamics_subscriptions_create.md)|subscriptions|Creates a subscriptions object.|
 |[PATCH subscriptions](../api/dynamics_subscriptions_update.md)|subscriptions|Updates a subscriptions object.|
-
-
 
 ## Properties
 
@@ -49,7 +49,7 @@ Represents a subscriptions in [!INCLUDE[prod_short](../../../includes/prod_short
 
 ## JSON representation
 
-Here is a JSON representation of the subscriptions resource.
+Here's a JSON representation of the subscriptions resource.
 
 
 ```json
@@ -68,11 +68,9 @@ Here is a JSON representation of the subscriptions resource.
     "systemModifiedBy": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET subscriptions](../api/dynamics_subscriptions_Get.md)  
 [DELETE subscriptions](../api/dynamics_subscriptions_Delete.md)  
 [POST subscriptions](../api/dynamics_subscriptions_Create.md)  

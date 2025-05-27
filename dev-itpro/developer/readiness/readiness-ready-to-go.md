@@ -1,21 +1,23 @@
 ---
 title: Resources for partners
-description: "Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central."
-author: a-emniel
-ms.custom: na
-ms.date: 04/04/2023
-ms.reviewer: na
-ms.topic: conceptual
-ms.author: solsen
+description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
+author: jswymer
+ms.date: 04/03/2025
+ms.reviewer: solsen
+ms.topic: article
+ms.author: jswymer
 ---
 
-# Welcome to Business Central | Resources for Partners
+# Welcome to Business Central resources for partners
+
+> [!NOTE]
+> The 2025 release wave 1 launch event for [!INCLUDE [prod_short](../includes/prod_short.md)] was kicked off on April 1, 2025. Find all 'What's new' sessions on [aka.ms/BCLE](https://aka.ms/BCLE).
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 ## Hot topics right now
 
-- Register for the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
+- Register for the next [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Event or watch videos from the last event: [aka.ms/BCLE](https://aka.ms/BCLE)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 - AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
 
@@ -41,11 +43,12 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://community.dynamics.com/forums/thread/)
-- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://cloudblogs.microsoft.com/dynamics365/it/)
-- Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
+- Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://www.microsoft.com/dynamics-365/blog/it-professional/)
+- Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://www.microsoft.com/dynamics-365/blog/business-leader/)
 - Join the [!INCLUDE [prod_short](../includes/prod_short.md)] development group on Viva Engage (Yammer): [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))
 
-## Partner readiness and programs  
+## Partner readiness and programs
+
 - Get started as a partner (reselling [!INCLUDE [prod_short](../includes/prod_short.md)]): [aka.ms/BCReseller](https://aka.ms/BCReseller)
 - Essential partner resources (marketing material): [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)  
 - Browse all [!INCLUDE [prod_short](../includes/prod_short.md)] learning courses: [aka.ms/BCLearn](https://aka.ms/BCLearn)
@@ -55,6 +58,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode)
 - Get technical to land large customer implementations and close deals: [aka.ms/BCConcierge](https://aka.ms/BCConcierge)  
 - The AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
+- The Microsoft coordinated #BCTalent offerings help partners with recruiting, training, and coaching services: [aka.ms/BCTalent](https://aka.ms/BCTalent) 
 
 ## Go to market
 
@@ -77,8 +81,23 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Download the keyboard shortcut PDF: [aka.ms/BCKeyboardShortcutsPDF](https://aka.ms/BCKeyboardShortcutsPDF)
 
 ## AI innovation and Copilot
-- Integrating AI using Developer Tools for Copilot: [aka.ms/BCStartCodingWithAILearn](https://aka.ms/BCStartCodingWithAILearn)
-- Copilot for Dynamics 365: [learn.microsoft.com/copilot-for-dynamics365](/microsoft-cloud/dev/copilot/copilot-for-dynamics365)
+
+### Copilot in Business Central 101
+
+- Pitch deck for Copilot in Business Central: [aka.ms/bcCopilotPitchDeck](https://aka.ms/bcCopilotPitchDeck)
+- Learn how to get your free demo environment at [aka.ms/CDX](https://aka.ms/CDX), or showcase Copilot using prebuilt, click-through demos at [aka.ms/bcSalesTools](https://aka.ms/bcSalesTools)
+- Copilot in Business Central - showcase video: [aka.ms/BC-AI-Sizzle](https://aka.ms/BC-AI-Sizzle)
+- Copilot in Business Central playlist on YouTube: [aka.ms/BC-Copilot-Videos​](https://aka.ms/BC-Copilot-Videos)
+- Copilot in Business Central blog: [aka.ms/bc-ai​](https://aka.ms/bc-ai)
+- Sales Order Agent preview video: [aka.ms/bcagents](https://aka.ms/bcagents)
+- Copilot in Business Central FAQ: [About Copilot](/dynamics365/business-central/copilot-overview)
+- Dynamics Communities interview with Mike Morton: [dynamicscommunities.com](https://dynamicscommunities.com/ug/copilot-ug/microsofts-mike-morton-explains-new-copilot-capabilities-inside-business-central/)
+
+### Copilot in Business Central for developers
+
+- Extend Copilot in Business Central: [aka.ms/bcAIdevDocs](https://aka.ms/bcAIdevDocs)
+- How-to guide for extending Copilot in Business Central: [Developing generative AI experiences​](../ai-build-experience-overview.md)
+- Business Central under the hood episode 1 - Developing AI: [Business Central under the hood series (on YouTube)​](https://www.youtube.com/watch?v=jdevJbGgB-k&t=792s)
 
 ## Reporting and business intelligence  
 
@@ -110,7 +129,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/BCPublisher)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] technology samples: [aka.ms/BCTech](https://aka.ms/BCTech)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] open source sample apps: [aka.ms/BCSamples](https://aka.ms/BCSamples)
-- Maintain your app(s): [Maintain Your App](../app-maintain.md)
+- Maintain your apps: [Maintain Your App](../app-maintain.md)
 - Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues)
 - Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
 - Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))

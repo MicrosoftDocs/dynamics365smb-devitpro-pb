@@ -1,10 +1,9 @@
 ---
 title: "OnCustomDocumentMergerEx event"
 description: Describe the OnCustomDocumentMergerEx Event in Business Central.
-ms.custom: na
 ms.date: 12/20/2023
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 
@@ -192,7 +191,7 @@ The simplest possible custom document render can be implemented as shown in the 
     end;
 ```
 
-## See also
+## Related information
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
 [Developing Report Custom Render Extensions Overview](devenv-report-custom-render.md)  

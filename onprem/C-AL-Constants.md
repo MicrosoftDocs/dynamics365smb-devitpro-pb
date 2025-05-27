@@ -1,12 +1,7 @@
 ---
 title: "C/AL Constants"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: cfd2fdd0-9bc6-4d6d-80da-d8a62ddaee78
 caps.latest.revision: 8
 ---

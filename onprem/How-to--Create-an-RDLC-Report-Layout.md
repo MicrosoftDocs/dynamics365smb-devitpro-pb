@@ -1,13 +1,8 @@
 ---
 title: RDLC Report Layout
 description: Visual Studio Report Designer is used to create RDLC report layout. Open the report for which you want to create the layout and follow the instructions as follows. 
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 0ccd332a-db93-454f-9d92-c3368d4c7010
 caps.latest.revision: 5
 ---

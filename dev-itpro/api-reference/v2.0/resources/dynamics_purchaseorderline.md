@@ -4,16 +4,15 @@ description: A purchase order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # purchaseOrderLine resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a purchase order line in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -53,6 +52,7 @@ Represents a purchase order line in [!INCLUDE[prod_short](../../../includes/prod
 |lineType|NAV.invoiceLineAggLineType|The type of the purchase order line. It can be "Comment", "Account", "Item", "Resource" Value", "Fixed Asset" or "Charge".|
 |lineObjectNumber|string|The number of the object (account or item) of the purchase order line.|
 |description|string|Specifies the description of the purchase order line.|
+|description2|string||
 |unitOfMeasureId|GUID|The ID of unit of measure for the purchase order line.|
 |unitOfMeasureCode|string|The code of unit of measure for the purchase order line.|
 |quantity|decimal|The quantity of the item in the purchase order line.|
@@ -79,7 +79,7 @@ Represents a purchase order line in [!INCLUDE[prod_short](../../../includes/prod
 
 ## JSON representation
 
-Here is a JSON representation of the purchaseOrderLine resource.
+Here's a JSON representation of the purchaseOrderLine resource.
 
 
 ```json
@@ -92,6 +92,7 @@ Here is a JSON representation of the purchaseOrderLine resource.
     "lineType": "NAV.invoiceLineAggLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureId": "GUID",
     "unitOfMeasureCode": "string",
     "quantity": "decimal",
@@ -117,9 +118,9 @@ Here is a JSON representation of the purchaseOrderLine resource.
     "locationId": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
+
 [GET purchaseOrderLine](../api/dynamics_purchaseorderline_get.md)  
 [DELETE purchaseOrderLine](../api/dynamics_purchaseorderline_delete.md)  
 [POST purchaseOrderLine](../api/dynamics_purchaseorderline_create.md)  

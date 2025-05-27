@@ -2,11 +2,10 @@
 title: "System.IsNullGuid(Guid) Method"
 description: "Indicates whether a value has been assigned to a GUID."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/18/2023
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -69,7 +68,7 @@ begin
 end;
 ```  
 
-## See also
+## Related information
 
 [System Data Type](system-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -1,12 +1,7 @@
 ---
 title: "Walkthrough: Creating a Cue Based on a Normal Field and a Query"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 383e5940-ab42-446a-a0d4-00c7726cd6be
 caps.latest.revision: 10
 ---

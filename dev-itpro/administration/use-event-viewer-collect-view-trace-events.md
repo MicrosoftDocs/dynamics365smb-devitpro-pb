@@ -1,11 +1,14 @@
 ---
-title: "How to: Use Event Viewer to collect and view trace events"
-ms.custom: bap-template
-ms.date: 01/02/2024
+title: Enable Business Central debug logs in Event Viewer
+description: Explains how to enable debig logs in Event Viewer.
+ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 04/16/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: dynamics-365-op
-author: SusanneWindfeldPedersen
+author: jswymer
 ---
 # Enable Business Central debug logs in Event Viewer
 
@@ -34,7 +37,7 @@ By default the **Debug** logs are disabled and might also be hidden in the Event
   
  [!INCLUDE[server](../developer/includes/server.md)] trace events will now be recorded in the **Debug** log. For a list and description of trace events, see [Business Central Server Trace Events](server-trace-events.md).  
   
-## See also  
+## Related information  
  [Monitoring Business Central Server Events](monitor-server-events.md)    
  [Show or Hide Analytic and Debug](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766275(v=ws.11))   
  [Enable Analytic and Debug Logs](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749492(v=ws.11))

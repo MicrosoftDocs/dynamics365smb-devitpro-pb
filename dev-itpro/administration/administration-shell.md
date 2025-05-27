@@ -4,9 +4,9 @@ description: Read about the PowerShell cmdlets managing Business Central Server 
 author: jswymer
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
-ms.date: 08/31/2022
+ms.date: 04/15/2025
 ms.service: dynamics-365-op
 ---
 
@@ -27,22 +27,22 @@ To run the shell, you have to be a member of the local administrator group on th
 - Another way is from Windows PowerShell. Start Windows PowerShell as an administrator. At the prompt, run the following command:
 
     ```powershell
-    Import-Module -Name C:\Program Files\Microsoft Dynamics 365 Business Central\210\Service\navadmintool.ps1
+    Import-Module -Name C:\Program Files\Microsoft Dynamics 365 Business Central\nnn\Service\navadmintool.ps1
     ```
 
-    Replace `C:\Program Files\Microsoft Dynamics 365 Business Central\210` with the path to your server installation.
+    Replace `C:\Program Files\Microsoft Dynamics 365 Business Central\nnn` with the path to your server installation.
 
 ## Get help on the cmdlets
 
-To see the cmdlets that are available, type the following command at the prompt:  
+To view the available cmdlets, enter the following command at the prompt:
 
 ```powershell  
 Get-Command *NAV*  
-```  
+```
 
-To get help about syntax and options for a specific cmdlet, type the following command:  
+To get help with syntax, options, and examples for a specific cmdlet in Business Central version 23 or earlier, enter the following command:
 
-```  
+```PowerShell  
 Get-Help <cmd name> -full
 ```  
 
@@ -52,9 +52,11 @@ For example, to get Help about the **Get-NAVServerInstance** cmdlet, type the fo
 Get-Help Get-NAVServerInstance -full
 ```  
 
-To go the online version of the help on Microsoft Docs, type the following command:  
+Help with syntax, options, and examples isn't available starting with version 24. Use the online version of the help on Microsoft Learn.  
 
-```powershell   
+To open the online help, enter the following command:  
+
+```powershell
 Get-Help <cmd name> -online  
 ```  
 
@@ -64,7 +66,7 @@ For more information about [!INCLUDE[adminshell](../developer/includes/adminshel
 
 For more information about Windows PowerShell, see [Windows PowerShell Getting Started Guide](https://go.microsoft.com/fwlink/?LinkID=252252).  
 
-## See Also
+## Related information
 
 [Configuring Business Central Server Instances](configure-server-instance.md)  
 [Configuring Business Central Web Server Instances](configure-web-server.md)  

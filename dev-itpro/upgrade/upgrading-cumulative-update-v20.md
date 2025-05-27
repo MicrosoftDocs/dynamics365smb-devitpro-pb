@@ -1,12 +1,12 @@
 ---
 title: Install a version 20 update
 description: This article describes the tasks required for getting the monthly version 20 update applied to your Dynamics 365 Business Central on-premises.
-ms.custom: na
-ms.date: 02/09/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.custom: evergreen
+ms.date: 04/18/2024
+ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2022 Release Wave 1 Update
 
@@ -96,6 +96,8 @@ The first thing to do is to download the update package that matches your Busine
     When extracted, the update includes the DVD folder. This folder contains the full Business Central product. For example, the folder includes the Business Central installation program (setup.exe), tools for upgrading to the platform, and the Microsoft extensions.
 
 When this step is completed, you can continue to update your Business Central solution to the new platform and application.
+
+## Save copies of server configuration files
 
 [!INCLUDE[upgrade-copy-configuration-files](../developer/includes/upgrade-copy-configuration-files.md)]
 
@@ -368,8 +370,9 @@ Follow the next tasks to update the application code to the new features and hot
 
 You publish the System Application extension only if it was used in old solution. Add-on extensions include Microsoft and third- party extensions that were used in the old solution.
 
+<!-- link outdated
 > [!NOTE]
-> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
+> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).-->
 
 ## Upgrade System Application
 
@@ -531,7 +534,7 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 [!INCLUDE[upgrade-web-server-instances](../developer/includes/upgrade-web-server-instances.md)]
 
-## See Also
+## Related information
 
 [Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates](../deployment/update-versions-20.md)  
 [Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v20.md)  

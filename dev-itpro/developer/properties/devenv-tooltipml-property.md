@@ -1,12 +1,11 @@
 ---
-title: "ToolTipML Property"
+title: "ToolTipML property"
 description: "Sets the multilanguage string used for the tooltip of an action, a field, a FactBox, or an activity button."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/25/2023
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -29,6 +28,9 @@ In the client, tooltips appear when you point to the caption of the control.
 -   Page Action Group
 -   Page Custom Action
 -   Page System Action
+-   Page File Upload Action
+-   Query Column
+-   Table field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -63,7 +65,7 @@ In the following example, values are set for Danish (DAN) and English (ENG).
 DAN=Dette felt indeholder kundens navn;ENG=This field contains the customer name  
 ```  
 
-## See Also
+## Related information
 
 [ToolTip Property](devenv-tooltip-property.md)  
 [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text)  

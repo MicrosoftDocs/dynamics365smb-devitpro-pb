@@ -1,12 +1,7 @@
 ---
 title: "Managing Language, Regional Settings, and Time Zone in the Microsoft Dynamics NAV Web Client"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 4f022e27-6073-4b86-a836-eb0aa80fc877
 caps.latest.revision: 10
 ---

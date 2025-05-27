@@ -1,12 +1,7 @@
 ---
 title: "Actions Overview"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: cb249654-c9be-482b-9a25-c26d7f229fc2
 caps.latest.revision: 44
 ---

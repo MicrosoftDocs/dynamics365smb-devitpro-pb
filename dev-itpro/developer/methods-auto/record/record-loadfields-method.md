@@ -2,11 +2,10 @@
 title: "Record.LoadFields(Any,...) Method"
 description: "Accesses the table's corresponding data source and loads the values of the specified fields on the record."
 ms.author: solsen
-ms.custom: na
-ms.date: 07/07/2021
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -42,9 +41,11 @@ The FieldNo's of the fields to be loaded.
 
 This method will trigger a [JIT load](../../devenv-partial-records.md#jit) of the specified fields. The method allows for triggering the JIT load on multiple fields. If the fields are already loaded, another load will not be triggered. Using this method instead of relying on implicit JIT loads lets you develop for more explicit error handling when a load fails.
 
-This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
+[!INCLUDE [partial-records-note](../../includes/partial-records-note.md)]
 
-## See Also
+This method is part of the partial records capability for improving performance. Learn more in [Using partial records](../../devenv-partial-records.md).
+
+## Related information
 
 [Using Partial Records](../../devenv-partial-records.md)  
 [Record Data Type](record-data-type.md)  

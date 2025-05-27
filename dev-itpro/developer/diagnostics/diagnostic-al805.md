@@ -1,17 +1,16 @@
 ---
-title: "Compiler Warning (Future Error) AL0805"
+title: "Compiler Warning (future error) AL0805"
 description: "The object ID '{0}' should not be surrounded with quotes."
 ms.author: solsen
-ms.custom: na
-ms.date: 09/06/2023
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL0805
+# Compiler Warning (future error) AL0805
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
@@ -25,6 +24,6 @@ The object ID '{0}' should not be surrounded with quotes.
 Quoted identifiers should not be used to specify object IDs. Integer literals should be used instead.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## Related information  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

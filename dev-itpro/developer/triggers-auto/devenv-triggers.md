@@ -1,18 +1,20 @@
 ---
-title: "Triggers Overview"
-ms.custom: na
-ms.date: 04/29/2021
-ms.reviewer: na
-ms.topic: overview
+title: Triggers overview
+description: Learn how triggers work in AL for Business Central.
+ms.custom: evergreen
+ms.date: 04/02/2025
+ms.reviewer: solsen
+ms.topic: get-started
 author: SusanneWindfeldPedersen
+ms.custom: evergreen
 ---
 
-# Triggers Overview
+# Triggers overview
 
-This section describes the triggers that are available to developers in [!INCLUDE [prod_short](../../includes/prod_short.md)].
+This section describes how triggers work in [!INCLUDE [prod_short](../../includes/prod_short.md)].
 
 > [!TIP]  
-> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
+> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the article faster. Otherwise, you can scan the table of contents to find it.
 
 Triggers activate a method when a certain event occurs. When AL methods are run because of a predefined event on either an object or a control, the event triggers the method. Together the event and method make a trigger.
 
@@ -33,7 +35,7 @@ end;
 
 ## Snippet support
 
-Typing the shortcut `ttrigger` will create the basic layout for a trigger when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `ttrigger` creates the basic layout for a trigger when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](../includes/intelli_shortcut.md)]
 
@@ -93,7 +95,7 @@ table 50100 MyTable
 }
 ```
 
-## See Also
+## Related information
 
 [Methods](../methods-auto/library.md)  
 [Properties](../properties/devenv-properties.md)

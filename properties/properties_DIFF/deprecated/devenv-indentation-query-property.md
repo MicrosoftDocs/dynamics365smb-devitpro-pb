@@ -1,10 +1,7 @@
 ---
 title: "Indentation Property (Query)"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8e3622b9-5a43-4fc9-b179-8da0b4b830cd
 caps.latest.revision: 6

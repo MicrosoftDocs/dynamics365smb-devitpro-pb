@@ -4,14 +4,13 @@ description: A contact information object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # contactInformation resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a contact information in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -22,7 +21,6 @@ Represents a contact information in [!INCLUDE[prod_short](../../../includes/prod
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET contactInformation](../api/dynamics_contactinformation_get.md)|contactInformation|Gets a contact information object.|
-
 
 ## Navigation
 
@@ -45,7 +43,7 @@ Represents a contact information in [!INCLUDE[prod_short](../../../includes/prod
 
 ## JSON representation
 
-Here is a JSON representation of the contactInformation resource.
+Here's a JSON representation of the contactInformation resource.
 
 
 ```json
@@ -58,11 +56,11 @@ Here is a JSON representation of the contactInformation resource.
     "relatedType": "NAV.contactBusinessRelationLinkToTable"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Remarks
 
 This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
-## See Also
+## Related information
+
 [GET contactInformation](../api/dynamics_contactinformation_get.md)  

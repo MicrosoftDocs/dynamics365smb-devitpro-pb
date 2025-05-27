@@ -2,11 +2,10 @@
 title: "FieldRef.FieldError([String]) Method"
 description: "Stops the execution of the code, causing a run-time error, and creates an error message for a field."
 ms.author: solsen
-ms.custom: na
 ms.date: 07/07/2021
-ms.reviewer: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -80,7 +79,7 @@ We recommend the following guidelines for error messages:
 For more information, see [Progress Windows, Message, Error, and Confirm Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md). 
 
  
-## See Also
+## Related information
 [FieldRef Data Type](fieldref-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

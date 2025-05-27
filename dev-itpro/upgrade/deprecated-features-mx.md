@@ -2,11 +2,12 @@
 title: Mexican features that are moved, removed, or replaced | Microsoft Docs
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the features for Mexico that we have moved, removed, or replaced.
 author: bholtorf
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
-ms. search.keywords: deprecated, Mexico, local functionality
+ms.search.keywords: deprecated, Mexico, local functionality
 ms.date: 12/19/2023
 ms.author: bholtorf
+ms.reviewer: bholtorf
 ---
 
 # Deprecated features in the Mexican version of Microsoft Dynamics 365 Business Central
@@ -37,7 +38,7 @@ Shows a list of aged remaining balances for each customer for a given period of 
 
 [!INCLUDE [fields-obsolete-mx](../includes/fields-obsolete-mx.md)]
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

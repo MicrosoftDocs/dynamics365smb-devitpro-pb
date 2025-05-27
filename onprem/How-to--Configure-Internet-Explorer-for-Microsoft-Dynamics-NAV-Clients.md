@@ -1,13 +1,8 @@
 ---
 title: Internet Explorer Client Configuration
 description: For Dynamics NAV Client, Internet Explorer must be configured to allow JavaScript and cookies. JavaScript enables web pages to be interactive.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 0c43029c-6c85-41b4-9107-bbb4f384e357
 caps.latest.revision: 12
 ---

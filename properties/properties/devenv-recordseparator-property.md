@@ -1,10 +1,7 @@
 ---
 title: "RecordSeparator Property"
-ms.custom: na
 ms.date: 10/01/2020
-ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 88f67ba0-2aa4-42c3-a6fb-f5546b31b22d
 caps.latest.revision: 10

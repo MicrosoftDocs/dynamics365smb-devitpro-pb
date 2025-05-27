@@ -1,14 +1,15 @@
 ---
-title: dataverseEntityChange resource type
+title: (Business Central Dataverse API) dataverseEntityChange resource type
 description: A dataverse entity change object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/25/2022
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
-# dataverseEntityChange resource type
+# (Business Central Dataverse API) dataverseEntityChange resource type
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
@@ -46,7 +47,7 @@ Here is a JSON representation of the dataverseEntityChange resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET dataverseEntityChange](../api/dynamics_dataverseentitychange_get.md)
 [POST dataverseEntityChange](../api/dynamics_dataverseentitychange_create.md)  
 [Business Central Dataverse API](../dynamics-dataverse-api.md)  

@@ -4,8 +4,9 @@ description: Gets an attachments object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 02/01/2023
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get attachments
@@ -31,7 +32,7 @@ GET businesscentralPrefix/companies({id})/attachments?$filter=parentId eq {journ
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and an **attachments** object in the response body.
@@ -40,17 +41,17 @@ If successful, this method returns a ```200 OK``` response code and an **attachm
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v1.0/companies({id})/attachments?$filter=parentId eq {journalLineId}
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {   
@@ -63,9 +64,10 @@ Here is an example of the response.
 }
 ```
 
-## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[attachment](../resources/dynamics_attachment.md)    
-[Delete attachment](dynamics_attachment_Delete.md)    
-[Create attachment](dynamics_attachment_Create.md)    
-[Update attachment](dynamics_attachment_Update.md)    
+## Related information
+
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[attachment](../resources/dynamics_attachment.md)  
+[Delete attachment](dynamics_attachment_delete.md)  
+[Create attachment](dynamics_attachment_Create.md)  
+[Update attachment](dynamics_attachment_Update.md)

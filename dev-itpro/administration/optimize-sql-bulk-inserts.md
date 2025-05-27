@@ -1,9 +1,7 @@
 ---
 title: "Bulk Inserts"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 6bbe737c-305f-48d2-8cd3-857c7efb9866
 caps.latest.revision: 21
 description: Learn how to optimize SQL bulk inserts in Business Central for improved performance and scalability. Understand constraints and disabling bulk inserts.
@@ -78,7 +76,7 @@ COMMIT;
 ## Disabling Bulk Inserts  
  Disabling bulk inserts can be helpful when you are troubleshooting failures that occur when inserting records. To disable bulk inserts, you set the *BufferedInsertEnabled* parameter in the CustomSettings.config file of the [!INCLUDE[server](../developer/includes/server.md)] to **FALSE**. For more information, see [Configuring Business Central Server](configure-server-instance.md).  
 
-## See Also  
+## Related information  
  [Data Access](optimize-sql-data-access.md)   
  [Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
  [AL Database Methods and Performance on SQL Server](optimize-sql-al-database-methods-and-performance-on-server.md)   

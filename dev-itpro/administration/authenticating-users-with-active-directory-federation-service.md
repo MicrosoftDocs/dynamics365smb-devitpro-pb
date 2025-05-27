@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Authenticating Users with Active Directory Federation Services
@@ -137,8 +137,6 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
     ```
 
     Choose **OK** when done to close the **Edit Claim Rules** dialog box.
-
-    ![Edit Claims Rules dialog.](../media/ADFS_EditClaimsRule3.png "Edit Claims Rules dialog")
 
 ### Set up support for JSON Web tokens (JWT)
 
@@ -306,6 +304,6 @@ When you initially set the **Authentication Email**, the **Authentication Status
 
 For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
-## See Also  
+## Related information  
 [Configuring Business Central Server](configure-server-instance.md)  
 [Authentication and Credential Types](Users-Credential-Types.md)

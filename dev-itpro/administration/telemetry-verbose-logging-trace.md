@@ -2,11 +2,12 @@
 title: Analyzing Verbose Enable and Disable Telemetry | Microsoft Docs
 description: Learn about the verbose logging telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/23/2022
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Analyzing Verbose Telemetry
@@ -49,7 +50,7 @@ The following table explains the custom dimensions included in the trace.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 <!--
-{"telemetrySchemaVersion":"0.1","componentVersion":"20.0.36722.0","environmentType":"Production","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","component":"Dynamics 365 Business Central Server","eventId":"RT0023"}
+{"telemetrySchemaVersion":"0.1","componentVersion":"20.0.36722.0","environmentType":"Production","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","component":"Dynamics 365 Business Central Server","eventId":"RT0023"}
 
 -->
 
@@ -81,11 +82,11 @@ The following table explains the custom dimensions included in the trace.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 <!--
-{"telemetrySchemaVersion":"0.1","componentVersion":"20.0.36722.0","environmentType":"Production","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","component":"Dynamics 365 Business Central Server","eventId":"RT0024"}
+{"telemetrySchemaVersion":"0.1","componentVersion":"20.0.36722.0","environmentType":"Production","aadTenantId":"aaaabbbb-0000-cccc-1111-dddd2222eeee","component":"Dynamics 365 Business Central Server","eventId":"RT0024"}
 
 -->
 
-## See also
+## Related information
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

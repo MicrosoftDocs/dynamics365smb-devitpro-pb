@@ -4,8 +4,9 @@ description: Creates a document attachment object in Dynamics 365 Business Centr
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 03/08/2023
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Create documentAttachments
@@ -26,7 +27,6 @@ POST businesscentralPrefix/companies({id})/documentAttachments({id})
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **documentAttachment**, the **documentAttachment** will not be updated. |
 
 ## Request body
 
@@ -41,50 +41,46 @@ If successful, this method returns ```201 Created``` response code and a **docum
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/documentAttachments({id})
 Content-type: application/json
 {
-    "id" : "",
-    "fileName" : "",
-    "byteSize" : "",
-    "attachmentContent" : "",
-    "parentType" : "",
-    "parentId" : "",
-    "lineNumber" : "",
-    "documentFlowSales" : "",
-    "documentFlowPurchase" : "",
-    "lastModifiedDateTime" : ""
+    "fileName": "Invoice_10542.pdf",
+    "byteSize": 245823,
+    "attachmentContent": "JVBERi0xLjUKJeTl5OTlCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwo+PgplbmRvYmoKeHJlZgowIDMKMDAwMDAwMDAwMCiAgICAgIG4gCjAwMDAwMDAwMTAgMDAwMDAgbiAKMDAwMDAwMDA1MyAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9Sb290IDEgMCBSCi9TaXplIDMKPj4KJWlzQmluYXJ5Cg==",
+    "parentType": "Purchase Invoice",
+    "parentId": "INV-10542",
+    "documentFlowPurchase": true
 }
 ```
 
 **Response**
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
 {
-    "id" : "",
-    "fileName" : "",
-    "byteSize" : "",
-    "attachmentContent" : "",
-    "parentType" : "",
-    "parentId" : "",
-    "lineNumber" : "",
-    "documentFlowSales" : "",
-    "documentFlowPurchase" : "",
-    "lastModifiedDateTime" : ""
+    "id": "ATT00089",
+    "fileName": "Invoice_10542.pdf",
+    "byteSize": 245823,
+    "attachmentContent": "JVBERi0xLjUKJeTl5OTlCjEgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwo+PgplbmRvYmoKeHJlZgowIDMKMDAwMDAwMDAwMCiAgICAgIG4gCjAwMDAwMDAwMTAgMDAwMDAgbiAKMDAwMDAwMDA1MyAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9Sb290IDEgMCBSCi9TaXplIDMKPj4KJWlzQmluYXJ5Cg==",
+    "parentType": "Purchase Invoice",
+    "parentId": "INV-10542",
+    "lineNumber": 0,
+    "documentFlowSales": false,
+    "documentFlowPurchase": true,
+    "lastModifiedDateTime": "2025-04-29T14:25:36Z"
 }
 ```
 
-## See Also
+## Related information
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [documentAttachment](../resources/dynamics_documentAttachment.md)  
 [GET documentAttachment](dynamics_documentattachment_get.md)  
 [DELETE documentAttachment](dynamics_documentattachment_delete.md)  
-[PATCH documentAttachment](dynamics_documentattachment_update.md)  
+[PATCH documentAttachment](dynamics_documentattachment_update.md)

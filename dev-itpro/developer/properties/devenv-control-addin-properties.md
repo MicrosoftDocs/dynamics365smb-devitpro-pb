@@ -2,11 +2,10 @@
 title: Control Add-In Properties
 description: This topic lists properties that apply to control add-in object.
 author: solsen
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
 ms.topic: reference
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Control Add-In Properties
@@ -28,7 +27,7 @@ This article lists properties that apply to the [Control Add-In Object](../deven
 |[RequestedHeight](devenv-requestedheight-property.md)| Control add-in |
 |[RequestedWidth](devenv-requestedwidth-property.md)| Control add-in |
 
-## See also
+## Related information
 
 [Properties](devenv-properties.md)  
 [Table and Table Extension Properties](devenv-table-properties.md)  

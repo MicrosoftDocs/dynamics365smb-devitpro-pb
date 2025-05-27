@@ -2,11 +2,12 @@
 title: Italian features that are moved, removed, or replaced | Microsoft Docs
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the features for Italy that we have moved, removed, or replaced.
 author: bholtorf
-ms.topic: conceptual
+ms.topic: reference
 ms.devlang: al
-ms. search.keywords: deprecated, Italy, local functionality
+ms.search.keywords: deprecated, Italy, local functionality
 ms.date: 12/19/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Deprecated features in the Italian version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
@@ -30,7 +31,7 @@ When you create finance charge terms and reminder terms, for delayed payment pen
 
 [!INCLUDE [fields-obsolete-it](../includes/fields-obsolete-it.md)]
 
-## See also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

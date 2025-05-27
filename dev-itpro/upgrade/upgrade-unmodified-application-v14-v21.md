@@ -4,7 +4,7 @@ description: Describes how to upgrade an unmodified Business Central 14 applicat
 ms.custom: bap-template
 ms.date: 01/18/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ---
@@ -605,7 +605,7 @@ For more information, see [To export and import a permission set](/dynamics365/b
         > [!NOTE]
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
-## See also  
+## Related information  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  

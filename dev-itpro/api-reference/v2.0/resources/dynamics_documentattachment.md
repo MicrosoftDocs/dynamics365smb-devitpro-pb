@@ -4,8 +4,9 @@ description: A document attachment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 03/08/2023
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # documentAttachment resource type
@@ -34,9 +35,13 @@ Represents a document attachment in [!INCLUDE[prod_short](../../../includes/prod
 |[vendor](dynamics_vendor.md)|vendor |Gets the vendor of the documentAttachment.|
 |[salesInvoice](dynamics_salesinvoice.md)|salesInvoice |Gets the salesinvoice of the documentAttachment.|
 |[employee](dynamics_employee.md)|employee |Gets the employee of the documentAttachment.|
+|[salesOrder](dynamics_salesorder.md)|salesOrder |Gets the salesorder of the documentAttachment.|
+|[salesQuote](dynamics_salesquote.md)|salesQuote |Gets the salesquote of the documentAttachment.|
 |[salesCreditMemo](dynamics_salescreditmemo.md)|salesCreditMemo |Gets the salescreditmemo of the documentAttachment.|
 |[purchaseInvoice](dynamics_purchaseinvoice.md)|purchaseInvoice |Gets the purchaseinvoice of the documentAttachment.|
 |[project](dynamics_project.md)|project |Gets the project of the documentAttachment.|
+|[purchaseOrder](dynamics_purchaseorder.md)|purchaseOrder |Gets the purchaseorder of the documentAttachment.|
+|[purchaseCreditMemo](dynamics_purchasecreditmemo.md)|purchaseCreditMemo |Gets the purchasecreditmemo of the documentAttachment.|
 
 ## Properties
 
@@ -48,14 +53,14 @@ Represents a document attachment in [!INCLUDE[prod_short](../../../includes/prod
 |attachmentContent|stream|The attachment's content.|
 |parentType|NAV.attachmentEntityBufferDocumentType|The type of the parent document of the document attachment. It can be " ", "Journal", "Sales Order", "Sales Quote", "Sales Credit Memo", "Sales Invoice" or "Purchase Invoice".|
 |parentId|GUID|The ID of the parent entity. |
-|lineNumber|integer|The order of the specific line, which increments in 10000, for example: 10000, 20000, 30000.|
+|lineNumber|integer|The document attachment item line number.|
 |documentFlowSales|boolean|Specifies if the attachment must flow to transactions. Used for integration with Flow; the field is exposed on the **Document Attachment Details** page.|
 |documentFlowPurchase|boolean|Specifies if the attachment must flow to transactions. Used for integration with Flow; the field is exposed on the **Document Attachment Details** page.|
 |lastModifiedDateTime|datetime|The last datetime the document attachment was modified. Read-Only.|
 
 ## JSON representation
 
-Here is a JSON representation of the documentAttachment resource.
+Here's a JSON representation of the documentAttachment resource.
 
 
 ```json
@@ -73,8 +78,9 @@ Here is a JSON representation of the documentAttachment resource.
 }
 ```
 
-## See Also
-[GET documentAttachment](../api/dynamics_documentattachment_get.md)
-[DELETE documentAttachment](../api/dynamics_documentattachment_delete.md)
-[POST documentAttachment](../api/dynamics_documentattachment_create.md)
+## Related information
+
+[GET documentAttachment](../api/dynamics_documentattachment_get.md)  
+[DELETE documentAttachment](../api/dynamics_documentattachment_delete.md)  
+[POST documentAttachment](../api/dynamics_documentattachment_create.md)  
 [PATCH documentAttachment](../api/dynamics_documentattachment_update.md)

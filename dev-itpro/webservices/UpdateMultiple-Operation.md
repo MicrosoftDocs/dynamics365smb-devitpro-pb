@@ -1,9 +1,7 @@
 ---
 title: "UpdateMultiple Operation"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 ---
 # UpdateMultiple Operation
 Updates a set of records. The updated array of records is passed as a reference and is updated with the latest version.  
@@ -55,5 +53,5 @@ for (int i = 0; i < custList.Length; i++)
 service.Update(ref custList)   
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

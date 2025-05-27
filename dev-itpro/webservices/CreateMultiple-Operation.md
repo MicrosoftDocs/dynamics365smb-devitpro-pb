@@ -1,9 +1,7 @@
 ---
 title: "CreateMultiple operation"
-ms.custom: na
 ms.date: 12/28/2023
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 description: Learn how to create multiple records with Microsoft's CreateMultiple Operation. Understand method signatures, parameters, results, and handle faults.
 ---
 # CreateMultiple operation
@@ -46,5 +44,5 @@ for (int i = 0; i < custArray.Length; i++)
 service.CreateMultiple(ref custArray);  
 ```  
   
-## See also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

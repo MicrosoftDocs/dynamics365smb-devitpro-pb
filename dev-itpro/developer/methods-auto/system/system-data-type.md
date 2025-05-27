@@ -1,17 +1,16 @@
 ---
-title: "System Data Type"
+title: "System data type"
 description: "Is a complex data type."
 ms.author: solsen
-ms.custom: na
-ms.date: 12/01/2023
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System Data Type
+# System Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is a complex data type.
@@ -31,7 +30,6 @@ The following methods are available on the System data type.
 |[CanLoadType(DotNet)](system-canloadtype-method.md)|Tests if the specified .NET Framework type can be loaded.|
 |[CaptionClassTranslate(Text)](system-captionclasstranslate-method.md)|Returns a translated version of the caption string. The string is translated to the current local language.|
 |[Clear(var Array of [Any])](system-clear-joker-method.md)|Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.|
-|[Clear(var Any)](system-clear-joker-method.md)|Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.|
 |[Clear(var SecretText)](system-clear-secrettext-method.md)|Clears the value of a single variable.|
 |[ClearAll()](system-clearall-method.md)|Clears all internal variables (except REC variables), keys, and filters in the object and in any associated objects, such as reports, pages, codeunits, and so on that contain AL code.|
 |[ClearCollectedErrors()](system-clearcollectederrors-method.md)|Clears all collected errors from the current collection scope.|
@@ -75,10 +73,12 @@ The following methods are available on the System data type.
 |[GetLastErrorText(Boolean)](system-getlasterrortext-boolean-method.md)|Gets the last error that occurred in the debugger.|
 |[GetUrl(ClientType [, Text] [, ObjectType] [, Integer] [, Record] [, Boolean])](system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GetUrl(ClientType, Text, ObjectType, Integer, RecordRef [, Boolean])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
+|[GetUrl(ClientType [, Text] [, ObjectType] [, Integer] [, Record] [, Boolean] [, Text])](system-geturl-clienttype-string-objecttype-integer-table-boolean-string-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
+|[GetUrl(ClientType, Text, ObjectType, Integer, RecordRef [, Boolean] [, Text])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-string-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GlobalLanguage([Integer])](system-globallanguage-method.md)|Gets and sets the current global language setting.|
 |[GuiAllowed()](system-guiallowed-method.md)|Checks whether the AL code can show any information on the screen.|
 |[HasCollectedErrors()](system-hascollectederrors-method.md)|Gets a value indicating whether errors have been collected in the current error collection scope.|
-|[Hyperlink(Text)](system-hyperlink-method.md)|Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer.|
+|[Hyperlink(Text)](system-hyperlink-method.md)|Passes a URL as an argument to an Internet browser, such as Microsoft Edge.|
 |[ImportEncryptionKey(Text, Text)](system-importencryptionkey-method.md)|Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTENCRYPTIONKEY method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.|
 |[ImportObjects(Text [, Integer])](system-importobjects-method.md)|Imports application objects from a file.|
 |[ImportStreamWithUrlAccess(InStream, Text [, Integer])](system-importstreamwithurlaccess-method.md)|Imports an object into a media container to be used in a temporary URL with a default expiration time.|
@@ -103,6 +103,6 @@ The following methods are available on the System data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also
+## Related information
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

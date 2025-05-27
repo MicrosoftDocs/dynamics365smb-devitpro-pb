@@ -1,10 +1,8 @@
 ---
 title: "ValuesAllowed Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 38807291-9e71-4a10-8c5a-e4f011061f1e
 caps.latest.revision: 11

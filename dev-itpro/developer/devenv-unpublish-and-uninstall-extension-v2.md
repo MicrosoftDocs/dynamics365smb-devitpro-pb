@@ -2,11 +2,10 @@
 title: "How to Unpublish and Uninstall an Extension"
 description: "Description of the process of upublishing and uninstalling an extension"
 author: jswymer
-ms.custom: na
 ms.date: 05/23/2022
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Unpublishing and Uninstalling Extensions
@@ -149,7 +148,7 @@ You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_se
     Sync-NAVApp -ServerInstance YourDynamicsNAVServer -Tenant 'TenantID' -Name 'My Extension' -Mode Clean
     ```
 
-## See Also
+## Related information
 
 [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Developing Extensions](devenv-dev-overview.md)  

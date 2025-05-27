@@ -4,7 +4,7 @@ description: Design a report by defining the dataset and designing the layout. R
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 12/08/2023
-ms.reviewer: jswymer
+ms.reviewer: solsen
 
 ms.topic: overview
 ms.author: solsen
@@ -56,7 +56,10 @@ To create an RDL layout report, you use Visual Studio Report Designer or Microso
 [!INCLUDE[RDL_layout_performance](includes/include-rdl-performance.md)]
 
 ## Report request page
-A request page is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for the report. For more information, see [Using request pages with reports](devenv-request-pages-for-reports.md).
+A request page is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for the report. The request page is where you specify teaching tips for your reports, helping the user understand what the report is about and how they can use it. The request page also unlocks context specific help for the report, which will be in the Help pane of [!INCLUDE[prod_short](includes/prod_short.md)].
+
+For more information, see [Using request pages with reports](devenv-request-pages-for-reports.md).
+
 
 ## Report properties, triggers, and code 
 You can control the way the AL runtime and client work on the report by setting properties on the report object. For a list of all properties that you can set on the report object, see the AL language reference article [Report, Report Fields, and Report Extension Properties](properties/devenv-report-property-overview.md).
@@ -64,7 +67,7 @@ You can control the way the AL runtime and client work on the report by setting 
 With report triggers, you can control how the reporting feature works in [!INCLUDE[prod_short](includes/prod_short.md)], for example to control post-processing or printing of report documents. For more information, see [Report Triggers and Runtime Operations](devenv-report-triggers.md).
 
 
-## See Also  
+## Related information  
 
 [Reports](devenv-reports.md)  
 [Report object](devenv-report-object.md)  

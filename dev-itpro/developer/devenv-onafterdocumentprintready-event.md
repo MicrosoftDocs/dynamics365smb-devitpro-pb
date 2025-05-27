@@ -1,10 +1,8 @@
 ---
 title: "OnAfterDocumentPrintReady Event"
 description: Describe the OnAfterDocumentPrintReady Event in Business Central.  
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ---
 # OnAfterDocumentPrintReady Event
@@ -64,7 +62,7 @@ Specifies whether the extension handled the print action successfully.
 
 [!INCLUDE[report_payload_md](includes/report_payload.md)]
   
-## See Also
+## Related information
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
 [Developing Printer Extensions Overview](devenv-reports-printing.md)  

@@ -4,8 +4,9 @@ description: Gets a vendorPayment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get vendorPayments
@@ -28,7 +29,7 @@ GET businesscentralPrefix/companies({id})/vendorPayments({id})
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and an **vendorPayments** object in the response body.
@@ -37,14 +38,14 @@ If successful, this method returns a ```200 OK``` response code and an **vendorP
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/vendorPayments({id})
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 {
@@ -53,7 +54,7 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [vendorPayment](../resources/dynamics_vendorPayment.md)  
 [Delete vendorPayment](dynamics_vendorPayment_Delete.md)   

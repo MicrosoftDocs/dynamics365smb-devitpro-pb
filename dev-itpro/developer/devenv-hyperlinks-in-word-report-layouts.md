@@ -3,7 +3,8 @@ title: "Setting up Hyperlinks in Word Report Layouts"
 description: Learn how to create links from text and pictures fields in Word report layouts
 ms.author: jswymer
 ms.date: 11/22/2021
-ms.topic: conceptual
+ms.topic: how-to
+ms.reviewer: jswymer
 ---
 
 # Using Hyperlinks in Word Layouts
@@ -62,6 +63,6 @@ Follow these guidelines:
   
 3. In the Word report layout, add a picture control for the picture source column.  
   
-## See Also  
+## Related information  
 
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  

@@ -1,12 +1,11 @@
 ---
-title: "Updating an App Version by Using ForceSync"
+title: Updating an App Version by Using ForceSync
 description: Learn how to synchronize a new app version that includes breaking changes.
 author: jswymer
-ms.custom: na
 ms.date: 06/10/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
 # Upgrading an App by Using ForceSync
@@ -52,7 +51,7 @@ You can always switch to the normal sync mode for an app issuing another PATCH r
 }
 ```
 
-## See Also
+## Related information
 
 [App Management API](app-management-api.md)  
 [Manage Apps in the Business Central Administration Center](../tenant-admin-center-manage-apps.md)   

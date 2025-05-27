@@ -5,7 +5,6 @@ documentationcenter: ''
 author: henrikwh
 ms.topic: reference
 ms.devlang: na
-ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/18/2023
 ms.author: solsen

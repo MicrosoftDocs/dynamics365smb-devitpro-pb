@@ -4,8 +4,9 @@ description: Gets a dimensionSetLine object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # Get dimensionSetLines
@@ -47,7 +48,7 @@ GET businesscentralPrefix/companies({id})/purchaseOrderLines({id})/dimensionSetL
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and an **dimensionSetLines** object in the response body.
@@ -56,7 +57,7 @@ If successful, this method returns a ```200 OK``` response code and an **dimensi
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders({id})/dimensionSetLines({id})
@@ -64,7 +65,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders({id})/d
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 {
@@ -80,7 +81,7 @@ Here is an example of the response.
 ```
 
 
-## See also
+## Related information
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [dimensionsetline](../resources/dynamics_dimensionsetline.md)    
 [Delete dimensionsetline](dynamics_dimensionsetline_Delete.md)    

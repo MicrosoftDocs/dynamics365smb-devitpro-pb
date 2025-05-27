@@ -1,9 +1,7 @@
 ---
 title: "Delete_&lt;part&gt; Operation"
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: reference
 ---
 # Delete_&lt;part&gt; Operation
 Deletes records on a subpage of the current page.  
@@ -72,5 +70,5 @@ namespace Delete_SalesLinesSample
 }  
 ```  
   
-## See Also  
+## Related information  
  [Basic Page Operations](Basic-Page-Operations.md)

@@ -4,16 +4,15 @@ description: A sales shipment line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2021
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesShipmentLine resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales shipment line in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -24,7 +23,6 @@ Represents a sales shipment line in [!INCLUDE[prod_short](../../../includes/prod
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET salesShipmentLine](../api/dynamics_salesshipmentline_get.md)|salesShipmentLine|Gets a sales shipment line object.|
-
 
 ## Navigation
 
@@ -44,6 +42,7 @@ Represents a sales shipment line in [!INCLUDE[prod_short](../../../includes/prod
 |lineType|NAV.salesLineType|The type of the sales shipment line. It can be " ", "G/L Account", "Item", "Resource", "Fixed Asset" or "Charge Item".|
 |lineObjectNumber|string|The number of the object (account or item) of the sales shipment line.|
 |description|string|Specifies the description of the sales shipment line.|
+|description2|string||
 |unitOfMeasureCode|string|The code of unit of measure for the sales shipment line.|
 |unitPrice|decimal|Specifies the price for one unit of the item in the specified sales shipment line.|
 |quantity|decimal|The quantity of the item in the sales shipment line.|
@@ -53,7 +52,7 @@ Represents a sales shipment line in [!INCLUDE[prod_short](../../../includes/prod
 
 ## JSON representation
 
-Here is a JSON representation of the salesShipmentLine resource.
+Here's a JSON representation of the salesShipmentLine resource.
 
 
 ```json
@@ -65,6 +64,7 @@ Here is a JSON representation of the salesShipmentLine resource.
     "lineType": "NAV.salesLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureCode": "string",
     "unitPrice": "decimal",
     "quantity": "decimal",
@@ -73,9 +73,7 @@ Here is a JSON representation of the salesShipmentLine resource.
     "shipmentDate": "date"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET salesShipmentLine](../api/dynamics_salesShipmentLine_Get.md)

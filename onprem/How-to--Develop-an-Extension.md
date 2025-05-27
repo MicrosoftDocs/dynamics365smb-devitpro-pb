@@ -1,12 +1,7 @@
 ---
 title: "How to: Develop an Extension"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 69203ef8-ceb0-4dc9-8f4c-eacaa0d33a6c
 author: solsen
 ---

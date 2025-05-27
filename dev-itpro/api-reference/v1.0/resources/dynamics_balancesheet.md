@@ -3,11 +3,12 @@ title: (v1.0) balanceSheet resource type
 description: (v1.0) A balance sheet in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # balanceSheet resource type (v1.0)
@@ -55,7 +56,7 @@ Here is a JSON representation of the resource.
     "dateFilter": "date"
 }
 ```
-## See also
+## Related information
   
 [Get Balance Sheet](../api/dynamics_balancesheet_get.md)  
 [Cash Flow Statement](dynamics_cashflowstatement.md)  

@@ -1,12 +1,7 @@
 ---
 title: "Code Changes While Debugging"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 28076d19-b29f-4db2-96f8-4ab3900855ce
 caps.latest.revision: 3
 ---

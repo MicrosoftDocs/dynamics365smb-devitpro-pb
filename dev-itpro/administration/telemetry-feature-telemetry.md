@@ -2,11 +2,12 @@
 title: Feature telemetry
 description: Learn about the telemetry that you can emit from features in Business Central.
 author: bholtorf
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
 ms.date: 07/13/2023
 ms.author: bholtorf
+ms.reviewer: bholtorf
 ---
 
 # Feature telemetry
@@ -22,6 +23,7 @@ The Telemetry AL module simplifies the way you monitor the health of your app an
 If you want to get feature telemetry to the app/extension telemetry pipeline, you must add a codeunit that implements the "Telemetry Logger" interface. Below is a simple example on such a codeunit.
 
 ```AL
+/// <summary>
 /// Adds support for the extension to use the "Telemetry" and "Feature Telemetry" codeunits.
 /// </summary>
 codeunit 50101 "Sample Telemetry Logger" implements "Telemetry Logger"
@@ -331,11 +333,11 @@ traces
 ```
 
 
-## See also
+## Related information
 
 [Error handling](../developer/devenv-al-error-handling.md)   
 [Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
-[System Application Overview](../developer/devenv-system-application-overview.md)  
+[Application Overview](../developer/devenv-system-application-overview.md)  
 [Feature Telemetry System Application Documentation](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry)  
 [Feature Telemetry Codeunit Reference Documentation](/dynamics365/business-central/application/system-application/codeunit/system.telemetry.feature-telemetry)  
 [Feature Management Telemetry](telemetry-feature-management-trace.md)  

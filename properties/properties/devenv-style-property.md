@@ -2,11 +2,9 @@
 title: "Style Property"
 description: "Description of the Style property"
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3ac73e26-7723-46b1-aa15-fd578aa4b56f
 ms.author: solsen

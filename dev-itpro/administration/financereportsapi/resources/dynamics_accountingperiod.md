@@ -1,11 +1,12 @@
 ---
-title: accountingPeriod resource type
-description: An accounting period object in Dynamics 365 Business Central.
+title: accountingPeriod resource type (Beta)
+description: An accounting period object in Dynamics 365 Business Central (Beta).
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 08/11/2022
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # accountingPeriod resource type (Beta)
@@ -59,5 +60,5 @@ Here is a JSON representation of the accountingPeriod resource.
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET accountingPeriod](../api/dynamics_accountingperiod_get.md)

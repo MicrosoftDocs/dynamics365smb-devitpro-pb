@@ -1,11 +1,8 @@
 ---
 title: "IntegrationEvent Attribute"
 description: "The IntegrationEvent attribute in AL for Business Central"
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: 
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
@@ -87,7 +84,7 @@ codeunit 50103 MySubscribingCodeunit
 <!--
 ```
 [IntegrationEvent(false, false)]
-procedure OnAddressLineChanged(line : Text[100]);
+procedure OnAddressLineChanged(line : Text[100])
 begin
 end;
 ``` 

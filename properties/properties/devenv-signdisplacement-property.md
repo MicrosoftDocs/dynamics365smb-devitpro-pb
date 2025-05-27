@@ -1,10 +1,8 @@
 ---
 title: "SignDisplacement Property"
-ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 932a7c72-f9b4-42c0-914c-2ecea112e73f
 caps.latest.revision: 5

@@ -2,11 +2,10 @@
 title: "Record.Init() Method"
 description: "Initializes a record in a table."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/02/2022
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -21,7 +20,6 @@ Initializes a record in a table.
 ```AL
  Record.Init()
 ```
-
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
@@ -33,10 +31,9 @@ An instance of the [Record](record-data-type.md) data type.
 ## Remarks  
 
 This method assigns default values to each field in the record, including the SystemId field when a table is created. For any new field added later into the record, values are initialized by default or by using [InitValue Property (Record)](../../properties/devenv-initvalue-property.md). If no value was assigned when the table was created, the values are assigned based on the data type, as shown in the following table.
-
   
 |Data type|Default value|  
-|---------|-------------------|  
+|---------|-------------|  
 |BigInteger|0|  
 |BigText|\<Empty>|  
 |BLOB|\<Empty>|  
@@ -56,16 +53,16 @@ This method assigns default values to each field in the record, including the Sy
 |Time|0T \(Undefined time\)|  
   
 > [!NOTE]  
-> Primary key and timestamp fields are not initialized.  
+> Primary key and timestamp fields aren't initialized.  
  
-After the method runs, you can change the values in any or all of the fields before you call the [Insert Method (RecordRef)](../recordref/recordref-insert--method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key isn't unique (such as the record already exists), then the record is rejected.  
+After the method runs, you can change the values in any or all of the fields before you call the [Insert method (RecordRef)](../recordref/recordref-insert--method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key isn't unique (such as the record already exists), then the record is rejected.
   
-The method works in the same way as the [Init Method (RecordRef)](../recordref/recordref-init-method.md).  
+The method works in the same way as the [Init method (RecordRef)](../recordref/recordref-init-method.md).  
 
 > [!NOTE]  
-> You aren't required to call the `Init()` method every time you intend to insert a record as, the fields are already populated, either with default values or the values set by the `InitValue` property. For the use cases, where the values need to be refreshed with each iteration in a loop or if they are inserted through a parameter, you should use the `Init()` method to make sure that the record aligns with the other data in the table.
+> You aren't required to call the `Init()` method every time you intend to insert a record as, the fields are already populated, either with default values or the values set by the `InitValue` property. For the use cases, where the values need to be refreshed with each iteration in a loop or if they're inserted through a parameter, you should use the `Init()` method to make sure that the record aligns with the other data in the table.
 
-## See Also
+## Related information
 
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

@@ -3,12 +3,12 @@ title: UK Features that are Moved, Removed, or Replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for the UK that we have moved, removed, or replaced.
 author: bholtorf
 
-ms.topic: conceptual
+ms.topic: reference
 ms.devlang: al
-ms. search.keywords: deprecated, United Kingdom, local functionality
+ms.search.keywords: deprecated, United Kingdom, local functionality
 ms.date: 04/01/2021
 ms.author: bholtorf
-
+ms.reviewer: bholtorf
 ---
 
 # Deprecated Features in the UK Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
@@ -118,7 +118,7 @@ Table 10505 has been deleted. The following list shows additional fields that ar
 
 [!INCLUDE [fields-obsolete-uk](../includes/fields-obsolete-uk.md)]
 
-## See Also
+## Related information
 
 [Deprecated Features in the Base App](deprecated-features-w1.md)  
 [Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  

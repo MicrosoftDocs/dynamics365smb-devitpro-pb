@@ -4,16 +4,15 @@ description: A sales order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 01/03/2022
+ms.date: 04/28/2025
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # salesOrderLine resource type
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a sales order line in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -53,6 +52,7 @@ Represents a sales order line in [!INCLUDE[prod_short](../../../includes/prod_sh
 |lineType|NAV.invoiceLineAggLineType|The type of the sales order line. It can be "Comment", "Account", "Item", "Resource" Value", "Fixed Asset" or "Charge".|
 |lineObjectNumber|string|The number of the object (account or item) of the sales order line.|
 |description|string|Specifies the description of the sales order line.|
+|description2|string||
 |unitOfMeasureId|GUID|The ID of unit of measure for the sales order line.|
 |unitOfMeasureCode|string|The code of unit of measure for the sales order line.|
 |quantity|decimal|The quantity of the item in the sales order line.|
@@ -70,16 +70,16 @@ Represents a sales order line in [!INCLUDE[prod_short](../../../includes/prod_sh
 |netTaxAmount|decimal|The net tax amount is the tax amount calculated from net amount. Read-Only.|
 |netAmountIncludingTax|decimal|The net amount including tax is the total net amount including tax. Read-Only.|
 |shipmentDate|date|The date the item in the line is expected to ship.|
-|shippedQuantity|decimal|The quantity of items from the order already shipped. Read-Only.|
+|shippedQuantity|decimal|The quantity of items from the order already shipped.|
 |invoicedQuantity|decimal|The quantity of items from the sales order line that was invoiced.|
-|invoiceQuantity|decimal|The quantity of items from the sales order line to be invoiced. Read-Only.|
+|invoiceQuantity|decimal|The quantity of items from the sales order line to be invoiced.|
 |shipQuantity|decimal|The quantity of items from the order to be shipped.|
 |itemVariantId|GUID|The ID of the item variant in the sales order line.|
 |locationId|GUID||
 
 ## JSON representation
 
-Here is a JSON representation of the salesOrderLine resource.
+Here's a JSON representation of the salesOrderLine resource.
 
 
 ```json
@@ -92,6 +92,7 @@ Here is a JSON representation of the salesOrderLine resource.
     "lineType": "NAV.invoiceLineAggLineType",
     "lineObjectNumber": "string",
     "description": "string",
+    "description2": "string",
     "unitOfMeasureId": "GUID",
     "unitOfMeasureCode": "string",
     "quantity": "decimal",
@@ -117,11 +118,9 @@ Here is a JSON representation of the salesOrderLine resource.
     "locationId": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
+## Related information
 
-
-## See Also
 [GET salesOrderLine](../api/dynamics_salesOrderLine_Get.md)  
 [DELETE salesOrderLine](../api/dynamics_salesOrderLine_Delete.md)  
 [POST salesOrderLine](../api/dynamics_salesOrderLine_Create.md)  

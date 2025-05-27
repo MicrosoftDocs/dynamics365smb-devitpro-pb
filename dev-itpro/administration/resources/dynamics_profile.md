@@ -1,11 +1,12 @@
 ---
-title: profile resource type | Microsoft Docs
+title: profile resource type
 description: A profile object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 05/05/2021
+ms.date: 05/31/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # profile resource type
@@ -54,5 +55,5 @@ Here is a JSON representation of the profile resource.
 
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
-## See Also
+## Related information
 [GET profile](../api/dynamics_profile_get.md)  

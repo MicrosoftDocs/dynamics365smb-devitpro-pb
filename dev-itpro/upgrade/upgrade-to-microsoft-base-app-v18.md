@@ -1,12 +1,12 @@
 ---
 title:  "Upgrading customized C/AL application to Microsoft Base Application for version 18" 
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 18
-ms.custom: na
-ms.date: 01/02/2024
-ms.reviewer: na
-ms.topic: article
+ms.custom: evergreen
+ms.date: 04/18/2024
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
+ms.reviewer: jswymer
 ---
 # Upgrading Customized C/AL Application to Microsoft Base Application Version 18
 
@@ -203,7 +203,7 @@ You'll create two versions of this extension. The first version contains the tab
 
     ```json
     {
-      "id": "11111111-aaa-2222-bbbb-333333333333",
+      "id": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "name": "bc14baseapptablesonly",
       "publisher": "My publisher",
       "version": "1.0.0.0",
@@ -819,7 +819,7 @@ Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance unti
         > [!NOTE]
         > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
-## See also  
+## Related information  
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)    
 [Upgrading to Business Central](upgrading-to-business-central.md)    

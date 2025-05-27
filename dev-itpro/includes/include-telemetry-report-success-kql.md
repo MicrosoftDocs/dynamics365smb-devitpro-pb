@@ -3,8 +3,9 @@ This KQL code can help you get started analyzing report rendering:
 ```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
-| where operation_Name == "Success report generation" // Note that in a later version of the schema, this field will not be used 
-     or customDimensions.eventId == 'RT0006'          // introduced in version 16.1
+| where customDimensions has 'RT0006'
+| where customDimensions.eventId == 'RT0006' 
+// | where operation_Name == "Success report generation" // use this instead of eventId clause for versions 16.0 or earlier
 | where customDimensions.result == "Success"
 | project timestamp
 // in which environment/company did it happen

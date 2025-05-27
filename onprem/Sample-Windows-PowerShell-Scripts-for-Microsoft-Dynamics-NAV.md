@@ -1,12 +1,7 @@
 ---
 title: "Sample Windows PowerShell Scripts for Microsoft Dynamics NAV"
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 5a30a9e2-c124-4e41-8449-0602a07e7629
 caps.latest.revision: 8
 ---

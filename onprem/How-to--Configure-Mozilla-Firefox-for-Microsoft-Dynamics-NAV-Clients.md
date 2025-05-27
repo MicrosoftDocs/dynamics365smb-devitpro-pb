@@ -1,13 +1,8 @@
 ---
 title: Configure Mozilla Firefox for Client
 description: Mozilla Firefox browser must be configured to allow cookies and JavaScript. The web client address should be added as a trusted URI - Unified Resource Identifier.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 author: jswymer
 ---
 # Configuring Mozilla Firefox for Dynamics NAV Clients

@@ -3,9 +3,9 @@ title: Add and remove recommended content for Business Central tabs
 description: Learn how to add or remove pages listed as recommended content in the Business Central tab configuration window.
 author: jswymer #Required; your GitHub user alias, with correct capitalization.
 ms.author: jswymer #Required; your Microsoft alias; optional team alias.
-ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
+ms.reviewer: jswymer
 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/22/2023
 ms.custom: bap-template
 ---
@@ -90,7 +90,7 @@ codeunit 50100 UpdateRecommendedContent
 }
 ```
 
-## See also
+## Related information
 
 [Developing for Microsoft Teams Integration](devenv-develop-for-teams.md)   
 [Create Business Central tabs for Teams](devenv-develop-for-teams-tabs.md)  

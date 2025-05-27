@@ -2,14 +2,15 @@
 title: Managing Capacity
 description: Use the Business Central administration center to manage the storage capacity for a tenant. 
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, storage, capacity, quota, limit, database size
-ms.date: 03/08/2022
+ms.date: 06/06/2024
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
-# Managing Capacity
+# Managing capacity
 
 To help our customers manage and plan their storage costs on an ongoing basis, the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] includes the **Capacity** page. The **Capacity** page provides an overview of the total database storage usage, with details about the storage used by every environment. The page also displays the currently used and the maximum allowed number of production and sandbox environments available for the customer.  
 
@@ -78,7 +79,7 @@ However, once the capacity limits are exceeded, the customers won't be able to c
 
 There are a few things that you can do to reduce the amount of data stored in a database to keep it under its current limit. For more information, see [Reducing Data Stored in Databases](database-reduce-data.md).
 
-## See also
+## Related information
  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

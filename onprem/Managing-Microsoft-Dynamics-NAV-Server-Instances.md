@@ -1,13 +1,8 @@
 ---
 title: Server Instance Management
 description: This article describes how to work with Server instances in the Server Administration tool and in the Services MMC snap-in.
-ms.custom: na
 ms.date: 10/01/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
 ms.assetid: 490ff91d-fc9e-4c80-bfc7-00e5ae87d24f
 caps.latest.revision: 28
 ---

@@ -92,7 +92,7 @@ The following steps help all users in your organization work around the issue an
 
 If you access Business Central in your browser, consider temporarily switching to another supported browser that is unaffected by this issue, such as Mozilla FireFox. See [the list of supported Web clients here](system-requirements-business-central-v20.md#WebClient)
 
-## See also
+## Related information
 
 [System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2022 Release Wave 1](system-requirements-business-central-v20.md)  
 [Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases](../upgrade/upgrade-paths.md)  

@@ -2,7 +2,6 @@
 title: "Register a customer production environment for manual deployment"
 description: "Set up and register a customer production environment for AL-Go for manual deployment for Business Central."
 author: freddyk
-ms.custom: na
 ms.date: 12/30/2021
 ms.reviewer: solsen
 ms.topic: conceptual

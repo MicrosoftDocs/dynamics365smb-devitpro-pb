@@ -1,24 +1,23 @@
 ---
-title: "InherentPermissions Attribute"
+title: "InherentPermissions attribute"
 description: "Specifies the permissions assigned to the scope of the method."
 ms.author: solsen
-ms.custom: na
-ms.date: 10/18/2022
-ms.reviewer: na
+ms.date: 08/26/2024
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# InherentPermissions Attribute
+# InherentPermissions attribute
 > **Version**: _Available or changed with runtime version 9.0._
 
 Specifies the permissions assigned to the scope of the method. 
 
 
-## Applies To
+## Applies to
 
 - Method
 - Event
@@ -51,12 +50,12 @@ Specifies the scope of the permissions that are assigned (Entitlements, Permissi
 
 ## Remarks
 
-For information about the `<permission value>` syntax, refer to [permissions values](../properties/devenv-permissions-property.md#values) or [permissions on objects](../devenv-permissions-on-database-object.mds#permissions-on-objects.md).
+For information about the `<permission value>` syntax, refer to [permissions values](../properties/devenv-permissions-property.md#property-values) or [permissions on objects](../devenv-permissions-on-database-objects.md#permissions-on-objects).
 
 ## Example 
 
 ```AL
-[InherentPermissions (PermissionObjectType::Table, Database::"Customer", 'r', InherentPermissionsScope::Both)]
+[InherentPermissions (PermissionObjectType::TableData, Database::"Customer", 'r', InherentPermissionsScope::Both)]
 ```
 
 > [!NOTE]  
@@ -65,6 +64,6 @@ For information about the `<permission value>` syntax, refer to [permissions val
 > [!NOTE]
 > You can use inherent permissions only for objects within the same extension.
 
-## See Also  
+## Related information  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

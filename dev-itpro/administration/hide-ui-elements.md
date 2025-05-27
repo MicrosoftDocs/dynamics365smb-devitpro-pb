@@ -1,10 +1,8 @@
 ---
 title: "Removing Elements from the User Interface According to Permissions"
 description: You can use permissions to manage which users can view which data, including hiding or showing specific fields in the application.
-ms.custom: na
 ms.date: 04/01/2021
-ms.reviewer: na
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ---
 # Removing Elements from the User Interface According to Permissions

@@ -1,23 +1,28 @@
 ---
-title: "BigInteger Data Type"
+title: "BigInteger data type"
 description: "Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,223,372,036,854,775,807."
 ms.author: solsen
-ms.custom: na
-ms.date: 05/11/2021
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# BigInteger Data Type
+# BigInteger Data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,223,372,036,854,775,807.
 
 
 
+## Instance methods
+The following methods are available on instances of the BigInteger data type.
+
+|Method name|Description|
+|-----------|-----------|
+|[ToText()](biginteger-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -42,7 +47,7 @@ BI := 1L;
 BI := 455500000000L;  
 ```  
 
-## See Also
+## Related information
 
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

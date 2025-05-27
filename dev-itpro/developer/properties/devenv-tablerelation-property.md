@@ -1,12 +1,11 @@
 ---
-title: "TableRelation Property"
+title: "TableRelation property"
 description: "Sets up a lookup into another table."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -20,14 +19,12 @@ The following syntax is valid for the TableRelation property:
 ```
 TableRelation = <TableName>[.<FieldName>] [WHERE(<TableFilters>)] |
 [IF(<Conditions>) <TableName>[.<FieldName>] [WHERE(<TableFilters>)] ELSE <TableRelation>]
-<Conditions> ::= <TableFilters>
-<TableFilters>::= <TableFilter> {,<TableFilter>}
-<TableFilter>::= <DestinationFieldName>=CONST(<FieldConst>) | FIELD(<SourceFieldName>)
+<Conditions> ::= <TableFilters> <TableFilters>::= <TableFilter> {,<TableFilter>} <TableFilter>::= <DestinationFieldName>=CONST(<FieldConst>) | FIELD(<SourceFieldName>)
 ```
-
+    
 
 ## Applies to
--   Table Field
+-   Table field
 -   Page Field
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -115,7 +112,7 @@ tableextension 50135 TableWithRelationExt extends TableWithRelation
 ```
 
   
-## See Also
+## Related information
 
 [ValidateTableRelation Property](devenv-validatetablerelation-property.md)  
 [TestTableRelation Property](devenv-testtablerelation-property.md)

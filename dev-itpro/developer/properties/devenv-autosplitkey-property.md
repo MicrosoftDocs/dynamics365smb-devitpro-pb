@@ -1,12 +1,11 @@
 ---
-title: "AutoSplitKey Property"
+title: "AutoSplitKey property"
 description: "Sets whether a key is automatically created for a new record placed between the current record and the previous record."
 ms.author: solsen
-ms.custom: na
-ms.date: 06/15/2022
-ms.reviewer: na
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -17,8 +16,8 @@ author: SusanneWindfeldPedersen
 Sets whether a key is automatically created for a new record placed between the current record and the previous record.
 
 ## Applies to
--   Page
 -   Request Page
+-   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -38,5 +37,5 @@ To set this property to a value of **true**, the following conditions must be me
   
 - The last field in the primary key must be an [Integer Data Type](../methods-auto/library.md), [BigInteger Data Type](../methods-auto/library.md), [GUID Data Type](../methods-auto/library.md), or [Decimal Data Type](../methods-auto/library.md) field.  
   
-## See Also  
+## Related information  
 [Properties](devenv-properties.md)

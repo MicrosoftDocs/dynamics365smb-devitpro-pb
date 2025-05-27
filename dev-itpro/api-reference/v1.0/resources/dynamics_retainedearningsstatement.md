@@ -3,11 +3,12 @@ title: (v1.0) retainedEarningsStatement resource type
 description: (v1.0) A retained earnings statement object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
-
+ms.custom: evergreen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/01/2019
+ms.date: 05/01/2024
 ms.author: solsen
+ms.reviewer: solsen
 ---
 
 # retainedEarningsStatement resource type (v1.0)
@@ -55,6 +56,6 @@ Here is a JSON representation of the resource.
     "dateFilter": "date"
 }
 ```
-## See also
+## Related information
 
 [Get Retained Earnings Statement](../api/dynamics_retainedearningsstatement_get.md)  
