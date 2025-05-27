@@ -4,10 +4,10 @@ description: Learn about how to get started as a reselling partner of Dynamics 3
 author: jswymer
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 06/03/2022
+ms.date: 05/27/2025
 ms.author: jswymer
 ms.collection: get-started
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ---
 
 # Get started as a reseller of Business Central online
@@ -153,12 +153,7 @@ Learn more about [CSP regions](/partner-center/enroll/regional-authorization-ove
 
 ### AIM and Bridge to Cloud 2
 
-These are the default programs designed to assist in migrating on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online. Familiarize yourself with the rules, as you will likely follow these steps multiple times when helping on-premises customers transition to [!INCLUDE [prod_short](../includes/prod_short.md)] online.
-
-* Bridge to Cloud 2: This program uses the perpetual license as the foundation for a [!INCLUDE [prod_short](../includes/prod_short.md)] online subscription.
-* AIM: This program provides support with assessments, guidance, and migration assistance.
-
-Learn more about both [AIM and Bridge to Cloud 2](https://dynamicspartners.transform.microsoft.com/program/aim-migration).
+These are the default programs designed to assist in migrating on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online. Learn more in [AIM and Bridge to Cloud 2](https://dynamicspartners.transform.microsoft.com/program/aim-migration).
 
 ### Microsoft Customer Agreement (MCA)
 
