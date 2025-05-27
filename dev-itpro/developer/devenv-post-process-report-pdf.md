@@ -270,7 +270,7 @@ Not all output options apply to every report action. This table shows which outp
 }
 ```
 
-## Element definitions
+### Element definitions
 
 | Element                  | Description |
 |--------------------------|-------------|
