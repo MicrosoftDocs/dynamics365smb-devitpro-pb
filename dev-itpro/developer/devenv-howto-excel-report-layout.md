@@ -134,7 +134,7 @@ The *ReportRequestValues* table contains metadata from the report request (the r
 | User name | The user who ran the report. |
 | Date | The date and time of the report invocation. |
 | Date (Local) | The date and time when the report runs, using the local time zone. |
-| UTC Offset | The offest between UTC and local time, based on the time zone information in the user's profile. | 
+| UTC Offset | The offset between UTC and local time, based on the time zone information in the user's profile. | 
 | Language | The application language identified (LCID, Windows language identifier).|
 | Format Region | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
 | Layout name | The name of the layout being used for the current Excel Workbook. Introduced in version 26.0.|
