@@ -95,9 +95,9 @@ Table 50136 "ML Prediction Parameters"
     {
         field(1; Counter; Integer) { AutoIncrement = true; }
         field(2; Price; Option) { OptionMembers = Low,Medium,High; }
-        field(3; Gender; Option) { OptionMembers = Man,Women; }
+        field(3; Gender; Option) { OptionMembers = Man,Woman; }
         field(4; Material; Option) { OptionMembers = Cashmere,Silk,Wool,Acrylic,Viscose,Cotton; }
-        field(5; SleeveLength; Option) { OptionMembers = Full,Half,Short,Threequarter,Butterfly,Sleveless; }
+        field(5; SleeveLength; Option) { OptionMembers = Full,Half,Short,Threequarter,Butterfly,Sleeveless; }
         field(10; DecemberSales; Option) { OptionMembers = Low,Medium,High; }
         field(11; Confidence; Decimal) { }
     }
