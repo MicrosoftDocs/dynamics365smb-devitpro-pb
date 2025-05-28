@@ -73,7 +73,7 @@ We encourage partners to leverage the APIs in their innovative solutions or appl
 
    When depend on models deployed by Microsoft be aware about available capacity and usage.
 
-   If your API features are attached to models in your subscription, you are responsible for the operating costs of Azure MAchine Learning resources throughout development, testing and when your customers use the feature in production or sandbox environments.
+   If your API features are attached to models in your subscription, you are responsible for the operating costs of Azure Machine Learning resources throughout development, testing and when your customers use the feature in production or sandbox environments.
 
 - Sensitive use cases
 
@@ -107,7 +107,7 @@ The APIs are reviewed and tested throughout Microsoft's development lifecycle an
 
 ## Evaluating and integrating API for your use
 
-The Microsoft cloud runs on trust. Our fundamental promise to our customers is that their data is their data: it is not used to train underliyng MAchine Learninig  models to the benefit of others, and it is protected by comprehensive enterprise compliance and security controls that they govern. Furthermore, Microsoft's AI systems are built on Responsible AI principles of fairness, reliability, safety, privacy, security, inclusiveness, transparency and accountability. 
+The Microsoft cloud runs on trust. Our fundamental promise to our customers is that their data is their data: it is not used to train underlying Machine Learning  models to the benefit of others, and it is protected by comprehensive enterprise compliance and security controls that they govern. Furthermore, Microsoft's AI systems are built on Responsible AI principles of fairness, reliability, safety, privacy, security, inclusiveness, transparency and accountability. 
 
 ### Working Responsible AI into your development practices
 
