@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.author: jswymer
 ---
 
-# Attach files, append, and protect report PDFs using AL
+# Attach files, append, and protect report PDFs in AL
 
 This article explains how AL developers can enhance the PDF output when a report is downloaded, previewed, or printed. 
 
