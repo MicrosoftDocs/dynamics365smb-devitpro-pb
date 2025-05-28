@@ -977,6 +977,7 @@
 ##### [Specify a default printer](/dynamics365/business-central/ui-specify-printer-selection-reports?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Schedule a report to run](/dynamics365/business-central/ui-work-report#ScheduleReport?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Manage saved settings](/dynamics365/business-central/reports-saving-reusing-settings?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Attach files, append, and protect report PDFs](developer\devenv-post-process-report-pdf.md)
 #### AL language reference (reports)
 ##### [Report datatype](developer/methods-auto/report/report-data-type.md)
 ##### [Report object properties](developer/properties/devenv-report-properties.md)
