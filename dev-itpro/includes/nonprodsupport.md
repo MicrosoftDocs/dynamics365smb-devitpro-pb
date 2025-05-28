@@ -8,7 +8,7 @@ ms.author: jswymer
 |For questions related to               |Contact               |
 |---------------------------------------|----------------------|
 |Problems with listing or publishing apps to AppSource due to Commercial Marketplace issues|The [Partner Center Support site](https://partner.microsoft.com/support) - choose the **Marketplace offers** category, and then choose the relevant category in the **Problem type** field, such as *Availability > Dynamics 365 Business Central offer*.|
-|Licensing or PSBC agreements |Email [MBS Orders](mailto:mbsorder@microsoft.com) or [MBS Agreements](mailto:mbsagree@microsoft.com), respectively |
+|Licensing or PSBC agreements |Email [MBS Orders](mailto:mbsorder@microsoft.com) or [MBS Agreements](mailto:partnerlifecycle@microsoft.com), respectively |
 |Microsoft Partner Network, Partner Center, Cloud Solution Provider program |The Partner Center [Support](https://partner.microsoft.com/support) site|
 |Payments, credit terms, checks, wire, or similar |Email [MBS Accounting](mailto:msgpar@microsoft.com) |
 |Technical issues with PSBC, PartnerSource, or Order Central|Email [IT MBS Support](mailto:itmbssup@microsoft.com)  |
