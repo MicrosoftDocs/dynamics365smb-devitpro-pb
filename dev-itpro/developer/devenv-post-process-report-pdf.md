@@ -19,7 +19,7 @@ Using AL, you can change the report PDF output in the following ways:
 
 - Add attachments
 
-  Attach files that are embedded in the report PDF output. The attachements show in the **Attachments** side panel in PDF reader. The attachments appear in the **Attachments** side panel in the PDF reader. You can attach different file formats like images, PDFs, Word documents, Excel spreadsheets, and multimedia files.
+  Attach files that are embedded in the report PDF output. The attachments show in the **Attachments** side panel in PDF reader. The attachments appear in the **Attachments** side panel in the PDF reader. You can attach different file formats like images, PDFs, Word documents, Excel spreadsheets, and multimedia files.
 
 - Append additional documents
 
@@ -115,7 +115,7 @@ reportextension 50136 MyCustRepExtension extends "Customer - List"
         FileName := CreateXmlFile(Name, 'This is a sample xml file');
         AttachmentObj.Add('name', Name);
         AttachmentObj.Add('filename', FileName);
-        AttachmentObj.Add('description', 'This is the sample xml document');
+        AttachmentObj.Add('description', 'This is a sample xml document');
         AttachmentObj.Add('relationship', 'Data');
         AttachmentObj.Add('mimetype', 'text/xml');
         // Add the attachment object to rendering payload
@@ -163,12 +163,12 @@ The payload sent from `OnPreRendering` for the example:
 
 ```json
 {
-  "version": "1.0.0.0.",
+  "version": "1.0.0.0",
   "saveformat": "Einvoice",
   "attachments": [
     {
-      "name": "sample-attachemnt.xml",
-      "description": "This is the sample xml document",
+      "name": "sample-attachment.xml",
+      "description": "This is a sample xml document",
       "relationship": "Data",
       "mimetype": "text/xml",
       "filename": "sample-attachment.xml"
