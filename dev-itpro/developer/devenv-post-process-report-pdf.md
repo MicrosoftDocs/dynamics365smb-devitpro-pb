@@ -19,7 +19,7 @@ Using AL, you can change the report PDF output in the following ways:
 
 - Add attachments
 
-  Attach files that are embedded in the report PDF output. The attachments show in the **Attachments** side panel in PDF reader. You can attach different file formats like images, PDFs, Word documents, Excel spreadsheets, and multimedia files.
+  Attach files that are embedded in the report PDF output. The attachments show in the **Attachments** side panel in a PDF reader, like Adobe Acrobat Reader. You can attach different file formats like images, PDFs, Word documents, Excel spreadsheets, and multimedia files.
 
 - Append additional documents
 
