@@ -288,7 +288,7 @@ The payload sent from `OnPreRendering` for the example:
 | Element  Description |
 |-|-|
 | `version`                | JSON schema version in the format X.X.X.X. |
-| `saveformat`             | Sets the final PDF file format. Values include:<ul><li>`Default` – Saves the PDF in the default format and version, decided by the platform.</li><li>`PdfA3B` – Converts the PDF to PDF/A-3B format. This value doesn't update the embedded XMP metadata. </li><li>`Einvoice` – Converts the PDF to PDF/A-3B and adds XMP metadata for CrossIndustryDocument/invoice compliance. The document is added to the XMP metadata as the `DocumentFileName`.</li></ul> |
+| `saveformat`             | Sets the final PDF file format. Values include:<ul><li>`Default` – Saves the PDF in the default format and version, decided by the platform.</li><li>`PdfA3B` – Converts the PDF to PDF/A-3B format. This value doesn't update the embedded XMP metadata.</li><li>`Einvoice` – Converts the PDF to PDF/A-3B and adds XMP metadata for CrossIndustryDocument/invoice compliance. The document is added to the XMP metadata as the `DocumentFileName`.</li></ul> |
 | `primaryDocument`        | Name of the document that represents the alternative version of the user-facing PDF, such as the invoicing XML document. This document is added to the XMP metadata as the `DocumentFileName` of the primary document.<br><br>When `primaryDocument` is set and `saveformat` is set to `Einvoice`, this attachment is promoted to the alternative representation of the main PDF document (invoice type) and added to the XMP PDF metadata for identification in electronic payment systems. The `relationship` is set based on the JSON properties defined for the attachment: use `Alternative` for the primary document and `Data` for others. |
 | `attachments`            | List of attachments as a JSON array. |
 | `attachments\name`       | Name of the attachment stored in the PDF. |
@@ -301,3 +301,6 @@ The payload sent from `OnPreRendering` for the example:
 | `protection\user`        | User password required to open the document. |
 | `protection\admin`       | Admin password that gives full access to the document. If empty, the platform uses the user password. |
 
+## Related information
+
+[Designing reports](devenv-reports.md)  
