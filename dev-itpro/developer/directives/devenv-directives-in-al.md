@@ -41,7 +41,7 @@ The following conditional preprocessor directives are supported in AL.
 
 ### Logical operators in conditional directives
 
-The operators `AND`, `OR`, and `NOT` are supported in conditional directives. `AND` evaluates to `true` if both operands are true, `OR` evaluates to `true` if at least one of the operands is true, and `NOT` negates the value of the operand.
+The operators `and`, `or`, and `not` are supported in conditional directives. `and` evaluates to `true` if both operands are true, `or` evaluates to `true` if at least one of the operands is true, and `not` negates the value of the operand.
 
 ## Defining preprocessorSymbols
 
