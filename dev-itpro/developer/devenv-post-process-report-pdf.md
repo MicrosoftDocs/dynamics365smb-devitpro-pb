@@ -160,9 +160,6 @@ reportextension 50136 MyCustRepExtension extends "Customer - List"
 }
 ```
 
-> [!TIP]
-> For more detailed examples, go to [Business Central Tech Samples on GitHub](https://aka.ms/BcTech).
-
 ### Report rendering payload
 
 The payload sent from `OnPreRendering` for the example:
