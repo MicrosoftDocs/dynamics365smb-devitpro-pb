@@ -4,7 +4,7 @@ description: Learn about how you as the internal administrator or as a reselling
 author: jswymer
 ms.topic: article
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 06/21/2024
+ms.date: 06/22/2024
 ms.author: jswymer
 ms.reviewer: solsen
 ---
