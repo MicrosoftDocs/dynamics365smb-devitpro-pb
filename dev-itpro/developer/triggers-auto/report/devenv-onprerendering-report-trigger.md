@@ -39,143 +39,116 @@ The JSON object containing post rendering setup which will be applied by the run
 
 The `OnPreRendering trigger` runs after the `OnPreDataItem` trigger for last dataitem and before `OnPostReport`trigger.
 
-The trigger collects information needed for performing the following operations:
+The trigger collects information needed for performing the following operations :
 
 - Attach document for PDF targets
 - Append other documents to the current output artifact
 - Protect the output artifact with user and admin passwords.
 
-Collected data is returned to the platform, which then applies the necessary actions depending on the current scenario:  
+You add code to the trigger to specify the output modifications you want&mdash;attach, additional documents, or protect&mdash;according to the [report rendering payload schema](#report-rendering-payload-schema-definition).
 
-OnPreRendering is a data collection trigger only, and will not invoke the processing instructions directly, but only build the Json object with a list of files to append or embed, and user/admin passwords. The platform will apply these values in the right context and ensure that files passed to the trigger are properly cleaned up afterwards. 
+The trigger collects report rendering data in a JSON payload. It doesn't invoke processing instructions directly. Instead, it builds the JSON object with a list of attached and appended files, and user or admin passwords. The platform uses this payload to apply the requested changes to the report PDF output.
 
-- Embed:
+Learn more in [Attach files, append, and protect report PDFs in AL](../../devenv-post-process-report-pdf.md).
 
-   Applied when the report is saving an artifact (running SaveAsXX). Embedding documents does not apply to print / preview scenarios as the embedded files do not appear in the user facing pages. When the Json property primaryDocument has been set and the saveformat is specified as Einvoice, this attachment will be promoted to the Alternative representation of the master pdf document (invoice type) and will be added to the XMP pdf metadata for identification in electronic payment systems. The relationship type will be set according to the Json properties given when the attachment was defined (should be Alternative for the primary document and Data for other).
+## Example
 
-- Append
+## Example
 
-   Applied to actions that show user facing versions of the artifact (print/preview) as the user can print to completed document like the end-user will set it.
+The following AL code example create a report extension object that modifies the **Customer - List** report PDF output to include an attached file and append it with the **Customer - Top 10 List** report. In the OnPreRendering trigger of the report extension, the code:
 
-- Protect
+- Adds a version number to the rendering payload.
+- Creates a sample XML file and attaches it as a file to the report's PDF output.
 
-   Applied to save and browser print scenarios. Documents that are scheduled for universal print will not be protected in the standard setup but will be protected if universal print fails and downloads to the web client print local print.
+  To view the attachment in the rendered PDF, select **Send to** > **PDF** on the report request page, download the PDF, and open it in a PDF viewer like Adobe Reader.
+- Generates a PDF file of the **Customer - Top 10 List** report and appends it to the main report output as an additional document.
 
-   Printing a protected document requires that the user enters the given user password. The password is used when users choose the **Print to PDF** priner option to store the document locally.
+  To observe the **Customer - Top 10 List** report in the rendered PDF, select any of these actions from the request page: **Send to PDF**, **Preview**, **Print**.
+- Adds password protection information to the rendering payload.
 
-This trigger is supported on report and report extension objects.
+  To test the password on the rendered PDF, use the **Send to PDF** action from the request page and open downloaded file.
 
-## RenderingPayload
+The code uses AL's `JsonObject` and `JsonArray` types to build the JSON payload for the report rendering engine. The output includes attachments, additional documents, and protection settings.
 
-The rendering payload has metadata for the files to embed and append, and passwords that protect the files. The payload includes several attributes and properties with the following structure.
-
-```json
+```AL
+reportextension 50136 MyCustRepExtension extends "Customer - List"
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "",
-  "type": "object",
-  "properties": {
-    "version": {
-      "type": "string",
-      "minLength": 1
-    },
-    "saveformat": {
-      "type": "string",
-      "enum": [ "Default", "PdfA3B", "Einvoice" ]
-    },
-    "primaryDocument": {
-      "type": "string",
-      "minLength": 1
-    },
-    "attachments": {
-      "type": "array",
-      "uniqueItems": true,
-      "minItems": 0,
-      "items": {
-        "required": [
-          "name",
-          "description",
-          "relationship",
-          "mimetype",
-          "filename"
-        ],
-        "properties": {
-          "name": {
-            "type": "string",
-            "minLength": 1
-          },
-          "description": {
-            "type": "string",
-            "minLength": 1
-          },
-          "relationship": {
-            "type": "string",
-            "enum": [ "Source", "Data", "Alternative", "Supplement", "Unspecified" ]
-          },
-          "mimetype": {
-            "type": "string",
-            "minLength": 1
-          },
-          "filename": {
-            "type": "string",
-            "minLength": 1
-          }
-        }
-      }
-    },
-    "additionalDocuments": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "protection": {
-      "type": "object",
-      "properties": {
-        "user": {
-          "type": "string",
-          "minLength": 0
-        },
-        "admin": {
-          "type": "string",
-          "minLength": 0
-        }
-      },
-      "required": [
-        "user",
-        "admin"
-      ]
+    dataset
+    {
     }
-  },
-  "required": [
-    "version",
-    "saveformat",
-    "attachments",
-    "additionalDocuments",
-    "protection"
-  ]
+
+    requestpage
+    {
+    }
+
+    rendering
+    {
+        layout(LayoutName)
+        {
+            Type = Word;
+            LayoutFile = 'mycustlayout.docx';
+        }
+    }
+
+    trigger OnPreRendering(var RenderingPayload: JsonObject)
+    var
+        Name: Text;
+        FileName: Text;
+        ProtectionObj: JsonObject;
+        AttachmentsArray: JsonArray;
+        AttachmentObj: JsonObject;
+        AdditionalDocumentsArray: JsonArray;
+        AdditionalDocObj: JsonObject;
+        Top10PdfFile: Text;
+    begin
+        RenderingPayload.Add('version', '1.0.0.0');
+
+        // Create a simple attachment object
+        Name := 'sample-attachment.xml';
+        FileName := CreateXmlFile(Name, 'This is a sample xml file');
+        AttachmentObj.Add('name', Name);
+        AttachmentObj.Add('filename', FileName);
+        AttachmentObj.Add('description', 'This is a sample xml document');
+        AttachmentObj.Add('relationship', 'Data');
+        AttachmentObj.Add('mimetype', 'text/xml');
+        // Add the attachment object to rendering payload
+        AttachmentsArray.Add(AttachmentObj);
+        RenderingPayload.Add('attachments', AttachmentsArray);
+
+        // Create PDF of Customer - Top 10 List report for appending 
+        Top10PdfFile := CreatePdfFile('CustomerTop10.pdf', '');
+        // Add PDF to rendering payload  
+        AdditionalDocumentsArray.Add(Top10PdfFile);
+        RenderingPayload.Add('additionalDocuments', AdditionalDocumentsArray);
+
+        // Create the protection object with user password
+        ProtectionObj.Add('user', 'UserPasswordHere');
+        // Add protection object to rendering payload
+        RenderingPayload.Add('protection', ProtectionObj);
+    end;
+
+    local procedure CreatePdfFile(Filename: Text; Content: Text) FilePath: Text
+    begin
+        FilePath := System.TemporaryPath + Filename;
+        Report.SaveAsPdf(Report::"Customer - Top 10 List", FilePath);
+    end;
+
+    local procedure CreateXmlFile(Filename: Text; Content: Text) FilePath: Text
+    var
+        FileObject: File;
+        OutStream: OutStream;
+    begin
+        FilePath := System.TemporaryPath + Filename;
+        FileObject.TextMode := true;
+        FileObject.Create(FilePath);
+        FileObject.CreateOutStream(OutStream);
+        OutStream.WriteText('<?xml version="1.0" encoding="utf-8" standalone="yes"?>');
+        OutStream.WriteText('<root><test>');
+        OutStream.WriteText(Content);
+        OutStream.WriteText('</test></root>');
+    end;
 }
 ```
-
-### Properties
-
-The following table describes property keys of the json schema.
-
-|Property|Description|
-|-|-|
-|version|Json schema version using the standard version format X.X.X.X|
-|saveformat|Defines the final pdf file format to be one of the following values:<ul><li>Default (leave as is )<\li><li>PdfA3B – Convert to pure PDF/A-3B.<\li><li>Einvoice – Convert to PDF/A-3B and add the xmp metadata for CrossIndustryDocument/invoice compliance. <\li><\ul>|
-|primaryDocument|The name of the document represents the alternative version of the user facing pdf (this is the invoicing xml document). This document will be added to the xmp metadata as the DocumentFileName|
-|attachments| List of attachments as a json array|
-|attachments\name|	Attachment name that will be stored in the pdf embedding.|
-|attachments\description|Descriptive text for this attachment.|
-|attachments\relationship|Relationship type according to the Adobe Pdf standard (use the enum type given in the sample extension).|
-|attachments\mimetype|The attachment mimetype. The alternative invoice must be of type text\xml|
-|attachments\filename|The filename that will point to the object to be attached (the server will delete the file when the operation is complete).|
-|additionalDocuments|List of pdf files to append to the resulting document.
-|protection|Contains the optional document passwords.| 
-|protection\user|Defines the user password that is required to open the document.|
-|protection\admin.|Defines the admin password that gives full access to the document. Notice that if this element is empty, the platform will apply the user password to this field|
 
 ## Related information
 
