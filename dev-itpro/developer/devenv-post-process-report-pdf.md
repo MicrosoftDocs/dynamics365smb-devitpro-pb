@@ -65,9 +65,15 @@ Not all output options apply to every report action. This table shows which outp
 The following AL code example create a report extension object that modifies the **Customer - List** report PDF output to include an attached file and append it with the **Customer - Top 10 List** report. In the OnPreRendering trigger of the report extension, the code:
 
 - Adds a version number to the rendering payload.
-- Creates a sample XML file and attaches it as a file to the report's PDF output. To view the attachment, select **Send to** > **PDF** on the report request page, download the PDF, and open it in a PDF viewer like Adobe Reader.
+- Creates a sample XML file and attaches it as a file to the report's PDF output.
+
+  To view the attachment in the rendered PDF, select **Send to** > **PDF** on the report request page, download the PDF, and open it in a PDF viewer like Adobe Reader.
 - Generates a PDF file of the **Customer - Top 10 List** report and appends it to the main report output as an additional document.
+
+  To observe the **Customer - Top 10 List** report in the rendered PDF, select any of these actions from the request page: **Send to PDF**, **Preview**, **Print**.
 - Adds password protection information to the rendering payload.
+
+  To test the password on the rendered PDF, use the **Send to PDF** action from the request page and open downloaded file.
 
 The code uses AL's `JsonObject` and `JsonArray` types to build the JSON payload for the report rendering engine. The output includes attachments, additional documents, and protection settings.
 
