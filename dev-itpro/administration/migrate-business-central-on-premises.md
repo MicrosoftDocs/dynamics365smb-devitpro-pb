@@ -154,7 +154,7 @@ This section outlines the general process or phases you go through to migrate da
 
     1. Optimize cloud migration performance:
 
-       Follow practical steps to enhance to improve the efficiency and reliability of the migration process while minimizing the risk of data loss or downtime. 
+       Follow practical steps to enhance and improve the efficiency and reliability of the migration process while minimizing the risk of data loss or downtime. 
 
        To get started, go to [Align SQL table definitions](migration-optimize-replication.md).
 
