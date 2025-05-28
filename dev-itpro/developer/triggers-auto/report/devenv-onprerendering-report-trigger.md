@@ -53,7 +53,8 @@ Learn more in [Attach files, append, and protect report PDFs in AL](../../devenv
 
 ## Example
 
-## Example
+> [!TIP]
+> For more detailed examples, go to [Business Central Tech Samples on GitHub](https://aka.ms/BcTech).
 
 The following AL code example create a report extension object that modifies the **Customer - List** report PDF output to include an attached file and append it with the **Customer - Top 10 List** report. In the OnPreRendering trigger of the report extension, the code:
 

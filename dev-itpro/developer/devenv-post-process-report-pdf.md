@@ -62,6 +62,9 @@ Not all output options apply to every report action. This table shows which outp
 
 ### Example
 
+> [!TIP]
+> For more detailed examples, go to [Business Central Tech Samples on GitHub](https://aka.ms/BcTech).
+
 The following AL code example create a report extension object that modifies the **Customer - List** report PDF output to include an attached file and append it with the **Customer - Top 10 List** report. In the OnPreRendering trigger of the report extension, the code:
 
 - Adds a version number to the rendering payload.
@@ -156,6 +159,9 @@ reportextension 50136 MyCustRepExtension extends "Customer - List"
     end;
 }
 ```
+
+> [!TIP]
+> For more detailed examples, go to [Business Central Tech Samples on GitHub](https://aka.ms/BcTech).
 
 ### Report rendering payload
 
