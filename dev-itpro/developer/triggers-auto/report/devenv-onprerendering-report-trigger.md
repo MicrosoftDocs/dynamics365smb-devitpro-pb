@@ -45,7 +45,7 @@ The trigger collects information needed for performing the following operations 
 - Append other documents to the current output artifact
 - Protect the output artifact with user and admin passwords.
 
-You add code to the trigger to specify the output modifications you want&mdash;attach, additional documents, or protect&mdash;according to the [report rendering payload schema](#report-rendering-payload-schema-definition).
+You add code to the trigger to specify the output modifications you want&mdash;attach, additional documents, or protect&mdash;according to the [report rendering payload schema](../../devenv-post-process-report-pdf.md#report-rendering-payload-schema-definition).
 
 The trigger collects report rendering data in a JSON payload. It doesn't invoke processing instructions directly. Instead, it builds the JSON object with a list of attached and appended files, and user or admin passwords. The platform uses this payload to apply the requested changes to the report PDF output.
 
@@ -153,5 +153,5 @@ reportextension 50136 MyCustRepExtension extends "Customer - List"
 
 ## Related information
 
-[Getting started with AL](../devenv-get-started.md)  
-[Developing extensions](../devenv-dev-overview.md)  
+[Getting started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  
