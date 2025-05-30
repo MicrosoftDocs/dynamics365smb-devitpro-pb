@@ -37,7 +37,7 @@ Specifies the type of object that publishes the event to subscribe to.
 
 *ObjectId*  
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
-Specifies the ID of the object that that publishes the event to subscribe to. You can specify the object by its ID (integer) or by its name using the syntax `<ObjectType>::<ObjectName>`, such as `Codeunit::MyEventPublisher`. Using the name is the recommended way.  
+Specifies the ID of the object that publishes the event to subscribe to. You can specify the object by its ID (integer) or by its name using the syntax `<ObjectType>::<ObjectName>`, such as `Codeunit::MyEventPublisher`. Using the name is the recommended way.  
 
 *EventName*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
@@ -118,3 +118,4 @@ codeunit 50107 MyEventSubscriber
 [Raising events](../devenv-raising-events.md)   
 [Subscribing to events](../devenv-subscribing-to-events.md)   
 [Method attributes](devenv-method-attributes.md)
+

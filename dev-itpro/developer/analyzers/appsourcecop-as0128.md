@@ -11,7 +11,7 @@ ms.reviewer: solsen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Error AS0128
-An interface must not be removed from the the list of extended interfaces on an interface that has been published.
+An interface must not be removed from the list of extended interfaces on an interface that has been published.
 
 ## Description
 An interface must not be removed from the list of extended interfaces on an interface that has been published, because dependent extensions may break
