@@ -3,8 +3,8 @@ title: Permission set object
 description: Describes the permission set object, which sets permissions on objects in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
-ms.date: 04/18/2024
-ms.topic: article
+ms.date: 08/02/2025
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -17,7 +17,7 @@ The permission set object in [!INCLUDE[prod_short](includes/prod_short.md)] desc
 
 Some permission sets can be nonassignable, meaning that they aren't discoverable and assignable in the UI in [!INCLUDE[prod_short](includes/prod_short.md)], instead they can be used as building blocks to compose functional assignable permission sets.
 
-For information about which permissions can be assigned to objects, see [Permissions on Database Objects](devenv-permissions-on-database-objects.md).
+Learn more about which permissions can be assigned to objects in [Permissions on database objects](devenv-permissions-on-database-objects.md).
 
 ## Designing with cautiousness
 
@@ -33,14 +33,14 @@ Typing the shortcut `tpermissionset` creates the basic layout for a permission s
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
-When adding new AL objects, it's easy to forget to update the permissions. With the `al.generatePermissionSetForExtensionObjects` command, you can generate or update a permission file for the active project in Visual Studio Code. Choose to create a new permission file or select an existing file to make updates to. For more information, see [AL Language extension configuration](devenv-al-extension-configuration.md).
+When adding new AL objects, it's easy to forget to update the permissions. With the `al.generatePermissionSetForExtensionObjects` command, you can generate or update a permission file for the active project in Visual Studio Code. Choose to create a new permission file or select an existing file to make updates to. Learn more in [AL Language extension configuration](devenv-al-extension-configuration.md).
 
 ## Permission set example
 
 The following example illustrates a permission set `Sales Person` with permissions given to data in tables, each with different level of access. The [Assignable property](properties/devenv-assignable-property.md) is set to `true`, which allows the permission set to be assigned to a user. The [Permissions property](properties/devenv-permissions-property.md) is set to the list of objects to give permissions to. The `RIMD` access assigned to data in the `Customer` table provides full access, whereas, for example, access is limited for data in the `Currency` table only allowing full read and modify permission. 
 
 > [!NOTE]  
-> The name of the permissionset object is limited to 20 characters when the `Assignable` property is set to `true`. Otherwise, it's limited to 30 characters. Exceeding the limit will throw the diagnostic [Compiler Error AL0305](diagnostics/diagnostic-al305.md).
+> The name of the permissionset object is limited to 20 characters when the `Assignable` property is set to `true`. Otherwise, it's limited to 30 characters. Exceeding the limit throws the diagnostic [Compiler Error AL0305](diagnostics/diagnostic-al305.md).
 
 ```al
 permissionset 50134 "Sales Person"
@@ -73,7 +73,7 @@ permissionset 50135 MyPermissionSet
 } 
 ```
 
-You can also use the [ExludedPermissionSets property](properties/devenv-excludedpermissionsets-property.md) to exclude permissions defined in other permission sets. To learn more, see [Composing permission sets From other permission sets](devenv-permissionset-composing.md).
+You can also use the [ExludedPermissionSets property](properties/devenv-excludedpermissionsets-property.md) to exclude permissions defined in other permission sets. Learn more in [Composing permission sets From other permission sets](devenv-permissionset-composing.md).
 
 ## Related information
 
