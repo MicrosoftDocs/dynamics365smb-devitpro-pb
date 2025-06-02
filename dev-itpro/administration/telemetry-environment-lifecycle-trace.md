@@ -1430,7 +1430,7 @@ Occurs when a configuration key for the environment failed to be updated.
 
 ### Sample KQL code (environment configuration key failed to update)
 
-This KQL code can help you get started analyzing failures when setting a environment configuration key:
+This KQL code can help you get started analyzing failures when setting an environment configuration key:
 
 ```kql
 traces
@@ -2259,3 +2259,4 @@ traces
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+
