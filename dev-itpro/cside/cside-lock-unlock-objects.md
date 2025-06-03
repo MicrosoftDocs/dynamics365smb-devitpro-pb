@@ -1,7 +1,7 @@
 ---
 title: "Locking and Unlocking Objects"
 ms.date: 04/01/2021
-ms.topic: article
+ms.topic: how-to
 ms.assetid: 295f6231-82dd-4265-9942-97e7a3a5ee9f
 caps.latest.revision: 10
 ---

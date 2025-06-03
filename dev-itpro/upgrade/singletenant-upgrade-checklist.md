@@ -3,7 +3,7 @@ title: "Single-Tenant Full Upgrade Quick Reference"
 description: Get an overview of the steps required to upgrade from one version of Business Central on-premises to the next.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer

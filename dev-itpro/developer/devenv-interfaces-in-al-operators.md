@@ -1,23 +1,23 @@
 ---
-title: Type testing and casting operators for interfaces
-description: With the `is` and `as` operators, you can do type testing and casting of interfaces in AL for Business Central.
+title: Type testing and casting operators for interfaces in AL
+description: Learn how to use the `is` and `as` operators for type testing and casting interfaces in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 09/30/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
 ---
 
-# Type testing and casting operators for interfaces
+# Type testing and casting operators for interfaces in AL
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-In the AL language, you can define interfaces, which is a syntactical contract that can be implemented by a nonabstract method. With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, you can also extend an interface, which allows for a more flexible and adaptable design. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md). In connection with the extensibility of interfaces, it's useful to be able to do type testing and casting of interfaces. For this purpose, 2 operators `is` and `as` are availble.
+In the AL language, you can define an interface, which is a syntactical contract that can be implemented by a nonabstract method. With [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, you can also extend an interface, which allows for a more flexible and adaptable design. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md). In connection with the extensibility of interfaces, it's useful to be able to do type testing and casting of interfaces. For this purpose, two operators `is` and `as` are available.
 
 ## Type testing with the `is` operator
 
-Type testing with the `is` operator is useful when extending interfaces, because it allows you to test whether an instance of an interface or the content of a variant supports a specific interface. 
+Type testing with the `is` operator is useful when extending interfaces because it allows you to test whether an instance of an interface or the content of a variant supports a specific interface. 
 
 Here’s the syntax for using the `is` keyword:
 
@@ -62,5 +62,5 @@ end;
 
 ## Related information
 
-[Interfaces in AL](devenv-interfaces-in-al.md)  
-[Extending interfaces in AL](devenv-interfaces-in-al-extend.md)  
+- [Interfaces in AL](devenv-interfaces-in-al.md)  
+- [Extending interfaces in AL](devenv-interfaces-in-al-extend.md)  

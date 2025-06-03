@@ -4,7 +4,7 @@ description: Describes how to use the Performance Profiler page in Business Cent
 ms.author: bholtorf
 ms.date: 08/12/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: bholtorf
 ---
 

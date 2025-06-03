@@ -2,7 +2,7 @@
 title: "Designing for different screen sizes on tablet and phone"
 ms.date: 01/02/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 author: blrobl
 ms.author: brobledodiaz
 description: Optimize your Business Central app design for various screen sizes. Learn best practices for tablet and phone clients, and how to test using a browser.

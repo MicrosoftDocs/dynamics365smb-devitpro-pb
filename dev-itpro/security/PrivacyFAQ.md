@@ -4,7 +4,7 @@ description: Find useful links and other answers to frequently asked questions a
 author: jswymer
 ms.date: 08/12/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: faq
 ms.author: jswymer
 ---
 

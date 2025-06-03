@@ -70,12 +70,14 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
-### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
-### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
-### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
-### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
-### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
+### [Update 26.1](whatsnew/whatsnew-update-26-1.md)
+### [Update 26.0](whatsnew/whatsnew-update-26-0.md)
 ### Updates for earlier major versions
+#### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
+#### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
+#### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
+#### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
+#### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 #### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
 #### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
 #### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
@@ -154,7 +156,7 @@
 ### [Country/region availability and supported translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated administrator access to Business Central online](administration/delegated-admin.md)
 ### [Trials and subscriptions](administration/trials-subscriptions.md)
-### [Major updates and minor updates](administration/update-rollout-timeline.md)
+### [Major and minor update cycles](administration/update-rollout-timeline.md)
 ### [Version numbers in Business Central](administration/version-numbers.md)
 ### [Operational limits](administration/operational-limits-online.md)
 ### [Technical support of Business Central](technical-support.md)
@@ -172,6 +174,7 @@
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)
 ### [Manage updates](administration/tenant-admin-center-update-management.md)
 ### [Manage sessions](administration/tenant-admin-center-manage-sessions.md)
+### [Manage consumption-based billing](administration/tenant-admin-center-manage-consumption-billing.md)
 ### [Copy a production or sandbox environment](administration/tenant-admin-center-environments-copy.md)
 ### [Rename environments](administration/tenant-admin-center-environments-rename.md)
 ### [Export databases](administration/tenant-admin-center-database-export.md)
@@ -244,6 +247,7 @@
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 #### [Changelog configuration telemetry](administration/telemetry-changelog-configuration-trace.md)
 #### [Client action telemetry](administration/telemetry-client-action-trace.md)
+#### [Client control add-in exception telemetry](administration/telemetry-client-add-in-exceptions.md)
 #### [Cloud migration telemetry](administration/telemetry-cloud-migration-trace.md)
 #### [Company lifecycle telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Configuration package lifecycle telemetry](administration/telemetry-configuration-package-trace.md)
@@ -261,6 +265,8 @@
 #### [Feature management telemetry](administration/telemetry-feature-management-trace.md)
 #### [Feature telemetry](administration/telemetry-feature-telemetry.md)
 #### [Field monitoring telemetry](administration/telemetry-field-monitoring-trace.md)
+#### [Financial report lifecycle telemetry](administration/telemetry-financial-report-lifecycle-trace.md)
+#### [Financial report usage telemetry](administration/telemetry-financial-report-usage-trace.md)
 #### [Job queue lifecycle telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
 #### [Long-running AL method telemetry](administration/telemetry-al-method-trace.md)
 #### [Long-running SQL queries telemetry](administration/telemetry-long-running-sql-query-trace.md)
@@ -282,6 +288,7 @@
 #### [Web service access key telemetry](administration/telemetry-webservices-access-key-trace.md)
 #### [Web service requests telemetry (incoming)](administration/telemetry-webservices-trace.md)
 #### [Web service requests telemetry (outgoing)](administration/telemetry-webservices-outgoing-trace.md)
+#### [Web service requests telemetry (outgoing): Server certificate validation errors](administration/telemetry-webservices-outgoing-certificate-validation-errors.md)
 #### [Web service publish failure telemetry](administration/telemetry-webservices-publish-failure-trace.md)
 ### [Telemetry by Event IDs](administration/telemetry-event-ids.md)
 <!-- end telemetry -->
@@ -535,10 +542,10 @@
 #### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
 #### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
-#### [Troubleshoot in VS Code directly from the web client](developer/devenv-troubleshoot-vscode-webclient.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 #### [Sign an app package file](developer/devenv-sign-extension.md)
 #### [Using Microsoft Entra authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
+#### [Troubleshoot in VS Code directly from the web client](developer/devenv-troubleshoot-vscode-webclient.md)
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
@@ -552,6 +559,7 @@
 #### [The performance toolkit extension](developer/devenv-performance-toolkit.md)
 #### [Use page scripting for acceptance testing (preview)](developer/devenv-page-scripting.md)
 #### [FAQ about testing your Business Central app](developer/app-faq-test.md)
+#### [Mock outbound HttpClient web service calls during testing](developer/devenv-httpclient-mock-outbound-calls.md)
 
 ### Work in sandboxes
 #### [Sandbox environments for development](developer/devenv-sandbox-overview.md)
@@ -746,6 +754,7 @@
 
 #### Reading data
 ##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
+##### [AL database methods and performance on SQL Server](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
 ##### [Record instance isolation level](developer/devenv-read-isolation.md)
 ##### [Using read scale-out for better performance](administration/database-read-scale-out-overview.md)
 ##### Partial records
@@ -1052,7 +1061,9 @@
 #### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
+#### [Mock outbound HttpClient web service calls during testing](developer/devenv-httpclient-mock-outbound-calls.md)
 #### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
+#### [HttpClientHandler](developer/attributes/devenv-httpclienthandler-attribute.md)
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
@@ -1168,6 +1179,10 @@
 ## Extensibility
 ### [Extensibility overview](developer/devenv-extensibility-overview.md)
 ### [Extension objects overview](developer/devenv-extension-object-overview.md)
+### Extensibility requests
+#### [Contribute a change yourself](developer/devenv-contribute-extensibility.md)
+#### [Create an extensibility request](developer/create-extensibility-request.md)
+#### [Types of events for extensibility](developer/types-of-events-for-extensibility.md)
 ### Extending AL objects
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
 #### [Extending enumerations](developer/devenv-extensible-enums.md)
@@ -1217,7 +1232,6 @@
 ### Embedding Power BI
 #### [Introduction to Business Central and Power BI](/dynamics365/business-central/admin-powerbi?toc=/dynamics365/business-central/dev-itpro/toc.json)  
 #### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
-
 <!-- end Testing the application -->
 
 <!-- Rules and Guidelines -->
@@ -1268,7 +1282,9 @@
 ### [Overview](developer/devenv-ext-dev-lifecycle-overview.md)
 ### [Extension types and scope](developer/devenv-extension-types-and-scope.md)
 ### [Moving between extension scopes](developer/devenv-extension-moving-scope.md)
-### [Moving tables and fields between extensions](developer/devenv-move-table-fields-between-extensions.md)
+### Moving tables and fields between extensions (on-premises)
+#### [Moving tables and fields between extensions](developer/devenv-move-table-fields-between-extensions.md)
+#### [Development process for moving tables and fields between extensions](developer/devenv-scenarios-moving-table-fields.md)
 ### Migration
 #### [Generating delta files](developer/devenv-generating-delta-files.md)
 #### Migrating tables and fields between extensions (on-premises)
@@ -1524,6 +1540,7 @@
 #### [Troubleshooting errors on OData/SOAP web services on pages, queries, and codeunits](webservices/web-service-troubleshooting-soap-odata-ui-pages.md)
 #### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
 #### [Creating and interacting with an OData V4 bound action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+#### [Disable SOAP web services on Microsoft UI pages feature key](developer/devenv-disable-soap-microsoft-pages-feature-key.md)
 
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
@@ -1561,6 +1578,7 @@
 ### [Overview](developer/ai-integration-landing-page.yml)
 ### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
+### [Influence Copilot and agents without extending them](developer/copilot-and-agents-influence-without-extending.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### [Token counting in AI](developer/ai-system-app-token-counting.md)
@@ -1576,6 +1594,12 @@
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
+#### Test Copilot capability in AL
+##### [Test Copilot capability in AL](developer/ai-test-copilot.md)
+##### [Datasets](developer/ai-test-copilot-datasets.md)
+##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
+##### [AI test tool](developer/ai-test-copilot-testtool.md)
+##### [Best practices](developer/ai-test-copilot-bestpractices.md)
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)
@@ -1764,6 +1788,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System requirements
+#### [2025 release wave 1](deployment/system-requirements-business-central-v26.md)
 #### [2024 release wave 2](deployment/system-requirements-business-central-v25.md)
 #### [2024 release wave 1](deployment/system-requirements-business-central-v24.md)
 #### [2023 release wave 2](deployment/system-requirements-business-central-v23.md)
@@ -1779,19 +1804,21 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2025 release wave 1 on-premises updates](deployment/update-versions-26.md)
+#### [2024 release wave 2 on-premises updates](deployment/update-versions-25.md)
 #### [2024 release wave 1 on-premises updates](deployment/update-versions-24.md)
-#### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
-#### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 ##### Versions no longer updated
-#### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
-##### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
-##### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
-##### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
-##### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
-##### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)
-##### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
-##### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
-##### [October 2018 on-premises updates](deployment/update-versions-13.md)
+###### [2023 release wave 2 on-premises updates](deployment/update-versions-23.md)
+###### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
+###### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
+###### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
+###### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
+###### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
+###### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
+###### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)
+###### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
+###### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
+###### [October 2018 on-premises updates](deployment/update-versions-13.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
 ### Deployment topologies
@@ -1888,6 +1915,25 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
+### Business Central 2025 release wave 1
+#### [Overview](upgrade/upgrade-overview-v26.md)
+#### [Before you upgrade](upgrade/upgrade-considerations-v26.md)
+#### [Compatibility matrix for upgrading](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrade permission sets](upgrade/upgrade-permissions.md)
+#### [Upgrade reports](upgrade/upgrade-reports-v24-later.md)
+#### Upgrade application and data
+##### [From v14 unmodified C/AL application to v25](upgrade/upgrade-unmodified-application-v14-v25.md)
+##### [From v14 customized C/AL application to v25](upgrade/upgrade-to-microsoft-base-app-v25.md)
+##### [From v15 and later to v26](upgrade/upgrade-unmodified-application-to-v26.md)
+#### Related articles
+##### [Convert to AL](upgrade/devenv-code-conversion.md)
+##### Migrating tables and fields between extensions
+###### [Overview](developer/devenv-migrate-table-fields.md)
+###### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+###### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### Data migration toolkit - India
+###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v26.md)
 ### Business Central 2024 release wave 2
 #### [Overview](upgrade/upgrade-overview-v25.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
@@ -1926,30 +1972,30 @@
 ##### Data migration toolkit - India
 ###### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v24.md)
-### Business Central 2023 release wave 2
-#### [Overview](upgrade/upgrade-overview-v23.md)
-#### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
-#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
-#### [Upgrading reports](upgrade/upgrade-reports.md)
-#### Application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v23.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v23.md)
-##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v23.md)
-##### Related articles
-###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating tables and fields between extensions
-####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-###### Data migration toolkit - India
-####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### Technical upgrade
-##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v23.md)
-##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v23.md)
-##### [From version 20, 21, or 22](upgrade/upgrade-technical-upgrade-v23.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v23.md)
 ### Earlier versions
+#### Business Central 2023 release wave 2
+##### [Overview](upgrade/upgrade-overview-v23.md)
+##### [Before you upgrade](upgrade/upgrade-considerations-v23.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+##### [Upgrading reports](upgrade/upgrade-reports.md)
+##### Application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v23.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v23.md)
+###### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v23.md)
+###### Related articles
+####### [Convert to AL](upgrade/devenv-code-conversion.md)
+####### Migrating tables and fields between extensions
+######## [Overview](developer/devenv-migrate-table-fields.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+####### Data migration toolkit - India
+######## [Overview](upgrade/india-data-migration-toolkit-overview.md)
+##### Technical upgrade
+###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v23.md)
+###### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v23.md)
+###### [From version 20, 21, or 22](upgrade/upgrade-technical-upgrade-v23.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v23.md)
 #### Business Central 2023 release wave 1
 ##### [Overview](upgrade/upgrade-overview-v22.md)
 ##### [Before you upgrade](upgrade/upgrade-considerations-v22.md)

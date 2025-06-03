@@ -4,7 +4,7 @@ description: A shipment method object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a shipment method in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -29,8 +27,6 @@ Represents a shipment method in [!INCLUDE[prod_short](../../../includes/prod_sho
 |[POST shipmentMethod](../api/dynamics_shipmentmethod_create.md)|shipmentMethod|Creates a shipment method object.|
 |[PATCH shipmentMethod](../api/dynamics_shipmentmethod_update.md)|shipmentMethod|Updates a shipment method object.|
 
-
-
 ## Properties
 
 | Property           | Type   |Description     |
@@ -42,7 +38,7 @@ Represents a shipment method in [!INCLUDE[prod_short](../../../includes/prod_sho
 
 ## JSON representation
 
-Here is a JSON representation of the shipmentMethod resource.
+Here's a JSON representation of the shipmentMethod resource.
 
 
 ```json
@@ -53,11 +49,9 @@ Here is a JSON representation of the shipmentMethod resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET shipmentMethod](../api/dynamics_shipmentMethod_Get.md)  
 [DELETE shipmentMethod](../api/dynamics_shipmentMethod_Delete.md)  
 [POST shipmentMethod](../api/dynamics_shipmentMethod_Create.md)  

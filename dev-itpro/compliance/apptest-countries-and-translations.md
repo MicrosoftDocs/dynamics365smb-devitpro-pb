@@ -4,7 +4,7 @@ description: Overview of availability and supported languages.
 author: sorenfriisalexandersen
 ms.date: 09/16/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: altotovi
 ms.custom: references_regions
 ---
@@ -14,6 +14,9 @@ ms.custom: references_regions
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.  
 
 In countries/regions where Microsoft hasn't delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
+
+> [!NOTE]
+> There are countries/regions with more than one partner providing the translation and localization apps. Additionally, in some cases, the localization provided by the partner can consist of more than one app on AppSource.
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability. The table also specifies the abbreviation of the relevant country-specific environment that you see in the admin center. Finally, the table and states whether the localization is provided by Microsoft or partner(s).
 

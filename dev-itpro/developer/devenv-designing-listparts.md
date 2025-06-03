@@ -2,7 +2,7 @@
 title: Designing ListParts
 description: Learn how to create and integrate ListPart pages in Business Central.
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: brobledodiaz
 author: blrobl
 ms.reviewer: solsen

@@ -2,7 +2,7 @@
 title: Data Security in Business Central
 description: Learn about the four different levels of data security in Business Central. Also learn how you control access to data. 
 ms.date: 02/07/2025
-ms.topic: conceptual
+ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 

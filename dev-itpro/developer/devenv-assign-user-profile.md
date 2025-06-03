@@ -4,7 +4,7 @@ description: Use the User Personalization page to assign a user to a profile, an
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 01/07/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: solsen
 ---
 

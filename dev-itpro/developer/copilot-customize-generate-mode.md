@@ -8,13 +8,13 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 11/14/2024
+ms.date: 04/01/2025
 ms.custom: bap-template
 ---
 
 # Customize generate mode caption of the prompt dialog page
 
-In this article, you learn how to change the caption shown in the UI when Copilot is retrieving generated results from the Azure Open AI service. The UI is defined by the generate mode of the prompt dialog page. Its purpose is to give users feedback about what's happening with Copilot. The caption functions as a kind of progress bar for the user. By default, the caption of PromptDialog page when it's in the generate mode is **Generating**, as illustrated in the following figure:
+In this article, you learn how to change the caption shown in the UI when Copilot is retrieving generated results from the Azure OpenAI service. The UI is defined by the generate mode of the prompt dialog page. Its purpose is to give users feedback about what's happening with Copilot. The caption functions as a kind of progress bar for the user. By default, the caption of PromptDialog page when it's in the generate mode is **Generating**, as illustrated in the following figure:
 
 [![Shows a screenshot of the default generate mode of the PromptDialog type page](media/promptdialog-generate-mode.svg)](media/promptdialog-generate-mode.svg#lightbox)
 

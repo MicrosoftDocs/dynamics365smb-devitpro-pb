@@ -17,6 +17,7 @@ Retrieve the properties and relationships of an income statement report object f
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+
 ```
 GET businesscentralPrefix/companies({id})/incomeStatements
 ```
@@ -28,7 +29,7 @@ GET businesscentralPrefix/companies({id})/incomeStatements
 |Authorization|Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and an **incomeStatement** object in the response body.
@@ -37,14 +38,14 @@ If successful, this method returns a ```200 OK``` response code and an **incomeS
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/incomeStatements?$orderby=lineNumber&$filter=dateFilter ge 2019-01-01 and dateFilter le 2020-12-31
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

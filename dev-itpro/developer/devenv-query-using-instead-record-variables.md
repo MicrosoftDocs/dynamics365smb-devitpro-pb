@@ -1,7 +1,7 @@
 ---
 title: "Using Queries Instead of Record Variables"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Using Queries Instead of Record Variables

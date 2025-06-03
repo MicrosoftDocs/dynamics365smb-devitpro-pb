@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.date: 08/24/2023
 ms.reviewer: bholtorf
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.custom: bap-template
 ---
 

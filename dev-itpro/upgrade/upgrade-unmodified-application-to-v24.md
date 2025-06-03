@@ -4,7 +4,7 @@ description: Describes how to upgrade an unmodified Business Central versions 14
 ms.custom: bap-template
 ms.date: 03/06/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ---

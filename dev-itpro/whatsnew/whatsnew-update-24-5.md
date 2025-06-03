@@ -4,11 +4,11 @@ description: Get an overview of new and changed capabilities in the 24.5 update 
 ms.author: jswymer
 ms.date: 09/04/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.custom: 
     - bap-template
-ms.custom: evergreen
+    - evergreen
 ---
 
 # Update 24.5 for Microsoft Dynamics 365 Business Central online 2024 release wave 1

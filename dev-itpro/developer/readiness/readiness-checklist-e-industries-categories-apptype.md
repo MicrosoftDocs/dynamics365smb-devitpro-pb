@@ -4,7 +4,7 @@ description: Guidelines on app type, contact type, and customer leads.
 author: a-emniel
 ms.date: 02/08/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # App type, contact type, and customer leads

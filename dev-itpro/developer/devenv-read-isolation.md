@@ -5,7 +5,7 @@ author: phduck
 ms.author: magram 
 ms.reviewer: jswymer
 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/08/2024
 ms.custom: bap-template
 ---

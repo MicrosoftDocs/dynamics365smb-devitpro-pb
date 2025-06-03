@@ -3,7 +3,7 @@ title: Deploying a tenant customization
 description: Overview of how you deploy an .app package with a tenant customization to Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 01/08/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

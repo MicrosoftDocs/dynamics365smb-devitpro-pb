@@ -2,7 +2,7 @@
 title: Get Users Started with the Checklist
 description: Learn how to customize the checklist that users can launch from the Welcome banner.
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: checklist
 author: sorenfriisalexandersen
 ms.author: soalex
 ms.reviewer: solsen

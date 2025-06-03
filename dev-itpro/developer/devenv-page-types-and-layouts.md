@@ -6,7 +6,7 @@ ms.custom: bap-template
 ms.date: 10/01/2024
 ms.reviewer: jswymer
 ms.author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Page types and layouts
@@ -37,6 +37,7 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`ListPart`|A page that is embedded in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below the repeater.|
 |`HeadlinePart`|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|Single entity|Single group of fields representing headlines.|
 |`PromptDialog`|A page that enables creating generative AI experiences with the copilot look and feel|Single or collection. Learn more in [PromptDialog page type](devenv-page-type-promptdialog.md).||
+|`UserControlHost`|The `UserControlHost` is used to render a single user control in the client. The layout is optimized by the client to maximize the available space for the user control. Learn more in [UserControlHost page type](devenv-page-type-usercontrolhost.md).|Single entity||
 
 ### The two principal categories of page types
 

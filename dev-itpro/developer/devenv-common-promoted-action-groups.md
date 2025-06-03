@@ -3,7 +3,7 @@ title: Common Promoted Action Groups
 description: Learn about the common promoted action groups in Business Central, their characteristics, and how to use them.
 author: jacobwj
 ms.author: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 11/03/2022
 ms.reviewer: solsen
 ---

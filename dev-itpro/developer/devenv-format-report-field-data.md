@@ -3,7 +3,7 @@ title: "Formatting field values in report datasets"
 description: "Learn how to format data in report datasets."
 author: KennieNP
 ms.date: 12/01/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: kepontop
 ms.reviewer: jswymer
 ---

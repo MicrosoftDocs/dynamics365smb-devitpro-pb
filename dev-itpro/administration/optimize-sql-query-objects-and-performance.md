@@ -2,7 +2,7 @@
 title: Query Objects and Performance
 description: Learn how to design queries and table keys in the most efficient way in Business Central.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.reviewer: solsen
 ---

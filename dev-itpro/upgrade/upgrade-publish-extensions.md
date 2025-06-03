@@ -2,7 +2,7 @@
 title: Publishing, Upgrading, and Installing Extensions During Upgrade
 description: This article describes the tasks required for publishing, upgrading, and installing extensions during upgrade to Dynamics 365 Business Central.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer

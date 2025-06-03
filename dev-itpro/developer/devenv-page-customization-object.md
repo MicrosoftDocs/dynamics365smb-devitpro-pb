@@ -3,7 +3,7 @@ title: Page customization object
 description: The page customization object in Business Central allows you to add changes to the layout and actions on page that are accessible for a profile.
 author: SusanneWindfeldPedersen
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

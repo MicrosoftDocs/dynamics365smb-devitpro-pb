@@ -32,7 +32,7 @@ An instance of the [Page](page-data-type.md) data type.
 
 If, at design time, you don't know the specific page you want to run, then use this method or the [Page.RunModal method](page-runmodal--method.md) and specify the page in the *Number* parameter.  
 
-If you do know, which page you want to run, then you can create a Page variable, set the subtype of the variable to a specific page, and then use the [RunmMethod \(Page\)](page-run--method.md) or [RunModal method \(Page\)](page-runmodal--method.md) on the Page variable.  
+If you do know, which page you want to run, then you can create a Page variable, set the subtype of the variable to a specific page, and then use the [RunMethod \(Page\)](page-run--method.md) or [RunModal method \(Page\)](page-runmodal--method.md) on the Page variable.  
 
 When you want to close the page, use `CurrPage.Close`. CurrPage is a predefined system variable. For more information, see [System-defined variables](../../devenv-system-defined-variables.md).  
 

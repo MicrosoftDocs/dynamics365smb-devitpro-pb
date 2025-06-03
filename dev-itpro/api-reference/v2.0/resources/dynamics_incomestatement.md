@@ -4,7 +4,7 @@ description: An income statement object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an income statement in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -25,8 +23,6 @@ Represents an income statement in [!INCLUDE[prod_short](../../../includes/prod_s
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET incomeStatement](../api/dynamics_incomestatement_get.md)|incomeStatement|Gets a income statement object.|
-
-
 
 ## Properties
 
@@ -42,7 +38,7 @@ Represents an income statement in [!INCLUDE[prod_short](../../../includes/prod_s
 
 ## JSON representation
 
-Here is a JSON representation of the incomeStatement resource.
+Here's a JSON representation of the incomeStatement resource.
 
 
 ```json
@@ -56,9 +52,7 @@ Here is a JSON representation of the incomeStatement resource.
     "dateFilter": "date"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET incomeStatement](../api/dynamics_incomeStatement_Get.md)

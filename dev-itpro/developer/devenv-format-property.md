@@ -1,8 +1,8 @@
 ---
 title: Formatting values, dates, and time
 description: Learn how to format values, dates, and time in Business Central.
-ms.date: 01/16/2025
-ms.topic: conceptual
+ms.date: 03/18/2025
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ms.author: solsen
@@ -10,12 +10,12 @@ ms.author: solsen
 
 # Formatting values, dates, and time
 
-With the `Format` method in [!INCLUDE [prod_short](includes/prod_short.md)], you can set the format of the source expression for various data types in AL.  
+The `Format` method in [!INCLUDE [prod_short](includes/prod_short.md)] sets the format of the source expression for various data types in AL.
   
 ## Remarks  
 
-You can choose to set `Format` to a predefined format, or you can build your own format. Learn more in [Format method (Integer, Text)](methods-auto/system/system-format-joker-integer-string-method.md) and [Format method (Any [, Integer] [, Integer])](methods-auto/system/system-format-joker-integer-integer-method.md). 
-  
+Set `Format` to a predefined format, or build your own format. Learn more in [Format method (Integer, Text)](methods-auto/system/system-format-joker-integer-string-method.md) and [Format method (Any [, Integer] [, Integer])](methods-auto/system/system-format-joker-integer-integer-method.md).
+
 ## Basic settings  
 
 To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* is one of the entries in the **Value** column of the following table.  
@@ -27,11 +27,11 @@ To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* 
 |2|AL Code Constant Format|  
   
 > [!NOTE]  
-> You must enter the `<` and `>` angle brackets, such as `<Standard Format,2>`.  
-  
+> You must enter the `<` and `>` angle brackets, such as `<Standard Format,2>`. 
+
 ## Building formats  
 
-You can use `Format` to create your own formats. To create a format, use the following rules:  
+Use `Format` to create your own formats. Follow these rules to create a format:
   
 - A format property consists of zero or more chars, fields, or attributes.  
 - Fields and attributes are expressed by using an identifier enclosed in brackets `<>`.  
@@ -78,7 +78,7 @@ The FieldName is a component that you can use to build a format expression. Depe
   
 #### Example  
 
-The following examples demonstrate how to use `Format`:  
+These examples demonstrate how to use `Format`:
   
 - Choosing a standard format.  
   

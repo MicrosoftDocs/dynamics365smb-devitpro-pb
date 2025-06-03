@@ -4,9 +4,9 @@ description: Read about the PowerShell cmdlets managing Business Central Server 
 author: jswymer
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
-ms.date: 04/16/2024
+ms.date: 04/15/2025
 ms.service: dynamics-365-op
 ---
 
@@ -34,15 +34,15 @@ To run the shell, you have to be a member of the local administrator group on th
 
 ## Get help on the cmdlets
 
-To see the cmdlets that are available, type the following command at the prompt:  
+To view the available cmdlets, enter the following command at the prompt:
 
 ```powershell  
 Get-Command *NAV*  
-```  
+```
 
-To get help about syntax and options for a specific cmdlet, type the following command:  
+To get help with syntax, options, and examples for a specific cmdlet in Business Central version 23 or earlier, enter the following command:
 
-```  
+```PowerShell  
 Get-Help <cmd name> -full
 ```  
 
@@ -52,7 +52,9 @@ For example, to get Help about the **Get-NAVServerInstance** cmdlet, type the fo
 Get-Help Get-NAVServerInstance -full
 ```  
 
-To go the online version of the help on Microsoft Docs, type the following command:  
+Help with syntax, options, and examples isn't available starting with version 24. Use the online version of the help on Microsoft Learn.  
+
+To open the online help, enter the following command:  
 
 ```powershell
 Get-Help <cmd name> -online  

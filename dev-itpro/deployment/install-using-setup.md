@@ -2,7 +2,7 @@
 title: Install Business Central Using Setup
 description: Learn about installing Business Central using the installation wizard.
 ms.date: 03/04/2024
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
 ms.custom: bap-template
@@ -36,10 +36,9 @@ There are some components that require other software to run. For example, the d
 
 1. Go to the update page for the release that you want to install:
 
-   - [Business Central 2024 Release Wave 1 (v24)](https://www.microsoft.com/en-us/download/details.aspx?id=106000))
-   - [Business Central 2023 Release Wave 2 (v23)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-2-7a4f98e8-66b9-4484-9bc1-66c466d8a82d)
-   - [Business Central 2023 Release Wave 1 (v22)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2023-release-wave-1-37e2d08e-6f61-4522-90ba-1cea59d8de51)
-   - [Business Central 2022 Release Wave 2 (v21)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-2-8efa5bbb-3cd5-4445-ba3a-0752694bf46f)
+   - [Business Central 2025 Release Wave 1 (v26)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2025-release-wave-1-8cb260a4-6a57-4325-a4d7-7aa84c3234e6)
+   - [Business Central 2024 Release Wave 2 (v25)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-2-a8fc49a4-610e-4123-8bcd-a0aa5f3c9776)
+   - [Business Central 2024 Release Wave 1 (v24)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65)
 
 2. In the **Cumulative Updates** table, select the link in the **Knowledge Base ID** column for the update you want.
 3. In the **Resolution** section, select the link under  **How to obtain the Microsoft Dynamics 365 Business Central \<release\> files**.

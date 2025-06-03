@@ -2,7 +2,7 @@
 title: Performance in Business Central online
 description: Learn about how you can improve performance for environments in Business Central online. 
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: reference
 author: KennieNP
 ms.date: 04/25/2024
 ---

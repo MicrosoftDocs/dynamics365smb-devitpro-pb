@@ -2,7 +2,7 @@
 title: Business Central Admin Center API - Session Management
 description: Learn about the Business Central administration center API.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry

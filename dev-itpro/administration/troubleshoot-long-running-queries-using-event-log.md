@@ -2,7 +2,7 @@
 title: "Using Event Log to Monitor Long Running SQL Queries"
 description: Shows how to monitor long running SQL queries in Event Viewer. Use the information determine SQL queries that are good candidates for optimization.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 author: jswymer
 ---

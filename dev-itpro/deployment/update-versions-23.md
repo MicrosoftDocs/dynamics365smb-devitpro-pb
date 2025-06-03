@@ -5,12 +5,16 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
-ms.date: 03/05/2025
-ms.custom: bap-template
+ms.topic: article
+ms.date: 04/25/2025
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Dynamics 365 Business Central on-premises 2023 release wave 2 updates
+
+[!INCLUDE [release-wave-no-longer-updated](../includes/release-wave-no-longer-updated.md)]
 
 This article lists updates released for the Microsoft Dynamics 365 Business Central 2023 release wave 2 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2023 release wave 2 on-premises, we recommend you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](../administration/tenant-admin-center.md) to see if the tenants have been updated.  
 
@@ -28,6 +32,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
+|[5056716](https://support.microsoft.com/help/5056716)|Update 23.18 |April 2025|Application Build 23.18.32409</br>Platform Build 23.0.32309|
 |[5054446](https://support.microsoft.com/help/5054446)|Update 23.17 |March 2025|Application Build 23.17.30827</br>Platform Build 23.0.30792|
 |[5052985](https://support.microsoft.com/help/5052985)|Update 23.16 |February 2025|Application Build 23.16.29653</br>Platform Build 23.0.29620|
 |[5050247](https://support.microsoft.com/help/5050247)|Update 23.15 |January 2025|Application Build 23.15.29402</br>Platform Build 23.0.29370|

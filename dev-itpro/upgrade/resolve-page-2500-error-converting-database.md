@@ -4,7 +4,7 @@ description: Explains how to resolve the compilation errors that you get for Pag
 ms.custom: evergreen
 ms.date: 04/18/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Resolving Page 2500 Compilation Error

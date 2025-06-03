@@ -2,7 +2,7 @@
 title: Tools for Monitoring Performance Counters and Events
 description: Learn about the tools that you can use to monitor Business Central Server performance counters and events.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ---
 

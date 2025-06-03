@@ -1,0 +1,1 @@
+Specifies the HTTP method used in the outgoing request. Values include: POST, GET, PUT, PATCH, or DELETE.

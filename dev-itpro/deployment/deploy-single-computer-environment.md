@@ -1,7 +1,7 @@
 ---
 title: "Installing Business Central in a Single Computer Environment"
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 description: Learn how to deploy Microsoft's Business Central on a single computer. Includes pre-installation tasks, installation, and post-installation configuration.
 ---

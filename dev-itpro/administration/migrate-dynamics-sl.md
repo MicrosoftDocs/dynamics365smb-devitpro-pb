@@ -1,8 +1,8 @@
 ---
 title: Dynamics SL data migrated to Business Central online
-description: Learn how to migrate to the cloud from Dynamics SL using an assisted setup guide in Business Central online. Move historical data to Azure Data Lake.
+description: Learn how to migrate to the cloud from Dynamics SL using an assisted setup guide in Business Central online.
 author: lcontreras
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.devlang: al
 ms.reviewer: 
 ms.search.keywords: cloud, edge, SL, migration

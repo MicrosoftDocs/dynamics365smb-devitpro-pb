@@ -3,7 +3,7 @@ title: "Report Extension Example"
 description: "Reports are used to print or display information from a database."
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
-ms.topic: article
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

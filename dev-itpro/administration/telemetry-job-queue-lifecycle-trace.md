@@ -2,7 +2,7 @@
 title: Analyzing Job Queue Lifecycle Trace Telemetry
 description: Learn about the telemetry for job queue entries in Business Central  
 author: kennienp
-ms.topic: conceptual
+ms.topic: how-to
 
 ms.reviewer: jswymer
 ms.custom: bap-template

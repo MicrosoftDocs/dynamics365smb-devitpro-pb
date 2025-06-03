@@ -4,7 +4,7 @@ description: Get an overview of new and changed capabilities in the 20.4 update 
 ms.author: solsen
 ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: jswymer
 ms.custom: evergreen
 ---

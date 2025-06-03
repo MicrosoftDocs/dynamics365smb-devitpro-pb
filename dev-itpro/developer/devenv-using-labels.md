@@ -3,7 +3,7 @@ title: Working with labels
 description: Learn how to work with translatable string constants displayed in the Business Central client.
 ms.reviewer: solsen
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: brobledodiaz
 author: blrobl
 ms.collection: get-started

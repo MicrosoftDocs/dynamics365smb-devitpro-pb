@@ -5,7 +5,7 @@ author: EmilDamsbo
 ms.author: solsen
 ms.date: 10/23/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Rich Text and content controls

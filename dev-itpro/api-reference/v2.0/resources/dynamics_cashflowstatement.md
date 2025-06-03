@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a cash flow statement in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -25,8 +23,6 @@ Represents a cash flow statement in [!INCLUDE[prod_short](../../../includes/prod
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET cashFlowStatement](../api/dynamics_cashflowstatement_get.md)|cashFlowStatement|Gets a cash flow statement object.|
-
-
 
 ## Properties
 
@@ -42,8 +38,7 @@ Represents a cash flow statement in [!INCLUDE[prod_short](../../../includes/prod
 
 ## JSON representation
 
-Here is a JSON representation of the cashFlowStatement resource.
-
+Here's a JSON representation of the cashFlowStatement resource.
 
 ```json
 {
@@ -56,9 +51,7 @@ Here is a JSON representation of the cashFlowStatement resource.
     "dateFilter": "date"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET cashFlowStatement](../api/dynamics_cashFlowStatement_Get.md)

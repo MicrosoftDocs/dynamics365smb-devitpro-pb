@@ -3,7 +3,7 @@ title: Creating custom telemetry events for Azure Application Insights
 description: This article describes how to add code to application objects that enables you to log  telemetry.
 ms.date: 02/09/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 

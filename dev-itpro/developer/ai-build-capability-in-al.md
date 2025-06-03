@@ -3,12 +3,12 @@ title: Build the Copilot capability in AL
 description: Integrate with Azure OpenAI Service through the AI module of Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: conceptual
-ms.date: 11/14/2024
+ms.topic: how-to
+ms.date: 04/01/2025
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ---
 
 # Build the Copilot capability in AL
@@ -30,7 +30,7 @@ The AI module can be used in any AL extension and provides the following capabil
 - Usage insights about your AI capability through telemetry.
 
 > [!NOTE]  
-> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as Copilot chat in [!INCLUDE [prod_short](includes/prod_short.md)]. The upcoming preview of Chat with Copilot won't be extensible and the AI module can't be used to influence chat. Learn more in [Chat with Copilot](/dynamics365/release-plan/2023wave2/smb/dynamics365-business-central/chat-copilot).
+> Chat completion is a feature of LLMs that generates responses in a sequenced thread, and is an alternative to text completion prompt engineering. It's not the same as chat with Copilot feature (preview) in [!INCLUDE [prod_short](includes/prod_short.md)]. In preview, chat with Copilot isn't extensible and the AI module can't be used to influence chat. Learn about how to influence Copilot output as a developer in [Influencing Copilot and agents without extending them](copilot-and-agents-influence-without-extending.md).
 
 > [!TIP]  
 > To see the AI module in action, try the example extension available at [BCTech on GitHub](https://aka.ms/BCStartCodingWithAI).

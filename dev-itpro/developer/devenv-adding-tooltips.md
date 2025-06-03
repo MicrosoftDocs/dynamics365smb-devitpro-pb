@@ -4,7 +4,7 @@ description: Description of how you use AL to add tooltips to table and page fie
 author: kennieNP
 ms.reviewer: jswymer
 ms.date: 03/13/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kepontop
 ms.collection: get-started
 ---
