@@ -38,14 +38,14 @@ This allows customers to:
 [!INCLUDE [prod_short](includes/prod_short.md)] AI resources are billed in alignment with Copilot Studio message billing, and follow the AI Tools rates, that depends on the underlying language model of the Copilot feature prompts.
 
 |Business Central AI resources model|AI Tools rate|
-|--------------------------------------|-------------|
+|-----------------------------------|-------------|
 |4o|Standard|
 |4o mini|Basic|
 
-You can read more about the rates under AI Tools in [Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management#message-scenarios)
+Learn more about the rates under AI Tools in [Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management#message-scenarios)
  
 > [!NOTE]  
-> It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP). <!-- link to more info? -->
+> It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP). 
 
 ## Use your own subscription with customers
 
@@ -68,7 +68,7 @@ By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for
 
 ## Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources and your own subscription in AL
 
-The default and recommended approach is to use the developer toolkit AI resources when extending Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. All you need to do is to authenticate with the `SetManagedResourceAuthorization` method in the [AI Module AzureOpenAI](/dynamics365/business-central/application/system-application/codeunit/system.ai.azure-openai) codeunit. As part of this, you also need to provide your own AzureOpenAI subscription details, but this won't be used.
+The default and recommended approach is to use the developer toolkit AI resources when extending Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. All you need to do is to authenticate with the `SetManagedResourceAuthorization` method in the [AI Module AzureOpenAI](/dynamics365/business-central/application/system-application/codeunit/system.ai.azure-openai) codeunit. As part of this, you also need to provide your own AzureOpenAI subscription details, but this isn't used.
 
 ```al
 // Example of using the default toolkit AI resources in AL 
