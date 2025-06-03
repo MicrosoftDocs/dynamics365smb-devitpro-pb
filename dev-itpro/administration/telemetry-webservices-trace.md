@@ -51,7 +51,7 @@ For a full Kusto Query Language (KQL) example of all dimensions in web services 
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|diagnosticsMessage | Logged if there was an error in a OData/API call. <br /><br/>This dimension was introduced in Business Central 2023 release wave 1, version 22.0.|
+|diagnosticsMessage | Logged if there was an error in an OData/API call. <br /><br/>This dimension was introduced in Business Central 2023 release wave 1, version 22.0.|
 |endpoint|Specifies the endpoint for the request.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)| 
@@ -60,7 +60,7 @@ For a full Kusto Query Language (KQL) example of all dimensions in web services 
 |extensionName|Specifies the name of the app/extension that the object belongs to.|
 |extensionVersion|Specifies the version of the app/extension that the object belongs to.|
 |extensionPublisher|Specifies the publisher of the app/extension that the object belongs to.|
-|failureReason | Logged if there was an error in a OData/API request. Contains the exception as seen from the server. <br /><br/>This dimension was introduced in Business Central 2023 release wave 1, version 22.0.|
+|failureReason | Logged if there was an error in an OData/API request. Contains the exception as seen from the server. <br /><br/>This dimension was introduced in Business Central 2023 release wave 1, version 22.0.|
 |httpHeaders|Introduced in version 16.3. Specifies the http headers set in the request. Not logged for SOAP requests. In version 17.3, a truncated version of the Authorization header was introduced to enable querying for the use of basic or token authorization. For more information, see [HTTP headers](#http-headers). |
 |httpMethod|Introduced in version 16.3. Specifies the HTTP method used in the request. Values include: POST, GET, PUT, PATCH, or DELETE. Not logged for SOAP requests. |
 |httpStatusCode |Introduced in version 16.3. Specifies the http status code returned when a request completes. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. Not logged for SOAP requests. For more information, see [HTTP status codes](#http-status-codes)|
@@ -380,3 +380,5 @@ traces
 [Troubleshoot web service errors](../webservices/web-service-troubleshooting.md)  
 [Web services overview](../webservices/web-services.md)  
 [Telemetry overview](telemetry-overview.md)   
+
+
