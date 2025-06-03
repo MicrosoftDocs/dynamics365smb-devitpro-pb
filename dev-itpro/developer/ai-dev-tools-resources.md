@@ -75,7 +75,7 @@ The default and recommended approach is to use the developer toolkit AI resource
 AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions",AzureOpenAIAccountName,AzureOpenAIApiKey,AOAIDeployments.GetGPT4oLatest());
 ```
 
-If you instead want to use your own subscription, whether for customer, or just when you developer or test, you must authenticate with your own subscription using the `SetAuthorization` method.
+If you instead want to use your own subscription, whether for customer, or just when you develop or test, you must authenticate with your own subscription using the `SetAuthorization` method.
 
 ```al
 // Example of using your own Azure OpenAI subscription in AL 
