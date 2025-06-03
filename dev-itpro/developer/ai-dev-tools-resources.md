@@ -4,8 +4,8 @@ description: Learn how you can use the developer tools for Copilot in Business C
 author: pborring
 ms.author: solsen
 ms.reviewer: solsen
-ms.topic: conceptual
-ms.date: 03/27/2025
+ms.topic: concept-article
+ms.date: 06/03/2025
 ---
 
 # Business Central AI resources
@@ -14,7 +14,7 @@ A key feature of the [!INCLUDE [prod_short](includes/prod_short.md)] developer t
 
 Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources is the default and recommended approach.
 
-Some partners or customers might have special requirements that require them to use their own Azure OpenAI (AOAI) subscription, when running the feature in production, which is also supported in [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
+In certain cases, partners or customers might need to use their own Azure OpenAI (AOAI) subscription for production environments. [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot fully support this option when specific requirements make it necessary.
  
 ## Benefits of relying on the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources
 
@@ -35,7 +35,7 @@ This allows customers to:
 - Track AI consumption at a granular level, per Copilot feature.
 - Receive a consolidated invoice for AI consumption.
 
-[!INCLUDE [prod_short](includes/prod_short.md)] AI resources are billed in alignment with Copilot Studio message billing, and follows the AI Tools rates, that depends on the underlying language model of the Copilot feature prompts.
+[!INCLUDE [prod_short](includes/prod_short.md)] AI resources are billed in alignment with Copilot Studio message billing, and follow the AI Tools rates, that depends on the underlying language model of the Copilot feature prompts.
 
 |Business Central AI resources model|AI Tools rate|
 |--------------------------------------|-------------|
@@ -53,7 +53,9 @@ For most ISVs, the default [!INCLUDE [prod_short](includes/prod_short.md)] AI re
 
 ## Differences between [!INCLUDE [prod_short](includes/prod_short.md)] AI resources and custom Azure OpenAI subscriptions
 
-By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot, partners can easily get access to AI resources when they extend Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. While these AI resources are the same as what's being used for base application Copilot features, and are the default and recommended approach, partners might have special requirements that require them to use their own or customer-owned Azure OpenAI (AOAI) subscription when running the feature in production. The following section provides an overview of the major differences between using the AI resources in the toolkit and using your own Azure OpenAI subscription and model deployment.
+By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot, partners can easily get access to AI resources when they extend Copilot in [!INCLUDE [prod_short](includes/prod_short.md)].
+
+[!INCLUDE [prod_short](includes/prod_short.md)] AI resources are identical to those used in base application Copilot features and are the recommended default option. Partners, however, might sometimes need to use their own or customer-owned Azure OpenAI subscription in production environments when they have specific requirements. The following section provides an overview of the major differences between using the AI resources in the toolkit and using your own Azure OpenAI subscription and model deployment.
 <br><br>
 
 |Area|Business Central AI resources|Your own AOAI subscription|
