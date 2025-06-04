@@ -1,6 +1,6 @@
 ---
 title: Use developer tools for Copilot in Business Central AI resources 
-description: Learn how you can use the developer tools for Copilot in Business Central AI resources in your extensions to create Copilot experiences in Business Central
+description: Learn how you can use the developer tools for Copilot in Business Central AI resources in your own AppSource extensions to create Copilot experiences in Business Central
 author: pborring
 ms.author: solsen
 ms.reviewer: solsen
@@ -10,11 +10,11 @@ ms.date: 03/27/2025
 
 # Business Central AI resources
 
-A key feature of the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot is that [!INCLUDE [prod_short](includes/prod_short.md)] partners can use Large Language Models (LLMs) via Microsoft-managed Azure OpenAI resources. This approach eliminates the need to independently procure and manage Azure OpenAI subscriptions for customers.
+A key feature of the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot is that [!INCLUDE [prod_short](includes/prod_short.md)] partners can use Large Language Models (LLMs) via Microsoft-managed Azure OpenAI resources for their AppSource extensions that extend Copilot in Business Central. This approach eliminates the need to independently procure and manage Azure OpenAI subscriptions for customers.
 
 Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources is the default and recommended approach.
 
-Some partners or customers might have special requirements that require them to use their own Azure OpenAI (AOAI) subscription, when running the feature in production, which is also supported in [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
+Some partners or customers might have special requirements that require them to use their own Azure OpenAI (AOAI) subscription, when running the feature in production, or when developing and testing in sandboxes, which is also supported in [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
  
 ## Benefits of relying on the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources
 
