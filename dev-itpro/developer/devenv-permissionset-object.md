@@ -3,7 +3,7 @@ title: Permission set object
 description: Describes the permission set object, which sets permissions on objects in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
-ms.date: 08/02/2025
+ms.date: 06/02/2025
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen

@@ -19,8 +19,8 @@ This section provides comprehensive reference documentation for the AL programmi
 
 | Reference Area | Description | Common Uses |
 |---------------|-------------|------------|
-| [Diagnostics](diagnostics/diagnostics.md) | Error codes and troubleshooting | Resolve compiler errors |
-| [AVS diagnostics](diagnostics/avs-diagnostics.md) | AppSource validation errors | Prepare apps for AppSource |
+| [Diagnostics](diagnostics/diagnostics-overview.md) | Error codes and troubleshooting | Resolve compiler errors |
+| [AVS diagnostics](avs-diagnostics/avs-diagnostics-overview.md) | AppSource validation errors | Prepare apps for AppSource |
 | [Data types and methods](methods-auto/library.md) | AL data types and their available methods | Manipulate data in your code |
 | [Method attributes](attributes/devenv-method-attributes.md) | Decorators that affect method behavior | Control method visibility and behavior |
 | [Properties](properties/devenv-properties.md) | Settings for objects and elements | Configure AL objects |
@@ -34,11 +34,11 @@ This section provides comprehensive reference documentation for the AL programmi
 
 ## Popular reference sections
 
-- [Table properties](properties/properties_tables.md) - Essential properties for defining data tables
-- [Page properties](properties/properties_pages.md) - Configure how data is displayed to users
+- [Table properties](properties/devenv-table-property-overview.md) - Essential properties for defining data tables
+- [Page properties](properties/devenv-page-property-overview.md) - Configure how data is displayed to users
 - [Record methods](methods-auto/record/record-data-type.md) - Working with data in tables
-- [Report properties](properties/properties_reports.md) - Creating and configuring reports
-- [Error handling diagnostics](diagnostics/diagnostics.md) - Solving common AL errors
+- [Report properties](properties/devenv-report-properties-overview.md) - Creating and configuring reports
+- [Error handling diagnostics](diagnostics/diagnostics-overview.md) - Solving common AL errors
 
 ## Related information
 
