@@ -2,7 +2,7 @@
 title: Best practices for AL code
 description: Best practices for writing AL code for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 11/07/2024
+ms.date: 05/16/2025
 ms.topic: best-practice
 ms.author: solsen
 ms.reviewer: solsen
@@ -106,7 +106,7 @@ codeunit 70000000 MyPrefixSalesperson
 
 ## Copilot and action names
 
-Trailing whitespaces are allowed in action names, meaning that you won't get a compiler error. For example these names are accepted:
+Trailing whitespaces are allowed in action names, meaning that you don't get a compiler error. For example these names are accepted:
 
 ```al
 group("CopilotActionGroup  ")
@@ -118,7 +118,7 @@ group("CopilotActionGroup  ")
 }
 ```
 
-However, these trailing whitespaces are trimmed internally and won't be recognized by Copilot. To ensure that Copilot works correctly with your feature, you must *avoid trailing spaces* in action names. Instead, write the code like this:
+However, these trailing whitespaces are trimmed internally and aren't recognized by Copilot. To ensure that Copilot works correctly with your feature, you must *avoid trailing spaces* in action names. Instead, write the code like this:
 
 ```al
 group("CopilotActionGroup")
@@ -242,7 +242,7 @@ To declare a method, follow these guidelines:
 
 - Include a space after a semicolon when declaring multiple arguments. 
 - Semicolons can be used at the end of the signature/method header. If you use a snippet, the semicolons aren't automatically added.
-- Methods should be named using PascalCase, like variables. However, this is not a mandatory rule.
+- Methods should be named using PascalCase, like variables. However, this isn't a mandatory rule.
 - There must be a blank line between method declarations. If you format your code using the [AL Formatter](../developer/devenv-al-formatter.md) tool, the autoformatter sets the blank line between procedures. 
 
 ### Example
@@ -262,7 +262,7 @@ end;
 
 ## Calling methods
 
-When calling a method, include one space after each command if you're passing multiple parameters. Parentheses must be specified when you're making a method call or system call such as: `Init()`, `Modify()`, `Insert()` etc. 
+When calling a method, include one space after each command if you're passing multiple parameters. Parentheses must be specified when you're making a method call or system call such as: `Init()`, `Modify()`, `Insert()`, etc. 
 
 ### Example
 

@@ -11,7 +11,7 @@ ms.collection: get-started
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
-RESTful web services are typically created to interchange data between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and external systems. The acronym REST stands for REpresentational State Transfer. Any coding language capable of calling REST APIs can be used to use this feature. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API stack has been optimized for performance and is the preferred way to integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+RESTful web services are typically created to interchange data between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and external systems. The acronym REST stands for Representational State Transfer. Any coding language capable of calling REST APIs can be used to use this feature. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API stack is optimized for performance and is the preferred way to integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with an extensive list of built-in APIs that requires no code and minimal setup to use. You can also develop your own custom APIs using the AL object types *API pages* and *API queries*. This article helps you get started developing your own APIs.
 
@@ -26,7 +26,7 @@ When creating an API, you need to consider how the API is intended to be used:
 
 The two approaches come with different characteristics as described in this table:
 
-|Method to expose data as an API | Properties |
+| Method to expose data as an API | Properties |
 |---------------------------|------------|
 | API Page   | Support read-write operations <br> Webhook-supported <br> Can't be extended <br> Expose data from one table |
 | API Query  | Read-only operations <br> Can't be extended <br> Can expose data from multiple tables |

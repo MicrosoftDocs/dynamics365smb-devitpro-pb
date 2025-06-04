@@ -2,8 +2,8 @@
 title: Create runtime packages for Business Central on-premises
 description: Describes how you can create runtime packages used for distribution of extensions for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 01/08/2024
-ms.topic: article
+ms.date: 05/21/2025
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -38,12 +38,12 @@ The recommended way to upgrade a runtime package is to build a new version of th
 
 ### Recompile the existing package
 
-Another way to upgrade the package is to use the [Repair-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) to recompile the published package against the new platform and [!INCLUDE[prod_short](../includes/prod_short.md)] server instance. Once complied, you can reinstall the package on the tenant. Using the Repair-NAVApp cmdlet doesn't guarantee the extension works properly. It's not recommended when upgrading to a new version. 
+Another way to upgrade the package is to use the [Repair-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) to recompile the published package against the new platform and [!INCLUDE[prod_short](../includes/prod_short.md)] server instance. Once compiled, you can reinstall the package on the tenant. Using the `Repair-NAVApp` cmdlet doesn't guarantee that the extension works properly. It's not recommended when upgrading to a new version. 
 
-The Repair-NAVApp cmdlet requires that the runtime package includes the source code. You can include the source code in two different ways:
+The `Repair-NAVApp` cmdlet requires that the runtime package includes the source code. You can include the source code in two different ways:
 
 - In the extension's app.json file, set `"allowDownloadingSource"` or `showMyCode` to `true`. 
-- When you run the Get-NavAppRuntimePackage cmdlet, use either the `-IncludeSourceInPackageFile $true` or `-ShowMyCode $true` parameter.
+- When you run the `Get-NavAppRuntimePackage` cmdlet, use either the `-IncludeSourceInPackageFile $true` or `-ShowMyCode $true` parameter.
 
 ## Limitations
 

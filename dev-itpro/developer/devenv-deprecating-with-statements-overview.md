@@ -1,10 +1,11 @@
 ---
 title: Deprecating explicit and implicit with statements
 description: Rationale and description of why explicit and implicit with statements are deprecated in AL.
-ms.date: 04/17/2024
+ms.date: 05/21/2025
 ms.reviewer: solsen
 ms.topic: overview
 author: esbenk
+ms.custom: evergreen
 ---
 
 # Deprecating explicit and implicit `with` statements
@@ -14,11 +15,11 @@ author: esbenk
 > [!NOTE]  
 > With [!INCLUDE[prod_short](../includes/prod_short.md)] 2022 release wave 2, the **AL:Go!** template for creating new AL projects in Visual Studio Code, now enables explicit `with` statements by default, by adding the `NoImplicitWith` option to the `features` property in the generated app.json file.
 
-The extensibility model and the AL programming language are successors to the C/AL language. And the `with` statement has up until now been supported in AL. While using the `with` statement might make code harder to read, it can also prevent code in [!INCLUDE[prod_short](includes/prod_short.md)] online from being upgraded without changes to the code or even worse - upgraded, but with changed behavior. We distinguish between two types of with statements; the explicit type of `with` using the keyword, and the implicit with which isn't expressed directly in code. The next sections describe the explicit and implicit types one by one.
+The extensibility model and the AL programming language are successors to the C/AL language. And the `with` statement has up until now been supported in AL. While using the `with` statement might make code harder to read, it can also prevent code in [!INCLUDE[prod_short](includes/prod_short.md)] online from being upgraded without changes to the code or even worse - upgraded, but with changed behavior. We distinguish between two types of `with` statements; the explicit type of `with` using the keyword, and the implicit with which isn't expressed directly in code. The next sections describe the explicit and implicit types one by one.
 
 ## The explicit `with` statement
 
-In [!INCLUDE[prod_short](includes/prod_short.md)] online your code is recompiled when the platform and application versions are upgraded. The recompilation ensures that it's working and the recompile regenerates the runtime artifacts to match the new platform. Breaking changes without due warning aren't allowed, but the use of the `with` statement makes it impossible, as Microsoft, to make even additive changes in a nonbreaking way. This problem isn't alone isolated to changes made by Microsoft; any additive change has the potential to break a `with` statement in consuming code.
+In [!INCLUDE[prod_short](includes/prod_short.md)] online, your code is recompiled when the platform and application versions are upgraded. The recompilation ensures that it's working and the recompile regenerates the runtime artifacts to match the new platform. Breaking changes without due warning aren't allowed, but the use of the `with` statement makes it impossible, as Microsoft, to make even additive changes in a nonbreaking way. This problem isn't alone isolated to changes made by Microsoft; any additive change has the potential to break a `with` statement in consuming code.
 
 The following example illustrates code written using the `with` statement; referred to in this context as the explicit `with`.
 
@@ -61,7 +62,7 @@ When the AL compiler searches for the symbol `IsDirty()` in the sample above it 
     - Platform-defined members
 3. Globally defined members
 
-The first time the search for `IsDirty` finds the name IsDirty, it doesn't continue to the next top-level group. That means that if a procedure named `IsDirty` is introduced in the Customer table (platform or application) that procedure will be found instead of the procedure in `MyCodeunit`.
+The first time the search for `IsDirty` finds the name IsDirty, it doesn't continue to the next top-level group. That means that if a procedure named `IsDirty` is introduced in the Customer table (platform or application) that procedure is found instead of the procedure in `MyCodeunit`.
 
 The solution for the *explicit* `with` is to stop using it. Using the `with` statement can make your code vulnerable to upstream changes. The example below illustrates how to rewrite the sample in [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement):
 
@@ -120,7 +121,7 @@ codeunit 50140 MyCodeunit
 }
 ```
 
-Similar to the [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement), the code looks like it calls the local `IsDirty` method, but depending on the Customer table, extensions to the Customer table, and built-in methods that might not be the case. If any of these implement an `IsDirty` method with an identical signature that returns `true`, then the example above will fail with an error. If an `IsDirty` method with a different signature is implemented, then this code won't compile and will fail to upgrade.
+Similar to the [The explicit with statement](devenv-deprecating-with-statements-overview.md#the-explicit-with-statement), the code looks like it calls the local `IsDirty` method, but depending on the Customer table, extensions to the Customer table, and built-in methods that might not be the case. If any of these implement an `IsDirty` method with an identical signature that returns `true`, then the example above fails with an error. If an `IsDirty` method with a different signature is implemented, then this code doesn't compile and fails to upgrade.
 
 ## Pages
 
@@ -165,7 +166,7 @@ On pages, it's not only the code in triggers and procedures that is spanned by t
 From [!INCLUDE[prod_short](includes/prod_short.md)] 2020 release wave 2 we begin to warn about the use of explicit and implicit with for extensions that are targeting the cloud. There are two different warnings: `AL0604` and `AL0606`.
 
 > [!NOTE]  
-> The warnings will become errors with a future release. We will at the earliest remove with statement support from the [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 2.
+> The warnings become errors with a future release. We will at the earliest remove with statement support from the [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 2.
 
 ### AL0606 - use of explicit with
 
@@ -173,7 +174,7 @@ The warning has a Quick Fix code action that allows you to convert one or more s
 
 ### AL0604 - use of implicit with
 
-Just qualifying with `Rec.` won't solve this problem. The `IsDirty()` will still be vulnerable to upstream change. We want to remove the implicit with, but also offer an opt-in model to avoid forcing everyone to upgrade their code at once.
+Just qualifying with `Rec.` won't solve this problem. The `IsDirty()` is still vulnerable to upstream change. We want to remove the implicit with, but also offer an opt-in model to avoid forcing everyone to upgrade their code at once.
 
 The solution for that is to introduce pragmas in AL. A pragma is an instruction to the compiler on how it should understand the code. The pragma instructs the compiler not to create an implicit with for the `Rec` variable.
 
@@ -219,10 +220,10 @@ page 50143 ImplicitWith
 #pragma implicitwith restore
 ```
 
-The Quick Fix code actions will automatically insert the pragma before and after the fixed object. 
+The Quick Fix code actions automatically inserts the pragma before and after the fixed object. 
 
 > [!TIP]  
-> Remember to **Enable Code Actions** in the settings for the AL Language extension. For more information, see [Code Actions](devenv-code-actions.md).
+> Remember to **Enable Code Actions** in the settings for the AL Language extension. Learn more in [Code actions](devenv-code-actions.md).
 
 In the `app.json` file, you can set the `NoImplicitWith` flag to disable implicit with when you've rewritten all code. For more information, see [JSON Files](devenv-json-files.md#appjson-file).
 
@@ -232,7 +233,7 @@ There are two ways of suppressing warnings to unclutter warnings while working o
 
 ### suppressWarnings setting
 
-Warnings can be suppressed globally in an extension by specifying the `suppressWarnings` in the `app.json` file. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md). The syntax is:
+Warnings can be suppressed globally in an extension by specifying the `suppressWarnings` in the `app.json` file. Learn more in [AL Language extension configuration](devenv-al-extension-configuration.md). The syntax is:
 
 ```json
 "suppressWarnings": [ "AL0606", "AL0604" ]
@@ -240,7 +241,7 @@ Warnings can be suppressed globally in an extension by specifying the `suppressW
 
 ### Pragmas
 
-It's also possible to use `#pragma` to suppress individual warnings for one or more lines of code. For more information, see [Pragma Warning](directives/devenv-directive-pragma-warning.md).
+It's also possible to use `#pragma` to suppress individual warnings for one or more lines of code. Learn more in [Pragma warning](directives/devenv-directive-pragma-warning.md).
 
 ```AL
 #pragma warning disable AL0606
@@ -257,12 +258,12 @@ It's also possible to use `#pragma` to suppress individual warnings for one or m
 
 ## Related information
 
-[AL Development Environment](devenv-reference-overview.md)  
-[Developing Extensions in AL](devenv-dev-overview.md)  
+[AL development environment](devenv-reference-overview.md)  
+[Developing extensions in AL](devenv-dev-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
-[Pragma Directive](directives/devenv-directive-pragma.md)  
-[Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md)  
-[Pragma Warning](directives/devenv-directive-pragma-warning.md)  
-[Best Practices for Deprecation of Code in the Base App](devenv-deprecation-guidelines.md)  
-[Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)  
-[AL Simple Statements](devenv-al-simple-statements.md)
+[Pragma directive](directives/devenv-directive-pragma.md)  
+[Pragma implicitWith](directives/devenv-directive-pragma-implicitwith.md)  
+[Pragma warning](directives/devenv-directive-pragma-warning.md)  
+[Best practices for deprecation of dode in the Base App](devenv-deprecation-guidelines.md)  
+[Microsoft timeline for deprecating dode in Business Central](devenv-deprecation-timeline.md)  
+[AL simple statements](devenv-al-simple-statements.md)
