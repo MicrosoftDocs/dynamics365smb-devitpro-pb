@@ -37,7 +37,7 @@ This section provides comprehensive reference documentation for the AL programmi
 - [Table properties](properties/devenv-table-property-overview.md) - Essential properties for defining data tables
 - [Page properties](properties/devenv-page-property-overview.md) - Configure how data is displayed to users
 - [Record methods](methods-auto/record/record-data-type.md) - Working with data in tables
-- [Report properties](properties/devenv-report-properties-overview.md) - Creating and configuring reports
+- [Report properties](properties/devenv-report-property-overview.md) - Designing and configuring reports
 - [Error handling diagnostics](diagnostics/diagnostics-overview.md) - Solving common AL errors
 
 ## Related information
