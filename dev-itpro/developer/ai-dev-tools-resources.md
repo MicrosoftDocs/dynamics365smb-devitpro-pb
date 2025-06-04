@@ -8,14 +8,16 @@ ms.topic: concept-article
 ms.date: 06/03/2025
 ---
 
-# Business Central AI resources
+# Business Central AI resources (preview)
+
+[This article is prerelease documentation and is subject to change.]
 
 A key feature of the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot is that [!INCLUDE [prod_short](includes/prod_short.md)] partners can use Large Language Models (LLMs) via Microsoft-managed Azure OpenAI resources. This approach eliminates the need to independently procure and manage Azure OpenAI subscriptions for customers.
 
 Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources is the default and recommended approach.
 
 In certain cases, partners or customers might need to use their own Azure OpenAI (AOAI) subscription for production environments. [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot fully support this option when specific requirements make it necessary.
- 
+
 ## Benefits of relying on the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources
 
 Using the AI resources provides several benefits, including:
