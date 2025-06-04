@@ -1,9 +1,10 @@
 ---
 title: Actions overview
 description: Learn more about displaying actions on the action bar for pages in Business Central.
-ms.date: 04/30/2024
+ms.date: 05/15/2025
 ms.topic: overview
 author: SusanneWindfeldPedersen
+ms.author: solsen
 ---
 
 # Actions overview
@@ -43,7 +44,7 @@ For example, the Sales Orders list page at CRONUS International contains all act
 > [!NOTE]  
 > With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
 
-Pages can have the following actions as described in each section below.  
+Pages can have the following actions as described in each of the following sections.  
   
 ## Actions menu
 

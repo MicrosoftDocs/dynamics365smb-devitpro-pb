@@ -2,7 +2,7 @@
 title: Arithmetic operators
 description: Description of the arithmetic operators in AL for Business Central.
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: concept-article
 ms.date: 07/01/2024
 ms.author: solsen
 author: KennieNP

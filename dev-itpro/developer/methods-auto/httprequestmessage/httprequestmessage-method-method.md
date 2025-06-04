@@ -2,7 +2,7 @@
 title: "HttpRequestMessage.Method([Text]) Method"
 description: "Gets or sets the method type as defined in the HTTP standard."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 05/20/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -39,6 +39,11 @@ The HTTP method used by the request message. The default is the GET method.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+Supported return values are DELETE, GET, POST, PATCH, and PUT.
+
 ## Related information
 [HttpRequestMessage Data Type](httprequestmessage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
