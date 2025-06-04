@@ -3,7 +3,7 @@ title: App identity
 description: Describes what makes up the app identity of an app for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 05/03/2024
-ms.topic: article
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,10 +13,10 @@ ms.reviewer: solsen
 Apps built using AL extend the functionality of [!INCLUDE[prod_short](../includes/prod_short.md)]. The `app.json` file is, together with the `launch.json` file, automatically generated when you create a new AL project. The `app.json` file contains information about the app that you're building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the *manifest*. The `app.json` file contains numerous project settings, but a few of them constitutes the actual identity of the app that you're creating.
 
 > [!NOTE]  
-> With [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2, `name` and `publisher` are no longer considered part of the app identity and can therefore be changed to reflect branding or acquisition, for example. If the `name` and/or `publisher` information is changed, the `version` must also be incremented. If you are using workspaces with multiple projects and change the `name` or `publisher` of an extension in the workspace, the dependencies in the app.json file must be updated with the new name and publisher or you may encounter issues with reference resolution. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).
+> With [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2, `name` and `publisher` are no longer considered part of the app identity and can therefore be changed to reflect branding or acquisition, for example. If the `name` and/or `publisher` information is changed, the `version` must also be incremented. If you're using workspaces with multiple projects and change the `name` or `publisher` of an extension in the workspace, the dependencies in the app.json file must be updated with the new name and publisher or you might encounter issues with reference resolution. Learn more in [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).
 
 > [!IMPORTANT]  
-> In cases where the Application app is substituted with another application app, the `name` is still used as identification. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md).
+> In cases where the Application app is substituted with another application app, the `name` is still used as identification. Learn more in [The Microsoft_Application.app File](devenv-application-app-file.md).
 
 |Setting|Example|Description|
 |-------|------|-----|
@@ -37,28 +37,28 @@ If you have copied the app or the manifest from another app, you must change the
 
 After the app has been published, you should only change the `id` if you intend to use the code base to develop a new app. You won't be able to upgrade from the app with the old `id` to the app with the new `id` because the system doesn't have knowledge about the correspondence.
 
-If you have published your app as a per-tenant extension, but you're now considering publishing it to AppSource, you must assign a new `id` to the AppSource app, and ensure that it follows all the technical requirements for publishing to AppSource. For more information, see [Moving between extension scopes](devenv-extension-moving-scope.md).
+If you have published your app as a per-tenant extension, but you're now considering publishing it to AppSource, you must assign a new `id` to the AppSource app, and ensure that it follows all the technical requirements for publishing to AppSource. Learn more in [Moving between extension scopes](devenv-extension-moving-scope.md).
 
-It's recommended to use a different `id` for the app that you publish from Visual Studio Code or to the container. Once you're satisfied with the quality of your app and ready to publish it to AppSource, it's recommended to use a different `id`. If you don't follow this approach, the app that you have published from Visual Studio Code to a developer sandbox will be automatically unpublished if another user tries to install the AppSource app. For more information, see [Moving between extension scopes](devenv-extension-moving-scope.md).
+It's recommended to use a different `id` for the app that you publish from Visual Studio Code or to the container. Once you're satisfied with the quality of your app and ready to publish it to AppSource, it's recommended to use a different `id`. If you don't follow this approach, the app that you have published from Visual Studio Code to a developer sandbox will be automatically unpublished if another user tries to install the AppSource app. Learn more in [Moving between extension scopes](devenv-extension-moving-scope.md).
 
 ## When is it okay to change the name of an app?
 
 If you're targeting only Business Central 2021 release wave 2 or later, the `name` of an app can be changed at any point also after it has been published. If the `name` is changed, the `version` must be incremented as well.
 
-If you're targeting versions of Business Central prior to 2021 release wave 2, then the `name` of an app can't be changed after it has been published.
+If you're targeting versions of Business Central earlier than 2021 release wave 2, then the `name` of an app can't be changed after it has been published.
 
 ## When is it okay to change the publisher of an app?
 
 If you're targeting only Business Central 2021 release wave 2 or later, the `publisher` of an app can be changed at any point also after it's published. If the `publisher` is changed, the `version` must be incremented as well.
 
-If you're targeting versions of Business Central prior to 2021 release wave 2, then the `publisher` of an app can't be changed after it has been published.
+If you're targeting versions of Business Central earlier than 2021 release wave 2, then the `publisher` of an app can't be changed after it has been published.
 
 ## When is it okay to change the version of an app?
 
 The `version` must be incremented anytime a new version of your app is uploaded to AppSource or as a per-tenant extension. While developing it in Visual Studio Code, you can keep using the same version and iterate on your code.
 
 > [!NOTE]  
-> In a Visual Studio Code workspace an app's `name`, `publisher`, and `version` are part of identifying a project and a project dependency. Therefore, if any of these properties change, it is recommended that you reload the workspace.
+> In a Visual Studio Code workspace an app's `name`, `publisher`, and `version` are part of identifying a project and a project dependency. Therefore, if any of these properties change, it's recommended that you reload the workspace.
  
 ## Related information
 

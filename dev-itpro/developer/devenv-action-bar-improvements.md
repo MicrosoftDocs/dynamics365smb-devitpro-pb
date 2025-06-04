@@ -1,11 +1,11 @@
 ---
 title: Action bar improvements
-description: Introducing the modern action bar in Dynamics 365 Business Central
+description: Introducing the modern action bar in Dynamics 365 Business Central.
 author: jacobwj
 ms.author: solsen
 ms.reviewer: solsen
-ms.topic: article
-ms.date: 03/08/2024
+ms.topic: overview
+ms.date: 05/15/2025
 ms.custom: bap-template
 ---
 

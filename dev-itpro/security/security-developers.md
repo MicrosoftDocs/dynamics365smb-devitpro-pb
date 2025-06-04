@@ -1,9 +1,9 @@
 ---
 title: Business Central security for AL developers
 description: Understand and improve the security of your Business Central apps written in AL.
-ms.date: 02/23/2024
-ms.reviewer: solsne
-ms.topic: article
+ms.date: 05/19/2025
+ms.reviewer: solsen
+ms.topic: concept-article
 author: kennienp
 ---
 
@@ -15,8 +15,7 @@ This article helps you understand and improve the security of your [!INCLUDE[pro
 
 The Microsoft Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. 
 
-For more information, see [Security Development Lifecycle](https://www.microsoft.com/sdl).  
-
+Learn more in [Security development lifecycle](https://www.microsoft.com/sdl).  
 
 ## Layered security model in Business Central
 
@@ -24,7 +23,7 @@ For more information, see [Security Development Lifecycle](https://www.microsoft
 
 ![Security overview.](../developer/media/security-overview.png "Security overview")
 
-From AL, you can only affect the license and permission checks in the authorization layer. If you develop integrations with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP based web service endpoints, you also need to know how to deal with authentication for web service sessions.
+From AL, you can only affect the license and permission checks in the authorization layer. If you develop integrations with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] REST API, OData, or SOAP-based web service endpoints, you also need to know how to deal with authentication for web service sessions.
 
 ## Authentication for AL developers
 
@@ -40,7 +39,7 @@ The following table includes links to help you understand authentication in [!IN
 
 ## Authorization for AL developers
 
-After a session is authenticated, the authorization step determines which areas the user of the session can access, such as code they can run, pages, and reports they can open, and the permissions they have on associated data. 
+After a session is authenticated, the authorization step determines, which areas the user of the session can access, such as code they can run, pages, and reports they can open, and the permissions they have on associated data. 
 
 The following table includes links to help you understand authorization in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from the developer point of view.
 
@@ -61,8 +60,8 @@ The following table includes links to help you understand authorization in [!INC
 
 The following table includes links to help you understand auditing in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as seen from the developer point of view.
 
-|To      |See      | 
-|--------|---------| 
+|To      |See      |
+|--------|---------|
 | See an overview of a users permissions. | [Authorization Assessment](/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)|
 | Monitor permission changes and stability with telemetry. | [Permission changes telemetry](../administration/telemetry-permission-changes-trace.md) <br><br> [Permission dependency cycle telemetry](../administration/telemetry-permission-dependency-cycle-trace.md) <br><br> [Permission error telemetry](../administration/telemetry-permission-error-trace.md) |
 

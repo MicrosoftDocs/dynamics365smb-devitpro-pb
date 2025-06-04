@@ -2,7 +2,7 @@
 title: Use the this keyword for codeunit self-reference
 description: Enhance readability and pass current objects as arguments in AL codeunits using the self-reference keyword.
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: concept-article
 ms.date: 08/21/2024
 author: SusanneWindfeldPedersen
 ms.collection: get-started
