@@ -22,7 +22,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | Product area| Feature| PP/GA  |
 |-|-|-|
 | Copilot and AI | [Use AI resources for your Copilot extensions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-business-central-ai-resources-copilot-features-business-central) | PP |
-| Electronic documents | [Send e-documents via a service and email simultaneously](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/send-e-documents-via-service-email-simultaneously) | GA|
+| E-documents | [Send e-documents via a service and email simultaneously](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/send-e-documents-via-service-email-simultaneously) | GA|
 || [Use B2B Router as a service provider for E-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-b2b-router-as-service-provider-e-documents) | GA|
 | | [Automate embedded attachments in PEPPOL](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-embedded-attachments-peppol) | GA|
 | | [Use Continia as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-continia-as-service-provider-e-documents) | PP  |
