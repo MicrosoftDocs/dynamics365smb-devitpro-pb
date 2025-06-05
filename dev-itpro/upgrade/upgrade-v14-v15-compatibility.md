@@ -33,7 +33,7 @@ The following table lists the Business Central 25 update versions and the minimu
 |-|-|
 |25.0 to 25.5|[26.0](../whatsnew/whatsnew-update-26-0.md#on-premises-download-packages)|
 |[25.6](https://support.microsoft.com/help/5056718)|[26.1](https://support.microsoft.com/help/5059415)|
-|[25.7](https://support.microsoft.com/help/5059414)|[26.2](https://support.microsoft.com/help/5061918|
+|[25.7](https://support.microsoft.com/help/5059414)|[26.2](https://support.microsoft.com/help/5061918)|
 |[25.8](https://support.microsoft.com/help/5061917)<sup>[\[1\]](#1)</sup>|26.3|
 
 ## Version 24 compatibility
