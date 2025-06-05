@@ -15,7 +15,7 @@ Would you like to know what changes are in update 26.1? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 26.2 for Business Central 2025 release wave 1](https://support.microsoft.com/help/5059415).
+Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 26.2 for Business Central 2025 release wave 1](https://support.microsoft.com/help/5061918).
 
 ## Feature changes
 
@@ -46,7 +46,7 @@ No localization updates for 26.2.
 
 Do you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2025 release wave 1 (release from April 2025 through October 2025)? Learn more at [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 1](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/)<!--(https://aka.ms/BCReleasePlan)-->.
 
-## Upgrade to 26.1
+## Upgrade to 26.2
 
 ### Online customers
 
@@ -61,8 +61,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 ### Recent and upcoming online service features
 
 - [Manage environment updates more flexibly](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-environment-updates-more-flexibly) (GA)
-
-  This feature establishes a five-month update period for major updates and allows you to opt in to minor updates by selecting a later version. The option to select the target version in the Business Central admin center is expected to be available around the same time as update 26.1. Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md).  
+- [Support IPv6 for enhanced security and scalability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/support-ipv6-enhanced-security-scalability) (GA)
 
 ### Business Central Launch Event videos on YouTube
 
