@@ -4,7 +4,7 @@ description: Provides an overview of the Business Central versions and their com
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.date: 04/25/2025
+ms.date: 064/05/2025
 ms.topic: upgrade-and-migration-article
 ms.custom: bap-template
 ---
@@ -27,13 +27,14 @@ Before you choose the target version for your upgrade, read the [Some Known Issu
 
 ## Version 25 compatibility
 
-The following table lists the Business Central 24 update versions and the minimum version of later releases that are compatible for upgrade.
+The following table lists the Business Central 25 update versions and the minimum version of later releases that are compatible for upgrade.
 
 |Version 25 |Version 26|
 |-|-|
 |25.0 to 25.5|[26.0](../whatsnew/whatsnew-update-26-0.md#on-premises-download-packages)|
 |[25.6](https://support.microsoft.com/help/5056718)|[26.1](https://support.microsoft.com/help/5059415)|
-|[25.7](https://support.microsoft.com/help/5059414)|26.2|
+|[25.7](https://support.microsoft.com/help/5059414)|[26.2](https://support.microsoft.com/help/5061918|
+|[25.8](https://support.microsoft.com/help/5061917)<sup>[\[1\]](#1)</sup>|26.3|
 
 ## Version 24 compatibility
 
@@ -49,7 +50,8 @@ The following table lists the Business Central 24 update versions and the minimu
 |[24.10](https://support.microsoft.com/help/5052986)|[25.5](https://support.microsoft.com/help/5054448)|
 |[24.11](https://support.microsoft.com/help/5054447)|[25.6](https://support.microsoft.com/help/5056718)|
 |[24.12](https://support.microsoft.com/help/5056717)|[25.7](https://support.microsoft.com/help/5059414)|
-|[24.13](https://support.microsoft.com/help/5059413)<sup>[\[1\]](#1)</sup>|25.8|
+|[24.13](https://support.microsoft.com/help/5059413)|25.8|
+|[24.14](https://support.microsoft.com/help/5061916)<sup>[\[1\]](#1)</sup>|25.9|
 
 Get a list of all available updates for Business Central 2024 release wave 1 at [Released Updates for Microsoft Dynamics 365 Business Central 2024 release wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2024-release-wave-1-0b644dfa-2eef-4f3e-9d77-bc92dbaafb65).
 
