@@ -11,7 +11,7 @@ ms.custom:
 ---
 # Update 26.2 for Business Central online 2025 release wave 1
 
-Would you like to know what changes are in update 26.1? Below you find an overview and relevant links to what was done on hotfixes and regulatory features in this update. In addition, we gathered some good to know information and links that you might find interesting.
+Would you like to know what changes are in update 26.2? Below you find an overview and relevant links to what was done on hotfixes and regulatory features in this update. In addition, we gathered some good to know information and links that you might find interesting.
 
 ## Hotfixes
 
@@ -57,7 +57,7 @@ New customers automatically get Business Central version 26.2. If you're an exis
 
 ### On-premises customers
 
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26.1. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
+Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26.2. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
 
 ## Good to know
 
