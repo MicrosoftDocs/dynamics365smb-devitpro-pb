@@ -27,7 +27,7 @@ The following Azure OpenAI models are supported when using the [!INCLUDE [prod_s
 |-----------------------------------|-------------|
 |GPT-4o|Yes, will be replaced by GPT-4.1|
 |GPT-4o-mini|Yes, will be replaced by GPT-4.1-mini|
-|GPT-4.1|June 2025|
+|GPT-4.1|Pending|
 |GPT-4.1-mini|June 2025|
 
 You can read more about each of the models here [Azure OpenAI Models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions).
