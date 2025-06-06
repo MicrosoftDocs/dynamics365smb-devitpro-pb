@@ -30,7 +30,7 @@ The following Azure OpenAI models are supported when using the [!INCLUDE [prod_s
 |GPT-4.1|Pending|
 |GPT-4.1-mini|June 2025|
 
-You can read more about each of the models here [Azure OpenAI Models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions).
+You can read more about each of the models here [Azure OpenAI Models](/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions).
 
 ## Benefits of relying on the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources
 
@@ -88,7 +88,7 @@ By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for
 |Responsible AI|Azure OpenAI content filters predefined by Business Central. <br><br>Microsoft automatically appends safeguard prompts to your system prompt that increase protection against typical harms such as generation of harmful content and prompt injection attacks.|Azure OpenAI content filters, configurable by you. <br><br>Microsoft automatically appends safeguard prompts to your system prompt that increase protection against typical harms such as generation of harmful content and prompt injection attacks in Saas|
 |Environments|SaaS only|Can be used in SaaS, and for testing in containers.|
 |Billing|Microsoft charges the customer when they use AI. <br><br> Customers can track usage, set limits, and get a single, detailed invoice across Copilot features that use the toolkit AI resources. <br><br>You charge the customer for your IP.|You must track billing, split billing if multiple customers share the same subscription, manage spending limits, provide usage statistics etc.|
-|Geographic availability|AI model endpoints are available in limited Azure geographies, managed by Microsoft, that may change over time. You can find the list of currently supported Azure geos [here](/dynamics365/business-central/ai-copilot-data-movement#how-data-movement-across-geographies-works). <br><br> Customer environments in all other geos connect to endpoints in the US and are managed by the data governance controls provided to administrators in Business Central.|Availability follows the general availability of the chosen model in Azure OpenAI. See [Azure OpenAI Models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions) for more.|
+|Geographic availability|AI model endpoints are available in limited Azure geographies, managed by Microsoft, that may change over time. You can find the list of currently supported Azure geos [here](/dynamics365/business-central/ai-copilot-data-movement#how-data-movement-across-geographies-works). <br><br> Customer environments in all other geos connect to endpoints in the US and are managed by the data governance controls provided to administrators in Business Central.|Availability follows the general availability of the chosen model in Azure OpenAI. See [Azure OpenAI Models](/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions) for more.|
 
 ## Mandatory to migrate to newer models as older ones are deprecated
 Models evolve and are replaced over time. By using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, partners will be accountable for migrating to newer models and model versions as dictated by Microsoft within the communicated SLA. Failure to do so can lead to Copilot features using the deprecated model in [!INCLUDE [prod_short](includes/prod_short.md)] AI resources to no longer work in production.
@@ -136,4 +136,4 @@ You can find further AL code examples on using and calling LLM resources on [htt
 ## Related information
 
 [Integrating AI using Developer Tools for Copilot](ai-integration-landing-page.yml)  
-[Transparency note: Developer tools for Copilot in Business Central](ai/transparency-note-dev-tools-for-copilot)  
+[Transparency note: Developer tools for Copilot in Business Central](ai/transparency-note-dev-tools-for-copilot.md)  
