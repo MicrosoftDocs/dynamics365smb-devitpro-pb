@@ -136,4 +136,4 @@ You can find further AL code examples on using and calling LLM resources on [htt
 ## Related information
 
 [Integrating AI using Developer Tools for Copilot](ai-integration-landing-page.yml)  
-[Transparency note: Developer tools for Copilot in Business Central](ai/transparency-note-dev-tools-for-copilot.md)  
+[Transparency note: Developer tools for Copilot in Business Central](../ai/transparency-note-dev-tools-for-copilot.md)  
