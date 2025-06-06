@@ -78,13 +78,13 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Customer onboarding and resources
 
-- Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
-- Get [!INCLUDE [prod_short](../includes/prod_short.md)] on your mobile devices: [aka.ms/BusinessCentralApp](https://aka.ms/BusinessCentralApp)
-- Get [!INCLUDE [prod_short](../includes/prod_short.md)] installable app on your desktop: [aka.ms/BCPWA](https://aka.ms/BCPWA)
-- Learn about onboarding experiences in [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)
-- Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
-- Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
-- Download the keyboard shortcut PDF: [aka.ms/BCKeyboardShortcutsPDF](https://aka.ms/BCKeyboardShortcutsPDF)
+- Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)  
+- Get [!INCLUDE [prod_short](../includes/prod_short.md)] on your mobile devices: [aka.ms/BusinessCentralApp](https://aka.ms/BusinessCentralApp)  
+- Get [!INCLUDE [prod_short](../includes/prod_short.md)] installable app on your desktop: [aka.ms/BCPWA](https://aka.ms/BCPWA)  
+- Learn about onboarding experiences in [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)  
+- Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity)  
+- Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)  
+- Download the keyboard shortcut PDF: [aka.ms/BCKeyboardShortcutsPDF](https://aka.ms/BCKeyboardShortcutsPDF)  
 - Dynamics GP partners considering a [!INCLUDE [prod_short](../includes/prod_short.md)] partner practice:  
 
   - [Dynamics GP Learn article](/dynamics-gp)
