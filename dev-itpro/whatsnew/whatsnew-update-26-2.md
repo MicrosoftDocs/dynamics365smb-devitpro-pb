@@ -27,17 +27,18 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 || [Use B2B Router as a service provider for E-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-b2b-router-as-service-provider-e-documents) | GA|
 | | [Use Continia as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-continia-as-service-provider-e-documents) | PP  |
 | Financial management | [Analyze subscription billing data with Power BI reports](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/analyze-subscription-billing-data-power-bi-reports) | GA|
-| Governance and administration |[Automate environment management with Power Platform connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-environment-management-power-platform-connector)  | GA|
-|  | [Migrate record links and notes with cloud migration tooling](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/migrate-record-links-notes-cloud-migration-tooling) | GA|
-|  | [View app compatibility with future versions in admin center](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/view-app-compatibility-future-versions-admin-center) | GA|
 | Reporting and data analysis   |[Add fields from related tables in analysis mode](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-fields-related-tables-analysis-mode) | GA|
 | | [Use enhanced analytics for manufacturing (updated Power BI app)](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-manufacturing) | GA|
 | | [Use enhanced analytics for projects](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-projects) | GA|
 || [Use enhanced analytics for purchasing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-purchasing)  | GA    |
-||Use enhanced analytics for sales | GA|
+|| Use enhanced analytics for sales | GA|
+|| [Use enhanced Excel reports for sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-excel-reports-sustainability) | GA|
 | Sustainability management | [Use enhanced analytics for Sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-sustainability) | GA|
-| | [Use enhanced Excel reports for sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-excel-reports-sustainability) | GA|
 
+<!--| Governance and administration |[Automate environment management with Power Platform connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-environment-management-power-platform-connector)  | GA|
+|  | [Migrate record links and notes with cloud migration tooling](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/migrate-record-links-notes-cloud-migration-tooling) | GA|
+|  | [View app compatibility with future versions in admin center](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/view-app-compatibility-future-versions-admin-center) | GA|
+-->
 ## Localization updates
 
 |Country|Feature|Description|
