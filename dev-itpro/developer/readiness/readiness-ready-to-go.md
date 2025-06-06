@@ -71,6 +71,11 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Find pitch decks: [aka.ms/BCPitchDecks](https://aka.ms/BCPitchDecks)  
 - Find Dynamics 365 icons and guidelines on usage: [aka.ms/Dynamics365Icons](https://aka.ms/Dynamics365Icons)
 
+## Licensing and pricing
+
+- [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
+- [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
+
 ## Customer onboarding and resources
 
 - Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
@@ -121,6 +126,12 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Apps: [aka.ms/BCPApps](https://aka.ms/BCPApps)
 - [Prototype] Low code sync of [!INCLUDE [prod_short](../includes/prod_short.md)] entities to Dataverse: [aka.ms/bc2dataverse](https://aka.ms/BC2Dataverse)
 
+## Shopify
+
+- Shopify start: [aka.ms/BCShopifyStart](https://aka.ms/BCShopifyStart)
+- Shopify FAQ: [aka.ms/BCShopifyFAQ](https://aka.ms/BCShopifyFAQ)
+- Shopify consultant: [aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
+
 ## Migrating from on-premises to cloud (online)  
 
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
@@ -145,13 +156,12 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Developing apps for AppSource
 
-- AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
-- AppSource technical checklist: [aka.ms/CheckBeforeYouSubmit](https://aka.ms/CheckBeforeYouSubmit)
-- AppSource technical FAQ: [aka.ms/TechValidationFAQ](https://aka.ms/TechValidationFAQ) 
-- Set up DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)
-- Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([New to Yammer?](../../join-viva-engage.md))
-
-- Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps) 
+- AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)  
+- AppSource technical checklist: [aka.ms/CheckBeforeYouSubmit](https://aka.ms/CheckBeforeYouSubmit)  
+- AppSource technical FAQ: [aka.ms/TechValidationFAQ](https://aka.ms/TechValidationFAQ)  
+- Set up DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)  
+- Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([New to Yammer?](../../join-viva-engage.md))  
+- Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps)  
 - Transact capability for Business Central Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
 
 ## Developing customer specific solutions
@@ -174,25 +184,14 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Compliance overview: [aka.ms/BCCompliance](https://aka.ms/BCCompliance)
 - Application compliance: [aka.ms/BCAppCompliance](https://aka.ms/BCAppCompliance)
 
-## Licensing and pricing
-
-- [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
-- [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
-
-## Shopify
-
-- Shopify start: [aka.ms/BCShopifyStart](https://aka.ms/BCShopifyStart)
-- Shopify FAQ: [aka.ms/BCShopifyFAQ](https://aka.ms/BCShopifyFAQ)
-- Shopify consultant: [aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
-
 ## Events for partners
 
 - [Business Central Launch Event (aka.ms/BCLE)](https://aka.ms/BCLE)
 - [Directions NA](https://directionsna.com)
 - [Directions EMEA](https://directions4partners.com/events/directions-emea-2023/)  
-- [Directions Asia](https://directions4partners.com/events/directions-asia-2024/)
+- [Directions ASIA](https://directions4partners.com/events/directions-asia-2024/)
 - [Business Central TechDays](https://bctechdays.com)
-- [Days of Knowledge (Nordic)](https://directions4partners.com/days-of-knowledge/)
+- [Days of Knowledge (In several countries)](https://directions4partners.com/days-of-knowledge/)
 - [Days of Knowledge (Central)](https://directions4partners.com/days-of-knowledge/)
 - [Days of Knowledge (UK)](https://directions4partners.com/days-of-knowledge/)
 
