@@ -22,17 +22,20 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 | Product area| Feature| PP/GA  |
 |-|-|-|
 | Copilot and AI | [Use AI resources for your Copilot extensions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-business-central-ai-resources-copilot-features-business-central) | PP |
+||[Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy)|GA|
+||[Comply with Australian Payment Times Reporting bill](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/comply-australian-payment-time-reporting-bill)|GA|
 | E-documents | [Send e-documents via a service and email simultaneously](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/send-e-documents-via-service-email-simultaneously) | GA|
 || [Use B2B Router as a service provider for E-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-b2b-router-as-service-provider-e-documents) | GA|
+||[Export reminders and finance charges as PEPPOL files](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/export-reminders-finance-charges-as-peppol-files)|GA|
 | | [Automate embedded attachments in PEPPOL](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-embedded-attachments-peppol) | GA|
 | | [Use Continia as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-continia-as-service-provider-e-documents) | PP  |
 | Financial management | [Analyze subscription billing data with Power BI reports](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/analyze-subscription-billing-data-power-bi-reports) | GA|
 | Governance and administration | [Migrate record links and notes with cloud migration tooling](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/migrate-record-links-notes-cloud-migration-tooling) | GA|
 |  | [View app compatibility with future versions in admin center](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/view-app-compatibility-future-versions-admin-center) | GA|
 |  | [Automate environment management with Power Platform connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-environment-management-power-platform-connector) | GA|
-| Reporting and data analysis   | [Use enhanced analytics for sales](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-sales) | GA|
-| | [Use enhanced analytics for purchasing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-purchasing) | GA|
+| Reporting and data analysis   | [Use enhanced analytics for purchasing](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-purchasing) | GA|
 | | [Use enhanced analytics for projects](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-projects) | GA|
+||Use enhanced analytics for sales | GA|
 | | [Use enhanced Excel reports for sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-excel-reports-sustainability) | GA|
 || [Add fields from related tables in analysis mode](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-fields-related-tables-analysis-mode) | GA    |
 | | [Use enhanced analytics for manufacturing (updated Power BI app)](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-manufacturing) | GA|
@@ -40,7 +43,9 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Localization updates
 
-No localization updates for 26.2.
+|Country|Feature|Description|
+|-|-|-|
+|Mexico|Updated DIOT file format in Mexico|The DIOT txt file now complies with the latest SAT regulations and can be generated with 54 fields, replacing the previous version that had only 25 fields.|
 
 ## Release plan
 
