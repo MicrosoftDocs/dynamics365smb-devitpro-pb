@@ -1,8 +1,8 @@
 ---
-title: "Moving between extension scopes"
-description: "Describes how an extension in one scope can be moved into another scope in Business Central."
+title: Moving between extension scopes
+description: Describes how an extension in one scope can be moved into another scope in Business Central.
 ms.author: solsen
-ms.date: 02/24/2022
+ms.date: 05/02/2025
 ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -20,15 +20,15 @@ For a definition of the different extension types and their scope, see [Extensio
 
 ### Identity requirements for moving a PTE to AppSource
 
-- It isn't possible to deploy an AppSource app and a PTE with the same `id`. You must then change the `id` of the extension before uploading it to AppSource. This means that the data won't be available anymore for environments that had the PTE installed and are now using the AppSource app. Dependent extensions will also need to be updated to use the new app ID in their `app.json` file.
+- It isn't possible to deploy an AppSource app and a PTE with the same `id`. You must then change the `id` of the extension before uploading it to AppSource. This means that the data won't be available anymore for environments that had the PTE installed and are now using the AppSource app. Dependent extensions also must be updated to use the new app ID in their `app.json` file.
 
 - Due to some current limitations in our service, it isn't possible to have an AppSource app and a PTE extension with the same `name`, `publisher`, and `version`. You must then change the `name`, `publisher`, or `version` of the app before uploading it to AppSource.
 
 ### Other requirements for moving a PTE to AppSource
 
-- AppSource apps and PTEs are using different ID ranges. You must then change the ID of all the objects in your extension. For more information, see [Object Ranges](devenv-object-ranges.md).
+- AppSource apps and PTEs are using different ID ranges. You must then change the ID of all the objects in your extension. Learn more in [Object ranges](devenv-object-ranges.md).
 
-- AppSource apps are required to use affixes for their object names, while PTEs don't have any affix usage requirements. You might then have to rename all the objects in your extension to use affixes. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
+- AppSource apps are required to use affixes for their object names, while PTEs don't have any affix usage requirements. You might then have to rename all the objects in your extension to use affixes. Learn more in [Benefits and guidelines for using a prefix or suffix](../compliance/apptest-prefix-suffix.md).
 
 - You can find the full list of requirements for AppSource apps here:  
   - [Technical Validation Checklist](devenv-checklist-submission.md)
@@ -49,7 +49,7 @@ For a definition of the different extension types and their scope, see [Extensio
 
 ### Identity requirements for moving a DEV extension to AppSource
 
-- It's not possible to deploy an AppSource app and a PTE with the same `id`. You must then change the `id` of the extension before uploading it to AppSource. This means that the data won't be available anymore for environments that had the PTE installed and are now using the AppSource app. Dependent extensions will also need to be updated to use the new app ID in their `app.json` file.
+- It's not possible to deploy an AppSource app and a PTE with the same `id`. You must then change the `id` of the extension before uploading it to AppSource. This means that the data won't be available anymore for environments that had the PTE installed and are now using the AppSource app. Dependent extensions need to be updated to use the new app ID in their `app.json` file.
 
 - Due to some current limitations in our service, it isn't possible to have an AppSource app and a PTE extension with the same `name`, `publisher`, and `version`. You must then change the `name`, `publisher`, or `version` of the app before uploading it to AppSource.
 
@@ -78,7 +78,7 @@ Publishing an AppSource app to a sandbox environment as a DEV extension is a com
 
 ### Identity requirements for publishing an AppSource app as a DEV extension
 
-- DEV extensions should have a different app `id` because there might be other global apps published to your service and they'll collide. If you don't change the app `id`, the app that you've published from Visual Studio Code to a developer sandbox will be automatically unpublished from your environment if another user tries to install the AppSource app in their environment.
+- DEV extensions should have a different app `id` because there might be other global apps published to your service and they collide. If you don't change the app `id`, the app that you published from Visual Studio Code to a developer sandbox is automatically unpublished from your environment if another user tries to install the AppSource app in their environment.
 
 ### Other requirements for publishing an AppSource app as a DEV extension
 
@@ -114,15 +114,15 @@ You can find the full list of requirements for PTE in the documentation for the 
 
 ### Identity requirements for moving an AppSource app to a PTE
 
-- It's not possible to deploy an AppSource app and a PTE with the same `id`. You must then change the `id` of the extension before uploading it the PTE. This means that the data won't be available anymore for environments that had the PTE installed and are now using the AppSource app. Dependent extensions will also need to be updated to use the new app ID in their `app.json` file.
+- It's not possible to deploy an AppSource app and a PTE with the same `id`. You must then change the `id` of the extension before uploading it the PTE. This means that the data won't be available anymore for environments that had the PTE installed and are now using the AppSource app. Dependent extensions need to be updated to use the new app ID in their `app.json` file.
 
 - If you wish to deprecate the offer in AppSource, see [Discontinuing an AppSource app](devenv-app-discontinue.md).
 
-### Additional requirements for moving an AppSource app to a PTE
+### More requirements for moving an AppSource app to a PTE
 
 - AppSource apps and PTEs are using different ID ranges. You must then change the ID of all the objects in your extension. For more information, see [Object Ranges](devenv-object-ranges.md).
 
-- In order to avoid potential name conflicts if the AppSource app and the PTE are installed side-by-side, it is recommend to change the name of all the objects in your extension.
+- In order to avoid potential name conflicts if the AppSource app and the PTE are installed side-by-side, it's recommend changing the name of all the objects in your extension.
 
 - You can find the full list of requirements for PTE in the documentation for the [PerTenantExtensionCop Analyzer](analyzers/pertenantextensioncop.md).
 
@@ -132,7 +132,7 @@ You can find the full list of requirements for PTE in the documentation for the 
 
 - If you want to move the data by having the two apps (PTE and AppSource app) installed side-by-side, then you must ensure that the two apps can be installed side-by-side. For this, they must not share any object names nor IDs. You can then define another PTE depending on both apps that would take care of moving the data.
 
-- All dependent extensions will have to be updated to use the new app `id` in their `app.json` file and to reference the objects defined in the extension by their new name and object ID.
+- All dependent extensions have to be updated to use the new app `id` in their `app.json` file and to reference the objects defined in the extension by their new name and object ID.
 
 
 ## Related information

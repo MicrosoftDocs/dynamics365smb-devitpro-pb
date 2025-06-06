@@ -1,13 +1,13 @@
 ---
-title: "Extension Development Lifecycle Overview"
+title: Extension Development Lifecycle Overview
 description: Explains the phases involved in the lifecycle of developing an extension.
-ms.date: 04/12/2022
+ms.date: 05/21/2025
 ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Extension Development Lifecycle Overview
+# Extension development lifecycle overview
 
 This section describes the different phases a [!INCLUDE[prod_short](includes/prod_short.md)] extension goes through from initial development until it gets deprovisioned.
 
@@ -17,7 +17,7 @@ The lifecycle is the cyclical software development process that typically involv
 
 ## Related information
 
-[Extension Data Migration Overview](devenv-migrate-table-fields.md)  
-[Extension Translation Overview](devenv-translations-overview.md)  
-[Extension Testing Overview](devenv-testing-application.md)  
-[Extension Upgrade Overview](devenv-app-life-cycle.md)  
+[Extension data migration overview](devenv-migrate-table-fields.md)  
+[Extension translation overview](devenv-translations-overview.md)  
+[Extension testing overview](devenv-testing-application.md)  
+[Extension upgrade overview](devenv-app-life-cycle.md)  
