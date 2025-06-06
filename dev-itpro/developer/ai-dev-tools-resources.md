@@ -16,7 +16,7 @@ A key feature of the [!INCLUDE [prod_short](includes/prod_short.md)] developer t
 
 Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources is the default and recommended approach.
 
-In certain cases, partners or customers might need to use their own Azure OpenAI (AOAI) subscription for production environments. [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot fully support this option when specific requirements make it necessary.
+In certain cases, partners or customers might need to use their own Azure OpenAI (AOAI) subscription for production environments, or when developing and testing in sandbox environments. [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot fully support this option when specific requirements make it necessary.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
