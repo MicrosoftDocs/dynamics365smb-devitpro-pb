@@ -83,6 +83,9 @@ page 50101 UserControlHost
 }
 ```
 
+> [!TIP]
+> Use this page type to show a Power BI report in its own page. Learn more in [Embed Power BI reports, scorecards, dashboards in pages](devenv-power-bi-report-parts.md#open-a-power-bi-element-expanded-in-its-own-page).
+
 ## Related information
 
 [Page types and layouts](devenv-page-types-and-layouts.md)  
