@@ -128,11 +128,6 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Community group for questions and information about managing migrations to Business Central online: [aka.ms/BCCloudMigrationYammer](https://aka.ms/bccloudmigrationyammer) ([Learn more](../../join-viva-engage.md))
 - AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
 
-## Getting support
-
-- Managing technical support for customers: [Manage Technical Support](../../administration/manage-technical-support.md) 
-- Test network connectivity for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCP](https://aka.ms/BCCP)
-
 ## Developing for Business Central in general
 
 - Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/BCPublisher)
@@ -141,8 +136,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Maintain your apps: [Maintain Your App](../app-maintain.md)
 - Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues)
 - Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
-- Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))
-- Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
+- Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))  
 - Build solutions that link to [!INCLUDE [prod_short](../includes/prod_short.md)] mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
 - Troubleshoot issues with [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCTroubleshoot](https://aka.ms/bctroubleshoot)
 - Browse the images/icons available for the action bar: [aka.ms/BCIcons](https://aka.ms/BCIcons)
@@ -207,4 +201,9 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - [Business Central Launch Event (aka.ms/BCLE)](https://aka.ms/BCLE)
 - [DynamicsMinds](https://www.dynamicsminds.com/)
 - [UG Summit](https://www.summitna.com/)
-- [DynamicsCon](https://dynamicscon.com/)
+- [DynamicsCon](https://dynamicscon.com/) 
+
+## Getting support
+
+- Managing technical support for customers: [Manage Technical Support](../../administration/manage-technical-support.md) 
+- Test network connectivity for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCP](https://aka.ms/BCCP)
