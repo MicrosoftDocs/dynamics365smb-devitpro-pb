@@ -4,7 +4,7 @@ description: Describes how to do a technical upgrade from Business Central V19, 
 ms.custom: bap-template
 ms.date: 11/27/2023
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ---
@@ -282,7 +282,7 @@ Compile all published extensions against the new platform.
 ## Task 9: Upgrade extensions
 
 > [!NOTE]
-> This task is only required if you've published new versions fo extensions, for example, as part of task 7. In this case, you'll run a data upgrade on the new versions.
+> This task is only required if you've published new versions for extensions, for example, as part of task 7. In this case, you'll run a data upgrade on the new versions.
 
 It's important to consider the extension dependency graph when upgrading. The general order is:
 

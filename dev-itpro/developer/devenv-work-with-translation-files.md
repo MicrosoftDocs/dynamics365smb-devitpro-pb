@@ -1,8 +1,8 @@
 ---
 title: Working with translation files
 description: How to work with translations, multilanguage, and XLIFF files in Business Central.
-ms.date: 06/20/2024
-ms.topic: conceptual
+ms.date: 04/14/2025
+ms.topic: concept-article
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -11,6 +11,8 @@ ms.reviewer: solsen
 # Working with translation files
 
 [!INCLUDE [prod_short](includes/prod_short.md)] is multi-language enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE [prod_short](includes/prod_short.md)], this is done using XLIFF files, which is a standardized format used for computer-based translations.  
+
+[!INCLUDE [translation-services-deprecation](../includes/translation-services-deprecation.md)]
 
 > [!TIP]
 > Optionally, use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) to get translations for your target languages. For more information, see [Translate user interface files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service).
@@ -42,7 +44,6 @@ Now, when you run the build command (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kb
 > - [AboutTitleML](properties/devenv-abouttitleml-property.md)  
 > - [AboutTextML](properties/devenv-abouttextml-property.md)  
 > - [CaptionML](properties/devenv-captionml-property.md)
-> - [ConstValueML](./properties/devenv-properties.md)
 > - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
 > - [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
 > - [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)

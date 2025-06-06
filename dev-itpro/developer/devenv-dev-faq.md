@@ -3,7 +3,7 @@ title: FAQ for Developing in AL
 description: Overview of frequently asked questions for development using the AL language.
 author: SusanneWindfeldPedersen
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: faq
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
-This topic contains a number of frequently asked questions and answers to these questions. 
+This article contains frequently asked questions and answers to these questions. 
 
 ## How do I get started?
 
@@ -32,7 +32,7 @@ To read about enabling debugging in AL, see here [Debugging](devenv-debugging.md
 
 ## Why do the symbols downloaded to Visual Studio Code have different versions from the apps that are installed on my tenant?
 
-We always download the highest published version of symbols. This means that if one of your dependencies has a higher version published, that version will be downloaded even if it's not installed for your environment.
+We always download the highest published version of symbols. This means that if one of your dependencies has a higher version published, that version is downloaded even if it's not installed for your environment.
 
 ## Where do I find help regarding AppSource validation and submission?
 
@@ -40,7 +40,7 @@ When submitting an app for AppSource, you must make sure that it validates again
 
 ## What constitutes the identity of an app?
 
-To read about app identity and why it is important to keep certain settings for an app unchanged, see [App Identity](devenv-app-identity.md).
+To read about app identity and why it's important to keep certain settings for an app unchanged, see [App Identity](devenv-app-identity.md).
 
 <!--
 ## File APIs aren't available in Extensions V2. What do I do?
@@ -55,11 +55,11 @@ With the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you can find A
 
 For things that are not possible to achieve in AL code, the recommendation is to use Azure Functions to host the DLL or C# code previously embedded and call that service from AL. -->
 
-## Extensions published from Visual Studio Code or created Use Designer have disappeared from a sandbox environment. Why?
+## Extensions published from Visual Studio Code or created Use Designer disappeared from a sandbox environment. Why?
 
-Extensions that have been published to a sandbox environment from Visual Studio Code or created Use Designer are removed when the sandbox environment is updated or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available.
+Extensions that are published to a sandbox environment from Visual Studio Code or created Use Designer are removed when the sandbox environment is updated or relocated within our service. However, the data of an app isn't removed, so you only have to republish and install the app to make it available.
 
-If you have per-tenant extensions (PTEs) installed that depend on extensions published from Visual Studio Code, the per-tenant extensions will be removed too.
+If you have per-tenant extensions (PTEs) installed that depend on extensions published from Visual Studio Code, the per-tenant extensions are removed too.
 
 If you have partner telemetry enabled, search for event id `LC0105`, which includes a short description of the reason for your environment update or relocation.
 
@@ -69,7 +69,7 @@ For more information, see [Sandbox Environments](../administration/environment-t
 
 ## Can I create something similar to Menusuites?
 
-In the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the concept of Menusuites is not supported. The two primary purposes of Menusuites are:
+In the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the concept of Menusuites isn't supported. The two primary purposes of Menusuites are:
 
 - Making pages searchable
 - Making pages accessible through a navigation structure

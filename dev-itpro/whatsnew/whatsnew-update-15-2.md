@@ -3,7 +3,7 @@ title: "Update 15.2 for Microsoft Dynamics 365 Business Central 2019 Release Wav
 ms.author: solsen
 ms.date: 04/01/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ---

@@ -2,25 +2,25 @@
 title: Collecting Errors
 description: Learn how to write AL code that returns more than one error and presents users with more detailed error information.
 ms.custom: bap-template
-ms.date: 01/04/2024
-ms.topic: conceptual
+ms.date: 05/19/2025
+ms.topic: concept-article
 author: jswymer
 ms.author: jswymer
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ---
 
-# Collecting Errors
+# Collecting errors
 
-This article explains how to write AL code that captures multiple errors and displays them in the user interface. Referred to as *collectible errors*, this feature can simplify validation scenarios. Specifically, scenarios where users are presented with a list of things to fix.
+This article explains how to write AL code that captures multiple errors and displays them in the user interface. This feature can simplify validation scenarios and is referred to as *collectible errors*. Specifically, scenarios where users are presented with a list of things to fix.
 
 ## How to use the collectible errors feature
 
-Normally, when an error occurs in a procedure, the procedure stops on the first error it meets. Using collectable errors essentially postpones error handling to the end of the procedure call. AL code execution won't stop on errors. But instead, it continues until the end and gathers errors as they occur.
+Normally, when an error occurs in a procedure, the procedure stops on the first error it meets. Using collectable errors essentially postpones error handling to the end of the procedure call. AL code execution doesn't stop on errors. But instead, it continues until the end and gathers errors as they occur.
 
 One use of the collectible errors feature is for validating multiple conditions, where you check each condition with a collectible error. Then, instead of stopping the user and presenting each validation separately, you present all errors collected in a single page during the final validation. 
 
 > [!IMPORTANT]
-> It's recommended that you handle all collectible errors from your AL code. Otherwise, if any errors are present in the collected list when a procedure ends, the user will receive an error dialog that concatenates all the error messages. This error dialog can be difficult for users to understand. See the example below for how to handle collectible errors.
+> It's recommended that you handle all collectible errors from your AL code. Otherwise, if any errors are present in the collected list when a procedure ends, the user receives an error dialog that concatenates all the error messages. This error dialog can be difficult for users to understand. See the example below for how to handle collectible errors.
 
 
 ## Collectible errors API
@@ -30,7 +30,7 @@ AL includes several methods, properties, and attributes that are designed specif
 
 ## Example 
 
-The following code example illustrates how to use collectible errors. It's built around the `DoPost` codeunit, which sets simple criteria on what can or can't be included in table fields. By itself, this procedure will stop when errors occur. By applying the `ErrorBehavior(ErrorBehavior::Collect)` attribute, the `PostWithErrorCollect ()` and `PostWithErrorCollectCustomUI ()` procedures show you a couple ways to collect and present these errors.
+The following code example illustrates how to use collectible errors. It's built around the `DoPost` codeunit, which sets simple criteria on what can or can't be included in table fields. By itself, this procedure stops when errors occur. By applying the `ErrorBehavior(ErrorBehavior::Collect)` attribute, the `PostWithErrorCollect ()` and `PostWithErrorCollectCustomUI ()` procedures show you a couple ways to collect and present these errors.
 
 ```AL
 pageextension 50100 CollectingErrorsExt extends "Customer List"

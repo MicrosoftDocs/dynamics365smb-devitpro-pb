@@ -2,7 +2,7 @@
 title: "Editable property"
 description: "Sets a value that indicates whether a field, page, or control can be edited through the UI."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,8 +17,8 @@ Sets a value that indicates whether a field, page, or control can be edited thro
 
 ## Applies to
 -   Table field
--   Page
 -   Request Page
+-   Page
 -   Page Label
 -   Page Field
 -   Page Group

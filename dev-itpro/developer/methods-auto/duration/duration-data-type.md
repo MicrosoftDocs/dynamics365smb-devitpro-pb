@@ -2,7 +2,7 @@
 title: "Duration data type"
 description: "Represents the difference between two DateTimes."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -17,6 +17,12 @@ Represents the difference between two DateTimes. This value can be negative. It 
 
 
 
+## Instance methods
+The following methods are available on instances of the Duration data type.
+
+|Method name|Description|
+|-----------|-----------|
+|[ToText([Boolean])](duration-totext-method.md)|Converts the value to a text. Equvilant to calling Format(value, 0, 0).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

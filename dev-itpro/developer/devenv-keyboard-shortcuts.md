@@ -2,8 +2,8 @@
 title: Keyboard shortcuts for AL in Visual Studio Code
 description: List of keyboard shortcuts for the new development environment (Visual Studio Code).
 author: SusanneWindfeldPedersen
-ms.date: 03/01/2024
-ms.topic: conceptual
+ms.date: 05/26/2025
+ms.topic: overview
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen

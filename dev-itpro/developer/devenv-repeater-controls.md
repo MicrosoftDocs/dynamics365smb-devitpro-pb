@@ -7,7 +7,7 @@ ms.custom: bap-template
 ms.date: 11/24/2022
 ms.reviewer: jswymer
 
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Work with repeater controls

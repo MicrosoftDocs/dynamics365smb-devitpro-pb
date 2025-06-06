@@ -2,7 +2,7 @@
 title: "Opening the Business Central Tablet or Phone Client from a Browser"
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: blrobl
 ---
 # Opening the Business Central Tablet or Phone Client from a Browser

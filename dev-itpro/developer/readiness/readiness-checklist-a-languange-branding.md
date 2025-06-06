@@ -4,7 +4,7 @@ description: "Guidelines on language, branding and images"
 author: a-emniel
 ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Language, Branding, and Microsoft Images

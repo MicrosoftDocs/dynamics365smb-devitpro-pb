@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.date: 06/26/2021
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # Monitoring Business Central Server events using Event Viewer
 

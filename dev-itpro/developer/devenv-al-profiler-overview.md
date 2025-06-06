@@ -15,6 +15,25 @@ ms.reviewer: solsen
 
 Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for *instrumentation* profiling and *sampling* profiling. The AL Profiler is based on a snapshot of running code. The snapshot is a recording of running code that allows for later offline inspection. The AL Profiler is a powerful tool for analyzing performance in code written for Business Central.
 
+## When to use the AL Profiler
+
+- When users report that specific pages or processes are running slower than expected.
+- When you're optimizing your extension before publishing it to AppSource.
+- When you want to validate performance improvements in your code.
+- When you need to identify, which parts of a complex process are consuming the most time.
+
+<!--
+## Profiling types compared
+
+| Feature | Instrumentation Profiling | Sampling Profiling |
+|---------|---------------------------|-------------------|
+| Accuracy | High - precise timing for each method | Moderate - statistical representation |
+| Performance impact | Higher - adds overhead to execution | Lower - minimal impact on execution |
+| Setup complexity | More complex | Simpler |
+| Best for | Detailed analysis of specific code paths | Quick overview of performance patterns |
+| File size | Larger | Smaller |
+-->
+
 ## Snapshot of the running code
 
 With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you can capture a performance profile of the code that was executed for a snapshot. There are two types of profiling; *instrumentation* profiling and *sampling* profiling. Both types of profiling are based on a snapshot of running code. The instrumentation profiling is more accurate and provides more insight. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views. The sampling profiling is less accurate, but can provide faster insights into performance trends on code.
@@ -176,7 +195,6 @@ The following table provides an overview of the shortcut key combinations that y
 |<kbd>-</kbd> (minus) | Collapse all nodes.|
 |<kbd>*</kbd> (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
-
 ### Inline Profiler CodeLens for AL profiling results
 
 The Profiler CodeLens for AL shows profile results. At hover, the Profiler CodeLens displays time spent in milliseconds for a specific method, and the number of hits on the method. When opening a profiler file, the lens will show information on all statements that appear as frames in the profiler.
@@ -208,4 +226,4 @@ In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performanc
 [Snapshot debugging](devenv-snapshot-debugging.md)  
 [AL Language extension configuration](devenv-al-extension-configuration.md)  
 [In-client performance profiler overview](../administration/performance-profiler-overview.md)  
-[JSON files](devenv-json-files.md)  
+[JSON files](devenv-json-files.md)

@@ -4,7 +4,7 @@ description: Learn how to use AL-Go to implement application lifecycle managemen
 author: andersgMSFT
 ms.author: andersg
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 
 ms.date: 04/21/2023
 ms.custom: bap-template

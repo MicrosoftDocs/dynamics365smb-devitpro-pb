@@ -3,7 +3,7 @@ title: "Consulting"
 description: "Experienced partners can help users get started with confidence by offering quality consulting services designed to deliver predictable outcomes."
 author: SusanneWindfeldPedersen
 ms.date: 12/21/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -36,12 +36,12 @@ To help deliver repeatable and predictable outcomes, partners and consulting ser
 - The services offered are customer-specific engagements that are conducted on-site, are fixed in scope, many are fixed price or free, have a fixed duration, and a clearly defined outcome. 
 - The types of engagements are standardized to help drive consistency and predictable outcomes. The engagements categories are: briefings, assessments, workshops, proof of concepts, and implementations. 
 
-If you're interested in listing consulting services on AppSource, you can find more information on requirements and how to get started [here](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf). 
+<!--> 404 link
+If you're interested in listing consulting services on AppSource, you can find more information on requirements and how to get started [here](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf).  -->
 
 ## Where do I learn more?
 
 To learn more about Microsoft AppSource consulting services offerings select the following links:  
 - [AppSource Consulting Offerings](https://appsource.microsoft.com/marketplace/consulting-services?country=US&page=1)  
-- [Partner Eligibility](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf)  
 - [Partner Nomination Form](https://appsource.microsoft.com/partners/list-consulting-service)  
 - [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)

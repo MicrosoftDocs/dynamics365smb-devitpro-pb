@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
 ms.collection:
-ms.date: 04/15/2024
+ms.date: 04/01/2025
 ms.custom: bap-template
 ---
 
@@ -19,7 +19,7 @@ Extending Copilot in Business Central requires working with several different co
 A Copilot in a Business Central extension involves three essential components:
 
 - The prompt dialog page for creating the UI for Copilot.
-- The AI module of the system application that provides the programming interface between Business Central and Azure Open AI Service.
+- The AI module of the system application that provides the programming interface between Business Central and Azure OpenAI Service.
 - An Azure OpenAI resource, which is a service offered by Microsoft Azure that enables developers to use the OpenAI natural language processing models to build intelligent applications.
 
 ![Shows the tasks in the generative-AI development](media/dev-generative-ai-overview.svg)

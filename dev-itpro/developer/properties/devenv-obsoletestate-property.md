@@ -2,7 +2,7 @@
 title: "ObsoleteState property"
 description: "Marks whether the object will be deprecated."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -19,6 +19,7 @@ Marks whether the object will be deprecated.
 -   Page Action Ref
 -   Page Custom Action
 -   Page File Upload Action
+-   Report Layout
 -   Table
 -   Table field
 -   Table key

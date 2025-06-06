@@ -4,11 +4,11 @@ description: Learn how to use PromptDialog page type to create a Copilot experie
 author: jswymer 
 ms.author: jswymer 
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.collection:
   - get-started
   - bap-ai-Copilot
-ms.date: 11/14/2024
+ms.date: 04/01/2025
 ms.custom: bap-template
 ---
 # Build Copilot user experience

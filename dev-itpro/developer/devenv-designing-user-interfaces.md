@@ -3,7 +3,7 @@ title: Designing the User Interface
 description: "Provides an overview of the components available when designing a user interface in Business Central"
 author: kennieNP
 ms.date: 04/22/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: kepontop
 ms.reviewer: jswymer
 ---

@@ -2,7 +2,7 @@
 title: Handling UI interaction when working with web services
 description: Describes how UI methods can make web service calls fail. 
 ms.date: 12/18/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Handling UI interaction when working with web services

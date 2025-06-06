@@ -1,8 +1,8 @@
 ---
-title: Compare Work Processes in Dynamics SL to Business Central
-description: Get some tips and tricks for how to do things in Business Central online that you currently do in Dynamics SL.
+title: Compare work processes in Dynamics SL to Business Central
+description: Get tips and tricks for how to do things in Business Central online that you currently do in Dynamics SL.
 author: lcontreras
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge, SL, migration, video

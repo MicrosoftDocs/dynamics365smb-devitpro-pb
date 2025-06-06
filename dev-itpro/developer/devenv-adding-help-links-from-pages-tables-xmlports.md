@@ -4,7 +4,7 @@ description: This article shows how to specify the Help link on pages, reports a
 author: SusanneWindfeldPedersen
 ms.date: 05/23/2022
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ---
 

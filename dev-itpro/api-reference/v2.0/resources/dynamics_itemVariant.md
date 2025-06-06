@@ -4,7 +4,7 @@ description: An item variant object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an item variant in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -28,7 +26,6 @@ Represents an item variant in [!INCLUDE[prod_short](../../../includes/prod_short
 |[DELETE itemVariant](../api/dynamics_itemvariant_delete.md)|none|Deletes a item variant object.|
 |[POST itemVariant](../api/dynamics_itemvariant_create.md)|itemVariant|Creates a item variant object.|
 |[PATCH itemVariant](../api/dynamics_itemvariant_update.md)|itemVariant|Updates a item variant object.|
-
 
 ## Navigation
 
@@ -49,7 +46,7 @@ Represents an item variant in [!INCLUDE[prod_short](../../../includes/prod_short
 
 ## JSON representation
 
-Here is a JSON representation of the itemVariant resource.
+Here's a JSON representation of the itemVariant resource.
 
 
 ```json
@@ -62,11 +59,9 @@ Here is a JSON representation of the itemVariant resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
-
-
 
 ## Related information
+
 [GET itemVariant](../api/dynamics_itemVariant_Get.md)  
 [DELETE itemVariant](../api/dynamics_itemVariant_Delete.md)  
 [POST itemVariant](../api/dynamics_itemVariant_Create.md)  

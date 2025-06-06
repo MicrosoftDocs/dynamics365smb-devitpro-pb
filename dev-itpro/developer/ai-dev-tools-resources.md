@@ -4,48 +4,57 @@ description: Learn how you can use the developer tools for Copilot in Business C
 author: pborring
 ms.author: solsen
 ms.reviewer: solsen
-ms.topic: conceptual
-ms.date: 03/27/2025
+ms.topic: concept-article
+ms.date: 06/04/2025
 ---
 
-# Business Central AI resources
+# Business Central AI resources (preview)
+
+[This article is prerelease documentation and is subject to change.]
 
 A key feature of the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot is that [!INCLUDE [prod_short](includes/prod_short.md)] partners can use Large Language Models (LLMs) via Microsoft-managed Azure OpenAI resources for their AppSource extensions that extend Copilot in Business Central. This approach eliminates the need to independently procure and manage Azure OpenAI subscriptions for customers.
 
 Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources is the default and recommended approach.
 
-Some partners or customers might have special requirements that require them to use their own Azure OpenAI (AOAI) subscription, when running the feature in production, or when developing and testing in sandboxes, which is also supported in [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
- 
+In certain cases, partners or customers might need to use their own Azure OpenAI (AOAI) subscription for production environments. [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot fully support this option when specific requirements make it necessary.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 ## Benefits of relying on the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources
 
 Using the AI resources provides several benefits, including:
 
-- Reduced operational overhead: Avoid the need to handle infrastructure management, updates, monitoring, troubleshooting, or maintenance of custom Azure OpenAI subscriptions, freeing up resources to focus on core business operations and providing value-adding IP to customers.
-- Simplified onboarding: Quickly integrate AI capabilities into your solutions without having to navigate the complexities of setting up and managing your own Azure OpenAI subscription.
-- Improved reliability: Proactive scaling, throttling, load balancing, and fault tolerance measures, ensuring consistent performance during peak demand.
-- Enhanced security compliance: Built-in compliance measures and governance, including robust protection from malicious and harmful content, ensuring compliance with data residency requirements, reducing the burden of ensuring regulatory compliance for ISVs.
-- Streamlined experience for customers: customers experience a more seamless AI resource management process, avoiding the need to maintain different configurations for separate ISV solutions.
+- *Reduced operational overhead*  
+Avoid the need to handle infrastructure management, updates, monitoring, troubleshooting, or maintenance of custom Azure OpenAI subscriptions, freeing up resources to focus on core business operations and providing value-adding IP to customers.
+- *Simplified onboarding*  
+Quickly integrate AI capabilities into your solutions without having to navigate the complexities of setting up and managing your own Azure OpenAI subscription.
+- *Improved reliability*  
+Proactive scaling, throttling, load balancing, and fault tolerance measures, ensuring consistent performance during peak demand.
+- *Enhanced security compliance*  
+Built-in compliance measures and governance, including robust protection from malicious and harmful content, ensuring compliance with data residency requirements, reducing the burden of ensuring regulatory compliance for ISVs.
+- *Streamlined experience for customers*  
+Customers experience a more seamless AI resource management process, avoiding the need to maintain different configurations for separate ISV solutions.
 
 ## Consumption-based customer billing when using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources
 
-By using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, you can deliver a cohesive AI consumption tracking and billing experience for [!INCLUDE [prod_short](includes/prod_short.md)] customers. Customers using AI resources across multiple AI-enabled solutions built with [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot benefit from a unified approach to AI consumption monitoring and invoicing, avoiding the need to reconcile multiple invoices or metrics from separate ISVs.
+By using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, you can deliver a cohesive AI consumption tracking and billing experience for [!INCLUDE [prod_short](includes/prod_short.md)] customers. Customers who use AI resources across multiple AI-enabled solutions built with [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot benefit from a unified approach to AI consumption monitoring and invoicing, thereby they avoid the need to reconcile multiple invoices or metrics from separate ISVs.
 
 This allows customers to:
 
 - Track AI consumption at a granular level, per Copilot feature.
 - Receive a consolidated invoice for AI consumption.
 
-[!INCLUDE [prod_short](includes/prod_short.md)] AI resources are billed in alignment with Copilot Studio message billing, and follows the AI Tools rates, that depends on the underlying language model of the Copilot feature prompts.
+[!INCLUDE [prod_short](includes/prod_short.md)] AI resources are billed in alignment with Copilot Studio message billing, and follow the AI Tools rates, that depends on the underlying language model of the Copilot feature prompts.
 
 |Business Central AI resources model|AI Tools rate|
-|--------------------------------------|-------------|
+|-----------------------------------|-------------|
 |4o|Standard|
 |4o mini|Basic|
 
-You can read more about the rates under AI Tools in [Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management#message-scenarios)
+Learn more about the rates under AI Tools in [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management#message-scenarios)
  
 > [!NOTE]  
-> It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP). <!-- link to more info? -->
+> It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP).
 
 ## Use your own subscription with customers
 
@@ -53,7 +62,9 @@ For most ISVs, the default [!INCLUDE [prod_short](includes/prod_short.md)] AI re
 
 ## Differences between [!INCLUDE [prod_short](includes/prod_short.md)] AI resources and custom Azure OpenAI subscriptions
 
-By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot, partners can easily get access to AI resources when they extend Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. While these AI resources are the same as what's being used for base application Copilot features, and are the default and recommended approach, partners might have special requirements that require them to use their own or customer-owned Azure OpenAI (AOAI) subscription when running the feature in production. The following section provides an overview of the major differences between using the AI resources in the toolkit and using your own Azure OpenAI subscription and model deployment.
+By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot, partners can easily get access to AI resources when they extend Copilot in [!INCLUDE [prod_short](includes/prod_short.md)].
+
+[!INCLUDE [prod_short](includes/prod_short.md)] AI resources are identical to those used in base application Copilot features and are the recommended default option. Partners, however, might sometimes need to use their own or customer-owned Azure OpenAI subscription in production environments when they have specific requirements. The following section provides an overview of the major differences between using the AI resources in the toolkit and using your own Azure OpenAI subscription and model deployment.
 <br><br>
 
 |Area|Business Central AI resources|Your own AOAI subscription|
@@ -66,14 +77,14 @@ By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for
 
 ## Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources and your own subscription in AL
 
-The default and recommended approach is to use the developer toolkit AI resources when extending Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. All you need to do is to authenticate with the `SetManagedResourceAuthorization` method in the [AI Module AzureOpenAI](/dynamics365/business-central/application/system-application/codeunit/system.ai.azure-openai) codeunit. As part of this, you also need to provide your own AzureOpenAI subscription details, but this won't be used.
+The default and recommended approach is to use the developer toolkit AI resources when extending Copilot in [!INCLUDE [prod_short](includes/prod_short.md)]. All you need to do is to authenticate with the `SetManagedResourceAuthorization` method in the [AI Module AzureOpenAI](/dynamics365/business-central/application/system-application/codeunit/system.ai.azure-openai) codeunit. As part of this, you also need to provide your own AzureOpenAI subscription details, but this isn't used.
 
 ```al
 // Example of using the default toolkit AI resources in AL 
 AzureOpenAI.SetManagedResourceAuthorization(Enum::"AOAI Model Type"::"Chat Completions",AzureOpenAIAccountName,AzureOpenAIApiKey,AOAIDeployments.GetGPT4oLatest());
 ```
 
-If you instead want to use your own subscription, whether for customer, or just when you developer or test, you must authenticate with your own subscription using the `SetAuthorization` method.
+If you instead want to use your own subscription, whether for a customer, or just when you develop or test, you must authenticate with your own subscription using the `SetAuthorization` method.
 
 ```al
 // Example of using your own Azure OpenAI subscription in AL 

@@ -3,7 +3,7 @@ title: Use Azure security service tags
 description: "List of Azure service tags for Dynamics 365 Business Central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/30/2025
 ms.reviewer: solsen
 ---

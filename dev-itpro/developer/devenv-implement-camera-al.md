@@ -2,7 +2,7 @@
 title: Implementing the Camera in AL
 description: Learn about how to implement the camera capability on a page in AL.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: blrobl
 ms.author: brobledodiaz
 ms.reviewer: solsen

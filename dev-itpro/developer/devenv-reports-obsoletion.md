@@ -1,12 +1,12 @@
 ---
 title: Obsoleting reports
-description: Learn about how to obsolete Business Central reports
+description: Learn how to obsolete Business Central reports.
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: kepontop
-ms.date: 02/21/2025
+ms.date: 03/13/2025
 ---
 
 # Obsoleting reports
@@ -24,7 +24,7 @@ The report object supports the following properties for deprecations:
 - ObsoleteTag
 - ObsoleteState
 
-Use these properties to communicate why and when the report is deprecated. With compiler preprocessor statements and preprocessor symbols, you can even write code that caters for the different deprecation stages in a uniform way.
+Use these properties to communicate why and when the report is deprecated. With compiler preprocessor statements and preprocessor symbols, you can even write code that caters for the different deprecation stages in a uniform way. Starting in 2025 release wave 1 (runtime 15), you can define the obsoletion properties at the layout level. When these properties are set, the layout appears as deprecated on the **Report Layouts** page in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 
 ```al 
 // Example of how to set obsoletion properties on a report
@@ -42,7 +42,7 @@ report 50100 MyReport
 #endif
 ```
 
-To learn more, go to [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md).
+To learn more about the guidelines, go to [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md).
 
 ## How to communicate report obsoletion to users: Tell-me search results
 
@@ -173,6 +173,7 @@ The **Report Layouts** page in [!INCLUDE[prod_short](../includes/prod_short.md)]
 - Report Caption
 - Layout Caption
 - Layout Summary
+- Layout ObsoleteReason, ObsoleteState, and ObsoleteTag (introduced in 2025 release wave 1 (runtime 15))
 
 You can use any of these properties to communicate the upcoming change to people who open the Help pane for the request page.
 
@@ -206,7 +207,11 @@ report 50100 MyReport
             // Consider adding obsolete text to the layout description
             // This will be shown on the Report Layouts page.
 
-            Summary = 'MyOldLayout is used for showing data about XYZ. **Note that this layout is obsolete and will be removed in the v26 release**';
+            Summary = 'MyOldLayout is used for showing data about XYZ. **Note that this layout is obsolete and will be removed in the v2 release**';
+
+            ObsoleteReason = 'This layout is obsolete and will be removed in the v28 release';
+            ObsoleteState = Pending;
+            ObsoleteTag = 'myObsoleteLayoutTag';
 
         }
 }
@@ -218,9 +223,10 @@ Report telemetry gathers data about which, and when, reports are run in environm
 
 Tenant administrators and app publishers can use this data to gather statistics on report and layout use. The information lets you communicate to organizations and users that they're using reports or layouts that won't be unavailable in the future.
 
-To learn more, go to [Report telemetry](../administration/telemetry-reports-trace.md).
+To learn more about the data provided, go to [Analyzing report telemetry](../administration/telemetry-reports-trace.md).
 
 ## Related information
 
+[Obsoleting report layouts](devenv-multiple-report-layouts.md#obsoleting-layouts)  
 [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md)  
 [Report telemetry](../administration/telemetry-reports-trace.md)  

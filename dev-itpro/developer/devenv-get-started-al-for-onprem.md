@@ -4,7 +4,7 @@ description: Description of how to get started with the new development environm
 author: SusanneWindfeldPedersen
 ms.date: 01/04/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: get-started
 ms.author: solsen
 ms.collection: get-started
 ms.service: dynamics-365-op

@@ -2,7 +2,7 @@
 title: Business Central on-premises to online migration End-to-end overview
 description: This article provides an overview of how the migration works from Business Central on-premises and the necessary tasks for completing the migration.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.reviewer: jswymer
 ms.search.keywords: cloud, migrate, saas, online
 ms.date: 06/11/2024
@@ -154,7 +154,7 @@ This section outlines the general process or phases you go through to migrate da
 
     1. Optimize cloud migration performance:
 
-       Follow practical steps to enhance to improve the efficiency and reliability of the migration process while minimizing the risk of data loss or downtime. 
+       Follow practical steps to enhance and improve the efficiency and reliability of the migration process while minimizing the risk of data loss or downtime. 
 
        To get started, go to [Align SQL table definitions](migration-optimize-replication.md).
 

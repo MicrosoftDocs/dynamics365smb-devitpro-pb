@@ -7,7 +7,7 @@ ms.custom:
   - evergreen
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: reference
 ms.author: jswymer
 ms.date: 09/09/2024
 ---

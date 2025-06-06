@@ -2,7 +2,7 @@
 title: Developing printer extensions in Business Central
 description: Dynamics 365 Business Central supports printing reports to cloud-based printers. 
 ms.date: 06/20/2024
-ms.topic: conceptual
+ms.topic: concept-article
 author: jswymer
 ---
 # Developing printer extensions in Business Central

@@ -4,7 +4,7 @@ description: Learn about how to use OData to obtain a JSON document
 ms.custom: bap-template
 ms.date: 01/28/2024
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # Using OData to Return or Obtain a JSON Document
 You can publish a page as a web service and consume it using JavaScript Object Notation \(JSON\).  

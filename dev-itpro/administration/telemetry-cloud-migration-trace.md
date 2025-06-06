@@ -2,7 +2,7 @@
 title: Analyzing Cloud migration trace telemetry
 description: Learn about cloud migration telemetry for Dynamics 365 Business Central  
 author: jobulsin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, cloud migration
 ms.date: 05/12/2023
 ms.author: jobulsin

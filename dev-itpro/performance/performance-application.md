@@ -1,9 +1,9 @@
 ---
 title: "How Application Configurations Affect Performance"
 description: Learn about tips and tricks for how to tweak your Business Central performance.
-ms.date: 04/01/2021
+ms.date: 02/14/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: KennieNP
 ---
 
@@ -13,7 +13,7 @@ The sections in this article are tips and tricks on how to set up [!INCLUDE[prod
 
 ## Uninstall extensions that you don't use
 
-Any extensions that you install can affect the overall system performance. So if you've installed an app from AppSource, but later discover it's not needed, then uninstall it. The same advice applies to the extension that comes preinstalled in an environment. For example, uninstall all migration extensions after you've migrated data, or if you don't intend to migrate data.
+Any extensions that you install can affect the overall system performance. So if you install an app from AppSource, but later discover it's not needed, then uninstall it. The same advice applies to the extension that comes preinstalled in an environment. For example, uninstall all migration extensions after you've migrated data, or if you don't intend to migrate data.
 
 ## Run things in the background
 
@@ -24,14 +24,13 @@ It's often desirable to offload work from the user session to happen in the back
 - Enable [background posting](/dynamics365/business-central/ui-batch-posting) in areas where your business is using reservations and item tracking using serial and lot numbers
 - [Adjust item costs as a periodic background job](/dynamics365/business-central/finance-adjust-reconcile-inventory-cost-job-queue). Don't adjust automatically. 
 
-
 ### Job queues and performance
 
 [!INCLUDE[task_job_queue_performance](../includes/include-task-job-queue-performance.md)]
 
 ## Avoid locking
 
-When the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database needs to have exclusive access to a table or a data row, it will issue a lock. If another session needs to access a locked resource, it needs to wait until the session holding the lock is finished with its work. There are a few places in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application where you can reduce the risk of locking. 
+When the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database needs to have exclusive access to a table or a data row, it issues a lock. If another session needs to access a locked resource, it needs to wait until the session holding the lock is finished with its work. There are a few places in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application where you can reduce the risk of locking. 
 
 ### Use number series that allow gaps
 
@@ -43,7 +42,7 @@ All sales transactions have to get their cost calculated at some point&mdash;eit
 
 ### Be cautious with the **Rename/Copy company** operations
 
-The **Rename company** and **Copy company** operations aren't intended to run while business transactions are being applied to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. First, the operations are likely to induce locks on the tables that data is copied from. These locks will block users from transacting in the company. Second, the operations use resources on the database, which can in turn cause resource starvation for users working in other companies.  
+The **Rename company** and **Copy company** operations aren't intended to run while business transactions are being applied to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. First, the operations are likely to induce locks on the tables that data is copied from. These locks block users from transacting in the company. Second, the operations use resources on the database, which can in turn cause resource starvation for users working in other companies.  
 
 If you must do a **Rename/Copy company** operation, it's highly recommended to do it outside working hours. Turn off scheduled jobs to avoid locking issues.
 
@@ -55,6 +54,12 @@ The **Copy Company** operation also has many long term effects including the fol
 
 > [!NOTE]
 > For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, the **Rename company** operation is no longer supported. Instead, you can change a company's display name.
+
+## Set up the environment to calculate visible FlowFields only on pages
+
+When you add a FlowField to a page or page extension with the [Visible property](../developer/properties/devenv-visible-property.md) set to `false`, the FlowField doesn't appear on the page. However, its value is still calculated, leading to unnecessary computations and performance issues. As an admin, you can change this behavior by enabling the **Calculate only visible FlowFields** feature in the **Feature Management** page. When enabled, the AL runtime calculates values only for FlowFields that are visible on pages.
+
+Learn more in [FlowFields overview](../developer/devenv-flowfields.md) and [Enabling upcoming features in Feature Management](../administration/feature-management.md).
 
 ## Periodic activities that maintain performance
 
@@ -86,10 +91,11 @@ These areas of the application are known to cause a performance impact and requi
 - [Item tracking and Lot/SN Expiration dates](/dynamics365/business-central/inventory-how-work-item-tracking)  
 
 ## If processing of Sales Order lines is slow
+
 If you experience that processing of Sales Order lines that contain bill-of-materials (BOMs) is slow, then check if _Stockout Warning_ on the page  _Sales & Receivables Setup_, is set to **true**. If that is the case, then change the value to **false**.
 
 Why? 
-_Stockout Warning_ specifies if a warning should be displayed if a user enters a quantity on a sales document that brings the item’s inventory below zero. The calculation includes all sales document lines that havnn't yet been posted. Stockout Warning can still be used on items; by setting the individual Item’s _Stockout Warning_ to **true** on the Item Card. 
+_Stockout Warning_ specifies if a warning should be displayed if a user enters a quantity on a sales document that brings the item’s inventory below zero. The calculation includes all sales document lines that havenn't yet been posted. Stockout Warning can still be used on items; by setting the individual Item’s _Stockout Warning_ to **true** on the Item Card. 
 
 ## Manage the database access intent on reports, API pages, and queries
 
@@ -121,5 +127,5 @@ Finally, make sure that you don't repeat these performance mistakes that we have
 [Performance Topics For Developers](performance-developer.md)  
 [Performance tips for business users](performance-users.md)  
 [Performance Online](performance-online.md)  
-[Performance of On-Premises Installations](performance-onprem.md)  
+[Performance of on-premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  

@@ -1,9 +1,9 @@
 ---
-title: "AL Formatter"
-description: "The AL formatter can help you insert and remove space from AL code."
+title: AL Formatter
+description: The AL formatter can help you insert and remove space from AL code.
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -33,4 +33,3 @@ To format a range, in an already opened project, open the document that you want
 [AL development environment](devenv-reference-overview.md)  
 [AL outline view](devenv-al-outline-view.md)  
 [AL code actions](devenv-code-actions.md)  
-

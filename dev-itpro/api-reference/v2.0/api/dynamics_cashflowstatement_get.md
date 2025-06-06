@@ -28,7 +28,7 @@ GET businesscentralPrefix/companies({id})/cashFlowStatements
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and a **cashFlowStatement** object in the response body.
@@ -37,17 +37,17 @@ If successful, this method returns a ```200 OK``` response code and a **cashFlow
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/cashFlowStatements?$orderby=lineNumber&$filter=dateFilter ge 2019-01-01 and dateFilter le 2020-12-31
 ```
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
->   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
 {
@@ -61,7 +61,7 @@ Here is an example of the response.
 }
 ```
 
-
 ## Related information
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[cashflowstatement](../resources/dynamics_cashflowstatement.md)    
+
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
+[cashflowstatement](../resources/dynamics_cashflowstatement.md)  

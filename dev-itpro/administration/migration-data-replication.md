@@ -1,10 +1,10 @@
 ---
 title: Data replication overview
-description: The next phase of data migration process is replicating the on-premises data to online, also known as data migration.
+description: Learn how to replicate on-premises data to an online environment after setting up the cloud migration.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/15/2023
 ms.custom: bap-template
 ---
@@ -67,7 +67,7 @@ When a company is created in [!INCLUDE [prod_short](../developer/includes/prod_s
 
 The first time you run data replication, all on-premises tables are replicated to the online tenant database. This run is called a full replication. Subsequent runs use SQL change tracking versions to replicate only data that changed since the last replication, making the process faster.
 
-The next replication run will either copy only the changes made since the previous run or replicate the entire table, depending on the retention period set for change tracking in your on-premises database.
+The next replication run will either copy only the recent changes or replicate the entire table, depending on the retention period set for change tracking in your on-premises database.
 
 For faster replications, trigger migration runs at least once within the retention period. If an on-premises table changed since the previous replication run, but the change tracking retention period expired, the table is fully replicated again.
 

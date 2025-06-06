@@ -5,7 +5,7 @@ ms.custom: bap-template
 ms.date: 04/01/2021
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ---
 # Monitoring SQL Database Deadlocks

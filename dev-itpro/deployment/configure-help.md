@@ -1,8 +1,8 @@
 ---
 title: Configure the Help experience
 description: Learn how to give your customers access to the right Help content for Business Central online and on-premises.
-author: solsen
-ms.topic: conceptual
+author: SusanneWindfeldPedersen
+ms.topic: concept-article
 ms.date: 01/08/2025
 ms.author: solsen
 ms.reviewer: solsen
@@ -108,8 +108,6 @@ If you deploy a solution that customizes Microsoft's default application, then y
 
 > [!IMPORTANT]
 > The remainder of this section is for those people who need a copy of Microsoft's content to deploy to a website along with their own content. In many cases, you don't need to customize Microsoft's content, and this section is irrelevant for you. However, if you deploy a customized solution on-premises or in a closed environment, then you might need to include Microsoft's content in your Help website.
-
-[!INCLUDE [ua-robots](../includes/ua-robots.md)]
 
 Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only.
 

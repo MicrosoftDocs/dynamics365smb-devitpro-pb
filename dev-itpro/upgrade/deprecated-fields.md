@@ -2,7 +2,7 @@
 title: Fields that are Moved, Removed, or Replaced
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the fields that you want to refactor your code for.
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.search.keywords: deprecated, obsolete
 ms.date: 04/01/2021

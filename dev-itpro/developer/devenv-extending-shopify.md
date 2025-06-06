@@ -5,8 +5,8 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.custom: bap-template
-ms.date: 08/26/2024
-ms.topic: conceptual
+ms.date: 05/27/2025
+ms.topic: how-to
 ---
 # Extend the Shopify Connector
 
@@ -122,6 +122,36 @@ Make sure that you filled in the **Allowed redirection URL(s)** field correctly 
 In the **Overview** section of the app, choose the **Select Store** action. First install the app from there, then try to connect [!INCLUDE [prod_short](../includes/prod_short.md)] to the Shopify store again.
 
 ## Extensibility examples
+
+### Application manifest
+
+To extend the Shopify Connector, create a new extension and add Shopify Connector as a dependency.
+
+```json
+{
+  "id": "a74041b2-f9d2-4899-b4bd-58388a10f169",
+  "name": "ExtendShopify",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "dependencies": [
+    {
+      "id":  "ec255f57-31d0-4ca2-b751-f2fa7c745abb",
+      "name":  "Shopify Connector",
+      "publisher":  "Microsoft",
+      "version": "25.0.0.0"
+    }
+  ],
+  "platform": "1.0.0.0",
+  "application": "25.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "runtime": "14.0"
+}
+```
 
 ### Order processing
 
@@ -599,7 +629,7 @@ codeunit 50109 "Shpfy Product Export Tag"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnAfterCreateTempShopifyProduct, '', false, false)]
     procedure AfterCreateTempShopifyProduct(Item: Record Item; var ShopifyProduct: Record "Shpfy Product"; var ShopifyVariant: Record "Shpfy Variant"; var ShopifyTag: Record "Shpfy Tag")
     begin
-        ShopifyTag."Parent Table No." := 30127;
+        ShopifyTag."Parent Table No." := Database::"Shpfy Product";
         ShopifyTag."Parent Id" := ShopifyProduct.Id;
         ShopifyTag.Tag := Format(Item."Replenishment System");
         if not ShopifyTag.Insert() then
@@ -633,6 +663,7 @@ codeunit 50108 "Shpfy Product Import Mapping"
     end;
 }
 ```
+
 #### Process imported product metafields
 
 The following example shows how to handle product metafields. Metafields are a flexible way to add and store additional information about a Shopify resource, such as a product or variant. 
@@ -659,6 +690,55 @@ codeunit 50110 "Shpfy Product Metafields"
     end;
 }
 ```
+
+#### Modify created Item or Item Variant description
+
+The following example shows how to modify the description of an item or item variant that you created based on information received from Shopify. For example, you can build a name based on item and variant information.
+
+```al
+codeunit 50100 "Shpfy Custom Item Desc."
+{
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnAfterCreateItemVariant, '', false, false)]
+    local procedure ModifyItemVariantDescription(Shop: Record "Shpfy Shop"; ShopifyProduct: Record "Shpfy Product"; var ShopifyVariant: Record "Shpfy Variant"; Item: Record Item; var ItemVariant: Record "Item Variant");
+    begin
+        // Build name based on Item and Variant info
+        ItemVariant.Description := CopyStr(Item.Description + ' - ' + ShopifyVariant."Display Name", 1, MaxStrLen(ItemVariant.Description));
+        ItemVariant.Modify(true);
+    end;
+
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Product Events", OnAfterCreateItem, '', false, false)]
+    local procedure ModifyItemDescription(Shop: Record "Shpfy Shop"; var ShopifyProduct: Record "Shpfy Product"; ShopifyVariant: Record "Shpfy Variant"; var Item: Record Item);
+    begin
+        Item.Description := CopyStr(ShopifyVariant."Display Name", 1, MaxStrLen(Item.Description));
+        Item."Description 2" := CopyStr(ShopifyVariant."Display Name", MaxStrLen(Item.Description) + 1, MaxStrLen(Item."Description 2"));
+        Item.Modify(true);
+    end;
+}
+```
+
+### Customer properties
+
+Customer information is essential for businesses to understand their customers, provide better service, and build long-term relationships. You can subscribe to various events from the **Shpfy Customer Events** codeunit.
+
+#### Adjust created customer based on information received from Shopify
+
+The following example shows how to adjust a created customer based on information received from Shopify. For example, you can remove all non-numeric characters from the phone number.
+
+```al
+codeunit 50101 "Shpfy Custom Customer Info"
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Shpfy Customer Events", OnAfterCreateCustomer, '', false, false)]
+    local procedure ModifyCustomerPhoneNo(Shop: Record "Shpfy Shop"; var ShopifyCustomerAddress: Record "Shpfy Customer Address"; var Customer: Record Customer);
+    begin
+        // Remove all non-numeric characters from the phone number
+        Customer."Phone No." := DelChr(Customer."Phone No.", '=', DelChr(Customer."Phone No.", '=', '1234567890/+.()'));  
+        Customer.Modify(true);
+    end;
+}
+```
+
 ## Related information
 
 [Extensibility overview](devenv-extensibility-overview.md)  

@@ -47,7 +47,7 @@ codeunit 1160 "AP Install"
    ...
    end;
 
-   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Company - Initialize", 'OnCompanyInitialize', '', false, false)]
+   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Company-Initialize", 'OnCompanyInitialize', '', false, false)]
    local procedure CompanyInitialize()
    begin
    ...

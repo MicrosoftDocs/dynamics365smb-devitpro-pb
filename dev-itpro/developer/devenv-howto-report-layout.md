@@ -1,11 +1,11 @@
 ---
 title: Creating a Word layout report
-description: Describes the steps involved in creating a report that uses a Word layout.
+description: Learn how to create a report that uses a Word layout.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 12/30/2024
+ms.date: 02/13/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ---
 
@@ -26,7 +26,7 @@ If you want to create a new Word layout from Visual Studio Code, do the followin
 
 ## How to lay out your report with Word layouts
 
-With Word layouts, you use Word as the editor for the report. Microsoft Word offers various features to help you format and layout your document reports. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that matches your organization. 
+With Word layouts, you use Word as the editor for the report. Microsoft Word offers various features to help you format and layout your document reports. You can customize the margins, page orientation, and line spacing to suit your needs. You can define advanced header/footers, utilize sections to change the layout style in different places of the report layout, and utilize fonts to get just the typography that matches your organization.
 
 In the Word report layout, you specify the fields of the report dataset to include on report and how the fields are arranged. You also define the general format of the report, such as text font and size, margins, and background images. You typically arrange the content of the report by adding tables to the layout. To make general formatting and layout changes, such as changing text font, adding and modifying a table, or removing a data field, use the basic editing features of Word, like you do with any Word document.
 
@@ -73,17 +73,17 @@ Using tables, you can design layouts with lines that have text aligned to both t
 There are at least two things you should consider when adding pictures to your Word layout:
 
 1. Control how they fit into the layout (don't overflow).
-2. Reduce report file size by compressing the pictures.
+1. Reduce report file size by compressing the pictures.
 
 #### Control how pictures fit into the layouts
 
-When inserting a picture, ensure that it doesn't take up space according to its size, but that it's adjusted to the size that you want in your layout. The best way to do this is to encapsulate the picture in a cell in a table, maybe in a 1x1 table introduced only for this purpose. When you change the size of a table cell for a picture, by default it still adjusts to fit the picture. Therefore, you must also disable the cell's ability to change its size dynamically. 
+When inserting a picture, ensure that it doesn't take up space according to its size, instead adjust it to the size that you want it in your layout. The best way to do this is to encapsulate the picture in a cell in a table, maybe in a 1x1 table introduced only for this purpose. When you change the size of a table cell for a picture, by default it still adjusts to fit the picture. Therefore, you must also disable the cell's ability to change its size dynamically. 
 
 To control the picture size using a table, do as follows:
 
 1. Mark the cell.
-2. Under *Layout*, Set *Height* and *Width* in the Cell size menu.
-3. In the *Table* menu, click *Properties*. On the *Table* tab, click *Positioning* and then uncheck the *Automatically resize to fit contents* option.
+1. Under *Layout*, Set *Height* and *Width* in the Cell size menu.
+1. In the *Table* menu, select *Properties*. On the *Table* tab, select *Positioning* and then uncheck the *Automatically resize to fit contents* option.
 
 Controlling how pictures fit into the layouts is important both for static files in the layout and for pictures inserted from the report dataset.
 
@@ -93,27 +93,23 @@ When adding pictures directly to your layout file, such as background images or 
 
 To compress pictures that are part of the layout file, do as follows:
 
-1. When you have inserted your pictures into Word, select the picture or pictures that you want to compress.
-2. Under *Picture Tools*, on the *Format* tab, in the *Adjust* group, select *Compress picture*. Then choose what and how you want to compress and select OK.
+1. After inserting your pictures into Word, select the picture or pictures that you want to compress.
+1. Under *Picture Tools*, on the *Format* tab, in the *Adjust* group, select *Compress picture*. Then choose what and how you want to compress and select OK.
 
 Learn more at [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
 
-For pictures that are part of the report dataset, you need to adjust the size in Business Central. You can use the codeunit 5080 "Image Handler Management" to scale images in AL (from version 24.1 also available in [!INCLUDE[prod_short](includes/prod_short.md)] online). Learn more at [Codeunit "Image Handler Management"](/dynamics365/business-central/application/base-application/codeunit/system.media.image-handler-management).
+For pictures that are part of the report dataset, you need to adjust the size in [!INCLUDE[prod_short](includes/prod_short.md)]. You can use the codeunit 5080 "Image Handler Management" to scale images in AL (from version 24.1 also available in [!INCLUDE[prod_short](includes/prod_short.md)] online). Learn more at [Codeunit "Image Handler Management"](/dynamics365/business-central/application/base-application/codeunit/system.media.image-handler-management).
 
 ### Using tables to display data from the report dataset (simple repeaters)
 
 If you want to add a table to the report layout where data in each row comes from a dataitem from the report dataset, do as follows:
 
 1. Create a table with two rows and a column for each field that you want displayed.
+1. In the first row, add text for the headers, either as static text or from the `Labels` part of the XML Mapping pane. This row is the header for the table.
+1. The second row is the placeholder for the repeating rows with data fields. Select the entire row.  
+1. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.   
+1. Add the repeating fields to the row as follows:  
 
-2. In the first row, add text for the headers, either as static text or from the `Labels` part of the XML Mapping pane. This row is the header for the table.
-
-3. The second row is the placeholder for the repeating rows with data fields. Select the entire row.  
-  
-4. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.  
-  
-5. Add the repeating fields to the row as follows:  
- 
     1. Place your pointer in a cell.  
     1. In the **XML Mapping** pane, right-click the field that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
     1. For each field, repeat steps a and b.  
@@ -121,7 +117,7 @@ If you want to add a table to the report layout where data in each row comes fro
 Learn more at [Supporting repeating content](/office/client-developer/word/content-controls-in-word#supporting-repeating-content).
 
 > [!TIP]  
-> When you work with a very long table, it'll run across multiple pages. It's possible to set up the table so that the table header row appears on each page automatically. To achieve this, do as follows:
+> When you work with a long table, it runs across multiple pages. It's possible to set up the table so that the table header row appears on each page automatically. To achieve this, do as follows:
 >
 > 1. Select the header row or rows that you want to repeat on each page. The selection must include the first row of the table.
 > 1. Under *Table Tools*, on the *Layout* tab, in the *Data* group, choose *Repeat Header Rows*.
@@ -132,14 +128,11 @@ Learn more at [Supporting repeating content](/office/client-developer/word/conte
 
 If you want to add a bulleted or numbered list to the report layout where data in each row comes from a dataitem from the report dataset, do as follows:
 
-1. Place the cursor on the place where you want the list to be displayed.
-  
-2. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.  
+1. Place the cursor on the place where you want the list to be displayed. 
+1. In the **XML Mapping** pane, right-click the control that corresponds to the report data item that contains the fields that you want repeated, choose **Insert Content Control**, and then choose **Repeating**.  
+1. Inside the content control of the repeater, start the bulleted or numbered list (from *Home* > *Paragraph*). This adds a single entry in the list.
+1. Now add the repeating fields to the list entry as follows:  
 
-3. Inside the content control of the repeater, start the bulleted or numbered list (from *Home* > *Paragraph*). This adds a single entry in the list.
-
-4. Now add the repeating fields to the list entry as follows:  
- 
    1. Place your pointer on the list line.  
    1. In the **XML Mapping** pane, right-click the control that you want to add, choose **Insert Content Control**, and then choose **Plain Text**.  
    1. For each field, repeat steps a and b.  
@@ -170,13 +163,13 @@ In the Word layout, you now just use the column as-is.
 
 #### How to control text properties based on a condition
 
-If you want to show a text and control text properties such as color, font, style, or size that's based on a condition, add the column twice in the dataset. Set values to empty or to the value based on the condition. Make sure that one of them is empty. 
+If you want to show a text and control text properties such as color, font, style, or size based on a condition, add the column twice in the dataset. Set values to empty or to the value based on the condition. Make sure that one of them is empty. 
 
 In the Word layout, you now place both columns next to each other, and then set the text properties on each to what you need.
 
 #### How to mimic the BlankZero or BlankNumbers properties
 
-If you want to mimic the BlankZero or BlankNumbers properties that exist on table and page fields, then set values to empty or to the value based on the condition (zero or the value you would have used for BlankNumbers) in the dataset.
+If you want to mimic the BlankZero or BlankNumbers properties that exist on table and page fields, then set values to empty or to the value based on the condition (zero or the value you would used for BlankNumbers) in the dataset.
 
 In the Word layout, you now just use the column as-is.
 
@@ -193,10 +186,10 @@ If your document layout contains multiple tables, consider using table styles to
 To set a default table style, do as follows:
 
 1. Mark the table.
-2. Navigate to the **Table Design** menu.
-3. For the table style you want to use as default, right-click it. 
-4. In the menu that appears, select **Set as Default**. A dialog box appears.
-5. Select **This document only**, and then choose **OK**.
+1. Navigate to the **Table Design** menu.
+1. For the table style you want to use as default, right-click it. 
+1. In the menu that appears, select **Set as Default**. A dialog box appears.
+1. Select **This document only**, and then choose **OK**.
 
 ### Using hyperlinks in Word layouts
 
@@ -214,7 +207,7 @@ If you need your report to change style for different types of content, consider
 Sections are created using section breaks. To start a new section, select where you want it to begin. Then go to **Layout** > **Breaks**. Learn more in [Insert a section break](https://support.microsoft.com/en-us/office/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c) (use <kbd>Ctrl</kbd>+click to open in a new tab).
 
 > [!TIP]  
-> When working with sections in a layout, it's recommended to turn the display of formatting marks on. This makes it much easier to see in which section of the layout you are working. Learn more in [Show or hide tab marks in Word](https://support.microsoft.com/en-us/office/show-or-hide-tab-marks-in-word-84a53213-5d02-404a-b022-09cae1a3958b) (use <kbd>Ctrl</kbd>+click to open in a new tab).
+> When working with sections in a layout, the recommendation is to turn the display of formatting marks on. This makes it much easier to see in which section of the layout you're working. Learn more in [Show or hide tab marks in Word](https://support.microsoft.com/en-us/office/show-or-hide-tab-marks-in-word-84a53213-5d02-404a-b022-09cae1a3958b) (use <kbd>Ctrl</kbd>+click to open in a new tab).
 
 ### Changing layout properties such as margins or orientation
 
@@ -235,10 +228,10 @@ The internal data model in Word only allows one watermark for the entire documen
 
 In case you want to apply different watermarks to different sections, this work-around might work:
 
-1. On the **Home** tab, click **Select** > **Selection Pane**. The Selection pane is used to manage objects in your document: reorder them, show or hide them, and group or ungroup them.
-2. Within the first section, open the header or footer and insert the watermark you want to use. Just use the normal approach. In the Selection pane, the watermark now shows as "PowerPlusWaterMarkObject" for a text object or "WordPictureWaterMark" for a picture object (each name followed by an identifier). Double-click on the name to make it editable and change it to something else (maybe to the watermark text, such as 'Customer copy' or 'Original'). Now Word won't treat the object as a (global) watermark.
-3. Within each subsequent section, repeat step number 2.
-4. On the **Home** tab, choose **Select** > **Selection Pane** to turn off the Selection pane again.
+1. On the **Home** tab, select **Select** > **Selection Pane**. The Selection pane is used to manage objects in your document: reorder them, show or hide them, and group or ungroup them.
+1. Within the first section, open the header or footer and insert the watermark you want to use. Just use the normal approach. In the Selection pane, the watermark now shows as "PowerPlusWaterMarkObject" for a text object or "WordPictureWaterMark" for a picture object (each name followed by an identifier). Double-click on the name to make it editable and change it to something else (maybe to the watermark text, such as 'Customer copy' or 'Original'). Now Word doesn't treat the object as a (global) watermark.
+1. Within each subsequent section, repeat step number 2.
+1. On the **Home** tab, choose **Select** > **Selection Pane** to turn off the Selection pane again.
 
 ### Using fonts in Word layouts
 
@@ -260,12 +253,12 @@ To apply a theme to your Word layout, use the standard styles for text and heade
 For tables, for the table header be respect theme changes, you need to do this:
 
 1. Mark the header row.
-2. In the *Table Design* menu, expand the *Shading* menu in *Table Styles*.
-3. Now pick a theme color.
+1. In the *Table Design* menu, expand the *Shading* menu in *Table Styles*.
+1. Now pick a theme color.
 
 If you use the prebuilt Table Styles, you must manually change the color in the Shading menu for the header color to respect theme changes.
 
-To learn more about templates, themes, and Word styles, see [Differences between templates, themes, and Word styles](https://support.microsoft.com/en-us/office/differences-between-templates-themes-and-word-styles-101c2774-296b-4bb7-b084-2e936f6ee390)
+To learn more about templates, themes, and Word styles, go to [Differences between templates, themes, and Word styles](https://support.microsoft.com/en-us/office/differences-between-templates-themes-and-word-styles-101c2774-296b-4bb7-b084-2e936f6ee390).
 
 ### Design layouts for precision printing
 
@@ -282,13 +275,62 @@ For text boxes, you can control their absolute position on the page in the *Shap
 
 With Word layouts, Word is used as the editor for the report. The person designing the layout interacts with the labels, data items, and fields from the dataset from the XML Mapping Pane. If you want users to be able to change the layout, consider using friendly names for labels, data items, and fields. 
 
+## Using system dataitems 
+
+[!INCLUDE [2025rw1_and_later](includes/2025rw1_and_later.md)]
+
+Similar to Excel layouts, you can access report and request metadata in a Word layout. As a layout designer, this information helps you understand a report dataset better. You can also add the metadata as controls on the Word layouts, making it available to users who run the report.
+
+In Word layouts, metadata is available in the **XML Mapping** pane as columns in two system dataitems: ReportMetadata and ReportRequest.
+
+:::image type="content" source="media/word-xml-part.png" alt-text="Shows the Word XML part with the Business Central report and request metadata in a layout.":::
+
+These two dataitems aren't part of the report dataset but are only present in the Word layout XML.
+
+> [!TIP]
+> Using metadata columns from system data items lets you skip adding common fields to the report dataset, such as company name and user name. This practice also ensures consistent naming and placement of these fields in the Word add-in data picker.
+
+### ReportMetadata
+
+The *ReportMetadata* dataitem includes metadata columns that provide information from the report object.
+
+|Metadata column|Description|
+|-|-|
+|ExtensionID | The unique ID (GUID) of the app or extension for the report. |
+|ExtensionName | The name of the app or extension for the report. |
+|ExtensionPublisher | The name of the publisher of the app or extension for the report. |
+|ExtensionVersion | The version of the app or extension for the report.|
+|ReportID | The object ID of the report. |
+|ReportName | The object name of the report.|
+|AboutThisReportTitle | The *about this report title* as declared in the Request Page setup in the AL report. |
+|AboutThisReportText | The *about this report text* as declared in the Request Page setup in the AL report. |
+|ReportHelpLink | Help link (if set up) in the extension and report object.|
+
+### ReportRequest
+
+The *ReportRequest* dataitem includes metadata columns from the report request (the report invocation that created the document).
+
+|Metadata column|Description|
+|-|-|
+| TenantEntraId | The Entra/AAD tenant ID of the environment. |
+| EnvironmentName | The name of the environment. Might be empty for on-premises installations. |
+| EnvironmentType | The environment type (Production or sandbox). Might be empty for on-premises installations. |
+| CompanyName | The company name the user was operating in when running the report. |
+| CompanyDisplayName | The display name for the company that the user was operating in when running the report. |
+| CompanyId | The company ID (GUID). |
+| UserName | The user who ran the report. |
+| DateAndTime | The date and time of the report invocation. |
+| Language | The application language identified (LCID, Windows language identifier).|
+| FormatRegion | The format region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
+| DateTimeValues|The elements of the date (Year, MonthNumber, DayNumber) and time (Hour, Minute) of the report invocation.|
+
 ## Report labels in Word layouts
 
 Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
 
 Report labels defined in the *Labels* section of the report object and captions included on dataitem columns using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available as in the `Labels` part of the XML Mapping pane in Word:
 
-![Clip of the XML Mapping pane in Word.](/dynamics365/business-central/media/nav_reportlayout_xmlmappingpane.png "NAV_ReportLayout_XMLMappingPane")
+![Clip of the XML Mapping pane in Word.](/dynamics365/business-central/media/nav_reportlayout_xmlmappingpane-v2.png "NAV_ReportLayout_XMLMappingPane")
 
 Learn more about labels in [Report labels](./devenv-report-object.md#report-labels).
 
@@ -357,7 +399,7 @@ report 50142 "My Sales Invoice report"
 The following example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
 
 > [!NOTE]
-> The **Different first page** and **Different odd and even** options for headers and footers in Word aren't supported for HTML conversion. If you select either of these options, the header and footer won't appear in rendered output, such as an Email Body.
+> The **Different first page** and **Different odd and even** options for headers and footers in Word aren't supported for HTML conversion. If you select either of these options, the header and footer don't appear in rendered output, such as an Email Body.
 
 1. Create a new extension to the **Customer List** page that contains code to run the report and a report object by adding the following lines of code:
 
@@ -411,16 +453,16 @@ The following example extends the Customer List page with a trigger that runs th
 1. In Word, edit the layout using the **XML Mapping Pane** on the **Developer** tab.  
     > [!NOTE]  
     > If you don't see the Developer tab, go to **Options**, then **Customize Ribbon**, and in the **Main tabs** section, select the **Developer** check box.
-1. In Word, to the right, in the **Custom XML part** lookup, locate the report, and then open the layout.
+1. In Word in the **Custom XML part** lookup, locate the report, and then open the layout.
 1. Right-click on the **Customer** table, and in **Insert Content Control**, select **Repeating** to add the repeater data item.
 1. Right-click on the **Name** field and in **Insert Content Control**, select **Plain Text** to add the column as a text box.
 1. Save the report layout when you're done and then close it.
 1. Back in Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>F5</kbd>  to compile and run the report.  
 
-You now see the generated report in preview mode.
+The generated report is displayed in preview mode.
 
 > [!NOTE]  
-> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:  
+> If the report layout isn't generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:  
 >
 >```json
 >"al.compilationOptions": {
@@ -434,10 +476,10 @@ You now see the generated report in preview mode.
 
 > **APPLIES TO:** Business Central versions 20, 21, and 22
 
-The rendering of Word reports is controlled by an application feature key. Enabling the key `RenderWordReportsInPlatform` in the **Feature Management** page in Business Central switches the Microsoft Word report rendering to the new platform rendering, which supports multiple layouts and new triggers for **Save** and **Download** actions.
+An application feature key controls the rendering of Word reports. Enabling the key `RenderWordReportsInPlatform` in the **Feature Management** page in [!INCLUDE[prod_short](includes/prod_short.md)] switches the Microsoft Word report rendering to the new platform rendering, which supports multiple layouts and new triggers for **Save** and **Download** actions.
 
 > [!NOTE]  
-> Application rendering is obsolete and will be deprecated in a future release. It's recommended to stay on the old platform if you have extensions that use custom Word layouts and therefore cannot use the new platform, for example, because of dependencies on the `OnBeforeMergeDocument` or `OnBeforeMergeWordDocument` events.
+> Application rendering is obsolete and will be deprecated in a future release. It's recommended to stay on the old platform if you have extensions that use custom Word layouts and therefore can't use the new platform, for example, because of dependencies on the `OnBeforeMergeDocument` or `OnBeforeMergeWordDocument` events.
 
 The following AL snippet can be used in code to implement rendering differentiation in extensions.
 
@@ -465,7 +507,7 @@ Learn more about report limits in [Report limits](devenv-report-object.md#report
 
 ## Difference between RDL and Word layouts
 
-If you're switching from developing reports with RDL layouts to using Word layouts, you might need to change your mindset on how you develop reports and their layouts. RDL allows you to dynamically change many properties in the layout but it isn't possible in Word. For many logic-related conditions, instead you have to do them in the report dataset in AL and then utilize the methods outlined in this article.
+If you're switching from developing reports with RDL layouts to using Word layouts, you might need to change your mindset on how you develop reports and their layouts. RDL allows you to dynamically change many properties in the layout but it isn't possible in Word. For many logic-related conditions, you do them in the report dataset in AL and then utilize the methods outlined in this article.
 
 For reports where you expect customers to adjust the layout or use themes to change the overall look-and-feel of the document, consider using a Word layout over an RDL layout.
 
@@ -483,7 +525,7 @@ If you have access to the AL code for the report object, add a new layout in the
 
 The **Report layouts** page in the client includes the **Export report schema** action that allows you to download a report schema/dataset as a Microsoft Word custom XML file. You can then use the file to create a new Word layout. This file makes it easier to convert an RDL layout or a customer-supplied Word file into a Word layout for a report.
 
-1. Sign in to Business Central and open the **Report layouts** page.
+1. Sign in to [!INCLUDE[prod_short](includes/prod_short.md)] and open the **Report layouts** page.
 1. Select the report in the list that you want to export the XML and then select **Export report schema** to download an XML file with the custom XML.
 1. Open the Word document that you want to use for the report.
 
@@ -527,17 +569,16 @@ The **Report layouts** page in the client, helps you update a layout with the la
 1. Open the updated layout file in Word. Then make changes and save the file.
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], import the updated layout either as a new layout, by using the **New** action, or as a replacement to the existing layout, by the **Replace Layout** action.
 
-
 ## How to convert an RDL layout to a Word layout
 
 There's no way to directly convert an RDL layout to a Word layout, but if you want to create a new Word layout based on an RDL layout, then do as follows:
 
-1. Create a new blank Word layout. See [How to create a new Word layout document from scratch](#how-to-create-a-new-word-layout-document-from-scratch) for more information.
+1. Create a new blank Word layout. To learn more, go to [How to create a new Word layout document from scratch](#how-to-create-a-new-word-layout-document-from-scratch).
 1. Get a version of the report RDL layout rendered as a Word document:
     1. From the **Report layouts page**, find the RDL layout you want to base the new Word layout on.
     1. From the top pane menu, select the **Run Report** action. This opens the request page for the report.
     1. In the bottom of the request page, select the **Send to...** button. This opens a **Choose file type...** modal dialog.
-    1. Select **Microsoft Word Document** and then choose the **OK** button. This downloads the report rendered as a Word document (where the dataset has been merged with the layout and where the Custom XML part isn't present.). 
+    1. Select **Microsoft Word Document** and then choose the **OK** button. This downloads the report rendered as a Word document (where the dataset was merged with the layout and where the Custom XML part isn't present.). 
 1. Mark all content that you want to base the new layout on from the rendered Word document and copy it to the empty Word layout that you created in step 1.
 1. Now it's time to adjust the Word document to make it a real layout:
     1. For each table, keep the header and remove all but one row with values. For the latter row, add a repeater from the **XML Mapping** pane. For the header row, add labels/captions from the **XML Mapping** pane.

@@ -2,7 +2,7 @@
 title: "HttpClient data type"
 description: "Provides a data type for sending HTTP requests and receiving HTTP responses from a resource identified by a URI."
 ms.author: solsen
-ms.date: 08/26/2024
+ms.date: 02/18/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -37,6 +37,7 @@ The following methods are available on instances of the HttpClient data type.
 |[Timeout([Duration])](httpclient-timeout-method.md)|Gets or sets the duration in milliseconds to wait before the request times out.|
 |[UseDefaultNetworkWindowsAuthentication()](httpclient-usedefaultnetworkwindowsauthentication-method.md)|Sets the HttpClient credentials to use the default network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
 |[UseResponseCookies(Boolean)](httpclient-useresponsecookies-method.md)|If true, the client automatically attaches cookies received in the response to all subsequent requests.|
+|[UseServerCertificateValidation(Boolean)](httpclient-useservercertificatevalidation-method.md)|If true, the client validates the server certificate for all HTTP requests. If false, it skips validation.|
 |[UseWindowsAuthentication(Text, Text [, Text])](httpclient-usewindowsauthentication-string-string-string-method.md)|Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
 |[UseWindowsAuthentication(SecretText, SecretText [, SecretText])](httpclient-usewindowsauthentication-secrettext-secrettext-secrettext-method.md)|Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.|
 
@@ -53,6 +54,9 @@ All of the methods HttpClient.Delete, HttpClient.Get, HttpClient.Post, HttpClien
 
 [!INCLUDE[allowhttpclientnote](../../../includes/include-http-allowhttpclient-note.md)]
 
+## Mock outbound HttpClient web service calls during testing
+
+Testability of AL code that interacts with external web services is enhanced when the responses from these services can be simulated in AL, eliminating the need to configure actual endpoints. Mocking outbound web calls is useful when testing that your code is capable of handling a wide range of possible responses, and allowing you to track outbound traffic during the test executions. Learn more in [Mock outbound HttpClient web service calls during testing](../../devenv-httpclient-mock-outbound-calls.md). 
 
 ## Telemetry
 
@@ -81,3 +85,4 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Outgoing Web Service Request Telemetry](../../../administration/telemetry-webservices-outgoing-trace.md)  
+[Mock outbound HttpClient web service calls during testing](../../devenv-httpclient-mock-outbound-calls.md)  

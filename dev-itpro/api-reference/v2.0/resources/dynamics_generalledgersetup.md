@@ -2,20 +2,15 @@
 title: generalLedgerSetup resource type
 description: A general ledger setup object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: dynamics-365-business-central
 ms.topic: reference
 ms.devlang: al
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 # generalLedgerSetup resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a general ledger setup in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -26,7 +21,6 @@ Represents a general ledger setup in [!INCLUDE[prod_short](../../../includes/pro
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET generalLedgerSetup](../api/dynamics_generalledgersetup_get.md)|generalLedgerSetup|Gets a general ledger setup object.|
-
 
 
 ## Properties
@@ -41,10 +35,19 @@ Represents a general ledger setup in [!INCLUDE[prod_short](../../../includes/pro
 |localCurrencySymbol|string||
 |lastModifiedDateTime|datetime|The last datetime the general ledger setup was modified. Read-Only.|
 |allowQueryFromConsolidation|boolean||
+|shortcutDimension1Code|string||
+|shortcutDimension2Code|string||
+|shortcutDimension3Code|string||
+|shortcutDimension4Code|string||
+|shortcutDimension5Code|string||
+|shortcutDimension6Code|string||
+|shortcutDimension7Code|string||
+|shortcutDimension8Code|string||
+
 
 ## JSON representation
 
-Here is a JSON representation of the generalLedgerSetup resource.
+Here's a JSON representation of the generalLedgerSetup resource.
 
 
 ```json
@@ -56,10 +59,18 @@ Here is a JSON representation of the generalLedgerSetup resource.
     "localCurrencyCode": "string",
     "localCurrencySymbol": "string",
     "lastModifiedDateTime": "datetime",
-    "allowQueryFromConsolidation": "boolean"
+    "allowQueryFromConsolidation": "boolean",
+    "shortcutDimension1Code": "string",
+    "shortcutDimension2Code": "string",
+    "shortcutDimension3Code": "string",
+    "shortcutDimension4Code": "string",
+    "shortcutDimension5Code": "string",
+    "shortcutDimension6Code": "string",
+    "shortcutDimension7Code": "string",
+    "shortcutDimension8Code": "string"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET generalLedgerSetup](../api/dynamics_generalledgersetup_get.md)
