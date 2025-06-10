@@ -1,6 +1,6 @@
 ---
 title: Some Known Issues in Business Central On-premises
-description: Provides an overview of the known issues that can affect Busuness Central installation or upgrade.
+description: Provides an overview of the known issues that can affect Business Central installation or upgrade.
 ms.date: 05/15/2025
 ms.reviewer: jswymer
 ms.topic: troubleshooting-known-issue
@@ -30,7 +30,7 @@ If the .NET 6.0 SDK or Core Runtime is installed before the IIS (Internet Inform
 
 1. Uninstall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
 1. Download and install the .NET 6.0 Hosting Bundle from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/).
-1. Reintsall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
+1. Reinstall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
 
 ## Renamed tables and fields in subscription billing extension cause synch errors on upgrade
 
@@ -331,7 +331,7 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 
 #### Table 8064 "Billing Line Archive"
 
-| Field no, | Original field name                     | New field name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 20       | Contract No.                           | Subscription Contract No.              |
 | 21       | Contract Line No.                      | Subscription Contract Line No.         |
@@ -346,7 +346,7 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 
 #### Table 8003 "Price Update Template"
 
-| Field no, | Original field name                     | New field name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 4        | Contract Filter                        | Subscription Contract Filter           |
 | 5        | Service Commitment Filter              | Subscription Line Filter               |
@@ -466,7 +466,7 @@ When you try to import a control add-in file client from the **Control Add-ins**
 ```
 Can't open file`
 
-[URL] can't open files in this folder because it cotains system files`
+[URL] can't open files in this folder because it contains system files`
 ```
 
 `[URL]` is the URL of your [!INCLUDE[prod short](../developer/includes/prod_short.md)] web client, for example, `http://localhost:8080`.

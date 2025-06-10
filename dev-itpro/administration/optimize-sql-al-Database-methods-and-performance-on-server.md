@@ -151,7 +151,7 @@ Instead, you should use the following code, which only requires an extra SQL sta
 
 ```AL
 RecRef.Open(Database::"My Table");
-if RecRef.FindSet() then
+if RecRef.FindSet(true) then
     repeat
         // ...
         RecRef.Modify(); // or .Delete();
@@ -159,7 +159,7 @@ if RecRef.FindSet() then
 ```
 
 ```AL
-if MyTable.FindSet() then
+if MyTable.FindSet(true) then
     repeat
         MyTable.Modify(); // or .Delete();
     until MyTable.Next() = 0;

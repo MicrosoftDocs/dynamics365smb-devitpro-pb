@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 26.2](whatsnew/whatsnew-update-26-2.md)
 ### [Update 26.1](whatsnew/whatsnew-update-26-1.md)
 ### [Update 26.0](whatsnew/whatsnew-update-26-0.md)
 ### Updates for earlier major versions
@@ -1581,6 +1582,7 @@
 ### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
 ### [Influence Copilot and agents without extending them](developer/copilot-and-agents-influence-without-extending.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
+### [Business Central AI resources (preview)](developer/ai-dev-tools-resources.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### [Token counting in AI](developer/ai-system-app-token-counting.md)
 ### [Function calling in AI](developer/ai-system-app-function-calling.md)

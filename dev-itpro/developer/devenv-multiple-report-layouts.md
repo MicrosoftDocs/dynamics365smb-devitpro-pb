@@ -1,6 +1,6 @@
 ---
-title: Defining Multiple Report Layouts
-description: Learn how to define multiple layouts for one report in AL code. This enables creating report extensions that only add layouts to an existing report and packaging it as an extension .al file.
+title: Defining multiple report layouts
+description: Learn how to define multiple layouts for one report in AL code. 
 author: SusanneWindfeldPedersen
 ms.date: 01/20/2024
 ms.topic: concept-article
@@ -16,7 +16,7 @@ In AL, you have the option of defining multiple layouts for one report in code. 
 
 ## Enabling multiple layouts
 
-To enable multiple layouts, you must use the `rendering` section of a report object. Inside the `rendering` section, you define one or more `layout` sections. In each of the `layout` sections, you specify details about the layout file path and name, you provide a [Caption Property](properties/devenv-caption-property.md) and a [Summary Property](properties/devenv-summary-property.md) which will be displayed to the user in the **Report Layouts** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
+To enable multiple layouts, you must use the `rendering` section of a report object. Inside the `rendering` section, you define one or more `layout` sections. In each of the `layout` sections, you specify details about the layout file path and name, you provide a [Caption Property](properties/devenv-caption-property.md) and a [Summary Property](properties/devenv-summary-property.md) which are displayed to the user in the **Report Layouts** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
 
 The default layout can be specified with the [DefaultRenderingLayout Property](properties/devenv-defaultrenderinglayout-property.md) report property. This property *can't* be set on report extension objects, only on report objects.
 

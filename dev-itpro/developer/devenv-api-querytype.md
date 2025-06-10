@@ -3,14 +3,14 @@ title: API query type
 description: Description of the API query type used for exposing and viewing web service endpoints.
 author: SusanneWindfeldPedersen
 ms.date: 04/17/2024
-ms.topic: article
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
 
 # API query type
 
-Queries of the type `API` are used to generate web service endpoints and this type of query can't be used to display data in the user interface. A query of the API type can be used to join data from different data sources. The data can only be viewed. When creating this query type, you must specify a number of properties that provide information for the web service endpoint. Use the snippet `tquery - Query of type API` to get the right template and the list of these properties automatically filled in.
+Queries of the type `API` are used to generate web service endpoints and this type of query can't be used to display data in the user interface. A query of the API type can be used to join data from different data sources. The data can only be viewed. When creating this query type, you must specify properties that provide information for the web service endpoint. Use the snippet `tquery - Query of type API` to get the right template and the list of these properties automatically filled in.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
@@ -71,7 +71,7 @@ query 20000 "APIV1 - Customer Sales"
 ## Related information
 
 [AL development environment](devenv-reference-overview.md)  
-[API page Type](devenv-api-pagetype.md)  
+[API page type](devenv-api-pagetype.md)  
 [APIPublisher property](properties/devenv-apipublisher-query-property.md)  
 [APIGroup property](properties/devenv-apigroup-query-property.md)  
 [APIVersion property](properties/devenv-apiversion-query-property.md)   

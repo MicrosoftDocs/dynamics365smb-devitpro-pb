@@ -28,7 +28,7 @@ To develop an effective Copilot extension, you'll need to work with each of thes
 
 ## Getting set up with Azure OpenAI Service
 
-Before you can get started with extedning Copilot in Business Central, you must apply for access to Azure OpenAI Service. Once you're approved, you can create an Azure OpenAI resource in the Azure portal. From this resource, you get your API key and deployment name.
+Before you can get started with extending Copilot in Business Central, you must apply for access to Azure OpenAI Service. Once you're approved, you can create an Azure OpenAI resource in the Azure portal. From this resource, you get your API key and deployment name.
 
 To learn more, go to [Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md).
 

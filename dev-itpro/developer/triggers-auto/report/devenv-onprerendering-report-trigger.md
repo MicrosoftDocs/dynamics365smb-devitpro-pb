@@ -54,7 +54,7 @@ Learn more in [Attach files, append, and protect report PDFs in AL](../../devenv
 ## Example
 
 > [!TIP]
-> For more detailed examples, go to [Business Central Tech Samples on GitHub](https://aka.ms/BcTech).
+> Sample code that shows how use the `OnPreRendering` report trigger to manage PDF attachments for electronic invoicing in [!INCLUDE [prod_short](../../includes/prod_short.md)] is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/ReportTech/PdfAttachments) repository.
 
 The following AL code example create a report extension object that modifies the **Customer - List** report PDF output to include an attached file and append it with the **Customer - Top 10 List** report. In the OnPreRendering trigger of the report extension, the code:
 
@@ -153,5 +153,5 @@ reportextension 50136 MyCustRepExtension extends "Customer - List"
 
 ## Related information
 
-[Getting started with AL](../../devenv-get-started.md)  
-[Developing extensions](../../devenv-dev-overview.md)  
+[Getting started with AL](../devenv-get-started.md)  
+[Developing extensions](../devenv-dev-overview.md)  

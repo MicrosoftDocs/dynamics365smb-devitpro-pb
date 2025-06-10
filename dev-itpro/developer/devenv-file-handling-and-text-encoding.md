@@ -2,10 +2,10 @@
 title: File handling and text encoding
 description: Understand how files are handled and text is encoded in Business Central.
 ms.custom: bap-template
-ms.date: 12/21/2023
+ms.date: 05/21/2025
 ms.reviewer: solsen
 ms.author: solsen
-ms.topic: article
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ---
 

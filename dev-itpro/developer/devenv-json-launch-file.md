@@ -2,8 +2,8 @@
 title: Launch JSON file
 description: Description of the settings of the launch JSON file for AL in Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 03/05/2024
-ms.topic: how-to
+ms.date: 05/26/2025
+ms.topic: overview
 ms.author: solsen
 ms.reviewer: solsen
 ---
