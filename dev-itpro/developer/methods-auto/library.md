@@ -2,7 +2,7 @@
 title: "Data types and methods in AL"
 description: ""
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 06/10/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -12,7 +12,7 @@ ms.reviewer: solsen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Data types and methods in AL
 
-The following data types are available as part of the AL language. Each data type has various methods that support it. For more information about a data type and its methods, select a link in the table.
+The following data types are available as part of the AL language. Each data type has various methods that support it. To learn more about a data type and its methods, select a link in the table.
 
 |Type|Description|
 |-----------|-----------|
