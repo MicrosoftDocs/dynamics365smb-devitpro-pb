@@ -1,6 +1,6 @@
 ---
 title: OnGetFilename Event
-description: Describe the OnAfterDocumentPrintReady Event in Business Central.  
+description: Learn about the OnGetFilename event in Business Central.  
 ms.date: 06/11/2025
 ms.topic: article
 author: jswymer
@@ -71,7 +71,7 @@ Specifies whether the extension handled the action successfully.
 
 ## Example
 
-This AL code subscribes to the `OnGetFilename` event to customize the filename when you save a report as a PDF. When you save the report, the handler sets the filename to include the current date. The handler then marks the event as handled to prevent the default filename logic.
+This AL code subscribes to the `OnGetFilename` event to customize the filename with the current date when you save a report as a PDF.
 
 ```AL
 codeunit 50100 MyFilenameSubscriber
@@ -82,12 +82,15 @@ codeunit 50100 MyFilenameSubscriber
         // Check if this is the "Customer - Top 10 List" report and PDF export
         if (FileExtension = '.pdf') then begin
             Filename := Caption + '_' + Format(Today, 0, '<Year>-<Month>-<Day>');
-            Success := true; // Mark as handled
+            Success := true; // Mark as handled to prevent the default filename logic
 
         end;
     end;
 }
 ```
+
+> [!TIP]
+> For a more complex example of how to use this event, see codeunit **1890 "Reminder Communication"** in the Business Central base application.
 
 ## Related information
 
