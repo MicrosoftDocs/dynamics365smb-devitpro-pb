@@ -2,7 +2,7 @@
 title: "JsonObject data type"
 description: "Is a container for any well-formed JSON object."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 06/10/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -10,7 +10,7 @@ ms.reviewer: solsen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject Data type
+# JsonObject data type
 > **Version**: _Available or changed with runtime version 1.0._
 
 Is a container for any well-formed JSON object. A default JsonObject contains an empty JSON object.
@@ -84,7 +84,9 @@ The following methods are available on instances of the JsonObject data type.
 |[WriteTo(var Text)](jsonobject-writeto-text-method.md)|Serializes and writes the JSON data of the JsonObject to a given Text object.|
 |[WriteTo(OutStream)](jsonobject-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonObject to a given OutStream object.|
 |[WriteToYaml(var Text)](jsonobject-writetoyaml-text-method.md)|Serializes and writes the JsonObject as YAML to a given Text object.|
-|[WriteToYaml(OutStream)](jsonobject-writetoyaml-outstream-method.md)|Serializes and writes content the JsonObject as YAML text to a given OutStream object.|
+|[WriteToYaml(OutStream)](jsonobject-writetoyaml-outstream-method.md)|Serializes and writes the content of the JsonObject as YAML text to a given OutStream object.|
+|[WriteWithSecretsTo(Text, SecretText, var SecretText)](jsonobject-writewithsecretsto-text-secrettext-secrettext-method.md)|Replaces the placeholder value in the path with the secret and then serializes and writes the content of the JsonObject to a SecretText.|
+|[WriteWithSecretsTo(Dictionary of [Text, SecretText], var SecretText)](jsonobject-writewithsecretsto-dictionary[text,secrettext]-secrettext-method.md)|Replaces the placeholder values based on their paths with the provided secrets and then serializes and writes the content of the JsonObject to a SecretText.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -1759,6 +1759,8 @@
 #### [JsonObject.WriteTo(OutStream) method](methods-auto/jsonobject/jsonobject-writeto-outstream-method.md)
 #### [JsonObject.WriteToYaml(var Text) method](methods-auto/jsonobject/jsonobject-writetoyaml-text-method.md)
 #### [JsonObject.WriteToYaml(OutStream) method](methods-auto/jsonobject/jsonobject-writetoyaml-outstream-method.md)
+#### [JsonObject.WriteWithSecretsTo(Text, SecretText, var SecretText) method](methods-auto/jsonobject/jsonobject-writewithsecretsto-text-secrettext-secrettext-method.md)
+#### [JsonObject.WriteWithSecretsTo(Dictionary of [Text, SecretText], var SecretText) method](methods-auto/jsonobject/jsonobject-writewithsecretsto-dictionary[text,secrettext]-secrettext-method.md)
 ### [JsonToken data type](methods-auto/jsontoken/jsontoken-data-type.md)
 #### [JsonToken.AsArray() method](methods-auto/jsontoken/jsontoken-asarray-method.md)
 #### [JsonToken.AsObject() method](methods-auto/jsontoken/jsontoken-asobject-method.md)
