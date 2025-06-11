@@ -967,7 +967,7 @@
 ###### [OnAfterIntermediateDocumentReady](developer/devenv-onafterintermediatedocumentready-event.md)
 ###### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
 ###### [OnCustomDocumentMergerEx](developer/devenv-oncustomdocumentmergerex-event.md)
-###### [OnGetFilename](developer/devenv-onongetfilename-event.md)
+###### [OnGetFilename](developer/devenv-ongetfilename-event.md)
 #### [Substituting a report](developer/devenv-substituting-reports.md)
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
