@@ -38,6 +38,7 @@ The JSON object containing post rendering setup which will be applied by the run
 > [!TIP]
 > Sample code that shows how use the `OnPreRendering` report trigger to manage PDF attachments for electronic invoicing in [!INCLUDE [prod_short](../../includes/prod_short.md)] is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/ReportTech/PdfAttachments) repository.
 
-## Related information  
-[Getting started with AL](../devenv-get-started.md)  
-[Developing extensions](../devenv-dev-overview.md)  
+## Related information
+
+[Getting started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  
