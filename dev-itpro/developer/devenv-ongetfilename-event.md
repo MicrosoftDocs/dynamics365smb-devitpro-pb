@@ -1,7 +1,7 @@
 ---
 title: OnGetFilename Event
 description: Describe the OnAfterDocumentPrintReady Event in Business Central.  
-ms.date: 04/01/2021
+ms.date: 06/11/2025
 ms.topic: article
 author: jswymer
 ---
@@ -15,9 +15,9 @@ The `OnGetFilename` event lets you set the filename that's suggested or used whe
 
 Use this event to:
 
-- Make filenames more descriptive or user friendly
-- Meet business or compliance requirements for file naming
-- Avoid filename conflicts when you export multiple reports
+- Make filenames more descriptive or user friendly.
+- Meet business or compliance requirements for file naming.
+- Avoid filename conflicts when you export multiple reports.
 
 ## Publisher
 
@@ -65,13 +65,13 @@ Specifies the file extension of the saved report, like .pdf, .docx, or .xlsx.
 
 Type: [Boolean](methods-auto/boolean/boolean-data-type.md)
 
-Specifies whether the extension handled the save as action successfully.
+Specifies whether the extension handled the action successfully.
 
 [!INCLUDE[report_payload_md](includes/report_payload.md)]
 
 ## Example
 
-This AL code subscribes to the `OnGetFilename` event subscriber to customize the filename when saving the "Customer - Top 10 List" report as a PDF. When the report is saved, the handler sets the filename to include the current date and time, followed by the report caption and the ".pdf" extension. It then marks the event as handled to prevent the default filename logic.
+This AL code subscribes to the `OnGetFilename` event to customize the filename when you save a report as a PDF. When you save the report, the handler sets the filename to include the current date. The handler then marks the event as handled to prevent the default filename logic.
 
 ```AL
 codeunit 50100 MyFilenameSubscriber
@@ -80,9 +80,10 @@ codeunit 50100 MyFilenameSubscriber
     local procedure OnGetFilenameHandler(ReportID: Integer; Caption: Text[250]; ObjectPayload: JsonObject; FileExtension: Text[30]; ReportRecordRef: RecordRef; var filename: Text; var Success: Boolean)
     begin
         // Check if this is the "Customer - Top 10 List" report and PDF export
-        if (ReportID = Report::"Customer - Top 10 List") and (FileExtension = '.pdf') then begin
-            Filename := Format(CurrentDateTime) + '_' + Caption;
+        if (FileExtension = '.pdf') then begin
+            Filename := Caption + '_' + Format(Today, 0, '<Year>-<Month>-<Day>');
             Success := true; // Mark as handled
+
         end;
     end;
 }
@@ -93,7 +94,7 @@ codeunit 50100 MyFilenameSubscriber
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
 [Developing Printer Extensions Overview](devenv-reports-printing.md)  
 [Creating a Printer Extension](devenv-reports-create-printer-extension.md)  
-[Events in AL](devenv-events-in-al.md)   
-[Publishing Events](devenv-publishing-events.md)   
-[Raising Events](devenv-raising-events.md)   
+[Events in AL](devenv-events-in-al.md)  
+[Publishing Events](devenv-publishing-events.md)  
+[Raising Events](devenv-raising-events.md)  
 [Subscribing to Events](devenv-subscribing-to-events.md)  
