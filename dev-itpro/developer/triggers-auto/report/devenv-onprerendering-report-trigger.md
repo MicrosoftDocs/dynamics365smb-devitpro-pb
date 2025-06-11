@@ -1,6 +1,6 @@
 ---
 title: "OnPreRendering (Report) trigger"
-description: "Runs when a report dataset has been finalized and before the output artifact has been rendered."
+description: "Runs when a report dataset has been finalized and before the output artifact has been rendered in an extension object."
 ms.author: solsen
 ms.date: 02/18/2025
 ms.topic: reference
