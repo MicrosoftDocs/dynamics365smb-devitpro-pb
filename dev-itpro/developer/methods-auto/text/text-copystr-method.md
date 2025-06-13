@@ -78,7 +78,7 @@ end;
   
  **The copied string is:**  
   
- **>the COPY\<**  
+ **>the Copy\<**  
   
 
 ## Related information
