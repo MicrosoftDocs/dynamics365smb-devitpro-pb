@@ -22,15 +22,15 @@ You manage the look and feel of the **Outline** view by defining settings that a
 - `outline.collapsItems` - Controls whether Outline items are collapsed or expanded
 - `outline.icons` - Outline elements displayed with icons
 - `outline.problems.badges` - Badges displayed for errors and warnings
-- - `outline.problems.colors` - Colors used for errors and warnings
+- `outline.problems.colors` - Colors used for errors and warnings
 - `outline.problems.enabled` - Show errors and warnings on outline elements
-- `outline.showArrays` - When enabled, Outline shows array-symbols.
-- `outline.showBooleans` - When enabled, Outline shows boolean-symbols.
-- `outline.showClasses` - When enabled, Outline shows class-symbols.
-- `outline.showConstants` - When enabled, Outline shows constant-symbols.
-- `outline.showConstructors` - When enabled, Outline shows constructor-symbols.
-- `outline.showEnumMembers` - When enabled, Outline shows enumMember-symbols.
-- `outline.showEnums` - When enabled, Outline shows enum-symbols.
+- `outline.showArrays` - When enabled, Outline shows array-symbols
+- `outline.showBooleans` - When enabled, Outline shows boolean-symbols
+- `outline.showClasses` - When enabled, Outline shows class-symbols
+- `outline.showConstants` - When enabled, Outline shows constant-symbols
+- `outline.showConstructors` - When enabled, Outline shows constructor-symbols
+- `outline.showEnumMembers` - When enabled, Outline shows enumMember-symbols
+- `outline.showEnums` - When enabled, Outline shows enum-symbols
 
 ## Related information
 
