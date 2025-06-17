@@ -96,9 +96,9 @@ method named `CalculatePrice` as an expression:
 TotalCost := Quantity * CalculatePrice;
 ```
 
-In this case, the `CalculatePrice` method must return a value that is used in evaluating the expression. This return value is then multiplied by the Quantity variable and that result is assigned to the TotalCost variable.
+In this case, the `CalculatePrice` method must return a value that's used in evaluating the expression. This return value is then multiplied by the `Quantity` variable and that result is assigned to the `TotalCost` variable.
 
-A method can also be run by using a method call statement. This statement only calls the method and does not return any value. The following is an example of calling a method named `MyRunMethod`:
+A method can also be run by using a method call statement. This statement only calls the method and doesn't return any value. The following is an example of calling a method named `MyRunMethod`:
 
 ```AL
 if Quantity > 5 then
@@ -109,13 +109,13 @@ The `MyRunMethod` returns no data back to the calling code.
 
 ### <a name="Parameters"></a> Parameters  
 
-In a method call, the parameters are separated by commas, and the optional parameters may be omitted starting from the right. For example, this means that if a method has three optional parameters, then you cannot omit the second parameter without omitting the third parameter.  
+In a method call, the parameters are separated by commas, and the optional parameters may be omitted starting from the right. For example, this means that if a method has three optional parameters, then you can't omit the second parameter without omitting the third parameter.  
   
-When passing parameters there are two options; *passing by value*, which is the default behavior, or *passing by reference*, in which case you must specify the `var` keyword.
+When passing parameters there are two options; you can be *passing by value*, which is the default behavior, or *passing by reference*, in which case you must specify the `var` keyword. 
 
-- If a parameter is *passed by value*, then a copy of the variable is passed to the method. Any changes that the method makes to the value of the variable are local changes that affect only the copy, not the variable itself.  
+- If a parameter is *passed by value*, then a *copy of the variable* is passed to the method. Any changes that the method makes to the value of the variable are local changes that affect only the copy, not the variable itself.
   
-- If a parameter is *passed by reference*, then a reference to the variable is passed to the method. The method can change the value of the variable itself.  
+- If a parameter is *passed by reference*, then a *reference to the variable* is passed to the method. The method can change the value of the variable itself.  
 
 ## Example 1  
 
