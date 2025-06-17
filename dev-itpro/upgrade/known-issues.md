@@ -388,7 +388,22 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 | Service Commitment Package              | Subscription Package                   |
 | Usage Data Customer                     | Usage Data Supp. Customer              |
 
+## Removed tables and fields in the E-Document Core extension cause synchronization errors on upgrade
 
+> Applies to: 26.2
+
+### Problem
+
+Several tables and fields are removed in the E-Document Core extension in version 26.2. The removed tables and fields prevent you from synchronizing the extension to the tenant database when you upgrade to version 26.2 or later.
+
+### Workaround
+
+These tables and fields were never publicly released and were used internally for development in private preview, so no code path has a dependency on them. To resolve the issue, use the `ForceSync` parameter to remove the deleted columns in the database schema, as the following example shows.
+
+```AL
+Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "E-Document Core" -version $NewVersion -Mode ForceSync 
+
+```
 
 ## Number series creation doesn't work in Business Central 25.2 on-premises
 
