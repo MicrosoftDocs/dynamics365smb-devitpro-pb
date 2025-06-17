@@ -7,7 +7,7 @@ author: jswymer
 ---
 # OnGetFilename event
 
-This article describes the syntax of the `OnGetFilename event and the attributes of the report payload.
+This article describes the syntax of the `OnGetFilename` event and the attributes of the report payload.
 
 ## Usage
 
