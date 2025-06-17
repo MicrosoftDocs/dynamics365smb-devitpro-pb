@@ -388,7 +388,7 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 | Service Commitment Package              | Subscription Package                   |
 | Usage Data Customer                     | Usage Data Supp. Customer              |
 
-## Renamed tables and fields in the E-Document Core extension cause synchronization errors on upgrade
+## Removed tables and fields in the E-Document Core extension cause synchronization errors on upgrade
 
 > Applies to: 26.2
 
@@ -398,7 +398,7 @@ Several tables and fields are removed in the E-Document Core extension in versio
 
 ### Workaround
 
-These fields were never publicly released and were used internally for development in private preview, so no code path has a dependency on them. To resolve the issue, use the `ForceSync` parameter to remove the deleted columns in the database schema, as the following example shows.
+These tables and fields were never publicly released and were used internally for development in private preview, so no code path has a dependency on them. To resolve the issue, use the `ForceSync` parameter to remove the deleted columns in the database schema, as the following example shows.
 
 ```AL
 Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "E-Document Cor" -version $NewVersion -Mode ForceSync 
