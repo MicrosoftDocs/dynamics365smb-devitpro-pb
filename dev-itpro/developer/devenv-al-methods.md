@@ -12,11 +12,11 @@ ms.collection: get-started
 
 [!INCLUDE [getstarted-contributions](includes/getstarted-contributions.md)]
 
-Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be run, or *called*, from the same object in which they are declared or from other parts of the application.  
+Like other languages, AL methods are a fundamental programming element. A method, also known as a procedure, is a named group of statements that perform an operation or task. Depending on the scope, methods can be run, or *called*, from the same object in which they are declared or from other parts of the application. The method can take parameters, which are variables or expressions that are sent to the method when it's called. The method can also return a value to the calling code.
 
 There are two types of methods: system methods (built-in) and user-defined (custom) methods.
 
-- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md). For information about method scope, see [Scope attribute](attributes/devenv-scope-attribute.md).
+- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. Learn more about the available built-in methods in [AL method reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md). Learn more about method scope in [Scope attribute](attributes/devenv-scope-attribute.md).
 
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and code units, together to form a unified whole. You can create special methods for use anywhere in the database.
 
@@ -40,11 +40,11 @@ Typing the shortcut `tprocedure` will create the basic structure for a method wh
 
 An attribute is a modifier on a method declaration that specifies information that controls the method's use and behavior. Adding an attribute on a method declaration is also known as *decorating* a method. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
 
-Attributes are placed before the method. For information about the available attributes, see [Method Attributes](attributes/devenv-method-attributes.md).
+Attributes are placed before the method. Learn more about the available attributes in [Method attributes](attributes/devenv-method-attributes.md).
 
 ### Local and global scope
 
-A method can be a *local* method or *global* method. A local method can only be accessed or called from inside the object in which it is declared. A global method can be called from inside the object in which it is declared and from other objects.
+A method can be a *local* method or *global* method. A local method can only be accessed or called from inside the object in which it is declared. A global method can be called from inside the object in which it is declared and from other objects. To declare a method as a local method, you must use the `local` keyword in the method declaration. If you don't use the `local` keyword, the method is declared as a global method.
 
 To declare a local method, start the declaration with `local`: 
 
@@ -60,7 +60,7 @@ To declare a global method, *omit* `local`:
 
 ### Parameters (optional)
 
-A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are separated by semicolons. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype. 
+A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there's more than one parameter, the parameters are separated by semicolons. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype. 
 
 For example, the following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
 
@@ -68,13 +68,13 @@ For example, the following method declaration includes two parameters: `MyCustom
  procedure MyMethod(MyCustomer : Record Customer; var MyDimension : List of [Boolean])
 ```
 
-This example also illustrates how parameters can be *passed by value* or *passed by reference*. The `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference in the example above. For more information, see the section [Parameters](devenv-al-methods.md#Parameters) below.
+The example also illustrates how parameters can be *passed by value* or *passed by reference*. In the example, the `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference. Learn more in [Parameters](devenv-al-methods.md#Parameters) below.
 
 ### Return values (optional)
 
 A method can return data that can be then coded against. A return value is defined by a name (optional), data type, and optional length depending on the data type. 
 
-For example, if the return value is a `Text` data type, the text might have a length of 50.
+For example, if the return value is a `Text` data type, the text might have a length of 50, which is specified with a length parameter right after the data type, in the example `[50]`:
 
 ```AL
     procedure MyMethod() ReturnValue: Text[50]
