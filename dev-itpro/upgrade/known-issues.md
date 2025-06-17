@@ -401,7 +401,7 @@ Several tables and fields are removed in the E-Document Core extension in versio
 These tables and fields were never publicly released and were used internally for development in private preview, so no code path has a dependency on them. To resolve the issue, use the `ForceSync` parameter to remove the deleted columns in the database schema, as the following example shows.
 
 ```AL
-Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "E-Document Cor" -version $NewVersion -Mode ForceSync 
+Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "E-Document Core" -version $NewVersion -Mode ForceSync 
 
 ```
 
