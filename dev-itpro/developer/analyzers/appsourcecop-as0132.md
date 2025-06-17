@@ -50,7 +50,7 @@ table 50100 MyTable
     fields
     {
         field(1; MyField; Integer) { }
-        field(2; MyNewField; Integer) { }
+        field(2; MyNewField; Integer) { } // New table field.
     }
 }
 ```
@@ -75,7 +75,7 @@ tableextension 50100 MyExtension extends SomeTable
 {
     fields
     {
-        field(50100; MyExtField; Integer) { }
+        field(50100; MyExtField; Integer) { } // New table extension field.
     }
 
     procedure MyProcedure()
@@ -98,7 +98,6 @@ table 50100 MyTable
     fields
     {
         field(1; MyField; Integer) { }
-        field(2; MyNewField; Integer) { }
     }
 }
 ```
@@ -108,11 +107,12 @@ Version 2 of the extension
 ```al
 table 50100 MyTable
 {
-    TableType = Temporary;
+    TableType = Temporary; // Temporary tables don't contribute to the schema.
 
     fields
     {
         field(1; MyField; Integer) { }
+        field(2; MyNewField; Integer) { }  // New table extension field.
     }
 }
 ```
@@ -142,7 +142,7 @@ table 50100 MyTable
 
         field(50100; MyNewField; Integer)
         {
-            FieldClass = FlowField;
+            FieldClass = FlowField; // FlowFields don't contribute to the schema.
         }
     }
 }

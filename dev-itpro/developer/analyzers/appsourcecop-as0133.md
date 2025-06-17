@@ -61,7 +61,7 @@ table 50100 MyTable
     keys
     {
         key(PK; MyField) { }
-        key(NewKey; MyOtherField) { }
+        key(NewKey; MyOtherField) { } // New table key.
     }
 }
 ```
@@ -93,7 +93,7 @@ tableextension 50100 MyExtension extends SomeTable
     }
     keys
     {
-        key(NewKey; MyOtherExtField) { }
+        key(NewKey; MyOtherExtField) { } // New table extension key.
     }
 }
 ```
@@ -126,7 +126,7 @@ Version 2 of the extension
 ```al
 table 50100 MyTable
 {
-    TableType = Temporary;
+    TableType = Temporary; // Temporary tables don't contribute to the schema.
 
     fields
     {
@@ -136,7 +136,7 @@ table 50100 MyTable
     keys
     {
         key(PK; MyField) { }
-        key(NewKey; MyOtherField) { }
+        key(NewKey; MyOtherField) { } // New table key.
     }
 }
 ```

@@ -65,7 +65,7 @@ tableextension 50100 MyExtension extends SomeTable
 {
     fields
     {
-        field(50100; MyExtField; Integer) { }
+        field(50100; MyExtField; Integer) { } // Adding a new table extension field
     }
 }
 ```
@@ -85,7 +85,7 @@ Version 2 of the extension
 ```al
 table 50100 MyTable
 {
-    TableType = Temporary;
+    TableType = Temporary; // Temporary tables don't contribute to the schema.
 
     fields
     {
@@ -111,11 +111,11 @@ tableextension 50100 MyExtension extends SomeTable
     {
         field(50100; MyFlowField; Integer)
         {
-            FieldClass = FlowField;
+            FieldClass = FlowField; // FlowFields don't contribute to the schema.
         }
     }
 
-    procedure MyProcedure()
+    procedure MyProcedure() // Procedures don't contribute to the schema.
     begin
     end;
 }
