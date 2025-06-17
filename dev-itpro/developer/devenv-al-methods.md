@@ -109,6 +109,8 @@ The `MyRunMethod` returns no data back to the calling code.
 
 ### <a name="Parameters"></a> Parameters  
 
+This section describes how to pass parameters to a method. Parameters are used to pass data into a method when it's called. The parameters are defined in the method declaration and can be mandatory or optional. First, there are a few general rules that apply to parameters:
+
 In a method call, the parameters are separated by commas, and the optional parameters may be omitted starting from the right. For example, this means that if a method has three optional parameters, then you can't omit the second parameter without omitting the third parameter.  
   
 When passing parameters there are two options; you can be *passing by value*, which is the default behavior, or *passing by reference*, in which case you must specify the `var` keyword. 
@@ -116,6 +118,7 @@ When passing parameters there are two options; you can be *passing by value*, wh
 - If a parameter is *passed by value*, then a *copy of the variable* is passed to the method. Any changes that the method makes to the value of the variable are local changes that affect only the copy, not the variable itself.
   
 - If a parameter is *passed by reference*, then a *reference to the variable* is passed to the method. The method can change the value of the variable itself.  
+
 
 ## Example 1  
 
@@ -163,7 +166,7 @@ begin
 end
 ```  
   
-Depending on the use of the `DMY2Date` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default values.  
+Depending on the use of the `DMY2Date` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters aren't used, values from the system date are used as default values.  
   
 ## Example 4  
 
@@ -186,13 +189,13 @@ else
 
 ## Example 6
 
-This example also illustrates how parameters can be *passed by value* or *passed by reference*. The following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
+This example also illustrates how parameters can be *passed by value* or *passed by reference*. The following method declaration includes two parameters: `MyCustomer` and `MyDimension`:
 
 ```AL
 procedure MyMethod(MyCustomer : Record Customer; var MyDimension : List of [Boolean])
 ```
 
-The `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference.
+The `MyCustomer` parameter is passed by value, which is a copy of the variable, and the `MyDimension` parameter is passed by reference, which is a reference to the variable.
 
 ## Related information
 
