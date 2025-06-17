@@ -121,8 +121,7 @@ tableextension 50100 MyExtension extends SomeTable
 }
 ```
 
-## Related information
-
+## Related information 
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -148,8 +148,7 @@ table 50100 MyTable
 }
 ```
 
-## Related information
-
+## Related information  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
