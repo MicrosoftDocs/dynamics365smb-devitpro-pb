@@ -50,7 +50,7 @@ You now have a `HelloWorld` sample that compiles and runs. The JSON files in the
 + Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
 + Use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
 + Use <kbd>F2</kbd> to rename objects, types etc. Learn more in [Keyboard shortcuts](devenv-keyboard-shortcuts.md#editing-in-visual-studio-code).
-+ The `settings.json` file contains user and workspace settings, these options can be modified to suit your preference. If you want to modify Visual Studio Code editor options and functional behavior settings, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
++ The `settings.json` file contains user and workspace settings, these options can be modified to suit your preference. If you want to modify Visual Studio Code editor options and functional behavior settings, see [User and workspace settings](https://code.visualstudio.com/docs/getstarted/settings).
 + When no folders are opened, the primary side bar for the Visual Studio Code Explorer has a **Create AL Project** button. Clicking this button invokes the `AL:Go!` command to create a new project.
 
 ## Get started with Copilot templates
