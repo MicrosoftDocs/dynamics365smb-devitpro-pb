@@ -45,7 +45,7 @@ You now have a `HelloWorld` sample that compiles and runs. The JSON files in the
 
 + Use <kbd>Ctrl+Space</kbd> to activate IntelliSense at any place in the code, which helps you identify possible options.
 + Always use the `.al` extension on new files.
-+ Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by typing `t` and choose the desired snippet from the list.
++ Use the built-in [snippets for code](devenv-syntax.md#examples-of-snippets) by typing `t` and choose the desired snippet from the list.
 + Create objects within the right object ranges, see [Object ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
 + Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
 + Use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
