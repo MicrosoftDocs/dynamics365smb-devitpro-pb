@@ -86,6 +86,9 @@ The following limits are enforced on the resources you can include in an extensi
 
 These limits are subject to change in the future.
 
+>[!NOTE]
+>Prior to version 26.3, embedded resources cannot be retrieved in runtime packages. The only way around that is to publish the regular package to the database.
+
 ## Limiting access to resources
 
 An extension is only able to access its own resources. This means that if two apps declare resources with the same name, they're only be able to access their own versions of the resource.
