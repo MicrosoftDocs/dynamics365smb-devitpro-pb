@@ -1,12 +1,12 @@
 ---
-title: The PromptDialog page type
+title: The PromptDialog Page Type
 description: The PromptDialog page type allows you to integrate copilot capabilities into your custom scenarios.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 11/14/2024
+ms.date: 06/19/2025
 ms.reviewer: solsen
 ---
 
