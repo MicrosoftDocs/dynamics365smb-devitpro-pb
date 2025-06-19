@@ -1,5 +1,5 @@
 ---
-title: Business Central Admin Center| Microsoft Docs
+title: Business Central Admin Center
 description: Learn about how a VAR or an internal administrator can set update windows and other admin tasks.  
 author: jswymer
 ms.topic: article
@@ -9,19 +9,19 @@ ms.date: 05/31/2024
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
-# The Business Central Administration Center
+# The Business Central administration center
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to do administrative tasks for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Some of the tasks that administrators can do include:
 
-- [view and work with production and sandbox environments](tenant-admin-center-environments.md) on the tenant.
-- [set up notification recipients](tenant-admin-center-notifications.md).
-- [manage environment access](tenant-admin-center-manage-access.md).
-- [set up Application Insights telemetry](telemetry-enable-application-insights.md).
+- [View and work with production and sandbox environments](tenant-admin-center-environments.md) on the tenant.
+- [Set up notification recipients](tenant-admin-center-notifications.md).
+- [Manage environment access](tenant-admin-center-manage-access.md).
+- [Set up Application Insights telemetry](telemetry-enable-application-insights.md).
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)
+> ![Screenshot of the Business Central admin center.](../developer/media/admin/business_central_admin_center.png)
 
 ## Supported Microsoft Entra roles for access
 
