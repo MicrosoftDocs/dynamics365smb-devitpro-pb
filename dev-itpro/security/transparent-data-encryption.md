@@ -1,7 +1,7 @@
 ---
 title: Data Encryption at Rest, Transparent Data Encryption, and BitLocker
 description: Learn how to secure your data at rest using TDE and BitLocker on Business Central. Protect your SQL Server and Azure SQL Database files.
-ms.date: 04/01/2021
+ms.date: 06/20/2025
 ms.topic: article
 ms.author: kepontop
 author: jswymer
