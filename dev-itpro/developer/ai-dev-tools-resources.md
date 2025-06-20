@@ -70,6 +70,19 @@ Learn more about the rates under AI Tools in [Billing rates and management](/mic
 > [!NOTE]  
 > It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP).
 
+### Gracefully handle errors in case of overconsumption
+
+When using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, developers can easily react and handle cases of overconsumption. This can happen for example when the customer provides invalid billing information, or when a user is abusing the system and using AI resources too fast.
+
+To identify these scenarios, developers can use the codeunit `AOAI Operation Response` that is returned when using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
+ 
+|AL code check|scenario|
+|-----------------------------------|-------------|
+|`AOAIOperationResponse.IsSuccess()`|The operation was successful and no additional error handling is needed.|
+|`AOAIOperationResponse.GetStatusCode() = 402`|The operation was not successful because the current Entra tenant ran out of AI resources and has no valid billing setup.|
+|`AOAIOperationResponse.GetStatusCode() = 429`|The current user is issuing request to Copilot too fast. This can be an indication of automations or scheduled tasks that the user is not aware of. This error disappears after a few seconds.|
+|`AOAIOperationResponse.GetStatusCode() = 503`|The [!INCLUDE [prod_short](includes/prod_short.md)] backend is temporarily unavailable; this is a rare occurrence and typically transient.|
+
 ## Use your own subscription with customers
 
 For most ISVs, the default [!INCLUDE [prod_short](includes/prod_short.md)] AI resources are enough, However, if you have needs that aren't fulfilled with the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, such as specific models including fine-tuned ones, you can bring your own (BYO) subscription to customers. If that's the case, the ISV is responsible for the deployment, maintenance, scaling, and security of the service - and the billing of AI resources to customers.
