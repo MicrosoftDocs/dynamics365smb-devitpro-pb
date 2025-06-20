@@ -1,6 +1,6 @@
 ---
 title: Managing Capacity
-description: Use the Business Central administration center to manage the storage capacity for a tenant. 
+description: Learn how to monitor and optimize storage, manage environments, and stay within your quota using the administration center.
 author: jswymer
 ms.topic: concept-article
 ms.devlang: al
@@ -31,9 +31,9 @@ To help our customers manage and plan their storage costs on an ongoing basis, t
 
 Every [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Premium or Essential subscriptions can use one production environment and three sandbox environments, at no extra charge.  
 
-Customers can also choose to purchase any number of additional production environments via their CSP partner. Each additionally purchased production environment comes with three additional sandbox environments and increases storage capacity shared by all environments on the tenant by 4 GB.  
+Customers can also choose to purchase any number of extra production environments via their Cloud Solution Provider (CSP) partner. Each extra production environment you buy includes three more sandbox environments and increases the shared storage capacity for all environments in the tenant by 4 GB.
 
-Production and sandbox environments can be created and used in any country/region where [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service is available, also in the country/region where the default [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are located. Additional environments can be created by customers, administrators, and partners by using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+You can create and use production and sandbox environments in any country/region where the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service is available, including the country/region where the default [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are located. Customers, administrators, and partners can create more environments using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, each user, by default, gets access to all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments (sandbox and production) under the same single [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license, still acting within the scope of their license within each of these environments. Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment.
 
@@ -81,10 +81,10 @@ There are a few things that you can do to reduce the amount of data stored in a 
 
 ## Related information
  
-[Working with Administration Tools](administration.md)  
-[The Business Central Administration Center](tenant-admin-center.md)  
-[Managing Environments](tenant-admin-center-environments.md)  
-[Managing Apps](tenant-admin-center-manage-apps.md)  
-[Updating Environments](tenant-admin-center-update-management.md)  
-[Managing Tenant Notifications](tenant-admin-center-notifications.md)  
+[Working with administration tools](administration.md)  
+[The Business Central administration center](tenant-admin-center.md)  
+[Managing environments](tenant-admin-center-environments.md)  
+[Managing apps](tenant-admin-center-manage-apps.md)  
+[Updating environments](tenant-admin-center-update-management.md)  
+[Managing tenant notifications](tenant-admin-center-notifications.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
