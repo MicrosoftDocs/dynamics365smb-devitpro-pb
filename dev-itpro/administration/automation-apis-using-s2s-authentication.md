@@ -99,7 +99,7 @@ Complete these steps to register an application in your Microsoft Entra tenant f
     > [!NOTE]
     > Copy the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.
 
-    Learn more about in [Add a client secret](/identity-platform/how-to-add-credentials?tabs=client-secret) in the Microsoft Entra documentation.
+    Learn more about in [Add a client secret](/identity-platform/how-to-add-credentials) in the Microsoft Entra documentation.
 
 4. Grant the registered application **API.ReadWrite.All** and **Automation.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]** API as follows:
 

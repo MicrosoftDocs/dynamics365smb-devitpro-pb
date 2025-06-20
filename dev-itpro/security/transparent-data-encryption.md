@@ -19,7 +19,7 @@ When thinking about data encryption, you should mainly consider three scenarios:
 This article shows you the alternatives for encrypting data at rest. Suppose someone steal the physical media, like drives or backup tapes, or the database files. A malicious party can restore or attach the database and browse the data if you don't encrypt it. The following mechanisms give you different possibilities to help prevent this outcome.
 
 > [!IMPORTANT]
-> Data encryption at rest doesn't provide encryption across communication channels. For more information about how to encrypt data across the communication channel between the database and the [!INCLUDE[server](../developer/includes/server.md)], see [Enhancing Business Server Security](enhancing-server-instance-security.md). It also doesn't provide encryption while the data is in use. SQL Server offers the [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sqlallproducts-allversions) feature, but [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support it.
+> Data encryption at rest doesn't provide encryption across communication channels. For more information about how to encrypt data across the communication channel between the database and the [!INCLUDE[server](../developer/includes/server.md)], see [Enhancing Business Server Security](enhancing-server-instance-security.md). It also doesn't provide encryption while the data is in use. SQL Server offers the [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) feature, but [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support it.
 
 ## Transparent Data Encryption (TDE)
 
