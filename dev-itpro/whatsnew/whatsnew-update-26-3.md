@@ -49,13 +49,11 @@ New customers automatically get Business Central version 26.3. If you're an exis
 
 Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26.3. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
 
-
 ## Good to know
 
-### Recent and upcoming online service features
+### System symbols now included with Business Central server
 
-- [Manage environment updates more flexibly](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/manage-environment-updates-more-flexibly) (GA)
-- [Support IPv6 for enhanced security and scalability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/support-ipv6-enhanced-security-scalability) (GA)
+Business Central server binaries now include system symbols instead of the **System** extension. As a result, you can't publish `SymbolsOnly` packages by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp). You get a warning if you use the `-SymbolsOnly` parameter with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo). To get information about the system symbols, use the `-Name System` parameter.
 
 ### Business Central Launch Event videos on YouTube
 
