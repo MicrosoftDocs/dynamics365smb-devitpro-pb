@@ -53,7 +53,7 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ### System symbols now included with Business Central server
 
-Business Central server binaries now include system symbols instead of the **System** extension. As a result, you can't publish `SymbolsOnly` packages by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp). You get a warning if you use the `-SymbolsOnly` parameter with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo). To get information about the system symbols, use the `-Name System` parameter.
+Business Central server binaries now include the system symbols instead of the **System** extension. As a result, you can't publish `SymbolsOnly` packages by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp). You get a warning if you use the `-SymbolsOnly` parameter with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo). To get information about the system symbols, use the `-Name System` parameter.
 
 ### Business Central Launch Event videos on YouTube
 
