@@ -73,7 +73,13 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Creating a table
-            url: devenv-table-object.md#table-example            
+            url: devenv-table-object.md#table-example
+          - text: Extending a table
+            url: devenv-table-ext-object.md
+          - text: Creating a page
+            url: devenv-page-object.md
+          - text: Extending a page
+            url: devenv-page-ext-object.md
           - text: Creating a report
             url: devenv-walktrough-designing-reports-multiple-tables.md
           - text: Extending a report
