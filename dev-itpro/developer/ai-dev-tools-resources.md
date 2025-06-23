@@ -72,10 +72,12 @@ Learn more about the rates under AI Tools in [Billing rates and management](/mic
 
 ### Gracefully handle errors in case of overconsumption
 
-When using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, developers can easily react and handle cases of overconsumption. This can happen for example when the customer provides invalid billing information, or when a user is abusing the system and using AI resources too fast.
+When using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, developers can easily react and handle cases of overconsumption. This can happen for example when the customer provides invalid billing information, or when a user is using AI resources too fast.
 
-To identify these scenarios, developers can use the codeunit `AOAI Operation Response` that is returned when using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
- 
+To identify and handle these scenarios, developers can use the codeunit `AOAI Operation Response` that is returned when using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
+
+Here are some examples of using an instance of `AOAI Operation Response` to identify errors related to AI consumption.
+
 |AL code check|scenario|
 |-----------------------------------|-------------|
 |`AOAIOperationResponse.IsSuccess()`|The operation was successful and no additional error handling is needed.|
