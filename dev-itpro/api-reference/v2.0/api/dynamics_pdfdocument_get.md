@@ -21,9 +21,9 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 
 ```
 GET businesscentralPrefix/companies({id})/salesInvoices({id})/pdfDocument
-GET businesscentralPrefix/companies({id})/salesQuote({id})/pdfDocument
-GET businesscentralPrefix/companies({id})/salesCreditMemo({id})/pdfDocument
-GET businesscentralPrefix/companies({id})/purchaseInvoice({id})/pdfDocument
+GET businesscentralPrefix/companies({id})/salesQuotes({id})/pdfDocument
+GET businesscentralPrefix/companies({id})/salesCreditMemos({id})/pdfDocument
+GET businesscentralPrefix/companies({id})/purchaseInvoices({id})/pdfDocument
 ```
 
 ## Request headers

@@ -7,6 +7,7 @@ ms.author: solsen
 author: SusanneWindfeldPedersen
 ms.collection: get-started
 ms.reviewer: solsen
+ms.custom: evergreen
 ---
 
 # AL simple statements
