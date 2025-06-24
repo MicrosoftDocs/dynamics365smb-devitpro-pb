@@ -21,7 +21,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 | Product area | Feature | PP/GA |
 |-|-|-|
-| Copilot and agents | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/capture-more-sales-enhanced-sales order-agent)| PP  |
+| Copilot and agents | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)| PP  |
 | | [Chat with Copilot to learn how to use installed add-on apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/chat-copilot-learn-use-installed-add-on-apps) | PP  |
 |  | [Automate payables processes with the Payables Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-payables-processes-payables-agent) | PP  |
 | Country and regional | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) | GA  |
