@@ -47,9 +47,9 @@ When creating interfaces, consider the following guidelines:
 - Avoid adding methods to published interfaces. Analyzer rule [AS0066](analyzers/appsourcecop-as0066.md).
 - Design interfaces with extension in mind. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
 - Understand circular reference limitations. Analyzer rule [AL0852](analyzers/appsourcecop-al0852.md)
-- Interfaces can only contain procedure declarations. Analyzer rules [AL0584](diagnostics/AL0584.md), [AL0585](diagnostics/al0585.md), [AL0612](diagnostics/al0612.md).
-- Avoiding naming conflicts with built-in procedures. Analyzer rule [AL0616](diagnostics/al0616.md)
-- When implementing multiple interfaces avoid duplication. Analyzer rules [AL0587](diagnostics/AL0587.md), [AL0675](diagnostics/AL0675.md).
+- Interfaces can only contain procedure declarations. Analyzer rules [AL0584](diagnostics/diagnostic-al584.md)[AL0585](diagnostics/diagnostic-al585.md), [AL0612](diagnostics/diagnostic-al612.md).
+- Avoiding naming conflicts with built-in procedures. Analyzer rule [AL0616](diagnostics/diagnostic-al616.md)
+- When implementing multiple interfaces avoid duplication. Analyzer rules [AL0587](diagnostics/diagnostic-AL587.md), [AL0675](diagnostics/diagnostic-AL675.md).
 - A new method can't be added to an already published interface. Analyzer rule [AS0066](analyzers/appsourcecop-as0066.md).
 
 ## Snippet support
