@@ -36,6 +36,80 @@ Interfaces in AL can be extended to allow additional changes to interfaces witho
 
 Typing the shortcut `tinterface` creates the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
+## Interface creation
+
+When creating interfaces, consider the following guidelines:
+
+- Use meaningful names for interfaces that clearly convey their purpose.
+- Keep interfaces focused and cohesive, with a small number of related methods.
+- Use versioning for interfaces to manage changes over time.
+- Document the expected behavior of each method in the interface.
+- Consider using default implementations for methods in interfaces to reduce boilerplate code.
+
+## Best practices and design guidelines
+
+- Avoid adding methods to published interfaces. Analyzer rule [AS0066](analyzers/appsourcecop-as0066.md)
+- Design interfaces with extension in mind. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
+- Understand circular reference limitations. Analyzer rule [AL0852](analyzers/appsourcecop-al0852.md)
+- Interfaces can only contain procedure declarations. Analyzer rules [AL0584](diagnostics/AL0584.md), [AL0585](diagnostics/al0585.md), [AL0612](diagnostics/al0612.md)
+- Avoiding naming conflicts with built-in procedures. Analyzer rule [AL0616](diagnostics/al0616.md)
+- Implementing multiple interfaces. Analyzer rules [AL0587](diagnostics/AL0587.md), [AL0675](diagnostics/AL0675.md)
+
+3. **Create a "Troubleshooting" section** with:
+   - Common implementation errors (AL0582, AL0595)
+   - Interface extension issues (AL0852, AL0867, AL0868)
+   - Accessibility considerations (AL0748, AL0749)
+
+4. **Add "Interface Evolution" guidance** on:
+   - How to handle the need for new methods in published interfaces
+   - Alternative patterns to avoid breaking changes
+   - Version control for interfaces
+
+
+<!--
+
+### Diagnostics for designing interfaces
+
+| Diagnostic | Description |
+|------------|-------------|
+| AL0584 | An interface member cannot have any variables. |
+| AL0585 | An interface cannot have any variables. |
+| AL0612 | An interface member must be a 'procedure'. |
+| AL0616 | Defining a contract that matches a built-in codeunit procedure on an interface is not allowed. |
+
+## 2. Interface Implementation
+
+| Diagnostic | Description |
+|------------|-------------|
+| AL0582 | A class does not implement an interface member that is required. |
+| AL0587 | An interface is already listed in the implementation list (duplicate). |
+| AL0595 | A class claims to implement an interface but doesn't fully implement it. |
+| AL0596 | A value doesn't implement the required interface and there is no default implementation. |
+
+## 3. Interface Extension
+
+| Diagnostic | Description |
+|------------|-------------|
+| AL0852 | Interface cannot extend another interface if it causes a circular reference. |
+| AL0867 | A method is already declared in an interface in another extension. |
+| AL0868 | A method from this interface is already declared in another interface, making it impossible to invoke this method via this interface. |
+
+## 4. Interface Publishing and Versioning
+
+| Diagnostic | Description |
+|------------|-------------|
+| AS0066 | A new method cannot be added to an interface that has been published because dependent extensions may break. |
+
+## 5. Interface Accessibility
+
+| Diagnostic | Description |
+|------------|-------------|
+| AL0675 | An implementation for an interface is already specified in the list. |
+| AL0748 | Return types with 'Internal' accessibility may not be usable outside of the module. |
+| AL0749 | Parameter types with 'Internal' accessibility may cause issues when calling the method from outside the module. |
+>
+
+
 ## Interface example
 
 The following example defines an interface `IAddressProvider`, which has one method `getAddress` with a certain signature. The codeunits `CompanyAddressProvider` and `PrivateAddressProvider` both implement the `IAddressProvider` interface, and each define a different implementation of the `getAddress` method; in this case a simple variation of address value.
@@ -151,6 +225,7 @@ page 50200 MyAddressPage
         sendTo: enum SendTo;
 }
 ```
+
 
 ## Create List and Dictionary of an interface
 
