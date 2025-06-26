@@ -2,7 +2,7 @@
 title: "RecordRef.LockTable([Boolean] [, Boolean]) Method"
 description: "Starts locking on a table to protect it from write transactions that conflict with each other."
 ms.author: solsen
-ms.date: 04/23/2025
+ms.date: 06/23/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
