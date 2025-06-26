@@ -48,19 +48,22 @@ When creating interfaces, consider the following guidelines:
 
 ## Best practices and design guidelines
 
-- Avoid adding methods to published interfaces. Analyzer rule [AS0066](analyzers/appsourcecop-as0066.md)
+- Avoid adding methods to published interfaces. Analyzer rule [AS0066](analyzers/appsourcecop-as0066.md).
 - Design interfaces with extension in mind. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
 - Understand circular reference limitations. Analyzer rule [AL0852](analyzers/appsourcecop-al0852.md)
-- Interfaces can only contain procedure declarations. Analyzer rules [AL0584](diagnostics/AL0584.md), [AL0585](diagnostics/al0585.md), [AL0612](diagnostics/al0612.md)
+- Interfaces can only contain procedure declarations. Analyzer rules [AL0584](diagnostics/AL0584.md), [AL0585](diagnostics/al0585.md), [AL0612](diagnostics/al0612.md).
 - Avoiding naming conflicts with built-in procedures. Analyzer rule [AL0616](diagnostics/al0616.md)
-- Implementing multiple interfaces. Analyzer rules [AL0587](diagnostics/AL0587.md), [AL0675](diagnostics/AL0675.md)
+- Implementing multiple interfaces. Analyzer rules [AL0587](diagnostics/AL0587.md), [AL0675](diagnostics/AL0675.md).
 
-3. **Create a "Troubleshooting" section** with:
+
+
+
+**"Troubleshooting" section**
    - Common implementation errors (AL0582, AL0595)
    - Interface extension issues (AL0852, AL0867, AL0868)
    - Accessibility considerations (AL0748, AL0749)
 
-4. **Add "Interface Evolution" guidance** on:
+**Add "Interface Evolution" guidance**
    - How to handle the need for new methods in published interfaces
    - Alternative patterns to avoid breaking changes
    - Version control for interfaces
