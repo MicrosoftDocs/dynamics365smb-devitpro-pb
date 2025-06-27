@@ -21,9 +21,10 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 | Product area | Feature | PP/GA |
 |-|-|-|
-| Copilot and agents | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)| PP  |
-| | [Chat with Copilot to learn how to use installed add-on apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/chat-copilot-learn-use-installed-add-on-apps) | PP  |
+| Copilot and agents | [Chat with Copilot to learn how to use installed add-on apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/chat-copilot-learn-use-installed-add-on-apps) | PP  |
 |  | [Automate payables processes with the Payables Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-payables-processes-payables-agent) | PP  |
+| | Capture more sales with enhanced Sales Order Agent (link coming soon)| PP  |
+| | [Chat with Copilot to learn how to use installed add-on apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/chat-copilot-learn-use-installed-add-on-apps) | PP  |
 | Country and regional | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) | GA  |
 |  | [Comply with Australian Payment Times Reporting bill](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/comply-australian-payment-time-reporting-bill) | GA  |
 | Electronic Documents | [Use the E-Documents framework with Power Automate and other solutions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-e-documents-power-automate) |  PP |
@@ -32,9 +33,11 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Localization updates
 
+No localization updates for 26.3.
+<!--
 |Country|Feature|Description|
 |-|-|-|
-|||
+|||-->
 
 ## Release plan
 
