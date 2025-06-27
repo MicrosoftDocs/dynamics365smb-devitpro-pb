@@ -62,5 +62,5 @@ end;
 
 ## Related information
 
-- [Interfaces in AL](devenv-interfaces-in-al.md)  
-- [Extending interfaces in AL](devenv-interfaces-in-al-extend.md)  
+[Interfaces in AL](devenv-interfaces-in-al.md)  
+[Extending interfaces in AL](devenv-interfaces-in-al-extend.md)  
