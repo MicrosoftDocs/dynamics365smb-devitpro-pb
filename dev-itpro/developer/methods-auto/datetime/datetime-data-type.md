@@ -2,7 +2,7 @@
 title: "DateTime data type"
 description: "Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 06/13/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -48,7 +48,7 @@ If you use a date that is outside the valid date range, a run-time error occurs.
 
 The syntax for defining DateTime format follows the [ISO standard](https://en.wikipedia.org/wiki/ISO_8601). 
 - The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 25th of March, 2018.
-- The syntax for defining Time format is `hhmmssT`, where `T` is the time designator. For example, `093125H`, read as 9:13:25.
+- The syntax for defining Time format is `hhmmssT`, where `T` is the time designator. For example, `093125T`, read as 9:13:25.
 
 ## SQL Server
 
@@ -56,8 +56,8 @@ In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000.
 
 ## Related information
 
-[Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
-[About Dates in Business Central](../../devenv-about-dates.md)  
-[CurrentDateTime Method](../system/system-currentdatetime-method.md)  
-[Formatting Values, Dates, and Time](../../devenv-format-property.md)
+[Get started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  
+[About dates in Business Central](../../devenv-about-dates.md)  
+[CurrentDateTime method](../system/system-currentdatetime-method.md)  
+[Formatting values, dates, and time](../../devenv-format-property.md)

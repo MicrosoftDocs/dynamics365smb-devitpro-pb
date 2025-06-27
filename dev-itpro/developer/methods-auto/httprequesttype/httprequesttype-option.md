@@ -30,6 +30,8 @@ The different types of HTTP Requests that can be intercepted by a handler
 |Trace|A trace request|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## Related information  
-[Getting started with AL](../devenv-get-started.md)  
-[Developing extensions](../devenv-dev-overview.md)  
+
+## Related information
+
+[Getting started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  

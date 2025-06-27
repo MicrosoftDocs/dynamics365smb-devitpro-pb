@@ -6,7 +6,6 @@ ms.date: 04/02/2025
 ms.reviewer: solsen
 ms.topic: get-started
 author: SusanneWindfeldPedersen
-ms.custom: evergreen
 ---
 
 # Triggers overview

@@ -19,9 +19,9 @@ The **Go to Definition** feature navigates to the source of a type and opens the
 
 ![F12.](media/F12.gif "Go to Definition")
 
-With **Go to Definition**, you can step into the referenced code and set breakpoints on the external code and base application code. For more information, see [Debugging in AL](devenv-debugging.md).
+With **Go to Definition**, you can step into the referenced code and set breakpoints on the external code and base application code. Learn more in [Debugging in AL](devenv-debugging.md).
 
-You can always use **Go to Definition** on [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] code. However, if you want to use it on other extensions, the extension package that is now referenced, when originally published, must have the `includeSourceInSymbols` property set to `true`. The `includeSourceInSymbols` property is one of the three options inside the `resourceExposurePolicy` property. An example is, that if A is referencing B you can only use the Go To Definition on types of B, if B, when it was published, had the `includeSourceInSymbols` flag set to `true`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
+You can always use **Go to Definition** on [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] code. However, if you want to use it on other extensions, the extension package that is now referenced, when originally published, must have the `includeSourceInSymbols` property set to `true`. The `includeSourceInSymbols` property is one of the three options inside the `resourceExposurePolicy` property. An example is, that if A is referencing B you can only use the Go To Definition on types of B, if B, when it was published, had the `includeSourceInSymbols` flag set to `true`. Learn more in [Resource exposure policy setting](devenv-security-settings-and-ip-protection.md).
 
 ## Runtime 5.2 and Go to Definition
 
@@ -33,11 +33,11 @@ The following conditions still apply:
 
 - Transitive references can only be resolved if the symbol app that defines the reference is a dependency on the project that contains the entry point for the **Go to Definition** symbol. For example, assume that you are in `HelloWorld.al` and want to **Go to Definition** on the `Car` table defined in the `Car.app`, which is a dependency on your app. Then navigation will open the `CarTable.dal` preview file. And assume that from here you want to **Go to Definition** on `CarDistributor` table defined in the `CarDistributor.app`, which is a dependency on `Car.app`, but *not* a dependency on the `HelloWorld.app`. In this case, the source code **Go to Definition** won't work.
 
-For more information about code navigation in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/docs/editor/editingevolved).
+Learn more about code navigation in Visual Studio Code in [Code navigation](https://code.visualstudio.com/docs/editor/editingevolved).
 
 ## Related information  
 
 [Developing extensions in AL](devenv-dev-overview.md)  
-[JSON Files](devenv-json-files.md)  
+[JSON files](devenv-json-files.md)  
 [Debugging in AL](devenv-debugging.md)  
 [AL code actions](devenv-code-actions.md)  

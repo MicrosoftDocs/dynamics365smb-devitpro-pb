@@ -28,6 +28,8 @@ The following methods are available on instances of the TestHttpRequestMessage d
 |[RequestType()](testhttprequestmessage-requesttype-method.md)|Gets the HTTP method type.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## Related information  
-[Getting started with AL](../devenv-get-started.md)  
-[Developing extensions](../devenv-dev-overview.md)  
+
+## Related information
+
+[Getting started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  

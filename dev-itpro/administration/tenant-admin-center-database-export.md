@@ -1,11 +1,11 @@
 ---
-title: Exporting databases in the admin center
-description: Use the Business Central administration center to export tenant databases per environment.  
+title: Exporting Databases in the Admin Center
+description: Learn how to export production environment data as BACPAC files to Azure storage. Start your export today.  
 author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
-ms.date: 06/21/2024
+ms.date: 06/20/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -19,14 +19,14 @@ From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], 
 - You can only request a database export if the customer has a paid Business Central subscription.
 - You must have explicit permission to export databases. For more information, see the [Users who can export databases](#users-who-can-export-databases) section.
 - You can't export your database to an Azure premium storage account. The steps in this article are only supported on Azure standard storage accounts.
-- You can export the database of an environment that is encrypted using a [customer-managed encryption key](../security/security-online.md#customer-managed-encryption-key), but the .bacpac file created in the storage account will be encrypted using the [encryption key applied to the storage account](/azure/storage/common/customer-managed-keys-overview) rather than the encryption key applied to the environment.
+- You can export the database of an environment that's encrypted with a [customer-managed encryption key](../security/security-online.md#customer-managed-encryption-key). The bacpac files in the storage account are encrypted with the [encryption key applied to the storage account](/azure/storage/common/customer-managed-keys-overview), not the environment's encryption key.
 
 > [!NOTE]
 > For each environment, you can export the database a maximum of 10 times per month. You can see the number of exports still remaining for the current month in the **Create Database Export** pane when creating the export file.
 
 ## Setting up Azure storage
 
-Before you can export the file, you must first set up the Azure storage account container that the BACPAC file will be exported to.  
+Before you can export the file, set up the Azure storage account container that the BACPAC file. 
 
 ### Creating the storage account
 
@@ -50,7 +50,7 @@ The next step is to generate a shared access signature (SAS) that provides secur
 1. Select a start and end date and time for the SAS. A minimum expiration window of 24 hours from the initiation of the export is required.
 
     > [!TIP]
-    > It is a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation. However, the SAS must be valid for a minimum of 24 hours.
+    > It's a best practice to use near-term expiration for the account's SAS. To reduce risk of a compromised storage account, set the end date and time no later than what is needed for you to complete the database export operation. However, the SAS must be valid for a minimum of 24 hours.
 
 1. In the **Allowed protocols** section, select **HTTPS only**.
 1. Select **Generate SAS and connection string**.
@@ -60,13 +60,13 @@ For more information on generating and using a SAS, see [Grant limited access to
 
 ## Creating the database export
 
-When you've created the Azure storage account and generated the SAS URI, you can then create the export file from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+After you created the Azure storage account and generated the SAS URI, you can then create the export file from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-1. On the Environments list page, choose the relevant production environment to view the environment details.
+1. On the **Environments** list page, choose the relevant production environment to view the environment details.
 1. On the action ribbon of the environment details, choose **Database**, and then choose **Create Database Export**.
 1. In the **File Name** field, specify a name for the export file, or leave the default value.
 1. In the **SAS URI** field, specify the **Blob service SAS URL** value that you copied in the previous section.
-1. In the **Container Name** field, enter the name of the container in the Azure storage account to which you want the BACPAC file exported. If you've already created a container in your Azure storage account, you can enter the name of that container here. Otherwise, if the name that is specified in the **Container Name** field doesn't already exist in the Azure storage account, it will be created for you.
+1. In the **Container Name** field, enter the name of the container in the Azure storage account to which you want the BACPAC file exported. If you already created a container in your Azure storage account, enter the name of that container here. Otherwise, if the name specified in the **Container Name** field doesn't exist in the Azure storage account, it's created for you.
 
 Once the export operation begins, the BACPAC file is generated and exported to the indicated Azure storage account. The operation might take several minutes to several hours depending on the size of the database. You can close the browser window with the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] during the export. When the export completes, you can access the export file in the defined container in your Azure storage account. Optionally, you can import the data into a new database in Azure SQL Database or SQL Server for further processing. For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import).  
 
@@ -90,15 +90,15 @@ For more information about permissions sets and user groups, see [Assign Permiss
 
 The BACPAC file contains data that is customer-specific business data. Technically, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online is a multitenant deployment, which means that each customer tenant has their own business database while the data that defines the application is in a shared application database.  
 
-This means that if you want to export the data in order to change the customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] from an online deployment to an on-premises deployment, you must also get the application data from the installation media from the same version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that the online tenant is using. You can see the version number in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or the **Help and Support** page in the customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
+To export data when moving the customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] from an online to an on-premises deployment, get the application data from the installation media for the same version as the online tenant. You find the version number in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or on the **Help and Support** page in client.
 
 > [!IMPORTANT]
-> While you can import the downloaded BACPAC file into your own SQL Server instance, Microsoft does not provide support for creating a working on-premises environment from the BACPAC that you download from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.  
+> While you can import the downloaded BACPAC file into your own SQL Server instance, Microsoft doesn't provide support for creating a working on-premises environment from the BACPAC that you download from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.  
 
 For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
 
 > [!NOTE]
-> If you are getting an error saying your file contains corrupted data when importing the bacpac file please ensure you are using the .NET Core version of [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage-download).
+> If you're getting an error saying your file contains corrupted data when importing the bacpac file, make sure you're using the .NET Core version of [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage-download).
 
 ## Restoring the exported data to Business Central online
 
@@ -109,13 +109,12 @@ If you decide at some point that you want to restore the exported data to a new 
 If you want to use the exported data in a container-based developer environment, you can use Windows PowerShell scripts to help you do that, including the [BCContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).  
 
 ## Related information
-
 [SQL Server technical documentation](/sql/sql-server/)  
-[Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import)  
-[Delegated Administrator Access to Business Central Online](delegated-admin.md)  
-[Working with Administration Tools](administration.md)  
-[The Business Central Administration Center](tenant-admin-center.md)  
-[Managing Environments](tenant-admin-center-environments.md)  
-[Updating Environments](tenant-admin-center-update-management.md)  
-[Managing Tenant Notifications](tenant-admin-center-notifications.md)  
+[Quickstart - import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import)  
+[Delegated administrator access to Business Central online](delegated-admin.md)  
+[Working with administration tools](administration.md)  
+[The Business Central administration center](tenant-admin-center.md)  
+[Managing environments](tenant-admin-center-environments.md)  
+[Updating environments](tenant-admin-center-update-management.md)  
+[Managing tenant notifications](tenant-admin-center-notifications.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
