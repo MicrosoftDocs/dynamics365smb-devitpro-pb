@@ -68,7 +68,7 @@ When working with interface operators in AL, follow these best practices:
 - Keep interfaces focused - design smaller, more specialized interfaces to make casting more predictable.
 - Document interface relationships - when extending interfaces, clearly document the hierarchy to help other developers understand type relationships.
 - Prefer explicit over implicit - when possible, design your code to use concrete types rather than relying heavily on runtime casting.
-- Use consistent naming - follow a naming convention for interfaces to make code more readable (for example, prefixing with "I").
+- Use consistent naming - follow a naming convention for interfaces to make code more readable, for example, prefixing the name with `I`.
 
 ## Related information
 
