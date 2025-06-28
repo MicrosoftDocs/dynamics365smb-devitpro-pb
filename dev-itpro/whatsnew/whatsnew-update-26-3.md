@@ -25,6 +25,8 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 |  | [Automate payables processes with the Payables Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-payables-processes-payables-agent) | PP  |
 | | Capture more sales with enhanced Sales Order Agent (link coming soon)| PP  |
 | | [Chat with Copilot to learn how to use installed add-on apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/chat-copilot-learn-use-installed-add-on-apps) | PP  |
+||[Summarize with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-record-copilot#enhancements-with-update-263-july-update) is faster in update 26.3 and includes a Copy summary option.||
+||[Autofill with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot) adds improved support for keyboard shortcuts and screen readers.||
 | Country and regional | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) | GA  |
 |  | [Comply with Australian Payment Times Reporting bill](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/comply-australian-payment-time-reporting-bill) | GA  |
 | Electronic Documents | [Use the E-Documents framework with Power Automate and other solutions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-e-documents-power-automate) |  PP |
@@ -54,6 +56,10 @@ New customers automatically get Business Central version 26.3. If you're an exis
 Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26.3. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
 
 ## Good to know
+
+### Copilot uses online content from app publishers
+
+Users can now chat with Copilot and ask questions about the apps they have installed.To give our partner community time to prepare their online content for Copilot, this functionality is initially available in Update 26.3 sandbox environments only and becomes available at the end of July 2025 even if you deploy an environment earlier.
 
 ### System symbols now included with Business Central server
 
