@@ -1,5 +1,5 @@
 ---
-title: Update 26.3 for Microsoft Dynamics 365 Business Central 2024 Release Wave 1
+title: Update 26.3 for Microsoft Dynamics 365 Business Central 2025 Release Wave 1
 description: Get an overview of new and changed capabilities in the 26.3 update of Business Central online, which is part of 2025 release wave 1
 ms.author: jswymer
 ms.date: 06/05/2025
