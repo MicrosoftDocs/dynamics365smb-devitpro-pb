@@ -2,7 +2,7 @@
 title: Update 26.3 for Microsoft Dynamics 365 Business Central 2025 Release Wave 1
 description: Get an overview of new and changed capabilities in the 26.3 update of Business Central online, which is part of 2025 release wave 1
 ms.author: jswymer
-ms.date: 06/05/2025
+ms.date: 07/01/2025
 ms.reviewer: jswymer
 ms.topic: conceptual
 author: jswymer
@@ -27,10 +27,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 ||[Summarize with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-record-copilot#enhancements-with-update-263-july-update) is faster in update 26.3 and includes a Copy summary option.||
 ||[Autofill with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot) adds improved support for keyboard shortcuts and screen readers.||
 | Country and regional | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) | GA  |
-|  | [Comply with Australian Payment Times Reporting bill](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/comply-australian-payment-time-reporting-bill) | GA  |
-| Electronic Documents | [Use the E-Documents framework with Power Automate and other solutions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-e-documents-power-automate) |  PP |
-|  | [Export reminders and finance charges as PEPPOL files](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/export-reminders-finance-charges-as-peppol-files) |  GA |
-| | [Use Continia as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-continia-as-service-provider-e-documents) | GA |
+| Electronic Documents | [Use Continia as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-continia-as-service-provider-e-documents) | GA |
 
 ## Localization updates
 
