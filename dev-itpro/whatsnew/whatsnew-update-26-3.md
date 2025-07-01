@@ -31,11 +31,12 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Localization updates
 
-No localization updates for 26.3.
-<!--
 |Country|Feature|Description|
 |-|-|-|
-|||-->
+|ES|SII CSV file update|The CSV in the SII schema has been updated related to the newest changes required by AEAT.|
+|DE|ZUGFeRD format availability|ZUGFeRD format (PDF/A) for E-invoicing in Germany is now available. In AP process, system will automatically extract the XML and process, and in the AR process system will use default report layout to create PDF and attach the XML inside.|
+|DE|Peppol BIS3 adjustment|Users in Germany now can use new Peppol BIS3 DE format for E-invoicing aligned with German standards.|
+|BE|Peppol BIS3 adjustment|Users in Belgium now can use new Peppol BIS3 BE format for E-invoicing aligned with Belgian standards (i.e. using Enterprise No.).|
 
 ## Release plan
 
