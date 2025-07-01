@@ -1,17 +1,19 @@
 ---
-title: Troubleshooting overview
+title: Troubleshooting tools and guides overview
 description: An overview of tools and processes that help troubleshoot issues in Business Central.
 ms.custom: bap-template
-ms.date: 05/08/2025
+ms.date: 07/01/2025
 ms.reviewer: jswymer
 ms.topic: overview
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
 
-# Troubleshooting overview
+# Troubleshooting tools and guides overview
 
-The following sections help you troubleshoot issues with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] so that you can *gather information* about a given problem, *identify the cause* of the problem, and eventually *implement a sustainable solution* that doesn't introduce new issues. Use the tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to gain insights on trends in application behavior, identify performance issues, database locks, and more. Use profiling combined with debugging in sandboxes, or snapshot debugging in production environments to pinpoint what causes a specific issue. And if you want to investigate and troubleshooting things after they happened, then use telemetry and the tools around that feature.
+The following sections help you troubleshoot issues with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] so that you can *gather information* about a given problem, *identify the cause* of the problem, and eventually *implement a sustainable solution* that doesn't introduce new issues. Use the tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to gain insights on trends in application behavior, identify performance issues, database locks, and more. 
+
+Use profiling with debugging in sandboxes, or snapshot debugging in production environments, to pinpoint the cause of a specific issue. To investigate and troubleshoot issues after they occur, use telemetry and its related tools.
 
 ## Troubleshooting articles
 
@@ -19,11 +21,11 @@ For a large collection of troubleshooting articles, see the following site provi
 
 - [Microsoft Dynamics 365 Business Central troubleshooting](/troubleshoot/dynamics-365/business-central/welcome-business-central)
 
-  These articles explain how to determine, diagnose, and fix issues that you might encounter when you use [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The articles are organized by feature area, and each article focuses on a specific issue and how to solve it.
+  These articles explain how to check, diagnose, and fix issues that you might encounter when using [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The articles are organized by feature area, and each article focuses on a specific issue and its solution.
 
 ## Troubleshooting in the client
 
-These tools provided in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client can help you gain insights on trends in application behavior, identify performance issues, database locks, and more. 
+These tools in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client help you understand trends in application behavior, identify performance issues, database locks, and more. 
 
 - Investigate root causes for errors with [Copy details in the error dialog](devenv-error-dialog.md)
 - Investigate page data, filters, and load times with the [Page Inspector](/dynamics365/business-central/across-inspect-page)
