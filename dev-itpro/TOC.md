@@ -1463,6 +1463,7 @@
 
 ### APIs
 #### [Overview](webservices/api-overview.md)
+#### [API endpoint structure](webservices/api-endpoint-structure.md)
 #### [API client performance](webservices/odata-client-performance.md)
 #### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
 #### [Tips for working with APIs](developer/devenv-connect-apps-tips.md)
