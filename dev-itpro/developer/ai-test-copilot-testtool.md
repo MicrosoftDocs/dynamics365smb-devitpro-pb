@@ -126,6 +126,7 @@ codeunit 50201 "Marketing Text Simple Install"
 
 ## Related information
 
+[Business Central Copilot Test Toolkit](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
 [Build the Copilot capability in AL](ai-build-capability-in-al.md)  
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [Create datasets](ai-test-copilot-datasets.md)  

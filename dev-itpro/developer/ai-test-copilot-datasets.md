@@ -99,6 +99,7 @@ When creating AI tests, the data you use is as important as the AI features you'
 
 ## Related information
 
+[Business Central Copilot Test Toolkit](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
 [Build the Copilot capability in AL](ai-build-capability-in-al.md)  
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [AI Test Tool](ai-test-copilot-testtool.md)  
