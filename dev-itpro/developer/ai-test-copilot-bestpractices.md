@@ -4,7 +4,7 @@ description: Learn about best practices for testing the Copilot capability in AL
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
-ms.date: 05/01/2025
+ms.date: 07/02/2025
 ms.collection:
   - get-started
   - bap-ai-copilot
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 
 # Best practices for testing the Copilot capability
 
-The following best practices help you ensure that your Copilot features are accurate, safe, and reliable. These practices are based on the unique characteristics of LLMs and the specific requirements of your organization.
+Testing AI-driven features like Copilot requires a tailored approach to ensure accuracy, safety, and reliability. This article outlines best practices for testing the Copilot capability in AL, focusing on the unique challenges posed by Large Language Models (LLMs).
 
 ## Key considerations for LLM-based features
 

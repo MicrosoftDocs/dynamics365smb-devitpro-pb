@@ -18,7 +18,7 @@ A **dataset** is the foundation of AI testing in [!INCLUDE [prod_short](includes
 ## Create a dataset
 
 > [!TIP]
-> The full source code for the example used in this article can be found in the [Marketing Text Simple](#) demo project.
+> The full source code for the example used in this article can be found in the [Marketing Text Simple](ai-test-copilot-testtool.md) demo project.
 
 AI tests in [!INCLUDE [prod_short](includes/prod_short.md)] rely on datasets defined in either **JSONL** or **YAML** format. These datasets contain both test input and expected data values used by the AI Test Tool.
 
