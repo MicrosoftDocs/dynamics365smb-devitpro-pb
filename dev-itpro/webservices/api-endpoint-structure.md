@@ -10,7 +10,7 @@ ms.date: 07/02/2025
 
 # API endpoint structure
 
-[!INCLUDE[prod_short](../../includes/prod_short.md)] expose many APIs that makes it possible for other services to integrate with [!INCLUDE[prod_short](../../includes/prod_short.md)]. 
+[!INCLUDE[prod_short](../includes/prod_short.md)] expose many APIs that makes it possible for other services to integrate with [!INCLUDE[prod_short](../includes/prod_short.md)]. 
 
 ## Accessing API endpoints
 
@@ -21,7 +21,7 @@ Base URL
 https://api.businesscentral.dynamics.com/v2.0
 ```
 
-The **v2.0** part of the base URL stems from the time when [!INCLUDE[prod_short](../../includes/prod_short.md)] started supporting multiple environments.
+The **v2.0** part of the base URL stems from the time when [!INCLUDE[prod_short](../includes/prod_short.md)] started supporting multiple environments.
 
 Next, the URL need to include which environment you want to connect to. Here, you can choose to include the entra ID in the URL:
 
@@ -73,7 +73,7 @@ To learn more, go to [Business Central API (v2.0)](../api-reference/v2.0/index.m
 
 ## Example: URLs for Business Central automation API
 
-To access any endpoint from the [!INCLUDE[prod_short](../../includes/prod_short.md)] automation API, use this URL
+To access any endpoint from the [!INCLUDE[prod_short](../includes/prod_short.md)] automation API, use this URL
 
 `https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/{endpoint}`
 
