@@ -10,7 +10,7 @@ ms.date: 07/02/2025
 
 # API endpoint structure
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] expose many APIs that makes it possible for other services to integrate with [!INCLUDE[prod_short](../includes/prod_short.md)]. 
+[!INCLUDE[prod_short](../includes/prod_short.md)] expose many APIs that makes it possible for other services to integrate with [!INCLUDE[prod_short](../includes/prod_short.md)]. This article provides guidance on how the endpoint URLs are constructed and provides examples from different types of APIs.
 
 ## Accessing API endpoints
 
