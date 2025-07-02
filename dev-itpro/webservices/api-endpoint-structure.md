@@ -12,9 +12,9 @@ ms.date: 07/02/2025
 
 [!INCLUDE[prod_short](../includes/prod_short.md)] expose many APIs that makes it possible for other services to integrate with [!INCLUDE[prod_short](../includes/prod_short.md)]. This article provides guidance on how the endpoint URLs are constructed and provides examples from different types of APIs.
 
-## Accessing API endpoints
+## The structure of API endpoint URLs
 
-URIs for built-in or custom API endpoints all follow the same base pattern starting with 
+URLs for built-in or custom API endpoints all follow the same base pattern starting with the following base
 
 ```text
 Base URL
@@ -23,7 +23,7 @@ https://api.businesscentral.dynamics.com/v2.0
 
 The **v2.0** part of the base URL stems from the time when [!INCLUDE[prod_short](../includes/prod_short.md)] started supporting multiple environments.
 
-Next, the URL need to include which environment you want to connect to. Here, you can choose to include the entra ID in the URL:
+Next, the URL needs to include which environment you want to connect to. Here, you can choose to include the entra ID in the URL:
 
 ```text
 Environment information
@@ -41,7 +41,7 @@ Then, you need to specify that the endpoint is for an API object (API page or AP
 {Base URL}/{Environment information}/api
 ```
 
-And then, you specify the API path. 
+And then, you specify the API path:
 
 ```text
 API path
@@ -53,8 +53,7 @@ Other endpoints might include API publisher and API group:
 {Base URL}/{Environment information}/api/{API publisher}/{API group}
 ```
 
-Finally, some APIs offer a versioning on their endpoints. 
-
+Finally, some APIs offer a versioning on their endpoints:
 
 ```text
 API version
@@ -77,13 +76,13 @@ To access any endpoint from the [!INCLUDE[prod_short](../includes/prod_short.md)
 
 `https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/{endpoint}`
 
-Note that this API require a **Company name** parameter as part of the URL.
+Note that the automation API requires a **Company name** parameter as part of the URL.
 
 To learn more, go to [Automation API](../administration/itpro-introduction-to-automation-apis.md)
 
 ## Example: URLs for a custom API
 
-Assume you have a custom API with the following metadata
+Assume you have a custom API with the following API metadata
 
 ```AL
 page 50101 "myAPIPage"
@@ -98,7 +97,7 @@ page 50101 "myAPIPage"
 }
 ```
 
-To access any endpoint from that API, use the following URL:
+To access the endpoint from that API, use the following URL:
 `https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/{API publisher}/{API group}/{API version}/{entityDefinitions}`
 
 To learn more, go to [Walk-through: Developing a Custom API](../developer/devenv-develop-custom-api.md)
