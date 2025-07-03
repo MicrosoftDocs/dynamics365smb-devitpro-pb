@@ -61,7 +61,7 @@ Copilot is designed to work primarily with add-on apps installed from Microsoft 
 
 Copilot Chat is validated and supported in English only. While it can be used in other languages, it might not function as intended. Language quality might vary if your online content isn't in English language, which might affect accuracy and the user experience. 
 
-Copilot works best when content is structured and formatted similar to Microsoft’s own online documentation at [learn.microsoft.com](https://learn.microsoft.com). Below are some tips that help improve the output of Copilot. 
+Copilot works best when content is structured and formatted similar to Microsoft’s own online documentation at [learn.microsoft.com](https://learn.microsoft.com). The following tips can help improve the output of Copilot. 
 
 - Text-based webpages that focus on one specific topic often provide better results. 
 - Shorter webpages tend to produce better results. 
