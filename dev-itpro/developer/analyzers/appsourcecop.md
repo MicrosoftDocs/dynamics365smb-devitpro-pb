@@ -2,7 +2,7 @@
 title: "AppSourceCop analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
-ms.date: 06/17/2025
+ms.date: 06/19/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -144,6 +144,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0131](appsourcecop-as0131.md)|Tables with schema should not be added.|Upgrade|Hidden|
 |[AS0132](appsourcecop-as0132.md)|Fields with schema should not be added.|Upgrade|Hidden|
 |[AS0133](appsourcecop-as0133.md)|Keys should not be added.|Upgrade|Hidden|
+|[AS0134](appsourcecop-as0134.md)|The version of an external business event cannot be changed.|Upgrade|Warning|
+|[AS0135](appsourcecop-as0135.md)|External business events must be marked obsolete before they can be removed.|Upgrade|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
