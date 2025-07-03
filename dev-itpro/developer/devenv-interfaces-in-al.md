@@ -2,7 +2,7 @@
 title: Interfaces in AL
 description: Interfaces in AL are syntactical contracts that can be implemented by a nonabstract method.
 author: SusanneWindfeldPedersen
-ms.date: 03/30/2025
+ms.date: 06/26/2025
 ms.topic: article
 ms.author: solsen
 ms.collection: get-started
@@ -30,11 +30,32 @@ You can declare variables as a given interface to allow passing objects that imp
 
 [!INCLUDE [2024-releasewave2](../includes/2024-releasewave2.md)]
 
-Interfaces in AL can be extended to allow additional changes to interfaces without changing the core functionality. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
+Interfaces in AL can be extended to allow other changes to interfaces without changing the core functionality. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
+
+## Interface creation
+
+When creating interfaces, consider the following guidelines:
+
+- Use meaningful names for interfaces that clearly convey their purpose.
+- Keep interfaces focused and cohesive, with a few related methods.
+- Use versioning for interfaces to manage changes over time.
+- Document the expected behavior of each method in the interface.
+- Consider using default implementations for methods in interfaces to reduce boilerplate code.
+
+## Some design guidelines
+
+- Avoid adding methods to published interfaces. Analyzer rule [AS0066](analyzers/appsourcecop-as0066.md) catches this.
+- Design interfaces with extension in mind. Learn more in [Extending interfaces in AL](devenv-interfaces-in-al-extend.md).
+- Understand circular reference limitations. Analyzer rule [AL0852](diagnostics/diagnostic-al852.md) catches this.
+- Interfaces can only contain procedure declarations. The analyzer rules [AL0584](diagnostics/diagnostic-al584.md), [AL0585](diagnostics/diagnostic-al585.md), and [AL0612](diagnostics/diagnostic-al612.md) catch this.
+- Avoid naming conflicts with built-in procedures. Analyzer rule [AL0616](diagnostics/diagnostic-al616.md) catches this.
+- When implementing multiple interfaces avoid duplication. The analyzer rules [AL0587](diagnostics/diagnostic-AL587.md) and [AL0675](diagnostics/diagnostic-AL675.md) catch this.
+- A new method can't be added to an already published interface. Analyzer rule [AS0066](analyzers/appsourcecop-as0066.md) catches this.
 
 ## Snippet support
 
 Typing the shortcut `tinterface` creates the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+
 
 ## Interface example
 
@@ -151,6 +172,7 @@ page 50200 MyAddressPage
         sendTo: enum SendTo;
 }
 ```
+
 
 ## Create List and Dictionary of an interface
 

@@ -2,7 +2,7 @@
 title: "AppSourceCop analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 06/19/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -52,8 +52,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0035](appsourcecop-as0035.md)|Unsupported page property change|Upgrade|Warning|
 |[AS0036](appsourcecop-as0036.md)|Unsupported table field property change|Upgrade|Error|
 |[AS0038](appsourcecop-as0038.md)|Unsupported table key property change|Upgrade|Error|
-|[AS0039](appsourcecop-as0039.md)|Removing properties that cause destructive changes is not allowed|Upgrade|Error|
-|[AS0040](appsourcecop-as0040.md)|Removing properties that cause destructive changes is not allowed|Upgrade|Warning|
+|[AS0039](appsourcecop-as0039.md)|Removing table properties that cause destructive changes is not allowed|Upgrade|Error|
+|[AS0040](appsourcecop-as0040.md)|Removing page properties that cause destructive changes is not allowed|Upgrade|Warning|
 |[AS0041](appsourcecop-as0041.md)|Table field property changes that cause destructive changes must not be removed|Upgrade|Error|
 |[AS0042](appsourcecop-as0042.md)|Table key property changes that cause destructive changes must not be removed|Upgrade|Error|
 |[AS0043](appsourcecop-as0043.md)|The clustered key must not be deleted|Upgrade|Error|
@@ -141,6 +141,11 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0128](appsourcecop-as0128.md)|An interface must not be removed from the the list of extended interfaces on an interface that has been published.|Upgrade|Error|
 |[AS0129](appsourcecop-as0129.md)|An interface must not be added to the the list of extended interfaces on an interface that has been published.|Upgrade|Error|
 |[AS0130](appsourcecop-as0130.md)|Avoid using duplicate object names|Extensibility|Warning|
+|[AS0131](appsourcecop-as0131.md)|Tables with schema should not be added.|Upgrade|Hidden|
+|[AS0132](appsourcecop-as0132.md)|Fields with schema should not be added.|Upgrade|Hidden|
+|[AS0133](appsourcecop-as0133.md)|Keys should not be added.|Upgrade|Hidden|
+|[AS0134](appsourcecop-as0134.md)|The version of an external business event cannot be changed.|Upgrade|Warning|
+|[AS0135](appsourcecop-as0135.md)|External business events must be marked obsolete before they can be removed.|Upgrade|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -148,7 +153,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 > Several rules enforced by the AppSourceCop analyzer are incompatible with rules enforced by the PerTenantExtensionCop. Make sure to enable only one of these at a time.
 
 > [!NOTE]  
-> Failing to comply with the rules whose default severity is set to `Error` will fail the submission of your extension to the AppSource marketplace. It is recommended, but not mandatory to comply with the rules whose severity is marked as `Warning` or `Info`. 
+> Failing to comply with the rules whose default severity is set to `Error` will fail the submission of your extension to the AppSource marketplace. It is recommended, but not mandatory to comply with the rules whose severity is marked as `Warning` or `Info`. Rules with severity `Hidden` are related to very specific use cases and can be ignored. 
 
 ## Configuration
     
@@ -171,6 +176,10 @@ The following table describes the settings in the `AppSourceCop.json` file:
 |baselinePackageCachePath|No|The path to the folder containing the baseline and its dependencies with which you want to compare the current package for breaking changes. By default, the package cache path for the current project is used (see 'al.packageCachePath' setting).|
 |obsoleteTagMinAllowedMajorMinor|No|The minimum version of ObsoleteTag (Major.Minor) allowed during compilation. Referencing an obsolete pending object with an obsolete tag lower than the specified version will trigger the rule [AS0105](appsourcecop-as0105.md). Note that enabling this setting has a performance impact.|
 |sourceMovedObjectsPackagesCachePath|No|The path to the folder containing the packages from which tables or fields are moved to the current application. It should also contain their dependencies. If empty, move validation is disabled.|
+|validateInternalSymbols| No | Specifies whether the breaking change validation should be enabled on internal symbols. By default, the validation of breaking changes is performed only on symbols that are part of the public API (except for schema breaking change validation which is always performed). |
+|validateObsoleteSymbols| No | Specifies whether the breaking change validation should be enabled on symbols which are obsolete in the baseline. By default, the validation of breaking changes allows breaking change done on symbols which are obsolete in the baseline (except for schema breaking change validation which is always performed). |
+|validateOnPremSymbols| No | Specifies whether the breaking change validation should be enabled on OnPrem symbols. By default, the validation of breaking changes is generally performed only on symbols with scope Cloud (except for schema breaking change validation which is always performed). |
+
 
 The `name`, `publisher`, `version` properties are used for specifying a previous version of the current package. This package must be located in the baseline package cache folder of your extension. This cache can be specified using the `baselinePackageCachePath` property. If this property is not specified, the dependency package cache path of the extension will be used instead. The `al.packageCachePath` setting allows you to specify the path to the folder that will act as the cache for the dependencies symbol files used by your project. AppSourceCop will compare the previous version of your extension with its current version and will report any breaking changes introduced by the current package.
 

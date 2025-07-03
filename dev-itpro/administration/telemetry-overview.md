@@ -4,13 +4,13 @@ description: Learn how Business Central provides telemetry for each environment,
 author: jswymer
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 05/31/2024
+ms.date: 06/20/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom: bap-template
 ---
 
-# Monitoring and Analyzing Telemetry
+# Monitoring and analyzing telemetry
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
@@ -32,7 +32,7 @@ With the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 releas
 Both online environments and on-premises instances can emit telemetry to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)].
 
 > [!TIP]
-> As an AL developer, you can craft custom telemetry messages directly from AL using the [Feature Telemetry codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry) in the System Application or by using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md).
+> As an AL developer, craft custom telemetry messages directly from AL by using the [Feature Telemetry codeunit](https://github.com/microsoft/BCApps/tree/main/src/System%20Application/App/Telemetry) in the System Application or the [LogMessage method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md).
 
 ## Available telemetry
 
@@ -56,11 +56,13 @@ Check the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] documen
 For more information, go to [Control Telemetry Cost](telemetry-control-cost.md).
 
 ## <a name="view"></a>Viewing telemetry data with Power BI
-To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from the Microsoft commercial marketplace. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to install.
 
-For more information, go to [Analyze and Monitor Telemetry with Power BI](telemetry-power-bi-app.md).
+You can analyze Business Central telemetry with two free, open-source Power BI apps from the Microsoft commercial marketplace. One app lets you view telemetry for environments. The other app lets you view telemetry for apps and extensions (as defined in app.json). Both apps require Power BI Pro licenses to install.
+
+Learn more in [Analyze and Monitor Telemetry with Power BI](telemetry-power-bi-app.md).
 
 ## <a name="analyze"></a>Analyze telemetry data
+
 Telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is stored in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] Logs in the *traces* and *pageViews* tables. You can view collected data by writing log queries using Kusto query language (KQL). Learn more at [Logs in Azure Monitor](/azure/azure-monitor/platform/data-platform-logs) and [Overview of log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-overview).
 
 For more information, go to [Analyze Telemetry with KQL](telemetry-analyze-with-kql.md).
@@ -83,9 +85,11 @@ For more information, go to [Alert on Telemetry](telemetry-alert.md).
 [!INCLUDE[telemetrySamples](../includes/include-telemetry-samples.md)]
 
 ## [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry FAQ
-We have compiled a list of frequently asked questions (FAQ) on telemetry. See [Telemetry FAQ](telemetry-faq.md)
+
+Get answers to common questions about telemetry in [Telemetry FAQ](telemetry-faq.md).
 
 ## Related information
+
 [Available signal in telemetry](telemetry-available-telemetry.md)  
 [Enable Telemetry](telemetry-enable-application-insights.md)  
 [Control Telemetry Cost](telemetry-control-cost.md)  

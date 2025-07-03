@@ -30,6 +30,8 @@ The following methods are available on instances of the TestHttpResponseMessage 
 |[ReasonPhrase(Text)](testhttpresponsemessage-reasonphrase-method.md)|Gets or sets the reason phrase which typically is sent by servers together with the status code.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## Related information  
-[Getting started with AL](../devenv-get-started.md)  
-[Developing extensions](../devenv-dev-overview.md)  
+
+## Related information
+
+[Getting started with AL](../../devenv-get-started.md)  
+[Developing extensions](../../devenv-dev-overview.md)  

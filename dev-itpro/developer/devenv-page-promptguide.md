@@ -1,12 +1,12 @@
 ---
-title: Prompting using a prompt guide
+title: Prompting Using a Prompt Guide
 description: Learn how to build a prompt guide for your PromptDialog pages in Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 11/01/2024
+ms.date: 06/19/2025
 ms.custom: bap-template
 ms.reviewer: solsen
 ---
@@ -59,7 +59,7 @@ actions
 {
     area(PromptGuide)
     {
-        group('Getting started')
+        group("Getting started")
         {
             action(MyPromptAction)
             {

@@ -2,13 +2,13 @@
 title: Using Service to Service Authentication
 description: Service-to-service authentication enables external services to connect as an application, without impersonating normal users.
 author: jswymer
-ms.date: 06/03/2024
+ms.date: 06/20/2025
 ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
  
-# Using Service-to-Service (S2S) Authentication 
+# Using service-to-service (S2S) authentication 
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -47,20 +47,20 @@ Two main scenarios are enabled with S2S authentication:
     S2S authentication enables both external user and non-interactive user access to Business Central online. Refer to [license guide](https://www.microsoft.com/licensing/product-licensing/dynamics365) for scenarios and usage. An application token with the `API.ReadWrite.All` scope is needed for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] APIs and web services.  
 
 > [!NOTE]
-> When you use S2S authentication, you can now use the integration session to create scheduled tasks. This is supported on 21.2 and later versions of Business Central online.
+> When you use S2S authentication, you can now use the integration session to create scheduled tasks. This capability is supported on 21.2 and later versions of Business Central online.
 
 ## Business Central on-premises prerequisite
 
 Business Central on-premises must be configured for Microsoft Entra authentication with OpenID Connect.
 
 > [!IMPORTANT]
-> The `ValidAudiences` parameter of the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] must include the endpoint `https://api.businesscentral.dynamics.com`. If it doesn't, you'll get the error `Authentication_InvalidCredentials` on API requests, or the error `securitytokeninvalidaudienceexception` in the application log when you try to download symbols from Visual Studio.
+> The `ValidAudiences` parameter of the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] must include the endpoint `https://api.businesscentral.dynamics.com`. If it doesn't, you get the error `Authentication_InvalidCredentials` on API requests, or the error `securitytokeninvalidaudienceexception` in the application log when you try to download symbols from Visual Studio.
 
-For more information, go to [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
+Learn more in [Configure Microsoft Entra authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
 ## Set up service-to-service authentication
 
-To set up service-to-service authentication, you'll have to do two things:
+To set up service-to-service authentication, you have to do two things:
 
 - Register an application in your Microsoft Entra tenant for authenticating API calls against [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -72,11 +72,11 @@ These tasks are described in the sections that follow.
 
 Complete these steps to register an application in your Microsoft Entra tenant for service-to-service authentication.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 
 2. Register an application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] in Microsoft Entra tenant.
 
-    Follow the general guidelines at [Register your application with your Microsoft Entra tenant](/azure/active-directory/active-directory-app-registration).
+    Follow the general guidelines at [Register your application with your Microsoft Entra tenant](/entra/identity-platform/quickstart-register-app).
 
     When you add an application to a Microsoft Entra tenant, you must specify the following information:
 
@@ -84,12 +84,12 @@ Complete these steps to register an application in your Microsoft Entra tenant f
     |-------|-----------|
     |Name|Specify a unique name for your application. |
     |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)</strong>.|
-    |Redirect URI|(optional) This setting is only required if you want to use the Business Central web client to grant consent to the API (see task 2). Otherwise, you can grant consent using the Azure portal.<br><br>To specify the redirect URL, set the first box to **Web** to specify a web application. Then, enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC240/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC240/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC240/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
+    |Redirect URI|(optional) This setting is only required if you want to use the Business Central web client to grant consent to the API (see task 2). Otherwise, you can grant consent using the Azure portal.<br><br>To specify the redirect URL, set the first box to **Web** to specify a web application. Then, enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BCnnn/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BCnnn/OAuthLanding.htm`, where `BCnnn`is the web server instance name, like BC260. This file is used to manage the exchange of data between Business Central and other services through Microsoft Entra ID.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BCNNN/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
     When completed, an **Overview** displays in the portal for the new application.
 
     > [!NOTE]
-    > Copy the **Application (client) ID** of the registered application. You'll need this later. You can get this value from the **Overview** page.
+    > Copy the **Application (client) ID** of the registered application. You need this value later. You can get this value from the **Overview** page.
 
 3. Create a client secret for the registered application as follows:
 
@@ -99,7 +99,7 @@ Complete these steps to register an application in your Microsoft Entra tenant f
     > [!NOTE]
     > Copy the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.
 
-    For the latest guidelines about adding client secrets in Microsoft Entra ID, see [Add credentials ](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
+    Learn more about in [Add a client secret](/entra/identity-platform/how-to-add-credentials?tabs=client-secret) in the Microsoft Entra documentation.
 
 4. Grant the registered application **API.ReadWrite.All** and **Automation.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]** API as follows:
 
@@ -107,18 +107,18 @@ Complete these steps to register an application in your Microsoft Entra tenant f
     2. Select **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]**.
     3. Select **Application permissions**, select **API.ReadWrite.All** and **Automation.ReadWrite.All**, then select **Add permissions**.
 
-        The **API permissions** page will include one of the following entries:
+        The **API permissions** page includes one of the following entries:
 
         |API / Permission name|Type|Description|
         |---------------------|----|-----------|
         |Dynamics 365 Business Central / Automation.ReadWrite.All|Application|Full access to automation|
         |Dynamics 365 Business Central / API.ReadWrite.All|Application|Access to APIs and webservices|
 
-        For the latest guidelines about adding permissions in Microsoft Entra ID, see [Add permissions to access your APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) in the Azure documentation.
+        Learn more in [Add permissions to access your APIs](/entra/identity-platform/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api).
 
     4. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**.
 
-        This step isn't required if you'll be granting consent from the Business Central web client in task 2.
+        This step isn't required if you're granting consent from the Business Central web client in task 2.
 
 ## Task 2: Set up the Microsoft Entra application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
@@ -130,18 +130,18 @@ Complete these steps to set up the Microsoft Entra application for service-to-se
 
     The **Microsoft Entra application Card** opens.
 
-3. In the **Client ID** field, enter the **Application (Client) ID**  for the registered application in Microsoft Entra ID from task 1. 
+3. In the **Client ID** field, enter the **Application (Client) ID**  for the registered application in Microsoft Entra ID from task 1.
 
-4. Fill in the **Description** field. If this application is set up by a partner, please enter sufficient partner-identifying information, so all applications set up by this partner can be tracked in the future if necessary.
+4. Fill in the **Description** field. If a partner set up this application, enter sufficient partner-identifying information, so all applications set up by this partner can be tracked in the future if necessary.
 
 5. Set the **State** to **Enabled**.
 
 6. Assign permissions to objects as needed.
 
-   For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
+   Learn more in [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
    > [!IMPORTANT]
-   > Applications can't be assigned the **SUPER** permission set. Make sure that applications follows least-privilege principle and only assign permissions required for the integration to work.
+   > Applications can't be assigned the **SUPER** permission set. Make sure that applications follow least-privilege principle and only assign permissions required for the integration to work.
 
    > [!NOTE]
    > The system permission sets and user groups called **D365 AUTOMATION** and **EXTEN. MGT. - ADMIN** provide access to most typical objects used with automation.
@@ -150,21 +150,21 @@ Complete these steps to set up the Microsoft Entra application for service-to-se
 
 7. (optional) Select **Grant Consent** and follow the wizard. 
 
-    This step will grant consent to the API. This step is only required if you haven't granted consent from the Azure portal in task 1. You can only complete this step if you've configured a redirect URL in the registered Microsoft Entra app.
+    This step grants consent to the API. This step is only required if you didn't grant consent from the Azure portal in task 1. You can only complete this step if you configured a redirect URL in the registered Microsoft Entra app.
 
    > [!TIP]
-   > Pre-consent can be done by adding the Microsoft Entra application to the **Adminagents** group in the partner tenant.  For more information, see [Pre-consent your app for all your customers](/graph/auth-cloudsolutionprovider#pre-consent-your-app-for-all-your-customers) in the Graph documentation.
+   > Pre-consent can be done by adding the Microsoft Entra application to the **Adminagents** group in the partner tenant. Learn more in [Pre-consent your app for all your customers](/graph/auth-cloudsolutionprovider#pre-consent-your-app-for-all-your-customers) in the Graph documentation.
 
 ## Calling API and web services OAuth2Flows
 
-After the Microsoft Entra application has been set up and access has been granted, you're ready to make API and web service calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+After the Microsoft Entra application is set up and access granted, you're ready to make API and web service calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-For most cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 2.0 module. For more information, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). To explore an example, see [OAuth2Flows](https://github.com/microsoft/BCTech/blob/master/samples/OAuth2Flows/TestOAuth2Flows.Page.al).
+For most cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 2.0 module. Learn more in [Microsoft identity platform and OAuth 2.0 authorization code flow](/entra/identity-platform/v2-oauth2-auth-code-flow). Explore an example at [OAuth2Flows](https://github.com/microsoft/BCTech/blob/master/samples/OAuth2Flows/TestOAuth2Flows.Page.al).
 
 > [!IMPORTANT]
 > When getting access tokens, it's important to keep security in mind. For example, ensure that you don't expose the tokens. You can do that in two ways:
 >
->* Make the method you are using non-debuggable. Here's an example of how to use the non-debuggable property for protecting access tokens:
+>* Make the method you're using non-debuggable. Here's an example of how to use the non-debuggable property for protecting access tokens:
 >
 >```
 >    [NonDebuggable]
@@ -178,9 +178,9 @@ For most cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 
 >* Set the `showMyCode` property to false for the extension.
 
 > [!TIP]
-> You can also see this sample in the [BCTech Github repo](https://github.com/microsoft/BCTech/tree/master/samples/VSCRestClientOAuthBCAccess).
+> You can also see this sample in the [BCTech GitHub repo](https://github.com/microsoft/BCTech/tree/master/samples/VSCRestClientOAuthBCAccess).
 
-The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code using the Client Credentials OAuth 2.0 flow. Using the Rest Client makes it easy to see which HTTP calls are made both against [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Azure Active Directory. Any HTTP client can be used to create the requests below. Or you can choose any library, like MSAL. Remember to specify the scope as `https://api.businesscentral.dynamics.com/.default` and the Token URL as `https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token`.
+The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code using the Client Credentials OAuth 2.0 flow. Using the Rest Client makes it easy to see which HTTP calls are made both against [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Microsoft Entra ID. Any HTTP client can be used to create the following requests. Or you can choose any library, like MSAL (short for Microsoft Authentication Library). Remember to specify the scope as `https://api.businesscentral.dynamics.com/.default` and the Token URL as `https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token`.
 
 ```http
 @tenantId = <tenant id>
@@ -261,6 +261,7 @@ Authorization: {{accessHeader}}
 ```
 
 ## Related information
+
 [OAuth2 and Microsoft Entra ID](/azure/active-directory/develop/active-directory-v2-protocols)  
 [Client Credentials flow/S2S using MSAL library](/azure/active-directory/develop/scenario-daemon-overview)  
 [C# samples using Client Credentials flow](https://github.com/Azure-Samples/active-directory-dotnetcore-daemon-v2)  
