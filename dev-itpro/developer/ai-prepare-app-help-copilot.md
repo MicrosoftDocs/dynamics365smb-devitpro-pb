@@ -52,4 +52,20 @@ Copilot doesn’t do a broad web search to find your online content. Instead, it
 | Authentication | Online content must be publicly reachable without authentication. Copilot will not be able to sign into any website, not even with the current user’s credentials. | |
 | Format | Copilot primarily finds and uses text-base content. PDF documents and Microsoft Excel spreadsheets hosted directly at a URL path on your website can be used by Copilot as long as they aren't embedded on an HTML page. Copilot will not use any content from images, videos, slides or Microsoft Word documents.| ✅ A PDF that contains troubleshooting information that is available at `https://fabrikam.com/docs/troubleshooting.pdf` will be used. |
 
+Copilot is designed to work primarily with add-on apps installed from Microsoft AppSource. If customizations (per-tenant extensions) satisfy the above criteria, Copilot is also able to answer questions about those customizations. 
+
+> [!IMPORTANT]
+> App publishers are responsible for the URLs they choose to include with their apps and all content that the URL contains or leads to. You must regularly ensure that your online documentation is free of malicious or harmful content, uses language appropriate for work, and is relevant to your app. By specifying a URL in the `contextSensitiveHelpUrl` property of your `app.json` file, you confirm that you are the owner of this website and are responsible for the quality of your content. 
+
+## Optimize language and style for Copilot 
+
+Copilot Chat is validated and supported in English only. While it can be used in other languages, it might not function as intended. Language quality might vary if your online content isn't in English language, which might impact accuracy and the user experience. 
+
+Copilot works best when content is structured and formatted similar to Microsoft’s own online documentation at [learn.microsoft.com](https:\\learn.microsoft.com). Below are some tips that help improve the output of Copilot. 
+
+- Text-based webpages that focus on one specific topic often provide better results. 
+- Shorter webpages tend to produce better results. 
+- For PDF files, smaller PDFs with fewer pages, or having specific topics per page, may provide better results. 
+- When content is a mix of text and images such as icons, illustrations or pictures, Copilot may miss out on important context or information that is conveyed by those images, and may provide lower quality results. 
+
 ## Related information
