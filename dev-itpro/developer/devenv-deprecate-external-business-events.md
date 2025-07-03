@@ -97,4 +97,4 @@ codeunit 10 MyCodeunit
 ## Related information
 
 [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md)  
-[External business event attribute](devenv-externalbusinessevent-attribute.md)  
+[External business event attribute](attributes/devenv-externalbusinessevent-attribute.md)  
