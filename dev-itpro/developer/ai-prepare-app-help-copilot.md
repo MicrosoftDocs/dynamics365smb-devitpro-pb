@@ -1,13 +1,17 @@
 ---
 title: Prepare your app Help for Copilot
-description:  
+description: Explore how Copilot uses your app's online content as grounding data to deliver precise answers to user queries.
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
 ms.author: mikebc
 ms.topic: concept-article
-ms.date: 07/02/2025
+ms.date: 07/03/2025
 ms.collection:
   - bap-ai-copilot
-ms.reviewer: solsen
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:07/03/2025
 ---
 
 # Prepare your app Help for Copilot
@@ -36,6 +40,18 @@ The best way to verify that Copilot can reach your help content and is able to r
 ## Making help content reachable by Copilot 
 
 Copilot doesn’t do a broad web search to find your online content. Instead, it relies on hints from your app.json for where to find your documentation. The following table highlights requirements that may impact whether Copilot can reach your online content. 
+
+
+| Criteria | Detail | Examples |
+|----------|--------|----------|
+|URL hint | The Help property in the app.json file must contain a valid URL that links to your online content. Copilot uses this URL to search for help content. | ✅ Use this: `"help": "https://fabrikam.com/docs"` <br> ❌ Avoid URLs to websites you do not own, such as search engines or social media sites. |
+|URL domain structure | Copilot searches and uses content at the Url you specify including deeper paths in the Url structure and subdomains. The URL you specify can be at most 2 path levels deep. If your Url includes 3 or more levels, Copilot will truncate this Url to 2 levels and will remove any fragments and queries, and will use all content below that. If you offer multiple apps where your online content is organized by app at 3 levels deep, Copilot may pick up irrelevant content from other apps and provide lower-quality responses. | If you set “help” to https://www.fabrikam.com/engines/rotary then ✅ the content at https://www.fabrikam.com/engines/rotary/dual-shaft will also be used. ❌ the content at https://www.fabrikam.com/tools isn’t used. ❌ the content at https://docs.fabrikam.com isn’t used ✅ Use this: https://fabrikam.com/path1/path2 ❌ Avoid this: https://fabrikam.com/path1/path2/path3 |
+| Redirection | Copilot does not support Urls that redirect to another top-level site or domain, such as those typically used for Url shortening. Redirection across Url paths within the same domain are supported. | ✅ Use this: https://fabrikam.com/docs ❌ Avoid this: https://aka.ms/FabrikamDocs |
+| HTTPS | Urls must be secure and start with HTTPS | ✅ Use this: https://fabrikam.com/docs ❌ Avoid this: http://fabrikam.com/docs |
+|Public access | Copilot can only reach online content available publicly and indexed by Bing. It cannot reach any Urls that are internal to your customers’ organization, such as intranet web apps or SharePoint sites. | ✅ Use this: https://fabrikam.com/docs ❌ Avoid this: http://fabrikam.sharepoint.com/docs |
+| Authentication | Online content must be publicly reachable without authentication. Copilot will not be able to sign into any website, not even with the current user’s credentials. | |
+| Format | Copilot primarily finds and uses text-base content. 
+PDF documents and Microsoft Excel spreadsheets hosted directly at a Url path on your website can be used by Copilot as long as they are not embedded on an HTML page. Copilot will not use any content from images, videos, slides or Microsoft Word documents.| ✅ A PDF containing troubleshooting information that is available at https://fabrikam.com/docs/troubleshooting.pdf will be used. |
 
 
 
