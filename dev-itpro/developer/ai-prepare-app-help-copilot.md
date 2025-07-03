@@ -70,3 +70,4 @@ Copilot works best when content is structured and formatted similar to Microsoft
 
 ## Related information
 
+[Configure Copilot and agent capabilities](/dynamics365/business-central/enable-ai)
