@@ -10,7 +10,7 @@ ms.author: solsen
 
 # Deprecate external business events
 
-[!INCLUDE [2025rw2_and_later](includes/2025rw2_and_later.md)]
+[!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
 
 External business events provide a way for external systems to subscribe to and react to events exposed by an AL application. For long-lived or widely distributed applications, you might need to phase out certain events over time, ensuring that external integrations have sufficient notice to update their subscriptions. This process is managed by deprecating external business events in a predictable way so that consumers of the event are informed and encouraged to transition to new or replacement events. The approach for deprecating an external business event is similar to the standard deprecation process for procedures.
 
