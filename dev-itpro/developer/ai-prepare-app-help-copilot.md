@@ -27,7 +27,7 @@ Copilot is able to access content in a wide range of styles, languages, and host
 The best way to verify that Copilot can reach your help content and is able to return good quality responses is to test this directly through [!INCLUDE [prod_short](includes/prod_short.md)]. The following steps can help you plan your approach: 
 
 1. Deploy a sandbox environment and install your app. 
-1. Ensure Copilot Chat is active and all prerequisites are satisfied. Learn more <!-- link -->. 
+1. Ensure Copilot Chat is active and all prerequisites are satisfied. <!-- Learn more -- link -->. 
 1. Carefully plan which questions to ask Copilot, providing sufficient coverage across different aspects of your app, such as different roles, processes, fields, pages your app supports. To start with, 5-10 questions can be sufficient for an initial test.
 1. Ask Copilot, either directly using the Copilot pane, or by using the “Ask Copilot” action on tooltips for fields from your app.  
 1. Capture and analyze the responses.  
