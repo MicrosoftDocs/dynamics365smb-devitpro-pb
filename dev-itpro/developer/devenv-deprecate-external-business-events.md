@@ -46,7 +46,7 @@ codeunit 10 MyCodeunit
 
 Version two of the extension:
 
-- The procedure `MyEventProcedure` is removed.
+The procedure `MyEventProcedure` is removed.
 
 ```AL
 codeunit 10 MyCodeunit
@@ -82,7 +82,7 @@ codeunit 10 MyCodeunit
 
 Version 2 of the extension:
 
-- The old procedure `MyEventProcedure` is removed.
+The old procedure `MyEventProcedure` is removed.
 
 ```AL
 codeunit 10 MyCodeunit
