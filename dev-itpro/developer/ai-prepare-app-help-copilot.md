@@ -1,5 +1,5 @@
 ---
-title: Prepare your app Help for Copilot
+title: Prepare your app Help for Copilot (preview)
 description: Explore how Copilot uses your app's online content as grounding data to deliver precise answers to user queries.
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -14,13 +14,17 @@ ms.custom:
   - ai-seo-date:07/03/2025
 ---
 
-# Prepare your app Help for Copilot
+# Prepare your app Help for Copilot (preview)
+
+[This article is prerelease documentation and is subject to change.]
 
 The [!INCLUDE [prod_short](includes/prod_short.md)] user assistance model is based on principles of helping users get started, get unblocked, and learn more. Copilot in [!INCLUDE [prod_short](includes/prod_short.md)] makes it easy for users to learn new skills or quickly get unblocked by allowing them to ask questions in their own words, or quickly get answers at the click of a button – without leaving the [!INCLUDE [prod_short](includes/prod_short.md)] app. 
 
 When your customers install your app and want to learn about functionality that your app provides, such as how to set up and configure, how to get past specific error messages, or how to use certain fields or pages, your app must link to your online content that includes this information, so that Copilot can it to provide answers. Rather than relying on Large Language Models to answer questions, where the AI model might not know the details of your app, Copilot uses your online content as grounding data to provide better answers. 
 
 Copilot is able to access content in a wide range of styles, languages, and hosted on different publishing platforms. This article highlights the limitations and best practices you need to be aware of, to increase the chance of Copilot successfully answering questions about your app.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## Recommended process to verify Copilot readiness
 
