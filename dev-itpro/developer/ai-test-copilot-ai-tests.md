@@ -17,9 +17,9 @@ An **AI Test** is a procedure designed to evaluate the accuracy, reliability, an
 
 ## Step-by-step: write an AI test
 
-<!--
+<!-->
 > [!TIP]
-> The full source code for the example used in this article can be found in the [Marketing text sample]() demo project. -->
+> The full source code for the example used in this article can be found in the [Marketing text sample]() demo project.-->
 
 Follow these steps to create an AI test.
 
@@ -212,6 +212,7 @@ end;
 
 ## Related information
 
+[Business Central Copilot Test Toolkit](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
 [Build the Copilot capability in AL](ai-build-capability-in-al.md)  
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [Create datasets](ai-test-copilot-datasets.md)  

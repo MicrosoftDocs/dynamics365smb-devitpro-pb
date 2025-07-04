@@ -6,7 +6,7 @@ ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 04/01/2025
+ms.date: 07/02/2025
 ms.reviewer: solsen
 ---
 
@@ -14,7 +14,7 @@ ms.reviewer: solsen
 
 [!INCLUDE [2024-releasewave2-changed](../includes/2024-releasewave2-changed.md)]
 
-In [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, errors and messages that are thrown by the code logic in Copilot prompt dialogs now appear directly inside the dialog instead of in a separate popup dialog. This improves the user experience. The `Dialog.Error()`, `Dialog.Message()`, and `ErrorInfo` error patterns are supported. When you use the `ErrorInfo` type, both title and description are shown inside the dialog.
+Error handling is a critical aspect of creating seamless user experiences in applications. In [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 2, enhancements to Copilot prompt dialogs allow errors and messages to be displayed directly within the dialog, eliminating the need for separate popup dialogs. This documentation explains how to use supported error patterns, such as `Dialog.Error()`, `Dialog.Message()`, and `ErrorInfo`, to manage errors effectively in prompt dialogs. You'll also find examples demonstrating how these patterns work, along with best practices for rendering messages and errors inline.
 
 If the code throws more than one message, only the last message is shown, but the user is informed about the total number of issues. If an error is thrown, any subsequent message is suppressed. If the error or message contains line breaks, these line breaks are ignored, as opposed to when they're rendered in dialogs.
 

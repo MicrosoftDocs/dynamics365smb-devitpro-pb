@@ -13,7 +13,7 @@ ms.collection: get-started
 
 Even the best designed user interface can still be confusing to some. It can be difficult to predict what users find confusing, and that's why the base application includes tooltips for all fields on pages. Tooltips help users unblock themselves by providing an answer to the most likely questions the users might have, such as "What data can I input here?" or "What is the data used for?". So keep tooltips in mind when you develop the user interface of your solution.
 
-For more information, see [Help users get unblocked (by providing tooltips)](../user-assistance.md#help-users-get-unblocked).
+Learn more in [Help users get unblocked (by providing tooltips)](../user-assistance.md#help-users-get-unblocked).
 
 ## Adding tooltips to table fields (2024 release wave 1 or later)
 
@@ -39,7 +39,7 @@ table 50102 MyTable
 ```
 
 > [!TIP]
-> The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code comes with a CodeCop warning AA0234 - *You must write a tooltip in the Tooltip property for all fields on table objects*. Consider enabling the rule if you want to ensure that all fields get a tooltip defined. For more information, see [Using the code analysis tool](devenv-using-code-analysis-tool.md).
+> The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code comes with a CodeCop warning AA0234 - *You must write a tooltip in the Tooltip property for all fields on table objects*. Consider enabling the rule if you want to ensure that all fields get a tooltip defined. Learn more in [Using the code analysis tool](devenv-using-code-analysis-tool.md).
 
 ## Overriding tooltips on table fields (2024 release wave 1 or later)
 
