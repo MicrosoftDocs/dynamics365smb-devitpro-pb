@@ -40,7 +40,7 @@ The best way to verify that Copilot can reach your help content and is able to r
     1. If Copilot provides responses that include references to your online content, but the results are of poor quality, you might need to optimize your content to match how Copilot searches and retrieves information. 
 
 > [!TIP]
-> You can also test the AI-readiness of your online content by using Microsoft Copilot Studio’s feature Generative Answers. This uses similar technology to Copilot in Business Central, but isn't identical and might not produce the same results or reveal issues with Copilot connecting to your online content. 
+> You can also test the AI-readiness of your online content by using Microsoft Copilot Studio’s feature Generative Answers. This uses similar technology to Copilot in [!INCLUDE [prod_short](includes/prod_short.md)], but isn't identical and might not produce the same results or reveal issues with Copilot connecting to your online content. 
 
 ## Making help content reachable by Copilot 
 
