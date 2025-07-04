@@ -12,11 +12,11 @@ ms.reviewer: solsen
 
 # The PromptDialog page type 
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] runtime 12.1, you can add a new page type `PromptDialog`, which allows you to integrate copilot capabilities into your custom scenarios. Use the `PromptDialog` to create generative AI experiences with the copilot look and feel, which includes signature visuals, and built-in safety controls for customers. The `PromptDialog` page has a specific page syntax, which includes specific area and action controls, as described in the code sample in this article.
+The PromptDialog page type is a specialized page type introduced in [!INCLUDE [prod_short](includes/prod_short.md)] runtime 12.1. It enables developers to integrate generative AI capabilities into their custom scenarios, providing a seamless Copilot experience with signature visuals and built-in safety controls. This page type is designed to facilitate user interaction with AI-driven features, offering structured input and output areas, predefined prompt guides, and system actions tailored for Copilot functionality. In this article, you'll learn about the properties, layout areas, actions, and implementation details of the PromptDialog page type, along with a comprehensive example to help you get started.
 
 ## Snippet support
 
-Typing the shortcut `tpage` and then choose the **Page of type Prompt Dialog**, which creates the basic layout for a `PromptDialog` page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Type the shortcut `tpage` and then choose the **Page of type Prompt Dialog**, which creates the basic layout for a `PromptDialog` page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 ## Properties of the PromptDialog page type
 

@@ -5,6 +5,9 @@ author: pborring
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: concept-article
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ms.date: 06/24/2025
 ---
 
