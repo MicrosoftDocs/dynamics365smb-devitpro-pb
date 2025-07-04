@@ -1,6 +1,6 @@
 ---
-title: "Adding data for Extensions"
-description: "How you can add data such as permisisons, web services, and table data for an extension."
+title: Adding data for Extensions
+description: How you can add data such as permisisons, web services, and table data for an extension.
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.topic: how-to
@@ -8,7 +8,8 @@ ms.author: solsen
 ms.reviewer: solsen
 ---
 
-# Adding data for Extensions
+# Adding data for extensions
+
 For your extension to run properly, configuration and starting data such as permission sets and table data may be needed. An extension can include the following types of data that can be imported for the tenant during the installation of the extension.
 
 - Permission sets
@@ -16,9 +17,10 @@ For your extension to run properly, configuration and starting data such as perm
 - Starting table data
 - Custom report layouts
 
-The data must be exported into files to be included in the extension. To use the export functions you must use a container sandbox environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md).
+The data must be exported into files to be included in the extension. To use the export functions, you must use a container sandbox environment for [!INCLUDE [prod_short](includes/prod_short.md)]. Learn more in [Get started with the container sandbox development environment](devenv-get-started-container-sandbox.md).
 
 ## To add permission sets
+
 1. Open the [!INCLUDE[bc_dev_shell](includes/bc_dev_shell.md)].
 2. Export the relevant permission set using the `Export-NAVAppPermissionSet` cmdlet to export the permission set to a file. For example, the following command exports the BASIC permission set.
 
@@ -30,10 +32,10 @@ The data must be exported into files to be included in the extension. To use the
 3. Add the exported permission set files to the Visual Studio Code project that contains your extension.
 
     > [!WARNING]  
-    > If you do not include a permission set with your extension, only users with the SUPER permission set will be able to use the extension.
+    > If you don't include a permission set with your extension, only users with the SUPER permission set will be able to use the extension.
 
     > [!IMPORTANT]  
-    > With the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] permissions are no longer defined as data in the application database. Permissions that can be created by using AL objects are called *system* permissions. For more information, see [Entitlements and Permission Sets Overview](devenv-entitlements-and-permissionsets-overview.md).
+    > With the latest version of [!INCLUDE [prod_short](includes/prod_short.md)] permissions are no longer defined as data in the application database. Permissions that can be created by using AL objects are called *system* permissions. Learn more in [Entitlements and permission sets overview](devenv-entitlements-and-permissionsets-overview.md).
 
 
 ## To add web services
@@ -124,6 +126,5 @@ The data must be exported into files to be included in the extension. To use the
 
 ## Related information
 
-[Developing Extensions in AL](devenv-dev-overview.md)  
-[Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
-[Writing Extension Install Code](devenv-extension-install-code.md)  
+[Developing extensions in AL](devenv-dev-overview.md)  
+[Writing extension install code](devenv-extension-install-code.md)  

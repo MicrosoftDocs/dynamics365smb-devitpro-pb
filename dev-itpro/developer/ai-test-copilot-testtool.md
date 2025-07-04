@@ -109,15 +109,15 @@ codeunit 50201 "Marketing Text Simple Install"
 
 1. Open the **AI Test Suites** page.
 1. Open the previously created test suite.
-1. Run the AI Test Suite using the **Start** action. Alternatively, run them one line at a time using the Start action for each line. Each test method is executed for each dataset line.
+1. Run the AI Test Suite using the **Start** action. Alternatively, run them one line at a time using the **Start** action for each line. Each test method is executed for each dataset line.
 1. The tests doing the evaluation in AL either fail or succeed based on the condition.
-1. Test Output must be generated for all the tests which needs to be evaluated externally.
+1. Test Output must be generated for all the tests, which needs to be evaluated externally.
 
 ### Step 5 - inspect the results
 
 1. Open the AL Test Tool and switch to the created test suite to execute each test manually.
 1. Open **Log Entries** page to see the result of each execution.
-1. Download the test output which generates the .jsonl file or export the logs to Excel.
+1. Download the test output, which generates the .jsonl file or export the logs to Excel.
 1. Open the AL Test Tool and switch to the created test suite to execute each test manually.
 
 
@@ -126,6 +126,7 @@ codeunit 50201 "Marketing Text Simple Install"
 
 ## Related information
 
+[Business Central Copilot Test Toolkit](https://github.com/microsoft/BCApps/blob/main/src/Tools/AI%20Test%20Toolkit/README.md)  
 [Build the Copilot capability in AL](ai-build-capability-in-al.md)  
 [Test the Copilot capability in AL](ai-test-copilot.md)  
 [Create datasets](ai-test-copilot-datasets.md)  

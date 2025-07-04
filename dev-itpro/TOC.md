@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 26.3](whatsnew/whatsnew-update-26-3.md)
 ### [Update 26.2](whatsnew/whatsnew-update-26-2.md)
 ### [Update 26.1](whatsnew/whatsnew-update-26-1.md)
 ### [Update 26.0](whatsnew/whatsnew-update-26-0.md)
@@ -967,6 +968,7 @@
 ###### [OnAfterIntermediateDocumentReady](developer/devenv-onafterintermediatedocumentready-event.md)
 ###### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
 ###### [OnCustomDocumentMergerEx](developer/devenv-oncustomdocumentmergerex-event.md)
+###### [OnGetFilename](developer/devenv-ongetfilename-event.md)
 #### [Substituting a report](developer/devenv-substituting-reports.md)
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)

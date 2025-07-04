@@ -15,7 +15,7 @@ ms.custom:
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Warning AS0040
-Removing properties that cause destructive changes is not allowed
+Removing page properties that cause destructive changes is not allowed
 
 ## Description
 Destructive page properties that have been published must not be removed.
