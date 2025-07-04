@@ -1583,7 +1583,7 @@
 ### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
 ### [Influence Copilot and agents without extending them](developer/copilot-and-agents-influence-without-extending.md)
-### [Prepare your app Help for Copilot (preview)](ai-prepare-app-help-copilot.md)
+### [Prepare your app Help for Copilot (preview)](developer/ai-prepare-app-help-copilot.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Business Central AI resources (preview)](developer/ai-dev-tools-resources.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
