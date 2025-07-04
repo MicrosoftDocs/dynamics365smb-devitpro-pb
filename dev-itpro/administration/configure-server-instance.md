@@ -4,7 +4,7 @@ description: Configure and modify settings in the Setup or Installed Business Ce
 author: jswymer
 ms.topic: how-to
 ms.service: dynamics-365-op
-ms.date: 03/12/2025
+ms.date: 06/13/2025
 ms.author: jswymer
 ms.reviewer: solsen
 ms.custom: bap-template
@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Configure Business Central Server
 
-**APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 (version 21) and later. For later versions, see [Configuring Business Central Server in outdated versions](configure-server-instance-archived.md).
+**APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 (version 21) and later. For earlier versions, refer to [Configuring Business Central Server in outdated versions](configure-server-instance-archived.md).
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
@@ -383,7 +383,7 @@ The following table describes settings related to development in AL.
 |DeveloperServicesSSLEnabled|Specifies whether SSL (HTTPS) is enabled for the developer web service port. <br /><br />SSL (Secure Sockets Layer) secures the connection for the web services. <br /><br />- If the check box is selected, then SSL is enabled. <br /><br />- If the check box isn't selected, the developer web service port can't establish a secure connection. <br /><br />Default: Not enabled (check box is cleared)<br />Dynamically updatable: No|
 |TestAutomationEnabled|Specifies whether test automation is enabled.<br /><br />For more information about test automation, see [Testing the Application Overview](../developer/devenv-testing-application.md).<br /><br />Default: Enabled<br />Dynamically updatable: No|
 |NavHttpClientMaxTimeout|Specifies the maximum allowed timeout value that can be set for the HttpClient Timeout AL method.<br /><br />The value has the format HH:MM:SS.<br /><br />Default: 00:05:00<br />Dynamically updatable: Yes|
-|NavHttpClientMaxResponseContentSize|Specifies the maximum size in megabytes of a response buffer used by the HttpClient AL function.<br /><br />The maximum allowed extension size can be adjusted based on the NavHttpClientMaxTimeout setting.<br /><br />Default: 150<br />Dynamically updatable: Yes|
+|NavHttpClientMaxResponseContentSize|Specifies the maximum size in mega binary bytes (MiB) of a response buffer used by the HttpClient AL function.<br /><br />The maximum allowed extension size can be adjusted based on the NavHttpClientMaxTimeout setting.<br /><br />Default: 150<br />Dynamically updatable: Yes|
 |DeveloperServicesPort|The listening HTTP port for Microsoft Dynamics NAV Developer web services.<br /><br />Valid range: 1 - 65535<br />Default: 7049<br />Dynamically updatable: No|
 |ForceExtensionAllowedTargetLevel| This setting is only used for Business Central on-premises scenarios using Microsoft Entra ID from Visual Studio Code in which case the setting must be set to `true`.<br> This setting is not available from the UI.<br> Default: `false`. Learn more in [Using Microsoft Entra authentication for Business Central on-premises](../developer/devenv-aad-auth-onprem.md).|
 
