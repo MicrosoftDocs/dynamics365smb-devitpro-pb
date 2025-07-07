@@ -45,14 +45,14 @@ Then, you need to specify that the endpoint is for an API object (API page or AP
 {Base URL}/{Environment information}/api
 ```
 
-And then, you specify the API path. After that, you need to specify the API route (also called API category). For partner-created APIs, the API route is constructed using the `APIPublisher`, `APIGroup`, and `APIVersion` that you specify in your API object in AL. Learn more at [aka.ms/BCCustomAPI](https://aka.ms/bccustomapi).
+After that, you need to specify the API route (also called API category). For partner-created APIs, the API route is constructed using the `APIPublisher`, `APIGroup`, and `APIVersion` that you specify in your API object in AL. Learn more at [aka.ms/BCCustomAPI](https://aka.ms/bccustomapi).
 
 Every [!INCLUDE[prod_short](../includes/prod_short.md)] environment comes with a standard set of commonly used APIs; for these, the API route is simply an `APIVersion` (namely `v2.0`), with no group or publisher. 
 
 ```text
 API route For Microsoft Standard API, use this path: 
 
-{Base URL}/{Environment information}/api/v2.0}
+{Base URL}/{Environment information}/api/v2.0
 
 Other endpoints include API publisher, API group, and API version:
 
@@ -63,6 +63,20 @@ The resulting URL points at the root of the APIs for the specific combination of
 
 ```text 
 Endpoint {Base URL}/{Environment information}/api/{API route}/{endpoint} 
+```
+
+To call most of the [!INCLUDE[prod_short](../includes/prod_short.md)] endpoints, you need to specify which Company you want to connect to. You can specify the company as part of the URL or as a query parameter. 
+
+```text
+ Company 
+You can specify the company as a query parameter 
+
+{Base URL}/{Environment information}/api/{API route}/{endpoint}?company=<companyGuid> 
+
+Alternatively, you can specify it as part of the endpoint 
+
+{Base URL}/{Environment information}/api/{API route}/companies(<companyGuid>)/{endpoint} 
+
 ```
 
 ## Example: URLs for Business Central Standard API
@@ -79,8 +93,6 @@ Learn more in [Business Central API (v2.0)](../api-reference/v2.0/index.md).
 To access any endpoint from the [!INCLUDE[prod_short](../includes/prod_short.md)] automation API, use this URL
 
 `https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/{endpoint}`
-
-The automation API requires a **Company name** parameter as part of the URL.
 
 Learn more in [Automation API](../administration/itpro-introduction-to-automation-apis.md)
 
@@ -105,20 +117,6 @@ To access the endpoint from that API, use the following URL:
 `https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/{API publisher}/{API group}/{API version}/{endpoint}`
 
 Learn more in [Developing a custom API](../developer/devenv-develop-custom-api.md)
-
-To call most of the [!INCLUDE[prod_short](../includes/prod_short.md)] endpoints, you need to specify which Company you want to connect to. You can specify the company as part of the URL or as a query parameter. 
-
-```text
-Company 
-You can specify the company as a query parameter 
-
-{Base URL}/{Environment information}/api/{API route}/{endpoint}?company=<companyGuid> 
-
-Alternatively, you can specify it as part of the endpoint 
-
-{Base URL}/{Environment information}/api/{API route}/company(<companyGuid>)/{endpoint} 
-
-```
 
 ## Related information
 
