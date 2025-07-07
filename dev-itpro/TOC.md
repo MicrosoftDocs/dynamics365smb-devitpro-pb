@@ -995,6 +995,7 @@
 #### [Discover events using the event recorder](developer/devenv-events-discoverability.md)
 #### [Event example](developer/devenv-events-example.md)
 #### [Walkthrough: Implementing new workflow events and responses](developer/devenv-walkthrough-workflow-events-responses.md)
+#### [Deprecate external business events](developer/devenv-deprecate-external-business-events.md)
 #### [Notifications](developer/devenv-notifications-developing.md)
 <!--Events
 #### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
