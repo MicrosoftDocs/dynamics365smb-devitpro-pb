@@ -14,7 +14,7 @@ ms.custom:
 
 # API endpoint structure
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] exposes many APIs, which makes it possible for other services to integrate with [!INCLUDE[prod_short](../includes/prod_short.md)]. This article provides guidance on how the endpoint URLs are constructed and provides examples from different types of APIs. 
+[!INCLUDE[prod_short](../includes/prod_short.md)] exposes many APIs that make it possible for other services to integrate with [!INCLUDE[prod_short](../includes/prod_short.md)]. This article explains how the endpoint URLs for these APIs are constructed and provides examples from different types of APIs. 
 
 ## The structure of API endpoint URLs
 
@@ -25,9 +25,9 @@ Base URL
 https://api.businesscentral.dynamics.com/v2.0
 ```
 
-The **v2.0** part of the base URL stems from the time when [!INCLUDE[prod_short](../includes/prod_short.md)] started supporting multiple environments.
+The `v2.0` part of the base URL stems from the time when [!INCLUDE[prod_short](../includes/prod_short.md)] started supporting multiple environments.
 
-Next, the URL needs to include which environment you want to connect to. Here, you can choose to include the entra ID in the URL:
+Next, the URL needs to include, which [!INCLUDE[prod_short](../includes/prod_short.md)] environment to connect to. Here, you can choose to include the Microsoft Entra ID of the tenant you want to connect to in the URL:
 
 ```text
 Environment information
@@ -39,30 +39,30 @@ or
 {Base URL}/{Environment name}
 ```
 
-Then, you need to specify that the endpoint is for an API object (API page or API query):
+Then, you need to specify that the endpoint is for an API object (API page or API query). Notice that this part of the URL is different for other technologies, such as OData web services. This article doesn't cover these cases, as APIs are the recommended way of integrating [!INCLUDE[prod_short](../includes/prod_short.md)] with other systems.
 
 ```text
 {Base URL}/{Environment information}/api
 ```
 
-And then, you specify the API path:
+And then, you specify the API path. After that, you need to specify the API route (also called API category). For partner-created APIs, the API route is constructed using the `APIPublisher`, `APIGroup`, and `APIVersion` that you specify in your API object in AL. Learn more at [aka.ms/BCCustomAPI](https://aka.ms/bccustomapi).
+
+Every [!INCLUDE[prod_short](../includes/prod_short.md)] environment comes with a standard set of commonly used APIs; for these, the API route is simply an `APIVersion` (namely `v2.0`), with no group or publisher. 
 
 ```text
-API path
+API route For Microsoft Standard API, use this path: 
 
-For Microsoft Standard API, use this path:
-{Base URL}/{Environment information}/api/v2.0
+{Base URL}/{Environment information}/api/v2.0}
 
-Other endpoints might include API publisher and API group:
-{Base URL}/{Environment information}/api/{API publisher}/{API group}
-```
+Other endpoints include API publisher, API group, and API version:
 
-Finally, some APIs offer a versioning on their endpoints:
+{Base URL}/{Environment information}/api/{API publisher}/{API group}/{API version} 
+``` 
 
-```text
-API version
+The resulting URL will point at the root of the APIs for the specific combination of parameters you used; in other words, this URL will point at the OData Service Document. You will have to append the specific endpoint to the URL to be able to access your data.
 
-{Base URL}/{Environment information}/api/{API publisher}/{API group}/{API version}
+```text 
+Endpoint {Base URL}/{Environment information}/api/{API route}/{endpoint} 
 ```
 
 ## Example: URLs for Business Central Standard API
@@ -71,7 +71,7 @@ To access any endpoint from the Microsoft Standard API 2.0, use this URL
 
 `https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/v2.0/{endpoint}`
 
-To learn more, go to [Business Central API (v2.0)](../api-reference/v2.0/index.md).
+Learn more in [Business Central API (v2.0)](../api-reference/v2.0/index.md).
 
 
 ## Example: URLs for Business Central automation API
@@ -82,7 +82,7 @@ To access any endpoint from the [!INCLUDE[prod_short](../includes/prod_short.md)
 
 Note that the automation API requires a **Company name** parameter as part of the URL.
 
-To learn more, go to [Automation API](../administration/itpro-introduction-to-automation-apis.md)
+Learn more in [Automation API](../administration/itpro-introduction-to-automation-apis.md)
 
 ## Example: URLs for a custom API
 
@@ -97,16 +97,14 @@ page 50101 "myAPIPage"
     APIPublisher = 'myPublisher';
     APIGroup = 'myGroup';
 
-// entityDefinitions defined here
+// endpoint defined here
 }
 ```
 
 To access the endpoint from that API, use the following URL:
-`https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/{API publisher}/{API group}/{API version}/{entityDefinitions}`
+`https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/{API publisher}/{API group}/{API version}/{endpoint}`
 
-To learn more, go to [Walk-through: Developing a Custom API](../developer/devenv-develop-custom-api.md)
-
-
+Learn more in [Developing a custom API](../developer/devenv-develop-custom-api.md)
 
 ## Related information
 
