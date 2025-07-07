@@ -1,20 +1,24 @@
 ---
 title: API endpoint structure
-description: Learn about how URLs for API web services for Business Central is structured
+description: Discover the base URL pattern and environment details required to access Business Central API endpoints.
 author: kennieNP
-ms.reviewer: jswymer
+ms.reviewer: solsen
 ms.topic: overview
 ms.author: kepontop
-ms.date: 07/02/2025
+ms.date: 07/07/2025
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:07/07/2025
 ---
 
 # API endpoint structure
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] expose many APIs that makes it possible for other services to integrate with [!INCLUDE[prod_short](../includes/prod_short.md)]. This article provides guidance on how the endpoint URLs are constructed and provides examples from different types of APIs.
+[!INCLUDE[prod_short](../includes/prod_short.md)] exposes many APIs, which makes it possible for other services to integrate with [!INCLUDE[prod_short](../includes/prod_short.md)]. This article provides guidance on how the endpoint URLs are constructed and provides examples from different types of APIs. 
 
 ## The structure of API endpoint URLs
 
-URLs for built-in or custom API endpoints all follow the same base pattern starting with the following base
+URLs for built-in or custom API endpoints all follow the same base pattern. They start with the following base.
 
 ```text
 Base URL
