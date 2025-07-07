@@ -65,7 +65,7 @@ The resulting URL points at the root of the APIs for the specific combination of
 Endpoint {Base URL}/{Environment information}/api/{API route}/{endpoint} 
 ```
 
-To call most of the [!INCLUDE[prod_short](../includes/prod_short.md)] endpoints, you need to specify which Company you want to connect to. You can specify the company as part of the URL or as a query parameter. 
+To call most of the [!INCLUDE[prod_short](../includes/prod_short.md)] endpoints, you need to specify, which company you want to connect to. You can specify the company as part of the URL or as a query parameter. 
 
 ```text
  Company 
