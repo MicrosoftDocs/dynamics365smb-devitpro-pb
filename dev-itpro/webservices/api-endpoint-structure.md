@@ -59,7 +59,7 @@ Other endpoints include API publisher, API group, and API version:
 {Base URL}/{Environment information}/api/{API publisher}/{API group}/{API version} 
 ``` 
 
-The resulting URL will point at the root of the APIs for the specific combination of parameters you used; in other words, this URL will point at the OData Service Document. You will have to append the specific endpoint to the URL to be able to access your data.
+The resulting URL points at the root of the APIs for the specific combination of parameters you used; in other words, this URL points at the OData Service Document. You have to append the specific endpoint to the URL to be able to access your data.
 
 ```text 
 Endpoint {Base URL}/{Environment information}/api/{API route}/{endpoint} 
@@ -80,7 +80,7 @@ To access any endpoint from the [!INCLUDE[prod_short](../includes/prod_short.md)
 
 `https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/{endpoint}`
 
-Note that the automation API requires a **Company name** parameter as part of the URL.
+The automation API requires a **Company name** parameter as part of the URL.
 
 Learn more in [Automation API](../administration/itpro-introduction-to-automation-apis.md)
 
@@ -106,7 +106,7 @@ To access the endpoint from that API, use the following URL:
 
 Learn more in [Developing a custom API](../developer/devenv-develop-custom-api.md)
 
-To call most of the [!INCLUDE[prod_short](../includes/prod_short.md)] endpoints, you will need to specify which Company you want to connect to. You can specify the company as part of the URL or as a query parameter. 
+To call most of the [!INCLUDE[prod_short](../includes/prod_short.md)] endpoints, you need to specify which Company you want to connect to. You can specify the company as part of the URL or as a query parameter. 
 
 ```text
 Company 
