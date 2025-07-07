@@ -106,6 +106,20 @@ To access the endpoint from that API, use the following URL:
 
 Learn more in [Developing a custom API](../developer/devenv-develop-custom-api.md)
 
+To call most of the [!INCLUDE[prod_short](../includes/prod_short.md)] endpoints, you will need to specify which Company you want to connect to. You can specify the company as part of the URL or as a query parameter. 
+
+```text
+Company 
+You can specify the company as a query parameter 
+
+{Base URL}/{Environment information}/api/{API route}/{endpoint}?company=<companyGuid> 
+
+Alternatively, you can specify it as part of the endpoint 
+
+{Base URL}/{Environment information}/api/{API route}/company(<companyGuid>)/{endpoint} 
+
+```
+
 ## Related information
 
 [API overview](api-overview.md)   
