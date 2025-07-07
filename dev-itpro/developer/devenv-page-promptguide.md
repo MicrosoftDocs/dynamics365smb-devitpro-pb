@@ -13,9 +13,10 @@ ms.reviewer: solsen
 
 # Prompting using a prompt guide
 
-The prompt guide is a new feature in [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and runtime 13 and is part of the `PromptDialog` page type for [!INCLUDE [prod_short](includes/prod_short.md)] introduced with runtime 12.1.
+> [!NOTE]
+> The prompt guide is a new feature in [!INCLUDE [prod_short](includes/prod_short.md)] 2024 release wave 1 and runtime 13 and is part of the `PromptDialog` page type for [!INCLUDE [prod_short](includes/prod_short.md)] introduced with runtime 12.1.
 
-A prompt guide is a predefined list of prompt texts that users can choose from when they open a `PromptDialog` page. The prompt guide helps users by providing one or more predefined prompt texts to use as input to generate content, rather than having to write up a prompt themselves. The user can choose a prompt text from the list, and the selected prompt is then inserted into the prompt input field so that the user can update it before sending to Copilot. Having prompt guides can help users to understand the different ways in which they can phrase their question or instruction to Copilot, reveal different categories of prompts, or inspire different ways of prompting to achieve similar outcomes.
+Learn how to enhance user interactions with Copilot in [!INCLUDE [prod_short](includes/prod_short.md)] by leveraging the prompt guide feature. A prompt guide is a predefined list of prompt texts that users can choose from when they open a `PromptDialog` page. The prompt guide helps users by providing one or more predefined prompt texts to use as input to generate content, rather than having to write up a prompt themselves. The user can choose a prompt text from the list, and the selected prompt is then inserted into the prompt input field so that the user can update it before sending to Copilot. Having prompt guides can help users to understand the different ways in which they can phrase their question or instruction to Copilot, reveal different categories of prompts, or inspire different ways of prompting to achieve similar outcomes.
 
 ## Predefined prompts
 
