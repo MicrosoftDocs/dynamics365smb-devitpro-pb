@@ -20,8 +20,9 @@ ms.custom:
 
 URLs for built-in or custom API endpoints all follow the same base pattern. They start with the following base.
 
+### Base URL
+
 ```text
-Base URL
 https://api.businesscentral.dynamics.com/v2.0
 ```
 
@@ -29,9 +30,9 @@ The `v2.0` part of the base URL stems from the time when [!INCLUDE[prod_short](.
 
 Next, the URL needs to include, which [!INCLUDE[prod_short](../includes/prod_short.md)] environment to connect to. Here, you can choose to include the Microsoft Entra ID of the tenant you want to connect to in the URL:
 
-```text
-Environment information
+### Environment information
 
+```text
 {Base URL}/{Entra ID}/{Environment name}
 
 or
@@ -49,13 +50,15 @@ After that, you need to specify the API route (also called API category). For pa
 
 Every [!INCLUDE[prod_short](../includes/prod_short.md)] environment comes with a standard set of commonly used APIs; for these, the API route is simply an `APIVersion` (namely `v2.0`), with no group or publisher. 
 
-```text
-API route For Microsoft Standard API, use this path: 
+API route For Microsoft Standard API, use this path:
 
+```text
 {Base URL}/{Environment information}/api/v2.0
+```
 
 Other endpoints include API publisher, API group, and API version:
 
+```text
 {Base URL}/{Environment information}/api/{API publisher}/{API group}/{API version} 
 ``` 
 
@@ -67,16 +70,18 @@ Endpoint {Base URL}/{Environment information}/api/{API route}/{endpoint}
 
 To call most of the [!INCLUDE[prod_short](../includes/prod_short.md)] endpoints, you need to specify, which company you want to connect to. You can specify the company as part of the URL or as a query parameter. 
 
+### Company
+
+You can specify the company as a query parameter:
+
 ```text
- Company 
-You can specify the company as a query parameter 
-
 {Base URL}/{Environment information}/api/{API route}/{endpoint}?company=<companyGuid> 
+```
 
-Alternatively, you can specify it as part of the endpoint 
+Alternatively, you can specify it as part of the endpoint:
 
+```text
 {Base URL}/{Environment information}/api/{API route}/companies(<companyGuid>)/{endpoint} 
-
 ```
 
 ## Example: URLs for Business Central Standard API
