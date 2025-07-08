@@ -20,7 +20,7 @@ ms.reviewer: solsen
 Once you have the API access enabled, you can write code that integrates your web service or SaaS solution with [!INCLUDE[prod_short](../../includes/prod_short.md)]. Creating your integration through an API provides simple access to the supported functionality in a single endpoint, giving you a simplified experience for creating a single app with integrations across multiple Microsoft products.
 
 > [!IMPORTANT]  
-> With the introduction of multiple [!INCLUDE[prod_short](../../includes/prod_short.md)]  > environments, the name of the environment being connected to needs to go into the URI.  To learn how to get a list of environments deployed on the tenant, see [Getting a list of environments](../../webservices/api-get-environments.md).
+> With the introduction of multiple [!INCLUDE[prod_short](../../includes/prod_short.md)] environments, the name of the environment being connected to needs to go into the URI.  To learn how to get a list of environments deployed on the tenant, see [Getting a list of environments](../../webservices/api-get-environments.md).
 
 ### [!INCLUDE[prod_short](../../includes/prod_short.md)]
 
