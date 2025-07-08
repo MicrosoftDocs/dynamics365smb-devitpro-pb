@@ -48,3 +48,4 @@ Returns a wrapped array of environments.
 [Developing Connect Apps for Dynamics 365 Business Central](../developer/devenv-develop-connect-apps.md)  
 [Microsoft Web Services Overview](web-services.md)  
 [OpenAPI Specification](../api-reference/v2.0/dynamics-open-api.md)  
+[API endpoint structure](../../webservices/api-endpoint-structure.md)
