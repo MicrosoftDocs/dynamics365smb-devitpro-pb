@@ -9,6 +9,7 @@ ms.collection:
   - get-started
   - bap-ai-copilot
 ms.date: 06/24/2025
+ms.update-cycle: 180-days
 ---
 
 # Business Central AI resources (preview)
