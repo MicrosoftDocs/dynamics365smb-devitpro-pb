@@ -3,6 +3,7 @@ title: "Technical Upgrade to Version 20"
 description: Describes how to do a technical upgrade from Business Central 17, V18, and V19 to V20
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer

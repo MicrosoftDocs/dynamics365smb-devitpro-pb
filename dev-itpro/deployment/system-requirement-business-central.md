@@ -7,6 +7,7 @@ ms.custom:
 ms.service: dynamics-365-op
 ms.topic: overview
 ms.date: 04/14/2024
+ms.update-cycle: 1095-days
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer

@@ -3,6 +3,7 @@ title: Page 6400 Flow Template Selector Replacement Code for C/AL to AL conversi
 description: The article includes replacement code for Page 6400 Flow Template Selector for fixing compilation errors when converting a Business Central version 14 application to version 15 AL. 
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: article
 ms.author: jswymer
 author: jswymer

@@ -3,6 +3,7 @@ title: "Technical upgrade From version 14 to version 19"
 description: Describes how to do a technical upgrade from Business Central 14 to 19
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
