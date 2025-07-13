@@ -17,9 +17,8 @@ An **AI Test** is a procedure designed to evaluate the accuracy, reliability, an
 
 ## Step-by-step: write an AI test
 
-<!-->
 > [!TIP]
-> The full source code for the example used in this article can be found in the [Marketing text sample]() demo project.-->
+> The full source code for the example used in this article can be found in the [Marketing text sample]() demo project.
 
 Follow these steps to create an AI test.
 
