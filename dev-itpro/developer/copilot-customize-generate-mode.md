@@ -71,7 +71,7 @@ systemaction(Generate)
 {
     Caption = 'Generate';
 
-    trigger OnAction();
+    trigger OnAction()
     begin
         RunGenerate(CopilotGeneratingTxt);
     end;
