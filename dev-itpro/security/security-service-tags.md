@@ -24,7 +24,7 @@ Scenario: App Source app or PTE calling out to external services, either in Azur
 Create a rule allowing traffic from the `Dynamics365BusinessCentral` service tag
 
 ### Destination Service is an Azure Storage Account in the same or a paired Azure region as the Business Central Environment
-Create a Proxy Azure Function and restrict Storage Account network access to the Azure Function via Virtual network or Private endpoint. On the Azure Function, set up an [App Service service tag-based access restriction rule](https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions?tabs=azurecli) allowing traffic from the `Dynamics365BusinessCentral` service tag.
+Create a Proxy Azure Function and restrict Storage Account network access to the Azure Function via Virtual network or Private endpoint. On the Azure Function, set up an [App Service service tag-based access restriction rule](/azure/app-service/app-service-ip-restrictions) allowing traffic from the `Dynamics365BusinessCentral` service tag.
 This workaround is necessary due to a restriction of IP network rules for Storage Accounts, where requests to the storage account will originate from an internal IP address and not be affected by service tags applied to the storage account. Learn more [here](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range).
 
 ### Destination Service supports network access rules with IP Ranges
