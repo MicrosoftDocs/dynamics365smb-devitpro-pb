@@ -5,6 +5,7 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.assetid: bf71a267-45d8-43cf-b881-f0b3976e81e5
 caps.latest.revision: 28
+ms.custom: sfi-ropc-blocked
 ---
 # CompileObjects
 Compiles objects from the specified database.  

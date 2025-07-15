@@ -4,6 +4,7 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.assetid: 64f54243-c168-4f02-8de2-a3f663a3b437
 caps.latest.revision: 13
+ms.custom: sfi-ropc-blocked
 ---
 # How to: Deploy Microsoft Dynamics NAV on Microsoft Azure by Using the Example Scripts
 This topic describes how to deploy [!INCLUDE[navnow](includes/navnow_md.md)] by using the Example-1VM.ps1 and Example-2VM.ps1 scripts that are available with the [!INCLUDE[nav_prov_long](includes/nav_prov_long_md.md)]. The scripts deploy [!INCLUDE[navnow](includes/navnow_md.md)] in different network topologies. For more information, see [Deploying Microsoft Dynamics NAV Using the Example Scripts](Deploying-Microsoft-Dynamics-NAV-Using-the-Example-Scripts.md).  
