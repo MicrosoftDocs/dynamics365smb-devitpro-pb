@@ -6,6 +6,7 @@ ms.reviewer: solsen
 ms.author: mikebc
 ms.topic: concept-article
 ms.date: 07/03/2025
+ms.update-cycle: 180-days
 ms.search.keywords: copilot, copilot chat, online documentation, web search
 ms.collection:
   - bap-ai-copilot

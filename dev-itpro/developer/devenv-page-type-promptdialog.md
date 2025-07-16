@@ -7,6 +7,7 @@ ms.topic: overview
 ms.collection:
   - bap-ai-copilot
 ms.date: 06/19/2025
+ms.update-cycle: 180-days
 ms.reviewer: solsen
 ---
 

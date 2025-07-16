@@ -4,6 +4,7 @@ description: Integrate with Azure OpenAI Service through the AI module of Busine
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: how-to
+ms.update-cycle: 180-days
 ms.date: 07/16/2025
 ms.collection:
   - get-started

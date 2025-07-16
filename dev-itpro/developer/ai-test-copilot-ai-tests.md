@@ -4,6 +4,7 @@ description: Learn how to write AI tests in AL for Copilot features.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: concept-article
+ms.update-cycle: 180-days
 ms.date: 07/16/2025
 ms.collection:
   - get-started
