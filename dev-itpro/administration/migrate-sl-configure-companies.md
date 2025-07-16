@@ -25,7 +25,7 @@ Complete this task after you set up cloud migration and before you replicate dat
 
 The **SL Company Migration Configuration** page opens automatically when you complete the **Cloud Migration Setup** assisted setup. You can also open the page by searching for and opening the **Cloud Migration Management** page and then selecting the **SL Company Migration Configuration** action.
 
-![Shows SL company migration configuration page](../media/SL-Company-migration-Configuration-v2.jpg)
+[![Shows SL company migration configuration page](../media/SL-Company-migration-Configuration-v2.jpg)](../media/SL-Company-migration-Configuration-v2.jpg#lightbox)
 
 Once the **SL Company Migration Configuration** page is open, start configuring the data to migrate using the different sections of the page.
 
