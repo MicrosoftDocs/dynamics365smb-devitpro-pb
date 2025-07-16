@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 04/01/2025
+ms.date: 07/16/2025
 ms.custom: bap-template 
 ---
 
@@ -20,7 +20,7 @@ In this article, you learn how to define the Copilot screen that displays the AI
 
 If the PromptDialog page has a prompt area (`area(Prompt)`), then an edit prompt ![Shows the prompt edit icon](media/prompt-edit.png) button appears in the upper-left corner of the page when it's in the content mode. Users can select the edit prompt button to open the [prompt mode](copilot-design-prompt-mode.md) where they can provide new input or modify input. The content mode UI consists of several other elements, which are described in the sections that follow.
 
-For an overview building the Copilot UI, refer to [Build Copilot user experience](ai-build-experience.md).
+For an overview of building the Copilot UI, refer to [Build Copilot user experience](ai-build-experience.md).
 
 ## Prerequisites
 
@@ -50,13 +50,13 @@ layout
 
 ## Add a save and discard action
 
-In this task, you add actions to the content mode that enable users to save or discard the AI-generated proposal. Don't save AI-generated proposals to the database until the user chooses to do so. In accordance with the princples of responsible AI, to respect the user's choice.
+In this task, you add actions to the content mode that enable users to save or discard the AI-generated proposal. Don't save AI-generated proposals to the database until the user chooses to do so. In accordance with the principles of responsible AI, to respect the user's choice.
 
 [![Shows a screenshot of the save and discard actions in the content mode of the PromptDialog type page](media/promptdialog-content-mode-save.svg)](media/promptdialog-content-mode-save.svg#lightbox)
 
 There are two system actions that control the behavior: `systemaction(OK)` for saving and `systemaction(Cancel)` for discarding. These actions appear in the UI by default without you having to add any code where `systemaction(OK)` has the caption **Keep it** and `systemaction(Cancel)` has the caption **Discard**. However, you do have to add code that handles the content based on which action the user chooses. 
 
-1. This step is optional and only required if you want use captions other than **Keep it** and **Discard**. In the `actions` control, add a system action `OK` for saving proposals and `Cancel` for discarding proposals.
+1. This step is optional and only required if you want to use captions other than **Keep it** and **Discard**. In the `actions` control, add a system action `OK` for saving proposals and `Cancel` for discarding proposals.
 
     ```al
     actions
@@ -77,7 +77,7 @@ There are two system actions that control the behavior: `systemaction(OK)` for s
     }
     ```
 
-    Use the Caption property to specify the text that you want to use for the actions. Choose text that is concise but best communicates what the action does. For example, if the OK action inserts a row in list, then perhaps **Insert** is a better than **Keep it**. 
+    Use the Caption property to specify the text that you want to use for the actions. Choose text that is concise but best communicates what the action does. For example, if the OK action inserts a row in a list, then perhaps **Insert** is a better option than **Keep it**. 
 
 1. Add the code that saves or discards the proposal using either the [OnQueryClosePage](triggers-auto/page/devenv-onqueryclosepage-page-trigger.md) or the value returned from the [RunModal](methods-auto/page/page-runmodal--method.md).
 
@@ -121,7 +121,7 @@ actions
 
 ## Customize the caption in content mode
 
-By default, the `Caption` property of the PromptDialog page determines UI caption in prompt and content modes of the PromptDialog page. By using the [DataCaptionExpression property](properties/devenv-datacaptionexpression-property.md), you can change the caption dynamically. This property enables you to display a different caption in the content than in the prompt mode.
+By default, the `Caption` property of the PromptDialog page determines UI caption in prompt and content modes of the PromptDialog page. By using the [DataCaptionExpression property](properties/devenv-datacaptionexpression-property.md), you can change the caption dynamically. This property enables you to display a different caption in the content mode than in the prompt mode.
 
 [![Shows the caption next to the edit button in PromptDialog type page](media/promptdialog-content-mode-caption.svg)](media/promptdialog-content-mode-caption.svg#lightbox)
 

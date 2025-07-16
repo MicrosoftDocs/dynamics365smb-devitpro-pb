@@ -1,7 +1,7 @@
 ---
 title: Adding and Accessing Resources in Business Central extensions
 description: Describes how to package and use resources, such as sample data and images with Business Central extensions.
-ms.date: 06/16/2025
+ms.date: 07/16/2025
 ms.topic: concept-article
 author: thloke
 ms.reviewer: solsen
@@ -86,6 +86,9 @@ The following limits are enforced on the resources that you can include in an ex
 | Maximum number of resource files in an extension | 256 files |
 
 These limits are subject to change in the future.
+
+> [!NOTE]
+> Before version 26.3, embedded resources can't be retrieved in runtime packages. The only way around that is to publish the regular package to the database.
 
 ## Limiting access to resources
 
