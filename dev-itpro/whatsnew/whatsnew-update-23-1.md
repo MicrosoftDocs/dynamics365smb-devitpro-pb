@@ -3,6 +3,7 @@ title: "Update 23.1 for Microsoft Dynamics 365 Business Central 2023 Release Wav
 description: Get an overview of new and changed capabilities in the 23.1 update of Business Central online, which is part of 2023 release wave 2.
 ms.author: jswymer
 ms.date: 04/01/2024
+ms.update-cycle: 1095-days
 ms.reviewer: jswymer
 ms.topic: article
 author: jswymer

@@ -3,6 +3,7 @@ title: Joker Data Type
 description: The Joker data type is an internal type, a wildcard, not exposed to AL developers.
 author: SusanneWindfeldPedersen
 ms.date: 04/26/2024
+ms.update-cycle: 1095-days
 ms.topic: reference
 ms.custom: evergreen
 ms.author: solsen
