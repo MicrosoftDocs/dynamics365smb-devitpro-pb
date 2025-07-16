@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: solsen
 ms.topic: article
-ms.date: 03/28/2025
+ms.date: 07/16/2025
 ms.custom: bap-template
 ---
 
@@ -23,8 +23,8 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint.<br><br>  Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. A Microsoft page is a page that is created in an app with the publisher Microsoft. Therefore, this change is relevant for any page from any app with the publisher Microsoft (e.g. Base Application, System Application, every 1st party app).<br><br>  If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
-
+|Removed | A UI page isn't an API and therefore changes to them can happen in a release without this being considered a breaking change. But for customers who expose UI pages as web services endpoints, a change in the UI can be felt as a breaking change for an integration built on this endpoint.<br><br>Starting in version 30, it's no longer possible to expose a Microsoft page as an OData endpoint. A Microsoft page is a page that is created in an app with the publisher Microsoft. Therefore, this change is relevant for any page from any app with the publisher Microsoft (for example, Base Application, System Application, every first party app).<br><br>  If you need to have OData integrations to these pages, you need to copy the source code for the page and host the page in a per-tenant extension. |
+ par
 ## Changes in 2026 release wave 2 (version 29.0)
 
 ### Expose a Microsoft page as a SOAP endpoint (removal)
