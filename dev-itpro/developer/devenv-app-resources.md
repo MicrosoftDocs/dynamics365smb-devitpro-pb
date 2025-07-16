@@ -86,8 +86,8 @@ The following limits are enforced on the resources you can include in an extensi
 
 These limits are subject to change in the future.
 
->[!NOTE]
->Prior to version 26.3, embedded resources cannot be retrieved in runtime packages. The only way around that is to publish the regular package to the database.
+> [!NOTE]
+> Before version 26.3, embedded resources can't be retrieved in runtime packages. The only way around that is to publish the regular package to the database.
 
 ## Limiting access to resources
 
