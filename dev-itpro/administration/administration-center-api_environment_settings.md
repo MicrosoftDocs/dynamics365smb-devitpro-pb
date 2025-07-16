@@ -1,12 +1,12 @@
 ---
 title: Business Central Admin Center API - Environment Settings
-description: Learn about the Business Central administration center API for setting up environments.
+description: Configure Business Central environment settings via Admin Center API, including update windows, App Insights, security groups, and access controls.
 author: jswymer
 ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 11/01/2024
+ms.date: 07/16/2025
 ---
 # Business Central Admin Center API - Environment Settings
 
@@ -24,7 +24,7 @@ GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 
 ### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is. (for example "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (For example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -70,7 +70,7 @@ Returns a wrapped array of time zones.
   "value":
     [
       {
-        "id": string, // Time zone identifier (for example, "Romance Standard Time")
+        "id": string, // Time zone identifier (For example, "Romance Standard Time")
         "displayName": string, // Display name of the time zone (for example, "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris")
         "currentUtcOffset": string, // Offset from UTC, expressed as a time span with +/-HH:mm format (for example, "+01:00", "-09:00")
         "supportsDaylightSavingTime": boolean, // Indicates whether the time zone supports daylight saving time rules
@@ -91,7 +91,7 @@ PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 
 ### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is. (for example "BusinessCentral")
+`applicationFamily` - Family of the environment's application as is. (For example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -103,7 +103,7 @@ With API version 2.13 and later, there are two different parameter sets for defi
 - The UTC parameter set identifies the start and end times in Coordinated Universal Time.
 
 > [!NOTE]
-> If the UTC parameter set is used when modifying the update window settings and the country of the environment supports multiple time zones, the time zone shown on the Environment Details page in the admin center will be reset to the default time zone for the country, which may not always be desirable. We recommend to use the new parameter set when consuming API v2.13 and later.
+> If you use the UTC parameter set when modifying the update window settings and the country of the environment supports multiple time zones, the time zone shown on the **Environment Details** page in the admin center resets to the default time zone for the country. This result might not be desirable. We recommend using the new parameter set when consuming API v2.13 and later.
 
 Example with wall-time + timezone parameter set (supported only by API v2.13 and later):
 
@@ -136,7 +136,7 @@ Returns the updated settings
 ```
 
 > [!NOTE]  
-> The `date` components of the values are ignored, only the time components are used.
+> The `date` components of the values are ignored. Only the time components are used.
 
 ### Expected Error Codes
 
@@ -158,7 +158,7 @@ Returns the updated settings
 Sets the connection string or instrumentation key an environment uses for Azure Application Insights resource, which you can use to gather telemetry. For information about Application Insights and the connection string/instrumentation key, go to [Enable Environment Telemetry](telemetry-enable-application-insights.md#appinsights).
 
 > [!IMPORTANT]
-> This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this during non-working hours to avoid disruptions.
+> This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this task during non-working hours to avoid disruptions.
 
 ```
 Content-Type: application/json
@@ -207,7 +207,7 @@ GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 
 ### Response
 
-If the group exists in Azure AD graph:
+If the group exists in Microsoft Graph (formerly Azure AD graph):
 
 ```
 {
@@ -216,7 +216,7 @@ If the group exists in Azure AD graph:
 }
 ```
 
-If a previously assigned group no longer exists in Azure AD graph:
+If a previously assigned group no longer exists in Microsoft Graph (formerly Azure AD graph):
 
 ```
 {
@@ -276,10 +276,11 @@ DELETE /admin/v2.24/applications/{applicationFamily}/environments/{environmentNa
 
 **INTRODUCED IN:** API version 2.22
 
-Returns a boolean value that indicates whether the environment allows access for delegated administrators and foreign multitenant apps and a list of allowlisted foreign Entra tenant IDs.
+Returns a boolean value that indicates whether the environment allows access for delegated administrators and foreign multitenant apps and a list of allowlisted foreign Microsoft Entra tenant IDs.
 
 > [!IMPORTANT]
-> This API endpoint can only be used by internal global administrators. Authentication as delegated administrator or application is not supported.
+> Only internal global administrators can use this API endpoint. Delegated administrator or application authentication isn't supported.
+
 ```
 GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
@@ -303,10 +304,11 @@ GET /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}
 
 **INTRODUCED IN:** API version 2.22
 
-Enable/disable delegated administrators and foreign multitenant apps to/from administering and accessing the environment, optionally allowlist only specific foreign Entra tenants to administer and access the environment.
+Enable or disable delegated administrators and foreign multitenant apps to administer and access the environment. Optionally, allowlist only specific foreign Microsoft Entra tenants to administer and access the environment.
 
 > [!IMPORTANT]
-> This API endpoint can only be used by internal global administrators. Authentication as delegated administrator or application is not supported.
+> Only internal global administrators can use this API endpoint. Delegated administrator or application authentication isn't supported.
+
 ```
 PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/partneraccess
 ```
@@ -387,7 +389,7 @@ Specifies whether AppSource apps installed on the environment should be updated 
 
 ```
 Content-Type: application/json
-POST /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/appSourceAppsUpdateCadence
+PUT /admin/v2.24/applications/{applicationFamily}/environments/{environmentName}/settings/appSourceAppsUpdateCadence
 ```
 
 ### Route Parameters
