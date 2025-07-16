@@ -8,20 +8,20 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 04/01/2025
 ms.update-cycle: 180-days
+ms.date: 07/16/2025
 ms.custom: bap-template
 ---
 
 # Design the prompt mode of prompt dialog page
 
-In this article, you learn how to design the Copilot screen where users can add input that the AI generation logic uses for producing results. The screen is defined by the prompt mode of the PromptDialog page. The prompt mode is optional because not all AI designs required it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the Copilot experience.
+In this article, you learn how to design the Copilot screen where users can add input that the AI generation logic uses for producing results. The screen is defined by the prompt mode of the PromptDialog page. The prompt mode is optional because not all AI designs require it. Also, you might need a prompt mode, but it doesn't have to be the first mode presented to the user in the Copilot experience.
 
 The following figure illustrates an example of the prompt mode. The prompt mode UI consists of several elements, which are described in the sections that follow.
 
 [![Shows the prompt area of the PromptDialog type page with no callouts](media/promptdialog-prompt-mode-prompt-area-no-callout.svg)](media/promptdialog-prompt-mode-prompt-area-no-callout.svg#lightbox)
 
-For an overview building the Copilot UI, go to [Build Copilot user experience](ai-build-experience.md).
+For an overview of building the Copilot UI, go to [Build Copilot user experience](ai-build-experience.md).
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ The prompt area is where users can provide input to the AI generation. The promp
 
 [![Shows the prompt area of the PromptDialog type page](media/promptdialog-prompt-mode-prompt-area.svg)](media/promptdialog-prompt-mode-prompt-area.svg#lightbox)
 
-The prompt area is defined by adding an `area` control to the `layout` of the page, similar to way you'd add content areas on other page types. Except you use the syntax `area(Prompt)`:
+The prompt area is defined by adding an `area` control to the `layout` of the page, similar to the way you'd add content areas on other page types. Except you use the syntax `area(Prompt)`:
 
 ```al
 layout
@@ -66,7 +66,7 @@ For fields of data type [Text](methods-auto/text/text-data-type.md), [BigText](m
 
 Here are some guidelines for using placeholders:
 
-- Keep the placeholder text short, succinct, and specific to the field, page, or prompt dialog. Don't use entirely generic text like `Enter description here`. Don't use entirely generic text like `Enter description here`. Instead, make the text contextual to the specific field, page, or prompt dialog so that there's real informational value. Don't repeat what the prompt dialog title says, but use text that naturally extends what the title says to guide the user along.
+- Keep the placeholder text short, succinct, and specific to the field, page, or prompt dialog. Don't use entirely generic text like `Enter description here`. Instead, make the text contextual to the specific field, page, or prompt dialog so that there's real informational value. Don't repeat what the prompt dialog title says, but use text that naturally extends what the title says to guide the user along.
 - Don't require the user to use the value of `InstructionalText`  property to complete their task. The reason is that the full text might not always be visible depending on screen size, device type, orientation, page layout, and similar.
 - The placeholder text isn't the same as the *name* or *label* of the field&mdash;it's supplemental information. Don't use the `InstructionalText` property on fields as a replacement for the [Caption property](properties/devenv-caption-property.md).
 - Use placeholder text only when the extra guidance is helpful for users to get started. Overuse of placeholder, such as applying it to all fields on a page, might be distracting and diminish its effectiveness.
@@ -185,7 +185,7 @@ In this task, you add actions to the PromptDialog page that enable users to set 
 
 [![Shows a screenshot that highlights the preference option actions in the prompt mode of the PromptDialog type page](media/promptdialog-prompt-mode-options.svg)](media/promptdialog-prompt-mode-options.svg#lightbox)
 
-You add the options by using in an `area(PromptOptions)` control with the `actions` control. Each option is defined by a field using the `field` control. Only fields of the [option data type](methods-auto/option/option-data-type.md) are supported.
+You add the options by using an `area(PromptOptions)` control with the `actions` control. Each option is defined by a field using the `field` control. Only fields of the [option data type](methods-auto/option/option-data-type.md) are supported.
 
 ```al
 layout

@@ -3,6 +3,7 @@ title: Entitlement object
 description: Discover how to define and use entitlement objects in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 03/19/2025
+ms.update-cycle: 1095-days
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen

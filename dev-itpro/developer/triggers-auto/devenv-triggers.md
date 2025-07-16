@@ -3,6 +3,7 @@ title: Triggers overview
 description: Learn how triggers work in AL for Business Central.
 ms.custom: evergreen
 ms.date: 04/02/2025
+ms.update-cycle: 1095-days
 ms.reviewer: solsen
 ms.topic: get-started
 author: SusanneWindfeldPedersen

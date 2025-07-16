@@ -5,6 +5,7 @@ author: jswymer
 ms.topic: concept-article
 ms.service: dynamics-365-op
 ms.date: 06/21/2024
+ms.update-cycle: 1095-days
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom:

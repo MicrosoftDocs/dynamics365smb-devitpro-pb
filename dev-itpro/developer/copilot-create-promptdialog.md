@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 04/01/2025
 ms.update-cycle: 180-days
+ms.date: 07/16/2025
 ms.custom: bap-template
 ---
 # Create prompt dialog page for a Copilot feature
 
 The first step in designing the Copilot UI is creating a page of the type `PromptDialog`. Once you create the prompt dialog page following this article, you use it to build the different display modes needed for your Copilot extension, including prompt, generate, and content.
 
-For an overview building of the Copilot UI, refer to [Build Copilot user experience](ai-build-experience.md).
+For an overview of building the Copilot UI, refer to [Build Copilot user experience](ai-build-experience.md).
 
 ## Create a prompt dialog page
 

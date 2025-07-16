@@ -4,8 +4,8 @@ description: Integrate with Azure OpenAI Service through the AI module of Busine
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.topic: how-to
-ms.date: 04/01/2025
 ms.update-cycle: 180-days
+ms.date: 07/16/2025
 ms.collection:
   - get-started
   - bap-ai-copilot
@@ -120,7 +120,7 @@ codeunit 54310 "Secrets And Capabilities Setup"
 }
 ```
 
-For the `"Copilot Availability"`, you can choose `Preview` for the first release of your capability to signal to your customers that the capability is ready for production, but is subject to change and that you'rewelcoming their feedback.
+For the `"Copilot Availability"`, you can choose `Preview` for the first release of your capability to signal to your customers that the capability is ready for production, but is subject to change and that you're welcoming their feedback.
 
 ### Saving the authorization
 
