@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 04/01/2025
+ms.date: 07/16/2025
 ms.custom: bap-template
 ---
 
@@ -71,7 +71,7 @@ systemaction(Generate)
 {
     Caption = 'Generate';
 
-    trigger OnAction();
+    trigger OnAction()
     begin
         RunGenerate(CopilotGeneratingTxt);
     end;

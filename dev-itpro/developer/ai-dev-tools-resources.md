@@ -5,7 +5,10 @@ author: pborring
 ms.author: solsen
 ms.reviewer: solsen
 ms.topic: concept-article
-ms.date: 06/04/2025
+ms.collection:
+  - get-started
+  - bap-ai-copilot
+ms.date: 06/24/2025
 ---
 
 # Business Central AI resources (preview)
@@ -43,7 +46,7 @@ Quickly integrate AI capabilities into your solutions without having to navigate
 - *Improved reliability*  
 Proactive scaling, throttling, load balancing, and fault tolerance measures, ensuring consistent performance during peak demand.
 - *Enhanced security compliance*  
-Built-in compliance measures and governance, including robust protection from malicious and harmful content, ensuring compliance with data residency requirements, reducing the burden of ensuring regulatory compliance for ISVs.
+Built in compliance measures and governance, including robust protection from malicious and harmful content, ensuring compliance with data residency requirements, reducing the burden of ensuring regulatory compliance for ISVs.
 - *Streamlined experience for customers*  
 Customers experience a more seamless AI resource management process, avoiding the need to maintain different configurations for separate ISV solutions.
 
@@ -69,6 +72,21 @@ Learn more about the rates under AI Tools in [Billing rates and management](/mic
  
 > [!NOTE]  
 > It's important to note that the AI billing model isn't intended to replace the existing AppSource monetization pathway for [!INCLUDE [prod_short](includes/prod_short.md)] apps. Instead, it serves as another option to simplify AI consumption for customers and partners, with the AppSource monetization option available to ISVs to monetize their intellectual property (IP).
+
+### Gracefully handle errors in case of overconsumption
+
+When using [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, developers can easily react and handle cases of overconsumption. Overconsumption can happen, for example, when the customer provides non-valid billing information, or when a user is using AI resources too fast.
+
+To identify and handle these scenarios, developers can use the codeunit `AOAI Operation Response`, which is returned when using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot.
+
+Here are some examples of using an instance of `AOAI Operation Response` to identify errors related to AI consumption.
+
+|AL code check|scenario|
+|-----------------------------------|-------------|
+|`AOAIOperationResponse.IsSuccess()`|The operation was successful and no additional error handling is needed.|
+|`AOAIOperationResponse.GetStatusCode() = 402`|The operation wasn't successful because the current Microsoft Entra tenant ran out of AI resources and has no valid billing setup.|
+|`AOAIOperationResponse.GetStatusCode() = 429`|The current user is issuing requests to Copilot too fast. This can be an indication of automations or scheduled tasks that the user isn't aware of. This error disappears after a few seconds.|
+|`AOAIOperationResponse.GetStatusCode() = 503`|The [!INCLUDE [prod_short](includes/prod_short.md)] backend is temporarily unavailable; this is a rare occurrence and typically transient.|
 
 ## Use your own subscription with customers
 

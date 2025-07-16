@@ -48,7 +48,11 @@ The following methods are available on instances of the HttpClient data type.
 The supported security protocols are controlled by the **SecurityProtocol** configuration setting. For more information, see [Microsoft Dynamics 365 Business Central Server Configuration](../../../administration/configure-server-instance.md#Compatibility).
 
 ## Ways that HttpClient calls can fail
+
 All of the methods HttpClient.Delete, HttpClient.Get, HttpClient.Post, HttpClient.Put, or HttpClient.Send in the HttpClient data type can fail and return false. 
+
+[!INCLUDE[allowhttpclientnote](../../includes/include-http-call-failure-reasons.md)]
+
 
 [!INCLUDE[httpCallErrors](../../../includes/include-http-call-errors-note.md)]
 

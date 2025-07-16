@@ -70,6 +70,7 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 26.3](whatsnew/whatsnew-update-26-3.md)
 ### [Update 26.2](whatsnew/whatsnew-update-26-2.md)
 ### [Update 26.1](whatsnew/whatsnew-update-26-1.md)
 ### [Update 26.0](whatsnew/whatsnew-update-26-0.md)
@@ -994,6 +995,7 @@
 #### [Discover events using the event recorder](developer/devenv-events-discoverability.md)
 #### [Event example](developer/devenv-events-example.md)
 #### [Walkthrough: Implementing new workflow events and responses](developer/devenv-walkthrough-workflow-events-responses.md)
+#### [Deprecate external business events](developer/devenv-deprecate-external-business-events.md)
 #### [Notifications](developer/devenv-notifications-developing.md)
 <!--Events
 #### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
@@ -1463,6 +1465,7 @@
 
 ### APIs
 #### [Overview](webservices/api-overview.md)
+#### [API endpoint structure](webservices/api-endpoint-structure.md)
 #### [API client performance](webservices/odata-client-performance.md)
 #### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
 #### [Tips for working with APIs](developer/devenv-connect-apps-tips.md)
@@ -1582,6 +1585,7 @@
 ### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
 ### [Influence Copilot and agents without extending them](developer/copilot-and-agents-influence-without-extending.md)
+### [Prepare your app Help for Copilot (preview)](developer/ai-prepare-app-help-copilot.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
 ### [Business Central AI resources (preview)](developer/ai-dev-tools-resources.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)

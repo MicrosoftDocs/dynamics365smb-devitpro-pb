@@ -23,8 +23,9 @@ Specifies the origin extension ID when a table is moved to a new extension. If t
 
 ## Remarks
 
-> [!NOTE]
-> This property is currently only for Microsoft use and will be available in a future release.
+Tables and fields can be moved between extensions by using the `MovedFrom` and `MovedTo` properties. This is useful when you want to reorganize your extensions or when you need to move a table from one extension to another without losing the data.
+
+Learn more in [Moving tables and fields between extensions](../devenv-move-table-fields-between-extensions.md).
 
 ## Related information  
 [Getting Started with AL](../devenv-get-started.md)  

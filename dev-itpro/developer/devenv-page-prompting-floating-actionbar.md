@@ -6,11 +6,13 @@ ms.author: solsen
 ms.topic: overview
 ms.collection:
   - bap-ai-copilot
-ms.date: 04/01/2025
+ms.date: 07/02/2025
 ms.reviewer: solsen
 ---
 
 # Launch Copilot features using prompt actions
+
+Microsoft Copilot in [!INCLUDE [prod_short](includes/prod_short.md)] enables users to leverage AI-powered assistance directly within the application. To enhance user experience and promote Copilot capabilities, developers can create prompt actions that integrate seamlessly into the UI. These actions allow users to initiate Copilot features effortlessly, whether through a floating action bar or other prominent UI elements. This article provides an overview of how to implement prompt actions, design guidelines, and considerations for ensuring optimal functionality and visibility across different environments.
 
 In this article, you learn how to add actions in the UI that users can select to start Copilot features. There are two approaches to creating these actions. Whichever approach you choose, the action must run the prompt dialog page for the Copilot feature. The recommended approach is to use a *prompt action*, which is specifically designed for Copilot features you want available on a page. The other approach is to use a standard action, as you would for other pages.
 
