@@ -150,7 +150,7 @@ Returns the updated settings
 
 `requestBodyRequired` - the request body must be provided
 
-`ScheduledUpgradeConstraintViolation` - the update window conflicts with the current update date that's set for the environment. Either the update would occur outside the allowed update date range or, if the update date is today, the update window is in the past. Adjust the update window or change the update date.
+`ScheduledUpgradeConstraintViolation` - the update window conflicts with the current update date set for the environment. Either the update would occur outside the allowed update date range or, if the update date is today, the update window is in the past. Adjust the update window or change the update date.
 
 
 ## Set Application Insights key
