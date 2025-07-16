@@ -8,7 +8,7 @@ ms.topic: article
 ms.collection:
   - get-started
   - bap-ai-Copilot
-ms.date: 04/01/2025
+ms.date: 07/16/2025
 ms.custom: bap-template
 ---
 # Build Copilot user experience
