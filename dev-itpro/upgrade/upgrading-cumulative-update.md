@@ -3,6 +3,7 @@ title: Install a cumulative update
 description: This article describes the tasks required for getting the monthly cumulative update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer

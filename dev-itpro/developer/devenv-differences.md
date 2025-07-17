@@ -3,6 +3,7 @@ title: Differences in the development environments
 description: Describes the various differences between the C/SIDE and AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 03/19/2025
+ms.update-cycle: 1095-days
 ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen

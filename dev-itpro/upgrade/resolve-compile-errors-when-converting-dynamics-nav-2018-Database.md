@@ -3,6 +3,7 @@ title: "Compilation Errors When Converting Dynamics NAV 2018 Database"
 description: Learn how to resolve errors when you convert a Dynamics NAV database to the Business Central format.
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 author: jswymer
 ---

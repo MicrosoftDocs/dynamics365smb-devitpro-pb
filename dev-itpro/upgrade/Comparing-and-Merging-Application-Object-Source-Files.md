@@ -2,6 +2,7 @@
 title: "Comparing and merging application object source files"
 ms.custom: evergreen
 ms.date: 04/01/2021
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 author: jswymer
 ---

@@ -4,6 +4,7 @@ description: Description of the control add-in object type in AL for Business Ce
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.date: 03/20/2025
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen

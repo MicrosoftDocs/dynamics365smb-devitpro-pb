@@ -6,6 +6,7 @@ ms.author: bholtorf
 ms.reviewer: bholtorf
 ms.topic: article
 ms.date: 06/19/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.collection:
   - bap-ai-copilot
