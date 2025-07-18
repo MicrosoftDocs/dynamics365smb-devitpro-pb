@@ -4,6 +4,7 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.assetid: 0025a5a2-500c-4464-92c4-48dda418e1df
 caps.latest.revision: 22
+ms.custom: sfi-ropc-blocked
 ---
 # ImportObjects
 Imports objects from a file to the specified database.  

@@ -3,6 +3,7 @@ title: "ExportToNewSyntax"
 ms.date: 10/01/2018
 ms.topic: article
 author: jswymer
+ms.custom: sfi-ropc-blocked
 ---
 # ExportToNewSyntax
 Export application objects to a .txt file in the syntax that is supported by the Txt2Al conversion tool. The Txt2Al conversion tool enables you to convert [!INCLUDE[navnow](includes/navnow_md.md)] objects that are written in the C/AL language (using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)]) to the AL (.al) format. 

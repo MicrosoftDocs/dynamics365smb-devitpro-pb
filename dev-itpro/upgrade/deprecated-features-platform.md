@@ -6,7 +6,9 @@ ms.author: bholtorf
 ms.reviewer: solsen
 ms.topic: article
 ms.date: 03/28/2025
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Deprecated features in the platform - Clients, Server, and Database

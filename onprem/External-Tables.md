@@ -4,6 +4,7 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.assetid: 39b2abf7-8fbb-4e8c-b2d8-802b48959416
 caps.latest.revision: 4
+ms.custom: sfi-ropc-blocked
 ---
 # External Tables
 You can create tables in [!INCLUDE[navnow](includes/navnow_md.md)] that represent tables in external products, such as [!INCLUDE[crm](includes/crm_md.md)] and SQL Server. This is a more dynamic table relationship than creating table definitions from SQL Server objects using linked objects, because the connection to the external table can be changed at runtime. In [!INCLUDE[navnowlong](includes/navnowlong_md.md)] you can define two types of external tables: [!INCLUDE[crm](includes/crm_md.md)] tables and **SQL Server** tables. You create an external table by specifying the type of in the TableType property.  

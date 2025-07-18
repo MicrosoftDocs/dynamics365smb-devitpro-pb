@@ -1,12 +1,14 @@
 ---
 title: Developing for Microsoft Teams Integration
 description: Provides an introduction to developing pages for Microsoft Teams integration.
-ms.custom: bap-template
 ms.date: 11/23/2022
 ms.reviewer: jswymer
 ms.topic: overview
 author: jswymer
 ms.author: jswymer
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 # Developing for Microsoft Teams Integration
 

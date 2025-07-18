@@ -7,6 +7,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.date: 05/19/2022
 ms.reviewer: bholtorf
+ms.custom: sfi-image-nochange
 ---
 
 # Extend Email Capabilities
