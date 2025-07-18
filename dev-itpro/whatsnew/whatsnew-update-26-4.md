@@ -2,7 +2,7 @@
 title: Update 26.4 for Microsoft Dynamics 365 Business Central 2025 Release Wave 1
 description: Get an overview of new and changed capabilities in the 26.4 update of Business Central online, which is part of 2025 release wave 1
 ms.author: jswymer
-ms.date: 07/17/2025
+ms.date: 07/18/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 author: jswymer
@@ -15,7 +15,7 @@ Would you like to know what changes are in update 26.4? Below you find an overvi
 
 ## Hotfixes
 
-Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 26.4 for Business Central 2025 release wave 1](https://support.microsoft.com/help/5063362).
+Learn about the hotfixes and download on-premises files from Microsoft Support at [Update 26.4 for Business Central 2025 release wave 1](https://support.microsoft.com/help/5064779).
 
 ## Feature changes
 
@@ -33,10 +33,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 |Country|Feature|Description|
 |-|-|-|
-|ES|SII CSV file update|The CSV in the SII schema has been updated related to the newest changes required by AEAT.|
-|DE|ZUGFeRD format availability|ZUGFeRD format (PDF/A) for E-invoicing in Germany is now available. In AP process, system will automatically extract the XML and process, and in the AR process system will use default report layout to create PDF and attach the XML inside.|
-|DE|Peppol BIS3 adjustment|Users in Germany now can use new Peppol BIS3 DE format for E-invoicing aligned with German standards.|
-|BE|Peppol BIS3 adjustment|Users in Belgium now can use new Peppol BIS3 BE format for E-invoicing aligned with Belgian standards (i.e. using Enterprise No.).|
+||||
 
 ## Release plan
 
@@ -54,13 +51,9 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-### Copilot uses online content from app publishers
-
-Users can now chat with Copilot and ask questions about the apps they have installed.To give our partner community time to prepare their online content for Copilot, this functionality is initially available in Update 26.4 sandbox environments only and becomes available at the end of July 2025 even if you deploy an environment earlier.
-
 ### System symbols now included with Business Central server
 
-Business Central server binaries now include the system symbols instead of the **System** extension. As a result, you can't publish `SymbolsOnly` packages by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp). You get a warning if you use the `-SymbolsOnly` parameter with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo). To get information about the system symbols, use the `-Name System` parameter.
+Starting with 26.3, Business Central server binaries now include the system symbols instead of the **System** extension. As a result, you can't publish `SymbolsOnly` packages by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp). You get a warning if you use the `-SymbolsOnly` parameter with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo). To get information about the system symbols, use the `-Name System` parameter.
 
 ### Business Central Launch Event videos on YouTube
 
