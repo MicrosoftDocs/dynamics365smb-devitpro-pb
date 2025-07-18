@@ -5,6 +5,7 @@ ms.date: 04/01/2021
 ms.topic: troubleshooting-general
 ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 author: jswymer
+ms.custom: sfi-image-nochange
 ---
 
 # Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries in Business Central

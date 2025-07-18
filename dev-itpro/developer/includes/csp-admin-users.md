@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 05/09/2022
 ms.author: solsen
 ms.reviewer: solsen
+ms.custom: sfi-ga-nochange
 ---
 In the Microsoft Partner Center documentation, you can learn how to [request a reseller relationship with customers](/partner-center/request-a-relationship-with-a-customer), [assign licenses to users](/partner-center/assign-licenses-to-users), and [create new subscriptions](/partner-center/create-a-new-subscription). [!INCLUDE[prod_short](prod_short.md)] is one of the subscriptions that you can create.  
 

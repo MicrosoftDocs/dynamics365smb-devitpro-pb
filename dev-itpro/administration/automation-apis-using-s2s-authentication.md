@@ -6,6 +6,7 @@ ms.date: 06/20/2025
 ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
+ms.custom: sfi-ropc-blocked
 ---
  
 # Using service-to-service (S2S) authentication 

@@ -7,6 +7,7 @@ ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 11/01/2024
+ms.custom: sfi-ga-nochange
 ---
 # Business Central Admin Center API - Environment Settings
 

@@ -7,6 +7,7 @@ ms.topic: concept-article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
+ms.custom: sfi-ropc-nochange
 ---
 
 # JSON files

@@ -6,6 +6,7 @@ ms.date: 07/29/2021
 ms.reviewer: bholtorf
 ms.topic: how-to
 author: bholtorf
+ms.custom: sfi-ropc-blocked
 ---
 
 # Set Up an Environment for Developing a Module

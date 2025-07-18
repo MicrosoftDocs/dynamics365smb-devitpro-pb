@@ -4,6 +4,7 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.assetid: 24e1ba11-dc05-4aab-8609-8bb3f963a471
 caps.latest.revision: 5
+ms.custom: sfi-ropc-blocked
 ---
 # CreateLanguage
 Creates captions on [!INCLUDE[navnow](includes/navnow_md.md)] objects for a specified language.  

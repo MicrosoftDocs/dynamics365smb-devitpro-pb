@@ -5,6 +5,7 @@ ms.topic: article
 ms.assetid: 6ea75b39-cf7d-4c88-868b-86fa0be2426b
 caps.latest.revision: 4
 author: jswymer
+ms.custom: sfi-ropc-nochange
 ---
 ## Resolving Table 5330 CRM Connection Setup Error When Converting a Database
 This article explains how to resolve the compilation error that you get for Table **5330 CRM Connection Setup** when converting a [!INCLUDE[navcorfu_md](includes/navcorfu_md.md)] database to [!INCLUDE[nav2017](includes/nav2017.md)].

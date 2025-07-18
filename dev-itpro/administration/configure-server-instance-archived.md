@@ -11,6 +11,7 @@ ms.reviewer: jswymer
 ms.custom:
   - bap-template
   - evergreen
+  - sfi-ropc-nochange
 ---
 # Configuring Business Central Server in outdated versions
 

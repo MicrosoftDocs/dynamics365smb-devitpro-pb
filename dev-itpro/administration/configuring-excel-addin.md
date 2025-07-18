@@ -3,11 +3,13 @@ title: "Setting up the Excel Add-In for Editing Data"
 description: Learn about how to configure the Excel add-in so users can edit data in Excel and push back to Business Central.
 author: jswymer
 ms.author: jswymer
-ms.custom: bap-template
 ms.service: dynamics-365-op
 ms.topic: how-to
 ms.date: 09/18/2024
 ms.reviewer: jswymer
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 # Setting up the Business Central add-in for Excel in Business Central on-premises
 
