@@ -6,6 +6,7 @@ ms.date: 03/12/2024
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
+ms.custom: sfi-image-nochange
 ---
 
 # Sign an app package file

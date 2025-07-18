@@ -5,6 +5,7 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.assetid: 284c9944-769d-4a56-8e0a-d86068f30d1e
 ms.author: jswymer
+ms.custom: sfi-ropc-blocked
 ---
 # How to: Open Microsoft Dynamics NAV Clients that Connect to Microsoft Dynamics NAV on Microsoft Azure
 This topic describes how to open the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[nav_web](includes/nav_web_md.md)] for a [!INCLUDE[navnow](includes/navnow_md.md)] deployment on Microsoft Azure. When you complete the [!INCLUDE[navnow](includes/navnow_md.md)] deployment by using one of the example scripts that are available with the [!INCLUDE[nav_prov_long](includes/nav_prov_long_md.md)], you receive a message in Windows PowerShell ISE that resembles the following:  

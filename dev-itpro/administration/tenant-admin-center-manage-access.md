@@ -6,7 +6,9 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.date: 11/01/2022
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-ga-nochange
 ---
 # Manage Access to Environments
 

@@ -6,6 +6,7 @@ ms.date: 02/19/2025
 ms.reviewer: solsen
 ms.topic: faq
 ms.author: qutreson
+ms.custom: sfi-ropc-nochange
 ---
 
 # Technical validation FAQ

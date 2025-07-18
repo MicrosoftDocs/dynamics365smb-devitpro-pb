@@ -4,6 +4,7 @@ description: "Explains how to resolve the compilation error that you get for Cod
 ms.date: 10/01/2018
 ms.topic: article
 author: jswymer
+ms.custom: sfi-ropc-nochange
 ---
 ## Resolving Codeunit 5330 CRM Integration Management Compilation Error 
 This article explains how to resolve the compilation error that you get for Codeunit **5330 CRM Integration Management** when converting a [!INCLUDE[nav2017](includes/navcorfu_md.md)] database to [!INCLUDE[nav2018_md](includes/nav2018_md.md)].

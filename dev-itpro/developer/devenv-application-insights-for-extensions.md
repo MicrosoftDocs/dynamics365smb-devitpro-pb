@@ -5,6 +5,7 @@ ms.date: 02/09/2024
 ms.reviewer: solsen
 ms.topic: how-to
 author: jswymer
+ms.custom: sfi-ropc-nochange
 ---
 
 # Setting up telemetry in an app/extension 

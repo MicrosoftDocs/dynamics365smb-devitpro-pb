@@ -8,6 +8,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, restore
 ms.date: 03/31/2025
 ms.author: jswymer
 ms.reviewer: jswymer
+ms.custom: sfi-image-nochange
 ---
 
 # Managing production and sandbox environments in the admin center
