@@ -21,13 +21,10 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 | Product area | Feature | PP/GA |
 |-|-|-|
-| Copilot and agents | [Chat with Copilot to learn how to use installed add-on apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/chat-copilot-learn-use-installed-add-on-apps) | PP  |
-|  | [Automate payables processes with the Payables Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-payables-processes-payables-agent) | PP  |
-| | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)| PP  |
-||[Summarize with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-record-copilot#enhancements-with-update-263-july-update) is faster in update 26.4 and includes a Copy summary option.| PP |
-||[Autofill with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot) adds improved support for keyboard shortcuts and screen readers.| PP |
-| Country and regional | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) | GA  |
-| Electronic Documents | [Use Continia as a service provider for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-continia-as-service-provider-e-documents) | GA |
+| Country and regional | [Use ZUGFeRD format for E-Documents in Germany](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-zugferd-format-e-documents-germany) | GA  |
+| Electronic Documents | [Export reminders and finance charges as PEPPOL files](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/export-reminders-finance-charges-as-peppol-files) | GA |
+||[Use the E-Documents framework with Power Automate and other solutions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-e-documents-power-automate) | GA |
+| | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) | PP |
 
 ## Localization updates
 
