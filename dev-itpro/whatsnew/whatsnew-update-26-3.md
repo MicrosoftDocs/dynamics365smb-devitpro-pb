@@ -23,7 +23,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 |-|-|-|
 | Copilot and agents | [Chat with Copilot to learn how to use installed add-on apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/chat-copilot-learn-use-installed-add-on-apps) | PP  |
 |  | [Automate payables processes with the Payables Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-payables-processes-payables-agent) | PP  |
-| | Capture more sales with enhanced Sales Order Agent (link coming soon)| PP  |
+| | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)| PP  |
 ||[Summarize with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-record-copilot#enhancements-with-update-263-july-update) is faster in update 26.3 and includes a Copy summary option.| PP |
 ||[Autofill with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot) adds improved support for keyboard shortcuts and screen readers.| PP |
 | Country and regional | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) | GA  |
