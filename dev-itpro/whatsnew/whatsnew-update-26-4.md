@@ -2,7 +2,7 @@
 title: Update 26.4 for Microsoft Dynamics 365 Business Central 2025 Release Wave 1
 description: Get an overview of new and changed capabilities in the 26.4 update of Business Central online, which is part of 2025 release wave 1
 ms.author: jswymer
-ms.date: 07/18/2025
+ms.date: 07/21/2025
 ms.reviewer: solsen
 ms.topic: conceptual
 author: jswymer
@@ -52,7 +52,11 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 Starting with 26.3, Business Central server binaries now include the system symbols instead of the **System** extension. As a result, you can't publish `SymbolsOnly` packages by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp). You get a warning if you use the `-SymbolsOnly` parameter with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo). To get information about the system symbols, use the `-Name System` parameter.
 
-### Business Central Launch Event videos on YouTube
+### Business Central 2025 release wave 2 plans published
+
+The release plan for Business Central 2025 release wave 2 is now available. This plan outlines the new features and enhancements scheduled to roll out between October 2025 and March 2026. Explore the full plan and release details at [https://aka.ms/BCreleaseplan](https://aka.ms/BCreleaseplan).
+
+### Business Central 2025 release wave 1 launch event videos on YouTube
 
 The Business Central launch event for the 2025 release wave 1 was held in April 2025. This online event provided information about the new features and enhancements in the 2025 release wave 1 for resellers, partners, ISVs, and consultants. Watch the event videos on YouTube at [aka.ms/BCLE](https://aka.ms/BCLE).
 
@@ -61,7 +65,7 @@ The Business Central launch event for the 2025 release wave 1 was held in April 
 Prepare for features expected to be mandatory in the next release wave (27.0). When these features become mandatory, they might disrupt extensions and apps you install in the future. Work with your partner to update installed extensions and apps before the features are mandatory. These features are optional and can be enabled on the **Feature Management** page in Business Central. Learn more in [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).
 
 - [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
-- [Feature Update: Enable multiple users to post warehouse entries at the same time](/dynamics365/business-central/design-details-warehouse-entries#creating-warehouse-transactions) <!--(/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/allow-more-than-one-user-post-warehouse-entries-at-time)-->
+- [Feature Update: Enable multiple users to post warehouse entries at the same time](/dynamics365/business-central/design-details-warehouse-entries#creating-warehouse-transactions)
 - [Feature: Use optimized text search in lists](/dynamics365/business-central/design-details-warehouse-entries#creating-warehouse-transactions)
 - [Feature Update: Enable use of G/L currency revaluation](/dynamics365/business-central/finance-revalue-account-balances)
 - [Feature: Enable server certificate validation for Http requests](../developer/devenv-httpcertvalid-feature-key.md)
