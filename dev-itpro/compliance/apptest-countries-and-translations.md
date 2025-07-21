@@ -43,7 +43,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Azerbaijan|Partner|W1|Available|AZ|UAE|
 |Bahamas|Partner|W1|Available|BS|Brazil|
 |Bahrain|Partner|W1|Available|BH|UAE|
-|Bangladesh|Partner|W1|Available|BD|Southeast Asia|
+|Bangladesh|Partner|W1|Available|BD|Asia Pacific|
 |Belgium|Microsoft|BE|Available|BE|Europe|
 |Belize|Partner|W1|Available|BZ *3)*|Brazil|
 |Bermuda|Partner|W1|Available|BM|Brazil|
@@ -51,11 +51,11 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Bosnia and Herzegovina|Partner|W1|Available|BA|Europe|
 |Botswana|Partner|W1|Available|BW|South Africa|
 |British Virgin Islands|Partner|W1|Available|VG|Brazil|
-|Brunei|Partner|W1|Available|BN|Southeast Asia|
+|Brunei|Partner|W1|Available|BN|Asia Pacific|
 |Brazil|Partner|W1|Available|BR|Brazil|
 |Bulgaria|Partner|W1|Available|BG|Europe|
 |Burkina Faso|Partner|W1|Available|BF *3)*|South Africa|
-|Cambodia|Partner|W1|Available|KH|Southeast Asia|
+|Cambodia|Partner|W1|Available|KH|Asia Pacific|
 |Cameroon|Partner|W1|Available|CM|South Africa|
 |Canada|Microsoft|NA|Available|CA|Canada|
 |Cape Verde|Partner|W1|Available|CV|South Africa|
@@ -116,23 +116,23 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Kenya|Partner|W1|Available|KE|South Africa|
 |Kosovo|Partner|W1|Available|XK|Europe|
 |Kuwait|Partner|W1|Available|KW|UAE|
-|Laos|Partner|W1|Available|LA *3)*|Southeast Asia|
+|Laos|Partner|W1|Available|LA *3)*|Asia Pacific|
 |Latvia|Partner|W1|Available|LV|Europe|
 |Lebanon|Partner|W1|Available|LB|UAE|
 |Liechtenstein|Partner|CH|Available|LI|Europe|
 |Lithuania|Partner|W1|Available|LT|Europe|
 |Luxembourg|Partner|W1|Available|LU|Europe|
-|Macao (SAR China)|Partner|W1|Available|MO|Southeast Asia|
+|Macao (SAR China)|Partner|W1|Available|MO|Asia Pacific|
 |Madagascar|Partner|W1|Available|MG|South Africa|
 |Malawi|Partner|W1|Available|MW|South Africa|
 |Malaysia|Partner|W1|Available|MY|Asia Pacific|
-|Maldives|Partner|W1|Available|MV|Southeast Asia|
+|Maldives|Partner|W1|Available|MV|Asia Pacific|
 |Mali|Partner|W1|Available|ML *3)*|South Africa|
 |Malta|Partner|W1|Available|MT|Europe|
-|Marshall Islands|Partner|W1|Available|MH *3)*|Southeast Asia|
+|Marshall Islands|Partner|W1|Available|MH *3)*|Asia Pacific|
 |Mauritius|Partner|W1|Available|MU|South Africa|
 |Mexico|Microsoft|NA|Available|MX|United States|
-|Micronesia|Partner|W1|Available|FM|Southeast Asia|
+|Micronesia|Partner|W1|Available|FM|Asia Pacific|
 |Moldova|Partner|W1|Available|MD *3)*|Europe|
 |Monaco|Partner|FR|Available|MC|France|
 |Mongolia|Partner|W1|Available|MN|Asia Pacific|
@@ -141,7 +141,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Morocco|Partner|W1|Available|MA|South Africa|
 |Mozambique|Partner|W1|Available|MZ|South Africa|
 |Namibia|Partner|W1|Available|NA|South Africa|
-|Nepal|Partner|W1|Available|NP|Southeast Asia|
+|Nepal|Partner|W1|Available|NP|Asia Pacific|
 |Netherlands|Microsoft|NL|Available|NL|Europe|
 |New Caledonia|Partner|W1|Available|NC|Australia|
 |New Zealand|Microsoft|NZ|Available|NZ|Australia|
@@ -179,7 +179,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |South Africa|Partner|W1|Available|ZA|South Africa|
 |South Korea|Partner|W1|Available|KR|Korea|
 |Spain|Microsoft|ES|Available|ES|Europe|
-|Sri Lanka|Partner|W1|Available|LK|Southeast Asia|
+|Sri Lanka|Partner|W1|Available|LK|Asia Pacific|
 |Suriname|Partner|W1|Available|SR|Brazil|
 |Sweden|Microsoft|SE *2)*|Available|SE|Sweden|
 |Switzerland|Microsoft|CH|Available|CH|Switzerland|
