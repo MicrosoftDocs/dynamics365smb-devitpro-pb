@@ -21,7 +21,8 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 | Product area | Feature | PP/GA |
 |-|-|-|
-| Country and regional | [Use ZUGFeRD format for E-Documents in Germany](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-zugferd-format-e-documents-germany) | GA  |
+|Copilot and agents|[Autofill with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot#enhancements-with-update-264) can now search the web for publicly-available information to suggest vendor addresses or similar. This functionality is initially available in update 26.4 sandbox environments only.|PA|
+| Country and regional | [Use ZUGFeRD format for E-Documents in Germany](/dynamics365/release-plan/2025wave1/smb/dynamics5-business-central/use-zugferd-format-e-documents-germany) | GA  |
 | Electronic Documents | [Export reminders and finance charges as PEPPOL files](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/export-reminders-finance-charges-as-peppol-files) | GA |
 ||[Use the E-Documents framework with Power Automate and other solutions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-e-documents-power-automate) | GA |
 | | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) | PP |
