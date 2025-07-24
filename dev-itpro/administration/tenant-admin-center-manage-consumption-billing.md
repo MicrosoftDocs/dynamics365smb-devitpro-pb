@@ -5,7 +5,7 @@ author: jobulsin
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, telemetry, billing
-ms.date: 02/26/2025
+ms.date: 06/04/2025
 ms.author: jobulsin
 ms.reviewer: jswymer
 ---
@@ -29,6 +29,7 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 ### Billable agent capabilities
 
+- [Payables Agent](/dynamics365/business-central/payables-agent)
 - [Sales Order Agent](/dynamics365/business-central/sales-order-agent)
 
 ## Set up billing model
