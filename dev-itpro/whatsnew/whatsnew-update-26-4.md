@@ -23,7 +23,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 |-|-|-|
 |Copilot and agents|[Autofill with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot#enhancements-with-update-264) can now search the web for publicly available information to suggest vendor addresses or similar. This functionality is initially available in update 26.4 sandbox environments only.|PA|
 | | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent), with added skills to work with multiple ship-to addresses and suggest alternatives for items that can't be delivered at the desired time. This release lets agent admins configure more autonomous processing of customer requests and gives more options for dealing with ambiguous situations&mdash;providing [more instructions expressed in natural language](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/give-more-instructions-agent-when-review-its-tasks) to help the agent move forward with the task. The Sales Order Agent is now available in more countries/regions and languages, entering public preview in Denmark, Germany, Spain, France, and Italy.| PP  |
-| Country and regional | [Use ZUGFeRD format for E-Documents in Germany](/dynamics365/release-plan/2025wave1/smb/dynamics5-business-central/use-zugferd-format-e-documents-germany) | GA  |
+| Country and regional | [Use ZUGFeRD format for E-Documents in Germany](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-zugferd-format-e-documents-germany)| GA  |
 
 ## Localization updates
 
