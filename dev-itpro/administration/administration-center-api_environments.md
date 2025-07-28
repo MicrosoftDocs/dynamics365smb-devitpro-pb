@@ -18,9 +18,6 @@ Environments are the instances of the application that have been set up for the 
 - Create a new environment using sample data or as a sandbox copy of the production environment
 - Delete an environment.
 
-> [!NOTE]
-> Special care should be taken when deleting a production environment as the data will not be recoverable
-
 ## Get environments and Get environments by application family
 
 Returns a list of all the environments for the tenant.
@@ -54,7 +51,7 @@ Returns a wrapped array of environments.
       "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
       "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment
       "applicationVersion": string, // The version of the environment's application
-      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
+      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active", "Upgrading", "CreatingFailed", "RemovingFailed", "SoftDeleting", "SoftDeletingFailed", "SoftDeleted", "Recovering", "RecoveringFailed")
       "webClientLoginUrl": string, // Url to use to log into the environment,
       "webServiceUrl": string, // Url to use to access the environment's service API
       "locationName": string, // The Azure location where the environment's data is stored
