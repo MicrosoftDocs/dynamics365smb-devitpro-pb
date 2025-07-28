@@ -174,7 +174,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{cou
 #### Example Request
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/AT
+PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/AT
 
 {
     "countryCode": "AT"
@@ -927,13 +927,13 @@ PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-222
 }
 ```
 
-<!--## Endpoints
+<!--
 
 ***
 ### GetCurrentUsersPermissionsAsync
 #### Gets all permissions this request's user has to an app.
 ```
-POST /v1.0/apps/{appId}/getMyPermissions
+POST /v1.4/apps/{appId}/getMyPermissions
 ```
 #### Parameters
 |Type|Name|Description|Schema|
