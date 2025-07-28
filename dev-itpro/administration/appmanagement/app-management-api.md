@@ -12,8 +12,6 @@ ms.reviewer: jswymer
 
 [!INCLUDE[2020_releasewave1](../../includes/2020_releasewave1.md)]
 
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
-
 ## Entities
 
 ## App
