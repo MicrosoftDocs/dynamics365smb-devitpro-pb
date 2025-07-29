@@ -81,7 +81,7 @@ On the **SL Company Migration Configuration** page, you can choose to migrate hi
 - SL Hist. PurOrdDet
 - SL Hist. POReceipt
 - SL Hist. POTran
-- SL Hist. SOHeader
+- SL Hist. SOHeader 
 - SL Hist. SOLine
 - SL Hist. SOShipHeader
 - SL Hist. SOShipLine
@@ -90,6 +90,14 @@ On the **SL Company Migration Configuration** page, you can choose to migrate hi
 You can limit the data migrated in the snapshot by entering the latest year in SL that you want to bring over. Enter this year in the **Oldest Snapshot Year** field on the **SL Company Migration Configuration** page.  
 
 The **SL Historical Snapshot** runs as a background process after the migration is complete. The status of the SL Historical Snapshot data can be viewed in Fact boxes on the **Cloud Migration Management** page.
+
+## Project Master records from the Project Controller module
+
+On the **SL Company Migration Configuration** page, select the option to migrate **Project Controller** master data, which includes **Projects**, **Tasks**, and **Resources**.
+
+- **Resources** may include **Project Employees** or other **Resources**, and can be migrated if they are in either **Active** or **On Hold** status, based on the configuration settings.
+- **Projects** are eligible for migration if they are in either **Active** or **Plan** status, based on the configuration settings.
+- **Tasks** can be migrated only if they are in an **Active** status, based on the configuration settings.
 
 ## Next steps
 
