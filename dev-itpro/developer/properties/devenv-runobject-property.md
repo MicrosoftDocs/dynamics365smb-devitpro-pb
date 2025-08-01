@@ -39,7 +39,7 @@ Use the following properties to set parameters for the object you want to run:
 - [RunPageLink property](devenv-runpagelink-property.md)  
 
 > [!NOTE]
-> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 1, actions that have the `RunObject` property specified, use the `Caption`, `ToolTip`, `AboutText`, and `AboutTitle` properties of the *targeted application object*, if none of these properties are specified on the action itself. This ensures consistency and reuse. You can override these values by specifically setting them on the action.
+> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2025 release wave 1, actions on role centers that have the `RunObject` property specified, use the `Caption`, `ToolTip`, `AboutText`, and `AboutTitle` properties of the *targeted application object*, if none of these properties are specified on the action itself. This ensures consistency and reuse. You can override these values by specifically setting them on the action.
 
 ## Related information
 
