@@ -7,7 +7,9 @@ ms.service: dynamics-365-op
 ms.date: 06/13/2025
 ms.author: jswymer
 ms.reviewer: solsen
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 
 # Configure Business Central Server

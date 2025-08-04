@@ -3,6 +3,7 @@ title: "Technical Upgrade From Version 14 to Version 18"
 description: Describes how to do a technical upgrade from Business Central 14 to 18
 ms.custom: evergreen
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer

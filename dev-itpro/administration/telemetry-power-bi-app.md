@@ -7,7 +7,9 @@ ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/21/2024
 ms.author: jswymer
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 
 ---
 

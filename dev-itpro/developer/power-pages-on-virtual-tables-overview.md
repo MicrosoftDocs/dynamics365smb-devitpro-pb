@@ -6,7 +6,9 @@ ms.reviewer: jswymer #Required; Microsoft alias of content publishing team membe
 ms.topic: how-to #Required; don't change.
 ms.collection: 
 ms.date: 11/22/2023
-ms.custom: bap-template #Required; don't change.
+ms.custom:
+  - bap-template #Required; don't change.
+  - sfi-image-nochange
 ---
 
 # Power Pages on virtual tables (preview)

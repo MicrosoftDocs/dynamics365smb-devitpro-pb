@@ -7,6 +7,7 @@ ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 06/21/2024
+ms.custom: sfi-ropc-blocked
 ---
 
 # The Business Central Admin Center API

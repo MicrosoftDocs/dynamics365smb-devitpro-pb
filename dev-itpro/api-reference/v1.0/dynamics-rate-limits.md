@@ -3,6 +3,7 @@ title: Working with API limits in Dynamics 365 Business Central (v1.0)
 description: Describes working with current API limits in Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 05/01/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 ms.author: solsen
 ms.custom: evergreen

@@ -7,8 +7,9 @@ ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 07/16/2025
+ms.custom: sfi-ga-nochange
 ---
-# Business Central Admin Center API - Environment Settings
+# Business Central admin center API - environment settings
 
 [!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 

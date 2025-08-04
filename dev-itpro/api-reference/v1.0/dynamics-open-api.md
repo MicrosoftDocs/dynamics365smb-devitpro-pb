@@ -3,6 +3,7 @@ title: (v1.0) OpenAPI specification
 description: (v1.0) OpenAPI specification for Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 05/01/2024
+ms.update-cycle: 1095-days
 ms.topic: reference
 ms.author: solsen
 ms.custom: evergreen

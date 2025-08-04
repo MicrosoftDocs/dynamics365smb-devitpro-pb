@@ -4,6 +4,7 @@ ms.topic: include
 ms.date: 11/01/2024
 ms.author: jswymer
 ms.reviewer: jswymer
+ms.custom: sfi-ga-nochange
 ---
 
 Delegated administrators aren't visible in the customer's Microsoft Entra ID user list and can't be managed by the customer's internal admin. However, when a delegated administrator logs into a [!INCLUDE [prod_short](prod_short.md)] environment, they're automatically created as a user in the environment. This way, the actions performed by a delegated administrator, such as posting documents, are logged and associated with their user ID.
