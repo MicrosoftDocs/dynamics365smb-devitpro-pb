@@ -1,8 +1,8 @@
 ---
-title: Country/regional availability and supported languages
-description: Overview of availability and supported languages.
+title: Country/Regional Availability and Supported Languages
+description: Learn where Business Central is available, which languages are supported, and how partners deliver localized solutions through Microsoft commercial marketplace.
 author: sorenfriisalexandersen
-ms.date: 09/16/2024
+ms.date: 08/04/2025
 ms.reviewer: jswymer
 ms.topic: article
 ms.author: altotovi
@@ -13,21 +13,21 @@ ms.custom: references_regions
 
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.  
 
-In countries/regions where Microsoft hasn't delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
+In countries/regions where Microsoft doesn't deliver a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
 
 > [!NOTE]
 > There are countries/regions with more than one partner providing the translation and localization apps. Additionally, in some cases, the localization provided by the partner can consist of more than one app on AppSource.
 
-The environment localization determines the Azure Geography to which the environment database will be deployed. Environment databases may live in 
+The environment localization determines the Azure geography to which the environment database is deployed.
 
-The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability. The table also specifies the abbreviation of the relevant country-specific environment, whether the localization is provided by Microsoft or partner(s), and to which Azure Geography environment databases with the localization will be deployed. Each Geography consists of one or more Azure Regions, see the [Azure regions list](/azure/reliability/regions-list) to find regions, paired regions, and physical locations.
+The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability. The table also specifies the abbreviation of the relevant country-specific environment, whether Microsoft or partners provide the localization, and to which Azure geography environment databases with the localization are deployed. Each geography consists of one or more Azure regions. Refer to [Azure regions list](/azure/reliability/regions-list) to find regions, paired regions, and physical locations.
 
 > [!NOTE]
-> Availability in the list concerns [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] online. It does not apply to partner localizations. Please check [partner localization app availability on AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1).  
+> Availability in the list concerns [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] online. It doesn't apply to partner localizations. Check [partner localization app availability on AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1).  
 
 ## Countries and regions
 
-| Country/Region | Localized by | BaseApp | Availability | Environment Country Abbreviation | Azure Geography |
+| Country/region | Localized by | Base app | Availability | Environment country abbreviation | Azure geography |
 |----------------|--------------|---------| -------------|----------------------------------|-----------------|
 |Albania|Partner|W1|Available|AL|Europe|
 |Algeria|Partner|W1|Available|DZ|South Africa|
@@ -45,7 +45,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Bahrain|Partner|W1|Available|BH|UAE|
 |Bangladesh|Partner|W1|Available|BD|Asia Pacific|
 |Belgium|Microsoft|BE|Available|BE|Europe|
-|Belize|Partner|W1|Available|BZ *3)*|Brazil|
+|Belize|Partner|W1|Available|BZ <sup>3</sup>|Brazil|
 |Bermuda|Partner|W1|Available|BM|Brazil|
 |Bolivia|Partner|W1|Available|BO|Brazil|
 |Bosnia and Herzegovina|Partner|W1|Available|BA|Europe|
@@ -54,7 +54,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Brunei|Partner|W1|Available|BN|Asia Pacific|
 |Brazil|Partner|W1|Available|BR|Brazil|
 |Bulgaria|Partner|W1|Available|BG|Europe|
-|Burkina Faso|Partner|W1|Available|BF *3)*|South Africa|
+|Burkina Faso|Partner|W1|Available|BF <sup>3</sup>|South Africa|
 |Cambodia|Partner|W1|Available|KH|Asia Pacific|
 |Cameroon|Partner|W1|Available|CM|South Africa|
 |Canada|Microsoft|NA|Available|CA|Canada|
@@ -82,13 +82,13 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Fiji|Partner|W1|Available|FJ|Australia|
 |Finland|Microsoft|FI|Available|FI|Europe|
 |France|Microsoft|FR|Available|FR|France|
-|French Polynesia|Partner|W1|Available|PF *3)*|Australia|
-|Gabon|Partner|W1|Available|GA *3)*|South Africa|
-|Gambia|Partner|W1|Available|GM *3)*|South Africa|
+|French Polynesia|Partner|W1|Available|PF <sup>3</sup>|Australia|
+|Gabon|Partner|W1|Available|GA <sup>3</sup>|South Africa|
+|Gambia|Partner|W1|Available|GM <sup>3</sup>|South Africa|
 |Georgia|Partner|W1|Available|GE|Europe|
 |Germany|Microsoft|DE|Available|DE|Germany|
 |Ghana|Partner|W1|Available|GH|South Africa|
-|Gibraltar|Partner|W1|Available|GI *3)*|Europe|
+|Gibraltar|Partner|W1|Available|GI <sup>3</sup>|Europe|
 |Greece|Partner|W1|Available|GR|Europe|
 |Greenland (Denmark)|Microsoft|W1|Available|DK|Europe|
 |Grenada|Partner|W1|Available|GD|Brazil|
@@ -101,7 +101,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Honduras|Partner|W1|Available|HN|Brazil|
 |Hong Kong SAR|Partner|W1|Available|HK|Asia Pacific|
 |Hungary|Partner|W1|Available|HU|Europe|
-|Iceland|Microsoft|IS *1)*|Available|IS|Europe|
+|Iceland|Microsoft|IS <sup>1</sup>|Available|IS|Europe|
 |India|Microsoft|W1|Available|IN|India|
 |Indonesia|Partner|W1|Available|ID|Asia Pacific|
 |Ireland|Partner|W1|Available|IE|Europe|
@@ -116,7 +116,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Kenya|Partner|W1|Available|KE|South Africa|
 |Kosovo|Partner|W1|Available|XK|Europe|
 |Kuwait|Partner|W1|Available|KW|UAE|
-|Laos|Partner|W1|Available|LA *3)*|Asia Pacific|
+|Laos|Partner|W1|Available|LA <sup>3</sup>|Asia Pacific|
 |Latvia|Partner|W1|Available|LV|Europe|
 |Lebanon|Partner|W1|Available|LB|UAE|
 |Liechtenstein|Partner|CH|Available|LI|Europe|
@@ -127,16 +127,16 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Malawi|Partner|W1|Available|MW|South Africa|
 |Malaysia|Partner|W1|Available|MY|Asia Pacific|
 |Maldives|Partner|W1|Available|MV|Asia Pacific|
-|Mali|Partner|W1|Available|ML *3)*|South Africa|
+|Mali|Partner|W1|Available|ML <sup>3</sup>|South Africa|
 |Malta|Partner|W1|Available|MT|Europe|
-|Marshall Islands|Partner|W1|Available|MH *3)*|Asia Pacific|
+|Marshall Islands|Partner|W1|Available|MH <sup>3</sup>|Asia Pacific|
 |Mauritius|Partner|W1|Available|MU|South Africa|
 |Mexico|Microsoft|NA|Available|MX|United States|
 |Micronesia|Partner|W1|Available|FM|Asia Pacific|
-|Moldova|Partner|W1|Available|MD *3)*|Europe|
+|Moldova|Partner|W1|Available|MD <sup>3</sup>|Europe|
 |Monaco|Partner|FR|Available|MC|France|
 |Mongolia|Partner|W1|Available|MN|Asia Pacific|
-|Montserrat|Partner|W1|Available|MS *3)*|Brazil|
+|Montserrat|Partner|W1|Available|MS <sup>3</sup>|Brazil|
 |Montenegro|Partner|W1|Available|ME|Europe|
 |Morocco|Partner|W1|Available|MA|South Africa|
 |Mozambique|Partner|W1|Available|MZ|South Africa|
@@ -163,9 +163,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Qatar|Partner|W1|Available|QA|UAE|
 |Romania|Partner|W1|Available|RO|Europe|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|N/A|
-|Saint Kitts and Nevis|Partner|W1|Available|KN *3)*|Brazil|
-|Saint Lucia|Partner|W1|Available|LC *3)*|Brazil|
-|Saint Vincent and the Grenadines|Partner|W1|Available|VC *3)*|Brazil|
+|Saint Kitts and Nevis|Partner|W1|Available|KN <sup>3</sup>|Brazil|
+|Saint Lucia|Partner|W1|Available|LC <sup>3</sup>|Brazil|
+|Saint Vincent and the Grenadines|Partner|W1|Available|VC <sup>3</sup>|Brazil|
 |Samoa|Partner|W1|Available|WS|Australia|
 |San Marino|Partner|IT|Available|SM|Europe|
 |Sao Tome & Principe|Partner|W1|Available|ST|South Africa|
@@ -181,7 +181,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Spain|Microsoft|ES|Available|ES|Europe|
 |Sri Lanka|Partner|W1|Available|LK|Asia Pacific|
 |Suriname|Partner|W1|Available|SR|Brazil|
-|Sweden|Microsoft|SE *2)*|Available|SE|Sweden|
+|Sweden|Microsoft|SE <sup>2</sup>|Available|SE|Sweden|
 |Switzerland|Microsoft|CH|Available|CH|Switzerland|
 |Taiwan|Partner|W1|Available|TW|Asia Pacific|
 |Tanzania|Partner|W1|Available|TZ|South Africa|
@@ -189,28 +189,29 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Trinidad and Tobago|Partner|W1|Available|TT|Brazil|
 |Tunisia|Partner|W1|Available|TN|South Africa|
 |Türkiye|Partner|W1|Available|TR|UAE|
-|Turks and Caicos Islands|Partner|W1|Available|TC *3)*|Brazil|
+|Turks and Caicos Islands|Partner|W1|Available|TC <sup>3</sup>|Brazil|
 |Uganda|Partner|W1|Available|UG|South Africa|
 |Ukraine|Partner|W1|Available|UA|Europe|
 |United Arab Emirates|Partner|W1|Available|AE|UAE|
 |United Kingdom|Microsoft|GB|Available|GB|United Kingdom|
 |United States|Microsoft|NA|Available|US|United States|
-|U.S. Virgin Islands|Partner|W1|Available|VI *3)*|Brazil|
+|U.S. Virgin Islands|Partner|W1|Available|VI <sup>3</sup>|Brazil|
 |Uruguay|Partner|W1|Available|UY|Brazil|
-|Uzbekistan|Partner|W1|Available|UZ *3)*|UAE|
+|Uzbekistan|Partner|W1|Available|UZ <sup>3</sup>|UAE|
 |Vanuatu|Partner|W1|Available|VU|Australia|
-|Vatican City|Partner|IT|Available|VA *3)*|Europe|
+|Vatican City|Partner|IT|Available|VA <sup>3</sup>|Europe|
 |Vietnam|Partner|W1|Available|VN|Asia Pacific|
-|Yemen|Partner|W1|Available|YE *3)*|UAE|
+|Yemen|Partner|W1|Available|YE <sup>3</sup>|UAE|
 |Zambia|Partner|W1|Available|ZM|South Africa|
 |Zimbabwe|Partner|W1|Available|ZW|South Africa|
 
 > [!NOTE]
-> *1) BaseApp for Iceland has been migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2 (23.3). Current localization features will be available as apps. Existing users can enable new features through the **Feature Management**.*
-> 
-> *2) BaseApp for Sweden has been migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1. Current localization features will be available as apps. Existing users can enable new features through the **Feature Management**.*
-> 
-> *3) This country is available for deployment and transactions, but marketplace availability has been postponed. Therefore, ISV solutions from AppSource will not be accessible until further notice.*
+>
+> <sup>1</sup> BaseApp for Iceland was migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2 (23.3). Current localization features are available as apps. Existing users can enable new features through the **Feature Management**.
+>
+> <sup>2</sup> BaseApp for Sweden was migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1. Current localization features are available as apps. Existing users can enable new features through the **Feature Management**.
+>
+> <sup>1</sup> This country is available for deployment and transactions, but marketplace availability is postponed. Therefore, ISV solutions from AppSource aren't accessible until further notice.
 
 Learn more about the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available at [Product availability](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport).
 
@@ -218,15 +219,16 @@ Administrators can use the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_m
 
 ## Important information regarding planned availability
 
-Due to the nature of the joint effort where Microsoft is providing the international (W1) cloud service and partners are providing localization app(s), the above planned availability estimates represent the earliest possible availability and can be exceeded if localization partners haven't successfully published their app(s) to AppSource by this time.  
+Due to the nature of the joint effort where Microsoft is providing the international (W1) cloud service and partners are providing localization apps, the planned availability estimates represent the earliest possible availability. These estimates can be exceeded if localization partners don't successfully publish their apps to AppSource by this time.  
+
 
 ## Supported languages
 
-To maximize productivity [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] supports many languages.
+To maximize productivity, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] supports many languages.
 It's important to know that language support requires translation of *platform* captions and *application* captions (UI). 
-Translated platform captions are provided by Microsoft for most of the available languages. Application languages are provided by both Microsoft and partners, depending on the language. 
+Translated platform captions are provided by Microsoft for most of the available languages. Application languages are provided by both Microsoft and partners, depending on the language.
 
-Application languages delivered by Microsoft are provided as language apps that can be installed as needed. These language apps are available on AppSource. Partners can also provide application translation for any platform supported language and for those languages that aren't supported by Microsoft. To use one of those languages, contact the app publisher through AppSource.  
+Application languages delivered by Microsoft are provided as language apps that can be installed as needed. These language apps are available on AppSource. Partners can also provide application translation for any platform supported language and for those languages that Microsoft doesn't support. To use one of those languages, contact the app publisher through AppSource.  
 
 This table gives an overview of supported platform and application languages, and how application languages are provided.
 
@@ -289,7 +291,7 @@ This table gives an overview of supported platform and application languages, an
 |Vietnamese (Vietnam)|vi-VN|Available|Partner, Available on AppSource|| 
 
 > [!NOTE]  
-> Application translations provided by Microsoft cover features in the international version (W1). Local functionality isn't translated to all languages and will be provided in English and native language, as has been done historically. As a result, you may experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
+> Application translations provided by Microsoft cover features in the international version (W1). Local functionality isn't translated to all languages and is provided in English and native language, as done historically. As a result, you might experience a mix of translations if using [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] in a foreign language.
 
 ## Related information
 
