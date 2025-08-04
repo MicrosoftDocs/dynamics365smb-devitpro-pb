@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.date: 06/24/2025
+ms.date: 08/04/2025
 ms.topic: article
 ms.custom: bap-template
 ---
@@ -28,21 +28,22 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|[5061916](https://support.microsoft.com/help/5061916)|Update 24.15 |July 2025|Application Build 24.15</br>Platform Build 24.0|
-|[5061916](https://support.microsoft.com/help/5061916)|Update 24.14 |June 2025|Application Build 24.14.34725</br>Platform Build 24.0.34688|
-|[5059413](https://support.microsoft.com/help/5059413)|Update 24.13 |May 2025|Application Build 24.13.33364</br>Platform Build 24.0.33226|
-|[5056717](https://support.microsoft.com/help/5056717)|Update 24.12 |April 2025|Application Build 24.12.32447</br>Platform Build 24.0.32305|
-|[5054447](https://support.microsoft.com/help/5054447)|Update 24.11 |March 2025|Application Build 24.11.30823</br>Platform Build 24.0.30734|
-|[5052986](https://support.microsoft.com/help/5052986)|Update 24.10 |February 2025|Application Build 24.10.29654</br>Platform Build 24.0.29618|
-|[5050248](https://support.microsoft.com/help/5050248)|Update 24.9 |January 2025|Application Build 24.9.29403</br>Platform Build 24.0.29367|
-|[5049395](https://support.microsoft.com/help/5049395)|Update 24.8 |December 2024|Application Build 24.8.27723</br>Platform Build 24.0.2767|
-|[5047903](https://support.microsoft.com/help/5047903)|Update 24.7 |November 2024|Application Build 24.7.25890</br>Platform Build 24.0.25868|
-|[5046146](https://support.microsoft.com/help/5046146)|Update 24.6 |October 2024|Application Build 24.6.24785</br>Platform Build 24.0.24762|
-|[5043981](https://support.microsoft.com/help/5043981)|Update 24.5 |September 2024|Application Build 24.5.23968</br>Platform Build 24.0.23888|
-|[5042530](https://support.microsoft.com/help/5042530)|Update 24.4 |August 2024|Application Build 24.4.22925</br>Platform Build 24.0.22865|
-|[5041133](https://support.microsoft.com/help/5041133)|Update 24.3 |July 2024|Application Build 24.3.21517</br>Platform Build 24.0.21458|
-|[5040044](https://support.microsoft.com/help/5040044)|Update 24.2 |June 2024|Application Build 24.2.20424</br>Platform Build 24.0.20409|
-|[5038531](https://support.microsoft.com/help/5038531)|Update 24.1 |May 2024|Application Build 24.1.19498</br>Platform Build 24.0.19487|
+|[5064777](https://support.microsoft.com/help/5064777)|Update 24.16 |August 2025|Application Build 24.16.37176, Platform Build 24.0.37136|
+|[5061916](https://support.microsoft.com/help/5063360)|Update 24.15 |July 2025|Application Build 24.15.35999, Platform Build 24.0.35915|
+|[5061916](https://support.microsoft.com/help/5061916)|Update 24.14 |June 2025|Application Build 24.14.34725, Platform Build 24.0.34688|
+|[5059413](https://support.microsoft.com/help/5059413)|Update 24.13 |May 2025|Application Build 24.13.33364, Platform Build 24.0.33226|
+|[5056717](https://support.microsoft.com/help/5056717)|Update 24.12 |April 2025|Application Build 24.12.32447, Platform Build 24.0.32305|
+|[5054447](https://support.microsoft.com/help/5054447)|Update 24.11 |March 2025|Application Build 24.11.30823, Platform Build 24.0.30734|
+|[5052986](https://support.microsoft.com/help/5052986)|Update 24.10 |February 2025|Application Build 24.10.29654, Platform Build 24.0.29618|
+|[5050248](https://support.microsoft.com/help/5050248)|Update 24.9 |January 2025|Application Build 24.9.29403, Platform Build 24.0.29367|
+|[5049395](https://support.microsoft.com/help/5049395)|Update 24.8 |December 2024|Application Build 24.8.27723, Platform Build 24.0.2767|
+|[5047903](https://support.microsoft.com/help/5047903)|Update 24.7 |November 2024|Application Build 24.7.25890, Platform Build 24.0.25868|
+|[5046146](https://support.microsoft.com/help/5046146)|Update 24.6 |October 2024|Application Build 24.6.24785, Platform Build 24.0.24762|
+|[5043981](https://support.microsoft.com/help/5043981)|Update 24.5 |September 2024|Application Build 24.5.23968, Platform Build 24.0.23888|
+|[5042530](https://support.microsoft.com/help/5042530)|Update 24.4 |August 2024|Application Build 24.4.22925, Platform Build 24.0.22865|
+|[5041133](https://support.microsoft.com/help/5041133)|Update 24.3 |July 2024|Application Build 24.3.21517, Platform Build 24.0.21458|
+|[5040044](https://support.microsoft.com/help/5040044)|Update 24.2 |June 2024|Application Build 24.2.20424, Platform Build 24.0.20409|
+|[5038531](https://support.microsoft.com/help/5038531)|Update 24.1 |May 2024|Application Build 24.1.19498, Platform Build 24.0.19487|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
