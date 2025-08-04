@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.date: 07/18/2025
+ms.date: 08/04/2025
 ms.topic: article
 ms.custom: bap-template
 ---
@@ -28,7 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|[5064777](https://support.microsoft.com/help/5064777)|Update 24.16 |August 2025|Application Build 24.16, Platform Build 24.0|
+|[5064777](https://support.microsoft.com/help/5064777)|Update 24.16 |August 2025|Application Build 24.16.37176, Platform Build 24.0.37136|
 |[5061916](https://support.microsoft.com/help/5063360)|Update 24.15 |July 2025|Application Build 24.15.35999, Platform Build 24.0.35915|
 |[5061916](https://support.microsoft.com/help/5061916)|Update 24.14 |June 2025|Application Build 24.14.34725, Platform Build 24.0.34688|
 |[5059413](https://support.microsoft.com/help/5059413)|Update 24.13 |May 2025|Application Build 24.13.33364, Platform Build 24.0.33226|
