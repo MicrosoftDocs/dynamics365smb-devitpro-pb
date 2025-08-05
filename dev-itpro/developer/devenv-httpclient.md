@@ -99,7 +99,7 @@ If an app or per-tenant extension needs to selectively disable certificate valid
 
 If you need to debug failing HTTP calls due to server certificates that fail to be validated, telemetry is emitted if there are certificate validation failures. Learn more in [Analyzing server certificate validation errors with telemetry](../administration/telemetry-webservices-outgoing-certificate-validation-errors.md).
 
-The ability to disable certificate validation is controlled by the [HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md) to allow app and per-tenant extension publishers to modify their code. In version 27, certificate validation is enabled by default without the ability to switch it off.
+With version 27, the server certificate validation is enforced, and the only way to disable it is through the [HttpClient.UseServerCertificateValidation(Boolean) method](methods-auto/httpclient/httpclient-useservercertificatevalidation-method.md). In versions prior to version 27, the server certificate validation is controlled by the [HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md), which allows app and per-tenant extension publishers to modify their code.
 
 ### Supported HTTP methods
 
