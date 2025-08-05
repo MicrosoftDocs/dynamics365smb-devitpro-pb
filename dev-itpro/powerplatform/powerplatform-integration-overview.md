@@ -14,7 +14,7 @@ Integrating [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Mi
 
 ## Business Central connector for Power Platform
 
-A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Power Automate, Power Apps, and Logic apps to communicate with [!INCLUDE[prod_short](../includes/prod_short.md)] through REST APIs (this is another reason for using REST APIs compared to OData/SOAP enabled pages/queries/codeunits).
+A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Copilot Studio, Power Automate, Power Apps, and Azure Logic Apps to communicate with [!INCLUDE[prod_short](../includes/prod_short.md)] through REST APIs (this is another reason for using REST APIs compared to OData/SOAP enabled pages/queries/codeunits).
 
 [![Shows how the Power Platform connector integrates to Business Central](../developer/media/power-platform-connector-diagram.svg)](../developer/media/power-platform-connector-diagram.svg#lightbox)
 
@@ -26,9 +26,11 @@ You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microso
 
 For more information, see [Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)
 
-## Integrating Business Central with Microsoft Power Automate
+## Integrating Business Central with Microsoft Power Automate and Azure Logic Apps
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Automate by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Automate, you can set up and use flows to connect business-process tasks performed by different users. System tasks, such as automatic posting, can be included as steps in flows, preceded or followed by user tasks. Requesting and granting approval to create new records are typical flow steps.
+
+The [!INCLUDE[prod_short](../includes/prod_short.md)] integration with Azure Logic Apps is very similar, but allows for more advanced control over the deployment and consumption of your automation. Nearly all of the functionality of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector is identical between Power Automate and Azure Logic Apps.
 
 For more information, see [Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)
 

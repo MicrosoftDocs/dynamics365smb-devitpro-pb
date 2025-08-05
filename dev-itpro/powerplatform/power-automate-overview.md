@@ -45,12 +45,12 @@ A *connector* is a proxy or a wrapper around an API that allows the underlying s
 
 [![Shows how the Power Platform connector integrates to Business Central](../developer/media/power-platform-connector-diagram.svg)](../developer/media/power-platform-connector-diagram.svg#lightbox)
 
-The Dynamics 365 Business Central includes several *triggers* and *actions* for building flows. Triggers are events in Business Central that start a flow, like when a record is created or deleted. Starting in 2023 release wave 2, the connector also supports starting flows based on a [business event](../developer/business-events-overview.md) via the [When a business event occurs (V3)](/connectors/dynamicssmbsaas/#when-a-business-event-occurs-(v3)-(preview)) trigger. Actions run an operation after a trigger, like getting a record.
+The Dynamics 365 Business Central includes several *triggers* and *actions* for building flows. Triggers are events in Business Central that start a flow, like when a record is created or deleted. Alternatively, the connector supports starting flows based on a [business event](../developer/business-events-overview.md) via the [When a business event occurs (V3)](/connectors/dynamicssmbsaas/#when-a-business-event-occurs-(v3)-(preview)) trigger. Actions run an operation after a trigger, like getting a record.
 
 Business Central connector can also initiate actions provided through other connectors. For example, sending an email using Office 365 connector or starting a chat in Teams using the Microsoft Teams connector.
 
 > [!NOTE]
-> The connector currently doesn't support service-to-service (S2S) authentication.  This also applies to Power Automate, Azure Logic Apps, and Power Apps. Partners interested in such scenarios must for now rely on the OData connector.
+> The connector currently doesn't support service-to-service (S2S) authentication. It also does not support Service Principal authentication. This applies when the connector is used in any of the Power Platform products, including Copilot Studio, Power Automate, Azure Logic Apps, and Power Apps. Partners interested in such scenarios must for now rely on the OData connector.
 
 ## What users can do from inside Business Central
 
