@@ -20,7 +20,7 @@ See the release plans for what's coming. Choose the following links to learn abo
 
 Keep track of changes on the [Dynamics 365 Business Central release planner](https://experience.dynamics.com/releaseplans/?app=Business+Central) site, or download the release plan as a single PDF.  
 
-Explore the app at the [Dynamics 365 Business Central Capabilities](https://dynamics.microsoft.com/business-central/overview/) site.
+Explore the app at the [Dynamics 365 Business Central Capabilities](https://www.microsoft.com/dynamics-365/products/business-central/) site.
 
 ## Releases of Dynamics 365 Business Central
 
