@@ -2,11 +2,12 @@
 title: Delegated admin access to Business Central online
 description: Learn how to help customers easily manage their Business Central online and get the technical support they need as their reselling partner.  
 author: jswymer
-ms.topic: conceptual
+ms.topic: article
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 11/01/2024
 ms.author: jswymer
 ms.reviewer: jswymer
+ms.custom: sfi-ga-nochange
 ---
 
 # Delegated administrator access to Business Central Online

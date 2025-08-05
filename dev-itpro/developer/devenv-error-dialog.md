@@ -1,13 +1,15 @@
 ---
 title: Understanding the error dialog
 description: Understand the different parts the error dialog to be able to help mitigate issues for users 
-ms.custom: bap-template
 ms.date: 01/03/2024
 ms.reviewer: jswymer
 
-ms.topic: conceptual
+ms.topic: how-to
 author: kennienp
 ms.author: kepontop
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Understanding the error dialog

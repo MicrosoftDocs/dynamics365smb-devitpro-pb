@@ -2,7 +2,7 @@
 title: Configure context-sensitive help
 description: Learn about how to add context-sensitive help to your Business Central solution, both as an app publisher, an administrator, and as a developer.
 author: SusanneWindfeldPedersen
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: solsen
 ms.date: 01/03/2024
 ms.reviewer: solsen
@@ -30,7 +30,7 @@ Specify where the Help for your functionality is published in the *contextSensit
 
 In this example, when the user is using your app's functionality, the *contextSensitiveHelpUrl* property specifies that the links to Help will go to the *mysite.com* site. When the user is using functionality from the base application, then the Help calls will go to the *learn.microsoft.com* site.  
 
-If your app only supports a limited number of locales, you can specify that and shown in the following example:
+If your app only supports a limited number of locales, you can specify that, as shown in the following example:
 
 ```json
   "contextSensitiveHelpUrl": "https://mysite.com/{0}/documentation/",

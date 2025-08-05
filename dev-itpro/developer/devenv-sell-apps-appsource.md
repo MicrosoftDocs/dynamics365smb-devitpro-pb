@@ -3,10 +3,12 @@ title: Selling Business Central apps through AppSource
 description: Learn how to enable transactability in AppSource and through CSP for Business Central apps.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.custom: bap-template
 ms.date: 04/15/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.reviewer: solsen
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Selling Business Central apps through AppSource
@@ -16,6 +18,9 @@ ms.reviewer: solsen
 To sell your [!INCLUDE [prod_short](includes/prod_short.md)] app through AppSource, you must first define offers and plans in Partner Center, and map those plans to functionality in your app. Once the transact option is enabled, you can define plans, or variants, of the offer. The plans can then be used to sell various levels of functionality, such as Gold, Silver, and Bronze variants at different prices. Plans can also be used for waterfall pricing, that is when selling the same level of functionality with a discount based on the number of users bought. With waterfall pricing, the price per user decreases as the number of users increases. For each plan, you define the market specifically. The markets supported are the same as the markets supported for Business Central.
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, transactability based on credit card payment and *per-user licensing* is available for AppSource apps. This means that customers can purchase your app directly in AppSource. The purchase is then automatically provisioned in the customer's Microsoft admin center, and the customer can assign the app licenses to individual users. <!-- For information about Microsoft admin center, see []().-->
+
+> [!NOTE]
+> AppSource transactability aligns with the broader approach to selling cloud offerings. Similar to how customers can assign [!INCLUDE [prod_short](includes/prod_short.md)] licenses to specific users in Microsoft Entra, they can also assign licenses for your app to selected [!INCLUDE [prod_short](includes/prod_short.md)] users. The number of [!INCLUDE [prod_short](includes/prod_short.md)] users may differ from the number of licenses for your app, there is no support for keeping the two in alignment. In some cases, you may need to reconsider your licensing model before enabling transactability for your app.
 
 For pricing, you can optionally decide to define minimum and maximum number of users for the plan. And for billing terms, you can decide to offer monthly and yearly billing, with the option for the customer to choose recurring billing. Under **Free Trial**, you can optionally define a free trial period for the plan. The free trial period is one month, and is automatically enabled for the customer when they purchase the plan in AppSource. Should the customer choose to cancel the subscription during the free trial period, they won't be charged.
 

@@ -1,8 +1,8 @@
 ---
 title: "JsonObject.WriteToYaml(OutStream) Method"
-description: "Serializes and writes content the JsonObject as YAML text to a given OutStream object."
+description: "Serializes and writes the content of the JsonObject as YAML text to a given OutStream object."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 06/10/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -13,7 +13,7 @@ ms.reviewer: solsen
 # JsonObject.WriteToYaml(OutStream) Method
 > **Version**: _Available or changed with runtime version 14.3._
 
-Serializes and writes content the JsonObject as YAML text to a given OutStream object.
+Serializes and writes the content of the JsonObject as YAML text to a given OutStream object.
 
 
 ## Syntax

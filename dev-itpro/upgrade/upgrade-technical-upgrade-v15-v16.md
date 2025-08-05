@@ -2,7 +2,8 @@
 title: "Technical upgrade from version 15 to version 16" 
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 description: Upgrade from Business Central 2019 (v15) to 2020 (v16) with our comprehensive guide. Learn about prerequisites, database preparation, and post-upgrade tasks.

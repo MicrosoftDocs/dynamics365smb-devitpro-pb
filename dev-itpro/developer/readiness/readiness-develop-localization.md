@@ -4,7 +4,7 @@ description: Comply with regulatory requirements in Dynamics 365 Business Centra
 author: sorenfriisalexandersen
 ms.date: 04/14/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ---
 

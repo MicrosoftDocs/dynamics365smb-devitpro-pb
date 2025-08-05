@@ -3,8 +3,9 @@ title: Events in Microsoft Dynamics 365 Business Central
 description: Events are a programming concept that can ease application upgrade and limit the code modifications in customized applications during platform changes. 
 author: jswymer
 ms.author: solsen
-ms.date: 01/30/2025
-ms.topic: conceptual
+ms.date: 04/24/2025
+ms.update-cycle: 1095-days
+ms.topic: article
 ms.reviewer: solsen
 ms.custom: evergreen
 ---
@@ -32,6 +33,9 @@ The following table describes all the different event types:
 
 The process for implementing these events is slightly different. To learn about the different types, see [Event types](devenv-event-types.md).
 
+> [!TIP]
+> Business Central supports external business events (preview), defined with the attribute `ExternalBusinessEvent`. These events notify external systems when high-level business processes occur and behave differently from other event types. Learn more in [Business events on Business Central (preview)](business-events-overview.md).  
+
 ## How events work
 
 The basic principle is that you program events in the application to run customized behavior when they occur. Events in AL are modeled after Microsoft .NET Framework. There are three major participants involved in events: the *event*, a *publisher*, and a *subscriber*.  
@@ -55,11 +59,11 @@ Implementing events consists of the following tasks:
 
 1. Publish the event.  
 
-    For business and integration events, create and configure a method in an application object to be an event publisher method. Learn more in [Publishing events](devenv-publishing-events.md). This isn't required for trigger events because these are automatically published by the system.
+    For business and integration events, create and configure a method in an application object to be an event publisher method. Learn more in [Publishing events](devenv-publishing-events.md). This task isn't required for trigger events because they're automatically published by the system.
 
 2. Raise the event.  
 
-    Add code that calls the event publisher method. Learn more in [Raising events](devenv-raising-events.md). This isn't required for trigger events because these are raised automatically by the system.
+    Add code that calls the event publisher method. Learn more in [Raising events](devenv-raising-events.md). This task isn't required for trigger events because they're raised automatically by the system.
 
 3. Subscribe to the event.  
 

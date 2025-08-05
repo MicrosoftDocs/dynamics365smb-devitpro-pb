@@ -3,8 +3,9 @@ title: Get, Find, and Next methods
 description: Learn about the Get, Find, and Next methods for searching records in Business Central.
 ms.author: solsen
 ms.custom: evergreen
-ms.date: 04/17/2024
-ms.topic: conceptual
+ms.date: 05/26/2025
+ms.update-cycle: 1095-days
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
 ---
@@ -13,9 +14,9 @@ ms.reviewer: solsen
 
 The following methods are used to search for records:  
   
-- `Get`
-- `Find`  
-- `Next`  
+- [`Get`](#get-method)  
+- [`Find`](#find-methods)  
+- [`Next`](#find-methods)  
   
 These methods are some of the most frequently used AL methods. When you search for records, you must know the difference between `Get` and `Find`. You should also know how to use Find and Next in conjunction.
 
@@ -32,7 +33,7 @@ The [Get method (Record)](methods-auto/record/record-get-method.md) retrieves on
 [Ok :=] Record.Get([Value],...)  
 ```  
   
-For example, if the **No.** field is the primary key of the **Customer** table and if you've created a record variable called **CustomerRec** that has a subtype of Customer, then you can use Get in the following way.  
+For example, if the **No.** field is the primary key of the **Customer** table and if you created a record variable called **CustomerRec** that has a subtype of Customer, then you can use `Get` in the following way.  
   
 ```AL
 CustomerRec.Get('4711');  

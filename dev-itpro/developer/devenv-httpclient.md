@@ -4,7 +4,7 @@ description: Learn about how to call external services using the HttpClient data
 ms.custom: bap-template
 ms.date: 03/12/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: how-to
 author: kennienp
 ms.author: kepontop
 ---
@@ -99,7 +99,7 @@ If an app or per-tenant extension needs to selectively disable certificate valid
 
 If you need to debug failing HTTP calls due to server certificates that fail to be validated, telemetry is emitted if there are certificate validation failures. Learn more in [Analyzing server certificate validation errors with telemetry](../administration/telemetry-webservices-outgoing-certificate-validation-errors.md).
 
-The ability to disable certificate validation is controlled by the [HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md) to allow app and per-tenant extension publishers to modify their code. In version 27, certificate validation is enabled by default without the ability to switch it off.
+With version 27, the server certificate validation is enforced, and the only way to disable it is through the [HttpClient.UseServerCertificateValidation(Boolean) method](methods-auto/httpclient/httpclient-useservercertificatevalidation-method.md). In versions prior to version 27, the server certificate validation is controlled by the [HttpServerCertificateValidation feature key](devenv-httpcertvalid-feature-key.md), which allows app and per-tenant extension publishers to modify their code.
 
 ### Supported HTTP methods
 
@@ -171,6 +171,12 @@ Learn more in:
  
 - [FAQ: IP addresses or ranges for the Business Central service](../faq.yml#which-ip-addresses-or-ranges-does-my-environment-s-api-use)  
 - [How-to restrict network access from/to Business Central](../security/security-service-tags.md).
+
+## Testing external calls
+
+Testability of AL code that interacts with external web services is enhanced when the responses from these services can be simulated in AL, eliminating the need to configure actual endpoints. Mocking outbound web calls is useful when testing that your code is capable of handling a wide range of possible responses, and allowing you to track outbound traffic during the test executions.
+
+Learn more in [Mock outbound HttpClient web service calls during testing](devenv-httpclient-mock-outbound-calls.md).
 
 ## Monitor and troubleshoot
 

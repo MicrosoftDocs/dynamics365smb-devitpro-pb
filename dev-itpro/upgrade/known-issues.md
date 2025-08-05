@@ -1,20 +1,36 @@
 ---
 title: Some Known Issues in Business Central On-premises
-description: Provides an overview of the known issues in Business Central versions
-ms.date: 04/07/2025
+description: Provides an overview of the known issues that can affect Business Central installation or upgrade.
+ms.date: 05/15/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: troubleshooting-known-issue
 ms.author: jswymer
 author: jswymer
 ms.custom: bap-template 
 ---
 
-# Some Known issues in Business Central on-premises
+# Some known issues in Business Central on-premises
 
 This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions. These issues can affect installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prod_short.md)] on-premises.
 
 > [!NOTE]
-> The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+> The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, consult [Resources for Help and Support](../help-and-support.md).
+
+## Web server components installation fails because of missing .NET Core Hosting Bundle
+
+### Problem
+
+You get a fatal error when you install the Web Server components on a machine that has the .NET 6.0 SDK or Core Runtime.
+
+### Possible cause
+
+If the .NET 6.0 SDK or Core Runtime is installed before the IIS (Internet Information Services) feature is enabled on Windows. The system doesn't register the components needed to host ASP.NET Core applications in IIS correctly. Learn more in [Troubleshoot and debug ASP.NET Core projects](/aspnet/core/test/troubleshoot).
+
+### Workaround
+
+1. Uninstall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
+1. Download and install the .NET 6.0 Hosting Bundle from [Download .NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/).
+1. Reinstall [!INCLUDE[prod short](../developer/includes/prod_short.md)].
 
 ## Renamed tables and fields in subscription billing extension cause synch errors on upgrade
 
@@ -315,7 +331,7 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 
 #### Table 8064 "Billing Line Archive"
 
-| Field no, | Original field name                     | New field name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 20       | Contract No.                           | Subscription Contract No.              |
 | 21       | Contract Line No.                      | Subscription Contract Line No.         |
@@ -330,7 +346,7 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 
 #### Table 8003 "Price Update Template"
 
-| Field no, | Original field name                     | New field name                     |
+| Field no. | Original field name                     | New field name                     |
 |----------|-----------------------------------------|----------------------------------------|
 | 4        | Contract Filter                        | Subscription Contract Filter           |
 | 5        | Service Commitment Filter              | Subscription Line Filter               |
@@ -372,7 +388,22 @@ This section lists the new names for tables and fields. *(ff)* indicates a flow 
 | Service Commitment Package              | Subscription Package                   |
 | Usage Data Customer                     | Usage Data Supp. Customer              |
 
+## Removed tables and fields in the E-Document Core extension cause synchronization errors on upgrade
 
+> Applies to: 26.2
+
+### Problem
+
+Several tables and fields are removed in the E-Document Core extension in version 26.2. The removed tables and fields prevent you from synchronizing the extension to the tenant database when you upgrade to version 26.2 or later.
+
+### Workaround
+
+These tables and fields were never publicly released and were used internally for development in private preview, so no code path has a dependency on them. To resolve the issue, use the `ForceSync` parameter to remove the deleted columns in the database schema, as the following example shows.
+
+```AL
+Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "E-Document Core" -version $NewVersion -Mode ForceSync 
+
+```
 
 ## Number series creation doesn't work in Business Central 25.2 on-premises
 
@@ -422,9 +453,9 @@ Fatal error during installation.
 
 In the installation log or Windows Event Viewer, you get an error message similar to `A newer version of PowerShell is already installed`.  
 
-## Possible cause
+### Possible cause
 
-Windows PowerShell 7.4.2 or later is already installed on the [!INCLUDE[server](../developer/includes/server.md)] machine. The Business Central setup.exe will automatically install PowerShell 7.4.2, but it should only do so if the machine doesn't have PowerShell installed or it has a version earlier than 7.4.2. In version 24.1, instead of skipping the PowerShell installation when it should, the setup.exe tries to install PowerShell but fails.
+Windows PowerShell 7.4.2 or later is already installed on the [!INCLUDE[server](../developer/includes/server.md)] machine. The [!INCLUDE[prod short](../developer/includes/prod_short.md)] setup.exe will automatically install PowerShell 7.4.2, but it should only do so if the machine doesn't have PowerShell installed or it has a version earlier than 7.4.2. In version 24.1, instead of skipping the PowerShell installation when it should, the setup.exe tries to install PowerShell but fails.
 
 > [!TIP]
 > To find out what PowerShell version is running on your machine, open PowerShell and enter the following prompt:
@@ -450,17 +481,17 @@ When you try to import a control add-in file client from the **Control Add-ins**
 ```
 Can't open file`
 
-[URL] can't open files in this folder because it cotains system files`
+[URL] can't open files in this folder because it contains system files`
 ```
 
-`[URL]` is the URL of your Business Central web client, for example, `http://localhost:8080`.
+`[URL]` is the URL of your [!INCLUDE[prod short](../developer/includes/prod_short.md)] web client, for example, `http://localhost:8080`.
 
 ### Workaround
 
 You have two options to work around this issue:
 
-- Use the Set-NAVAddin cmdlet of the Business Central Administration Shell as described in [Upgrade control add-ins](upgrading-cumulative-update-v23.md#controladdins). 
-- If you want to use the Business Central web client, then copy the files to another folder on your PC, like Documents or Downloads, and try again.
+- Use the Set-NAVAddin cmdlet of the [!INCLUDE[prod short](../developer/includes/prod_short.md)] Administration Shell as described in [Upgrade control add-ins](upgrading-cumulative-update-v23.md#controladdins). 
+- If you want to use the [!INCLUDE[prod short](../developer/includes/prod_short.md)] web client, then copy the files to another folder on your PC, like Documents or Downloads, and try again.
 
 ## Removed table fields in the Czech (CZ) base application cause sync errors
 
@@ -468,7 +499,7 @@ You have two options to work around this issue:
 
 ### Problem
 
-As part of the delocalization process of the Czech (CZ) version of Business Central, Microsoft moved Czech-specific functionality into separate applications. As a result, the following fields have been removed and the primary keys modified in the Czech (CZ) base application, version 23:
+As part of the delocalization process of the Czech (CZ) version of [!INCLUDE[prod short](../developer/includes/prod_short.md)], Microsoft moved Czech-specific functionality into separate applications. As a result, the following fields have been removed and the primary keys modified in the Czech (CZ) base application, version 23:
 
 |Table|Field|
 |-|-|
@@ -589,7 +620,7 @@ When you upgrade to version 18 from an earlier major version, authentication tha
 
 ### Impact
 
-When users try to sign in to Business Central, they get an error, similar to the following message:
+When users try to sign in to [!INCLUDE[prod short](../developer/includes/prod_short.md)], they get an error, similar to the following message:
 
 `The specified user name or password is not correct, or you do not have a valid user account in Dynamics 365 Business Central`
 
@@ -818,7 +849,7 @@ For each affected table object, do the following steps:
 The table migration feature fails to transfer data from a table object to a table extension object that introduces an enumeration.
 
 > [!NOTE]
-> The table migration feature was introduced in version 15.3. For more information, see [Migrating Tables and Fields Between Extensions](../developer/devenv-migrate-table-fields.md).
+> The table migration feature was introduced in version 15.3. Learn more in [Migrating Tables and Fields Between Extensions](../developer/devenv-migrate-table-fields.md).
 
 ### Impact
 

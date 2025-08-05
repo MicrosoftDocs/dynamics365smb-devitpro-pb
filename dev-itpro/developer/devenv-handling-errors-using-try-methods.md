@@ -1,8 +1,8 @@
 ---
 title: Handling errors using try methods
 description: Try methods in AL enable you to handle errors that occur in the application during code execution.
-ms.date: 12/20/2024
-ms.topic: conceptual
+ms.date: 06/18/2025
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
@@ -19,7 +19,7 @@ Try methods in AL enable you to handle errors that occur in the application duri
 
 The main purpose of try methods is to catch errors/exceptions thrown by the [!INCLUDE[prod_short](includes/prod_short.md)] AL platform. For on-premises, they can catch exceptions thrown during .NET Framework interoperability operations. Try methods catch errors similar to a conditional codeunit. Except for the try method, the `Run` method call doesn't require that write transactions are committed to the database, and changes to the database that are made with a try method aren't rolled back.
 
-### <a name="DbWriteTransactions"></a>Database write transactions in try methods
+### Database write transactions in try methods
 
 Because changes made to the database by a try method aren't rolled back, you shouldn't include database write transactions within a try method. For [!INCLUDE[prod_short](includes/prod_short.md)] online, there are no restrictions on performing write transactions in try methods. For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] prevents database write transactions within try methods by default. If a try method contains a database write transaction, a runtime error occurs. You can allow write transactions by setting the `DisableWriteInsideTryFunctions` parameter in the [!INCLUDE[server](includes/server.md)] configuration to `false`. Learn more about configuring the server in [Configure Business Central Server](../administration/configure-server-instance.md). This behavior might change in an upcoming release.
 
@@ -104,7 +104,7 @@ end;
 
 When you run this codeunit, the execution of the `OnRun` trigger stops. The error message `An error occurred during the operation` is thrown in the UI.
 
-Now, set the [TryFunction Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute) of the  `MyTrymethod` method. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
+Now, set the [TryFunction attribute](attributes/devenv-tryfunction-attribute.md) of the  `MyTrymethod` method. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
 
 ```AL
 [TryFunction]
@@ -196,4 +196,4 @@ END;
 
 [Failure modeling and robust coding practices](devenv-robust-coding-practices.md)  
 [AL error handling](devenv-al-error-handling.md)  
-[AL Simple Statements](devenv-al-simple-statements.md)
+[AL simple statements](devenv-al-simple-statements.md)

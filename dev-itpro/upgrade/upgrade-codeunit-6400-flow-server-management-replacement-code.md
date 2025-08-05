@@ -3,7 +3,8 @@ title: Codeunit 6400 Flow Server Management Replacement Code for C/AL to AL conv
 description: The article includes replacement code for Page 6401 Flow Selector for fixing compilation errors when converting a Business Central version 14 application to version 15 AL. 
 ms.custom: evergreen
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: article
 ms.author: jswymer
 author: jswymer
 ROBOTS: NOINDEX

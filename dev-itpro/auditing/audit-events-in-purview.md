@@ -3,7 +3,7 @@ title: Auditing events in Microsoft Purview
 description: Get an overview of the signals Business Central emits to Microsoft Purview.
 author: jobulsin
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/22/2025
 ms.author: jobulsin
 ---

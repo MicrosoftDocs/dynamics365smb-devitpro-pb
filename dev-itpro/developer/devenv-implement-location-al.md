@@ -2,7 +2,7 @@
 title: Implementing Location in AL
 description: Learn how to implement location access in AL for Dynamics 365 Business Central. Enhance your app with GPS capabilities for better customer service.
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: blrobl
 ms.author: brobledodiaz
 ms.reviewer: solsen

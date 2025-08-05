@@ -7,7 +7,7 @@ ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ---
 # Using table partitioning and data compression
 

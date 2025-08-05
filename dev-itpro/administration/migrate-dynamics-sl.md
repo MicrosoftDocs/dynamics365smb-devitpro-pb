@@ -1,13 +1,13 @@
 ---
-title: Dynamics SL data migrated to Business Central online
+title: Dynamics SL Data Migrated to Business Central Online
 description: Learn how to migrate to the cloud from Dynamics SL using an assisted setup guide in Business Central online.
 author: lcontreras
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.devlang: al
 ms.reviewer: 
 ms.search.keywords: cloud, edge, SL, migration
 ms.search.form: 4003
-ms.date: 12/13/2024
+ms.date: 08/04/2025
 ms.author: jswymer
 ---
 # Dynamics SL data migrated to Business Central online
@@ -81,7 +81,7 @@ On the **SL Company Migration Configuration** page, you can choose to migrate hi
 - SL Hist. PurOrdDet
 - SL Hist. POReceipt
 - SL Hist. POTran
-- SL Hist. SOHeader
+- SL Hist. SOHeader 
 - SL Hist. SOLine
 - SL Hist. SOShipHeader
 - SL Hist. SOShipLine
@@ -90,6 +90,14 @@ On the **SL Company Migration Configuration** page, you can choose to migrate hi
 You can limit the data migrated in the snapshot by entering the latest year in SL that you want to bring over. Enter this year in the **Oldest Snapshot Year** field on the **SL Company Migration Configuration** page.  
 
 The **SL Historical Snapshot** runs as a background process after the migration is complete. The status of the SL Historical Snapshot data can be viewed in Fact boxes on the **Cloud Migration Management** page.
+
+## Project Master records from the Project Controller module
+
+On the **SL Company Migration Configuration** page, select the option to migrate **Project Controller** master data, which includes **Projects**, **Tasks**, and **Resources**.
+
+- **Resources** might include **Project Employees** or other **Resources**, and can be migrated if they are in either **Active** or **On Hold** status, based on the configuration settings.
+- **Projects** are eligible for migration if they are in either **Active** or **Plan** status, based on the configuration settings.
+- **Tasks** can be migrated only if they are in an **Active** status, based on the configuration settings.
 
 ## Next steps
 

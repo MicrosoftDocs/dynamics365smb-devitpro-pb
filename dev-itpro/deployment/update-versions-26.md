@@ -1,15 +1,14 @@
 ---
-title: Dynamics 365 Business Central on-premises 2025 release wave 1 updates
+title: Dynamics 365 Business Central On-premises 2025 Release Wave 1 Updates
 description: Learn about the updates for Dynamics 365 Business Central 2025 release wave 1 on-premises deployments.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
-ms.date: 04/10/2025
+ms.date: 08/04/2025
+ms.topic: article
 ms.custom: bap-template
 ---
-
 # Dynamics 365 Business Central on-premises 2025 release wave 1 updates
 
 This article lists updates released for the Microsoft Dynamics 365 Business Central 2025 release wave 1 for on-premises. An update is a set of files that includes all hotfixes and regulatory features released for Business Central. If you have customers using Business Central 2025 release wave 1 on-premises, apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, use the [Business Central Admin center](../administration/tenant-admin-center.md) to check whether the tenants have been updated.  
@@ -28,8 +27,10 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|*expected in May 2025*|Update 26.1 |May 2025|Application Build 26.1</br>Platform Build 26.0|
-
+|[26.4](https://support.microsoft.com/help/5064779)|Update 26.4 |Aigust 2025|Application Build 26.4.37206, Platform Build 26.0.37130|
+|[26.3](https://support.microsoft.com/help/5063362)|Update 26.3 |July 2025|Application Build 26.3.36321, Platform Build 26.0.36290|
+|[26.2](https://support.microsoft.com/help/5061918)|Update 26.2 |June 2025|Application Build 26.2.34832, Platform Build 26.0.34736|
+|[26.1](https://support.microsoft.com/help/5059415)|Update 26.1 |May 2025|Application Build 26.1.33876, Platform Build 26.0.33865|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
@@ -42,7 +43,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements](system-requirements-business-central-v26.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
-[Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
+[Countries/Regions and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/product/dynamics-365-business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)

@@ -7,9 +7,10 @@ ms.custom:
   - evergreen
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: reference
 ms.author: jswymer
 ms.date: 09/09/2024
+ms.update-cycle: 1095-days
 ---
 # Authentication and credential types for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]  
 

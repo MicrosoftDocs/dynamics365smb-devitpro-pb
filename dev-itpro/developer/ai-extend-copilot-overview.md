@@ -4,11 +4,12 @@ description: Learn whether your AI idea or feature is a match for Copilot in Bus
 author: jswymer
 ms.author: jswymer 
 ms.reviewer: jswymer
-ms.topic: conceptual 
+ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template 
 ---
 

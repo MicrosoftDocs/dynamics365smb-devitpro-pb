@@ -5,7 +5,7 @@ author: brentholtorf
 ms.author: bholtorf
 ms.reviewer: solsen
 ms.date: 04/02/2025
-ms.topic: conceptual
+ms.topic: article
 ms.custom: bap-template
 ---
 # Create an extensibility request

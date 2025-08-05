@@ -3,7 +3,8 @@ title: "Changing Application Version Number After Upgrade"
 description: Describes how to increase the application version number stored in the database and shown on the Help and Support page.
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer

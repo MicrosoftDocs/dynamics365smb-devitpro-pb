@@ -3,7 +3,7 @@ title: "Get a List of Business Central Environments"
 description: "Describing how to get a list of Business Central environments when working with APIs."
 author: jswymer
 ms.date: 02/10/2022
-ms.topic: article
+ms.topic: how-to
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: jswymer
 ms.reviewer: jswymer
@@ -48,3 +48,4 @@ Returns a wrapped array of environments.
 [Developing Connect Apps for Dynamics 365 Business Central](../developer/devenv-develop-connect-apps.md)  
 [Microsoft Web Services Overview](web-services.md)  
 [OpenAPI Specification](../api-reference/v2.0/dynamics-open-api.md)  
+[API endpoint structure](api-endpoint-structure.md)

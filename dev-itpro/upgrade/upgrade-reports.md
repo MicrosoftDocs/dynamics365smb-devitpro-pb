@@ -2,7 +2,7 @@
 title: "Upgrading Reports"
 description: Describes how to upgrade reports  
 ms.date: 08/31/2022
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer

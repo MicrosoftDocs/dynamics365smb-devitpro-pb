@@ -7,6 +7,7 @@ ms.reviewer:
 ms.topic: conceptual
 ms.service: dynamics-365-business-central
 ms.author: solsen
+ms.custom: sfi-ropc-nochange
 ---
 
 # AL-Go settings

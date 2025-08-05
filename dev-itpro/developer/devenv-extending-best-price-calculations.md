@@ -2,7 +2,7 @@
 title: "Extending Price Calculations"
 description: "How you extend the price calculations in Dynamics 365 Business Central."
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: concept-article
 author: bholtorf
 ---
 

@@ -2,7 +2,8 @@
 title: "Multitenant Technical Upgrade Quick Reference"
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer

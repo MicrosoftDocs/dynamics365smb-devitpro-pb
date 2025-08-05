@@ -5,9 +5,10 @@ ms.custom:
   - bap-template
   - evergreen
 ms.date: 05/28/2024
+ms.update-cycle: 1095-days
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: SusanneWindfeldPedersen
 ---
 # How to: Use PerfView to View Event Trace Data

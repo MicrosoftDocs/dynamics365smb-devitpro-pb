@@ -4,7 +4,7 @@ description: "Design and implementation tips for pages that display multiple lis
 author: mikebcMSFT
 ms.date: 12/15/2023
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: mikebc
 ROBOTS: NOINDEX
 ---

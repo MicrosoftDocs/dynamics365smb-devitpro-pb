@@ -2,8 +2,8 @@
 title: Preprocessor directives in AL
 description: The different types of preprocessor directives in AL; conditional, regions, and pragmas and preprocessorSymbols setting.
 author: SusanneWindfeldPedersen
-ms.date: 03/19/2024
-ms.topic: conceptual
+ms.date: 06/02/2025
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -41,7 +41,7 @@ The following conditional preprocessor directives are supported in AL.
 
 ### Logical operators in conditional directives
 
-The operators `&&` (and), `||` (or), and `!` (not) are supported in conditional directives. `&&` (and) evaluates to `true` if both operands are true, `||` evaluates to `true` if one of the operands is true, and `!` negates the value of the operand.
+The operators `and`, `or`, and `not` are supported in conditional directives. `and` evaluates to `true` if both operands are true, `or` evaluates to `true` if at least one of the operands is true, and `not` negates the value of the operand.
 
 ## Defining preprocessorSymbols
 

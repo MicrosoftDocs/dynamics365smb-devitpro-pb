@@ -2,13 +2,15 @@
 title: Performance Toolkit extension
 description: Test your extensions for performance regressions during the development process for Business Central apps. 
 author: bholtorf
-ms.custom: bap-template
 ms.date: 02/21/2024
 ms.reviewer: bholtorf
 
 ms.search.form: 149000, 149001, 149003, 149004, 149005, 149006, 149007, 149008, 149009
-ms.topic: conceptual
+ms.topic: article
 ms.author: bholtorf
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # The Performance Toolkit extension

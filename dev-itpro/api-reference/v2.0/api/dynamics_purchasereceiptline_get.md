@@ -31,7 +31,7 @@ GET businesscentralPrefix/companies({id})/purchaseReceiptLines({purchaseReceiptL
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and an **purchaseReceiptLines** object in the response body.
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and an **purchas
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseReceipts({id})/purchaseReceiptLines({purchaseReceiptLineId})
@@ -48,7 +48,7 @@ GET https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseReceipts({i
 
 **Response**
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```json
 {

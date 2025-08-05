@@ -1,5 +1,5 @@
 ---
-title: Transparency note Machine Learning APIs for Business Central  
+title: Transparency Note Machine Learning APIs for Business Central  
 description: Understand how our AI technology works with regards to Machine Learning APIs, the choices system owners can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment
 author: andreipanko 
 ms.author: solsen 
@@ -7,7 +7,8 @@ ms.reviewer: solsen
 ms.topic: faq
 ms.collection:
   - bap-ai-copilot 
-ms.date: 11/15/2024
+ms.date: 06/19/2025
+ms.update-cycle: 180-days
 ms.custom: bap-template
 ---
 
@@ -21,7 +22,7 @@ Microsoft's Transparency Notes are part of a broader effort at Microsoft to put 
 
 ## The basics of Machine Learning APIs for  Business Central  
 
-### Introduction 
+### Introduction
 
 Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and midsized organizations. Customers purchase Business Central through a network of software partners, who also customize the system to their needs via mature development tools in Visual Studio Code. From the very beginning, adaptability has been one of the core tenets of Business Central, and our community of partners across the world have built their business around this, tailoring the system to individual and changing customer needs, providing solutions in virtually all industries and geographies, selling add-ons at scale through the Microsoft AppSource store. Naturally, both partners and customers expect Copilot to be as adaptable as the rest of Business Central.
 
@@ -73,7 +74,7 @@ We encourage partners to leverage the APIs in their innovative solutions or appl
 
    When depend on models deployed by Microsoft be aware about available capacity and usage.
 
-   If your API features are attached to models in your subscription, you are responsible for the operating costs of Azure MAchine Learning resources throughout development, testing and when your customers use the feature in production or sandbox environments.
+   If your API features are attached to models in your subscription, you are responsible for the operating costs of Azure Machine Learning resources throughout development, testing and when your customers use the feature in production or sandbox environments.
 
 - Sensitive use cases
 
@@ -107,7 +108,7 @@ The APIs are reviewed and tested throughout Microsoft's development lifecycle an
 
 ## Evaluating and integrating API for your use
 
-The Microsoft cloud runs on trust. Our fundamental promise to our customers is that their data is their data: it is not used to train underliyng MAchine Learninig  models to the benefit of others, and it is protected by comprehensive enterprise compliance and security controls that they govern. Furthermore, Microsoft's AI systems are built on Responsible AI principles of fairness, reliability, safety, privacy, security, inclusiveness, transparency and accountability. 
+The Microsoft cloud runs on trust. Our fundamental promise to our customers is that their data is their data: it is not used to train underlying Machine Learning  models to the benefit of others, and it is protected by comprehensive enterprise compliance and security controls that they govern. Furthermore, Microsoft's AI systems are built on Responsible AI principles of fairness, reliability, safety, privacy, security, inclusiveness, transparency and accountability. 
 
 ### Working Responsible AI into your development practices
 
@@ -118,20 +119,10 @@ We recommend that partners adopt a similar process and criteria to the [Microsof
 - Mitigate any identified risks by adjusting your use case requirements, design, implementation and documentation.
 - Measure whether your mitigations are successful at reducing or deflecting risk.
 
-## Learn more about responsible AI 
+## Learn more about responsible AI
 
 [Microsoft AI principles](https://www.microsoft.com/en-us/ai/responsible-ai)
 
 [Microsoft responsible AI resources](https://www.microsoft.com/en-us/ai/tools-practices)
 
 [Microsoft Azure Learning courses on responsible AI](/ai/)
-
-## About this document 
-
-© 2024 Microsoft Corporation. All rights reserved. This document is provided "as-is" and for informational purposes only. Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. Some examples are for illustration only and are fictitious. No real association is intended or inferred. 
-
-This document is not intended to be, and should not be construed as providing legal advice. The jurisdiction in which you’re operating may have various regulatory or legal requirements that apply to your AI system. Consult a legal specialist if you are uncertain about laws or regulations that might apply to your system, especially if you think those might impact these recommendations. Be aware that not all of these recommendations and resources will be appropriate for every scenario, and conversely, these recommendations and resources may be insufficient for some scenarios. 
-
-Published: June 2024
-
-Last updated: June 2024

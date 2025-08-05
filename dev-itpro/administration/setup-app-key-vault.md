@@ -2,7 +2,7 @@
 title: Set up app key vaults for Business Central online
 description: Describes how to use an Azure key vault with Business Central extensions for online.
 ms.date: 01/06/2025
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ms.reviewer: solsen
 ---

@@ -4,6 +4,7 @@ description: Describes current API limits in Business Central (v1.0).
 author: jswymer
 ms.custom: evergreen
 ms.date: 07/02/2024
+ms.update-cycle: 1095-days
 ms.topic: article
 ms.author: jswymer
 ms.reviewer: solsen

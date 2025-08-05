@@ -2,8 +2,8 @@
 title: AL Language extension configuration
 description: Description of the AL Language extension settings in Visual Studio Code for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 03/12/2025
-ms.topic: conceptual
+ms.date: 06/13/2025
+ms.topic: concept-article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -23,7 +23,7 @@ The following table describes the user and workspace settings for the AL Languag
 
 |Setting|Value|
 |-------|-----|
-|AL-Go Suggested Folder| Sets the suggested folder when using AL:Go! command. Can be set per user or per workspace.|
+|Algo Suggested Folder| Sets the suggested folder when using AL:Go! command. Can be set per user or per workspace.|
 |App Local Folder Paths|Specifies a list of local app repositories and their corresponding directory paths. This setting helps in organizing and managing multiple AL repositories by defining where each repository is stored on the local machine.|
 |Are Profile Lenses Supported| Enables the Profiler CodeLens for AL, default value is `true`. Syntax is `"al.areProfileLensesSupported": true`. Learn more in [AL Profiler overview](devenv-al-profiler-overview.md).|
 |Assembly Probing Paths|Sets the list of directory paths where the compiler searches for referenced .NET assemblies. For example: `"al.assemblyProbingPaths": ["./.netpackages", "C:/Program Files/Assemblies"]`|
@@ -37,6 +37,9 @@ The following table describes the user and workspace settings for the AL Languag
 |Enable Code Analysis|Specifies whether code analysis should be performed for all source files in the current project. Default is `false`. If this is set to `true`, you must specify the **Code Analyzers** setting with the list of code analyzers to use.|
 |Enable External Rulesets|Allows the use of URLs as the location of project rulesets or included rulesets. Syntax is `"al.enableExternalRulesets": true`.|
 |Enable Script IntelliSense|Specifies whether IntelliSense should be enabled for control add-in script files. Turn this off, if it interferes with advanced JavaScript or TypeScript configurations. Default is `true`.|
+|Extend Go To Symbol in Workspace: Enabled|Enable/disable a new implementation of symbol search.|
+|Extend Go To Symbol in Workspace: Include Symbol Files|Enable/disable search in symbol files.|
+|Extend Go To Symbol in Workspace: Result Limit|Sets the maximum number of symbol search.|
 |Incognito|Specifies whether to open the browser in Incognito/InPrivate mode when launching the application from Visual Studio Code. This option will take effect only if the **Browser** option is set to a non-default value.|
 |Incremental Build| Specifies whether a project, when it's built using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>, or <kbd>Ctrl</kbd>+<kbd>F5</kbd>, or <kbd>F5</kbd>, will reuse the last known tracked compilation, which will enhance the compilation time significantly. For more information about project to project references, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md). <br> **Note:** Setting this to `true` won't do an end-to-end build, as it's depending on an already-compiled state. To get a clean, full build, this flag must be set to `false`. Default is `false`. <br> **Important:** If this setting is enabled, then all translations will be ignored, even though the `"features": [ "TranslationFile" ]` setting is specified in the `app.json` file. Learn more in [Working with translation files](devenv-work-with-translation-files.md).|
 |Inlayhints > Function Return Types| Switch on/off inlay hints for implicit return types on method signatures.|

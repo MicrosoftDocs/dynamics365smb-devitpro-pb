@@ -3,7 +3,8 @@ title: Page object
 description: Description of the page object and its syntax in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 04/26/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: how-to
 ms.author: solsen
 ms.custom: evergreen
 ms.collection: get-started

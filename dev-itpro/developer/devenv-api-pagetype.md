@@ -3,7 +3,7 @@ title: API page type
 description: Description of the API page type used for exposing web service endpoints.
 author: SusanneWindfeldPedersen
 ms.date: 03/14/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -15,7 +15,6 @@ Pages of the type `API` are used to create versioned, webhook-supported, OData v
 Pages of the type `API` can be used to develop a custom API. For more information, see [Developing a Custom API](devenv-develop-custom-api.md).
 
 [!INCLUDE[extending_APIs_is_not_supported_note](includes/include-extending-APIs-is-not-supported-note.md)]
-
 
 ## Naming conventions
 
@@ -30,6 +29,7 @@ At design time, the compiler shows warnings on casing violations and errors on n
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Create, read, update, and delete operations
+
 API pages support create, read, update, and delete operations. If you want to disallow, create, update, and delete operations, you can use the [InsertAllowed](properties/devenv-insertallowed-property.md), [ModifyAllowed](properties/devenv-modifyallowed-property.md), and [DeleteAllowed](properties/devenv-deleteallowed-property.md) properties respectively.
 
 If you only want your API to expose committed data, you can add an OnOpenPageTrigger like this:

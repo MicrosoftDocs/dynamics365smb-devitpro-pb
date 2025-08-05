@@ -2,8 +2,9 @@
 title: "Update 19.5 for Microsoft Dynamics 365 Business Central 2021 Release Wave 2"
 description: Get an overview of new and changed capabilities in the 19.5 update of Business Central online, which is part of 2021 release wave 2.
 ms.date: 04/01/2024
+ms.update-cycle: 1095-days
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ---

@@ -4,13 +4,13 @@ description: Description of best practices and guidelines for deprecating code i
 author: SusanneWindfeldPedersen
 ms.date: 04/30/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: best-practice
 ms.author: grobyns
 ---
 
 # Best practices for deprecation of AL code
 
-This article provides guidelines that describe how code in the Base App is obsoleted. The article describes some best practices that Microsoft is using for obsoleting code, and is meant as a nonenforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. Learn more in [Directives in AL](directives/devenv-directives-in-al.md).
+This article provides guidelines that describe how code in the Base App is obsoleted. It describes some best practices that Microsoft is using for obsoleting code, and is meant as a nonenforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. Learn more in [Directives in AL](directives/devenv-directives-in-al.md).
 
 ## Obsoleting code
 

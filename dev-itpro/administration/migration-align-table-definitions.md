@@ -4,7 +4,7 @@ description: Learn what table properties need to be the same in on-premises and 
 ms.author: jswymer
 ms.reviewer: jswymer
 
-ms.topic: conceptual 
+ms.topic: article
 ms.date: 11/25/2022
 ms.custom: bap-template
 ---

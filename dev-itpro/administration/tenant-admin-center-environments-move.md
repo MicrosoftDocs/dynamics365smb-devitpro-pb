@@ -2,7 +2,7 @@
 title: Transfer an environment to another Microsoft Entra organization
 description: You can transfer a Business Central environment to another Microsoft Entra tenant. Start in the Business Central admin center.
 author: jobulsin
-ms.topic: conceptual
+ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, move
 ms.date: 12/21/2023
@@ -82,7 +82,9 @@ Telemetry signals for the environment transfer operation are emitted to the Appl
 - Environment data will remain unchanged during the move operation. The exact same environment will be linked to a specified Microsoft Entra tenant.
 - The localization, Azure region, and type of the environment (Production or Sandbox) will remain the same, and can't be changed during this operation.
 - The operation will involve a downtime period for the environment being transferred (typically not exceeding 30 minutes).
-- The operation does not move subscriptions, domains, and other resources between the Microsoft Entra tenants. Ensure the destination tenant has a paid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user subscription and sufficient environment quota before accepting the transfer.
+- The operation does not move subscriptions, domains, security groups, and other resources between the Microsoft Entra tenants.
+  - Ensure the destination tenant has a paid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user subscription and sufficient environment quota before accepting the transfer.
+  - If a security group is assigned to the environment to control environment access, assign a security group in the destination tenant after the transfer completes.
 - If you rename an environment upon acceptance in the destination tenant to avoid duplicate environment names in your tenant no Rename operation will be created on the Operations page in the Admin Center. Rather, the **Transfer** Operation will include the source and destination environment names.
 - Environment settings are carried over from the source to the destination tenant. Depending on the nature of the environment transfer settings such as the Application Insights Connection String or Partner Access set up on the environment may need to be changed or removed.
 - Environments that are [linked](tenant-admin-center-environments.md#linked-power-platform-environment) to a Power Platform environment cannot be transferred. Unlink the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment before creating a transfer on the source tenant.

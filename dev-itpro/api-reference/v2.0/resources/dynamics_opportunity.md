@@ -4,7 +4,7 @@ description: An opportunity object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
-ms.date: 04/09/2024
+ms.date: 04/28/2025
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -13,8 +13,6 @@ ms.reviewer: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents an opportunity in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -54,7 +52,7 @@ Represents an opportunity in [!INCLUDE[prod_short](../../../includes/prod_short.
 
 ## JSON representation
 
-Here is a JSON representation of the opportunity resource.
+Here's a JSON representation of the opportunity resource.
 
 
 ```json
@@ -79,9 +77,9 @@ Here is a JSON representation of the opportunity resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## Related information
+
 [GET opportunity](../api/dynamics_opportunity_get.md)  
 [DELETE opportunity](../api/dynamics_opportunity_delete.md)  
 [POST opportunity](../api/dynamics_opportunity_create.md)  

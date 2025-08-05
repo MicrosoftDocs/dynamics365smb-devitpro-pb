@@ -2,7 +2,7 @@
 title: "HttpClientHandler attribute"
 description: "Specifies that the method is an HttpClientHandler method, which catches and handles HTTP requests in test executions."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 05/16/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -32,7 +32,7 @@ Specifies that the method is an HttpClientHandler method, which catches and hand
 > **Version**: _Available or changed with runtime version 15.0._
 ```AL
 [HttpClientHandler]
-procedure HttpClientHandler(Request: TestHttpRequestMessage; var Response: TestHttpResponseMessage) : Boolean;
+procedure HttpClientHandler(Request: TestHttpRequestMessage; var Response: TestHttpResponseMessage) IssueOriginalRequest: Boolean;
 ```
 > [!IMPORTANT]
 > The above signature requires the HttpClientHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
@@ -45,6 +45,11 @@ The HTTP request that need to be handled.
 *Response*  
 &emsp;Type: [TestHttpResponseMessage](../methods-auto/testhttpresponsemessage/testhttpresponsemessage-data-type.md)  
 The mocked response that need to be populated by the handler.  
+
+### Return Values
+*IssueOriginalRequest*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+Indicates whether to issue the original HTTP request (`true`) or use the mocked response (`false`). The default return value of the HttpClientHandler procedure is `false`, ensuring that external service calls are only made intentionally.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  

@@ -5,6 +5,7 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.assetid: 33764be6-81d6-439d-84ce-61b5e2f89a17
 caps.latest.revision: 7
+ms.custom: sfi-ropc-blocked
 ---
 # DeleteObjects
 Deletes objects from the specified [!INCLUDE[navnow](includes/navnow_md.md)] database.  

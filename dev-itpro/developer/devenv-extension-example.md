@@ -5,8 +5,9 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: solsen
 ms.date: 06/10/2024
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.collection: get-started
+ms.custom: sfi-ropc-nochange
 ---
 
 # Build your first sample extension with extension objects, install code, and upgrade code

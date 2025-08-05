@@ -3,7 +3,8 @@ title: "Technical Upgrade From Version 19 to Version 22"
 description: Describes how to do a technical upgrade from Business Central V19 to V22
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer

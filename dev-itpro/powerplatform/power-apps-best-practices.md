@@ -4,9 +4,11 @@ description: Learn how to best develop Power Apps for Business Central
 author: andersgMSFT
 ms.author: andersg
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 04/24/2023
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-ropc-nochange
 ---
 # Best practices for Power Apps with Business Central (preview)
 

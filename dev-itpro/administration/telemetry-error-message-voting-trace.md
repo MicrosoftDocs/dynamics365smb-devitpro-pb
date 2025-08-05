@@ -2,7 +2,7 @@
 title: Analyzing Error Message Vote Telemetry | Microsoft Docs
 description: Learn about error message vote telemetry in Business Central  
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 03/22/2022

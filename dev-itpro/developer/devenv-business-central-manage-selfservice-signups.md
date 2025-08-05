@@ -1,7 +1,7 @@
 ---
 title: Enable and disable Business Central self-service signups
 ms.date: 11/11/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 description: Learn how to prevent Microsoft Entra tenant users from self-service sign ups
 ---

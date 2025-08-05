@@ -3,7 +3,7 @@ title: App Management API
 description: Learn about managing Embed apps by using the App Management API.
 author: jswymer
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -11,8 +11,6 @@ ms.reviewer: jswymer
 # App Management API
 
 [!INCLUDE[2020_releasewave1](../../includes/2020_releasewave1.md)]
-
-[!INCLUDE[azure-ad-to-microsoft-entra-id](~/../shared-content/shared/azure-ad-to-microsoft-entra-id.md)]
 
 ## Entities
 
@@ -46,7 +44,7 @@ The `app` entity represents a Business Central App that has been registered with
 Lists all apps that match the provided (optional) filter that the current `principal` can access.
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=<odata_filter>
+GET https://apps.businesscentral.dynamics.com/v1.4/apps?$filter=<odata_filter>
 ```
 
 #### Parameters
@@ -58,7 +56,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=<odata_filter>
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps?$filter=storageLocation eq 'West Europe'
+GET https://apps.businesscentral.dynamics.com/v1.4/apps?$filter=storageLocation eq 'West Europe'
 ```
 
 #### Example Response
@@ -97,7 +95,7 @@ Specific versions of Business Central Apps can be made available for specific co
 
 Lists all countries/regions the specified `app` has been made available in.
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries
 ```
 
 #### Parameters
@@ -109,7 +107,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries
 ```
 
 #### Example Response
@@ -133,7 +131,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
 
 Gets the `country` with the specified country code in the specified `app`.
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}
 ```
 #### Parameters
 
@@ -145,7 +143,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US
 ```
 
 #### Example Response
@@ -162,7 +160,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
 Adds a new `country` to the specified `app` or updates an existing one.
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}
+PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}
 ```
 
 #### Parameters
@@ -176,7 +174,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 #### Example Request
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/AT
+PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/AT
 
 {
     "countryCode": "AT"
@@ -214,9 +212,9 @@ The currently supported roles are:
 
 ### Available Endpoints
 ### List principals
-Lists all `principal`s that match the provided filter within the specified `app`.
+Lists all `principals` that match the provided filter within the specified `app`.
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals?$filter=<odata_filter>
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/principals?$filter=<odata_filter>
 ```
 #### Parameters
 |Type|Name|Description|Schema|
@@ -226,7 +224,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals?$filt
 
 #### Example Request
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals?$filter=type eq 'User' and 'Owner' in roles
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals?$filter=type eq 'User' and 'Owner' in roles
 ```
 
 #### Example Response
@@ -250,7 +248,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
 
 Gets the `principal` with the specified ID in the specified `app`.
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id}
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/principals/{id}
 ```
 #### Parameters
 
@@ -262,7 +260,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id}
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals/cccccccc-dddd-eeee-3333-444444444444
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals/cccccccc-dddd-eeee-3333-444444444444
 ```
 
 #### Example Response
@@ -284,7 +282,7 @@ Removes the `principal` with the specified ID in the specified `app`.
 **Note:** Only principals with the `Owner` role are allowed to remove principals.
 
 ```
-DELETE https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id}
+DELETE https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/principals/{id}
 ```
 #### Parameters
 |Type|Name|Description|Schema|
@@ -295,7 +293,7 @@ DELETE https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{i
 #### Example Request
 
 ```
-DELETE https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals/cccccccc-dddd-eeee-3333-444444444444
+DELETE https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals/cccccccc-dddd-eeee-3333-444444444444
 ```
 
 ### Add or update principal
@@ -305,7 +303,7 @@ Adds or updates the specified `principal` that belongs to the specified `app`.
 **Note:** The `aadTenantId` field should only be specified in the request body when the principal being added is of type `User`.
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id}
+PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/principals/{id}
 ```
 
 #### Parameters
@@ -319,7 +317,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/principals/{id
 #### Example Request
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals/cccccccc-dddd-eeee-3333-444444444444
+PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/principals/cccccccc-dddd-eeee-3333-444444444444
 
 {
     "aadTenantId":  "aaaabbbb-0000-cccc-1111-dddd2222eeee",
@@ -389,7 +387,7 @@ If a version of an app should be available in multiple countries, then the .app 
 Lists all `versions` that match the provided filter.
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions?$filter=<odata_filter>
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}/versions?$filter=<odata_filter>
 ```
 
 #### Parameters
@@ -403,7 +401,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions?$filter=MajorVersion eq 16 and MinorVersion eq 0
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions?$filter=MajorVersion eq 16 and MinorVersion eq 0
 ```
 
 #### Example Response
@@ -444,14 +442,14 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
 Uploads an .app file into the specified `app` and `country` based on the provided package contents.
 
 ```
-POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions
+POST https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}/versions
 ```
 
 > [!IMPORTANT]
 > Make sure that you registered your app with the service and added a country to it, before you attempt to upload the app version.
 
 > [!NOTE]
-> If you want to update app to a version that introduces breaking changes, see [Upgrading an App by Using ForceSync](app-management-updating-with-forcesync.md).
+> If you want to update an app to a version that introduces breaking changes, see [Upgrading an App by Using ForceSync](app-management-updating-with-forcesync.md).
 
 #### Parameters
 
@@ -471,7 +469,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 #### Example Request
 
 ```
-POST https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions
+POST https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions
 
 {
     "initialAvailability": "Preview",
@@ -512,7 +510,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222
 
 Downloads the .app file linked to the specified version.
 ```
-POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions/{versionNumber}/getPackageContents -OutFile {saveToFile}
+POST https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}/versions/{versionNumber}/getPackageContents -OutFile {saveToFile}
 ```
 
 #### Parameters
@@ -529,7 +527,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 Downloads an app file.
 
 ```
-POST https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2/getPackageContents -OutFile "C:\temp\ExampleApp-16.0.1.2.app"
+POST https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2/getPackageContents -OutFile "C:\temp\ExampleApp-16.0.1.2.app"
 ```
 
 
@@ -538,7 +536,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222
 
 Gets the `version` in the specified `app` and `country`.
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions/{versionNumber}
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}/versions/{versionNumber}
 ```
 
 #### Parameters
@@ -552,7 +550,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2 
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2 
 ```
 
 #### Example Response
@@ -589,7 +587,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
 Updates the `version` in the specified `app` and `country` with the provided updated data.  
 **Note:** only some properties can be updated.
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions/{versionNumber}
+PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}/versions/{versionNumber}
 ```
 
 #### Parameters
@@ -606,7 +604,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 Marking an app version as deprecated.
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2 
+PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2 
 
 {
     "availability": "Deprecated"
@@ -617,7 +615,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-222
 Marks older versions of your app as incompatible with a dependency app, starting with a specific version. In such cases, make sure you upload another version of your app that is compatible with the new version of the dependency app. 
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2
+PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/versions/16.0.1.2
 
 {
     "dependencies": [
@@ -681,7 +679,7 @@ Represents a customer's `environment` that has a specific `version` of an `app` 
 
 Lists the `environment`s in the specified `app` and `country` that have the app installed.
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/environments
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}/environments
 ```
 #### Parameters
 |Type|Name|Description|Schema|
@@ -693,7 +691,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environments?$filter=version eq '16.0.1.2'
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environments?$filter=version eq '16.0.1.2'
 ```
 
 #### Example Response
@@ -749,7 +747,7 @@ It is also not possible to apply a hotfix to an already installed application ve
 Lists all the hotfix operations that were requested for a specific `app` and `country`.
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/environmentHotfixes?$filter=<odata_filter>
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}/environmentHotfixes?$filter=<odata_filter>
 ```
 
 #### Parameters
@@ -763,7 +761,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes?$filter=targetAppVersion eq '16.0.1.2'
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes?$filter=targetAppVersion eq '16.0.1.2'
 ```
 
 #### Example Response
@@ -794,7 +792,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-
 Gets an `environment hotfix` operation by its ID.  
 This endpoint can be used to track the status/outcome of a hotfix request.
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/environmentHotfixes/{id}
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}/environmentHotfixes/{id}
 ```
 
 #### Parameters
@@ -808,7 +806,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes/dddddddd-3333-4444-5555-eeeeeeeeeeee
+GET https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes/dddddddd-3333-4444-5555-eeeeeeeeeeee
 ```
 
 #### Example Response
@@ -836,7 +834,7 @@ Schedules a hotfix for a specific `environment` to the specified `version`.
 The hotfix operation ID that is returned can be used to track the status/outcome of the operation (see: [Get environment hotfix](#get-environment-hotfix)).
 
 ```
-POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/environmentHotfixes
+POST https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}/environmentHotfixes
 ```
 
 #### Parameters
@@ -850,7 +848,7 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 #### Example Request
 
 ```
-POST https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes
+POST https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes
 
 {
     "environmentAadTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
@@ -887,7 +885,7 @@ Updates an existing `environment hotfix` operation.
 It can currently only be used to cancel a requested hotfix that hasn't yet started running.
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/environmentHotfixes/{id}
+PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/{appId}/countries/{countryCode}/environmentHotfixes/{id}
 ```
 
 #### Parameters
@@ -902,7 +900,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 #### Example Request
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes/dddddddd-3333-4444-5555-eeeeeeeeeeee
+PATCH https://apps.businesscentral.dynamics.com/v1.4/apps/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb/countries/US/environmentHotfixes/dddddddd-3333-4444-5555-eeeeeeeeeeee
 
 {
     "status": "Canceled"
@@ -929,13 +927,13 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/aaaaaaaa-0000-1111-222
 }
 ```
 
-<!--## Endpoints
+<!--
 
 ***
 ### GetCurrentUsersPermissionsAsync
 #### Gets all permissions this request's user has to an app.
 ```
-POST /v1.0/apps/{appId}/getMyPermissions
+POST /v1.4/apps/{appId}/getMyPermissions
 ```
 #### Parameters
 |Type|Name|Description|Schema|
@@ -953,32 +951,11 @@ POST /v1.0/apps/{appId}/getMyPermissions
 - `application/json`
 - `text/json`
 
-***
-### ListRoles
-#### Lists all available roles.
-```
-GET /v1.0/apps/{appId}/roles
-```
-#### Parameters
-|Type|Name|Description|Schema|
-|---|---|---|---|
-|path|appId|The id of the app to list the roles for.|string (uuid)|
-
-#### Responses
-|HTTP Code|Description|Schema|
-|---|---|---|
-|**200**|Success|[ListResult[Role]](#listresult[role])|
-|**404**|Not Found||
-
-#### Produces
-- `text/plain`
-- `application/json`
-- `text/json`
 -->
 
 ## Getting detailed error messages
 
-To get detailed error messages from t API calls, wrap the calls in a try-catch block, as shown in the following PowerShell example: 
+To get detailed error messages from the API calls, wrap the calls in a try-catch block, as shown in the following PowerShell example: 
 
 ```powershell
 try {

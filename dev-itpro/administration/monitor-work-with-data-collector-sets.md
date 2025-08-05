@@ -5,9 +5,10 @@ ms.custom:
   - bap-template
   - evergreen
 ms.date: 01/04/2024
+ms.update-cycle: 1095-days
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ---
 # Working with Data Collector sets

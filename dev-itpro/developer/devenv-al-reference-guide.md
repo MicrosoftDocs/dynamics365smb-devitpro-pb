@@ -4,7 +4,7 @@ description: Explore the comprehensive AL Reference Guide for Dynamics 365 Busin
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 01/08/2025
-ms.topic: conceptual
+ms.topic: overview
 ms.reviewer: solsen
 ---
 

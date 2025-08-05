@@ -1,21 +1,22 @@
 ---
 title: Adding and Accessing Resources in Business Central extensions
-description: Describes how to package and use resources with Business Central extensions
-ms.date: 12/05/2024
-ms.topic: conceptual
+description: Describes how to package and use resources, such as sample data and images with Business Central extensions.
+ms.date: 07/16/2025
+ms.topic: concept-article
 author: thloke
 ms.reviewer: solsen
+ms.author: solsen
 ---
 
 # Adding and accessing resources in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions
 
 [!INCLUDE[2024-releasewave2_25.2](../includes/2024-releasewave2_25.2.md)]
 
-This article describes how to package and use resources with your extensions. Resources are arbitrary files that can be included with your extension and accessed at runtime. For example, you can include sample data, images, or any other file that are used by your extension. Resources can only be accessed within the extension that includes them; it isn't possible for extensions to access resources that are packaged with other extensions.
+This article describes how to package and use resources with your extensions. Resources are arbitrary files that can be included with your extension and accessed at runtime. For example, you can include sample data, images, or any other file that's used by your extension. Resources can only be accessed within the extension that includes them; it isn't possible for extensions to access resources that are packaged with other extensions.
 
 ## Specifying resource folders
 
-To package resources in an extension, you need to declare which folders within your project contain resources to be packaged in the extension's manifest file (app.json). To do this, add the `"resourceFolders"` property to the manifest file. For example, the following code snippet specifies that files within the `Resources` folder should be packaged as resources:
+To package resources in an extension, you must declare which folders within your project contain resources to be packaged in the extension's manifest file (app.json). To do this, add the `"resourceFolders"` property to the manifest file. For example, the following code snippet specifies that files within the `Resources` folder should be packaged as resources:
 
 ```json
 "resourceFolders": ["Resources"]
@@ -35,12 +36,12 @@ Resources can be accessed from AL code at runtime. There are several methods tha
 
 | Method | Description |
 |--------|-------------|
-| `NavApp.GetResource(ResourceName: Text; var ResourceStream: Instream; (Optional) Encoding: TextEncoding)` | Used to read the content of resource files at runtime |
-| `NavApp.GetResourceAsText(ResourceName: Text; (Optional) Encoding: TextEncoding): Text` | Used to read the content of resource files directly into a Text object |
-| `NavApp.GetResourceAsJson(ResourceName: Text; (Optional) Encoding: TextEncoding): JsonObject` | Used to read the content of resource files directly into a JsonObject |
-| `NavApp.ListResources((Optional) Filter: Text)` | Used to list available resources in an extension |
+| `NavApp.GetResource(ResourceName: Text; var ResourceStream: Instream; (Optional) Encoding: TextEncoding)` | Used to read the content of resource files at runtime. |
+| `NavApp.GetResourceAsText(ResourceName: Text; (Optional) Encoding: TextEncoding): Text` | Used to read the content of resource files directly into a Text object. |
+| `NavApp.GetResourceAsJson(ResourceName: Text; (Optional) Encoding: TextEncoding): JsonObject` | Used to read the content of resource files directly into a JsonObject. |
+| `NavApp.ListResources((Optional) Filter: Text)` | Used to list available resources in an extension. |
 
-The `ResourceName` of a resource is the path to the resource from the folder specified in the `resourceFolders` attribute of the app.json. For example, if you had the following project structure:
+The `ResourceName` of a resource is the path to the resource from the folder specified in the `resourceFolders` attribute of the `app.json` file. For example, if you had the following project structure:
 
 ```
 MyApp
@@ -53,7 +54,7 @@ MyApp
             Template2.png
 ```
 
-You can access the content of the "Template1.txt" resource file with the following code:
+You can access the content of the `Template1.txt` resource file with the following code:
 
 ```al
 procedure UsingResources()
@@ -76,7 +77,7 @@ NavApp.ListResources("*.png"); // Will return ["Images/SampleImage1.png", "Image
 
 ## Limits on resources
 
-The following limits are enforced on the resources you can include in an extension:
+The following limits are enforced on the resources that you can include in an extension:
 
 | Limit | Value |
 |-------|-------|
@@ -86,11 +87,14 @@ The following limits are enforced on the resources you can include in an extensi
 
 These limits are subject to change in the future.
 
+> [!NOTE]
+> Before version 26.3, embedded resources can't be retrieved in runtime packages. The only way around that is to publish the regular package to the database.
+
 ## Limiting access to resources
 
-An extension is only able to access its own resources. This means that if two apps declare resources with the same name, they're only be able to access their own versions of the resource.
+An extension is only able to access its own resources. This means that if two apps declare resources with the same name, they're only able to access their own versions of the resource.
 
-Resources are treated like code with regards to the [Resource exposure policy](devenv-security-settings-and-ip-protection.md) setting for the application. If an application has `allowDownloadingSource` set to `true`, then any resources included with the extension will be packaged into the .app file that is downloaded.
+Resources are treated like code with regard to the [Resource exposure policy](devenv-security-settings-and-ip-protection.md) setting for the application. If an application has `allowDownloadingSource` set to `true`, then any resources included with the extension is packaged into the .app file that is downloaded.
 
 ## Related information
 

@@ -1,23 +1,26 @@
 ---
 title: Create a .NET Wrapper Module
-description: This topic provides a description of how to contribute a .NET wrapper module.
+description: This article provides a description of how to contribute a .NET wrapper module.
 author: bholtorf
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: bholtorf
-ms.date: 04/01/2021
-ms.reviewer: bholtorf
+ms.date: 06/16/2025
+ms.reviewer: solsen
 ---
 
-# Create a .NET Wrapper Module
-This topic provides a description of how to contribute a .NET wrapper module to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], using the Regex module as an example. The Regex module is published in the [BCApps](https://github.com/microsoft/BCApps/) repository, and if you aren't already familiar with the Regex class in .NET, see the [.NET documentation](/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1).
+# Create a .NET wrapper module
+
+This article provides a description of how to contribute a .NET wrapper module to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], using the Regex module as an example. The Regex module is published in the [BCApps](https://github.com/microsoft/BCApps/) repository, and if you aren't already familiar with the Regex class in .NET, learn more in [.NET documentation](/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1).
 
 ## Converting the Regex architecture
-In .NET, the Regex class provides functionality for regular expressions. You can implement the functionality in a similar way as a system module by creating a Regex codeunit that provides an interface and an internal Regex implementation that contains the logic.
+
+In .NET, the `Regex` class provides functionality for regular expressions. You can implement the functionality in a similar way as a system module by creating a Regex codeunit that provides an interface and an internal Regex implementation that contains the logic.
 
 :::image type="content" source="../media/regex-figure.png" alt-text="Regex components.":::
 
 ## Wrapping a .NET method
-For some methods, you can wrap the .NET method in AL in an internal codeunit and expose the procedure to the facade. For example, you can wrap the IsMatch method as follows.
+
+For some methods, you can wrap the .NET method in AL in an internal codeunit and expose the procedure to the facade. For example, you can wrap the `IsMatch` method as follows.
 
 ```al
 /// <summary>
@@ -42,6 +45,9 @@ codeunit 3960 Regex
     end;
 }
 ```
+
+This codeunit provides a public interface to the `IsMatch` method, which internally calls the `IsMatch` method in the `Regex Impl.` codeunit. The `Regex Impl.` codeunit is an internal implementation that uses the .NET Regex class to perform the actual matching.
+
 ```al
 codeunit 3961 "Regex Impl."
 {
@@ -57,15 +63,15 @@ codeunit 3961 "Regex Impl."
     end;
 }
 ```
+
 ## Codeunits in method signatures
-Not all .NET Regex classes map so directly to system modules, however. The .NET Regex class also includes classes such as Match, Group, and Capture, that are used to represent results for regular expression matches. While it's tempting to wrap these classes in codeunits and use those to output results, you should avoid that because procedure signatures should not contain codeunits. Instead, use temporary tables to model these classes. The following code example shows how to implement the Match class in a temporary table.
+
+Not all .NET Regex classes map so directly to system modules, however. The .NET Regex class also includes classes such as `Match`, `Group`, and `Capture`, that are used to represent results for regular expression matches. While it's tempting to wrap these classes in codeunits and use those to output results, you should avoid that because procedure signatures shouldn't contain codeunits. Instead, use temporary tables to model these classes. The following code example shows how to implement the `Match` class in a temporary table.
 
 ```al
 /// <summary>
 /// Provides a representation of Regex Matches that models Match objects in .Net
 /// </summary>
-
-
 
 /// <remark>
 /// For more information, visit /dotnet/api/system.text.regularexpressions.match?view=netcore-3.1.
@@ -101,7 +107,8 @@ table 3965 Matches
     }
 }
 ```
-The temporary table has all the normal table procedures, and can be extended with procedures if needed. Now we can write the Match objects, output by .NET, to this table.
+
+The temporary table has all the normal table procedures, and can be extended with procedures if needed. Now we can write the `Match` objects, output by .NET, to this table.
 
 ```al
 codeunit 3961 "Regex Impl."
@@ -122,18 +129,19 @@ codeunit 3961 "Regex Impl."
 
 ```
 
-## Avoiding Constructors
-The .NET Regex class includes multiple constructors, but we should not expose them in the facade. We can, however, use constructors internally, as the code previous code example shows.
+## Avoiding constructors
+
+The .NET Regex class includes multiple constructors, but we shouldn't expose them in the facade. We can, however, use constructors internally, as the code previous code example shows.
 
 Removing constructors from a class can cause overloads. One way to get around that is to use the argument-table pattern. For example, you can construct a temporary table with all optional parameters and internally implement the logic to apply them.
 
 The .NET Regex class contains three constructors that we want to support:
 
-* Regex(Pattern)
-* Regex(Pattern, RegexOptions)
-* Regex(Pattern, RegexOptions, MatchTimeout)
+- Regex(Pattern)
+- Regex(Pattern, RegexOptions)
+- Regex(Pattern, RegexOptions, MatchTimeout)
 
-In .NET, RegexOptions is an enum with options for matching the pattern (case-sensitivity, ignoring whitespace, and so on), and MatchTimeout sets a time-out interval for matching. The following example shows how to add those options to a temporary table.
+In .NET, `RegexOptions` is an enum with options for matching the pattern (case-sensitivity, ignoring whitespace, and so on), and `MatchTimeout` sets a time out interval for matching. The following example shows how to add those options to a temporary table.
 
 ```al
 /// <summary>
@@ -169,7 +177,8 @@ table 3966 "Regex Options"
 }
 
 ```
-This temporary table makes it straightforward to add overloads to the facade. For each method, there is one procedure without an options parameter, and one overload with an options table. The following example illustrates that for the Match procedure.
+
+This temporary table makes it straightforward to add overloads to the facade. For each method, there's one procedure without an options parameter, and one overload with an options table. The following example illustrates that for the `Match` procedure.
 
 ```al
 /// <summary>
@@ -198,8 +207,9 @@ This temporary table makes it straightforward to add overloads to the facade. Fo
 ```
 
 ## Related information
-[Module Architecture](devenv-blueprint.md)  
-[Getting Started with Modules in the System Application](devenv-getting-started.md)  
-[Set Up an Environment for Developing a Module](devenv-set-up-an-environment.md)  
-[Create a New Module in the System Application](devenv-new-module.md)  
-[Change a Module in the System Application](devenv-change-a-module.md)  
+
+[Module architecture](devenv-blueprint.md)  
+[Getting started with modules in the System Application](devenv-getting-started.md)  
+[Set Up an environment for developing a module](devenv-set-up-an-environment.md)  
+[Create a new module in the System Application](devenv-new-module.md)  
+[Change a module in the System Application](devenv-change-a-module.md)  

@@ -2,7 +2,7 @@
 title: Contribute a change yourself
 description: Learn how to contribute to Microsoft's AL codebase and expand extensibility points to meet your business needs. Explore collaboration opportunities today. 
 author: AleksandricMarko
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: maleksandric
 ms.date: 04/02/2025
 ms.reviewer: bholtorf

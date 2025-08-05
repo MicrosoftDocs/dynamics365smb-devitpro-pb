@@ -4,7 +4,7 @@ description: Learn about temporary tables in AL for Business Central.
 ms.custom: bap-template
 ms.date: 04/17/2024
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ---

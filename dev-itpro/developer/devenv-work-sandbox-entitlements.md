@@ -4,13 +4,13 @@ description: Learn about development sandboxes and entitlements.
 ms.author: freddyk
 ms.reviewer: jswymer
 ms.date: 01/04/2024
-ms.topic: conceptual
+ms.topic: concept-article
 author: freddydk
 ---
 
 # Working with development sandboxes and entitlements
 
-The experience that a user has in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] depends on the purchased subscription plan. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two main plans; the Essential and the Premium plan, plus a few more. For more information, see [Licensing in Dynamics 365 Business Central](../deployment/licensing.md). For detailed information about the Essential and Premium plans, see [Business Central](https://dynamics.microsoft.com/business-central/overview/) on the Microsoft Dynamics 365 site.  
+The experience that a user has in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] depends on the purchased subscription plan. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], there are two main plans; the Essential and the Premium plan, plus a few more. For more information, see [Licensing in Dynamics 365 Business Central](../deployment/licensing.md). For detailed information about the Essential and Premium plans, see [Business Central](https://www.microsoft.com/dynamics-365/products/business-central/) on the Microsoft Dynamics 365 site.  
 
 When you develop in a Docker sandbox, the Essential experience is automatically assigned to you (you set the experience on the **Company Information** page), which makes it difficult to test how a user with the Premium plan assigned will experience what you have developed.
 

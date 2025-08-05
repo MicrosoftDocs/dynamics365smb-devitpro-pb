@@ -4,7 +4,7 @@ description: Get an overview of the AL Home view for Business Central which shar
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/01/2024
 ms.custom: bap-template
 ms.collection: get-started

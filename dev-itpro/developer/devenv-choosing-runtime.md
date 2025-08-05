@@ -3,7 +3,7 @@ title: Choose runtime version in AL
 description: How to choose runtime in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 03/12/2025
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.reviewer: solsen
 ---

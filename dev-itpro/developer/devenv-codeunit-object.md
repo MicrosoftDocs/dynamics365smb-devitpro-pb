@@ -3,8 +3,9 @@ title: Codeunit object
 description: Describes the codeunit object, which is a container for business logic in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
-ms.date: 04/18/2024
-ms.topic: conceptual
+ms.date: 05/19/2025
+ms.update-cycle: 1095-days
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---
@@ -15,11 +16,11 @@ A codeunit is a container for AL code that you can use in many application objec
 
 ## Snippet support
 
-Typing the shortcut `tcodeunit` will create the basic layout for a codeunit object when using the [!INCLUDE [prod_short](includes/prod_short.md)] in Visual Studio Code.
+Typing the shortcut `tcodeunit` creates the basic layout for a codeunit object when using the [!INCLUDE [prod_short](includes/prod_short.md)] in Visual Studio Code.
 
 ## Codeunit example
 
-This codeunit example checks whether a given customer has registered a shoe size. If not, the customer is assigned a shoe size of 42. The example is for illustrational purposes only, the customer table doesn't have a `ShoeSize` field by default.
+This codeunit example checks whether a given customer registered a shoe size. If not, the customer is assigned a shoe size of 42. The example is for illustrational purposes only; the customer table doesn't have a `ShoeSize` field by default.
 
 The codeunit can be used both as a direct call to `codeunit.run(customer)` or as a call to the procedure inside the codeunit `createcustomer.CheckSize(customer)`.
 

@@ -31,10 +31,10 @@ PATCH businesscentralPrefix/subscriptions({'id'})
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **subscription**, the **subscription** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **subscription**, the **subscription** won't be updated. |
 
 ## Request body
-Here is an example of the request.
+Here's an example of the request.
 ```json
 PATCH https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'})
 Content-type: application/json
@@ -54,14 +54,14 @@ If successful, this method returns a `200 OK` response code and a **subscription
 
 **Request**
 
-Here is an example of the request.
+Here's an example of the request.
 ```
 https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'}) 
 
 ```
 
 **Response**
-Here is an example of the response. 
+Here's an example of the response. 
 
 > [!NOTE]  
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -3,7 +3,7 @@ title: Compare Work in Dynamics GP to Business Central
 description: Get some tips and tricks for how to do things in Business Central online that you currently do in Dynamics GP.
 author: jswymer
 
-ms.topic: conceptual
+ms.topic: article
 ms.devlang: al
 ms.reviewer: jswymer
 ms.search.keywords: cloud, edge, gp, migration, video

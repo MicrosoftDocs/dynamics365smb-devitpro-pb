@@ -2,11 +2,12 @@
 title: Business Central Administration Center API 
 description: Get introduced to the Business Central administration center API.
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 06/21/2024
+ms.custom: sfi-ropc-blocked
 ---
 
 # The Business Central Admin Center API

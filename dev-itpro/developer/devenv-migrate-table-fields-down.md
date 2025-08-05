@@ -3,7 +3,7 @@ title: "Moving Tables and Fields to Extensions Down the Dependency Graph"
 description: Explains how to move tables and fields from an extension to another extension that is down the dependency graph.
 author: jswymer
 ms.date: 04/01/2021
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: jswymer
 ms.reviewer: jswymer
 ---

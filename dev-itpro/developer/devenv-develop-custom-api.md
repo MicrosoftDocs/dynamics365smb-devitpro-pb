@@ -4,13 +4,13 @@ description: Learn how to develop a custom API page by using an AL extension and
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.date: 11/28/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: solsen
 ---
 
 # Developing a custom API
 
-This walkthrough describes how to develop a custom API page by using an AL extension and accessing it to retrieve responses and make updates through the API.
+This walkthrough describes how to develop a custom API page by using an AL extension and accessing it to retrieve responses and make updates through the API. This is a simple example of how to create an API page that exposes data from two tables: **Car Brand** and **Car Model**. The API pages are created with the `PageType` property set to `API`, which allows them to be used as web services.
 
 ## About this walkthrough
 
@@ -21,7 +21,7 @@ At a high-level, this process involves the following tasks:
 3. Access the API page and get the response.
 
 > [!TIP]  
-> The code in this sample has also been published to the BCTech repo. For more information, see [Introduction to Custom API](https://github.com/microsoft/BCTech/tree/master/samples/CustomAPI).
+> The code in this sample has also been published to the BCTech repo. Learn more in [Introduction to custom API](https://github.com/microsoft/BCTech/tree/master/samples/CustomAPI).
 
 ## Prerequisites
 
@@ -29,13 +29,13 @@ This walkthrough requires the following:
 
 - [!INCLUDE[prod_short](../includes/prod_short.md)], including the following:  
   - The CRONUS International Ltd. demonstration data.
-  - Visual Studio Code with the AL Language extension installed. For more information, see [Get Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
+  - Visual Studio Code with the AL Language extension installed. Learn more in [Get started with AL](../developer/devenv-get-started.md) and [AL Language extension configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
 ## Creating source tables for the API
 
 To expose data in an API page, the first thing needed is a source table. In this walkthrough, we create a table object that describes the schema for a car brand.
 
-1. Create a new table. For more information, see [Tables Overview](../developer/devenv-tables-overview.md). 
+1. Create a new table. Learn more in [Tables overview](../developer/devenv-tables-overview.md). 
 2. Name the table **Car Brand**, and specify **50100** as the table ID.  
 3. Add any necessary fields for a car brand as shown in the following code:
 
@@ -146,7 +146,7 @@ To expose data in an API page, the first thing needed is a source table. In this
 
 ## Creating API pages
 
-In the following, we'll create two API pages for both **Car Brand** and **Car Model** tables. API pages are specific pages with the `PageType` property set to `API`. For more information, see [API Page Type](devenv-api-pagetype.md).
+In the following, we'll create two API pages for both **Car Brand** and **Car Model** tables. API pages are specific pages with the `PageType` property set to `API`. Learn more in [API page type](devenv-api-pagetype.md).
 
 ### To create API pages to display **Car Brand** and **Car Model**
 
@@ -214,7 +214,7 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
     ```
 
    > [!TIP]
-   > We recommend you always specify a single field of type GUID in the `ODataKeyFields` property, as in the example above. Otherwise, some external integrations such as Power Automate and Power Apps will not work with your new API.
+   > We recommend you always specify a single field of type GUID in the `ODataKeyFields` property, as in the example above. Otherwise, some external integrations such as Power Automate and Power Apps do not work with your new API.
    >
    > Only in the case that you're integrating with a system that has different requirements can you specify a list of fields of different types in the `ODataKeyFields` property. For example:
    > ```AL
@@ -292,21 +292,21 @@ In the following, we'll create two API pages for both **Car Brand** and **Car Mo
 
 > [!TIP]  
 > Parts are defined as 1-N relationship by default. You can, however, define it to be as 1-0, 1-1 relationship. In order to achieve that add the **Multiplicity=ZeroOrOne;** property in your part as shown below:
->```AL
->part(carModels; "API Car Model")
+> ```AL
+> part(carModels; "API Car Model")
 >    {
 >        Multiplicity = ZeroOrOne;
 >        EntityName = 'carModel';
 >        SubPageLink = "Brand Id" = Field(SystemId);
 >    }
 > ```
->This will change the **NavigationalProperty** in the metadata from a Collection to an object as shown below:
+> This will change the **NavigationalProperty** in the metadata from a Collection to an object as shown below:
 > 
->```xml
-><NavigationProperty Name="carModel" Type="Microsoft.NAV.carModel" ContainsTarget="true">
+> ```xml
+> <NavigationProperty Name="carModel" Type="Microsoft.NAV.carModel" ContainsTarget="true">
 >       <ReferentialConstraint Property="id" ReferencedProperty="brandId"/>
-></NavigationProperty>
->```
+> </NavigationProperty>
+> ```
 
 ## Using carBrand and carModel APIs
 
@@ -350,6 +350,7 @@ Which results in the following response:
 We can now create a car model that belongs to the car brand that we just created. Since the navigational property is defined in the API page as a part, we can create a car model in one of the following different ways:
 
 ### Example 1
+
 ``` 
 POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(24cafc3a-b1fe-ea11-9306-000d3a482952)/carModels
 {
@@ -359,6 +360,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/
     "fuelType": "Petrol"
 }
 ```
+
 ### Example 2
 
 ``` 
@@ -396,6 +398,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/
 			    }]
 }
 ```
+
 ### Example 4
 
 You can also use the navigational property to get car models of a car brand in a single request as illustrated below:

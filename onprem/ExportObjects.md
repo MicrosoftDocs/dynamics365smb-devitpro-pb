@@ -5,6 +5,7 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.assetid: 3aa7629a-ced2-461d-8322-59347ec5d4f4
 caps.latest.revision: 19
+ms.custom: sfi-ropc-blocked
 ---
 # ExportObjects
 Exports objects from the specified database.  

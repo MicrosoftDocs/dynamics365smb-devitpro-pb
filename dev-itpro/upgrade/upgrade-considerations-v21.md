@@ -3,8 +3,9 @@ title: General Information and Considerations When Upgrading to Business Central
 description: This article provides tips and considerations to prepare a solution when you're planning to upgrade to Business Central 2022 release wave 2.
 author: jswymer
 ms.custom: evergreen
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.author: jswymer
 ms.reviewer: jswymer
 ---

@@ -3,7 +3,8 @@ title: Defining an XMLport schema
 description: An XMLport schema determines which data is exported from or imported to Dynamics 365 Business Central database tables and the format and structure of the files used.
 author: blrobl
 ms.date: 01/30/2025
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: concept-article
 ms.author: brobledodiaz
 ms.reviewer: solsen
 ms.custom: evergreen

@@ -1,12 +1,12 @@
 ---
 title: Using Filter Expressions in OData URIs
-description: Learn how to use filter expressions in OData URIs to limit the results returned in a document.
+description: Learn how to use filter expressions in OData URIs to limit results, map to AL filters, and see syntax examples.
 author: jswymer
 ms.author: jswymer
 ms.custom: bap-template
-ms.date: 06/14/2024
+ms.date: 06/20/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Using filter expressions in OData URIs
 
@@ -16,7 +16,7 @@ You use filter expressions in OData URIs to limit the results in a returned docu
 
  To add a filter to an OData URI, add `$filter=` to the end of the name of the published web service. For example, the following URI filters the **City** field in the **Customer** page to return all customers who are located in Miami:  
 
-```  
+```https  
 https://localhost:7048/BC240/ODataV4/Company('CRONUS International Ltd.')/Customer?$filter=City eq 'Miami'  
 ```  
 
@@ -24,23 +24,23 @@ The following table shows the filters that are supported in [!INCLUDE[prod_short
 
 |Definition|Example and explanation|Equivalent AL expression|  
 |----------------|-----------------------------|---------------------------------|  
-|Select a range of values|`$filter=Entry_No gt 610 and Entry_No lt 615`<br /><br /> Query on GLEntry service. Returns entry numbers 611 through 614.|..|
+|Select a range of values|`$filter=Entry_No gt 610 and Entry_No lt 615`<br /><br /> Query on GLEntry service. Returns entry numbers 611 through 614.|`..`|
 |In a list of values|`$filter=EntryNo in (610, 612, 614)`<br /><br /> Query that returns entry numbers 610, 612, and 614<br><br>Note: This only works in `$schemaversion=2.1`.||
-|And|`$filter=Country_Region_Code eq 'ES' and Payment_Terms_Code eq '14 DAYS'`<br /><br /> Query on Customer service. Returns customers in Spain where Payment\_Terms\_Code=**14 DAYS**.|&|  
-|Or|`$filter= Country_Region_Code eq 'ES' or Country_Region_Code eq 'US'`<br /><br /> Query on Customer service. Returns customers in Spain and the United States.<br /><br /> **Alert:** You can use OR operators to apply different filters on the same field. However, you can't use OR operators to apply filters on two different fields.|&#124;|  
-|Less than|`$filter=Entry_No lt 610`<br /><br /> Query on GLEntry service. Returns entry numbers that are less than 610.|\<|  
-|Greater than|`$filter= Entry_No gt 610`<br /><br /> Query on GLEntry service. Returns entry numbers 611 and higher.|>|  
-|Greater than or equal to|`$filter=Entry_No ge 610`<br /><br /> Query on GLEntry service. Returns entry numbers 610 and higher.|>=|  
-|Less than or equal to|`$filter=Entry_No le 610`<br /><br /> Query on GLEntry service. Returns entry numbers up to and including 610.|\<=|  
-|Different from \(not equal\)|`$filter=VAT_Bus_Posting_Group ne 'EXPORT'`<br /><br /> Query on Customer service. Returns all customers with VAT\_Bus\_Posting\_Group not equal to EXPORT.|\<>|  
-|endswith|`$filter=endswith(VAT_Bus_Posting_Group,'RT')`<br /><br /> Query on Customer service. Returns all customers with VAT\_Bus\_Posting\_Group values that end in 'RT'.|\*|  
-|startswith|`$filter=startswith(Name, 'S')`<br /><br /> Query on Customer service. Returns all customers names beginning with 'S'.|\*|  
-|contains|`$filter=contains(Name, 'urn')`<br /><br /> Query on Customer service. Returns customer records for customers with names containing the string “urn”.||  
+|And|`$filter=Country_Region_Code eq 'ES' and Payment_Terms_Code eq '14 DAYS'`<br /><br /> Query on Customer service. Returns customers in Spain where Payment\_Terms\_Code=**14 DAYS**.|`&`|  
+|Or|`$filter= Country_Region_Code eq 'ES' or Country_Region_Code eq 'US'`<br /><br /> Query on Customer service. Returns customers in Spain and the United States.<br /><br /> **Alert:** You can use OR operators to apply different filters on the same field. However, you can't use OR operators to apply filters on two different fields.|`&#124;`|  
+|Less than|`$filter=Entry_No lt 610`<br /><br /> Query on GLEntry service. Returns entry numbers that are less than 610.|`<`|  
+|Greater than|`$filter= Entry_No gt 610`<br /><br /> Query on GLEntry service. Returns entry numbers 611 and higher.|`>`|  
+|Greater than or equal to|`$filter=Entry_No ge 610`<br /><br /> Query on GLEntry service. Returns entry numbers 610 and higher.|`>=`|  
+|Less than or equal to|`$filter=Entry_No le 610`<br /><br /> Query on GLEntry service. Returns entry numbers up to and including 610.|`<=`|  
+|Different from \(not equal\)|`$filter=VAT_Bus_Posting_Group ne 'EXPORT'`<br /><br /> Query on Customer service. Returns all customers with VAT\_Bus\_Posting\_Group not equal to EXPORT.|`<>`|  
+|endswith|`$filter=endswith(VAT_Bus_Posting_Group,'RT')`<br /><br /> Query on Customer service. Returns all customers with VAT\_Bus\_Posting\_Group values that end in 'RT'.|`*`|  
+|startswith|`$filter=startswith(Name, 'S')`<br /><br /> Query on Customer service. Returns all customers names beginning with 'S'.|`*`|  
+|contains|`$filter=contains(Name, 'urn')`<br /><br /> Query on Customer service. Returns customer records for customers with names containing the string `urn`.||  
 |substring|`$filter=substring(Location_Code, 5) eq 'RED'`<br /><br /> Query on Customer service. Returns true for customers with the string RED in their location code starting as position 5.||  
 |tolower|`$filter=tolower(Location_Code) eq 'code red'`||  
 |toupper|`$filter=toupper(FText) eq '2ND ROW'`||  
 
->[!Note]
+>[!NOTE]
 > These filters are more robust and more flexible in `$schemaversion=2.1`.
 
 <!--
@@ -52,8 +52,8 @@ The following table shows the filters that are supported in [!INCLUDE[prod_short
 |ceiling|`$filter=ceiling(FDecimal) eq 1`|| 
 |trim|`$filter=trim(FCode) eq 'CODE RED'`||       -->
 
->[!Note]
-> There is a special filter, `journals.templateDisplayName` which returns default journals if a user hasn't defined the filter criteria.
+>[!NOTE]
+> There's a special filter, `journals.templateDisplayName`, which returns default journals if a user doesn't define the filter criteria.
 
 > [!NOTE]  
 > You can learn more about setting the filters that are specific to AL language by checking out [Enter criteria in Filters](../developer/devenv-entering-criteria-in-filters.md) article.
@@ -64,7 +64,7 @@ For filters that don't have equivalent AL expressions, the platform uses the clo
 
 If there's no AL approximation, an error is reported. For example, an error can occur if you perform `Or` over different fields, like `field1 eq 1 or field2 eq 2`.
 
-## Referencing different data types in Filter expressions
+## Referencing different data types in filter expressions
 
 Use the appropriate notation for different data types with filter expressions.  
 
@@ -78,5 +78,5 @@ Nested function calls in filter clauses are supported in `$schemaversion=2.1` an
 
 ## Related information
 
-[OData Web Services](OData-Web-Services.md)  
-[Microsoft OData Docs - Query options overview](/odata/concepts/queryoptions-overview)  
+[OData web services](OData-Web-Services.md)  
+[Microsoft OData docs - query options overview](/odata/concepts/queryoptions-overview)  

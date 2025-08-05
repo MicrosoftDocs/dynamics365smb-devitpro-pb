@@ -4,8 +4,9 @@ description: Describes the steps you must go through to successfully submit your
 author: SusanneWindfeldPedersen
 ms.date: 01/30/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: checklist
 ms.author: freddyk
+ms.custom: sfi-ropc-nochange
 ---
 
 # Technical validation

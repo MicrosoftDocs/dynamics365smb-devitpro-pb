@@ -26,7 +26,7 @@ All functionality in [!INCLUDE[prod_short](includes/prod_short.md)] is coded in 
 - Codeunits contain code for logical calculations and for the application behavior.
 - Report objects define the layout and data for reports.
 
-For more information about the objects that you can create for your extension, see [Extension objects overview](devenv-extension-object-overview.md).
+Learn more about the objects that you can create for your extension in [Extension objects overview](devenv-extension-object-overview.md).
 
 These objects are stored as code, known as AL code, and are saved in files with the `.al` file extension. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality, which allows you to work with multiple AL folders within one workspace. Learn more about how to group a set of disparate project folders into one workspace in [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md).
 
@@ -56,10 +56,6 @@ Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md
 > For some users the <kbd>Ctrl</kbd>+<kbd>F5</kbd>  shortcut key might not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** menu in Visual Studio Code.  
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
-
-<!--
-> [!NOTE]
-> If you have previous experience working with the C/SIDE development environment and need an overview of some of the changes between the two development environments, see [Differences in the Development Environments](devenv-differences.md). -->
 
 ## Extending the functionality of Business Central
 

@@ -5,9 +5,10 @@ ms.custom:
   - bap-template
   - evergreen
 ms.date: 04/16/2024
+ms.update-cycle: 1095-days
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: article
+ms.topic: how-to
 ms.author: jswymer
 author: jswymer
 ---

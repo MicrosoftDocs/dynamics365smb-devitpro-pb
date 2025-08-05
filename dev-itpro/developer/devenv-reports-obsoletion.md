@@ -1,10 +1,10 @@
 ---
 title: Obsoleting reports
-description: Learn about how to obsolete Business Central reports
+description: Learn how to obsolete Business Central reports.
 author: KennieNP
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.author: kepontop
 ms.date: 03/13/2025
 ---
@@ -42,7 +42,7 @@ report 50100 MyReport
 #endif
 ```
 
-To learn more, go to [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md).
+To learn more about the guidelines, go to [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md).
 
 ## How to communicate report obsoletion to users: Tell-me search results
 
@@ -223,7 +223,7 @@ Report telemetry gathers data about which, and when, reports are run in environm
 
 Tenant administrators and app publishers can use this data to gather statistics on report and layout use. The information lets you communicate to organizations and users that they're using reports or layouts that won't be unavailable in the future.
 
-To learn more, go to [Report telemetry](../administration/telemetry-reports-trace.md).
+To learn more about the data provided, go to [Analyzing report telemetry](../administration/telemetry-reports-trace.md).
 
 ## Related information
 

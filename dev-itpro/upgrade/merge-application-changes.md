@@ -2,7 +2,8 @@
 title: "Merge Application Changes"
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: how-to
 author: jswymer
 ---
 # Merge Application Changes

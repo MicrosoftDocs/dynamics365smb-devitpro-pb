@@ -2,8 +2,9 @@
 title: System-defined variables
 description: Describes the system-defined variables that are automatically declared and initialized in AL for Business Central.
 ms.date: 04/26/2024
+ms.update-cycle: 1095-days
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.custom: evergreen
 author: SusanneWindfeldPedersen
 ms.author: solsen

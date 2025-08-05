@@ -4,8 +4,9 @@ description: Describes the operators you can use in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/18/2024
+ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.collection: get-started
 ---

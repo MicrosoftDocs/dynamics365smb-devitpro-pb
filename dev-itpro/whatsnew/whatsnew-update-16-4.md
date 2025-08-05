@@ -3,8 +3,9 @@ title: "Update 16.4 for Microsoft Dynamics 365 Business Central 2020 Release Wav
 ms.author: solsen
 description: Find out what's changed with update 16.4.
 ms.date: 04/01/2024
+ms.update-cycle: 1095-days
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ---

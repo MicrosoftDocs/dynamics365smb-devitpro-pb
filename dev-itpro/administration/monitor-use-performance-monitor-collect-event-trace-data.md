@@ -5,9 +5,10 @@ ms.custom:
   - bap-template
   - evergreen
 ms.date: 10/26/2024
+ms.update-cycle: 1095-days
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: how-to
 author: jswymer
 ---
 # Use Performance Monitor to collect event trace data

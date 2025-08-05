@@ -3,7 +3,7 @@ title: Mock outbound HttpClient web service calls during testing
 description: Learn about how to test HttpClient web calls to external services without invoking the live/actual/remote service.
 ms.date: 03/17/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ---

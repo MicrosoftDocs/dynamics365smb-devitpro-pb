@@ -1,20 +1,20 @@
 ---
 title: Creating an Excel layout report
-description: Learn how to create a report using an Excel layout.
+description: Learn how to create an Excel layout report.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 03/13/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kepontop
 ---
 # Creating an Excel layout report
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-When you create a new report, there are two main tasks to consider. First, you define the report dataset of data items and columns. Then, you design the report layout. With the Excel report layout, you can create a basic report that prints a dataset and leaves it up to the end-user to further modify it by using the full palette of capabilities in Excel such as sliders, diagrams, charts, pivot tables, and PowerQuery to design the report. This offers flexibility and freedom for the end-user, being able to change the look and feel of a report, adding more views, filtering, and sorting on data. Such a layout designed by the end-user can be imported and used as a new layout. 
+When you create a new report, there are two main tasks to consider. First, define the report dataset of data items and columns. Then, design the report layout. With the Excel report layout, you can create a basic report that prints a dataset and leaves it up to the end-user to further modify it by using the full palette of capabilities in Excel such as sliders, diagrams, charts, pivot tables, and PowerQuery to design the report. This offers flexibility and freedom for the end-user, being able to change the look and feel of a report, adding more views, filtering, and sorting on data. Such a layout designed by the end-user can be imported and used as a new layout. 
 
-For more information about the report object, go to [Report Object](devenv-report-object.md) and for report extension objects, go to [Report Extension Object](devenv-report-ext-object.md).
+For more information about display information from a database, go to [Report object](devenv-report-object.md) and for information about extending existing report objects, go to [Report extension object](devenv-report-ext-object.md).
 
 ## How Excel layouts work
 
@@ -36,7 +36,7 @@ Every Excel layout file must have a worksheet called _Data_. This worksheet has 
 > [!TIP]  
 > When developing Excel layouts, you can add demo data to the _Data_ worksheet to make it easier to see the end result when the report is rendered with the layout. The data is removed when importing it to [!INCLUDE[prod_short](../includes/prod_short.md)] but if you include Excel layouts in an app/extension, you might want to keep the demo data there for easier troubleshooting later.
 
-Learn more in [Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts).
+Learn more about working with Excel layouts in [Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts).
 
 ### Excel layout data contract in 2023 release wave 2 and later versions
 
@@ -61,7 +61,7 @@ Starting from version 23.3, the [!INCLUDE[prod_short](../includes/prod_short.md)
 - CaptionData
 - Aggregated Metadata
 
-All three system worksheets are hidden by default and the data in these worksheets is organized in Excel tables from which you can reference individual fields using Excel table formulas.
+By default, all three system worksheets are hidden and the data in these worksheets is organized in Excel tables from which you can reference individual fields using Excel table formulas.
 
 > [!NOTE]  
 > Excel report layout workbooks include named formulas for easier lookups. For more information, go to [Named formulas](#named-formulas).
@@ -89,7 +89,7 @@ The data in the *CaptionData* worksheet is located in the Excel table **CaptionD
 |Column|Description|
 |------|-----------|
 |CaptionKey| Includes field caption names for all dataset fields with 'IncludeCaption = true' and label names in the labels section of the report. Values from the CaptionKey column can be used in the layout enclosed in $ characters. Read more about how translations work in the following sections.|
-|Value| The string in the language specified by the user when running the report. Data in this column is inserted by the [!INCLUDE[prod_short](../includes/prod_short.md)] server when it generates the Excel report. Don't add data here manually.|
+|Value| The string in the language specified by the user when running the report. The [!INCLUDE[prod_short](../includes/prod_short.md)] server inserts data in this column when it generates the Excel report. Avoid adding data here manually.|
 
 #### Aggregated metadata sheet definition (multiple tables)
 
@@ -112,6 +112,7 @@ The *ReportMetadataValues* table contains metadata from the report object.
 |Extension Version | The version of the app/extension for the report.|
 |Object ID | The object ID of the report. |
 |Object Name | The object name of the report.|
+|Object Caption | The object caption of the report.|
 |About This Report Title | The *about this report title* as declared in the Request Page setup in the AL report. |
 |About This Report Text | The *about this report text* as declared in the Request Page setup in the AL report. |
 |Report help link | Help link (if setup) in the extension and report object.|
@@ -132,6 +133,8 @@ The *ReportRequestValues* table contains metadata from the report request (the r
 | User Id | The user ID associated to 'User name'. |
 | User name | The user who ran the report. |
 | Date | The date and time of the report invocation. |
+| Date (Local) | The date and time when the report runs, using the local time zone. |
+| UTC Offset | The offset between UTC and local time, based on the time zone information in the user's profile. | 
 | Language | The application language identified (LCID, Windows language identifier).|
 | Format Region | The Format Region applied to the report (specified as a culture tag such as 'en-US' or 'da-DK'). |
 | Layout name | The name of the layout being used for the current Excel Workbook. Introduced in version 26.0.|
@@ -213,7 +216,7 @@ For a report developer working with AL code, maybe the simplest way to get the n
 
 ## Report labels in Excel layouts
 
-Report labels are used by report layouts as, for example, the heading for a field in a table, the title for a chart, or the title for the report itself. 
+Report labels are used by report layouts for many purposes. Such as the heading for a field in a table, the title for a chart, or the title for the report itself. 
 
 Starting in version 23.3, report labels defined in the *Labels* section of the report object and captions included on dataitem columns using the [IncludeCaption property](properties/devenv-includecaption-property.md) are available in the `CaptionData` worksheet in Excel. 
 
@@ -296,7 +299,7 @@ Users aren't always 100% sure how your report is used and for whom it was design
 - A description for each worksheet that explains what the users can do here.
 - Maybe also add *See also* links to documentation in case the user wants to learn more.
 
-## Example: Create a simple Excel layout report
+## Example: Create a basic Excel layout report
 
 The following steps show how to create a basic report based on an Excel layout. The example also illustrates how compilation triggers a starter template for the Excel layout. If an existing layout is referenced with the `LayoutFile` property, the layout is validated based on the schema of the report dataset.
 
@@ -351,10 +354,10 @@ It's possible to specify multiple layouts for a report. For more information, go
 [Report Object](devenv-report-object.md)
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-[Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)  
+[Defining multiple report layouts](devenv-multiple-report-layouts.md)  
 [ExcelLayout Property](properties/devenv-excellayout-property.md)  
 [ExcelLayoutMultipleDataSheets Property](properties/devenv-ExcelLayoutMultipleDataSheets-property.md)   
 [LayoutFile Property](properties/devenv-layoutfile-property.md)  
 [Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive)  
 [Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts)  
-[Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts)  
+[Available fonts](/dynamics365/business-central/ui-fonts)  

@@ -1,18 +1,18 @@
 ---
 title: Introduction to developing generative AI experiences for your extensions
-description: Learn about the basic tasks to creating a Copilot for your solution.
+description: Learn essential tasks for building Copilot extensions in Business Central. Discover key components like prompt dialog pages and Azure OpenAI integration.
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to 
 ms.collection:
-ms.date: 04/01/2025
+ms.date: 07/25/2025
 ms.custom: bap-template
 ---
 
 # Developing generative AI experiences overview
 
-Extending Copilot in Business Central requires working with several different components. In this article, we'll walk you through the necessary tasks to extend Copilot for Business Central.
+Extending Copilot in Business Central requires working with several different components. In this article, we walk you through the necessary tasks to extend Copilot for Business Central.
 
 ## Essential components
 
@@ -24,11 +24,14 @@ A Copilot in a Business Central extension involves three essential components:
 
 ![Shows the tasks in the generative-AI development](media/dev-generative-ai-overview.svg)
 
-To develop an effective Copilot extension, you'll need to work with each of these components.
+To develop an effective Copilot extension, you need to work with each of these components.
+
+> [!NOTE]
+> Although some Copilot features from Microsoft are able to search the web with Bing Search, this capability isn't available to AL developers as a component that can be used or referenced from extensions. If you're interested having your copilot features use the web for grounding data, join the partner community discussion on the [Dynamics 365 Business Central Partner Community Network on Viva Engage](https://go.microsoft.com/fwlink/?linkid=2229283) (formerly Yammer).
 
 ## Getting set up with Azure OpenAI Service
 
-Before you can get started with extedning Copilot in Business Central, you must apply for access to Azure OpenAI Service. Once you're approved, you can create an Azure OpenAI resource in the Azure portal. From this resource, you get your API key and deployment name.
+Before you can get started with extending Copilot in Business Central, you must apply for access to Azure OpenAI Service. Once you're approved, you can create an Azure OpenAI resource in the Azure portal. From this resource, you get your API key and deployment name.
 
 To learn more, go to [Get set up with Azure OpenAI Service](ai-dev-tools-get-started.md).
 

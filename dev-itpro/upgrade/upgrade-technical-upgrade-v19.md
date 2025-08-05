@@ -3,7 +3,8 @@ title: "Technical upgrade to version 19"
 description: Describes how to do a technical upgrade from Business Central 16, and 17, and V18 to V19
 ms.custom: evergreen
 ms.date: 04/18/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: upgrade-and-migration-article
 ms.author: jswymer
 author: jswymer
 ms.reviewer: jswymer

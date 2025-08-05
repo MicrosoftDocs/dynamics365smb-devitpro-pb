@@ -1,14 +1,14 @@
 ---
-title: Install a version 26 update
+title: Install a Business Central 2025 Release Wave 1 (Version 26) Update
 description: This article describes the tasks required for getting the monthly version 26 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: bap-template
-ms.date: 04/09/2025
+ms.date: 08/04/2025
 ms.reviewer: jswymer
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.author: jswymer
 author: jswymer
 ---
-# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2025 release wave 1 update
+# Install a Business Central 2025 release wave 1 update
 
 This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that are released for Business Central.
 
@@ -26,11 +26,11 @@ The application includes AL extensions that define the objects and code that mak
 
 - System Application extension
 
-    The Microsoft System Application extension includes functionality that isn't directly related the business logic. Learn more in [Overview of the System Application](../developer/devenv-system-application-overview.md). When the solution uses the Microsoft Base Application, it must also use the System Application. With a custom Base Application, your solution may or may not use the System Application. If it doesn't, skip any steps in this article related to the System Application.
+    The Microsoft System Application extension includes functionality that isn't directly related the business logic. Learn more in [Overview of the System Application](../developer/devenv-system-application-overview.md). When the solution uses the Microsoft Base Application, it must also use the System Application. With a custom Base Application, your solution might not use the System Application. If it doesn't, skip any steps in this article related to the System Application.
 
 - Business Foundation extension
 
-   This extension was introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application. It's expected to contain more functionality in future releases.
+   This extension was introduced in version 24 and currently contains objects and logic for number series, which was previously part of the base application.
 
 - Base application extension
 
@@ -42,7 +42,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - Customization extensions
 
-    Customization extensions add functionality and features to the Base Application or System Application. Extensions can be either Microsoft extensions or non-Microsoft extensions. Microsoft extensions are available on the DVD. Non-Microsoft extensions are extensions developed by your organization or by another organization, like an ISV.
+    Customization extensions add functionality and features to the Base Application or System Application. Extensions can be either Microsoft extensions or non-Microsoft extensions. Microsoft extensions are available on the DVD. Non-Microsoft extensions are extensions developed by your organization or by another organization, like a software development company.
 
 ### Single-tenant and multitenant deployments
 
@@ -95,7 +95,7 @@ First, download the update package that matches your Business Central solution.
 2. From the update page, under the **Resolution** section, select the link for downloading the update, and follow the instructions.
 3. On the computer where you downloaded the update .zip file, extract all the files to a selected location.
 
-    When extracted, the update includes the DVD folder, which contains the full Business Central product. For example, the folder includes the Business Central installation program (setup.exe), tools for upgrading to the platform, and the Microsoft extensions.
+    When extracted, the update includes the DVD folder, which contains the full Business Central product. For example, the folder includes the Business Central installation program (setup.exe), tools for upgrading to the platform, and Microsoft extensions.
 
 When this step is completed, you can continue to update your Business Central solution to the new platform and application.
 
@@ -186,7 +186,7 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
     1. On the **Specify parameters** page, set the fields as needed.
 
         > [!IMPORTANT]
-        > Clear the **SQL Database** field so that it's blank. At this time, don't set this field to the database that you want to update; otherwise, the [!INCLUDE[server](../developer/includes/server.md)] installation fails. You connect the database to the [!INCLUDE[server](../developer/includes/server.md)] later after it's converted to the new platform.
+        > Clear the **SQL Database** field so that it's blank. At this time, don't set this field to the database that you want to update; otherwise, the [!INCLUDE[server](../developer/includes/server.md)] installation fails. You connect the database to the [!INCLUDE[server](../developer/includes/server.md)] later after you convert it to the new platform.
 
     1. Select **Apply** to complete the installation.
 

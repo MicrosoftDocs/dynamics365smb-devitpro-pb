@@ -2,7 +2,7 @@
 title: Encrypting Data in Dynamics 365 for Business Central
 description: Learn about data encryption and how to use it to add security in Dynamics 365 Business Central.
 ms.date: 01/10/2025
-ms.topic: conceptual
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ---

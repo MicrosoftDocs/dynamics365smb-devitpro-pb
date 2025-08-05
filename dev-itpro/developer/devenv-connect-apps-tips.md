@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.custom: bap-template
 ms.date: 05/29/2024
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Tips for working with APIs

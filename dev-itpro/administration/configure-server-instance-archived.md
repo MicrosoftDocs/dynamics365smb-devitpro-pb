@@ -2,14 +2,16 @@
 title: Configuring Business Central Server for outdated versions
 description: Configure and modify settings in the Setup or Installed Business Central Server using the Administration Console and PowerShell Cmdlets.
 author: jswymer
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: dynamics-365-op
 ms.date: 06/21/2024
+ms.update-cycle: 1095-days
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.custom:
   - bap-template
   - evergreen
+  - sfi-ropc-nochange
 ---
 # Configuring Business Central Server in outdated versions
 

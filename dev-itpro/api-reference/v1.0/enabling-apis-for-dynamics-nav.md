@@ -4,7 +4,8 @@ description: (v1.0) Describing the steps you must go through to enable access to
 author: SusanneWindfeldPedersen
 ms.custom: evergreen
 ms.date: 05/01/2024
-ms.topic: article
+ms.update-cycle: 1095-days
+ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
 ---

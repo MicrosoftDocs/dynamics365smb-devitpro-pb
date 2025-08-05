@@ -2,9 +2,9 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 04/03/2025
+ms.date: 06/06/2025
 ms.reviewer: solsen
-ms.topic: conceptual
+ms.topic: article
 ms.author: jswymer
 ---
 
@@ -17,9 +17,10 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Hot topics right now
 
-- Register for the next [!INCLUDE [prod_short](../includes/prod_short.md)] Launch Event or watch videos from the last event: [aka.ms/BCLE](https://aka.ms/BCLE)
+- Watch the [!INCLUDE [prod_short](../includes/prod_short.md)] Launch opening and what's new sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 - AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
+- Move your on-premise customers to the cloud, find resources here: [aka.ms/AIMforPartners](https://aka.ms/AIMforPartners)
 
 ## Latest release and updates  
 
@@ -33,14 +34,13 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Stay up to date
 
-- Watch the what's new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
+- Watch the what's new sessions from this release wave: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
 - Subscribe to the Microsoft Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] channel on YouTube: [aka.ms/BCYouTube](https://aka.ms/BCYouTube)
 
 ## Social and blogs
 
-- Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
 - Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCommunity](https://community.dynamics.com/forums/thread/)
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/](https://www.microsoft.com/dynamics-365/blog/it-professional/)
@@ -62,23 +62,37 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Go to market
 
-- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [dynamics.microsoft.com/business-central/overview/](https://dynamics.microsoft.com/business-central/overview/)  
+- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [dynamics.microsoft.com/business-central/overview/](https://www.microsoft.com/dynamics-365/products/business-central/)  
 - Try [!INCLUDE [prod_short](../includes/prod_short.md)] for free (30-day trial): [go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409](https://go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] customer stories: [aka.ms/BCCustomerStories](https://aka.ms/BCCustomerStories) 
 - Discover useful resources for partners: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
 - Transact capability for [!INCLUDE [prod_short](../includes/prod_short.md)] Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
 - Find the capability guide: [aka.ms/BCCapabilities](https://aka.ms/BCCapabilities)
+- Find pitch decks: [aka.ms/BCPitchDecks](https://aka.ms/BCPitchDecks)  
 - Find Dynamics 365 icons and guidelines on usage: [aka.ms/Dynamics365Icons](https://aka.ms/Dynamics365Icons)
+
+## Licensing and pricing
+
+- [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
+- [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
 
 ## Customer onboarding and resources
 
-- Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
-- Get [!INCLUDE [prod_short](../includes/prod_short.md)] on your mobile devices: [aka.ms/BusinessCentralApp](https://aka.ms/BusinessCentralApp)
-- Get [!INCLUDE [prod_short](../includes/prod_short.md)] installable app on your desktop: [aka.ms/BCPWA](https://aka.ms/BCPWA)
-- Learn about onboarding experiences in [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)
-- Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
-- Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
-- Download the keyboard shortcut PDF: [aka.ms/BCKeyboardShortcutsPDF](https://aka.ms/BCKeyboardShortcutsPDF)
+- Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)  
+- Get [!INCLUDE [prod_short](../includes/prod_short.md)] on your mobile devices: [aka.ms/BusinessCentralApp](https://aka.ms/BusinessCentralApp)  
+- Get [!INCLUDE [prod_short](../includes/prod_short.md)] installable app on your desktop: [aka.ms/BCPWA](https://aka.ms/BCPWA)  
+- Learn about onboarding experiences in [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)  
+- Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity)  
+- Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)  
+- Download the keyboard shortcut PDF: [aka.ms/BCKeyboardShortcutsPDF](https://aka.ms/BCKeyboardShortcutsPDF)  
+- Dynamics GP partners considering a [!INCLUDE [prod_short](../includes/prod_short.md)] partner practice:  
+
+  - [Dynamics GP Learn article](/dynamics-gp)
+  - Understand the [Lifecycle Policies for Dynamics GP](/dynamics-gp/terms/lifecycle)
+  - Blog - [The benefits of moving from Dynamics GP to Business Central](https://www.microsoft.com/dynamics-365/blog/business-leader/2025/04/14/why-migrate-now-the-benefits-of-moving-from-dynamics-gp-to-microsoft-dynamics-365-business-central)
+  - Watch videos comparing work in [Dynamics GP to Dynamics 365 Business Central](https://www.youtube.com/playlist?list=PL1FESh9FqyhQIVH-Tu2RdAAG13gcZ-a9B)
+  - Marketing & campaign resources - [Event-in-a-box](https://dynamicspartners.transform.microsoft.com/download/protected?assetname=protectedassets%2FDynamics%20GP%20Migration%20Campaign%20in%20a%20Box.zip&download=1&protected=1&src=https:%2F%2Fdynamicspartners.transform.microsoft.com%2Fgtm%2Fsmb%2Fbusiness-central)
+
 
 ## AI innovation and Copilot
 
@@ -112,17 +126,18 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Apps: [aka.ms/BCPApps](https://aka.ms/BCPApps)
 - [Prototype] Low code sync of [!INCLUDE [prod_short](../includes/prod_short.md)] entities to Dataverse: [aka.ms/bc2dataverse](https://aka.ms/BC2Dataverse)
 
+## Shopify
+
+- Shopify start: [aka.ms/BCShopifyStart](https://aka.ms/BCShopifyStart)
+- Shopify FAQ: [aka.ms/BCShopifyFAQ](https://aka.ms/BCShopifyFAQ)
+- Shopify consultant: [aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
+
 ## Migrating from on-premises to cloud (online)  
 
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
 - Use migration tooling: [Migrate Data](../../administration/migrate-data.md) 
 - Community group for questions and information about managing migrations to Business Central online: [aka.ms/BCCloudMigrationYammer](https://aka.ms/bccloudmigrationyammer) ([Learn more](../../join-viva-engage.md))
 - AIM to the future with Microsoft! Move your customers to the cloud with confidence with the AIM program: [aka.ms/AIMforPartners](https://aka.ms/AIMForPartners)
-
-## Getting support
-
-- Managing technical support for customers: [Manage Technical Support](../../administration/manage-technical-support.md) 
-- Test network connectivity for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCP](https://aka.ms/BCCP)
 
 ## Developing for Business Central in general
 
@@ -132,8 +147,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Maintain your apps: [Maintain Your App](../app-maintain.md)
 - Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues)
 - Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
-- Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))
-- Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
+- Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([Learn more](../../join-viva-engage.md))  
 - Build solutions that link to [!INCLUDE [prod_short](../includes/prod_short.md)] mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
 - Troubleshoot issues with [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCTroubleshoot](https://aka.ms/bctroubleshoot)
 - Browse the images/icons available for the action bar: [aka.ms/BCIcons](https://aka.ms/BCIcons)
@@ -142,13 +156,12 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Developing apps for AppSource
 
-- AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
-- AppSource technical checklist: [aka.ms/CheckBeforeYouSubmit](https://aka.ms/CheckBeforeYouSubmit)
-- AppSource technical FAQ: [aka.ms/TechValidationFAQ](https://aka.ms/TechValidationFAQ) 
-- Set up DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)
-- Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([New to Yammer?](../../join-viva-engage.md))
-
-- Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps) 
+- AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)  
+- AppSource technical checklist: [aka.ms/CheckBeforeYouSubmit](https://aka.ms/CheckBeforeYouSubmit)  
+- AppSource technical FAQ: [aka.ms/TechValidationFAQ](https://aka.ms/TechValidationFAQ)  
+- Set up DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)  
+- Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) ([New to Yammer?](../../join-viva-engage.md))  
+- Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps)  
 - Transact capability for Business Central Apps on Microsoft AppSource: [aka.ms/BCAppTransact](https://aka.ms/BCAppTransact)
 
 ## Developing customer specific solutions
@@ -171,25 +184,14 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Compliance overview: [aka.ms/BCCompliance](https://aka.ms/BCCompliance)
 - Application compliance: [aka.ms/BCAppCompliance](https://aka.ms/BCAppCompliance)
 
-## Licensing and pricing
-
-- [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
-- [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
-
-## Shopify
-
-- Shopify start: [aka.ms/BCShopifyStart](https://aka.ms/BCShopifyStart)
-- Shopify FAQ: [aka.ms/BCShopifyFAQ](https://aka.ms/BCShopifyFAQ)
-- Shopify consultant: [aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
-
 ## Events for partners
 
 - [Business Central Launch Event (aka.ms/BCLE)](https://aka.ms/BCLE)
 - [Directions NA](https://directionsna.com)
 - [Directions EMEA](https://directions4partners.com/events/directions-emea-2023/)  
-- [Directions Asia](https://directions4partners.com/events/directions-asia-2024/)
+- [Directions ASIA](https://directions4partners.com/events/directions-asia-2024/)
 - [Business Central TechDays](https://bctechdays.com)
-- [Days of Knowledge (Nordic)](https://directions4partners.com/days-of-knowledge/)
+- [Days of Knowledge (In several countries)](https://directions4partners.com/days-of-knowledge/)
 - [Days of Knowledge (Central)](https://directions4partners.com/days-of-knowledge/)
 - [Days of Knowledge (UK)](https://directions4partners.com/days-of-knowledge/)
 
@@ -198,4 +200,9 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - [Business Central Launch Event (aka.ms/BCLE)](https://aka.ms/BCLE)
 - [DynamicsMinds](https://www.dynamicsminds.com/)
 - [UG Summit](https://www.summitna.com/)
-- [DynamicsCon](https://dynamicscon.com/)
+- [DynamicsCon](https://dynamicscon.com/) 
+
+## Getting support
+
+- Managing technical support for customers: [Manage Technical Support](../../administration/manage-technical-support.md) 
+- Test network connectivity for [!INCLUDE [prod_short](../includes/prod_short.md)]: [aka.ms/BCCP](https://aka.ms/BCCP)

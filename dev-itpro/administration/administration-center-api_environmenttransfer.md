@@ -2,7 +2,7 @@
 title: Business Central Admin Center API - Transfer environments
 description: Learn about the Business Central administration center API for transferring environments between Microsoft Entra tenants.
 author: jobulsin
-ms.topic: conceptual
+ms.topic: reference
 ms.devlang: al
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry

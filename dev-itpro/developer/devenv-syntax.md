@@ -3,7 +3,7 @@ title: Syntax and snippets
 description: Description of syntax and snippets available with the AL language for Business Central.
 author: SusanneWindfeldPedersen
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.topic: article
 ms.author: solsen
 ms.collection: get-started
 ms.reviewer: solsen
@@ -19,7 +19,7 @@ The syntax of the AL language is designed to help building business applications
 
 In addition to the inline help of IntelliSense, you have access to various snippets that give you a template for a specific object type. Use a code snippet from an .al file by start typing the snippet name. All snippets start with the letter `t`. For example, to get a template for a table, type `ttable` and press `Tab`.
 
-## <a name="ExamplesOfSnippets"></a> Examples of snippets
+## Examples of snippets
 
 The following list is a noncomprehensive list of the snippets that you can use in the AL.
 

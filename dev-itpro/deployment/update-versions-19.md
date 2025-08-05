@@ -5,8 +5,9 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/16/2024
+ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
   - evergreen

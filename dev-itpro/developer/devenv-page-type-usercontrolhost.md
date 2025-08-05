@@ -10,7 +10,7 @@ ms.reviewer: solsen
 
 # The UserControlHost page type
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] runtime 15.0, you can add the `UserControlHost` page type. The `UserControlHost` is used to render any single user control in the client. The layout is optimized by the client to maximize the available space for the user control. This page type is ideal for embedding a Power BI report entirely, or displaying a single page of a Power Bi report.
+The `UserControlHost` page type is a specialized page type introduced in [!INCLUDE [prod_short](includes/prod_short.md)] runtime 15.0. It's designed to render a single user control in the client, optimizing the layout to maximize the available space for the control. This page type is particularly useful for embedding Power BI reports or displaying individual pages of such reports. Unlike standard pages, the `UserControlHost` page type has strict limitations, allowing only one user control in the layout and restricting extensibility and actions. This article provides an overview of the `UserControlHost` page type, its usage, and an example implementation.
 
 The `UserControlHost` page type can **only** have a single control of type `usercontrol` within the layout `Content` area. Furthermore, you can't specify actions on this page type. Likewise, only a limited number of properties and triggers are available for it and the page type isn't extensible.
 
@@ -60,8 +60,8 @@ page 50101 UserControlHost
     ApplicationArea = All;
     UsageCategory = Documents;
 
-    // UserControlHost pages are not extensible (at all)
-    // Extensible = true; // This property is not supported
+    // UserControlHost pages aren't extensible (at all)
+    // Extensible = true; // This property isn't supported
 
     layout
     {
@@ -78,10 +78,13 @@ page 50101 UserControlHost
         }
     }
 
-    // Actions are not permitted
+    // Actions aren't permitted
     // actions { } // will trigger AL0875
 }
 ```
+
+> [!TIP]
+> Use this page type to show a Power BI report in its own page. Learn more in [Embed Power BI reports, scorecards, dashboards in pages](devenv-power-bi-report-parts.md#open-a-power-bi-element-expanded-in-its-own-page).
 
 ## Related information
 

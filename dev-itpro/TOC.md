@@ -70,13 +70,17 @@
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
 ### [What's new or changed](whatsnew/overview.md)
+### [Update 26.4](whatsnew/whatsnew-update-26-4.md)
+### [Update 26.3](whatsnew/whatsnew-update-26-3.md)
+### [Update 26.2](whatsnew/whatsnew-update-26-2.md)
+### [Update 26.1](whatsnew/whatsnew-update-26-1.md)
 ### [Update 26.0](whatsnew/whatsnew-update-26-0.md)
-### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
-### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
-### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
-### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
-### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 ### Updates for earlier major versions
+#### [Update 25.5](whatsnew/whatsnew-update-25-5.md)
+#### [Update 25.4](whatsnew/whatsnew-update-25-4.md)
+#### [Update 25.3](whatsnew/whatsnew-update-25-3.md)
+#### [Update 25.2](whatsnew/whatsnew-update-25-2.md)
+#### [Update 25.1](whatsnew/whatsnew-update-25-1.md)
 #### [Update 24.5](whatsnew/whatsnew-update-24-5.md)
 #### [Update 24.4](whatsnew/whatsnew-update-24-4.md)
 #### [Update 24.3](whatsnew/whatsnew-update-24-3.md)
@@ -965,6 +969,7 @@
 ###### [OnAfterIntermediateDocumentReady](developer/devenv-onafterintermediatedocumentready-event.md)
 ###### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)
 ###### [OnCustomDocumentMergerEx](developer/devenv-oncustomdocumentmergerex-event.md)
+###### [OnGetFilename](developer/devenv-ongetfilename-event.md)
 #### [Substituting a report](developer/devenv-substituting-reports.md)
 #### [Testing a report](developer/devenv-testing-reports.md)
 #### [Report performance](developer/devenv-report-performance.md)
@@ -976,6 +981,7 @@
 ##### [Specify a default printer](/dynamics365/business-central/ui-specify-printer-selection-reports?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Schedule a report to run](/dynamics365/business-central/ui-work-report#ScheduleReport?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Manage saved settings](/dynamics365/business-central/reports-saving-reusing-settings?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [Attach files, append, and protect report PDFs](developer\devenv-post-process-report-pdf.md)
 #### AL language reference (reports)
 ##### [Report datatype](developer/methods-auto/report/report-data-type.md)
 ##### [Report object properties](developer/properties/devenv-report-properties.md)
@@ -990,6 +996,7 @@
 #### [Discover events using the event recorder](developer/devenv-events-discoverability.md)
 #### [Event example](developer/devenv-events-example.md)
 #### [Walkthrough: Implementing new workflow events and responses](developer/devenv-walkthrough-workflow-events-responses.md)
+#### [Deprecate external business events](developer/devenv-deprecate-external-business-events.md)
 #### [Notifications](developer/devenv-notifications-developing.md)
 <!--Events
 #### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
@@ -1060,8 +1067,9 @@
 #### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient telemetry (outgoing webservice calls)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
-#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
 #### [Mock outbound HttpClient web service calls during testing](developer/devenv-httpclient-mock-outbound-calls.md)
+#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
+#### [HttpClientHandler](developer/attributes/devenv-httpclienthandler-attribute.md)
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
@@ -1458,6 +1466,7 @@
 
 ### APIs
 #### [Overview](webservices/api-overview.md)
+#### [API endpoint structure](webservices/api-endpoint-structure.md)
 #### [API client performance](webservices/odata-client-performance.md)
 #### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
 #### [Tips for working with APIs](developer/devenv-connect-apps-tips.md)
@@ -1577,7 +1586,9 @@
 ### [What are developer tools for Copilot](developer/developer-tools-for-copilot-overview.md)
 ### [What is considered an extension to Copilot](developer/ai-extend-copilot-overview.md)
 ### [Influence Copilot and agents without extending them](developer/copilot-and-agents-influence-without-extending.md)
+### [Prepare your app Help for Copilot (preview)](developer/ai-prepare-app-help-copilot.md)
 ### [Transparency note: Developer tools for Copilot](ai/transparency-note-dev-tools-for-copilot.md)
+### [Business Central AI resources (preview)](developer/ai-dev-tools-resources.md)
 ### [Get set up with Azure OpenAI Service](developer/ai-dev-tools-get-started.md)
 ### [Token counting in AI](developer/ai-system-app-token-counting.md)
 ### [Function calling in AI](developer/ai-system-app-function-calling.md)
@@ -1592,6 +1603,12 @@
 ##### [Customize generate mode](developer/copilot-customize-generate-mode.md)
 ##### [Launch prompt dialog page using prompt actions](developer/devenv-page-prompting-floating-actionbar.md?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ##### [Error handling in prompt dialogs](developer/devenv-page-prompt-error-handling.md)
+#### Test Copilot capability in AL
+##### [Test Copilot capability in AL](developer/ai-test-copilot.md)
+##### [Datasets](developer/ai-test-copilot-datasets.md)
+##### [Write AI tests](developer/ai-test-copilot-ai-tests.md)
+##### [AI test tool](developer/ai-test-copilot-testtool.md)
+##### [Best practices](developer/ai-test-copilot-bestpractices.md)
 ## Developing AI with machine learning APIs
 ### [Forecasting API overview](developer/ml-forecasting-api-overview.md)
 ### [Prediction API overview](developer/ml-prediction-api-overview.md)

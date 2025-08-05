@@ -1,9 +1,12 @@
 ---
-title: "AL error handling"
-description: Deal with unexpected situations that occur when code is run in AL for Business Central
+title: AL error handling
+description: Deal with unexpected situations that occur when code is run in AL for Business Central.
 ms.date: 03/01/2024
-ms.topic: conceptual
+ms.update-cycle: 1095-days
+ms.topic: concept-article
 author: SusanneWindfeldPedersen
+ms.reviewer: solsen
+ms.custom: evergreen
 ms.collection: get-started
 ---
 
