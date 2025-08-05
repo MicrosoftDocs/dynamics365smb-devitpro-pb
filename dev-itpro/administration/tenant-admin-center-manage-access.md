@@ -45,10 +45,7 @@ Before you can assign a Microsoft Entra group to an environment, the group must 
 
 ### Assign Essentials and Premium licenses across environments
 
-The customer cannot mix Essentials and Premium licenses in the same company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, it is possible to apply Essentials or Premium licenses to different environments. This way, your organization can consist of environments with Essentials companies and environments with Premium companies. In such scenarios, apply Premium licenses to all users who need to sign in to both types of companies.
-
-> [!NOTE]
-> With 2024 release wave 1, a Premium license user can sign in to a company where the **User Experience** field is set to **Essentials** on the **Company Information** page. However, the Premium user can't use any of the features that the Premium license provides. This doesn't work in the opposite direction. Users who have an Essentials license can't sign in to a company where the **User Experience** is set to **Premium** on the **Company Information** page. For more information about licensing, go to [Business Central](https://dynamics.microsoft.com/business-central/overview/) website.
+The customer can't mix Essentials and Premium licenses in the same company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, it's possible to apply Essentials or Premium licenses to different environments. This way, your organization can consist of environments with Essentials companies and environments with Premium companies. In such scenarios, assign Premium licenses to all users who need to sign in to both types of companies. A Premium license user can sign in to a company where the **User Experience** field is set to **Essentials** on the **Company Information** page. However, the Premium user can't use any of the features that the Premium license provides. This doesn't work in the opposite direction. Users who have an Essentials license can't sign in to a company where the **User Experience** is set to **Premium** on the **Company Information** page. For more information about licensing, go to [Business Central](https://www.microsoft.com/dynamics-365/products/business-central/) website.
 
 ## Manage access for delegated administrators and multitenant applications
 
