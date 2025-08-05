@@ -62,7 +62,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Go to market
 
-- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [dynamics.microsoft.com/business-central/overview/](https://dynamics.microsoft.com/business-central/overview/)  
+- [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [dynamics.microsoft.com/business-central/overview/](https://www.microsoft.com/dynamics-365/products/business-central/)  
 - Try [!INCLUDE [prod_short](../includes/prod_short.md)] for free (30-day trial): [go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409](https://go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] customer stories: [aka.ms/BCCustomerStories](https://aka.ms/BCCustomerStories) 
 - Discover useful resources for partners: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
