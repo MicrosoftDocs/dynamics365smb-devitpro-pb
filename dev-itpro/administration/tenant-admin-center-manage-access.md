@@ -5,7 +5,7 @@ author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
-ms.date: 11/01/2022
+ms.date: 08/05/2025
 ms.custom:
   - bap-template
   - sfi-ga-nochange
@@ -16,7 +16,7 @@ This article describes [!INCLUDE[prodadmincenter](../developer/includes/prodadmi
 
 ## Manage access for internal users
 
-To manage access at the environment level, you can assign a Microsoft Entra group to the environment. By assigning a Microsoft Entra group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Microsoft Entra ID will be added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
+To manage access at the environment level, you can assign a Microsoft Entra group to the environment. By assigning a Microsoft Entra group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Microsoft Entra ID are added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
 
 From the **Environments** page, you see the currently assigned group in the **Security Group** column. **Not set** indicates that no group is assigned. **Not available** indicates that the group that was assigned is no longer available in the Microsoft Entra ID.
 
@@ -38,31 +38,35 @@ Before you can assign a Microsoft Entra group to an environment, the group must 
    - To remove a group, select ![Unassign a group.](../developer/media/admin/admin-center-delete-group.png) under **Current Security Group**.
 
     > [!NOTE]
-    > If there are more than 10,000 groups in Microsoft Entra ID, they can't all be retrieved and displayed in the admin center. Instead, you'll see the message **You have too many groups to display them all**. In this case, you'll have to enter the object ID of the group that you want to assign. You get the object ID from the [Azure portal](https://portal.azure.com).
+    > If there are more than 10,000 groups in Microsoft Entra ID, they can't all be retrieved and displayed in the admin center. Instead, you see the message **You have too many groups to display them all**. In this case, you have to enter the object ID of the group that you want to assign. You get the object ID from the [Azure portal](https://portal.azure.com).
 
 4. Select **Save** when done.
 
 > [!NOTE]
-> If you change or remove a group, it can take a while before the changes to take effect or access is revoked from users.
+> If you change or remove a group, it can take a while before the changes take effect or access is revoked from users.
 
 ### Assign Essentials and Premium licenses across environments
 
-You can't mix Essentials and Premium licenses in the same company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, it's possible to apply Essentials or Premium licenses to different environments. This way, your organization can consist of environments with Essentials companies and environments with Premium companies. In such scenarios, assign Premium licenses to all users who need to sign in to both types of companies. A Premium license user can sign in to a company where the **User Experience** field is set to **Essentials** on the **Company Information** page. However, the Premium user can't use any of the features that the Premium license provides. This doesn't work in the opposite direction. Users who have an Essentials license can't sign in to a company where the **User Experience** is set to **Premium** on the **Company Information** page. For more information about licensing, go to [Business Central](https://www.microsoft.com/dynamics-365/products/business-central/) website.
+You can't mix Essentials and Premium licenses in the same company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, you can apply Essentials or Premium licenses to different environments. This way, your organization can consist of environments with Essentials companies and environments with Premium companies. In such scenarios, assign Premium licenses to all users who need to sign in to both types of companies. 
+
+A Premium license user can sign in to a company where the **User Experience** field is set to **Essentials** on the **Company Information** page. However, the Premium user can't use any features that the Premium license provides. This approach doesn't work in the opposite direction. Users who have an Essentials license can't sign in to a company where the **User Experience** field is set to **Premium** on the **Company Information** page.
+
+To learn more about licensing, go to the [Business Central](https://www.microsoft.com/dynamics-365/products/business-central/) website.
 
 ## Manage access for delegated administrators and multitenant applications
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] customers working with multiple partners might want to control which partners and [multitenant applications](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow) can access and administer which environments. Internal global administrators can use the **Partner access** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to control whether an environment is accessible and administrable by delegated administrators and multitenant applications, and if so, control from which Entra tenants these delegated administrators and multitenant applications should come to do so.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] customers working with multiple partners might want to control which partners and [multitenant applications](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow) can access and administer which environments. Internal global administrators can use the **Partner access** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to control whether an environment is accessible and administrable by delegated administrators and multitenant applications, and if so, control from which Microsoft Entra tenants these delegated administrators and multitenant applications should come to do so.
 
 > [!IMPORTANT]
-> Up to ten Entra tenants can be allowlisted per environment to enable them to access and administer the environment.
+> Up to 10 Microsoft Entra tenants can be allowlisted per environment to enable them to access and administer the environment.
 
-Environments that aren't set up to allow access and administration by the authenticating entity, either because no partner access is allowed at all or because the home Entra tenant of the delegated administrator or multitenant app isn't allowlisted, aren't visible or administrable in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and the admin center API. Delegated administrators are also blocked from accessing the environment itself through any client or API. Multitenant apps are only blocked from using the admin center API. To control app access to other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] APIs for the environment remove its permissions in the environment. Learn more at [Assign permissions to users and groups](/dynamics365/business-central/ui-define-granular-permissions).
+Environments that aren't set up to allow access and administration by the authenticating entity, either because no partner access is allowed at all or because the home Microsoft Entra tenant of the delegated administrator or multitenant app isn't allowlisted, aren't visible or administrable in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and the admin center API. Delegated administrators are also blocked from accessing the environment itself through any client or API. Multitenant apps are only blocked from using the admin center API. To control app access to other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] APIs for the environment remove its permissions in the environment. Learn more at [Assign permissions to users and groups](/dynamics365/business-central/ui-define-granular-permissions).
 
-The **Partner access** setting doesn't override the tenant-level prerequisites for any delegated administrator or multitenant application to authenticate to a customer tenant. It only allows for more granular access controls on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment-level after tenant-level prerequisites are in place. Delegated administrators that don't have an Entra role that allows for administration and access of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments assigned in the customer tenant as part of an active [GDAP relationship](/partner-center/customers/gdap-introduction) can't access the customer tenant even if their home Entra tenant is allowlisted in the **Partner access** settings for the environment. Multitenant applications that aren't registered in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] or environment itself, or for which no [consent](/entra/identity/enterprise-apps/grant-admin-consent) has been granted in the customer tenant, can't access the customer tenant even if their home Entra tenant is allowlisted in the **Partner access** settings for the environment.
+The **Partner access** setting doesn't override the tenant-level prerequisites for any delegated administrator or multitenant application to authenticate to a customer tenant. It only allows for more granular access controls on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment-level after tenant-level prerequisites are in place. Delegated administrators that don't have a Microsoft Entra role that allows for administration and access of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments assigned in the customer tenant as part of an active [GDAP relationship](/partner-center/customers/gdap-introduction) can't access the customer tenant even if their home Microsoft Entra tenant is allowlisted in the **Partner access** settings for the environment. Multitenant applications that aren't registered in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] or environment itself, or for which no [consent](/entra/identity/enterprise-apps/grant-admin-consent) is granted in the customer tenant, can't access the customer tenant even if their home Microsoft Entra tenant is allowlisted in the **Partner access** settings for the environment.
 
 ### Set up partner access
 
-To turn access on or off or limit access to selected home Entra tenants, complete the following steps:
+To turn access on or off or limit access to selected home Microsoft Entra tenants, complete the following steps:
 
 > [!IMPORTANT]
 > Only internal global administrators can control the **Partner access** settings.
