@@ -45,6 +45,10 @@ Before you can assign a Microsoft Entra group to an environment, the group must 
 > [!NOTE]
 > If you change or remove a group, it can take a while before the changes to take effect or access is revoked from users.
 
+### Assign Essentials and Premium licenses across environments
+
+You can't mix Essentials and Premium licenses in the same company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, it's possible to apply Essentials or Premium licenses to different environments. This way, your organization can consist of environments with Essentials companies and environments with Premium companies. In such scenarios, assign Premium licenses to all users who need to sign in to both types of companies. A Premium license user can sign in to a company where the **User Experience** field is set to **Essentials** on the **Company Information** page. However, the Premium user can't use any of the features that the Premium license provides. This doesn't work in the opposite direction. Users who have an Essentials license can't sign in to a company where the **User Experience** is set to **Premium** on the **Company Information** page. For more information about licensing, go to [Business Central](https://www.microsoft.com/dynamics-365/products/business-central/) website.
+
 ## Manage access for delegated administrators and multitenant applications
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customers working with multiple partners might want to control which partners and [multitenant applications](administration-center-api.md#authenticate-using-service-to-service-microsoft-entra-apps-client-credentials-flow) can access and administer which environments. Internal global administrators can use the **Partner access** setting in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to control whether an environment is accessible and administrable by delegated administrators and multitenant applications, and if so, control from which Entra tenants these delegated administrators and multitenant applications should come to do so.
