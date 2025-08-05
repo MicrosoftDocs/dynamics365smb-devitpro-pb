@@ -42,9 +42,9 @@ Read scale-out lets databases offload read-only workloads to read-only replicas,
 LockTable behaves differently depending on whether read scale-out is used. If the session doesn't use read scale-out, LockTable does these actions:
 
 1. Starts a transaction.
-1. Makes sure that all subsequent statements that read data will apply an UPDLOCK on the database.
+1. Makes sure that all subsequent statements that read data apply an UPDLOCK on the database.
 
-If the session is using Read Scale-Out, then LockTable does the following:
+If the session uses Read Scale-Out, LockTable does the following:
 
 1. Makes sure that all subsequent statements that read data use REPEATABLEREAD on the database.
 
