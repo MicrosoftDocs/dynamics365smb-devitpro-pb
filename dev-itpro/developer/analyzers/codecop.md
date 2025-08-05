@@ -2,7 +2,7 @@
 title: "CodeCop analyzer"
 description: "CodeCop is an analyzer that enforces the official AL Coding Guidelines."
 ms.author: solsen
-ms.date: 02/18/2025
+ms.date: 08/05/2025
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ms.reviewer: solsen
@@ -96,9 +96,18 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0246](codecop-aa0246.md)|Suppressing all diagnostics is not allowed.|Design|Warning|
 |[AA0247](codecop-aa0247.md)|Use namespaces.|Design|Info|
 |[AA0248](codecop-aa0248.md)|Add 'this' qualification to improve readability.|Readability|Hidden|
+|[AA0249](codecop-aa0249.md)|PageField trigger is unused due to a property value.|Design|Warning|
+|[AA0250](codecop-aa0250.md)|External business event should have obsolete marker.|Design|Warning|
+|[AA0251](codecop-aa0251.md)|External business event with obsolete marker must have the obsolete attribute set.|Design|Error|
+|[AA0252](codecop-aa0252.md)|Moving external business events to another app is not allowed.|Design|Error|
 |[AA0448](codecop-aa0448.md)|You must use the FieldCaption method instead of the FieldName method and TableCaption method instead of TableName method.|Localizability|Warning|
 |[AA0462](codecop-aa0462.md)|The CalcDate should only be used with DataFormula variables. Alternatively the string should be enclosed using the <> symbols.|Localizability|Warning|
 |[AA0470](codecop-aa0470.md)|Placeholders should have a comment explaining their content.|Localizability|Warning|
+|[AA0471](codecop-aa0471.md)|Page control fields of type 'Decimal' must have the property AutoFormatType specified.|Localizability|Info|
+|[AA0472](codecop-aa0472.md)|Page control fields having amount AutoFormatType defined must have the property AutoFormatExpression specified.|Localizability|Info|
+|[AA0473](codecop-aa0473.md)|Table control fields of type 'Decimal' must have the property AutoFormatType specified.|Localizability|Info|
+|[AA0474](codecop-aa0474.md)|Table control fields that have amount AutoFormatType defined, must have the property AutoFormatExpression specified.|Localizability|Info|
+|[AA0475](codecop-aa0475.md)|Truncate can only be used on normal tables without media fields and outside of try functions..|Design|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Related information  
