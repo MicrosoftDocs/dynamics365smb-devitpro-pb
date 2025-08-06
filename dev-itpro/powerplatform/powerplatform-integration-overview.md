@@ -1,20 +1,20 @@
 ---
-title: Integrating with Microsoft Power Platform
-description: Learn how to integrate Business Central with the Microsoft Power Platform
+title: Integrating Business Central with Microsoft Power Platform
+description: Learn how to integrate Business Central with Microsoft Power Platform using connectors to enhance productivity.
 author: kennienp
 ms.reviewer: jswymer
 ms.topic: overview
 ms.author: kepontop
-ms.date: 02/19/2024
+ms.date: 08/06/2025
 ---
 
 # Integrating Business Central with Microsoft Power Platform
 
-Integrating [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform offers a solution that enhances business productivity and efficiency. It provides a set of tools that enable you to analyze data, build solutions, automate processes, and create virtual agents. By integrating Microsoft Power Platform with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can apply the data and business logic of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and benefit from the analytical and automation capabilities of Microsoft Power Platform. This article explains you can integrate [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform.
+Integrating [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform offers a solution that enhances business productivity and efficiency. It provides a set of tools that enable you to analyze data, build solutions, automate processes, and create virtual agents. By integrating Microsoft Power Platform with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can apply the data and business logic of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], and benefit from the analytical and automation capabilities of Microsoft Power Platform. This article explains how you can integrate [!INCLUDE [prod_short](../developer/includes/prod_short.md)] with Microsoft Power Platform.
 
 ## Business Central connector for Power Platform
 
-A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Copilot Studio, Power Automate, Power Apps, and Azure Logic Apps to communicate with [!INCLUDE[prod_short](../includes/prod_short.md)] through REST APIs (this is another reason for using REST APIs compared to OData/SOAP enabled pages/queries/codeunits).
+A *connector* is a proxy or a wrapper around an API that allows the user of the connector to talk to the underlying service. [!INCLUDE[prod_short](../includes/prod_short.md)] has its own connector that allows Power Platform products such as Copilot Studio, Power Automate, Power Apps, and Azure Logic Apps to communicate with [!INCLUDE[prod_short](../includes/prod_short.md)] through REST APIs. This capability provides another reason for using REST APIs compared to OData/SOAP enabled pages, queries, or codeunits.
 
 [![Shows how the Power Platform connector integrates to Business Central](../developer/media/power-platform-connector-diagram.svg)](../developer/media/power-platform-connector-diagram.svg#lightbox)
 
@@ -30,7 +30,7 @@ For more information, see [Integrating with Microsoft Power Apps overview](../po
 
 You can integrate [!INCLUDE[prod_short](../includes/prod_short.md)] with Microsoft Power Automate by using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Platform. With Power Automate, you can set up and use flows to connect business-process tasks performed by different users. System tasks, such as automatic posting, can be included as steps in flows, preceded or followed by user tasks. Requesting and granting approval to create new records are typical flow steps.
 
-The [!INCLUDE[prod_short](../includes/prod_short.md)] integration with Azure Logic Apps is very similar, but allows for more advanced control over the deployment and consumption of your automation. Nearly all of the functionality of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector is identical between Power Automate and Azure Logic Apps.
+The [!INCLUDE[prod_short](../includes/prod_short.md)] integration with Azure Logic Apps is similar, but allows for more advanced control over the deployment and consumption of your automation. Nearly all of the functionality of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector is identical between Power Automate and Azure Logic Apps.
 
 For more information, see [Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)
 
@@ -69,11 +69,11 @@ For more information, see [Integrating with Microsoft Power Pages (preview)](../
 
 ## Related information
 
-[Business Central connector for Power Platform](/connectors/dynamicssmbsaas)   
+[Business Central connector for Power Platform](/connectors/dynamicssmbsaas)  
 [Integrating with Microsoft Power Apps overview](../powerplatform/power-apps-overview.md)  
 [Integrating with Microsoft Power Automate overview](../powerplatform/power-automate-overview.md)  
 [Integrating with Microsoft Power Pages (preview)](../developer/power-pages-on-virtual-tables-overview.md)  
 [Integrating with Microsoft Power BI](/dynamics365/business-central/admin-powerbi-overview)  
 [How users can embed Power BI Reports in Business Central](/dynamics365/business-central/across-working-with-powerbi)  
 [How AL developers can add Power BI Reports to pages](../developer/devenv-power-bi-report-parts.md)  
-[Business Central integrations overview](../developer/integration-overview.md)   
+[Business Central integrations overview](../developer/integration-overview.md)
