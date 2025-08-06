@@ -32,7 +32,7 @@ These features are no longer controlled in **Feature management**, so they can't
 
 - [Feature Update: Enable use of new extensible exchange rate adjustment, including posting review](https://go.microsoft.com/fwlink/?linkid=2187318)
 - [Feature Update: Enable use of new extensible invoice posting engine](https://go.microsoft.com/fwlink/?linkid=2187318)
-- [Feature Update: Replace the existing EU 3-Party Trade Purchase functionality with the new EU 3-Party Trade Purchase extension](https://go.microsoft.com/fwlink/?linkid=2235119) - Doesn't apply to Sweden (SE) and Italy (IT) localized versions.
+- [Feature Update: Replace the existing EU 3-Party Trade Purchase functionality with the new EU 3-Party Trade Purchase extension](https://go.microsoft.com/fwlink/?linkid=2235119) - Still applies to Sweden (SE) and Finland (FI) localized versions.
 - [Feature: Enable legacy locking scheme in AL](https://go.microsoft.com/fwlink/?linkid=2244711)
 - [Feature: Enable using bulk operations for Shopify connector](https://go.microsoft.com/fwlink/?linkid=2242514)
 
