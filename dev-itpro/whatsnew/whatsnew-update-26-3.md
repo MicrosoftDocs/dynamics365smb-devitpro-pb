@@ -23,7 +23,7 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 |-|-|-|
 | Copilot and agents | [Chat with Copilot to learn how to use installed add-on apps](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/chat-copilot-learn-use-installed-add-on-apps) | PP  |
 |  | [Automate payables processes with the Payables Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/automate-payables-processes-payables-agent) | PP  |
-| | Capture more sales with enhanced Sales Order Agent (link coming soon)| PP  |
+| | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)| PP  |
 ||[Summarize with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-record-copilot#enhancements-with-update-263-july-update) is faster in update 26.3 and includes a Copy summary option.| PP |
 ||[Autofill with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot) adds improved support for keyboard shortcuts and screen readers.| PP |
 | Country and regional | [Calculate and post VAT settlement by Activity Code - Italy](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/allowing-calculation-posting-vat-settlement-activity-code-italy) | GA  |
@@ -46,7 +46,7 @@ Do you want to get a comprehensive overview of what's new and planned for Busine
 
 ### Online customers
 
-New customers automatically get Business Central version 26.3. If you're an existing customer or partner, you get an email notification when the update is available. You can choose when to update to the version. Learn more in [Schedule an update](../administration/tenant-admin-center-update-management.md#schedule-an-update).
+New customers automatically get Business Central version 26.3. If you're an existing customer or partner, you get an email notification when the update is available. You can choose when to update to the version. Learn more in [Schedule an update](../administration/tenant-admin-center-update-management.md#schedule).
 
 ### On-premises customers
 

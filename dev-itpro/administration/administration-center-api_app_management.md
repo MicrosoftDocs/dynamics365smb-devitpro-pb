@@ -62,7 +62,7 @@ POST /admin/v2.25/applications/{applicationFamily}/environments/{environmentName
 { 
   "targetVersion": string, // Optional. If not provided, latest version will be installed. Required if "allowPreviewVersion": true 
   "useEnvironmentUpdateWindow": boolean, // If true, the operation will be executed only in the environment update window. It will appear as "scheduled" before it runs in the window. 
-  "allowPreviewVersion": boolean, // If "allowPreviewVersion": true, targetVersion is required 
+  "allowPreviewVersion": boolean, // If "allowPreviewVersion": true, targetVersion is required. Applies only to apps published as part of the Embed ISV program.
   "installOrUpdateNeededDependencies": boolean, // Value indicating whether any other app dependencies should be installed or updated; otherwise, information about missing app dependencies will be returned as error details 
   "acceptIsvEula": boolean, // Must be true for installation to proceed. Setting this to true means you agree to the terms described in the acceptIsvEula section that follows.
   "languageId": string // Optional. Specifies locale ID language code, for example, "en-US". This setting corresponds to what the user can set in Extension Management page in tenant.Full list of values can be found in /openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a under BCP 47 Code column 
