@@ -1,12 +1,11 @@
 ---
-title: Power Automate Integration overview
+title: Power Automate Integration Overview
 description: This article provides an overview of how Power Automate and Business Central integrate. 
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer
-
 ms.topic: overview
-ms.date: 09/27/2023
+ms.date: 08/06/2025
 ms.custom: bap-template
 ---
 # Power Automate integration overview
@@ -31,13 +30,13 @@ The two types of Power Automate flows that you can use with Business Central are
 
 - **Automated flows**
 
-  Automated flows are triggered by events (such as record or document creation, modification, or deletion) or run automatically on a user-defined schedule. You create automated flows in Power Automate, which you can access by going directly to the Power Automate home page or from Business Central. For more information, see [Set Up Automated Flows](automate-workflows.md).
+  Automated flows are triggered by events (such as record or document creation, modification, or deletion) or run automatically on a user-defined schedule. You create automated flows in Power Automate, which you can access by going directly to the Power Automate home page or from Business Central. Learn more in [Set Up Automated Flows](automate-workflows.md).
 
 - **Instant flows**
 
-    In Business Central, users can manually trigger instant flows instead of using events to automatically trigger them. Instant flows show in the **Automate** action group in the Business Central client so users can run the flows in context of their work. You create and trigger a Power Automate instant flow on a Business Central record, such as a customer, item, or sales order, with options to manipulate information both internally and externally (using integrated tools). For more information, see [Set Up Instant Flows](instant-flows.md).
+  In Business Central, users can manually trigger instant flows instead of using events to automatically trigger them. Instant flows show in the **Automate** action group in the Business Central client so users can run the flows in context of their work. You create and trigger a Power Automate instant flow on a Business Central record, such as a customer, item, or sales order, with options to manipulate information both internally and externally (using integrated tools). Learn more in [Set Up Instant Flows](instant-flows.md).
 
-In addition to Power Automate flow, Business Central also offers approval workflow templates as a separate workflow system. However, any workflow template you create with Power Automate is added to the list of workflows within Business Central. Learn more at [Workflows in Dynamics 365 Business Central](/dynamics365/business-central/across-workflow).
+In addition to Power Automate flow, Business Central also offers approval workflow templates as a separate workflow system. However, any workflow template you create with Power Automate is added to the list of workflows within Business Central. Learn more in [Workflows in Dynamics 365 Business Central](/dynamics365/business-central/across-workflow).
 
 ## The Business Central connector
 
@@ -45,12 +44,12 @@ A *connector* is a proxy or a wrapper around an API that allows the underlying s
 
 [![Shows how the Power Platform connector integrates to Business Central](../developer/media/power-platform-connector-diagram.svg)](../developer/media/power-platform-connector-diagram.svg#lightbox)
 
-The Dynamics 365 Business Central includes several *triggers* and *actions* for building flows. Triggers are events in Business Central that start a flow, like when a record is created or deleted. Starting in 2023 release wave 2, the connector also supports starting flows based on a [business event](../developer/business-events-overview.md) via the [When a business event occurs (V3)](/connectors/dynamicssmbsaas/#when-a-business-event-occurs-(v3)-(preview)) trigger. Actions run an operation after a trigger, like getting a record.
+The Business Central connector includes several *triggers* and *actions* for building flows. Triggers are events in Business Central that start a flow, like when a record is created or deleted. Alternatively, the connector supports starting flows based on a [business event](../developer/business-events-overview.md) via the [When a business event occurs (V3)](/connectors/dynamicssmbsaas/#when-a-business-event-occurs-(v3)-(preview)) trigger. Actions run an operation after a trigger, like getting a record.
 
 Business Central connector can also initiate actions provided through other connectors. For example, sending an email using Office 365 connector or starting a chat in Teams using the Microsoft Teams connector.
 
 > [!NOTE]
-> The connector currently doesn't support service-to-service (S2S) authentication.  This also applies to Power Automate, Azure Logic Apps, and Power Apps. Partners interested in such scenarios must for now rely on the OData connector.
+> The Business Central connector currently doesn't support service-to-service (S2S), service principal, or managed identity authentication. These limitations apply when the connector is used in any of the Power Platform products, including Copilot Studio, Power Automate, Azure Logic Apps, and Power Apps. Partners interested in such scenarios must rely on the OData connector for now.
 
 ## What users can do from inside Business Central
 
@@ -58,12 +57,12 @@ With Power Automate integration, users can create and run Power Automate instant
 
 :::image type="content" source="../developer/media/power-automate-menu.svg" alt-text="Shows the Automate action in the action bar with expanded actions.":::
 
-For more information, see [Use Power Automate Flows in Business Central](/dynamics365/business-central/across-how-use-financials-data-source-flow#run-instant-flows) in the business functionality help.
+Learn more in [Use Power Automate Flows in Business Central](/dynamics365/business-central/across-how-use-financials-data-source-flow#run-instant-flows) in the business functionality help.
 
 ## What AL developers can do in extensions
 
-In AL, developers can define page actions that trigger a Power Automate flow using custom actions. Custom actions are defined next to other actions but use the `customaction` AL keyword instead. In the UI, they can be placed everywhere other actions can. Learn more at [Actions Overview](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
+In AL, developers can define page actions that trigger a Power Automate flow using custom actions. Custom actions are defined next to other actions but use the `customaction` AL keyword instead. In the UI, they can be placed everywhere other actions can. Learn more in [Actions Overview](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
 
 ## Next steps
 
-The next step is to set up Power Automate integration in Business Central. By default, all users have access to the Power Automate features in the client. As an admin, you can choose to turn off the ability, either for the entire organization or for individual users. Learn more at [Set Up Power Automate](power-automate-setup.md).
+The next step is to set up Power Automate integration in Business Central. By default, all users have access to the Power Automate features in the client. As an admin, you can choose to turn off the ability, either for the entire organization or for individual users. Learn more in [Set Up Power Automate](power-automate-setup.md).
