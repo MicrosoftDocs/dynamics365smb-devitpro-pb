@@ -2,7 +2,7 @@
 title: Set up the add-ins for Outlook in Business Central on-premises
 description: Learn how to configure your Business Central on-premises solution so that users can work with Business Central data in Outlook.
 ms.custom: bap-template
-ms.date: 02/07/2025
+ms.date: 08/06/2025
 ms.reviewer: jswymer
 ms.service: dynamics-365-op
 ms.topic: how-to
@@ -122,7 +122,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
 1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
 
    Learn more in [Configure the server instance to work with the Office Add-ins](#configure-the-business-central-server-instance-to-work-with-add-ins)
-1. (optional) Register an application in Microsoft Entra ID for connecting Outlook and Business Central
+1. Register an application in Microsoft Entra ID for connecting Outlook and Business Central (optional)
 
    This step only applies when using Microsoft Entra authentication. Learn more in [Register an app that connects Outlook and Business Central](#register-an-app-that-connects-outlook-and-business-central)
 
@@ -138,7 +138,7 @@ The steps to prepare for deploying the add-in depend on whether you plan to depl
     |Setting|Value|Example|
     |-|-|-|
     |Name|Specify a meaningful name for the app |Business Central on-premises Outlook Add-in Connector |
-    |Supported account types |Use the default or select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)** ||
+    |Supported account types |Set to **Accounts in the organizational directory only (Single tenant)**. If you need multitenant access, select **Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)** ||
     |Redirect URI - Select a platform box|**Single-Page application (SPA)**||
     |Redirect URI - URI box|Enter the base URL for your Business Central on-premises web client.<br/><br /> For Exchange Online, the URL has the format:<br />`brk-multihub://<web server hostname>` <br /><br />For Exchange Server, the URL has the format:<br />`https://<web server hostname>`|Exchange Online:<br />`brk-multihub://MyBCWebServer`<br /><br />Exchange Server:<br />`https://MyBCWebServer`|
 

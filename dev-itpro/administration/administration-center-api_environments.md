@@ -51,7 +51,7 @@ Returns a wrapped array of environments.
       "countryCode": string, // Country/Region that the environment is deployed in
       "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
       "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment
-      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
+      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active", "Upgrading", "CreatingFailed", "RemovingFailed", "SoftDeleting", "SoftDeletingFailed", "SoftDeleted", "Recovering", "RecoveringFailed")
       "webClientLoginUrl": string, // Url to use to log into the environment,
       "webServiceUrl": string, // Url to use to access the environment's service API
       "locationName": string, // The Azure Region in which the environment database is stored
@@ -92,32 +92,6 @@ GET /admin/v2.26/applications/{applicationFamily}/environments/{environmentName}
 ### Response
 
 Returns a single environment if exists.
-```
-{
-  "friendlyName": string, // Display name of the environment
-  "type": string, // Environment type (for example, "Sandbox", "Production")
-  "name": string, // Environment name, unique within an application family
-  "countryCode": string, // Country/Region that the environment is deployed in
-  "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-  "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment
-  "applicationVersion": string, // The version of the environment's application
-  "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
-  "webClientLoginUrl": string, // Url to use to log into the environment,
-  "webServiceUrl": string, // Url to use to access the environment's service API
-  "locationName": string, // The Azure location where the environment's data is stored
-  "platformVersion": string, // The version of the environment's Business Central platform
-  "ringName": string, // Name of the environment's logical ring group (such as  Prod, Preview)
-  "appInsightsKey": string // The environment's key for Azure Application Insights
-  "SoftDeletedOn": datetime // The time at which the environment was soft deleted
-  "HardDeletePendingOn": datetime // The time at which the environment will be permanently deleted
-  "DeleteReason": string // The reason why the environment was deleted
-  "AppSourceAppsUpdateCadence": string // The cadence at which installed AppSource Apps are automatically updated with environment updates
-}
-```
-
-#### Flexible Update Management response
-
-A future version of the API will return the following response to include properties relevant to Flexible Update Management.
 
 ```
 {
@@ -130,7 +104,7 @@ A future version of the API will return the following response to include proper
       "countryCode": string, // Country/Region that the environment is deployed in
       "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
       "aadTenantId": Guid, // Id of the Microsoft Entra tenant that owns the environment
-      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active")
+      "status": string, // (enum | "NotReady", "Removing", "Preparing", "Active", "Upgrading", "CreatingFailed", "RemovingFailed", "SoftDeleting", "SoftDeletingFailed", "SoftDeleted", "Recovering", "RecoveringFailed")
       "webClientLoginUrl": string, // Url to use to log into the environment,
       "webServiceUrl": string, // Url to use to access the environment's service API
       "locationName": string, // The Azure location where the environment's data is stored
