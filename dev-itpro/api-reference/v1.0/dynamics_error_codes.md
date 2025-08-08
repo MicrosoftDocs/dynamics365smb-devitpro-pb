@@ -1,8 +1,6 @@
 ---
 title: (v1.0) Error Codes
 description: (v1.0) List of error codes.
-services: project-madeira
-documentationcenter: ''
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: al
