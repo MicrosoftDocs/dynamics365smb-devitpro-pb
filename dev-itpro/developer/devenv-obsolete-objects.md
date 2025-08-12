@@ -20,7 +20,9 @@ To obsolete objects such as tables, table fields, reports, pages, or interfaces,
 - [ObsoleteReason property](properties/devenv-obsoletereason-property.md) Provides a description of why the object is being marked as obsolete.
 - [ObsoleteTag property](properties/devenv-obsoletetag-property.md) Indicates the version in which the object will be removed or deprecated.
 
-These properties can be set in the object definition, and they help communicate the status and reason for obsolescence to developers who work with the code. First, you need to set the `ObsoleteState` property to indicate the current state of the object. Then, you can provide a reason for the obsoletion using the `ObsoleteReason` property. Finally, you can specify the version in which the object will be removed or deprecated using the `ObsoleteTag` property. In this first example, we warn developers that the table is pending removal.
+These properties can be set in the object definition, and they help communicate the status and reason for obsoletion to developers who work with the code. Set the `ObsoleteState` property to indicate the current state of the object. With the  `ObsoleteReason` property, you provide a reason for the obsoletion. Finally, with the `ObsoleteTag` property, you indicate the version in which the object will be removed or deprecated. In this first example, we warn developers that the table is pending removal.
+
+One important thing to note here, is that you don't comment out the code for the obsolete objects. Instead, you should keep the code in place so that you don't break any dependencies, but instead you mark it as obsolete.
 
 ```al
 table 12345 MyObsoleteTable
