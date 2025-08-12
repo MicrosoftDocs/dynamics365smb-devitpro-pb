@@ -64,7 +64,7 @@ table 12345 MyObsoleteTable
 
 ## Obsolete methods, variables, and symbols
 
-To obsolete methods, variables, events, and other symbols, you can mark them as obsolete using the [[Obsolete] attribute](attributes/devenv-obsolete-attribute.md). This example illustrates how to use the attribute for a procedure.
+To obsolete methods, variables, events, and other symbols, you can mark them as obsolete using the [[Obsolete] attribute](attributes/devenv-obsolete-attribute.md). This example illustrates how to use the attribute for a procedure, which will become obsolete with version 17.0. This allows for a transition to the new method and makes developers aware not to rely on the old method.
 
 ```al
 
@@ -78,8 +78,8 @@ end;
 
 The `[Obsolete]` attribute takes two parameters:
 
-- **Reason** Explains why the object is deprecated.
-- **Tag** Indicates the version or context (for example, `'17.0'`)
+- **Reason**, which explains why the object is deprecated.
+- **Tag**, which indicates the version or context (for example, `'17.0'`)
 
 In the article [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md), you can read more about guidelines that Microsoft uses internally for deprecation of AL code in the base application.
 
