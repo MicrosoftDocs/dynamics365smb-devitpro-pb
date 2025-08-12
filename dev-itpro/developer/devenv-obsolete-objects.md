@@ -78,10 +78,12 @@ end;
 
 The `[Obsolete]` attribute takes two parameters:
 
-- **Reason**: Explains why the object is deprecated.
-- **Tag**: Indicates the version or context (for example, `'17.0'`)
+- **Reason** Explains why the object is deprecated.
+- **Tag** Indicates the version or context (for example, `'17.0'`)
 
+## Related information
 
-
-### 4. **Deleting Table Extensions**
-From **BC19.0**, you can delete table and table extensions after publishing by setting the **Schema Sync Mode to Force** when uploading the app. This allows breaking changes in SaaS environments[3](https://community.dynamics.com/forums/thread/details/?threadid=082e2975-711e-48be-8a04-28e4786adde5).
+[ObsoleteState property](properties/devenv-obsoletestate-property.md)  
+[ObsoleteReason property](properties/devenv-obsoletereason-property.md)  
+[ObsoleteTag property](properties/devenv-obsoletetag-property.md)  
+[Obsolete attribute](attributes/devenv-obsolete-attribute.md)  
