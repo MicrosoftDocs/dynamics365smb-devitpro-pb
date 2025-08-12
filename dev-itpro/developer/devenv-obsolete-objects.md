@@ -81,8 +81,11 @@ The `[Obsolete]` attribute takes two parameters:
 - **Reason** Explains why the object is deprecated.
 - **Tag** Indicates the version or context (for example, `'17.0'`)
 
+In the article [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md), you can read more about guidelines that Microsoft uses internally for deprecation of AL code in the base application.
+
 ## Related information
 
+[Best practices for deprecation of AL code](devenv-deprecation-guidelines.md)  
 [ObsoleteState property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason property](properties/devenv-obsoletereason-property.md)  
 [ObsoleteTag property](properties/devenv-obsoletetag-property.md)  
