@@ -10,7 +10,18 @@ ms.reviewer: solsen
 
 # Obsolete objects, methods, and symbols in AL
 
-As part of the development cycle, you may need to obsolete objects, methods, or other symbols in your AL code. This can happen for various reasons, such as changes in business requirements, improvements in functionality, or the introduction of new features. In that case, you need to ensure that you properly mark this code as obsolete, which makes it easier for, for example, developers to identify and update deprecated code. The AL language has a set of properties and attributes specifically designed for this purpose.
+When you develop and maintain an AL extension, some objects or symbols must be retired. Instead of deleting or commenting out code, mark it as obsolete so you preserve compatibility and give dependent extensions time to migrate. AL provides dedicated obsoletion properties for objects (ObsoleteState, ObsoleteReason, ObsoleteTag) and the [Obsolete] attribute for methods, variables, events, and other symbols.
+
+This article explains how to:
+
+- Mark objects, such as tables, fields, pages, reports, and interfaces with obsoletion properties.
+- Use ObsoleteState values (Pending, Removed) to signal lifecycle stage.
+- Supply clear reasons and version tags to guide dependent developers.
+- Apply the [Obsolete] attribute to procedures and other symbols.
+- Combine version tags with preprocessor directives for conditional compilation.
+
+For broader guidance, see [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md).
+
 
 ## Obsolete objects
 
