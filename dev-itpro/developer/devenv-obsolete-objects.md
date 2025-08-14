@@ -4,24 +4,23 @@ description: Description of how you use the obsoletion properties to obsolete an
 author: SusanneWindfeldPedersen
 ms.topic: concept-article
 ms.author: solsen
-ms.date: 08/12/2025
+ms.date: 08/14/2025
 ms.reviewer: solsen
 ---
 
 # Obsolete objects, methods, and symbols in AL
 
-When you develop and maintain an AL extension, some objects or symbols must be retired. Instead of deleting or commenting out code, mark it as obsolete so you preserve compatibility and give dependent extensions time to migrate. AL provides dedicated obsoletion properties for objects (ObsoleteState, ObsoleteReason, ObsoleteTag) and the [Obsolete] attribute for methods, variables, events, and other symbols.
+When you develop and maintain an AL extension, part of the process is often that some objects or symbols must be retired. Instead of deleting or commenting out code, mark it as obsolete so you preserve compatibility and give dependent extensions time to migrate. AL provides dedicated obsoletion properties for objects (`ObsoleteState`, `ObsoleteReason`, `ObsoleteTag`) and the `[Obsolete]` attribute for methods, variables, events, and other symbols.
 
 This article explains how to:
 
 - Mark objects, such as tables, fields, pages, reports, and interfaces with obsoletion properties.
-- Use ObsoleteState values (Pending, Removed) to signal lifecycle stage.
+- Use `ObsoleteState` values (`Pending`, `Removed`) to signal lifecycle stage.
 - Supply clear reasons and version tags to guide dependent developers.
-- Apply the [Obsolete] attribute to procedures and other symbols.
+- Apply the `[Obsolete]` attribute to procedures and other symbols.
 - Combine version tags with preprocessor directives for conditional compilation.
 
 For broader guidance, see [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md).
-
 
 ## Obsolete objects
 
@@ -93,6 +92,8 @@ The `[Obsolete]` attribute takes two parameters:
 - **Tag**, which indicates the version or context (for example, `'17.0'`)
 
 In the article [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md), you can read more about guidelines that Microsoft uses internally for deprecation of AL code in the base application.
+
+## 
 
 ## Related information
 
