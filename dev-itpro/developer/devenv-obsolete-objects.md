@@ -10,7 +10,7 @@ ms.reviewer: solsen
 
 # Obsolete objects, methods, and symbols in AL
 
-When you develop and maintain an AL extension, part of the process is often that some objects or symbols must be retired. Instead of deleting or commenting out code, mark it as obsolete so you preserve compatibility and give dependent extensions time to migrate. AL provides dedicated obsoletion properties for objects (`ObsoleteState`, `ObsoleteReason`, `ObsoleteTag`) and the `[Obsolete]` attribute for methods, variables, events, and other symbols.
+When you develop and maintain an AL extension, part of the process is often that some objects, or symbols must be retired. Instead of deleting or commenting out code, mark it as obsolete so you preserve compatibility and give dependent extensions time to migrate. AL provides dedicated obsoletion properties for objects (`ObsoleteState`, `ObsoleteReason`, `ObsoleteTag`) and the `[Obsolete]` attribute for methods, variables, events, and other symbols.
 
 This article explains how to:
 
@@ -28,11 +28,11 @@ To obsolete objects such as tables, table fields, reports, pages, or interfaces,
 
 - [ObsoleteState property](properties/devenv-obsoletestate-property.md) Specifies the current state of the object (for example; Pending, Removed).
 - [ObsoleteReason property](properties/devenv-obsoletereason-property.md) Provides a description of why the object is being marked as obsolete.
-- [ObsoleteTag property](properties/devenv-obsoletetag-property.md) Indicates the version in which the object will be removed or deprecated.
+- [ObsoleteTag property](properties/devenv-obsoletetag-property.md) Indicates the version in which the object is removed or deprecated.
 
-These properties can be set in the object definition, and they help communicate the status and reason for obsoletion to developers who work with the code. Set the `ObsoleteState` property to indicate the current state of the object. With the  `ObsoleteReason` property, you provide a reason for the obsoletion. Finally, with the `ObsoleteTag` property, you indicate the version in which the object will be removed or deprecated. In this first example, we warn developers that the table is pending removal.
+These properties can be set in the object definition, and they help communicate the status and reason for obsoletion to developers who work with the code. Set the `ObsoleteState` property to indicate the current state of the object. With the  `ObsoleteReason` property, you provide a reason for the obsoletion. Finally, with the `ObsoleteTag` property, you indicate the version in which the object is removed or deprecated. In this first example, we warn developers that the table is pending removal.
 
-One important thing to note here, is that you don't comment out the code for the obsolete objects. Instead, you should keep the code in place so that you don't break any dependencies, but instead you mark it as obsolete.
+An important thing to note here is that you don't comment out the code for the obsolete objects. Instead, you should keep the code in place so that you don't break any dependencies, but instead you mark it as obsolete.
 
 ```al
 table 12345 MyObsoleteTable
@@ -74,7 +74,7 @@ table 12345 MyObsoleteTable
 
 ## Obsolete methods, variables, and symbols
 
-To obsolete methods, variables, events, and other symbols, you can mark them as obsolete using the [[Obsolete] attribute](attributes/devenv-obsolete-attribute.md). This example illustrates how to use the attribute for a procedure, which will become obsolete with version 17.0. This allows for a transition to the new method and makes developers aware not to rely on the old method.
+To obsolete methods, variables, events, and other symbols, you can mark them as obsolete using the [[Obsolete] attribute](attributes/devenv-obsolete-attribute.md). This example illustrates how to use the attribute for a procedure, which becomes obsolete with version 17.0. This allows for a transition to the new method and makes developers aware not to rely on the old method.
 
 ```al
 
