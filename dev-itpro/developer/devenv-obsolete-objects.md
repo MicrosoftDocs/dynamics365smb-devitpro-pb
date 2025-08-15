@@ -34,10 +34,10 @@ For broader guidance, see [Best practices for deprecation of AL code](devenv-dep
 To obsolete objects such as tables, table fields, reports, pages, or interfaces, you need to know about the following properties:
 
 - [ObsoleteState property](properties/devenv-obsoletestate-property.md) Specifies the current state of the object (for example; Pending, Removed).
-- [ObsoleteReason property](properties/devenv-obsoletereason-property.md) Provides a description of why the object is being marked as obsolete.
+- [ObsoleteReason property](properties/devenv-obsoletereason-property.md) Provides a description of why the object is being marked as obsolete, including how it will be replaced. This is an important piece of information for the developer who is using the object.
 - [ObsoleteTag property](properties/devenv-obsoletetag-property.md) Indicates the version in which the object is removed or deprecated.
 
-These properties can be set in the object definition, and they help communicate the status and reason for obsoletion to developers who work with the code. Set the `ObsoleteState` property to indicate the current state of the object. With the  `ObsoleteReason` property, you provide a reason for the obsoletion. Finally, with the `ObsoleteTag` property, you indicate the version in which the object is removed or deprecated. In this first example, we warn developers that the table is pending removal.
+These properties can be set in the object definition, and they help communicate the status and reason for obsoletion to developers who work with the code. Set the `ObsoleteState` property to indicate the current state of the object. With the  `ObsoleteReason` property, you provide a reason for the obsoletion along with the alternative solution. Finally, with the `ObsoleteTag` property, you indicate the version in which the object is removed or deprecated. In this first example, we warn developers that the table is pending removal.
 
 An important thing to note here is that you don't comment out the code for the obsolete objects. Instead, you should keep the code in place so that you don't break any dependencies, but instead you mark it as obsolete.
 
@@ -45,7 +45,7 @@ An important thing to note here is that you don't comment out the code for the o
 table 12345 MyObsoleteTable
 {
     ObsoleteState = Pending;
-    ObsoleteReason = 'To be replaced by MyNewTable';
+    ObsoleteReason = 'The table no longer supports the business scenario. It is to be replaced by MyNewTable';
     ObsoleteTag = '20.0';
 }
 
@@ -55,7 +55,7 @@ And then, we can mark a page as obsolete, as we reach version 21.0, as shown in 
 table 12345 MyObsoleteTable
 {
     ObsoleteState = Removed;
-    ObsoleteReason = 'Replaced by MyNewTable';
+    ObsoleteReason = 'The table no longer supported the business scenario. It is replaced by MyNewTable';
     ObsoleteTag = '21.0';
 }
 ```
