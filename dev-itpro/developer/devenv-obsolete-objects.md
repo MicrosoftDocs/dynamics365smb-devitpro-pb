@@ -1,6 +1,6 @@
 ---
 title: Obsolete objects, methods, and symbols in AL
-description: Description of how you use the obsoletion properties to obsolete an object used in Business Central.
+description: Description of how you use the obsoletion properties and attributes to obsolete an object, a method, or other symbols used in AL for Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: concept-article
 ms.author: solsen
