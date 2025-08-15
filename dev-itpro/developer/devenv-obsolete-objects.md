@@ -35,9 +35,9 @@ To obsolete objects such as tables, table fields, reports, pages, or interfaces,
 
 - [ObsoleteState property](properties/devenv-obsoletestate-property.md) Specifies the current state of the object (for example; Pending, Removed).
 - [ObsoleteReason property](properties/devenv-obsoletereason-property.md) Provides a description of why the object is being marked as obsolete, including how it will be replaced. This is an important piece of information for the developer who is using the object.
-- [ObsoleteTag property](properties/devenv-obsoletetag-property.md) Indicates the version in which the object is removed or deprecated.
+- [ObsoleteTag property](properties/devenv-obsoletetag-property.md) Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object.
 
-These properties can be set in the object definition, and they help communicate the status and reason for obsoletion to developers who work with the code. Set the `ObsoleteState` property to indicate the current state of the object. With the  `ObsoleteReason` property, you provide a reason for the obsoletion along with the alternative solution. Finally, with the `ObsoleteTag` property, you indicate the version in which the object is removed or deprecated. In this first example, we warn developers that the table is pending removal.
+These properties can be set in the object definition, and they help communicate the status and reason for obsoletion to developers who work with the code. Set the `ObsoleteState` property to indicate the current state of the object. With the  `ObsoleteReason` property, you provide a reason for the obsoletion along with the alternative solution. Finally, with the `ObsoleteTag` property, you can indicate the version in which the object is obsolete. In this first example, we warn developers that the table is pending removal.
 
 An important thing to note here is that you don't comment out the code for the obsolete objects. Instead, you should keep the code in place so that you don't break any dependencies, but instead you mark it as obsolete.
 
@@ -60,25 +60,6 @@ table 12345 MyObsoleteTable
 }
 ```
 
-You can use the [preprocessor directives in AL](directives/devenv-directives-in-al.md) to check for the version and conditionally compile code based on the obsoletion state as illustrated in the example:
-
-```al
-
-// Example of how to set obsoletion properties on a table
-table 12345 MyObsoleteTable
-{
-    #if Version2
-        ObsoleteState = Removed;
-        ObsoleteTag = '21.0';
-    #else
-        ObsoleteState = Pending;
-        ObsoleteTag = '20.0';
-    #endif
-        ObsoleteReason = 'The MyObsoleteTable has been replaced by MyNewTable.';
-}
-#endif
-```
-
 ## Obsolete methods, variables, and symbols
 
 To obsolete methods, variables, events, and other symbols, you can mark them as obsolete using the [[Obsolete] attribute](attributes/devenv-obsolete-attribute.md). This example illustrates how to use the attribute for a procedure, which becomes obsolete with version 17.0. This allows for a transition to the new method and makes developers aware not to rely on the old method.
@@ -99,6 +80,33 @@ The `[Obsolete]` attribute takes two parameters:
 - **Tag**, which indicates the version or context (for example, `'17.0'`)
 
 In the article [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md), you can read more about guidelines that Microsoft uses internally for deprecation of AL code in the base application.
+
+## Preprocessor directives for conditional check
+
+You can check code using a conditional directive, first you must define a symbol to check. A symbol returns a boolean value: `true` or `false` and can be defined at the beginning of a source file, where the scope of the specific symbol is in that file. Or, you can define symbols in the `app.json` file, and then the scope is global for the extension. Learn more in [Preprocessor directives in AL](directives/devenv-directives-in-al.md).
+
+When the symbol is defined, you can check conditionally for the version and obsoletion state. In the following example, the `VERSION22` symbol is used to check for the version. The `VERSION22` symbol is defined in the `app.json` file.
+
+```al
+"preprocessorSymbols": [ "VERSION22"]
+```
+
+```al
+// Example of how to set obsoletion properties on a table
+table 12345 MyObsoleteTable
+{
+    #if 
+        ObsoleteState = Removed;
+        ObsoleteTag = '21.0';
+    #else
+        ObsoleteState = Pending;
+        ObsoleteTag = '20.0';
+    #endif
+        ObsoleteReason = 'The MyObsoleteTable has been replaced by MyNewTable.';
+}
+#endif
+```
+
 
 ## Use analyzer rules to enforce obsoletion policies
 
