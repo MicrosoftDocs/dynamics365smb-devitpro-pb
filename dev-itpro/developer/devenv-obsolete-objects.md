@@ -27,7 +27,7 @@ This article explains how to:
 - Combine version tags with preprocessor directives for conditional compilation.
 - Use analyzer rules to enforce obsoletion policies for the lifecycle of AL code.
 
-For broader guidance, see [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md).
+Learn more and see elaborate examples in [Best practices for deprecation of AL code](devenv-deprecation-guidelines.md).
 
 ## Obsolete objects
 
