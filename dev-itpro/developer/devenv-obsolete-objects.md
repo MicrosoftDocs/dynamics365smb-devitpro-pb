@@ -10,7 +10,7 @@ ms.reviewer: solsen
 
 # Obsolete objects, methods, and symbols in AL
 
-When you develop and maintain an AL extension, part of the process is often that some objects, or symbols must be retired. Instead of deleting or commenting out code, mark it as obsolete so you preserve compatibility and give dependent extensions time to migrate. AL provides dedicated obsoletion properties for objects (`ObsoleteState`, `ObsoleteReason`, `ObsoleteTag`) and the `[Obsolete]` attribute for methods, variables, events, and other symbols.
+When you develop and maintain an AL extension, part of the process is often that some objects, or symbols must be retired. Instead of deleting or commenting out code, mark it as obsolete so you preserve compatibility and give dependent extensions time to find an alternative solution or stop using it. AL provides dedicated obsoletion properties for objects (`ObsoleteState`, `ObsoleteReason`, `ObsoleteTag`) and the `[Obsolete]` attribute for methods, variables, events, and other symbols.
 
 Overall, the guidance for deprecating objects, methods, and symbols in AL can be illustrated like this:
 
