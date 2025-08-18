@@ -12,27 +12,28 @@ ms.reviewer: jswymer
 
 # Prepare for major updates with preview environments
 
-About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application. 
+Every March and September, the months before a new major version is released, you can try out new functionality in preview environments. Preview environments are sandbox environments that you create on or update to a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. When you create or update the sandbox environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the preview version marked as (Preview) from the version list.
 
-The following figure illustrates the suggested steps for getting a preview of a major update with example dates for the two release waves in any given calendar year.  
+For more information on update cycles in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], including the preview period, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md).
 
-![Generic timeline for steps to get a preview of a major update with sample dates for the two release waves each year.](../media/update-rollout-timeline-preview.png)
+## Preview environments
+Preview environments are sandbox environments that have been created on or updated to a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. They can be used to preview and test new functionality before the version becomes available. Preview environments are automatically deleted 30 days after the version the preview was for becomes available and cannot be updated to a different version (preview nor available). 
 
-For more information, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md). 
+> [!IMPORTANT]
+> Export any data, setup, and customizations in a preview environment that needs to be kept before the end of the preview period to ensure this does not get lost once the preview period ends and preview environments are deleted. 
+
+Creating a new preview environment lets you review new functionality in a clean environment without customer data, setup, or customizations. To create a new preview environment, [create a new environment](tenant-admin-center-environments.md#create-a-new-environment), choose sandbox as environment type, choose a version marked with **(Preview)** as version, and click confirm.
+
+Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that may contain your own data, setup, and/or customization, and lets you test the update itself with extensions installed. To update an existing sandbox to a preview version, [schedule an update](tenant-admin-center-update-management.md#schedule) on a sandbox environment and select a version marked with **Preview** as target version. It is only possible to schedule an update to a preview version once the preview period has started; preview versions are not visible in the list of target versions before the preview period starts.
 
 ## Practice and test
 
-Once you have the preview, start using it:
-
-1. Review the new functionality. Try it out, and begin training employees on the new features that are coming.
-
-2. Validate your extensions.
-
-    Upload and install your extensions into the sandbox environments created on the preview version and run through the functionality. Verify that the customization continues to work and is compatible with the new version.  
-
-    In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. Then, if tests complete successfully, upload the app into your production environment, setting the **Deploy to** field to *Next major version*. This way, the compatible version of your app will be used when you schedule the upgrade of your production environment to the new major update once it becomes available.
-
-3. Test the quality. If you run into issues related to the preview, please provide feedback as described in the [next section](#provide-feedback-on-the-preview).
+Sandbox environments on preview versions can be used to practice and test.
+- Review new functionality. Try it out, and begin training employees on the new features that are coming. Updating a sandbox copy of your production environment enables reviews of new functionality with the data, setup, and customizations of the production environment.
+- Validate your extensions.
+    - Test whether your extensions can update to the new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] by updating a sandbox environment with those extensions installed to the preview version.
+    - Upload and install your extensions into the sandbox environments created on the preview version and run through the functionality. Verify that the customization continues to work and is compatible with the new version.
+- Test the quality. If you run into issues related to the preview, please provide feedback as described in the [next section](#provide-feedback-on-the-preview).
 
 Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
 
@@ -51,21 +52,6 @@ We need your feedback on the preview! Let us know about your experiences with th
 1. Report a bug at [https://aka.ms/bcpreviewbugs](https://aka.ms/bcpreviewbugs).
 
    If you encounter any issues or glitches during your testing, please help us by filling out and submitting the form.
-
-## Guidelines for how to get started
-
-The newly created preview sandbox environment contains demonstration company data. Trying the preview on a copy of your current production data isn't yet supported; nor is testing the update from your current version to the preview. However, you can use the newly created sandbox environment for exploring and learning the new product capabilities. You can also use the preview environment to validate that any per-tenant extensions are still working as expected.
-
-If you run your tests on a preview environment one month before the announced major release of Business Central, it's more likely that the coming updates of your production environments go smoother. This way, you, your customers, and your code are better prepared for the official release.
-
-We expect to update the preview version only if we discover critical issues before the major update is generally available for production environments. Apart from these potential fixes, we don't expect any further changes to the product between the preview and the official release. You can start your testing and learning activities immediately, without waiting for the official release.
-
-> [!NOTE]
-> You will be able to test the update on a copy of your production data in a sandbox environment when we release the new update in production in April or October, respectively. When the official release becomes available, you can continue your tests on that version. You will no longer be able to create new preview sandboxes.
-
-> [!IMPORTANT]
-> The preview version as well as all sandbox environments that are based on it will be removed 30 days after the official release becomes available. 
-
 
 ## Related information
 
