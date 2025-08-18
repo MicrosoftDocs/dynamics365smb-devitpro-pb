@@ -52,14 +52,15 @@ When the scheduled update date arrives, the update runs automatically within the
 
 Available versions are versions released by Microsoft and ready for environments to update to. [Notification recipients](tenant-admin-center-notifications.md) get an email notification when a new version is available.  
 
-> [!IMPORTANT]
-> Choosing a target version for an environment's next update is expected to be available by the end of April 2025 for environments on version 25.5 or higher.
-
 To schedule an update:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select the **Name** of the relevant environment to open the environment details.
 1. Under **Update Settings**, select the **Modify** action for **Next Update**.
-1. In the **Schedule Environment Update** pane, select an available target version and pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
+1. In the **Schedule Environment Update** pane, select target version marked as **Available**
+    > [!NOTE]
+    > During preview periods, a target version marked as **Preview** will appear in the list of available versions for sandbox environments. Ensure you are familiar with the limitations of [preview environments](preview-environments.md) before scheduling an update to a preview version.
+
+3. In the **Schedule Environment Update** pane, pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
 
     > [!NOTE]
     > If you select a current date for your update, and the update window for the environment has already passed, the update starts during the next day's update window.
