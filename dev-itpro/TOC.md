@@ -1244,6 +1244,7 @@
 ## Rules, guidelines, and best practices
 ### [Overview](compliance/apptest-overview.md)
 ### [Deprecating AL code](developer/devenv-deprecation-guidelines.md)
+### [Obsolete objects, methods, and symbols in AL](developer/devenv-obsolete-objects.md)
 ### [Using a prefix or suffix](compliance/apptest-prefix-suffix.md)
 ### [Instrumenting an application for telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### [Testing your extension](compliance/apptest-testingyourextension.md)
