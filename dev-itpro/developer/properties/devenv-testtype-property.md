@@ -31,9 +31,11 @@ Specifies the type of test implemented in the codeunit, such as unit test.
 
 ## Remarks
 
-The `TestType` property is used to categorize the type of tests implemented in a codeunit according to the primary purpose and scope of the test. This categorization helps organize tests and understand their purpose within the application. By specifying the appropriate test type, developers can ensure that their tests are grouped for execution and reporting in CI/CD pipelines.
+The `TestType` property is used to categorize the type of tests implemented in a codeunit according to the primary purpose and scope of the test. This categorization helps organize tests and understand their purpose within the application. By specifying the appropriate test type, developers can ensure that their tests are grouped for execution and reporting in CI/CD pipelines. Learn more about how the [RequiredTestIsolation property](devenv-requiredtestisolation-property.md) can be used to set the required isolation level for tests.
 
 ## Related information
 
 [Getting started with AL](../devenv-get-started.md)  
 [Developing extensions](../devenv-dev-overview.md)  
+[TestIsolation property](devenv-testisolation-property.md)  
+[RequiredTestIsolation property](devenv-requiredtestisolation-property.md)  
