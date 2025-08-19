@@ -73,7 +73,7 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
 
    As a reseller, contact the customer's internal admin. As an internal admin, use the Business Central admin center to link the Business Central environment to the Power Platform environment. Learn more in [Linked Power Platform environments](tenant-admin-center-environments.md#linked-power-platform-environment).
 
-Watch this YouTube video for summary of how to manage consumption-based billing:
+Watch this YouTube video for summary of how to manage pay-as-you-go billing:
 
 [![Watch the video](https://img.youtube.com/vi/9esVS6I4wrY/0.jpg)](https://www.youtube.com/watch?v=9esVS6I4wrY)
 
