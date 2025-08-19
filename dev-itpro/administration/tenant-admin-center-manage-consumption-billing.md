@@ -75,7 +75,7 @@ Complete these tasks to set up the Business Central environment for pay-as-you-g
 
 Watch this YouTube video for summary of how to manage pay-as-you-go billing:
 
-[![Watch the video](https://img.youtube.com/vi/9esVS6I4wrY/0.jpg)](https://www.youtube.com/watch?v=9esVS6I4wrY)
+[![Watch the video](../developer/media/pay-as-you-go-video.png)](https://www.youtube.com/watch?v=9esVS6I4wrY)
 
 ## Manage capacity and usage
 
