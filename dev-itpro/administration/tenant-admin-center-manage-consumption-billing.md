@@ -27,6 +27,10 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 <!--Learn more about billing in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing). [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130)-->
 
+> [!VIDEO https://www.youtube.com/watch?v=9esVS6I4wrY]
+
+[![Alt text](../media/ADFS_Console.png](https://www.youtube.com/watch?v=9esVS6I4wrY)
+
 ### Billable agent capabilities
 
 - [Payables Agent](/dynamics365/business-central/payables-agent)
