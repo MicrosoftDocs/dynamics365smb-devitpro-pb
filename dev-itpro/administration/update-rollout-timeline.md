@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: article
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 03/31/2025
+ms.date: 08/19/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -28,7 +28,7 @@ There are two major update cycles per year, with major releases every April and 
 
 ### Preview period
 
-The preview period allows for testing of the new functionality before the version is made available as update to your environment. Administrators can create a Sandbox environment from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] on the preview version or update an existing sandbox to the preview version, for example to try out new functionality or test compatibility of extensions in a cloud environment. This period typically starts a month before the release of the new major version, that is, every March and September. Learn more in [Preparing for major updates with preview environments](preview-environments.md).
+The preview period allows for testing new functionality before the version is made available as an update to your environment. Administrators can create a sandbox environment from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] on the preview version or update an existing sandbox to the preview version. A preview version lets you try out new functionality or test compatibility of extensions in a cloud environment. This period typically starts a month before the release of the new major version, that is, every March and September. Learn more in [Preparing for major updates with preview environments](preview-environments.md).
 
 ### Update period
 
@@ -120,9 +120,7 @@ Microsoft monitors each update of an environment. If we detect any errors during
 
 ## Service updates
 
-The service components apply to multiple environments, such as all tenants in a region. So Microsoft schedules those updates to a time when traffic is lower in each region, typically during the evening or night. Typically, these service updates are transparent to any users, as the service is designed to manage traffic in a way that any users still working in [!INCLUDE [prod_short](../includes/prod_short.md)] aren't affected by these service updates.  
-
-These updates don't add or remove functionality, and they're transparent to business users.
+The service components apply to multiple environments, such as all tenants in a region. Microsoft schedules service updates when regional traffic is lower, typically in the evening or at night. Typically, business users don't notice service updates because the service manages traffic so users working in [!INCLUDE [prod_short](../includes/prod_short.md)] aren't affected. These updates don't add or remove functionality.
 
 ## Related information
 
