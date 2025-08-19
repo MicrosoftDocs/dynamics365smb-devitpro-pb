@@ -28,6 +28,12 @@ Specifies the type of test implemented in the codeunit, such as unit test.
 |**AITest**|runtime version 16.0|Specifies that the codeunit contains AI tests, which validate behavior driven by artificial intelligence, for example, accuracy.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The `TestType` property is used to categorize the type of tests implemented in a codeunit according to the primary purpose and scope of the test. This categorization helps organize tests and understand their purpose within the application. By specifying the appropriate test type, developers can ensure that their tests are run in the correct context and with the right dependencies.
+
+
 ## Related information  
 [Getting started with AL](../devenv-get-started.md)  
 [Developing extensions](../devenv-dev-overview.md)  
