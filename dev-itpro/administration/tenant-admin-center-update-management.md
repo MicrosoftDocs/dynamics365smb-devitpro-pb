@@ -5,7 +5,7 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 03/31/2025
+ms.date: 08/19/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
@@ -56,18 +56,19 @@ To schedule an update:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select the **Name** of the relevant environment to open the environment details.
 1. Under **Update Settings**, select the **Modify** action for **Next Update**.
-1. In the **Schedule Environment Update** pane, select target version marked as **Available**
-    > [!NOTE]
-    > During preview periods, a target version marked as **Preview** will appear in the list of available versions for sandbox environments. Ensure you are familiar with the limitations of [preview environments](preview-environments.md) before scheduling an update to a preview version.
+1. In the **Schedule Environment Update** pane, select target version marked as **Available**.
 
-3. In the **Schedule Environment Update** pane, pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
+  > [!NOTE]
+  > During preview periods, a target version marked as **Preview** appears in the list of available versions for sandbox environments. Ensure you're familiar with the limitations of [preview environments](preview-environments.md) before scheduling an update to a preview version.
 
-    > [!NOTE]
-    > If you select a current date for your update, and the update window for the environment has already passed, the update starts during the next day's update window.
-    >
-    > For example, if you change the **Scheduled update date** to the current date at 6 PM, and the update window is set to 1 AM–7 AM, the update doesn't start immediately but starts after 1 AM the next day.
-    >
-    > To start an update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets the update start immediately and allows large updates to run for longer than 24 hours if needed. Updates running in this mode aren't automatically canceled when the update window ends. Avoid using this setting for environments that must be available for users by a specific time.  
+1. Pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
+
+  > [!NOTE]
+  > If you select today's date for the update but the environment's update window is already past, the update starts in the next day's update window.
+  >
+  > For example, if you change the **Scheduled update date** to the current date at 6 PM, and the update window is set to 1 AM–7 AM, the update doesn't start immediately but starts after 1 AM the next day.
+  >
+  > To start an update immediately, schedule it for the current date and set **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets the update start immediately and allows large updates to run for longer than 24 hours if needed. Updates running in this mode aren't automatically canceled when the update window ends. Avoid using this setting for environments that must be available for users by a specific time.  
 
 1. Select **Schedule Update**.
 
@@ -76,7 +77,7 @@ To schedule an update:
 
 ### Schedule an update to a planned version
 
-Planned versions are versions that aren't released by Microsoft yet. Administrators can select planned versions within the current and next major version of the environment as the next update. This way, Microsoft doesn't schedule updates on the environment until the chosen planned version is available. A few days after the chosen version is available, the update is scheduled for a date at least seven days later automatically. [Notification recipients](tenant-admin-center-notifications.md) receive an email notification when a new version is available and another when the update is scheduled for the environment. Administrators can change the update date after it's scheduled by following the instructions under **Schedule an update to an available version**.
+Planned versions are versions that Microsoft didn't release yet. Administrators can select planned versions within the current and next major version of the environment as the next update. This way, Microsoft doesn't schedule updates on the environment until the chosen planned version is available. A few days after the chosen version is available, the update is scheduled for a date at least seven days later automatically. [Notification recipients](tenant-admin-center-notifications.md) receive an email notification when a new version is available and another when the update is scheduled for the environment. Administrators can change the update date after it's scheduled by following the instructions under **Schedule an update to an available version**.
 
 To schedule an update to a planned version:
 
@@ -86,7 +87,7 @@ To schedule an update to a planned version:
 1. Select **Schedule Update**.
 
 > [!NOTE]  
-> Only versions planned for release during the [update period](update-rollout-timeline.md#update-period) of the environment's current major version can be selected. For example, you can't select planned version 26.5 for an environment on version 25.x, because version 26.5 is planned for release in September 2025 and the update period for 25.x ends in August 2025.
+> Only versions planned for release during the [update period](update-rollout-timeline.md#update-period) of the environment's current major version can be selected. For example, you can't select planned version 26.5 for an environment on 25.x, because 26.5 releases in September 2025 and the 25.x update period ends in August 2025.
 
 ## <a name="notify"></a>Get notified of updates
 
@@ -112,4 +113,4 @@ Learn more in [Completed updates](update-rollout-timeline.md#completed-updates).
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
