@@ -9,13 +9,15 @@ author: jswymer
 ms.custom: 
     - bap-template
 ---
-# Update 27.0 for Business Central 2025 release wave 1 (preview)
+# Update 27.0 for Business Central 2025 release wave 2 (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article provides an overview of the new and updated features and general information about update 27.0 preview, which is available on sandbox environments only. 
+This article provides an overview of the new and updated features in update 27.0 preview for online sandbox environments only.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+This article is updated with more features and information about on premises deployments when version 27.0 is generally available. Learn more about all features planned for 2025 release wave (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
 
 ## Highlights
 
@@ -24,7 +26,7 @@ This article provides an overview of the new and updated features and general in
 
 ## New and updated features
 
-This table lists some of the new or updated features in version 27.0 public preview for sandboxes. For a comprehensive feature list and details, refer to [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central).
+This table lists new and updated features in the 27.0 public preview for sandboxes.
 
 <!-- Generate table:
 
@@ -136,13 +138,10 @@ Select and download the package for the appropriate country or region version fr
 |All other countries/regions (W1)|[Dynamics.365.BC.33317.W1.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.W1.DVD.zip)|
 -->
 
-## Upgrade to 27.0
+## Create a new sandbox enviroment on 27.0 preview
 
-### On-premises customers
 
-Deployments using version 24 or earlier must upgrade to version 25 before upgrading to version 26. Several objects marked as obsolete in earlier versions are deleted from the version 26 base application. Learn more in [Important information and considerations when upgrading to Business Central version 26](../upgrade/upgrade-considerations-v26.md).
-
-### Online customers
+## Upgrade an exisitng sandbox enviroment to 27.0 preview
 
 New customers get Business Central version 26.0 automatically. With the 26.0 release, the [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly) feature is generally available for environments using version 25.5 or higher. This feature lets you reschedule the major update to any date within the 5-month update period, which ends on August 31, 2025, for version 26.0. The option to set the target version for an environment's next update in the admin center is available by the end of April 2025.  
 
@@ -152,7 +151,7 @@ Learn more in [Major updates and minor updates for Business Central online](../a
 
 ### Business Central Launch Event
 
-The Business Central Launch Event for the Business Central 2025 release wave 1 is on April 1, 2025. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
+The Business Central Launch Event for the Business Central 2025 release wave 2 is on April 1, 2025. Learn more at [aka.ms/BCLE](https://aka.ms/BCLE).
 
 ### Discover all partner related resources
 
