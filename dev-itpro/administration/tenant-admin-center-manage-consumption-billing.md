@@ -27,6 +27,8 @@ Selected agent capabilities in [!INCLUDE [prod_short](../includes/prod_short.md)
 
 <!--Learn more about billing in [Copilot Studio licensing](/microsoft-copilot-studio/billing-licensing). [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=2085130)-->
 
+Watch this YouTube video for a visual summary of how to manage consumption-based billing.
+
 [![Watch the video](https://img.youtube.com/vi/9esVS6I4wrY/0.jpg)](https://www.youtube.com/watch?v=9esVS6I4wrY)
 
 ### Billable agent capabilities
