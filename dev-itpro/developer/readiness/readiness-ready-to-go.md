@@ -73,9 +73,9 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Find Microsoft branding guidelines for partners
 
-- Unlock the power of Microsoft branding: [Microsoft Trademark and Branding Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks)
-- Trademark and Brand Guidelines [Microsoft branding](https://partner.microsoft.com/en-us/marketing/branding)
-- Create a partner logo, certified letter, or award: [Logo Builder](https://learn.microsoft.com/en-us/partner-center/benefits/mpn-logo-builder)
+- Unlock the power of Microsoft branding: [Microsoft Trademark and Branding Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks)
+- Trademark and Brand Guidelines [Microsoft branding](https://partner.microsoft.com/marketing/branding)
+- Create a partner logo, certified letter, or award: [Logo Builder](https://learn.microsoft.com/partner-center/benefits/mpn-logo-builder)
 
 ## Licensing and pricing
 
