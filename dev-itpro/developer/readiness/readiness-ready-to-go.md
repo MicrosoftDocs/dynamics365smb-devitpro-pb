@@ -2,7 +2,7 @@
 title: Resources for partners
 description: Resources for partners contain a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central.
 author: jswymer
-ms.date: 06/06/2025
+ms.date: 08/20/2025
 ms.reviewer: solsen
 ms.topic: article
 ms.author: jswymer
@@ -70,6 +70,12 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Find the capability guide: [aka.ms/BCCapabilities](https://aka.ms/BCCapabilities)
 - Find pitch decks: [aka.ms/BCPitchDecks](https://aka.ms/BCPitchDecks)  
 - Find Dynamics 365 icons and guidelines on usage: [aka.ms/Dynamics365Icons](https://aka.ms/Dynamics365Icons)
+
+## Find Microsoft branding guidelines for partners
+
+- Unlock the power of Microsoft branding: [Microsoft Trademark and Branding Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks)
+- Trademark and Brand Guidelines [Microsoft branding](https://partner.microsoft.com/en-us/marketing/branding)
+- Create a partner logo, certified letter, or award: [Logo Builder](https://learn.microsoft.com/en-us/partner-center/benefits/mpn-logo-builder)
 
 ## Licensing and pricing
 
