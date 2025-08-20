@@ -4,7 +4,7 @@ description: Description of how you use the obsoletion properties and attributes
 author: SusanneWindfeldPedersen
 ms.topic: concept-article
 ms.author: solsen
-ms.date: 08/14/2025
+ms.date: 08/20/2025
 ms.reviewer: solsen
 ---
 
@@ -87,17 +87,17 @@ In the article [Best practices for deprecation of AL code](devenv-deprecation-gu
 
 If you want to check code using a conditional directive, you must first define a symbol to check. A symbol returns a boolean value: `true` or `false` and can be defined at the beginning of a source file, where the scope of the specific symbol is in that file. Or, you can define symbols in the `app.json` file, and then the scope is global for the extension. Learn more in [Preprocessor directives in AL](directives/devenv-directives-in-al.md).
 
-When the symbol is defined, you can check conditionally for the version and obsoletion state. In the following example, the `VERSION22` symbol is used to check for the version. The `VERSION22` symbol is defined in the `app.json` file.
+When the symbol is defined, you can check conditionally for the version and obsoletion state. In the following example, the `VERSION21` symbol is used to check for the version. The `VERSION21` symbol is defined in the `app.json` file.
 
 ```al
-"preprocessorSymbols": [ "VERSION22"]
+"preprocessorSymbols": ["VERSION21"]
 ```
 
 ```al
 // Example of how to set obsoletion properties on a table
 table 12345 MyObsoleteTable
 {
-    #if 
+    #if VERSION21
         ObsoleteState = Removed;
         ObsoleteTag = '21.0';
     #else
