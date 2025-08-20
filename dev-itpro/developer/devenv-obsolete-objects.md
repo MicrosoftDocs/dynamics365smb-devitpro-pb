@@ -112,7 +112,7 @@ table 12345 MyObsoleteTable
 
 ## Use analyzer rules to enforce obsoletion policies
 
-Analyzer rules in AL help enforce obsoletion policies and ensure that deprecated objects aren't used in new development. Specifically, a number of [AppSourceCop](analyzers/appsourcecop.md) analyzer rules help detect breaking changes. 
+Analyzer rules in AL help enforce obsoletion policies and ensure that deprecated objects aren't used in new development. Specifically, a number of analyzer rules help detect breaking changes. 
 
 |AppSourceCop rule|Description|
 |-----------------|-----------|
@@ -134,6 +134,8 @@ Analyzer rules in AL help enforce obsoletion policies and ensure that deprecated
 |[AS0098](analyzers/appsourcecop-as0098.md)|Prevents renaming or changing the ID of objects; must obsolete and create new.|
 |[AS0105](analyzers/appsourcecop-as0105.md)|Additional schema evolution nuances.|
 |[AS0117](analyzers/appsourcecop-as0117.md)|Requires use of PendingMove when moving objects.|
+
+For a complete list of AppSourceCop rules, see [AppSourceCop](analyzers/appsourcecop.md).
 
 ## Related information
 
