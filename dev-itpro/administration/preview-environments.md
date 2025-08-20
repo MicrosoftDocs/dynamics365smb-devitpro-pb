@@ -5,34 +5,37 @@ author: jswymer
 ms.topic: how-to
 ms.devlang: al
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 04/15/2025
+ms.date: 08/20/2025
 ms.author: jswymer
 ms.reviewer: jswymer
 ---
 
 # Prepare for major updates with preview environments
 
-Every March and September, the months before a new major version is released, you can try out new functionality in preview environments. Preview environments are sandbox environments that you create on or update to a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. When you create or update the sandbox environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the preview version marked as (Preview) from the version list.
+Every March and September, the months before a new major version is released, you can try new functionality in preview environments. Preview environments are sandbox environments that you create on or update to a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. When you create or update a sandbox environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], select the preview version marked as **(Preview)** from the version list.
 
-For more information on update cycles in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], including the preview period, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md).
+Learn more about update cycles, including the preview period, in [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md).
 
 ## Preview environments
-Preview environments are sandbox environments that have been created on or updated to a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. They can be used to preview and test new functionality before the version becomes available. Preview environments are automatically deleted 30 days after the version the preview was for becomes available and cannot be updated to a different version (preview nor available). 
+
+Preview environments are sandbox environments that have been created on or updated to a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. They can be used to preview and test new functionality before the version becomes available. Preview environments are automatically deleted 30 days after the version the preview was for becomes available and cannot be updated to a different version (preview nor available).
 
 > [!IMPORTANT]
 > Export any data, setup, and customizations in a preview environment that needs to be kept before the end of the preview period to ensure this does not get lost once the preview period ends and preview environments are deleted. 
 
 Creating a new preview environment lets you review new functionality in a clean environment without customer data, setup, or customizations. To create a new preview environment, [create a new environment](tenant-admin-center-environments.md#create-a-new-environment), choose sandbox as environment type, choose a version marked with **(Preview)** as version, and click confirm.
 
-Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that may contain your own data, setup, and/or customization, and lets you test the update itself with extensions installed. To update an existing sandbox to a preview version, [schedule an update](tenant-admin-center-update-management.md#schedule) on a sandbox environment and select a version marked with **Preview** as target version. It is only possible to schedule an update to a preview version once the preview period has started; preview versions are not visible in the list of target versions before the preview period starts.
+Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that may contain your own data, setup, and/or customization, and lets you test the update itself with extensions installed. To update an existing sandbox to a preview version, [schedule an update](tenant-admin-center-update-management.md#schedule) on a sandbox environment and select a version marked with **(Preview)** as target version. It is only possible to schedule an update to a preview version once the preview period has started; preview versions are not visible in the list of target versions before the preview period starts.
 
 ## Practice and test
 
 Sandbox environments on preview versions can be used to practice and test.
+
 - Review new functionality. Try it out, and begin training employees on the new features that are coming. Updating a sandbox copy of your production environment enables reviews of new functionality with the data, setup, and customizations of the production environment.
 - Validate your extensions.
-    - Test whether your extensions can update to the new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] by updating a sandbox environment with those extensions installed to the preview version.
-    - Upload and install your extensions into the sandbox environments created on the preview version and run through the functionality. Verify that the customization continues to work and is compatible with the new version.
+
+  - Test whether your extensions can update to the new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] by updating a sandbox environment with those extensions installed to the preview version.
+  - Upload and install your extensions into the sandbox environments created on the preview version and run through the functionality. Verify that the customization continues to work and is compatible with the new version.
 - Test the quality. If you run into issues related to the preview, please provide feedback as described in the [next section](#provide-feedback-on-the-preview).
 
 Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
