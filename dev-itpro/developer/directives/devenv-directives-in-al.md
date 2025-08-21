@@ -59,7 +59,7 @@ For example:
 "preprocessorSymbols": [ "DEBUG","PROD"]
 ```
 
-For more information, see [JSON Files](../devenv-json-files.md).
+Learn more in [JSON Files](../devenv-json-files.md).
 
 ## Example
 
