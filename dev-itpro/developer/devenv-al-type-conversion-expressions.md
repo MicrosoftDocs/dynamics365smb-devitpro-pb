@@ -4,6 +4,7 @@ description: Description of how AL types can be converted.
 ms.reviewer: solsen
 ms.topic: concept-article
 ms.date: 02/07/2025
+ms.update-cycle: 1095-days
 ms.custom: bap-template
 author: SusanneWindfeldPedersen
 ms.collection: get-started
