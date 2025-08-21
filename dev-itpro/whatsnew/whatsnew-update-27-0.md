@@ -58,7 +58,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 
 -->
 
-| Product Area | Feature Name |
+| Product area | Feature |
 |--------------|--------------|
 | Copilot and agents | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search) |
 | | Alternative posting groups for Employees - Czechia |
