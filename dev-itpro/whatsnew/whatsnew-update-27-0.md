@@ -21,7 +21,7 @@ More features and information about on-premises deployments will be added to thi
 
 ## Highlights
 
-[optional - tbd]
+[Optional - tbd]
 
 <!--
 > [!TIP]
@@ -145,13 +145,14 @@ Select and download the package for the appropriate country or region version fr
 
 ## Create a new sandbox environment on 27.0 preview
 
+Creating a new preview environment lets you review new functionality in a clean environment without customer data, setup, or customizations. To create a new preview environment, follow the instructions in [Create a new environment](../administration/tenant-admin-center-environments.md#create-a-new-environment). Set the environment type to **Sandbox** and the version to **27.0 preview**.
 
+## Update an existing sandbox environment to 27.0 preview
 
-## Upgrade an exisitng sandbox environment to 27.0 preview
+Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that might contain your own data, setup, and customizations by testing with your extensions installed. To update an existing sandbox, follow the instructions in [Schedule an update for an environment](../administration/tenant-admin-center-update-management.md#schedule). Set the version to **27.0 preview**.
 
-New customers get Business Central version 26.0 automatically. With the 26.0 release, the [Manage environment updates more flexibly](/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/manage-environment-updates-more-flexibly) feature is generally available for environments using version 25.5 or higher. This feature lets you reschedule the major update to any date within the 5-month update period, which ends on August 31, 2025, for version 26.0. The option to set the target version for an environment's next update in the admin center is available by the end of April 2025.  
-
-Learn more in [Major updates and minor updates for Business Central online](../administration/update-rollout-timeline.md#major-updates).
+> [!TIP]
+> Updating a sandbox environment is a new capability introduced in the service with this update.
 
 ## Good to know
 
