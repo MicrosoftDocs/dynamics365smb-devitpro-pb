@@ -1,6 +1,6 @@
 The parameter `Number` is an integer and represents the number of the page that you want to run. If you enter zero (0), the system displays the default lookup window for the current page. If the page you specify doesn't exist, a runtime error occurs.
 
-The following code lines from the base application illustrate how the `Page.RunModal` method with the `Number` parameter set to zero (0) displays the default lookup window defined for the table.
+The following code lines from the base application illustrate how to specify parameters for the `Page.RunModal` method with the `Number` parameter set to zero (0) and thereby display the default lookup window defined for the table.
 
 table 180 "G/L Account Where-Used"
 {
