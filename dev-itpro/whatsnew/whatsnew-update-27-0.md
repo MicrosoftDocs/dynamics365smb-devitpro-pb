@@ -73,11 +73,11 @@ When all the links have been created, remove the "Release Plan URL" column from 
 | Sustainability Management | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) |
 | | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) |
 
-## Changes to optional feature keys in Feature Management
+## Changes to optional features in Feature Management
 
 This section outlines changes to feature and feature updates controlled by **Feature management** in version 27.0.
 
-### Feature keys now mandatory and removed from feature management
+### Feature keys now mandatory and removed
 
 - [Feature Update: Enable use of package tracking in physical inventory orders](/dynamics365/business-central/inventory-how-work-item-tracking)
 - [Feature: Add fields from related tables in analysis mode.](/dynamics365/business-central/analysis-mode-feature-key)
