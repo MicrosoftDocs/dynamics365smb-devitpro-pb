@@ -55,7 +55,7 @@ Learn more about **Go to Definition** in [AL code navigation](devenv-al-code-nav
 ### Conditional breakpoints
 
 > [!NOTE]
-> At this point conditional breakpoints aren't supported in version 26.0 and later due to necessary changes in the platform. It will be supported in a future update.
+> At this point conditional breakpoints aren't supported in version 26.0 and later due to necessary changes in the platform. We're investigating this issue and will update the documentation accordingly.
 
 You can also set a condition on a breakpoint and if the condition evaluates as true, then code execution breaks at the breakpoint. Learn more in [Setting conditional breakpoints](devenv-debugging-conditional-breakpoints.md).
 
