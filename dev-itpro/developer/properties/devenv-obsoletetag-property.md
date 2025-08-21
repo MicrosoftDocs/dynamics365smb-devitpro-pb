@@ -66,7 +66,7 @@ ObsoleteTag = 'This field is being deprecated with the newest build of the produ
 
 Use this property to add valuable information to developers about an object or element that will become obsolete in time or is already obsolete. For procedures and variables, the obsolete tag can be specified as an optional parameter in the `Obsolete` attribute: `[Obsolete('<Reason>','<tag>')]`. Learn more in [Obsolete attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute).
 
-Learn more about obsoletion in [Obsolete objects, methods, and symbols in AL](developer/devenv-obsolete-objects.md).
+Learn more about obsoletion in [Obsolete objects, methods, and symbols in AL](../devenv-obsolete-objects.md).
 
 For an elaborate example of deprecating, see [Best practices for deprecation of code in the base app](../devenv-deprecation-guidelines.md).
 
