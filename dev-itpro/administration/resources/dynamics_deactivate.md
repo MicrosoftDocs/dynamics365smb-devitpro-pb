@@ -23,6 +23,11 @@ Represents a deactivate object in [!INCLUDE[d365fin_long_md](../../includes/d365
 |:--------------------|:-----------|:-------------------------|
 |[POST deactivate](../api/dynamics_deactivate_post.md)|deactivate| Deactivates a specific feature.|
 
+## Bound Actions
+
+| Bound Action | Description |
+|:--------------------|:-----------|
+|Microsoft.NAV.deactivate| Deactivates a specific feature.|
 
 ## Properties
 
