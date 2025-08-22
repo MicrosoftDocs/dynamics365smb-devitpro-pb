@@ -328,6 +328,8 @@
 #### [Get extension upload](administration/api/dynamics_extensionupload_get.md)
 #### [Create extension upload](administration/api/dynamics_extensionupload_create.md)
 #### [Update extension upload](administration/api/dynamics_extensionupload_update.md)
+### [Feature management](administration/resources/dynamics_featuremanagement.md)
+#### [Get feature management](administration/api/dynamics_featuremanagement_get.md)
 ### [Permission set](administration/resources/dynamics_permissionset.md)
 #### [Get permission set](administration/api/dynamics_permissionset_get.md)
 ### [Scheduled job](administration/resources/dynamics_scheduledjob.md)

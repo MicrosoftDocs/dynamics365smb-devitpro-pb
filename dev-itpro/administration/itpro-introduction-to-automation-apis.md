@@ -251,7 +251,7 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 
 ### Get a list of available features
 
-To view list of features available in feature management and their status issue a [GET FeatureManagement]()
+To view list of features available in feature management and their status issue a [GET FeatureManagement](api/dynamics_featuremanagement_get.md)
 
 ```json
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features
@@ -259,7 +259,7 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 
 ### Activate a feature
 
-To activate a feature, issue a [POST activate]() on the bound action Microsoft.NAV.activate against the specific feature resource. Use the {featureId} value from the GET features response.
+To activate a feature, issue a [POST activate](api/dynamics_activate_create.md) on the bound action Microsoft.NAV.activate against the specific feature resource. Use the {featureId} value from the GET features response.
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features({featureId})/Microsoft.NAV.activate
@@ -275,7 +275,7 @@ If successful, the request typically returns a "200" response. Use the GET featu
 
 ### Deactivate a feature
 
-To deactivate a feature, issue a [POST deactivate]() on the bound action Microsoft.NAV.deactivate against the specific feature resource.
+To deactivate a feature, issue a [POST deactivate](api/dynamics_deactivate_create.md) on the bound action Microsoft.NAV.deactivate against the specific feature resource.
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features({featureId})/Microsoft.NAV.deactivate
