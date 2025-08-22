@@ -307,6 +307,7 @@
 ### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Activate](administration/api/dynamics_activate.md)
 ### [Apicategoryroutes](administration/resources/dynamics_apicategoryroutes.md)
 ### [Automation company](administration/resources/dynamics_automationcompany.md)
 #### [Get automation company](administration/api/dynamics_automationcompany_get.md)
@@ -320,6 +321,7 @@
 #### [Delete configuration package](administration/api/dynamics_configurationpackage_delete.md)
 #### [Create configuration package](administration/api/dynamics_configurationpackage_create.md)
 #### [Update configuration package](administration/api/dynamics_configurationpackage_update.md)
+### [Deactivate](administration/resources/dynamics_deactivate.md)
 ### [Extension](administration/resources/dynamics_extension.md)
 #### [Get extension](administration/api/dynamics_extension_get.md)
 ### [Extension deployment status](administration/resources/dynamics_extensiondeploymentstatus.md)

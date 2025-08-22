@@ -51,4 +51,5 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [Feature management](../api/dynamics_featuremanagement.md)  
-[Deactivate feature](../api/dynamics_deactivate.md)
+[Deactivate feature](../api/dynamics_deactivate.md)  
+[Activate feature](../api/dynamics_activate.md)
