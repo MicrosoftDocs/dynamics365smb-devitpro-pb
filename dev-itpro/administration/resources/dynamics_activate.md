@@ -23,6 +23,11 @@ Represents an activate object in [!INCLUDE[d365fin_long_md](../../includes/d365f
 |:--------------------|:-----------|:-------------------------|
 |[POST activate](../api/dynamics_activate_post.md)|activate| Activates a specific feature.|
 
+## Bound Actions
+
+| Bound Action | Description |
+|:--------------------|:-----------|
+|Microsoft.NAV.activate| Activates a specific feature.|
 
 ## Properties
 
@@ -47,3 +52,6 @@ Authorization: Bearer {token}
 If successful, the request typically returns a "200" response. Use the GET features request to verify that the feature state has changed.
 
 ## Related information
+
+[Feature management](../api/dynamics_featuremanagement.md)  
+[Deactivate feature](../api/dynamics_deactivate.md)  
