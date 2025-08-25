@@ -31,7 +31,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micros
 
 ## Request body
 
-In the request body, supply a JSON representation of an **activate** object.
+In the request body, supply a JSON representation of an **activate** object with the following properties: "updateInBackground" and "startDateTime".
 
 ## Response
 
@@ -47,8 +47,8 @@ Here is an example of the request.
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features({featureId})/Microsoft.NAV.activate
 Authorization: Bearer {token}
 {
-	"updateInBackground":false,
-	"startDateTime":"2025-07-08T16:00:00Z"
+  "updateInBackground":false,
+  "startDateTime":"2025-07-08T16:00:00Z"
 }
 ```
 
