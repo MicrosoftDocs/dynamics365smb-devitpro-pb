@@ -2,6 +2,7 @@ The parameter `Number` is an integer and represents the number of the page that 
 
 The following code lines from the base application illustrate how to specify parameters for the `Page.RunModal` method with the `Number` parameter set to zero (0) and thereby display the default lookup window defined for the table.
 
+```al
 table 180 "G/L Account Where-Used"
 {
     Caption = 'G/L Account Where-Used';
