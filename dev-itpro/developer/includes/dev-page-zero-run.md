@@ -20,14 +20,14 @@ codeunit 100 "Calc. G/L Acc. Where-Used"
         TempGLAccWhereUsed: Record "G/L Account Where-Used" temporary;
         ...
 
-...
+    ...
 
-local procedure ShowGLAccWhereUsed()
-begin
-    OnBeforeShowGLAccWhereUsed(TempGLAccWhereUsed);
-    TempGLAccWhereUsed.SetCurrentKey("Table Name");
-    Page.RunModal(0, TempGLAccWhereUsed); // Page number is zero, show the default lookup window defined for TempGLAccWhereUsed
-end;
-...
+    local procedure ShowGLAccWhereUsed()
+    begin
+        OnBeforeShowGLAccWhereUsed(TempGLAccWhereUsed);
+        TempGLAccWhereUsed.SetCurrentKey("Table Name");
+        Page.RunModal(0, TempGLAccWhereUsed); // Page number is zero, show the default lookup window defined for TempGLAccWhereUsed
+    end;
+    ...
 }
 ```
