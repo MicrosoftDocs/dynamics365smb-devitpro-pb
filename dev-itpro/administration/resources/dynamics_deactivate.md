@@ -21,7 +21,7 @@ Represents a deactivate object in [!INCLUDE[d365fin_long_md](../../includes/d365
 
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
-|[POST deactivate](../api/dynamics_deactivate_post.md)|deactivate| Deactivates a specific feature.|
+|[POST deactivate](../api/dynamics_deactivate_create.md)|deactivate| Deactivates a specific feature.|
 
 ## Bound Actions
 
@@ -49,3 +49,6 @@ If successful, the request typically returns a "200" response. Use the GET featu
 
 
 ## Related information
+
+[Feature management](dynamics_featuremanagement.md)  
+[Deactivate feature](dynamics_deactivate.md)  
