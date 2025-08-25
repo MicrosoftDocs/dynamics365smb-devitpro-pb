@@ -32,6 +32,11 @@ Sets a value that indicates whether a SQL Server unique constraint that correspo
 
 A unique index ensures that records in a table do not have identical field values. With a unique index, when a table is validated, values of the field that makes up the key are checked for uniqueness. If the table includes records with duplicate values for the field, the validation fails.
 
+> [!CAUTION]
+> In online environments, the `Unique` property must be set only when a table is first introduced.
+>
+> Adding this property to existing tables is not supported. Although the change may pass app validation and allow the app to be published to AppSource, it cannot be installed due to data consistency requirements when existing table data could possibly contains duplicates. Once published with the `Unique` property, removing this property is considered a breaking change and is no longer possible.
+
 ## Example
 
 The following example defines a primary key and two unique secondary keys.
