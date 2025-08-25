@@ -251,7 +251,7 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 
 ### Get a list of available features
 
-To view list of features available in feature management and their status issue a [GET FeatureManagement](api/dynamics_featuremanagement_get.md)
+To view list of features available in feature management and their status issue a [GET features](api/dynamics_featuremanagement_get.md)
 
 ```json
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/features
