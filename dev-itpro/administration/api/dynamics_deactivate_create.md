@@ -51,5 +51,5 @@ Authorization: Bearer {token}
 ## Related information
 
 [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
-[Feature management](../api/dynamics_featuremanagement.md)  
-[Deactivate feature](../api/dynamics_deactivate.md)
+[Feature management](../resources/dynamics_featuremanagement.md)  
+[Deactivate feature](../resources/dynamics_deactivate.md)
