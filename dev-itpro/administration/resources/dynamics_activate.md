@@ -53,5 +53,6 @@ If successful, the request typically returns a "200" response. Use the GET featu
 
 ## Related information
 
-[Feature management](../api/dynamics_featuremanagement.md)  
-[Deactivate feature](../api/dynamics_deactivate.md)  
+[Feature management](dynamics_featuremanagement.md)  
+[Activate feature](dynamics_activate.md)  
+[Deactivate feature](dynamics_deactivate.md)  
