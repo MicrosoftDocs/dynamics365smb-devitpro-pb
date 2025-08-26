@@ -60,18 +60,68 @@ When all the links have been created, remove the "Release Plan URL" column from 
 
 | Product area | Feature |
 |--------------|--------------|
-| Copilot and agents | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search) |
-| Country and regional| Alternative posting groups for Employees - Czechia |
-| | [Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia) |
-| | [Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia) |
-| | [New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia) |
-|  | [New pages for purchase and sales advance lines for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia) |
-| | [Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia) |
-| Electronic documents | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) |
-| Financial management | Alternative posting groups for Employees |
-| | [New Contoso Coffee Demo Dataset for Intrastat](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat) |
-| Sustainability management | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) |
-| | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) |
+| Copilot and agents | [Connect AI agents to Business Central through MCP server](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/connect-ai-agents-business-central-through-mcp-server) |
+|  | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search) |
+|  | [Get better field suggestions using autofill with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/get-better-field-suggestions-using-autofill-copilot) |
+|  | [Give more instructions for the agent when you review its tasks](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/give-more-instructions-agent-when-review-its-tasks) |
+|  | [Summarize with Copilot enhancements](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/summarize-copilot-enhancements) |
+|  | [Suggest gas emissions in sustainability journals with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/suggest-gas-emissions-sustainability-journals-copilot) |
+|  | Understand how each Copilot and agent capabilities page shows the consumption billing type for each capability |
+|  | [Use enhanced analysis assist with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analysis-assist-copilot) |
+|  | [Use enhanced chat with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-chat-copilot) |
+|  | [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process) |
+| Country and regional | Alternative posting groups for Employees - Czechia |
+|  | [Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia) |
+|  | [Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia) |
+|  | [Install UK localization as an extension to the base app](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/install-uk-localization-as-app) |
+|  | [New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia) |
+|  | [New pages for purchase and sales advance entries for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia) |
+|  | [Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia) |
+|  | [Submit IRS 1099 forms electronically to IRIS in the US localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/submit-irs1099-forms-electronically-iris) |
+| Development | Enhancements to the Page Scripting tool |
+|  | Hide Copilot summaries |
+|  | [Truncate table data with new AL method](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/truncate-table-data-new-al-method) |
+|  | View SQL call information in performance profiles |
+| Ecommerce | [Define sell-to and bill-to customer details per company location](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/define-sell-to-bill-to-customer-details-per-company-location) |
+|  | [Enable staff-to-salesperson mapping for Shopify orders](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enable-staff-to-salesperson-mapping-shopify-orders) |
+|  | [Synchronize market-specific prices with Shopify](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/synchronize-market-specific-prices-shopify) |
+|  | [Troubleshoot the Shopify Connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/troubleshoot-shopify-connector) |
+|  | [Use the latest update for the Shopify Connector](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-latest-update-shopify-connector) |
+| Electronic Documents | [Export reminders and finance charges as PEPPOL files](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/export-reminders-finance-charges-as-peppol-files) |
+|  | [Send e-documents via a service and email simultaneously](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/send-e-documents-via-service-email-simultaneously) |
+|  | [Set up the Clearance model in the E-Documents framework](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/set-up-clearance-model-e-documents-framework) |
+|  | [Use e-documents for shipment and transfer shipment document types](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-e-documents-shipment-transfer-shipment-document-types) |
+|  | [Use the Admin permission set with e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-admin-permission-set-e-documents) |
+|  | [Use the E-Documents framework with Power Automate and other solutions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-e-documents-power-automate) |
+| Financial Management | Alternative posting groups for Employees |
+|  | [Calculate excise taxes](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/calculate-excise-taxes) |
+|  | [Create multiple fixed asset cards](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/create-multiple-fixed-asset-cards) |
+|  | [New Contoso Coffee Demo Dataset for Intrastat](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat) |
+| Governance and administration | [Migrate record links and notes with cloud migration tooling](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/migrate-record-links-notes-cloud-migration-tooling) |
+|  | Tenant administrators can set Feature Management switches with an API |
+| Reporting and data analysis | New data picker in the Word add-in for document layouts |
+|  | [Use enhanced Financial Reporting](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-financial-reporting) |
+|  | [Use enhanced purchasing analytics](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-purchasing-analytics) |
+|  | [Use the enhanced Power BI Sales app and modernized reports in sales analytics](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-sales-analytics) |
+| Supply chain management | [Add more fields and columns by personalizing pages](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/add-more-fields-columns-personalizing-pages) |
+|  | [Configure the default calculation for the Calculate Consumption report](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/configure-default-calculation-calculate-consumption-report) |
+|  | [Sort lines by type and number in sales and purchase postings](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/sort-lines-type-number-sales-purchase-postings) |
+| Sustainability Management | Avoid changing the Emissions Unit of Measure when entries already exist |
+|  | [Enable projects with value chain automation in Scope 3](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enable-projects-value-chain-automation-scope-3) |
+|  | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) |
+|  | [Measure all gases as CO2 equivalents in Sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/measure-all-gases-as-co2-equivalents-sustainability) |
+|  | [Report on social and governance information for employees in Sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/report-social-governance-information-employees-sustainability) |
+|  | [Require approvals for sustainability journals](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/require-approvals-sustainability-journals) |
+|  | [Track energy consumption in Sustainability](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/track-energy-consumption-sustainability) |
+|  | [Track item charges across value chain automation in Scope 3](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/track-item-charges-across-value-chain-automation-scope-3) |
+|  | [Track items of concern related to gas emissions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/track-items-concern-related-gas-emissions) |
+|  | [Use an updated Sustainability Manager Role Center](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-updated-sustainability-admin-role-center) |
+|  | [Use CBAM and EPR calculations](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-cbam-epr-calculations) |
+|  | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) |
+|  | Use updated demo data for Sustainability |
+| User experiences | Adjust width of Copilot, help, and page scripting panes |
+|  | Easily understand the currency of any amount |
+
 
 ## Changes to optional features in Feature Management
 
