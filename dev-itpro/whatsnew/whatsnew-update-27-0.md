@@ -78,7 +78,8 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |  | [New pages for purchase and sales advance entries for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia) |
 |  | [Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia) |
 |  | [Submit IRS 1099 forms electronically to IRIS in the US localization](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/submit-irs1099-forms-electronically-iris) |
-| Development | Enhancements to the Page Scripting tool |
+| Development | Cancel packaging and publishing via VSCode|
+|  |Enhancements to the Page Scripting tool |
 |  | Hide Copilot summaries |
 |  | [Truncate table data with new AL method](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/truncate-table-data-new-al-method) |
 |  | View SQL call information in performance profiles |
