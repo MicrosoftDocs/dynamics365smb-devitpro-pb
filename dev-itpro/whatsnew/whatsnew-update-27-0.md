@@ -15,9 +15,9 @@ ms.custom:
 
 This article provides an overview of new and updated features in update 27.0 preview, which applies only to Business Central online sandbox environments and not to production or on-premises environments.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 More features and information about on-premises deployments will be added to this article when version 27.0 is generally available. Learn more about all features planned for 2025 release wave (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Highlights
 
@@ -147,12 +147,12 @@ Select and download the package for the appropriate country or region version fr
 
 Creating a new preview environment lets you review new functionality in a clean environment without customer data, setup, or customizations. To create a new preview environment, follow the instructions in [Create a new environment](../administration/tenant-admin-center-environments.md#create-a-new-environment). Set the environment type to **Sandbox** and the version to **27.0 preview**.
 
-## Update an existing sandbox environment to 27.0 preview
+## Update an existing sandbox environment to 27.0 preview **NEW**
+
+> [!NOTE]
+> Updating a sandbox environment is a new capability introduced in the service.
 
 Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that might contain your own data, setup, and customizations by testing with your extensions installed. To update an existing sandbox, follow the instructions in [Schedule an update for an environment](../administration/tenant-admin-center-update-management.md#schedule). Set the version to **27.0 preview**.
-
-> [!TIP]
-> Updating a sandbox environment is a new capability introduced in the service with this update.
 
 ## Good to know
 
