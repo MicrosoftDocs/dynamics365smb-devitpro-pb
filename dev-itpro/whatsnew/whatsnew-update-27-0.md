@@ -91,14 +91,6 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 - [Feature: Advanced Tell Me (preview)](https://go.microsoft.com/fwlink/?linkid=2331650)
 
-### Existing feature keys now enabled by default
-
-- [Feature Update: Enable multiple users to post item ledger entries and value entries at the same time](/dynamics365/business-central/inventory-how-setup-general#allow-workers-to-post-transactions-at-the-same-time) 
-- [Feature Update: Enable multiple users to post job (now called project) ledger entries at the same time](/dynamics365/business-central/projects-how-setup-jobs?tabs=current-experience#allow-multiple-people-to-post-project-transactions-at-the-same-time) 
-- [Feature Update: Enable multiple users to post resource ledger entries at the same time](/dynamics365/business-central/projects-how-setup-resources#allow-multiple-people-to-post-resource-transactions-at-the-same-time)  <!-- missing rp-->
-- [Feature: Calculate only visible FlowFields](../developer/calculate-only-visible-flowfields-feature-key.md)
-- [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md) changed to Feature: Preview semantic similarity search on application metadata.
-
 ### Other feature key changes
 
 - [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md) renamed to **Feature: Preview semantic similarity search on application metadata**.
