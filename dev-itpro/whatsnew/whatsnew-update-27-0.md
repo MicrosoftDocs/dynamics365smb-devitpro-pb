@@ -143,11 +143,11 @@ Select and download the package for the appropriate country or region version fr
 |All other countries/regions (W1)|[Dynamics.365.BC.33317.W1.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.W1.DVD.zip)|
 -->
 
-## Create a new sandbox environment on 27.0 preview
+## Create new sandbox environment on 27.0 preview
 
 Creating a new preview environment lets you review new functionality in a clean environment without customer data, setup, or customizations. To create a new preview environment, follow the instructions in [Create a new environment](../administration/tenant-admin-center-environments.md#create-a-new-environment). Set the environment type to **Sandbox** and the version to **27.0 preview**.
 
-## Update an existing sandbox environment to 27.0 preview **NEW**
+## Update existing sandbox environment to 27.0 preview
 
 > [!NOTE]
 > Updating a sandbox environment is a new capability introduced in the service.
