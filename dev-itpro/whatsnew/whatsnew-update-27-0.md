@@ -57,7 +57,7 @@ When all the links have been created, remove the "Release Plan URL" column from 
 | Product Area | Feature Name|
 
 -->
-
+<!--
 | Product area | Feature |
 |--------------|--------------|
 | Copilot and agents | [Connect AI agents to Business Central through MCP server](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/connect-ai-agents-business-central-through-mcp-server) |
@@ -120,8 +120,23 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |  | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) |
 |  | Use updated demo data for Sustainability |
 | User experiences | Adjust width of Copilot, help, and page scripting panes |
-|  | Easily understand the currency of any amount |
+|  | Easily understand the currency of any amount |-->
 
+
+| Product area | Feature |
+|--------------|--------------|
+| Copilot and agents | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search) |
+| Country and regional| Alternative posting groups for Employees - Czechia |
+| | [Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia) |
+| | [Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia) |
+| | [New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia) |
+|  | [New pages for purchase and sales advance lines for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia) |
+| | [Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia) |
+| Electronic documents | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) |
+| Financial management | Alternative posting groups for Employees |
+| | [New Contoso Coffee Demo Dataset for Intrastat](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat) |
+| Sustainability management | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) |
+| | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) |
 
 ## Changes to optional features in Feature Management
 
