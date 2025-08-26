@@ -60,6 +60,8 @@ To schedule an update:
 
   > [!NOTE]
   > During preview periods, a target version marked as **Preview** appears in the list of available versions for sandbox environments. Ensure you're familiar with the limitations of [preview environments](preview-environments.md) before scheduling an update to a preview version.
+  >
+  > Notification recipients registered in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] do not receive email notifications regarding availability of a new preview version or execution of an environment update to a preview version (scheduled, succeeded, or failed update). Use the Operations page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to view details on an environment update to a preview version.
 
 1. Pick a date within the [update period](update-rollout-timeline.md#update-period) for the environment's current major version to schedule the update for.
 
