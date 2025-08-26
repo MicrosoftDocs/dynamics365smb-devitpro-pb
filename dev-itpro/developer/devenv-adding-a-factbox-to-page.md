@@ -81,7 +81,7 @@ You can define the following system parts by using the `systempart()` keyword:
 |--------|-------------|
 |  Links | Allows the user to add links to a URL or path on the record shown in the page. For example, on an Item card, a user can add a link to the supplier's item catalog. The links appear with the record when it's viewed. When a user chooses a link, the target file opens.|
 |  Notes | Allows the user to write a note on the record shown in the page. For example, when creating a sales order, a user can add a note about the order. The note appears with the item when it's viewed.|
-| Summary | Allows the user to view a summary of the record shown in the page on pages that display a summary by default. For example, on a Customer card, a user can see a summary of the customer's sales history. The summary appears with the record when it's viewed. With 2025 release wave 2, the Summary part can be hidden in code on page objects, page extensions, and profiles. Use the `DefaultSummaryPart` keyword to refer to it in code. Learn more in [Summarize records with Copilot](/dynamics365/business-central/summarize-with-copilot).|
+| Summary | Allows the user to view a summary of the record shown in the page on pages that display a summary by default. For example, on a Customer card, a user can see a summary of the customer's sales history. The summary appears with the record when it's viewed. With 2025 release wave 2, the Summary part can be hidden in code on page objects, page extensions, and profiles. Use the `DefaultSummaryPart` keyword to refer to it in code.|
 
 ## Filtering data displayed on a page in a FactBox
 
