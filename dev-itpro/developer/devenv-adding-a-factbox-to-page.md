@@ -19,12 +19,12 @@ The following example shows a page that displays a sales order list, where a Fac
 The following list highlights a few categories of FactBoxes:
 
 - Show related records/fields, which are modeled as ListParts or CardParts.
-- Show related KPIs, which are modeled as CardParts with charts or Cues. For more information, see [Designing Role Centers](devenv-designing-role-centers.md).
+- Show related KPIs, which are modeled as CardParts with charts or Cues. Learn more in [Designing Role Centers](devenv-designing-role-centers.md).
 - Visualize related data or display from external sources, which are modeled as CardParts containing a client add-in. For example, Bing maps, Power BI, Microsoft Social Engagement, and more.
 
 ## Adding a FactBox area to a page
 
-You define the FactBox by adding a FactBox area container control to the page. The FactBox area container control acts as a placeholder to which you can add different parts for the FactBox. You can add a FactBox area container control on the following page types. 
+You define the FactBox by adding a FactBox area container control to the page. There can only be one FactBox area control on one page. The FactBox area container control acts as a placeholder to which you can add different parts for the FactBox. You can add a FactBox area container control on the following page types. 
   
 - Card  
 - Document  
@@ -33,9 +33,6 @@ You define the FactBox by adding a FactBox area container control to the page. T
 - Worksheet  
 
 > [!NOTE]  
-> Only one FactBox area control is allowed on a page. 
-
-> [!WARNING]  
 > You can add a part to the FactBox area that displays an existing page of the CardPart or ListPart type only. If you attempt to use another page type, you get an error. 
 
 ### Example
