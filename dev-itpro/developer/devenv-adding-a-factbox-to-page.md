@@ -2,7 +2,7 @@
 title: Adding a FactBox to a page
 description: A FactBox is located on the right-most side of a page. This area is used to display related facts about the current record including charts, data from related tables, Notes, and Links.
 author: SusanneWindfeldPedersen
-ms.date: 05/03/2024
+ms.date: 08/26/2025
 ms.topic: how-to
 ms.author: solsen
 ms.reviewer: solsen
@@ -10,7 +10,9 @@ ms.reviewer: solsen
 
 # Adding a FactBox to a page
 
-A FactBox is the area that is located on the right-most side of a page and it's divided into one or more parts that are arranged vertically. This area is used to display content including other pages, charts, and system parts such as Notes, and Links. Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list as shown below. A FactBox can be hidden or shown by the user by toggling the little **i** icon in the top right corner of the page.
+FactBoxes surface related, at-a-glance information for the current record in the page’s right pane. They can host parts (CardPart or ListPart), charts and cues, and system parts such as Notes and Links. This article shows how to add a FactBox area to a page, add parts, pass context by using the `SubPageLink` or `SubPageView` properties, and apply performance best practices.  A FactBox can be hidden or shown by the user by toggling the little **i** icon in the top right corner of the page.
+
+The following example shows a page that displays a sales order list, where a FactBox is used to show sell-to customer sales history for a selected sales order in the list.
 
 ![Shows FactBox on a sales order.](media/factboxApril19.png)  
 
@@ -34,7 +36,7 @@ You define the FactBox by adding a FactBox area container control to the page. T
 > Only one FactBox area control is allowed on a page. 
 
 > [!WARNING]  
-> You can add a part to the FactBox area that displays an existing page of the CardPart or ListPart type only. If you attempt to use another page type, you'll get an error. 
+> You can add a part to the FactBox area that displays an existing page of the CardPart or ListPart type only. If you attempt to use another page type, you get an error. 
 
 ### Example
 
@@ -80,7 +82,7 @@ You can define the following system parts by using the `systempart()` keyword:
 | Outlook | |
 | MyNotes | Allows the user to write a note to themselves for the record shown in the page. | -->
 
-## Filtering data that are displayed on a page in a FactBox
+## Filtering data that is displayed on a page in a FactBox
 
 In many cases, you want to change the content that is displayed on the page in the FactBox based on the content of the main page. For example, if the main page is a Customer List, you can have a FactBox that includes the Customer Details page that shows information about a customer. When a user selects a customer in the Customer List, the Customer Details page displays information about the selected customer. To implement this functionality, you set up a table filter that associates a field in the table that is used by the Customer Details page with a field in the table that is used by the Customer List page, as shown in the example below. You can also filter on a constant value or set of conditions. 
 
@@ -178,5 +180,5 @@ This applies to desktop, tablet, and phone clients.
 [Page and page extension properties overview](properties/devenv-page-property-overview.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
 [Use Designer](devenv-inclient-designer.md)  
-[Arranging fields on a Fasttab](devenv-arranging-fields-on-fasttab.md)  
+[Arranging fields on a FastTab](devenv-arranging-fields-on-fasttab.md)  
 [Actions overview](devenv-actions-overview.md)  
