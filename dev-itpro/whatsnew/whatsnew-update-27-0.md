@@ -15,7 +15,7 @@ ms.custom:
 
 This article provides an overview of new and updated features in update 27.0 preview, which applies only to Business Central online sandbox environments and not to production or on-premises environments.
 
-More features and information about on-premises deployments will be added to this article when version 27.0 is generally available. Learn more about all features planned for 2025 release wave (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
+More features and information about on-premises deployments will be added to this article when version 27.0 is generally available in October 2025. Learn more about all features planned for 2025 release wave (version 27) in [Plan and prepare for Dynamics 365 Business Central in 2025 release wave 2](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
