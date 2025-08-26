@@ -27,6 +27,9 @@ Creating a new preview environment lets you review new functionality in a clean 
 
 Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that may contain your own data, setup, and/or customization, and lets you test the update itself with extensions installed. To update an existing sandbox to a preview version, [schedule an update](tenant-admin-center-update-management.md#schedule) on a sandbox environment and select a version marked with **(Preview)** as target version. It is only possible to schedule an update to a preview version once the preview period has started; preview versions are not visible in the list of target versions before the preview period starts.
 
+> [!NOTE]
+> Notification recipients registered in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] do not receive email notifications regarding availability of a new preview version or execution of an environment update to a preview version (scheduled, succeeded, or failed update). Use the Operations page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to view details on an environment update to a preview version.
+
 ## Practice and test
 
 Sandbox environments on preview versions can be used to practice and test.
