@@ -37,6 +37,8 @@ You define the FactBox by adding a FactBox area container control to the page. T
 
 ### Example
 
+The following example shows a simple customer card page with a FactBox. The FactBox contains a KPI for the customer's sales, a Notes part, and a Links part. 
+
 ```AL
 page 50100 "Simple Customercard Page"
 {
@@ -75,15 +77,14 @@ You can define the following system parts by using the `systempart()` keyword:
 |--------|-------------|
 |  Links | Allows the user to add links to a URL or path on the record shown in the page. For example, on an Item card, a user can add a link to the supplier's item catalog. The links appear with the record when it's viewed. When a user chooses a link, the target file opens.|
 |  Notes | Allows the user to write a note on the record shown in the page. For example, when creating a sales order, a user can add a note about the order. The note appears with the item when it's viewed.|
-<!--
-| Outlook | |
-| MyNotes | Allows the user to write a note to themselves for the record shown in the page. | -->
 
-## Filtering data that is displayed on a page in a FactBox
+## Filtering data displayed on a page in a FactBox
 
 In many cases, you want to change the content that is displayed on the page in the FactBox based on the content of the main page. For example, if the main page is a Customer List, you can have a FactBox that includes the Customer Details page that shows information about a customer. When a user selects a customer in the Customer List, the Customer Details page displays information about the selected customer. To implement this functionality, you set up a table filter that associates a field in the table that is used by the Customer Details page with a field in the table that is used by the Customer List page, as shown in the example below. You can also filter on a constant value or set of conditions. 
 
 ### Example
+
+The following example 
 
 ```AL
 page 50101 "Simple Customerlist Page"
@@ -97,7 +98,7 @@ page 50101 "Simple Customerlist Page"
         {
             repeater(Control)
             {
-                field("No."; "No.")
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = All;
                 }
@@ -129,9 +130,9 @@ If the FactBox pane is collapsed, no FactBoxes are loaded until the user expands
 
 Below are some practical tips to help you make the most of this optimization:
 
- - Consider hiding any FactBoxes that represent secondary content that only some users require. Learn more about [Choosing the visibility of parts](devenv-designing-parts.md#choosing-the-visibility-of-parts).  
- - For FactBoxes that require heavy processing, consider processing in the page background task. Learn more about [Using page background tasks](devenv-designing-parts.md#using-page-background-tasks).  
- - Avoid having triggers on the hosting page that call into a FactBox because this condition forces the FactBox to ignore performance optimizations and load along with the content of the hosting page, adding to the total loading time. 
+- Consider hiding any FactBoxes that represent secondary content that only some users require. Learn more about [Choosing the visibility of parts](devenv-designing-parts.md#choosing-the-visibility-of-parts).  
+- For FactBoxes that require heavy processing, consider processing in the page background task. Learn more about [Using page background tasks](devenv-designing-parts.md#using-page-background-tasks).  
+- Avoid having triggers on the hosting page that call into a FactBox because this condition forces the FactBox to ignore performance optimizations and load along with the content of the hosting page, adding to the total loading time. 
  
 ### FAQ about performance
 
