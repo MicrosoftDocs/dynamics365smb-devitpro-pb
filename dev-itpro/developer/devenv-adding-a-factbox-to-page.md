@@ -37,7 +37,7 @@ You define the FactBox by adding a FactBox area container control to the page. T
 
 ### Example
 
-The following example shows a simple customer card page with a FactBox. The FactBox contains a KPI for the customer's sales, a Notes part, a Links part, and hiding of the Summary part.
+The following example shows a simple customer card page with a FactBox. The FactBox contains a KPI for the customer's sales, a Notes part, and a Links part. With 2025 release wave 2, you can control the visibility of the Summary part, which is also illustrated in the code example below.
 
 ```AL
 page 50100 "Simple Customercard Page"
