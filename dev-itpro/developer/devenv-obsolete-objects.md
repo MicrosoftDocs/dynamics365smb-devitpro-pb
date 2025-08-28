@@ -50,6 +50,7 @@ table 12345 MyObsoleteTable
     ObsoleteReason = 'The table no longer supports the business scenario. It is to be replaced by MyNewTable';
     ObsoleteTag = '20.0';
 }
+```
 
 And then, we can mark a page as obsolete, as we reach version 21.0, as shown in this example:
 
@@ -67,13 +68,11 @@ table 12345 MyObsoleteTable
 To obsolete methods, variables, events, and other symbols, you can mark them as obsolete using the [[Obsolete] attribute](attributes/devenv-obsolete-attribute.md). This example illustrates how to use the attribute for a procedure, which becomes obsolete with version 17.0. This allows for a transition to the new method and makes developers aware not to rely on the old method.
 
 ```al
-
 [Obsolete('Pending removal, use NewMethod instead', '17.0')]
 procedure OldMethod()
 begin
     // Implementation
 end;
-
 ```
 
 The `[Obsolete]` attribute takes two parameters:
@@ -97,18 +96,17 @@ When the symbol is defined, you can check conditionally for the version and obso
 // Example of how to set obsoletion properties on a table
 table 12345 MyObsoleteTable
 {
-    #if VERSION21
-        ObsoleteState = Removed;
-        ObsoleteTag = '21.0';
-    #else
-        ObsoleteState = Pending;
-        ObsoleteTag = '20.0';
-    #endif
-        ObsoleteReason = 'The MyObsoleteTable has been replaced by MyNewTable.';
+#if VERSION21
+    ObsoleteState = Removed;
+    ObsoleteTag = '21.0';
+#else
+    ObsoleteState = Pending;
+    ObsoleteTag = '20.0';
+#endif
+    ObsoleteReason = 'The MyObsoleteTable has been replaced by MyNewTable.';
 }
 #endif
 ```
-
 
 ## Use analyzer rules to enforce obsoletion policies
 
