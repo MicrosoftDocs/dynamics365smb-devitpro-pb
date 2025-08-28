@@ -3,7 +3,7 @@ title: Setting conditional breakpoints
 description: Overview of setting conditional breakpoints in AL.
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
-ms.date: 09/16/2024
+ms.date: 08/21/2025
 ms.topic: concept-article
 ms.author: solsen
 ms.collection: get-started
@@ -11,6 +11,9 @@ ms.reviewer: solsen
 ---
 
 # Setting conditional breakpoints
+
+> [!NOTE]
+> At this point conditional breakpoints aren't supported in version 26.0 and later due to necessary changes in the platform. We're investigating this issue and will update the documentation accordingly.
 
 As part of debugging code, you can set [breakpoints](devenv-debugging.md#breakpoints) and for a certain breakpoint, you can define a condition. If the condition evaluates as true, then code execution breaks at the breakpoint. If the condition is false, then code execution continues. The condition can include any variables or fields that are currently in scope. You can compare a variable or a field to another variable or field, or you can compare a variable or field to a literal value. If you compare to a literal value, then the variable or field that you use in the breakpoint condition must be of one of the following data types:
 
