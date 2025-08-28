@@ -18,7 +18,8 @@ Learn more about update cycles, including the preview period, in [Major Updates 
 
 ## Preview environments
 
-Preview environments are sandbox environments that have been created on or updated to a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. They can be used to preview and test new functionality before the version becomes available. Preview environments are automatically deleted 30 days after the version the preview was for becomes available and cannot be updated to a different version (preview nor available).
+Preview environments are sandbox environments on a preview version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. Use them to preview and test new features before the version is available. The system deletes preview environments 30 days after the preview version becomes generally available (GA). You can't update a preview environment to a different version.
+
 
 > [!IMPORTANT]
 > Export any data, setup, and customizations in a preview environment that needs to be kept before the end of the preview period to ensure this does not get lost once the preview period ends and preview environments are deleted. 
