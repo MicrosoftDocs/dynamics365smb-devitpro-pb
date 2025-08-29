@@ -300,4 +300,5 @@ We should focus on defining proper extensibility and using better event patterns
 ## Related information
 
 [Contribute a change yourself](devenv-contribute-extensibility.md)  
-[Create an extensibility request](create-extensibility-request.md)  
+[Create an extensibility request](create-extensibility-request.md)
+[Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md)  
