@@ -48,45 +48,43 @@ Your request is more likely to be approved if:
 
 ## Example structure
 
-Provide your request in this structure (replace bracketed sections):
+Provide your request in this structure (replace the bracketed sections). Following this template will help speed up the review and increase the likelihood of approval.
 
-Problem statement:
+**Problem statement:**
 
 \<Describe the business scenario and gap>
 
-Alternatives evaluated:
+**Alternatives evaluated:**
 
 - Tried event \<EventName> in \<ObjectName>, but it wasn't sufficient because ...
 - Considered adding a new field or action, but didn't because ...
 
-Proposed publisher location:
+**Proposed publisher location:**
 
 Object: \<ObjectType> \<ObjectName>
 Procedure: \<ProcedureName>
 Placement rationale: \<Why here>
 
-Proposed code snippet (before -> after):
+**Proposed code snippet (before -> after):**
 
 \<Old code excerpt>
 \<New code excerpt with OnBefore...IsHandled(var IsHandled; ...)> 
 
-Subscriber example (illustrative):
+**Subscriber example (illustrative):**
 
 \<Code>
 
-Performance & data considerations:
+**Performance & data considerations:**
 
 \<Frequency, dataset size, sensitive fields?>
 
-Multi‑extension interaction:
+**Multi‑extension interaction:**
 
 \<Conflict expectations and mitigation>
 
-Justification for using IsHandled over alternatives:
+**Justification for using IsHandled over alternatives:**
 
 \<Reason>
-
-Following this template will help speed up the review and increase the likelihood of approval.
 
 ## Related information
 
