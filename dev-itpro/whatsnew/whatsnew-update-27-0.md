@@ -23,33 +23,6 @@ More features and information about on-premises deployments will be added to thi
 
 This table lists new and updated features in the 27.0 public preview for sandboxes.
 
-<!-- Generate table:
-
-1. In successHub, filter on releas plns similar to https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entitylist&etn=rn_releasenote&viewid=9d407e0c-72e4-ef11-a731-7c1e520c4fd1&viewType=4230&lid=1738859869588
-2. Export to Excel
-3. Install excel to markdown extension in VScode:
-4. Open Excel file
-5. Sort product area column in ascending orders
-1. Copy rows and columns
-1. In VS Code, press Shift Alt V
-
-Add links:
-
-1. Start Copilot Chat
-1. Slect table you just created.
-1. Copy this prompt in chat:
-
-In the table, make each feature name in the Feature column a markdown link. Follow these steps for each row in the column:
- 
-1. Identify the markdown file name in "Release Plan URL" column.
-2. Create a relative link on the text in the "Feature" column using the format: [<text>](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/<markdown file name>. 
-3. Omit .md in the link
-
-When all the links have been created, remove the "Release Plan URL" column from the table, so the table only has the format: 
-| Product Area | Feature Name|
-
--->
-
 | Product area | Feature |
 |--------------|--------------|
 | Copilot and agents | [Connect AI agents to Business Central through MCP server](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/connect-ai-agents-business-central-through-mcp-server) |
@@ -151,7 +124,6 @@ This section outlines changes to feature and feature updates controlled by **Fea
 
 - [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md) renamed to **Feature: Preview semantic similarity search on application metadata**.
 
-
 <!--
 ## Deprecated and removed features
 
@@ -159,37 +131,7 @@ This section outlines changes to feature and feature updates controlled by **Fea
 - [Deprecated or removed in the base app](../upgrade/deprecated-features-w1.md#changes-in-2025-release-wave-1)
 - [Deleted objects](../upgrade/deleted-objects-25w1.md)
 -->
-<!--
-## On-premises download packages
 
-Select and download the package for the appropriate country or region version from Microsoft Support.
-
-|Country/region|Download package|
-|-|-|
-|AT - Austria|[Dynamics.365.BC.33317.AT.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.AT.DVD.zip)|
-|AU - Australia|[Dynamics.365.BC.33317.AU.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.AU.DVD.zip)|
-|BE - Belgium|[Dynamics.365.BC.33317.BE.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.BE.DVD.zip)|
-|CA - Canada|[Dynamics.365.BC.33317.CA.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.CA.DVD.zip)|
-|CH - Switzerland|[Dynamics.365.BC.33317.CH.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.CH.DVD.zip)|
-|CZ- Czechia|[Dynamics.365.BC.33317.CZ.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.CZ.DVD.zip)|
-|DE - Germany|[Dynamics.365.BC.33317.DE.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.DE.DVD.zip)|
-|DK - Denmark|[Dynamics.365.BC.33317.DK.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.DK.DVD.zip)|
-|ES - Spain|[Dynamics.365.BC.33317.ES.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.ES.DVD.zip)|
-|FI - Finland|[Dynamics.365.BC.33317.FI.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.FI.DVD.zip)|
-|FR - France|[Dynamics.365.BC.33317.FR.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.FR.DVD.zip)|
-|GB - United Kingdom|[Dynamics.365.BC.33317.GB.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.GB.DVD.zip)|
-|IN - India|[Dynamics.365.BC.33317.IN.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.IN.DVD.zip)|
-|IS - Iceland|[Dynamics.365.BC.33317.IS.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.IS.DVD.zip)|
-|IT - Italy|[Dynamics.365.BC.33317.IT.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.IT.DVD.zip)|
-|MX - Mexico|[Dynamics.365.BC.33317.MX.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.MX.DVD.zip)|
-|NL - Netherlands|[Dynamics.365.BC.33317.NL.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.NL.DVD.zip)|
-|NO - Norway|[Dynamics.365.BC.33317.NO.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.NO.DVD.zip)|
-|NZ - New Zealand|[Dynamics.365.BC.33317.NZ.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.NZ.DVD.zip)|
-|RU - Russia|[Dynamics.365.BC.33317.RU.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.RU.DVD.zip)|
-|SE - Sweden|[Dynamics.365.BC.33317.SE.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.SE.DVD.zip)|
-|US - United States|[Dynamics.365.BC.33317.US.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.US.DVD.zip)|
-|All other countries/regions (W1)|[Dynamics.365.BC.33317.W1.DVD.zip](https://download.microsoft.com/download/98ec0254-fb6b-4b87-82fb-708a78867ab4/Dynamics.365.BC.33317.W1.DVD.zip)|
--->
 
 ## Create new sandbox environment on 27.0 preview
 
