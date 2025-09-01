@@ -19,14 +19,6 @@ More features and information about on-premises deployments will be added to thi
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-## Highlights
-
-[Optional - tbd]
-
-<!--
-> [!TIP]
-> Watch video on YouTube: [Dynamics 365 Business Central 2025 Release Wave 2 Release Highlights](https://www.youtube.com/watch?v=D2KPQEbO40Q).
--->
 ## New and updated features
 
 This table lists new and updated features in the 27.0 public preview for sandboxes.
@@ -121,8 +113,6 @@ When all the links have been created, remove the "Release Plan URL" column from 
 |  | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) |
 |  | Use updated demo data for Sustainability |
 | User experiences | Adjust width of Copilot, help, and page scripting panes |
-|  | Easily understand the currency of any amount |
-
 <!--
 | Product area | Feature |
 |--------------|--------------|
