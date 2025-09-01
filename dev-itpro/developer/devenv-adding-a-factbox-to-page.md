@@ -37,7 +37,7 @@ You define the FactBox by adding a FactBox area container control to the page. T
 
 ### Example
 
-The following example shows a simple customer card page with a FactBox. The FactBox contains a KPI for the customer's sales, a Notes part, and a Links part. With 2025 release wave 2, you can control the visibility of the Summary part, which is also illustrated in the code example below.
+The following example shows a simple customer card page with a FactBox. The FactBox contains a KPI for the customer's sales, a Notes part, and a Links part. With 2025 release wave 2, you can control the visibility of the `Summary` part, which is also illustrated in the code example below. Learn more about the system parts that you can choose in [System parts](#system-parts).
 
 ```AL
 page 50100 "Simple Customercard Page"
@@ -86,7 +86,7 @@ You can define the following system parts by using the `systempart()` keyword:
 
 #### Summary
 
-The Summary part provides a high-level overview of the record, allowing users to quickly understand key information without having to navigate through multiple fields. The Summary part is of the type system part and can be controlled on `Card`, `Document`, and `ListPlus` pages, which allows developers to hide or configure the summary factbox when it's not needed. You must use the identifier `DefaultSummaryPart` to refer to it in code.
+The Summary part provides a high-level overview of the record, allowing users to quickly understand key information without having to navigate through multiple fields. The Summary part is of the type system part and can be controlled on `Card`, `Document`, and `ListPlus` pages, which allows developers to hide or configure the summary factbox when it's not needed. You must use the identifier `DefaultSummaryPart` to refer to it in code. The Summary part is enabled by default on all card pages.
 
 In the following example, a page extension of the Customer card hides the Summary part:
 
@@ -103,7 +103,7 @@ pageextension 50101 MyPageExtension extends "Customer Card"
 }
 ```
 
-Or, to define it explicitly in new pages:
+Or, to hide it in new pages:
 
 ```al
 page 50101 MyPage
