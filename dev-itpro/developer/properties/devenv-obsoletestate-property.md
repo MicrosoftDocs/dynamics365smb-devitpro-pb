@@ -72,6 +72,9 @@ ObsoleteState = Pending;
 
 ## Remarks
 
+> [!NOTE]
+> The list of available options depends on the element, you're working with. For some elements, the options may be more limited, for other elements you have a wider range of options. The full list of options is: `Moved`, `No`, `Pending`, `PendingMove`, and `Removed`.
+
 By coding against this property, you can use this property as a way to communicate through code to other developers which objects and elements will become obsolete over time and those which are already obsolete, enabling them to adjust their application code accordingly.
 
 > [!NOTE]  
