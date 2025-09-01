@@ -86,21 +86,6 @@ This table lists new and updated features in the 27.0 public preview for sandbox
 |  | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) |
 |  | [Use updated demo data for Sustainability](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-updated-demo-data-sustainability) |
 | User experiences | [Adjust width of Copilot, help, and page scripting panes](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/adjust-width-copilot-help-page-scripting-panes)|
-<!--
-| Product area | Feature |
-|--------------|--------------|
-| Copilot and agents | [Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search) |
-| Country and regional| Alternative posting groups for Employees - Czechia |
-| | [Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia) |
-| | [Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia) |
-| | [New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia) |
-|  | [New pages for purchase and sales advance lines for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia) |
-| | [Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia) |
-| Electronic documents | [Use the ForNAV Peppol connector for e-documents](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-fornav-peppol-connector-e-documents) |
-| Financial management | Alternative posting groups for Employees |
-| | [New Contoso Coffee Demo Dataset for Intrastat](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat) |
-| Sustainability management | [Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards) |
-| | [Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central) |-->
 
 ## Changes to optional features in Feature Management
 
@@ -123,15 +108,6 @@ This section outlines changes to feature and feature updates controlled by **Fea
 ### Other feature key changes
 
 - [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md) renamed to **Feature: Preview semantic similarity search on application metadata**.
-
-<!--
-## Deprecated and removed features
-
-- [Deprecated or removed features in the platform](../upgrade/deprecated-features-platform.md#changes-in-2025-release-wave-2-version-270)
-- [Deprecated or removed in the base app](../upgrade/deprecated-features-w1.md#changes-in-2025-release-wave-1)
-- [Deleted objects](../upgrade/deleted-objects-25w1.md)
--->
-
 
 ## Create new sandbox environment on 27.0 preview
 
