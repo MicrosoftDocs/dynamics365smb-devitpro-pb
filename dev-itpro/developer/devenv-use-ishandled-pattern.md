@@ -91,7 +91,8 @@ begin
     if Rec."Form No." = '' then
         exit;
     OnBeforeCheckPeriodFormVendUniqueness(IsHandled);
-    if IsHandled then exit;
+    if IsHandled then 
+        exit;
     IRS1099FormDocHeader.SetFilter(Id, '<>%1', ID);
     IRS1099FormDocHeader.SetRange("Period No.", "Period No.");
     IRS1099FormDocHeader.SetRange("Vendor No.", "Vendor No.");
@@ -279,7 +280,7 @@ end;
 }
 ```
 
-The `IntegrationEvent` event isn't useful. Just hide an action and introduce a new action via PageExtension.
+This kind of event isn't useful. Just hide an action and introduce a new action via PageExtension.
 
 Besides actions, you can replace fields. You can also replace either modules with different implementations. The important thing is that there is a clear cut, so that the effect of replacing the base implementation is clear. For example, if the customization is small, we can do it with events. However, for large customizations that would introduce many events (including IsHandled events), it's better to override the entire functionality and create a different implementation. We could expose proper public methods, so you can reuse logic from the base.
 
@@ -295,10 +296,9 @@ Defining IsHandled patterns is quick, however, they make the codebase more diffi
 
 The IsHandled pattern makes it difficult to troubleshoot because multiple subscribers could do any operation.
 
-We should focus on defining proper extensibility and using better event patterns. Events should not skip code and should allow multiple subscribers to do an action. If you must use the IsHandled pattern, you should document your reason.
+We should focus on defining proper extensibility and using better event patterns. Events should not skip code and should allow multiple subscribers to do an action. If you must use the IsHandled pattern, you should document your reason - [Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md).
 
 ## Related information
 
 [Contribute a change yourself](devenv-contribute-extensibility.md)  
 [Create an extensibility request](create-extensibility-request.md)
-[Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md)  
