@@ -12,7 +12,7 @@ ms.author: solsen
 
 [!INCLUDE [2025-releasewave2-later](../includes/2025-releasewave2-later.md)]
 
-The `Introduce UI support for masking sensitive data` feature key in **Feature Management** is used to control the masking of sensitive data in [!INCLUDE[prod_short](includes/prod_short.md)]. The feature key is disabled by default in version 27 for all users, which means that masking sensitive data is disabled and must be switched on to enable masking. From version 29, this feature will be enabled by default for all users.
+The `Introduce UI support for masking sensitive data` feature key in **Feature Management** is used to control the masking of sensitive data in [!INCLUDE[prod_short](includes/prod_short.md)]. The feature key is disabled by default in version 27 for all users, which means that masking sensitive data is disabled and must be switched on to enable masking, which is done using the `MaskType` property in AL code. From version 29, this feature will be enabled by default for all users.
 
 To enable masking sensitive data, you must use the `MaskType` property in AL code. Learn more in [MaskType property](/properties/devenv-masktype-property.md).
 
