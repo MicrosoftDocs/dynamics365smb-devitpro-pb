@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.collection:
   - get-started
   - bap-ai-copilot
-ms.date: 06/24/2025
+ms.date: 08/27/2025
 ms.update-cycle: 180-days
 ---
 
@@ -24,15 +24,14 @@ In certain cases, partners or customers might need to use their own Azure OpenAI
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-## Supported models 
+## Supported models
+
 The following Azure OpenAI models are supported when using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for Copilot and [!INCLUDE [prod_short](includes/prod_short.md)] AI resources.
 
 |Azure OpenAI model|Supported|
-|-----------------------------------|-------------|
-|GPT-4o|Yes, will be replaced by GPT-4.1|
-|GPT-4o-mini|Yes, will be replaced by GPT-4.1-mini|
-|GPT-4.1|Pending|
-|GPT-4.1-mini|June 2025|
+|------------------|---------|
+|GPT-4.1|Yes|
+|GPT-4.1-mini|Yes|
 
 You can read more about each of the models here [Azure OpenAI Models](/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions).
 
@@ -64,8 +63,6 @@ This allows customers to:
 
 |Business Central AI resources model|AI Tools rate|
 |-----------------------------------|-------------|
-|GPT-4o|Standard|
-|GPT-4o-mini|Basic|
 |GPT-4.1|Standard|
 |GPT-4.1-mini|Basic|
 
@@ -110,6 +107,7 @@ By using the [!INCLUDE [prod_short](includes/prod_short.md)] developer tools for
 |Geographic availability|AI model endpoints are available in limited Azure geographies, managed by Microsoft, that may change over time. You can find the list of currently supported Azure geos [here](/dynamics365/business-central/ai-copilot-data-movement#how-data-movement-across-geographies-works). <br><br> Customer environments in all other geos connect to endpoints in the US and are managed by the data governance controls provided to administrators in Business Central.|Availability follows the general availability of the chosen model in Azure OpenAI. See [Azure OpenAI Models](/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions) for more.|
 
 ## Mandatory to migrate to newer models as older ones are deprecated
+
 Models evolve and are replaced over time. By using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources, partners will be accountable for migrating to newer models and model versions as dictated by Microsoft within the communicated SLA. Failure to do so can lead to Copilot features using the deprecated model in [!INCLUDE [prod_short](includes/prod_short.md)] AI resources to no longer work in production.
 
 ## Using the [!INCLUDE [prod_short](includes/prod_short.md)] AI resources and your own subscription in AL
