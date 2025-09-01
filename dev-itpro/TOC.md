@@ -1190,7 +1190,7 @@
 #### [Create an extensibility request](developer/create-extensibility-request.md)
 #### [Types of events for extensibility](developer/types-of-events-for-extensibility.md)
 #### [Using the IsHandled pattern for events](developer/devenv-use-ishandled-pattern.md)
-#### [Minimum requirements for new IsHandled events](developer/devenv-use-ishandled-min-req.md) 
+#### [Requirements for new IsHandled events](developer/devenv-use-ishandled-min-req.md) 
 ### Extending AL objects
 #### [Extending application areas](developer/devenv-extending-application-areas.md)
 #### [Extending enumerations](developer/devenv-extensible-enums.md)

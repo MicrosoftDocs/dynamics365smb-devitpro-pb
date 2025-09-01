@@ -1,5 +1,5 @@
 ---
-title: Min. requirements for new IsHandled events
+title: Minimum requirements for new IsHandled events
 description: Provides the minimum information that must accompany a request for adding a new IsHandled event.
 author: AleksandricMarko
 ms.date: 08/29/2025

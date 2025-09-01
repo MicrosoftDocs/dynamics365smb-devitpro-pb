@@ -296,7 +296,7 @@ Defining IsHandled patterns is quick, however, they make the codebase more diffi
 
 The IsHandled pattern makes it difficult to troubleshoot because multiple subscribers could do any operation.
 
-We should focus on defining proper extensibility and using better event patterns. Events should not skip code and should allow multiple subscribers to do an action. If you must use the IsHandled pattern, you should document your reason - [Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md).
+We should focus on defining proper extensibility and using better event patterns. Events should not skip code and should allow multiple subscribers to do an action. If you must use the IsHandled pattern, you should document your reason. To learn more, go to [Minimum requirements for new IsHandled events](devenv-use-ishandled-min-req.md).
 
 ## Related information
 
