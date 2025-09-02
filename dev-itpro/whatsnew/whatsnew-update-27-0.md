@@ -125,6 +125,10 @@ Creating a new preview environment lets you review new functionality in a clean 
 
 Updating an existing sandbox environment to a preview version lets you review new functionality in an environment that might contain your own data, setup, and customizations by testing with your extensions installed. To update an existing sandbox, follow the instructions in [Schedule an update for an environment](../administration/tenant-admin-center-update-management.md#schedule). Set the version to **27.0 preview**.
 
+## Give us feedback
+
+You're invited to share your feedback about the preview&mdash;including bugs, suggestions, or usability concerns&mdash;with the Business Central team at [Business Central Preview Feedback](https://aka.ms/bcpreviewbug). Your feedback is greatly appreciated.
+
 ## Good to know
 
 ### Business Central Launch Event
