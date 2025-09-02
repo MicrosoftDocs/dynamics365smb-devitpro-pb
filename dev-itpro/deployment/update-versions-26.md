@@ -27,10 +27,11 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|[26.4](https://support.microsoft.com/help/5064779)|Update 26.4 |Aigust 2025|Application Build 26.4.37206, Platform Build 26.0.37130|
-|[26.3](https://support.microsoft.com/help/5063362)|Update 26.3 |July 2025|Application Build 26.3.36321, Platform Build 26.0.36290|
-|[26.2](https://support.microsoft.com/help/5061918)|Update 26.2 |June 2025|Application Build 26.2.34832, Platform Build 26.0.34736|
-|[26.1](https://support.microsoft.com/help/5059415)|Update 26.1 |May 2025|Application Build 26.1.33876, Platform Build 26.0.33865|
+|[5066309](https://support.microsoft.com/help/5066309)|Update 26.5 |September 2025|Application Build 26.5, Platform Build 26.0.|
+|[5064779](https://support.microsoft.com/help/5064779)|Update 26.4 |August 2025|Application Build 26.4.37206, Platform Build 26.0.37130|
+|[5063362](https://support.microsoft.com/help/5063362)|Update 26.3 |July 2025|Application Build 26.3.36321, Platform Build 26.0.36290|
+|[5061918](https://support.microsoft.com/help/5061918)|Update 26.2 |June 2025|Application Build 26.2.34832, Platform Build 26.0.34736|
+|[5059415](https://support.microsoft.com/help/5059415)|Update 26.1 |May 2025|Application Build 26.1.33876, Platform Build 26.0.33865|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
