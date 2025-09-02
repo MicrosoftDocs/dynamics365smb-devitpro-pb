@@ -91,6 +91,9 @@ This table lists new and updated features in the 27.0 public preview for sandbox
 
 This section outlines changes to feature and feature updates controlled by **Feature management** in version 27.0.
 
+> [!NOTE]
+> Some features in the **Feature Management** page have an incorrect version for when the feature is automatically enabled. The 27.0 GA release fixes these discrepancies.
+
 ### Feature keys now mandatory and removed
 
 - [Feature Update: Enable use of package tracking in physical inventory orders](/dynamics365/business-central/inventory-how-work-item-tracking)
@@ -108,6 +111,8 @@ This section outlines changes to feature and feature updates controlled by **Fea
 ### Other feature key changes
 
 - [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md) renamed to **Feature: Preview semantic similarity search on application metadata**.
+
+
 
 ## Create new sandbox environment on 27.0 preview
 
