@@ -92,7 +92,7 @@ This table lists new and updated features in the 27.0 public preview for sandbox
 This section outlines changes to feature and feature updates controlled by **Feature management** in version 27.0.
 
 > [!NOTE]
-> Some features in the **Feature Management** page have an incorrect version for when the feature is automatically enabled. The 27.0 GA release fixes these discrepancies.
+> Some features in the **Feature Management** page might show an incorrect version for when the feature is automatically enabled. The 27.0 GA release fixes these discrepancies.
 
 ### Feature keys now mandatory and removed
 
