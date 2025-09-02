@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 ## What is the IsHandled pattern?
 
-The original goal of the `IsHandled` pattern was to enable developers to provide an implementation that didn't exist in the base code. The main use is to raise an event and throw an error if the even't wasn't handled.
+The original goal of the `IsHandled` pattern was to enable developers to provide an implementation that didn't exist in the base code. The main use is to raise an event and throw an error if the event wasn't handled.
 
 ```AL
 
@@ -57,7 +57,7 @@ There are several issues with the `IsHandled` pattern.
 
     - If the base code is refactored, all subscribers might be broken. If the subscribers depend on specific lines and context can be broken with updates to the code before the event and the code after the event runs.
     - Events might not be raised, which can break other extensions. Turning off the code can break extensions that subscribe to the events from the overridden code. This scenario is one we often face.
-    - If we turn off the validation of a specific record and allow an unsupported value to save, the risk is that the effor will be raised by a different part of the code, or that the other code produces incorrect values. For these reasons, we recomment that you don't turn off validation.
+    - If we turn off the validation of a specific record and allow an unsupported value to save, the risk is that the event will be raised by a different part of the code, or that the other code produces incorrect values. For these reasons, we recommend that you don't turn off validation.
 
 ## What to do instead
 
@@ -293,7 +293,7 @@ To review an example of the OnSkip pattern, go to [OnSkip (operation) events](ty
 
 ## Summary
 
-Defining `IsHandled` patterns is quick, however, they make the codebase more difficult to maintain and often make solutions less robust. The main problem is skipping large parts of code that might change in the future, and then risk that other even't aren't raised. It also doesn't allow many extensions to subscribe to the same event.
+Defining `IsHandled` patterns is quick, however, they make the codebase more difficult to maintain and often make solutions less robust. The main problem is skipping large parts of code that might change in the future, and then risk that other events aren't raised. It also doesn't allow many extensions to subscribe to the same event.
 
 The `IsHandled` pattern makes it difficult to troubleshoot because multiple subscribers could do any operation.
 
