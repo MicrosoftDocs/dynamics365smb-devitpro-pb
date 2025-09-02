@@ -19,11 +19,21 @@ Learn about the hotfixes and download on-premises files from Microsoft Support a
 
 ## Feature changes
 
-| Product area | Feature | PP/GA |
-|-|-|-|
-|Copilot and agents|[Autofill with Copilot](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/autofill-fields-copilot#enhancements-with-update-264) can now search the web for publicly available information to suggest vendor addresses or similar. This functionality is initially available in update 26.4 sandbox environments only.|PA|
-| | [Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent), with added skills to work with multiple ship-to addresses and suggest alternatives for items that can't be delivered at the desired time. This release lets agent admins configure more autonomous processing of customer requests and gives more options for dealing with ambiguous situations&mdash;providing [more instructions expressed in natural language](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/give-more-instructions-agent-when-review-its-tasks) to help the agent move forward with the task. The Sales Order Agent is now available in more countries/regions and languages, entering public preview in Denmark, Germany, Spain, France, and Italy.| PP  |
-| Country and regional | [Use ZUGFeRD format for E-Documents in Germany](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-zugferd-format-e-documents-germany)| GA  |
+|Product area|Feature|PP/GA|Owner (PM)|
+|-------------------------------|--------------------------------------------------------------|--------------------------------------------|--------------------|
+|Copilot and agents|[Capture more sales with enhanced Sales Order Agent](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/capture-more-sales-enhanced-sales-order-agent)|PP|Dmitry Chadayev|
+|Copilot and agents|[Find pages and reports with advanced Tell Me search](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/find-pages-reports-advanced-tell-me-search)|PP|Blazej Kotelko|
+|Country and regional|Alternative posting groups for Employees|PP|Petr Janousek|
+|Country and regional|[Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia)|PP|Petr Janousek|
+|Country and regional|[Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia)|PP|Petr Janousek|
+|Country and regional|[New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia)|PP|Petr Janousek|
+|Country and regional|[New pages for purchase and sales advance entries for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia)|PP|Petr Janousek|
+|Country and regional|[Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia)|PP|Petr Janousek|
+|Financial Management|Alternative posting groups for Employees|PP|Aleksandar Totovic|
+|Financial Management|[New Contoso Coffee Demo Dataset for Intrastat](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat)|PP|Aleksandar Totovic|
+|Sustainability Management|[Enable taxonomy elements for ESRS and other standards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-taxonomy-elements-esrs-other-standards)|PP|Aleksandar Totovic|
+|Sustainability Management|[Generate a CSRD preparation report](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/generate-csrd-preparation-report)|GA|Aleksandar Totovic|
+|Sustainability Management|[Use ESG Reporting integrated with Business Central](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-esg-reporting-integrated-business-central)|PP|Aleksandar Totovic|
 
 ## Localization updates
 
@@ -45,9 +55,12 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 ## Good to know
 
-### System symbols now included with Business Central server
+### Recent online service features
 
-Starting with update 26.3, Business Central server binaries now include the system symbols instead of the **System** extension. As a result, you can't publish `SymbolsOnly` packages by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp). You get a warning if you use the `-SymbolsOnly` parameter with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo). To get information about the system symbols, use the `-Name System` parameter.
+- [Update sandbox environments to preview versions](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/update-sandbox-environments-preview-versions)Manage environment updates more flexibly (general availability)
+
+  > [!TIP]
+  > This feature lets you can upgrade an existing sandbox environment on v26 to v27 preview.
 
 ### Business Central 2025 release wave 2 plans published
 
@@ -72,7 +85,6 @@ Prepare for features expected to be mandatory in the next release wave (27.0). W
 - [Feature Update: Auto-save with every field change](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)
 - [Feature: Preview semantic similarity search on application metadata ](../developer/semantic-search-feature-key.md) (previously named **Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata**)
 - [Feature: Optimize screen estate usage on the web](/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/optimize-screen-estate-usage-web)
-
 
 For a list of features that became mandatory in update 26.0, go to [Optional features that are now mandatory](https://aka.ms/BCFeatureMgmt).
 
