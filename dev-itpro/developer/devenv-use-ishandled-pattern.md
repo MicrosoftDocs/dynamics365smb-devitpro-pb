@@ -272,12 +272,12 @@ action(CreateCreditMemo)
 }
 
 
-{
+
 [IntegrationEvent(false, false)]
 local procedure OnBeforeCreateCreditMemoOnAction(var PurchInvHeader: Record "Purch. Inv. Header"; var IsHandled: Boolean)
 begin
 end;
-}
+
 
 ```
 
