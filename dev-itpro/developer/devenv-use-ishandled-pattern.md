@@ -18,11 +18,9 @@ ms.custom: bap-template
 The original goal of the `IsHandled` pattern was to enable developers to provide an implementation that didn't exist in the base code. The main use is to raise an event and throw an error if the event wasn't handled.
 
 ```AL
-
 OnFoo(IsHandled)
 if not IsHandled then
    Error(FooIsNotPossibleErr);
-
 ```
 
 Today, we mostly use `exit` instead of the error, which increases the number of possible code paths.
@@ -30,7 +28,6 @@ Today, we mostly use `exit` instead of the error, which increases the number of 
 According to the pattern's definition, only one subscriber can handle the event. All other subscribers must exit if the event is handles, so the subscriber code should start by checking whether the event was already handled.
 
 ```AL
-
 [EventSubscriber(ObjectType::Codeunit, Codeunit::MyCodeunit, 'OnFoo', '', false, false)]
 local procedure HandleFooOperation(var IsHandled: Boolean)
 begin
@@ -40,7 +37,6 @@ begin
     DoFoo();
     IsHandled := true;
 end;
-
 ```
 
 The goal of the `IsHandled` pattern was to provide interface-like functionality, before AL supported interfaces. Today, it's become a means of overriding the existing code, which was not the original intention.
@@ -80,7 +76,6 @@ By implementing missing features or extensibility for an area, we eliminate the 
 The next best solution is to replace the handled event with a positive event that provides additional functionality. For example, this was the original event request:
 
 ```AL
-
 local procedure CheckPeriodFormVendUniqueness()
 var
     IRS1099FormDocHeader: Record "IRS 1099 Form Doc. Header";
@@ -105,8 +100,6 @@ end;
 local procedure OnBeforeCheckPeriodFormVendUniqueness(var IsHandled: Boolean)
 begin
 end;
-
-
 ```
 
 The main issue here is skipping validation. The second issue is that it isn't clear what the event is used for.
@@ -114,8 +107,6 @@ The main issue here is skipping validation. The second issue is that it isn't cl
 The following example shows the solution we settled on.
 
 ```AL
-
-
 local procedure CheckPeriodFormVendUniqueness()
 var
     IRS1099FormDocHeader: Record "IRS 1099 Form Doc. Header";
@@ -148,7 +139,6 @@ end;
 local procedure OnAddPeriodFormVendUniquenessFilters(var IRS1099FormDocHeader: Record "IRS 1099 Form Doc. Header")
 begin
 end;
-
 ```
 
 Rather than skip errors and other code, we added an event to add extra filters and to change the uniqueness condition. This is a better approach because we don't skip code and we have a clear definition of the event. Future refactoring will be easier because we know how the event is used. We also added logic to prevent the required filters from being removed.
@@ -156,7 +146,6 @@ Rather than skip errors and other code, we added an event to add extra filters a
 Here's another example.
 
 ```AL
-
 local procedure RunTransferDifferencetoAccountPage(BankAccReconciliationLine: Record "Bank Acc. Reconciliation Line"; var TempGenJnlLine: Record "Gen. Journal Line" temporary; var Action: Action; var IsHandled: Boolean)
 begin
     IsHandled := false;
@@ -166,14 +155,11 @@ begin
 
     Action := Page.RunModal(Page::"Transfer Difference to Account", TempGenJnlLine);
 end
-
-
 ```
 
 Because we just want to transfer a difference, we don't need to add a generic event. It's better to have a clear use and to specify that the event is used to transfer a difference.
 
 ```AL
-
 local procedure RunTransferDifferencetoAccountPage(BankAccReconciliationLine: Record "Bank Acc. Reconciliation Line"; var TempGenJnlLine: Record "Gen. Journal Line" temporary; var DifferenceTransferred: Boolean)
 begin
     DifferenceTransferred := false;
@@ -184,7 +170,6 @@ begin
     Action := Page.RunModal(Page::"Transfer Difference to Account", TempGenJnlLine);
     DifferenceTransferred := PageAction = PageAction::LookupOK;
 end;
-
 ```
 
 Although this looks like an `IsHandled` pattern, this change gives us clear use and we can refactor if needed. There shouldn't be much code running after the exit check. We're only opening the page to let the user do the change manually.
@@ -192,8 +177,6 @@ Although this looks like an `IsHandled` pattern, this change gives us clear use 
 The following is another good example.
 
 ```AL
-
-
 procedure VerifyQuantity(var NewAssemblyHeader: Record "Assembly Header"; var OldAssemblyHeader: Record "Assembly Header")
 var
     IsHandled: Boolean;
@@ -214,14 +197,11 @@ begin
     ReservationManagement.AutoTrack(NewAssemblyHeader."Remaining Quantity (Base)");
     AssignForPlanning(NewAssemblyHeader);
 end;
-
 ```
 
 A partner was able to change this event, and three others, to positive events, as the following example shows.
 
 ```AL
-{
-
 procedure VerifyQuantity(var NewAssemblyHeader: Record "Assembly Header"; var OldAssemblyHeader: Record "Assembly Header")
 begin
     if NewAssemblyHeader."Quantity (Base)" = OldAssemblyHeader."Quantity (Base)" then
@@ -232,8 +212,6 @@ begin
         ReservationManagement.ModifyUnitOfMeasure();
     OnVerifyQuantityOnBeforeDeleteReservationEntries(NewAssemblyHeader, OldAssemblyHeader);
     ReservationManagement.DeleteReservEntries(false, NewAssemblyHeader."Remaining Quantity (Base)");
-
-}
 ```
 
 No code is skipped, and the code is much more readable.
@@ -271,14 +249,10 @@ action(CreateCreditMemo)
     end;
 }
 
-
-
 [IntegrationEvent(false, false)]
 local procedure OnBeforeCreateCreditMemoOnAction(var PurchInvHeader: Record "Purch. Inv. Header"; var IsHandled: Boolean)
 begin
 end;
-
-
 ```
 
 This kind of event isn't useful. Just hide an action and introduce a new action via PageExtension.
