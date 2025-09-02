@@ -127,7 +127,7 @@ Updating an existing sandbox environment to a preview version lets you review ne
 
 ## Give us feedback
 
-You're invited to share your feedback about the preview&mdash;including bugs, suggestions, or usability concerns&mdash;with the Business Central team at [Business Central Preview Feedback](https://aka.ms/bcpreviewbug). Your feedback is greatly appreciated.
+You're invited to share your feedback about the preview&mdash;including bugs, suggestions, or usability concerns&mdash;with the Business Central team at [Business Central Preview Feedback](https://aka.ms/bcpreviewbug).
 
 ## Good to know
 
