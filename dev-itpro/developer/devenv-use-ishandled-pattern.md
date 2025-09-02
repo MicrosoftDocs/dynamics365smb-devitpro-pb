@@ -57,7 +57,7 @@ There are several issues with the `IsHandled` pattern.
 
     - If the base code is refactored, all subscribers might be broken. If the subscribers depend on specific lines and context can be broken with updates to the code before the event and the code after the event runs.
     - Events might not be raised, which can break other extensions. Turning off the code can break extensions that subscribe to the events from the overridden code. This scenario is one we often face.
-    - If we turn off the validation of a specific record and allow an unsupported value to save, the risk is that the effor will be raised by a different part of the code, or that the other code produces incorrect values. For these reasons, we recomment that you don't turn off validation.
+    - If we turn off the validation of a specific record and allow an unsupported value to save, the risk is that the event will be raised by a different part of the code, or that the other code produces incorrect values. For these reasons, we recommend that you don't turn off validation.
 
 ## What to do instead
 
