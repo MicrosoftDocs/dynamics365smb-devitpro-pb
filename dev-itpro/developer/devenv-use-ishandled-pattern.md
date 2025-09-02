@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 ## What is the IsHandled pattern?
 
-The original goal of the `IsHandled` pattern was to enable developers to provide an implementation that didn't exist in the base code. The main use is to raise an event and throw an error if the even't wasn't handled.
+The original goal of the `IsHandled` pattern was to enable developers to provide an implementation that didn't exist in the base code. The main use is to raise an event and throw an error if the event wasn't handled.
 
 ```AL
 
