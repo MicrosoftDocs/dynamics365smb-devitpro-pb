@@ -20,7 +20,7 @@ Table fields should use the AllowInCustomizations property and its value must be
 
 ## How to fix this diagnostic?
 
-To resolve this diagnostic, specify the `AllowInCustomizations` property on either the **field level**, the **table level**, or **table extension** level, and ensure that the value is not set to `ToBeClassified` or `Always`. For more information, see [AllowInCustomizations](..\properties\devenv-allowincustomizations-property.md).
+To resolve this diagnostic, specify the `AllowInCustomizations` property on either the **field level**, the **table level**, or **table extension** level, and ensure that the value is not set to `ToBeClassified` or `Always`. Learn more in [AllowInCustomizations](..\properties\devenv-allowincustomizations-property.md).
 
 ## Code examples triggering the rule
 

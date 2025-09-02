@@ -20,9 +20,9 @@ New table fields must use the AllowInCustomizations property and its value must 
 
 ## Remarks
 
-This rule analyzes only fields that are newly added in the current version (that is, fields that don’t exist in the baseline). It helps you prioritize classification of new fields and tables without requiring you to classify all existing fields.
+This rule analyzes only fields that are newly added in the current version, that is, fields that don’t exist in the baseline. It helps you prioritize classification of new fields and tables without requiring you to classify all existing fields.
 
-For examples and guidance on how to fix this diagnostic,see [AppSourceCop Rule AS0138](appsourcecop-as0138.md).
+Learn more about how to fix this diagnostic in [AppSourceCop Rule AS0138](appsourcecop-as0138.md).
 
 ## Related information  
 [AppSourceCop analyzer](appsourcecop.md)  
