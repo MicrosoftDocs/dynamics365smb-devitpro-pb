@@ -17,8 +17,10 @@ Table fields should use the AllowInCustomizations property
 Table fields should use the AllowInCustomizations property and its value must be different from ToBeClassified and Always. From runtime 16.0, you can specify on the application object level the AllowInCustomizations to use as default for all its fields.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Remarks
-For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0138](appsourcecop-as0138.md).
+
+Learn more about fixing this diagnostic in [AppSourceCop Rule AS0138](appsourcecop-as0138.md).
 
 ## Related information  
 [PerTenantExtensionCop analyzer](pertenantextensioncop.md)  
