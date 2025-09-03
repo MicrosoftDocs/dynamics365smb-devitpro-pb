@@ -4,7 +4,7 @@ description: This article points to articles that describe the new and changed f
 author: jswymer
 ms.author: jswymer
 ms.reviewer: jswymer 
-ms.date: 08/04/2025
+ms.date: 09/03/2025
 ms.custom: bap-template
 ms.topic: whats-new 
 ---
@@ -28,6 +28,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|26.5|Application Build 26.5 Platform Build 26.0|September 2025|[Update 26.5 for Business Central 2025 release wave 1](whatsnew-update-26-5.md)|
 |26.4|Application Build 26.4 Platform Build 26.0|August 2025|[Update 26.4 for Business Central 2025 release wave 1](whatsnew-update-26-4.md)|
 |26.3|Application Build 26.3 Platform Build 26.0|July 2025|[Update 26.3 for Business Central 2025 release wave 1](whatsnew-update-26-3.md)|
 |26.2|Application Build 26.2 Platform Build 26.0|June 2025|[Update 26.2 for Business Central 2025 release wave 1](whatsnew-update-26-2.md)|
