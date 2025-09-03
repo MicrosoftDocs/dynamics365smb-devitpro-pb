@@ -52,11 +52,11 @@ Deployments using version 24 or earlier must upgrade to version 25 before upgrad
 
 Take advantage of the recently released agents to automate common business tasks and reduce manual work.
 
-- **Sales Order Agent** Streamlines sales order creation by interpreting customer requests via email and checking inventory. It generates accurate quotes and orders for review and approval before sending. Learn more in [Sales Order Agent](/dynamics365/business-central/sales-order-agent)
+- **Sales Order Agent** Streamlines sales order creation by interpreting customer requests via email and checking inventory. It generates accurate quotes and orders for review and approval before sending. Learn more in [Sales Order Agent](/dynamics365/business-central/sales-order-agent).
 
   > Watch the [Less searching more selling with Sales Order Agent](https://youtu.be/Qmd6_5vYKDg) video on YouTube.
 
-- **Payables Agent** Automates vendor invoice processing by monitoring email inboxes and extracting invoice data using OCR. It drafts purchase invoices for review and approval, dramatically reducing manual effort and speeding up accounts payable workflows. Learn more in [Payables Agent](/dynamics365/business-central/payables-agent)
+- **Payables Agent** Automates vendor invoice processing by monitoring email inboxes and extracting invoice data using OCR. It drafts purchase invoices for review and approval, dramatically reducing manual effort and speeding up accounts payable workflows. Learn more in [Payables Agent](/dynamics365/business-central/payables-agent).
 
 #### Getting set up with the agents
 
