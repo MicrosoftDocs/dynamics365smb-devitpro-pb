@@ -28,6 +28,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|27.0 online preview|Application Build 27.0 Platform Build 27.0|September 2025|[Update 27.0 preview for Business Central 2025 release wave 2](whatsnew-update-27-0.md)|
 |26.4|Application Build 26.4 Platform Build 26.0|August 2025|[Update 26.4 for Business Central 2025 release wave 1](whatsnew-update-26-4.md)|
 |26.3|Application Build 26.3 Platform Build 26.0|July 2025|[Update 26.3 for Business Central 2025 release wave 1](whatsnew-update-26-3.md)|
 |26.2|Application Build 26.2 Platform Build 26.0|June 2025|[Update 26.2 for Business Central 2025 release wave 1](whatsnew-update-26-2.md)|
