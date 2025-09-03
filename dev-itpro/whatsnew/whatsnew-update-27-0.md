@@ -31,7 +31,7 @@ This table lists new and updated features in the 27.0 public preview for sandbox
 |  | [Give more instructions for the agent when you review its tasks](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/give-more-instructions-agent-when-review-its-tasks) |
 |  | [Summarize with Copilot enhancements](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/summarize-copilot-enhancements) |
 |  | [Suggest gas emissions in sustainability journals with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/suggest-gas-emissions-sustainability-journals-copilot) |
-|  | Understand how each Copilot and agent capabilities page shows the consumption billing type for each capability |
+|  | [Understand how each Copilot and agent capability is billed](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/understand-how-each-copilot-agent-capability-billed) |
 |  | [Use enhanced analysis assist with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-analysis-assist-copilot) |
 |  | [Use enhanced chat with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-chat-copilot) |
 |  | [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process) |
@@ -43,8 +43,8 @@ This table lists new and updated features in the 27.0 public preview for sandbox
 |  | [New pages for purchase and sales advance entries for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-pages-purchase-sales-advance-lines-czechia) |
 |  | [Reconciliation feature in cash documents for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/reconciliation-feature-cash-documents-czechia) |
 |  | [Submit IRS 1099 forms electronically to IRIS in the US localization](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/submit-irs1099-forms-electronically-iris) |
-| Development | Cancel packaging and publishing via VSCode|
-|  |Enhancements to the Page Scripting tool |
+| Development | [Cancel build and publish from Visual Studio Code](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/cancel-build-publish-visual-studio-code)|
+|  |[Record and edit easier with enhanced page scripting tool](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/record-edit-easier-enhanced-page-scripting-tool)|
 |  | [Hide Copilot summaries](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/hide-copilot-summaries) |
 |  | [Truncate table data with new AL method](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/truncate-table-data-new-al-method) |
 |  | [View SQL call information in performance profiles](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/view-sql-call-information-performance-profiles) |
