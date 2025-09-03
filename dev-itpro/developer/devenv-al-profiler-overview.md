@@ -2,7 +2,7 @@
 title: AL Profiler overview
 description: Description of how to use the AL profiler and the Performance Profiler to analyze performance in code written for Business Central.
 author: SusanneWindfeldPedersen
-ms.date: 03/01/2024
+ms.date: 09/03/2025
 ms.topic: overview
 ms.author: solsen
 ms.collection: get-started
@@ -97,6 +97,10 @@ For sampling profiling, choose `Sampling` as the `profilingType` in the `launch.
             "profileSamplingInterval": 100
         }
 ```
+
+Starting with 2025 release wave 2, sampling profiling can track SQL calls in both the in-client profiler (web client) and in snapshots captured from Visual Studio Code. The in-client profiler automatically uses sampling. To track SQL calls in Visual Studio Code snapshots, set the `profilingType` to `Sampling` in the launch.json file.
+
+The profile shows which SQL calls were made so you can determine whether slow performance is caused by AL code or by SQL. For scheduled profiles, in the **Performance Profiles** overview page, you can see the total duration of captured SQL calls in partner code, number of calls, and the duration of platform calls. When you drill into a specific profile, you can see the actual SQL calls that are made. You can hover over them and copy the queries.
 
 ## Getting a snapshot file
 
