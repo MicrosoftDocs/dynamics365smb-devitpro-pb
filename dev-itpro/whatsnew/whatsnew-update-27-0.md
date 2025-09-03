@@ -35,8 +35,7 @@ This table lists new and updated features in the 27.0 public preview for sandbox
 |  | [Use enhanced analysis assist with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-analysis-assist-copilot) |
 |  | [Use enhanced chat with Copilot](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-chat-copilot) |
 |  | [Use Sales Order Agent to automate sales order-taking](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process) |
-| Country and regional | Alternative posting groups for Employees - Czechia |
-|  | [Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia) |
+| Country and regional |[Check total amounts on purchase advances for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/check-total-amounts-purchase-advances-czechia) |
 |  | [Get UI improvements for Unreliable Payer for Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/unreliable-payer-user-interface-improvements-czechia) |
 |  | [Install UK localization as an extension to the base app](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/install-uk-localization-as-app) |
 |  | [New Contoso Coffee Demo Dataset for Intrastat in Czechia](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat-czechia) |
@@ -59,14 +58,11 @@ This table lists new and updated features in the 27.0 public preview for sandbox
 |  | [Use e-documents for shipment and transfer shipment document types](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-e-documents-shipment-transfer-shipment-document-types) |
 |  | [Use the Admin permission set with e-documents](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-admin-permission-set-e-documents) |
 |  | [Use the E-Documents framework with Power Automate and other solutions](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-e-documents-power-automate) |
-| Financial Management | Alternative posting groups for Employees |
-|  | [Calculate excise taxes](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/calculate-excise-taxes) |
+| Financial Management | [Calculate excise taxes](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/calculate-excise-taxes) |
 |  | [Create multiple fixed asset cards](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/create-multiple-fixed-asset-cards) |
 |  | [New Contoso Coffee Demo Dataset for Intrastat](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/new-contoso-coffee-demo-dataset-intrastat) |
 | Governance and administration | [Migrate record links and notes with cloud migration tooling](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/migrate-record-links-notes-cloud-migration-tooling) |
-|  | Tenant administrators can set Feature Management switches with an API |
-| Reporting and data analysis | New data picker in the Word add-in for document layouts |
-|  | [Use enhanced Financial Reporting](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting) |
+| Reporting and data analysis |[Use enhanced Financial Reporting](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-financial-reporting) |
 |  | [Use enhanced purchasing analytics](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-purchasing-analytics) |
 |  | [Use the enhanced Power BI Sales app and modernized reports in sales analytics](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-enhanced-sales-analytics) |
 | Supply chain management | [Add more fields and columns by personalizing pages](/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/add-more-fields-columns-personalizing-pages) |
@@ -111,8 +107,6 @@ This section outlines changes to feature and feature updates controlled by **Fea
 ### Other feature key changes
 
 - [Feature: Enables advanced navigation (not data) search capabilities by utilizing semantic similarity search on application metadata](../developer/semantic-search-feature-key.md) renamed to **Feature: Preview semantic similarity search on application metadata**.
-
-
 
 ## Create new sandbox environment on 27.0 preview
 
