@@ -58,7 +58,7 @@ Take advantage of the recently released agents to automate common business tasks
 
 - **Payables Agent** Automates vendor invoice processing by monitoring email inboxes and extracting invoice data using OCR. It drafts purchase invoices for review and approval, dramatically reducing manual effort and speeding up accounts payable workflows. Learn more in [Payables Agent](/dynamics365/business-central/payables-agent).
 
-#### Getting set up with the agents
+**Getting set up**
 
 Each agent has a configuration page that simplifies setup. Before you start, you'll have to set up a shared mailbox and your environment for billing. Learn more in [Set up Sales Order Agent](/dynamics365/business-central/sales-order-agent-setup) and [Set up Payables Agent](/dynamics365/business-central/payables-agent-setup).
 
