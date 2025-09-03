@@ -39,14 +39,18 @@ The syntax must be a valid URL, such as *https://www.microsoft.com*, or path to 
 If you use this method for an application that runs on the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)], then the default Internet browser that is based on the setting in the system registry is used. If the browser is already running, then a new tab opens in the browser window. If you use this method for an application that runs on the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)], then a new tab in the same browser window that is currently hosting the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] is opened.  
 -->
 
-At runtime, a new tab is opened in the same browser window where [!INCLUDE[d365_bus_central_md](../../includes/d365_bus_central_md.md)] is running. 
+At runtime, a new tab is opened in the same browser window where [!INCLUDE[d365_bus_central_md](../../includes/d365_bus_central_md.md)] is running.
 
 The `HyperLink` method works with different protocols and file types as along as the syntax is valid. 
 
 > [!NOTE]  
-> When using the *file://* protocol to open a file, the file should be stored on a network file share, not locally; otherwise the file will not open<!--NAV in the [!INCLUDE[nav_web](includes/nav_web_md.md)]-->. Browsers block hyperlinks to files from a web page for security reasons and the hyperlink must be manually copied and pasted into a manually opened tab page.
+> When using the *file://* protocol to open a file, the file should be stored on a network file share, not locally; otherwise the file doesn't open<!--NAV in the [!INCLUDE[nav_web](includes/nav_web_md.md)]-->. Browsers block hyperlinks to files from a web page for security reasons and the hyperlink must be manually copied and pasted into a manually opened tab page.
 
-The HyperLink method does not work on NAS services.  
+### Restrictions
+
+- Security enhancements restrict hyperlinks in Business Central online environments. Only IP addresses that are DNS-resolvable or that are in the RFC 1918 private address space are permitted. HTTP links are not supported — use HTTPS for all links. Noncompliant links are not executed and users see a warning dialog.
+- Protocols such as file:// and ftp:// remain supported where the environment allows them.
+- The HyperLink method is not supported on NAS services.
 
 ## Example
 

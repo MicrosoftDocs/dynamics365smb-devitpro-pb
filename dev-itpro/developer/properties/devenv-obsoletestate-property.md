@@ -79,6 +79,8 @@ By coding against this property, you can use this property as a way to communica
 > [!NOTE]  
 > When developing using [!INCLUDE[nav_dev_long_md](../includes/nav_dev_long_md.md)] (C/SIDE), you do not get warnings or errors when you compile objects that reference table objects, fields, or keys that are marked as **Pending** or **Removed**. **ObsoleteState** property is only detected by the AL compiler, which will return warnings for references to elements marked as **Pending** and errors for references to elements marked as **Removed**.
 
+Learn more about obsoletion in [Obsolete objects, methods, and symbols in AL](../devenv-obsolete-objects.md).
+
 ## Related information
 
 [ObsoleteReason Property](devenv-obsoletereason-property.md)  

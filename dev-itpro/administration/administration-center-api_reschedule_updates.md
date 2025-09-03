@@ -24,7 +24,7 @@ The endpoints documented below ship when flexible update management becomes gene
 Get information about update target versions and their status for a specific environment.
 
 ```
-GET /admin/v2.26/applications/{applicationFamily}/environments/{environmentName}/updates
+GET /admin/v2.27/applications/{applicationFamily}/environments/{environmentName}/updates
 ```
 
 #### Route Parameters
@@ -51,7 +51,8 @@ Returns information about updates available for the specified environment.
         "selectedDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Indicates the datetime for which the update to this target version has been scheduled
         "ignoreUpdateWindow": false, // Indicates whether the update window for the environment may be ignored when running this update
         "rolloutStatus": "Active" // Indicates the rollout status of updates to this target version, e.g. "Active", "UnderMaintenance", or "Postponed"
-      }      
+      }
+      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA" or "Preview"
     },
     { 
       // Example for a target version that has been released but has not been selected as next update for the specified environment
@@ -64,7 +65,8 @@ Returns information about updates available for the specified environment.
         "selectedDateTime": "YYYY-MM-DDTHH:MM:SSZ", // Specifies the date for which this update will be scheduled if Microsoft services select this as next update for the environment, null if no date has been specified by an environment administrator
         "ignoreUpdateWindow": false,
         "rolloutStatus": "Active"
-      } 
+      }
+      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA" or "Preview"
     },
     {     
       // Example for a target version that has not yet been released but has been selected as next update for the specified environment
@@ -75,6 +77,7 @@ Returns information about updates available for the specified environment.
         "month": 8, // Indicates the number of the month in which the target version is expected to be released
         "year": 2025 // Indicates the year in which the target version is expected to be released
       }
+      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA" or "Preview"
     },
     {
       // Example for a target version that has not yet been released and has not been selected as next update for the specified environment
@@ -85,6 +88,7 @@ Returns information about updates available for the specified environment.
         "month": 9,
         "year": 2025
       }
+      "targetVersionType": "GA" // Indicates the type of the target version, i.e. "GA" or "Preview"
     }
   ]
 }
@@ -95,7 +99,7 @@ Returns information about updates available for the specified environment.
 Select a target version and update date for the next update on an environment. Only one target version can be selected per environment at a time; selecting a new target version for the next environment updates automatically unselects the previous target version.
 
 ```
-PATCH /admin/v2.26/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
+PATCH /admin/v2.27/applications/{applicationFamily}/environments/{environmentName}/updates/{targetVersion}
 ```
 
 #### Route Parameters
@@ -114,6 +118,7 @@ Example for selecting a target version that is available.
 ```
 {
   "selected": true, // Optional. Must be true to select target version; setting this to false returns an error. Omitting it from the body changes scheduleDetails properties for the targetVersion without selecting it or for a targetVersion that is already selected
+"targetVersionType": "GA", // Indicates the type of the target version, i.e. "GA" or "Preview". Defaults to "GA" if property is omitted from body. "Preview" versions can only be scheduled for sandbox environments
   "scheduleDetails": {
     "selectedDateTime": datetime // Specifies the datetime at which the environment update should start. If selected time is outside the environment update window, the update will start during the next update window
     "ignoreUpdateWindow": boolean // Specifies whether the update window set for the environment may be ignored for this update
@@ -125,7 +130,7 @@ Example for selecting a target version that is not yet available.
 
 ```
 {
-  "selected": true, // Required. Must be true to select target version. Setting this to false returns an error
+  "selected": true // Required. Must be true to select target version. Setting this to false returns an error
 }
 ```
 
