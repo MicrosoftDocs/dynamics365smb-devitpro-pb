@@ -24,8 +24,8 @@ Learn about the hotfixes on Microsoft Support at [Update 24.5 for Business Centr
 
 - [Automate country of origin listed for item tracking code in Intrastat reporting (general availability)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/automate-country-origin-listed-item-tracking-code-intrastat-reporting)
 - [Enable sustainability features for integrations with APIs (general availability)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/achieving-sustainable-compliance-business-central)
-- [Migrate record links and notes with cloud migration tooling (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/migrate-record-links-notes-cloud-migration-tooling)
-- [Remove friction when working with external app dependencies (general availability)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/remove-friction-when-working-external-app-dependencies)
+- [Migrate record links and notes with cloud migration tooling (preview)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/planned-features)
+- [Remove friction when working with external app dependencies (general availability)](/dynamics365/release-plan/2024wave1/smb/dynamics365-business-central/planned-features)
 
 ## Localization updates
 
